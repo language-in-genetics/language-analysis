@@ -1,0 +1,745 @@
+{
+  "DOI": "10.1038/s41431-019-0559-2",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-019-0559-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThere is a need to accurately call human leukocyte antigen (HLA) genes from existing short-read sequencing data, however there is no single solution that matches the gold standard of Sanger sequenced lab typing. Here we aimed to combine results from available software programs, minimizing the biases of applied algorithm and HLA reference. The result is a robust HLA population resource for the published 1000 Swedish genomes, and a framework for future HLA interrogation. HLA 2nd-field alleles were called using four imputation and inference methods for the classical eight genes (class I: \u003cjats:italic\u003eHLA-A\u003c/jats:italic\u003e, \u003cjats:italic\u003eHLA-B\u003c/jats:italic\u003e, \u003cjats:italic\u003eHLA-C\u003c/jats:italic\u003e; class II: \u003cjats:italic\u003eHLA-DPA1\u003c/jats:italic\u003e, \u003cjats:italic\u003eHLA-DPB1\u003c/jats:italic\u003e, \u003cjats:italic\u003eHLA-DQA1\u003c/jats:italic\u003e, \u003cjats:italic\u003eHLA-DQB1\u003c/jats:italic\u003e, \u003cjats:italic\u003eHLA-DRB1\u003c/jats:italic\u003e). A high confidence population set (SweHLA) was determined using an \u003cjats:italic\u003en−1\u003c/jats:italic\u003e concordance rule for class I (four software) and class II (three software) alleles. Results were compared across populations and individual programs benchmarked to SweHLA. Per gene, 875 to 988 of the 1000 samples were genotyped in SweHLA; 920 samples had at least seven loci called. While a small fraction of reference alleles were common to all software (class I = 1.9% and class II = 4.1%), this did not affect the overall call rate. Gene-level concordance was high compared to European populations (\u0026gt;0.83%), with COX and PGF the dominant SweHLA haplotypes. We noted that 15/18 discordant alleles (delta allele frequency \u0026gt;2) were previously reported as disease-associated. These differences could in part explain across-study genetic replication failures, reinforcing the need to use multiple software solutions. SweHLA demonstrates a way to use existing NGS data to generate a population resource agnostic to individual HLA software biases.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "559"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "20 May 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "12 November 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "26 November 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "16 December 2019"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-8414-2190",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Nordin",
+      "given": "Jessika",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6085-6749",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ameur",
+      "given": "Adam",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lindblad-Toh",
+      "given": "Kerstin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gyllensten",
+      "given": "Ulf",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Meadows",
+      "given": "Jennifer R. S.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        12,
+        16
+      ]
+    ],
+    "date-time": "2019-12-16T20:04:09Z",
+    "timestamp": 1576526649000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        20
+      ]
+    ],
+    "date-time": "2023-05-20T21:00:55Z",
+    "timestamp": 1684616455000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100004063",
+      "award": [
+        "2018.0101",
+        "2018.0101"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Knut och Alice Wallenbergs Stiftelse"
+    },
+    {
+      "DOI": "10.13039/501100004359",
+      "award": [
+        "541-2013-8161"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Vetenskapsrådet"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        5
+      ]
+    ],
+    "date-time": "2024-04-05T02:15:56Z",
+    "timestamp": 1712283356017
+  },
+  "is-referenced-by-count": 11,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        12,
+        16
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            12,
+            16
+          ]
+        ],
+        "date-time": "2019-12-16T00:00:00Z",
+        "timestamp": 1576454400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            12,
+            16
+          ]
+        ],
+        "date-time": "2019-12-16T00:00:00Z",
+        "timestamp": 1576454400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://www.nature.com/articles/s41431-019-0559-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41431-019-0559-2",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41431-019-0559-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "627-635",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        12,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        12,
+        16
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        5
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/44853",
+      "author": "The MHC sequencing Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "921",
+      "journal-title": "Nature",
+      "key": "559_CR1",
+      "unstructured": "The MHC sequencing Consortium Complete sequence and gene map of a human major histocompatibility complex. Nature. 1999;401:921–3. http://www.nature.com/articles/44853.",
+      "volume": "401",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1186/1742-9994-2-16",
+      "author": "S Sommer",
+      "doi-asserted-by": "publisher",
+      "first-page": "16",
+      "journal-title": "Front Zool",
+      "key": "559_CR2",
+      "unstructured": "Sommer S. The importance of immune gene variability (MHC) in evolutionary ecology and conservation. Front Zool. 2005;2:16. http://www.ncbi.nlm.nih.gov/pubmed/16242022.",
+      "volume": "2",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.3349/ymj.2007.48.1.11",
+      "author": "SY Choo",
+      "doi-asserted-by": "publisher",
+      "first-page": "11",
+      "journal-title": "Yonsei Med J",
+      "key": "559_CR3",
+      "unstructured": "Choo SY. The HLA system: genetics, immunology, clinical testing, and clinical implications. Yonsei Med J. 2007;48:11. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2628004/.",
+      "volume": "48",
+      "year": "2007"
+    },
+    {
+      "key": "559_CR4",
+      "unstructured": "IPD-IMGT/HLA Database [Internet]. 2019. https://www.ebi.ac.uk/ipd/imgt/hla/intro.html."
+    },
+    {
+      "DOI": "10.1155/2012/842141",
+      "author": "MA Ayala García",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "J Transplant",
+      "key": "559_CR5",
+      "unstructured": "Ayala García MA, González Yebra B, López Flores AL, Guaní Guerra E. The major histocompatibility complex in transplantation. J Transplant. 2012;2012:1–7. http://downloads.hindawi.com/journals/jtran/2012/842141.pdf.",
+      "volume": "2012",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1146/annurev-genom-091212-153455",
+      "author": "J Trowsdale",
+      "doi-asserted-by": "publisher",
+      "first-page": "301",
+      "journal-title": "Annu Rev Genomics Hum Genet",
+      "key": "559_CR6",
+      "unstructured": "Trowsdale J, Knight JC. Major histocompatibility complex genomics and human disease. Annu Rev Genomics Hum Genet. 2013;14:301–23. http://www.annualreviews.org/doi/10.1146/annurev-genom-091212-153455.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bib/bbw097",
+      "author": "DC Bauer",
+      "doi-asserted-by": "publisher",
+      "first-page": "bbw097",
+      "journal-title": "Brief Bioinform",
+      "key": "559_CR7",
+      "unstructured": "Bauer DC, Zadoorian A, Wilson LOW, Thorne NP. Evaluation of computational programs to predict HLA genotypes from genomic sequencing data. Brief Bioinform. 2016;19:bbw097. http://www.ncbi.nlm.nih.gov/pubmed/27802932.",
+      "volume": "19",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1182/blood-2011-05-353490",
+      "author": "E Nunes",
+      "doi-asserted-by": "publisher",
+      "first-page": "e180",
+      "journal-title": "Blood",
+      "key": "559_CR8",
+      "unstructured": "Nunes E, Heslop H, Fernandez-Vina M, Taves C, Wagenknecht DR, Eisenbrey AB, et al. Definitions of histocompatibility typing terms. Blood. 2011;118:e180–3. http://www.ncbi.nlm.nih.gov/pubmed/22001389.",
+      "volume": "118",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ejhg.2017.130",
+      "author": "A Ameur",
+      "doi-asserted-by": "publisher",
+      "first-page": "1253",
+      "journal-title": "Eur J Hum Genet",
+      "key": "559_CR9",
+      "unstructured": "Ameur A, Dahlberg J, Olason P, Vezzi F, Karlsson R, Martin M, et al. SweGen: a whole-genome data resource of genetic variability in a cross-section of the Swedish population. Eur J Hum Genet 2017;25:1253–60.",
+      "volume": "25",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ejhg.2008.88",
+      "author": "Å Johansson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1341",
+      "journal-title": "Eur J Hum Genet",
+      "key": "559_CR10",
+      "unstructured": "Johansson Å, Ingman M, Mack SJ, Erlich H, Gyllensten U. Genetic origin of the Swedish Sami inferred from HLA class I and class II allele frequencies. Eur J Hum Genet. 2008;16:1341–9. http://www.nature.com/articles/ejhg200888.",
+      "volume": "16",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.humimm.2017.01.006",
+      "author": "MJ Neville",
+      "doi-asserted-by": "publisher",
+      "first-page": "242",
+      "journal-title": "Hum Immunol",
+      "key": "559_CR11",
+      "unstructured": "Neville MJ, Lee W, Humburg P, Wong D, Barnardo M, Karpe F, et al. High resolution HLA haplotyping by imputation for a British population bioresource. Hum Immunol. 2017;78:242–51. https://www.sciencedirect.com/science/article/pii/S0198885917300150?via%3Dihub.",
+      "volume": "78",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr330",
+      "author": "P Danecek",
+      "doi-asserted-by": "publisher",
+      "first-page": "2156",
+      "journal-title": "Bioinformatics",
+      "key": "559_CR12",
+      "unstructured": "Danecek P, Auton A, Abecasis G, Albers CA, Banks E, DePristo MA, et al. The variant call format and VCFtools. Bioinformatics 2011;27:2156–8.",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq033",
+      "author": "AR Quinlan",
+      "doi-asserted-by": "publisher",
+      "first-page": "841",
+      "journal-title": "Bioinformatics",
+      "key": "559_CR13",
+      "unstructured": "Quinlan AR, Hall IM. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics. 2010;26:841–2. http://www.ncbi.nlm.nih.gov/pubmed/20110278",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0064683",
+      "author": "X Jia",
+      "doi-asserted-by": "publisher",
+      "first-page": "e64683",
+      "journal-title": "PLoS ONE",
+      "key": "559_CR14",
+      "unstructured": "Jia X, Han B, Onengut-Gumuscu S, Chen W-MM, Concannon PJ, Rich SS, et al. Imputing amino acid polymorphisms in human leukocyte antigens. PLoS ONE. 2013;8:e64683 http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064683.",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu548",
+      "author": "A Szolek",
+      "doi-asserted-by": "publisher",
+      "first-page": "3310",
+      "journal-title": "Bioinformatics",
+      "key": "559_CR15",
+      "unstructured": "Szolek A, Schubert B, Mohr C, Sturm M, Feldhahn M, Kohlbacher O. OptiType: precision HLA typing from next-generation sequencing data. Bioinformatics. 2014;30:3310–6. http://www.ncbi.nlm.nih.gov/pubmed/25143287.",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/1471-2164-16-S2-S7",
+      "author": "N Nariai",
+      "doi-asserted-by": "publisher",
+      "first-page": "S7",
+      "journal-title": "BMC Genomics",
+      "key": "559_CR16",
+      "unstructured": "Nariai N, Kojima K, Saito S, Mimori T, Sato Y, Kawai Y, et al. HLA-VBSeq: accurate HLA typing at full resolution from whole-genome sequencing data. BMC Genomics. 2015;16:S7 https://www.biomedcentral.com/qc/1471-2164/16/S2/S7.",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12859-017-1671-3",
+      "author": "S Ka",
+      "doi-asserted-by": "publisher",
+      "first-page": "258",
+      "journal-title": "BMC Bioinformatics",
+      "key": "559_CR17",
+      "unstructured": "Ka S, Lee S, Hong J, Cho Y, Sung J, Kim H-N, et al. HLAscan: genotyping of the HLA region using next-generation sequencing data. BMC Bioinformatics. 2017;18:258 http://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1671-3.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/nar/gks949",
+      "doi-asserted-by": "crossref",
+      "key": "559_CR18",
+      "unstructured": "Robinson J, Halliwell JA, McWilliam H, Lopez R, Parham P, Marsh SGE. The IMGT/HLA database. Nucleic Acids Res. 2012;41:D1222–7. http://academic.oup.com/nar/article/41/D1/D1222/1074413/The-IMGTHLA-database."
+    },
+    {
+      "DOI": "10.1086/521987",
+      "doi-asserted-by": "crossref",
+      "key": "559_CR19",
+      "unstructured": "Browning SR, Browning BL. Rapid and accurate haplotype phasing and missing-data inference for whole-genome association studies by use of localized haplotype clustering. Am J Hum Genet. 2007;81:1084–97. http://www.ncbi.nlm.nih.gov/pubmed/17924348."
+    },
+    {
+      "DOI": "10.1086/319501",
+      "author": "M Stephens",
+      "doi-asserted-by": "publisher",
+      "first-page": "978",
+      "journal-title": "Am J Hum Genet",
+      "key": "559_CR20",
+      "unstructured": "Stephens M, Smith NJ, Donnelly P. A new statistical method for haplotype reconstruction from population data. Am J Hum Genet. 2001;68:978–89. http://www.ncbi.nlm.nih.gov/pubmed/11254454.",
+      "volume": "68",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1086/379378",
+      "author": "M Stephens",
+      "doi-asserted-by": "publisher",
+      "first-page": "1162",
+      "journal-title": "Am J Hum Genet",
+      "key": "559_CR21",
+      "unstructured": "Stephens M, Donnelly P. A comparison of bayesian methods for haplotype reconstruction from population genotype data. Am J Hum Genet. 2003;73:1162–9. http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1180495\u0026tool=pmcentrez\u0026rendertype=abstract.",
+      "volume": "73",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1086/429393",
+      "author": "MM Miretti",
+      "doi-asserted-by": "publisher",
+      "first-page": "634",
+      "journal-title": "Am J Hum Genet",
+      "key": "559_CR22",
+      "unstructured": "Miretti MM, Walsh EC, Ke X, Delgado M, Griffiths M, Hunt S, et al. A high-resolution linkage-disequilibrium map of the human major histocompatibility complex and first generation of tag single-nucleotide polymorphisms. Am J Hum Genet. 2005;76:634–46. https://www.sciencedirect.com/science/article/pii/S0002929707628742?via%3Dihub.",
+      "volume": "76",
+      "year": "2005"
+    },
+    {
+      "key": "559_CR23",
+      "unstructured": "R Core Team. R: a language and environment for statistical computing. Vienna: R Foundation for Statistical Computing; 2018."
+    },
+    {
+      "key": "559_CR24",
+      "unstructured": "Lek M. Analysis of protein-coding genetic variation in 60,706 humans. 2015; http://biorxiv.org/lookup/doi/10.1101/030338"
+    },
+    {
+      "DOI": "10.1007/s00251-007-0262-2",
+      "author": "R Horton",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Immunogenetics",
+      "key": "559_CR25",
+      "unstructured": "Horton R, Gibson R, Coggill P, Miretti M, Allcock RJ, Almeida J, et al. Variation analysis and gene annotation of eight MHC haplotypes: The MHC Haplotype Project. Immunogenetics. 2008;60:1–18. http://link.springer.com/10.1007/s00251-007-0262-2.",
+      "volume": "60",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1111/j.1399-0039.2006.00802.x",
+      "author": "A Sanchez-Mazas",
+      "doi-asserted-by": "publisher",
+      "first-page": "198",
+      "journal-title": "Tissue Antigens",
+      "key": "559_CR26",
+      "unstructured": "Sanchez-Mazas A. An apportionment of human HLA diversity. Tissue Antigens. 2007;69:198–202. http://doi.wiley.com/10.1111/j.1399-0039.2006.00802.x.",
+      "volume": "69",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/S0198-8859(01)00293-2",
+      "author": "A Sanchez-Mazas",
+      "doi-asserted-by": "publisher",
+      "first-page": "937",
+      "journal-title": "Hum Immunol",
+      "key": "559_CR27",
+      "unstructured": "Sanchez-Mazas A. African diversity from the HLA point of view: influence of genetic drift, geography, linguistics, and natural selection. Hum Immunol. 2001;62:937–48. https://www.sciencedirect.com/science/article/pii/S0198885901002932?via%3Dihub.",
+      "volume": "62",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0036779",
+      "author": "J Link",
+      "doi-asserted-by": "publisher",
+      "first-page": "e36779",
+      "journal-title": "PLoS ONE",
+      "key": "559_CR28",
+      "unstructured": "Link J, Kockum I, Lorentzen ÅR, Lie BA, Celius EG, Westerlind H, et al. Importance of human leukocyte antigen (HLA) class I and II alleles on the risk of multiple sclerosis. PLoS ONE. 2012;7:e36779. https://dx.plos.org/10.1371/journal.pone.0036779.",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1101/gr.213538.116",
+      "author": "PJ Norman",
+      "doi-asserted-by": "publisher",
+      "first-page": "813",
+      "journal-title": "Genome Res",
+      "key": "559_CR29",
+      "unstructured": "Norman PJ, Norberg SJ, Guethlein LA, Nemat-Gorgani N, Royce T, Wroblewski EE, et al. Sequences of 95 human MHC haplotypes reveal extreme coding variation in genes other than highly polymorphic HLA class I and II. Genome Res. 2017;27:813–23. http://www.ncbi.nlm.nih.gov/pubmed/28360230.",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.humimm.2007.04.005",
+      "author": "M Maiers",
+      "doi-asserted-by": "publisher",
+      "first-page": "779",
+      "journal-title": "Hum Immunol",
+      "key": "559_CR30",
+      "unstructured": "Maiers M, Gragert L, Klitz W. High-resolution HLA alleles and haplotypes in the United States population. Hum Immunol. 2007;68:779–88. https://www.sciencedirect.com/science/article/pii/S0198885907000948?via%3Dihub.",
+      "volume": "68",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1001/archneurol.2011.65",
+      "author": "D Buck",
+      "doi-asserted-by": "publisher",
+      "first-page": "480",
+      "journal-title": "Arch Neurol",
+      "key": "559_CR31",
+      "unstructured": "Buck D, Cepok S, Hoffmann S, Grummel V, Jochim A, Berthele A, et al. Influence of the HLA-DRB1 genotype on antibody development to interferon beta in multiple sclerosis. Arch Neurol. 2011;68:480. http://www.ncbi.nlm.nih.gov/pubmed/21482927.",
+      "volume": "68",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ncomms8146",
+      "author": "A Cortes",
+      "doi-asserted-by": "publisher",
+      "first-page": "7146",
+      "journal-title": "Nat Commun",
+      "key": "559_CR32",
+      "unstructured": "Cortes A, Pulit SL, Leo PJ, Pointon JJ, Robinson PC, Weisman MH, et al. Major histocompatibility complex associations of ankylosing spondylitis are complex and involve further epistasis with ERAP1. Nat Commun. 2015;6:7146. http://www.nature.com/articles/ncomms8146.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3109/03009748409100382",
+      "author": "JT Gran",
+      "doi-asserted-by": "publisher",
+      "first-page": "173",
+      "journal-title": "Scand J Rheumatol",
+      "key": "559_CR33",
+      "unstructured": "Gran JT, Mellby AS, Husby G. The prevalence of HLA-B27 in Northern Norway. Scand J Rheumatol. 1984;13:173–6. http://www.ncbi.nlm.nih.gov/pubmed/6610933.",
+      "volume": "13",
+      "year": "1984"
+    },
+    {
+      "DOI": "10.1038/nrg2986",
+      "author": "R Nielsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "443",
+      "journal-title": "Nat Rev Genet",
+      "key": "559_CR34",
+      "unstructured": "Nielsen R, Paul JS, Albrechtsen A, Song YS. Genotype and SNP calling from next-generation sequencing data. Nat Rev Genet. 2011;12:443–51. http://www.nature.com/articles/nrg2986.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/nrg3117",
+      "author": "TJ Treangen",
+      "doi-asserted-by": "publisher",
+      "first-page": "36",
+      "journal-title": "Nat Rev Genet",
+      "key": "559_CR35",
+      "unstructured": "Treangen TJ, Salzberg SL. Repetitive DNA and next-generation sequencing: computational challenges and solutions. Nat Rev Genet. 2012;13:36–46. http://www.ncbi.nlm.nih.gov/pubmed/22124482.",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1534/g3.114.015784",
+      "author": "DYC Brandt",
+      "doi-asserted-by": "publisher",
+      "first-page": "931",
+      "journal-title": "G3",
+      "key": "559_CR36",
+      "unstructured": "Brandt DYC, Aguiar VRC, Bitarello BD, Nunes K, Goudet J, Meyer D. Mapping bias overestimates reference allele frequencies at the HLA genes in the 1000 genomes project phase I data. G3. 2015;5:931–41. http://g3journal.org/lookup/doi/10.1534/g3.114.015784.",
+      "volume": "5",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3257",
+      "author": "A Dilthey",
+      "doi-asserted-by": "publisher",
+      "first-page": "682",
+      "journal-title": "Nat Genet",
+      "key": "559_CR37",
+      "unstructured": "Dilthey A, Cox C, Iqbal Z, Nelson MR, McVean G. Improved genome inference in the MHC using a population reference graph. Nat Genet. 2015;47:682–8. http://www.nature.com/articles/ng.3257.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1005151",
+      "author": "AT Dilthey",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1005151",
+      "journal-title": "PLOS Comput Biol",
+      "key": "559_CR38",
+      "unstructured": "Dilthey AT, Gourraud P-A, Mentzer AJ, Cereb N, Iqbal Z, McVean G, et al. Type inference from whole-genome sequencing data using population reference graphs. PLOS Comput Biol. 2016;12:e1005151. http://dx.plos.org/10.1371/journal.pcbi.1005151.",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13059-018-1388-2",
+      "author": "H Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "16",
+      "journal-title": "Genome Biol",
+      "key": "559_CR39",
+      "unstructured": "Lee H, Kingsford C. Kourami: graph-guided assembly for novel human leukocyte antigen allele discovery. Genome Biol. 2018;19:16. https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1388-2.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13059-016-1027-8",
+      "author": "MK Sung",
+      "doi-asserted-by": "publisher",
+      "first-page": "164",
+      "journal-title": "Genome Biol",
+      "key": "559_CR40",
+      "unstructured": "Sung MK, Jang J, Lee KS, Ghim C-M, Choi JK. Selected heterozygosity at cis-regulatory sequences increases the expression homogeneity of a cell population in humans. Genome Biol. 2016;17:164. http://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1027-8.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1101/gr.218891.116",
+      "author": "JM Jensen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1597",
+      "journal-title": "Genome Res",
+      "key": "559_CR41",
+      "unstructured": "Jensen JM, Villesen P, Friborg RM, Mailund T, Besenbacher S, Schierup MH, et al. Assembly and analysis of 100 full MHC haplotypes from the Danish population. Genome Res. 2017;27:1597–607. http://www.ncbi.nlm.nih.gov/pubmed/28774965.",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3390/genes9100486",
+      "author": "A Ameur",
+      "doi-asserted-by": "publisher",
+      "first-page": "486",
+      "journal-title": "Genes",
+      "key": "559_CR42",
+      "unstructured": "Ameur A, Che H, Martin M, Bunikis I, Dahlberg J, Höijer I, et al. De Novo assembly of two Swedish genomes reveals missing segments from the human GRCh38 reference and improves variant calling of population-scale sequencing data. Genes. 2018;9:486. http://www.mdpi.com/2073-4425/9/10/486.",
+      "volume": "9",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 42,
+  "references-count": 42,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/660241",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-019-0559-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "SweHLA: the high confidence HLA typing bio-resource drawn from 1000 Swedish genomes"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "28"
+}
