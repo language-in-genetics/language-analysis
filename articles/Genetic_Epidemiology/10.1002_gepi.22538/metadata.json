@@ -1,0 +1,459 @@
+{
+  "DOI": "10.1002/gepi.22538",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22538",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eAdvances in DNA sequencing technologies have enabled genotyping of complex genetic regions exhibiting copy number variation and high allelic diversity, yet it is impossible to derive exact genotypes in all cases, often resulting in ambiguous genotype calls, that is, partially missing data. An example of such a gene region is the killer‐cell immunoglobulin‐like receptor (\u003cjats:italic\u003eKIR\u003c/jats:italic\u003e) genes. These genes are of special interest in the context of allogeneic hematopoietic stem cell transplantation. For such complex gene regions, current haplotype reconstruction methods are not feasible as they cannot cope with the complexity of the data. We present an expectation–maximization (EM)‐algorithm to estimate haplotype frequencies (HTFs) which deals with the missing data components, and takes into account linkage disequilibrium (LD) between genes. To cope with the exponential increase in the number of haplotypes as genes are added, we add three components to a standard EM‐algorithm implementation. First, reconstruction is performed iteratively, adding one gene at a time. Second, after each step, haplotypes with frequencies below a threshold are collapsed in a rare haplotype group. Third, the HTF of the rare haplotype group is profiled in subsequent iterations to improve estimates. A simulation study evaluates the effect of combining information of multiple genes on the estimates of these frequencies. We show that estimated HTFs are approximately unbiased. Our simulation study shows that the EM‐algorithm is able to combine information from multiple genes when LD is high, whereas increased ambiguity levels increase bias. Linear regression models based on this EM, show that a large number of haplotypes can be problematic for unbiased effect size estimation and that models need to be sparse. In a real data analysis of \u003cjats:italic\u003eKIR\u003c/jats:italic\u003e genotypes, we compare HTFs to those obtained in an independent study. Our new EM‐algorithm‐based method is the first to account for the full genetic architecture of complex gene regions, such as the \u003cjats:italic\u003eKIR\u003c/jats:italic\u003e gene region. This algorithm can handle the numerous observed ambiguities, and allows for the collapsing of haplotypes to perform implicit dimension reduction. Combining information from multiple genes improves haplotype reconstruction.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22538"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2023-02-02"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2023-09-25"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2023-10-13"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-2359-828X",
+      "affiliation": [
+        {
+          "name": "Biomedical Data Sciences, LUMC Leiden The Netherlands"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "van der Burg",
+      "given": "Lars L. J.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Biomedical Data Sciences, LUMC Leiden The Netherlands"
+        },
+        {
+          "name": "DKMS Dresden/Tübingen Germany"
+        }
+      ],
+      "family": "de Wreede",
+      "given": "Liesbeth C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "DKMS Dresden/Tübingen Germany"
+        }
+      ],
+      "family": "Baldauf",
+      "given": "Henning",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "DKMS Dresden/Tübingen Germany"
+        }
+      ],
+      "family": "Sauter",
+      "given": "Jürgen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "DKMS Dresden/Tübingen Germany"
+        },
+        {
+          "name": "Department of Internal Medicine I University Hospital Carl Gustav Carus Dresden Germany"
+        }
+      ],
+      "family": "Schetelig",
+      "given": "Johannes",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Biomedical Data Sciences, LUMC Leiden The Netherlands"
+        }
+      ],
+      "family": "Putter",
+      "given": "Hein",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Biomedical Data Sciences, LUMC Leiden The Netherlands"
+        }
+      ],
+      "family": "Böhringer",
+      "given": "Stefan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        13
+      ]
+    ],
+    "date-time": "2023-10-13T11:34:08Z",
+    "timestamp": 1697196848000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        23
+      ]
+    ],
+    "date-time": "2024-01-23T04:21:14Z",
+    "timestamp": 1705983674000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        2
+      ]
+    ],
+    "date-time": "2024-04-02T10:56:28Z",
+    "timestamp": 1712055388351
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        13
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            13
+          ]
+        ],
+        "date-time": "2023-10-13T00:00:00Z",
+        "timestamp": 1697155200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22538",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "3-26",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        13
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        13
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1186/s12859-019-3095-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_2_1"
+    },
+    {
+      "DOI": "10.1002/bimj.201800053",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_3_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10323",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_4_1"
+    },
+    {
+      "DOI": "10.1111/imm.12684",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_5_1"
+    },
+    {
+      "DOI": "10.1016/j.jspi.2021.07.013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_6_1"
+    },
+    {
+      "DOI": "10.1159/000194976",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_7_1"
+    },
+    {
+      "DOI": "10.1200/JCO.2016.70.7059",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_8_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.01.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_9_1"
+    },
+    {
+      "DOI": "10.1038/nrg3054",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_10_1"
+    },
+    {
+      "DOI": "10.1182/blood-2010-05-283051",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_11_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1977.tb01600.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_12_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10252",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_13_1"
+    },
+    {
+      "DOI": "10.1159/000119108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_14_1"
+    },
+    {
+      "key": "e_1_2_16_15_1",
+      "unstructured": "EMBL‐EBI. (2022).KIR allele nomenclature.https://www.ebi.ac.uk/ipd/kir/about/nomenclature/allele/"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.molbev.a040269",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_16_1"
+    },
+    {
+      "key": "e_1_2_16_17_1",
+      "unstructured": "GLSC. (2022).Glsc 1.0 syntax.https://glstring.org/syntax.html"
+    },
+    {
+      "DOI": "10.4049/jimmunol.2100119",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_18_1"
+    },
+    {
+      "DOI": "10.1182/blood-2015-12-629055",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_19_1"
+    },
+    {
+      "DOI": "10.1101/gr.137976.112",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_20_1"
+    },
+    {
+      "DOI": "10.5772/61592",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_21_1"
+    },
+    {
+      "DOI": "10.1002/sim.8086",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_22_1"
+    },
+    {
+      "key": "e_1_2_16_23_1",
+      "unstructured": "Natsuhiko K.(2012).Disentangler.https://kumasakanatsuhiko.jp/projects/disentangler/"
+    },
+    {
+      "DOI": "10.1016/j.humimm.2019.05.018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_24_1"
+    },
+    {
+      "DOI": "10.1086/344207",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_25_1"
+    },
+    {
+      "DOI": "10.1038/s41588-020-00756-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_26_1"
+    },
+    {
+      "DOI": "10.1186/1471-2288-14-129",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_27_1"
+    },
+    {
+      "DOI": "10.1016/j.xgen.2022.100101",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_28_1"
+    },
+    {
+      "DOI": "10.1186/s12859-017-1692-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_29_1"
+    },
+    {
+      "DOI": "10.1182/blood.2019002887",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_30_1"
+    },
+    {
+      "DOI": "10.3389/fimmu.2020.584520",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_31_1"
+    },
+    {
+      "key": "e_1_2_16_32_1",
+      "unstructured": "Sinnwell J. P. \u0026Schaid D. J.(2018).haplo.stats: Statistical analysis of haplotypes with traits and covariates when linkage phase is ambiguous. R package version 1.7.9.https://CRAN.R-project.org/package=haplo.stats"
+    },
+    {
+      "DOI": "10.3389/fimmu.2020.00429",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_33_1"
+    },
+    {
+      "DOI": "10.1086/319501",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_34_1"
+    },
+    {
+      "DOI": "10.1038/nrg2950",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_35_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1200503",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_36_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_37_1"
+    },
+    {
+      "DOI": "10.3389/fimmu.2018.02843",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_16_38_1"
+    }
+  ],
+  "reference-count": 37,
+  "references-count": 37,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22538"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Haplotype reconstruction for genetically complex regions with ambiguous genotype calls: Illustration by the \u003ci\u003eKIR\u003c/i\u003e gene region"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "48"
+}

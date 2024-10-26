@@ -1,0 +1,2496 @@
+{
+  "DOI": "10.1186/s40246-023-00565-6",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00565-6",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eIt is valuable to analyze the genome-wide association studies (GWAS) data for a complex disease phenotype in the context of the protein–protein interaction (PPI) network, as the related pathophysiology results from the function of interacting polyprotein pathways. The analysis may include the design and curation of a phenotype-specific GWAS meta-database incorporating genotypic and eQTL data linking to PPI and other biological datasets, and the development of systematic workflows for PPI network-based data integration toward protein and pathway prioritization. Here, we pursued this analysis for blood pressure (BP) regulation.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe relational scheme of the implemented in Microsoft SQL Server BP-GWAS meta-database enabled the combined storage of: GWAS data and attributes mined from GWAS Catalog and the literature, Ensembl-defined SNP-transcript associations, and GTEx eQTL data. The BP-protein interactome was reconstructed from the PICKLE PPI meta-database, extending the GWAS-deduced network with the shortest paths connecting all GWAS-proteins into one component. The shortest-path intermediates were considered as BP-related. For protein prioritization, we combined a new integrated GWAS-based scoring scheme with two network-based criteria: one considering the protein role in the reconstructed by shortest-path (RbSP) interactome and one novel promoting the common neighbors of GWAS-prioritized proteins. Prioritized proteins were ranked by the number of satisfied criteria.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe meta-database includes 6687 variants linked with 1167 BP-associated protein-coding genes. The GWAS-deduced PPI network includes 1065 proteins, with 672 forming a connected component. The RbSP interactome contains 1443 additional, network-deduced proteins and indicated that essentially all BP-GWAS proteins are at most second neighbors. The prioritized BP-protein set was derived from the union of the most BP-significant by any of the GWAS-based or the network-based criteria. It included 335 proteins, with ~ 2/3 deduced from the BP PPI network extension and 126 prioritized by at least two criteria. ESR1 was the only protein satisfying all three criteria, followed in the top-10 by INSR, PTN11, CDK6, CSK, NOS3, SH2B3, ATP2B1, FES and FINC, satisfying two. Pathway analysis of the RbSP interactome revealed numerous bioprocesses, which are indeed functionally supported as BP-associated, extending our understanding about BP regulation.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe implemented workflow could be used for other multifactorial diseases.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "565"
+  ],
+  "article-number": "15",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "8 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "12 November 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "8 February 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0009-0005-4542-9315",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Tsare",
+      "given": "Evridiki-Pandora G.",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2047-3185",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Klapa",
+      "given": "Maria I.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2556-537X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Moschonas",
+      "given": "Nicholas K.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        8
+      ]
+    ],
+    "date-time": "2024-02-08T03:02:38Z",
+    "timestamp": 1707361358000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        8
+      ]
+    ],
+    "date-time": "2024-02-08T04:47:58Z",
+    "timestamp": 1707367678000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100013209",
+      "award": [
+        "PhD Fellowship #2082"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Hellenic Foundation for Research and Innovation"
+    },
+    {
+      "award": [
+        "EATRIS-GR (MIS 5028091)",
+        "ELIXIR-GR (MIS 5002780)"
+      ],
+      "name": "General Secretariat for Research and Innovation, Greece"
+    },
+    {
+      "award": [
+        "DIAGONAL #95152",
+        "AIDPATH #101016909",
+        "JOINTPROMISE #874837"
+      ],
+      "name": "Horizon 2020 Framework Programme, European Union"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        11
+      ]
+    ],
+    "date-time": "2024-02-11T11:07:35Z",
+    "timestamp": 1707649655621
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            8
+          ]
+        ],
+        "date-time": "2024-02-08T00:00:00Z",
+        "timestamp": 1707350400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            8
+          ]
+        ],
+        "date-time": "2024-02-08T00:00:00Z",
+        "timestamp": 1707350400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00565-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00565-6/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00565-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        8
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s43586-021-00056-9",
+      "author": "E Uffelmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "issue": "1",
+      "journal-title": "Nat Rev Methods Prim",
+      "key": "565_CR1",
+      "unstructured": "Uffelmann E, Huang QQ, Munung NS, de Vries J, Okada Y, Martin AR, et al. Genome-wide association studies. Nat Rev Methods Prim. 2021;1(1):59.",
+      "volume": "1",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1098/rstb.2012.0362",
+      "author": "AC Nica",
+      "doi-asserted-by": "publisher",
+      "first-page": "20120362",
+      "issue": "1620",
+      "journal-title": "Philos Trans R Soc B Biol Sci",
+      "key": "565_CR2",
+      "unstructured": "Nica AC, Dermitzakis ET. Expression quantitative trait loci: present and future. Philos Trans R Soc B Biol Sci. 2013;368(1620):20120362.",
+      "volume": "368",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gky1120",
+      "author": "A Buniello",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1005",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR3",
+      "unstructured": "Buniello A, MacArthur JAL, Cerezo M, Harris LW, Hayhurst J, Malangone C, et al. The NHGRI-EBI GWAS catalog of published genome-wide association studies, targeted arrays and summary statistics 2019. Nucleic Acids Res. 2019;47(D1):D1005–12.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s10038-020-00842-5",
+      "author": "M Akiyama",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "issue": "1",
+      "journal-title": "J Hum Genet",
+      "key": "565_CR4",
+      "unstructured": "Akiyama M. Multi-omics study for interpretation of genome-wide association study. J Hum Genet. 2021;66(1):3–10.",
+      "volume": "66",
+      "year": "2021"
+    },
+    {
+      "author": "J Yan",
+      "first-page": "1370",
+      "issue": "6",
+      "journal-title": "Brief Bioinform",
+      "key": "565_CR5",
+      "unstructured": "Yan J, Risacher SL, Shen L, Saykin AJ. Network approaches to systems biology analysis of complex disease: integrative methods for multi-omics data. Brief Bioinform. 2017;19(6):1370–81.",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.molmed.2020.04.006",
+      "author": "X Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "718",
+      "issue": "8",
+      "journal-title": "Trends Mol Med",
+      "key": "565_CR6",
+      "unstructured": "Yang X. Multitissue Multiomics systems biology to dissect complex diseases. Trends Mol Med. 2020;26(8):718–28.",
+      "volume": "26",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nrg2918",
+      "author": "AL Barabási",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "issue": "1",
+      "journal-title": "Nat Rev Genet",
+      "key": "565_CR7",
+      "unstructured": "Barabási AL, Gulbahce N, Loscalzo J. Network medicine: a network-based approach to human disease. Nat Rev Genet. 2011;12(1):56–68.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bib/bby035",
+      "author": "ER Chimusa",
+      "doi-asserted-by": "publisher",
+      "first-page": "690",
+      "issue": "2",
+      "journal-title": "Brief Bioinform",
+      "key": "565_CR8",
+      "unstructured": "Chimusa ER, Dalvie S, Dandara C, Wonkam A, Mazandu GK. Post genome-wide association analysis: dissecting computational pathway/network-based approaches. Brief Bioinform. 2019;20(2):690–700.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.cbpa.2021.102101",
+      "author": "S Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "102101",
+      "journal-title": "Curr Opin Chem Biol",
+      "key": "565_CR9",
+      "unstructured": "Wu S, Chen D, Snyder MP. Network biology bridges the gaps between quantitative genetics and multi-omics to map complex diseases. Curr Opin Chem Biol. 2022;66:102101.",
+      "volume": "66",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/1752-0509-7-96",
+      "author": "MI Klapa",
+      "doi-asserted-by": "publisher",
+      "first-page": "96",
+      "journal-title": "BMC Syst Biol",
+      "key": "565_CR10",
+      "unstructured": "Klapa MI, Tsafou K, Theodoridis E, Tsakalidis A, Moschonas NK. Reconstruction of the experimentally supported human protein interactome: what can we learn? BMC Syst Biol. 2013;7:96.",
+      "volume": "7",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.3390/biom12010140",
+      "author": "GN Dimitrakopoulos",
+      "doi-asserted-by": "publisher",
+      "first-page": "140",
+      "issue": "1",
+      "journal-title": "Biomolecules",
+      "key": "565_CR11",
+      "unstructured": "Dimitrakopoulos GN, Klapa MI, Moschonas NK. How far are we from the completion of the human protein interactome reconstruction? Biomolecules. 2022;12(1):140.",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1073/pnas.0701361104",
+      "author": "KI Goh",
+      "doi-asserted-by": "publisher",
+      "first-page": "8685",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "565_CR12",
+      "unstructured": "Goh KI, Cusick ME, Valle D, Childs B, Vidal M, Barabási AL. The human disease network. Proc Natl Acad Sci U S A. 2007;104:8685–90.",
+      "volume": "104",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1008903",
+      "author": "A Ratnakumar",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1008903",
+      "issue": "7",
+      "journal-title": "PLOS Genet",
+      "key": "565_CR13",
+      "unstructured": "Ratnakumar A, Weinhold N, Mar JC, Riaz N. Protein-Protein interactions uncover candidate ‘core genes’ within omnigenic disease networks. Liu X, editor. PLOS Genet. 2020;16(7):e1008903.",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12864-021-07867-w",
+      "author": "X Guo",
+      "doi-asserted-by": "publisher",
+      "first-page": "537",
+      "issue": "1",
+      "journal-title": "BMC Genomics",
+      "key": "565_CR14",
+      "unstructured": "Guo X, Song Y, Liu S, Gao M, Qi Y, Shang X. Linking genotype to phenotype in multi-omics data of small sample. BMC Genomics. 2021;22(1):537.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s00439-013-1377-1",
+      "author": "P Jia",
+      "doi-asserted-by": "publisher",
+      "first-page": "125",
+      "issue": "2",
+      "journal-title": "Hum Genet",
+      "key": "565_CR15",
+      "unstructured": "Jia P, Zhao Z. Network-assisted analysis to prioritize GWAS results: principles, methods and perspectives. Hum Genet. 2014;133(2):125–38.",
+      "volume": "133",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.procs.2018.10.411",
+      "author": "MR Raj",
+      "doi-asserted-by": "publisher",
+      "first-page": "395",
+      "journal-title": "Proc Comput Sci",
+      "key": "565_CR16",
+      "unstructured": "Raj MR, Sreeja A. Analysis of Computational gene prioritization approaches. Proc Comput Sci. 2018;143:395–410.",
+      "volume": "143",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/ijms23137411",
+      "author": "Y Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "7411",
+      "issue": "13",
+      "journal-title": "Int J Mol Sci",
+      "key": "565_CR17",
+      "unstructured": "Kim Y, Park JH, Cho YR. Network-based approaches for disease-gene association prediction using protein–protein interaction networks. Int J Mol Sci. 2022;23(13):7411.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/35001165",
+      "author": "S Oliver",
+      "doi-asserted-by": "publisher",
+      "first-page": "601",
+      "issue": "6770",
+      "journal-title": "Nature",
+      "key": "565_CR18",
+      "unstructured": "Oliver S. Guilt-by-association goes global. Nature. 2000;403(6770):601–2.",
+      "volume": "403",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1111/j.1399-0004.2006.00708.x",
+      "author": "M Oti",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Clin Genet",
+      "key": "565_CR19",
+      "unstructured": "Oti M, Brunner H. The modular nature of genetic diseases. Clin Genet. 2006;71(1):1–11.",
+      "volume": "71",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.phrs.2017.11.003",
+      "author": "SE Kjeldsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "95",
+      "journal-title": "Pharmacol Res",
+      "key": "565_CR20",
+      "unstructured": "Kjeldsen SE. Hypertension and cardiovascular risk: general aspects. Pharmacol Res. 2018;129:95–9.",
+      "volume": "129",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3667",
+      "author": "GB Ehret",
+      "doi-asserted-by": "publisher",
+      "first-page": "1171",
+      "issue": "10",
+      "journal-title": "Nat Genet",
+      "key": "565_CR21",
+      "unstructured": "Ehret GB, Ferreira T, Chasman DI, Jackson AU, Schmidt EM, Johnson T, et al. The genetics of blood pressure regulation and its target organs from association studies in 342,415 individuals. Nat Genet. 2016;48(10):1171–84.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ng.3654",
+      "author": "P Surendran",
+      "doi-asserted-by": "publisher",
+      "first-page": "1151",
+      "issue": "10",
+      "journal-title": "Nat Genet",
+      "key": "565_CR22",
+      "unstructured": "Surendran P, Drenos F, Young R, Warren H, Cook JP, Manning AK, et al. Trans-ancestry meta-analyses identify rare and common variants associated with blood pressure and hypertension. Nat Genet. 2016;48(10):1151–61.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0198166",
+      "author": "MF Feitosa",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0198166",
+      "issue": "6",
+      "journal-title": "PLoS ONE",
+      "key": "565_CR23",
+      "unstructured": "Feitosa MF, Kraja AT, Chasman DI, Sung YJ, Winkler TW, Ntalla I, et al. Novel genetic associations for blood pressure identified via gene-alcohol interaction in up to 570K individuals across multiple ancestries. Kuivaniemi H, editor. PLoS ONE. 2018;13(6):e0198166.",
+      "volume": "13",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0303-9",
+      "author": "A Giri",
+      "doi-asserted-by": "publisher",
+      "first-page": "51",
+      "issue": "1",
+      "journal-title": "Nat Genet",
+      "key": "565_CR24",
+      "unstructured": "Giri A, Hellwege JN, Keaton JM, Park J, Qiu C, Warren HR, et al. Trans-ethnic association study of blood pressure determinants in over 750,000 individuals. Nat Genet. 2019;51(1):51–62.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.15252/msb.20145399",
+      "author": "T Huan",
+      "doi-asserted-by": "publisher",
+      "first-page": "799",
+      "issue": "4",
+      "journal-title": "Mol Syst Biol",
+      "key": "565_CR25",
+      "unstructured": "Huan T, Meng Q, Saleh MA, Norlander AE, Joehanes R, Zhu J, et al. Integrative network analysis reveals molecular mechanisms of blood pressure regulation. Mol Syst Biol. 2015;11(4):799–799.",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1097/HJH.0000000000001680",
+      "author": "A Botzer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1094",
+      "issue": "5",
+      "journal-title": "J Hypertens",
+      "key": "565_CR26",
+      "unstructured": "Botzer A, Grossman E, Moult J, Unger R. A system view and analysis of essential hypertension. J Hypertens. 2018;36(5):1094–103.",
+      "volume": "36",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fcvm.2019.00021",
+      "author": "Y Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "21",
+      "journal-title": "Front Cardiovasc Med",
+      "key": "565_CR27",
+      "unstructured": "Zhao Y, Blencowe M, Shi X, Shu L, Levian C, Ahn IS, et al. Integrative genomics analysis unravels tissue-specific pathways, networks, and key regulators of blood pressure regulation. Front Cardiovasc Med. 2019;6:21.",
+      "volume": "6",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.21105/joss.00731",
+      "author": "SD Turner",
+      "doi-asserted-by": "publisher",
+      "first-page": "731",
+      "issue": "25",
+      "journal-title": "J Open Source Softw",
+      "key": "565_CR28",
+      "unstructured": "Turner SD. qqman: an R package for visualizing GWAS results using Q–Q and manhattan plots. J Open Source Softw. 2018;3(25):731.",
+      "volume": "3",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkab1049",
+      "author": "F Cunningham",
+      "doi-asserted-by": "publisher",
+      "first-page": "D988",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR29",
+      "unstructured": "Cunningham F, Allen JE, Allen J, Alvarez-Jarreta J, Amode MR, Armean IM, et al. Ensembl 2022. Nucleic Acids Res. 2022;50(D1):D988–95.",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/gb-2005-6-5-r44",
+      "author": "K Eilbeck",
+      "doi-asserted-by": "publisher",
+      "first-page": "R44",
+      "issue": "5",
+      "journal-title": "Genome Biol",
+      "key": "565_CR30",
+      "unstructured": "Eilbeck K, Lewis SE, Mungall CJ, Yandell M, Stein L, Durbin R, et al. The sequence ontology: a tool for the unification of genome annotations. Genome Biol. 2005;6(5):R44.",
+      "volume": "6",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1186/1756-0381-6-18",
+      "author": "D Wolfe",
+      "doi-asserted-by": "publisher",
+      "first-page": "18",
+      "issue": "1",
+      "journal-title": "BioData Min",
+      "key": "565_CR31",
+      "unstructured": "Wolfe D, Dudek S, Ritchie MD, Pendergrass SA. Visualizing genomic information across chromosomes with PhenoGram. BioData Min. 2013;6(1):18.",
+      "volume": "6",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1126/science.aaz1776",
+      "author": "GTEx Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "1318",
+      "issue": "6509",
+      "journal-title": "Science (80-)",
+      "key": "565_CR32",
+      "unstructured": "GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science (80-). 2020;69(6509):1318–30.",
+      "volume": "69",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.2653",
+      "author": "J Lonsdale",
+      "doi-asserted-by": "publisher",
+      "first-page": "580",
+      "issue": "6",
+      "journal-title": "Nat Genet",
+      "key": "565_CR33",
+      "unstructured": "Lonsdale J, Thomas J, Salvatore M, Phillips R, Lo E, Shad S, et al. The genotype-tissue expression (GTEx) project. Nat Genet. 2013;45(6):580–5.",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0186039",
+      "author": "A Gioutlakis",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0186039",
+      "issue": "10",
+      "journal-title": "PLoS ONE",
+      "key": "565_CR34",
+      "unstructured": "Gioutlakis A, Klapa MI, Moschonas NK. PICKLE 2.0: a human protein-protein interaction meta-database employing data integration via genetic information ontology. Oliva B, editor. PLoS ONE. 2017;12(10):e0186039.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa1070",
+      "author": "GN Dimitrakopoulos",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "issue": "1",
+      "journal-title": "Bioinformatics",
+      "key": "565_CR35",
+      "unstructured": "Dimitrakopoulos GN, Klapa MI, Moschonas NK. PICKLE 3.0: enriching the human meta-database with the mouse protein interactome extended via mouse–human orthology. Bioinformatics. 2021;37(1):145–6.",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1100",
+      "author": "A Bateman",
+      "doi-asserted-by": "publisher",
+      "first-page": "D480",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR36",
+      "unstructured": "Bateman A, Martin MJ, Orchard S, Magrane M, Agivetova R, Ahmad S, et al. UniProt: the universal protein knowledgebase in 2021. Nucleic Acids Res. 2021;49(D1):D480–9.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/gr.1239303",
+      "author": "P Shannon",
+      "doi-asserted-by": "publisher",
+      "first-page": "2498",
+      "journal-title": "Genome Res",
+      "key": "565_CR37",
+      "unstructured": "Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, et al. Cytoscape: a software Environment for integrated models of biomolecular interaction networks. Genome Res. 2003;13:2498–504.",
+      "volume": "13",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.patter.2020.100052",
+      "author": "A Salavaty",
+      "doi-asserted-by": "publisher",
+      "first-page": "100052",
+      "issue": "5",
+      "journal-title": "Patterns",
+      "key": "565_CR38",
+      "unstructured": "Salavaty A, Ramialison M, Currie PD. Integrated value of influence: an integrative method for the identification of the most influential nodes within networks. Patterns. 2020;1(5):100052.",
+      "volume": "1",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.4137/GRSB.S702",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR39",
+      "unstructured": "Koschützki D, Schreiber F. Centrality Analysis Methods for Biological Networks and Their Application to Gene Regulatory Networks. Gene Regul Syst Bio. 2008;2:193–201."
+    },
+    {
+      "DOI": "10.1016/j.physa.2018.08.053",
+      "author": "Q Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "379",
+      "journal-title": "Phys A Stat Mech Appl",
+      "key": "565_CR40",
+      "unstructured": "Liu Q, Zhu YX, Jia Y, Deng L, Zhou B, Zhu JX, et al. Leveraging local h-index to identify and rank influential spreaders in networks. Phys A Stat Mech Appl. 2018;512:379–91.",
+      "volume": "512",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1126/science.1065103",
+      "author": "S Maslov",
+      "doi-asserted-by": "publisher",
+      "first-page": "910",
+      "issue": "5569",
+      "journal-title": "Science (80-)",
+      "key": "565_CR41",
+      "unstructured": "Maslov S, Sneppen K. Specificity and stability in topology of protein networks. Science (80-). 2002;296(5569):910–3.",
+      "volume": "296",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0077455",
+      "author": "DB Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "e77455",
+      "issue": "10",
+      "journal-title": "PLoS ONE",
+      "key": "565_CR42",
+      "unstructured": "Chen DB, Gao H, Lü L, Zhou T. Identifying influential nodes in large-scale directed networks: the role of clustering. PLoS ONE. 2013;8(10):e77455.",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nature14604",
+      "author": "F Morone",
+      "doi-asserted-by": "publisher",
+      "first-page": "65",
+      "issue": "7563",
+      "journal-title": "Nature",
+      "key": "565_CR43",
+      "unstructured": "Morone F, Makse HA. Influence maximization in complex networks through optimal percolation. Nature. 2015;524(7563):65–8.",
+      "volume": "524",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkac194",
+      "author": "BT Sherman",
+      "doi-asserted-by": "publisher",
+      "first-page": "W216",
+      "issue": "W1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR44",
+      "unstructured": "Sherman BT, Hao M, Qiu J, Jiao X, Baseler MW, Lane HC, et al. DAVID: a web server for functional enrichment analysis and functional annotation of gene lists (2021 update). Nucleic Acids Res. 2022;50(W1):W216–21.",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/nprot.2008.211",
+      "author": "DW Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "issue": "1",
+      "journal-title": "Nat Protoc",
+      "key": "565_CR45",
+      "unstructured": "Huang DW, Sherman BT, Lempicki RA. Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources. Nat Protoc. 2009;4(1):44–57.",
+      "volume": "4",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/28.1.27",
+      "author": "M Kanehisa",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR46",
+      "unstructured": "Kanehisa M. KEGG: Kyoto encyclopedia of genes and genomes. Nucleic Acids Res. 2000;28(1):27–30.",
+      "volume": "28",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1093/nar/gky962",
+      "author": "M Kanehisa",
+      "doi-asserted-by": "publisher",
+      "first-page": "D590",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR47",
+      "unstructured": "Kanehisa M, Sato Y, Furumichi M, Morishima K, Tanabe M. New approach for understanding genome variations in KEGG. Nucleic Acids Res. 2019;47(D1):D590–5.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa970",
+      "author": "M Kanehisa",
+      "doi-asserted-by": "publisher",
+      "first-page": "D545",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR48",
+      "unstructured": "Kanehisa M, Furumichi M, Sato Y, Ishiguro-Watanabe M, Tanabe M. KEGG: integrating viruses and cellular organisms. Nucleic Acids Res. 2021;49(D1):D545–51.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1037",
+      "author": "DS Wishart",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1074",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR49",
+      "unstructured": "Wishart DS, Feunang YD, Guo AC, Lo EJ, Marcu A, Grant JR, et al. DrugBank 5.0: a major update to the DrugBank database for 2018. Nucleic Acids Res. 2018;46(D1):D1074–82.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gku1205",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR50",
+      "unstructured": "Amberger JS, Bocchini CA, Schiettecatte F, Scott AF, Hamosh A. OMIM.org: Online Mendelian Inheritance in Man (OMIM®), an Online catalog of human genes and genetic disorders. Nucleic Acids Res. 2015;43:D789–98."
+    },
+    {
+      "DOI": "10.1038/ng0504-431",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR51",
+      "unstructured": "Becker KG, Barnes KC, Bright TJ, Wang SA. The genetic association database. Nat Genet. 2004;36(5):431–2."
+    },
+    {
+      "DOI": "10.1186/s13059-018-1396-2",
+      "author": "J Morales",
+      "doi-asserted-by": "publisher",
+      "first-page": "21",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "565_CR52",
+      "unstructured": "Morales J, Welter D, Bowler EH, Cerezo M, Harris LW, McMahon AC, et al. A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog. Genome Biol. 2018;19(1):21.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.108.845792",
+      "author": "MH Drazner",
+      "doi-asserted-by": "publisher",
+      "first-page": "327",
+      "issue": "3",
+      "journal-title": "Circulation",
+      "key": "565_CR53",
+      "unstructured": "Drazner MH. The progression of hypertensive heart disease. Circulation. 2011;123(3):327–34.",
+      "volume": "123",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1161/HYPERTENSIONAHA.120.15856",
+      "author": "A Ataei",
+      "doi-asserted-by": "publisher",
+      "first-page": "1055",
+      "issue": "4",
+      "journal-title": "Hypertension",
+      "key": "565_CR54",
+      "unstructured": "Ataei A, Golshiri K, Jüttner A, Krenning G, Danser AHJ, Roks AJM. Nitric oxide-cGMP signaling in hypertension. Hypertension. 2020;76(4):1055–68.",
+      "volume": "76",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fphys.2020.566871",
+      "author": "L Hering",
+      "doi-asserted-by": "publisher",
+      "first-page": "566871",
+      "journal-title": "Front Physiol",
+      "key": "565_CR55",
+      "unstructured": "Hering L, Rahman M, Potthoff SA, Rump LC, Stegbauer J. Role of α2-adrenoceptors in hypertension: focus on renal sympathetic neurotransmitter release, inflammation, and sodium homeostasis. Front Physiol. 2020;11:566871.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00421-020-04410-9",
+      "author": "N Muangritdech",
+      "doi-asserted-by": "publisher",
+      "first-page": "1815",
+      "issue": "8",
+      "journal-title": "Eur J Appl Physiol",
+      "key": "565_CR56",
+      "unstructured": "Muangritdech N, Hamlin MJ, Sawanyawisuth K, Prajumwongs P, Saengjan W, Wonnabussapawich P, et al. Hypoxic training improves blood pressure, nitric oxide and hypoxia-inducible factor-1 alpha in hypertensive patients. Eur J Appl Physiol. 2020;120(8):1815–26.",
+      "volume": "120",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fcvm.2021.709509",
+      "author": "EY Lucero García Rojas",
+      "doi-asserted-by": "publisher",
+      "first-page": "709509",
+      "journal-title": "Front Cardiovasc Med",
+      "key": "565_CR57",
+      "unstructured": "Lucero García Rojas EY, Villanueva C, Bond RA. Hypoxia inducible factors as central players in the pathogenesis and pathophysiology of cardiovascular diseases. Front Cardiovasc Med. 2021;8:709509.",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fcell.2021.652152",
+      "author": "DM Perez",
+      "doi-asserted-by": "publisher",
+      "first-page": "652152",
+      "journal-title": "Front Cell Dev Biol",
+      "key": "565_CR58",
+      "unstructured": "Perez DM. Current developments on the role of α1-adrenergic receptors in cognition, cardioprotection, and metabolism. Front Cell Dev Biol. 2021;9:652152.",
+      "volume": "9",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s00395-022-00909-8",
+      "author": "G Heusch",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Basic Res Cardiol",
+      "key": "565_CR59",
+      "unstructured": "Heusch G. Coronary blood flow in heart failure: cause, consequence and bystander. Basic Res Cardiol. 2022;117(1):1.",
+      "volume": "117",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.4239/wjd.v5.i3.316",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR60",
+      "unstructured": "Auburger G. 12q24 locus association with type 1 diabetes: SH2B3 or ATXN2? World J Diabetes. 2014;5(3):316–27."
+    },
+    {
+      "DOI": "10.1074/mcp.M115.056770",
+      "author": "D Meierhofer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1728",
+      "issue": "5",
+      "journal-title": "Mol Cell Proteomics",
+      "key": "565_CR61",
+      "unstructured": "Meierhofer D, Halbach M, Şen NE, Gispert S, Auburger G. Ataxin-2 (Atxn2)-knock-out mice show branched chain amino acids and fatty acids pathway alterations. Mol Cell Proteomics. 2016;15(5):1728–39.",
+      "volume": "15",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1161/HYPERTENSIONAHA.118.12094",
+      "author": "JA Keefe",
+      "doi-asserted-by": "publisher",
+      "first-page": "497",
+      "issue": "2",
+      "journal-title": "Hypertension",
+      "key": "565_CR62",
+      "unstructured": "Keefe JA, Hwang SJ, Huan T, Mendelson M, Yao C, Courchesne P, et al. Evidence for a causal role of the SH2B3 -β 2 M axis in blood pressure regulation. Hypertension. 2019;73(2):497–503.",
+      "volume": "73",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gks1094",
+      "author": "A Franceschini",
+      "doi-asserted-by": "publisher",
+      "first-page": "D808",
+      "journal-title": "Nucleic Acids Res",
+      "key": "565_CR63",
+      "unstructured": "Franceschini A, Szklarczyk D, Frankild S, Kuhn M, Simonovic M, Roth A, et al. STRING v9.1: protein–protein interaction networks, with increased coverage and integration. Nucleic Acids Res. 2013;41:D808–15.",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/ng.384",
+      "author": "D Levy",
+      "doi-asserted-by": "publisher",
+      "first-page": "677",
+      "issue": "6",
+      "journal-title": "Nat Genet",
+      "key": "565_CR64",
+      "unstructured": "Levy D, Ehret GB, Rice K, Verwoert GC, Launer LJ, Dehghan A, et al. Genome-wide association study of blood pressure and hypertension. Nat Genet. 2009;41(6):677–87.",
+      "volume": "41",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.3389/fcell.2022.873706",
+      "author": "S Luo",
+      "doi-asserted-by": "publisher",
+      "first-page": "873706",
+      "journal-title": "Front Cell Dev Biol",
+      "key": "565_CR65",
+      "unstructured": "Luo S, Zheng N, Lang B. ULK4 in neurodevelopmental and neuropsychiatric disorders. Front Cell Dev Biol. 2022;10:873706.",
+      "volume": "10",
+      "year": "2022"
+    },
+    {
+      "author": "B Lang",
+      "first-page": "630",
+      "issue": "3",
+      "journal-title": "J Cell Sci",
+      "key": "565_CR66",
+      "unstructured": "Lang B, Pu J, Hunter I, Liu M, Martin-Granados C, Reilly TJ, et al. Recurrent deletions of ULK4 in schizophrenia: a novel gene crucial for neuritogenesis and neuronal motility. J Cell Sci. 2013;127(3):630–40.",
+      "volume": "127",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2022.03.009",
+      "author": "MJ Rahimi",
+      "doi-asserted-by": "publisher",
+      "first-page": "944",
+      "issue": "5",
+      "journal-title": "Am J Hum Genet",
+      "key": "565_CR67",
+      "unstructured": "Rahimi MJ, Urban N, Wegler M, Sticht H, Schaefer M, Popp B, et al. De novo variants in ATP2B1 lead to neurodevelopmental delay. Am J Hum Genet. 2022;109(5):944–52.",
+      "volume": "109",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1097/HJH.0000000000001211",
+      "author": "Y Funato",
+      "doi-asserted-by": "publisher",
+      "first-page": "585",
+      "issue": "3",
+      "journal-title": "J Hypertens",
+      "key": "565_CR68",
+      "unstructured": "Funato Y, Yamazaki D, Miki H. Renal function of cyclin M2 Mg2+ transporter maintains blood pressure. J Hypertens. 2017;35(3):585–92.",
+      "volume": "35",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1161/HYPERTENSIONAHA.120.16589",
+      "author": "CA Klemens",
+      "doi-asserted-by": "publisher",
+      "first-page": "582",
+      "issue": "2",
+      "journal-title": "Hypertension",
+      "key": "565_CR69",
+      "unstructured": "Klemens CA, Chulkov EG, Wu J, Hye Khan MA, Levchenko V, Flister MJ, et al. Loss of chloride channel 6 (CLC-6) affects vascular smooth muscle contractility and arterial stiffness via alterations to Golgi calcium stores. Hypertension. 2021;77(2):582–93.",
+      "volume": "77",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3390/nu13124562",
+      "author": "S Raghubeer",
+      "doi-asserted-by": "publisher",
+      "first-page": "4562",
+      "issue": "12",
+      "journal-title": "Nutrients",
+      "key": "565_CR70",
+      "unstructured": "Raghubeer S, Matsha TE. Methylenetetrahydrofolate (MTHFR), the one-carbon cycle, and cardiovascular risks. Nutrients. 2021;13(12):4562.",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.7759/cureus.5014",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR71",
+      "unstructured": "Zaghloul A, Iorgoveanu C, Desai A, Balakumaran K, Chen K. Methylenetetrahydrofolate Reductase Polymorphism and Premature Coronary Artery Disease. Cureus. 2019;11(6):e5014."
+    },
+    {
+      "DOI": "10.7150/ijbs.5141",
+      "author": "M Okada",
+      "doi-asserted-by": "publisher",
+      "first-page": "1385",
+      "issue": "10",
+      "journal-title": "Int J Biol Sci",
+      "key": "565_CR72",
+      "unstructured": "Okada M. Regulation of the Src family kinases by csk. Int J Biol Sci. 2012;8(10):1385–97.",
+      "volume": "8",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1253/circj.CJ-17-0080",
+      "author": "SM Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "168",
+      "issue": "1",
+      "journal-title": "Circ J",
+      "key": "565_CR73",
+      "unstructured": "Kim SM, Kang JO, Lim JE, Hwang SY, Oh B. Csk regulates blood pressure by controlling the synthetic pathways of aldosterone. Circ J. 2018;82(1):168–75.",
+      "volume": "82",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1182/blood-2003-05-1701",
+      "author": "LJ Duan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1370",
+      "issue": "4",
+      "journal-title": "Blood",
+      "key": "565_CR74",
+      "unstructured": "Duan LJ, Imamoto A, Fong GH. Dual roles of the C-terminal Src kinase (Csk) during developmental vascularization. Blood. 2004;103(4):1370–2.",
+      "volume": "103",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1152/ajplung.00538.2017",
+      "author": "Z Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "L216",
+      "issue": "1",
+      "journal-title": "Am J Physiol Cell Mol Physiol",
+      "key": "565_CR75",
+      "unstructured": "Wang Z, Yang K, Zheng Q, Zhang C, Tang H, Babicheva A, et al. Divergent changes of p53 in pulmonary arterial endothelial and smooth muscle cells involved in the development of pulmonary hypertension. Am J Physiol Cell Mol Physiol. 2019;316(1):L216–28.",
+      "volume": "316",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00018-020-03694-6",
+      "author": "H Men",
+      "doi-asserted-by": "publisher",
+      "first-page": "2001",
+      "issue": "5",
+      "journal-title": "Cell Mol Life Sci",
+      "key": "565_CR76",
+      "unstructured": "Men H, Cai H, Cheng Q, Zhou W, Wang X, Huang S, et al. The regulatory roles of p53 in cardiovascular health and disease. Cell Mol Life Sci. 2021;78(5):2001–18.",
+      "volume": "78",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fphar.2022.981152",
+      "author": "GHH Chan",
+      "doi-asserted-by": "publisher",
+      "first-page": "981152",
+      "journal-title": "Front Pharmacol",
+      "key": "565_CR77",
+      "unstructured": "Chan GHH, Chan E, Kwok CTK, Leung GPH, Lee SMY, Seto SW. The role of p53 in the alternation of vascular functions. Front Pharmacol. 2022;13:981152.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.115.308268",
+      "author": "MK Gupta",
+      "doi-asserted-by": "publisher",
+      "first-page": "1894",
+      "issue": "12",
+      "journal-title": "Circ Res",
+      "key": "565_CR78",
+      "unstructured": "Gupta MK, McLendon PM, Gulick J, James J, Khalili K, Robbins J. UBC9-mediated sumoylation favorably impacts cardiac function in compromised hearts. Circ Res. 2016;118(12):1894–905.",
+      "volume": "118",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.115.304760",
+      "author": "MK Gupta",
+      "doi-asserted-by": "publisher",
+      "first-page": "721",
+      "issue": "8",
+      "journal-title": "Circ Res",
+      "key": "565_CR79",
+      "unstructured": "Gupta MK, Gulick J, Liu R, Wang X, Molkentin JD, Robbins J. Sumo E2 enzyme UBC9 Is required for efficient protein quality control in cardiomyocytes. Circ Res. 2014;115(8):721–9.",
+      "volume": "115",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41371-022-00771-0",
+      "author": "B Visniauskas",
+      "doi-asserted-by": "publisher",
+      "first-page": "609",
+      "issue": "8",
+      "journal-title": "J Hum Hypertens",
+      "key": "565_CR80",
+      "unstructured": "Visniauskas B, Kilanowski-Doroh I, Ogola BO, Mcnally AB, Horton AC, Imulinde Sugi A, et al. Estrogen-mediated mechanisms in hypertension and other cardiovascular diseases. J Hum Hypertens. 2022;37(8):609–18.",
+      "volume": "37",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fendo.2022.839005",
+      "author": "P Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "839005",
+      "journal-title": "Front Endocrinol (Lausanne)",
+      "key": "565_CR81",
+      "unstructured": "Chen P, Li B, Ou-Yang L. Role of estrogen receptors in health and disease. Front Endocrinol (Lausanne). 2022;13:839005.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/ijms21124314",
+      "author": "L Aryan",
+      "doi-asserted-by": "publisher",
+      "first-page": "4314",
+      "issue": "12",
+      "journal-title": "Int J Mol Sci",
+      "key": "565_CR82",
+      "unstructured": "Aryan L, Younessi D, Zargari M, Banerjee S, Agopian J, Rahman S, et al. The role of estrogen receptors in cardiovascular disease. Int J Mol Sci. 2020;21(12):4314.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1172/JCI85624",
+      "author": "S Matsushima",
+      "doi-asserted-by": "publisher",
+      "first-page": "3403",
+      "issue": "9",
+      "journal-title": "J Clin Invest",
+      "key": "565_CR83",
+      "unstructured": "Matsushima S, Kuroda J, Zhai P, Liu T, Ikeda S, Nagarajan N, et al. Tyrosine kinase FYN negatively regulates NOX4 in cardiac remodeling. J Clin Invest. 2016;126(9):3403–16.",
+      "volume": "126",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.yjmcc.2020.08.013",
+      "author": "LH Kurahara",
+      "doi-asserted-by": "publisher",
+      "first-page": "50",
+      "journal-title": "J Mol Cell Cardiol",
+      "key": "565_CR84",
+      "unstructured": "Kurahara LH, Hiraishi K, Yamamura A, Zhang Y, Abe K, Yahiro E, et al. Eicosapentaenoic acid ameliorates pulmonary hypertension via inhibition of tyrosine kinase Fyn. J Mol Cell Cardiol. 2020;148:50–62.",
+      "volume": "148",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00395-021-00898-0",
+      "author": "S Comità",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "issue": "1",
+      "journal-title": "Basic Res Cardiol",
+      "key": "565_CR85",
+      "unstructured": "Comità S, Femmino S, Thairi C, Alloatti G, Boengler K, Pagliaro P, et al. Regulation of STAT3 and its role in cardioprotection by conditioning: focus on non-genomic roles targeting mitochondrial function. Basic Res Cardiol. 2021;116(1):56.",
+      "volume": "116",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fcvm.2019.00150",
+      "author": "Z Harhous",
+      "doi-asserted-by": "publisher",
+      "first-page": "150",
+      "journal-title": "Front Cardiovasc Med",
+      "key": "565_CR86",
+      "unstructured": "Harhous Z, Booz GW, Ovize M, Bidaux G, Kurdi M. An update on the multifaceted roles of STAT3 in the heart. Front Cardiovasc Med. 2019;6:150.",
+      "volume": "6",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1152/japplphysiol.00006.2018",
+      "author": "LX Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1968",
+      "issue": "6",
+      "journal-title": "J Appl Physiol",
+      "key": "565_CR87",
+      "unstructured": "Zhang LX, Du J, Zhao YT, Wang J, Zhang S, Dubielecka PM, et al. Transgenic overexpression of active HDAC4 in the heart attenuates cardiac function and exacerbates remodeling in infarcted myocardium. J Appl Physiol. 2018;125(6):1968–78.",
+      "volume": "125",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1152/ajpheart.01039.2011",
+      "author": "T Usui",
+      "doi-asserted-by": "publisher",
+      "first-page": "H1894",
+      "issue": "9",
+      "journal-title": "Am J Physiol Circ Physiol",
+      "key": "565_CR88",
+      "unstructured": "Usui T, Okada M, Mizuno W, Oda M, Ide N, Morita T, et al. HDAC4 mediates development of hypertension via vascular inflammation in spontaneous hypertensive rats. Am J Physiol Circ Physiol. 2012;302(9):H1894–904.",
+      "volume": "302",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41420-021-00601-1",
+      "author": "Q Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "240",
+      "issue": "1",
+      "journal-title": "Cell Death Discov",
+      "key": "565_CR89",
+      "unstructured": "Li Q, Zhu L, Niu F, Li Q, Wang C, Yang H, et al. Histone deacetylase HDAC4 participates in the pathological process of myocardial ischemia-reperfusion injury via MEKK1/JNK pathway by binding to miR-206. Cell Death Discov. 2021;7(1):240.",
+      "volume": "7",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1164/rccm.201702-0386OC",
+      "author": "D Zabini",
+      "doi-asserted-by": "publisher",
+      "first-page": "244",
+      "issue": "2",
+      "journal-title": "Am J Respir Crit Care Med",
+      "key": "565_CR90",
+      "unstructured": "Zabini D, Granton E, Hu Y, Miranda MZ, Weichelt U, Breuils Bonnet S, et al. Loss of SMAD3 promotes vascular remodeling in pulmonary arterial hypertension via MRTF disinhibition. Am J Respir Crit Care Med. 2018;197(2):244–60.",
+      "volume": "197",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.cellsig.2020.109826",
+      "author": "A Hanna",
+      "doi-asserted-by": "publisher",
+      "first-page": "109826",
+      "journal-title": "Cell Signal",
+      "key": "565_CR91",
+      "unstructured": "Hanna A, Humeres C, Frangogiannis NG. The role of smad signaling cascades in cardiac fibrosis. Cell Signal. 2021;77:109826.",
+      "volume": "77",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.7150/ijbs.71595",
+      "author": "W Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2795",
+      "issue": "7",
+      "journal-title": "Int J Biol Sci",
+      "key": "565_CR92",
+      "unstructured": "Wu W, Wang X, Yu X, Lan HY. Smad3 Signatures in renal inflammation and fibrosis. Int J Biol Sci. 2022;18(7):2795–806.",
+      "volume": "18",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1146/annurev-physiol-060121-041653",
+      "author": "A Papa",
+      "doi-asserted-by": "publisher",
+      "first-page": "285",
+      "issue": "1",
+      "journal-title": "Annu Rev Physiol",
+      "key": "565_CR93",
+      "unstructured": "Papa A, Kushner J, Marx SO. Adrenergic Regulation of calcium channels in the heart. Annu Rev Physiol. 2022;84(1):285–306.",
+      "volume": "84",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fphar.2018.00904",
+      "author": "C de Lucia",
+      "doi-asserted-by": "publisher",
+      "first-page": "904",
+      "journal-title": "Front Pharmacol",
+      "key": "565_CR94",
+      "unstructured": "de Lucia C, Eguchi A, Koch WJ. New insights in cardiac β-adrenergic signaling during heart failure and aging. Front Pharmacol. 2018;9:904.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1172/JCI137558",
+      "author": "SS Pullamsetti",
+      "doi-asserted-by": "publisher",
+      "first-page": "5638",
+      "issue": "11",
+      "journal-title": "J Clin Invest",
+      "key": "565_CR95",
+      "unstructured": "Pullamsetti SS, Mamazhakypov A, Weissmann N, Seeger W, Savai R. Hypoxia-inducible factor signaling in pulmonary hypertension. J Clin Invest. 2020;130(11):5638–51.",
+      "volume": "130",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fphys.2020.00774",
+      "author": "M Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "774",
+      "journal-title": "Front Physiol",
+      "key": "565_CR96",
+      "unstructured": "Liu M, Galli G, Wang Y, Fan Q, Wang Z, Wang X, et al. Novel therapeutic targets for hypoxia-related cardiovascular diseases: the role of HIF-1. Front Physiol. 2020;11:774.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.bbadis.2018.09.024",
+      "author": "ML da Sousa Fialho",
+      "doi-asserted-by": "publisher",
+      "first-page": "831",
+      "issue": "4",
+      "journal-title": "Biochim Biophys Acta: Mol Basis Dis",
+      "key": "565_CR97",
+      "unstructured": "da Sousa Fialho ML, Abd Jamil AH, Stannard GA, Heather LC. Hypoxia-inducible factor 1 signalling, metabolism and its therapeutic potential in cardiovascular disease. Biochim Biophys Acta: Mol Basis Dis. 2019;1865(4):831–43.",
+      "volume": "1865",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1172/JCI137557",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR98",
+      "unstructured": "Knutson AK, Williams AL, Boisvert WA, Shohet R V. HIF in the heart: development, metabolism, ischemia, and atherosclerosis. J Clin Invest. 2021;131(17) 131:e137557."
+    },
+    {
+      "DOI": "10.1038/s41392-022-01080-1",
+      "author": "Z Luo",
+      "doi-asserted-by": "publisher",
+      "first-page": "218",
+      "issue": "1",
+      "journal-title": "Signal Transduct Target Ther",
+      "key": "565_CR99",
+      "unstructured": "Luo Z, Tian M, Yang G, Tan Q, Chen Y, Li G, et al. Hypoxia signaling in human health and diseases: implications and prospects for therapeutics. Signal Transduct Target Ther. 2022;7(1):218.",
+      "volume": "7",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/978-3-030-12457-1_16",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR100",
+      "unstructured": "Terrar DA. Calcium Signaling in the Heart. Adv Exp Med Biol. 2020;1131:395–443."
+    },
+    {
+      "DOI": "10.1016/j.pbiomolbio.2020.02.008",
+      "author": "H Sutanto",
+      "doi-asserted-by": "publisher",
+      "first-page": "54",
+      "journal-title": "Prog Biophys Mol Biol",
+      "key": "565_CR101",
+      "unstructured": "Sutanto H, Lyon A, Lumens J, Schotten U, Dobrev D, Heijman J. Cardiomyocyte calcium handling in health and disease: insights from in vitro and in silico studies. Prog Biophys Mol Biol. 2020;157:54–75.",
+      "volume": "157",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/nu11051112",
+      "author": "C Villa-Etchegoyen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1112",
+      "issue": "5",
+      "journal-title": "Nutrients",
+      "key": "565_CR102",
+      "unstructured": "Villa-Etchegoyen C, Lombarte M, Matamoros N, Belizán JM, Cormick G. Mechanisms involved in the relationship between low calcium intake and high blood pressure. Nutrients. 2019;11(5):1112.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1111/jch.14152",
+      "author": "SS Jankauskas",
+      "doi-asserted-by": "publisher",
+      "first-page": "373",
+      "issue": "2",
+      "journal-title": "J Clin Hypertens",
+      "key": "565_CR103",
+      "unstructured": "Jankauskas SS, Morelli MB, Gambardella J, Lombardi A, Santulli G. Thyroid hormones regulate both cardiovascular and renal mechanisms underlying hypertension. J Clin Hypertens. 2021;23(2):373–81.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fphys.2021.606931",
+      "author": "H Yamakawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "606931",
+      "journal-title": "Front Physiol",
+      "key": "565_CR104",
+      "unstructured": "Yamakawa H, Kato TS, Noh JY, Yuasa S, Kawamura A, Fukuda K, et al. Thyroid Hormone plays an important role in cardiac function: from bench to bedside. Front Physiol. 2021;12:606931.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2018.02.045",
+      "author": "S Razvi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1781",
+      "issue": "16",
+      "journal-title": "J Am Coll Cardiol",
+      "key": "565_CR105",
+      "unstructured": "Razvi S, Jabbar A, Pingitore A, Danzi S, Biondi B, Klein I, et al. Thyroid hormones and cardiovascular function and diseases. J Am Coll Cardiol. 2018;71(16):1781–96.",
+      "volume": "71",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s11906-020-1028-6",
+      "author": "K Azushima",
+      "doi-asserted-by": "publisher",
+      "first-page": "22",
+      "issue": "3",
+      "journal-title": "Curr Hypertens Rep",
+      "key": "565_CR106",
+      "unstructured": "Azushima K, Morisawa N, Tamura K, Nishiyama A. Recent research advances in renin-angiotensin-aldosterone system receptors. Curr Hypertens Rep. 2020;22(3):22.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s10741-019-09855-5",
+      "author": "NR Pugliese",
+      "doi-asserted-by": "publisher",
+      "first-page": "31",
+      "issue": "1",
+      "journal-title": "Heart Fail Rev",
+      "key": "565_CR107",
+      "unstructured": "Pugliese NR, Masi S, Taddei S. The renin-angiotensin-aldosterone system: a crossroad from arterial hypertension to heart failure. Heart Fail Rev. 2020;25(1):31–42.",
+      "volume": "25",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/biomedicines10102374",
+      "author": "G Brosolo",
+      "doi-asserted-by": "publisher",
+      "first-page": "2374",
+      "issue": "10",
+      "journal-title": "Biomedicines",
+      "key": "565_CR108",
+      "unstructured": "Brosolo G, Da Porto A, Bulfone L, Vacca A, Bertin N, Scandolin L, et al. Insulin resistance and high blood pressure: mechanistic insight on the role of the kidney. Biomedicines. 2022;10(10):2374.",
+      "volume": "10",
+      "year": "2022"
+    },
+    {
+      "author": "ED Abel",
+      "first-page": "E130",
+      "issue": "1",
+      "journal-title": "Am J Physiol Metab",
+      "key": "565_CR109",
+      "unstructured": "Abel ED. Insulin signaling in the heart. Am J Physiol Metab. 2021;321(1):E130–45.",
+      "volume": "321",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s40292-020-00408-8",
+      "author": "C Mancusi",
+      "doi-asserted-by": "publisher",
+      "first-page": "515",
+      "issue": "6",
+      "journal-title": "High Blood Press Cardiovasc Prev",
+      "key": "565_CR110",
+      "unstructured": "Mancusi C, Izzo R, di Gioia G, Losi MA, Barbato E, Morisco C. Insulin resistance the hinge between hypertension and type 2 diabetes. High Blood Press Cardiovasc Prev. 2020;27(6):515–26.",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12933-018-0762-4",
+      "author": "V Ormazabal",
+      "doi-asserted-by": "publisher",
+      "first-page": "122",
+      "issue": "1",
+      "journal-title": "Cardiovasc Diabetol",
+      "key": "565_CR111",
+      "unstructured": "Ormazabal V, Nair S, Elfeky O, Aguayo C, Salomon C, Zuñiga FA. Association between insulin resistance and the development of cardiovascular disease. Cardiovasc Diabetol. 2018;17(1):122.",
+      "volume": "17",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/cvr/cvy023",
+      "author": "RM Touyz",
+      "doi-asserted-by": "publisher",
+      "first-page": "529",
+      "issue": "4",
+      "journal-title": "Cardiovasc Res",
+      "key": "565_CR112",
+      "unstructured": "Touyz RM, Alves-Lopes R, Rios FJ, Camargo LL, Anagnostopoulou A, Arner A, et al. Vascular smooth muscle contraction in hypertension. Cardiovasc Res. 2018;114(4):529–39.",
+      "volume": "114",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/life11070702",
+      "author": "Q Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "702",
+      "issue": "7",
+      "journal-title": "Life",
+      "key": "565_CR113",
+      "unstructured": "Yang Q, Hori M. Characterization of contractile machinery of vascular smooth muscles in hypertension. Life. 2021;11(7):702.",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.7150/ijbs.49871",
+      "author": "Y Zhuge",
+      "doi-asserted-by": "publisher",
+      "first-page": "2741",
+      "issue": "14",
+      "journal-title": "Int J Biol Sci",
+      "key": "565_CR114",
+      "unstructured": "Zhuge Y, Zhang J, Qian F, Wen Z, Niu C, Xu K, et al. Role of smooth muscle cells in cardiovascular disease. Int J Biol Sci. 2020;16(14):2741–51.",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.117.310183",
+      "author": "A Ghigo",
+      "doi-asserted-by": "publisher",
+      "first-page": "282",
+      "issue": "3",
+      "journal-title": "Circ Res",
+      "key": "565_CR115",
+      "unstructured": "Ghigo A, Laffargue M, Li M, Hirsch E. PI3K and calcium signaling in cardiovascular disease. Circ Res. 2017;121(3):282–92.",
+      "volume": "121",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1097/FJC.0000000000000686",
+      "author": "Y Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "549",
+      "issue": "6",
+      "journal-title": "J Cardiovasc Pharmacol",
+      "key": "565_CR116",
+      "unstructured": "Huang Y, Wu X, Wu M, Chu J, Yu N, Shen A, et al. Antihypertensive and Vasodilatory effects of qingda granules by suppression of calcium influx and the AKT pathway. J Cardiovasc Pharmacol. 2019;74(6):549–57.",
+      "volume": "74",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s11010-021-04219-w",
+      "author": "W Qin",
+      "doi-asserted-by": "publisher",
+      "first-page": "4045",
+      "issue": "11",
+      "journal-title": "Mol Cell Biochem",
+      "key": "565_CR117",
+      "unstructured": "Qin W, Cao L, Massey IY. Role of PI3K/Akt signaling pathway in cardiac fibrosis. Mol Cell Biochem. 2021;476(11):4045–59.",
+      "volume": "476",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s11033-022-07468-0",
+      "author": "S Ghafouri-Fard",
+      "doi-asserted-by": "publisher",
+      "first-page": "9767",
+      "issue": "10",
+      "journal-title": "Mol Biol Rep",
+      "key": "565_CR118",
+      "unstructured": "Ghafouri-Fard S, Khanbabapour Sasi A, Hussen BM, Shoorei H, Siddiq A, Taheri M, et al. Interplay between PI3K/AKT pathway and heart disorders. Mol Biol Rep. 2022;49(10):9767–81.",
+      "volume": "49",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fphar.2015.00203",
+      "author": "C Boularan",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Front Pharmacol",
+      "key": "565_CR119",
+      "unstructured": "Boularan C, Gales C. Cardiac cAMP: production, hydrolysis, modulation and detection. Front Pharmacol. 2015;6:203.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1113/JP280801",
+      "author": "RD Harvey",
+      "doi-asserted-by": "publisher",
+      "first-page": "4527",
+      "issue": "20",
+      "journal-title": "J Physiol",
+      "key": "565_CR120",
+      "unstructured": "Harvey RD, Clancy CE. Mechanisms of cAMP compartmentation in cardiac myocytes: experimental and computational approaches to understanding. J Physiol. 2021;599(20):4527–44.",
+      "volume": "599",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fphar.2022.792798",
+      "author": "G Numata",
+      "doi-asserted-by": "publisher",
+      "first-page": "792798",
+      "journal-title": "Front Pharmacol",
+      "key": "565_CR121",
+      "unstructured": "Numata G, Takimoto E. Cyclic GMP and PKG signaling in heart failure. Front Pharmacol. 2022;13:792798.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.117.311147",
+      "author": "S Sciarretta",
+      "doi-asserted-by": "publisher",
+      "first-page": "489",
+      "issue": "3",
+      "journal-title": "Circ Res",
+      "key": "565_CR122",
+      "unstructured": "Sciarretta S, Forte M, Frati G, Sadoshima J. New insights into the role of mTOR signaling in the cardiovascular system. Circ Res. 2018;122(3):489–505.",
+      "volume": "122",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2174/1389450122666210224105430",
+      "author": "U Tariq",
+      "doi-asserted-by": "publisher",
+      "first-page": "1568",
+      "issue": "13",
+      "journal-title": "Curr Drug Targets",
+      "key": "565_CR123",
+      "unstructured": "Tariq U, Uppulapu SK, Banerjee SK. Role of GSK-3 in cardiac health: focusing on cardiac remodeling and heart failure. Curr Drug Targets. 2021;22(13):1568–76.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.pharmthera.2005.04.005",
+      "author": "R Schulz",
+      "doi-asserted-by": "publisher",
+      "first-page": "225",
+      "issue": "3",
+      "journal-title": "Pharmacol Ther",
+      "key": "565_CR124",
+      "unstructured": "Schulz R, Rassaf T, Massion PB, Kelm M, Balligand JL. Recent advances in the understanding of the role of nitric oxide in cardiovascular homeostasis. Pharmacol Ther. 2005;108(3):225–56.",
+      "volume": "108",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/nrcardio.2017.224",
+      "author": "C Farah",
+      "doi-asserted-by": "publisher",
+      "first-page": "292",
+      "issue": "5",
+      "journal-title": "Nat Rev Cardiol",
+      "key": "565_CR125",
+      "unstructured": "Farah C, Michel LYM, Balligand JL. Nitric oxide signalling in cardiovascular health and disease. Nat Rev Cardiol. 2018;15(5):292–316.",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s10557-020-06959-1",
+      "author": "MEJ Preedy",
+      "doi-asserted-by": "publisher",
+      "first-page": "401",
+      "issue": "3",
+      "journal-title": "Cardiovasc Drugs Ther",
+      "key": "565_CR126",
+      "unstructured": "Preedy MEJ. Cardiac cyclic nucleotide phosphodiesterases: roles and therapeutic potential in heart failure. Cardiovasc Drugs Ther. 2020;34(3):401–17.",
+      "volume": "34",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.121.057599",
+      "author": "R Chakraborty",
+      "doi-asserted-by": "publisher",
+      "first-page": "1720",
+      "issue": "23",
+      "journal-title": "Circulation",
+      "key": "565_CR127",
+      "unstructured": "Chakraborty R, Ostriker AC, Xie Y, Dave JM, Gamez-Mendez A, Chatterjee P, et al. Histone acetyltransferases p300 and CBP coordinate distinct chromatin remodeling programs in vascular smooth muscle plasticity. Circulation. 2022;145(23):1720–37.",
+      "volume": "145",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/jcsm.12522",
+      "author": "K Svensson",
+      "doi-asserted-by": "publisher",
+      "first-page": "464",
+      "issue": "2",
+      "journal-title": "J Cachexia Sarcopenia Muscle",
+      "key": "565_CR128",
+      "unstructured": "Svensson K, LaBarge SA, Sathe A, Martins VF, Tahvilian S, Cunliffe JM, et al. p300 and cAMP response element-binding protein-binding protein in skeletal muscle homeostasis, contractile function, and survival. J Cachexia Sarcopenia Muscle. 2020;11(2):464–77.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1042/bj3360183",
+      "author": "ES Sivelman",
+      "doi-asserted-by": "publisher",
+      "first-page": "183",
+      "issue": "1",
+      "journal-title": "Biochem J",
+      "key": "565_CR129",
+      "unstructured": "Sivelman ES, Du J, Williams AJ, Wadgaonkar R, Drazen JM, Collins T. cAMP-response-element-binding-protein-binding protein (CBP) and p300 are transcriptional co-activators of early growth response factor-1 (Egr-1). Biochem J. 1998;336(1):183–9.",
+      "volume": "336",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.3390/ijms21103630",
+      "author": "JM Murphy",
+      "doi-asserted-by": "publisher",
+      "first-page": "3630",
+      "issue": "10",
+      "journal-title": "Int J Mol Sci",
+      "key": "565_CR130",
+      "unstructured": "Murphy JM, Jeong K, Lim STS. FAK Family kinases in vascular diseases. Int J Mol Sci. 2020;21(10):3630.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/01.HYP.0000242483.03361.da",
+      "author": "XF Figueroa",
+      "doi-asserted-by": "publisher",
+      "first-page": "804",
+      "issue": "5",
+      "journal-title": "Hypertension",
+      "key": "565_CR131",
+      "unstructured": "Figueroa XF, Isakson BE, Duling BR. Vascular gap junctions in hypertension. Hypertension. 2006;48(5):804–11.",
+      "volume": "48",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.3390/ijms22094413",
+      "author": "A Rodríguez-Sinovas",
+      "doi-asserted-by": "publisher",
+      "first-page": "4413",
+      "issue": "9",
+      "journal-title": "Int J Mol Sci",
+      "key": "565_CR132",
+      "unstructured": "Rodríguez-Sinovas A, Sánchez JA, Valls-Lacalle L, Consegal M, Ferreira-González I. Connexins in the Heart: regulation, function and involvement in cardiac disease. Int J Mol Sci. 2021;22(9):4413.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1042/CS20201528",
+      "author": "JC Ribeiro-Silva",
+      "doi-asserted-by": "publisher",
+      "first-page": "1189",
+      "issue": "9",
+      "journal-title": "Clin Sci",
+      "key": "565_CR133",
+      "unstructured": "Ribeiro-Silva JC, Miyakawa AA, Krieger JE. Focal adhesion signaling: vascular smooth muscle cell contractility beyond calcium mechanisms. Clin Sci. 2021;135(9):1189–207.",
+      "volume": "135",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fphar.2023.1157043",
+      "author": "B Ni",
+      "doi-asserted-by": "publisher",
+      "first-page": "1157043",
+      "journal-title": "Front Pharmacol",
+      "key": "565_CR134",
+      "unstructured": "Ni B, Sun M, Zhao J, Wang J, Cao Z. The role of β-catenin in cardiac diseases. Front Pharmacol. 2023;14:1157043.",
+      "volume": "14",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1098/rsob.200267",
+      "author": "T van der Wal",
+      "doi-asserted-by": "publisher",
+      "first-page": "200267",
+      "issue": "12",
+      "journal-title": "Open Biol",
+      "key": "565_CR135",
+      "unstructured": "van der Wal T, van Amerongen R. Walking the tight wire between cell adhesion and WNT signalling: a balancing act for β-catenin. Open Biol. 2020;10(12):200267.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.atherosclerosis.2017.05.001",
+      "author": "MD Ziki",
+      "doi-asserted-by": "publisher",
+      "first-page": "171",
+      "journal-title": "Atherosclerosis",
+      "key": "565_CR136",
+      "unstructured": "Ziki MD, Mani A. Wnt signaling, a novel pathway regulating blood pressure? State of the art review. Atherosclerosis. 2017;262:171–8.",
+      "volume": "262",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.advms.2022.01.001",
+      "author": "M Młynarczyk",
+      "doi-asserted-by": "publisher",
+      "first-page": "87",
+      "issue": "1",
+      "journal-title": "Adv Med Sci",
+      "key": "565_CR137",
+      "unstructured": "Młynarczyk M, Kasacka I. The role of the Wnt/β-catenin pathway and the functioning of the heart in arterial hypertension: a review. Adv Med Sci. 2022;67(1):87–94.",
+      "volume": "67",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41392-021-00762-6",
+      "author": "J Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "issue": "1",
+      "journal-title": "Signal Transduct Target Ther",
+      "key": "565_CR138",
+      "unstructured": "Liu J, Xiao Q, Xiao J, Niu C, Li Y, Zhang X, et al. Wnt/β-catenin signalling: function, biological mechanisms, and therapeutic opportunities. Signal Transduct Target Ther. 2022;7(1):3.",
+      "volume": "7",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1111/febs.16092",
+      "author": "J Xie",
+      "doi-asserted-by": "publisher",
+      "first-page": "5819",
+      "issue": "19",
+      "journal-title": "FEBS J",
+      "key": "565_CR139",
+      "unstructured": "Xie J, Wang Y, Ai D, Yao L, Jiang H. The role of the Hippo pathway in heart disease. FEBS J. 2022;289(19):5819–33.",
+      "volume": "289",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1096/fasebj.2022.36.S1.R5124",
+      "author": "R Myers",
+      "doi-asserted-by": "publisher",
+      "journal-title": "FASEB J",
+      "key": "565_CR140",
+      "unstructured": "Myers R, Chen K, Sun Z. Inhibition of the Hippo pathway prevents arterial stiffness and hypertension in vascular smooth muscle cell specific kdm6a knockout mice. FASEB J. 2022. https://doi.org/10.1096/fasebj.2022.36.S1.R5124.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/cvr/cvab197",
+      "author": "L Rouhi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1466",
+      "issue": "6",
+      "journal-title": "Cardiovasc Res",
+      "key": "565_CR141",
+      "unstructured": "Rouhi L, Fan S, Cheedipudi SM, Braza-Boïls A, Molina MS, Yao Y, et al. The EP300/TP53 pathway, a suppressor of the Hippo and canonical WNT pathways, is activated in human hearts with arrhythmogenic cardiomyopathy in the absence of overt heart failure. Cardiovasc Res. 2022;118(6):1466–78.",
+      "volume": "118",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s11906-018-0860-4",
+      "author": "A Vallée",
+      "doi-asserted-by": "publisher",
+      "first-page": "62",
+      "issue": "7",
+      "journal-title": "Curr Hypertens Rep",
+      "key": "565_CR142",
+      "unstructured": "Vallée A, Lévy BL, Blacher J. Interplay between the renin-angiotensin system, the canonical WNT/β-catenin pathway and PPARγ in hypertension. Curr Hypertens Rep. 2018;20(7):62.",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/nu12123782",
+      "author": "F Visioli",
+      "doi-asserted-by": "publisher",
+      "first-page": "3782",
+      "issue": "12",
+      "journal-title": "Nutrients",
+      "key": "565_CR143",
+      "unstructured": "Visioli F, Poli A. Fatty acids and cardiovascular risk. Evidence, lack of evidence, and diligence. Nutrients. 2020;12(12):3782.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fnut.2022.998291",
+      "author": "S Kotlyarov",
+      "doi-asserted-by": "publisher",
+      "first-page": "998291",
+      "journal-title": "Front Nutr",
+      "key": "565_CR144",
+      "unstructured": "Kotlyarov S, Kotlyarova A. Clinical significance of polyunsaturated fatty acids in the prevention of cardiovascular diseases. Front Nutr. 2022;9:998291.",
+      "volume": "9",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fnut.2022.985451",
+      "author": "V Musazadeh",
+      "doi-asserted-by": "publisher",
+      "first-page": "985451",
+      "journal-title": "Front Nutr",
+      "key": "565_CR145",
+      "unstructured": "Musazadeh V, Kavyani Z, Naghshbandi B, Dehghan P, Vajdi M. The beneficial effects of omega-3 polyunsaturated fatty acids on controlling blood pressure: an umbrella meta-analysis. Front Nutr. 2022;9:985451.",
+      "volume": "9",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1152/physrev.00015.2009",
+      "author": "GD Lopaschuk",
+      "doi-asserted-by": "publisher",
+      "first-page": "207",
+      "issue": "1",
+      "journal-title": "Physiol Rev",
+      "key": "565_CR146",
+      "unstructured": "Lopaschuk GD, Ussher JR, Folmes CDL, Jaswal JS, Stanley WC. Myocardial fatty acid metabolism in health and disease. Physiol Rev. 2010;90(1):207–58.",
+      "volume": "90",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.cophys.2018.03.002",
+      "author": "GB Bernasochi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Curr Opin Physiol",
+      "key": "565_CR147",
+      "unstructured": "Bernasochi GB, Boon WC, Delbridge LM, Bell JR. The myocardium and sex steroid hormone influences. Curr Opin Physiol. 2018;6:1–9.",
+      "volume": "6",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1161/HYPERTENSIONAHA.122.17956",
+      "author": "C Borghi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1927",
+      "issue": "9",
+      "journal-title": "Hypertension",
+      "key": "565_CR148",
+      "unstructured": "Borghi C, Agnoletti D, Cicero AFG, Lurbe E, Virdis A. Uric acid and hypertension: a review of evidence and future perspectives for the management of cardiovascular risk. Hypertension. 2022;79(9):1927–36.",
+      "volume": "79",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.biopha.2021.111567",
+      "author": "N Irshad",
+      "doi-asserted-by": "publisher",
+      "first-page": "111567",
+      "journal-title": "Biomed Pharmacother",
+      "key": "565_CR149",
+      "unstructured": "Irshad N, Khan AU, Iqbal MS. Antihypertensive potential of selected pyrimidine derivatives: explanation of underlying mechanistic pathways. Biomed Pharmacother. 2021;139:111567.",
+      "volume": "139",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/jcbfm.2015.79",
+      "author": "G Faraco",
+      "doi-asserted-by": "publisher",
+      "first-page": "241",
+      "issue": "1",
+      "journal-title": "J Cereb Blood Flow Metab",
+      "key": "565_CR150",
+      "unstructured": "Faraco G, Park L, Zhou P, Luo W, Paul SM, Anrather J, et al. Hypertension enhances A β -induced neurovascular dysfunction, promotes β -secretase activity, and leads to amyloidogenic processing of APP. J Cereb Blood Flow Metab. 2016;36(1):241–52.",
+      "volume": "36",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1161/HYPERTENSIONAHA.114.04139",
+      "author": "D Cifuentes",
+      "doi-asserted-by": "publisher",
+      "first-page": "218",
+      "issue": "1",
+      "journal-title": "Hypertension",
+      "key": "565_CR151",
+      "unstructured": "Cifuentes D, Poittevin M, Dere E, Broquères-You D, Bonnin P, Benessiano J, et al. Hypertension accelerates the progression of alzheimer-like pathology in a mouse model of the disease. Hypertension. 2015;65(1):218–24.",
+      "volume": "65",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3390/cells11213444",
+      "author": "S Qi",
+      "doi-asserted-by": "publisher",
+      "first-page": "3444",
+      "issue": "21",
+      "journal-title": "Cells",
+      "key": "565_CR152",
+      "unstructured": "Qi S, Yi G, Yu K, Feng C, Deng S. The role of HSP90 inhibitors in the treatment of cardiovascular diseases. Cells. 2022;11(21):3444.",
+      "volume": "11",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/jpm11121373",
+      "author": "RJ Roberts",
+      "doi-asserted-by": "publisher",
+      "first-page": "1373",
+      "issue": "12",
+      "journal-title": "J Pers Med",
+      "key": "565_CR153",
+      "unstructured": "Roberts RJ, Hallee L, Lam CK. The potential of Hsp90 in targeting pathological pathways in cardiac diseases. J Pers Med. 2021;11(12):1373.",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1098/rstb.2016.0530",
+      "author": "MJ Ranek",
+      "doi-asserted-by": "publisher",
+      "first-page": "20160530",
+      "issue": "1738",
+      "journal-title": "Philos Trans R Soc B Biol Sci",
+      "key": "565_CR154",
+      "unstructured": "Ranek MJ, Stachowski MJ, Kirk JA, Willis MS. The role of heat shock proteins and co-chaperones in heart failure. Philos Trans R Soc B Biol Sci. 2018;373(1738):20160530.",
+      "volume": "373",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.yjmcc.2018.12.010",
+      "author": "S Tamura",
+      "doi-asserted-by": "publisher",
+      "first-page": "134",
+      "journal-title": "J Mol Cell Cardiol",
+      "key": "565_CR155",
+      "unstructured": "Tamura S, Marunouchi T, Tanonaka K. Heat-shock protein 90 modulates cardiac ventricular hypertrophy via activation of MAPK pathway. J Mol Cell Cardiol. 2019;127:134–42.",
+      "volume": "127",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/ijms23020649",
+      "author": "SA Dabravolski",
+      "doi-asserted-by": "publisher",
+      "first-page": "649",
+      "issue": "2",
+      "journal-title": "Int J Mol Sci",
+      "key": "565_CR156",
+      "unstructured": "Dabravolski SA, Sukhorukov VN, Kalmykov VA, Orekhov NA, Grechko AV, Orekhov AN. Heat shock protein 90 as therapeutic target for CVDs and HEART AGEING. Int J Mol Sci. 2022;23(2):649.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "author": "X Zhang",
+      "first-page": "1888",
+      "issue": "6",
+      "journal-title": "Int J Mol Med",
+      "key": "565_CR157",
+      "unstructured": "Zhang X, Wu J, Sha J, Yang B, Sun J, Bao E. Heat shock protein 90 relieves heat stress damage of myocardial cells by regulating Akt and PKM2 signaling in vivo. Int J Mol Med. 2020;45(6):1888–908.",
+      "volume": "45",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.maturitas.2016.06.012",
+      "author": "LLM van Westerop",
+      "doi-asserted-by": "publisher",
+      "first-page": "135",
+      "journal-title": "Maturitas",
+      "key": "565_CR158",
+      "unstructured": "van Westerop LLM, Arts-de Jong M, Hoogerbrugge N, de Hullu JA, Maas AHEM. Cardiovascular risk of BRCA1/2 mutation carriers: a review. Maturitas. 2016;91:135–9.",
+      "volume": "91",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.21037/atm-21-2133",
+      "author": "W Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "894",
+      "issue": "10",
+      "journal-title": "Ann Transl Med",
+      "key": "565_CR159",
+      "unstructured": "Wang W, He Q, Zhang H, Zhuang C, Wang Q, Li C, et al. A narrative review on the interaction between genes and the treatment of hypertension and breast cancer. Ann Transl Med. 2021;9(10):894–894.",
+      "volume": "9",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/S0022-2828(03)00122-6",
+      "author": "T Takizawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "777",
+      "issue": "7",
+      "journal-title": "J Mol Cell Cardiol",
+      "key": "565_CR160",
+      "unstructured": "Takizawa T. Transcription factor Sp1 regulates SERCA2 gene expression in pressure-overloaded hearts: a study using in vivo direct gene transfer into living myocardium. J Mol Cell Cardiol. 2003;35(7):777–83.",
+      "volume": "35",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/S0008-6363(03)00529-7",
+      "author": "M Brady",
+      "doi-asserted-by": "publisher",
+      "first-page": "347",
+      "issue": "2",
+      "journal-title": "Cardiovasc Res",
+      "key": "565_CR161",
+      "unstructured": "Brady M. Sp1 and Sp3 transcription factors are required for trans-activation of the human SERCA2 promoter in cardiomyocytes. Cardiovasc Res. 2003;60(2):347–54.",
+      "volume": "60",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.yjmcc.2006.07.006",
+      "author": "G Hall",
+      "doi-asserted-by": "publisher",
+      "first-page": "580",
+      "issue": "4",
+      "journal-title": "J Mol Cell Cardiol",
+      "key": "565_CR162",
+      "unstructured": "Hall G, Hasday JD, Rogers TB. Regulating the regulator: NF-κB signaling in heart. J Mol Cell Cardiol. 2006;41(4):580–91.",
+      "volume": "41",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/cvr/cvq274",
+      "author": "T Hamid",
+      "doi-asserted-by": "publisher",
+      "first-page": "129",
+      "issue": "1",
+      "journal-title": "Cardiovasc Res",
+      "key": "565_CR163",
+      "unstructured": "Hamid T, Guo SZ, Kingery JR, Xiang X, Dawn B, Prabhu SD. Cardiomyocyte NF-κB p65 promotes adverse remodelling, apoptosis, and endoplasmic reticulum stress in heart failure. Cardiovasc Res. 2011;89(1):129–38.",
+      "volume": "89",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1161/CIRCHEARTFAILURE.114.001297",
+      "author": "H Javan",
+      "doi-asserted-by": "publisher",
+      "first-page": "109",
+      "issue": "1",
+      "journal-title": "Circ Hear Fail",
+      "key": "565_CR164",
+      "unstructured": "Javan H, Szucsik AM, Li L, Schaaf CL, Salama ME, Selzman CH. Cardiomyocyte p65 nuclear Factor-κB Is necessary for compensatory adaptation to pressure overload. Circ Hear Fail. 2015;8(1):109–18.",
+      "volume": "8",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1042/CS20070430",
+      "author": "AJ Muslin",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "issue": "7",
+      "journal-title": "Clin Sci",
+      "key": "565_CR165",
+      "unstructured": "Muslin AJ. MAPK signalling in cardiovascular health and disease: molecular mechanisms and therapeutic targets. Clin Sci. 2008;115(7):203–18.",
+      "volume": "115",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.3892/ijmm.2015.2104",
+      "author": "CY Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1095",
+      "issue": "4",
+      "journal-title": "Int J Mol Med",
+      "key": "565_CR166",
+      "unstructured": "Li CY, Yang LC, Guo K, Wang YP, Li YG. Mitogen-activated protein kinase phosphatase-1: a critical phosphatase manipulating mitogen-activated protein kinase signaling in cardiovascular disease (Review). Int J Mol Med. 2015;35(4):1095–102.",
+      "volume": "35",
+      "year": "2015"
+    },
+    {
+      "author": "W Zhang",
+      "first-page": "173",
+      "issue": "4",
+      "journal-title": "Exp Clin Cardiol",
+      "key": "565_CR167",
+      "unstructured": "Zhang W, Elimban V, Nijjar MS, Gupta SK, Dhalla NS. Role of mitogen-activated protein kinase in cardiac hypertrophy and heart failure. Exp Clin Cardiol. 2003;8(4):173–83.",
+      "volume": "8",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1172/JCI16290",
+      "author": "S Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "833",
+      "issue": "6",
+      "journal-title": "J Clin Invest",
+      "key": "565_CR168",
+      "unstructured": "Zhang S, Weinheimer C, Courtois M, Kovacs A, Zhang CE, Cheng AM, et al. The role of the Grb2–p38 MAPK signaling pathway in cardiac hypertrophy and fibrosis. J Clin Invest. 2003;111(6):833–41.",
+      "volume": "111",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1161/ATVBAHA.106.134007",
+      "author": "BM Proctor",
+      "doi-asserted-by": "publisher",
+      "first-page": "1361",
+      "issue": "6",
+      "journal-title": "Arterioscler Thromb Vasc Biol",
+      "key": "565_CR169",
+      "unstructured": "Proctor BM, Ren J, Chen Z, Schneider JG, Coleman T, Lupu TS, et al. Grb2 Is required for atherosclerotic lesion formation. Arterioscler Thromb Vasc Biol. 2007;27(6):1361–7.",
+      "volume": "27",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.3389/fcell.2021.630412",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "630412",
+      "journal-title": "Front Cell Dev Biol",
+      "key": "565_CR170",
+      "unstructured": "Wang J, Sun X, Wang X, Cui S, Liu R, Liu J, et al. Grb2 induces cardiorenal syndrome Type 3: roles of IL-6, cardiomyocyte bioenergetics, and Akt/mTOR pathway. Front Cell Dev Biol. 2021;9:630412.",
+      "volume": "9",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0092926",
+      "author": "S Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e92926",
+      "issue": "4",
+      "journal-title": "PLoS ONE",
+      "key": "565_CR171",
+      "unstructured": "Wang S, Gong H, Jiang G, Ye Y, Wu J, You J, et al. Src Is required for mechanical stretch-induced cardiomyocyte hypertrophy through angiotensin II type 1 receptor-dependent β-arrestin2 pathways. PLoS ONE. 2014;9(4):e92926.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/s00438-023-01992-9",
+      "author": "M Hussain",
+      "doi-asserted-by": "publisher",
+      "first-page": "315",
+      "issue": "2",
+      "journal-title": "Mol Genet Genomics",
+      "key": "565_CR172",
+      "unstructured": "Hussain M, Ikram W, Ikram U. Role of c-Src and reactive oxygen species in cardiovascular diseases. Mol Genet Genomics. 2023;298(2):315–28.",
+      "volume": "298",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.7150/ijms.49241",
+      "author": "Y Zhai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1216",
+      "issue": "5",
+      "journal-title": "Int J Med Sci",
+      "key": "565_CR173",
+      "unstructured": "Zhai Y, Yang J, Zhang J, Yang J, Li Q, Zheng T. Src-family protein tyrosine kinases: a promising target for treating cardiovascular diseases. Int J Med Sci. 2021;18(5):1216–24.",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1152/ajpheart.01011.2005",
+      "author": "B Xue",
+      "doi-asserted-by": "publisher",
+      "first-page": "H1770",
+      "issue": "4",
+      "journal-title": "Am J Physiol Circ Physiol",
+      "key": "565_CR174",
+      "unstructured": "Xue B, Pamidimukkala J, Lubahn DB, Hay M. Estrogen receptor-α mediates estrogen protection from angiotensin II-induced hypertension in conscious female mice. Am J Physiol Circ Physiol. 2007;292(4):H1770–6.",
+      "volume": "292",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1161/HYPERTENSIONAHA.116.07175",
+      "author": "AO Hinton",
+      "doi-asserted-by": "publisher",
+      "first-page": "1321",
+      "issue": "6",
+      "journal-title": "Hypertension",
+      "key": "565_CR175",
+      "unstructured": "Hinton AO, He Y, Xia Y, Xu P, Yang Y, Saito K, et al. Estrogen receptor-α in the medial amygdala prevents stress-induced elevations in blood pressure in females. Hypertension. 2016;67(6):1321–30.",
+      "volume": "67",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1042/BSR20221212",
+      "author": "A Clerk",
+      "doi-asserted-by": "publisher",
+      "first-page": "BSR20221212",
+      "issue": "7",
+      "journal-title": "Biosci Rep",
+      "key": "565_CR176",
+      "unstructured": "Clerk A, Sugden PH. The insulin receptor family in the heart: new light on old insights. Biosci Rep. 2022;42(7):BSR20221212.",
+      "volume": "42",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3109/10641969709083169",
+      "author": "BJ Morris",
+      "doi-asserted-by": "publisher",
+      "first-page": "551",
+      "issue": "5–6",
+      "journal-title": "Clin Exp Hypertens",
+      "key": "565_CR177",
+      "unstructured": "Morris BJ. Insulin receptor gene in hypertension. Clin Exp Hypertens. 1997;19(5–6):551–65.",
+      "volume": "19",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.107.728865",
+      "author": "MI Kontaridis",
+      "doi-asserted-by": "publisher",
+      "first-page": "1423",
+      "issue": "11",
+      "journal-title": "Circulation",
+      "key": "565_CR178",
+      "unstructured": "Kontaridis MI, Yang W, Bence KK, Cullen D, Wang B, Bodyak N, et al. Deletion of Ptpn11 (Shp2) in cardiomyocytes causes dilated cardiomyopathy via effects on the extracellular signal-regulated kinase/mitogen-activated protein kinase and RhoA signaling pathways. Circulation. 2008;117(11):1423–35.",
+      "volume": "117",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.3390/biomedicines10092139",
+      "author": "C Saint-Laurent",
+      "doi-asserted-by": "publisher",
+      "first-page": "2139",
+      "issue": "9",
+      "journal-title": "Biomedicines",
+      "key": "565_CR179",
+      "unstructured": "Saint-Laurent C, Mazeyrie L, Tajan M, Paccoud R, Castan-Laurell I, Valet P, et al. The tyrosine phosphatase SHP2: a new target for insulin resistance? Biomedicines. 2022;10(9):2139.",
+      "volume": "10",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41467-019-10135-x",
+      "author": "A Weiss",
+      "doi-asserted-by": "publisher",
+      "first-page": "2204",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "565_CR180",
+      "unstructured": "Weiss A, Neubauer MC, Yerabolu D, Kojonazarov B, Schlueter BC, Neubert L, et al. Targeting cyclin-dependent kinases for the treatment of pulmonary arterial hypertension. Nat Commun. 2019;10(1):2204.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1096/fasebj.27.1_supplement.lb35",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR181",
+      "unstructured": "Bryan C, Blanton R, Aronovitz M, Karas R, Hu M, Hinds PW. The role of cyclin‐dependent kinase 6 in cardiac development and hypertrophy. FASEB J. 2013;27(S1)."
+    },
+    {
+      "DOI": "10.3389/fgene.2021.596169",
+      "author": "L Kang",
+      "doi-asserted-by": "publisher",
+      "first-page": "596169",
+      "journal-title": "Front Genet",
+      "key": "565_CR182",
+      "unstructured": "Kang L, Jia H, Huang B, Lu S, Chen Z, Shen J, et al. Identification of differently expressed mRNAs in atherosclerosis reveals CDK6 is regulated by circHIPK3/miR-637 Axis and promotes cell growth in human vascular smooth muscle cells. Front Genet. 2021;12:596169.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.122.321146",
+      "author": "E Karamanavi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1004",
+      "issue": "12",
+      "journal-title": "Circ Res",
+      "key": "565_CR183",
+      "unstructured": "Karamanavi E, McVey DG, van der Laan SW, Stanczyk PJ, Morris GE, Wang Y, et al. The FES gene at the 15q26 Coronary-artery-disease locus inhibits atherosclerosis. Circ Res. 2022;131(12):1004–17.",
+      "volume": "131",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1161/CIRCGEN.121.003428",
+      "author": "S Soubeyrand",
+      "doi-asserted-by": "publisher",
+      "first-page": "e003428",
+      "issue": "2",
+      "journal-title": "Circ Genomic Precis Med",
+      "key": "565_CR184",
+      "unstructured": "Soubeyrand S, Lau P, Nikpay M, Dang AT, McPherson R. Common polymorphism that protects from cardiovascular disease increases fibronectin processing and secretion. Circ Genomic Precis Med. 2022;15(2):e003428.",
+      "volume": "15",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fendo.2019.00482",
+      "author": "E Berta",
+      "doi-asserted-by": "publisher",
+      "first-page": "482",
+      "journal-title": "Front Endocrinol (Lausanne)",
+      "key": "565_CR185",
+      "unstructured": "Berta E, Lengyel I, Halmi S, Zrínyi M, Erdei A, Harangi M, et al. Hypertension in thyroid disorders. Front Endocrinol (Lausanne). 2019;10:482.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1152/ajpheart.00776.2014",
+      "author": "B Erdos",
+      "doi-asserted-by": "publisher",
+      "first-page": "H612",
+      "issue": "6",
+      "journal-title": "Am J Physiol Circ Physiol",
+      "key": "565_CR186",
+      "unstructured": "Erdos B, Backes I, McCowan ML, Hayward LF, Scheuer DA. Brain-derived neurotrophic factor modulates angiotensin signaling in the hypothalamus to increase blood pressure in rats. Am J Physiol Circ Physiol. 2015;308(6):H612–22.",
+      "volume": "308",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1152/jn.00247.2021",
+      "author": "D Thorsdottir",
+      "doi-asserted-by": "publisher",
+      "first-page": "1209",
+      "issue": "4",
+      "journal-title": "J Neurophysiol",
+      "key": "565_CR187",
+      "unstructured": "Thorsdottir D, Einwag Z, Erdos B. BDNF shifts excitatory-inhibitory balance in the paraventricular nucleus of the hypothalamus to elevate blood pressure. J Neurophysiol. 2021;126(4):1209–20.",
+      "volume": "126",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1042/CS20160044",
+      "author": "M Mitre",
+      "doi-asserted-by": "publisher",
+      "first-page": "13",
+      "issue": "1",
+      "journal-title": "Clin Sci",
+      "key": "565_CR188",
+      "unstructured": "Mitre M, Mariga A, Chao MV. Neurotrophin signalling: novel insights into mechanisms and pathophysiology. Clin Sci. 2017;131(1):13–23.",
+      "volume": "131",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1155/2023/9619388",
+      "author": "T Qiu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Int J Hypertens",
+      "key": "565_CR189",
+      "unstructured": "Qiu T, Jiang Z, Chen X, Dai Y, Zhao H. Comorbidity of anxiety and hypertension: common risk factors and potential mechanisms. Int J Hypertens. 2023;2023:1–14.",
+      "volume": "2023",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1161/CIR.0000000000000450",
+      "doi-asserted-by": "crossref",
+      "key": "565_CR190",
+      "unstructured": "Bozkurt B, Aguilar D, Deswal A, Dunbar SB, Francis GS, Horwich T, et al. Contributory Risk and Management of Comorbidities of Hypertension, Obesity, Diabetes Mellitus, Hyperlipidemia, and Metabolic Syndrome in Chronic Heart Failure: A Scientific Statement From the American Heart Association. Circulation. 2016; 134(23):e535–e578."
+    },
+    {
+      "DOI": "10.1161/HYP.0000000000000224",
+      "author": "JB Cohen",
+      "doi-asserted-by": "publisher",
+      "first-page": "e46",
+      "issue": "3",
+      "journal-title": "Hypertension",
+      "key": "565_CR191",
+      "unstructured": "Cohen JB, Brown NJ, Brown SA, Dent S, van Dorst DCH, Herrmann SM, et al. Cancer therapy-related hypertension: a scientific statement from the American heart association. Hypertension. 2023;80(3):e46–57.",
+      "volume": "80",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.3389/fpsyt.2022.889823",
+      "author": "Y Hu",
+      "doi-asserted-by": "publisher",
+      "first-page": "889823",
+      "journal-title": "Front Psychiatry",
+      "key": "565_CR192",
+      "unstructured": "Hu Y, Huang Y, Wang L, Liu Z, Wang L, Yan J, et al. Disability and comorbidity of mood disorders and anxiety disorders with diabetes and hypertension: evidences from the China mental health survey and chronic disease surveillance in China. Front Psychiatry. 2022;13:889823.",
+      "volume": "13",
+      "year": "2022"
+    }
+  ],
+  "reference-count": 192,
+  "references-count": 192,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00565-6"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Protein–protein interaction network-based integration of GWAS and functional data for blood pressure regulation analysis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "18"
+}

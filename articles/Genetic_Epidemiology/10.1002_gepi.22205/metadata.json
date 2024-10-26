@@ -1,0 +1,617 @@
+{
+  "DOI": "10.1002/gepi.22205",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22205",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eRegulation of gene expression is an important mechanism through which genetic variation can affect complex traits. A substantial portion of gene expression variation can be explained by both local (\u003cjats:italic\u003ecis\u003c/jats:italic\u003e) and distal (\u003cjats:italic\u003etrans\u003c/jats:italic\u003e) genetic variation. Much progress has been made in uncovering \u003cjats:italic\u003ecis\u003c/jats:italic\u003e‐acting expression quantitative trait loci (\u003cjats:italic\u003ecis\u003c/jats:italic\u003e‐eQTL), but \u003cjats:italic\u003etrans\u003c/jats:italic\u003e‐eQTL have been more difficult to identify and replicate. Here we take advantage of our ability to predict the \u003cjats:italic\u003ecis\u003c/jats:italic\u003e component of gene expression coupled with gene mapping methods such as PrediXcan to identify high confidence candidate \u003cjats:italic\u003etrans\u003c/jats:italic\u003e‐acting genes and their targets. That is, we correlate the \u003cjats:italic\u003ecis\u003c/jats:italic\u003e component of gene expression with observed expression of genes in different chromosomes. Leveraging the shared \u003cjats:italic\u003ecis\u003c/jats:italic\u003e‐acting regulation across tissues, we combine the evidence of association across all available Genotype‐Tissue Expression Project tissues and find 2,356 \u003cjats:italic\u003etrans\u003c/jats:italic\u003e‐acting/target gene pairs with high mappability scores. Reassuringly, \u003cjats:italic\u003etrans\u003c/jats:italic\u003e‐acting genes are enriched in transcription and nucleic acid binding pathways and target genes are enriched in known transcription factor binding sites. Interestingly, \u003cjats:italic\u003etrans\u003c/jats:italic\u003e‐acting genes are more significantly associated with selected complex traits and diseases than target or background genes, consistent with percolating \u003cjats:italic\u003etrans\u003c/jats:italic\u003e effects. Our scripts and summary statistics are publicly available for future studies of \u003cjats:italic\u003etrans\u003c/jats:italic\u003e‐acting gene regulation.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22205"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-11-13"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2019-03-18"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-04-04"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-1365-9667",
+      "affiliation": [
+        {
+          "name": "Department of Biology Loyola University Chicago  Chicago Illinois"
+        },
+        {
+          "name": "Department of Computer Science Loyola University Chicago  Chicago Illinois"
+        },
+        {
+          "name": "Department of Public Health Sciences Stritch School of Medicine, Loyola University Chicago  Maywood Illinois"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Wheeler",
+      "given": "Heather E.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biology Loyola University Chicago  Chicago Illinois"
+        }
+      ],
+      "family": "Ploch",
+      "given": "Sally",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine, Department of Medicine University of Chicago  Chicago Illinois"
+        }
+      ],
+      "family": "Barbeira",
+      "given": "Alvaro N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine, Department of Medicine University of Chicago  Chicago Illinois"
+        }
+      ],
+      "family": "Bonazzola",
+      "given": "Rodrigo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biology Loyola University Chicago  Chicago Illinois"
+        }
+      ],
+      "family": "Andaleon",
+      "given": "Angela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Sciences University of Wisconsin‐Madison  Madison Wisconsin"
+        }
+      ],
+      "family": "Fotuhi Siahpirani",
+      "given": "Alireza",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science Johns Hopkins University  Baltimore Maryland"
+        }
+      ],
+      "family": "Saha",
+      "given": "Ashis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science Johns Hopkins University  Baltimore Maryland"
+        },
+        {
+          "name": "Department of Biomedical Engineering Johns Hopkins University  Baltimore Maryland"
+        }
+      ],
+      "family": "Battle",
+      "given": "Alexis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics and Medical Informatics University of Wisconsin‐Madison  Madison Wisconsin"
+        }
+      ],
+      "family": "Roy",
+      "given": "Sushmita",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine, Department of Medicine University of Chicago  Chicago Illinois"
+        }
+      ],
+      "family": "Im",
+      "given": "Hae Kyung",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        4,
+        5
+      ]
+    ],
+    "date-time": "2019-04-05T18:29:59Z",
+    "timestamp": 1554488999000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        10
+      ]
+    ],
+    "date-time": "2023-09-10T02:41:38Z",
+    "timestamp": 1694313698000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R15HG009569"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "P30DK20595"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100000025",
+      "award": [
+        "R01MH107666",
+        "R01MH109905"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Mental Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        17
+      ]
+    ],
+    "date-time": "2024-04-17T09:06:40Z",
+    "timestamp": 1713344800493
+  },
+  "is-referenced-by-count": 19,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        4,
+        4
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            4,
+            4
+          ]
+        ],
+        "date-time": "2019-04-04T00:00:00Z",
+        "timestamp": 1554336000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22205",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22205",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22205",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "596-608",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        4,
+        4
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        4,
+        4
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nature24277",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_2_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2016.10.042",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_3_1"
+    },
+    {
+      "key": "e_1_2_6_1_4_1",
+      "unstructured": "Auguie B.(2017). gridExtra: Miscellaneous Functions for “Grid” Graphics. Retrieved fromhttps://cran.r‐project.org/package=gridExtra"
+    },
+    {
+      "DOI": "10.1038/s41467-018-03621-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_5_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007889",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_6_1"
+    },
+    {
+      "key": "e_1_2_6_1_7_1",
+      "unstructured": "Bass A. J. Storey J. D. Dabney A. \u0026Robinson D.(2017). qvalue: Q‐value estimation for false discovery rate control. Retrieved fromhttp://github.com/StoreyLab/qvalue"
+    },
+    {
+      "DOI": "10.1101/gr.155192.113",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_8_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1995.tb02031.x",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_6_1_9_1",
+      "unstructured": "Benjamini Y. \u0026Hochberg Y.(1995). Controlling the false discovery rate: A practical and powerful approach to multiple testing (Vol. 57) (No. 1) .https://doi.org/10.2307/2346101"
+    },
+    {
+      "DOI": "10.1038/ng.3434",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_10_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2017.05.038",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_11_1"
+    },
+    {
+      "DOI": "10.1038/nature04244",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_12_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.1785",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_13_1"
+    },
+    {
+      "key": "e_1_2_6_1_14_1",
+      "unstructured": "Dowle M. \u0026Srinivasan A.(2017). data.table: Extension of ‘data.frame.’ Retrieved fromhttps://cran.r‐project.org/package=data.table"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_16_1"
+    },
+    {
+      "DOI": "10.1038/nature10659",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_17_1"
+    },
+    {
+      "DOI": "10.1046/j.1365-2958.2001.02481.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_18_1"
+    },
+    {
+      "DOI": "10.1038/ng.2354",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_19_1"
+    },
+    {
+      "DOI": "10.1093/nar/gng015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_20_1"
+    },
+    {
+      "DOI": "10.1186/s13059-016-1142-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_21_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddv194",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_22_1"
+    },
+    {
+      "article-title": "trans effects on gene expression can drive omnigenic inheritance",
+      "author": "Liu X.",
+      "first-page": "425108",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_6_1_23_1",
+      "year": "2018"
+    },
+    {
+      "article-title": "GBAT: A gene‐based associationmethod for robust trans‐gene regulation detection",
+      "author": "Liu X.",
+      "first-page": "395970",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_6_1_24_1",
+      "year": "2018"
+    },
+    {
+      "key": "e_1_2_6_1_25_1",
+      "unstructured": "MacDonald J.(2015a). huex10stprobeset.db: Affymetrix huex10 annotation data (chip huex10stprobeset). R package.https://doi.org/10.18129/B9.bioc.huex10sttranscriptcluster.db"
+    },
+    {
+      "key": "e_1_2_6_1_26_1",
+      "unstructured": "MacDonald J.(2015b). huex10sttranscriptcluster.db: Affymetrix huex10 annotation data (chip huex10sttranscriptcluster). R.https://doi.org/10.18129/B9.bioc.huex10stprobeset.db"
+    },
+    {
+      "DOI": "10.1038/ng.3643",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_27_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0906312",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_28_1"
+    },
+    {
+      "DOI": "10.1038/ng.2007.16",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_29_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2010.01.044",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_30_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1003252",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_31_1"
+    },
+    {
+      "DOI": "10.12688/f1000research.17145.1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_32_1"
+    },
+    {
+      "DOI": "10.1101/gr.216721.116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_33_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0093844",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_34_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts163",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_35_1"
+    },
+    {
+      "key": "e_1_2_6_1_36_1",
+      "unstructured": "Slowikowski K.(2017). ggrepel: Repulsive Text and Label Geoms for ‘ggplot2.’ Retrieved fromhttps://cran.r‐project.org/package=ggrepel"
+    },
+    {
+      "DOI": "10.1073/pnas.1530509100",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_37_1"
+    },
+    {
+      "DOI": "10.1038/ng2142",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_38_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkr981",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_39_1"
+    },
+    {
+      "article-title": "Unraveling thepolygenic architecture of complex traits using blood eQTLmeta‐analysis",
+      "author": "Vosa U.",
+      "issue": "10",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_6_1_40_1",
+      "volume": "18",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-017-01261-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_41_1"
+    },
+    {
+      "DOI": "10.1038/ng.2756",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_42_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006423",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_43_1"
+    },
+    {
+      "DOI": "10.1007/978-0-387-98141-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_44_1"
+    },
+    {
+      "key": "e_1_2_6_1_45_1",
+      "unstructured": "Wickham H. \u0026Bryan J.(2017). readxl: Read Excel files. Retrieved fromhttps://cran.r‐project.org/package=readxl"
+    },
+    {
+      "key": "e_1_2_6_1_46_1",
+      "unstructured": "Wickham H. Francois R. Henry L. \u0026Muller K.(2017). dplyr: A grammar of data manipulation. Retrieved fromhttps://cran.r‐project.org/package=dplyr"
+    },
+    {
+      "DOI": "10.1038/ng.3097",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_47_1"
+    },
+    {
+      "DOI": "10.1101/gr.216754.116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_48_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.02.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_49_1"
+    },
+    {
+      "DOI": "10.1038/s41431-018-0174-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_50_1"
+    },
+    {
+      "DOI": "10.1186/1471-2164-15-532",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_51_1"
+    },
+    {
+      "DOI": "10.1038/ng.3220",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_1_52_1"
+    }
+  ],
+  "reference-count": 51,
+  "references-count": 51,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/471748",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22205"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Imputed gene associations identify replicable \u003ci\u003etrans\u003c/i\u003e‐acting genes enriched in transcription pathways and complex traits"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

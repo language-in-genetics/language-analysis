@@ -1,0 +1,518 @@
+{
+  "DOI": "10.1002/gepi.22546",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22546",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe use of polygenic risk score (PRS) models has transformed the field of genetics by enabling the prediction of complex traits and diseases based on an individual's genetic profile. However, the impact of genotype–environment interaction (GxE) on the performance and applicability of PRS models remains a crucial aspect to be explored. Currently, existing genotype–environment interaction polygenic risk score (GxE PRS) models are often inappropriately used, which can result in inflated type 1 error rates and compromised results. In this study, we propose novel GxE PRS models that jointly incorporate additive and interaction genetic effects although also including an additional quadratic term for nongenetic covariates, enhancing their robustness against model misspecification. Through extensive simulations, we demonstrate that our proposed models outperform existing models in terms of controlling type 1 error rates and enhancing statistical power. Furthermore, we apply the proposed models to real data, and report significant GxE effects. Specifically, we highlight the impact of our models on both quantitative and binary traits. For quantitative traits, we uncover the GxE modulation of genetic effects on body mass index by alcohol intake frequency. In the case of binary traits, we identify the GxE modulation of genetic effects on hypertension by waist‐to‐hip ratio. These findings underscore the importance of employing a robust model that effectively controls type 1 error rates, thus preventing the occurrence of spurious GxE signals. To facilitate the implementation of our approach, we have developed an innovative R software package called GxEprs, specifically designed to detect and estimate GxE effects. Overall, our study highlights the importance of accurate GxE modeling and its implications for genetic risk prediction, although providing a practical tool to support further research in this area.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22546"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2023-07-25"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2024-01-08"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2024-02-01"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-5685-3967",
+      "affiliation": [
+        {
+          "name": "Australian Centre for Precision Health University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "UniSA Allied Health and Human Performance University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "South Australian Health and Medical Research Institute (SAHMRI) University of South Australia Adelaide South Australia Australia"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Jayasinghe",
+      "given": "Dovini",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3512-2257",
+      "affiliation": [
+        {
+          "name": "Australian Centre for Precision Health University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "UniSA Allied Health and Human Performance University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "South Australian Health and Medical Research Institute (SAHMRI) University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "Department of Genetics and Animal Breeding, Faculty of Veterinary Medicine Chattogram Veterinary and Animal Sciences University (CVASU) Khulshi Chattogram Bangladesh"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Momin",
+      "given": "Md. Moksedul",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9798-1479",
+      "affiliation": [
+        {
+          "name": "UniSA Allied Health and Human Performance University of South Australia Adelaide South Australia Australia"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Beckmann",
+      "given": "Kerri",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3670-9399",
+      "affiliation": [
+        {
+          "name": "Australian Centre for Precision Health University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "South Australian Health and Medical Research Institute (SAHMRI) University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "UniSA Clinical and Health Sciences University of South Australia Adelaide South Australia Australia"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Hyppönen",
+      "given": "Elina",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-5608-2293",
+      "affiliation": [
+        {
+          "name": "Australian Centre for Precision Health University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "UniSA Allied Health and Human Performance University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "South Australian Health and Medical Research Institute (SAHMRI) University of South Australia Adelaide South Australia Australia"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Benyamin",
+      "given": "Beben",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9701-2718",
+      "affiliation": [
+        {
+          "name": "Australian Centre for Precision Health University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "UniSA Allied Health and Human Performance University of South Australia Adelaide South Australia Australia"
+        },
+        {
+          "name": "South Australian Health and Medical Research Institute (SAHMRI) University of South Australia Adelaide South Australia Australia"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Lee",
+      "given": "S. Hong",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        2
+      ]
+    ],
+    "date-time": "2024-02-02T05:32:16Z",
+    "timestamp": 1706851936000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        21
+      ]
+    ],
+    "date-time": "2024-02-21T06:38:35Z",
+    "timestamp": 1708497515000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000923",
+      "doi-asserted-by": "publisher",
+      "name": "Australian Research Council"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        22
+      ]
+    ],
+    "date-time": "2024-02-22T00:37:23Z",
+    "timestamp": 1708562243848
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22546",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22546",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "85-100",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        3
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/s41398-018-0360-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_2_1"
+    },
+    {
+      "DOI": "10.1007/s00059-006-2797-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_3_1"
+    },
+    {
+      "DOI": "10.1038/ng.3406",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_4_1"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_5_1"
+    },
+    {
+      "article-title": "Clustering of hypertension, diabetes, and obesity in adult male twins: Same genes or same environments?",
+      "author": "Carmelli D.",
+      "first-page": "566",
+      "issue": "3",
+      "journal-title": "American Journal of Human Genetics",
+      "key": "e_1_2_10_6_1",
+      "volume": "55",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1186/s12711-022-00752-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_7_1"
+    },
+    {
+      "DOI": "10.1002/wps.20629",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_8_1"
+    },
+    {
+      "DOI": "10.1375/twin.8.5.499",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_9_1"
+    },
+    {
+      "DOI": "10.1016/j.biopsych.2013.09.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_10_1"
+    },
+    {
+      "key": "e_1_2_10_11_1",
+      "unstructured": "Kolenikov S. \u0026Angeles G.(2004).The use of discrete data in PCA: Theory simulations and applications to socioeconomic indices(Technical Report). Carolina Population Center University of North Carolina."
+    },
+    {
+      "DOI": "10.1093/hmg/ddz187",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_12_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_13_1"
+    },
+    {
+      "DOI": "10.1093/annonc/mdu565",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_14_1"
+    },
+    {
+      "DOI": "10.1007/s12603-022-1869-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_15_1"
+    },
+    {
+      "DOI": "10.1136/heartjnl-2012-303001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_16_1"
+    },
+    {
+      "DOI": "10.1038/ng.2274",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_17_1"
+    },
+    {
+      "author": "Montgomery D. C.",
+      "key": "e_1_2_10_18_1",
+      "volume-title": "Introduction to linear regression analysis",
+      "year": "2012"
+    },
+    {
+      "author": "Moore D. S.",
+      "key": "e_1_2_10_19_1",
+      "volume-title": "Introduction to the practice of statistics",
+      "year": "2009"
+    },
+    {
+      "key": "e_1_2_10_20_1",
+      "unstructured": "National Cancer Institute. (2023).Dictionary of genetic terms.https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/prs"
+    },
+    {
+      "key": "e_1_2_10_21_1",
+      "unstructured": "Neter J. Kutner M. H. Nachtsheim C. J. \u0026Wasserman W.(1996).Applied linear statistical models. Irwin Chicago."
+    },
+    {
+      "DOI": "10.1038/s41467-019-10128-w",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_22_1"
+    },
+    {
+      "DOI": "10.21037/atm.2019.10.66",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_23_1"
+    },
+    {
+      "DOI": "10.1038/nature17671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_24_1"
+    },
+    {
+      "DOI": "10.1016/j.biopsych.2017.09.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006977",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_26_1"
+    },
+    {
+      "key": "e_1_2_10_27_1",
+      "unstructured": "R CoreTeam. (2022).R: A language and environment for statistical computing. R Foundation for Statistical Computing."
+    },
+    {
+      "DOI": "10.1093/eurheartj/ehz946",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_28_1"
+    },
+    {
+      "DOI": "10.1186/s13059-021-02403-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_29_1"
+    },
+    {
+      "DOI": "10.1007/s00439-012-1239-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_30_1"
+    },
+    {
+      "DOI": "10.1111/biom.12813",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_31_1"
+    },
+    {
+      "DOI": "10.1038/s41562-017-0195-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_32_1"
+    },
+    {
+      "DOI": "10.1038/s43586-021-00056-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_33_1"
+    },
+    {
+      "author": "UKBiobank",
+      "key": "e_1_2_10_34_1",
+      "volume-title": "UK Biobank showcase user guide",
+      "year": "2017"
+    },
+    {
+      "key": "e_1_2_10_35_1",
+      "unstructured": "UKBiobank. (2023).Genetic data.https://www.ukbiobank.ac.uk/enable-your-research/about-our-data/genetic-data"
+    },
+    {
+      "DOI": "10.1007/978-0-387-21706-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_36_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1927.10502953",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_37_1"
+    },
+    {
+      "DOI": "10.2174/156720507780362263",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_38_1"
+    },
+    {
+      "DOI": "10.1038/ng.2411",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_39_1"
+    },
+    {
+      "DOI": "10.1038/s41467-022-32407-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_40_1"
+    },
+    {
+      "DOI": "10.1161/JAHA.119.015661",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_41_1"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22546"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Mitigating type 1 error inflation and power loss in GxE PRS: Genotype–environment interaction in polygenic risk score models"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "48"
+}

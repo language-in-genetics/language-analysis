@@ -1,0 +1,868 @@
+{
+  "DOI": "10.1186/s40246-024-00579-8",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-024-00579-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eIndividual assessment of CYP enzyme activities can be challenging. Recently, the potato alkaloid solanidine was suggested as a biomarker for CYP2D6 activity. Here, we aimed to characterize the sensitivity and specificity of solanidine as a CYP2D6 biomarker among Finnish volunteers with known \u003cjats:italic\u003eCYP2D6\u003c/jats:italic\u003e genotypes.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eUsing non-targeted metabolomics analysis, we identified 9152 metabolite features in the fasting plasma samples of 356 healthy volunteers. Machine learning models suggested strong association between \u003cjats:italic\u003eCYP2D6\u003c/jats:italic\u003e genotype-based phenotype classes with a metabolite feature identified as solanidine. Plasma solanidine concentration was 1887% higher in genetically poor CYP2D6 metabolizers (gPM) (\u003cjats:italic\u003en\u003c/jats:italic\u003e = 9; 95% confidence interval 755%, 4515%; \u003cjats:italic\u003eP\u003c/jats:italic\u003e = 1.88 × 10\u003cjats:sup\u003e–11\u003c/jats:sup\u003e), 74% higher in intermediate CYP2D6 metabolizers (gIM) (\u003cjats:italic\u003en\u003c/jats:italic\u003e = 89; 27%, 138%; \u003cjats:italic\u003eP\u003c/jats:italic\u003e = 6.40 × 10\u003cjats:sup\u003e–4\u003c/jats:sup\u003e), and 35% lower in ultrarapid CYP2D6 metabolizers (gUM) (\u003cjats:italic\u003en\u003c/jats:italic\u003e = 20; 64%, − 17%; \u003cjats:italic\u003eP\u003c/jats:italic\u003e = 0.151) than in genetically normal CYP2D6 metabolizers (gNM; \u003cjats:italic\u003en\u003c/jats:italic\u003e = 196). The solanidine metabolites \u003cjats:italic\u003em/z\u003c/jats:italic\u003e 444 and 430 to solanidine concentration ratios showed even stronger associations with CYP2D6 phenotypes. Furthermore, the areas under the receiver operating characteristic and precision–recall curves for these metabolic ratios showed equal or better performances for identifying the gPM, gIM, and gUM phenotype groups than the other metabolites, their ratios to solanidine, or solanidine alone. In vitro studies with human recombinant CYP enzymes showed that solanidine was metabolized mainly by CYP2D6, with a minor contribution from CYP3A4/5. In human liver microsomes, the CYP2D6 inhibitor paroxetine nearly completely (95%) inhibited the metabolism of solanidine. In a genome-wide association study, several variants near the \u003cjats:italic\u003eCYP2D6\u003c/jats:italic\u003e gene associated with plasma solanidine metabolite ratios.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThese results are in line with earlier studies and further indicate that solanidine and its metabolites are sensitive and specific biomarkers for measuring CYP2D6 activity. Since potato consumption is common worldwide, this biomarker could be useful for evaluating CYP2D6-mediated drug–drug interactions and to improve prediction of CYP2D6 activity in addition to genotyping.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "579"
+  ],
+  "article-number": "11",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "2 November 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "24 January 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "1 February 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All study participants gave written informed consent. The study protocols were approved by the Coordinating ethics committee of the Hospital District of Helsinki and Uusimaa."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Kiiski",
+      "given": "Johanna I.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Neuvonen",
+      "given": "Mikko",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kurkela",
+      "given": "Mika",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hirvensalo",
+      "given": "Päivi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hämäläinen",
+      "given": "Kreetta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tarkiainen",
+      "given": "E. Katriina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sistonen",
+      "given": "Johanna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Korhonen",
+      "given": "Mari",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Khan",
+      "given": "Sofia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Orpana",
+      "given": "Arto",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Filppula",
+      "given": "Anne M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lehtonen",
+      "given": "Marko",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Niemi",
+      "given": "Mikko",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        1
+      ]
+    ],
+    "date-time": "2024-02-01T15:02:33Z",
+    "timestamp": 1706799753000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        1
+      ]
+    ],
+    "date-time": "2024-02-01T16:08:16Z",
+    "timestamp": 1706803696000
+  },
+  "funder": [
+    {
+      "name": "Sakari Alhopuro Foundation"
+    },
+    {
+      "DOI": "10.13039/501100000781",
+      "award": [
+        "282106"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "European Research Council"
+    },
+    {
+      "DOI": "10.13039/501100006306",
+      "doi-asserted-by": "publisher",
+      "name": "Sigrid Juséliuksen Säätiö"
+    },
+    {
+      "DOI": "10.13039/100007797",
+      "doi-asserted-by": "crossref",
+      "name": "University of Helsinki"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        2
+      ]
+    ],
+    "date-time": "2024-02-02T00:40:38Z",
+    "timestamp": 1706834438310
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        1
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2024-02-01T00:00:00Z",
+        "timestamp": 1706745600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00579-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-024-00579-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00579-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        1
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        1
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1002/cpt.690",
+      "author": "Y Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "688",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR1",
+      "unstructured": "Zhou Y, Ingelman-Sundberg M, Lauschke VM. Worldwide distribution of cytochrome P450 alleles: a meta-analysis of population-scale sequencing projects. Clin Pharmacol Ther. 2017;102:688–700.",
+      "volume": "102",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/cpt.1643",
+      "author": "C Nofziger",
+      "doi-asserted-by": "publisher",
+      "first-page": "154",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR2",
+      "unstructured": "Nofziger C, Turner AJ, Sangkhul K, Whirl-Carrillo M, Agundez JA, Black JL, et al. PharmVar genefocus: CYP2D6. Clin Pharmacol Ther. 2020;107:154–70.",
+      "volume": "107",
+      "year": "2020"
+    },
+    {
+      "key": "579_CR3",
+      "unstructured": "https://www.pharmvar.org/gene/CYP2D6, https://cpicpgx.org/genes-drugs/, Accessed 15 Sep 2023."
+    },
+    {
+      "DOI": "10.3390/jpm8020015",
+      "author": "A Gaedigk",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "journal-title": "J Pers Med",
+      "key": "579_CR4",
+      "unstructured": "Gaedigk A, Dinh JC, Jeong B, Prasad B, Leeder JST. Years’ experience with the CYP2D6 activity score: a perspective on future investigations to improve clinical predictions for precision therapeutics. J Pers Med. 2018;8:15.",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/genes11111295",
+      "author": "C Taylor",
+      "doi-asserted-by": "publisher",
+      "first-page": "1295",
+      "journal-title": "Genes (Basel).",
+      "key": "579_CR5",
+      "unstructured": "Taylor C, Crosby I, Yip V, Maguire P, Pirmohamed M, Turner RM. A review of the important role of CYP2D6 in pharmacogenomics. Genes (Basel). 2020;11:1295.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1097/00008571-200004000-00001",
+      "author": "DS Streetman",
+      "doi-asserted-by": "publisher",
+      "first-page": "187",
+      "journal-title": "Pharmacogenetics",
+      "key": "579_CR6",
+      "unstructured": "Streetman DS, Bertino JS, Nafziger AN. Phenotyping of drug-metabolizing enzymes in adults: a review of in-vivo cytochrome P450 phenotyping probes. Pharmacogenetics. 2000;10:187–216.",
+      "volume": "10",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1016/j.ejps.2017.05.018",
+      "author": "I Kohler",
+      "doi-asserted-by": "publisher",
+      "first-page": "S15",
+      "journal-title": "Eur J Pharm Sci",
+      "key": "579_CR7",
+      "unstructured": "Kohler I, Hankemeier T, van der Graaf PH, Knibbe CAJ, van Hasselt JGC. Integrating clinical metabolomics-based biomarker discovery and clinical pharmacology to enable precision medicine. Eur J Pharm Sci. 2017;109S:S15–21.",
+      "volume": "109S",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41390-019-0609-z",
+      "author": "G Magliocco",
+      "doi-asserted-by": "publisher",
+      "first-page": "441",
+      "journal-title": "Pediatr Res",
+      "key": "579_CR8",
+      "unstructured": "Magliocco G, Rodieux F, Desmeules J, Samer CF, Daali Y. Toward precision medicine in pediatric population using cytochrome P450 phenotyping approaches and physiologically based pharmacokinetic modeling. Pediatr Res. 2020;87:441–9.",
+      "volume": "87",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.2217/pgs.14.155",
+      "author": "J Tay-Sontheimer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1947",
+      "journal-title": "Pharmacogenomics",
+      "key": "579_CR9",
+      "unstructured": "Tay-Sontheimer J, Shireman LM, Beyer RP, Senn T, Witten D, Pearce RE, et al. Detection of an endogenous urinary biomarker associated with CYP2D6 activity using global metabolomics. Pharmacogenomics. 2014;15:1947–62.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/bph.15651",
+      "author": "G Magliocco",
+      "doi-asserted-by": "publisher",
+      "first-page": "4709",
+      "journal-title": "Br J Pharmacol",
+      "key": "579_CR10",
+      "unstructured": "Magliocco G, Desmeules J, Matthey A, Quiros-Guerrero LM, Bararpour N, Joye T, et al. Metabolomics reveals biomarkers in human urine and plasma to predict cytochrome P450 2D6 (CYP2D6) activity. Br J Pharmacol. 2021;178:4709–25.",
+      "volume": "178",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1124/dmd.122.000957",
+      "author": "AC Behrle",
+      "doi-asserted-by": "publisher",
+      "first-page": "1342",
+      "journal-title": "Drug Metab Dispos",
+      "key": "579_CR11",
+      "unstructured": "Behrle AC, Douglas J, Leeder JS, van Haandel L. Isolation and identification of 3,4-Seco-Solanidine-3,4-dioic acid (SSDA) as a urinary biomarker of cytochrome P450 2D6 (CYP2D6) activity. Drug Metab Dispos. 2022;50:1342–51.",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s00228-023-03462-y",
+      "author": "BM Wollmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "523",
+      "journal-title": "Eur J Clin Pharmacol",
+      "key": "579_CR12",
+      "unstructured": "Wollmann BM, Størset E, Kringen MK, Molden E, Smith RL. Prediction of CYP2D6 poor metabolizers by measurements of solanidine and metabolites-a study in 839 patients with known CYP2D6 genotype. Eur J Clin Pharmacol. 2023;4:523–31.",
+      "volume": "4",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1111/bcp.15721",
+      "doi-asserted-by": "publisher",
+      "key": "579_CR13",
+      "unstructured": "Wollmann BM, Smith RL, Kringen MK, Ingelman-Sundberg M, Molden E, Størset E. Evidence for solanidine as a dietary CYP2D6 biomarker: Significant correlation with risperidone metabolism. Br J Clin Pharmacol 2023. https://doi.org/10.1111/bcp.15721."
+    },
+    {
+      "DOI": "10.1111/bcpt.12590",
+      "author": "P Pietarinen",
+      "doi-asserted-by": "publisher",
+      "first-page": "291",
+      "journal-title": "Basic Clin Pharmacol Toxicol",
+      "key": "579_CR14",
+      "unstructured": "Pietarinen P, Tornio A, Niemi M. High frequency of CYP2D6 ultrarapid metabolizer genotype in the finnish population. Basic Clin Pharmacol Toxicol. 2016;119:291–6.",
+      "volume": "119",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/cpt.771",
+      "author": "K Cajanus",
+      "doi-asserted-by": "publisher",
+      "first-page": "653",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR15",
+      "unstructured": "Cajanus K, Neuvonen M, Koskela O, Kaunisto MA, Neuvonen PJ, Niemi M, et al. Analgesic plasma concentrations of oxycodone after surgery for breast cancer-which factors matter? Clin Pharmacol Ther. 2018;103:653–62.",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41397-022-00270-y",
+      "author": "K Häkkinen",
+      "doi-asserted-by": "publisher",
+      "first-page": "166",
+      "journal-title": "Pharmacogenomics J",
+      "key": "579_CR16",
+      "unstructured": "Häkkinen K, Kiiski JI, Lähteenvuo M, Jukuri T, Suokas K, Niemi-Pynttäri JN, et al. Implementation of CYP2D6 copy-number imputation panel and frequency of key pharmacogenetic variants in Finnish individuals with a psychotic disorder. Pharmacogenomics J. 2022;22:166–72.",
+      "volume": "22",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/cpt.1463",
+      "author": "P Hirvensalo",
+      "doi-asserted-by": "publisher",
+      "first-page": "668",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR17",
+      "unstructured": "Hirvensalo P, Tornio A, Neuvonen M, Kiander W, Kidron H, Paile-Hyvärinen M, et al. Enantiospecific pharmacogenomics of fluvastatin. Clin Pharmacol Ther. 2019;106:668–80.",
+      "volume": "106",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/cpt.2053",
+      "author": "M Neuvonen",
+      "doi-asserted-by": "publisher",
+      "first-page": "646",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR18",
+      "unstructured": "Neuvonen M, Hirvensalo P, Tornio A, Rago B, West M, Lazzarro S, et al. Identification of glycochenodeoxycholate 3-O-glucuronide and glycodeoxycholate 3-O-glucuronide as highly sensitive and specific OATP1B1 biomarkers. Clin Pharmacol Ther. 2021;109:646–57.",
+      "volume": "109",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cpt.2429",
+      "author": "M Neuvonen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1622",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR19",
+      "unstructured": "Neuvonen M, Tornio A, Hirvensalo P, Backman JT, Niemi M. Performance of plasma coproporphyrin I and III as OATP1B1 biomarkers in humans. Clin Pharmacol Ther. 2021;110:1622–32.",
+      "volume": "110",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cpt.2674",
+      "author": "AJH Mykkänen",
+      "doi-asserted-by": "publisher",
+      "first-page": "676",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR20",
+      "unstructured": "Mykkänen AJH, Taskinen S, Neuvonen M, Paile-Hyvärinen M, Tarkiainen EK, Lilius T, et al. Genomewide association study of simvastatin pharmacokinetics. Clin Pharmacol Ther. 2022;112:676–86.",
+      "volume": "112",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/humu.24144",
+      "author": "J Higgins",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "journal-title": "Hum Mutat",
+      "key": "579_CR21",
+      "unstructured": "Higgins J, Dalgleish R, den Dunnen JT, Barsh G, Freeman PJ, Cooper DN, et al. Verifying nomenclature of DNA variants in submitted manuscripts: guidance for journals. Hum Mutat. 2021;42:3–7.",
+      "volume": "42",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cpt.910",
+      "author": "A Gaedigk",
+      "doi-asserted-by": "publisher",
+      "first-page": "399",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR22",
+      "unstructured": "Gaedigk A, Ingelman-Sundberg M, Miller NA, Leeder JS, Whirl-Carrillo M, Klein TE, PharmVar Steering Committee. The pharmacogene variation (PharmVar) consortium: incorporation of the human cytochrome P450 (CYP) allele nomenclature database. Clin Pharmacol Ther. 2018;103:399–401.",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/bcp.15684",
+      "author": "M Lehtisalo",
+      "doi-asserted-by": "publisher",
+      "first-page": "309",
+      "journal-title": "Br J Clin Pharmacol",
+      "key": "579_CR23",
+      "unstructured": "Lehtisalo M, Kiander W, Filppula AM, Deng F, Kidron H, Korhonen M, et al. Rhabdomyolysis during concomitant ticagrelor and rosuvastatin: a breast cancer resistance protein-mediated drug interaction? Br J Clin Pharmacol. 2023;89:309–2315.",
+      "volume": "89",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/sj.clpt.6100507",
+      "author": "JJ Swen",
+      "doi-asserted-by": "publisher",
+      "first-page": "781",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR24",
+      "unstructured": "Swen JJ, Nijenhuis M, de Boer A, Grandia L, Maitland-van der Zee AH, Mulder H, et al. Pharmacogenetics: from bench to byte. Clin Pharmacol Ther. 2008;83:781–7.",
+      "volume": "83",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/clpt.2011.287",
+      "author": "KR Crews",
+      "doi-asserted-by": "publisher",
+      "first-page": "321",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR25",
+      "unstructured": "Crews KR, Gaedigk A, Dunnenberger HM, Klein TE, Shen DD, Callaghan JT, et al. Clinical pharmacogenetics implementation consortium (CPIC) guidelines for codeine therapy in the context of cytochrome P450 2D6 (CYP2D6) genotype. Clin Pharmacol Ther. 2012;91:321–6.",
+      "volume": "91",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1111/cts.12692",
+      "author": "KE Caudle",
+      "doi-asserted-by": "publisher",
+      "first-page": "116",
+      "journal-title": "Clin Transl Sci",
+      "key": "579_CR26",
+      "unstructured": "Caudle KE, Sangkuhl K, Whirl-Carrillo M, Swen JJ, Haidar CE, Klein TE, et al. Standardizing CYP2D6 genotype to phenotype translation: consensus recommendations from the clinical pharmacogenetics implementation consortium and Dutch Pharmacogenetics Working Group. Clin Transl Sci. 2020;13:116–24.",
+      "volume": "13",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/sj.clpt.6100406",
+      "author": "A Gaedigk",
+      "doi-asserted-by": "publisher",
+      "first-page": "234",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR27",
+      "unstructured": "Gaedigk A, Simon SD, Pearce RE, Bradford LD, Kennedy MJ, Leeder JS. The CYP2D6 activity score: translating genotype information into a qualitative measure of phenotype. Clin Pharmacol Ther. 2008;83:234–42.",
+      "volume": "83",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.3109/09540261.2013.825581",
+      "author": "A Gaedigk",
+      "doi-asserted-by": "publisher",
+      "first-page": "534",
+      "journal-title": "Int Rev Psychiatry",
+      "key": "579_CR28",
+      "unstructured": "Gaedigk A. Complexities of CYP2D6 gene analysis and interpretation. Int Rev Psychiatry. 2013;25:534–53.",
+      "volume": "25",
+      "year": "2013"
+    },
+    {
+      "key": "579_CR29",
+      "unstructured": "https://cpicpgx.org/resources/cyp2d6-genotype-to-phenotype-standardization-project/. Accessed 18 Sep 2023"
+    },
+    {
+      "DOI": "10.1126/sciadv.add5163",
+      "author": "HAK Lapatto",
+      "doi-asserted-by": "publisher",
+      "first-page": "eadd5163",
+      "journal-title": "Sci Adv",
+      "key": "579_CR30",
+      "unstructured": "Lapatto HAK, Kuusela M, Heikkinen A, Muniandy M, van der Kolk BW, Gopalakrishnan S, et al. Nicotinamide riboside improves muscle mitochondrial biogenesis, satellite cell differentiation, and gut microbiota in a twin study. Sci Adv. 2023;9:eadd5163.",
+      "volume": "9",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1128/mbio.02663-22",
+      "author": "A Driuchina",
+      "doi-asserted-by": "publisher",
+      "first-page": "0266322",
+      "journal-title": "MBio",
+      "key": "579_CR31",
+      "unstructured": "Driuchina A, Hintikka J, Lehtonen M, Keski-Rahkonen P, O’Connell T, Juvonen R, et al. Identification of gut microbial lysine and histidine degradation and CYP-dependent metabolites as biomarkers of fatty liver disease. MBio. 2023;14:0266322.",
+      "volume": "14",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1124/dmd.31.3.289",
+      "author": "KM Bertelsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "289",
+      "journal-title": "Drug Metab Dispos",
+      "key": "579_CR32",
+      "unstructured": "Bertelsen KM, Venkatakrishnan K, Von Moltke LL, Obach RS, Greenblatt DJ. Apparent mechanism-based inhibition of human CYP2D6 in vitro by paroxetine: comparison with fluoxetine and quinidine. Drug Metab Dispos. 2003;31:289–93.",
+      "volume": "31",
+      "year": "2003"
+    },
+    {
+      "author": "T Koudriakova",
+      "first-page": "552",
+      "journal-title": "Drug Metab Dispos",
+      "key": "579_CR33",
+      "unstructured": "Koudriakova T, Iatsimirskaia E, Utkin I, Gangl E, Vouros P, Storozhuk E, et al. Metabolism of the human immunodeficiency virus protease inhibitors indinavir and ritonavir by human intestinal microsomes and expressed cytochrome P4503A4/3A5: mechanism-based inactivation of cytochrome P4503A by ritonavir. Drug Metab Dispos. 1998;26:552–61.",
+      "volume": "26",
+      "year": "1998"
+    },
+    {
+      "author": "F Pedregosa",
+      "first-page": "2825",
+      "journal-title": "J Mach Learn Res",
+      "key": "579_CR34",
+      "unstructured": "Pedregosa F, Varoquaux G, Gramfort A, Vincent M, Thirion B. Scikit-learn: machine learning in python. J Mach Learn Res. 2011;12:2825–30.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "Mach Learn",
+      "key": "579_CR35",
+      "unstructured": "Breiman L. Random forests. Mach Learn. 2001;45:5–32.",
+      "volume": "45",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1214/aos/1013203451",
+      "author": "JH Friedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1189",
+      "journal-title": "Ann Stat",
+      "key": "579_CR36",
+      "unstructured": "Friedman JH. Greedy function approximation: a gradient boosting machine. Ann Stat. 2001;29:1189–232.",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/s41398-020-00888-1",
+      "author": "RL Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "198",
+      "journal-title": "Transl Psychiatry",
+      "key": "579_CR37",
+      "unstructured": "Smith RL, O’Connell K, Athanasiu L, Djurovic S, Kringen MK, Andreassen OA, et al. Identification of a novel polymorphism associated with reduced clozapine concentration in schizophrenia patients-a genome-wide association study adjusting for smoking habits. Transl Psychiatry. 2020;10:198.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/cpt.2571",
+      "author": "HÇ Lenk",
+      "doi-asserted-by": "publisher",
+      "first-page": "1165",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "579_CR38",
+      "unstructured": "Lenk HÇ, Klöditz K, Johansson I, Smith RL, Jukic MM, Molden E, et al. The polymorphic nuclear factor NFIB regulates hepatic CYP2D6 expression and influences risperidone metabolism in psychiatric patients. Clin Pharmacol Ther. 2022;111:1165–74.",
+      "volume": "111",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3109/00498258209052469",
+      "author": "WD Claringbold",
+      "doi-asserted-by": "publisher",
+      "first-page": "293",
+      "journal-title": "Xenobiotica",
+      "key": "579_CR39",
+      "unstructured": "Claringbold WD, Few JD, Renwick JH. Kinetics and retention of solanidine in man. Xenobiotica. 1982;12:293–302.",
+      "volume": "12",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1177/096032718500400209",
+      "author": "MH Harvey",
+      "doi-asserted-by": "publisher",
+      "first-page": "187",
+      "journal-title": "Hum Toxicol",
+      "key": "579_CR40",
+      "unstructured": "Harvey MH, McMillan M, Morgan MR, Chan HW. Solanidine is present in sera of healthy individuals and in amounts dependent on their dietary potato consumption. Hum Toxicol. 1985;4:187–94.",
+      "volume": "4",
+      "year": "1985"
+    },
+    {
+      "DOI": "10.2217/pgs-2022-0054",
+      "author": "M Ingelman-Sundberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "53",
+      "journal-title": "Pharmacogenomics",
+      "key": "579_CR41",
+      "unstructured": "Ingelman-Sundberg M. The missing heritability in pharmacogenomics: role of NFIB and other factors. Pharmacogenomics. 2022;23:53–455.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/0006-2952(88)90063-9",
+      "author": "R Fonne-Pfister",
+      "doi-asserted-by": "publisher",
+      "first-page": "3829",
+      "journal-title": "Biochem Pharmacol",
+      "key": "579_CR42",
+      "unstructured": "Fonne-Pfister R, Meyer UA. Xenobiotic and endobiotic inhibitors of cytochrome P-450dbl function, the target of the debrisoquine/sparteine type polymorphism. Biochem Pharmacol. 1988;37:3829–35.",
+      "volume": "37",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1016/0168-9525(90)90174-5",
+      "author": "FJ Gonzalez",
+      "doi-asserted-by": "publisher",
+      "first-page": "182",
+      "journal-title": "Trends Genet",
+      "key": "579_CR43",
+      "unstructured": "Gonzalez FJ, Nebert DW. Evolution of the P450 gene superfamily: animal-plant ‘warfare’, molecular drive and human genetic differences in drug oxidation. Trends Genet. 1990;6:182–6.",
+      "volume": "6",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1016/S0888-7543(05)80282-4",
+      "author": "MH Heim",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "journal-title": "Genomics",
+      "key": "579_CR44",
+      "unstructured": "Heim MH, Meyer UA. Evolution of a highly polymorphic human cytochrome P450 gene cluster: CYP2D6. Genomics. 1992;14:49–58.",
+      "volume": "14",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1038/sj.tpj.6500285",
+      "author": "M Ingelman-Sundberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "journal-title": "Pharmacogenomics J",
+      "key": "579_CR45",
+      "unstructured": "Ingelman-Sundberg M. Genetic polymorphisms of cytochrome P450 2D6 (CYP2D6): clinical consequences, evolutionary aspects and functional diversity. Pharmacogenomics J. 2005;5:6–13.",
+      "volume": "5",
+      "year": "2005"
+    },
+    {
+      "key": "579_CR46",
+      "unstructured": "https://cipotato.org/potato/. Accessed 15 Sep 2023"
+    },
+    {
+      "DOI": "10.1016/0278-6915(90)90074-W",
+      "author": "P Slanina",
+      "doi-asserted-by": "publisher",
+      "first-page": "759",
+      "journal-title": "Food Chem Toxicol",
+      "key": "579_CR47",
+      "unstructured": "Slanina P. Solanine (glycoalkaloids) in potatoes: toxicological evaluation. Food Chem Toxicol. 1990;28:759–61.",
+      "volume": "28",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1016/0378-4347(92)80476-7",
+      "author": "KE Hellenäs",
+      "doi-asserted-by": "publisher",
+      "first-page": "69",
+      "journal-title": "J Chromatogr A",
+      "key": "579_CR48",
+      "unstructured": "Hellenäs KE, Nyman A, Slanina P, Lööf L, Gabrielsson J. Determination of potato glycoalkaloids and their aglycone in blood serum by high-performance liquid chromatography. Application to pharmacokinetic studies in humans. J Chromatogr A. 1992;573:69–78.",
+      "volume": "573",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1016/S0278-6915(02)00205-3",
+      "author": "M Friedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "61",
+      "journal-title": "Food Chem Toxicol",
+      "key": "579_CR49",
+      "unstructured": "Friedman M, Henika PR, Mackey BE. Effect of feeding solanidine, solasodine and tomatidine to non-pregnant and pregnant mice. Food Chem Toxicol. 2003;41:61–71.",
+      "volume": "41",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1002/mnfr.201100165",
+      "author": "II Koleva",
+      "doi-asserted-by": "publisher",
+      "first-page": "30",
+      "journal-title": "Mol Nutr Food Res",
+      "key": "579_CR50",
+      "unstructured": "Koleva II, van Beek TA, Soffers AE, Dusemund B, Rietjens IM. Alkaloids in the human food chain–natural occurrence and possible adverse effects. Mol Nutr Food Res. 2012;56:30–52.",
+      "volume": "56",
+      "year": "2012"
+    }
+  ],
+  "reference-count": 50,
+  "references-count": 50,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-024-00579-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Solanidine is a sensitive and specific dietary biomarker for CYP2D6 activity"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "18"
+}

@@ -1,0 +1,620 @@
+{
+  "DOI": "10.1186/s40246-019-0222-6",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-019-0222-6",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\u003cjats:title\u003eBackground\u003c/jats:title\u003e\u003cjats:p\u003eAs one of the most popular data representation methods, non-negative matrix decomposition (NMF) has been widely concerned in the tasks of clustering and feature selection. However, most of the previously proposed NMF-based methods do not adequately explore the hidden geometrical structure in the data. At the same time, noise and outliers are inevitably present in the data.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eResults\u003c/jats:title\u003e\u003cjats:p\u003eTo alleviate these problems, we present a novel NMF framework named robust hypergraph regularized non-negative matrix factorization (RHNMF). In particular, the hypergraph Laplacian regularization is imposed to capture the geometric information of original data. Unlike graph Laplacian regularization which captures the relationship between pairwise sample points, it captures the high-order relationship among more sample points. Moreover, the robustness of the RHNMF is enhanced by using the L\u003cjats:sub\u003e2,1\u003c/jats:sub\u003e-norm constraint when estimating the residual. This is because the L\u003cjats:sub\u003e2,1\u003c/jats:sub\u003e-norm is insensitive to noise and outliers.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eConclusions\u003c/jats:title\u003e\u003cjats:p\u003eClustering and common abnormal expression gene (com-abnormal expression gene) selection are conducted to test the validity of the RHNMF model. Extensive experimental results on multi-view datasets reveal that our proposed model outperforms other state-of-the-art methods.\u003c/jats:p\u003e\u003c/jats:sec\u003e",
+  "alternative-id": [
+    "222"
+  ],
+  "article-number": "46",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 1,
+      "value": "22 October 2019"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Yu",
+      "given": "Na",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Gao",
+      "given": "Ying-Lian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Jin-Xing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Juan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shang",
+      "given": "Junliang",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ],
+    "date-time": "2019-10-22T01:42:03Z",
+    "timestamp": 1571708523000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        2
+      ]
+    ],
+    "date-time": "2022-10-02T08:02:27Z",
+    "timestamp": 1664697747000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        8
+      ]
+    ],
+    "date-time": "2024-04-08T10:33:15Z",
+    "timestamp": 1712572395877
+  },
+  "is-referenced-by-count": 8,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "S1",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "S1",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2019-10-01T00:00:00Z",
+        "timestamp": 1569888000000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 21,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            22
+          ]
+        ],
+        "date-time": "2019-10-22T00:00:00Z",
+        "timestamp": 1571702400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-019-0222-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-019-0222-6/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-019-0222-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "author": "Y Li",
+      "first-page": "325",
+      "issue": "2",
+      "journal-title": "Brief Bioinform",
+      "key": "222_CR1",
+      "unstructured": "Li Y, Wu F-X, Ngom A. A review on machine learning principles for multi-view biological data integration. Brief Bioinform. 2016;19(2):325–40.",
+      "volume": "19",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btl406",
+      "author": "A Thalamuthu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2405",
+      "issue": "19",
+      "journal-title": "Bioinformatics",
+      "key": "222_CR2",
+      "unstructured": "Thalamuthu A, Mukhopadhyay I, Zheng X, Tseng GC. Evaluation and comparison of gene clustering methods in microarray analysis. Bioinformatics. 2006;22(19):2405–12.",
+      "volume": "22",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1109/BIBM.2018.8621454",
+      "doi-asserted-by": "crossref",
+      "key": "222_CR3",
+      "unstructured": "Yu N, Gao Y-L, Liu J-X, Wang J, Shang J. Hypergraph regularized NMF by L 2, 1-norm for clustering and com-abnormal expression genes selection. In: 2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). Madrid: IEEE; 2018. p. 578–82."
+    },
+    {
+      "DOI": "10.1038/44565",
+      "author": "DD Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "788",
+      "issue": "6755",
+      "journal-title": "Nature",
+      "key": "222_CR4",
+      "unstructured": "Lee DD, Seung HS. Learning the parts of objects by non-negative matrix factorization. Nature. 1999;401(6755):788.",
+      "volume": "401",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1109/TCBB.2017.2665557",
+      "author": "J-X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "974",
+      "issue": "3",
+      "journal-title": "IEEE/ACM Trans Comput Biol Bioinform",
+      "key": "222_CR5",
+      "unstructured": "Liu J-X, Wang D, Gao Y-L, Zheng C-H, Xu Y, Yu J. Regularized non-negative matrix factorization for identifying differentially expressed genes and clustering samples: a survey. IEEE/ACM Trans Comput Biol Bioinform. 2018;15(3):974–87.",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1145/3104984",
+      "author": "X Li",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "ACM Trans Intell Syst Technol (TIST)",
+      "key": "222_CR6",
+      "unstructured": "Li X, Cui G, Dong Y. Refined-graph regularization-based nonnegative matrix factorization. ACM Trans Intell Syst Technol (TIST). 2017;9(1):1.",
+      "volume": "9",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1145/860435.860485",
+      "doi-asserted-by": "crossref",
+      "key": "222_CR7",
+      "unstructured": "Xu W, Liu X, Gong Y. Document clustering based on non-negative matrix factorization. In: Proceedings of the 26th annual international ACM SIGIR conference on Research and development in informaion retrieval. Toronto: ACM; 2003. p. 267–73."
+    },
+    {
+      "DOI": "10.1109/TIP.2012.2224357",
+      "author": "Y Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "969",
+      "issue": "3",
+      "journal-title": "IEEE Trans Image Process",
+      "key": "222_CR8",
+      "unstructured": "Chen Y, Zhang J, Cai D, Liu W, He X. Nonnegative local coordinate factorization for image representation. IEEE Trans Image Process. 2013;22(3):969–79.",
+      "volume": "22",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm134",
+      "author": "H Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "1495",
+      "issue": "12",
+      "journal-title": "Bioinformatics",
+      "key": "222_CR9",
+      "unstructured": "Kim H, Park H. Sparse non-negative matrix factorizations via alternating non-negativity-constrained least squares for microarray data analysis. Bioinformatics. 2007;23(12):1495–502.",
+      "volume": "23",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1109/TPAMI.2008.277",
+      "author": "CH Ding",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "issue": "1",
+      "journal-title": "IEEE Trans Pattern Anal Mach Intell",
+      "key": "222_CR10",
+      "unstructured": "Ding CH, Li T, Jordan MI. Convex and semi-nonnegative matrix factorizations. IEEE Trans Pattern Anal Mach Intell. 2010;32(1):45–55.",
+      "volume": "32",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1109/TPAMI.2010.231",
+      "author": "D Cai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1548",
+      "issue": "8",
+      "journal-title": "IEEE Trans Pattern Anal Mach Intell",
+      "key": "222_CR11",
+      "unstructured": "Cai D, He X, Han J, Huang TS. Graph regularized nonnegative matrix factorization for data representation. IEEE Trans Pattern Anal Mach Intell. 2011;33(8):1548–60.",
+      "volume": "33",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.neucom.2014.01.043",
+      "author": "K Zeng",
+      "doi-asserted-by": "publisher",
+      "first-page": "209",
+      "journal-title": "Neurocomputing",
+      "key": "222_CR12",
+      "unstructured": "Zeng K, Yu J, Li C, You J, Jin T. Image clustering by hyper-graph regularized non-negative matrix factorization. Neurocomputing. 2014;138:209–17.",
+      "volume": "138",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1145/2063576.2063676",
+      "doi-asserted-by": "crossref",
+      "key": "222_CR13",
+      "unstructured": "Kong D, Ding C, Huang H. Robust nonnegative matrix factorization using l21-norm. In: Proceedings of the 20th ACM international conference on Information and knowledge management. Glasgow: ACM; 2011. p. 673–82."
+    },
+    {
+      "author": "DD Lee",
+      "first-page": "556",
+      "key": "222_CR14",
+      "unstructured": "Lee DD, Seung HS. Algorithms for non-negative matrix factorization. In: Advances in neural information processing systems; 2001. p. 556–62.",
+      "volume-title": "Advances in neural information processing systems",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-367",
+      "author": "R Gaujoux",
+      "doi-asserted-by": "publisher",
+      "first-page": "367",
+      "issue": "1",
+      "journal-title": "BMC bioinf",
+      "key": "222_CR15",
+      "unstructured": "Gaujoux R, Seoighe C. A flexible R package for nonnegative matrix factorization. BMC bioinf. 2010;11(1):367.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1007/s11222-008-9111-x",
+      "author": "G Obozinski",
+      "doi-asserted-by": "publisher",
+      "first-page": "231",
+      "issue": "2",
+      "journal-title": "Stat Comput",
+      "key": "222_CR16",
+      "unstructured": "Obozinski G, Taskar B, Jordan MI. Joint covariate selection and joint subspace selection for multiple classification problems. Stat Comput. 2010;20(2):231–52.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "author": "D Zhou",
+      "first-page": "1601",
+      "key": "222_CR17",
+      "unstructured": "Zhou D, Huang J, Schölkopf B. Learning with hypergraphs: clustering, classification, and embedding. In: Advances in neural information processing systems; 2007. p. 1601–8.",
+      "volume-title": "Advances in neural information processing systems",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/j.patrec.2017.11.017",
+      "author": "S Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "8",
+      "journal-title": "Pattern Recognition Lett",
+      "key": "222_CR18",
+      "unstructured": "Huang S, Wang H, Ge Y, Huangfu L, Zhang X, Yang D. Improved hypergraph regularized monnegative matrix factorization with sparse representation. Pattern Recognition Lett. 2018;102:8–14.",
+      "volume": "102",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1109/TCBB.2015.2505294",
+      "author": "D Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1059",
+      "issue": "6",
+      "journal-title": "IEEE/ACM Trans Comput Biol Bioinform (TCBB)",
+      "key": "222_CR19",
+      "unstructured": "Wang D, Liu J-X, Gao Y-L, Zheng C-H, Xu Y. Characteristic gene selection based on robust graph regularized non-negative matrix factorization. IEEE/ACM Trans Comput Biol Bioinform (TCBB). 2016;13(6):1059–67.",
+      "volume": "13",
+      "year": "2016"
+    },
+    {
+      "author": "K Tomczak",
+      "first-page": "A68",
+      "issue": "1A",
+      "journal-title": "Contemporary Oncol",
+      "key": "222_CR20",
+      "unstructured": "Tomczak K, Czerwińska P, Wiznerowicz M. The Cancer Genome Atlas (TCGA): an immeasurable source of knowledge. Contemporary Oncol. 2015;19(1A):A68.",
+      "volume": "19",
+      "year": "2015"
+    },
+    {
+      "author": "C. F. Yang",
+      "first-page": "557",
+      "key": "222_CR21",
+      "unstructured": "Yang C, Ye M, Zhao J. Document clustering based on nonnegative sparse matrix factorization. In: International conference on natural computation. Changsha: Springer; 2005. p. 557–63.",
+      "volume-title": "Lecture Notes in Computer Science",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.ipm.2004.11.005",
+      "author": "F Shahnaz",
+      "doi-asserted-by": "publisher",
+      "first-page": "373",
+      "issue": "2",
+      "journal-title": "Inf Process Manag",
+      "key": "222_CR22",
+      "unstructured": "Shahnaz F, Berry MW, Pauca VP, Plemmons RJ. Document clustering using nonnegative matrix factorization. Inf Process Manag. 2006;42(2):373–86.",
+      "volume": "42",
+      "year": "2006"
+    },
+    {
+      "author": "L Lovász",
+      "key": "222_CR23",
+      "unstructured": "Lovász L, Plummer MD. Matching theory, vol. 367: American Mathematical Soc; 2009.",
+      "volume-title": "Matching theory, vol. 367: American Mathematical Soc",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1172/jci.insight.90558",
+      "doi-asserted-by": "crossref",
+      "key": "222_CR24",
+      "unstructured": "Xu Y, Mizuno T, Sridharan A, Du Y, Guo M, Tang J, Wikenheiser-Brokamp KA, Perl A-KT, Funari VA, Gokey JJ. Single-cell RNA sequencing identifies diverse roles of epithelial cells in idiopathic pulmonary fibrosis. JCI Insight. 2016;1(20):e90558."
+    },
+    {
+      "DOI": "10.1038/35077207",
+      "author": "BA Ponder",
+      "doi-asserted-by": "publisher",
+      "first-page": "336",
+      "issue": "6835",
+      "journal-title": "Nature",
+      "key": "222_CR25",
+      "unstructured": "Ponder BA. Cancer genetics. Nature. 2001;411(6835):336.",
+      "volume": "411",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1109/TNB.2016.2574923",
+      "author": "J-X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "510",
+      "issue": "6",
+      "journal-title": "IEEE Trans Nanobioscience",
+      "key": "222_CR26",
+      "unstructured": "Liu J-X, Gao Y-L, Zheng C-H, Xu Y, Yu J. Block-constraint robust principal component analysis and its application to integrated analysis of TCGA data. IEEE Trans Nanobioscience. 2016;15(6):510–6.",
+      "volume": "15",
+      "year": "2016"
+    },
+    {
+      "author": "DT Ting",
+      "key": "222_CR27",
+      "unstructured": "Ting DT, Wittner BS, Shah AM, Miyamoto DT, Brannigan BW, Xega K, Ciciliano J, MacKenzie OC, Trautwein J, Shahid M. Abstract NG04: diversity of circulating tumor cells in a mouse pancreatic cancer model identified by single cell RNA sequencing. In: AACR; 2014.",
+      "volume-title": "AACR",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1272/jnms.71.172",
+      "author": "H Bo",
+      "doi-asserted-by": "publisher",
+      "first-page": "172",
+      "issue": "3",
+      "journal-title": "J Nippon Med Sch",
+      "key": "222_CR28",
+      "unstructured": "Bo H, Ghazizadeh M, Shimizu H, Kurihara Y, Egawa S, Moriyama Y, Tajiri T, Kawanami O. Effect of ionizing irradiation on human esophageal cancer cell lines by cDNA microarray gene expression analysis. J Nippon Med Sch. 2004;71(3):172–80.",
+      "volume": "71",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.3858/emm.2009.41.2.013",
+      "author": "H-J Yoo",
+      "doi-asserted-by": "publisher",
+      "first-page": "102",
+      "issue": "2",
+      "journal-title": "Exp Mol Med",
+      "key": "222_CR29",
+      "unstructured": "Yoo H-J, Yun B-R, Kwon J-H, Ahn H-S, Seol M-A, Lee M-J, Yu G-R, Yu H-C, Hong B, Choi K. Genetic and expression alterations in association with the sarcomatous change of cholangiocarcinoma cells. Exp Mol Med. 2009;41(2):102.",
+      "volume": "41",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/j.1476-5381.2010.01125.x",
+      "author": "F Holtrup",
+      "doi-asserted-by": "publisher",
+      "first-page": "1045",
+      "issue": "5",
+      "journal-title": "Br J Pharmacol",
+      "key": "222_CR30",
+      "unstructured": "Holtrup F, Bauer A, Fellenberg K, Hilger RA, Wink M, Hoheisel JD. Microarray analysis of nemorosone-induced cytotoxic effects on pancreatic cancer cells reveals activation of the unfolded protein response (UPR). Br J Pharmacol. 2011;162(5):1045–59.",
+      "volume": "162",
+      "year": "2011"
+    },
+    {
+      "author": "B-L Wu",
+      "first-page": "431792",
+      "journal-title": "Scientific World Journal",
+      "key": "222_CR31",
+      "unstructured": "Wu B-L, Lv G-Q, Zou H-Y, Du Z-P, Wu J-Y, Zhang P-X, Xu L-Y, Li E-M. Exploration of potential roles of a new LOXL2 splicing variant using network knowledge in esophageal squamous cell carcinoma. Scientific World Journal. 2014;2014:431792.",
+      "volume": "2014",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/odi.12617",
+      "author": "R Nagler",
+      "doi-asserted-by": "publisher",
+      "first-page": "296",
+      "issue": "3",
+      "journal-title": "Oral Dis",
+      "key": "222_CR32",
+      "unstructured": "Nagler R. Saliva protein biomarkers to detect oral squamous cell carcinoma (OSCC). Oral Dis. 2018;24(3):296–9.",
+      "volume": "24",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3233/CBM-160655",
+      "author": "H Yao",
+      "doi-asserted-by": "publisher",
+      "first-page": "397",
+      "issue": "4",
+      "journal-title": "Cancer biomarkers",
+      "key": "222_CR33",
+      "unstructured": "Yao H, Yang Z, Liu Z, Miao X, Yang L, Li D, Zou Q, Yuan Y. Glypican-3 and KRT19 are markers associating with metastasis and poor prognosis of pancreatic ductal adenocarcinoma. Cancer biomarkers. 2016;17(4):397–404.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1021/pr200141c",
+      "author": "J Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2863",
+      "issue": "6",
+      "journal-title": "J Proteome Res",
+      "key": "222_CR34",
+      "unstructured": "Zhang J, Wang K, Zhang J, Liu SS, Dai L, Zhang J-Y. Using proteomic approach to identify tumor-associated proteins as biomarkers in human esophageal squamous cell carcinoma. J Proteome Res. 2011;10(6):2863–72.",
+      "volume": "10",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.18632/oncotarget.13229",
+      "author": "P Wang",
+      "doi-asserted-by": "crossref",
+      "first-page": "81367",
+      "issue": "49",
+      "journal-title": "Oncotarget",
+      "key": "222_CR35",
+      "unstructured": "Wang P, Lv L. miR-26a induced the suppression of tumor growth of cholangiocarcinoma via KRT19 approach. Oncotarget. 2016;7(49):81367.",
+      "volume": "7",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 35,
+  "references-count": 35,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-019-0222-6"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Robust hypergraph regularized non-negative matrix factorization for sample clustering and feature selection in multi-view gene expression data"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "13"
+}

@@ -1,0 +1,539 @@
+{
+  "DOI": "10.1002/gepi.22245",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22245",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe heritability of most complex traits is driven by variants throughout the genome. Consequently, polygenic risk scores, which combine information on multiple variants genome‐wide, have demonstrated improved accuracy in genetic risk prediction. We present a new two‐step approach to constructing genome‐wide polygenic risk scores from meta‐GWAS summary statistics. Local linkage disequilibrium (LD) is adjusted for in Step 1, followed by, uniquely, long‐range LD in Step 2. Our algorithm is highly parallelizable since block‐wise analyses in Step 1 can be distributed across a high‐performance computing cluster, and flexible, since sparsity and heritability are estimated within each block. Inference is obtained through a formal Bayesian variable selection framework, meaning final risk predictions are averaged over competing models.\u003c/jats:p\u003e\u003cjats:p\u003eWe compared our method to two alternative approaches: LDPred and lassosum using all seven traits in the Welcome Trust Case Control Consortium as well as meta‐GWAS summaries for type 1 diabetes (T1D), coronary artery disease, and schizophrenia. Performance was generally similar across methods, although our framework provided more accurate predictions for T1D, for which there are multiple heterogeneous signals in regions of both short‐ and long‐range LD. With sufficient compute resources, our method also allows the fastest runtimes.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22245"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-10-25"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2019-05-30"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-07-22"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-5611-6702",
+      "affiliation": [
+        {
+          "name": "MRC Biostatistics Unit, School of Clinical Medicine, Cambridge Institute of Public Health Cambridge Biomedical Campus Cambridge UK"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Newcombe",
+      "given": "Paul J.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Cardiovascular Sciences, Cardiovascular Research Centre, Glenfield Hospital University of Leicester Leicester UK"
+        },
+        {
+          "name": "NIHR Leicester Biomedical Research Centre Glenfield Hospital Leicester UK"
+        }
+      ],
+      "family": "Nelson",
+      "given": "Christopher P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Cardiovascular Sciences, Cardiovascular Research Centre, Glenfield Hospital University of Leicester Leicester UK"
+        },
+        {
+          "name": "NIHR Leicester Biomedical Research Centre Glenfield Hospital Leicester UK"
+        }
+      ],
+      "family": "Samani",
+      "given": "Nilesh J.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8817-8908",
+      "affiliation": [
+        {
+          "name": "Department of Health Sciences, Centre for Medicine University of Leicester Leicester UK"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Dudbridge",
+      "given": "Frank",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        7,
+        22
+      ]
+    ],
+    "date-time": "2019-07-22T10:29:28Z",
+    "timestamp": 1563791368000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        9
+      ]
+    ],
+    "date-time": "2023-09-09T14:48:39Z",
+    "timestamp": 1694270919000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000272",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute for Health Research"
+    },
+    {
+      "DOI": "10.13039/501100000274",
+      "doi-asserted-by": "publisher",
+      "name": "British Heart Foundation"
+    },
+    {
+      "DOI": "10.13039/501100000265",
+      "award": [
+        "MC_UU_00002/9"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Medical Research Council"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ],
+    "date-time": "2024-04-12T07:10:39Z",
+    "timestamp": 1712905839559
+  },
+  "is-referenced-by-count": 32,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        7,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            22
+          ]
+        ],
+        "date-time": "2019-07-22T00:00:00Z",
+        "timestamp": 1563753600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22245",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22245",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22245",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "730-741",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        7,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        7,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ng.381",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_2_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003657",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_3_1"
+    },
+    {
+      "DOI": "10.1038/ng.2579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_4_1"
+    },
+    {
+      "DOI": "10.1534/genetics.115.176107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_5_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003348",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21966",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_7_1"
+    },
+    {
+      "DOI": "10.1159/000446581",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_8_1"
+    },
+    {
+      "DOI": "10.1002/jbmr.2314",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_9_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddp295",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_10_1"
+    },
+    {
+      "DOI": "10.1093/biomet/82.4.711",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_11_1"
+    },
+    {
+      "DOI": "10.1214/10-BA507",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_12_1"
+    },
+    {
+      "DOI": "10.1038/nature09410",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_13_1"
+    },
+    {
+      "article-title": "Polygenic scores via penalized regression on summary statistics",
+      "author": "Mak T. S. H.",
+      "first-page": "1",
+      "journal-title": "Genetic Epidemiology",
+      "key": "e_1_2_7_1_14_1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/genetics/157.4.1819",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.2383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004969",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_17_1"
+    },
+    {
+      "DOI": "10.1177/0962280214548748",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_18_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21953",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_19_1"
+    },
+    {
+      "DOI": "10.1038/ng.3396",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_20_1"
+    },
+    {
+      "DOI": "10.1198/016214508000000337",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_21_1"
+    },
+    {
+      "DOI": "10.1214/09-AOAS271",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_22_1"
+    },
+    {
+      "DOI": "10.1038/ng853",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_23_1"
+    },
+    {
+      "DOI": "10.1056/NEJMsa0708739",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_24_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_25_1"
+    },
+    {
+      "article-title": "Common polygenic variation contributes to risk of schizophrenia and bipolar disorder",
+      "author": "Purcell S. M.",
+      "first-page": "8192",
+      "journal-title": "Nature",
+      "key": "e_1_2_7_1_26_1",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nature13595",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_27_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006493",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_29_1"
+    },
+    {
+      "DOI": "10.1038/nature08192",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_30_1"
+    },
+    {
+      "DOI": "10.1038/ng.2232",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_31_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20530",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_32_1"
+    },
+    {
+      "DOI": "10.2337/db14-1504",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_33_1"
+    },
+    {
+      "DOI": "10.1038/nature09270",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_34_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.02.027",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_35_1"
+    },
+    {
+      "article-title": "Regression shrinkage and selection via the Lasso",
+      "author": "Tibshirani R.",
+      "first-page": "267",
+      "issue": "1",
+      "journal-title": "Journal of the Royal Statistical Society: Series B",
+      "key": "e_1_2_7_1_36_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.01.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_37_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.2011.00670.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_38_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_39_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyv070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_40_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0907727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_41_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005272",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_42_1"
+    },
+    {
+      "DOI": "10.1214/09-AOAS322",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_43_1"
+    },
+    {
+      "DOI": "10.1111/jcpp.12295",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_44_1"
+    },
+    {
+      "DOI": "10.1038/nrg3457",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_45_1"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_46_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_47_1"
+    },
+    {
+      "DOI": "10.1038/ng.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_48_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003264",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_49_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_50_1"
+    }
+  ],
+  "reference-count": 49,
+  "references-count": 49,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22245"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A flexible and parallelizable approach to genome‐wide polygenic risk scores"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

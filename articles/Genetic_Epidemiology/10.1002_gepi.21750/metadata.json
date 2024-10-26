@@ -1,0 +1,435 @@
+{
+  "DOI": "10.1002/gepi.21750",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21750",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eTo date, numerous genetic variants have been identified as associated with diverse phenotypic traits. However, identified associations generally explain only a small proportion of trait heritability and the predictive power of models incorporating only known‐associated variants has been small. Multiple regression is a popular framework in which to consider the joint effect of many genetic variants simultaneously. Ordinary multiple regression is seldom appropriate in the context of genetic data, due to the high dimensionality of the data and the correlation structure among the predictors. There has been a resurgence of interest in the use of penalised regression techniques to circumvent these difficulties. In this paper, we focus on ridge regression, a penalised regression approach that has been shown to offer good performance in multivariate prediction problems. One challenge in the application of ridge regression is the choice of the ridge parameter that controls the amount of shrinkage of the regression coefficients. We present a method to determine the ridge parameter based on the data, with the aim of good performance in high‐dimensional prediction problems. We establish a theoretical justification for our approach, and demonstrate its performance on simulated genetic data and on a real data example. Fitting a ridge regression model to hundreds of thousands to millions of genetic variants simultaneously presents computational challenges. We have developed an R package, ridge, which addresses these issues. Ridge implements the automatic choice of ridge parameter presented in this paper, and is freely available from CRAN.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21750"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics Imperial College London London United Kingdom"
+        },
+        {
+          "name": "Statistical Consulting Group GlaxoSmithKline  Stevenage United Kingdom"
+        }
+      ],
+      "family": "Cule",
+      "given": "Erika",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistical Science University College London  London United Kingdom"
+        }
+      ],
+      "family": "De Iorio",
+      "given": "Maria",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        7,
+        27
+      ]
+    ],
+    "date-time": "2013-07-27T03:09:10Z",
+    "timestamp": 1374894550000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T06:13:09Z",
+    "timestamp": 1696572789000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100004440",
+      "doi-asserted-by": "publisher",
+      "name": "Wellcome Trust"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        2
+      ]
+    ],
+    "date-time": "2024-05-02T07:10:19Z",
+    "timestamp": 1714633819252
+  },
+  "is-referenced-by-count": 80,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        7,
+        26
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            26
+          ]
+        ],
+        "date-time": "2013-07-26T00:00:00Z",
+        "timestamp": 1374796800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21750",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21750",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.21750",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21750",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "704-714",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        7,
+        26
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        7,
+        26
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.21698",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1016/j.csda.2005.03.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1007/s11920-011-0226-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1093/biomet/59.1.19",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20543",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1175/1520-0493(1950)078\u003c0001:VOFEIT\u003e2.0.CO;2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "author": "Brown PJ",
+      "key": "e_1_2_8_8_1",
+      "volume-title": "Measurement, Regression and Calibration",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-364",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "author": "De Iorio M",
+      "first-page": "347",
+      "key": "e_1_2_8_10_1",
+      "volume-title": "Statistical Techniques in Metabolic Profiling, Handbook of Statistical Genetics",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1534/genetics.112.143313",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1038/nrg2809",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0008068",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1080/00401706.1993.10485033",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1198/004017007000000245",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1098/rstb.2005.1686",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwh221",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0903103106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1080/00401706.1970.10488634",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1080/03610927508827232",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1534/genetics.106.069088",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000130",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000529",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.2307/2347628",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002051",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2007.10.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-S14-S6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1038/ng2088",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1001/archpsyc.60.5.497",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1093/genetics/157.4.1819",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1186/1297-9686-41-56",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-S9-S5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.2202/1557-4679.1115",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1080/03610928408828664",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "DOI": "10.1038/mp.2008.29",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "DOI": "10.1038/mp.2009.43",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "article-title": "Regression shrinkage and selection via the lasso",
+      "author": "Tibshirani R",
+      "first-page": "267",
+      "journal-title": "J Royal Stat Soc B",
+      "key": "e_1_2_8_40_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1038/ng.608",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00527.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_43_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_44_1"
+    }
+  ],
+  "reference-count": 43,
+  "references-count": 43,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21750"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Ridge Regression in Prediction Problems: Automatic Choice of the Ridge Parameter"
+  ],
+  "type": "journal-article",
+  "volume": "37"
+}

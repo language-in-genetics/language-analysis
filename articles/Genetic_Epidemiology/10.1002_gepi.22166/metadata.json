@@ -1,0 +1,675 @@
+{
+  "DOI": "10.1002/gepi.22166",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22166",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003ePolygenic risk scores (PRSs) are weighted sums of risk allele counts of single‐nucleotide polymorphisms (SNPs) associated with a disease or trait. PRSs are typically constructed based on published results from Genome‐Wide Association Studies (GWASs), and the majority of which has been performed in large populations of European ancestry (EA) individuals. Although many genotype‐trait associations have generalized across populations, the optimal choice of SNPs and weights for PRSs may differ between populations due to different linkage disequilibrium (LD) and allele frequency patterns. We compare various approaches for PRS construction, using GWAS results from both large EA studies and a smaller study in Hispanics/Latinos: The Hispanic Community Health Study/Study of Latinos (HCHS/SOL, \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22166-math-0001.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22166:gepi22166-math-0001\" /\u003e). We consider multiple approaches for selecting SNPs and for computing SNP weights. We study the performance of the resulting PRSs in an independent study of Hispanics/Latinos from the Women’s Health Initiative (WHI, \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22166-math-0002.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22166:gepi22166-math-0002\" /\u003e). We support our investigation with simulation studies of potential genetic architectures in a single locus. We observed that selecting variants based on EA GWASs generally performs well, except for blood pressure trait. However, the use of EA GWASs for weight estimation was suboptimal. Using non‐EA GWAS results to estimate weights improved results.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22166"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-04-30"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-08-28"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-10-15"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Grinde",
+      "given": "Kelsey E.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Population Health Albert Einstein College of Medicine Bronx New York"
+        }
+      ],
+      "family": "Qi",
+      "given": "Qibin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Thornton",
+      "given": "Timothy A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Brown University Providence Rhode Island"
+        }
+      ],
+      "family": "Liu",
+      "given": "Simin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Family Medicine and Public Health University of California San Diego San Diego California"
+        }
+      ],
+      "family": "Shadyab",
+      "given": "Aladdin H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Brown University Providence Rhode Island"
+        },
+        {
+          "name": "Department of Biomedical Sciences City University of Hong Kong  HKSAR"
+        },
+        {
+          "name": "Department of Electronic Engineering City University of Hong Kong  HKSAR"
+        }
+      ],
+      "family": "Chan",
+      "given": "Kei Hang K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center Seattle Washington"
+        }
+      ],
+      "family": "Reiner",
+      "given": "Alexander P.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8520-8860",
+      "affiliation": [
+        {
+          "name": "Division of Sleep and Circadian Disorders Brigham and Women’s Hospital Boston Massachusetts"
+        },
+        {
+          "name": "Department of Medicine Harvard Medical School Boston Massachusetts"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Sofer",
+      "given": "Tamar",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        28
+      ]
+    ],
+    "date-time": "2018-10-28T20:54:19Z",
+    "timestamp": 1540760059000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        14
+      ]
+    ],
+    "date-time": "2023-09-14T11:51:38Z",
+    "timestamp": 1694692298000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "HHSN268201300001I/N01‐HC‐65233",
+        "HHSN268201300005C",
+        "AM03 and MOD03",
+        "HL120393‐03S1",
+        "1R35HL135818 HHSN268201100046C",
+        "HHSN268201100001C",
+        "HHSN268201100002C",
+        "HHSN268201100003C",
+        "HHSN268201100004C",
+        "HHSC271201100004C"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100006686",
+      "award": [
+        "HHSN268201300004I/N01‐HC‐65234"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "University of Miami"
+    },
+    {
+      "DOI": "10.13039/100007319",
+      "award": [
+        "HHSN268201300002I/N01‐HC‐65235"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Albert Einstein College of Medicine, Yeshiva University"
+    },
+    {
+      "DOI": "10.13039/100008522",
+      "award": [
+        "HHSN268201300003I/N01‐HC‐65236"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "University of Illinois at Chicago"
+    },
+    {
+      "DOI": "10.13039/100007059",
+      "doi-asserted-by": "publisher",
+      "name": "Northwestern University"
+    },
+    {
+      "DOI": "10.13039/100007099",
+      "award": [
+        "HHSN268201300005I/N01‐HC‐65237"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "San Diego State University"
+    },
+    {
+      "DOI": "10.13039/100006545",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Minority Health and Health Disparities"
+    },
+    {
+      "DOI": "10.13039/100000055",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Deafness and Other Communication Disorders"
+    },
+    {
+      "DOI": "10.13039/100000072",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Dental and Craniofacial Research"
+    },
+    {
+      "DOI": "10.13039/100000062",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100000065",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Neurological Disorders and Stroke"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "HG006292",
+        "HL129132",
+        "R01HG005827"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000016",
+      "doi-asserted-by": "publisher",
+      "name": "U.S. Department of Health and Human Services"
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "DGE‐1256082"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        13
+      ]
+    ],
+    "date-time": "2024-03-13T21:44:02Z",
+    "timestamp": 1710366242237
+  },
+  "is-referenced-by-count": 85,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        15
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+      "content-version": "am",
+      "delay-in-days": 365,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            15
+          ]
+        ],
+        "date-time": "2019-10-15T00:00:00Z",
+        "timestamp": 1571097600000
+      }
+    },
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            15
+          ]
+        ],
+        "date-time": "2018-10-15T00:00:00Z",
+        "timestamp": 1539561600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22166",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22166",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22166",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22166",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22166",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "50-62",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        15
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        15
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nature11632",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_1_2_1",
+      "unstructured": "1000 Genomes Project Consortium. (2012).An integrated map of genetic variation from 1 092 human genomes.Nature 491 56‐65."
+    },
+    {
+      "DOI": "10.1002/gepi.22117",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_3_1"
+    },
+    {
+      "DOI": "10.1080/19485565.2013.774628",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_4_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201707-1493OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_5_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.05.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_6_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.12.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_7_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.06.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_8_1"
+    },
+    {
+      "DOI": "10.1101/287136",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_1_9_1",
+      "unstructured": "Curtis D. (2018).Polygenic risk score for schizophrenia is more strongly associated with ancestry than with schizophrenia.bioRxiv287136."
+    },
+    {
+      "key": "e_1_2_7_1_10_1",
+      "unstructured": "DIAbetes Genetics Replication And Meta‐analysis (DIAGRAM) Consortium Asian Genetic Epidemiology Network Type 2 Diabetes (AGEN‐T2D) Consortium South Asian Type 2 Diabetes (SAT2D) Consortium Mexican American Type 2 Diabetes (MAT2D) Consortium Type 2 Diabetes Genetic Exploration by Next‐generation Sequencing in Multi‐ethnic Samples (T2D‐GENES) Consortium Mahajan A. …Zhang W. (2014).Genome‐wide trans‐ancestry meta‐analysis provides insight into the genetic architecture of type 2 diabetes susceptibility.Nature Genetics 46 234‐244. Retrieved fromhttp://europepmc.org/articles/PMC3969612"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003348",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_11_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.05.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_12_1"
+    },
+    {
+      "DOI": "10.1186/s12944-017-0591-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_13_1"
+    },
+    {
+      "DOI": "10.1038/s41467-018-04191-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_14_1"
+    },
+    {
+      "DOI": "10.1016/S1047-2797(03)00042-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_15_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006760",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_16_1"
+    },
+    {
+      "DOI": "10.1038/nature10405",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_1_17_1",
+      "unstructured": "International Consortium for Blood Pressure Genome‐Wide Association Studies. (2011).Genetic variants in novel pathways influence blood pressure and cardiovascular disease risk.Nature 478 103‐109."
+    },
+    {
+      "DOI": "10.1093/hmg/ddx024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_18_1"
+    },
+    {
+      "DOI": "10.1016/j.annepidem.2010.05.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_19_1"
+    },
+    {
+      "DOI": "10.1038/nature14177",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22083",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_21_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.03.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_22_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwm060",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_23_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0036473",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_24_1"
+    },
+    {
+      "DOI": "10.1086/321275",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_25_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_26_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1203039",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_27_1"
+    },
+    {
+      "article-title": "Genetics of type 2 diabetes in US Hispanic/Latino individuals: Results from the Hispanic Community Health Study/Study of Latinos (HCHS/SOL)",
+      "author": "Qi Q.",
+      "first-page": "db161150",
+      "journal-title": "Diabetes",
+      "key": "e_1_2_7_1_28_1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/hmg/ddx082",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_29_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.07.023",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_30_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0179238",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_31_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.12.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_32_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006493",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_33_1"
+    },
+    {
+      "DOI": "10.1038/nature14132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_34_1"
+    },
+    {
+      "DOI": "10.1038/nrg2361",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_35_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_36_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21981",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_37_1"
+    },
+    {
+      "DOI": "10.1038/s41598-017-09019-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_38_1"
+    },
+    {
+      "DOI": "10.1016/j.annepidem.2010.03.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_39_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.05.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_40_1"
+    },
+    {
+      "DOI": "10.1038/nature04226",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_1_41_1",
+      "unstructured": "The International HapMap Consortium. (2005).A haplotype map of the human genome.Nature 437 1299‐1320."
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_42_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_43_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(12)60312-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_44_1"
+    },
+    {
+      "DOI": "10.1038/ng.922",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_45_1"
+    },
+    {
+      "DOI": "10.1038/ng.3097",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_46_1"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/242404",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22166"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Generalizing polygenic risk scores from Europeans to Hispanics/Latinos"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

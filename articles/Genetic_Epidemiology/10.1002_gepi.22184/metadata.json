@@ -1,0 +1,636 @@
+{
+  "DOI": "10.1002/gepi.22184",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22184",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn Mendelian randomization (MR), inference about causal relationship between a phenotype of interest and a response or disease outcome can be obtained by constructing instrumental variables from genetic variants. However, MR inference requires three assumptions, one of which is that the genetic variants only influence the outcome through phenotype of interest. Pleiotropy, that is, the situation in which some genetic variants affect more than one phenotype, can invalidate these genetic variants for use as instrumental variables; thus a naive analysis will give biased estimates of the causal relation. Here, we present new methods (constrained instrumental variable [CIV] methods) to construct valid instrumental variables and perform adjusted causal effect estimation when pleiotropy exists and when the pleiotropic phenotypes are available. We demonstrate that a smoothed version of CIV performs approximate selection of genetic variants that are valid instruments, and provides unbiased estimates of the causal effects. We provide details on a number of existing methods, together with a comparison of their performance in a large series of simulations. CIV performs robustly across different pleiotropic violations of the MR assumptions. We also analyzed the data from the Alzheimer’s disease (AD) neuroimaging initiative (ADNI; Mueller et al., 2005. Alzheimer's Dementia, 11(1), 55–66) to disentangle causal relationships of several biomarkers with AD progression.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22184"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-07-30"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-12-02"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-01-12"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-0244-4620",
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research, Jewish General Hospital Montreal Quebec Canada"
+        },
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health and Gerald Bronfman Department of Oncology McGill University Montreal Quebec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Jiang",
+      "given": "Lai",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9911-079X",
+      "affiliation": [
+        {
+          "name": "Department of Mathematics, Université du Québec à Montréal Montreal Quebec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Oualkacha",
+      "given": "Karim",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "BIPS \u0026amp; Department of Mathematics Leibinz Institute for Prevention Research and Epidemiology, University of Bremen Bremen Germany"
+        }
+      ],
+      "family": "Didelez",
+      "given": "Vanessa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research, Jewish General Hospital Montreal Quebec Canada"
+        },
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health and Gerald Bronfman Department of Oncology McGill University Montreal Quebec Canada"
+        }
+      ],
+      "family": "Ciampi",
+      "given": "Antonio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Neurology \u0026amp; Neurosurgery McGill University Montreal Quebec Canada"
+        },
+        {
+          "name": "Translational Neuroimaging Laboratory, McGill University Research Centre for Studies in Aging Douglas Hospital, McGill University Montreal Quebec Canada"
+        }
+      ],
+      "family": "Rosa‐Neto",
+      "given": "Pedro",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Translational Neuroimaging Laboratory, McGill University Research Centre for Studies in Aging Douglas Hospital, McGill University Montreal Quebec Canada"
+        }
+      ],
+      "family": "Benedet",
+      "given": "Andrea L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Translational Neuroimaging Laboratory, McGill University Research Centre for Studies in Aging Douglas Hospital, McGill University Montreal Quebec Canada"
+        }
+      ],
+      "family": "Mathotaarachchi",
+      "given": "Sulantha",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine McGill University Montreal Quebec Canada"
+        }
+      ],
+      "family": "Richards",
+      "given": "John Brent",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2427-5696",
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research, Jewish General Hospital Montreal Quebec Canada"
+        },
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health and Gerald Bronfman Department of Oncology McGill University Montreal Quebec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Greenwood",
+      "given": "Celia M. T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "and for the Alzheimer’s Disease Neuroimaging Initiative",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        12
+      ]
+    ],
+    "date-time": "2019-01-12T08:14:02Z",
+    "timestamp": 1547280842000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        10
+      ]
+    ],
+    "date-time": "2023-09-10T23:18:42Z",
+    "timestamp": 1694387922000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100007333",
+      "award": [
+        "W81XWH‐12‐2‐0012"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Alzheimer's Disease Neuroimaging Initiative"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "date-time": "2024-04-30T00:31:13Z",
+    "timestamp": 1714437073450
+  },
+  "is-referenced-by-count": 13,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            12
+          ]
+        ],
+        "date-time": "2019-01-12T00:00:00Z",
+        "timestamp": 1547251200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22184",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22184",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22184",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22184",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "373-401",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        12
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        6
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1007/s11292-005-5126-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_2_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1992.10475212",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_3_1"
+    },
+    {
+      "DOI": "10.1177/1536867X0300300101",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_4_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyv080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_5_1"
+    },
+    {
+      "DOI": "10.1002/sim.4138",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_6_1"
+    },
+    {
+      "DOI": "10.1017/CBO9780511804441",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_7_1"
+    },
+    {
+      "DOI": "10.1523/JNEUROSCI.4315-03.2004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_8_1"
+    },
+    {
+      "key": "e_1_2_8_1_9_1",
+      "unstructured": "Burdett T. Hall P. Hasting E. Hindorff L. Junkins H. Klemm A. … et al. (2016). The NHGRI‐EBI catalog of published genome‐wide association studies. Retrieved from www.ebi‐acuk/gwas"
+    },
+    {
+      "DOI": "10.1093/aje/kwu107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_10_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyt093",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_11_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwu283",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_12_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyr036",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_13_1"
+    },
+    {
+      "DOI": "10.1080/01621459.2012.734171",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_14_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyp334",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_15_1"
+    },
+    {
+      "DOI": "10.1002/sim.6358",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_16_1"
+    },
+    {
+      "DOI": "10.1086/344127",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_17_1"
+    },
+    {
+      "DOI": "10.1177/0962280206077743",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_18_1"
+    },
+    {
+      "DOI": "10.2307/1911990",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_19_1"
+    },
+    {
+      "DOI": "10.2307/1937887",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_20_1"
+    },
+    {
+      "DOI": "10.1007/s12035-010-8137-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_21_1"
+    },
+    {
+      "author": "Friedman J.",
+      "issue": "10",
+      "journal-title": "The elements of statistical learning",
+      "key": "e_1_2_8_1_22_1",
+      "volume": "1",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1074/jbc.M808759200",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_23_1"
+    },
+    {
+      "DOI": "10.1890/02-3114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_24_1"
+    },
+    {
+      "article-title": "Path analysis vs. structural equation modeling",
+      "author": "Grapentine T.",
+      "first-page": "12",
+      "issue": "3",
+      "journal-title": "Marketing Research",
+      "key": "e_1_2_8_1_25_1",
+      "volume": "12",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1097/01.EDE.0000042804.12056.6C",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_26_1"
+    },
+    {
+      "DOI": "10.1287/mksc.1040.0070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_27_1"
+    },
+    {
+      "DOI": "10.2307/1392442",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_28_1"
+    },
+    {
+      "DOI": "10.1126/science.1566067",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_29_1"
+    },
+    {
+      "DOI": "10.1016/j.neurobiolaging.2006.02.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_30_1"
+    },
+    {
+      "DOI": "10.1162/REST_a_00011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_31_1"
+    },
+    {
+      "DOI": "10.1038/ncomms11934",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_32_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4614-7138-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_33_1"
+    },
+    {
+      "DOI": "10.1002/sim.2283",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_34_1"
+    },
+    {
+      "DOI": "10.1080/01621459.2014.994705",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_35_1"
+    },
+    {
+      "DOI": "10.1002/sim.3034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_36_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20377",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_37_1"
+    },
+    {
+      "DOI": "10.3200/JECE.39.1.88-91",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_38_1"
+    },
+    {
+      "DOI": "10.1086/519807",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_39_1"
+    },
+    {
+      "DOI": "10.1006/exnr.2001.7814",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_40_1"
+    },
+    {
+      "DOI": "10.1016/j.jalz.2005.06.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_41_1"
+    },
+    {
+      "DOI": "10.1137/S0097539792240406",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_42_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyn080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_43_1"
+    },
+    {
+      "DOI": "10.1002/ana.21610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_44_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_45_1"
+    },
+    {
+      "DOI": "10.1073/pnas.92.11.4725",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_46_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_47_1"
+    },
+    {
+      "DOI": "10.1001/jama.289.16.2094",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_48_1"
+    },
+    {
+      "DOI": "10.1016/j.biopsych.2004.07.021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_49_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwu039",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_50_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxt041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_51_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyt023",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_52_1"
+    },
+    {
+      "DOI": "10.1257/jep.2.1.191",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_53_1"
+    },
+    {
+      "DOI": "10.1111/1467-9884.00195",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_54_1"
+    },
+    {
+      "DOI": "10.2307/2999621",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_55_1"
+    },
+    {
+      "DOI": "10.1002/sim.3255",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_56_1"
+    },
+    {
+      "key": "e_1_2_8_1_57_1",
+      "unstructured": "Wooldridge J. M.(2015). Introductory econometrics: A modern approach. Nelson Education."
+    }
+  ],
+  "reference-count": 56,
+  "references-count": 56,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/227454",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22184"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Constrained instruments and their application to Mendelian randomization with pleiotropy"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

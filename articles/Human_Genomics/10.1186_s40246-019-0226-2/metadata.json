@@ -1,0 +1,596 @@
+{
+  "DOI": "10.1186/s40246-019-0226-2",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-019-0226-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eGene set analysis is a well-established approach for interpretation of data from high-throughput gene expression studies. Achieving reproducible results is an essential requirement in such studies. One factor of a gene expression experiment that can affect reproducibility is the choice of sample size. However, choosing an appropriate sample size can be difficult, especially because the choice may be method-dependent. Further, sample size choice can have unexpected effects on specificity.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn this paper, we report on a systematic, quantitative approach to study the effect of sample size on the reproducibility of the results from 13 gene set analysis methods. We also investigate the impact of sample size on the specificity of these methods. Rather than relying on synthetic data, the proposed approach uses real expression datasets to offer an accurate and reliable evaluation.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur findings show that, as a general pattern, the results of gene set analysis become more reproducible as sample size increases. However, the extent of reproducibility and the rate at which it increases vary from method to method. In addition, even in the absence of differential expression, some gene set analysis methods report a large number of false positives, and increasing sample size does not lead to reducing these false positives. The results of this research can be used when selecting a gene set analysis method from those available.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "226"
+  ],
+  "article-number": "42",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 1,
+      "value": "22 October 2019"
+    },
+    {
+      "group": {
+        "label": "Publisher’s Note",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations."
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "This manuscript does not contain any individual person’s data."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Maleki",
+      "given": "Farhad",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Ovens",
+      "given": "Katie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "McQuillan",
+      "given": "Ian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kusalik",
+      "given": "Anthony J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ],
+    "date-time": "2019-10-22T01:42:03Z",
+    "timestamp": 1571708523000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2020,
+        10,
+        20
+      ]
+    ],
+    "date-time": "2020-10-20T23:33:48Z",
+    "timestamp": 1603236828000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        12
+      ]
+    ],
+    "date-time": "2023-10-12T19:36:00Z",
+    "timestamp": 1697139360697
+  },
+  "is-referenced-by-count": 29,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "S1",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "S1",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2019-10-01T00:00:00Z",
+        "timestamp": 1569888000000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 21,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            22
+          ]
+        ],
+        "date-time": "2019-10-22T00:00:00Z",
+        "timestamp": 1571702400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-019-0226-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-019-0226-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-019-0226-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1093/bioinformatics/bti162",
+      "author": "CA Tsai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1502",
+      "issue": "8",
+      "journal-title": "Bioinformatics",
+      "key": "226_CR1",
+      "unstructured": "Tsai CA, Wang SJ, Chen DT, Chen JJ. Sample size for gene expression microarray experiments. Bioinformatics. 2004; 21(8):1502–8.",
+      "volume": "21",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0065380",
+      "author": "C Stretch",
+      "doi-asserted-by": "publisher",
+      "first-page": "65380",
+      "issue": "6",
+      "journal-title": "PloS ONE",
+      "key": "226_CR2",
+      "unstructured": "Stretch C, Khan S, Asgarian N, Eisner R, Vaisipour S, Damaraju S, Graham K, Bathe OF, Steed H, Greiner R, et al.Effects of sample size on differential gene expression, rank order and prediction accuracy of a gene signature. PloS ONE. 2013; 8(6):65380.",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1261/rna.053959.115",
+      "author": "NJ Schurch",
+      "doi-asserted-by": "publisher",
+      "first-page": "839",
+      "issue": "6",
+      "journal-title": "RNA",
+      "key": "226_CR3",
+      "unstructured": "Schurch NJ, Schofield P, Gierliński M, Cole C, Sherstnev A, Singh V, Wrobel N, Gharbi K, Simpson GG, Owen-Hughes T, et al.How many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use?RNA. 2016; 22(6):839–51.",
+      "volume": "22",
+      "year": "2016"
+    },
+    {
+      "author": "F Maleki",
+      "key": "226_CR4",
+      "unstructured": "Maleki F, Ovens K, McQuillan I, Kusalik AJ. Sample size and reproducibility of gene set analysis. In: 2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). Madrid: IEEE: 2018. p. 122–9.",
+      "volume-title": "2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1471-2105-6-144",
+      "author": "S-Y Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "144",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics",
+      "key": "226_CR5",
+      "unstructured": "Kim S-Y, Volsky DJ. PAGE: parametric analysis of gene set enrichment. BMC Bioinformatics. 2005; 6(1):144.",
+      "volume": "6",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1186/1471-2105-10-161",
+      "author": "W Luo",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics",
+      "key": "226_CR6",
+      "unstructured": "Luo W, Friedman MS, Shedden K, Hankenson KD, Woolf PJ. GAGE: generally applicable gene set enrichment for pathway analysis. BMC Bioinformatics. 2009; 10(1):161.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/gks461",
+      "author": "D Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "133",
+      "issue": "17",
+      "journal-title": "Nucleic Acids Res",
+      "key": "226_CR7",
+      "unstructured": "Wu D, Smyth GK. Camera: a competitive gene set test accounting for inter-gene correlation. Nucleic Acids Res. 2012; 40(17):133.",
+      "volume": "40",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq401",
+      "author": "D Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2176",
+      "issue": "17",
+      "journal-title": "Bioinformatics",
+      "key": "226_CR8",
+      "unstructured": "Wu D, Lim E, Vaillant F, Asselin-Labat M-L, Visvader JE, Smyth GK. ROAST: rotation gene set tests for complex microarray experiments. Bioinformatics. 2010; 26(17):2176–82.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gkv007",
+      "author": "ME Ritchie",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "issue": "7",
+      "journal-title": "Nucleic Acids Res",
+      "key": "226_CR9",
+      "unstructured": "Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, Smyth GK. limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Res. 2015; 43(7):47.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1073/pnas.0506580102",
+      "author": "A Subramanian",
+      "doi-asserted-by": "publisher",
+      "first-page": "15545",
+      "issue": "43",
+      "journal-title": "PNAS",
+      "key": "226_CR10",
+      "unstructured": "Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, Paulovich A, Pomeroy SL, Golub TR, Lander ES, et al.Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. PNAS. 2005; 102(43):15545–50.",
+      "volume": "102",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/nature08460",
+      "author": "DA Barbie",
+      "doi-asserted-by": "publisher",
+      "first-page": "108",
+      "issue": "7269",
+      "journal-title": "Nature",
+      "key": "226_CR11",
+      "unstructured": "Barbie DA, Tamayo P, Boehm JS, Kim SY, Moody SE, Dunn IF, Schinzel AC, Sandy P, Meylan E, Scholl C, et al.Systematic RNA interference reveals that oncogenic KRAS-driven cancers require TBK1. Nature. 2009; 462(7269):108.",
+      "volume": "462",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/1471-2105-14-7",
+      "author": "S Hänzelmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics",
+      "key": "226_CR12",
+      "unstructured": "Hänzelmann S, Castelo R, Guinney J. GSVA: gene set variation analysis for microarray and RNA-seq data. BMC Bioinformatics. 2013; 14(1):7.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1471-2105-6-225",
+      "author": "J Tomfohr",
+      "doi-asserted-by": "publisher",
+      "first-page": "225",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics",
+      "key": "226_CR13",
+      "unstructured": "Tomfohr J, Lu J, Kepler TB. Pathway level analysis of gene expression using singular value decomposition. BMC Bioinformatics. 2005; 6(1):225.",
+      "volume": "6",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btg382",
+      "author": "JJ Goeman",
+      "doi-asserted-by": "publisher",
+      "first-page": "93",
+      "issue": "1",
+      "journal-title": "Bioinformatics",
+      "key": "226_CR14",
+      "unstructured": "Goeman JJ, Van De Geer SA, De Kort F, Van Houwelingen HC. A global test for groups of genes: testing association with a clinical outcome. Bioinformatics. 2004; 20(1):93–9.",
+      "volume": "20",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-136",
+      "author": "AL Tarca",
+      "doi-asserted-by": "publisher",
+      "first-page": "136",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics",
+      "key": "226_CR15",
+      "unstructured": "Tarca AL, Draghici S, Bhatti G, Romero R. Down-weighting overlapping genes improves gene set analysis. BMC Bioinformatics. 2012; 13(1):136.",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1201/b11566",
+      "author": "S Drăghici",
+      "doi-asserted-by": "crossref",
+      "key": "226_CR16",
+      "unstructured": "Drăghici S. Statistics and Data Analysis for Microarrays Using R and Bioconductor. Boca Raton: CRC Press; 2016.",
+      "volume-title": "Statistics and Data Analysis for Microarrays Using R and Bioconductor",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0079217",
+      "author": "AL Tarca",
+      "doi-asserted-by": "publisher",
+      "first-page": "79217",
+      "issue": "11",
+      "journal-title": "PloS ONE",
+      "key": "226_CR17",
+      "unstructured": "Tarca AL, Bhatti G, Romero R. A comparison of gene set analysis methods in terms of sensitivity, prioritization and specificity. PloS ONE. 2013; 8(11):79217.",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/30.1.207",
+      "author": "R Edgar",
+      "doi-asserted-by": "publisher",
+      "first-page": "207",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "226_CR18",
+      "unstructured": "Edgar R, Domrachev M, Lash AE. Gene expression omnibus: NCBI gene expression and hybridization array data repository. Nucleic Acids Res. 2002; 30(1):207–10.",
+      "volume": "30",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.crvi.2003.09.026",
+      "author": "P Rocca-Serra",
+      "doi-asserted-by": "publisher",
+      "first-page": "1075",
+      "issue": "10",
+      "journal-title": "C R Biologies",
+      "key": "226_CR19",
+      "unstructured": "Rocca-Serra P, Brazma A, Parkinson H, Sarkans U, Shojatalab M, Contrino S, Vilo J, Abeygunawardena N, Mukherjee G, Holloway E, et al.Arrayexpress: a public database of gene expression data at EBI. C R Biologies. 2003; 326(10):1075–8.",
+      "volume": "326",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-14-0210",
+      "author": "CA Von Roemeling",
+      "doi-asserted-by": "publisher",
+      "first-page": "4796",
+      "issue": "17",
+      "journal-title": "Cancer Res",
+      "key": "226_CR20",
+      "unstructured": "Von Roemeling CA, Radisky DC, Marlow LA, Cooper SJ, Grebe SK, Anastasiadis PZ, Tun HW, Copland JA. Neuronal pentraxin 2 supports clear cell renal cell carcinoma by activating the ampa-selective glutamate receptor-4. Cancer Res. 2014; 74(17):4796–810.",
+      "volume": "74",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1902/jop.2008.080139",
+      "author": "RT Demmer",
+      "doi-asserted-by": "publisher",
+      "first-page": "2112",
+      "issue": "11",
+      "journal-title": "J Periodontol",
+      "key": "226_CR21",
+      "unstructured": "Demmer RT, Behle JH, Wolf DL, Handfield M, Kebschull M, Celenti R, Pavlidis P, Papapanou PN. Transcriptomes in healthy and diseased gingival tissues. J Periodontol. 2008; 79(11):2112–24.",
+      "volume": "79",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0018266",
+      "author": "WR Swindell",
+      "doi-asserted-by": "publisher",
+      "first-page": "18266",
+      "issue": "4",
+      "journal-title": "PloS ONE",
+      "key": "226_CR22",
+      "unstructured": "Swindell WR, Johnston A, Carbajal S, Han G, Wohn C, Lu J, Xing X, Nair RP, Voorhees JJ, Elder JT, et al.Genome-wide expression profiling of five mouse models identifies similarities and differences with human psoriasis. PloS ONE. 2011; 6(4):18266.",
+      "volume": "6",
+      "year": "2011"
+    },
+    {
+      "author": "Y Benjamini",
+      "first-page": "289",
+      "issue": "1",
+      "journal-title": "J R Stat Soc Ser B (Stat Methodol)",
+      "key": "226_CR23",
+      "unstructured": "Benjamini Y, Hochberg Y. Controlling the false discovery rate: a practical and powerful approach to multiple testing. J R Stat Soc Ser B (Stat Methodol). 1995; 57(1):289–300.",
+      "volume": "57",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1002/0470099186",
+      "author": "GJ Bakus",
+      "doi-asserted-by": "publisher",
+      "key": "226_CR24",
+      "unstructured": "Bakus GJ. Quantitative Analysis of Marine Biological Communities: Field Biology and Environment. Hoboken: Wiley; 2007.",
+      "volume-title": "Quantitative Analysis of Marine Biological Communities: Field Biology and Environment",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1201/b16505",
+      "author": "N Loehr",
+      "doi-asserted-by": "publisher",
+      "key": "226_CR25",
+      "unstructured": "Loehr N. Advanced Linear Algebra, 1st edn.Boca Raton: Chapman and Hall/CRC; 2014, p. 360.",
+      "volume-title": "Advanced Linear Algebra, 1st edn.",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1214/07-AOAS101",
+      "author": "B Efron",
+      "doi-asserted-by": "publisher",
+      "first-page": "107",
+      "issue": "1",
+      "journal-title": "Ann Appl Stat",
+      "key": "226_CR26",
+      "unstructured": "Efron B, Tibshirani R. On testing the significance of sets of genes. Ann Appl Stat. 2007; 1(1):107–29.",
+      "volume": "1",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/bib/bbn001",
+      "author": "D Nam",
+      "doi-asserted-by": "publisher",
+      "first-page": "189",
+      "issue": "3",
+      "journal-title": "Brief Bioinforma",
+      "key": "226_CR27",
+      "unstructured": "Nam D, Kim S-Y. Gene-set approach for expression pattern analysis. Brief Bioinforma. 2008; 9(3):189–97.",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/1471-2105-10-47",
+      "author": "M Ackermann",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics",
+      "key": "226_CR28",
+      "unstructured": "Ackermann M, Strimmer K. A general modular framework for gene set enrichment analysis. BMC Bioinformatics. 2009; 10(1):47.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1177/0962280212460441",
+      "author": "P Tamayo",
+      "doi-asserted-by": "publisher",
+      "first-page": "472",
+      "issue": "1",
+      "journal-title": "Stat Methods Med Res",
+      "key": "226_CR29",
+      "unstructured": "Tamayo P, Steinhardt G, Liberzon A, Mesirov JP. The limitations of simple gene set enrichment analysis assuming gene independence. Stat Methods Med Res. 2016; 25(1):472–87.",
+      "volume": "25",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.5220/0007376901820193",
+      "doi-asserted-by": "crossref",
+      "key": "226_CR30",
+      "unstructured": "Maleki F, Kusalik AJ. Gene Set Overlap: An Impediment to Achieving High Specificity in Over-representation Analysis. In: Proceedings of the 12th International Joint Conference on Biomedical Engineering Systems and Technologies - Volume 3: BIOINFORMATICS. Prague: SciTePress: 2019. p. 182–93. \n                    https://doi.org/10.5220/0007376901820193\n                    \n                  ."
+    }
+  ],
+  "reference-count": 30,
+  "references-count": 30,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-019-0226-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Size matters: how sample size affects the reproducibility and specificity of gene set analysis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "13"
+}

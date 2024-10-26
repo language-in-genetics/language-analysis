@@ -1,0 +1,839 @@
+{
+  "DOI": "10.1038/s41437-018-0148-0",
+  "ISSN": [
+    "0018-067X",
+    "1365-2540"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41437-018-0148-0",
+  "abstract": "\u003cjats:sec\u003e\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn the last years, a wide range of methods allowing to reconstruct past population size changes from genome-wide data have been developed. At the same time, there has been an increasing recognition that population structure can generate genetic data similar to those produced under models of population size change. Recently, Mazet et al. (Heredity 116:362–371, 2016) showed that, for any model of population structure, it is always possible to find a panmictic model with a particular function of population size changes, having exactly the same distribution of\u003cjats:italic\u003eT\u003c/jats:italic\u003e\u003cjats:sub\u003e2\u003c/jats:sub\u003e(the coalescence time for a sample of size two) as that of the structured model. They called this function IICR (Inverse Instantaneous Coalescence Rate) and showed that it does not necessarily correspond to population size changes under non-panmictic models. Besides, most of the methods used to analyse data under models of population structure tend to arbitrarily fix that structure and to minimise or neglect population size changes. Here, we extend the seminal work of Herbots (PhD thesis, University of London, 1994) on the structured coalescent and propose a new framework, the Non-Stationary Structured Coalescent (NSSC) that incorporates demographic events (changes in gene flow and/or deme sizes) to models of nearly any complexity. We show how to compute the IICR under a wide family of stationary and non-stationary models. As an example we address the question of human and Neanderthal evolution and discuss how the NSSC framework allows to interpret genomic data under this new perspective.\u003c/jats:p\u003e\u003c/jats:sec\u003e",
+  "alternative-id": [
+    "148"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "15 July 2018"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "14 September 2018"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "15 September 2018"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "7 October 2018"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Date",
+      "name": "change_date",
+      "order": 5,
+      "value": "17 February 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Type",
+      "name": "change_type",
+      "order": 6,
+      "value": "Correction"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 7,
+      "value": "A Correction to this paper has been published:"
+    },
+    {
+      "URL": "https://doi.org/10.1038/s41437-021-00414-z",
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 8,
+      "value": "https://doi.org/10.1038/s41437-021-00414-z"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Rodríguez",
+      "given": "Willy",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Mazet",
+      "given": "Olivier",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Grusea",
+      "given": "Simona",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Arredondo",
+      "given": "Armando",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Corujo",
+      "given": "Josué M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boitard",
+      "given": "Simon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chikhi",
+      "given": "Lounès",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Heredity"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2018-10-07T08:11:06Z",
+    "timestamp": 1538899866000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        20
+      ]
+    ],
+    "date-time": "2023-05-20T21:17:06Z",
+    "timestamp": 1684617426000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        16
+      ]
+    ],
+    "date-time": "2024-03-16T07:46:41Z",
+    "timestamp": 1710575201802
+  },
+  "is-referenced-by-count": 27,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0018-067X"
+    },
+    {
+      "type": "electronic",
+      "value": "1365-2540"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            7
+          ]
+        ],
+        "date-time": "2018-10-07T00:00:00Z",
+        "timestamp": 1538870400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            7
+          ]
+        ],
+        "date-time": "2018-10-07T00:00:00Z",
+        "timestamp": 1538870400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://www.nature.com/articles/s41437-018-0148-0",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-018-0148-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-018-0148-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "663-678",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1098/rstb.1995.0090",
+      "author": "N Barton",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "journal-title": "Philos Trans R Soc Lond B: Biol Sci",
+      "key": "148_CR1",
+      "unstructured": "Barton N, Wilson I (1995) Genealogies and geography. Philos Trans R Soc Lond B: Biol Sci 349:49–59",
+      "volume": "349",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1093/genetics/153.4.2013",
+      "author": "MA Beaumont",
+      "doi-asserted-by": "crossref",
+      "first-page": "2013",
+      "journal-title": "Genetics",
+      "key": "148_CR2",
+      "unstructured": "Beaumont MA (1999) Detecting population expansion and decline using microsatellites. Genetics 153:2013–2029",
+      "volume": "153",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1093/genetics/162.4.2025",
+      "author": "MA Beaumont",
+      "doi-asserted-by": "crossref",
+      "first-page": "2025",
+      "journal-title": "Genetics",
+      "key": "148_CR3",
+      "unstructured": "Beaumont MA, Zhang W, Balding DJ (2002) Approximate Bayesian computation in population genetics. Genetics 162:2025–2035",
+      "volume": "162",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005877",
+      "author": "S Boitard",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Genet",
+      "key": "148_CR4",
+      "unstructured": "Boitard S, Rodríguez W, Jay F, Mona S, Austerlitz F (2016) Inferring population size history from large samples of genome-wide molecular data-an approximate bayesian computation approach PLoS Genet 12:e1005877",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1534/genetics.115.179861",
+      "author": "L Bunnefeld",
+      "doi-asserted-by": "publisher",
+      "first-page": "1157",
+      "journal-title": "Genetics",
+      "key": "148_CR5",
+      "unstructured": "Bunnefeld L, Frantz LA, Lohse K (2015) Inferring bottlenecks from genome-wide samples of short sequence blocks. Genetics 201:1157–1169",
+      "volume": "201",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1146/annurev.ecolsys.34.011802.132359",
+      "doi-asserted-by": "crossref",
+      "key": "148_CR6",
+      "unstructured": "Charlesworth, Brian, Deborah Charlesworth, and Nicholas H. Barton (2003) The effects of genetic and geographic structure on neutral variation. Annual Review of Ecology, Evolution, and Systematics 34:1. 99–125."
+    },
+    {
+      "DOI": "10.1016/j.tpb.2010.01.001",
+      "author": "C Chevalet",
+      "doi-asserted-by": "publisher",
+      "first-page": "152",
+      "journal-title": "Theor Popul Biol",
+      "key": "148_CR7",
+      "unstructured": "Chevalet C, Nikolic N (2010) The distribution of coalescence times and distances between microsatellite alleles with changing effective population size. Theor Popul Biol 77:152–163",
+      "volume": "77",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/genetics/158.3.1347",
+      "author": "L Chikhi",
+      "doi-asserted-by": "crossref",
+      "first-page": "1347",
+      "journal-title": "Genetics",
+      "key": "148_CR8",
+      "unstructured": "Chikhi L, Bruford MW, Beaumont MA (2001) Estimation of admixture proportions: a likelihood-based approach using Markov chain Monte Carlo. Genetics 158:1347–1362",
+      "volume": "158",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/s41437-017-0005-6",
+      "author": "L Chikhi",
+      "doi-asserted-by": "publisher",
+      "first-page": "13",
+      "journal-title": "Heredity",
+      "key": "148_CR9",
+      "unstructured": "Chikhi L, Rodríguez W, Grusea S, Santos P, Boitard S, Mazet O (2018) The IICR (inverse instantaneous coalescence rate) as a summary of genomic diversity: insights into demographic inference and model choice Heredity 120:13–24",
+      "volume": "120",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1534/genetics.110.118661",
+      "author": "L Chikhi",
+      "doi-asserted-by": "publisher",
+      "first-page": "983",
+      "journal-title": "Genetics",
+      "key": "148_CR10",
+      "unstructured": "Chikhi L, Sousa VC, Luisi P, Goossens B, Beaumont MA (2010) The confounding effects of population structure, genetic diversity and the sampling scheme on the detection and quantification of population size changes. Genetics 186:983–995",
+      "volume": "186",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1534/genetics.116.188060",
+      "author": "RJ Costa",
+      "doi-asserted-by": "publisher",
+      "first-page": "1597",
+      "journal-title": "Genetics",
+      "key": "148_CR11",
+      "unstructured": "Costa RJ, Wilkinson-Herbots H (2017) Inference of gene flow in the process of speciation: An efficient maximum-likelihood method for the isolation-with-initial-migration model. Genetics 205:1597–1618. http://www.genetics.org/content/205/4/1597",
+      "volume": "205",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1073/pnas.1200567109",
+      "author": "A Eriksson",
+      "doi-asserted-by": "publisher",
+      "first-page": "13956",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "148_CR12",
+      "unstructured": "Eriksson A, Manica A (2012) Effect of ancient population structure on the degree of polymorphism shared between modern human populations and ancient hominins. Proc Natl Acad Sci USA 109:13956–13960",
+      "volume": "109",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1146/annurev.genom.3.022502.103200",
+      "author": "DB Goldstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "129",
+      "journal-title": "Annu Rev Genom Hum Genet",
+      "key": "148_CR13",
+      "unstructured": "Goldstein DB, Chikhi L (2002) Human migrations and population structure: what we know and why it matters. Annu Rev Genom Hum Genet 3:129–152",
+      "volume": "3",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1038/ng.937",
+      "author": "I Gronau",
+      "doi-asserted-by": "publisher",
+      "first-page": "1031",
+      "journal-title": "Nat Genet",
+      "key": "148_CR14",
+      "unstructured": "Gronau I, Hubisz MJ, Gulko B, Danko CG, Siepel A (2011) Bayesian inference of ancient human demography from individual genome sequences. Nat Genet 43:1031–1034",
+      "volume": "43",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000695",
+      "author": "RN Gutenkunst",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Genet",
+      "key": "148_CR15",
+      "unstructured": "Gutenkunst RN, Hernandez RD, Williamson SH, Bustamante CD (2009) Inferring the joint demographic history of multiple populations from multidimensional SNP frequency data. PLoS Genet 5:e1000695",
+      "volume": "5",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1146/annurev.genom.1.1.361",
+      "author": "H Harpending",
+      "doi-asserted-by": "publisher",
+      "first-page": "361",
+      "journal-title": "Annu Rev Genom Hum Genet",
+      "key": "148_CR16",
+      "unstructured": "Harpending H, Rogers A (2000) Genetic perspectives on human origins and differentiation. Annu Rev Genom Hum Genet 1:361–385",
+      "volume": "1",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0062992",
+      "author": "R Heller",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "148_CR17",
+      "unstructured": "Heller R, Chikhi L, Siegismund HR (2013) The confounding effect of population structure on Bayesian skyline plot inferences of demographic history. PLoS ONE 8:e62992",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "key": "148_CR18",
+      "unstructured": "Herbots HMJD (1994) Stochastic models in population genetics: genealogy and genetic differentiation in structured populations. PhD thesis University of London"
+    },
+    {
+      "DOI": "10.1038/nrg1112",
+      "author": "J Hey",
+      "doi-asserted-by": "publisher",
+      "first-page": "535",
+      "journal-title": "Nat Rev Genet",
+      "key": "148_CR19",
+      "unstructured": "Hey J, Machado CA (2003) The study of structured populations–new hope for a difficult and divided science. Nat Rev Genet 4:535",
+      "volume": "4",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1534/genetics.103.024182",
+      "author": "J Hey",
+      "doi-asserted-by": "publisher",
+      "first-page": "747",
+      "journal-title": "Genetics",
+      "key": "148_CR20",
+      "unstructured": "Hey J, Nielsen R (2004) Multilocus methods for estimating population sizes, migration rates and divergence time, with applications to the divergence of Drosophila pseudoobscura and D. persimilis. Genetics 167:747–760",
+      "volume": "167",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1534/genetics.110.124164",
+      "author": "A Hobolth",
+      "doi-asserted-by": "publisher",
+      "first-page": "1241",
+      "journal-title": "Genetics",
+      "key": "148_CR21",
+      "unstructured": "Hobolth A, Andersen LN, Mailund T (2011) On computing the coalescence time density in an isolation-with-migration model with few samples. Genetics 187:1241–1243. http://www.genetics.org/content/187/4/1241.short",
+      "volume": "187",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/18.2.337",
+      "author": "RR Hudson",
+      "doi-asserted-by": "publisher",
+      "first-page": "337",
+      "journal-title": "Bioinformatics",
+      "key": "148_CR22",
+      "unstructured": "Hudson RR (2002) Generating samples under a Wright–Fisher neutral model of genetic variation. Bioinformatics 18:337–338. http://bioinformatics.oxfordjournals.org/content/18/2/337. abstract",
+      "volume": "18",
+      "year": "2002"
+    },
+    {
+      "key": "148_CR23",
+      "unstructured": "Kimura, Motoo (1953) Stepping Stone'model of population. Annual Report of the National Institute of Genetics Japan 3: 62–63."
+    },
+    {
+      "DOI": "10.1016/0304-4149(82)90011-4",
+      "author": "J Kingman",
+      "doi-asserted-by": "publisher",
+      "first-page": "235",
+      "journal-title": "Stoch Process Appl",
+      "key": "148_CR24",
+      "unstructured": "Kingman J (1982) The coalescent Stoch Process Appl 13:235–248. http://www.sciencedirect.com/science/article/pii/0304414982900114",
+      "volume": "13",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1017/jpr.2016.16",
+      "author": "R Kozakai",
+      "doi-asserted-by": "publisher",
+      "first-page": "502",
+      "journal-title": "J Appl Probab",
+      "key": "148_CR25",
+      "unstructured": "Kozakai R, Shimizu A, Notohara M (2016) Convergence to the structured coalescent process. J Appl Probab 53:502–517",
+      "volume": "53",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature16544",
+      "author": "M Kuhlwilm",
+      "doi-asserted-by": "publisher",
+      "first-page": "429",
+      "journal-title": "Nature",
+      "key": "148_CR26",
+      "unstructured": "Kuhlwilm M, Gronau I, Hubisz MJ, de Filippo C, Prado-Martinez J, Kircher M et al. (2016) Ancient gene flow from early modern humans into eastern Neanderthals. Nature 530:429–433",
+      "volume": "530",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature10231",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "493",
+      "journal-title": "Nature",
+      "key": "148_CR27",
+      "unstructured": "Li H, Durbin R (2011) Inference of human population history from individual whole-genome sequences. Nature 475:493–496",
+      "volume": "475",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ng.3254",
+      "doi-asserted-by": "crossref",
+      "key": "148_CR28",
+      "unstructured": "Liu, Xiaoming and Yun-Xin Fu (2015) Exploring population size changes using SNP frequency spectra. Nature genetics 47:555"
+    },
+    {
+      "key": "148_CR29",
+      "unstructured": "Malécot G, Blaringhem LF (1948) Les mathématiques de l’hérédité. Masson et Cie, Paris."
+    },
+    {
+      "DOI": "10.1073/pnas.0306899100",
+      "author": "P Marjoram",
+      "doi-asserted-by": "publisher",
+      "first-page": "15324",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "148_CR30",
+      "unstructured": "Marjoram P, Molitor J, Plagnol V, Tavaré S (2003) Markov chain monte carlo without likelihoods. Proc Natl Acad Sci USA 100:15324–15328",
+      "volume": "100",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.tpb.2015.06.003",
+      "author": "O Mazet",
+      "doi-asserted-by": "publisher",
+      "first-page": "46",
+      "journal-title": "Theor Popul Biol",
+      "key": "148_CR31",
+      "unstructured": "Mazet O, Rodríguez W, Chikhi L (2015) Demographic inference using genetic data from a single individual: Separating population size variation from population structure. Theor Popul Biol 104:46–58. http://www.sciencedirect.com/science/article/pii/S0040580915000581",
+      "volume": "104",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/hdy.2015.104",
+      "author": "O Mazet",
+      "doi-asserted-by": "publisher",
+      "first-page": "362",
+      "journal-title": "Heredity",
+      "key": "148_CR32",
+      "unstructured": "Mazet O, Rodríguez W, Grusea S, Boitard S, Chikhi L (2016) On the importance of being structured: instantaneous coalescence rates and human evolution—lessons for ancestral population size inference Heredity 116:362–371",
+      "volume": "116",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1137/S00361445024180",
+      "author": "C Moler",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "journal-title": "SIAM Rev",
+      "key": "148_CR33",
+      "unstructured": "Moler C, Loan CV (2003) Nineteen dubious ways to compute the exponential of a matrix, twenty-five years later. SIAM Rev 45:3–49. https://doi.org/10.1137/S00361445024180",
+      "volume": "45",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/genetics/158.2.885",
+      "author": "R Nielsen",
+      "doi-asserted-by": "crossref",
+      "first-page": "885",
+      "journal-title": "Genetics",
+      "key": "148_CR34",
+      "unstructured": "Nielsen R, Wakeley J (2001) Distinguishing migration from isolation: a Markov chain Monte Carlo approach. Genetics 158:885–896",
+      "volume": "158",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1111/eva.12170",
+      "author": "N Nikolic",
+      "doi-asserted-by": "publisher",
+      "first-page": "663",
+      "journal-title": "Evol Appl",
+      "key": "148_CR35",
+      "unstructured": "Nikolic N, Chevalet C (2014) Detecting past changes of effective population size. Evol Appl 7:663–681",
+      "volume": "7",
+      "year": "2014"
+    },
+    {
+      "key": "148_CR36",
+      "unstructured": "Nordborg M (2001) Coalescent theory, pp. 179–212 in Handbook of Statistical Genetics, edited by D. J. Balding, M. Bishop and C. Cannings. Wiley, Chichester, UK"
+    },
+    {
+      "key": "148_CR37",
+      "unstructured": "Norris, J.R (1998) Markov chains. Cambridge Series in Statistical and Probabilistic Mathematics, vol. 2. Cambridge University Press, Cambridge. Reprint of 1997 original"
+    },
+    {
+      "DOI": "10.1007/BF00173909",
+      "author": "M Notohara",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "journal-title": "J Math Biol",
+      "key": "148_CR38",
+      "unstructured": "Notohara M (1990) The coalescent and the genealogical process in geographically structured population. J Math Biol 29:59–75",
+      "volume": "29",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1111/mec.12321",
+      "author": "I Paz-Vinas",
+      "doi-asserted-by": "publisher",
+      "first-page": "3279",
+      "journal-title": "Mol Ecol",
+      "key": "148_CR39",
+      "unstructured": "Paz-Vinas I, Quéméré E, Chikhi L, Loot G, Blanchet S (2013) The demographic history of populations experiencing asymmetric gene flow: combining simulated and empirical data. Mol Ecol 22:3279–3291",
+      "volume": "22",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nature12886",
+      "author": "K Prufer",
+      "doi-asserted-by": "publisher",
+      "first-page": "43",
+      "journal-title": "Nature",
+      "key": "148_CR40",
+      "unstructured": "Prufer K, Racimo F, Patterson N, Jay F, Sankararaman S, Sawyer S et al. (2014) The complete genome sequence of a neanderthal from the altai mountains. Nature 505:43–49. https://doi.org/10.1038/nature12886",
+      "volume": "505",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1073/pnas.1706426114",
+      "author": "AR Rogers",
+      "doi-asserted-by": "publisher",
+      "first-page": "9859",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "148_CR41",
+      "unstructured": "Rogers AR, Bohlender RJ, Huff CD (2017) Early history of neanderthals and denisovans. Proc Natl Acad Sci USA 114:9859–9863",
+      "volume": "114",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.tree.2018.05.005",
+      "doi-asserted-by": "publisher",
+      "key": "148_CR42",
+      "unstructured": "Scerri EML, Thomas MG, Manica A, Gunz P, Stock JT, Stringer C et al. (2018) Did our species evolve in subdivided populations across africa, and why does it matter? Trends Ecol Evol. https://doi.org/10.1016/j.tree.2018.05.005"
+    },
+    {
+      "author": "S Schiffels",
+      "first-page": "919",
+      "journal-title": "Nat Genet",
+      "key": "148_CR43",
+      "unstructured": "Schiffels S, Durbin R (2013) Inferring human population size and separation history from multiple genome sequences. Nat Genet 8:919–925",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1534/genetics.108.094904",
+      "author": "T Städler",
+      "doi-asserted-by": "publisher",
+      "first-page": "205",
+      "journal-title": "Genetics",
+      "key": "148_CR44",
+      "unstructured": "Städler T, Haubold B, Merino C, Stephan W, Pfaffelhuber P (2009) The impact of sampling schemes on the site frequency spectrum in nonequilibrium subdivided populations. Genetics 182:205–216",
+      "volume": "182",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/j.0014-3820.2002.tb00857.x",
+      "author": "JF Storz",
+      "doi-asserted-by": "publisher",
+      "first-page": "154",
+      "journal-title": "Evolution",
+      "key": "148_CR45",
+      "unstructured": "Storz JF, Beaumont MA (2002) Testing for genetic evidence of population expansion and contraction: an empirical analysis of microsatellite DNA variation using a hierarchical Bayesian model. Evolution 56:154–166",
+      "volume": "56",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1017/S0016672300027683",
+      "author": "N Takahata",
+      "doi-asserted-by": "publisher",
+      "first-page": "213",
+      "journal-title": "Genet Res",
+      "key": "148_CR46",
+      "unstructured": "Takahata N (1988) The coalescent in two partially isolated diffusion populations. Genet Res 52:213–222",
+      "volume": "52",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1093/genetics/153.4.1863",
+      "author": "J Wakeley",
+      "doi-asserted-by": "crossref",
+      "first-page": "1863",
+      "journal-title": "Genetics",
+      "key": "148_CR47",
+      "unstructured": "Wakeley J (1999) Nonequilibrium migration in human history. Genetics 153:1863–1871",
+      "volume": "153",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1006/tpbi.2000.1495",
+      "author": "J Wakeley",
+      "doi-asserted-by": "publisher",
+      "first-page": "133",
+      "journal-title": "Theor Popul Biol",
+      "key": "148_CR48",
+      "unstructured": "Wakeley J (2001) The coalescent in an island model of population subdivision with variation among demes. Theor Popul Biol 59:133–144",
+      "volume": "59",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1007/s002850050140",
+      "author": "HM Wilkinson-Herbots",
+      "doi-asserted-by": "publisher",
+      "first-page": "535",
+      "journal-title": "J Math Biol",
+      "key": "148_CR49",
+      "unstructured": "Wilkinson-Herbots HM (1998) Genealogy and subpopulation differentiation under various models of population structure. J Math Biol 37:535–585",
+      "volume": "37",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1093/genetics/16.2.97",
+      "author": "S Wright",
+      "doi-asserted-by": "crossref",
+      "first-page": "97",
+      "journal-title": "Genetics",
+      "key": "148_CR50",
+      "unstructured": "Wright S (1931) Evolution in Mendelian populations. Genetics 16:97",
+      "volume": "16",
+      "year": "1931"
+    }
+  ],
+  "reference-count": 50,
+  "references-count": 50,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/341750",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41437-018-0148-0"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Heredity"
+  ],
+  "source": "Crossref",
+  "title": [
+    "The IICR and the non-stationary structured coalescent: towards demographic inference with arbitrary changes in population structure"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "121"
+}

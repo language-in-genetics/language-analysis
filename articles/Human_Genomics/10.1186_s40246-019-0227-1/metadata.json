@@ -1,0 +1,527 @@
+{
+  "DOI": "10.1186/s40246-019-0227-1",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-019-0227-1",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eDe novo genome assembly is a technique that builds the genome of a specimen using overlaps of genomic fragments without additional work with reference sequence. Sequence fragments (called reads) are assembled as contigs and scaffolds by the overlaps. The quality of the de novo assembly depends on the length and continuity of the assembly. To enable faster and more accurate assembly of species, existing sequencing techniques have been proposed, for example, high-throughput next-generation sequencing and long-reads-producing third-generation sequencing. However, these techniques require a large amounts of computer memory when very huge-size overlap graphs are resolved. Also, it is challenging for parallel computation.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eTo address the limitations, we propose an innovative algorithmic approach, called \u003cjats:bold\u003eS\u003c/jats:bold\u003ecalable \u003cjats:bold\u003eO\u003c/jats:bold\u003everlap-graph \u003cjats:bold\u003eR\u003c/jats:bold\u003eeduction \u003cjats:bold\u003eA\u003c/jats:bold\u003elgorithms (SORA). SORA is an algorithm package that performs string graph reduction algorithms by Apache Spark. The SORA’s implementations are designed to execute de novo genome assembly on either a single machine or a distributed computing platform. SORA efficiently compacts the number of edges on enormous graphing paths by adapting scalable features of graph processing libraries provided by Apache Spark, GraphX and GraphFrames.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe shared the algorithms and the experimental results at our project website, \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/BioHPC/SORA\"\u003ehttps://github.com/BioHPC/SORA\u003c/jats:ext-link\u003e. We evaluated SORA with the human genome samples. First, it processed a nearly one billion edge graph on a distributed cloud cluster. Second, it processed mid-to-small size graphs on a single workstation within a short time frame. Overall, SORA achieved the linear-scaling simulations for the increased computing instances.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "227"
+  ],
+  "article-number": "48",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 1,
+      "value": "22 October 2019"
+    },
+    {
+      "group": {
+        "label": "Publisher’s Note",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations."
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Paul",
+      "given": "Alexander J.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Lawrence",
+      "given": "Dylan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Song",
+      "given": "Myoungkyu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lim",
+      "given": "Seung-Hwan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pan",
+      "given": "Chongle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ahn",
+      "given": "Tae-Hyuk",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ],
+    "date-time": "2019-10-22T01:42:03Z",
+    "timestamp": 1571708523000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2020,
+        10,
+        20
+      ]
+    ],
+    "date-time": "2020-10-20T23:34:38Z",
+    "timestamp": 1603236878000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        11
+      ]
+    ],
+    "date-time": "2024-01-11T17:59:00Z",
+    "timestamp": 1704995940134
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "S1",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "S1",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2019-10-01T00:00:00Z",
+        "timestamp": 1569888000000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 21,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            22
+          ]
+        ],
+        "date-time": "2019-10-22T00:00:00Z",
+        "timestamp": 1571702400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-019-0227-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-019-0227-1/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-019-0227-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.nbt.2008.12.009",
+      "author": "WJ Ansorge",
+      "doi-asserted-by": "publisher",
+      "first-page": "195",
+      "issue": "4",
+      "journal-title": "New Biotechnol",
+      "key": "227_CR1",
+      "unstructured": "Ansorge WJ. Next-generation dna sequencing techniques. New Biotechnol. 2009; 25(4):195–203.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1002/elps.200800456",
+      "author": "DG Hert",
+      "doi-asserted-by": "publisher",
+      "first-page": "4618",
+      "issue": "23",
+      "journal-title": "Electrophoresis",
+      "key": "227_CR2",
+      "unstructured": "Hert DG, Fredlake CP, Barron AE. Advantages and limitations of next-generation sequencing technologies: a comparison of electrophoresis and non-electrophoresis methods. Electrophoresis. 2008; 29(23):4618–26.",
+      "volume": "29",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nrg2626",
+      "author": "Michael L. Metzker",
+      "doi-asserted-by": "publisher",
+      "first-page": "31",
+      "issue": "1",
+      "journal-title": "Nature Reviews Genetics",
+      "key": "227_CR3",
+      "unstructured": "Metzker ML. Sequencing technologies - the next generation. Nat Rev Genet; 11(1):31–46.",
+      "volume": "11",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/1471-2164-10-347",
+      "author": "PK Wall",
+      "doi-asserted-by": "publisher",
+      "first-page": "347",
+      "issue": "1",
+      "journal-title": "BMC Genom",
+      "key": "227_CR4",
+      "unstructured": "Wall PK, Leebens-Mack J, Chanderbali AS, Barakat A, Wolcott E, Liang H, Landherr L, Tomsho LP, Hu Y, Carlson JE, et al.Comparison of next generation sequencing technologies for transcriptome characterization. BMC Genom. 2009; 10(1):347.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nmeth.1376",
+      "author": "Paul Flicek",
+      "doi-asserted-by": "publisher",
+      "first-page": "S6",
+      "issue": "S11",
+      "journal-title": "Nature Methods",
+      "key": "227_CR5",
+      "unstructured": "Flicek P, Birney E. Sense from sequence reads: methods for alignment and assembly. Nat Methods; 6(11 Suppl):6–12.",
+      "volume": "6",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1101/gr.213611.116",
+      "author": "Valerie A. Schneider",
+      "doi-asserted-by": "publisher",
+      "first-page": "849",
+      "issue": "5",
+      "journal-title": "Genome Research",
+      "key": "227_CR6",
+      "unstructured": "Schneider VA, Graves-Lindsay T, Howe K, Bouk N, Chen H-C, Kitts PA, Murphy TD, Pruitt KD, Thibaud-Nissen F, Albracht D, Fulton RS, Kremitzki M, Magrini V, Markovic C, McGrath S, Steinberg KM, Auger K, Chow W, Collins J, Harden G, Hubbard T, Pelan S, Simpson JT, Threadgold G, Torrance J, Wood JM, Clarke L, Koren S, Boitano M, Peluso P, Li H, Chin C-S, Phillippy AM, Durbin R, Wilson RK, Flicek P, Eichler EE, Church DM. Evaluation of grch38 and de novo haploid genome assemblies demonstrates the enduring quality of the reference assembly. 2017; 27(5):849–64. \n                    https://doi.org/10.1101/gr.213611.116\n                    \n                  .",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2010.03.001",
+      "author": "Jason R. Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "315",
+      "issue": "6",
+      "journal-title": "Genomics",
+      "key": "227_CR7",
+      "unstructured": "Miller JR, Koren S, Sutton G. Assembly algorithms for next-generation sequencing data. Genomics; 95(6):315–27.",
+      "volume": "95",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1126/science.287.5461.2196",
+      "author": "E. W. Myers",
+      "doi-asserted-by": "publisher",
+      "first-page": "2196",
+      "issue": "5461",
+      "journal-title": "Science",
+      "key": "227_CR8",
+      "unstructured": "Myers EW, et al.A whole-genome assembly of drosophila. Science; 287(5461):2196–204.",
+      "volume": "287",
+      "year": "2000"
+    },
+    {
+      "key": "227_CR9",
+      "unstructured": "Margulies M, et al.Genome sequencing in microfabricated high-density picolitre reactors. Nature; 437(7057):376–80."
+    },
+    {
+      "DOI": "10.1101/gr.089532.108",
+      "author": "J. T. Simpson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1117",
+      "issue": "6",
+      "journal-title": "Genome Research",
+      "key": "227_CR10",
+      "unstructured": "Simpson JT, Wong K, Jackman SD, Schein JE, Jones SJ, Birol I. Abyss: a parallel assembler for short read sequence data. Genome Res; 19(6):1117–23.",
+      "volume": "19",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1101/gr.074492.107",
+      "author": "D. R. Zerbino",
+      "doi-asserted-by": "publisher",
+      "first-page": "821",
+      "issue": "5",
+      "journal-title": "Genome Research",
+      "key": "227_CR11",
+      "unstructured": "Zerbino DR, Birney E. Velvet: algorithms for de novo short read assembly using de bruijn graphs. Genome Res; 18(5):821–9.",
+      "volume": "18",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1101/gr.097261.109",
+      "author": "R. Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "265",
+      "issue": "2",
+      "journal-title": "Genome Research",
+      "key": "227_CR12",
+      "unstructured": "Li R, Zhu H, Ruan J, Qian W, Fang X, Shi Z, Li Y, Li S, Shan G, Kristiansen K, Li S, Yang H, Wang J, Wang J. De novo assembly of human genomes with massively parallel short read sequencing. Genome Res; 20(2):265–72.",
+      "volume": "20",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/bib/bbp026",
+      "author": "M. Pop",
+      "doi-asserted-by": "publisher",
+      "first-page": "354",
+      "issue": "4",
+      "journal-title": "Briefings in Bioinformatics",
+      "key": "227_CR13",
+      "unstructured": "Pop M. Genome assembly reborn: recent computational challenges. Brief Bioinform; 10(4):354–66.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nbt.3238",
+      "doi-asserted-by": "crossref",
+      "key": "227_CR14",
+      "unstructured": "Berlin K, Koren S, Chin CS, Drake JP, Landolin JM, Phillippy AM. Assembling large genomes with single-molecule sequencing and locality-sensitive hashing. Nat Biotechnol; 33(6):623–30."
+    },
+    {
+      "DOI": "10.1101/gr.215087.116",
+      "doi-asserted-by": "crossref",
+      "key": "227_CR15",
+      "unstructured": "Koren S, Walenz BP, Berlin K, Miller JR, Bergman NH, Phillippy AM. Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation. Genome Res; 27(5):722–36."
+    },
+    {
+      "DOI": "10.1089/cmb.2009.0238",
+      "doi-asserted-by": "crossref",
+      "key": "227_CR16",
+      "unstructured": "Boisvert S, Laviolette F, Corbeil J. Ray: Simultaneous assembly of reads from a mix of high-throughput sequencing technologies. J Comput Biol; 17(11):1519–33."
+    },
+    {
+      "DOI": "10.1109/ICPP.2016.29",
+      "doi-asserted-by": "publisher",
+      "key": "227_CR17",
+      "unstructured": "Meng J, Seo S, Balaji P, Wei Y, Wang B, Feng S. Swap-assembler 2: Optimization of de novo genome assembler at extreme scale, 2016 45th International Conference on Parallel Processing (ICPP), Philadelphia.2016. p. 195–204. \n                    https://doi.org/10.1109/ICPP.2016.29\n                    \n                  ."
+    },
+    {
+      "author": "M Zaharia",
+      "key": "227_CR18",
+      "unstructured": "Zaharia M, Chowdhury M, Franklin MJ, Shenker S, Stoica I. Spark: cluster computing with working sets. In: Proceedings of the 2nd USENIX conference on Hot topics in cloud computing (HotCloud’10). Berkeley: USENIX Association: 2010. p. 10–10. \n                    https://dl.acm.org/citation.cfm?id=1863103.1863113\n                    \n                  .",
+      "volume-title": "Proceedings of the 2nd USENIX conference on Hot topics in cloud computing (HotCloud’10)",
+      "year": "2010"
+    },
+    {
+      "author": "M Zaharia",
+      "key": "227_CR19",
+      "unstructured": "Zaharia M, Chowdhury M, Das T, Dave A, Ma J, McCauley M, Franklin MJ, Shenker S, Stoica I. Resilient distributed datasets: a fault-tolerant abstraction for in-memory cluster computing. In: Proceedings of the 9th USENIX conference on Networked Systems Design and Implementation (NSDI’12). Berkeley: USENIX Association: 2012. p. 2–2. \n                    https://dl.acm.org/citation.cfm?id=2228301\n                    \n                  .",
+      "volume-title": "Proceedings of the 9th USENIX conference on Networked Systems Design and Implementation (NSDI’12)",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1109/BigData.2015.7363853",
+      "doi-asserted-by": "publisher",
+      "key": "227_CR20",
+      "unstructured": "Abu-Doleh A, Catalyurek UV. Spaler: Spark and graphx based de novo genome assembler, 2015 IEEE International Conference on Big Data (Big Data), Santa Clara.2015. p. 1013–8. \n                    https://doi.org/10.1109/BigData.2015.7363853\n                    \n                  ."
+    },
+    {
+      "DOI": "10.1145/3107411.3108222",
+      "author": "AJ Paul",
+      "doi-asserted-by": "publisher",
+      "key": "227_CR21",
+      "unstructured": "Paul AJ, Lawrence D, Ahn T-H. Overlap graph reduction for genome assembly using apache spark. In: Proceedings of the 8th ACM International Conference on Bioinformatics, Computational Biology,and Health Informatics, ACM-BCB ’17. New York: ACM: 2017. p. 613. \n                    https://doi.org/10.1145/3107411.3108222\n                    \n                  . \n                    http://doi.acm.org/10.1145/3107411.3108222\n                    \n                  .",
+      "volume-title": "Proceedings of the 8th ACM International Conference on Bioinformatics, Computational Biology,and Health Informatics, ACM-BCB ’17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1109/BIBM.2018.8621546",
+      "doi-asserted-by": "publisher",
+      "key": "227_CR22",
+      "unstructured": "Paul AJ, Lawrence D, Song M, Lim S, Pan C, Ahn T. Sora: Scalable overlap-graph reduction algorithms for genome assembly using apache spark in the cloud. In: 2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM): 2018. p. 718–23. \n                    https://doi.org/10.1109/BIBM.2018.8621546\n                    \n                  ."
+    },
+    {
+      "key": "227_CR23",
+      "unstructured": "Meng X, Bradley J, Yavuz B, Sparks E, Venkataraman S, Liu D, Freeman J, Tsai D, Amde M, Owen S, et al.Mllib: Machine learning in apache spark. J Mach Learn Res. 2016; 17(1):1235–41."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu395",
+      "author": "Bahlul Haider",
+      "doi-asserted-by": "publisher",
+      "first-page": "2717",
+      "issue": "19",
+      "journal-title": "Bioinformatics",
+      "key": "227_CR24",
+      "unstructured": "Haider B, Ahn T-H, Bushnell B, Chai J, Copeland A, Pan C. Omega: an overlap-graph de novo assembler for metagenomics. Bioinformatics; 30(19):2717–22.",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "author": "EW Myers",
+      "first-page": "ii79",
+      "issue": "2",
+      "journal-title": "Bioinformatics",
+      "key": "227_CR25",
+      "unstructured": "Myers EW. The fragment assembly string graph. Bioinformatics. 2005; 21(2):ii79–85. \n                    http://dx.doi.org/10.1093/bioinformatics/bti1114\n                    \n                  .",
+      "volume": "21",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1111/1462-2920.12086",
+      "author": "Migun Shakya",
+      "doi-asserted-by": "publisher",
+      "first-page": "1882",
+      "issue": "6",
+      "journal-title": "Environmental Microbiology",
+      "key": "227_CR26",
+      "unstructured": "Shakya M, Quince C, Campbell JH, Yang ZK, Schadt CW, Podar M. Comparative metagenomic and rrna microbial diversity characterization using archaeal and bacterial synthetic communities. Environ Microbiol; 15(6):1882–99.",
+      "volume": "15",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1104/pp.114.247668",
+      "author": "Y Peng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1241",
+      "issue": "3",
+      "journal-title": "Plant Physiol",
+      "key": "227_CR27",
+      "unstructured": "Peng Y, Lai Z, Lane T, Nageswara-Rao M, Okada M, Jasieniuk M, O’Geen H, Kim RW, Sammons RD, Rieseberg LH, Stewart CN. De novo genome assembly of the economically important weed horseweed using integrated data from multiple sequencing platforms. Plant Physiol. 2014; 166(3):1241–54. \n                    https://dx.doi.org/10.1104%2Fpp.114.247668\n                    \n                  .",
+      "volume": "166",
+      "year": "2014"
+    }
+  ],
+  "reference-count": 27,
+  "references-count": 27,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-019-0227-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Using Apache Spark on genome assembly for scalable overlap-graph reduction"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "13"
+}

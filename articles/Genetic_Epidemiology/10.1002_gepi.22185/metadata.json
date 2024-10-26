@@ -1,0 +1,637 @@
+{
+  "DOI": "10.1002/gepi.22185",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22185",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn metagenomic studies, testing the association between microbiome composition and clinical outcomes translates to testing the nullity of variance components. Motivated by a lung human immunodeficiency virus (HIV) microbiome project, we study longitudinal microbiome data by using variance component models with more than two variance components. Current testing strategies only apply to models with exactly two variance components and when sample sizes are large. Therefore, they are not applicable to longitudinal microbiome studies. In this paper, we propose exact tests (score test, likelihood ratio test, and restricted likelihood ratio test) to (a) test the association of the overall microbiome composition in a longitudinal design and (b) detect the association of one specific microbiome cluster while adjusting for the effects from related clusters. Our approach combines the exact tests for null hypothesis with a single variance component with a strategy of reducing multiple variance components to a single one. Simulation studies demonstrate that our method has a correct type I error rate and superior power compared to existing methods at small sample sizes and weak signals. Finally, we apply our method to a longitudinal pulmonary microbiome study of HIV‐infected patients and reveal two interesting genera \u003cjats:italic\u003ePrevotella\u003c/jats:italic\u003e and \n\u003cjats:italic\u003eVeillonella\u003c/jats:italic\u003e associated with forced vital capacity. Our findings shed light on the impact of the lung microbiome on HIV complexities. The method is implemented in the open‐source, high‐performance computing language \n\u003cjats:styled-content\u003eJulia\u003c/jats:styled-content\u003e and is freely available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/JingZhai63/VCmicrobiome\"\u003ehttps://github.com/JingZhai63/VCmicrobiome\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22185"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-08-24"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-11-26"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-01-08"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics University of Arizona Tucson Arizona"
+        }
+      ],
+      "family": "Zhai",
+      "given": "Jing",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Pulmonary, Allergy, Critical Care, Sleep Medicine, Department of Medicine University of Arizona Tucson Arizona"
+        }
+      ],
+      "family": "Knox",
+      "given": "Kenneth",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Pulmonary, Critical Care, Sleep, and Occupational Medicine Indiana University Medical Center Indianapolis Indiana"
+        }
+      ],
+      "family": "Twigg",
+      "given": "Homer L.",
+      "sequence": "additional",
+      "suffix": "III"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of California Los Angeles California"
+        }
+      ],
+      "family": "Zhou",
+      "given": "Hua",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7983-0274",
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics University of Arizona Tucson Arizona"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Zhou",
+      "given": "Jin J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        9
+      ]
+    ],
+    "date-time": "2019-01-09T08:30:27Z",
+    "timestamp": 1547022627000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        11
+      ]
+    ],
+    "date-time": "2023-09-11T08:50:56Z",
+    "timestamp": 1694422256000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "DMS‐1645093"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    },
+    {
+      "DOI": "10.13039/100000057",
+      "award": [
+        "GM105785",
+        "GM053275"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of General Medical Sciences"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "HG006139"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "K01DK106116"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100008335",
+      "award": [
+        "New Investigator Award"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Arizona Biomedical Research Commission"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        23
+      ]
+    ],
+    "date-time": "2024-03-23T06:34:58Z",
+    "timestamp": 1711175698923
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+      "content-version": "am",
+      "delay-in-days": 365,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            8
+          ]
+        ],
+        "date-time": "2020-01-08T00:00:00Z",
+        "timestamp": 1578441600000
+      }
+    },
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            8
+          ]
+        ],
+        "date-time": "2019-01-08T00:00:00Z",
+        "timestamp": 1546905600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22185",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22185",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22185",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22185",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22185",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "250-262",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        4
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1016/S0022-2836(05)80360-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_2_1"
+    },
+    {
+      "DOI": "10.1126/science.aad9358",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_3_1"
+    },
+    {
+      "DOI": "10.2307/1942268",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_4_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-118",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_5_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_6_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.02.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_7_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts342",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21934",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_9_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.2003.00089.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_10_1"
+    },
+    {
+      "DOI": "10.2307/2533167",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_11_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2004.00438.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_12_1"
+    },
+    {
+      "DOI": "10.1513/AnnalsATS.201402-052PL",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_13_1"
+    },
+    {
+      "DOI": "10.1586/ers.13.24",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_14_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs028",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_15_1"
+    },
+    {
+      "DOI": "10.1126/science.1110591",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0016384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_17_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkr1178",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_18_1"
+    },
+    {
+      "DOI": "10.1038/nature18850",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_19_1"
+    },
+    {
+      "DOI": "10.1198/106186008X386599",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_20_1"
+    },
+    {
+      "DOI": "10.1101/gr.112730.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_21_1"
+    },
+    {
+      "DOI": "10.21037/atm.2017.01.56",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_1_22_1",
+      "unstructured": "Annals of Translational Medicine 2017 5 The respiratory microbiome in idiopathic pulmonary fibrosis"
+    },
+    {
+      "DOI": "10.1056/NEJMc1212055",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_23_1"
+    },
+    {
+      "DOI": "10.1089/wound.2014.0542",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_24_1"
+    },
+    {
+      "DOI": "10.1038/ncomms12015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_25_1"
+    },
+    {
+      "DOI": "10.1111/all.13331",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_26_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2007.00771.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_27_1"
+    },
+    {
+      "DOI": "10.1038/nbt.3416",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_28_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btl529",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_29_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkr201",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_30_1"
+    },
+    {
+      "DOI": "10.1093/biomet/84.2.309",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_31_1"
+    },
+    {
+      "DOI": "10.1038/nature23889",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_32_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201211-2145OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_33_1"
+    },
+    {
+      "DOI": "10.1128/AEM.71.12.8228-8235.2005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_34_1"
+    },
+    {
+      "DOI": "10.1128/AEM.01996-06",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_35_1"
+    },
+    {
+      "DOI": "10.1093/nar/24.1.82",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_36_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201210-1913OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_37_1"
+    },
+    {
+      "DOI": "10.1101/gr.201863.115",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_38_1"
+    },
+    {
+      "DOI": "10.2307/2532601",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_39_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0047305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_40_1"
+    },
+    {
+      "DOI": "10.1111/biom.12095",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_41_1"
+    },
+    {
+      "DOI": "10.4161/gmic.1.2.11350",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_42_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2008.01107.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_43_1"
+    },
+    {
+      "DOI": "10.1128/AEM.01541-09",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_44_1"
+    },
+    {
+      "DOI": "10.1016/j.chom.2017.03.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_45_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1987.10478472",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_46_1"
+    },
+    {
+      "author": "Silvapulle M. J.",
+      "key": "e_1_2_8_1_47_1",
+      "volume-title": "Constrained statistical inference: Order, inequality, and shape constraints",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.2307/2533455",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_48_1"
+    },
+    {
+      "DOI": "10.1101/gr.216242.116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_49_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201210-1937OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_50_1"
+    },
+    {
+      "DOI": "10.1016/S2213-2600(13)70117-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_51_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201509-1875OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_52_1"
+    },
+    {
+      "DOI": "10.1038/nrmicro.2016.83",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_53_1"
+    },
+    {
+      "article-title": "Lung microbiome dysbiosis is a risk factor for pulmonary diffusion abnormalities in antiretroviral treated HIV‐infection",
+      "author": "Weiden M. D.",
+      "first-page": "A1002",
+      "journal-title": "American Journal of Respiratory and Critical Care Medicine",
+      "key": "e_1_2_8_1_54_1",
+      "volume": "195",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pbio.0050156",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_55_1"
+    },
+    {
+      "DOI": "10.1097/MOP.0b013e32834604f2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_56_1"
+    },
+    {
+      "DOI": "10.1016/j.immuni.2016.02.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_57_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22030",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_58_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.04.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_59_1"
+    },
+    {
+      "DOI": "10.1534/genetics.116.190454",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_60_1"
+    }
+  ],
+  "reference-count": 59,
+  "references-count": 59,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22185"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Exact variance component tests for longitudinal microbiome studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

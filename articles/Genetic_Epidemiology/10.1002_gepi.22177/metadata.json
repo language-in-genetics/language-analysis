@@ -1,0 +1,700 @@
+{
+  "DOI": "10.1002/gepi.22177",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22177",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eWe develop linear mixed models (LMMs) and functional linear mixed models (FLMMs) for gene‐based tests of association between a quantitative trait and genetic variants on pedigrees. The effects of a major gene are modeled as a fixed effect, the contributions of polygenes are modeled as a random effect, and the correlations of pedigree members are modeled via inbreeding/kinship coefficients. \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22177-math-0001.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22177:gepi22177-math-0001\" /\u003e‐statistics and \n\u003cjats:italic\u003eχ\u003c/jats:italic\u003e\n\u003cjats:sup\u003e2\u003c/jats:sup\u003e likelihood ratio test (LRT) statistics based on the LMMs and FLMMs are constructed to test for association. We show empirically that the \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22177-math-0002.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22177:gepi22177-math-0002\" /\u003e‐distributed statistics provide a good control of the type I error rate. The \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22177-math-0003.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22177:gepi22177-math-0003\" /\u003e‐test statistics of the LMMs have similar or higher power than the FLMMs, kernel‐based famSKAT (family‐based sequence kernel association test), and burden test famBT (family‐based burden test). The \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22177-math-0004.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22177:gepi22177-math-0004\" /\u003e‐statistics of the FLMMs perform well when analyzing a combination of rare and common variants. For small samples, the LRT statistics of the FLMMs control the type I error rate well at the nominal levels \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22177-math-0005.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22177:gepi22177-math-0005\" /\u003e and \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22177-math-0006.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22177:gepi22177-math-0006\" /\u003e. For moderate/large samples, the LRT statistics of the FLMMs control the type I error rates well. The LRT statistics of the LMMs can lead to inflated type I error rates. The proposed models are useful in whole genome and whole exome association studies of complex traits.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22177"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-06-13"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-09-26"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-12-09"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics, Department of Preventive Medicine University of Tennessee Health Science Center Memphis Tennessee"
+        },
+        {
+          "name": "Computational and Statistical Genomics Branch National Human Genome Research Institute, National Institutes of Health (NIH) Bethesda Maryland"
+        }
+      ],
+      "family": "Chiu",
+      "given": "Chi‐yang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biochemistry and Molecular Biology School of Basic Medicine, Kunming Medical University Kunming Yunnan China"
+        }
+      ],
+      "family": "Yuan",
+      "given": "Fang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center Washington District of Columbia"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Bing‐song",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center Washington District of Columbia"
+        }
+      ],
+      "family": "Yuan",
+      "given": "Ao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center Washington District of Columbia"
+        }
+      ],
+      "family": "Li",
+      "given": "Xin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center Washington District of Columbia"
+        }
+      ],
+      "family": "Fang",
+      "given": "Hong‐Bin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Human Genetics David Geffen School of Medicine, University of California Los Angeles California"
+        }
+      ],
+      "family": "Lange",
+      "given": "Kenneth",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9410-7228",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Graduate School of Public Health, University of Pittsburgh Pittsburgh Pennsylvania"
+        },
+        {
+          "name": "Department of Human Genetics Graduate School of Public Health, University of Pittsburgh Pittsburgh Pennsylvania"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Weeks",
+      "given": "Daniel E.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6682-8156",
+      "affiliation": [
+        {
+          "name": "Computational and Statistical Genomics Branch National Human Genome Research Institute, National Institutes of Health (NIH) Bethesda Maryland"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Wilson",
+      "given": "Alexander F.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9153-2920",
+      "affiliation": [
+        {
+          "name": "Computational and Statistical Genomics Branch National Human Genome Research Institute, National Institutes of Health (NIH) Bethesda Maryland"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Bailey‐Wilson",
+      "given": "Joan E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Computational and Statistical Genomics Branch National Human Genome Research Institute, National Institutes of Health (NIH) Bethesda Maryland"
+        }
+      ],
+      "family": "Musolf",
+      "given": "Anthony M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of Pennsylvania Philadelphia Pennsylvania"
+        }
+      ],
+      "family": "Stambolian",
+      "given": "Dwight",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department de Mathematiques et de Statistique Universite Laval Quebec Canada"
+        }
+      ],
+      "family": "Lakhal‐Chaieb",
+      "given": "M'Hamed Lajmi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics and Actuarial Science Waterloo Ontario, Quebec Canada"
+        }
+      ],
+      "family": "Cook",
+      "given": "Richard J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Branch and Genetic Basis of Mood and Anxiety Disorders Section University of Waterloo, National Institute of Mental Health, NIH Bethesda Maryland"
+        }
+      ],
+      "family": "McMahon",
+      "given": "Francis J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine Baylor College of Medicine Houston Texas"
+        }
+      ],
+      "family": "Amos",
+      "given": "Christopher I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Center University of Texas‐Houston Houston Texas"
+        }
+      ],
+      "family": "Xiong",
+      "given": "Momiao",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7603-2135",
+      "affiliation": [
+        {
+          "name": "Computational and Statistical Genomics Branch National Human Genome Research Institute, National Institutes of Health (NIH) Bethesda Maryland"
+        },
+        {
+          "name": "Department of Biochemistry and Molecular Biology School of Basic Medicine, Kunming Medical University Kunming Yunnan China"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Fan",
+      "given": "Ruzong",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        12,
+        10
+      ]
+    ],
+    "date-time": "2018-12-10T04:25:16Z",
+    "timestamp": 1544415916000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        14
+      ]
+    ],
+    "date-time": "2023-09-14T12:47:42Z",
+    "timestamp": 1694695662000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000025",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Mental Health"
+    },
+    {
+      "DOI": "10.13039/100000009",
+      "doi-asserted-by": "publisher",
+      "name": "Foundation for the National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "R01EY024226"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        31
+      ]
+    ],
+    "date-time": "2024-01-31T13:16:01Z",
+    "timestamp": 1706706961017
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        12,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            12,
+            9
+          ]
+        ],
+        "date-time": "2018-12-09T00:00:00Z",
+        "timestamp": 1544313600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22177",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22177",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22177",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "189-206",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        12,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        12,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        3
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nature11632",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_2_1"
+    },
+    {
+      "article-title": "Robust variance‐components approach for assessing linkage in pedigrees",
+      "author": "Amos C. I.",
+      "first-page": "534",
+      "journal-title": "American Journal of Human Genetics",
+      "key": "e_1_2_7_1_3_1",
+      "volume": "54",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1214/09-STS307",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_4_1"
+    },
+    {
+      "DOI": "10.1534/genetics.107.075614",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_5_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_6_1"
+    },
+    {
+      "key": "e_1_2_7_1_7_1",
+      "unstructured": "deBoor C.(2001).A practical guide to splines. Applied Mathematical Sciences (Vol. 27 revised version). New York: Springer."
+    },
+    {
+      "DOI": "10.1002/gepi.21757",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21840",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21947",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_10_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21984",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_11_1"
+    },
+    {
+      "author": "Ferraty F.",
+      "key": "e_1_2_7_1_12_1",
+      "volume-title": "The oxford handbook of functional data analysis",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1159/000288704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_13_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4614-3655-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_14_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.04.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_15_1"
+    },
+    {
+      "key": "e_1_2_7_1_16_1",
+      "unstructured": "Jiang Y. D. Chiu C. Y. Yan Q. Chen W. Gorin M. B. Conley Y. P. …Fan R. Z.(2018).Gene‐based association testing of dichotomous traits with generalized functional linear mixed models using extended pedigrees. Manuscript."
+    },
+    {
+      "DOI": "10.1038/ng.548",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_17_1"
+    },
+    {
+      "DOI": "10.1038/ng.2376",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_18_1"
+    },
+    {
+      "DOI": "10.1007/978-0-387-21750-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_19_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_20_1"
+    },
+    {
+      "DOI": "10.1038/nature19057",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_21_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_22_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.1681",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_23_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2037",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_24_1"
+    },
+    {
+      "DOI": "10.1101/gr.115998.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_25_1"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2012-100798",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_26_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.141",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_27_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_28_1"
+    },
+    {
+      "DOI": "10.1016/j.mrfmmm.2006.09.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_29_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_30_1"
+    },
+    {
+      "DOI": "10.1167/iovs.16-21271",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_31_1"
+    },
+    {
+      "article-title": "Myopia in Chinese families shows linkage to 10q26.13",
+      "author": "Musolf A. M.",
+      "first-page": "29",
+      "journal-title": "Molecular Vision",
+      "key": "e_1_2_7_1_32_1",
+      "volume": "24",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/gepi.21725",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_33_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_34_1"
+    },
+    {
+      "key": "e_1_2_7_1_35_1",
+      "unstructured": "The R Project for Statistical Computing (https://www.r-project.org/)"
+    },
+    {
+      "DOI": "10.1007/978-0-387-98185-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_36_1"
+    },
+    {
+      "DOI": "10.1002/0470013192.bsa239",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_37_1"
+    },
+    {
+      "author": "Ross S. M.",
+      "key": "e_1_2_7_1_38_1",
+      "volume-title": "Stochastic processes",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1038/nmeth1155",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_39_1"
+    },
+    {
+      "DOI": "10.1101/gr.3709305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_40_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21676",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_41_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0128999",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_42_1"
+    },
+    {
+      "DOI": "10.1126/science.1219240",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_43_1"
+    },
+    {
+      "DOI": "10.1038/nature06258",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_44_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0105074",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_45_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21955",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_46_1"
+    },
+    {
+      "article-title": "Fine‐mapping of candidate region in Amish and Ashkenazi families confirms linkage of refractive error to a QTL on 1p34‐p36",
+      "author": "Wojciechowski R. J.",
+      "first-page": "1398",
+      "journal-title": "Molecular Vision",
+      "key": "e_1_2_7_1_47_1",
+      "volume": "15",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1167/iovs.08-2848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_48_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_49_1"
+    },
+    {
+      "DOI": "10.1038/ng.2876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_50_1"
+    },
+    {
+      "DOI": "10.1038/ng1702",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_51_1"
+    },
+    {
+      "DOI": "10.1038/ng.2310",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_52_1"
+    }
+  ],
+  "reference-count": 51,
+  "references-count": 51,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22177"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Linear mixed models for association analysis of quantitative traits with next‐generation sequencing data"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

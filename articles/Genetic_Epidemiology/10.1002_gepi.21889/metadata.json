@@ -1,0 +1,613 @@
+{
+  "DOI": "10.1002/gepi.21889",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21889",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003e\u003cjats:italic\u003eSingle nucleotide polymorphism\u003c/jats:italic\u003e (\u003cjats:italic\u003eSNP\u003c/jats:italic\u003e) high‐dimensional datasets are available from Genome Wide Association Studies (GWAS). Such data provide researchers opportunities to investigate the complex genetic basis of diseases. Much of genetic risk might be due to undiscovered epistatic interactions, which are interactions in which combination of several genes affect disease. Research aimed at discovering interacting SNPs from GWAS datasets proceeded in two directions. First, tools were developed to evaluate candidate interactions. Second, algorithms were developed to search over the space of candidate interactions. Another problem when learning interacting SNPs, which has not received much attention, is evaluating how likely it is that the learned SNPs are associated with the disease. A complete system should provide this information as well. We develop such a system. Our system, called LEAP, includes a new heuristic search algorithm for learning interacting SNPs, and a Bayesian network based algorithm for computing the probability of their association. We evaluated the performance of LEAP using 100 1,000‐SNP simulated datasets, each of which contains 15 SNPs involved in interactions. When learning interacting SNPs from these datasets, LEAP outperformed seven others methods. Furthermore, only SNPs involved in interactions were found to be probable. We also used LEAP to analyze real Alzheimer's disease and breast cancer GWAS datasets. We obtained interesting and new results from the Alzheimer's dataset, but limited results from the breast cancer dataset. We conclude that our results support that LEAP is a useful tool for extracting candidate interacting SNPs from high‐dimensional datasets and determining their probability.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21889"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biomedical Informatics University of Pittsburgh  Pittsburgh Pennsylvania United States of America"
+        }
+      ],
+      "family": "Jiang",
+      "given": "Xia",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Preventive Medicine Feinberg School of Medicine, Northwestern University  Chicago Illinois United States of America"
+        }
+      ],
+      "family": "Neapolitan",
+      "given": "Richard E.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2015,
+        2,
+        13
+      ]
+    ],
+    "date-time": "2015-02-13T11:56:22Z",
+    "timestamp": 1423828582000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T01:33:53Z",
+    "timestamp": 1696383233000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000092",
+      "award": [
+        "R00LM010822",
+        "R01LM011663"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Library of Medicine"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        1
+      ]
+    ],
+    "date-time": "2024-02-01T18:58:11Z",
+    "timestamp": 1706813891236
+  },
+  "is-referenced-by-count": 11,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2015,
+        2,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2015,
+            2,
+            12
+          ]
+        ],
+        "date-time": "2015-02-12T00:00:00Z",
+        "timestamp": 1423699200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21889",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21889",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21889",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "173-184",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2015,
+        2,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2015,
+        2,
+        12
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        3
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "author": "Agresti A",
+      "key": "e_1_2_8_2_1",
+      "volume-title": "Categorical Data Analysis",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/gene.2009.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1016/S0378-1119(99)00219-X",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1137/S1064827596304010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1186/1471-2164-12-344",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "author": "Chickering D",
+      "first-page": "94",
+      "key": "e_1_2_8_7_1",
+      "volume-title": "Uncertainty in Artificial Intelligence. Proceedings of the 18th Conference",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1007/978-1-4612-2404-4_12",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1007/s00125-003-1321-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1016/0004-3702(90)90060-D",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1007/BF00994110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1109/CIBCB.2008.4675767",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_12_1",
+      "unstructured": "EpsteinMJ HaakeP.2008.Very large scale ReliefF for genome‐wide association analysis.Proceedings of IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology.Sun Valley Idaho."
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020157",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1007/s10048-010-0234-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/18.suppl_1.S189",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1089/1066527041410409",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1186/s13040-014-0035-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "article-title": "Being Bayesian about network structure: a Bayesian approach to structure discovery in Bayesian networks",
+      "author": "Friedman N",
+      "first-page": "201",
+      "journal-title": "Mach Learn",
+      "key": "e_1_2_8_18_1",
+      "volume": "20",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1089/10665270252935494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "key": "e_1_2_8_20_1",
+      "unstructured": "FriedmanN LinialM NachmanI Pe'erD.2005.Using Bayesian networks to analyze expression data.Proceedings of the Fourth Annual International Conference on Computational Molecular Biology.Tokyo Japan."
+    },
+    {
+      "DOI": "10.1016/j.tig.2009.12.008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btf869",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-S3-S5",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_23_1",
+      "unstructured": "HanB ParkM ChenX.2009.A Markov blanket‐based method for detecting causal SNPs in GWAS.Proceeding of IEEE International Conference on Bioinformatics and Biomedicine.Washington DC."
+    },
+    {
+      "key": "e_1_2_8_24_1",
+      "unstructured": "HeckermanD GeigerD ChickeringD.1995.Learning Bayesian networks: the combination of knowledge and statistical data.Technical report MSR‐TR‐94‐09. Microsoft Research."
+    },
+    {
+      "article-title": "A common genetic variant is associated with adult and childhood obesity",
+      "author": "Herbert A",
+      "first-page": "279",
+      "journal-title": "J Comput Biol",
+      "key": "e_1_2_8_25_1",
+      "volume": "312",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-364",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1038/ng2075",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1101/gr.075622.107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1145/1015330.1015377",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_29_1",
+      "unstructured": "JakulinA BratkoI.2004.Testing the significance of attribute interactions.Proceedings of the 21st International Conference on Machine Learning (ICML‐2004).Banff Canada."
+    },
+    {
+      "DOI": "10.1007/978-0-387-68282-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "article-title": "A fast algorithm for learning epistatic genomics relationships",
+      "author": "Jiang X",
+      "first-page": "341",
+      "journal-title": "AMIA Annu Symp Proc",
+      "key": "e_1_2_8_31_1",
+      "volume": "2010",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0022075",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "article-title": "Learning genetic epistasis using Bayesian network scoring criteria",
+      "author": "Jiang X",
+      "first-page": "1471",
+      "issue": "89",
+      "journal-title": "BMC Bioinform",
+      "key": "e_1_2_8_33_1",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/tp.2012.45",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20042",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1038/ng.439",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr227",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-58",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "DOI": "10.1038/456018a",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1146/annurev.med.60.061907.093117",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1038/ng1537",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-1-s1-s56",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_43_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp435",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_44_1"
+    },
+    {
+      "author": "Moore JH",
+      "first-page": "166",
+      "key": "e_1_2_8_45_1",
+      "volume-title": "Proceedings of EvoBIO 2007",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1080/07853890252953473",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    },
+    {
+      "DOI": "10.1016/j.jtbi.2005.11.036",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_47_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp713",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_48_1"
+    },
+    {
+      "DOI": "10.1016/j.crvi.2005.05.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_49_1"
+    },
+    {
+      "author": "Neapolitan RE",
+      "key": "e_1_2_8_50_1",
+      "volume-title": "Probabilistic Reasoning in Expert Systems",
+      "year": "1989"
+    },
+    {
+      "author": "Neapolitan RE",
+      "key": "e_1_2_8_51_1",
+      "volume-title": "Learning Bayesian Networks",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.ccr.2006.10.008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_52_1"
+    },
+    {
+      "DOI": "10.1007/978-1-60327-367-1_12",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_53_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-S9-S5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_54_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxm010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_55_1"
+    },
+    {
+      "author": "Pearl J.",
+      "key": "e_1_2_8_56_1",
+      "volume-title": "Probabilistic Reasoning in Intelligent Systems",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2007.05.022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_57_1"
+    },
+    {
+      "DOI": "10.1086/321276",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_58_1"
+    },
+    {
+      "article-title": "Learning module networks",
+      "author": "Segal E",
+      "first-page": "557",
+      "journal-title": "J Mach Learn Res",
+      "key": "e_1_2_8_59_1",
+      "volume": "6",
+      "year": "2005"
+    },
+    {
+      "article-title": "Analysis of Genome‐Wide Association Study (GWAS) data looking for replicating signals in Alzheimer's disease (AD)",
+      "author": "Shi H",
+      "first-page": "53",
+      "issue": "1",
+      "journal-title": "Int J Mol Epidemiol Genet",
+      "key": "e_1_2_8_60_1",
+      "volume": "1",
+      "year": "2010"
+    },
+    {
+      "article-title": "Association of the PDCD5 locus with long cancer risk and prognosis in smokers",
+      "author": "Spinola M",
+      "first-page": "27",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_8_61_1",
+      "volume": "55",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "article-title": "Genome‐wide association study of 14000 cases of seven common diseases and 3000 shared controls",
+      "author": "The Wellcome Trust Case Control Consortium",
+      "doi-asserted-by": "crossref",
+      "first-page": "661",
+      "journal-title": "Nature",
+      "key": "e_1_2_8_62_1",
+      "volume": "447",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1001/archneur.61.9.1434",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_63_1"
+    },
+    {
+      "DOI": "10.1086/505313",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_64_1"
+    },
+    {
+      "DOI": "10.1093/jnci/djh075",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_65_1"
+    },
+    {
+      "DOI": "10.1093/ije/dym257",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_66_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp622",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_67_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-10-294",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_68_1"
+    },
+    {
+      "article-title": "Genome‐wide association analysis by lasso penalized logistic regression",
+      "author": "Wu TT",
+      "first-page": "714",
+      "journal-title": "Genome Anal",
+      "key": "e_1_2_8_69_1",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn652",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_70_1"
+    },
+    {
+      "DOI": "10.1007/978-3-642-02008-7_19",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_71_1",
+      "unstructured": "ZhangX PanF XieY ZouF WangW.2009.COE: a general approach for efficient genome‐wide two‐locus epistasis test in disease association study.Proceedings of the 13th Annual International Conference on Research in Computational Molecular Biology (RECOMB).Tuscon Arizona."
+    },
+    {
+      "DOI": "10.1038/ng2110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_72_1"
+    }
+  ],
+  "reference-count": 71,
+  "references-count": 71,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21889"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "LEAP: Biomarker Inference Through Learning and Evaluating Association Patterns"
+  ],
+  "type": "journal-article",
+  "volume": "39"
+}

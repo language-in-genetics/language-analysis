@@ -1,0 +1,590 @@
+{
+  "DOI": "10.1002/gepi.22188",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22188",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eWhen testing genotype–phenotype associations using linear regression, departure of the trait distribution from normality can impact both Type I error rate control and statistical power, with worse consequences for rarer variants. Because genotypes are expected to have small effects (if any) investigators now routinely use a two‐stage method, in which they first regress the trait on covariates, obtain residuals, rank‐normalize them, and then use the rank‐normalized residuals in association analysis with the genotypes. Potential confounding signals are assumed to be removed at the first stage, so in practice, no further adjustment is done in the second stage. Here, we show that this widely used approach can lead to tests with undesirable statistical properties, due to both combination of a mis‐specified mean–variance relationship and remaining covariate associations between the rank‐normalized residuals and genotypes. We demonstrate these properties theoretically, and also in applications to genome‐wide and whole‐genome sequencing association studies. We further propose and evaluate an alternative fully adjusted two‐stage approach that adjusts for covariates both when residuals are obtained and in the subsequent association test. This method can reduce excess Type I errors and improve statistical power.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22188"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-06-29"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-12-11"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-01-17"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-8520-8860",
+      "affiliation": [
+        {
+          "name": "Department of Medicine Harvard Medical School Boston Massachusetts"
+        },
+        {
+          "name": "Division of Sleep and Circadian Disorders Brigham and Women’s Hospital Boston Massachusetts"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Sofer",
+      "given": "Tamar",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Zheng",
+      "given": "Xiuwen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Gogarten",
+      "given": "Stephanie M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Laurie",
+      "given": "Cecelia A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Grinde",
+      "given": "Kelsey",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Human Genetics Graduate School of Public Health, University of Pittsburgh Pittsburgh Pennsylvania"
+        },
+        {
+          "name": "Department of Oral Biology School of Dental Medicine, Center for Craniofacial and Dental Genetics, University of Pittsburgh Pittsburgh Pennsylvania"
+        }
+      ],
+      "family": "Shaffer",
+      "given": "John R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Broad Institute of Harvard and MIT Cambridge Massachusetts"
+        },
+        {
+          "name": "Department of Odontology Umeå University Umeå Sweden"
+        }
+      ],
+      "family": "Shungin",
+      "given": "Dmitry",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine Division of Endocrinology, Diabetes, and Nutrition, University of Maryland School of Medicine Baltimore Maryland"
+        }
+      ],
+      "family": "O’Connell",
+      "given": "Jeffrey R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health Sciences Stritch School of Medicine, Loyola University Chicago Maywood Illinois"
+        }
+      ],
+      "family": "Durazo‐Arvizo",
+      "given": "Ramon A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina Chapel Hill North Carolina"
+        }
+      ],
+      "family": "Raffield",
+      "given": "Laura",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine University of Colorado Denver, Anschutz Medical Campus Aurora Colorado"
+        }
+      ],
+      "family": "Lange",
+      "given": "Leslie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine University of Mississippi Medical Center Jackson Mississippi"
+        }
+      ],
+      "family": "Musani",
+      "given": "Solomon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine Boston University Schools of Medicine Boston Massachusetts"
+        },
+        {
+          "name": "Department of Epidemiology Boston University School of Public Health Boston Massachusetts"
+        },
+        {
+          "name": "Boston University’s and National Heart, Lung, and Blood Institute’s Framingham Heart Study Framingham Massachusetts"
+        },
+        {
+          "name": "Department of Biostatistics Boston University School of Public Health Boston Massachusetts"
+        }
+      ],
+      "family": "Vasan",
+      "given": "Ramachandran S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University School of Public Health Boston Massachusetts"
+        }
+      ],
+      "family": "Cupples",
+      "given": "L. Adrienne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology School of Public Health, University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Reiner",
+      "given": "Alexander P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Laurie",
+      "given": "Cathy C.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3071-7278",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Rice",
+      "given": "Kenneth M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "NHLBI Trans‐Omics for Precision Medicine (TOPMed) Consortium",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        17
+      ]
+    ],
+    "date-time": "2019-01-17T17:41:41Z",
+    "timestamp": 1547746901000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        11
+      ]
+    ],
+    "date-time": "2023-09-11T08:50:40Z",
+    "timestamp": 1694422240000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "1R35HL135818, 3R01HL‐117626‐02S1, 3R01HL‐120393‐02S1, R01 HL092577‐06S1, R01HL120393‐03S1, T32 HL129982, U01 HL072515, U01 HL137181, U01 HL84756"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01HG005827"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "P30 DK72488"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100011082",
+      "award": [
+        "HHSN268201300001I/N01‐HC‐65233"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "School of Medicine, University of North Carolina at Chapel Hill"
+    },
+    {
+      "DOI": "10.13039/100006686",
+      "award": [
+        "HHSN268201300004I",
+        "N01‐HC‐65234"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "University of Miami"
+    },
+    {
+      "DOI": "10.13039/100007319",
+      "award": [
+        "HHSN268201300002I",
+        "N01‐HC‐65235"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Albert Einstein College of Medicine, Yeshiva University"
+    },
+    {
+      "DOI": "10.13039/100008522",
+      "award": [
+        "HHSN268201300003I",
+        "N01‐HC‐65236"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "University of Illinois at Chicago"
+    },
+    {
+      "DOI": "10.13039/100007099",
+      "award": [
+        "HHSN268201300005I",
+        "N01‐HC‐65237"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "San Diego State University"
+    },
+    {
+      "DOI": "10.13039/100006989",
+      "award": [
+        "HHSN268201300049C",
+        "HHSN268201300050C"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Jackson State University"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:55:00Z",
+    "timestamp": 1709254500762
+  },
+  "is-referenced-by-count": 55,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        17
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            17
+          ]
+        ],
+        "date-time": "2019-01-17T00:00:00Z",
+        "timestamp": 1547683200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22188",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22188",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "263-275",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        17
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        17
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        4
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1007/BF01065504",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_2_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2015.270",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_3_1"
+    },
+    {
+      "DOI": "10.1007/s10519-009-9281-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_4_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_5_1"
+    },
+    {
+      "key": "e_1_2_7_1_6_1",
+      "unstructured": "Conomos M. P. Gogarten S. M. Brown L. Chen H. Rice K. Sofer T. …Yu C.(2018). GENESIS: GENetic EStimation and Inference in Structured samples (GENESIS): Statistical methods for analyzing genetic data from samples with population structure and/or relatedness (Version R package version 2.10.0)."
+    },
+    {
+      "DOI": "10.1002/gepi.20607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_7_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.1999.00997.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_8_1"
+    },
+    {
+      "DOI": "10.1038/ng.3715",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_9_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.01.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_10_1"
+    },
+    {
+      "key": "e_1_2_7_1_11_1",
+      "unstructured": "Lee S. Miropolsky L. \u0026Wu M.(2017).SKAT: SNP‐Set (Sequence) Kernel Association Test (Version R package version 1.3.2.1). Retrieved fromhttps://cran.r-project.org/package=SKAT"
+    },
+    {
+      "author": "McCullagh P.",
+      "key": "e_1_2_7_1_12_1",
+      "volume-title": "Generalized linear models",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1038/s41431-018-0159-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_13_1"
+    },
+    {
+      "DOI": "10.1007/978-3-642-10473-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_14_1"
+    },
+    {
+      "DOI": "10.1038/nature14132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_15_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.05.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_16_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.05.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_17_1"
+    },
+    {
+      "DOI": "10.1038/ng.1087",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_18_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_19_1"
+    },
+    {
+      "DOI": "10.1086/340362",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_20_1"
+    },
+    {
+      "DOI": "10.1007/978-1-62703-447-0_9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_21_1"
+    }
+  ],
+  "reference-count": 20,
+  "references-count": 20,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/344770",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22188"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A fully adjusted two‐stage procedure for rank‐normalization in genetic association studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

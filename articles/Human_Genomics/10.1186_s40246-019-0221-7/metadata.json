@@ -1,0 +1,766 @@
+{
+  "DOI": "10.1186/s40246-019-0221-7",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-019-0221-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eMicroRNAs (miRNAs) are a family of short, non-coding RNAs that have been linked to critical cellular activities, most notably regulation of gene expression. The identification of miRNA is a cross-disciplinary approach that requires both computational identification methods and wet-lab validation experiments, making it a resource-intensive procedure. While numerous machine learning methods have been developed to increase classification accuracy and thus reduce validation costs, most methods use supervised learning and thus require large labeled training data sets, often not feasible for less-sequenced species. On the other hand, there is now an abundance of unlabeled RNA sequence data due to the emergence of high-throughput wet-lab experimental procedures, such as next-generation sequencing.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThis paper explores the application of semi-supervised machine learning for miRNA classification in order to maximize the utility of both labeled and unlabeled data. We here present the novel combination of two semi-supervised approaches: active learning and multi-view co-training. Results across six diverse species show that this multi-stage semi-supervised approach is able to improve classification performance using very small numbers of labeled instances, effectively leveraging the available unlabeled data.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\n              \u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe proposed semi-supervised miRNA classification pipeline holds the potential to identify novel miRNA with high recall and precision while requiring very small numbers of previously known miRNA. Such a method could be highly beneficial when studying miRNA in newly sequenced genomes of niche species with few known examples of miRNA.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "221"
+  ],
+  "article-number": "43",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 1,
+      "value": "22 October 2019"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Sheikh Hassani",
+      "given": "Mohsen",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Green",
+      "given": "James R.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ],
+    "date-time": "2019-10-22T01:42:03Z",
+    "timestamp": 1571708523000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2020,
+        10,
+        20
+      ]
+    ],
+    "date-time": "2020-10-20T23:33:40Z",
+    "timestamp": 1603236820000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        17
+      ]
+    ],
+    "date-time": "2023-11-17T22:55:53Z",
+    "timestamp": 1700261753200
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "S1",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "S1",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2019-10-01T00:00:00Z",
+        "timestamp": 1569888000000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 21,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            22
+          ]
+        ],
+        "date-time": "2019-10-22T00:00:00Z",
+        "timestamp": 1571702400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-019-0221-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-019-0221-7/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-019-0221-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.cell.2006.07.031",
+      "author": "K Miranda",
+      "doi-asserted-by": "publisher",
+      "first-page": "1203",
+      "journal-title": "Cell.",
+      "key": "221_CR1",
+      "unstructured": "Miranda K, Huynh T, Tay Y, Ang Y, Tam W, Thomson AM, et al. A pattern-based method for the identification of MicroRNA binding sites and their corresponding heteroduplexes. Cell. 2006;126:1203–17.",
+      "volume": "126",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1261/rna.036608.112",
+      "author": "Y Iwasaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "490",
+      "journal-title": "RNA.",
+      "key": "221_CR2",
+      "unstructured": "Iwasaki Y, Kiga K, Kayo H, Fukuda-Yuzawa Y, Weise J, Inada T, et al. Global microRNA elevation by inducible Exportin 5 regulates cell cycle entry. RNA. 2013;19:490–7.",
+      "volume": "19",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1073/pnas.1301837110",
+      "author": "A La Torre",
+      "doi-asserted-by": "publisher",
+      "first-page": "E2362",
+      "journal-title": "Proc Natl Acad Sci.",
+      "key": "221_CR3",
+      "unstructured": "La Torre A, Georgi S, Reh TA. Conserved microRNA pathway regulates developmental timing of retinal neurogenesis. Proc Natl Acad Sci. 2013;110:E2362–70.",
+      "volume": "110",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1073/pnas.1422858112",
+      "author": "Z Ren",
+      "doi-asserted-by": "publisher",
+      "first-page": "E2366",
+      "journal-title": "Proc Natl Acad Sci.",
+      "key": "221_CR4",
+      "unstructured": "Ren Z, Ambros VR. Caenorhabditis elegans microRNAs of the let-7 family act in innate immune response circuits and confer robust developmental timing against pathogen stress. Proc Natl Acad Sci. 2015;112:E2366–75.",
+      "volume": "112",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1073/pnas.1702914114",
+      "author": "T Otto",
+      "doi-asserted-by": "publisher",
+      "first-page": "10660",
+      "journal-title": "Proc Natl Acad Sci.",
+      "key": "221_CR5",
+      "unstructured": "Otto T, Candido SV, Pilarz MS, Sicinska E, Bronson RT, Bowden M, et al. Cell cycle-targeting microRNAs promote differentiation by enforcing cell-cycle exit. Proc Natl Acad Sci. 2017;114:10660–5.",
+      "volume": "114",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.18632/oncotarget.3512",
+      "author": "HS Kim",
+      "doi-asserted-by": "crossref",
+      "first-page": "8089",
+      "journal-title": "Oncotarget.",
+      "key": "221_CR6",
+      "unstructured": "Kim HS, Lee KS, Bae HJ, Eun JW, Shen Q, Park SJ, et al. MicroRNA-31 functions as a tumor suppressor by regulating cell cycle and epithelial-mesenchymal transition regulatory proteins in liver cancer. Oncotarget. 2015;6:8089–102.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "author": "Q Luo",
+      "first-page": "2088",
+      "journal-title": "Am J Transl Res.",
+      "key": "221_CR7",
+      "unstructured": "Luo Q, Zhang Z, Dai Z, Basnet S, Li S, Xu B, et al. Tumor-suppressive microRNA-195-5p regulates cell growth and inhibits cell cycle by targeting cyclin dependent kinase 8 in colon cancer. Am J Transl Res. 2016;8:2088–96.",
+      "volume": "8",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.18632/oncotarget.19521",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "60243",
+      "journal-title": "Oncotarget.",
+      "key": "221_CR8",
+      "unstructured": "Karatas OF, Wang J, Shao L, Ozen M, Zhang Y, Creighton CJ, et al. miR-33a is a tumor suppressor microRNA that is decreased in prostate cancer. Oncotarget. 2017;8:60243–56.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/nar/gni178",
+      "author": "C Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "e179",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR9",
+      "unstructured": "Chen C, Ridzon D, Broomer A. SUPPLEMENT: Real-time quantification of microRNAs by stem–loop RT–PCR. Nucleic Acids Res. 2005;33:e179.",
+      "volume": "33",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.3389/fimmu.2015.00334",
+      "author": "SC Forster",
+      "doi-asserted-by": "publisher",
+      "first-page": "334",
+      "journal-title": "Front Immunol.",
+      "key": "221_CR10",
+      "unstructured": "Forster SC, Tate MD, Hertzog PJ. MicroRNA as type I interferon-regulated transcripts and modulators of the innate immune response. Front Immunol. 2015;6:334.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/srep36766",
+      "author": "M Isik",
+      "doi-asserted-by": "publisher",
+      "first-page": "36766",
+      "journal-title": "Sci Rep.",
+      "key": "221_CR11",
+      "unstructured": "Isik M, Blackwell TK, Berezikov E. MicroRNA mir-34 provides robustness to environmental stress response via the DAF-16 network in C. elegans. Sci Rep. 2016;6:36766.",
+      "volume": "6",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.neuropharm.2016.03.044",
+      "author": "D Andolina",
+      "doi-asserted-by": "publisher",
+      "first-page": "305",
+      "journal-title": "Neuropharmacology.",
+      "key": "221_CR12",
+      "unstructured": "Andolina D, Di Segni M, Bisicchia E, D’Alessandro F, Cestari V, Ventura A, et al. Effects of lack of microRNA-34 on the neural circuitry underlying the stress response and anxiety. Neuropharmacology. 2016;107:305–16.",
+      "volume": "107",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.pneurobio.2016.06.005",
+      "author": "SL Hollins",
+      "doi-asserted-by": "publisher",
+      "first-page": "61",
+      "journal-title": "Prog Neurobiol.",
+      "key": "221_CR13",
+      "unstructured": "Hollins SL, Cairns MJ. MicroRNA: Small RNA mediators of the brains genomic response to environmental stress. Prog Neurobiol. 2016;143:61–81.",
+      "volume": "143",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00018-018-2821-0",
+      "author": "H Hadj-Moussa",
+      "doi-asserted-by": "publisher",
+      "first-page": "3635",
+      "journal-title": "Cell Mol Life Sci.",
+      "key": "221_CR14",
+      "unstructured": "Hadj-Moussa H, Storey KB. Micromanaging freeze tolerance: the biogenesis and regulation of neuroprotective microRNAs in frozen brains. Cell Mol Life Sci. 2018;75:3635–47.",
+      "volume": "75",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.gene.2013.07.064",
+      "author": "C-W Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "journal-title": "Gene.",
+      "key": "221_CR15",
+      "unstructured": "Wu C-W, Biggar KK, Storey KB. Dehydration mediated microRNA response in the African clawed frog Xenopus laevis. Gene. 2013;529:269–75.",
+      "volume": "529",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gnh171",
+      "author": "A Válóczi",
+      "doi-asserted-by": "publisher",
+      "first-page": "e175",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR16",
+      "unstructured": "Válóczi A, Hornyik C, Varga N, Burgyán J, Kauppinen S, Havelda Z. Sensitive and specific detection of microRNAs by northern blot analysis using LNA-modified oligonucleotide probes. Nucleic Acids Res. 2004;32:e175.",
+      "volume": "32",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1007/s00216-008-2570-2",
+      "author": "W Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1117",
+      "journal-title": "Anal Bioanal Chem.",
+      "key": "221_CR17",
+      "unstructured": "Li W, Ruan K. MicroRNA detection by microarray. Anal Bioanal Chem. 2009;394:1117–24.",
+      "volume": "394",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1201/9781351061223-19",
+      "author": "RJ Peace",
+      "doi-asserted-by": "publisher",
+      "first-page": "381",
+      "key": "221_CR18",
+      "unstructured": "Peace RJ, Green JR. Computational sequence- and NGS-based microRNA prediction. In: Signal Processing and Machine Learning for Biomedical Big Data. Boca Raton: Taylor \u0026 Francis, 2018.: CRC Press; 2018. p. 381–410.",
+      "volume-title": "Signal Processing and Machine Learning for Biomedical Big Data",
+      "year": "2018"
+    },
+    {
+      "key": "221_CR19",
+      "unstructured": "Chen L, Heikkinen L, Wang C, Yang Y, Sun H, Wong G. Trends in the development of miRNA bioinformatics tools. Brief Bioinform. 2018:bby054."
+    },
+    {
+      "author": "A Kozomara",
+      "first-page": "D68",
+      "issue": "Database issue",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR20",
+      "unstructured": "Kozomara A, Griffiths-Jones S. miRBase: annotating high confidence microRNAs using deep sequencing data. Nucleic Acids Res. 2013;42(Database issue):D68–73.",
+      "volume": "42",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gku1109",
+      "author": "RJ Peace",
+      "doi-asserted-by": "publisher",
+      "first-page": "e138",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR21",
+      "unstructured": "Peace RJ, Biggar KK, Storey KB, Green JR. A framework for improving microRNA prediction in non-human genomes. Nucleic Acids Res. 2015;43:e138.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41598-018-38107-z",
+      "author": "RJ Peace",
+      "doi-asserted-by": "publisher",
+      "first-page": "1548",
+      "journal-title": "Sci Rep.",
+      "key": "221_CR22",
+      "unstructured": "Peace RJ, Sheikh Hassani M, Green JR. miPIE: NGS-based prediction of miRNA using integrated evidence. Sci Rep. 2019;9:1548.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkx836",
+      "author": "DM Vitsios",
+      "doi-asserted-by": "publisher",
+      "first-page": "e177",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR23",
+      "unstructured": "Vitsios DM, Kentepozidou E, Quintais L, Benito-Gutiérrez E, van Dongen S, Davis MP, et al. Mirnovo: genome-free prediction of microRNAs from small RNA sequencing data and single-cells using decision forests. Nucleic Acids Res. 2017;45:e177.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1145/279943.279962",
+      "author": "A Blum",
+      "doi-asserted-by": "publisher",
+      "first-page": "92",
+      "key": "221_CR24",
+      "unstructured": "Blum A, Mitchell T. Combining labeled and unlabeled data with co-training. In: Proceedings of the eleventh annual conference on Computational learning theory; 1998. p. 92–100.",
+      "volume-title": "Proceedings of the eleventh annual conference on Computational learning theory",
+      "year": "1998"
+    },
+    {
+      "author": "A Sokolov",
+      "first-page": "135",
+      "key": "221_CR25",
+      "unstructured": "Sokolov A, Ben-Hur A. Multi-view prediction of protein function. In: Proceedings of the 2nd ACM Conference on Bioinformatics, Computational Biology and Biomedicine; 2012. p. 135–42.",
+      "volume-title": "Proceedings of the 2nd ACM Conference on Bioinformatics, Computational Biology and Biomedicine",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1136/amiajnl-2012-001570",
+      "author": "K Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "613",
+      "journal-title": "J Am Med Informatics Assoc.",
+      "key": "221_CR26",
+      "unstructured": "Kim K, Shin H. Breast cancer survivability prediction using labeled, unlabeled, and pseudo-labeled patient data. J Am Med Informatics Assoc. 2013;20:613–8.",
+      "volume": "20",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu772",
+      "author": "YY Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1111",
+      "journal-title": "Bioinformatics.",
+      "key": "221_CR27",
+      "unstructured": "Xu YY, Yang F, Zhang Y, Bin SH. Bioimaging-based detection of mislocalized proteins in human cancers by semi-supervised learning. Bioinformatics. 2015;31:1111–9.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1145/2147805.2147892",
+      "author": "N Du",
+      "doi-asserted-by": "publisher",
+      "first-page": "531",
+      "key": "221_CR28",
+      "unstructured": "Du N, Li K, Mahajan SD, Schwartz SA, Nair BB, Hsiao C. Bin, et al. Gene Co-Adaboost: a semi-supervised approach for classifying gene expression data. In: Proceedings of the 2nd ACM Conference on Bioinformatics, Computational Biology and Biomedicine; 2011. p. 531–5.",
+      "volume-title": "Proceedings of the 2nd ACM Conference on Bioinformatics, Computational Biology and Biomedicine",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1109/BIBM.2013.6732544",
+      "author": "R Ibrahim",
+      "doi-asserted-by": "publisher",
+      "first-page": "495",
+      "key": "221_CR29",
+      "unstructured": "Ibrahim R, Yousri NA, Ismail MA, El-Makky NM. MiRNA and gene expression based cancer classification using self-learning and co-training approaches. In: Proceedings - 2013 IEEE International Conference on Bioinformatics and Biomedicine, IEEE BIBM 2013; 2013. p. 495–8.",
+      "volume-title": "Proceedings - 2013 IEEE International Conference on Bioinformatics and Biomedicine, IEEE BIBM 2013",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv254",
+      "author": "Damian Roqueiro",
+      "doi-asserted-by": "publisher",
+      "first-page": "i303",
+      "issue": "12",
+      "journal-title": "Bioinformatics",
+      "key": "221_CR30",
+      "unstructured": "Roqueiro D, Witteveen MJ, Anttila V, Terwindt GM, Den AMJM Van. In silico phenotyping via co-training for improved phenotype prediction from genotype. Bioinformatics. 2015;31:i303–i310.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41598-019-47399-8",
+      "doi-asserted-by": "crossref",
+      "key": "221_CR31",
+      "unstructured": "Sheikh Hassani M, Green J. Multi-view Co-training for MicroRNA Prediction. Sci Rep. 2019;9;10931."
+    },
+    {
+      "author": "M Sheikh Hassani",
+      "first-page": "5",
+      "key": "221_CR32",
+      "unstructured": "Sheikh Hassani M, Green JR. Active learning for microRNA prediction. In: Proceedings - 2018 IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2018; 2019. p. 5–12.",
+      "volume-title": "Proceedings - 2018 IEEE International Conference on Bioinformatics and Biomedicine, BIBM 2018",
+      "year": "2019"
+    },
+    {
+      "author": "G Forman",
+      "first-page": "33",
+      "key": "221_CR33",
+      "unstructured": "Forman G. Incremental machine learning to reduce biochemistry lab costs in the search for drug discovery. In: Proceedings of the 2nd International Conference on Data Mining in Bioinformatics (BIOKDD); 2002. p. 33–6.",
+      "volume-title": "Proceedings of the 2nd International Conference on Data Mining in Bioinformatics (BIOKDD)",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.4155/fmc-2016-0197",
+      "author": "D Reker",
+      "doi-asserted-by": "publisher",
+      "first-page": "381",
+      "journal-title": "Future Med Chem.",
+      "key": "221_CR34",
+      "unstructured": "Reker D, Schneider P, Schneider G, Brown JB. Active learning for computational chemogenomics. Future Med Chem. 2017;9:381–402.",
+      "volume": "9",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1021/ci049810a",
+      "author": "Y Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1936",
+      "journal-title": "J Chem Inf Comput Sci.",
+      "key": "221_CR35",
+      "unstructured": "Liu Y. Active learning with support vector machine applied to gene expression data for cancer classification. J Chem Inf Comput Sci. 2004;44:1936–41.",
+      "volume": "44",
+      "year": "2004"
+    },
+    {
+      "author": "S Doyle",
+      "first-page": "19",
+      "key": "221_CR36",
+      "unstructured": "Doyle S, Madabhushi A, Feldman MD, Tomaszewski JE, Monaco JP. A class balanced active learning scheme that accounts for minority class problems: applications to histopathology. In: Workshop on Optical Tissue Image analysis in Microscopy, Histopathology and Endoscopy (OPTIMHisE); 2009. p. 19–30.",
+      "volume-title": "Workshop on Optical Tissue Image analysis in Microscopy, Histopathology and Endoscopy (OPTIMHisE)",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0090495",
+      "author": "RK Padmanabhan",
+      "doi-asserted-by": "publisher",
+      "first-page": "e90495",
+      "journal-title": "PLoS One.",
+      "key": "221_CR37",
+      "unstructured": "Padmanabhan RK, Somasundar VH, Griffith SD, Zhu J, Samoyedny D, Tan KS, et al. An active learning approach for rapid characterization of endothelial cells in human tumors. PLoS One. 2014;9:e90495.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.neucom.2014.05.075",
+      "author": "W Xiong",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "journal-title": "Neurocomputing.",
+      "key": "221_CR38",
+      "unstructured": "Xiong W, Xie L, Zhou S, Guan J. Active learning for protein function prediction in protein-protein interaction networks. Neurocomputing. 2014;145:44–52.",
+      "volume": "145",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-S1-S57",
+      "author": "TP Mohamed",
+      "doi-asserted-by": "publisher",
+      "first-page": "S57",
+      "journal-title": "BMC Bioinform",
+      "key": "221_CR39",
+      "unstructured": "Mohamed TP, Carbonell JG, Ganapathiraju MK. Active learning for human protein-protein interaction prediction. BMC Bioinform. 2010;11:S57.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "author": "MA Campodonico",
+      "first-page": "171",
+      "journal-title": "Metab Eng.",
+      "key": "221_CR40",
+      "unstructured": "Campodonico MA, Andrews BA, Asenjo JA, Palsson BO, Feist AM, Jia B, et al. Predicting novel substrates for enzymes with minimal experimental effort with active learning. Metab Eng. 2014;44:171–81.",
+      "volume": "44",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gkr688",
+      "author": "MR Friedländer",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR41",
+      "unstructured": "Friedländer MR, MacKowiak SD, Li N, Chen W, Rajewsky N. MiRDeep2 accurately identifies known and hundreds of novel microRNA genes in seven animal clades. Nucleic Acids Res. 2012;40:37–52.",
+      "volume": "40",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/bib/bbs010",
+      "author": "V Williamson",
+      "doi-asserted-by": "publisher",
+      "first-page": "36",
+      "journal-title": "Brief Bioinform.",
+      "key": "221_CR42",
+      "unstructured": "Williamson V, Kim A, Xie B, Omari McMichael G, Gao Y, Vladimirov V. Detecting miRNAs in deep-sequencing data: A software performance comparison and evaluation. Brief Bioinform. 2013;14:36–45.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1471-2105-14-83",
+      "author": "A Gudyś",
+      "doi-asserted-by": "publisher",
+      "first-page": "83",
+      "journal-title": "BMC Bioinformatics.",
+      "key": "221_CR43",
+      "unstructured": "Gudyś A, Szcześniak MW, Sikora M, Makałowska I. HuntMi: an efficient and taxon-specific approach in pre-miRNA identification. BMC Bioinformatics. 2013;14:83.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1145/219587.219592",
+      "author": "DD Lewis",
+      "doi-asserted-by": "publisher",
+      "first-page": "13",
+      "journal-title": "ACM SIGIR Forum.",
+      "key": "221_CR44",
+      "unstructured": "Lewis DD, Gale WA. A sequential algorithm for training text classifiers. ACM SIGIR Forum. 1994;29:13–9.",
+      "volume": "29",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1093/nar/gks1193",
+      "author": "T Barrett",
+      "doi-asserted-by": "publisher",
+      "first-page": "D991",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR45",
+      "unstructured": "Barrett T, Wilhite SE, Ledoux P, Evangelista C, Kim IF, Tomashevsky M, et al. NCBI GEO: archive for functional genomics data sets—update. Nucleic Acids Res. 2012;41:D991–5.",
+      "volume": "41",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1020",
+      "author": "J Casper",
+      "doi-asserted-by": "crossref",
+      "first-page": "D762",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR46",
+      "unstructured": "Casper J, Zweig A, Villarreal C. … CT-N acids, 2017 U. The UCSC genome browser database: 2018 update. Nucleic Acids Res. 2018;46:D762–9.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "author": "A Frankish",
+      "first-page": "D754",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR47",
+      "unstructured": "Frankish A, Vullo A, Zadissa A, Yates A, Thormann A, Parker A, et al. Ensembl 2018. Nucleic Acids Res. 2017;46:D754–61.",
+      "volume": "46",
+      "year": "2017"
+    },
+    {
+      "author": "J Argasinska",
+      "first-page": "D335",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR48",
+      "unstructured": "Argasinska J, Quinones-Olvera N, Nawrocki EP, Finn RD, Bateman A, Eddy SR, et al. Rfam 13.0: shifting to a genome-centric resource for non-coding RNA families. Nucleic Acids Res. 2017;46:D335–42.",
+      "volume": "46",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq003",
+      "author": "H Ying",
+      "doi-asserted-by": "publisher",
+      "first-page": "680",
+      "journal-title": "Bioinformatics.",
+      "key": "221_CR49",
+      "unstructured": "Ying H, Beifang N, Ying G, Limin F, Weizhong L. CD-HIT Suite: a web server for clustering and comparing biological sequences. Bioinformatics. 2010;26:680–2.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gks878",
+      "author": "S Lertampaiporn",
+      "doi-asserted-by": "publisher",
+      "first-page": "e21",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "221_CR50",
+      "unstructured": "Lertampaiporn S, Thammarongtham C, Nukoolkit C, Kaewkamnerdpong B, Ruengjitchatchawalya M. Heterogeneous ensemble approach with discriminative features and modified-SMOTEbagging for pre-miRNA classification. Nucleic Acids Res. 2013;41:e21.",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1145/1656274.1656278",
+      "author": "M Hall",
+      "doi-asserted-by": "publisher",
+      "first-page": "10",
+      "journal-title": "ACM SIGKDD Explor Newsl.",
+      "key": "221_CR51",
+      "unstructured": "Hall M, Frank E, Holmes G, Pfahringer B, Reutemann P, Witten IH. The WEKA data mining software. ACM SIGKDD Explor Newsl. 2009;11:10.",
+      "volume": "11",
+      "year": "2009"
+    },
+    {
+      "key": "221_CR52",
+      "unstructured": "Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O. Scikit-learn: machine learning in Python. J Mach Learn Res. 2011;12."
+    }
+  ],
+  "reference-count": 52,
+  "references-count": 52,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-019-0221-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A semi-supervised machine learning framework for microRNA classification"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "13"
+}

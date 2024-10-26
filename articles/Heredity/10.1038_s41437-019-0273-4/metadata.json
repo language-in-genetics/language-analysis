@@ -1,0 +1,998 @@
+{
+  "DOI": "10.1038/s41437-019-0273-4",
+  "ISSN": [
+    "0018-067X",
+    "1365-2540"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41437-019-0273-4",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eWidely used genomic prediction models may not properly account for heterogeneous (co)variance structure across the genome. Models such as BayesA and BayesB assume locus-specific variance, which are highly influenced by the prior for (co)variance of single nucleotide polymorphism (SNP) effect, regardless of the size of data. Models such as BayesC or GBLUP assume a common (co)variance for a proportion (BayesC) or all (GBLUP) of the SNP effects. In this study, we propose a multi-trait Bayesian whole genome regression method (BayesN0), which is based on grouping a number of predefined SNPs to account for heterogeneous (co)variance structure across the genome. This model was also implemented in single-step Bayesian regression (ssBayesN0). For practical implementation, we considered multi-trait single-step SNPBLUP models, using (co)variance estimates from BayesN0 or ssBayesN0. Genotype data were simulated using haplotypes on first five chromosomes of 2200 Danish Holstein cattle, and phenotypes were simulated for two traits with heritabilities 0.1 or 0.4, assuming 200 quantitative trait loci (QTL). We compared prediction accuracy from different prediction models and different region sizes (one SNP, 100 SNPs, one chromosome or whole genome). In general, highest accuracies were obtained when 100 adjacent SNPs were grouped together. The ssBayesN0 improved accuracies over BayesN0, and using (co)variance estimates from ssBayesN0 generally yielded higher accuracies than using (co)variance estimates from BayesN0, for the 100 SNPs region size. Our results suggest that it could be a good strategy to estimate (co)variance components from ssBayesN0, and then to use those estimates in genomic prediction using multi-trait single-step SNPBLUP, in routine genomic evaluations.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "273"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "3 April 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "5 September 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "6 September 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "22 October 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Date",
+      "name": "change_date",
+      "order": 5,
+      "value": "21 February 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Type",
+      "name": "change_type",
+      "order": 6,
+      "value": "Correction"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 7,
+      "value": "A Correction to this paper has been published:"
+    },
+    {
+      "URL": "https://doi.org/10.1038/s41437-020-0299-7",
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 8,
+      "value": "https://doi.org/10.1038/s41437-020-0299-7"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-1010-683X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Karaman",
+      "given": "Emre",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Lund",
+      "given": "Mogens S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Su",
+      "given": "Guosheng",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Heredity"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        23
+      ]
+    ],
+    "date-time": "2019-10-23T04:27:34Z",
+    "timestamp": 1571804854000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        21
+      ]
+    ],
+    "date-time": "2023-09-21T23:50:34Z",
+    "timestamp": 1695340234000
+  },
+  "funder": [
+    {
+      "name": "This study was funded by the Multi-Genomics project from the Danish Milk Levy Fund (Aarhus, Denmark)."
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        18
+      ]
+    ],
+    "date-time": "2024-04-18T14:32:16Z",
+    "timestamp": 1713450736270
+  },
+  "is-referenced-by-count": 13,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0018-067X"
+    },
+    {
+      "type": "electronic",
+      "value": "1365-2540"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          2,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            22
+          ]
+        ],
+        "date-time": "2019-10-22T00:00:00Z",
+        "timestamp": 1571702400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            22
+          ]
+        ],
+        "date-time": "2019-10-22T00:00:00Z",
+        "timestamp": 1571702400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://www.nature.com/articles/s41437-019-0273-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-019-0273-4",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-019-0273-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "274-287",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        10,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        1
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3168/jds.2009-2730",
+      "author": "I Aguilar",
+      "doi-asserted-by": "crossref",
+      "first-page": "743",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR1",
+      "unstructured": "Aguilar I, Misztal I, Johnson D, Legarra A, Tsuruta S, Lawlor T (2010) A unified approach to utilize phenotypic, full pedigree, and genomic information for genetic evaluation of Holstein final score. J Dairy Sci 93:743–752",
+      "volume": "93",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1137/141000671",
+      "author": "J Bezanson",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "journal-title": "SIAM Rev",
+      "key": "273_CR2",
+      "unstructured": "Bezanson J, Edelman A, Karpinski S, Shah V (2017) Julia: a fresh approach to numerical computing. SIAM Rev 59:65–98",
+      "volume": "59",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/1471-2164-13-543",
+      "author": "RF Brøndum",
+      "doi-asserted-by": "crossref",
+      "journal-title": "BMC Genomics",
+      "key": "273_CR3",
+      "unstructured": "Brøndum RF, Su G, Lund M, Bowman P, Goddard M, Hayes B (2012) Genome position specific priors for genomic prediction. BMC Genomics 13:543",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s12711-014-0052-x",
+      "author": "M Calus",
+      "doi-asserted-by": "crossref",
+      "first-page": "52",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR4",
+      "unstructured": "Calus M, Schrooten C, Veerkamp R (2014) Genomic prediction of breeding values using previously estimated SNP variances. Genet Sel Evol 46:52",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/1297-9686-43-26",
+      "author": "MP Calus",
+      "doi-asserted-by": "crossref",
+      "first-page": "26",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR5",
+      "unstructured": "Calus MP, Veerkamp RF (2011) Accuracy of multi-trait genomic selection using different methods. Genet Sel Evol 43:26",
+      "volume": "43",
+      "year": "2011"
+    },
+    {
+      "author": "H Cheng",
+      "first-page": "859",
+      "journal-title": "World Congr Genet Appl Livest Prod",
+      "key": "273_CR6",
+      "unstructured": "Cheng H, Fernando R, Garrick D (2018a) JWAS: Julia implementation of whole-genome analysis software. World Congr Genet Appl Livest Prod 11:859",
+      "volume": "11",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1534/genetics.118.300650",
+      "author": "H Cheng",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "journal-title": "Genetics",
+      "key": "273_CR7",
+      "unstructured": "Cheng H, Kizilkaya K, Zeng J, Garrick D, Fernando R (2018b) Genomic prediction from multiple-trait Bayesian regression methods using mixture priors. Genetics 209:89–103",
+      "volume": "209",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1297-9686-42-2",
+      "author": "O Christensen",
+      "doi-asserted-by": "crossref",
+      "first-page": "2",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR8",
+      "unstructured": "Christensen O, Lund M (2010) Genomic prediction when some animals are not genotyped. Genet Sel Evol 42:2",
+      "volume": "42",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1186/1297-9686-43-18",
+      "author": "S Clark",
+      "doi-asserted-by": "crossref",
+      "first-page": "18",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR9",
+      "unstructured": "Clark S, Hickey J, van der Werf H (2011) Different models of genetic variation and their effect on genomic evaluation. Genet Sel Evol 43:18",
+      "volume": "43",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/1297-9686-42-9",
+      "author": "A Coster",
+      "doi-asserted-by": "crossref",
+      "first-page": "9",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR10",
+      "unstructured": "Coster A, JW B, Calus M, van Arendonk JA, Bovenhuis H (2010) Sensitivity of methods for estimating breeding values using genetic markers to the number of QTL and distribution of QTL variance. Genet Sel Evol 42:9",
+      "volume": "42",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1071/AN10096",
+      "author": "H Daetwyler",
+      "doi-asserted-by": "crossref",
+      "first-page": "1004",
+      "journal-title": "Anim Prod Sci",
+      "key": "273_CR11",
+      "unstructured": "Daetwyler H, Hickey J, Henshall J, Dominik S, Gredler B et al. (2010a) Accuracy of estimated genomic breeding values for wool and meat traits in a multi-breed sheep population. Anim Prod Sci 50:1004–1010",
+      "volume": "50",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1534/genetics.110.116855",
+      "author": "H Daetwyler",
+      "doi-asserted-by": "crossref",
+      "first-page": "1021",
+      "journal-title": "Genetics",
+      "key": "273_CR12",
+      "unstructured": "Daetwyler H, Pong-Wong R, Villanueva B, Woolliams J (2010b) The impact of genetic architecture on genome-wide evaluation methods. Genetics 185:1021–1031",
+      "volume": "185",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0003395",
+      "author": "H Daetwyler",
+      "doi-asserted-by": "crossref",
+      "journal-title": "PLoS ONE",
+      "key": "273_CR13",
+      "unstructured": "Daetwyler H, Villanueva B, Woolliams J (2008) Accuracy of predicting the genetic risk of disease using a genome-wide approach. PLoS ONE 3:e3395",
+      "volume": "3",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005048",
+      "author": "G de los Campos",
+      "doi-asserted-by": "crossref",
+      "journal-title": "PLoS Genet",
+      "key": "273_CR14",
+      "unstructured": "de los Campos G, Sorensen D, Gianola D (2015) Genomic heritability: what is it? PLoS Genet 11:e1005048",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "key": "273_CR15",
+      "unstructured": "Dvorkin D (2012) lcmix: Layered and chained mixture models. R package version 03/r5. https://r-forge.r-project.org/R/?group_id=1092"
+    },
+    {
+      "DOI": "10.1186/1297-9686-46-50",
+      "author": "R Fernando",
+      "doi-asserted-by": "crossref",
+      "first-page": "50",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR16",
+      "unstructured": "Fernando R, Dekkers J, Garrick D (2014) A class of Bayesian methods to combine large numbers of genotyped and non-genotyped animals for whole-genome analyses. Genet Sel Evol 46:50",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "key": "273_CR17",
+      "unstructured": "Fernando R, Gianola D (2018) Bayesian inference of genomic similarity among individuals from markers and phenotypes. In: Proceedings of the World Congress on Genetics Applied to Livestock Production, Auckland, New Zealand. p 942"
+    },
+    {
+      "DOI": "10.1186/s12711-017-0335-0",
+      "author": "BO Fragomeni",
+      "doi-asserted-by": "crossref",
+      "first-page": "59",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR18",
+      "unstructured": "Fragomeni BO, Lourenco DAL, Masuda Y, Legarra A, Misztal I (2017) Incorporation of causative quantitative trait nucleotides in single-step GBLUP. Genet Sel Evol 49:59",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3168/jds.2018-14913",
+      "author": "H Gao",
+      "doi-asserted-by": "crossref",
+      "first-page": "10082",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR19",
+      "unstructured": "Gao H, Koivula M, Jensen J, Strandén I, Madsen P, Pitkänen T et al. (2018) Short communication: genomic prediction using different single-step methods in the Finnish red dairy cattle population. J Dairy Sci 101:10082–10088",
+      "volume": "101",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s12711-017-0364-8",
+      "author": "G Gebreyesus",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR20",
+      "unstructured": "Gebreyesus G, Lund M, Buitenhuis B, Bovenhuis H, Poulsen N, Janss L (2017) Modeling heterogeneous (co)variances from adjacent-SNP groups improves genomic prediction for milk protein composition traits. Genet Sel Evol 49:89",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1534/genetics.109.103952",
+      "author": "D Gianola",
+      "doi-asserted-by": "crossref",
+      "first-page": "347",
+      "journal-title": "Genetics",
+      "key": "273_CR21",
+      "unstructured": "Gianola D, de los Campos G, Hill W, Manfredi E, Fernando R (2009) Additive genetic variability and Bayesian alphabet. Genetics 183:347–363",
+      "volume": "183",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1007/s10709-008-9308-0",
+      "author": "M Goddard",
+      "doi-asserted-by": "crossref",
+      "first-page": "245",
+      "journal-title": "Genetica",
+      "key": "273_CR22",
+      "unstructured": "Goddard M (2009) Genomic selection: prediction of accuracy and maximization of long term response. Genetica 136:245–257",
+      "volume": "136",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nrg2575",
+      "author": "M Goddard",
+      "doi-asserted-by": "crossref",
+      "first-page": "381",
+      "journal-title": "Nat Rev Genet",
+      "key": "273_CR23",
+      "unstructured": "Goddard M, Hayes B (2009) Mapping genes for complex traits in domestic animals and their use in breeding programmes. Nat Rev Genet 10:381–391",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1098/rspb.2016.0569",
+      "author": "M Goddard",
+      "doi-asserted-by": "crossref",
+      "first-page": "pii: 20160569",
+      "journal-title": "Proc R Soc B",
+      "key": "273_CR24",
+      "unstructured": "Goddard M, Kemper K, MacLeod I, Chamberlain A, Hayes B (2016) Genetics of complex traits: prediction of phenotype, identification of causal polymorphisms and genetic architecture. Proc R Soc B 283:pii: 20160569",
+      "volume": "283",
+      "year": "2016"
+    },
+    {
+      "author": "G Guo",
+      "journal-title": "BMC Genet",
+      "key": "273_CR25",
+      "unstructured": "Guo G, Zhao F, Wang Y, Zhang Y, Du L, Su G (2014) Comparison of single-trait and multiple-trait genomic prediction models. BMC Genet 15:30",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1534/genetics.107.081190",
+      "author": "D Habier",
+      "doi-asserted-by": "crossref",
+      "first-page": "2389",
+      "journal-title": "Genetics",
+      "key": "273_CR26",
+      "unstructured": "Habier D, Fernando R, Dekkers J (2007) The impact of genetic relationship information on genome-assisted breeding values. Genetics 177:2389–2397",
+      "volume": "177",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-186",
+      "author": "D Habier",
+      "doi-asserted-by": "crossref",
+      "first-page": "186",
+      "journal-title": "BMC Bioinform",
+      "key": "273_CR27",
+      "unstructured": "Habier D, Fernando RL, Kizilkaya K, Garrick DJ(2010a) Extension of the Bayesian alphabet for genomic selection BMC Bioinform 12:186",
+      "volume": "12",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1186/1297-9686-42-5",
+      "author": "D Habier",
+      "doi-asserted-by": "crossref",
+      "first-page": "5",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR28",
+      "unstructured": "Habier D, Tetens J, Seefried FR, Lichtner P, Thaller G(2010b) The impact of genetic relationship information on genomic breeding values in German Holstein cattle Genet Sel Evol 42:5",
+      "volume": "42",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1186/1471-2105-14-34",
+      "author": "T Hayashi",
+      "doi-asserted-by": "crossref",
+      "first-page": "34",
+      "journal-title": "BMC Bioinform",
+      "key": "273_CR29",
+      "unstructured": "Hayashi T, Iwata H (2013) A bayesian method and its variational approximation for prediction of genomic breeding values in multiple traits. BMC Bioinform 14:34",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.3168/jds.2008-1646",
+      "author": "B Hayes",
+      "doi-asserted-by": "crossref",
+      "first-page": "433",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR30",
+      "unstructured": "Hayes B, Bowman P, Chamberlain A, Goddard M (2009) Invited review: genomic selection in dairy cattle: progress and challenges. J Dairy Sci 92:433–443",
+      "volume": "92",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.3168/jds.2008-1208",
+      "author": "J Heck",
+      "doi-asserted-by": "crossref",
+      "first-page": "1192",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR31",
+      "unstructured": "Heck J, Schennink A, van Valenberg H, Bovenhuis H, Visker M, van Arendonk J et al. (2009) Effects of milk protein variants on the protein composition of bovine milk. J Dairy Sci 92:1192–1202",
+      "volume": "92",
+      "year": "2009"
+    },
+    {
+      "key": "273_CR32",
+      "unstructured": "Henderson C (1984) Applications of linear models in animal breeding. University Guelph, Guelph, Ontario, Canada"
+    },
+    {
+      "DOI": "10.1186/s12711-017-0329-y",
+      "author": "M Hess",
+      "doi-asserted-by": "crossref",
+      "first-page": "54",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR33",
+      "unstructured": "Hess M, Druet T, Hess A, Garrick D (2017) Fixed-length haplotypes can improve genomic prediction accuracy in an admixed dairy cattle population. Genet Sel Evol 49:54",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1534/genetics.112.144246",
+      "author": "Y Jia",
+      "doi-asserted-by": "crossref",
+      "first-page": "1513",
+      "journal-title": "Genetics",
+      "key": "273_CR34",
+      "unstructured": "Jia Y, Jannink JL (2012) Multiple-trait genomic selection methods increase genetic value prediction accuracy. Genetics 192:1513–1522",
+      "volume": "192",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0161054",
+      "author": "E Karaman",
+      "doi-asserted-by": "crossref",
+      "journal-title": "PLoS ONE",
+      "key": "273_CR35",
+      "unstructured": "Karaman E, Cheng H, Firat M, Garrick D, Fernando R (2016) An upper bound for accuracy of prediction using GBLUP. PLoS ONE 11:e0161054",
+      "volume": "11",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1534/g3.118.200673",
+      "author": "E Karaman",
+      "doi-asserted-by": "crossref",
+      "first-page": "3549",
+      "journal-title": "G3-Genes Genom Genet",
+      "key": "273_CR36",
+      "unstructured": "Karaman E, Lund M, Anche M, Janss L, Su G (2018) Genomic prediction using multi-trait weighted GBLUP accounting for heterogeneous variances and covariances across the genome. G3-Genes Genom Genet 8:3549–3558",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/hmg/dds332",
+      "author": "K Kemper",
+      "doi-asserted-by": "crossref",
+      "first-page": "45",
+      "journal-title": "Hum Mol Genet",
+      "key": "273_CR37",
+      "unstructured": "Kemper K, Goddard M (2012) Understanding and predicting complex traits: knowledge from cattle. Hum Mol Genet 21:45–51",
+      "volume": "21",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.2527/jas.2009-2064",
+      "author": "K Kizilkaya",
+      "doi-asserted-by": "crossref",
+      "first-page": "544",
+      "journal-title": "J Anim Sci",
+      "key": "273_CR38",
+      "unstructured": "Kizilkaya K, Fernando R, Garrick D (2010) Genomic prediction of simulated multibreed and purebred performance using observed fifty thousand single nucleotide polymorphism genotypes. J Anim Sci 88:544–551",
+      "volume": "88",
+      "year": "2010"
+    },
+    {
+      "author": "X Li",
+      "journal-title": "BMC Genet",
+      "key": "273_CR39",
+      "unstructured": "Li X, Lund M, Janss L, Wang C, Ding X, Zhang Q et al. (2017) The patterns of genomic variances and covariances across genome for milk production traits between Chinese and Nordic Holstein populations. BMC Genet 18:12",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "author": "M Lopes",
+      "first-page": "59",
+      "journal-title": "J Anim Sci",
+      "key": "273_CR40",
+      "unstructured": "Lopes M, Bovenhuis H, van Son M, Nordbø Ø, Grindflek E, Knol E et al. (2017) Using markers with large effect in genetic and genomic predictions. J Anim Sci 95:59–71",
+      "volume": "95",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1534/genetics.109.107391",
+      "author": "T Luan",
+      "doi-asserted-by": "crossref",
+      "first-page": "1119",
+      "journal-title": "Genetics",
+      "key": "273_CR41",
+      "unstructured": "Luan T, Woolliams J, Lien S, Kent M, Svendsen M, Meuwissen T (2009) The accuracy of genomic selection in Norwegian red cattle assessed by cross-validation. Genetics 183:1119–1126",
+      "volume": "183",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/age.12369",
+      "author": "B Lukić",
+      "doi-asserted-by": "crossref",
+      "first-page": "607",
+      "journal-title": "Anim Genet",
+      "key": "273_CR42",
+      "unstructured": "Lukić B, Pong-Wong R, Rowe S, de Koning D, Velander I, Haley C et al. (2015) Efficiency of genomic prediction for boar taint reduction in Danish Landrace pigs. Anim Genet 46:607–616",
+      "volume": "46",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/1753-6561-3-S1-S1",
+      "author": "M Lund",
+      "doi-asserted-by": "crossref",
+      "journal-title": "BMC Proc",
+      "key": "273_CR43",
+      "unstructured": "Lund M, Sahana G, de Koning D, Su G, Carlborg O (2009) Comparison of analyses of the QTLMAS XII common dataset. i: Genomic selection. BMC Proc 3:S1",
+      "volume": "3",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/1297-9686-41-35",
+      "author": "T Meuwissen",
+      "doi-asserted-by": "crossref",
+      "first-page": "35",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR44",
+      "unstructured": "Meuwissen T (2009) Accuracy of breeding values of unrelated individuals predicted by dense SNP genotyping. Genet Sel Evol 41:35",
+      "volume": "41",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/genetics/157.4.1819",
+      "author": "T Meuwissen",
+      "doi-asserted-by": "crossref",
+      "first-page": "1819",
+      "journal-title": "Genetics",
+      "key": "273_CR45",
+      "unstructured": "Meuwissen T, Hayes B, Goddard M (2001) Prediction of total genetic value using genome-wide dense marker maps. Genetics 157:1819–1829",
+      "volume": "157",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1017/S1751731116002366",
+      "author": "I Misztal",
+      "doi-asserted-by": "crossref",
+      "first-page": "731",
+      "journal-title": "Animal",
+      "key": "273_CR46",
+      "unstructured": "Misztal I, Legarra A (2017) Invited review: efficient computation strategies in genomic selection. Animal 11:731–736",
+      "volume": "11",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.2527/1997.7571738x",
+      "author": "A Nejati-Javaremi",
+      "doi-asserted-by": "crossref",
+      "first-page": "1738",
+      "journal-title": "J Anim Sci",
+      "key": "273_CR47",
+      "unstructured": "Nejati-Javaremi A, Smith C, Gibson J (1997) Effect of total allelic relationship on accuracy of evaluation and response to selection. J Anim Sci 75:1738–1745",
+      "volume": "75",
+      "year": "1997"
+    },
+    {
+      "author": "J Ødegård",
+      "first-page": "402",
+      "journal-title": "Front Genet",
+      "key": "273_CR48",
+      "unstructured": "Ødegård J, Moen T, Santi N, Korsvoll S, Kjøglum S, Meuwissen T (2014) Genomic prediction in an admixed population of Atlantic salmon (Salmo salar). Front Genet 5:402",
+      "volume": "5",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1534/genetics.111.137026",
+      "author": "MJ Resende",
+      "doi-asserted-by": "crossref",
+      "first-page": "1503",
+      "journal-title": "Genetics",
+      "key": "273_CR49",
+      "unstructured": "Resende MJ, Munoz P, Resende M, Garrick D, Fernando R et al. (2012) Accuracy of genomic selection methods in a standard dataset of Loblolly Pine (Pinus taeda L.). Genetics 190:1503–1510",
+      "volume": "190",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.3168/jds.S0022-0302(84)81479-4",
+      "author": "L Schaeffer",
+      "doi-asserted-by": "crossref",
+      "first-page": "1567",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR50",
+      "unstructured": "Schaeffer L (1984) Sire and cow evaluation under multiple trait models. J Dairy Sci 67:1567–1580",
+      "volume": "67",
+      "year": "1984"
+    },
+    {
+      "DOI": "10.3168/jds.2010-4030",
+      "author": "G Schopen",
+      "doi-asserted-by": "crossref",
+      "first-page": "3148",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR51",
+      "unstructured": "Schopen G, Visker M, Koks P, Mullaart E, van Arendonk J, Bovenhuis H (2011) Whole-genome association study for milk protein composition in dairy cattle. J Dairy Sci 94:3148–3158",
+      "volume": "94",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/1297-9686-44-18",
+      "author": "L Sørensen",
+      "doi-asserted-by": "crossref",
+      "first-page": "18",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR52",
+      "unstructured": "Sørensen L, Janss L, Madsen P, Mark T, Lund M (2012) Estimation of (co)variances for genomic regions of flexible sizes: application to complex infectious udder diseases in dairy cattle. Genet Sel Evol 44:18",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/hdy.2015.113",
+      "author": "J Spindel",
+      "doi-asserted-by": "crossref",
+      "first-page": "395",
+      "journal-title": "Heredity",
+      "key": "273_CR53",
+      "unstructured": "Spindel J, Begum H, Akdemir D, Collard B, Redoña E, Jannink J et al. (2016) Genome-wide prediction models that incorporate de novo GWAS are a powerful new tool for tropical rice improvement. Heredity 116:395–408",
+      "volume": "116",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3168/jds.2008-1929",
+      "author": "I Stranden",
+      "doi-asserted-by": "crossref",
+      "first-page": "2971",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR54",
+      "unstructured": "Stranden I, Garrick D (2009) Technical note: Derivation of equivalent computing algorithms for genomic predictions and reliabilities of animal merit. J Dairy Sci 92:2971–2975",
+      "volume": "92",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.3168/jds.2012-5379",
+      "author": "G Su",
+      "doi-asserted-by": "crossref",
+      "first-page": "4657",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR55",
+      "unstructured": "Su G, Brøndum R, Ma P, Guldbrandtsen B, Aamand G, Lund M (2012a) Comparison of genomic predictions using medium-density (54,000) and high-density (777,000) single nucleotide polymorphism marker panels in Nordic Holstein and Red Dairy Cattle populations. J Dairy Sci 95:4657–4665",
+      "volume": "95",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.3168/jds.2014-8210",
+      "author": "G Su",
+      "doi-asserted-by": "crossref",
+      "first-page": "6547",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR56",
+      "unstructured": "Su G, Christensen O, Janss L, Lund M (2014) Comparison of genomic predictions using genomic relationship matrices built with different weighting factors to account for locus-specific variances. J Dairy Sci 97:6547–6559",
+      "volume": "97",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3168/jds.2011-4804",
+      "author": "G Su",
+      "doi-asserted-by": "crossref",
+      "first-page": "909",
+      "journal-title": "J Dairy Sci",
+      "key": "273_CR57",
+      "unstructured": "Su G, Madsen P, Nielsen U, Mantysaari E, Aaamand G, Christensen O et al. (2012b) Genomic prediction for Nordic Red Cattle using one-step and selection index blending. J Dairy Sci 95:909–917",
+      "volume": "95",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s12711-017-0310-9",
+      "author": "M Taskinen",
+      "doi-asserted-by": "crossref",
+      "first-page": "36",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR58",
+      "unstructured": "Taskinen M, Mäntysaari E, Strandén I (2017) Single-step SNP-BLUP with on-the-fly imputed genotypes and residual polygenic effects. Genet Sel Evol 49:36",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/0301-6226(86)90071-0",
+      "author": "R Thompson",
+      "doi-asserted-by": "crossref",
+      "first-page": "299",
+      "journal-title": "Livest Prod Sci",
+      "key": "273_CR59",
+      "unstructured": "Thompson R, Meyer K (1986) A review of theoretical aspects in the estimation of breeding values for multi-trait selection. Livest Prod Sci 15:299–313",
+      "volume": "15",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1186/s12711-015-0100-1",
+      "author": "F Tiezzi",
+      "doi-asserted-by": "crossref",
+      "first-page": "24",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR60",
+      "unstructured": "Tiezzi F, Maltecca C (2015) Accounting for trait architecture in genomic predictions of US Holstein cattle using a weighted realized relationship matrix. Genet Sel Evol 47:24",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12711-016-0226-9",
+      "author": "H Tsai",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "journal-title": "Genet Sel Evol",
+      "key": "273_CR61",
+      "unstructured": "Tsai H, Hamilton A, Tinch A, Guy D, Bron J, Taggart J et al. (2016) Genomic prediction of host resistance to sea lice in farmed Atlantic salmon populations. Genet Sel Evol 48:47",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "author": "L Wang",
+      "journal-title": "BMC Genet",
+      "key": "273_CR62",
+      "unstructured": "Wang L, Sørensen P, Janss L, Ostersen T, Edwards D (2013) Genome-wide and local pattern of linkage disequilibrium and persistence of phase for 3 Danish pig breeds. BMC Genet 14:115",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "key": "273_CR63",
+      "unstructured": "Wang Z, Wu Y, Chu H (2018) On equivalence of the LKJ distribution and the restricted Wishart distribution. arXiv e-prints arXiv:1809.04746"
+    },
+    {
+      "DOI": "10.31274/ans_air-180814-452",
+      "doi-asserted-by": "crossref",
+      "key": "273_CR64",
+      "unstructured": "Zeng J, Garrick DJ, Dekkers JC, Fernando RL (2016) A nested mixture model for genomic prediction using whole-genome SNP genotypes. Animal Industry Report: AS 662, ASLR3060"
+    },
+    {
+      "author": "J Zeng",
+      "journal-title": "PLoS ONE",
+      "key": "273_CR65",
+      "unstructured": "Zeng J, Garrick D, Dekkers J, Fernando R (2018) A nested mixture model for genomic prediction using whole-genome SNP genotypes. PLoS ONE 13:e0194683",
+      "volume": "13",
+      "year": "2018"
+    },
+    {
+      "author": "Z Zhang",
+      "journal-title": "PLoS ONE",
+      "key": "273_CR66",
+      "unstructured": "Zhang Z, Liu J, Ding X, Bijma P, de Koning DJ, Zhang Q (2010) Best linear unbiased prediction of genomic breeding values using a trait-specific marker-derived relationship matrix. PLoS ONE 5:e12648",
+      "volume": "5",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41437-017-0010-9",
+      "author": "L Zhou",
+      "doi-asserted-by": "crossref",
+      "first-page": "100",
+      "journal-title": "Heredity",
+      "key": "273_CR67",
+      "unstructured": "Zhou L, Mrode R, Zhang S, Zhang Q, Li B, Liu J (2018) Factors affecting GEBV accuracy with single-step Bayesian models. Heredity 120:100–109",
+      "volume": "120",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 67,
+  "references-count": 67,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41437-019-0273-4"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Heredity"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Multi-trait single-step genomic prediction accounting for heterogeneous (co)variances over the genome"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "124"
+}

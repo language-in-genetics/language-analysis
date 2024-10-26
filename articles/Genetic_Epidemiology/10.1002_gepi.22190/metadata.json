@@ -1,0 +1,538 @@
+{
+  "DOI": "10.1002/gepi.22190",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22190",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eAnalysis of the X chromosome has been largely neglected in genetic studies mainly because of complex underlying biological mechanisms. On the other hand, the study of human microbiome data (typically over‐dispersed counts with an excess of zeros) has generated great interest recently because of advancements in next‐generation sequencing technologies. We propose a novel approach to infer the association between host genetic variants in the X‐chromosome and microbiome data. The method accounts for random X‐chromosome inactivation (XCI), skewed (or nonrandom) XCI (XCI‐S), and escape of XCI (XCI‐E). The inference is performed through a finite mixture model (FMM), in which an indicator variable denoting the “true” biological mechanism is treated as missing data. An expectation‐maximization algorithm on zero‐inflated and two‐part models is implemented to estimate genetic effects. We investigate the performance of the FMM along with strategies that assume XCI and XCI‐E mechanisms for all subjects compared with alternative approaches. Briefly, an XCI mechanism codes males’ genotypes as homozygous females, whereas under XCI‐E, males are treated as heterozygous females. By comprehensive simulations, we evaluate tests of the hypothesis under a computationally efficient score statistic. In summary, the FMM renders reduced bias and commensurate power compared to XCI, XCI‐E, and alternative strategies while maintaining adequate Type 1 error control. The proposed method has far‐reaching applications. In particular, we illustrate its usage on a large‐scale human microbiome study, the Genetic, Environmental and Microbial (GEM) project, to test for the genetic association on the X chromosome.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22190"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-02-27"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2019-01-06"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-01-18"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-2052-2626",
+      "affiliation": [
+        {
+          "name": "Dalla Lana School of Public Health University of Toronto Toronto ON Canada"
+        },
+        {
+          "name": "Lunenfeld‐Tanenbaum Research Institute Sinai Health System Toronto ON Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Espin‐Garcia",
+      "given": "Osvaldo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lunenfeld‐Tanenbaum Research Institute Sinai Health System Toronto ON Canada"
+        },
+        {
+          "name": "Zane Cohen Centre for Digestive Diseases Mount Sinai Hospital Toronto ON Canada"
+        },
+        {
+          "name": "Division of Gastroenterology, Department of Medicine University of Toronto Toronto ON Canada"
+        }
+      ],
+      "family": "Croitoru",
+      "given": "Kenneth",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Dalla Lana School of Public Health University of Toronto Toronto ON Canada"
+        },
+        {
+          "name": "Department of Biostatistics Princess Margaret Cancer Centre, University Health Network Toronto ON Canada"
+        }
+      ],
+      "family": "Xu",
+      "given": "Wei",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        18
+      ]
+    ],
+    "date-time": "2019-01-18T10:46:21Z",
+    "timestamp": 1547808381000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        10
+      ]
+    ],
+    "date-time": "2023-09-10T23:18:35Z",
+    "timestamp": 1694387915000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000038",
+      "award": [
+        "RGPIN‐2017‐06672"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Natural Sciences and Engineering Research Council of Canada"
+    },
+    {
+      "DOI": "10.13039/501100000024",
+      "award": [
+        "145546",
+        "GET‐101831",
+        "CMF108031"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Canadian Institutes of Health Research"
+    },
+    {
+      "DOI": "10.13039/501100000024",
+      "doi-asserted-by": "publisher",
+      "name": "Canadian Institutes of Health Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        17
+      ]
+    ],
+    "date-time": "2024-04-17T21:10:26Z",
+    "timestamp": 1713388226025
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        18
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            18
+          ]
+        ],
+        "date-time": "2019-01-18T00:00:00Z",
+        "timestamp": 1547769600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22190",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22190",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22190",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22190",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "427-439",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        18
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        1,
+        18
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        6
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "X chromosome: X inactivation",
+      "author": "Ahn J. Y.",
+      "first-page": "24",
+      "issue": "1",
+      "journal-title": "Nature Education",
+      "key": "e_1_2_9_1_2_1",
+      "volume": "1",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/2049-2618-1-31",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_3_1"
+    },
+    {
+      "DOI": "10.1186/s13059-015-0759-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_4_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.f.303",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_5_1"
+    },
+    {
+      "article-title": "Bayesian model averaging for the X‐chromosome inactivation dilemma in genetic association study",
+      "author": "Chen B.",
+      "first-page": "kxy049",
+      "journal-title": "Biostatistics",
+      "key": "e_1_2_9_1_6_1",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1214/12-AOAS592",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_7_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxn007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_8_1"
+    },
+    {
+      "DOI": "10.1186/gm110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_9_1"
+    },
+    {
+      "DOI": "10.1007/s12041-015-0574-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_10_1"
+    },
+    {
+      "DOI": "10.1177/096228029600500202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_11_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs050",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_12_1"
+    },
+    {
+      "DOI": "10.1111/j.1474-9726.2012.00790.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_13_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2014.09.053",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_14_1"
+    },
+    {
+      "article-title": "Intestinal microbiota is influenced by gender and body mass index",
+      "author": "Haro C.",
+      "first-page": "1",
+      "issue": "5",
+      "journal-title": "PLoS Biology",
+      "key": "e_1_2_9_1_15_1",
+      "volume": "11",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/gepi.20616",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_16_1"
+    },
+    {
+      "DOI": "10.1038/nature11234",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_17_1"
+    },
+    {
+      "DOI": "10.1038/nature11582",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_18_1"
+    },
+    {
+      "DOI": "10.1159/000097414",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_19_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21782",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_20_1"
+    },
+    {
+      "article-title": "Hypothesis testing and power calculations for taxonomic‐based human microbiome data",
+      "author": "Rosa P. S.",
+      "first-page": "1",
+      "issue": "12",
+      "journal-title": "PLoS ONE",
+      "key": "e_1_2_9_1_21_1",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.2307/1269547",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_22_1"
+    },
+    {
+      "DOI": "10.1146/annurev-statistics-010814-020351",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_23_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1982.tb01203.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_24_1"
+    },
+    {
+      "DOI": "10.1038/nrgastro.2012.152",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_25_1"
+    },
+    {
+      "DOI": "10.1126/science.1233521",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_26_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4899-3242-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_27_1"
+    },
+    {
+      "DOI": "10.1002/0471721182",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_28_1"
+    },
+    {
+      "DOI": "10.1016/j.ecolmodel.2006.05.025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_29_1"
+    },
+    {
+      "author": "Schlattmann P.",
+      "key": "e_1_2_9_1_30_1",
+      "volume-title": "Medical applications of finite mixture models",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw804",
+      "article-title": "A general framework for association analysis of microbial communities on a taxonomic tree",
+      "author": "Tang Z.‐Z.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1278",
+      "issue": "33",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_9_1_31_1",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nrg1709",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_32_1"
+    },
+    {
+      "DOI": "10.1038/nature24265",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_33_1"
+    },
+    {
+      "DOI": "10.1038/ng.3693",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_34_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.06.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_35_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21814",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_36_1"
+    },
+    {
+      "DOI": "10.1890/07-1127.1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_37_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.03.017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_38_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22031",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_39_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0129606",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_40_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22097",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_41_1"
+    },
+    {
+      "DOI": "10.1016/j.immuni.2013.08.013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_42_1"
+    },
+    {
+      "DOI": "10.18637/jss.v027.i08",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_43_1"
+    },
+    {
+      "article-title": "Zero‐inflated negative binomial regression for differential abundance testing in microbiome studies",
+      "author": "Zhang X.",
+      "first-page": "1",
+      "issue": "2",
+      "journal-title": "Journal of Bioinformatics and Genomics",
+      "key": "e_1_2_9_1_44_1",
+      "volume": "2",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/gepi.20244",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_45_1"
+    }
+  ],
+  "reference-count": 44,
+  "references-count": 44,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22190"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A finite mixture model for X‐chromosome association with an emphasis on microbiome data analysis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

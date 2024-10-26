@@ -1,0 +1,639 @@
+{
+  "DOI": "10.1002/gepi.22265",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22265",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn genetic association studies of rare variants, the low power of association tests is one of the main challenges. In this study, we propose a new single‐marker association test called C‐JAMP (Copula‐based Joint Analysis of Multiple Phenotypes), which is based on a joint model of multiple phenotypes given genetic markers and other covariates. We evaluated its performance and compared its empirical type I error and power with existing univariate and multivariate single‐marker and multi‐marker rare‐variant tests in extensive simulation studies. C‐JAMP yielded unbiased genetic effect estimates and valid type I errors with an adjusted test statistic. When strongly dependent traits were jointly analyzed, C‐JAMP had the highest power in all scenarios except when a high percentage of variants were causal with moderate/small effect sizes. When traits with weak or moderate dependence were analyzed, whether C‐JAMP or competing approaches had higher power depended on the effect size. When C‐JAMP was applied with a misspecified copula function, it still achieved high power in some of the scenarios considered. In a real‐data application, we analyzed sequencing data using C‐JAMP and performed the first genome‐wide association studies of high‐molecular‐weight and medium‐molecular‐weight adiponectin plasma concentrations. C‐JAMP identified 20 rare variants with \u003cjats:italic\u003ep\u003c/jats:italic\u003e‐values smaller than 10\u003cjats:sup\u003e−5\u003c/jats:sup\u003e, while all other tests resulted in the identification of fewer variants with higher \u003cjats:italic\u003ep\u003c/jats:italic\u003e‐values. In summary, the results indicate that C‐JAMP is a powerful, flexible, and robust method for association studies, and we identified novel candidate markers for adiponectin. C‐JAMP is implemented as an R package and freely available from \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://cran.r-project.org/package=CJAMP\"\u003ehttps://cran.r‐project.org/package=CJAMP\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22265"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2019-04-23"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2019-09-16"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-11-15"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-9966-6819",
+      "affiliation": [
+        {
+          "name": "Molecular Epidemiology Research Group Max Delbrück Center (MDC) for Molecular Medicine in the Helmholtz Association Berlin Germany"
+        },
+        {
+          "name": "Digital Health and Machine Learning Research Group Hasso Plattner Institute for Digital Engineering Potsdam Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Konigorski",
+      "given": "Stefan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Statistics Memorial University of Newfoundland St. John's NL Canada"
+        },
+        {
+          "name": "Discipline of Genetics, Faculty of Medicine Memorial University of Newfoundland St. John's NL Canada"
+        },
+        {
+          "name": "Discipline of Medicine, Faculty of Medicine Memorial University of Newfoundland St. John's NL Canada"
+        }
+      ],
+      "family": "Yilmaz",
+      "given": "Yildiz E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Molecular Epidemiology Research Group Max Delbrück Center (MDC) for Molecular Medicine in the Helmholtz Association Berlin Germany"
+        }
+      ],
+      "family": "Janke",
+      "given": "Jürgen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology German Institute of Human Nutrition Potsdam‐Rehbrücke (DIfE) Nuthetal Germany"
+        }
+      ],
+      "family": "Bergmann",
+      "given": "Manuela M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology German Institute of Human Nutrition Potsdam‐Rehbrücke (DIfE) Nuthetal Germany"
+        }
+      ],
+      "family": "Boeing",
+      "given": "Heiner",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Molecular Epidemiology Research Group Max Delbrück Center (MDC) for Molecular Medicine in the Helmholtz Association Berlin Germany"
+        },
+        {
+          "name": "Charité—Universitätsmedizin Berlin Berlin Germany"
+        },
+        {
+          "name": "DZHK (German Center for Cardiovascular Research), partner site Berlin Berlin Germany"
+        }
+      ],
+      "family": "Pischon",
+      "given": "Tobias",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        11,
+        16
+      ]
+    ],
+    "date-time": "2019-11-16T07:25:41Z",
+    "timestamp": 1573889141000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        8
+      ]
+    ],
+    "date-time": "2023-09-08T03:30:53Z",
+    "timestamp": 1694143853000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000038",
+      "award": [
+        "2014‐04904"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Natural Sciences and Engineering Research Council of Canada"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        14
+      ]
+    ],
+    "date-time": "2023-11-14T10:17:22Z",
+    "timestamp": 1699957042352
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        11,
+        15
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            15
+          ]
+        ],
+        "date-time": "2019-11-15T00:00:00Z",
+        "timestamp": 1573776000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22265",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22265",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22265",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22265",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "26-40",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        11,
+        15
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        11,
+        15
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1093/carcin/bgs133",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1038/ng.3975",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.03.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1146/annurev-genet-102209-163421",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1995.tb02031.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1159/000012786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.01.017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1093/biomet/65.1.141",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22156",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0205-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1007/978-0-387-98144-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "article-title": "Distribution des valeurs extrêmes en plusieurs dimensions",
+      "author": "Gumbel E. J.",
+      "first-page": "171",
+      "journal-title": "Publications de l'Institut de statistique de l'Université de Paris",
+      "key": "e_1_2_8_13_1",
+      "volume": "9",
+      "year": "1960"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxr025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1038/hdy.2015.9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1201/b13150",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2017.90",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1534/genetics.115.186502",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "article-title": "Prediction of circulating adipokine levels based on body fat compartments and adipose tissue gene expression",
+      "author": "Konigorski S.",
+      "journal-title": "Obesity Facts",
+      "key": "e_1_2_8_19_1",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1753-6561-8-S1-S72",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "article-title": "Genetic association analysis based on a joint model of gene expression and blood pressure",
+      "author": "Konigorski S.",
+      "first-page": "289",
+      "issue": "7",
+      "journal-title": "BMC Proceedings",
+      "key": "e_1_2_8_21_1",
+      "volume": "10",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0178504",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1038/nrendo.2010.18",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1002/sim.6750",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1038/srep34323",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "article-title": "LIMIX: Genetic analysis of multiple traits",
+      "author": "Lippert C.",
+      "first-page": "003905",
+      "journal-title": "BioRxiv",
+      "key": "e_1_2_8_29_1",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt177",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1111/biom.12735",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21663",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1038/ng.3446",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "article-title": "Including phenotypic causal networks in genome‐wide association studies using mixed effects structural equation models",
+      "author": "Momen M.",
+      "first-page": "251421",
+      "journal-title": "BioRxiv",
+      "key": "e_1_2_8_34_1",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2307/2531158",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0034861",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "article-title": "Genomic basis for RNA alterations revealed by whole‐genome analyses of 27 cancer types",
+      "author": "PCAWG Transcriptome Core Group",
+      "first-page": "183889",
+      "journal-title": "BioRxiv",
+      "key": "e_1_2_8_37_1",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1155/2009/757683",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22045",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1093/ije/26.suppl_1.S6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1002/bimj.201300130",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.04.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "article-title": "Joint analysis of multiple phenotypes—Summary of results and discussions from the Genetic Analysis Workshop 19",
+      "author": "Schillert A.",
+      "first-page": "67",
+      "issue": "2",
+      "journal-title": "BMC Genetics",
+      "key": "e_1_2_8_43_1",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.gde.2009.04.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_44_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003235",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    },
+    {
+      "DOI": "10.1038/nrg3461",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    },
+    {
+      "article-title": "Structural equation modeling with latent variables for longitudinal blood pressure traits using general pedigrees",
+      "author": "Song Y. E.",
+      "first-page": "303",
+      "issue": "7",
+      "journal-title": "BMC Proceedings",
+      "key": "e_1_2_8_47_1",
+      "volume": "10",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ejhg.2016.8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_48_1"
+    },
+    {
+      "DOI": "10.1038/oby.2001.50",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_49_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1613365113",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_50_1"
+    },
+    {
+      "DOI": "10.1007/s10519-017-9842-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_51_1"
+    },
+    {
+      "DOI": "10.1111/ahg.12149",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_52_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21945",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_53_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_54_1"
+    },
+    {
+      "DOI": "10.1155/2012/652569",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_55_1"
+    },
+    {
+      "key": "e_1_2_8_56_1",
+      "unstructured": "Yilmaz Y.E.(2009).Estimation and goodness of fit for multivariate survival models based on copulas. UWSpace. Retrieved fromhttp://hdl.handle.net/10012/4571"
+    },
+    {
+      "DOI": "10.1534/genetics.116.199646",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_57_1"
+    },
+    {
+      "article-title": "A copula‐model based semiparametric interaction test under the case‐control design",
+      "author": "Zhang H.",
+      "first-page": "1505",
+      "issue": "4",
+      "journal-title": "Statistica Sinica",
+      "key": "e_1_2_8_58_1",
+      "volume": "23",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.neuroimage.2014.03.061",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_59_1"
+    },
+    {
+      "DOI": "10.4310/SII.2016.v9.n1.a5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_60_1"
+    },
+    {
+      "DOI": "10.1159/000446239",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_61_1"
+    }
+  ],
+  "reference-count": 60,
+  "references-count": 60,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22265"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Powerful rare variant association testing in a copula‐based joint analysis of multiple phenotypes"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

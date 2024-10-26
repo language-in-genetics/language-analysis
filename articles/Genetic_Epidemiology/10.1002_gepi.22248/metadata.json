@@ -1,0 +1,682 @@
+{
+  "DOI": "10.1002/gepi.22248",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22248",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe power of genetic association analyses can be increased by jointly meta‐analyzing multiple correlated phenotypes. Here, we develop a meta‐analysis framework, Meta‐MultiSKAT, that uses summary statistics to test for association between multiple continuous phenotypes and variants in a region of interest. Our approach models the heterogeneity of effects between studies through a kernel matrix and performs a variance component test for association. Using a genotype kernel, our approach can test for rare‐variants and the combined effects of both common and rare‐variants. To achieve robust power, within Meta‐MultiSKAT, we developed fast and accurate omnibus tests combining different models of genetic effects, functional genomic annotations, multiple correlated phenotypes, and heterogeneity across studies. In addition, Meta‐MultiSKAT accommodates situations where studies do not share exactly the same set of phenotypes or have differing correlation patterns among the phenotypes. Simulation studies confirm that Meta‐MultiSKAT can maintain the type‐I error rate at the exome‐wide level of 2.5 × 10\u003cjats:sup\u003e−6\u003c/jats:sup\u003e. Further simulations under different models of association show that Meta‐MultiSKAT can improve the power of detection from 23% to 38% on average over single phenotype‐based meta‐analysis approaches. We demonstrate the utility and improved power of Meta‐MultiSKAT in the meta‐analyses of four white blood cell subtype traits from the Michigan Genomics Initiative (MGI) and SardiNIA studies.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22248"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2019-03-27"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2019-06-13"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-08-21"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        }
+      ],
+      "family": "Dutta",
+      "given": "Diptavo",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1306-1868",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Gagliano Taliun",
+      "given": "Sarah A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        }
+      ],
+      "family": "Weinstock",
+      "given": "Joshua S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        }
+      ],
+      "family": "Zawistowski",
+      "given": "Matthew",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica Consiglio Nazionale delle Ricerche (CNR)  Monserrato Cagliari Italy"
+        }
+      ],
+      "family": "Sidore",
+      "given": "Carlo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        }
+      ],
+      "family": "Fritsche",
+      "given": "Lars G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica Consiglio Nazionale delle Ricerche (CNR)  Monserrato Cagliari Italy"
+        },
+        {
+          "name": "Dipartimento di Scienze Biomediche Università degli Studi di Sassari  Sassari Italy"
+        }
+      ],
+      "family": "Cucca",
+      "given": "Francesco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Laboratory of Genetics, National Institute on Aging US National Institutes of Health  Baltimore Maryland"
+        }
+      ],
+      "family": "Schlessinger",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        }
+      ],
+      "family": "Abecasis",
+      "given": "Gonçalo R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Pain Medicine, Department of Anesthesiology University of Michigan Medical School  Ann Arbor Michigan"
+        },
+        {
+          "name": "Institute for Healthcare Policy and Innovation University of Michigan  Ann Arbor Michigan"
+        }
+      ],
+      "family": "Brummett",
+      "given": "Chad M.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8097-3878",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics, School of Public Health University of Michigan  Ann Arbor Michigan"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Lee",
+      "given": "Seunggeun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        8,
+        21
+      ]
+    ],
+    "date-time": "2019-08-21T11:01:31Z",
+    "timestamp": 1566385291000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        9
+      ]
+    ],
+    "date-time": "2023-09-09T14:48:48Z",
+    "timestamp": 1694270928000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01‐HG008773",
+        "R01‐LM012535"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000049",
+      "award": [
+        "HHSN271201100005C",
+        "N01‐AG‐1‐2109"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Aging"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "HL117626"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:54:49Z",
+    "timestamp": 1709254489611
+  },
+  "is-referenced-by-count": 9,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        8,
+        21
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            8,
+            21
+          ]
+        ],
+        "date-time": "2019-08-21T00:00:00Z",
+        "timestamp": 1566345600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22248",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22248",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22248",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "800-814",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        8,
+        21
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        8,
+        21
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        10
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1016/j.cell.2016.10.042",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_2_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.01.017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_3_1"
+    },
+    {
+      "DOI": "10.1038/ng.3211",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_4_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002254",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_5_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddt010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_6_1"
+    },
+    {
+      "DOI": "10.1038/ng.3513",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_7_1"
+    },
+    {
+      "DOI": "10.1111/j.1751-5823.2005.tb00254.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22156",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21715",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_10_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.1052.13.6",
+      "article-title": "WBC count and the risk of cancer mortality in a national sample of U.S. adults: Results from the Second National Health and Nutrition Examination Survey mortality study",
+      "author": "Erlinger T. P.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1052",
+      "issue": "6",
+      "journal-title": "Cancer Epidemiology, Biomarkers \u0026 Prevention: A Publication of the American Association for Cancer Research, Cosponsored by the American Society of Preventive Oncology",
+      "key": "e_1_2_11_1_11_1",
+      "volume": "13",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn563",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_12_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.04.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_13_1"
+    },
+    {
+      "DOI": "10.5551/jat.9.219",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_14_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.07.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_15_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_17_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.04.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_18_1"
+    },
+    {
+      "DOI": "10.1038/ng.401",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_19_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0047-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_20_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddu401",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_21_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201206-1013OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_22_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0180332",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_23_1"
+    },
+    {
+      "DOI": "10.1038/ng.2892",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_24_1"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2018.02.048",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_25_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.05.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_26_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_27_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_29_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007139",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_30_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_31_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_32_1"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_33_1"
+    },
+    {
+      "article-title": "Longitudinal relation between smoking and white blood cells",
+      "author": "Mu oz A.",
+      "first-page": "734",
+      "issue": "8",
+      "journal-title": "American Journal of Epidemiology",
+      "key": "e_1_2_11_1_34_1",
+      "volume": "144",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1146/annurev-genom-091212-153520",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_35_1"
+    },
+    {
+      "DOI": "10.1038/nrg3461",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_36_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22105",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_37_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21937",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_38_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21617",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_39_1"
+    },
+    {
+      "article-title": "Molecular and functional characterization of two novel human C‐C Chemokines as inhibitors of two distinct classes of myeloid progenitors",
+      "author": "Salcedo T.",
+      "first-page": "1163",
+      "issue": "7",
+      "journal-title": "The Journal of Experimental Medicine",
+      "key": "e_1_2_11_1_40_1",
+      "volume": "185",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1186/s13075-017-1244-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_41_1"
+    },
+    {
+      "DOI": "10.1101/gr.3709305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_42_1"
+    },
+    {
+      "DOI": "10.1016/j.immuni.2016.08.013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_43_1"
+    },
+    {
+      "DOI": "10.1038/ng.3368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_44_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.10.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_45_1"
+    },
+    {
+      "DOI": "10.4310/SII.2015.v8.n4.a8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_46_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_47_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkq603",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_48_1"
+    },
+    {
+      "DOI": "10.1002/jlb.62.5.667",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_49_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21945",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_50_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_51_1"
+    },
+    {
+      "DOI": "10.1182/blood-2014-09-600833",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_52_1"
+    },
+    {
+      "DOI": "10.1534/genetics.116.199646",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_53_1"
+    },
+    {
+      "article-title": "Efficient algorithms for multivariate linear mixed models in genome‐wide association studies",
+      "author": "Zhou X.",
+      "first-page": "407",
+      "issue": "4",
+      "journal-title": "Nature Genetics",
+      "key": "e_1_2_11_1_54_1",
+      "volume": "11",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.11.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_1_55_1"
+    }
+  ],
+  "reference-count": 54,
+  "references-count": 54,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/593814",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22248"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Meta‐MultiSKAT: Multiple phenotype meta‐analysis for region‐based association test"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

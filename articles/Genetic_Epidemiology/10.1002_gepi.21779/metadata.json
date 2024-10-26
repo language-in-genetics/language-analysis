@@ -1,0 +1,679 @@
+{
+  "DOI": "10.1002/gepi.21779",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21779",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eWe propose a new approach to detect gene × gene joint action in genome‐wide association studies (GWASs) for case‐control designs. This approach offers an exhaustive search for all two‐way joint action (including, as a special case, single gene action) that is computationally feasible at the genome‐wide level and has reasonable statistical power under most genetic models. We found that the presence of any gene × gene joint action may imply differences in three types of genetic components: the minor allele frequencies and the amounts of Hardy‐Weinberg disequilibrium may differ between cases and controls, and between the two genetic loci the degree of linkage disequilibrium may differ between cases and controls. Using Fisher's method, it is possible to combine the different sources of genetic information in an overall test for detecting gene × gene joint action. The proposed statistical analysis is efficient and its simplicity makes it applicable to GWASs. In the current study, we applied the proposed approach to a GWAS on schizophrenia and found several potential gene × gene interactions. Our application illustrates the practical advantage of the proposed method.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21779"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Applied Statistics Chung‐Ang University  Seoul Korea"
+        },
+        {
+          "name": "Research Center for Data Science Chung‐Ang University  Seoul Korea"
+        }
+      ],
+      "family": "Won",
+      "given": "Sungho",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Bioinformatics Program Seoul National University  Seoul Korea"
+        }
+      ],
+      "family": "Kwon",
+      "given": "Min‐Seok",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Human Genetics University of Bonn  Bonn Germany"
+        },
+        {
+          "name": "Department of Genomics Life and Brain Center University of Bonn  Bonn Germany"
+        }
+      ],
+      "family": "Mattheisen",
+      "given": "Manuel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Applied Statistics Chung‐Ang University  Seoul Korea"
+        }
+      ],
+      "family": "Park",
+      "given": "Suyeon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Applied Statistics Chung‐Ang University  Seoul Korea"
+        },
+        {
+          "name": "Research Center for Data Science Chung‐Ang University  Seoul Korea"
+        }
+      ],
+      "family": "Park",
+      "given": "Changsoon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Sciences Purdue University  West Lafayette Indiana United States of America"
+        }
+      ],
+      "family": "Kihara",
+      "given": "Daisuke",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Human Genetics University of Bonn  Bonn Germany"
+        },
+        {
+          "name": "Department of Genomics Life and Brain Center University of Bonn  Bonn Germany"
+        },
+        {
+          "name": "Institute of Neuroscience and Medicine (INM‐1) Research Center Juelich  Juelich Germany"
+        }
+      ],
+      "family": "Cichon",
+      "given": "Sven",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medical Genetics, Rudolf Magnus Institute of Neuroscience University Medical Center Utrecht  Utrecht The Netherlands"
+        }
+      ],
+      "family": "Ophoff",
+      "given": "Roel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Human Genetics University of Bonn  Bonn Germany"
+        },
+        {
+          "name": "Department of Genomics Life and Brain Center University of Bonn  Bonn Germany"
+        }
+      ],
+      "family": "Nöthen",
+      "given": "Markus M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetic Epidemiology in Psychiatry Central Institute of Mental Health, University of Mannheim  Mannheim Germany"
+        }
+      ],
+      "family": "Rietschel",
+      "given": "Marcella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute for Medical Biometry Informatics, and Epidemiology, University of Bonn  Bonn Germany"
+        },
+        {
+          "name": "German Center for Neurodegenerative Diseases (DZNE)  Bonn Germany"
+        }
+      ],
+      "family": "Baur",
+      "given": "Max",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine Genetics Laboratory Eramsmus Medical Center Rotterdam  The Netherlands"
+        },
+        {
+          "name": "Department of Epidemiology, Erasmus University Medical Center  Rotterdam The Netherlands"
+        }
+      ],
+      "family": "Uitterlinden",
+      "given": "Andre G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology, Erasmus University Medical Center  Rotterdam The Netherlands"
+        }
+      ],
+      "family": "Hofmann",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "German Center for Neurodegenerative Diseases (DZNE)  Bonn Germany"
+        },
+        {
+          "name": "Institute for Genomic Mathematics University of Bonn  Bonn Germany"
+        },
+        {
+          "name": "Department of Biostatistics Harvard School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Center for Genomic Medicine Brigham and Women's Hospital  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Lange",
+      "given": "Christoph",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "GROUP Investigators",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        25
+      ]
+    ],
+    "date-time": "2013-11-25T10:39:02Z",
+    "timestamp": 1385375942000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T16:56:45Z",
+    "timestamp": 1696352205000
+  },
+  "funder": [
+    {
+      "award": [
+        "NRF-2011-220-C00004"
+      ],
+      "name": "Korean Government"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T13:58:09Z",
+    "timestamp": 1696600689182
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        23
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2013,
+            11,
+            23
+          ]
+        ],
+        "date-time": "2013-11-23T00:00:00Z",
+        "timestamp": 1385164800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21779",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21779",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "60-71",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        23
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        23
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2014,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1016/j.jpsychires.2010.02.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "article-title": "Serum malondialdehyde and mitochondrial aspartate aminotransferase activity as markers of chronic alcohol intake and alcoholic liver disease",
+      "author": "Baldi E",
+      "first-page": "429",
+      "issue": "8",
+      "journal-title": "Ital J Gastroenterol",
+      "key": "e_1_2_6_3_1",
+      "volume": "25",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1038/ng.175",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.2307/2281130",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1002/(SICI)1096-8628(200021)97:1\u003c12::AID-AJMG3\u003e3.0.CO;2-U",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1186/1471-2164-12-344",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1038/mp.2011.13",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1186/1756-0500-4-158",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1038/jhg.2009.93",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1038/ng.713",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1002/sim.1749",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1093/hmg/11.20.2463",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1038/nrg2579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1017/S146114570500622X",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1086/338759",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1016/j.jad.2010.04.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1038/sj.ejhg.5201921",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "author": "First MB",
+      "key": "e_1_2_6_19_1",
+      "volume-title": "Structured Clinical Interview for DSM‐IV Axis I Disorders",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1093/nar/gks550",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1038/ng.440",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-10-S1-S65",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1126/science.1109557",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1159/000090694",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1016/j.jpsychires.2011.11.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1159/000022939",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "article-title": "Asymptotic optimality of Fisher's method of combining independent tests",
+      "author": "Little RC",
+      "first-page": "986",
+      "issue": "336",
+      "journal-title": "J Am Stat Assoc",
+      "key": "e_1_2_6_27_1",
+      "volume": "66",
+      "year": "1971"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0052865",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1038/ng1537",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1001/archpsyc.1991.01810320088015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1086/302114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1534/genetics.103.022335",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxm010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1086/321276",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.2307/2533494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1067/mhj.2002.123579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1001/archpsyc.1978.01770300115013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.0020212",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1113/expphysiol.2005.029959",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.30161",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002625",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1086/516794",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1159/000321967",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    },
+    {
+      "DOI": "10.1038/nrg2579-c2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_46_1"
+    },
+    {
+      "DOI": "10.1038/npp.2011.98",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_47_1"
+    },
+    {
+      "author": "Weir BS",
+      "key": "e_1_2_6_48_1",
+      "volume-title": "Genetic Data Analysis II: Methods for Discrete Population Genetic Data",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1055/s-2005-858226",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_49_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20341",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_50_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20399",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_51_1"
+    },
+    {
+      "DOI": "10.1002/sim.3569",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_52_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001131",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_53_1"
+    },
+    {
+      "DOI": "10.1007/s00439-011-0955-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_54_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20598",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_55_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_56_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_57_1"
+    },
+    {
+      "DOI": "10.1086/503710",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_58_1"
+    },
+    {
+      "DOI": "10.1534/genetics.108.089409",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_59_1"
+    },
+    {
+      "DOI": "10.1007/s004390000394",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_60_1"
+    },
+    {
+      "DOI": "10.1038/ng2110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_61_1"
+    },
+    {
+      "DOI": "10.1086/508571",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_62_1"
+    },
+    {
+      "DOI": "10.1038/npp.2012.234",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_63_1"
+    }
+  ],
+  "reference-count": 62,
+  "references-count": 62,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21779"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Efficient Strategy for Detecting Gene × Gene Joint Action and Its Application in Schizophrenia"
+  ],
+  "type": "journal-article",
+  "volume": "38"
+}

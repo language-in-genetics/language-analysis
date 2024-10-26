@@ -1,0 +1,998 @@
+{
+  "DOI": "10.1002/gepi.21978",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21978",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eStudying gene‐environment (G × E) interactions is important, as they extend our knowledge of the genetic architecture of complex traits and may help to identify novel variants not detected via analysis of main effects alone. The main statistical framework for studying G × E interactions uses a single regression model that includes both the genetic main and G × E interaction effects (the “joint” framework). The alternative “stratified” framework combines results from genetic main‐effect analyses carried out separately within the exposed and unexposed groups. Although there have been several investigations using theory and simulation, an empirical comparison of the two frameworks is lacking. Here, we compare the two frameworks using results from genome‐wide association studies of systolic blood pressure for 3.2 million low frequency and 6.5 million common variants across 20 cohorts of European ancestry, comprising 79,731 individuals. Our cohorts have sample sizes ranging from 456 to 22,983 and include both family‐based and population‐based samples. In cohort‐specific analyses, the two frameworks provided similar inference for population‐based cohorts. The agreement was reduced for family‐based cohorts. In meta‐analyses, agreement between the two frameworks was less than that observed in cohort‐specific analyses, despite the increased sample size. In meta‐analyses, agreement depended on (1) the minor allele frequency, (2) inclusion of family‐based cohorts in meta‐analysis, and (3) filtering scheme. The stratified framework appears to approximate the joint framework well only for common variants in population‐based cohorts. We conclude that the joint framework is the preferred approach and should be used to control false positives when dealing with low‐frequency variants and/or family‐based cohorts.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21978"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Washington University  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Sung",
+      "given": "Yun Ju",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetic Epidemiology Institute of Epidemiology and Preventive Medicine University of Regensburg  Regensburg Germany"
+        }
+      ],
+      "family": "Winkler",
+      "given": "Thomas W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Program in Medical and Population Genetics Broad Institute  Cambridge Massachusetts United States of America"
+        },
+        {
+          "name": "Center for Human Genetics Research Massachusetts General Hospital  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Manning",
+      "given": "Alisa K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard School of Public Health  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Aschard",
+      "given": "Hugues",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Icelandic Heart Association  Kopavogur Iceland"
+        },
+        {
+          "name": "Faculty of Medicine University of Iceland  Reykjavik Iceland"
+        }
+      ],
+      "family": "Gudnason",
+      "given": "Vilmundur",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Laboratory of Epidemiology and Population Sciences National Institute on Aging National Institutes of Health  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Harris",
+      "given": "Tamara B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Icelandic Heart Association  Kopavogur Iceland"
+        },
+        {
+          "name": "Faculty of Medicine University of Iceland  Reykjavik Iceland"
+        }
+      ],
+      "family": "Smith",
+      "given": "Albert V.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Center Department of Epidemiology Human Genetics, and Environmental Sciences University of Texas Health Science Center at Houston  Houston Texas United States of America"
+        },
+        {
+          "name": "Human Genome Sequencing Center Baylor College of Medicine  Houston Texas United States of America"
+        }
+      ],
+      "family": "Boerwinkle",
+      "given": "Eric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Center Department of Epidemiology Human Genetics, and Environmental Sciences University of Texas Health Science Center at Houston  Houston Texas United States of America"
+        }
+      ],
+      "family": "Brown",
+      "given": "Michael R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Center Department of Epidemiology Human Genetics, and Environmental Sciences University of Texas Health Science Center at Houston  Houston Texas United States of America"
+        }
+      ],
+      "family": "Morrison",
+      "given": "Alanna C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Center Department of Epidemiology Human Genetics, and Environmental Sciences University of Texas Health Science Center at Houston  Houston Texas United States of America"
+        },
+        {
+          "name": "Brown Foundation Institute of Molecular Medicine University of Texas Health Science Center at Houston  Houston Texas United States of America"
+        }
+      ],
+      "family": "Fornage",
+      "given": "Myriam",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Brown Foundation Institute of Molecular Medicine University of Texas Health Science Center at Houston  Houston Texas United States of America"
+        }
+      ],
+      "family": "Lin",
+      "given": "Li‐An",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Brown Foundation Institute of Molecular Medicine University of Texas Health Science Center at Houston  Houston Texas United States of America"
+        }
+      ],
+      "family": "Richard",
+      "given": "Melissa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cardiovascular Health Research Unit University of Washington  Seattle Washington United States of America"
+        },
+        {
+          "name": "Department of Biostatistics University of Washington  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Bartz",
+      "given": "Traci M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cardiovascular Health Research Unit University of Washington  Seattle Washington United States of America"
+        },
+        {
+          "name": "Group Health Research Institute Group Health Cooperative  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Psaty",
+      "given": "Bruce M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "MRC Human Genetics Unit IGMM University of Edinburgh  Edinburgh United Kingdom"
+        }
+      ],
+      "family": "Hayward",
+      "given": "Caroline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health Faculty of Medicine University of Split  Split Croatia"
+        },
+        {
+          "name": "Centre for Population Health Sciences University of Edinburgh  Edinburgh United Kingdom"
+        }
+      ],
+      "family": "Polasek",
+      "given": "Ozren",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "MRC Human Genetics Unit IGMM University of Edinburgh  Edinburgh United Kingdom"
+        }
+      ],
+      "family": "Marten",
+      "given": "Jonathan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre for Population Health Sciences University of Edinburgh  Edinburgh United Kingdom"
+        }
+      ],
+      "family": "Rudan",
+      "given": "Igor",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Statistical Genomics Department of Genetics Washington University School of Medicine  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Feitosa",
+      "given": "Mary F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Statistical Genomics Department of Genetics Washington University School of Medicine  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Kraja",
+      "given": "Aldi T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Statistical Genomics Department of Genetics Washington University School of Medicine  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Province",
+      "given": "Michael A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University School of Public Health  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Deng",
+      "given": "Xuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University School of Public Health  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Fisher",
+      "given": "Virginia A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University School of Public Health  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Zhou",
+      "given": "Yanhua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Bielak",
+      "given": "Lawrence F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Smith",
+      "given": "Jennifer",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "MRC Human Genetics Unit IGMM University of Edinburgh  Edinburgh United Kingdom"
+        }
+      ],
+      "family": "Huffman",
+      "given": "Jennifer E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "BHF Glasgow Cardiovascular Research Centre Institute of Cardiovascular and Medical Sciences University of Glasgow  Glasgow United Kingdom"
+        },
+        {
+          "name": "Generation Scotland Centre for Genomic and Experimental Medicine University of Edinburgh  Edinburgh United Kingdom"
+        }
+      ],
+      "family": "Padmanabhan",
+      "given": "Sandosh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Generation Scotland Centre for Genomic and Experimental Medicine University of Edinburgh  Edinburgh United Kingdom"
+        },
+        {
+          "name": "Division of Population Health Sciences University of Dundee  Dundee United Kingdom"
+        }
+      ],
+      "family": "Smith",
+      "given": "Blair H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine Wake Forest School of Medicine  Winston‐Salem North Carolina United States of America"
+        }
+      ],
+      "family": "Ding",
+      "given": "Jingzhong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Prevention Wake Forest School of Medicine  Winston‐Salem North Carolina United States of America"
+        }
+      ],
+      "family": "Liu",
+      "given": "Yongmei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistical Sciences Wake Forest School of Medicine  Winston‐Salem North Carolina United States of America"
+        }
+      ],
+      "family": "Lohman",
+      "given": "Kurt",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genomics Laboratory Pennington Biomedical Research Center  Baton Rouge Los Angeles United States of America"
+        }
+      ],
+      "family": "Bouchard",
+      "given": "Claude",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genomics Laboratory Pennington Biomedical Research Center  Baton Rouge Los Angeles United States of America"
+        }
+      ],
+      "family": "Rankinen",
+      "given": "Tuomo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Washington University  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Rice",
+      "given": "Treva K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of Alabama–Birmingham  Birmingham Alabama United States of America"
+        }
+      ],
+      "family": "Arnett",
+      "given": "Donna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Washington University  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Schwander",
+      "given": "Karen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Pediatrics Institute for Translational Genomics and Population Sciences LABioMed at Harbor‐UCLA Medical Center  Torrance California United States of America"
+        }
+      ],
+      "family": "Guo",
+      "given": "Xiuqing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine Columbia University Medical Center  New York New York United States of America"
+        }
+      ],
+      "family": "Palmas",
+      "given": "Walter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Pediatrics Institute for Translational Genomics and Population Sciences LABioMed at Harbor‐UCLA Medical Center  Torrance California United States of America"
+        }
+      ],
+      "family": "Rotter",
+      "given": "Jerome I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "The Charles Bronfman Institute for Personalized Medicine The Icahn School of Medicine at Mount Sinai  New York New York United States of America"
+        }
+      ],
+      "family": "Alfred",
+      "given": "Tamuno",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "The Charles Bronfman Institute for Personalized Medicine The Icahn School of Medicine at Mount Sinai  New York New York United States of America"
+        }
+      ],
+      "family": "Bottinger",
+      "given": "Erwin P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "The Charles Bronfman Institute for Personalized Medicine The Icahn School of Medicine at Mount Sinai  New York New York United States of America"
+        },
+        {
+          "name": "The Mindich Child Health and Development Institute The Icahn School of Medicine at Mount Sinai  New York New York United States of America"
+        }
+      ],
+      "family": "Loos",
+      "given": "Ruth J. F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetic Epidemiology Unit Department of Epidemiology Erasmus Medical Center  Rotterdam Netherlands"
+        }
+      ],
+      "family": "Amin",
+      "given": "Najaf",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cardiovascular Epidemiology Unit Department of Epidemiology Erasmus Medical Center  Rotterdam Netherlands"
+        }
+      ],
+      "family": "Franco",
+      "given": "Oscar H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetic Epidemiology Unit Department of Epidemiology Erasmus Medical Center  Rotterdam Netherlands"
+        }
+      ],
+      "family": "van Duijn",
+      "given": "Cornelia M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetic Epidemiology Unit Department of Epidemiology Erasmus Medical Center  Rotterdam Netherlands"
+        }
+      ],
+      "family": "Vojinovic",
+      "given": "Dina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Division of Preventive Medicine Department of Medicine Brigham and Women's Hospital  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Chasman",
+      "given": "Daniel I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Division of Preventive Medicine Department of Medicine Brigham and Women's Hospital  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Ridker",
+      "given": "Paul M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Preventive Medicine Department of Medicine Brigham and Women's Hospital  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Rose",
+      "given": "Lynda M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Kardia",
+      "given": "Sharon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics Case Western Reserve University  Cleveland Ohio United States of America"
+        }
+      ],
+      "family": "Zhu",
+      "given": "Xiaofeng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cardiovascular Health Research Unit University of Washington  Seattle Washington United States of America"
+        },
+        {
+          "name": "Department of Biostatistics University of Washington  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Rice",
+      "given": "Kenneth",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Statistical Genomics Department of Genetics Washington University School of Medicine  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Borecki",
+      "given": "Ingrid B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Washington University  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Rao",
+      "given": "Dabeeru C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Preventive Medicine University of Southern California  Los Angeles California United States of America"
+        }
+      ],
+      "family": "Gauderman",
+      "given": "W. James",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Framingham Heart Study  Framingham Massachusetts United States of America"
+        }
+      ],
+      "family": "Cupples",
+      "given": "L. Adrienne",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        5,
+        27
+      ]
+    ],
+    "date-time": "2016-05-27T06:23:05Z",
+    "timestamp": 1464330185000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T00:37:27Z",
+    "timestamp": 1696379847000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "doi-asserted-by": "crossref",
+      "name": "National Heart, Lung, and Blood Institute (NHLBI)"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "doi-asserted-by": "crossref",
+      "name": "National Institutes of Health (NIH)"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T18:29:03Z",
+    "timestamp": 1713983343564
+  },
+  "is-referenced-by-count": 19,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        5,
+        27
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            5,
+            27
+          ]
+        ],
+        "date-time": "2016-05-27T00:00:00Z",
+        "timestamp": 1464307200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21978",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21978",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "404-415",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        5,
+        27
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        5,
+        27
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2016,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1159/000323318",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-134",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20637",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.01.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddn288",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.1999.00997.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1038/nrg3472",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1038/nature11632",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.18637/jss.v015.i02",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1038/ng.2354",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000529",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1038/nrg1578",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1038/nature10405",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1159/000099183",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-07-0402",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20533",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21742",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20540",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20546",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1038/ng.2274",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/nrg2796",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1038/ng.361",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1038/ng.290",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1161/CIRCGENETICS.108.829747",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003500",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1038/nature14132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1002/sim.6323",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0b013e31820877c5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1038/nrg2764",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1002/sim.2165",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0019416",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1038/ng.287",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq340",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1038/nprot.2014.071",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu621",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.18637/jss.v016.i09",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    }
+  ],
+  "reference-count": 38,
+  "references-count": 38,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21978"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "An Empirical Comparison of Joint and Stratified Frameworks for Studying G × E Interactions: Systolic Blood Pressure and Smoking in the CHARGE Gene‐Lifestyle Interactions Working Group"
+  ],
+  "type": "journal-article",
+  "volume": "40"
+}

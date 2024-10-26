@@ -1,0 +1,514 @@
+{
+  "DOI": "10.1002/gepi.22156",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22156",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn genetic association analysis, a joint test of multiple distinct phenotypes can increase power to identify sets of trait‐associated variants within genes or regions of interest. Existing multiphenotype tests for rare variants make specific assumptions about the patterns of association with underlying causal variants, and the violation of these assumptions can reduce power to detect association. Here, we develop a general framework for testing pleiotropic effects of rare variants on multiple continuous phenotypes using multivariate kernel regression (Multi‐SKAT). Multi‐SKAT models affect sizes of variants on the phenotypes through a kernel matrix and perform a variance component test of association. We show that many existing tests are equivalent to specific choices of kernel matrices with the Multi‐SKAT framework. To increase power of detecting association across tests with different kernel matrices, we developed a fast and accurate approximation of the significance of the minimum observed \u003cjats:italic\u003eP\u003c/jats:italic\u003e value across tests. To account for related individuals, our framework uses random effects for the kinship matrix. Using simulated data and amino acid and exome‐array data from the METabolic Syndrome In Men (METSIM) study, we show that Multi‐SKAT can improve power over single‐phenotype SKAT‐O test and existing multiple‐phenotype tests, while maintaining Type I error rate.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22156"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-05-03"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-07-15"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-10-08"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-6634-9040",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics University of Michigan Ann Arbor Michigan"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Dutta",
+      "given": "Diptavo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics University of Michigan Ann Arbor Michigan"
+        }
+      ],
+      "family": "Scott",
+      "given": "Laura",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics University of Michigan Ann Arbor Michigan"
+        }
+      ],
+      "family": "Boehnke",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8097-3878",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan"
+        },
+        {
+          "name": "Center for Statistical Genetics University of Michigan Ann Arbor Michigan"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Lee",
+      "given": "Seunggeun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        9
+      ]
+    ],
+    "date-time": "2018-10-09T03:32:54Z",
+    "timestamp": 1539055974000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        14
+      ]
+    ],
+    "date-time": "2023-09-14T11:51:20Z",
+    "timestamp": 1694692280000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01 HG000376",
+        "R01 HG008773"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "U01 DK062370"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100000092",
+      "award": [
+        "R01 LM012535"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "U.S. National Library of Medicine"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        25
+      ]
+    ],
+    "date-time": "2024-04-25T08:31:27Z",
+    "timestamp": 1714033887153
+  },
+  "is-referenced-by-count": 43,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            8
+          ]
+        ],
+        "date-time": "2018-10-08T00:00:00Z",
+        "timestamp": 1538956800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22156",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22156",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "4-23",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2019,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.2165/00023210-200317090-00004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_2_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.03.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_3_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.01.017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_4_1"
+    },
+    {
+      "DOI": "10.1038/ng.3211",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_5_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_6_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002254",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_7_1"
+    },
+    {
+      "DOI": "10.1038/ng.3513",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_8_1"
+    },
+    {
+      "DOI": "10.2307/2346911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_9_1"
+    },
+    {
+      "article-title": "Elevated levels of amino acids in the CSF of motor neuron disease patients",
+      "author": "Belleroche J.",
+      "first-page": "641",
+      "issue": "9",
+      "journal-title": "CNS Drugs",
+      "key": "e_1_2_8_1_10_1",
+      "volume": "17",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1111/j.1751-5823.2005.tb00254.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_11_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn563",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_12_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.07.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_13_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_14_1"
+    },
+    {
+      "DOI": "10.1111/j.1440-1754.2009.01626.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.2507",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_17_1"
+    },
+    {
+      "DOI": "10.1186/1746-4811-9-29",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_18_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_19_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_21_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21663",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_23_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_24_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21937",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_25_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21617",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_26_1"
+    },
+    {
+      "DOI": "10.1101/gr.3709305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_27_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.10.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_28_1"
+    },
+    {
+      "DOI": "10.1038/nrg3461",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_29_1"
+    },
+    {
+      "DOI": "10.2337/db11-1378",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_30_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2016.8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_31_1"
+    },
+    {
+      "DOI": "10.3748/wjg.v19.i43.7620",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_32_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddy067",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_33_1"
+    },
+    {
+      "DOI": "10.4310/SII.2015.v8.n4.a8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_34_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21895",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_35_1"
+    },
+    {
+      "DOI": "10.2337/db11-1355",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_36_1"
+    },
+    {
+      "DOI": "10.2337/dc12-0895",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_37_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21945",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_38_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_39_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21715",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_40_1"
+    },
+    {
+      "DOI": "10.2337/db12-0876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_41_1"
+    },
+    {
+      "DOI": "10.1534/genetics.115.178590",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_42_1"
+    },
+    {
+      "DOI": "10.1534/genetics.116.199646",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_43_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003264",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_44_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_45_1"
+    }
+  ],
+  "reference-count": 44,
+  "references-count": 44,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22156"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Multi‐SKAT: General framework to test for rare‐variant association with multiple phenotypes"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "43"
+}

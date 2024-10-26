@@ -1,0 +1,538 @@
+{
+  "DOI": "10.1002/gepi.22548",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22548",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eGenome‐wide association studies (GWAS) have led to rapid growth in detecting genetic variants associated with various phenotypes. Owing to a great number of publicly accessible GWAS summary statistics, and the difficulty in obtaining individual‐level genotype data, many existing gene‐based association tests have been adapted to require only GWAS summary statistics rather than individual‐level data. However, these association tests are restricted to unrelated individuals and thus do not apply to family samples directly. Moreover, due to its flexibility and effectiveness, the linear mixed model has been increasingly utilized in GWAS to handle correlated data, such as family samples. However, it remains unknown how to perform gene‐based association tests in family samples using the GWAS summary statistics estimated from the linear mixed model. In this study, we show that, when family size is negligible compared to the total sample size, the diagonal block structure of the kinship matrix makes it possible to approximate the correlation matrix of marginal \u003cjats:italic\u003eZ\u003c/jats:italic\u003e scores by linkage disequilibrium matrix. Based on this result, current methods utilizing summary statistics for unrelated individuals can be directly applied to family data without any modifications. Our simulation results demonstrate that this proposed strategy controls the type 1 error rate well in various situations. Finally, we exemplify the usefulness of the proposed approach with a dental caries GWAS data set.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22548"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2023-07-12"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2024-01-08"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2024-02-05"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health, Tongji Medical College Huazhong University of Science and Technology Hubei People's Republic of China"
+        }
+      ],
+      "family": "Wang",
+      "given": "Peng",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1083-3834",
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics Indiana University School of Public Health‐Bloomington Bloomington Indiana USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Xu",
+      "given": "Xiao",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0273-6217",
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics Indiana University School of Public Health‐Bloomington Bloomington Indiana USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Li",
+      "given": "Ming",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, College of Public Health and Health Professions and College of Medicine University of Florida Gainesville Florida USA"
+        }
+      ],
+      "family": "Lou",
+      "given": "Xiang‐Yang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics and Actuarial Science The University of Hong Kong Hong Kong Hong Kong"
+        }
+      ],
+      "family": "Xu",
+      "given": "Siqi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics, School of Public Health University of Minnesota Minneapolis Minnesota USA"
+        }
+      ],
+      "family": "Wu",
+      "given": "Baolin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health Sciences University of Chicago Chicago Illinois USA"
+        }
+      ],
+      "family": "Gao",
+      "given": "Guimin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health, Tongji Medical College Huazhong University of Science and Technology Hubei People's Republic of China"
+        }
+      ],
+      "family": "Yin",
+      "given": "Ping",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics Indiana University School of Public Health‐Bloomington Bloomington Indiana USA"
+        }
+      ],
+      "family": "Liu",
+      "given": "Nianjun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        7
+      ]
+    ],
+    "date-time": "2024-02-07T10:14:31Z",
+    "timestamp": 1707300871000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        18
+      ]
+    ],
+    "date-time": "2024-03-18T03:10:41Z",
+    "timestamp": 1710731441000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        19
+      ]
+    ],
+    "date-time": "2024-03-19T00:19:38Z",
+    "timestamp": 1710807578547
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        5
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            5
+          ]
+        ],
+        "date-time": "2024-02-05T00:00:00Z",
+        "timestamp": 1707091200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22548",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22548",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "103-113",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        5
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        5
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        4
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.02.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.12.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu496",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.2105/AJPH.41.3.279",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1038/nrg2809",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1038/s41380-020-0805-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "DOI": "10.1016/j.compbiolchem.2018.02.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.11.021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1186/1471-2350-8-63",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv719",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-08-0183",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.01.019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_15_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.4310/sii.2011.v4.n3.a6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddx169",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22363",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_20_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(13)61752-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_21_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1038/nrg2344",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(14)61730-X",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.1038/nrg2989",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1038/nrg.2016.142",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.2002.00332.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_28_1"
+    },
+    {
+      "DOI": "10.1101/gr.3709305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_29_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21676",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_30_1"
+    },
+    {
+      "DOI": "10.1038/s41598-020-67001-w",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007309",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_32_1"
+    },
+    {
+      "DOI": "10.1080/01621459.2019.1660170",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_33_1"
+    },
+    {
+      "DOI": "10.1186/s12935-021-02124-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_34_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.10.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_35_1"
+    },
+    {
+      "author": "Turner J. R.",
+      "key": "e_1_2_9_36_1",
+      "volume-title": "Encyclopedia of behavioral medicine",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1083/jcb.201007162",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_37_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_38_1"
+    },
+    {
+      "DOI": "10.1159/000375409",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_39_1"
+    },
+    {
+      "DOI": "10.1159/000445057",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_40_1"
+    },
+    {
+      "DOI": "10.1534/genetics.115.178590",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_41_1"
+    },
+    {
+      "DOI": "10.1038/ng1702",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_42_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003520",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_43_1"
+    },
+    {
+      "DOI": "10.1038/ng.546",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_44_1"
+    },
+    {
+      "DOI": "10.1038/ng.2310",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_45_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2007.10.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_46_1"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22548"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Gene‐based association tests in family samples using GWAS summary statistics"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "48"
+}

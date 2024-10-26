@@ -1,0 +1,476 @@
+{
+  "DOI": "10.1002/gepi.22040",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22040",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eFor the association analysis of whole‐genome sequencing (WGS) studies, we propose an efficient and fast spatial‐clustering algorithm. Compared to existing analysis approaches for WGS data, that define the tested regions either by sliding or consecutive windows of fixed sizes along variants, a meaningful grouping of nearby variants into consecutive regions has the advantage that, compared to sliding window approaches, the number of tested regions is likely to be smaller. In comparison to consecutive, fixed‐window approaches, our approach is likely to group nearby variants together. Given existing biological evidence that disease‐associated mutations tend to physically cluster in specific regions along the chromosome, the identification of meaningful groups of nearby located variants could thus lead to a potential power gain for association analysis. Our algorithm defines consecutive genomic regions based on the physical positions of the variants, assuming an inhomogeneous Poisson process and groups together nearby variants. As parameters are estimated locally, the algorithm takes the differing variant density along the chromosome into account and provides locally optimal partitioning of variants into consecutive regions. An R‐implementation of the algorithm is provided. We discuss the theoretical advances of our algorithm compared to existing, window‐based approaches and show the performance and advantage of our introduced algorithm in a simulation study and by an application to Alzheimer's disease WGS data. Our analysis identifies a region in the ITGB3 gene that potentially harbors disease susceptibility loci for Alzheimer's disease. The region‐based association signal of ITGB3 replicates in an independent data set and achieves formally genome‐wide significance.\u003c/jats:p\u003e\u003cjats:p\u003e\u003cjats:bold\u003eSoftware Implementation\u003c/jats:bold\u003e: An implementation of the algorithm in R is available at: \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/heidefier/cluster_wgs_data\"\u003ehttps://github.com/heidefier/cluster_wgs_data\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22040"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard T.H. Chan School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Working Group of Genomic Mathematics University of Bonn  Bonn Germany"
+        }
+      ],
+      "family": "Loehlein Fier",
+      "given": "Heide",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine Department of Medicine Brigham and Women's Hospital Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Prokopenko",
+      "given": "Dmitry",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Working Group of Genomic Mathematics University of Bonn  Bonn Germany"
+        }
+      ],
+      "family": "Hecker",
+      "given": "Julian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine Department of Medicine Brigham and Women's Hospital Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Cho",
+      "given": "Michael H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine Department of Medicine Brigham and Women's Hospital Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Silverman",
+      "given": "Edwin K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine Department of Medicine Brigham and Women's Hospital Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Weiss",
+      "given": "Scott T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics and Aging Research Unit MassGeneral Institute for Neurodegenerative Disease Massachusetts General Hospital Harvard Medical School  Charlestown Massachusetts United States of America"
+        }
+      ],
+      "family": "Tanzi",
+      "given": "Rudolph E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard T.H. Chan School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Channing Division of Network Medicine Department of Medicine Brigham and Women's Hospital Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Lange",
+      "given": "Christoph",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        3,
+        20
+      ]
+    ],
+    "date-time": "2017-03-20T09:42:47Z",
+    "timestamp": 1490002967000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T08:00:41Z",
+    "timestamp": 1696406441000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100007625",
+      "doi-asserted-by": "publisher",
+      "name": "Cure Alzheimer's Fund"
+    },
+    {
+      "DOI": "10.13039/100000025",
+      "award": [
+        "R01MH081862",
+        "R01MH087590"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Mental Health"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "R01HL089856",
+        "R01HL089897"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01HG008976"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/501100001659",
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    },
+    {
+      "DOI": "10.13039/100000009",
+      "award": [
+        "1R01HG008976‐01"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Foundation for the National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        16
+      ]
+    ],
+    "date-time": "2024-02-16T15:39:36Z",
+    "timestamp": 1708097976779
+  },
+  "is-referenced-by-count": 10,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2017,
+        3,
+        20
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            20
+          ]
+        ],
+        "date-time": "2017-03-20T00:00:00Z",
+        "timestamp": 1489968000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22040",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22040",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "332-340",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2017,
+        3,
+        20
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2017,
+        3,
+        20
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        5
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nature15393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0048495",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.2307/622195",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_4_1",
+      "unstructured": "Evans I. S.(1977).The selection of class intervals. Transactions of the Institute of British Geographers.98–124."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts568",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1958.10501479",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.11.021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0903103106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1038/ng.3216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.04.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "key": "e_1_2_7_11_1",
+      "unstructured": "Jenks G. F.(1977).Optimal Data Classification for Choropleth Maps (Occasional Paper 2).Lawrence:University of Kansas Department of Geography."
+    },
+    {
+      "DOI": "10.1111/j.1467-8306.1971.tb00779.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1007/BF00298645",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "author": "Krebs J. E.",
+      "key": "e_1_2_7_14_1",
+      "volume-title": "Lewin's genes XI",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003201",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002496",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1038/ng.2802",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.01.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.07.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.11.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1017/thg.2014.79",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/ng.2671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddt376",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1126/science.332.6033.1031",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1038/nrg2765",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1101/gr.3709305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1038/jcbfm.2010.140",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1038/nature15394",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.32614/RJ-2011-015",
+      "article-title": "Ckmeans. 1d. dp: Optimal k‐means clustering in one dimension by dynamic programming",
+      "author": "Wang H.",
+      "doi-asserted-by": "crossref",
+      "first-page": "29",
+      "issue": "2",
+      "journal-title": "R Journal",
+      "key": "e_1_2_7_31_1",
+      "volume": "3",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21797",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1186/s12859-015-0825-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    }
+  ],
+  "reference-count": 33,
+  "references-count": 33,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22040"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "On the association analysis of genome‐sequencing data: A spatial clustering approach for partitioning the entire genome into nonoverlapping windows"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

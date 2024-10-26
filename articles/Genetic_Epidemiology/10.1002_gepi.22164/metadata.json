@@ -1,0 +1,531 @@
+{
+  "DOI": "10.1002/gepi.22164",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22164",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eClustering has been widely conducted in the analysis of gene expression data. For complex diseases, it has played an important role in identifying unknown functions of genes, serving as the basis of other analysis, and others. A common limitation of most existing clustering approaches is to assume that genes are separated into disjoint clusters. As genes often have multiple functions and thus can belong to more than one functional cluster, the disjoint clustering results can be unsatisfactory. In addition, due to the small sample sizes of genetic profiling studies and other factors, there may not be sufficient evidence to confirm the specific functions of some genes and cluster them definitively into disjoint clusters. In this study, we develop an effective overlapping clustering approach, which takes account into the multiplicity of gene functions and lack of certainty in practical analysis. A penalized weighted normalized cut (PWNCut) criterion is proposed based on the NCut technique and an \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22164-math-0001.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22164:gepi22164-math-0001\" /\u003e norm constraint. It outperforms multiple competitors in simulation. The analysis of the cancer genome atlas (TCGA) data on breast cancer and cervical cancer leads to biologically sensible findings which differ from those using the alternatives. To facilitate implementation, we develop the function \n\u003cjats:italic\u003epwncut\u003c/jats:italic\u003e in the \n\u003cjats:italic\u003eR\u003c/jats:italic\u003e package \n\u003cjats:italic\u003eNCutYX\u003c/jats:italic\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22164"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-06-12"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-08-28"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-10-09"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale University New Haven Connecticut"
+        }
+      ],
+      "family": "Teran Hidalgo",
+      "given": "Sebastian J.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics Xiamen University Xiamen China"
+        }
+      ],
+      "family": "Zhu",
+      "given": "Tingyu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale University New Haven Connecticut"
+        },
+        {
+          "name": "School of Statistics and Management, Shanghai University of Finance and Economics Shanghai China"
+        }
+      ],
+      "family": "Wu",
+      "given": "Mengyun",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9001-4999",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale University New Haven Connecticut"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Ma",
+      "given": "Shuangge",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        10
+      ]
+    ],
+    "date-time": "2018-10-10T04:47:13Z",
+    "timestamp": 1539146833000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        15
+      ]
+    ],
+    "date-time": "2023-09-15T17:10:40Z",
+    "timestamp": 1694797840000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "91546202",
+        "61402276"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/100000009",
+      "award": [
+        "CA204120",
+        "CA216017"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Foundation for the National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100009376",
+      "award": [
+        "2016LD01"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Bureau of Statistics of China"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        16
+      ]
+    ],
+    "date-time": "2023-09-16T09:11:19Z",
+    "timestamp": 1694855479019
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            9
+          ]
+        ],
+        "date-time": "2018-10-09T00:00:00Z",
+        "timestamp": 1539043200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22164",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22164",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22164",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22164",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "796-811",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1093/bib/bbn058",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_2_1"
+    },
+    {
+      "DOI": "10.1109/SAI.2016.7555988",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_1_3_1",
+      "unstructured": "Baadel S. Thabtah F. \u0026Lu J.(2016 July ).Overlapping clustering: A review.SAI Computing Conference (SAI) 2016 (pp.233‐237). IEEE.https://doi.org/10.1109/SAI.2016.7555988"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm418",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_4_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-567",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_5_1"
+    },
+    {
+      "DOI": "10.1093/bib/bbs056",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_6_1"
+    },
+    {
+      "DOI": "10.1038/nm733",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_7_1"
+    },
+    {
+      "DOI": "10.1214/ss/1177011077",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_8_1"
+    },
+    {
+      "DOI": "10.1016/0098-3004(84)90020-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_9_1"
+    },
+    {
+      "article-title": "Random projections for ‐means clustering",
+      "author": "Boutsidis C.",
+      "first-page": "298",
+      "journal-title": "Advances in Neural Information Processing Systems",
+      "key": "e_1_2_8_1_10_1",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/ng.3225",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_11_1"
+    },
+    {
+      "DOI": "10.1016/j.neucom.2014.06.023",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_12_1"
+    },
+    {
+      "DOI": "10.1109/TPAMI.1979.4766909",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_13_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btg119",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_14_1"
+    },
+    {
+      "DOI": "10.1214/009053604000000256",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_15_1"
+    },
+    {
+      "DOI": "10.1111/j.1751-5823.2002.tb00174.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_16_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-8-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_17_1"
+    },
+    {
+      "DOI": "10.1093/nar/gku1179",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_1_18_1",
+      "unstructured": "Gene Ontology Consortium. (2014).Gene ontology consortium: Going forward.Nucleic Acids Research 43 D1049‐D1056.https://doi.org/10.1093/nar/gku1179"
+    },
+    {
+      "DOI": "10.1214/12-BA719",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_19_1"
+    },
+    {
+      "DOI": "10.1016/j.spl.2010.01.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_20_1"
+    },
+    {
+      "DOI": "10.1186/s12864-017-3990-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_21_1"
+    },
+    {
+      "DOI": "10.1186/s12864-018-4580-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_22_1"
+    },
+    {
+      "DOI": "10.1002/sim.7138",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_23_1"
+    },
+    {
+      "DOI": "10.1016/j.ins.2008.05.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_24_1"
+    },
+    {
+      "DOI": "10.1109/FUZZY.1995.409989",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_1_25_1",
+      "unstructured": "Li R. P. \u0026Mukaidono M.(1995 March).A maximum‐entropy approach to fuzzy clustering.Fuzzy Systems 1995. International Joint Conference of the Fourth IEEE International Conference on Fuzzy Systems and The Second International Fuzzy Engineering Symposium. Proceedings of 1995 IEEE Int(pp.2227‐2232). IEEE.https://doi.org/10.1109/FUZZY.1995.409989"
+    },
+    {
+      "DOI": "10.1016/j.csda.2003.10.017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_26_1"
+    },
+    {
+      "DOI": "10.1002/sim.5780",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_27_1"
+    },
+    {
+      "DOI": "10.1109/ICDMW.2012.16",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_1_28_1",
+      "unstructured": "Lu H. Hong Y. Street W. N. Wang F. \u0026Tong H.(2012 December).Overlapping clustering with sparseness constraints. Data Mining Workshops (ICDMW) In 2012 IEEE 12th International Conference on(pp.486‐494).https://doi.org/10.1109/ICDMW.2012.16"
+    },
+    {
+      "DOI": "10.1016/j.patcog.2011.05.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_29_1"
+    },
+    {
+      "DOI": "10.1016/S1074-7613(02)00280-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_30_1"
+    },
+    {
+      "DOI": "10.1016/j.ejor.2010.08.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_31_1"
+    },
+    {
+      "DOI": "10.1007/978-3-319-09259-1_8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_32_1"
+    },
+    {
+      "article-title": "On spectral clustering: Analysis and an algorithm",
+      "author": "Ng A. Y.",
+      "first-page": "849",
+      "journal-title": "Advances in Neural Information Processing Systems",
+      "key": "e_1_2_8_1_33_1",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1155/2016/5139574",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_34_1"
+    },
+    {
+      "DOI": "10.1016/j.biosystems.2017.09.017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_35_1"
+    },
+    {
+      "DOI": "10.1016/j.knosys.2014.08.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_36_1"
+    },
+    {
+      "DOI": "10.1016/j.cosrev.2007.05.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_37_1"
+    },
+    {
+      "DOI": "10.1109/34.868688",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_38_1"
+    },
+    {
+      "DOI": "10.1016/S0031-3203(99)00090-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_39_1"
+    },
+    {
+      "DOI": "10.1016/j.jmva.2013.02.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_40_1"
+    },
+    {
+      "DOI": "10.1111/1467-9868.00293",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_41_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.3583",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_42_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/17.suppl_1.S306",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_43_1"
+    },
+    {
+      "DOI": "10.1109/RBME.2010.2083647",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_44_1"
+    },
+    {
+      "DOI": "10.1109/72.363466",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_45_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm463",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_46_1"
+    },
+    {
+      "DOI": "10.1109/TKDE.2015.2499200",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_1_47_1"
+    }
+  ],
+  "reference-count": 46,
+  "references-count": 46,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22164"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Overlapping clustering of gene expression data using penalized weighted normalized cut"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "42"
+}

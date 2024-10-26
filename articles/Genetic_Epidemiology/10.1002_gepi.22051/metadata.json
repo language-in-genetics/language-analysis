@@ -1,0 +1,520 @@
+{
+  "DOI": "10.1002/gepi.22051",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22051",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eGenome‐wide association studies (GWASs) commonly use marginal association tests for each single‐nucleotide polymorphism (SNP). Because these tests treat SNPs as independent, their power will be suboptimal for detecting SNPs hidden by linkage disequilibrium (LD). One way to improve power is to use a multiple regression model. However, the large number of SNPs preclude simultaneous fitting with multiple regression, and subset regression is infeasible because of an exorbitant number of candidate subsets. We therefore propose a new method for detecting hidden SNPs having significant yet weak marginal association in a multiple regression model. Our method begins by constructing a bidirected graph locally around each SNP that demonstrates a moderately sized marginal association signal, the \u003cjats:italic\u003efocal\u003c/jats:italic\u003e SNPs. Vertexes correspond to SNPs, and adjacency between vertexes is defined by an LD measure. Subsequently, the method collects from each graph all shortest paths to the focal SNP. Finally, for each shortest path the method fits a multiple regression model to all the SNPs lying in the path and tests the significance of the regression coefficient corresponding to the terminal SNP in the path. Simulation studies show that the proposed method can detect susceptibility SNPs hidden by LD that go undetected with marginal association testing or with existing multivariate methods. When applied to real GWAS data from the Alzheimer's Disease Neuroimaging Initiative (ADNI), our method detected two groups of SNPs: one in a region containing the \u003cjats:italic\u003eapolipoprotein E\u003c/jats:italic\u003e (\u003cjats:italic\u003eAPOE\u003c/jats:italic\u003e) gene, and another in a region close to the \u003cjats:italic\u003esemaphorin 5A\u003c/jats:italic\u003e (\u003cjats:italic\u003eSEMA5A\u003c/jats:italic\u003e) gene.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22051"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Biostatistics Center Kurume University  Fukuoka Japan"
+        }
+      ],
+      "family": "Ueki",
+      "given": "Masao",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistical Modeling The Institute of Statistical Mathematics, The Graduate University for Advanced Studies Tachikawa Tokyo Japan"
+        }
+      ],
+      "family": "Kawasaki",
+      "given": "Yoshinori",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Statistical Genetics and Genomics, Tohoku Medical Megabank Organization Tohoku University  Aoba‐Ku Sendai Japan"
+        }
+      ],
+      "family": "Tamiya",
+      "given": "Gen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "for Alzheimer's Disease Neuroimaging Initiative",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        6,
+        19
+      ]
+    ],
+    "date-time": "2017-06-19T08:32:38Z",
+    "timestamp": 1497861158000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T20:55:34Z",
+    "timestamp": 1696366534000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000049",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Aging"
+    },
+    {
+      "DOI": "10.13039/100000070",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Biomedical Imaging and Bioengineering"
+    },
+    {
+      "DOI": "10.13039/100006483",
+      "doi-asserted-by": "publisher",
+      "name": "AbbVie"
+    },
+    {
+      "DOI": "10.13039/100000957",
+      "doi-asserted-by": "publisher",
+      "name": "Alzheimer's Association"
+    },
+    {
+      "DOI": "10.13039/100002565",
+      "doi-asserted-by": "publisher",
+      "name": "Alzheimer's Drug Discovery Foundation"
+    },
+    {
+      "DOI": "10.13039/100007742",
+      "doi-asserted-by": "publisher",
+      "name": "BioClinica"
+    },
+    {
+      "DOI": "10.13039/100005614",
+      "doi-asserted-by": "publisher",
+      "name": "Biogen"
+    },
+    {
+      "DOI": "10.13039/100002491",
+      "doi-asserted-by": "publisher",
+      "name": "Bristol-Myers Squibb"
+    },
+    {
+      "DOI": "10.13039/100007013",
+      "doi-asserted-by": "publisher",
+      "name": "F. Hoffmann-La Roche"
+    },
+    {
+      "DOI": "10.13039/100004328",
+      "doi-asserted-by": "publisher",
+      "name": "Genentech"
+    },
+    {
+      "DOI": "10.13039/501100005062",
+      "doi-asserted-by": "publisher",
+      "name": "Fujirebio Europe"
+    },
+    {
+      "DOI": "10.13039/100006775",
+      "doi-asserted-by": "publisher",
+      "name": "GE Healthcare"
+    },
+    {
+      "DOI": "10.13039/100004334",
+      "doi-asserted-by": "publisher",
+      "name": "Merck"
+    },
+    {
+      "DOI": "10.13039/100007054",
+      "doi-asserted-by": "publisher",
+      "name": "Meso Scale Diagnostics"
+    },
+    {
+      "DOI": "10.13039/100008272",
+      "doi-asserted-by": "publisher",
+      "name": "Novartis Pharmaceuticals Corporation"
+    },
+    {
+      "DOI": "10.13039/100004319",
+      "doi-asserted-by": "publisher",
+      "name": "Pfizer"
+    },
+    {
+      "DOI": "10.13039/100008373",
+      "doi-asserted-by": "publisher",
+      "name": "Takeda Pharmaceutical Company"
+    },
+    {
+      "DOI": "10.13039/501100000024",
+      "doi-asserted-by": "publisher",
+      "name": "Canadian Institutes of Health Research"
+    },
+    {
+      "DOI": "10.13039/100000009",
+      "doi-asserted-by": "publisher",
+      "name": "Foundation for the National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100009804",
+      "doi-asserted-by": "publisher",
+      "name": "Northern California Institute for Research and Education"
+    },
+    {
+      "DOI": "10.13039/501100001691",
+      "award": [
+        "JP16K00064",
+        "JP16K08638",
+        "JP16H05242",
+        "JP15H01678, JP16H01528"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Japan Society for the Promotion of Science"
+    },
+    {
+      "DOI": "10.13039/100007333",
+      "award": [
+        "U01 AG024904"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Alzheimer’s Disease Neuroimaging Initiative"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        3
+      ]
+    ],
+    "date-time": "2024-04-03T09:49:12Z",
+    "timestamp": 1712137752228
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2017,
+        6,
+        19
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            19
+          ]
+        ],
+        "date-time": "2017-06-19T00:00:00Z",
+        "timestamp": 1497830400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22051",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://api.wiley.com/onlinelibrary/chorus/v1/articles/10.1002%2Fgepi.22051",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22051",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "481-497",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2017,
+        6,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2017,
+        6,
+        19
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "author": "Cox D. R.",
+      "key": "e_1_2_7_2_1",
+      "volume-title": "Mutivariante dependencies",
+      "year": "1996"
+    },
+    {
+      "key": "e_1_2_7_3_1",
+      "unstructured": "Csardi G. \u0026Nepusz T.(2006).The igraph software package for complex network research. InterJournal Complex Systems 1695.http://igraph.org"
+    },
+    {
+      "DOI": "10.1038/ng1669",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1214/088342307000000113",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1159/000119108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.2010.00636.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030170",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1214/009053604000000067",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.09.013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1003101",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21792",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "article-title": "On a dualization of graphical Gaussian models",
+      "author": "Kauermann G.",
+      "first-page": "105",
+      "journal-title": "Scandinavian Journal of Statistics",
+      "key": "e_1_2_7_14_1",
+      "volume": "23",
+      "year": "1996"
+    },
+    {
+      "article-title": "Single‐marker and two‐marker association tests for unphased case‐control genotype data, with a power comparison",
+      "author": "Kim S.",
+      "first-page": "66",
+      "journal-title": "Genetic Epidemiology",
+      "key": "e_1_2_7_15_1",
+      "volume": "34",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.tins.2008.11.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1038/456018a",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1038/nrg3523",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1086/496902",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq330",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "article-title": "Constitutional downregulation of SEMA5A expression in autism",
+      "author": "Melin M.",
+      "first-page": "64",
+      "journal-title": "Trends in Neurosciences",
+      "key": "e_1_2_7_22_1",
+      "volume": "54",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1086/321275",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "author": "R Core Team",
+      "key": "e_1_2_7_25_1",
+      "volume-title": "R: A language and environment for statistical computing",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/0378-3758(79)90038-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1007/s11682-013-9262-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1007/s00439-011-1009-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000477",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr341",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "article-title": "Regression shrinkage and selection via the lasso",
+      "author": "Tibshirani R.",
+      "first-page": "267",
+      "journal-title": "Journal of the Royal Statistical Society Series B",
+      "key": "e_1_2_7_31_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1016/j.csda.2013.01.019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21642",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1159/000179560",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    }
+  ],
+  "reference-count": 33,
+  "references-count": 33,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22051"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Detecting genetic association through shortest paths in a bidirected graph"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

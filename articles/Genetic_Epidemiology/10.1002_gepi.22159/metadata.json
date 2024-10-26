@@ -1,0 +1,833 @@
+{
+  "DOI": "10.1002/gepi.22159",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22159",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eAlthough a number of treatments are available for rheumatoid arthritis (RA), each of them shows a significant nonresponse rate in patients. Therefore, predicting a priori the likelihood of treatment response would be of great patient benefit. Here, we conducted a comparison of a variety of statistical methods for predicting three measures of treatment response, between baseline and 3 or 6 months, using genome‐wide SNP data from RA patients available from the MAximising Therapeutic Utility in Rheumatoid Arthritis (MATURA) consortium. Two different treatments and 11 different statistical methods were evaluated. We used 10‐fold cross validation to assess predictive performance, with nested 10‐fold cross validation used to tune the model hyperparameters when required. Overall, we found that SNPs added very little prediction information to that obtained using clinical characteristics only, such as baseline trait value. This observation can be explained by the lack of strong genetic effects and the relatively small sample sizes available; in analysis of simulated and real data, with larger effects and/or larger sample sizes, prediction performance was much improved. Overall, methods that were consistent with the genetic architecture of the trait were able to achieve better predictive ability than methods that were not. For treatment response in RA, methods that assumed a complex underlying genetic architecture achieved slightly better prediction performance than methods that assumed a simplified genetic architecture.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22159"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-03-27"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-07-28"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-10-12"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Genetic Medicine Newcastle University Newcastle upon Tyne UK"
+        }
+      ],
+      "family": "Cherlin",
+      "given": "Svetlana",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "NIHR Manchester Biomedical Research Centre, Manchester University NHS Foundation Trust Manchester Academic Health Science Centre Manchester UK"
+        }
+      ],
+      "family": "Plant",
+      "given": "Darren",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Leeds Institute of Cancer and Pathology University of Leeds Leeds UK"
+        },
+        {
+          "name": "NIHR Leeds Biomedical Research Centre Leeds Teaching Hospitals NHS Trust Leeds UK"
+        }
+      ],
+      "family": "Taylor",
+      "given": "John C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre for Population Health Sciences, Usher Institute of Population Health Sciences and Informatics University of Edinburgh Edinburgh UK"
+        }
+      ],
+      "family": "Colombo",
+      "given": "Marco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre for Population Health Sciences, Usher Institute of Population Health Sciences and Informatics University of Edinburgh Edinburgh UK"
+        }
+      ],
+      "family": "Spiliopoulou",
+      "given": "Athina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre for Experimental Medicine and Rheumatology, William Harvey Research Institute, Barts and the London School of Medicine and Dentistry Queen Mary University of London and Barts Health NHS Trust London UK"
+        }
+      ],
+      "family": "Tzanis",
+      "given": "Evan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "NIHR Leeds Biomedical Research Centre Leeds Teaching Hospitals NHS Trust Leeds UK"
+        },
+        {
+          "name": "Leeds Institute of Rheumatic and Musculoskeletal Medicine University of Leeds Leeds UK"
+        }
+      ],
+      "family": "Morgan",
+      "given": "Ann W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre for Experimental Medicine and Rheumatology, William Harvey Research Institute, Barts and the London School of Medicine and Dentistry Queen Mary University of London and Barts Health NHS Trust London UK"
+        }
+      ],
+      "family": "Barnes",
+      "given": "Michael R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre for Population Health Sciences, Usher Institute of Population Health Sciences and Informatics University of Edinburgh Edinburgh UK"
+        }
+      ],
+      "family": "McKeigue",
+      "given": "Paul",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Leeds Institute of Cancer and Pathology University of Leeds Leeds UK"
+        },
+        {
+          "name": "NIHR Leeds Biomedical Research Centre Leeds Teaching Hospitals NHS Trust Leeds UK"
+        }
+      ],
+      "family": "Barrett",
+      "given": "Jennifer H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre for Experimental Medicine and Rheumatology, William Harvey Research Institute, Barts and the London School of Medicine and Dentistry Queen Mary University of London and Barts Health NHS Trust London UK"
+        }
+      ],
+      "family": "Pitzalis",
+      "given": "Costantino",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "NIHR Manchester Biomedical Research Centre, Manchester University NHS Foundation Trust Manchester Academic Health Science Centre Manchester UK"
+        },
+        {
+          "name": "Arthritis Research UK Centre for Genetics and Genomics, Centre for Musculoskeletal Research The University of Manchester Manchester UK"
+        }
+      ],
+      "family": "Barton",
+      "given": "Anne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Genetic Medicine Newcastle University Newcastle upon Tyne UK"
+        },
+        {
+          "name": "NIHR Manchester Biomedical Research Centre, Manchester University NHS Foundation Trust Manchester Academic Health Science Centre Manchester UK"
+        },
+        {
+          "name": "Leeds Institute of Cancer and Pathology University of Leeds Leeds UK"
+        },
+        {
+          "name": "NIHR Leeds Biomedical Research Centre Leeds Teaching Hospitals NHS Trust Leeds UK"
+        },
+        {
+          "name": "Centre for Population Health Sciences, Usher Institute of Population Health Sciences and Informatics University of Edinburgh Edinburgh UK"
+        }
+      ],
+      "family": "Consortium",
+      "given": "MATURA",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1879-5572",
+      "affiliation": [
+        {
+          "name": "NIHR Manchester Biomedical Research Centre, Manchester University NHS Foundation Trust Manchester Academic Health Science Centre Manchester UK"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Cordell",
+      "given": "Heather J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        12,
+        13
+      ]
+    ],
+    "date-time": "2018-12-13T03:36:55Z",
+    "timestamp": 1544672215000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        15
+      ]
+    ],
+    "date-time": "2023-09-15T17:10:55Z",
+    "timestamp": 1694797855000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100004440",
+      "award": [
+        "102858/Z/13/Z"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Wellcome Trust"
+    },
+    {
+      "DOI": "10.13039/501100000265",
+      "award": [
+        "MR/L016311/1",
+        "MR‐K015346"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Medical Research Council"
+    },
+    {
+      "DOI": "10.13039/501100000341",
+      "award": [
+        "20385",
+        "MR‐K015346"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Arthritis Research UK"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        1
+      ]
+    ],
+    "date-time": "2023-12-01T09:53:58Z",
+    "timestamp": 1701424438631
+  },
+  "is-referenced-by-count": 14,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            12
+          ]
+        ],
+        "date-time": "2018-10-12T00:00:00Z",
+        "timestamp": 1539302400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22159",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22159",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22159",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "754-771",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        10,
+        12
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.21698",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_2_1"
+    },
+    {
+      "article-title": "Data quality control in genetic case‐control association studies",
+      "author": "Anderson C. A.",
+      "first-page": "1564",
+      "journal-title": "Annals of the Rheumatic Diseases",
+      "key": "e_1_2_7_1_3_1",
+      "volume": "5",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/art.38304",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_4_1"
+    },
+    {
+      "DOI": "10.1093/rheumatology/41.4.430",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_5_1"
+    },
+    {
+      "DOI": "10.1093/rheumatology/kew369",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_6_1"
+    },
+    {
+      "DOI": "10.1038/srep10312",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_7_1"
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_8_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0014802",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_9_1"
+    },
+    {
+      "DOI": "10.1002/art.23945",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_10_1"
+    },
+    {
+      "DOI": "10.1002/art.22190",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_11_1"
+    },
+    {
+      "DOI": "10.1038/ng.3211",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_12_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0060635",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_13_1"
+    },
+    {
+      "DOI": "10.2307/2347628",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_14_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2009.00723.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_15_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000540",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_16_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(15)00465-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_17_1"
+    },
+    {
+      "DOI": "10.1038/ncomms9019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_18_1"
+    },
+    {
+      "article-title": "The current and future use of ridge regression for prediction in quantitative genetics",
+      "author": "deVlaming R.",
+      "first-page": "31",
+      "journal-title": "BioMed Research International",
+      "key": "e_1_2_7_1_19_1",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003348",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21966",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_21_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_22_1"
+    },
+    {
+      "key": "e_1_2_7_1_23_1",
+      "unstructured": "EULAR response criteria(2018).DAS‐score website.https://www.das‐score.nl/das28/en/difference‐between‐the‐das‐and‐das28/importance‐of‐das28‐and‐tight‐control/eular‐response‐criteria.html//"
+    },
+    {
+      "DOI": "10.1093/hmg/ddp295",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_24_1"
+    },
+    {
+      "DOI": "10.1002/art.1780380602",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_25_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21960",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_26_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_27_1"
+    },
+    {
+      "DOI": "10.1007/s10067-014-2634-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_28_1"
+    },
+    {
+      "DOI": "10.1093/mnras/stu642",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_29_1"
+    },
+    {
+      "DOI": "10.1192/bjp.bp.110.087866",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_30_1"
+    },
+    {
+      "author": "Hastie T.",
+      "key": "e_1_2_7_1_31_1",
+      "volume-title": "The Elements of statistical learning data mining, inference, and prediction",
+      "year": "2009"
+    },
+    {
+      "article-title": "Validity of a 2‐component imaging‐derived disease activity score (2C‐DAS28) for improved assessment of synovitis in early rheumatoid arthritis",
+      "author": "Hensor E.",
+      "first-page": "key075‐194",
+      "issue": "3",
+      "journal-title": "Arthritis \u0026 Rheumatology",
+      "key": "e_1_2_7_1_32_1",
+      "volume": "57",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000130",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_33_1"
+    },
+    {
+      "DOI": "10.1186/s13075-015-0764-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_34_1"
+    },
+    {
+      "DOI": "10.1093/rheumatology/kel149",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_35_1"
+    },
+    {
+      "DOI": "10.1038/ng.1108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_36_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000231",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_37_1"
+    },
+    {
+      "DOI": "10.1007/s00122-011-1648-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_38_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20600",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_39_1"
+    },
+    {
+      "article-title": "Genome‐wide association study of response to tumour necrosis factor alpha inhibitor therapy in Rheumatoid Arthritis",
+      "author": "Massey J.",
+      "first-page": "1",
+      "journal-title": "The Pharmacogenetics Journal",
+      "key": "e_1_2_7_1_40_1",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nri2094",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_41_1"
+    },
+    {
+      "DOI": "10.1038/ng.789",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_42_1"
+    },
+    {
+      "DOI": "10.1093/genetics/157.4.1819",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_43_1"
+    },
+    {
+      "DOI": "10.1186/1297-9686-41-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_44_1"
+    },
+    {
+      "DOI": "10.1136/annrheumdis-2014-205541",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_45_1"
+    },
+    {
+      "article-title": "Marginal role for 53 common genetic variants in cardiovascular disease prediction",
+      "author": "Morris R. W.",
+      "first-page": "1",
+      "journal-title": "Heart",
+      "key": "e_1_2_7_1_46_1",
+      "volume": "0",
+      "year": "2016"
+    },
+    {
+      "key": "e_1_2_7_1_47_1",
+      "unstructured": "National Institute for Health and Care Excellence (NICE) NICE Technology Appraisal Guidance 375(2018).Adalimumab etanercept infliximab certolizumab pegol golimumab tocilizumab and abatacept for rheumatoid arthritis not previously treated with DMARDs or after conventional DMARDs only have failed."
+    },
+    {
+      "DOI": "10.1038/gim.2014.192",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_48_1"
+    },
+    {
+      "DOI": "10.1056/NEJMsa0708739",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_49_1"
+    },
+    {
+      "DOI": "10.1016/j.ecolmodel.2008.05.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_50_1"
+    },
+    {
+      "DOI": "10.1002/art.1780380107",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_1_51_1",
+      "unstructured": "Prevoo M. L. L. van’t Hof M. A. Kuper H. H. vanLeeuwen M. A. van dePutte L. B. A. \u0026vanRiel P. L. C. M.(1995).Modified disease activity scores that include twenty‐eight‐joint counts: Development and validation in a prospective longitudinal study of patients with rheumatoid arthritis.Arthritis \u0026 Rheumatology 38 44‐48.https://doi.org/10.1002/art.1780380107"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_52_1"
+    },
+    {
+      "DOI": "10.1136/ard.2010.134445",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_53_1"
+    },
+    {
+      "DOI": "10.1002/ana.21911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_54_1"
+    },
+    {
+      "DOI": "10.1038/ncomms12460",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_55_1"
+    },
+    {
+      "DOI": "10.1002/art.39480",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_1_56_1",
+      "unstructured": "Singh J.A. Saag K. G. Bridges S. L. Jr. Akl E. A. Raveendhara R. B. Sullivan M. C. …McAlindon T.(2016).2015 American College of Rheumatology guideline for the treatment of rheumatoid arthritis.Arthritis \u0026 Rheumatology 68(1) 1‐26.https://doi.org/10.1002/art.39480"
+    },
+    {
+      "DOI": "10.1136/ard.2009.123919",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_57_1"
+    },
+    {
+      "DOI": "10.1186/1297-9686-41-29",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_58_1"
+    },
+    {
+      "DOI": "10.3899/jrheum.110610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_59_1"
+    },
+    {
+      "DOI": "10.1038/ng.3865",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_60_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.10.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_61_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddv145",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_62_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0b013e3181c30fb2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_63_1"
+    },
+    {
+      "DOI": "10.1038/s41397-018-0025-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_64_1"
+    },
+    {
+      "key": "e_1_2_7_1_65_1",
+      "unstructured": "The Open Stack project(2018).Open source software for creating private and public clouds."
+    },
+    {
+      "article-title": "Regression shrinkage and selection via the lasso",
+      "author": "Tibshirani R.",
+      "first-page": "267",
+      "journal-title": "Journal of the Royal Statistical Society, Series B",
+      "key": "e_1_2_7_1_66_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1002/gepi.21958",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_67_1"
+    },
+    {
+      "article-title": "Development and validation of the European League Against Rheumatism response criteria for rheumatoid arthritis: Comparison with the preliminary American College of Rheumatology and the World Health Organization/International League Against Rheumatism Criteria",
+      "author": "vanGestel A. M.",
+      "first-page": "39",
+      "journal-title": "Arthritis \u0026 Rheumatology",
+      "key": "e_1_2_7_1_68_1",
+      "volume": "39",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1007/978-1-4757-2440-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_69_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_70_1"
+    },
+    {
+      "DOI": "10.1136/annrheumdis-2011-201048",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_71_1"
+    },
+    {
+      "DOI": "10.1111/rssb.12127",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_72_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21777",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_73_1"
+    },
+    {
+      "DOI": "10.1038/nrg3457",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_74_1"
+    },
+    {
+      "DOI": "10.1038/ng.3390",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_75_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_76_1"
+    },
+    {
+      "DOI": "10.1038/ng.3941",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_77_1"
+    },
+    {
+      "DOI": "10.1007/10968987_3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_78_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003264",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_79_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_80_1"
+    },
+    {
+      "DOI": "10.1016/j.jbspin.2014.04.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_81_1"
+    }
+  ],
+  "reference-count": 80,
+  "references-count": 80,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22159"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Prediction of treatment response in rheumatoid arthritis patients using genome‐wide SNP data"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "42"
+}

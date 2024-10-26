@@ -1,0 +1,573 @@
+{
+  "DOI": "10.1002/gepi.22260",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22260",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eCopy number variants (CNVs) play an important role in a number of human diseases, but the accurate calling of CNVs remains challenging. Most current approaches to CNV detection use raw read alignments, which are computationally intensive to process. We use a regression tree‐based approach to call germline CNVs from whole‐genome sequencing (WGS, \u0026gt;18x) variant call sets in 6,898 samples across four European cohorts, and describe a rich large variation landscape comprising 1,320 CNVs. Eighty‐one percent of detected events have been previously reported in the Database of Genomic Variants. Twenty‐three percent of high‐quality deletions affect entire genes, and we recapitulate known events such as the \u003cjats:italic\u003eGSTM1\u003c/jats:italic\u003e and \u003cjats:italic\u003eRHD\u003c/jats:italic\u003e gene deletions. We test for association between the detected deletions and 275 protein levels in 1,457 individuals to assess the potential clinical impact of the detected CNVs. We describe complex CNV patterns underlying an association with levels of the CCL3 protein (MAF = 0.15, \u003cjats:italic\u003ep\u003c/jats:italic\u003e = 3.6x10\u003cjats:sup\u003e−12\u003c/jats:sup\u003e) at the \u003cjats:italic\u003eCCL3L3\u003c/jats:italic\u003e locus, and a novel \u003cjats:italic\u003ecis‐\u003c/jats:italic\u003eassociation between a low‐frequency \u003cjats:italic\u003eNOMO1\u003c/jats:italic\u003e deletion and NOMO1 protein levels (MAF = 0.02, \u003cjats:italic\u003ep\u003c/jats:italic\u003e = 2.2x10\u003cjats:sup\u003e−7\u003c/jats:sup\u003e). This study demonstrates that existing population‐wide WGS call sets can be mined for germline CNVs with minimal computational overhead, delivering insight into a less well‐studied, yet potentially impactful class of genetic variant.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22260"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2019-05-10"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2019-08-28"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2019-09-14"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Wellcome Sanger Institute Wellcome Genome Campus  Hinxton United Kingdom"
+        },
+        {
+          "name": "Department of Medical Genetics University of Cambridge  Cambridge United Kingdom"
+        },
+        {
+          "name": "Institute of Translational Genomics Helmholtz Zentrum München—German Research Center for Environmental Health  Neuherberg Germany"
+        }
+      ],
+      "family": "Png",
+      "given": "Grace",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Wellcome Sanger Institute Wellcome Genome Campus  Hinxton United Kingdom"
+        },
+        {
+          "name": "European Bioinformatics Institute Wellcome Genome Campus  Hinxton United Kingdom"
+        }
+      ],
+      "family": "Suveges",
+      "given": "Daniel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Wellcome Sanger Institute Wellcome Genome Campus  Hinxton United Kingdom"
+        },
+        {
+          "name": "Department of Medical Genetics University of Cambridge  Cambridge United Kingdom"
+        }
+      ],
+      "family": "Park",
+      "given": "Young‐Chan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Wellcome Sanger Institute Wellcome Genome Campus  Hinxton United Kingdom"
+        }
+      ],
+      "family": "Walter",
+      "given": "Klaudia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Wellcome Sanger Institute Wellcome Genome Campus  Hinxton United Kingdom"
+        }
+      ],
+      "family": "Kundu",
+      "given": "Kousik",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "William Harvey Research Institute, Barts and The London School of Medicine and Dentistry Queen Mary University of London  London United Kingdom"
+        }
+      ],
+      "family": "Ntalla",
+      "given": "Ioanna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Anogia Medical Centre  Anogia Greece"
+        }
+      ],
+      "family": "Tsafantakis",
+      "given": "Emmanouil",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Echinos Medical Centre  Echinos Greece"
+        }
+      ],
+      "family": "Karaleftheri",
+      "given": "Maria",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Nutrition and Dietetics, School of Health Science and Education Harokopio University of Athens  Athens Greece"
+        }
+      ],
+      "family": "Dedoussis",
+      "given": "George",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Wellcome Sanger Institute Wellcome Genome Campus  Hinxton United Kingdom"
+        },
+        {
+          "name": "Institute of Translational Genomics Helmholtz Zentrum München—German Research Center for Environmental Health  Neuherberg Germany"
+        }
+      ],
+      "family": "Zeggini",
+      "given": "Eleftheria",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3190-4358",
+      "affiliation": [
+        {
+          "name": "Wellcome Sanger Institute Wellcome Genome Campus  Hinxton United Kingdom"
+        },
+        {
+          "name": "Institute of Translational Genomics Helmholtz Zentrum München—German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "Department of Public Health and Primary Care University of Cambridge  Cambridge United Kingdom"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Gilly",
+      "given": "Arthur",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2019,
+        9,
+        14
+      ]
+    ],
+    "date-time": "2019-09-14T09:24:51Z",
+    "timestamp": 1568453091000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        8
+      ]
+    ],
+    "date-time": "2023-09-08T03:30:35Z",
+    "timestamp": 1694143835000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100004440",
+      "award": [
+        "098051"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Wellcome Trust"
+    },
+    {
+      "DOI": "10.13039/501100000781",
+      "award": [
+        "ERC‐2011‐StG 280559‐SEPI"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "European Research Council"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        2
+      ]
+    ],
+    "date-time": "2024-04-02T05:56:14Z",
+    "timestamp": 1712037374176
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2019,
+        9,
+        14
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2019,
+            9,
+            14
+          ]
+        ],
+        "date-time": "2019-09-14T00:00:00Z",
+        "timestamp": 1568419200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22260",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22260",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22260",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "79-89",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2019,
+        9,
+        14
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2019,
+        9,
+        14
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1186/1471-2156-14-61",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_2_1"
+    },
+    {
+      "DOI": "10.1186/1471-2334-13-536",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_3_1"
+    },
+    {
+      "DOI": "10.1111/mec.12105",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_4_1"
+    },
+    {
+      "DOI": "10.1007/s10067-015-3156-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_5_1"
+    },
+    {
+      "DOI": "10.1016/j.meegid.2012.03.021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_6_1"
+    },
+    {
+      "DOI": "10.1038/gene.2012.5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_7_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.3394",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_8_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(17)31928-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_9_1"
+    },
+    {
+      "DOI": "10.1109/TCBB.2016.2576441",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_10_1"
+    },
+    {
+      "DOI": "10.1093/infdis/jix284",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_11_1"
+    },
+    {
+      "DOI": "10.1038/ng2046",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_12_1"
+    },
+    {
+      "DOI": "10.1093/carcin/bgx131",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_13_1"
+    },
+    {
+      "key": "e_1_2_9_1_14_1",
+      "unstructured": "Garrison E. \u0026Marth G.(2012).Haplotype‐based variant detection from short‐read sequencing.arXiv e‐prints. Retrieved fromhttps://ui.adsabs.harvard.edu/abs/2012arXiv1207.3907G"
+    },
+    {
+      "DOI": "10.18632/oncotarget.11792",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_15_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxi004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_16_1"
+    },
+    {
+      "DOI": "10.1214/07-BA225",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_17_1"
+    },
+    {
+      "DOI": "10.1002/ijc.31725",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_18_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20633",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_19_1"
+    },
+    {
+      "DOI": "10.1101/gr.113084.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_20_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_21_1"
+    },
+    {
+      "DOI": "10.1093/jnci/djt018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_22_1"
+    },
+    {
+      "DOI": "10.1038/gene.2012.30",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_23_1"
+    },
+    {
+      "DOI": "10.1111/ahg.12012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_24_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxh008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_25_1"
+    },
+    {
+      "DOI": "10.1038/ncomms6345",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_26_1"
+    },
+    {
+      "article-title": "VCF2CNA: A tool for efficiently detecting copy‐number alterations in VCF genotype data",
+      "author": "Putnam D. K.",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_9_1_27_1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-383834-6.00165-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_28_1"
+    },
+    {
+      "article-title": "Hidden Markov model‐based CNV detection algorithms for Illumina genotyping microarrays",
+      "author": "Seiser E. L.",
+      "first-page": "77",
+      "issue": "7",
+      "journal-title": "Cancer Informatics",
+      "key": "e_1_2_9_1_29_1",
+      "volume": "13",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41431-018-0189-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_30_1"
+    },
+    {
+      "DOI": "10.1111/apm.12578",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_31_1"
+    },
+    {
+      "DOI": "10.1126/science.1197005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_32_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxm013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_33_1"
+    },
+    {
+      "DOI": "10.1002/1521-4141(2002010)32:10\u003c3016::AID-IMMU3016\u003e3.0.CO;2-D",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_34_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.12.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_35_1"
+    },
+    {
+      "DOI": "10.1002/0471250953.bi1110s43",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_36_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btl646",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_37_1"
+    },
+    {
+      "DOI": "10.1101/gr.6861907",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_38_1"
+    },
+    {
+      "DOI": "10.1093/carcin/bgt185",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_39_1"
+    },
+    {
+      "DOI": "10.1038/nrg3871",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_1_40_1"
+    }
+  ],
+  "reference-count": 39,
+  "references-count": 39,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/504209",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22260"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Population‐wide copy number variation calling using variant call format files from 6,898 individuals"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}
