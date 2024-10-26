@@ -1,0 +1,883 @@
+{
+  "DOI": "10.1186/s40246-022-00412-0",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00412-0",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThyroid eye disease (TED) is the most common orbital pathology that occurs in up to 50% of patients with Graves’ disease. Herein, we aimed at discovering the possible hub genes and pathways involved in TED based on bioinformatical approaches.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe GSE105149 and GSE58331 datasets were downloaded from the Gene Expression Omnibus (GEO) database and merged for identifying TED-associated modules by weighted gene coexpression network analysis (WGCNA) and local maximal quasi-clique merger (lmQCM) analysis. EdgeR was run to screen differentially expressed genes (DEGs). Transcription factor (TF), microRNA (miR) and drug prediction analyses were performed using ToppGene suite. Function enrichment analysis was used to investigate the biological function of genes. Protein–protein interaction (PPI) analysis was performed based on the intersection between the list of genes obtained by WGCNA, lmQCM and DEGs, and hub genes were identified using the MCODE plugin. Based on the overlap of 497 genes retrieved from the different approaches, a robust TED coexpression network was constructed and 11 genes (ATP6V1A, PTGES3, PSMD12, PSMA4, METAP2, DNAJA1, PSMA1, UBQLN1, CCT2, VBP1 and NAA50) were identified as hub genes. Key TFs regulating genes in the TED-associated coexpression network, including NFRKB, ZNF711, ZNF407 and MORC2, and miRs including hsa-miR-144, hsa-miR-3662, hsa-miR-12136 and hsa-miR-3646, were identified. Genes in the coexpression network were enriched in the biological processes including proteasomal protein catabolic process and proteasome-mediated ubiquitin-dependent protein catabolic process and the pathways of endocytosis and ubiquitin-mediated proteolysis. Drugs perturbing genes in the coexpression network were also predicted and included enzyme inhibitors, chlorodiphenyl and finasteride.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eFor the first time, TED-associated coexpression network was constructed and key genes and their functions, as well as TFs, miRs and drugs, were predicted. The results of the present work may be relevant in the treatment and diagnosis of TED and may boost molecular studies regarding TED.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "412"
+  ],
+  "article-number": "38",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "5 September 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "2 September 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "8 September 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Hu",
+      "given": "Jinxing",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5191-5708",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Zhou",
+      "given": "Shan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guo",
+      "given": "Weiying",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ],
+    "date-time": "2022-09-08T22:03:14Z",
+    "timestamp": 1662674594000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ],
+    "date-time": "2022-09-08T22:06:57Z",
+    "timestamp": 1662674817000
+  },
+  "funder": [
+    {
+      "award": [
+        "2018KY697"
+      ],
+      "name": "Zhejiang Medical Science and Technology Research Foundation"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ],
+    "date-time": "2024-04-12T19:52:04Z",
+    "timestamp": 1712951524977
+  },
+  "is-referenced-by-count": 8,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            8
+          ]
+        ],
+        "date-time": "2022-09-08T00:00:00Z",
+        "timestamp": 1662595200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            8
+          ]
+        ],
+        "date-time": "2022-09-08T00:00:00Z",
+        "timestamp": 1662595200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00412-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00412-0/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00412-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1093/qjmed/hcv165",
+      "author": "HJ Hsu",
+      "doi-asserted-by": "publisher",
+      "first-page": "67",
+      "issue": "1",
+      "journal-title": "QJM",
+      "key": "412_CR1",
+      "unstructured": "Hsu HJ, Hsu CK, Chen TS, Hsu CH. Thyroid eye disease. QJM. 2016;109(1):67–8.",
+      "volume": "109",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1055/s-2007-980019",
+      "author": "J Kiljanski",
+      "doi-asserted-by": "publisher",
+      "first-page": "528",
+      "issue": "12",
+      "journal-title": "Horm Metab Res",
+      "key": "412_CR2",
+      "unstructured": "Kiljanski J, Nebes V, Stachura I, Kennerdell JS, Wall JR. Should Graves’ disease be considered a collagen disorder of the thyroid, skeletal muscle and connective tissue? Horm Metab Res. 1995;27(12):528–32.",
+      "volume": "27",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1080/01676830903104629",
+      "author": "B Gopinath",
+      "doi-asserted-by": "publisher",
+      "first-page": "256",
+      "issue": "4",
+      "journal-title": "Orbit",
+      "key": "412_CR3",
+      "unstructured": "Gopinath B, Wescombe L, Nguyen B, Wall JR. Can autoimmunity against calsequestrin explain the eye and eyelid muscle inflammation of thyroid eye disease? Orbit. 2009;28(4):256–61.",
+      "volume": "28",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1089/105072502761016476",
+      "author": "WM Wiersinga",
+      "doi-asserted-by": "publisher",
+      "first-page": "855",
+      "issue": "10",
+      "journal-title": "Thyroid",
+      "key": "412_CR4",
+      "unstructured": "Wiersinga WM, Bartalena L. Epidemiology and prevention of Graves’ ophthalmopathy. Thyroid. 2002;12(10):855–60.",
+      "volume": "12",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1089/thy.2010.1634",
+      "author": "MN Stan",
+      "doi-asserted-by": "publisher",
+      "first-page": "777",
+      "issue": "7",
+      "journal-title": "Thyroid",
+      "key": "412_CR5",
+      "unstructured": "Stan MN, Bahn RS. Risk factors for development or deterioration of Graves’ ophthalmopathy. Thyroid. 2010;20(7):777–83.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0137654",
+      "author": "JT Rosenbaum",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0137654",
+      "issue": "9",
+      "journal-title": "PLoS ONE",
+      "key": "412_CR6",
+      "unstructured": "Rosenbaum JT, Choi D, Wong A, Wilson DJ, Grossniklaus HE, Harrington CA, et al. The role of the immune response in the pathogenesis of thyroid eye disease: a reassessment. PLoS ONE. 2015;10(9):e0137654.",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "author": "FF Zhu",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Acta Endocrinol (Buchar)",
+      "key": "412_CR7",
+      "unstructured": "Zhu FF, Yang LZ. Bioinformatic analysis identifies potentially key differentially expressed genes and pathways in orbital adipose tissues of patients with thyroid eye disease. Acta Endocrinol (Buchar). 2019;5(1):1–8.",
+      "volume": "5",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.2174/1874364101812010041",
+      "author": "BW Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "41",
+      "journal-title": "Open Ophthalmol J",
+      "key": "412_CR8",
+      "unstructured": "Lee BW, Kumar VB, Biswas P, Ko AC, Alameddine RM, Granet DB, et al. Transcriptome analysis of orbital adipose tissue in active thyroid eye disease using next generation RNA sequencing technology. Open Ophthalmol J. 2018;12:41–52.",
+      "volume": "12",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0050411",
+      "author": "S Kumari",
+      "doi-asserted-by": "publisher",
+      "first-page": "e50411",
+      "issue": "11",
+      "journal-title": "PLoS ONE",
+      "key": "412_CR9",
+      "unstructured": "Kumari S, Nie J, Chen HS, Ma H, Stewart R, Li X, et al. Evaluation of gene association methods for coexpression network construction and biological knowledge discovery. PLoS ONE. 2012;7(11):e50411.",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s41065-019-0083-y",
+      "author": "Y Di",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "journal-title": "Hereditas",
+      "key": "412_CR10",
+      "unstructured": "Di Y, Chen D, Yu W, Yan L. Bladder cancer stage-associated hub genes revealed by WGCNA co-expression network analysis. Hereditas. 2019;156:7.",
+      "volume": "156",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-559",
+      "author": "P Langfelder",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "journal-title": "BMC Bioinformatics",
+      "key": "412_CR11",
+      "unstructured": "Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics. 2008;9:559.",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "author": "S van Dam",
+      "first-page": "575",
+      "issue": "4",
+      "journal-title": "Brief Bioinform",
+      "key": "412_CR12",
+      "unstructured": "van Dam S, Võsa U, van der Graaf A, Franke L, de Magalhães JP. Gene co-expression analysis for functional classification and gene-disease predictions. Brief Bioinform. 2018;19(4):575–92.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0026683",
+      "author": "MV DiLeo",
+      "doi-asserted-by": "publisher",
+      "first-page": "e26683",
+      "issue": "10",
+      "journal-title": "PLoS ONE",
+      "key": "412_CR13",
+      "unstructured": "DiLeo MV, Strahan GD, den Bakker M, Hoekenga OA. Weighted correlation network analysis (WGCNA) applied to the tomato fruit metabolome. PLoS ONE. 2011;6(10):e26683.",
+      "volume": "6",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/s41598-020-74391-4",
+      "author": "EL Hubbard",
+      "doi-asserted-by": "publisher",
+      "first-page": "17361",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "412_CR14",
+      "unstructured": "Hubbard EL, Catalina MD, Heuer S, Bachali P, Robl R, Geraci NS, et al. Analysis of gene expression from systemic lupus erythematosus synovium reveals myeloid cell-driven pathogenesis of lupus arthritis. Sci Rep. 2020;10(1):17361.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "author": "W Raza",
+      "first-page": "20200403",
+      "issue": "1925",
+      "journal-title": "Proc Biol Sci",
+      "key": "412_CR15",
+      "unstructured": "Raza W, Wang J, Jousset A, Friman VP, Mei X, Wang S, et al. Bacterial community richness shifts the balance between volatile organic compound-mediated microbe-pathogen and microbe-plant interactions. Proc Biol Sci. 2020;287(1925):20200403.",
+      "volume": "287",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1089/cmb.2019.0492",
+      "author": "Y Tang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1519",
+      "issue": "10",
+      "journal-title": "J Comput Biol J Comput Mol Cell Biol",
+      "key": "412_CR16",
+      "unstructured": "Tang Y, Zha L, Zeng X, Yu Z. Identification of biomarkers related to systemic sclerosis with or without pulmonary hypertension using co-expression analysis. J Comput Biol J Comput Mol Cell Biol. 2020;27(10):1519–31.",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00438-020-01654-0",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "741",
+      "issue": "3",
+      "journal-title": "Mol Genet Genomics MGG",
+      "key": "412_CR17",
+      "unstructured": "Li H, Yang C, Zhang J, Zhong W, Zhu L, Chen Y. Identification of potential key mRNAs and LncRNAs for psoriasis by bioinformatic analysis using weighted gene co-expression network analysis. Mol Genet Genomics MGG. 2020;295(3):741–9.",
+      "volume": "295",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12967-020-02587-3",
+      "author": "R Guo",
+      "doi-asserted-by": "publisher",
+      "first-page": "418",
+      "issue": "1",
+      "journal-title": "J Transl Med",
+      "key": "412_CR18",
+      "unstructured": "Guo R, Chu A, Gong Y. Identification of cancer stem cell-related biomarkers in intestinal-type and diffuse-type gastric cancer by stemness index and weighted correlation network analysis. J Transl Med. 2020;18(1):418.",
+      "volume": "18",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s12282-020-01175-z",
+      "author": "X Yu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer",
+      "key": "412_CR19",
+      "unstructured": "Yu X, Guo J, Zhou Q, Huang W, Xu C, Long X. A novel immune-related prognostic index for predicting breast cancer overall survival. Breast Cancer. 2020. https://doi.org/10.1007/s12282-020-01175-z.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1302/2046-3758.98.BJR-2019-0301.R1",
+      "author": "X Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "501",
+      "issue": "8",
+      "journal-title": "Bone Jt Res",
+      "key": "412_CR20",
+      "unstructured": "Li X, Yang Y, Sun G, Dai W, Jie X, Du Y, et al. Promising targets and drugs in rheumatoid arthritis: a module-based and cumulatively scoring approach. Bone Jt Res. 2020;9(8):501–14.",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020130",
+      "author": "A Ghazalpour",
+      "doi-asserted-by": "publisher",
+      "first-page": "e130",
+      "issue": "8",
+      "journal-title": "PLoS Genet",
+      "key": "412_CR21",
+      "unstructured": "Ghazalpour A, Doss S, Zhang B, Wang S, Plaisier C, Castellanos R, et al. Integrating genetic and network analysis to characterize genes related to mouse weight. PLoS Genet. 2006;2(8):e130.",
+      "volume": "2",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/carcin/bgy069",
+      "author": "M Giulietti",
+      "doi-asserted-by": "publisher",
+      "first-page": "1016",
+      "issue": "8",
+      "journal-title": "Carcinogenesis",
+      "key": "412_CR22",
+      "unstructured": "Giulietti M, Righetti A, Principato G, Piva F. LncRNA co-expression network analysis reveals novel biomarkers for pancreatic cancer. Carcinogenesis. 2018;39(8):1016–25.",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2147/OTT.S163891",
+      "author": "XG Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "2815",
+      "journal-title": "Onco Targets Ther",
+      "key": "412_CR23",
+      "unstructured": "Zhou XG, Huang XL, Liang SY, Tang SM, Wu SK, Huang TT, et al. Identifying miRNA and gene modules of colon cancer associated with pathological stage by weighted gene co-expression network analysis. Onco Targets Ther. 2018;11:2815–30.",
+      "volume": "11",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bfgp/elaa015",
+      "author": "V Randhawa",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Brief Funct Genomics",
+      "key": "412_CR24",
+      "unstructured": "Randhawa V, Pathania S. Advancing from protein interactomes and gene co-expression networks towards multi-omics-based composite networks: approaches for predicting and extracting biological knowledge. Brief Funct Genomics. 2020. https://doi.org/10.1093/bfgp/elaa015.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12864-016-3259-0",
+      "author": "J Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1045",
+      "issue": "Suppl 1",
+      "journal-title": "BMC Genomics",
+      "key": "412_CR25",
+      "unstructured": "Zhang J, Huang K. Pan-cancer analysis of frequent DNA co-methylation patterns reveals consistent epigenetic landscape changes in multiple cancers. BMC Genomics. 2017;18(Suppl 1):1045.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "author": "J Zhang",
+      "first-page": "137",
+      "issue": "Suppl 3",
+      "journal-title": "Cancer informatics",
+      "key": "412_CR26",
+      "unstructured": "Zhang J, Huang K. Normalized lmQCM: an algorithm for detecting weak quasi-cliques in weighted graph with applications in gene co-expression module discovery in cancers. Cancer informatics. 2014;13(Suppl 3):137–46.",
+      "volume": "13",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/s12920-018-0431-1",
+      "author": "S Xiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "issue": "Suppl 6",
+      "journal-title": "BMC Med Genomics",
+      "key": "412_CR27",
+      "unstructured": "Xiang S, Huang Z, Wang T, Han Z, Yu CY, Ni D, et al. Condition-specific gene co-expression network mining identifies key pathways and regulators in the brain tissue of Alzheimer’s disease patients. BMC Med Genomics. 2018;11(Suppl 6):115.",
+      "volume": "11",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/genes10090665",
+      "author": "BR Helm",
+      "doi-asserted-by": "publisher",
+      "first-page": "665",
+      "issue": "9",
+      "journal-title": "Genes",
+      "key": "412_CR28",
+      "unstructured": "Helm BR, Zhan X, Pandya PH, Murray ME, Pollok KE, Renbarger JL, Ferguson MJ, Han Z, Ni D, Zhang J, Huang K. Gene co-expression networks restructured gene fusion in rhabdomyosarcoma cancers. Genes. 2019;10(9):665.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1111/cxo.12472",
+      "author": "DL Weiler",
+      "doi-asserted-by": "publisher",
+      "first-page": "20",
+      "issue": "1",
+      "journal-title": "Clin Exp Optom",
+      "key": "412_CR29",
+      "unstructured": "Weiler DL. Thyroid eye disease: a review. Clin Exp Optom. 2017;100(1):20–5.",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "author": "O Grusha Ia",
+      "first-page": "35",
+      "issue": "6",
+      "journal-title": "Vestn Oftalmol",
+      "key": "412_CR30",
+      "unstructured": "Grusha Ia O, Ismailova DS, Gankovskaia OA. Risk factors of corneal damage in patients with Thyroid Eye Disease. Vestn Oftalmol. 2010;126(6):35–8.",
+      "volume": "126",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.3390/ijms21218090",
+      "author": "R Rasaei",
+      "doi-asserted-by": "publisher",
+      "first-page": "8090",
+      "issue": "21",
+      "journal-title": "Int J Mol Sci",
+      "key": "412_CR31",
+      "unstructured": "Rasaei R, Sarodaya N, Kim KS, Ramakrishna S, Hong SH. Importance of deubiquitination in macrophage-mediated viral response and inflammation. Int J Mol Sci. 2020;21(21):8090.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.4049/jimmunol.2000048",
+      "author": "NJ Hos",
+      "doi-asserted-by": "publisher",
+      "first-page": "2456",
+      "issue": "9",
+      "journal-title": "J Immunol",
+      "key": "412_CR32",
+      "unstructured": "Hos NJ, Fischer J, Hos D, Hejazi Z, Calabrese C, Ganesan R, Murthy AMV, Rybniker J, Kumar S, Krönke M, Robinson N. TRIM21 is targeted for chaperone-mediated autophagy during Salmonella typhimurium infection. J Immunol. 2020;205(9):2456–67.",
+      "volume": "205",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.4049/jimmunol.2000243",
+      "author": "A Chitrakar",
+      "doi-asserted-by": "publisher",
+      "first-page": "1009",
+      "issue": "4",
+      "journal-title": "J Immunol",
+      "key": "412_CR33",
+      "unstructured": "Chitrakar A, Budda SA, Henderson JG, Axtell RC, Zenewicz LA. E3 ubiquitin ligase Von Hippel-Lindau protein promotes Th17 differentiation. J Immunol. 2020;205(4):1009–23.",
+      "volume": "205",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12902-016-0098-6",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "18",
+      "journal-title": "BMC Endocr Disord",
+      "key": "412_CR34",
+      "unstructured": "Wang Y, Zhu YF, Wang Q, Xu J, Yan N, Xu J, et al. The haplotype of UBE2L3 gene is associated with Hashimoto’s thyroiditis in a Chinese Han population. BMC Endocr Disord. 2016;16:18.",
+      "volume": "16",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1210/jc.2006-0206",
+      "author": "M Tsurumaru",
+      "doi-asserted-by": "publisher",
+      "first-page": "3138",
+      "issue": "8",
+      "journal-title": "J Clin Endocrinol Metab",
+      "key": "412_CR35",
+      "unstructured": "Tsurumaru M, Kawasaki E, Ida H, Migita K, Moriuchi A, Fukushima K, et al. Evidence for the role of small ubiquitin-like modifier 4 as a general autoimmunity locus in the Japanese population. J Clin Endocrinol Metab. 2006;91(8):3138–43.",
+      "volume": "91",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.3390/molecules25153504",
+      "author": "AS Tsimokha",
+      "doi-asserted-by": "publisher",
+      "first-page": "3504",
+      "issue": "15",
+      "journal-title": "Molecules (Basel, Switzerland)",
+      "key": "412_CR36",
+      "unstructured": "Tsimokha AS, Artamonova TO, Diakonov EE, Khodorkovskii MA, Tomilin AN. Post-translational modifications of extracellular proteasome. Molecules (Basel, Switzerland). 2020;25(15):3504.",
+      "volume": "25",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/j.1365-2249.2012.04578.x",
+      "author": "Y Nagayama",
+      "doi-asserted-by": "publisher",
+      "first-page": "268",
+      "issue": "3",
+      "journal-title": "Clin Exp Immunol",
+      "key": "412_CR37",
+      "unstructured": "Nagayama Y, Nakahara M, Shimamura M, Horie I, Arima K, Abiru N. Prophylactic and therapeutic efficacies of a selective inhibitor of the immunoproteasome for Hashimoto’s thyroiditis, but not for Graves’ hyperthyroidism, in mice. Clin Exp Immunol. 2012;168(3):268–73.",
+      "volume": "168",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1080/14756366.2020.1781107",
+      "author": "TS Corrigan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1387",
+      "issue": "1",
+      "journal-title": "J Enzyme Inhib Med Chem",
+      "key": "412_CR38",
+      "unstructured": "Corrigan TS, Lotti Diaz LM, Border SE, Ratigan SC, Kasper KQ, Sojka D, et al. Design, synthesis, and in vitro evaluation of aza-peptide aldehydes and ketones as novel and selective protease inhibitors. J Enzyme Inhib Med Chem. 2020;35(1):1387–402.",
+      "volume": "35",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s10557-020-07042-539",
+      "author": "S Dalal",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cardiovasc Drugs Ther",
+      "key": "412_CR39",
+      "unstructured": "Dalal S, Shook PL, Singh M, Singh K. Cardioprotective potential of exogenous ubiquitin. Cardiovasc Drugs Ther. 2020. https://doi.org/10.1007/s10557-020-07042-539.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0007857",
+      "author": "HJ Kimura",
+      "doi-asserted-by": "publisher",
+      "issue": "11",
+      "journal-title": "PLoS ONE",
+      "key": "412_CR40",
+      "unstructured": "Kimura HJ, Chen CY, Tzou SC, Rocchi R, Landek-Salgado MA, Suzuki K, et al. Immunoproteasome overexpression underlies the pathogenesis of thyroid oncocytes and primary hypothyroidism: studies in humans and mice. PLoS ONE. 2009;4(11): e7857.",
+      "volume": "4",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.3109/02713683.2012.750368",
+      "author": "WM Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "699",
+      "issue": "6",
+      "journal-title": "Curr Eye Res",
+      "key": "412_CR41",
+      "unstructured": "Lee WM, Paik JS, Cho WK, Oh EH, Lee SB, Yang SW. Rapamycin enhances TNF-α-induced secretion of IL-6 and IL-8 through suppressing PDCD4 degradation in orbital fibroblasts. Curr Eye Res. 2013;38(6):699–706.",
+      "volume": "38",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.32688",
+      "author": "R Khalil",
+      "doi-asserted-by": "publisher",
+      "first-page": "736",
+      "issue": "8",
+      "journal-title": "Am J Med Genet B Neuropsychiatr Genet",
+      "key": "412_CR42",
+      "unstructured": "Khalil R, Kenny C, Hill RS, Mochida GH, Nasir R, Partlow JN, et al. PSMD12 haploinsufficiency in a neurodevelopmental disorder with autistic features. Am J Med Genet B Neuropsychiatr Genet. 2018;177(8):736–45.",
+      "volume": "177",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41598-020-76373-y",
+      "author": "S Yokoyama",
+      "doi-asserted-by": "publisher",
+      "first-page": "19214",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "412_CR43",
+      "unstructured": "Yokoyama S, Iwakami Y, Hang Z, Kin R, Zhou Y, Yasuta Y, et al. Targeting PSMD14 inhibits melanoma growth through SMAD3 stabilization. Sci Rep. 2020;10(1):19214.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-17-2296",
+      "author": "A Levin",
+      "doi-asserted-by": "publisher",
+      "first-page": "3458",
+      "issue": "13",
+      "journal-title": "Cancer Res",
+      "key": "412_CR44",
+      "unstructured": "Levin A, Minis A, Lalazar G, Rodriguez J, Steller H. PSMD5 inactivation promotes 26S proteasome assembly DURING colorectal tumor progression. Cancer Res. 2018;78(13):3458–68.",
+      "volume": "78",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1242/dev.053124",
+      "author": "F Imai",
+      "doi-asserted-by": "publisher",
+      "first-page": "3257",
+      "issue": "19",
+      "journal-title": "Development (Cambridge, England)",
+      "key": "412_CR45",
+      "unstructured": "Imai F, Yoshizawa A, Fujimori-Tonou N, Kawakami K, Masai I. The ubiquitin proteasome system is required for cell proliferation of the lens epithelium and for differentiation of lens fiber cells in zebrafish. Development (Cambridge, England). 2010;137(19):3257–68.",
+      "volume": "137",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1021/acs.jproteome.9b00442",
+      "author": "CA Mintie",
+      "doi-asserted-by": "publisher",
+      "first-page": "3741",
+      "issue": "10",
+      "journal-title": "J Proteome Res",
+      "key": "412_CR46",
+      "unstructured": "Mintie CA, Singh CK, Ndiaye MA, Barrett-Wilt GA, Ahmad N. Identification of molecular targets of dietary grape-mediated chemoprevention of Ultraviolet B skin carcinogenesis: a comparative quantitative proteomics analysis. J Proteome Res. 2019;18(10):3741–51.",
+      "volume": "18",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1210/jc.2009-0212",
+      "author": "J Pihlajamäki",
+      "doi-asserted-by": "publisher",
+      "first-page": "3521",
+      "issue": "9",
+      "journal-title": "J Clin Endocrinol Metab",
+      "key": "412_CR47",
+      "unstructured": "Pihlajamäki J, Boes T, Kim EY, Dearie F, Kim BW, Schroeder J, et al. Thyroid hormone-related regulation of gene expression in human fatty liver. J Clin Endocrinol Metab. 2009;94(9):3521–9.",
+      "volume": "94",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1167/iovs.62.1.29",
+      "author": "CL Hammond",
+      "doi-asserted-by": "publisher",
+      "first-page": "29",
+      "issue": "1",
+      "journal-title": "Invest Ophthalmol Vis Sci",
+      "key": "412_CR48",
+      "unstructured": "Hammond CL, Roztocil E, Gonzalez MO, Feldon SE, Woeller CF. MicroRNA-130a is elevated in thyroid eye disease and increases lipid accumulation in fibroblasts through the suppression of AMPK. Invest Ophthalmol Vis Sci. 2021;62(1):29.",
+      "volume": "62",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1210/clinem/dgab256",
+      "author": "N Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e2866",
+      "issue": "8",
+      "journal-title": "J Clin Endocrinol Metab",
+      "key": "412_CR49",
+      "unstructured": "Wang N, Hou SY, Qi X, Deng M, Cao JM, Tong BD, et al. LncRNA LPAL2/miR-1287-5p/EGFR axis modulates TED-derived orbital fibroblast activation through cell adhesion factors. J Clin Endocrinol Metab. 2021;106(8):e2866–86.",
+      "volume": "106",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1167/iovs.19-27865",
+      "author": "CF Woeller",
+      "doi-asserted-by": "publisher",
+      "first-page": "4336",
+      "issue": "13",
+      "journal-title": "Invest Ophthalmol Vis Sci",
+      "key": "412_CR50",
+      "unstructured": "Woeller CF, Roztocil E, Hammond C, Feldon SE. TSHR signaling stimulates proliferation through PI3K/Akt and induction of miR-146a and miR-155 in thyroid eye disease orbital fibroblasts. Invest Ophthalmol Vis Sci. 2019;60(13):4336–45.",
+      "volume": "60",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1136/bjophthalmol-2020-316051",
+      "author": "JJ Khong",
+      "doi-asserted-by": "publisher",
+      "first-page": "299",
+      "issue": "3",
+      "journal-title": "Br J Ophthalmol",
+      "key": "412_CR51",
+      "unstructured": "Khong JJ, McNab A. Medical treatment in thyroid eye disease in 2020. Br J Ophthalmol. 2021;105(3):299–305.",
+      "volume": "105",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1089/omi.2011.0118",
+      "author": "G Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "284",
+      "issue": "5",
+      "journal-title": "OMICS",
+      "key": "412_CR52",
+      "unstructured": "Yu G, Wang LG, Han Y, He QY. clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS. 2012;16(5):284–7.",
+      "volume": "16",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1007/978-3-319-24277-4",
+      "author": "H Wickham",
+      "doi-asserted-by": "publisher",
+      "key": "412_CR53",
+      "unstructured": "Wickham H. ggplot2: elegant graphics for data analysis. New York: Springer-Verlag; 2016.",
+      "volume-title": "ggplot2: elegant graphics for data analysis",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 53,
+  "references-count": 53,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00412-0"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Construction of the coexpression network involved in the pathogenesis of thyroid eye disease via bioinformatics analysis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

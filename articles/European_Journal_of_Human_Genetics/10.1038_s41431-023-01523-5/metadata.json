@@ -1,0 +1,766 @@
+{
+  "DOI": "10.1038/s41431-023-01523-5",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01523-5",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eRare diseases affect millions of people worldwide, and most have a genetic etiology. The incorporation of next-generation sequencing into clinical settings, particularly exome and genome sequencing, has resulted in an unprecedented improvement in diagnosis and discovery in the past decade. Nevertheless, these tools are unavailable in many countries, increasing health care gaps between high- and low-and-middle-income countries and prolonging the “diagnostic odyssey” for patients. To advance genomic diagnoses in a setting of limited genomic resources, we developed DECIPHERD, an undiagnosed diseases program in Chile. DECIPHERD was implemented in two phases: training and local development. The training phase relied on international collaboration with Baylor College of Medicine, and the local development was structured as a hybrid model, where clinical and bioinformatics analysis were performed in-house and sequencing outsourced abroad, due to lack of high-throughput equipment in Chile. We describe the implementation process and findings of the first 103 patients. They had heterogeneous phenotypes, including congenital anomalies, intellectual disabilities and/or immune system dysfunction. Patients underwent clinical exome or research exome sequencing, as solo cases or with parents using a trio design. We identified pathogenic, likely pathogenic or variants of unknown significance in genes related to the patients´ phenotypes in 47 (45.6%) of them. Half were de novo informative variants, and half of the identified variants have not been previously reported in public databases. DECIPHERD ended the diagnostic odyssey for many participants. This hybrid strategy may be useful for settings of similarly limited genomic resources and lead to discoveries in understudied populations.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1523"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "3 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "30 October 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "6 December 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "4 January 2024"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The project was approved by the Research Ethics Committee at Facultad de Medicina, Clinica Alemana Universidad del Desarrollo (approval #2018-045) and all participants and/or guardians gave written informed consent."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Poli",
+      "given": "M. Cecilia",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8059-3202",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Rebolledo-Jaramillo",
+      "given": "Boris",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lagos",
+      "given": "Catalina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Orellana",
+      "given": "Joan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moreno",
+      "given": "Gabriela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Martín",
+      "given": "Luz M.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7367-5485",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Encina",
+      "given": "Gonzalo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Böhme",
+      "given": "Daniela",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6746-0103",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Faundes",
+      "given": "Víctor",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8569-1941",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Zavala",
+      "given": "M. Jesús",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4357-0295",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Hasbún",
+      "given": "Trinidad",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fischer",
+      "given": "Sara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brito",
+      "given": "Florencia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Araya",
+      "given": "Diego",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lira",
+      "given": "Manuel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de la Cruz",
+      "given": "Javiera",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Astudillo",
+      "given": "Camila",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9933-1253",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lay-Son",
+      "given": "Guillermo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cares",
+      "given": "Carolina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Aracena",
+      "given": "Mariana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Martin",
+      "given": "Esteban San",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Coban-Akdemir",
+      "given": "Zeynep",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4814-6765",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Posey",
+      "given": "Jennifer E.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9907-9246",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lupski",
+      "given": "James R.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0120-5684",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Repetto",
+      "given": "Gabriela M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        4
+      ]
+    ],
+    "date-time": "2024-01-04T08:02:05Z",
+    "timestamp": 1704355325000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        13
+      ]
+    ],
+    "date-time": "2024-02-13T07:04:15Z",
+    "timestamp": 1707807855000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        26
+      ]
+    ],
+    "date-time": "2024-04-26T09:52:35Z",
+    "timestamp": 1714125155673
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        4
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2024-01-04T00:00:00Z",
+        "timestamp": 1704326400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2024-01-04T00:00:00Z",
+        "timestamp": 1704326400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01523-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01523-5",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01523-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        4
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        4
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s41431-019-0508-0",
+      "author": "S Nguengang Wakap",
+      "doi-asserted-by": "publisher",
+      "first-page": "165",
+      "journal-title": "Eur J Hum Genet",
+      "key": "1523_CR1",
+      "unstructured": "Nguengang Wakap S, Lambert DM, Olry A, Rodwell C, Gueydan C, Lanneau V, et al. Estimating cumulative point prevalence of rare diseases: analysis of the Orphanet database. Eur J Hum Genet. 2020;28:165–73.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "key": "1523_CR2",
+      "unstructured": "World Bank. Population, Total and Low and Middle Income Countries. 2021. https://data.worldbank.org/indicator/SP.POP.TOTL?locations=XO\u0026name_desc=false."
+    },
+    {
+      "DOI": "10.1186/s13023-017-0618-0",
+      "author": "S Dharssi",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "1523_CR3",
+      "unstructured": "Dharssi S, Wong-Rieger D, Harold M, Terry S. Review of 11 national policies for rare diseases in the context of key patient needs. Orphanet J Rare Dis. 2017;12:63. Mar 31.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.04.003",
+      "author": "KM Boycott",
+      "doi-asserted-by": "publisher",
+      "first-page": "695",
+      "journal-title": "Am J Hum Genet",
+      "key": "1523_CR4",
+      "unstructured": "Boycott KM, Rath A, Chong JX, Hartley T, Alkuraya FS, Baynam G, et al. International cooperation to enable the diagnosis of all rare genetic diseases. Am J Hum Genet. 2017;100:695–705.",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0771-z",
+      "author": "J Malinowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "986",
+      "journal-title": "Genet Med",
+      "key": "1523_CR5",
+      "unstructured": "Malinowski J, Miller DT, Demmer L, Gannon J, Pereira EM, Schroeder MC, et al. Systematic evidence-based review: outcomes from exome and genome sequencing for pediatric patients with congenital anomalies or intellectual disability. Genet Med. 2020;22:986–1004.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41436-021-01242-6",
+      "author": "K Manickam",
+      "doi-asserted-by": "publisher",
+      "first-page": "2029",
+      "journal-title": "Genet Med",
+      "key": "1523_CR6",
+      "unstructured": "Manickam K, McClain MR, Demmer LA, Biswas S, Kearney HM, Malinowski J, et al. Exome and genome sequencing for pediatric patients with congenital anomalies or intellectual disability: an evidence-based clinical guideline of the American College of Medical Genetics and Genomics (ACMG). Genet Med. 2021;23:2029–37.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/gim.2016.221",
+      "author": "Z Stark",
+      "doi-asserted-by": "publisher",
+      "first-page": "867",
+      "journal-title": "Genet Med",
+      "key": "1523_CR7",
+      "unstructured": "Stark Z, Schofield D, Alam K, Wilson W, Mupfeki N, Macciocca I, et al. Prospective comparison of the cost-effectiveness of clinical whole-exome sequencing with that of usual care overwhelmingly supports early use and reimbursement. Genet Med. 2017;19:867–74.",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0006-8",
+      "author": "Z Stark",
+      "doi-asserted-by": "publisher",
+      "first-page": "173",
+      "journal-title": "Genet Med",
+      "key": "1523_CR8",
+      "unstructured": "Stark Z, Schofield D, Martyn M, Rynehart L, Shrestha R, Alam K, et al. Does genomic sequencing early in the diagnostic trajectory make a difference? A follow-up study of clinical outcomes and cost-effectiveness. Genet Med. 2019;21:173–80.",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1001/jamapediatrics.2017.1755",
+      "author": "TY Tan",
+      "doi-asserted-by": "publisher",
+      "first-page": "855",
+      "journal-title": "JAMA Pediatr",
+      "key": "1523_CR9",
+      "unstructured": "Tan TY, Dillon OJ, Stark Z, Schofield D, Alam K, Shrestha R, et al. Diagnostic impact and cost-effectiveness of whole-exome sequencing for ambulant children with suspected monogenic conditions. JAMA Pediatr. 2017;171:855–62.",
+      "volume": "171",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2209046",
+      "author": "CF Wright",
+      "doi-asserted-by": "publisher",
+      "first-page": "1559",
+      "journal-title": "N Engl J Med",
+      "key": "1523_CR10",
+      "unstructured": "Wright CF, Campbell P, Eberhardt RY, Aitken S, Perrett D, Brent S, et al. Genomic diagnosis of rare pediatric disease in the United Kingdom and Ireland. N Engl J Med. 2023;388:1559–71.",
+      "volume": "388",
+      "year": "2023"
+    },
+    {
+      "key": "1523_CR11",
+      "unstructured": "National Center for Biotechnology Information (NCBI). Clinical and research tests for exome - Genetic Testing Registry (GTR). 2023. https://www.ncbi.nlm.nih.gov/gtr/all/tests/?term=exome."
+    },
+    {
+      "key": "1523_CR12",
+      "unstructured": "Hamadeh N, Van Rompaey C, Metreu E, Eapen SG. New World Bank country classifications by income level: 2022–2023. 2022. https://blogs.worldbank.org/opendata/new-world-bank-country-classifications-income-level-2022-2023."
+    },
+    {
+      "DOI": "10.3389/fpubh.2023.1079601",
+      "author": "D Taruscio",
+      "doi-asserted-by": "publisher",
+      "first-page": "1079601",
+      "journal-title": "Front Public Health",
+      "key": "1523_CR13",
+      "unstructured": "Taruscio D, Salvatore M, Lumaka A, Carta C, Cellai LL, Ferrari G, et al. Undiagnosed diseases: needs and opportunities in 20 countries participating in the Undiagnosed Diseases Network International. Front Public Health. 2023;11:1079601.",
+      "volume": "11",
+      "year": "2023"
+    },
+    {
+      "key": "1523_CR14",
+      "unstructured": "World Health Organization. Accelerating access to genomics for global health Promotion, implementation, collaboration, and ethical, legal, and social issues. A report of the WHO Science Council. 2022;1–46. https://apps.who.int/iris/handle/10665/359560."
+    },
+    {
+      "DOI": "10.3390/ijerph20064732",
+      "author": "T Adachi",
+      "doi-asserted-by": "publisher",
+      "first-page": "4732",
+      "journal-title": "Int J Environ Res Public Health",
+      "key": "1523_CR15",
+      "unstructured": "Adachi T, El-Hattab AW, Jain R, Crespo KAN, Lazo CIQ, Scarpa M, et al. Enhancing equitable access to rare disease diagnosis and treatment around the world: a review of evidence, policies, and challenges. Int J Environ Res Public Health. 2023;20:4732 http://www.ncbi.nlm.nih.gov/pubmed/36981643.",
+      "volume": "20",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1186/s13023-019-1261-8",
+      "author": "G Encina",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "1523_CR16",
+      "unstructured": "Encina G, Castillo-Laborde C, Lecaros JA, Dubois-Camacho K, Calderón JFJF, Aguilera X, et al. Rare diseases in Chile: challenges and recommendations in universal health coverage context. Orphanet J Rare Dis. 2019;14:289.",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "key": "1523_CR17",
+      "unstructured": "Patrinos G, Lopez-Correa C. Genomic medicine in emerging economies: genomics for every nation. United Kingdom: Academic Press Inc.; 2018."
+    },
+    {
+      "DOI": "10.1093/nar/gkw1039",
+      "author": "S Köhler",
+      "doi-asserted-by": "publisher",
+      "first-page": "D865",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1523_CR18",
+      "unstructured": "Köhler S, Vasilevsky NA, Engelstad M, Foster E, McMurry J, Aymé S, et al. The human phenotype ontology in 2017. Nucleic Acids Res. 2017;45:D865–76.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3389/fbinf.2022.818619",
+      "doi-asserted-by": "publisher",
+      "key": "1523_CR19",
+      "unstructured": "Davis MW, Jorgensen EM. ApE, A plasmid editor: a freely available DNA manipulation and visualization program. Front Bioinform. 2022;2:818619. https://doi.org/10.3389/fbinf.2022.818619. eCollection 2022."
+    },
+    {
+      "DOI": "10.1002/art.24565",
+      "author": "S Özen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1575",
+      "journal-title": "Arthritis Rheum",
+      "key": "1523_CR20",
+      "unstructured": "Özen S. Changing concepts in familial Mediterranean fever: is it possible to have an autosomal-recessive disease with only one mutation? Arthritis Rheum. 2009;60:1575–7.",
+      "volume": "60",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.jbi.2008.08.010",
+      "author": "PA Harris",
+      "doi-asserted-by": "publisher",
+      "first-page": "377",
+      "journal-title": "J Biomed Inf",
+      "key": "1523_CR21",
+      "unstructured": "Harris PA, Taylor R, Thielke R, Payne J, Gonzalez N, Conde JG. Research electronic data capture (REDCap)–a metadata-driven methodology and workflow process for providing translational research informatics support. J Biomed Inf. 2009;42:377–81.",
+      "volume": "42",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1681/ASN.2009101070",
+      "author": "M Vujic",
+      "doi-asserted-by": "publisher",
+      "first-page": "1097",
+      "journal-title": "J Am Soc Nephrol",
+      "key": "1523_CR22",
+      "unstructured": "Vujic M, Heyer CM, Ars E, Hopp K, Markoff A, Örndal C, et al. Incompletely penetrant PKD1 alleles mimic the renal manifestations of ARPKD. J Am Soc Nephrol. 2010;21:1097–102.",
+      "volume": "21",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1111/cge.13132",
+      "author": "Z Powis",
+      "doi-asserted-by": "publisher",
+      "first-page": "752",
+      "journal-title": "Clin Genet",
+      "key": "1523_CR23",
+      "unstructured": "Powis Z, Farwell Hagman KD, Mroske C, McWalter K, Cohen JS, Colombo R, et al. Expansion and further delineation of the SETD5 phenotype leading to global developmental delay, variable dysmorphic features, and reduced penetrance. Clin Genet. 2018;93:752–61.",
+      "volume": "93",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.37832",
+      "author": "K Szczałuba",
+      "doi-asserted-by": "publisher",
+      "first-page": "2322",
+      "journal-title": "Am J Med Genet A",
+      "key": "1523_CR24",
+      "unstructured": "Szczałuba K, Brzezinska M, Kot J, Rydzanicz M, Walczak A, Stawiński P, et al. SETD5 loss-of-function mutation as a likely cause of a familial syndromic intellectual disability with variable phenotypic expression. Am J Med Genet A. 2016;170:2322–7.",
+      "volume": "170",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1056/NEJMc1812033",
+      "author": "P Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2478",
+      "journal-title": "N Engl J Med",
+      "key": "1523_CR25",
+      "unstructured": "Liu P, Meng L, Normand EA, Xia F, Song X, Ghazi A, et al. Reanalysis of clinical exome sequencing data. N Engl J Med. 2019;380:2478–80.",
+      "volume": "380",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1590/1516-3180.2022.0076.r1.21072022",
+      "author": "CRDC Quaio",
+      "doi-asserted-by": "publisher",
+      "first-page": "734",
+      "journal-title": "Sao Paulo Med J",
+      "key": "1523_CR26",
+      "unstructured": "Quaio CRDC, Moreira CM, Chung CH, Perazzio SF, Dutra AP, Kim CA. Exome sequencing of 500 Brazilian patients with rare diseases: what we have learned. Sao Paulo Med J. 2022;140:734–6.",
+      "volume": "140",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s12859-018-2027-3",
+      "author": "D Koile",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Bioinform",
+      "key": "1523_CR27",
+      "unstructured": "Koile D, Cordoba M, de Sousa Serro M, Kauffman MA, Yankilevich P. GenIO: a phenotype-genotype analysis web server for clinical genomics of rare diseases. BMC Bioinform. 2018;19:25.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/gim.2017.195",
+      "author": "X Hu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1045",
+      "journal-title": "Genet Med",
+      "key": "1523_CR28",
+      "unstructured": "Hu X, Li N, Xu Y, Li G, Yu T, Yao RE, et al. Proband-only medical exome sequencing as a cost-effective first-tier genetic diagnostic test for patients without prior molecular tests and clinical diagnosis in a developing country: the China experience. Genet Med. 2018;20:1045–53.",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nrg3241",
+      "author": "JA Veltman",
+      "doi-asserted-by": "publisher",
+      "first-page": "565",
+      "journal-title": "Nat Rev Genet",
+      "key": "1523_CR29",
+      "unstructured": "Veltman JA, Brunner HG. De novo mutations in human genetic disease. Nat Rev Genet. 2012;13:565–75.",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.3389/fgene.2022.983668",
+      "author": "M Mohiuddin",
+      "doi-asserted-by": "publisher",
+      "first-page": "983668",
+      "journal-title": "Front Genet",
+      "key": "1523_CR30",
+      "unstructured": "Mohiuddin M, Kooy RF, Pearson CE. De novo mutations, genetic mosaicism and human disease. Front Genet. 2022;13:983668.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41525-020-00149-6",
+      "author": "CS Rocha",
+      "doi-asserted-by": "publisher",
+      "first-page": "42",
+      "journal-title": "NPJ Genom Med",
+      "key": "1523_CR31",
+      "unstructured": "Rocha CS, Secolin R, Rodrigues MR, Carvalho BS, Lopes-Cendes I. The Brazilian initiative on precision medicine (BIPMed): fostering genomic data-sharing of underrepresented populations. NPJ Genom Med. 2020;5:42.",
+      "volume": "5",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa794",
+      "author": "M Peña-Chilet",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1130",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1523_CR32",
+      "unstructured": "Peña-Chilet M, Roldán G, Perez-Florido J, Ortuño FM, Carmona R, Aquino V, et al. CSVS, a crowdsourcing database of the Spanish population genetic variability. Nucleic Acids Res. 2021;49:D1130–7.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/2020.04.27.064824",
+      "doi-asserted-by": "publisher",
+      "key": "1523_CR33",
+      "unstructured": "Coban-Akdemir Z, Song X, Ceballos FC, Davut P, Karaca E, Bayram Y, et al. The impact of the Turkish (TK) population variome on the genomic architecture of rare disease traits. bioRxiv. 2023; https://doi.org/10.1101/2020.04.27.064824."
+    },
+    {
+      "DOI": "10.1002/cphg.50",
+      "doi-asserted-by": "crossref",
+      "key": "1523_CR34",
+      "unstructured": "Sobreira NLM, Arachchi H, Buske OJ, Chong JX, Hutton B, Foreman J, et al. Matchmaker exchange. In: current protocols in human genetics. Hoboken, NJ, USA: John Wiley \u0026 Sons, Inc.; 2017. 201. p. 9.31.1–9.31.15."
+    },
+    {
+      "DOI": "10.1001/jamanetworkopen.2020.18109",
+      "author": "G Costain",
+      "doi-asserted-by": "publisher",
+      "first-page": "e2018109",
+      "journal-title": "JAMA Netw Open",
+      "key": "1523_CR35",
+      "unstructured": "Costain G, Walker S, Marano M, Veenma D, Snell M, Curtis M, et al. Genome sequencing as a diagnostic test in children with unexplained medical complexity. JAMA Netw Open. 2020;3:e2018109.",
+      "volume": "3",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2023.03.006",
+      "author": "AR Deshwar",
+      "doi-asserted-by": "publisher",
+      "first-page": "895",
+      "journal-title": "Am J Hum Genet",
+      "key": "1523_CR36",
+      "unstructured": "Deshwar AR, Yuki KE, Hou H, Liang Y, Khan T, Celik A, et al. Trio RNA sequencing in a cohort of medically complex children. Am J Hum Genet. 2023;110:895–900.",
+      "volume": "110",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1101/mcs.a003392",
+      "author": "L Frésard",
+      "doi-asserted-by": "publisher",
+      "first-page": "a003392",
+      "journal-title": "Cold Spring Harb Mol Case Stud",
+      "key": "1523_CR37",
+      "unstructured": "Frésard L, Montgomery SB. Diagnosing rare diseases after the exome. Cold Spring Harb Mol Case Stud. 2018;4:a003392.",
+      "volume": "4",
+      "year": "2018"
+    },
+    {
+      "key": "1523_CR38",
+      "unstructured": "United Nations Group for Sustainable Development Goals. Leaving no one behind: equality and non-discrimination at the heart of sustainable development. 2016. https://unsceb.org/sites/default/files/imported_files/CEB equality framework-A4-web-rev3.pdf."
+    }
+  ],
+  "reference-count": 38,
+  "references-count": 38,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-3232133/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01523-5"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Decoding complex inherited phenotypes in rare disorders: the DECIPHERD initiative for rare undiagnosed diseases in Chile"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

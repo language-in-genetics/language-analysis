@@ -1,0 +1,519 @@
+{
+  "DOI": "10.1002/gepi.21969",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21969",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eDNA methylation is a key epigenetic mark involved in both normal development and disease progression. Recent advances in high‐throughput technologies have enabled genome‐wide profiling of DNA methylation. However, DNA methylation profiling often employs different designs and platforms with varying resolution, which hinders joint analysis of methylation data from multiple platforms. In this study, we propose a penalized functional regression model to impute missing methylation data. By incorporating functional predictors, our model utilizes information from nonlocal probes to improve imputation quality. Here, we compared the performance of our functional model to linear regression and the best single probe surrogate in real data and via simulations. Specifically, we applied different imputation approaches to an acute myeloid leukemia dataset consisting of 194 samples and our method showed higher imputation accuracy, manifested, for example, by a 94% relative increase in information content and up to 86% more CpG sites passing post‐imputation filtering. Our simulated association study further demonstrated that our method substantially improves the statistical power to identify trait‐associated methylation loci. These findings indicate that the penalized functional regression model is a convenient and valuable imputation tool for methylation data, and it can boost statistical power in downstream epigenome‐wide association study (EWAS).\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21969"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina  Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Curriculum in Bioinformatics and Computational Biology University of North Carolina  Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Department of Statistics University of North Carolina  Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Guosheng",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Huang",
+      "given": "Kuan‐Chieh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina  Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Department of Computer Science University of North Carolina  Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Xu",
+      "given": "Zheng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics Bioinformatics Research Center North Carolina State University  Raleigh North Carolina United States of America"
+        }
+      ],
+      "family": "Tzeng",
+      "given": "Jung‐Ying",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Human Genetics, School of Medicine Emory University  Atlanta Georgia United States of America"
+        }
+      ],
+      "family": "Conneely",
+      "given": "Karen N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics School of Public Health University of Minnesota  Minnesota United States of America"
+        }
+      ],
+      "family": "Guan",
+      "given": "Weihua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Kang",
+      "given": "Jian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina  Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Curriculum in Bioinformatics and Computational Biology University of North Carolina  Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Department of Computer Science University of North Carolina  Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Li",
+      "given": "Yun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        4,
+        10
+      ]
+    ],
+    "date-time": "2016-04-10T17:49:30Z",
+    "timestamp": 1460310570000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T00:51:32Z",
+    "timestamp": 1696380692000
+  },
+  "funder": [
+    {
+      "award": [
+        "R01HG006292",
+        "R01HG006703",
+        "P01 CA142538"
+      ],
+      "name": "Cancer Genome Atlas"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T08:40:13Z",
+    "timestamp": 1696408813696
+  },
+  "is-referenced-by-count": 10,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        4,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            4,
+            7
+          ]
+        ],
+        "date-time": "2016-04-07T00:00:00Z",
+        "timestamp": 1459987200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21969",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21969",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "333-340",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        4,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        4,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2016,
+        5
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.21789",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1038/nsmb.2518",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1038/ng.969",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1016/j.febslet.2005.07.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2011.07.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1101/gad.947102",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1093/nar/gnh026",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020026",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21774",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1979.10481038",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0602949103",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2207",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt477",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1038/ng1909",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1038/nbt.3157",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1534/genetics.115.178343",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1534/genetics.115.180869",
+      "article-title": "Meta‐analysis of complex diseases at gene level by generalized functional linear models",
+      "author": "Fan R",
+      "doi-asserted-by": "crossref",
+      "first-page": "457",
+      "issue": "2",
+      "journal-title": "Genetics",
+      "key": "e_1_2_7_18_1",
+      "volume": "202",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1101/gr.119685.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1038/nature12113",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1198/jcgs.2010.10007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1152/japplphysiol.00238.2010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1038/ng.865",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/nbt.1682",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1038/nrg3270",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1186/gb-2013-14-10-r115",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0110679",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1534/genetics.111.137984",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bth499",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1038/nature11412",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1101/gr.101907.109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1301689",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1146/annurev.genom.9.081307.164242",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1093/bib/bbq080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1038/nature08514",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21603",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkt1380",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2014.216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1038/nrg3000",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1038/nrg3354",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1038/nature11404",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1038/nature12222",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/17.6.520",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_43_1"
+    },
+    {
+      "DOI": "10.1101/gr.147942.112",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.1186/s13059-015-0581-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1186/1755-8794-6-S1-S13",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    },
+    {
+      "DOI": "10.1038/nature12433",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_47_1"
+    }
+  ],
+  "reference-count": 46,
+  "references-count": 46,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21969"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Across‐Platform Imputation of DNA Methylation Levels Incorporating Nonlocal Information Using Penalized Functional Regression"
+  ],
+  "type": "journal-article",
+  "volume": "40"
+}

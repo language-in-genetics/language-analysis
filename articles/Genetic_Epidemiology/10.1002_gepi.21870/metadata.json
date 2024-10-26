@@ -1,0 +1,574 @@
+{
+  "DOI": "10.1002/gepi.21870",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21870",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eGenetic simulation programs are used to model data under specified assumptions to facilitate the understanding and study of complex genetic systems. Standardized data sets generated using genetic simulation are essential for the development and application of novel analytical tools in genetic epidemiology studies. With continuing advances in high‐throughput genomic technologies and generation and analysis of larger, more complex data sets, there is a need for updating current approaches in genetic simulation modeling. To provide a forum to address current and emerging challenges in this area, the National Cancer Institute (NCI) sponsored a workshop, entitled “Genetic Simulation Tools for Post‐Genome Wide Association Studies of Complex Diseases” at the National Institutes of Health (NIH) in Bethesda, Maryland on March 11–12, 2014. The goals of the workshop were to (1) identify opportunities, challenges, and resource needs for the development and application of genetic simulation models; (2) improve the integration of tools for modeling and analysis of simulated data; and (3) foster collaborations to facilitate development and applications of genetic simulation. During the course of the meeting, the group identified challenges and opportunities for the science of simulation, software and methods development, and collaboration. This paper summarizes key discussions at the meeting, and highlights important challenges and opportunities to advance the field of genetic simulation.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21870"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Surveillance Research Program, Division of Cancer Control and Population Sciences National Cancer Institute, NIH  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Chen",
+      "given": "Huann‐Sheng",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Genomic Medicine National Human Genome Research Institute, NIH  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Hutter",
+      "given": "Carolyn M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology and Genomics Research Program Division of Cancer Control and Population Sciences, National Cancer Institute, NIH  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Mechanic",
+      "given": "Leah E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Community and Family Medicine, Dartmouth College  Lebanon New Hampshire United States of America"
+        }
+      ],
+      "family": "Amos",
+      "given": "Christopher I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science and Engineering University of California, San Diego  La Jolla California United States of America"
+        }
+      ],
+      "family": "Bafna",
+      "given": "Vineet",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Duke Molecular Physiology Institute Duke University  Durham North Carolina United States of America"
+        }
+      ],
+      "family": "Hauser",
+      "given": "Elizabeth R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Bioengineering and Therapeutic Sciences University of California  San Francisco California United States of America"
+        }
+      ],
+      "family": "Hernandez",
+      "given": "Ryan D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Vanderbilt University  Nashville Tennessee United States of America"
+        }
+      ],
+      "family": "Li",
+      "given": "Chun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Molecular Biology University of Wyoming  Laramie Wyoming United States of America"
+        }
+      ],
+      "family": "Liberles",
+      "given": "David A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genes, Environment, and Health Branch (GEH) National Institute of Environmental Health Sciences, NIH, Research Triangle Park  North Carolina United States of America"
+        }
+      ],
+      "family": "McAllister",
+      "given": "Kimberly",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics Dartmouth College  Lebanon New Hampshire United States of America"
+        }
+      ],
+      "family": "Moore",
+      "given": "Jason H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Office of Director National Institutes of Health  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Paltoo",
+      "given": "Dina N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Prevention and Population Sciences Program, Division of Cardiovascular Sciences National Heart, Lung, and Blood Institute, NIH  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Papanicolaou",
+      "given": "George J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Bioinformatics and Computational Biology University of Texas MD Anderson Cancer Center  Houston Texas United States of America"
+        }
+      ],
+      "family": "Peng",
+      "given": "Bo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biochemistry and Molecular Biology Pennsylvania State University  University Park Pennsylvania United States of America"
+        }
+      ],
+      "family": "Ritchie",
+      "given": "Marylyn D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Surveillance Research Program, Division of Cancer Control and Population Sciences National Cancer Institute, NIH  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Rosenfeld",
+      "given": "Gabriel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics University of California  San Francisco California United States of America"
+        }
+      ],
+      "family": "Witte",
+      "given": "John S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology and Genomics Research Program Division of Cancer Control and Population Sciences, National Cancer Institute, NIH  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Gillanders",
+      "given": "Elizabeth M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Surveillance Research Program, Division of Cancer Control and Population Sciences National Cancer Institute, NIH  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Feuer",
+      "given": "Eric J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2014,
+        11,
+        4
+      ]
+    ],
+    "date-time": "2014-11-04T21:25:18Z",
+    "timestamp": 1415136318000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        13
+      ]
+    ],
+    "date-time": "2023-09-13T19:10:07Z",
+    "timestamp": 1694632207000
+  },
+  "funder": [
+    {
+      "name": "Surveillance Research Program (SRP) of the Division of Cancer Control and Population Sciences (DCCPS), National Cancer Institute (NCI)"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        14
+      ]
+    ],
+    "date-time": "2023-09-14T07:14:27Z",
+    "timestamp": 1694675667947
+  },
+  "is-referenced-by-count": 18,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2014,
+        11,
+        4
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            4
+          ]
+        ],
+        "date-time": "2014-11-04T00:00:00Z",
+        "timestamp": 1415059200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21870",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21870",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "11-19",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2014,
+        11,
+        4
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2014,
+        11,
+        4
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ng.2804",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1093/genetics/162.4.2025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1177/0272989X12454577",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1093/bib/bbs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1038/ncomms1130",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "key": "e_1_2_7_7_1",
+      "unstructured": "Genetic Simulation Resources.2014.Genetic Simulation Resources (GSR). A catalogue of genetic data simulation software. Available athttps://popmodels.cancercontrol.cancer.gov/gsr/. Accessed August 1 2014."
+    },
+    {
+      "DOI": "10.4081/eb.2012.e9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1038/nature09764",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1111/j.1365-2796.2011.02491.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1186/2041-1480-4-35",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1093/jncimonographs/lgj017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1038/ng.2740",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn522",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1093/carcin/bgr056",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1038/nrg3130",
+      "article-title": "Computer simulations: tools for population and evolutionary genetics",
+      "author": "Hoban S",
+      "doi-asserted-by": "crossref",
+      "first-page": "110",
+      "issue": "2",
+      "journal-title": "Nat Rev Genet",
+      "key": "e_1_2_7_16_1",
+      "volume": "13",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/1753-6561-3-s7-s4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-12-1262",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1002/pro.2071",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1093/gbe/evt151",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1186/1479-7364-3-1-79",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004379",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1159/000346826",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20652",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1038/ng.2671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt094",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "article-title": "Genetic data simulators and their applications: an overview",
+      "author": "Peng B",
+      "journal-title": "Genet Epidemiol.",
+      "key": "e_1_2_7_27_1",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-380862-2.00001-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1016/j.febslet.2009.10.073",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2010.11.055",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1126/science.1219240",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003258",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1186/1756-0500-6-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1186/1756-0381-5-16",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0b013e3181577511",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1101/gr.091827.109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21696",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-15-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1220977110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20641",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1322563111",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21870"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Genetic Simulation Tools for Post‐Genome Wide Association Studies of Complex Diseases"
+  ],
+  "type": "journal-article",
+  "volume": "39"
+}

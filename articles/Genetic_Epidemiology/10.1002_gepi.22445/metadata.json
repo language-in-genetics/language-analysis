@@ -1,0 +1,496 @@
+{
+  "DOI": "10.1002/gepi.22445",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22445",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMendelian randomization (MR) is a statistical method exploiting genetic variants as instrumental variables to estimate the causal effect of modifiable risk factors on an outcome of interest. Despite wide uses of various popular two‐sample MR methods based on genome‐wide association study summary level data, however, those methods could suffer from potential power loss or/and biased inference when the chosen genetic variants are in linkage disequilibrium (LD), and also have relatively large direct effects on the outcome whose distribution might be heavy‐tailed which is commonly referred to as the idiosyncratic pleiotropy phenomenon. To resolve those two issues, we propose a novel Robust Bayesian Mendelian Randomization (RBMR) model that uses the more robust multivariate generalized ‐distribution to model such direct effects in a probabilistic model framework which can also incorporate the LD structure explicitly. The generalized ‐distribution can be represented as a Gaussian scaled mixture so that our model parameters can be estimated by the expectation maximization (EM)‐type algorithms. We compute the standard errors by calibrating the evidence lower bound using the likelihood ratio test. Through extensive simulation studies, we show that our RBMR has robust performance compared with other competing methods. We further apply our RBMR method to two benchmark data sets and find that RBMR has smaller bias and standard errors. Using our proposed RBMR method, we find that coronary artery disease is associated with increased risk of critically ill coronavirus disease 2019. We also develop a user‐friendly R package \u003cjats:italic\u003eRBMR\u003c/jats:italic\u003e (\u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/AnqiWang2021/RBMR\"\u003ehttps://github.com/AnqiWang2021/RBMR\u003c/jats:ext-link\u003e) for public use.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22445"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-07-21"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-01-20"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-02-22"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-4338-7105",
+      "affiliation": [
+        {
+          "name": "Department of Statistics and Actuarial Science University of Hong Kong Hong Kong SAR China"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Wang",
+      "given": "Anqi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics and Actuarial Science University of Hong Kong Hong Kong SAR China"
+        }
+      ],
+      "family": "Liu",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3048-9823",
+      "affiliation": [
+        {
+          "name": "Department of Statistics and Actuarial Science University of Hong Kong Hong Kong SAR China"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Liu",
+      "given": "Zhonghua",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        22
+      ]
+    ],
+    "date-time": "2022-02-22T18:15:40Z",
+    "timestamp": 1645553740000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        25
+      ]
+    ],
+    "date-time": "2023-08-25T09:52:49Z",
+    "timestamp": 1692957169000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T00:53:04Z",
+    "timestamp": 1714524784591
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "3-4",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3-4",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            22
+          ]
+        ],
+        "date-time": "2022-02-22T00:00:00Z",
+        "timestamp": 1645488000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22445",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22445",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22445",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "159-169",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        4
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1080/03610918.2013.875565",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1016/0167-7152(94)00208-P",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "key": "e_1_2_7_4_1",
+      "unstructured": "Beal M. J.(2003).Variational algorithms for approximate Bayesian inference. University of London."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv546",
+      "article-title": "Approximately independent linkage disequilibrium blocks in human populations",
+      "author": "Berisa T.",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "issue": "2",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_7_5_1",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1080/01621459.2017.1285773",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.2307/2291055",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyv080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21758",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1093/nargab/lqaa028",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1038/ng.782",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1038/s41431-020-0636-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1101/2021.03.10.21252820",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_13_1",
+      "unstructured": "COVID‐19 Host Genetics Initiative. (2021).Mapping the human genetic architecture of covid‐19 by worldwide meta‐analysis.MedRxiv."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx314",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1977.tb01600.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1007/s00439-007-0448-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1038/nature10405",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003919",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1146/annurev-genom-090314-050016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "key": "e_1_2_7_20_1",
+      "unstructured": "Frahm G.(2004).Generalized elliptical distributions:Theory and applications(PhD thesis). Universitätsbibliothek."
+    },
+    {
+      "DOI": "10.1198/073500108000000024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "article-title": "MR‐Base: A platform for systematic causal inference across the phenome using billions of genetic associations",
+      "author": "Hemani G.",
+      "first-page": "078972",
+      "journal-title": "BioRxiv",
+      "key": "e_1_2_7_22_1",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1017/CBO9780511550683",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/ng.2802",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1002/sim.3034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1093/biomet/85.4.755",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1038/nature14177",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkw1133",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1097/01.ede.0000215160.88317.cb",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1038/ng.3570",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1093/biomet/ass025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1038/ng.784",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1038/nrg3461",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1038/nature09270",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1038/nature11632",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "author": "Van der Vaart A. W.",
+      "key": "e_1_2_7_37_1",
+      "volume-title": "Asymptotic statistics",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0099-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "key": "e_1_2_7_39_1",
+      "unstructured": "Wang B. \u0026Titterington D.(2005).Inadequacy of interval estimates corresponding to variational Bayesian approximations. InAISTATS. Citeseer."
+    },
+    {
+      "DOI": "10.1038/ng.2797",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1186/s12864-018-4851-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz880",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz749",
+      "article-title": "Bayesian weighted Mendelian randomization for causal inference based on summary statistics",
+      "author": "Zhao J.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1501",
+      "issue": "5",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_7_43_1",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1214/19-AOS1866",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.1214/17-AOAS1046",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1038/s41467-017-02317-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2021.03.02.21252801",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22445"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A two‐sample robust Bayesian Mendelian Randomization method accounting for linkage disequilibrium and idiosyncratic pleiotropy with applications to the COVID‐19 outcomes"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

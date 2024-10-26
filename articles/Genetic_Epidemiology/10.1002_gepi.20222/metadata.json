@@ -1,0 +1,337 @@
+{
+  "DOI": "10.1002/gepi.20222",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.20222",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe significance level of a non‐parametric linkage (NPL) statistic is often found by simulation since the distribution of the test statistic is complex and unknown. Ideally, simulation occurs by randomly assigning founder genotypes and then simulating meiotic events for the descendants in the pedigree, commonly referred to as ‘gene dropping’. The missing data pattern in the original pedigree, including lack of phase information (due to unordered genotypes), is then imposed on the simulated pedigree. However, this approach is usually computationally infeasible for larger pedigrees which require Markov chain Monte Carlo (MCMC) techniques to calculate the statistic, as an additional MCMC run is required to estimate the statistic for each gene drop. In this work, we propose a novel method to estimate the significance level of the NPL statistic in large pedigrees. This is accomplished by constructing a hierarchical model, which allows estimation of the NPL statistic variability via separate estimation of the Markov chain and gene dropping variability. The significance level is estimated by fitting a parametric model to the statistic and using the method of moments to obtain parameter estimates. In a simulation study we found our hierarchical model estimates to be very close to the gold standard empirical estimates, and offer substantial improvements over the existing conservative method used by the software SimWalk2. The estimation procedure significantly reduces the computational time relative to the ideal empirical estimate, allowing for an accurate estimate of the significance level in a more manageable amount of time. \u003cjats:italic\u003eGenet. Epidemiol\u003c/jats:italic\u003e. 31, 2007. © 2007 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.20222"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Brock",
+      "given": "Guy N.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Weeks",
+      "given": "Daniel E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sobel",
+      "given": "Eric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Feingold",
+      "given": "Eleanor",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        18
+      ]
+    ],
+    "date-time": "2007-05-18T21:21:37Z",
+    "timestamp": 1179523297000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2023-09-28T20:31:37Z",
+    "timestamp": 1695933097000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        29
+      ]
+    ],
+    "date-time": "2023-09-29T05:10:05Z",
+    "timestamp": 1695964205703
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        16
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2007,
+            5,
+            16
+          ]
+        ],
+        "date-time": "2007-05-16T00:00:00Z",
+        "timestamp": 1179273600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.20222",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.20222",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "417-430",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        16
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2007,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ng786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_2_1"
+    },
+    {
+      "DOI": "10.1086/426154",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_3_1"
+    },
+    {
+      "DOI": "10.1016/j.amjhyper.2004.12.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_4_1"
+    },
+    {
+      "DOI": "10.1086/301929",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_5_1"
+    },
+    {
+      "DOI": "10.1016/j.metabol.2005.01.022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_6_1"
+    },
+    {
+      "DOI": "10.1038/75514",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_7_1"
+    },
+    {
+      "DOI": "10.1159/000091010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20177",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_9_1"
+    },
+    {
+      "DOI": "10.1086/301592",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_10_1"
+    },
+    {
+      "article-title": "Parametric and nonparametric linkage analysis: a unified multipoint approach",
+      "author": "Kruglyak L",
+      "first-page": "1347",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_11_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1073/pnas.84.8.2363",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "DOI": "10.1159/000077389",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_13_1"
+    },
+    {
+      "DOI": "10.1038/sj.ejhg.5201406",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10243",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_15_1"
+    },
+    {
+      "DOI": "10.1002/zoo.1430050209",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_16_1"
+    },
+    {
+      "DOI": "10.1002/(SICI)1098-2272(1999)16:3\u003c225::AID-GEPI1\u003e3.0.CO;2-#",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_17_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.2004.00181.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_18_1"
+    },
+    {
+      "DOI": "10.1086/321264",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_19_1"
+    },
+    {
+      "article-title": "Descent graphs in pedigree analysis: applications to haplotyping, location scores, and marker‐sharing statistics",
+      "author": "Sobel E",
+      "first-page": "1323",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_20_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1002/gepi.10296",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_21_1"
+    },
+    {
+      "DOI": "10.1002/gepi.1370100402",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_22_1"
+    },
+    {
+      "DOI": "10.1186/1471-2156-6-S1-S27",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "DOI": "10.1002/047002139X.ch8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_24_1"
+    },
+    {
+      "article-title": "SLINK: a general simulation program for linkage analysis",
+      "author": "Weeks D",
+      "first-page": "A204",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_25_1",
+      "volume": "47",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.2307/2533202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_26_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20147",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_27_1"
+    }
+  ],
+  "reference-count": 26,
+  "references-count": 26,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.20222"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A hierarchical model for estimating significance levels of non‐parametric linkage statistics for large pedigrees"
+  ],
+  "type": "journal-article",
+  "volume": "31"
+}

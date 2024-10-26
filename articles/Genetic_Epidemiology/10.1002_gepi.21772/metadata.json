@@ -1,0 +1,681 @@
+{
+  "DOI": "10.1002/gepi.21772",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21772",
+  "abstract": "\u003cjats:p\u003eRecently, many statistical methods have been proposed to test for associations between rare genetic variants and complex traits. Most of these methods test for association by aggregating genetic variations within a predefined region, such as a gene. Although there is evidence that “aggregate” tests are more powerful than the single marker test, these tests generally ignore neutral variants and therefore are unable to identify specific variants driving the association with phenotype. We propose a novel aggregate rare‐variant test that explicitly models a fraction of variants as neutral, tests associations at the gene‐level, and infers the rare‐variants driving the association. Simulations show that in the practical scenario where there are many variants within a given region of the genome with only a fraction causal our approach has greater power compared to other popular tests such as the Sequence Kernel Association Test (SKAT), the Weighted Sum Statistic (WSS), and the collapsing method of Morris and Zeggini (MZ). Our algorithm leverages a fast variational Bayes approximate inference methodology to scale to exome‐wide analyses, a significant computational advantage over exact inference model selection methodologies. To demonstrate the efficacy of our methodology we test for associations between von Willebrand Factor (VWF) levels and \u003cjats:italic\u003eVWF\u003c/jats:italic\u003e missense rare‐variants imputed from the National Heart, Lung, and Blood Institute's Exome Sequencing project into 2,487 African Americans within the \u003cjats:italic\u003eVWF\u003c/jats:italic\u003e gene. Our method suggests that a relatively small fraction (∼10%) of the imputed rare missense variants within \u003cjats:italic\u003eVWF\u003c/jats:italic\u003e are strongly associated with lower VWF levels in African Americans.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21772"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        },
+        {
+          "name": "Department of Genome Science University of Washington  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Logsdon",
+      "given": "Benjamin A.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        },
+        {
+          "name": "Vaccine and Infectious Disease Division Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Dai",
+      "given": "James Y.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        },
+        {
+          "name": "School of Public Health University of Wisconsin‐Milwaukee  Milwaukee Wisconsin United States of America"
+        }
+      ],
+      "family": "Auer",
+      "given": "Paul L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Research Institute Puget Sound Blood Center  Seattle Washington United States of America"
+        },
+        {
+          "name": "Department of Medicine University of Washington  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Johnsen",
+      "given": "Jill M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Cardiovascular Medicine Department of Internal Medicine University of Michigan  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Ganesh",
+      "given": "Santhi K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of Washington  Seattle Washington United States of America"
+        },
+        {
+          "name": "Group Health Research Institute Group Health Cooperative  Seattle Washington United States of America"
+        },
+        {
+          "name": "Seattle Epidemiologic Research and Information Center VA Office of Research and Development  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Smith",
+      "given": "Nicholas L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Physiology and Biophysics University of Mississippi Medical Center  Jackson Mississippi United States of America"
+        }
+      ],
+      "family": "Wilson",
+      "given": "James G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Pathology and Biochemistry University of Vermont College of Medicine  Burlington Vermont United States of America"
+        }
+      ],
+      "family": "Tracy",
+      "given": "Russell P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Departments of Epidemiology, Genetics and Biostatistics Bioinformatics and Computational Biology University of North Carolina  Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Lange",
+      "given": "Leslie A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cancer Prevention Program Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Jiao",
+      "given": "Shuo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Public Health Genomics Department of Public Health Sciences University of Virginia  Charlottesville Virginia United States of America"
+        }
+      ],
+      "family": "Rich",
+      "given": "Stephen S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Montreal Heart Institute and Départment de Médecine Université de Montréal  Montréal Quebec Canada"
+        }
+      ],
+      "family": "Lettre",
+      "given": "Guillaume",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Carlson",
+      "given": "Christopher S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Endocrinology, Diabetes and Metabolism Ohio State University  Columbus Ohio United States of America"
+        }
+      ],
+      "family": "Jackson",
+      "given": "Rebecca D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "National Heart, Lung, and Blood Institute Center for Population Studies The Framingham Heart Study  Framingham Massachusetts United States of America"
+        }
+      ],
+      "family": "O'Donnell",
+      "given": "Christopher J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Pulmonary and Critical Care Medicine University of Washington  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Wurfel",
+      "given": "Mark M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genome Science University of Washington  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Nickerson",
+      "given": "Deborah A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics and Department of Genetics Stanford University  Stanford California United States of America"
+        }
+      ],
+      "family": "Tang",
+      "given": "Hua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        },
+        {
+          "name": "Department of Epidemiology University of Washington  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Reiner",
+      "given": "Alexander P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Kooperberg",
+      "given": "Charles",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "on behalf of the NHLBI GO Exome Sequencing Project",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        26
+      ]
+    ],
+    "date-time": "2013-11-26T01:47:46Z",
+    "timestamp": 1385430466000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T16:56:51Z",
+    "timestamp": 1696352211000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "doi-asserted-by": "crossref",
+      "name": "National Heart, Lung, and Blood Institute (NHLBI)"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "RC2 HL-103010",
+        "RC2 HL-102923",
+        "RC2 HL-102924"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "NHLBI"
+    },
+    {
+      "award": [
+        "R01 HG-006124",
+        "P01 CA-53996",
+        "R01 HL-114901"
+      ],
+      "name": "National Institute of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T06:10:12Z",
+    "timestamp": 1696399812652
+  },
+  "is-referenced-by-count": 12,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        25
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2013,
+            11,
+            25
+          ]
+        ],
+        "date-time": "2013-11-25T00:00:00Z",
+        "timestamp": 1385337600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21772",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21772",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "21-30",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        25
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        11,
+        25
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2014,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nmeth0410-248",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1160/TH12-07-0475",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.08.031",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0037508",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20609",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "key": "e_1_2_6_7_1",
+      "unstructured": "BealM.2003.Variational algorithms for approximate Bayesian inference. PhD Thesis Gatsby Computational Neuroscience Unit University College London."
+    },
+    {
+      "DOI": "10.1086/521987",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2010.01469.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1214/12-BA703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1111/1467-9868.00273",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "article-title": "Maximum likelihood from incomplete data via the em algorithm",
+      "author": "Dempster A",
+      "first-page": "1",
+      "journal-title": "J Roy Stat Soc B Met",
+      "key": "e_1_2_6_12_1",
+      "year": "1977"
+    },
+    {
+      "DOI": "10.1007/s12185-012-1041-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1038/nrg2809",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1111/j.1538-7836.2009.03486.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.2344",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn386",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1182/blood-2006-05-020784",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1159/000288704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0013584",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1038/ng.2354",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "author": "Johnsen J",
+      "first-page": "2069",
+      "key": "e_1_2_6_22_1",
+      "volume-title": "von Willebrand disease",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1182/blood-2013-02-485094",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1534/genetics.111.134866",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-58",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1053/j.seminhematol.2004.09.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1038/nrg2344",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2010.03.032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1016/j.mrfmmm.2006.09.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1126/science.1217876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000160",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "author": "Parisi G",
+      "key": "e_1_2_6_37_1",
+      "volume-title": "Statistical Field Theory",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1093/hmg/11.20.2417",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20613",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1159/000346021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "article-title": "Bayesian computation via the gibbs sampler and related markov chain monte carlo methods",
+      "author": "Smith A",
+      "first-page": "3",
+      "journal-title": "J Roy Stat Soc B Met",
+      "key": "e_1_2_6_43_1",
+      "volume": "55",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1093/hmg/10.6.591",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21717",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    },
+    {
+      "DOI": "10.1126/science.1219240",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_46_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bti466",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_47_1"
+    },
+    {
+      "DOI": "10.1111/j.1538-7836.2011.04243.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_48_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.11.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_49_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_50_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20554",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_51_1"
+    }
+  ],
+  "reference-count": 50,
+  "references-count": 50,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21772"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A Variational Bayes Discrete Mixture Test for Rare Variant Association"
+  ],
+  "type": "journal-article",
+  "volume": "38"
+}

@@ -1,0 +1,603 @@
+{
+  "DOI": "10.1186/s40246-023-00482-8",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00482-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eIntroduction\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe ability to accurately predict whether a woman will develop breast cancer later in her life, should reduce the number of breast cancer deaths. Different predictive models exist for breast cancer based on family history, BRCA status, and SNP analysis. The best of these models has an accuracy (area under the receiver operating characteristic curve, AUC) of about 0.65. We have developed computational methods to characterize a genome by a small set of numbers that represent the length of segments of the chromosomes, called chromosomal-scale length variation (CSLV).\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe built machine learning models to differentiate between women who had breast cancer and women who did not based on their CSLV characterization. We applied this procedure to two different datasets: the UK Biobank (1534 women with breast cancer and 4391 women who did not) and the Cancer Genome Atlas (TCGA) 874 with breast cancer and 3381 without.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe found a machine learning model that could predict breast cancer with an AUC of 0.836 95% CI (0.830.0.843) in the UK Biobank data. Using a similar approach with the TCGA data, we obtained a model with an AUC of 0.704 95% CI (0.702, 0.706). Variable importance analysis indicated that no single chromosomal region was responsible for significant fraction of the model results.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn this retrospective study, chromosomal-scale length variation could effectively predict whether or not a woman enrolled in the UK Biobank study developed breast cancer.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "482"
+  ],
+  "article-number": "53",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "25 August 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "30 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "16 June 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Ethics approval and participant consent were collected by UK Biobank at the time participants enrolled. This paper is an analysis of anonymized data provided by UK Biobank. According to UC Irvine’s IRB, analysis of anonymized data does not constitute Human Subjects Research."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Ko",
+      "given": "Charmeine",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Brody",
+      "given": "James P.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        16
+      ]
+    ],
+    "date-time": "2023-06-16T10:01:57Z",
+    "timestamp": 1686909717000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        16
+      ]
+    ],
+    "date-time": "2023-06-16T10:04:52Z",
+    "timestamp": 1686909892000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        18
+      ]
+    ],
+    "date-time": "2024-04-18T05:10:24Z",
+    "timestamp": 1713417024157
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        16
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            16
+          ]
+        ],
+        "date-time": "2023-06-16T00:00:00Z",
+        "timestamp": 1686873600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            16
+          ]
+        ],
+        "date-time": "2023-06-16T00:00:00Z",
+        "timestamp": 1686873600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00482-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00482-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00482-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        16
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3322/caac.21660",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR1",
+      "unstructured": "Sung H, Ferlay J, Siegel RL, Laversanne M, Soerjomataram I, Jemal A, et al. Global cancer statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2021;71."
+    },
+    {
+      "DOI": "10.1016/j.suc.2018.03.004",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR2",
+      "unstructured": "Krontiras H, Farmer M, Whatley J. Breast cancer genetics and indications for prophylactic mastectomy. Surgical Clinics of North America. 2018."
+    },
+    {
+      "DOI": "10.1093/jnci/81.24.1879",
+      "author": "MH Gail",
+      "doi-asserted-by": "publisher",
+      "first-page": "1879",
+      "journal-title": "JNCI J Natl Cancer Inst",
+      "key": "482_CR3",
+      "unstructured": "Gail MH, Brinton LA, Byar DP, Corle DK, Green SB, Schairer C, et al. Projecting individualized probabilities of developing breast cancer for white females who are being examined annually. JNCI J Natl Cancer Inst. 1989;81:1879–86.",
+      "volume": "81",
+      "year": "1989"
+    },
+    {
+      "key": "482_CR4",
+      "unstructured": "Chlebowski RT, Anderson GL, Lane DS, Aragaki AK, Rohan T, Yasmeen S, et al. Predicting risk of breast cancer in postmenopausal women by hormone receptor status. J Natl Cancer Inst. 2007;99."
+    },
+    {
+      "DOI": "10.1002/sim.1668",
+      "author": "J Tyrer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1111",
+      "journal-title": "Stat Med",
+      "key": "482_CR5",
+      "unstructured": "Tyrer J, Duffy SW, Cuzick J. A breast cancer prediction model incorporating familial and personal risk factors. Stat Med. 2004;23:1111–30.",
+      "volume": "23",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/jnci/djz177",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR6",
+      "unstructured": "McCarthy AM, Guan Z, Welch M, Griffin ME, Sippo DA, Deng Z, et al. Performance of breast cancer risk-assessment models in a large mammography cohort. J Natl Cancer Inst. 2020;112."
+    },
+    {
+      "DOI": "10.1186/s13058-021-01399-7",
+      "author": "P Pal Choudhury",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Breast Cancer Res",
+      "key": "482_CR7",
+      "unstructured": "Pal Choudhury P, Brook MN, Hurson AN, Lee A, Mulder CV, Coulson P, et al. Comparative validation of the BOADICEA and Tyrer-Cuzick breast cancer risk models incorporating classical risk factors and polygenic risk in a population-based prospective cohort of women of European ancestry. Breast Cancer Res. 2021;23:1–5.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "key": "482_CR8",
+      "unstructured": "Mavaddat N, Michailidou K, Dennis J, Lush M, Fachal L, Lee A, et al. Polygenic risk scores for prediction of breast cancer and breast cancer subtypes. Am J Hum Genet. 2019."
+    },
+    {
+      "DOI": "10.1038/s42003-022-03812-z",
+      "author": "M Elgart",
+      "doi-asserted-by": "publisher",
+      "first-page": "856",
+      "issue": "1",
+      "journal-title": "Commun Biol",
+      "key": "482_CR9",
+      "unstructured": "Elgart M, Lyons G, Romero-Brufau S, Kurniansyah N, Brody JA, Guo X, et al. Non-linear machine learning models incorporating SNPs and PRS improve polygenic prediction in diverse human populations. Commun Biol. 2022;5(1):856.",
+      "volume": "5",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s40246-020-00288-y",
+      "author": "C Toh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Hum Genom",
+      "key": "482_CR10",
+      "unstructured": "Toh C, Brody JP. Evaluation of a genetic risk score for severity of COVID-19 using human chromosomal-scale length variation. Hum Genom. 2020;14(1):1–5.",
+      "volume": "14",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13040-021-00253-y",
+      "author": "C Toh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "BioData Min",
+      "key": "482_CR11",
+      "unstructured": "Toh C, Brody JP. Genetic risk score for ovarian cancer based on chromosomal-scale length variation. BioData Min. 2021;14(1):1–11.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.21203/rs.3.rs-268559/v2",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR12",
+      "unstructured": "Toh C, Brody JP. Genetic risk score for predicting schizophrenia using human chromosomal-scale length variation. 2021."
+    },
+    {
+      "DOI": "10.1016/j.ctarc.2021.100352",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR13",
+      "unstructured": "Ko C, Brody JP. A genetic risk score for glioblastoma multiforme based on copy number variations. Cancer Treat Res Commun. 2021;27."
+    },
+    {
+      "DOI": "10.1038/ng.2764",
+      "author": "JN Weinstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "1113",
+      "journal-title": "Nat Genet",
+      "key": "482_CR14",
+      "unstructured": "Weinstein JN, Collisson EA, Mills GB, Shaw KRM, Ozenberger BA, Ellrott K, et al. The cancer genome atlas pan-cancer analysis project. Nat Genet. 2013;45:1113–20.",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.03.042",
+      "author": "C Hutter",
+      "doi-asserted-by": "publisher",
+      "first-page": "283",
+      "journal-title": "Cell",
+      "key": "482_CR15",
+      "unstructured": "Hutter C, Zenklusen JC. The cancer genome atlas: creating lasting value beyond its data. Cell. 2018;173:283–5.",
+      "volume": "173",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "author": "C Bycroft",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "482_CR16",
+      "unstructured": "Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, et al. The UK Biobank resource with deep phenotyping and genomic data. Nature. 2018;562:203–9.",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.237",
+      "author": "JM Korn",
+      "doi-asserted-by": "publisher",
+      "first-page": "1253",
+      "journal-title": "Nat Genet",
+      "key": "482_CR17",
+      "unstructured": "Korn JM, Kuruvilla FG, McCarroll SA, Wysoker A, Nemesh J, Cawley S, et al. Integrated genotype calling and association analysis of SNPs, common copy number polymorphisms and rare CNVs. Nat Genet. 2008;40:1253–60.",
+      "volume": "40",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxh008",
+      "author": "AB Olshen",
+      "doi-asserted-by": "publisher",
+      "first-page": "557",
+      "journal-title": "Biostatistics",
+      "key": "482_CR18",
+      "unstructured": "Olshen AB, Venkatraman ES, Lucito R, Wigler M. Circular binary segmentation for the analysis of array-based DNA copy number data. Biostatistics. 2004;5:557–72.",
+      "volume": "5",
+      "year": "2004"
+    },
+    {
+      "key": "482_CR19",
+      "unstructured": "National cancer institute genomic data commons [Internet]. [cited 2018 Jan 18]. Available from: https://gdc.cancer.gov/."
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001779",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR20",
+      "unstructured": "Sudlow C, Gallacher J, Allen N, Beral V, Burton P, Danesh J, et al. UK biobank: an open access resource for identifying the causes of a wide range of complex diseases of middle and old age. PLoS Med. 2015;12."
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "author": "C Bycroft",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "482_CR21",
+      "unstructured": "Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, et al. The UK Biobank resource with deep phenotyping and genomic data. Nature. 2018;562:203–9.",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/S0893-6080(05)80023-1",
+      "author": "DH Wolpert",
+      "doi-asserted-by": "publisher",
+      "first-page": "241",
+      "journal-title": "Neural Netw",
+      "key": "482_CR22",
+      "unstructured": "Wolpert DH. Stacked generalization. Neural Netw. 1992;5:241–59.",
+      "volume": "5",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1007/BF00117832",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "journal-title": "Mach Learn",
+      "key": "482_CR23",
+      "unstructured": "Breiman L. Stacked regressions. Mach Learn. 1996;24:49–64.",
+      "volume": "24",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.2202/1544-6115.1309",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR24",
+      "unstructured": "Van Der Laan MJ, Polley EC, Hubbard AE. Super learner. Stat Appl Genet Mol Biol. 2007."
+    },
+    {
+      "key": "482_CR25",
+      "unstructured": "Lundberg SM, Lee SI. A unified approach to interpreting model predictions. Adv Neural Inf Process Syst. 2017."
+    },
+    {
+      "key": "482_CR26",
+      "unstructured": "Yang J. Fast TreeSHAP: Accelerating SHAP Value Computation for Trees. 2021 [cited 2022 Aug 18]; Available from: https://arxiv.org/abs/2109.09847v3."
+    },
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "author": "AV Khera",
+      "doi-asserted-by": "publisher",
+      "first-page": "1219",
+      "journal-title": "Nat Genet",
+      "key": "482_CR27",
+      "unstructured": "Khera AV, Chaffin M, Aragam KG, Haas ME, Roselli C, Choi SH, et al. Genome-wide polygenic scores for common diseases identify individuals with risk equivalent to monogenic mutations. Nat Genet. 2018;50:1219–24.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41576-018-0018-x",
+      "author": "A Torkamani",
+      "doi-asserted-by": "publisher",
+      "first-page": "581",
+      "journal-title": "Nat Rev Genet",
+      "key": "482_CR28",
+      "unstructured": "Torkamani A, Wineinger NE, Topol EJ. The personal and clinical utility of polygenic risk scores. Nat Rev Genet. 2018;19:581–90.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.gde.2015.06.005",
+      "author": "G Abraham",
+      "doi-asserted-by": "publisher",
+      "first-page": "10",
+      "journal-title": "Curr Opin Genet Dev",
+      "key": "482_CR29",
+      "unstructured": "Abraham G, Inouye M. Genomic risk prediction of complex human disease and its clinical application. Curr Opin Genet Dev. 2015;33:10–6.",
+      "volume": "33",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41598-019-51258-x",
+      "author": "L Lello",
+      "doi-asserted-by": "publisher",
+      "first-page": "15286",
+      "journal-title": "Sci Rep",
+      "key": "482_CR30",
+      "unstructured": "Lello L, Raben TG, Yong SY, Tellier LCAM, Hsu SDH. Genomic prediction of 16 complex disease risks including heart attack, diabetes, breast and prostate cancer. Sci Rep. 2019;9:15286.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.116.024436",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR31",
+      "unstructured": "Natarajan P, Young R, Stitziel NO, Padmanabhan S, Baber U, Mehran R, et al. Polygenic Risk Score Identifies Subgroup With Higher Burden of Atherosclerosis and Greater Relative Benefit From Statin Therapy in the Primary Prevention Setting. Circulation. Lippincott Williams \u0026 Wilkins Hagerstown, MD; 2017;135:2091–101."
+    },
+    {
+      "DOI": "10.1016/j.jacc.2018.07.079",
+      "author": "M Inouye",
+      "doi-asserted-by": "publisher",
+      "first-page": "1883",
+      "journal-title": "J Am Coll Cardiol",
+      "key": "482_CR32",
+      "unstructured": "Inouye M, Abraham G, Nelson CP, Wood AM, Sweeting MJ, Dudbridge F, et al. Genomic risk prediction of coronary artery disease in 480000 adults: implications for primary prevention. J Am Coll Cardiol. 2018;72:1883–93.",
+      "volume": "72",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1200/PO.19.00360",
+      "author": "E Hughes",
+      "doi-asserted-by": "publisher",
+      "first-page": "585",
+      "journal-title": "JCO Precis Oncol",
+      "key": "482_CR33",
+      "unstructured": "Hughes E, Tshiaba P, Gallagher S, Wagner S, Judkins T, Roa B, et al. Development and validation of a clinical polygenic risk score to predict breast cancer risk. JCO Precis Oncol. 2020;41:585–92. https://doi.org/10.1200/PO.19.00360.",
+      "volume": "41",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/jnci/djw302",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR34",
+      "unstructured": "Kuchenbaecker KB, McGuffog L, Barrowdale D, Lee A, Soucy P, Dennis J, et al. Evaluation of polygenic risk scores for breast and ovarian cancer risk prediction in BRCA1 and BRCA2 mutation carriers. JNCI J Natl Cancer Inst. 2017;109."
+    },
+    {
+      "DOI": "10.3390/jpm9010015",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR35",
+      "unstructured": "Willoughby A, Andreassen PR, Toland AE. Genetic testing to guide risk-stratified screens for breast cancer. J Pers Med. 2019;9."
+    },
+    {
+      "key": "482_CR36",
+      "unstructured": "Mavaddat N, Pharoah PDP, Michailidou K, Tyrer J, Brook MN, Bolla MK, et al. Prediction of breast cancer risk based on profiling with common genetic variants. JNCI J Natl Cancer Inst. 2015;107."
+    },
+    {
+      "DOI": "10.1038/s41598-017-13056-1",
+      "author": "G Paré",
+      "doi-asserted-by": "publisher",
+      "first-page": "12665",
+      "journal-title": "Sci Rep",
+      "key": "482_CR37",
+      "unstructured": "Paré G, Mao S, Deng WQ. A machine-learning heuristic to improve gene score prediction of polygenic traits. Sci Rep. 2017;7:12665.",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004754",
+      "doi-asserted-by": "crossref",
+      "key": "482_CR38",
+      "unstructured": "Okser S, Pahikkala T, Airola A, Salakoski T, Ripatti S, Aittokallio T. Regularized machine learning in the genetic prediction of complex Traits. Schork NJ, editor. PLoS Genet. 2014;10:e1004754."
+    },
+    {
+      "DOI": "10.1038/nrg2825",
+      "author": "JT Leek",
+      "doi-asserted-by": "publisher",
+      "first-page": "733",
+      "journal-title": "Nat Rev Genet",
+      "key": "482_CR39",
+      "unstructured": "Leek JT, Scharpf RB, Bravo HC, Simcha D, Langmead B, Johnson WE, et al. Tackling the widespread and critical impact of batch effects in high-throughput data. Nat Rev Genet. 2010;11:733–9.",
+      "volume": "11",
+      "year": "2010"
+    }
+  ],
+  "reference-count": 39,
+  "references-count": 39,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-1999108/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00482-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Evaluation of a genetic risk score computed using human chromosomal-scale length variation to predict breast cancer"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

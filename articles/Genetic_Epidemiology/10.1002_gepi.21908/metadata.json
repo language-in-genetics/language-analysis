@@ -1,0 +1,476 @@
+{
+  "DOI": "10.1002/gepi.21908",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21908",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eIdentification of gene‐environment interaction (G × E) is important in understanding the etiology of complex diseases. Based on our previously developed Set Based gene EnviRonment InterAction test (SBERIA), in this paper we propose a powerful framework for enhanced set‐based G × E testing (eSBERIA). The major challenge of signal aggregation within a set is how to tell signals from noise. eSBERIA tackles this challenge by adaptively aggregating the interaction signals within a set weighted by the strength of the marginal and correlation screening signals. eSBERIA then combines the screening‐informed aggregate test with a variance component test to account for the residual signals. Additionally, we develop a case‐only extension for eSBERIA (coSBERIA) and an existing set‐based method, which boosts the power not only by exploiting the G‐E independence assumption but also by avoiding the need to specify main effects for a large number of variants in the set. Through extensive simulation, we show that coSBERIA and eSBERIA are considerably more powerful than existing methods within the case‐only and the case‐control method categories across a wide range of scenarios. We conduct a genome‐wide G × E search by applying our methods to Illumina HumanExome Beadchip data of 10,446 colorectal cancer cases and 10,191 controls and identify two novel interactions between nonsteroidal anti‐inflammatory drugs (NSAIDs) and \u003cjats:italic\u003eMINK1\u003c/jats:italic\u003e and \u003cjats:italic\u003ePTCHD3\u003c/jats:italic\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21908"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Jiao",
+      "given": "Shuo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Peters",
+      "given": "Ulrike",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Cancer Epidemiology and Genetics National Cancer Institute  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Berndt",
+      "given": "Sonja",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Service de Génétique Médicale CHU Nantes  Nantes France"
+        }
+      ],
+      "family": "Bézieau",
+      "given": "Stéphane",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Clinical Epidemiology and Aging Research German Cancer Research Center  Heidelberg Germany"
+        },
+        {
+          "name": "German Cancer Consortium (DKTK)  Heidelberg Germany"
+        }
+      ],
+      "family": "Brenner",
+      "given": "Hermann",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology Research Program American Cancer Society  Atlanta Georgia United States of America"
+        }
+      ],
+      "family": "Campbell",
+      "given": "Peter T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine Brigham and Women's Hospital and Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Chan",
+      "given": "Andrew T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Cancer Epidemiology German Cancer Research Center  Heidelberg Germany"
+        }
+      ],
+      "family": "Chang‐Claude",
+      "given": "Jenny",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Ontario Institute for Cancer Research  Toronto Canada"
+        }
+      ],
+      "family": "Lemire",
+      "given": "Mathieu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        },
+        {
+          "name": "School of Public Health University of Washington  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Newcomb",
+      "given": "Polly A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        },
+        {
+          "name": "Ontario Institute for Cancer Research  Toronto Canada"
+        },
+        {
+          "name": "Centre for Public Health Research Massey University  Wellington New Zealand"
+        }
+      ],
+      "family": "Potter",
+      "given": "John D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine University of Utah Health Sciences Center  Salt Lake City Utah United States of America"
+        }
+      ],
+      "family": "Slattery",
+      "given": "Martha L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Discipline of Genetics Memorial University of Newfoundland  St. John's NL Canada"
+        }
+      ],
+      "family": "Woods",
+      "given": "Michael O.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Hsu",
+      "given": "Li",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2015,
+        6,
+        19
+      ]
+    ],
+    "date-time": "2015-06-19T14:51:50Z",
+    "timestamp": 1434725510000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T02:44:39Z",
+    "timestamp": 1696387479000
+  },
+  "funder": [
+    {
+      "award": [
+        "U01 CA137088; R01 CA059045; U01 CA164930"
+      ],
+      "name": "GECCO: National Cancer Institute, National Institutes of Health, U.S. Department of Health and Human Services"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2023-10-05T05:40:21Z",
+    "timestamp": 1696484421467
+  },
+  "is-referenced-by-count": 14,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2015,
+        6,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2015,
+            6,
+            10
+          ]
+        ],
+        "date-time": "2015-06-10T00:00:00Z",
+        "timestamp": 1433894400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21908",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21908",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "609-618",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2015,
+        6,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2015,
+        6,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1158/0008-5472.CAN-05-3489",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1093/biomet/92.2.399",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1093/biomet/ass044",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1128/MCB.06320-11",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1146/annurev-pathol-011110-130235",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004228",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(05)67137-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21748",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1038/ng.151",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002237",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0903103106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21735",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20300",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwn339",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxt006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2007.00953.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwn353",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20569",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1002/sim.4780130206",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1038/ng.687",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1002/humu.22333",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1093/ije/13.3.356",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21717",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.07.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1093/aje/kws439",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21713",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    }
+  ],
+  "reference-count": 29,
+  "references-count": 29,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21908"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Powerful Set‐Based Gene‐Environment Interaction Testing Framework for Complex Diseases"
+  ],
+  "type": "journal-article",
+  "volume": "39"
+}

@@ -1,0 +1,499 @@
+{
+  "DOI": "10.1002/gepi.22127",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22127",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eThe human microbiome is a dynamic system that changes due to diseases, medication, change in diet, etc. The paired design is a common approach to evaluate the microbial changes while controlling for the inherent differences between people. For example, microbiome data may be collected from the same individuals before and after a treatment. Two challenges exist in analyzing this type of data. First, microbiome data are compositional such that the reads for all taxa in each sample are constrained to sum to a constant. Second, the number of taxa can be much larger than the sample size. Few statistical methods exist to analyze such data besides methods that test one taxon at a time. In this paper, we propose to first conduct a log‐ratio transformation of the compositions, and then develop a generalized Hotelling's test (GHT) to evaluate whether the average microbiome compositions are equivalent in the paired samples. We replace the sample covariance matrix in standard Hotelling's statistic by a shrinkage‐based covariance, calculated as a weighted average of the sample covariance and a positive definite target matrix. The optimal weighting can be obtained for many commonly used target matrices. We develop a permutation procedure to assess the statistical significance. Extensive simulations show that our proposed method has well‐controlled type I error and better power than a few ad hoc approaches. We apply our method to examine the vaginal microbiome changes in response to treatments for menopausal hot flashes. An R package “ GHT” is freely available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/zhaoni153/GHT\"\u003ehttps://github.com/zhaoni153/GHT\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22127"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-01-25"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-03-29"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-05-07"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-7762-3949",
+      "affiliation": [
+        {
+          "name": "Departments of Biostatistics Johns Hopkins University Baltimore Maryland United States of America"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Zhao",
+      "given": "Ni",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health Sciences Pennsylvania State University Hershey Pennsylvania United States of America"
+        }
+      ],
+      "family": "Zhan",
+      "given": "Xiang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center Seattle Washington United States of America"
+        }
+      ],
+      "family": "Guthrie",
+      "given": "Katherine A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Vincent Center for Reproductive Biology Massachusetts General Hospital, Harvard Medical School Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Mitchell",
+      "given": "Caroline M",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center Seattle Washington United States of America"
+        }
+      ],
+      "family": "Larson",
+      "given": "Joseph",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        5,
+        8
+      ]
+    ],
+    "date-time": "2018-05-08T04:45:50Z",
+    "timestamp": 1525754750000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        23
+      ]
+    ],
+    "date-time": "2023-09-23T18:09:11Z",
+    "timestamp": 1695492551000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        23
+      ]
+    ],
+    "date-time": "2024-02-23T04:06:04Z",
+    "timestamp": 1708661164935
+  },
+  "is-referenced-by-count": 16,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        5,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2018-05-07T00:00:00Z",
+        "timestamp": 1525651200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22127",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22127",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "459-469",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        5,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        5,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "The statistical‐analysis of compositional data",
+      "author": "Aitchison J.",
+      "first-page": "139",
+      "journal-title": "Journal of the Royal Statistical Society Series B‐Methodological",
+      "key": "e_1_2_7_2_1",
+      "volume": "44",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1007/BF00891269",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1023/A:1007568008032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.2307/2335470",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1186/gb-2010-11-10-r106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "article-title": "Effect of high dimension: By an example of a two sample problem",
+      "author": "Bai Z.",
+      "first-page": "311",
+      "issue": "2",
+      "journal-title": "Statistica Sinica",
+      "key": "e_1_2_7_7_1",
+      "volume": "6",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0123216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1214/aos/1013699998",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "article-title": "Two‐sample tests of high‐dimensional means for compositional data",
+      "author": "Cao Y.",
+      "first-page": "asx060",
+      "journal-title": "Biometrika",
+      "key": "e_1_2_7_10_1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0015216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1186/s13073-016-0299-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1198/jasa.2011.ap10599",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1406199111",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1023/A:1023818214614",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1016/j.csda.2010.12.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1002687",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1214/aoms/1177732979",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1001/jamainternmed.2014.1891",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1097/PSY.0000000000000247",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1101/gr.126573.111",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1186/gb-2014-15-2-r29",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1016/S0927-5398(03)00007-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1016/S0047-259X(03)00096-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "key": "e_1_2_7_25_1",
+      "unstructured": "Li H. Aue A. Paul D. Peng J. \u0026Wang P.(2016).An adaptable generalization of Hotelling'sT2test in high dimension.ArXiv e‐prints. Retrieved fromhttps://arxiv.org/abs/1609.08725."
+    },
+    {
+      "key": "e_1_2_7_26_1",
+      "unstructured": "Li H. Cao Y. \u0026Zhang A.(2017).Composition estimation from sparse count data via a regularized likelihood. Joint Statistical Meeting. Retrieved fromhttps://ww2.amstat.org/meetings/jsm/2017/onlineprogram/AbstractDetails.cfm?abstractid=321955"
+    },
+    {
+      "DOI": "10.1186/s13059-014-0550-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "article-title": "Analysis of composition of microbiomes: a novel method for studying microbial composition",
+      "author": "Mandal S.",
+      "first-page": "26",
+      "journal-title": "Microbial Ecology in Health and Disease",
+      "key": "e_1_2_7_28_1",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1023/A:1023866030544",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1097/GME.0000000000000904",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0154804",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1128/CMR.00075-15",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2658",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp616",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.7554/eLife.01202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1038/nrc3610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1111/biom.12681",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1136/gutjnl-2012-302167",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-15-0951",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1016/j.jmva.2006.11.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1016/j.csda.2014.10.018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "key": "e_1_2_7_42_1",
+      "unstructured": "Touloumis A.(2017).Shrinkcovmat: Shrinkage covariance matrix estimators. Retrieved fromhttps://cran.r-project.org/web/packages/ShrinkCovMat/"
+    },
+    {
+      "DOI": "10.1186/s40168-017-0237-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_43_1"
+    },
+    {
+      "article-title": "Effects of library size variance, sparsity, and compositionality on the analysis of microbiome data",
+      "author": "Weiss S. J.",
+      "first-page": "e1157v1",
+      "journal-title": "PeerJ",
+      "key": "e_1_2_7_44_1",
+      "volume": "3",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/gepi.22065",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.04.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22127"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Generalized Hotelling's test for paired compositional data with application to human microbiome studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "42"
+}

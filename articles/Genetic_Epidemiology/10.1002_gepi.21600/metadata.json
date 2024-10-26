@@ -1,0 +1,575 @@
+{
+  "DOI": "10.1002/gepi.21600",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21600",
+  "abstract": "\u003cjats:p\u003eWe present the most comprehensive comparison to date of the predictive benefit of genetics in addition to currently used clinical variables, using genotype data for 33 single‐nucleotide polymorphisms (\u003cjats:styled-content style=\"fixed-case\"\u003eSNP\u003c/jats:styled-content\u003es) in 1,547 \u003cjats:styled-content style=\"fixed-case\"\u003eC\u003c/jats:styled-content\u003eaucasian men from the placebo arm of the REduction by DUtasteride of prostate Cancer Events (\u003cjats:styled-content style=\"fixed-case\"\u003eREDUCE\u003c/jats:styled-content\u003e®) trial. Moreover, we conducted a detailed comparison of three techniques for incorporating genetics into clinical risk prediction. The first method was a standard logistic regression model, which included separate terms for the clinical covariates and for each of the genetic markers. This approach ignores a substantial amount of external information concerning effect sizes for these Genome Wide Association Study (\u003cjats:styled-content style=\"fixed-case\"\u003eGWAS\u003c/jats:styled-content\u003e)‐replicated \u003cjats:styled-content style=\"fixed-case\"\u003eSNP\u003c/jats:styled-content\u003es. The second and third methods investigated two possible approaches to incorporating meta‐analysed external \u003cjats:styled-content style=\"fixed-case\"\u003eSNP\u003c/jats:styled-content\u003e effect estimates – one via a weighted \u003cjats:styled-content style=\"fixed-case\"\u003ePCa\u003c/jats:styled-content\u003e 'risk' score based solely on the meta analysis estimates, and the other incorporating both the current and prior data via informative priors in a \u003cjats:styled-content style=\"fixed-case\"\u003eB\u003c/jats:styled-content\u003eayesian logistic regression model. All methods demonstrated a slight improvement in predictive performance upon incorporation of genetics. The two methods that incorporated external information showed the greatest receiver‐operating‐characteristic \u003cjats:styled-content style=\"fixed-case\"\u003eAUC\u003c/jats:styled-content\u003es increase from 0.61 to 0.64. The value of our methods comparison is likely to lie in observations of performance similarities, rather than difference, between three approaches of very different resource requirements. The two methods that included external information performed best, but only marginally despite substantial differences in complexity.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21600"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Genetics Division GlaxoSmithKline  Stevenage United Kingdom"
+        }
+      ],
+      "family": "Newcombe",
+      "given": "Paul J.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics Division GlaxoSmithKline  Research Triangle Park North Carolina"
+        }
+      ],
+      "family": "Reck",
+      "given": "Brian H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Cancer Genomics Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        },
+        {
+          "name": "Center for Genomics and Personalized Medicine Research Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        }
+      ],
+      "family": "Sun",
+      "given": "Jielin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Oncology Biostatistics GlaxoSmithKline  Research Triangle Park North Carolina"
+        }
+      ],
+      "family": "Platek",
+      "given": "Greg T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics Division GlaxoSmithKline  Stevenage United Kingdom"
+        }
+      ],
+      "family": "Verzilli",
+      "given": "Claudio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Cancer Genomics Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        },
+        {
+          "name": "Department of Urology Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        }
+      ],
+      "family": "Kader",
+      "given": "A. Karim",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Cancer Genomics Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        },
+        {
+          "name": "Center for Genomics and Personalized Medicine Research Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        }
+      ],
+      "family": "Kim",
+      "given": "Seong‐Tae",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Cancer Genomics Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        },
+        {
+          "name": "Center for Genomics and Personalized Medicine Research Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        }
+      ],
+      "family": "Hsu",
+      "given": "Fang‐Chi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Cancer Genomics Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        },
+        {
+          "name": "Center for Genomics and Personalized Medicine Research Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Zheng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Cancer Genomics Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        },
+        {
+          "name": "Center for Genomics and Personalized Medicine Research Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        }
+      ],
+      "family": "Zheng",
+      "given": "S. Lilly",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics Division GlaxoSmithKline  King of Prussia Pennsylvania"
+        }
+      ],
+      "family": "Mooser",
+      "given": "Vincent E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics Division GlaxoSmithKline  Research Triangle Park North Carolina"
+        }
+      ],
+      "family": "Condreay",
+      "given": "Lynn D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics Division GlaxoSmithKline  Stevenage United Kingdom"
+        }
+      ],
+      "family": "Spraggs",
+      "given": "Colin F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics Division GlaxoSmithKline  Stevenage United Kingdom"
+        }
+      ],
+      "family": "Whittaker",
+      "given": "John C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Oncology Medicines Development GlaxoSmithKline  Research Triangle Park North Carolina"
+        }
+      ],
+      "family": "Rittmaster",
+      "given": "Roger S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Cancer Genomics Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        },
+        {
+          "name": "Center for Genomics and Personalized Medicine Research Wake Forest University School of Medicine  Winston‐Salem North Carolina"
+        }
+      ],
+      "family": "Xu",
+      "given": "Jianfeng",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        8,
+        13
+      ]
+    ],
+    "date-time": "2012-08-13T18:27:57Z",
+    "timestamp": 1344882477000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        23
+      ]
+    ],
+    "date-time": "2023-09-23T18:50:38Z",
+    "timestamp": 1695495038000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T23:05:35Z",
+    "timestamp": 1709334335979
+  },
+  "is-referenced-by-count": 13,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        1
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 225,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            13
+          ]
+        ],
+        "date-time": "2012-08-13T00:00:00Z",
+        "timestamp": 1344816000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21600",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21600",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "71-83",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        1
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        8,
+        13
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2012,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ng1808",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0908127",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.2307/2669749",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.2307/2531595",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1093/jnci/djm250",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddn287",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1038/ng.450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1038/ng.90",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-08-2190",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "article-title": "Posterior predictive assessment of model fitness via realized discrepancies",
+      "author": "Gelman A",
+      "first-page": "733",
+      "journal-title": "Stat Sin",
+      "key": "e_1_2_6_11_1",
+      "volume": "6",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1007/978-1-4899-4485-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1093/clinchem/44.12.2462",
+      "article-title": "Percent free prostate‐specific antigen in assessing the probability of prostate cancer under optimal analytical conditions",
+      "author": "Gion M",
+      "doi-asserted-by": "crossref",
+      "first-page": "2462",
+      "journal-title": "Clin Chem",
+      "key": "e_1_2_6_13_1",
+      "volume": "44",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1093/biomet/82.4.711",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1038/ng1999",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1038/ng2062",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1111/j.1464-410X.2008.08127.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-09-1176",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000337",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1002/pros.21208",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.2337/db08-0504",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1007/s00125-008-1254-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20140",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0804742",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1016/j.juro.2009.10.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1002/9780470434567",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1016/S0090-4295(97)00451-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1001/jama.2010.119",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1002/pros.20887",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0810084",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1016/j.juro.2007.01.116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1002/sim.1586",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1038/ng.91",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1093/jnci/djj131",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1200/JCO.2006.07.6836",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1016/j.juro.2008.04.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1038/ng2068",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1016/j.urology.2009.03.046",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0907727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20359",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1002/pros.21002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1038/ng.444",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1038/ng2022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa075819",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    }
+  ],
+  "reference-count": 43,
+  "references-count": 43,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21600"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A Comparison of \u003cscp\u003eB\u003c/scp\u003eayesian and Frequentist Approaches to Incorporating External Information for the Prediction of Prostate Cancer Risk"
+  ],
+  "type": "journal-article",
+  "volume": "36"
+}

@@ -1,0 +1,605 @@
+{
+  "DOI": "10.1002/gepi.22495",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22495",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003ePolygenic risk scores quantify the individual genetic predisposition regarding a particular trait. We propose and illustrate the application of existing statistical learning methods to derive sparser models for genome‐wide data with a polygenic signal. Our approach is based on three consecutive steps. First, potentially informative loci are identified by a marginal screening approach. Then, fine‐mapping is independently applied for blocks of variants in linkage disequilibrium, where informative variants are retrieved by using variable selection methods including boosting with probing and stochastic searches with the Adaptive Subspace method. Finally, joint prediction models with the selected variants are derived using statistical boosting. In contrast to alternative approaches relying on univariate summary statistics from genome‐wide association studies, our three‐step approach enables to select and fit multivariable regression models on large‐scale genotype data. Based on UK Biobank data, we develop prediction models for LDL‐cholesterol as a continuous trait. Additionally, we consider a recent scalable algorithm for the Lasso. Results show that statistical learning approaches based on fine‐mapping of genetic signals result in a competitive prediction performance compared to classical polygenic risk approaches, while yielding sparser risk models.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22495"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-08-24"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-06-07"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-08-08"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-9559-1725",
+      "affiliation": [
+        {
+          "name": "Institute for Genomic Statistics and Bioinformatics, Medical Faculty University Bonn Bonn Germany"
+        },
+        {
+          "name": "Centre for Human Genetics University of Marburg Marburg Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Maj",
+      "given": "Carlo",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0526-0189",
+      "affiliation": [
+        {
+          "name": "Institute for Medical Biometry, Informatics and Epidemiology, Medical Faculty University Bonn Bonn Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Staerk",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute for Genomic Statistics and Bioinformatics, Medical Faculty University Bonn Bonn Germany"
+        }
+      ],
+      "family": "Borisov",
+      "given": "Oleg",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3752-1275",
+      "affiliation": [
+        {
+          "name": "Institute for Genomic Statistics and Bioinformatics, Medical Faculty University Bonn Bonn Germany"
+        },
+        {
+          "name": "Institute for Medical Biometry, Informatics and Epidemiology, Medical Faculty University Bonn Bonn Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Klinkhammer",
+      "given": "Hannah",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute for Genomic Statistics and Bioinformatics, Medical Faculty University Bonn Bonn Germany"
+        },
+        {
+          "name": "Department of Cardiology University of Groningen Groningen The Netherlands"
+        }
+      ],
+      "family": "Wai Yeung",
+      "given": "Ming",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute for Genomic Statistics and Bioinformatics, Medical Faculty University Bonn Bonn Germany"
+        }
+      ],
+      "family": "Krawitz",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7106-9732",
+      "affiliation": [
+        {
+          "name": "Institute for Medical Biometry, Informatics and Epidemiology, Medical Faculty University Bonn Bonn Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Mayr",
+      "given": "Andreas",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        8
+      ]
+    ],
+    "date-time": "2022-08-08T08:46:33Z",
+    "timestamp": 1659948393000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        22
+      ]
+    ],
+    "date-time": "2023-08-22T11:09:47Z",
+    "timestamp": 1692702587000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:55:02Z",
+    "timestamp": 1709254502954
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            8
+          ]
+        ],
+        "date-time": "2022-08-08T00:00:00Z",
+        "timestamp": 1659916800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22495",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22495",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22495",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "589-603",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nrg777",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv546",
+      "article-title": "Approximately independent linkage disequilibrium blocks in human populations",
+      "author": "Berisa T.",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "issue": "2",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_8_4_1",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1214/07-STS242",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1198/016214503000125",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1093/biomet/asn034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1145/2939672.2939785",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_10_1",
+      "unstructured": "Chen T. \u0026Guestrin C.(2016). Xgboost: A scalable tree boosting system. InProceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining(pp785–794)."
+    },
+    {
+      "DOI": "10.1038/s41596-020-0353-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1097/YPG.0000000000000206",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11112-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1038/s41467-020-17374-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2008.00674.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "author": "Freund Y.",
+      "first-page": "148",
+      "key": "e_1_2_8_17_1",
+      "volume-title": "Proceedings of the Thirteenth International Conference on Machine Learning Theory",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1080/00401706.2000.10485982",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-09718-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22166",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.10.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.3414/ME16-01-0033",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1003101",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1007/s00180-012-0382-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22382",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1038/s41467-020-19600-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.118.035658",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1534/genetics.118.301267",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1186/s13073-021-00829-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1186/s13073-014-0091-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1457-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22050",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1016/j.xgen.2022.100118",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1038/s41562-019-0805-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.3414/ME13-01-0122",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "DOI": "10.1038/s41467-020-20086-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1008271",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1101/2020.10.06.328203",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_40_1",
+      "unstructured": "Privé F.(2020).Ancestry inference and grouping from principal component analysis of genetic data.bioRxiv.https://www.biorxiv.org/content/early/2020/10/26/2020.10.06.328203 https://doi.org/10.1101/2020.10.06.328203"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa1029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty185",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009141",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_43_1"
+    },
+    {
+      "article-title": "Polygenic hyperlipidemias and coronary artery disease risk",
+      "author": "Ripatti P.",
+      "first-page": "e002725",
+      "issue": "4",
+      "journal-title": "Circulation: Genomic and Precision Medicine",
+      "key": "e_1_2_8_44_1",
+      "volume": "13",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01054-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    },
+    {
+      "DOI": "10.1038/s41569-018-0107-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    },
+    {
+      "DOI": "10.1038/s41588-020-00757-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_47_1"
+    },
+    {
+      "DOI": "10.1214/21-EJS1797",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_48_1"
+    },
+    {
+      "DOI": "10.1101/2021.09.02.21262942",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_49_1",
+      "unstructured": "Tanigawa Y. Qian J. Venkataraman G. Justesen J. M. Li R. Tibshirani R. Hastie T. \u0026Rivas M. A.(2022).Significant sparse polygenic risk scores across 813 traits in UK Biobank.medRxiv.https://www.medrxiv.org/content/early/2022/01/27/2021.09.02.21262942 https://doi.org/10.1101/2021.09.02.21262942"
+    },
+    {
+      "DOI": "10.1155/2017/1421409",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_50_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_51_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_52_1"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03243-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_53_1"
+    },
+    {
+      "DOI": "10.1038/s41467-020-19854-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_54_1"
+    },
+    {
+      "DOI": "10.1038/s41588-020-00735-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_55_1"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01036-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_56_1"
+    },
+    {
+      "DOI": "10.1198/016214506000000843",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_57_1"
+    }
+  ],
+  "reference-count": 56,
+  "references-count": 56,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2022.04.07.487343",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22495"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Statistical learning for sparser fine‐mapped polygenic models: The prediction of LDL‐cholesterol"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

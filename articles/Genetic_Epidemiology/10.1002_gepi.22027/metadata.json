@@ -1,0 +1,567 @@
+{
+  "DOI": "10.1002/gepi.22027",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22027",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eA key step in genomic studies is to assess high throughput measurements across millions of markers for each participant's DNA, either using microarrays or sequencing techniques. Accurate genotype calling is essential for downstream statistical analysis of genotype‐phenotype associations, and next generation sequencing (NGS) has recently become a more common approach in genomic studies. How the accuracy of variant calling in NGS‐based studies affects downstream association analysis has not, however, been studied using empirical data in which both microarrays and NGS were available. In this article, we investigate the impact of variant calling errors on the statistical power to identify associations between single nucleotides and disease, and on associations between multiple rare variants and disease. Both differential and nondifferential genotyping errors are considered. Our results show that the power of burden tests for rare variants is strongly influenced by the specificity in variant calling, but is rather robust with regard to sensitivity. By using the variant calling accuracies estimated from a substudy of a Cooperative Studies Program project conducted by the Department of Veterans Affairs, we show that the power of association tests is mostly retained with commonly adopted variant calling pipelines. An R package, GWAS.PC, is provided to accommodate power analysis that takes account of genotyping errors (\u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"http://zhaocenter.org/software/\"\u003ehttp://zhaocenter.org/software/\u003c/jats:ext-link\u003e).\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22027"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Department of Biostatistics Yale School of Public Health  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Hou",
+      "given": "Lin",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Department of Biostatistics Yale School of Public Health  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Sun",
+      "given": "Ning",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics Yale University School of Medicine  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Mane",
+      "given": "Shrikant",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Center for Medical Informatics Yale University School of Medicine  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Sayward",
+      "given": "Fred",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Center for Medical Informatics Yale University School of Medicine  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Rajeevan",
+      "given": "Nallakkandi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Center for Medical Informatics Yale University School of Medicine  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Cheung",
+      "given": "Kei‐Hoi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Massachusetts Area Veterans Epidemiology Research and Information Center (MAVERIC) VA Cooperative Studies Program VA Boston Healthcare System  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Department of Medicine Harvard University School of Medicine  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Cho",
+      "given": "Kelly",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Massachusetts Area Veterans Epidemiology Research and Information Center (MAVERIC) VA Cooperative Studies Program VA Boston Healthcare System  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Department of Medicine Harvard University School of Medicine  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Pyarajan",
+      "given": "Saiju",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Department of Medicine Yale University School of Medicine  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Aslan",
+      "given": "Mihaela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Center for Medical Informatics Yale University School of Medicine  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Miller",
+      "given": "Perry",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Bruce W. Carter Miami Veterans Affairs (VA) Medical Center  Miami Florida United States of America"
+        },
+        {
+          "name": "Department of Psychiatry University of Miami Miller School of Medicine  Miami Florida United States of America"
+        }
+      ],
+      "family": "Harvey",
+      "given": "Philip D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Massachusetts Area Veterans Epidemiology Research and Information Center (MAVERIC) VA Cooperative Studies Program VA Boston Healthcare System  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Department of Medicine Harvard University School of Medicine  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Gaziano",
+      "given": "J. Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Department of Medicine Yale University School of Medicine  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Concato",
+      "given": "John",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Clinical Epidemiology Research Center (CERC) Veterans Affairs (VA) Cooperative Studies Program VA Connecticut Healthcare System  West Haven Connecticut United States of America"
+        },
+        {
+          "name": "Department of Biostatistics Yale School of Public Health  New Haven Connecticut United States of America"
+        }
+      ],
+      "family": "Zhao",
+      "given": "Hongyu",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        12,
+        26
+      ]
+    ],
+    "date-time": "2016-12-26T07:36:59Z",
+    "timestamp": 1482737819000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2023-10-05T23:19:31Z",
+    "timestamp": 1696547971000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100006379",
+      "doi-asserted-by": "publisher",
+      "name": "Office of Research and Development"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        20
+      ]
+    ],
+    "date-time": "2024-02-20T07:58:38Z",
+    "timestamp": 1708415918255
+  },
+  "is-referenced-by-count": 12,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        12,
+        26
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            26
+          ]
+        ],
+        "date-time": "2016-12-26T00:00:00Z",
+        "timestamp": 1482710400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22027",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22027",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "152-162",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        12,
+        26
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        12,
+        26
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1111/j.1469-1809.2006.00318.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.2202/1544-6115.1433",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1038/nrg2779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1056/NEJMp1500523",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2014.00062",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1038/ng.806",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20574",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1016/j.jclinepi.2015.09.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1172/JCI24756",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20246",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "article-title": "Assessment and management of single nucleotide polymorphism genotype errors in genetic association analysis",
+      "author": "Gordon D.",
+      "first-page": "18",
+      "journal-title": "Pacific Symposium on Biocomputing",
+      "key": "e_1_2_6_13_1",
+      "volume": "6",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.2202/1544-6115.1085",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.32242",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0903103106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1038/nrg1521",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1159/000083540",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10301",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1159/000346824",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp373",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp324",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0056626",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2012.11.019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1159/000092553",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "article-title": "An investigation of the effect of misclassification on the properties of χ2 tests in the analysis of categorical data",
+      "author": "Mote V. L.",
+      "first-page": "95",
+      "journal-title": "Biiometrica",
+      "key": "e_1_2_6_29_1",
+      "volume": "52",
+      "year": "1965"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1038/ng.835",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.06.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1159/000332222",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1046/j.1469-1809.2003.00020.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1970.10481170",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.2307/2528829",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1080/00401706.1972.10488895",
+      "article-title": "A double sampling scheme for estimation from misclassified multinomial data with applications",
+      "author": "Tenenbein A.",
+      "doi-asserted-by": "crossref",
+      "first-page": "187",
+      "issue": "1",
+      "journal-title": "Technometrics",
+      "key": "e_1_2_6_37_1",
+      "volume": "14",
+      "year": "1972"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.2009.00516.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1038/srep28323",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1038/ng.608",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    }
+  ],
+  "reference-count": 39,
+  "references-count": 39,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22027"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Impact of genotyping errors on statistical power of association tests in genomic analyses: A case study"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

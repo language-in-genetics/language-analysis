@@ -1,0 +1,516 @@
+{
+  "DOI": "10.1002/gepi.20194",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.20194",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eWe describe a new program lm_twoqtl, part of the MORGAN package, for parametric linkage analysis with a quantitative trait locus (QTL) model having one or two QTLs and a polygenic component, which models additional familial correlation from other unlinked QTLs. The program has no restriction on number of markers or complexity of pedigrees, facilitating use of more complex models with general pedigrees. This is the first available program that can handle a model with both two QTLs and a polygenic component. Competing programs use only simpler models: one QTL, one QTL plus a polygenic component, or variance components (VC). Use of simple models when they are incorrect, as for complex traits that are influenced by multiple genes, can bias estimates of QTL location or reduce power to detect linkage. We compute the likelihood with Markov Chain Monte Carlo (MCMC) realization of segregation indicators at the hypothesized QTL locations conditional on marker data, summation over phased multilocus genotypes of founders, and peeling of the polygenic component. Simulated examples, with various sized pedigrees, show that two‐QTL analysis correctly identifies the location of both QTLs, even when they are closely linked, whereas other analyses, including the VC approach, fail to identify the location of QTLs with modest contribution. Our examples illustrate the advantage of parametric linkage analysis with two QTLs, which provides higher power for linkage detection and better localization than use of simpler models. \u003cjats:italic\u003eGenet. Epidemiol\u003c/jats:italic\u003e. © 2006 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.20194"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Sung",
+      "given": "Yun Ju",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Thompson",
+      "given": "Elizabeth A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wijsman",
+      "given": "Ellen M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2006,
+        11,
+        22
+      ]
+    ],
+    "date-time": "2006-11-22T21:16:43Z",
+    "timestamp": 1164230203000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        29
+      ]
+    ],
+    "date-time": "2023-09-29T07:38:20Z",
+    "timestamp": 1695973100000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        15
+      ]
+    ],
+    "date-time": "2023-11-15T02:02:51Z",
+    "timestamp": 1700013771012
+  },
+  "is-referenced-by-count": 13,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2006,
+        11,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2006,
+            11,
+            22
+          ]
+        ],
+        "date-time": "2006-11-22T00:00:00Z",
+        "timestamp": 1164153600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.20194",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.20194",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "103-114",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2006,
+        11,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2006,
+        11,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2007,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ng786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_2_1"
+    },
+    {
+      "DOI": "10.1086/302536",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_3_1"
+    },
+    {
+      "DOI": "10.1086/302487",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_4_1"
+    },
+    {
+      "DOI": "10.1086/301844",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_5_1"
+    },
+    {
+      "DOI": "10.1086/324069",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10225",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_7_1"
+    },
+    {
+      "DOI": "10.1186/1471-2156-6-S1-S48",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_8_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4899-3210-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20033",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_10_1"
+    },
+    {
+      "DOI": "10.1186/1471-2156-4-S1-S70",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_11_1"
+    },
+    {
+      "DOI": "10.1212/01.wnl.0000167186.05465.7c",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "article-title": "Faster sequential genetic linkage computations",
+      "author": "Cottingham RW",
+      "first-page": "252",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_13_1",
+      "volume": "53",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1159/000152448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "DOI": "10.1086/302897",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_15_1"
+    },
+    {
+      "author": "Fishman GS",
+      "key": "e_1_2_1_16_1",
+      "volume-title": "Principles of Discrete Event Simulation",
+      "year": "1978"
+    },
+    {
+      "DOI": "10.1007/s00439-005-1338-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_17_1"
+    },
+    {
+      "author": "Gentle JE",
+      "key": "e_1_2_1_18_1",
+      "volume-title": "Random number generation and Monte Carlo methods",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1159/000085224",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_19_1"
+    },
+    {
+      "DOI": "10.1126/science.1076641",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_20_1"
+    },
+    {
+      "DOI": "10.1086/301997",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_21_1"
+    },
+    {
+      "DOI": "10.1038/75514",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_22_1"
+    },
+    {
+      "DOI": "10.1007/978-94-009-5819-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "DOI": "10.1016/0010-4809(82)90064-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_24_1"
+    },
+    {
+      "DOI": "10.1086/515506",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_25_1"
+    },
+    {
+      "DOI": "10.2307/2529339",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_26_1"
+    },
+    {
+      "DOI": "10.1136/jmg.2004.018564",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_27_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.30245",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_28_1"
+    },
+    {
+      "DOI": "10.2307/1390807",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_29_1"
+    },
+    {
+      "article-title": "Two‐locus disease models with two marker loci: the power of affected‐sib‐pair tests",
+      "author": "Knapp M",
+      "first-page": "1030",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_30_1",
+      "volume": "55",
+      "year": "1994"
+    },
+    {
+      "article-title": "Parametric and non‐parametric linkage analysis: unified multipoint approach",
+      "author": "Kruglyak L",
+      "first-page": "1347",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_31_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1073/pnas.84.8.2363",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_32_1"
+    },
+    {
+      "article-title": "A random walk method for computing genetic location scores",
+      "author": "Lange K",
+      "first-page": "1320",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_33_1",
+      "volume": "49",
+      "year": "1991"
+    },
+    {
+      "article-title": "Easy calculations of lod scores and genetic risks on small computers",
+      "author": "Lathrop GM",
+      "first-page": "460",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_34_1",
+      "volume": "36",
+      "year": "1984"
+    },
+    {
+      "article-title": "Analysis of complex diseases under oligogenic models and intrafamilial heterogeneity by the LINKAGE programs",
+      "author": "Lathrop GM",
+      "first-page": "A188",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_35_1",
+      "volume": "47",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1046/j.1469-1809.2000.6460519.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_36_1"
+    },
+    {
+      "DOI": "10.1002/gepi.1370120629",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_37_1"
+    },
+    {
+      "DOI": "10.1007/s10038-004-0222-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_38_1"
+    },
+    {
+      "DOI": "10.1086/319507",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_39_1"
+    },
+    {
+      "DOI": "10.1038/ng1295-402",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_40_1"
+    },
+    {
+      "DOI": "10.1159/000053346",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_41_1"
+    },
+    {
+      "DOI": "10.1002/ana.20590",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_42_1"
+    },
+    {
+      "article-title": "Estimation of the recombination fraction in human pedigrees: efficient computation of the likelihood for human linkage studies",
+      "author": "Ott J",
+      "first-page": "588",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_43_1",
+      "volume": "26",
+      "year": "1974"
+    },
+    {
+      "DOI": "10.2307/2529279",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_44_1"
+    },
+    {
+      "DOI": "10.1159/000154222",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_45_1"
+    },
+    {
+      "DOI": "10.1287/opre.30.3.556",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_46_1"
+    },
+    {
+      "article-title": "Two‐trait‐locus linkage analysis: a powerful strategy for mapping complex genetic traits",
+      "author": "Schork NJ",
+      "first-page": "1127",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_47_1",
+      "volume": "53",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1086/302888",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_48_1"
+    },
+    {
+      "DOI": "10.1186/1471-2156-6-S1-S11",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_49_1"
+    },
+    {
+      "article-title": "Descent graphs in pedigree analysis: Applications to haplotyping, location scores, and marker‐sharing statistics",
+      "author": "Sobel E",
+      "first-page": "1323",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_50_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1086/302911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_51_1"
+    },
+    {
+      "DOI": "10.1159/000076394",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_52_1"
+    },
+    {
+      "DOI": "10.1159/000099186",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_53_1"
+    },
+    {
+      "DOI": "10.1214/cbms/1462106037",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_1_54_1",
+      "unstructured": "ThompsonEA.2000.Statistical inference from genetic data on pedigrees. NSF‐CBMS regional conference series in probability and statistics volume 6."
+    },
+    {
+      "author": "Thompson EA",
+      "first-page": "183",
+      "key": "e_1_2_1_55_1",
+      "volume-title": "Lecture Note Series of the IMS, National University of Singapore",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1002/gepi.1370100658",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_56_1"
+    },
+    {
+      "DOI": "10.1214/lnms/1215455549",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_1_57_1",
+      "unstructured": "ThompsonEA HeathSC.1999.Estimation of conditional multilocus gene identity among relatives. Statistics in Molecular Biology and Genetics: Selected Proceedings of a 1997 Joint AMS‐IMS‐SIAM Summer Conference on Statistics in Molecular Biology IMS Lecture Note—Monograph Series 33 p95–113."
+    },
+    {
+      "DOI": "10.1002/(SICI)1098-2272(1997)14:6\u003c719::AID-GEPI28\u003e3.0.CO;2-S",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_58_1"
+    }
+  ],
+  "reference-count": 57,
+  "references-count": 57,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.20194"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "MCMC‐based linkage analysis for complex traits on general pedigrees: multipoint analysis with a two‐locus model and a polygenic component"
+  ],
+  "type": "journal-article",
+  "volume": "31"
+}

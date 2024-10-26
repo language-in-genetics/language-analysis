@@ -1,0 +1,935 @@
+{
+  "DOI": "10.1186/s40246-024-00597-6",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-024-00597-6",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe N\u003cjats:sup\u003e6\u003c/jats:sup\u003e-methyladenosine (m\u003cjats:sup\u003e6\u003c/jats:sup\u003eA) RNA modification plays essential roles in multiple biological processes, including stem cell fate determination. To explore the role of the m6A modification in pluripotent reprogramming, we used RNA-seq to map m6A effectors in human iPSCs, fibroblasts, and H9 ESCs, as well as in mouse ESCs and fibroblasts. By integrating the human and mouse RNA-seq data, we found that 19 m6A effectors were significantly upregulated in reprogramming. Notably, IGF2BPs, particularly \u003cjats:italic\u003eIGF2BP1\u003c/jats:italic\u003e, were among the most upregulated genes in pluripotent cells, while \u003cjats:italic\u003eYTHDF3\u003c/jats:italic\u003e had high levels of expression in fibroblasts. Using quantitative PCR and Western blot, we validated the pluripotency-associated elevation of IGF2BPs. Knockdown of \u003cjats:italic\u003eIGF2BP1\u003c/jats:italic\u003e induced the downregulation of stemness genes and exit from pluripotency. Proteome analysis of cells collected at both the beginning and terminal states of the reprogramming process revealed that the IGF2BP1 protein was positively correlated with stemness markers SOX2 and OCT4. The eCLIP-seq target analysis showed that IGF2BP1 interacted with the coding sequence (CDS) and 3’UTR regions of the \u003cjats:italic\u003eSOX2\u003c/jats:italic\u003e transcripts, in agreement with the location of m6A modifications. This study identifies \u003cjats:italic\u003eIGF2BP1\u003c/jats:italic\u003e as a vital pluripotency-associated m6A effector, providing new insight into the interplay between m6A epigenetic modifications and pluripotent reprogramming.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "597"
+  ],
+  "article-number": "33",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "13 November 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "11 March 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "2 April 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Informed consent",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Wenjun",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhou",
+      "given": "Lei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Hui",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sun",
+      "given": "Tingge",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wen",
+      "given": "Xue",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Esteban",
+      "given": "Miguel A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoffman",
+      "given": "Andrew R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hu",
+      "given": "Ji-Fan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cui",
+      "given": "Jiuwei",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        2
+      ]
+    ],
+    "date-time": "2024-04-02T09:02:55Z",
+    "timestamp": 1712048575000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        2
+      ]
+    ],
+    "date-time": "2024-04-02T09:04:58Z",
+    "timestamp": 1712048698000
+  },
+  "funder": [
+    {
+      "award": [
+        "RT2-01942"
+      ],
+      "name": "California Institute of Regenerative Medicine (CIRM) grant"
+    },
+    {
+      "DOI": "10.13039/100000738",
+      "award": [
+        "BX002905"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Department of Veterans Affairs"
+    },
+    {
+      "DOI": "10.13039/501100012165",
+      "award": [
+        "2018YFA0106902, 2020YFA0707704"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Key Technologies Research and Development Program"
+    },
+    {
+      "award": [
+        "82050003"
+      ],
+      "name": "the Innovative Program of National Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "32000431, 31871297, 81874052"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "the National Natural Science Foundation of China"
+    },
+    {
+      "award": [
+        "JLSWSRCZX2020-100 and JLSWSRCZX2020-023"
+      ],
+      "name": "Fund of Jilin Provincial Finance Department"
+    },
+    {
+      "award": [
+        "2021C10"
+      ],
+      "name": "Fund of Jilin Provincial Development and Reform Commission"
+    },
+    {
+      "award": [
+        "2016Q035"
+      ],
+      "name": "Fund of Jilin Provincial Health Commission"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        3
+      ]
+    ],
+    "date-time": "2024-04-03T00:54:38Z",
+    "timestamp": 1712105678930
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2024-04-02T00:00:00Z",
+        "timestamp": 1712016000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2024-04-02T00:00:00Z",
+        "timestamp": 1712016000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00597-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-024-00597-6/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00597-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.molcel.2019.04.025",
+      "author": "H Shi",
+      "doi-asserted-by": "publisher",
+      "first-page": "640",
+      "issue": "4",
+      "journal-title": "Mol Cell",
+      "key": "597_CR1",
+      "unstructured": "Shi H, Wei J, He C. Where, when, and how: context-dependent functions of RNA methylation writers, readers, and Erasers. Mol Cell. 2019;74(4):640–50. https://doi.org/10.1016/j.molcel.2019.04.025.",
+      "volume": "74",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1126/science.aau1646",
+      "author": "M Frye",
+      "doi-asserted-by": "publisher",
+      "first-page": "1346",
+      "issue": "6409",
+      "journal-title": "Science",
+      "key": "597_CR2",
+      "unstructured": "Frye M, Harada BT, Behm M, He C. RNA modifications modulate gene expression during development. Science. 2018;361(6409):1346–9. https://doi.org/10.1126/science.aau1646.",
+      "volume": "361",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.cell.2017.05.045",
+      "author": "IA Roundtree",
+      "doi-asserted-by": "publisher",
+      "first-page": "1187",
+      "issue": "7",
+      "journal-title": "Cell",
+      "key": "597_CR3",
+      "unstructured": "Roundtree IA, Evans ME, Pan T, He C. Dynamic RNA modifications in Gene expression regulation. Cell. 2017;169(7):1187–200. https://doi.org/10.1016/j.cell.2017.05.045.",
+      "volume": "169",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nmeth.3453",
+      "author": "B Linder",
+      "doi-asserted-by": "publisher",
+      "first-page": "767",
+      "issue": "8",
+      "journal-title": "Nat Methods",
+      "key": "597_CR4",
+      "unstructured": "Linder B, Grozhik AV, Olarerin-George AO, Meydan C, Mason CE, Jaffrey SR. Single-nucleotide-resolution mapping of m6A and m6Am throughout the transcriptome. Nat Methods. 2015;12(8):767–72. https://doi.org/10.1038/nmeth.3453.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.cell.2014.08.005",
+      "author": "M Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "980",
+      "issue": "5",
+      "journal-title": "Cell",
+      "key": "597_CR5",
+      "unstructured": "Lee M, Kim B, Kim VN. Emerging roles of RNA modification: m6A and U-Tail. Cell. 2014;158(5):980–7. https://doi.org/10.1016/j.cell.2014.08.005.",
+      "volume": "158",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nature12730",
+      "author": "X Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "117",
+      "issue": "7481",
+      "journal-title": "Nature",
+      "key": "597_CR6",
+      "unstructured": "Wang X, Lu Z, Gomez A, Hon GC, Yue Y, Han D, et al. N6-methyladenosine-dependent regulation of messenger RNA stability. Nature. 2014;505(7481):117–20. https://doi.org/10.1038/nature12730.",
+      "volume": "505",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gks1007",
+      "author": "MA Machnicka",
+      "doi-asserted-by": "publisher",
+      "first-page": "D262",
+      "issue": "Database issue",
+      "journal-title": "Nucleic Acids Res",
+      "key": "597_CR7",
+      "unstructured": "Machnicka MA, Milanowska K, Osman Oglou O, Purta E, Kurkowska M, Olchowik A, et al. MODOMICS: a database of RNA modification pathways–2013 update. Nucleic Acids Res. 2013;41(Database issue):D262–7. https://doi.org/10.1093/nar/gks1007.",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1101/gad.333369.119",
+      "author": "VV Ignatova",
+      "doi-asserted-by": "publisher",
+      "first-page": "715",
+      "issue": "9–10",
+      "journal-title": "Genes Dev",
+      "key": "597_CR8",
+      "unstructured": "Ignatova VV, Stolz P, Kaiser S, Gustafsson TH, Lastres PR, Sanz-Moreno A, et al. The rRNA m(6)a methyltransferase METTL5 is involved in pluripotency and developmental programs. Genes Dev. 2020;34(9–10):715–29. https://doi.org/10.1101/gad.333369.119.",
+      "volume": "34",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2020.107641",
+      "author": "G Di Timoteo",
+      "doi-asserted-by": "publisher",
+      "first-page": "107641",
+      "issue": "6",
+      "journal-title": "Cell Rep",
+      "key": "597_CR9",
+      "unstructured": "Di Timoteo G, Dattilo D, Centrón-Broco A, Colantoni A, Guarnacci M, Rossi F, et al. Modulation of circRNA metabolism by m(6)a modification. Cell Rep. 2020;31(6):107641. https://doi.org/10.1016/j.celrep.2020.107641.",
+      "volume": "31",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/cr.2017.31",
+      "author": "Y Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "626",
+      "issue": "5",
+      "journal-title": "Cell Res",
+      "key": "597_CR10",
+      "unstructured": "Yang Y, Fan X, Mao M, Song X, Wu P, Zhang Y, et al. Extensive translation of circular RNAs driven by N(6)-methyladenosine. Cell Res. 2017;27(5):626–41. https://doi.org/10.1038/cr.2017.31.",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ccell.2020.04.017",
+      "author": "R Su",
+      "doi-asserted-by": "publisher",
+      "first-page": "79",
+      "issue": "1",
+      "journal-title": "Cancer Cell",
+      "key": "597_CR11",
+      "unstructured": "Su R, Dong L, Li Y, Gao M, Han L, Wunderlich M, et al. Targeting FTO suppresses Cancer Stem Cell maintenance and Immune Evasion. Cancer Cell. 2020;38(1):79–e9611. https://doi.org/10.1016/j.ccell.2020.04.017.",
+      "volume": "38",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.stem.2017.11.016",
+      "author": "H Weng",
+      "doi-asserted-by": "publisher",
+      "first-page": "191",
+      "issue": "2",
+      "journal-title": "Cell Stem Cell",
+      "key": "597_CR12",
+      "unstructured": "Weng H, Huang H, Wu H, Qin X, Zhao BS, Dong L, et al. METTL14 inhibits hematopoietic Stem/Progenitor differentiation and promotes Leukemogenesis via mRNA m(6)a modification. Cell Stem Cell. 2018;22(2):191–e2059. https://doi.org/10.1016/j.stem.2017.11.016.",
+      "volume": "22",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.stem.2014.09.019",
+      "author": "PJ Batista",
+      "doi-asserted-by": "publisher",
+      "first-page": "707",
+      "issue": "6",
+      "journal-title": "Cell Stem Cell",
+      "key": "597_CR13",
+      "unstructured": "Batista PJ, Molinie B, Wang J, Qu K, Zhang J, Li L, et al. M(6)a RNA modification controls cell fate transition in mammalian embryonic stem cells. Cell Stem Cell. 2014;15(6):707–19. https://doi.org/10.1016/j.stem.2014.09.019.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007412",
+      "author": "SD Kasowitz",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007412",
+      "issue": "5",
+      "journal-title": "PLoS Genet",
+      "key": "597_CR14",
+      "unstructured": "Kasowitz SD, Ma J, Anderson SJ, Leu NA, Xu Y, Gregory BD, et al. Nuclear m6A reader YTHDC1 regulates alternative polyadenylation and splicing during mouse oocyte development. PLoS Genet. 2018;14(5):e1007412. https://doi.org/10.1371/journal.pgen.1007412.",
+      "volume": "14",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s12943-020-01204-7",
+      "author": "T Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "88",
+      "issue": "1",
+      "journal-title": "Mol Cancer",
+      "key": "597_CR15",
+      "unstructured": "Wang T, Kong S, Tao M, Ju S. The potential role of RNA N6-methyladenosine in Cancer progression. Mol Cancer. 2020;19(1):88. https://doi.org/10.1186/s12943-020-01204-7.",
+      "volume": "19",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12943-019-1109-9",
+      "author": "L He",
+      "doi-asserted-by": "publisher",
+      "first-page": "176",
+      "issue": "1",
+      "journal-title": "Mol Cancer",
+      "key": "597_CR16",
+      "unstructured": "He L, Li H, Wu A, Peng Y, Shu G, Yin G. Functions of N6-methyladenosine and its role in cancer. Mol Cancer. 2019;18(1):176. https://doi.org/10.1186/s12943-019-1109-9.",
+      "volume": "18",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nm.4416",
+      "author": "LP Vu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1369",
+      "issue": "11",
+      "journal-title": "Nat Med",
+      "key": "597_CR17",
+      "unstructured": "Vu LP, Pickering BF, Cheng Y, Zaccara S, Nguyen D, Minuesa G, et al. The N(6)-methyladenosine (m(6)A)-forming enzyme METTL3 controls myeloid differentiation of normal hematopoietic and leukemia cells. Nat Med. 2017;23(11):1369–76. https://doi.org/10.1038/nm.4416.",
+      "volume": "23",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3389/fncel.2021.671932",
+      "author": "J Mathoux",
+      "doi-asserted-by": "publisher",
+      "first-page": "671932",
+      "journal-title": "Front Cell Neurosci",
+      "key": "597_CR18",
+      "unstructured": "Mathoux J, Henshall DC, Brennan GP. Regulatory mechanisms of the RNA modification m(6)A and significance in brain function in Health and Disease. Front Cell Neurosci. 2021;15:671932. https://doi.org/10.3389/fncel.2021.671932.",
+      "volume": "15",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nature23883",
+      "author": "C Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "273",
+      "issue": "7671",
+      "journal-title": "Nature",
+      "key": "597_CR19",
+      "unstructured": "Zhang C, Chen Y, Sun B, Wang L, Yang Y, Ma D, et al. M(6)a modulates haematopoietic stem and progenitor cell specification. Nature. 2017;549(7671):273–6. https://doi.org/10.1038/nature23883.",
+      "volume": "549",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.stem.2020.09.014",
+      "author": "S Yamanaka",
+      "doi-asserted-by": "publisher",
+      "first-page": "523",
+      "issue": "4",
+      "journal-title": "Cell Stem Cell",
+      "key": "597_CR20",
+      "unstructured": "Yamanaka S. Pluripotent stem cell-based Cell Therapy-Promise and challenges. Cell Stem Cell. 2020;27(4):523–31. https://doi.org/10.1016/j.stem.2020.09.014.",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1126/science.282.5391.1145",
+      "author": "JA Thomson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1145",
+      "issue": "5391",
+      "journal-title": "Science",
+      "key": "597_CR21",
+      "unstructured": "Thomson JA, Itskovitz-Eldor J, Shapiro SS, Waknitz MA, Swiergiel JJ, Marshall VS, et al. Embryonic stem cell lines derived from human blastocysts. Science. 1998;282(5391):1145–7. https://doi.org/10.1126/science.282.5391.1145.",
+      "volume": "282",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1016/j.cell.2006.07.024",
+      "author": "K Takahashi",
+      "doi-asserted-by": "publisher",
+      "first-page": "663",
+      "issue": "4",
+      "journal-title": "Cell",
+      "key": "597_CR22",
+      "unstructured": "Takahashi K, Yamanaka S. Induction of pluripotent stem cells from mouse embryonic and adult fibroblast cultures by defined factors. Cell. 2006;126(4):663–76. https://doi.org/10.1016/j.cell.2006.07.024.",
+      "volume": "126",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1038/labinvest.2017.56",
+      "author": "R Teshigawara",
+      "doi-asserted-by": "publisher",
+      "first-page": "1152",
+      "issue": "10",
+      "journal-title": "Lab Invest",
+      "key": "597_CR23",
+      "unstructured": "Teshigawara R, Cho J, Kameda M, Tada T. Mechanism of human somatic reprogramming to iPS cell. Lab Invest. 2017;97(10):1152–7. https://doi.org/10.1038/labinvest.2017.56.",
+      "volume": "97",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/j.1582-4934.2005.tb00358.x",
+      "author": "DJ Ambrosi",
+      "doi-asserted-by": "publisher",
+      "first-page": "320",
+      "issue": "2",
+      "journal-title": "J Cell Mol Med",
+      "key": "597_CR24",
+      "unstructured": "Ambrosi DJ, Rasmussen TP. Reprogramming mediated by stem cell fusion. J Cell Mol Med. 2005;9(2):320–30. https://doi.org/10.1111/j.1582-4934.2005.tb00358.x.",
+      "volume": "9",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1126/science.1239278",
+      "author": "P Hou",
+      "doi-asserted-by": "publisher",
+      "first-page": "651",
+      "issue": "6146",
+      "journal-title": "Science",
+      "key": "597_CR25",
+      "unstructured": "Hou P, Li Y, Zhang X, Liu C, Guan J, Li H, et al. Pluripotent stem cells induced from mouse somatic cells by small-molecule compounds. Science. 2013;341(6146):651–4. https://doi.org/10.1126/science.1239278.",
+      "volume": "341",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1021/cb400754f",
+      "author": "DW Jung",
+      "doi-asserted-by": "publisher",
+      "first-page": "80",
+      "issue": "1",
+      "journal-title": "ACS Chem Biol",
+      "key": "597_CR26",
+      "unstructured": "Jung DW, Kim WH, Williams DR. Reprogram or reboot: small molecule approaches for the production of induced pluripotent stem cells and direct cell reprogramming. ACS Chem Biol. 2014;9(1):80–95. https://doi.org/10.1021/cb400754f.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/s12015-019-09931-1",
+      "author": "KK Haridhasapavalan",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "issue": "1",
+      "journal-title": "Stem Cell Reviews Rep",
+      "key": "597_CR27",
+      "unstructured": "Haridhasapavalan KK, Raina K, Dey C, Adhikari P, Thummer RP. An insight into reprogramming barriers to iPSC Generation. Stem Cell Reviews Rep. 2020;16(1):56–81. https://doi.org/10.1007/s12015-019-09931-1.",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkab710",
+      "author": "IA Babarinde",
+      "doi-asserted-by": "publisher",
+      "first-page": "9132",
+      "issue": "16",
+      "journal-title": "Nucleic Acids Res",
+      "key": "597_CR28",
+      "unstructured": "Babarinde IA, Ma G, Li Y, Deng B, Luo Z, Liu H, et al. Transposable element sequence fragments incorporated into coding and noncoding transcripts modulate the transcriptome of human pluripotent stem cells. Nucleic Acids Res. 2021;49(16):9132–53. https://doi.org/10.1093/nar/gkab710.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1681/asn.2011010106",
+      "author": "T Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1221",
+      "issue": "7",
+      "journal-title": "J Am Soc Nephrol",
+      "key": "597_CR29",
+      "unstructured": "Zhou T, Benda C, Duzinger S, Huang Y, Li X, Li Y, et al. Generation of induced pluripotent stem cells from urine. J Am Soc Nephrol. 2011;22(7):1221–8. https://doi.org/10.1681/asn.2011010106.",
+      "volume": "22",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts635",
+      "author": "A Dobin",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "issue": "1",
+      "journal-title": "Bioinformatics",
+      "key": "597_CR30",
+      "unstructured": "Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, et al. STAR: ultrafast universal RNA-seq aligner. Bioinformatics. 2013;29(1):15–21. https://doi.org/10.1093/bioinformatics/bts635.",
+      "volume": "29",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/s13059-014-0550-8",
+      "author": "MI Love",
+      "doi-asserted-by": "publisher",
+      "first-page": "550",
+      "issue": "12",
+      "journal-title": "Genome Biol",
+      "key": "597_CR31",
+      "unstructured": "Love MI, Huber W, Anders S. Moderated estimation of Fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 2014;15(12):550. https://doi.org/10.1186/s13059-014-0550-8.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41551-017-0141-6",
+      "author": "JM Churko",
+      "doi-asserted-by": "publisher",
+      "first-page": "826",
+      "issue": "10",
+      "journal-title": "Nat Biomed Eng",
+      "key": "597_CR32",
+      "unstructured": "Churko JM, Lee J, Ameen M, Gu M, Venkatasubramanian M, Diecke S, et al. Transcriptomic and epigenomic differences in human induced pluripotent stem cells generated from six reprogramming methods. Nat Biomed Eng. 2017;1(10):826–37. https://doi.org/10.1038/s41551-017-0141-6.",
+      "volume": "1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2016.03.052",
+      "author": "AE Conway",
+      "doi-asserted-by": "publisher",
+      "first-page": "666",
+      "issue": "3",
+      "journal-title": "Cell Rep",
+      "key": "597_CR33",
+      "unstructured": "Conway AE, Van Nostrand EL, Pratt GA, Aigner S, Wilbert ML, Sundararaman B, et al. Enhanced CLIP uncovers IMP Protein-RNA targets in human pluripotent stem cells important for cell adhesion and survival. Cell Rep. 2016;15(3):666–79. https://doi.org/10.1016/j.celrep.2016.03.052.",
+      "volume": "15",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2014.05.048",
+      "author": "S Schwartz",
+      "doi-asserted-by": "publisher",
+      "first-page": "284",
+      "issue": "1",
+      "journal-title": "Cell Rep",
+      "key": "597_CR34",
+      "unstructured": "Schwartz S, Mumbach MR, Jovanovic M, Wang T, Maciag K, Bushkin GG, et al. Perturbation of m6A writers reveals two distinct classes of mRNA methylation at internal and 5’ sites. Cell Rep. 2014;8(1):284–96. https://doi.org/10.1016/j.celrep.2014.05.048.",
+      "volume": "8",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/msb.2011.84",
+      "author": "J Munoz",
+      "doi-asserted-by": "publisher",
+      "first-page": "550",
+      "journal-title": "Mol Syst Biol",
+      "key": "597_CR35",
+      "unstructured": "Munoz J, Low TY, Kok YJ, Chin A, Frese CK, Ding V, et al. The quantitative proteomes of human-induced pluripotent stem cells and embryonic stem cells. Mol Syst Biol. 2011;7:550. https://doi.org/10.1038/msb.2011.84.",
+      "volume": "7",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ymeth.2017.07.022",
+      "author": "MD Ohi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Methods",
+      "key": "597_CR36",
+      "unstructured": "Ohi MD. Structural and functional analyses of the spliceosome requires a multi-disciplinary approach. Methods. 2017;125:1–2. https://doi.org/10.1016/j.ymeth.2017.07.022.",
+      "volume": "125",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1083/jcb.130.2.393",
+      "author": "F Strutz",
+      "doi-asserted-by": "publisher",
+      "first-page": "393",
+      "issue": "2",
+      "journal-title": "J Cell Biol",
+      "key": "597_CR37",
+      "unstructured": "Strutz F, Okada H, Lo CW, Danoff T, Carone RL, Tomaszewski JE, et al. Identification and characterization of a fibroblast marker: FSP1. J Cell Biol. 1995;130(2):393–405. https://doi.org/10.1083/jcb.130.2.393.",
+      "volume": "130",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1097/nen.0b013e3181634ef7",
+      "author": "Y Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "144",
+      "issue": "2",
+      "journal-title": "J Neuropathology Experimental Neurol",
+      "key": "597_CR38",
+      "unstructured": "Zou Y, Zhang R-Z, Sabatelli P, Chu M-L, Bönnemann CG. Muscle interstitial fibroblasts are the Main source of Collagen VI Synthesis in skeletal muscle: implications for congenital muscular dystrophy types Ullrich and Bethlem. J Neuropathology Experimental Neurol. 2008;67(2):144–54. https://doi.org/10.1097/nen.0b013e3181634ef7.",
+      "volume": "67",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1101/gad.287540.116",
+      "author": "N Degrauwe",
+      "doi-asserted-by": "publisher",
+      "first-page": "2459",
+      "issue": "22",
+      "journal-title": "Genes Dev",
+      "key": "597_CR39",
+      "unstructured": "Degrauwe N, Suvà ML, Janiszewska M, Riggi N, Stamenkovic I. IMPs: an RNA-binding protein family that provides a link between stem cell maintenance in normal development and cancer. Genes Dev. 2016;30(22):2459–74. https://doi.org/10.1101/gad.287540.116.",
+      "volume": "30",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1128/MCB.19.2.1262",
+      "author": "J Nielsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1262",
+      "issue": "2",
+      "journal-title": "Mol Cell Biol",
+      "key": "597_CR40",
+      "unstructured": "Nielsen J, Christiansen J, Lykke-Andersen J, Johnsen Anders H, Wewer Ulla M, Nielsen Finn C. A family of insulin-like growth factor II mRNA-Binding proteins represses translation in Late Development. Mol Cell Biol. 1999;19(2):1262–70. https://doi.org/10.1128/MCB.19.2.1262.",
+      "volume": "19",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1080/713783680",
+      "author": "FC Nielsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "93",
+      "journal-title": "Scand J Clin Lab Invest Suppl",
+      "key": "597_CR41",
+      "unstructured": "Nielsen FC, Nielsen J, Christiansen J. A family of IGF-II mRNA binding proteins (IMP) involved in RNA trafficking. Scand J Clin Lab Invest Suppl. 2001;234:93–9.",
+      "volume": "234",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/sj.emboj.7601039",
+      "author": "J Vikesaa",
+      "doi-asserted-by": "publisher",
+      "first-page": "1456",
+      "issue": "7",
+      "journal-title": "Embo j",
+      "key": "597_CR42",
+      "unstructured": "Vikesaa J, Hansen TV, Jønson L, Borup R, Wewer UM, Christiansen J, et al. RNA-binding IMPs promote cell adhesion and invadopodia formation. Embo j. 2006;25(7):1456–68. https://doi.org/10.1038/sj.emboj.7601039.",
+      "volume": "25",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1126/science.1261417",
+      "author": "S Geula",
+      "doi-asserted-by": "publisher",
+      "first-page": "1002",
+      "issue": "6225",
+      "journal-title": "Science",
+      "key": "597_CR43",
+      "unstructured": "Geula S, Moshitch-Moshkovitz S, Dominissini D, Mansour AA, Kol N, Salmon-Divon M, et al. m6A mRNA methylation facilitates resolution of naïve pluripotency toward differentiation. Science. 2015;347(6225):1002–6. https://doi.org/10.1126/science.1261417.",
+      "volume": "347",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41556-019-0318-1",
+      "author": "H Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "700",
+      "issue": "6",
+      "journal-title": "Nat Cell Biol",
+      "key": "597_CR44",
+      "unstructured": "Lee H, Bao S, Qian Y, Geula S, Leslie J, Zhang C, et al. Stage-specific requirement for Mettl3-dependent m6A mRNA methylation during haematopoietic stem cell differentiation. Nat Cell Biol. 2019;21(6):700–9. https://doi.org/10.1038/s41556-019-0318-1.",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.stem.2015.01.016",
+      "author": "T Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "289",
+      "issue": "3",
+      "journal-title": "Cell Stem Cell",
+      "key": "597_CR45",
+      "unstructured": "Chen T, Hao YJ, Zhang Y, Li MM, Wang M, Han W, et al. M(6)a RNA methylation is regulated by microRNAs and promotes reprogramming to pluripotency. Cell Stem Cell. 2015;16(3):289–301. https://doi.org/10.1016/j.stem.2015.01.016.",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature05918",
+      "author": "W Reik",
+      "doi-asserted-by": "publisher",
+      "first-page": "425",
+      "issue": "7143",
+      "journal-title": "Nature",
+      "key": "597_CR46",
+      "unstructured": "Reik W. Stability and flexibility of epigenetic gene regulation in mammalian development. Nature. 2007;447(7143):425–32. https://doi.org/10.1038/nature05918.",
+      "volume": "447",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1002/advs.202003902",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "e2003902",
+      "issue": "11",
+      "journal-title": "Adv Sci (Weinh)",
+      "key": "597_CR47",
+      "unstructured": "Chen X, Zhao Q, Zhao YL, Chai GS, Cheng W, Zhao Z, et al. Targeted RNA N(6) -Methyladenosine demethylation controls cell fate transition in human pluripotent stem cells. Adv Sci (Weinh). 2021;8(11):e2003902. https://doi.org/10.1002/advs.202003902.",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41556-018-0045-z",
+      "author": "H Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "285",
+      "issue": "3",
+      "journal-title": "Nat Cell Biol",
+      "key": "597_CR48",
+      "unstructured": "Huang H, Weng H, Sun W, Qin X, Shi H, Wu H, et al. Recognition of RNA N(6)-methyladenosine by IGF2BP proteins enhances mRNA stability and translation. Nat Cell Biol. 2018;20(3):285–95. https://doi.org/10.1038/s41556-018-0045-z.",
+      "volume": "20",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 48,
+  "references-count": 48,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-024-00597-6"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Profiling the role of m6A effectors in the regulation of pluripotent reprogramming"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "18"
+}

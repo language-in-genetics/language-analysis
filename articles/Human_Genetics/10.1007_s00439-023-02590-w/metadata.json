@@ -1,0 +1,873 @@
+{
+  "DOI": "10.1007/s00439-023-02590-w",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-023-02590-w",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIdentifying causal genes at GWAS loci can help pinpoint targets for therapeutic interventions. Expression studies can disentangle such loci but signals from expression quantitative trait loci (eQTLs) often fail to colocalize—which means that the genetic control of measured expression is not shared with the genetic control of disease risk. This may be because gene expression is measured in the wrong cell type, physiological state, or organ. We tested whether Mendelian randomization (MR) could identify genes at loci influencing COVID-19 outcomes and whether the colocalization of genetic control of expression and COVID-19 outcomes was influenced by cell type, cell stimulation, and organ. We conducted MR of \u003cjats:italic\u003ecis\u003c/jats:italic\u003e-eQTLs from single cell (scRNA-seq) and bulk RNA sequencing. We then tested variables that could influence colocalization, including cell type, cell stimulation, RNA sequencing modality, organ, symptoms of COVID-19, and SARS-CoV-2 status among individuals with symptoms of COVID-19. The outcomes used to test colocalization were COVID-19 severity and susceptibility as assessed in the Host Genetics Initiative release 7. Most transcripts identified using MR did not colocalize when tested across cell types, cell state and in different organs. Most that did colocalize likely represented false positives due to linkage disequilibrium. In general, colocalization was highly variable and at times inconsistent for the same transcript across cell type, cell stimulation and organ. While we identified factors that influenced colocalization for select transcripts, identifying 33 that mediate COVID-19 outcomes, our study suggests that colocalization of expression with COVID-19 outcomes is partially due to noisy signals even after following quality control and sensitivity testing. These findings illustrate the present difficulty of linking expression transcripts to disease outcomes and the need for skepticism when observing eQTL MR results, even accounting for cell types, stimulation state and different organs.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2590"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "16 October 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "30 June 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "28 August 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "JBR’s institution has received investigator-initiated grant funding from Eli Lilly, GlaxoSmithKline and Biogen for projects unrelated to this research. He is the CEO of 5 Prime Sciences (ExternalRef removed), which provides research services for biotech, pharma and venture capital companies for projects unrelated to this research."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Soskic et al. biological samples were ethically sourced and used in research under an institutional review board-approved protocol (Soskic et al. CitationRef removed). BQC19 received ethical approval from the Jewish General Hospital research ethics board (2020–2137) and the Centre Hospitalier de l’Université de Montréal institutional ethics board (MP-02–2020-8929, 19.389). Specimens collected by GTEx were sourced per protocol for an institutional review board (GTEx Consortium CitationRef removed)."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Willett",
+      "given": "Julian Daniel Sunday",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Lu",
+      "given": "Tianyuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nakanishi",
+      "given": "Tomoko",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yoshiji",
+      "given": "Satoshi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Butler-Laporte",
+      "given": "Guillaume",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhou",
+      "given": "Sirui",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Farjoun",
+      "given": "Yossi",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3746-9086",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Richards",
+      "given": "J. Brent",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        28
+      ]
+    ],
+    "date-time": "2023-08-28T18:02:31Z",
+    "timestamp": 1693245751000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        20
+      ]
+    ],
+    "date-time": "2023-09-20T09:06:34Z",
+    "timestamp": 1695200794000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000024",
+      "award": [
+        "CIHR: 365825; 409511",
+        "100558",
+        "169303",
+        "476575"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Canadian Institutes of Health Research"
+    },
+    {
+      "DOI": "10.13039/501100000156",
+      "doi-asserted-by": "publisher",
+      "name": "Fonds de Recherche du Québec - Santé"
+    },
+    {
+      "DOI": "10.13039/100008582",
+      "doi-asserted-by": "publisher",
+      "name": "McGill University"
+    },
+    {
+      "DOI": "10.13039/501100013455",
+      "doi-asserted-by": "publisher",
+      "name": "Lady Davis Institute for Medical Research"
+    },
+    {
+      "DOI": "10.13039/501100020986",
+      "doi-asserted-by": "publisher",
+      "name": "Fondation de l'Hôpital général juif"
+    },
+    {
+      "name": "Canadian Foundation for Innovation"
+    },
+    {
+      "DOI": "10.13039/100000009",
+      "doi-asserted-by": "publisher",
+      "name": "Foundation for the National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100013062",
+      "doi-asserted-by": "publisher",
+      "name": "Génome Québec"
+    },
+    {
+      "DOI": "10.13039/100011094",
+      "doi-asserted-by": "crossref",
+      "name": "Public Health Agency of Canada"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T00:57:55Z",
+    "timestamp": 1713920275635
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "10",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        28
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "10",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            28
+          ]
+        ],
+        "date-time": "2023-08-28T00:00:00Z",
+        "timestamp": 1693180800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            28
+          ]
+        ],
+        "date-time": "2023-08-28T00:00:00Z",
+        "timestamp": 1693180800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02590-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-023-02590-w/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02590-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1461-1476",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        28
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        28
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        10
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3389/fmed.2021.738687",
+      "author": "A Baranova",
+      "doi-asserted-by": "publisher",
+      "first-page": "738687",
+      "journal-title": "Front Med (lausanne).",
+      "key": "2590_CR1",
+      "unstructured": "Baranova A, Cao H, Zhang F (2021) Unraveling risk genes of COVID-19 by multi-omics integrative analyses. Front Med (lausanne). 8:738687. https://doi.org/10.3389/fmed.2021.738687",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.705379",
+      "author": "A Baranova",
+      "doi-asserted-by": "publisher",
+      "first-page": "705379",
+      "journal-title": "Front Immunol",
+      "key": "2590_CR2",
+      "unstructured": "Baranova A, Cao H, Chen J, Zhang F (2022a) Causal association and shared genetics between asthma and COVID-19. Front Immunol 13:705379. https://doi.org/10.3389/fimmu.2022.705379",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.psychres.2022.114809",
+      "author": "A Baranova",
+      "doi-asserted-by": "publisher",
+      "first-page": "114809",
+      "journal-title": "Psychiatry Res",
+      "key": "2590_CR3",
+      "unstructured": "Baranova A, Cao H, Zhang F (2022b) Severe COVID-19 increases the risk of schizophrenia. Psychiatry Res 317:114809. https://doi.org/10.1016/j.psychres.2022.114809",
+      "volume": "317",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/jmv.28264",
+      "author": "A Baranova",
+      "doi-asserted-by": "publisher",
+      "first-page": "e28264",
+      "journal-title": "J Med Virol",
+      "key": "2590_CR4",
+      "unstructured": "Baranova A, Cao H, Teng S, Zhang F (2023) A phenome-wide investigation of risk factors for severe COVID-19. J Med Virol 95:e28264. https://doi.org/10.1002/jmv.28264",
+      "volume": "95",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.7554/eLife.74970",
+      "author": "NJ Connally",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Elife",
+      "key": "2590_CR5",
+      "unstructured": "Connally NJ, Nazeen S, Lee D, Shi H, Stamatoyannopoulos J, Chun S, Cotsapas C, Cassa CA, Sunyaev SR (2022) The missing link between genetic association and regulatory function. Elife. https://doi.org/10.7554/eLife.74970",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03767-x",
+      "author": "Covid-19 Host Genetics Initiative",
+      "doi-asserted-by": "publisher",
+      "first-page": "472",
+      "journal-title": "Nature",
+      "key": "2590_CR6",
+      "unstructured": "Covid-19 Host Genetics Initiative (2021) Mapping the human genetic architecture of COVID-19. Nature 600:472–477. https://doi.org/10.1038/s41586-021-03767-x",
+      "volume": "600",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-022-04826-7",
+      "author": "Covid-19 Host Genetics Initiative",
+      "doi-asserted-by": "publisher",
+      "first-page": "E1",
+      "journal-title": "Nature",
+      "key": "2590_CR7",
+      "unstructured": "Covid-19 Host Genetics Initiative (2022) A first update on mapping the human genetic architecture of COVID-19. Nature 608:E1–E10. https://doi.org/10.1038/s41586-022-04826-7",
+      "volume": "608",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2021.110020",
+      "author": "M D'Antonio",
+      "doi-asserted-by": "publisher",
+      "first-page": "110020",
+      "journal-title": "Cell Rep",
+      "key": "2590_CR8",
+      "unstructured": "D’Antonio M, Nguyen JP, Arthur TD, Matsui H, Initiative C-HG, D’Antonio-Chronowska A, Frazer KA (2021) SARS-CoV-2 susceptibility and COVID-19 disease severity are associated with genetic variants affecting gene expression in a variety of tissues. Cell Rep 37:110020. https://doi.org/10.1016/j.celrep.2021.110020",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/bmj.k601",
+      "author": "NM Davies",
+      "doi-asserted-by": "publisher",
+      "first-page": "k601",
+      "journal-title": "BMJ",
+      "key": "2590_CR9",
+      "unstructured": "Davies NM, Holmes MV, Davey Smith G (2018) Reading Mendelian randomisation studies: a guide, glossary, and checklist for clinicians. BMJ 362:k601. https://doi.org/10.1136/bmj.k601",
+      "volume": "362",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-020-17292-4",
+      "author": "S De Biasi",
+      "doi-asserted-by": "publisher",
+      "first-page": "3434",
+      "journal-title": "Nat Commun",
+      "key": "2590_CR10",
+      "unstructured": "De Biasi S, Meschiari M, Gibellini L, Bellinazzi C, Borella R, Fidanza L, Gozzi L, Iannone A, Lo Tartaro D, Mattioli M, Paolini A, Menozzi M, Milic J, Franceschi G, Fantini R, Tonelli R, Sita M, Sarti M, Trenti T, Brugioni L, Cicchetti L, Facchinetti F, Pietrangelo A, Clini E, Girardis M, Guaraldi G, Mussini C, Cossarizza A (2020) Marked T cell activation, senescence, exhaustion and skewing towards TH17 in patients with COVID-19 pneumonia. Nat Commun 11:3434. https://doi.org/10.1038/s41467-020-17292-4",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/hmg/ddac158",
+      "author": "F Degenhardt",
+      "doi-asserted-by": "publisher",
+      "first-page": "3945",
+      "journal-title": "Hum Mol Genet",
+      "key": "2590_CR11",
+      "unstructured": "Degenhardt F, Ellinghaus D, Juzenas S, Lerga-Jaso J, Wendorff M, Maya-Miles D, Uellendahl-Werth F, ElAbd H, Ruhlemann MC, Arora J, Ozer O, Lenning OB, Myhre R, Vadla MS, Wacker EM, Wienbrandt L, Blandino Ortiz A, de Salazar A, Garrido Chercoles A, Palom A, Ruiz A, Garcia-Fernandez AE, Blanco-Grau A, Mantovani A, Zanella A, Holten AR, Mayer A, Bandera A, Cherubini A, Protti A, Aghemo A, Gerussi A, Ramirez A, Braun A, Nebel A, Barreira A, Lleo A, Teles A, Kildal AB, Biondi A, Caballero-Garralda A, Ganna A, Gori A, Gluck A, Lind A, Tanck A, Hinney A, Carreras Nolla A, Fracanzani AL, Peschuck A, Cavallero A, Dyrhol-Riise AM, Ruello A, Julia A, Muscatello A, Pesenti A, Voza A, Rando-Segura A, Solier A, Schmidt A, Cortes B, Mateos B, Nafria-Jimenez B, Schaefer B, Jensen B, Bellinghausen C, Maj C, Ferrando C, de la Horra C, Quereda C, Skurk C, Thibeault C, Scollo C, Herr C, Spinner CD, Gassner C, Lange C, Hu C, Paccapelo C, Lehmann C, Angelini C, Cappadona C, Azuure C, Bianco C, Cea C, Sancho C, Hoff DAL, Galimberti D, Prati D, Haschka D, Jimenez D, Pestana D, Toapanta D, Muniz-Diaz E, Azzolini E, Sandoval E, Binatti E, Scarpini E, Helbig ET et al (2022) Detailed stratified GWAS analysis for severe COVID-19 in four European populations. Hum Mol Genet 31:3945–3966. https://doi.org/10.1093/hmg/ddac158",
+      "volume": "31",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s00439-022-02434-z",
+      "author": "V Forgetta",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Hum Genet",
+      "key": "2590_CR12",
+      "unstructured": "Forgetta V, Jiang L, Vulpescu NA, Hogan MS, Chen S, Morris JA, Grinek S, Benner C, Jang DK, Hoang Q, Burtt N, Flannick JA, McCarthy MI, Fauman E, Greenwood CMT, Maurano MT, Richards JB (2022) An effector index to predict target genes at GWAS loci. Hum Genet. https://doi.org/10.1007/s00439-022-02434-z",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.949413",
+      "author": "I Fricke-Galindo",
+      "doi-asserted-by": "publisher",
+      "first-page": "949413",
+      "journal-title": "Front Immunol",
+      "key": "2590_CR13",
+      "unstructured": "Fricke-Galindo I, Martinez-Morales A, Chavez-Galan L, Ocana-Guzman R, Buendia-Roldan I, Perez-Rubio G, Hernandez-Zenteno RJ, Veronica-Aguilar A, Alarcon-Dionet A, Aguilar-Duran H, Gutierrez-Perez IA, Zaragoza-Garcia O, Alanis-Ponce J, Camarena A, Bautista-Becerril B, Nava-Quiroz KJ, Mejia M, Guzman-Guzman IP, Falfan-Valencia R (2022) IFNAR2 relevance in the clinical outcome of individuals with severe COVID-19. Front Immunol 13:949413. https://doi.org/10.3389/fimmu.2022.949413",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41591-021-01310-z",
+      "author": "L Gaziano",
+      "doi-asserted-by": "publisher",
+      "first-page": "668",
+      "journal-title": "Nat Med",
+      "key": "2590_CR14",
+      "unstructured": "Gaziano L, Giambartolomei C, Pereira AC, Gaulton A, Posner DC, Swanson SA, Ho YL, Iyengar SK, Kosik NM, Vujkovic M, Gagnon DR, Bento AP, Barrio-Hernandez I, Ronnblom L, Hagberg N, Lundtoft C, Langenberg C, Pietzner M, Valentine D, Gustincich S, Tartaglia GG, Allara E, Surendran P, Burgess S, Zhao JH, Peters JE, Prins BP, Angelantonio ED, Devineni P, Shi Y, Lynch KE, DuVall SL, Garcon H, Thomann LO, Zhou JJ, Gorman BR, Huffman JE, O’Donnell CJ, Tsao PS, Beckham JC, Pyarajan S, Muralidhar S, Huang GD, Ramoni R, Beltrao P, Danesh J, Hung AM, Chang KM, Sun YV, Joseph J, Leach AR, Edwards TL, Cho K, Gaziano JM, Butterworth AS, Casas JP, Initiative VAMVPC-S (2021) Actionable druggable genome-wide Mendelian randomization identifies repurposing opportunities for COVID-19. Nat Med 27:668–676. https://doi.org/10.1038/s41591-021-01310-z",
+      "volume": "27",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1126/science.aaz1776",
+      "author": "GTEx Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "1318",
+      "journal-title": "Science",
+      "key": "2590_CR15",
+      "unstructured": "GTEx Consortium (2020) The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science 369:1318–1330. https://doi.org/10.1126/science.aaz1776",
+      "volume": "369",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00439-021-02264-5",
+      "author": "AI Hernandez Cordero",
+      "doi-asserted-by": "publisher",
+      "first-page": "969",
+      "journal-title": "Hum Genet",
+      "key": "2590_CR16",
+      "unstructured": "Hernandez Cordero AI, Li X, Milne S, Yang CX, Bosse Y, Joubert P, Timens W, van den Berge M, Nickle D, Hao K, Sin DD (2021) Multi-omics highlights ABO plasma protein as a causal risk factor for COVID-19. Hum Genet 140:969–979. https://doi.org/10.1007/s00439-021-02264-5",
+      "volume": "140",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/2021.09.03.21262975",
+      "author": "M Kanai",
+      "doi-asserted-by": "publisher",
+      "journal-title": "MedRxiv",
+      "key": "2590_CR17",
+      "unstructured": "Kanai M, Ulirsch JC, Karjalainen J, Kurki M, Karczewski KJ, Fauman E, Wang QS, Jacobs H, Aguet F, Ardlie KG, Kerimov N, Alasoo K, Benner C, Ishigaki K, Sakaue S, Reilly S, Kamatani Y, Matsuda K, Palotie A, Neale BM, Tewhey R, Sabeti PC, Okada Y, Daly MJ, Finucane HK (2021) Insights from complex trait fine-mapping across diverse populations. MedRxiv. https://doi.org/10.1101/2021.09.03.21262975",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.xgen.2022.100210",
+      "author": "M Kanai",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cell Genom",
+      "key": "2590_CR18",
+      "unstructured": "Kanai M, Elzur R, Zhou W, Global Biobank Meta-analysis I, Daly MJ, Finucane HK (2022) Meta-analysis fine-mapping is often miscalibrated at single-variant resolution. Cell Genom. https://doi.org/10.1016/j.xgen.2022.100210",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41586-022-04576-6",
+      "author": "A Kousathanas",
+      "doi-asserted-by": "publisher",
+      "first-page": "97",
+      "journal-title": "Nature",
+      "key": "2590_CR19",
+      "unstructured": "Kousathanas A, Pairo-Castineira E, Rawlik K, Stuckey A, Odhams CA, Walker S, Russell CD, Malinauskas T, Wu Y, Millar J, Shen X, Elliott KS, Griffiths F, Oosthuyzen W, Morrice K, Keating S, Wang B, Rhodes D, Klaric L, Zechner M, Parkinson N, Siddiq A, Goddard P, Donovan S, Maslove D, Nichol A, Semple MG, Zainy T, Maleady-Crowe F, Todd L, Salehi S, Knight J, Elgar G, Chan G, Arumugam P, Patch C, Rendon A, Bentley D, Kingsley C, Kosmicki JA, Horowitz JE, Baras A, Abecasis GR, Ferreira MAR, Justice A, Mirshahi T, Oetjens M, Rader DJ, Ritchie MD, Verma A, Fowler TA, Shankar-Hari M, Summers C, Hinds C, Horby P, Ling L, McAuley D, Montgomery H, Openshaw PJM, Elliott P, Walsh T, Tenesa A, Oi G, Me I, Initiative C-HG, Fawkes A, Murphy L, Rowan K, Ponting CP, Vitart V, Wilson JF, Yang J, Bretherick AD, Scott RH, Hendry SC, Moutsianas L, Law A, Caulfield MJ, Baillie JK (2022) Whole-genome sequencing reveals host factors underlying critical COVID-19. Nature 607:97–103. https://doi.org/10.1038/s41586-022-04576-6",
+      "volume": "607",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/jmv.28162",
+      "author": "S Krishnamoorthy",
+      "doi-asserted-by": "publisher",
+      "first-page": "e28162",
+      "journal-title": "J Med Virol",
+      "key": "2590_CR20",
+      "unstructured": "Krishnamoorthy S, Li GH, Cheung CL (2023) Transcriptome-wide summary data-based Mendelian randomization analysis reveals 38 novel genes associated with severe COVID-19. J Med Virol 95:e28162. https://doi.org/10.1002/jmv.28162",
+      "volume": "95",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/s41467-021-27674-x",
+      "author": "R Kundu",
+      "doi-asserted-by": "publisher",
+      "first-page": "80",
+      "journal-title": "Nat Commun",
+      "key": "2590_CR21",
+      "unstructured": "Kundu R, Narean JS, Wang L, Fenn J, Pillay T, Fernandez ND, Conibear E, Koycheva A, Davies M, Tolosa-Wright M, Hakki S, Varro R, McDermott E, Hammett S, Cutajar J, Thwaites RS, Parker E, Rosadas C, McClure M, Tedder R, Taylor GP, Dunning J, Lalvani A (2022) Cross-reactive memory T cells associate with protection against SARS-CoV-2 infection in COVID-19 contacts. Nat Commun 13:80. https://doi.org/10.1038/s41467-021-27674-x",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/hmg/ddy091",
+      "author": "M Lamontagne",
+      "doi-asserted-by": "publisher",
+      "first-page": "1819",
+      "journal-title": "Hum Mol Genet",
+      "key": "2590_CR22",
+      "unstructured": "Lamontagne M, Berube JC, Obeidat M, Cho MH, Hobbs BD, Sakornsakolpat P, de Jong K, Boezen HM, Nickle D, Hao K, Timens W, van den Berge M, Joubert P, Laviolette M, Sin DD, Pare PD, Bosse Y, International CGC (2018) Leveraging lung tissue transcriptome to uncover candidate causal genes in COPD genetic associations. Hum Mol Genet 27:1819–1829. https://doi.org/10.1093/hmg/ddy091",
+      "volume": "27",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fgene.2022.1073880",
+      "author": "P Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1073880",
+      "journal-title": "Front Genet",
+      "key": "2590_CR23",
+      "unstructured": "Li P, Ke Y, Shen W, Shi S, Wang Y, Lin K, Guo X, Wang C, Zhang Y, Zhao Z (2022) Targeted screening of genetic associations with COVID-19 susceptibility and severity. Front Genet 13:1073880. https://doi.org/10.3389/fgene.2022.1073880",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.jinf.2020.11.031",
+      "author": "D Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "126",
+      "journal-title": "J Infect",
+      "key": "2590_CR24",
+      "unstructured": "Liu D, Yang J, Feng B, Lu W, Zhao C, Li L (2021) Mendelian randomization analysis identified genes pleiotropically associated with the risk and prognosis of COVID-19. J Infect 82:126–132. https://doi.org/10.1016/j.jinf.2020.11.031",
+      "volume": "82",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1126/science.abc8511",
+      "author": "D Mathew",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Science",
+      "key": "2590_CR25",
+      "unstructured": "Mathew D, Giles JR, Baxter AE, Oldridge DA, Greenplate AR, Wu JE, Alanio C, Kuri-Cervantes L, Pampena MB, D’Andrea K, Manne S, Chen Z, Huang YJ, Reilly JP, Weisman AR, Ittner CAG, Kuthuru O, Dougherty J, Nzingha K, Han N, Kim J, Pattekar A, Goodwin EC, Anderson EM, Weirick ME, Gouma S, Arevalo CP, Bolton MJ, Chen F, Lacey SF, Ramage H, Cherry S, Hensley SE, Apostolidis SA, Huang AC, Vella LA, Unit UPCP, Betts MR, Meyer NJ, Wherry EJ (2020) Deep immune profiling of COVID-19 patients reveals distinct immunotypes with therapeutic implications. Science. https://doi.org/10.1126/science.abc8511",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41590-021-01104-y",
+      "author": "S Mehandru",
+      "doi-asserted-by": "publisher",
+      "first-page": "194",
+      "journal-title": "Nat Immunol",
+      "key": "2590_CR26",
+      "unstructured": "Mehandru S, Merad M (2022) Pathological sequelae of long-haul COVID. Nat Immunol 23:194–202. https://doi.org/10.1038/s41590-021-01104-y",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1126/science.abm8108",
+      "author": "M Merad",
+      "doi-asserted-by": "publisher",
+      "first-page": "1122",
+      "journal-title": "Science",
+      "key": "2590_CR27",
+      "unstructured": "Merad M, Blish CA, Sallusto F, Iwasaki A (2022) The immunology and immunopathology of COVID-19. Science 375:1122–1127. https://doi.org/10.1126/science.abm8108",
+      "volume": "375",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1101/2022.10.18.22281202",
+      "author": "T Nakanishi",
+      "doi-asserted-by": "publisher",
+      "journal-title": "MedRxiv",
+      "key": "2590_CR28",
+      "unstructured": "Nakanishi T, Farjoun Y, Willett J, Allen RJ, Guillen-Guio B, Zhou S, Richards JB (2022) Alternative splicing in the lung influences COVID-19 severity and respiratory diseases. MedRxiv. https://doi.org/10.1101/2022.10.18.22281202",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.chom.2020.03.021",
+      "author": "EZ Ong",
+      "doi-asserted-by": "publisher",
+      "first-page": "879",
+      "journal-title": "Cell Host Microbe",
+      "key": "2590_CR29",
+      "unstructured": "Ong EZ, Chan YFZ, Leong WY, Lee NMY, Kalimuddin S, Haja Mohideen SM, Chan KS, Tan AT, Bertoletti A, Ooi EE, Low JGH (2020) A dynamic immune response shapes COVID-19 progression. Cell Host Microbe 27:879–882. https://doi.org/10.1016/j.chom.2020.03.021",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41586-020-03065-y",
+      "author": "E Pairo-Castineira",
+      "doi-asserted-by": "publisher",
+      "first-page": "92",
+      "journal-title": "Nature",
+      "key": "2590_CR30",
+      "unstructured": "Pairo-Castineira E, Clohisey S, Klaric L, Bretherick AD, Rawlik K, Pasko D, Walker S, Parkinson N, Fourman MH, Russell CD, Furniss J, Richmond A, Gountouna E, Wrobel N, Harrison D, Wang B, Wu Y, Meynert A, Griffiths F, Oosthuyzen W, Kousathanas A, Moutsianas L, Yang Z, Zhai R, Zheng C, Grimes G, Beale R, Millar J, Shih B, Keating S, Zechner M, Haley C, Porteous DJ, Hayward C, Yang J, Knight J, Summers C, Shankar-Hari M, Klenerman P, Turtle L, Ho A, Moore SC, Hinds C, Horby P, Nichol A, Maslove D, Ling L, McAuley D, Montgomery H, Walsh T, Pereira AC, Renieri A, Gen OI, Investigators IC, Initiative C-HG, Me I, Gen CI, Shen X, Ponting CP, Fawkes A, Tenesa A, Caulfield M, Scott R, Rowan K, Murphy L, Openshaw PJM, Semple MG, Law A, Vitart V, Wilson JF, Baillie JK (2021) Genetic mechanisms of critical illness in COVID-19. Nature 591:92–98. https://doi.org/10.1038/s41586-020-03065-y",
+      "volume": "591",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/2022.03.07.22271833",
+      "author": "E Pairo-Castineira",
+      "doi-asserted-by": "publisher",
+      "journal-title": "MedRxiv",
+      "key": "2590_CR31",
+      "unstructured": "Pairo-Castineira E, Rawlik K, Klaric L, Kousathanas A, Richmond A, Millar J, Russell CD, Malinauskas T, Thwaites R, Stuckey A, Odhams CA, Walker S, Griffiths F, Oosthuyzen W, Morrice K, Keating S, Nichol A, Semple MG, Knight J, Shankar-Hari M, Summers C, Hinds C, Horby P, Ling L, McAuley D, Montgomery H, Openshaw PJM, Walsh T, Tenesa A, Scott RH, Caulfield MJ, Moutsianas L, Ponting CP, Wilson JF, Vitart V, Pereira AC, Luchessi A, Parra E, Cruz-Guerrero R, Carracedo A, Fawkes A, Murphy L, Rowan K, Law A, Hendry SC, Baillie JK (2022) GWAS and meta-analysis identifies multiple new genetic mechanisms underlying severe Covid-19. MedRxiv. https://doi.org/10.1101/2022.03.07.22271833",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41467-022-31999-6",
+      "author": "M Pietzner",
+      "doi-asserted-by": "publisher",
+      "first-page": "4484",
+      "journal-title": "Nat Commun",
+      "key": "2590_CR32",
+      "unstructured": "Pietzner M, Chua RL, Wheeler E, Jechow K, Willett JDS, Radbruch H, Trump S, Heidecker B, Zeberg H, Heppner FL, Eils R, Mall MA, Richards JB, Sander LE, Lehmann I, Lukassen S, Wareham NJ, Conrad C, Langenberg C (2022) ELF5 is a potential respiratory epithelial cell-specific risk gene for severe COVID-19. Nat Commun 13:4484. https://doi.org/10.1038/s41467-022-31999-6",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq419",
+      "author": "RJ Pruim",
+      "doi-asserted-by": "publisher",
+      "first-page": "2336",
+      "journal-title": "Bioinformatics",
+      "key": "2590_CR33",
+      "unstructured": "Pruim RJ, Welch RP, Sanna S, Teslovich TM, Chines PS, Gliedt TP, Boehnke M, Abecasis GR, Willer CJ (2010) LocusZoom: regional visualization of genome-wide association scan results. Bioinformatics 26:2336–2337. https://doi.org/10.1093/bioinformatics/btq419",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1126/science.abg0928",
+      "author": "HE Randolph",
+      "doi-asserted-by": "publisher",
+      "first-page": "1127",
+      "journal-title": "Science",
+      "key": "2590_CR34",
+      "unstructured": "Randolph HE, Fiege JK, Thielen BK, Mickelson CK, Shiratori M, Barroso-Batista J, Langlois RA, Barreiro LB (2021) Genetic ancestry effects on the response to viral infection are pervasive but cell type specific. Science 374:1127–1133. https://doi.org/10.1126/science.abg0928",
+      "volume": "374",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s42003-022-03820-z",
+      "author": "G Rocheleau",
+      "doi-asserted-by": "publisher",
+      "first-page": "849",
+      "journal-title": "Commun Biol",
+      "key": "2590_CR35",
+      "unstructured": "Rocheleau G, Forrest IS, Duffy A, Bafna S, Dobbyn A, Verbanck M, Won HH, Jordan DM, Do R (2022) A tissue-level phenome-wide network map of colocalized genes and phenotypes in the UK Biobank. Commun Biol 5:849. https://doi.org/10.1038/s42003-022-03820-z",
+      "volume": "5",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41467-021-26888-3",
+      "author": "BJ Schmiedel",
+      "doi-asserted-by": "publisher",
+      "first-page": "6760",
+      "journal-title": "Nat Commun",
+      "key": "2590_CR36",
+      "unstructured": "Schmiedel BJ, Rocha J, Gonzalez-Colin C, Bhattacharyya S, Madrigal A, Ottensmeier CH, Ay F, Chandra V, Vijayanand P (2021) COVID-19 genetic risk variants are associated with expression of multiple genes in diverse immune cell types. Nat Commun 12:6760. https://doi.org/10.1038/s41467-021-26888-3",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2020283",
+      "author": "GG Severe Covid",
+      "doi-asserted-by": "publisher",
+      "first-page": "1522",
+      "journal-title": "N Engl J Med",
+      "key": "2590_CR37",
+      "unstructured": "Severe Covid GG, Ellinghaus D, Degenhardt F, Bujanda L, Buti M, Albillos A, Invernizzi P, Fernandez J, Prati D, Baselli G, Asselta R, Grimsrud MM, Milani C, Aziz F, Kassens J, May S, Wendorff M, Wienbrandt L, Uellendahl-Werth F, Zheng T, Yi X, de Pablo R, Chercoles AG, Palom A, Garcia-Fernandez AE, Rodriguez-Frias F, Zanella A, Bandera A, Protti A, Aghemo A, Lleo A, Biondi A, Caballero-Garralda A, Gori A, Tanck A, Carreras Nolla A, Latiano A, Fracanzani AL, Peschuck A, Julia A, Pesenti A, Voza A, Jimenez D, Mateos B, Nafria Jimenez B, Quereda C, Paccapelo C, Gassner C, Angelini C, Cea C, Solier A, Pestana D, Muniz-Diaz E, Sandoval E, Paraboschi EM, Navas E, Garcia Sanchez F, Ceriotti F, Martinelli-Boneschi F, Peyvandi F, Blasi F, Tellez L, Blanco-Grau A, Hemmrich-Stanisak G, Grasselli G, Costantino G, Cardamone G, Foti G, Aneli S, Kurihara H, ElAbd H, My I, Galvan-Femenia I, Martin J, Erdmann J, Ferrusquia-Acosta J, Garcia-Etxebarria K, Izquierdo-Sanchez L, Bettini LR, Sumoy L, Terranova L, Moreira L, Santoro L, Scudeller L, Mesonero F, Roade L, Ruhlemann MC, Schaefer M, Carrabba M, Riveiro-Barciela M, Figuera Basso ME, Valsecchi MG, Hernandez-Tejero M, Acosta-Herrera M, D’Angio M, Baldini M, Cazzaniga M, Schulzky M, Cecconi M, Wittig M et al (2020) Genomewide association study of severe Covid-19 with respiratory failure. N Engl J Med 383:1522–1534. https://doi.org/10.1056/NEJMoa2020283",
+      "volume": "383",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.imbio.2022.152184",
+      "author": "M Sharif-Zak",
+      "doi-asserted-by": "publisher",
+      "first-page": "152184",
+      "journal-title": "Immunobiology",
+      "key": "2590_CR38",
+      "unstructured": "Sharif-Zak M, Abbasi-Jorjandi M, Asadikaram G, Ghoreshi ZA, Rezazadeh-Jabalbarzi M, Afsharipur A, Rashidinejad H, Khajepour F, Jafarzadeh A, Arefinia N, Kheyrkhah A, Abolhassani M (2022) CCR2 and DPP9 expression in the peripheral blood of COVID-19 patients: Influences of the disease severity and gender. Immunobiology 227:152184. https://doi.org/10.1016/j.imbio.2022.152184",
+      "volume": "227",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1001/jama.2021.18236",
+      "author": "VW Skrivankova",
+      "doi-asserted-by": "publisher",
+      "first-page": "1614",
+      "journal-title": "JAMA",
+      "key": "2590_CR39",
+      "unstructured": "Skrivankova VW, Richmond RC, Woolf BAR, Yarmolinsky J, Davies NM, Swanson SA, VanderWeele TJ, Higgins JPT, Timpson NJ, Dimou N, Langenberg C, Golub RM, Loder EW, Gallo V, Tybjaerg-Hansen A, Davey Smith G, Egger M, Richards JB (2021) Strengthening the reporting of observational studies in epidemiology using mendelian randomization: the STROBE-MR statement. JAMA 326:1614–1621. https://doi.org/10.1001/jama.2021.18236",
+      "volume": "326",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "author": "GD Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Int J Epidemiol",
+      "key": "2590_CR40",
+      "unstructured": "Smith GD, Ebrahim S (2003) “Mendelian randomization”: can genetic epidemiology contribute to understanding environmental determinants of disease? Int J Epidemiol 32:1–22. https://doi.org/10.1093/ije/dyg070",
+      "volume": "32",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01066-3",
+      "author": "B Soskic",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Genet",
+      "key": "2590_CR41",
+      "unstructured": "Soskic B, Cano-Gamez E, Smyth DJ, Ambridge K, Ke Z, Matte JC, Bossini-Castillo L, Kaplanis J, Ramirez-Navarro L, Lorenc A, Nakic N, Esparza-Gordillo J, Rowan W, Wille D, Tough DF, Bronson PG, Trynka G (2022) Immune disease risk variants regulate gene expression dynamics during CD4(+) T cell activation. Nat Genet. https://doi.org/10.1038/s41588-022-01066-3",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fimmu.2021.742941",
+      "author": "LY Tan",
+      "doi-asserted-by": "publisher",
+      "first-page": "742941",
+      "journal-title": "Front Immunol",
+      "key": "2590_CR42",
+      "unstructured": "Tan LY, Komarasamy TV, Rmt Balasubramaniam V (2021) Hyperinflammatory immune response and COVID-19: A double edged sword. Front Immunol 12:742941. https://doi.org/10.3389/fimmu.2021.742941",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13073-021-00904-z",
+      "author": "L Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "83",
+      "journal-title": "Genome Med",
+      "key": "2590_CR43",
+      "unstructured": "Wang L, Balmat TJ, Antonia AL, Constantine FJ, Henao R, Burke TW, Ingham A, McClain MT, Tsalik EL, Ko ER, Ginsburg GS, DeLong MR, Shen X, Woods CW, Hauser ER, Ko DC (2021) An atlas connecting shared genetic architecture of human diseases and molecular phenotypes provides insight into COVID-19 susceptibility. Genome Med 13:83. https://doi.org/10.1186/s13073-021-00904-z",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1010253",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1010253",
+      "journal-title": "PLoS Genet",
+      "key": "2590_CR44",
+      "unstructured": "Wang Y, Guga S, Wu K, Khaw Z, Tzoumkas K, Tombleson P, Comeau ME, Langefeld CD, Cunninghame Graham DS, Morris DL, Vyse TJ (2022) COVID-19 and systemic lupus erythematosus genetics: A balance between autoimmune disease risk and protection against infection. PLoS Genet 18:e1010253. https://doi.org/10.1371/journal.pgen.1010253",
+      "volume": "18",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41436-021-01243-5",
+      "author": "L Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2076",
+      "journal-title": "Genet Med",
+      "key": "2590_CR45",
+      "unstructured": "Wu L, Zhu J, Liu D, Sun Y, Wu C (2021) An integrative multiomics analysis identifies putative causal genes for COVID-19 severity. Genet Med 23:2076–2086. https://doi.org/10.1038/s41436-021-01243-5",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s42255-023-00742-w",
+      "author": "S Yoshiji",
+      "doi-asserted-by": "publisher",
+      "first-page": "248",
+      "journal-title": "Nat Metab",
+      "key": "2590_CR46",
+      "unstructured": "Yoshiji S, Butler-Laporte G, Lu T, Willett JDS, Su CY, Nakanishi T, Morrison DR, Chen Y, Liang K, Hultstrom M, Ilboudo Y, Afrasiabi Z, Lan S, Duggan N, DeLuca C, Vaezi M, Tselios C, Xue X, Bouab M, Shi F, Laurent L, Munter HM, Afilalo M, Afilalo J, Mooser V, Timpson NJ, Zeberg H, Zhou S, Forgetta V, Farjoun Y, Richards JB (2023) Proteome-wide Mendelian randomization implicates nephronectin as an actionable mediator of the effect of obesity on COVID-19 severity. Nat Metab 5:248–264. https://doi.org/10.1038/s42255-023-00742-w",
+      "volume": "5",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0682-6",
+      "author": "J Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1122",
+      "journal-title": "Nat Genet",
+      "key": "2590_CR47",
+      "unstructured": "Zheng J, Haberland V, Baird D, Walker V, Haycock PC, Hurle MR, Gutteridge A, Erola P, Liu Y, Luo S, Robinson J, Richardson TG, Staley JR, Elsworth B, Burgess S, Sun BB, Danesh J, Runz H, Maranville JC, Martin HM, Yarmolinsky J, Laurin C, Holmes MV, Liu JZ, Estrada K, Santos R, McCarthy L, Waterworth D, Nelson MR, Smith GD, Butterworth AS, Hemani G, Scott RA, Gaunt TR (2020) Phenome-wide Mendelian randomization mapping the influence of the plasma proteome on complex diseases. Nat Genet 52:1122–1131. https://doi.org/10.1038/s41588-020-0682-6",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41591-021-01281-1",
+      "author": "S Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "659",
+      "journal-title": "Nat Med",
+      "key": "2590_CR48",
+      "unstructured": "Zhou S, Butler-Laporte G, Nakanishi T, Morrison DR, Afilalo J, Afilalo M, Laurent L, Pietzner M, Kerrison N, Zhao K, Brunet-Ratnasingham E, Henry D, Kimchi N, Afrasiabi Z, Rezk N, Bouab M, Petitjean L, Guzman C, Xue X, Tselios C, Vulesevic B, Adeleye O, Abdullah T, Almamlouk N, Chen Y, Chasse M, Durand M, Paterson C, Normark J, Frithiof R, Lipcsey M, Hultstrom M, Greenwood CMT, Zeberg H, Langenberg C, Thysell E, Pollak M, Mooser V, Forgetta V, Kaufmann DE, Richards JB (2021) A Neanderthal OAS1 isoform protects individuals of European ancestry against COVID-19 susceptibility and severity. Nat Med 27:659–667. https://doi.org/10.1038/s41591-021-01281-1",
+      "volume": "27",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 48,
+  "references-count": 48,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2023.05.29.23290694",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-023-02590-w"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum. Genet."
+  ],
+  "source": "Crossref",
+  "title": [
+    "Colocalization of expression transcripts with COVID-19 outcomes is rare across cell states, cell types and organs"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

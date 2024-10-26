@@ -1,0 +1,442 @@
+{
+  "DOI": "10.1002/gepi.22491",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22491",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eTranscriptome‐Wide Association Studies (TWASs) have become increasingly popular in identifying genes (or other endophenotypes or exposures) associated with complex traits. In TWAS, one first builds a predictive model for gene expressions using an expression quantitative trait loci (eQTL) data set in stage 1, then tests the association between the predicted gene expression and a trait based on a large, independent genome‐wide association study (GWAS) data set in stage 2. However, since the sample size of the eQTL data set is usually small and the coefficient of multiple determination (i.e., ) of the model for many genes is also small, a question of interest is to what extent these factors affect the statistical power of TWAS. In addition, in contrast to a standard (univariate) TWAS (UV‐TWAS) considering only a single gene at a time, multivariate TWAS (MV‐TWAS) methods have recently emerged to account for the effects of multiple genes, or a gene's nonlinear effects, simultaneously. With the absence of the power analysis for these MV‐TWAS methods, it would be of interest to investigate whether one can gain or lose power by using the newly proposed MV‐TWAS instead of UV‐TWAS. In this paper, we first outline a general method for sample size/power calculations for two‐sample TWAS, then use real data—the Alzheimer's Disease Neuroimaging Initiative (ADNI) expression quantitative trait loci (eQTL) data and the Genotype‐Tissue Expression (GTEx) eQTL data for stage 1, the International Genomics of Alzheimer's Project Alzheimer's disease (AD) GWAS summary data and UK Biobank (UKB) individual‐level data for stage 2—to empirically address these questions. Our most important conclusions are the following. First, a sample size of a few thousands (~8000) would suffice in stage 1, where the power of TWAS would be more determined by \u003cjats:italic\u003ecis\u003c/jats:italic\u003e‐heritability of gene expression. Second, as in the general case of simple regression versus multiple regression, the power of MV‐TWAS may be higher or lower than that of UV‐TWAS, depending on the specific relationships among the GWAS trait and multiple genes (or linear and nonlinear terms of the same gene's expression levels), such as their correlations and effect sizes. Interestingly, several top genes with large power gains in MV‐TWAS (over that in UV‐TWAS) were known to be (and in our data more significantly) associated with AD. We also reached similar conclusions in an application to the GTEx whole blood gene expression data and UKB GWAS data of high‐density lipoprotein cholesterol. The proposed method and the conclusions are expected to be useful in planning and designing future TWAS and other related studies (e.g., Proteome‐ or Metabolome‐Wide Association Studies) when determining the sample sizes for the two stages.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22491"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2022-02-09"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-05-31"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-06-29"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "School of Statistics University of Minnesota Minneapolis Minnesota USA"
+        },
+        {
+          "name": "University of Minnesota Division of Biostatistics, School of Public Health Minneapolis Minnesota USA"
+        }
+      ],
+      "family": "He",
+      "given": "Ruoyu",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "University of Minnesota Division of Biostatistics, School of Public Health Minneapolis Minnesota USA"
+        }
+      ],
+      "family": "Xue",
+      "given": "Haoran",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1159-0582",
+      "affiliation": [
+        {
+          "name": "University of Minnesota Division of Biostatistics, School of Public Health Minneapolis Minnesota USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Pan",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "for the Alzheimer's Disease Neuroimaging Initiative",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        29
+      ]
+    ],
+    "date-time": "2022-06-29T09:04:47Z",
+    "timestamp": 1656493487000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        22
+      ]
+    ],
+    "date-time": "2023-08-22T11:09:34Z",
+    "timestamp": 1692702574000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "R01AG065636",
+        "R01HL116720",
+        "RF1AG067924",
+        "U01AG073079"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        22
+      ]
+    ],
+    "date-time": "2024-04-22T19:54:49Z",
+    "timestamp": 1713815689424
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        29
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            29
+          ]
+        ],
+        "date-time": "2022-06-29T00:00:00Z",
+        "timestamp": 1656460800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22491",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22491",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22491",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "572-588",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        29
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        29
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1080/01621459.1996.10476902",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1101/2022.04.13.487655",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_3_1",
+      "unstructured": "Baranger D. A. Hatoum A. S. Polimanti R. Gelernter J. Edenberg H. J. Bogdan R. \u0026Agrawal A.(2022).Multi‐omics analyses cannot identify true‐positive novel associations from underpowered genome‐wide association studies of four brain‐related traits. bioRxiv.https://doi.org/10.1101/2022.04.13.487655"
+    },
+    {
+      "DOI": "10.1023/A:1010950718922",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyt179",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyu005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1177/0962280215597579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwu283",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009405",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1038/mp.2013.1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22284",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1009266",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1001/archneur.56.9.1133",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyt110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1214/aos/1013203451",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1126/science.aaz1776",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1038/ng.3506",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1162/rest_a_00011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1016/j.neuroimage.2020.117347",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1046/j.0106-9543.2002.01629.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddac015",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_22_1",
+      "unstructured": "Lin Z. Xue H. Malakhov M. M. Knutson K. A. \u0026Pan W.(2022).Accounting for nonlinear effects of gene expression identifies additional associated genes in transcriptome‐wide association studies.Human Molecular Genetics. Advance online publication.https://doi.org/10.1093/hmg/ddac015"
+    },
+    {
+      "DOI": "10.1097/maj.0000000000000416",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1016/j.xhgg.2020.100019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyq151",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-10936-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1007/s11682-013-9262-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1002272",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1212/wnl.0000000000200116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1142/9789813235533_0021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1007/s12017-020-08612-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006423",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22274",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0087017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-10945-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    }
+  ],
+  "reference-count": 35,
+  "references-count": 35,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22491"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Statistical power of transcriptome‐wide association studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

@@ -1,0 +1,538 @@
+{
+  "DOI": "10.1002/gepi.22024",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22024",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eBy jointly analyzing multiple variants within a gene, instead of one at a time, gene‐based multiple regression can improve power, robustness, and interpretation in genetic association analysis. We investigate multiple linear combination (MLC) test statistics for analysis of common variants under realistic trait models with linkage disequilibrium (LD) based on HapMap Asian haplotypes. MLC is a directional test that exploits LD structure in a gene to construct clusters of closely correlated variants recoded such that the majority of pairwise correlations are positive. It combines variant effects within the same cluster linearly, and aggregates cluster‐specific effects in a quadratic sum of squares and cross‐products, producing a test statistic with reduced degrees of freedom (\u003cjats:italic\u003edf\u003c/jats:italic\u003e) equal to the number of clusters. By simulation studies of 1000 genes from across the genome, we demonstrate that MLC is a well‐powered and robust choice among existing methods across a broad range of gene structures. Compared to minimum \u003cjats:italic\u003eP\u003c/jats:italic\u003e‐value, variance‐component, and principal‐component methods, the mean power of MLC is never much lower than that of other methods, and can be higher, particularly with multiple causal variants. Moreover, the variation in gene‐specific MLC test size and power across 1000 genes is less than that of other methods, suggesting it is a complementary approach for discovery in genome‐wide analysis. The cluster construction of the MLC test statistics helps reveal within‐gene LD structure, allowing interpretation of clustered variants as haplotypic effects, while multiple regression helps to distinguish direct and indirect associations.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22024"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics Education Seoul National University  Seoul South Korea"
+        },
+        {
+          "name": "Interdisciplinary Program in Bioinformatics Seoul National University  Seoul South Korea"
+        }
+      ],
+      "family": "Yoo",
+      "given": "Yun Joo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistical Sciences University of Toronto  Toronto Canada"
+        },
+        {
+          "name": "Division of Biostatistics Dalla Lana School of Public Health University of Toronto  Toronto Canada"
+        }
+      ],
+      "family": "Sun",
+      "given": "Lei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Prosserman Centre for Health Research, Lunenfeld‐Tanenbaum Research Institute Sinai Health System  Toronto Canada"
+        }
+      ],
+      "family": "Poirier",
+      "given": "Julia G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Dalla Lana School of Public Health University of Toronto  Toronto Canada"
+        },
+        {
+          "name": "Program in Genetics and Genome Biology Hospital for Sick Children Research Institute  Toronto Canada"
+        }
+      ],
+      "family": "Paterson",
+      "given": "Andrew D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Dalla Lana School of Public Health University of Toronto  Toronto Canada"
+        },
+        {
+          "name": "Prosserman Centre for Health Research, Lunenfeld‐Tanenbaum Research Institute Sinai Health System  Toronto Canada"
+        }
+      ],
+      "family": "Bull",
+      "given": "Shelley B.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        25
+      ]
+    ],
+    "date-time": "2016-11-25T07:18:47Z",
+    "timestamp": 1480058327000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2023-10-05T23:19:53Z",
+    "timestamp": 1696547993000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100003725",
+      "award": [
+        "NRF‐2012R1A1A3012428",
+        "NRF‐2015R1A1A3A04001269",
+        "NRF‐2015R1A2A2A01006885"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Research Foundation of Korea"
+    },
+    {
+      "DOI": "10.13039/501100000024",
+      "award": [
+        "MOP‐84287"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Canadian Institutes of Health Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        7
+      ]
+    ],
+    "date-time": "2024-03-07T06:47:37Z",
+    "timestamp": 1709794057347
+  },
+  "is-referenced-by-count": 12,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        25
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            25
+          ]
+        ],
+        "date-time": "2016-11-25T00:00:00Z",
+        "timestamp": 1480032000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22024",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22024",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "108-121",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        25
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        25
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.2337/db07-1059",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-3-s7-s127",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.08.032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21746",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21625",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bth457",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "key": "e_1_2_9_9_1",
+      "unstructured": "Bull S. Yoo Y. \u0026Sun L.(2009).Regression multi‐marker tests for gene‐based genetic association analysis; (Abstract #1698). Presented at the 59th annual meeting of the American Society of Human Genetics October 25 2009 Honolulu Hawaii. Retrieved fromhttp://www.ashg.org/2009meeting/abstracts/fulltext/f10648.htm"
+    },
+    {
+      "DOI": "10.1086/381000",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20330",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "DOI": "10.1214/13-STS456",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1056/NEJM199309303291401",
+      "article-title": "The effect of intensive treatment of diabetes on the development and progression of long‐term complications in insulin‐dependent diabetes mellitus",
+      "author": "Diabetes Control and Complications Trial Research Group (DCCT)",
+      "doi-asserted-by": "crossref",
+      "first-page": "977",
+      "journal-title": "New England Journal of Medicine",
+      "key": "e_1_2_9_14_1",
+      "volume": "329",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1016/j.amjcard.2008.02.052",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_15_1"
+    },
+    {
+      "DOI": "10.2337/diacare.22.1.99",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20219",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2006.00551.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1159/000288704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.04.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_20_1"
+    },
+    {
+      "DOI": "10.1016/S0065-2660(07)00417-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_21_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2007.10.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9469.2005.00489.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2010.62",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_28_1"
+    },
+    {
+      "DOI": "10.1086/423901",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_29_1"
+    },
+    {
+      "DOI": "10.2307/2531158",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_30_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20402",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "DOI": "10.1534/genetics.114.165035",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_32_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.05.018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_33_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005103",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_34_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0062161",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_35_1"
+    },
+    {
+      "DOI": "10.2307/2531989",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_36_1"
+    },
+    {
+      "DOI": "10.1126/science.273.5281.1516",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_37_1"
+    },
+    {
+      "DOI": "10.1086/429838",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_38_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1988.10478642",
+      "article-title": "Analysis of repeated ordered categorical outcomes with possibly missing observations and time‐dependent covariates",
+      "author": "Stram, D. O.",
+      "doi-asserted-by": "crossref",
+      "first-page": "631",
+      "journal-title": "Journal of the American Statistical Association",
+      "key": "e_1_2_9_39_1",
+      "volume": "83",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.3389/fgene.2013.00252",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_40_1"
+    },
+    {
+      "DOI": "10.1038/nature09270",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_41_1"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "article-title": "Genome‐wide association study of 14,000 cases of seven common diseases and 3,000 shared controls",
+      "author": "The Wellcome Trust Case‐Control Consortium (WTCCC)",
+      "doi-asserted-by": "crossref",
+      "first-page": "661",
+      "journal-title": "Nature",
+      "key": "e_1_2_9_42_1",
+      "volume": "447",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1086/511312",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_43_1"
+    },
+    {
+      "article-title": "Assessing the effects of multiple markers in genetic association studies",
+      "author": "Wang X.",
+      "first-page": "66",
+      "journal-title": "Editorial, Front Genet",
+      "key": "e_1_2_9_44_1",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/1471-2156-14-17",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_45_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.03.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_46_1"
+    },
+    {
+      "DOI": "10.1038/ng.2797",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_47_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_48_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_49_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003379",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_50_1"
+    },
+    {
+      "DOI": "10.1038/ng.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_51_1"
+    },
+    {
+      "DOI": "10.1155/2015/852341",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_52_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2013.00233",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_53_1"
+    },
+    {
+      "key": "e_1_2_9_54_1",
+      "unstructured": "Yoo Y. J. Sun L. Poirier J. \u0026Bull S. B.(2014).Multi‐bin multi‐variant tests for gene‐based linear regression analysis of genetic association. Technical Report Series Department of Statistical Sciences University of Toronto. Retrieved fromhttp://www.utstat.toronto.edu/wordpress/wp-content/uploads/2011/09/Multi-bin-multi-variant-tests-for-gene-based-linear-regression-analysis-of-genetic-association.pdf"
+    }
+  ],
+  "reference-count": 53,
+  "references-count": 53,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22024"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Multiple linear combination (MLC) regression tests for common variants adapted to linkage disequilibrium structure"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

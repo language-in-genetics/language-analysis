@@ -1,0 +1,512 @@
+{
+  "DOI": "10.1002/gepi.21869",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21869",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eGenomewide association studies (GWAS) sometimes identify loci at which both the number and identities of the underlying causal variants are ambiguous. In such cases, statistical methods that model effects of multiple single‐nucleotide polymorphisms (SNPs) simultaneously can help disentangle the observed patterns of association and provide information about how those SNPs could be prioritized for follow‐up studies. Current multi‐SNP methods, however, tend to assume that SNP effects are well captured by additive genetics; yet when genetic dominance is present, this assumption translates to reduced power and faulty prioritizations. We describe a statistical procedure for prioritizing SNPs at GWAS loci that efficiently models both additive and dominance effects. Our method, LLARRMA‐dawg, combines a group LASSO procedure for sparse modeling of multiple SNP effects with a resampling procedure based on fractional observation weights. It estimates for each SNP the robustness of association with the phenotype both to sampling variation and to competing explanations from other SNPs. In producing an SNP prioritization that best identifies underlying true signals, we show the following: our method easily outperforms a single‐marker analysis; when additive‐only signals are present, our joint model for additive and dominance is equivalent to or only slightly less powerful than modeling additive‐only effects; and when dominance signals are present, even in combination with substantial additive effects, our joint model is unequivocally more powerful than a model assuming additivity. We also describe how performance can be improved through calibrated randomized penalization, and discuss how dominance in ungenotyped SNPs can be incorporated through either heterozygote dosage or multiple imputation.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21869"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina at Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Lineberger Comprehensive Cancer Center University of North Carolina at Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Sabourin",
+      "given": "Jeremy",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lineberger Comprehensive Cancer Center University of North Carolina at Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Department of Statistics and Operations Research University of North Carolina at Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Department of Biostatistics University of North Carolina at Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Nobel",
+      "given": "Andrew B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina at Chapel Hill North Carolina United States of America"
+        },
+        {
+          "name": "Lineberger Comprehensive Cancer Center University of North Carolina at Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Valdar",
+      "given": "William",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2014,
+        11,
+        22
+      ]
+    ],
+    "date-time": "2014-11-22T01:25:41Z",
+    "timestamp": 1416619541000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2023-10-05T01:43:19Z",
+    "timestamp": 1696470199000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000057",
+      "award": [
+        "R01GM104125"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of General Medical Sciences"
+    },
+    {
+      "DOI": "10.13039/100000025",
+      "award": [
+        "R01MH101819"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Mental Health"
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "DMS-1310002"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    },
+    {
+      "name": "Lineberger Comprehensive Cancer Center, University of North Carolina - Chapel Hill"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        10
+      ]
+    ],
+    "date-time": "2024-01-10T08:01:15Z",
+    "timestamp": 1704873675443
+  },
+  "is-referenced-by-count": 17,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2014,
+        11,
+        21
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2014,
+            11,
+            21
+          ]
+        ],
+        "date-time": "2014-11-21T00:00:00Z",
+        "timestamp": 1416528000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21869",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21869",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.21869",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21869",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "77-88",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2014,
+        11,
+        21
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2014,
+        11,
+        21
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1093/hmg/ddp372",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20543",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21746",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-5-S9-S92",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1007/BF00058655",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.2307/2533961",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1007/978-3-642-20192-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20207",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "author": "Clyde M",
+      "first-page": "169",
+      "key": "e_1_2_7_11_1",
+      "volume-title": "Artificial Intelligence and Statistics",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.10.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1214/11-AOAS455",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20436",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20509",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1201/9781439800225",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21783",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.2009.00506.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "key": "e_1_2_7_21_1",
+      "unstructured": "LynchM WalshB.1998.Genetics and Analysis of Quantitative Traits. Sunderland MA:Sinauer Associates Inc."
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002655",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "article-title": "grplasso: fitting user specified models with Group Lasso penalty",
+      "author": "Meier L",
+      "first-page": "0.4",
+      "journal-title": "R package version",
+      "key": "e_1_2_7_23_1",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2010.00740.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "author": "Neale B",
+      "key": "e_1_2_7_25_1",
+      "volume-title": "Statistical genetics: gene mapping through linkage and association",
+      "year": "2008"
+    },
+    {
+      "article-title": "Approximate Bayesian inference with the weighted likelihood bootstrap",
+      "author": "Newton MA",
+      "first-page": "3",
+      "journal-title": "J Roy Stat Soc B",
+      "key": "e_1_2_7_26_1",
+      "volume": "56",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1086/324025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1038/ng.792",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddp135",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "key": "e_1_2_7_31_1",
+      "unstructured": "R Development Core Team.2012.R: A Language and Environment for Statistical Computing.Vienna Austria: R Foundation for Statistical Computing. ISBN3‐900051‐07‐0."
+    },
+    {
+      "DOI": "10.1214/aos/1176345338",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1086/502802",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1038/ng.2314",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1038/nrg2615",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1038/ng.694",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr341",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1038/nature09298",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1093/genetics/154.4.1839",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1534/genetics.109.100727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1038/ng1840",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21639",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_43_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21642",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.2337/db11-0985",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-S1-S18",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_47_1"
+    },
+    {
+      "DOI": "10.1038/ng2022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_48_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00532.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_49_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20552",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_50_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_51_1"
+    }
+  ],
+  "reference-count": 50,
+  "references-count": 50,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21869"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Fine‐Mapping Additive and Dominant SNP Effects Using Group‐LASSO and Fractional Resample Model Averaging"
+  ],
+  "type": "journal-article",
+  "volume": "39"
+}

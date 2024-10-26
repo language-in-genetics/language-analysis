@@ -1,0 +1,864 @@
+{
+  "DOI": "10.1007/s00439-023-02598-2",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-023-02598-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eCYP26B1 metabolizes retinoic acid in the developing embryo to regulate its levels. A limited number of individuals with pathogenic variants in \u003cjats:italic\u003eCYP26B1\u003c/jats:italic\u003e have been documented with a varied phenotypic spectrum, spanning from a severe manifestation involving skull anomalies, craniosynostosis, encephalocele, radio-humeral fusion, oligodactyly, and a narrow thorax, to a milder presentation characterized by craniosynostosis, restricted radio-humeral joint mobility, hearing loss, and intellectual disability. Here, we report two families with \u003cjats:italic\u003eCYP26B1\u003c/jats:italic\u003e-related phenotypes and describe the data obtained from functional studies of the variants. Exome and Sanger sequencing were used for variant identification in family 1 and family 2, respectively. Family 1 reflects a mild phenotype, which includes craniofacial dysmorphism with brachycephaly (without craniosynostosis), arachnodactyly, reduced radioulnar joint movement, conductive hearing loss, learning disability—and compound heterozygous \u003cjats:italic\u003eCYP26B1\u003c/jats:italic\u003e variants: (p.[(Pro118Leu)];[(Arg234Gln)]) were found. In family 2, a stillborn fetus presented a lethal phenotype with spina bifida occulta, hydrocephalus, poor skeletal mineralization, synostosis, limb defects, and a synonymous homozygous variant in \u003cjats:italic\u003eCYP26B1\u003c/jats:italic\u003e: c.1083C \u0026gt; A. A minigene assay revealed that the synonymous variant created a new splice site, removing part of exon 5 (p.Val361_Asp382del). Enzymatic activity was assessed using a luciferase assay, demonstrating a notable reduction in exogenous retinoic acid metabolism for the variant p.Val361_Asp382del. (~ 3.5 × decrease compared to wild-type); comparatively, the variants p.(Pro118Leu) and p.(Arg234Gln) demonstrated a partial loss of metabolism (1.7× and 2.3× reduction, respectively). A proximity-dependent biotin identification assay reaffirmed previously reported ER-resident protein interactions. Additional work into these interactions is critical to determine if CYP26B1 is involved with other biological events on the ER. Immunofluorescence assay suggests that mutant CYP26B1 is still localized in the endoplasmic reticulum. These results indicate that novel pathogenic variants in \u003cjats:italic\u003eCYP26B1\u003c/jats:italic\u003e result in varying levels of enzymatic activity that impact retinoic acid metabolism and relate to the distinct phenotypes observed.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2598"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "5 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "3 September 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "27 September 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors have no relevant financial or non-financial interests to disclose."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Ethics committee approvals were obtained at each participating institution for their respective research projects (Hospital for Sick Children in Toronto, REB #1000061939 and Committee of Ethics in Research of the Faculty of Medical Sciences at the University of Campinas, CAAE #53119113.9.0000.5404)."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Written informed consent was obtained from individuals of family 1 and from the parents of family 2."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-9114-9481",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Silveira",
+      "given": "Karina C.",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9482-8647",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Fonseca",
+      "given": "Inara Chacon",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0009-0001-7221-1187",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Oborn",
+      "given": "Connor",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6967-5426",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Wengryn",
+      "given": "Parker",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ghafoor",
+      "given": "Saima",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0009-0000-9050-6061",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Beke",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dreseris",
+      "given": "Ema S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wong",
+      "given": "Cassandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Iacovone",
+      "given": "Aline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Soltys",
+      "given": "Carrie-Lynn",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Babul-Hirji",
+      "given": "Riyana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Artigalas",
+      "given": "Osvaldo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Antolini-Tavares",
+      "given": "Arthur",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6090-4437",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Gingras",
+      "given": "Anne-Claude",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Campos",
+      "given": "Eric",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6617-4730",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Cavalcanti",
+      "given": "Denise P.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9479-4232",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kannu",
+      "given": "Peter",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        27
+      ]
+    ],
+    "date-time": "2023-09-27T08:02:34Z",
+    "timestamp": 1695801754000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        26
+      ]
+    ],
+    "date-time": "2023-10-26T12:05:29Z",
+    "timestamp": 1698321929000
+  },
+  "funder": [
+    {
+      "award": [
+        "2803",
+        "2803"
+      ],
+      "name": "Rare Disease Foundation Microgrant"
+    },
+    {
+      "DOI": "10.13039/501100001807",
+      "award": [
+        "2015/14866-5, 2015/22145-6"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Fundação de Amparo à Pesquisa do Estado de São Paulo"
+    },
+    {
+      "DOI": "10.13039/501100003593",
+      "award": [
+        "590148/2011-7"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Conselho Nacional de Desenvolvimento Científico e Tecnológico"
+    },
+    {
+      "award": [
+        "2825"
+      ],
+      "name": "WCHRI Grant Opportunity/ Program Recruitment \u0026 Retention"
+    },
+    {
+      "name": "Shriners Chair in Scoliosis, University of Alberta"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        12
+      ]
+    ],
+    "date-time": "2024-03-12T19:26:17Z",
+    "timestamp": 1710271577019
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "11",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        27
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "11",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            27
+          ]
+        ],
+        "date-time": "2023-09-27T00:00:00Z",
+        "timestamp": 1695772800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            27
+          ]
+        ],
+        "date-time": "2023-09-27T00:00:00Z",
+        "timestamp": 1695772800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02598-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-023-02598-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02598-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1571-1586",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        27
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        27
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        11
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1002/humu.23626",
+      "author": "AN Abou Tayoun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1517",
+      "journal-title": "Hum Mutat",
+      "key": "2598_CR1",
+      "unstructured": "Abou Tayoun AN, Pesaran T, DiStefano MT, Oza A, Rehm HL, Biesecker LG, Harrison SM (2018) Recommendations for interpreting the loss of function PVS1 ACMG/AMP variant criterion. Hum Mutat 39:1517–1524",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/S0925-4773(01)00572-X",
+      "author": "S Abu-Abed",
+      "doi-asserted-by": "publisher",
+      "first-page": "173",
+      "journal-title": "Mech Dev",
+      "key": "2598_CR2",
+      "unstructured": "Abu-Abed S, MacLean G, Fraulob V, Chambon P, Petkovich M, Dollé P (2002) Differential expression of the retinoic acid-metabolizing enzymes CYP26A1 and CYP26B1 during murine organogenesis. Mech Dev 110:173–177",
+      "volume": "110",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1242/dev.108.1.73",
+      "author": "AJ Alles",
+      "doi-asserted-by": "publisher",
+      "first-page": "73",
+      "journal-title": "Development",
+      "key": "2598_CR3",
+      "unstructured": "Alles AJ, Sulik KK (1990) Retinoic acid-induced spina bifida: evidence for a pathogenetic mechanism. Development 108:73–81",
+      "volume": "108",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1038/nrm3932",
+      "author": "TJ Cunningham",
+      "doi-asserted-by": "publisher",
+      "first-page": "110",
+      "journal-title": "Nat Rev Mol Cell Biol",
+      "key": "2598_CR4",
+      "unstructured": "Cunningham TJ, Duester G (2015) Mechanisms of retinoic acid signalling and its roles in organ and limb development. Nat Rev Mol Cell Biol 16:110–123",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1007/978-1-61779-767-5_3",
+      "author": "LR Desviat",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "journal-title": "Methods Mol Biol",
+      "key": "2598_CR5",
+      "unstructured": "Desviat LR, Pérez B, Ugarte M (2012) Minigenes to confirm exon skipping mutations. Methods Mol Biol 867:37–47",
+      "volume": "867",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0085233",
+      "author": "H Dogan",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2598_CR6",
+      "unstructured": "Dogan H, Can H, Otu HH (2014) Whole genome sequence of a Turkish individual. PLoS ONE 9:e85233",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03592-2",
+      "author": "CD Go",
+      "doi-asserted-by": "publisher",
+      "first-page": "120",
+      "journal-title": "Nature",
+      "key": "2598_CR7",
+      "unstructured": "Go CD, Knight JDR, Rajasekharan A, Rathod B, Hesketh GG, Abe KT, Youn JY, Samavarchi-Tehrani P, Zhang H, Zhu LY, Popiel E, Lambert JP et al (2021) A proximity-dependent biotinylation map of a human cell. Nature 595:120–124",
+      "volume": "595",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.62387",
+      "author": "K Grand",
+      "doi-asserted-by": "publisher",
+      "first-page": "2766",
+      "journal-title": "Am J Med Genet A",
+      "key": "2598_CR8",
+      "unstructured": "Grand K, Skraban CM, Cohen JL, Dowsett L, Mazzola S, Tarpinian J, Bedoukian E, Nesbitt A, Denenberg B, Lulis L, Santani A, Zackai EH et al (2021) Nonlethal presentations of CYP26B1-related skeletal anomalies and multiple synostoses syndrome. Am J Med Genet A 185:2766–2775",
+      "volume": "185",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/S0969-2126(01)00134-4",
+      "author": "CA Hasemann",
+      "doi-asserted-by": "publisher",
+      "first-page": "41",
+      "journal-title": "Structure",
+      "key": "2598_CR9",
+      "unstructured": "Hasemann CA, Kurumbail RG, Boddupalli SS, Peterson JA, Deisenhofer J (1995) Structure and function of cytochromes P450: a comparative analysis of three crystal structures. Structure 3:41–62",
+      "volume": "3",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1002/tera.1420450106",
+      "author": "AG Hendrickx",
+      "doi-asserted-by": "publisher",
+      "first-page": "65",
+      "journal-title": "Teratology",
+      "key": "2598_CR10",
+      "unstructured": "Hendrickx AG, Hummler H (1992) Teratogenicity of all-trans retinoic acid during early embryonic development in the cynomolgus monkey (Macaca fascicularis). Teratology 45:65–74",
+      "volume": "45",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1242/dev.02706",
+      "author": "RE Hernandez",
+      "doi-asserted-by": "publisher",
+      "first-page": "177",
+      "journal-title": "Development",
+      "key": "2598_CR11",
+      "unstructured": "Hernandez RE, Putzke AP, Myers JP, Margaretha L, Moens CB (2007) Cyp26 enzymes generate the retinoic acid response pattern necessary for hindbrain development. Development 134:177–187",
+      "volume": "134",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/j.cell.2021.04.011",
+      "author": "EL Huttlin",
+      "doi-asserted-by": "publisher",
+      "first-page": "3022",
+      "journal-title": "Cell",
+      "key": "2598_CR12",
+      "unstructured": "Huttlin EL, Bruckner RJ, Navarrete-Perea J, Cannon JR, Baltier K, Gebreab F, Gygi MP, Thornock A, Zarraga G, Tam S, Szpyt J, Gassaway BM et al (2021) Dual proteome-scale networks reveal cell-specific remodeling of the human interactome. Cell 184:3022-3040.e28",
+      "volume": "184",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03819-2",
+      "author": "J Jumper",
+      "doi-asserted-by": "publisher",
+      "first-page": "583",
+      "issue": "596",
+      "journal-title": "Nature",
+      "key": "2598_CR13",
+      "unstructured": "Jumper J, Evans R, Pritzel A, Green T, Figurnov M, Ronneberger O, Tunyasuvunakool K, Bates R, Žídek A, Potapenko A, Bridgland A, Meyer C et al (2021) Highly accurate protein structure prediction with AlphaFold. Nature 2021(596):583–589",
+      "volume": "2021",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nmeth.4330",
+      "author": "JDR Knight",
+      "doi-asserted-by": "publisher",
+      "first-page": "645",
+      "journal-title": "Nat Methods",
+      "key": "2598_CR14",
+      "unstructured": "Knight JDR, Choi H, Gupta GD, Pelletier L, Raught B, Nesvizhskii AI, Gingras AC (2017) ProHits-viz: a suite of web tools for visualizing interaction proteomics data. Nat Methods 14:645–646",
+      "volume": "14",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature01657",
+      "author": "HM Kronenberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "332",
+      "issue": "423",
+      "journal-title": "Nat",
+      "key": "2598_CR15",
+      "unstructured": "Kronenberg HM (2003) Developmental regulation of the growth plate. Nat 2003(423):332–336",
+      "volume": "2003",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1021/bi800328s",
+      "author": "K Kühnel",
+      "doi-asserted-by": "publisher",
+      "first-page": "6552",
+      "journal-title": "Biochemistry",
+      "key": "2598_CR16",
+      "unstructured": "Kühnel K, Ke N, Cryle MJ, Sligar SG, Schuler MA, Schlichting I (2008) Crystal structures of substrate-free and retinoic acid-bound cyanobacterial cytochrome P450 CYP120A1. Biochemistry 47:6552–6559",
+      "volume": "47",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1242/dev.021238",
+      "author": "K Laue",
+      "doi-asserted-by": "publisher",
+      "first-page": "3775",
+      "journal-title": "Development",
+      "key": "2598_CR17",
+      "unstructured": "Laue K, Jänicke M, Plaster N, Sonntag C, Hammerschmidt M (2008) Restriction of retinoic acid activity by Cyp26b1 is required for proper timing and patterning of osteogenesis during zebrafish development. Development 135:3775–3787",
+      "volume": "135",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.09.015",
+      "author": "K Laue",
+      "doi-asserted-by": "publisher",
+      "first-page": "595",
+      "journal-title": "Am J Hum Genet",
+      "key": "2598_CR18",
+      "unstructured": "Laue K, Pogoda HM, Daniel PB, Van HA, Alanay Y, Von AS, Rachwalski M, Morgan T, Gray MJ, Breuning MH, Sawyer GM, Sutherland-Smith AJ et al (2011) Craniosynostosis and multiple skeletal anomalies in humans and zebrafish result from a defect in the localized degradation of retinoic acid. Am J Hum Genet 89:595–606",
+      "volume": "89",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s12881-018-0562-4",
+      "author": "J Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Med Genet",
+      "key": "2598_CR19",
+      "unstructured": "Li J, Xie H, Jiang Y (2018) Mucopolysaccharidosis IIIB and mild skeletal anomalies: coexistence of NAGLU and CYP26B1 missense variations in the same patient in a Chinese family. BMC Med Genet 19:1–5",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0176217",
+      "author": "T Lind",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2598_CR20",
+      "unstructured": "Lind T, Öhman C, Calounova G, Rasmusson A, Andersson G, Pejler G, Melhus H (2017) Excessive dietary intake of vitamin A reduces skull bone thickness in mice. PLoS ONE 12:e0176217",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.bonr.2018.06.006",
+      "author": "T Lind",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "journal-title": "Bone Reports",
+      "key": "2598_CR21",
+      "unstructured": "Lind T, Lugano R, Gustafson AM, Norgård M, van Haeringen A, Dimberg A, Melhus H, Robertson SP, Andersson G (2018) Bones in human CYP26B1 deficiency and rats with hypervitaminosis A phenocopy Vegfa overexpression. Bone Reports 9:27–36",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.bbrc.2014.10.001",
+      "author": "Y Minegishi",
+      "doi-asserted-by": "publisher",
+      "first-page": "12",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "2598_CR22",
+      "unstructured": "Minegishi Y, Sakai Y, Yahara Y, Akiyama H, Yoshikawa H, Hosokawa K, Tsumaki N (2014) Cyp26b1 within the growth plate regulates bone growth in juvenile mice. Biochem Biophys Res Commun 454:12–18",
+      "volume": "454",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1101/2021.08.15.456425",
+      "author": "M Mirdita",
+      "doi-asserted-by": "publisher",
+      "journal-title": "bioRxiv",
+      "key": "2598_CR23",
+      "unstructured": "Mirdita M, Ovchinnikov S, Steinegger M (2021) ColabFold - making protein folding accessible to all. bioRxiv. https://doi.org/10.1101/2021.08.15.456425",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.37804",
+      "author": "JEV Morton",
+      "doi-asserted-by": "publisher",
+      "first-page": "2706",
+      "journal-title": "Am J Med Genet Part A",
+      "key": "2598_CR24",
+      "unstructured": "Morton JEV, Frentz S, Morgan T, Sutherland-Smith AJ, Robertson SP (2016) Biallelic mutations in CYP26B1: a differential diagnosis for Pfeiffer and Antley-Bixler syndromes. Am J Med Genet Part A 170:2706–2710",
+      "volume": "170",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1055/s-0042-114038",
+      "author": "O Nilsson",
+      "doi-asserted-by": "publisher",
+      "first-page": "737",
+      "journal-title": "Horm Metab Res",
+      "key": "2598_CR25",
+      "unstructured": "Nilsson O, Isoherranen N, Guo MH, Lui JC, Jee YH, Guttmann-Bauman I, Acerini C, Lee W, Allikmets R, Yanovski JA, Dauber A, Baron J (2016) Accelerated skeletal maturation in disorders of retinoic acid metabolism: a case report and focused review of the literature. Horm Metab Res 48:737–744",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/pro.3978",
+      "author": "R Oughtred",
+      "doi-asserted-by": "publisher",
+      "first-page": "187",
+      "issue": "1",
+      "journal-title": "Protein Sci",
+      "key": "2598_CR42",
+      "unstructured": "Oughtred R, Rust J, Chang C, Breitkreutz BJ, Stark C, Willems A, Boucher L, Leung G, Kolas N, Zhang F, Dolma S, Coulombe-Huntington  J, Chatr-Aryamontri  A, Dolinski  K, Tyers M (2021) The BioGRID database: A comprehensive biomedical resource of curated protein genetic and chemical interactions. Protein Sci 30(1):187–200. https://doi.org/10.1002/pro.3978",
+      "volume": "30",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/nar/gkz369",
+      "author": "U Raudvere",
+      "doi-asserted-by": "publisher",
+      "first-page": "W191",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2598_CR26",
+      "unstructured": "Raudvere U, Kolberg L, Kuzmin I, Arak T, Adler P, Peterson H, Vilo J (2019) g:Profiler: a web server for functional enrichment analysis and conversions of gene lists (2019 update). Nucleic Acids Res 47:W191–W198",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med",
+      "key": "2598_CR27",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, Grody WW, Hegde M, Lyon E, Spector E, Voelkerding K, Rehm HL et al (2015) Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of medical genetics and genomics and the association for molecular pathology. Genet Med 17:405–423",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3390/jdb8010006",
+      "author": "C Roberts",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "issue": "8",
+      "journal-title": "J Dev Biol",
+      "key": "2598_CR28",
+      "unstructured": "Roberts C (2020) Regulating retinoic acid availability during development and regeneration: the role of the CYP26 enzymes. J Dev Biol 2020(8):6",
+      "volume": "2020",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/gad.851501",
+      "author": "Y Sakai",
+      "doi-asserted-by": "publisher",
+      "first-page": "213",
+      "journal-title": "Genes Dev",
+      "key": "2598_CR29",
+      "unstructured": "Sakai Y, Meno C, Fujii H, Nishino J, Shiratori H, Saijoh Y, Rossant J, Hamada H (2001) The retinoic acid-inactivating enzyme CYP26 is essential for establishing an uneven distribution of retinoic acid along the anterio-posterior axis within the mouse embryo. Genes Dev 15:213–225",
+      "volume": "15",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1016/j.ejmg.2023.104772",
+      "author": "AS Sarma",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Eur J Med Genet",
+      "key": "2598_CR30",
+      "unstructured": "Sarma AS, Peter Mathew R, Dalal A, Bhat V, Patil SJ (2023) Familial monoallelic CYP26B1 truncating variant causes a syndromic craniosynostosis due to haploinsufficiency? Eur J Med Genet 66:104772",
+      "volume": "66",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009909",
+      "author": "WA Scott",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Genet",
+      "key": "2598_CR31",
+      "unstructured": "Scott WA, Dhanji EZ, Dyakov BJA, Dreseris ES, Asa JS, Grange LJ, Mirceta M, Pearson CE, Stewart GS, Gingras AC, Campos EI (2021) ATRX proximal protein associations boast roles beyond histone deposition. PLoS Genet 17:e1009909",
+      "volume": "17",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/prot.22242",
+      "author": "A Seifert",
+      "doi-asserted-by": "publisher",
+      "first-page": "1028",
+      "journal-title": "Proteins Struct Funct Bioinform",
+      "key": "2598_CR32",
+      "unstructured": "Seifert A, Pleiss J (2009) Identification of selectivity-determining residues in cytochrome P450 monooxygenases: a systematic analysis of the substrate recognition site 5. Proteins Struct Funct Bioinform 74:1028–1035",
+      "volume": "74",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.ghir.2022.101446",
+      "author": "Q Shen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Growth Horm IGF Res",
+      "key": "2598_CR33",
+      "unstructured": "Shen Q, Wang X, Bai H, Tan X, Liu X (2022) Effects of high-dose all-trans retinoic acid on longitudinal bone growth of young rats. Growth Horm IGF Res 62:101446",
+      "volume": "62",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/1472-6807-10-34",
+      "author": "D Sirim",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Struct Biol",
+      "key": "2598_CR34",
+      "unstructured": "Sirim D, Widmann M, Wagner F, Pleiss J (2010) Prediction and analysis of the modular structure of cytochrome P450 monooxygenases. BMC Struct Biol 10:1–12",
+      "volume": "10",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1242/dev.024034",
+      "author": "KM Spoorendonk",
+      "doi-asserted-by": "publisher",
+      "first-page": "3765",
+      "journal-title": "Development",
+      "key": "2598_CR35",
+      "unstructured": "Spoorendonk KM, Peterson-Maduro J, Renn J, Trowe T, Kranenbarg S, Winkler C, Schulte-Merker S (2008) Retinoic acid and Cyp26b1 are critical regulators of osteogenesis in the axial skeleton. Development 135:3765–3774",
+      "volume": "135",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1007/s00429-015-1102-z",
+      "author": "PN Stoney",
+      "doi-asserted-by": "publisher",
+      "first-page": "3315",
+      "journal-title": "Brain Struct Funct",
+      "key": "2598_CR36",
+      "unstructured": "Stoney PN, Fragoso YD, Saeed RB, Ashton A, Goodman T, Simons C, Gomaa MS, Sementilli A, Sementilli L, Ross AW, Morgan PJ, McCaffery PJ (2016) Expression of the retinoic acid catabolic enzyme CYP26B1 in the human brain to maintain signaling homeostasis. Brain Struct Funct 221:3315–3326",
+      "volume": "221",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.jprot.2013.10.023",
+      "author": "G Teo",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "journal-title": "J Proteom",
+      "key": "2598_CR37",
+      "unstructured": "Teo G, Liu G, Zhang J, Nesvizhskii AI, Gingras AC, Choi H (2014) SAINTexpress: improvements and additional features in significance analysis of INTeractome SOFTWARE. J Proteom 100:37–43",
+      "volume": "100",
+      "year": "2014"
+    },
+    {
+      "key": "2598_CR38",
+      "unstructured": "The PyMOL Molecular Graphics System, Version 1.2r3pre, Schrödinger, LLC"
+    },
+    {
+      "DOI": "10.1186/1750-1172-8-100",
+      "author": "J Wen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "2598_CR39",
+      "unstructured": "Wen J, Lopes F, Soares G, Farrell SA, Nelson C, Qiao Y, Martell S, Badukke C, Bessa C, Ylstra B, Lewis S, Isoherranen N et al (2013) Phenotypic and functional consequences of haploinsufficiency of genes from exocyst and retinoic acid pathway due to a recurrent microdeletion of 2p13.2. Orphanet J Rare Dis 8:1–12",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1371/journal.pbio.0050304",
+      "author": "RJ White",
+      "doi-asserted-by": "publisher",
+      "first-page": "2522",
+      "journal-title": "PLoS Biol",
+      "key": "2598_CR40",
+      "unstructured": "White RJ, Nie Q, Lander AD, Schilling TF (2007) Complex regulation of cyp26a1 creates a robust retinoic acid gradient in the zebrafish embryo. PLoS Biol 5:2522–2533",
+      "volume": "5",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/S1534-5807(04)00062-0",
+      "author": "K Yashiro",
+      "doi-asserted-by": "publisher",
+      "first-page": "411",
+      "journal-title": "Dev Cell",
+      "key": "2598_CR41",
+      "unstructured": "Yashiro K, Zhao X, Uehara M, Yamashita K, Nishijima M, Nishino J, Saijoh Y, Sakai Y, Hamada H (2004) Regulation of retinoic acid distribution is required for proximodistal patterning and outgrowth of the developing mouse limb. Dev Cell 6:411–422",
+      "volume": "6",
+      "year": "2004"
+    }
+  ],
+  "reference-count": 42,
+  "references-count": 42,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-023-02598-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum. Genet."
+  ],
+  "source": "Crossref",
+  "title": [
+    "CYP26B1-related disorder: expanding the ends of the spectrum through clinical and molecular evidence"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

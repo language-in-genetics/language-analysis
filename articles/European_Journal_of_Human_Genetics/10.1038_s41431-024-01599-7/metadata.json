@@ -1,0 +1,912 @@
+{
+  "DOI": "10.1038/s41431-024-01599-7",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-024-01599-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003ePrimary ciliary dyskinesia (PCD), a disorder of the motile cilia, is now recognised as an underdiagnosed cause of bronchiectasis. Accurate PCD diagnosis comprises clinical assessment, analysis of cilia and the identification of biallelic variants in one of 50 known PCD-related genes, including \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e. \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e-related PCD is underdiagnosed due to the presence of a pseudogene, \u003cjats:italic\u003eHYDIN2\u003c/jats:italic\u003e, with 98% sequence homology to \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e. This presents a significant challenge for Short-Read Next Generation Sequencing (SR-NGS) and analysis, and many diagnostic PCD gene panels do not include \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e. We have used a combined approach of SR-NGS with bioinformatic masking of \u003cjats:italic\u003eHYDIN2\u003c/jats:italic\u003e, and state-of-the-art long-read Nanopore sequencing (LR_NGS), together with analysis of respiratory cilia including transmission electron microscopy and immunofluorescence to address the underdiagnosis of \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e as a cause of PCD. Bioinformatic masking of \u003cjats:italic\u003eHYDIN2\u003c/jats:italic\u003e after SR-NGS facilitated the detection of biallelic \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e variants in 15 of 437 families, but compromised the detection of copy number variants. Supplementing testing with LR-NGS detected \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e deletions in 2 families, where SR-NGS had detected a single heterozygous \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e variant. LR-NGS was also able to confirm true homozygosity in 2 families when parental testing was not possible. Utilising a combined genomic diagnostic approach, biallelic \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e variants were detected in 17 families from 242 genetically confirmed PCD cases, comprising 7% of our PCD cohort. This represents the largest reported \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e cohort to date and highlights previous underdiagnosis of \u003cjats:italic\u003eHYDIN\u003c/jats:italic\u003e-associated PCD. Moreover this provides further evidence for the utility of LR-NGS in diagnostic testing, particularly for regions of high genomic complexity.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1599"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "11 December 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "8 March 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "18 March 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "11 April 2024"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "DEM is on a scientific advisory board at ONT, is engaged in a research agreement with ONT, and they have paid for him to travel to speak on their behalf. DEM holds stock options in MyOme."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All participating institutions received approval from local institutional review boards. Informed consent was obtained from all subjects, and any clinical data has been de-identified."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Fleming",
+      "given": "Andrew",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Galey",
+      "given": "Miranda",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Briggs",
+      "given": "Lizi",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8477-530X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Edwards",
+      "given": "Matthew",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8368-5994",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Hogg",
+      "given": "Claire",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "John",
+      "given": "Shibu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wilkinson",
+      "given": "Sam",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3648-6084",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Quinn",
+      "given": "Ellie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rai",
+      "given": "Ranjit",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Burgoyne",
+      "given": "Tom",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rogers",
+      "given": "Andy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Patel",
+      "given": "Mitali P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Griffin",
+      "given": "Paul",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Muller",
+      "given": "Steven",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0580-2478",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Carr",
+      "given": "Siobhan B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Loebinger",
+      "given": "Michael R.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8701-9975",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lucas",
+      "given": "Jane S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shah",
+      "given": "Anand",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jose",
+      "given": "Ricardo",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3163-6293",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Mitchison",
+      "given": "Hannah M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shoemark",
+      "given": "Amelia",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6096-8601",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Miller",
+      "given": "Danny E.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7780-4707",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Morris-Rosendahl",
+      "given": "Deborah J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        11
+      ]
+    ],
+    "date-time": "2024-04-11T14:01:55Z",
+    "timestamp": 1712844115000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        11
+      ]
+    ],
+    "date-time": "2024-04-11T15:02:01Z",
+    "timestamp": 1712847721000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ],
+    "date-time": "2024-04-12T00:42:44Z",
+    "timestamp": 1712882564912
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        11
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            11
+          ]
+        ],
+        "date-time": "2024-04-11T00:00:00Z",
+        "timestamp": 1712793600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            11
+          ]
+        ],
+        "date-time": "2024-04-11T00:00:00Z",
+        "timestamp": 1712793600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01599-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01599-7",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01599-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        11
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        11
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.jpeds.2020.11.040",
+      "author": "A Horani",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "journal-title": "J Pediatr.",
+      "key": "1599_CR1",
+      "unstructured": "Horani A, Ferkol TW. Understanding Primary Ciliary Dyskinesia and Other Ciliopathies. J Pediatr. 2021;230:15–22.e1.",
+      "volume": "230",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1183/13993003.congress-2022.1555",
+      "doi-asserted-by": "crossref",
+      "key": "1599_CR2",
+      "unstructured": "Shoemark A, Griffin H, Wheway G, Hogg C, Lucas JS, Genomics England Research C, et al. Genome sequencing reveals underdiagnosis of primary ciliary dyskinesia in bronchiectasis. Eur Respir J. 2022;60:2200176."
+    },
+    {
+      "DOI": "10.1002/ppul.26529",
+      "doi-asserted-by": "crossref",
+      "key": "1599_CR3",
+      "unstructured": "Morris-Rosendahl DJ. Primary ciliary dyskinesia as a common cause of bronchiectasis in the Canadian Inuit population. Pediatr Pulmonol. 2023;58:2437–8."
+    },
+    {
+      "DOI": "10.1164/rccm.201409-1672OC",
+      "author": "SD Davis",
+      "doi-asserted-by": "publisher",
+      "first-page": "316",
+      "journal-title": "Am J Respir Crit Care Med.",
+      "key": "1599_CR4",
+      "unstructured": "Davis SD, Ferkol TW, Rosenfeld M, Lee HS, Dell SD, Sagel SD, et al. Clinical features of childhood primary ciliary dyskinesia by genotype and ultrastructural phenotype. Am J Respir Crit Care Med. 2015;191:316–24.",
+      "volume": "191",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1164/rccm.201301-0059CI",
+      "author": "MR Knowles",
+      "doi-asserted-by": "publisher",
+      "first-page": "913",
+      "journal-title": "Am J Respir Crit Care Med.",
+      "key": "1599_CR5",
+      "unstructured": "Knowles MR, Daniels LA, Davis SD, Zariwala MA, Leigh MW. Primary ciliary dyskinesia. Recent advances in diagnostics, genetics, and characterization of clinical disease. Am J Respir Crit Care Med. 2013;188:913–22.",
+      "volume": "188",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1542/peds.2014-0808",
+      "author": "T Mullowney",
+      "doi-asserted-by": "publisher",
+      "first-page": "1160",
+      "journal-title": "Pediatrics.",
+      "key": "1599_CR6",
+      "unstructured": "Mullowney T, Manson D, Kim R, Stephens D, Shah V, Dell S. Primary ciliary dyskinesia and neonatal respiratory distress. Pediatrics. 2014;134:1160–6.",
+      "volume": "134",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1164/rccm.200303-365OC",
+      "author": "PG Noone",
+      "doi-asserted-by": "publisher",
+      "first-page": "459",
+      "journal-title": "Am J Respir Crit Care Med.",
+      "key": "1599_CR7",
+      "unstructured": "Noone PG, Leigh MW, Sannuti A, Minnix SL, Carson JL, Hazucha M, et al. Primary ciliary dyskinesia: diagnostic and phenotypic features. Am J Respir Crit Care Med. 2004;169:459–67.",
+      "volume": "169",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1378/chest.13-1704",
+      "author": "AJ Shapiro",
+      "doi-asserted-by": "publisher",
+      "first-page": "1176",
+      "journal-title": "Chest.",
+      "key": "1599_CR8",
+      "unstructured": "Shapiro AJ, Davis SD, Ferkol T, Dell SD, Rosenfeld M, Olivier KN, et al. Laterality defects other than situs inversus totalis in primary ciliary dyskinesia: insights into situs ambiguus and heterotaxy. Chest. 2014;146:1176–86.",
+      "volume": "146",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/S2213-2600(21)00453-7",
+      "author": "WB Hannah",
+      "doi-asserted-by": "publisher",
+      "first-page": "459",
+      "journal-title": "Lancet Respir Med.",
+      "key": "1599_CR9",
+      "unstructured": "Hannah WB, Seifert BA, Truty R, Zariwala MA, Ameel K, Zhao Y, et al. The global prevalence and ethnic heterogeneity of primary ciliary dyskinesia gene variants: a genetic database analysis. Lancet Respir Med. 2022;10:459–68.",
+      "volume": "10",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2019.09.022",
+      "author": "J Wallmeier",
+      "doi-asserted-by": "publisher",
+      "first-page": "1030",
+      "journal-title": "Am J Hum Genet.",
+      "key": "1599_CR10",
+      "unstructured": "Wallmeier J, Frank D, Shoemark A, Nothe-Menchen T, Cindric S, Olbrich H, et al. De Novo Mutations in FOXJ1 Result in a Motile Ciliopathy with Hydrocephalus and Randomization of Left/Right Body Asymmetry. Am J Hum Genet. 2019;105:1030–9.",
+      "volume": "105",
+      "year": "2019"
+    },
+    {
+      "author": "MW Leigh",
+      "first-page": "51",
+      "journal-title": "Transl Sci Rare Dis.",
+      "key": "1599_CR11",
+      "unstructured": "Leigh MW, Horani A, Kinghorn B, O’Connor MG, Zariwala MA, Knowles MR. Primary Ciliary Dyskinesia (PCD): A genetic disorder of motile cilia. Transl Sci Rare Dis. 2019;4:51–75.",
+      "volume": "4",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/S2213-2600(19)30374-1",
+      "author": "JS Lucas",
+      "doi-asserted-by": "publisher",
+      "first-page": "202",
+      "journal-title": "Lancet Respir Med.",
+      "key": "1599_CR12",
+      "unstructured": "Lucas JS, Davis SD, Omran H, Shoemark A. Primary ciliary dyskinesia in the genomics age. Lancet Respir Med. 2020;8:202–16.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.semcdb.2020.11.007",
+      "author": "M Legendre",
+      "doi-asserted-by": "publisher",
+      "first-page": "19",
+      "journal-title": "Semin Cell Dev Biol.",
+      "key": "1599_CR13",
+      "unstructured": "Legendre M, Zaragosi LE, Mitchison HM. Motile cilia and airway disease. Semin Cell Dev Biol. 2021;110:19–33.",
+      "volume": "110",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/thoraxjnl-2011-200301",
+      "author": "MR Knowles",
+      "doi-asserted-by": "publisher",
+      "first-page": "433",
+      "journal-title": "Thorax.",
+      "key": "1599_CR14",
+      "unstructured": "Knowles MR, Leigh MW, Carson JL, Davis SD, Dell SD, Ferkol TW, et al. Mutations of DNAH11 in patients with primary ciliary dyskinesia with normal ciliary ultrastructure. Thorax. 2012;67:433–41.",
+      "volume": "67",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1183/13993003.01090-2016",
+      "author": "JS Lucas",
+      "doi-asserted-by": "publisher",
+      "first-page": "1601090",
+      "journal-title": "Eur Respir J.",
+      "key": "1599_CR15",
+      "unstructured": "Lucas JS, Barbato A, Collins SA, Goutaki M, Behan L, Caudri D, et al. European Respiratory Society guidelines for the diagnosis of primary ciliary dyskinesia. Eur Respir J. 2017;49:1601090.",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1164/rccm.201805-0819ST",
+      "author": "AJ Shapiro",
+      "doi-asserted-by": "publisher",
+      "first-page": "e24",
+      "journal-title": "Am J Respir Crit Care Med.",
+      "key": "1599_CR16",
+      "unstructured": "Shapiro AJ, Davis SD, Polineni D, Manion M, Rosenfeld M, Dell SD, et al. Diagnosis of Primary Ciliary Dyskinesia. An Official American Thoracic Society Clinical Practice Guideline. Am J Respir Crit Care Med. 2018;197:e24–e39.",
+      "volume": "197",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2019-106501",
+      "author": "MR Fassad",
+      "doi-asserted-by": "publisher",
+      "first-page": "322",
+      "journal-title": "J Med Genet.",
+      "key": "1599_CR17",
+      "unstructured": "Fassad MR, Patel MP, Shoemark A, Cullup T, Hayward J, Dixon M, et al. Clinical utility of NGS diagnosis and disease stratification in a multiethnic primary ciliary dyskinesia cohort. J Med Genet. 2020;57:322–30.",
+      "volume": "57",
+      "year": "2020"
+    },
+    {
+      "key": "1599_CR18",
+      "unstructured": "Zariwala MA, Knowles MR, Leigh MW. Primary Ciliary Dyskinesia. In: Adam MP, Everman DB, Mirzaa GM, Pagon RA, Wallace SE, Bean LJH, et al., editors. GeneReviews((R)). Seattle: University of Washington; 1993."
+    },
+    {
+      "DOI": "10.1093/hmg/ddg122",
+      "author": "BE Davy",
+      "doi-asserted-by": "publisher",
+      "first-page": "1163",
+      "journal-title": "Hum Mol Genet.",
+      "key": "1599_CR19",
+      "unstructured": "Davy BE, Robinson ML. Congenital hydrocephalus in hy3 mice is caused by a frameshift mutation in Hydin, a large novel gene. Hum Mol Genet. 2003;12:1163–70.",
+      "volume": "12",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1186/1741-7007-5-33",
+      "author": "HR Dawe",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Biol.",
+      "key": "1599_CR20",
+      "unstructured": "Dawe HR, Shaw MK, Farr H, Gull K. The hydrocephalus inducing gene product, Hydin, positions axonemal central pair microtubules. BMC Biol. 2007;5:33.",
+      "volume": "5",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1083/jcb.200710162",
+      "author": "KF Lechtreck",
+      "doi-asserted-by": "publisher",
+      "first-page": "633",
+      "journal-title": "J Cell Biol.",
+      "key": "1599_CR21",
+      "unstructured": "Lechtreck KF, Delmotte P, Robinson ML, Sanderson MJ, Witman GB. Mutations in Hydin impair ciliary motility in mice. J Cell Biol. 2008;180:633–43.",
+      "volume": "180",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.08.016",
+      "author": "H Olbrich",
+      "doi-asserted-by": "publisher",
+      "first-page": "672",
+      "journal-title": "Am J Hum Genet.",
+      "key": "1599_CR22",
+      "unstructured": "Olbrich H, Schmidts M, Werner C, Onoufriadis A, Loges NT, Raidt J, et al. Recessive HYDIN mutations cause primary ciliary dyskinesia without randomization of left-right body asymmetry. Am J Hum Genet. 2012;91:672–84.",
+      "volume": "91",
+      "year": "2012"
+    },
+    {
+      "author": "LL Chen",
+      "first-page": "304",
+      "journal-title": "Zhonghua Er Ke Za Zhi.",
+      "key": "1599_CR23",
+      "unstructured": "Chen LL, Yang YG, Wu JZ, Chen XR. Primary ciliary dyskinesia with HYDIN gene mutations in a child and literature review. Zhonghua Er Ke Za Zhi. 2017;55:304–7.",
+      "volume": "55",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/humu.23403",
+      "author": "T Paff",
+      "doi-asserted-by": "publisher",
+      "first-page": "653",
+      "journal-title": "Hum Mutat.",
+      "key": "1599_CR24",
+      "unstructured": "Paff T, Kooi IE, Moutaouakil Y, Riesebos E, Sistermans EA, Daniels H, et al. Diagnostic yield of a targeted gene panel in primary ciliary dyskinesia patients. Hum Mutat. 2018;39:653–65.",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s12098-019-02970-z",
+      "author": "AT Benjamin",
+      "doi-asserted-by": "publisher",
+      "first-page": "664",
+      "journal-title": "Indian J Pediatr.",
+      "key": "1599_CR25",
+      "unstructured": "Benjamin AT, Ganesh R, Gaspar BL, Lucas J, Jackson C, Legendre M, et al. A Novel Homozygous Nonsense HYDIN Gene Mutation p.(Arg951*) in Primary Ciliary Dyskinesia. Indian J Pediatr. 2019;86:664–5.",
+      "volume": "86",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1083/jcb.200611115",
+      "author": "KF Lechtreck",
+      "doi-asserted-by": "publisher",
+      "first-page": "473",
+      "journal-title": "J Cell Biol.",
+      "key": "1599_CR26",
+      "unstructured": "Lechtreck KF, Witman GB. Chlamydomonas reinhardtii hydin is a central pair protein required for flagellar motility. J Cell Biol. 2007;176:473–82.",
+      "volume": "176",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1165/rcmb.2019-0086OC",
+      "author": "S Cindric",
+      "doi-asserted-by": "publisher",
+      "first-page": "382",
+      "journal-title": "Am J Respir Cell Mol Biol.",
+      "key": "1599_CR27",
+      "unstructured": "Cindric S, Dougherty GW, Olbrich H, Hjeij R, Loges NT, Amirav I, et al. SPEF2- and HYDIN-Mutant Cilia Lack the Central Pair-associated Protein SPEF2, Aiding Primary Ciliary Dyskinesia Diagnostics. Am J Respir Cell Mol Biol. 2020;62:382–96.",
+      "volume": "62",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2006.07.012",
+      "author": "NA Doggett",
+      "doi-asserted-by": "publisher",
+      "first-page": "762",
+      "journal-title": "Genomics.",
+      "key": "1599_CR28",
+      "unstructured": "Doggett NA, Xie G, Meincke LJ, Sutherland RD, Mundt MO, Berbari NS, et al. A 360-kb interchromosomal duplication of the human HYDIN locus. Genomics. 2006;88:762–71.",
+      "volume": "88",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1513/AnnalsATS.202203-253RL",
+      "author": "AJ Shapiro",
+      "doi-asserted-by": "publisher",
+      "first-page": "140",
+      "journal-title": "Ann Am Thorac Soc.",
+      "key": "1599_CR29",
+      "unstructured": "Shapiro AJ, Sillon G, D’Agostino D, Baret L, Lopez-Giraldez F, Mane S, et al. HYDIN Variants Are a Common Cause of Primary Ciliary Dyskinesia in French Canadians. Ann Am Thorac Soc. 2023;20:140–4.",
+      "volume": "20",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.3389/fgene.2019.00426",
+      "author": "T Mantere",
+      "doi-asserted-by": "publisher",
+      "first-page": "426",
+      "journal-title": "Front Genet.",
+      "key": "1599_CR30",
+      "unstructured": "Mantere T, Kersten S, Hoischen A. Long-Read Sequencing Emerging in Medical Genetics. Front Genet. 2019;10:426.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/humu.23940",
+      "author": "CM Watson",
+      "doi-asserted-by": "publisher",
+      "first-page": "525",
+      "journal-title": "Hum Mutat.",
+      "key": "1599_CR31",
+      "unstructured": "Watson CM, Dean P, Camm N, Bates J, Carr IM, Gardiner CA, et al. Long-read nanopore sequencing resolves a TMEM231 gene conversion event causing Meckel-Gruber syndrome. Hum Mutat. 2020;41:525–31.",
+      "volume": "41",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2022-108485",
+      "author": "DE Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "1087",
+      "journal-title": "J Med Genet.",
+      "key": "1599_CR32",
+      "unstructured": "Miller DE, Lee L, Galey M, Kandhaya-Pillai R, Tischkowitz M, Amalnath D, et al. Targeted long-read sequencing identifies missing pathogenic variants in unsolved Werner syndrome cases. J Med Genet. 2022;59:1087–94.",
+      "volume": "59",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.chest.2019.01.036",
+      "author": "B Rubbo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1008",
+      "journal-title": "Chest.",
+      "key": "1599_CR33",
+      "unstructured": "Rubbo B, Shoemark A, Jackson CL, Hirst R, Thompson J, Hayes J, et al. Accuracy of High-Speed Video Analysis to Diagnose Primary Ciliary Dyskinesia. Chest. 2019;155:1008–17.",
+      "volume": "155",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1183/13993003.00725-2019",
+      "author": "A Shoemark",
+      "doi-asserted-by": "publisher",
+      "first-page": "1900725",
+      "journal-title": "Eur Respir J.",
+      "key": "1599_CR34",
+      "unstructured": "Shoemark A, Boon M, Brochhausen C, Bukowy-Bieryllo Z, De Santi MM, Goggin P, et al. International consensus guideline for reporting transmission electron microscopy results in the diagnosis of primary ciliary dyskinesia (BEAT PCD TEM Criteria). Eur Respir J. 2020;55:1900725.",
+      "volume": "55",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.12.015",
+      "author": "K Jaganathan",
+      "doi-asserted-by": "publisher",
+      "first-page": "535",
+      "journal-title": "Cell.",
+      "key": "1599_CR35",
+      "unstructured": "Jaganathan K, Kyriazopoulou Panagiotopoulou S, McRae JF, Darbandi SF, Knowles D, Li YI, et al. Predicting Splicing from Primary Sequence with Deep Learning. Cell. 2019;176:535–48.e24.",
+      "volume": "176",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med.",
+      "key": "1599_CR36",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17:405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.04.003",
+      "author": "GP Jarvik",
+      "doi-asserted-by": "publisher",
+      "first-page": "1077",
+      "journal-title": "Am J Hum Genet.",
+      "key": "1599_CR37",
+      "unstructured": "Jarvik GP, Browning BL. Consideration of Cosegregation in the Pathogenicity Classification of Genomic Variants. Am J Hum Genet. 2016;98:1077–81.",
+      "volume": "98",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/humu.23626",
+      "author": "AN Abou Tayoun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1517",
+      "journal-title": "Hum Mutat.",
+      "key": "1599_CR38",
+      "unstructured": "Abou Tayoun AN, Pesaran T, DiStefano MT, Oza A, Rehm HL, Biesecker LG, et al. Recommendations for interpreting the loss of function PVS1 ACMG/AMP variant criterion. Hum Mutat. 2018;39:1517–24.",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2078",
+      "journal-title": "Bioinformatics.",
+      "key": "1599_CR39",
+      "unstructured": "Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, et al. The Sequence Alignment/Map format and SAMtools. Bioinformatics. 2009;25:2078–9.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty191",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "3094",
+      "journal-title": "Bioinformatics.",
+      "key": "1599_CR40",
+      "unstructured": "Li H. Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics. 2018;34:3094–100.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s43588-022-00387-x",
+      "author": "Z Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "797",
+      "journal-title": "Nat Comput Sci.",
+      "key": "1599_CR41",
+      "unstructured": "Zheng Z. Symphonizing pileup and full-alignment for deep learning-based long-read variant calling. Nat Comput Sci. 2022;2:797–803.",
+      "volume": "2",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btac058",
+      "author": "JH Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1816",
+      "journal-title": "Bioinformatics.",
+      "key": "1599_CR42",
+      "unstructured": "Lin JH, Chen LC, Yu SC, Huang YT. LongPhase: an ultra-fast chromosome-scale phasing algorithm for small and large variants. Bioinformatics. 2022;38:1816–22.",
+      "volume": "38",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "author": "W McLaren",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol.",
+      "key": "1599_CR43",
+      "unstructured": "McLaren W, Gil L, Hunt SE, Riat HS, Ritchie GR, Thormann A, et al. The Ensembl Variant Effect Predictor. Genome Biol. 2016;17:122.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/nar/gky1016",
+      "author": "P Rentzsch",
+      "doi-asserted-by": "publisher",
+      "first-page": "D886",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "1599_CR44",
+      "unstructured": "Rentzsch P, Witten D, Cooper GM, Shendure J, Kircher M. CADD: predicting the deleteriousness of variants throughout the human genome. Nucleic Acids Res. 2019;47:D886–D94.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature.",
+      "key": "1599_CR45",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alfoldi J, Wang Q, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581:434–43.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz041",
+      "author": "D Heller",
+      "doi-asserted-by": "publisher",
+      "first-page": "2907",
+      "journal-title": "Bioinformatics.",
+      "key": "1599_CR46",
+      "unstructured": "Heller D, Vingron M. SVIM: structural variant identification using mapped long reads. Bioinformatics. 2019;35:2907–15.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/978-1-0716-2293-3_9",
+      "author": "T Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "137",
+      "journal-title": "Methods Mol Biol.",
+      "key": "1599_CR47",
+      "unstructured": "Jiang T, Liu S, Cao S, Wang Y. Structural Variant Detection from Long-Read Sequencing Data with cuteSV. Methods Mol Biol. 2022;2493:137–51.",
+      "volume": "2493",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41592-018-0001-7",
+      "author": "FJ Sedlazeck",
+      "doi-asserted-by": "publisher",
+      "first-page": "461",
+      "journal-title": "Nat Methods.",
+      "key": "1599_CR48",
+      "unstructured": "Sedlazeck FJ, Rescheneder P, Smolka M, Fang H, Nattestad M, von Haeseler A, et al. Accurate detection of complex structural variations using single-molecule sequencing. Nat Methods. 2018;15:461–8.",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btac830",
+      "author": "JT Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "btac830",
+      "journal-title": "Bioinformatics.",
+      "key": "1599_CR49",
+      "unstructured": "Robinson JT, Thorvaldsdottir H, Turner D, Mesirov JP. igv.js: an embeddable JavaScript implementation of the Integrative Genomics Viewer (IGV). Bioinformatics. 2023;39:btac830.",
+      "volume": "39",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1002/humu.23905",
+      "author": "R Mani",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "journal-title": "Hum Mutat.",
+      "key": "1599_CR50",
+      "unstructured": "Mani R, Belkacem S, Soua Z, Chantot S, Montantin G, Tissier S, et al. Primary ciliary dyskinesia gene contribution in Tunisia: Identification of a major Mediterranean allele. Hum Mutat. 2020;41:115–21.",
+      "volume": "41",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 50,
+  "references-count": 50,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-024-01599-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Combined approaches, including long-read sequencing, address the diagnostic challenge of HYDIN in primary ciliary dyskinesia"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

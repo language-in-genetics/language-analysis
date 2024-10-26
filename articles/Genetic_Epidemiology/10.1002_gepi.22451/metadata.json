@@ -1,0 +1,543 @@
+{
+  "DOI": "10.1002/gepi.22451",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22451",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn this paper, we develop functional ordinal logistic regression (FOLR) models to perform gene‐based analysis of ordinal traits. In the proposed FOLR models, genetic variant data are viewed as stochastic functions of physical positions and the genetic effects are treated as a function of physical positions. The FOLR models are built upon functional data analysis which can be revised to analyze the ordinal traits and high dimension genetic data. The proposed methods are capable of dealing with dense genotype data which is usually encountered in analyzing the next‐generation sequencing data. The methods are flexible and can analyze three types of genetic data: (1) rare variants only, (2) common variants only, and (3) a combination of rare and common variants. Simulation studies show that the likelihood ratio test statistics of the FOLR models control type I errors well and have good power performance. The proposed methods achieve the goals of analyzing ordinal traits directly, reducing high dimensionality of dense genetic variants, being computationally manageable, facilitating model convergence, properly controlling type I errors, and maintaining high power levels. The FOLR models are applied to analyze Age‐Related Eye Disease Study data, in which two genes are found to strongly associate with four ordinal traits.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22451"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-07-26"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-01-20"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-04-19"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-4837-3194",
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics, Department of Preventive Medicine University of Tennessee Health Science Center Memphis Tennessee USA"
+        },
+        {
+          "name": "Computational and Statistical Genomics Branch, National Human Genome Research Institute National Institutes of Health Baltimore Maryland USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Chiu",
+      "given": "Chi‐Yang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center Washington District of Columbia USA"
+        }
+      ],
+      "family": "Wang",
+      "given": "Shuqi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center Washington District of Columbia USA"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Bingsong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center Washington District of Columbia USA"
+        }
+      ],
+      "family": "Luo",
+      "given": "Yutong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics, Genomics and Informatics University of Tennessee Health Science Center Memphis Tennessee USA"
+        }
+      ],
+      "family": "Simpson",
+      "given": "Claire",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Academy of Mathematics and Systems Science Chinese Academy of Sciences Beijing China"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Computational and Statistical Genomics Branch, National Human Genome Research Institute National Institutes of Health Baltimore Maryland USA"
+        }
+      ],
+      "family": "Wilson",
+      "given": "Alexander F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Computational and Statistical Genomics Branch, National Human Genome Research Institute National Institutes of Health Baltimore Maryland USA"
+        }
+      ],
+      "family": "Bailey‐Wilson",
+      "given": "Joan E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "National Eye Institute National Institute of Health Bethesda Maryland USA"
+        }
+      ],
+      "family": "Agron",
+      "given": "Elvira",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "National Eye Institute National Institute of Health Bethesda Maryland USA"
+        }
+      ],
+      "family": "Chew",
+      "given": "Emily Y.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science and Engineering Technology University of Maryland Eastern Shore Princess Anne Maryland USA"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Jun",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0635-5796",
+      "affiliation": [
+        {
+          "name": "Human Genetics Center University of Texas–Houston Houston Texas USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Xiong",
+      "given": "Momiao",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7603-2135",
+      "affiliation": [
+        {
+          "name": "Computational and Statistical Genomics Branch, National Human Genome Research Institute National Institutes of Health Baltimore Maryland USA"
+        },
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center Washington District of Columbia USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Fan",
+      "given": "Ruzong",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        19
+      ]
+    ],
+    "date-time": "2022-04-19T11:05:31Z",
+    "timestamp": 1650366331000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        23
+      ]
+    ],
+    "date-time": "2023-08-23T22:05:03Z",
+    "timestamp": 1692828303000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        31
+      ]
+    ],
+    "date-time": "2024-01-31T13:11:27Z",
+    "timestamp": 1706706687717
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5-6",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        19
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5-6",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            19
+          ]
+        ],
+        "date-time": "2022-04-19T00:00:00Z",
+        "timestamp": 1650326400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22451",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22451",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22451",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "234-255",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        19
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "The Age‐Related Eye Disease Study (AREDS): design implications. AREDS report no. 1",
+      "author": "Age‐Related Eye Disease Study Research Group",
+      "first-page": "573",
+      "journal-title": "Control Clinical Trials",
+      "key": "e_1_2_8_2_1",
+      "volume": "206",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1016/S0002-9394(01)01218-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1001/archopht.123.11.1484",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1002/9780470594001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "author": "Agresti A.",
+      "key": "e_1_2_8_6_1",
+      "volume-title": "An introduction to categorical data analysis",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1201/b17211",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "author": "Boor C.",
+      "key": "e_1_2_8_8_1",
+      "volume-title": "A practical guide to splines, applied mathematical sciences",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1002/gepi.21757",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21840",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21947",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "author": "Ferraty F.",
+      "key": "e_1_2_8_12_1",
+      "volume-title": "The Oxford handbook of functional data analysis",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1201/b21296",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1038/ng.2578",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1038/ng.3448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22276",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1167/iovs.15-18571",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4614-3655-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20486",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.2307/2347760",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1007/978-0-387-98185-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1007/b98888",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_22_1",
+      "unstructured": "Ramsay J. O. \u0026Silverman B. W.(2005).Functional Data Analysis Second Edition.New York:Springer."
+    },
+    {
+      "article-title": "fda: functional data analysis",
+      "author": "Ramsay J. O.",
+      "first-page": "142",
+      "issue": "4",
+      "journal-title": "R Package Version",
+      "key": "e_1_2_8_23_1",
+      "volume": "2",
+      "year": "2014"
+    },
+    {
+      "author": "Ross S. M.",
+      "key": "e_1_2_8_24_1",
+      "volume-title": "Stochastic processes",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1101/gr.3709305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1001/jama.297.16.1793",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1038/nature06258",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1007/978-0-387-21706-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1007/s00439-012-1176-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1038/ng.2554",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1534/g3.119.400293",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1038/s10038-017-0354-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1534/genetics.117.300673",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1515/sagmb-2017-0066",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1111/ahg.12142",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    }
+  ],
+  "reference-count": 35,
+  "references-count": 35,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22451"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Gene‐level association analysis of ordinal traits with functional ordinal logistic regressions"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

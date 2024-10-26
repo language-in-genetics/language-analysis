@@ -1,0 +1,502 @@
+{
+  "DOI": "10.1002/gepi.21993",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21993",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eKernel machine learning methods, such as the SNP‐set kernel association test (SKAT), have been widely used to test associations between traits and genetic polymorphisms. In contrast to traditional single‐SNP analysis methods, these methods are designed to examine the joint effect of a set of related SNPs (such as a group of SNPs within a gene or a pathway) and are able to identify sets of SNPs that are associated with the trait of interest. However, as with many multi‐SNP testing approaches, kernel machine testing can draw conclusion only at the SNP‐set level, and does not directly inform on which one(s) of the identified SNP set is actually driving the associations. A recently proposed procedure, KerNel Iterative Feature Extraction (KNIFE), provides a general framework for incorporating variable selection into kernel machine methods. In this article, we focus on quantitative traits and relatively common SNPs, and adapt the KNIFE procedure to genetic association studies and propose an approach to identify driver SNPs after the application of SKAT to gene set analysis. Our approach accommodates several kernels that are widely used in SNP analysis, such as the linear kernel and the Identity by State (IBS) kernel. The proposed approach provides practically useful utilities to prioritize SNPs, and fills the gap between SNP set analysis and biological functional studies. Both simulation studies and real data application are used to demonstrate the proposed approach.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21993"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center Seattle Washington United States of America"
+        }
+      ],
+      "family": "He",
+      "given": "Qianchuan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard School of Public Health Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Cai",
+      "given": "Tianxi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center Seattle Washington United States of America"
+        }
+      ],
+      "family": "Liu",
+      "given": "Yang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center Seattle Washington United States of America"
+        }
+      ],
+      "family": "Zhao",
+      "given": "Ni",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology Branch NIEHS, Research Triangle Park North Carolina United States of America"
+        }
+      ],
+      "family": "Harmon",
+      "given": "Quaker E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry and Behavioral Sciences Emory University School of Medicine Atlanta Georgia United States of America"
+        }
+      ],
+      "family": "Almli",
+      "given": "Lynn M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Translational Research in Psychiatry Max‐Planck Institute of Psychiatry Munich Germany"
+        }
+      ],
+      "family": "Binder",
+      "given": "Elisabeth B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of North Carolina Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Engel",
+      "given": "Stephanie M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Depression \u0026amp; Anxiety Disorders McLean Hospital Belmont Massachusetts United States of America"
+        }
+      ],
+      "family": "Ressler",
+      "given": "Kerry J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Human Genetics Emory University School of Medicine  Atlanta Georgia United States of America"
+        }
+      ],
+      "family": "Conneely",
+      "given": "Karen N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard School of Public Health Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Lin",
+      "given": "Xihong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center Seattle Washington United States of America"
+        }
+      ],
+      "family": "Wu",
+      "given": "Michael C.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        8,
+        4
+      ]
+    ],
+    "date-time": "2016-08-04T03:17:09Z",
+    "timestamp": 1470280629000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T19:39:29Z",
+    "timestamp": 1696361969000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100005895",
+      "doi-asserted-by": "publisher",
+      "name": "Fred Hutchinson Cancer Research Center"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "R21HD060207",
+        "R01HG007508",
+        "R01HG006292",
+        "R01MH071537",
+        "R01MH096764",
+        "P50 MH106999"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000066",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Environmental Health Sciences"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        1
+      ]
+    ],
+    "date-time": "2024-04-01T06:27:34Z",
+    "timestamp": 1711952854626
+  },
+  "is-referenced-by-count": 13,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        8,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            3
+          ]
+        ],
+        "date-time": "2016-08-03T00:00:00Z",
+        "timestamp": 1470182400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21993",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21993",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21993",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "722-731",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        8,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        8,
+        3
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2016,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/0471142905.hg0720s76",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_2_1",
+      "unstructured": "Adzhubei I. Jordan D. M. \u0026Sunyaev S. R.(2013).Predicting functional effect of human missense mutations using PolyPhen‐2.Current Protocols in Human Genetics Chap. 7:Unit7.20."
+    },
+    {
+      "DOI": "10.1080/10618600.2012.681213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1038/ng.2962",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20543",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1080/00401706.1995.10484371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1161/circ.127.suppl_12.AP054",
+      "article-title": "Abstract P054: Rare variants in and near IRS1 are associated with fasting insulin in CHARGE‐S",
+      "author": "Cornes B.",
+      "doi-asserted-by": "crossref",
+      "first-page": "AP054",
+      "journal-title": "Circulation",
+      "key": "e_1_2_7_7_1",
+      "volume": "127",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.10.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1161/01.STR.0000115161.10646.67",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1214/07-AOAS131",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1016/j.genhosppsych.2009.05.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa010856",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq600",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1093/biomet/84.2.309",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1214/009053606000000722",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2007.00799.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.3816/CCC.2006.n.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1073/pnas.162006499",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1097/00001648-200111000-00010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1101/gr.3709305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "article-title": "Regression shrinkage and selection via the Lasso",
+      "author": "Tibshirani R.",
+      "first-page": "267",
+      "journal-title": "Journal of the Royal Statistical Society Series B",
+      "key": "e_1_2_7_23_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1086/522374",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "article-title": "Effect of a single nucleotide polymorphism in miR‐I46a on COX‐2 protein expression and lung function in smokers with chronic obstructive pulmonary disease",
+      "author": "Wang R.",
+      "first-page": "463",
+      "journal-title": "International Journal of COPD",
+      "key": "e_1_2_7_25_1",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21715",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1186/s12863-015-0182-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1038/ncomms6114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1214/09-AOS729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    }
+  ],
+  "reference-count": 33,
+  "references-count": 33,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21993"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Prioritizing individual genetic variants after kernel machine testing using variable selection"
+  ],
+  "type": "journal-article",
+  "volume": "40"
+}

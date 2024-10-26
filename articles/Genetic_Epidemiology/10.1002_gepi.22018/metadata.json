@@ -1,0 +1,547 @@
+{
+  "DOI": "10.1002/gepi.22018",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22018",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eThe multivariate regression model is a useful tool to explore complex associations between two kinds of molecular markers, which enables the understanding of the biological pathways underlying disease etiology. For a set of correlated response variables, accounting for such dependency can increase statistical power. Motivated by integrative genomic data analyses, we propose a new methodology—sparse multivariate factor analysis regression model (smFARM), in which correlations of response variables are assumed to follow a factor analysis model with latent factors. This proposed method not only allows us to address the challenge that the number of association parameters is larger than the sample size, but also to adjust for unobserved genetic and/or nongenetic factors that potentially conceal the underlying response‐predictor associations. The proposed smFARM is implemented by the EM algorithm and the blockwise coordinate descent algorithm. The proposed methodology is evaluated and compared to the existing methods through extensive simulation studies. Our results show that accounting for latent factors through the proposed smFARM can improve sensitivity of signal detection and accuracy of sparse association map estimation. We illustrate smFARM by two integrative genomics analysis examples, a breast cancer dataset, and an ovarian cancer dataset, to assess the relationship between DNA copy numbers and gene expression arrays to understand genetic regulatory patterns relevant to the disease. We identify two trans‐hub regions: one in cytoband 17q12 whose amplification influences the RNA expression levels of important breast cancer genes, and the other in cytoband 9q21.32‐33, which is associated with chemoresistance in ovarian cancer.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22018"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Merck \u0026amp; Co North Wales PA USA"
+        }
+      ],
+      "family": "Zhou",
+      "given": "Yan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Icahn School of Medicine at Mount Sinai New York NY USA"
+        }
+      ],
+      "family": "Wang",
+      "given": "Pei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Fred Hutchinson Cancer Research Center Seattle WA USA"
+        }
+      ],
+      "family": "Wang",
+      "given": "Xianlong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "University of Michigan Ann Arbor MI USA"
+        }
+      ],
+      "family": "Zhu",
+      "given": "Ji",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "University of Michigan Ann Arbor MI USA"
+        }
+      ],
+      "family": "Song",
+      "given": "Peter X.‐K.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        10
+      ]
+    ],
+    "date-time": "2016-11-10T12:05:01Z",
+    "timestamp": 1478779501000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T19:39:39Z",
+    "timestamp": 1696361979000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "U24CA160034"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000066",
+      "award": [
+        "R01GM082802, R01GM108711",
+        "P01CA53996"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Environmental Health Sciences"
+    },
+    {
+      "DOI": "10.13039/100000121",
+      "award": [
+        "DMS1513595"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Division of Mathematical Sciences"
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "R01ES024732",
+        "NIH P01ES022844"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        5
+      ]
+    ],
+    "date-time": "2024-04-05T17:35:35Z",
+    "timestamp": 1712338535135
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+      "content-version": "am",
+      "delay-in-days": 365,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            11,
+            10
+          ]
+        ],
+        "date-time": "2017-11-10T00:00:00Z",
+        "timestamp": 1510272000000
+      }
+    },
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            10
+          ]
+        ],
+        "date-time": "2016-11-10T00:00:00Z",
+        "timestamp": 1478736000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22018",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22018",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22018",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22018",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22018",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22018",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "70-80",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "Eigenvalue ratio test for the number of factors",
+      "author": "Ahn S. C.",
+      "first-page": "1203",
+      "journal-title": "Econometrica",
+      "key": "e_1_2_9_2_1",
+      "volume": "1",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/978-1-4612-0919-5_38",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1073/pnas.97.18.10101",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "key": "e_1_2_9_5_1",
+      "unstructured": "Anderson T. W. \u0026Rubin H.(1956).Statistical inference in factor analysis.In Proceedings of the Third Berkeley Symposium on mathematical statistics and probability. Vol.5 pp.111–150.Berkeley and Los Angeles:University of California Press."
+    },
+    {
+      "DOI": "10.1111/1468-0262.00273",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.2307/2533213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1002/gcc.20366",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1038/nature10983",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1214/009053604000000067",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1214/08-AOAS215",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "DOI": "10.1198/jasa.2009.tm08332",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1126/science.1081900",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "DOI": "10.1038/nrg2383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_15_1"
+    },
+    {
+      "DOI": "10.1016/0024-3795(88)90223-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-09-0709",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1096/fasebj.28.1_supplement.1047.8",
+      "article-title": "Loss of tumor necrosis factor superfamily genes in breast cancer cell lines (1047.8)",
+      "author": "Hunter D.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1047",
+      "journal-title": "FASEB Journal",
+      "key": "e_1_2_9_18_1",
+      "volume": "28",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/35075138",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1016/j.semcancer.2014.07.007",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_9_20_1",
+      "unstructured": "Kirsammer G. Strizzi L. Margaryan N. V. Gilgur A. Hyser M. Atkinson J. ... Hendrix M. J.(2014).Nodal signaling promotes a tumorigenic phenotype in human breast cancer.Seminars in Cancer Biology 29 40–50."
+    },
+    {
+      "DOI": "10.4161/cbt.7.12.7460",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_21_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-7-216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1093/bib/bbs005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "DOI": "10.1186/bcr2824",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.1002/ijc.28741",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030161",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "DOI": "10.1016/j.stem.2011.10.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "article-title": "Boosting for high‐multivariate responses in high‐dimensional linear regression",
+      "author": "Lutz R. W.",
+      "first-page": "471",
+      "journal-title": "Statistica Sinica",
+      "key": "e_1_2_9_28_1",
+      "volume": "16",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.3982/ECTA6964",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_29_1"
+    },
+    {
+      "article-title": "Specific copy number alterations associated with docetaxel/carboplatin response in ovarian carcinomas",
+      "author": "Österberg L.",
+      "first-page": "4451",
+      "journal-title": "Anticancer Research",
+      "key": "e_1_2_9_30_1",
+      "volume": "30",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1214/09-AOAS271",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "DOI": "10.1038/12640",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_32_1"
+    },
+    {
+      "DOI": "10.1073/pnas.162471999",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_9_33_1",
+      "unstructured": "Pollack J. R. Sorlie T. Perou C. M. Rees C. A. Jeffrey S. S. Lonning P. E. ...Brown P. O.(2002).Microarray analysis reveals a major direct role of DNA copy number alteration in the transcriptional program of human breast tumors.Proceedings of the National Academy of Sciences of the United States of America 99 12963–12968."
+    },
+    {
+      "DOI": "10.1006/jmva.1995.1069",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_34_1"
+    },
+    {
+      "DOI": "10.1214/aos/1176344136",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_35_1"
+    },
+    {
+      "DOI": "10.1080/10618600.2012.681250",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_36_1"
+    },
+    {
+      "DOI": "10.1007/978-3-540-78839-3_35",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_37_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_38_1"
+    },
+    {
+      "DOI": "10.1111/1467-9868.00196",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_39_1"
+    },
+    {
+      "DOI": "10.1198/004017005000000139",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_40_1"
+    },
+    {
+      "DOI": "10.1089/cmb.2009.0209",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_41_1"
+    },
+    {
+      "DOI": "10.1007/0-306-47815-3_5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_42_1"
+    },
+    {
+      "author": "Wang P.",
+      "key": "e_1_2_9_43_1",
+      "volume-title": "Statistical methods for CGH array analysis",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00532.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_44_1"
+    },
+    {
+      "DOI": "10.1109/TCBB.2011.105",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_45_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1962.10480664",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_46_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_47_1"
+    }
+  ],
+  "reference-count": 46,
+  "references-count": 46,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22018"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Sparse multivariate factor analysis regression models and its applications to integrative genomics analysis"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

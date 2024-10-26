@@ -1,0 +1,1300 @@
+{
+  "DOI": "10.1186/s40246-023-00521-4",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00521-4",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eOver the last century, outbreaks and pandemics have occurred with disturbing regularity, necessitating advance preparation and large-scale, coordinated response. Here, we developed a machine learning predictive model of disease severity and length of hospitalization for COVID-19, which can be utilized as a platform for future unknown viral outbreaks. We combined untargeted metabolomics on plasma data obtained from COVID-19 patients (n = 111) during hospitalization and healthy controls (n = 342), clinical and comorbidity data (n = 508) to build this patient triage platform, which consists of three parts: (i) the clinical decision tree, which amongst other biomarkers showed that patients with increased eosinophils have worse disease prognosis and can serve as a new potential biomarker with high accuracy (AUC = 0.974), (ii) the estimation of patient hospitalization length with ± 5 days error (R\u003cjats:sup\u003e2\u003c/jats:sup\u003e = 0.9765) and (iii) the prediction of the disease severity and the need of patient transfer to the intensive care unit. We report a significant decrease in serotonin levels in patients who needed positive airway pressure oxygen and/or were intubated. Furthermore, 5-hydroxy tryptophan, allantoin, and glucuronic acid metabolites were increased in COVID-19 patients and collectively they can serve as biomarkers to predict disease progression. The ability to quickly identify which patients will develop life-threatening illness would allow the efficient allocation of medical resources and implementation of the most effective medical interventions. We would advocate that the same approach could be utilized in future viral outbreaks to help hospitals triage patients more effectively and improve patient outcomes while optimizing healthcare resources.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "521"
+  ],
+  "article-number": "80",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "14 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "30 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "29 August 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "VV, KV NST are members of the editorial board of Human Genomics."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Charkoftaki",
+      "given": "Georgia",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Aalizadeh",
+      "given": "Reza",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Santos-Neto",
+      "given": "Alvaro",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tan",
+      "given": "Wan Ying",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Davidson",
+      "given": "Emily A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nikolopoulou",
+      "given": "Varvara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Yewei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thompson",
+      "given": "Brian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Furnary",
+      "given": "Tristan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Ying",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wunder",
+      "given": "Elsio A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Coppi",
+      "given": "Andreas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schulz",
+      "given": "Wade",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Iwasaki",
+      "given": "Akiko",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pierce",
+      "given": "Richard W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cruz",
+      "given": "Charles S. Dela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Desir",
+      "given": "Gary V.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kaminski",
+      "given": "Naftali",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Farhadian",
+      "given": "Shelli",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Veselkov",
+      "given": "Kirill",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Datta",
+      "given": "Rupak",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Campbell",
+      "given": "Melissa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thomaidis",
+      "given": "Nikolaos S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ko",
+      "given": "Albert I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Grubaugh",
+      "given": "Nathan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nelson",
+      "given": "Allison",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wyllie",
+      "given": "Anne L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Casanovas-Massana",
+      "given": "Arnau",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "White",
+      "given": "Elizabeth B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chiorazzi",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rainone",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Earnest",
+      "given": "Rebecca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lapidus",
+      "given": "Sarah",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lim",
+      "given": "Joseph",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nakahata",
+      "given": "Maura",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nunez",
+      "given": "Angela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shepard",
+      "given": "Denise",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Matos",
+      "given": "Irene",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Strong",
+      "given": "Yvette",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Anastasio",
+      "given": "Kelly",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brower",
+      "given": "Kristina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kuang",
+      "given": "Maxine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Muenker",
+      "given": "M. Catherine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moore",
+      "given": "Adam J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rahming",
+      "given": "Harold",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Glick",
+      "given": "Laura",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Silva",
+      "given": "Erin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bermejo",
+      "given": "Santos",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vijayakumar",
+      "given": "Pavithra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Geng",
+      "given": "Bertie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fournier",
+      "given": "John",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Minasyan",
+      "given": "Maksym",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bickerton",
+      "given": "Sean",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Linehan",
+      "given": "Melissa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wong",
+      "given": "Patrick",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Goldman-Israelow",
+      "given": "Benjamin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Martin",
+      "given": "Anjelica",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rice",
+      "given": "Tyler",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Khoury-Hanold",
+      "given": "William",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nouws",
+      "given": "Jessica",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "McDonald",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rose",
+      "given": "Kadi-Ann",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cao",
+      "given": "Yiyun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sharma",
+      "given": "Lokesh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smolgovsky",
+      "given": "Mikhail",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Obaid",
+      "given": "Abeer",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "DeIuliis",
+      "given": "Giuseppe",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Park",
+      "given": "Hong-Jai",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sonnert",
+      "given": "Nicole",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Velazquez",
+      "given": "Sofia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Peng",
+      "given": "Xiaohua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Askenase",
+      "given": "Michael H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Todeasa",
+      "given": "Codruta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bucklin",
+      "given": "Molly L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Batsu",
+      "given": "Maria",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Robertson",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Balkcom",
+      "given": "Natasha",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Yicong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lin",
+      "given": "Zitong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dorgay",
+      "given": "Coriann",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Borg",
+      "given": "Ryan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Di Giuseppe",
+      "given": "Erendira Carmen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Young",
+      "given": "H. Patrick",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Herbst",
+      "given": "Roy S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thompson",
+      "given": "David C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vasiliou",
+      "given": "Vasilis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "Yale IMPACT Study Team",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        29
+      ]
+    ],
+    "date-time": "2023-08-29T00:02:09Z",
+    "timestamp": 1693267329000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        19
+      ]
+    ],
+    "date-time": "2023-11-19T09:32:11Z",
+    "timestamp": 1700386331000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100020044",
+      "award": [
+        "Yale Rapid Relief",
+        "Yale Rapid Relief"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Yale School of Public Health, Yale University"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "3R21AA028432"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        23
+      ]
+    ],
+    "date-time": "2024-02-23T15:45:24Z",
+    "timestamp": 1708703124046
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        29
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            29
+          ]
+        ],
+        "date-time": "2023-08-29T00:00:00Z",
+        "timestamp": 1693267200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            29
+          ]
+        ],
+        "date-time": "2023-08-29T00:00:00Z",
+        "timestamp": 1693267200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00521-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00521-4/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00521-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        29
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        29
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/s2213-2600(20)30079-5",
+      "author": "X Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "475",
+      "journal-title": "Lancet Respir Med",
+      "key": "521_CR1",
+      "unstructured": "Yang X, et al. Clinical course and outcomes of critically ill patients with SARS-CoV-2 pneumonia in Wuhan, China: a single-centered, retrospective, observational study. Lancet Respir Med. 2020;8:475–81. https://doi.org/10.1016/s2213-2600(20)30079-5.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.2147/ceor.S338225",
+      "author": "F Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "293",
+      "journal-title": "Clinicoecon Outcomes Res",
+      "key": "521_CR2",
+      "unstructured": "Richards F, et al. Economic burden of COVID-19: a systematic review. Clinicoecon Outcomes Res. 2022;14:293–307. https://doi.org/10.2147/ceor.S338225.",
+      "volume": "14",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/s0140-6736(20)30558-4",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR3",
+      "unstructured": "Wang T, et al. Comorbidities and multi-organ injuries in the treatment of COVID-19. Lancet 395:e52. https://doi.org/10.1016/s0140-6736(20)30558-4 (2020)."
+    },
+    {
+      "DOI": "10.1183/13993003.01028-2020",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR4",
+      "unstructured": "Rello J, Storti E, Belliato M, Serrano R. Clinical phenotypes of SARS-CoV-2: implications for clinicians and researchers. Eur Respir J. 2001028, https://doi.org/10.1183/13993003.01028-2020 (2020)."
+    },
+    {
+      "DOI": "10.1128/cmr.00133-20",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR5",
+      "unstructured": "Synowiec A, Szczepański A, Barreto-Duran E, Lie LK, Pyrc K. Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2): a systemic infection. Clin Microbiol Rev. 34. https://doi.org/10.1128/cmr.00133-20 (2021)."
+    },
+    {
+      "DOI": "10.1371/journal.pone.0248956",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR6",
+      "unstructured": "Lusczek ER. et al. Characterizing COVID-19 clinical phenotypes and associated comorbidities and complication profiles. PLoS One. 16:e0248956, https://doi.org/10.1371/journal.pone.0248956 (2021)."
+    },
+    {
+      "DOI": "10.1007/s00134-020-06120-4",
+      "author": "E Azoulay",
+      "doi-asserted-by": "publisher",
+      "first-page": "1651",
+      "journal-title": "Intensive Care Med",
+      "key": "521_CR7",
+      "unstructured": "Azoulay E, et al. Clinical phenotypes of critically ill COVID-19 patients. Intensive Care Med. 2020;46:1651–2. https://doi.org/10.1007/s00134-020-06120-4.",
+      "volume": "46",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/s1473-3099(21)00019-0",
+      "author": "B Gutiérrez-Gutiérrez",
+      "doi-asserted-by": "publisher",
+      "first-page": "783",
+      "journal-title": "Lancet Infect Dis",
+      "key": "521_CR8",
+      "unstructured": "Gutiérrez-Gutiérrez B, et al. Identification and validation of clinical phenotypes with prognostic implications in patients admitted to hospital with COVID-19: a multicentre cohort study. Lancet Infect Dis. 2021;21:783–92. https://doi.org/10.1016/s1473-3099(21)00019-0.",
+      "volume": "21",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1021/acs.estlett.9b00142",
+      "author": "M-P Martinez-Moral",
+      "doi-asserted-by": "publisher",
+      "first-page": "283",
+      "journal-title": "Environ Sci Technol Lett",
+      "key": "521_CR9",
+      "unstructured": "Martinez-Moral M-P, Kannan K. Allantoin as a marker of oxidative stress: inter- and intraindividual variability in urinary concentrations in healthy individuals. Environ Sci Technol Lett. 2019;6:283–8. https://doi.org/10.1021/acs.estlett.9b00142.",
+      "volume": "6",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.heliyon.2022.e09544",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR10",
+      "unstructured": "Eteraf-Oskouei T, Najafi M. The relationship between the serotonergic system and COVID-19 disease: a review. Heliyon 8:e09544, https://doi.org/10.1016/j.heliyon.2022.e09544 (2022)."
+    },
+    {
+      "DOI": "10.1172/jci.insight.140327",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR11",
+      "unstructured": "Thomas, T., et al. COVID-19 infection alters kynurenine and fatty acid metabolism, correlating with IL-6 levels and renal status. JCI Insight. 5, https://doi.org/10.1172/jci.insight.140327 (2020)."
+    },
+    {
+      "DOI": "10.1080/00401706.1977.10489581",
+      "author": "RD Snee",
+      "doi-asserted-by": "publisher",
+      "first-page": "415",
+      "journal-title": "Technometrics",
+      "key": "521_CR12",
+      "unstructured": "Snee RD. Validation of regression models: methods and examples. Technometrics. 1977;19:415–28. https://doi.org/10.1080/00401706.1977.10489581.",
+      "volume": "19",
+      "year": "1977"
+    },
+    {
+      "key": "521_CR13",
+      "unstructured": "McPherson RA, Pincus MR. Henry's clinical diagnosis and management by laboratory methods, 24 edn (2021)."
+    },
+    {
+      "key": "521_CR14",
+      "unstructured": "Hosten AO. In Walker HK, Hall WD, Hurst JW, editors, Clinical methods: the history, physical, and laboratory examinations (Butterworths Copyright © 1990, Butterworth Publishers, a division of Reed Publishing., 1990)."
+    },
+    {
+      "DOI": "10.1053/jpan.2003.50013",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR15",
+      "unstructured": "George-Gay B, Parker K. Understanding the complete blood count with differential. J Perianesth Nurs. 18:96–114; quiz 115–117, https://doi.org/10.1053/jpan.2003.50013 (2003)."
+    },
+    {
+      "key": "521_CR16",
+      "unstructured": "https://www.mountsinai.org/health-library/tests/aspartate-aminotransferase-ast-blood-test"
+    },
+    {
+      "DOI": "10.12659/aot.889188",
+      "author": "J Rozga",
+      "doi-asserted-by": "publisher",
+      "first-page": "205",
+      "journal-title": "Ann Transpl",
+      "key": "521_CR17",
+      "unstructured": "Rozga J, Piątek T, Małkowski P. Human albumin: old, new, and emerging applications. Ann Transpl. 2013;18:205–17. https://doi.org/10.12659/aot.889188.",
+      "volume": "18",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/s13613-021-00911-8",
+      "author": "RR Bruno",
+      "doi-asserted-by": "publisher",
+      "first-page": "128",
+      "journal-title": "Ann Intensive Care",
+      "key": "521_CR18",
+      "unstructured": "Bruno RR, et al. Lactate is associated with mortality in very old intensive care patients suffering from COVID-19: results from an international observational study of 2860 patients. Ann Intensive Care. 2021;11:128. https://doi.org/10.1186/s13613-021-00911-8.",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1097/mol.0000000000000144",
+      "author": "LM Berends",
+      "doi-asserted-by": "publisher",
+      "first-page": "10",
+      "journal-title": "Curr Opin Lipidol",
+      "key": "521_CR19",
+      "unstructured": "Berends LM, van der Velpen V, Cassidy A. Flavan-3-ols, theobromine, and the effects of cocoa and chocolate on cardiometabolic risk factors. Curr Opin Lipidol. 2015;26:10–9. https://doi.org/10.1097/mol.0000000000000144.",
+      "volume": "26",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.18632/aging.102281",
+      "author": "A Ho",
+      "doi-asserted-by": "publisher",
+      "first-page": "7694",
+      "journal-title": "Aging (Albany NY)",
+      "key": "521_CR20",
+      "unstructured": "Ho A, et al. Circulating glucuronic acid predicts healthspan and longevity in humans and mice. Aging (Albany NY). 2019;11:7694–706. https://doi.org/10.18632/aging.102281.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ab.2019.113509",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR21",
+      "unstructured": "Kozlik P, Hasikova L, Stiburkova B, Zavada J, Kalikova K. Rapid and reliable HILIC-MS/MS method for monitoring allantoin as a biomarker of oxidative stress. Anal Biochem. 589:113509, https://doi.org/10.1016/j.ab.2019.113509 (2020)."
+    },
+    {
+      "DOI": "10.1016/j.xcrm.2021.100369",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR22",
+      "unstructured": "Sindelar, M., et al. Longitudinal metabolomics of human plasma reveals prognostic markers of COVID-19 disease severity. Cell Rep Med 2:100369, https://doi.org/10.1016/j.xcrm.2021.100369 (2021)."
+    },
+    {
+      "DOI": "10.1177/1756284818815334",
+      "author": "A Acovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "175628481881533",
+      "journal-title": "Therap Adv Gastroenterol",
+      "key": "521_CR23",
+      "unstructured": "Acovic A, et al. Role of indoleamine 2,3-dioxygenase in pathology of the gastrointestinal tract. Therap Adv Gastroenterol. 2018;11:1756284818815334. https://doi.org/10.1177/1756284818815334.",
+      "volume": "11",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/7854_2016_28",
+      "author": "A Halaris",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "journal-title": "Curr Top Behav Neurosci",
+      "key": "521_CR24",
+      "unstructured": "Halaris A. Inflammation-associated co-morbidity between depression and cardiovascular disease. Curr Top Behav Neurosci. 2017;31:45–70. https://doi.org/10.1007/7854_2016_28.",
+      "volume": "31",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1001/jama.2020.22760",
+      "author": "EJ Lenze",
+      "doi-asserted-by": "publisher",
+      "first-page": "2292",
+      "journal-title": "JAMA",
+      "key": "521_CR25",
+      "unstructured": "Lenze EJ, et al. Fluvoxamine vs placebo and clinical deterioration in outpatients with symptomatic COVID-19: a randomized clinical trial. JAMA. 2020;324:2292–300. https://doi.org/10.1001/jama.2020.22760.",
+      "volume": "324",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/ofid/ofab050",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR26",
+      "unstructured": "Seftel D, Boulware DR. Prospective cohort of fluvoxamine for early treatment of coronavirus disease 19. Open Forum Infect Dis 8:ofab050, https://doi.org/10.1093/ofid/ofab050 (2021)."
+    },
+    {
+      "DOI": "10.1159/000522115",
+      "author": "AP Santos",
+      "doi-asserted-by": "publisher",
+      "first-page": "1039",
+      "journal-title": "Neuroendocrinology",
+      "key": "521_CR27",
+      "unstructured": "Santos AP, Couto CF, Pereira SS, Monteiro MP. Is serotonin the missing link between COVID-19 course of severity in patients with diabetes and obesity? Neuroendocrinology. 2022;112:1039–45. https://doi.org/10.1159/000522115.",
+      "volume": "112",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/jcla.24257",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR28",
+      "unstructured": "Cihan M, et al. Kynurenine pathway in Coronavirus disease (COVID-19): potential role in prognosis. J Clin Lab Anal. 36, e24257. https://doi.org/10.1002/jcla.24257 (2022)."
+    },
+    {
+      "DOI": "10.1038/s41598-022-14758-x",
+      "author": "I Bendavid",
+      "doi-asserted-by": "publisher",
+      "first-page": "10573",
+      "journal-title": "Sci Rep",
+      "key": "521_CR29",
+      "unstructured": "Bendavid I, et al. A novel machine learning model to predict respiratory failure and invasive mechanical ventilation in critically ill patients suffering from COVID-19. Sci Rep. 2022;12:10573. https://doi.org/10.1038/s41598-022-14758-x.",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41467-022-28621-0",
+      "author": "YM Mueller",
+      "doi-asserted-by": "publisher",
+      "first-page": "915",
+      "journal-title": "Nat Commun",
+      "key": "521_CR30",
+      "unstructured": "Mueller YM, et al. Stratification of hospitalized COVID-19 patients into clinical severity progression groups by immuno-phenotyping and machine learning. Nat Commun. 2022;13:915. https://doi.org/10.1038/s41467-022-28621-0.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41598-022-18994-z",
+      "author": "I Shiri",
+      "doi-asserted-by": "publisher",
+      "first-page": "14817",
+      "journal-title": "Sci Rep",
+      "key": "521_CR31",
+      "unstructured": "Shiri I, et al. High-dimensional multinomial multiclass severity scoring of COVID-19 pneumonia using CT radiomics features and machine learning algorithms. Sci Rep. 2022;12:14817. https://doi.org/10.1038/s41598-022-18994-z.",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/S2213-2600(22)00002-9",
+      "author": "JR Baker",
+      "doi-asserted-by": "publisher",
+      "first-page": "545",
+      "journal-title": "Lancet Respir Med",
+      "key": "521_CR32",
+      "unstructured": "Baker JR, et al. Early Th2 inflammation in the upper respiratory mucosa as a predictor of severe COVID-19 and modulation by early treatment with inhaled corticosteroids: a mechanistic analysis. Lancet Respir Med. 2022;10:545–56. https://doi.org/10.1016/S2213-2600(22)00002-9.",
+      "volume": "10",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1152/ajplung.00126.2020",
+      "author": "RJ Mason",
+      "doi-asserted-by": "publisher",
+      "first-page": "L115",
+      "journal-title": "Am J Physiol Lung Cell Mol Physiol",
+      "key": "521_CR33",
+      "unstructured": "Mason RJ. Thoughts on the alveolar phase of COVID-19. Am J Physiol Lung Cell Mol Physiol. 2020;319:L115-l120. https://doi.org/10.1152/ajplung.00126.2020.",
+      "volume": "319",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.2147/ijgm.S312521",
+      "author": "Y Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2785",
+      "journal-title": "China Int J Gen Med",
+      "key": "521_CR34",
+      "unstructured": "Xu Y, et al. Serum albumin levels are a predictor of COVID-19 patient prognosis: evidence from a single cohort in Chongqing. China Int J Gen Med. 2021;14:2785–97. https://doi.org/10.2147/ijgm.S312521.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/emermed-2020-210081",
+      "author": "G Turcato",
+      "doi-asserted-by": "publisher",
+      "first-page": "63",
+      "journal-title": "Emerg Med J",
+      "key": "521_CR35",
+      "unstructured": "Turcato G, et al. Severity of SARS-CoV-2 infection and albumin levels recorded at the first emergency department evaluation: a multicentre retrospective observational study. Emerg Med J. 2022;39:63. https://doi.org/10.1136/emermed-2020-210081.",
+      "volume": "39",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1517/17425247.2015.993313",
+      "author": "D Sleep",
+      "doi-asserted-by": "publisher",
+      "first-page": "793",
+      "journal-title": "Expert Opin Drug Deliv",
+      "key": "521_CR36",
+      "unstructured": "Sleep D. Albumin and its application in drug delivery. Expert Opin Drug Deliv. 2015;12:793–812. https://doi.org/10.1517/17425247.2015.993313.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.2147/ijgm.S102819",
+      "author": "DG Levitt",
+      "doi-asserted-by": "publisher",
+      "first-page": "229",
+      "journal-title": "Int J Gen Med",
+      "key": "521_CR37",
+      "unstructured": "Levitt DG, Levitt MD. Human serum albumin homeostasis: a new look at the roles of synthesis, catabolism, renal and gastrointestinal excretion, and the clinical value of serum albumin measurements. Int J Gen Med. 2016;9:229–55. https://doi.org/10.2147/ijgm.S102819.",
+      "volume": "9",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1111/joim.13403",
+      "author": "D Lapenna",
+      "doi-asserted-by": "publisher",
+      "first-page": "388",
+      "journal-title": "J Intern Med",
+      "key": "521_CR38",
+      "unstructured": "Lapenna D. Regarding: hypoalbuminemia in COVID-19. J Intern Med. 2022;291:388–9. https://doi.org/10.1111/joim.13403.",
+      "volume": "291",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/jcm11030587",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR39",
+      "unstructured": "Zekri-Nechar, K., et al. Albumin binds COVID-19 spike 1 subunit and predicts in-hospital survival of infected patients-possible alteration by glucose. J Clin Med 11. https://doi.org/10.3390/jcm11030587 (2022)."
+    },
+    {
+      "DOI": "10.1515/cclm.2008.244",
+      "author": "R Kand'ár",
+      "doi-asserted-by": "publisher",
+      "first-page": "1270",
+      "journal-title": "Clin Chem Lab Med",
+      "key": "521_CR40",
+      "unstructured": "Kand’ár R, Záková P. Allantoin as a marker of oxidative stress in human erythrocytes. Clin Chem Lab Med. 2008;46:1270–4. https://doi.org/10.1515/cclm.2008.244.",
+      "volume": "46",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1080/00015385.2017.1335104",
+      "author": "E Caussé",
+      "doi-asserted-by": "publisher",
+      "first-page": "397",
+      "journal-title": "Acta Cardiol",
+      "key": "521_CR41",
+      "unstructured": "Caussé E, Fournier P, Roncalli J, Salvayre R, Galinier M. Serum allantoin and aminothiols as biomarkers of chronic heart failure. Acta Cardiol. 2017;72:397–403. https://doi.org/10.1080/00015385.2017.1335104.",
+      "volume": "72",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.5414/cp201582",
+      "author": "M Kurajoh",
+      "doi-asserted-by": "publisher",
+      "first-page": "265",
+      "journal-title": "Int J Clin Pharmacol Ther",
+      "key": "521_CR42",
+      "unstructured": "Kurajoh M, et al. Relationship between serum allantoin and urate in healthy subjects and effects of benzbromarone in gout patients. Int J Clin Pharmacol Ther. 2012;50:265–71. https://doi.org/10.5414/cp201582.",
+      "volume": "50",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.jcf.2016.10.012",
+      "author": "N Dickerhof",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "journal-title": "J Cyst Fibros",
+      "key": "521_CR43",
+      "unstructured": "Dickerhof N, et al. Oxidized glutathione and uric acid as biomarkers of early cystic fibrosis lung disease. J Cyst Fibros. 2017;16:214–21. https://doi.org/10.1016/j.jcf.2016.10.012.",
+      "volume": "16",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/s11064-018-2492-0",
+      "author": "S Camandola",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "journal-title": "Neurochem Res",
+      "key": "521_CR44",
+      "unstructured": "Camandola S, Plick N, Mattson MP. Impact of coffee and cacao purine metabolites on neuroplasticity and neurodegenerative disease. Neurochem Res. 2019;44:214–27. https://doi.org/10.1007/s11064-018-2492-0.",
+      "volume": "44",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s40495-021-00276-3",
+      "author": "R Rolta",
+      "doi-asserted-by": "publisher",
+      "first-page": "149",
+      "journal-title": "Curr Pharmacol Rep",
+      "key": "521_CR45",
+      "unstructured": "Rolta R, et al. Methylxanthines as potential inhibitor of SARS-CoV-2: an in silico approach. Curr Pharmacol Rep. 2022;8:149–70. https://doi.org/10.1007/s40495-021-00276-3.",
+      "volume": "8",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.dmpk.2017.10.002",
+      "author": "R Fujiwara",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "journal-title": "Drug Metab Pharmacokinet",
+      "key": "521_CR46",
+      "unstructured": "Fujiwara R, Yoda E, Tukey RH. Species differences in drug glucuronidation: Humanized UDP-glucuronosyltransferase 1 mice and their application for predicting drug glucuronidation and drug-induced toxicity in humans. Drug Metab Pharmacokinet. 2018;33:9–16. https://doi.org/10.1016/j.dmpk.2017.10.002.",
+      "volume": "33",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.trsl.2017.12.002",
+      "author": "AL Mindikoglu",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "journal-title": "Transl Res",
+      "key": "521_CR47",
+      "unstructured": "Mindikoglu AL, et al. Unique metabolomic signature associated with hepatorenal dysfunction and mortality in cirrhosis. Transl Res. 2018;195:25–47. https://doi.org/10.1016/j.trsl.2017.12.002.",
+      "volume": "195",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nbt.2377",
+      "author": "MC Chambers",
+      "doi-asserted-by": "publisher",
+      "first-page": "918",
+      "journal-title": "Nat Biotechnol",
+      "key": "521_CR48",
+      "unstructured": "Chambers MC, et al. A cross-platform toolkit for mass spectrometry and proteomics. Nat Biotechnol. 2012;30:918–20. https://doi.org/10.1038/nbt.2377.",
+      "volume": "30",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.jhazmat.2021.128194",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR49",
+      "unstructured": "Nikolopoulou V, Aalizadeh R, Nika M-C, Thomaidis NS. TrendProbe: time profile analysis of emerging contaminants by LC-HRMS non-target screening and deep learning convolutional neural network. J Hazard Mater 428:128194, https://doi.org/10.1016/j.jhazmat.2021.128194 (2022)."
+    },
+    {
+      "DOI": "10.1016/j.trac.2014.11.009",
+      "author": "AA Bletsou",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "journal-title": "TrAC Trends Anal Chem",
+      "key": "521_CR50",
+      "unstructured": "Bletsou AA, Jeon J, Hollender J, Archontaki E, Thomaidis NS. Targeted and non-targeted liquid chromatography-mass spectrometric workflows for identification of transformation products of emerging pollutants in the aquatic environment. TrAC Trends Anal Chem. 2015;66:32–44. https://doi.org/10.1016/j.trac.2014.11.009.",
+      "volume": "66",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.18637/jss.v045.i03",
+      "author": "S van Buuren",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "J Stat Softw",
+      "key": "521_CR51",
+      "unstructured": "van Buuren S, Groothuis-Oudshoorn K. mice: multivariate imputation by chained equations in R. J Stat Softw. 2011;45:1–67. https://doi.org/10.18637/jss.v045.i03.",
+      "volume": "45",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/S0003-2670(02)00651-7",
+      "author": "M Daszykowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "91",
+      "journal-title": "Anal Chim Acta",
+      "key": "521_CR52",
+      "unstructured": "Daszykowski M, Walczak B, Massart DL. Representative subset selection. Anal Chim Acta. 2002;468:91–103. https://doi.org/10.1016/S0003-2670(02)00651-7.",
+      "volume": "468",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.chemolab.2006.03.006",
+      "author": "M Daszykowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "journal-title": "Chemom Intell Lab Syst",
+      "key": "521_CR53",
+      "unstructured": "Daszykowski M, et al. TOMCAT: a MATLAB toolbox for multivariate calibration techniques. Chemom Intell Lab Syst. 2007;85:269–77. https://doi.org/10.1016/j.chemolab.2006.03.006.",
+      "volume": "85",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1005752",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR54",
+      "unstructured": "Rohart F, Gautier B, Singh A, Lê Cao K-A. mixOmics: An R package for ‘omics feature selection and multiple data integration. PLOS Comput Biol 13:e1005752, https://doi.org/10.1371/journal.pcbi.1005752 (2017)."
+    },
+    {
+      "DOI": "10.1039/C3AY40582F",
+      "doi-asserted-by": "publisher",
+      "key": "521_CR55",
+      "unstructured": "Ballabio D, Consonni V. Classification tools in chemistry. Part 1: linear models. PLS-DA. Anal Methods 5:3790–8, https://doi.org/10.1039/C3AY40582F (2013)."
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "Mach Learn",
+      "key": "521_CR56",
+      "unstructured": "Breiman L. Random forests. Mach Learn. 2001;45:5–32. https://doi.org/10.1023/A:1010933404324.",
+      "volume": "45",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/s42256-019-0138-9",
+      "author": "SM Lundberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "journal-title": "Nate Mach Intell",
+      "key": "521_CR57",
+      "unstructured": "Lundberg SM, et al. From local explanations to global understanding with explainable AI for trees. Nate Mach Intell. 2020;2:56–67. https://doi.org/10.1038/s42256-019-0138-9.",
+      "volume": "2",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 57,
+  "references-count": 57,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00521-4"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "An AI-powered patient triage platform for future viral outbreaks using COVID-19 as a disease model"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

@@ -1,0 +1,1367 @@
+{
+  "DOI": "10.1007/s00439-023-02575-9",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-023-02575-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eEpidemiological studies demonstrate an association between migraine and chronic kidney disease (CKD), while the genetic basis underlying the phenotypic association has not been investigated. We aimed to help avoid unnecessary interventions in individuals with migraine through the investigation of phenotypic and genetic relationships underlying migraine, CKD, and kidney function. We first evaluated phenotypic associations using observational data from UK Biobank (\u003cjats:italic\u003eN\u003c/jats:italic\u003e = 255,896). We then investigated genetic relationships leveraging genomic data in European ancestry for migraine (\u003cjats:italic\u003eN\u003c/jats:italic\u003e\u003cjats:sub\u003ecase\u003c/jats:sub\u003e/\u003cjats:italic\u003eN\u003c/jats:italic\u003e\u003cjats:sub\u003econtrol\u003c/jats:sub\u003e = 48,975/540,381), CKD (\u003cjats:italic\u003eN\u003c/jats:italic\u003e\u003cjats:sub\u003ecase\u003c/jats:sub\u003e/\u003cjats:italic\u003eN\u003c/jats:italic\u003e\u003cjats:sub\u003econtrol\u003c/jats:sub\u003e = 41,395/439,303), and two traits of kidney function (estimated glomerular filtration rate [eGFR, \u003cjats:italic\u003eN\u003c/jats:italic\u003e = 567,460] and urinary albumin-to-creatinine ratio [UACR, \u003cjats:italic\u003eN\u003c/jats:italic\u003e = 547,361]). Observational analyses suggested no significant association of migraine with the risk of CKD (HR = 1.13, 95% CI = 0.85–1.50). While we did not find any global genetic correlation in general, we identified four specific genomic regions showing significant for migraine with eGFR. Cross-trait meta-analysis identified one candidate causal variant (rs1047891) underlying migraine, CKD, and kidney function. Transcriptome-wide association study detected 28 shared expression–trait associations between migraine and kidney function. Mendelian randomization analysis suggested no causal effect of migraine on CKD (OR = 1.03, 95% CI = 0.98–1.09; \u003cjats:italic\u003eP\u003c/jats:italic\u003e = 0.28). Despite a putative causal effect of migraine on an increased level of UACR (log-scale-beta = 0.02, 95% CI = 0.01–0.04;\u003cjats:italic\u003e P\u003c/jats:italic\u003e = 1.92 × 10\u003cjats:sup\u003e−3\u003c/jats:sup\u003e), it attenuated to null when accounting for both correlated and uncorrelated pleiotropy. Our work does not find evidence supporting a causal association between migraine and CKD. However, our study highlights significant biological pleiotropy between migraine and kidney function. The value of a migraine prophylactic treatment for reducing future CKD in people with migraine is likely limited.\n\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2575"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "22 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "23 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "12 June 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All the authors declared no potential conflicts of interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "UK Biobank participants provided written informed consent, and ethical approval was granted by the National Health Service North West Multi-Centre Research Ethics Committee (11/NW/0382). All GWAS summary statistics are publicly available, and the corresponding studies have obtained proper IRB approval and participants’ consent."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Wenqiang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Li",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Luo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xiao",
+      "given": "Chenghan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wu",
+      "given": "Xueyao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yan",
+      "given": "Peijing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cui",
+      "given": "Huijie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Chao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhu",
+      "given": "Jingwei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wu",
+      "given": "Xuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tang",
+      "given": "Mingshuang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Yutong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Lin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Yunjie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zou",
+      "given": "Yanqiu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Ling",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Chunxia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yao",
+      "given": "Yuqin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Jiayuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Zhenmi",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4972-5171",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Zhang",
+      "given": "Ben",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jiang",
+      "given": "Xia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Anttila",
+      "given": "Verneri",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Artto",
+      "given": "Ville",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Belin",
+      "given": "Andrea C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bjornsdottir",
+      "given": "Anna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bjornsdottir",
+      "given": "Gyda",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boomsma",
+      "given": "Dorret I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Børte",
+      "given": "Sigrid",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chalmer",
+      "given": "Mona A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chasman",
+      "given": "Daniel I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cormand",
+      "given": "Bru",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cuenca-Leon",
+      "given": "Ester",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Davey-Smith",
+      "given": "George",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Boer",
+      "given": "Irene",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dichgans",
+      "given": "Martin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Esko",
+      "given": "Tonu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Freilinger",
+      "given": "Tobias",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gormley",
+      "given": "Padhraig",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Griffiths",
+      "given": "Lyn R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hämäläinen",
+      "given": "Eija",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hansen",
+      "given": "Thomas F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Harder",
+      "given": "Aster V. E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hautakangas",
+      "given": "Heidi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hiekkala",
+      "given": "Marjo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hrafnsdottir",
+      "given": "Maria G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ikram",
+      "given": "M. Arfan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Järvelin",
+      "given": "Marjo-Riitta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kajanne",
+      "given": "Risto",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kallela",
+      "given": "Mikko",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kaprio",
+      "given": "Jaakko",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kaunisto",
+      "given": "Mari",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kogelman",
+      "given": "Lisette J. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kristoffersen",
+      "given": "Espen S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kubisch",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kurki",
+      "given": "Mitja",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kurth",
+      "given": "Tobias",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Launer",
+      "given": "Lenore",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lehtimäki",
+      "given": "Terho",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lessel",
+      "given": "Davor",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ligthart",
+      "given": "Lannie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Magnusson",
+      "given": "Sigurdur H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Malik",
+      "given": "Rainer",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Müller-Myhsok",
+      "given": "Bertram",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Northover",
+      "given": "Carrie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nyholt",
+      "given": "Dale R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Olesen",
+      "given": "Jes",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Palotie",
+      "given": "Aarno",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Palta",
+      "given": "Priit",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pedersen",
+      "given": "Linda M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pedersen",
+      "given": "Nancy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pirinen",
+      "given": "Matti",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Posthuma",
+      "given": "Danielle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pozo-Rosich",
+      "given": "Patricia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pressman",
+      "given": "Alice",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Raitakari",
+      "given": "Olli",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ran",
+      "given": "Caroline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sigurdardottir",
+      "given": "Gudrun R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stefansson",
+      "given": "Hreinn",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stefansson",
+      "given": "Kari",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sveinsson",
+      "given": "Olafur A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Terwindt",
+      "given": "Gisela M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thorgeirsson",
+      "given": "Thorgeir E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van den Maagdenberg",
+      "given": "Arn M. J. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van Duijn",
+      "given": "Cornelia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wessman",
+      "given": "Maija",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Winsvold",
+      "given": "Bendik S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zwart",
+      "given": "John-Anker",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "International Headache Genetics Consortium",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ],
+    "date-time": "2023-06-12T10:02:05Z",
+    "timestamp": 1686564125000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        24
+      ]
+    ],
+    "date-time": "2023-08-24T04:23:18Z",
+    "timestamp": 1692850998000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100012166",
+      "award": [
+        "2022YFC3600600",
+        "2022YFC3600604"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Key R\u0026D Program of China"
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "U22A20359",
+        "81874283",
+        "81673255"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "name": "Recruitment Program for Young Professionals of China"
+    },
+    {
+      "name": "Promotion Plan for Basic Medical Sciences and the Development Plan for Cutting-Edge Disciplines, Sichuan University"
+    },
+    {
+      "name": "Projects from West China School of Public Health and West China Fourth Hospital, Sichuan University"
+    },
+    {
+      "DOI": "10.13039/501100004047",
+      "doi-asserted-by": "crossref",
+      "name": "Karolinska Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        28
+      ]
+    ],
+    "date-time": "2024-03-28T18:32:26Z",
+    "timestamp": 1711650746990
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          8
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            12
+          ]
+        ],
+        "date-time": "2023-06-12T00:00:00Z",
+        "timestamp": 1686528000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            12
+          ]
+        ],
+        "date-time": "2023-06-12T00:00:00Z",
+        "timestamp": 1686528000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02575-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-023-02575-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02575-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1185-1200",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        8
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.ajo.2020.11.004",
+      "author": "A Al-Moujahed",
+      "doi-asserted-by": "publisher",
+      "first-page": "157",
+      "journal-title": "Am J Ophthalmol",
+      "key": "2575_CR1",
+      "unstructured": "Al-Moujahed A, Tran EM, Azad A, Vail D, Ludwig CA, Pasricha MV, Rosenblatt TR, Callaway NF, Moshfeghi DM (2021) Risk of Retinal Artery Occlusion in Patients with Migraine. Am J Ophthalmol 225:157–165. https://doi.org/10.1016/j.ajo.2020.11.004",
+      "volume": "225",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/ije/dyv080",
+      "author": "J Bowden",
+      "doi-asserted-by": "publisher",
+      "first-page": "512",
+      "journal-title": "Int J Epidemiol",
+      "key": "2575_CR2",
+      "unstructured": "Bowden J, Davey Smith G, Burgess S (2015) Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression. Int J Epidemiol 44:512–525. https://doi.org/10.1093/ije/dyv080",
+      "volume": "44",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/gepi.21965",
+      "author": "J Bowden",
+      "doi-asserted-by": "publisher",
+      "first-page": "304",
+      "journal-title": "Genet Epidemiol",
+      "key": "2575_CR3",
+      "unstructured": "Bowden J, Davey Smith G, Haycock PC, Burgess S (2016) Consistent estimation in mendelian randomization with some invalid instruments using a weighted median estimator. Genet Epidemiol 40:304–314. https://doi.org/10.1002/gepi.21965",
+      "volume": "40",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ng.3406",
+      "author": "B Bulik-Sullivan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1236",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR4",
+      "unstructured": "Bulik-Sullivan B, Finucane HK, Anttila V, Gusev A, Day FR, Loh PR, ReproGen C, Psychiatric Genomics C, Genetic Consortium for Anorexia Nervosa of the Wellcome Trust Case Control C, Duncan L, Perry JR, Patterson N, Robinson EB, Daly MJ, Price AL, Neale BM (2015) An atlas of genetic correlations across human diseases and traits. Nat Genet 47:1236–1241. https://doi.org/10.1038/ng.3406",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1007/s10654-015-0011-z",
+      "author": "S Burgess",
+      "doi-asserted-by": "publisher",
+      "first-page": "543",
+      "journal-title": "Eur J Epidemiol",
+      "key": "2575_CR5",
+      "unstructured": "Burgess S, Scott RA, Timpson NJ, Davey Smith G, Thompson SG, Consortium E-I (2015) Using published data in Mendelian randomization: a blueprint for efficient identification of causal risk factors. Eur J Epidemiol 30:543–552. https://doi.org/10.1007/s10654-015-0011-z",
+      "volume": "30",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/gepi.21998",
+      "author": "S Burgess",
+      "doi-asserted-by": "publisher",
+      "first-page": "597",
+      "journal-title": "Genet Epidemiol",
+      "key": "2575_CR6",
+      "unstructured": "Burgess S, Davies NM, Thompson SG (2016) Bias due to participant overlap in two-sample Mendelian randomization. Genet Epidemiol 40:597–608. https://doi.org/10.1002/gepi.21998",
+      "volume": "40",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.2215/CJN.08780816",
+      "author": "AC Carlsson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1226",
+      "journal-title": "Clin J Am Soc Nephrol",
+      "key": "2575_CR7",
+      "unstructured": "Carlsson AC, Ingelsson E, Sundstrom J, Carrero JJ, Gustafsson S, Feldreich T, Stenemo M, Larsson A, Lind L, Arnlov J (2017) Use of proteomics to investigate kidney function decline over 5 years. Clin J Am Soc Nephrol 12:1226–1235. https://doi.org/10.2215/CJN.08780816",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.kint.2018.09.019",
+      "author": "K Chauhan",
+      "doi-asserted-by": "publisher",
+      "first-page": "439",
+      "journal-title": "Kidney Int",
+      "key": "2575_CR8",
+      "unstructured": "Chauhan K, Verghese DA, Rao V, Chan L, Parikh CR, Coca SG, Nadkarni GN (2019) Plasma endostatin predicts kidney outcomes in patients with type 2 diabetes. Kidney Int 95:439–446. https://doi.org/10.1016/j.kint.2018.09.019",
+      "volume": "95",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s42003-021-02356-y",
+      "author": "H Choquet",
+      "doi-asserted-by": "publisher",
+      "first-page": "864",
+      "journal-title": "Commun Biol",
+      "key": "2575_CR9",
+      "unstructured": "Choquet H, Yin J, Jacobson AS, Horton BH, Hoffmann TJ, Jorgenson E, Avins AL, Pressman AR (2021) New and sex-specific migraine susceptibility loci identified from a multiethnic genome-wide meta-analysis. Commun Biol 4:864. https://doi.org/10.1038/s42003-021-02356-y",
+      "volume": "4",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3390/ijms23063161",
+      "author": "N Cullell",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Mol Sci",
+      "key": "2575_CR10",
+      "unstructured": "Cullell N, Gallego-Fabrega C, Carcel-Marquez J, Muino E, Llucia-Carol L, Lledos M, Martin-Campos JM, Molina J, Casas L, Almeria M, Fernandez-Cadenas I, Krupinski J (2022) ICA1L is associated with small vessel disease: a proteome-wide association study in small vessel stroke and intracerebral haemorrhage. Int J Mol Sci. https://doi.org/10.3390/ijms23063161",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0205-x",
+      "author": "E Evangelou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1412",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR11",
+      "unstructured": "Evangelou E, Warren HR, Mosen-Ansorena D, Mifsud B, Pazoki R, Gao H, Ntritsos G, Dimou N, Cabrera CP, Karaman I, Ng FL, Evangelou M, Witkowska K, Tzanis E, Hellwege JN, Giri A, Velez Edwards DR, Sun YV, Cho K, Gaziano JM, Wilson PWF, Tsao PS, Kovesdy CP, Esko T, Magi R, Milani L, Almgren P, Boutin T, Debette S, Ding J, Giulianini F, Holliday EG, Jackson AU, Li-Gao R, Lin WY, Luan J, Mangino M, Oldmeadow C, Prins BP, Qian Y, Sargurupremraj M, Shah N, Surendran P, Theriault S, Verweij N, Willems SM, Zhao JH, Amouyel P, Connell J, de Mutsert R, Doney ASF, Farrall M, Menni C, Morris AD, Noordam R, Pare G, Poulter NR, Shields DC, Stanton A, Thom S, Abecasis G, Amin N, Arking DE, Ayers KL, Barbieri CM, Batini C, Bis JC, Blake T, Bochud M, Boehnke M, Boerwinkle E, Boomsma DI, Bottinger EP, Braund PS, Brumat M, Campbell A, Campbell H, Chakravarti A, Chambers JC, Chauhan G, Ciullo M, Cocca M, Collins F, Cordell HJ, Davies G, de Borst MH, de Geus EJ, Deary IJ, Deelen J, Del Greco MF, Demirkale CY, Dorr M, Ehret GB, Elosua R, Enroth S, Erzurumluoglu AM, Ferreira T, Franberg M, Franco OH, Gandin I et al (2018) Genetic analysis of over 1 million people identifies 535 new loci associated with blood pressure traits. Nat Genet 50:1412–1425. https://doi.org/10.1038/s41588-018-0205-x",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.jns.2016.06.016",
+      "author": "CF Gasparini",
+      "doi-asserted-by": "publisher",
+      "first-page": "258",
+      "journal-title": "J Neurol Sci",
+      "key": "2575_CR12",
+      "unstructured": "Gasparini CF, Smith RA, Griffiths LR (2016) Genetic insights into migraine and glutamate: a protagonist driving the headache. J Neurol Sci 367:258–268. https://doi.org/10.1016/j.jns.2016.06.016",
+      "volume": "367",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004383",
+      "author": "C Giambartolomei",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1004383",
+      "journal-title": "PLoS Genet",
+      "key": "2575_CR13",
+      "unstructured": "Giambartolomei C, Vukcevic D, Schadt EE, Franke L, Hingorani AD, Wallace C, Plagnol V (2014) Bayesian test for colocalisation between pairs of genetic association studies using summary statistics. PLoS Genet 10:e1004383. https://doi.org/10.1371/journal.pgen.1004383",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/ng.3598",
+      "author": "P Gormley",
+      "doi-asserted-by": "publisher",
+      "first-page": "856",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR14",
+      "unstructured": "Gormley P, Anttila V, Winsvold BS, Palta P, Esko T, Pers TH, Farh KH, Cuenca-Leon E, Muona M, Furlotte NA, Kurth T, Ingason A, McMahon G, Ligthart L, Terwindt GM, Kallela M, Freilinger TM, Ran C, Gordon SG, Stam AH, Steinberg S, Borck G, Koiranen M, Quaye L, Adams HH, Lehtimaki T, Sarin AP, Wedenoja J, Hinds DA, Buring JE, Schurks M, Ridker PM, Hrafnsdottir MG, Stefansson H, Ring SM, Hottenga JJ, Penninx BW, Farkkila M, Artto V, Kaunisto M, Vepsalainen S, Malik R, Heath AC, Madden PA, Martin NG, Montgomery GW, Kurki MI, Kals M, Magi R, Parn K, Hamalainen E, Huang H, Byrnes AE, Franke L, Huang J, Stergiakouli E, Lee PH, Sandor C, Webber C, Cader Z, Muller-Myhsok B, Schreiber S, Meitinger T, Eriksson JG, Salomaa V, Heikkila K, Loehrer E, Uitterlinden AG, Hofman A, van Duijn CM, Cherkas L, Pedersen LM, Stubhaug A, Nielsen CS, Mannikko M, Mihailov E, Milani L, Gobel H, Esserlind AL, Christensen AF, Hansen TF, Werge T, International Headache Genetics C, Kaprio J, Aromaa AJ, Raitakari O, Ikram MA, Spector T, Jarvelin MR, Metspalu A, Kubisch C, Strachan DP, Ferrari MD, Belin AC, Dichgans M, Wessman M, van den Maagdenberg AM, Zwart JA, Boomsma DI, Smith GD et al (2016) Meta-analysis of 375,000 individuals identifies 38 susceptibility loci for migraine. Nat Genet 48:856–866. https://doi.org/10.1038/ng.3598",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1053/j.ajkd.2018.05.006",
+      "author": "A Gulati",
+      "doi-asserted-by": "publisher",
+      "first-page": "895",
+      "journal-title": "Am J Kidney Dis",
+      "key": "2575_CR15",
+      "unstructured": "Gulati A, Bale AE, Dykas DJ, Bia MJ, Danovitch GM, Moeckel GW, Somlo S, Dahl NK (2018) TREX1 mutation causing autosomal dominant thrombotic microangiopathy and CKD-A novel presentation. Am J Kidney Dis 72:895–899. https://doi.org/10.1053/j.ajkd.2018.05.006",
+      "volume": "72",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-020-17002-0",
+      "author": "Y Guo",
+      "doi-asserted-by": "publisher",
+      "first-page": "3368",
+      "journal-title": "Nat Commun",
+      "key": "2575_CR16",
+      "unstructured": "Guo Y, Rist PM, Daghlas I, Giulianini F, International Headache Genetics C, Me Research T, Kurth T, Chasman DI (2020) A genome-wide cross-phenotype meta-analysis of the association of blood pressure with migraine. Nat Commun 11:3368. https://doi.org/10.1038/s41467-020-17002-0",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.3506",
+      "author": "A Gusev",
+      "doi-asserted-by": "publisher",
+      "first-page": "245",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR17",
+      "unstructured": "Gusev A, Ko A, Shi H, Bhatia G, Chung W, Penninx BW, Jansen R, de Geus EJ, Boomsma DI, Wright FA, Sullivan PF, Nikkola E, Alvarez M, Civelek M, Lusis AJ, Lehtimaki T, Raitoharju E, Kahonen M, Seppala I, Raitakari OT, Kuusisto J, Laakso M, Price AL, Pajukanta P, Pasaniuc B (2016) Integrative approaches for large-scale transcriptome-wide association studies. Nat Genet 48:245–252. https://doi.org/10.1038/ng.3506",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/jimd.12100",
+      "author": "J Haberle",
+      "doi-asserted-by": "publisher",
+      "first-page": "1192",
+      "journal-title": "J Inherit Metab Dis",
+      "key": "2575_CR18",
+      "unstructured": "Haberle J, Burlina A, Chakrapani A, Dixon M, Karall D, Lindner M, Mandel H, Martinelli D, Pintos-Morell G, Santer R, Skouma A, Servais A, Tal G, Rubio V, Huemer M, Dionisi-Vici C (2019) Suggested guidelines for the diagnosis and management of urea cycle disorders: first revision. J Inherit Metab Dis 42:1192–1230. https://doi.org/10.1002/jimd.12100",
+      "volume": "42",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00990-0",
+      "author": "H Hautakangas",
+      "doi-asserted-by": "publisher",
+      "first-page": "152",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR19",
+      "unstructured": "Hautakangas H, Winsvold BS, Ruotsalainen SE, Bjornsdottir G, Harder AVE, Kogelman LJA, Thomas LF, Noordam R, Benner C, Gormley P, Artto V, Banasik K, Bjornsdottir A, Boomsma DI, Brumpton BM, Burgdorf KS, Buring JE, Chalmer MA, de Boer I, Dichgans M, Erikstrup C, Farkkila M, Garbrielsen ME, Ghanbari M, Hagen K, Happola P, Hottenga JJ, Hrafnsdottir MG, Hveem K, Johnsen MB, Kahonen M, Kristoffersen ES, Kurth T, Lehtimaki T, Lighart L, Magnusson SH, Malik R, Pedersen OB, Pelzer N, Penninx B, Ran C, Ridker PM, Rosendaal FR, Sigurdardottir GR, Skogholt AH, Sveinsson OA, Thorgeirsson TE, Ullum H, Vijfhuizen LS, Widen E, van Dijk KW, International Headache Genetics C, Headache HA-I, Danish Blood Donor Study Genomic C, Aromaa A, Belin AC, Freilinger T, Ikram MA, Jarvelin MR, Raitakari OT, Terwindt GM, Kallela M, Wessman M, Olesen J, Chasman DI, Nyholt DR, Stefansson H, Stefansson K, van den Maagdenberg A, Hansen TF, Ripatti S, Zwart JA, Palotie A, Pirinen M (2022) Genome-wide analysis of 102,084 migraine cases identifies 123 risk loci and subtype-specific risk alleles. Nat Genet 54:152–160. https://doi.org/10.1038/s41588-021-00990-0",
+      "volume": "54",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.7554/eLife.34408",
+      "author": "G Hemani",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Elife",
+      "key": "2575_CR20",
+      "unstructured": "Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, Laurin C, Burgess S, Bowden J, Langdon R, Tan VY, Yarmolinsky J, Shihab HA, Timpson NJ, Evans DM, Relton C, Martin RM, Davey Smith G, Gaunt TR, Haycock PC (2018) The MR-base platform supports systematic causal inference across the human phenome. Elife. https://doi.org/10.7554/eLife.34408",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.devcel.2014.06.011",
+      "author": "C Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "479",
+      "journal-title": "Dev Cell",
+      "key": "2575_CR21",
+      "unstructured": "Huang C, Chen M, Pang D, Bi D, Zou Y, Xia X, Yang W, Luo L, Deng R, Tan H, Zhou L, Yu S, Guo L, Du X, Cui Y, Hu J, Mao Q, Worley PF, Xiao B (2014) Developmental and activity-dependent expression of LanCL1 confers antioxidant activity required for neuronal survival. Dev Cell 30:479–487. https://doi.org/10.1016/j.devcel.2014.06.011",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nature22969",
+      "author": "H Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "173",
+      "journal-title": "Nature",
+      "key": "2575_CR22",
+      "unstructured": "Huang H, Fang M, Jostins L, Umicevic Mirkov M, Boucher G, Anderson CA, Andersen V, Cleynen I, Cortes A, Crins F, D’Amato M, Deffontaine V, Dmitrieva J, Docampo E, Elansary M, Farh KK, Franke A, Gori AS, Goyette P, Halfvarson J, Haritunians T, Knight J, Lawrance IC, Lees CW, Louis E, Mariman R, Meuwissen T, Mni M, Momozawa Y, Parkes M, Spain SL, Theatre E, Trynka G, Satsangi J, van Sommeren S, Vermeire S, Xavier RJ, International Inflammatory Bowel Disease Genetics C, Weersma RK, Duerr RH, Mathew CG, Rioux JD, McGovern DPB, Cho JH, Georges M, Daly MJ, Barrett JC (2017) Fine-mapping inflammatory bowel disease loci to single-variant resolution. Nature 547:173–178. https://doi.org/10.1038/nature22969",
+      "volume": "547",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.568",
+      "author": "A Kottgen",
+      "doi-asserted-by": "publisher",
+      "first-page": "376",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR23",
+      "unstructured": "Kottgen A, Pattaro C, Boger CA, Fuchsberger C, Olden M, Glazer NL, Parsa A, Gao X, Yang Q, Smith AV, O’Connell JR, Li M, Schmidt H, Tanaka T, Isaacs A, Ketkar S, Hwang SJ, Johnson AD, Dehghan A, Teumer A, Pare G, Atkinson EJ, Zeller T, Lohman K, Cornelis MC, Probst-Hensch NM, Kronenberg F, Tonjes A, Hayward C, Aspelund T, Eiriksdottir G, Launer LJ, Harris TB, Rampersaud E, Mitchell BD, Arking DE, Boerwinkle E, Struchalin M, Cavalieri M, Singleton A, Giallauria F, Metter J, de Boer IH, Haritunians T, Lumley T, Siscovick D, Psaty BM, Zillikens MC, Oostra BA, Feitosa M, Province M, de Andrade M, Turner ST, Schillert A, Ziegler A, Wild PS, Schnabel RB, Wilde S, Munzel TF, Leak TS, Illig T, Klopp N, Meisinger C, Wichmann HE, Koenig W, Zgaga L, Zemunik T, Kolcic I, Minelli C, Hu FB, Johansson A, Igl W, Zaboli G, Wild SH, Wright AF, Campbell H, Ellinghaus D, Schreiber S, Aulchenko YS, Felix JF, Rivadeneira F, Uitterlinden AG, Hofman A, Imboden M, Nitsch D, Brandstatter A, Kollerits B, Kedenko L, Magi R, Stumvoll M, Kovacs P, Boban M, Campbell S, Endlich K, Volzke H, Kroemer HK, Nauck M, Volker U, Polasek O, Vitart V et al (2010) New loci associated with kidney function and chronic kidney disease. Nat Genet 42:376–384. https://doi.org/10.1038/ng.568",
+      "volume": "42",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/ng.2767",
+      "author": "E Leipold",
+      "doi-asserted-by": "publisher",
+      "first-page": "1399",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR24",
+      "unstructured": "Leipold E, Liebmann L, Korenke GC, Heinrich T, Giesselmann S, Baets J, Ebbinghaus M, Goral RO, Stodberg T, Hennings JC, Bergmann M, Altmuller J, Thiele H, Wetzel A, Nurnberg P, Timmerman V, De Jonghe P, Blum R, Schaible HG, Weis J, Heinemann SH, Hubner CA, Kurth I (2013) A de novo gain-of-function mutation in SCN11A causes loss of pain perception. Nat Genet 45:1399–1404. https://doi.org/10.1038/ng.2767",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/s10072-020-04992-4",
+      "author": "X Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "871",
+      "journal-title": "Neurol Sci",
+      "key": "2575_CR25",
+      "unstructured": "Lin X, Yi Z, Zhang X, Liu Q, Zhang H, Cai R, Chen C, Zhang H, Zhao P, Pan P (2021) Retinal nerve fiber layer changes in migraine: a systematic review and meta-analysis. Neurol Sci 42:871–881. https://doi.org/10.1007/s10072-020-04992-4",
+      "volume": "42",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1139/cjpp-2019-0301",
+      "author": "P Mobasheran",
+      "doi-asserted-by": "publisher",
+      "first-page": "252",
+      "journal-title": "Can J Physiol Pharmacol",
+      "key": "2575_CR26",
+      "unstructured": "Mobasheran P, Rajai N, Kohansal P, Dehpour AR, Shafaroodi H (2020) The effects of acute sumatriptan treatment on renal ischemia/reperfusion injury in rat and the possible involvement of nitric oxide. Can J Physiol Pharmacol 98:252–258. https://doi.org/10.1139/cjpp-2019-0301",
+      "volume": "98",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0631-4",
+      "author": "J Morrison",
+      "doi-asserted-by": "publisher",
+      "first-page": "740",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR27",
+      "unstructured": "Morrison J, Knoblauch N, Marcus JH, Stephens M, He X (2020) Mendelian randomization accounting for correlated and uncorrelated pleiotropic effects using genome-wide summary statistics. Nat Genet 52:740–747. https://doi.org/10.1038/s41588-020-0631-4",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1212/WNL.0b013e3181b99a2e",
+      "author": "AM Murray",
+      "doi-asserted-by": "publisher",
+      "first-page": "916",
+      "journal-title": "Neurology",
+      "key": "2575_CR28",
+      "unstructured": "Murray AM (2009) The brain and the kidney connection: a model of accelerated vascular cognitive impairment. Neurology 73:916–917. https://doi.org/10.1212/WNL.0b013e3181b99a2e",
+      "volume": "73",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1007/s00415-021-10930-x",
+      "author": "CYH Ng",
+      "doi-asserted-by": "publisher",
+      "first-page": "2346",
+      "journal-title": "J Neurol",
+      "key": "2575_CR29",
+      "unstructured": "Ng CYH, Tan BYQ, Teo YN, Teo YH, Syn NLX, Leow AST, Ho JSY, Chan MY, Wong RCC, Chai P, Chan ACY, Sharma VK, Yeo LLL, Sia CH, Ong JJY (2022) Myocardial infarction, stroke and cardiovascular mortality among migraine patients: a systematic review and meta-analysis. J Neurol 269:2346–2358. https://doi.org/10.1007/s00415-021-10930-x",
+      "volume": "269",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005734",
+      "author": "ZK O'Brown",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1005734",
+      "journal-title": "PLoS Genet",
+      "key": "2575_CR30",
+      "unstructured": "O’Brown ZK, Van Nostrand EL, Higgins JP, Kim SK (2015) The inflammatory transcription factors NFkappaB, STAT1 and STAT3 drive age-associated transcriptional changes in the human kidney. PLoS Genet 11:e1005734. https://doi.org/10.1371/journal.pgen.1005734",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41380-021-01251-6",
+      "author": "YN Ou",
+      "doi-asserted-by": "publisher",
+      "first-page": "6065",
+      "journal-title": "Mol Psychiatry",
+      "key": "2575_CR31",
+      "unstructured": "Ou YN, Yang YX, Deng YT, Zhang C, Hu H, Wu BS, Liu Y, Wang YJ, Zhu Y, Suckling J, Tan L, Yu JT (2021) Identification of novel drug targets for Alzheimer’s disease by integrating genetics and proteomes from brain and blood. Mol Psychiatry 26:6065–6073. https://doi.org/10.1038/s41380-021-01251-6",
+      "volume": "26",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ng.3570",
+      "author": "JK Pickrell",
+      "doi-asserted-by": "publisher",
+      "first-page": "709",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR32",
+      "unstructured": "Pickrell JK, Berisa T, Liu JZ, Segurel L, Tung JY, Hinds DA (2016) Detection and interpretation of shared genetic influences on 42 human traits. Nat Genet 48:709–717. https://doi.org/10.1038/ng.3570",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/ije/dyq151",
+      "author": "BL Pierce",
+      "doi-asserted-by": "publisher",
+      "first-page": "740",
+      "journal-title": "Int J Epidemiol",
+      "key": "2575_CR33",
+      "unstructured": "Pierce BL, Ahsan H, Vanderweele TJ (2011) Power and instrument strength requirements for Mendelian randomization studies using multiple genetic variants. Int J Epidemiol 40:740–752. https://doi.org/10.1093/ije/dyq151",
+      "volume": "40",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/s41581-020-0267-8",
+      "author": "R Raina",
+      "doi-asserted-by": "publisher",
+      "first-page": "471",
+      "journal-title": "Nat Rev Nephrol",
+      "key": "2575_CR34",
+      "unstructured": "Raina R, Bedoyan JK, Lichter-Konecki U, Jouvet P, Picca S, Mew NA, Machado MC, Chakraborty R, Vemuganti M, Grewal MK, Bunchman T, Sethi SK, Krishnappa V, McCulloch M, Alhasan K, Bagga A, Basu RK, Schaefer F, Filler G, Warady BA (2020) Consensus guidelines for management of hyperammonaemia in paediatric patients receiving continuous kidney replacement therapy. Nat Rev Nephrol 16:471–482. https://doi.org/10.1038/s41581-020-0267-8",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/ana.10159",
+      "author": "U Reuter",
+      "doi-asserted-by": "publisher",
+      "first-page": "507",
+      "journal-title": "Ann Neurol",
+      "key": "2575_CR35",
+      "unstructured": "Reuter U, Chiarugi A, Bolay H, Moskowitz MA (2002) Nuclear factor-kappaB as a molecular target for migraine therapy. Ann Neurol 51:507–516. https://doi.org/10.1002/ana.10159",
+      "volume": "51",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1161/STROKEAHA.107.496000",
+      "author": "SL Seliger",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "Stroke",
+      "key": "2575_CR36",
+      "unstructured": "Seliger SL, Longstreth WT Jr (2008) Lessons about brain vascular disease from another pulsating organ, the kidney. Stroke 39:5–6. https://doi.org/10.1161/STROKEAHA.107.496000",
+      "volume": "39",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0120758",
+      "author": "H Shim",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0120758",
+      "journal-title": "PLoS ONE",
+      "key": "2575_CR37",
+      "unstructured": "Shim H, Chasman DI, Smith JD, Mora S, Ridker PM, Nickerson DA, Krauss RM, Stephens M (2015) A multivariate genome-wide association analysis of 10 LDL subfractions, and their response to statin treatment, in 1868 Caucasians. PLoS ONE 10:e0120758. https://doi.org/10.1371/journal.pone.0120758",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/ije/dyaa050",
+      "author": "KM Siewert",
+      "doi-asserted-by": "publisher",
+      "first-page": "1022",
+      "journal-title": "Int J Epidemiol",
+      "key": "2575_CR38",
+      "unstructured": "Siewert KM, Klarin D, Damrauer SM, Chang KM, Tsao PS, Assimes TL, Davey Smith G, Voight BF, The International Headache Genetics C (2020) Cross-trait analyses with migraine reveal widespread pleiotropy and suggest a vascular component to migraine headache. Int J Epidemiol 49:1022–1031. https://doi.org/10.1093/ije/dyaa050",
+      "volume": "49",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001779",
+      "author": "C Sudlow",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1001779",
+      "journal-title": "PLoS Med",
+      "key": "2575_CR39",
+      "unstructured": "Sudlow C, Gallacher J, Allen N, Beral V, Burton P, Danesh J, Downey P, Elliott P, Green J, Landray M, Liu B, Matthews P, Ong G, Pell J, Silman A, Young A, Sprosen T, Peakman T, Collins R (2015) UK biobank: an open access resource for identifying the causes of a wide range of complex diseases of middle and old age. PLoS Med 12:e1001779. https://doi.org/10.1371/journal.pmed.1001779",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1111/head.13053",
+      "author": "HG Sutherland",
+      "doi-asserted-by": "publisher",
+      "first-page": "537",
+      "journal-title": "Headache",
+      "key": "2575_CR40",
+      "unstructured": "Sutherland HG, Griffiths LR (2017) Genetics of migraine: insights into the molecular basis of migraine disorders. Headache 57:537–569. https://doi.org/10.1111/head.13053",
+      "volume": "57",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11576-0",
+      "author": "A Teumer",
+      "doi-asserted-by": "publisher",
+      "first-page": "4130",
+      "journal-title": "Nat Commun",
+      "key": "2575_CR41",
+      "unstructured": "Teumer A, Li Y, Ghasemi S, Prins BP, Wuttke M, Hermle T, Giri A, Sieber KB, Qiu C, Kirsten H, Tin A, Chu AY, Bansal N, Feitosa MF, Wang L, Chai JF, Cocca M, Fuchsberger C, Gorski M, Hoppmann A, Horn K, Li M, Marten J, Noce D, Nutile T, Sedaghat S, Sveinbjornsson G, Tayo BO, van der Most PJ, Xu Y, Yu Z, Gerstner L, Arnlov J, Bakker SJL, Baptista D, Biggs ML, Boerwinkle E, Brenner H, Burkhardt R, Carroll RJ, Chee ML, Chee ML, Chen M, Cheng CY, Cook JP, Coresh J, Corre T, Danesh J, de Borst MH, De Grandi A, de Mutsert R, de Vries APJ, Degenhardt F, Dittrich K, Divers J, Eckardt KU, Ehret G, Endlich K, Felix JF, Franco OH, Franke A, Freedman BI, Freitag-Wolf S, Gansevoort RT, Giedraitis V, Gogele M, Grundner-Culemann F, Gudbjartsson DF, Gudnason V, Hamet P, Harris TB, Hicks AA, Holm H, Foo VHX, Hwang SJ, Ikram MA, Ingelsson E, Jaddoe VWV, Jakobsdottir J, Josyula NS, Jung B, Kahonen M, Khor CC, Kiess W, Koenig W, Korner A, Kovacs P, Kramer H, Kramer BK, Kronenberg F, Lange LA, Langefeld CD, Lee JJ, Lehtimaki T, Lieb W, Lim SC, Lind L, Lindgren CM, Liu J, Loeffler M et al (2019) Genome-wide association meta-analyses and fine-mapping elucidate pathways influencing albuminuria. Nat Commun 10:4130. https://doi.org/10.1038/s41467-019-11576-0",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.stem.2017.07.009",
+      "author": "CA Thomas",
+      "doi-asserted-by": "publisher",
+      "first-page": "319",
+      "journal-title": "Cell Stem Cell",
+      "key": "2575_CR42",
+      "unstructured": "Thomas CA, Tejwani L, Trujillo CA, Negraes PD, Herai RH, Mesci P, Macia A, Crow YJ, Muotri AR (2017) Modeling of TREX1-dependent autoimmune disease using human stem cells highlights L1 accumulation as a source of neuroinflammation. Cell Stem Cell 21:319-331 e8. https://doi.org/10.1016/j.stem.2017.07.009",
+      "volume": "21",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/j.1468-2982.2009.01937.x",
+      "author": "GE Tietjen",
+      "doi-asserted-by": "publisher",
+      "first-page": "989",
+      "journal-title": "Cephalalgia",
+      "key": "2575_CR43",
+      "unstructured": "Tietjen GE (2009) Migraine as a systemic vasculopathy. Cephalalgia 29:989–996. https://doi.org/10.1111/j.1468-2982.2009.01937.x",
+      "volume": "29",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1136/bmjopen-2017-018483",
+      "author": "SC Weng",
+      "doi-asserted-by": "publisher",
+      "first-page": "e018483",
+      "journal-title": "BMJ Open",
+      "key": "2575_CR44",
+      "unstructured": "Weng SC, Wu CL, Kor CT, Chiu PF, Wu MJ, Chang CC, Tarng DC (2017) Migraine and subsequent chronic kidney disease risk: a nationwide population-based cohort study. BMJ Open 7:e018483. https://doi.org/10.1136/bmjopen-2017-018483",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0407-x",
+      "author": "M Wuttke",
+      "doi-asserted-by": "publisher",
+      "first-page": "957",
+      "journal-title": "Nat Genet",
+      "key": "2575_CR45",
+      "unstructured": "Wuttke M, Li Y, Li M, Sieber KB, Feitosa MF, Gorski M, Tin A, Wang L, Chu AY, Hoppmann A, Kirsten H, Giri A, Chai JF, Sveinbjornsson G, Tayo BO, Nutile T, Fuchsberger C, Marten J, Cocca M, Ghasemi S, Xu Y, Horn K, Noce D, van der Most PJ, Sedaghat S, Yu Z, Akiyama M, Afaq S, Ahluwalia TS, Almgren P, Amin N, Arnlov J, Bakker SJL, Bansal N, Baptista D, Bergmann S, Biggs ML, Biino G, Boehnke M, Boerwinkle E, Boissel M, Bottinger EP, Boutin TS, Brenner H, Brumat M, Burkhardt R, Butterworth AS, Campana E, Campbell A, Campbell H, Canouil M, Carroll RJ, Catamo E, Chambers JC, Chee ML, Chee ML, Chen X, Cheng CY, Cheng Y, Christensen K, Cifkova R, Ciullo M, Concas MP, Cook JP, Coresh J, Corre T, Sala CF, Cusi D, Danesh J, Daw EW, de Borst MH, De Grandi A, de Mutsert R, de Vries APJ, Degenhardt F, Delgado G, Demirkan A, Di Angelantonio E, Dittrich K, Divers J, Dorajoo R, Eckardt KU, Ehret G, Elliott P, Endlich K, Evans MK, Felix JF, Foo VHX, Franco OH, Franke A, Freedman BI, Freitag-Wolf S, Friedlander Y, Froguel P, Gansevoort RT, Gao H, Gasparini P, Gaziano JM, Giedraitis V, Gieger C et al (2019) A catalog of genetic loci associated with kidney function from analyses of a million individuals. Nat Genet 51:957–972. https://doi.org/10.1038/s41588-019-0407-x",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s12035-021-02503-w",
+      "author": "Y Yazgan",
+      "doi-asserted-by": "publisher",
+      "first-page": "5581",
+      "journal-title": "Mol Neurobiol",
+      "key": "2575_CR46",
+      "unstructured": "Yazgan Y, Naziroglu M (2021) Involvement of TRPM2 in the neurobiology of experimental migraine: focus on oxidative stress and apoptosis. Mol Neurobiol 58:5581–5601. https://doi.org/10.1007/s12035-021-02503-w",
+      "volume": "58",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13059-021-02478-w",
+      "author": "Y Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "262",
+      "journal-title": "Genome Biol",
+      "key": "2575_CR47",
+      "unstructured": "Zhang Y, Lu Q, Ye Y, Huang K, Liu W, Wu Y, Zhong X, Li B, Yu Z, Travers BG, Werling DM, Li JJ, Zhao H (2021) SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits. Genome Biol 22:262. https://doi.org/10.1186/s13059-021-02478-w",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/ije/dyab203",
+      "author": "J Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1995",
+      "journal-title": "Int J Epidemiol",
+      "key": "2575_CR48",
+      "unstructured": "Zheng J, Zhang Y, Rasheed H, Walker V, Sugawara Y, Li J, Leng Y, Elsworth B, Wootton RE, Fang S, Yang Q, Burgess S, Haycock PC, Borges MC, Cho Y, Carnegie R, Howell A, Robinson J, Thomas LF, Brumpton BM, Hveem K, Hallan S, Franceschini N, Morris AP, Kottgen A, Pattaro C, Wuttke M, Yamamoto M, Kashihara N, Akiyama M, Kanai M, Matsuda K, Kamatani Y, Okada Y, Walters R, Millwood IY, Chen Z, Davey Smith G, Barbour S, Yu C, Asvold BO, Zhang H, Gaunt TR (2022) Trans-ethnic Mendelian-randomization study reveals causal relationships between cardiometabolic factors and chronic kidney disease. Int J Epidemiol 50:1995–2010. https://doi.org/10.1093/ije/dyab203",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.11.011",
+      "author": "X Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "21",
+      "journal-title": "Am J Hum Genet",
+      "key": "2575_CR49",
+      "unstructured": "Zhu X, Feng T, Tayo BO, Liang J, Young JH, Franceschini N, Smith JA, Yanek LR, Sun YV, Edwards TL, Chen W, Nalls M, Fox E, Sale M, Bottinger E, Rotimi C, Consortium CB, Liu Y, McKnight B, Liu K, Arnett DK, Chakravati A, Cooper RS, Redline S (2015) Meta-analysis of correlated traits via summary statistics from GWASs with an application in hypertension. Am J Hum Genet 96:21–36. https://doi.org/10.1016/j.ajhg.2014.11.011",
+      "volume": "96",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.jaci.2020.07.004",
+      "author": "Z Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "796",
+      "journal-title": "J Allergy Clin Immunol",
+      "key": "2575_CR50",
+      "unstructured": "Zhu Z, Hasegawa K, Camargo CA Jr, Liang L (2021) Investigating asthma heterogeneity through shared and distinct genetics: Insights from genome-wide cross-trait analysis. J Allergy Clin Immunol 147:796–807. https://doi.org/10.1016/j.jaci.2020.07.004",
+      "volume": "147",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 50,
+  "references-count": 50,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-023-02575-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum. Genet."
+  ],
+  "source": "Crossref",
+  "title": [
+    "Migraine, chronic kidney disease and kidney function: observational and genetic analyses"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

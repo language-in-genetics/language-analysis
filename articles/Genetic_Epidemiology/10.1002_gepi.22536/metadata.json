@@ -1,0 +1,509 @@
+{
+  "DOI": "10.1002/gepi.22536",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22536",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIdentification of biomarkers by integrating multiple omics together is important because complex diseases occur due to an intricate interplay of various genetic materials. Traditional single‐omics association tests neither explore this crucial interomics dependence nor identify moderately weak signals due to the multiple‐testing burden. Conversely, multiomics data integration imparts complementary information but suffers from an increased multiple‐testing burden, data diversity inherent with different omics features, high‐dimensionality, and so forth. Most of the available methods address subtype classification using dimension‐reduction techniques to circumvent the sample size issue but interacting multiomics biomarker identification methods are unavailable. We propose a two‐step model that first investigates phenotype‐omics association using logistic regression. Then, selects disease‐associated omics using sparse principal components which explores the interrelationship of multiple variables from two omics in a multivariate multiple regression framework. On the basis of this model, we developed a multiomics biomarker identification algorithm, interacting omics search (ioSearch), that jointly tests the effect of multiple omics with disease and between‐omics associations by using pathway information that subsequently reduces the multiple‐testing burden. Further, inference in terms of \u003cjats:italic\u003ep\u003c/jats:italic\u003e values potentially makes it an easily interpretable biomarker identification tool. Extensive simulation demonstrates ioSearch as statistically powerful with a controlled Type‐I error rate. Its application to publicly available breast cancer data sets identified relevant omics features in important pathways.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22536"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2023-01-20"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2023-09-18"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2023-10-05"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0009-0004-4172-2074",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics St. Jude Children's Research Hospital Memphis Tennessee USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Das",
+      "given": "Sarmistha",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics St. Jude Children's Research Hospital Memphis Tennessee USA"
+        }
+      ],
+      "family": "Srivastava",
+      "given": "Deo Kumar",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2023-10-05T10:58:32Z",
+    "timestamp": 1696503512000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        22
+      ]
+    ],
+    "date-time": "2023-11-22T18:20:21Z",
+    "timestamp": 1700677221000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        23
+      ]
+    ],
+    "date-time": "2023-11-23T00:49:06Z",
+    "timestamp": 1700700546768
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            5
+          ]
+        ],
+        "date-time": "2023-10-05T00:00:00Z",
+        "timestamp": 1696464000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22536",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "600-616",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.15252/msb.20178124",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.1186/s12864-017-3911-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1200/JCO.18.01631",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.1002/(SICI)1098-2744(199804)21:4\u003c261::AID-MC5\u003e3.0.CO;2-N",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.1080/14712598.2017.1305351",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.01.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1155/2019/7512632",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "article-title": "Multi gene panel testing for hereditary breast cancer—Is it ready to be used?",
+      "author": "Catana A.",
+      "first-page": "220",
+      "journal-title": "Medicine and Pharmacy Reports",
+      "key": "e_1_2_9_9_1",
+      "volume": "92",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.trsl.2022.04.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1186/s12943-015-0291-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2018.09.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "DOI": "10.1038/s41598-021-03034-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1126/science.abg5601",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty148",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_15_1"
+    },
+    {
+      "DOI": "10.1158/1541-7786.MCR-19-0592",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1177/1947601913486346",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.18632/oncotarget.25265",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1016/j.cca.2012.12.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1038/leu.2017.70",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_20_1"
+    },
+    {
+      "DOI": "10.1083/jcb.200403069",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_21_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0187323",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1096/fj.202001515R",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "DOI": "10.1093/nar/28.1.27",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.3390/cells8121566",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1126/science.1242379",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "DOI": "10.1038/srep24799",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.10.036",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_28_1"
+    },
+    {
+      "DOI": "10.1016/j.ejca.2013.11.028",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_29_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2016.03.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_30_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0112765",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btab592",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_32_1"
+    },
+    {
+      "DOI": "10.1200/jco.2014.32.15_suppl.1510",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_33_1"
+    },
+    {
+      "DOI": "10.1016/j.canlet.2014.08.043",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_34_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13983-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_35_1"
+    },
+    {
+      "DOI": "10.1016/j.ccr.2013.06.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_36_1"
+    },
+    {
+      "article-title": "The DisGeNET knowledge platform for disease genomics: 2019 update",
+      "author": "Piñero J.",
+      "first-page": "D845",
+      "journal-title": "Nucleic Acids Research",
+      "key": "e_1_2_9_37_1",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s42003-021-02142-w",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_38_1"
+    },
+    {
+      "DOI": "10.1101/cshperspect.a032896",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_39_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_40_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-10-0064",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_41_1"
+    },
+    {
+      "DOI": "10.1186/bcr3413",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_42_1"
+    },
+    {
+      "DOI": "10.7861/clinmedicine.17-3-220",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_43_1"
+    },
+    {
+      "DOI": "10.1093/annonc/mdv022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_44_1"
+    },
+    {
+      "DOI": "10.1038/nrc2824",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_45_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty1054",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_46_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0021099",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_47_1"
+    },
+    {
+      "DOI": "10.1186/s13073-018-0602-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_48_1"
+    },
+    {
+      "DOI": "10.1016/j.canlet.2020.07.031",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_49_1"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-18-2202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_50_1"
+    },
+    {
+      "DOI": "10.1038/nrg3185",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_51_1"
+    },
+    {
+      "article-title": "Deep multiomics profiling of brain tumors identifies signaling networks downstream of cancer driver genes",
+      "author": "Wang H.",
+      "first-page": "1",
+      "journal-title": "Nature Communications",
+      "key": "e_1_2_9_52_1",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxp008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_53_1"
+    },
+    {
+      "DOI": "10.1038/s41388-021-01691-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_54_1"
+    },
+    {
+      "DOI": "10.1038/sj.onc.1203972",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_55_1"
+    },
+    {
+      "DOI": "10.1198/106186006X113430",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_56_1"
+    }
+  ],
+  "reference-count": 55,
+  "references-count": 55,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22536"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "ioSearch: An approach for identifying interacting multiomics biomarkers using a novel algorithm with application on breast cancer data sets"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "47"
+}

@@ -1,0 +1,583 @@
+{
+  "DOI": "10.1002/gepi.22067",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22067",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eThe accuracy of genotype imputation depends upon two factors: the sample size of the reference panel and the genetic similarity between the reference panel and the target samples. When multiple reference panels are not consented to combine together, it is unclear how to combine the imputation results to optimize the power of genetic association studies. We compared the accuracy of 9,265 Norwegian genomes imputed from three reference panels—1000 Genomes phase 3 (1000G), Haplotype Reference Consortium (HRC), and a reference panel containing 2,201 Norwegian participants from the population‐based Nord Trøndelag Health Study (HUNT) from low‐pass genome sequencing. We observed that the population‐matched reference panel allowed for imputation of more population‐specific variants with lower frequency (minor allele frequency (MAF) between 0.05% and 0.5%). The overall imputation accuracy from the population‐specific panel was substantially higher than 1000G and was comparable with HRC, despite HRC being 15‐fold larger. These results recapitulate the value of population‐specific reference panels for genotype imputation. We also evaluated different strategies to utilize multiple sets of imputed genotypes to increase the power of association studies. We observed that testing association for all variants imputed from any panel results in higher power to detect association than the alternative strategy of including only one version of each genetic variant, selected for having the highest imputation quality metric. This was particularly true for lower frequency variants (MAF \u0026lt; 1%), even after adjusting for the additional multiple testing burden.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22067"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-7719-0859",
+      "affiliation": [
+        {
+          "name": "Department of Computational Medicine and Bioinformatics University of Michigan  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Zhou",
+      "given": "Wei",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology Department of Public Health and Nursing Norwegian University of Science and Technology  Trondheim Norway"
+        },
+        {
+          "name": "Department of Biostatistics and Center for Statistical Genetics University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Fritsche",
+      "given": "Lars G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics and Center for Statistical Genetics University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Das",
+      "given": "Sayantan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine Division of Cardiology University of Michigan Medical School  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Zhang",
+      "given": "He",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6654-2852",
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine Division of Cardiology University of Michigan Medical School  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Nielsen",
+      "given": "Jonas B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology Department of Public Health and Nursing Norwegian University of Science and Technology  Trondheim Norway"
+        },
+        {
+          "name": "St. Olav Hospital Trondheim University Hospital  Trondheim Norway"
+        }
+      ],
+      "family": "Holmen",
+      "given": "Oddgeir L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine Division of Cardiology University of Michigan Medical School  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Chen",
+      "given": "Jin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine Division of Cardiology University of Michigan Medical School  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Lin",
+      "given": "Maoxuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology Department of Public Health and Nursing Norwegian University of Science and Technology  Trondheim Norway"
+        }
+      ],
+      "family": "Elvestad",
+      "given": "Maiken B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "HUNT Research Centre Department of Public Health and General Practice Norwegian University of Science and Technology  Levanger Norway"
+        },
+        {
+          "name": "Department of Medicine Levanger Hospital Nord‐Trøndelag Health Trust  Levanger Norway"
+        }
+      ],
+      "family": "Hveem",
+      "given": "Kristian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics and Center for Statistical Genetics University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Abecasis",
+      "given": "Goncalo R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics and Center for Statistical Genetics University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Kang",
+      "given": "Hyun Min",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-5645-4966",
+      "affiliation": [
+        {
+          "name": "Department of Computational Medicine and Bioinformatics University of Michigan  Ann Arbor Michigan United States of America"
+        },
+        {
+          "name": "Department of Internal Medicine Division of Cardiology University of Michigan Medical School  Ann Arbor Michigan United States of America"
+        },
+        {
+          "name": "Department of Human Genetics University of Michigan Medical School  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Willer",
+      "given": "Cristen J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        9,
+        1
+      ]
+    ],
+    "date-time": "2017-09-01T05:22:53Z",
+    "timestamp": 1504243373000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        29
+      ]
+    ],
+    "date-time": "2023-09-29T21:26:44Z",
+    "timestamp": 1696022804000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "HL109964",
+        "HL135824"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        7
+      ]
+    ],
+    "date-time": "2024-02-07T21:13:05Z",
+    "timestamp": 1707340385090
+  },
+  "is-referenced-by-count": 27,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2017,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2017-09-01T00:00:00Z",
+        "timestamp": 1504224000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22067",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22067",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "744-755",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2017,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2017,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nature15393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.01.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1534/genetics.113.150029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1038/ng.3562",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1038/ng.249",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1038/ng.3656",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1038/ng.401",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2014.19",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2307",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1038/srep33542",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1038/ng.3247",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_14_1",
+      "unstructured": "Gudbjartsson D. F. Helgason H. Gudjonsson S. A. Zink F. Oddson A. Gylfason A. \u0026Besenbacher S.(2015).Large‐scale whole‐genome sequencing of the Icelandic population.47(5) 435–444.https://doi.org/10.1038/ng.3247"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005230",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.262",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1038/ng.2354",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000529",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-8-S1-S64",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1038/ncomms9111",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_21_1",
+      "unstructured": "Huang J. Howie B. McCarthy S. Memari Y. Walter K. Min J. L. …Durbin R.(2015).Improved imputation of low‐frequency and rare variants using the UK10K haplotype reference panel.6 8111–8119.https://doi.org/10.1038/ncomms9111"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.01.013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1038/ng.3680",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_23_1",
+      "unstructured": "Jin Y. Andersen G. Yorgov D. Ferrara T. M. Ben S. Brownson K. M. …Koks S.(2016).Genome‐wide association studies of autoimmune vitiligo identify 23 new risk loci and highlight key pathways and regulatory variants.https://doi.org/10.1038/ng.3680"
+    },
+    {
+      "DOI": "10.1007/978-1-4757-1904-8_7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1101/gr.176552.114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1093/ije/dys095",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1038/ncomms10889",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1038/nature19057",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1146/annurev.genom.9.081307.164242",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20533",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1038/ng.140",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1007/s00439-016-1702-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1038/ng.2897",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1038/nrg2796",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1038/ng2088",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1038/ng.3643",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2017.51",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1038/ng.3043",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1038/ng.3310",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_40_1",
+      "unstructured": "Okada Y. Momozawa Y. Ashikawa K. Kanai M. \u0026Matsuda K.(2015).Construction of a population‐specific HLA imputation reference panel and its application to Graves' disease risk in Japanese.47(7) 798–802.https://doi.org/10.1038/ng.3310"
+    },
+    {
+      "DOI": "10.1038/ejhg.2014.216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "DOI": "10.1186/s12863-015-0248-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_43_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2015.102",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.1093/nar/29.1.308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000477",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2015-103439",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_47_1"
+    },
+    {
+      "key": "e_1_2_7_48_1",
+      "unstructured": "Exome Variant Server NHLBI Exome Sequencing Project (ESP) Seattle WA(URL:http://evs.gs.washington.edu/EVS/) [August 2016 accessed]."
+    },
+    {
+      "DOI": "10.1038/nature14962",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_49_1"
+    },
+    {
+      "DOI": "10.1038/ng.120",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_50_1"
+    },
+    {
+      "DOI": "10.1126/science.1142364",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_51_1"
+    }
+  ],
+  "reference-count": 50,
+  "references-count": 50,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22067"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Improving power of association tests using multiple sets of imputed genotypes from distributed reference panels"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

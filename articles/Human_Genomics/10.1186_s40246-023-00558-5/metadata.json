@@ -1,0 +1,675 @@
+{
+  "DOI": "10.1186/s40246-023-00558-5",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00558-5",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe effect of SPP1 in squamous cell carcinoma of the penis (PSCC) remained unknown. We attempted to clarify the function of the SPP1 gene in PSCC.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethod\u003c/jats:title\u003e\n                \u003cjats:p\u003eEight paired penile cancer specimens (including penile cancer tissue, paracancerous tissue, and positive lymph node tissue) subjected to whole transcriptome sequencing were analysed to identify differentially expressed genes. We used immunohistochemistry to detect the expression of SPP1 protein and immune cell related proteins in penile cancer tissue. Then, we performed weighted gene coexpression network analysis (WGCNA) to identify the genes related to SPP1 in penile cancer tissue and positive lymph node tissue. Based on the GSE57955 dataset, the CIBERSORT and ssGSEA algorithms were carried out to investigate the immune environment of PSCC. GSVA analysis was conducted to identify the signaling pathways related to SPP1 subgroups. Enzyme-linked immunosorbent assay (ELISA) method was adopted to detect SPP1 level in the serum of 60 patients with penile cancer.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eDifferential analysis indicated that SPP1 was the most differentially upregulated gene in both penile cancer tissues and positive lymph node tissues. Survival analysis suggested that the prognosis of the low-SPP1 group was significantly poorer than that of the high-SPP1 group. Subsequently, immune-related bioinformatics showed that SPP1 was significantly associated with B cells, CD8 + T cells, CD4 + T cells, macrophages, helper T cells, neutrophils and dendritic cells. The immunohistochemical results showed that the high-SPP1 group was characterized by relatively high expression of CD16 and relatively low expression of CD4. GSVA analysis indicated that high-SPP1 group was significantly associated with immune-related pathways such as PD-L1 expression and the PD-1 checkpoint pathway in cancer and the TNF signaling pathway. ELISA demonstrated that the serum level of SPP1 in patients with positive lymph node metastasis of penile cancer was significantly higher than that in patients with negative lymph node metastasis of penile cancer.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur study shows that the SPP1 gene might be an effective biomarker for predicting the prognosis and the efficacy of immunotherapy in PSCC patients.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "558"
+  ],
+  "article-number": "116",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "15 June 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "22 November 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "19 December 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All experimental protocols were approved by the Sun Yat-sen University Cancer Center Ethics Committee (No. 2020-FXY-056), and we had acquired informed consent (B2020-073)."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they agree with the publication."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Zou",
+      "given": "Yuantao",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Tan",
+      "given": "Xingliang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yuan",
+      "given": "Gangjun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tang",
+      "given": "Yi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Yanjun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Cong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Luo",
+      "given": "Sihao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wu",
+      "given": "Zhiming",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yao",
+      "given": "Kai",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        19
+      ]
+    ],
+    "date-time": "2023-12-19T03:02:21Z",
+    "timestamp": 1702954941000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        19
+      ]
+    ],
+    "date-time": "2023-12-19T03:09:50Z",
+    "timestamp": 1702955390000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100012226",
+      "award": [
+        "No. 19ykpy178"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Fundamental Research Funds for the Central Universities"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "date-time": "2024-04-30T05:13:25Z",
+    "timestamp": 1714454005349
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        19
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            19
+          ]
+        ],
+        "date-time": "2023-12-19T00:00:00Z",
+        "timestamp": 1702944000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            19
+          ]
+        ],
+        "date-time": "2023-12-19T00:00:00Z",
+        "timestamp": 1702944000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00558-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00558-5/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00558-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        19
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.eururo.2014.10.017",
+      "author": "OW Hakenberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "142",
+      "issue": "2015",
+      "journal-title": "Eur Urol",
+      "key": "558_CR1",
+      "unstructured": "Hakenberg OW, Compérat EM, Minhas S, Necchi A, Protzel C, Watkin N. EAU guidelines on penile cancer: 2014 update. Eur Urol. 2015;67(2015):142–50.",
+      "volume": "67",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3322/caac.21590",
+      "author": "RL Siegel",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "journal-title": "CA Cancer J Clin",
+      "key": "558_CR2",
+      "unstructured": "Siegel RL, Miller KD, Jemal A. Cancer statistics, 2020. CA Cancer J Clin. 2020;70:7–30.",
+      "volume": "70",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.eururo.2015.12.007",
+      "author": "L Alemany",
+      "doi-asserted-by": "publisher",
+      "first-page": "953",
+      "journal-title": "Eur Urol",
+      "key": "558_CR3",
+      "unstructured": "Alemany L, Cubilla A, Halec G, Kasamatsu E, Quirós B, Masferrer E, Tous S, Lloveras B, Hernández-Suarez G, Lonsdale R, Tinoco L, Alejo M, Alvarado-Cabrero I, Laco J, Guimerà N, Poblet E, Lombardi LE, Bergeron C, Clavero O, Shin HR, Ferrera A, Felix A, Germar J, Mandys V, Clavel C, Tzardi M, Pons LE, Wain V, Cruz E, Molina C, Mota JD, Jach R, Velasco J, Carrilho C, López-Revilla R, Goodman MT, Quint WG, Castellsagué X, Bravo I, Pawlita M, Muñoz N, Bosch FX, de Sanjosé S. Role of human papillomavirus in penile carcinomas worldwide. Eur Urol. 2016;69:953–61.",
+      "volume": "69",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-14-1656",
+      "author": "A Feber",
+      "doi-asserted-by": "publisher",
+      "first-page": "1196",
+      "journal-title": "Clin Cancer Res Off J Am Assoc Can Res",
+      "key": "558_CR4",
+      "unstructured": "Feber A, Arya M, de Winter P, Saqib M, Nigam R, Malone PR, Tan WS, Rodney S, Lechner M, Freeman A, Jameson C, Muneer A, Beck S, Kelly JD. Epigenetics markers of metastasis and HPV-induced tumorigenesis in penile cancer. Clin Cancer Res Off J Am Assoc Can Res. 2015;21:1196–206.",
+      "volume": "21",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/S1470-2045(18)30682-X",
+      "author": "TB Olesen",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "journal-title": "Lancet Oncol",
+      "key": "558_CR5",
+      "unstructured": "Olesen TB, Sand FL, Rasmussen CL, Albieri V, Toft BG, Norrild B, Munk C, Kjær SK. Prevalence of human papillomavirus DNA and p16(INK4a) in penile cancer and penile intraepithelial neoplasia: a systematic review and meta-analysis. Lancet Oncol. 2019;20:145–58.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1517/17460441.2014.925875",
+      "author": "G Agarwal",
+      "doi-asserted-by": "publisher",
+      "first-page": "959",
+      "journal-title": "Expert Opin Drug Discov",
+      "key": "558_CR6",
+      "unstructured": "Agarwal G, Gupta S, Spiess PE. Novel targeted therapies for the treatment of penile cancer. Expert Opin Drug Discov. 2014;9:959–68.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.6004/jnccn.2013.0075",
+      "author": "PE Clark",
+      "doi-asserted-by": "publisher",
+      "first-page": "594",
+      "journal-title": "J Natl Compr Cancer Netw JNCCN",
+      "key": "558_CR7",
+      "unstructured": "Clark PE, Spiess PE, Agarwal N, Biagioli MC, Eisenberger MA, Greenberg RE, Herr HW, Inman BA, Kuban DA, Kuzel TM, Lele SM, Michalski J, Pagliaro L, Pal SK, Patterson A, Plimack ER, Pohar KS, Porter MP, Richie JP, Sexton WJ, Shipley WU, Small EJ, Trump DL, Wile G, Wilson TG, Dwyer M, Ho M. Penile cancer: clinical practice guidelines in oncology. J Natl Compr Cancer Netw JNCCN. 2013;11:594–615.",
+      "volume": "11",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1200/JCO.2010.29.5477",
+      "author": "LC Pagliaro",
+      "doi-asserted-by": "publisher",
+      "first-page": "3851",
+      "journal-title": "J Clin Oncol Off J Am Soc Clin Oncol",
+      "key": "558_CR8",
+      "unstructured": "Pagliaro LC, Williams DL, Daliani D, Williams MB, Osai W, Kincaid M, Wen S, Thall PF, Pettaway CA. Neoadjuvant paclitaxel, ifosfamide, and cisplatin chemotherapy for metastatic penile cancer: a phase II study. J Clin Oncol Off J Am Soc Clin Oncol. 2010;28:3851–7.",
+      "volume": "28",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.urolonc.2020.08.001",
+      "author": "J Chahoud",
+      "doi-asserted-by": "publisher",
+      "first-page": "229",
+      "journal-title": "Urol Oncol",
+      "key": "558_CR9",
+      "unstructured": "Chahoud J, Tamil M, Necchi A. Second line salvage systemic therapy for advanced penile cancer. Urol Oncol. 2022;40:229–34.",
+      "volume": "40",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.urology.2014.12.049",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1104",
+      "journal-title": "Urology",
+      "key": "558_CR10",
+      "unstructured": "Wang J, Pettaway CA, Pagliaro LC. Treatment for metastatic penile cancer after first-line chemotherapy failure: analysis of response and survival outcomes. Urology. 2015;85:1104–10.",
+      "volume": "85",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41585-020-0359-z",
+      "author": "AM Aydin",
+      "doi-asserted-by": "publisher",
+      "first-page": "555",
+      "journal-title": "Nat Rev Urol",
+      "key": "558_CR11",
+      "unstructured": "Aydin AM, Chahoud J, Adashek JJ, Azizi M, Magliocco A, Ross JS, Necchi A, Spiess PE. Understanding genomics and the immune environment of penile cancer to improve therapy. Nat Rev Urol. 2020;17:555–70.",
+      "volume": "17",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1097/MOU.0000000000000640",
+      "author": "J Chahoud",
+      "doi-asserted-by": "publisher",
+      "first-page": "364",
+      "journal-title": "Curr Opin Urol",
+      "key": "558_CR12",
+      "unstructured": "Chahoud J, Pickering CR, Pettaway CA. Genetics and penile cancer: recent developments and implications. Curr Opin Urol. 2019;29:364–70.",
+      "volume": "29",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1200/JCO.2016.72.1985",
+      "author": "HJ Hammers",
+      "doi-asserted-by": "publisher",
+      "first-page": "3851",
+      "journal-title": "J Clin Oncol Off J Am Soc Clin Oncol",
+      "key": "558_CR13",
+      "unstructured": "Hammers HJ, Plimack ER, Infante JR, Rini BI, McDermott DF, Lewis LD, Voss MH, Sharma P, Pal SK, Razak ARA, Kollmannsberger C, Heng DYC, Spratlin J, McHenry MB, Amin A. Safety and efficacy of nivolumab in combination with ipilimumab in metastatic renal cell carcinoma: the checkmate 016 study. J Clin Oncol Off J Am Soc Clin Oncol. 2017;35:3851–8.",
+      "volume": "35",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1510665",
+      "author": "RJ Motzer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1803",
+      "journal-title": "N Engl J Med",
+      "key": "558_CR14",
+      "unstructured": "Motzer RJ, Escudier B, McDermott DF, George S, Hammers HJ, Srinivas S, Tykodi SS, Sosman JA, Procopio G, Plimack ER, Castellano D, Choueiri TK, Gurney H, Donskov F, Bono P, Wagstaff J, Gauler TC, Ueda T, Tomita Y, Schutz FA, Kollmannsberger C, Larkin J, Ravaud A, Simon JS, Xu LA, Waxman IM, Sharma P. Nivolumab versus everolimus in advanced renal-cell carcinoma. N Engl J Med. 2015;373:1803–13.",
+      "volume": "373",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3389/fimmu.2021.694801",
+      "author": "X Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "694801",
+      "journal-title": "Front Immunol",
+      "key": "558_CR15",
+      "unstructured": "Li X, Zhang Q, Chen G, Luo D. Multi-omics analysis showed the clinical value of gene signatures of C1QC(+) and SPP1(+) TAMs in cervical cancer. Front Immunol. 2021;12:694801.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s00262-021-02967-8",
+      "author": "L Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "121",
+      "journal-title": "Cancer Immunol Immunother CII",
+      "key": "558_CR16",
+      "unstructured": "Liu L, Zhang R, Deng J, Dai X, Zhu X, Fu Q, Zhang H, Tong Z, Zhao P, Fang W, Zheng Y, Bao X. Construction of TME and Identification of crosstalk between malignant cells and macrophages by SPP1 in hepatocellular carcinoma. Cancer Immunol Immunother CII. 2022;71:121–36.",
+      "volume": "71",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.jhep.2021.06.028",
+      "author": "L Ma",
+      "doi-asserted-by": "publisher",
+      "first-page": "1397",
+      "journal-title": "J Hepatol",
+      "key": "558_CR17",
+      "unstructured": "Ma L, Wang L, Khatib SA, Chang CW, Heinrich S, Dominguez DA, Forgues M, Candia J, Hernandez MO, Kelly M, Zhao Y, Tran B, Hernandez JM, Davis JL, Kleiner DE, Wood BJ, Greten TF, Wang XW. Single-cell atlas of tumor cell evolution in response to therapy in hepatocellular carcinoma and intrahepatic cholangiocarcinoma. J Hepatol. 2021;75:1397–408.",
+      "volume": "75",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.798022",
+      "author": "XT Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "798022",
+      "journal-title": "Front Immunol",
+      "key": "558_CR18",
+      "unstructured": "Shen XT, Xie SZ, Xu J, Yang LY, Qin LX. Pan-cancer analysis reveals a distinct neutrophil extracellular trap-associated regulatory pattern. Front Immunol. 2022;13:798022.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1080/21655979.2021.2020391",
+      "author": "P Zeng",
+      "doi-asserted-by": "publisher",
+      "first-page": "3221",
+      "journal-title": "Bioengineered",
+      "key": "558_CR19",
+      "unstructured": "Zeng P, Zhang X, Xiang T, Ling Z, Lin C, Diao H. Secreted phosphoprotein 1 as a potential prognostic and immunotherapy biomarker in multiple human cancers. Bioengineered. 2022;13:3221–39.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-559",
+      "author": "P Langfelder",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "journal-title": "BMC Bioinform",
+      "key": "558_CR20",
+      "unstructured": "Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinform. 2008;9:559.",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nmeth.3337",
+      "author": "AM Newman",
+      "doi-asserted-by": "publisher",
+      "first-page": "453",
+      "journal-title": "Nat Methods",
+      "key": "558_CR21",
+      "unstructured": "Newman AM, Liu CL, Green MR, Gentles AJ, Feng W, Xu Y, Hoang CD, Diehn M, Alizadeh AA. Robust enumeration of cell subsets from tissue expression profiles. Nat Methods. 2015;12:453–7.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/1471-2105-14-7",
+      "author": "S Hänzelmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "journal-title": "BMC Bioinform",
+      "key": "558_CR22",
+      "unstructured": "Hänzelmann S, Castelo R, Guinney J. GSVA: gene set variation analysis for microarray and RNA-seq data. BMC Bioinform. 2013;14:7.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41467-020-15980-9",
+      "author": "T Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2124",
+      "journal-title": "Nat Commun",
+      "key": "558_CR23",
+      "unstructured": "Huang T, Cheng X, Chahoud J, Sarhan A, Tamboli P, Rao P, Guo M, Manyam G, Zhang L, Xiang Y, Han L, Shang X, Deng P, Luo Y, Lu X, Feng S, Ferrer MM, Alan Wang Y, DePinho RA, Pettaway CA, Lu X. Effective combinatorial immunotherapy for penile squamous cell carcinoma. Nat Commun. 2020;11:2124.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2021.08.023",
+      "author": "P Nallasamy",
+      "doi-asserted-by": "publisher",
+      "first-page": "1998",
+      "journal-title": "Gastroenterology",
+      "key": "558_CR24",
+      "unstructured": "Nallasamy P, Nimmakayala RK, Karmakar S, Leon F, Seshacharyulu P, Lakshmanan I, Rachagani S, Mallya K, Zhang C, Ly QP, Myers MS, Josh L, Grabow CE, Gautam SK, Kumar S, Lele SM, Jain M, Batra SK, Ponnusamy MP. Pancreatic tumor microenvironment factor promotes cancer stemness via SPP1-CD44 Axis. Gastroenterology. 2021;161:1998-2013.e1997.",
+      "volume": "161",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.7150/thno.47432",
+      "author": "G Deng",
+      "doi-asserted-by": "publisher",
+      "first-page": "11428",
+      "journal-title": "Theranostics",
+      "key": "558_CR25",
+      "unstructured": "Deng G, Zeng F, Su J, Zhao S, Hu R, Zhu W, Hu S, Chen X, Yin M. BET inhibitor suppresses melanoma progression via the noncanonical NF-κB/SPP1 pathway. Theranostics. 2020;10:11428–43.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-022-29366-6",
+      "author": "J Qi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1742",
+      "journal-title": "Nat Commun",
+      "key": "558_CR26",
+      "unstructured": "Qi J, Sun H, Zhang Y, Wang Z, Xun Z, Li Z, Ding X, Bao R, Hong L, Jia W, Fang F, Liu H, Chen L, Zhong J, Zou D, Liu L, Han L, Ginhoux F, Liu Y, Ye Y, Su B. Single-cell and spatial analysis reveal interaction of FAP(+) fibroblasts and SPP1(+) macrophages in colorectal cancer. Nat Commun. 2022;13:1742.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2021.04.064",
+      "author": "NR Gough",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Gastroenterology",
+      "key": "558_CR27",
+      "unstructured": "Gough NR, Xiang X, Mishra L. TGF-β signaling in liver, pancreas, and gastrointestinal diseases and cancer. Gastroenterology. 2021;161:434-452.e415.",
+      "volume": "161",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/biolre/ioz024",
+      "author": "Z Latifi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1417",
+      "journal-title": "Biol Reprod",
+      "key": "558_CR28",
+      "unstructured": "Latifi Z, Nejabati HR, Abroon S, Mihanfar A, Farzadi L, Hakimi P, Hajipour H, Nouri M, Fattahi A. Dual role of TGF-β in early pregnancy: clues from tumor progression. Biol Reprod. 2019;100:1417–30.",
+      "volume": "100",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1183/13993003.02441-2018",
+      "author": "C Morse",
+      "doi-asserted-by": "publisher",
+      "first-page": "1802441",
+      "journal-title": "Eur Respir J",
+      "key": "558_CR29",
+      "unstructured": "Morse C, Tabib T, Sembrat J, Buschur KL, Bittar HT, Valenzi E, Jiang Y, Kass DJ, Gibson K, Chen W, Mora A, Benos PV, Rojas M, Lafyatis R. Proliferating SPP1/MERTK-expressing macrophages in idiopathic pulmonary fibrosis. Eur Respir J. 2019;54:1802441.",
+      "volume": "54",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ccell.2019.05.003",
+      "author": "P Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "868",
+      "journal-title": "Cancer Cell",
+      "key": "558_CR30",
+      "unstructured": "Chen P, Zhao D, Li J, Liang X, Li J, Chang A, Henry VK, Lan Z, Spring DJ, Rao G, Wang YA, DePinho RA. Symbiotic macrophage-glioma cell interactions reveal synthetic lethality in PTEN-null glioma. Cancer Cell. 2019;35:868-884.e866.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13045-017-0511-2",
+      "author": "J Long",
+      "doi-asserted-by": "publisher",
+      "first-page": "146",
+      "journal-title": "J Hematol Oncol",
+      "key": "558_CR31",
+      "unstructured": "Long J, Lin J, Wang A, Wu L, Zheng Y, Yang X, Wan X, Xu H, Chen S, Zhao H. PD-1/PD-L blockade in gastrointestinal cancers: lessons learned and the road toward precision immunotherapy. J Hematol Oncol. 2017;10:146.",
+      "volume": "10",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ccell.2020.10.001",
+      "author": "DL Jardim",
+      "doi-asserted-by": "publisher",
+      "first-page": "154",
+      "journal-title": "Cancer Cell",
+      "key": "558_CR32",
+      "unstructured": "Jardim DL, Goodman A, de Melo Gagliato D, Kurzrock R. The challenges of Tumor mutational burden as an immunotherapy biomarker. Cancer Cell. 2021;39:154–73.",
+      "volume": "39",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fimmu.2020.00369",
+      "author": "E Picard",
+      "doi-asserted-by": "publisher",
+      "first-page": "369",
+      "journal-title": "Front Immunol",
+      "key": "558_CR33",
+      "unstructured": "Picard E, Verschoor CP, Ma GW, Pawelec G. Relationships between immune landscapes, genetic subtypes and responses to immunotherapy in colorectal cancer. Front Immunol. 2020;11:369.",
+      "volume": "11",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 33,
+  "references-count": 33,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00558-5"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "SPP1 is associated with adverse prognosis and predicts immunotherapy efficacy in penile cancer"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

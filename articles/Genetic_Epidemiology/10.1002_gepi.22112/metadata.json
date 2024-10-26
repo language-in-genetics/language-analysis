@@ -1,0 +1,590 @@
+{
+  "DOI": "10.1002/gepi.22112",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22112",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003ePredicting a phenotype and understanding which variables improve that prediction are two very challenging and overlapping problems in the analysis of high‐dimensional (HD) data such as those arising from genomic and brain imaging studies. It is often believed that the number of truly important predictors is small relative to the total number of variables, making computational approaches to variable selection and dimension reduction extremely important. To reduce dimensionality, commonly used two‐step methods first cluster the data in some way, and build models using cluster summaries to predict the phenotype. It is known that important exposure variables can alter correlation patterns between clusters of HD variables, that is, alter network properties of the variables. However, it is not well understood whether such altered clustering is informative in prediction. Here, assuming there is a binary exposure with such network‐altering effects, we explore whether the use of exposure‐dependent clustering relationships in dimension reduction can improve predictive modeling in a two‐step framework. Hence, we propose a modeling framework called ECLUST to test this hypothesis, and evaluate its performance through extensive simulations. With ECLUST, we found improved prediction and variable selection performance compared to methods that do not consider the environment in the clustering step, or to methods that use the original data as features. We further illustrate this modeling framework through the analysis of three data sets from very different fields, each with HD data, a binary exposure, and a phenotype of interest. Our method is available in the \u003cjats:italic\u003eeclust\u003c/jats:italic\u003e CRAN package.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22112"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-8956-2509",
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University Montréal QC Canada"
+        },
+        {
+          "name": "Lady Davis Institute, Jewish General Hospital Montréal QC Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Bhatnagar",
+      "given": "Sahir Rai",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Statistics McGill University Montréal QC Canada"
+        }
+      ],
+      "family": "Yang",
+      "given": "Yi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Montreal Neurological Institute McGill University Montréal QC Canada"
+        }
+      ],
+      "family": "Khundrakpam",
+      "given": "Budhachandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Montreal Neurological Institute McGill University Montréal QC Canada"
+        }
+      ],
+      "family": "Evans",
+      "given": "Alan C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science McGill University Montréal QC Canada"
+        }
+      ],
+      "family": "Blanchette",
+      "given": "Mathieu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biochemistry Université de Sherbrooke QC Canada"
+        }
+      ],
+      "family": "Bouchard",
+      "given": "Luigi",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2427-5696",
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University Montréal QC Canada"
+        },
+        {
+          "name": "Lady Davis Institute, Jewish General Hospital Montréal QC Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Greenwood",
+      "given": "Celia M.T.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        2,
+        9
+      ]
+    ],
+    "date-time": "2018-02-09T03:53:27Z",
+    "timestamp": 1518148407000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        24
+      ]
+    ],
+    "date-time": "2023-09-24T12:36:56Z",
+    "timestamp": 1695559016000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000024",
+      "award": [
+        "363444"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Canadian Institutes of Health Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        1
+      ]
+    ],
+    "date-time": "2024-04-01T17:51:46Z",
+    "timestamp": 1711993906338
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        2,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            2,
+            8
+          ]
+        ],
+        "date-time": "2018-02-08T00:00:00Z",
+        "timestamp": 1518048000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22112",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22112",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "233-249",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        2,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        2,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        4
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "key": "e_1_2_9_2_1",
+      "unstructured": "Bhatnagar S. R.(2017).eclust: environment based clustering for interpretable predictive models in high dimensional data. R package version 0.1.0. Retrieved fromhttps://github.com/sahirbhatnagar/eclust/"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2011.07.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.2337/db11-1160",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.2337/dc10-1024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.1007/BF00058655",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1016/j.jspi.2013.05.019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1983.10477973",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "DOI": "10.1016/j.ajog.2004.05.052",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1037/0278-6133.23.4.371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1016/j.neuroimage.2005.09.068",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1093/nsr/nwt032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "DOI": "10.1002/jbmr.5650080507",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "article-title": "Multivariate adaptive regression splines",
+      "author": "Friedman J. H.",
+      "first-page": "1",
+      "journal-title": "Annals of Statistics",
+      "key": "e_1_2_9_15_1",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1038/nrg2502",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1186/gb-2001-2-1-research0003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0018064",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1002/(SICI)1097-0258(19970515)16:9\u003c965::AID-SIM509\u003e3.0.CO;2-O",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-8137.1912.tb05611.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_20_1"
+    },
+    {
+      "author": "Jenatton R.",
+      "first-page": "366",
+      "key": "e_1_2_9_21_1",
+      "volume-title": "Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1007/s10115-006-0040-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1038/ng.3949",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "author": "Kendall M.",
+      "key": "e_1_2_9_24_1",
+      "volume-title": "A course in multivariate analysis",
+      "year": "1957"
+    },
+    {
+      "DOI": "10.1093/cercor/bhs187",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bth909",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "article-title": "caret package",
+      "author": "Kuhn M.",
+      "issue": "5",
+      "journal-title": "Journal of Statistical Software",
+      "key": "e_1_2_9_27_1",
+      "volume": "28",
+      "year": "2008"
+    },
+    {
+      "article-title": "Cautionary note about r 2",
+      "author": "Kvålseth T. O.",
+      "first-page": "279",
+      "issue": "4",
+      "journal-title": "American Statistician",
+      "key": "e_1_2_9_28_1",
+      "volume": "39",
+      "year": "1985"
+    },
+    {
+      "DOI": "10.1186/1752-0509-1-54",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_29_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_30_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm563",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "key": "e_1_2_9_32_1",
+      "unstructured": "Langfelder P. Zhang B. \u0026with contributions from Horvath S. (2016).dynamicTreeCut: methods for detection of clusters in hierarchical clustering dendrograms. R package version 1.63‐1. Retrieved fromhttp://www.genetics.ucla.edu/labs/horvath/CoexpressionNetwork/BranchCutting/"
+    },
+    {
+      "author": "Lee D. D.",
+      "first-page": "556",
+      "key": "e_1_2_9_33_1",
+      "volume-title": "Advances in neural information processing systems",
+      "year": "2001"
+    },
+    {
+      "key": "e_1_2_9_34_1",
+      "unstructured": "Milborrow S.(2011).Derived from mda: MARS by Trevor Hastie and Rob Tibshirani.Earth: multivariate adaptive regression splines. R package version 3.2‐0. Retrieved fromhttp://CRAN.R-project.org/package=earth."
+    },
+    {
+      "DOI": "10.18637/jss.v053.i09",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_35_1"
+    },
+    {
+      "article-title": "Gene coexpression analyses differentiate networks associated with diverse cancers harboring tp53 missense or null mutations",
+      "author": "Klein K.",
+      "first-page": "137",
+      "journal-title": "Frontiers in Genetics",
+      "key": "e_1_2_9_36_1",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxl002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_37_1"
+    },
+    {
+      "DOI": "10.1098/rspl.1895.0041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_38_1"
+    },
+    {
+      "DOI": "10.1111/rssb.12123",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_39_1"
+    },
+    {
+      "author": "R Core Team",
+      "key": "e_1_2_9_40_1",
+      "volume-title": "R: a language and environment for statistical computing",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1126/science.1073374",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_41_1"
+    },
+    {
+      "article-title": "Sparse regression and marginal testing using cluster prototypes",
+      "author": "Reid S.",
+      "first-page": "364",
+      "issue": "2",
+      "journal-title": "Biostatistics",
+      "key": "e_1_2_9_42_1",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-77",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_43_1"
+    },
+    {
+      "DOI": "10.4161/epi.25578",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_44_1"
+    },
+    {
+      "DOI": "10.1038/414799a",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_45_1"
+    },
+    {
+      "key": "e_1_2_9_46_1",
+      "unstructured": "Sathirapongsasuti J. F.(2013).COPDSexualDimorphism.data: data to support sexually dimorphic and COPD differential analysis for gene expression and methylation.R package version 1.4.0. Retrieved fromhttps://git.bioconductor.org/packages/COPDSexualDimorphism.data"
+    },
+    {
+      "DOI": "10.1016/j.jpsychires.2012.11.017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_47_1"
+    },
+    {
+      "DOI": "10.1038/nature04513",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_48_1"
+    },
+    {
+      "DOI": "10.2307/1412159",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_49_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_50_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr300",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_51_1"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-08-0196",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_52_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv677",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_9_53_1",
+      "unstructured": "Wan Y.‐W. Allen G. I. Anderson M. L. \u0026Liu Z.(2015).TCGA2STAT: simple TCGA data access for integrated statistical analysis in R. R package version 1.2. Retrieved fromhttp://www.liuzlab.org/TCGA2STAT/"
+    },
+    {
+      "DOI": "10.1186/1471-2393-12-23",
+      "article-title": "Gestational diabetes and pregnancy outcomes‐a systematic review of the World Health Organization (WHO) and the International Association of Diabetes in Pregnancy Study Groups (IADPSG) diagnostic criteria",
+      "author": "Wendland E. M.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "BMC Pregnancy and Childbirth",
+      "key": "e_1_2_9_54_1",
+      "volume": "12",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1080/00401706.2013.810174",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_55_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxp008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_56_1"
+    },
+    {
+      "key": "e_1_2_9_57_1",
+      "unstructured": "Yang Y. \u0026Zou H.(2014).gglasso: group lasso penalized learning using a unified bmd algorithm. R package version 1.3. Retrieved fromhttps://github.com/emeryyi/gglasso"
+    },
+    {
+      "DOI": "10.2202/1544-6115.1128",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_58_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_59_1"
+    }
+  ],
+  "reference-count": 58,
+  "references-count": 58,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/102475",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22112"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "An analytic approach for interpretable predictive models in high‐dimensional data in the presence of interactions with exposures"
+  ],
+  "type": "journal-article",
+  "volume": "42"
+}

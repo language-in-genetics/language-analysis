@@ -1,0 +1,727 @@
+{
+  "DOI": "10.1186/s40246-023-00487-3",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00487-3",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe Million Veteran Program (MVP) participants represent 100 years of US history, including significant social and demographic changes over time. Our study assessed two aspects of the MVP: (i) longitudinal changes in population diversity and (ii) how these changes can be accounted for in genome-wide association studies (GWAS). To investigate these aspects, we divided MVP participants into five birth cohorts (\u003cjats:italic\u003eN\u003c/jats:italic\u003e-range = 123,888 [born from 1943 to 1947] to 136,699 [born from 1948 to 1953]).\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eAncestry groups were defined by (i) HARE (harmonized ancestry and race/ethnicity) and (ii) a random-forest clustering approach using the 1000 Genomes Project and the Human Genome Diversity Project (1kGP + HGDP) reference panels (77 world populations representing six continental groups). In these groups, we performed GWASs of height, a trait potentially affected by population stratification. Birth cohorts demonstrate important trends in ancestry diversity over time. More recent HARE-assigned Europeans, Africans, and Hispanics had lower European ancestry proportions than older birth cohorts (0.010 \u0026lt; Cohen’s \u003cjats:italic\u003ed\u003c/jats:italic\u003e \u0026lt; 0.259, \u003cjats:italic\u003ep\u003c/jats:italic\u003e \u0026lt; 7.80 × 10\u003cjats:sup\u003e−4\u003c/jats:sup\u003e). Conversely, HARE-assigned East Asians showed an increase in European ancestry proportion over time. In GWAS of height using HARE assignments, genomic inflation due to population stratification was prevalent across all birth cohorts (linkage disequilibrium score regression intercept = 1.08 ± 0.042). The 1kGP + HGDP-based ancestry assignment significantly reduced the population stratification (mean intercept reduction = 0.045 ± 0.007, \u003cjats:italic\u003ep\u003c/jats:italic\u003e \u0026lt; 0.05) confounding in the GWAS statistics.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThis study provides a characterization of ancestry diversity of the MVP cohort over time and compares two strategies to infer genetically defined ancestry groups by assessing differences in controlling population stratification in genome-wide association studies.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "487"
+  ],
+  "article-number": "46",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "6 September 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "5 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "2 June 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Research involving the MVP data was approved by the Veterans Affairs (VA) Central Institutional Review Board (IRB). The current project was also approved by VA IRBs in Durham (North Carolina), Houston (Texas), Boston (Massachusetts), and West Haven (Connecticut)."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Wendt",
+      "given": "Frank R.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Pathak",
+      "given": "Gita A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vahey",
+      "given": "Jacqueline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Qin",
+      "given": "Xuejun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Koller",
+      "given": "Dora",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cabrera-Mendoza",
+      "given": "Brenda",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Haeny",
+      "given": "Angela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Harrington",
+      "given": "Kelly M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rajeevan",
+      "given": "Nallakkandi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Duong",
+      "given": "Linh M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Levey",
+      "given": "Daniel F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De Angelis",
+      "given": "Flavio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De Lillo",
+      "given": "Antonella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bigdeli",
+      "given": "Tim B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pyarajan",
+      "given": "Saiju",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gaziano",
+      "given": "John Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gelernter",
+      "given": "Joel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Aslan",
+      "given": "Mihaela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Provenzale",
+      "given": "Dawn",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Helmer",
+      "given": "Drew A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hauser",
+      "given": "Elizabeth R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Polimanti",
+      "given": "Renato",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "VA Million Veteran Program",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "Department of Veteran Affairs Cooperative Study Program (#2006)",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ],
+    "date-time": "2023-06-02T14:02:21Z",
+    "timestamp": 1685714541000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ],
+    "date-time": "2023-06-02T14:05:16Z",
+    "timestamp": 1685714716000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000025",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Mental Health"
+    },
+    {
+      "DOI": "10.13039/501100007601",
+      "doi-asserted-by": "publisher",
+      "name": "Horizon 2020"
+    },
+    {
+      "DOI": "10.13039/100000738",
+      "doi-asserted-by": "publisher",
+      "name": "U.S. Department of Veterans Affairs"
+    },
+    {
+      "DOI": "10.13039/100018727",
+      "doi-asserted-by": "publisher",
+      "name": "One Mind"
+    },
+    {
+      "DOI": "10.13039/100000026",
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Drug Abuse"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        16
+      ]
+    ],
+    "date-time": "2024-02-16T11:42:25Z",
+    "timestamp": 1708083745911
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            2
+          ]
+        ],
+        "date-time": "2023-06-02T00:00:00Z",
+        "timestamp": 1685664000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            2
+          ]
+        ],
+        "date-time": "2023-06-02T00:00:00Z",
+        "timestamp": 1685664000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00487-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00487-3/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00487-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s42003-018-0261-x",
+      "author": "MC Mills",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "issue": "1",
+      "journal-title": "Commun Biol",
+      "key": "487_CR1",
+      "unstructured": "Mills MC, Rahal C. A scientometric review of genome-wide association studies. Commun Biol. 2019;2(1):9.",
+      "volume": "2",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.jclinepi.2015.09.016",
+      "author": "JM Gaziano",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "journal-title": "J Clin Epidemiol",
+      "key": "487_CR2",
+      "unstructured": "Gaziano JM, Concato J, Brophy M, Fiore L, Pyarajan S, Breeling J, et al. Million Veteran Program: a mega-biobank to study genetic influences on health and disease. J Clin Epidemiol. 2016;70:214–23.",
+      "volume": "70",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2019.08.012",
+      "author": "H Fang",
+      "doi-asserted-by": "publisher",
+      "first-page": "763",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet",
+      "key": "487_CR3",
+      "unstructured": "Fang H, Hui Q, Lynch J, Honerlaw J, Assimes TL, Huang J, et al. Harmonizing genetic ancestry and self-identified race/ethnicity in genome-wide association studies. Am J Hum Genet. 2019;105(4):763–72.",
+      "volume": "105",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00975-z",
+      "doi-asserted-by": "crossref",
+      "key": "487_CR4",
+      "unstructured": "Atkinson EG, Bloemendal A, Maihofer AX, Nievergelt CM, Daly MJ, Neale BM. Reply to: On powerful GWAS in admixed populations. Nat Genet. 2021."
+    },
+    {
+      "DOI": "10.1038/s41588-020-00766-y",
+      "author": "EG Atkinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "195",
+      "issue": "2",
+      "journal-title": "Nat Genet",
+      "key": "487_CR5",
+      "unstructured": "Atkinson EG, Maihofer AX, Kanai M, Martin AR, Karczewski KJ, Santoro ML, et al. Tractor uses local ancestry to enable the inclusion of admixed individuals in GWAS and to boost power. Nat Genet. 2021;53(2):195–204.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00953-5",
+      "doi-asserted-by": "crossref",
+      "key": "487_CR6",
+      "unstructured": "Hou K, Bhattacharya A, Mester R, Burch KS, Pasaniuc B. On powerful GWAS in admixed populations. Nat Genet. 2021."
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.09.019",
+      "author": "D Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "736",
+      "issue": "3",
+      "journal-title": "Cell",
+      "key": "487_CR7",
+      "unstructured": "Wu D, Dou J, Chai X, Bellis C, Wilm A, Shih CC, et al. Large-scale whole-genome sequencing of three diverse Asian populations in Singapore. Cell. 2019;179(3):736–49.",
+      "volume": "179",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "A Auton",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "487_CR8",
+      "unstructured": "Auton A, Abecasis GR, Altshuler DM, Durbin RM, Abecasis GR, Bentley DR, et al. A global reference for human genetic variation. Nature. 2015;526(7571):68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1126/science.1153717",
+      "author": "JZ Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1100",
+      "issue": "5866",
+      "journal-title": "Science",
+      "key": "487_CR9",
+      "unstructured": "Li JZ, Absher DM, Tang H, Southwick AM, Casto AM, Ramachandran S, et al. Worldwide human relationships inferred from genome-wide patterns of variation. Science. 2008;319(5866):1100–4.",
+      "volume": "319",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.7554/eLife.39702",
+      "author": "M Sohail",
+      "doi-asserted-by": "publisher",
+      "first-page": "e39702",
+      "journal-title": "Elife",
+      "key": "487_CR10",
+      "unstructured": "Sohail M, Maier RM, Ganna A, Bloemendal A, Martin AR, Turchin MC, et al. Polygenic adaptation on height is overestimated due to uncorrected stratification in genome-wide association studies. Elife. 2019;8:e39702.",
+      "volume": "8",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1111/j.1728-4457.2009.00260.x",
+      "author": "AD Perez",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Popul Dev Rev",
+      "key": "487_CR11",
+      "unstructured": "Perez AD, Hirschman C. The changing racial and ethnic composition of the US population: emerging American identities. Popul Dev Rev. 2009;35(1):1–51.",
+      "volume": "35",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.02.048",
+      "author": "G Sirugo",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "issue": "1",
+      "journal-title": "Cell",
+      "key": "487_CR12",
+      "unstructured": "Sirugo G, Williams SM, Tishkoff SA. The missing diversity in human genetic studies. Cell. 2019;177(1):26–31.",
+      "volume": "177",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1056/NEJMsr1809937",
+      "author": "JC Denny",
+      "doi-asserted-by": "publisher",
+      "first-page": "668",
+      "issue": "7",
+      "journal-title": "N Engl J Med",
+      "key": "487_CR13",
+      "unstructured": "Denny JC, Rutter JL, Goldstein DB, Philippakis A, Smoller JW, Jenkins G, et al. The “all of us” research program. N Engl J Med. 2019;381(7):668–76.",
+      "volume": "381",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.je.2016.12.005",
+      "author": "A Nagai",
+      "doi-asserted-by": "publisher",
+      "first-page": "S2",
+      "issue": "3S",
+      "journal-title": "J Epidemiol",
+      "key": "487_CR14",
+      "unstructured": "Nagai A, Hirata M, Kamatani Y, Muto K, Matsuda K, Kiyohara Y, et al. Overview of the BioBank Japan Project: study design and profile. J Epidemiol. 2017;27(3S):S2–8.",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/ije/dyab029",
+      "author": "P Song",
+      "doi-asserted-by": "publisher",
+      "first-page": "717",
+      "issue": "3",
+      "journal-title": "Int J Epidemiol",
+      "key": "487_CR15",
+      "unstructured": "Song P, Gupta A, Goon IY, Hasan M, Mahmood S, Pradeepa R, et al. Data resource profile: understanding the patterns and determinants of health in South Asians—the South Asia Biobank. Int J Epidemiol. 2021;50(3):717–8.",
+      "volume": "50",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.08.051",
+      "author": "RE Peterson",
+      "doi-asserted-by": "publisher",
+      "first-page": "589",
+      "issue": "3",
+      "journal-title": "Cell",
+      "key": "487_CR16",
+      "unstructured": "Peterson RE, Kuchenbaecker K, Walters RK, Chen CY, Popejoy AB, Periyasamy S, et al. Genome-wide association studies in ancestrally diverse populations: opportunities, methods, pitfalls, and recommendations. Cell. 2019;179(3):589–603.",
+      "volume": "179",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/2021.04.23.441003",
+      "doi-asserted-by": "crossref",
+      "key": "487_CR17",
+      "unstructured": "Turley P, Martin AR, Goldman G, Li H, Kanai M, Walters RK, et al. Multi-ancestry meta-analysis yields novel genetic discoveries and ancestry-specific associations. bioRxiv. 2021:2021.04.23.441003."
+    },
+    {
+      "DOI": "10.1038/s43586-021-00056-9",
+      "author": "E Uffelmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "issue": "1",
+      "journal-title": "Nat Rev Methods Primers",
+      "key": "487_CR18",
+      "unstructured": "Uffelmann E, Huang QQ, Munung NS, de Vries J, Okada Y, Martin AR, et al. Genome-wide association studies. Nat Rev Methods Primers. 2021;1(1):59.",
+      "volume": "1",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/hmg/ddab114",
+      "author": "A De Lillo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1457",
+      "issue": "15",
+      "journal-title": "Hum Mol Genet",
+      "key": "487_CR19",
+      "unstructured": "De Lillo A, D’Antona S, Pathak GA, Wendt FR, De Angelis F, Fuciarelli M, et al. Cross-ancestry genome-wide association studies identified heterogeneous loci associated with differences of allele frequency and regulome tagging between participants of European descent and other ancestry groups from the UK Biobank. Hum Mol Genet. 2021;30(15):1457–67.",
+      "volume": "30",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006755",
+      "author": "LE Magosi",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1006755",
+      "issue": "5",
+      "journal-title": "PLoS Genet",
+      "key": "487_CR20",
+      "unstructured": "Magosi LE, Goel A, Hopewell JC, Farrall M. Identifying systematic heterogeneity patterns in genetic association meta-analysis studies. PLoS Genet. 2017;13(5):e1006755.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "key": "487_CR21",
+      "unstructured": "Committee on the Use of Race E, and Ancestry as Population Descriptors in Genomics Research. Using population descriptors in genetics and genomics research: a new framework for an evolving field. The National Academies Collection: Reports funded by National Institutes of Health. Washington (DC); 2023."
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.03.004",
+      "author": "H Hunter-Zinck",
+      "doi-asserted-by": "publisher",
+      "first-page": "535",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet",
+      "key": "487_CR22",
+      "unstructured": "Hunter-Zinck H, Shi Y, Li M, Gorman BR, Ji SG, Sun N, et al. Genotyping array design and data quality control in the Million Veteran Program. Am J Hum Genet. 2020;106(4):535–48.",
+      "volume": "106",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "A Auton",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "487_CR23",
+      "unstructured": "Auton A, Brooks LD, Durbin RM, Garrison EP, Kang HM, Korbel JO, et al. A global reference for human genetic variation. Nature. 2015;526(7571):68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "author": "CC Chang",
+      "doi-asserted-by": "publisher",
+      "first-page": "s13742-015",
+      "issue": "1",
+      "journal-title": "GigaScience",
+      "key": "487_CR24",
+      "unstructured": "Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience. 2015;4(1):s13742-015.",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1101/2021.08.29.21262793",
+      "doi-asserted-by": "crossref",
+      "key": "487_CR25",
+      "unstructured": "Raghavan S, Huang J, Tcheandjieu C, Huffman JE, Litkowski E, Ho Y-LA, et al. Evaluation of height as a disease risk factor through a phenome-wide association study of genetically-predicted height. medRxiv. 2021:2021.08.29.21262793."
+    },
+    {
+      "DOI": "10.1101/gr.094052.109",
+      "author": "DH Alexander",
+      "doi-asserted-by": "publisher",
+      "first-page": "1655",
+      "issue": "9",
+      "journal-title": "Genome Res",
+      "key": "487_CR26",
+      "unstructured": "Alexander DH, Novembre J, Lange K. Fast model-based estimation of ancestry in unrelated individuals. Genome Res. 2009;19(9):1655–64.",
+      "volume": "19",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/ng.3211",
+      "author": "BK Bulik-Sullivan",
+      "doi-asserted-by": "publisher",
+      "first-page": "291",
+      "issue": "3",
+      "journal-title": "Nat Genet",
+      "key": "487_CR27",
+      "unstructured": "Bulik-Sullivan BK, Loh PR, Finucane HK, Ripke S, Yang J, Patterson N, et al. LD Score regression distinguishes confounding from polygenicity in genome-wide association studies. Nat Genet. 2015;47(3):291–5.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0108-x",
+      "author": "LM Evans",
+      "doi-asserted-by": "publisher",
+      "first-page": "737",
+      "issue": "5",
+      "journal-title": "Nat Genet",
+      "key": "487_CR28",
+      "unstructured": "Evans LM, Tahmasbi R, Vrieze SI, Abecasis GR, Das S, Gazal S, et al. Comparison of methods that use whole genome data to estimate the heritability and genetic architecture of complex traits. Nat Genet. 2018;50(5):737–45.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "author": "JN Hellwege",
+      "first-page": "1",
+      "journal-title": "Curr Protoc Hum Genet",
+      "key": "487_CR29",
+      "unstructured": "Hellwege JN, Keaton JM, Giri A, Gao X, Velez Edwards DR, Edwards TL. Population stratification in genetic association studies. Curr Protoc Hum Genet. 2017;95:1–22.",
+      "volume": "95",
+      "year": "2017"
+    }
+  ],
+  "reference-count": 29,
+  "references-count": 29,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00487-3"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Modeling the longitudinal changes of ancestry diversity in the Million Veteran Program"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

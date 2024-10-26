@@ -1,0 +1,414 @@
+{
+  "DOI": "10.1002/gepi.21692",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21692",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eWe describe a novel method for inferring the local ancestry of admixed individuals from dense genome‐wide single nucleotide polymorphism data. The method, called MULTIMIX, allows multiple source populations, models population linkage disequilibrium between markers and is applicable to datasets in which the sample and source populations are either phased or unphased. The model is based upon a hidden Markov model of switches in ancestry between consecutive windows of loci. We model the observed haplotypes within each window using a multivariate normal distribution with parameters estimated from the ancestral panels. We present three methods to fit the model—Markov chain Monte Carlo sampling, the Expectation Maximization algorithm, and a Classification Expectation Maximization algorithm. The performance of our method on individuals simulated to be admixed with European and West African ancestry shows it to be comparable to HAPMIX, the ancestry calls of the two methods agreeing at 99.26% of loci across the three parameter groups. In addition to it being faster than HAPMIX, it is also found to perform well over a range of extent of admixture in a simulation involving three ancestral populations. In an analysis of real data, we estimate the contribution of European, West African and Native American ancestry to each locus in the Mexican samples of HapMap, giving estimates of ancestral proportions that are consistent with those previously reported.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21692"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics University of Oxford  United Kingdom"
+        }
+      ],
+      "family": "Churchhouse",
+      "given": "Claire",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics University of Oxford  United Kingdom"
+        },
+        {
+          "name": "Wellcome Trust Center of Human Genetics  Oxford United Kingdom"
+        }
+      ],
+      "family": "Marchini",
+      "given": "Jonathan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        7
+      ]
+    ],
+    "date-time": "2012-11-07T17:46:45Z",
+    "timestamp": 1352310405000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        30
+      ]
+    ],
+    "date-time": "2023-10-30T09:32:09Z",
+    "timestamp": 1698658329000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        5
+      ]
+    ],
+    "date-time": "2024-01-05T07:58:34Z",
+    "timestamp": 1704441514225
+  },
+  "is-referenced-by-count": 44,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            11,
+            7
+          ]
+        ],
+        "date-time": "2012-11-07T00:00:00Z",
+        "timestamp": 1352246400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21692",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21692",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "1-12",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1101/gr.094052.109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1214/09-STS307",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1007/s00439-009-0712-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0909559107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0914618107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1126/science.296.5566.261b",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "author": "Cavalli‐Sforza LL",
+      "key": "e_1_2_7_8_1",
+      "volume-title": "The History and Geography of Human Genes",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1016/0167-9473(92)90042-E",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000490",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1038/oby.2009.282",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1534/genetics.110.114819",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.1785",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.2337/db08-0931",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1093/genetics/164.4.1567",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-09-0464",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0605832103",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1038/nature10336",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1534/g3.111.001198",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000529",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1038/ng.232",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1093/genetics/165.4.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1111/1467-9868.00357",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp197",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1086/420871",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000519",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1093/genetics/155.2.945",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "author": "Salzano F",
+      "key": "e_1_2_7_29_1",
+      "volume-title": "The Evolution and Genetics of Latin American Populations",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1101/gr.072751.107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2007.09.022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1101/gr.072850.107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1086/504302",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20064",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "key": "e_1_2_7_35_1",
+      "unstructured": "The 1000 Genomes Project Consortium.2012.An integrated map of genetic variation from 1 092 human genomes.Nature in press."
+    },
+    {
+      "DOI": "10.1038/nature04226",
+      "article-title": "A haplotype map of the human genome",
+      "author": "The International Hapmap Consortium",
+      "doi-asserted-by": "crossref",
+      "first-page": "1299",
+      "issue": "7063",
+      "journal-title": "Nature",
+      "key": "e_1_2_7_36_1",
+      "volume": "437",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/nature06258",
+      "article-title": "A second generation human haplotype map of over 3.1 million SNPs",
+      "author": "The International Hapmap Consortium",
+      "doi-asserted-by": "crossref",
+      "first-page": "851",
+      "issue": "7164",
+      "journal-title": "Nature",
+      "key": "e_1_2_7_37_1",
+      "volume": "449",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/nature09298",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1038/ng.894",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1214/10-AOAS338",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0001244",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1038/ng1510",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    }
+  ],
+  "reference-count": 41,
+  "references-count": 41,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21692"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Multiway Admixture Deconvolution Using Phased or Unphased Ancestral Panels"
+  ],
+  "type": "journal-article",
+  "volume": "37"
+}

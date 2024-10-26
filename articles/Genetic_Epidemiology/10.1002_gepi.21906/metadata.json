@@ -1,0 +1,611 @@
+{
+  "DOI": "10.1002/gepi.21906",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21906",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003ePolygenic prediction using genome‐wide SNPs can provide high prediction accuracy for complex traits. Here, we investigate the question of how to account for genetic ancestry when conducting polygenic prediction. We show that the accuracy of polygenic prediction in structured populations may be partly due to genetic ancestry. However, we hypothesized that explicitly modeling ancestry could improve polygenic prediction accuracy. We analyzed three GWAS of hair color (HC), tanning ability (TA), and basal cell carcinoma (BCC) in European Americans (sample size from 7,440 to 9,822) and considered two widely used polygenic prediction approaches: polygenic risk scores (PRSs) and best linear unbiased prediction (BLUP). We compared polygenic prediction without correction for ancestry to polygenic prediction with ancestry as a separate component in the model. In 10‐fold cross‐validation using the PRS approach, the \u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003e for HC increased by 66% (0.0456–0.0755; \u003cjats:italic\u003eP\u003c/jats:italic\u003e \u0026lt; 10\u003cjats:sup\u003e−16\u003c/jats:sup\u003e), the \u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003e for TA increased by 123% (0.0154 to 0.0344; \u003cjats:italic\u003eP\u003c/jats:italic\u003e \u0026lt; 10\u003cjats:sup\u003e−16\u003c/jats:sup\u003e), and the liability‐scale \u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003e for BCC increased by 68% (0.0138–0.0232; \u003cjats:italic\u003eP\u003c/jats:italic\u003e \u0026lt; 10\u003cjats:sup\u003e−16\u003c/jats:sup\u003e) when explicitly modeling ancestry, which prevents ancestry effects from entering into each SNP effect and being overweighted. Surprisingly, explicitly modeling ancestry produces a similar improvement when using the BLUP approach, which fits all SNPs simultaneously in a single variance component and causes ancestry to be underweighted. We validate our findings via simulations, which show that the differences in prediction accuracy will increase in magnitude as sample sizes increase. In summary, our results show that explicitly modeling ancestry can be important in both PRS and BLUP prediction.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21906"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard T.H. Chan School of Public Health  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Chen",
+      "given": "Chia‐Yen",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard T.H. Chan School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Channing Division of Network Medicine Department of Medicine Brigham and Women's Hospital  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Department of Epidemiology Richard M. Fairbanks School of Public Health Simon Cancer Center Indiana University  Indianapolis Indiana United States of America"
+        }
+      ],
+      "family": "Han",
+      "given": "Jiali",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard T.H. Chan School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Channing Division of Network Medicine Department of Medicine Brigham and Women's Hospital  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Broad Institute of Harvard and MIT  Cambridge Massachusetts United States of America"
+        }
+      ],
+      "family": "Hunter",
+      "given": "David J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard T.H. Chan School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Channing Division of Network Medicine Department of Medicine Brigham and Women's Hospital  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Broad Institute of Harvard and MIT  Cambridge Massachusetts United States of America"
+        },
+        {
+          "name": "Department of Biostatistics Harvard T.H. Chan School of Public Health, Boston, Massachusetts Broad Institute of Harvard and MIT  Cambridge"
+        }
+      ],
+      "family": "Kraft",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard T.H. Chan School of Public Health  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Broad Institute of Harvard and MIT  Cambridge Massachusetts United States of America"
+        },
+        {
+          "name": "Department of Biostatistics Harvard T.H. Chan School of Public Health, Boston, Massachusetts Broad Institute of Harvard and MIT  Cambridge"
+        }
+      ],
+      "family": "Price",
+      "given": "Alkes L.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2015,
+        5,
+        21
+      ]
+    ],
+    "date-time": "2015-05-21T07:42:55Z",
+    "timestamp": 1432194175000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T11:04:39Z",
+    "timestamp": 1696331079000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "R01HG006399"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "date-time": "2024-04-30T00:30:24Z",
+    "timestamp": 1714437024987
+  },
+  "is-referenced-by-count": 28,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2015,
+        5,
+        21
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2015,
+            5,
+            21
+          ]
+        ],
+        "date-time": "2015-05-21T00:00:00Z",
+        "timestamp": 1432166400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21906",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21906",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "427-438",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2015,
+        5,
+        21
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2015,
+        5,
+        21
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1111/j.1749-6632.1998.tb10482.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1161/01.ATV.17.11.2548",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.2527/jas.2012-5827",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "article-title": "The economics of immigration",
+      "author": "Borjas GJ.",
+      "first-page": "1667",
+      "journal-title": "J Econ Lit",
+      "key": "e_1_2_6_5_1",
+      "volume": "32",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1086/521987",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.02.027",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0048294",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1038/ng.2579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt144",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1136/ard.57.5.315",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1038/sj.ki.5002708",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0003395",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003348",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddp295",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1111/j.1755-148X.2010.00730.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1534/genetics.113.152207",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1111/j.1439-0388.2013.01001.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1002/ijc.22074",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000074",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.2307/2529430",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1016/1047-2797(90)90015-K",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1038/ng2075",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1534/genetics.112.141143",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1056/NEJMp0810107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1038/nature09410",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1136/pgmj.73.863.538",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21614",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20533",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1038/nrg2898",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003608",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20600",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002051",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0804742",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1002/ijc.24327",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1038/jid.2009.62",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddr287",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.08.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1136/jnnp.74.8.1159",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(09)60568-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020190",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030236",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1038/nrg2813",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    },
+    {
+      "DOI": "10.1038/nature08185",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_46_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddq156",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_47_1"
+    },
+    {
+      "DOI": "10.1126/science.1235488",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_48_1"
+    },
+    {
+      "DOI": "10.1016/0140-6736(91)90542-W",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_49_1"
+    },
+    {
+      "DOI": "10.1038/nature13595",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_50_1"
+    },
+    {
+      "DOI": "10.1007/s100720170011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_51_1"
+    },
+    {
+      "DOI": "10.1038/nature13595",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_52_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(12)62129-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_53_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.04.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_54_1"
+    },
+    {
+      "DOI": "10.1038/ng.2232",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_55_1"
+    },
+    {
+      "DOI": "10.1038/ng.2007.13",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_56_1"
+    },
+    {
+      "DOI": "10.1001/jama.293.4.455",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_57_1"
+    },
+    {
+      "DOI": "10.1038/nature11632",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_58_1"
+    },
+    {
+      "DOI": "10.1038/ng.2368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_59_1"
+    },
+    {
+      "DOI": "10.1534/genetics.112.141705",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_60_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.11.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_61_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000678",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_62_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_63_1"
+    },
+    {
+      "DOI": "10.1038/ng.3097",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_64_1"
+    },
+    {
+      "DOI": "10.1101/gr.6665407",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_65_1"
+    },
+    {
+      "DOI": "10.1038/nrg3457",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_66_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_67_1"
+    },
+    {
+      "DOI": "10.1038/ng.2876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_68_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003264",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_69_1"
+    }
+  ],
+  "reference-count": 68,
+  "references-count": 68,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/012005",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21906"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Explicit Modeling of Ancestry Improves Polygenic Risk Scores and BLUP Prediction"
+  ],
+  "type": "journal-article",
+  "volume": "39"
+}

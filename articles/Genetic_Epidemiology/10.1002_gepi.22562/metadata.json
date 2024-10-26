@@ -1,0 +1,596 @@
+{
+  "DOI": "10.1002/gepi.22562",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22562",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eRecent advancement in genome‐wide association studies (GWAS) comes from not only increasingly larger sample sizes but also the shift in focus towards underrepresented populations. Multipopulation GWAS increase power to detect novel risk variants and improve fine‐mapping resolution by leveraging evidence and differences in linkage disequilibrium (LD) from diverse populations. Here, we expand upon our previous approach for single‐population fine‐mapping through Joint Analysis of Marginal SNP Effects (JAM) to a multipopulation analysis (mJAM). Under the assumption that true causal variants are common across studies, we implement a hierarchical model framework that conditions on multiple SNPs while explicitly incorporating the different LD structures across populations. The mJAM framework can be used to first select index variants using the mJAM likelihood with different feature selection approaches. In addition, we present a novel approach leveraging the ideas of mediation to construct credible sets for these index variants. Construction of such credible sets can be performed given any existing index variants. We illustrate the implementation of the mJAM likelihood through two implementations: mJAM‐SuSiE (a Bayesian approach) and mJAM‐Forward selection. Through simulation studies based on realistic effect sizes and levels of LD, we demonstrated that mJAM performs well for constructing concise credible sets that include the underlying causal variants. In real data examples taken from the most recent multipopulation prostate cancer GWAS, we showed several practical advantages of mJAM over other existing multipopulation methods.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22562"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2023-09-27"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2024-03-27"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2024-04-12"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-0701-9831",
+      "affiliation": [
+        {
+          "name": "Department of Population and Public Health Sciences, Division of Biostatistics, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Shen",
+      "given": "Jiayi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Population and Public Health Sciences, Division of Biostatistics, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        }
+      ],
+      "family": "Jiang",
+      "given": "Lai",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Population and Public Health Sciences, Division of Biostatistics, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        }
+      ],
+      "family": "Wang",
+      "given": "Kan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Population and Public Health Science, Center for Genetic Epidemiology, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        }
+      ],
+      "family": "Wang",
+      "given": "Anqi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Population and Public Health Science, Center for Genetic Epidemiology, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        }
+      ],
+      "family": "Chen",
+      "given": "Fei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "MRC Biostatistics Unit University of Cambridge  Cambridge UK"
+        }
+      ],
+      "family": "Newcombe",
+      "given": "Paul J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Population and Public Health Science, Center for Genetic Epidemiology, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        },
+        {
+          "name": "Norris Comprehensive Cancer Center, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        }
+      ],
+      "family": "Haiman",
+      "given": "Christopher A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Population and Public Health Sciences, Division of Biostatistics, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        },
+        {
+          "name": "Department of Population and Public Health Science, Center for Genetic Epidemiology, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        },
+        {
+          "name": "Norris Comprehensive Cancer Center, Keck School of Medicine University of Southern California  Los Angeles California USA"
+        }
+      ],
+      "family": "Conti",
+      "given": "David V.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ],
+    "date-time": "2024-04-12T09:55:08Z",
+    "timestamp": 1712915708000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ],
+    "date-time": "2024-04-12T09:55:19Z",
+    "timestamp": 1712915719000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000054",
+      "doi-asserted-by": "publisher",
+      "name": "National Cancer Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        13
+      ]
+    ],
+    "date-time": "2024-04-13T00:39:11Z",
+    "timestamp": 1712968751594
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            12
+          ]
+        ],
+        "date-time": "2024-04-12T00:00:00Z",
+        "timestamp": 1712880000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22562",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ejhg.2016.1",
+      "article-title": "Trans‐ethnic study design approaches for fine‐mapping",
+      "author": "Asimit J. L.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1330",
+      "journal-title": "European Journal of Human Genetics",
+      "key": "e_1_2_8_2_1",
+      "volume": "24",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/gepi.20543",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.08.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw018",
+      "article-title": "FINEMAP: Efficient variable selection using summary data from genome‐wide association studies",
+      "author": "Benner C.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1493",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_8_5_1",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/nar/gky1120",
+      "article-title": "The NHGRI‐EBI GWAS Catalog of published genome‐wide association studies, targeted arrays and summary statistics 2019",
+      "author": "Buniello A.",
+      "doi-asserted-by": "crossref",
+      "first-page": "D1005",
+      "journal-title": "Nucleic Acids Research",
+      "key": "e_1_2_8_6_1",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1146/annurev.genom.9.081307.164258",
+      "article-title": "African genetic diversity: Implications for human demographic history, modern human origins, and complex disease mapping",
+      "author": "Campbell M. C.",
+      "doi-asserted-by": "crossref",
+      "first-page": "403",
+      "journal-title": "Annual Review of Genomics and Human Genetics",
+      "key": "e_1_2_8_7_1",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1534/genetics.115.176107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-3-s7-s25",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1038/s41588-020-00748-0",
+      "article-title": "Trans‐ancestry genome‐wide association meta‐analysis of prostate cancer identifies new susceptibility loci and informs genetic risk prediction",
+      "author": "Conti D. V.",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "journal-title": "Nature Genetics",
+      "key": "e_1_2_8_10_1",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "author": "Goel P.",
+      "first-page": "233",
+      "key": "e_1_2_8_11_1",
+      "volume-title": "Bayesian inference and decision techniques: Essays in Honor of Bruno De Finetti",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1214/11-AOAS455",
+      "article-title": "Bayesian variable selection regression for genome‐wide association studies and other large‐scale problems",
+      "author": "Guan Y.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1780",
+      "journal-title": "The Annals of Applied Statistics",
+      "key": "e_1_2_8_12_1",
+      "volume": "5",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.04.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1080/00401706.2020.1791959",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1534/genetics.114.167908",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1194/jlr.P071860",
+      "article-title": "Discovery and fine‐mapping of loci associated with MUFAs through trans‐ethnic meta‐analysis in Chinese and European populations",
+      "author": "Hu Y.",
+      "doi-asserted-by": "crossref",
+      "first-page": "974",
+      "journal-title": "Journal of Lipid Research",
+      "key": "e_1_2_8_16_1",
+      "volume": "58",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/aje/kwaa287",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007452",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.06.007",
+      "article-title": "Leveraging functional‐annotation data in trans‐ethnic fine‐mapping studies",
+      "author": "Kichaev G.",
+      "doi-asserted-by": "crossref",
+      "first-page": "260",
+      "journal-title": "The American Journal of Human Genetics",
+      "key": "e_1_2_8_19_1",
+      "volume": "97",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009733",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2021.713230",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1038/ng.2897",
+      "article-title": "Genome‐wide trans‐ancestry meta‐analysis provides insight into the genetic architecture of type 2 diabetes susceptibility",
+      "author": "Mahajan A.",
+      "doi-asserted-by": "crossref",
+      "first-page": "234",
+      "journal-title": "Nature Genetics",
+      "key": "e_1_2_8_22_1",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.07.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01058-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003566",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20630",
+      "article-title": "Transethnic meta‐analysis of genomewide association studies",
+      "author": "Morris A. P.",
+      "doi-asserted-by": "crossref",
+      "first-page": "809",
+      "journal-title": "Genetic Epidemiology",
+      "key": "e_1_2_8_26_1",
+      "volume": "35",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/gepi.21953",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.08.051",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1214/12-aoas586",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1186/s12935-021-02438-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1097/00001648-199203000-00013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1038/s41576-018-0016-z",
+      "article-title": "From genome‐wide associations to candidate causal variants by statistical fine‐mapping",
+      "author": "Schaid D. J.",
+      "doi-asserted-by": "crossref",
+      "first-page": "491",
+      "journal-title": "Nature Reviews Genetics",
+      "key": "e_1_2_8_32_1",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.04.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20522",
+      "article-title": "Identifying candidate causal variants via trans‐population fine‐mapping",
+      "author": "Teo Y. Y.",
+      "doi-asserted-by": "crossref",
+      "first-page": "653",
+      "journal-title": "Genetic Epidemiology",
+      "key": "e_1_2_8_34_1",
+      "volume": "34",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.01.016",
+      "article-title": "Bayesian meta‐analysis of genetic association studies with different sets of markers",
+      "author": "Verzilli C.",
+      "doi-asserted-by": "crossref",
+      "first-page": "859",
+      "journal-title": "The American Journal of Human Genetics",
+      "key": "e_1_2_8_36_1",
+      "volume": "82",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.11.029",
+      "article-title": "Five years of GWAS discovery",
+      "author": "Visscher P. M.",
+      "doi-asserted-by": "crossref",
+      "first-page": "7",
+      "journal-title": "The American Journal of Human Genetics",
+      "key": "e_1_2_8_37_1",
+      "volume": "90",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41588-023-01534-4",
+      "article-title": "Characterizing prostate cancer risk through multi‐ancestry genome‐wide discovery of 187 novel risk variants",
+      "author": "Wang A.",
+      "doi-asserted-by": "crossref",
+      "first-page": "2065",
+      "journal-title": "Nature Genetics",
+      "key": "e_1_2_8_38_1",
+      "volume": "55",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1111/rssb.12388",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.2147/ott.s83004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1038/ng.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1038/ng.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1016/j.euroneuro.2023.08.021",
+      "author": "Yuan K.",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_43_1",
+      "volume-title": "Fine‐mapping across diverse ancestries drives the discovery of putative causal variants underlying human complex traits and diseases",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1111/ahg.12251",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_44_1"
+    },
+    {
+      "DOI": "10.1101/2021.11.03.467167",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    }
+  ],
+  "reference-count": 44,
+  "references-count": 44,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22562"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Hierarchical joint analysis of marginal summary statistics\u003cb\u003e—\u003c/b\u003ePart I: Multipopulation fine mapping and credible set construction"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy"
+}

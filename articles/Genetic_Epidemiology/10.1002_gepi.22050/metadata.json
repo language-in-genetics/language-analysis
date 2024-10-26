@@ -1,0 +1,599 @@
+{
+  "DOI": "10.1002/gepi.22050",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22050",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003ePolygenic scores (PGS) summarize the genetic contribution of a person's genotype to a disease or phenotype. They can be used to group participants into different risk categories for diseases, and are also used as covariates in epidemiological analyses. A number of possible ways of calculating PGS have been proposed, and recently there is much interest in methods that incorporate information available in published summary statistics. As there is no inherent information on linkage disequilibrium (LD) in summary statistics, a pertinent question is how we can use LD information available elsewhere to supplement such analyses. To answer this question, we propose a method for constructing PGS using summary statistics and a reference panel in a penalized regression framework, which we call \u003cjats:styled-content\u003elassosum\u003c/jats:styled-content\u003e. We also propose a general method for choosing the value of the tuning parameter in the absence of validation data. In our simulations, we showed that pseudovalidation often resulted in prediction accuracy that is comparable to using a dataset with validation phenotype and was clearly superior to the conservative option of setting the tuning parameter of \u003cjats:styled-content\u003elassosum\u003c/jats:styled-content\u003e to its lowest value. We also showed that lassosum achieved better prediction accuracy than simple clumping and \u003cjats:italic\u003eP\u003c/jats:italic\u003e‐value thresholding in almost all scenarios. It was also substantially faster and more accurate than the recently proposed LDpred.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22050"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-2151-2406",
+      "affiliation": [
+        {
+          "name": "Centre for Genomic Sciences University of Hong Kong Hong Kong"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Mak",
+      "given": "Timothy Shin Heng",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry University of Hong Kong Hong Kong"
+        }
+      ],
+      "family": "Porsch",
+      "given": "Robert Milan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry University of Hong Kong Hong Kong"
+        }
+      ],
+      "family": "Choi",
+      "given": "Shing Wan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry University of Hong Kong Hong Kong"
+        }
+      ],
+      "family": "Zhou",
+      "given": "Xueya",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre for Genomic Sciences University of Hong Kong Hong Kong"
+        },
+        {
+          "name": "Department of Psychiatry University of Hong Kong Hong Kong"
+        },
+        {
+          "name": "State Key Laboratory of Brain and Cognitive Sciences University of Hong Kong Hong Kong"
+        }
+      ],
+      "family": "Sham",
+      "given": "Pak Chung",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        5,
+        8
+      ]
+    ],
+    "date-time": "2017-05-08T10:01:55Z",
+    "timestamp": 1494237715000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T20:55:21Z",
+    "timestamp": 1696366521000
+  },
+  "funder": [
+    {
+      "award": [
+        "776513M",
+        "HKU 776412M",
+        "17128515"
+      ],
+      "name": "Hong Kong Research Grants Council General Research Fund"
+    },
+    {
+      "award": [
+        "T12-705/11",
+        "T12/708/12N",
+        "T12C-714/14-R"
+      ],
+      "name": "Hong Kong Research Grants Council Theme-Based Research Scheme"
+    },
+    {
+      "award": [
+        "N_HKU736/14"
+      ],
+      "name": "National Science Foundation of China - Research Grants Council of Hong Kong"
+    },
+    {
+      "name": "European Community Seventh Framework Programme Grant"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T05:13:28Z",
+    "timestamp": 1714367608099
+  },
+  "is-referenced-by-count": 305,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2017,
+        5,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            5,
+            8
+          ]
+        ],
+        "date-time": "2017-05-08T00:00:00Z",
+        "timestamp": 1494201600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22050",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22050",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "469-480",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2017,
+        5,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2017,
+        5,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nature15393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21698",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1001/jamapsychiatry.2015.0346",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003455",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv546",
+      "article-title": "Approximately independent linkage disequilibrium blocks in human populations",
+      "author": "Berisa T.",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "issue": "2",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_6_6_1",
+      "volume": "32",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3211",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyt093",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1007/s00737-014-0428-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1002/brb3.205",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004787",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003608",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0101596",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003348",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21966",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.3168/jds.2011-5019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003919",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddp295",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1214/07-AOAS131",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-186",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1007/978-0-387-84858-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004722",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1038/ng.2376",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "article-title": "Phenome‐wide analysis of genome‐wide polygenic scores",
+      "author": "Krapohl E.",
+      "first-page": "1",
+      "issue": "9",
+      "journal-title": "Molecular Psychiatry",
+      "key": "e_1_2_6_27_1",
+      "volume": "21",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1007/s00439-013-1401-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkr1257",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1038/ng.3359",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20600",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1038/ng.2897",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1007/s10519-015-9770-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1038/tp.2015.5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1093/genetics/157.4.1819",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1038/ng.3396",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-6-S2-S10",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1038/nature12873",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1038/nrg.2016.142",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.03.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1214/12-AOAS586",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1038/ng.3285",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1038/nature08185",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1038/nature13595",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1038/ng.2742",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003449",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_46_1"
+    },
+    {
+      "DOI": "10.1038/ng.943",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_47_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.04.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_48_1"
+    },
+    {
+      "DOI": "10.1038/ng.686",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_49_1"
+    },
+    {
+      "DOI": "10.1038/ng.2232",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_50_1"
+    },
+    {
+      "DOI": "10.1038/nrg2615",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_51_1"
+    },
+    {
+      "article-title": "A unified approach to false discovery rate estimation",
+      "author": "Strimmer K.",
+      "first-page": "1",
+      "issue": "303",
+      "journal-title": "BMC Bioinformatics",
+      "key": "e_1_2_6_52_1",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1002/gepi.20473",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_53_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_54_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_55_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000678",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_56_1"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_57_1"
+    },
+    {
+      "DOI": "10.1111/jcpp.12295",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_58_1"
+    },
+    {
+      "DOI": "10.1038/ng.823",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_59_1"
+    },
+    {
+      "DOI": "10.1534/genetics.114.167817",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_60_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003264",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_61_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_62_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_63_1"
+    }
+  ],
+  "reference-count": 62,
+  "references-count": 62,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/058214",
+        "id-type": "doi"
+      }
+    ],
+    "has-review": [
+      {
+        "asserted-by": "object",
+        "id": "10.3410/f.727593680.793563010",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22050"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Polygenic scores via penalized regression on summary statistics"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

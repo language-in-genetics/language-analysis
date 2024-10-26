@@ -1,0 +1,732 @@
+{
+  "DOI": "10.1186/s40246-023-00527-y",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00527-y",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe RNA m6A modification has been implicated in multiple neurological diseases as well as macrophage activation. However, whether it regulates microglial activation during hypoxic-ischemic brain damage (HIBD) in neonates remains unknown. Here, we aim to examine whether the m6A modification is involved in modulating microglial activation during HIBD. We employed an oxygen and glucose deprivation microglial model for in vitro studies and a neonatal mouse model of HIBD. The brain tissue was subjected to RNA-seq to screen for significant changes in the mRNA m6A regulator. Thereafter, we performed validation and bioinformatics analysis of the major m6A regulators.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eRNA-seq analysis revealed that, among 141 m6A regulators, 31 exhibited significant differential expression (FC (abs) ≥ 2) in HIBD mice. We then subjected the major m6A regulators Mettl3, Mettl14, Fto, Alkbh5, Ythdf1, and Ythdf2 to further validation, and the results showed that all were significantly downregulated in vitro and in vivo. GO analysis reveals that regulators are mainly involved in the regulation of cellular and metabolic processes. The KEGG results indicate the involvement of the signal transduction pathway.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur findings demonstrate that m6A modification of mRNA plays a crucial role in the regulation of microglial activation in HIBD, with m6A-associated regulators acting as key modulators of microglial activation.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "527"
+  ],
+  "article-number": "78",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "25 August 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "15 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "25 August 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by the Research Animal Care Committee of Sichuan University, China. All animal experiments were approved by the Sichuan University Committee on Animal Research and complied with the ARRIVE guidelines (Approval No. WCSUH21-2018-034)."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Su",
+      "given": "Xiaojuan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Huang",
+      "given": "Lingyi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Shiping",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ying",
+      "given": "Junjie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhao",
+      "given": "Fengyan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Shaopu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Qian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Qu",
+      "given": "Yi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mu",
+      "given": "Dezhi",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        25
+      ]
+    ],
+    "date-time": "2023-08-25T10:02:31Z",
+    "timestamp": 1692957751000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        19
+      ]
+    ],
+    "date-time": "2023-11-19T01:32:20Z",
+    "timestamp": 1700357540000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100012166",
+      "award": [
+        "2021YFC2701704",
+        "2017YFA0104200"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Key R\u0026D Program of China"
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "81971433",
+        "81971428"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "award": [
+        "SCU2022D006"
+      ],
+      "name": "the Fundamental Research Funds for the Central University"
+    },
+    {
+      "award": [
+        "2021YJ0017",
+        "2020YFS0041"
+      ],
+      "name": "The grants from the Science and Technology Bureau of Sichuan Province"
+    },
+    {
+      "award": [
+        "1311200003303"
+      ],
+      "name": "National Key Project of Neonatal Children"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        19
+      ]
+    ],
+    "date-time": "2023-11-19T02:10:20Z",
+    "timestamp": 1700359820339
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        25
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            25
+          ]
+        ],
+        "date-time": "2023-08-25T00:00:00Z",
+        "timestamp": 1692921600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            25
+          ]
+        ],
+        "date-time": "2023-08-25T00:00:00Z",
+        "timestamp": 1692921600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00527-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00527-y/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00527-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        25
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        25
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.expneurol.2020.113577",
+      "author": "Y Ogawa",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Exp Neurol",
+      "key": "527_CR1",
+      "unstructured": "Ogawa Y, Tanaka E, Sato Y, Tsuji M. Brain damage caused by neonatal hypoxia-ischemia and the effects of hypothermia in severe combined immunodeficient (SCID) mice. Exp Neurol. 2021;337: 113577.",
+      "volume": "337",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/cercor/bhac444",
+      "author": "S Fenn-Moltu",
+      "doi-asserted-by": "publisher",
+      "first-page": "5585",
+      "journal-title": "Cereb Cortex",
+      "key": "527_CR2",
+      "unstructured": "Fenn-Moltu S, Fitzgibbon SP, Ciarrusta J, Eyre M, Cordero-Grande L, Chew A, et al. Development of neonatal brain functional centrality and alterations associated with preterm birth. Cereb Cortex. 2022;33:5585–96.",
+      "volume": "33",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fncel.2022.1086692",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1086692",
+      "journal-title": "Front Cell Neurosci",
+      "key": "527_CR3",
+      "unstructured": "Chen X, Malaeb SN, Pan J, Wang L, Scafidi J. Editorial: perinatal hypoxic-ischemic brain injury: mechanisms, pathogenesis, and potential therapeutic strategies. Front Cell Neurosci. 2022;16:1086692.",
+      "volume": "16",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s12015-021-10213-y",
+      "author": "C Bregere",
+      "doi-asserted-by": "publisher",
+      "first-page": "474",
+      "issue": "2",
+      "journal-title": "Stem Cell Rev Rep",
+      "key": "527_CR4",
+      "unstructured": "Bregere C, Schwendele B, Radanovic B, Guzman R. Microglia and stem-cell mediated neuroprotection after neonatal hypoxia–ischemia. Stem Cell Rev Rep. 2022;18(2):474–522.",
+      "volume": "18",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.neuropharm.2021.108555",
+      "author": "SS Duffy",
+      "doi-asserted-by": "publisher",
+      "first-page": "108555",
+      "issue": "190",
+      "journal-title": "Neuropharmacology",
+      "key": "527_CR5",
+      "unstructured": "Duffy SS, Hayes JP, Fiore NT, Moalem-Taylor G. The cannabinoid system and microglia in health and disease. Neuropharmacology. 2021;1(190):108555.",
+      "volume": "1",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.4103/1673-5374.330626",
+      "author": "SS Yu",
+      "doi-asserted-by": "crossref",
+      "first-page": "1430",
+      "issue": "7",
+      "journal-title": "Neural Regen Res",
+      "key": "527_CR6",
+      "unstructured": "Yu SS, Li ZY, Xu XZ, Yao F, Luo Y, Liu YC, et al. M1-type microglia can induce astrocytes to deposit chondroitin sulfate proteoglycan after spinal cord injury (vol 17, pg 1072, 2022). Neural Regen Res. 2022;17(7):1430.",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fncel.2020.00211",
+      "author": "LT Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "211",
+      "journal-title": "Front Cell Neurosci",
+      "key": "527_CR7",
+      "unstructured": "Yu LT, Su XJ, Li SP, Zhao FY, Mu DZ, Qu Y. Microglia and their promising role in ischemic brain injuries: an update. Front Cell Neurosci. 2020;14:211.",
+      "volume": "14",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ymthe.2019.09.004",
+      "author": "S Kobashi",
+      "doi-asserted-by": "publisher",
+      "first-page": "254",
+      "issue": "1",
+      "journal-title": "Mol Ther",
+      "key": "527_CR8",
+      "unstructured": "Kobashi S, Terashima T, Katagi M, Nakae Y, Okano J, Suzuki Y, et al. Transplantation of M2-deviated microglia promotes recovery of motor function after spinal cord injury in mice. Mol Ther. 2020;28(1):254–65.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3233/JAD-200099",
+      "author": "J Jin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1255",
+      "issue": "4",
+      "journal-title": "J Alzheimers Dis",
+      "key": "527_CR9",
+      "unstructured": "Jin J, Guo J, Cai HB, Zhao CC, Wang H, Liu ZY, et al. M2-like microglia polarization attenuates neuropathic pain associated with Alzheimer’s disease. J Alzheimers Dis. 2020;76(4):1255–65.",
+      "volume": "76",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fgene.2020.629918",
+      "author": "B Kaeffer",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Genet",
+      "key": "527_CR10",
+      "unstructured": "Kaeffer B, Taipaleenmaki H, de Souza SL. Editorial: RNA-mediated processes in epigenetics; an integrative view in the maintenance of homeostasis. Front Genet. 2021. https://doi.org/10.3389/fgene.2020.629918.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cell.2017.05.045",
+      "author": "IA Roundtree",
+      "doi-asserted-by": "publisher",
+      "first-page": "1187",
+      "issue": "7",
+      "journal-title": "Cell",
+      "key": "527_CR11",
+      "unstructured": "Roundtree IA, Evans ME, Pan T, He C. Dynamic RNA modifications in gene expression regulation. Cell. 2017;169(7):1187–200.",
+      "volume": "169",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41580-019-0168-5",
+      "author": "S Zaccara",
+      "doi-asserted-by": "publisher",
+      "first-page": "608",
+      "issue": "10",
+      "journal-title": "Nat Rev Mol Cell Bio",
+      "key": "527_CR12",
+      "unstructured": "Zaccara S, Ries RJ, Jaffrey SR. Reading, writing and erasing mRNA methylation. Nat Rev Mol Cell Bio. 2019;20(10):608–24.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/biom12081158",
+      "author": "SY You",
+      "doi-asserted-by": "publisher",
+      "first-page": "1158",
+      "issue": "8",
+      "journal-title": "Biomolecules",
+      "key": "527_CR13",
+      "unstructured": "You SY, Su XJ, Ying JJ, Li SP, Qu Y, Mu DZ. Research progress on the role of RNA m6A modification in Glial cells in the regulation of neurological diseases. Biomolecules. 2022;12(8):1158.",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.jbc.2021.100973",
+      "author": "W Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "100973",
+      "issue": "2",
+      "journal-title": "J Biol Chem",
+      "key": "527_CR14",
+      "unstructured": "Zhang W, Qian Y, Jia GF. The detection and functions of RNA modification m(6)A based on m(6)A writers and erasers. J Biol Chem. 2021;297(2):100973.",
+      "volume": "297",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1177/1176934319871290",
+      "author": "YY Song",
+      "doi-asserted-by": "crossref",
+      "first-page": "117693431987129",
+      "issue": "15",
+      "journal-title": "Evol Bioinform",
+      "key": "527_CR15",
+      "unstructured": "Song YY, Xu QR, Wei Z, Zhen D, Su JL, Chen KQ, et al. Predict epitranscriptome targets and regulatory functions of N-6-Methyladenosine (m(6)A) writers and erasers. Evol Bioinform. 2019;5(15):1176934319871290.",
+      "volume": "5",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fcell.2020.00741",
+      "author": "D Zhen",
+      "doi-asserted-by": "publisher",
+      "first-page": "741",
+      "journal-title": "Front Cell Dev Biol",
+      "key": "527_CR16",
+      "unstructured": "Zhen D, Wu YX, Zhang YX, Chen KQ, Song BW, Xu HQ, et al. m(6)A reader: epitranscriptome target prediction and functional characterization of N-6-methyladenosine (m(6)A) readers. Front Cell Dev Biol. 2020;8:741.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12929-021-00734-6",
+      "author": "YP Yen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "J Biomed Sci",
+      "key": "527_CR17",
+      "unstructured": "Yen YP, Chen JA. The m(6)A epitranscriptome on neural development and degeneration. J Biomed Sci. 2021;28(1):1–11.",
+      "volume": "28",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fnins.2021.605654",
+      "author": "DZ Yi",
+      "doi-asserted-by": "publisher",
+      "first-page": "605654",
+      "issue": "15",
+      "journal-title": "Front Neurosci",
+      "key": "527_CR18",
+      "unstructured": "Yi DZ, Wang QH, Zhao YH, Song Y, You H, Wang J, et al. Alteration of N-6-methyladenosine mRNA methylation in a rat model of cerebral ischemia-reperfusion injury. Front Neurosci. 2021;16(15):605654.",
+      "volume": "16",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.biopsych.2020.02.018",
+      "author": "RR Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "392",
+      "issue": "5",
+      "journal-title": "Biol Psychiatry",
+      "key": "527_CR19",
+      "unstructured": "Huang RR, Zhang Y, Bai Y, Han B, Ju MZ, Chen BL, et al. N-6-methyladenosine modification of fatty acid amide hydrolase messenger RNA in circular RNA STAG1-regulated astrocyte dysfunction and depressive-like behaviors. Biol Psychiatry. 2020;88(5):392–404.",
+      "volume": "88",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2019.12.013",
+      "author": "H Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "293",
+      "issue": "2",
+      "journal-title": "Neuron",
+      "key": "527_CR20",
+      "unstructured": "Xu H, Dzhashiashvili Y, Shah A, Kunjamma RB, Weng YL, Elbaz B, et al. m(6)A mRNA methylation is essential for oligodendrocyte maturation and CNS myelination. Neuron. 2020;105(2):293.",
+      "volume": "105",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1126/sciadv.abd4742",
+      "author": "JY Tong",
+      "doi-asserted-by": "publisher",
+      "first-page": "eabd4742",
+      "issue": "18",
+      "journal-title": "Sci Adv",
+      "key": "527_CR21",
+      "unstructured": "Tong JY, Wang XF, Liu YB, Ren XX, Wang AM, Chen ZG, et al. Pooled CRISPR screening identifies m(6)A as a positive regulator of macrophage activation. Sci Adv. 2021;7(18):eabd4742.",
+      "volume": "7",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.neuroscience.2022.03.003",
+      "author": "P Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "65",
+      "issue": "491",
+      "journal-title": "Neuroscience",
+      "key": "527_CR22",
+      "unstructured": "Wang P, Li C, Liao G, Huang Y, Lv X, Liu X, et al. Vanillin attenuates proinflammatory factors in a tMCAO Mouse model via inhibition of TLR4/NF-kB signaling pathway. Neuroscience. 2022;21(491):65–74.",
+      "volume": "21",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.jchemneu.2021.101960",
+      "author": "XY Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "101960",
+      "journal-title": "J Chem Neuroanat",
+      "key": "527_CR23",
+      "unstructured": "Huang XY, Hu QP, Shi HY, Zheng YY, Hu RR, Guo Q. Everolimus inhibits PI3K/Akt/mTOR and NF-kB/IL-6 signaling and protects seizure-induced brain injury in rats. J Chem Neuroanat. 2021;114:101960.",
+      "volume": "114",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.4049/jimmunol.1002925",
+      "author": "Y Cai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1314",
+      "issue": "3",
+      "journal-title": "J Immunol",
+      "key": "527_CR24",
+      "unstructured": "Cai Y, Cho GS, Ju C, Wang SL, Ryu JH, Shin CY, et al. Activated microglia are less vulnerable to hemin toxicity due to nitric oxide-dependent inhibition of JNK and p38 MAPK activation. J Immunol. 2011;187(3):1314–21.",
+      "volume": "187",
+      "year": "2011"
+    },
+    {
+      "author": "CC Chen",
+      "first-page": "692061",
+      "journal-title": "BioMed Res Int",
+      "key": "527_CR25",
+      "unstructured": "Chen CC, Lin JT, Cheng YF, Kuo CY, Huang CF, Kao SH, et al. Amelioration of LPS-induced inflammation response in microglia by AMPK activation. BioMed Res Int. 2014;2014:692061.",
+      "volume": "2014",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1097/CM9.0000000000002010",
+      "author": "R Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1474",
+      "issue": "12",
+      "journal-title": "Chin Med J",
+      "key": "527_CR26",
+      "unstructured": "Zhou R, Ying J, Qiu X, Yu L, Yue Y, Liu Q, et al. A new cell death program regulated by toll-like receptor 9 through p38 mitogen-activated protein kinase signaling pathway in a neonatal rat model with sepsis-associated encephalopathy. Chin Med J. 2022;135(12):1474–85.",
+      "volume": "135",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1097/WNR.0000000000001550",
+      "author": "LB Wen",
+      "doi-asserted-by": "publisher",
+      "first-page": "243",
+      "issue": "6",
+      "journal-title": "NeuroReport",
+      "key": "527_CR27",
+      "unstructured": "Wen LB, Sun W, Xia DY, Wang YM, Li JP, Yang S. The m6A methyltransferase METTL3 promotes LPS-induced microglia inflammation through TRAF6/NF-kappa B pathway. NeuroReport. 2022;33(6):243–51.",
+      "volume": "33",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.872252",
+      "author": "L Ding",
+      "doi-asserted-by": "publisher",
+      "first-page": "872252",
+      "journal-title": "Front Immunol",
+      "key": "527_CR28",
+      "unstructured": "Ding L, Wu HR, Wang Y, Li Y, Liang ZP, Xia XH, et al. m6A reader Igf2bp1 regulates the inflammatory responses of microglia by stabilizing Gbp11 and Cp mRNAs. Front Immunol. 2022;13:872252.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/jnr.24221",
+      "author": "Y Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1265",
+      "issue": "7",
+      "journal-title": "J Neurosci Res",
+      "key": "527_CR29",
+      "unstructured": "Wu Y, Shen L, Wang R, Tang J, Ding SQ, Wang SN, et al. Increased ceruloplasmin expression caused by infiltrated leukocytes, activated microglia, and astrocytes in injured female rat spinal cords. J Neurosci Res. 2018;96(7):1265–76.",
+      "volume": "96",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.neulet.2011.02.005",
+      "author": "T Persichini",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "issue": "1–2",
+      "journal-title": "Neurosci Lett",
+      "key": "527_CR30",
+      "unstructured": "Persichini T, Maio N, di Patti MCB, Rizzo G, Toscano S, Colasanti M, et al. Interleukin-1 beta induces ceruloplasmin and ferroportin-1 gene expression via Map Kinases and C/EBP beta, AP-1, and NF-kappa B activation (vol 484, pg 133, 2010). Neurosci Lett. 2011;493(1–2):59.",
+      "volume": "493",
+      "year": "2011"
+    },
+    {
+      "author": "KH Lee",
+      "first-page": "1",
+      "issue": "1171",
+      "journal-title": "Brain Res",
+      "key": "527_CR31",
+      "unstructured": "Lee KH, Yun SJ, Nam KN, Gho YS, Lee EH. Activation of microglial cells by ceruloplasmin. Brain Res. 2007;26(1171):1–8.",
+      "volume": "26",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1111/jcmm.16740",
+      "author": "Y Teng",
+      "doi-asserted-by": "publisher",
+      "first-page": "8567",
+      "issue": "17",
+      "journal-title": "J Cell Mol Med",
+      "key": "527_CR32",
+      "unstructured": "Teng Y, Liu ZH, Chen XM, Liu YZ, Geng F, Le WD, et al. Conditional deficiency of m6A methyltransferase Mettl14 in substantia nigra alters dopaminergic neuron function. J Cell Mol Med. 2021;25(17):8567–72.",
+      "volume": "25",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1097/WNR.0000000000000665",
+      "author": "SW Lallier",
+      "doi-asserted-by": "publisher",
+      "first-page": "1120",
+      "issue": "15",
+      "journal-title": "NeuroReport",
+      "key": "527_CR33",
+      "unstructured": "Lallier SW, Graf AE, Waidyarante GR, Rogers LK. Nurr1 expression is modified by inflammation in microglia. NeuroReport. 2016;27(15):1120–7.",
+      "volume": "27",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41401-021-00853-8",
+      "author": "QW Han",
+      "doi-asserted-by": "publisher",
+      "first-page": "2253",
+      "issue": "9",
+      "journal-title": "Acta Pharmacol Sin",
+      "key": "527_CR34",
+      "unstructured": "Han QW, Shao QH, Wang XT, Ma KL, Chen NH, Yuan YH. CB2 receptor activation inhibits the phagocytic function of microglia through activating ERK/AKT-Nurr1 signal pathways. Acta Pharmacol Sin. 2022;43(9):2253–66.",
+      "volume": "43",
+      "year": "2022"
+    }
+  ],
+  "reference-count": 34,
+  "references-count": 34,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00527-y"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "The RNA m6A modification might participate in microglial activation during hypoxic–ischemic brain damage in neonatal mice"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

@@ -1,0 +1,472 @@
+{
+  "DOI": "10.1002/gepi.22131",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22131",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eIntegrating genome‐wide association (GWAS) and expression quantitative trait locus (eQTL) data into transcriptome‐wide association studies (TWAS) based on predicted expression can boost power to detect novel disease loci or pinpoint the susceptibility gene at a known disease locus. However, it is often the case that multiple eQTL genes colocalize at disease loci, making the identification of the true susceptibility gene challenging, due to confounding through linkage disequilibrium (LD). To distinguish between true susceptibility genes (where the genetic effect on phenotype is mediated through expression) and colocalization due to LD, we examine an extension of the Mendelian randomization (MR) egger regression method that allows for LD while only requiring summary association data for both GWAS and eQTL. We derive the standard TWAS approach in the context of MR and show in simulations that the standard TWAS does not control type I error for causal gene identification when eQTLs have pleiotropic or LD‐confounded effects on disease. In contrast, LD‐aware MR‐Egger (LDA MR‐Egger) regression can control type I error in this case while attaining similar power as other methods in situations where these provide valid tests. However, when the direct effects of genetic variants on traits are correlated with the eQTL associations, all of the methods we examined including LDA MR‐Egger regression can have inflated type I error. We illustrate these methods by integrating gene expression within a recent large‐scale breast cancer GWAS to provide guidance on susceptibility gene identification.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22131"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2017-11-04"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-04-30"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-05-29"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-6276-7704",
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Barfield",
+      "given": "Richard",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard T.H. Chan School of Public Health  Boston Massachusetts"
+        }
+      ],
+      "family": "Feng",
+      "given": "Helian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Population Sciences Dana‐Farber Cancer Institute  Boston Massachusetts"
+        },
+        {
+          "name": "Division of Genetics Brigham and Women's Hospital  Boston Massachusetts"
+        }
+      ],
+      "family": "Gusev",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Epidemiology, Department of Medicine, Vanderbilt Epidemiology Center, Vanderbilt‐Ingram Cancer Center Vanderbilt University School of Medicine  Nashville Tennessee"
+        }
+      ],
+      "family": "Wu",
+      "given": "Lang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Epidemiology, Department of Medicine, Vanderbilt Epidemiology Center, Vanderbilt‐Ingram Cancer Center Vanderbilt University School of Medicine  Nashville Tennessee"
+        }
+      ],
+      "family": "Zheng",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Pathology \u0026amp; Laboratory Medicine David Geffen School of Medicine, University of California  Los Angeles California"
+        },
+        {
+          "name": "Bioinformatics Interdepartmental Program University of California  Los Angeles California"
+        },
+        {
+          "name": "Department of Human Genetics, David Geffen School of Medicine University of California  Los Angeles California"
+        }
+      ],
+      "family": "Pasaniuc",
+      "given": "Bogdan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard T.H. Chan School of Public Health  Boston Massachusetts"
+        },
+        {
+          "name": "Program in Genetic Epidemiology and Statistical Genetics Harvard T.H. Chan School of Public Health  Boston Massachusetts"
+        },
+        {
+          "name": "Department of Epidemiology Harvard T.H. Chan School of Public Health  Boston Massachusetts"
+        }
+      ],
+      "family": "Kraft",
+      "given": "Peter",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        5,
+        29
+      ]
+    ],
+    "date-time": "2018-05-29T07:19:24Z",
+    "timestamp": 1527578364000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        23
+      ]
+    ],
+    "date-time": "2023-09-23T18:09:42Z",
+    "timestamp": 1695492582000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01 HG009120"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000009",
+      "award": [
+        "U19 CA148065",
+        "X01HG007492"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Foundation for the National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/501100000289",
+      "award": [
+        "C1287/A10118",
+        "C1287/A16563",
+        "C1287/A10710"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Cancer Research UK"
+    },
+    {
+      "DOI": "10.13039/501100000902",
+      "award": [
+        "HEALTH‐F2‐2009‐223175",
+        "H2020 633784",
+        "634935"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Translation Centre for the Bodies of the European Union"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T19:49:20Z",
+    "timestamp": 1714420160877
+  },
+  "is-referenced-by-count": 60,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        5,
+        29
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            29
+          ]
+        ],
+        "date-time": "2018-05-29T00:00:00Z",
+        "timestamp": 1527552000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22131",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22131",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "418-433",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        5,
+        29
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        5,
+        29
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "MetaXcan: Summary statistics based gene‐level association method infers accurate predixcan results",
+      "author": "Barbeira A.",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_6_2_1",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/ije/dyv080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1002/sim.6835",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1007/s10654-017-0255-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1038/ng.2653",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.11.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1038/ng.3506",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0092-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000456",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.10.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "author": "Johnson T.",
+      "key": "e_1_2_6_14_1",
+      "volume-title": "Efficient calculation for multi‐SNP genetic risk scores",
+      "year": "2011"
+    },
+    {
+      "article-title": "Probabilistic fine‐mapping of transcriptome‐wide association studies",
+      "author": "Mancuso N.",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_6_15_1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.01.031",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1038/nature24284",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1038/nrg.2016.142",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.05.013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "article-title": "Vulnerabilities of transcriptome‐wide association studies",
+      "author": "Wainberg M.",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_6_20_1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/gepi.21765",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "key": "e_1_2_6_22_1",
+      "unstructured": "Wu L. Shi W. Long J. Guo X. Michailidou K. Beesley J. … Zheng W.(2017).Identification of novel susceptibility loci and genes for breast cancer risk: A large transcriptome‐wide association study in nearly 230 000 women of European descent. Submitted."
+    },
+    {
+      "DOI": "10.1038/ng.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003264",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1038/ng.3538",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    }
+  ],
+  "reference-count": 25,
+  "references-count": 25,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/223263",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22131"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Transcriptome‐wide association studies accounting for colocalization using Egger regression"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "42"
+}

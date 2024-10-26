@@ -1,0 +1,368 @@
+{
+  "DOI": "10.1002/gepi.21761",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21761",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eGenome‐wide association studies (GWAS) have been successful in finding numerous new risk variants for complex diseases, but the results almost exclusively rely on single‐marker scans. Methods that can analyze joint effects of many variants in GWAS data are still being developed and trialed. To evaluate the performance of such methods it is essential to have a GWAS data simulator that can rapidly simulate a large number of samples, and capture key features of real GWAS data such as linkage disequilibrium (LD) among single‐nucleotide polymorphisms (SNPs) and joint effects of multiple loci (multilocus epistasis). In the current study, we combine techniques for specifying high‐order epistasis among risk SNPs with an existing program GWAsimulator [Li and Li, 2008] to achieve rapid whole‐genome simulation with accurate modeling of complex interactions. We considered various approaches to specifying interaction models including the following: departure from product of marginal effects for pairwise interactions, product terms in logistic regression models for low‐order interactions, and penetrance tables conforming to marginal effect constraints for high‐order interactions or prescribing known biological interactions. Methods for conversion among different model specifications are developed using penetrance table as the fundamental characterization of disease models. The new program, called simGWA, is capable of efficiently generating large samples of GWAS data with high precision. We show that data simulated by simGWA are faithful to template LD structures, and conform to prespecified diseases models with (or without) interactions.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21761"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Washington University School of Medicine  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Yang",
+      "given": "Wei",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Washington University School of Medicine  St. Louis Missouri United States of America"
+        },
+        {
+          "name": "Department of Genetics Washington University School of Medicine  St. Louis Missouri United States of America"
+        }
+      ],
+      "family": "Gu",
+      "given": "C. Charles",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        10,
+        12
+      ]
+    ],
+    "date-time": "2013-10-12T01:14:03Z",
+    "timestamp": 1381540443000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T06:13:07Z",
+    "timestamp": 1696572787000
+  },
+  "funder": [
+    {
+      "award": [
+        "HL091028",
+        "HL071782",
+        "DA027995"
+      ],
+      "name": "NIH"
+    },
+    {
+      "award": [
+        "0855626G"
+      ],
+      "name": "AHA"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        7
+      ]
+    ],
+    "date-time": "2023-10-07T06:18:38Z",
+    "timestamp": 1696659518120
+  },
+  "is-referenced-by-count": 9,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2013,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2013-10-01T00:00:00Z",
+        "timestamp": 1380585600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21761",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21761",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "686-694",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1186/1471-2105-11-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.1007/s00439-012-1192-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bth457",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.1038/nrg2579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.1146/annurev.ge.29.120195.002153",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1086/422174",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1093/bib/bbt037",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_9_8_1",
+      "unstructured": "GaoH WuY LiJ LiH LiJ YangR.2013.Forward LASSO analysis for high‐order interactions in genome‐wide association study.Brief Bioinform."
+    },
+    {
+      "DOI": "10.1038/nature02168",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1093/nar/gks550",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btf869",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "key": "e_1_2_9_12_1",
+      "unstructured": "HindorffLA MacArthurJ MoralesJ JunkinsHA HallPN KlemmAK ManolioTA. 2013.A catalog of published genome‐wide association studies. Available at:http://www.genome.gov/gwastudies. Accessed Aug 6 2013."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/18.2.337",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20521",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "DOI": "10.1038/ng.2520",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_15_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm549",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0041730",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002714",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1038/nrcardio.2011.208",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1038/nrg3523",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_20_1"
+    },
+    {
+      "DOI": "10.1038/nrneph.2011.189",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_21_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-S9-S5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1038/tp.2012.80",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-442",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.07.021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "DOI": "10.1097/MOL.0b013e328350fad2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_28_1"
+    },
+    {
+      "article-title": "A characterization of the parameter space for highorder epistasis",
+      "author": "Yang W",
+      "first-page": "722",
+      "journal-title": "Genet Epidemiol",
+      "key": "e_1_2_9_29_1",
+      "volume": "32",
+      "year": "2008"
+    },
+    {
+      "article-title": "Random forest fishing: a novel approach to identifying organic group of risk factors in genome‐wide association studies",
+      "author": "Yang W",
+      "journal-title": "Eur J Hum Genet",
+      "key": "e_1_2_9_30_1",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/ejhg.2011.46",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "DOI": "10.1038/ng.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_32_1"
+    }
+  ],
+  "reference-count": 31,
+  "references-count": 31,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21761"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A Whole‐Genome Simulator Capable of Modeling High‐Order Epistasis for Complex Disease"
+  ],
+  "type": "journal-article",
+  "volume": "37"
+}

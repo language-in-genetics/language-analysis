@@ -1,0 +1,769 @@
+{
+  "DOI": "10.1002/gepi.22516",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22516",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eLinkage analysis, a class of methods for detecting co‐segregation of genomic segments and traits in families, was used to map disease‐causing genes for decades before genotyping arrays and dense SNP genotyping enabled genome‐wide association studies in population samples. Population samples often contain related individuals, but the segregation of alleles within families is rarely used because traditional linkage methods are computationally inefficient for larger datasets. Here, we describe Population Linkage, a novel application of Haseman–Elston regression as a method of moments estimator of variance components and their standard errors. We achieve additional computational efficiency by using modern methods for detection of IBD segments and variance component estimation, efficient preprocessing of input data, and minimizing redundant numerical calculations. We also refined variance component models to account for the biases in population‐scale methods for IBD segment detection. We ran Population Linkage on four blood lipid traits in over 70,000 individuals from the HUNT and SardiNIA studies, successfully detecting 25 known genetic signals. One notable linkage signal that appeared in both was for low‐density lipoprotein (LDL) cholesterol levels in the region near the gene \u003cjats:italic\u003eAPOE\u003c/jats:italic\u003e (LOD = 29.3, variance explained = 4.1%). This is the region where the missense variants rs7412 and rs429358, which together make up the ε2, ε3, and ε4 alleles each account for 2.4% and 0.8% of variation in circulating LDL cholesterol. Our results show the potential for linkage analysis and other large‐scale applications of method of moments variance components estimation.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22516"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2022-07-19"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2023-01-24"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2023-02-05"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-6411-9666",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan School of Public Health  Ann Arbor Michigan USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Zajac",
+      "given": "Gregory J. M.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine and Department of Neurosciences Université de Montréal  Montréal Québec Canada"
+        },
+        {
+          "name": "Montréal Heart Institute  Montréal Québec Canada"
+        }
+      ],
+      "family": "Gagliano Taliun",
+      "given": "Sarah A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica ‐ CNR  Cagliari Italy"
+        },
+        {
+          "name": "Dipartimento di Scienze Biomediche Università di Sassari  Sassari Italy"
+        }
+      ],
+      "family": "Sidore",
+      "given": "Carlo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine, Division of Cardiology University of Michigan  Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Graham",
+      "given": "Sarah E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Trondheim Norway"
+        },
+        {
+          "name": "Department of Endocrinology, Clinic of Medicine, St. Olavs hospital Trondheim University Hospital  Trondheim Norway"
+        },
+        {
+          "name": "HUNT Research Centre, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Levanger Norway"
+        }
+      ],
+      "family": "Åsvold",
+      "given": "Bjørn O.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Trondheim Norway"
+        },
+        {
+          "name": "HUNT Research Centre, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Levanger Norway"
+        },
+        {
+          "name": "Clinic of Medicine, St. Olavs Hospital Trondheim University Hospital  Trondheim Norway"
+        }
+      ],
+      "family": "Brumpton",
+      "given": "Ben",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Trondheim Norway"
+        }
+      ],
+      "family": "Nielsen",
+      "given": "Jonas B.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7719-0859",
+      "affiliation": [
+        {
+          "name": "Department of Computational Medicine and Bioinformatics University of Michigan  Ann Arbor Michigan USA"
+        },
+        {
+          "name": "Analytic and Translational Genetics Unit Massachusetts General Hospital  Boston Massachusetts USA"
+        },
+        {
+          "name": "Program in Medical and Population Genetics Broad Institute of Harvard and MIT  Cambridge Massachusetts USA"
+        },
+        {
+          "name": "Stanley Center for Psychiatric Research Broad Institute of Harvard and MIT  Cambridge Massachusetts USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Zhou",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Trondheim Norway"
+        }
+      ],
+      "family": "Gabrielsen",
+      "given": "Maiken",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Trondheim Norway"
+        }
+      ],
+      "family": "Skogholt",
+      "given": "Anne H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan School of Public Health  Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Fritsche",
+      "given": "Lars G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Laboratory of Genetics and Genomics NIA, NIH  Baltimore Maryland USA"
+        }
+      ],
+      "family": "Schlessinger",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica ‐ CNR  Cagliari Italy"
+        },
+        {
+          "name": "Dipartimento di Scienze Biomediche Università di Sassari  Sassari Italy"
+        }
+      ],
+      "family": "Cucca",
+      "given": "Francesco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "K.G. Jebsen Center for Genetic Epidemiology, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Trondheim Norway"
+        },
+        {
+          "name": "HUNT Research Centre, Department of Public Health and Nursing, NTNU Norwegian University of Science and Technology  Levanger Norway"
+        },
+        {
+          "name": "Department of Medicine Levanger Hospital, Nord‐Trøndelag Hospital Trust  Levanger Norway"
+        }
+      ],
+      "family": "Hveem",
+      "given": "Kristian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine, Division of Cardiology University of Michigan  Ann Arbor Michigan USA"
+        },
+        {
+          "name": "Department of Computational Medicine and Bioinformatics University of Michigan  Ann Arbor Michigan USA"
+        },
+        {
+          "name": "Department of Human Genetics University of Michigan  Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Willer",
+      "given": "Cristen J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan School of Public Health  Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Abecasis",
+      "given": "Gonçalo R.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        5
+      ]
+    ],
+    "date-time": "2023-02-05T22:33:40Z",
+    "timestamp": 1675636420000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        21
+      ]
+    ],
+    "date-time": "2023-08-21T20:03:11Z",
+    "timestamp": 1692648191000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        23
+      ]
+    ],
+    "date-time": "2023-12-23T15:20:46Z",
+    "timestamp": 1703344846992
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        5
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            5
+          ]
+        ],
+        "date-time": "2023-02-05T00:00:00Z",
+        "timestamp": 1675555200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22516",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22516",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22516",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "231-248",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        5
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        5
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        4
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ng786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "article-title": "Robust variance‐components approach for assessing genetic linkage in pedigrees",
+      "author": "Amos C. I.",
+      "first-page": "535",
+      "issue": "3",
+      "journal-title": "American Journal of Human Genetics",
+      "key": "e_1_2_8_3_1",
+      "volume": "54",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1126/science.285.5426.409",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.3168/jds.s0022-0302(98)70156-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1016/s0065-2660(01)42021-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1101/2021.12.23.21268305",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_7_1",
+      "unstructured": "Brumpton B. M. Graham S. Surakka I. Skogholt A. H. Løset M. Fritsche L. G. \u0026Willer C. J.(2021). The HUNT Study: A population‐based cohort for genetic research.medRxiv 2021.2012.2023.21268305.https://doi.org/10.1101/2021.12.23.21268305"
+    },
+    {
+      "DOI": "10.1093/nar/gky1120",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2014.00107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "key": "e_1_2_8_10_1",
+      "unstructured": "Chen W. M. Manichaikul A. Nguyen J. Onengut‐Gumuscu S. \u0026Rich S. S.(2017).Integrated inference that accurately identifies close relatives in \u003e 1 million samples. Annual Meeting of the American Society of Human Genetics 2017 Orlando FL."
+    },
+    {
+      "DOI": "10.1038/s41588-018-0215-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20584",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2307",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13225-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1016/0040-5809(83)90004-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "article-title": "Genetic linkage analysis in familial breast and ovarian cancer: Results from 214 families. the breast cancer linkage consortium",
+      "author": "Easton D. F.",
+      "first-page": "678",
+      "issue": "4",
+      "journal-title": "American Journal of Human Genetics",
+      "key": "e_1_2_8_16_1",
+      "volume": "52",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1159/000152448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1086/424696",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-799961-6.00006-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22175",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004229",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1159/000430841",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1419064111",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1038/s41586-021-04064-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1126/science.2270482",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1007/bf01066731",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0146240",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0465-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "key": "e_1_2_8_29_1",
+      "unstructured": "Illumina. (2017).Infinium® CoreExome‐ 24 v1.2 BeadChip.https://www.illumina.com/content/dam/illumina-marketing/documents/products/datasheets/datasheet_human_core_exome_beadchip.pdf"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2008.04.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1038/ng.548",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1534/genetics.107.080101",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1186/1471-2350-8-S1-S17",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1093/ije/dys095",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1073/pnas.84.8.2363",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.1320140315",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "article-title": "A random walk method for computing genetic location scores",
+      "author": "Lange K.",
+      "first-page": "1320",
+      "issue": "6",
+      "journal-title": "American Journal of Human Genetics",
+      "key": "e_1_2_8_37_1",
+      "volume": "49",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1038/ejhg.2008.24",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "DOI": "10.1080/13816810.2018.1479429",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1086/377137",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1126/science.7545954",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1093/gerona/glv006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_43_1"
+    },
+    {
+      "article-title": "Sequential tests for the detection of linkage",
+      "author": "Morton N. E.",
+      "first-page": "277",
+      "issue": "3",
+      "journal-title": "American Journal of Human Genetics",
+      "key": "e_1_2_8_44_1",
+      "volume": "7",
+      "year": "1955"
+    },
+    {
+      "DOI": "10.1093/nar/gkz501",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    },
+    {
+      "DOI": "10.1038/s41467-020-20086-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    },
+    {
+      "DOI": "10.1038/mp.2014.8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_47_1"
+    },
+    {
+      "DOI": "10.1038/s41467-020-17576-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_48_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_49_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2014.216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_50_1"
+    },
+    {
+      "DOI": "10.1186/1866-1955-5-30",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_51_1"
+    },
+    {
+      "article-title": "A note on multiple testing procedures in linkage analysis",
+      "author": "Risch N.",
+      "first-page": "1058",
+      "issue": "6",
+      "journal-title": "American Journal of Human Genetics",
+      "key": "e_1_2_8_52_1",
+      "volume": "48",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1086/320593",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_53_1"
+    },
+    {
+      "DOI": "10.1086/341560",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_54_1"
+    },
+    {
+      "DOI": "10.1038/ng.3368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_55_1"
+    },
+    {
+      "DOI": "10.1002/9781119487845.ch20",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_56_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4939-6613-4_10",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_57_1"
+    },
+    {
+      "DOI": "10.1159/000109731",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_58_1"
+    },
+    {
+      "DOI": "10.1159/000330634",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_59_1"
+    },
+    {
+      "DOI": "10.1534/genetics.116.197004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_60_1"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01085-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_61_1"
+    },
+    {
+      "DOI": "10.1159/000072317",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_62_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0184-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_63_1"
+    },
+    {
+      "DOI": "10.1214/17-AOAS1052",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_64_1"
+    },
+    {
+      "DOI": "10.1038/ng.2310",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_65_1"
+    }
+  ],
+  "reference-count": 64,
+  "references-count": 64,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22516"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A fast linkage method for population GWAS cohorts with related individuals"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "47"
+}

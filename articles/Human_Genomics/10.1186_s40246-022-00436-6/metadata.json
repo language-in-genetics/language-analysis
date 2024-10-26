@@ -1,0 +1,1006 @@
+{
+  "DOI": "10.1186/s40246-022-00436-6",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00436-6",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eTriple-negative breast cancer (TNBC) is a very heterogeneous disease. Several gene expression and mutation profiling approaches were used to classify it, and all converged to the identification of distinct molecular subtypes, with some overlapping across different approaches. However, a standardised tool to routinely classify TNBC in the clinics and guide personalised treatment is lacking. We aimed at defining a specific gene signature for each of the six TNBC subtypes proposed by Lehman et al. in 2011 (basal-like 1 (BL1); basal-like 2 (BL2); mesenchymal (M); immunomodulatory (IM); mesenchymal stem-like (MSL); and luminal androgen receptor (LAR)), to be able to accurately predict them.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eLehman’s TNBCtype subtyping tool was applied to RNA-sequencing data from 482 TNBC (GSE164458), and a minimal subtype-specific gene signature was defined by combining two class comparison techniques with seven attribute selection methods. Several machine learning algorithms for subtype prediction were used, and the best classifier was applied on microarray data from 72 Italian TNBC and on the TNBC subset of the BRCA-TCGA data set.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe identified two signatures with the 120 and 81 top up- and downregulated genes that define the six TNBC subtypes, with prediction accuracy ranging from 88.6 to 89.4%, and even improving after removal of the least important genes. Network analysis was used to identify highly interconnected genes within each subgroup. Two druggable matrix metalloproteinases were found in the BL1 and BL2 subsets, and several druggable targets were complementary to androgen receptor or aromatase in the LAR subset. Several secondary drug–target interactions were found among the upregulated genes in the M, IM and MSL subsets.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur study took full advantage of available TNBC data sets to stratify samples and genes into distinct subtypes, according to gene expression profiles. The development of a data mining approach to acquire a large amount of information from several data sets has allowed us to identify a well-determined minimal number of genes that may help in the recognition of TNBC subtypes. These genes, most of which have been previously found to be associated with breast cancer, have the potential to become novel diagnostic markers and/or therapeutic targets for specific TNBC subsets.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "436"
+  ],
+  "article-number": "70",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "20 September 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "21 November 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "20 December 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Akhouayri",
+      "given": "Laila",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Ostano",
+      "given": "Paola",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mello-Grand",
+      "given": "Maurizia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gregnanin",
+      "given": "Ilaria",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Crivelli",
+      "given": "Francesca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Laurora",
+      "given": "Sara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liscia",
+      "given": "Daniele",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leone",
+      "given": "Francesco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Santoro",
+      "given": "Angela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mulè",
+      "given": "Antonino",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guarino",
+      "given": "Donatella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Maggiore",
+      "given": "Claudia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Carlino",
+      "given": "Angela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Magno",
+      "given": "Stefano",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scatolini",
+      "given": "Maria",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Di Leone",
+      "given": "Alba",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Masetti",
+      "given": "Riccardo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chiorino",
+      "given": "Giovanna",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        20
+      ]
+    ],
+    "date-time": "2022-12-20T04:24:41Z",
+    "timestamp": 1671510281000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        20
+      ]
+    ],
+    "date-time": "2022-12-20T04:26:49Z",
+    "timestamp": 1671510409000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        8
+      ]
+    ],
+    "date-time": "2024-01-08T10:39:36Z",
+    "timestamp": 1704710376679
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        20
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            20
+          ]
+        ],
+        "date-time": "2022-12-20T00:00:00Z",
+        "timestamp": 1671494400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            20
+          ]
+        ],
+        "date-time": "2022-12-20T00:00:00Z",
+        "timestamp": 1671494400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00436-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00436-6/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00436-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        20
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        20
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/35021093",
+      "author": "CM Perou",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nature",
+      "key": "436_CR1",
+      "unstructured": "Perou CM, Sørlie T, Eisen MB, van de Rijn M, Jeffrey SS, Rees CA, et al. Molecular portraits of human breast tumours. Nature. 2000. https://doi.org/10.1038/35021093.",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1016/j.molonc.2010.04.006",
+      "author": "F Podo",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Oncol",
+      "key": "436_CR2",
+      "unstructured": "Podo F, Buydens LMC, Degani H, Hilhorst R, Klipp E, Gribbestad IS, et al. Triple-negative breast cancer: present challenges and new perspectives. Mol Oncol. 2010. https://doi.org/10.1016/j.molonc.2010.04.006.",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1007/s10549-004-7603-8",
+      "author": "E Matros",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer Res Treat",
+      "key": "436_CR3",
+      "unstructured": "Matros E, Wang ZC, Lodeiro G, Miron A, Iglehart JD, Richardson AL. BRCA1 promoter methylation in sporadic breast tumors: relationship to gene expression profiles. Breast Cancer Res Treat. 2005. https://doi.org/10.1007/s10549-004-7603-8.",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-06-3045",
+      "author": "R Dent",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Cancer Res",
+      "key": "436_CR4",
+      "unstructured": "Dent R, Trudeau M, Pritchard KI, Hanna WM, Kahn HK, Sawka CA, et al. Triple-negative breast cancer: clinical features and patterns of recurrence. Clin Cancer Res. 2007. https://doi.org/10.1158/1078-0432.CCR-06-3045.",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1111/j.1582-4934.2009.00906.x",
+      "author": "FC Geyer",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Cell Mol Med",
+      "key": "436_CR5",
+      "unstructured": "Geyer FC, Lopez-Garcia MA, Lambros MB, Reis-Filho JS. Genetic characterization of breast cancer and implications for clinical management. J Cell Mol Med. 2009. https://doi.org/10.1111/j.1582-4934.2009.00906.x.",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41422-020-0375-9",
+      "author": "Y-Z Jiang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cell Res",
+      "key": "436_CR6",
+      "unstructured": "Jiang Y-Z, Liu Y, Xiao Y, Hu X, Jiang L, Zuo W-J, et al. Molecular subtyping and genomic profiling expand precision medicine in refractory metastatic triple-negative breast cancer: the FUTURE trial. Cell Res. 2020. https://doi.org/10.1038/s41422-020-0375-9.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-18-0585",
+      "author": "P Sharma",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Cancer Res",
+      "key": "436_CR7",
+      "unstructured": "Sharma P, López-Tarruella S, García-Saenz JA, Khan QJ, Gómez HL, Prat A, et al. Pathological response and survival in triple-negative breast cancer following neoadjuvant carboplatin plus docetaxel. Clin Cancer Res. 2018. https://doi.org/10.1158/1078-0432.CCR-18-0585.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.21147/j.issn.1000-9604.2017.03.10",
+      "author": "T Yu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Chin J Cancer Res",
+      "key": "436_CR8",
+      "unstructured": "Yu T, Di G. Role of tumor microenvironment in triple-negative breast cancer and its prognostic significance. Chin J Cancer Res. 2017. https://doi.org/10.21147/j.issn.1000-9604.2017.03.10.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3390/cancers13133357",
+      "author": "H Zheng",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cancers",
+      "key": "436_CR9",
+      "unstructured": "Zheng H, Siddharth S, Parida S, Wu X, Sharma D. Tumor microenvironment: key players in triple negative breast cancer immunomodulation. Cancers. 2021. https://doi.org/10.3390/cancers13133357.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1172/JCI45014",
+      "author": "BD Lehmann",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Clin Invest",
+      "key": "436_CR10",
+      "unstructured": "Lehmann BD, Bauer JA, Chen X, Sanders ME, Chakravarthy AB, Shyr Y, et al. Identification of human triple-negative breast cancer subtypes and preclinical models for selection of targeted therapies. J Clin Invest. 2011. https://doi.org/10.1172/JCI45014.",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-14-0432",
+      "author": "MD Burstein",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Cancer Res",
+      "key": "436_CR11",
+      "unstructured": "Burstein MD, Tsimelzon A, Poage GM, Covington KR, Contreras A, Fuqua SAW, et al. Comprehensive genomic analysis identifies novel subtypes and targets of triple-negative breast cancer. Clin Cancer Res. 2015. https://doi.org/10.1158/1078-0432.CCR-14-0432.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s13058-019-1148-6",
+      "author": "P Jézéquel",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer Res",
+      "key": "436_CR12",
+      "unstructured": "Jézéquel P, Kerdraon O, Hondermarck H, Guérin-Charbonnel C, Lasla H, Gouraud W, et al. Identification of three subtypes of triple-negative breast cancer with potential therapeutic implications. Breast Cancer Res. 2019. https://doi.org/10.1186/s13058-019-1148-6.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13058-016-0690-8",
+      "author": "Y-R Liu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer Res",
+      "key": "436_CR13",
+      "unstructured": "Liu Y-R, Jiang Y-Z, Xu X-E, Yu K-D, Jin X, Hu X, et al. Comprehensive transcriptome analysis identifies novel molecular subtypes and subtype-specific RNAs of triple-negative breast cancer. Breast Cancer Res. 2016. https://doi.org/10.1186/s13058-016-0690-8.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/S1470-2045(18)30111-6",
+      "author": "S Loibl",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Lancet Oncol",
+      "key": "436_CR14",
+      "unstructured": "Loibl S, O’Shaughnessy J, Untch M, Sikov WM, Rugo HS, McKee MD, et al. Addition of the PARP inhibitor veliparib plus carboplatin or carboplatin alone to standard neoadjuvant chemotherapy in triple-negative breast cancer (BrighTNess): a randomised, phase 3 trial. Lancet Oncol. 2018. https://doi.org/10.1016/S1470-2045(18)30111-6.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nature11412",
+      "author": "CGA Network",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nature",
+      "key": "436_CR15",
+      "unstructured": "Network CGA. Comprehensive molecular portraits of human breast tumours. Nature. 2012. https://doi.org/10.1038/nature11412.",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.4137/CIN.S9983",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cancer Inform",
+      "key": "436_CR16",
+      "unstructured": "Chen X, Li J, Gray WH, Lehmann BD, Bauer JA, Shyr Y, et al. TNBCtype: a subtyping tool for triple-negative breast cancer. Cancer Inform. 2012. https://doi.org/10.4137/CIN.S9983.",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s12943-015-0380-7",
+      "author": "R-Z Liu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Cancer",
+      "key": "436_CR17",
+      "unstructured": "Liu R-Z, Garcia E, Glubrecht DD, Poon HY, Mackey JR, Godbout R. CRABP1 is associated with a poor prognosis in breast cancer: adding to the complexity of breast cancer cell response to retinoic acid. Mol Cancer. 2015. https://doi.org/10.1186/s12943-015-0380-7.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1074/jbc.M114.593582",
+      "author": "GM Sizemore",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Biol Chem",
+      "key": "436_CR18",
+      "unstructured": "Sizemore GM, Sizemore ST, Seachrist DD, Keri RA. GABA(A) receptor pi (GABRP) stimulates basal-like breast cancer cell migration through activation of extracellular-regulated kinase 1/2 (ERK1/2). J Biol Chem. 2014. https://doi.org/10.1074/jbc.M114.593582.",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1084/jem.20172048",
+      "author": "Q Cao",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Exp Med",
+      "key": "436_CR19",
+      "unstructured": "Cao Q, Chen X, Wu X, Liao R, Huang P, Tan Y, et al. Inhibition of UGT8 suppresses basal-like breast cancer progression by attenuating sulfatide-αVβ5 axis. J Exp Med. 2018. https://doi.org/10.1084/jem.20172048.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/j.1365-2559.2011.04031.x",
+      "author": "G Powell",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Histopathology",
+      "key": "436_CR20",
+      "unstructured": "Powell G, Roche H, Roche WR. Expression of calretinin by breast carcinoma and the potential for misdiagnosis of mesothelioma. Histopathology. 2011. https://doi.org/10.1111/j.1365-2559.2011.04031.x.",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3389/fphar.2022.770993",
+      "author": "J Chen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Pharmacol",
+      "key": "436_CR21",
+      "unstructured": "Chen J, Zhu J, Xu S-J, Zhou J, Ding X-F, Liang Y, et al. Transmembrane 4 L six family member 1 suppresses hormone receptor-positive, HER2-negative breast cancer cell proliferation. Front Pharmacol. 2022. https://doi.org/10.3389/fphar.2022.770993.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s10549-014-2989-4",
+      "author": "ST Sizemore",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer Res Treat",
+      "key": "436_CR22",
+      "unstructured": "Sizemore ST, Sizemore GM, Booth CN, Thompson CL, Silverman P, Bebek G, et al. Hypomethylation of the MMP7 promoter and increased expression of MMP7 distinguishes the basal-like breast cancer subtype from other triple-negative tumors. Breast Cancer Res Treat. 2014. https://doi.org/10.1007/s10549-014-2989-4.",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/1471-2407-14-959",
+      "author": "G-E Kim",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Cancer",
+      "key": "436_CR23",
+      "unstructured": "Kim G-E, Lee JS, Choi Y-D, Lee K-H, Lee JH, Nam JH, et al. Expression of matrix metalloproteinases and their inhibitors in different immunohistochemical-based molecular subtypes of breast cancer. BMC Cancer. 2014. https://doi.org/10.1186/1471-2407-14-959.",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/ng.3866",
+      "author": "AG Henssen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Genet",
+      "key": "436_CR24",
+      "unstructured": "Henssen AG, Koche R, Zhuang J, Jiang E, Reed C, Eisenberg A, et al. PGBD5 promotes site-specific oncogenic mutations in human tumors. Nat Genet. 2017. https://doi.org/10.1038/ng.3866.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12885-019-6052-z",
+      "author": "JA McQuerry",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Cancer",
+      "key": "436_CR25",
+      "unstructured": "McQuerry JA, Jenkins DF, Yost SE, Zhang Y, Schmolze D, Johnson WE, et al. Pathway activity profiling of growth factor receptor network and stemness pathways differentiates metaplastic breast cancer histological subtypes. BMC Cancer. 2019. https://doi.org/10.1186/s12885-019-6052-z.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/1471-2407-12-500",
+      "author": "JL McElwee",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Cancer",
+      "key": "436_CR26",
+      "unstructured": "McElwee JL, Mohanan S, Griffith OL, Breuer HC, Anguish LJ, Cherrington BD, et al. Identification of PADI2 as a potential breast cancer biomarker and therapeutic target. BMC Cancer. 2012. https://doi.org/10.1186/1471-2407-12-500.",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s12885-020-07399-8",
+      "author": "GB Lim",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Cancer",
+      "key": "436_CR27",
+      "unstructured": "Lim GB, Kim Y-A, Seo J-H, Lee HJ, Gong G, Park SH. Prediction of prognostic signatures in triple-negative breast cancer based on the differential expression analysis via NanoString nCounter immune panel. BMC Cancer. 2020. https://doi.org/10.1186/s12885-020-07399-8.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/mc.23079",
+      "author": "C Gong",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Carcinog",
+      "key": "436_CR28",
+      "unstructured": "Gong C, Zou J, Zhang M, Zhang J, Xu S, Zhu S, et al. Upregulation of MGP by HOXC8 promotes the proliferation, migration, and EMT processes of triple-negative breast cancer. Mol Carcinog. 2019. https://doi.org/10.1002/mc.23079.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.4048/jbc.2018.21.e41",
+      "author": "DC Temian",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Breast Cancer",
+      "key": "436_CR29",
+      "unstructured": "Temian DC, Pop LA, Irimie AI, Berindan-Neagoe I. The epigenetics of triple-negative and basal-like breast cancer: current knowledge. J Breast Cancer. 2018. https://doi.org/10.4048/jbc.2018.21.e41.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.31557/APJCP.2021.22.4.1319",
+      "author": "AA Abdul Aziz",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Asian Pac J Cancer Prev",
+      "key": "436_CR30",
+      "unstructured": "Abdul Aziz AA, Md Salleh MS, Yahya MM, Zakaria AD, Ankathil R. Genetic association of CYP1B1 4326 C\u003eG polymorphism with disease-free survival in TNBC patients undergoing TAC chemotherapy regimen. Asian Pac J Cancer Prev. 2021. https://doi.org/10.31557/APJCP.2021.22.4.1319.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s40064-015-1512-7",
+      "author": "S Asztalos",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Springerplus",
+      "key": "436_CR31",
+      "unstructured": "Asztalos S, Pham TN, Gann PH, Hayes MK, Deaton R, Wiley EL, et al. High incidence of triple negative breast cancers following pregnancy and an associated gene expression signature. Springerplus. 2015. https://doi.org/10.1186/s40064-015-1512-7.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0039446",
+      "author": "N Wang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "436_CR32",
+      "unstructured": "Wang N, Eckert KA, Zomorrodi AR, Xin P, Pan W, Shearer DA, et al. Down-regulation of HtrA1 activates the epithelial-mesenchymal transition and ATM DNA damage response pathways. PLoS ONE. 2012. https://doi.org/10.1371/journal.pone.0039446.",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/1471-2407-13-537",
+      "author": "N Dey",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Cancer",
+      "key": "436_CR33",
+      "unstructured": "Dey N, Barwick BG, Moreno CS, Ordanic-Kodani M, Chen Z, Oprea-Ilies G, et al. Wnt signaling in triple negative breast cancer is associated with metastasis. BMC Cancer. 2013. https://doi.org/10.1186/1471-2407-13-537.",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.2147/OTT.S265324",
+      "author": "D Zheng",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Onco Targets Ther",
+      "key": "436_CR34",
+      "unstructured": "Zheng D, Jiang C, Yan N, Miao Y, Wang K, Gao G, et al. Wntless (Wls): a prognostic index for progression and patient survival of breast cancer. Onco Targets Ther. 2020. https://doi.org/10.2147/OTT.S265324.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/bjc.2015.346",
+      "author": "C Bergenfelz",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Br J Cancer",
+      "key": "436_CR35",
+      "unstructured": "Bergenfelz C, Gaber A, Allaoui R, Mehmeti M, Jirström K, Leanderson T, et al. S100A9 expressed in ER(−)PgR(−) breast cancers induces inflammatory cytokines and is associated with an impaired overall survival. Br J Cancer. 2015. https://doi.org/10.1038/bjc.2015.346.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3892/ol.2016.4134",
+      "author": "YI Bao",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Oncol Lett",
+      "key": "436_CR36",
+      "unstructured": "Bao YI, Wang A, Mo J. S100A8/A9 is associated with estrogen receptor loss in breast cancer. Oncol Lett. 2016. https://doi.org/10.3892/ol.2016.4134.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.18632/oncotarget.14867",
+      "author": "C Ricciardelli",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Oncotarget",
+      "key": "436_CR37",
+      "unstructured": "Ricciardelli C, Lokman NA, Pyragius CE, Ween MP, Macpherson AM, Ruszkiewicz A, et al. Keratin 5 overexpression is associated with serous ovarian cancer recurrence and chemotherapy resistance. Oncotarget. 2017. https://doi.org/10.18632/oncotarget.14867.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.7150/ijms.54954",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Med Sci",
+      "key": "436_CR38",
+      "unstructured": "Wang Y, Xie Y, Niu Y, Song P, Liu Y, Burnett J, et al. Carboxypeptidase A4 negatively correlates with p53 expression and regulates the stemness of breast cancer cells. Int J Med Sci. 2021. https://doi.org/10.7150/ijms.54954.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/1471-2407-12-391",
+      "author": "L Flamant",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Cancer",
+      "key": "436_CR39",
+      "unstructured": "Flamant L, Roegiers E, Pierre M, Hayez A, Sterpin C, De Backer O, et al. TMEM45A is essential for hypoxia-induced chemoresistance in breast and liver cancer cells. BMC Cancer. 2012. https://doi.org/10.1186/1471-2407-12-391.",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.biopha.2020.110156",
+      "author": "X Hua",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Biomed Pharmacother",
+      "key": "436_CR40",
+      "unstructured": "Hua X, et al. Roles of S100 family members in drug resistance in tumors: status and prospects. Biomed Pharmacother. 2020. https://doi.org/10.1016/j.biopha.2020.110156.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s10549-018-05126-3",
+      "author": "Y Liu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer Res Treat",
+      "key": "436_CR41",
+      "unstructured": "Liu Y, Pandey PR, Sharma S, Xing F, Wu K, Chittiboyina A, et al. ID2 and GJB2 promote early-stage breast cancer progression by regulating cancer stemness. Breast Cancer Res Treat. 2019. https://doi.org/10.1007/s10549-018-05126-3.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0159073",
+      "author": "V Kloten",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "436_CR42",
+      "unstructured": "Kloten V, Schlensog M, Eschenbruch J, Gasthaus J, Tiedemann J, Mijnes J, et al. Abundant NDRG2 expression is associated with aggressiveness and unfavorable patients’ outcome in basal-like breast cancer. PLoS ONE. 2016. https://doi.org/10.1371/journal.pone.0159073.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1158/0008-5472.SABCS11-P5-01-07",
+      "doi-asserted-by": "publisher",
+      "key": "436_CR43",
+      "unstructured": "https://doi.org/10.1158/0008-5472.SABCS11-P5-01-07. Accessed 25 May 2022."
+    },
+    {
+      "DOI": "10.1371/journal.pone.0157368",
+      "author": "BD Lehmann",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "436_CR44",
+      "unstructured": "Lehmann BD, Jovanović B, Chen X, Estrada MV, Johnson KN, Shyr Y, et al. Refinement of triple-negative breast cancer molecular subtypes: implications for neoadjuvant chemotherapy selection. PLoS ONE. 2016. https://doi.org/10.1371/journal.pone.0157368.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-17-1912",
+      "author": "I Echavarria",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Cancer Res",
+      "key": "436_CR45",
+      "unstructured": "Echavarria I, López-Tarruella S, Picornell A, García-Saenz JÁ, Jerez Y, Hoadley K, et al. Pathological response in a triple-negative breast cancer cohort treated with neoadjuvant carboplatin and docetaxel according to Lehmann’s refined classification. Clin Cancer Res. 2018. https://doi.org/10.1158/1078-0432.CCR-17-1912.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s00018-015-1977-0",
+      "author": "V Rötzer",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cell Mol Life Sci",
+      "key": "436_CR46",
+      "unstructured": "Rötzer V, Hartlieb E, Vielmuth F, Gliem M, Spindler V, Waschke J. E-cadherin and Src associate with extradesmosomal Dsg3 and modulate desmosome assembly and adhesion. Cell Mol Life Sci. 2015. https://doi.org/10.1007/s00018-015-1977-0.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41419-021-04460-7",
+      "author": "X Wu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cell Death Dis",
+      "key": "436_CR47",
+      "unstructured": "Wu X, Wang H, Zhu D, Chai Y, Wang J, Dai W, et al. USP3 promotes gastric cancer progression and metastasis by deubiquitination-dependent COL9A3/COL6A5 stabilisation. Cell Death Dis. 2021. https://doi.org/10.1038/s41419-021-04460-7.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s12935-019-0884-0",
+      "author": "X Lv",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cancer Cell Int",
+      "key": "436_CR48",
+      "unstructured": "Lv X, He M, Zhao Y, Zhang L, Zhu W, Jiang L, et al. Identification of potential key genes and pathways predicting pathogenesis and prognosis for triple-negative breast cancer. Cancer Cell Int. 2019. https://doi.org/10.1186/s12935-019-0884-0.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s42003-018-0180-x",
+      "author": "T Koopmans",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Commun Biol",
+      "key": "436_CR49",
+      "unstructured": "Koopmans T, Rinkevich Y. Mesothelial to mesenchyme transition as a major developmental and pathological player in trunk organs and their cavities. Commun Biol. 2018. https://doi.org/10.1038/s42003-018-0180-x.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fimmu.2019.01593",
+      "author": "J Del Bano",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Immunol",
+      "key": "436_CR50",
+      "unstructured": "Del Bano J, Florès-Florès R, Josselin E, Goubard A, Ganier L, Castellano R, et al. A bispecific antibody-based approach for targeting mesothelin in triple negative breast cancer. Front Immunol. 2019. https://doi.org/10.3389/fimmu.2019.01593.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13058-018-0990-2",
+      "author": "S Donzelli",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer Res",
+      "key": "436_CR51",
+      "unstructured": "Donzelli S, Milano E, Pruszko M, Sacconi A, Masciarelli S, Iosue I, et al. Expression of ID4 protein in breast cancer cells induces reprogramming of tumour-associated macrophages. Breast Cancer Res. 2018. https://doi.org/10.1186/s13058-018-0990-2.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1158/1940-6207.PREV-10-A95",
+      "doi-asserted-by": "publisher",
+      "key": "436_CR52",
+      "unstructured": "https://doi.org/10.1158/1940-6207.PREV-10-A95 Accessed 25 May 2022."
+    },
+    {
+      "DOI": "10.1007/s10911-019-09430-6",
+      "author": "GA Mehta",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Mammary Gland Biol Neoplasia",
+      "key": "436_CR53",
+      "unstructured": "Mehta GA, Khanna P, Gatza ML. Emerging role of SOX proteins in breast cancer development and maintenance. J Mammary Gland Biol Neoplasia. 2019. https://doi.org/10.1007/s10911-019-09430-6.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.5732/cjc.013.10108",
+      "author": "R-X Li",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Chin J Cancer",
+      "key": "436_CR54",
+      "unstructured": "Li R-X, Chen Z-H, Chen Z-K. The role of EPH receptors in cancer-related epithelial-mesenchymal transition. Chin J Cancer. 2014. https://doi.org/10.5732/cjc.013.10108.",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41420-020-00322-x",
+      "author": "J Gasca",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cell Death Discov",
+      "key": "436_CR55",
+      "unstructured": "Gasca J, Flores ML, Jiménez-Guerrero R, Sáez ME, Barragán I, Ruíz-Borrego M, et al. EDIL3 promotes epithelial–mesenchymal transition and paclitaxel resistance through its interaction with integrin αVβ3 in cancer cells. Cell Death Discov. 2020. https://doi.org/10.1038/s41420-020-00322-x.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.tranon.2018.01.011",
+      "author": "Z Liu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Transl Oncol",
+      "key": "436_CR56",
+      "unstructured": "Liu Z, Li M, Jiang Z, Wang X. A comprehensive immunologic portrait of triple-negative breast cancer. Transl Oncol. 2018. https://doi.org/10.1016/j.tranon.2018.01.011.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.12659/MSM.918281",
+      "author": "T Chuan",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Med Sci Monit",
+      "key": "436_CR57",
+      "unstructured": "Chuan T, Li T, Yi C. Identification of CXCR4 and CXCL10 as potential predictive biomarkers in triple negative breast cancer (TNBC). Med Sci Monit. 2020. https://doi.org/10.12659/MSM.918281.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fonc.2021.710286",
+      "author": "Y-K Liang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Oncol",
+      "key": "436_CR58",
+      "unstructured": "Liang Y-K, Deng Z-K, Chen M-T, Qiu S-Q, Xiao Y-S, Qi Y-Z, et al. CXCL9 is a potential biomarker of immune infiltration associated with favorable prognosis in ER-negative breast cancer. Front Oncol. 2021. https://doi.org/10.3389/fonc.2021.710286.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.jncc.2021.06.001",
+      "author": "X Bai",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Natl Cancer Center",
+      "key": "436_CR59",
+      "unstructured": "Bai X. Immunotherapy for triple-negative breast cancer: a molecular insight into the microenvironment, treatment, and resistance. J Natl Cancer Center. 2021. https://doi.org/10.1016/j.jncc.2021.06.001.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/1878-0261.12446",
+      "author": "FO Beltrán-Anaya",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Oncol",
+      "key": "436_CR60",
+      "unstructured": "Beltrán-Anaya FO, Romero-Córdoba S, Rebollar-Vega R, Arrieta O, Bautista-Piña V, Dominguez-Reyes C, et al. Expression of long non-coding RNA ENSG00000226738 (LncKLHDC7B) is enriched in the immunomodulatory triple-negative breast cancer subtype and its alteration promotes cell migration, invasion, and resistance to cell death. Mol Oncol. 2019. https://doi.org/10.1002/1878-0261.12446.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/cancers12040847",
+      "author": "I-J Chiu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cancers",
+      "key": "436_CR61",
+      "unstructured": "Chiu I-J, Hsu Y-H, Chang J-S, Yang J-C, Chiu H-W, Lin Y-F. Lactotransferrin downregulation drives the metastatic progression in clear cell renal cell carcinoma. Cancers. 2020. https://doi.org/10.3390/cancers12040847.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/jpm11030197",
+      "author": "S-W Cheng",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Pers Med",
+      "key": "436_CR62",
+      "unstructured": "Cheng S-W, Chen P-C, Ger T-R, Chiu H-W, Lin Y-F. Serves as a potential marker to predict a favorable response in triple-negative breast cancer patients receiving a taxane-based chemotherapy. J Pers Med. 2021. https://doi.org/10.3390/jpm11030197.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.4149/neo_2016_017",
+      "author": "D Narita",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Neoplasma",
+      "key": "436_CR63",
+      "unstructured": "Narita D, Seclaman E, Anghel A, Ilina R, Cireap N, Negru S, et al. Altered levels of plasma chemokines in breast cancer and their association with clinical and pathological characteristics. Neoplasma. 2016. https://doi.org/10.4149/neo_2016_017.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-20-3890",
+      "author": "CI Li",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Cancer Res",
+      "key": "436_CR64",
+      "unstructured": "Li CI, Zhang Y, Cieślik M, Wu Y-M, Xiao L, Cobain E, et al. Cancer cell intrinsic and immunologic phenotypes determine clinical outcomes in basal-like breast cancer. Clin Cancer Res. 2021. https://doi.org/10.1158/1078-0432.CCR-20-3890.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s12282-021-01227-y",
+      "author": "H Kuroda",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer",
+      "key": "436_CR65",
+      "unstructured": "Kuroda H, Jamiyan T, Yamaguchi R, Kakumoto A, Abe A, Harada O, et al. Prognostic value of tumor-infiltrating B lymphocytes and plasma cells in triple-negative breast cancer. Breast Cancer. 2021. https://doi.org/10.1007/s12282-021-01227-y.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41598-019-55710-w",
+      "author": "D-Y Wang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci Rep",
+      "key": "436_CR66",
+      "unstructured": "Wang D-Y, Jiang Z, Ben-David Y, Woodgett JR, Zacksenhaus E. Molecular stratification within triple-negative breast cancer subtypes. Sci Rep. 2019. https://doi.org/10.1038/s41598-019-55710-w.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fendo.2015.00059",
+      "author": "SM Farabaugh",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Endocrinol",
+      "key": "436_CR67",
+      "unstructured": "Farabaugh SM, Boone DN, Lee AV. Role of IGF1R in breast cancer subtypes, stemness, and lineage differentiation. Front Endocrinol. 2015. https://doi.org/10.3389/fendo.2015.00059.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/onc.2016.293",
+      "author": "K Tominaga",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Oncogene",
+      "key": "436_CR68",
+      "unstructured": "Tominaga K, Shimamura T, Kimura N, Murayama T, Matsubara D, Kanauchi H, et al. Addiction to the IGF2-ID1-IGF2 circuit for maintenance of the breast cancer stem-like cells. Oncogene. 2016. https://doi.org/10.1038/onc.2016.293.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/bjc.2016.104",
+      "author": "E Sjöberg",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Br J Cancer",
+      "key": "436_CR69",
+      "unstructured": "Sjöberg E, Augsten M, Bergh J, Jirström K, Östman A. Expression of the chemokine CXCL14 in the tumour stroma is an independent marker of survival in breast cancer. Br J Cancer. 2016. https://doi.org/10.1038/bjc.2016.104.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3892/ol.2019.10969",
+      "author": "C Deocesano-Pereira",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Oncol Lett",
+      "key": "436_CR70",
+      "unstructured": "Deocesano-Pereira C, Machado RAC, de Jesus-Ferreira HC, Marchini T, Pereira TF, Carreira ACO, et al. Functional impact of the long non-coding RNA MEG3 deletion by CRISPR/Cas9 in the human triple negative metastatic Hs578T cancer cell line. Oncol Lett. 2019. https://doi.org/10.3892/ol.2019.10969.",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/ijc.29582",
+      "author": "S Ehmsen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Cancer",
+      "key": "436_CR71",
+      "unstructured": "Ehmsen S, Hansen LT, Bak M, Brasch-Andersen C, Ditzel HJ, Leth-Larsen R. S100A14 is a novel independent prognostic biomarker in the triple-negative breast cancer subtype. Int J Cancer. 2015. https://doi.org/10.1002/ijc.29582.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3390/cancers13071642",
+      "author": "M Brumec",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cancers",
+      "key": "436_CR72",
+      "unstructured": "Brumec M, Sobočan M, Takač I, Arko D. Clinical implications of androgen-positive triple-negative breast cancer. Cancers. 2021. https://doi.org/10.3390/cancers13071642.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.2147/OTT.S126051",
+      "author": "A Mina",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Onco Targets Ther",
+      "key": "436_CR73",
+      "unstructured": "Mina A, Yoder R, Sharma P. Targeting the androgen receptor in triple-negative breast cancer: current perspectives. Onco Targets Ther. 2017. https://doi.org/10.2147/OTT.S126051.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s13058-020-01369-5",
+      "author": "S Bhattarai",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Breast Cancer Res",
+      "key": "436_CR74",
+      "unstructured": "Bhattarai S, Saini G, Gogineni K, Aneja R. Quadruple-negative breast cancer: novel implications for a new disease. Breast Cancer Res. 2020. https://doi.org/10.1186/s13058-020-01369-5.",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 74,
+  "references-count": 74,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00436-6"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Identification of a minimum number of genes to predict triple-negative breast cancer subgroups from gene expression profiles"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

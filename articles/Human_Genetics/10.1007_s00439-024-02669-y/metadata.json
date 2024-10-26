@@ -1,0 +1,953 @@
+{
+  "DOI": "10.1007/s00439-024-02669-y",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-024-02669-y",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eGeneralized lipodystrophy is a feature of various hereditary disorders, often leading to a progeroid appearance. In the present study we identified a missense and a frameshift variant in a compound heterozygous state in \u003cjats:italic\u003eSUPT7L\u003c/jats:italic\u003e in a boy with intrauterine growth retardation, generalized lipodystrophy, and additional progeroid features. \u003cjats:italic\u003eSUPT7L\u003c/jats:italic\u003e encodes a component of the transcriptional coactivator complex STAGA. By transcriptome sequencing, we showed the predicted missense variant to cause aberrant splicing, leading to exon truncation and thereby to a complete absence of SUPT7L in dermal fibroblasts. In addition, we found altered expression of genes encoding DNA repair pathway components. This pathway was further investigated and an increased rate of DNA damage was detected in proband-derived fibroblasts and genome-edited HeLa cells. Finally, we performed transient overexpression of wildtype SUPT7L in both cellular systems, which normalizes the number of DNA damage events. Our findings suggest \u003cjats:italic\u003eSUPT7L\u003c/jats:italic\u003e as a novel disease gene and underline the link between genome instability and progeroid phenotypes.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2669"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "30 November 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "11 March 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "9 April 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The Charité - Universitätsmedizin Berlin ethics committee approved the study (EA2/145/07). All procedures followed were in accordance with the Helsinki Declaration of 1975, as revised in 2000."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The parents of the affected individual II-1 provided written consent for genetic testing and the publication of images in Fig. 1."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-0391-1497",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kopp",
+      "given": "Johannes",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4943-198X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Koch",
+      "given": "Leonard A.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5590-3835",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lyubenova",
+      "given": "Hristiana",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0009-0008-2628-2890",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Küchler",
+      "given": "Oliver",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3051-1763",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Holtgrewe",
+      "given": "Manuel",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4824-1925",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ivanov",
+      "given": "Andranik",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1345-4522",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Dubourg",
+      "given": "Christele",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1546-7319",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Launay",
+      "given": "Erika",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6336-3939",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Brachs",
+      "given": "Sebastian",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9788-3166",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Mundlos",
+      "given": "Stefan",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1449-9909",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ehmke",
+      "given": "Nadja",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9746-4412",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Seelow",
+      "given": "Dominik",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2535-2198",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Fradin",
+      "given": "Mélanie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4582-9838",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kornak",
+      "given": "Uwe",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1075-7571",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Fischer-Zirnsak",
+      "given": "Björn",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        9
+      ]
+    ],
+    "date-time": "2024-04-09T04:01:47Z",
+    "timestamp": 1712635307000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        9
+      ]
+    ],
+    "date-time": "2024-04-09T05:07:01Z",
+    "timestamp": 1712639221000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100002839",
+      "doi-asserted-by": "crossref",
+      "name": "Charité - Universitätsmedizin Berlin"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        10
+      ]
+    ],
+    "date-time": "2024-04-10T00:44:16Z",
+    "timestamp": 1712709856952
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        9
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            9
+          ]
+        ],
+        "date-time": "2024-04-09T00:00:00Z",
+        "timestamp": 1712620800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            9
+          ]
+        ],
+        "date-time": "2024-04-09T00:00:00Z",
+        "timestamp": 1712620800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-024-02669-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-024-02669-y/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-024-02669-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1002/0471142905.hg0720s76",
+      "doi-asserted-by": "crossref",
+      "key": "2669_CR1",
+      "unstructured": "Adzhubei I, Jordan DM, Sunyaev SR (2013) Predicting functional effect of human missense mutations using PolyPhen-2. Curr Protoc Hum Genet Chap. 7:Unit7.20"
+    },
+    {
+      "DOI": "10.1038/s41431-020-00755-z",
+      "author": "D Baux",
+      "doi-asserted-by": "publisher",
+      "first-page": "356",
+      "journal-title": "Eur J Hum Genet",
+      "key": "2669_CR2",
+      "unstructured": "Baux D, Van Goethem C, Ardouin O et al (2021) MobiDetails: online DNA variants interpretation. Eur J Hum Genet 29:356–360",
+      "volume": "29",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.semcancer.2006.07.014",
+      "author": "CV Dang",
+      "doi-asserted-by": "publisher",
+      "first-page": "253",
+      "journal-title": "Semin Cancer Biol",
+      "key": "2669_CR4",
+      "unstructured": "Dang CV, O’Donnell KA, Zeller KI et al (2006) The c-Myc target gene network. Semin Cancer Biol 16:253–264",
+      "volume": "16",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1126/science.1084125",
+      "doi-asserted-by": "crossref",
+      "key": "2669_CR6",
+      "unstructured": "De Sandre-Giovannoli A, Bernard R, Cau P et al (2003) Lamin a truncation in Hutchinson-Gilford progeria. Science 300:2055"
+    },
+    {
+      "DOI": "10.1038/ng.806",
+      "author": "MA DePristo",
+      "doi-asserted-by": "publisher",
+      "first-page": "491",
+      "journal-title": "Nat Genet",
+      "key": "2669_CR5",
+      "unstructured": "DePristo MA, Banks E, Poplin R et al (2011) A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nat Genet 43:491–498",
+      "volume": "43",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ymgme.2013.08.009",
+      "author": "A Dimopoulou",
+      "doi-asserted-by": "publisher",
+      "first-page": "352",
+      "journal-title": "Mol Genet Metab",
+      "key": "2669_CR7",
+      "unstructured": "Dimopoulou A, Fischer B, Gardeitchik T et al (2013) Genotype-phenotype spectrum of PYCR1-related autosomal recessive cutis laxa. Mol Genet Metab 110:352–361",
+      "volume": "110",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts635",
+      "author": "A Dobin",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "journal-title": "Bioinformatics",
+      "key": "2669_CR8",
+      "unstructured": "Dobin A, Davis CA, Schlesinger F et al (2013) STAR: ultrafast universal RNA-seq aligner. Bioinformatics 29:15–21",
+      "volume": "29",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/bs.adgen.2018.09.002",
+      "author": "LG Dufner-Almeida",
+      "doi-asserted-by": "publisher",
+      "first-page": "39",
+      "journal-title": "Adv Genet",
+      "key": "2669_CR9",
+      "unstructured": "Dufner-Almeida LG, do Carmo RT, Masotti C, Haddad LA (2019) Understanding human DNA variants affecting pre-mRNA splicing in the NGS era. Adv Genet 103:39–90",
+      "volume": "103",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature01629",
+      "author": "M Eriksson",
+      "doi-asserted-by": "publisher",
+      "first-page": "293",
+      "journal-title": "Nature",
+      "key": "2669_CR10",
+      "unstructured": "Eriksson M, Brown WT, Gordon LB et al (2003) Recurrent de novo point mutations in lamin a cause Hutchinson-Gilford progeria syndrome. Nature 423:293–298",
+      "volume": "423",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1128/MCB.01461-07",
+      "author": "AM Gamper",
+      "doi-asserted-by": "publisher",
+      "first-page": "2517",
+      "journal-title": "Mol Cell Biol",
+      "key": "2669_CR12",
+      "unstructured": "Gamper AM, Roeder RG (2008) Multivalent binding of p53 to the STAGA complex mediates coactivator recruitment after UV damage. Mol Cell Biol 28:2517–2527",
+      "volume": "28",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1128/MCB.00315-08",
+      "author": "AM Gamper",
+      "doi-asserted-by": "publisher",
+      "first-page": "266",
+      "journal-title": "Mol Cell Biol",
+      "key": "2669_CR11",
+      "unstructured": "Gamper AM, Kim J, Roeder RG (2009) The STAGA subunit ADA2b is an important regulator of human GCN5 catalysis. Mol Cell Biol 29:266–280",
+      "volume": "29",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41431-023-01495-6",
+      "doi-asserted-by": "crossref",
+      "key": "2669_CR3",
+      "unstructured": "Haque B, Cheerie D, Birkadze S, et al (2024) Estimating the proportion of nonsense variants undergoing the newly described phenomenon of manufactured splice rescue. Eur J Hum Genet 32:238–242"
+    },
+    {
+      "DOI": "10.1016/0092-8674(95)90028-4",
+      "author": "KA Henning",
+      "doi-asserted-by": "publisher",
+      "first-page": "555",
+      "journal-title": "Cell",
+      "key": "2669_CR13",
+      "unstructured": "Henning KA, Li L, Iyer N et al (1995) The Cockayne syndrome group A gene encodes a WD repeat protein that interacts with CSB protein and a subunit of RNA polymerase II TFIIH. Cell 82:555–564",
+      "volume": "82",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1101/gad.255109.114",
+      "author": "CL Hirsch",
+      "doi-asserted-by": "publisher",
+      "first-page": "803",
+      "journal-title": "Genes Dev",
+      "key": "2669_CR14",
+      "unstructured": "Hirsch CL, Coban Akdemir Z, Wang L et al (2015) Myc and SAGA rewire an alternative splicing network during early somatic cell reprogramming. Genes Dev 29:803–816",
+      "volume": "29",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa241",
+      "author": "M Holtgrewe",
+      "doi-asserted-by": "publisher",
+      "first-page": "W162",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2669_CR15",
+      "unstructured": "Holtgrewe M, Stolpe O, Nieminen M et al (2020) VarFish: comprehensive DNA variant analysis for diagnostics and research. Nucleic Acids Res 48:W162–W169",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/humu.22531",
+      "author": "M Jäger",
+      "doi-asserted-by": "publisher",
+      "first-page": "548",
+      "journal-title": "Hum Mutat",
+      "key": "2669_CR16",
+      "unstructured": "Jäger M, Wang K, Bauer S et al (2014) Jannovar: a java library for exome annotation. Hum Mutat 35:548–555",
+      "volume": "35",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.lpm.2021.104074",
+      "author": "I Jéru",
+      "doi-asserted-by": "publisher",
+      "first-page": "104074",
+      "journal-title": "Presse Med",
+      "key": "2669_CR17",
+      "unstructured": "Jéru I (2021) Genetics of lipodystrophy syndromes. Presse Med 50:104074",
+      "volume": "50",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "2669_CR18",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G et al (2020) The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 581:434–443",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.2892",
+      "author": "M Kircher",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "journal-title": "Nat Genet",
+      "key": "2669_CR19",
+      "unstructured": "Kircher M, Witten DM, Jain P et al (2014) A general framework for estimating the relative pathogenicity of human genetic variants. Nat Genet 46:310–315",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.gim.2022.05.004",
+      "author": "U Kornak",
+      "doi-asserted-by": "publisher",
+      "first-page": "1927",
+      "journal-title": "Genet Med",
+      "key": "2669_CR20",
+      "unstructured": "Kornak U, Saha N, Keren B et al (2022) Alternative splicing of BUD13 determines the severity of a developmental disorder with lipodystrophy and progeroid features. Genet Med 24:1927–1940",
+      "volume": "24",
+      "year": "2022"
+    },
+    {
+      "author": "D Lessel",
+      "first-page": "489",
+      "journal-title": "Dtsch Arztebl Int",
+      "key": "2669_CR21",
+      "unstructured": "Lessel D, Kubisch C (2019) Hereditary syndromes with signs of premature aging. Dtsch Arztebl Int 116:489–496",
+      "volume": "116",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00439-018-1957-1",
+      "author": "D Lessel",
+      "doi-asserted-by": "publisher",
+      "first-page": "921",
+      "journal-title": "Hum Genet",
+      "key": "2669_CR22",
+      "unstructured": "Lessel D, Ozel AB, Campbell SE et al (2018) Analyses of LMNA-negative juvenile progeroid cases confirms biallelic POLR3A mutations in Wiedemann-Rautenstrauch-Like syndrome and expands the phenotypic spectrum of PYCR1 mutations. Hum Genet 137:921–939",
+      "volume": "137",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt656",
+      "author": "Y Liao",
+      "doi-asserted-by": "publisher",
+      "first-page": "923",
+      "journal-title": "Bioinformatics",
+      "key": "2669_CR23",
+      "unstructured": "Liao Y, Smyth GK, Shi W (2014) featureCounts: an efficient general purpose program for assigning sequence reads to genomic features. Bioinformatics 30:923–930",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1074/jbc.M211795200",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "20405",
+      "journal-title": "J Biol Chem",
+      "key": "2669_CR24",
+      "unstructured": "Liu X, Tesfai J, Evrard YA et al (2003) c-Myc transformation domain recruits the human STAGA complex and requires TRRAP and GCN5 acetylase activity for transcription activation. J Biol Chem 278:20405–20412",
+      "volume": "278",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1128/MCB.01402-07",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "108",
+      "journal-title": "Mol Cell Biol",
+      "key": "2669_CR25",
+      "unstructured": "Liu X, Vorontchikhina M, Wang Y-L et al (2008) STAGA recruits Mediator to the MYC oncoprotein to stimulate transcription and cell proliferation. Mol Cell Biol 28:108–121",
+      "volume": "28",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/s13059-014-0550-8",
+      "author": "MI Love",
+      "doi-asserted-by": "publisher",
+      "first-page": "550",
+      "journal-title": "Genome Biol",
+      "key": "2669_CR26",
+      "unstructured": "Love MI, Huber W, Anders S (2014) Moderated estimation of Fold change and dispersion for RNA-seq data with DESeq2. Genome Biol 15:550",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1128/MCB.21.20.6782-6795.2001",
+      "author": "E Martinez",
+      "doi-asserted-by": "publisher",
+      "first-page": "6782",
+      "journal-title": "Mol Cell Biol",
+      "key": "2669_CR27",
+      "unstructured": "Martinez E, Palhan VB, Tjernberg A et al (2001) Human STAGA complex is a chromatin-acetylating transcription coactivator that interacts with pre-mRNA splicing and DNA damage-binding factors in vivo. Mol Cell Biol 21:6782–6795",
+      "volume": "21",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1101/gr.107524.110",
+      "author": "A McKenna",
+      "doi-asserted-by": "publisher",
+      "first-page": "1297",
+      "journal-title": "Genome Res",
+      "key": "2669_CR28",
+      "unstructured": "McKenna A, Hanna M, Banks E et al (2010) The genome analysis Toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Res 20:1297–1303",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1128/MCB.01076-08",
+      "author": "Z Nagy",
+      "doi-asserted-by": "publisher",
+      "first-page": "1649",
+      "journal-title": "Mol Cell Biol",
+      "key": "2669_CR29",
+      "unstructured": "Nagy Z, Riss A, Romier C et al (2009) The human SPT20-containing SAGA complex plays a direct role in the regulation of endoplasmic reticulum stress-induced genes. Mol Cell Biol 29:1649–1660",
+      "volume": "29",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/jhg.2013.107",
+      "author": "T Nolis",
+      "doi-asserted-by": "publisher",
+      "first-page": "16",
+      "journal-title": "J Hum Genet",
+      "key": "2669_CR30",
+      "unstructured": "Nolis T (2014) Exploring the pathophysiology behind the more common genetic and acquired lipodystrophies. J Hum Genet 59:16–23",
+      "volume": "59",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2018-105528",
+      "author": "S Paolacci",
+      "doi-asserted-by": "publisher",
+      "first-page": "837",
+      "journal-title": "J Med Genet",
+      "key": "2669_CR31",
+      "unstructured": "Paolacci S, Li Y, Agolini E et al (2018) Specific combinations of biallelic POLR3A variants cause Wiedemann-Rautenstrauch syndrome. J Med Genet 55:837–846",
+      "volume": "55",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/S0960-9822(00)00610-2",
+      "author": "TT Paull",
+      "doi-asserted-by": "publisher",
+      "first-page": "886",
+      "journal-title": "Curr Biol",
+      "key": "2669_CR32",
+      "unstructured": "Paull TT, Rogakou EP, Yamazaki V et al (2000) A critical role for histone H2AX in recruitment of repair factors to nuclear foci after DNA damage. Curr Biol 10:886–895",
+      "volume": "10",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1038/nprot.2013.143",
+      "author": "FA Ran",
+      "doi-asserted-by": "publisher",
+      "first-page": "2281",
+      "journal-title": "Nat Protoc",
+      "key": "2669_CR33",
+      "unstructured": "Ran FA, Hsu PD, Wright J et al (2013) Genome engineering using the CRISPR-Cas9 system. Nat Protoc 8:2281–2308",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nbt.1754",
+      "author": "JT Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Nat Biotechnol",
+      "key": "2669_CR34",
+      "unstructured": "Robinson JT, Thorvaldsdóttir H, Winckler W et al (2011) Integrative genomics viewer. Nat Biotechnol 29:24–26",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1111/cge.13837",
+      "author": "F Schnabel",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "journal-title": "Clin Genet",
+      "key": "2669_CR35",
+      "unstructured": "Schnabel F, Kornak U, Wollnik B (2021) Premature aging disorders: a clinical and genetic compendium. Clin Genet 99:3–28",
+      "volume": "99",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nmeth.2890",
+      "author": "JM Schwarz",
+      "doi-asserted-by": "publisher",
+      "first-page": "361",
+      "journal-title": "Nat Methods",
+      "key": "2669_CR36",
+      "unstructured": "Schwarz JM, Cooper DN, Schuelke M, Seelow D (2014) MutationTaster2: mutation prediction for the deep-sequencing age. Nat Methods 11:361–362",
+      "volume": "11",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1101/gr.7.10.1006",
+      "author": "S Sepehri",
+      "doi-asserted-by": "publisher",
+      "first-page": "1006",
+      "journal-title": "Genome Res",
+      "key": "2669_CR37",
+      "unstructured": "Sepehri S, Hernandez N (1997) The largest subunit of human RNA polymerase III is closely related to the largest subunit of yeast and trypanosome RNA polymerase III. Genome Res 7:1006–1019",
+      "volume": "7",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2019.03.025",
+      "author": "D Seruggia",
+      "doi-asserted-by": "publisher",
+      "first-page": "1148",
+      "journal-title": "Mol Cell",
+      "key": "2669_CR38",
+      "unstructured": "Seruggia D, Oti M, Tripathi P et al (2019) TAF5L and TAF6L maintain Self-Renewal of embryonic stem cells via the MYC Regulatory Network. Mol Cell 74:1148–1163e7",
+      "volume": "74",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/ijc.30763",
+      "author": "C Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "540",
+      "journal-title": "Int J Cancer",
+      "key": "2669_CR39",
+      "unstructured": "Shen C, Liu Y, Shi S et al (2017) Long-distance interaction of the integrated HPV fragment with MYC gene and 8q24.22 region upregulating the allele-specific MYC expression in HeLa cells. Int J Cancer 141:540–548",
+      "volume": "141",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/humu.22844",
+      "author": "N Sobreira",
+      "doi-asserted-by": "publisher",
+      "first-page": "928",
+      "journal-title": "Hum Mutat",
+      "key": "2669_CR40",
+      "unstructured": "Sobreira N, Schiettecatte F, Valle D, Hamosh A (2015) GeneMatcher: a matching tool for connecting investigators with an interest in the same gene. Hum Mutat 36:928–930",
+      "volume": "36",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1128/MCB.25.10.4092-4104.2005",
+      "author": "E Soutoglou",
+      "doi-asserted-by": "publisher",
+      "first-page": "4092",
+      "journal-title": "Mol Cell Biol",
+      "key": "2669_CR41",
+      "unstructured": "Soutoglou E, Demény MA, Scheer E et al (2005) The nuclear import of TAF10 is regulated by one of its three histone Fold domain-containing interaction partners. Mol Cell Biol 25:4092–4104",
+      "volume": "25",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2021.110062",
+      "author": "PM Switonski",
+      "doi-asserted-by": "publisher",
+      "first-page": "110062",
+      "journal-title": "Cell Rep",
+      "key": "2669_CR42",
+      "unstructured": "Switonski PM, Delaney JR, Bartelt LC et al (2021) Altered H3 histone acetylation impairs high-fidelity DNA repair to promote cerebellar degeneration in spinocerebellar ataxia type 7. Cell Rep 37:110062",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nsmb.2902",
+      "author": "JY Tan",
+      "doi-asserted-by": "publisher",
+      "first-page": "955",
+      "journal-title": "Nat Struct Mol Biol",
+      "key": "2669_CR43",
+      "unstructured": "Tan JY, Vance KW, Varela MA et al (2014) Cross-talking noncoding RNAs contribute to cell-specific neurodegeneration in SCA7. Nat Struct Mol Biol 21:955–961",
+      "volume": "21",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1080/10409230600648736",
+      "author": "MC Thomas",
+      "doi-asserted-by": "publisher",
+      "first-page": "105",
+      "journal-title": "Crit Rev Biochem Mol Biol",
+      "key": "2669_CR44",
+      "unstructured": "Thomas MC, Chiang C-M (2006) The general transcription machinery and general cofactors. Crit Rev Biochem Mol Biol 41:105–178",
+      "volume": "41",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.ccell.2015.06.001",
+      "author": "C Topham",
+      "doi-asserted-by": "publisher",
+      "first-page": "129",
+      "journal-title": "Cancer Cell",
+      "key": "2669_CR45",
+      "unstructured": "Topham C, Tighe A, Ly P et al (2015) MYC is a major determinant of mitotic cell fate. Cancer Cell 28:129–140",
+      "volume": "28",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-023-01373-3",
+      "author": "N Wagner",
+      "doi-asserted-by": "publisher",
+      "first-page": "861",
+      "journal-title": "Nat Genet",
+      "key": "2669_CR46",
+      "unstructured": "Wagner N, Çelik MH, Hölzlwimmer FR et al (2023) Aberrant splicing prediction across human tissues. Nat Genet 55:861–870",
+      "volume": "55",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.10.010",
+      "author": "JA Wambach",
+      "doi-asserted-by": "publisher",
+      "first-page": "968",
+      "journal-title": "Am J Hum Genet",
+      "key": "2669_CR47",
+      "unstructured": "Wambach JA, Wegner DJ, Patni N et al (2018) Bi-allelic POLR3A loss-of-function variants cause autosomal-recessive Wiedemann-Rautenstrauch Syndrome. Am J Hum Genet 103:968–975",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkp108",
+      "author": "I Weidenfeld",
+      "doi-asserted-by": "publisher",
+      "first-page": "e50",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2669_CR48",
+      "unstructured": "Weidenfeld I, Gossen M, Löw R et al (2009) Inducible expression of coding and inhibitory RNAs from retargetable genomic loci. Nucleic Acids Res 37:e50–e50",
+      "volume": "37",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.conb.2004.01.003",
+      "author": "CG Woods",
+      "doi-asserted-by": "publisher",
+      "first-page": "112",
+      "journal-title": "Curr Opin Neurobiol",
+      "key": "2669_CR49",
+      "unstructured": "Woods CG (2004) Human microcephaly. Curr Opin Neurobiol 14:112–117",
+      "volume": "14",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1186/s13052-021-01112-6",
+      "author": "S-W Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "160",
+      "journal-title": "Ital J Pediatr",
+      "key": "2669_CR50",
+      "unstructured": "Wu S-W, Li L, Feng F et al (2021) Whole-exome sequencing reveals POLR3B variants associated with progeria-related Wiedemann-Rautenstrauch syndrome. Ital J Pediatr 47:160",
+      "volume": "47",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/sj.emboj.7600138",
+      "author": "T Yamada",
+      "doi-asserted-by": "publisher",
+      "first-page": "1792",
+      "journal-title": "EMBO J",
+      "key": "2669_CR51",
+      "unstructured": "Yamada T, Mizuno K-I, Hirota K et al (2004) Roles of histone acetylation and chromatin remodeling factor in a meiotic recombination hotspot. EMBO J 23:1792–1803",
+      "volume": "23",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1126/science.272.5259.258",
+      "author": "CE Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "258",
+      "journal-title": "Science",
+      "key": "2669_CR52",
+      "unstructured": "Yu CE, Oshima J, Fu YH et al (1996) Positional cloning of the Werner’s syndrome gene. Science 272:258–262",
+      "volume": "272",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1016/j.bbagrm.2014.03.017",
+      "author": "N Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "395",
+      "journal-title": "Biochim Biophys Acta",
+      "key": "2669_CR53",
+      "unstructured": "Zhang N, Ichikawa W, Faiola F et al (2014) MYC interacts with the human STAGA coactivator complex via multivalent contacts with the GCN5 and TRRAP subunits. Biochim Biophys Acta 1839:395–405",
+      "volume": "1839",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2007.12.011",
+      "author": "Y Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "92",
+      "journal-title": "Mol Cell",
+      "key": "2669_CR54",
+      "unstructured": "Zhao Y, Lang G, Ito S et al (2008) A TFTC/STAGA module mediates histone H2A and H2B deubiquitination, coactivates nuclear receptors, and counteracts heterochromatin silencing. Mol Cell 29:92–101",
+      "volume": "29",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz447",
+      "author": "J Zyla",
+      "doi-asserted-by": "publisher",
+      "first-page": "5146",
+      "journal-title": "Bioinformatics",
+      "key": "2669_CR55",
+      "unstructured": "Zyla J, Marczyk M, Domaszewska T et al (2019) Gene set enrichment for reproducible science: comparison of CERNO and eight other algorithms. Bioinformatics 35:5146–5154",
+      "volume": "35",
+      "year": "2019"
+    }
+  ],
+  "reference-count": 55,
+  "references-count": 55,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-024-02669-y"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum. Genet."
+  ],
+  "source": "Crossref",
+  "title": [
+    "Loss-of-function variants affecting the STAGA complex component SUPT7L cause a developmental disorder with generalized lipodystrophy"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

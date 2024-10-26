@@ -1,0 +1,475 @@
+{
+  "DOI": "10.1002/gepi.21846",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21846",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eAllele‐specific expression (ASE) studies have wide‐ranging implications for genome biology and medicine. Whole transcriptome RNA sequencing (RNA‐Seq) has emerged as a genome‐wide tool for identifying ASE, but suffers from mapping bias favoring reference alleles. Two categories of methods are adopted nowadays, to reduce the effect of mapping bias on ASE identification—normalizing RNA allelic ratio with the parallel genomic allelic ratio (pDNAar) and modifying reference genome to make reads carrying both alleles with the same chance to be mapped (mREF). We compared the sensitivity and specificity of both methods with simulated data, and demonstrated that the pDNAar, though ideally practical, was lower in sensitivity, because of its lower mapping rate of reads carrying nonreference (alternative) alleles, although mREF achieved higher sensitivity and specificity for its efficiency in mapping reads carrying both alleles. Application of these two methods in real sequencing data showed that mREF were able to identify more ASE loci because of its higher mapping efficiency, and able to correcting some seemly incorrect ASE loci identified by pDNAar due to the inefficiency in mapping reads carrying alternative alleles of pDNAar. Our study provides useful information for RNA sequencing data processing in the identification of ASE.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21846"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Key Laboratory of Systems Biology Shanghai Institutes for Biological Sciences Chinese Academic of Science  Shanghai P. R. China"
+        },
+        {
+          "name": "University of Chinese Academic of Science  Beijing P. R. China"
+        }
+      ],
+      "family": "Liu",
+      "given": "Zhi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Key Laboratory of Systems Biology Shanghai Institutes for Biological Sciences Chinese Academic of Science  Shanghai P. R. China"
+        },
+        {
+          "name": "School of Biotechnology East China University of Science and Technology  Shanghai P. R. China"
+        }
+      ],
+      "family": "Yang",
+      "given": "Jing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "School of Life Sciences and Biotechnology Shanghai Jiao Tong University  Shanghai P. R. China"
+        }
+      ],
+      "family": "Xu",
+      "given": "Huayong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Key Laboratory of Systems Biology Shanghai Institutes for Biological Sciences Chinese Academic of Science  Shanghai P. R. China"
+        },
+        {
+          "name": "University of Chinese Academic of Science  Beijing P. R. China"
+        }
+      ],
+      "family": "Li",
+      "given": "Chao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Key Laboratory of Systems Biology Shanghai Institutes for Biological Sciences Chinese Academic of Science  Shanghai P. R. China"
+        },
+        {
+          "name": "Shanghai Centre for Bioinformation Technology  Shanghai P. R. China"
+        }
+      ],
+      "family": "Wang",
+      "given": "Zhen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Shanghai Centre for Bioinformation Technology  Shanghai P. R. China"
+        }
+      ],
+      "family": "Li",
+      "given": "Yuanyuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Key Laboratory of Systems Biology Shanghai Institutes for Biological Sciences Chinese Academic of Science  Shanghai P. R. China"
+        },
+        {
+          "name": "Department of Genetics Albert Einstein College of Medicine  New York United States of America"
+        }
+      ],
+      "family": "Dong",
+      "given": "Xiao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Key Laboratory of Systems Biology Shanghai Institutes for Biological Sciences Chinese Academic of Science  Shanghai P. R. China"
+        },
+        {
+          "name": "School of Life Sciences and Biotechnology Shanghai Jiao Tong University  Shanghai P. R. China"
+        },
+        {
+          "name": "Shanghai Centre for Bioinformation Technology  Shanghai P. R. China"
+        },
+        {
+          "name": "School of Life Science and Technology Shanghai Tongji University  Shanghai P. R. China"
+        }
+      ],
+      "family": "Li",
+      "given": "Yixue",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2014,
+        9,
+        2
+      ]
+    ],
+    "date-time": "2014-09-02T16:54:59Z",
+    "timestamp": 1409676899000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2023-10-05T12:42:34Z",
+    "timestamp": 1696509754000
+  },
+  "funder": [
+    {
+      "award": [
+        "KSCX2-YW-R-112"
+      ],
+      "name": "Knowledge Innovation Program of the Chinese Academy of Sciences"
+    },
+    {
+      "DOI": "10.13039/501100012166",
+      "award": [
+        "2011CB910204"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Basic Research Program of China"
+    },
+    {
+      "DOI": "10.13039/501100012166",
+      "award": [
+        "2010CB529200"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Basic Research Program of China"
+    },
+    {
+      "award": [
+        "2012CB316501"
+      ],
+      "name": "National Key Basic Research Program"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T14:40:05Z",
+    "timestamp": 1696603205625
+  },
+  "is-referenced-by-count": 10,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2014,
+        9,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            2
+          ]
+        ],
+        "date-time": "2014-09-02T00:00:00Z",
+        "timestamp": 1409616000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21846",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21846",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "591-598",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2014,
+        9,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2014,
+        9,
+        2
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2014,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1186/gm56",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1101/gr.073254.107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1126/science.1182213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1146/annurev.genom.6.080604.162350",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1038/nrg2537",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1038/ng992",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1186/1471-2156-11-25",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1101/gr.4023805",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1111/j.1755-0998.2011.03024.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1093/molbev/msr318",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddp473",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1101/gr.6028507",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1186/gb-2009-10-3-r25",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1101/gr.102491.109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1038/nature08903",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1016/j.tig.2005.06.008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1111/1755-0998.12110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1038/nrg2815",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddi420",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1038/nature08872",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/msb.2011.54",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1093/nar/29.1.308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1101/gr.119784.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1038/ng0695-224",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1139/G10-103",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1093/nar/gks425",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkq603",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1534/genetics.111.130088",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1534/genetics.107.082032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1126/science.1072545",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.1357",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    }
+  ],
+  "reference-count": 34,
+  "references-count": 34,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21846"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Comparing Computational Methods for Identification of Allele‐Specific Expression based on Next Generation Sequencing Data"
+  ],
+  "type": "journal-article",
+  "volume": "38"
+}

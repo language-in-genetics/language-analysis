@@ -1,0 +1,650 @@
+{
+  "DOI": "10.1002/gepi.21892",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21892",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eAdvances in exome sequencing and the development of exome genotyping arrays are enabling explorations of association between rare coding variants and complex traits. To ensure power for these rare variant analyses, a variety of association tests that group variants by gene or functional unit have been proposed. Here, we extend these tests to family‐based studies. We develop family‐based burden tests, variable frequency threshold tests and sequence kernel association tests. Through simulations, we compare the performance of different tests. We describe situations where family‐based studies provide greater power than studies of unrelated individuals to detect rare variants associated with moderate to large changes in trait values. Broadly speaking, we find that when sample sizes are limited and only a modest fraction of all trait‐associated variants can be identified, family samples are more powerful. Finally, we illustrate our approach by analyzing the relationship between coding variants and levels of high‐density lipoprotein (HDL) cholesterol in 11,556 individuals from the HUNT and SardiNIA studies, demonstrating association for coding variants in the \u003cjats:italic\u003eAPOC3, CETP, LIPC, LIPG\u003c/jats:italic\u003e, and \u003cjats:italic\u003eLPL\u003c/jats:italic\u003e genes and illustrating the value of family samples, meta‐analysis, and gene‐level tests. Our methods are implemented in freely available C++ code.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21892"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Center for Statistical Genetics University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Feng",
+      "given": "Shuang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Center for Statistical Genetics University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        },
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica (IRGB) Consiglio Nazionale delle Ricerche  Monserrato Italy"
+        }
+      ],
+      "family": "Pistis",
+      "given": "Giorgio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Cardiovascular Medicine Department of Internal Medicine University of Michigan  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Zhang",
+      "given": "He",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Center for Statistical Genetics University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Zawistowski",
+      "given": "Matthew",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica (IRGB) Consiglio Nazionale delle Ricerche  Monserrato Italy"
+        }
+      ],
+      "family": "Mulas",
+      "given": "Antonella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica (IRGB) Consiglio Nazionale delle Ricerche  Monserrato Italy"
+        }
+      ],
+      "family": "Zoledziewska",
+      "given": "Magdalena",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health and General Practice HUNT Research Centre Norwegian University of Science and Technology  Levanger Norway"
+        },
+        {
+          "name": "St. Olavs Hospital Trondheim University Hospital  Trondheim Norway"
+        }
+      ],
+      "family": "Holmen",
+      "given": "Oddgeir L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica (IRGB) Consiglio Nazionale delle Ricerche  Monserrato Italy"
+        }
+      ],
+      "family": "Busonero",
+      "given": "Fabio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica (IRGB) Consiglio Nazionale delle Ricerche  Monserrato Italy"
+        }
+      ],
+      "family": "Sanna",
+      "given": "Serena",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health and General Practice HUNT Research Centre Norwegian University of Science and Technology  Levanger Norway"
+        },
+        {
+          "name": "Department of Medicine Levanger Hospital Nord‐Trøndelag Health Trust  Levanger Norway"
+        }
+      ],
+      "family": "Hveem",
+      "given": "Kristian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Cardiovascular Medicine Department of Internal Medicine University of Michigan  Ann Arbor Michigan United States of America"
+        },
+        {
+          "name": "Department of Computational Medicine and Bioinformatics University of Michigan  Ann Arbor Michigan United States of America"
+        },
+        {
+          "name": "Department of Human Genetics University of Michigan  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Willer",
+      "given": "Cristen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Istituto di Ricerca Genetica e Biomedica (IRGB) Consiglio Nazionale delle Ricerche  Monserrato Italy"
+        }
+      ],
+      "family": "Cucca",
+      "given": "Francesco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health Sciences College of Medicine Penn State University Hershey  Pennsylvania United States of America"
+        }
+      ],
+      "family": "Liu",
+      "given": "Dajiang J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Center for Statistical Genetics University of Michigan School of Public Health  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Abecasis",
+      "given": "Gonçalo R.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2015,
+        3,
+        4
+      ]
+    ],
+    "date-time": "2015-03-04T16:04:26Z",
+    "timestamp": 1425485066000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T06:57:36Z",
+    "timestamp": 1696402656000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "5R01HG007022"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "5R01HL109946"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "5R01HL117626"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:55:33Z",
+    "timestamp": 1709254533175
+  },
+  "is-referenced-by-count": 14,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2015,
+        3,
+        4
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2015,
+            3,
+            4
+          ]
+        ],
+        "date-time": "2015-03-04T00:00:00Z",
+        "timestamp": 1425427200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21892",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21892",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "227-238",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2015,
+        3,
+        4
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2015,
+        3,
+        4
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        5
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1086/302698",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1038/sj.ejhg.5200594",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1038/ng786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1038/nature09534",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1038/nature11632",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1038/ng1161",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1534/genetics.104.030171",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1214/09-STS307",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1086/521580",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.2307/2346911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0048495",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1038/nature11690",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.2307/1390838",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1019276108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "key": "e_1_2_6_17_1",
+      "unstructured": "HanB.2013.A general framework for meta‐analyzing dependent studies with overlapping subjects in association mapping.http://arxiv.org/abs/1304.8045"
+    },
+    {
+      "DOI": "10.1038/ng.2926",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1093/ije/dys232",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/18.2.337",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1038/ng.548",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1038/ng.2303",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1002/1098-2272(2000)19:1 \u003c::AID-GEPI6\u003e3.0.CO;2-M",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1038/nrg1839",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1016/S0065-2660(07)00410-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4757-2739-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.01.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.05.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.11.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.07.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1093/biomet/asq006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.1681",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1038/ng.2852",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1016/j.csda.2008.11.025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1186/gb-2011-12-9-r84",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1126/science.1217876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1038/nature07331",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1038/nrg2989",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2014.216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_46_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_47_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21776",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_48_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002198",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_49_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_50_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21676",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_51_1"
+    },
+    {
+      "DOI": "10.1126/science.1142382",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_52_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0099407",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_53_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt280",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_54_1"
+    },
+    {
+      "DOI": "10.1126/science.1219240",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_55_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq340",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_56_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_57_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21813",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_58_1"
+    },
+    {
+      "DOI": "10.1038/ng.2310",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_59_1"
+    }
+  ],
+  "reference-count": 58,
+  "references-count": 58,
+  "relation": {
+    "has-review": [
+      {
+        "asserted-by": "object",
+        "id": "10.3410/f.725726003.793510833",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21892"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Methods for Association Analysis and Meta‐Analysis of Rare Variants in Families"
+  ],
+  "type": "journal-article",
+  "volume": "39"
+}

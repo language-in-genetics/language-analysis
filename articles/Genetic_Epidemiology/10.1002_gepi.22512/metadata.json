@@ -1,0 +1,404 @@
+{
+  "DOI": "10.1002/gepi.22512",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22512",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\u003cjats:title\u003eBackground\u003c/jats:title\u003e\u003cjats:p\u003eMendelian randomization (MR) leverages genetic data as an instrumental variable to provide estimates for the causal effect of an exposure \u003cjats:italic\u003eX\u003c/jats:italic\u003e on a health outcome \u003cjats:italic\u003eY\u003c/jats:italic\u003e that is robust to confounding. Unfortunately, horizontal pleiotropy—the direct association of a genetic variant with multiple phenotypes—is highly prevalent and can easily render a genetic variant an invalid instrument.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eMethods\u003c/jats:title\u003e\u003cjats:p\u003eBuilding on existing work, we propose a simple method for leveraging sex‐specific genetic associations to perform weak and pleiotropy‐robust MR analysis. This is achieved by constructing an MR estimator in which pleiotropy is perfectly removed by cancellation, while placing it within the powerful machinery of the robust adjusted profile score (MR‐RAPS) method. Pleiotropy cancellation has the attractive property that it removes heterogeneity and therefore justifies a statistically efficient fixed effects model. We extend the method from the typical two‐sample summary‐data MR setting to the one‐sample setting by adapting the technique of Collider‐Correction. Simulation studies and applied examples are used to assess how the sex‐stratified MR‐RAPS estimator performs against other common approaches.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eResults\u003c/jats:title\u003e\u003cjats:p\u003eThe sex‐stratified MR‐RAPS method is shown to be robust to pleiotropy even in cases where all genetic variants violated the standard Instrument Strength Independent of Direct Effect assumption. In some cases where the strength of the pleiotropic effect additionally varied by sex (and so perfect cancellation was not achieved), over‐dispersed MR‐RAPS implementations can still consistently estimate the true causal effect. In applied analyses, we investigate the causal effect of waist‐hip ratio (WHR), an important marker of central obesity, on a range of downstream traits. While the conventional approaches suggested paradoxical links between WHR and height and body mass index, the sex‐stratified approach obtained a more realistic null effect. Nonzero effects were also detected for systolic and diastolic blood pressure as well as high‐density and low‐density lipoprotein cholesterol.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eDiscussion\u003c/jats:title\u003e\u003cjats:p\u003eWe provide a simple but attractive method for weak and pleiotropy robust causal estimation of sexually dimorphic traits on downstream outcomes, by combining several existing approaches in a novel fashion.\u003c/jats:p\u003e\u003c/jats:sec\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22512"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2022-03-11"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-11-28"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2023-01-22"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-7173-9967",
+      "affiliation": [
+        {
+          "name": "Exeter Diabetes Group (ExCEED), College of Medicine and Health University of Exeter  Exeter UK"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Karageorgiou",
+      "given": "Vasilios",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Exeter Diabetes Group (ExCEED), College of Medicine and Health University of Exeter  Exeter UK"
+        }
+      ],
+      "family": "Tyrrell",
+      "given": "Jess",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Exeter Diabetes Group (ExCEED), College of Medicine and Health University of Exeter  Exeter UK"
+        }
+      ],
+      "family": "Mckinley",
+      "given": "Trevelyan J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Exeter Diabetes Group (ExCEED), College of Medicine and Health University of Exeter  Exeter UK"
+        }
+      ],
+      "family": "Bowden",
+      "given": "Jack",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        22
+      ]
+    ],
+    "date-time": "2023-01-22T22:28:51Z",
+    "timestamp": 1674426531000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        18
+      ]
+    ],
+    "date-time": "2023-08-18T03:44:59Z",
+    "timestamp": 1692330299000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        9
+      ]
+    ],
+    "date-time": "2023-11-09T14:42:39Z",
+    "timestamp": 1699540959583
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            1,
+            22
+          ]
+        ],
+        "date-time": "2023-01-22T00:00:00Z",
+        "timestamp": 1674345600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22512",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22512",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22512",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "135-151",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        3
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1371/journal.pgen.1009703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21965",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyw220",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.1002/sim.9143",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009783",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1002/sim.7221",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyv080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "DOI": "10.1038/ng.3406",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21758",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.0050052",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1007/s00439-007-0448-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "DOI": "10.1001/jama.2016.21042",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1186/1471-2458-9-88",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyx102",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_15_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddy163",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1186/s12982-018-0083-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddy327",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1001/jamanetworkopen.2018.3788",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1038/nature14132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_20_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0271933",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_21_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyy204",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "DOI": "10.1038/ijo.2015.217",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.1214/20-STS802",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1214/11-STS360",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0099-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005378",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_28_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20398",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_29_1"
+    },
+    {
+      "DOI": "10.1214/19-aos1866",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_30_1"
+    },
+    {
+      "DOI": "10.1214/18-STS692",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    }
+  ],
+  "reference-count": 30,
+  "references-count": 30,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22512"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Weak and pleiotropy robust sex‐stratified Mendelian randomization in the one sample and two sample settings"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "47"
+}

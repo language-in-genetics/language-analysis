@@ -1,0 +1,509 @@
+{
+  "DOI": "10.1002/gepi.22287",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22287",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eWe propose a novel variant set test for rare‐variant association studies, which leverages multiple single‐nucleotide variant (SNV) annotations. Our approach optimizes a convex combination of different sequence kernel association test (SKAT) statistics, where each statistic is constructed from a different annotation and combination weights are optimized through a multiple kernel learning algorithm. The combination test statistic is evaluated empirically through data splitting. In simulations, we find our method preserves type I error at \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22287-math-0001.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22287:gepi22287-math-0001\" /\u003e and has greater power than SKAT(‐O) when SNV weights are not misspecified and sample sizes are large (\u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22287-math-0002.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22287:gepi22287-math-0002\" /\u003e). We utilize our method in the Framingham Heart Study (FHS) to identify SNV sets associated with fasting glucose. While we are unable to detect any genome‐wide significant associations between fasting glucose and 4‐kb windows of rare variants (\u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22287-math-0003.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22287:gepi22287-math-0003\" /\u003e) in 6,419 FHS participants, our method identifies suggestive associations between fasting glucose and rare variants near \u003cjats:italic\u003eROCK2\u003c/jats:italic\u003e (\u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22287-math-0004.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22287:gepi22287-math-0004\" /\u003e) and within \u003cjats:italic\u003eCPLX1\u003c/jats:italic\u003e (\u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22287-math-0005.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22287:gepi22287-math-0005\" /\u003e). These two genes were previously reported to be involved in obesity‐mediated insulin resistance and glucose‐induced insulin secretion by pancreatic beta‐cells, respectively. These findings will need to be replicated in other cohorts and validated by functional genomic studies.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22287"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2019-09-11"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-01-27"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-02-26"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-3056-6924",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University School of Public Health Boston Massachusetts"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Posner",
+      "given": "Daniel C.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "National Heart Lung and Blood Institute's Boston University's Framingham Heart Study Framingham Massachusetts"
+        },
+        {
+          "name": "Section of Computational Biomedicine, Department of Medicine Boston University School of Medicine Boston Massachusetts"
+        }
+      ],
+      "family": "Lin",
+      "given": "Honghuang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of General Internal Medicine, Department of Medicine, Massachusetts General Hospital Harvard Medical School Boston Massachusetts"
+        }
+      ],
+      "family": "Meigs",
+      "given": "James B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Statistics Boston University Boston Massachusetts"
+        }
+      ],
+      "family": "Kolaczyk",
+      "given": "Eric D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University School of Public Health Boston Massachusetts"
+        },
+        {
+          "name": "National Heart Lung and Blood Institute's Boston University's Framingham Heart Study Framingham Massachusetts"
+        }
+      ],
+      "family": "Dupuis",
+      "given": "Josée",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        26
+      ]
+    ],
+    "date-time": "2020-02-26T09:26:20Z",
+    "timestamp": 1582709180000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        6
+      ]
+    ],
+    "date-time": "2023-09-06T19:46:03Z",
+    "timestamp": 1694029563000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "U01 DK078616"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        9
+      ]
+    ],
+    "date-time": "2023-10-09T10:45:15Z",
+    "timestamp": 1696848315039
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        26
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            26
+          ]
+        ],
+        "date-time": "2020-02-26T00:00:00Z",
+        "timestamp": 1582675200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22287",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22287",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22287",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22287",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "352-367",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        26
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        26
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        6
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1242/jcs.01041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1080/01621459.2016.1192039",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1086/522036",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "article-title": "Algorithms for learning kernels based on centered alignment",
+      "author": "Cortes C.",
+      "first-page": "795",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_7_6_1",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1017/CBO9780511801389",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.2307/2346911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.2105/AJPH.41.3.279",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1038/nature11247",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1074/jbc.M117.802074",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1016/j.tem.2015.09.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21993",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.07.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1098/rsta.2015.0202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a112813",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1093/biomet/86.4.929",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1016/j.febslet.2015.03.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2019.01.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "author": "Lumley T.",
+      "key": "e_1_2_7_22_1",
+      "volume-title": "Complex surveys: A guide to analysis using R",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1198/jasa.2009.tm08647",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1017/thg.2017.7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1016/j.mrfmmm.2006.09.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1038/ng.2671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.12.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1038/nature12975",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "key": "e_1_2_7_31_1",
+      "unstructured": "R Core Team(2019).R: A Language and Environment for Statistical Computing. Vienna Austria: R Foundation for Statistical Computing."
+    },
+    {
+      "DOI": "10.1038/ng.3903",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1152/ajpheart.00664.2014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwm021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007530",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1074/jbc.M510954200",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1038/mp.2017.115",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.4310/SII.2015.v8.n4.a8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "key": "e_1_2_7_39_1",
+      "unstructured": "Voorman A. Brody J. Chen H. Lumley T. \u0026Davis B.(2013).seqMeta: An R Package For Meta‐analyzing Region‐based Tests Of Rare DNA Variants. Retrieved fromhttps://CRAN.R‐project.org/package=seqMeta"
+    },
+    {
+      "DOI": "10.1038/ncomms6897",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21715",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkv728",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_43_1"
+    },
+    {
+      "DOI": "10.1111/biom.12684",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.1534/genetics.116.199646",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    }
+  ],
+  "reference-count": 44,
+  "references-count": 44,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22287"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Convex combination sequence kernel association test for rare‐variant studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

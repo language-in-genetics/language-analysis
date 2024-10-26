@@ -1,0 +1,648 @@
+{
+  "DOI": "10.1038/s41431-023-01463-0",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01463-0",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003ePolygenic scores (PGS) for coronary heart disease (CHD) are constructed using GWAS summary statistics for CHD. However, pleiotropy is pervasive in biology and disease-associated variants often share etiologic pathways with multiple traits. Therefore, incorporating GWAS summary statistics of additional traits could improve the performance of PGS for CHD. Using lasso regression models, we developed two multi-PGS for CHD: 1) multiPGS\u003cjats:sub\u003eCHD\u003c/jats:sub\u003e, utilizing GWAS summary statistics for CHD, its risk factors, and other ASCVD as training data and the UK Biobank for tuning, and 2) extendedPGS\u003cjats:sub\u003eCHD\u003c/jats:sub\u003e, using existing PGS for a broader range of traits in the PGS Catalog as training data and the Atherosclerosis Risk in Communities Study (ARIC) cohort for tuning. We evaluated the performance of multiPGS\u003cjats:sub\u003eCHD\u003c/jats:sub\u003e and extendedPGS\u003cjats:sub\u003eCHD\u003c/jats:sub\u003e in the Mayo Clinic Biobank, an independent cohort of 43,578 adults of European ancestry which included 4,479 CHD cases and 39,099 controls. In the Mayo Clinic Biobank, a 1 SD increase in multiPGS\u003cjats:sub\u003eCHD\u003c/jats:sub\u003e and extendedPGS\u003cjats:sub\u003eCHD\u003c/jats:sub\u003e was associated with a 1.66-fold (95% CI: 1.60–1.71) and 1.70-fold (95% CI: 1.64–1.76) increased odds of CHD, respectively, in models that included age, sex, and 10 PCs, whereas an already published PGS for CHD (CHD_PRSCS) increased the odds by 1.50 (95% CI: 1.45–1.56). In the highest deciles of extendedPGS\u003cjats:sub\u003eCHD\u003c/jats:sub\u003e, multiPGS\u003cjats:sub\u003eCHD\u003c/jats:sub\u003e, and CHD_PRSCS, 18.4%, 17.5%, and 16.3% of patients had CHD, respectively.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1463"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "9 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "7 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "13 September 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "26 September 2023"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by the Mayo Institutional Review Board."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Norland",
+      "given": "Kristjan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Schaid",
+      "given": "Daniel J.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6524-3471",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kullo",
+      "given": "Iftikhar J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        26
+      ]
+    ],
+    "date-time": "2023-09-26T08:04:04Z",
+    "timestamp": 1695715444000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        26
+      ]
+    ],
+    "date-time": "2023-09-26T08:04:48Z",
+    "timestamp": 1695715488000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "U01 HG11710",
+        "U01 HG06379",
+        "U01 HG11710"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "U.S. Department of Health \u0026 Human Services | NIH | National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "U01 HG06379",
+        "K24 HL137010"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "U.S. Department of Health \u0026 Human Services | NIH | National Heart, Lung, and Blood Institute"
+    },
+    {
+      "name": "U.S. Department of Health \u0026 Human Services | NIH | National Heart, Lung, and Blood Institute"
+    },
+    {
+      "name": "U.S. Department of Health \u0026 Human Services | NIH | National Human Genome Research Institute"
+    },
+    {
+      "name": "U.S. Department of Health \u0026 Human Services | NIH | National Human Genome Research Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        3
+      ]
+    ],
+    "date-time": "2024-03-03T05:20:58Z",
+    "timestamp": 1709443258671
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        26
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            26
+          ]
+        ],
+        "date-time": "2023-09-26T00:00:00Z",
+        "timestamp": 1695686400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            26
+          ]
+        ],
+        "date-time": "2023-09-26T00:00:00Z",
+        "timestamp": 1695686400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01463-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01463-0",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01463-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        26
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        26
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "author": "AV Khera",
+      "doi-asserted-by": "publisher",
+      "first-page": "1219",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR1",
+      "unstructured": "Khera AV, Chaffin M, Aragam KG, Haas ME, Roselli C, Choi SH, et al. Genome-wide polygenic scores for common diseases identify individuals with risk equivalent to monogenic mutations. Nat Genet. 2018;50:1219–24.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s42003-021-02996-0",
+      "author": "M Tamlander",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Commun Biol",
+      "key": "1463_CR2",
+      "unstructured": "Tamlander M, Mars N, Pirinen M, Widén E, Ripatti S. Integration of questionnaire-based risk factors improves polygenic risk scores for human coronary heart disease and type 2 diabetes. Commun Biol. 2022;5:1–13.",
+      "volume": "5",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.04.002",
+      "author": "O Dikilitas",
+      "doi-asserted-by": "publisher",
+      "first-page": "707",
+      "journal-title": "Am J Hum Genet",
+      "key": "1463_CR3",
+      "unstructured": "Dikilitas O, Schaid DJ, Kosel ML, Carroll RJ, Chute CG, Denny JA, et al. Predictive utility of polygenic risk scores for coronary heart disease in three major racial and ethnic groups. Am J Hum Genet. 2020;106:707–16.",
+      "volume": "106",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/CIR.0000000000001077.",
+      "doi-asserted-by": "publisher",
+      "key": "1463_CR4",
+      "unstructured": "O’Sullivan JW, Raghavan S, Marquez-Luna C, Luzum JA, Damrauer SM, Ashley EA, et al. Polygenic risk scores for cardiovascular disease: A scientific statement from the American Heart Association. Circulation. 0(0):https://doi.org/10.1161/CIR.0000000000001077."
+    },
+    {
+      "DOI": "10.1038/s41576-022-00470-z",
+      "author": "IJ Kullo",
+      "doi-asserted-by": "publisher",
+      "first-page": "524",
+      "journal-title": "Nat Rev Genet",
+      "key": "1463_CR5",
+      "unstructured": "Kullo IJ, Lewis CM, Inouye M, Martin AR, Ripatti S, Chatterjee N. Polygenic scores in biomedical research. Nat Rev Genet. 2022;23:524–32.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0481-0",
+      "author": "K Watanabe",
+      "doi-asserted-by": "publisher",
+      "first-page": "1339",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR6",
+      "unstructured": "Watanabe K, Stringer S, Frei O, Umićević Mirkov M, de Leeuw C, Polderman TJC, et al. A global overview of pleiotropy and genetic architecture in complex traits. Nat Genet. 2019;51:1339–48.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1161/CIRCGEN.119.002862",
+      "author": "NR van Zuydam",
+      "doi-asserted-by": "publisher",
+      "first-page": "e002862",
+      "journal-title": "Circ Genom Precis Med",
+      "key": "1463_CR7",
+      "unstructured": "van Zuydam NR, Stiby A, Abdalla M, Austin E, Dahlström EH, McLachlan S, et al. Genome-wide association study of peripheral artery disease. Circ Genom Precis Med. 2021;14:e002862.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.119.316065",
+      "author": "MO Goodarzi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1526",
+      "journal-title": "Circ Res",
+      "key": "1463_CR8",
+      "unstructured": "Goodarzi MO, Rotter JI. Genetics insights in the relationship between type 2 diabetes and coronary heart disease. Circ Res. 2020;126:1526–48.",
+      "volume": "126",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41576-019-0137-z",
+      "author": "W van Rheenen",
+      "doi-asserted-by": "publisher",
+      "first-page": "567",
+      "journal-title": "Nat Rev Genet",
+      "key": "1463_CR9",
+      "unstructured": "van Rheenen W, Peyrot WJ, Schork AJ, Lee SH, Wray NR. Genetic correlations of polygenic disease traits: from theory to practice. Nat Rev Genet. 2019;20:567–81.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41431-020-00730-8",
+      "author": "SE Ruotsalainen",
+      "doi-asserted-by": "publisher",
+      "first-page": "309",
+      "journal-title": "Eur J Hum Genet",
+      "key": "1463_CR10",
+      "unstructured": "Ruotsalainen SE, Partanen JJ, Cichonska A, Lin J, Benner C, Surakka I, et al. An expanded analysis framework for multivariate GWAS connects inflammatory biomarkers to functional variants and disease. Eur J Hum Genet. 2021;29:309–24.",
+      "volume": "29",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-021-04064-3",
+      "author": "SE Graham",
+      "doi-asserted-by": "publisher",
+      "first-page": "675",
+      "journal-title": "Nature",
+      "key": "1463_CR11",
+      "unstructured": "Graham SE, Clarke SL, Wu KHH, Kanoni S, Zajac GJM, Ramdas S, et al. The power of genetic diversity in genome-wide association studies of lipids. Nature 2021;600:675–9.",
+      "volume": "600",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-017-0009-4",
+      "author": "P Turley",
+      "doi-asserted-by": "publisher",
+      "first-page": "229",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR12",
+      "unstructured": "Turley P, Walters RK, Maghzian O, Okbay A, Lee JJ, Fontana MA, et al. Multi-trait analysis of genome-wide association summary statistics using MTAG. Nat Genet. 2018;50:229–37.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-017-02769-6",
+      "author": "RM Maier",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1463_CR13",
+      "unstructured": "Maier RM, Zhu Z, Lee SH, Trzaskowski M, Ruderfer DM, Stahl EA, et al. Improving genetic prediction by leveraging genetic correlations among human diseases and traits. Nat Commun. 2018;9:989.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41562-019-0566-x",
+      "author": "AD Grotzinger",
+      "doi-asserted-by": "publisher",
+      "first-page": "513",
+      "journal-title": "Nat Hum Behav",
+      "key": "1463_CR14",
+      "unstructured": "Grotzinger AD, Rhemtulla M, de Vlaming R, Ritchie SJ, Mallard TT, Hill WD, et al. Genomic structural equation modelling provides insights into the multivariate genetic architecture of complex traits. Nat Hum Behav. 2019;3:513–25.",
+      "volume": "3",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-019-08535-0",
+      "author": "W Chung",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1463_CR15",
+      "unstructured": "Chung W, Chen J, Turman C, Lindstrom S, Zhu Z, Loh PR, et al. Efficient cross-trait penalized regression increases prediction accuracy in large cohorts using secondary phenotypes. Nat Commun. 2019;10:569.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/mp.2017.163",
+      "author": "E Krapohl",
+      "doi-asserted-by": "publisher",
+      "first-page": "1368",
+      "journal-title": "Mol Psychiatry",
+      "key": "1463_CR16",
+      "unstructured": "Krapohl E, Patel H, Newhouse S, Curtis CJ, von Stumm S, Dale PS, et al. Multi-polygenic score approach to trait prediction. Mol Psychiatry. 2018;23:1368–74.",
+      "volume": "23",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/2022.09.14.22279940v1",
+      "doi-asserted-by": "publisher",
+      "key": "1463_CR17",
+      "unstructured": "Albiñana C, Zhu Z, Schork AJ, Ingason A, Aschard H, Brikell I, et al. Multi-PGS enhances polygenic prediction: weighting 937 polygenic scores [Internet]. medRxiv; 2022 [cited 2022 Sep 24]. p. 2022.09.14.22279940. Available from: https://doi.org/10.1101/2022.09.14.22279940v1."
+    },
+    {
+      "DOI": "10.1093/eurheartj/ehac093",
+      "author": "X Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1702",
+      "journal-title": "Eur Heart J",
+      "key": "1463_CR18",
+      "unstructured": "Lu X, Liu Z, Cui Q, Liu F, Li J, Niu X, et al. A polygenic risk score improves risk stratification of coronary artery disease: a large-scale prospective Chinese cohort study. Eur Heart J. 2022;43:1702–11.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "author": "C Bycroft",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "1463_CR19",
+      "unstructured": "Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, et al. The UK Biobank resource with deep phenotyping and genomic data. Nature 2018;562:203–9.",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a115184",
+      "author": "The Atherosclerosis Risk in Communities (ARIC) Study: design and objectives.",
+      "doi-asserted-by": "crossref",
+      "first-page": "687",
+      "journal-title": "Am J Epidemiol",
+      "key": "1463_CR20",
+      "unstructured": "The Atherosclerosis Risk in Communities (ARIC) Study: design and objectives. The ARIC investigators. Am J Epidemiol 1989;129:687–702.",
+      "volume": "129",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1038/ng.3643",
+      "author": "S McCarthy",
+      "doi-asserted-by": "publisher",
+      "first-page": "1279",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR21",
+      "unstructured": "McCarthy S, Das S, Kretzschmar W, Delaneau O, Wood AR, Teumer A, et al. A reference panel of 64,976 haplotypes for genotype imputation. Nat Genet. 2016;48:1279–83.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ng.3656",
+      "author": "S Das",
+      "doi-asserted-by": "publisher",
+      "first-page": "1284",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR22",
+      "unstructured": "Das S, Forer L, Schönherr S, Sidore C, Locke AE, Kwong A, et al. Next-generation genotype imputation service and methods. Nat Genet. 2016;48:1284–7.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1101/gr.094052.109",
+      "author": "DH Alexander",
+      "doi-asserted-by": "publisher",
+      "first-page": "1655",
+      "journal-title": "Genome Res",
+      "key": "1463_CR23",
+      "unstructured": "Alexander DH, Novembre J, Lange K. Fast model-based estimation of ancestry in unrelated individuals. Genome Res. 2009;19:1655–64.",
+      "volume": "19",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41588-021-01006-7",
+      "author": "JE Horowitz",
+      "doi-asserted-by": "publisher",
+      "first-page": "382",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR24",
+      "unstructured": "Horowitz JE, Kosmicki JA, Damask A, Sharma D, Roberts GHL, Justice AE, et al. Genome-wide analysis provides genetic evidence that ACE2 influences COVID-19 risk and yields risk scores associated with severe disease. Nat Genet. 2022;54:382–92.",
+      "volume": "54",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1101/2022.03.03.22271360v1",
+      "doi-asserted-by": "publisher",
+      "key": "1463_CR25",
+      "unstructured": "Kurki MI, Karjalainen J, Palta P, Sipilä TP, Kristiansson K, Donner K, et al. FinnGen: Unique genetic insights from combining isolated population and national health register data [Internet]. medRxiv; 2022 [cited 2023 Jan 23]. p. 2022.03.03.22271360. Available from: https://doi.org/10.1101/2022.03.03.22271360v1."
+    },
+    {
+      "DOI": "10.1038/s41591-019-0492-5",
+      "author": "D Klarin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1274",
+      "journal-title": "Nat Med",
+      "key": "1463_CR26",
+      "unstructured": "Klarin D, Lynch J, Aragam K, Chaffin M, Assimes TL, Huang J, et al. Genome-wide association study of peripheral artery disease in the Million Veteran Program. Nat Med. 2019;25:1274–9.",
+      "volume": "25",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.120.047544",
+      "author": "D Klarin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1633",
+      "journal-title": "Circulation",
+      "key": "1463_CR27",
+      "unstructured": "Klarin D, Verma SS, Judy R, Dikilitas O, Wolford BN, Paranjpe I, et al. Genetic architecture of abdominal aortic aneurysm in the million veteran program. Circulation 2020;142:1633–46.",
+      "volume": "142",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.3396",
+      "author": "M Nikpay",
+      "doi-asserted-by": "publisher",
+      "first-page": "1121",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR28",
+      "unstructured": "Nikpay M, Goel A, Won HH, Hall LM, Willenborg C, Kanoni S, et al. A comprehensive 1,000 Genomes-based genome-wide association meta-analysis of coronary artery disease. Nat Genet. 2015;47:1121–30.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.xhgg.2022.100136",
+      "author": "F Privé",
+      "doi-asserted-by": "publisher",
+      "first-page": "100136",
+      "journal-title": "Hum Genet Genomics Adv",
+      "key": "1463_CR29",
+      "unstructured": "Privé F, Arbel J, Aschard H, Vilhjálmsson BJ. Identifying and correcting for misspecifications in GWAS summary statistics and polygenic scores. Hum Genet Genomics Adv. 2022;3:100136.",
+      "volume": "3",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq340",
+      "author": "CJ Willer",
+      "doi-asserted-by": "publisher",
+      "first-page": "2190",
+      "journal-title": "Bioinformatics",
+      "key": "1463_CR30",
+      "unstructured": "Willer CJ, Li Y, Abecasis GR. METAL: fast and efficient meta-analysis of genomewide association scans. Bioinformatics 2010;26:2190–1.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41467-019-09718-5",
+      "author": "T Ge",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1463_CR31",
+      "unstructured": "Ge T, Chen CY, Ni Y, Feng YCA, Smoller JW. Polygenic prediction via Bayesian regression and continuous shrinkage priors. Nat Commun. 2019;10:1776.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00783-5",
+      "author": "SA Lambert",
+      "doi-asserted-by": "publisher",
+      "first-page": "420",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR32",
+      "unstructured": "Lambert SA, Gil L, Jupp S, Ritchie SC, Xu Y, Buniello A, et al. The Polygenic Score Catalog as an open database for reproducibility and systematic evaluation. Nat Genet. 2021;53:420–5.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "author": "JH Friedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "J Stat Softw",
+      "key": "1463_CR33",
+      "unstructured": "Friedman JH, Hastie T, Tibshirani R. Regularization paths for generalized linear models via coordinate descent. J Stat Softw. 2010;33:1–22.",
+      "volume": "33",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41588-020-00757-z",
+      "author": "N Sinnott-Armstrong",
+      "doi-asserted-by": "publisher",
+      "first-page": "185",
+      "journal-title": "Nat Genet",
+      "key": "1463_CR34",
+      "unstructured": "Sinnott-Armstrong N, Tanigawa Y, Amar D, Mars N, Benner C, Aguirre M, et al. Genetics of 35 blood and urine biomarkers in the UK Biobank. Nat Genet. 2021;53:185–94.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2023.03.009",
+      "author": "S Zabad",
+      "doi-asserted-by": "publisher",
+      "first-page": "741",
+      "journal-title": "Am J Hum Genet",
+      "key": "1463_CR35",
+      "unstructured": "Zabad S, Gravel S, Li Y. Fast and accurate Bayesian polygenic risk modeling with variational inference. Am J Hum Genet. 2023;110:741–61.",
+      "volume": "110",
+      "year": "2023"
+    }
+  ],
+  "reference-count": 35,
+  "references-count": 35,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01463-0"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A linear weighted combination of polygenic scores for a broad range of traits improves prediction of coronary heart disease"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

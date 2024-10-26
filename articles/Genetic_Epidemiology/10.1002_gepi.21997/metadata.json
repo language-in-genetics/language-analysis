@@ -1,0 +1,487 @@
+{
+  "DOI": "10.1002/gepi.21997",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21997",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eAlthough gene‐environment (G× E) interactions play an important role in many biological systems, detecting these interactions within genome‐wide data can be challenging due to the loss in statistical power incurred by multiple hypothesis correction. To address the challenge of poor power and the limitations of existing multistage methods, we recently developed a screening‐testing approach for G× E interaction detection that combines elastic net penalized regression with joint estimation to support a single omnibus test for the presence of G× E interactions. In our original work on this technique, however, we did not assess type I error control or power and evaluated the method using just a single, small bladder cancer data set. In this paper, we extend the original method in two important directions and provide a more rigorous performance evaluation. First, we introduce a hierarchical false discovery rate approach to formally assess the significance of individual G× E interactions. Second, to support the analysis of truly genome‐wide data sets, we incorporate a score statistic‐based prescreening step to reduce the number of single nucleotide polymorphisms prior to fitting the first stage penalized regression model. To assess the statistical properties of our method, we compare the type I error rate and statistical power of our approach with competing techniques using both simple simulation designs as well as designs based on real disease architectures. Finally, we demonstrate the ability of our approach to identify biologically plausible SNP‐education interactions relative to Alzheimer's disease status using genome‐wide association study data from the Alzheimer's Disease Neuroimaging Initiative (ADNI).\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21997"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Departments of Biomedical Data Science and Genetics Institute for Quantitative Biomedical Sciences Geisel School of Medicine, Dartmouth College Hanover NH 03755 USA"
+        }
+      ],
+      "family": "Frost",
+      "given": "H. Robert",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Neuroimaging and Indiana Alzheimer's Disease Center Department of Radiology and Imaging Sciences Indiana University School of Medicine Indianapolis IN 46202 USA"
+        }
+      ],
+      "family": "Shen",
+      "given": "Li",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Neuroimaging and Indiana Alzheimer's Disease Center Department of Radiology and Imaging Sciences Indiana University School of Medicine Indianapolis IN 46202 USA"
+        }
+      ],
+      "family": "Saykin",
+      "given": "Andrew J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Departments of Biomedical Data Science and Genetics Institute for Quantitative Biomedical Sciences Geisel School of Medicine, Dartmouth College Hanover NH 03755 USA"
+        }
+      ],
+      "family": "Williams",
+      "given": "Scott M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Departments of Biomedical Data Science and Genetics Institute for Quantitative Biomedical Sciences Geisel School of Medicine, Dartmouth College Hanover NH 03755 USA"
+        },
+        {
+          "name": "Division of Informatics Department of Biostatistics and Epidemiology Institute for Biomedical Informatics Perelman School of Medicine University of Pennsylvania Philadelphia PA 19104‐6021 USA"
+        }
+      ],
+      "family": "Moore",
+      "given": "Jason H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "the Alzheimer's Disease Neuroimaging Initiative",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        8,
+        31
+      ]
+    ],
+    "date-time": "2016-08-31T15:49:31Z",
+    "timestamp": 1472658571000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T15:51:22Z",
+    "timestamp": 1696607482000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "LM011360",
+        "LM010098",
+        "LM009012",
+        "EY022300",
+        "GM103506",
+        "GM103534",
+        "U01 AG024904"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000005",
+      "award": [
+        "W81XWH‐12‐2‐0012"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "U.S. Department of Defense"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        7
+      ]
+    ],
+    "date-time": "2024-04-07T13:52:17Z",
+    "timestamp": 1712497937177
+  },
+  "is-referenced-by-count": 19,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        8,
+        31
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            8,
+            31
+          ]
+        ],
+        "date-time": "2016-08-31T00:00:00Z",
+        "timestamp": 1472601600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21997",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21997",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21997",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.21997",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://api.wiley.com/onlinelibrary/chorus/v1/articles/10.1002%2Fgepi.21997",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21997",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "544-557",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        8,
+        31
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        8,
+        31
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2016,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1093/brain/awu035",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.04.017",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1007/s00439-012-1192-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1016/j.neuroscience.2008.07.070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1995.tb02031.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0914005107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1038/ng.3162",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1093/jnci/djr265",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1016/j.pneurobio.2013.06.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1016/j.socscimed.2014.06.049",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1093/biomet/ass044",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1007/s00726-013-1623-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "article-title": "A screening‐testing approach for detecting gene‐environment interactions using sequential penalized and unpenalized multiple logistic regression",
+      "author": "Frost H. R.",
+      "first-page": "183",
+      "journal-title": "Pacific Symposium on Biocomputing",
+      "key": "e_1_2_8_16_1",
+      "volume": "20",
+      "year": "2015"
+    },
+    {
+      "article-title": "The broad impact of TOM40 on neurodegenerative diseases in aging",
+      "author": "Gottschalk W. K.",
+      "first-page": "12",
+      "issue": "1",
+      "journal-title": "Journal of Parkinson's Disease and Alzheimer's Disease",
+      "key": "e_1_2_8_17_1",
+      "volume": "1",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.ajpath.2012.01.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1038/nrg1578",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21756",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1016/j.febslet.2006.01.025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20300",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1002/emmm.201201974",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0709259105",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1186/1471-2350-12-123",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwr367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20569",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwn353",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1016/j.pscychresns.2011.06.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "author": "R Core Team",
+      "key": "e_1_2_8_31_1",
+      "volume-title": "R: A language and environment for statistical computing",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/29.1.308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1016/j.neurad.2013.11.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwk052",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1016/j.jalz.2013.05.1769",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkt1229",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "DOI": "10.1198/016214507000001373",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1002/9783527633654",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21997"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Identifying significant gene‐environment interactions using a combination of screening testing and hierarchical false discovery rate control"
+  ],
+  "type": "journal-article",
+  "volume": "40"
+}

@@ -1,0 +1,335 @@
+{
+  "DOI": "10.1002/gepi.21696",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21696",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIncreasing evidence suggests that rare and generally deleterious genetic variants might have a strong impact on disease risks of not only Mendelian disease, but also many common diseases. However, identifying such rare variants remains challenging, and novel statistical methods and bioinformatic software must be developed. Hence, we have to extensively evaluate various methods under reasonable genetic models. Although there are abundant genomic data, they are not most helpful for the evaluation of the methods because the disease mechanism is unknown. Thus, it is imperative that we simulate genomic data that mimic the real data containing rare variants and that enable us to impose a known disease penetrance model. Although resampling simulation methods have shown their advantages in computational efficiency and in preserving important properties such as linkage disequilibrium (LD) and allele frequency, they still have limitations as we demonstrated. We propose an algorithm that combines a regression‐based imputation with resampling to simulate genetic data with both rare and common variants. Logistic regression model was employed to fit the relationship between a rare variant and its nearby common variants in the 1000 Genomes Project data and then applied to the real data to fill in one rare variant at a time using the fitted logistic model based on common variants. Individuals then were simulated using the real data with imputed rare variants. We compared our method with existing simulators and demonstrated that our method performed well in retaining the real sample properties, such as LD and minor allele frequency, qualitatively.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21696"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale University New Haven Connecticut"
+        }
+      ],
+      "family": "Xu",
+      "given": "Yaji",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics and Epidemiology University of Pennsylvania Philadelphia Pennsylvania"
+        }
+      ],
+      "family": "Wu",
+      "given": "Yinghua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale University New Haven Connecticut"
+        }
+      ],
+      "family": "Song",
+      "given": "Chi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale University New Haven Connecticut"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Heping",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        19
+      ]
+    ],
+    "date-time": "2012-11-19T01:24:56Z",
+    "timestamp": 1353288296000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        30
+      ]
+    ],
+    "date-time": "2023-10-30T10:51:42Z",
+    "timestamp": 1698663102000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        31
+      ]
+    ],
+    "date-time": "2023-10-31T07:42:01Z",
+    "timestamp": 1698738121896
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        17
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            11,
+            17
+          ]
+        ],
+        "date-time": "2012-11-17T00:00:00Z",
+        "timestamp": 1353110400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21696",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21696",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "163-172",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        17
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        17
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nature09534",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1038/ng.f.136",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-5-S9-S100",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1038/nrg2779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1086/302727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1159/000288704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000529",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-5-S9-S102",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm549",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1093/genetics/165.4.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.10.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001156",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1038/ng2088",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-442",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030047",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bti584",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "key": "e_1_2_6_21_1",
+      "unstructured": "BMC Proc 2011 5 Suppl 9 Genetic analysis workshop 17: Unraveling human exome data"
+    },
+    {
+      "DOI": "10.1098/rstb.2005.1691",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1038/nrg795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000477",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr341",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm386",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    }
+  ],
+  "reference-count": 25,
+  "references-count": 25,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21696"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Simulating Realistic Genomic Data With Rare Variants"
+  ],
+  "type": "journal-article",
+  "volume": "37"
+}

@@ -1,0 +1,537 @@
+{
+  "DOI": "10.1002/gepi.22160",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22160",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eRecent research has highlighted the importance of the human microbiome in many human disease and health conditions. Most current microbiome association analyses focus on unrelated samples; such methods are not appropriate for analysis of data collected from more advanced study designs such as longitudinal and pedigree studies, where outcomes can be correlated. Ignoring such correlations can sometimes lead to suboptimal results or even possibly biased conclusions. Thus, new methods to handle correlated outcome data in microbiome association studies are needed. In this paper, we propose the correlated sequence kernel association test (CSKAT) to address such correlations using the linear mixed model. Specifically, random effects are used to account for the outcome correlations and a variance component test is used to examine the microbiome effect. Compared to existing genetic association tests for longitudinal and family samples, we implement a correction procedure to better calibrate the null distribution of the score test statistic to accommodate the small sample size nature of data collected from a typical microbiome study. Comprehensive simulation studies are conducted to demonstrate the validity and efficiency of our method, and we show that CSKAT achieves a higher power than existing methods while correctly controlling the Type I error rate. We also apply our method to a microbiome data set collected from a UK twin study to illustrate its potential usefulness. A free implementation of our method in R software is available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/jchen1981/SSKAT\"\u003ehttps://github.com/jchen1981/SSKAT\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22160"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-04-30"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-07-15"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-09-15"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-9650-143X",
+      "affiliation": [
+        {
+          "name": "Department of Public Health Sciences Pennsylvania State University Hershey Pennsylvania"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Zhan",
+      "given": "Xiang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics Pennsylvania State University University Park Pennsylvania"
+        }
+      ],
+      "family": "Xue",
+      "given": "Lingzhou",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematical Sciences Tsinghua University Beijing China"
+        }
+      ],
+      "family": "Zheng",
+      "given": "Haotian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Plantinga",
+      "given": "Anna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        },
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center Seattle Washington"
+        }
+      ],
+      "family": "Wu",
+      "given": "Michael C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biomedical Statistics and Informatics Mayo Clinic Rochester Minnesota"
+        }
+      ],
+      "family": "Schaid",
+      "given": "Daniel J.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7762-3949",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Johns Hopkins University Baltimore Maryland"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Zhao",
+      "given": "Ni",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biomedical Statistics and Informatics Mayo Clinic Rochester Minnesota"
+        },
+        {
+          "name": "Center for Individualized Medicine Mayo Clinic Rochester Minnesota"
+        }
+      ],
+      "family": "Chen",
+      "given": "Jun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        9,
+        16
+      ]
+    ],
+    "date-time": "2018-09-16T13:12:02Z",
+    "timestamp": 1537103522000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        15
+      ]
+    ],
+    "date-time": "2023-09-15T17:11:02Z",
+    "timestamp": 1694797862000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000009",
+      "award": [
+        "GM065450"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Foundation for the National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        23
+      ]
+    ],
+    "date-time": "2024-03-23T06:37:45Z",
+    "timestamp": 1711175865074
+  },
+  "is-referenced-by-count": 25,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        9,
+        15
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            9,
+            15
+          ]
+        ],
+        "date-time": "2018-09-15T00:00:00Z",
+        "timestamp": 1536969600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22160",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22160",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22160",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22160",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "772-782",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        9,
+        15
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        9,
+        15
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.18637/jss.v067.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_2_1"
+    },
+    {
+      "DOI": "10.1111/1574-6968.12053",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_3_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.f.303",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_4_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0015216",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_5_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_7_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts342",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21934",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_9_1"
+    },
+    {
+      "DOI": "10.1016/j.csda.2009.11.025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_10_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2014.09.053",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_11_1"
+    },
+    {
+      "DOI": "10.1186/s40168-017-0262-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_12_1"
+    },
+    {
+      "DOI": "10.1038/nrmicro2857",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_13_1"
+    },
+    {
+      "DOI": "10.1126/science.1254529",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_14_1"
+    },
+    {
+      "DOI": "10.1146/annurev-statistics-010814-020351",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_15_1"
+    },
+    {
+      "DOI": "10.1890/0012-9658(2001)082[0290:FMMTCD]2.0.CO;2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_16_1"
+    },
+    {
+      "DOI": "10.1191/1471082X05st084oa",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_17_1"
+    },
+    {
+      "DOI": "10.1097/GME.0000000000000904",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_18_1"
+    },
+    {
+      "DOI": "10.1186/s13059-015-0637-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_19_1"
+    },
+    {
+      "DOI": "10.1186/s40168-016-0183-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_20_1"
+    },
+    {
+      "DOI": "10.1186/s40168-017-0239-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_21_1"
+    },
+    {
+      "DOI": "10.1038/nature11450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_23_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21676",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_24_1"
+    },
+    {
+      "DOI": "10.1534/genetics.117.300395",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_25_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw311",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_26_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw804",
+      "article-title": "A general framework for association analysis of microbial communities on a taxonomic tree",
+      "author": "Tang Z.‐Z.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1278",
+      "issue": "9",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_7_1_27_1",
+      "volume": "33",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature07540",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_28_1"
+    },
+    {
+      "DOI": "10.1038/nature06244",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_29_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2011.09.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_30_1"
+    },
+    {
+      "DOI": "10.1038/ismej.2011.109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_31_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_32_1"
+    },
+    {
+      "DOI": "10.1186/s13073-016-0302-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_33_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_34_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx311",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_35_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw500",
+      "article-title": "A novel copy number variants kernel association test with application to autism spectrum disorders studies",
+      "author": "Zhan X.",
+      "doi-asserted-by": "crossref",
+      "first-page": "3603",
+      "issue": "23",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_7_1_36_1",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1111/biom.12684",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_37_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22030",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_38_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22065",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_39_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.04.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_40_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22127",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_41_1"
+    },
+    {
+      "DOI": "10.1186/s12859-018-2057-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_1_42_1"
+    }
+  ],
+  "reference-count": 41,
+  "references-count": 41,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22160"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A small‐sample kernel association test for correlated data with application to microbiome association studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "42"
+}

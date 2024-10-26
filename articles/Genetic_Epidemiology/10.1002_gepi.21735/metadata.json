@@ -1,0 +1,634 @@
+{
+  "DOI": "10.1002/gepi.21735",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21735",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eIdentification of gene‐environment interaction (G × E) is important in understanding the etiology of complex diseases. However, partially due to the lack of power, there have been very few replicated G × E findings compared to the success in marginal association studies. The existing G × E testing methods mainly focus on improving the power for individual markers. In this paper, we took a different strategy and proposed a set‐based gene‐environment interaction test (SBERIA), which can improve the power by reducing the multiple testing burdens and aggregating signals within a set. The major challenge of the signal aggregation within a set is how to tell signals from noise and how to determine the direction of the signals. SBERIA takes advantage of the established correlation screening for G × E to guide the aggregation of genotypes within a marker set. The correlation screening has been shown to be an efficient way of selecting potential G × E candidate SNPs in case‐control studies for complex diseases. Importantly, the correlation screening in case‐control combined samples is independent of the interaction test. With this desirable feature, SBERIA maintains the correct type I error level and can be easily implemented in a regular logistic regression setting. We showed that SBERIA had higher power than benchmark methods in various simulation scenarios, both for common and rare variants. We also applied SBERIA to real genome‐wide association studies (GWAS) data of 10,729 colorectal cancer cases and 13,328 controls and found evidence of interaction between the set of known colorectal cancer susceptibility loci and smoking.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21735"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "family": "Jiao",
+      "given": "Shuo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "family": "Hsu",
+      "given": "Li",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Service de Génétique Médicale CHU Nantes  Nantes France"
+        }
+      ],
+      "family": "Bézieau",
+      "given": "Stéphane",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Clinical Epidemiology and Aging Research German Cancer Research Center  Heidelberg Germany"
+        }
+      ],
+      "family": "Brenner",
+      "given": "Hermann",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Gastroenterology Massachusetts General Hospital and Harvard Medical School  Boston Massachusetts"
+        },
+        {
+          "name": "Channing Division of Network Medicine Brigham and Women's Hospital and Harvard Medical School  Boston Massachusetts"
+        }
+      ],
+      "family": "Chan",
+      "given": "Andrew T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Cancer Epidemiology German Cancer Research Center  Heidelberg Germany"
+        }
+      ],
+      "family": "Chang‐Claude",
+      "given": "Jenny",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology Program University of Hawaii Cancer Center  Honolulu Hawaii"
+        }
+      ],
+      "family": "Le Marchand",
+      "given": "Loic",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Ontario Institute for Cancer Research  Toronto Ontario Canada"
+        }
+      ],
+      "family": "Lemire",
+      "given": "Mathieu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington"
+        },
+        {
+          "name": "School of Public Health University of Washington  Seattle Washington"
+        }
+      ],
+      "family": "Newcomb",
+      "given": "Polly A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine University of Utah Health Sciences Center  Salt Lake City Utah"
+        }
+      ],
+      "family": "Slattery",
+      "given": "Martha L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Division Fred Hutchinson Cancer Research Center  Seattle Washington"
+        },
+        {
+          "name": "School of Public Health University of Washington  Seattle Washington"
+        }
+      ],
+      "family": "Peters",
+      "given": "Ulrike",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        5,
+        29
+      ]
+    ],
+    "date-time": "2013-05-29T20:11:13Z",
+    "timestamp": 1369858273000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T07:37:51Z",
+    "timestamp": 1696577871000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        15
+      ]
+    ],
+    "date-time": "2024-04-15T08:48:12Z",
+    "timestamp": 1713170892788
+  },
+  "is-referenced-by-count": 35,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        5,
+        29
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2013,
+            5,
+            29
+          ]
+        ],
+        "date-time": "2013-05-29T00:00:00Z",
+        "timestamp": 1369785600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21735",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21735",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "452-464",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        5,
+        29
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        5,
+        29
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1159/000085221",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1038/ng.2007.18",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1093/biomet/92.2.399",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1086/509704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwr368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1093/biomet/ass044",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-1-s1-s73",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1038/ng.2293",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20310",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(05)67137-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "key": "e_1_2_6_13_1",
+      "unstructured": "GaudermanJW ZhangP LewingerPJ.2012.Finding GWAS signals in the lower Manhattan by testing GxE interactions. InInternational Genetic Epidemiology Society Annual Conference.Stevenson WA."
+    },
+    {
+      "DOI": "10.1002/gepi.20219",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btg382",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002237",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1159/000288704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1038/ng.151",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0903103106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1038/ng.262",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1038/ng.670",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002177",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1038/ng.2007.41",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20300",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2007.10.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.09.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000481",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwn339",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn641",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.07.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxm015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwr285",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1016/j.mrfmmm.2006.09.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20331",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2007.00953.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20451",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwn353",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20569",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001322",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1007/s00439-011-1055-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2012.12.020",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_46_1"
+    },
+    {
+      "DOI": "10.1002/sim.4780130206",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_47_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_48_1"
+    },
+    {
+      "DOI": "10.1038/ng.687",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_49_1"
+    },
+    {
+      "DOI": "10.1159/000312641",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_50_1"
+    },
+    {
+      "DOI": "10.1086/429838",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_51_1"
+    },
+    {
+      "DOI": "10.1093/ije/13.3.356",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_52_1"
+    },
+    {
+      "DOI": "10.1038/ng.133",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_53_1"
+    },
+    {
+      "DOI": "10.1038/nature02168",
+      "author": "The International HapMap Project",
+      "doi-asserted-by": "crossref",
+      "first-page": "789",
+      "journal-title": "Nature",
+      "key": "e_1_2_6_54_1",
+      "volume": "426",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/ng2085",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_55_1"
+    },
+    {
+      "DOI": "10.1038/ng.111",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_56_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002105",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_57_1"
+    },
+    {
+      "DOI": "10.1086/521558",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_58_1"
+    },
+    {
+      "DOI": "10.1086/373881",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_59_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2008.01176.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_60_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.07.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_61_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20266",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_62_1"
+    },
+    {
+      "DOI": "10.1086/511312",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_63_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.2008.00473.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_64_1"
+    },
+    {
+      "DOI": "10.1086/508346",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_65_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_66_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_67_1"
+    },
+    {
+      "DOI": "10.1038/ng2089",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_68_1"
+    },
+    {
+      "DOI": "10.1086/431243",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_69_1"
+    }
+  ],
+  "reference-count": 68,
+  "references-count": 68,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21735"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "SBERIA: Set‐Based Gene‐Environment Interaction Test for Rare and Common Variants in Complex Diseases"
+  ],
+  "type": "journal-article",
+  "volume": "37"
+}

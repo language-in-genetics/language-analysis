@@ -1,0 +1,830 @@
+{
+  "DOI": "10.1186/s40246-023-00526-z",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00526-z",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eAs one of the most common intestinal inflammatory diseases, celiac disease (CD) is typically characterized by an autoimmune disorder resulting from ingesting gluten proteins. Although the incidence and prevalence of CD have increased over time, the diagnostic methods and treatment options are still limited. Therefore, it is urgent to investigate the potential biomarkers and targeted drugs for CD.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eGene expression data was downloaded from GEO datasets. Differential gene expression analysis was performed to identify the dysregulated immune-related genes. Multiple machine algorithms, including randomForest, SVM-RFE, and LASSO, were used to select the hub immune-related genes (HIGs). The immune-related genes score (IG score) and artificial neural network (ANN) were constructed based on HIGs. Potential drugs targeting HIGs were identified by using the Enrichr platform and molecular docking method.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe identified the dysregulated immune-related genes at a genome-wide level and demonstrated their roles in CD-related immune pathways. The hub genes (\u003cjats:italic\u003eMR1\u003c/jats:italic\u003e, \u003cjats:italic\u003eCCL25\u003c/jats:italic\u003e, and \u003cjats:italic\u003eTNFSF13B\u003c/jats:italic\u003e) were further screened by integrating several machine algorithms. Meanwhile, the CD patients were divided into distinct subtypes with either high- or low-immunoactivity using single-sample gene set enrichment analysis (ssGSEA) and consensus clustering. By constructing IG score based on HIGs, we found that patients with high IG score were mainly attributed to high-immunoactivity subgroups, which suggested a strong link between HIGs and immunoactivity of CD patients. In addition, the novel constructed ANN model showed the sound diagnostic ability of HIGs. Mechanistically, we validated that the HIGs play pivotal roles in regulating CD's immune and inflammatory state. Through targeting the HIGs, we also found potential drugs for anti-CD treatment by using the Enrichr platform and molecular docking method.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThis study unveils the HIGs and elucidates the networks regulated by these genes in the context of CD. It underscores the pivotal significance of HIGs in accurately predicting the presence or absence of CD in patients. Consequently, this research offers promising prospects for the development of diagnostic biomarkers and therapeutic targets for CD.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "526"
+  ],
+  "article-number": "76",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "2 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "11 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "17 August 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Shen",
+      "given": "Tao",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Haiyang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hu",
+      "given": "Rongkang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lv",
+      "given": "Yanni",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        17
+      ]
+    ],
+    "date-time": "2023-08-17T03:19:25Z",
+    "timestamp": 1692242365000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        19
+      ]
+    ],
+    "date-time": "2023-11-19T03:32:10Z",
+    "timestamp": 1700364730000
+  },
+  "funder": [
+    {
+      "award": [
+        "2022AH050211"
+      ],
+      "name": "the University Natural Science Research Project of Anhui Province"
+    },
+    {
+      "award": [
+        "2022xjxm050"
+      ],
+      "name": "the funds from Anhui Normal University"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        27
+      ]
+    ],
+    "date-time": "2024-03-27T14:32:13Z",
+    "timestamp": 1711549933414
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        17
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            17
+          ]
+        ],
+        "date-time": "2023-08-17T00:00:00Z",
+        "timestamp": 1692230400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            8,
+            17
+          ]
+        ],
+        "date-time": "2023-08-17T00:00:00Z",
+        "timestamp": 1692230400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00526-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00526-z/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00526-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        17
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        17
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.ejim.2018.11.012",
+      "author": "L Elli",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "journal-title": "Eur J Intern Med",
+      "key": "526_CR1",
+      "unstructured": "Elli L, Ferretti F, Orlando S, Vecchi M, Monguzzi E, Roncoroni L, Schuppan D. Management of celiac disease in daily clinical practice. Eur J Intern Med. 2019;61:15–24.",
+      "volume": "61",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(17)31796-8",
+      "author": "B Lebwohl",
+      "doi-asserted-by": "publisher",
+      "first-page": "70",
+      "issue": "10115",
+      "journal-title": "Lancet",
+      "key": "526_CR2",
+      "unstructured": "Lebwohl B, Sanders DS, Green PHR. Coeliac disease. Lancet. 2018;391(10115):70–81.",
+      "volume": "391",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s12916-019-1380-z",
+      "author": "G Caio",
+      "doi-asserted-by": "publisher",
+      "first-page": "142",
+      "issue": "1",
+      "journal-title": "BMC Med",
+      "key": "526_CR3",
+      "unstructured": "Caio G, Volta U, Sapone A, Leffler DA, De Giorgio R, Catassi C, Fasano A. Celiac disease: a comprehensive current review. BMC Med. 2019;17(1):142.",
+      "volume": "17",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.4292/wjgpt.v4.i4.108",
+      "author": "HJ Freeman",
+      "doi-asserted-by": "publisher",
+      "first-page": "108",
+      "issue": "4",
+      "journal-title": "World J Gastrointest Pharmacol Ther",
+      "key": "526_CR4",
+      "unstructured": "Freeman HJ. Non-dietary forms of treatment for adult celiac disease. World J Gastrointest Pharmacol Ther. 2013;4(4):108–12.",
+      "volume": "4",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1136/gutjnl-2015-310148",
+      "author": "ML Moreno",
+      "doi-asserted-by": "publisher",
+      "first-page": "250",
+      "issue": "2",
+      "journal-title": "Gut",
+      "key": "526_CR5",
+      "unstructured": "Moreno ML, Cebolla Á, Muñoz-Suano A, Carrillo-Carrion C, Comino I, Pizarro Á, León F, Rodríguez-Herrera A, Sousa C. Detection of gluten immunogenic peptides in the urine of patients with coeliac disease reveals transgressions in the gluten-free diet and incomplete mucosal healing. Gut. 2017;66(2):250–7.",
+      "volume": "66",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1177/23247096211053702",
+      "author": "ZI Tarar",
+      "doi-asserted-by": "crossref",
+      "first-page": "232470962110537",
+      "journal-title": "J Investig Med High Impact Case Rep",
+      "key": "526_CR6",
+      "unstructured": "Tarar ZI, Zafar MU, Farooq U, Basar O, Tahan V, Daglilar E. The progression of celiac disease, diagnostic modalities, and treatment options. J Investig Med High Impact Case Rep. 2021;9:23247096211053704.",
+      "volume": "9",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.4103/ijp.IJP_679_19",
+      "author": "RS Singh",
+      "doi-asserted-by": "publisher",
+      "first-page": "359",
+      "issue": "5",
+      "journal-title": "Indian J Pharmacol",
+      "key": "526_CR7",
+      "unstructured": "Singh RS, Singh A, Batra G, Kaur H, Medhi B. Novel targets for drug discovery in celiac disease. Indian J Pharmacol. 2019;51(5):359–65.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(22)00794-2",
+      "author": "C Catassi",
+      "doi-asserted-by": "publisher",
+      "first-page": "2413",
+      "issue": "10344",
+      "journal-title": "Lancet",
+      "key": "526_CR8",
+      "unstructured": "Catassi C, Verdu EF, Bai JC, Lionetti E. Coeliac disease. Lancet. 2022;399(10344):2413–26.",
+      "volume": "399",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.cca.2022.01.022",
+      "author": "S Aboulaghras",
+      "doi-asserted-by": "publisher",
+      "first-page": "74",
+      "journal-title": "Clin Chim Acta",
+      "key": "526_CR9",
+      "unstructured": "Aboulaghras S, Piancatelli D, Oumhani K, Balahbib A, Bouyahya A, Taghzouti K. Pathophysiology and immunogenetics of celiac disease. Clin Chim Acta. 2022;528:74–83.",
+      "volume": "528",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1089/jir.2011.0065",
+      "author": "KD Moudgil",
+      "doi-asserted-by": "publisher",
+      "first-page": "695",
+      "issue": "10",
+      "journal-title": "J Interferon Cytokine Res",
+      "key": "526_CR10",
+      "unstructured": "Moudgil KD, Choubey D. Cytokines in autoimmunity: role in induction, regulation, and treatment. J Interferon Cytokine Res. 2011;31(10):695–703.",
+      "volume": "31",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3389/fimmu.2018.01489",
+      "author": "C Mortier",
+      "doi-asserted-by": "publisher",
+      "first-page": "1489",
+      "journal-title": "Front Immunol",
+      "key": "526_CR11",
+      "unstructured": "Mortier C, Govindarajan S, Venken K, Elewaut D. It takes “guts” to cause joint inflammation: role of innate-like T cells. Front Immunol. 2018;9:1489.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3748/wjg.v27.i21.2681",
+      "author": "B Cao",
+      "doi-asserted-by": "publisher",
+      "first-page": "2681",
+      "issue": "21",
+      "journal-title": "World J Gastroenterol",
+      "key": "526_CR12",
+      "unstructured": "Cao B, Zhang KC, Wei B, Chen L. Status quo and future prospects of artificial neural network from the perspective of gastroenterologists. World J Gastroenterol. 2021;27(21):2681–709.",
+      "volume": "27",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2017.10.010",
+      "author": "PJ Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "568",
+      "issue": "3",
+      "journal-title": "Gastroenterology",
+      "key": "526_CR13",
+      "unstructured": "Chen PJ, Lin MC, Lai MJ, Lin JC, Lu HH, Tseng VS. Accurate classification of diminutive colorectal polyps using computer-aided analysis. Gastroenterology. 2018;154(3):568–75.",
+      "volume": "154",
+      "year": "2018"
+    },
+    {
+      "author": "V Renganathan",
+      "first-page": "536",
+      "issue": "7",
+      "journal-title": "Bratisl Lek Listy",
+      "key": "526_CR14",
+      "unstructured": "Renganathan V. Overview of artificial neural network models in the biomedical domain. Bratisl Lek Listy. 2019;120(7):536–40.",
+      "volume": "120",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/ijms22147426",
+      "author": "F Perez",
+      "doi-asserted-by": "publisher",
+      "first-page": "14",
+      "journal-title": "Int J Mol Sci",
+      "key": "526_CR15",
+      "unstructured": "Perez F, Ruera CN, Miculan E, Carasi P, Chirdo FG. Programmed cell death in the small intestine: implications for the pathogenesis of celiac disease. Int J Mol Sci. 2021;22:14.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/jgh.15190",
+      "author": "H Ueyama",
+      "doi-asserted-by": "publisher",
+      "first-page": "482",
+      "issue": "2",
+      "journal-title": "J Gastroenterol Hepatol",
+      "key": "526_CR16",
+      "unstructured": "Ueyama H, Kato Y, Akazawa Y, Yatagai N, Komori H, Takeda T, Matsumoto K, Ueda K, Matsumoto K, Hojo M, et al. Application of artificial intelligence using a convolutional neural network for diagnosis of early gastric cancer based on magnifying endoscopy with narrow-band imaging. J Gastroenterol Hepatol. 2021;36(2):482–9.",
+      "volume": "36",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3390/cancers12092654",
+      "author": "J Wuestemann",
+      "doi-asserted-by": "publisher",
+      "first-page": "2654",
+      "issue": "9",
+      "journal-title": "Cancers",
+      "key": "526_CR17",
+      "unstructured": "Wuestemann J, Hupfeld S, Kupitz D, Genseke P, Schenke S, Pech M, Kreissl MC, Grosser OS. Analysis of bone scans in various tumor entities using a deep-learning-based artificial neural network algorithm-evaluation of diagnostic performance. Cancers. 2020;12(9):2654.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41590-022-01284-1",
+      "author": "A Jarade",
+      "doi-asserted-by": "publisher",
+      "first-page": "1317",
+      "issue": "9",
+      "journal-title": "Nat Immunol",
+      "key": "526_CR18",
+      "unstructured": "Jarade A, Garcia Z, Marie S, Demera A, Prinz I, Bousso P, Di Santo JP, Serafini N. Inflammation triggers ILC3 patrolling of the intestinal barrier. Nat Immunol. 2022;23(9):1317–23.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.783254",
+      "author": "Y Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "783254",
+      "journal-title": "Front Immunol",
+      "key": "526_CR19",
+      "unstructured": "Zhang Y, Tao M, Chen C, Zhao X, Feng Q, Chen G, Fu Y. BAFF blockade attenuates DSS-induced chronic colitis via inhibiting NLRP3 inflammasome and NF-κB activation. Front Immunol. 2022;13:783254.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.812899",
+      "author": "N Aghaallaei",
+      "doi-asserted-by": "publisher",
+      "first-page": "812899",
+      "journal-title": "Front Immunol",
+      "key": "526_CR20",
+      "unstructured": "Aghaallaei N, Agarwal R, Benjaminsen J, Lust K, Bajoghli B, Wittbrodt J, Feijoo CG. Antigen-presenting cells and T cells interact in a specific area of the intestinal mucosa defined by the Ccl25-Ccr9 axis in Medaka. Front Immunol. 2022;13:812899.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41385-022-00540-9",
+      "author": "C Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "882",
+      "issue": "5",
+      "journal-title": "Mucosal Immunol",
+      "key": "526_CR21",
+      "unstructured": "Li C, Kim HK, Prakhar P, Luo S, Crossman A, Ligons DL, Luckey MA, Awasthi P, Gress RE, Park JH. Chemokine receptor CCR9 suppresses the differentiation of CD4(+)CD8αα(+) intraepithelial T cells in the gut. Mucosal Immunol. 2022;15(5):882–95.",
+      "volume": "15",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1021/acs.jmedchem.5b01840",
+      "author": "SB Kalindjian",
+      "doi-asserted-by": "publisher",
+      "first-page": "3098",
+      "issue": "7",
+      "journal-title": "J Med Chem",
+      "key": "526_CR22",
+      "unstructured": "Kalindjian SB, Kadnur SV, Hewson CA, Venkateshappa C, Juluri S, Kristam R, Kulkarni B, Mohammed Z, Saxena R, Viswanadhan VN, et al. A New series of orally bioavailable chemokine receptor 9 (CCR9) antagonists; possible agents for the treatment of inflammatory bowel disease. J Med Chem. 2016;59(7):3098–111.",
+      "volume": "59",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature13160",
+      "author": "AJ Corbett",
+      "doi-asserted-by": "publisher",
+      "first-page": "361",
+      "issue": "7500",
+      "journal-title": "Nature",
+      "key": "526_CR23",
+      "unstructured": "Corbett AJ, Eckle SB, Birkinshaw RW, Liu L, Patel O, Mahony J, Chen Z, Reantragoon R, Meehan B, Cao H, et al. T-cell activation by transitory neo-antigens derived from distinct microbial pathways. Nature. 2014;509(7500):361–5.",
+      "volume": "509",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nature11605",
+      "author": "L Kjer-Nielsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "717",
+      "issue": "7426",
+      "journal-title": "Nature",
+      "key": "526_CR24",
+      "unstructured": "Kjer-Nielsen L, Patel O, Corbett AJ, Le Nours J, Meehan B, Liu L, Bhati M, Chen Z, Kostenko L, Reantragoon R, et al. MR1 presents microbial vitamin B metabolites to MAIT cells. Nature. 2012;491(7426):717–23.",
+      "volume": "491",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.biopha.2019.108796",
+      "author": "S Hu",
+      "doi-asserted-by": "publisher",
+      "first-page": "108796",
+      "journal-title": "Biomed Pharmacother",
+      "key": "526_CR25",
+      "unstructured": "Hu S, Wang R, Zhang M, Liu K, Tao J, Tai Y, Zhou W, Wang Q, Wei W. BAFF promotes T cell activation through the BAFF-BAFF-R-PI3K-Akt signaling pathway. Biomed Pharmacother. 2019;114:108796.",
+      "volume": "114",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1182/blood.2021011247",
+      "author": "Y Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2360",
+      "issue": "23",
+      "journal-title": "Blood",
+      "key": "526_CR26",
+      "unstructured": "Li Y, Xie X, Jie Z, Zhu L, Yang JY, Ko CJ, Gao T, Jain A, Jung SY, Baran N, et al. DYRK1a mediates BAFF-induced noncanonical NF-κB activation to promote autoimmunity and B-cell leukemogenesis. Blood. 2021;138(23):2360–71.",
+      "volume": "138",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ejphar.2012.06.026",
+      "author": "D Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "issue": "1–3",
+      "journal-title": "Eur J Pharmacol",
+      "key": "526_CR27",
+      "unstructured": "Liu D, Li P, Song S, Liu Y, Wang Q, Chang Y, Wu Y, Chen J, Zhao W, Zhang L, et al. Pro-apoptotic effect of epigallo-catechin-3-gallate on B lymphocytes through regulating BAFF/PI3K/Akt/mTOR signaling in rats with collagen-induced arthritis. Eur J Pharmacol. 2012;690(1–3):214–25.",
+      "volume": "690",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.cgh.2022.02.045",
+      "author": "A Rej",
+      "doi-asserted-by": "publisher",
+      "first-page": "2876",
+      "issue": "12",
+      "journal-title": "Clin Gastroenterol Hepatol",
+      "key": "526_CR28",
+      "unstructured": "Rej A, Sanders DS, Shaw CC, Buckle R, Trott N, Agrawal A, Aziz I. Efficacy and acceptability of dietary therapies in non-constipated irritable bowel syndrome: a randomized trial of traditional dietary advice, the low FODMAP diet, and the gluten-free diet. Clin Gastroenterol Hepatol. 2022;20(12):2876-2887.e2815.",
+      "volume": "20",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/ijms23137426",
+      "author": "RL Potenza",
+      "doi-asserted-by": "publisher",
+      "first-page": "7426",
+      "issue": "13",
+      "journal-title": "Int J Mol Sci",
+      "key": "526_CR29",
+      "unstructured": "Potenza RL, Lodeserto P, Orienti I. Fenretinide in cancer and neurological disease: a two-face Janus molecule. Int J Mol Sci. 2022;23(13):7426.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s11010-023-04805-0",
+      "doi-asserted-by": "crossref",
+      "key": "526_CR30",
+      "unstructured": "Ibrahim KM, Darwish SF, Mantawy EM, El-Demerdash E. Molecular mechanisms underlying cyclophosphamide-induced cognitive impairment and strategies for neuroprotection in preclinical models. Mol Cell Biochem 2023."
+    },
+    {
+      "DOI": "10.1177/0192623310396904",
+      "author": "TF Grassi",
+      "doi-asserted-by": "publisher",
+      "first-page": "486",
+      "issue": "3",
+      "journal-title": "Toxicol Pathol",
+      "key": "526_CR31",
+      "unstructured": "Grassi TF, Rodrigues MA, de Camargo JL, Barbisan LF. Evaluation of carcinogenic potential of diuron in a rat mammary two-stage carcinogenesis model. Toxicol Pathol. 2011;39(3):486–95.",
+      "volume": "39",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3934/genet.2017.2.103",
+      "author": "F Gentile",
+      "doi-asserted-by": "publisher",
+      "first-page": "103",
+      "issue": "2",
+      "journal-title": "AIMS Genet",
+      "key": "526_CR32",
+      "unstructured": "Gentile F, Arcaro A, Pizzimenti S, Daga M, Cetrangolo GP, Dianzani C, Lepore A, Graf M, Ames PRJ, Barrera G. DNA damage by lipid peroxidation products: implications in cancer, inflammation and autoimmunity. AIMS Genet. 2017;4(2):103–37.",
+      "volume": "4",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1247/csf.19.391",
+      "author": "K Fujikawa-Yamamoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "391",
+      "issue": "6",
+      "journal-title": "Cell Struct Funct",
+      "key": "526_CR33",
+      "unstructured": "Fujikawa-Yamamoto K, Teraoka K, Zong ZP, Yamagishi H, Odashima S. Apoptosis by demecolcine in V79 cells. Cell Struct Funct. 1994;19(6):391–6.",
+      "volume": "19",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1007/s10911-022-09522-w",
+      "author": "JL Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "185",
+      "issue": "2",
+      "journal-title": "J Mammary Gland Biol Neoplasia",
+      "key": "526_CR34",
+      "unstructured": "Miller JL, Bartlett AP, Harman RM, Majhi PD, Jerry DJ, Van de Walle GR. Induced mammary cancer in rat models: pathogenesis, genetics, and relevance to female breast cancer. J Mammary Gland Biol Neoplasia. 2022;27(2):185–210.",
+      "volume": "27",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.imu.2022.101116",
+      "author": "MB Islam",
+      "doi-asserted-by": "publisher",
+      "first-page": "101116",
+      "journal-title": "Inform Med Unlocked",
+      "key": "526_CR35",
+      "unstructured": "Islam MB, Chowdhury UN, Nashiry MA, Moni MA. Severity of COVID-19 patients with coexistence of asthma and vitamin D deficiency. Inform Med Unlocked. 2022;34:101116.",
+      "volume": "34",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.1008653",
+      "author": "C Yan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1008653",
+      "journal-title": "Front Immunol",
+      "key": "526_CR36",
+      "unstructured": "Yan C, Niu Y, Wang X. Blood transcriptome analysis revealed the crosstalk between COVID-19 and HIV. Front Immunol. 2022;13:1008653.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1089/omi.2011.0118",
+      "author": "G Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "284",
+      "issue": "5",
+      "journal-title": "OMICS",
+      "key": "526_CR37",
+      "unstructured": "Yu G, Wang LG, Han Y, He QY. clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS. 2012;16(5):284–7.",
+      "volume": "16",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw074",
+      "author": "Y Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1832",
+      "issue": "12",
+      "journal-title": "Bioinformatics",
+      "key": "526_CR38",
+      "unstructured": "Chen Y, Li Y, Narayan R, Subramanian A, Xie X. Gene expression inference with deep learning. Bioinformatics. 2016;32(12):1832–9.",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nbt1206-1565",
+      "author": "WS Noble",
+      "doi-asserted-by": "publisher",
+      "first-page": "1565",
+      "issue": "12",
+      "journal-title": "Nat Biotechnol",
+      "key": "526_CR39",
+      "unstructured": "Noble WS. What is a support vector machine? Nat Biotechnol. 2006;24(12):1565–7.",
+      "volume": "24",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1109/TIP.2018.2834830",
+      "author": "A Paul",
+      "doi-asserted-by": "publisher",
+      "first-page": "4012",
+      "issue": "8",
+      "journal-title": "IEEE Trans Image Process",
+      "key": "526_CR40",
+      "unstructured": "Paul A, Mukherjee DP, Das P, Gangopadhyay A, Chintha AR, Kundu S. Improved random forest for classification. IEEE Trans Image Process. 2018;27(8):4012–24.",
+      "volume": "27",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s12874-016-0254-8",
+      "author": "MM Vasquez",
+      "doi-asserted-by": "publisher",
+      "first-page": "154",
+      "issue": "1",
+      "journal-title": "BMC Med Res Methodol",
+      "key": "526_CR41",
+      "unstructured": "Vasquez MM, Hu C, Roe DJ, Chen Z, Halonen M, Guerra S. Least absolute shrinkage and selection operator type methods for the identification of serum biomarkers of overweight and obesity: simulation and application. BMC Med Res Methodol. 2016;16(1):154.",
+      "volume": "16",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3389/fgene.2022.1078200",
+      "author": "J Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1078200",
+      "journal-title": "Front Genet",
+      "key": "526_CR42",
+      "unstructured": "Xu J, Liang C, Li J. A signal recognition particle-related joint model of LASSO regression, SVM-RFE and artificial neural network for the diagnosis of systemic sclerosis-associated pulmonary hypertension. Front Genet. 2022;13:1078200.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s12943-020-01170-0",
+      "author": "B Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "53",
+      "issue": "1",
+      "journal-title": "Mol Cancer",
+      "key": "526_CR43",
+      "unstructured": "Zhang B, Wu Q, Li B, Wang D, Wang L, Zhou YL. m(6)A regulator-mediated methylation modification patterns and tumor microenvironment infiltration characterization in gastric cancer. Mol Cancer. 2020;19(1):53.",
+      "volume": "19",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq662",
+      "author": "P Benkert",
+      "doi-asserted-by": "publisher",
+      "first-page": "343",
+      "issue": "3",
+      "journal-title": "Bioinformatics",
+      "key": "526_CR44",
+      "unstructured": "Benkert P, Biasini M, Schwede T. Toward the estimation of the absolute quality of individual protein structure models. Bioinformatics. 2011;27(3):343–50.",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1006/jmbi.1996.0663",
+      "author": "ME Hodsdon",
+      "doi-asserted-by": "publisher",
+      "first-page": "585",
+      "issue": "3",
+      "journal-title": "J Mol Biol",
+      "key": "526_CR45",
+      "unstructured": "Hodsdon ME, Ponder JW, Cistola DP. The NMR solution structure of intestinal fatty acid-binding protein complexed with palmitate: application of a novel distance geometry algorithm. J Mol Biol. 1996;264(3):585–602.",
+      "volume": "264",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1093/nar/28.1.235",
+      "author": "HM Berman",
+      "doi-asserted-by": "publisher",
+      "first-page": "235",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "526_CR46",
+      "unstructured": "Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE. The protein data bank. Nucleic Acids Res. 2000;28(1):235–42.",
+      "volume": "28",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1021/ci200227u",
+      "author": "RA Laskowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "2778",
+      "issue": "10",
+      "journal-title": "J Chem Inf Model",
+      "key": "526_CR47",
+      "unstructured": "Laskowski RA, Swindells MB. LigPlot+: multiple ligand-protein interaction diagrams for drug discovery. J Chem Inf Model. 2011;51(10):2778–86.",
+      "volume": "51",
+      "year": "2011"
+    }
+  ],
+  "reference-count": 47,
+  "references-count": 47,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00526-z"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Developing neural network diagnostic models and potential drugs based on novel identified immune-related biomarkers for celiac disease"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

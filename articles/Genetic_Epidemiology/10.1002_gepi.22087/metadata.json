@@ -1,0 +1,709 @@
+{
+  "DOI": "10.1002/gepi.22087",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22087",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:sec\u003e\u003cjats:title\u003eBackground\u003c/jats:title\u003e\u003cjats:p\u003eEpistasis and gene‐environment interactions are known to contribute significantly to variation of complex phenotypes in model organisms. However, their identification in human association studies remains challenging for myriad reasons. In the case of epistatic interactions, the large number of potential interacting sets of genes presents computational, multiple hypothesis correction, and other statistical power issues. In the case of gene‐environment interactions, the lack of consistently measured environmental covariates in most disease studies precludes searching for interactions and creates difficulties for replicating studies.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eResults\u003c/jats:title\u003e\u003cjats:p\u003eIn this work, we develop a new statistical approach to address these issues that leverages genetic ancestry, defined as the proportion of ancestry derived from each ancestral population (e.g., the fraction of European/African ancestry in African Americans), in admixed populations. We applied our method to gene expression and methylation data from African American and Latino admixed individuals, respectively, identifying nine interactions that were significant at \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22087-math-0003.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22087:gepi22087-math-0003\" /\u003e. We show that two of the interactions in methylation data replicate, and the remaining six are significantly enriched for low \u003cjats:italic\u003eP\u003c/jats:italic\u003e‐values (\u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22087-math-0004.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22087:gepi22087-math-0004\" /\u003e).\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eConclusion\u003c/jats:title\u003e\u003cjats:p\u003eWe show that genetic ancestry can be a useful proxy for unknown and unmeasured covariates in the search for interaction effects. These results have important implications for our understanding of the genetic architecture of complex traits.\u003c/jats:p\u003e\u003c/jats:sec\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22087"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-7302-9929",
+      "affiliation": [
+        {
+          "name": "Department of Bioengineering and Therapeutic Sciences University of California San Francisco  San Francisco CA USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Park",
+      "given": "Danny S.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "The Blavatnik School of Computer Science Tel‐Aviv University  Tel Aviv Israel"
+        }
+      ],
+      "family": "Eskin",
+      "given": "Itamar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science University of California Los Angeles  Los Angeles CA USA"
+        }
+      ],
+      "family": "Kang",
+      "given": "Eun Yong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Genetic Medicine Department of Medicine Vanderbilt University  Nashville TN USA"
+        },
+        {
+          "name": "Academic Medical Center University of Amsterdam  Amsterdam The Netherlands"
+        }
+      ],
+      "family": "Gamazon",
+      "given": "Eric R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine University of California San Francisco  San Francisco CA USA"
+        }
+      ],
+      "family": "Eng",
+      "given": "Celeste",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Bioengineering and Therapeutic Sciences University of California San Francisco  San Francisco CA USA"
+        },
+        {
+          "name": "Department of Genetics Stanford University  Palo Alto CA USA"
+        }
+      ],
+      "family": "Gignoux",
+      "given": "Christopher R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine University of California San Francisco  San Francisco CA USA"
+        }
+      ],
+      "family": "Galanter",
+      "given": "Joshua M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Bioengineering and Therapeutic Sciences University of California San Francisco  San Francisco CA USA"
+        },
+        {
+          "name": "Department of Medicine University of California San Francisco  San Francisco CA USA"
+        }
+      ],
+      "family": "Burchard",
+      "given": "Esteban",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Human Genetics University of California San Francisco  San Francisco CA USA"
+        }
+      ],
+      "family": "Ye",
+      "given": "Chun J.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7554-6783",
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard School of Public Health  Boston MA USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Aschard",
+      "given": "Hugues",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science University of California Los Angeles  Los Angeles CA USA"
+        }
+      ],
+      "family": "Eskin",
+      "given": "Eleazar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "The Blavatnik School of Computer Science Tel‐Aviv University  Tel Aviv Israel"
+        }
+      ],
+      "family": "Halperin",
+      "given": "Eran",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Bioengineering and Therapeutic Sciences University of California San Francisco  San Francisco CA USA"
+        },
+        {
+          "name": "Department of Medicine University of California San Francisco  San Francisco CA USA"
+        }
+      ],
+      "family": "Zaitlen",
+      "given": "Noah",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        11,
+        8
+      ]
+    ],
+    "date-time": "2017-11-08T08:50:05Z",
+    "timestamp": 1510131005000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        25
+      ]
+    ],
+    "date-time": "2023-09-25T13:30:45Z",
+    "timestamp": 1695648645000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100006108",
+      "award": [
+        "KL2TR000143"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Center for Advancing Translational Sciences"
+    },
+    {
+      "DOI": "10.13039/100008069",
+      "doi-asserted-by": "publisher",
+      "name": "University of California, San Francisco"
+    },
+    {
+      "DOI": "10.13039/100005188",
+      "award": [
+        "24RT‐0025"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Tobacco-Related Disease Research Program"
+    },
+    {
+      "DOI": "10.13039/100000066",
+      "award": [
+        "R21ES24844"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Environmental Health Sciences"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "K23HL111636",
+        "K25HL121295"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "K12HL119997",
+        "R01ES022282",
+        "R01HL104608",
+        "R01HL117004",
+        "R01MH101782",
+        "T32GM007175",
+        "T32GM007546",
+        "T32HG000044",
+        "U01HG007419",
+        "U01OD019769"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "III-1217615",
+        "1065276",
+        "1302448",
+        "1320589"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:55:12Z",
+    "timestamp": 1709254512887
+  },
+  "is-referenced-by-count": 17,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2017,
+        11,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+      "content-version": "am",
+      "delay-in-days": 365,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            11,
+            8
+          ]
+        ],
+        "date-time": "2018-11-08T00:00:00Z",
+        "timestamp": 1541635200000
+      }
+    },
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            11,
+            8
+          ]
+        ],
+        "date-time": "2017-11-08T00:00:00Z",
+        "timestamp": 1510099200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22087",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22087",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22087",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22087",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22087",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "49-63",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2017,
+        11,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2017,
+        11,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1101/gr.094052.109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0092957",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1038/ng.941",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1186/s12863-015-0283-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1007/BF01441146",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts144",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201211-2116OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1056/NEJMsb025007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0032840",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1164/rccm.200605-596OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1186/s13040-015-0077-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1038/527S14a",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.1999.00997.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1016/j.jaci.2013.06.043",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-587",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1038/nrg2809",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1057/9781137001702_7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1186/gb-2012-13-2-r8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.7554/eLife.20532",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1038/ng.2394",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1038/nature13005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21610",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.3322/caac.20107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1016/j.biopsych.2013.09.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20300",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1016/j.jaci.2013.02.046",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0907897",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1186/1476-069X-12-101",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004549",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1038/nature11632",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwn353",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201302-0264OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1159/000268955",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003502",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000294",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1086/518313",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1007/s00439-007-0350-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1086/321276",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004432",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "author": "Rudin W",
+      "key": "e_1_2_7_43_1",
+      "volume-title": "Complex and real analysis 3rd edition",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1002/art.27753",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.1038/nrg3002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1007/s00198-006-0316-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddl436",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_47_1"
+    },
+    {
+      "DOI": "10.1086/420856",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_48_1"
+    },
+    {
+      "DOI": "10.1038/nrg3354",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_49_1"
+    },
+    {
+      "DOI": "10.1038/ng1955",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_50_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005849",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_51_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.05.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_52_1"
+    },
+    {
+      "DOI": "10.1016/j.jaci.2012.02.040",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_53_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_54_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyg002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_55_1"
+    },
+    {
+      "DOI": "10.1038/ng.608",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_56_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-06-0092",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_57_1"
+    }
+  ],
+  "reference-count": 56,
+  "references-count": 56,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/036640",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22087"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "An ancestry‐based approach for detecting interactions"
+  ],
+  "type": "journal-article",
+  "volume": "42"
+}

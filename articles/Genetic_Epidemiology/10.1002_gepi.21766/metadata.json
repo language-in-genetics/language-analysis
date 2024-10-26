@@ -1,0 +1,584 @@
+{
+  "DOI": "10.1002/gepi.21766",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21766",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eGenome‐wide association studies (GWAS) offer an excellent opportunity to identify the genetic variants underlying complex human diseases. Successful utilization of this approach requires a large sample size to identify single nucleotide polymorphisms (SNPs) with subtle effects. Meta‐analysis is a cost‐efficient means to achieve large sample size by combining data from multiple independent GWAS; however, results from studies performed on different populations can be variable due to various reasons, including varied linkage equilibrium structures as well as gene‐gene and gene‐environment interactions. Nevertheless, one should expect effects of the SNP are more similar between similar populations than those between populations with quite different genetic and environmental backgrounds. Prior information on populations of GWAS is often not considered in current meta‐analysis methods, rendering such analyses less optimal for the detecting association. This article describes a test that improves meta‐analysis to incorporate variable heterogeneity among populations. The proposed method is remarkably simple in computation and hence can be performed in a rapid fashion in the setting of GWAS. Simulation results demonstrate the validity and higher power of the proposed method over conventional methods in the presence of heterogeneity. As a demonstration, we applied the test to real GWAS data to identify SNPs associated with circulating insulin‐like growth factor I concentrations.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21766"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Population Health Albert Einstein College of Medicine  Bronx New York United States of America"
+        }
+      ],
+      "family": "Wang",
+      "given": "Tao",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Population Health Albert Einstein College of Medicine  Bronx New York United States of America"
+        }
+      ],
+      "family": "Zhou",
+      "given": "Baiyu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Population Health Albert Einstein College of Medicine  Bronx New York United States of America"
+        }
+      ],
+      "family": "Guo",
+      "given": "Tingwei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Medizinische Klinik ‐ Innestadt Ludwig‐Maximilians University  Munich Germany"
+        }
+      ],
+      "family": "Bidlingmaier",
+      "given": "Martin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Clinical Chemistry and Laboratory Medicine University Medicine Greifswald  Greifswald Germany"
+        }
+      ],
+      "family": "Wallaschofski",
+      "given": "Henri",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Interfaculty Institute for Genetics and Functional Genomics University Medicine Greifswald  Greifswald Germany"
+        }
+      ],
+      "family": "Teumer",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Boston University School of Medicine  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Vasan",
+      "given": "Ramachandran S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Population Health Albert Einstein College of Medicine  Bronx New York United States of America"
+        }
+      ],
+      "family": "Kaplan",
+      "given": "Robert C.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2013,
+        10,
+        25
+      ]
+    ],
+    "date-time": "2013-10-25T19:37:41Z",
+    "timestamp": 1382729861000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2023-10-05T13:36:46Z",
+    "timestamp": 1696513006000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R21HG006150"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Human Genome Research Institute (NHGRI)"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "P01HD070454",
+        "HHSN268201200036C",
+        "HHSN268200800007C",
+        "N01 HC55222",
+        "N01HC85079",
+        "N01HC85080",
+        "N01HC85081",
+        "N01HC85082",
+        "N01HC85083",
+        "N01HC85086",
+        "N01HC35129",
+        "N01HC15103",
+        "N01HC55222",
+        "N01HC75150",
+        "N01HC45133",
+        "U01HL080295",
+        "R01HL087652",
+        "HL080295"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Heart, Lung, and Blood Institute (NHLBI)"
+    },
+    {
+      "DOI": "10.13039/100000097",
+      "award": [
+        "M01-RR00425"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Center for Research Resources"
+    },
+    {
+      "award": [
+        "AG023629",
+        "AG031890"
+      ],
+      "name": "National Institute on Aging (NIA)"
+    },
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "DK063491"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "N01-HC-25195",
+        "N01-HC-25195"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Heart, Lung and Blood Institute's FHS"
+    },
+    {
+      "name": "Affymetrix, Inc(LinGA-II)"
+    },
+    {
+      "name": "Robert Dawson Evans Endowment of the Department of Medicine at Boston University School of Medicine and Boston Medical Center"
+    },
+    {
+      "name": "German Federal Ministry of Education and Research (BMBF)"
+    },
+    {
+      "award": [
+        "NGFN-2",
+        "NGFNPlus: 01GS0823"
+      ],
+      "name": "German National Genome Research Network"
+    },
+    {
+      "name": "Munich Center of Health Sciences (MC Health)"
+    },
+    {
+      "DOI": "10.13039/501100002347",
+      "award": [
+        "01ZZ9603",
+        "01ZZ0103",
+        "01ZZ0403",
+        "03ZIK012"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Federal Ministry of Education and Research"
+    },
+    {
+      "name": "Social Ministry of the Federal State of Mecklenburg-West Pomerania"
+    },
+    {
+      "name": "Siemens Healthcare, Erlangen, Germany and the Federal State of Mecklenburg-West Pomerania"
+    },
+    {
+      "name": "University of Greifswald"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T05:10:28Z",
+    "timestamp": 1696569028303
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2013,
+        10,
+        25
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2014,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2013,
+            10,
+            25
+          ]
+        ],
+        "date-time": "2013-10-25T00:00:00Z",
+        "timestamp": 1382659200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21766",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21766",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "162-171",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2013,
+        10,
+        25
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2013,
+        10,
+        25
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2014,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ng.381",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkr1255",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1038/onc.2011.408",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "author": "Fisher RA.",
+      "key": "e_1_2_6_5_1",
+      "volume-title": "Statistical Methods for Research Workers",
+      "year": "1932"
+    },
+    {
+      "DOI": "10.1038/ng.717",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1038/nrg2178",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1210/jc.2008-2138",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.04.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1172/JCI119081",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1038/nrg1521",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "article-title": "Quantitative genetic analyses of insulin‐like growth factor I (IGF‐I), IGF‐binding protein‐1, and insulin levels in middle‐aged and elderly twins",
+      "author": "Hong Y",
+      "first-page": "1791",
+      "issue": "5",
+      "journal-title": "J Clin Endocrinol Metab",
+      "key": "e_1_2_6_12_1",
+      "volume": "81",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1038/nrg1578",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0000841",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1161/01.CIR.0000027563.44593.CC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddq560",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1038/nature08980",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1093/biomet/86.4.929",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1056/NEJM199702273360907",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.2202/1544-6115.1503",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000508",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddn289",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0705554105",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1002/(SICI)1097-0258(19990215)18:3\u003c321::AID-SIM28\u003e3.0.CO;2-P",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1086/321272",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(04)16044-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1210/er.2006-0001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1126/science.1142358",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000916",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1126/science.1142382",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0813386106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1987.10478472",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1038/nature05616",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1007/s00125-007-0784-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1038/ng2043",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "author": "Stouffer SA",
+      "key": "e_1_2_6_38_1",
+      "volume-title": "The American Soldier. Adjustment During Army Life 1",
+      "year": "1949"
+    },
+    {
+      "DOI": "10.1002/sim.1040",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1038/ng.287",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1111/j.1420-9101.2011.02297.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1126/science.1142364",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1126/science.1142364",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20603",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    }
+  ],
+  "reference-count": 44,
+  "references-count": 44,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21766"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A Robust Method for Genome‐Wide Association Meta‐Analysis With the Application to Circulating Insulin‐Like Growth Factor I Concentrations"
+  ],
+  "type": "journal-article",
+  "volume": "38"
+}

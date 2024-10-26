@@ -1,0 +1,613 @@
+{
+  "DOI": "10.1002/gepi.22430",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22430",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMedical research increasingly includes high‐dimensional regression modeling with a need for error‐in‐variables methods. The \u003cjats:italic\u003eConvex Conditioned Lasso (CoCoLasso)\u003c/jats:italic\u003e utilizes a reformulated \u003cjats:italic\u003eLasso\u003c/jats:italic\u003e objective function and an error‐corrected cross‐validation to enable error‐in‐variables regression, but requires heavy computations. Here, we develop a \u003cjats:italic\u003eBlock coordinate Descent Convex Conditioned Lasso\u003c/jats:italic\u003e (\u003cjats:italic\u003eBDCoCoLasso\u003c/jats:italic\u003e) algorithm for modeling high‐dimensional data that are only partially corrupted by measurement error. This algorithm separately optimizes the estimation of the uncorrupted and corrupted features in an iterative manner to reduce computational cost, with a specially calibrated formulation of cross‐validation error. Through simulations, we show that the \u003cjats:italic\u003eBDCoCoLasso\u003c/jats:italic\u003e algorithm successfully copes with much larger feature sets than CoCoLasso, and as expected, outperforms the naïve \u003cjats:italic\u003eLasso\u003c/jats:italic\u003e with enhanced estimation accuracy and consistency, as the intensity and complexity of measurement errors increase. Also, a new smoothly clipped absolute deviation penalization option is added that may be appropriate for some data sets. We apply the \u003cjats:italic\u003eBDCoCoLasso\u003c/jats:italic\u003e algorithm to data selected from the UK Biobank. We develop and showcase the utility of covariate‐adjusted genetic risk scores for body mass index, bone mineral density, and lifespan. We demonstrate that by leveraging more information than the naïve \u003cjats:italic\u003eLasso\u003c/jats:italic\u003e in partially corrupted data, the \u003cjats:italic\u003eBDCoCoLasso\u003c/jats:italic\u003e may achieve higher prediction accuracy. These innovations, together with an R package, \u003cjats:italic\u003eBDCoCoLasso\u003c/jats:italic\u003e, make error‐in‐variables adjustments more accessible for high‐dimensional data sets. We posit the \u003cjats:italic\u003eBDCoCoLasso\u003c/jats:italic\u003e algorithm has the potential to be widely applied in various fields, including genomics‐facilitated personalized medicine research.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22430"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-01-22"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2021-08-12"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-09-01"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital  Montreal Québec Canada"
+        },
+        {
+          "name": "Operations Research Center Massachusetts Institute of Technology  Cambridge MA United States"
+        }
+      ],
+      "family": "Escribe",
+      "given": "Célia",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5664-5698",
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital  Montreal Québec Canada"
+        },
+        {
+          "name": "Quantitative Life Sciences Program McGill University  Montreal Québec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Lu",
+      "given": "Tianyuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital  Montreal Québec Canada"
+        },
+        {
+          "name": "Department of Human Genetics McGill University  Montreal Québec Canada"
+        }
+      ],
+      "family": "Keller‐Baruch",
+      "given": "Julyan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital  Montreal Québec Canada"
+        }
+      ],
+      "family": "Forgetta",
+      "given": "Vincenzo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital  Montreal Québec Canada"
+        },
+        {
+          "name": "Quantitative Life Sciences Program McGill University  Montreal Québec Canada"
+        }
+      ],
+      "family": "Xiao",
+      "given": "Bowei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital  Montreal Québec Canada"
+        },
+        {
+          "name": "Department of Human Genetics McGill University  Montreal Québec Canada"
+        },
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University  Montreal Québec Canada"
+        },
+        {
+          "name": "Department of Twin Research and Genetic Epidemiology King's College London  London United Kingdom"
+        }
+      ],
+      "family": "Richards",
+      "given": "J. Brent",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University  Montreal Québec Canada"
+        },
+        {
+          "name": "Department of Diagnostic Radiology McGill University  Montreal Québec Canada"
+        }
+      ],
+      "family": "Bhatnagar",
+      "given": "Sahir",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9911-079X",
+      "affiliation": [
+        {
+          "name": "Département de Mathématiques Université du Québec à Montréal  Montreal Québec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Oualkacha",
+      "given": "Karim",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2427-5696",
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital  Montreal Québec Canada"
+        },
+        {
+          "name": "Department of Human Genetics McGill University  Montreal Québec Canada"
+        },
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University  Montreal Québec Canada"
+        },
+        {
+          "name": "Gerald Bronfman Department of Oncology McGill University  Montreal Québec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Greenwood",
+      "given": "Celia M. T.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        9,
+        1
+      ]
+    ],
+    "date-time": "2021-09-01T10:08:09Z",
+    "timestamp": 1630490889000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        28
+      ]
+    ],
+    "date-time": "2023-08-28T02:41:44Z",
+    "timestamp": 1693190504000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000024",
+      "award": [
+        "PJT‐148620"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Canadian Institutes of Health Research"
+    },
+    {
+      "DOI": "10.13039/501100000038",
+      "award": [
+        "RGPIN‐2020‐05133",
+        "RGPIN‐2019‐04482"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Natural Sciences and Engineering Research Council of Canada"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        22
+      ]
+    ],
+    "date-time": "2023-09-22T18:09:32Z",
+    "timestamp": 1695406172348
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22430",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22430",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22430",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "874-890",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1016/j.ajhg.2020.06.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.1561/2200000016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1002/sim.8130",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "article-title": "Mice: Multivariate imputation by chained equations in R",
+      "author": "Van Buuren S.",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Journal of Statistical Software",
+      "key": "e_1_2_9_5_1",
+      "volume": "45",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1093/biomet/78.3.451",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1214/16-AOS1527",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11558-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1977.tb01600.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1037/1082-989X.6.4.352",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1198/016214501753382273",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1561/2200000058",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "DOI": "10.1101/598110",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_9_15_1",
+      "unstructured": "Jiang L. Zheng Z. Qi T. Kemper K. E. Wray N. R. Visscher P. M. \u0026Yang J.(2019).A resource‐efficient tool for mixed model association analysis of large‐scale data (Technical Report). Nature Publishing Group."
+    },
+    {
+      "DOI": "10.1007/s00198-007-0543-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1007/s001980070064",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(02)08761-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1137/1.9781611970920",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_20_1"
+    },
+    {
+      "DOI": "10.1214/15-AOS1371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_21_1"
+    },
+    {
+      "DOI": "10.1038/nature14177",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1214/12-AOS1018",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_9_23_1",
+      "unstructured": "Loh P. L. \u0026Wainwright M. J.(2012). High‐dimensional regression with noisy and missing data: Provable guarantees with non‐convexity.Advances in Neural Information Processing Systems 40(3) 1637–1664."
+    },
+    {
+      "DOI": "10.1186/s13073-021-00838-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.1186/s12933-020-0988-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1210/clinem/dgab215",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "DOI": "10.1038/s41436-020-01007-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "DOI": "10.1038/sj.ijo.0802808",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_28_1"
+    },
+    {
+      "DOI": "10.1038/ng.3643",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_29_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0302-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_30_1"
+    },
+    {
+      "DOI": "10.1056/NEJMp1606181",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009141",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_32_1"
+    },
+    {
+      "DOI": "10.1214/10-AOS793",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_33_1"
+    },
+    {
+      "DOI": "10.1214/12-IMSCOLL920",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_34_1"
+    },
+    {
+      "DOI": "10.1201/9781439821862",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_35_1"
+    },
+    {
+      "DOI": "10.1093/jn/134.8.2090S",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_36_1"
+    },
+    {
+      "DOI": "10.1038/ng.686",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_37_1"
+    },
+    {
+      "article-title": "HMLasso: Lasso with high missing rate",
+      "author": "Takada M.",
+      "first-page": "3541",
+      "journal-title": "Machine Learning",
+      "key": "e_1_2_9_38_1",
+      "volume": "1050",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/cjs.11313",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_39_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_40_1"
+    },
+    {
+      "DOI": "10.1214/11-AOS878",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_41_1"
+    },
+    {
+      "DOI": "10.1080/01621459.2015.1108848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_42_1"
+    },
+    {
+      "DOI": "10.7554/eLife.39856",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_43_1"
+    },
+    {
+      "DOI": "10.1016/j.arr.2017.06.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_44_1"
+    },
+    {
+      "DOI": "10.1038/ng.287",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_45_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00532.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_46_1"
+    },
+    {
+      "DOI": "10.1214/09-AOS729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_47_1"
+    },
+    {
+      "DOI": "10.1198/016214506000000735",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_48_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_49_1"
+    },
+    {
+      "DOI": "10.1214/009053607000000802",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_50_1"
+    }
+  ],
+  "reference-count": 49,
+  "references-count": 49,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22430"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Block coordinate descent algorithm improves variable selection and estimation in error‐in‐variables regression"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

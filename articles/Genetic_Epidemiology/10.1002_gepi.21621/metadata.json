@@ -1,0 +1,396 @@
+{
+  "DOI": "10.1002/gepi.21621",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21621",
+  "abstract": "\u003cjats:p\u003eGenome‐Wide association studies (GWAS) routinely apply principal component analysis (PCA) to infer population structure within a sample to correct for confounding due to ancestry. GWAS implementation of PCA uses tens of thousands of single‐nucleotide polymorphisms (SNPs) to infer structure, despite the fact that only a small fraction of such SNPs provides useful information on ancestry. The identification of this reduced set of Ancestry‐Informative markers (AIMs) from a GWAS has practical value; for example, researchers can genotype the AIM set to correct for potential confounding due to ancestry in follow‐up studies that utilize custom SNP or sequencing technology. We propose a novel technique to identify AIMs from Genome‐Wide SNP data using sparse PCA. The procedure uses penalized regression methods to identify those SNPs in a Genome‐Wide panel that significantly contribute to the principal components while encouraging SNPs that provide negligible loadings to vanish from the analysis. We found that sparse PCA leads to negligible loss of ancestry information compared to traditional PCA analysis of Genome‐Wide SNP data. We further demonstrate the value of sparse PCA for AIM selection using real data from the International HapMap Project and a Genome‐Wide study of inflammatory bowel disease. We have implemented our approach in open‐source R software for public use. Genet. Epidemiol. 36:293–302, 2012. © 2012 Wiley Periodicals, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21621"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics Hankuk University of Foreign Studies Yongin Korea"
+        }
+      ],
+      "family": "Lee",
+      "given": "Seokho",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Human Genetics Emory University School of Medicine Atlanta Georgia"
+        }
+      ],
+      "family": "Epstein",
+      "given": "Michael P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Human Genetics Emory University School of Medicine Atlanta Georgia"
+        }
+      ],
+      "family": "Duncan",
+      "given": "Richard",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard School of Public Health Boston Massachusetts"
+        }
+      ],
+      "family": "Lin",
+      "given": "Xihong",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        4,
+        16
+      ]
+    ],
+    "date-time": "2012-04-16T17:10:25Z",
+    "timestamp": 1334596225000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        23
+      ]
+    ],
+    "date-time": "2024-04-23T08:57:14Z",
+    "timestamp": 1713862634000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        26
+      ]
+    ],
+    "date-time": "2024-04-26T21:12:31Z",
+    "timestamp": 1714165951278
+  },
+  "is-referenced-by-count": 38,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        4,
+        16
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            4,
+            16
+          ]
+        ],
+        "date-time": "2012-04-16T00:00:00Z",
+        "timestamp": 1334534400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21621",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21621",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "293-302",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        4,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        4,
+        16
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2012,
+        5
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1101/gr.631202",
+      "article-title": "Interrogating a high-density snp map for signatures of natural selection",
+      "author": "Akey JM",
+      "doi-asserted-by": "crossref",
+      "first-page": "1805",
+      "journal-title": "Genome Res",
+      "key": "e_1_2_7_2_1",
+      "volume": "12",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1046/j.1469-1809.2003.00036.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1086/516842",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1002/humu.20695",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1007/978-0-387-84858-7",
+      "author": "Hastie T",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_7_1",
+      "volume-title": "The Element of Statistical Learning: Data Mining, Inference, and Prediction",
+      "year": "2009"
+    },
+    {
+      "author": "Jolliffe IT",
+      "key": "e_1_2_7_8_1",
+      "volume-title": "Principal Component Analysis",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1002/humu.20822",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1086/501531",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20434",
+      "article-title": "Discovering genetic ancestry using spectral graph theory",
+      "author": "Lee AB",
+      "doi-asserted-by": "crossref",
+      "first-page": "51",
+      "journal-title": "Genet Epidemiol",
+      "key": "e_1_2_7_11_1",
+      "volume": "34",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20296",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2007.11.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030160",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1136/jmg.2010.078212",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20056",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1016/j.jmva.2007.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1086/420856",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "article-title": "A haplotype map of the human genome",
+      "first-page": "1299",
+      "journal-title": "Nature",
+      "key": "e_1_2_7_27_1",
+      "volume": "432",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1086/507954",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "article-title": "Regression shrinkage and selection via the lasso",
+      "author": "Tibshirani R",
+      "doi-asserted-by": "crossref",
+      "first-page": "267",
+      "journal-title": "J Royal Statist Soc",
+      "key": "e_1_2_7_29_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxp008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10196",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1198/016214506000000735",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1198/106186006X113430",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    }
+  ],
+  "reference-count": 32,
+  "references-count": 32,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21621"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Sparse Principal Component Analysis for Identifying Ancestry‐Informative Markers in Genome‐Wide Association Studies"
+  ],
+  "type": "journal-article",
+  "volume": "36"
+}

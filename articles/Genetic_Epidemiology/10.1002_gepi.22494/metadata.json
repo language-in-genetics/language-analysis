@@ -1,0 +1,384 @@
+{
+  "DOI": "10.1002/gepi.22494",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22494",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eTo understand phenotypic variations and key factors which affect disease susceptibility of complex traits, it is important to decipher cell‐type tissue compositions. To study cellular compositions of bulk tissue samples, one can evaluate cellular abundances and cell‐type‐specific gene expression patterns from the tissue transcriptome profiles. We develop both fixed and mixed models to reconstruct cellular expression fractions for bulk‐profiled samples by using reference single‐cell (sc) RNA‐sequencing (RNA‐seq) reference data. In benchmark evaluations of estimating cellular expression fractions, the mixed‐effect models provide similar results as an elegant machine learning algorithm named cell‐type identification by estimating relative subsets of RNA transcripts (CIBERSORTx), which is a well‐known and reliable procedure to reconstruct cell‐type abundances and cell‐type‐specific gene expression profiles. In real data analysis, the mixed‐effect models outperform or perform similarly as CIBERSORTx. The mixed models perform better than the fixed models in both benchmark evaluations and data analysis. In simulation studies, we show that if the heterogeneity exists in scRNA‐seq data, it is better to use mixed models with heterogeneous mean and variance–covariance. As a byproduct, the mixed models provide fractions of covariance between subject‐specific gene expression and cell types to measure their correlations. The proposed mixed models provide a complementary tool to dissect bulk tissues using scRNA‐seq data.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22494"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2022-01-18"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-05-16"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-07-05"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center  Washington District of Columbia USA"
+        }
+      ],
+      "family": "Luo",
+      "given": "Yutong",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7603-2135",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Bioinformatics, and Biomathematics Georgetown University Medical Center  Washington District of Columbia USA"
+        },
+        {
+          "name": "Computational and Statistical Genomics Branch National Human Genome Research Institute (NHGRI), National Institutes of Health (NIH)  Baltimore Maryland USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Fan",
+      "given": "Ruzong",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        5
+      ]
+    ],
+    "date-time": "2022-07-05T09:20:48Z",
+    "timestamp": 1657012848000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        22
+      ]
+    ],
+    "date-time": "2023-08-22T11:09:39Z",
+    "timestamp": 1692702579000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "DMS‐1915904"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        23
+      ]
+    ],
+    "date-time": "2023-08-23T04:50:55Z",
+    "timestamp": 1692766255812
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        5
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+      "content-version": "am",
+      "delay-in-days": 365,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            5
+          ]
+        ],
+        "date-time": "2023-07-05T00:00:00Z",
+        "timestamp": 1688515200000
+      }
+    },
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            5
+          ]
+        ],
+        "date-time": "2022-07-05T00:00:00Z",
+        "timestamp": 1656979200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22494",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22494",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22494",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22494",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "615-628",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        5
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        5
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/s41467-021-26328-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1016/j.cels.2016.08.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0510790103",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1101/2020.01.07.897900",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_5_1",
+      "unstructured": "Chu T. Wang Z. Peer D. \u0026Danko C. G.(2021).Bayesian cell‐type deconvolution and gene expression inference reveals tumor‐microenvironment interactions."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1402665111",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1038/s41592-019-0355-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1137/1.9781611971217",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1186/s13059-016-1028-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "key": "e_1_2_8_11_1",
+      "unstructured": "Mullen K. M. \u0026vanStokkum I. H. M.(2015).The Lawson–Hanson algorithm for non‐negative least squares (NNLS) version 1.4."
+    },
+    {
+      "DOI": "10.1016/j.coi.2016.06.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.3337",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1038/s41587-019-0114-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1186/gm433",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1038/s41467-017-02289-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2016.08.020",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.1439",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1007/978-1-0716-0301-7_7",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_19_1",
+      "unstructured": "Steen C. B. Liu L. C. Alizadeh A. A. \u0026Newman A. M.(2020).Profiling cell type abundance and expression in bulk tissues with CIBERSORTx.Stem Cell Transcriptional Networks 2117 135–157."
+    },
+    {
+      "article-title": "Transcriptome deconvolution of heterogeneous tumor samples with immune infiltration",
+      "author": "Wang Z.",
+      "first-page": "451",
+      "journal-title": "Science",
+      "key": "e_1_2_8_20_1",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-018-08023-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2016.08.018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1186/s13059-017-1305-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    }
+  ],
+  "reference-count": 22,
+  "references-count": 22,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22494"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Deconvolution analysis of cell‐type expression from bulk tissues by integrating with single‐cell expression reference"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

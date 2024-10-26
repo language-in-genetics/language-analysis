@@ -1,0 +1,589 @@
+{
+  "DOI": "10.1002/gepi.22016",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22016",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eMany genetic epidemiological studies collect repeated measurements over time. This design not only provides a more accurate assessment of disease condition, but allows us to explore the genetic influence on disease development and progression. Thus, it is of great interest to study the longitudinal contribution of genes to disease susceptibility. Most association testing methods for longitudinal phenotypes are developed for single variant, and may have limited power to detect association, especially for variants with low minor allele frequency. We propose Longitudinal SNP‐set/sequence kernel association test (LSKAT), a robust, mixed‐effects method for association testing of rare and common variants with longitudinal quantitative phenotypes. LSKAT uses several random effects to account for the within‐subject correlation in longitudinal data, and allows for adjustment for both static and time‐varying covariates. We also present a longitudinal trait burden test (LBT), where we test association between the trait and the burden score in linear mixed models. In simulation studies, we demonstrate that LBT achieves high power when variants are almost all deleterious or all protective, while LSKAT performs well in a wide range of genetic models. By making full use of trait values from repeated measures, LSKAT is more powerful than several tests applied to a single measurement or average over all time points. Moreover, LSKAT is robust to misspecification of the covariance structure. We apply the LSKAT and LBT methods to detect association with longitudinally measured body mass index in the Framingham Heart Study, where we are able to replicate association with a circadian gene \u003cjats:italic\u003eNR1D2\u003c/jats:italic\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22016"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale School of Public Health New Haven CT USA"
+        },
+        {
+          "name": "Baker Institute for Animal Health Cornell University Ithaca NY USA"
+        },
+        {
+          "name": "Center for Computational Biology Beijing Forestry University Beijing China"
+        }
+      ],
+      "family": "Wang",
+      "given": "Zhong",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry Yale School of Medicine New Haven CT USA"
+        },
+        {
+          "name": "VA Connecticut Healthcare System West Haven CT USA"
+        }
+      ],
+      "family": "Xu",
+      "given": "Ke",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry Yale School of Medicine New Haven CT USA"
+        },
+        {
+          "name": "VA Connecticut Healthcare System West Haven CT USA"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Xinyu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics Virginia Polytechnic Institute and State University Blacksburg VA USA"
+        }
+      ],
+      "family": "Wu",
+      "given": "Xiaowei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale School of Public Health New Haven CT USA"
+        }
+      ],
+      "family": "Wang",
+      "given": "Zuoheng",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        9
+      ]
+    ],
+    "date-time": "2016-11-09T22:07:44Z",
+    "timestamp": 1478729264000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T19:39:32Z",
+    "timestamp": 1696361972000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "R21 AA022870",
+        "K01 AA023321",
+        "K12 DA000167"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000048",
+      "award": [
+        "IRG‐58‐012‐56"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "American Cancer Society"
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "31470675"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "N02‐HL‐64278"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000027",
+      "award": [
+        "K01 AA023321",
+        "R21 AA022870"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Alcohol Abuse and Alcoholism"
+    },
+    {
+      "DOI": "10.13039/100000026",
+      "award": [
+        "K12 DA000167"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Drug Abuse"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T09:40:04Z",
+    "timestamp": 1696412404738
+  },
+  "is-referenced-by-count": 12,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            9
+          ]
+        ],
+        "date-time": "2016-11-09T00:00:00Z",
+        "timestamp": 1478649600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22016",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22016",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22016",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "81-93",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.21828",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21951",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddt104",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1007/s00439-011-0960-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21689",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1214/13-STS456",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.2307/2531727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1186/s13040-015-0048-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1038/nrg2809",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21673",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1007/s00592-014-0600-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1038/nrg2178",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21640",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1002/mnfr.201300361",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1038/gim.2013.72",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1038/ijo.2012.117",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1159/000288704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000529",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1983.10477015",
+      "article-title": "Empirical Bayes estimation of rates in longitudinal studies",
+      "author": "Hui S. L.",
+      "doi-asserted-by": "crossref",
+      "first-page": "753",
+      "journal-title": "Journal of the American Statistical Association",
+      "key": "e_1_2_7_21_1",
+      "volume": "78",
+      "year": "1983"
+    },
+    {
+      "DOI": "10.1017/S0016672303006281",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21775",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/ng.548",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1136/jamia.2010.004366",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.2307/2529876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1214/15-AOAS808",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.07.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1016/j.csda.2008.11.025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1515/sagmb-2012-0070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1186/1755-8794-4-13",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.215",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1016/j.mrfmmm.2006.09.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.4135/9781412986311.n19",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001322",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1086/423901",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_43_1"
+    },
+    {
+      "author": "Raudenbush S. W.",
+      "key": "e_1_2_7_44_1",
+      "volume-title": "Hierarchical linear models: Application and data analysis methods",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1101/gr.3709305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1159/000312643",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21676",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_47_1"
+    },
+    {
+      "DOI": "10.1002/sim.5517",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_48_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001094",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_49_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwm021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_50_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0100776",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_51_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.35694",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_52_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9876.2011.01016.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_53_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddg124",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_54_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_55_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_56_1"
+    },
+    {
+      "DOI": "10.1038/nrg1804",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_57_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21829",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_58_1"
+    },
+    {
+      "DOI": "10.1159/000445057",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_59_1"
+    }
+  ],
+  "reference-count": 58,
+  "references-count": 58,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22016"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Longitudinal SNP‐set association analysis of quantitative phenotypes"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

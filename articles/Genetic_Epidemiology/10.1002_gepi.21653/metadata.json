@@ -1,0 +1,410 @@
+{
+  "DOI": "10.1002/gepi.21653",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21653",
+  "abstract": "\u003cjats:p\u003eWe have developed a computationally efficient method for multipoint linkage analysis on extended pedigrees for trait models having a two‐locus quantitative trait loci (QTL) effect. The method has been implemented in the program, \u003cjats:italic\u003ehg_lod\u003c/jats:italic\u003e, which uses the Markov chain Monte Carlo (MCMC) method to sample realizations of descent patterns conditional on marker data, then calculates the trait likelihood for each realization by efficient exact computation. Given its computational efficiency, \u003cjats:italic\u003ehg_lod\u003c/jats:italic\u003e can handle data on large pedigrees with a lot of unobserved individuals, and can compute accurate estimates of logarithm of odds (lod) scores at a much larger number of hypothesized locations than can any existing method. We have compared \u003cjats:italic\u003ehg_lod\u003c/jats:italic\u003e to \u003cjats:italic\u003elm_twoqtl\u003c/jats:italic\u003e, the first publically available linkage program for trait models with two major loci, using simulated data. Results show that our method is orders of magnitude faster while the accuracy of QTL localization is retained. The efficiency of our method also facilitates analyses with multiple trait models, for example, sensitivity analysis. Additionally, since the MCMC sampling conditions only on the marker data, there is no need to resample the descent patterns to compute likelihoods under alternative trait models. This achieves additional computational efficiency.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21653"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Electrical Engineering University of Washington  Seattle Washington"
+        }
+      ],
+      "family": "Su",
+      "given": "Ming",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics University of Washington  Seattle Washington"
+        }
+      ],
+      "family": "Thompson",
+      "given": "Elizabeth A.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        6,
+        27
+      ]
+    ],
+    "date-time": "2012-06-27T19:40:32Z",
+    "timestamp": 1340826032000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2023-09-28T20:50:33Z",
+    "timestamp": 1695934233000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        29
+      ]
+    ],
+    "date-time": "2023-09-29T06:45:16Z",
+    "timestamp": 1695969916539
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        6,
+        27
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            6,
+            27
+          ]
+        ],
+        "date-time": "2012-06-27T00:00:00Z",
+        "timestamp": 1340755200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21653",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21653",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21653",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "602-611",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        6,
+        27
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        6,
+        27
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2012,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1086/301844",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20033",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1186/1471-2156-4-S1-S70",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1002/gepi.1370120628",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.2307/2531059",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1086/378589",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1159/000152448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "author": "Jensen FV",
+      "key": "e_1_2_6_9_1",
+      "volume-title": "Introduction to Bayesian Networks",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1090/conm/001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1159/000289596",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "article-title": "Two‐locus disease models with two marker loci: the power of affected‐sib-pair tests",
+      "author": "Knapp M",
+      "first-page": "1030",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_6_12_1",
+      "volume": "55",
+      "year": "1994"
+    },
+    {
+      "article-title": "Efficient testing operations on dynamic structures using strong hash functions",
+      "author": "Koepke H",
+      "journal-title": "J Comp Biol",
+      "key": "e_1_2_6_13_1",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1109/18.910572",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1073/pnas.84.8.2363",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "article-title": "A random walk method for computing genetic location scores",
+      "author": "Lange K",
+      "first-page": "1320",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_6_16_1",
+      "volume": "49",
+      "year": "1991"
+    },
+    {
+      "article-title": "Analysis of complex diseases under oligogenic models and intrafamilial heterogeneity by the linkage programs",
+      "author": "Lathrop GM",
+      "first-page": "A188",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_6_17_1",
+      "volume": "47",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1988.tb01721.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1159/000098460",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "article-title": "libDAI: a free and open source C++ library for discrete approximate inference in graphical models",
+      "author": "Mooij JM",
+      "first-page": "2169",
+      "journal-title": "J Mach Learn Res",
+      "key": "e_1_2_6_20_1",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "article-title": "Segregation analysis incorporating linkage markers",
+      "author": "Risch N",
+      "first-page": "363",
+      "issue": "2",
+      "journal-title": "I. Single‐locus models with an application to type I diabetes. Am J Hum Genet",
+      "key": "e_1_2_6_21_1",
+      "volume": "36",
+      "year": "1984"
+    },
+    {
+      "article-title": "Two‐trait-locus linkage analysis: a powerful strategy for mapping complex genetic traits",
+      "author": "Schork NJ",
+      "first-page": "1127",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_6_22_1",
+      "volume": "53",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1186/1471-2156-6-S1-S11",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "article-title": "Descent graphs in pedigree analysis: applications to haplotyping, location scores, and marker‐sharing statistics",
+      "author": "Sobel E",
+      "first-page": "1323",
+      "issue": "6",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_6_24_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1086/302911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "article-title": "How to model a complex trait",
+      "author": "Strauch K",
+      "first-page": "200",
+      "journal-title": "2. Analysis with two disease loci. Hum Hered",
+      "key": "e_1_2_6_26_1",
+      "volume": "56",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1159/000099186",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-1-s1-s93",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20194",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "author": "Thompson EA",
+      "key": "e_1_2_6_30_1",
+      "volume-title": "NSF‐CBMS Regional Conference Series in Probability and Statistics",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1159/000313555",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1214/lnms/1215455549",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1159/000109731",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1002/(SICI)1098-2272(1997)14:6\u003c719::AID-GEPI28\u003e3.0.CO;2-S",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1086/508472",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    }
+  ],
+  "reference-count": 35,
+  "references-count": 35,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21653"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Computationally Efficient Multipoint Linkage Analysis on Extended Pedigrees for Trait Models With Two Contributing Major Loci"
+  ],
+  "type": "journal-article",
+  "volume": "36"
+}

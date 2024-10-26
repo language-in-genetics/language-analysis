@@ -1,0 +1,993 @@
+{
+  "DOI": "10.1186/s40246-023-00513-4",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00513-4",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eCardiovascular diseases (CVDs) are the leading cause of death worldwide. Genome-wide association studies (GWAS) have identified many single nucleotide polymorphisms (SNPs) appearing in non-coding genomic regions in CVDs. The SNPs may alter gene expression by modifying transcription factor (TF) binding sites and lead to functional consequences in cardiovascular traits or diseases. To understand the underlying molecular mechanisms, it is crucial to identify which variations are involved and how they affect TF binding.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe SNEEP (SNP exploration and analysis using epigenomics data) pipeline was used to identify regulatory SNPs, which alter the binding behavior of TFs and link GWAS SNPs to their potential target genes for six CVDs. The human-induced pluripotent stem cells derived cardiomyocytes (hiPSC-CMs), monoculture cardiac organoids (MCOs) and self-organized cardiac organoids (SCOs) were used in the study. Gene expression, cardiomyocyte size and cardiac contractility were assessed.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eBy using our integrative computational pipeline, we identified 1905 regulatory SNPs in CVD GWAS data. These were associated with hundreds of genes, half of them non-coding RNAs (ncRNAs), suggesting novel CVD genes. We experimentally tested 40 CVD-associated non-coding RNAs, among them RP11-98F14.11, RPL23AP92, IGBP1P1, and CTD-2383I20.1, which were upregulated in hiPSC-CMs, MCOs and SCOs under hypoxic conditions. Further experiments showed that IGBP1P1 depletion rescued expression of hypertrophic marker genes, reduced hypoxia-induced cardiomyocyte size and improved hypoxia-reduced cardiac contractility in hiPSC-CMs and MCOs.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eIGBP1P1 is a novel ncRNA with key regulatory functions in modulating cardiomyocyte size and cardiac function in our disease models. Our data suggest ncRNA IGBP1P1 as a potential therapeutic target to improve cardiac function in CVDs.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "513"
+  ],
+  "article-number": "69",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "26 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "12 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "25 July 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Zhu",
+      "given": "Chaonan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Baumgarten",
+      "given": "Nina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wu",
+      "given": "Meiqian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Yue",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Das",
+      "given": "Arka Provo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kaur",
+      "given": "Jaskiran",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ardakani",
+      "given": "Fatemeh Behjati",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Duong",
+      "given": "Thanh Thuy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pham",
+      "given": "Minh Duc",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Duda",
+      "given": "Maria",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dimmeler",
+      "given": "Stefanie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yuan",
+      "given": "Ting",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schulz",
+      "given": "Marcel H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Krishnan",
+      "given": "Jaya",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        25
+      ]
+    ],
+    "date-time": "2023-07-25T15:30:06Z",
+    "timestamp": 1690299006000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        25
+      ]
+    ],
+    "date-time": "2023-07-25T15:34:58Z",
+    "timestamp": 1690299298000
+  },
+  "funder": [
+    {
+      "award": [
+        "SFB-TRR 267",
+        "SFB-TRR 267",
+        "SFB-TRR 267",
+        "SFB-TRR 267",
+        "SFB-TRR 267",
+        "SFB-TRR 267",
+        "SFB-TRR 267",
+        "SFB-TRR 267"
+      ],
+      "name": "SFB-TRR 267"
+    },
+    {
+      "DOI": "10.13039/501100004543",
+      "award": [
+        "202008080200",
+        "202108080020"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "China Scholarship Council"
+    },
+    {
+      "DOI": "10.13039/100018703",
+      "award": [
+        "822455",
+        "822455",
+        "822455",
+        "822455"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "HORIZON EUROPE European Innovation Council"
+    },
+    {
+      "name": "LOEWE Center for Cell and Gene Therapy"
+    },
+    {
+      "DOI": "10.13039/501100001659",
+      "award": [
+        "Exc2026",
+        "Exc2026",
+        "Exc2026"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    },
+    {
+      "DOI": "10.13039/100019180",
+      "award": [
+        "Angiolnc"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "HORIZON EUROPE European Research Council"
+    },
+    {
+      "name": "Johann Wolfgang Goethe-Universität, Frankfurt am Main"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T12:10:31Z",
+    "timestamp": 1713960631526
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        25
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2023-07-25T00:00:00Z",
+        "timestamp": 1690243200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2023-07-25T00:00:00Z",
+        "timestamp": 1690243200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00513-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00513-4/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00513-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        25
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        25
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1161/HCG.0000000000000062",
+      "author": "S Das",
+      "doi-asserted-by": "publisher",
+      "first-page": "e000062",
+      "journal-title": "Circ Genom Precis Med",
+      "key": "513_CR1",
+      "unstructured": "Das S, Shah R, Dimmeler S, Freedman JE, Holley C, Lee J-M, et al. Noncoding RNAs in cardiovascular disease: current knowledge, tools and technologies for investigation, and future directions: a scientific statement from the American Heart Association. Circ Genom Precis Med. 2020;13:e000062.",
+      "volume": "13",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s11883-020-00872-6",
+      "author": "T Josefs",
+      "doi-asserted-by": "publisher",
+      "first-page": "55",
+      "journal-title": "Curr Atheroscler Rep",
+      "key": "513_CR2",
+      "unstructured": "Josefs T, Boon RA. The long non-coding road to atherosclerosis. Curr Atheroscler Rep. 2020;22:55.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/1873-3468.14370",
+      "author": "RP Juni",
+      "doi-asserted-by": "publisher",
+      "first-page": "1367",
+      "journal-title": "FEBS Lett",
+      "key": "513_CR3",
+      "unstructured": "Juni RP, t Hart KC, Houtkooper RH, Boon RA. Long noncoding RNAs in cardiometabolic disorders. FEBS Lett. 2022;596:1367–87.",
+      "volume": "596",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.118.036769",
+      "author": "P Mirtschink",
+      "doi-asserted-by": "publisher",
+      "first-page": "2778",
+      "journal-title": "Circulation",
+      "key": "513_CR4",
+      "unstructured": "Mirtschink P, Bischof C, Pham M-D, Sharma R, Khadayate S, Rossi G, et al. Inhibition of the hypoxia-inducible factor 1α-induced cardiospecific HERNA1 enhance-templated RNA protects from heart disease. Circulation. 2019;139:2778–92.",
+      "volume": "139",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.yjmcc.2015.09.016",
+      "author": "S Ounzain",
+      "doi-asserted-by": "publisher",
+      "first-page": "98",
+      "journal-title": "J Mol Cell Cardiol",
+      "key": "513_CR5",
+      "unstructured": "Ounzain S, Micheletti R, Arnan C, Plaisance I, Cecchi D, Schroen B, et al. CARMEN, a human super enhancer-associated long noncoding RNA controlling cardiac specification, differentiation and homeostasis. J Mol Cell Cardiol. 2015;89:98–112.",
+      "volume": "89",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.117.310624",
+      "author": "M-T Piccoli",
+      "doi-asserted-by": "publisher",
+      "first-page": "575",
+      "journal-title": "Circ Res",
+      "key": "513_CR6",
+      "unstructured": "Piccoli M-T, Gupta SK, Viereck J, Foinquinos A, Samolovac S, Kramer FL, et al. Inhibition of the cardiac fibroblast-enriched lncRNA Meg3 prevents cardiac fibrosis and diastolic dysfunction. Circ Res. 2017;121:575–83.",
+      "volume": "121",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.120.052023",
+      "author": "F Fasolo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1567",
+      "journal-title": "Circulation",
+      "key": "513_CR7",
+      "unstructured": "Fasolo F, Jin H, Winski G, Chernogubova E, Pauli J, Winter H, et al. Long noncoding RNA MIAT controls advanced atherosclerotic lesion formation and plaque destabilization. Circulation. 2021;144:1567–83.",
+      "volume": "144",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s42003-020-0987-0",
+      "author": "L Stanicek",
+      "doi-asserted-by": "publisher",
+      "first-page": "265",
+      "journal-title": "Commun Biol",
+      "key": "513_CR8",
+      "unstructured": "Stanicek L, Lozano-Vidal N, Bink DI, Hooglugt A, Yao W, Wittig I, et al. Long non-coding RNA LASSIE regulates shear stress sensing and endothelial barrier function. Commun Biol. 2020;3:265.",
+      "volume": "3",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00395-022-00917-8",
+      "author": "L Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "journal-title": "Basic Res Cardiol",
+      "key": "513_CR9",
+      "unstructured": "Li L, Chen Z, von Scheidt M, Li S, Steiner A, Güldener U, et al. Transcriptome-wide association study of coronary artery disease identifies novel susceptibility genes. Basic Res Cardiol. 2022;117:6.",
+      "volume": "117",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.120.046040",
+      "author": "CG Anene-Nzelu",
+      "doi-asserted-by": "publisher",
+      "first-page": "910",
+      "journal-title": "Circulation",
+      "key": "513_CR10",
+      "unstructured": "Anene-Nzelu CG, Tan WLW, Lee CJM, Wenhao Z, Perrin A, Dashi A, et al. Assigning distal genomic enhancers to cardiac disease-causing genes. Circulation. 2020;142:910–2.",
+      "volume": "142",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btac369",
+      "author": "M Kirchler",
+      "doi-asserted-by": "publisher",
+      "first-page": "3621",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR11",
+      "unstructured": "Kirchler M, Konigorski S, Norden M, Meltendorf C, Kloft M, Schurmann C, et al. TransferGWAS: GWAS of images using deep transfer learning. Bioinformatics. 2022;38:3621–8.",
+      "volume": "38",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1101/gr.137323.112",
+      "author": "AP Boyle",
+      "doi-asserted-by": "publisher",
+      "first-page": "1790",
+      "journal-title": "Genome Res",
+      "key": "513_CR12",
+      "unstructured": "Boyle AP, Hong EL, Hariharan M, Cheng Y, Schaub MA, Kasowski M, et al. Annotation of functional variation in personal genomes using RegulomeDB. Genome Res. 2012;22:1790–7.",
+      "volume": "22",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/nar/gky686",
+      "author": "A Amlie-Wolf",
+      "doi-asserted-by": "publisher",
+      "first-page": "8740",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR13",
+      "unstructured": "Amlie-Wolf A, Tang M, Mlynarski EE, Kuksa PP, Valladares O, Katanic Z, et al. INFERNO: inferring the molecular mechanisms of noncoding genetic variants. Nucleic Acids Res. 2018;46:8740–53.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr064",
+      "author": "CE Grant",
+      "doi-asserted-by": "publisher",
+      "first-page": "1017",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR14",
+      "unstructured": "Grant CE, Bailey TL, Noble WS. FIMO: scanning for occurrences of a given motif. Bioinformatics. 2011;27:1017–8.",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty856",
+      "author": "F Schmidt",
+      "doi-asserted-by": "publisher",
+      "first-page": "1608",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR15",
+      "unstructured": "Schmidt F, Kern F, Ebert P, Baumgarten N, Schulz MH. TEPIC 2—an extended framework for transcription factor binding prediction and integrative epigenomic analysis. Bioinformatics. 2019;35:1608–9.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btab083",
+      "author": "Y Ji",
+      "doi-asserted-by": "publisher",
+      "first-page": "2112",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR16",
+      "unstructured": "Ji Y, Zhou Z, Liu H, Davuluri RV. DNABERT: pre-trained bidirectional encoder representations from transformers model for DNA-language in genome. Bioinformatics. 2021;37:2112–20.",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00782-6",
+      "author": "Ž Avsec",
+      "doi-asserted-by": "publisher",
+      "first-page": "354",
+      "journal-title": "Nat Genet",
+      "key": "513_CR17",
+      "unstructured": "Avsec Ž, Weilert M, Shrikumar A, Krueger S, Alexandari A, Dalal K, et al. Base-resolution models of transcription-factor binding reveal soft motif syntax. Nat Genet. 2021;53:354–66.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq378",
+      "author": "G Macintyre",
+      "doi-asserted-by": "publisher",
+      "first-page": "i524",
+      "journal-title": "Bioinforma Oxf Engl",
+      "key": "513_CR18",
+      "unstructured": "Macintyre G, Bailey J, Haviv I, Kowalczyk A. is-rSNP: a novel technique for in silico regulatory SNP detection. Bioinforma Oxf Engl. 2010;26:i524-530.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv328",
+      "author": "C Zuo",
+      "doi-asserted-by": "publisher",
+      "first-page": "3353",
+      "journal-title": "Bioinforma Oxf Engl",
+      "key": "513_CR19",
+      "unstructured": "Zuo C, Shin S, Keleş S. atSNP: transcription factor binding affinity testing for regulatory SNP detection. Bioinforma Oxf Engl. 2015;31:3353–5.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1101/2023.01.31.526404",
+      "doi-asserted-by": "publisher",
+      "key": "513_CR20",
+      "unstructured": "Baumgarten N, Rumpf L, Kessler T, Schulz MH. A statistical approach to identify regulatory DNA variations [Internet]. (2023) https://doi.org/10.1101/2023.01.31.526404"
+    },
+    {
+      "DOI": "10.1038/nmeth.3547",
+      "author": "J Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "931",
+      "journal-title": "Nat Methods",
+      "key": "513_CR21",
+      "unstructured": "Zhou J, Troyanskaya OG. Predicting effects of noncoding variants with deep learning–based sequence model. Nat Methods. 2015;12:931–4.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btac214",
+      "author": "L Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "3164",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR22",
+      "unstructured": "Chen L, Wang Y, Zhao F. Exploiting deep transfer learning for the prediction of functional non-coding variants using genomic sequence. Bioinformatics. 2022;38:3164–72.",
+      "volume": "38",
+      "year": "2022"
+    },
+    {
+      "author": "Y Wang",
+      "first-page": "btac696",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR23",
+      "unstructured": "Wang Y, Chen L. DeepPerVar: a multi-modal deep learning framework for functional interpretation of genetic variants in personal genome. Bioinformatics. 2022;5:btac696.",
+      "volume": "5",
+      "year": "2022"
+    },
+    {
+      "author": "Q Yao",
+      "first-page": "btab072",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR24",
+      "unstructured": "Yao Q, Ferragina P, Reshef Y, Lettre G, Bauer DE, Pinello L. Motif-Raptor: a cell type-specific and transcription factor centric approach for post-GWAS prioritization of causal regulators. Bioinformatics. 2021;8:btab072.",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btac608",
+      "author": "H Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "4697",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR25",
+      "unstructured": "Yang H, Chen R, Wang Q, Wei Q, Ji Y, Zhong X, et al. TVAR: assessing tissue-specific functional effects of non-coding variants with deep learning. Bioinformatics. 2022;38:4697–704.",
+      "volume": "38",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1007616",
+      "author": "J Arloth",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007616",
+      "journal-title": "PLOS Comput Biol",
+      "key": "513_CR26",
+      "unstructured": "Arloth J, Eraslan G, Andlauer TFM, Martins J, Iurato S, Kühnel B, et al. DeepWAS: Multivariate genotype-phenotype associations by directly integrating regulatory information using deep learning. PLOS Comput Biol. 2020;16:e1007616.",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s43588-021-00038-7",
+      "author": "M Scherer",
+      "doi-asserted-by": "publisher",
+      "first-page": "183",
+      "journal-title": "Nat Comput Sci",
+      "key": "513_CR27",
+      "unstructured": "Scherer M, Schmidt F, Lazareva O, Walter J, Baumbach J, Schulz MH, et al. Machine learning for deciphering cell heterogeneity and gene regulation. Nat Comput Sci. 2021;1:183–91.",
+      "volume": "1",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.xgen.2022.100145",
+      "author": "KK Dey",
+      "doi-asserted-by": "publisher",
+      "first-page": "100145",
+      "journal-title": "Cell Genomics",
+      "key": "513_CR28",
+      "unstructured": "Dey KK, Gazal S, van de Geijn B, Kim SS, Nasser J, Engreitz JM, et al. SNP-to-gene linking strategies reveal contributions of enhancer-related and candidate master-regulator genes to autoimmune disease. Cell Genomics. 2022;2:100145.",
+      "volume": "2",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0538-0",
+      "author": "CP Fulco",
+      "doi-asserted-by": "publisher",
+      "first-page": "1664",
+      "journal-title": "Nat Genet",
+      "key": "513_CR29",
+      "unstructured": "Fulco CP, Nasser J, Jones TR, Munson G, Bergman DT, Subramanian V, et al. Activity-by-contact model of enhancer–promoter regulation from thousands of CRISPR perturbations. Nat Genet. 2019;51:1664–9.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkab798",
+      "author": "F Schmidt",
+      "doi-asserted-by": "publisher",
+      "first-page": "10397",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR30",
+      "unstructured": "Schmidt F, Marx A, Baumgarten N, Hebel M, Wegner M, Kaulich M, et al. Integrative analysis of epigenetics data identifies gene-specific regulatory elements. Nucleic Acids Res. 2021;49:10397–418.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa382",
+      "author": "N Baumgarten",
+      "doi-asserted-by": "publisher",
+      "first-page": "W193",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR31",
+      "unstructured": "Baumgarten N, Hecker D, Karunanithi S, Schmidt F, List M, Schulz MH. EpiRegio: analysis and retrieval of regulatory elements linked to genes. Nucleic Acids Res. 2020;48:W193–9.",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gky1120",
+      "author": "A Buniello",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1005",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR32",
+      "unstructured": "Buniello A, MacArthur JAL, Cerezo M, Harris LW, Hayhurst J, Malangone C, et al. The NHGRI-EBI GWAS catalog of published genome-wide association studies, targeted arrays and summary statistics 2019. Nucleic Acids Res. 2019;47:D1005–12.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv402",
+      "author": "MJ Machiela",
+      "doi-asserted-by": "publisher",
+      "first-page": "3555",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR33",
+      "unstructured": "Machiela MJ, Chanock SJ. LDlink: a web-based application for exploring population-specific haplotype structure and linking correlated alleles of possible functional variants. Bioinformatics. 2015;31:3555–7.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/29.1.308",
+      "author": "ST Sherry",
+      "doi-asserted-by": "publisher",
+      "first-page": "308",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR34",
+      "unstructured": "Sherry ST. dbSNP: the NCBI database of genetic variation. Nucleic Acids Res. 2001;29:308–11.",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1093/nar/gkz1001",
+      "author": "O Fornes",
+      "doi-asserted-by": "publisher",
+      "first-page": "gkz1001",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "513_CR35",
+      "unstructured": "Fornes O, Castro-Mondragon JA, Khan A, van der Lee R, Zhang X, Richmond PA, et al. JASPAR 2020: update of the open-access database of transcription factor binding profiles. Nucleic Acids Res. 2019;5:gkz1001.",
+      "volume": "5",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1087",
+      "author": "A Frankish",
+      "doi-asserted-by": "publisher",
+      "first-page": "D916",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR36",
+      "unstructured": "Frankish A, Diekhans M, Jungreis I, Lagarde J, Loveland JE, Mudge JM, et al. GENCODE 2021. Nucleic Acids Res. 2021;49:D916–23.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0154-4",
+      "doi-asserted-by": "crossref",
+      "key": "513_CR37",
+      "unstructured": "GTEx Consortium, Gamazon ER, Segrè AV, van de Bunt M, Wen X, Xi HS, et al. Using an atlas of gene regulation across 44 human tissues to inform complex disease- and trait-associated variation. Nat Genet 2018; 50:956–67."
+    },
+    {
+      "DOI": "10.1093/nar/gkz1021",
+      "author": "J Piñero",
+      "doi-asserted-by": "publisher",
+      "first-page": "gkz1021",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR38",
+      "unstructured": "Piñero J, Ramírez-Anguita JM, Saüch-Pitarch J, Ronzano F, Centeno E, Sanz F, et al. The DisGeNET knowledge platform for disease genomics: 2019 update. Nucleic Acids Res. 2019;5:gkz1021.",
+      "volume": "5",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkz369",
+      "author": "U Raudvere",
+      "doi-asserted-by": "publisher",
+      "first-page": "W191",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR39",
+      "unstructured": "Raudvere U, Kolberg L, Kuzmin I, Arak T, Adler P, Peterson H, et al. g:Profiler: a web server for functional enrichment analysis and conversions of gene lists (2019 update). Nucleic Acids Res. 2019;47:W191–8.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/biology11040489",
+      "author": "Y-H Guo",
+      "doi-asserted-by": "publisher",
+      "first-page": "489",
+      "journal-title": "Biology",
+      "key": "513_CR40",
+      "unstructured": "Guo Y-H, Yang Y-Q. Atrial fibrillation: focus on myocardial connexins and gap junctions. Biology. 2022;11:489.",
+      "volume": "11",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.7554/eLife.80317",
+      "author": "FM Bosada",
+      "doi-asserted-by": "publisher",
+      "first-page": "580317",
+      "journal-title": "eLife",
+      "key": "513_CR41",
+      "unstructured": "Bosada FM, Van Duijvenboden K, Giovou AE, Rivaud MR, Uhm J-S, Verkerk AO, et al. An atrial fibrillation-associated regulatory region modulates cardiac Tbx5 levels and arrhythmia susceptibility. eLife. 2023;12:580317.",
+      "volume": "12",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1007/s11255-011-0076-x",
+      "author": "M Kanbay",
+      "doi-asserted-by": "publisher",
+      "first-page": "1169",
+      "journal-title": "Int Urol Nephrol",
+      "key": "513_CR42",
+      "unstructured": "Kanbay M, Wolf M, Selcoki Y, Solak Y, Ikizek M, Uysal S, et al. Association of serum calcitonin with coronary artery disease in individuals with and without chronic kidney disease. Int Urol Nephrol. 2012;44:1169–75.",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btab470",
+      "author": "H He",
+      "doi-asserted-by": "publisher",
+      "first-page": "4534",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR43",
+      "unstructured": "He H, Shi M, Lin Y, Zhan C, Wu R, Bi C, et al. HFBD: a biomarker knowledge database for heart failure heterogeneity and personalized applications. Bioinformatics. 2021;37:4534–9.",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/ehf2.12406",
+      "author": "S Roura",
+      "doi-asserted-by": "publisher",
+      "first-page": "388",
+      "journal-title": "ESC Heart Fail",
+      "key": "513_CR44",
+      "unstructured": "Roura S, Rudilla F, Gastelurrutia P, Enrich E, Campos E, Lupón J, et al. Determination of HLA-A, -B, -C, -DRB1 and -DQB1 allele and haplotype frequencies in heart failure patients. ESC Heart Fail. 2019;6:388–95.",
+      "volume": "6",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gku1115",
+      "author": "WB Wan",
+      "doi-asserted-by": "publisher",
+      "first-page": "13456",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR45",
+      "unstructured": "Wan WB, Migawa MT, Vasquez G, Murray HM, Nichols JG, Gaus H, et al. Synthesis, biophysical properties and biological activity of second generation antisense oligonucleotides containing chiral phosphorothioate linkages. Nucleic Acids Res. 2014;42:13456–68.",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gkv577",
+      "author": "J Keilwagen",
+      "doi-asserted-by": "publisher",
+      "first-page": "e119",
+      "journal-title": "Nucleic Acids Res",
+      "key": "513_CR46",
+      "unstructured": "Keilwagen J, Grau J. Varying levels of complexity in transcription factor binding motifs. Nucleic Acids Res. 2015;43:e119–e119.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s43586-021-00056-9",
+      "author": "E Uffelmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "journal-title": "Nat Rev Methods Primer",
+      "key": "513_CR47",
+      "unstructured": "Uffelmann E, Huang QQ, Munung NS, De Vries J, Okada Y, Martin AR, et al. Genome-wide association studies. Nat Rev Methods Primer. 2021;1:59.",
+      "volume": "1",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btad062",
+      "author": "D Hecker",
+      "doi-asserted-by": "publisher",
+      "first-page": "btad062",
+      "journal-title": "Bioinformatics",
+      "key": "513_CR48",
+      "unstructured": "Hecker D, Behjati Ardakani F, Karollus A, Gagneur J, Schulz MH. The adapted Activity-By-Contact model for enhancer–gene assignment and its application to single-cell data. Bioinformatics. 2023;39:btad062.",
+      "volume": "39",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.3389/fmolb.2020.622540",
+      "author": "Y Qi",
+      "doi-asserted-by": "publisher",
+      "first-page": "622540",
+      "journal-title": "Front Mol Biosci",
+      "key": "513_CR49",
+      "unstructured": "Qi Y, Wang X, Li W, Chen D, Meng H, An S. Pseudogenes in cardiovascular disease. Front Mol Biosci. 2020;7:622540.",
+      "volume": "7",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41598-018-30859-y",
+      "author": "K Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "12443",
+      "journal-title": "Sci Rep",
+      "key": "513_CR50",
+      "unstructured": "Kim K, Theusch E, Kuang Y-L, Dose A, Mitchel K, Cubitt C, et al. ZNF542P is a pseudogene associated with LDL response to simvastatin treatment. Sci Rep. 2018;8:12443.",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1152/ajplung.00314.2009",
+      "author": "AL Firth",
+      "doi-asserted-by": "publisher",
+      "first-page": "5548",
+      "journal-title": "Am J Physiol Lung Cell Mol Physiol",
+      "key": "513_CR51",
+      "unstructured": "Firth AL, Yao W, Remillard CV, Ogawa A, Yuan JX-J. Upregulation of Oct-4 isoforms in pulmonary artery smooth muscle cells from patients with pulmonary arterial hypertension. Am J Physiol Lung Cell Mol Physiol. 2010;298:5548–57.",
+      "volume": "298",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.ydbio.2013.06.013",
+      "author": "A Garciandia",
+      "doi-asserted-by": "publisher",
+      "first-page": "411",
+      "journal-title": "Dev Biol",
+      "key": "513_CR52",
+      "unstructured": "Garciandia A, Suarez T. The NMRA/NMRAL1 homologue PadA modulates the expression of extracellular cAMP relay genes during aggregation in Dictyostelium discoideum. Dev Biol. 2013;381:411–22.",
+      "volume": "381",
+      "year": "2013"
+    },
+    {
+      "author": "K Kuwahara",
+      "first-page": "2742",
+      "issue": "152",
+      "journal-title": "J Immunol Baltim Md",
+      "key": "513_CR53",
+      "unstructured": "Kuwahara K, Matsuo T, Nomura J, Igarashi H, Kimoto M, Inui S, et al. Identification of a 52-kDa molecule (p52) coprecipitated with the Ig receptor-related MB-1 protein that is inducibly phosphorylated by the stimulation with phorbol myristate acetate. J Immunol Baltim Md. 1950;1994(152):2742–52.",
+      "volume": "1994",
+      "year": "1950"
+    },
+    {
+      "DOI": "10.3390/ijms20102606",
+      "author": "E-J Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "2606",
+      "journal-title": "Int J Mol Sci",
+      "key": "513_CR54",
+      "unstructured": "Lee E-J, Kwon OC, Ghang B, Lim D-H, Kim DH, Hong S, et al. Immunoglobulin binding protein 1 as a potential urine biomarker in patients with lupus nephritis. Int J Mol Sci. 2019;20:2606.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1177/0961203320912336",
+      "author": "OC Kwon",
+      "doi-asserted-by": "publisher",
+      "first-page": "547",
+      "journal-title": "Lupus",
+      "key": "513_CR55",
+      "unstructured": "Kwon OC, Lee E-J, Oh JS, Hong S, Lee C-K, Yoo B, et al. Plasma immunoglobulin binding protein 1 as a predictor of development of lupus nephritis. Lupus. 2020;29:547–53.",
+      "volume": "29",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1177/1724600819896374",
+      "author": "S Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "33",
+      "journal-title": "Int J Biol Markers",
+      "key": "513_CR56",
+      "unstructured": "Jiang S, Li D, Liang Z, Wang Y, Pei X, Tang J. High expression of IGBP1 correlates with poor prognosis in esophageal squamous cell carcinoma. Int J Biol Markers. 2020;35:33–40.",
+      "volume": "35",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.117.311802",
+      "author": "T Sallam",
+      "doi-asserted-by": "publisher",
+      "first-page": "155",
+      "journal-title": "Circ Res",
+      "key": "513_CR57",
+      "unstructured": "Sallam T, Sandhu J, Tontonoz P. Long noncoding RNA discovery in cardiovascular disease: decoding form to function. Circ Res. 2018;122:155–66.",
+      "volume": "122",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 57,
+  "references-count": 57,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2629198/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00513-4"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "CVD-associated SNPs with regulatory potential reveal novel non-coding disease genes"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

@@ -1,0 +1,1713 @@
+{
+  "DOI": "10.1007/s00439-023-02572-y",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-023-02572-y",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eFatty acid elongase ELOVL5 is part of a protein family of multipass transmembrane proteins that reside in the endoplasmic reticulum where they regulate long-chain fatty acid elongation. A missense variant (c.689G\u0026gt;T p.Gly230Val) in \u003cjats:italic\u003eELOVL5\u003c/jats:italic\u003e causes Spinocerebellar Ataxia subtype 38 (SCA38), a neurodegenerative disorder characterized by autosomal dominant inheritance, cerebellar Purkinje cell demise and adult-onset ataxia. Having previously showed aberrant accumulation of p.G230V in the Golgi complex, here we further investigated the pathogenic mechanisms triggered by p.G230V, integrating functional studies with bioinformatic analyses of protein sequence and structure. Biochemical analysis showed that p.G230V enzymatic activity was normal. In contrast, SCA38-derived fibroblasts showed reduced expression of ELOVL5, Golgi complex enlargement and increased proteasomal degradation with respect to controls. By heterologous overexpression, p.G230V was significantly more active than wild-type ELOVL5 in triggering the unfolded protein response and in decreasing viability in mouse cortical neurons. By homology modelling, we generated native and p.G230V protein structures whose superposition revealed a shift in Loop 6 in p.G230V that altered a highly conserved intramolecular disulphide bond. The conformation of this bond, connecting Loop 2 and Loop 6, appears to be elongase-specific. Alteration of this intramolecular interaction was also observed when comparing wild-type ELOVL4 and the p.W246G variant which causes SCA34. We demonstrate by sequence and structure analyses that ELOVL5 p.G230V and ELOVL4 p.W246G are position-equivalent missense variants. We conclude that SCA38 is a conformational disease and propose combined loss of function by mislocalization and gain of toxic function by ER/Golgi stress as early events in SCA38 pathogenesis.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2572"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "22 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "10 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "18 May 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "On behalf of all authors, the corresponding author states that there is no conflict of interest."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "This study was performed in line with the principles of the Declaration of Helsinki. Approval was granted by the local Institutional Review Board (Comitato Etico Interaziendale A.O.U. Città della Salute e della Scienza di Torino). Animal care and experimental procedures were conducted in accordance with the University of Trento ethics committee and were approved by the Italian Ministry of Health."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Informed consent was obtained from all individual participants included in the study."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Ferrero",
+      "given": "Enza",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Di Gregorio",
+      "given": "Eleonora",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ferrero",
+      "given": "Marta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ortolan",
+      "given": "Erika",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moon",
+      "given": "Young-Ah",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Di Campli",
+      "given": "Antonella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pavinato",
+      "given": "Lisa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mancini",
+      "given": "Cecilia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tripathy",
+      "given": "Debasmita",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Manes",
+      "given": "Marta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoxha",
+      "given": "Eriola",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Costanzi",
+      "given": "Chiara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pozzi",
+      "given": "Elisa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rossi Sebastiano",
+      "given": "Matteo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mitro",
+      "given": "Nico",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tempia",
+      "given": "Filippo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Caruso",
+      "given": "Donatella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Borroni",
+      "given": "Barbara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Basso",
+      "given": "Manuela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sallese",
+      "given": "Michele",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8318-7231",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Brusco",
+      "given": "Alfredo",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        18
+      ]
+    ],
+    "date-time": "2023-05-18T10:02:01Z",
+    "timestamp": 1684404121000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        24
+      ]
+    ],
+    "date-time": "2023-08-24T04:22:23Z",
+    "timestamp": 1692850943000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100002426",
+      "award": [
+        "GGP14225",
+        "GGP12220"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Fondazione Telethon"
+    },
+    {
+      "DOI": "10.13039/501100021856",
+      "award": [
+        "20203P8C3X"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Ministero dell'Università e della Ricerca"
+    },
+    {
+      "DOI": "10.13039/100015918",
+      "award": [
+        "RiLo"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Dipartimento di Scienze Mediche, Università degli Studi di Torino"
+    },
+    {
+      "DOI": "10.13039/501100004085",
+      "award": [
+        "2021R1A2C1012480"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Ministry of Education, Science and Technology"
+    },
+    {
+      "DOI": "10.13039/501100006692",
+      "doi-asserted-by": "crossref",
+      "name": "Università degli Studi di Torino"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T03:39:25Z",
+    "timestamp": 1709264365604
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        18
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          8
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            18
+          ]
+        ],
+        "date-time": "2023-05-18T00:00:00Z",
+        "timestamp": 1684368000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            18
+          ]
+        ],
+        "date-time": "2023-05-18T00:00:00Z",
+        "timestamp": 1684368000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02572-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-023-02572-y/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02572-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1055-1076",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        18
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        18
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        8
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1007/s12035-020-02052-8",
+      "author": "MP Agbaga",
+      "doi-asserted-by": "publisher",
+      "first-page": "4735",
+      "journal-title": "Mol Neurobiol",
+      "key": "2572_CR1",
+      "unstructured": "Agbaga MP, Stiles MA, Brush RS, Sullivan MT, Machalinski A, Jones KL, Anderson RE, Sherry DM (2020) The Elovl4 spinocerebellar ataxia-34 mutation 736T\u003eG (p. W246G) impairs retinal function in the absence of photoreceptor degeneration. Mol Neurobiol 57:4735–4753. https://doi.org/10.1007/s12035-020-02052-8",
+      "volume": "57",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41582-018-0051-6",
+      "author": "T Ashizawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "590",
+      "journal-title": "Nat Rev Neurol",
+      "key": "2572_CR2",
+      "unstructured": "Ashizawa T, Oz G, Paulson HL (2018) Spinocerebellar ataxias: prospects and challenges for therapy development. Nat Rev Neurol 14:590–605. https://doi.org/10.1038/s41582-018-0051-6",
+      "volume": "14",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1242/dmm.047548",
+      "author": "R Atkinson",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Dis Model Mech",
+      "key": "2572_CR3",
+      "unstructured": "Atkinson R, Leung J, Bender J, Kirkcaldie M, Vickers J, King A (2021) TDP-43 mislocalization drives neurofilament changes in a novel model of TDP-43 proteinopathy. Dis Model Mech. https://doi.org/10.1242/dmm.047548",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1126/science.aac4354",
+      "author": "D Balchin",
+      "doi-asserted-by": "publisher",
+      "first-page": "aac4354",
+      "journal-title": "Science",
+      "key": "2572_CR4",
+      "unstructured": "Balchin D, Hayer-Hartl M, Hartl FU (2016) In vivo aspects of protein folding and quality control. Science 353:aac4354. https://doi.org/10.1126/science.aac4354",
+      "volume": "353",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/0470867302",
+      "author": "MR Barnes",
+      "doi-asserted-by": "publisher",
+      "key": "2572_CR5",
+      "unstructured": "Barnes MR, Gray IC (2003) Bioinformatics for geneticists. Wiley, New York",
+      "volume-title": "Bioinformatics for geneticists",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1523/JNEUROSCI.3353-11.2012",
+      "author": "M Basso",
+      "doi-asserted-by": "publisher",
+      "first-page": "6561",
+      "journal-title": "J Neurosci",
+      "key": "2572_CR6",
+      "unstructured": "Basso M, Berlin J, Xia L, Sleiman SF, Ko B, Haskew-Layton R, Kim E, Antonyak MA, Cerione RA, Iismaa SE, Willis D, Cho S, Ratan RR (2012) Transglutaminase inhibition protects against oxidative stress-induced neuronal death downstream of pathological ERK activation. J Neurosci 32:6561–6569. https://doi.org/10.1523/JNEUROSCI.3353-11.2012",
+      "volume": "32",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/nrn3820",
+      "author": "RP Bazinet",
+      "doi-asserted-by": "publisher",
+      "first-page": "771",
+      "journal-title": "Nat Rev Neurosci",
+      "key": "2572_CR7",
+      "unstructured": "Bazinet RP, Laye S (2014) Polyunsaturated fatty acids and their metabolites in brain function and disease. Nat Rev Neurosci 15:771–785. https://doi.org/10.1038/nrn3820",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/pmic.201600391",
+      "author": "TJ Bechtel",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Proteomics",
+      "key": "2572_CR8",
+      "unstructured": "Bechtel TJ, Weerapana E (2017) From structure to redox: the diverse functional roles of disulfides and implications in disease. Proteomics. https://doi.org/10.1002/pmic.201600391",
+      "year": "2017"
+    },
+    {
+      "author": "PS Bernstein",
+      "first-page": "3331",
+      "journal-title": "Investig Ophthalmol vis Sci",
+      "key": "2572_CR9",
+      "unstructured": "Bernstein PS, Tammur J, Singh N, Hutchinson A, Dixon M, Pappas CM, Zabriskie NA, Zhang K, Petrukhin K, Leppert M, Allikmets R (2001) Diverse macular dystrophy phenotype caused by a novel complex mutation in the ELOVL4 gene. Investig Ophthalmol vis Sci 42:3331–3336",
+      "volume": "42",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0184900",
+      "author": "A Boot",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0184900",
+      "journal-title": "PLoS ONE",
+      "key": "2572_CR10",
+      "unstructured": "Boot A, Oosting J, van Eendenburg JDH, Kuppen PJK, Morreau H, van Wezel T (2017) Methylation associated transcriptional repression of ELOVL5 in novel colorectal cancer cell lines. PLoS ONE 12:e0184900. https://doi.org/10.1371/journal.pone.0184900",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.parkreldis.2016.04.030",
+      "author": "B Borroni",
+      "doi-asserted-by": "publisher",
+      "first-page": "80",
+      "journal-title": "Parkinsonism Relat Disord",
+      "key": "2572_CR11",
+      "unstructured": "Borroni B, Di Gregorio E, Orsi L, Vaula G, Costanzi C, Tempia F, Mitro N, Caruso D, Manes M, Pinessi L, Padovani A, Brusco A, Boccone L (2016) Clinical and neuroradiological features of spinocerebellar ataxia 38 (SCA38). Parkinsonism Relat Disord 28:80–86. https://doi.org/10.1016/j.parkreldis.2016.04.030",
+      "volume": "28",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1097/MCO.0000000000000810",
+      "author": "JT Brenna",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Curr Opin Clin Nutr Metab Care",
+      "key": "2572_CR12",
+      "unstructured": "Brenna JT, Kothapalli KSD (2021) New understandings of the pathway of long-chain polyunsaturated fatty acid biosynthesis. Curr Opin Clin Nutr Metab Care. https://doi.org/10.1097/MCO.0000000000000810",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0173924",
+      "author": "K Briant",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0173924",
+      "journal-title": "PLoS ONE",
+      "key": "2572_CR13",
+      "unstructured": "Briant K, Johnson N, Swanton E (2017) Transmembrane domain quality control systems operate at the endoplasmic reticulum and Golgi apparatus. PLoS ONE 12:e0173924. https://doi.org/10.1371/journal.pone.0173924",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "key": "2572_CR14",
+      "unstructured": "Brusco A, Di Gregorio E, Borroni B (2019) Spinocerebellar ataxia type 38. In: Adam MP, Mirzaa GM, Pagon RA et al (eds) GeneReviews® [Internet]. University of Washington, Seattle. Available from: https://www.ncbi.nlm.nih.gov/books/NBK543515/"
+    },
+    {
+      "DOI": "10.3978/j.issn.2305-5839.2016.01.06",
+      "author": "DD Bushart",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "journal-title": "Ann Transl Med",
+      "key": "2572_CR15",
+      "unstructured": "Bushart DD, Murphy GG, Shakkottai VG (2016) Precision medicine in spinocerebellar ataxias: treatment based on common mechanisms of disease. Ann Transl Med 4:25. https://doi.org/10.3978/j.issn.2305-5839.2016.01.06",
+      "volume": "4",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1001/jamaneurol.2013.6337",
+      "author": "M Cadieux-Dion",
+      "doi-asserted-by": "publisher",
+      "first-page": "470",
+      "journal-title": "JAMA Neurol",
+      "key": "2572_CR16",
+      "unstructured": "Cadieux-Dion M, Turcotte-Gauthier M, Noreau A, Martin C, Meloche C, Gravel M, Drouin CA, Rouleau GA, Nguyen DK, Cossette P (2014) Expanding the clinical phenotype associated with ELOVL4 mutation: study of a large French–Canadian family with autosomal dominant spinocerebellar ataxia and erythrokeratodermia. JAMA Neurol 71:470–475. https://doi.org/10.1001/jamaneurol.2013.6337",
+      "volume": "71",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gki375",
+      "author": "E Capriotti",
+      "doi-asserted-by": "publisher",
+      "first-page": "W306",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2572_CR17",
+      "unstructured": "Capriotti E, Fariselli P, Casadio R (2005) I-Mutant2.0: predicting stability changes upon mutation from the protein sequence or structure. Nucleic Acids Res 33:W306–W310. https://doi.org/10.1093/nar/gki375",
+      "volume": "33",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-S2-S6",
+      "author": "E Capriotti",
+      "doi-asserted-by": "publisher",
+      "first-page": "S6",
+      "issue": "Suppl 2",
+      "journal-title": "BMC Bioinform",
+      "key": "2572_CR18",
+      "unstructured": "Capriotti E, Fariselli P, Rossi I, Casadio R (2008) A three-state prediction of single point mutations on protein stability changes. BMC Bioinform 9(Suppl 2):S6. https://doi.org/10.1186/1471-2105-9-S2-S6",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-20-2511",
+      "author": "MM Centenera",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cancer Res",
+      "key": "2572_CR19",
+      "unstructured": "Centenera MM, Scott JS, Machiels J, Nassar ZD, Miller DC, Zininos I, Dehairs J, Burvenich IJG, Zadra G, Chetta P, Bango C, Evergren E, Ryan NK, Gillis JL, Mah CY, Tieu T, Hanson AR, Carelli R, Bloch K, Panagopoulos V, Waelkens E, Derua R, Williams ED, Evdokioou A, Cifuentes-Rius A, Voelcker NH, Mills IG, Tilley WD, Scott AM, Loda M, Selth LA, Swinnen JV, Butler LM (2021) ELOVL5 is a critical and targetable fatty acid elongase in prostate cancer. Cancer Res. https://doi.org/10.1158/0008-5472.CAN-20-2511",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/emm.2014.117",
+      "author": "A Ciechanover",
+      "doi-asserted-by": "publisher",
+      "first-page": "e147",
+      "journal-title": "Exp Mol Med",
+      "key": "2572_CR20",
+      "unstructured": "Ciechanover A, Kwon YT (2015) Degradation of misfolded proteins in neurodegenerative diseases: therapeutic targets and strategies. Exp Mol Med 47:e147. https://doi.org/10.1038/emm.2014.117",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-385952-5.00008-7",
+      "author": "PM Conn",
+      "doi-asserted-by": "publisher",
+      "first-page": "109",
+      "journal-title": "Adv Pharmacol",
+      "key": "2572_CR21",
+      "unstructured": "Conn PM, Ulloa-Aguirre A (2011) Pharmacological chaperones for misfolded gonadotropin-releasing hormone receptors. Adv Pharmacol 62:109–141. https://doi.org/10.1016/B978-0-12-385952-5.00008-7",
+      "volume": "62",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.tcb.2013.05.005",
+      "author": "P Cosson",
+      "doi-asserted-by": "publisher",
+      "first-page": "511",
+      "journal-title": "Trends Cell Biol",
+      "key": "2572_CR22",
+      "unstructured": "Cosson P, Perrin J, Bonifacino JS (2013) Anchors aweigh: protein localization and transport mediated by transmembrane domains. Trends Cell Biol 23:511–517. https://doi.org/10.1016/j.tcb.2013.05.005",
+      "volume": "23",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/s12575-019-0111-3",
+      "author": "S Creedican",
+      "doi-asserted-by": "publisher",
+      "first-page": "22",
+      "journal-title": "Biol Proced Online",
+      "key": "2572_CR23",
+      "unstructured": "Creedican S, Talty A, Fitzgerald SP, Samali A, Richardson C, Gorman AM, Martin K (2019) Application of a new multiplexed array for rapid, sensitive, simultaneous and quantitative assessment of spliced and unspliced XBP1. Biol Proced Online 21:22. https://doi.org/10.1186/s12575-019-0111-3",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fncel.2019.00428",
+      "author": "F Deak",
+      "doi-asserted-by": "publisher",
+      "first-page": "428",
+      "journal-title": "Front Cell Neurosci",
+      "key": "2572_CR24",
+      "unstructured": "Deak F, Anderson RE, Fessler JL, Sherry DM (2019) Novel cellular functions of very long chain-fatty acids: insight from ELOVL4 mutations. Front Cell Neurosci 13:428. https://doi.org/10.3389/fncel.2019.00428",
+      "volume": "13",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.cell.2007.06.031",
+      "author": "V Denic",
+      "doi-asserted-by": "publisher",
+      "first-page": "663",
+      "journal-title": "Cell",
+      "key": "2572_CR25",
+      "unstructured": "Denic V, Weissman JS (2007) A molecular caliper mechanism for determining very long-chain fatty acid length. Cell 130:663–677. https://doi.org/10.1016/j.cell.2007.06.031",
+      "volume": "130",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/nrg1672",
+      "author": "MA DePristo",
+      "doi-asserted-by": "publisher",
+      "first-page": "678",
+      "journal-title": "Nat Rev Genet",
+      "key": "2572_CR26",
+      "unstructured": "DePristo MA, Weinreich DM, Hartl DL (2005) Missense meanderings in sequence space: a biophysical view of protein evolution. Nat Rev Genet 6:678–687. https://doi.org/10.1038/nrg1672",
+      "volume": "6",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.07.001",
+      "author": "E Di Gregorio",
+      "doi-asserted-by": "publisher",
+      "first-page": "209",
+      "journal-title": "Am J Hum Genet",
+      "key": "2572_CR27",
+      "unstructured": "Di Gregorio E, Borroni B, Giorgio E, Lacerenza D, Ferrero M, Lo Buono N, Ragusa N, Mancini C, Gaussen M, Calcia A, Mitro N, Hoxha E, Mura I, Coviello DA, Moon YA, Tesson C, Vaula G, Couarch P, Orsi L, Duregon E, Papotti MG, Deleuze JF, Imbert J, Costanzi C, Padovani A, Giunti P, Maillet-Vioud M, Durr A, Brice A, Tempia F, Funaro A, Boccone L, Caruso D, Stevanin G, Brusco A (2014) ELOVL5 mutations cause spinocerebellar ataxia 38. Am J Hum Genet 95:209–217. https://doi.org/10.1016/j.ajhg.2014.07.001",
+      "volume": "95",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.febslet.2013.11.024",
+      "author": "AA Dombkowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "206",
+      "journal-title": "FEBS Lett",
+      "key": "2572_CR28",
+      "unstructured": "Dombkowski AA, Sultana KZ, Craig DB (2014) Protein disulfide engineering. FEBS Lett 588:206–212. https://doi.org/10.1016/j.febslet.2013.11.024",
+      "volume": "588",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gkg563",
+      "author": "E Gasteiger",
+      "doi-asserted-by": "publisher",
+      "first-page": "3784",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2572_CR29",
+      "unstructured": "Gasteiger E, Gattiker A, Hoogland C, Ivanyi I, Appel RD, Bairoch A (2003) ExPASy: the proteomics server for in-depth protein knowledge and analysis. Nucleic Acids Res 31:3784–3788. https://doi.org/10.1093/nar/gkg563",
+      "volume": "31",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1007/s00415-020-09840-1",
+      "author": "J Gazulla",
+      "doi-asserted-by": "publisher",
+      "first-page": "2288",
+      "journal-title": "J Neurol",
+      "key": "2572_CR30",
+      "unstructured": "Gazulla J, Orduna-Hospital E, Benavente I, Rodriguez-Valle A, Osorio-Caicedo P, Alvarez-de Andres S, Garcia-Gonzalez E, Fraile-Rodrigo J, Fernandez-Tirado FJ, Berciano J (2020) Contributions to the study of spinocerebellar ataxia type 38 (SCA38). J Neurol 267:2288–2295. https://doi.org/10.1007/s00415-020-09840-1",
+      "volume": "267",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1001/archderm.1972.01620110019005",
+      "author": "JM Giroux",
+      "doi-asserted-by": "publisher",
+      "first-page": "183",
+      "journal-title": "Arch Dermatol",
+      "key": "2572_CR31",
+      "unstructured": "Giroux JM, Barbeau A (1972) Erythrokeratodermia with ataxia. Arch Dermatol 106:183–188",
+      "volume": "106",
+      "year": "1972"
+    },
+    {
+      "DOI": "10.1194/jlr.M041368",
+      "author": "MK Gregory",
+      "doi-asserted-by": "publisher",
+      "first-page": "2851",
+      "journal-title": "J Lipid Res",
+      "key": "2572_CR32",
+      "unstructured": "Gregory MK, Cleland LG, James MJ (2013) Molecular basis for differential elongation of omega-3 docosapentaenoic acid by the rat Elovl5 and Elovl2. J Lipid Res 54:2851–2857. https://doi.org/10.1194/jlr.M041368",
+      "volume": "54",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.jlr.2022.100317",
+      "author": "YK Gyening",
+      "doi-asserted-by": "publisher",
+      "first-page": "100317",
+      "journal-title": "J Lipid Res",
+      "key": "2572_CR33",
+      "unstructured": "Gyening YK, Chauhan NK, Tytanic M, Ea V, Brush RS, Agbaga MP (2023) ELOVL4 mutations that cause spinocerebellar ataxia-34 differentially alter very long chain fatty acid biosynthesis. J Lipid Res 64:100317. https://doi.org/10.1016/j.jlr.2022.100317",
+      "volume": "64",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1016/j.biochi.2020.01.013",
+      "author": "M Hachem",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Biochimie",
+      "key": "2572_CR34",
+      "unstructured": "Hachem M, Belkouch M, Van Lo A, Picq M, Bernoud-Hubac N, Lagarde M (2020) Brain targeting with docosahexaenoic acid as a prospective therapy for neurodegenerative diseases and its passage across blood brain barrier. Biochimie 170:203–211. https://doi.org/10.1016/j.biochi.2020.01.013",
+      "volume": "170",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1146/annurev-biochem-061516-044518",
+      "author": "FU Hartl",
+      "doi-asserted-by": "publisher",
+      "first-page": "21",
+      "journal-title": "Annu Rev Biochem",
+      "key": "2572_CR35",
+      "unstructured": "Hartl FU (2017) Protein misfolding diseases. Annu Rev Biochem 86:21–26. https://doi.org/10.1146/annurev-biochem-061516-044518",
+      "volume": "86",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/2020.01.31.929224",
+      "author": "YY Hayashi",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BioArchive",
+      "key": "2572_CR36",
+      "unstructured": "Hayashi YY, Kono N, Arai H, Fujiwara Y, Ichi I (2020) Phosphorylation of Elovl5 changes its substrate preference to synthesize Mead acid in response to essential fatty acid deficiency. BioArchive. https://doi.org/10.1101/2020.01.31.929224",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fncel.2017.00343",
+      "author": "E Hoxha",
+      "doi-asserted-by": "publisher",
+      "first-page": "343",
+      "journal-title": "Front Cell Neurosci",
+      "key": "2572_CR37",
+      "unstructured": "Hoxha E, Gabriele RMC, Balbo I, Ravera F, Masante L, Zambelli V, Albergo C, Mitro N, Caruso D, Di Gregorio E, Brusco A, Borroni B, Tempia F (2017) Motor deficits and cerebellar atrophy in Elovl5 knock out mice. Front Cell Neurosci 11:343. https://doi.org/10.3389/fncel.2017.00343",
+      "volume": "11",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.neulet.2018.02.004",
+      "author": "M Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "journal-title": "Neurosci Lett",
+      "key": "2572_CR38",
+      "unstructured": "Huang M, Verbeek DS (2019) Why do so many genetic insults lead to Purkinje cell degeneration and spinocerebellar ataxia? Neurosci Lett 688:49–57. https://doi.org/10.1016/j.neulet.2018.02.004",
+      "volume": "688",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41598-018-33238-9",
+      "author": "JY Hwang",
+      "doi-asserted-by": "publisher",
+      "first-page": "14862",
+      "journal-title": "Sci Rep",
+      "key": "2572_CR39",
+      "unstructured": "Hwang JY, Lee HJ, Go MJ, Jang HB, Choi NH, Bae JB, Castillo-Fernandez JE, Bell JT, Spector TD, Lee HJ, Kim BJ (2018) Genome-wide methylation analysis identifies ELOVL5 as an epigenetic biomarker for the risk of type 2 diabetes mellitus. Sci Rep 8:14862. https://doi.org/10.1038/s41598-018-33238-9",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1073/pnas.2002660117",
+      "author": "S Iqbal",
+      "doi-asserted-by": "publisher",
+      "first-page": "28201",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "2572_CR40",
+      "unstructured": "Iqbal S, Perez-Palma E, Jespersen JB, May P, Hoksza D, Heyne HO, Ahmed SS, Rifat ZT, Rahman MS, Lage K, Palotie A, Cottrell JR, Wagner FF, Daly MJ, Campbell AJ, Lal D (2020) Comprehensive characterization of amino acid positions in protein structures reveals molecular effect of missense variants. Proc Natl Acad Sci USA 117:28201–28211. https://doi.org/10.1073/pnas.2002660117",
+      "volume": "117",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.15252/embr.201643426",
+      "author": "J Jacquemyn",
+      "doi-asserted-by": "publisher",
+      "first-page": "1905",
+      "journal-title": "EMBO Rep",
+      "key": "2572_CR41",
+      "unstructured": "Jacquemyn J, Cascalho A, Goodchild RE (2017) The ins and outs of endoplasmic reticulum-controlled lipid biosynthesis. EMBO Rep 18:1905–1921. https://doi.org/10.15252/embr.201643426",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.plipres.2006.01.004",
+      "author": "A Jakobsson",
+      "doi-asserted-by": "publisher",
+      "first-page": "237",
+      "journal-title": "Prog Lipid Res",
+      "key": "2572_CR42",
+      "unstructured": "Jakobsson A, Westerberg R, Jacobsson A (2006) Fatty acid elongases in mammals: their regulation and roles in metabolism. Prog Lipid Res 45:237–249. https://doi.org/10.1016/j.plipres.2006.01.004",
+      "volume": "45",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1007/978-1-60761-322-0_19",
+      "author": "DB Jump",
+      "doi-asserted-by": "publisher",
+      "first-page": "375",
+      "journal-title": "Methods Mol Biol",
+      "key": "2572_CR43",
+      "unstructured": "Jump DB (2009) Mammalian fatty acid elongases. Methods Mol Biol 579:375–389. https://doi.org/10.1007/978-1-60761-322-0_19",
+      "volume": "579",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03819-2",
+      "author": "J Jumper",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nature",
+      "key": "2572_CR44",
+      "unstructured": "Jumper J, Evans R, Pritzel A, Green T, Figurnov M, Ronneberger O, Tunyasuvunakool K, Bates R, Zidek A, Potapenko A, Bridgland A, Meyer C, Kohl SAA, Ballard AJ, Cowie A, Romera-Paredes B, Nikolov S, Jain R, Adler J, Back T, Petersen S, Reiman D, Clancy E, Zielinski M, Steinegger M, Pacholska M, Berghammer T, Bodenstein S, Silver D, Vinyals O, Senior AW, Kavukcuoglu K, Kohli P, Hassabis D (2021) Highly accurate protein structure prediction with AlphaFold. Nature. https://doi.org/10.1038/s41586-021-03819-2",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "2572_CR45",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alfoldi J, Wang Q, Collins RL, Laricchia KM, Ganna A, Birnbaum DP, Gauthier LD, Brand H, Solomonson M, Watts NA, Rhodes D, Singer-Berk M, England EM, Seaby EG, Kosmicki JA, Walters RK, Tashman K, Farjoun Y, Banks E, Poterba T, Wang A, Seed C, Whiffin N, Chong JX, Samocha KE, Pierce-Hoffman E, Zappala Z, O’Donnell-Luria AH, Minikel EV, Weisburd B, Lek M, Ware JS, Vittal C, Armean IM, Bergelson L, Cibulskis K, Connolly KM, Covarrubias M, Donnelly S, Ferriera S, Gabriel S, Gentry J, Gupta N, Jeandet T, Kaplan D, Llanwarne C, Munshi R, Novod S, Petrillo N, Roazen D, Ruano-Rubio V, Saltzman A, Schleicher M, Soto J, Tibbetts K, Tolonen C, Wade G, Talkowski ME, Genome Aggregation Database C, Neale BM, Daly MJ, MacArthur DG (2020) The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 581:434–443. https://doi.org/10.1038/s41586-020-2308-7",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bib/bbx108",
+      "author": "K Katoh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1160",
+      "journal-title": "Brief Bioinform",
+      "key": "2572_CR46",
+      "unstructured": "Katoh K, Rozewicki J, Yamada KD (2019) MAFFT online service: multiple sequence alignment, interactive sequence choice and visualization. Brief Bioinform 20:1160–1166. https://doi.org/10.1093/bib/bbx108",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nprot.2015.053",
+      "author": "LA Kelley",
+      "doi-asserted-by": "publisher",
+      "first-page": "845",
+      "journal-title": "Nat Protoc",
+      "key": "2572_CR47",
+      "unstructured": "Kelley LA, Mezulis S, Yates CM, Wass MN, Sternberg MJ (2015) The Phyre2 web portal for protein modeling, prediction and analysis. Nat Protoc 10:845–858. https://doi.org/10.1038/nprot.2015.053",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.tifs.2017.09.003",
+      "author": "OLS Kerdiles",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Trends Food Sci Technol",
+      "key": "2572_CR48",
+      "unstructured": "Kerdiles OLS, Calon F (2017) Omega-3 polyunsaturated fatty acids and brain health: preclinical evidence for the prevention of neurodegenerative diseases. Trends Food Sci Technol 69:203–213. https://doi.org/10.1016/j.tifs.2017.09.003",
+      "volume": "69",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/jb/mvs105",
+      "author": "A Kihara",
+      "doi-asserted-by": "publisher",
+      "first-page": "387",
+      "journal-title": "J Biochem",
+      "key": "2572_CR49",
+      "unstructured": "Kihara A (2012) Very long-chain fatty acids: elongation, physiology and related disorders. J Biochem 152:387–395. https://doi.org/10.1093/jb/mvs105",
+      "volume": "152",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41572-019-0074-3",
+      "author": "T Klockgether",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Nat Rev Dis Primers",
+      "key": "2572_CR50",
+      "unstructured": "Klockgether T, Mariotti C, Paulson HL (2019) Spinocerebellar ataxia. Nat Rev Dis Primers 5:24. https://doi.org/10.1038/s41572-019-0074-3",
+      "volume": "5",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/ijms20225614",
+      "author": "H Kokubun",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Mol Sci",
+      "key": "2572_CR51",
+      "unstructured": "Kokubun H, Jin H, Aoe T (2019) Pathogenic effects of impaired retrieval between the endoplasmic reticulum and golgi complex. Int J Mol Sci. https://doi.org/10.3390/ijms20225614",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty897",
+      "author": "C Kopanos",
+      "doi-asserted-by": "publisher",
+      "first-page": "1978",
+      "journal-title": "Bioinformatics",
+      "key": "2572_CR52",
+      "unstructured": "Kopanos C, Tsiolkas V, Kouris A, Chapple CE, Albarca Aguilera M, Meyer R, Massouras A (2019) VarSome: the human genomic variant search engine. Bioinformatics 35:1978–1980. https://doi.org/10.1093/bioinformatics/bty897",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1136/jclinpath-2019-205952",
+      "author": "GG Kovacs",
+      "doi-asserted-by": "publisher",
+      "first-page": "725",
+      "journal-title": "J Clin Pathol",
+      "key": "2572_CR53",
+      "unstructured": "Kovacs GG (2019) Molecular pathology of neurodegenerative diseases: principles and practice. J Clin Pathol 72:725–735. https://doi.org/10.1136/jclinpath-2019-205952",
+      "volume": "72",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12859-015-0548-6",
+      "author": "J Laimer",
+      "doi-asserted-by": "publisher",
+      "first-page": "116",
+      "journal-title": "BMC Bioinform",
+      "key": "2572_CR54",
+      "unstructured": "Laimer J, Hofer H, Fritz M, Wegenkittl S, Lackner P (2015) MAESTRO—multi agent stability prediction upon point mutations. BMC Bioinform 16:116. https://doi.org/10.1186/s12859-015-0548-6",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s13073-020-00725-6",
+      "author": "D Lal",
+      "doi-asserted-by": "publisher",
+      "first-page": "28",
+      "journal-title": "Genome Med",
+      "key": "2572_CR55",
+      "unstructured": "Lal D, May P, Perez-Palma E, Samocha KE, Kosmicki JA, Robinson EB, Moller RS, Krause R, Nurnberg P, Weckhuysen S, De Jonghe P, Guerrini R, Niestroj LM, Du J, Marini C, Euro E-RESC, Ware JS, Kurki M, Gormley P, Tang S, Wu S, Biskup S, Poduri A, Neubauer BA, Koeleman BPC, Helbig KL, Weber YG, Helbig I, Majithia AR, Palotie A, Daly MJ (2020) Gene family information facilitates variant interpretation and identification of disease-associated genes in neurodevelopmental disorders. Genome Med 12:28. https://doi.org/10.1186/s13073-020-00725-6",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1073/pnas.2006828117",
+      "author": "JY Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "32433",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "2572_CR56",
+      "unstructured": "Lee JY, Nam M, Son HY, Hyun K, Jang SY, Kim JW, Kim MW, Jung Y, Jang E, Yoon SJ, Kim J, Kim J, Seo J, Min JK, Oh KJ, Han BS, Kim WK, Bae KH, Song J, Kim J, Huh YM, Hwang GS, Lee EW, Lee SC (2020) Polyunsaturated fatty acid biosynthesis pathway determines ferroptosis sensitivity in gastric cancer. Proc Natl Acad Sci USA 117:32433–32442. https://doi.org/10.1073/pnas.2006828117",
+      "volume": "117",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.7150/ijbs.3.120",
+      "author": "W Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "120",
+      "journal-title": "Int J Biol Sci",
+      "key": "2572_CR57",
+      "unstructured": "Li W, Sandhoff R, Kono M, Zerfas P, Hoffmann V, Ding BC, Proia RL, Deng CX (2007) Depletion of ceramides with very long chain fatty acids causes defective skin permeability barrier function, and neonatal lethality in ELOVL4 deficient mice. Int J Biol Sci 3:120–128. https://doi.org/10.7150/ijbs.3.120",
+      "volume": "3",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.3390/ijms22020606",
+      "author": "G Li",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Mol Sci",
+      "key": "2572_CR58",
+      "unstructured": "Li G, Panday SK, Alexov E (2021) SAAFEC-SEQ: a sequence-based method for predicting the effect of single point mutations on protein thermodynamic stability. Int J Mol Sci. https://doi.org/10.3390/ijms22020606",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1073/pnas.1608576114",
+      "author": "C Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "346",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "2572_CR59",
+      "unstructured": "Liu C, Mei M, Li Q, Roboti P, Pang Q, Ying Z, Gao F, Lowe M, Bao S (2017) Loss of the golgin GM130 causes Golgi disruption, Purkinje neuron loss, and ataxia in mice. Proc Natl Acad Sci USA 114:346–351. https://doi.org/10.1073/pnas.1608576114",
+      "volume": "114",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3892/ijmm.2021.4871",
+      "author": "J Liu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Mol Med",
+      "key": "2572_CR60",
+      "unstructured": "Liu J, Huang Y, Li T, Jiang Z, Zeng L, Hu Z (2021) The role of the Golgi apparatus in disease (review). Int J Mol Med. https://doi.org/10.3892/ijmm.2021.4871",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1194/jlr.M045443",
+      "author": "S Logan",
+      "doi-asserted-by": "publisher",
+      "first-page": "698",
+      "journal-title": "J Lipid Res",
+      "key": "2572_CR61",
+      "unstructured": "Logan S, Agbaga MP, Chan MD, Brush RS, Anderson RE (2014) Endoplasmic reticulum microenvironment and conserved histidines govern ELOVL4 fatty acid elongase activity. J Lipid Res 55:698–708. https://doi.org/10.1194/jlr.M045443",
+      "volume": "55",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/39923",
+      "author": "SL Lowe",
+      "doi-asserted-by": "publisher",
+      "first-page": "881",
+      "journal-title": "Nature",
+      "key": "2572_CR62",
+      "unstructured": "Lowe SL, Peter F, Subramaniam VN, Wong SH, Hong W (1997) A SNARE involved in protein transport through the Golgi apparatus. Nature 389:881–884. https://doi.org/10.1038/39923",
+      "volume": "389",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2188-x",
+      "author": "K Luck",
+      "doi-asserted-by": "publisher",
+      "first-page": "402",
+      "journal-title": "Nature",
+      "key": "2572_CR63",
+      "unstructured": "Luck K, Kim DK, Lambourne L, Spirohn K, Begg BE, Bian W, Brignall R, Cafarelli T, Campos-Laborie FJ, Charloteaux B, Choi D, Cote AG, Daley M, Deimling S, Desbuleux A, Dricot A, Gebbia M, Hardy MF, Kishore N, Knapp JJ, Kovacs IA, Lemmens I, Mee MW, Mellor JC, Pollis C, Pons C, Richardson AD, Schlabach S, Teeking B, Yadav A, Babor M, Balcha D, Basha O, Bowman-Colin C, Chin SF, Choi SG, Colabella C, Coppin G, D’Amata C, De Ridder D, De Rouck S, Duran-Frigola M, Ennajdaoui H, Goebels F, Goehring L, Gopal A, Haddad G, Hatchi E, Helmy M, Jacob Y, Kassa Y, Landini S, Li R, van Lieshout N, MacWilliams A, Markey D, Paulson JN, Rangarajan S, Rasla J, Rayhan A, Rolland T, San-Miguel A, Shen Y, Sheykhkarimli D, Sheynkman GM, Simonovsky E, Tasan M, Tejeda A, Tropepe V, Twizere JC, Wang Y, Weatheritt RJ, Weile J, Xia Y, Yang X, Yeger-Lotem E, Zhong Q, Aloy P, Bader GD, De Las RJ, Gaudet S, Hao T, Rak J, Tavernier J, Hill DE, Vidal M, Roth FP, Calderwood MA (2020) A reference map of the human binary protein interactome. Nature 580:402–408. https://doi.org/10.1038/s41586-020-2188-x",
+      "volume": "580",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3945/jn.108.096016",
+      "author": "WJ Lukiw",
+      "doi-asserted-by": "publisher",
+      "first-page": "2510",
+      "journal-title": "J Nutr",
+      "key": "2572_CR64",
+      "unstructured": "Lukiw WJ, Bazan NG (2008) Docosahexaenoic acid and the aging brain. J Nutr 138:2510–2514. https://doi.org/10.3945/jn.108.096016",
+      "volume": "138",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.3389/fnins.2015.00421",
+      "author": "CE Machamer",
+      "doi-asserted-by": "publisher",
+      "first-page": "421",
+      "journal-title": "Front Neurosci",
+      "key": "2572_CR65",
+      "unstructured": "Machamer CE (2015) The Golgi complex in stress and death. Front Neurosci 9:421. https://doi.org/10.3389/fnins.2015.00421",
+      "volume": "9",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1146/annurev-cellbio-040320-120625",
+      "author": "GR Mallucci",
+      "doi-asserted-by": "publisher",
+      "first-page": "165",
+      "journal-title": "Annu Rev Cell Dev Biol",
+      "key": "2572_CR66",
+      "unstructured": "Mallucci GR, Klenerman D, Rubinsztein DC (2020) Developing therapies for neurodegenerative disorders: insights from protein aggregation and cellular stress responses. Annu Rev Cell Dev Biol 36:165–189. https://doi.org/10.1146/annurev-cellbio-040320-120625",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/ana.25059",
+      "author": "M Manes",
+      "doi-asserted-by": "publisher",
+      "first-page": "615",
+      "journal-title": "Ann Neurol",
+      "key": "2572_CR67",
+      "unstructured": "Manes M, Alberici A, Di Gregorio E, Boccone L, Premi E, Mitro N, Pasolini MP, Pani C, Paghera B, Perani D, Orsi L, Costanzi C, Ferrero M, Zoppo A, Tempia F, Caruso D, Grassi M, Padovani A, Brusco A, Borroni B (2017) Docosahexaenoic acid is a beneficial replacement treatment for spinocerebellar ataxia 38. Ann Neurol 82:615–621. https://doi.org/10.1002/ana.25059",
+      "volume": "82",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.parkreldis.2019.02.040",
+      "author": "M Manes",
+      "doi-asserted-by": "publisher",
+      "first-page": "191",
+      "journal-title": "Parkinsonism Relat Disord",
+      "key": "2572_CR68",
+      "unstructured": "Manes M, Alberici A, Di Gregorio E, Boccone L, Premi E, Mitro N, Pasolini MP, Pani C, Paghera B, Orsi L, Costanzi C, Ferrero M, Tempia F, Caruso D, Padovani A, Brusco A, Borroni B (2019) Long-term efficacy of docosahexaenoic acid (DHA) for spinocerebellar ataxia 38 (SCA38) treatment: an open label extension study. Parkinsonism Relat Disord 63:191–194. https://doi.org/10.1016/j.parkreldis.2019.02.040",
+      "volume": "63",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1000613",
+      "author": "JF Matias Rodrigues",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1000613",
+      "journal-title": "PLoS Comput Biol",
+      "key": "2572_CR69",
+      "unstructured": "Matias Rodrigues JF, Wagner A (2009) Evolutionary plasticity and innovations in complex metabolic reaction networks. PLoS Comput Biol 5:e1000613. https://doi.org/10.1371/journal.pcbi.1000613",
+      "volume": "5",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.bbagen.2019.04.003",
+      "author": "M Matsusaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "129338",
+      "journal-title": "Biochim Biophys Acta Gen Subj",
+      "key": "2572_CR70",
+      "unstructured": "Matsusaki M, Kanemura S, Kinoshita M, Lee YH, Inaba K, Okumura M (2020) The protein disulfide isomerase family: from proteostasis to pathogenesis. Biochim Biophys Acta Gen Subj 1864:129338. https://doi.org/10.1016/j.bbagen.2019.04.003",
+      "volume": "1864",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1155/2013/6747514",
+      "author": "S Matus",
+      "doi-asserted-by": "publisher",
+      "first-page": "674751",
+      "journal-title": "Int J Cell Biol",
+      "key": "2572_CR71",
+      "unstructured": "Matus S, Valenzuela V, Medinas DB, Hetz C (2013) ER dysfunction and protein folding stress in ALS. Int J Cell Biol 2013:674751. https://doi.org/10.1155/2013/6747514",
+      "volume": "2013",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1167/iovs.04-0078",
+      "author": "A Maugeri",
+      "doi-asserted-by": "publisher",
+      "first-page": "4263",
+      "journal-title": "Investig Ophthalmol vis Sci",
+      "key": "2572_CR72",
+      "unstructured": "Maugeri A, Meire F, Hoyng CB, Vink C, Van Regemorter N, Karan G, Yang Z, Cremers FP, Zhang K (2004) A novel mutation in the ELOVL4 gene causes autosomal dominant Stargardt-like macular dystrophy. Investig Ophthalmol vis Sci 45:4263–4267. https://doi.org/10.1167/iovs.04-0078",
+      "volume": "45",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1038/srep20510",
+      "author": "O Monroig",
+      "doi-asserted-by": "publisher",
+      "first-page": "20510",
+      "journal-title": "Sci Rep",
+      "key": "2572_CR73",
+      "unstructured": "Monroig O, Lopes-Marques M, Navarro JC, Hontoria F, Ruivo R, Santos MM, Venkatesh B, Tocher DR, Castro LF (2016) Evolutionary functional elaboration of the Elovl2/5 gene family in chordates. Sci Rep 6:20510. https://doi.org/10.1038/srep20510",
+      "volume": "6",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1074/jbc.M108413200",
+      "author": "YA Moon",
+      "doi-asserted-by": "publisher",
+      "first-page": "45358",
+      "journal-title": "J Biol Chem",
+      "key": "2572_CR74",
+      "unstructured": "Moon YA, Shah NA, Mohapatra S, Warrington JA, Horton JD (2001) Identification of a mammalian long chain fatty acyl elongase regulated by sterol regulatory element-binding proteins. J Biol Chem 276:45358–45366. https://doi.org/10.1074/jbc.M108413200",
+      "volume": "276",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1194/jlr.M800383-JLR200",
+      "author": "YA Moon",
+      "doi-asserted-by": "publisher",
+      "first-page": "412",
+      "journal-title": "J Lipid Res",
+      "key": "2572_CR75",
+      "unstructured": "Moon YA, Hammer RE, Horton JD (2009) Deletion of ELOVL5 leads to fatty liver through activation of SREBP-1c in mice. J Lipid Res 50:412–423. https://doi.org/10.1194/jlr.M800383-JLR200",
+      "volume": "50",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1146/annurev-genet-110711-155644",
+      "author": "KA Moore",
+      "doi-asserted-by": "publisher",
+      "first-page": "165",
+      "journal-title": "Annu Rev Genet",
+      "key": "2572_CR76",
+      "unstructured": "Moore KA, Hollien J (2012) The unfolded protein response in secretory cell function. Annu Rev Genet 46:165–183. https://doi.org/10.1146/annurev-genet-110711-155644",
+      "volume": "46",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41594-021-00605-6",
+      "author": "L Nie",
+      "doi-asserted-by": "publisher",
+      "first-page": "512",
+      "journal-title": "Nat Struct Mol Biol",
+      "key": "2572_CR77",
+      "unstructured": "Nie L, Pascoa TC, Pike ACW, Bushell SR, Quigley A, Ruda GF, Chu A, Cole V, Speedman D, Moreira T, Shrestha L, Mukhopadhyay SMM, Burgess-Brown NA, Love JD, Brennan PE, Carpenter EP (2021) The structural basis of fatty acid elongation by the ELOVL elongases. Nat Struct Mol Biol 28:512–520. https://doi.org/10.1038/s41594-021-00605-6",
+      "volume": "28",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1073/pnas.1005572107",
+      "author": "Y Ohno",
+      "doi-asserted-by": "publisher",
+      "first-page": "18439",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "2572_CR78",
+      "unstructured": "Ohno Y, Suto S, Yamanaka M, Mizutani Y, Mitsutake S, Igarashi Y, Sassa T, Kihara A (2010) ELOVL1 production of C24 acyl-CoAs is linked to C24 sphingolipid synthesis. Proc Natl Acad Sci USA 107:18439–18444. https://doi.org/10.1073/pnas.1005572107",
+      "volume": "107",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.bbamcr.2013.02.007",
+      "author": "OB Oka",
+      "doi-asserted-by": "publisher",
+      "first-page": "2425",
+      "journal-title": "Biochim Biophys Acta",
+      "key": "2572_CR79",
+      "unstructured": "Oka OB, Bulleid NJ (2013) Forming disulfides in the endoplasmic reticulum. Biochim Biophys Acta 1833:2425–2429. https://doi.org/10.1016/j.bbamcr.2013.02.007",
+      "volume": "1833",
+      "year": "2013"
+    },
+    {
+      "author": "A Okuda",
+      "first-page": "2438",
+      "journal-title": "Mol vis",
+      "key": "2572_CR80",
+      "unstructured": "Okuda A, Naganuma T, Ohno Y, Abe K, Yamagata M, Igarashi Y, Kihara A (2010) Hetero-oligomeric interactions of an ELOVL4 mutant protein: implications in the molecular mechanism of Stargardt-3 macular dystrophy. Mol vis 16:2438–2445",
+      "volume": "16",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt607",
+      "author": "U Omasits",
+      "doi-asserted-by": "publisher",
+      "first-page": "884",
+      "journal-title": "Bioinformatics",
+      "key": "2572_CR81",
+      "unstructured": "Omasits U, Ahrens CH, Muller S, Wollscheid B (2014) Protter: interactive protein feature visualization and integration with experimental proteomic data. Bioinformatics 30:884–886. https://doi.org/10.1093/bioinformatics/btt607",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2012.10.008",
+      "author": "KM Ori-McKenney",
+      "doi-asserted-by": "publisher",
+      "first-page": "921",
+      "journal-title": "Neuron",
+      "key": "2572_CR82",
+      "unstructured": "Ori-McKenney KM, Jan LY, Jan YN (2012) Golgi outposts shape dendrite morphology by functioning as sites of acentrosomal microtubule nucleation in neurons. Neuron 76:921–930. https://doi.org/10.1016/j.neuron.2012.10.008",
+      "volume": "76",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1001/jamaneurol.2015.0610",
+      "author": "K Ozaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "797",
+      "journal-title": "JAMA Neurol",
+      "key": "2572_CR83",
+      "unstructured": "Ozaki K, Doi H, Mitsui J, Sato N, Iikuni Y, Majima T, Yamane K, Irioka T, Ishiura H, Doi K, Morishita S, Higashi M, Sekiguchi T, Koyama K, Ueda N, Miura Y, Miyatake S, Matsumoto N, Yokota T, Tanaka F, Tsuji S, Mizusawa H, Ishikawa K (2015) A novel mutation in ELOVL4 leading to spinocerebellar ataxia (SCA) with the hot cross bun sign but lacking erythrokeratodermia: a broadened spectrum of SCA34. JAMA Neurol 72:797–805. https://doi.org/10.1001/jamaneurol.2015.0610",
+      "volume": "72",
+      "year": "2015"
+    },
+    {
+      "author": "L Patthy",
+      "edition": "2",
+      "key": "2572_CR84",
+      "unstructured": "Patthy L (2008) Protein evolution, 2nd edn. Blackwell Publishing, Hoboken",
+      "volume-title": "Protein evolution",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.2174/138945012803530134",
+      "author": "AH Peden",
+      "doi-asserted-by": "publisher",
+      "first-page": "1548",
+      "journal-title": "Curr Drug Targets",
+      "key": "2572_CR85",
+      "unstructured": "Peden AH, Ironside JW (2012) Molecular pathology in neurodegenerative diseases. Curr Drug Targets 13:1548–1559. https://doi.org/10.2174/138945012803530134",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/jcc.20084",
+      "author": "EF Pettersen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1605",
+      "journal-title": "J Comput Chem",
+      "key": "2572_CR86",
+      "unstructured": "Pettersen EF, Goddard TD, Huang CC, Couch GS, Greenblatt DM, Meng EC, Ferrin TE (2004) UCSF chimera—a visualization system for exploratory research and analysis. J Comput Chem 25:1605–1612. https://doi.org/10.1002/jcc.20084",
+      "volume": "25",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1038/nrn2593",
+      "author": "KH Pfenninger",
+      "doi-asserted-by": "publisher",
+      "first-page": "251",
+      "journal-title": "Nat Rev Neurosci",
+      "key": "2572_CR87",
+      "unstructured": "Pfenninger KH (2009) Plasma membrane expansion: a neuron’s Herculean task. Nat Rev Neurosci 10:251–261. https://doi.org/10.1038/nrn2593",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2017.09.004",
+      "author": "R Praschberger",
+      "doi-asserted-by": "publisher",
+      "first-page": "97",
+      "journal-title": "Cell Rep",
+      "key": "2572_CR88",
+      "unstructured": "Praschberger R, Lowe SA, Malintan NT, Giachello CNG, Patel N, Houlden H, Kullmann DM, Baines RA, Usowicz MM, Krishnakumar SS, Hodge JJL, Rothman JE, Jepson JEC (2017) Mutations in membrin/GOSR2 reveal stringent secretory pathway demands of dendritic growth and synaptic integrity. Cell Rep 21:97–109. https://doi.org/10.1016/j.celrep.2017.09.004",
+      "volume": "21",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ncb1751",
+      "author": "T Pulvirenti",
+      "doi-asserted-by": "publisher",
+      "first-page": "912",
+      "journal-title": "Nat Cell Biol",
+      "key": "2572_CR89",
+      "unstructured": "Pulvirenti T, Giannotta M, Capestrano M, Capitani M, Pisanu A, Polishchuk RS, San Pietro E, Beznoussenko GV, Mironov AA, Turacchio G, Hsu VW, Sallese M, Luini A (2008) A traffic-activated Golgi-based signalling circuit coordinates the secretory pathway. Nat Cell Biol 10:912–922. https://doi.org/10.1038/ncb1751",
+      "volume": "10",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/s12883-020-01803-3",
+      "author": "I Ricca",
+      "doi-asserted-by": "publisher",
+      "first-page": "215",
+      "journal-title": "BMC Neurol",
+      "key": "2572_CR90",
+      "unstructured": "Ricca I, Tessa A, Trovato R, Bacci GM, Santorelli FM (2020) Docosahexaenoic acid in ARSACS: observations in two patients. BMC Neurol 20:215. https://doi.org/10.1186/s12883-020-01803-3",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med",
+      "key": "2572_CR91",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, Grody WW, Hegde M, Lyon E, Spector E, Voelkerding K, Rehm HL, Committee ALQA (2015) Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med 17:405–424. https://doi.org/10.1038/gim.2015.30",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-397926-1.00008-1",
+      "author": "C Ruggiero",
+      "doi-asserted-by": "publisher",
+      "first-page": "133",
+      "journal-title": "Methods Enzymol",
+      "key": "2572_CR92",
+      "unstructured": "Ruggiero C, Cancino J, Giannotta M, Sallese M (2014) Signaling initiated by the secretory compartment. Methods Enzymol 534:133–154. https://doi.org/10.1016/B978-0-12-397926-1.00008-1",
+      "volume": "534",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw192",
+      "author": "C Savojardo",
+      "doi-asserted-by": "publisher",
+      "first-page": "2542",
+      "journal-title": "Bioinformatics",
+      "key": "2572_CR93",
+      "unstructured": "Savojardo C, Fariselli P, Martelli PL, Casadio R (2016) INPS-MD: a web server to predict stability of protein variants from sequence and structure. Bioinformatics 32:2542–2544. https://doi.org/10.1093/bioinformatics/btw192",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00401-015-1462-8",
+      "author": "W Scheper",
+      "doi-asserted-by": "publisher",
+      "first-page": "315",
+      "journal-title": "Acta Neuropathol",
+      "key": "2572_CR94",
+      "unstructured": "Scheper W, Hoozemans JJ (2015) The unfolded protein response in neurodegenerative diseases: a neuropathological perspective. Acta Neuropathol 130:315–331. https://doi.org/10.1007/s00401-015-1462-8",
+      "volume": "130",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1525/embj.2018101433",
+      "author": "O Schmidt",
+      "doi-asserted-by": "publisher",
+      "first-page": "e101433",
+      "journal-title": "EMBO J",
+      "key": "2572_CR95",
+      "unstructured": "Schmidt O, Weyer Y, Baumann V, Widerin MA, Eising S, Angelova M, Schleiffer A, Kremser L, Lindner H, Peter M, Frohlich F, Teis D (2019) Endosome and Golgi-associated degradation (EGAD) of membrane proteins regulates sphingolipid metabolism. EMBO J 38:e101433. https://doi.org/10.1525/embj.2018101433",
+      "volume": "38",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nmeth.2089",
+      "author": "CA Schneider",
+      "doi-asserted-by": "publisher",
+      "first-page": "671",
+      "journal-title": "Nat Methods",
+      "key": "2572_CR96",
+      "unstructured": "Schneider CA, Rasband WS, Eliceiri KW (2012) NIH image to ImageJ: 25 years of image analysis. Nat Methods 9:671–675. https://doi.org/10.1038/nmeth.2089",
+      "volume": "9",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1146/annurev.biochem.73.011303.074134",
+      "author": "M Schroder",
+      "doi-asserted-by": "publisher",
+      "first-page": "739",
+      "journal-title": "Annu Rev Biochem",
+      "key": "2572_CR97",
+      "unstructured": "Schroder M, Kaufman RJ (2005) The mammalian unfolded protein response. Annu Rev Biochem 74:739–789. https://doi.org/10.1146/annurev.biochem.73.011303.074134",
+      "volume": "74",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.bbrc.2015.08.101",
+      "author": "A Shikama",
+      "doi-asserted-by": "publisher",
+      "first-page": "857",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "2572_CR98",
+      "unstructured": "Shikama A, Shinozaki H, Takeuchi Y, Matsuzaka T, Aita Y, Murayama T, Sawada Y, Piao X, Toya N, Oya Y, Takarada A, Masuda Y, Nishi M, Kubota M, Izumida Y, Nakagawa Y, Iwasaki H, Kobayashi K, Yatoh S, Suzuki H, Yagyu H, Kawakami Y, Yamada N, Shimano H, Yahagi N (2015) Identification of human ELOVL5 enhancer regions controlled by SREBP. Biochem Biophys Res Commun 465:857–863. https://doi.org/10.1016/j.bbrc.2015.08.101",
+      "volume": "465",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41593-018-0235-9",
+      "author": "C Soto",
+      "doi-asserted-by": "publisher",
+      "first-page": "1332",
+      "journal-title": "Nat Neurosci",
+      "key": "2572_CR99",
+      "unstructured": "Soto C, Pritzkow S (2018) Protein misfolding, aggregation, and conformational strains in neurodegenerative diseases. Nat Neurosci 21:1332–1340. https://doi.org/10.1038/s41593-018-0235-9",
+      "volume": "21",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13024-020-00397-1",
+      "author": "TR Suk",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "journal-title": "Mol Neurodegener",
+      "key": "2572_CR100",
+      "unstructured": "Suk TR, Rousseaux MWC (2020) The role of TDP-43 mislocalization in amyotrophic lateral sclerosis. Mol Neurodegener 15:45. https://doi.org/10.1186/s13024-020-00397-1",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1083/jcb.201906047",
+      "author": "Z Sun",
+      "doi-asserted-by": "publisher",
+      "first-page": "3171",
+      "journal-title": "J Cell Biol",
+      "key": "2572_CR101",
+      "unstructured": "Sun Z, Brodsky JL (2019) Protein quality control in the secretory pathway. J Cell Biol 218:3171–3187. https://doi.org/10.1083/jcb.201906047",
+      "volume": "218",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ncb0311-184",
+      "author": "I Tabas",
+      "doi-asserted-by": "publisher",
+      "first-page": "184",
+      "journal-title": "Nat Cell Biol",
+      "key": "2572_CR102",
+      "unstructured": "Tabas I, Ron D (2011) Integrating the mechanisms of apoptosis induced by endoplasmic reticulum stress. Nat Cell Biol 13:184–190. https://doi.org/10.1038/ncb0311-184",
+      "volume": "13",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1152/physrev.00029.2016",
+      "author": "YX Tao",
+      "doi-asserted-by": "publisher",
+      "first-page": "697",
+      "journal-title": "Physiol Rev",
+      "key": "2572_CR103",
+      "unstructured": "Tao YX, Conn PM (2018) Pharmacoperones as novel therapeutics for diverse protein conformational diseases. Physiol Rev 98:697–725. https://doi.org/10.1152/physrev.00029.2016",
+      "volume": "98",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1194/jlr.M050062",
+      "author": "S Tripathy",
+      "doi-asserted-by": "publisher",
+      "first-page": "1448",
+      "journal-title": "J Lipid Res",
+      "key": "2572_CR104",
+      "unstructured": "Tripathy S, Lytle KA, Stevens RD, Bain JR, Newgard CB, Greenberg AS, Huang LS, Jump DB (2014) Fatty acid elongase-5 (Elovl5) regulates hepatic triglyceride catabolism in obese C57BL/6J mice. J Lipid Res 55:1448–1464. https://doi.org/10.1194/jlr.M050062",
+      "volume": "55",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/hmg/ddx259",
+      "author": "D Tripathy",
+      "doi-asserted-by": "publisher",
+      "first-page": "3749",
+      "journal-title": "Hum Mol Genet",
+      "key": "2572_CR105",
+      "unstructured": "Tripathy D, Vignoli B, Ramesh N, Polanco MJ, Coutelier M, Stephen CD, Canossa M, Monin ML, Aeschlimann P, Turberville S, Aeschlimann D, Schmahmann JD, Hadjivassiliou M, Durr A, Pandey UB, Pennuto M, Basso M (2017) Mutations in TGM6 induce the unfolded protein response in SCA35. Hum Mol Genet 26:3749–3762. https://doi.org/10.1093/hmg/ddx259",
+      "volume": "26",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1105/tpc.107.055053",
+      "author": "RA Veitia",
+      "doi-asserted-by": "publisher",
+      "first-page": "3843",
+      "journal-title": "Plant Cell",
+      "key": "2572_CR106",
+      "unstructured": "Veitia RA (2007) Exploring the molecular etiology of dominant-negative mutations. Plant Cell 19:3843–3851. https://doi.org/10.1105/tpc.107.055053",
+      "volume": "19",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1111/cge.13107",
+      "author": "RA Veitia",
+      "doi-asserted-by": "publisher",
+      "first-page": "419",
+      "journal-title": "Clin Genet",
+      "key": "2572_CR107",
+      "unstructured": "Veitia RA, Caburet S, Birchler JA (2018) Mechanisms of Mendelian dominance. Clin Genet 93:419–428. https://doi.org/10.1111/cge.13107",
+      "volume": "93",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.biochi.2020.10.009",
+      "author": "M Vihinen",
+      "doi-asserted-by": "publisher",
+      "first-page": "104",
+      "journal-title": "Biochimie",
+      "key": "2572_CR108",
+      "unstructured": "Vihinen M (2021) Functional effects of protein variants. Biochimie 180:104–120. https://doi.org/10.1016/j.biochi.2020.10.009",
+      "volume": "180",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/s0968-0004(02)02168-0",
+      "author": "JG Wallis",
+      "doi-asserted-by": "publisher",
+      "first-page": "467",
+      "journal-title": "Trends Biochem Sci",
+      "key": "2572_CR109",
+      "unstructured": "Wallis JG, Watts JL, Browse J (2002) Polyunsaturated fatty acid synthesis: what will they think of next? Trends Biochem Sci 27:467. https://doi.org/10.1016/s0968-0004(02)02168-0",
+      "volume": "27",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1126/science.1209038",
+      "author": "P Walter",
+      "doi-asserted-by": "publisher",
+      "first-page": "1081",
+      "journal-title": "Science",
+      "key": "2572_CR110",
+      "unstructured": "Walter P, Ron D (2011) The unfolded protein response: from stress pathway to homeostatic regulation. Science 334:1081–1086. https://doi.org/10.1126/science.1209038",
+      "volume": "334",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/nar/gky427",
+      "author": "A Waterhouse",
+      "doi-asserted-by": "publisher",
+      "first-page": "W296",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2572_CR111",
+      "unstructured": "Waterhouse A, Bertoni M, Bienert S, Studer G, Tauriello G, Gumienny R, Heer FT, de Beer TAP, Rempfer C, Bordoli L, Lepore R, Schwede T (2018) SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic Acids Res 46:W296–W303. https://doi.org/10.1093/nar/gky427",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fchem.2020.00280",
+      "author": "C Wiedemann",
+      "doi-asserted-by": "publisher",
+      "first-page": "280",
+      "journal-title": "Front Chem",
+      "key": "2572_CR112",
+      "unstructured": "Wiedemann C, Kumar A, Lang A, Ohlenschlager O (2020) Cysteines and disulfide bonds as structure-forming units: insights from different domains of life and the potential for characterization by NMR. Front Chem 8:280. https://doi.org/10.3389/fchem.2020.00280",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/jmg.31.2.89",
+      "author": "AO Wilkie",
+      "doi-asserted-by": "publisher",
+      "first-page": "89",
+      "journal-title": "J Med Genet",
+      "key": "2572_CR113",
+      "unstructured": "Wilkie AO (1994) The molecular basis of genetic dominance. J Med Genet 31:89–98. https://doi.org/10.1136/jmg.31.2.89",
+      "volume": "31",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1111/febs.13722",
+      "author": "H Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "3705",
+      "journal-title": "FEBS J",
+      "key": "2572_CR114",
+      "unstructured": "Yang H, Hu HY (2016) Sequestration of cellular interacting partners by protein aggregates: implication in a loss-of-function pathology. FEBS J 283:3705–3717. https://doi.org/10.1111/febs.13722",
+      "volume": "283",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nmeth.3213",
+      "author": "J Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "journal-title": "Nat Methods",
+      "key": "2572_CR115",
+      "unstructured": "Yang J, Yan R, Roy A, Xu D, Poisson J, Zhang Y (2015) The I-TASSER Suite: protein structure and function prediction. Nat Methods 12:7–8. https://doi.org/10.1038/nmeth.3213",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/pro.3901",
+      "author": "G Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1724",
+      "journal-title": "Protein Sci",
+      "key": "2572_CR116",
+      "unstructured": "Yang G, Miton CM, Tokuriki N (2020) A mechanistic view of enzyme evolution. Protein Sci 29:1724–1747. https://doi.org/10.1002/pro.3901",
+      "volume": "29",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fcell.2021.684526",
+      "author": "M Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "684526",
+      "journal-title": "Front Cell Dev Biol",
+      "key": "2572_CR117",
+      "unstructured": "Yang M, Luo S, Wang X, Li C, Yang J, Zhu X, Xiao L, Sun L (2021) ER-Phagy: a new regulator of ER homeostasis. Front Cell Dev Biol 9:684526. https://doi.org/10.3389/fcell.2021.684526",
+      "volume": "9",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.jmb.2005.08.020",
+      "author": "P Yue",
+      "doi-asserted-by": "publisher",
+      "first-page": "459",
+      "journal-title": "J Mol Biol",
+      "key": "2572_CR118",
+      "unstructured": "Yue P, Li Z, Moult J (2005) Loss of protein structure stability as a major causative factor in monogenic disease. J Mol Biol 353:459–473. https://doi.org/10.1016/j.jmb.2005.08.020",
+      "volume": "353",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/83817",
+      "author": "K Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "89",
+      "journal-title": "Nat Genet",
+      "key": "2572_CR119",
+      "unstructured": "Zhang K, Kniazeva M, Han M, Li W, Yu Z, Yang Z, Li Y, Metzker ML, Allikmets R, Zack DJ, Kakuk LE, Lagali PS, Wong PW, MacDonald IM, Sieving PA, Figueroa DJ, Austin CP, Gould RJ, Ayyagari R, Petrukhin K (2001) A 5-bp deletion in ELOVL4 is associated with two related forms of autosomal dominant macular dystrophy. Nat Genet 27:89–93. https://doi.org/10.1038/83817",
+      "volume": "27",
+      "year": "2001"
+    }
+  ],
+  "reference-count": 119,
+  "references-count": 119,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2616059/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-023-02572-y"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum. Genet."
+  ],
+  "source": "Crossref",
+  "title": [
+    "Spinocerebellar ataxia 38: structure–function analysis shows ELOVL5 G230V is proteotoxic, conformationally altered and a mutational hotspot"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

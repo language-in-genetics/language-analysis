@@ -1,0 +1,350 @@
+{
+  "DOI": "10.1002/gepi.10243",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.10243",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eGenetic data from founder populations are advantageous for studies of complex traits that are often plagued by the problem of genetic heterogeneity. However, the desire to analyze large and complex pedigrees that often arise from such populations, coupled with the need to handle many linked and highly polymorphic loci simultaneously, poses challenges to current standard approaches. A viable alternative to solving such problems is via Markov chain Monte Carlo (MCMC) procedures, where a Markov chain, defined on the state space of a latent variable (e.g., genotypic configuration or inheritance vector), is constructed. However, finding starting points for the Markov chains is a difficult problem when the pedigree is not single‐locus peelable; methods proposed in the literature have not yielded completely satisfactory solutions. We propose a generalization of the heated Gibbs sampler with relaxed penetrances (HGRP) of Lin et al., ([1993] IMA J. Math. Appl. Med. Biol. 10:1–17) to search for starting points. HGRP guarantees that a starting point will be found if there is no error in the data, but the chain usually needs to be run for a long time if the pedigree is extremely large and complex. By introducing a forcing step, the current algorithm substantially reduces the state space, and hence effectively speeds up the process of finding a starting point. Our algorithm also has a built‐in preprocessing procedure for Mendelian error detection. The algorithm has been applied to both simulated and real data on two large and complex Hutterite pedigrees under many settings, and good results are obtained. The algorithm has been implemented in a user‐friendly package called START. \u003cjats:italic\u003eGenet Epidemiol\u003c/jats:italic\u003e 25:14–24, 2003. © 2003 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.10243"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Luo",
+      "given": "Yuqun",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Lin",
+      "given": "Shili",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2003,
+        6,
+        13
+      ]
+    ],
+    "date-time": "2003-06-13T10:10:39Z",
+    "timestamp": 1055499039000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        17
+      ]
+    ],
+    "date-time": "2023-11-17T22:03:29Z",
+    "timestamp": 1700258609000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        18
+      ]
+    ],
+    "date-time": "2023-11-18T12:42:21Z",
+    "timestamp": 1700311341478
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2003,
+        6,
+        11
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2003,
+            6,
+            11
+          ]
+        ],
+        "date-time": "2003-06-11T00:00:00Z",
+        "timestamp": 1055289600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.10243",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.10243",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "14-24",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2003,
+        6,
+        11
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2003,
+        6,
+        11
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2003,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1086/339705",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_2_1"
+    },
+    {
+      "DOI": "10.1086/514862",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_3_1"
+    },
+    {
+      "DOI": "10.1086/302112",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_4_1"
+    },
+    {
+      "DOI": "10.2307/1426718",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_5_1"
+    },
+    {
+      "DOI": "10.1086/301668",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_6_1"
+    },
+    {
+      "DOI": "10.1159/000152448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_7_1"
+    },
+    {
+      "DOI": "10.1016/S0002-9297(07)62952-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_8_1"
+    },
+    {
+      "DOI": "10.1109/TPAMI.1984.4767596",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_9_1"
+    },
+    {
+      "DOI": "10.1159/000484736",
+      "article-title": "Relationship estimation in affected sib pair analysis of late‐onset diseases",
+      "author": "Göring H",
+      "doi-asserted-by": "crossref",
+      "first-page": "69",
+      "journal-title": "Eur J Hum Genet",
+      "key": "e_1_2_1_10_1",
+      "volume": "5",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1093/biomet/57.1.97",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_11_1"
+    },
+    {
+      "DOI": "10.1159/000022775",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "DOI": "10.1038/35079107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_13_1"
+    },
+    {
+      "DOI": "10.1073/pnas.91.24.11684",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "DOI": "10.1073/pnas.84.8.2363",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_15_1"
+    },
+    {
+      "DOI": "10.1093/imammb/10.1.1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_16_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.1994.tb00731.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_17_1"
+    },
+    {
+      "article-title": "Two‐locus modeling of asthma in a Hutterite pedigree via Markov chain Monte Carlo",
+      "author": "Luo YQ",
+      "first-page": "24",
+      "journal-title": "Genet Epidemiol",
+      "key": "e_1_2_1_18_1",
+      "volume": "21",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1086/302800",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_19_1"
+    },
+    {
+      "DOI": "10.1063/1.1699114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.2001.21.s1.s4",
+      "article-title": "Description of three data sets: Collaborative study on the Genetics of Asthma (CSGA), the German affected sib‐pair study, and the Hutterites of South Dakota",
+      "author": "Meyers DA",
+      "doi-asserted-by": "crossref",
+      "first-page": "4",
+      "journal-title": "Genet Epidemiol",
+      "key": "e_1_2_1_21_1",
+      "volume": "21",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1086/321191",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_22_1"
+    },
+    {
+      "DOI": "10.1086/301904",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "DOI": "10.2307/2532611",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_24_1"
+    },
+    {
+      "DOI": "10.1086/338444",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_25_1"
+    },
+    {
+      "author": "Sobel E",
+      "first-page": "89",
+      "key": "e_1_2_1_26_1",
+      "volume-title": "Genetic mapping and DNA sequencing",
+      "year": "1995"
+    },
+    {
+      "article-title": "Identifying marker typing incompatibilities in linkage analysis",
+      "author": "Stringham HM",
+      "first-page": "946",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_27_1",
+      "volume": "59",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1038/84808",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_28_1"
+    },
+    {
+      "DOI": "10.1111/j.1751-5823.2000.tb00387.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_29_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.1989.tb01804.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_30_1"
+    }
+  ],
+  "reference-count": 29,
+  "references-count": 29,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.10243"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Finding starting points for Markov chain Monte Carlo analysis of genetic data from large and complex pedigrees"
+  ],
+  "type": "journal-article",
+  "volume": "25"
+}

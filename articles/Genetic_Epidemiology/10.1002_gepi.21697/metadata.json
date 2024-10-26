@@ -1,0 +1,357 @@
+{
+  "DOI": "10.1002/gepi.21697",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21697",
+  "abstract": "\u003cjats:p\u003eIn high‐throughput cancer genomic studies, markers identified from the analysis of single datasets may have unsatisfactory properties because of low sample sizes. Integrative analysis pools and analyzes raw data from multiple studies, and can effectively increase sample size and lead to improved marker identification results. In this study, we consider the integrative analysis of multiple high‐throughput cancer prognosis studies. In the existing integrative analysis studies, the interplay among genes, which can be described using the network structure, has not been effectively accounted for. In network analysis, tightly connected nodes (genes) are more likely to have related biological functions and similar regression coefficients. The goal of this study is to develop an analysis approach that can incorporate the gene network structure in integrative analysis. To this end, we adopt an AFT (accelerated failure time) model to describe survival. A weighted least squares approach, which has low computational cost, is adopted for estimation. For marker selection, we propose a new penalization approach. The proposed penalty is composed of two parts. The first part is a group MCP penalty, and conducts gene selection. The second part is a Laplacian penalty, and smoothes the differences of coefficients for tightly connected genes. A group coordinate descent approach is developed to compute the proposed estimate. Simulation study shows satisfactory performance of the proposed approach when there exist moderate‐to‐strong correlations among genes. We analyze three lung cancer prognosis datasets, and demonstrate that incorporating the network structure can lead to the identification of important genes and improved prediction performance.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21697"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics School of Public Health, Yale University New Haven Connecticut"
+        }
+      ],
+      "family": "Liu",
+      "given": "Jin",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Departments of Statistics \u0026amp; Actuarial Science, and Biostatistics University of Iowa Iowa City Iowa"
+        }
+      ],
+      "family": "Huang",
+      "given": "Jian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics School of Public Health, Yale University New Haven Connecticut"
+        }
+      ],
+      "family": "Ma",
+      "given": "Shuangge",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        19
+      ]
+    ],
+    "date-time": "2012-11-19T01:25:18Z",
+    "timestamp": 1353288318000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        30
+      ]
+    ],
+    "date-time": "2023-10-30T10:51:45Z",
+    "timestamp": 1698663105000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        31
+      ]
+    ],
+    "date-time": "2023-10-31T07:41:58Z",
+    "timestamp": 1698738118231
+  },
+  "is-referenced-by-count": 14,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        17
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            11,
+            17
+          ]
+        ],
+        "date-time": "2012-11-17T00:00:00Z",
+        "timestamp": 1353110400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21697",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21697",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "173-183",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        17
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        11,
+        17
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "Identification of novel gene expression targets for the ras association domain family 1 (rassf1a) tumor suppressor gene in non‐small cell lung cancer and neuroblastoma",
+      "author": "Agathanggelou A",
+      "first-page": "5344",
+      "issue": "17",
+      "journal-title": "Cancer Res",
+      "key": "e_1_2_7_2_1",
+      "volume": "63",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1289/ehp.6895",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1136/jmg.40.6.408",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1214/10-AOAS388",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-09-3427",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1016/j.canlet.2011.04.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1634/stemcells.2008-0037",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1002/cm.20297",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-167",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "article-title": "A note on the group Lasso and a sparse group Lasso",
+      "author": "Friedman J",
+      "journal-title": "arXiv",
+      "key": "e_1_2_7_11_1",
+      "year": "2010"
+    },
+    {
+      "author": "Guerra R",
+      "key": "e_1_2_7_12_1",
+      "volume-title": "Meta‐Analysis and Combining Information in Genetics and Genomics",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-07-5031",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1214/11-AOS897",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "article-title": "Semiparametric reregression pursuit",
+      "author": "Huang J",
+      "first-page": "1403",
+      "journal-title": "Statistica Sinica",
+      "key": "e_1_2_7_15_1",
+      "volume": "22",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1586/14737159.8.2.167",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn081",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9469.2012.00816.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1186/1471-2164-10-535",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1017/S0016672312000419",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1002/sim.4337",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1186/1476-4598-7-87",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "article-title": "Distributional convergence under random censorship when covariables are present",
+      "author": "Stute W",
+      "first-page": "461",
+      "journal-title": "Scand J Stat",
+      "key": "e_1_2_7_23_1",
+      "volume": "23",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1007/s10555-010-9216-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1023/A:1017501703105",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-06-1670",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-11-0196",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.2202/1544-6115.1128",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1214/09-AOS729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    }
+  ],
+  "reference-count": 28,
+  "references-count": 28,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21697"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Incorporating Network Structure in Integrative Analysis of Cancer Prognosis Data"
+  ],
+  "type": "journal-article",
+  "volume": "37"
+}

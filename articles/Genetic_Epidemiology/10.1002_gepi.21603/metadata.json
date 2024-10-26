@@ -1,0 +1,591 @@
+{
+  "DOI": "10.1002/gepi.21603",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21603",
+  "abstract": "\u003cjats:p\u003eGenetic imputation has become standard practice in modern genetic studies. However, several important issues have not been adequately addressed including the utility of study‐specific reference, performance in admixed populations, and quality for less common (minor allele frequency [\u003cjats:styled-content style=\"fixed-case\"\u003eMAF\u003c/jats:styled-content\u003e] 0.005–0.05) and rare (\u003cjats:styled-content style=\"fixed-case\"\u003eMAF\u003c/jats:styled-content\u003e \u0026lt; 0.005) variants. These issues only recently became addressable with genome‐wide association studies (\u003cjats:styled-content style=\"fixed-case\"\u003eGWAS\u003c/jats:styled-content\u003e) follow‐up studies using dense genotyping or sequencing in large samples of non‐\u003cjats:styled-content style=\"fixed-case\"\u003eE\u003c/jats:styled-content\u003european individuals. In this work, we constructed a study‐specific reference panel of 3,924 haplotypes using \u003cjats:styled-content style=\"fixed-case\"\u003eA\u003c/jats:styled-content\u003efrican \u003cjats:styled-content style=\"fixed-case\"\u003eA\u003c/jats:styled-content\u003emericans in the Women's Health Initiative (\u003cjats:styled-content style=\"fixed-case\"\u003eWHI\u003c/jats:styled-content\u003e) genotyped on both the \u003cjats:styled-content style=\"fixed-case\"\u003eM\u003c/jats:styled-content\u003eetabochip and the \u003cjats:styled-content style=\"fixed-case\"\u003eA\u003c/jats:styled-content\u003effymetrix 6.0 \u003cjats:styled-content style=\"fixed-case\"\u003eGWAS\u003c/jats:styled-content\u003e platform. We used this reference panel to impute into 6,459 \u003cjats:styled-content style=\"fixed-case\"\u003eWHI SNP H\u003c/jats:styled-content\u003eealth \u003cjats:styled-content style=\"fixed-case\"\u003eA\u003c/jats:styled-content\u003essociation \u003cjats:styled-content style=\"fixed-case\"\u003eR\u003c/jats:styled-content\u003eesource (\u003cjats:styled-content style=\"fixed-case\"\u003eSHARe\u003c/jats:styled-content\u003e) study subjects with only \u003cjats:styled-content style=\"fixed-case\"\u003eGWAS\u003c/jats:styled-content\u003e genotypes. Our analysis confirmed the imputation quality metric \u003cjats:styled-content style=\"fixed-case\"\u003eRsq\u003c/jats:styled-content\u003e (estimated \u003cjats:italic\u003er\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003e, specific to each \u003cjats:styled-content style=\"fixed-case\"\u003eSNP\u003c/jats:styled-content\u003e) as an effective post‐imputation filter. We recommend different \u003cjats:styled-content style=\"fixed-case\"\u003eRsq\u003c/jats:styled-content\u003e thresholds for different \u003cjats:styled-content style=\"fixed-case\"\u003eMAF\u003c/jats:styled-content\u003e categories such that the average (across \u003cjats:styled-content style=\"fixed-case\"\u003eSNPs\u003c/jats:styled-content\u003e) \u003cjats:styled-content style=\"fixed-case\"\u003eRsq\u003c/jats:styled-content\u003e is above the desired dosage r\u003cjats:sup\u003e2\u003c/jats:sup\u003e (squared \u003cjats:styled-content style=\"fixed-case\"\u003eP\u003c/jats:styled-content\u003eearson correlation between imputed and experimental genotypes). With a desired dosage r\u003cjats:sup\u003e2\u003c/jats:sup\u003e of 80%, 99.9% (97.5%, 83.6%, 52.0%, 20.5%) of \u003cjats:styled-content style=\"fixed-case\"\u003eSNPs\u003c/jats:styled-content\u003e with \u003cjats:styled-content style=\"fixed-case\"\u003eMAF\u003c/jats:styled-content\u003e \u0026gt; 0.05 (0.03–0.05, 0.01–0.03, 0.005–0.01, and 0.001–0.005) passed the post‐imputation filter. The average dosage r\u003cjats:sup\u003e2\u003c/jats:sup\u003e for these \u003cjats:styled-content style=\"fixed-case\"\u003eSNPs\u003c/jats:styled-content\u003e is 94.7%, 92.1%, 89.0%, 83.1%, and 79.7%, respectively. These results suggest that for \u003cjats:styled-content style=\"fixed-case\"\u003eA\u003c/jats:styled-content\u003efrican \u003cjats:styled-content style=\"fixed-case\"\u003eA\u003c/jats:styled-content\u003emericans imputation of \u003cjats:styled-content style=\"fixed-case\"\u003eM\u003c/jats:styled-content\u003eetabochip \u003cjats:styled-content style=\"fixed-case\"\u003eSNPs\u003c/jats:styled-content\u003e from \u003cjats:styled-content style=\"fixed-case\"\u003eGWAS\u003c/jats:styled-content\u003e data, including low frequency \u003cjats:styled-content style=\"fixed-case\"\u003eSNPs\u003c/jats:styled-content\u003e with \u003cjats:styled-content style=\"fixed-case\"\u003eMAF\u003c/jats:styled-content\u003e 0.005–0.05, is feasible and worthwhile for power increase in downstream association analysis provided a sizable reference panel is available.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21603"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science University of North Carolina  Chapel Hill North Carolina"
+        }
+      ],
+      "family": "Liu",
+      "given": "Eric Yi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics Rutgers University  Piscataway New Jersey"
+        },
+        {
+          "name": "Department of Genetics Rutgers University  Piscataway New Jersey"
+        }
+      ],
+      "family": "Buyske",
+      "given": "Steven",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "family": "Aragaki",
+      "given": "Aaron K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "family": "Peters",
+      "given": "Ulrike",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Center University of Texas Health Science Center at Houston"
+        }
+      ],
+      "family": "Boerwinkle",
+      "given": "Eric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "family": "Carlson",
+      "given": "Chris",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "family": "Carty",
+      "given": "Cara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Molecular Physiology and Biophysics Center for Human Genetics Research Vanderbilt University  Nashville Tennessee"
+        }
+      ],
+      "family": "Crawford",
+      "given": "Dana C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "family": "Haessler",
+      "given": "Jeff",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Office of Population Genomics National Human Genome Research Institute National Institutes of Health  Bethesda Maryland"
+        }
+      ],
+      "family": "Hindorff",
+      "given": "Lucia A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology Program University of Hawaii Cancer Center  Honolulu Hawaii"
+        }
+      ],
+      "family": "Marchand",
+      "given": "Loic Le",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Office of Population Genomics National Human Genome Research Institute National Institutes of Health  Bethesda Maryland"
+        }
+      ],
+      "family": "Manolio",
+      "given": "Teri A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics Rutgers University  Piscataway New Jersey"
+        }
+      ],
+      "family": "Matise",
+      "given": "Tara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science University of North Carolina  Chapel Hill North Carolina"
+        }
+      ],
+      "family": "Wang",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington"
+        }
+      ],
+      "family": "Kooperberg",
+      "given": "Charles",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of North Carolina  Chapel Hill North Carolina"
+        }
+      ],
+      "family": "North",
+      "given": "Kari E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina  Chapel Hill North Carolina"
+        },
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina"
+        }
+      ],
+      "family": "Li",
+      "given": "Yun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        8,
+        29
+      ]
+    ],
+    "date-time": "2012-08-29T11:08:19Z",
+    "timestamp": 1346238499000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        23
+      ]
+    ],
+    "date-time": "2023-09-23T20:29:52Z",
+    "timestamp": 1695500992000
+  },
+  "funder": [
+    {
+      "award": [
+        "HL102924-02",
+        "3-R01-CA082659-11S1",
+        "R01HG006292"
+      ],
+      "name": "CLHNS"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "U01HG004803",
+        "U01HG004798",
+        "U01HG004802",
+        "U01HG004790",
+        "U01HG004801"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Human Genome Research Institute (NHGRI)"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "N01WH22110",
+        "24152",
+        "32100-2",
+        "32105-6",
+        "32108-9",
+        "32111-13",
+        "32115",
+        "32118-32119",
+        "32122",
+        "42107-26",
+        "42129-32",
+        "44221"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Heart, Lung, and Blood Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        17
+      ]
+    ],
+    "date-time": "2024-04-17T15:56:14Z",
+    "timestamp": 1713369374633
+  },
+  "is-referenced-by-count": 56,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 90,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            5,
+            1
+          ]
+        ],
+        "date-time": "2012-05-01T00:00:00Z",
+        "timestamp": 1335830400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21603",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21603",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "107-117",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        5
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2012,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1016/S0197-2456(97)00078-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.01.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "article-title": "Evaluation of the Metabochip genotyping array in African Americans and implications for fine mapping of GWAS‐ldentified loci: the PAGE Study",
+      "author": "Buyske S",
+      "journal-title": "In preparation",
+      "key": "e_1_2_6_4_1",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/hmg/ddn288",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1007/s00439-009-0627-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1038/nrg2809",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1093/molbev/msq141",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1019276108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-10-0892",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0903103106",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_6_11_1",
+      "unstructured": "HindorffLA SethupathyP JunkinsHA RamosEM MehtaJP CollinsFS ManolioTA.2009. Potential etiologic and functional implications of genome‐wide association loci for human diseases and traits.Proceedings of the National Academy of Sciences of theUnitedStates ofAmerica106:9362–9367."
+    },
+    {
+      "DOI": "10.1161/CIRCGENETICS.109.914267",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1194/jlr.P900008-JLR200",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001300",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0024945",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1146/annurev.genom.9.081307.164242",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.10.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20533",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0009697",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1038/456018a",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "key": "e_1_2_6_22_1",
+      "unstructured": "MaoX LiY LiM.2011.Detecting Genetic Association with Rare Variants in Admixed Populations. Abstract No. 660. Presented at the 12th International Congress of Human Genetics/61st Annual Meeting of The American Society of Human Genetics October 13 2011 Montreal Canada. Annual Meeting of the American Society of Human Genetics."
+    },
+    {
+      "DOI": "10.1038/nrg2796",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwr160",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1038/nrg2344",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1086/321275",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0012600",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1038/nrg2760",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "article-title": "Practical considerations for imputation of untyped markers in admixed populations",
+      "author": "Shriner D",
+      "first-page": "258",
+      "journal-title": "Genet Epidemiol",
+      "key": "e_1_2_6_32_1",
+      "volume": "33",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001304",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1038/nrg2731",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1038/nature09534",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1038/nature04226",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1038/nature06258",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1038/nature09298",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-08-1142",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1086/429864",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddq423",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21603"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Genotype Imputation of \u003cscp\u003eM\u003c/scp\u003eetabochip\u003cscp\u003eSNPs\u003c/scp\u003e Using a Study‐Specific Reference Panel of ∼4,000 Haplotypes in \u003cscp\u003eA\u003c/scp\u003efrican \u003cscp\u003eA\u003c/scp\u003emericans From the Women's Health Initiative"
+  ],
+  "type": "journal-article",
+  "volume": "36"
+}

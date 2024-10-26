@@ -1,0 +1,515 @@
+{
+  "DOI": "10.1002/gepi.22037",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22037",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eWhole‐exome sequencing using family data has identified rare coding variants in Mendelian diseases or complex diseases with Mendelian subtypes, using filters based on variant novelty, functionality, and segregation with the phenotype within families. However, formal statistical approaches are limited. We propose a gene‐based segregation test (GESE) that quantifies the uncertainty of the filtering approach. It is constructed using the probability of segregation events under the null hypothesis of Mendelian transmission. This test takes into account different degrees of relatedness in families, the number of functional rare variants in the gene, and their minor allele frequencies in the corresponding population. In addition, a weighted version of this test allows incorporating additional subject phenotypes to improve statistical power. We show via simulations that the GESE and weighted GESE tests maintain appropriate type I error rate, and have greater power than several commonly used region‐based methods. We apply our method to whole‐exome sequencing data from 49 extended pedigrees with severe, early‐onset chronic obstructive pulmonary disease (COPD) in the Boston Early‐Onset COPD study (BEOCOPD) and identify several promising candidate genes. Our proposed methods show great potential for identifying rare coding variants of large effect and high penetrance for family‐based sequencing data. The proposed tests are implemented in an R package that is available on CRAN (\u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://cran.r-project.org/web/packages/GESE/\"\u003ehttps://cran.r-project.org/web/packages/GESE/\u003c/jats:ext-link\u003e).\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22037"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine, Department of Medicine Brigham and Women's Hospital and Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Qiao",
+      "given": "Dandi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard T. H. Chan School of Public Health  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Lange",
+      "given": "Christoph",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Harvard T. H. Chan School of Public Health  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Laird",
+      "given": "Nan M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health Science Seoul National University  Seoul Republic of Korea"
+        }
+      ],
+      "family": "Won",
+      "given": "Sungho",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine, Department of Medicine Brigham and Women's Hospital and Harvard Medical School  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Division of Pulmonary and Critical Care Medicine, Department of Medicine Brigham and Women's Hospital, Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Hersh",
+      "given": "Craig P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine, Department of Medicine Brigham and Women's Hospital and Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Morrow",
+      "given": "Jarrett",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine, Department of Medicine Brigham and Women's Hospital and Harvard Medical School  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Division of Pulmonary and Critical Care Medicine, Department of Medicine Brigham and Women's Hospital, Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Hobbs",
+      "given": "Brian D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Anschutz Medical Campus University of Colorado  Aurora Colorado United States of America"
+        }
+      ],
+      "family": "Lutz",
+      "given": "Sharon M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Johns Hopkins Bloomberg School of Public Health  Baltimore Maryland United States of America"
+        }
+      ],
+      "family": "Ruczinski",
+      "given": "Ingo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Johns Hopkins Bloomberg School of Public Health  Baltimore Maryland United States of America"
+        }
+      ],
+      "family": "Beaty",
+      "given": "Terri H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine, Department of Medicine Brigham and Women's Hospital and Harvard Medical School  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Division of Pulmonary and Critical Care Medicine, Department of Medicine Brigham and Women's Hospital, Harvard Medical School  Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Silverman",
+      "given": "Edwin K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Channing Division of Network Medicine, Department of Medicine Brigham and Women's Hospital and Harvard Medical School  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "Division of Pulmonary and Critical Care Medicine, Department of Medicine Brigham and Women's Hospital, Harvard Medical School  Boston Massachusetts United States of America"
+        },
+        {
+          "name": "University of Washington Center for Mendelian Genomics  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Cho",
+      "given": "Michael H.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        2,
+        13
+      ]
+    ],
+    "date-time": "2017-02-13T08:47:08Z",
+    "timestamp": 1486975628000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T08:01:09Z",
+    "timestamp": 1696406469000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "2UMIHG006493",
+        "K01 HL129039",
+        "K01 HL125858",
+        "P01 HL105339",
+        "P01 HL114501",
+        "R01 HL075478",
+        "R01 HL084323",
+        "R01 HL089856",
+        "R01 HL113264",
+        "X01 HL115219"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100001448",
+      "doi-asserted-by": "publisher",
+      "name": "Alpha-1 Foundation"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        18
+      ]
+    ],
+    "date-time": "2023-12-18T15:39:29Z",
+    "timestamp": 1702913969365
+  },
+  "is-referenced-by-count": 11,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2017,
+        2,
+        13
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            2,
+            13
+          ]
+        ],
+        "date-time": "2017-02-13T00:00:00Z",
+        "timestamp": 1486944000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22037",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22037",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "309-319",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2017,
+        2,
+        13
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2017,
+        2,
+        13
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        5
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "Clinical features of ovarian cancer in Japanese women with germ‐line mutations of BRCA1",
+      "author": "Aida H.",
+      "first-page": "235",
+      "issue": "1",
+      "journal-title": "Clinical Cancer Research",
+      "key": "e_1_2_7_2_1",
+      "volume": "4",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1159/000101421",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1038/nrg3031",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1002/gepi.2001.21.s1.s554",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu198",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.4161/fly.19695",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1093/clinchem/47.1.56",
+      "article-title": "Molecular diagnosis of intermediate and severe alpha(1)‐antitrypsin deficiency: MZ individuals with chronic obstructive pulmonary disease may have lower lung function than MM individuals",
+      "author": "Dahl M.",
+      "doi-asserted-by": "crossref",
+      "first-page": "56",
+      "issue": "1",
+      "journal-title": "Clinical Chemistry",
+      "key": "e_1_2_7_10_1",
+      "volume": "47",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1136/jmg.2008.062463",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20643",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.03.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1038/nbt.2895",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.11.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1038/ng.2892",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.01.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1038/nature19057",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2015-103423",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1126/science.7545954",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "article-title": "Network analysis of gene expression in severe COPD lung tissue samples [abstract]",
+      "author": "Morrow J.",
+      "first-page": "A1253",
+      "journal-title": "American Journal of Respiratory and Critical Care Medicine",
+      "key": "e_1_2_7_22_1",
+      "volume": "191",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/gm504",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/ng.499",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1164/rccm.201506-1223OC",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "key": "e_1_2_7_27_1",
+      "unstructured": "Qiao D. Lange C. Crapo J. D. Beaty T. H. Laird N. M. Won S. …Cho M. H.(2016).Gene‐based segregation analysis in whole exome sequencing studies. American Thoracic Society International Conference 2016. San Francisco CA. A71. EPIGENETICS. pA2347–A2347."
+    },
+    {
+      "DOI": "10.1210/en.2008-1062",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20088",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1164/ajrccm.157.6.9706014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20658",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1093/hmg/4.suppl_1.1811",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1126/science.1260419",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    }
+  ],
+  "reference-count": 33,
+  "references-count": 33,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22037"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Gene‐based segregation method for identifying rare variants in family‐based sequencing studies"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

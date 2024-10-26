@@ -1,0 +1,887 @@
+{
+  "DOI": "10.1038/s41437-023-00651-4",
+  "ISSN": [
+    "0018-067X",
+    "1365-2540"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41437-023-00651-4",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMany of the world’s agriculturally important plant and animal populations consist of hybrids of subspecies. Cattle in tropical and sub-tropical regions for example, originate from two subspecies, \u003cjats:italic\u003eBos taurus indicus\u003c/jats:italic\u003e (\u003cjats:italic\u003eBos indicus\u003c/jats:italic\u003e) and \u003cjats:italic\u003eBos taurus taurus (Bos taurus)\u003c/jats:italic\u003e. Methods to derive the underlying genetic architecture for these two subspecies are essential to develop accurate genomic predictions in these hybrid populations. We propose a novel method to achieve this. First, we use haplotypes to assign SNP alleles to ancestral subspecies of origin in a multi-breed and multi-subspecies population. Then we use a BayesR framework to allow SNP alleles originating from the different subspecies differing effects. Applying this method in a composite population of \u003cjats:italic\u003eB. indicus\u003c/jats:italic\u003e and \u003cjats:italic\u003eB. taurus\u003c/jats:italic\u003e hybrids, our results show that there are underlying genomic differences between the two subspecies, and these effects are not identified in multi-breed genomic evaluations that do not account for subspecies of origin effects. The method slightly improved the accuracy of genomic prediction. More significantly, by allocating SNP alleles to ancestral subspecies of origin, we were able to identify four SNP with high posterior probabilities of inclusion that have not been previously associated with cattle fertility and were close to genes associated with fertility in other species. These results show that haplotypes can be used to trace subspecies of origin through the genome of this hybrid population and, in conjunction with our novel Bayesian analysis, subspecies SNP allele allocation can be used to increase the accuracy of QTL association mapping in genetically diverse populations.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "651"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "14 October 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "19 September 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "21 September 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "6 October 2023"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-3687-1580",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Warburton",
+      "given": "Christie L.",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0818-5065",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Costilla",
+      "given": "Roy",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-2360-1012",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Engle",
+      "given": "Bailey N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moore",
+      "given": "Stephen S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Corbet",
+      "given": "Nicholas J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fordyce",
+      "given": "Geoffry",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "McGowan",
+      "given": "Michael R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Burns",
+      "given": "Brian M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hayes",
+      "given": "Ben J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Heredity"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T02:03:56Z",
+    "timestamp": 1696557836000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        24
+      ]
+    ],
+    "date-time": "2023-11-24T23:02:47Z",
+    "timestamp": 1700866967000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T16:57:05Z",
+    "timestamp": 1709312225363
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0018-067X"
+    },
+    {
+      "type": "electronic",
+      "value": "1365-2540"
+    }
+  ],
+  "issue": "5-6",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5-6",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            6
+          ]
+        ],
+        "date-time": "2023-10-06T00:00:00Z",
+        "timestamp": 1696550400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            6
+          ]
+        ],
+        "date-time": "2023-10-06T00:00:00Z",
+        "timestamp": 1696550400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41437-023-00651-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41437-023-00651-4",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41437-023-00651-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "350-360",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3389/fgene.2021.729867",
+      "author": "AC Araujo",
+      "doi-asserted-by": "crossref",
+      "first-page": "729867",
+      "journal-title": "Front Genet",
+      "key": "651_CR1",
+      "unstructured": "Araujo AC, Carneiro PLS, Oliveira HR, Schenkel FS, Veroneze R, Lourenco DAL et al. (2021) A comprehensive comparison of haplotype-based single-step genomic predictions in livestock populations with different genetic diversity levels: a simulation study. Front Genet 12:729867",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41598-017-11639-6",
+      "author": "A Ashar-Patel",
+      "doi-asserted-by": "crossref",
+      "journal-title": "Sci Rep",
+      "key": "651_CR2",
+      "unstructured": "Ashar-Patel A, Kaymaz Y, Rajakumar A, Bailey JA, Karumanchi SA, Moore MJ (2017) FLT1 and transcriptome-wide polyadenylation site (PAS) analysis in preeclampsia. Sci Rep 7:12139",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1137/141000671",
+      "author": "J Bezanson",
+      "doi-asserted-by": "crossref",
+      "first-page": "65",
+      "journal-title": "SIAM Rev",
+      "key": "651_CR3",
+      "unstructured": "Bezanson J, Edelman A, Karpinski S, Shah VB (2017) Julia: a fresh approach to numerical computing. SIAM Rev 59:65–98",
+      "volume": "59",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12711-021-00661-y",
+      "author": "C Bian",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR4",
+      "unstructured": "Bian C, Prakapenka D, Tan C, Yang R, Zhu D, Guo X et al. (2021) Haplotype genomic prediction of phenotypic values based on chromosome distance and gene boundaries using low-coverage sequencing in Duroc pigs. Genet Sel Evol 53:1–19",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1071/AN11119",
+      "author": "D Boichard",
+      "doi-asserted-by": "crossref",
+      "first-page": "115",
+      "journal-title": "Anim Prod Sci",
+      "key": "651_CR5",
+      "unstructured": "Boichard D, Guillaume F, Baur A, Croiseau P, Rossignol MN, Boscher MY et al. (2012) Genomic selection in French dairy cattle. Anim Prod Sci 52:115–120",
+      "volume": "52",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.2527/jas.2010-3363",
+      "author": "S Bolormaa",
+      "doi-asserted-by": "crossref",
+      "first-page": "2050",
+      "journal-title": "J Anim Sci",
+      "key": "651_CR6",
+      "unstructured": "Bolormaa S, Hayes BJ, Hawken RJ, Zhang Y, Reverter A, Goddard ME (2011) Detection of chromosome segments of zebu and taurine origin and their effect on beef production and growth1. J Anim Sci 89:2050–2060",
+      "volume": "89",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/1297-9686-45-43",
+      "author": "S Bolormaa",
+      "doi-asserted-by": "crossref",
+      "first-page": "43",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR7",
+      "unstructured": "Bolormaa S, Pryce JE, Kemper KE, Hayes BJ, Zhang Y, Tier B et al. (2013) Detection of quantitative trait loci in Bos indicus and Bos taurus cattle using genome-wide association studies. Genet Sel Evol 45:43",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1073/pnas.93.10.5131",
+      "author": "DG Bradley",
+      "doi-asserted-by": "crossref",
+      "first-page": "5131",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "651_CR8",
+      "unstructured": "Bradley DG, MacHugh DE, Cunningham P, Loftus RT (1996) Mitochondrial diversity and the origins of African and European cattle. Proc Natl Acad Sci USA 93:5131–5135",
+      "volume": "93",
+      "year": "1996"
+    },
+    {
+      "key": "651_CR9",
+      "unstructured": "Briggs HM, Briggs DM (1980) Modern breeds of livestock. Macmillan"
+    },
+    {
+      "key": "651_CR10",
+      "unstructured": "Burns BM, Corbet NJ, Allen JM, Laing A, Sullivan MT (2016) Next gen beef breeding strategies for the Northern Australian beef industry: final report. University of Queensland, Saint Lucia"
+    },
+    {
+      "DOI": "10.1186/1297-9686-41-11",
+      "author": "MP Calus",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR11",
+      "unstructured": "Calus MP, Meuwissen TH, Windig JJ, Knol EF, Schrooten C, Vereijken AL et al. (2009) Effects of the number of markers per haplotype and clustering of haplotypes on the accuracy of QTL mapping and prediction of genomic breeding values. Genet Sel Evol 41:1–10",
+      "volume": "41",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1007/s00418-003-0586-4",
+      "author": "C Celik-Ozenci",
+      "doi-asserted-by": "crossref",
+      "first-page": "383",
+      "journal-title": "Histochem Cell Biol",
+      "key": "651_CR12",
+      "unstructured": "Celik-Ozenci C, Akkoyunlu G, Kayisli UA, Arici A, Demir R (2003) Localization of vascular endothelial growth factor in the zona pellucida of developing ovarian follicles in the rat: a possible role in destiny of follicles. Histochem Cell Biol 120:383–390",
+      "volume": "120",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.mce.2020.111142",
+      "author": "L Chen",
+      "doi-asserted-by": "crossref",
+      "first-page": "111142",
+      "journal-title": "Mol Cell Endocrinol",
+      "key": "651_CR13",
+      "unstructured": "Chen L, Zhang W, Huang R, Miao X, Li J, Yu D et al. (2021) The function of Wls in ovarian development. Mol Cell Endocrinol 522:111142",
+      "volume": "522",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s12711-015-0143-3",
+      "author": "BC Cuyabano",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR14",
+      "unstructured": "Cuyabano BC, Su G, Lund MS (2015) Selection of haplotype variables from a high-density marker map for genomic prediction. Genet Sel Evol 47:1–11",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1071/AR9930179",
+      "author": "GP Davis",
+      "doi-asserted-by": "crossref",
+      "first-page": "179",
+      "journal-title": "Aust J Agric Res",
+      "key": "651_CR15",
+      "unstructured": "Davis GP (1993) Genetic parameters for tropical beef cattle in northern Australia: a review. Aust J Agric Res 44:179–198",
+      "volume": "44",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1186/s12711-019-0481-7",
+      "author": "P Duenk",
+      "doi-asserted-by": "crossref",
+      "first-page": "38",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR16",
+      "unstructured": "Duenk P, Calus MPL, Wientjes YCJ, Breen VP, Henshall JM, Hawken R et al. (2019) Validation of genomic predictions for body weight in broilers using crossbred information and considering breed-of-origin of alleles. Genet Sel Evol 51:38",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/jas/sky428",
+      "author": "BN Engle",
+      "doi-asserted-by": "crossref",
+      "first-page": "90",
+      "journal-title": "J Anim Sci",
+      "key": "651_CR17",
+      "unstructured": "Engle BN, Corbet NJ, Allen JM, Laing AR, Fordyce G, McGowan MR et al. (2019) Multivariate genomic predictions for age at puberty in tropically adapted beef heifers. J Anim Sci 97:90–100",
+      "volume": "97",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3168/jds.2011-5019",
+      "author": "M Erbe",
+      "doi-asserted-by": "crossref",
+      "first-page": "4114",
+      "journal-title": "J Dairy Sci",
+      "key": "651_CR18",
+      "unstructured": "Erbe M, Hayes BJ, Matukumalli LK, Goswami S, Bowman PJ, Reich CM et al. (2012) Improving accuracy of genomic predictions within and between dairy cattle breeds with imputed high-density single nucleotide polymorphism panels. J Dairy Sci 95:4114–4129",
+      "volume": "95",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1111/age.12075",
+      "author": "MRS Fortes",
+      "doi-asserted-by": "crossref",
+      "first-page": "636",
+      "journal-title": "Anim Genet",
+      "key": "651_CR19",
+      "unstructured": "Fortes MRS, Kemper K, Sasazaki S, Reverter A, Pryce JE, Barendse W et al. (2013) Evidence for pleiotropism and recent selection in the PLAG1 region in Australian Beef cattle. Anim Genet 44:636–647",
+      "volume": "44",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.smallrumres.2021.106546",
+      "author": "H Ghiasi",
+      "doi-asserted-by": "crossref",
+      "first-page": "106546",
+      "journal-title": "Small Rumin Res",
+      "key": "651_CR20",
+      "unstructured": "Ghiasi H, Abdollahi-Arpanahi R (2021) The candidate genes and pathways affecting litter size in sheep. Small Rumin Res 205:106546",
+      "volume": "205",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1534/genetics.113.151753",
+      "author": "D Gianola",
+      "doi-asserted-by": "crossref",
+      "first-page": "573",
+      "journal-title": "Genetics",
+      "key": "651_CR21",
+      "unstructured": "Gianola D (2013) Priors in whole-genome regression: the Bayesian alphabet returns. Genetics 194:573–596",
+      "volume": "194",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/s10709-008-9308-0",
+      "author": "M Goddard",
+      "doi-asserted-by": "crossref",
+      "first-page": "245",
+      "journal-title": "Genetica",
+      "key": "651_CR22",
+      "unstructured": "Goddard M (2009) Genomic selection: prediction of accuracy and maximisation of long term response. Genetica 136:245–257",
+      "volume": "136",
+      "year": "2009"
+    },
+    {
+      "key": "651_CR23",
+      "unstructured": "Gomez, M (2015) String distances. https://juliapackages.com/p/stringdistances"
+    },
+    {
+      "DOI": "10.1017/S0016672307008865",
+      "author": "BJ Hayes",
+      "doi-asserted-by": "crossref",
+      "first-page": "215",
+      "journal-title": "Genet Res",
+      "key": "651_CR24",
+      "unstructured": "Hayes BJ, Chamberlain AJ, McPartlan H, Macleod I, Sethuraman L, Goddard ME (2007) Accuracy of marker-assisted selection with single markers and marker haplotypes in cattle. Genet Res 89:215–220",
+      "volume": "89",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/jas/sky417",
+      "author": "BJ Hayes",
+      "doi-asserted-by": "crossref",
+      "first-page": "55",
+      "journal-title": "J Anim Sci",
+      "key": "651_CR25",
+      "unstructured": "Hayes BJ, Corbet NJ, Allen JM, Laing AR, Fordyce G, Lyons R et al. (2019) Towards multi-breed genomic evaluations for female fertility of tropical beef cattle. J Anim Sci 97:55–62",
+      "volume": "97",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12711-017-0329-y",
+      "author": "M Hess",
+      "doi-asserted-by": "crossref",
+      "first-page": "54",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR27",
+      "unstructured": "Hess M, Druet T, Hess A, Garrick D (2017) Fixed-length haplotypes can improve genomic prediction accuracy in an admixed dairy cattle population. Genet Sel Evol 49:54",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1159/000118756",
+      "author": "S Hiendleder",
+      "doi-asserted-by": "crossref",
+      "first-page": "150",
+      "journal-title": "Cytogenet Genome Res",
+      "key": "651_CR28",
+      "unstructured": "Hiendleder S, Lewalski H, Janke A (2008) Complete mitochondrial genomes of Bos taurus and Bos indicus provide new insights into intra-species variation, taxonomy and domestication. Cytogenet Genome Res 120:150–156",
+      "volume": "120",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1017/S0016672310000480",
+      "author": "WG Hill",
+      "doi-asserted-by": "crossref",
+      "first-page": "47",
+      "journal-title": "Genet Res",
+      "key": "651_CR29",
+      "unstructured": "Hill WG, Weir BS (2011) Variation in actual relationship as a consequence of Mendelian sampling and linkage. Genet Res 93:47–64",
+      "volume": "93",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1369/jhc.2009.954347",
+      "author": "Y Hozumi",
+      "doi-asserted-by": "crossref",
+      "first-page": "119",
+      "journal-title": "J Histochem Cytochem J Histochem Soc",
+      "key": "651_CR30",
+      "unstructured": "Hozumi Y, Watanabe M, Goto K (2010) Signaling cascade of diacylglycerol kinase β in the pituitary intermediate lobe: dopamine D2 receptor/phospholipase Cβ4/diacylglycerol kinase β/protein kinase Cα. J Histochem Cytochem J Histochem Soc 58:119–129",
+      "volume": "58",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1186/1297-9686-41-12",
+      "author": "N Ibánez-Escriche",
+      "doi-asserted-by": "crossref",
+      "first-page": "12",
+      "journal-title": "Genet Sel Evol GSE",
+      "key": "651_CR31",
+      "unstructured": "Ibánez-Escriche N, Fernando RL, Toosi A, Dekkers JCM (2009) Genomic selection of purebreds for crossbred performance. Genet Sel Evol GSE 41:12–12",
+      "volume": "41",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/0303-7207(93)90026-G",
+      "author": "MS Johnson",
+      "doi-asserted-by": "crossref",
+      "first-page": "31",
+      "journal-title": "Mol Cell Endocrinol",
+      "key": "651_CR32",
+      "unstructured": "Johnson MS, Thomson FJ, MacEwan DJ, Mitchell R (1993) The involvement of dihydropyridine-sensitive calcium channels in phorbol ester-induced luteinizing hormone and growth hormone release. Mol Cell Endocrinol 95:31–41",
+      "volume": "95",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1111/jbg.12152",
+      "author": "KE Kemper",
+      "doi-asserted-by": "crossref",
+      "first-page": "121",
+      "journal-title": "J Anim Breed Genet",
+      "key": "651_CR33",
+      "unstructured": "Kemper KE, Hayes BJ, Daetwyler HD, Goddard ME (2015a) How old are quantitative trait loci and how widely do they segregate? J Anim Breed Genet 132:121–134",
+      "volume": "132",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12711-014-0074-4",
+      "author": "KE Kemper",
+      "doi-asserted-by": "crossref",
+      "first-page": "29",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR34",
+      "unstructured": "Kemper KE, Reich CM, Bowman PJ, vander Jagt CJ, Chamberlain AJ, Mason BA et al. (2015b) Improved precision of QTL mapping using a nonlinear Bayesian method in a multi-breed population leads to greater accuracy of across-breed genomic predictions. Genet Sel Evol 47:29",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2019.06.019",
+      "author": "D Kling",
+      "doi-asserted-by": "crossref",
+      "first-page": "113",
+      "journal-title": "Forensic Sci Int Genet",
+      "key": "651_CR35",
+      "unstructured": "Kling D, Tillmar A (2019) Forensic genealogy—a comparison of methods to infer distant relationships based on dense SNP data. Forensic Sci Int Genet 42:113–124",
+      "volume": "42",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41598-018-35698-5",
+      "author": "L Koufariotis",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Sci Rep",
+      "key": "651_CR36",
+      "unstructured": "Koufariotis L, Hayes BJ, Kelly M, Burns BM, Lyons R, Stothard P et al. (2018) Sequencing the mosaic genome of Brahman cattle identifies historic and recent introgression including polled. Sci Rep 8:1–12",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3679",
+      "author": "P-R Loh",
+      "doi-asserted-by": "crossref",
+      "first-page": "1443",
+      "journal-title": "Nat Genet",
+      "key": "651_CR37",
+      "unstructured": "Loh P-R, Danecek P, Palamara PF, Fuchsberger C, Reshef YA, Finucane HK et al. (2016) Reference-based phasing using the Haplotype Reference Consortium panel. Nat Genet 48:1443–1448",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "author": "JA Mallett",
+      "first-page": "193",
+      "journal-title": "J Dep Agric West Aust",
+      "key": "651_CR38",
+      "unstructured": "Mallett JA (1959) Santa Gertrudis cattle. J Dep Agric West Aust 8:193–197",
+      "volume": "8",
+      "year": "1959"
+    },
+    {
+      "DOI": "10.1186/1297-9686-46-49",
+      "author": "TH Meuwissen",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR39",
+      "unstructured": "Meuwissen TH, Odegard J, Andersen-Ranberg I, Grindflek E (2014) On the distance of genetic relationships and the accuracy of genomic prediction in pig breeding. Genet Sel Evol 46:1–8",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3390/biology9040062",
+      "author": "MA Mohamad",
+      "doi-asserted-by": "crossref",
+      "first-page": "E62",
+      "journal-title": "Biology",
+      "key": "651_CR40",
+      "unstructured": "Mohamad MA, Mohd Manzor NF, Zulkifli NF, Zainal N, Hayati AR, Ahmad Asnawi AW (2020) A review of Candidate genes and pathways in preeclampsia-an integrated bioinformatical analysis. Biology 9:E62",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004969",
+      "author": "G Moser",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1004969",
+      "journal-title": "PLoS Genet",
+      "key": "651_CR41",
+      "unstructured": "Moser G, Lee SH, Hayes BJ, Goddard ME, Wray NR, Visscher PM (2015) Simultaneous discovery, estimation and prediction analysis of complex traits using a bayesian mixture model. PLoS Genet 11:e1004969",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12711-014-0081-5",
+      "author": "MM Rolf",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR42",
+      "unstructured": "Rolf MM, Garrick DJ, Fountain T, Ramey HR, Weaber RL, Decker JE et al. (2015) Comparison of Bayesian models to estimate direct genomic values in multi-breed commercial beef cattle. Genet Sel Evol 47:1–14",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/1471-2164-15-478",
+      "author": "M Sargolzaei",
+      "doi-asserted-by": "crossref",
+      "first-page": "478",
+      "journal-title": "BMC Genom",
+      "key": "651_CR43",
+      "unstructured": "Sargolzaei M, Chesnais J, Schenkel F (2014) A new approach for efficient genotype imputation using information from relatives. BMC Genom 15:478–478",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3389/fgene.2019.00418",
+      "author": "CA Sevillano",
+      "doi-asserted-by": "crossref",
+      "first-page": "418",
+      "journal-title": "Front Genet Livest Genom",
+      "key": "651_CR44",
+      "unstructured": "Sevillano CA, Bovenhuis H, Calus MPL (2019) Genomic evaluation for a crossbreeding system implementing breed-of-origin for targeted markers. Front Genet Livest Genom 10:418",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3168/jds.2015-10091",
+      "author": "JS Stevenson",
+      "doi-asserted-by": "crossref",
+      "first-page": "3003",
+      "journal-title": "J Dairy Sci",
+      "key": "651_CR45",
+      "unstructured": "Stevenson JS, Pulley SL (2016) Feedback effects of estradiol and progesterone on ovulation and fertility of dairy cows after gonadotropin-releasing hormone-induced release of luteinizing hormone1. J Dairy Sci 99:3003–3015",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1086/504302",
+      "author": "H Tang",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Am J Hum Genet",
+      "key": "651_CR46",
+      "unstructured": "Tang H, Coram M, Wang P, Zhu X, Risch N (2006) Reconstructing genetic ancestry blocks in admixed individuals. Am J Hum Genet 79:1–12",
+      "volume": "79",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.3168/jds.2020-18662",
+      "author": "M Teissier",
+      "doi-asserted-by": "crossref",
+      "first-page": "11559",
+      "journal-title": "J Dairy Sci",
+      "key": "651_CR47",
+      "unstructured": "Teissier M, Larroque H, Brito LF, Rupp R, Schenkel FS, Robert-Granié C (2020) Genomic predictions based on haplotypes fitted as pseudo-SNP for milk production and udder type traits and SCS in French dairy goats. J Dairy Sci 103:11559–11573",
+      "volume": "103",
+      "year": "2020"
+    },
+    {
+      "key": "651_CR48",
+      "unstructured": "The Droughtmaster Society Australia. https://www.droughtmaster.com.au/"
+    },
+    {
+      "DOI": "10.1038/s41598-017-17127-1",
+      "author": "YT Utsunomiya",
+      "doi-asserted-by": "crossref",
+      "journal-title": "Sci Rep",
+      "key": "651_CR49",
+      "unstructured": "Utsunomiya YT, Milanesi M, Utsunomiya ATH, Torrecilha RBP, Kim E-S, Costa MS et al. (2017) A PLAG1 mutation contributed to stature recovery in modern cattle. Sci Rep 7:17140",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.32614/RJ-2014-011",
+      "author": "MP Van der Loo",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "journal-title": "R J",
+      "key": "651_CR50",
+      "unstructured": "Van der Loo MP (2014) The stringdist package for approximate string matching. R J 6:111",
+      "volume": "6",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/j.1439-0388.2008.00747.x",
+      "author": "TM Villumsen",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "journal-title": "J Anim Breed Genet",
+      "key": "651_CR51",
+      "unstructured": "Villumsen TM, Janss L, Lund MS (2009) The importance of haplotype length and heritability using genomic selection in dairy cattle. J Anim Breed Genet 126:3–13",
+      "volume": "126",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/s12711-020-00547-5",
+      "author": "CL Warburton",
+      "doi-asserted-by": "crossref",
+      "first-page": "28",
+      "journal-title": "Genet Sel Evol",
+      "key": "651_CR52",
+      "unstructured": "Warburton CL, Engle BN, Ross EM, Costilla R, Moore SS, Corbet NJ et al. (2020) Use of whole-genome sequence data and novel genomic selection strategies to improve selection for age at puberty in tropically-adapted beef heifers. Genet Sel Evol 52:28",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1089/dna.2015.3176",
+      "author": "B Xu",
+      "doi-asserted-by": "crossref",
+      "first-page": "226",
+      "journal-title": "DNA Cell Biol",
+      "key": "651_CR53",
+      "unstructured": "Xu B, Zhang Y-W, Zheng S-X, Tong X-H, Liu Y-S (2016) Expression profile of microRNAs and their targeted pathways in human ovaries detected by next-generation small RNA sequencing. DNA Cell Biol 35:226–234",
+      "volume": "35",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3389/fgene.2018.00118",
+      "doi-asserted-by": "publisher",
+      "key": "651_CR54",
+      "unstructured": "Xu S-S, Gao L, Xie X-L, Ren Y-L, Shen Z-Q, Wang F et al. (2018) Genome-wide association analyses highlight the potential for different genetic mechanisms for litter size among sheep breeds. Front Genet. https://doi.org/10.3389/fgene.2018.00118"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "author": "J Yang",
+      "doi-asserted-by": "crossref",
+      "first-page": "76",
+      "journal-title": "Am J Hum Genet",
+      "key": "651_CR55",
+      "unstructured": "Yang J, Lee SH, Goddard ME, Visscher PM (2011) GCTA: a tool for genome-wide complex trait analysis. Am J Hum Genet 88:76–82",
+      "volume": "88",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1101/2020.08.20.258491",
+      "doi-asserted-by": "crossref",
+      "key": "651_CR56",
+      "unstructured": "Yin L, Zhang H, Tang Z, Xu J, Yin D, Zhang Z et al. (2021) rMVP: A memory-efficient, visualization-enhanced, and parallel-accelerated tool for genome-wide association study. Genomics Proteomics Bioinform: S1672-0229:00050–4."
+    },
+    {
+      "DOI": "10.1038/nrg1270",
+      "author": "KT Zondervan",
+      "doi-asserted-by": "crossref",
+      "first-page": "89",
+      "journal-title": "Nat Rev Genet",
+      "key": "651_CR57",
+      "unstructured": "Zondervan KT, Cardon LR (2004) The complex interplay among factors that influence allelic association. Nat Rev Genet 5:89–100",
+      "volume": "5",
+      "year": "2004"
+    }
+  ],
+  "reference-count": 56,
+  "references-count": 56,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2165063/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41437-023-00651-4"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Heredity"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Concurrently mapping quantitative trait loci associations from multiple subspecies within hybrid populations"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "131"
+}

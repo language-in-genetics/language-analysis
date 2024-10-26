@@ -1,0 +1,829 @@
+{
+  "DOI": "10.1186/s40246-023-00500-9",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00500-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eInattention has been given to the pathogenesis of adolescent and young adult (AYA) hepatocellular carcinoma (HCC). Due to the more advanced tumor progression and poorer prognosis of AYA-HCC, together with a better tolerance ability, noncirrhotic background, and a stronger willingness to treat AYA-HCC, clinical and molecular biology studies are urgent and necessary, especially for those with hepatitis B infection.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eFor clinical aspects, the overall survival, the recurrence-free survival, and the Cox analyses were performed. Then, functional analysis, gene clustering, metabolic-related analysis, immune infiltration and competing endogenous RNA (ceRNA) construction were carried out using whole transcriptome sequencing technique.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eBased on the clinical information of our HCC cohort, the overall survival and recurrence-free survival rates were worse in the AYA group than in the elderly group as previously described. According to our whole transcriptome sequencing results, functional analysis revealed that metabolism-related pathways as well as protein translation and endoplasmic reticulum processing were enriched. Then the hub metabolism-related genes were screened by metabolite–protein interactions (MPIs) and protein–protein interactions (PPIs). Fatty acid metabolism is a crucial component of metabolic pathways, abnormalities of which may be the reason for the worse prognosis of HBV-AYA HCC. Finally, the relationship of disrupted expression of metabolism-related genes with immune infiltration was also analyzed, and the lncRNA‒miRNA‒mRNA-related ceRNA network for HBV-AYA HCC was constructed, which may provide new cues for HBV-AHA HCC prevention.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe worse prognosis and recurrence rate of HBV-AYA HCC may be related to abnormalities in metabolism-related pathways, especially disorders of fatty acid metabolism.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "500"
+  ],
+  "article-number": "52",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "4 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "6 June 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "13 June 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The protocol was approved by an independent ethics committee and the Institutional Review Board of West China Hospital of Sichuan University (2020-166) and all participating research subcentral hospitals. All subjects were enrolled in this study after signing informed consent."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "All authors of this paper consent for publishing the manuscript and figures in the journal."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "No potential conflicts of interest were disclosed."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Lv",
+      "given": "Tao",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Bo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xu",
+      "given": "Xi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jiang",
+      "given": "Chenhao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zheng",
+      "given": "Daofeng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "He",
+      "given": "Diao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhou",
+      "given": "Yongjie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Jiayin",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        13
+      ]
+    ],
+    "date-time": "2023-06-13T08:02:20Z",
+    "timestamp": 1686643340000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        13
+      ]
+    ],
+    "date-time": "2023-06-13T08:08:11Z",
+    "timestamp": 1686643691000
+  },
+  "funder": [
+    {
+      "award": [
+        "2021M702343"
+      ],
+      "name": "the China Postdoctoral Science Foundation Grant"
+    },
+    {
+      "award": [
+        "2020HXBH133"
+      ],
+      "name": "the “Post-Doctor Research Project, West China Hospital, Sichuan University"
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "82270691",
+        "82070674"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Natural Science Foundation of China"
+    },
+    {
+      "award": [
+        "2022YFS0253"
+      ],
+      "name": "the Key R\u0026D projects of Sichuan Provincial Department of Science and Technology"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        2
+      ]
+    ],
+    "date-time": "2024-03-02T21:57:48Z",
+    "timestamp": 1709416668401
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        13
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            13
+          ]
+        ],
+        "date-time": "2023-06-13T00:00:00Z",
+        "timestamp": 1686614400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            13
+          ]
+        ],
+        "date-time": "2023-06-13T00:00:00Z",
+        "timestamp": 1686614400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00500-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00500-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00500-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        13
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        13
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3322/caac.21660",
+      "author": "H Sung",
+      "doi-asserted-by": "publisher",
+      "first-page": "209",
+      "issue": "3",
+      "journal-title": "CA Cancer J Clin.",
+      "key": "500_CR1",
+      "unstructured": "Sung H, Ferlay J, Siegel RL, Laversanne M, Soerjomataram I, Jemal A, et al. Global Cancer Statistics 2020: GLOBOCAN Estimates of Incidence and Mortality Worldwide for 36 Cancers in 185 Countries. CA Cancer J Clin. 2021;71(3):209–49. https://doi.org/10.3322/caac.21660.",
+      "volume": "71",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/j.1478-3231.2006.01309.x",
+      "author": "CH Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "766",
+      "issue": "7",
+      "journal-title": "Liver Int Off J Int Assoc Stud Liver",
+      "key": "500_CR2",
+      "unstructured": "Chen CH, Chang TT, Cheng KS, Su WW, Yang SS, Lin HH, et al. Do young hepatocellular carcinoma patients have worse prognosis? The paradox of age as a prognostic factor in the survival of hepatocellular carcinoma patients. Liver Int Off J Int Assoc Stud Liver. 2006;26(7):766–73. https://doi.org/10.1111/j.1478-3231.2006.01309.x.",
+      "volume": "26",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1111/j.1440-1746.2007.04914.x",
+      "author": "SJ Cho",
+      "doi-asserted-by": "publisher",
+      "first-page": "1226",
+      "issue": "8",
+      "journal-title": "J Gastroenterol Hepatol",
+      "key": "500_CR3",
+      "unstructured": "Cho SJ, Yoon JH, Hwang SS, Lee HS. Do young hepatocellular carcinoma patients with relatively good liver function have poorer outcomes than elderly patients? J Gastroenterol Hepatol. 2007;22(8):1226–31. https://doi.org/10.1111/j.1440-1746.2007.04914.x.",
+      "volume": "22",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1111/j.1365-2036.2004.01912.x",
+      "author": "CM Lam",
+      "doi-asserted-by": "publisher",
+      "first-page": "771",
+      "issue": "7",
+      "journal-title": "Aliment Pharmacol Ther",
+      "key": "500_CR4",
+      "unstructured": "Lam CM, Chan AO, Ho P, Ng IO, Lo CM, Liu CL, et al. Different presentation of hepatitis B-related hepatocellular carcinoma in a cohort of 1863 young and old patients - implications for screening. Aliment Pharmacol Ther. 2004;19(7):771–7. https://doi.org/10.1111/j.1365-2036.2004.01912.x.",
+      "volume": "19",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1155/2020/4691425",
+      "author": "L Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "4691425",
+      "journal-title": "Gastroenterol Res Pract",
+      "key": "500_CR5",
+      "unstructured": "Li L, Xu L, Wen T, Wu H, Wang W, Yang J, et al. Poor prognoses of young hepatocellular carcinoma patients with microvascular invasion: a propensity score matching cohort study. Gastroenterol Res Pract. 2020;2020:4691425. https://doi.org/10.1155/2020/4691425.",
+      "volume": "2020",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.amjsurg.2021.03.009",
+      "author": "YK Diao",
+      "doi-asserted-by": "publisher",
+      "first-page": "751",
+      "issue": "4",
+      "journal-title": "Am J Surg",
+      "key": "500_CR6",
+      "unstructured": "Diao YK, Liu JW, Wu H, Wang MD, Fan XP, Chen TH, et al. Long-term oncologic outcomes of liver resection for hepatocellular carcinoma in adolescents and young adults: a multicenter study from a hepatitis B virus-endemic area. Am J Surg. 2021;222(4):751–8. https://doi.org/10.1016/j.amjsurg.2021.03.009.",
+      "volume": "222",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/gut.2009.194217",
+      "author": "F Mirici-Cappa",
+      "doi-asserted-by": "publisher",
+      "first-page": "387",
+      "issue": "3",
+      "journal-title": "Gut",
+      "key": "500_CR7",
+      "unstructured": "Mirici-Cappa F, Gramenzi A, Santi V, Zambruni A, Di Micoli A, Frigerio M, et al. Treatments for hepatocellular carcinoma in elderly patients are as effective as in younger patients: a 20-year multicentre experience. Gut. 2010;59(3):387–96. https://doi.org/10.1136/gut.2009.194217.",
+      "volume": "59",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.ijsu.2018.03.051",
+      "author": "W Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "259",
+      "issue": "Pt A",
+      "journal-title": "Int J Surg",
+      "key": "500_CR8",
+      "unstructured": "Zhang W, Liu C, Tan Y, Jiang L, Yan L, Yang J, et al. Role of liver resection in treating intermediate and advanced stage adolescent and young adult hepatocellular carcinoma patients: a propensity-matching cohort study. Int J Surg. 2018;54(Pt A):259–64. https://doi.org/10.1016/j.ijsu.2018.03.051.",
+      "volume": "54",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.21873/anticanres.15075",
+      "author": "KY Au",
+      "doi-asserted-by": "publisher",
+      "first-page": "2933",
+      "issue": "6",
+      "journal-title": "Anticancer Res",
+      "key": "500_CR9",
+      "unstructured": "Au KY, Chan KK, Lo RC. A clinicopathological study of young-onset hepatocellular carcinoma. Anticancer Res. 2021;41(6):2933–44. https://doi.org/10.21873/anticanres.15075.",
+      "volume": "41",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.18632/oncotarget.21353",
+      "author": "C Ang",
+      "doi-asserted-by": "publisher",
+      "first-page": "101591",
+      "issue": "60",
+      "journal-title": "Oncotarget",
+      "key": "500_CR10",
+      "unstructured": "Ang C, Shields A, Xiu J, Gatalica Z, Reddy S, Salem ME, et al. Molecular characteristics of hepatocellular carcinomas from different age groups. Oncotarget. 2017;8(60):101591–8. https://doi.org/10.18632/oncotarget.21353.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1073/pnas.0506580102",
+      "author": "A Subramanian",
+      "doi-asserted-by": "publisher",
+      "first-page": "15545",
+      "issue": "43",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "500_CR11",
+      "unstructured": "Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, et al. Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci USA. 2005;102(43):15545–50. https://doi.org/10.1073/pnas.0506580102.",
+      "volume": "102",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020130",
+      "author": "A Ghazalpour",
+      "doi-asserted-by": "publisher",
+      "first-page": "e130",
+      "issue": "8",
+      "journal-title": "PLoS Gen",
+      "key": "500_CR12",
+      "unstructured": "Ghazalpour A, Doss S, Zhang B, Wang S, Plaisier C, Castellanos R, et al. Integrating genetic and network analysis to characterize genes related to mouse weight. PLoS Gen. 2006;2(8):e130. https://doi.org/10.1371/journal.pgen.0020130.",
+      "volume": "2",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/nar/gki005",
+      "author": "C von Mering",
+      "doi-asserted-by": "publisher",
+      "first-page": "433",
+      "journal-title": "Nucleic Acids Res",
+      "key": "500_CR13",
+      "unstructured": "von Mering C, Jensen LJ, Snel B, Hooper SD, Krupp M, Foglierini M, et al. STRING: known and predicted protein-protein associations, integrated and transferred across organisms. Nucleic Acids Res. 2005;33:433–7. https://doi.org/10.1093/nar/gki005.",
+      "volume": "33",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1002/advs.202100311",
+      "author": "D Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "e2100311",
+      "issue": "17",
+      "journal-title": "Adv Sci",
+      "key": "500_CR14",
+      "unstructured": "Chen D, Zhang Y, Wang W, Chen H, Ling T, Yang R, et al. Identification and characterization of robust hepatocellular carcinoma prognostic subtypes based on an integrative metabolite-protein interaction network. Adv Sci. 2021;8(17):e2100311. https://doi.org/10.1002/advs.202100311.",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1158/2159-8290.Cd-13-0202",
+      "author": "FA Karreth",
+      "doi-asserted-by": "publisher",
+      "first-page": "1113",
+      "issue": "10",
+      "journal-title": "Cancer Discover",
+      "key": "500_CR15",
+      "unstructured": "Karreth FA, Pandolfi PP. ceRNA cross-talk in cancer: when ce-bling rivalries go awry. Cancer Discover. 2013;3(10):1113–21. https://doi.org/10.1158/2159-8290.Cd-13-0202.",
+      "volume": "3",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41587-020-0546-8",
+      "author": "MJ Goldman",
+      "doi-asserted-by": "publisher",
+      "first-page": "675",
+      "issue": "6",
+      "journal-title": "Nat Biotechnol",
+      "key": "500_CR16",
+      "unstructured": "Goldman MJ, Craft B, Hastie M, Repečka K, McDade F, Kamath A, et al. Visualizing and interpreting cancer genomics data via the Xena platform. Nat Biotechnol. 2020;38(6):675–8. https://doi.org/10.1038/s41587-020-0546-8.",
+      "volume": "38",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ncomms3612",
+      "author": "K Yoshihara",
+      "doi-asserted-by": "publisher",
+      "first-page": "2612",
+      "journal-title": "Nat Commun",
+      "key": "500_CR17",
+      "unstructured": "Yoshihara K, Shahmoradgoli M, Martínez E, Vegesna R, Kim H, Torres-Garcia W, et al. Inferring tumour purity and stromal and immune cell admixture from expression data. Nat Commun. 2013;4:2612. https://doi.org/10.1038/ncomms3612.",
+      "volume": "4",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nmeth.3337",
+      "author": "AM Newman",
+      "doi-asserted-by": "publisher",
+      "first-page": "453",
+      "issue": "5",
+      "journal-title": "Nat Methods",
+      "key": "500_CR18",
+      "unstructured": "Newman AM, Liu CL, Green MR, Gentles AJ, Feng W, Xu Y, et al. Robust enumeration of cell subsets from tissue expression profiles. Nat Methods. 2015;12(5):453–7. https://doi.org/10.1038/nmeth.3337.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ccell.2021.04.014",
+      "author": "A Bagaev",
+      "doi-asserted-by": "publisher",
+      "first-page": "845",
+      "issue": "6",
+      "journal-title": "Cancer Cell",
+      "key": "500_CR19",
+      "unstructured": "Bagaev A, Kotlov N, Nomie K, Svekolkin V, Gafurov A, Isaeva O, et al. Conserved pan-cancer microenvironment subtypes predict response to immunotherapy. Cancer Cell. 2021;39(6):845-65.e7. https://doi.org/10.1016/j.ccell.2021.04.014.",
+      "volume": "39",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/1752-0509-8-s4-s11",
+      "author": "CH Chin",
+      "doi-asserted-by": "publisher",
+      "first-page": "S11",
+      "issue": "Suppl 4",
+      "journal-title": "BMC systems biology.",
+      "key": "500_CR20",
+      "unstructured": "Chin CH, Chen SH, Wu HH, Ho CW, Ko MT, Lin CY. cytoHubba: identifying hub objects and sub-networks from complex interactome. BMC systems biology. 2014;8(Suppl 4):S11. https://doi.org/10.1186/1752-0509-8-s4-s11.",
+      "volume": "8",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3390/cancers9110153",
+      "author": "M Reina",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cancers",
+      "key": "500_CR21",
+      "unstructured": "Reina M, Espel E. Role of LFA-1 and ICAM-1 in Cancer. Cancers. 2017. https://doi.org/10.3390/cancers9110153.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nm.3394",
+      "author": "DF Quail",
+      "doi-asserted-by": "publisher",
+      "first-page": "1423",
+      "issue": "11",
+      "journal-title": "Nat Med",
+      "key": "500_CR22",
+      "unstructured": "Quail DF, Joyce JA. Microenvironmental regulation of tumor progression and metastasis. Nat Med. 2013;19(11):1423–37. https://doi.org/10.1038/nm.3394.",
+      "volume": "19",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nrc2676",
+      "author": "DB Shackelford",
+      "doi-asserted-by": "publisher",
+      "first-page": "563",
+      "issue": "8",
+      "journal-title": "Nat Rev Cancer",
+      "key": "500_CR23",
+      "unstructured": "Shackelford DB, Shaw RJ. The LKB1-AMPK pathway: metabolism and growth control in tumour suppression. Nat Rev Cancer. 2009;9(8):563–75. https://doi.org/10.1038/nrc2676.",
+      "volume": "9",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.5604/01.3001.0010.7545",
+      "author": "J Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "134",
+      "issue": "1",
+      "journal-title": "Ann Hepatol",
+      "key": "500_CR24",
+      "unstructured": "Shen J, Li C, Yan L, Li B, Xu M, Yang J, et al. Short- and long-term outcomes between young and older HCC Patients exceeding the milan criteria after hepatectomy. Ann Hepatol. 2018;17(1):134–43. https://doi.org/10.5604/01.3001.0010.7545.",
+      "volume": "17",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.14701/kjhbps.2015.19.4.154",
+      "author": "JS Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "154",
+      "issue": "4",
+      "journal-title": "Korean J Hepatobiliary Pancreat Surg",
+      "key": "500_CR25",
+      "unstructured": "Lee JS, Kim JM, Lee S, Choi JY, Cho W, Choi GS, et al. The prognosis in cases of hepatocellular carcinoma after hepatectomy: young patients versus older patients. Korean J Hepatobiliary Pancreat Surg. 2015;19(4):154–60. https://doi.org/10.14701/kjhbps.2015.19.4.154.",
+      "volume": "19",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.surge.2020.11.013",
+      "author": "KKC Ng",
+      "doi-asserted-by": "publisher",
+      "first-page": "329",
+      "issue": "6",
+      "journal-title": "The Surgeon J Royal Colleges Surgeons Edinburgh Ireland",
+      "key": "500_CR26",
+      "unstructured": "Ng KKC, Cheng NMY, Huang J, Liao M, Chong CCN, Lee KF, et al. Development and validation of a novel nomogram predicting 10-year actual survival after curative hepatectomy for hepatocellular carcinoma. The Surgeon J Royal Colleges Surgeons Edinburgh Ireland. 2021;19(6):329–37. https://doi.org/10.1016/j.surge.2020.11.013.",
+      "volume": "19",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s12885-019-6409-3",
+      "author": "PH Le",
+      "doi-asserted-by": "publisher",
+      "first-page": "1190",
+      "issue": "1",
+      "journal-title": "BMC Cancer",
+      "key": "500_CR27",
+      "unstructured": "Le PH, Kuo CJ, Hsieh YC, Chen TH, Lin CL, Yeh CT, et al. Ages of hepatocellular carcinoma occurrence and life expectancy are associated with a UGT2B28 genomic variation. BMC Cancer. 2019;19(1):1190. https://doi.org/10.1186/s12885-019-6409-3.",
+      "volume": "19",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41580-020-0250-z",
+      "author": "C Hetz",
+      "doi-asserted-by": "publisher",
+      "first-page": "421",
+      "issue": "8",
+      "journal-title": "Nat Rev Mol Cell Biol",
+      "key": "500_CR28",
+      "unstructured": "Hetz C, Zhang K, Kaufman RJ. Mechanisms, regulation and functions of the unfolded protein response. Nat Rev Mol Cell Biol. 2020;21(8):421–38. https://doi.org/10.1038/s41580-020-0250-z.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.phrs.2017.04.003",
+      "author": "R Ojha",
+      "doi-asserted-by": "publisher",
+      "first-page": "258",
+      "journal-title": "Pharmacol Res",
+      "key": "500_CR29",
+      "unstructured": "Ojha R, Amaravadi RK. Targeting the unfolded protein response in cancer. Pharmacol Res. 2017;120:258–66. https://doi.org/10.1016/j.phrs.2017.04.003.",
+      "volume": "120",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41568-020-00312-2",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "71",
+      "issue": "2",
+      "journal-title": "Nat Rev Cancer",
+      "key": "500_CR30",
+      "unstructured": "Chen X, Cubillos-Ruiz JR. Endoplasmic reticulum stress signals in the tumour and its microenvironment. Nat Rev Cancer. 2021;21(2):71–88. https://doi.org/10.1038/s41568-020-00312-2.",
+      "volume": "21",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/jcmm.16255",
+      "author": "M Moncan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1359",
+      "issue": "3",
+      "journal-title": "J Cell Mol Med",
+      "key": "500_CR31",
+      "unstructured": "Moncan M, Mnich K, Blomme A, Almanza A, Samali A, Gorman AM. Regulation of lipid metabolism by the unfolded protein response. J Cell Mol Med. 2021;25(3):1359–70. https://doi.org/10.1111/jcmm.16255.",
+      "volume": "25",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cell.2016.12.039",
+      "author": "MG Vander Heiden",
+      "doi-asserted-by": "publisher",
+      "first-page": "657",
+      "issue": "4",
+      "journal-title": "Cell",
+      "key": "500_CR32",
+      "unstructured": "Vander Heiden MG, DeBerardinis RJ. Understanding the Intersections between metabolism and cancer biology. Cell. 2017;168(4):657–69. https://doi.org/10.1016/j.cell.2016.12.039.",
+      "volume": "168",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2013.05.017",
+      "author": "E Currie",
+      "doi-asserted-by": "publisher",
+      "first-page": "153",
+      "issue": "2",
+      "journal-title": "Cell Metab",
+      "key": "500_CR33",
+      "unstructured": "Currie E, Schulze A, Zechner R, Walther TC, Farese RV Jr. Cellular fatty acid metabolism and cancer. Cell Metab. 2013;18(2):153–61. https://doi.org/10.1016/j.cmet.2013.05.017.",
+      "volume": "18",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nrc.2016.89",
+      "author": "F Röhrig",
+      "doi-asserted-by": "publisher",
+      "first-page": "732",
+      "issue": "11",
+      "journal-title": "Nat Rev Cancer",
+      "key": "500_CR34",
+      "unstructured": "Röhrig F, Schulze A. The multifaceted roles of fatty acid synthesis in cancer. Nat Rev Cancer. 2016;16(11):732–49. https://doi.org/10.1038/nrc.2016.89.",
+      "volume": "16",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nrc3483",
+      "author": "A Carracedo",
+      "doi-asserted-by": "publisher",
+      "first-page": "227",
+      "issue": "4",
+      "journal-title": "Nat Rev Cancer",
+      "key": "500_CR35",
+      "unstructured": "Carracedo A, Cantley LC, Pandolfi PP. Cancer metabolism: fatty acid oxidation in the limelight. Nat Rev Cancer. 2013;13(4):227–32. https://doi.org/10.1038/nrc3483.",
+      "volume": "13",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.cell.2007.08.008",
+      "author": "H Riezman",
+      "doi-asserted-by": "publisher",
+      "first-page": "587",
+      "issue": "4",
+      "journal-title": "Cell",
+      "key": "500_CR36",
+      "unstructured": "Riezman H. The long and short of fatty acid synthesis. Cell. 2007;130(4):587–8. https://doi.org/10.1016/j.cell.2007.08.008.",
+      "volume": "130",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/j.bbalip.2018.06.010",
+      "author": "S Senga",
+      "doi-asserted-by": "publisher",
+      "first-page": "1057",
+      "issue": "9",
+      "journal-title": "Biochim Biophys Acta",
+      "key": "500_CR37",
+      "unstructured": "Senga S, Kobayashi N, Kawaguchi K, Ando A, Fujii H. Fatty acid-binding protein 5 (FABP5) promotes lipolysis of lipid droplets, de novo fatty acid (FA) synthesis and activation of nuclear factor-kappa B (NF-κB) signaling in cancer cells. Biochim Biophys Acta. 2018;1863(9):1057–67. https://doi.org/10.1016/j.bbalip.2018.06.010.",
+      "volume": "1863",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s12032-014-0192-4",
+      "author": "WA Keshk",
+      "doi-asserted-by": "publisher",
+      "first-page": "192",
+      "issue": "10",
+      "journal-title": "Med Oncol",
+      "key": "500_CR38",
+      "unstructured": "Keshk WA, Zineldeen DH, Wasfy RE, El-Khadrawy OH. Fatty acid synthase/oxidized low-density lipoprotein as metabolic oncogenes linking obesity to colon cancer via NF-kappa B in Egyptians. Med Oncol. 2014;31(10):192. https://doi.org/10.1007/s12032-014-0192-4.",
+      "volume": "31",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1262/jrd.2016-157",
+      "author": "H Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "325",
+      "issue": "3",
+      "journal-title": "J Reprod Dev",
+      "key": "500_CR39",
+      "unstructured": "Zhang H, Liu Y, Weng J, Usuda K, Fujii K, Watanabe G, et al. Decrease of lactogenic hormones induce epithelial-mesenchymal transition via TGFβ1 and arachidonic acid during mammary gland involution. J Reprod Dev. 2017;63(3):325–32. https://doi.org/10.1262/jrd.2016-157.",
+      "volume": "63",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1046/j.1365-2249.2000.01399.x",
+      "author": "LS Harbige",
+      "doi-asserted-by": "publisher",
+      "first-page": "445",
+      "issue": "3",
+      "journal-title": "Clin Exp Immunol",
+      "key": "500_CR40",
+      "unstructured": "Harbige LS, Layward L, Morris-Downes MM, Dumonde DC, Amor S. The protective effects of omega-6 fatty acids in experimental autoimmune encephalomyelitis (EAE) in relation to transforming growth factor-beta 1 (TGF-beta1) up-regulation and increased prostaglandin E2 (PGE2) production. Clin Exp Immunol. 2000;122(3):445–52. https://doi.org/10.1046/j.1365-2249.2000.01399.x.",
+      "volume": "122",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1016/j.tranon.2019.12.010",
+      "author": "L Barrueto",
+      "doi-asserted-by": "publisher",
+      "first-page": "100738",
+      "issue": "3",
+      "journal-title": "Trans Oncol",
+      "key": "500_CR41",
+      "unstructured": "Barrueto L, Caminero F, Cash L, Makris C, Lamichhane P, Deshmukh RR. Resistance to checkpoint inhibition in cancer immunotherapy. Trans Oncol. 2020;13(3):100738. https://doi.org/10.1016/j.tranon.2019.12.010.",
+      "volume": "13",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1146/annurev-pathol-042020-042741",
+      "author": "S Bagchi",
+      "doi-asserted-by": "publisher",
+      "first-page": "223",
+      "journal-title": "Annu Rev Pathol",
+      "key": "500_CR42",
+      "unstructured": "Bagchi S, Yuan R, Engleman EG. Immune checkpoint inhibitors for the treatment of cancer: clinical impact and mechanisms of response and resistance. Annu Rev Pathol. 2021;16:223–49. https://doi.org/10.1146/annurev-pathol-042020-042741.",
+      "volume": "16",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 42,
+  "references-count": 42,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2654558/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00500-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Clinical prognosis and related molecular features of hepatitis B-associated adolescent and young adult hepatocellular carcinoma"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

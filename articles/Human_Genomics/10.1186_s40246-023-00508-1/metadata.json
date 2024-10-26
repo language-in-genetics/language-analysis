@@ -1,0 +1,1112 @@
+{
+  "DOI": "10.1186/s40246-023-00508-1",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00508-1",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThis pilot study aims to identify and functionally assess pharmacovariants in whole exome sequencing data. While detection of known variants has benefited from pharmacogenomic-dedicated bioinformatics tools before, in this paper we have tested novel deep computational analysis in addition to artificial intelligence as possible approaches for functional analysis of unknown markers within less studied drug-related genes.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003ePharmacovariants from 1800 drug-related genes from 100 WES data files underwent (a) deep computational analysis by eight bioinformatic algorithms (overall containing 23 tools) and (b) random forest (RF) classifier as the machine learning (ML) approach separately. ML model efficiency was calculated by internal and external cross-validation during recursive feature elimination. Protein modelling was also performed for predicted highly damaging variants with lower frequencies. Genotype–phenotype correlations were implemented for top selected variants in terms of highest possibility of being damaging.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eFive deleterious pharmacovariants in the \u003cjats:italic\u003eRYR1\u003c/jats:italic\u003e, \u003cjats:italic\u003ePOLG\u003c/jats:italic\u003e, \u003cjats:italic\u003eANXA11\u003c/jats:italic\u003e, \u003cjats:italic\u003eCCNH\u003c/jats:italic\u003e, and \u003cjats:italic\u003eCDH23\u003c/jats:italic\u003e genes identified in step (a) and subsequent analysis displayed high impact on drug-related phenotypes. Also, the utilization of recursive feature elimination achieved a subset of 175 malfunction pharmacovariants in 135 drug-related genes that were used by the RF model with fivefold internal cross-validation, resulting in an area under the curve of 0.9736842 with an average accuracy of 0.9818 (95% CI: 0.89, 0.99) on predicting whether a carrying individuals will develop adverse drug reactions or not. However, the external cross-validation of the same model indicated a possible false positive result when dealing with a low number of observations, as only 60 important variants in 49 genes were displayed, giving an AUC of 0.5384848 with an average accuracy of 0.9512 (95% CI: 0.83, 0.99).\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eWhile there are some technologies for functionally assess not-interpreted pharmacovariants, there is still an essential need for the development of tools, methods, and algorithms which are able to provide a functional prediction for every single pharmacovariant in both large-scale datasets and small cohorts. Our approaches may bring new insights for choosing the right computational assessment algorithms out of high throughput DNA sequencing data from small cohorts to be used for personalized drug therapy implementation.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "508"
+  ],
+  "article-number": "62",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "18 April 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "3 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "14 July 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Tafazoli",
+      "given": "Alireza",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Mikros",
+      "given": "John",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Khaghani",
+      "given": "Faeze",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Alimardani",
+      "given": "Maliheh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rafigh",
+      "given": "Mahboobeh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hemmati",
+      "given": "Mahboobeh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Siamoglou",
+      "given": "Stavroula",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Golińska",
+      "given": "Agnieszka Kitlas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kamiński",
+      "given": "Karol A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Niemira",
+      "given": "Magdalena",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Miltyk",
+      "given": "Wojciech",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Patrinos",
+      "given": "George P.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        14
+      ]
+    ],
+    "date-time": "2023-07-14T06:02:41Z",
+    "timestamp": 1689314561000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        14
+      ]
+    ],
+    "date-time": "2023-07-14T06:05:58Z",
+    "timestamp": 1689314758000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000780",
+      "award": [
+        "754432",
+        "754432"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "European Commission"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        15
+      ]
+    ],
+    "date-time": "2023-07-15T04:24:39Z",
+    "timestamp": 1689395079890
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        14
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            14
+          ]
+        ],
+        "date-time": "2023-07-14T00:00:00Z",
+        "timestamp": 1689292800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            14
+          ]
+        ],
+        "date-time": "2023-07-14T00:00:00Z",
+        "timestamp": 1689292800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00508-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00508-1/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00508-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        14
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        14
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3389/fphar.2019.00384",
+      "author": "E Giannopoulou",
+      "doi-asserted-by": "publisher",
+      "first-page": "384",
+      "journal-title": "Front Pharmacol",
+      "key": "508_CR1",
+      "unstructured": "Giannopoulou E, Katsila T, Mitropoulou C, Tsermpini E-E, Patrinos GP. Integrating next-generation sequencing in the clinical pharmacogenomics workflow. Front Pharmacol. 2019;10:384.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fphar.2015.00061",
+      "author": "T Katsila",
+      "doi-asserted-by": "publisher",
+      "first-page": "61",
+      "journal-title": "Front Pharmacol",
+      "key": "508_CR2",
+      "unstructured": "Katsila T, Patrinos GP. Whole genome sequencing in pharmacogenomics. Front Pharmacol. 2015;6:61.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1080/14737159.2018.1461561",
+      "author": "Y Ji",
+      "doi-asserted-by": "publisher",
+      "first-page": "411",
+      "issue": "5",
+      "journal-title": "Expert Rev Mol Diagn",
+      "key": "508_CR3",
+      "unstructured": "Ji Y, Si Y, McMillin GA, Lyon E. Clinical pharmacogenomics testing in the era of next generation sequencing: challenges and opportunities for precision medicine. Expert Rev Mol Diagn. 2018;18(5):411–21.",
+      "volume": "18",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0263137",
+      "author": "E Goljan",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0263137",
+      "issue": "1",
+      "journal-title": "PLoS ONE",
+      "key": "508_CR4",
+      "unstructured": "Goljan E, Abouelhoda M, ElKalioby MM, Jabaan A, Alghithi N, Meyer BF, et al. Identification of pharmacogenetic variants from large scale next generation sequencing data in the Saudi population. PLoS ONE. 2022;17(1):e0263137.",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1111/cts.12869",
+      "author": "M Arbitrio",
+      "doi-asserted-by": "publisher",
+      "first-page": "113",
+      "issue": "1",
+      "journal-title": "Clin Transl Sci",
+      "key": "508_CR5",
+      "unstructured": "Arbitrio M, Scionti F, Di Martino MT, Caracciolo D, Pensabene L, Tassone P, et al. Pharmacogenomics biomarker discovery and validation for translation in clinical practice. Clin Transl Sci. 2021;14(1):113–9.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fphar.2018.01437",
+      "author": "Y Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1437",
+      "journal-title": "Front Pharmacol",
+      "key": "508_CR6",
+      "unstructured": "Zhou Y, Fujikura K, Mkrtchian S, Lauschke VM. Computational methods for the pharmacogenetic interpretation of next generation sequencing data. Front Pharmacol. 2018;9:1437.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "author": "A Tafazoli",
+      "first-page": "12",
+      "journal-title": "Front Pharmacol",
+      "key": "508_CR7",
+      "unstructured": "Tafazoli A, Guchelaar H-J, Miltyk W, Kretowski AJ, Swen JJ. Applying next-generation sequencing platforms for pharmacogenomic testing in clinical practice. Front Pharmacol. 2025;2021:12.",
+      "volume": "2021",
+      "year": "2025"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0054-0",
+      "author": "S-b Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "361",
+      "issue": "2",
+      "journal-title": "Genetics Med",
+      "key": "508_CR8",
+      "unstructured": "Lee S-b, Wheeler MM, Patterson K, McGee S, Dalton R, Woodahl EL, et al. Stargazer: a software tool for calling star alleles from next-generation sequencing data using CYP2D6 as a model. Genetics Med. 2019;21(2):361–72.",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-018-03273-1",
+      "author": "I Numanagić",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "508_CR9",
+      "unstructured": "Numanagić I, Malikić S, Ford M, Qin X, Toji L, Radovich M, et al. Allelic decomposition and exact genotyping of highly polymorphic and structurally variant genes. Nat Commun. 2018;9(1):1–11.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/cpt.1568",
+      "author": "K Sangkuhl",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "issue": "1",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "508_CR10",
+      "unstructured": "Sangkuhl K, Whirl-Carrillo M, Whaley RM, Woon M, Lavertu A, Altman RB, et al. Pharmacogenomics clinical annotation tool (Pharm CAT). Clin Pharmacol Ther. 2020;107(1):203–10.",
+      "volume": "107",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41397-018-0044-2",
+      "author": "Y Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "issue": "2",
+      "journal-title": "Pharmacogenomics J",
+      "key": "508_CR11",
+      "unstructured": "Zhou Y, Mkrtchian S, Kumondai M, Hiratsuka M, Lauschke VM. An optimized prediction framework to assess the functional impact of pharmacogenetic variants. Pharmacogenomics J. 2019;19(2):115–26.",
+      "volume": "19",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s40246-021-00352-1",
+      "author": "M-T Pandi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Hum Genomics",
+      "key": "508_CR12",
+      "unstructured": "Pandi M-T, Koromina M, Tsafaridis I, Patsilinakos S, Christoforou E, van der Spek PJ, et al. A novel machine learning-based approach for the computational functional assessment of pharmacogenomic variants. Hum Genomics. 2021;15(1):1–13.",
+      "volume": "15",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.2217/pgs-2018-0008",
+      "author": "AA Kalinin",
+      "doi-asserted-by": "publisher",
+      "first-page": "629",
+      "issue": "7",
+      "journal-title": "Pharmacogenomics",
+      "key": "508_CR13",
+      "unstructured": "Kalinin AA, Higgins GA, Reamaroon N, Soroushmehr S, Allyn-Feuer A, Dinov ID, et al. Deep learning in pharmacogenomics: from gene regulation to patient stratification. Pharmacogenomics. 2018;19(7):629–50.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/BF00058655",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "123",
+      "journal-title": "Mach Learn",
+      "key": "508_CR14",
+      "unstructured": "Breiman L. Bagging predictors. Mach Learn. 1996;24:123–40.",
+      "volume": "24",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1038/s41397-022-00286-4",
+      "author": "A Tafazoli",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Pharmacogenomics J",
+      "key": "508_CR15",
+      "unstructured": "Tafazoli A, van der Lee M, Swen JJ, Zeller A, Wawrusiewicz-Kurylonek N, Mei H, et al. Development of an extensive workflow for comprehensive clinical pharmacogenomic profiling: lessons from a pilot study on 100 whole exome sequencing data. Pharmacogenomics J. 2022. https://doi.org/10.1038/s41397-022-00286-4.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/cpz1.226",
+      "author": "L Gong",
+      "doi-asserted-by": "publisher",
+      "first-page": "e226",
+      "issue": "8",
+      "journal-title": "Curr Protocols",
+      "key": "508_CR16",
+      "unstructured": "Gong L, Whirl-Carrillo M, Klein TE. PharmGKB, an integrated resource of pharmacogenomic knowledge. Curr Protocols. 2021;1(8):e226.",
+      "volume": "1",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "author": "AL Price",
+      "doi-asserted-by": "publisher",
+      "first-page": "904",
+      "issue": "8",
+      "journal-title": "Nat Genetics",
+      "key": "508_CR17",
+      "unstructured": "Price AL, Patterson NJ, Plenge RM, Weinblatt ME, Shadick NA, Reich D. Principal components analysis corrects for stratification in genome-wide association studies. Nat Genetics. 2006;38(8):904–9.",
+      "volume": "38",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "author": "W McLaren",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "508_CR18",
+      "unstructured": "McLaren W, Gil L, Hunt SE, Riat HS, Ritchie GR, Thormann A, et al. The ensembl variant effect predictor. Genome Biol. 2016;17(1):1–14.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "author": "CC Chang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Gigascience",
+      "key": "508_CR19",
+      "unstructured": "Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015. https://doi.org/10.1186/s13742-015-0047-8.",
+      "year": "2015"
+    },
+    {
+      "key": "508_CR20",
+      "unstructured": "VarSeq. VarSeq Brochures. Available online: https://www.goldenhelix.com/products/VarSeq/. Accessed 13 Feb 2023."
+    },
+    {
+      "DOI": "10.3747/pdi.2015.00261",
+      "author": "O Devuyst",
+      "doi-asserted-by": "publisher",
+      "first-page": "676",
+      "journal-title": "Perit Dial Int",
+      "key": "508_CR21",
+      "unstructured": "Devuyst O. The 1000 genomes project: welcome to a new world. Perit Dial Int. 2015;35:676–7.",
+      "volume": "35",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41576-020-0255-7",
+      "author": "L Koch",
+      "doi-asserted-by": "publisher",
+      "first-page": "448",
+      "issue": "8",
+      "journal-title": "Nature Rev Genetics",
+      "key": "508_CR22",
+      "unstructured": "Koch L. Exploring human genomic diversity with gnomAD. Nature Rev Genetics. 2020;21(8):448.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/humu.22932",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "235",
+      "issue": "3",
+      "journal-title": "Human Mutat",
+      "key": "508_CR23",
+      "unstructured": "Liu X, Wu C, Li C, Boerwinkle E. dbNSFP v3.0: a one-stop database of functional predictions and annotations for human nonsynonymous and splice-site SNVs. Human Mutat. 2016;37(3):235–41.",
+      "volume": "37",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13073-020-00803-9",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Med",
+      "key": "508_CR24",
+      "unstructured": "Liu X, Li C, Mou C, Dong Y, Tu Y. dbNSFP v4: a comprehensive database of transcript-specific functional predictions and annotations for human nonsynonymous and splice-site SNVs. Genome Med. 2020;12(1):1–8.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkt1113",
+      "author": "MJ Landrum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D980",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "508_CR25",
+      "unstructured": "Landrum MJ, Lee JM, Riley GR, Jang W, Rubinstein WS, Church DM, et al. ClinVar: public archive of relationships among sequence variation and human phenotype. Nucleic Acids Res. 2014;42(D1):D980–5.",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/ng.2892",
+      "author": "M Kircher",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "issue": "3",
+      "journal-title": "Nat Genet",
+      "key": "508_CR26",
+      "unstructured": "Kircher M, Witten DM, Jain P, O’roak BJ, Cooper GM, Shendure J. A general framework for estimating the relative pathogenicity of human genetic variants. Nat Genet. 2014;46(3):310–5.",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gky1016",
+      "author": "P Rentzsch",
+      "doi-asserted-by": "publisher",
+      "first-page": "D886",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "508_CR27",
+      "unstructured": "Rentzsch P, Witten D, Cooper GM, Shendure J, Kircher M. CADD: predicting the deleteriousness of variants throughout the human genome. Nucleic Acids Res. 2019;47(D1):D886–94.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "key": "508_CR28",
+      "unstructured": "GET-RM. https://www.coriell.org/1/NIGMS/Additional-Resources/Multiply-Confirmed-Mutations-GeT-RM. Accessed 13 Feb 2023."
+    },
+    {
+      "DOI": "10.1038/sdata.2016.25",
+      "author": "JM Zook",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Sci Data",
+      "key": "508_CR29",
+      "unstructured": "Zook JM, Catoe D, McDaniel J, Vang L, Spies N, Sidow A, et al. Extensive sequencing of seven human genomes to characterize benchmark reference materials. Sci Data. 2016;3(1):1–26.",
+      "volume": "3",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr540",
+      "author": "G Glusman",
+      "doi-asserted-by": "publisher",
+      "first-page": "3216",
+      "issue": "22",
+      "journal-title": "Bioinformatics",
+      "key": "508_CR30",
+      "unstructured": "Glusman G, Caballero J, Mauldin DE, Hood L, Roach JC. Kaviar: an accessible system for testing SNV novelty. Bioinformatics. 2011;27(22):3216–7.",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1074",
+      "author": "D Szklarczyk",
+      "doi-asserted-by": "publisher",
+      "first-page": "D605",
+      "journal-title": "Nucleic Acids Res",
+      "key": "508_CR31",
+      "unstructured": "Szklarczyk D, Gable A, Nastou K, Lyon D, Kirsch R, Pyysalo S, Legeay M, Fang T, Bork P, Jensen LJ, von Mering C, et al. The STRING database customizable protein–protein networks, and functional characterization of user-946 uploaded gene/measurement sets. Nucleic Acids Res. 2021;49:D605–12.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "key": "508_CR32",
+      "unstructured": "Sun X, Yang A, Wu B, Zhou L, Liu Z. KEGG (Kyoto Encyclopedia of Genes and Genomes) assignment of unigenes in the mantle transcriptome of P. yessoensis. PLoS ONE. 2015."
+    },
+    {
+      "DOI": "10.1093/nar/gky962",
+      "author": "M Kanehisa",
+      "doi-asserted-by": "publisher",
+      "first-page": "D590",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "508_CR33",
+      "unstructured": "Kanehisa M, Sato Y, Furumichi M, Morishima K, Tanabe M. New approach for understanding genome variations in KEGG. Nucleic Acids Res. 2019;47(D1):D590–5.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/humu.23348",
+      "author": "PJ Freeman",
+      "doi-asserted-by": "publisher",
+      "first-page": "61",
+      "issue": "1",
+      "journal-title": "Hum Mutat",
+      "key": "508_CR34",
+      "unstructured": "Freeman PJ, Hart RK, Gretton LJ, Brookes AJ, Dalgleish R. VariantValidator: accurate validation, mapping, and formatting of sequence variation descriptions. Hum Mutat. 2018;39(1):61–8.",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "author": "K Christos",
+      "first-page": "1978",
+      "issue": "11",
+      "journal-title": "Bioinformatics",
+      "key": "508_CR35",
+      "unstructured": "Christos K, Vasilis T, Alexandros K. Chapple Charles E, Albarca Aguilera Monica, Meyer Richard, Massouras Andrea. VarSome: the human genomic variant search engine. Bioinformatics. 2018;35(11):1978–80.",
+      "volume": "35",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41436-021-01172-3",
+      "author": "D Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "1381",
+      "issue": "8",
+      "journal-title": "Genet Med",
+      "key": "508_CR36",
+      "unstructured": "Miller D, Lee K, Chung W, Gordon A, Herman G, Klein T, et al. ACMG SF v3.0 list for reporting of secondary findings in clinical exome and genome sequencing: a policy statement of the American College of Medical Genetics and Genomics (ACMG). Genet Med. 2021;23(8):1381–90.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/nar/gky471",
+      "author": "J-P Desvignes",
+      "doi-asserted-by": "publisher",
+      "first-page": "W545",
+      "issue": "W1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "508_CR37",
+      "unstructured": "Desvignes J-P, Bartoli M, Delague V, Krahn M, Miltgen M, Béroud C, et al. VarAFT: a variant annotation and filtration system for human next generation sequencing data. Nucleic Acids Res. 2018;46(W1):W545–53.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/cpt.1654",
+      "author": "A Gaedigk",
+      "doi-asserted-by": "publisher",
+      "first-page": "43",
+      "issue": "1",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "508_CR38",
+      "unstructured": "Gaedigk A, Whirl-Carrillo M, Pratt VM, Miller NA, Klein TE. PharmVar and the landscape of pharmacogenetic resources. Clin Pharmacol Ther. 2020;107(1):43.",
+      "volume": "107",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkg520",
+      "author": "N Guex",
+      "doi-asserted-by": "publisher",
+      "first-page": "3381",
+      "journal-title": "Nucleic Acids Res",
+      "key": "508_CR39",
+      "unstructured": "Guex N, Peitsch M. SWISS-MODEL: an automated protein SWISSMODEL: an automated protein. Nucleic Acids Res. 2003;31:3381–5.",
+      "volume": "31",
+      "year": "2003"
+    },
+    {
+      "key": "508_CR40",
+      "unstructured": "http://pymol.org DWTPMGS."
+    },
+    {
+      "DOI": "10.1038/nmeth.3484",
+      "author": "H Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "841",
+      "issue": "9",
+      "journal-title": "Nat Methods",
+      "key": "508_CR41",
+      "unstructured": "Yang H, Robinson PN, Wang K. Phenolyzer: phenotype-based prioritization of candidate genes for human diseases. Nat Methods. 2015;12(9):841–3.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkm958",
+      "author": "DS Wishart",
+      "doi-asserted-by": "publisher",
+      "first-page": "D901",
+      "issue": "suppl_1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "508_CR42",
+      "unstructured": "Wishart DS, Knox C, Guo AC, Cheng D, Shrivastava S, Tzur D, et al. DrugBank: a knowledgebase for drugs, drug actions and drug targets. Nucleic Acids Res. 2008;36(suppl_1):D901–6.",
+      "volume": "36",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/S1056-4993(18)30135-4",
+      "author": "DA Flockhart",
+      "doi-asserted-by": "publisher",
+      "first-page": "43",
+      "issue": "1",
+      "journal-title": "Child Adolesc Psychiatr Clin N Am",
+      "key": "508_CR43",
+      "unstructured": "Flockhart DA, Oesterheld JR. Cytochrome P450-mediated drug interactions. Child Adolesc Psychiatr Clin N Am. 2000;9(1):43–76.",
+      "volume": "9",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1093/nar/gkv1075",
+      "author": "M Kuhn",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1075",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "508_CR44",
+      "unstructured": "Kuhn M, Letunic I, Jensen LJ, Bork P. The SIDER database of drugs and side effects. Nucleic Acids Res. 2016;44(D1):D1075–9.",
+      "volume": "44",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/cr.2016.89",
+      "author": "X-C Bai",
+      "doi-asserted-by": "publisher",
+      "first-page": "995",
+      "issue": "9",
+      "journal-title": "Cell Res",
+      "key": "508_CR45",
+      "unstructured": "Bai X-C, Yan Z, Wu J, Li Z, Yan N. The central domain of RyR1 is the transducer for long-range allosteric gating of channel opening. Cell Res. 2016;26(9):995–1006.",
+      "volume": "26",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/sj.ejhg.5201002",
+      "author": "G Van Goethem",
+      "doi-asserted-by": "publisher",
+      "first-page": "547",
+      "issue": "7",
+      "journal-title": "Eur J Hum Genet",
+      "key": "508_CR46",
+      "unstructured": "Van Goethem G, Schwartz M, Löfgren A, Dermaut B, Van Broeckhoven C, Vissing J. Novel POLG mutations in progressive external ophthalmoplegia mimicking mitochondrial neurogastrointestinal encephalomyopathy. Eur J Hum Genet. 2003;11(7):547–9.",
+      "volume": "11",
+      "year": "2003"
+    },
+    {
+      "author": "L Fatimathas",
+      "first-page": "F29",
+      "journal-title": "Gen Physiol Biophys",
+      "key": "508_CR47",
+      "unstructured": "Fatimathas L, Moss SE. Characterisation of the sarcoidosis-associated variant of annexin A11. Gen Physiol Biophys. 2009;28:F29–38.",
+      "volume": "28",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.cell.2009.07.050",
+      "author": "Y-S Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "312",
+      "issue": "2",
+      "journal-title": "Cell",
+      "key": "508_CR48",
+      "unstructured": "Lee Y-S, Kennedy WD, Yin YW. Structural insight into processive human mitochondrial DNA synthesis and disease-related polymerase mutations. Cell. 2009;139(2):312–24.",
+      "volume": "139",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nsb1096-849",
+      "author": "KK Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "849",
+      "issue": "10",
+      "journal-title": "Nat Struct Biol",
+      "key": "508_CR49",
+      "unstructured": "Kim KK, Chamberlin HM, Morgan DO, Kim S-H. Three-dimensional structure of human cyclin H, a positive regulator of the CDK-activating kinase. Nat Struct Biol. 1996;3(10):849–55.",
+      "volume": "3",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1016/j.str.2018.06.003",
+      "author": "A Jaiganesh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1210",
+      "issue": "9",
+      "journal-title": "Structure",
+      "key": "508_CR50",
+      "unstructured": "Jaiganesh A, De-la-Torre P, Patel AA, Termine DJ, Velez-Cortes F, Chen C, et al. Zooming in on cadherin-23: structural diversity and potential mechanisms of inherited deafness. Structure. 2018;26(9):1210-25.e4.",
+      "volume": "26",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2217/pgs-2018-0036",
+      "author": "C Lippmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "783",
+      "issue": "9",
+      "journal-title": "Pharmacogenomics",
+      "key": "508_CR51",
+      "unstructured": "Lippmann C, Kringel D, Ultsch A, Loetsch J. Computational functional genomics-based approaches in analgesic drug discovery and repurposing. Pharmacogenomics. 2018;19(9):783–97.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1479-7364-5-6-709",
+      "author": "G Stelzer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "6",
+      "journal-title": "Hum Genomics",
+      "key": "508_CR52",
+      "unstructured": "Stelzer G, Dalah I, Stein TI, Satanower Y, Rosen N, Nativ N, et al. In-silico human genomics with GeneCards. Hum Genomics. 2011;5(6):1–9.",
+      "volume": "5",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3389/fgene.2019.00601",
+      "author": "CD Bope",
+      "doi-asserted-by": "publisher",
+      "first-page": "601",
+      "journal-title": "Front Genetics",
+      "key": "508_CR53",
+      "unstructured": "Bope CD, Chimusa ER, Nembaware V, Mazandu GK, De Vries J, Wonkam A. Dissecting in silico mutation prediction of variants in African genomes: challenges and perspectives. Front Genetics. 2019;10:601.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.861516",
+      "author": "SM Silvera-Ruiz",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Immunol",
+      "key": "508_CR54",
+      "unstructured": "Silvera-Ruiz SM, Gemperle C, Peano N, Olivero V, Becerra A, Häberle J, et al. Immune alterations in a patient with hyperornithinemia-hyperammonemia-homocitrullinuria syndrome: a case report. Front Immunol. 2022. https://doi.org/10.3389/fimmu.2022.861516.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/mgg3.2197",
+      "author": "Y Xue",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Genetics Genomic Med",
+      "key": "508_CR55",
+      "unstructured": "Xue Y, Zhao Y, Wu B, Shu J, Yan D, Li D, et al. A novel variant in ALG1 gene associated with congenital disorder of glycosylation: a case report and short literature review. Mol Genetics Genomic Med. 2023. https://doi.org/10.1002/mgg3.2197.",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.2217/pgs-2019-0119",
+      "author": "AP Athreya",
+      "doi-asserted-by": "publisher",
+      "first-page": "983",
+      "journal-title": "Pharmacogenomics",
+      "key": "508_CR56",
+      "unstructured": "Athreya AP, Iyer R, Wang L, Weinshilboum RM, Bobo WV. Integration of machine learning and pharmacogenomic biomarkers for predicting response to antidepressant treatment: can computational intelligence be used to augment clinical assessments? Pharmacogenomics. 2019;20:983–8.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ejhg.2016.129",
+      "author": "L Azevedo",
+      "doi-asserted-by": "publisher",
+      "first-page": "2",
+      "issue": "1",
+      "journal-title": "Eur J Hum Genet",
+      "key": "508_CR57",
+      "unstructured": "Azevedo L, Mort M, Costa AC, Silva RM, Quelhas D, Amorim A, et al. Improving the in silico assessment of pathogenicity for compensated variants. Eur J Hum Genet. 2017;25(1):2–7.",
+      "volume": "25",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/cpt.1489",
+      "author": "CH van der Wouden",
+      "doi-asserted-by": "publisher",
+      "first-page": "866",
+      "issue": "4",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "508_CR58",
+      "unstructured": "van der Wouden CH, van Rhenen MH, Jama WO, Ingelman-Sundberg M, Lauschke VM, Konta L, et al. Development of the PG x-Passport: a panel of actionable germline genetic variants for pre-emptive pharmacogenetic testing. Clin Pharmacol Ther. 2019;106(4):866–73.",
+      "volume": "106",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0268534",
+      "author": "K Blagec",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0268534",
+      "issue": "6",
+      "journal-title": "PLoS ONE",
+      "key": "508_CR59",
+      "unstructured": "Blagec K, Swen JJ, Koopmann R, Cheung K-C, Crommentuijn-van Rhenen M, Holsappel I, et al. Pharmacogenomics decision support in the U-PGx project: results and advice from clinical implementation across seven European countries. PLoS ONE. 2022;17(6):e0268534.",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/ijms21072308",
+      "author": "SM Caspar",
+      "doi-asserted-by": "publisher",
+      "first-page": "2308",
+      "issue": "7",
+      "journal-title": "Int J Mol Sci",
+      "key": "508_CR60",
+      "unstructured": "Caspar SM, Schneider T, Meienberg J, Matyas G. Added value of clinical sequencing: WGS-based profiling of pharmacogenes. Int J Mol Sci. 2020;21(7):2308.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1086/502802",
+      "author": "P Scheet",
+      "doi-asserted-by": "publisher",
+      "first-page": "629",
+      "issue": "4",
+      "journal-title": "Am J Hum Genetics",
+      "key": "508_CR61",
+      "unstructured": "Scheet P, Stephens M. A fast and flexible statistical model for large-scale population genotype data: applications to inferring missing genotypes and haplotypic phase. Am J Hum Genetics. 2006;78(4):629–44.",
+      "volume": "78",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/sysbio/syr100",
+      "author": "DL Ayres",
+      "doi-asserted-by": "publisher",
+      "first-page": "170",
+      "issue": "1",
+      "journal-title": "Syst Biol",
+      "key": "508_CR62",
+      "unstructured": "Ayres DL, Darling A, Zwickl DJ, Beerli P, Holder MT, Lewis PO, et al. BEAGLE: an application programming interface and high-performance computing library for statistical phylogenetics. Syst Biol. 2012;61(1):170–3.",
+      "volume": "61",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000529",
+      "author": "BN Howie",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1000529",
+      "issue": "6",
+      "journal-title": "PLoS Genet",
+      "key": "508_CR63",
+      "unstructured": "Howie BN, Donnelly P, Marchini J. A flexible and accurate genotype imputation method for the next generation of genome-wide association studies. PLoS Genet. 2009;5(6):e1000529.",
+      "volume": "5",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nature02168",
+      "author": "A Richard",
+      "doi-asserted-by": "publisher",
+      "first-page": "789",
+      "issue": "6968",
+      "journal-title": "Nature",
+      "key": "508_CR64",
+      "unstructured": "Richard A, Gibbs JW, Belmont PH, Thomas DW, Yu HYF, Ch’ang WHL-Y, et al. The international HapMap project. Nature. 2003;426(6968):789–96.",
+      "volume": "426",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1017/S0016672311000255",
+      "author": "JA Sved",
+      "doi-asserted-by": "publisher",
+      "first-page": "285",
+      "issue": "4",
+      "journal-title": "Genetics Res",
+      "key": "508_CR65",
+      "unstructured": "Sved JA. The covariance of heterozygosity as a measure of linkage disequilibrium between blocks of linked and unlinked sites in Hapmap. Genetics Res. 2011;93(4):285–90.",
+      "volume": "93",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0080754",
+      "author": "E Koch",
+      "doi-asserted-by": "publisher",
+      "first-page": "e80754",
+      "issue": "12",
+      "journal-title": "PLoS ONE",
+      "key": "508_CR66",
+      "unstructured": "Koch E, Ristroph M, Kirkpatrick M. Long range linkage disequilibrium across the human genome. PLoS ONE. 2013;8(12):e80754.",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.3389/fgene.2021.620453",
+      "author": "N Planell",
+      "doi-asserted-by": "publisher",
+      "first-page": "620453",
+      "journal-title": "Front Genet",
+      "key": "508_CR67",
+      "unstructured": "Planell N, Lagani V, Sebastian-Leon P, van der Kloet F, Ewing E, Karathanasis N, et al. STATegra: multi-omics data integration—a conceptual scheme with a bioinformatics pipeline. Front Genet. 2021;12:620453.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btab478",
+      "author": "S Park",
+      "doi-asserted-by": "publisher",
+      "first-page": "275",
+      "issue": "1",
+      "journal-title": "Bioinformatics",
+      "key": "508_CR68",
+      "unstructured": "Park S, Lee D, Kim Y, Lim S, Chae H, Kim S. BioVLAB-Cancer-Pharmacogenomics: tumor heterogeneity and pharmacogenomics analysis of multi-omics data from tumor on the cloud. Bioinformatics. 2022;38(1):275–7.",
+      "volume": "38",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s40364-017-0082-y",
+      "author": "E Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Biomarker Res",
+      "key": "508_CR69",
+      "unstructured": "Lin E, Lane H-Y. Machine learning and systems genomics approaches for multi-omics data. Biomarker Res. 2017;5:1–6.",
+      "volume": "5",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.xhgg.2022.100100",
+      "author": "C Auwerx",
+      "doi-asserted-by": "publisher",
+      "first-page": "100100",
+      "journal-title": "Hum Genetics Genomics Adv",
+      "key": "508_CR70",
+      "unstructured": "Auwerx C, Sadler MC, Reymond A, Kutalik Z. From pharmacogenetics to pharmaco-omics: milestones and future directions. Hum Genetics Genomics Adv. 2022;3:100100.",
+      "volume": "3",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s40246-019-0229-z",
+      "author": "K Krebs",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Hum Genomics",
+      "key": "508_CR71",
+      "unstructured": "Krebs K, Milani L. Translating pharmacogenomics into clinical decisions: do not let the perfect be the enemy of the good. Hum Genomics. 2019;13(1):1–13.",
+      "volume": "13",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1124/dmd.118.082842",
+      "author": "M Karlgren",
+      "doi-asserted-by": "publisher",
+      "first-page": "1776",
+      "issue": "11",
+      "journal-title": "Drug Metab Dispos",
+      "key": "508_CR72",
+      "unstructured": "Karlgren M, Simoff I, Keiser M, Oswald S, Artursson P. CRISPR-Cas9: a new addition to the drug metabolism and disposition tool box. Drug Metab Dispos. 2018;46(11):1776–86.",
+      "volume": "46",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 72,
+  "references-count": 72,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00508-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Pharmacovariome scanning using whole pharmacogene resequencing coupled with deep computational analysis and machine learning for clinical pharmacogenomics"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

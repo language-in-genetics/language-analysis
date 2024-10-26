@@ -1,0 +1,490 @@
+{
+  "DOI": "10.1002/gepi.21900",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21900",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eTwin data are commonly used for studying complex psychiatric disorders, and mixed effects models are one of the most popular tools for modeling dependence structures between twin pairs. However, for eQTL (expression quantitative trait loci) data where associations between thousands of transcripts and millions of single nucleotide polymorphisms need to be tested, mixed effects models are computationally inefficient and often impractical. In this paper, we propose a fast eQTL analysis approach for twin eQTL data where we randomly split twin pairs into two groups, so that within each group the samples are unrelated, and we then apply a multiple linear regression analysis separately to each group. A score statistic that automatically adjusts the (hidden) correlation between the two groups is constructed for combining the results from the two groups. The proposed method has well‐controlled type I error. Compared to mixed effects models, the proposed method has similar power but drastically improved computational efficiency. We demonstrate the computational advantage of the proposed method via extensive simulations. The proposed method is also applied to a large twin eQTL data from the Netherlands Twin Register.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21900"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of North Carolina, Chapel Hill  North Carolina United States of America"
+        }
+      ],
+      "family": "Yin",
+      "given": "Zhaoyu",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry University of North Carolina, Chapel Hill  North Carolina United States of America"
+        }
+      ],
+      "family": "Xia",
+      "given": "Kai",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "School of Public Health  Harvard, Boston Massachusetts United States of America"
+        }
+      ],
+      "family": "Chung",
+      "given": "Wonil",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina, Chapel Hill  North Carolina United States of America"
+        }
+      ],
+      "family": "Sullivan",
+      "given": "Patrick F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of North Carolina, Chapel Hill  North Carolina United States of America"
+        }
+      ],
+      "family": "Zou",
+      "given": "Fei",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2015,
+        4,
+        11
+      ]
+    ],
+    "date-time": "2015-04-11T00:51:50Z",
+    "timestamp": 1428713510000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T08:05:52Z",
+    "timestamp": 1696406752000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000057",
+      "award": [
+        "R01GM074175"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of General Medical Sciences"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        5
+      ]
+    ],
+    "date-time": "2023-10-05T05:40:28Z",
+    "timestamp": 1696484428087
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2015,
+        4,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2015,
+            4,
+            10
+          ]
+        ],
+        "date-time": "2015-04-10T00:00:00Z",
+        "timestamp": 1428624000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21900",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21900",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "357-365",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2015,
+        4,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2015,
+        4,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2015,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1214/aos/1013699998",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_2_1"
+    },
+    {
+      "DOI": "10.1007/s11336-010-9200-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_3_1"
+    },
+    {
+      "key": "e_1_2_5_4_1",
+      "unstructured": "BokerSM NealeMC MaesHH WildeMJ SpiegelM BrickTR EstabrookR BatesTC MehtaP von OertzenT GoreRJ HunterMD HackettDC KarchJ BrandmaierA.2012.OpenMx 1.2 User Guide. This is an online document which can be accessed athttp://openmx.psyc.virginia.edu/."
+    },
+    {
+      "DOI": "10.1038/nrg932",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_5_1"
+    },
+    {
+      "DOI": "10.1534/genetics.111.131425",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_6_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyi153",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_7_1"
+    },
+    {
+      "article-title": "Using stochastic causal trees to augment bayesian networks for modeling eQTL datasets",
+      "author": "Chipman KC",
+      "issue": "7",
+      "journal-title": "BMC Bioinformatics",
+      "key": "e_1_2_5_8_1",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.neuroimage.2008.10.036",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_9_1"
+    },
+    {
+      "DOI": "10.1534/genetics.109.100362",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_10_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4899-2887-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_11_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2008.01098.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_12_1"
+    },
+    {
+      "DOI": "10.1038/ng.2561",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_13_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000149",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_14_1"
+    },
+    {
+      "DOI": "10.1016/j.tig.2008.06.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_15_1"
+    },
+    {
+      "DOI": "10.2337/db13-0416",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_16_1"
+    },
+    {
+      "DOI": "10.1016/j.nbd.2012.03.020",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_17_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000130",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_18_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000977",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_19_1"
+    },
+    {
+      "author": "Jorsekog KG",
+      "key": "e_1_2_5_20_1",
+      "volume-title": "Lisrel VI",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1534/genetics.108.094201",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_21_1"
+    },
+    {
+      "DOI": "10.1007/s00335-005-0189-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_22_1"
+    },
+    {
+      "article-title": "Heritability of performance deficit accumulation during acute sleep deprivation in twins",
+      "author": "Kuna ST",
+      "first-page": "1223",
+      "issue": "9",
+      "journal-title": "Sleep",
+      "key": "e_1_2_5_23_1",
+      "volume": "35",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.11.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_24_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddn289",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_25_1"
+    },
+    {
+      "DOI": "10.1016/j.ymeth.2009.03.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_26_1"
+    },
+    {
+      "DOI": "10.1146/annurev.ecolsys.28.1.341",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_27_1"
+    },
+    {
+      "DOI": "10.1007/978-94-015-8018-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_28_1"
+    },
+    {
+      "DOI": "10.1007/BF01065882",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_29_1"
+    },
+    {
+      "author": "Neale MC",
+      "key": "e_1_2_5_30_1",
+      "volume-title": "Department of Psychiatry",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000888",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_31_1"
+    },
+    {
+      "DOI": "10.1016/j.bone.2012.01.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_32_1"
+    },
+    {
+      "key": "e_1_2_5_33_1",
+      "unstructured": "R Core Team.R: A Language and Environment for Statistical Computing.2014.R Foundation for Statistical Computing Vienna Austria. URLhttp://www.R‐project.org."
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2007.00803.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_34_1"
+    },
+    {
+      "DOI": "10.1371/journal.pbio.0060107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_35_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts163",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_36_1"
+    },
+    {
+      "DOI": "10.1375/136905203770326402",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_37_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1000770",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_38_1"
+    },
+    {
+      "DOI": "10.1016/j.biopsych.2008.04.023",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_39_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2010.01548.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_40_1"
+    },
+    {
+      "DOI": "10.1038/mp.2013.159",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_41_1"
+    },
+    {
+      "DOI": "10.2217/pgs.11.185",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_42_1"
+    },
+    {
+      "DOI": "10.1038/ng.2951",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_43_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq452",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_44_1"
+    },
+    {
+      "DOI": "10.1093/genetics/136.4.1457",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_45_1"
+    },
+    {
+      "DOI": "10.1007/s00439-011-1107-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_46_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000932",
+      "article-title": "Liver and adipose expression associated SNPs are enriched for association to type 2 diabetes",
+      "author": "Zhong H",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1000932",
+      "issue": "6",
+      "journal-title": "PLoS Genet",
+      "key": "e_1_2_5_47_1",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1534/genetics.104.031427",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_5_48_1"
+    },
+    {
+      "article-title": "eQTL viewer: visualizing how sequence variation affects genome‐wide transcription",
+      "author": "Zou W",
+      "issue": "7",
+      "journal-title": "BMC Bioinformatics",
+      "key": "e_1_2_5_49_1",
+      "volume": "8",
+      "year": "2007"
+    }
+  ],
+  "reference-count": 48,
+  "references-count": 48,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21900"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Fast eQTL Analysis for Twin Studies"
+  ],
+  "type": "journal-article",
+  "volume": "39"
+}

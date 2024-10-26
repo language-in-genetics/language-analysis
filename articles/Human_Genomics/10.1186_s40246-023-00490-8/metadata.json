@@ -1,0 +1,805 @@
+{
+  "DOI": "10.1186/s40246-023-00490-8",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00490-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eHaploinsufficiency of the transcription factor PAX6 is the main cause of congenital aniridia, a genetic disorder characterized by iris and foveal hypoplasia. 11p13 microdeletions altering \u003cjats:italic\u003ePAX6\u003c/jats:italic\u003e or its downstream regulatory region (DRR) are present in about 25% of patients; however, only a few complex rearrangements have been described to date. Here, we performed nanopore-based whole-genome sequencing to assess the presence of cryptic structural variants (SVs) on the only two unsolved “\u003cjats:italic\u003ePAX6\u003c/jats:italic\u003e-negative” cases from a cohort of 110 patients with congenital aniridia after unsuccessfully short-read sequencing approaches.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eLong-read sequencing (LRS) unveiled balanced chromosomal rearrangements affecting the \u003cjats:italic\u003ePAX6 locus\u003c/jats:italic\u003e at 11p13 in these two patients and allowed nucleotide-level breakpoint analysis. First, we identified a cryptic 4.9 Mb de novo inversion disrupting intron 7 of \u003cjats:italic\u003ePAX6,\u003c/jats:italic\u003e further verified by targeted polymerase chain reaction amplification and sequencing and FISH-based cytogenetic analysis\u003cjats:italic\u003e.\u003c/jats:italic\u003e Furthermore, LRS was decisive in correctly mapping a  t(6;11) balanced translocation  cytogenetically detected in a second proband with congenital aniridia and considered non-causal 15 years ago. LRS resolved that the breakpoint on chromosome 11 was indeed located at 11p13, disrupting the DNase I hypersensitive site 2 enhancer within the DRR of \u003cjats:italic\u003ePAX6,\u003c/jats:italic\u003e 161 Kb from the causal gene. Patient-derived RNA expression analysis demonstrated \u003cjats:italic\u003ePAX6\u003c/jats:italic\u003e haploinsufficiency, thus supporting that the 11p13 breakpoint led to a positional effect by cleaving crucial enhancers for \u003cjats:italic\u003ePAX6\u003c/jats:italic\u003e transactivation. LRS analysis was also critical for mapping the exact breakpoint on chromosome 6 to the highly repetitive centromeric region at 6p11.1.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn both cases, the LRS-based identified SVs have been deemed the hidden pathogenic cause of congenital aniridia. Our study underscores the limitations of traditional short-read sequencing in uncovering pathogenic SVs affecting low-complexity regions of the genome and the value of LRS in providing insight into hidden sources of variation in rare genetic diseases.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "490"
+  ],
+  "article-number": "45",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "3 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "8 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "2 June 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The study was approved by the Ethics Research Committee of the University Hospital Fundación Jimenez Díaz (PICO15_18_FJD and PIC059-21) and complied with the guidelines of the Declaration of Helsinki and further reviews. All participants or their legal guardians gave written informed consent to participate and publish genetic and clinical data."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Damián",
+      "given": "Alejandra",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Núñez-Moreno",
+      "given": "Gonzalo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jubin",
+      "given": "Claire",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tamayo",
+      "given": "Alejandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Alba",
+      "given": "Marta Rodríguez",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Villaverde",
+      "given": "Cristina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fund",
+      "given": "Cédric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Delépine",
+      "given": "Marc",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leduc",
+      "given": "Aurélie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Deleuze",
+      "given": "Jean François",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mínguez",
+      "given": "Pablo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ayuso",
+      "given": "Carmen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Corton",
+      "given": "Marta",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ],
+    "date-time": "2023-06-02T12:42:21Z",
+    "timestamp": 1685709741000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ],
+    "date-time": "2023-06-02T12:48:08Z",
+    "timestamp": 1685710088000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100004587",
+      "award": [
+        "FI18/00123",
+        "PI17/00164",
+        "CPII21/00015",
+        "PI17/00164"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Instituto de Salud Carlos III"
+    },
+    {
+      "DOI": "10.13039/100012818",
+      "award": [
+        "PEJ-2020-AI/BMD-18610",
+        "PEJ-2020-AI/BMD-18610"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Comunidad de Madrid"
+    },
+    {
+      "award": [
+        "06/07/0036"
+      ],
+      "name": "Centro de Investigación en Red en Enfermedades Raras"
+    },
+    {
+      "award": [
+        "PID10291"
+      ],
+      "name": "European Advanced Infrastructure for Innovative Genomics"
+    },
+    {
+      "name": "Fundación ONCE"
+    },
+    {
+      "DOI": "10.13039/100008061",
+      "doi-asserted-by": "publisher",
+      "name": "Fundación Mutua Madrileña"
+    },
+    {
+      "DOI": "10.13039/501100002924",
+      "doi-asserted-by": "publisher",
+      "name": "Federación Española de Enfermedades Raras"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        15
+      ]
+    ],
+    "date-time": "2024-04-15T17:49:23Z",
+    "timestamp": 1713203363110
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            2
+          ]
+        ],
+        "date-time": "2023-06-02T00:00:00Z",
+        "timestamp": 1685664000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            2
+          ]
+        ],
+        "date-time": "2023-06-02T00:00:00Z",
+        "timestamp": 1685664000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00490-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00490-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00490-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/ejhg.2012.100",
+      "author": "M Hingorani",
+      "doi-asserted-by": "publisher",
+      "first-page": "1011",
+      "journal-title": "Eur J Hum Genet",
+      "key": "490_CR1",
+      "unstructured": "Hingorani M, Hanson I, van Heyningen V. Aniridia. Eur J Hum Genet. 2012;20:1011–7.",
+      "volume": "20",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.3390/genes10121050",
+      "author": "D Lima Cunha",
+      "doi-asserted-by": "publisher",
+      "first-page": "1050",
+      "journal-title": "Genes",
+      "key": "490_CR2",
+      "unstructured": "Lima Cunha D, Arno G, Corton M, Moosajee M. The spectrum of PAX6 mutations and genotype-phenotype correlations in the eye. Genes. 2019;10:1050.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.exer.2016.04.017",
+      "author": "A Cvekl",
+      "doi-asserted-by": "publisher",
+      "first-page": "10",
+      "journal-title": "Exp Eye Res",
+      "key": "490_CR3",
+      "unstructured": "Cvekl A, Callaerts P. PAX6: 25th anniversary and more to learn. Exp Eye Res. 2017;156:10–21.",
+      "volume": "156",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ydbio.2014.01.007",
+      "author": "S Bhatia",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "journal-title": "Dev Biol",
+      "key": "490_CR4",
+      "unstructured": "Bhatia S, Monahan J, Ravi V, Gautier P, Murdoch E, Brenner S, et al. A survey of ancient conserved non-coding elements in the PAX6 locus reveals a landscape of interdigitated cis-regulatory archipelagos. Dev Biol. 2014;387:214–28.",
+      "volume": "387",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0172363",
+      "author": "F Blanco-Kelly",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "490_CR5",
+      "unstructured": "Blanco-Kelly F, Palomares M, Vallespín E, Villaverde C, Martín-Arenas R, Vélez-Monsalve C, et al. Improving molecular diagnosis of aniridia and WAGR syndrome using customized targeted array-based CGH. PLoS ONE. 2017;12: e0172363.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1086/344396",
+      "author": "JA Crolla",
+      "doi-asserted-by": "publisher",
+      "first-page": "1138",
+      "journal-title": "Am J Hum Genet",
+      "key": "490_CR6",
+      "unstructured": "Crolla JA, van Heyningen V. Frequent chromosome aberrations revealed by molecular cytogenetic studies in patients with aniridia. Am J Hum Genet. 2002;71:1138–49.",
+      "volume": "71",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.35603",
+      "author": "M Simioni",
+      "doi-asserted-by": "publisher",
+      "first-page": "2905",
+      "journal-title": "Am J Med Genet A.",
+      "key": "490_CR7",
+      "unstructured": "Simioni M, Vieira TP, Sgardioli IC, Freitas ÉL, Rosenberg C, Maurer-Morelli CV, et al. Insertional translocation of 15q25-q26 into 11p13 and duplication at 8p23.1 characterized by high resolution arrays in a boy with congenital malformations and aniridia. Am J Med Genet A. 2012;158A:2905–10.",
+      "volume": "158A",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s12920-020-00790-1",
+      "author": "TA Vasilyeva",
+      "doi-asserted-by": "publisher",
+      "first-page": "130",
+      "journal-title": "BMC Med Genomics",
+      "key": "490_CR8",
+      "unstructured": "Vasilyeva TA, Marakhonov AV, Minzhenkova ME, Markova ZG, Petrova NV, Sukhanova NV, et al. A sporadic case of congenital aniridia caused by pericentric inversion inv(11)(p13q14) associated with a 977 kb deletion in the 11p13 region. BMC Med Genomics. 2020;13:130.",
+      "volume": "13",
+      "year": "2020"
+    },
+    {
+      "author": "F Blanco-Kelly",
+      "first-page": "00124",
+      "issue": "21",
+      "journal-title": "Arch Soc Espanola Oftalmol",
+      "key": "490_CR9",
+      "unstructured": "Blanco-Kelly F, Tarilonte M, Villamar M, Damián A, Tamayo A, Moreno-Pelayo MA, et al. Genetics and epidemiology of aniridia: Updated guidelines for genetic study. Arch Soc Espanola Oftalmol. 2021;S0365–6691(21):00124–6.",
+      "volume": "S0365–6691",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s00439-018-1940-x",
+      "author": "J Plaisancié",
+      "doi-asserted-by": "publisher",
+      "first-page": "831",
+      "journal-title": "Hum Genet",
+      "key": "490_CR10",
+      "unstructured": "Plaisancié J, Tarilonte M, Ramos P, Jeanton-Scaramouche C, Gaston V, Dollfus H, et al. Implication of non-coding PAX6 mutations in aniridia. Hum Genet. 2018;137:831–46.",
+      "volume": "137",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2020-106932",
+      "author": "M Tarilonte",
+      "doi-asserted-by": "publisher",
+      "first-page": "428",
+      "journal-title": "J Med Genet",
+      "key": "490_CR11",
+      "unstructured": "Tarilonte M, Ramos P, Moya J, Fernandez-Sanz G, Blanco-Kelly F, Swafiri ST, et al. Activation of cryptic donor splice sites by non-coding and coding PAX6 variants contributes to congenital aniridia. J Med Genet. 2022;9:428–37.",
+      "volume": "9",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.03.004",
+      "author": "S Gerber",
+      "doi-asserted-by": "publisher",
+      "first-page": "971",
+      "journal-title": "Am J Hum Genet",
+      "key": "490_CR12",
+      "unstructured": "Gerber S, Alzayady KJ, Burglen L, Brémond-Gignac D, Marchesin V, Roche O, et al. Recessive and dominant de novo ITPR1 mutations cause gillespie syndrome. Am J Hum Genet. 2016;98:971–80.",
+      "volume": "98",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0153757",
+      "author": "M Ansari",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "490_CR13",
+      "unstructured": "Ansari M, Rainger J, Hanson IM, Williamson KA, Sharkey F, Harewood L, et al. Genetic analysis of “PAX6-negative” individuals with aniridia or gillespie syndrome. PLoS ONE. 2016;11: e0153757.",
+      "volume": "11",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00439-020-02164-0",
+      "author": "J-M Bonet-Fernández",
+      "doi-asserted-by": "publisher",
+      "first-page": "1209",
+      "journal-title": "Hum Genet",
+      "key": "490_CR14",
+      "unstructured": "Bonet-Fernández J-M, Aroca-Aguilar J-D, Corton M, Ramírez A-I, Alexandre-Moreno S, García-Antón M-T, et al. CPAMD8 loss-of-function underlies non-dominant congenital glaucoma with variable anterior segment dysgenesis and abnormal extracellular matrix. Hum Genet. 2020;139:1209–31.",
+      "volume": "139",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bfgp/elv014",
+      "author": "G Escaramís",
+      "doi-asserted-by": "publisher",
+      "first-page": "305",
+      "journal-title": "Brief Funct Genomics",
+      "key": "490_CR15",
+      "unstructured": "Escaramís G, Docampo E, Rabionet R. A decade of structural variants: description, history and methods to detect structural variation. Brief Funct Genomics. 2015;14:305–14.",
+      "volume": "14",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.tibtech.2019.02.003",
+      "author": "W De Coster",
+      "doi-asserted-by": "publisher",
+      "first-page": "973",
+      "journal-title": "Trends Biotechnol",
+      "key": "490_CR16",
+      "unstructured": "De Coster W, Van Broeckhoven C. Newest methods for detecting structural variations. Trends Biotechnol. 2019;37:973–82.",
+      "volume": "37",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41576-021-00367-3",
+      "author": "W De Coster",
+      "doi-asserted-by": "publisher",
+      "first-page": "572",
+      "journal-title": "Nat Rev Genet",
+      "key": "490_CR17",
+      "unstructured": "De Coster W, Weissensteiner MH, Sedlazeck FJ. Towards population-scale long-read sequencing. Nat Rev Genet. 2021;22:572–87.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41576-019-0180-9",
+      "author": "SS Ho",
+      "doi-asserted-by": "publisher",
+      "first-page": "171",
+      "journal-title": "Nat Rev Genet",
+      "key": "490_CR18",
+      "unstructured": "Ho SS, Urban AE, Mills RE. Structural variation in the sequencing era. Nat Rev Genet. 2020;21:171–89.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0459-y",
+      "author": "J Sone",
+      "doi-asserted-by": "publisher",
+      "first-page": "1215",
+      "journal-title": "Nat Genet",
+      "key": "490_CR19",
+      "unstructured": "Sone J, Mitsuhashi S, Fujita A, Mizuguchi T, Hamanaka K, Mori K, et al. Long-read sequencing identifies GGC repeat expansions in NOTCH2NLC associated with neuronal intranuclear inclusion disease. Nat Genet. 2019;51:1215–21.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fcell.2021.664317",
+      "author": "G Ascari",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Cell Dev Biol",
+      "key": "490_CR20",
+      "unstructured": "Ascari G, Rendtorff ND, De Bruyne M, De Zaeytijd J, Van Lint M, Bauwens M, et al. Long-read sequencing to unravel complex structural variants of CEP78 leading to cone-rod dystrophy and hearing loss. Front Cell Dev Biol. 2021;9: 664317.",
+      "volume": "9",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2022-108428",
+      "author": "Y Sano",
+      "doi-asserted-by": "publisher",
+      "first-page": "1133",
+      "journal-title": "J Med Genet",
+      "key": "490_CR21",
+      "unstructured": "Sano Y, Koyanagi Y, Wong JH, Murakami Y, Fujiwara K, Endo M, et al. Likely pathogenic structural variants in genetically unsolved patients with retinitis pigmentosa revealed by long-read sequencing. J Med Genet. 2022;59:1133–8.",
+      "volume": "59",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s00438-022-01898-y",
+      "author": "R Michaelson-Cohen",
+      "doi-asserted-by": "publisher",
+      "first-page": "925",
+      "journal-title": "Mol Genet Genomics MGG",
+      "key": "490_CR22",
+      "unstructured": "Michaelson-Cohen R, Murik O, Zeligson S, Lobel O, Weiss O, Picard E, et al. Combining cytogenetic and genomic technologies for deciphering challenging complex chromosomal rearrangements. Mol Genet Genomics MGG. 2022;297:925–33.",
+      "volume": "297",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.oftal.2012.07.006",
+      "author": "F Blanco-Kelly",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "journal-title": "Arch Soc Esp Oftalmol",
+      "key": "490_CR23",
+      "unstructured": "Blanco-Kelly F, Villaverde-Montero C, Lorda-Sanchez I, Millan JM, Trujillo-Tiebas MJ, Ayuso C. Guidelines for genetic study of aniridia. Arch Soc Esp Oftalmol. 2013;88:145–52.",
+      "volume": "88",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41592-018-0001-7",
+      "author": "FJ Sedlazeck",
+      "doi-asserted-by": "publisher",
+      "first-page": "461",
+      "journal-title": "Nat Methods Nature",
+      "key": "490_CR24",
+      "unstructured": "Sedlazeck FJ, Rescheneder P, Smolka M, Fang H, Nattestad M, von Haeseler A, et al. Accurate detection of complex structural variations using single-molecule sequencing. Nat Methods Nature. 2018;15:461–8.",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/2022.04.04.487055v1",
+      "doi-asserted-by": "publisher",
+      "key": "490_CR25",
+      "unstructured": "Smolka M, Paulin LF, Grochowski CM, Mahmoud M, Behera S, Gandhi M, et al. Comprehensive structural variant detection: from mosaic to population-level [Internet]. bioRxiv; 2022 [cited 2023 Jan 19]. p. 2022.04.04.487055. https://doi.org/10.1101/2022.04.04.487055v1"
+    },
+    {
+      "DOI": "10.1038/s41576-018-0007-0",
+      "author": "M Spielmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "453",
+      "journal-title": "Nat Rev Genet",
+      "key": "490_CR26",
+      "unstructured": "Spielmann M, Lupiáñez DG, Mundlos S. Structural variation in the 3D genome. Nat Rev Genet. 2018;19:453–67.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/BF00291536",
+      "author": "KO Simola",
+      "doi-asserted-by": "publisher",
+      "first-page": "158",
+      "journal-title": "Hum Genet",
+      "key": "490_CR27",
+      "unstructured": "Simola KO, Knuutila S, Kaitila I, Pirkola A, Pohja P. Familial aniridia and translocation t(4;11)(q22;p13) without Wilms’ tumor. Hum Genet. 1983;63:158–61.",
+      "volume": "63",
+      "year": "1983"
+    },
+    {
+      "DOI": "10.1093/hmg/4.3.415",
+      "author": "J Fantes",
+      "doi-asserted-by": "publisher",
+      "first-page": "415",
+      "journal-title": "Hum Mol Genet",
+      "key": "490_CR28",
+      "unstructured": "Fantes J, Redeker B, Breen M, Boyle S, Brown J, Fletcher J, et al. Aniridia-associated cytogenetic rearrangements suggest that a position effect may cause the mutant phenotype. Hum Mol Genet. 1995;4:415–22.",
+      "volume": "4",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1007/s00439-018-1934-8",
+      "author": "HN Hall",
+      "doi-asserted-by": "publisher",
+      "first-page": "881",
+      "journal-title": "Hum Genet",
+      "key": "490_CR29",
+      "unstructured": "Hall HN, Williamson KA, FitzPatrick DR. The genetic architecture of aniridia and Gillespie syndrome. Hum Genet. 2019;138:881–98.",
+      "volume": "138",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/hmg/10.19.2049",
+      "author": "DA Kleinjan",
+      "doi-asserted-by": "publisher",
+      "first-page": "2049",
+      "journal-title": "Hum Mol Genet",
+      "key": "490_CR30",
+      "unstructured": "Kleinjan DA, Seawright A, Schedl A, Quinlan RA, Danes S, van Heyningen V. Aniridia-associated translocations, DNase hypersensitivity, sequence comparison and transgenic analysis redefine the functional domain of PAX6. Hum Mol Genet. 2001;10:2049–59.",
+      "volume": "10",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.10.028",
+      "author": "S Bhatia",
+      "doi-asserted-by": "publisher",
+      "first-page": "1126",
+      "journal-title": "Am J Hum Genet",
+      "key": "490_CR31",
+      "unstructured": "Bhatia S, Bengani H, Fish M, Brown A, Divizia MT, de Marco R, et al. Disruption of autoregulatory feedback by a mutation in a remote, ultraconserved PAX6 enhancer causes aniridia. Am J Hum Genet. 2013;93:1126–34.",
+      "volume": "93",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/humu.22969",
+      "author": "LF Johansson",
+      "doi-asserted-by": "publisher",
+      "first-page": "457",
+      "journal-title": "Hum Mutat",
+      "key": "490_CR32",
+      "unstructured": "Johansson LF, van Dijk F, de Boer EN, van Dijk-Bos KK, Jongbloed JDH, van der Hout AH, et al. CoNVaDING: single exon variation detection in targeted NGS data. Hum Mutat. 2016;37:457–64.",
+      "volume": "37",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts526",
+      "author": "V Plagnol",
+      "doi-asserted-by": "publisher",
+      "first-page": "2747",
+      "journal-title": "Bioinformatics",
+      "key": "490_CR33",
+      "unstructured": "Plagnol V, Curtis J, Epstein M, Mok KY, Stebbings E, Grigoriadou S, et al. A robust model for read count data in exome sequencing experiments and implications for copy number variant calling. Bioinformatics. 2012;28:2747–54.",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s13059-018-1578-y",
+      "author": "Y Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "202",
+      "journal-title": "Genome Biol",
+      "key": "490_CR34",
+      "unstructured": "Jiang Y, Wang R, Urrutia E, Anastopoulos IN, Nathanson KL, Zhang NR. CODEX2: full-spectrum copy number variation detection by high-throughput DNA sequencing. Genome Biol. 2018;19:202.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/humu.23237",
+      "author": "G Povysil",
+      "doi-asserted-by": "publisher",
+      "first-page": "889",
+      "journal-title": "Hum Mutat.",
+      "key": "490_CR35",
+      "unstructured": "Povysil G, Tzika A, Vogt J, Haunschmid V, Messiaen L, Zschocke J, et al. panelcn.MOPS: copy-number detection in targeted NGS panel data for clinical diagnostics. Hum Mutat. 2017;38:889–97.",
+      "volume": "38",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv710",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1220",
+      "journal-title": "Bioinformatics",
+      "key": "490_CR36",
+      "unstructured": "Chen X, Schulz-Trieglaff O, Shaw R, Barnes B, Schlesinger F, Källberg M, et al. Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics. 2016;32:1220–2.",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nbt.1754",
+      "author": "JT Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Nat Biotechnol",
+      "key": "490_CR37",
+      "unstructured": "Robinson JT, Thorvaldsdóttir H, Winckler W, Guttman M, Lander ES, Getz G, et al. Integrative genomics viewer. Nat Biotechnol. 2011;29:24–6.",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty191",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "3094",
+      "journal-title": "Bioinformatics",
+      "key": "490_CR38",
+      "unstructured": "Li H. Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics. 2018;34:3094–100.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13059-020-02107-y",
+      "author": "T Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Biol",
+      "key": "490_CR39",
+      "unstructured": "Jiang T, Liu Y, Jiang Y, Li J, Gao Y, Cui Z, et al. Long-read-based human genomic structural variation detection with cuteSV. Genome Biol. 2020;21:1–24.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz041",
+      "author": "D Heller",
+      "doi-asserted-by": "publisher",
+      "first-page": "2907",
+      "journal-title": "Bioinformatics",
+      "key": "490_CR40",
+      "unstructured": "Heller D, Vingron M. SVIM: structural variant identification using mapped long reads. Bioinformatics. 2019;35:2907–15.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa680",
+      "author": "M Nattestad",
+      "doi-asserted-by": "publisher",
+      "first-page": "413",
+      "journal-title": "Bioinformatics",
+      "key": "490_CR41",
+      "unstructured": "Nattestad M, Aboukhalil R, Chin C-S, Schatz MC. Ribbon: intuitive visualization for complex genomic variation. Bioinformatics. 2021;37:413–5.",
+      "volume": "37",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 41,
+  "references-count": 41,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00490-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Long-read genome sequencing identifies cryptic structural variants in congenital aniridia cases"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

@@ -1,0 +1,457 @@
+{
+  "DOI": "10.1002/gepi.22377",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22377",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn the study of gene expression data, network analysis has played a uniquely important role. To accommodate the high dimensionality and low sample size and generate interpretable results, regularized estimation is usually conducted in the construction of gene expression Gaussian Graphical Models (GGM). Here we use GeO‐GGM to represent gene‐expression‐only GGM. Gene expressions are regulated by regulators. gene‐expression‐regulator GGMs (GeR‐GGMs), which accommodate gene expressions as well as their regulators, have been constructed accordingly. In practical data analysis, with a “lack of information” caused by the large number of model parameters, limited sample size, and weak signals, the construction of both GeO‐GGMs and GeR‐GGMs is often unsatisfactory. In this article, we recognize that with the regulation between gene expressions and regulators, the sparsity structures of a GeO‐GGM and its GeR‐GGM counterpart can satisfy a hierarchy. Accordingly, we propose a joint estimation which reinforces the hierarchical structure and use the construction of a GeO‐GGM to assist that of its GeR‐GGM counterpart and vice versa. Consistency properties are rigorously established, and an effective computational algorithm is developed. In simulation, the assisted construction outperforms the separation construction of GeO‐GGM and GeR‐GGM. Two The Cancer Genome Atlas data sets are analyzed, leading to findings different from the direct competitors.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22377"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-08-20"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-12-31"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-02-01"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale University  New Haven Connecticut USA"
+        }
+      ],
+      "family": "Yi",
+      "given": "Huangdi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics, Key Laboratory of Econometrics, Ministry of Education, School of Economics, The Wang Yanan Institute for Studies in Economics Xiamen University  Xiamen China"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Qingzhao",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4235-331X",
+      "affiliation": [
+        {
+          "name": "Center of Applied Statistics, School of Statistics Renmin University of China  Beijing China"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Sun",
+      "given": "Yifan",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9001-4999",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Yale University  New Haven Connecticut USA"
+        },
+        {
+          "name": "Department of Statistics, Key Laboratory of Econometrics, Ministry of Education, School of Economics, The Wang Yanan Institute for Studies in Economics Xiamen University  Xiamen China"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Ma",
+      "given": "Shuangge",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        3
+      ]
+    ],
+    "date-time": "2021-02-03T20:48:22Z",
+    "timestamp": 1612385302000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        1
+      ]
+    ],
+    "date-time": "2023-09-01T18:40:16Z",
+    "timestamp": 1693593616000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "11971404"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/501100013314",
+      "award": [
+        "B13028"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Higher Education Discipline Innovation Project"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "CA216017",
+        "CA241699",
+        "CA121974",
+        "CA196530"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100009376",
+      "award": [
+        "2019LZ11"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Bureau of Statistics of China"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        2
+      ]
+    ],
+    "date-time": "2023-09-02T14:11:21Z",
+    "timestamp": 1693663881797
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+      "content-version": "am",
+      "delay-in-days": 365,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2022-02-01T00:00:00Z",
+        "timestamp": 1643673600000
+      }
+    },
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            2,
+            1
+          ]
+        ],
+        "date-time": "2021-02-01T00:00:00Z",
+        "timestamp": 1612137600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22377",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22377",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22377",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22377",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "372-385",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        2
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        6
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "Joint estimation of multiple high‐dimensional precision matrices",
+      "author": "Cai T. T",
+      "first-page": "445",
+      "issue": "2",
+      "journal-title": "Statistica Sinica",
+      "key": "e_1_2_8_2_1",
+      "volume": "26",
+      "year": "2016"
+    },
+    {
+      "key": "e_1_2_8_3_1",
+      "unstructured": "Cancer Genome Atlas Program. (2020). National Cancer Institute.https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga"
+    },
+    {
+      "DOI": "10.1007/s11222-016-9654-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2013.00294",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1016/j.jmva.2004.02.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxm045",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1214/12-STS392",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "author": "Jensen F. V.",
+      "key": "e_1_2_8_9_1",
+      "volume-title": "An introduction to bayesian networks",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1080/01621459.2011.644498",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "key": "e_1_2_8_11_1",
+      "unstructured": "Liu H. Han F. \u0026Zhang C. H.(2012). Transelliptical graphical models.Advances in Neural Information Processing Systems(pp.800–808)."
+    },
+    {
+      "DOI": "10.1186/s13062-019-0249-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1214/11-EJS631",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1038/ng1589",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "key": "e_1_2_8_15_1",
+      "unstructured": "Suzuki T.(2013). Dual averaging and proximal gradient descent for online alternating direction multiplier method.International Conference on Machine Learning (pp. 392–400)."
+    },
+    {
+      "DOI": "10.1038/s41598-019-56451-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1004755",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.31234/osf.io/x8dpr",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_18_1",
+      "unstructured": "Williams D.(2018).Bayesian estimation for gaussian graphical models: structure learning predictability and network comparisons.https://psyarxiv.com/x8dpr/"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2009.00699.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1016/j.jmva.2018.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "key": "e_1_2_8_21_1",
+      "unstructured": "Wytock M. \u0026Kolter Z.(2013). Sparse Gaussian conditional random fields: Algorithms theory and application to energy forecasting.International Conference on Machine Learning (pp. 1265–1273)."
+    },
+    {
+      "DOI": "10.1214/12-AOS1041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1186/s12859-020-03753-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "article-title": "High dimensional inverse covariance matrix estimation via linear programming",
+      "author": "Yuan M.",
+      "first-page": "2261",
+      "journal-title": "The Journal of Machine Learning Research",
+      "key": "e_1_2_8_24_1",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1109/TIT.2013.2296784",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1214/09-AOS729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1177/1177932219839402",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1371/journal.pbio.1001301",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    }
+  ],
+  "reference-count": 27,
+  "references-count": 27,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22377"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Assisted estimation of gene expression graphical models"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

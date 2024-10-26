@@ -1,0 +1,325 @@
+{
+  "DOI": "10.1002/gepi.10206",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.10206",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eGibbs sampling‐based generalized linear mixed models (GLMMs) provide a convenient and flexible way to extend variance components models for multivariate normally distributed continuous traits to other classes of phenotype. This includes binary traits and right‐censored failure times such as age‐at‐onset data. The approach has applications in many areas of genetic epidemiology. However, the required GLMMs are sensitive to nonrandom ascertainment. In the absence of an appropriate correction for ascertainment, they can exhibit marked positive bias in the estimated grand mean and serious shrinkage in the estimated magnitude of variance components. To compound practical difficulties, it is currently difficult to implement a conventional adjustment for ascertainment because of the need to undertake repeated integration across the distribution of random effects. This is prohibitively slow when it must be repeated at every iteration of the Markov chain Monte Carlo (MCMC) procedure. This paper motivates a correction for ascertainment that is based on sampling random effects rather than integrating across them and \u003cjats:italic\u003ecan\u003c/jats:italic\u003e therefore be implemented in a general‐purpose Gibbs sampling environment such as WinBUGS. The approach has the characteristic that it returns ascertainment‐adjusted parameter estimates that pertain to the true distribution of determinants in the ascertained sample rather than in the general population. The implications of this characteristic are investigated and discussed. This paper extends the utility of Gibbs sampling‐based GLMMs to a variety of settings in which family data are ascertained nonrandomly. \u003cjats:italic\u003eGenet Epidemiol\u003c/jats:italic\u003e 24:24–35, 2003. © 2003 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.10206"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Burton",
+      "given": "Paul R.",
+      "sequence": "first"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2003,
+        1,
+        1
+      ]
+    ],
+    "date-time": "2003-01-01T02:23:34Z",
+    "timestamp": 1041387814000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        17
+      ]
+    ],
+    "date-time": "2023-11-17T20:49:37Z",
+    "timestamp": 1700254177000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        21
+      ]
+    ],
+    "date-time": "2023-11-21T07:01:30Z",
+    "timestamp": 1700550090049
+  },
+  "is-referenced-by-count": 20,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2002,
+        12,
+        30
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2002,
+            12,
+            30
+          ]
+        ],
+        "date-time": "2002-12-30T00:00:00Z",
+        "timestamp": 1041206400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.10206",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.10206",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "24-35",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2002,
+        12,
+        30
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2002,
+        12,
+        30
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2003,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.2307/2290687",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_2_1"
+    },
+    {
+      "article-title": "Applications in genetic epidemiology: modelling correlations in nuclear families using multilevel modelling",
+      "author": "Burton PR",
+      "first-page": "5",
+      "journal-title": "Multilevel Modelling Newslett",
+      "key": "e_1_2_1_3_1",
+      "volume": "7",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1002/gepi.10199",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_4_1"
+    },
+    {
+      "DOI": "10.1002/(SICI)1098-2272(1999)17:2\u003c118::AID-GEPI3\u003e3.0.CO;2-V",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_5_1"
+    },
+    {
+      "DOI": "10.1086/316899",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_6_1"
+    },
+    {
+      "DOI": "10.1086/341663",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_7_1"
+    },
+    {
+      "article-title": "Sampling considerations in the gathering and analysis of pedigree data",
+      "author": "Elston RC",
+      "first-page": "62",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_8_1",
+      "volume": "31",
+      "year": "1979"
+    },
+    {
+      "DOI": "10.1086/339517",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_9_1"
+    },
+    {
+      "DOI": "10.1016/0040-5809(86)90042-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_10_1"
+    },
+    {
+      "author": "Falconer DS",
+      "key": "e_1_2_1_11_1",
+      "volume-title": "Introduction to quantitative genetics",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.1934.tb02105.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "DOI": "10.1002/gepi.1370110207",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_13_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4899-4485-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10204",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_15_1"
+    },
+    {
+      "author": "Goldstein H",
+      "key": "e_1_2_1_16_1",
+      "volume-title": "Multilevel models in educational and social research",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1093/imammb/8.3.171",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_17_1"
+    },
+    {
+      "author": "Johnson RA",
+      "key": "e_1_2_1_18_1",
+      "volume-title": "Applied multivariate statistical analysis",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1086/302808",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_19_1"
+    },
+    {
+      "DOI": "10.1007/978-94-015-8018-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.1370170748",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_21_1"
+    },
+    {
+      "DOI": "10.1002/gepi.6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_22_1"
+    },
+    {
+      "DOI": "10.1093/biomet/88.4.933",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "DOI": "10.1002/1098-2272(200009)19:2\u003c127::AID-GEPI2\u003e3.0.CO;2-S",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_24_1"
+    },
+    {
+      "DOI": "10.1002/gepi.2001.21.s1.s680",
+      "article-title": "Association and linkage for age at onset of a common oligogenic disease using genetic variance component models",
+      "author": "Scurrah KJ",
+      "doi-asserted-by": "crossref",
+      "first-page": "680",
+      "journal-title": "Genet Epidemiol",
+      "key": "e_1_2_1_25_1",
+      "volume": "21",
+      "year": "2001"
+    },
+    {
+      "author": "Spiegelhalter D",
+      "key": "e_1_2_1_26_1",
+      "volume-title": "WinBUGS version 1.3 user manual",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1080/01621459.1991.10475006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_27_1"
+    }
+  ],
+  "reference-count": 26,
+  "references-count": 26,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.10206"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Correcting for nonrandom ascertainment in generalized linear mixed models (GLMMs), fitted using Gibbs sampling"
+  ],
+  "type": "journal-article",
+  "volume": "24"
+}

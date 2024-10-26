@@ -1,0 +1,334 @@
+{
+  "DOI": "10.1002/gepi.20231",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.20231",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eAlthough extended pedigrees are often sampled through probands with extreme levels of a quantitative trait, Markov chain Monte Carlo (MCMC) methods for segregation and linkage analysis have not been able to perform ascertainment corrections. Further, the extent to which ascertainment of pedigrees leads to biases in the estimation of segregation and linkage parameters has not been previously studied for MCMC procedures. In this paper, we studied these issues with a Bayesian MCMC approach for joint segregation and linkage analysis, as implemented in the package Loki. We first simulated pedigrees ascertained through individuals with extreme values of a quantitative trait in spirit of the sequential sampling theory of Cannings and Thompson [Cannings and Thompson [\u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#bib6\"\u003e1977\u003c/jats:ext-link\u003e] Clin. Genet. 12:208–212]. Using our simulated data, we detected no bias in estimates of the trait locus location. However, in addition to allele frequencies, when the ascertainment threshold was higher than or close to the true value of the highest genotypic mean, bias was also found in the estimation of this parameter. When there were multiple trait loci, this bias destroyed the additivity of the effects of the trait loci, and caused biases in the estimation all genotypic means when a purely additive model was used for analyzing the data. To account for pedigree ascertainment with sequential sampling, we developed a Bayesian ascertainment approach and implemented Metropolis‐Hastings updates in the MCMC samplers used in Loki. Ascertainment correction greatly reduced biases in parameter estimates. Our method is designed for multiple, but a fixed number of trait loci. \u003cjats:italic\u003eGenet. Epidemiol\u003c/jats:italic\u003e. 2007. © 2007 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.20231"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Ma",
+      "given": "Jianzhong",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Amos",
+      "given": "Christopher I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Warwick Daw",
+      "given": "E.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        8
+      ]
+    ],
+    "date-time": "2007-05-08T22:18:22Z",
+    "timestamp": 1178662702000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        15
+      ]
+    ],
+    "date-time": "2023-11-15T15:39:01Z",
+    "timestamp": 1700062741000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        15
+      ]
+    ],
+    "date-time": "2023-11-15T16:10:35Z",
+    "timestamp": 1700064635811
+  },
+  "is-referenced-by-count": 10,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2007,
+            5,
+            8
+          ]
+        ],
+        "date-time": "2007-05-08T00:00:00Z",
+        "timestamp": 1178582400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.20231",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.20231",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "594-604",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2007,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.1370040305",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_2_1"
+    },
+    {
+      "DOI": "10.1086/302057",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_3_1"
+    },
+    {
+      "article-title": "Comparison of sequential and fixed‐structure sampling of pedigrees in complex segregation analysis of a quantitative trait",
+      "author": "Boehnke M",
+      "first-page": "336",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_4_1",
+      "volume": "43",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1002/gepi.10206",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_5_1"
+    },
+    {
+      "DOI": "10.1086/316899",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_6_1"
+    },
+    {
+      "DOI": "10.1111/j.1399-0004.1977.tb00928.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_7_1"
+    },
+    {
+      "DOI": "10.1002/1098-2272(200012)19:4\u003c333::AID-GEPI5\u003e3.0.CO;2-#",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_8_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.1320340407",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.1370050607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_10_1"
+    },
+    {
+      "DOI": "10.1016/0040-5809(86)90042-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_11_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.1934.tb02105.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "DOI": "10.1086/515506",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_13_1"
+    },
+    {
+      "DOI": "10.1093/genetics/144.3.1215",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "article-title": "Multifactorial analysis of family data ascertained through truncation: a comparative evaluation of two methods of statistical inference",
+      "author": "Rao DC",
+      "first-page": "506",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_15_1",
+      "volume": "42",
+      "year": "1988"
+    },
+    {
+      "article-title": "A pseudolikelihood approach to correcting for ascertainment bias in family studies",
+      "author": "Rabinowitz D",
+      "first-page": "726",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_16_1",
+      "volume": "59",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1002/(SICI)1098-2272(1997)14:6\u003c1119::AID-GEPI93\u003e3.0.CO;2-J",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_17_1"
+    },
+    {
+      "key": "e_1_2_1_18_1",
+      "unstructured": "ThompsonEA.1993.Sampling and ascertainment in genetic epidemiology: a tutorial review. Technical Report No. 243 Univ. Washington Dept Statistics Seattle WA."
+    },
+    {
+      "author": "Thompson EA",
+      "first-page": "363",
+      "key": "e_1_2_1_19_1",
+      "volume-title": "Genetic Analysis of Common Disease",
+      "year": "1979"
+    },
+    {
+      "article-title": "Inherent intractability of the ascertainment problem for pedigree data: a general likelihood framework",
+      "author": "Vieland VJ",
+      "first-page": "33",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_20_1",
+      "volume": "56",
+      "year": "1995"
+    },
+    {
+      "article-title": "The problem of ascertainment for linkage analysis",
+      "author": "Vieland VJ",
+      "first-page": "1072",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_21_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1002/gepi.20052",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_22_1"
+    },
+    {
+      "DOI": "10.1002/(SICI)1098-2272(1997)14:6\u003c719::AID-GEPI28\u003e3.0.CO;2-S",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "DOI": "10.1002/gepi.1370070502",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_24_1"
+    },
+    {
+      "article-title": "Correcting for single ascertainment by truncation for a quantitative trait",
+      "author": "Young MR",
+      "first-page": "705",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_25_1",
+      "volume": "43",
+      "year": "1988"
+    }
+  ],
+  "reference-count": 24,
+  "references-count": 24,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.20231"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Ascertainment correction for Markov chain Monte Carlo segregation and linkage analysis of a quantitative trait"
+  ],
+  "type": "journal-article",
+  "volume": "31"
+}

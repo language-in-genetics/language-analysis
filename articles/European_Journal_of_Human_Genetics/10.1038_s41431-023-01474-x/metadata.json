@@ -1,0 +1,1310 @@
+{
+  "DOI": "10.1038/s41431-023-01474-x",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01474-x",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eVariants of uncertain significance (VUS) are a significant issue for the molecular diagnosis of rare diseases. The publication of episignatures as effective biomarkers of certain Mendelian neurodevelopmental disorders has raised hopes to help classify VUS. However, prediction abilities of most published episignatures have not been independently investigated yet, which is a prerequisite for an informed and rigorous use in a diagnostic setting. We generated DNA methylation data from 101 carriers of (likely) pathogenic variants in ten different genes, 57 VUS carriers, and 25 healthy controls. Combining published episignature information and new validation data with a k-nearest-neighbour classifier within a leave-one-out scheme, we provide unbiased specificity and sensitivity estimates for each of the signatures. Our procedure reached 100% specificity, but the sensitivities unexpectedly spanned a very large spectrum. While \u003cjats:italic\u003eATRX, DNMT3A, KMT2D\u003c/jats:italic\u003e, and \u003cjats:italic\u003eNSD1\u003c/jats:italic\u003e signatures displayed a 100% sensitivity, \u003cjats:italic\u003eCREBBP-RSTS\u003c/jats:italic\u003e and one of the \u003cjats:italic\u003eCHD8\u003c/jats:italic\u003e signatures reached \u0026lt;40% sensitivity on our dataset. Remaining Cornelia de Lange syndrome, \u003cjats:italic\u003eKMT2A\u003c/jats:italic\u003e, \u003cjats:italic\u003eKDM5C\u003c/jats:italic\u003e and \u003cjats:italic\u003eCHD7\u003c/jats:italic\u003e signatures reached 70–100% sensitivity at best with unstable performances, suffering from heterogeneous methylation profiles among cases and rare discordant samples. Our results call for cautiousness and demonstrate that episignatures do not perform equally well. Some signatures are ready for confident use in a diagnostic setting. Yet, it is imperative to characterise the actual validity perimeter and interpretation of each episignature with the help of larger validation sample sizes and in a broader set of episignatures.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1474"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "10 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "29 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "28 September 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "23 October 2023"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by the CERDE, which is the local ethics committee."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-4088-5021",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Husson",
+      "given": "Thomas",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Lecoquierre",
+      "given": "François",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9391-7800",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Nicolas",
+      "given": "Gaël",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Richard",
+      "given": "Anne-Claire",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Afenjar",
+      "given": "Alexandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Audebert-Bellanger",
+      "given": "Séverine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Badens",
+      "given": "Catherine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bilan",
+      "given": "Frédéric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bizaoui",
+      "given": "Varoona",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boland",
+      "given": "Anne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bonnet-Dupeyron",
+      "given": "Marie-Noëlle",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4816-1431",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Brischoux-Boucher",
+      "given": "Elise",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6799-0438",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Bonnet",
+      "given": "Céline",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9666-0350",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Bournez",
+      "given": "Marie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boute",
+      "given": "Odile",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brunelle",
+      "given": "Perrine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Caumes",
+      "given": "Roseline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Charles",
+      "given": "Perrine",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0538-0981",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Chassaing",
+      "given": "Nicolas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chatron",
+      "given": "Nicolas",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5503-6292",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Cogné",
+      "given": "Benjamin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Colin",
+      "given": "Estelle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cormier-Daire",
+      "given": "Valérie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dard",
+      "given": "Rodolphe",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dauriat",
+      "given": "Benjamin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Delanne",
+      "given": "Julian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Deleuze",
+      "given": "Jean-François",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Demurger",
+      "given": "Florence",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8986-8222",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Denommé-Pichon",
+      "given": "Anne-Sophie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7212-9554",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Depienne",
+      "given": "Christel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dieux",
+      "given": "Anne",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1345-4522",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Dubourg",
+      "given": "Christèle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Edery",
+      "given": "Patrick",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1613-6570",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "El Chehadeh",
+      "given": "Salima",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Faivre",
+      "given": "Laurence",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fergelot",
+      "given": "Patricia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fradin",
+      "given": "Mélanie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Garde",
+      "given": "Aurore",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6928-6287",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Geneviève",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7182-9914",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Gilbert-Dussardier",
+      "given": "Brigitte",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Goizet",
+      "given": "Cyril",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Goldenberg",
+      "given": "Alice",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gouy",
+      "given": "Evan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guerrot",
+      "given": "Anne-Marie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guimier",
+      "given": "Anne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Harzalla",
+      "given": "Inès",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Héron",
+      "given": "Delphine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Isidor",
+      "given": "Bertrand",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lacombe",
+      "given": "Didier",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9350-8177",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Le Guillou Horn",
+      "given": "Xavier",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Keren",
+      "given": "Boris",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kuechler",
+      "given": "Alma",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lacaze",
+      "given": "Elodie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3727-9530",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lavillaureix",
+      "given": "Alinoë",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lehalle",
+      "given": "Daphné",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7691-9492",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lesca",
+      "given": "Gaëtan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lespinasse",
+      "given": "James",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8822-816X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Levy",
+      "given": "Jonathan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lyonnet",
+      "given": "Stanislas",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4132-6264",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Morel",
+      "given": "Godeliève",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jean-Marçais",
+      "given": "Nolwenn",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Marlin",
+      "given": "Sandrine",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6691-541X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Marsili",
+      "given": "Luisa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mignot",
+      "given": "Cyril",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9630-5049",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Nambot",
+      "given": "Sophie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-2170-4210",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Nizon",
+      "given": "Mathilde",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Olaso",
+      "given": "Robert",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3985-1286",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Pasquier",
+      "given": "Laurent",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0009-0004-3747-1743",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Perrin",
+      "given": "Laurine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Petit",
+      "given": "Florence",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pingault",
+      "given": "Veronique",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0408-7468",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Piton",
+      "given": "Amélie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Prieur",
+      "given": "Fabienne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Putoux",
+      "given": "Audrey",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Planes",
+      "given": "Marc",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Odent",
+      "given": "Sylvie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Quélin",
+      "given": "Chloé",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Quemener-Redon",
+      "given": "Sylvia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rama",
+      "given": "Mélanie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-2049-5058",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Rio",
+      "given": "Marlène",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5797-8152",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Rossi",
+      "given": "Massimiliano",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schaefer",
+      "given": "Elise",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rondeau",
+      "given": "Sophie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8045-6432",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Saugier-Veber",
+      "given": "Pascale",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smol",
+      "given": "Thomas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sigaudy",
+      "given": "Sabine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Touraine",
+      "given": "Renaud",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3795-9456",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Mau-Them",
+      "given": "Frederic Tran",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3457-5684",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Trimouille",
+      "given": "Aurélien",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1497-9363",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Van Gils",
+      "given": "Julien",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vanlerberghe",
+      "given": "Clémence",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vantalon",
+      "given": "Valérie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8352-5563",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Vera",
+      "given": "Gabriella",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1010-5618",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Vincent",
+      "given": "Marie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ziegler",
+      "given": "Alban",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guillin",
+      "given": "Olivier",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Campion",
+      "given": "Dominique",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1172-0196",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Charbonnier",
+      "given": "Camille",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        23
+      ]
+    ],
+    "date-time": "2023-10-23T06:01:59Z",
+    "timestamp": 1698040919000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        9
+      ]
+    ],
+    "date-time": "2024-02-09T00:12:28Z",
+    "timestamp": 1707437548000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100007380",
+      "doi-asserted-by": "publisher",
+      "name": "Fondation de l\u0026apos;Avenir pour la Recherche Médicale Appliquée"
+    },
+    {
+      "DOI": "10.13039/501100008312",
+      "doi-asserted-by": "publisher",
+      "name": "Fondation Pierre Deniker pour la Recherche et la Prévention en Santé Mentale"
+    },
+    {
+      "name": "Cerveau progrès"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        25
+      ]
+    ],
+    "date-time": "2024-04-25T08:26:48Z",
+    "timestamp": 1714033608354
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        23
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            23
+          ]
+        ],
+        "date-time": "2023-10-23T00:00:00Z",
+        "timestamp": 1698019200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            23
+          ]
+        ],
+        "date-time": "2023-10-23T00:00:00Z",
+        "timestamp": 1698019200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01474-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01474-x",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01474-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "190-199",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        23
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        23
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/S0140-6736(14)61705-0",
+      "author": "CF Wright",
+      "doi-asserted-by": "publisher",
+      "first-page": "1305",
+      "journal-title": "Lancet",
+      "key": "1474_CR1",
+      "unstructured": "Wright CF, Fitzgerald TW, Jones WD, Clayton S, McRae JF, van Kogelenberg M, et al. Genetic diagnosis of developmental disorders in the DDD study: a scalable analysis of genome-wide research data. Lancet. 2015;385:1305–14.",
+      "volume": "385",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med.",
+      "key": "1474_CR2",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and Guidelines for the Interpretation of Sequence Variants: A Joint Consensus Recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17:405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2832-5",
+      "author": "J Kaplanis",
+      "doi-asserted-by": "publisher",
+      "first-page": "757",
+      "journal-title": "Nature",
+      "key": "1474_CR3",
+      "unstructured": "Kaplanis J, Samocha KE, Wiel L, Zhang Z, Arvai KJ, Eberhardt RY, et al. Evidence for 28 genetic disorders discovered by combining healthcare and research data. Nature. 2020;586:757–62.",
+      "volume": "586",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.12.036",
+      "author": "FK Satterstrom",
+      "doi-asserted-by": "crossref",
+      "first-page": "568",
+      "journal-title": "Cell 6 févr",
+      "key": "1474_CR4",
+      "unstructured": "Satterstrom FK, Kosmicki JA, Wang J, Breen MS, De Rubeis S, An JY, et al. Large-Scale Exome Sequencing Study Implicates Both Developmental and Functional Changes in the Neurobiology of Autism. Cell 6 févr. 2020;180:568–584.e23.",
+      "volume": "180",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/15592294.2017.1381807",
+      "author": "E Aref-Eshghi",
+      "doi-asserted-by": "publisher",
+      "first-page": "923",
+      "journal-title": "Epigenetics",
+      "key": "1474_CR5",
+      "unstructured": "Aref-Eshghi E, Schenkel LC, Lin H, Skinner C, Ainsworth P, Paré G, et al. The defining DNA methylation signature of Kabuki syndrome enables functional assessment of genetic variants of unknown clinical significance. Epigenetics. 2017;12:923–33.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41467-018-07193-y",
+      "author": "E Aref-Eshghi",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1474_CR6",
+      "unstructured": "Aref-Eshghi E, Bend EG, Hood RL, Schenkel LC, Carere DA, Chakrabarti R, et al. BAFopathies’ DNA methylation epi-signatures demonstrate diagnostic utility and functional continuum of Coffin-Siris and Nicolaides-Baraitser syndromes. Nat Commun. 2018;9:4885.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.01.019",
+      "author": "E Aref-Eshghi",
+      "doi-asserted-by": "publisher",
+      "first-page": "356",
+      "journal-title": "Am J Hum Genet",
+      "key": "1474_CR7",
+      "unstructured": "Aref-Eshghi E, Kerkhof J, Pedro VP, DI Groupe F, Barat-Houari M, et al. Evaluation of DNA Methylation Episignatures for Diagnosis and Phenotype Correlations in 42 Mendelian Neurodevelopmental Disorders. Am J Hum Genet. 2020;106:356–70.",
+      "volume": "106",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.gim.2021.12.003",
+      "author": "F Cherik",
+      "doi-asserted-by": "publisher",
+      "first-page": "905",
+      "journal-title": "Genet Med.",
+      "key": "1474_CR8",
+      "unstructured": "Cherik F, Reilly J, Kerkhof J, Levy M, McConkey H, Barat-Houari M, et al. DNA methylation episignature in Gabriele-de Vries syndrome. Genet Med. 2022;24:905–14.",
+      "volume": "24",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/ijms23031815",
+      "author": "A Foroutan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1815",
+      "journal-title": "Int J Mol Sci",
+      "key": "1474_CR9",
+      "unstructured": "Foroutan A, Haghshenas S, Bhai P, Levy MA, Kerkhof J, McConkey H, et al. Clinical Utility of a Unique Genome-Wide DNA Methylation Signature for KMT2A-Related Syndrome. Int J Mol Sci. 2022;23:1815.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/ijms22031111",
+      "author": "S Haghshenas",
+      "doi-asserted-by": "publisher",
+      "first-page": "1111",
+      "journal-title": "Int J Mol Sci",
+      "key": "1474_CR10",
+      "unstructured": "Haghshenas S, Levy MA, Kerkhof J, Aref-Eshghi E, McConkey H, Balci T, et al. Detection of a DNA Methylation Signature for the Intellectual Developmental Disorder, X-Linked, Syndromic, Armfield Type. Int J Mol Sci. 2021;22:1111.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "author": "MA Levy",
+      "first-page": "100075",
+      "journal-title": "HGG Adv",
+      "key": "1474_CR11",
+      "unstructured": "Levy MA, McConkey H, Kerkhof J, Barat-Houari M, Bargiacchi S, Biamino E, et al. Novel diagnostic DNA methylation episignatures expand and refine the epigenetic landscapes of Mendelian disorders. HGG Adv. 2022;3:100075.",
+      "volume": "3",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/brain/awab360",
+      "author": "N Mirza-Schreiber",
+      "doi-asserted-by": "publisher",
+      "first-page": "644",
+      "journal-title": "Brain",
+      "key": "1474_CR12",
+      "unstructured": "Mirza-Schreiber N, Zech M, Wilson R, Brunet T, Wagner M, Jech R, et al. Blood DNA methylation provides an accurate biomarker of KMT2B-related dystonia and predicts onset. Brain. 2022;145:644–54.",
+      "volume": "145",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.01.015",
+      "author": "FC Radio",
+      "doi-asserted-by": "publisher",
+      "first-page": "502",
+      "journal-title": "Am J Hum Genet",
+      "key": "1474_CR13",
+      "unstructured": "Radio FC, Pang K, Ciolfi A, Levy MA, Hernández-García A, Pedace L, et al. SPEN haploinsufficiency causes a neurodevelopmental disorder overlapping proximal 1p36 deletion syndrome with an episignature of X chromosomes in females. Am J Hum Genet. 2021;108:502–16.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3390/ijms22168611",
+      "author": "K Rooney",
+      "doi-asserted-by": "publisher",
+      "first-page": "8611",
+      "journal-title": "Int J Mol Sci",
+      "key": "1474_CR14",
+      "unstructured": "Rooney K, Levy MA, Haghshenas S, Kerkhof J, Rogaia D, Tedesco MG, et al. Identification of a DNA Methylation Episignature in the 22q11.2 Deletion Syndrome. Int J Mol Sci. 2021;22:8611.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.gim.2021.12.016",
+      "author": "F Rouxel",
+      "doi-asserted-by": "publisher",
+      "first-page": "1096",
+      "journal-title": "Genet Med.",
+      "key": "1474_CR15",
+      "unstructured": "Rouxel F, Relator R, Kerkhof J, McConkey H, Levy M, Dias P, et al. CDK13-related disorder: Report of a series of 18 previously unpublished individuals and description of an epigenetic signature. Genet Med. 2022;24:1096–107.",
+      "volume": "24",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s13072-017-0118-4",
+      "author": "LC Schenkel",
+      "doi-asserted-by": "publisher",
+      "first-page": "10",
+      "journal-title": "Epigenet Chrom",
+      "key": "1474_CR16",
+      "unstructured": "Schenkel LC, Kernohan KD, McBride A, Reina D, Hodge A, Ainsworth PJ, et al. Identification of epigenetic signature associated with alpha thalassemia/mental retardation X-linked syndrome. Epigenet Chrom. 2017;10:10.",
+      "volume": "10",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s13148-020-00990-7",
+      "author": "LC Schenkel",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Epigenet.",
+      "key": "1474_CR17",
+      "unstructured": "Schenkel LC, Aref-Eshghi E, Rooney K, Kerkhof J, Levy MA, McConkey H, et al. DNA methylation epi-signature is associated with two molecularly and phenotypically distinct clinical subtypes of Phelan-McDermid syndrome. Clin Epigenet. 2021;13:2.",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13148-019-0684-3",
+      "author": "MT Siu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Epigenet.",
+      "key": "1474_CR18",
+      "unstructured": "Siu MT, Butcher DT, Turinsky AL, Cytrynbaum C, Stavropoulos DJ, Walker S, et al. Functional DNA methylation signatures for autism spectrum disorder genomic risk loci: 16p11.2 deletions and CHD8 variants. Clin Epigenet. 2019;11:103.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.04.004",
+      "author": "DT Butcher",
+      "doi-asserted-by": "publisher",
+      "first-page": "773",
+      "journal-title": "Am J Hum Genet",
+      "key": "1474_CR19",
+      "unstructured": "Butcher DT, Cytrynbaum C, Turinsky AL, Siu MT, Inbar-Feigenberg M, Mendoza-Londono R, et al. CHARGE and Kabuki Syndromes: Gene-Specific DNA Methylation Signatures Identify Epigenetic Mechanisms Linking These Clinically Overlapping Conditions. Am J Hum Genet. 2017;100:773–88.",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/humu.24446",
+      "author": "MA Levy",
+      "doi-asserted-by": "publisher",
+      "first-page": "1609",
+      "journal-title": "Hum Mutat",
+      "key": "1474_CR20",
+      "unstructured": "Levy MA, Relator R, McConkey H, Pranckeviciene E, Kerkhof J, Barat-Houari M, et al. Functional correlation of genome-wide DNA methylation profiles in genetic neurodevelopmental disorders. Hum Mutat. 2022;43:1609–28.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/ncomms10207",
+      "author": "S Choufani",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1474_CR21",
+      "unstructured": "Choufani S, Cytrynbaum C, Chung BHY, Turinsky AL, Grafodatskaya D, Chen YA, et al. NSD1 mutations generate a genome-wide DNA methylation signature. Nat Commun. 2015;6:10207.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.gim.2021.08.007",
+      "author": "J Kerkhof",
+      "doi-asserted-by": "publisher",
+      "first-page": "51",
+      "journal-title": "Genet Med",
+      "key": "1474_CR22",
+      "unstructured": "Kerkhof J, Squeo GM, McConkey H, Levy MA, Piemontese MR, Castori M, et al. DNA methylation episignature testing improves molecular diagnosis of Mendelian chromatinopathies. Genet Med. 2022;24:51–60.",
+      "volume": "24",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/hmg/ddaa144",
+      "author": "B Sadikovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "R27",
+      "journal-title": "Hum Mol Genet",
+      "key": "1474_CR23",
+      "unstructured": "Sadikovic B, Levy MA, Aref-Eshghi E. Functional annotation of genomic variation: DNA methylation episignatures in neurodevelopmental Mendelian disorders. Hum Mol Genet. 2020;29:R27–32.",
+      "volume": "29",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41436-020-01096-4",
+      "author": "B Sadikovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "1065",
+      "journal-title": "Genet Med.",
+      "key": "1474_CR24",
+      "unstructured": "Sadikovic B, Levy MA, Kerkhof J, Aref-Eshghi E, Schenkel L, Stuart A, et al. Clinical epigenomics: genome-wide DNA methylation analysis for the diagnosis of Mendelian disorders. Genet Med. 2021;23:1065–74.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cpz1.597",
+      "author": "Z Awamleh",
+      "doi-asserted-by": "publisher",
+      "first-page": "e597",
+      "journal-title": "Curr Protoc",
+      "key": "1474_CR25",
+      "unstructured": "Awamleh Z, Goodman S, Kallurkar P, Wu W, Lu K, Choufani S, et al. Generation of DNA Methylation Signatures and Classification of Variants in Rare Neurodevelopmental Disorders Using EpigenCentral. Curr Protoc. 2022;2:e597.",
+      "volume": "2",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.06.015",
+      "author": "E Chater-Diehl",
+      "doi-asserted-by": "publisher",
+      "first-page": "1359",
+      "journal-title": "Am J Hum Genet",
+      "key": "1474_CR26",
+      "unstructured": "Chater-Diehl E, Goodman SJ, Cytrynbaum C, Turinsky AL, Choufani S, Weksberg R. Anatomy of DNA methylation signatures: Emerging insights and applications. Am J Hum Genet. 2021;108:1359–66.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu049",
+      "author": "MJ Aryee",
+      "doi-asserted-by": "publisher",
+      "first-page": "1363",
+      "journal-title": "Bioinformatics",
+      "key": "1474_CR27",
+      "unstructured": "Aryee MJ, Jaffe AE, Corrada-Bravo H, Ladd-Acosta C, Feinberg AP, Hansen KD, et al. Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays. Bioinformatics. 2014;30:1363–9.",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa825",
+      "author": "D Pelegí-Sisó",
+      "doi-asserted-by": "publisher",
+      "first-page": "1759",
+      "journal-title": "Bioinformatics",
+      "key": "1474_CR28",
+      "unstructured": "Pelegí-Sisó D, de Prado P, Ronkainen J, Bustamante M, González JR. methylclock: a Bioconductor package to estimate DNA methylation age. Bioinformatics. 2021;37:1759–60.",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.18632/aging.101508",
+      "author": "S Horvath",
+      "doi-asserted-by": "publisher",
+      "first-page": "1758",
+      "journal-title": "Aging",
+      "key": "1474_CR29",
+      "unstructured": "Horvath S, Oshima J, Martin GM, Lu AT, Quach A, Cohen H, et al. Epigenetic clock for skin and blood cells applied to Hutchinson Gilford Progeria Syndrome and ex vivo studies. Aging. 2018;10:1758–75.",
+      "volume": "10",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/humu.24076",
+      "author": "AL Turinsky",
+      "doi-asserted-by": "publisher",
+      "first-page": "1722",
+      "journal-title": "Hum Mutat",
+      "key": "1474_CR30",
+      "unstructured": "Turinsky AL, Choufani S, Lu K, Liu D, Mashouri P, Min D, et al. EpigenCentral: Portal for DNA methylation data analysis and classification in rare diseases. Hum Mutat. 2020;41:1722–33.",
+      "volume": "41",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1086/500273",
+      "author": "SR Lalani",
+      "doi-asserted-by": "publisher",
+      "first-page": "303",
+      "journal-title": "Am J Hum Genet",
+      "key": "1474_CR31",
+      "unstructured": "Lalani SR, Safiullah AM, Fernbach SD, Harutyunyan KG, Thaller C, Peterson LE, et al. Spectrum of CHD7 Mutations in 110 Individuals with CHARGE Syndrome and Genotype-Phenotype Correlation. Am J Hum Genet. 2006;78:303–14.",
+      "volume": "78",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.jmb.2022.167913",
+      "author": "FS Ugur",
+      "doi-asserted-by": "publisher",
+      "first-page": "167913",
+      "journal-title": "J Mol Biol",
+      "key": "1474_CR32",
+      "unstructured": "Ugur FS, Kelly MJS, Fujimori DG. Chromatin Sensing by the Auxiliary Domains of KDM5C Regulates Its Demethylase Activity and Is Disrupted by X-linked Intellectual Disability Mutations. J Mol Biol. 2023;435:167913.",
+      "volume": "435",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1186/s13148-019-0658-5",
+      "author": "EG Bend",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Epigenet",
+      "key": "1474_CR33",
+      "unstructured": "Bend EG, Aref-Eshghi E, Everman DB, Rogers RC, Cathey SS, Prijoles EJ, et al. Gene domain-specific DNA methylation episignatures highlight distinct molecular entities of ADNP syndrome. Clin Epigenet. 2019;11:64.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00439-023-02544-2",
+      "doi-asserted-by": "publisher",
+      "key": "1474_CR34",
+      "unstructured": "Awamleh Z, Goodman S, Choufani S, Weksberg R. DNA methylation signatures for chromatinopathies: current challenges and future applications. Hum Genet. 2023. https://doi.org/10.1007/s00439-023-02544-2. Epub ahead of print."
+    },
+    {
+      "DOI": "10.1093/hmg/ddac289",
+      "author": "Z Awamleh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1429",
+      "journal-title": "Hum Mol Genet",
+      "key": "1474_CR35",
+      "unstructured": "Awamleh Z, Choufani S, Cytrynbaum C, Alkuraya FS, Scherer S, Fernandes S, et al. ANKRD11 pathogenic variants and 16q24.3 microdeletions share an altered DNA methylation signature in patients with KBG syndrome. Hum Mol Genet. 2023;32:1429–38.",
+      "volume": "32",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/s41431-023-01406-9",
+      "doi-asserted-by": "crossref",
+      "key": "1474_CR36",
+      "unstructured": "Oexle K, Zech M, Stühn LG, Siegert S, Brunet T, Schmidt WM, et al. Episignature analysis of moderate effects and mosaics. Eur J Hum Genet. 2023;31:1032–9."
+    }
+  ],
+  "reference-count": 36,
+  "references-count": 36,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2924104/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01474-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Episignatures in practice: independent evaluation of published episignatures for the molecular diagnostics of ten neurodevelopmental disorders"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "32"
+}

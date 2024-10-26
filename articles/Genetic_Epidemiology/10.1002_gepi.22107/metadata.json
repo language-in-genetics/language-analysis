@@ -1,0 +1,455 @@
+{
+  "DOI": "10.1002/gepi.22107",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22107",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eIn genetic association studies, it is important to distinguish direct and indirect genetic effects in order to build truly functional models. For this purpose, we consider a directed acyclic graph setting with genetic variants, primary and intermediate phenotypes, and confounding factors. In order to make valid statistical inference on direct genetic effects on the primary phenotype, it is necessary to consider all potential effects in the graph, and we propose to use the estimating equations method with robust Huber–White sandwich standard errors. We evaluate the proposed causal inference based on estimating equations (CIEE) method and compare it with traditional multiple regression methods, the structural equation modeling method, and sequential G‐estimation methods through a simulation study for the analysis of (completely observed) quantitative traits and time‐to‐event traits subject to censoring as primary phenotypes. The results show that CIEE provides valid estimators and inference by successfully removing the effect of intermediate phenotypes from the primary phenotype and is robust against measured and unmeasured confounding of the indirect effect through observed factors. All other methods except the sequential G‐estimation method for quantitative traits fail in some scenarios where their test statistics yield inflated type I errors. In the analysis of the Genetic Analysis Workshop 19 dataset, we estimate and test genetic effects on blood pressure accounting for intermediate gene expression phenotypes. The results show that CIEE can identify genetic variants that would be missed by traditional regression analyses. CIEE is computationally fast, widely applicable to different fields, and available as an R package.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22107"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-9966-6819",
+      "affiliation": [
+        {
+          "name": "Molecular Epidemiology Research Group Max Delbrück Center (MDC) for Molecular Medicine in the Helmholtz Association  Berlin Germany"
+        },
+        {
+          "name": "Department of Mathematics and Statistics Memorial University of Newfoundland  St. John's Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Konigorski",
+      "given": "Stefan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Statistics Memorial University of Newfoundland  St. John's Canada"
+        }
+      ],
+      "family": "Wang",
+      "given": "Yuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Statistics Memorial University of Newfoundland  St. John's Canada"
+        }
+      ],
+      "family": "Cigsar",
+      "given": "Candemir",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Statistics Memorial University of Newfoundland  St. John's Canada"
+        },
+        {
+          "name": "Discipline of Genetics Faculty of Medicine Memorial University of Newfoundland  St. John's Canada"
+        },
+        {
+          "name": "Discipline of Medicine, Faculty of Medicine Memorial University of Newfoundland  St. John's Canada"
+        }
+      ],
+      "family": "Yilmaz",
+      "given": "Yildiz E.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        12,
+        19
+      ]
+    ],
+    "date-time": "2017-12-19T03:47:00Z",
+    "timestamp": 1513655220000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        10
+      ]
+    ],
+    "date-time": "2023-09-10T07:20:48Z",
+    "timestamp": 1694330448000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001656",
+      "doi-asserted-by": "publisher",
+      "name": "Helmholtz-Gemeinschaft"
+    },
+    {
+      "DOI": "10.13039/501100000038",
+      "award": [
+        "RGPIN 2014-04904",
+        "RGPIN 2015-06152"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Natural Sciences and Engineering Research Council of Canada"
+    },
+    {
+      "DOI": "10.13039/501100004261",
+      "award": [
+        "5404.1723.101",
+        "5404.1801.101"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Research and Development Corporation of Newfoundland and Labrador"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        11
+      ]
+    ],
+    "date-time": "2023-09-11T20:47:19Z",
+    "timestamp": 1694465239220
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2017,
+        12,
+        18
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            12,
+            18
+          ]
+        ],
+        "date-time": "2017-12-18T00:00:00Z",
+        "timestamp": 1513555200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22107",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22107",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22107",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22107",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "174-186",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2017,
+        12,
+        18
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2017,
+        12,
+        18
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        3
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "Omics‐squared: Human genomic, transcriptomic and phenotypic data for Genetic Analysis Workshop 19",
+      "author": "Blangero J.",
+      "first-page": "71",
+      "issue": "7",
+      "journal-title": "BMC Proceedings",
+      "key": "e_1_2_7_2_1",
+      "volume": "10",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/9781118619179",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1093/ije/31.1.163",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1038/ng.3674",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1093/biomet/68.3.589",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004445",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1038/nrg3142",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1038/nature18642",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2008.00673.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddv303",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1038/ng.3561",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1016/j.immuni.2012.11.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-8-S1-S72",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "article-title": "Genetic association analysis based on a joint model of gene expression and blood pressure",
+      "author": "Konigorski S.",
+      "first-page": "289",
+      "issue": "7",
+      "journal-title": "BMC Proceedings",
+      "key": "e_1_2_7_15_1",
+      "volume": "10",
+      "year": "2016"
+    },
+    {
+      "author": "Lawless J. F.",
+      "key": "e_1_2_7_16_1",
+      "volume-title": "Statistical models and methods for lifetime data",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/ejhg.2011.122",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20557",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1038/nature14177",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1002179",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2011.00782.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1093/biomet/82.4.669",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1038/ng.3570",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1093/ije/dys006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyr233",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1038/ncomms13357",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1016/0270-0255(86)90088-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1093/biomet/79.2.321",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1994.10476807",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1097/00001648-200009000-00011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.2307/2981697",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.18637/jss.v048.i02",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1002/sim.2165",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1214/14-STS493",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.2307/1912526",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1111/1753-0407.12510",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    }
+  ],
+  "reference-count": 37,
+  "references-count": 37,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22107"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Estimating and testing direct genetic effects in directed acyclic graphs using estimating equations"
+  ],
+  "type": "journal-article",
+  "volume": "42"
+}

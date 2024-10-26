@@ -1,0 +1,605 @@
+{
+  "DOI": "10.1002/gepi.22068",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22068",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eA genome‐wide association study (GWAS) correlates marker and trait variation in a study sample. Each subject is genotyped at a multitude of SNPs (single nucleotide polymorphisms) spanning the genome. Here, we assume that subjects are randomly collected unrelateds and that trait values are normally distributed or can be transformed to normality. Over the past decade, geneticists have been remarkably successful in applying GWAS analysis to hundreds of traits. The massive amount of data produced in these studies present unique computational challenges. Penalized regression with the ℓ\u003cjats:sub\u003e1\u003c/jats:sub\u003e penalty (LASSO) or minimax concave penalty (MCP) penalties is capable of selecting a handful of associated SNPs from millions of potential SNPs. Unfortunately, model selection can be corrupted by false positives and false negatives, obscuring the genetic underpinning of a trait. Here, we compare LASSO and MCP penalized regression to iterative hard thresholding (IHT). On GWAS regression data, IHT is better at model selection and comparable in speed to both methods of penalized regression. This conclusion holds for both simulated and real GWAS data. IHT fosters parallelization and scales well in problems with large numbers of causal markers. Our parallel implementation of IHT accommodates SNP genotype compression and exploits multiple CPU cores and graphics processing units (GPUs). This allows statistical geneticists to leverage commodity desktop computers in GWAS analysis and to avoid supercomputing. \u003cjats:bold\u003eAvailability\u003c/jats:bold\u003e: Source code is freely available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/klkeys/IHT.jl\"\u003ehttps://github.com/klkeys/IHT.jl\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22068"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-4886-6666",
+      "affiliation": [
+        {
+          "name": "Department of Medicine University of California, San Francisco San Francisco California United States of America"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Keys",
+      "given": "Kevin L.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics University of Southern California Los Angeles California United States of America"
+        }
+      ],
+      "family": "Chen",
+      "given": "Gary K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Departments of Biomathematics, Human Genetics, and Statistics University of California Los Angeles California United States of America"
+        }
+      ],
+      "family": "Lange",
+      "given": "Kenneth",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2017,
+        9,
+        6
+      ]
+    ],
+    "date-time": "2017-09-06T07:02:51Z",
+    "timestamp": 1504681371000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        29
+      ]
+    ],
+    "date-time": "2023-09-29T21:27:07Z",
+    "timestamp": 1696022827000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    },
+    {
+      "DOI": "10.13039/100000057",
+      "award": [
+        "GM053275"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of General Medical Sciences"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "HG002536",
+        "HG006139"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000082",
+      "award": [
+        "DGE‐0707424"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Division of Graduate Education"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        30
+      ]
+    ],
+    "date-time": "2023-09-30T08:41:24Z",
+    "timestamp": 1696063284741
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2017,
+        9,
+        6
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+      "content-version": "am",
+      "delay-in-days": 365,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            9,
+            6
+          ]
+        ],
+        "date-time": "2018-09-06T00:00:00Z",
+        "timestamp": 1536192000000
+      }
+    },
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            6
+          ]
+        ],
+        "date-time": "2017-09-06T00:00:00Z",
+        "timestamp": 1504656000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22068",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22068",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22068",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22068",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22068",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "756-768",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2017,
+        9,
+        6
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2017,
+        9,
+        6
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2017,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1186/1471-2105-13-88",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1214/12-AOS1032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn236",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "article-title": "Greedy sparsity‐constrained optimization",
+      "author": "Bahmani S.",
+      "first-page": "807",
+      "issue": "3",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_6_5_1",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1137/080716542",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1016/j.acha.2010.07.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1002/nla.1948",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "article-title": "Accelerated iterative hard thresholding",
+      "author": "Blumensath T.",
+      "first-page": "183",
+      "issue": "1",
+      "journal-title": "Signal Processing",
+      "key": "e_1_2_6_9_1",
+      "volume": "2",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1007/s00041-008-9035-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1016/j.acha.2009.04.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1109/JSTSP.2010.2042411",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1214/10-AOAS388",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1002/cpa.20124",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "article-title": "Second‐generation PLINK: rising to the challenge of larger and richer datasets",
+      "author": "Chang C. C.",
+      "first-page": "1",
+      "issue": "7",
+      "journal-title": "GigaScience",
+      "key": "e_1_2_6_15_1",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "author": "Chen S.",
+      "key": "e_1_2_6_17_1",
+      "volume-title": "Basis pursuit (Tech. Rep.)",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1109/TIT.2009.2016006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1201/9780367807849",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1109/18.959265",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1109/TIT.2011.2173241",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1214/009053604000000067",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1534/genetics.115.178343",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21757",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1137/100806278",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1214/07-AOAS131",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "author": "Golub G.",
+      "key": "e_1_2_6_28_1",
+      "volume-title": "Rank degeneracy and least squares problems",
+      "year": "1976"
+    },
+    {
+      "DOI": "10.1007/978-0-387-84858-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "article-title": "On iterative hard thresholding methods for high‐dimensional M‐estimation",
+      "author": "Jain P.",
+      "first-page": "685",
+      "journal-title": "Advances in Neural Information Processing Systems",
+      "key": "e_1_2_6_30_1",
+      "volume": "27",
+      "year": "2014"
+    },
+    {
+      "author": "Jiang D.",
+      "key": "e_1_2_6_31_1",
+      "volume-title": "Majorization minimization by coordinate descent for concave penalized generalized linear models",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/978-1-4419-5945-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1146/annurev-statistics-022513-115638",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt187",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1214/15-AOS1371",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1214/13-AOS1175",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "key": "e_1_2_6_38_1",
+      "unstructured": "Loftus J. R.(2016).Selective inference after cross‐validation. arXiv preprint arXiv:1511.08866."
+    },
+    {
+      "key": "e_1_2_6_39_1",
+      "unstructured": "Loftus J. R. \u0026Taylor J. E.(2015).Selective inference in regression models with groups of variables. arXiv preprint arXiv:1511.01478."
+    },
+    {
+      "article-title": "Regularized M‐estimators with nonconvexity: statistical and algorithmic theory for local optima",
+      "author": "Loh P.‐L.",
+      "first-page": "559",
+      "issue": "1",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_6_40_1",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1109/78.258082",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1137/S0097539792240406",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1016/j.acha.2008.07.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1109/ACSSC.1993.342465",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    },
+    {
+      "DOI": "10.1038/ng.271",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_46_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1507583112",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_47_1"
+    },
+    {
+      "article-title": "Regression shrinkage and selection via the lasso",
+      "author": "Tibshirani R.",
+      "first-page": "267",
+      "issue": "1",
+      "journal-title": "Journal of the Royal Statistical Society, Series B",
+      "key": "e_1_2_6_48_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1109/TIT.2005.864420",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_49_1"
+    },
+    {
+      "DOI": "10.1109/TIT.2007.909108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_50_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21895",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_51_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_52_1"
+    },
+    {
+      "DOI": "10.1214/07-AOAS147",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_53_1"
+    },
+    {
+      "article-title": "Selective inference for group‐sparse linear models",
+      "author": "Yang F.",
+      "first-page": "2469",
+      "journal-title": "Advances in Neural Information Processing Systems",
+      "key": "e_1_2_6_54_1",
+      "volume": "29",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ng.608",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_55_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_56_1"
+    },
+    {
+      "article-title": "Gradient hard thresholding pursuit for sparsity‐constrained optimization",
+      "author": "Yuan X.",
+      "first-page": "71",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_6_57_1",
+      "volume": "32",
+      "year": "2014"
+    },
+    {
+      "article-title": "Exact recovery of hard thresholding pursuit",
+      "author": "Yuan X.",
+      "first-page": "3558",
+      "journal-title": "Advances in Neural Information Processing Systems",
+      "key": "e_1_2_6_58_1",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1214/09-AOS729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_59_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_60_1"
+    }
+  ],
+  "reference-count": 59,
+  "references-count": 59,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22068"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Iterative hard thresholding for model selection in genome‐wide association studies"
+  ],
+  "type": "journal-article",
+  "volume": "41"
+}

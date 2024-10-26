@@ -1,0 +1,447 @@
+{
+  "DOI": "10.1002/gepi.22017",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22017",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eGene regulatory network (GRN) inference is an active area of research that facilitates understanding the complex interplays between biological molecules. We propose a novel framework to create such GRNs, based on Conditional Inference Forests (\u003cjats:italic\u003eCIF\u003c/jats:italic\u003es) as proposed by Strobl et al. Our framework consists of using ensembles of Conditional Inference Trees (\u003cjats:italic\u003eCIT\u003c/jats:italic\u003es) and selecting an appropriate aggregation scheme for variant selection prior to network construction. We show on synthetic microarray data that taking the original implementation of \u003cjats:italic\u003eCIF\u003c/jats:italic\u003es with conditional permutation scheme (\u003cjats:italic\u003eCIF\u003cjats:sub\u003econd\u003c/jats:sub\u003e\u003c/jats:italic\u003e) may lead to improved performance compared to Breiman's implementation of Random Forests (\u003cjats:italic\u003eRF\u003c/jats:italic\u003e). Among all newly introduced \u003cjats:italic\u003eCIF‐\u003c/jats:italic\u003ebased methods and five network scenarios obtained from the DREAM4 challenge, \u003cjats:italic\u003eCIF\u003cjats:sub\u003econd\u003c/jats:sub\u003e\u003c/jats:italic\u003e performed best. Networks derived from well‐tuned \u003cjats:italic\u003eCIF\u003c/jats:italic\u003es, obtained by simply averaging \u003cjats:italic\u003eP\u003c/jats:italic\u003e‐values over tree ensembles (\u003cjats:italic\u003eCIF\u003cjats:sub\u003emean\u003c/jats:sub\u003e\u003c/jats:italic\u003e) are particularly attractive, because they combine adequate performance with computational efficiency. Moreover, thresholds for variable selection are based on significance levels for \u003cjats:italic\u003eP\u003c/jats:italic\u003e‐values and, hence, do not need to be tuned. From a practical point of view, our extensive simulations show the potential advantages of \u003cjats:italic\u003eCIF\u003cjats:sub\u003emean\u003c/jats:sub\u003e\u003c/jats:italic\u003e‐based methods. Although more work is needed to improve on speed, especially when fully exploiting the advantages of \u003cjats:italic\u003eCIT\u003c/jats:italic\u003es in the context of heterogeneous and correlated data, we have shown that \u003cjats:italic\u003eCIF\u003c/jats:italic\u003e methodology can be flexibly inserted in a framework to infer biological interactions. Notably, we confirmed biologically relevant interaction between IL2RA and FOXP1, linked to the IL‐2 signaling pathway and to type 1 diabetes.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22017"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Medical Genomics, GIGA‐R Université de Liège  Sart‐Tilman Belgium"
+        }
+      ],
+      "family": "Bessonov",
+      "given": "Kyrylo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Medical Genomics, GIGA‐R Université de Liège  Sart‐Tilman Belgium"
+        }
+      ],
+      "family": "Van Steen",
+      "given": "Kristel",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        16
+      ]
+    ],
+    "date-time": "2016-11-16T15:26:41Z",
+    "timestamp": 1479310001000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T19:39:18Z",
+    "timestamp": 1696361958000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100002661",
+      "award": [
+        "22333518",
+        "2.4609.11"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Fonds De La Recherche Scientifique - FNRS"
+    },
+    {
+      "DOI": "10.13039/501100002749",
+      "doi-asserted-by": "publisher",
+      "name": "Federaal Wetenschapsbeleid"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        1
+      ]
+    ],
+    "date-time": "2024-04-01T06:27:49Z",
+    "timestamp": 1711952869127
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        11
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            11,
+            11
+          ]
+        ],
+        "date-time": "2016-11-11T00:00:00Z",
+        "timestamp": 1478822400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22017",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22017",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22017",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "767-778",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        11
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        11,
+        11
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2016,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1186/gb-2010-11-10-r106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0052836",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1093/bib/bbu012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1002/widm.1072",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1002820",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0502024102",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1145/1143844.1143874",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkq149",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1517/14622416.5.5.487",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1000117",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "key": "e_1_2_8_13_1",
+      "unstructured": "Hothorn T. Hornik K. Strobl C. Zeileis A. \u0026Hothorn M. T.(2014).Package “party.”Package Reference Manual for Party Version 0.9‐99816 37."
+    },
+    {
+      "DOI": "10.1198/106186006X133933",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1038/ng2012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.2337/db11-1213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0012776",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1038/msb.2011.99",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkl1041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1098/rsta.2009.0159",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.2337/db13-1775",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1093/nar/30.1.312",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "article-title": "How perfect can protein interactomes be?",
+      "author": "Levy E. D.",
+      "first-page": "e11",
+      "journal-title": "Sci Signal 2.60",
+      "key": "e_1_2_8_24_1",
+      "year": "2009"
+    },
+    {
+      "article-title": "Classification and regression by randomForest",
+      "author": "Liaw A.",
+      "first-page": "18",
+      "issue": "3",
+      "journal-title": "R News",
+      "key": "e_1_2_8_25_1",
+      "volume": "2",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1109/TPAMI.2010.183",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1002/widm.8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1002/biot.201200291",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0913357107",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_30_1",
+      "unstructured": "Marbach D. Prill R. J. Schaffter T. Mattiussi C. Floreano D. \u0026Stolovitzky G.(2010).Revealing strengths and weaknesses of methods for gene network inference.Proceedings of the National Academy of Sciences of the United States of America 107(14) 6286–6291."
+    },
+    {
+      "DOI": "10.1089/cmb.2008.09TT",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1007/s00125-009-1281-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1186/1752-0509-3-49",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkn783",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0009202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2015.04.013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1093/nar/gks1201",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "key": "e_1_2_8_38_1",
+      "unstructured": "Strasser H. \u0026Weber C.(1999).On the Asymptotic Theory of Permutation Statistics.Report Series SFB “Adaptive Information Systems and Modelling in Economics and Management Science” 27. SFB Adaptive Information Systems and Modelling in Economics and Management Science WU Vienna University of Economics and Business Vienna."
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-307",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-8-25",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "author": "Strobl C.",
+      "key": "e_1_2_8_41_1",
+      "volume-title": "Party on! A new, conditional variable importance measure for random forests available in the party package",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nmeth.2810",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1016/j.jtbi.2014.03.040",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_43_1"
+    },
+    {
+      "author": "Westfall P. H.",
+      "key": "e_1_2_8_44_1",
+      "volume-title": "Resampling‐based multiple testing: Examples and methods for p‐value adjustment",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1186/1471-2105-13-24",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    },
+    {
+      "DOI": "10.1101/gad.1528707",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22017"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Practical aspects of gene regulatory inference via conditional inference forests from expression data"
+  ],
+  "type": "journal-article",
+  "volume": "40"
+}

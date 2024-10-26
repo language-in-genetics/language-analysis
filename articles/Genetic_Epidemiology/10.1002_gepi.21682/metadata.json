@@ -1,0 +1,437 @@
+{
+  "DOI": "10.1002/gepi.21682",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21682",
+  "abstract": "\u003cjats:p\u003eGenome‐wide association studies discovered numerous genetic variants significantly associated with various phenotypes. However, significant signals explain only a small portion of the variation in many traits. One explanation is that missing variation is found in “suggestive signals,” i.e., variants with reasonably small\u003cjats:italic\u003eP\u003c/jats:italic\u003e‐values. However, it is not clear how to capture this information and use it optimally to design and analyze future studies. We propose to extract the available information from a genome scan by accurately estimating the means of univariate statistics. The means are estimated by: (i) computing the sum of squares (SS) of a genome scan's univariate statistics, (ii) using SS to estimate the expected SS for the means (SSM) of univariate statistics, and (iii) constructing accurate soft threshold (ST) estimators for means of univariate statistics by requiring that the SS of these estimators equals the SSM. When compared to competitors, ST estimators explain a substantially higher fraction of the variability in true means. The accuracy of proposed estimators can be used to design two‐tier follow‐up studies in which regions close to variants having ST‐estimated means above a certain threshold are sequenced at high coverage and the rest of the genome is sequenced at low coverage. This follow‐up approach reduces the sequencing burden by at least an order of magnitude when compared to a high coverage sequencing of the whole genome. Finally, we suggest ways in which ST methodology can be used to improve signal detection in future sequencing studies and to perform general statistical model selection.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21682"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry Virginia Commonwealth University Richmond Virginia"
+        }
+      ],
+      "family": "Bacanu",
+      "given": "Silviu‐Alin",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Kendler",
+      "given": "Kenneth S.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        19
+      ]
+    ],
+    "date-time": "2012-09-19T12:13:13Z",
+    "timestamp": 1348056793000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T15:10:11Z",
+    "timestamp": 1714403411000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T15:40:08Z",
+    "timestamp": 1714405208847
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        19
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            9,
+            19
+          ]
+        ],
+        "date-time": "2012-09-19T00:00:00Z",
+        "timestamp": 1348012800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21682",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21682",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "48-59",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        19
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2013,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.20394",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.1999.00997.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1126/science.1133807",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1975.10479864",
+      "article-title": "Data analysis using Stein's estimator and its generalizations",
+      "author": "Efron B",
+      "doi-asserted-by": "crossref",
+      "first-page": "311",
+      "journal-title": "JASA",
+      "key": "e_1_2_6_6_1",
+      "volume": "70",
+      "year": "1975"
+    },
+    {
+      "DOI": "10.1093/hmg/ddp295",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1002/sim.4228",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.03.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1056/NEJMp0806284",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0903103106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.05.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "article-title": "Estimation with quadratic loss",
+      "author": "James W",
+      "first-page": "361",
+      "journal-title": "Proc Fourth Berkeley Symp Math Statist Prob",
+      "key": "e_1_2_6_13_1",
+      "volume": "1",
+      "year": "1961"
+    },
+    {
+      "DOI": "10.1002/qj.49708134804",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20509",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20582",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1038/nature09410",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.2337/db08-0504",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1038/ng.1108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20533",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1101/gr.117259.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "author": "Mechanic LE",
+      "first-page": "22",
+      "journal-title": "Next generation analytic tools for large scale genetic epidemiology studies of complex diseases. Genet Epidemiol",
+      "key": "e_1_2_6_23_1",
+      "volume": "36",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1056/NEJMoa0804742",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "author": "Rohland N",
+      "first-page": "631",
+      "journal-title": "Extremely low‐coverage sequencing and imputation increases power for genome‐wide association studies",
+      "key": "e_1_2_6_25_1",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "author": "Seifuddin F",
+      "first-page": "55",
+      "journal-title": "Data mining approaches for genome‐wide association of mood disorders",
+      "key": "e_1_2_6_26_1",
+      "volume": "22",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1038/nature08185",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1038/ng.940",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1086/500026",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001273",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20556",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1038/ng.943",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1534/genetics.109.102798",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "DOI": "10.1007/s00439-011-0948-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "article-title": "Regression shrinkage and selection via the lasso",
+      "author": "Tibshirani R.",
+      "doi-asserted-by": "crossref",
+      "first-page": "267",
+      "journal-title": "J Roy Stat Soc B",
+      "key": "e_1_2_6_36_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1073/pnas.082099299",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1038/ng.609",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1038/nature05911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20459",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20398",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20551",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxn001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_44_1"
+    },
+    {
+      "DOI": "10.1086/512821",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_45_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_46_1"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21682"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Extracting Actionable Information From Genome Scans"
+  ],
+  "type": "journal-article",
+  "volume": "37"
+}

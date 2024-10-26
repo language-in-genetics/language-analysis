@@ -1,0 +1,978 @@
+{
+  "DOI": "10.1007/s00439-023-02559-9",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-023-02559-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003e\nHearing loss is the leading sensory deficit, affecting ~ 5% of the population. It exhibits remarkable heterogeneity across 223 genes with 6328 pathogenic missense variants, making deafness-specific expertise a prerequisite for ascribing phenotypic consequences to genetic variants. Deafness-implicated variants are curated in the Deafness Variation Database (DVD) after classification by a genetic hearing loss expert panel and thorough informatics pipeline. However, seventy percent of the 128,167 missense variants in the DVD are “variants of uncertain significance” (VUS) due to insufficient evidence for classification. Here, we use the deep learning protein prediction algorithm, AlphaFold2, to curate structures for all DVD genes. We refine these structures with global optimization and the AMOEBA force field and use DDGun3D to predict folding free energy differences (∆∆G\u003cjats:sub\u003eFold\u003c/jats:sub\u003e) for all DVD missense variants. We find that 5772 VUSs have a large, destabilizing ∆∆G\u003cjats:sub\u003eFold\u003c/jats:sub\u003e that is consistent with pathogenic variants. When also filtered for CADD scores (\u0026gt; 25.7), we determine 3456 VUSs are likely pathogenic at a probability of 99.0%. Of the 224 genes in the DVD, 166 genes (74%) exhibit one or more missense variants predicted to cause a pathogenic change in protein folding stability. The VUSs prioritized here affect 119 patients (~ 3% of cases) sequenced by the OtoSCOPE targeted panel. Approximately half of these patients previously received an inconclusive report, and reclassification of these VUSs as pathogenic provides a new genetic diagnosis for six patients.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2559"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "23 January 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "11 April 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "22 April 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors have no relevant financial or non-financial interests to disclose."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-1260-4592",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Tollefson",
+      "given": "Mallory R.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Gogal",
+      "given": "Rose A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Weaver",
+      "given": "A. Monique",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schaefer",
+      "given": "Amanda M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Marini",
+      "given": "Robert J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Azaiez",
+      "given": "Hela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kolbe",
+      "given": "Diana L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Donghong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Weaver",
+      "given": "Amy E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Casavant",
+      "given": "Thomas L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Braun",
+      "given": "Terry A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smith",
+      "given": "Richard J. H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schnieders",
+      "given": "Michael J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        22
+      ]
+    ],
+    "date-time": "2023-04-22T13:02:01Z",
+    "timestamp": 1682168521000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        12
+      ]
+    ],
+    "date-time": "2023-05-12T14:11:10Z",
+    "timestamp": 1683900670000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000165",
+      "award": [
+        "1751688"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Division of Chemistry"
+    },
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "000390183"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    },
+    {
+      "DOI": "10.13039/100000057",
+      "award": [
+        "T32GM008365"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of General Medical Sciences"
+    },
+    {
+      "DOI": "10.13039/100000055",
+      "award": [
+        "R01DC012049",
+        "R01DC012049",
+        "R01DC002842",
+        "R01DC017955",
+        "R01DC012049",
+        "R01DC012049"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Deafness and Other Communication Disorders"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        19
+      ]
+    ],
+    "date-time": "2024-03-19T04:57:09Z",
+    "timestamp": 1710824229677
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            22
+          ]
+        ],
+        "date-time": "2023-04-22T00:00:00Z",
+        "timestamp": 1682121600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            22
+          ]
+        ],
+        "date-time": "2023-04-22T00:00:00Z",
+        "timestamp": 1682121600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02559-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-023-02559-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02559-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "819-834",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        6
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1007/s11011-017-0121-2",
+      "author": "AK Agrahari",
+      "doi-asserted-by": "publisher",
+      "first-page": "589",
+      "journal-title": "Metab Brain Dis",
+      "key": "2559_CR1",
+      "unstructured": "Agrahari AK, Sneha P, Doss CGP, Siva R, Zayed H (2018) A profound computational study to prioritize the disease-causing mutations in PRPS1 gene. Metab Brain Dis 33:589–600. https://doi.org/10.1007/s11011-017-0121-2",
+      "volume": "33",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41594-022-00849-w",
+      "author": "M Akdel",
+      "doi-asserted-by": "publisher",
+      "first-page": "1056",
+      "journal-title": "Nat Struct Mol Biol",
+      "key": "2559_CR2",
+      "unstructured": "Akdel M, Pires DEV, Pardo EP, Janes J, Zalevsky AO, Meszaros B, Bryant P, Good LL, Laskowski RA, Pozzati G, Shenoy A, Zhu W, Kundrotas P, Serra VR, Rodrigues CHM, Dunham AS, Burke D, Borkakoti N, Velankar S, Frost A, Basquin J, Lindorff-Larsen K, Bateman A, Kajava AV, Valencia A, Ovchinnikov S, Durairaj J, Ascher DB, Thornton JM, Davey NE, Stein A, Elofsson A, Croll TI, Beltrao P (2022) A structural biology community assessment of AlphaFold2 applications. Nat Struct Mol Biol 29:1056–1067. https://doi.org/10.1038/s41594-022-00849-w",
+      "volume": "29",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/gim.2014.2",
+      "doi-asserted-by": "publisher",
+      "key": "2559_CR3",
+      "unstructured": "Alford RL, Arnos KS, Fox M, Lin JW, Palmer CG, Pandya A, Rehm HL, Robin NH, Scott DA, Yoshinaga-Itano C, Loss AWGoUoGEGftEDoCH, Professional P, Guidelines C (2014) American College of Medical Genetics and Genomics guideline for the clinical evaluation and etiologic diagnosis of hearing loss. Genet Med 16: 347-55. doi: https://doi.org/10.1038/gim.2014.2"
+    },
+    {
+      "DOI": "10.1093/nar/29.1.37",
+      "author": "R Apweiler",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2559_CR4",
+      "unstructured": "Apweiler R, Attwood TK, Bairoch A, Bateman A, Birney E, Biswas M, Bucher P, Cerutti T, Corpet F, Croning MDR, Durbin R, Falquet L, Fleischmann W, Gouzy J, Hermjakob H, Hulo N, Jonassen I, Kahn D, Kanapin A, Karavidopoulou Y, Lopez R, Marx B, Mulder NJ, Oinn TM, Pagni M, Servant F, Sigrist CJA, Zdobnov EM (2001) The InterPro database, an integrated documentation resource for protein families, domains and functional sites. Nucleic Acids Res 29:37–40. https://doi.org/10.1093/nar/29.1.37",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1073/pnas.1209751109",
+      "author": "CL Araya",
+      "doi-asserted-by": "publisher",
+      "first-page": "16858",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "2559_CR5",
+      "unstructured": "Araya CL, Fowler DM, Chen WT, Muniez I, Kelly JW, Fields S (2012) A fundamental protein property, thermodynamic stability, revealed solely from large-scale measurements of protein function. Proc Natl Acad Sci USA 109:16858–16863. https://doi.org/10.1073/pnas.1209751109",
+      "volume": "109",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.08.006",
+      "author": "H Azaiez",
+      "doi-asserted-by": "publisher",
+      "first-page": "484",
+      "journal-title": "Am J Hum Genet",
+      "key": "2559_CR6",
+      "unstructured": "Azaiez H, Booth KT, Ephraim SS, Crone B, Black-Ziegelbein EA, Marini RJ, Shearer AE, Sloan-Heggen CM, Kolbe D, Casavant T, Schnieders MJ, Nishimura C, Braun T, Smith RJH (2018) Genomic landscape and mutational signatures of deafness-associated genes. Am J Hum Genet 103:484–497. https://doi.org/10.1016/j.ajhg.2018.08.006",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1126/science.aac4354",
+      "doi-asserted-by": "crossref",
+      "key": "2559_CR7",
+      "unstructured": "Balchin D, Hayer-Hartl M, Hartl FU (2016) In vivo aspects of protein folding and quality control. Science 353. doi: ARTN aac435410.1126/science.aac4354"
+    },
+    {
+      "DOI": "10.1016/j.mito.2021.03.012",
+      "author": "AH Bereshneh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Mitochondrion",
+      "key": "2559_CR8",
+      "unstructured": "Bereshneh AH, Rezaei Z, Jafarinia E, Rajabi F, Ashrafi MR, Tavasoli AR, Garshasbi M (2021) Crystallographic modeling of the PNPT1:c.1453A \u003e G variant as a cause of mitochondrial dysfunction and autosomal recessive deafness; expanding the neuroimaging and clinical features. Mitochondrion 59:1–7. https://doi.org/10.1016/j.mito.2021.03.012",
+      "volume": "59",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/nar/28.1.235",
+      "author": "HM Berman",
+      "doi-asserted-by": "publisher",
+      "first-page": "235",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2559_CR9",
+      "unstructured": "Berman HM, Westbrook J, Feng Z, Gilliland G, Bhat TN, Weissig H, Shindyalov IN, Bourne PE (2000) The protein data bank. Nucleic Acids Res 28:235–242. https://doi.org/10.1093/nar/28.1.235",
+      "volume": "28",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa977",
+      "author": "M Blum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D344",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2559_CR10",
+      "unstructured": "Blum M, Chang HY, Chuguransky S, Grego T, Kandasaamy S, Mitchell A, Nuka G, Paysan-Lafosse T, Qureshi M, Raj S, Richardson L, Salazar GA, Williams L, Bork P, Bridge A, Gough J, Haft DH, Letunic I, Marchler-Bauer A, Mi HY, Natale DA, Necci M, Orengo CA, Pandurangan AP, Rivoire C, Sigrist CJA, Sillitoe I, Thanki N, Thomas PD, Tosatto SCE, Wu CH, Bateman A, Finn RD (2021) The InterPro protein families and domains database: 20 years on. Nucleic Acids Res 49:D344–D354. https://doi.org/10.1093/nar/gkaa977",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41594-023-00924-w",
+      "author": "N Bouatta",
+      "doi-asserted-by": "publisher",
+      "first-page": "129",
+      "journal-title": "Nat Struct Mol Biol",
+      "key": "2559_CR11",
+      "unstructured": "Bouatta N, AlQuraishi M (2023) Structural biology at the scale of proteomes. Nat Struct Mol Biol 30:129–130. https://doi.org/10.1038/s41594-023-00924-w",
+      "volume": "30",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.62347",
+      "author": "B Bowles",
+      "doi-asserted-by": "publisher",
+      "first-page": "2417",
+      "journal-title": "Am J Med Genet A",
+      "key": "2559_CR12",
+      "unstructured": "Bowles B, Ferrer A, Nishimura CJ, Pinto EVF, Rey T, Leheup B, Sullivan J, Schoch K, Stong N, Agolini E, Cocciadiferro D, Williams A, Cummings A, Loddo S, Genovese S, Roadhouse C, McWalter K, Undiagnosed Diseases N, Wentzensen IM, Li C, Babovic-Vuksanovic D, Lanpher BC, Dentici ML, Ankala A, Hamm JA, Dallapiccola B, Radio FC, Shashi V, Gerard B, Bloch-Zupan A, Smith RJ, Klee EW (2021) TSPEAR variants are primarily associated with ectodermal dysplasia and tooth agenesis but not hearing loss: A novel cohort study. Am J Med Genet A 185:2417–2433. https://doi.org/10.1002/ajmg.a.62347",
+      "volume": "185",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-022-28865-w",
+      "author": "P Bryant",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "2559_CR13",
+      "unstructured": "Bryant P, Pozzati G, Elofsson A (2022) Improved prediction of protein-protein interactions using AlphaFold2. Nat Commun. https://doi.org/10.1038/s41467-022-28865-w",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41598-021-04081-2",
+      "author": "PI Buonfiglio",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Scientific Reports",
+      "key": "2559_CR14",
+      "unstructured": "Buonfiglio PI, Bruque CD, Lotersztein V, Luce L, Giliberto F, Menazzi S, Francipane L, Paoli B, Goldschmidt E, Elgoyhen AB, Dalamon V (2022) Predicting pathogenicity for novel hearing loss mutations based on genetic and protein structure approaches. Scientific Reports. https://doi.org/10.1038/s41598-021-04081-2",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1107/S0907444909042073",
+      "author": "VB Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "12",
+      "journal-title": "Acta Crystallographica Sect D-Biol Crystallography",
+      "key": "2559_CR15",
+      "unstructured": "Chen VB, Arendall WB, Headd JJ, Keedy DA, Immormino RM, Kapral GJ, Murray LW, Richardson JS, Richardson DC (2010) MolProbity: all-atom structure validation for macromolecular crystallography. Acta Crystallographica Sect D-Biol Crystallography 66:12–21. https://doi.org/10.1107/S0907444909042073",
+      "volume": "66",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1021/acs.jcim.0c00745",
+      "author": "HC Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "5301",
+      "journal-title": "J Chem Inf Model",
+      "key": "2559_CR16",
+      "unstructured": "Chen HC, Maia JDC, Radak BK, Hardy DJ, Cai WS, Chipot C, Tajkhorshid E (2020) Boosting free-energy perturbation calculations with GPU-accelerated NAMD. J Chem Inf Model 60:5301–5307. https://doi.org/10.1021/acs.jcim.0c00745",
+      "volume": "60",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkm216",
+      "author": "IW Davis",
+      "doi-asserted-by": "publisher",
+      "first-page": "W375",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2559_CR17",
+      "unstructured": "Davis IW, Leaver-Fay A, Chen VB, Block JN, Kapral GJ, Wang X, Murray LW, Arendall WB, Snoeyink J, Richardson JS, Richardson DC (2007) MolProbity: all-atom contacts and structure validation for proteins and nucleic acids. Nucleic Acids Res 35:W375–W383. https://doi.org/10.1093/nar/gkm216",
+      "volume": "35",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/j.atg.2012.06.002",
+      "author": "CGP Doss",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "journal-title": "Applied Translational Genomics",
+      "key": "2559_CR18",
+      "unstructured": "Doss CGP, Rajith B, Garwasis N, Mathew PR, Raju AS, Apoorva K, William D, Sadhana NR, Himani T, Dike IP (2012) Screening of mutations affecting protein stability and dynamics of FGFR1-A simulation analysis. Applied Translational Genomics 1:37–43. https://doi.org/10.1016/j.atg.2012.06.002",
+      "volume": "1",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.bpj.2020.05.020",
+      "author": "JX Duan",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "journal-title": "Biophys J",
+      "key": "2559_CR19",
+      "unstructured": "Duan JX, Lupyan D, Wang LL (2020) Improving the accuracy of protein thermostability predictions for single point mutations. Biophys J 119:115–127. https://doi.org/10.1016/j.bpj.2020.05.020",
+      "volume": "119",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/ijms21228615",
+      "author": "M Fuxreiter",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Mol Sci",
+      "key": "2559_CR20",
+      "unstructured": "Fuxreiter M (2020) Classifying the binding modes of disordered proteins. Int J Mol Sci. https://doi.org/10.3390/ijms21228615",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.amjoto.2012.11.002",
+      "author": "E Gallant",
+      "doi-asserted-by": "publisher",
+      "first-page": "230",
+      "journal-title": "Am J Otolaryngol",
+      "key": "2559_CR21",
+      "unstructured": "Gallant E, Francey L, Fetting H, Kaur M, Hakonarson H, Clark D, Devoto M, Krantz ID (2013) Novel COCH mutation in a family with autosomal dominant late onset sensorineural hearing impairment and tinnitus. Am J Otolaryngol 34:230–235. https://doi.org/10.1016/j.amjoto.2012.11.002",
+      "volume": "34",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41467-022-29394-2",
+      "author": "M Gao",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "2559_CR22",
+      "unstructured": "Gao M, An DN, Parks JM, Skolnick J (2022) AF2Complex predicts direct physical interactions in multimeric proteins with deep learning. Nat Commun. https://doi.org/10.1038/s41467-022-29394-2",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/nature02263",
+      "author": "AL Goldberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "895",
+      "journal-title": "Nature",
+      "key": "2559_CR23",
+      "unstructured": "Goldberg AL (2003) Protein degradation and protection against misfolded or damaged proteins. Nature 426:895–899. https://doi.org/10.1038/nature02263",
+      "volume": "426",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/S0022-2836(02)00442-4",
+      "author": "R Guerois",
+      "doi-asserted-by": "publisher",
+      "first-page": "369",
+      "journal-title": "J Mol Biol",
+      "key": "2559_CR24",
+      "unstructured": "Guerois R, Nielsen JE, Serrano L (2002) Predicting changes in the stability of proteins and protein complexes: a study of more than 1000 mutations. J Mol Biol 320:369–387. https://doi.org/10.1016/S0022-2836(02)00442-4",
+      "volume": "320",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1111/j.1399-0004.2008.01053.x",
+      "author": "N Hilgert",
+      "doi-asserted-by": "publisher",
+      "first-page": "223",
+      "journal-title": "Clin Genet",
+      "key": "2559_CR25",
+      "unstructured": "Hilgert N, Alasti F, Dieltjens N, Pawlik B, Wollnik B, Uyguner O, Delmaghani S, Weil D, Petit C, Danis E, Yang T, Pandelia E, Petersen MB, Goossens D, Favero JD, Sanati MH, Smith RJH, Van Camp G (2008) Mutation analysis of TMC1 identifies four new mutations and suggests an additional deafness gene at loci DFNA36 and DFNB7/11. Clin Genet 74:223–232. https://doi.org/10.1111/j.1399-0004.2008.01053.x",
+      "volume": "74",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03819-2",
+      "author": "J Jumper",
+      "doi-asserted-by": "publisher",
+      "first-page": "583",
+      "journal-title": "Nature",
+      "key": "2559_CR26",
+      "unstructured": "Jumper J, Evans R, Pritzel A, Green T, Figurnov M, Ronneberger O, Tunyasuvunakool K, Bates R, Zidek A, Potapenko A, Bridgland A, Meyer C, Kohl SAA, Ballard AJ, Cowie A, Romera-Paredes B, Nikolov S, Jain R, Adler J, Back T, Petersen S, Reiman D, Clancy E, Zielinski M, Steinegger M, Pacholska M, Berghammer T, Bodenstein S, Silver D, Vinyals O, Senior AW, Kavukcuoglu K, Kohli P, Hassabis D (2021) Highly accurate protein structure prediction with AlphaFold. Nature 596:583–589. https://doi.org/10.1038/s41586-021-03819-2",
+      "volume": "596",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/gr.229102",
+      "author": "WJ Kent",
+      "doi-asserted-by": "publisher",
+      "first-page": "996",
+      "journal-title": "Genome Res",
+      "key": "2559_CR27",
+      "unstructured": "Kent WJ, Sugnet CW, Furey TS, Roskin KM, Pringle TH, Zahler AM, Haussler D (2002) The human genome browser at UCSC. Genome Res 12:996–1006. https://doi.org/10.1101/gr.229102",
+      "volume": "12",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.gim.2022.03.018",
+      "author": "MM Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1392",
+      "journal-title": "Genet Med",
+      "key": "2559_CR28",
+      "unstructured": "Li MM, Abou Tayoun A, DiStefano M, Pandya A, Rehm HL, Robin NH, Schaefer AM, Yoshinaga-Itano C, Guideli APP (2022) Clinical evaluation and etiologic diagnosis of hearing loss: a clinical practice resource of the American college of medical genetics and genomics (ACMG). Genet Med 24:1392–1406. https://doi.org/10.1016/j.gim.2022.03.018",
+      "volume": "24",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ijporl.2016.09.016",
+      "author": "BJ Liming",
+      "doi-asserted-by": "publisher",
+      "first-page": "251",
+      "journal-title": "Int J Pediatr Otorhinolaryngol",
+      "key": "2559_CR29",
+      "unstructured": "Liming BJ, Carter J, Cheng A, Choo D, Curotta J, Carvalho D, Germiller JA, Hone S, Kenna MA, Loundon N, Preciado D, Schilder A, Reilly BJ, Roman S, Strychowsky J, Triglia JM, Young N, Smith RJ (2016) International pediatric otolaryngology group (IPOG) consensus recommendations: hearing loss in the pediatric patient. Int J Pediatr Otorhinolaryngol 90:251–258. https://doi.org/10.1016/j.ijporl.2016.09.016",
+      "volume": "90",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/srep37298",
+      "doi-asserted-by": "crossref",
+      "key": "2559_CR30",
+      "unstructured": "McCafferty CL, Sergeev YV (2016) In silico mapping of protein unfolding mutations for inherited disease. Scientific Reports ARTN 3729810.1038/srep37298"
+    },
+    {
+      "DOI": "10.1038/s41592-022-01488-1",
+      "author": "M Mirdita",
+      "doi-asserted-by": "publisher",
+      "first-page": "679",
+      "journal-title": "Nat Methods",
+      "key": "2559_CR31",
+      "unstructured": "Mirdita M, Schutze K, Moriwaki Y, Heo L, Ovchinnikov S, Steinegger M (2022) ColabFold: making protein folding accessible to all. Nat Methods 19:679–682. https://doi.org/10.1038/s41592-022-01488-1",
+      "volume": "19",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s12859-019-2923-1",
+      "author": "L Montanucci",
+      "doi-asserted-by": "publisher",
+      "first-page": "335",
+      "journal-title": "BMC Bioinform",
+      "key": "2559_CR32",
+      "unstructured": "Montanucci L, Capriotti E, Frank Y, Ben-Tal N, Fariselli P (2019) DDGun: an untrained method for the prediction of protein stability changes upon single and multiple point variations. BMC Bioinform 20:335. https://doi.org/10.1186/s12859-019-2923-1",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkac325",
+      "author": "L Montanucci",
+      "doi-asserted-by": "publisher",
+      "first-page": "W222",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2559_CR33",
+      "unstructured": "Montanucci L, Capriotti E, Birolo G, Benevenuta S, Pancotti C, Lal D, Fariselli P (2022) DDGun: an untrained predictor of protein stability changes upon amino acid variants. Nucleic Acids Res 50:W222–W227. https://doi.org/10.1093/nar/gkac325",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/nar/gkl190",
+      "author": "V Parthiban",
+      "doi-asserted-by": "publisher",
+      "first-page": "W239",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2559_CR34",
+      "unstructured": "Parthiban V, Gromiha MM, Schomburg D (2006) CUPSAT: prediction of protein stability upon point mutations. Nucleic Acids Res 34:W239–W242. https://doi.org/10.1093/nar/gkl190",
+      "volume": "34",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1021/jp910674d",
+      "author": "JW Ponder",
+      "doi-asserted-by": "publisher",
+      "first-page": "2549",
+      "journal-title": "J Phys Chem B",
+      "key": "2559_CR35",
+      "unstructured": "Ponder JW, Wu C, Ren P, Pande VS, Chodera JD, Schnieders MJ, Haque I, Mobley DL, Lambrecht DS, DiStasio RA Jr, Head-Gordon M, Clark GN, Johnson ME, Head-Gordon T (2010) Current status of the AMOEBA polarizable force field. J Phys Chem B 114:2549–2564. https://doi.org/10.1021/jp910674d",
+      "volume": "114",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gky1016",
+      "author": "P Rentzsch",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2559_CR36",
+      "unstructured": "Rentzsch P, Witten D, Cooper GM, Shendure J, Kircher M (2018) CADD: predicting the deleteriousness of variants throughout the human genome. Nucleic Acids Res. https://doi.org/10.1093/nar/gky1016",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med",
+      "key": "2559_CR37",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, Grody WW, Hegde M, Lyon E, Spector E, Voelkerding K, Rehm HL, Committee ALQA (2015) Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American college of medical genetics and genomics and the association for molecular pathology. Genet Med 17:405–424. https://doi.org/10.1038/gim.2015.30",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/pro.3942",
+      "author": "CHM Rodrigues",
+      "doi-asserted-by": "publisher",
+      "first-page": "60",
+      "journal-title": "Protein Sci",
+      "key": "2559_CR38",
+      "unstructured": "Rodrigues CHM, Pires DEV, Ascher DB (2021) DynaMut2: Assessing changes in stability and flexibility upon single and multiple point missense mutations. Protein Sci 30:60–69. https://doi.org/10.1002/pro.3942",
+      "volume": "30",
+      "year": "2021"
+    },
+    {
+      "key": "2559_CR39",
+      "unstructured": "Schnieders MJ (2021) Force Field X, Version 1.0. https://ffx.biochem.uiowa.edu. 2021"
+    },
+    {
+      "DOI": "10.1177/0194599815591156",
+      "author": "AE Shearer",
+      "doi-asserted-by": "publisher",
+      "first-page": "175",
+      "journal-title": "Otolaryngol Head Neck Surg",
+      "key": "2559_CR40",
+      "unstructured": "Shearer AE, Smith RJ (2015) Massively parallel sequencing for genetic diagnosis of hearing loss: the new standard of care. Otolaryngol Head Neck Surg 153:175–182. https://doi.org/10.1177/0194599815591156",
+      "volume": "153",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1073/pnas.1012989107",
+      "author": "AE Shearer",
+      "doi-asserted-by": "publisher",
+      "first-page": "21104",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "2559_CR41",
+      "unstructured": "Shearer AE, DeLuca AP, Hildebrand MS, Taylor KR, Gurrola J, Scherer S, Scheetz TE, Smith RJH (2010) Comprehensive genetic testing for hereditary hearing loss using massively parallel sequencing. Proc Natl Acad Sci USA 107:21104–21109. https://doi.org/10.1073/pnas.1012989107",
+      "volume": "107",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2013-101749",
+      "author": "AE Shearer",
+      "doi-asserted-by": "publisher",
+      "first-page": "627",
+      "journal-title": "J Med Genet",
+      "key": "2559_CR42",
+      "unstructured": "Shearer AE, Black-Ziegelbein EA, Hildebrand MS, Eppsteiner RW, Ravi H, Joshi S, Guiffre AC, Sloan CM, Happe S, Howard SD, Novak B, DeLuca AP, Taylor KR, Scheetz TE, Braun TA, Casavant TL, Kimberling WJ, LeProust EM, Smith RJH (2013) Advancing genetic testing for deafness with genomic technology. J Med Genet 50:627–634. https://doi.org/10.1136/jmedgenet-2013-101749",
+      "volume": "50",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.09.001",
+      "author": "AE Shearer",
+      "doi-asserted-by": "publisher",
+      "first-page": "445",
+      "journal-title": "Am J Hum Genet",
+      "key": "2559_CR43",
+      "unstructured": "Shearer AE, Eppsteiner RW, Booth KT, Ephraim SS, Gurrola J 2nd, Simpson A, Black-Ziegelbein EA, Joshi S, Ravi H, Giuffre AC, Happe S, Hildebrand MS, Azaiez H, Bayazit YA, Erdal ME, Lopez-Escamez JA, Gazquez I, Tamayo ML, Gelvez NY, Leal GL, Jalas C, Ekstein J, Yang T, Usami S, Kahrizi K, Bazazzadegan N, Najmabadi H, Scheetz TE, Braun TA, Casavant TL, LeProust EM, Smith RJ (2014) Utilizing ethnic-specific differences in minor allele frequency to recategorize reported pathogenic deafness variants. Am J Hum Genet 95:445–453. https://doi.org/10.1016/j.ajhg.2014.09.001",
+      "volume": "95",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1021/ct4003702",
+      "author": "Y Shi",
+      "doi-asserted-by": "publisher",
+      "first-page": "4046",
+      "journal-title": "J Chem Theory Comput",
+      "key": "2559_CR44",
+      "unstructured": "Shi Y, Xia Z, Zhang J, Best R, Wu C, Ponder JW, Ren P (2013) The polarizable atomic multipole-based AMOEBA force field for proteins. J Chem Theory Comput 9:4046–4063. https://doi.org/10.1021/ct4003702",
+      "volume": "9",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1097/Mop.0000000000000410",
+      "author": "CM Sloan-Heggen",
+      "doi-asserted-by": "publisher",
+      "first-page": "705",
+      "journal-title": "Curr Opin Pediatr",
+      "key": "2559_CR45",
+      "unstructured": "Sloan-Heggen CM, Smith RJH (2016) Navigating genetic diagnostics in patients with hearing loss. Curr Opin Pediatr 28:705–712. https://doi.org/10.1097/Mop.0000000000000410",
+      "volume": "28",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00439-016-1648-8",
+      "author": "CM Sloan-Heggen",
+      "doi-asserted-by": "publisher",
+      "first-page": "441",
+      "journal-title": "Hum Genet",
+      "key": "2559_CR46",
+      "unstructured": "Sloan-Heggen CM, Bierer AO, Shearer AE, Kolbe DL, Nishimura CJ, Frees KL, Ephraim SS, Shibata SB, Booth KT, Campbell CA, Ranum PT, Weaver AE, Black-Ziegelbein EA, Wang D, Azaiez H, Smith RJH (2016) Comprehensive genetic testing in the clinical evaluation of 1119 patients with hearing loss. Hum Genet 135:441–450. https://doi.org/10.1007/s00439-016-1648-8",
+      "volume": "135",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(05)71047-3",
+      "author": "RJ Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "879",
+      "journal-title": "Lancet",
+      "key": "2559_CR47",
+      "unstructured": "Smith RJ, Bale JF Jr, White KR (2005) Sensorineural hearing loss in children. Lancet 365:879–890. https://doi.org/10.1016/S0140-6736(05)71047-3",
+      "volume": "365",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.jmb.2013.07.014",
+      "doi-asserted-by": "publisher",
+      "key": "2559_CR48",
+      "unstructured": "Stefl S, Nishi H, Petukh M, Panchenko AR, Alexov E (2013) Molecular mechanisms of disease-causing missense mutations. Journal of Molecular Biology 425: 3919-3936. https://doi.org/10.1016/j.jmb.2013.07.014"
+    },
+    {
+      "DOI": "10.1016/j.tibs.2019.01.003",
+      "author": "A Stein",
+      "doi-asserted-by": "publisher",
+      "first-page": "575",
+      "journal-title": "Trends Biochem Sci",
+      "key": "2559_CR49",
+      "unstructured": "Stein A, Fowler DM, Hartmann-Petersen R, Lindorff-Larsen K (2019) Biophysical and mechanistic models for disease-causing protein variants. Trends Biochem Sci 44:575–588. https://doi.org/10.1016/j.tibs.2019.01.003",
+      "volume": "44",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/hmg/dds292",
+      "author": "K Takano",
+      "doi-asserted-by": "publisher",
+      "first-page": "4497",
+      "journal-title": "Hum Mol Genet",
+      "key": "2559_CR50",
+      "unstructured": "Takano K, Liu D, Tarpey P, Gallant E, Lam A, Witham S, Alexov E, Chaubey A, Stevenson RE, Schwartz CE, Board PG, Dulhunty AF (2012) An X-linked channelopathy with cardiomegaly due to a CLIC2 mutation enhancing ryanodine receptor channel activity. Hum Mol Genet 21:4497–4507. https://doi.org/10.1093/hmg/dds292",
+      "volume": "21",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/prot.22786",
+      "author": "K Talley",
+      "doi-asserted-by": "publisher",
+      "first-page": "2699",
+      "journal-title": "Proteins",
+      "key": "2559_CR51",
+      "unstructured": "Talley K, Alexov E (2010) On the pH-optimum of activity and stability of proteins. Proteins 78:2699–2706. https://doi.org/10.1002/prot.22786",
+      "volume": "78",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.bpj.2008.12.3904",
+      "author": "SL Teng",
+      "doi-asserted-by": "publisher",
+      "first-page": "2178",
+      "journal-title": "Biophys J",
+      "key": "2559_CR52",
+      "unstructured": "Teng SL, Madej T, Panchenko A, Alexov E (2009) Modeling effects of human single nucleotide polymorphisms on protein-protein interactions. Biophys J 96:2178–2188. https://doi.org/10.1016/j.bpj.2008.12.3904",
+      "volume": "96",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.bpj.2019.06.030",
+      "author": "MR Tollefson",
+      "doi-asserted-by": "publisher",
+      "first-page": "602",
+      "journal-title": "Biophys J",
+      "key": "2559_CR53",
+      "unstructured": "Tollefson MR, Litman JM, Qi G, O’Connell CE, Wipfler MJ, Marini RJ, Bernabe HV, Tollefson WTA, Braun TA, Casavant TL, Smith RJH, Schnieders MJ (2019) Structural insights into hearing loss genetics from polarizable protein repacking. Biophys J 117:602–612. https://doi.org/10.1016/j.bpj.2019.06.030",
+      "volume": "117",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03828-1",
+      "author": "K Tunyasuvunakool",
+      "doi-asserted-by": "publisher",
+      "first-page": "590",
+      "journal-title": "Nature",
+      "key": "2559_CR54",
+      "unstructured": "Tunyasuvunakool K, Adler J, Wu Z, Green T, Zielinski M, Zidek A, Bridgland A, Cowie A, Meyer C, Laydon A, Velankar S, Kleywegt GJ, Bateman A, Evans R, Pritzel A, Figurnov M, Ronneberger O, Bates R, Kohl SAA, Potapenko A, Ballard AJ, Romera-Paredes B, Nikolov S, Jain R, Clancy E, Reiman D, Petersen S, Senior AW, Kavukcuoglu K, Birney E, Kohli P, Jumper J, Hassabis D (2021) Highly accurate protein structure prediction for the human proteome. Nature 596:590–596. https://doi.org/10.1038/s41586-021-03828-1",
+      "volume": "596",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/prot.23065",
+      "author": "S Witham",
+      "doi-asserted-by": "publisher",
+      "first-page": "2444",
+      "journal-title": "Proteins",
+      "key": "2559_CR55",
+      "unstructured": "Witham S, Takano K, Schwartz C, Alexov E (2011) A missense mutation in CLIC2 associated with intellectual disability is predicted by in silico modeling to affect protein stability and dynamics. Proteins 79:2444–2454. https://doi.org/10.1002/prot.23065",
+      "volume": "79",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/pro.4379",
+      "author": "R Yin",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Protein Science",
+      "key": "2559_CR56",
+      "unstructured": "Yin R, Feng BY, Varshney A, Pierce BG (2022) Benchmarking AlphaFold for protein complex modeling reveals accuracy determinants. Protein Science. https://doi.org/10.1002/pro.4379",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/humu.21310",
+      "author": "Z Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1043",
+      "journal-title": "Hum Mutat",
+      "key": "2559_CR57",
+      "unstructured": "Zhang Z, Teng SL, Wang LJ, Schwartz CE, Alexov E (2010) Computational analysis of missense mutations causing snyder-robinson syndrome. Hum Mutat 31:1043–1049. https://doi.org/10.1002/humu.21310",
+      "volume": "31",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0020373",
+      "author": "Z Zhang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Plos One",
+      "key": "2559_CR58",
+      "unstructured": "Zhang Z, Norris J, Schwartz C, Alexov E (2011) In silico and in vitro investigations of the mutability of disease-causing missense mutation sites in spermine synthase. Plos One. https://doi.org/10.1371/journal.pone.0020373",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1110/ps.0217002",
+      "author": "H Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "2714",
+      "journal-title": "Protein Sci",
+      "key": "2559_CR59",
+      "unstructured": "Zhou H, Zhou Y (2002) Distance-scaled, finite ideal-gas reference state improves structure-derived potentials of mean force for structure selection and stability prediction. Protein Sci 11:2714–2726. https://doi.org/10.1110/ps.0217002",
+      "volume": "11",
+      "year": "2002"
+    }
+  ],
+  "reference-count": 59,
+  "references-count": 59,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2508462/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-023-02559-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Assessing variants of uncertain significance implicated in hearing loss using a comprehensive deafness proteome"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

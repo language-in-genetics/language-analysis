@@ -1,0 +1,375 @@
+{
+  "DOI": "10.1002/gepi.20180",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.20180",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMissing single nucleotide polymorphisms (SNPs) are quite common in genetic association studies. Subjects with missing SNPs are often discarded in analyses, which may seriously undermine the inference of SNP‐disease association. In this article, we develop two haplotype‐based imputation approaches and one tree‐based imputation approach for association studies. The emphasis is to evaluate the impact of imputation on parameter estimation, compared to the standard practice of ignoring missing data. Haplotype‐based approaches build on haplotype reconstruction by the expectation‐maximization (EM) algorithm or a weighted EM (WEM) algorithm, depending on whether case‐control status is taken into account. The tree‐based approach uses a Gibbs sampler to iteratively sample from a full conditional distribution, which is obtained from the classification and regression tree (CART) algorithm. We employ a standard multiple imputation procedure to account for the uncertainty of imputation. We apply the methods to simulated data as well as a case‐control study on developmental dyslexia. Our results suggest that imputation generally improves efficiency over the standard practice of ignoring missing data. The tree‐based approach performs comparably well as haplotype‐based approaches, but the former has a computational advantage. The WEM approach yields the smallest bias at a price of increased variance. \u003cjats:italic\u003eGenet. Epidemiol.\u003c/jats:italic\u003e © 2006 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.20180"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Dai",
+      "given": "James Y.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Ruczinski",
+      "given": "Ingo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "LeBlanc",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kooperberg",
+      "given": "Charles",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2006,
+        9,
+        19
+      ]
+    ],
+    "date-time": "2006-09-19T20:57:13Z",
+    "timestamp": 1158699433000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        15
+      ]
+    ],
+    "date-time": "2023-11-15T14:03:01Z",
+    "timestamp": 1700056981000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        21
+      ]
+    ],
+    "date-time": "2023-11-21T07:02:51Z",
+    "timestamp": 1700550171489
+  },
+  "is-referenced-by-count": 38,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2006,
+        9,
+        19
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2006,
+            9,
+            19
+          ]
+        ],
+        "date-time": "2006-09-19T00:00:00Z",
+        "timestamp": 1158624000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.20180",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.20180",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "690-702",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2006,
+        9,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2006,
+        9,
+        19
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2006,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "key": "e_1_2_1_2_1",
+      "unstructured": "Affymetrix Corporation.2006. BRLMM: an improved genotype calling method for the GeneChip®human mapping 500 K array set.http://www.affymetrix.com/support/technical/product_up dates/brlmm_algorithm.affx"
+    },
+    {
+      "DOI": "10.1086/430454",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_3_1"
+    },
+    {
+      "DOI": "10.1038/ng1090",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_4_1"
+    },
+    {
+      "author": "Breiman L",
+      "key": "e_1_2_1_5_1",
+      "volume-title": "Classification and Regression Trees",
+      "year": "1984"
+    },
+    {
+      "DOI": "10.1007/s10549-005-9045-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_7_1"
+    },
+    {
+      "DOI": "10.1086/429131",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_8_1"
+    },
+    {
+      "DOI": "10.1086/338007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_9_1"
+    },
+    {
+      "DOI": "10.1073/pnas.192172299",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_10_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bti275",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_11_1"
+    },
+    {
+      "DOI": "10.1086/380204",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "article-title": "Maximum‐likelihood estimation of molecular haplotype frequencies in a diploid population",
+      "author": "Excoffier L",
+      "first-page": "921",
+      "journal-title": "Mol Biol Evol",
+      "key": "e_1_2_1_13_1",
+      "volume": "12",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a117592",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4757-3462-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_15_1"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-04-3247",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_16_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20061",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_17_1"
+    },
+    {
+      "DOI": "10.1159/000071811",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_18_1"
+    },
+    {
+      "DOI": "10.1086/344347",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_19_1"
+    },
+    {
+      "author": "Little RJA",
+      "key": "e_1_2_1_20_1",
+      "volume-title": "Statistical Analysis With Missing Data",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1086/338446",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_21_1"
+    },
+    {
+      "DOI": "10.1086/344207",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_22_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bti741",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "article-title": "Linkage strategies for genetically complex traits. I. Multi‐locus models",
+      "author": "Risch N",
+      "first-page": "222",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_24_1",
+      "volume": "46",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1038/35015718",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_25_1"
+    },
+    {
+      "DOI": "10.1198/1061860032238",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_26_1"
+    },
+    {
+      "DOI": "10.1201/9781439821862",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_27_1"
+    },
+    {
+      "DOI": "10.1086/338688",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_28_1"
+    },
+    {
+      "DOI": "10.1086/319501",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_29_1"
+    },
+    {
+      "DOI": "10.1086/428594",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_30_1"
+    },
+    {
+      "DOI": "10.1159/000073202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_31_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1987.10478458",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_32_1"
+    },
+    {
+      "author": "Therneau TM",
+      "key": "e_1_2_1_33_1",
+      "volume-title": "Technical Report Series no. 61",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1002/1098-2272(200012)19:4\u003c323::AID-GEPI4\u003e3.0.CO;2-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_34_1"
+    },
+    {
+      "DOI": "10.1086/375140",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_35_1"
+    }
+  ],
+  "reference-count": 34,
+  "references-count": 34,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.20180"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Imputation methods to improve inference in SNP association studies"
+  ],
+  "type": "journal-article",
+  "volume": "30"
+}

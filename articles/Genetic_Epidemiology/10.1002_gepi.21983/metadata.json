@@ -1,0 +1,741 @@
+{
+  "DOI": "10.1002/gepi.21983",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21983",
+  "abstract": "\u003cjats:title\u003eABSTRACT\u003c/jats:title\u003e\u003cjats:p\u003eRare variants (RVs) have been shown to be significant contributors to complex disease risk. By definition, these variants have very low minor allele frequencies and traditional single‐marker methods for statistical analysis are underpowered for typical sequencing study sample sizes. Multimarker burden‐type approaches attempt to identify aggregation of RVs across case‐control status by analyzing relatively small partitions of the genome, such as genes. However, it is generally the case that the aggregative measure would be a mixture of causal and neutral variants, and these omnibus tests do not directly provide any indication of which RVs may be driving a given association. Recently, Bayesian variable selection approaches have been proposed to identify RV associations from a large set of RVs under consideration. Although these approaches have been shown to be powerful at detecting associations at the RV level, there are often computational limitations on the total quantity of RVs under consideration and compromises are necessary for large‐scale application. Here, we propose a computationally efficient alternative formulation of this method using a probit regression approach specifically capable of simultaneously analyzing hundreds to thousands of RVs. We evaluate our approach to detect causal variation on simulated data and examine sensitivity and specificity in instances of high RV dimensionality as well as apply it to pathway‐level RV analysis results from a prostate cancer (PC) risk case‐control sequencing study. Finally, we discuss potential extensions and future directions of this work.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21983"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biomedical Statistics and Informatics Department of Health Sciences Research Mayo Clinic  Rochester Minnesota United States of America"
+        }
+      ],
+      "family": "Larson",
+      "given": "Nicholas B.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biomedical Statistics and Informatics Department of Health Sciences Research Mayo Clinic  Rochester Minnesota United States of America"
+        }
+      ],
+      "family": "McDonnell",
+      "given": "Shannon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine University of Utah School of Medicine  Salt Lake City Utah United States of America"
+        }
+      ],
+      "family": "Albright",
+      "given": "Lisa Cannon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine University of Utah School of Medicine  Salt Lake City Utah United States of America"
+        }
+      ],
+      "family": "Teerlink",
+      "given": "Craig",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Fred Hutchinson Cancer Research Center  Seattle Washington United States of America"
+        }
+      ],
+      "family": "Stanford",
+      "given": "Janet",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "National Human Genome Research Institute  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Ostrander",
+      "given": "Elaine A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Urology Johns Hopkins Hospital  Baltimore Maryland United States of America"
+        }
+      ],
+      "family": "Isaacs",
+      "given": "William B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "NorthShore University HealthSystem Research Institute  Chicago Illinois United States of America"
+        }
+      ],
+      "family": "Xu",
+      "given": "Jianfeng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Internal Medicine University of Michigan Medical School  Ann Arbor Michigan United States of America"
+        },
+        {
+          "name": "Department of Urology University of Michigan Medical School  Ann Arbor Michigan United States of America"
+        }
+      ],
+      "family": "Cooney",
+      "given": "Kathleen A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina  Chapel Hill North Carolina United States of America"
+        }
+      ],
+      "family": "Lange",
+      "given": "Ethan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medical Biochemistry and Genetics Institute of Biomedicine University of Turku  Finland"
+        }
+      ],
+      "family": "Schleutker",
+      "given": "Johanna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Integrated Cancer Genomics Division The Translational Genomics Research Institute  Phoenix Arizona United States of America"
+        }
+      ],
+      "family": "Carpten",
+      "given": "John D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Wayne State University  Detroit Michigan United States of America"
+        }
+      ],
+      "family": "Powell",
+      "given": "Isaac",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Statistical Genetics Section National Human Genome Research Institute  Bethesda Maryland United States of America"
+        }
+      ],
+      "family": "Bailey‐Wilson",
+      "given": "Joan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "CeRePP Hopital Tenon  Paris France"
+        }
+      ],
+      "family": "Cussenot",
+      "given": "Olivier",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "CeRePP Hopital Tenon  Paris France"
+        }
+      ],
+      "family": "Cancel‐Tassin",
+      "given": "Geraldine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cancer Epidemiology Centre Cancer Council Victoria University of Melbourne  Melbourne Australia"
+        },
+        {
+          "name": "Centre for Epidemiology and Biostatistics School of Population and Global Health University of Melbourne  Melbourne Australia"
+        }
+      ],
+      "family": "Giles",
+      "given": "Graham",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cancer Epidemiology Centre Cancer Council Victoria University of Melbourne  Melbourne Australia"
+        },
+        {
+          "name": "Centre for Epidemiology and Biostatistics School of Population and Global Health University of Melbourne  Melbourne Australia"
+        }
+      ],
+      "family": "MacInnis",
+      "given": "Robert",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Urology University of Ulm  Ulm Germany"
+        }
+      ],
+      "family": "Maier",
+      "given": "Christiane",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Health Research and Policy Stanford University  Stanford California United States of America"
+        }
+      ],
+      "family": "Whittemore",
+      "given": "Alice S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Urology University of Southern California  Los Angeles California United States of America"
+        }
+      ],
+      "family": "Hsieh",
+      "given": "Chih‐Lin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medical Epidemiology and Biostatistics Karolinska Institutet  Stockholm Sweden"
+        }
+      ],
+      "family": "Wiklund",
+      "given": "Fredrik",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Feinberg School of Medicine, Northwestern University  Chicago Illinois United States of America"
+        }
+      ],
+      "family": "Catolona",
+      "given": "William J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Oncology and Human Genetics Montreal General Hospital  Montreal QC Canada"
+        },
+        {
+          "name": "Department of Human Genetics Montreal General Hospital  Montreal QC Canada"
+        }
+      ],
+      "family": "Foulkes",
+      "given": "William",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics LSU Health Sciences Center  New Orleans Louisiana United States of America"
+        }
+      ],
+      "family": "Mandal",
+      "given": "Diptasri",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics and Epidemiology Institute of Cancer Research  Sutton, Surrey United Kingdom"
+        }
+      ],
+      "family": "Eeles",
+      "given": "Rosalind",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics and Epidemiology Institute of Cancer Research  Sutton, Surrey United Kingdom"
+        }
+      ],
+      "family": "Kote‐Jarai",
+      "given": "Zsofia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Pediatric and Adolescent Medicine Mayo Clinic  Rochester Minnesota United States of America"
+        }
+      ],
+      "family": "Ackerman",
+      "given": "Michael J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Pediatric and Adolescent Medicine Mayo Clinic  Rochester Minnesota United States of America"
+        }
+      ],
+      "family": "Olson",
+      "given": "Timothy M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Neurology Mayo Clinic  Rochester Minnesota United States of America"
+        }
+      ],
+      "family": "Klein",
+      "given": "Christopher J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Laboratory Medicine and Pathology Mayo Clinic  Rochester Minnesota United States of America"
+        }
+      ],
+      "family": "Thibodeau",
+      "given": "Stephen N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biomedical Statistics and Informatics Department of Health Sciences Research Mayo Clinic  Rochester Minnesota United States of America"
+        }
+      ],
+      "family": "Schaid",
+      "given": "Daniel J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2016,
+        6,
+        17
+      ]
+    ],
+    "date-time": "2016-06-17T08:47:53Z",
+    "timestamp": 1466153273000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2023-10-03T18:55:46Z",
+    "timestamp": 1696359346000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "GM065450"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000054",
+      "award": [
+        "U01 CA 89600"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Cancer Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2023-10-04T09:18:53Z",
+    "timestamp": 1696411133700
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2016,
+        6,
+        17
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2016,
+            6,
+            17
+          ]
+        ],
+        "date-time": "2016-06-17T00:00:00Z",
+        "timestamp": 1466121600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21983",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21983",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "461-469",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2016,
+        6,
+        17
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2016,
+        6,
+        17
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2016,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1080/01621459.1993.10476321",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1038/nrg2867",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1214/11-BA607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1038/nrg2779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1038/ng.806",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20643",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1992.10475235",
+      "article-title": "Bayesian‐analysis of constrained parameter and truncated data problems using Gibbs sampling",
+      "author": "Gelfand AE",
+      "doi-asserted-by": "crossref",
+      "first-page": "523",
+      "issue": "418",
+      "journal-title": "Am Stat Assoc",
+      "key": "e_1_2_6_8_1",
+      "volume": "87",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1093/biomet/57.1.97",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.3390/ijms16010924",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "author": "Jeffreys H",
+      "key": "e_1_2_6_11_1",
+      "volume-title": "Theory of probability",
+      "year": "1961"
+    },
+    {
+      "DOI": "10.1214/13-STS423",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1093/nar/gki072",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1002/0470857897.ch8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1159/000363660",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/19.1.90",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1214/14-BA873",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1002/sim.4406",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0069633",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1994.10476829",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1093/biomet/83.3.681",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21772",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "DOI": "10.1101/gr.107524.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001322",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1126/science.1217876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1214/09-BA403",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0049445",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1086/321272",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20613",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_31_1"
+    },
+    {
+      "DOI": "10.1002/sim.5888",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1016/j.spl.2010.10.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.2307/2289463",
+      "article-title": "The calculation of posterior distributions by data augmentation—rejoinder",
+      "author": "Tanner MA",
+      "doi-asserted-by": "crossref",
+      "first-page": "548",
+      "issue": "398",
+      "journal-title": "J Am Stat Assoc",
+      "key": "e_1_2_6_34_1",
+      "volume": "82",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1038/mp.2013.68",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_35_1"
+    },
+    {
+      "DOI": "10.1002/0471250953.bi1110s43",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1214/09-AOAS322",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21728",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp638",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.2307/2987589",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    }
+  ],
+  "reference-count": 41,
+  "references-count": 41,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21983"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Post hoc Analysis for Detecting Individual Rare Variant Risk Associations Using Probit Regression Bayesian Variable Selection Methods in Case‐Control Sequencing Studies"
+  ],
+  "type": "journal-article",
+  "volume": "40"
+}

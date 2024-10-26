@@ -1,0 +1,451 @@
+{
+  "DOI": "10.1002/gepi.20142",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.20142",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eA popular approach for testing and estimating genotype and haplotype effects associated with a disease outcome is to conduct a population‐based case/control study, in which haplotypes are not directly observed but may be inferred probabilistically from unphased genotype data. A variety of methods exist to analyse the resulting data while accounting for the uncertainty in haplotype assignment, but most focus on the issue of testing the global null hypothesis that no genotype or haplotype effects exist. A more interesting question, once a region of disease association has been identified, is to estimate the relevant genotypic or haplotypic effects and to perform tests of complex null hypotheses such as the hypothesis that some loci, but not others, are associated with disease. Here I examine the assumptions behind, and the performance of, two classes of methods for addressing this question. The first is a weighted regression approach in which posterior probabilities of haplotype assignments are used as weights in a logistic regression analysis, generating a test based on either a weighted pseudo‐likelihood, or a weighted log‐likelihood. The second is a multiple imputation approach using either an improper procedure in which the posterior probabilities are used to generate replicate imputed data sets, or a proper data augmentation procedure. I compare these approaches to a simple expectation substitution (haplotype trend regression) approach. In simulations, all methods gave unbiased parameter estimation but the weighted pseudo‐likelihood, expectation substitution and multiple imputation methods had superior confidence interval coverage. For the weighted pseudo‐likelihood and expectation substitution methods it was necessary to estimate posterior haplotype assignment probabilities using the combined case/control data, whereas for the multiple imputation approaches it was necessary to estimate these probabilities in the case and control groups separately. Overall, multiple imputation was easiest approach to implement in standard statistical software and to extend to more complex models such as those that include gene‐gene or gene‐environment interactions. \u003cjats:italic\u003eGenet. Epidemiol.\u003c/jats:italic\u003e 2006. © 2006 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.20142"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Cordell",
+      "given": "Heather J.",
+      "sequence": "first"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2006,
+        2,
+        22
+      ]
+    ],
+    "date-time": "2006-02-22T20:17:13Z",
+    "timestamp": 1140639433000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2023-09-28T14:26:24Z",
+    "timestamp": 1695911184000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        15
+      ]
+    ],
+    "date-time": "2023-11-15T06:00:54Z",
+    "timestamp": 1700028054976
+  },
+  "is-referenced-by-count": 37,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2006,
+        2,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2006,
+            2,
+            22
+          ]
+        ],
+        "date-time": "2006-02-22T00:00:00Z",
+        "timestamp": 1140566400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.20142",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.20142",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "259-275",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2006,
+        2,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2006,
+        2,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2006,
+        4
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.2202/1544-6115.1113",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_2_1"
+    },
+    {
+      "author": "Breslow NE",
+      "key": "e_1_2_1_3_1",
+      "volume-title": "Statistical Methods in Cancer Research. Volume I—The Analysis of Case–Control Studies",
+      "year": "1980"
+    },
+    {
+      "author": "Breslow NE",
+      "key": "e_1_2_1_4_1",
+      "volume-title": "Statistical Methods in Cancer Research. Volume II—The Design and Analysis of Cohort Studies",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1159/000081447",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_5_1"
+    },
+    {
+      "DOI": "10.1177/1536867X0300300302",
+      "article-title": "Tools for analysing multiple imputed datasets",
+      "author": "Carlin JB",
+      "doi-asserted-by": "crossref",
+      "first-page": "215",
+      "journal-title": "Stata J",
+      "key": "e_1_2_1_6_1",
+      "volume": "3",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1159/000073729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_7_1"
+    },
+    {
+      "DOI": "10.1086/302577",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_8_1"
+    },
+    {
+      "author": "Clayton D",
+      "key": "e_1_2_1_9_1",
+      "volume-title": "Statistical Models in Epidemiology",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1002/gepi.20032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_10_1"
+    },
+    {
+      "DOI": "10.1086/346117",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_11_1"
+    },
+    {
+      "DOI": "10.1093/hmg/11.20.2463",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "DOI": "10.1086/338007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_13_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10307",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "article-title": "Missing data in association studies: a multiple imputation approach applied to case/control and family data",
+      "author": "Croiseau P",
+      "first-page": "241",
+      "journal-title": "Genet Epidemiol",
+      "key": "e_1_2_1_15_1",
+      "volume": "29",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/ng825",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_16_1"
+    },
+    {
+      "article-title": "Maximum likelihood from incomplete data via the EM algorithm (with discussion)",
+      "author": "Dempster AP",
+      "first-page": "1",
+      "journal-title": "J R Stat Soc B",
+      "key": "e_1_2_1_17_1",
+      "volume": "39",
+      "year": "1977"
+    },
+    {
+      "DOI": "10.1086/302915",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_18_1"
+    },
+    {
+      "DOI": "10.1086/422174",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_19_1"
+    },
+    {
+      "DOI": "10.1086/380204",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_20_1"
+    },
+    {
+      "DOI": "10.1086/303069",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_21_1"
+    },
+    {
+      "author": "Huber P",
+      "first-page": "221",
+      "key": "e_1_2_1_22_1",
+      "volume-title": "Proceedings of the Fifth Berkeley Symposium in Mathematical Statistics and Probability",
+      "year": "1967"
+    },
+    {
+      "DOI": "10.1002/gepi.20061",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "DOI": "10.1159/000071811",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_24_1"
+    },
+    {
+      "DOI": "10.2307/2290525",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_25_1"
+    },
+    {
+      "DOI": "10.1002/9781119013563",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_26_1"
+    },
+    {
+      "DOI": "10.1038/ng1537",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_27_1"
+    },
+    {
+      "DOI": "10.1093/biomet/80.2.267",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_28_1"
+    },
+    {
+      "DOI": "10.1086/380415",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_29_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_30_1"
+    },
+    {
+      "DOI": "10.1086/339271",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_31_1"
+    },
+    {
+      "DOI": "10.1093/biomet/66.3.403",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_32_1"
+    },
+    {
+      "DOI": "10.1002/9780470316696",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_33_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20020",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_34_1"
+    },
+    {
+      "DOI": "10.1201/9781439821862",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_35_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20037",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_36_1"
+    },
+    {
+      "DOI": "10.1086/338688",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_37_1"
+    },
+    {
+      "DOI": "10.1023/B:BEGE.0000013734.39266.a3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_38_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20085",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_39_1"
+    },
+    {
+      "DOI": "10.1086/379378",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_40_1"
+    },
+    {
+      "DOI": "10.1086/319501",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_41_1"
+    },
+    {
+      "DOI": "10.1159/000073202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_42_1"
+    },
+    {
+      "DOI": "10.1046/j.1469-1809.2003.00021.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_43_1"
+    },
+    {
+      "DOI": "10.1093/genetics/140.1.403",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_44_1"
+    },
+    {
+      "DOI": "10.1046/j.1365-294X.2003.02041.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_45_1"
+    },
+    {
+      "DOI": "10.1038/nature02168",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_46_1"
+    },
+    {
+      "DOI": "10.1086/432962",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_47_1"
+    },
+    {
+      "DOI": "10.1046/j.1529-8817.2003.00085.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_48_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20063",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_49_1"
+    },
+    {
+      "DOI": "10.1038/nrg1522",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_50_1"
+    },
+    {
+      "DOI": "10.2307/1912526",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_51_1"
+    },
+    {
+      "DOI": "10.1159/000057986",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_52_1"
+    }
+  ],
+  "reference-count": 51,
+  "references-count": 51,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.20142"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Estimation and testing of genotype and haplotype effects in case‐control studies: comparison of weighted regression and multiple imputation procedures"
+  ],
+  "type": "journal-article",
+  "volume": "30"
+}

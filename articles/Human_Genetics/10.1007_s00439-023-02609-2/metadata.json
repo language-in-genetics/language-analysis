@@ -1,0 +1,812 @@
+{
+  "DOI": "10.1007/s00439-023-02609-2",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-023-02609-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eEpisignatures are popular tools for the diagnosis of rare neurodevelopmental disorders. They are commonly based on a set of differentially methylated CpGs used in combination with a support vector machine model. DNA methylation (DNAm) data often include missing values due to changes in data generation technology and batch effects. While many normalization methods exist for DNAm data, their impact on episignature performance have never been assessed. In addition, technologies to quantify DNAm evolve quickly and this may lead to poor transposition of existing episignatures generated on deprecated array versions to new ones. Indeed, probe removal between array versions, technologies or during preprocessing leads to missing values. Thus, the effect of missing data on episignature performance must also be carefully evaluated and addressed through imputation or an innovative approach to episignatures design. In this paper, we used data from patients suffering from Kabuki and Sotos syndrome to evaluate the influence of normalization methods, classification models and missing data on the prediction performances of two existing episignatures. We compare how six popular normalization methods for methylarray data affect episignature classification performances in Kabuki and Sotos syndromes and provide best practice suggestions when building new episignatures. In this setting, we show that Illumina, Noob or Funnorm normalization methods achieved higher classification performances on the testing sets compared to Quantile, Raw and Swan normalization methods. We further show that penalized logistic regression and support vector machines perform best in the classification of Kabuki and Sotos syndrome patients. Then, we describe a new paradigm to build episignatures based on the detection of differentially methylated regions (DMRs) and evaluate their performance compared to classical differentially methylated cytosines (DMCs)-based episignatures in the presence of missing data. We show that the performance of classical DMC-based episignatures suffers from the presence of missing data more than the DMR-based approach. We present a comprehensive evaluation of how the normalization of DNA methylation data affects episignature performance, using three popular classification models. We further evaluate how missing data affect those models’ predictions. Finally, we propose a novel methodology to develop episignatures based on differentially methylated regions identification and show how this method slightly outperforms classical episignatures in the presence of missing data.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2609"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "28 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "10 October 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "27 October 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The study includes peripheral blood from 26 samples collected at the Erasme Hospital Genetic Center (Brussels, Belgium). Informed consent was obtained from all research participants according to the protocols Q2015/003 and P2019/436 approved by the Ethics committee of the Erasme Hospital."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Not applicable."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Giuili",
+      "given": "Edoardo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Grolaux",
+      "given": "Robin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Macedo",
+      "given": "Catarina Z. N. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Desmyter",
+      "given": "Laurence",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pichon",
+      "given": "Bruno",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Neuens",
+      "given": "Sebastian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vilain",
+      "given": "Catheline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Olsen",
+      "given": "Catharina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Van Dooren",
+      "given": "Sonia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smits",
+      "given": "Guillaume",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Defrance",
+      "given": "Matthieu",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        27
+      ]
+    ],
+    "date-time": "2023-10-27T14:02:11Z",
+    "timestamp": 1698415331000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        25
+      ]
+    ],
+    "date-time": "2023-11-25T13:03:30Z",
+    "timestamp": 1700917410000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100002661",
+      "award": [
+        "1.E.013.20F"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Fonds De La Recherche Scientifique - FNRS"
+    },
+    {
+      "DOI": "10.13039/501100023272",
+      "award": [
+        "PFS-11e IgenCare"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Innoviris Foundation"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        25
+      ]
+    ],
+    "date-time": "2024-04-25T08:27:47Z",
+    "timestamp": 1714033667248
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "12",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        27
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "12",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            27
+          ]
+        ],
+        "date-time": "2023-10-27T00:00:00Z",
+        "timestamp": 1698364800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            27
+          ]
+        ],
+        "date-time": "2023-10-27T00:00:00Z",
+        "timestamp": 1698364800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02609-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-023-02609-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02609-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1721-1735",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        27
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        27
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1007/3-540-44503-X_27",
+      "author": "CC Aggarwal",
+      "doi-asserted-by": "publisher",
+      "first-page": "420",
+      "key": "2609_CR1",
+      "unstructured": "Aggarwal CC, Hinneburg A, Keim DA (2001) On the surprising behavior of distance metrics in high dimensional space. In: Van den Bussche J, Vianu V (eds) Database theory—ICDT 2001. Springer, New York, pp 420–434. https://doi.org/10.1007/3-540-44503-X_27",
+      "volume-title": "Database theory—ICDT 2001",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.01.019",
+      "author": "E Aref-Eshghi",
+      "doi-asserted-by": "publisher",
+      "first-page": "356",
+      "journal-title": "Am J Hum Genet",
+      "key": "2609_CR2",
+      "unstructured": "Aref-Eshghi E et al (2020) Evaluation of DNA methylation episignatures for diagnosis and phenotype correlations in 42 mendelian neurodevelopmental disorders. Am J Hum Genet 106:356–370",
+      "volume": "106",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu049",
+      "author": "MJ Aryee",
+      "doi-asserted-by": "publisher",
+      "first-page": "1363",
+      "journal-title": "Bioinformatics",
+      "key": "2609_CR3",
+      "unstructured": "Aryee MJ et al (2014) Minfi: a flexible and comprehensive bioconductor package for the analysis of infinium DNA methylation microarrays. Bioinformatics 30:1363–1369",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41467-018-04540-x",
+      "author": "M Barbosa",
+      "doi-asserted-by": "publisher",
+      "first-page": "2064",
+      "journal-title": "Nat Commun",
+      "key": "2609_CR4",
+      "unstructured": "Barbosa M et al (2018) Identification of rare de novo epigenetic variations in congenital disorders. Nat Commun 9:2064",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1080/15592294.2022.2135201",
+      "author": "M Bizet",
+      "doi-asserted-by": "publisher",
+      "first-page": "2434",
+      "journal-title": "Epigenetics.",
+      "key": "2609_CR5",
+      "unstructured": "Bizet M et al (2022) Improving Infinium MethylationEPIC data processing: re-annotation of enhancers and long noncoding RNA genes and benchmarking of normalization methods. Epigenetics. 17:2434–2454",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s12859-022-04899-1",
+      "author": "L Bondhus",
+      "doi-asserted-by": "publisher",
+      "first-page": "364",
+      "journal-title": "BMC Bioinformatics",
+      "key": "2609_CR6",
+      "unstructured": "Bondhus L, Wei A, Arboleda VA (2022) DMRscaler: a scale-aware method to identify regions of differential DNA methylation spanning basepair to multi-megabase features. BMC Bioinformatics 23:364",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.04.004",
+      "author": "DT Butcher",
+      "doi-asserted-by": "publisher",
+      "first-page": "773",
+      "journal-title": "Am J Hum Genet",
+      "key": "2609_CR7",
+      "unstructured": "Butcher DT et al (2017) CHARGE and Kabuki syndromes: gene-specific DNA methylation signatures identify epigenetic mechanisms linking these clinically overlapping conditions. Am J Hum Genet 100:773–788",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.06.015",
+      "author": "E Chater-Diehl",
+      "doi-asserted-by": "publisher",
+      "first-page": "1359",
+      "journal-title": "Am J Hum Genet",
+      "key": "2609_CR8",
+      "unstructured": "Chater-Diehl E et al (2021) Anatomy of DNA methylation signatures: emerging insights and applications. Am J Hum Genet 108:1359–1366",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1080/15592294.2019.1700003",
+      "author": "K Cheung",
+      "doi-asserted-by": "publisher",
+      "first-page": "594",
+      "journal-title": "Epigenetics",
+      "key": "2609_CR9",
+      "unstructured": "Cheung K, Burgers MJ, Young DA, Cockell S, Reynard LN (2020) Correlation of infinium HumanMethylation450K and MethylationEPIC BeadChip arrays in cartilage. Epigenetics 15:594–603",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12864-019-6413-7",
+      "author": "D Chicco",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "journal-title": "BMC Genomics",
+      "key": "2609_CR10",
+      "unstructured": "Chicco D, Jurman G (2020) The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation. BMC Genomics 21:6",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ncomms10207",
+      "author": "S Choufani",
+      "doi-asserted-by": "publisher",
+      "first-page": "10207",
+      "journal-title": "Nat Commun",
+      "key": "2609_CR11",
+      "unstructured": "Choufani S et al (2015) NSD1 mutations generate a genome-wide DNA methylation signature. Nat Commun 6:10207",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.2217/epi.11.105",
+      "author": "S Dedeurwaerder",
+      "doi-asserted-by": "publisher",
+      "first-page": "771",
+      "journal-title": "Epigenomics",
+      "key": "2609_CR12",
+      "unstructured": "Dedeurwaerder S et al (2011) Evaluation of the infinium methylation 450K technology. Epigenomics 3:771–784",
+      "volume": "3",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s13059-014-0503-2",
+      "author": "J-P Fortin",
+      "doi-asserted-by": "publisher",
+      "first-page": "503",
+      "journal-title": "Genome Biol",
+      "key": "2609_CR13",
+      "unstructured": "Fortin J-P et al (2014) Functional normalization of 450k methylation array data improves replication in large cancer studies. Genome Biol 15:503",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw691",
+      "author": "J-P Fortin",
+      "doi-asserted-by": "publisher",
+      "first-page": "558",
+      "journal-title": "Bioinformatics",
+      "key": "2609_CR14",
+      "unstructured": "Fortin J-P, Triche TJ, Hansen KD (2017) Preprocessing, normalization and integration of the illumina HumanMethylationEPIC array with minfi. Bioinformatics 33:558–560",
+      "volume": "33",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1080/15592294.2019.1634975",
+      "author": "N Fernandez-Jimenez",
+      "doi-asserted-by": "publisher",
+      "first-page": "1177",
+      "issue": "12",
+      "journal-title": "Epigenetics",
+      "key": "2609_CR15",
+      "unstructured": "Fernandez-Jimenez N et al (2019) Comparison of Illumina 450K and EPIC arrays in placental DNA methylation. Epigenetics 14(12):1177–1182. https://doi.org/10.1080/15592294.2019.1634975",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/1755-8794-6-1",
+      "author": "D Grafodatskaya",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Med Genomics",
+      "key": "2609_CR16",
+      "unstructured": "Grafodatskaya D et al (2013) Multilocus loss of DNA methylation in individuals with mutations in the histone H3 Lysine 4 Demethylase KDM5C. BMC Med Genomics 6:1",
+      "volume": "6",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1741-7015-7-62",
+      "author": "SG Gregory",
+      "doi-asserted-by": "publisher",
+      "first-page": "62",
+      "issue": "7",
+      "journal-title": "BMC Med",
+      "key": "2609_CR17",
+      "unstructured": "Gregory SG, Connelly JJ, Towers AJ, Johnson J, Biscocho D, Markunas CA, Lintas C, Abramson RK, Wright HH, Ellis P, Langford CF, Worley G, Delong GR, Murphy SK, Cuccaro ML, Persico A, Pericak-Vance MA (2009) Genomic and epigenetic evidence for oxytocin receptor deficiency in autism. BMC Med 22(7):62. https://doi.org/10.1186/1741-7015-7-62",
+      "volume": "22",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/s13148-022-01403-7",
+      "author": "R Grolaux",
+      "doi-asserted-by": "publisher",
+      "first-page": "174",
+      "journal-title": "Clin Epigenetics",
+      "key": "2609_CR18",
+      "unstructured": "Grolaux R et al (2022) Identification of differentially methylated regions in rare diseases from a single-patient perspective. Clin Epigenetics 14:174",
+      "volume": "14",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.7554/eLife.58430",
+      "author": "E Hannon",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Elife",
+      "key": "2609_CR19",
+      "unstructured": "Hannon E et al (2021) DNA methylation meta-analysis reveals cellular alterations in psychosis and markers of treatment-resistant schizophrenia. Elife 10:e58430",
+      "volume": "10",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2012.10.016",
+      "author": "G Hannum",
+      "doi-asserted-by": "publisher",
+      "first-page": "359",
+      "journal-title": "Mol Cell",
+      "key": "2609_CR20",
+      "unstructured": "Hannum G et al (2013) Genome-wide methylation profiles reveal quantitative views of human aging rates. Mol Cell 49:359–367",
+      "volume": "49",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/3-540-31181-5_4",
+      "author": "B Horsthemke",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "key": "2609_CR21",
+      "unstructured": "Horsthemke B (2006) Epimutations in human disease. In: Doerfler W, Böhm P (eds) DNA methylation: development, genetic disease and cancer. Springer, New York, pp 45–59. https://doi.org/10.1007/3-540-31181-5_4",
+      "volume-title": "DNA methylation: development, genetic disease and cancer",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1038/nprot.2008.211",
+      "author": "DW Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "journal-title": "Nat Protoc",
+      "key": "2609_CR22",
+      "unstructured": "Huang DW, Sherman BT, Lempicki RA (2009) Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources. Nat Protoc 4:44–57",
+      "volume": "4",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/ije/dyr238",
+      "author": "AE Jaffe",
+      "doi-asserted-by": "publisher",
+      "first-page": "200",
+      "journal-title": "Int J Epidemiol",
+      "key": "2609_CR23",
+      "unstructured": "Jaffe AE et al (2012) Bump hunting to identify differentially methylated regions in epigenetic epidemiology studies. Int J Epidemiol 41:200–209",
+      "volume": "41",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s13148-021-01106-5",
+      "author": "M Kagami",
+      "doi-asserted-by": "publisher",
+      "first-page": "119",
+      "journal-title": "Clin Epigenetics",
+      "key": "2609_CR24",
+      "unstructured": "Kagami M et al (2021) ZNF445: a homozygous truncating variant in a patient with Temple syndrome and multilocus imprinting disturbance. Clin Epigenetics 13:119",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "author": "MA Levy",
+      "journal-title": "HGG Adv",
+      "key": "2609_CR25",
+      "unstructured": "Levy MA et al (2022) Novel diagnostic DNA methylation episignatures expand and refine the epigenetic landscapes of Mendelian disorders. HGG Adv 3:100075",
+      "volume": "3",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/gb-2012-13-6-r44",
+      "author": "J Maksimovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "R44",
+      "journal-title": "Genome Biol",
+      "key": "2609_CR26",
+      "unstructured": "Maksimovic J, Gordon L, Oshlack A (2012) SWAN: Subset-quantile within array normalization for illumina infinium HumanMethylation450 BeadChips. Genome Biol 13:R44",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/bib/bby085",
+      "author": "S Mallik",
+      "doi-asserted-by": "publisher",
+      "first-page": "2224",
+      "issue": "6",
+      "journal-title": "Brief Bioinf.",
+      "key": "2609_CR27",
+      "unstructured": "Mallik S, Odom GJ, Gao Z, Gomez L, Chen X, Wang L (2019) An evaluation of supervised methods for identifying differentially methylated regions in illumina methylation arrays. Brief Bioinf. 20(6):2224–2235. https://doi.org/10.1093/bib/bby085",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-15-1217",
+      "author": "GG Malouf",
+      "doi-asserted-by": "publisher",
+      "first-page": "6236",
+      "journal-title": "Clin Cancer Res",
+      "key": "2609_CR28",
+      "unstructured": "Malouf GG et al (2016) DNA methylation signature reveals cell ontogeny of renal cell carcinomas. Clin Cancer Res 22:6236–6246",
+      "volume": "22",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.arr.2021.101488",
+      "author": "MT Mc Auley",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Ageing Res Rev",
+      "key": "2609_CR29",
+      "unstructured": "Mc Auley MT (2021) DNA methylation in genes associated with the evolution of ageing and disease: a critical review. Ageing Res Rev 72:101488",
+      "volume": "72",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.2217/epi.15.114",
+      "author": "S Moran",
+      "doi-asserted-by": "publisher",
+      "first-page": "389",
+      "journal-title": "Epigenomics",
+      "key": "2609_CR30",
+      "unstructured": "Moran S, Arribas C, Esteller M (2016) Validation of a DNA methylation microarray for 850,000 CpG sites of the human genome enriched in enhancer sequences. Epigenomics 8:389–399",
+      "volume": "8",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.30134",
+      "author": "BC Murphy",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "issue": "1",
+      "journal-title": "Am J Med Genet B Neuropsychiatr Genet",
+      "key": "2609_CR31",
+      "unstructured": "Murphy BC, O’Reilly RL, Singh SM (2005) Site-specific cytosine methylation in S-COMT promoter in 31 brain regions with implications for studies involving schizophrenia. Am J Med Genet B Neuropsychiatr Genet 133B(1):37–42. https://doi.org/10.1002/ajmg.b.30134",
+      "volume": "133B",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1080/15592294.2023.2185742",
+      "author": "A Noguera-Castells",
+      "doi-asserted-by": "publisher",
+      "first-page": "2185742",
+      "journal-title": "Epigenetics.",
+      "key": "2609_CR32",
+      "unstructured": "Noguera-Castells A, García-Prieto CA, Álvarez-Errico D, Esteller M (2023) Validation of the new EPIC DNA methylation microarray (900K EPIC v2) for high-throughput profiling of the human DNA methylome. Epigenetics. 18:2185742",
+      "volume": "18",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1007/s00018-017-2572-3",
+      "author": "SL Peek",
+      "doi-asserted-by": "publisher",
+      "first-page": "4133",
+      "journal-title": "Cell Mol Life Sci",
+      "key": "2609_CR33",
+      "unstructured": "Peek SL, Mah KM, Weiner JA (2017) Regulation of neural circuit formation by protocadherins. Cell Mol Life Sci 74:4133–4157",
+      "volume": "74",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/1756-8935-8-6",
+      "author": "TJ Peters",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "journal-title": "Epigenet Chromatin",
+      "key": "2609_CR34",
+      "unstructured": "Peters TJ, Buckley MJ, Statham AL et al (2015) De novo identification of differentially methylated regions in the human genome. Epigenet Chromatin 8:6. https://doi.org/10.1186/1756-8935-8-6",
+      "volume": "8",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3389/fnins.2021.776809",
+      "author": "J Reichard",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Neurosci.",
+      "key": "2609_CR35",
+      "unstructured": "Reichard J, Zimmer-Bensch G (2021) The epigenome in neurodevelopmental disorders. Front Neurosci. https://doi.org/10.3389/fnins.2021.776809",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts680",
+      "author": "AE Teschendorff",
+      "doi-asserted-by": "publisher",
+      "first-page": "189",
+      "journal-title": "Bioinformatics",
+      "key": "2609_CR36",
+      "unstructured": "Teschendorff AE et al (2013) A beta-mixture quantile normalization method for correcting probe design bias in Illumina Infinium 450 k DNA methylation data. Bioinformatics 29:189–196",
+      "volume": "29",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx513",
+      "author": "Y Tian",
+      "doi-asserted-by": "publisher",
+      "first-page": "3982",
+      "journal-title": "Bioinformatics",
+      "key": "2609_CR37",
+      "unstructured": "Tian Y et al (2017) ChAMP: updated methylation analysis pipeline for illumina BeadChips. Bioinformatics 33:3982–3984",
+      "volume": "33",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.2217/epi.12.21",
+      "author": "N Touleimat",
+      "doi-asserted-by": "publisher",
+      "first-page": "325",
+      "journal-title": "Epigenomics",
+      "key": "2609_CR38",
+      "unstructured": "Touleimat N, Tost J (2012) Complete pipeline for infinium® human methylation 450K BeadChip data processing using subset quantile normalization for accurate DNA methylation estimation. Epigenomics 4:325–341",
+      "volume": "4",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/nar/gkt090",
+      "author": "TJ Triche",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2609_CR39",
+      "unstructured": "Triche TJ, Weisenberger DJ, Van Den Berg D, Laird PW, Siegmund KD (2013) Low-level processing of Illumina Infinium DNA methylation beadarrays. Nucleic Acids Res 41:e90",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/humu.24076",
+      "author": "AL Turinsky",
+      "doi-asserted-by": "publisher",
+      "first-page": "1722",
+      "journal-title": "Hum Mutat",
+      "key": "2609_CR40",
+      "unstructured": "Turinsky AL et al (2020) EpigenCentral: portal for DNA methylation data analysis and classification in rare diseases. Hum Mutat 41:1722–1733",
+      "volume": "41",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.gim.2022.10.004",
+      "author": "J van der Coenen Spek",
+      "doi-asserted-by": "publisher",
+      "first-page": "63",
+      "journal-title": "Genet Med.",
+      "key": "2609_CR41",
+      "unstructured": "van der Coenen Spek J et al (2023) DNA methylation episignature for Witteveen-Kolk syndrome due to SIN3A haploinsufficiency. Genet Med. 25:63–75",
+      "volume": "25",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.3390/ijms23148001",
+      "author": "EA Verberne",
+      "doi-asserted-by": "publisher",
+      "first-page": "8001",
+      "journal-title": "Int J Mol Sci",
+      "key": "2609_CR42",
+      "unstructured": "Verberne EA et al (2022) DNA methylation signature for JARID2-neurodevelopmental syndrome. Int J Mol Sci 23:8001",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1080/15592294.2022.2115600",
+      "author": "Y Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "2241",
+      "issue": "13",
+      "journal-title": "Epigenetics.",
+      "key": "2609_CR43",
+      "unstructured": "Zheng Y, Lunetta KL, Liu C, Katrinli S, Smith AK, Miller MW, Logue MW (2022) An evaluation of the genome-wide false positive rates of common methods for identifying differentially methylated regions using illumina methylation arrays. Epigenetics. 17(13):2241–2258. https://doi.org/10.1080/15592294.2022.2115600",
+      "volume": "17",
+      "year": "2022"
+    }
+  ],
+  "reference-count": 43,
+  "references-count": 43,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-023-02609-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum. Genet."
+  ],
+  "source": "Crossref",
+  "title": [
+    "Comprehensive evaluation of the implementation of episignatures for diagnosis of neurodevelopmental disorders (NDDs)"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

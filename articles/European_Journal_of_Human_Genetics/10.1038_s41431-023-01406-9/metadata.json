@@ -1,0 +1,685 @@
+{
+  "DOI": "10.1038/s41431-023-01406-9",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01406-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eDNA methylation classifiers (“episignatures”) help to determine the pathogenicity of variants of uncertain significance (VUS). However, their sensitivity is limited due to their training on unambiguous cases with strong-effect variants so that the classification of variants with reduced effect size or in mosaic state may fail. Moreover, episignature evaluation of mosaics as a function of their degree of mosaicism has not been developed so far. We improved episignatures with respect to three categories. Applying (i) minimum-redundancy-maximum-relevance feature selection we reduced their length by up to one order of magnitude without loss of accuracy. Performing (ii) repeated re-training of a support vector machine classifier by step-wise inclusion of cases in the training set that reached probability scores larger than 0.5, we increased the sensitivity of the episignature-classifiers by 30%. In the newly diagnosed patients we confirmed the association between DNA methylation aberration and age at onset of KMT2B-deficient dystonia. Moreover, we found evidence for allelic series, including\u003cjats:italic\u003eKMT2B\u003c/jats:italic\u003e-variants with moderate effects and comparatively mild phenotypes such as late-onset focal dystonia. Retrained classifiers also can detect mosaics that previously remained below the 0.5-threshold, as we showed for\u003cjats:italic\u003eKMT2D\u003c/jats:italic\u003e-associated Kabuki syndrome. Conversely, episignature-classifiers are able to revoke erroneous exome calls of mosaicism, as we demonstrated by (iii) comparing presumed mosaic cases with a distribution of artificial in silico-mosaics that represented all the possible variation in degree of mosaicism, variant read sampling and methylation analysis.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1406"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "30 January 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "14 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "7 June 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "26 June 2023"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All participants or their guardians provided written informed consent according to the ethics research board-approved protocols of the contributing centers and all procedures were performed in accordance with the Declaration of Helsinki."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-7447-2252",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Oexle",
+      "given": "Konrad",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Zech",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stühn",
+      "given": "Lara G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Siegert",
+      "given": "Sandy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brunet",
+      "given": "Theresa",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6944-2443",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Schmidt",
+      "given": "Wolfgang M.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4454-8823",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Wagner",
+      "given": "Matias",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schmidt",
+      "given": "Axel",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1007-1809",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Engels",
+      "given": "Hartmut",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tilch",
+      "given": "Erik",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3236-0807",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Monestier",
+      "given": "Olivier",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9701-5396",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Destrėe",
+      "given": "Anne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hanker",
+      "given": "Britta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boesch",
+      "given": "Sylvia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jech",
+      "given": "Robert",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1862-3700",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Berutti",
+      "given": "Riccardo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kaiser",
+      "given": "Frank",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Haslinger",
+      "given": "Bernhard",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Haack",
+      "given": "Tobias B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Garavaglia",
+      "given": "Barbara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Krawitz",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Winkelmann",
+      "given": "Juliane",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mirza-Schreiber",
+      "given": "Nazanin",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        26
+      ]
+    ],
+    "date-time": "2023-06-26T07:03:03Z",
+    "timestamp": 1687762983000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        15
+      ]
+    ],
+    "date-time": "2023-12-15T19:44:03Z",
+    "timestamp": 1702669443000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100009318",
+      "award": [
+        "NImRLS",
+        "NImRLS"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Helmholtz Association"
+    },
+    {
+      "DOI": "10.13039/501100001659",
+      "award": [
+        "458949627",
+        "458949627"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        25
+      ]
+    ],
+    "date-time": "2024-04-25T08:27:45Z",
+    "timestamp": 1714033665159
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "9",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        26
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            26
+          ]
+        ],
+        "date-time": "2023-06-26T00:00:00Z",
+        "timestamp": 1687737600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            26
+          ]
+        ],
+        "date-time": "2023-06-26T00:00:00Z",
+        "timestamp": 1687737600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01406-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01406-9",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01406-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1032-1039",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        26
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        26
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1093/hmg/ddz174",
+      "author": "JA Fahrner",
+      "doi-asserted-by": "publisher",
+      "first-page": "R254",
+      "journal-title": "Hum Mol Genet [Internet]",
+      "key": "1406_CR1",
+      "unstructured": "Fahrner JA, Bjornsson HT. Mendelian disorders of the epigenetic machinery: postnatal malleability and therapeutic prospects. Hum Mol Genet [Internet]. 2019;28:R254–64. https://academic.oup.com/hmg/article/28/R2/R254/5583234.",
+      "volume": "28",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.xhgg.2021.100075",
+      "author": "MA Levy",
+      "doi-asserted-by": "publisher",
+      "first-page": "100075.",
+      "journal-title": "Hum Genet Genomics Adv [Internet]",
+      "key": "1406_CR2",
+      "unstructured": "Levy MA, McConkey H, Kerkhof J, Barat-Houari M, Bargiacchi S, Biamino E, et al. Novel diagnostic DNA methylation episignatures expand and refine the epigenetic landscapes of Mendelian disorders. Hum Genet Genomics Adv [Internet]. 2022;3:100075. https://linkinghub.elsevier.com/retrieve/pii/S2666247721000567.",
+      "volume": "3",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/humu.24446",
+      "author": "MA Levy",
+      "doi-asserted-by": "publisher",
+      "first-page": "1609",
+      "journal-title": "Hum Mutat [Internet]",
+      "key": "1406_CR3",
+      "unstructured": "Levy MA, Relator R, McConkey H, Pranckeviciene E, Kerkhof J, Barat‐Houari M, et al. Functional correlation of genome‐wide DNA methylation profiles in genetic neurodevelopmental disorders. Hum Mutat [Internet]. 2022;43:1609–28. https://onlinelibrary.wiley.com/doi/10.1002/humu.24446.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/brain/awab360",
+      "author": "N Mirza-Schreiber",
+      "doi-asserted-by": "publisher",
+      "first-page": "644",
+      "journal-title": "Brain [Internet]",
+      "key": "1406_CR4",
+      "unstructured": "Mirza-Schreiber N, Zech M, Wilson R, Brunet T, Wagner M, Jech R, et al. Blood DNA methylation provides an accurate biomarker of KMT2B -related dystonia and predicts onset. Brain [Internet]. 2022;145:644–54. https://academic.oup.com/brain/article/145/2/644/6378248.",
+      "volume": "145",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.2217/epi-2021-0521",
+      "author": "S Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "537",
+      "journal-title": "Epigenomics [Internet]",
+      "key": "1406_CR5",
+      "unstructured": "Lee S, Ochoa E, Barwick K, Cif L, Rodger F, Docquier F, et al. Comparison of methylation episignatures in KMT2B - and KMT2D -related human disorders. Epigenomics [Internet]. 2022;14:537–47. https://www.futuremedicine.com/doi/10.2217/epi-2021-0521.",
+      "volume": "14",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s13148-021-01145-y",
+      "author": "A Ciolfi",
+      "doi-asserted-by": "publisher",
+      "first-page": "157.",
+      "journal-title": "Clin Epigenetics [Internet]",
+      "key": "1406_CR6",
+      "unstructured": "Ciolfi A, Foroutan A, Capuano A, Pedace L, Travaglini L, Pizzi S, et al. Childhood-onset dystonia-causing KMT2B variants result in a distinctive genomic hypermethylation profile. Clin Epigenetics [Internet]. 2021;13:157. https://clinicalepigeneticsjournal.biomedcentral.com/articles/10.1186/s13148-021-01145-y.",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.12.008",
+      "author": "E Aref-Eshghi",
+      "doi-asserted-by": "publisher",
+      "first-page": "156",
+      "journal-title": "Am J Hum Genet",
+      "key": "1406_CR7",
+      "unstructured": "Aref-Eshghi E, Rodenhiser DI, Schenkel LC, Lin H, Skinner C, Ainsworth P, et al. Genomic DNA Methylation Signatures Enable Concurrent Diagnosis and Clinical Genetic Variant Classification in Neurodevelopmental Syndromes. Am J Hum Genet. 2018;102:156–74.",
+      "volume": "102",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2022.08.014",
+      "author": "S Choufani",
+      "doi-asserted-by": "publisher",
+      "first-page": "1867",
+      "journal-title": "Am J Hum Genet [Internet]",
+      "key": "1406_CR8",
+      "unstructured": "Choufani S, McNiven V, Cytrynbaum C, Jangjoo M, Adam MP, Bjornsson HT, et al. An HNRNPK-specific DNA methylation signature makes sense of missense variants and expands the phenotypic spectrum of Au-Kline syndrome. Am J Hum Genet [Internet]. 2022;109:1867–84. https://linkinghub.elsevier.com/retrieve/pii/S0002929722004037.",
+      "volume": "109",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.05.008",
+      "author": "R Acuna-Hidalgo",
+      "doi-asserted-by": "publisher",
+      "first-page": "67",
+      "journal-title": "Am J Hum Genet [Internet]",
+      "key": "1406_CR9",
+      "unstructured": "Acuna-Hidalgo R, Bo T, Kwint MP, van de Vorst M, Pinelli M, Veltman JA, et al. Post-zygotic Point Mutations Are an Underrecognized Source of De Novo Genomic Variation. Am J Hum Genet [Internet]. 2015;97:67–74. https://linkinghub.elsevier.com/retrieve/pii/S0002929715001949.",
+      "volume": "97",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu049",
+      "author": "MJ Aryee",
+      "doi-asserted-by": "publisher",
+      "first-page": "1363",
+      "journal-title": "Bioinformatics",
+      "key": "1406_CR10",
+      "unstructured": "Aryee MJ, Jaffe AE, Corrada-Bravo H, Ladd-Acosta C, Feinberg AP, Hansen KD, et al. Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays. Bioinformatics 2014;30:1363–9.",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "key": "1406_CR11",
+      "unstructured": "R Core Team. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria [Internet]. 2020. Available from: https://www.r-project.org/."
+    },
+    {
+      "DOI": "10.1093/nar/gkv007",
+      "author": "ME Ritchie",
+      "doi-asserted-by": "publisher",
+      "first-page": "e47",
+      "journal-title": "Nucleic Acids Res [Internet]",
+      "key": "1406_CR12",
+      "unstructured": "Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, et al. limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Res [Internet]. 2015;43:e47. http://academic.oup.com/nar/article/43/7/e47/2414268/limma-powers-differential-expression-analyses-for.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt383",
+      "author": "N De Jay",
+      "doi-asserted-by": "publisher",
+      "first-page": "2365",
+      "journal-title": "Bioinforma [Internet]",
+      "key": "1406_CR13",
+      "unstructured": "De Jay N, Papillon-Cavanagh S, Olsen C, El-Hachem N, Bontempi G, Haibe-Kains B. mRMRe: an R package for parallelized mRMR ensemble feature selection. Bioinforma [Internet]. 2013;29:2365–8. https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/btt383.",
+      "volume": "29",
+      "year": "2013"
+    },
+    {
+      "key": "1406_CR14",
+      "unstructured": "Meyer D, Dimitriadou E, Horni K, Weingessel A, Leisch F, Chang C-C, et al. e1071: Misc Functions of the Department of Statistics, Probability Theory Group (Formerly: E1071), TU Wien. R package version 1.7-11 [Internet]. 2022. Available from: https://cran.r-project.org/package=e1071."
+    },
+    {
+      "DOI": "10.7551/mitpress/1113.003.0008",
+      "doi-asserted-by": "crossref",
+      "key": "1406_CR15",
+      "unstructured": "Platt JC. Probabilities for SV Machines. In: Smola AJ, Bartlett PL, Schölkopf B, Schuurmans D. editors. Advances in Large Margin Classifiers [Internet]. Cambridge, Massachusetts: MIT Press; 2000. p. 61–74. Available from: https://ww9w.semanticscholar.org/paper/Probabilistic-Outputs-for-SVMs-and-Comparisons-to-Platt-Karampatziakis/18a72c64859a700c16685386514c30d70765a63e."
+    },
+    {
+      "key": "1406_CR16",
+      "unstructured": "Therneau TM. A Package for Survival Analysis in R. R package version 3.4-0 [Internet]. 2022. Available from: https://cran.r-project.org/package=survival."
+    },
+    {
+      "DOI": "10.1142/S0219720005001004",
+      "author": "C Ding",
+      "doi-asserted-by": "publisher",
+      "first-page": "185",
+      "journal-title": "J Bioinform Comput Biol [Internet]",
+      "key": "1406_CR17",
+      "unstructured": "Ding C, Peng H. Minimum redundancy feature selection from microarray gene expression data. J Bioinform Comput Biol [Internet]. 2005;03:185–205. https://www.worldscientific.com/doi/abs/10.1142/S0219720005001004.",
+      "volume": "03",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1186/s13073-014-0089-z",
+      "author": "H Fang",
+      "doi-asserted-by": "publisher",
+      "first-page": "89.",
+      "journal-title": "Genome Med [Internet]",
+      "key": "1406_CR18",
+      "unstructured": "Fang H, Wu Y, Narzisi G, ORawe JA, Barrón LTJ, Rosenbaum J, et al. Reducing INDEL calling errors in whole genome and exome sequencing data. Genome Med [Internet]. 2014;6:89. http://genomemedicine.biomedcentral.com/articles/10.1186/s13073-014-0089-z.",
+      "volume": "6",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nbt.4235",
+      "author": "R Poplin",
+      "doi-asserted-by": "publisher",
+      "first-page": "983",
+      "journal-title": "Nat Biotechnol [Internet]",
+      "key": "1406_CR19",
+      "unstructured": "Poplin R, Chang P-C, Alexander D, Schwartz S, Colthurst T, Ku A, et al. A universal SNP and small-indel variant caller using deep neural networks. Nat Biotechnol [Internet]. 2018;36:983–7. http://www.nature.com/articles/nbt.4235.",
+      "volume": "36",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/cge.12081",
+      "author": "P Makrythanasis",
+      "doi-asserted-by": "publisher",
+      "first-page": "539",
+      "journal-title": "Clin Genet [Internet]",
+      "key": "1406_CR20",
+      "unstructured": "Makrythanasis P, van Bon B, Steehouwer M, Rodríguez-Santiago B, Simpson M, Dias P, et al. MLL2 mutation detection in 86 patients with Kabuki syndrome: a genotype-phenotype study. Clin Genet [Internet]. 2013;84:539–45. https://onlinelibrary.wiley.com/doi/10.1111/cge.12081.",
+      "volume": "84",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.04.004",
+      "author": "DT Butcher",
+      "doi-asserted-by": "publisher",
+      "first-page": "773",
+      "journal-title": "Am J Hum Genet [Internet]",
+      "key": "1406_CR21",
+      "unstructured": "Butcher DT, Cytrynbaum C, Turinsky AL, Siu MT, Inbar-Feigenberg M, Mendoza-Londono R, et al. CHARGE and Kabuki Syndromes: Gene-Specific DNA Methylation Signatures Identify Epigenetic Mechanisms Linking These Clinically Overlapping Conditions. Am J Hum Genet [Internet]. 2017;100:773–88. https://linkinghub.elsevier.com/retrieve/pii/S0002929717301489.",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.03.008",
+      "author": "S Choufani",
+      "doi-asserted-by": "publisher",
+      "first-page": "596",
+      "journal-title": "Am J Hum Genet [Internet]",
+      "key": "1406_CR22",
+      "unstructured": "Choufani S, Gibson WT, Turinsky AL, Chung BHY, Wang T, Garg K, et al. DNA Methylation Signature for EZH2 Functionally Classifies Sequence Variants in Three PRC2 Complex Genes. Am J Hum Genet [Internet]. 2020;106:596–610. https://linkinghub.elsevier.com/retrieve/pii/S0002929720300847.",
+      "volume": "106",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0250032",
+      "author": "Y-H Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0250032",
+      "journal-title": "PLoS One [Internet]",
+      "key": "1406_CR23",
+      "unstructured": "Zhang Y-H, Li Z, Zeng T, Chen L, Li H, Gamarra M, et al. Investigating gene methylation signatures for fetal intolerance prediction. PLoS One [Internet]. 2021;16:e0250032. http://www.ncbi.nlm.nih.gov/pubmed/33886611.",
+      "volume": "16",
+      "year": "2021"
+    },
+    {
+      "key": "1406_CR24",
+      "unstructured": "van Jaarsveld RH, Reilly J, Cornips M-C, Hadders MA, Agolini E, Ahimaz P, et al. Delineation of a KDM2B-related neurodevelopmental disorder and its associated DNA methylation signature. Genet Med [Internet]. 2022 Nov; Available from: https://linkinghub.elsevier.com/retrieve/pii/S109836002200942X."
+    },
+    {
+      "DOI": "10.1002/ajmg.a.62754",
+      "author": "C Montano",
+      "doi-asserted-by": "publisher",
+      "first-page": "2217",
+      "journal-title": "Am J Med Genet Part A [Internet]",
+      "key": "1406_CR25",
+      "unstructured": "Montano C, Britton JF, Harris JR, Kerkhof J, Barnes BT, Lee JA, et al. Genome‐wide DNA methylation profiling confirms a case of low‐level mosaic Kabuki syndrome 1. Am J Med Genet Part A [Internet]. 2022;188:2217–25. https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.62754.",
+      "volume": "188",
+      "year": "2022"
+    },
+    {
+      "author": "J Luo",
+      "first-page": "861",
+      "journal-title": "Zhonghua Yi Xue Yi Chuan Xue Za Zhi [Internet]",
+      "key": "1406_CR26",
+      "unstructured": "Luo J, Wang Q, Cheng S, Chen A, Yuan H. [Analysis of clinical manifestation and a mosaic frameshift variant of the KMT2D gene in a Chinese patient with Kabuki syndrome]. Zhonghua Yi Xue Yi Chuan Xue Za Zhi [Internet]. 2021;38:861–4. http://www.ncbi.nlm.nih.gov/pubmed/34487531.",
+      "volume": "38",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 26,
+  "references-count": 26,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2530607/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01406-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Episignature analysis of moderate effects and mosaics"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "31"
+}

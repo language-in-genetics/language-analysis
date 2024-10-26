@@ -1,0 +1,896 @@
+{
+  "DOI": "10.1038/s41431-023-01478-7",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01478-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMobile element insertions (MEIs) are a known cause of genetic disease but have been underexplored due to technical limitations of genetic testing methods. Various bioinformatic tools have been developed to identify MEIs in Next Generation Sequencing data. However, most tools have been developed specifically for genome sequencing (GS) data rather than exome sequencing (ES) data, which remains more widely used for routine diagnostic testing. In this study, we benchmarked six MEI detection tools (ERVcaller, MELT, Mobster, SCRAMble, TEMP2 and xTea) on ES data and on GS data from publicly available genomic samples (HG002, NA12878). For all the tools we evaluated sensitivity and precision of different filtering strategies. Results show that there were substantial differences in tool performance between ES and GS data. MELT performed best with ES data and its combination with SCRAMble increased substantially the detection rate of MEIs. By applying both tools to 10,890 ES samples from Solve-RD and 52,624 samples from Radboudumc we were able to diagnose 10 patients who had remained undiagnosed by conventional ES analysis until now. Our study shows that MELT and SCRAMble can be used reliably to identify clinically relevant MEIs in ES data. This may lead to an additional diagnosis for 1 in 3000 to 4000 patients in routine clinical ES.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1478"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "1 November 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "29 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "4 October 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "19 October 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Date",
+      "name": "change_date",
+      "order": 5,
+      "value": "16 November 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Type",
+      "name": "change_type",
+      "order": 6,
+      "value": "Correction"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 7,
+      "value": "A Correction to this paper has been published:"
+    },
+    {
+      "URL": "https://doi.org/10.1038/s41431-023-01492-9",
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 8,
+      "value": "https://doi.org/10.1038/s41431-023-01492-9"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Study was approved by the institutional review board “Commissie Mensgebonden Onderzoek Regio Arnhem-Nijmegen” under number 2011/188."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Wijngaard",
+      "given": "Robin",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9075-4276",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Demidov",
+      "given": "German",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1653-4704",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "O’Gorman",
+      "given": "Luke",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Corominas-Galbany",
+      "given": "Jordi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yaldiz",
+      "given": "Burcu",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8393-0788",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Steyaert",
+      "given": "Wouter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Boer",
+      "given": "Elke",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6470-5497",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Vissers",
+      "given": "Lisenka E. L. M.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6480-1892",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kamsteeg",
+      "given": "Erik-Jan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pfundt",
+      "given": "Rolph",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Swinkels",
+      "given": "Hilde",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "den Ouden",
+      "given": "Amber",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "te Paske",
+      "given": "Iris B. A. W.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8222-0343",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "de Voer",
+      "given": "Richarda M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Faivre",
+      "given": "Laurence",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8986-8222",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Denommé-Pichon",
+      "given": "Anne-Sophie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Duffourd",
+      "given": "Yannis",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3717-8374",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Vitobello",
+      "given": "Antonio",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5010-4161",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Chevarin",
+      "given": "Martin",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9046-3540",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Straub",
+      "given": "Volker",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9227-2526",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Töpf",
+      "given": "Ana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van der Kooi",
+      "given": "Anneke J.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4706-6245",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Magrinelli",
+      "given": "Francesca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rocca",
+      "given": "Clarissa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hanna",
+      "given": "Michael G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vandrovcova",
+      "given": "Jana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ossowski",
+      "given": "Stephan",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3913-5829",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Laurie",
+      "given": "Steven",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1693-9699",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Gilissen",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "Solve-RD consortium",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        19
+      ]
+    ],
+    "date-time": "2023-10-19T01:02:26Z",
+    "timestamp": 1697677346000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        16
+      ]
+    ],
+    "date-time": "2023-11-16T07:07:09Z",
+    "timestamp": 1700118429000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        9
+      ]
+    ],
+    "date-time": "2024-02-09T00:47:22Z",
+    "timestamp": 1707439642431
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        19
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            19
+          ]
+        ],
+        "date-time": "2023-10-19T00:00:00Z",
+        "timestamp": 1697673600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            19
+          ]
+        ],
+        "date-time": "2023-10-19T00:00:00Z",
+        "timestamp": 1697673600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01478-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01478-7",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01478-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        19
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1073/pnas.36.6.344",
+      "author": "CB Mc",
+      "doi-asserted-by": "publisher",
+      "first-page": "344",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "1478_CR1",
+      "unstructured": "Mc CB. The origin and behavior of mutable loci in maize. Proc Natl Acad Sci USA. 1950;36:344–55.",
+      "volume": "36",
+      "year": "1950"
+    },
+    {
+      "DOI": "10.1186/s13100-016-0065-9",
+      "author": "DC Hancks",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mob Dna",
+      "key": "1478_CR2",
+      "unstructured": "Hancks DC, Kazazian HH Jr. Roles for retrotransposon insertions in human disease. Mob Dna 2016;7:9.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.tig.2007.02.006",
+      "author": "RE Mills",
+      "doi-asserted-by": "publisher",
+      "first-page": "183",
+      "journal-title": "Trends Genet",
+      "key": "1478_CR3",
+      "unstructured": "Mills RE, Bennett EA, Iskow RC, Devine SE. Which transposable elements are active in the human genome? Trends Genet. 2007;23:183–91.",
+      "volume": "23",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002236",
+      "author": "C Stewart",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1002236",
+      "journal-title": "PLoS Genet",
+      "key": "1478_CR4",
+      "unstructured": "Stewart C, Kural D, Stromberg MP, Walker JA, Konkel MK, Stutz AM, et al. A comprehensive map of mobile element insertion polymorphisms in humans. PLoS Genet. 2011;7:e1002236.",
+      "volume": "7",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/dnares/dsy022",
+      "author": "W Tang",
+      "doi-asserted-by": "publisher",
+      "first-page": "521",
+      "journal-title": "DNA Res",
+      "key": "1478_CR5",
+      "unstructured": "Tang W, Mun S, Joshi A, Han K, Liang P. Mobile elements contribute to the uniqueness of human genome with 15,000 human-specific insertions and 14 Mbp sequence increase. DNA Res. 2018;25:521–33.",
+      "volume": "25",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nrg2640",
+      "author": "R Cordaux",
+      "doi-asserted-by": "publisher",
+      "first-page": "691",
+      "journal-title": "Nat Rev Genet",
+      "key": "1478_CR6",
+      "unstructured": "Cordaux R, Batzer MA. The impact of retrotransposons on human genome evolution. Nat Rev Genet. 2009;10:691–703.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/35057062",
+      "author": "ES Lander",
+      "doi-asserted-by": "publisher",
+      "first-page": "860",
+      "journal-title": "Nature",
+      "key": "1478_CR7",
+      "unstructured": "Lander ES, Linton LM, Birren B, Nusbaum C, Zody MC, Baldwin J, et al. Initial sequencing and analysis of the human genome. Nature 2001;409:860–921.",
+      "volume": "409",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1073/pnas.0831042100",
+      "author": "B Brouha",
+      "doi-asserted-by": "publisher",
+      "first-page": "5280",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "1478_CR8",
+      "unstructured": "Brouha B, Schustak J, Badge RM, Lutz-Prigge S, Farley AH, Moran JV, et al. Hot L1s account for the bulk of retrotransposition in the human population. Proc Natl Acad Sci USA. 2003;100:5280–5.",
+      "volume": "100",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.cell.2010.05.021",
+      "author": "CR Beck",
+      "doi-asserted-by": "publisher",
+      "first-page": "1159",
+      "journal-title": "Cell",
+      "key": "1478_CR9",
+      "unstructured": "Beck CR, Collier P, Macfarlane C, Malig M, Kidd JM, Eichler EE, et al. LINE-1 retrotransposition activity in human genomes. Cell 2010;141:1159–70.",
+      "volume": "141",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1101/gr.091827.109",
+      "author": "J Xing",
+      "doi-asserted-by": "publisher",
+      "first-page": "1516",
+      "journal-title": "Genome Res",
+      "key": "1478_CR10",
+      "unstructured": "Xing J, Zhang Y, Han K, Salem AH, Sen SK, Huff CD, et al. Mobile elements create structural variation: analysis of a complete human genome. Genome Res. 2009;19:1516–26.",
+      "volume": "19",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/gkac128",
+      "author": "Y Niu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2493",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1478_CR11",
+      "unstructured": "Niu Y, Teng X, Zhou H, Shi Y, Li Y, Tang Y, et al. Characterizing mobile element insertions in 5675 genomes. Nucleic Acids Res. 2022;50:2493–508.",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1101/gr.106419.110",
+      "author": "AD Ewing",
+      "doi-asserted-by": "publisher",
+      "first-page": "1262",
+      "journal-title": "Genome Res",
+      "key": "1478_CR12",
+      "unstructured": "Ewing AD, Kazazian HH Jr. High-throughput sequencing reveals extensive variation in human-specific L1 content in individual human genomes. Genome Res. 2010;20:1262–70.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0749-x",
+      "author": "RI Torene",
+      "doi-asserted-by": "publisher",
+      "first-page": "974",
+      "journal-title": "Genet Med",
+      "key": "1478_CR13",
+      "unstructured": "Torene RI, Galens K, Liu S, Arvai K, Borroto C, Scuffins J, et al. Mobile element insertion detection in 89,874 clinical exomes. Genet Med. 2020;22:974–8.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-019-12520-y",
+      "author": "EJ Gardner",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1478_CR14",
+      "unstructured": "Gardner EJ, Prigmore E, Gallone G, Danecek P, Samocha KE, Handsaker J, et al. Contribution of retrotransposition to developmental disorders. Nat Commun. 2019;10:4630.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/mgg3.1807",
+      "author": "G Demidov",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1807",
+      "journal-title": "Mol Genet Genom Med",
+      "key": "1478_CR15",
+      "unstructured": "Demidov G, Park J, Armeanu-Ebinger S, Roggia C, Faust U, Cordts I, et al. Detection of mobile elements insertions for routine clinical diagnostics in targeted sequencing data. Mol Genet Genom Med. 2021;9:e1807.",
+      "volume": "9",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/gr.218032.116",
+      "author": "EJ Gardner",
+      "doi-asserted-by": "publisher",
+      "first-page": "1916",
+      "journal-title": "Genome Res",
+      "key": "1478_CR16",
+      "unstructured": "Gardner EJ, Lam VK, Harris DN, Chuang NT, Scott EC, Pittard WS, et al. The Mobile Element Locator Tool (MELT): population-scale mobile element discovery and biology. Genome Res. 2017;27:1916–29.",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s13059-014-0488-x",
+      "author": "DT Thung",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "1478_CR17",
+      "unstructured": "Thung DT, de Ligt J, Vissers LE, Steehouwer M, Kroon M, de Vries P, et al. Mobster: accurate detection of mobile element insertions in next generation sequencing data. Genome Biol. 2014;15:488.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "author": "L Rishishwar",
+      "first-page": "908",
+      "journal-title": "Brief Bioinform",
+      "key": "1478_CR18",
+      "unstructured": "Rishishwar L, Marino-Ramirez L, Jordan IK. Benchmarking computational tools for polymorphic transposable element detection. Brief Bioinform. 2017;18:908–18.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s13100-019-0197-9",
+      "author": "P Vendrell-Mir",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mob DNA",
+      "key": "1478_CR19",
+      "unstructured": "Vendrell-Mir P, Barteri F, Merenciano M, Gonzalez J, Casacuberta JM, Castanera R. A benchmark of transposon insertion detection tools using real data. Mob DNA. 2019;10:53.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41431-021-00859-0",
+      "author": "B Zurek",
+      "doi-asserted-by": "publisher",
+      "first-page": "1325",
+      "journal-title": "Eur J Hum Genet",
+      "key": "1478_CR20",
+      "unstructured": "Zurek B, Ellwanger K, Vissers L, Schule R, Synofzik M, Topf A, et al. Solve-RD: systematic pan-European data sharing and collaborative analysis to solve rare diseases. Eur J Hum Genet. 2021;29:1325–31.",
+      "volume": "29",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz205",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "3913",
+      "journal-title": "Bioinformatics",
+      "key": "1478_CR21",
+      "unstructured": "Chen X, Li D. ERVcaller: identifying polymorphic endogenous retrovirus and other transposable element insertions using whole-genome sequencing data. Bioinformatics 2019;35:3913–22.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkab010",
+      "author": "T Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e44",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1478_CR22",
+      "unstructured": "Yu T, Huang X, Dou S, Tang X, Luo S, Theurkauf WE, et al. A benchmark and an algorithm for detecting germline transposon insertions and measuring de novo transposon insertion frequencies. Nucleic Acids Res. 2021;49:e44.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-021-24041-8",
+      "author": "C Chu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1478_CR23",
+      "unstructured": "Chu C, Borges-Monroy R, Viswanadham VV, Lee S, Li H, Lee EA, et al. Comprehensive identification of transposable element insertions using multiple sequencing technologies. Nat Commun. 2021;12:3836.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-021-23918-y",
+      "author": "TL McDonald",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1478_CR24",
+      "unstructured": "McDonald TL, Zhou W, Castro CP, Mumm C, Switzenberg JA, Mills RE, et al. Cas9 targeted enrichment of mobile elements using nanopore sequencing. Nat Commun. 2021;12:3586.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13073-023-01183-6",
+      "author": "E Kucuk",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Med",
+      "key": "1478_CR25",
+      "unstructured": "Kucuk E, van der Sanden B, O’Gorman L, Kwint M, Derks R, Wenger AM, et al. Comprehensive de novo mutation discovery with HiFi long-read sequencing. Genome Med. 2023;15:34.",
+      "volume": "15",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/s41586-023-05896-x",
+      "author": "WW Liao",
+      "doi-asserted-by": "publisher",
+      "first-page": "312",
+      "journal-title": "Nature",
+      "key": "1478_CR26",
+      "unstructured": "Liao WW, Asri M, Ebler J, Doerr D, Haukness M, Hickey G, et al. A draft human pangenome reference. Nature 2023;617:312–24.",
+      "volume": "617",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/nbt.1754",
+      "author": "JT Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Nat Biotechnol",
+      "key": "1478_CR27",
+      "unstructured": "Robinson JT, Thorvaldsdottir H, Winckler W, Guttman M, Lander ES, Getz G, et al. Integrative genomics viewer. Nat Biotechnol. 2011;29:24–6.",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/s41587-020-0538-8",
+      "author": "JM Zook",
+      "doi-asserted-by": "publisher",
+      "first-page": "1347",
+      "journal-title": "Nat Biotechnol",
+      "key": "1478_CR28",
+      "unstructured": "Zook JM, Hansen NF, Olson ND, Chapman L, Mullikin JC, Xiao C, et al. A robust benchmark for detection of germline large deletions and insertions. Nat Biotechnol. 2020;38:1347–55.",
+      "volume": "38",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "C Genomes Project",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "journal-title": "Nature",
+      "key": "1478_CR29",
+      "unstructured": "Genomes Project C, Auton A, Brooks LD, Durbin RM, Garrison EP, Kang HM, et al. A global reference for human genetic variation. Nature 2015;526:68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "author": "S Laurie",
+      "first-page": "717",
+      "journal-title": "Hum Mutat",
+      "key": "1478_CR30",
+      "unstructured": "Laurie S, Piscia D, Matalonga L, Corvo A, Fernandez-Callejo M, Garcia-Linares C, et al. The RD-connect genome-phenome analysis platform: accelerating diagnosis, research, and gene discovery for rare diseases. Hum Mutat. 2022;43:717–33.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/nn.4352",
+      "author": "SH Lelieveld",
+      "doi-asserted-by": "publisher",
+      "first-page": "1194",
+      "journal-title": "Nat Neurosci",
+      "key": "1478_CR31",
+      "unstructured": "Lelieveld SH, Reijnders MR, Pfundt R, Yntema HG, Kamsteeg EJ, de Vries P, et al. Meta-analysis of 2104 trios provides support for 10 new genes for intellectual disability. Nat Neurosci. 2016;19:1194–6.",
+      "volume": "19",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/humu.20307",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "323",
+      "journal-title": "Hum Mutat",
+      "key": "1478_CR32",
+      "unstructured": "Wang J, Song L, Grover D, Azrak S, Batzer MA, Liang P. dbRIP: a highly integrated database of retrotransposon insertion polymorphisms in humans. Hum Mutat. 2006;27:323–9.",
+      "volume": "27",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1186/s13100-020-00230-y",
+      "author": "J Storer",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mob DNA",
+      "key": "1478_CR33",
+      "unstructured": "Storer J, Hubley R, Rosen J, Wheeler TJ, Smit AF. The Dfam community resource of transposable element families, sequence models, and genome annotations. Mob DNA. 2021;12:2.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/mds.29280",
+      "author": "F Magrinelli",
+      "doi-asserted-by": "publisher",
+      "first-page": "347",
+      "journal-title": "Mov Disord",
+      "key": "1478_CR34",
+      "unstructured": "Magrinelli F, Rocca C, Simone R, Zenezini Chiozzi R, Jaunmuktane Z, Mencacci NE, et al. Detection and characterization of a De Novo Alu retrotransposition event causing NKX2-1-related disorder. Mov Disord. 2023;38:347–53.",
+      "volume": "38",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1534/g3.117.043893",
+      "author": "MG Nelson",
+      "doi-asserted-by": "publisher",
+      "first-page": "2763",
+      "journal-title": "G3 (Bethesda)",
+      "key": "1478_CR35",
+      "unstructured": "Nelson MG, Linheiro RS, Bergman CM. McClintock: An Integrated Pipeline for Detecting Transposable Element Insertions in Whole-Genome Shotgun Sequencing Data. G3 (Bethesda). 2017;7:2763–78.",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.jmoldx.2021.01.015",
+      "author": "J van den Akker",
+      "doi-asserted-by": "publisher",
+      "first-page": "612",
+      "journal-title": "J Mol Diagn",
+      "key": "1478_CR36",
+      "unstructured": "van den Akker J, Hon L, Ondov A, Mahkovec Z, O’Connor R, Chan RC, et al. Intronic breakpoint signatures enhance detection and characterization of clinically relevant germline structural variants. J Mol Diagn. 2021;23:612–29.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cancergen.2017.08.002",
+      "author": "Y Qian",
+      "doi-asserted-by": "publisher",
+      "first-page": "159",
+      "journal-title": "Cancer Genet",
+      "key": "1478_CR37",
+      "unstructured": "Qian Y, Mancini-DiNardo D, Judkins T, Cox HC, Brown K, Elias M, et al. Identification of pathogenic retrotransposon insertions in cancer predisposition genes. Cancer Genet. 2017;216-217:159–69.",
+      "volume": "216-217",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv710",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1220",
+      "journal-title": "Bioinformatics",
+      "key": "1478_CR38",
+      "unstructured": "Chen X, Schulz-Trieglaff O, Shaw R, Barnes B, Schlesinger F, Kallberg M, et al. Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics 2016;32:1220–2.",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.09.010",
+      "author": "EJ Gardner",
+      "doi-asserted-by": "publisher",
+      "first-page": "2186",
+      "journal-title": "Am J Hum Genet",
+      "key": "1478_CR39",
+      "unstructured": "Gardner EJ, Sifrim A, Lindsay SJ, Prigmore E, Rajan D, Danecek P, et al. Detecting cryptic clinically relevant structural variation in exome-sequencing data increases diagnostic yield for developmental disorders. Am J Hum Genet. 2021;108:2186–94.",
+      "volume": "108",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 39,
+  "references-count": 39,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01478-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Mobile element insertions in rare diseases: a comparative benchmark and reanalysis of 60,000 exome samples"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

@@ -1,0 +1,764 @@
+{
+  "DOI": "10.1038/s41431-023-01486-7",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01486-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eRare diseases (RD) have a prevalence of not more than 1/2000 persons in the European population, and are characterised by the difficulty experienced in obtaining a correct and timely diagnosis. According to Orphanet, 72.5% of RD have a genetic origin although 35% of them do not yet have an identified causative gene. A significant proportion of patients suspected to have a genetic RD receive an inconclusive exome/genome sequencing. Working towards the International Rare Diseases Research Consortium (IRDiRC)’s goal for 2027 to ensure that all people living with a RD receive a diagnosis within one year of coming to medical attention, the Solve-RD project aims to identify the molecular causes underlying undiagnosed RD. As part of this strategy, we developed a phenotypic similarity-based variant prioritization methodology comparing submitted cases with other submitted cases and with known RD in Orphanet. Three complementary approaches based on phenotypic similarity calculations using the Human Phenotype Ontology (HPO), the Orphanet Rare Diseases Ontology (ORDO) and the HPO-ORDO Ontological Module (HOOM) were developed; genomic data reanalysis was performed by the RD-Connect Genome-Phenome Analysis Platform (GPAP). The methodology was tested in 4 exemplary cases discussed with experts from European Reference Networks. Variants of interest (pathogenic or likely pathogenic) were detected in 8.8% of the 725 cases clustered by similarity calculations. Diagnostic hypotheses were validated in 42.1% of them and needed further exploration in another 10.9%. Based on the promising results, we are devising an automated standardized phenotypic-based re-analysis pipeline to be applied to the entire unsolved cases cohort.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1486"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "17 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "13 September 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "5 October 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "6 November 2023"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All individuals were recruited via four ERNs. Inclusion criteria were a clinical rare disease diagnosis in at least one family member by one of the associated expert centers and a non-conclusive exome or genome analysis at time of submission. We did not exclude anyone based on sex, gender, ethnicity, race, age or any other socially relevant groupings. Each patient entry was associated with its submitting investigator or clinician and linked to its corresponding ERN or UDP. The responsibility of checking the data was suitable for submission to the RD-Connect GPAP and Solve-RD lay with the data submitter as required by their Code of Conduct (institution: Fundació Centre de Regulació Genòmica) and Data Sharing Policy (institution: Solve-RD General Assembly), respectively. In some cases, individuals had to be re-consented prior to data submission. This study adheres to the principles set out in the Declaration of Helsinki."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-7356-7986",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lagorce",
+      "given": "David",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Lebreton",
+      "given": "Emeline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Matalonga",
+      "given": "Leslie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hongnat",
+      "given": "Oscar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chahdil",
+      "given": "Maroua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Piscia",
+      "given": "Davide",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Paramonov",
+      "given": "Ida",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4845-5795",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ellwanger",
+      "given": "Kornelia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Köhler",
+      "given": "Sebastian",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0736-9199",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Robinson",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9803-7183",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Graessner",
+      "given": "Holm",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2810-3445",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Beltran",
+      "given": "Sergi",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0009-0008-3646-7469",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lucano",
+      "given": "Caterina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hanauer",
+      "given": "Marc",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4308-6337",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Rath",
+      "given": "Ana",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        6
+      ]
+    ],
+    "date-time": "2023-11-06T03:01:33Z",
+    "timestamp": 1699239693000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        9
+      ]
+    ],
+    "date-time": "2024-02-09T00:12:36Z",
+    "timestamp": 1707437556000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000780",
+      "award": [
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257",
+        "779257"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "European Commission"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T16:52:12Z",
+    "timestamp": 1709311932002
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        6
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            6
+          ]
+        ],
+        "date-time": "2023-11-06T00:00:00Z",
+        "timestamp": 1699228800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            11,
+            6
+          ]
+        ],
+        "date-time": "2023-11-06T00:00:00Z",
+        "timestamp": 1699228800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01486-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01486-7",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01486-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "182-189",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        6
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        6
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "key": "1486_CR1",
+      "unstructured": "European Union. Regulation (EC) N°141/2000 of the European Parliament and of the Council of 16 December 1999 on orphan medicinal products. 2000 https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2000:018:0001:0005:en:PDF."
+    },
+    {
+      "DOI": "10.1038/s41431-019-0508-0",
+      "author": "S Nguengang Wakap",
+      "doi-asserted-by": "publisher",
+      "first-page": "165",
+      "journal-title": "Eur J Hum Genet.",
+      "key": "1486_CR2",
+      "unstructured": "Nguengang Wakap S, Lambert DM, Olry A, Rodwell C, Gueydan C, Lanneau V, et al. Estimating cumulative point prevalence of rare diseases: analysis of the Orphanet database. Eur J Hum Genet. 2020;28:165–73.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13023-022-02337-2",
+      "author": "G Zanello",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "1486_CR3",
+      "unstructured": "Zanello G, Chan CH, Pearce DA. Recommendations from the IRDiRC Working Group on methodologies to assess the impact of diagnoses and therapies on rare disease patients. Orphanet J Rare Dis. 2022;17:181.",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "key": "1486_CR4",
+      "unstructured": "Recommendations from The Rare 2030 - Foresight Study The Future Of Rare Diseases Starts Today - February 2021 - Rare2030.Eu/Recommendations"
+    },
+    {
+      "key": "1486_CR5",
+      "unstructured": "RD-ACTION Work Package 5 - Milestone 24 - Specifications for an integrated coding application with Orphacodes. 2016 http://www.rd-action.eu/wp-content/uploads/2016/11/Milestone-24_05.10.2016.pdf."
+    },
+    {
+      "key": "1486_CR6",
+      "unstructured": "Solve-RD - solving the unsolved rare diseases. https://solve-rd.eu."
+    },
+    {
+      "DOI": "10.1038/s41431-021-00859-0",
+      "author": "B Zurek",
+      "doi-asserted-by": "publisher",
+      "first-page": "1325",
+      "journal-title": "Eur J Hum Genet",
+      "key": "1486_CR7",
+      "unstructured": "Zurek B, Ellwanger K, Vissers LELM, Schüle R, Synofzik M, Töpf A, et al. Solve-RD: systematic pan-European data sharing and collaborative analysis to solve rare diseases. Eur J Hum Genet. 2021;29:1325–31.",
+      "volume": "29",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41431-021-00852-7",
+      "author": "L Matalonga",
+      "doi-asserted-by": "publisher",
+      "first-page": "1337",
+      "journal-title": "Eur J Hum Genet.",
+      "key": "1486_CR8",
+      "unstructured": "Matalonga L, Hernández-Ferrer C, Piscia D, Solve-RD SNV-indel working group, Schüle R, Synofzik M, et al. Solving patients with rare diseases through programmatic reanalysis of genome-phenome data. Eur J Hum Genet. 2021;29:1337–47.",
+      "volume": "29",
+      "year": "2021"
+    },
+    {
+      "key": "1486_CR9",
+      "unstructured": "RD-Code consensus document on codification of suspected/undiagnosed rare diseases. 2021. http://www.rd-code.eu/wp-content/uploads/2022/02/D5.2_RDCODE_VF2021_FV.pdf."
+    },
+    {
+      "DOI": "10.1007/s12687-021-00521-8",
+      "author": "H BTumiene",
+      "doi-asserted-by": "publisher",
+      "first-page": "217",
+      "journal-title": "J Community Genet.",
+      "key": "1486_CR10",
+      "unstructured": "BTumiene H, Graessner IM, Mathijssen AM, Pereira F, Schaefer M, Scarpa J-Y, Blay, et al. European Reference Networks: challenges and opportunities. J Community Genet. 2021;12:217–29. https://doi.org/10.1007/s12687-021-00521-8.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.08.003",
+      "author": "T Fujiwara",
+      "doi-asserted-by": "publisher",
+      "first-page": "389",
+      "journal-title": "Am J Hum Genet",
+      "key": "1486_CR11",
+      "unstructured": "Fujiwara T, Yamamoto Y, Kim JD, Buske O, Takagi T. PubCaseFinder: A Case-Report-Based, Phenotype-Driven Differential-Diagnosis System for Rare Diseases. Am J Hum Genet. 2018;103:389.",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1146/annurev-genom-083118-015345",
+      "author": "T Hartley",
+      "doi-asserted-by": "publisher",
+      "first-page": "351",
+      "journal-title": "Annu Rev Genomics Hum Genet.",
+      "key": "1486_CR12",
+      "unstructured": "Hartley T, Lemire G, Kernohan KD, Howley HE, Adams DR, Boycott KM. New Diagnostic Approaches for Undiagnosed Rare Genetic Diseases. Annu Rev Genomics Hum Genet. 2020;21:351–72. https://doi.org/10.1146/annurev-genom-083118-015345.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/humu.24380",
+      "author": "JOB Jacobsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1071",
+      "journal-title": "Hum Mutat.",
+      "key": "1486_CR13",
+      "unstructured": "Jacobsen JOB, Kelly C, Cipriani V, Research Consortium GE, Mungall CJ, Reese J, et al. Phenotype-driven approaches to enhance variant prioritization and diagnosis of rare disease. Hum Mutat. 2022;43:1071–81. https://doi.org/10.1002/humu.24380.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.tig.2022.07.002",
+      "author": "C Kelly",
+      "doi-asserted-by": "publisher",
+      "first-page": "1271",
+      "journal-title": "Trends Genet.",
+      "key": "1486_CR14",
+      "unstructured": "Kelly C, Szabo A, Pontikos N, Arno G, Robinson PN, Jacobsen JOB, et al. Phenotype-aware prioritisation of rare Mendelian disease variants. Trends Genet. 2022;38:1271–83. https://doi.org/10.1016/j.tig.2022.07.002.",
+      "volume": "38",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41588-023-01469-w",
+      "doi-asserted-by": "publisher",
+      "key": "1486_CR15",
+      "unstructured": "Dingemans AJM, Hinne M, Truijen KMG, Goltstein L, van Reeuwijk J, de Leeuw N, et al. PhenoScore quantifies phenotypic variation for rare genetic diseases by combining facial analysis with other clinical features using a machine-learning framework. Nat Genet. 2023. https://doi.org/10.1038/s41588-023-01469-w. Online ahead of print."
+    },
+    {
+      "DOI": "10.1126/scitranslmed.aau9113",
+      "author": "J Birgmeier",
+      "doi-asserted-by": "publisher",
+      "first-page": "eaau9113",
+      "journal-title": "Sci Transl Med",
+      "key": "1486_CR16",
+      "unstructured": "Birgmeier J, Haeussler M, Deisseroth CA, Steinberg EH, Jagadeesh KA, Ratner AJ, et al. AMELIE speeds Mendelian diagnosis by matching patient phenotype and genotype to primary literature. Sci Transl Med. 2020;12:eaau9113.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41436-019-0439-8",
+      "author": "Q Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2126",
+      "journal-title": "Genet Med",
+      "key": "1486_CR17",
+      "unstructured": "Li Q, Zhao K, Bustamante CD, Ma X, Wong WH. Xrare: a machine learning method jointly modeling phenotypes and genetic evidence for rare disease diagnosis. Genet Med. 2019;21:2126–34. https://doi.org/10.1038/s41436-019-0439-8.",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.06.021",
+      "author": "PN Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "403",
+      "journal-title": "Am J Hum Genet",
+      "key": "1486_CR18",
+      "unstructured": "Robinson PN, Ravanmehr V, Jacobsen JOB, Danis D, Zhang XA, Carmody LC, et al. Interpretable clinical genomics with a likelihood ratio paradigm. Am J Hum Genet. 2020;107:403–17.",
+      "volume": "107",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nargab/lqaa032",
+      "author": "M Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "lqaa032",
+      "journal-title": "NAR Genomics Bioinforma",
+      "key": "1486_CR19",
+      "unstructured": "Zhao M, Havrilla JM, Fang L, Chen Y, Peng J, Liu C, et al. Phen2Gene: rapid phenotype-driven gene prioritization for rare diseases. NAR Genomics Bioinforma. 2020;2:lqaa032 https://doi.org/10.1093/nargab/lqaa032.",
+      "volume": "2",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bib/bbad172",
+      "author": "W Zhai",
+      "doi-asserted-by": "publisher",
+      "first-page": "bbad172",
+      "journal-title": "Brief Bioinforma",
+      "key": "1486_CR20",
+      "unstructured": "Zhai W, Huang X, Shen N, Zhu S. Phen2Disease: a phenotype-driven model for disease and gene prioritization by bidirectional maximum matching semantic similarities. Brief Bioinforma. 2023;24:bbad172 https://doi.org/10.1093/bib/bbad172.",
+      "volume": "24",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1002/humu.23114",
+      "author": "S Laurie",
+      "doi-asserted-by": "publisher",
+      "first-page": "1263",
+      "journal-title": "Hum Mutat",
+      "key": "1486_CR21",
+      "unstructured": "Laurie S, Fernandez-Callejo M, Marco-Sola S, Trotta JR, Camps J, Chacón A, et al. From Wet-Lab to Variations: Concordance and Speed of Bioinformatics Pipelines for Whole Genome and Whole Exome Sequencing. Hum Mutat. 2016;37:1263–71. https://doi.org/10.1002/humu.23114.",
+      "volume": "37",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.09.017",
+      "author": "PN Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "610",
+      "journal-title": "Am J Hum Genet",
+      "key": "1486_CR22",
+      "unstructured": "Robinson PN, Köhler S, Bauer S, Seelow D, Horn D, Mundlos S. The Human Phenotype Ontology: A Tool for Annotating and Analyzing Human Hereditary Disease. Am J Hum Genet. 2008;83:610–5.",
+      "volume": "83",
+      "year": "2008"
+    },
+    {
+      "key": "1486_CR23",
+      "unstructured": "What Is The Orphanet Rare Disease Ontology (ORDO)? https://www.orphadata.com/docs/WhatIsORDO.pdf."
+    },
+    {
+      "key": "1486_CR24",
+      "unstructured": "What Is Hoom (The Hpo-Ordo Ontological Module)? https://www.orphadata.com/docs/WhatIsHOOM.pdf."
+    },
+    {
+      "DOI": "10.1038/ng.3312",
+      "author": "I Lappalainen",
+      "doi-asserted-by": "publisher",
+      "first-page": "692",
+      "journal-title": "Nat Genet",
+      "key": "1486_CR25",
+      "unstructured": "Lappalainen I, Almeida-King J, Kumanduri V, Senf A, Spalding JD, Ur-Rehman S, et al. The European Genome-phenome Archive of human data consented for biomedical research. Nat Genet. 2015;47:692–5. https://doi.org/10.1038/ng.3312",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty742",
+      "author": "KJ van der Velde",
+      "doi-asserted-by": "publisher",
+      "first-page": "1076",
+      "journal-title": "Bioinformatics",
+      "key": "1486_CR26",
+      "unstructured": "van der Velde KJ, Imhann F, Charbon B, Pang C, van Enckevort D, Slofstra M, et al. MOLGENIS research: advanced bioinformatics data software for non-bioinformaticians. Bioinformatics. 2019;35:1076–8. https://doi.org/10.1093/bioinformatics/bty742.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "key": "1486_CR27",
+      "unstructured": "The Global Alliance for Genomics and Health. https://www.ga4gh.org."
+    },
+    {
+      "key": "1486_CR28",
+      "unstructured": "Phenopackets - Concepts and Technology. http://phenopackets.org/."
+    },
+    {
+      "key": "1486_CR29",
+      "unstructured": "Resnik P. Using Information Content to Evaluate Semantic Similarity in a Taxonomy. Proceedings of the 14th International Joint Conference on Artificial Intelligence (1995) https://arxiv.org/pdf/cmp-lg/9511007.pdf."
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1000443",
+      "author": "C Pesquita",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1000443",
+      "journal-title": "PLoS Comput Biol",
+      "key": "1486_CR30",
+      "unstructured": "Pesquita C, Faria D, Falcão AO, Lord P, Couto FM. Semantic similarity in biomedical ontologies. PLoS Comput Biol 2009;5:e1000443.",
+      "volume": "5",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.09.003",
+      "doi-asserted-by": "crossref",
+      "key": "1486_CR31",
+      "unstructured": "Köhler S, Schulz MH, Krawitz P, Bauer S, Dölken S, Ott CE, et al. Clinical Diagnostics in Human Genetics with Semantic Similarity Searches in Ontologies. Am J Hum Genet. 85, 457–64."
+    },
+    {
+      "DOI": "10.1093/database/bay026",
+      "doi-asserted-by": "crossref",
+      "key": "1486_CR32",
+      "unstructured": "Köhler S. Improved ontology-based similarity calculations using a study-wise annotation model. Database (Oxford). 2018;2018:bay026."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts471",
+      "author": "S Bauer",
+      "doi-asserted-by": "publisher",
+      "first-page": "2502",
+      "journal-title": "Bioinformatics",
+      "key": "1486_CR33",
+      "unstructured": "Bauer S, Köhler S, Schulz MH, Robinson PN. Bayesian ontology querying for accurate and noise-tolerant semantic searches. Bioinformatics. 2012;28:2502–8.",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/database/bat025",
+      "doi-asserted-by": "crossref",
+      "key": "1486_CR34",
+      "unstructured": "Smedley D, Oellrich A, Köhler S, Ruef B, Westerfield M, Robinson P, et al. PhenoDigm: analyzing curated annotations to associate animal models with human diseases. Database (Oxford). 2013;2013:bat025."
+    },
+    {
+      "key": "1486_CR35",
+      "unstructured": "Köhler S, Havrylenko S, Adaptation of BOQA algorithm to its use in the ontology of unsolved rare diseases. Solve-RD D1.10 Deliverable https://solve-rd.eu/wp-content/uploads/2021/11/D1.10-Adaptation-of-BOQA-algorithm-to-its-use-in-the-on-tology-of-unsolved-RD_public.pdf."
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med",
+      "key": "1486_CR36",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. ACMG Laboratory Quality Assurance Committee. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med 2015;17:405–24. https://doi.org/10.1038/gim.2015.30.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1086/344210",
+      "author": "E Reid",
+      "doi-asserted-by": "publisher",
+      "first-page": "1189",
+      "journal-title": "Am J Hum Genet.",
+      "key": "1486_CR37",
+      "unstructured": "Reid E, Kloos M, Ashley-Koch A, Hughes L, Bevan S, Svenson IK. et al. A Kinesin Heavy Chain (KIF5A) Mutation in Hereditary Spastic Paraplegia (SPG10). Am J Hum Genet.2002;71:1189 https://doi.org/10.1086/344210.",
+      "volume": "71",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/0006-291x(90)92374-9",
+      "author": "M Maekawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "677",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "1486_CR38",
+      "unstructured": "Maekawa M, Sudo K, Kanno T, Li SS. Molecular characterization of genetic mutation in human lactate dehydrogenase-A (M) deficiency. Biochem Biophys Res Commun. 1990;168:677–82. https://doi.org/10.1016/0006-291x(90)92374-9.",
+      "volume": "168",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1006/bbrc.1994.1071",
+      "author": "N Sakai",
+      "doi-asserted-by": "publisher",
+      "first-page": "485",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "1486_CR39",
+      "unstructured": "Sakai N, Inui K, Fujii N, Fukushima H, Nishimoto J, Yanagihara I, et al. Krabbe disease: isolation and characterization of a full-length cDNA for human galactocerebrosidase. Biochem Biophys Res Commun. 1994;198:485–91. https://doi.org/10.1006/bbrc.1994.1071.",
+      "volume": "198",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1007/s00415-015-7755-y",
+      "author": "D Daud",
+      "doi-asserted-by": "publisher",
+      "first-page": "1673",
+      "journal-title": "J Neurol",
+      "key": "1486_CR40",
+      "unstructured": "Daud D, Griffin H, Douroudis K, Kleinle S, Eglon G, Pyle A, et al. Whole exome sequencing and the clinician: we need clinical skills and functional validation in variant filtering. J Neurol 2015;262:1673–7. https://doi.org/10.1007/s00415-015-7755-y.",
+      "volume": "262",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2010.11.036",
+      "author": "JO Johnson",
+      "doi-asserted-by": "publisher",
+      "first-page": "857",
+      "journal-title": "Neuron",
+      "key": "1486_CR41",
+      "unstructured": "Johnson JO, Mandrioli J, Benatar M, Abramzon Y, Van Deerlin VM, Trojanowski, et al. Exome sequencing reveals VCP mutations as a cause of familial ALS. Neuron. 2010;68:857–64. https://doi.org/10.1016/j.neuron.2010.11.036.",
+      "volume": "68",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2035790",
+      "author": "D Smedley",
+      "doi-asserted-by": "publisher",
+      "first-page": "1868",
+      "journal-title": "N. Engl J Med",
+      "key": "1486_CR42",
+      "unstructured": "Smedley D, Smith KR, Martin A, Thomas EA, Mcdonagh EM, Cipriani V, et al. The 100,000 genomes pilot on rare disease diagnosis in healthcare—A preliminary report. N. Engl J Med. 2021;385:1868–80.",
+      "volume": "385",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv557",
+      "author": "M Franz",
+      "doi-asserted-by": "publisher",
+      "first-page": "309",
+      "journal-title": "Bioinformatics",
+      "key": "1486_CR43",
+      "unstructured": "Franz M, Lopes CT, Huck G, Dong Y, Sumer O, Bader GD. Cytoscape.js: a graph theory library for visualisation and analysis. Bioinformatics 2016;32:309–11. https://doi.org/10.1093/bioinformatics/btv557.",
+      "volume": "32",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 43,
+  "references-count": 43,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2948814/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01486-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Phenotypic similarity-based approach for variant prioritization for unsolved rare disease: a preliminary methodological report"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "32"
+}

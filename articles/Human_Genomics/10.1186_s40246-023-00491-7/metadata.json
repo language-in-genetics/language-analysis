@@ -1,0 +1,997 @@
+{
+  "DOI": "10.1186/s40246-023-00491-7",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00491-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eUbiquitin-related rare diseases are generally characterized by developmental delays and mental retardation, but the exact incidence or prevalence is not yet fully understood. The clinical application of next-generation sequencing for pediatric seizures and developmental delay of unknown causes has become common in studies aimed at identification of a causal gene in patients with ubiquitin-related rare diseases that cannot be diagnosed using conventional fluorescence in situ hybridization or chromosome microarray tests. Our study aimed to investigate the effects of ubiquitin–proteasome system on ultra-rare neurodevelopmental diseases, through functional identification of candidate genes and variants.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn our present work, we carried out genome analysis of a patient with clinical phenotypes of developmental delay and intractable convulsion, to identify causal mutations. Further characterization of the candidate gene was performed using zebrafish, through gene knockdown approaches. Transcriptomic analysis using whole embryos of zebrafish knockdown morphants and additional functional studies identified downstream pathways of the candidate gene affecting neurogenesis.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThrough trio-based whole-genome sequencing analysis, we identified a de novo missense variant of the ubiquitin system-related gene \u003cjats:italic\u003eUBE2H\u003c/jats:italic\u003e (c.449C\u0026gt;T; p.Thr150Met) in the proband. Using zebrafish, we found that Ube2h is required for normal brain development. Differential gene expression analysis revealed activation of the ATM-p53 signaling pathway in the absence of Ube2h. Moreover, depletion of \u003cjats:italic\u003eube2h\u003c/jats:italic\u003e led to induction of apoptosis, specifically in the differentiated neural cells. Finally, we found that a missense mutation in zebrafish, \u003cjats:italic\u003eube2h\u003c/jats:italic\u003e (c.449C\u0026gt;T; p.Thr150Met), which mimics a variant identified in a patient with neurodevelopmental defects, causes aberrant Ube2h function in zebrafish embryos.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eA de novo heterozygous variant in the \u003cjats:italic\u003eUBE2H\u003c/jats:italic\u003e c.449C\u0026gt;T (p.Thr150Met) has been identified in a pediatric patient with global developmental delay and UBE2H is essential for normal neurogenesis in the brain.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "491"
+  ],
+  "article-number": "44",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "17 January 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "8 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "19 May 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Informed consent was obtained from the patients, for publication and genetic analyses. This study was performed in accordance with the Declaration of Helsinki. A blood sample was collected for DNA extraction, and informed consent was obtained from all study participants before the blood was drawn. Zebrafish were raised in accordance with Ulsan National Institute of Science and Technology and Use Committees (IACUC: UNISTIACUC-20-09)."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Shin",
+      "given": "Unbeom",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Choi",
+      "given": "Yeonsong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ko",
+      "given": "Hwa Soo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Myung",
+      "given": "Kyungjae",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lee",
+      "given": "Semin",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8609-5826",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Cheon",
+      "given": "Chong Kun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lee",
+      "given": "Yoonsung",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        19
+      ]
+    ],
+    "date-time": "2023-05-19T17:01:40Z",
+    "timestamp": 1684515700000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        19
+      ]
+    ],
+    "date-time": "2023-05-19T18:04:22Z",
+    "timestamp": 1684519462000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        6
+      ]
+    ],
+    "date-time": "2024-02-06T23:59:13Z",
+    "timestamp": 1707263953632
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        19
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            19
+          ]
+        ],
+        "date-time": "2023-05-19T00:00:00Z",
+        "timestamp": 1684454400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            19
+          ]
+        ],
+        "date-time": "2023-05-19T00:00:00Z",
+        "timestamp": 1684454400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00491-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00491-7/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00491-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        19
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3389/fnmol.2014.00070",
+      "author": "NP Dantuma",
+      "doi-asserted-by": "publisher",
+      "first-page": "70",
+      "journal-title": "Front Mol Neurosci",
+      "key": "491_CR1",
+      "unstructured": "Dantuma NP, Bott LC. The ubiquitin-proteasome system in neurodegenerative diseases: precipitating factor, yet part of the solution. Front Mol Neurosci. 2014;7:70.",
+      "volume": "7",
+      "year": "2014"
+    },
+    {
+      "key": "491_CR2",
+      "unstructured": "Dagli AI, Mathews J, Williams CA. Angelman syndrome. In: Adam MP, Everman DB, Mirzaa GM, Pagon RA, Wallace SE, Bean LJH, et al., editors. GeneReviews((R)). Seattle, WA; 1993."
+    },
+    {
+      "DOI": "10.1097/00041444-200312000-00005",
+      "author": "P Vourc'h",
+      "doi-asserted-by": "publisher",
+      "first-page": "221",
+      "issue": "4",
+      "journal-title": "Psychiatr Genet",
+      "key": "491_CR3",
+      "unstructured": "Vourc’h P, Martin I, Bonnet-Brilhault F, Marouillat S, Barthelemy C, Pierre Muh J, et al. Mutation screening and association study of the UBE2H gene on chromosome 7q32 in autistic disorder. Psychiatr Genet. 2003;13(4):221–5.",
+      "volume": "13",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/ng0997-12",
+      "author": "TH Vu",
+      "doi-asserted-by": "publisher",
+      "first-page": "12",
+      "issue": "1",
+      "journal-title": "Nat Genet",
+      "key": "491_CR4",
+      "unstructured": "Vu TH, Hoffman AR. Imprinting of the Angelman syndrome gene, UBE3A, is restricted to brain. Nat Genet. 1997;17(1):12–3.",
+      "volume": "17",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1038/ng0997-14",
+      "author": "C Rougeulle",
+      "doi-asserted-by": "publisher",
+      "first-page": "14",
+      "issue": "1",
+      "journal-title": "Nat Genet",
+      "key": "491_CR5",
+      "unstructured": "Rougeulle C, Glatt H, Lalande M. The Angelman syndrome candidate gene, UBE3A/E6-AP, is imprinted in brain. Nat Genet. 1997;17(1):14–5.",
+      "volume": "17",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1038/s42003-019-0350-5",
+      "author": "M Olabarria",
+      "doi-asserted-by": "publisher",
+      "first-page": "111",
+      "journal-title": "Commun Biol",
+      "key": "491_CR6",
+      "unstructured": "Olabarria M, Pasini S, Corona C, Robador P, Song C, Patel H, et al. Dysfunction of the ubiquitin ligase E3A Ube3A/E6-AP contributes to synaptic pathology in Alzheimer’s disease. Commun Biol. 2019;2:111.",
+      "volume": "2",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/978-3-030-38266-7_14",
+      "author": "G Meroni",
+      "doi-asserted-by": "publisher",
+      "first-page": "311",
+      "journal-title": "Adv Exp Med Biol",
+      "key": "491_CR7",
+      "unstructured": "Meroni G. TRIM E3 ubiquitin ligases in rare genetic disorders. Adv Exp Med Biol. 2020;1233:311–25.",
+      "volume": "1233",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nrc3139",
+      "author": "S Hatakeyama",
+      "doi-asserted-by": "publisher",
+      "first-page": "792",
+      "issue": "11",
+      "journal-title": "Nat Rev Cancer",
+      "key": "491_CR8",
+      "unstructured": "Hatakeyama S. TRIM proteins and cancer. Nat Rev Cancer. 2011;11(11):792–804.",
+      "volume": "11",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3390/cells10040820",
+      "author": "L Kumarasinghe",
+      "doi-asserted-by": "publisher",
+      "first-page": "820",
+      "issue": "4",
+      "journal-title": "Cells",
+      "key": "491_CR9",
+      "unstructured": "Kumarasinghe L, Xiong L, Garcia-Gimeno MA, Lazzari E, Sanz P, Meroni G. TRIM32 and Malin in neurological and neuromuscular rare diseases. Cells. 2021;10(4):820.",
+      "volume": "10",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/S0021-9258(17)37039-4",
+      "author": "P Kaiser",
+      "doi-asserted-by": "publisher",
+      "first-page": "8797",
+      "issue": "12",
+      "journal-title": "J Biol Chem",
+      "key": "491_CR10",
+      "unstructured": "Kaiser P, Seufert W, Hofferer L, Kofler B, Sachsenmaier C, Herzog H, et al. A human ubiquitin-conjugating enzyme homologous to yeast UBC8. J Biol Chem. 1994;269(12):8797–802.",
+      "volume": "269",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1038/nrn2499",
+      "author": "HC Tai",
+      "doi-asserted-by": "publisher",
+      "first-page": "826",
+      "issue": "11",
+      "journal-title": "Nat Rev Neurosci",
+      "key": "491_CR11",
+      "unstructured": "Tai HC, Schuman EM. Ubiquitin, the proteasome and protein degradation in neuronal function and dysfunction. Nat Rev Neurosci. 2008;9(11):826–38.",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/hmg/8.13.2387",
+      "author": "N Blagitko",
+      "doi-asserted-by": "publisher",
+      "first-page": "2387",
+      "issue": "13",
+      "journal-title": "Hum Mol Genet",
+      "key": "491_CR12",
+      "unstructured": "Blagitko N, Schulz U, Schinzel AA, Ropers HH, Kalscheuer VM. gamma2-COP, a novel imprinted gene on chromosome 7q32, defines a new imprinting cluster in the human genome. Hum Mol Genet. 1999;8(13):2387–96.",
+      "volume": "8",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.3109/17482960802444972",
+      "author": "I Martin",
+      "doi-asserted-by": "publisher",
+      "first-page": "432",
+      "issue": "5–6",
+      "journal-title": "Amyotroph Lateral Scler",
+      "key": "491_CR13",
+      "unstructured": "Martin I, Vourc’h P, Mahe M, Thepault RA, Antar C, Vedrine S, et al. Association study of the ubiquitin conjugating enzyme gene UBE2H in sporadic ALS. Amyotroph Lateral Scler. 2009;10(5–6):432–5.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.3390/ijms21093398",
+      "author": "KH Lim",
+      "doi-asserted-by": "publisher",
+      "first-page": "3398",
+      "issue": "9",
+      "journal-title": "Int J Mol Sci",
+      "key": "491_CR14",
+      "unstructured": "Lim KH, Joo JY. Predictive potential of circulating Ube2h mRNA as an E2 ubiquitin-conjugating enzyme for diagnosis or treatment of Alzheimer’s disease. Int J Mol Sci. 2020;21(9):3398.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp324",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1754",
+      "issue": "14",
+      "journal-title": "Bioinformatics",
+      "key": "491_CR15",
+      "unstructured": "Li H, Durbin R. Fast and accurate short read alignment with Burrows–Wheeler transform. Bioinformatics. 2009;25(14):1754–60.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1101/gr.107524.110",
+      "author": "A McKenna",
+      "doi-asserted-by": "publisher",
+      "first-page": "1297",
+      "issue": "9",
+      "journal-title": "Genome Res",
+      "key": "491_CR16",
+      "unstructured": "McKenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, Kernytsky A, et al. The genome analysis toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Res. 2010;20(9):1297–303.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "issue": "5",
+      "journal-title": "Genet Med",
+      "key": "491_CR17",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17(5):405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.01.004",
+      "author": "Q Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "267",
+      "issue": "2",
+      "journal-title": "Am J Hum Genet",
+      "key": "491_CR18",
+      "unstructured": "Li Q, Wang K. InterVar: clinical interpretation of genetic variants by the 2015 ACMG-AMP guidelines. Am J Hum Genet. 2017;100(2):267–80.",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "A Auton",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "491_CR19",
+      "unstructured": "Genomes Project C, Auton A, Brooks LD, Durbin RM, Garrison EP, Kang HM, et al. A global reference for human genetic variation. Nature. 2015;526(7571):68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "issue": "7809",
+      "journal-title": "Nature",
+      "key": "491_CR20",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alfoldi J, Wang Q, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581(7809):434–43.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1126/sciadv.aaz7835",
+      "author": "S Jeon",
+      "doi-asserted-by": "publisher",
+      "first-page": "eaaz7835",
+      "issue": "22",
+      "journal-title": "Sci Adv",
+      "key": "491_CR21",
+      "unstructured": "Jeon S, Bhak Y, Choi Y, Jeon Y, Kim S, Jang J, et al. Korean Genome Project: 1094 Korean personal genomes with clinical information. Sci Adv. 2020;6(22):eaaz7835.",
+      "volume": "6",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1043",
+      "author": "S Kohler",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1207",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "491_CR22",
+      "unstructured": "Kohler S, Gargano M, Matentzoglu N, Carmody LC, Lewis-Smith D, Vasilevsky NA, et al. The human phenotype ontology in 2021. Nucleic Acids Res. 2021;49(D1):D1207–17.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-323",
+      "author": "B Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "323",
+      "journal-title": "BMC Bioinform",
+      "key": "491_CR23",
+      "unstructured": "Li B, Dewey CN. RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome. BMC Bioinform. 2011;12:323.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s13059-014-0550-8",
+      "author": "MI Love",
+      "doi-asserted-by": "publisher",
+      "first-page": "550",
+      "issue": "12",
+      "journal-title": "Genome Biol",
+      "key": "491_CR24",
+      "unstructured": "Love MI, Huber W, Anders S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 2014;15(12):550.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/1471-2105-14-128",
+      "author": "EY Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "128",
+      "journal-title": "BMC Bioinform",
+      "key": "491_CR25",
+      "unstructured": "Chen EY, Tan CM, Kou Y, Duan Q, Wang Z, Meirelles GV, et al. Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool. BMC Bioinform. 2013;14:128.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/75556",
+      "author": "M Ashburner",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "issue": "1",
+      "journal-title": "Nat Genet",
+      "key": "491_CR26",
+      "unstructured": "Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, et al. Gene ontology: tool for the unification of biology. The gene ontology consortium. Nat Genet. 2000;25(1):25–9.",
+      "volume": "25",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1101/cshperspect.a026104",
+      "author": "J Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "a026104",
+      "issue": "3",
+      "journal-title": "Cold Spring Harb Perspect Med",
+      "key": "491_CR27",
+      "unstructured": "Chen J. The cell-cycle arrest and apoptotic functions of p53 in Tumor initiation and progression. Cold Spring Harb Perspect Med. 2016;6(3):a026104.",
+      "volume": "6",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007000",
+      "author": "DYR Stainier",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007000",
+      "issue": "10",
+      "journal-title": "PLoS Genet",
+      "key": "491_CR28",
+      "unstructured": "Stainier DYR, Raz E, Lawson ND, Ekker SC, Burdine RD, Eisen JS, et al. Guidelines for morpholino use in zebrafish. PLoS Genet. 2017;13(10):e1007000.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030078",
+      "author": "ME Robu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e78",
+      "issue": "5",
+      "journal-title": "PLoS Genet",
+      "key": "491_CR29",
+      "unstructured": "Robu ME, Larson JD, Nasevicius A, Beiraghi S, Brenner C, Farber SA, et al. p53 activation by knockdown technologies. PLoS Genet. 2007;3(5):e78.",
+      "volume": "3",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/sj.onc.1204252",
+      "author": "WR Taylor",
+      "doi-asserted-by": "publisher",
+      "first-page": "1803",
+      "issue": "15",
+      "journal-title": "Oncogene",
+      "key": "491_CR30",
+      "unstructured": "Taylor WR, Stark GR. Regulation of the G2/M transition by p53. Oncogene. 2001;20(15):1803–15.",
+      "volume": "20",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1006/dbio.2000.9898",
+      "author": "HC Park",
+      "doi-asserted-by": "publisher",
+      "first-page": "279",
+      "issue": "2",
+      "journal-title": "Dev Biol",
+      "key": "491_CR31",
+      "unstructured": "Park HC, Kim CH, Bae YK, Yeo SY, Kim SH, Hong SK, et al. Analysis of upstream elements in the HuC promoter leads to the establishment of transgenic zebrafish with fluorescent neurons. Dev Biol. 2000;227(2):279–93.",
+      "volume": "227",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1523/JNEUROSCI.2079-08.2008",
+      "author": "HF McGraw",
+      "doi-asserted-by": "publisher",
+      "first-page": "12558",
+      "issue": "47",
+      "journal-title": "J Neurosci",
+      "key": "491_CR32",
+      "unstructured": "McGraw HF, Nechiporuk A, Raible DW. Zebrafish dorsal root ganglia neural precursor cells adopt a glial fate in the absence of neurogenin1. J Neurosci. 2008;28(47):12558–69.",
+      "volume": "28",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1159/000082134",
+      "author": "P Ellis",
+      "doi-asserted-by": "publisher",
+      "first-page": "148",
+      "issue": "2–4",
+      "journal-title": "Dev Neurosci",
+      "key": "491_CR33",
+      "unstructured": "Ellis P, Fagan BM, Magness ST, Hutton S, Taranova O, Hayashi S, et al. SOX2, a persistent marker for multipotential neural stem cells derived from embryonic stem cells, the embryo or the adult. Dev Neurosci. 2004;26(2–4):148–65.",
+      "volume": "26",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.3389/fnmol.2021.662774",
+      "author": "S Tutukova",
+      "doi-asserted-by": "publisher",
+      "first-page": "662774",
+      "journal-title": "Front Mol Neurosci",
+      "key": "491_CR34",
+      "unstructured": "Tutukova S, Tarabykin V, Hernandez-Miranda LR. The role of neurod genes in brain development, function, and disease. Front Mol Neurosci. 2021;14:662774.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/0014-5793(95)01323-7",
+      "author": "P Kaiser",
+      "doi-asserted-by": "publisher",
+      "first-page": "193",
+      "issue": "2",
+      "journal-title": "FEBS Lett",
+      "key": "491_CR35",
+      "unstructured": "Kaiser P, Mandl S, Schweiger M, Schneider R. Characterization of functionally independent domains in the human ubiquitin conjugating enzyme UbcH2. FEBS Lett. 1995;377(2):193–6.",
+      "volume": "377",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1096/fj.02-0759com",
+      "author": "YP Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1048",
+      "issue": "9",
+      "journal-title": "FASEB J",
+      "key": "491_CR36",
+      "unstructured": "Li YP, Lecker SH, Chen Y, Waddell ID, Goldberg AL, Reid MB. TNF-alpha increases ubiquitin-conjugating activity in skeletal muscle by up-regulating UbcH2/E220k. FASEB J. 2003;17(9):1048–57.",
+      "volume": "17",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.32694",
+      "author": "M Sokolowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "774",
+      "issue": "8",
+      "journal-title": "Am J Med Genet B Neuropsychiatr Genet",
+      "key": "491_CR37",
+      "unstructured": "Sokolowski M, Wasserman J, Wasserman D. Gene-level associations in suicide attempter families show overrepresentation of synaptic genes and genes differentially expressed in brain development. Am J Med Genet B Neuropsychiatr Genet. 2018;177(8):774–84.",
+      "volume": "177",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13229-020-00409-3",
+      "author": "S Hurley",
+      "doi-asserted-by": "publisher",
+      "first-page": "16",
+      "issue": "1",
+      "journal-title": "Mol Autism",
+      "key": "491_CR38",
+      "unstructured": "Hurley S, Mohan C, Suetterlin P, Ellingford R, Riegman KLH, Ellegood J, et al. Distinct, dosage-sensitive requirements for the autism-associated factor CHD8 during cortical development. Mol Autism. 2021;12(1):16.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/S0092-8674(00)80086-0",
+      "author": "C Barlow",
+      "doi-asserted-by": "publisher",
+      "first-page": "159",
+      "issue": "1",
+      "journal-title": "Cell",
+      "key": "491_CR39",
+      "unstructured": "Barlow C, Hirotsune S, Paylor R, Liyanage M, Eckhaus M, Collins F, et al. Atm-deficient mice: a paradigm of ataxia telangiectasia. Cell. 1996;86(1):159–71.",
+      "volume": "86",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1038/nrn2559",
+      "author": "PJ McKinnon",
+      "doi-asserted-by": "publisher",
+      "first-page": "100",
+      "issue": "2",
+      "journal-title": "Nat Rev Neurosci",
+      "key": "491_CR40",
+      "unstructured": "McKinnon PJ. DNA repair deficiency and neurological disease. Nat Rev Neurosci. 2009;10(2):100–12.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1523/JNEUROSCI.4213-15.2016",
+      "author": "V Enriquez-Rios",
+      "doi-asserted-by": "publisher",
+      "first-page": "893",
+      "issue": "4",
+      "journal-title": "J Neurosci",
+      "key": "491_CR41",
+      "unstructured": "Enriquez-Rios V, Dumitrache LC, Downing SM, Li Y, Brown EJ, Russell HR, et al. DNA-PKcs, ATM, and ATR interplay maintains genome integrity during neurogenesis. J Neurosci. 2017;37(4):893–905.",
+      "volume": "37",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.tcb.2021.01.009",
+      "author": "HC Osborne",
+      "doi-asserted-by": "publisher",
+      "first-page": "628",
+      "issue": "8",
+      "journal-title": "Trends Cell Biol",
+      "key": "491_CR42",
+      "unstructured": "Osborne HC, Irving E, Forment JV, Schmidt CK. E2 enzymes in genome stability: pulling the strings behind the scenes. Trends Cell Biol. 2021;31(8):628–43.",
+      "volume": "31",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/sj.cdd.4400741",
+      "author": "RS Morrison",
+      "doi-asserted-by": "publisher",
+      "first-page": "868",
+      "issue": "10",
+      "journal-title": "Cell Death Differ",
+      "key": "491_CR43",
+      "unstructured": "Morrison RS, Kinoshita Y. The role of p53 in neuronal cell death. Cell Death Differ. 2000;7(10):868–79.",
+      "volume": "7",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1016/j.ydbio.2004.01.014",
+      "author": "X Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "81",
+      "issue": "1",
+      "journal-title": "Dev Biol",
+      "key": "491_CR44",
+      "unstructured": "Yang X, Klein R, Tian X, Cheng HT, Kopan R, Shen J. Notch activation induces apoptosis in neural progenitor cells through a p53-dependent pathway. Dev Biol. 2004;269(1):81–94.",
+      "volume": "269",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.4161/cc.9.3.10556",
+      "author": "Q Cheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "472",
+      "issue": "3",
+      "journal-title": "Cell Cycle",
+      "key": "491_CR45",
+      "unstructured": "Cheng Q, Chen J. Mechanism of p53 stabilization by ATM after DNA damage. Cell Cycle. 2010;9(3):472–8.",
+      "volume": "9",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2006.01.020",
+      "author": "CL Brooks",
+      "doi-asserted-by": "publisher",
+      "first-page": "307",
+      "issue": "3",
+      "journal-title": "Mol Cell",
+      "key": "491_CR46",
+      "unstructured": "Brooks CL, Gu W. p53 ubiquitination: Mdm2 and beyond. Mol Cell. 2006;21(3):307–15.",
+      "volume": "21",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.febslet.2011.05.022",
+      "author": "CL Brooks",
+      "doi-asserted-by": "publisher",
+      "first-page": "2803",
+      "issue": "18",
+      "journal-title": "FEBS Lett",
+      "key": "491_CR47",
+      "unstructured": "Brooks CL, Gu W. p53 regulation by ubiquitin. FEBS Lett. 2011;585(18):2803–9.",
+      "volume": "585",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1074/jbc.M403362200",
+      "author": "MK Saville",
+      "doi-asserted-by": "publisher",
+      "first-page": "42169",
+      "issue": "40",
+      "journal-title": "J Biol Chem",
+      "key": "491_CR48",
+      "unstructured": "Saville MK, Sparks A, Xirodimas DP, Wardrop J, Stevenson LF, Bourdon JC, et al. Regulation of p53 by the ubiquitin-conjugating enzymes UbcH5B/C in vivo. J Biol Chem. 2004;279(40):42169–81.",
+      "volume": "279",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1074/jbc.C400300200",
+      "author": "R Rajendra",
+      "doi-asserted-by": "publisher",
+      "first-page": "36440",
+      "issue": "35",
+      "journal-title": "J Biol Chem",
+      "key": "491_CR49",
+      "unstructured": "Rajendra R, Malegaonkar D, Pungaliya P, Marshall H, Rasheed Z, Brownell J, et al. Topors functions as an E3 ubiquitin ligase with specific E2 enzymes and ubiquitinates p53. J Biol Chem. 2004;279(35):36440–4.",
+      "volume": "279",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1126/science.1127335",
+      "author": "D Dornan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1122",
+      "issue": "5790",
+      "journal-title": "Science",
+      "key": "491_CR50",
+      "unstructured": "Dornan D, Shimizu H, Mah A, Dudhela T, Eby M, O’Rourke K, et al. ATM engages autodegradation of the E3 ubiquitin ligase COP1 after DNA damage. Science. 2006;313(5790):1122–6.",
+      "volume": "313",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1128/MCB.00821-08",
+      "author": "CM Lovly",
+      "doi-asserted-by": "publisher",
+      "first-page": "5874",
+      "issue": "19",
+      "journal-title": "Mol Cell Biol",
+      "key": "491_CR51",
+      "unstructured": "Lovly CM, Yan L, Ryan CE, Takada S, Piwnica-Worms H. Regulation of Chk2 ubiquitination and signaling through autophosphorylation of serine 379. Mol Cell Biol. 2008;28(19):5874–85.",
+      "volume": "28",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1128/MCB.23.15.5113-5121.2003",
+      "author": "Y Pan",
+      "doi-asserted-by": "publisher",
+      "first-page": "5113",
+      "issue": "15",
+      "journal-title": "Mol Cell Biol",
+      "key": "491_CR52",
+      "unstructured": "Pan Y, Chen J. MDM2 promotes ubiquitination and degradation of MDMX. Mol Cell Biol. 2003;23(15):5113–21.",
+      "volume": "23",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/nar/gkz124",
+      "author": "L Haronikova",
+      "doi-asserted-by": "publisher",
+      "first-page": "3257",
+      "issue": "7",
+      "journal-title": "Nucleic Acids Res",
+      "key": "491_CR53",
+      "unstructured": "Haronikova L, Olivares-Illana V, Wang L, Karakostis K, Chen S, Fahraeus R. The p53 mRNA: an integral part of the cellular stress response. Nucleic Acids Res. 2019;47(7):3257–71.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.4161/cc.9.16.12551",
+      "author": "TC Tuoc",
+      "doi-asserted-by": "publisher",
+      "first-page": "3174",
+      "issue": "16",
+      "journal-title": "Cell Cycle",
+      "key": "491_CR54",
+      "unstructured": "Tuoc TC, Stoykova A. Roles of the ubiquitin-proteosome system in neurogenesis. Cell Cycle. 2010;9(16):3174–80.",
+      "volume": "9",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/nature06780",
+      "author": "TF Westbrook",
+      "doi-asserted-by": "publisher",
+      "first-page": "370",
+      "issue": "7185",
+      "journal-title": "Nature",
+      "key": "491_CR55",
+      "unstructured": "Westbrook TF, Hu G, Ang XL, Mulligan P, Pavlova NN, Liang A, et al. SCFbeta-TRCP controls oncogenic transformation and neural differentiation through REST degradation. Nature. 2008;452(7185):370–4.",
+      "volume": "452",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/ncb1727",
+      "author": "X Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "643",
+      "issue": "6",
+      "journal-title": "Nat Cell Biol",
+      "key": "491_CR56",
+      "unstructured": "Zhao X, Heng JI, Guardavaccaro D, Jiang R, Pagano M, Guillemot F, et al. The HECT-domain ubiquitin ligase Huwe1 controls neural differentiation and proliferation by destabilizing the N-Myc oncoprotein. Nat Cell Biol. 2008;10(6):643–53.",
+      "volume": "10",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.cell.2008.12.024",
+      "author": "JC Schwamborn",
+      "doi-asserted-by": "publisher",
+      "first-page": "913",
+      "issue": "5",
+      "journal-title": "Cell",
+      "key": "491_CR57",
+      "unstructured": "Schwamborn JC, Berezikov E, Knoblich JA. The TRIM-NHL protein TRIM32 activates microRNAs and prevents self-renewal in mouse neural progenitors. Cell. 2009;136(5):913–25.",
+      "volume": "136",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1101/gad.471708",
+      "author": "TC Tuoc",
+      "doi-asserted-by": "publisher",
+      "first-page": "1972",
+      "issue": "14",
+      "journal-title": "Genes Dev",
+      "key": "491_CR58",
+      "unstructured": "Tuoc TC, Stoykova A. Trim11 modulates the function of neurogenic transcription factor Pax6 through ubiquitin-proteosome system. Genes Dev. 2008;22(14):1972–86.",
+      "volume": "22",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1126/science.1093712",
+      "author": "Y Konishi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1026",
+      "issue": "5660",
+      "journal-title": "Science",
+      "key": "491_CR59",
+      "unstructured": "Konishi Y, Stegmuller J, Matsuda T, Bonni S, Bonni A. Cdh1-APC controls axonal growth and patterning in the mammalian brain. Science. 2004;303(5660):1026–30.",
+      "volume": "303",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.cell.2008.11.050",
+      "author": "AH Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "322",
+      "issue": "2",
+      "journal-title": "Cell",
+      "key": "491_CR60",
+      "unstructured": "Kim AH, Puram SV, Bilimoria PM, Ikeuchi Y, Keough S, Wong M, et al. A centrosomal Cdc20-APC pathway controls dendrite morphogenesis in postmitotic neurons. Cell. 2009;136(2):322–36.",
+      "volume": "136",
+      "year": "2009"
+    }
+  ],
+  "reference-count": 60,
+  "references-count": 60,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00491-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A heterozygous mutation in UBE2H in a patient with developmental delay leads to an aberrant brain development in zebrafish"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

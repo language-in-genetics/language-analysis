@@ -1,0 +1,353 @@
+{
+  "DOI": "10.1002/gepi.20232",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.20232",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eWe propose a new method for haplotyping, genotype calling, and association testing based on a dictionary model for haplotypes. In this framework, a haplotype arises as a concatenation of conserved haplotype segments, drawn from a predefined dictionary according to segment specific probabilities. The observed data consist of unphased multimarker genotypes gathered on a random sample of unrelated individuals. These genotypes are subject to mutation, genotyping errors, and missing data. The true pair of haplotypes corresponding to a person's multimarker genotype is reconstructed using a Markov chain that visits haplotype pairs according to their posterior probabilities. Our implementation of the chain alternates Gibbs steps, which rearrange the phase of a single marker, and Metropolis steps, which swap maternal and paternal haplotypes from a given maker onward. Output of the chain include the most likely haplotype pairs, the most likely genotypes at each marker, and the expected number of occurrences of each haplotype segment. Reconstruction accuracy is comparable to that achieved by the best existing algorithms. More importantly, the dictionary model yields expected counts of conserved haplotype segments. These imputed counts can serve as genetic predictors in association studies, as we illustrate by examples on cystic fibrosis, Friedreich's ataxia, and angiotensin‐I converting enzyme levels. \u003cjats:italic\u003eGenet. Epidemiol\u003c/jats:italic\u003e. © 2007 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.20232"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Ayers",
+      "given": "Kristin L.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Sabatti",
+      "given": "Chiara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lange",
+      "given": "Kenneth",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        8
+      ]
+    ],
+    "date-time": "2007-05-08T20:50:52Z",
+    "timestamp": 1178657452000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        12
+      ]
+    ],
+    "date-time": "2023-10-12T18:56:50Z",
+    "timestamp": 1697137010000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:55:23Z",
+    "timestamp": 1709254523153
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2007,
+            5,
+            8
+          ]
+        ],
+        "date-time": "2007-05-08T00:00:00Z",
+        "timestamp": 1178582400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.20232",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.20232",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "672-683",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2007,
+        5,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2007,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/sj.ejhg.5200619",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_2_1"
+    },
+    {
+      "DOI": "10.1089/cmb.2006.13.767",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_3_1"
+    },
+    {
+      "DOI": "10.1073/pnas.180265397",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_4_1"
+    },
+    {
+      "DOI": "10.1126/science.271.5254.1423",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_5_1"
+    },
+    {
+      "DOI": "10.1046/j.1469-1809.1998.6210055.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_6_1"
+    },
+    {
+      "DOI": "10.1038/ng1001-229",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_7_1"
+    },
+    {
+      "DOI": "10.1142/S0219720003000174",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_8_1"
+    },
+    {
+      "article-title": "Maximum likelihood estimation of molecular haplotype frequencies in a diploid population",
+      "author": "Excoffier L",
+      "first-page": "921",
+      "journal-title": "Mol Biol Evol",
+      "key": "e_1_2_1_9_1",
+      "volume": "12",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1126/science.1069424",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_10_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bth149",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_11_1"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.jhered.a111613",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "DOI": "10.1093/hmg/7.11.1745",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_13_1"
+    },
+    {
+      "DOI": "10.1126/science.2570460",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "article-title": "Mendel version 4.0: a complete package for the exact genetic analysis of discrete traits in pedigree and population data sets",
+      "author": "Lange K",
+      "first-page": "A1886",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_15_1",
+      "volume": "69",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1002/gepi.20073",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_16_1"
+    },
+    {
+      "DOI": "10.1086/344347",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_17_1"
+    },
+    {
+      "DOI": "10.1101/gr.194801",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_18_1"
+    },
+    {
+      "article-title": "An E‐M algorithm and testing strategy for multiple‐locus haplotypes",
+      "author": "Long JC",
+      "first-page": "225",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_19_1",
+      "volume": "56",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1086/500808",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_20_1"
+    },
+    {
+      "DOI": "10.1086/338446",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_21_1"
+    },
+    {
+      "DOI": "10.1126/science.1065573",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_22_1"
+    },
+    {
+      "DOI": "10.1038/35075590",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "DOI": "10.1109/JPROC.2002.804689",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_24_1"
+    },
+    {
+      "article-title": "Friedreich ataxia in Lousiana Acadians: demonstration of a founder effect by analysis of microsatellite‐generated extended haplotypes",
+      "author": "Sirugo G",
+      "first-page": "559",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_25_1",
+      "volume": "50",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1086/319501",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_26_1"
+    },
+    {
+      "article-title": "Bayesian haplotype inference via the dirichlet process",
+      "author": "Xing E",
+      "first-page": "879",
+      "journal-title": "ICML",
+      "key": "e_1_2_1_27_1",
+      "volume": "69",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1101/gr.1837404",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_28_1"
+    }
+  ],
+  "reference-count": 27,
+  "references-count": 27,
+  "relation": {
+    "has-review": [
+      {
+        "asserted-by": "object",
+        "id": "10.3410/f.1088084.541067",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.20232"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A dictionary model for haplotyping, genotype calling, and association testing"
+  ],
+  "type": "journal-article",
+  "volume": "31"
+}

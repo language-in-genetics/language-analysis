@@ -1,0 +1,896 @@
+{
+  "DOI": "10.1038/s41431-023-01485-8",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01485-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003ePerturbation of lipid homoeostasis is a major risk factor for cardiovascular disease (CVD), the leading cause of death worldwide. We aimed to identify genetic variants affecting lipid levels, and thereby risk of CVD, in Greenlanders. Genome-wide association studies (GWAS) of six blood lipids, triglycerides, LDL-cholesterol, HDL-cholesterol, total cholesterol, as well as apolipoproteins A1 and B, were performed in up to 4473 Greenlanders. For genome-wide significant variants, we also tested for associations with additional traits, including CVD events. We identified 11 genome-wide significant loci associated with lipid traits. Most of these loci were already known in Europeans, however, we found a potential causal variant near \u003cjats:italic\u003ePCSK9\u003c/jats:italic\u003e (rs12117661), which was independent of the known \u003cjats:italic\u003ePCSK9\u003c/jats:italic\u003e loss-of-function variant (rs11491147). rs12117661 was associated with lower LDL-cholesterol (β\u003cjats:sub\u003eSD\u003c/jats:sub\u003e(SE) = −0.22 (0.03), \u003cjats:italic\u003ep\u003c/jats:italic\u003e = 6.5 × 10\u003cjats:sup\u003e−12\u003c/jats:sup\u003e) and total cholesterol (−0.17 (0.03), \u003cjats:italic\u003ep\u003c/jats:italic\u003e = 1.1 × 10\u003cjats:sup\u003e−8\u003c/jats:sup\u003e) in the Greenlandic study population. Similar associations were observed in Europeans from the UK Biobank, where the variant was also associated with a lower risk of CVD outcomes. Moreover, rs12117661 was a top eQTL for \u003cjats:italic\u003ePCSK9\u003c/jats:italic\u003e across tissues in European data from the GTEx portal, and was located in a predicted regulatory element, supporting a possible causal impact on \u003cjats:italic\u003ePCSK9\u003c/jats:italic\u003e expression. Combined, the 11 GWAS signals explained up to 16.3% of the variance of the lipid traits. This suggests that the genetic architecture of lipid levels in Greenlanders is different from Europeans, with fewer variants explaining the variance.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1485"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "27 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "14 September 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "11 October 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "30 October 2023"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The study was approved by the Commission for Scientific Research in Greenland (project 2011–13, ref. no. 2011–056978; project 2013–13, ref.no. 2013–090702; and project 2012-16/17, ref.no. 2017-12997) and was conducted in accordance with the ethical standards of the Declaration of Helsinki, second revision. All participants gave informed consent."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-6619-1549",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Senftleber",
+      "given": "Ninna Karsbæk",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8227-1469",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Andersen",
+      "given": "Mette K.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0593-7906",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Jørsboe",
+      "given": "Emil",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2295-8637",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Stæger",
+      "given": "Frederik Filip",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nøhr",
+      "given": "Anne Krogh",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3150-1708",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Garcia-Erill",
+      "given": "Genis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Meisner",
+      "given": "Jonas",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3021-6809",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Santander",
+      "given": "Cindy G.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-2821-8020",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Balboa",
+      "given": "Renzo F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gilly",
+      "given": "Arthur",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bjerregaard",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Larsen",
+      "given": "Christina Viskum Lytken",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-5526-1070",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Grarup",
+      "given": "Niels",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jørgensen",
+      "given": "Marit Eika",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4238-659X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Zeggini",
+      "given": "Eleftheria",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7052-8554",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Moltke",
+      "given": "Ida",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8748-3831",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Hansen",
+      "given": "Torben",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7306-031X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Albrechtsen",
+      "given": "Anders",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        30
+      ]
+    ],
+    "date-time": "2023-10-30T07:01:54Z",
+    "timestamp": 1698649314000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        9
+      ]
+    ],
+    "date-time": "2024-02-09T00:13:11Z",
+    "timestamp": 1707437591000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100009708",
+      "award": [
+        "NNF17OC0028136",
+        "NNF17SH0027192",
+        "NNF20OC0061343",
+        "NNF20OC0061343",
+        "NNF16OC0019986",
+        "NNF18CC0034900",
+        "NNF20OC0061343"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Novo Nordisk Fonden"
+    },
+    {
+      "DOI": "10.13039/501100004836",
+      "award": [
+        "DFF-0135-00211B"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Det Frie Forskningsråd"
+    },
+    {
+      "DOI": "10.13039/501100004046",
+      "doi-asserted-by": "publisher",
+      "name": "Karen Elise Jensens Fond"
+    },
+    {
+      "name": "Department of Health, Greenland"
+    },
+    {
+      "DOI": "10.13039/501100001734",
+      "doi-asserted-by": "publisher",
+      "name": "Københavns Universitet"
+    },
+    {
+      "DOI": "10.13039/100004325",
+      "doi-asserted-by": "publisher",
+      "name": "AstraZeneca"
+    },
+    {
+      "DOI": "10.13039/100002429",
+      "doi-asserted-by": "publisher",
+      "name": "Amgen"
+    },
+    {
+      "DOI": "10.13039/100008349",
+      "doi-asserted-by": "publisher",
+      "name": "Boehringer Ingelheim"
+    },
+    {
+      "DOI": "10.13039/501100004191",
+      "doi-asserted-by": "publisher",
+      "name": "Novo Nordisk"
+    },
+    {
+      "DOI": "10.13039/100004339",
+      "doi-asserted-by": "crossref",
+      "name": "Sanofi Aventis"
+    },
+    {
+      "DOI": "10.13039/100008398",
+      "award": [
+        "19114"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Villum Fonden"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T16:52:11Z",
+    "timestamp": 1709311931236
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        30
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            30
+          ]
+        ],
+        "date-time": "2023-10-30T00:00:00Z",
+        "timestamp": 1698624000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            30
+          ]
+        ],
+        "date-time": "2023-10-30T00:00:00Z",
+        "timestamp": 1698624000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01485-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01485-8",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01485-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "215-223",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        30
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        30
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2024,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "key": "1485_CR1",
+      "unstructured": "World Health Organization. The top 10 causes of death 2018 [cited 2020 January 24]. Available from: https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death."
+    },
+    {
+      "DOI": "10.1097/01.NPR.0000550246.96902.de",
+      "author": "NA Ciffone",
+      "doi-asserted-by": "publisher",
+      "first-page": "8",
+      "journal-title": "Nurse Pract",
+      "key": "1485_CR2",
+      "unstructured": "Ciffone NA, Copple T. Managing dyslipidemia for CVD prevention: a review of recent clinical practice guidelines. Nurse Pract. 2019;44:8–16.",
+      "volume": "44",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s11892-017-0942-8",
+      "author": "A Chait",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Curr Diabetes Rep",
+      "key": "1485_CR3",
+      "unstructured": "Chait A, Goldberg I. Treatment of dyslipidemia in diabetes: recent advances and remaining questions. Curr Diabetes Rep. 2017;17:10.",
+      "volume": "17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41586-021-04064-3",
+      "author": "SE Graham",
+      "doi-asserted-by": "publisher",
+      "first-page": "675",
+      "journal-title": "Nature",
+      "key": "1485_CR4",
+      "unstructured": "Graham SE, Clarke SL, Wu KH, Kanoni S, Zajac GJM, Ramdas S, et al. The power of genetic diversity in genome-wide association studies of lipids. Nature. 2021;600:675–9.",
+      "volume": "600",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0222-9",
+      "author": "D Klarin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1514",
+      "journal-title": "Nat Genet",
+      "key": "1485_CR5",
+      "unstructured": "Klarin D, Damrauer SM, Cho K, Sun YV, Teslovich TM, Honerlaw J, et al. Genetics of blood lipids among similar to 300,000 multi-ethnic participants of the Million Veteran Program. Nat Genet. 2018;50:1514–+.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-018-05747-8",
+      "author": "P Natarajan",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1485_CR6",
+      "unstructured": "Natarajan P, Peloso GM, Zekavat SM, Montasser M, Ganna A, Chaffin M, et al. Deep-coverage whole genome sequences and blood lipids among 16,324 individuals. Nat Commun. 2018;9:3391.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1161/CIRCGEN.120.003106",
+      "author": "H Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e003106",
+      "journal-title": "Circ Genom Precis Med",
+      "key": "1485_CR7",
+      "unstructured": "Wu H, Forgetta V, Zhou S, Bhatnagar SR, Paré G, Richards JB. Polygenic risk score for low-density lipoprotein cholesterol is associated with risk of ischemic heart disease and enriches for individuals with familial hypercholesterolemia. Circ Genom Precis Med. 2021;14:e003106.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ng1509",
+      "author": "J Cohen",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "journal-title": "Nat Genet",
+      "key": "1485_CR8",
+      "unstructured": "Cohen J, Pertsemlidis A, Kotowski IK, Graham R, Garcia CK, Hobbs HH. Low LDL cholesterol in individuals of African descent resulting from frequent nonsense mutations in PCSK9. Nat Genet. 2005;37:161–5.",
+      "volume": "37",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.118.311227",
+      "author": "MD Shapiro",
+      "doi-asserted-by": "publisher",
+      "first-page": "1420",
+      "journal-title": "Circ Res",
+      "key": "1485_CR9",
+      "unstructured": "Shapiro MD, Tavori H, Fazio S. PCSK9: from basic science discoveries to clinical trials. Circ Res. 2018;122:1420–38.",
+      "volume": "122",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-020-20086-3",
+      "author": "JB Nielsen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1485_CR10",
+      "unstructured": "Nielsen JB, Rom O, Surakka I, Graham SE, Zhou W, Roychowdhury T, et al. Loss-of-function genomic variants highlight potential therapeutic targets for cardiovascular disease. Nat Commun. 2020;11:6417.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nature13425",
+      "author": "I Moltke",
+      "doi-asserted-by": "publisher",
+      "first-page": "190",
+      "journal-title": "Nature",
+      "key": "1485_CR11",
+      "unstructured": "Moltke I, Grarup N, Jorgensen ME, Bjerregaard P, Treebak JT, Fumagalli M, et al. A common Greenlandic TBC1D4 variant confers muscle insulin resistance and type 2 diabetes. Nature. 2014;512:190–+.",
+      "volume": "512",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.lanepe.2022.100529",
+      "author": "ACB Thuesen",
+      "doi-asserted-by": "publisher",
+      "first-page": "100529",
+      "journal-title": "Lancet Reg Health Eur",
+      "key": "1485_CR12",
+      "unstructured": "Thuesen ACB, Stæger FF, Kaci A, Solheim MH, Aukrust I, Jørsboe E, et al. A novel splice-affecting HNF1A variant with large population impact on diabetes in Greenland. Lancet Reg Health Eur. 2023;24:100529.",
+      "volume": "24",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1161/CIRCGENETICS.114.000646",
+      "author": "JB Dube",
+      "doi-asserted-by": "publisher",
+      "first-page": "100",
+      "journal-title": "Circ-Cardiovasc Genet",
+      "key": "1485_CR13",
+      "unstructured": "Dube JB, Wang J, Cao HN, McIntyre AD, Johansen CT, Hopkins SE, et al. Common low-density lipoprotein receptor p.G116S variant has a large effect on plasma low-density lipoprotein cholesterol in circumpolar Inuit populations. Circ-Cardiovasc Genet. 2015;8:100–U90.",
+      "volume": "8",
+      "year": "2015"
+    },
+    {
+      "author": "E Jørsboe",
+      "first-page": "100118",
+      "journal-title": "HGG Adv",
+      "key": "1485_CR14",
+      "unstructured": "Jørsboe E, Andersen MK, Skotte L, Stæger FF, Færgeman NJ, Hanghøj K, et al. An LDLR missense variant poses high risk of familial hypercholesterolemia in 30% of Greenlanders and offers potential of early cardiovascular disease intervention. HGG Adv. 2022;3:100118.",
+      "volume": "3",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/ajhb.22372",
+      "author": "P Bjerregaard",
+      "doi-asserted-by": "publisher",
+      "first-page": "335",
+      "journal-title": "Am J Hum Biol",
+      "key": "1485_CR15",
+      "unstructured": "Bjerregaard P, Jørgensen ME. Prevalence of obesity among Inuit in Greenland and temporal trend by social position. Am J Hum Biol. 2013;25:335–40.",
+      "volume": "25",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/S0021-9150(02)00364-7",
+      "author": "P Bjerregaard",
+      "doi-asserted-by": "publisher",
+      "first-page": "351",
+      "journal-title": "Atherosclerosis",
+      "key": "1485_CR16",
+      "unstructured": "Bjerregaard P, Young TK, Hegele RA. Low incidence of cardiovascular disease among the Inuit—what is the evidence? Atherosclerosis. 2003;166:351–7.",
+      "volume": "166",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1111/j.1464-5491.2011.03527.x",
+      "author": "ME Jørgensen",
+      "doi-asserted-by": "publisher",
+      "first-page": "755",
+      "journal-title": "Diabet Med",
+      "key": "1485_CR17",
+      "unstructured": "Jørgensen ME, Borch-Johnsen K, Witte DR, Bjerregaard P. Diabetes in Greenland and its relationship with urbanization. Diabet Med. 2012;29:755–60.",
+      "volume": "29",
+      "year": "2012"
+    },
+    {
+      "key": "1485_CR18",
+      "unstructured": "Larsen CVL, Hansen CB, Ingemann C, Jørgensen ME, Olesen I, Sørensen IK, et al. Befolkningsundersøgelsen i Grønland 2018. Levevilkår, livsstil og helbred. [Population Health Survey in Greenland 2018. Living conditions, lifestyle, and health. In Danish]. Statens Institut for Folkesundhed, Studiestræde 6, 1455 København K: Statens Institut for Folkesundhed, SDU; 2019."
+    },
+    {
+      "key": "1485_CR19",
+      "unstructured": "Bjerregaard P. Inuit Health in Transition—Greenland survey 2005-2010. Population sample and survey methods. SIF writings on Greenland [Internet]. 2011 May 07, 2019 [cited 2019 May 07]; 19. Available from: https://www.sdu.dk/da/sif/rapporter/2011/inuit_health_in_transition."
+    },
+    {
+      "author": "P Bjerregaard",
+      "first-page": "3",
+      "journal-title": "Int J Circumpolar Health",
+      "key": "1485_CR20",
+      "unstructured": "Bjerregaard P, Curtis T, Borch-Johnsen K, Mulvad G, Becker U, Andersen S, et al. Inuit health in Greenland: a population survey of lifestyle and disease in Greenland and among Inuit living in Denmark. Int J Circumpolar Health. 2003;62:3–79.",
+      "volume": "62",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.atherosclerosis.2004.02.010",
+      "author": "P Bjerregaard",
+      "doi-asserted-by": "publisher",
+      "first-page": "391",
+      "journal-title": "Atherosclerosis",
+      "key": "1485_CR21",
+      "unstructured": "Bjerregaard P, Jorgensen ME, Borch-Johnsen K, Greenland Population S. Serum lipids of Greenland Inuit in relation to Inuit genetic heritage, westernisation, and migration. Atherosclerosis. 2004;174:391–8.",
+      "volume": "174",
+      "year": "2004"
+    },
+    {
+      "key": "1485_CR22",
+      "unstructured": "Delaneau O, Zagury J-F. Data Production and Analysis in Population Genomics. Humana Press, Springer Science+Business Media; 2012."
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000529",
+      "author": "BN Howie",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "journal-title": "PLoS Genet",
+      "key": "1485_CR23",
+      "unstructured": "Howie BN, Donnelly P, Marchini J. A flexible and accurate genotype imputation method for the next generation of genome-wide association studies. PLoS Genet. 2009;5:15.",
+      "volume": "5",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1126/science.aab2319",
+      "author": "M Fumagalli",
+      "doi-asserted-by": "publisher",
+      "first-page": "1343",
+      "journal-title": "Science",
+      "key": "1485_CR24",
+      "unstructured": "Fumagalli M, Moltke I, Grarup N, Racimo F, Bjerregaard P, Jorgensen ME, et al. Greenlandic Inuit show genetic signatures of diet and climate adaptation. Science. 2015;349:1343–7.",
+      "volume": "349",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.2310",
+      "author": "X Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "821",
+      "journal-title": "Nat Genet",
+      "key": "1485_CR25",
+      "unstructured": "Zhou X, Stephens M. Genome-wide efficient mixed-model analysis for association studies. Nat Genet. 2012;44:821–U136.",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0120758",
+      "author": "H Shim",
+      "doi-asserted-by": "publisher",
+      "first-page": "20",
+      "journal-title": "PLoS One",
+      "key": "1485_CR26",
+      "unstructured": "Shim H, Chasman DI, Smith JD, Mora S, Ridker PM, Nickerson DA, et al. A multivariate genome-wide association analysis of 10 LDL subfractions, and their response to statin treatment, in 1868 Caucasians. PLoS One. 2015;10:20.",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "key": "1485_CR27",
+      "unstructured": "Therneau T A Package for Survival Analysis in S. Version 2.41.3. 2015."
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "author": "C Bycroft",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "1485_CR28",
+      "unstructured": "Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, et al. The UK Biobank resource with deep phenotyping and genomic data. Nature. 2018;562:203–9.",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00870-7",
+      "author": "J Mbatchou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1097",
+      "journal-title": "Nat Genet",
+      "key": "1485_CR29",
+      "unstructured": "Mbatchou J, Barnard L, Backman J, Marcketta A, Kosmicki JA, Ziyatdinov A, et al. Computationally efficient whole-genome regression for quantitative and binary traits. Nat Genet. 2021;53:1097–103.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "doi-asserted-by": "crossref",
+      "key": "1485_CR30",
+      "unstructured": "Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience. 2015;4:s13742-015-0047-8."
+    },
+    {
+      "DOI": "10.1086/512821",
+      "author": "S Zollner",
+      "doi-asserted-by": "publisher",
+      "first-page": "605",
+      "journal-title": "Am J Hum Genet",
+      "key": "1485_CR31",
+      "unstructured": "Zollner S, Pritchard JK. Overcoming the winner’s curse: estimating penetrance parameters from case-control data. Am J Hum Genet. 2007;80:605–15.",
+      "volume": "80",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/nar/gky1113",
+      "author": "F Cunningham",
+      "doi-asserted-by": "publisher",
+      "first-page": "D745",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1485_CR32",
+      "unstructured": "Cunningham F, Achuthan P, Akanni W, Allen J, Amode MR, Armean IM, et al. Ensembl 2019. Nucleic Acids Res. 2018;47:D745–D51.",
+      "volume": "47",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nature11247",
+      "author": "ENCODE Project Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "57",
+      "journal-title": "Nature",
+      "key": "1485_CR33",
+      "unstructured": "ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. Nature. 2012;489:57–74.",
+      "volume": "489",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1126/science.1262110",
+      "author": "GTEx Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "648",
+      "journal-title": "Science",
+      "key": "1485_CR34",
+      "unstructured": "GTEx Consortium. The Genotype-Tissue Expression (GTEx) pilot analysis: multitissue gene regulation in humans. Science. 2015;348:648–60.",
+      "volume": "348",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2010.02.044",
+      "author": "M Benn",
+      "doi-asserted-by": "publisher",
+      "first-page": "2833",
+      "journal-title": "J Am Coll Cardiol",
+      "key": "1485_CR35",
+      "unstructured": "Benn M, Nordestgaard BG, Grande P, Schnohr P, Tybjaerg-Hansen A. PCSK9 R46L, low-density lipoprotein cholesterol levels, and risk of ischemic heart disease 3 independent studies and meta-analyses. J Am Coll Cardiol. 2010;55:2833–42.",
+      "volume": "55",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1086/500615",
+      "author": "IK Kotowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "410",
+      "journal-title": "Am J Hum Genet",
+      "key": "1485_CR36",
+      "unstructured": "Kotowski IK, Pertsemlidis A, Luke A, Cooper RS, Vega GL, Cohen JC, et al. A spectrum of PCSK9 Alleles contributes to plasma levels of low-density lipoprotein cholesterol. Am J Hum Genet. 2006;78:410–22.",
+      "volume": "78",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1194/jlr.R800091-JLR200",
+      "author": "JD Horton",
+      "doi-asserted-by": "publisher",
+      "first-page": "S172",
+      "journal-title": "J Lipid Res",
+      "key": "1485_CR37",
+      "unstructured": "Horton JD, Cohen JC, Hobbs HH. PCSK9: a convertase that coordinates LDL catabolism. J Lipid Res. 2009;50:S172–S7.",
+      "volume": "50",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/ng.3300",
+      "author": "I Surakka",
+      "doi-asserted-by": "publisher",
+      "first-page": "589",
+      "journal-title": "Nat Genet",
+      "key": "1485_CR38",
+      "unstructured": "Surakka I, Horikoshi M, Magi R, Sarin AP, Mahajan A, Lagou V, et al. The impact of low-frequency and rare variants on lipid levels. Nat Genet. 2015;47:589–97.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "key": "1485_CR39",
+      "unstructured": "The Neale Lab. UKBiobank GWAS results. Available from: http://www.nealelab.is/uk-biobank/."
+    },
+    {
+      "DOI": "10.1016/j.amjcard.2019.09.011",
+      "author": "A AlTurki",
+      "doi-asserted-by": "publisher",
+      "first-page": "1869",
+      "journal-title": "Am J Cardiol",
+      "key": "1485_CR40",
+      "unstructured": "AlTurki A, Marafi M, Dawas A, Dube MP, Vieira L, Sherman MH, et al. Meta-analysis of randomized controlled trials assessing the impact of proprotein convertase subtilisin/kexin type 9 antibodies on mortality and cardiovascular outcomes. Am J Cardiol. 2019;124:1869–75.",
+      "volume": "124",
+      "year": "2019"
+    },
+    {
+      "author": "AF Schmidt",
+      "first-page": "CD011748",
+      "journal-title": "Cochrane Database Syst Rev",
+      "key": "1485_CR41",
+      "unstructured": "Schmidt AF, Pearce LS, Wilkins JT, Overington JP, Hingorani AD, Casas JP. PCSK9 monoclonal antibodies for the primary and secondary prevention of cardiovascular disease. Cochrane Database Syst Rev. 2017;4:CD011748.",
+      "volume": "4",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1501031",
+      "author": "JG Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1489",
+      "journal-title": "N. Engl J Med",
+      "key": "1485_CR42",
+      "unstructured": "Robinson JG, Farnier M, Krempf M, Bergeron J, Luc G, Averna M, et al. Efficacy and safety of alirocumab in reducing lipids and cardiovascular events. N. Engl J Med. 2015;372:1489–99.",
+      "volume": "372",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1500858",
+      "author": "MS Sabatine",
+      "doi-asserted-by": "publisher",
+      "first-page": "1500",
+      "journal-title": "N. Engl J Med",
+      "key": "1485_CR43",
+      "unstructured": "Sabatine MS, Giugliano RP, Wiviott SD, Raal FJ, Blom DJ, Robinson J, et al. Efficacy and safety of evolocumab in reducing lipids and cardiovascular events. N. Engl J Med. 2015;372:1500–9.",
+      "volume": "372",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1161/CIRCGEN.118.002196",
+      "author": "CP Nelson",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "journal-title": "Circ-Genom Precis Med",
+      "key": "1485_CR44",
+      "unstructured": "Nelson CP, Lai FY, Nath M, Ye S, Webb TR, Schunkert H, et al. Genetic assessment of potential long-term on-target side effects of PCSK9 (Proprotein Convertase Subtilisin/Kexin Type 9) inhibitors. Circ-Genom Precis Med. 2019;12:9.",
+      "volume": "12",
+      "year": "2019"
+    },
+    {
+      "key": "1485_CR45",
+      "unstructured": "UKBiobank PheWeb [Internet]. Available from: http://pheweb.sph.umich.edu:5000/."
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2633131/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01485-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "GWAS of lipids in Greenlanders finds association signals shared with Europeans and reveals an independent PCSK9 association signal"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "32"
+}

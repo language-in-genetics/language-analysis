@@ -1,0 +1,492 @@
+{
+  "DOI": "10.1002/gepi.22505",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22505",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eUsing high‐dimensional genetic variants such as single nucleotide polymorphisms (SNP) to predict complex diseases and traits has important applications in basic research and other clinical settings. For example, predicting gene expression is a necessary first step to identify (putative) causal genes in transcriptome‐wide association studies. Due to weak signals, high‐dimensionality, and linkage disequilibrium (correlation) among SNPs, building such a prediction model is challenging. However, functional annotations at the SNP level (e.g., as epigenomic data across multiple cell‐ or tissue‐types) are available and could be used to inform predictor importance and aid in outcome prediction. Existing approaches to incorporate annotations have been based mainly on (generalized) linear models. Bayesian additive regression trees (BART), in contrast, is a reliable method to obtain high‐quality nonlinear out of sample predictions without overfitting. Unfortunately, the default prior from BART may be too inflexible to handle sparse situations where the number of predictors approaches or surpasses the number of observations. Motivated by our real data application, this article proposes an alternative prior based on the logit normal distribution because it provides a framework that is adaptive to sparsity and can model informative functional annotations. It also provides a framework to incorporate prior information about the between SNP correlations. Computational details for carrying out inference are presented along with the results from a simulation study and a genome‐wide prediction analysis of the Alzheimer's Disease Neuroimaging Initiative data.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22505"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2022-06-15"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-09-21"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-11-09"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-5567-0026",
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics University of Minnesota Minneapolis Minnesota USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Spanbauer",
+      "given": "Charles",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1159-0582",
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics University of Minnesota Minneapolis Minnesota USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Pan",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "ADNI, The Alzheimer's Disease Neuroimaging Initiative",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        9
+      ]
+    ],
+    "date-time": "2022-11-09T09:16:52Z",
+    "timestamp": 1667985412000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        20
+      ]
+    ],
+    "date-time": "2023-08-20T08:36:24Z",
+    "timestamp": 1692520584000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        5
+      ]
+    ],
+    "date-time": "2024-04-05T17:38:52Z",
+    "timestamp": 1712338732252
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            9
+          ]
+        ],
+        "date-time": "2022-11-09T00:00:00Z",
+        "timestamp": 1667952000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22505",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22505",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22505",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "26-44",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1371/journal.pgen.1008091",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_2_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1993.10476321",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_3_1"
+    },
+    {
+      "DOI": "10.1007/978-0-387-45528-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_4_1"
+    },
+    {
+      "DOI": "10.1214/14-aoas755",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_5_1"
+    },
+    {
+      "DOI": "10.1023/a:1010933404324",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_6_1"
+    },
+    {
+      "DOI": "10.1186/s13059-016-1112-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_7_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1998.10473750",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_8_1"
+    },
+    {
+      "DOI": "10.1214/09-aoas285",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_9_1"
+    },
+    {
+      "DOI": "10.1007/bf00994018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_10_1"
+    },
+    {
+      "DOI": "10.1534/genetics.112.143313",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_11_1"
+    },
+    {
+      "DOI": "10.1007/s11222-008-9109-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_12_1"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_13_1"
+    },
+    {
+      "DOI": "10.1214/06-BA117A",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_14_1"
+    },
+    {
+      "DOI": "10.1214/12-ba719",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.3506",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_16_1"
+    },
+    {
+      "DOI": "10.1214/06-BA105",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_17_1"
+    },
+    {
+      "DOI": "10.1534/g3.114.010298",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_18_1"
+    },
+    {
+      "DOI": "10.1080/03610926.2018.1441418",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_19_1"
+    },
+    {
+      "author": "Linderman S.",
+      "key": "e_1_2_10_20_1",
+      "volume-title": "Advances in neural information processing systems",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1080/01621459.2016.1264957",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_21_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1008315",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_22_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006933",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_23_1"
+    },
+    {
+      "DOI": "10.23750/abm.v89i9-S.7953",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_24_1"
+    },
+    {
+      "DOI": "10.1093/genetics/157.4.1819",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_25_1"
+    },
+    {
+      "DOI": "10.1016/j.nic.2005.09.008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_26_1"
+    },
+    {
+      "key": "e_1_2_10_27_1",
+      "unstructured": "Muller P. Parmigiani G. \u0026Rice K.(2006).FDR and Bayesian multiple comparisons rules. Johns Hopkins University Dept. of Biostatistics Working Papers. Working Paper 115."
+    },
+    {
+      "DOI": "10.1016/j.jaut.2015.07.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004754",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_29_1"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2012-101257",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_30_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1008271",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_31_1"
+    },
+    {
+      "DOI": "10.3389/fphys.2017.01080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_32_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_33_1"
+    },
+    {
+      "DOI": "10.1214/12-ba730",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_34_1"
+    },
+    {
+      "DOI": "10.1080/01621459.2013.829001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_35_1"
+    },
+    {
+      "key": "e_1_2_10_36_1",
+      "unstructured": "Polson N. G. Scott J. G. S. Windle J. Oksanen J. \u0026Balamuta J.(2019). BayesLogit: Tools for sampling from the Pólya‐gamma distribution [Computer software manual]. R package version 2.1.https://CRAN.R-project.org/package=BayesLogit"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_37_1"
+    },
+    {
+      "DOI": "10.1214/19-aos1879",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_38_1"
+    },
+    {
+      "DOI": "10.1007/s11682-013-9262-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_39_1"
+    },
+    {
+      "DOI": "10.1002/sim.8924",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_40_1"
+    },
+    {
+      "DOI": "10.1002/sim.6893",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_41_1"
+    },
+    {
+      "DOI": "10.1177/0962280218822140",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_42_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxy032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_43_1"
+    },
+    {
+      "DOI": "10.18637/jss.v097.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_44_1"
+    },
+    {
+      "DOI": "10.4310/sii.2018.v11.n4.a1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_45_1"
+    },
+    {
+      "DOI": "10.1214/aos/1176325750",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_46_1"
+    },
+    {
+      "DOI": "10.2741/4524",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_47_1"
+    },
+    {
+      "DOI": "10.1007/s11222-016-9696-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_48_1"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00913-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_49_1"
+    },
+    {
+      "DOI": "10.1186/s12711-016-0219-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_50_1"
+    }
+  ],
+  "reference-count": 49,
+  "references-count": 49,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22505"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Sparse prediction informed by genetic annotations using the logit normal prior for Bayesian regression tree ensembles"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "47"
+}

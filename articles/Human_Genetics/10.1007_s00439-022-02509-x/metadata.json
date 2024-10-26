@@ -1,0 +1,930 @@
+{
+  "DOI": "10.1007/s00439-022-02509-x",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-022-02509-x",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eGenome sequencing was first offered clinically in the UK through the 100,000 Genomes Project (100KGP). Analysis was restricted to predefined gene panels associated with the patient’s phenotype. However, panels rely on clearly characterised phenotypes and risk missing diagnoses outside of the panel(s) applied. We propose a complementary method to rapidly identify pathogenic variants, including those missed by 100KGP methods.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe Loss-of-function Observed/Expected Upper-bound Fraction (LOEUF) score quantifies gene constraint, with low scores correlated with haploinsufficiency. We applied DeNovoLOEUF, a filtering strategy to sequencing data from 13,949 rare disease trios in the 100KGP, by filtering for rare, de novo, loss-of-function variants in disease genes with a LOEUF score \u0026lt; 0.2. We compared our findings with the corresponding patient’s diagnostic reports.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003e324/332 (98%) of the variants identified using DeNovoLOEUF were diagnostic or partially diagnostic (whereby the variant was responsible for some of the phenotype). We identified 39 diagnoses that were “missed” by 100KGP standard analyses, which are now being returned to patients.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe have demonstrated a highly specific and rapid method with a 98% positive predictive value that has good concordance with standard analysis, low false-positive rate, and can identify additional diagnoses. Globally, as more patients are being offered genome sequencing, we anticipate that DeNovoLOEUF will rapidly identify new diagnoses and facilitate iterative analyses when new disease genes are discovered.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "2509"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "3 October 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "28 November 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "7 December 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare no conflicts of interest."
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "All patients included in this study consented to participate in the 100,000 Genomes Project—ethics approval by the Health Research Authority (NRES Committee East of England) REC: 14/EE/1112; IRAS: 166046. The ethical approval letter is available upon request."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Not applicable."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Seaby",
+      "given": "Eleanor G.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Thomas",
+      "given": "N. Simon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Webb",
+      "given": "Amy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brittain",
+      "given": "Helen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Taylor Tavares",
+      "given": "Ana Lisa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ambrose",
+      "given": "J. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Arumugam",
+      "given": "P",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bevers",
+      "given": "R",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bleda",
+      "given": "M",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boardman-Pretty",
+      "given": "F",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boustred",
+      "given": "C. R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brittain",
+      "given": "H",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Caulfield",
+      "given": "M. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chan",
+      "given": "G. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fowler",
+      "given": "T",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Giess",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hamblin",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Henderson",
+      "given": "S",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hubbard",
+      "given": "T. J. P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jackson",
+      "given": "R",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jones",
+      "given": "L. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kasperaviciute",
+      "given": "D",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kayikci",
+      "given": "M",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kousathanas",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lahnstein",
+      "given": "L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leigh",
+      "given": "S. E. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leong",
+      "given": "I. U. S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lopez",
+      "given": "F. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Maleady-Crowe",
+      "given": "F",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "McEntagart",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Minneci",
+      "given": "F",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moutsianas",
+      "given": "L",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mueller",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Murugaesu",
+      "given": "N",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Need",
+      "given": "A. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "O‘Donovan",
+      "given": "P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Odhams",
+      "given": "C. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Patch",
+      "given": "C",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Perez-Gil",
+      "given": "D",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pereira",
+      "given": "M. B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pullinger",
+      "given": "J",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rahim",
+      "given": "T",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rendon",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rogers",
+      "given": "T",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Savage",
+      "given": "K",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sawant",
+      "given": "K",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scott",
+      "given": "R. H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Siddiq",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sieghart",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smith",
+      "given": "S. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sosinsky",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stuckey",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tanguy",
+      "given": "M",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Taylor Tavares",
+      "given": "A. L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thomas",
+      "given": "E. R. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thompson",
+      "given": "S. R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tucci",
+      "given": "A",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Welland",
+      "given": "M. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Williams",
+      "given": "E",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Witkowska",
+      "given": "K",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wood",
+      "given": "S. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Baralle",
+      "given": "Diana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rehm",
+      "given": "Heidi L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "O’Donnell-Luria",
+      "given": "Anne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ennis",
+      "given": "Sarah",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "Genomics England Consortium",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        7
+      ]
+    ],
+    "date-time": "2022-12-07T15:03:41Z",
+    "timestamp": 1670425421000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        23
+      ]
+    ],
+    "date-time": "2023-02-23T07:01:04Z",
+    "timestamp": 1677135664000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100012166",
+      "doi-asserted-by": "publisher",
+      "name": "Gerald Kerkut Charitable Trust"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "U24 HG011450",
+        "U41 HG006834",
+        "UM1 HG008900"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000025",
+      "award": [
+        "U01 MH119689"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Mental Health"
+    },
+    {
+      "DOI": "10.13039/501100000272",
+      "award": [
+        "RP-2016-07-011"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "NIHR"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T01:00:23Z",
+    "timestamp": 1713920423606
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            7
+          ]
+        ],
+        "date-time": "2022-12-07T00:00:00Z",
+        "timestamp": 1670371200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            7
+          ]
+        ],
+        "date-time": "2022-12-07T00:00:00Z",
+        "timestamp": 1670371200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02509-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-022-02509-x/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02509-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "351-362",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        3
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1093/nar/gku1205",
+      "author": "JS Amberger",
+      "doi-asserted-by": "publisher",
+      "first-page": "D789",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2509_CR2",
+      "unstructured": "Amberger JS, Bocchini CA, Schiettecatte F, Scott AF, Hamosh A (2015) OMIM. org: Online Mendelian Inheritance in Man (OMIM®), an online catalog of human genes and genetic disorders. Nucleic Acids Res 43:D789–D798",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41525-022-00295-z",
+      "author": "CA Austin-Tse",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "NPJ Genom Med",
+      "key": "2509_CR3",
+      "unstructured": "Austin-Tse CA, Jobanputra V, Perry DL, Bick D, Taft RJ, Venner E, Gibbs RA, Young T, Barnett S, Belmont JW (2022) Best practices for the interpretation and reporting of clinical whole genome sequencing. NPJ Genom Med 7:1–13",
+      "volume": "7",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/gim.2017.242",
+      "author": "LW Bush",
+      "doi-asserted-by": "publisher",
+      "first-page": "169",
+      "journal-title": "Genet Med",
+      "key": "2509_CR4",
+      "unstructured": "Bush LW, Beck AE, Biesecker LG, Evans JP, Hamosh A, Holm IA, Martin CL, Richards CS, Rehm HL (2018) Professional responsibilities regarding the provision, publication, and dissemination of patient phenotypes in the context of clinical genetic and genomic testing: points to consider—a statement of the American College of Medical Genetics and Genomics (ACMG). Genet Med 20:169–171",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/554444",
+      "doi-asserted-by": "crossref",
+      "key": "2509_CR5",
+      "unstructured": "Cummings BB, Karczewski KJ, Kosmicki JA, Seaby EG, Watts NA, Singer-Berk M, Mudge JM, Karjalainen J, Kyle Satterstrom F, O’Donnell-Luria A et al (2019) Transcript expression-aware annotation improves rare variant discovery and interpretation. bioRxiv 554444"
+    },
+    {
+      "DOI": "10.1101/2022.01.03.21268593",
+      "doi-asserted-by": "crossref",
+      "key": "2509_CR6",
+      "unstructured": "DiStefano MT, Goehringer S, Babb L, Alkuraya FS, Amberger J, Amin M, Austin-Tse C, Balzotti M, Berg JS, Birney E et al (2022) The Gene Curation Coalition: a global effort to harmonize gene-disease evidence resources. Genet Med"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03758-y",
+      "author": "S Gudmundsson",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nature",
+      "key": "2509_CR8",
+      "unstructured": "Gudmundsson S, Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, Collins RL, Laricchia KM, Ganna A (2021) Addendum: the mutational constraint spectrum quantified from variation in 141,456 humans. Nature. https://doi.org/10.1038/s41586-021-03758-y",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "2509_CR9",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, Collins RL, Laricchia KM, Ganna A, Birnbaum DP et al (2020) The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 581:434–443",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkt1113",
+      "author": "MJ Landrum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D980",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2509_CR10",
+      "unstructured": "Landrum MJ, Lee JM, Riley GR, Jang W, Rubinstein WS, Church DM, Maglott DR (2014) ClinVar: public archive of relationships among sequence variation and human phenotype. Nucleic Acids Res 42:D980–D985",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1126/science.1215040",
+      "author": "DG MacArthur",
+      "doi-asserted-by": "publisher",
+      "first-page": "823",
+      "journal-title": "Science",
+      "key": "2509_CR11",
+      "unstructured": "MacArthur DG, Balasubramanian S, Frankish A, Huang N, Morris J, Walter K, Jostins L, Habegger L, Pickrell JK, Montgomery SB (2012) A systematic survey of loss-of-function variants in human protein-coding genes. Science 335:823–828",
+      "volume": "335",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0528-2",
+      "author": "AR Martin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1560",
+      "journal-title": "Nat Genet",
+      "key": "2509_CR12",
+      "unstructured": "Martin AR, Williams E, Foulger RE, Leigh S, Daugherty LC, Niblock O, Leong IU, Smith KR, Gerasimenko O, Haraldsdottir E (2019) PanelApp crowdsources expert knowledge to establish consensus diagnostic gene panels. Nat Genet 51:1560–1565",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41436-021-01172-3",
+      "author": "DT Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "1381",
+      "journal-title": "Genet Med",
+      "key": "2509_CR13",
+      "unstructured": "Miller DT, Lee K, Chung WK, Gordon AS, Herman GE, Klein TE, Stewart DR, Amendola LM, Adelman K, Bale SJ et al (2021) ACMG SF v3.0 list for reporting of secondary findings in clinical exome and genome sequencing: a policy statement of the American College of Medical Genetics and Genomics (ACMG). Genet Med 23:1381–1390",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-022-04558-8",
+      "author": "J Morales",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nature",
+      "key": "2509_CR14",
+      "unstructured": "Morales J, Pujar S, Loveland JE, Astashyn A, Bennett R, Berry A, Cox E, Davidson C, Ermolaeva O, Farrell CM (2022) A joint NCBI and EMBL-EBI transcript set for clinical genomics and research. Nature. https://doi.org/10.1038/s41586-022-04558-8",
+      "year": "2022"
+    },
+    {
+      "key": "2509_CR15",
+      "unstructured": "Parliament HO (2015) The 100,000 Genomes Project. In: (POSTNOTE, Parliamentary Office of Science and Technology"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0408-7",
+      "author": "JE Posey",
+      "doi-asserted-by": "publisher",
+      "first-page": "798",
+      "journal-title": "Genet Med",
+      "key": "2509_CR16",
+      "unstructured": "Posey JE, O’Donnell-Luria AH, Chong JX, Harel T, Jhangiani SN, Akdemir ZHC, Buyske S, Pehlivan D, Carvalho CM, Baxter S (2019) Insights into genetics, human biology and disease gleaned from family based genomic studies. Genet Med 21:798–812",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41591-021-01657-3",
+      "author": "HL Rehm",
+      "doi-asserted-by": "publisher",
+      "first-page": "241",
+      "journal-title": "Nat Med",
+      "key": "2509_CR17",
+      "unstructured": "Rehm HL (2022) Time to make rare disease diagnosis accessible to all. Nat Med 28:241–242",
+      "volume": "28",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med",
+      "key": "2509_CR18",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, Grody WW, Hegde M, Lyon E, Spector E et al (2015) Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med 17:405–424",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.09.017",
+      "author": "PN Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "610",
+      "journal-title": "Am J Hum Genet",
+      "key": "2509_CR19",
+      "unstructured": "Robinson PN, Köhler S, Bauer S, Seelow D, Horn D, Mundlos S (2008) The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease. Am J Hum Genet 83:610–615",
+      "volume": "83",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/ng.3050",
+      "author": "KE Samocha",
+      "doi-asserted-by": "publisher",
+      "first-page": "944",
+      "journal-title": "Nat Genet",
+      "key": "2509_CR20",
+      "unstructured": "Samocha KE, Robinson EB, Sanders SJ, Stevens C, Sabo A, McGrath LM, Kosmicki JA, Rehnström K, Mallick S, Kirby A (2014) A framework for the interpretation of de novo mutation in human disease. Nat Genet 46:944–950",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bfgp/elaa009",
+      "author": "EG Seaby",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Brief Funct Genomics",
+      "key": "2509_CR21",
+      "unstructured": "Seaby EG, Ennis S (2020) Challenges in the diagnosis and discovery of rare genetic disorders using contemporary sequencing technologies. Brief Funct Genomics. https://doi.org/10.1093/bfgp/elaa009",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fgene.2021.674295",
+      "author": "EG Seaby",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Genet",
+      "key": "2509_CR22",
+      "unstructured": "Seaby EG, Rehm HL, O’Donnell-Luria A (2021) Strategies to uplift novel mendelian gene discovery for improved clinical outcomes. Front Genet. https://doi.org/10.3389/fgene.2021.674295",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.gim.2022.04.019",
+      "doi-asserted-by": "publisher",
+      "key": "2509_CR23",
+      "unstructured": "Seaby EG, Smedley D, Taylor Tavares AL, Brittain H, van Jaarsveld RH, Baralle D, Rehm HL, O’Donnell-Luria A, Ennis S (2022) A gene-to-patient approach uplifts novel disease gene discovery and identifies 18 putative novel disease genes. Genet Med 24(8):1697–1707. https://doi.org/10.1016/j.gim.2022.04.019"
+    },
+    {
+      "DOI": "10.1038/nprot.2015.124",
+      "author": "D Smedley",
+      "doi-asserted-by": "publisher",
+      "first-page": "2004",
+      "journal-title": "Nat Protoc",
+      "key": "2509_CR24",
+      "unstructured": "Smedley D, Jacobsen JO, Jäger M, Köhler S, Holtgrewe M, Schubach M, Siragusa E, Zemojtel T, Buske OJ, Washington NL (2015) Next-generation diagnostics and disease-gene discovery with the Exomiser. Nat Protoc 10:2004–2015",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2035790",
+      "author": "The 100,000 Genomes Project Pilot Investigators",
+      "doi-asserted-by": "publisher",
+      "first-page": "1868",
+      "journal-title": "N Engl J Med",
+      "key": "2509_CR1",
+      "unstructured": "The 100,000 Genomes Project Pilot Investigators (2021) 100,000 genomes pilot on rare-disease diagnosis in health care—preliminary report. N Engl J Med 385:1868–1880",
+      "volume": "385",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/bmj.k1687",
+      "author": "C Turnbull",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMJ",
+      "key": "2509_CR26",
+      "unstructured": "Turnbull C, Scott RH, Thomas E, Jones L, Murugaesu N, Pretty FB, Halai D, Baple E, Craig C, Hamblin A (2018) The 100 000 Genomes Project: bringing whole genome sequencing to the NHS. BMJ 361:k1687",
+      "volume": "361",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 24,
+  "references-count": 24,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2022.05.18.22275260",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-022-02509-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Targeting de novo loss-of-function variants in constrained disease genes improves diagnostic rates in the 100,000 Genomes Project"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

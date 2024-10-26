@@ -1,0 +1,303 @@
+{
+  "DOI": "10.1002/gepi.21681",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.21681",
+  "abstract": "\u003cjats:p\u003eWith its potential to discover a much greater amount of genetic variation, next‐generation sequencing is fast becoming an emergent tool for genetic association studies. However, the cost of sequencing all individuals in a large‐scale population study is still high in comparison to most alternative genotyping options. While the ability to identify individual‐level data is lost (without bar‐coding), sequencing pooled samples can substantially lower costs without compromising the power to detect significant associations. We propose a hierarchical Bayesian model that estimates the association of each variant using pools of cases and controls, accounting for the variation in read depth across pools and sequencing error. To investigate the performance of our method across a range of number of pools, number of individuals within each pool, and average coverage, we undertook extensive simulations varying effect sizes, minor allele frequencies, and sequencing error rates. In general, the number of pools and pool size have dramatic effects on power while the total depth of coverage per pool has only a moderate impact. This information can guide the selection of a study design that maximizes power subject to cost, sample size, or other laboratory constraints. We provide an R package (hiPOD: hierarchical Pooled Optimal Design) to find the optimal design, allowing the user to specify a cost function, cost, and sample size limitations, and distributions of effect size, minor allele frequency, and sequencing error rate.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.21681"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Liang",
+      "given": "Wei E.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Thomas",
+      "given": "Duncan C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Preventive Medicine University of Southern California  Los Angeles California"
+        }
+      ],
+      "family": "Conti",
+      "given": "David V.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        12
+      ]
+    ],
+    "date-time": "2012-09-12T21:58:09Z",
+    "timestamp": 1347487089000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        16
+      ]
+    ],
+    "date-time": "2023-10-16T09:27:02Z",
+    "timestamp": 1697448422000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        17
+      ]
+    ],
+    "date-time": "2023-10-17T09:40:54Z",
+    "timestamp": 1697535654978
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2012,
+            9,
+            12
+          ]
+        ],
+        "date-time": "2012-09-12T00:00:00Z",
+        "timestamp": 1347408000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.21681",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.21681",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "870-881",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2012,
+        9,
+        12
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2012,
+        12
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nmeth.1307",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1101/gr.092957.109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1038/nrg2554",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1534/genetics.110.114397",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "article-title": "Sample size requirements for association studies of gene‐gene interaction",
+      "author": "Gauderman W.",
+      "first-page": "327",
+      "issue": "4",
+      "journal-title": "Am J Epidemiol",
+      "key": "e_1_2_6_6_1",
+      "volume": "25",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1002/gepi.20501",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20561",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0017298",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001322",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_13_1"
+    },
+    {
+      "DOI": "10.1002/humu.21122",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_14_1"
+    },
+    {
+      "DOI": "10.1101/gr.088559.108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_16_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20613",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1038/nbt1486",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkq675",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkq368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2011.00051",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_21_1"
+    },
+    {
+      "DOI": "10.1159/000164398",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    }
+  ],
+  "reference-count": 21,
+  "references-count": 21,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.21681"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Analysis and Optimal Design for Association Studies Using Next‐Generation Sequencing With Case‐Control Pools"
+  ],
+  "type": "journal-article",
+  "volume": "36"
+}

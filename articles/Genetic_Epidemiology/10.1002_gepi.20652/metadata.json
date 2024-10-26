@@ -1,0 +1,874 @@
+{
+  "DOI": "10.1002/gepi.20652",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.20652",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eOver the past several years, genome‐wide association studies (GWAS) have succeeded in identifying hundreds of genetic markers associated with common diseases. However, most of these markers confer relatively small increments of risk and explain only a small proportion of familial clustering. To identify obstacles to future progress in genetic epidemiology research and provide recommendations to NIH for overcoming these barriers, the National Cancer Institute sponsored a workshop entitled “Next Generation Analytic Tools for Large‐Scale Genetic Epidemiology Studies of Complex Diseases” on September 15–16, 2010. The goal of the workshop was to facilitate discussions on (1) statistical strategies and methods to efficiently identify genetic and environmental factors contributing to the risk of complex disease; and (2) how to develop, apply, and evaluate these strategies for the design, analysis, and interpretation of large‐scale complex disease association studies in order to guide NIH in setting the future agenda in this area of research. The workshop was organized as a series of short presentations covering scientific (gene‐gene and gene‐environment interaction, complex phenotypes, and rare variants and next generation sequencing) and methodological (simulation modeling and computational resources and data management) topic areas. Specific needs to advance the field were identified during each session and are summarized.\u003cjats:italic\u003eGenet. Epidemiol\u003c/jats:italic\u003e. 36 : 22–35, 2012. © 2011 Wiley Periodicals, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.20652"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology and Genetics Research Program Division of Cancer Control and Population Sciences National Cancer Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Mechanic",
+      "given": "Leah E.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Surveillance Research Program Division of Cancer Control and Population Sciences National Cancer Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Chen",
+      "given": "Huann‐Sheng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology The University of Texas MD Anderson Cancer Center Houston Texas"
+        }
+      ],
+      "family": "Amos",
+      "given": "Christopher I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Biostatistics Branch Division of Cancer Epidemiology and Genetics01 National Cancer Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Chatterjee",
+      "given": "Nilanjan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine Department of Medicine The University of Chicago Chicago Illinois"
+        }
+      ],
+      "family": "Cox",
+      "given": "Nancy J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology and Genetics Research Program Division of Cancer Control and Population Sciences National Cancer Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Divi",
+      "given": "Rao L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics The Texas A\u0026amp;M University College Station Texas"
+        }
+      ],
+      "family": "Fan",
+      "given": "Ruzong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Translational Genomics Research Branch Division of Extramural Research National Institute of Dental and Craniofacial Research NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Harris",
+      "given": "Emily L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Cancer Epidemiology and Genetics National Cancer Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Jacobs",
+      "given": "Kevin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Harvard School of Public Health Boston Massachusetts"
+        }
+      ],
+      "family": "Kraft",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Molecular and Human Genetics Baylor College of Medicine Houston Texas"
+        }
+      ],
+      "family": "Leal",
+      "given": "Suzanne M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Susceptibility and Population Health Branch National Institute of Environmental Health Sciences NIH Research Triangle Park North Carolina"
+        }
+      ],
+      "family": "McAllister",
+      "given": "Kimberly",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Dartmouth College Institute for Quantitative Biomedical Sciences Lebanon New Hampshire"
+        }
+      ],
+      "family": "Moore",
+      "given": "Jason H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Heart and Vascular Diseases National Heart Lung and Blood Institute National Institutes of Health Bethesda Maryland"
+        }
+      ],
+      "family": "Paltoo",
+      "given": "Dina N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Statistical Genomics Washington University School of Medicine St. Louis Missouri"
+        }
+      ],
+      "family": "Province",
+      "given": "Michael A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Office of Population Genomics National Human Genome Research Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Ramos",
+      "given": "Erin M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Systems Genomics Biochemistry and Molecular Biology Pennsylvania State University University Park Pennsylvania"
+        }
+      ],
+      "family": "Ritchie",
+      "given": "Marylyn D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics Carnegie Mellon University Pittsburgh Pennsylvania"
+        }
+      ],
+      "family": "Roeder",
+      "given": "Kathryn",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biomedical Statistics and Informatics Mayo Clinic Rochester Minnesota"
+        }
+      ],
+      "family": "Schaid",
+      "given": "Daniel J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Human Genetics The University of Chicago Chicago Illinois"
+        },
+        {
+          "name": "Department of Statistics The University of Chicago Chicago Illinois"
+        }
+      ],
+      "family": "Stephens",
+      "given": "Matthew",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Preventive Medicine (Division of Biostatistics) Keck School of Medicine University of Southern California Los Angeles California"
+        }
+      ],
+      "family": "Thomas",
+      "given": "Duncan C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Biostatistics Branch National Institute of Environmental Health Sciences NIH Research Triangle Park North Carolina"
+        }
+      ],
+      "family": "Weinberg",
+      "given": "Clarice R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics and Institute of Human Genetics University of California San Francisco San Francisco California"
+        }
+      ],
+      "family": "Witte",
+      "given": "John S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Surveillance Research Program Division of Cancer Control and Population Sciences National Cancer Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Shunpu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan"
+        }
+      ],
+      "family": "Zöllner",
+      "given": "Sebastian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Surveillance Research Program Division of Cancer Control and Population Sciences National Cancer Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Feuer",
+      "given": "Eric J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Epidemiology and Genetics Research Program Division of Cancer Control and Population Sciences National Cancer Institute NIH Bethesda Maryland"
+        }
+      ],
+      "family": "Gillanders",
+      "given": "Elizabeth M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2011,
+        12,
+        6
+      ]
+    ],
+    "date-time": "2011-12-06T17:15:34Z",
+    "timestamp": 1323191734000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        15
+      ]
+    ],
+    "date-time": "2024-04-15T11:50:37Z",
+    "timestamp": 1713181837000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        15
+      ]
+    ],
+    "date-time": "2024-04-15T12:10:03Z",
+    "timestamp": 1713183003476
+  },
+  "is-referenced-by-count": 44,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2011,
+        12,
+        6
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2011,
+            12,
+            6
+          ]
+        ],
+        "date-time": "2011-12-06T00:00:00Z",
+        "timestamp": 1323129600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.20652",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.20652",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "22-35",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2011,
+        12,
+        6
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2011,
+        12,
+        6
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2012,
+        1
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1093/aje/154.8.687",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1093/aje/153.3.265",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1038/nrg2867",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a112793",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1093/ije/dym186",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "article-title": "Design and analysis of two‐phase studies with binary outcomes",
+      "author": "Breslow NE",
+      "first-page": "457",
+      "journal-title": "Appl Stat",
+      "key": "e_1_2_8_7_1",
+      "volume": "48",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1093/hmg/ddr228",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1016/j.gde.2010.05.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1198/jasa.2009.0104",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-10-2646",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1038/nrg2779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1038/nrg2579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "article-title": "Gene‐environment interactions in genome‐wide association studies: a comparative study of tests applied to empirical studies of type 2 diabetes",
+      "author": "Cornelis MC",
+      "journal-title": "Am J Epidemiol",
+      "key": "e_1_2_8_14_1",
+      "year": "2011"
+    },
+    {
+      "author": "Cox NJ",
+      "key": "e_1_2_8_15_1",
+      "volume-title": "Complex traits",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1097/MOL.0b013e328334fdb6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1007/s00335-005-0175-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1038/nrg2809",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1176/appi.ajp.160.4.636",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1038/nature09764",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1289/ehp.93101s459",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1159/000288704",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0013584",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1038/nature09298",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1038/nature06258",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1038/nrg2045",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1038/mp.2010.8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1126/science.1109557",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20042",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1002/gepi.2001.21.s1.s626",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1093/acprof:oso/9780195398441.003.0009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1038/nature09792",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1093/biomet/82.1.69",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20516",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwn339",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001156",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1186/1479-7364-3-1-79",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1186/gm205",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_43_1"
+    },
+    {
+      "DOI": "10.1186/bcr2797",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_44_1"
+    },
+    {
+      "DOI": "10.1159/000099184",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    },
+    {
+      "DOI": "10.1007/978-3-540-78757-0_12",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp713",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_47_1"
+    },
+    {
+      "article-title": "Human microbiome visualization using 3D technology",
+      "author": "Moore J",
+      "first-page": "154",
+      "journal-title": "Pac Symp Biocomput",
+      "key": "e_1_2_8_48_1",
+      "volume": "16",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.mrfmmm.2006.09.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_49_1"
+    },
+    {
+      "DOI": "10.1111/j.1541-0420.2007.00953.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_50_1"
+    },
+    {
+      "article-title": "Testing gene‐environment interaction in large scale case‐control association studies: possible choices and comparisons",
+      "author": "Mukherjee B",
+      "journal-title": "Am J Epidemiol",
+      "key": "e_1_2_8_51_1",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/aje/kwn353",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_52_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001322",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_53_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0030047",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_54_1"
+    },
+    {
+      "DOI": "10.1126/science.331.6018.666",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_55_1"
+    },
+    {
+      "DOI": "10.1002/sim.4780130206",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_56_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_57_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1000369",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_58_1"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-380862-2.00001-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_59_1"
+    },
+    {
+      "DOI": "10.1086/321276",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_60_1"
+    },
+    {
+      "DOI": "10.1016/j.smim.2009.10.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_61_1"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a113015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_62_1"
+    },
+    {
+      "DOI": "10.1038/ng1589",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_63_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq257",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_64_1"
+    },
+    {
+      "DOI": "10.1093/ije/10.4.383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_65_1"
+    },
+    {
+      "DOI": "10.1186/1756-0500-2-149",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_66_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyh132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_67_1"
+    },
+    {
+      "DOI": "10.1186/gb-2010-11-5-207",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_68_1"
+    },
+    {
+      "author": "Stephens M",
+      "key": "e_1_2_8_69_1",
+      "volume-title": "A Unified Framework for Testing Multiple Phenotypes for Association with Genetic Variants",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/nature04226",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_70_1"
+    },
+    {
+      "DOI": "10.1093/oso/9780195159394.001.0001",
+      "author": "Thomas D",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_71_1",
+      "volume-title": "Statistical Methods in Genetic Epidemiology",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1038/nrg2764",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_72_1"
+    },
+    {
+      "article-title": "GE‐whiz! Ratcheting gene‐environment studies up to the whole genome and the whole exposome",
+      "author": "Thomas DC",
+      "journal-title": "Am J Epidemiol",
+      "key": "e_1_2_8_73_1",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/0895-4356(91)90033-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_74_1"
+    },
+    {
+      "author": "Turner S",
+      "key": "e_1_2_8_75_1",
+      "volume-title": "Quality Control Procedures for Genome‐Wide Association Studies",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1002/gepi.20393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_76_1"
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-07-0457",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_77_1"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a114211",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_78_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.10.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_79_1"
+    },
+    {
+      "DOI": "10.1038/ng0411-287",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_80_1"
+    },
+    {
+      "DOI": "10.1038/ng2110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_81_1"
+    },
+    {
+      "DOI": "10.1016/j.jgg.2011.02.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_82_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_83_1"
+    }
+  ],
+  "reference-count": 82,
+  "references-count": 82,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.20652"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Next generation analytic tools for large scale genetic epidemiology studies of complex diseases"
+  ],
+  "type": "journal-article",
+  "volume": "36"
+}

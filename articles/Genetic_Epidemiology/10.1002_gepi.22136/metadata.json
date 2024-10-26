@@ -1,0 +1,502 @@
+{
+  "DOI": "10.1002/gepi.22136",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22136",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe sequence kernel association test (SKAT) is widely used to test for associations between a phenotype and a set of genetic variants that are usually rare. Evaluating tail probabilities or quantiles of the null distribution for SKAT requires computing the eigenvalues of a matrix related to the genotype covariance between markers. Extracting the full set of eigenvalues of this matrix (an \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22136-math-0002.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22136:gepi22136-math-0002\"/\u003e matrix, for \u003cjats:italic\u003en\u003c/jats:italic\u003e subjects) has computational complexity proportional to \u003cjats:italic\u003en\u003c/jats:italic\u003e\u003cjats:sup\u003e3\u003c/jats:sup\u003e. As SKAT is often used when \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22136-math-0003.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22136:gepi22136-math-0003\"/\u003e, this step becomes a major bottleneck in its use in practice. We therefore propose fastSKAT, a new computationally inexpensive but accurate approximations to the tail probabilities, in which the \u003cjats:italic\u003ek\u003c/jats:italic\u003e largest eigenvalues of a weighted genotype covariance matrix or the largest singular values of a weighted genotype matrix are extracted, and a single term based on the Satterthwaite approximation is used for the remaining eigenvalues. While the method is not particularly sensitive to the choice of \u003cjats:italic\u003ek\u003c/jats:italic\u003e, we also describe how to choose its value, and show how fastSKAT can automatically alert users to the rare cases where the choice may affect results. As well as providing faster implementation of SKAT, the new method also enables entirely new applications of SKAT that were not possible before; we give examples grouping variants by topologically associating domains, and comparing chromosome‐wide association by class of histone marker.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22136"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2018-01-25"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2018-05-10"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2018-06-22"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics University of Auckland Auckland New Zealand"
+        }
+      ],
+      "family": "Lumley",
+      "given": "Thomas",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cardiovascular Health Research Unit University of Washington Seattle Washington"
+        }
+      ],
+      "family": "Brody",
+      "given": "Jennifer",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University Boston Massachusetts"
+        }
+      ],
+      "family": "Peloso",
+      "given": "Gina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "University of Texas Health Science Center at Houston Houston Texas"
+        }
+      ],
+      "family": "Morrison",
+      "given": "Alanna",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3071-7278",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Washington Seattle Washington"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Rice",
+      "given": "Kenneth",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2018,
+        6,
+        22
+      ]
+    ],
+    "date-time": "2018-06-22T09:09:05Z",
+    "timestamp": 1529658545000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        17
+      ]
+    ],
+    "date-time": "2023-09-17T15:58:00Z",
+    "timestamp": 1694966280000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "U01HL137162"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000049",
+      "award": [
+        "R01AG023629"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Aging"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "date-time": "2024-04-30T00:32:16Z",
+    "timestamp": 1714437136923
+  },
+  "is-referenced-by-count": 23,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2018,
+        6,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2018,
+            6,
+            22
+          ]
+        ],
+        "date-time": "2018-06-22T00:00:00Z",
+        "timestamp": 1529625600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22136",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22136",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "516-527",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2018,
+        6,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2018,
+        6,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2018,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1137/1.9780898719604",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_2_1"
+    },
+    {
+      "DOI": "10.1214/aoap/1177005712",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_3_1"
+    },
+    {
+      "DOI": "10.1145/567806.567807",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_4_1"
+    },
+    {
+      "DOI": "10.1101/gr.083634.108",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_5_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21791",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_7_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_8_1"
+    },
+    {
+      "DOI": "10.1038/nrg2779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_9_1"
+    },
+    {
+      "DOI": "10.2307/2346911",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_10_1"
+    },
+    {
+      "DOI": "10.1038/nature11082",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_11_1"
+    },
+    {
+      "DOI": "10.2307/2347721",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_12_1"
+    },
+    {
+      "author": "Fitzmaurice G. M.",
+      "key": "e_1_2_6_13_1",
+      "volume-title": "Applied longitudinal analysis",
+      "year": "2012"
+    },
+    {
+      "author": "Fuller W.",
+      "key": "e_1_2_6_14_1",
+      "volume-title": "Sampling statistics",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.12.022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_15_1"
+    },
+    {
+      "author": "Golub G. H.",
+      "key": "e_1_2_6_16_1",
+      "volume-title": "Matrix computations",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1145/1377603.1377607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_17_1"
+    },
+    {
+      "DOI": "10.1137/090771806",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_18_1"
+    },
+    {
+      "DOI": "10.1080/03610919008812866",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_19_1"
+    },
+    {
+      "DOI": "10.1038/ng.548",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_20_1"
+    },
+    {
+      "author": "Korobeynikov A.",
+      "key": "e_1_2_6_21_1",
+      "volume-title": "svd: Interfaces to various state‐of‐art SVD and eigensolvers",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/biomet/86.4.929",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_22_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_23_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_24_1"
+    },
+    {
+      "author": "Lee S.",
+      "key": "e_1_2_6_25_1",
+      "volume-title": "SKAT: SNP‐set (sequence) kernel association test",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_26_1"
+    },
+    {
+      "DOI": "10.1145/3004053",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_27_1"
+    },
+    {
+      "DOI": "10.1161/CIRCGENETICS.113.000350",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_28_1"
+    },
+    {
+      "DOI": "10.1016/j.csda.2008.11.025",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_29_1"
+    },
+    {
+      "DOI": "10.1038/ng.3190",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_30_1"
+    },
+    {
+      "author": "Lumley T.",
+      "key": "e_1_2_6_31_1",
+      "volume-title": "Complex surveys: A guide to analysis using R",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ng.2671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_32_1"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_33_1"
+    },
+    {
+      "DOI": "10.1161/CIRCGENETICS.108.829747",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_34_1"
+    },
+    {
+      "author": "R Core Team",
+      "key": "e_1_2_6_35_1",
+      "volume-title": "R: A language and environment for statistical computing",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/gepi.21676",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_36_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21820",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_37_1"
+    },
+    {
+      "DOI": "10.1142/S1793536911000787",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_38_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21913",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_39_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_40_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_41_1"
+    },
+    {
+      "DOI": "10.1145/1824801.1824805",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_42_1"
+    },
+    {
+      "DOI": "10.3109/10409238.2015.1087961",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_6_43_1"
+    }
+  ],
+  "reference-count": 42,
+  "references-count": 42,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/085639",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22136"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "FastSKAT: Sequence kernel association tests for very large sets of markers"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "42"
+}

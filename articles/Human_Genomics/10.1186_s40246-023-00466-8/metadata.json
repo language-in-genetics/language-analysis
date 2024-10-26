@@ -1,0 +1,1506 @@
+{
+  "DOI": "10.1186/s40246-023-00466-8",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00466-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eDespite being a very common type of genetic variation, the distribution of copy-number variations (CNVs) in the population is still poorly understood. The knowledge of the genetic variability, especially at the level of the local population, is a critical factor for distinguishing pathogenic from non-pathogenic variation in the discovery of new disease variants.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eHere, we present the SPAnish Copy Number Alterations Collaborative Server (SPACNACS), which currently contains copy number variation profiles obtained from more than 400 genomes and exomes of unrelated Spanish individuals. By means of a collaborative crowdsourcing effort whole genome and whole exome sequencing data, produced by local genomic projects and for other purposes, is continuously collected. Once checked both, the Spanish ancestry and the lack of kinship with other individuals in the SPACNACS, the CNVs are inferred for these sequences and they are used to populate the database. A web interface allows querying the database with different filters that include ICD10 upper categories. This allows discarding samples from the disease under study and obtaining pseudo-control CNV profiles from the local population. We also show here additional studies on the local impact of CNVs in some phenotypes and on pharmacogenomic variants. SPACNACS can be accessed at: \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://csvs.clinbioinfosspa.es/spacnacs/\"\u003ehttp://csvs.clinbioinfosspa.es/spacnacs/\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eSPACNACS facilitates disease gene discovery by providing detailed information of the local variability of the population and exemplifies how to reuse genomic data produced for other purposes to build a local reference database.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "466"
+  ],
+  "article-number": "20",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "12 September 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "25 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "9 March 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "López-López",
+      "given": "Daniel",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Roldán",
+      "given": "Gema",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fernández-Rueda",
+      "given": "Jose L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bostelmann",
+      "given": "Gerrit",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Carmona",
+      "given": "Rosario",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Aquino",
+      "given": "Virginia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Perez-Florido",
+      "given": "Javier",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ortuño",
+      "given": "Francisco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pita",
+      "given": "Guillermo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Núñez-Torres",
+      "given": "Rocío",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "González-Neira",
+      "given": "Anna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Alonso",
+      "given": "Angel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Salgado-Garrido",
+      "given": "Josefa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pasalodos-Sanchez",
+      "given": "Sara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ayuso",
+      "given": "Carmen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Minguez",
+      "given": "Pablo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Avila-Fernandez",
+      "given": "Almudena",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Corton",
+      "given": "Marta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Artuch",
+      "given": "Rafael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Borrego",
+      "given": "Salud",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Antiñolo",
+      "given": "Guillermo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Carracedo",
+      "given": "Angel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Amigo",
+      "given": "Jorge",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Castaño",
+      "given": "Luis Antonio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tejada",
+      "given": "Isabel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Delmiro",
+      "given": "Aitor",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Espinos",
+      "given": "Carmina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Grinberg",
+      "given": "Daniel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guillén",
+      "given": "Encarnación",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lapunzina",
+      "given": "Pablo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lopez-Escámez",
+      "given": "Jose Antonio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gallego-Martinez",
+      "given": "Alvaro",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Martí",
+      "given": "Ramón",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rovira",
+      "given": "Eulalia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Millán",
+      "given": "José Mª",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moreno",
+      "given": "Miguel Angel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Morin",
+      "given": "Matías",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moreno-Galdó",
+      "given": "Antonio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fernández-Cancio",
+      "given": "Mónica",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Morte",
+      "given": "Beatriz",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mulero",
+      "given": "Victoriano",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "García",
+      "given": "Diana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nunes",
+      "given": "Virginia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Palau",
+      "given": "Francesc",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Perez",
+      "given": "Belén",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jurado",
+      "given": "Luis Pérez",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Perona",
+      "given": "Rosario",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pujol",
+      "given": "Aurora",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ramos",
+      "given": "Feliciano",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lopez",
+      "given": "Esther",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ribes",
+      "given": "Antonia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rosell",
+      "given": "Jordi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Surrallés",
+      "given": "Jordi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Peña-Chilet",
+      "given": "María",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dopazo",
+      "given": "Joaquin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "CSVS Crowdsourcing Group",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        9
+      ]
+    ],
+    "date-time": "2023-03-09T05:02:38Z",
+    "timestamp": 1678338158000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        9
+      ]
+    ],
+    "date-time": "2023-03-09T06:05:19Z",
+    "timestamp": 1678341919000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100004587",
+      "award": [
+        "IMP/00009",
+        "PI20/01305",
+        "IMP/00019"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Instituto de Salud Carlos III"
+    },
+    {
+      "DOI": "10.13039/501100004837",
+      "award": [
+        "PID2020-117979RB-I00"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Ministerio de Ciencia e Innovación"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        17
+      ]
+    ],
+    "date-time": "2024-02-17T15:44:58Z",
+    "timestamp": 1708184698168
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2023-03-09T00:00:00Z",
+        "timestamp": 1678320000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2023-03-09T00:00:00Z",
+        "timestamp": 1678320000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00466-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00466-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00466-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/nrg2149",
+      "author": "JS Beckmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "639",
+      "issue": "8",
+      "journal-title": "Nat Rev Genet",
+      "key": "466_CR1",
+      "unstructured": "Beckmann JS, Estivill X, Antonarakis SE. Copy number variants and genetic traits: closer to the resolution of phenotypic to genotypic variability. Nat Rev Genet. 2007;8(8):639–46.",
+      "volume": "8",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1097/GIM.0b013e318183f848",
+      "author": "JA Buchanan",
+      "doi-asserted-by": "publisher",
+      "first-page": "639",
+      "issue": "9",
+      "journal-title": "Genet Med",
+      "key": "466_CR2",
+      "unstructured": "Buchanan JA, Scherer SW. Contemplating effects of genomic structural variation. Genet Med. 2008;10(9):639–47.",
+      "volume": "10",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1017/S1462399410001390",
+      "author": "C Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "e08",
+      "journal-title": "Exp Rev Mol Med",
+      "key": "466_CR3",
+      "unstructured": "Lee C, Scherer SW. The clinical context of copy number variation in the human genome. Exp Rev Mol Med. 2010;12:e08.",
+      "volume": "12",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.3390/genes12091427",
+      "author": "B Royer-Bertrand",
+      "doi-asserted-by": "publisher",
+      "first-page": "1427",
+      "issue": "9",
+      "journal-title": "Genes",
+      "key": "466_CR4",
+      "unstructured": "Royer-Bertrand B, Cisarova K, Niel-Butschi F, Mittaz-Crettol L, Fodstad H, Superti-Furga A. CNV detection from exome sequencing data in routine diagnostics of rare genetic disorders: opportunities and limitations. Genes. 2021;12(9):1427.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nature15394",
+      "author": "PH Sudmant",
+      "doi-asserted-by": "publisher",
+      "first-page": "75",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "466_CR5",
+      "unstructured": "Sudmant PH, Rausch T, Gardner EJ, Handsaker RE, Abyzov A, Huddleston J, Zhang Y, Ye K, Jun G, Hsi-Yang Fritz M. An integrated map of structural variation in 2504 human genomes. Nature. 2015;526(7571):75–81.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature08516",
+      "author": "DF Conrad",
+      "doi-asserted-by": "publisher",
+      "first-page": "704",
+      "issue": "7289",
+      "journal-title": "Nature",
+      "key": "466_CR6",
+      "unstructured": "Conrad DF, Pinto D, Redon R, Feuk L, Gokcumen O, Zhang Y, Aerts J, Andrews TD, Barnes C, Campbell P. Origins and functional impact of copy number variation in the human genome. Nature. 2010;464(7289):704–12.",
+      "volume": "464",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/molbev/msw005",
+      "author": "J Dopazo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1205",
+      "issue": "5",
+      "journal-title": "Mol Biol Evol",
+      "key": "466_CR7",
+      "unstructured": "Dopazo J, Amadoz A, Bleda M, Garcia-Alonso L, Alemán A, García-García F, Rodriguez JA, Daub JT, Muntané G, Rueda A, et al. 267 Spanish exomes reveal population-specific differences in disease-related genetic variation. Mol Biol Evol. 2016;33(5):1205–18.",
+      "volume": "33",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/nar/gkt937",
+      "author": "E Bragin",
+      "doi-asserted-by": "publisher",
+      "first-page": "D993",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "466_CR8",
+      "unstructured": "Bragin E, Chatzimichali EA, Wright CF, Hurles ME, Firth HV, Bevan AP, Swaminathan GJ. DECIPHER: database for the interpretation of phenotype-linked plausibly pathogenic sequence and copy-number variation. Nucleic Acids Res. 2014;42(D1):D993–1000.",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2287-8",
+      "author": "RL Collins",
+      "doi-asserted-by": "publisher",
+      "first-page": "444",
+      "issue": "7809",
+      "journal-title": "Nature",
+      "key": "466_CR9",
+      "unstructured": "Collins RL, Brand H, Karczewski KJ, Zhao X, Alföldi J, Francioli LC, Khera AV, Lowther C, Gauthier LD, Wang H, et al. A structural variation reference for medical and population genetics. Nature. 2020;581(7809):444–51.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "key": "466_CR10",
+      "unstructured": "CIBERER: The Spanish Network for Research in Rare diseases. https://www.ciberer.es/en."
+    },
+    {
+      "key": "466_CR11",
+      "unstructured": "NAGEN. Proyecto 1000 genomas de Navarra. https://www.nagen1000navarra.es/."
+    },
+    {
+      "key": "466_CR12",
+      "unstructured": "EnoD: Undiagnosed Rare Diseases Programme. https://www.ciberer.es/en/transversal-programmes/scientific-projects/undiagnosed-rare-diseases-programme-enod."
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1043",
+      "author": "S Köhler",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1207",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "466_CR13",
+      "unstructured": "Köhler S, Gargano M, Matentzoglu N, Carmody LC, Lewis-Smith D, Vasilevsky NA, Danis D, Balagura G, Baynam G, Brower AM. The human phenotype ontology in 2021. Nucleic Acids Res. 2021;49(D1):D1207–17.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/wsbm.1417",
+      "author": "JM Barbarino",
+      "doi-asserted-by": "publisher",
+      "issue": "4",
+      "journal-title": "Wiley Interdiscip Rev Syst Biol Med",
+      "key": "466_CR14",
+      "unstructured": "Barbarino JM, Whirl-Carrillo M, Altman RB, Klein TE. PharmGKB: A worldwide resource for pharmacogenomic information. Wiley Interdiscip Rev Syst Biol Med. 2018;10(4): e1417.",
+      "volume": "10",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa794",
+      "author": "M Peña-Chilet",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1130",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "466_CR15",
+      "unstructured": "Peña-Chilet M, Roldán G, Perez-Florido J, Ortuño FM, Carmona R, Aquino V, Lopez-Lopez D, Loucera C, Fernandez-Rueda JL, Gallego A, et al. CSVS, a crowdsourcing database of the Spanish population genetic variability. Nucleic Acids Res. 2020;49(D1):D1130–7.",
+      "volume": "49",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.molmed.2011.01.007",
+      "author": "Y He",
+      "doi-asserted-by": "publisher",
+      "first-page": "244",
+      "issue": "5",
+      "journal-title": "Trends Mol Med",
+      "key": "466_CR16",
+      "unstructured": "He Y, Hoskins JM, McLeod HL. Copy number variants in pharmacogenetic genes. Trends Mol Med. 2011;17(5):244–51.",
+      "volume": "17",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/cpt.2149",
+      "author": "KR Crews",
+      "doi-asserted-by": "publisher",
+      "first-page": "888",
+      "issue": "4",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "466_CR17",
+      "unstructured": "Crews KR, Monte AA, Huddart R, Caudle KE, Kharasch ED, Gaedigk A, Dunnenberger HM, Leeder JS, Callaghan JT, Samer CF. Clinical Pharmacogenetics Implementation Consortium guideline for CYP2D6, OPRM1, and COMT genotypes and select opioid therapy. Clin Pharmacol Ther. 2021;110(4):888–96.",
+      "volume": "110",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cpt.597",
+      "author": "JK Hicks",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "issue": "1",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "466_CR18",
+      "unstructured": "Hicks JK, Sangkuhl K, Swen JJ, Ellingrod VL, Müller DJ, Shimoda K, Bishop JR, Kharasch ED, Skaar TC, Gaedigk A. Clinical Pharmacogenetics Implementation Consortium guideline (CPIC®) for CYP2D6 and CYP2C19 genotypes and dosing of tricyclic antidepressants: 2016 update. Clin Pharmacol Ther. 2017;102(1):37.",
+      "volume": "102",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/cpt.147",
+      "author": "JK Hicks",
+      "doi-asserted-by": "publisher",
+      "first-page": "127",
+      "issue": "2",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "466_CR19",
+      "unstructured": "Hicks JK, Bishop JR, Sangkuhl K, Müller DJ, Ji Y, Leckband SG, Leeder JS, Graham RL, Chiulli DL. LLerena A: Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for CYP2D6 and CYP2C19 genotypes and dosing of selective serotonin reuptake inhibitors. Clin Pharmacol Ther. 2015;98(2):127–34.",
+      "volume": "98",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/cpt.1007",
+      "author": "MP Goetz",
+      "doi-asserted-by": "publisher",
+      "first-page": "770",
+      "issue": "5",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "466_CR20",
+      "unstructured": "Goetz MP, Sangkuhl K, Guchelaar HJ, Schwab M, Province M, Whirl-Carrillo M, Symmans WF, McLeod HL, Ratain MJ, Zembutsu H. Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for CYP2D6 and tamoxifen therapy. Clin Pharmacol Ther. 2018;103(5):770–7.",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/cpt.598",
+      "author": "GC Bell",
+      "doi-asserted-by": "publisher",
+      "first-page": "213",
+      "issue": "2",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "466_CR21",
+      "unstructured": "Bell GC, Caudle KE, Whirl-Carrillo M, Gordon RJ, Hikino K, Prows CA, Gaedigk A, Agundez JA, Sadhasivam S, Klein TE. Clinical Pharmacogenetics Implementation Consortium (CPIC) guideline for CYP2D6 genotype and use of ondansetron and tropisetron. Clin Pharmacol Ther. 2017;102(2):213.",
+      "volume": "102",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41576-019-0156-9",
+      "author": "G Saunders",
+      "doi-asserted-by": "publisher",
+      "first-page": "693",
+      "issue": "11",
+      "journal-title": "Nat Rev Genet",
+      "key": "466_CR22",
+      "unstructured": "Saunders G, Baudis M, Becker R, Beltran S, Béroud C, Birney E, Brooksbank C, Brunak S, Van den Bulcke M, Drysdale R. Leveraging European infrastructures to access 1 million human genomes by 2022. Nat Rev Genet. 2019;20(11):693–701.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.12688/f1000research.24887.1",
+      "doi-asserted-by": "crossref",
+      "key": "466_CR23",
+      "unstructured": "Salgado D, Armean IM, Baudis M, Beltran S, Capella-Gutierrez S, Carvalho-Silva D, Del Angel VD, Dopazo J, Furlong LI, Gao B. The ELIXIR human copy number variations community: building bioinformatics infrastructure for research. FResearch. 2020;9:ELIXIR-1229."
+    },
+    {
+      "author": "J Rambla",
+      "first-page": "791",
+      "issue": "6",
+      "journal-title": "Hum Mutat",
+      "key": "466_CR24",
+      "unstructured": "Rambla J, Baudis M, Ariosa R, Beck T, Fromont LA, Navarro A, Paloots R, Rueda M, Saunders G, Singh B, et al. Beacon v2 and Beacon networks: a “lingua franca” for federated data discovery in biomedical genomics, and beyond. Hum Mutat. 2022;43(6):791–9.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/humu.22858",
+      "author": "AA Philippakis",
+      "doi-asserted-by": "publisher",
+      "first-page": "915",
+      "issue": "10",
+      "journal-title": "Hum Mutat",
+      "key": "466_CR25",
+      "unstructured": "Philippakis AA, Azzariti DR, Beltran S, Brookes AJ, Brownstein CA, Brudno M, Brunner HG, Buske OJ, Carey K, Doll C. The matchmaker exchange: a platform for rare disease gene discovery. Hum Mutat. 2015;36(10):915–21.",
+      "volume": "36",
+      "year": "2015"
+    },
+    {
+      "key": "466_CR26",
+      "unstructured": "The Medical Genome Project. http://www.medicalgenomeproject.com/."
+    },
+    {
+      "key": "466_CR27",
+      "unstructured": "References: Kindly. https://www.rare-genomics.com."
+    },
+    {
+      "DOI": "10.1186/s13059-017-1174-6",
+      "author": "H Gui",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "466_CR28",
+      "unstructured": "Gui H, Schriemer D, Cheng WW, Chauhan RK, Antiňolo G, Berrios C, Bleda M, Brooks AS, Brouwer RW, Burns AJ. Whole exome sequencing coupled with unbiased functional analysis reveals new Hirschsprung disease genes. Genome Biol. 2017;18(1):1–13.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.heares.2019.107872",
+      "author": "A Gallego-Martinez",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Hear Res",
+      "key": "466_CR29",
+      "unstructured": "Gallego-Martinez A, Lopez-Escamez JA. Genetic architecture of Meniere’s disease. Hear Res. 2020;397: 107872.",
+      "volume": "397",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.arbres.2021.06.001",
+      "author": "A Torrent-Vernetta",
+      "doi-asserted-by": "publisher",
+      "first-page": "22",
+      "issue": "1",
+      "journal-title": "Arch Bronconeumol",
+      "key": "466_CR30",
+      "unstructured": "Torrent-Vernetta A, Gaboli M, Castillo-Corullón S, Mondéjar-López P, Sanz Santiago V, Costa-Colomer J, Osona B, Torres-Borrego J, de la Serna-Blázquez O, Bellón Alonso S, et al. Incidence and prevalence of children’s diffuse lung disease in Spain. Arch Bronconeumol. 2022;58(1):22–9.",
+      "volume": "58",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/nature11632",
+      "author": "GR Abecasis",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "issue": "7422",
+      "journal-title": "Nature",
+      "key": "466_CR31",
+      "unstructured": "Abecasis GR, Auton A, Brooks LD, DePristo MA, Durbin RM, Handsaker RE, Kang HM, Marth GT, McVean GA. An integrated map of genetic variation from 1092 human genomes. Nature. 2012;491(7422):56–65.",
+      "volume": "491",
+      "year": "2012"
+    },
+    {
+      "key": "466_CR32",
+      "unstructured": "FastQC. A quality control tool for high throughput sequence data. http://www.bioinformatics.babraham.ac.uk/projects/fastqc/."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty560",
+      "author": "S Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "i884",
+      "issue": "17",
+      "journal-title": "Bioinformatics",
+      "key": "466_CR33",
+      "unstructured": "Chen S, Zhou Y, Chen Y, Gu J. fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics. 2018;34(17):i884–90.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp324",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1754",
+      "issue": "14",
+      "journal-title": "Bioinformatics",
+      "key": "466_CR34",
+      "unstructured": "Li H, Durbin R. Fast and accurate short read alignment with Burrows–Wheeler transform. Bioinformatics. 2009;25(14):1754–60.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2078",
+      "issue": "16",
+      "journal-title": "Bioinformatics",
+      "key": "466_CR35",
+      "unstructured": "Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G, Durbin R. The sequence alignment/map format and SAMtools. Bioinformatics. 2009;25(16):2078–9.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "key": "466_CR36",
+      "unstructured": "Picard. A set of command line tools (in Java) for manipulating high-throughput sequencing (HTS) data and formats such as SAM/BAM/CRAM and VCF. http://broadinstitute.github.io/picard/."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu108",
+      "author": "FJ Lopez-Domingo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1767",
+      "issue": "12",
+      "journal-title": "Bioinformatics",
+      "key": "466_CR37",
+      "unstructured": "Lopez-Domingo FJ, Florido JP, Rueda A, Dopazo J, Santoyo-Lopez J. ngsCAT: a tool to assess the efficiency of targeted enrichment sequencing. Bioinformatics. 2014;30(12):1767–8.",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv710",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1220",
+      "issue": "8",
+      "journal-title": "Bioinformatics",
+      "key": "466_CR38",
+      "unstructured": "Chen X, Schulz-Trieglaff O, Shaw R, Barnes B, Schlesinger F, Källberg M, Cox AJ, Kruglyak S, Saunders CT. Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics. 2016;32(8):1220–2.",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1101/gr.222109.117",
+      "author": "DL Cameron",
+      "doi-asserted-by": "publisher",
+      "first-page": "2050",
+      "issue": "12",
+      "journal-title": "Genome Res",
+      "key": "466_CR39",
+      "unstructured": "Cameron DL, Schröder J, Penington JS, Do H, Molania R, Dobrovic A, Speed TP, Papenfuss AT. GRIDSS: sensitive and specific genomic rearrangement detection using positional de Bruijn graph assembly. Genome Res. 2017;27(12):2050–60.",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/cpt.2350",
+      "author": "M Whirl-Carrillo",
+      "doi-asserted-by": "publisher",
+      "first-page": "563",
+      "issue": "3",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "466_CR40",
+      "unstructured": "Whirl-Carrillo M, Huddart R, Gong L, Sangkuhl K, Thorn CF, Whaley R, Klein TE. An evidence-based framework for evaluating pharmacogenomics knowledge for personalized medicine. Clin Pharmacol Ther. 2021;110(3):563–72.",
+      "volume": "110",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/0471250953.bi1112s47",
+      "author": "AR Quinlan",
+      "doi-asserted-by": "publisher",
+      "first-page": "11.12.11",
+      "issue": "1",
+      "journal-title": "Curr Protocols Bioinform",
+      "key": "466_CR41",
+      "unstructured": "Quinlan AR. BEDTools: the swiss-army tool for genome feature analysis. Curr Protocols Bioinform. 2014;47(1):11.12.11-11.12.34.",
+      "volume": "47",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.25080/Majora-92bf1922-00a",
+      "doi-asserted-by": "crossref",
+      "key": "466_CR42",
+      "unstructured": "McKinney W: Data structures for statistical computing in python. In: Proceedings of the 9th Python in Science Conference, pp. 51–56. Austin, TX (2010)."
+    },
+    {
+      "DOI": "10.1038/s41586-020-2649-2",
+      "author": "CR Harris",
+      "doi-asserted-by": "publisher",
+      "first-page": "357",
+      "issue": "7825",
+      "journal-title": "Nature",
+      "key": "466_CR43",
+      "unstructured": "Harris CR, Millman KJ, van der Walt SJ, Gommers R, Virtanen P, Cournapeau D, Wieser E, Taylor J, Berg S, Smith NJ. Array programming with NumPy. Nature. 2020;585(7825):357–62.",
+      "volume": "585",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1109/MCSE.2007.55",
+      "author": "JD Hunter",
+      "doi-asserted-by": "publisher",
+      "first-page": "90",
+      "issue": "03",
+      "journal-title": "Comput Sci Eng",
+      "key": "466_CR44",
+      "unstructured": "Hunter JD. Matplotlib: a 2D graphics environment. Comput Sci Eng. 2007;9(03):90–5.",
+      "volume": "9",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1153",
+      "author": "MJ Landrum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1062",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "466_CR45",
+      "unstructured": "Landrum MJ, Lee JM, Benson M, Brown GR, Chao C, Chitipiralla S, Gu B, Hart J, Hoffman D, Jang W, et al. ClinVar: improving access to variant interpretations and supporting evidence. Nucleic Acids Res. 2017;46(D1):D1062–7.",
+      "volume": "46",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/database/bav028",
+      "author": "J Piñero",
+      "doi-asserted-by": "publisher",
+      "first-page": "bav028",
+      "journal-title": "Database",
+      "key": "466_CR46",
+      "unstructured": "Piñero J, Queralt-Rosinach N, Bravo À, Deu-Pons J, Bauer-Mehren A, Baron M, Sanz F, Furlong LI. DisGeNET: a discovery platform for the dynamical exploration of human diseases and their genes. Database. 2015;2015:bav028.",
+      "volume": "2015",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/75556",
+      "author": "M Ashburner",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "issue": "1",
+      "journal-title": "Gene Ontol Consort Nat Genet",
+      "key": "466_CR47",
+      "unstructured": "Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, Davis AP, Dolinski K, Dwight SS, Eppig JT, et al. Gene ontology: tool for the unification of biology. Gene Ontol Consort Nat Genet. 2000;25(1):25–9.",
+      "volume": "25",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1113",
+      "author": "Consortium GO",
+      "doi-asserted-by": "publisher",
+      "first-page": "D325",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "466_CR48",
+      "unstructured": "Consortium GO. The gene ontology resource: enriching a gold mine. Nucleic Acids Res. 2021;49(D1):D325–34.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1056/NEJMsr1406261",
+      "author": "HL Rehm",
+      "doi-asserted-by": "publisher",
+      "first-page": "2235",
+      "issue": "23",
+      "journal-title": "N Engl J Med",
+      "key": "466_CR49",
+      "unstructured": "Rehm HL, Berg JS, Brooks LD, Bustamante CD, Evans JP, Landrum MJ, Ledbetter DH, Maglott DR, Martin CL, Nussbaum RL. ClinGen—the clinical genome resource. N Engl J Med. 2015;372(23):2235–42.",
+      "volume": "372",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1007/978-3-319-56148-6_17",
+      "doi-asserted-by": "crossref",
+      "key": "466_CR50",
+      "unstructured": "Rojano E, Seoane P, Bueno-Amoros A, Perkins JR, Garcia-Ranea JA: Revealing the relationship between human genome regions and pathological phenotypes through network analysis. In: International conference on bioinformatics and biomedical engineering, pp. 197–207. Springer (2017)."
+    },
+    {
+      "DOI": "10.1093/nar/gks1172",
+      "author": "KR Rosenbloom",
+      "doi-asserted-by": "publisher",
+      "first-page": "D56",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "466_CR51",
+      "unstructured": "Rosenbloom KR, Sloan CA, Malladi VS, Dreszer TR, Learned K, Kirkup VM, Wong MC, Maddren M, Fang R, Heitner SG. ENCODE data in the UCSC genome browser: year 5 update. Nucleic Acids Res. 2012;41(D1):D56–63.",
+      "volume": "41",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0030377",
+      "author": "T Derrien",
+      "doi-asserted-by": "publisher",
+      "issue": "1",
+      "journal-title": "PLoS ONE",
+      "key": "466_CR52",
+      "unstructured": "Derrien T, Estellé J, Marco Sola S, Knowles DG, Raineri E, Guigó R, Ribeca P. Fast computation and applications of genome mappability. PLoS ONE. 2012;7(1): e30377.",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41467-018-07882-8",
+      "author": "Y Zhou",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "466_CR53",
+      "unstructured": "Zhou Y, Zhou B, Pache L, Chang M, Khodabakhshi AH, Tanaseichuk O, Benner C, Chanda SK. Metascape provides a biologist-oriented resource for the analysis of systems-level datasets. Nat Commun. 2019;10(1):1–10.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature08979",
+      "author": "The Wellcome Trust Case Control Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "713",
+      "issue": "7289",
+      "journal-title": "Nature",
+      "key": "466_CR54",
+      "unstructured": "The Wellcome Trust Case Control Consortium. Genome-wide association study of CNVs in 16,000 cases of eight common diseases and 3,000 shared controls. Nature. 2010;464(7289):713–20.",
+      "volume": "464",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bfgp/elv017",
+      "author": "ER Gamazon",
+      "doi-asserted-by": "publisher",
+      "first-page": "352",
+      "issue": "5",
+      "journal-title": "Brief Funct Genomics",
+      "key": "466_CR55",
+      "unstructured": "Gamazon ER, Stranger BE. The impact of human copy number variation on gene expression. Brief Funct Genomics. 2015;14(5):352–7.",
+      "volume": "14",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.07.005",
+      "author": "JM Young",
+      "doi-asserted-by": "publisher",
+      "first-page": "228",
+      "issue": "2",
+      "journal-title": "Am J Human Genetics",
+      "key": "466_CR56",
+      "unstructured": "Young JM, Endicott RM, Parghi SS, Walker M, Kidd JM, Trask BJ. Extensive copy-number variation of the human olfactory receptor gene family. Am J Human Genetics. 2008;83(2):228–42.",
+      "volume": "83",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/ng2054",
+      "author": "GM Cooper",
+      "doi-asserted-by": "publisher",
+      "first-page": "S22",
+      "issue": "7",
+      "journal-title": "Nat Genet",
+      "key": "466_CR57",
+      "unstructured": "Cooper GM, Nickerson DA, Eichler EE. Mutational and selective effects on copy-number variants in the human genome. Nat Genet. 2007;39(7):S22–9.",
+      "volume": "39",
+      "year": "2007"
+    },
+    {
+      "key": "466_CR58",
+      "unstructured": "REACT library. https://reactjs.org/."
+    },
+    {
+      "key": "466_CR59",
+      "unstructured": "IGV. https://software.broadinstitute.org/software/igv."
+    },
+    {
+      "DOI": "10.1038/nbt.1754",
+      "author": "JT Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "issue": "1",
+      "journal-title": "Nat Biotechnol",
+      "key": "466_CR60",
+      "unstructured": "Robinson JT, Thorvaldsdottir H, Winckler W, Guttman M, Lander ES, Getz G, Mesirov JP. Integrative genomics viewer. Nat Biotechnol. 2011;29(1):24–6.",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "key": "466_CR61",
+      "unstructured": "MONGO database. https://www.mongodb.com/atlas/database."
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "issue": "7809",
+      "journal-title": "Nature",
+      "key": "466_CR62",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, Collins RL, Laricchia KM, Ganna A, Birnbaum DP. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581(7809):434–43.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "Genomes Project Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "466_CR63",
+      "unstructured": "Genomes Project Consortium. A global reference for human genetic variation. Nature. 2015;526(7571):68.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkab1049",
+      "author": "F Cunningham",
+      "doi-asserted-by": "publisher",
+      "first-page": "D988",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "466_CR64",
+      "unstructured": "Cunningham F, Allen JE, Allen J, Alvarez-Jarreta J, Amode MR, Armean Irina M, Austine-Orimoloye O, Azov Andrey G, Barnes I, Bennett R, et al. Ensembl 2022. Nucleic Acids Res. 2021;50(D1):D988–95.",
+      "volume": "50",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41587-019-0046-x",
+      "author": "M Fiume",
+      "doi-asserted-by": "publisher",
+      "first-page": "220",
+      "issue": "3",
+      "journal-title": "Nat Biotechnol",
+      "key": "466_CR65",
+      "unstructured": "Fiume M, Cupak M, Keenan S, Rambla J, de la Torre S, Dyke SOM, Brookes AJ, Carey K, Lloyd D, Goodhand P, et al. Federated discovery and sharing of genomic data using Beacons. Nat Biotechnol. 2019;37(3):220–4.",
+      "volume": "37",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.006",
+      "author": "DT Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "749",
+      "issue": "5",
+      "journal-title": "Am J Human Genet",
+      "key": "466_CR66",
+      "unstructured": "Miller DT, Adam MP, Aradhya S, Biesecker LG, Brothman AR, Carter NP, Church DM, Crolla JA, Eichler EE, Epstein CJ. Consensus statement: chromosomal microarray is a first-tier clinical diagnostic test for individuals with developmental disabilities or congenital anomalies. Am J Human Genet. 2010;86(5):749–64.",
+      "volume": "86",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/cpt.910",
+      "author": "A Gaedigk",
+      "doi-asserted-by": "publisher",
+      "first-page": "399",
+      "issue": "3",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "466_CR67",
+      "unstructured": "Gaedigk A, Ingelman-Sundberg M, Miller NA, Leeder JS, Whirl-Carrillo M, Klein TE, Committee PS. The Pharmacogene Variation (PharmVar) Consortium: incorporation of the human cytochrome P450 (CYP) allele nomenclature database. Clin Pharmacol Ther. 2018;103(3):399–401.",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41397-020-00205-5",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "251",
+      "issue": "2",
+      "journal-title": "Pharmacogenomics J",
+      "key": "466_CR68",
+      "unstructured": "Chen X, Shen F, Gonzaludo N, Malhotra A, Rogert C, Taft RJ, Bentley DR, Eberle MA. Cyrius: accurate CYP2D6 genotyping using whole-genome sequencing data. Pharmacogenomics J. 2021;21(2):251–61.",
+      "volume": "21",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cpt.2173",
+      "author": "D Twesigomwe",
+      "doi-asserted-by": "publisher",
+      "first-page": "741",
+      "issue": "3",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "466_CR69",
+      "unstructured": "Twesigomwe D, Drögemöller BI, Wright GE, Siddiqui A, da Rocha J, Lombard Z, Hazelhurst S. StellarPGx: a nextflow pipeline for calling star alleles in cytochrome P450 genes. Clin Pharmacol Ther. 2021;110(3):741–9.",
+      "volume": "110",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/gim.2014.178",
+      "author": "M Uddin",
+      "doi-asserted-by": "publisher",
+      "first-page": "747",
+      "issue": "9",
+      "journal-title": "Genet Med",
+      "key": "466_CR70",
+      "unstructured": "Uddin M, Thiruvahindrapuram B, Walker S, Wang Z, Hu P, Lamoureux S, Wei J, MacDonald JR, Pellecchia G, Lu C. A high-resolution copy-number variation resource for clinical and population genetics. Genet Med. 2015;17(9):747–52.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.cell.2011.02.013",
+      "author": "D Hanahan",
+      "doi-asserted-by": "publisher",
+      "first-page": "646",
+      "issue": "5",
+      "journal-title": "Cell",
+      "key": "466_CR71",
+      "unstructured": "Hanahan D, Weinberg RA. Hallmarks of cancer: the next generation. Cell. 2011;144(5):646–74.",
+      "volume": "144",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ng1215",
+      "author": "DG Albertson",
+      "doi-asserted-by": "publisher",
+      "first-page": "369",
+      "issue": "4",
+      "journal-title": "Nat Genet",
+      "key": "466_CR72",
+      "unstructured": "Albertson DG, Collins C, McCormick F, Gray JW. Chromosome aberrations in solid tumors. Nat Genet. 2003;34(4):369–76.",
+      "volume": "34",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/database/baab043",
+      "author": "Q Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "baab043",
+      "journal-title": "Database.",
+      "key": "466_CR73",
+      "unstructured": "Huang Q, Carrio-Cordo P, Gao B, Paloots R, Baudis M. The Progenetix oncogenomic resource in 2021. Database. 2021;2021:baab043.",
+      "volume": "2021",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nature07458",
+      "author": "EH Cook Jr",
+      "doi-asserted-by": "publisher",
+      "first-page": "919",
+      "issue": "7215",
+      "journal-title": "Nature",
+      "key": "466_CR74",
+      "unstructured": "Cook EH Jr, Scherer SW. Copy-number variations associated with neuropsychiatric conditions. Nature. 2008;455(7215):919–23.",
+      "volume": "455",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nature09146",
+      "author": "D Pinto",
+      "doi-asserted-by": "publisher",
+      "first-page": "368",
+      "issue": "7304",
+      "journal-title": "Nature",
+      "key": "466_CR75",
+      "unstructured": "Pinto D, Pagnamenta AT, Klei L, Anney R, Merico D, Regan R, Conroy J, Magalhaes TR, Correia C, Abrahams BS. Functional impact of global rare copy number variation in autism spectrum disorders. Nature. 2010;466(7304):368–72.",
+      "volume": "466",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.gde.2012.03.002",
+      "author": "B Devlin",
+      "doi-asserted-by": "publisher",
+      "first-page": "229",
+      "issue": "3",
+      "journal-title": "Curr Opin Genet Dev",
+      "key": "466_CR76",
+      "unstructured": "Devlin B, Scherer SW. Genetic architecture in autism spectrum disorder. Curr Opin Genet Dev. 2012;22(3):229–37.",
+      "volume": "22",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/gim.2013.78",
+      "author": "G Stobbe",
+      "doi-asserted-by": "publisher",
+      "first-page": "70",
+      "issue": "1",
+      "journal-title": "Genet Med",
+      "key": "466_CR77",
+      "unstructured": "Stobbe G, Liu Y, Wu R, Hudgings LH, Thompson O, Hisama FM. Diagnostic yield of array comparative genomic hybridization in adults with autism spectrum disorders. Genet Med. 2014;16(1):70–7.",
+      "volume": "16",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/humu.23880",
+      "author": "Z Fattahi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1968",
+      "issue": "11",
+      "journal-title": "Hum Mutat",
+      "key": "466_CR78",
+      "unstructured": "Fattahi Z, Beheshtian M, Mohseni M, Poustchi H, Sellars E, Nezhadi SH, Amini A, Arzhangi S, Jalalvand K, Jamali P. Iranome: a catalog of genomic variations in the Iranian population. Hum Mutat. 2019;40(11):1968–84.",
+      "volume": "40",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ncomms9018",
+      "author": "M Nagasaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "8018",
+      "journal-title": "Nat Commun",
+      "key": "466_CR79",
+      "unstructured": "Nagasaki M, Yasuda J, Katsuoka F, Nariai N, Kojima K, Kawai Y, Yamaguchi-Kabata Y, Yokozawa J, Danjoh I, Saito S, et al. Rare variant discovery by deep whole-genome sequencing of 1070 Japanese individuals. Nat Commun. 2015;6:8018.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3247",
+      "author": "DF Gudbjartsson",
+      "doi-asserted-by": "publisher",
+      "first-page": "435",
+      "issue": "5",
+      "journal-title": "Nat Genet",
+      "key": "466_CR80",
+      "unstructured": "Gudbjartsson DF, Helgason H, Gudjonsson SA, Zink F, Oddson A, Gylfason A, Besenbacher S, Magnusson G, Halldorsson BV, Hjartarson E, et al. Large-scale whole-genome sequencing of the Icelandic population. Nat Genet. 2015;47(5):435–44.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3021",
+      "doi-asserted-by": "crossref",
+      "key": "466_CR81",
+      "unstructured": "The_Genome_of_the_Netherlands_Consortium: Whole-genome sequence variation, population structure and demographic history of the Dutch population. Nat Genet. 2014;46(8):818–825."
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004494",
+      "author": "ET Lim",
+      "doi-asserted-by": "publisher",
+      "issue": "7",
+      "journal-title": "PLoS Genet",
+      "key": "466_CR82",
+      "unstructured": "Lim ET, Wurtz P, Havulinna AS, Palta P, Tukiainen T, Rehnstrom K, Esko T, Magi R, Inouye M, Lappalainen T, et al. Distribution and medical impact of loss-of-function variants in the Finnish founder population. PLoS Genet. 2014;10(7): e1004494.",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41576-022-00487-4",
+      "author": "GL Wojcik",
+      "doi-asserted-by": "publisher",
+      "first-page": "665",
+      "issue": "11",
+      "journal-title": "Nat Rev Genet.",
+      "key": "466_CR83",
+      "unstructured": "Wojcik GL, Murphy J, Edelson JL, Gignoux CR, Ioannidis AG, Manning A, Rivas MA, Buyske S, Hendricks AE. Opportunities and challenges for the use of common controls in sequencing studies. Nat Rev Genet. 2022;23(11):665–79.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/ng1090",
+      "author": "D Botstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "228",
+      "issue": "3",
+      "journal-title": "Nat Genet",
+      "key": "466_CR84",
+      "unstructured": "Botstein D, Risch N. Discovering genotypes underlying human phenotypes: past successes for Mendelian disease, future approaches for complex disease. Nat Genet. 2003;33(3):228–37.",
+      "volume": "33",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.3389/fgene.2013.00273",
+      "author": "V Katju",
+      "doi-asserted-by": "publisher",
+      "first-page": "273",
+      "journal-title": "Front Genet",
+      "key": "466_CR85",
+      "unstructured": "Katju V, Bergthorsson U. Copy-number changes in evolution: rates, fitness effects and adaptive significance. Front Genet. 2013;4:273.",
+      "volume": "4",
+      "year": "2013"
+    }
+  ],
+  "reference-count": 85,
+  "references-count": 85,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00466-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A crowdsourcing database for the copy-number variation of the Spanish population"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

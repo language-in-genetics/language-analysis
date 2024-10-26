@@ -1,0 +1,1430 @@
+{
+  "DOI": "10.1186/s40246-024-00604-w",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-024-00604-w",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eA major obstacle faced by families with rare diseases is obtaining a genetic diagnosis. The average \"diagnostic odyssey\" lasts over five years and causal variants are identified in under 50%, even when capturing variants genome-wide. To aid in the interpretation and prioritization of the vast number of variants detected, computational methods are proliferating. Knowing which tools are most effective remains unclear. To evaluate the performance of computational methods, and to encourage innovation in method development, we designed a Critical Assessment of Genome Interpretation (CAGI) community challenge to place variant prioritization models head-to-head in a real-life clinical diagnostic setting.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe utilized genome sequencing (GS) data from families sequenced in the Rare Genomes Project (RGP), a direct-to-participant research study on the utility of GS for rare disease diagnosis and gene discovery. Challenge predictors were provided with a dataset of variant calls and phenotype terms from 175 RGP individuals (65 families), including 35 solved training set families with causal variants specified, and 30 unlabeled test set families (14 solved, 16 unsolved). We tasked teams to identify causal variants in as many families as possible. Predictors submitted variant predictions with estimated probability of causal relationship (EPCR) values. Model performance was determined by two metrics, a weighted score based on the rank position of causal variants, and the maximum F-measure, based on precision and recall of causal variants across all EPCR values.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eSixteen teams submitted predictions from 52 models, some with manual review incorporated. Top performers recalled causal variants in up to 13 of 14 solved families within the top 5 ranked variants. Newly discovered diagnostic variants were returned to two previously unsolved families following confirmatory RNA sequencing, and two novel disease gene candidates were entered into Matchmaker Exchange. In one example, RNA sequencing demonstrated aberrant splicing due to a deep intronic indel in \u003cjats:italic\u003eASNS\u003c/jats:italic\u003e, identified in \u003cjats:italic\u003etrans\u003c/jats:italic\u003e with a frameshift variant in an unsolved proband with phenotypes consistent with asparagine synthetase deficiency.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eModel methodology and performance was highly variable. Models weighing call quality, allele frequency, predicted deleteriousness, segregation, and phenotype were effective in identifying causal variants, and models open to phenotype expansion and non-coding variants were able to capture more difficult diagnoses and discover new diagnoses. Overall, computational models can significantly aid variant prioritization. For use in diagnostics, detailed review and conservative assessment of prioritized variants against established criteria is needed.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "604"
+  ],
+  "article-number": "44",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "11 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "2 April 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "29 April 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The Rare Genomes Project study is approved by the Mass General Brigham Institutional Review Board (IRB) protocol 2016P001422."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Written informed consent for the publication of clinical details was obtained from the participants or legal guardians."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Authors S.Z., I.L., E.R., P.M., and R.B., own shares of enGenome srl. Authors F.D.P. and G.N. are employees of enGenome srl. Authors T.J., R.S., S.G.V., N.S., A.R., U.S., N.T., are employees of TCS Ltd. Authors P.J.C., C.K., K.N., and P.S. are employees of Invitae Ltd. H.L.R. receives support from Illumina and Microsoft for rare disease gene discovery and diagnosis. A.O’D-L. is a member of the scientific advisory board for Congenica Inc and chairs the clinical advisory board for CAGI. S.E.B receives support at UC Berkeley from a research agreement from TCS. All other authors report no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Stenton",
+      "given": "Sarah L.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "O’Leary",
+      "given": "Melanie C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lemire",
+      "given": "Gabrielle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "VanNoy",
+      "given": "Grace E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "DiTroia",
+      "given": "Stephanie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ganesh",
+      "given": "Vijay S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Groopman",
+      "given": "Emily",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "O’Heir",
+      "given": "Emily",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mangilog",
+      "given": "Brian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Osei-Owusu",
+      "given": "Ikeoluwa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pais",
+      "given": "Lynn S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Serrano",
+      "given": "Jillian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Singer-Berk",
+      "given": "Moriel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Weisburd",
+      "given": "Ben",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wilson",
+      "given": "Michael W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Austin-Tse",
+      "given": "Christina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Abdelhakim",
+      "given": "Marwa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Althagafi",
+      "given": "Azza",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Babbi",
+      "given": "Giulia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bellazzi",
+      "given": "Riccardo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bovo",
+      "given": "Samuele",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Carta",
+      "given": "Maria Giulia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Casadio",
+      "given": "Rita",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Coenen",
+      "given": "Pieter-Jan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De Paoli",
+      "given": "Federica",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Floris",
+      "given": "Matteo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gajapathy",
+      "given": "Manavalan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoehndorf",
+      "given": "Robert",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jacobsen",
+      "given": "Julius O. B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Joseph",
+      "given": "Thomas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kamandula",
+      "given": "Akash",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Katsonis",
+      "given": "Panagiotis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kint",
+      "given": "Cyrielle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lichtarge",
+      "given": "Olivier",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Limongelli",
+      "given": "Ivan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lu",
+      "given": "Yulan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Magni",
+      "given": "Paolo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mamidi",
+      "given": "Tarun Karthik Kumar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Martelli",
+      "given": "Pier Luigi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mulargia",
+      "given": "Marta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nicora",
+      "given": "Giovanna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nykamp",
+      "given": "Keith",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pejaver",
+      "given": "Vikas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Peng",
+      "given": "Yisu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pham",
+      "given": "Thi Hong Cam",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Podda",
+      "given": "Maurizio S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rao",
+      "given": "Aditya",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rizzo",
+      "given": "Ettore",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Saipradeep",
+      "given": "Vangala G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Savojardo",
+      "given": "Castrense",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schols",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shen",
+      "given": "Yang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sivadasan",
+      "given": "Naveen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smedley",
+      "given": "Damian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Soru",
+      "given": "Dorian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Srinivasan",
+      "given": "Rajgopal",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sun",
+      "given": "Yuanfei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sunderam",
+      "given": "Uma",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tan",
+      "given": "Wuwei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tiwari",
+      "given": "Naina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Xiao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Yaqiong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Williams",
+      "given": "Amanda",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Worthey",
+      "given": "Elizabeth A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yin",
+      "given": "Rujie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "You",
+      "given": "Yuning",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zeiberg",
+      "given": "Daniel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zucca",
+      "given": "Susanna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bakolitsa",
+      "given": "Constantina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brenner",
+      "given": "Steven E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fullerton",
+      "given": "Stephanie M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Radivojac",
+      "given": "Predrag",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rehm",
+      "given": "Heidi L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "O’Donnell-Luria",
+      "given": "Anne",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T08:02:26Z",
+    "timestamp": 1714377746000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T09:06:57Z",
+    "timestamp": 1714381617000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100013143",
+      "doi-asserted-by": "crossref",
+      "name": "Manton Center for Orphan Disease Research"
+    },
+    {
+      "name": "Fonds de recherche en santé du Quebec"
+    },
+    {
+      "award": [
+        "NHGRI T32 HG10464"
+      ],
+      "name": "Mass General Brigham Training Program in Precision and Genomic Medicine"
+    },
+    {
+      "award": [
+        "URF/1/4355-01-01, URF/1/4675-01-01, FCC/1/1976-34-01",
+        "URF/1/4355-01-01, URF/1/4675-01-01, FCC/1/1976-34-01",
+        "URF/1/4355-01-01, URF/1/4675-01-01, FCC/1/1976-34-01"
+      ],
+      "name": "King Abdullah University of Science and Technology (KAUST) Office of Sponsored Research"
+    },
+    {
+      "DOI": "10.13039/100000071",
+      "award": [
+        "1R01HD103805‐01",
+        "1R01HD103805‐01"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Child Health and Human Development"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "U24 HG007346",
+        "U24 HG007346",
+        "UM1HG008900, U01HG011755, R01HG009141",
+        "UM1HG008900, U01HG011755, R01HG009141"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100014989",
+      "award": [
+        "2020-224274",
+        "2020-224274"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Chan Zuckerberg Initiative"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "date-time": "2024-04-30T00:29:48Z",
+    "timestamp": 1714436988916
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            29
+          ]
+        ],
+        "date-time": "2024-04-29T00:00:00Z",
+        "timestamp": 1714348800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            29
+          ]
+        ],
+        "date-time": "2024-04-29T00:00:00Z",
+        "timestamp": 1714348800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00604-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-024-00604-w/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00604-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1056/NEJMoa1714458",
+      "author": "K Splinter",
+      "doi-asserted-by": "publisher",
+      "first-page": "2131",
+      "issue": "22",
+      "journal-title": "N Engl J Med",
+      "key": "604_CR1",
+      "unstructured": "Splinter K, Adams DR, Bacino CA, Bellen HJ, Bernstein JA, Cheatle-Jarvela AM, et al. Effect of genetic diagnosis on patients with previously undiagnosed disease. N Engl J Med. 2018;379(22):2131–9.",
+      "volume": "379",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2035790",
+      "author": "D Smedley",
+      "doi-asserted-by": "publisher",
+      "first-page": "1868",
+      "issue": "20",
+      "journal-title": "N Engl J Med",
+      "key": "604_CR2",
+      "unstructured": "100,000 Genomes Project Pilot Investigators, Smedley D, Smith KR, Martin A, Thomas EA, McDonagh EM, et al. 100,000 Genomes pilot on rare-disease diagnosis in health care - preliminary report. N Engl J Med. 2021;385(20):1868–80.",
+      "volume": "385",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "issue": "7809",
+      "journal-title": "Nature",
+      "key": "604_CR3",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581(7809):434–43.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nrg.2016.162",
+      "author": "HL Rehm",
+      "doi-asserted-by": "publisher",
+      "first-page": "259",
+      "issue": "4",
+      "journal-title": "Nat Rev Genet",
+      "key": "604_CR4",
+      "unstructured": "Rehm HL. Evolving health care through personal genomics. Nat Rev Genet. 2017;18(4):259–67.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41525-018-0053-8",
+      "author": "MM Clark",
+      "doi-asserted-by": "publisher",
+      "first-page": "16",
+      "issue": "3",
+      "journal-title": "NPJ Genom Med",
+      "key": "604_CR5",
+      "unstructured": "Clark MM, Stark Z, Farnaes L, Tan TY, White SM, Dimmock D, et al. Meta-analysis of the diagnostic and clinical utility of genome and exome sequencing and chromosomal microarray in children with suspected genetic diseases. NPJ Genom Med. 2018;9(3):16.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "issue": "5",
+      "journal-title": "Genet Med",
+      "key": "604_CR6",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17(5):405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/humu.23626",
+      "author": "AN Abou Tayoun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1517",
+      "issue": "11",
+      "journal-title": "Hum Mutat",
+      "key": "604_CR7",
+      "unstructured": "Abou Tayoun AN, Pesaran T, DiStefano MT, Oza A, Rehm HL, Biesecker LG, et al. Recommendations for interpreting the loss of function PVS1 ACMG/AMP variant criterion. Hum Mutat. 2018;39(11):1517–24.",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2022.10.013",
+      "author": "V Pejaver",
+      "doi-asserted-by": "publisher",
+      "first-page": "2163",
+      "issue": "12",
+      "journal-title": "Am J Hum Genet",
+      "key": "604_CR8",
+      "unstructured": "Pejaver V, Byrne AB, Feng B-J, Pagel KA, Mooney SD, Karchin R, et al. Calibration of computational tools for missense variant pathogenicity classification and ClinGen recommendations for PP3/BP4 criteria. Am J Hum Genet. 2022;109(12):2163–77.",
+      "volume": "109",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/humu.24380",
+      "author": "JOB Jacobsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1071",
+      "issue": "8",
+      "journal-title": "Hum Mutat",
+      "key": "604_CR9",
+      "unstructured": "Jacobsen JOB, Kelly C, Cipriani V, Research Consortium GE, Mungall CJ, Reese J, et al. Phenotype-driven approaches to enhance variant prioritization and diagnosis of rare disease. Hum Mutat. 2022;43(8):1071–81.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.08.016",
+      "author": "NM Ioannidis",
+      "doi-asserted-by": "publisher",
+      "first-page": "877",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet",
+      "key": "604_CR10",
+      "unstructured": "Ioannidis NM, Rothstein JH, Pejaver V, Middha S, McDonnell SK, Baheti S, et al. REVEL: an ensemble method for predicting the pathogenicity of rare missense variants. Am J Hum Genet. 2016;99(4):877–85.",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.12.015",
+      "author": "K Jaganathan",
+      "doi-asserted-by": "publisher",
+      "first-page": "535",
+      "issue": "3",
+      "journal-title": "Cell",
+      "key": "604_CR11",
+      "unstructured": "Jaganathan K, Kyriazopoulou Panagiotopoulou S, McRae JF, Darbandi SF, Knowles D, Li YI, et al. Predicting splicing from primary sequence with deep learning. Cell. 2019;176(3):535-548.e24.",
+      "volume": "176",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03205-y",
+      "author": "D Taliun",
+      "doi-asserted-by": "publisher",
+      "first-page": "290",
+      "issue": "7845",
+      "journal-title": "Nature",
+      "key": "604_CR12",
+      "unstructured": "Taliun D, Harris DN, Kessler MD, Carlson J, Szpiech ZA, Torres R, et al. Sequencing of 53,831 diverse genomes from the NHLBI TOPMed program. Nature. 2021;590(7845):290–9.",
+      "volume": "590",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "A Auton",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "604_CR13",
+      "unstructured": "Auton A, Brooks LD, Durbin RM, Garrison EP, Kang HM, et al. A global reference for human genetic variation. Nature. 2015;526(7571):68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "key": "604_CR14",
+      "unstructured": "Critical Assessment of Genome Interpretation Consortium. CAGI, the Critical Assessment of Genome Interpretation, establishes progress and prospects for computational genetic variant interpretation methods. Genome Biology. 2024;25(1):53."
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1043",
+      "author": "S Köhler",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1207",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "604_CR15",
+      "unstructured": "Köhler S, Gargano M, Matentzoglu N, Carmody LC, Lewis-Smith D, Vasilevsky NA, et al. The human phenotype ontology in 2021. Nucleic Acids Res. 2021;49(D1):D1207–17.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/gr.107524.110",
+      "author": "A McKenna",
+      "doi-asserted-by": "publisher",
+      "first-page": "1297",
+      "issue": "9",
+      "journal-title": "Genome Res",
+      "key": "604_CR16",
+      "unstructured": "McKenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, Kernytsky A, et al. The genome analysis toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Res. 2010;20(9):1297–303.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "author": "LS Pais",
+      "first-page": "698",
+      "issue": "6",
+      "journal-title": "Hum Mutat",
+      "key": "604_CR17",
+      "unstructured": "Pais LS, Snow H, Weisburd B, Zhang S, Baxter SM, DiTroia S, et al. seqr: a web-based analysis and collaboration tool for rare disease genomics. Hum Mutat. 2022;43(6):698–707.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1534/genetics.116.188870",
+      "author": "JA McMurry",
+      "doi-asserted-by": "publisher",
+      "first-page": "1491",
+      "issue": "4",
+      "journal-title": "Genetics",
+      "key": "604_CR18",
+      "unstructured": "McMurry JA, Köhler S, Washington NL, Balhoff JP, Borromeo C, Brush M, et al. Navigating the phenotype frontier: the monarch initiative. Genetics. 2016;203(4):1491–5.",
+      "volume": "203",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/nar/gku1205",
+      "author": "JS Amberger",
+      "doi-asserted-by": "publisher",
+      "first-page": "D789",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "604_CR19",
+      "unstructured": "Amberger JS, Bocchini CA, Schiettecatte F, Scott AF, Hamosh A. Omim.org: Online Mendelian Inheritance in Man (OMIM®), an online catalog of human genes and genetic disorders. Nucleic Acids Res. 2015;43(1):D789–98.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.03.010",
+      "author": "HV Firth",
+      "doi-asserted-by": "publisher",
+      "first-page": "524",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet",
+      "key": "604_CR20",
+      "unstructured": "Firth HV, Richards SM, Bevan AP, Clayton S, Corpas M, Rajan D, et al. DECIPHER: database of chromosomal imbalance and phenotype in humans using ensembl resources. Am J Hum Genet. 2009;84(4):524–33.",
+      "volume": "84",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/ng.2653",
+      "doi-asserted-by": "crossref",
+      "key": "604_CR21",
+      "unstructured": "GTEx Consortium. The genotype-tissue expression (GTEx) project. Nat Genet. 2013;45(6):580–5."
+    },
+    {
+      "DOI": "10.1093/nar/gky1056",
+      "doi-asserted-by": "crossref",
+      "key": "604_CR22",
+      "unstructured": "Bult CJ, Blake JA, Smith CL, Kadin JA, Richardson JE, Mouse Genome Database Group. Mouse genome database (MGD) 2019. Nucleic Acids Res. 2019;47(D1):D801–6."
+    },
+    {
+      "DOI": "10.1038/nature19356",
+      "author": "ME Dickinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "508",
+      "issue": "7621",
+      "journal-title": "Nature",
+      "key": "604_CR23",
+      "unstructured": "Dickinson ME, Flenniken AM, Ji X, Teboul L, Wong MD, White JK, et al. High-throughput discovery of novel developmental phenotypes. Nature. 2016;537(7621):508–14.",
+      "volume": "537",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/nar/gkv1222",
+      "author": "MJ Landrum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D862",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "604_CR24",
+      "unstructured": "Landrum MJ, Lee JM, Benson M, Brown G, Chao C, Chitipiralla S, et al. ClinVar: public archive of interpretations of clinically relevant variants. Nucleic Acids Res. 2016;44(D1):D862–8.",
+      "volume": "44",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00439-020-02199-3",
+      "author": "PD Stenson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1197",
+      "issue": "10",
+      "journal-title": "Hum Genet",
+      "key": "604_CR25",
+      "unstructured": "Stenson PD, Mort M, Ball EV, Chapman M, Evans K, Azevedo L, et al. The Human Gene Mutation Database (HGMD®): optimizing its use in a clinical diagnostic or research setting. Hum Genet. 2020;139(10):1197–207.",
+      "volume": "139",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nmeth.2340",
+      "author": "P Radivojac",
+      "doi-asserted-by": "publisher",
+      "first-page": "221",
+      "issue": "3",
+      "journal-title": "Nat Methods",
+      "key": "604_CR26",
+      "unstructured": "Radivojac P, Clark WT, Oron TR, Schnoes AM, Wittkop T, Sokolov A, et al. A large-scale evaluation of computational protein function prediction. Nat Methods. 2013;10(3):221–7.",
+      "volume": "10",
+      "year": "2013"
+    },
+    {
+      "author": "B Efron",
+      "first-page": "54",
+      "issue": "1",
+      "journal-title": "SSO Schweiz Monatsschr Zahnheilkd",
+      "key": "604_CR27",
+      "unstructured": "Efron B, Tibshirani R. Bootstrap methods for standard errors, confidence intervals, and other measures of statistical accuracy. SSO Schweiz Monatsschr Zahnheilkd. 1986;1(1):54–75.",
+      "volume": "1",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2287-8",
+      "author": "RL Collins",
+      "doi-asserted-by": "publisher",
+      "first-page": "444",
+      "issue": "7809",
+      "journal-title": "Nature",
+      "key": "604_CR28",
+      "unstructured": "Collins RL, Brand H, Karczewski KJ, Zhao X, Alföldi J, Francioli LC, et al. A structural variation reference for medical and population genetics. Nature. 2020;581(7809):444–51.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nbt.1754",
+      "author": "JT Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "issue": "1",
+      "journal-title": "Nat Biotechnol",
+      "key": "604_CR29",
+      "unstructured": "Robinson JT, Thorvaldsdóttir H, Winckler W, Guttman M, Lander ES, Getz G, et al. Integrative genomics viewer. Nat Biotechnol. 2011;29(1):24–6.",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1101/2023.03.28.23286936",
+      "author": "JG Serrano",
+      "doi-asserted-by": "publisher",
+      "journal-title": "MedRxiv.",
+      "key": "604_CR30",
+      "unstructured": "Serrano JG, O’Leary M, VanNoy G, Holm IA, Fraiman YS, Rehm HL, et al. Advancing understanding of inequities in rare disease genomics. MedRxiv. 2023. https://doi.org/10.1101/2023.03.28.23286936.",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/s41436-021-01171-4",
+      "author": "DT Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "1391",
+      "issue": "8",
+      "journal-title": "Genet Med",
+      "key": "604_CR31",
+      "unstructured": "Miller DT, Lee K, Gordon AS, Amendola LM, Adelman K, Bale SJ, et al. Recommendations for reporting of secondary findings in clinical exome and genome sequencing, 2021 update: a policy statement of the American College of Medical Genetics and Genomics (ACMG). Genet Med. 2021;23(8):1391–8.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41431-018-0219-y",
+      "author": "SOM Dyke",
+      "doi-asserted-by": "publisher",
+      "first-page": "1721",
+      "issue": "12",
+      "journal-title": "Eur J Hum Genet",
+      "key": "604_CR32",
+      "unstructured": "Dyke SOM, Linden M, Lappalainen I, De Argila JR, Carey K, Lloyd D, et al. Registered access: authorizing data access. Eur J Hum Genet. 2018;26(12):1721–31.",
+      "volume": "26",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/gr.176214.114",
+      "author": "P Katsonis",
+      "doi-asserted-by": "publisher",
+      "first-page": "2050",
+      "issue": "12",
+      "journal-title": "Genome Res",
+      "key": "604_CR33",
+      "unstructured": "Katsonis P, Lichtarge O. A formal perturbation equation between genotype and phenotype determines the Evolutionary Action of protein-coding variations on fitness. Genome Res. 2014;24(12):2050–8.",
+      "volume": "24",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/humu.23665",
+      "author": "G Nicora",
+      "doi-asserted-by": "publisher",
+      "first-page": "1835",
+      "issue": "12",
+      "journal-title": "Hum Mutat",
+      "key": "604_CR34",
+      "unstructured": "Nicora G, Limongelli I, Gambelli P, Memmi M, Malovini A, Mazzanti A, et al. CardioVAI: An automatic implementation of ACMG-AMP variant interpretation guidelines in the diagnosis of cardiovascular diseases. Hum Mutat. 2018;39(12):1835–46.",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41598-022-06547-3",
+      "author": "G Nicora",
+      "doi-asserted-by": "publisher",
+      "first-page": "2517",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "604_CR35",
+      "unstructured": "Nicora G, Zucca S, Limongelli I, Bellazzi R, Magni P. A machine learning approach based on ACMG/AMP guidelines for genomic variant classification and prioritization. Sci Rep. 2022;12(1):2517.",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0231728",
+      "author": "A Rao",
+      "doi-asserted-by": "publisher",
+      "issue": "4",
+      "journal-title": "PLoS ONE",
+      "key": "604_CR36",
+      "unstructured": "Rao A, Joseph T, Saipradeep VG, Kotte S, Sivadasan N, Srinivasan R. PRIORI-T: a tool for rare disease gene prioritization using MEDLINE. PLoS ONE. 2020;15(4): e0231728.",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1074",
+      "author": "D Szklarczyk",
+      "doi-asserted-by": "publisher",
+      "first-page": "D605",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "604_CR37",
+      "unstructured": "Szklarczyk D, Gable AL, Nastou KC, Lyon D, Kirsch R, Pyysalo S, et al. The STRING database in 2021: customizable protein-protein networks, and functional characterization of user-uploaded gene/measurement sets. Nucleic Acids Res. 2021;49(D1):D605–12.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/gim.2015.137",
+      "author": "WP Bone",
+      "doi-asserted-by": "publisher",
+      "first-page": "608",
+      "issue": "6",
+      "journal-title": "Genet Med",
+      "key": "604_CR38",
+      "unstructured": "Bone WP, Washington NL, Buske OJ, Adams DR, Davis J, Draper D, et al. Computational evaluation of exome sequence data using human and model organism phenotypes improves diagnostic efficiency. Genet Med. 2016;18(6):608–17.",
+      "volume": "18",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.07.005",
+      "author": "D Smedley",
+      "doi-asserted-by": "publisher",
+      "first-page": "595",
+      "issue": "3",
+      "journal-title": "Am J Hum Genet",
+      "key": "604_CR39",
+      "unstructured": "Smedley D, Schubach M, Jacobsen JOB, Köhler S, Zemojtel T, Spielmann M, et al. A whole-genome analysis framework for effective identification of pathogenic regulatory variants in mendelian disease. Am J Hum Genet. 2016;99(3):595–606.",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41467-020-20847-0",
+      "author": "H Qi",
+      "doi-asserted-by": "publisher",
+      "first-page": "510",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "604_CR40",
+      "unstructured": "Qi H, Zhang H, Zhao Y, Chen C, Long JJ, Chung WK, et al. MVP predicts the pathogenicity of missense variants by deep learning. Nat Commun. 2021;12(1):510.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.02.003",
+      "author": "J Shendure",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "issue": "1",
+      "journal-title": "Cell",
+      "key": "604_CR41",
+      "unstructured": "Shendure J, Findlay GM, Snyder MW. Genomic medicine-progress, pitfalls, and promise. Cell. 2019;177(1):45–57.",
+      "volume": "177",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/hmg/ddab192",
+      "author": "Y Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2300",
+      "issue": "23",
+      "journal-title": "Hum Mol Genet",
+      "key": "604_CR42",
+      "unstructured": "Zhang Y, Tachtsidis G, Schob C, Koko M, Hedrich UBS, Lerche H, et al. KCND2 variants associated with global developmental delay differentially impair Kv42 channel gating. Hum Mol Genet. 2021;30(23):2300–14.",
+      "volume": "30",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.gim.2022.04.017",
+      "author": "MT DiStefano",
+      "doi-asserted-by": "publisher",
+      "first-page": "1732",
+      "issue": "8",
+      "journal-title": "Genet Med",
+      "key": "604_CR43",
+      "unstructured": "DiStefano MT, Goehringer S, Babb L, Alkuraya FS, Amberger J, Amin M, et al. The Gene Curation Coalition: a global effort to harmonize gene-disease evidence resources. Genet Med. 2022;24(8):1732–42.",
+      "volume": "24",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/hmg/ddv117",
+      "author": "AT Pagnamenta",
+      "doi-asserted-by": "publisher",
+      "first-page": "3732",
+      "issue": "13",
+      "journal-title": "Hum Mol Genet",
+      "key": "604_CR44",
+      "unstructured": "Pagnamenta AT, Howard MF, Wisniewski E, Popitsch N, Knight SJL, Keays DA, et al. Germline recessive mutations in PI4KA are associated with perisylvian polymicrogyria, cerebellar hypoplasia and arthrogryposis. Hum Mol Genet. 2015;24(13):3732–41.",
+      "volume": "24",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.2892",
+      "author": "M Kircher",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "issue": "3",
+      "journal-title": "Nat Genet",
+      "key": "604_CR45",
+      "unstructured": "Kircher M, Witten DM, Jain P, O’Roak BJ, Cooper GM, Shendure J. A general framework for estimating the relative pathogenicity of human genetic variants. Nat Genet. 2014;46(3):310–5.",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1212/NXG.0000000000000129",
+      "author": "YF Guzmán",
+      "doi-asserted-by": "publisher",
+      "issue": "1",
+      "journal-title": "Neurol Genet",
+      "key": "604_CR46",
+      "unstructured": "Guzmán YF, Ramsey K, Stolz JR, Craig DW, Huentelman MJ, Narayanan V, et al. A gain-of-function mutation in the GRIK2 gene causes neurodevelopmental deficits. Neurol Genet. 2017;3(1): e129.",
+      "volume": "3",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.07.007",
+      "author": "JR Stolz",
+      "doi-asserted-by": "publisher",
+      "first-page": "1692",
+      "issue": "9",
+      "journal-title": "Am J Hum Genet",
+      "key": "604_CR47",
+      "unstructured": "Stolz JR, Foote KM, Veenstra-Knol HE, Pfundt R, Ten Broeke SW, de Leeuw N, et al. Clustered mutations in the GRIK2 kainate receptor subunit gene underlie diverse neurodevelopmental disorders. Am J Hum Genet. 2021;108(9):1692–709.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/cge.12423",
+      "author": "M Córdoba",
+      "doi-asserted-by": "publisher",
+      "first-page": "293",
+      "issue": "3",
+      "journal-title": "Clin Genet",
+      "key": "604_CR48",
+      "unstructured": "Córdoba M, Rodriguez S, González Morón D, Medina N, Kauffman MA. Expanding the spectrum of Grik2 mutations: intellectual disability, behavioural disorder, epilepsy and dystonia. Clin Genet. 2015;87(3):293–5.",
+      "volume": "87",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1086/521275",
+      "author": "MM Motazacker",
+      "doi-asserted-by": "publisher",
+      "first-page": "792",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet",
+      "key": "604_CR49",
+      "unstructured": "Motazacker MM, Rost BR, Hucho T, Garshasbi M, Kahrizi K, Ullmann R, et al. A defect in the ionotropic glutamate receptor 6 gene (GRIK2) is associated with autosomal recessive mental retardation. Am J Hum Genet. 2007;81(4):792–8.",
+      "volume": "81",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1186/s12883-016-0633-0",
+      "author": "MZ Seidahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "105",
+      "issue": "16",
+      "journal-title": "BMC Neurol",
+      "key": "604_CR50",
+      "unstructured": "Seidahmed MZ, Salih MA, Abdulbasit OB, Samadi A, Al Hussien K, Miqdad AM, et al. Hyperekplexia, microcephaly and simplified gyral pattern caused by novel ASNS mutations, case report. BMC Neurol. 2016;15(16):105.",
+      "volume": "15",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3389/fgene.2018.00245",
+      "author": "D Schleinitz",
+      "doi-asserted-by": "publisher",
+      "first-page": "245",
+      "issue": "9",
+      "journal-title": "Front Genet",
+      "key": "604_CR51",
+      "unstructured": "Schleinitz D, Seidel A, Stassart R, Klammt J, Hirrlinger PG, Winkler U, et al. Novel mutations in the asparagine synthetase gene (ASNS) associated with microcephaly. Front Genet. 2018;13(9):245.",
+      "volume": "13",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2013.08.013",
+      "author": "EK Ruzzo",
+      "doi-asserted-by": "publisher",
+      "first-page": "429",
+      "issue": "2",
+      "journal-title": "Neuron",
+      "key": "604_CR52",
+      "unstructured": "Ruzzo EK, Capo-Chichi J-M, Ben-Zeev B, Chitayat D, Mao H, Pappas AL, et al. Deficiency of asparagine synthetase causes congenital microcephaly and a progressive form of encephalopathy. Neuron. 2013;80(2):429–41.",
+      "volume": "80",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/humu.20859",
+      "author": "I Giurgea",
+      "doi-asserted-by": "publisher",
+      "first-page": "E242",
+      "issue": "11",
+      "journal-title": "Hum Mutat",
+      "key": "604_CR53",
+      "unstructured": "Giurgea I, Missirian C, Cacciagli P, Whalen S, Fredriksen T, Gaillon T, et al. TCF4 deletions in Pitt-Hopkins syndrome. Hum Mutat. 2008;29(11):E242–51.",
+      "volume": "29",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.32419",
+      "author": "VM Kalscheuer",
+      "doi-asserted-by": "publisher",
+      "first-page": "2053",
+      "issue": "16",
+      "journal-title": "Am J Med Genet A",
+      "key": "604_CR54",
+      "unstructured": "Kalscheuer VM, Feenstra I, Van Ravenswaaij-Arts CMA, Smeets DFCM, Menzel C, Ullmann R, et al. Disruption of the TCF4 gene in a girl with mental retardation but without the classical Pitt-Hopkins syndrome. Am J Med Genet A. 2008;146A(16):2053–9.",
+      "volume": "146A",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.scr.2020.102001",
+      "author": "SR Sripathy",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Stem Cell Res",
+      "key": "604_CR55",
+      "unstructured": "Sripathy SR, Wang Y, Moses RL, Fatemi A, Batista DA, Maher BJ. Generation of 10 patient-specific induced pluripotent stem cells (iPSCs) to model Pitt-Hopkins Syndrome. Stem Cell Res. 2020;48: 102001.",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41439-019-0055-9",
+      "author": "R Sprute",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "issue": "6",
+      "journal-title": "Hum Genome Var",
+      "key": "604_CR56",
+      "unstructured": "Sprute R, Ardicli D, Oguz KK, Malenica-Mandel A, Daimagüler H-S, Koy A, et al. Clinical outcomes of two patients with a novel pathogenic variant in ASNS: response to asparagine supplementation and review of the literature. Hum Genome Var. 2019;22(6):24.",
+      "volume": "22",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13059-019-1845-6",
+      "author": "D Esposito",
+      "doi-asserted-by": "publisher",
+      "first-page": "223",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "604_CR57",
+      "unstructured": "Esposito D, Weile J, Shendure J, Starita LM, Papenfuss AT, Roth FP, et al. MaveDB: an open-source platform to distribute and interpret data from multiplexed assays of variant effect. Genome Biol. 2019;20(1):223.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1126/scitranslmed.aal5209",
+      "author": "BB Cummings",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci Transl Med",
+      "key": "604_CR58",
+      "unstructured": "Cummings BB, Marshall JL, Tukiainen T, Lek M, Donkervoort S, Foley AR, et al. Improving genetic diagnosis in Mendelian disease with transcriptome sequencing. Sci Transl Med. 2017. https://doi.org/10.1126/scitranslmed.aal5209.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ncomms15824",
+      "author": "LS Kremer",
+      "doi-asserted-by": "publisher",
+      "first-page": "15824",
+      "issue": "8",
+      "journal-title": "Nat Commun",
+      "key": "604_CR59",
+      "unstructured": "Kremer LS, Bader DM, Mertes C, Kopajtich R, Pichler G, Iuso A, et al. Genetic diagnosis of Mendelian disorders via RNA sequencing. Nat Commun. 2017;12(8):15824.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s13073-022-01019-9",
+      "author": "VA Yépez",
+      "doi-asserted-by": "publisher",
+      "first-page": "38",
+      "issue": "1",
+      "journal-title": "Genome Med",
+      "key": "604_CR60",
+      "unstructured": "Yépez VA, Gusic M, Kopajtich R, Mertes C, Smith NH, Alston CL, et al. Clinical implementation of RNA sequencing for Mendelian disease diagnostics. Genome Med. 2022;14(1):38.",
+      "volume": "14",
+      "year": "2022"
+    }
+  ],
+  "reference-count": 60,
+  "references-count": 60,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-024-00604-w"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Critical assessment of variant prioritization methods for rare disease diagnosis within the rare genomes project"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "18"
+}
