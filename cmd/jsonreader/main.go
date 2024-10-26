@@ -14,7 +14,7 @@ import (
 // Item represents a single article from the Crossref dump
 type Item struct {
 	ContainerTitle []string `json:"container-title"`
-	// We could add other fields we care about, but we only need container-title for filtering
+	DOI           string   `json:"DOI"`
 }
 
 // Response represents the top-level JSON structure
@@ -36,7 +36,44 @@ var targetJournals = map[string]bool{
 	"Genetic Epidemiology":                   true,
 }
 
-func processFile(filename string) error {
+// sanitizePath replaces problematic characters in path components
+func sanitizePath(s string) string {
+	return strings.ReplaceAll(strings.ReplaceAll(s, " ", "_"), "/", "_")
+}
+
+// writeJSONToFile writes the item to a pretty-printed JSON file
+func writeJSONToFile(item map[string]interface{}, journal string, outputDir string) error {
+	// Get the DOI
+	doi, ok := item["DOI"].(string)
+	if !ok || doi == "" {
+		return fmt.Errorf("missing or invalid DOI")
+	}
+
+	// Create the directory path
+	dirPath := filepath.Join(outputDir, sanitizePath(journal), sanitizePath(doi))
+	if err := os.MkdirAll(dirPath, 0755); err != nil {
+		return fmt.Errorf("error creating directory %s: %w", dirPath, err)
+	}
+
+	// Create the file path
+	filePath := filepath.Join(dirPath, "metadata.json")
+
+	// Pretty print the JSON
+	jsonData, err := json.MarshalIndent(item, "", "  ")
+	if err != nil {
+		return fmt.Errorf("error marshaling JSON: %w", err)
+	}
+
+	// Write to file
+	if err := os.WriteFile(filePath, jsonData, 0644); err != nil {
+		return fmt.Errorf("error writing file %s: %w", filePath, err)
+	}
+
+	log.Printf("Written: %s", filePath)
+	return nil
+}
+
+func processFile(filename string, outputDir string) error {
 	file, err := os.Open(filename)
 	if err != nil {
 		return fmt.Errorf("error opening file: %w", err)
@@ -88,13 +125,9 @@ func processFile(filename string) error {
 		if containerTitle, ok := item["container-title"].([]interface{}); ok && len(containerTitle) > 0 {
 			if journal, ok := containerTitle[0].(string); ok {
 				if targetJournals[journal] {
-					// Output the full JSON for matching items
-					output, err := json.Marshal(item)
-					if err != nil {
-						log.Printf("Error marshaling matching item: %v", err)
-						continue
+					if err := writeJSONToFile(item, journal, outputDir); err != nil {
+						log.Printf("Error writing item to file: %v", err)
 					}
-					fmt.Println(string(output))
 				}
 			}
 		}
@@ -104,12 +137,17 @@ func processFile(filename string) error {
 }
 
 func main() {
-	dirPath := flag.String("dir", ".", "Directory containing .json.gz files")
+	inputDir := flag.String("dir", ".", "Directory containing .json.gz files")
+	outputDir := flag.String("output", "output", "Directory for output files")
 	flag.Parse()
 
+	// Create output directory if it doesn't exist
+	if err := os.MkdirAll(*outputDir, 0755); err != nil {
+		log.Fatalf("Error creating output directory: %v", err)
+	}
+
 	// Walk through all .json.gz files in the directory
-	err := filepath.Walk(*dirPath, func(path string, info os.FileInfo, err error) error {
-		//fmt.Printf("Considering %s\n", path)
+	err := filepath.Walk(*inputDir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
@@ -118,10 +156,10 @@ func main() {
 		if !strings.HasSuffix(path, ".json.gz") {
 			return nil
 		}
-		//fmt.Printf("Working on %s\n", path)
 
 		// Process each file
-		err = processFile(path)
+		log.Printf("Processing file: %s", path)
+		err = processFile(path, *outputDir)
 		if err != nil {
 			log.Printf("Error processing file %s: %v", path, err)
 		}
