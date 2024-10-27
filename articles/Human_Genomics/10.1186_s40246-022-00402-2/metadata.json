@@ -1,0 +1,870 @@
+{
+  "DOI": "10.1186/s40246-022-00402-2",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00402-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe prevalence and genetic spectrum of cardiac channelopathies exhibit population-specific differences. We aimed to understand the spectrum of cardiac channelopathy-associated variations in India, which is characterised by a genetically diverse population and is largely understudied in the context of these disorders.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe utilised the IndiGenomes dataset comprising 1029 whole genomes from self-declared healthy individuals as a template to filter variants in 36 genes known to cause cardiac channelopathies. Our analysis revealed 186,782 variants, of which we filtered 470 variants that were identified as possibly pathogenic (440 nonsynonymous, 30 high-confidence predicted loss of function ). About 26% (124 out of 470) of these variants were unique to the Indian population as they were not reported in the global population datasets and published literature. Classification of 470 variants by ACMG/AMP guidelines unveiled 13 pathogenic/likely pathogenic (P/LP) variants mapping to 19 out of the 1029 individuals. Further query of 53 probands in an independent cohort of cardiac channelopathy, using exome sequencing, revealed the presence of 3 out of the 13 P/LP variants. The identification of p.G179Sfs*62, p.R823W and c.420 + 2 T \u0026gt; C variants in \u003cjats:italic\u003eKCNQ1, KCNH2\u003c/jats:italic\u003e and \u003cjats:italic\u003eCASQ2\u003c/jats:italic\u003e genes, respectively, validate the significance of the P/LP variants in the context of clinical applicability as well as for large-scale population analysis.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eA compendium of ACMG/AMP classified cardiac channelopathy variants in 1029 self-declared healthy Indian population was created. A conservative genotypic prevalence was estimated to be 0.9–1.8% which poses a huge public health burden for a country with large population size like India. In the majority of cases, these disorders are manageable and the risk of sudden cardiac death can be alleviated by appropriate lifestyle modifications as well as treatment regimens/clinical interventions. Clinical utility of the obtained variants was demonstrated using a cardiac channelopathy patient cohort. Our study emphasises the need for large-scale population screening to identify at-risk individuals and take preventive measures. However, we suggest cautious clinical interpretation to be exercised by taking other cardiac channelopathy risk factors into account.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "402"
+  ],
+  "article-number": "30",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "25 February 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "11 July 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "5 August 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by the Institutional Human Ethics Committee (IHEC) of CSIR-Institute of Genomics and Integrative Biology. The participants were explained about the informed consent process as per the approved IHEC guidelines."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Bajaj",
+      "given": "Anjali",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Senthivel",
+      "given": "Vigneshwar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bhoyar",
+      "given": "Rahul",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jain",
+      "given": "Abhinav",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Imran",
+      "given": "Mohamed",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rophina",
+      "given": "Mercy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Divakar",
+      "given": "Mohit Kumar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jolly",
+      "given": "Bani",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Verma",
+      "given": "Ankit",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mishra",
+      "given": "Anushree",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sharma",
+      "given": "Disha",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Deepti",
+      "given": "Siddharthan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sharma",
+      "given": "Gautam",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bansal",
+      "given": "Raghav",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yadav",
+      "given": "Rakesh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scaria",
+      "given": "Vinod",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Naik",
+      "given": "Nitish",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sivasubbu",
+      "given": "Sridhar",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        5
+      ]
+    ],
+    "date-time": "2022-08-05T10:07:22Z",
+    "timestamp": 1659694042000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        15
+      ]
+    ],
+    "date-time": "2022-08-15T10:42:55Z",
+    "timestamp": 1660560175000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001412",
+      "award": [
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001",
+        "MLP1809, MLP1801, MLP2001"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Council of Scientific and Industrial Research, India"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        8
+      ]
+    ],
+    "date-time": "2024-04-08T09:18:48Z",
+    "timestamp": 1712567928215
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        5
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            5
+          ]
+        ],
+        "date-time": "2022-08-05T00:00:00Z",
+        "timestamp": 1659657600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            8,
+            5
+          ]
+        ],
+        "date-time": "2022-08-05T00:00:00Z",
+        "timestamp": 1659657600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00402-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00402-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00402-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        5
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        5
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/415213a",
+      "author": "E Marbán",
+      "doi-asserted-by": "publisher",
+      "first-page": "213",
+      "journal-title": "Nature",
+      "key": "402_CR1",
+      "unstructured": "Marbán E. Cardiac channelopathies. Nature. 2002;415:213–8.",
+      "volume": "415",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.hrthm.2010.11.016",
+      "author": "JR Skinner",
+      "doi-asserted-by": "publisher",
+      "first-page": "412",
+      "journal-title": "Heart Rhythm",
+      "key": "402_CR2",
+      "unstructured": "Skinner JR, Crawford J, Smith W, Aitken A, Heaven D, Evans C-A, et al. Prospective, population-based long QT molecular autopsy study of postmortem negative sudden death in 1 to 40 year olds. Heart Rhythm. 2011;8:412–9.",
+      "volume": "8",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1111/j.1540-8167.2012.02371.x",
+      "author": "BG Winkel",
+      "doi-asserted-by": "publisher",
+      "first-page": "1092",
+      "journal-title": "J Cardiovasc Electrophysiol",
+      "key": "402_CR3",
+      "unstructured": "Winkel BG, Larsen MK, Berge KE, Leren TP, Nissen PH, Olesen MS, et al. The prevalence of mutations in KCNQ1, KCNH2, and SCN5A in an unselected national cohort of young sudden unexplained death cases. J Cardiovasc Electrophysiol. 2012;23:1092–8.",
+      "volume": "23",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.hrthm.2011.07.034",
+      "author": "C Semsarian",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "journal-title": "Heart Rhythm",
+      "key": "402_CR4",
+      "unstructured": "Semsarian C, Hamilton RM. Key role of the molecular autopsy in sudden unexpected death. Heart Rhythm. 2012;9:145–50.",
+      "volume": "9",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/0092-8674(95)90358-5",
+      "author": "ME Curran",
+      "doi-asserted-by": "publisher",
+      "first-page": "795",
+      "journal-title": "Cell",
+      "key": "402_CR5",
+      "unstructured": "Curran ME, Splawski I, Timothy KW, Vincent GM, Green ED, Keating MT. A molecular basis for cardiac arrhythmia: HERG mutations cause long QT syndrome. Cell. 1995;80:795–803.",
+      "volume": "80",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1016/0092-8674(95)90359-3",
+      "author": "Q Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "805",
+      "journal-title": "Cell",
+      "key": "402_CR6",
+      "unstructured": "Wang Q, Shen J, Splawski I, Atkinson D, Li Z, Robinson JL, et al. SCN5A mutations associated with an inherited cardiac arrhythmia, long QT syndrome. Cell. 1995;80:805–11.",
+      "volume": "80",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1038/ng0196-17",
+      "author": "Q Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "17",
+      "journal-title": "Nat Genet",
+      "key": "402_CR7",
+      "unstructured": "Wang Q, Curran ME, Splawski I, Burn TC, Millholland JM, VanRaay TJ, et al. Positional cloning of a novel potassium channel gene: KVLQT1 mutations cause cardiac arrhythmias. Nat Genet. 1996;12:17–23.",
+      "volume": "12",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.5339/gcsp.2015.39",
+      "author": "O Campuzano",
+      "doi-asserted-by": "publisher",
+      "first-page": "39",
+      "journal-title": "Glob Cardiol Sci Pract",
+      "key": "402_CR8",
+      "unstructured": "Campuzano O, Sarquella-Brugada G, Brugada R, Brugada J. Genetics of channelopathies associated with sudden cardiac death. Glob Cardiol Sci Pract. 2015;2015:39.",
+      "volume": "2015",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkz972",
+      "author": "MJ Landrum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D835",
+      "journal-title": "Nucleic Acids Res",
+      "key": "402_CR9",
+      "unstructured": "Landrum MJ, Chitipiralla S, Brown GR, Chen C, Gu B, Hart J, et al. ClinVar: improvements to accessing data. Nucleic Acids Res. 2020;48:D835–44.",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "A Auton",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "journal-title": "Nature",
+      "key": "402_CR10",
+      "unstructured": "1000 Genomes Project Consortium, Auton A, Brooks LD, Durbin RM, Garrison EP, Kang HM, et al. A global reference for human genetic variation. Nature. 2015;526:68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "402_CR11",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581:434–43.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "key": "402_CR12",
+      "unstructured": "Exome Variant Server. NHLBI GO Exome Sequencing Project (ESP), Seattle, WA. https://evs.gs.washington.edu/EVS/. Accessed 20 Jan 2022."
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.23",
+      "author": "L Refsgaard",
+      "doi-asserted-by": "publisher",
+      "first-page": "905",
+      "journal-title": "Eur J Hum Genet",
+      "key": "402_CR13",
+      "unstructured": "Refsgaard L, Holst AG, Sadjadieh G, Haunsø S, Nielsen JB, Olesen MS. High prevalence of genetic variants previously associated with LQT syndrome in new exome data. Eur J Hum Genet. 2012;20:905–8.",
+      "volume": "20",
+      "year": "2012"
+    },
+    {
+      "author": "T Kong",
+      "first-page": "481",
+      "journal-title": "Ann Clin Lab Sci",
+      "key": "402_CR14",
+      "unstructured": "Kong T, Feulefack J, Ruether K, Shen F, Zheng W, Chen X-Z, et al. Ethnic differences in genetic ion channelopathies associated with sudden cardiac death: a systematic review and meta-analysis. Ann Clin Lab Sci. 2017;47:481–90.",
+      "volume": "47",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3917",
+      "author": "N Nakatsuka",
+      "doi-asserted-by": "publisher",
+      "first-page": "1403",
+      "journal-title": "Nat Genet",
+      "key": "402_CR15",
+      "unstructured": "Nakatsuka N, Moorjani P, Rai N, Sarkar B, Tandon A, Patterson N, et al. The promise of discovering population-specific disease-associated genes in South Asia. Nat Genet. 2017;49:1403–7.",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/j.1365-2605.2008.00919.x",
+      "author": "DS Rani",
+      "doi-asserted-by": "publisher",
+      "first-page": "647",
+      "issue": "6",
+      "journal-title": "Int J Androl",
+      "key": "402_CR16",
+      "unstructured": "Rani DS, Justin Carlus S, Poongothai J, Jyothi A, Pavani K, Gupta NJ, et al. CAG repeat variation in the mtDNA polymerase γ is not associated with oligoasthenozoospermia. Int J Androl. 2009;32(6):647–55. https://doi.org/10.1111/j.1365-2605.2008.00919.x.",
+      "volume": "32",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/1471-2350-12-71",
+      "author": "S Mehrotra",
+      "doi-asserted-by": "publisher",
+      "first-page": "71",
+      "journal-title": "BMC Med Genet",
+      "key": "402_CR17",
+      "unstructured": "Mehrotra S, Oommen J, Mishra A, Sudharshan M, Tiwary P, Jamieson SE, et al. No evidence for association between SLC11A1 and visceral leishmaniasis in India. BMC Med Genet. 2011;12:71.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.2217/pgs.14.88",
+      "author": "AK Giri",
+      "doi-asserted-by": "publisher",
+      "first-page": "1337",
+      "journal-title": "Pharmacogenomics",
+      "key": "402_CR18",
+      "unstructured": "Giri AK, Khan NM, Grover S, Kaur I, Basu A, Tandon N, et al. Genetic epidemiology of pharmacogenetic variations in CYP2C9, CYP4F2 and VKORC1 genes associated with warfarin dosage in the Indian population. Pharmacogenomics. 2014;15:1337–54.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1793-z",
+      "author": "GenomeAsia100K Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "106",
+      "journal-title": "Nature",
+      "key": "402_CR19",
+      "unstructured": "GenomeAsia100K Consortium. The GenomeAsia 100K project enables genetic discoveries across Asia. Nature. 2019;576:106–11.",
+      "volume": "576",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/database/baq022",
+      "author": "A Narang",
+      "doi-asserted-by": "publisher",
+      "first-page": "baq022",
+      "issue": "0",
+      "journal-title": "Database",
+      "key": "402_CR20",
+      "unstructured": "Narang A, Roy RD, Chaurasia A, Mukhopadhyay A, Mukerji M, Dash D. IGVBrowser-a genomic variation resource from diverse Indian populations. Database. 2010;2010(0):baq022–baq022. https://doi.org/10.1093/database/baq022.",
+      "volume": "2010",
+      "year": "2010"
+    },
+    {
+      "author": "A Jain",
+      "first-page": "D1225",
+      "journal-title": "Nucleic Acids Res",
+      "key": "402_CR21",
+      "unstructured": "Jain A, Bhoyar RC, Pandhare K, Mishra A, Sharma D, Imran M, et al. IndiGenomes: a comprehensive resource of genetic variants from over 1000 Indian genomes. Nucleic Acids Res. 2021;49:D1225–32.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "key": "402_CR22",
+      "unstructured": "IndiGenomes Resource of Population Genomes from India. CSIR-IGIB, New Delhi. https://clingen.igib.res.in/indigen/. Accessed 20 Jan 2022."
+    },
+    {
+      "DOI": "10.1093/nar/gkq603",
+      "author": "K Wang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nucleic Acids Res",
+      "key": "402_CR23",
+      "unstructured": "Wang K, Li M, Hakonarson H. ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data. Nucleic Acids Res. 2010;38: e164.",
+      "volume": "38",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gkl842",
+      "author": "KD Pruitt",
+      "doi-asserted-by": "publisher",
+      "first-page": "D61",
+      "journal-title": "Nucleic Acids Res",
+      "key": "402_CR24",
+      "unstructured": "Pruitt KD, Tatusova T, Maglott DR. NCBI reference sequences (RefSeq): a curated non-redundant sequence database of genomes, transcripts and proteins. Nucleic Acids Res. 2007;35:D61–5.",
+      "volume": "35",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/nar/29.1.308",
+      "author": "ST Sherry",
+      "doi-asserted-by": "publisher",
+      "first-page": "308",
+      "journal-title": "Nucleic Acids Res",
+      "key": "402_CR25",
+      "unstructured": "Sherry ST, Ward MH, Kholodov M, Baker J, Phan L, Smigielski EM, et al. dbSNP: the NCBI database of genetic variation. Nucleic Acids Res. 2001;29:308–11.",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1002/humu.22932",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "235",
+      "issue": "3",
+      "journal-title": "Human Mutat",
+      "key": "402_CR26",
+      "unstructured": "Liu X, Chunlei W, Li C, Boerwinkle E. dbNSFP v3.0: a one-stop database of functional predictions and annotations for human nonsynonymous and splice-site SNVs. Human Mutat. 2016;37(3):235–41. https://doi.org/10.1002/humu.22932.",
+      "volume": "37",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/nar/gkw971",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "D840",
+      "journal-title": "Nucleic Acids Res",
+      "key": "402_CR27",
+      "unstructured": "Karczewski KJ, Weisburd B, Thomas B, Solomonson M, Ruderfer DM, Kavanagh D, et al. The ExAC browser: displaying reference data information from over 60 000 exomes. Nucleic Acids Res. 2017;45:D840–5.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3592",
+      "author": "EM Scott",
+      "doi-asserted-by": "publisher",
+      "first-page": "1071",
+      "journal-title": "Nat Genet",
+      "key": "402_CR28",
+      "unstructured": "Scott EM, Halees A, Itan Y, Spencer EG, He Y, Azab MA, et al. characterization of greater middle Eastern genetic variation for enhanced disease gene discovery. Nat Genet. 2016;48:1071–6.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.119.043132",
+      "author": "A Adler",
+      "doi-asserted-by": "publisher",
+      "first-page": "418",
+      "journal-title": "Circulation",
+      "key": "402_CR29",
+      "unstructured": "Adler A, Novelli V, Amin AS, Abiusi E, Care M, Nannenberg EA, et al. An international, multicentered, evidence-based reappraisal of genes reported to cause congenital long QT syndrome. Circulation. 2020;141:418–28.",
+      "volume": "141",
+      "year": "2020"
+    },
+    {
+      "key": "402_CR30",
+      "unstructured": "Clinical Genome Resource. https://clinicalgenome.org/. Accessed 20 Jan 2022."
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "author": "W McLaren",
+      "doi-asserted-by": "publisher",
+      "first-page": "122",
+      "journal-title": "Genome Biol",
+      "key": "402_CR31",
+      "unstructured": "McLaren W, Gil L, Hunt SE, Riat HS, Ritchie GRS, Thormann A, et al. The ensembl variant effect predictor. Genome Biol. 2016;17:122.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med",
+      "key": "402_CR32",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American college of medical genetics and genomics and the association for molecular pathology. Genet Med. 2015;17:405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/gim.2016.13",
+      "author": "J Kleinberger",
+      "doi-asserted-by": "publisher",
+      "first-page": "1165",
+      "journal-title": "Genet Med",
+      "key": "402_CR33",
+      "unstructured": "Kleinberger J, Maloney KA, Pollin TI, Jeng LJB. An openly available online tool for implementing the ACMG/AMP standards and guidelines for the interpretation of sequence variants. Genet Med. 2016;18:1165.",
+      "volume": "18",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/hgv.2016.16",
+      "author": "KA Fakhro",
+      "doi-asserted-by": "publisher",
+      "first-page": "16016",
+      "journal-title": "Hum Genome Var",
+      "key": "402_CR34",
+      "unstructured": "Fakhro KA, Staudt MR, Ramstetter MD, Robay A, Malek JA, Badii R, et al. The Qatar genome: a population-specific tool for precision medicine in the Middle East. Hum Genome Var. 2016;3:16016.",
+      "volume": "3",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s40246-019-0215-5",
+      "author": "S Sivasubbu",
+      "doi-asserted-by": "crossref",
+      "first-page": "52",
+      "journal-title": "Hum Genomics",
+      "key": "402_CR35",
+      "unstructured": "GUaRDIAN Consortium, Sivasubbu S, Scaria V. Genomics of rare genetic diseases-experiences from India. Hum Genomics. 2019;14:52.",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.105.570200",
+      "author": "CL Anderson",
+      "doi-asserted-by": "publisher",
+      "first-page": "365",
+      "issue": "3",
+      "journal-title": "Circulation",
+      "key": "402_CR36",
+      "unstructured": "Anderson CL, Delisle BP, Anson BD, Kilby JA, Will ML, Tester DJ, et al. Most LQT2 mutations reduce Kv11.1 (hERG) current by a class 2 (trafficking-deficient) mechanism. Circulation. 2006;113(3):365–73. https://doi.org/10.1161/CIRCULATIONAHA.105.570200.",
+      "volume": "113",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.112.300664",
+      "author": "CJ Jou",
+      "doi-asserted-by": "publisher",
+      "first-page": "826",
+      "journal-title": "Circ Res",
+      "key": "402_CR37",
+      "unstructured": "Jou CJ, Barnett SM, Bian J-T, Weng HC, Sheng X, Tristani-Firouzi M. An in vivo cardiac assay to determine the functional consequences of putative long QT syndrome mutations. Circ Res. 2013;112:826–30.",
+      "volume": "112",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.hrthm.2019.09.020",
+      "author": "C-A Ng",
+      "doi-asserted-by": "publisher",
+      "first-page": "492",
+      "journal-title": "Heart Rhythm",
+      "key": "402_CR38",
+      "unstructured": "Ng C-A, Perry MD, Liang W, Smith NJ, Foo B, Shrier A, et al. High-throughput phenotyping of heteromeric human ether-à-go-go-related gene potassium channel variants can discriminate pathogenic from rare benign variants. Heart Rhythm. 2020;17:492–500.",
+      "volume": "17",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.113.007852",
+      "author": "D Shy",
+      "doi-asserted-by": "publisher",
+      "first-page": "147",
+      "issue": "2",
+      "journal-title": "Circulation",
+      "key": "402_CR39",
+      "unstructured": "Shy D, Gillet L, Ogrodnik J, Albesa M, Verkerk AO, Wolswinkel R, et al. PDZ domain–binding motif regulates cardiomyocyte compartment-specific NaV1.5 channel expression and function. Circulation. 2014;130(2):147–60. https://doi.org/10.1161/CIRCULATIONAHA.113.007852.",
+      "volume": "130",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.hrthm.2015.08.021",
+      "author": "J Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "289",
+      "journal-title": "Heart Rhythm",
+      "key": "402_CR40",
+      "unstructured": "Chen J, Makiyama T, Wuriyanghai Y, Ohno S, Sasaki K, Hayano M, et al. Cardiac sodium channel mutation associated with epinephrine-induced QT prolongation and sinus node dysfunction. Heart Rhythm. 2016;13:289–98.",
+      "volume": "13",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.105.561654",
+      "author": "P Syrris",
+      "doi-asserted-by": "publisher",
+      "first-page": "356",
+      "journal-title": "Circulation",
+      "key": "402_CR41",
+      "unstructured": "Syrris P, Ward D, Asimaki A, Sen-Chowdhry S, Ebrahim HY, Evans A, et al. Clinical expression of plakophilin-2 mutations in familial arrhythmogenic right ventricular cardiomyopathy. Circulation. 2006;113:356–64.",
+      "volume": "113",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0100560",
+      "author": "M Alcalde",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "402_CR42",
+      "unstructured": "Alcalde M, Campuzano O, Berne P, García-Pavía P, Doltra A, Arbelo E, et al. Stop-gain mutations in PKP2 are associated with a later age of onset of arrhythmogenic right ventricular cardiomyopathy. PLoS ONE. 2014;9: e100560.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "key": "402_CR43",
+      "unstructured": "Test Details – MedGenome – Leading Genetics Diagnostics Lab in India. https://diagnostics.medgenome.com/test-details-new/?test_code=MGM001. Accessed 20 Jan 2022."
+    },
+    {
+      "key": "402_CR44",
+      "unstructured": "Genetic testing for channelopathy and cardiomyopathy. Blueprint Genetics. 2021. https://blueprintgenetics.com/tests/panels/cardiology/comprehensive-cardiology-panel/. Accessed 20 Jan 2022."
+    },
+    {
+      "key": "402_CR45",
+      "unstructured": "Cardiac channelopathy NGS panel. CTGT. https://www.ctgt.net//Tests/Cardiac-channelopathy-NGS-panel. Accessed 20 Jan 2022."
+    },
+    {
+      "key": "402_CR46",
+      "unstructured": "Invitae Arrhythmia and Cardiomyopathy Comprehensive Panel. https://www.invitae.com/en/providers/test-catalog/test-02101. Accessed 20 Jan 2022."
+    },
+    {
+      "DOI": "10.3389/fcvm.2021.652027",
+      "author": "MM Monasky",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Cardiovasc Med",
+      "key": "402_CR47",
+      "unstructured": "Monasky MM, Micaglio E, Locati ET, Pappone C. Evaluating the use of genetics in brugada syndrome risk stratification. Front Cardiovasc Med. 2021;8: 652027.",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.118.035954",
+      "author": "M Cerrone",
+      "doi-asserted-by": "publisher",
+      "first-page": "595",
+      "journal-title": "Circulation",
+      "key": "402_CR48",
+      "unstructured": "Cerrone M, Remme CA, Tadros R, Bezzina CR, Delmar M. Beyond the one gene-one disease paradigm: complex genetics and pleiotropy in inheritable cardiac disorders. Circulation. 2019;140:595–610.",
+      "volume": "140",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.121.055562",
+      "author": "AM Glazer",
+      "doi-asserted-by": "publisher",
+      "first-page": "877",
+      "journal-title": "Circulation",
+      "key": "402_CR49",
+      "unstructured": "Glazer AM, Davogustto GE, Shaffer CM, Vanoye CG, Desai RR, Farber-Eger E, et al. Arrhythmia variant associations and reclassifications in the eMERGE-III sequencing study. Circulation. 2021;145:877–91.",
+      "volume": "145",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 49,
+  "references-count": 49,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00402-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "1029 genomes of self-declared healthy individuals from India reveal prevalent and clinically relevant cardiac ion channelopathy variants"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

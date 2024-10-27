@@ -1,0 +1,926 @@
+{
+  "DOI": "10.1007/s10689-021-00243-3",
+  "ISSN": [
+    "1389-9600",
+    "1573-7292"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s10689-021-00243-3",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eLynch syndrome (LS) is the most common inherited cause of colorectal and endometrial cancers. Identifying individuals at risk for LS without personal cancer history requires detailed collection and assessment of family health history. However, barriers exist to family health history collection, especially in historically underserved populations. To improve LS risk assessment in historically underserved populations, we adapted the provider-facing PREdiction Model for gene Mutations (PREMM\u003cjats:sub\u003e5\u003c/jats:sub\u003e™ model), a validated LS risk assessment model, into a patient-facing electronic application through an iterative development process involving expert and patient stakeholders. We report on preliminary findings based on the first 500 individuals exposed to the adapted application in a primary care population enriched for low-literacy and low-resource patients. Major adaptations to the PREMM\u003cjats:sub\u003e5\u003c/jats:sub\u003e™ provider module included reduction in reading level, addition of interactive literacy aids, incorporation of family history assessment for both maternal and paternal sides of the family, and inclusion of questions about individual relatives or small groups of relatives to reduce cognitive burden. In the first 500 individuals, 90% completed the PREMM\u003cjats:sub\u003e5\u003c/jats:sub\u003e™ independently; of those, 94% did so in 5 min or less (ranged from 0.2 to 48.8 min). The patient-facing application was able to accurately classify 84% of patients as having clinically significant or not clinically significant LS risk. Our preliminary results suggest that in this diverse study population, most participants were able to rapidly, accurately, and independently complete an interactive application collecting family health history assessment that accurately assessed for Lynch syndrome risk.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "243"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "30 October 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "4 March 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "23 March 2021"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "PREMM® and all associated logos are trademarks™ or registered® trademarks of Dana Farber Cancer Institute, Inc. Dr. Syngal has served as a consultant for Myriad Genetics and DC Health Technologies, and has rights to an inventor portion of the licensing revenue from PREMM®\u003csub\u003e5\u003c/sub\u003e.All other authors report no conflict of interest."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The KPNW Institutional Review Board (IRB) approved this study and all collaborating IRBs ceded to KPNW except Dana Farber Cancer Institute and Columbia University, who approved the study separately."
+    },
+    {
+      "group": {
+        "label": "Consent to Participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "All study participants provided informed consent prior to study enrollment."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-1097-9171",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Mittendorf",
+      "given": "Kathleen F.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Ukaegbu",
+      "given": "Chinedu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gilmore",
+      "given": "Marian J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lindberg",
+      "given": "Nangel M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kauffman",
+      "given": "Tia L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Eubanks",
+      "given": "Donna J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shuster",
+      "given": "Elizabeth",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Allen",
+      "given": "Jake",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "McMullen",
+      "given": "Carmit",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Feigelson",
+      "given": "Heather Spencer",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Anderson",
+      "given": "Katherine P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leo",
+      "given": "Michael C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hunter",
+      "given": "Jessica Ezzell",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sasaki",
+      "given": "Sonia Okuyama",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zepp",
+      "given": "Jamilyn M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Syngal",
+      "given": "Sapna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wilfond",
+      "given": "Benjamin S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Goddard",
+      "given": "Katrina A. B.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Familial Cancer"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        23
+      ]
+    ],
+    "date-time": "2021-03-23T02:02:36Z",
+    "timestamp": 1616464956000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        29
+      ]
+    ],
+    "date-time": "2022-03-29T19:56:23Z",
+    "timestamp": 1648583783000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "UM1HG007292"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000054",
+      "award": [
+        "R01CA132829"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Cancer Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        19
+      ]
+    ],
+    "date-time": "2024-01-19T06:02:04Z",
+    "timestamp": 1705644124463
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1389-9600"
+    },
+    {
+      "type": "electronic",
+      "value": "1573-7292"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        23
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            23
+          ]
+        ],
+        "date-time": "2021-03-23T00:00:00Z",
+        "timestamp": 1616457600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            23
+          ]
+        ],
+        "date-time": "2021-03-23T00:00:00Z",
+        "timestamp": 1616457600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s10689-021-00243-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s10689-021-00243-3/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s10689-021-00243-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "167-180",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        23
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        23
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        4
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1056/NEJM199805213382101",
+      "author": "LA Aaltonen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1481",
+      "issue": "21",
+      "journal-title": "N Engl J Med",
+      "key": "243_CR1",
+      "unstructured": "Aaltonen LA, Salovaara R, Kristo P, Canzian F, Hemminki A, Peltomaki P, Chadwick RB, Kaariainen H, Eskelinen M, Jarvinen H, Mecklin JP, de la Chapelle A (1998) Incidence of hereditary nonpolyposis colorectal cancer and the feasibility of molecular screening for the disease. N Engl J Med 338(21):1481–1487. https://doi.org/10.1056/NEJM199805213382101",
+      "volume": "338",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1200/JCO.2008.17.5950",
+      "author": "H Hampel",
+      "doi-asserted-by": "publisher",
+      "first-page": "5783",
+      "issue": "35",
+      "journal-title": "J Clin Oncol",
+      "key": "243_CR2",
+      "unstructured": "Hampel H, Frankel WL, Martin E, Arnold M, Khanduja K, Kuebler P, Clendenning M, Sotamaa K, Prior T, Westman JA, Panescu J, Fix D, Lockman J, LaJeunesse J, Comeras I, de la Chapelle A (2008) Feasibility of screening for Lynch syndrome among patients with colorectal cancer. J Clin Oncol 26(35):5783–5788. https://doi.org/10.1200/JCO.2008.17.5950",
+      "volume": "26",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1001/jama.2012.13088",
+      "author": "L Moreira",
+      "doi-asserted-by": "publisher",
+      "first-page": "1555",
+      "issue": "15",
+      "journal-title": "JAMA",
+      "key": "243_CR3",
+      "unstructured": "Moreira L, Balaguer F, Lindor N, de la Chapelle A, Hampel H, Aaltonen LA, Hopper JL, Le Marchand L, Gallinger S, Newcomb PA, Haile R, Thibodeau SN, Gunawardena S, Jenkins MA, Buchanan DD, Potter JD, Baron JA, Ahnen DJ, Moreno V, Andreu M, Ponz de Leon M, Rustgi AK, Castells A, Consortium E (2012) Identification of Lynch syndrome among patients with colorectal cancer. JAMA 308(15):1555–1565. https://doi.org/10.1001/jama.2012.13088",
+      "volume": "308",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1007/s10689-004-3906-5",
+      "author": "HF Vasen",
+      "doi-asserted-by": "publisher",
+      "first-page": "219",
+      "issue": "3",
+      "journal-title": "Fam Cancer",
+      "key": "243_CR4",
+      "unstructured": "Vasen HF (2005) Clinical description of the Lynch syndrome [hereditary nonpolyposis colorectal cancer (HNPCC)]. Fam Cancer 4(3):219–225. https://doi.org/10.1007/s10689-004-3906-5",
+      "volume": "4",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1200/JCO.2016.71.0012",
+      "author": "MB Yurgelun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1086",
+      "issue": "10",
+      "journal-title": "J Clin Oncol",
+      "key": "243_CR5",
+      "unstructured": "Yurgelun MB, Kulke MH, Fuchs CS, Allen BA, Uno H, Hornick JL, Ukaegbu CI, Brais LK, McNamara PG, Mayer RJ, Schrag D, Meyerhardt JA, Ng K, Kidd J, Singh N, Hartman AR, Wenstrup RJ, Syngal S (2017) Cancer susceptibility gene mutations in individuals with colorectal cancer. J Clin Oncol 35(10):1086–1095. https://doi.org/10.1200/JCO.2016.71.0012",
+      "volume": "35",
+      "year": "2017"
+    },
+    {
+      "key": "243_CR6",
+      "unstructured": "National Comprehensive Cancer Network (NCCN) (2019) Clinical practice guidelines in oncology: genetic/familial high-risk assessment: colorectal V1.2019."
+    },
+    {
+      "DOI": "10.1136/gutjnl-2015-309675",
+      "author": "P Moller",
+      "doi-asserted-by": "publisher",
+      "first-page": "464",
+      "issue": "3",
+      "journal-title": "Gut",
+      "key": "243_CR7",
+      "unstructured": "Moller P, Seppala T, Bernstein I, Holinski-Feder E, Sala P, Evans DG, Lindblom A, Macrae F, Blanco I, Sijmons R, Jeffries J, Vasen H, Burn J, Nakken S, Hovig E, Rodland EA, Tharmaratnam K, Cappel WHDVTN, Hill J, Wijnen J, Green K, Lalloo F, Sunde L, Mints M, Bertario L, Pineda M, Navarro M, Morak M, Renkonen-Sinisalo L, Frayling IM, Plazzer JP, Pylvanainen K, Sampson JR, Capella G, Mecklin JP, Moslein G, Mallorca G (2017) Cancer incidence and survival in Lynch syndrome patients receiving colonoscopic and gynaecological surveillance: first report from the prospective Lynch syndrome database. Gut 66(3):464–472. https://doi.org/10.1136/gutjnl-2015-309675",
+      "volume": "66",
+      "year": "2017"
+    },
+    {
+      "key": "243_CR8",
+      "unstructured": "Casey N (2017) Lynch Syndrome is a common hereditary condition that can cause ovarian cancer—So why isn’t anybody talking about it? Health \u0026 Fitness"
+    },
+    {
+      "DOI": "10.1007/s10549-013-2669-9",
+      "author": "P Pujol",
+      "doi-asserted-by": "publisher",
+      "first-page": "135",
+      "issue": "1",
+      "journal-title": "Breast Cancer Res Treat",
+      "key": "243_CR9",
+      "unstructured": "Pujol P, Lyonnet DS, Frebourg T, Blin J, Picot MC, Lasset C, Dugast C, Berthet P, de Paillerets BB, Sobol H, Grandjouan S, Soubrier F, Buecher B, Guimbaud R, Lidereau R, Jonveaux P, Houdayer C, Giraud S, Olschwang S, Nogue E, Galibert V, Bara C, Nowak F, Khayat D, Nogues C (2013) Lack of referral for genetic counseling and testing in BRCA1/2 and Lynch syndromes: a nationwide study based on 240,134 consultations and 134,652 genetic tests. Breast Cancer Res Treat 141(1):135–144. https://doi.org/10.1007/s10549-013-2669-9",
+      "volume": "141",
+      "year": "2013"
+    },
+    {
+      "key": "243_CR10",
+      "unstructured": "Institute. NC (2016) Cancer moonshot blue ribbon panel report"
+    },
+    {
+      "DOI": "10.1007/s12687-010-0030-0",
+      "author": "I Nippert",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "J Community Genet",
+      "key": "243_CR11",
+      "unstructured": "Nippert I, Harris HJ, Julian-Reynier C, Kristoffersson U, Ten Kate LP, Anionwu E, Benjamin C, Challen K, Schmidtke J, Nippert RP, Harris R (2011) Confidence of primary care physicians in their ability to carry out basic medical genetic tasks-a European survey in five countries-Part 1. J Community Genet 2(1):1–11. https://doi.org/10.1007/s12687-010-0030-0",
+      "volume": "2",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3109/13814780903447572",
+      "author": "AW Plat",
+      "doi-asserted-by": "publisher",
+      "first-page": "231",
+      "issue": "4",
+      "journal-title": "Eur J Gen Pract",
+      "key": "243_CR12",
+      "unstructured": "Plat AW, Kroon AA, Van Schayck CP, De Leeuw PW, Stoffers HE (2009) Obtaining the family history for common, multifactorial diseases by family physicians. A descriptive systematic review. Eur J Gen Pract 15(4):231–242. https://doi.org/10.3109/13814780903447572",
+      "volume": "15",
+      "year": "2009"
+    },
+    {
+      "author": "M Sin",
+      "first-page": "970",
+      "journal-title": "AMIA Annu Symp Proc",
+      "key": "243_CR13",
+      "unstructured": "Sin M, McGuinness JE, Trivedi MS, Vanegas A, Silverman TB, Crew KD, Kukafka R (2018) Automatic genetic risk assessment calculation using breast cancer family history data from the ehr compared to self-report. AMIA Annu Symp Proc 2018:970–978",
+      "volume": "2018",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1471-2296-11-45",
+      "author": "BS Flynn",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "journal-title": "BMC Fam Pract",
+      "key": "243_CR14",
+      "unstructured": "Flynn BS, Wood ME, Ashikaga T, Stockdale A, Dana GS, Naud S (2010) Primary care physicians’ use of family history for cancer risk assessment. BMC Fam Pract 11:45. https://doi.org/10.1186/1471-2296-11-45",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.amepre.2004.05.003",
+      "author": "HJ Murff",
+      "doi-asserted-by": "publisher",
+      "first-page": "239",
+      "issue": "3",
+      "journal-title": "Am J Prev Med",
+      "key": "243_CR15",
+      "unstructured": "Murff HJ, Byrne D, Syngal S (2004) Cancer risk assessment: quality and impact of the family history interview. Am J Prev Med 27(3):239–245. https://doi.org/10.1016/j.amepre.2004.05.003",
+      "volume": "27",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1200/JCO.2013.51.4661",
+      "author": "ME Wood",
+      "doi-asserted-by": "publisher",
+      "first-page": "824",
+      "issue": "8",
+      "journal-title": "J Clin Oncol",
+      "key": "243_CR16",
+      "unstructured": "Wood ME, Kadlubek P, Pham TH, Wollins DS, Lu KH, Weitzel JN, Neuss MN, Hughes KS (2014) Quality of cancer family history and referral for genetic counseling and testing among oncology practices: a pilot test of quality measures as part of the American Society of Clinical Oncology Quality Oncology Practice Initiative. J Clin Oncol 32(8):824–829. https://doi.org/10.1200/JCO.2013.51.4661",
+      "volume": "32",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1097/AOG.0b013e3181da08d7",
+      "author": "LA Meyer",
+      "doi-asserted-by": "publisher",
+      "first-page": "945",
+      "issue": "5",
+      "journal-title": "Obstet Gynecol",
+      "key": "243_CR17",
+      "unstructured": "Meyer LA, Anderson ME, Lacour RA, Suri A, Daniels MS, Urbauer DL, Nogueras-Gonzalez GM, Schmeler KM, Gershenson DM, Lu KH (2010) Evaluating women with ovarian cancer for BRCA1 and BRCA2 mutations: missed opportunities. Obstet Gynecol 115(5):945–952. https://doi.org/10.1097/AOG.0b013e3181da08d7",
+      "volume": "115",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/cncr.30621",
+      "author": "D Cragun",
+      "doi-asserted-by": "publisher",
+      "first-page": "2497",
+      "issue": "13",
+      "journal-title": "Cancer",
+      "key": "243_CR18",
+      "unstructured": "Cragun D, Weidner A, Lewis C, Bonner D, Kim J, Vadaparampil ST, Pal T (2017) Racial disparities in BRCA testing and cancer risk management across a population-based sample of young breast cancer survivors. Cancer 123(13):2497–2505. https://doi.org/10.1002/cncr.30621",
+      "volume": "123",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ejhg.2014.180",
+      "author": "T Delikurt",
+      "doi-asserted-by": "publisher",
+      "first-page": "739",
+      "issue": "6",
+      "journal-title": "Eur J Human Genet: EJHG",
+      "key": "243_CR19",
+      "unstructured": "Delikurt T, Williamson GR, Anastasiadou V, Skirton H (2015) A systematic review of factors that act as barriers to patient referral to genetic services. Eur J Human Genet: EJHG 23(6):739–745. https://doi.org/10.1038/ejhg.2014.180",
+      "volume": "23",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1200/jco.2015.66.0019",
+      "author": "AM McCarthy",
+      "doi-asserted-by": "publisher",
+      "first-page": "2610",
+      "issue": "22",
+      "journal-title": "J Clin Oncol",
+      "key": "243_CR20",
+      "unstructured": "McCarthy AM, Bristol M, Domchek SM, Groeneveld PW, Kim Y, Motanya UN, Shea JA, Armstrong K (2016) Health care segregation, physician recommendation, and racial disparities in BRCA1/2 testing among women with breast cancer. J Clin Oncol 34(22):2610–2618. https://doi.org/10.1200/jco.2015.66.0019",
+      "volume": "34",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1097/GIM.0b013e3181770184",
+      "author": "AE Shields",
+      "doi-asserted-by": "publisher",
+      "first-page": "404",
+      "issue": "6",
+      "journal-title": "Genet Med",
+      "key": "243_CR21",
+      "unstructured": "Shields AE, Burke W, Levy DE (2008) Differential use of available genetic tests among primary care physicians in the United States: results of a national survey. Genet Med 10(6):404–414. https://doi.org/10.1097/GIM.0b013e3181770184",
+      "volume": "10",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1002/cam4.1864",
+      "author": "MH Stamp",
+      "doi-asserted-by": "publisher",
+      "first-page": "1306",
+      "issue": "3",
+      "journal-title": "Cancer Med",
+      "key": "243_CR22",
+      "unstructured": "Stamp MH, Gordon OK, Childers CP, Childers KK (2019) Painting a portrait: analysis of national health survey data for cancer genetic counseling. Cancer Med 8(3):1306–1314. https://doi.org/10.1002/cam4.1864",
+      "volume": "8",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s11606-013-2442-0",
+      "author": "MF Murray",
+      "doi-asserted-by": "publisher",
+      "first-page": "1558",
+      "issue": "12",
+      "journal-title": "J Gen Intern Med",
+      "key": "243_CR23",
+      "unstructured": "Murray MF, Giovanni MA, Klinger E, George E, Marinacci L, Getty G, Brawarsky P, Rocha B, Orav EJ, Bates DW, Haas JS (2013) Comparing electronic health record portals to obtain patient-entered family health history in primary care. J Gen Intern Med 28(12):1558–1564. https://doi.org/10.1007/s11606-013-2442-0",
+      "volume": "28",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1471-2296-15-31",
+      "author": "RR Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "31",
+      "journal-title": "BMC Fam Pract",
+      "key": "243_CR24",
+      "unstructured": "Wu RR, Himmel TL, Buchanan AH, Powell KP, Hauser ER, Ginsburg GS, Henrich VC, Orlando LA (2014) Quality of family history collection with use of a patient facing family history assessment tool. BMC Fam Pract 15:31. https://doi.org/10.1186/1471-2296-15-31",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1080/14737159.2017.1267567",
+      "author": "D Cragun",
+      "doi-asserted-by": "publisher",
+      "first-page": "57",
+      "issue": "1",
+      "journal-title": "Expert Rev Mol Diagn",
+      "key": "243_CR25",
+      "unstructured": "Cragun D, Kinney AY, Pal T (2017) Care delivery considerations for widespread and equitable implementation of inherited cancer predisposition testing. Expert Rev Mol Diagn 17(1):57–70. https://doi.org/10.1080/14737159.2017.1267567",
+      "volume": "17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0028-2",
+      "author": "RF Green",
+      "doi-asserted-by": "publisher",
+      "first-page": "28",
+      "issue": "1",
+      "journal-title": "Genet Med",
+      "key": "243_CR26",
+      "unstructured": "Green RF, Ari M, Kolor K, Dotson WD, Bowen S, Habarta N, Rodriguez JL, Richardson LC, Khoury MJ (2019) Evaluating the role of public health in implementation of genomics-related recommendations: a case study of hereditary cancers using the CDC Science Impact Framework. Genet Med 21(1):28–37. https://doi.org/10.1038/s41436-018-0028-2",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s12687-017-0317-5",
+      "author": "SS Mathew",
+      "doi-asserted-by": "publisher",
+      "first-page": "267",
+      "issue": "4",
+      "journal-title": "J Community Genet",
+      "key": "243_CR27",
+      "unstructured": "Mathew SS, Barwell J, Khan N, Lynch E, Parker M, Qureshi N (2017) Inclusion of diverse populations in genomic research and health services: Genomix workshop report. J Community Genet 8(4):267–273. https://doi.org/10.1007/s12687-017-0317-5",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1377/hlthaff.2015.1476",
+      "author": "CE Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "1367",
+      "issue": "8",
+      "journal-title": "Health Disparities Health Aff (Millwood)",
+      "key": "243_CR28",
+      "unstructured": "Smith CE, Fullerton SM, Dookeran KA, Hampel H, Tin A, Maruthur NM, Schisler JC, Henderson JA, Tucker KL, Ordovas JM (2016) using genetic technologies to reduce, rather than widen. Health Disparities Health Aff (Millwood) 35(8):1367–1373. https://doi.org/10.1377/hlthaff.2015.1476",
+      "volume": "35",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.08.007",
+      "author": "LM Amendola",
+      "doi-asserted-by": "publisher",
+      "first-page": "319",
+      "issue": "3",
+      "journal-title": "Am J Hum Genet",
+      "key": "243_CR29",
+      "unstructured": "Amendola LM, Berg JS, Horowitz CR, Angelo F, Bensen JT, Biesecker BB, Biesecker LG, Cooper GM, East K, Filipski K, Fullerton SM, Gelb BD, Goddard KAB, Hailu B, Hart R, Hassmiller-Lich K, Joseph G, Kenny EE, Koenig BA, Knight S, Kwok PY, Lewis KL, McGuire AL, Norton ME, Ou J, Parsons DW, Powell BC, Risch N, Robinson M, Rini C, Scollon S, Slavotinek AM, Veenstra DL, Wasserstein MP, Wilfond BS, Hindorff LA, Consortium C, Plon SE, Jarvik GP (2018) The clinical sequencing evidence-generating research consortium: integrating genomic sequencing in diverse and medically underserved populations. Am J Hum Genet 103(3):319–327. https://doi.org/10.1016/j.ajhg.2018.08.007",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1200/JCO.2016.69.6120",
+      "author": "F Kastrinos",
+      "doi-asserted-by": "publisher",
+      "first-page": "2165",
+      "issue": "19",
+      "journal-title": "J Clin Oncol",
+      "key": "243_CR30",
+      "unstructured": "Kastrinos F, Uno H, Ukaegbu C, Alvero C, McFarland A, Yurgelun MB, Kulke MH, Schrag D, Meyerhardt JA, Fuchs CS, Mayer RJ, Ng K, Steyerberg EW, Syngal S (2017) Development and validation of the PREMM5 model for comprehensive risk assessment of lynch syndrome. J Clin Oncol 35(19):2165–2172. https://doi.org/10.1200/JCO.2016.69.6120",
+      "volume": "35",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.cgh.2017.06.038",
+      "author": "DG Luba",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "issue": "1",
+      "journal-title": "Clin Gastroenterol Hepatol",
+      "key": "243_CR31",
+      "unstructured": "Luba DG, DiSario JA, Rock C, Saraiya D, Moyes K, Brown K, Rushton K, Ogara MM, Raphael M, Zimmerman D, Garrido K, Silguero E, Nelson J, Yurgelun MB, Kastrinos F, Wenstrup RJ, Syngal S (2018) Community practice implementation of a self-administered version of PREMM1,2,6 to assess risk for lynch syndrome. Clin Gastroenterol Hepatol 16(1):49–58. https://doi.org/10.1016/j.cgh.2017.06.038",
+      "volume": "16",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0763-z",
+      "author": "SA Kraft",
+      "doi-asserted-by": "publisher",
+      "first-page": "1094",
+      "issue": "6",
+      "journal-title": "Genet Med",
+      "key": "243_CR32",
+      "unstructured": "Kraft SA, McMullen C, Lindberg NM, Bui D, Shipman K, Anderson K, Joseph G, Duenas DM, Porter KM, Kauffman TL, Koomas A, Ransom CL, Jackson P, Goddard KAB, Wilfond BS, Lee SS (2020) Integrating stakeholder feedback in translational genomics research: an ethnographic analysis of a study protocol’s evolution. Genet Med 22(6):1094–1101. https://doi.org/10.1038/s41436-020-0763-z",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1097/GIM.0b013e3181d4bc3a",
+      "author": "C Bellcross",
+      "doi-asserted-by": "publisher",
+      "first-page": "240",
+      "issue": "4",
+      "journal-title": "Genet Med",
+      "key": "243_CR33",
+      "unstructured": "Bellcross C (2010) Further development and evaluation of a breast/ovarian cancer genetics referral screening tool. Genet Med 12(4):240. https://doi.org/10.1097/GIM.0b013e3181d4bc3a",
+      "volume": "12",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0020-x",
+      "author": "C Bellcross",
+      "doi-asserted-by": "publisher",
+      "first-page": "181",
+      "issue": "1",
+      "journal-title": "Genet Med",
+      "key": "243_CR34",
+      "unstructured": "Bellcross C, Hermstad A, Tallo C, Stanislaw C (2019) Validation of version 3.0 of the breast cancer genetics referral screening tool (B-RST). Genet Med 21(1):181–184. https://doi.org/10.1038/s41436-018-0020-x",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1097/GIM.0b013e3181b9b04a",
+      "author": "CA Bellcross",
+      "doi-asserted-by": "publisher",
+      "first-page": "783",
+      "issue": "11",
+      "journal-title": "Genet Med",
+      "key": "243_CR35",
+      "unstructured": "Bellcross CA, Lemke AA, Pape LS, Tess AL, Meisner LT (2009) Evaluation of a breast/ovarian cancer genetics referral screening tool in a mammography population. Genet Med 11(11):783–789. https://doi.org/10.1097/GIM.0b013e3181b9b04a",
+      "volume": "11",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1177/0272989X15581800",
+      "author": "CD McNaughton",
+      "doi-asserted-by": "publisher",
+      "first-page": "932",
+      "issue": "8",
+      "journal-title": "Med Decis Mak",
+      "key": "243_CR36",
+      "unstructured": "McNaughton CD, Cavanaugh KL, Kripalani S, Rothman RL, Wallston KA (2015) Validation of a short, 3-item version of the subjective numeracy scale. Med Decis Mak 35(8):932–936. https://doi.org/10.1177/0272989X15581800",
+      "volume": "35",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3747/co.25.4042",
+      "author": "JE Cleophat",
+      "doi-asserted-by": "publisher",
+      "first-page": "e335",
+      "issue": "4",
+      "journal-title": "Curr Oncol (Toronto, Ont)",
+      "key": "243_CR37",
+      "unstructured": "Cleophat JE, Nabi H, Pelletier S, Bouchard K, Dorval M (2018) What characterizes cancer family history collection tools? A critical literature review. Curr Oncol (Toronto, Ont) 25(4):e335–e350. https://doi.org/10.3747/co.25.4042",
+      "volume": "25",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1097/GIM.0b013e3181a7e8e0",
+      "author": "N Qureshi",
+      "doi-asserted-by": "publisher",
+      "first-page": "495",
+      "issue": "7",
+      "journal-title": "Genet Med",
+      "key": "243_CR38",
+      "unstructured": "Qureshi N, Carroll JC, Wilson B, Santaguida P, Allanson J, Brouwers M, Raina P (2009) The current state of cancer family history collection tools in primary care: a systematic review. Genet Med 11(7):495–506. https://doi.org/10.1097/GIM.0b013e3181a7e8e0",
+      "volume": "11",
+      "year": "2009"
+    },
+    {
+      "author": "N Qureshi",
+      "first-page": "1",
+      "journal-title": "Evid Rep Technol Assess (Full Rep)",
+      "key": "243_CR39",
+      "unstructured": "Qureshi N, Wilson B, Santaguida P, Carroll J, Allanson J, Culebro CR, Brouwers M, Raina P (2007) Collection and use of cancer family history in primary care. Evid Rep Technol Assess (Full Rep) 159:1–84",
+      "volume": "159",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1146/annurev.publhealth.012809.103621",
+      "author": "R Valdez",
+      "doi-asserted-by": "publisher",
+      "first-page": "69",
+      "journal-title": "Annu Rev Public Health",
+      "key": "243_CR40",
+      "unstructured": "Valdez R, Yoon PW, Qureshi N, Green RF, Khoury MJ (2010) Family history in public health practice: a genomic tool for disease prevention and health promotion. Annu Rev Public Health 31:69–87. https://doi.org/10.1146/annurev.publhealth.012809.103621",
+      "volume": "31",
+      "year": "2010"
+    },
+    {
+      "key": "243_CR41",
+      "unstructured": "Center for Disease Control's (CDC) Office of public health genomics (OPHG). ACCE model process for evaluating genetic tests. https://www.cdc.gov/genomics/gtesting/acce/index.htm."
+    },
+    {
+      "author": "G Ad",
+      "key": "243_CR42",
+      "unstructured": "Ad G (1991) Practice statistics for medical research. Chapman and Hall, London",
+      "volume-title": "Practice statistics for medical research",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.2307/2532051",
+      "author": "IKL Lawrence",
+      "doi-asserted-by": "publisher",
+      "first-page": "255",
+      "issue": "1",
+      "journal-title": "Biometrics",
+      "key": "243_CR43",
+      "unstructured": "Lawrence IKL (1989) A concordance correlation coefficient to evaluate reproducibility. Biometrics 45(1):255–268. https://doi.org/10.2307/2532051",
+      "volume": "45",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1007/s10897-018-0235-7",
+      "author": "BM Welch",
+      "doi-asserted-by": "publisher",
+      "first-page": "381",
+      "issue": "2",
+      "journal-title": "J Genet Couns",
+      "key": "243_CR44",
+      "unstructured": "Welch BM, Wiley K, Pflieger L, Achiangia R, Baker K, Hughes-Halbert C, Morrison H, Schiffman J, Doerr M (2018) Review and comparison of electronic patient-facing family health history tools. J Genet Couns 27(2):381–391. https://doi.org/10.1007/s10897-018-0235-7",
+      "volume": "27",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3399/bjgp18X700265",
+      "author": "F Laforest",
+      "doi-asserted-by": "publisher",
+      "first-page": "e97",
+      "issue": "679",
+      "journal-title": "Br J Gen Pract",
+      "key": "243_CR45",
+      "unstructured": "Laforest F, Kirkegaard P, Mann B, Edwards A (2019) Genetic cancer risk assessment in general practice: systematic review of tools available, clinician attitudes, and patient outcomes. Br J Gen Pract 69(679):e97–e105. https://doi.org/10.3399/bjgp18X700265",
+      "volume": "69",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3109/13814788.2013.840825",
+      "author": "CL de Hoog",
+      "doi-asserted-by": "publisher",
+      "first-page": "125",
+      "issue": "2",
+      "journal-title": "Eur J Gen Pract",
+      "key": "243_CR46",
+      "unstructured": "de Hoog CL, Portegijs PJ, Stoffers HE (2014) Family history tools for primary care are not ready yet to be implemented. A systematic review. Eur J Gen Pract 20(2):125–133. https://doi.org/10.3109/13814788.2013.840825",
+      "volume": "20",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/s13053-017-0083-8",
+      "author": "SA Gardner",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Hered Cancer Clin Pract",
+      "key": "243_CR47",
+      "unstructured": "Gardner SA, Weymouth KS, Kelly WS, Bogdanova E, Chen W, Lupu D, Suhl J, Zeng Q, Geigenmüller U, Boles D, Okamoto PM, McDowell G, Hayden MA, Nagan N (2018) Evaluation of a 27-gene inherited cancer panel across 630 consecutive patients referred for testing in a clinical diagnostic laboratory. Hered Cancer Clin Pract 16:1–1. https://doi.org/10.1186/s13053-017-0083-8",
+      "volume": "16",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/gim.2014.40",
+      "author": "H LaDuca",
+      "doi-asserted-by": "publisher",
+      "first-page": "830",
+      "issue": "11",
+      "journal-title": "Genet Med",
+      "key": "243_CR48",
+      "unstructured": "LaDuca H, Stuenkel AJ, Dolinsky JS, Keiles S, Tandy S, Pesaran T, Chen E, Gau CL, Palmaer E, Shoaepour K, Shah D, Speare V, Gandomi S, Chao E (2014) Utilization of multigene panels in hereditary cancer predisposition testing: analysis of more than 2,000 patients. Genet Med 16(11):830–837. https://doi.org/10.1038/gim.2014.40",
+      "volume": "16",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3390/jpm8010002",
+      "author": "R Fossey",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Pers Med",
+      "key": "243_CR49",
+      "unstructured": "Fossey R, Kochan D, Winkler E, Pacyna JE, Olson J, Thibodeau S, Connolly JJ, Harr M, Behr MA, Prows CA, Cobb B, Myers MF, Leslie ND, Namjou-Khales B, Milo Rasouly H, Wynn J, Fedotov A, Chung WK, Gharavi A, Williams JL, Pais L, Holm I, Aufox S, Smith ME, Scrol A, Leppig K, Jarvik GP, Wiesner GL, Li R, Stroud M, Smoller JW, Sharp RR, Kullo IJ (2018) Ethical considerations related to return of results from genomic medicine projects: the emerge network (Phase III) experience. J Pers Med. https://doi.org/10.3390/jpm8010002",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 49,
+  "references-count": 49,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s10689-021-00243-3"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Familial Cancer"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Adaptation and early implementation of the PREdiction model for gene mutations (PREMM5™) for lynch syndrome risk assessment in a diverse population"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "21"
+}

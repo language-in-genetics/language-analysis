@@ -1,0 +1,876 @@
+{
+  "DOI": "10.1038/s41431-022-01191-x",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-022-01191-x",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eAn important fraction of patients with rare disorders remains with no clear genetic diagnostic, even after whole-exome or whole-genome sequencing, posing a difficulty in giving adequate treatment and genetic counseling. The analysis of genomic data in rare disorders mostly considers the presence of single gene variants in coding regions that follow a concrete monogenic mode of inheritance. A digenic inheritance, with variants in two functionally-related genes in the same individual, is a plausible alternative that might explain the genetic basis of the disease in some cases. In this case, digenic disease combinations should be absent or underrepresented in healthy individuals. We develop a framework to evaluate the significance of digenic combinations and test its statistical power in different scenarios. We suggest that this approach will be relevant with the advent of new sequencing efforts including hundreds of thousands of samples.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1191"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "15 February 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "18 August 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "8 September 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "3 October 2022"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Genomics England has approval from the HRA Committee East of England – Cambridge South (REC Ref 14/EE/1112)."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-9636-0179",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Moreno-Ruiz",
+      "given": "Nerea",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Ambrose",
+      "given": "J. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Arumugam",
+      "given": "P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Baple",
+      "given": "E. L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bleda",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boardman-Pretty",
+      "given": "F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boissiere",
+      "given": "J. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boustred",
+      "given": "C. R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brittain",
+      "given": "H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Caulfield",
+      "given": "M. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chan",
+      "given": "G. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Craig",
+      "given": "C. E. H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Daugherty",
+      "given": "L. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Burca",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Devereau",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Elgar",
+      "given": "G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Foulger",
+      "given": "R. E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fowler",
+      "given": "T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Furió-Tarí",
+      "given": "P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Giess",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hackett",
+      "given": "J. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Halai",
+      "given": "D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hamblin",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Henderson",
+      "given": "S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Holman",
+      "given": "J. E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hubbard",
+      "given": "T. J. P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ibáñez",
+      "given": "K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jackson",
+      "given": "R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jones",
+      "given": "L. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kasperaviciute",
+      "given": "D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kayikci",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kousathanas",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lahnstein",
+      "given": "L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lawson",
+      "given": "K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leigh",
+      "given": "S. E. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leong",
+      "given": "I. U. S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lopez",
+      "given": "F. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Maleady-Crowe",
+      "given": "F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mason",
+      "given": "J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "McDonagh",
+      "given": "E. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moutsianas",
+      "given": "L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mueller",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Murugaesu",
+      "given": "N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Need",
+      "given": "A. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Odhams",
+      "given": "C. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Orioli",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Patch",
+      "given": "C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Perez-Gil",
+      "given": "D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pereira",
+      "given": "M. B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Polychronopoulos",
+      "given": "D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pullinger",
+      "given": "J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rahim",
+      "given": "T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rendon",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Riesgo-Ferreiro",
+      "given": "P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rogers",
+      "given": "T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ryten",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Savage",
+      "given": "K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sawant",
+      "given": "K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scott",
+      "given": "R. H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Siddiq",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sieghart",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smedley",
+      "given": "D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smith",
+      "given": "K. R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Smith",
+      "given": "S. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sosinsky",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Spooner",
+      "given": "W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stevens",
+      "given": "H. E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stuckey",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sultana",
+      "given": "R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tanguy",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thomas",
+      "given": "E. R. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thompson",
+      "given": "S. R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tregidgo",
+      "given": "C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tucci",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Walsh",
+      "given": "E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Watters",
+      "given": "S. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Welland",
+      "given": "M. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Williams",
+      "given": "E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Witkowska",
+      "given": "K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wood",
+      "given": "S. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zarowiecki",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8525-9649",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lao",
+      "given": "Oscar",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4757-504X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Aróstegui",
+      "given": "Juan Ignacio",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1297-5078",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Laayouni",
+      "given": "Hafid",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8941-0369",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Casals",
+      "given": "Ferran",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "Genomics England Research Consortium",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2022-10-03T06:02:39Z",
+    "timestamp": 1664776959000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        21
+      ]
+    ],
+    "date-time": "2023-02-21T16:38:52Z",
+    "timestamp": 1676997532000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        1
+      ]
+    ],
+    "date-time": "2023-12-01T09:36:29Z",
+    "timestamp": 1701423389575
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "12",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "12",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            3
+          ]
+        ],
+        "date-time": "2022-10-03T00:00:00Z",
+        "timestamp": 1664755200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            3
+          ]
+        ],
+        "date-time": "2022-10-03T00:00:00Z",
+        "timestamp": 1664755200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01191-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01191-x",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01191-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1439-1443",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        3
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1101/mcs.a003392",
+      "doi-asserted-by": "crossref",
+      "key": "1191_CR1",
+      "unstructured": "Frésard L, Montgomery SB. Diagnosing rare diseases after the exome. Cold Spring Harbor Molecular Case Studies. Cold Spring Harbor Laboratory Press; 2018, Vol. 4."
+    },
+    {
+      "DOI": "10.1038/nrg.2017.116",
+      "author": "CF Wright",
+      "doi-asserted-by": "publisher",
+      "first-page": "253",
+      "journal-title": "Nat Rev Genet [Internet].",
+      "key": "1191_CR2",
+      "unstructured": "Wright CF, FitzPatrick DR, Firth HV. Paediatric genomics: diagnosing rare disease in children. Nat Rev Genet [Internet]. 2018;19:253–68. https://pubmed.ncbi.nlm.nih.gov/29398702 Accessed 22 Dec 2021",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.02.040",
+      "doi-asserted-by": "crossref",
+      "key": "1191_CR3",
+      "unstructured": "Boycott KM, Hartley T, Biesecker LG, Gibbs RA, Innes AM, Riess O, et al. A diagnosis for all rare genetic diseases: the horizon and the next frontiers. Cell. 2019;177:32–7."
+    },
+    {
+      "key": "1191_CR4",
+      "unstructured": "Katsanis EN, Robinson JF. Oligogenic disease. In: Speicher MR, Motulsky AG, Antonarakis SE, editors. Vogel and Motulsky’s human genetics: problems and approaches. 4th ed. Berlin, Heidelberg: Springer; 2010. p. 243–62."
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2013-101713",
+      "author": "AA Schäffer",
+      "doi-asserted-by": "publisher",
+      "first-page": "641",
+      "journal-title": "J Med Genet [Internet].",
+      "key": "1191_CR5",
+      "unstructured": "Schäffer AA. Digenic inheritance in medical genetics. J Med Genet [Internet]. 2013;50:641–52. https://pubmed.ncbi.nlm.nih.gov/23785127/ Accessed 22 Dec 2021.",
+      "volume": "50",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gkv1068",
+      "author": "AM Gazzo",
+      "doi-asserted-by": "publisher",
+      "first-page": "D900",
+      "journal-title": "Nucleic Acids Res [Internet]",
+      "key": "1191_CR6",
+      "unstructured": "Gazzo AM, Daneels D, Cilia E, Bonduelle M, Abramowicz M, Van Dooren S, et al. DIDA: a curated and annotated digenic diseases database. Nucleic Acids Res [Internet] 2016;44:D900–7. https://pubmed.ncbi.nlm.nih.gov/26481352/ Accessed 22 Dec 2021.",
+      "volume": "44",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/aje/155.5.478",
+      "doi-asserted-by": "crossref",
+      "key": "1191_CR7",
+      "unstructured": "Gauderman WJ. Sample size requirements for association studies of gene-gene interaction. 2002. https://academic.oup.com/aje/article/155/5/478/171660. Accessed 25 May 2022"
+    },
+    {
+      "key": "1191_CR8",
+      "unstructured": "Genomics England [Internet]. 2019. http://www.genomicsengland.co.uk. Accessed 15 Nov 2019."
+    },
+    {
+      "DOI": "10.1182/blood-2014-05-573105",
+      "author": "K Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1331",
+      "journal-title": "Blood [Internet]",
+      "key": "1191_CR9",
+      "unstructured": "Zhang K, Chandrakasan S, Chapman H, Valencia CA, Husami A, Kissell D, et al. Synergistic defects of different molecules in the cytotoxic pathway lead to clinical familial hemophagocytic lymphohistiocytosis. Blood [Internet] 2014;124:1331–4. https://pubmed.ncbi.nlm.nih.gov/24916509/ Accessed 22 Dec 2021.",
+      "volume": "124",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0869-4",
+      "doi-asserted-by": "crossref",
+      "key": "1191_CR10",
+      "unstructured": "Gussow AB, Petrovski S, Wang Q, Allen AS, Goldstein DB. The intolerance to functional genetic variation of protein domains predicts the localization of pathogenic mutations within genes. Genome Biol [Internet]. 2016. Vol. 17. https://pubmed.ncbi.nlm.nih.gov/26781712/. Accessed 22 Dec 2021."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv602",
+      "author": "J Fadista",
+      "doi-asserted-by": "crossref",
+      "first-page": "471",
+      "journal-title": "Bioinforma [Internet].",
+      "key": "1191_CR11",
+      "unstructured": "Fadista J, Oskolkov N, Hansson O, Groop L. LoFtool: a gene intolerance score based on loss-of-function variants in 60 706 individuals. Bioinforma [Internet]. 2017;33:471–4. https://pubmed.ncbi.nlm.nih.gov/27563026/ Accessed 22 Dec 2021.",
+      "volume": "33",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/s00439-008-0560-2",
+      "author": "E Génin",
+      "doi-asserted-by": "publisher",
+      "first-page": "357",
+      "journal-title": "Hum Genet [Internet].",
+      "key": "1191_CR12",
+      "unstructured": "Génin E, Feingold J, Clerget-Darpoux F. Identifying modifier genes of monogenic disease: strategies and difficulties. Hum Genet [Internet]. 2008;124:357–68. https://pubmed.ncbi.nlm.nih.gov/18784943/ Accessed 22 Dec 2021.",
+      "volume": "124",
+      "year": "2008"
+    }
+  ],
+  "reference-count": 12,
+  "references-count": 12,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-022-01191-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Assessing the digenic model in rare disorders using population sequencing data"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "30"
+}

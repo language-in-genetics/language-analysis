@@ -1,0 +1,565 @@
+{
+  "DOI": "10.1002/gepi.22510",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22510",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMediation hypothesis testing for a large number of mediators is challenging due to the composite structure of the null hypothesis,  (: effect of the exposure on the mediator after adjusting for confounders; : effect of the mediator on the outcome after adjusting for exposure and confounders). In this paper, we reviewed three classes of methods for large‐scale one at a time mediation hypothesis testing. These methods are commonly used for continuous outcomes and continuous mediators assuming there is no exposure‐mediator interaction so that the product  has a causal interpretation as the indirect effect. The first class of methods ignores the impact of different structures under the composite null hypothesis, namely, (1) ; (2) ; and (3) . The second class of methods weights the reference distribution under each case of the null to form a mixture reference distribution. The third class constructs a composite test statistic using the three \u003cjats:italic\u003ep\u003c/jats:italic\u003e values obtained under each case of the null so that the reference distribution of the composite statistic is approximately . In addition to these existing methods, we developed the Sobel‐comp method belonging to the second class, which uses a corrected mixture reference distribution for Sobel's test statistic. We performed extensive simulation studies to compare all six methods belonging to these three classes in terms of the false positive rates (FPRs) under the null hypothesis and the true positive rates under the alternative hypothesis. We found that the second class of methods which uses a mixture reference distribution could best maintain the FPRs at the nominal level under the null hypothesis and had the greatest true positive rates under the alternative hypothesis. We applied all methods to study the mediation mechanism of DNA methylation sites in the pathway from adult socioeconomic status to glycated hemoglobin level using data from the Multi‐Ethnic Study of Atherosclerosis (MESA). We provide guidelines for choosing the optimal mediation hypothesis testing method in practice and develop an R package \u003cjats:italic\u003emedScan\u003c/jats:italic\u003e available on the CRAN for implementing all the six methods.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22510"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2022-06-02"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-11-11"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-12-08"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-7768-9083",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Du",
+      "given": "Jiacong",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Zhou",
+      "given": "Xiang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Clark‐Boucher",
+      "given": "Dylan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Hao",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine, Divisions of Cardiology and Neurology Duke University Medical Center Durham North Carolina USA"
+        }
+      ],
+      "family": "Liu",
+      "given": "Yongmei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of Michigan Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Smith",
+      "given": "Jennifer A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan USA"
+        }
+      ],
+      "family": "Mukherjee",
+      "given": "Bhramar",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        5
+      ]
+    ],
+    "date-time": "2022-12-05T08:10:38Z",
+    "timestamp": 1670227838000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        18
+      ]
+    ],
+    "date-time": "2023-08-18T03:45:11Z",
+    "timestamp": 1692330311000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        17
+      ]
+    ],
+    "date-time": "2023-11-17T19:19:31Z",
+    "timestamp": 1700248771200
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            8
+          ]
+        ],
+        "date-time": "2022-12-08T00:00:00Z",
+        "timestamp": 1670457600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22510",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22510",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22510",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "167-184",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        3
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.22084",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1037/0022-3514.51.6.1173",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwf113",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxx027",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1038/s42255-020-0231-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1186/s12885-020-07206-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1080/01621459.2020.1765785",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1198/016214501753382129",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2008.00674.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1007/s11524-018-00341-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1007/s11357-017-0001-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1214/18-AOAS1181",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1111/biom.13073",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21905",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1198/016214507000000167",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-380866-0.60002-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1074/jbc.M114.564450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.31219/osf.io/jath7",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_19_1",
+      "unstructured": "Li Y. Yoshida K. Kaufman J. S. \u0026Mathur M.(2022). Conducting regression‐based causal mediation analysis: A tutorial using the R package regmedint."
+    },
+    {
+      "DOI": "10.1007/s00592-020-01647-w",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1080/01621459.2021.1914634",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1037/1082-989X.7.1.83",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1207/s15327906mbr3901_4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1007/s11121-019-01076-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1207/s15327906mbr3001_3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "key": "e_1_2_8_26_1",
+      "unstructured": "Mathur M. B. Ding P. VanderWeele T. J. \u0026Mathur M. M. B.(2021). Package ‘Evalue’.Package ‘EValue’."
+    },
+    {
+      "author": "Pearl J",
+      "first-page": "411",
+      "key": "e_1_2_8_27_1",
+      "volume-title": "Proceedings of the seventeenth conference on uncertainty in artificial intelligence",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1007/s42000-018-0078-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004818",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.09.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1214/aos/1176344064",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.2337/dc12-2412",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0000000000001378",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.2337/diab.41.2.202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.2307/270723",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1002/sim.9168",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_36_1",
+      "unstructured": "Song Y. Zhou X. Kang J. Aung M. T. Zhang M. Zhao W. Needham B. L. Kardia S. L. Liu Y. Meeker J. D. Smith J. A. \u0026Mukherjee B.(2020). Bayesian hierarchical models for high‐dimensional mediation analysis with coordinated selection of correlated mediators. arXiv preprint arXiv:2009.11409."
+    },
+    {
+      "DOI": "10.1111/biom.13189",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "DOI": "10.1016/j.dadm.2016.12.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "key": "e_1_2_8_39_1",
+      "unstructured": "Steen J. Loeys T. Moerkerke B. Vansteelandt S. Meys J. Lange T. Legewie J. Fink P. \u0026Steen M. J.(2020). Package ‘medflex’."
+    },
+    {
+      "DOI": "10.1111/1467-9868.00346",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.18043/ncm.73.5.358",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.18637/jss.v059.i05",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_42_1",
+      "unstructured": "Tingley D. Yamamoto T. Hirose K. Keele L. \u0026Imai K.(2014). Mediation: R package for causal mediation analysis."
+    },
+    {
+      "article-title": "DNA methylation signatures of educational attainment",
+      "author": "Dongen J.",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "NPJ Science of Learning",
+      "key": "e_1_2_8_43_1",
+      "volume": "3",
+      "year": "2018"
+    },
+    {
+      "author": "VanderWeele T. J.",
+      "key": "e_1_2_8_44_1",
+      "volume-title": "Explanation in causal inference: Methods for mediation and interaction",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/aje/kwr467",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    },
+    {
+      "DOI": "10.7326/M16-2607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    },
+    {
+      "DOI": "10.4310/SII.2009.v2.n4.a7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_47_1"
+    },
+    {
+      "DOI": "10.1177/1557988313520034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_48_1"
+    },
+    {
+      "DOI": "10.1038/s10038-017-0385-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_49_1"
+    },
+    {
+      "DOI": "10.1101/gr.216754.116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_50_1"
+    },
+    {
+      "DOI": "10.2337/dc18-0289",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_51_1"
+    },
+    {
+      "DOI": "10.1016/j.csbj.2021.05.042",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_52_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw351",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_53_1"
+    }
+  ],
+  "reference-count": 52,
+  "references-count": 52,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22510"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Methods for large‐scale single mediator hypothesis testing: Possible choices and comparisons"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "47"
+}

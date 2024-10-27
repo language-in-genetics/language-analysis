@@ -1,0 +1,1221 @@
+{
+  "DOI": "10.1007/s00439-021-02402-z",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-021-02402-z",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eGenetic data have become increasingly complex within the past decade, leading researchers to pursue increasingly complex questions, such as those involving epistatic interactions and protein prediction. Traditional methods are ill-suited to answer these questions, but machine learning (ML) techniques offer an alternative solution. ML algorithms are commonly used in genetics to predict or classify subjects, but some methods evaluate which features (variables) are responsible for creating a good prediction; this is called feature importance. This is critical in genetics, as researchers are often interested in which features (e.g., SNP genotype or environmental exposure) are responsible for a good prediction. This allows for the deeper analysis beyond simple prediction, including the determination of risk factors associated with a given phenotype. Feature importance further permits the researcher to peer inside the black box of many ML algorithms to see how they work and which features are critical in informing a good prediction. This review focuses on ML methods that provide feature importance metrics for the analysis of genetic data. Five major categories of ML algorithms: k nearest neighbors, artificial neural networks, deep learning, support vector machines, and random forests are described. The review ends with a discussion of how to choose the best machine for a data set. This review will be particularly useful for genetic researchers looking to use ML methods to answer questions beyond basic prediction and classification.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2402"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "13 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "8 November 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "4 December 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "On behalf of all authors, the corresponding author states that there is no conflict of interest."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "There was no ethics approval needed for this review article."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "This work contains no human subjects."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 5,
+      "value": "This work contains no human subjects."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Musolf",
+      "given": "Anthony M.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Holzinger",
+      "given": "Emily R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Malley",
+      "given": "James D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bailey-Wilson",
+      "given": "Joan E.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        4
+      ]
+    ],
+    "date-time": "2021-12-04T02:02:25Z",
+    "timestamp": 1638583345000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        8
+      ]
+    ],
+    "date-time": "2022-08-08T06:06:04Z",
+    "timestamp": 1659938764000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "Intramural Research Program"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        28
+      ]
+    ],
+    "date-time": "2024-04-28T20:35:57Z",
+    "timestamp": 1714336557498
+  },
+  "is-referenced-by-count": 22,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "9",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        4
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            4
+          ]
+        ],
+        "date-time": "2021-12-04T00:00:00Z",
+        "timestamp": 1638576000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            4
+          ]
+        ],
+        "date-time": "2021-12-04T00:00:00Z",
+        "timestamp": 1638576000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02402-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-021-02402-z/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02402-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1515-1528",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        4
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        4
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1186/s12859-017-1599-7",
+      "author": "S Abo Alchamlat",
+      "doi-asserted-by": "publisher",
+      "first-page": "184",
+      "journal-title": "BMC Bioinform",
+      "key": "2402_CR1",
+      "unstructured": "Abo Alchamlat S, Farnir F (2017) KNN-MDR: a learning approach for improving interactions mapping performances in genome wide association studies. BMC Bioinform 18:184. https://doi.org/10.1186/s12859-017-1599-7",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1089/big.2018.0175",
+      "author": "HA Abu Alfeilat",
+      "doi-asserted-by": "publisher",
+      "first-page": "221",
+      "journal-title": "Big Data",
+      "key": "2402_CR2",
+      "unstructured": "Abu Alfeilat HA, Hassanat ABA, Lasassmeh O, Tarawneh AS, Alhasanat MB, Eyal Salman HS, Prasath VBS (2019) Effects of distance measure choice on K-nearest neighbor classifier performance: a review. Big Data 7:221–248. https://doi.org/10.1089/big.2018.0175",
+      "volume": "7",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq134",
+      "author": "A Altmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "1340",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR3",
+      "unstructured": "Altmann A, Toloşi L, Sander O, Lengauer T (2010) Permutation importance: a corrected feature importance measure. Bioinformatics 26:1340–1347. https://doi.org/10.1093/bioinformatics/btq134",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1007616",
+      "author": "J Arloth",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Comput Biol",
+      "key": "2402_CR4",
+      "unstructured": "Arloth J, Eraslan G, Andlauer TFM, Martins J, Iurato S, Kühnel B, Waldenberger M, Frank J, Gold R, Hemmer B, Luessi F, Nischwitz S, Paul F, Wiendl H, Gieger C, Heilmann-Heimbach S, Kacprowski T, Laudes M, Meitinger T, Peters A, Rawal R, Strauch K, Lucae S, Müller-Myhsok B, Rietschel M, Theis FJ, Binder EB, Mueller NS (2020) DeepWAS: Multivariate genotype-phenotype associations by directly integrating regulatory information using deep learning. PLoS Comput Biol 16:e1007616. https://doi.org/10.1371/journal.pcbi.1007616",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/14737159.2018.1439380",
+      "author": "AO Basile",
+      "doi-asserted-by": "publisher",
+      "first-page": "219",
+      "journal-title": "Expert Rev Mol Diagn",
+      "key": "2402_CR5",
+      "unstructured": "Basile AO, Ritchie MD (2018) Informatics and machine learning to define the phenotype. Expert Rev Mol Diagn 18:219–226. https://doi.org/10.1080/14737159.2018.1439380",
+      "volume": "18",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13040-017-0135-7",
+      "author": "B Battogtokh",
+      "doi-asserted-by": "publisher",
+      "first-page": "16",
+      "journal-title": "BioData Min",
+      "key": "2402_CR6",
+      "unstructured": "Battogtokh B, Mojirsheibani M, Malley J (2017) The optimal crowd learning machine. BioData Min 10:16. https://doi.org/10.1186/s13040-017-0135-7",
+      "volume": "10",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/s10489-012-0388-2",
+      "author": "A Bella",
+      "doi-asserted-by": "publisher",
+      "first-page": "566",
+      "journal-title": "Appl Intell",
+      "key": "2402_CR7",
+      "unstructured": "Bella A, Ferri C, Hernández-Orallo J, Ramírez-Quintana MJ (2013) On the effect of calibration in classifier combination. Appl Intell 38:566–585",
+      "volume": "38",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bib/bbr053",
+      "author": "AL Boulesteix",
+      "doi-asserted-by": "publisher",
+      "first-page": "292",
+      "journal-title": "Brief Bioinform",
+      "key": "2402_CR8",
+      "unstructured": "Boulesteix AL, Bender A, Lorenzo Bermejo J, Strobl C (2012) Random forest Gini importance favours SNPs with large minor allele frequency: impact, sources and recommendations. Brief Bioinform 13:292–304. https://doi.org/10.1093/bib/bbr053",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "Mach Learn",
+      "key": "2402_CR9",
+      "unstructured": "Breiman L (2001) Random forests. Mach Learn 45:5–32. https://doi.org/10.1023/A:1010933404324",
+      "volume": "45",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1002/jcc.10222",
+      "author": "YD Cai",
+      "doi-asserted-by": "publisher",
+      "first-page": "727",
+      "journal-title": "J Comput Chem",
+      "key": "2402_CR10",
+      "unstructured": "Cai YD, Liu XJ, Chou KC (2003) Prediction of protein secondary structure content by artificial neural network. J Comput Chem 24:727–731. https://doi.org/10.1002/jcc.10222",
+      "volume": "24",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1186/1471-2164-14-s3-s3",
+      "author": "H Carter",
+      "doi-asserted-by": "publisher",
+      "first-page": "S3",
+      "issue": "Suppl 3",
+      "journal-title": "BMC Genom",
+      "key": "2402_CR11",
+      "unstructured": "Carter H, Douville C, Stenson PD, Cooper DN, Karchin R (2013) Identifying Mendelian disease genes with the variant effect scoring tool. BMC Genom 14(Suppl 3):S3. https://doi.org/10.1186/1471-2164-14-s3-s3",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2019.12.069",
+      "author": "JA Chirinos",
+      "doi-asserted-by": "publisher",
+      "first-page": "1281",
+      "journal-title": "J Am Coll Cardiol",
+      "key": "2402_CR12",
+      "unstructured": "Chirinos JA, Orlenko A, Zhao L, Basso MD, Cvijic ME, Li Z, Spires TE, Yarde M, Wang Z, Seiffert DA, Prenner S, Zamani P, Bhattacharya P, Kumar A, Margulies KB, Car BD, Gordon DA, Moore JH, Cappola TP (2020) Multiple plasma biomarkers for risk stratification in patients with heart failure and preserved ejection fraction. J Am Coll Cardiol 75:1281–1295. https://doi.org/10.1016/j.jacc.2019.12.069",
+      "volume": "75",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/1471-2156-8-49",
+      "author": "D Curtis",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "journal-title": "BMC Genet",
+      "key": "2402_CR13",
+      "unstructured": "Curtis D (2007) Comparison of artificial neural network analysis with other multimarker methods for detecting genetic association. BMC Genet 8:49. https://doi.org/10.1186/1471-2156-8-49",
+      "volume": "8",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1186/1471-2164-15-s7-s4",
+      "author": "FC de Oliveira",
+      "doi-asserted-by": "publisher",
+      "first-page": "S4",
+      "issue": "Suppl 7",
+      "journal-title": "BMC Genom",
+      "key": "2402_CR14",
+      "unstructured": "de Oliveira FC, Borges CC, Almeida FN, de Silva FF, da Silva-Verneque R, da Silva MV, Arbex W (2014) SNPs selection using support vector regression and genetic algorithms in GWAS. BMC Genom 15(Suppl 7):S4. https://doi.org/10.1186/1471-2164-15-s7-s4",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bib/bbx124",
+      "author": "F Degenhardt",
+      "doi-asserted-by": "publisher",
+      "first-page": "492",
+      "journal-title": "Brief Bioinform",
+      "key": "2402_CR15",
+      "unstructured": "Degenhardt F, Seifert S, Szymczak S (2019) Evaluation of variable selection methods for random forests and omics data sets. Brief Bioinform 20:492–503. https://doi.org/10.1093/bib/bbx124",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "author": "L Devroye",
+      "first-page": "1371",
+      "journal-title": "Ann Stat",
+      "key": "2402_CR16",
+      "unstructured": "Devroye L, Gyorfi L, Krzyzak A, Lugosi G (1994) On the strong universal consistency of nearest neighbor regression function estimates. Ann Stat 22:1371–1385",
+      "volume": "22",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1080/01621459.2020.1762613",
+      "author": "B Efron",
+      "doi-asserted-by": "publisher",
+      "first-page": "636",
+      "journal-title": "J Am Stat Assoc",
+      "key": "2402_CR17",
+      "unstructured": "Efron B (2020) Prediction, estimation, and attribution. J Am Stat Assoc 115:636–655. https://doi.org/10.1080/01621459.2020.1762613",
+      "volume": "115",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41576-019-0122-6",
+      "author": "G Eraslan",
+      "doi-asserted-by": "publisher",
+      "first-page": "389",
+      "journal-title": "Nat Rev Genet",
+      "key": "2402_CR18",
+      "unstructured": "Eraslan G, Avsec Ž, Gagneur J, Theis FJ (2019) Deep learning: new computational modelling techniques for genomics. Nat Rev Genet 20:389–403. https://doi.org/10.1038/s41576-019-0122-6",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa840",
+      "author": "M Ghoussaini",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1311",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2402_CR19",
+      "unstructured": "Ghoussaini M, Mountjoy E, Carmona M, Peat G, Schmidt EM, Hercules A, Fumis L, Miranda A, Carvalho-Silva D, Buniello A, Burdett T, Hayhurst J, Baker J, Ferrer J, Gonzalez-Uriarte A, Jupp S, Karim MA, Koscielny G, Machlitt-Northen S, Malangone C, Pendlington ZM, Roncaglia P, Suveges D, Wright D, Vrousgou O, Papa E, Parkinson H, MacArthur JAL, Todd JA, Barrett JC, Schwartzentruber J, Hulcoop DG, Ochoa D, McDonagh EM, Dunham I (2021) Open targets genetics: systematic identification of trait-associated genes using large-scale genetics and functional genomics. Nucleic Acids Res 49:D1311-d1320. https://doi.org/10.1093/nar/gkaa840",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/1756-0381-2-5",
+      "author": "CS Greene",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "BioData Min",
+      "key": "2402_CR20",
+      "unstructured": "Greene CS, Penrod NM, Kiralis J, Moore JH (2009) Spatially uniform relieff (SURF) for computationally-efficient filtering of gene-gene interactions. BioData Min 2:5. https://doi.org/10.1186/1756-0381-2-5",
+      "volume": "2",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty575",
+      "author": "P Greenside",
+      "doi-asserted-by": "publisher",
+      "first-page": "i629",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR21",
+      "unstructured": "Greenside P, Shimko T, Fordyce P, Kundaje A (2018) Discovering epistatic feature interactions from neural network models of regulatory DNA sequences. Bioinformatics 34:i629–i637. https://doi.org/10.1093/bioinformatics/bty575",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s12935-020-01274-z",
+      "author": "L Guo",
+      "doi-asserted-by": "publisher",
+      "first-page": "251",
+      "journal-title": "Cancer Cell Int",
+      "key": "2402_CR22",
+      "unstructured": "Guo L, Wang Z, Du Y, Mao J, Zhang J, Yu Z, Guo J, Zhao J, Zhou H, Wang H, Gu Y, Li Y (2020) Random-forest algorithm based biomarkers in predicting prognosis in the patients with hepatocellular carcinoma. Cancer Cell Int 20:251. https://doi.org/10.1186/s12935-020-01274-z",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1023/A:1012487302797",
+      "author": "I Guyon",
+      "doi-asserted-by": "publisher",
+      "first-page": "389",
+      "journal-title": "Mach Learn",
+      "key": "2402_CR23",
+      "unstructured": "Guyon I, Weston J, Barnhill S, Vapnik V (2002) Gene selection for cancer classification using support vector machines. Mach Learn 46:389–422. https://doi.org/10.1023/A:1012487302797",
+      "volume": "46",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1007/978-0-387-84858-7",
+      "author": "T Hastie",
+      "doi-asserted-by": "publisher",
+      "edition": "2",
+      "key": "2402_CR24",
+      "unstructured": "Hastie T, Tibshirani R, Friedman J (2009) The elements of statistical learning: data mining, inference, and prediction, 2nd edn. Springer, New York",
+      "volume-title": "The elements of statistical learning: data mining, inference, and prediction",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt572",
+      "author": "ER Holzinger",
+      "doi-asserted-by": "publisher",
+      "first-page": "698",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR25",
+      "unstructured": "Holzinger ER, Dudek SM, Frase AT, Pendergrass SA, Ritchie MD (2014) ATHENA: the analysis tool for heritable and environmental network associations. Bioinformatics 30:698–705. https://doi.org/10.1093/bioinformatics/btt572",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "key": "2402_CR26",
+      "unstructured": "Holzinger ER, Szymczak S, Dasgupta A, Malley J, Li Q, Bailey-Wilson JE (2015) Variable selection method for the identification of epistatic models. In: Pacific Symposium on Biocomputing, pp 195–206"
+    },
+    {
+      "DOI": "10.1186/s12919-016-0021-1",
+      "author": "ER Holzinger",
+      "doi-asserted-by": "publisher",
+      "first-page": "147",
+      "journal-title": "BMC Proc",
+      "key": "2402_CR27",
+      "unstructured": "Holzinger ER, Szymczak S, Malley J, Pugh EW, Ling H, Griffith S, Zhang P, Li Q, Cropp CD, Bailey-Wilson JE (2016) Comparison of parametric and machine methods for variable selection in simulated Genetic Analysis Workshop 19 data. BMC Proc 10:147–152. https://doi.org/10.1186/s12919-016-0021-1",
+      "volume": "10",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s12864-016-3317-7",
+      "author": "Y Hu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1025",
+      "journal-title": "BMC Genom",
+      "key": "2402_CR28",
+      "unstructured": "Hu Y, Hase T, Li HP, Prabhakar S, Kitano H, Ng SK, Ghosh S, Wee LJ (2016) A machine learning approach for the identification of key markers involved in brain development from single-cell transcriptomic data. BMC Genom 17:1025. https://doi.org/10.1186/s12864-016-3317-7",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.21873/cgp.20063",
+      "author": "S Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "41",
+      "journal-title": "Cancer Genom Proteom",
+      "key": "2402_CR29",
+      "unstructured": "Huang S, Cai N, Pacheco PP, Narrandes S, Wang Y, Xu W (2018) Applications of support vector machine (SVM) learning in cancer genomics. Cancer Genom Proteom 15:41–51. https://doi.org/10.21873/cgp.20063",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.08.016",
+      "author": "NM Ioannidis",
+      "doi-asserted-by": "publisher",
+      "first-page": "877",
+      "journal-title": "Am J Hum Genet",
+      "key": "2402_CR30",
+      "unstructured": "Ioannidis NM, Rothstein JH, Pejaver V, Middha S, McDonnell SK, Baheti S, Musolf A, Li Q, Holzinger E, Karyadi D, Cannon-Albright LA, Teerlink CC, Stanford JL, Isaacs WB, Xu J, Cooney KA, Lange EM, Schleutker J, Carpten JD, Powell IJ, Cussenot O, Cancel-Tassin G, Giles GG, MacInnis RJ, Maier C, Hsieh CL, Wiklund F, Catalona WJ, Foulkes WD, Mandal D, Eeles RA, Kote-Jarai Z, Bustamante CD, Schaid DJ, Hastie T, Ostrander EA, Bailey-Wilson JE, Radivojac P, Thibodeau SN, Whittemore AS, Sieh W (2016) REVEL: an ensemble method for predicting the pathogenicity of rare missense variants. Am J Hum Genet 99:877–885. https://doi.org/10.1016/j.ajhg.2016.08.016",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13040-014-0028-y",
+      "author": "H Ishwaran",
+      "doi-asserted-by": "publisher",
+      "first-page": "28",
+      "journal-title": "Biodata Min",
+      "key": "2402_CR31",
+      "unstructured": "Ishwaran H, Malley JD (2014) Synthetic learning machines. Biodata Min 7:28. https://doi.org/10.1186/s13040-014-0028-y",
+      "volume": "7",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/s11634-016-0276-4",
+      "author": "S Janitza",
+      "doi-asserted-by": "publisher",
+      "first-page": "885",
+      "journal-title": "Adv Data Anal Classif",
+      "key": "2402_CR32",
+      "unstructured": "Janitza S, Celik E, Boulesteix A-L (2018) A computationally fast variable importance test for random forests for high-dimensional data. Adv Data Anal Classif 12:885–915",
+      "volume": "12",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1471-2105-10-S1-S65",
+      "author": "R Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "S65",
+      "issue": "Suppl 1",
+      "journal-title": "BMC Bioinform",
+      "key": "2402_CR33",
+      "unstructured": "Jiang R, Tang W, Wu X, Fu W (2009) A random forest approach to the detection of epistatic interactions in case-control studies. BMC Bioinform 10(Suppl 1):S65. https://doi.org/10.1186/1471-2105-10-S1-S65",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1101/gr.200535.115",
+      "author": "DR Kelley",
+      "doi-asserted-by": "publisher",
+      "first-page": "990",
+      "journal-title": "Genome Res",
+      "key": "2402_CR34",
+      "unstructured": "Kelley DR, Snoek J, Rinn JL (2016) Basset: learning the regulatory code of the accessible genome with deep convolutional neural networks. Genome Res 26:990–999. https://doi.org/10.1101/gr.200535.115",
+      "volume": "26",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1101/gr.227819.117",
+      "author": "DR Kelley",
+      "doi-asserted-by": "publisher",
+      "first-page": "739",
+      "journal-title": "Genome Res",
+      "key": "2402_CR35",
+      "unstructured": "Kelley DR, Reshef YA, Bileschi M, Belanger D, McLean CY, Snoek J (2018) Sequential regulatory activity prediction across chromosomes with convolutional neural networks. Genome Res 28:739–750. https://doi.org/10.1101/gr.227819.117",
+      "volume": "28",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.2892",
+      "author": "M Kircher",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "journal-title": "Nat Genet",
+      "key": "2402_CR36",
+      "unstructured": "Kircher M, Witten DM, Jain P, O’Roak BJ, Cooper GM, Shendure J (2014) A general framework for estimating the relative pathogenicity of human genetic variants. Nat Genet 46:310–315. https://doi.org/10.1038/ng.2892",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.18637/jss.v036.i11",
+      "author": "MB Kursa",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "J Stat Softw",
+      "key": "2402_CR37",
+      "unstructured": "Kursa MB, Rudnicki WR (2010) Feature selection with the Boruta package. J Stat Softw 36:1–13",
+      "volume": "36",
+      "year": "2010"
+    },
+    {
+      "author": "TT Le",
+      "first-page": "1358",
+      "journal-title": "AMIA Annu Symp Proc",
+      "key": "2402_CR38",
+      "unstructured": "Le TT, Blackwood NO, Taroni JN, Fu W, Breitenstein MK (2018) Integrated machine learning pipeline for aberrant biomarker enrichment (i-mAB): characterizing clusters of differentiation within a compendium of systemic lupus erythematosus patients. AMIA Annu Symp Proc 2018:1358–1367",
+      "volume": "2018",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty788",
+      "author": "TT Le",
+      "doi-asserted-by": "publisher",
+      "first-page": "1358",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR39",
+      "unstructured": "Le TT, Urbanowicz RJ, Moore JH, McKinney BA (2019) STatistical Inference Relief (STIR) feature selection. Bioinformatics 35:1358–1365. https://doi.org/10.1093/bioinformatics/bty788",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz470",
+      "author": "TT Le",
+      "doi-asserted-by": "publisher",
+      "first-page": "250",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR40",
+      "unstructured": "Le TT, Fu W, Moore JH (2020) Scaling tree-based automated machine learning to biomedical big data with a feature set selector. Bioinformatics 36:250–256. https://doi.org/10.1093/bioinformatics/btz470",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13040-016-0093-5",
+      "author": "J Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "14",
+      "journal-title": "BioData Min",
+      "key": "2402_CR41",
+      "unstructured": "Li J, Malley JD, Andrew AS, Karagas MR, Moore JH (2016) Detecting gene-gene interactions using a permutation-based random forest method. BioData Min 9:14. https://doi.org/10.1186/s13040-016-0093-5",
+      "volume": "9",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1007556",
+      "author": "J Li",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Comput Biol",
+      "key": "2402_CR42",
+      "unstructured": "Li J, Jew B, Zhan L, Hwang S, Coppola G, Freimer NB, Sul JH (2019) ForestQC: Quality control on genetic variants from next-generation sequencing data using random forest. PLoS Comput Biol 15:e1007556. https://doi.org/10.1371/journal.pcbi.1007556",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1198/016214505000001230",
+      "author": "Y Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "578",
+      "journal-title": "J Am Stat Assoc",
+      "key": "2402_CR43",
+      "unstructured": "Lin Y, Jeon Y (2006) Random forests and adaptive nearest neighbors. J Am Stat Assoc 101:578–590",
+      "volume": "101",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btab236",
+      "author": "L Liu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR44",
+      "unstructured": "Liu L, Chen X, Wong KC (2021) Early cancer detection from genome-wide cell-free DNA fragmentation via shuffled frog leaping algorithm and support vector machine. Bioinformatics. https://doi.org/10.1093/bioinformatics/btab236",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/1471-2156-5-32",
+      "author": "KL Lunetta",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "journal-title": "BMC Genet",
+      "key": "2402_CR45",
+      "unstructured": "Lunetta KL, Hayward LB, Segal J, Van Eerdewegh P (2004) Screening large-scale association study data: exploiting interactions using random forests. BMC Genet 5:32. https://doi.org/10.1186/1471-2156-5-32",
+      "volume": "5",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1017/CBO9780511975820",
+      "author": "JD Malley",
+      "doi-asserted-by": "publisher",
+      "key": "2402_CR46",
+      "unstructured": "Malley JD, Malley KG, Pajevic S (2011) Statistical learning for biomedical data. Cambridge University Press",
+      "volume-title": "Statistical learning for biomedical data",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s12859-020-03755-4",
+      "author": "E Manduchi",
+      "doi-asserted-by": "publisher",
+      "first-page": "430",
+      "journal-title": "BMC Bioinform",
+      "key": "2402_CR47",
+      "unstructured": "Manduchi E, Fu W, Romano JD, Ruberto S, Moore JH (2020) Embedding covariate adjustments in tree-based automated machine learning for biomedical big data analyses. BMC Bioinform 21:430. https://doi.org/10.1186/s12859-020-03755-4",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.24272/j.issn.2095-8137.2021.014",
+      "author": "YF Mao",
+      "doi-asserted-by": "publisher",
+      "first-page": "246",
+      "journal-title": "Zool Res",
+      "key": "2402_CR48",
+      "unstructured": "Mao YF, Yuan XG, Cun YP (2021) A novel machine learning approach (svmSomatic) to distinguish somatic and germline mutations using next-generation sequencing data. Zool Res 42:246–249. https://doi.org/10.24272/j.issn.2095-8137.2021.014",
+      "volume": "42",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0081527",
+      "author": "BA McKinney",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2402_CR49",
+      "unstructured": "McKinney BA, White BC, Grill DE, Li PW, Kennedy RB, Poland GA, Oberg AL (2013) ReliefSeq: a gene-wise adaptive-K nearest-neighbor feature selection tool for finding gene-gene interactions and main effects in mRNA-Seq gene expression data. PLoS ONE 8:e81527. https://doi.org/10.1371/journal.pone.0081527",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.08.006",
+      "author": "JH Moore",
+      "doi-asserted-by": "publisher",
+      "first-page": "309",
+      "journal-title": "Am J Hum Genet",
+      "key": "2402_CR50",
+      "unstructured": "Moore JH, Williams SM (2009) Epistasis and its implications for personal genetics. Am J Hum Genet 85:309–320. https://doi.org/10.1016/j.ajhg.2009.08.006",
+      "volume": "85",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.jtbi.2005.11.036",
+      "author": "JH Moore",
+      "doi-asserted-by": "publisher",
+      "first-page": "252",
+      "journal-title": "J Theor Biol",
+      "key": "2402_CR51",
+      "unstructured": "Moore JH, Gilbert JC, Tsai CT, Chiang FT, Holden T, Barney N, White BC (2006) A flexible computational framework for detecting, characterizing, and interpreting statistical patterns of epistasis in genetic studies of human disease susceptibility. J Theor Biol 241:252–261. https://doi.org/10.1016/j.jtbi.2005.11.036",
+      "volume": "241",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp713",
+      "author": "JH Moore",
+      "doi-asserted-by": "publisher",
+      "first-page": "445",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR52",
+      "unstructured": "Moore JH, Asselbergs FW, Williams SM (2010) Bioinformatics challenges for genome-wide association studies. Bioinformatics 26:445–455. https://doi.org/10.1093/bioinformatics/btp713",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41467-020-19588-x",
+      "author": "J Nait Saada",
+      "doi-asserted-by": "publisher",
+      "first-page": "6130",
+      "journal-title": "Nat Commun",
+      "key": "2402_CR53",
+      "unstructured": "Nait Saada J, Kalantzis G, Shyr D, Cooper F, Robinson M, Gusev A, Palamara PF (2020) Identity-by-descent detection across 487,409 British samples reveals fine scale population structure and ultra-rare variant associations. Nat Commun 11:6130. https://doi.org/10.1038/s41467-020-19588-x",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty373",
+      "author": "S Nembrini",
+      "doi-asserted-by": "publisher",
+      "first-page": "3711",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR54",
+      "unstructured": "Nembrini S, König IR, Wright MN (2018) The revival of the Gini importance? Bioinformatics 34:3711–3718. https://doi.org/10.1093/bioinformatics/bty373",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0048375",
+      "author": "M Neuditschko",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2402_CR55",
+      "unstructured": "Neuditschko M, Khatkar MS, Raadsma HW (2012) NetView: a high-definition network-visualization approach to detect fine-scale population structures from genome-wide patterns of variation. PLoS ONE 7:e48375. https://doi.org/10.1371/journal.pone.0048375",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/nar/gkg509",
+      "author": "PC Ng",
+      "doi-asserted-by": "publisher",
+      "first-page": "3812",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2402_CR56",
+      "unstructured": "Ng PC, Henikoff S (2003) SIFT: Predicting amino acid changes that affect protein function. Nucleic Acids Res 31:3812–3814",
+      "volume": "31",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/bib/bbr016",
+      "author": "KK Nicodemus",
+      "doi-asserted-by": "publisher",
+      "first-page": "369",
+      "journal-title": "Brief Bioinform",
+      "key": "2402_CR57",
+      "unstructured": "Nicodemus KK (2011) Letter to the editor: on the stability and ranking of predictors from random forest variable importance measures. Brief Bioinform 12:369–373. https://doi.org/10.1093/bib/bbr016",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/S0304-3800(02)00064-9",
+      "author": "JD Olden",
+      "doi-asserted-by": "publisher",
+      "first-page": "135",
+      "journal-title": "Ecol Model",
+      "key": "2402_CR58",
+      "unstructured": "Olden JD, Jackson DA (2002) Illuminating the “black box”: a randomization approach for understanding variable contributions in artificial neural networks. Ecol Model 154:135–150",
+      "volume": "154",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1186/s13040-021-00243-0",
+      "author": "A Orlenko",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "journal-title": "BioData Min",
+      "key": "2402_CR59",
+      "unstructured": "Orlenko A, Moore JH (2021) A comparison of methods for interpreting random forest models of genetic association in the presence of non-additive interactions. BioData Min 14:9. https://doi.org/10.1186/s13040-021-00243-0",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz796",
+      "author": "A Orlenko",
+      "doi-asserted-by": "publisher",
+      "first-page": "1772",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR60",
+      "unstructured": "Orlenko A, Kofink D, Lyytikäinen LP, Nikus K, Mishra P, Kuukasjärvi P, Karhunen PJ, Kähönen M, Laurikka JO, Lehtimäki T, Asselbergs FW, Moore JH (2020) Model selection for metabolomics: predicting diagnosis of coronary artery disease using automated machine learning. Bioinformatics 36:1772–1778. https://doi.org/10.1093/bioinformatics/btz796",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nbt.4235",
+      "author": "R Poplin",
+      "doi-asserted-by": "publisher",
+      "first-page": "983",
+      "journal-title": "Nat Biotechnol",
+      "key": "2402_CR61",
+      "unstructured": "Poplin R, Chang PC, Alexander D, Schwartz S, Colthurst T, Ku A, Newburger D, Dijamco J, Nguyen N, Afshar PT, Gross SS, Dorfman L, McLean CY, DePristo MA (2018) A universal SNP and small-indel variant caller using deep neural networks. Nat Biotechnol 36:983. https://doi.org/10.1038/nbt.4235",
+      "volume": "36",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gky1016",
+      "author": "P Rentzsch",
+      "doi-asserted-by": "publisher",
+      "first-page": "D886",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2402_CR62",
+      "unstructured": "Rentzsch P, Witten D, Cooper GM, Shendure J, Kircher M (2019) CADD: predicting the deleteriousness of variants throughout the human genome. Nucleic Acids Res 47:D886–D894. https://doi.org/10.1093/nar/gky1016",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "author": "B Schölkopf",
+      "key": "2402_CR63",
+      "unstructured": "Schölkopf B, Tsuda K, Vert J-P (2003) Kernel methods in computational biology. MIT Press",
+      "volume-title": "Kernel methods in computational biology",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq257",
+      "author": "DF Schwarz",
+      "doi-asserted-by": "publisher",
+      "first-page": "1752",
+      "journal-title": "Bioinformatics",
+      "key": "2402_CR64",
+      "unstructured": "Schwarz DF, Konig IR, Ziegler A (2010) On safari to random jungle: a fast implementation of random forests for high-dimensional data. Bioinformatics 26:1752–1758. https://doi.org/10.1093/bioinformatics/btq257",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1007/s12020-020-02523-x",
+      "author": "Y Shen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Endocrine",
+      "key": "2402_CR65",
+      "unstructured": "Shen Y, Lai Y, Xu D, Xu L, Song L, Zhou J, Song C, Wang J (2020) Diagnosis of thyroid neoplasm using support vector machine algorithms based on platelet RNA-seq. Endocrine. https://doi.org/10.1007/s12020-020-02523-x",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1198/106186006X94072",
+      "author": "T Shi",
+      "doi-asserted-by": "publisher",
+      "first-page": "118",
+      "journal-title": "J Comput Graph Stat",
+      "key": "2402_CR66",
+      "unstructured": "Shi T, Horvath S (2006) Unsupervised learning with random forest predictors. J Comput Graph Stat 15:118–138",
+      "volume": "15",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1002/humu.22225",
+      "author": "HA Shihab",
+      "doi-asserted-by": "publisher",
+      "first-page": "57",
+      "journal-title": "Hum Mutat",
+      "key": "2402_CR67",
+      "unstructured": "Shihab HA, Gough J, Cooper DN, Stenson PD, Barker GL, Edwards KJ, Day IN, Gaunt TR (2013) Predicting the functional, molecular, and phenotypic consequences of amino acid substitutions using hidden Markov models. Hum Mutat 34:57–65. https://doi.org/10.1002/humu.22225",
+      "volume": "34",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-307",
+      "author": "C Strobl",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Bioinform",
+      "key": "2402_CR68",
+      "unstructured": "Strobl C, Boulesteix A-L, Kneib T, Augustin T, Zeileis A (2008) Conditional variable importance for random forests. BMC Bioinform 9:1–11",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0167-z",
+      "author": "L Sundaram",
+      "doi-asserted-by": "publisher",
+      "first-page": "1161",
+      "journal-title": "Nat Genet",
+      "key": "2402_CR69",
+      "unstructured": "Sundaram L, Gao H, Padigepati SR, McRae JF, Li Y, Kosmicki JA, Fritzilas N, Hakenberg J, Dutta A, Shon J, Xu J, Batzoglou S, Li X, Farh KK (2018) Predicting the clinical impact of human mutation with deep neural networks. Nat Genet 50:1161–1170. https://doi.org/10.1038/s41588-018-0167-z",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/gepi.20473",
+      "author": "S Szymczak",
+      "doi-asserted-by": "publisher",
+      "first-page": "S51",
+      "issue": "Suppl 1",
+      "journal-title": "Genet Epidemiol",
+      "key": "2402_CR70",
+      "unstructured": "Szymczak S, Biernacka JM, Cordell HJ, González-Recio O, König IR, Zhang H, Sun YV (2009) Machine learning in genome-wide association studies. Genet Epidemiol 33(Suppl 1):S51–S57. https://doi.org/10.1002/gepi.20473",
+      "volume": "33",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/s13040-016-0087-3",
+      "author": "S Szymczak",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "journal-title": "BioData Min",
+      "key": "2402_CR71",
+      "unstructured": "Szymczak S, Holzinger E, Dasgupta A, Malley JD, Molloy AM, Mills JL, Brody LC, Stambolian D, Bailey-Wilson JE (2016) r2VIM: a new variable selection method for random forests in genome-wide association studies. BioData Min 9:7. https://doi.org/10.1186/s13040-016-0087-3",
+      "volume": "9",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/jamia/ocw071",
+      "author": "PL Teixeira",
+      "doi-asserted-by": "publisher",
+      "first-page": "162",
+      "journal-title": "J Am Med Inform Assoc",
+      "key": "2402_CR72",
+      "unstructured": "Teixeira PL, Wei WQ, Cronin RM, Mo H, VanHouten JP, Carroll RJ, LaRose E, Bastarache LA, Rosenbloom ST, Edwards TL, Roden DM, Lasko TA, Dart RA, Nikolai AM, Peissig PL, Denny JC (2017) Evaluating electronic health record data sources and algorithmic approaches to identify hypertensive individuals. J Am Med Inform Assoc 24:162–171. https://doi.org/10.1093/jamia/ocw071",
+      "volume": "24",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.artmed.2011.06.008",
+      "author": "DL Tong",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "journal-title": "Artif Intell Med",
+      "key": "2402_CR73",
+      "unstructured": "Tong DL, Schierz AC (2011) Hybrid genetic algorithm-neural network: feature extraction for unpreprocessed microarray data. Artif Intell Med 53:47–56. https://doi.org/10.1016/j.artmed.2011.06.008",
+      "volume": "53",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0102483",
+      "author": "DL Tong",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2402_CR74",
+      "unstructured": "Tong DL, Boocock DJ, Dhondalay GK, Lemetre C, Ball GR (2014) Artificial neural network inference (ANNI): a study on gene-gene interaction for biomarkers in childhood sarcomas. PLoS ONE 9:e102483. https://doi.org/10.1371/journal.pone.0102483",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/1756-0381-3-5",
+      "author": "SD Turner",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "BioData Min",
+      "key": "2402_CR75",
+      "unstructured": "Turner SD, Dudek SM, Ritchie MD (2010) ATHENA: a knowledge-based hybrid backpropagation-grammatical evolution neural network algorithm for discovering epistasis among quantitative trait Loci. BioData Min 3:5. https://doi.org/10.1186/1756-0381-3-5",
+      "volume": "3",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/ncomms10259",
+      "author": "S Tyanova",
+      "doi-asserted-by": "publisher",
+      "first-page": "10259",
+      "journal-title": "Nat Commun",
+      "key": "2402_CR76",
+      "unstructured": "Tyanova S, Albrechtsen R, Kronqvist P, Cox J, Mann M, Geiger T (2016) Proteomic maps of breast cancer subtypes. Nat Commun 7:10259. https://doi.org/10.1038/ncomms10259",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41598-018-35682-z",
+      "author": "C Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "17546",
+      "journal-title": "Sci Rep",
+      "key": "2402_CR77",
+      "unstructured": "Wang C, Liang C (2018) MSIpred: a python package for tumor microsatellite instability classification from tumor mutation annotation data using a support vector machine. Sci Rep 8:17546. https://doi.org/10.1038/s41598-018-35682-z",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1042/bsr20193860",
+      "doi-asserted-by": "publisher",
+      "key": "2402_CR78",
+      "unstructured": "Wang Q, Yu C (2020) Expression profiling of small intestinal neuroendocrine tumors identified pathways and gene networks linked to tumorigenesis and metastasis. Biosci Rep. https://doi.org/10.1042/bsr20193860"
+    },
+    {
+      "DOI": "10.1093/nar/gky215",
+      "author": "M Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e69",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2402_CR79",
+      "unstructured": "Wang M, Tai C, Weinan E, Wei L (2018) DeFine: deep convolutional neural networks accurately quantify intensities of transcription factor-DNA binding and facilitate evaluation of functional non-coding variants. Nucleic Acids Res 46:e69. https://doi.org/10.1093/nar/gky215",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1471-2105-15-193",
+      "author": "T Wilhelm",
+      "doi-asserted-by": "publisher",
+      "first-page": "193",
+      "journal-title": "BMC Bioinform",
+      "key": "2402_CR80",
+      "unstructured": "Wilhelm T (2014) Phenotype prediction based on genome-wide DNA methylation data. BMC Bioinform 15:193. https://doi.org/10.1186/1471-2105-15-193",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/sam.11196",
+      "author": "SJ Winham",
+      "doi-asserted-by": "publisher",
+      "first-page": "496",
+      "journal-title": "Stat Anal Data Min",
+      "key": "2402_CR81",
+      "unstructured": "Winham SJ, Freimuth RR, Biernacka JM (2013) A weighted random forests approach to improve predictive performance. Stat Anal Data Min 6:496–505. https://doi.org/10.1002/sam.11196",
+      "volume": "6",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.18637/jss.v077.i01",
+      "author": "MN Wright",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "J Stat Softw",
+      "key": "2402_CR82",
+      "unstructured": "Wright MN, Ziegler A (2017) ranger: a fast implementation of random forests for high dimensional data in C plus plus and R. J Stat Softw 77:1–17. https://doi.org/10.18637/jss.v077.i01",
+      "volume": "77",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.gene.2016.12.016",
+      "author": "G Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "33",
+      "journal-title": "Gene",
+      "key": "2402_CR83",
+      "unstructured": "Xu G, Zhang M, Zhu H, Xu J (2017) A 15-gene signature for prediction of colon cancer recurrence and prognosis based on SVM. Gene 604:33–40. https://doi.org/10.1016/j.gene.2016.12.016",
+      "volume": "604",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ejhg.2013.109",
+      "author": "W Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "254",
+      "journal-title": "Eur J Hum Genet",
+      "key": "2402_CR84",
+      "unstructured": "Yang W, Charles GuC (2014) Random forest fishing: a novel approach to identifying organic group of risk factors in genome-wide association studies. Eur J Hum Genet 22:254–259. https://doi.org/10.1038/ejhg.2013.109",
+      "volume": "22",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nmeth.3547",
+      "author": "J Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "931",
+      "journal-title": "Nat Methods",
+      "key": "2402_CR85",
+      "unstructured": "Zhou J, Troyanskaya OG (2015) Predicting effects of noncoding variants with deep learning-based sequence model. Nat Methods 12:931–934. https://doi.org/10.1038/nmeth.3547",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0160-6",
+      "author": "J Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1171",
+      "journal-title": "Nat Genet",
+      "key": "2402_CR86",
+      "unstructured": "Zhou J, Theesfeld CL, Yao K, Chen KM, Wong AK, Troyanskaya OG (2018) Deep learning sequence-based ab initio prediction of variant effects on expression and disease risk. Nat Genet 50:1171–1179. https://doi.org/10.1038/s41588-018-0160-6",
+      "volume": "50",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 86,
+  "references-count": 86,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-021-02402-z"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "What makes a good prediction? Feature importance and beginning to open the black box of machine learning in genetics"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "141"
+}

@@ -1,0 +1,999 @@
+{
+  "DOI": "10.1186/s40246-021-00367-8",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00367-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eHeart failure (HF) is one of the most common complications of cardiovascular diseases (CVDs) and among the leading causes of death in the US. Many other CVDs can lead to increased mortality as well. Investigating the genetic epidemiology and susceptibility to CVDs is a central focus of cardiology and biomedical life sciences. Several studies have explored expression of key CVD genes specially in HF, yet new targets and biomarkers for early diagnosis are still missing to support personalized treatment. Lack of gender-specific cardiac biomarker thresholds in men and women may be the reason for CVD underdiagnosis in women, and potentially increased morbidity and mortality as a result, or conversely, an overdiagnosis in men. In this context, it is important to analyze the expression and enrichment of genes with associated phenotypes and disease-causing variants among high-risk CVD populations.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe performed RNA sequencing focusing on key CVD genes with a great number of genetic associations to HF. Peripheral blood samples were collected from a broad age range of adult male and female CVD patients. These patients were clinically diagnosed with CVDs and CMS/HCC HF, as well as including cardiomyopathy, hypertension, obesity, diabetes, asthma, high cholesterol, hernia, chronic kidney, joint pain, dizziness and giddiness, osteopenia of multiple sites, chest pain, osteoarthritis, and other diseases.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe report RNA-seq driven case–control study to analyze patterns of expression in genes and differentiating the pathways, which differ between healthy and diseased patients. Our in-depth gene expression and enrichment analysis of RNA-seq data from patients with mostly HF and other CVDs on differentially expressed genes and CVD annotated genes revealed 4,885 differentially expressed genes (DEGs) and regulation of 41 genes known for HF and 23 genes related to other CVDs, with 15 DEGs as significantly expressed including four genes already known (FLNA, CST3, LGALS3, and HBA1) for HF and CVDs with the enrichment of many pathways. Furthermore, gender and ethnic group specific analysis showed shared and unique genes between the genders, and among different races. Broadening the scope of the results in clinical settings, we have linked the CVD genes with ICD codes.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eMany pathways were found to be enriched, and gender-specific analysis showed shared and unique genes between the genders. Additional testing of these genes may lead to the development of new clinical tools to improve diagnosis and prognosis of CVD patients.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "367"
+  ],
+  "article-number": "67",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "16 July 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "31 October 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "13 November 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethical approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Informed consent was obtained from all subjects. All human samples were used in accordance with relevant guidelines and regulations, and all experimental protocols were approved by Institutional Review Board, UConn Health."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no competing financial or non-financial interests."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-7065-1699",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ahmed",
+      "given": "Zeeshan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Zeeshan",
+      "given": "Saman",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liang",
+      "given": "Bruce T.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        13
+      ]
+    ],
+    "date-time": "2021-11-13T12:02:59Z",
+    "timestamp": 1636804979000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        14
+      ]
+    ],
+    "date-time": "2021-11-14T00:11:57Z",
+    "timestamp": 1636848717000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        23
+      ]
+    ],
+    "date-time": "2024-04-23T07:35:21Z",
+    "timestamp": 1713857721227
+  },
+  "is-referenced-by-count": 9,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        13
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            13
+          ]
+        ],
+        "date-time": "2021-11-13T00:00:00Z",
+        "timestamp": 1636761600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            13
+          ]
+        ],
+        "date-time": "2021-11-13T00:00:00Z",
+        "timestamp": 1636761600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00367-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00367-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00367-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        13
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        13
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.2147/IPRP.S133088",
+      "author": "K Mc Namara",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Integr Pharm Res Pract",
+      "key": "367_CR1",
+      "unstructured": "Mc Namara K, Alzubaidi H, Jackson JK. Cardiovascular disease as a leading cause of death: how are pharmacists getting involved? Integr Pharm Res Pract. 2019;8:1–11. https://doi.org/10.2147/IPRP.S133088.",
+      "volume": "8",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(12)61728-0",
+      "author": "R Lozano",
+      "doi-asserted-by": "publisher",
+      "first-page": "2095",
+      "issue": "9859",
+      "journal-title": "Lancet (London, England)",
+      "key": "367_CR2",
+      "unstructured": "Lozano R, Naghavi M, Foreman K, Lim S, Shibuya K, Aboyans V, Abraham J, Adair T, Aggarwal R, Ahn SY, Alvarado M, Anderson HR, Anderson LM, Andrews KG, Atkinson C, Baddour LM, Barker-Collo S, Bartels DH, Bell ML, Benjamin EJ, et al. Global and regional mortality from 235 causes of death for 20 age groups in 1990 and 2010: a systematic analysis for the Global Burden of Disease Study 2010. Lancet (London, England). 2012;380(9859):2095–128. https://doi.org/10.1016/S0140-6736(12)61728-0.",
+      "volume": "380",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1177/2048004016687211",
+      "author": "J Stewart",
+      "doi-asserted-by": "publisher",
+      "first-page": "204800401668721",
+      "journal-title": "JRSM Cardiovasc Dis",
+      "key": "367_CR3",
+      "unstructured": "Stewart J, Manmathan G, Wilkinson P. Primary prevention of cardiovascular disease: a review of contemporary guidance and literature. JRSM Cardiovasc Dis. 2017;6:2048004016687211. https://doi.org/10.1177/2048004016687211.",
+      "volume": "6",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2017.04.052",
+      "author": "GA Roth",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "J Am Coll Cardiol",
+      "key": "367_CR4",
+      "unstructured": "Roth GA, Johnson C, Abajobir A, Abd-Allah F, Abera SF, Abyu G, Ahmed M, Aksut B, Alam T, Alam K, Alla F, Alvis-Guzman N, Amrock S, Ansari H, Ärnlöv J, Asayesh H, Atey TM, Avila-Burgos L, Awasthi A, Banerjee A, et al. Global, regional, and national burden of cardiovascular diseases for 10 causes, 1990 to 2015. J Am Coll Cardiol. 2017;70(1):1–25. https://doi.org/10.1016/j.jacc.2017.04.052.",
+      "volume": "70",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1201/b10787-17",
+      "doi-asserted-by": "crossref",
+      "key": "367_CR5",
+      "unstructured": "Walden R, Tomlinson B, et al. Cardiovascular disease. In: Benzie I, et al., editors. Herbal medicine: biomolecular and clinical aspects, vol. 2. Boca Raton: CRC Press; 2011."
+    },
+    {
+      "DOI": "10.1161/CIR.0000000000000757",
+      "author": "SS Virani",
+      "doi-asserted-by": "publisher",
+      "first-page": "e139",
+      "issue": "9",
+      "journal-title": "Circulation",
+      "key": "367_CR6",
+      "unstructured": "Virani SS, Alonso A, Benjamin EJ, Bittencourt MS, Callaway CW, Carson AP, Chamberlain AM, Chang AR, Cheng S, Delling FN, Djousse L, Elkind M, Ferguson JF, Fornage M, Khan SS, Kissela BM, Knutson KL, Kwan TW, Lackland DT, Lewis TT, American Heart Association Council on Epidemiology and Prevention Statistics Committee and Stroke Statistics Subcommittee, et al. Heart disease and stroke statistics-2020 update: a report from the American Heart Association. Circulation. 2020;141(9):e139–596. https://doi.org/10.1161/CIR.0000000000000757.",
+      "volume": "141",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12889-018-5653-9",
+      "author": "Y Ruan",
+      "doi-asserted-by": "publisher",
+      "first-page": "778",
+      "issue": "1",
+      "journal-title": "BMC Public Health",
+      "key": "367_CR7",
+      "unstructured": "Ruan Y, Guo Y, Zheng Y, Huang Z, Sun S, Kowal P, Shi Y, Wu F. Cardiovascular disease (CVD) and associated risk factors among older adults in six low-and middle-income countries: results from SAGE Wave 1. BMC Public Health. 2018;18(1):778. https://doi.org/10.1186/s12889-018-5653-9.",
+      "volume": "18",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/j.1445-5994.2006.01241.x",
+      "author": "J Ingles",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "issue": "1",
+      "journal-title": "Intern Med J",
+      "key": "367_CR8",
+      "unstructured": "Ingles J, Semsarian C. Sudden cardiac death in the young: a clinical genetic approach. Intern Med J. 2007;37(1):32–7. https://doi.org/10.1111/j.1445-5994.2006.01241.x.",
+      "volume": "37",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.4330/wjc.v2.i12.428",
+      "author": "G Novelli",
+      "doi-asserted-by": "publisher",
+      "first-page": "428",
+      "issue": "12",
+      "journal-title": "World J Cardiol",
+      "key": "367_CR9",
+      "unstructured": "Novelli G, Predazzi IM, Mango R, Romeo F, Mehta JL. Role of genomics in cardiovascular medicine. World J Cardiol. 2010;2(12):428–36. https://doi.org/10.4330/wjc.v2.i12.428.",
+      "volume": "2",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.cell.2012.03.001",
+      "author": "S Kathiresan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1242",
+      "issue": "6",
+      "journal-title": "Cell",
+      "key": "367_CR10",
+      "unstructured": "Kathiresan S, Srivastava D. Genetics of human cardiovascular disease. Cell. 2012;148(6):1242–57. https://doi.org/10.1016/j.cell.2012.03.001.",
+      "volume": "148",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s40246-020-00287-z",
+      "author": "Z Ahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "35",
+      "issue": "1",
+      "journal-title": "Hum Genomics",
+      "key": "367_CR11",
+      "unstructured": "Ahmed Z. Practicing precision medicine with intelligently integrative clinical and multi-omics data analysis. Hum Genomics. 2020;14(1):35. https://doi.org/10.1186/s40246-020-00287-z.",
+      "volume": "14",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/jnu.12002",
+      "author": "SF Wung",
+      "doi-asserted-by": "publisher",
+      "first-page": "60",
+      "issue": "1",
+      "journal-title": "J Nursing Scholarsh",
+      "key": "367_CR12",
+      "unstructured": "Wung SF, Hickey KT, Taylor JY, Gallek MJ. Cardiovascular genomics. J Nursing Scholarsh. 2013;45(1):60–8. https://doi.org/10.1111/jnu.12002.",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2006.02.070",
+      "author": "D Seo",
+      "doi-asserted-by": "publisher",
+      "first-page": "227",
+      "issue": "2",
+      "journal-title": "J Am Coll Cardiol",
+      "key": "367_CR13",
+      "unstructured": "Seo D, Ginsburg GS, Goldschmidt-Clermont PJ. Gene expression analysis of cardiovascular diseases: novel insights into biology and clinical applications. J Am Coll Cardiol. 2006;48(2):227–35. https://doi.org/10.1016/j.jacc.2006.02.070.",
+      "volume": "48",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.2174/1573403x09666131117170446",
+      "author": "C Skrzynia",
+      "doi-asserted-by": "publisher",
+      "first-page": "10",
+      "issue": "1",
+      "journal-title": "Curr Cardiol Rev",
+      "key": "367_CR14",
+      "unstructured": "Skrzynia C, Berg JS, Willis MS, Jensen BC. Genetics and heart failure: a concise guide for the clinician. Curr Cardiol Rev. 2015;11(1):10–7. https://doi.org/10.2174/1573403x09666131117170446.",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0149475",
+      "author": "N Kazmi",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0149475",
+      "issue": "3",
+      "journal-title": "PLoS ONE",
+      "key": "367_CR15",
+      "unstructured": "Kazmi N, Gaunt TR. Diagnosis of coronary heart diseases using gene expression profiling; stable coronary artery disease, cardiac ischemia with and without myocardial necrosis. PLoS ONE. 2016;11(3):e0149475. https://doi.org/10.1371/journal.pone.0149475.",
+      "volume": "11",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/1755-8794-4-26",
+      "author": "MR Elashoff",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "journal-title": "BMC Med Genomics",
+      "key": "367_CR16",
+      "unstructured": "Elashoff MR, Wingrove JA, Beineke P, Daniels SE, Tingley WG, Rosenberg S, Voros S, Kraus WE, Ginsburg GS, Schwartz RS, Ellis SG, Tahirkheli N, Waksman R, McPherson J, Lansky AJ, Topol EJ. Development of a blood-based gene expression algorithm for assessment of obstructive coronary artery disease in non-diabetic patients. BMC Med Genomics. 2011;4:26. https://doi.org/10.1186/1755-8794-4-26.",
+      "volume": "4",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1161/01.CIR.0000148178.19465.11",
+      "author": "MM Kittleson",
+      "doi-asserted-by": "publisher",
+      "first-page": "3444",
+      "issue": "22",
+      "journal-title": "Circulation",
+      "key": "367_CR17",
+      "unstructured": "Kittleson MM, Ye SQ, Irizarry RA, Minhas KM, Edness G, Conte JV, Parmigiani G, Miller LW, Chen Y, Hall JL, Garcia JG, Hare JM. Identification of a gene expression profile that differentiates between ischemic and nonischemic cardiomyopathy. Circulation. 2004;110(22):3444–51. https://doi.org/10.1161/01.CIR.0000148178.19465.11.",
+      "volume": "110",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.bbrc.2010.01.076",
+      "author": "KD Min",
+      "doi-asserted-by": "publisher",
+      "first-page": "55",
+      "issue": "1",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "367_CR18",
+      "unstructured": "Min KD, Asakura M, Liao Y, Nakamaru K, Okazaki H, Takahashi T, Fujimoto K, Ito S, Takahashi A, Asanuma H, Yamazaki S, Minamino T, Sanada S, Seguchi O, Nakano A, Ando Y, Otsuka T, Furukawa H, Isomura T, Takashima S, et al. Identification of genes related to heart failure using global gene expression profiling of human failing myocardium. Biochem Biophys Res Commun. 2010;393(1):55–60. https://doi.org/10.1016/j.bbrc.2010.01.076.",
+      "volume": "393",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.yjmcc.2014.04.017",
+      "author": "R Suresh",
+      "doi-asserted-by": "publisher",
+      "first-page": "13",
+      "journal-title": "J Mol Cell Cardiol",
+      "key": "367_CR19",
+      "unstructured": "Suresh R, Li X, Chiriac A, Goel K, Terzic A, Perez-Terzic C, Nelson TJ. Transcriptome from circulating cells suggests dysregulated pathways associated with long-term recurrent events following first-time myocardial infarction. J Mol Cell Cardiol. 2014;74:13–21. https://doi.org/10.1016/j.yjmcc.2014.04.017.",
+      "volume": "74",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/ehf2.12267",
+      "author": "FS Czepluch",
+      "doi-asserted-by": "publisher",
+      "first-page": "211",
+      "issue": "3",
+      "journal-title": "ESC heart failure",
+      "key": "367_CR20",
+      "unstructured": "Czepluch FS, Wollnik B, Hasenfuß G. Genetic determinants of heart failure: facts and numbers. ESC heart failure. 2018;5(3):211–7. https://doi.org/10.1002/ehf2.12267.",
+      "volume": "5",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1056/NEJMoa052948",
+      "author": "DS Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "138",
+      "issue": "2",
+      "journal-title": "N Engl J Med",
+      "key": "367_CR21",
+      "unstructured": "Lee DS, Pencina MJ, Benjamin EJ, Wang TJ, Levy D, O’Donnell CJ, Nam BH, Larson MG, D’Agostino RB, Vasan RS. Association of parental heart failure with risk of heart failure in offspring. N Engl J Med. 2006;355(2):138–47. https://doi.org/10.1056/NEJMoa052948.",
+      "volume": "355",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.ijcard.2016.08.067",
+      "author": "MP Lindgren",
+      "doi-asserted-by": "publisher",
+      "first-page": "379",
+      "journal-title": "Int J Cardiol",
+      "key": "367_CR22",
+      "unstructured": "Lindgren MP, Smith JG, Li X, Sundquist J, Sundquist K, Zöller B. Sibling risk of hospitalization for heart failure—a nationwide study. Int J Cardiol. 2016;223:379–84. https://doi.org/10.1016/j.ijcard.2016.08.067.",
+      "volume": "223",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1001/jama.296.15.1867",
+      "author": "JA Towbin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1867",
+      "issue": "15",
+      "journal-title": "JAMA",
+      "key": "367_CR23",
+      "unstructured": "Towbin JA, Lowe AM, Colan SD, Sleeper LA, Orav EJ, Clunie S, Messere J, Cox GF, Lurie PR, Hsu D, Canter C, Wilkinson JD, Lipshultz SE. Incidence, causes, and outcomes of dilated cardiomyopathy in children. JAMA. 2006;296(15):1867–76. https://doi.org/10.1001/jama.296.15.1867.",
+      "volume": "296",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/s0300-8932(02)76691-8",
+      "author": "L Monserrat",
+      "doi-asserted-by": "publisher",
+      "first-page": "725",
+      "issue": "7",
+      "journal-title": "Rev Esp Cardiol",
+      "key": "367_CR24",
+      "unstructured": "Monserrat L, Hermida M, Bouzas B, Mosquera I, Mahon N, Peteiro J, Alvarez N, Penas-Lado M, Crespo M, Castro-Beiras A. Miocardiopatía dilatada familiar en pacientes trasplantados por miocardiopatía dilatada idiopática [Familial dilated cardiomyopathy in patients transplanted for idiopathic dilated cardiomyopathy]. Rev Esp Cardiol. 2002;55(7):725–32. https://doi.org/10.1016/s0300-8932(02)76691-8.",
+      "volume": "55",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.cell.2012.10.012",
+      "author": "J Lovén",
+      "doi-asserted-by": "publisher",
+      "first-page": "476",
+      "issue": "3",
+      "journal-title": "Cell",
+      "key": "367_CR25",
+      "unstructured": "Lovén J, Orlando DA, Sigova AA, Lin CY, Rahl PB, Burge CB, Levens DL, Lee TI, Young RA. Revisiting global gene expression analysis. Cell. 2012;151(3):476–82. https://doi.org/10.1016/j.cell.2012.10.012.",
+      "volume": "151",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-323",
+      "author": "B Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "323",
+      "journal-title": "BMC Bioinformatics",
+      "key": "367_CR26",
+      "unstructured": "Li B, Dewey CN. RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome. BMC Bioinformatics. 2011;12:323. https://doi.org/10.1186/1471-2105-12-323.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bib/bbz038",
+      "author": "S Zeeshan",
+      "doi-asserted-by": "publisher",
+      "first-page": "885",
+      "issue": "3",
+      "journal-title": "Brief Bioinform",
+      "key": "367_CR27",
+      "unstructured": "Zeeshan S, Xiong R, Liang BT, Ahmed Z. 100 Years of evolving gene-disease complexities and scientific debutants. Brief Bioinform. 2020;21(3):885–905. https://doi.org/10.1093/bib/bbz038.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/database/baaa010",
+      "author": "Z Ahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "baa010",
+      "journal-title": "Database",
+      "key": "367_CR28",
+      "unstructured": "Ahmed Z, Mohamed K, Zeeshan S, Dong X. Artificial intelligence with multi-functional machine learning platform development for better healthcare and precision medicine. Database. 2020;2020:baa010. https://doi.org/10.1093/database/baaa010.",
+      "volume": "2020",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/jamiaopen/ooy052",
+      "author": "Z Ahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "23",
+      "issue": "1",
+      "journal-title": "JAMIA open",
+      "key": "367_CR29",
+      "unstructured": "Ahmed Z, Kim M, Liang BT. MAV-clic: management, analysis, and visualization of clinical data. JAMIA open. 2018;2(1):23–8. https://doi.org/10.1093/jamiaopen/ooy052.",
+      "volume": "2",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fgene.2014.00111",
+      "author": "UH Trivedi",
+      "doi-asserted-by": "publisher",
+      "first-page": "111",
+      "journal-title": "Front Genet",
+      "key": "367_CR30",
+      "unstructured": "Trivedi UH, Cézard T, Bridgett S, Montazam A, Nichols J, Blaxter M, Gharbi K. Quality control of next-generation sequencing data without a reference. Front Genet. 2014;5:111. https://doi.org/10.3389/fgene.2014.00111.",
+      "volume": "5",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu170",
+      "author": "AM Bolger",
+      "doi-asserted-by": "publisher",
+      "first-page": "2114",
+      "issue": "15",
+      "journal-title": "Bioinformatics (Oxford, England)",
+      "key": "367_CR31",
+      "unstructured": "Bolger AM, Lohse M, Usadel B. Trimmomatic: a flexible trimmer for Illumina sequence data. Bioinformatics (Oxford, England). 2014;30(15):2114–20. https://doi.org/10.1093/bioinformatics/btu170.",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2078",
+      "issue": "16",
+      "journal-title": "Bioinformatics (Oxford, England)",
+      "key": "367_CR32",
+      "unstructured": "Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, Marth G, Abecasis G, Durbin R, 1000 Genome Project Data Processing Subgroup. The Sequence Alignment/Map format and SAMtools. Bioinformatics (Oxford, England). 2009;25(16):2078–9. https://doi.org/10.1093/bioinformatics/btp352.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/s12859-016-1097-3",
+      "doi-asserted-by": "publisher",
+      "key": "367_CR33",
+      "unstructured": "Ebbert MT, Wadsworth ME, Staley LA, Hoyt KL, Pickett B, Miller J, Duce J, Alzheimer’s Disease Neuroimaging Initiative, Kauwe JS, Ridge PG. Evaluating the necessity of PCR duplicate removal from next-generation sequencing data and a comparison of approaches. BMC Bioinformatics 2016; 17 Suppl 7(Suppl 7): 239. https://doi.org/10.1186/s12859-016-1097-3"
+    },
+    {
+      "DOI": "10.1038/nmeth.3317",
+      "author": "D Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "357",
+      "issue": "4",
+      "journal-title": "Nat Methods",
+      "key": "367_CR34",
+      "unstructured": "Kim D, Langmead B, Salzberg SL. HISAT: a fast spliced aligner with low memory requirements. Nat Methods. 2015;12(4):357–60. https://doi.org/10.1038/nmeth.3317.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nmeth.1923",
+      "author": "B Langmead",
+      "doi-asserted-by": "publisher",
+      "first-page": "357",
+      "issue": "4",
+      "journal-title": "Nat Methods",
+      "key": "367_CR35",
+      "unstructured": "Langmead B, Salzberg SL. Fast gapped-read alignment with Bowtie 2. Nat Methods. 2012;9(4):357–9. https://doi.org/10.1038/nmeth.1923.",
+      "volume": "9",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s12859-019-3247-x",
+      "author": "ZB Abrams",
+      "doi-asserted-by": "publisher",
+      "first-page": "679",
+      "issue": "Suppl 24",
+      "journal-title": "BMC Bioinformatics",
+      "key": "367_CR36",
+      "unstructured": "Abrams ZB, Johnson TS, Huang K, Payne P, Coombes K. A protocol to evaluate RNA sequencing normalization methods. BMC Bioinformatics. 2019;20(Suppl 24):679. https://doi.org/10.1186/s12859-019-3247-x.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s40246-021-00336-1",
+      "author": "Z Ahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "issue": "1",
+      "journal-title": "Hum Genomics",
+      "key": "367_CR37",
+      "unstructured": "Ahmed Z, Renart EG, Zeeshan S, Dong X. Advancing clinical genomics and precision medicine with GVViZ: FAIR bioinformatics platform for variable gene-disease annotation, visualization, and expression analysis. Hum Genomics. 2021;15(1):37. https://doi.org/10.1186/s40246-021-00336-1.",
+      "volume": "15",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/ctm2.28",
+      "author": "Z Ahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "297",
+      "issue": "1",
+      "journal-title": "Clin Transl Med",
+      "key": "367_CR38",
+      "unstructured": "Ahmed Z, Zeeshan S, Mendhe D, Dong X. Human gene and disease associations for clinical-genomics and precision medicine research. Clin Transl Med. 2020;10(1):297–318. https://doi.org/10.1002/ctm2.28.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s40169-019-0243-8",
+      "author": "Z Ahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "issue": "1",
+      "journal-title": "Clin Transl Med",
+      "key": "367_CR39",
+      "unstructured": "Ahmed Z, Zeeshan S, Xiong R, Liang BT. Debutant iOS app and gene-disease complexities in clinical genomics and precision medicine. Clin Transl Med. 2019;8(1):26. https://doi.org/10.1186/s40169-019-0243-8.",
+      "volume": "8",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1073/pnas.0506580102",
+      "author": "A Subramanian",
+      "doi-asserted-by": "publisher",
+      "first-page": "15545",
+      "issue": "43",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "367_CR40",
+      "unstructured": "Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, Paulovich A, Pomeroy SL, Golub TR, Lander ES, Mesirov JP. Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci USA. 2005;102(43):15545–50. https://doi.org/10.1073/pnas.0506580102.",
+      "volume": "102",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1002/wcs.1203",
+      "author": "MC Hout",
+      "doi-asserted-by": "publisher",
+      "first-page": "93",
+      "issue": "1",
+      "journal-title": "Wiley Interdiscip Rev Cogn Sci",
+      "key": "367_CR41",
+      "unstructured": "Hout MC, Papesh MH, Goldinger SD. Multidimensional scaling. Wiley Interdiscip Rev Cogn Sci. 2013;4(1):93–103. https://doi.org/10.1002/wcs.1203.",
+      "volume": "4",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gks042",
+      "author": "DJ McCarthy",
+      "doi-asserted-by": "publisher",
+      "first-page": "4288",
+      "issue": "10",
+      "journal-title": "Nucleic Acids Res",
+      "key": "367_CR42",
+      "unstructured": "McCarthy DJ, Chen Y, Smyth GK. Differential expression analysis of multifactor RNA-Seq experiments with respect to biological variation. Nucleic Acids Res. 2012;40(10):4288–97. https://doi.org/10.1093/nar/gks042.",
+      "volume": "40",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1056/NEJMp2030694",
+      "author": "FS Collins",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "N Engl J Med",
+      "key": "367_CR43",
+      "unstructured": "Collins FS, Doudna JA, Lander ES, Rotimi CN. Human molecular genetics and genomics—important advances and exciting possibilities. N Engl J Med. 2021;384(1):1–4. https://doi.org/10.1056/NEJMp2030694.",
+      "volume": "384",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13293-018-0201-y",
+      "author": "K Sobhani",
+      "doi-asserted-by": "publisher",
+      "first-page": "43",
+      "issue": "1",
+      "journal-title": "Biol Sex Differ",
+      "key": "367_CR44",
+      "unstructured": "Sobhani K, Nieves Castro DK, Fu Q, Gottlieb RA, Van Eyk JE, Merz CNB. Sex differences in ischemic heart disease and heart failure biomarkers. Biol Sex Differ. 2018;9(1):43. https://doi.org/10.1186/s13293-018-0201-y.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1136/bmj.g7873",
+      "author": "AS Shah",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMJ",
+      "key": "367_CR45",
+      "unstructured": "Shah AS, Griffiths M, Lee KK, McAllister DA, Hunter AL, Ferry AV, Cruikshank A, Reid A, Stoddart M, Strachan F, Walker S, Collinson PO, Apple FS, Gray AJ, Fox KA, Newby DE, Mills NL. High sensitivity cardiac troponin and the under-diagnosis of myocardial infarction in women: prospective cohort study. BMJ. 2015;350: g7873. https://doi.org/10.1136/bmj.g7873.",
+      "volume": "350",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1001/jamacardio.2020.6508",
+      "author": "EM McNally",
+      "doi-asserted-by": "publisher",
+      "journal-title": "JAMA Cardiol",
+      "key": "367_CR46",
+      "unstructured": "McNally EM, O’Donnell CJ. Genetic contribution to common heart failure—not so rare? JAMA Cardiol. 2020. https://doi.org/10.1001/jamacardio.2020.6508.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1001/jamacardio.2020.6500",
+      "author": "G Povysil",
+      "doi-asserted-by": "publisher",
+      "first-page": "379",
+      "issue": "4",
+      "journal-title": "JAMA cardiology",
+      "key": "367_CR47",
+      "unstructured": "Povysil G, Chazara O, Carss KJ, Deevi S, Wang Q, Armisen J, Paul DS, Granger CB, Kjekshus J, Aggarwal V, Haefliger C, Goldstein DB. Assessing the role of rare genetic variation in patients with heart failure. JAMA cardiology. 2021;6(4):379–86. https://doi.org/10.1001/jamacardio.2020.6500.",
+      "volume": "6",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s00392-010-0206-y",
+      "author": "MC de Wit",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "issue": "1",
+      "journal-title": "Clin Res Cardiol",
+      "key": "367_CR48",
+      "unstructured": "de Wit MC, de Coo IF, Lequin MH, Halley DJ, Roos-Hesselink JW, Mancini GM. Combined cardiological and neurological abnormalities due to filamin A gene mutation. Clin Res Cardiol. 2011;100(1):45–50. https://doi.org/10.1007/s00392-010-0206-y.",
+      "volume": "100",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2016.05.092",
+      "author": "SW van der Laan",
+      "doi-asserted-by": "publisher",
+      "first-page": "934",
+      "issue": "9",
+      "journal-title": "J Am Coll Cardiol",
+      "key": "367_CR49",
+      "unstructured": "van der Laan SW, Fall T, Soumaré A, Teumer A, Sedaghat S, Baumert J, Zabaneh D, van Setten J, Isgum I, Galesloot TE, Arpegård J, Amouyel P, Trompet S, Waldenberger M, Dörr M, Magnusson PK, Giedraitis V, Larsson A, Morris AP, Felix JF, et al. Cystatin C and cardiovascular disease: a Mendelian randomization study. J Am Coll Cardiol. 2016;68(9):934–45. https://doi.org/10.1016/j.jacc.2016.05.092.",
+      "volume": "68",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1161/CIRCHEARTFAILURE.112.966960",
+      "author": "M Dupont",
+      "doi-asserted-by": "publisher",
+      "first-page": "602",
+      "issue": "5",
+      "journal-title": "Circ Heart Fail",
+      "key": "367_CR50",
+      "unstructured": "Dupont M, Wu Y, Hazen SL, Tang WH. Cystatin C identifies patients with stable chronic heart failure at increased risk for adverse cardiovascular events. Circ Heart Fail. 2012;5(5):602–9. https://doi.org/10.1161/CIRCHEARTFAILURE.112.966960.",
+      "volume": "5",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.3892/ijmm.2017.3311",
+      "author": "R Dong",
+      "doi-asserted-by": "publisher",
+      "first-page": "599",
+      "issue": "2",
+      "journal-title": "Int J Mol Med",
+      "key": "367_CR51",
+      "unstructured": "Dong R, Zhang M, Hu Q, Zheng S, Soh A, Zheng Y, Yuan H. Galectin-3 as a novel biomarker for disease diagnosis and a target for therapy (Review). Int J Mol Med. 2018;41(2):599–614. https://doi.org/10.3892/ijmm.2017.3311.",
+      "volume": "41",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.atherosclerosis.2017.03.031",
+      "author": "CA Gleissner",
+      "doi-asserted-by": "publisher",
+      "first-page": "121",
+      "journal-title": "Atherosclerosis",
+      "key": "367_CR52",
+      "unstructured": "Gleissner CA, Erbel C, Linden F, Domschke G, Akhavanpoor M, Helmes CM, Doesch AO, Kleber ME, Katus HA, Maerz W. Galectin-3 binding protein, coronary artery disease and cardiovascular mortality: Insights from the LURIC study. Atherosclerosis. 2017;260:121–9. https://doi.org/10.1016/j.atherosclerosis.2017.03.031.",
+      "volume": "260",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.gene.2017.11.026",
+      "author": "Y Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "293",
+      "journal-title": "Gene",
+      "key": "367_CR53",
+      "unstructured": "Zhang Y, Wang Y, Zhai M, Gan T, Zhao X, Zhang R, An T, Huang Y, Zhou Q, Zhang J. Influence of LGALS3 gene polymorphisms on susceptibility and prognosis of dilated cardiomyopathy in a Northern Han Chinese population. Gene. 2018;642:293–8. https://doi.org/10.1016/j.gene.2017.11.026.",
+      "volume": "642",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.7150/thno.22196",
+      "author": "N Suthahar",
+      "doi-asserted-by": "publisher",
+      "first-page": "593",
+      "issue": "3",
+      "journal-title": "Theranostics",
+      "key": "367_CR54",
+      "unstructured": "Suthahar N, Meijers WC, Silljé H, Ho JE, Liu FT, de Boer RA. Galectin-3 activation and inhibition in heart failure and cardiovascular disease: an update. Theranostics. 2018;8(3):593–609. https://doi.org/10.7150/thno.22196.",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1136/bmjopen-2017-015949",
+      "author": "I Cavero-Redondo",
+      "doi-asserted-by": "publisher",
+      "issue": "7",
+      "journal-title": "BMJ Open",
+      "key": "367_CR55",
+      "unstructured": "Cavero-Redondo I, Peleteiro B, Álvarez-Bueno C, Rodriguez-Artalejo F, Martínez-Vizcaíno V. Glycated haemoglobin A1c as a risk factor of cardiovascular outcomes and all-cause mortality in diabetic and non-diabetic populations: a systematic review and meta-analysis. BMJ Open. 2017;7(7): e015949. https://doi.org/10.1136/bmjopen-2017-015949.",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1136/bmjopen-2016-012229",
+      "author": "I Cavero-Redondo",
+      "doi-asserted-by": "publisher",
+      "issue": "7",
+      "journal-title": "BMJ Open",
+      "key": "367_CR56",
+      "unstructured": "Cavero-Redondo I, Peleteiro B, Álvarez-Bueno C, Rodríguez-Artalejo F, Martínez-Vizcaíno V. Glycosylated haemoglobin as a predictor of cardiovascular events and mortality: a protocol for a systematic review and meta-analysis. BMJ Open. 2016;6(7): e012229. https://doi.org/10.1136/bmjopen-2016-012229.",
+      "volume": "6",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.21037/atm-20-3354",
+      "author": "D Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "639",
+      "issue": "10",
+      "journal-title": "Annals Transl Med",
+      "key": "367_CR57",
+      "unstructured": "Liu D, Mao Y, Chen C, Zhu F, Lu W, Ma H. Expression patterns and clinical significances of ENO2 in lung cancer: an analysis based on Oncomine database. Annals Transl Med. 2020;8(10):639. https://doi.org/10.21037/atm-20-3354.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12920-017-0293-y",
+      "author": "R Rodriguez-Esteban",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "journal-title": "BMC Med Genomics",
+      "key": "367_CR58",
+      "unstructured": "Rodriguez-Esteban R, Jiang X. Differential gene expression in disease: a comparison between high-throughput studies and the literature. BMC Med Genomics. 2017;10:59. https://doi.org/10.1186/s12920-017-0293-y.",
+      "volume": "10",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1586/erm.12.10",
+      "author": "CS Ku",
+      "doi-asserted-by": "publisher",
+      "first-page": "241",
+      "issue": "3",
+      "journal-title": "Expert Rev Mol Diagn",
+      "key": "367_CR59",
+      "unstructured": "Ku CS, Wu M, Cooper DN, Naidoo N, Pawitan Y, Pang B, Iacopetta B, Soong R. Exome versus transcriptome sequencing in identifying coding region variants. Expert Rev Mol Diagn. 2012;12(3):241–51. https://doi.org/10.1586/erm.12.10.",
+      "volume": "12",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/gb-2010-11-5-r57",
+      "author": "ET Cirulli",
+      "doi-asserted-by": "publisher",
+      "first-page": "R57",
+      "issue": "5",
+      "journal-title": "Genome Biol",
+      "key": "367_CR60",
+      "unstructured": "Cirulli ET, Singh A, Shianna KV, Ge D, Smith JP, Maia JM, Heinzen EL, Goedert JJ, Goldstein DB, Center for HIV/AIDS Vaccine Immunology (CHAVI). Screening the human exome: a comparison of whole genome and whole transcriptome sequencing. Genome Biol. 2010;11(5):R57. https://doi.org/10.1186/gb-2010-11-5-r57.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.08.008",
+      "author": "R Piskol",
+      "doi-asserted-by": "publisher",
+      "first-page": "641",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet",
+      "key": "367_CR61",
+      "unstructured": "Piskol R, Ramaswami G, Li JB. Reliable identification of genomic variants from RNA-seq data. Am J Hum Genet. 2013;93(4):641–51. https://doi.org/10.1016/j.ajhg.2013.08.008.",
+      "volume": "93",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ymeth.2015.04.016",
+      "author": "TD O'Brien",
+      "doi-asserted-by": "publisher",
+      "first-page": "118",
+      "journal-title": "Methods",
+      "key": "367_CR62",
+      "unstructured": "O’Brien TD, Jia P, Xia J, Saxena U, Jin H, Vuong H, Kim P, Wang Q, Aryee MJ, Mino-Kenudson M, Engelman JA, Le LP, Iafrate AJ, Heist RS, Pao W, Zhao Z. Inconsistency and features of single nucleotide variants detected in whole exome sequencing versus transcriptome sequencing: a case study in lung cancer. Methods. 2015;83:118–27. https://doi.org/10.1016/j.ymeth.2015.04.016.",
+      "volume": "83",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3389/fendo.2019.00612",
+      "author": "TE Angell",
+      "doi-asserted-by": "publisher",
+      "first-page": "612",
+      "journal-title": "Front Endocrinol",
+      "key": "367_CR63",
+      "unstructured": "Angell TE, Wirth LJ, Cabanillas ME, Shindo ML, Cibas ES, Babiarz JE, Hao Y, Kim SY, Walsh PS, Huang J, Kloos RT, Kennedy GC, Waguespack SG. Analytical and clinical validation of expressed variants and fusions from the whole transcriptome of thyroid FNA samples. Front Endocrinol. 2019;10:612. https://doi.org/10.3389/fendo.2019.00612.",
+      "volume": "10",
+      "year": "2019"
+    }
+  ],
+  "reference-count": 63,
+  "references-count": 63,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00367-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "RNA-seq driven expression and enrichment analysis to investigate CVD genes with associated phenotypes among high-risk heart failure patients"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

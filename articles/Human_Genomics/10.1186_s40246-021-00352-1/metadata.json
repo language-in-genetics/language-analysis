@@ -1,0 +1,1097 @@
+{
+  "DOI": "10.1186/s40246-021-00352-1",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00352-1",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\u003cjats:title\u003eBackground\u003c/jats:title\u003e\u003cjats:p\u003eThe field of pharmacogenomics focuses on the way a person’s genome affects his or her response to a certain dose of a specified medication. The main aim is to utilize this information to guide and personalize the treatment in a way that maximizes the clinical benefits and minimizes the risks for the patients, thus fulfilling the promises of personalized medicine. Technological advances in genome sequencing, combined with the development of improved computational methods for the efficient analysis of the huge amount of generated data, have allowed the fast and inexpensive sequencing of a patient’s genome, hence rendering its incorporation into clinical routine practice a realistic possibility.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eMethods\u003c/jats:title\u003e\u003cjats:p\u003eThis study exploited thoroughly characterized in functional level SNVs within genes involved in drug metabolism and transport, to train a classifier that would categorize novel variants according to their expected effect on protein functionality. This categorization is based on the available in silico prediction and/or conservation scores, which are selected with the use of recursive feature elimination process. Toward this end, information regarding 190 pharmacovariants was leveraged, alongside with 4 machine learning algorithms, namely AdaBoost, XGBoost, multinomial logistic regression, and random forest, of which the performance was assessed through 5-fold cross validation.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eResults\u003c/jats:title\u003e\u003cjats:p\u003eAll models achieved similar performance toward making informed conclusions, with RF model achieving the highest accuracy (85%, 95% CI: 0.79, 0.90), as well as improved overall performance (precision 85%, sensitivity 84%, specificity 94%) and being used for subsequent analyses. When applied on real world WGS data, the selected RF model identified 2 missense variants, expected to lead to decreased function proteins and 1 to increased. As expected, a greater number of variants were highlighted when the approach was used on NGS data derived from targeted resequencing of coding regions. Specifically, 71 variants (out of 156 with sufficient annotation information) were classified as to “Decreased function,” 41 variants as “No” function proteins, and 1 variant in “Increased function.”\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eConclusion\u003c/jats:title\u003e\u003cjats:p\u003eOverall, the proposed RF-based classification model holds promise to lead to an extremely useful variant prioritization and act as a scoring tool with interesting clinical applications in the fields of pharmacogenomics and personalized medicine.\u003c/jats:p\u003e\u003c/jats:sec\u003e",
+  "alternative-id": [
+    "352"
+  ],
+  "article-number": "51",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "22 April 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "28 July 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "9 August 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "IT and EC are shareholders of Katharsis Technologies Inc. GPP is Full Member and National Representative of the European Medicines Agency, Committee for Human Medicinal Products—Pharmacogenomics Working Party, Amsterdam, the Netherlands."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Pandi",
+      "given": "Maria-Theodora",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Koromina",
+      "given": "Maria",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tsafaridis",
+      "given": "Iordanis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Patsilinakos",
+      "given": "Sotirios",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Christoforou",
+      "given": "Evangelos",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van der Spek",
+      "given": "Peter J.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0519-7776",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Patrinos",
+      "given": "George P.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        9
+      ]
+    ],
+    "date-time": "2021-08-09T08:03:24Z",
+    "timestamp": 1628496204000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        7
+      ]
+    ],
+    "date-time": "2023-11-07T03:19:59Z",
+    "timestamp": 1699327199000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        27
+      ]
+    ],
+    "date-time": "2024-03-27T23:07:06Z",
+    "timestamp": 1711580826177
+  },
+  "is-referenced-by-count": 13,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            9
+          ]
+        ],
+        "date-time": "2021-08-09T00:00:00Z",
+        "timestamp": 1628467200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            9
+          ]
+        ],
+        "date-time": "2021-08-09T00:00:00Z",
+        "timestamp": 1628467200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00352-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00352-1/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00352-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "author": "International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH)",
+      "key": "352_CR1",
+      "unstructured": "International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH). ICH E15 Definitions for genomic biomarkers, pharmacogenomics, pharmacogenetics, data and sample coding categories. 2007.",
+      "volume-title": "ICH E15 Definitions for genomic biomarkers, pharmacogenomics, pharmacogenetics, data and sample coding categories",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1007/s40265-015-0375-0",
+      "author": "ZW Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "589",
+      "issue": "6",
+      "journal-title": "Drugs.",
+      "key": "352_CR2",
+      "unstructured": "Zhou ZW, Chen XW, Sneed KB, Yang YX, Zhang X, He ZX, et al. Clinical association between pharmacogenomics and adverse drug reactions. Drugs. 2015;75(6):589–631.",
+      "volume": "75",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1208/s12248-017-0161-x",
+      "author": "VM Lauschke",
+      "doi-asserted-by": "publisher",
+      "first-page": "4",
+      "issue": "1",
+      "journal-title": "AAPS J.",
+      "key": "352_CR3",
+      "unstructured": "Lauschke VM, Milani L, Ingelman-Sundberg M. Pharmacogenomic biomarkers for improved drug therapy-recent progress and future developments. AAPS J. 2017;20(1):4.",
+      "volume": "20",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1080/14737167.2017.1385395",
+      "author": "AM Moyer",
+      "doi-asserted-by": "publisher",
+      "first-page": "567",
+      "issue": "6",
+      "journal-title": "Expert Rev Pharmacoecon Outcomes Res.",
+      "key": "352_CR4",
+      "unstructured": "Moyer AM, Caraballo PJ. The challenges of implementing pharmacogenomic testing in the clinic. Expert Rev Pharmacoecon Outcomes Res. 2017;17(6):567–77.",
+      "volume": "17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.2217/pgs.14.102",
+      "author": "C Mizzi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1223",
+      "issue": "9",
+      "journal-title": "Pharmacogenomics.",
+      "key": "352_CR5",
+      "unstructured": "Mizzi C, Peters B, Mitropoulou C, Mitropoulos K, Katsila T, Agarwal MR, et al. Personalized pharmacogenomics profiling using whole-genome sequencing. Pharmacogenomics. 2014;15(9):1223–34.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3389/fphar.2015.00061",
+      "author": "T Katsila",
+      "doi-asserted-by": "publisher",
+      "first-page": "61",
+      "journal-title": "Front Pharmacol.",
+      "key": "352_CR6",
+      "unstructured": "Katsila T, Patrinos GP. Whole genome sequencing in pharmacogenomics. Front Pharmacol. 2015;6:61.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3389/fphar.2019.00384",
+      "author": "E Giannopoulou",
+      "doi-asserted-by": "publisher",
+      "first-page": "384",
+      "journal-title": "Front Pharmacol.",
+      "key": "352_CR7",
+      "unstructured": "Giannopoulou E, Katsila T, Mitropoulou C, Tsermpini EE, Patrinos GP. Integrating next-generation sequencing in the clinical pharmacogenomics workflow. Front Pharmacol. 2019;10:384.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/tpj.2014.86",
+      "author": "F Ehmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "201",
+      "issue": "3",
+      "journal-title": "Pharmacogenomics J.",
+      "key": "352_CR8",
+      "unstructured": "Ehmann F, Caneva L, Prasad K, Paulmichl M, Maliepaard M, Llerena A, et al. Pharmacogenomic information in drug labels: European Medicines Agency perspective. Pharmacogenomics J. 2015;15(3):201–10.",
+      "volume": "15",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature15817",
+      "author": "MV Relling",
+      "doi-asserted-by": "publisher",
+      "first-page": "343",
+      "issue": "7573",
+      "journal-title": "Nature.",
+      "key": "352_CR9",
+      "unstructured": "Relling MV, Evans WE. Pharmacogenomics in the clinic. Nature. 2015;526(7573):343–50.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1126/science.1219240",
+      "author": "JA Tennessen",
+      "doi-asserted-by": "publisher",
+      "first-page": "64",
+      "issue": "6090",
+      "journal-title": "Science.",
+      "key": "352_CR10",
+      "unstructured": "Tennessen JA, Bigham AW, O’Connor TD, Fu W, Kenny EE, Gravel S, et al. Evolution and functional impact of rare coding variation from deep sequencing of HUMAN Exomes. Science. 2012;337(6090):64.",
+      "volume": "337",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1126/science.1217876",
+      "author": "MR Nelson",
+      "doi-asserted-by": "publisher",
+      "first-page": "100",
+      "issue": "6090",
+      "journal-title": "Science.",
+      "key": "352_CR11",
+      "unstructured": "Nelson MR, Wegmann D, Ehm MG, Kessner D, St Jean P, Verzilli C, et al. An abundance of rare functional variants in 202 drug target genes sequenced in 14,002 people. Science. 2012;337(6090):100–4.",
+      "volume": "337",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1097/FPC.0000000000000172",
+      "author": "K Fujikura",
+      "doi-asserted-by": "publisher",
+      "first-page": "584",
+      "issue": "12",
+      "journal-title": "Pharmacogenet Genomics.",
+      "key": "352_CR12",
+      "unstructured": "Fujikura K, Ingelman-Sundberg M, Lauschke VM. Genetic variation in the human cytochrome P450 supergene family. Pharmacogenet Genomics. 2015;25(12):584–94.",
+      "volume": "25",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/gim.2016.33",
+      "author": "M Kozyra",
+      "doi-asserted-by": "publisher",
+      "first-page": "20",
+      "issue": "1",
+      "journal-title": "Genet Med.",
+      "key": "352_CR13",
+      "unstructured": "Kozyra M, Ingelman-Sundberg M, Lauschke VM. Rare genetic variants in cellular transporters, metabolic enzymes, and nuclear receptors can be important determinants of interindividual differences in drug response. Genet Med. 2017;19(1):20–9.",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.phrs.2018.10.017",
+      "author": "B Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "550",
+      "journal-title": "Pharmacol Res.",
+      "key": "352_CR14",
+      "unstructured": "Zhang B, Lauschke VM. Genetic variability and population diversity of the human SLCO (OATP) transporter family. Pharmacol Res. 2019;139:550–9.",
+      "volume": "139",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/gr.212802",
+      "author": "PC Ng",
+      "doi-asserted-by": "publisher",
+      "first-page": "436",
+      "issue": "3",
+      "journal-title": "Genome Res.",
+      "key": "352_CR15",
+      "unstructured": "Ng PC, Henikoff S. Accounting for human polymorphisms predicted to affect protein function. Genome Res. 2002;12(3):436–46.",
+      "volume": "12",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0046688",
+      "author": "Y Choi",
+      "doi-asserted-by": "publisher",
+      "first-page": "e46688",
+      "issue": "10",
+      "journal-title": "PLoS One.",
+      "key": "352_CR16",
+      "unstructured": "Choi Y, Sims G, Murphy S, Miller J, Chan A. Predicting the functional effect of amino acid substitutions and indels. PLoS One. 2012;7(10):e46688.",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "author": "I Adzhubei",
+      "first-page": "20",
+      "journal-title": "Curr Protoc Hum Genet",
+      "key": "352_CR17",
+      "unstructured": "Adzhubei I, Jordan DM, Sunyaev SR. Predicting functional effect of human missense mutations using PolyPhen-2. Curr Protoc Hum Genet. 2013;7:20.",
+      "volume": "7",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp528",
+      "author": "B Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2744",
+      "issue": "21",
+      "journal-title": "Bioinformatics (Oxford, England)",
+      "key": "352_CR18",
+      "unstructured": "Li B, Krishnan VG, Mort ME, Xin F, Kamati KK, Cooper DN, et al. Automated inference of molecular mechanisms of disease from amino acid substitutions. Bioinformatics (Oxford, England). 2009;25(21):2744–50.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1001025",
+      "author": "EV Davydov",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1001025",
+      "issue": "12",
+      "journal-title": "PLoS Comput Biol.",
+      "key": "352_CR19",
+      "unstructured": "Davydov EV, Goode DL, Sirota M, Cooper GM, Sidow A, Batzoglou S. Identifying a high fraction of the human genome to be under selective constraint using GERP++. PLoS Comput Biol. 2010;6(12):e1001025.",
+      "volume": "6",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/ng.3477",
+      "author": "I Ionita-Laza",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "issue": "2",
+      "journal-title": "Nature genetics.",
+      "key": "352_CR20",
+      "unstructured": "Ionita-Laza I, McCallum K, Xu B, Buxbaum JD. A spectral approach integrating functional genomic annotations for coding and noncoding variants. Nature genetics. 2016;48(2):214–20.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv602",
+      "author": "J Fadista",
+      "doi-asserted-by": "crossref",
+      "first-page": "471",
+      "issue": "4",
+      "journal-title": "Bioinformatics.",
+      "key": "352_CR21",
+      "unstructured": "Fadista J, Oskolkov N, Hansson O, Groop L. LoFtool: a gene intolerance score based on loss-of-function variants in 60 706 individuals. Bioinformatics. 2017;33(4):471–4.",
+      "volume": "33",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu703",
+      "author": "D Quang",
+      "doi-asserted-by": "publisher",
+      "first-page": "761",
+      "issue": "5",
+      "journal-title": "Bioinformatics.",
+      "key": "352_CR22",
+      "unstructured": "Quang D, Chen Y, Xie X. DANN: a deep learning approach for annotating the pathogenicity of genetic variants. Bioinformatics. 2015;31(5):761–3.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.08.016",
+      "author": "NM Ioannidis",
+      "doi-asserted-by": "publisher",
+      "first-page": "877",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet.",
+      "key": "352_CR23",
+      "unstructured": "Ioannidis NM, Rothstein JH, Pejaver V, Middha S, McDonnell SK, Baheti S, et al. REVEL: an ensemble method for predicting the pathogenicity of rare missense variants. Am J Hum Genet. 2016;99(4):877–85.",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/hmg/ddu733",
+      "author": "C Dong",
+      "doi-asserted-by": "publisher",
+      "first-page": "2125",
+      "issue": "8",
+      "journal-title": "Hum Mol Genet.",
+      "key": "352_CR24",
+      "unstructured": "Dong C, Wei P, Jian X, Gibbs R, Boerwinkle E, Wang K, et al. Comparison and integration of deleteriousness prediction methods for nonsynonymous SNVs in whole exome sequencing studies. Hum Mol Genet. 2015;24(8):2125–37.",
+      "volume": "24",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s40246-018-0157-3",
+      "author": "M Ingelman-Sundberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "issue": "1",
+      "journal-title": "Hum Genomics.",
+      "key": "352_CR25",
+      "unstructured": "Ingelman-Sundberg M, Mkrtchian S, Zhou Y, Lauschke VM. Integrating rare genetic variants into pharmacogenetic drug response predictions. Hum Genomics. 2018;12(1):26.",
+      "volume": "12",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41397-018-0044-2",
+      "author": "Y Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "issue": "2",
+      "journal-title": "Pharmacogenomics J.",
+      "key": "352_CR26",
+      "unstructured": "Zhou Y, Mkrtchian S, Kumondai M, Hiratsuka M, Lauschke VM. An optimized prediction framework to assess the functional impact of pharmacogenetic variants. Pharmacogenomics J. 2019;19(2):115–26.",
+      "volume": "19",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.08.005",
+      "author": "N Alirezaie",
+      "doi-asserted-by": "publisher",
+      "first-page": "474",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet.",
+      "key": "352_CR27",
+      "unstructured": "Alirezaie N, Kernohan KD, Hartley T, Majewski J, Hocking TD. ClinPred: Prediction tool to identify disease-relevant nonsynonymous single-nucleotide variants. Am J Hum Genet. 2018;103(4):474–83.",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.03.004",
+      "author": "A Gonzalez-Perez",
+      "doi-asserted-by": "publisher",
+      "first-page": "440",
+      "issue": "4",
+      "journal-title": "Condel. Am J Hum Genet.",
+      "key": "352_CR28",
+      "unstructured": "Gonzalez-Perez A, Lopez-Bigas N. Improving the assessment of the outcome of nonsynonymous SNVs with a consensus deleteriousness score. Condel. Am J Hum Genet. 2011;88(4):440–9.",
+      "volume": "88",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/humu.22225",
+      "author": "HA Shihab",
+      "doi-asserted-by": "publisher",
+      "first-page": "57",
+      "issue": "1",
+      "journal-title": "Hum Mutat.",
+      "key": "352_CR29",
+      "unstructured": "Shihab HA, Gough J, Cooper DN, Stenson PD, Barker GL, Edwards KJ, et al. Predicting the functional, molecular, and phenotypic consequences of amino acid substitutions using hidden Markov models. Hum Mutat. 2013;34(1):57–65.",
+      "volume": "34",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx536",
+      "author": "MF Rogers",
+      "doi-asserted-by": "publisher",
+      "first-page": "511",
+      "issue": "3",
+      "journal-title": "Bioinformatics.",
+      "key": "352_CR30",
+      "unstructured": "Rogers MF, Shihab HA, Mort M, Cooper DN, Gaunt TR, Campbell C. FATHMMXF: accurate prediction of pathogenic point mutations via extended features. Bioinformatics. 2018;34(3):511–3.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/gr.092619.109",
+      "author": "S Chun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1553",
+      "issue": "9",
+      "journal-title": "Genome Res.",
+      "key": "352_CR31",
+      "unstructured": "Chun S, Fay JC. Identification of deleterious mutations within three human genomes. Genome Res. 2009;19(9):1553–61.",
+      "volume": "19",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nmeth0410-248",
+      "author": "IA Adzhubei",
+      "doi-asserted-by": "publisher",
+      "first-page": "248",
+      "issue": "4",
+      "journal-title": "Nat Methods",
+      "key": "352_CR32",
+      "unstructured": "Adzhubei IA, Schmidt S, Peshkin L, Ramensky VE, Gerasimova A, Bork P, et al. A method and server for predicting damaging missense mutations. Nat Methods. 2010;7(4):248–9.",
+      "volume": "7",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gks539",
+      "author": "NL Sim",
+      "doi-asserted-by": "publisher",
+      "first-page": "W452",
+      "issue": "Web Server issu",
+      "journal-title": "Nucleic Acids Res",
+      "key": "352_CR33",
+      "unstructured": "Sim NL, Kumar P, Hu J, Henikoff S, Schneider G, Ng PC. SIFT web server: predicting effects of amino acid substitutions on proteins. Nucleic Acids Res. 2012;40(Web Server issue):W452–7.",
+      "volume": "40",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0008311",
+      "author": "W Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "e8311",
+      "issue": "12",
+      "journal-title": "PLoS One.",
+      "key": "352_CR34",
+      "unstructured": "Lee W, Zhang Y, Mukhyala K, Lazarus RA, Zhang Z. Bi-directional SIFT predicts a subset of activating mutations. PLoS One. 2009;4(12):e8311.",
+      "volume": "4",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/gim.2017.156",
+      "author": "M Santos",
+      "doi-asserted-by": "publisher",
+      "first-page": "622",
+      "issue": "6",
+      "journal-title": "Genet Med.",
+      "key": "352_CR35",
+      "unstructured": "Santos M, Niemi M, Hiratsuka M, Kumondai M, Ingelman-Sundberg M, Lauschke VM, et al. Novel copy-number variations in pharmacogenes contribute to interindividual differences in drug pharmacokinetics. Genet Med. 2018;20(6):622–9.",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2217/pgs.15.121",
+      "author": "MR Luizon",
+      "doi-asserted-by": "publisher",
+      "first-page": "1829",
+      "issue": "16",
+      "journal-title": "Pharmacogenomics.",
+      "key": "352_CR36",
+      "unstructured": "Luizon MR, Ahituv N. Uncovering drug-responsive regulatory elements. Pharmacogenomics. 2015;16(16):1829–41.",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "author": "P Probst",
+      "first-page": "e1301",
+      "issue": "3",
+      "journal-title": "Wiley Interdisciplinary Reviews: data mining and knowledge discovery.",
+      "key": "352_CR37",
+      "unstructured": "Probst P, Wright MN, Boulesteix AL. Hyperparameters and tuning strategies for random forest. Wiley Interdisciplinary Reviews: data mining and knowledge discovery. 2019;9(3):e1301.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2012.04.003",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "323",
+      "issue": "6",
+      "journal-title": "Genomics.",
+      "key": "352_CR38",
+      "unstructured": "Chen X, Ishwaran H. Random forests for genomic data analysis. Genomics. 2012;99(6):323–9.",
+      "volume": "99",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/1471-2164-15-S4-S4",
+      "author": "B Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "S4",
+      "issue": "Suppl 4",
+      "journal-title": "BMC Genomics",
+      "key": "352_CR39",
+      "unstructured": "Li B, Seligman C, Thusberg J, Miller JL, Auer J, Whirl-Carrillo M, et al. In silico comparative characterization of pharmacogenomic missense variants. BMC Genomics. 2014;15(Suppl 4):S4.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/cpt.976",
+      "author": "VM Lauschke",
+      "doi-asserted-by": "publisher",
+      "first-page": "745",
+      "issue": "5",
+      "journal-title": "Clin Pharmacol Ther.",
+      "key": "352_CR40",
+      "unstructured": "Lauschke VM, Ingelman-Sundberg M. How to consider rare genetic variants in personalized drug therapy. Clin Pharmacol Ther. 2018;103(5):745–8.",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "issue": "5",
+      "journal-title": "Genet Med.",
+      "key": "352_CR41",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17(5):405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1126/science.286.5439.487",
+      "author": "WE Evans",
+      "doi-asserted-by": "publisher",
+      "first-page": "487",
+      "issue": "5439",
+      "journal-title": "Science.",
+      "key": "352_CR42",
+      "unstructured": "Evans WE, Relling MV. Pharmacogenomics: translating functional genomics into rational therapeutics. Science. 1999;286(5439):487.",
+      "volume": "286",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1124/dmd.118.084269",
+      "author": "S Devarajan",
+      "doi-asserted-by": "publisher",
+      "first-page": "425",
+      "issue": "4",
+      "journal-title": "Drug Metab Dispos.",
+      "key": "352_CR43",
+      "unstructured": "Devarajan S, Moon I, Ho MF, Larson NB, Neavin DR, Moyer AM, et al. Pharmacogenomic next-generation DNA sequencing: lessons from the identification and functional characterization of variants of unknown significance in CYP2C9 and CYP2C19. Drug Metab Dispos. 2019;47(4):425–35.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.2133/dmpk.DMPK-14-RG-014",
+      "author": "Y Muroi",
+      "doi-asserted-by": "publisher",
+      "first-page": "360",
+      "issue": "5",
+      "journal-title": "Drug Metab Pharmacokinet",
+      "key": "352_CR44",
+      "unstructured": "Muroi Y, Saito T, Takahashi M, Sakuyama K, Niinuma Y, Ito M, et al. Functional characterization of wild-type and 49 CYP2D6 Allelic Variants for \u003ci\u003eN\u003c/i\u003e-Desmethyltamoxifen 4-hydroxylation activity. Drug Metab Pharmacokinet. 2014;29(5):360–6.",
+      "volume": "29",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1373/49.6.1008",
+      "author": "A Gaedigk",
+      "doi-asserted-by": "publisher",
+      "first-page": "1008",
+      "issue": "6",
+      "journal-title": "Clin Chem.",
+      "key": "352_CR45",
+      "unstructured": "Gaedigk A, Ryder DL, Bradford LD, Leeder JS. CYP2D6 poor metabolizer status can be ruled out by a single genotyping assay for the −1584G Promoter Polymorphism. Clin Chem. 2003;49(6):1008–11.",
+      "volume": "49",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.dmpk.2015.07.003",
+      "author": "C Tsukada",
+      "doi-asserted-by": "publisher",
+      "first-page": "366",
+      "issue": "5",
+      "journal-title": "Drug Metab Pharmacokinet",
+      "key": "352_CR46",
+      "unstructured": "Tsukada C, Saito T, Maekawa M, Mano N, Oda A, Hirasawa N, et al. Functional characterization of 12 allelic variants of CYP2C8 by assessment of paclitaxel 6α-hydroxylation and amodiaquine N-deethylation. Drug Metab Pharmacokinet. 2015;30(5):366–73.",
+      "volume": "30",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.2217/pgs-2016-0152",
+      "author": "R Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "807",
+      "issue": "8",
+      "journal-title": "Pharmacogenomics.",
+      "key": "352_CR47",
+      "unstructured": "Li R, Kim D, Ritchie MD. Methods to analyze big data in pharmacogenomics research. Pharmacogenomics. 2017;18(8):807–20.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/cpt.1654",
+      "author": "A Gaedigk",
+      "doi-asserted-by": "publisher",
+      "first-page": "43",
+      "issue": "1",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "352_CR48",
+      "unstructured": "Gaedigk A, Whirl-Carrillo M, Pratt VM, Miller NA, Klein TE. PharmVar and the landscape of pharmacogenetic resources. Clin Pharmacol Ther. 2020;107(1):43–6.",
+      "volume": "107",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13073-020-00803-9",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "103",
+      "issue": "1",
+      "journal-title": "Genome Med",
+      "key": "352_CR49",
+      "unstructured": "Liu X, Li C, Mou C, Dong Y, Tu Y. dbNSFP v4: a comprehensive database of transcript-specific functional predictions and annotations for human nonsynonymous and splice-site SNVs. Genome Med. 2020;12(1):103.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "author": "W McLaren",
+      "doi-asserted-by": "publisher",
+      "first-page": "122",
+      "issue": "1",
+      "journal-title": "Genome Biol.",
+      "key": "352_CR50",
+      "unstructured": "McLaren W, Gil L, Hunt SE, Riat HS, Ritchie GR, Thormann A, et al. The Ensembl variant effect predictor. Genome Biol. 2016;17(1):122.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13326-015-0030-4",
+      "author": "F Cunningham",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "journal-title": "J Biomed Semantics.",
+      "key": "352_CR51",
+      "unstructured": "Cunningham F, Moore B, Ruiz-Schultz N, Ritchie GR, Eilbeck K. Improving the sequence ontology terminology for genomic variant annotation. J Biomed Semantics. 2015;6:32.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "author": "A Kowarik",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "J Stat Software",
+      "key": "352_CR52",
+      "unstructured": "Kowarik A, Templ M. Imputation with the R Package VIM. J Stat Software. 2016;74(1):1–6.",
+      "volume": "74",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.18637/jss.v054.i15",
+      "doi-asserted-by": "crossref",
+      "key": "352_CR53",
+      "unstructured": "Alfons A, Templ M. Estimation of social exclusion indicators from complex surveys: the R Package laeken. J Stat Software. 2013;54(15):1–25."
+    },
+    {
+      "DOI": "10.1093/nar/gkx390",
+      "author": "D Raimondi",
+      "doi-asserted-by": "publisher",
+      "first-page": "W201",
+      "issue": "W1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "352_CR54",
+      "unstructured": "Raimondi D, Tanyalcin I, Ferté J, Gazzo A, Orlando G, Lenaerts T, et al. DEOGEN2: prediction and interactive visualization of single amino acid variant deleteriousness in human proteins. Nucleic Acids Res. 2017;45(W1):W201–W6.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "author": "KE Samocha",
+      "key": "352_CR55",
+      "unstructured": "Samocha KE, Kosmicki JA, Karczewski KJ, O’Donnell-Luria AH, Pierce-Hoffman E, MacArthur DG, et al. Regional missense constraint improves variant deleteriousness prediction, vol. 148353; 2017.",
+      "volume-title": "Regional missense constraint improves variant deleteriousness prediction",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/humu.23158",
+      "author": "B-J Feng",
+      "doi-asserted-by": "publisher",
+      "first-page": "243",
+      "issue": "3",
+      "journal-title": "Hum Mutat",
+      "key": "352_CR56",
+      "unstructured": "Feng B-J. PERCH: a unified framework for disease gene prioritization. Hum Mutat. 2017;38(3):243–51.",
+      "volume": "38",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3196",
+      "author": "B Gulko",
+      "doi-asserted-by": "publisher",
+      "first-page": "276",
+      "issue": "3",
+      "journal-title": "Nat Genet",
+      "key": "352_CR57",
+      "unstructured": "Gulko B, Hubisz MJ, Gronau I, Siepel A. A method for calculating probabilities of fitness consequences for point mutations across the human genome. Nat Genet. 2015;47(3):276–83.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa288",
+      "author": "N Malhis",
+      "doi-asserted-by": "publisher",
+      "first-page": "W154",
+      "issue": "W1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "352_CR58",
+      "unstructured": "Malhis N, Jacobson M, Jones SJM, Gsponer J. LIST-S2: taxonomy based sorting of deleterious missense mutations across species. Nucleic Acids Res. 2020;48(W1):W154–W61.",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkn785",
+      "author": "S Hunter",
+      "doi-asserted-by": "publisher",
+      "first-page": "D211",
+      "issue": "Database issue",
+      "journal-title": "Nucleic Acids Res",
+      "key": "352_CR59",
+      "unstructured": "Hunter S, Apweiler R, Attwood TK, Bairoch A, Bateman A, Binns D, et al. InterPro: the integrative protein signature database. Nucleic Acids Res. 2009;37(Database issue):D211–5.",
+      "volume": "37",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1126/science.1215040",
+      "author": "DG MacArthur",
+      "doi-asserted-by": "publisher",
+      "first-page": "823",
+      "issue": "6070",
+      "journal-title": "Science.",
+      "key": "352_CR60",
+      "unstructured": "MacArthur DG, Balasubramanian S, Frankish A, Huang N, Morris J, Walter K, et al. A systematic survey of loss-of-function variants in human protein-coding genes. Science. 2012;335(6070):823–8.",
+      "volume": "335",
+      "year": "2012"
+    },
+    {
+      "author": "R Development Core Team",
+      "key": "352_CR61",
+      "unstructured": "R Development Core Team. R: a language and environment for statistical computing and graphics. 4.0.2 ed. Vienna: R Foundation for Statistical Computing; 2020.",
+      "volume-title": "R: a language and environment for statistical computing and graphics. 4.0.2 ed",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "issue": "1",
+      "journal-title": "Machine Learning.",
+      "key": "352_CR62",
+      "unstructured": "Breiman L. Random forests. Machine Learning. 2001;45(1):5–32.",
+      "volume": "45",
+      "year": "2001"
+    },
+    {
+      "author": "MW Andy Liaw",
+      "first-page": "18",
+      "journal-title": "R News.",
+      "key": "352_CR63",
+      "unstructured": "Andy Liaw MW. Classification and regression by randomforest. R News. 2002;2:18–22.",
+      "volume": "2",
+      "year": "2002"
+    },
+    {
+      "author": "E Alfaro",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "J Stat Software",
+      "key": "352_CR64",
+      "unstructured": "Alfaro E, Gamez M, García N. adabag: An R package for classification with boosting and bagging. J Stat Software. 2013;54(1):1–35.",
+      "volume": "54",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.4310/SII.2009.v2.n3.a8",
+      "author": "T Hastie",
+      "doi-asserted-by": "publisher",
+      "first-page": "349",
+      "issue": "3",
+      "journal-title": "Stat Its Interface.",
+      "key": "352_CR65",
+      "unstructured": "Hastie T, Rosset S, Zhu J, Zou H. Multi-class AdaBoost. Stat Its Interface. 2009;2(3):349–60.",
+      "volume": "2",
+      "year": "2009"
+    },
+    {
+      "author": "T Chen",
+      "key": "352_CR66",
+      "unstructured": "Chen T, Guestrin C. XGBoost: A Scalable Tree Boosting System. KDD ‘16: The 22nd ACM SIGKDD International conference on knowledge discovery and DATA Mining. San Francisco: ACM; 2016.",
+      "volume-title": "XGBoost: A Scalable Tree Boosting System. KDD ‘16: The 22nd ACM SIGKDD International conference on knowledge discovery and DATA Mining",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/978-0-387-21706-2",
+      "author": "WN Venables",
+      "doi-asserted-by": "publisher",
+      "edition": "4",
+      "first-page": "495",
+      "key": "352_CR67",
+      "unstructured": "Venables WN, Ripley BD, Venables WN. Modern applied statistics with S. 4th ed. New York: Springer; 2002. p. 495.",
+      "volume-title": "Modern applied statistics with S",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1017/CBO9780511812651",
+      "author": "BD Ripley",
+      "doi-asserted-by": "publisher",
+      "key": "352_CR68",
+      "unstructured": "Ripley BD. Pattern recognition and neural networks. Cambridge: Cambridge University Press; 1996.",
+      "volume-title": "Pattern recognition and neural networks",
+      "year": "1996"
+    },
+    {
+      "author": "M Kuhn",
+      "key": "352_CR69",
+      "unstructured": "Kuhn M, Contributions from Jed Wing SW, Andre Williams, Chris Keefer, Allan Engelhardt, Tony Cooper, Zachary Mayer, Brenton Kenkel, the R Core Team, Michael Benesty, Reynald Lescarbeau, Andrew Ziem, Luca Scrucca, Yuan Tang, Can Candan, Tyler Hunt. caret: Classification and Regression Training. 2019.",
+      "volume-title": "caret: Classification and Regression Training",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41439-021-00135-z",
+      "author": "C Runcharoen",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "issue": "1",
+      "journal-title": "Human genome variation.",
+      "key": "352_CR70",
+      "unstructured": "Runcharoen C, Fukunaga K, Sensorn I, Iemwimangsa N, Klumsathian S, Tong H, et al. Prevalence of pharmacogenomic variants in 100 pharmacogenes among Southeast Asian populations under the collaboration of the Southeast Asian Pharmacogenomics Research Network (SEAPharm). Human genome variation. 2021;8(1):7.",
+      "volume": "8",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 70,
+  "references-count": 70,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-446942/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00352-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A novel machine learning-based approach for the computational functional assessment of pharmacogenomic variants"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

@@ -1,0 +1,953 @@
+{
+  "DOI": "10.1038/s41431-023-01326-8",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01326-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eAcne vulgaris is a common chronic skin disorder presenting with comedones, cystic structures forming within the distal hair follicle, and in most cases additionally with inflammatory skin lesions on the face and upper torso. We performed a genome-wide association study and meta-analysis of data from 34,422 individuals with acne and 364,991 controls from three independent European-ancestry cohorts. We replicated 19 previously implicated genome-wide significant risk loci and identified four novel loci [11q12.2 (\u003cjats:italic\u003eFADS2\u003c/jats:italic\u003e), 12q21.1 (\u003cjats:italic\u003eLGR5\u003c/jats:italic\u003e), 17q25.3 (\u003cjats:italic\u003eFASN\u003c/jats:italic\u003e), and 22q12.1 (\u003cjats:italic\u003eZNRF3-KREMEN1\u003c/jats:italic\u003e)], bringing the total number of reported acne risk loci to 50. Our meta-analysis results explain 9.4% of the phenotypic variance of acne. A polygenic model of acne risk variants showed that individuals in the top 5% of the risk percentiles had a 1.62-fold (95% CI 1.47–1.78) increased acne risk relative to individuals with average risk (20–80% on the polygenic risk score distribution). Our findings highlight the Wnt and MAPK pathways as key factors in the genetic predisposition to acne vulgaris, together with the effects of genetic variation on the structure and maintenance of the hair follicle and pilosebaceous unit. Two novel loci, 11q12.2 and 17q25.3, contain genes encoding key enzymes involved in lipid biosynthesis pathways.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1326"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "21 July 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "2 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "21 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "16 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Date",
+      "name": "change_date",
+      "order": 5,
+      "value": "20 April 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Type",
+      "name": "change_type",
+      "order": 6,
+      "value": "Correction"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 7,
+      "value": "A Correction to this paper has been published:"
+    },
+    {
+      "URL": "https://doi.org/10.1038/s41431-023-01366-0",
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 8,
+      "value": "https://doi.org/10.1038/s41431-023-01366-0"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by Estonian Council of Bioethics and Human Research, decision nr 1.1-12/2338."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-5872-1850",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Teder-Laving",
+      "given": "Maris",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-2090-8780",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kals",
+      "given": "Mart",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Reigo",
+      "given": "Anu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ehin",
+      "given": "Riin",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0079-8775",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Objärtel",
+      "given": "Telver",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vaht",
+      "given": "Mariliis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nikopensius",
+      "given": "Tiit",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3718-796X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Metspalu",
+      "given": "Andres",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kingo",
+      "given": "Külli",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        16
+      ]
+    ],
+    "date-time": "2023-03-16T06:00:10Z",
+    "timestamp": 1678946410000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        20
+      ]
+    ],
+    "date-time": "2023-04-20T13:42:48Z",
+    "timestamp": 1681998168000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100008530",
+      "award": [
+        "2014-2020.4.01.15-0012",
+        "2014-2020.4.01.16012",
+        "2014-2020.4.01.15-0012",
+        "2014-2020.4.01.16012",
+        "2014-2020.4.01.15-0012",
+        "2014-2020.4.01.16012",
+        "2014-2020.4.01.16012",
+        "2014-2020.4.01.15-0012",
+        "2014-2020.4.01.15-0012",
+        "2014-2020.4.01.16012",
+        "2014-2020.4.01.15-0012",
+        "2014-2020.4.01.16012",
+        "2014-2020.4.01.16012",
+        "2014-2020.4.01.15-0012",
+        "2014-2020.4.01.15-0012",
+        "2014-2020.4.01.16012"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "EC | European Regional Development Fund"
+    },
+    {
+      "DOI": "10.13039/501100002301",
+      "award": [
+        "PRG1189"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Eesti Teadusagentuur"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        2
+      ]
+    ],
+    "date-time": "2024-02-02T05:29:02Z",
+    "timestamp": 1706851742907
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        16
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            16
+          ]
+        ],
+        "date-time": "2023-03-16T00:00:00Z",
+        "timestamp": 1678924800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            16
+          ]
+        ],
+        "date-time": "2023-03-16T00:00:00Z",
+        "timestamp": 1678924800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01326-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01326-8",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01326-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        16
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.disamonth.2020.101103",
+      "author": "DE Greydanus",
+      "doi-asserted-by": "publisher",
+      "first-page": "101103",
+      "journal-title": "Dis-a-Mon",
+      "key": "1326_CR1",
+      "unstructured": "Greydanus DE, Azmeh R, Cabral MD, Dickson CA, Patel DR. Acne in the first three decades of life: An update of a disorder with profound implications for all decades of life. Dis-a-Mon. 2021;67:101103.",
+      "volume": "67",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/jid.2009.47",
+      "author": "SZ Ghodsi",
+      "doi-asserted-by": "publisher",
+      "first-page": "2136",
+      "journal-title": "J Investig Dermatol",
+      "key": "1326_CR2",
+      "unstructured": "Ghodsi SZ, Orawa H, Zouboulis CC. Prevalence, Severity, and Severity Risk Factors of Acne in High School Pupils: A Community-Based Study. J Investig Dermatol. 2009;129:2136–41.",
+      "volume": "129",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/j.0906-6705.2005.0285a.x",
+      "author": "CC Zouboulis",
+      "doi-asserted-by": "publisher",
+      "first-page": "143",
+      "journal-title": "Exp Dermatol",
+      "key": "1326_CR3",
+      "unstructured": "Zouboulis CC, Eady A, Philpott M, Goldsmith LA, Orfanos C, Cunliffe WC, et al. What is the pathogenesis of acne? Exp Dermatol. 2005;14:143.",
+      "volume": "14",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.jaad.2007.06.045",
+      "author": "CN Collier",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "journal-title": "J Am Acad Dermatol",
+      "key": "1326_CR4",
+      "unstructured": "Collier CN, Harper JC, Cantrell WC, Wang W, Foster KW, Elewski BE. The prevalence of acne in adults 20 years and older. J Am Acad Dermatol. 2008;58:56–9.",
+      "volume": "58",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(11)60321-8",
+      "author": "HC Williams",
+      "doi-asserted-by": "publisher",
+      "first-page": "361",
+      "journal-title": "Lancet.",
+      "key": "1326_CR5",
+      "unstructured": "Williams HC, Dellavalle RP, Garner S. Acne vulgaris. Lancet. 2012;379:361–72.",
+      "volume": "379",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1111/bjd.13786",
+      "author": "S Ramrakha",
+      "doi-asserted-by": "publisher",
+      "first-page": "1079",
+      "journal-title": "Br J Dermatol",
+      "key": "1326_CR6",
+      "unstructured": "Ramrakha S, Fergusson DM, Horwood LJ, Dalgard F, Ambler A, Kokaua J, et al. Cumulative mental health consequences of acne: 23-year follow-up in a general population birth cohort study. Br J Dermatol. 2016;175:1079–81.",
+      "volume": "175",
+      "year": "2016"
+    },
+    {
+      "author": "JH Saurat",
+      "first-page": "105",
+      "journal-title": "DRM.",
+      "key": "1326_CR7",
+      "unstructured": "Saurat JH. Strategic Targets in Acne: The Comedone Switch in Question. DRM. 2015;231:105–11.",
+      "volume": "231",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1111/bjd.17981",
+      "author": "RW Clayton",
+      "doi-asserted-by": "publisher",
+      "first-page": "677",
+      "journal-title": "Br J Dermatol",
+      "key": "1326_CR8",
+      "unstructured": "Clayton RW, Göbel K, Niessen CM, Paus R, van Steensel MAM, Lim X. Homeostasis of the sebaceous gland and mechanisms of acne pathogenesis. Br J Dermatol. 2019;181:677–90.",
+      "volume": "181",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.jid.2021.11.034",
+      "author": "W Shang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2603",
+      "journal-title": "J Investig Dermatol",
+      "key": "1326_CR9",
+      "unstructured": "Shang W, Tan AYQ, van Steensel MAM, Lim X. Aberrant Wnt Signaling Induces Comedo-Like Changes in the Murine Upper Hair Follicle. J Investig Dermatol. 2022;142:2603–12.e6.",
+      "volume": "142",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1111/exd.14394",
+      "author": "MAM van Steensel",
+      "doi-asserted-by": "publisher",
+      "first-page": "1471",
+      "journal-title": "Exp Dermatol",
+      "key": "1326_CR10",
+      "unstructured": "van Steensel MAM, Goh BC. Cutibacterium acnes: Much ado about maybe nothing much. Exp Dermatol. 2021;30:1471–6.",
+      "volume": "30",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1017/thg.2017.58",
+      "author": "A Mina-Vargas",
+      "doi-asserted-by": "publisher",
+      "first-page": "541",
+      "journal-title": "Twin Res Hum Genet",
+      "key": "1326_CR11",
+      "unstructured": "Mina-Vargas A, Colodro-Conde L, Grasby K, Zhu G, Gordon S, Medland SE, et al. Heritability and GWAS Analyses of Acne in Australian Adolescent Twins. Twin Res Hum Genet. 2017;20:541–9.",
+      "volume": "20",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/bjd.17721",
+      "author": "JEA Common",
+      "doi-asserted-by": "publisher",
+      "first-page": "665",
+      "journal-title": "Br J Dermatol",
+      "key": "1326_CR12",
+      "unstructured": "Common JEA, Barker JN, van Steensel MAM. What does acne genetics teach us about disease pathogenesis? Br J Dermatol. 2019;181:665–76.",
+      "volume": "181",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12920-021-00953-8",
+      "author": "AHS Heng",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Med Genomics",
+      "key": "1326_CR13",
+      "unstructured": "Heng AHS, Say YH, Sio YY, Ng YT, Chew FT. Gene variants associated with acne vulgaris presentation and severity: a systematic review and meta-analysis. BMC Med Genomics. 2021;14:103.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.5114/ada.2019.84592",
+      "author": "S Demirkan",
+      "doi-asserted-by": "publisher",
+      "first-page": "173",
+      "journal-title": "Postepy Dermatol Alergol",
+      "key": "1326_CR14",
+      "unstructured": "Demirkan S, Sayın DB, Gündüz Ö. CAG polymorphism in the androgen receptor gene in women may be associated with nodulocystic acne. Postepy Dermatol Alergol. 2019;36:173–6.",
+      "volume": "36",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00439-013-1374-4",
+      "author": "M Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "259",
+      "journal-title": "Hum Genet",
+      "key": "1326_CR15",
+      "unstructured": "Zhang M, Qureshi AA, Hunter DJ, Han J. A genome-wide association study of severe teenage acne in European Americans. Hum Genet. 2014;133:259–64.",
+      "volume": "133",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/ncomms5020",
+      "author": "AA Navarini",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1326_CR16",
+      "unstructured": "Navarini AA, Simpson MA, Weale M, Knight J, Carlavan I, Reiniche P, et al. Genome-wide association study identifies three novel susceptibility loci for severe Acne vulgaris. Nat Commun. 2014;5:4020.",
+      "volume": "5",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41467-018-07459-5",
+      "author": "C Petridis",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1326_CR17",
+      "unstructured": "Petridis C, Navarini AA, Dand N, Saklatvala J, Baudry D, Duckworth M, et al. Genome-wide meta-analysis implicates mediators of hair follicle development and morphogenesis in risk for severe acne. Nat Commun. 2018;9:5075.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-022-28252-5",
+      "author": "BL Mitchell",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1326_CR18",
+      "unstructured": "Mitchell BL, Saklatvala JR, Dand N, Hagenbeek FA, Li X, Min JL, et al. Genome-wide association meta-analysis identifies 29 new acne susceptibility loci. Nat Commun. 2022;13:702.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00870-7",
+      "author": "J Mbatchou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1097",
+      "journal-title": "Nat Genet",
+      "key": "1326_CR19",
+      "unstructured": "Mbatchou J, Barnard L, Backman J, Marcketta A, Kosmicki JA, Ziyatdinov A, et al. Computationally efficient whole-genome regression for quantitative and binary traits. Nat Genet. 2021;53:1097–103.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0184-y",
+      "author": "W Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1335",
+      "journal-title": "Nat Genet",
+      "key": "1326_CR20",
+      "unstructured": "Zhou W, Nielsen JB, Fritsche LG, Dey R, Gabrielsen ME, Wolford BN, et al. Efficiently controlling for case-control imbalance and sample relatedness in large-scale genetic association studies. Nat Genet. 2018;50:1335–41.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq340",
+      "author": "CJ Willer",
+      "doi-asserted-by": "publisher",
+      "first-page": "2190",
+      "journal-title": "Bioinformatics.",
+      "key": "1326_CR21",
+      "unstructured": "Willer CJ, Li Y, Abecasis GR. METAL: fast and efficient meta-analysis of genomewide association scans. Bioinformatics. 2010;26:2190–1.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41467-017-01261-5",
+      "author": "K Watanabe",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1326_CR22",
+      "unstructured": "Watanabe K, Taskesen E, van Bochoven A, Posthuma D. Functional mapping and annotation of genetic associations with FUMA. Nat Commun. 2017;8:1826.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1004219",
+      "author": "CA de Leeuw",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1004219",
+      "journal-title": "PLoS Comput Biol",
+      "key": "1326_CR23",
+      "unstructured": "de Leeuw CA, Mooij JM, Heskes T, Posthuma D. MAGMA: generalized gene-set analysis of GWAS data. PLoS Comput Biol. 2015;11:e1004219.",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3211",
+      "author": "BK Bulik-Sullivan",
+      "doi-asserted-by": "publisher",
+      "first-page": "291",
+      "journal-title": "Nat Genet",
+      "key": "1326_CR24",
+      "unstructured": "Bulik-Sullivan BK, Loh PR, Finucane H, Ripke S, Yang J, Patterson N, et al. LD Score Regression Distinguishes Confounding from Polygenicity in Genome-Wide Association Studies. Nat Genet. 2015;47:291–5.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41467-019-09718-5",
+      "author": "T Ge",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1326_CR25",
+      "unstructured": "Ge T, Chen CY, Ni Y, Feng YCA, Smoller JW. Polygenic prediction via Bayesian regression and continuous shrinkage priors. Nat Commun. 2019;10:1776.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ncomms3870",
+      "author": "L He",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1326_CR26",
+      "unstructured": "He L, Wu WJ, Yang JK, Cheng H, Zuo XB, Lai W, et al. Two new susceptibility loci 1q24.2 and 11p11.2 confer risk to severe acne. Nat Commun. 2014;5:2870.",
+      "volume": "5",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/s11154-016-9389-5",
+      "author": "CC Zouboulis",
+      "doi-asserted-by": "publisher",
+      "first-page": "319",
+      "journal-title": "Rev Endocr Metab Disord",
+      "key": "1326_CR27",
+      "unstructured": "Zouboulis CC, Picardo M, Ju Q, Kurokawa I, Törőcsik D, Bíró T, et al. Beyond acne: Current aspects of sebaceous gland biology and function. Rev Endocr Metab Disord. 2016;17:319–34.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1101/cshperspect.a008029",
+      "author": "X Lim",
+      "doi-asserted-by": "publisher",
+      "first-page": "a008029",
+      "journal-title": "Cold Spring Harb Perspect Biol",
+      "key": "1326_CR28",
+      "unstructured": "Lim X, Nusse R. Wnt Signaling in Skin Development, Homeostasis, and Disease. Cold Spring Harb Perspect Biol. 2013;5:a008029.",
+      "volume": "5",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2015.12.041",
+      "author": "K Kretzschmar",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "journal-title": "Cell Rep",
+      "key": "1326_CR29",
+      "unstructured": "Kretzschmar K, Weber C, Driskell RR, Calonje E, Watt FM. Compartmentalized Epidermal Activation of β-Catenin Differentially Affects Lineage Reprogramming and Underlies Tumor Heterogeneity. Cell Rep. 2016;14:269–81.",
+      "volume": "14",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ncb2903",
+      "author": "WH Lien",
+      "doi-asserted-by": "publisher",
+      "first-page": "179",
+      "journal-title": "Nat Cell Biol",
+      "key": "1326_CR30",
+      "unstructured": "Lien WH, Polak L, Lin M, Lay K, Zheng D, Fuchs E. In vivo transcriptional governance of hair follicle stem cells by canonical Wnt regulators. Nat Cell Biol. 2014;16:179–90.",
+      "volume": "16",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3390/ijms151017852",
+      "author": "AJ Schneider",
+      "doi-asserted-by": "publisher",
+      "first-page": "17852",
+      "journal-title": "Int J Mol Sci",
+      "key": "1326_CR31",
+      "unstructured": "Schneider AJ, Branam AM, Peterson RE. Intersection of AHR and Wnt Signaling in Development, Health, and Disease. Int J Mol Sci. 2014;15:17852–85.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1684/ejd.2021.3964",
+      "author": "K Cao",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "journal-title": "Eur J Dermatol",
+      "key": "1326_CR32",
+      "unstructured": "Cao K, Chen G, Chen W, Hou X, Hu T, Lu L, et al. Formalin-killed Propionibacterium acnes activates the aryl hydrocarbon receptor and modifies differentiation of SZ95 sebocytes in vitro. Eur J Dermatol. 2021;31:32–40.",
+      "volume": "31",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/jcp.24853",
+      "author": "Q Feng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1170",
+      "journal-title": "J Cell Physiol",
+      "key": "1326_CR33",
+      "unstructured": "Feng Q, Gao N. Keeping Wnt Signalosome in Check by Vesicular Traffic. J Cell Physiol. 2015;230:1170–80.",
+      "volume": "230",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1126/stke.18pe10",
+      "author": "CS Cselenyi",
+      "doi-asserted-by": "publisher",
+      "first-page": "pe10",
+      "journal-title": "Sci Signal",
+      "key": "1326_CR34",
+      "unstructured": "Cselenyi CS, Lee E. Context-Dependent Activation or Inhibition of Wnt-β-Catenin Signaling by Kremen. Sci Signal. 2008;1:pe10.",
+      "volume": "1",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1007/s10753-020-01193-1",
+      "author": "JJ Liang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1077",
+      "journal-title": "Inflammation.",
+      "key": "1326_CR35",
+      "unstructured": "Liang JJ, Li HR, Chen Y, Zhou Z, Shi YQ, Zhang LL, et al. ZNRF3 Regulates Collagen-Induced Arthritis Through NF-kB and Wnt Pathways. Inflammation. 2020;43:1077–87.",
+      "volume": "43",
+      "year": "2020"
+    },
+    {
+      "author": "M Katoh",
+      "first-page": "587",
+      "journal-title": "Int J Mol Med",
+      "key": "1326_CR36",
+      "unstructured": "Katoh M, Katoh M. Molecular genetics and targeted therapy of WNT-related human diseases (Review). Int J Mol Med. 2017;40:587–606.",
+      "volume": "40",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1242/dev.083113",
+      "author": "N Barker",
+      "doi-asserted-by": "publisher",
+      "first-page": "2484",
+      "journal-title": "Development",
+      "key": "1326_CR37",
+      "unstructured": "Barker N, Tan S, Clevers H. Lgr proteins in epithelial stem cell biology. Development 2013;140:2484–94.",
+      "volume": "140",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1101/gad.235473.113",
+      "author": "W de Lau",
+      "doi-asserted-by": "publisher",
+      "first-page": "305",
+      "journal-title": "Genes Dev",
+      "key": "1326_CR38",
+      "unstructured": "de Lau W, Peng WC, Gros P, Clevers H. The R-spondin/Lgr5/Rnf43 module: regulator of Wnt signal strength. Genes Dev. 2014;28:305–16.",
+      "volume": "28",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.biocel.2018.11.005",
+      "author": "AA Raslan",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "journal-title": "Int J Biochem Cell Biol",
+      "key": "1326_CR39",
+      "unstructured": "Raslan AA, Yoon JK, R-spondins, Multi-mode WNT. signaling regulators in adult stem cells. Int J Biochem Cell Biol. 2019;106:26–34.",
+      "volume": "106",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1080/19336918.2015.1005465",
+      "author": "X Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "406",
+      "journal-title": "Cell Adh Migr",
+      "key": "1326_CR40",
+      "unstructured": "Jiang X, Zhang J, Huang Y. Tetraspanins in Cell Migration. Cell Adh Migr. 2015;9:406–15.",
+      "volume": "9",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3390/cancers12051297",
+      "author": "M El Kharbili",
+      "doi-asserted-by": "publisher",
+      "first-page": "1297",
+      "journal-title": "Cancers",
+      "key": "1326_CR41",
+      "unstructured": "El Kharbili M, Cario M, Béchetoille N, Pain C, Boucheix C, Degoul F, et al. Tspan8 Drives Melanoma Dermal Invasion by Promoting ProMMP-9 Activation and Basement Membrane Proteolysis in a Keratinocyte-Dependent Manner. Cancers. 2020;12:1297.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.21037/atm.2019.08.02",
+      "author": "X Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "470",
+      "journal-title": "Ann Transl Med",
+      "key": "1326_CR42",
+      "unstructured": "Lin X, Bi Z, Hu Q, Li Q, Liu J, Luo ML, et al. TSPAN8 serves as a prognostic marker involving Akt/MAPK pathway in nasopharyngeal carcinoma. Ann Transl Med. 2019;7:470.",
+      "volume": "7",
+      "year": "2019"
+    },
+    {
+      "author": "B Chen",
+      "first-page": "3739086",
+      "journal-title": "Biomed Res Int",
+      "key": "1326_CR43",
+      "unstructured": "Chen B, Zheng Y, Liang Y. Analysis of Potential Genes and Pathways Involved in the Pathogenesis of Acne by Bioinformatics. Biomed Res Int. 2019;2019:3739086.",
+      "volume": "2019",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00403-019-01908-x",
+      "author": "TX Cong",
+      "doi-asserted-by": "publisher",
+      "first-page": "337",
+      "journal-title": "Arch Dermatol Res",
+      "key": "1326_CR44",
+      "unstructured": "Cong TX, Hao D, Wen X, Li XH, He G, Jiang X. From pathogenesis of acne vulgaris to anti-acne agents. Arch Dermatol Res. 2019;311:337–49.",
+      "volume": "311",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.4161/derm.1.2.8472",
+      "author": "M Picardo",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "journal-title": "Dermatoendocrinol",
+      "key": "1326_CR45",
+      "unstructured": "Picardo M, Ottaviani M, Camera E, Mastrofrancesco A. Sebaceous gland lipids. Dermatoendocrinol. 2009;1:68–71.",
+      "volume": "1",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41598-021-96043-x",
+      "author": "OE Okoro",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci Rep",
+      "key": "1326_CR46",
+      "unstructured": "Okoro OE, Adenle A, Ludovici M, Truglio M, Marini F, Camera E. Lipidomics of facial sebum in the comparison between acne and non-acne adolescents with dark skin. Sci Rep. 2021;11:16591.",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1126/scitranslmed.aau8465",
+      "author": "WP Esler",
+      "doi-asserted-by": "publisher",
+      "first-page": "eaau8465",
+      "journal-title": "Sci Transl Med",
+      "key": "1326_CR47",
+      "unstructured": "Esler WP, Tesz GJ, Hellerstein MK, Beysen C, Sivamani R, Turner SM, et al. Human sebum requires de novo lipogenesis, which is increased in acne vulgaris and suppressed by acetyl-CoA carboxylase inhibition. Sci Transl Med. 2019;11:eaau8465.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nrc2222",
+      "author": "JA Menendez",
+      "doi-asserted-by": "publisher",
+      "first-page": "763",
+      "journal-title": "Nat Rev Cancer",
+      "key": "1326_CR48",
+      "unstructured": "Menendez JA, Lupu R. Fatty acid synthase and the lipogenic phenotype in cancer pathogenesis. Nat Rev Cancer. 2007;7:763–77.",
+      "volume": "7",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2013.01.013",
+      "author": "DL Cottle",
+      "doi-asserted-by": "publisher",
+      "first-page": "427",
+      "journal-title": "Cell Rep",
+      "key": "1326_CR49",
+      "unstructured": "Cottle DL, Kretzschmar K, Schweiger PJ, Quist SR, Gollnick HP, Natsuga K, et al. c-MYC-Induced Sebaceous Gland Differentiation Is Controlled by an Androgen Receptor/p53 Axis. Cell Rep. 2013;3:427–41.",
+      "volume": "3",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.bbalip.2015.11.007",
+      "author": "HG Park",
+      "doi-asserted-by": "publisher",
+      "first-page": "91",
+      "journal-title": "Biochim Biophys Acta",
+      "key": "1326_CR50",
+      "unstructured": "Park HG, Kothapalli KSD, Park WJ, DeAllie C, Liu L, Liang A, et al. Palmitic acid (16:0) competes with omega-6 linoleic and omega-3 α-linolenic acids for FADS2 mediated Δ6-desaturation. Biochim Biophys Acta. 2016;1861:91–7.",
+      "volume": "1861",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0194610",
+      "author": "LM Reynolds",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0194610",
+      "journal-title": "PLoS ONE",
+      "key": "1326_CR51",
+      "unstructured": "Reynolds LM, Howard TD, Ruczinski I, Kanchan K, Seeds MC, Mathias RA, et al. Tissue-specific impact of FADS cluster variants on FADS1 and FADS2 gene expression. PLoS ONE. 2018;13:e0194610.",
+      "volume": "13",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.plefa.2019.08.005",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Prostaglandins Leukotrienes Essent Fat Acids",
+      "key": "1326_CR52",
+      "unstructured": "Chen X, Wu Y, Zhang Z, Zheng X, Wang Y, Yu M, et al. Effects of the rs3834458 Single Nucleotide Polymorphism in FADS2 on Levels of n-3 Long-chain Polyunsaturated Fatty Acids: A Meta-analysis. Prostaglandins Leukotrienes Essent Fat Acids. 2019;150:1–6.",
+      "volume": "150",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.4049/jimmunol.1300298",
+      "doi-asserted-by": "crossref",
+      "key": "1326_CR53",
+      "unstructured": "Snodgrass RG, Huang S, Choi IW, Rutledge JC, Hwang DH. Inflammasome-mediated secretion of IL-1β in human monocytes through TLR2 activation; Modulation by dietary fatty acids. J Immunol. 2013;191:4337–47."
+    },
+    {
+      "DOI": "10.1111/jdv.14374",
+      "author": "B Dréno",
+      "doi-asserted-by": "publisher",
+      "first-page": "8",
+      "journal-title": "J Eur Acad Dermatol Venereol",
+      "key": "1326_CR54",
+      "unstructured": "Dréno B. What is new in the pathophysiology of acne, an overview. J Eur Acad Dermatol Venereol. 2017;31:8–12.",
+      "volume": "31",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.12688/f1000research.25588.1",
+      "author": "I Kurokawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "F1000",
+      "journal-title": "F1000Res",
+      "key": "1326_CR55",
+      "unstructured": "Kurokawa I, Nakase K. Recent advances in understanding and managing acne. F1000Res. 2020;9:F1000.",
+      "volume": "9",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 55,
+  "references-count": 55,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01326-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Genome-wide meta-analysis identifies novel loci conferring risk of acne vulgaris"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

@@ -1,0 +1,590 @@
+{
+  "DOI": "10.1002/gepi.22489",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22489",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003e5‐hydroxymethylcytosine (5hmC) is a methylation state linked with gene regulation, commonly found in cells of the central nervous system. 5hmC is associated with demethylation of cytosines from 5‐methylcytosine (5mC) to the unmethylated state. The presence of 5hmC can be inferred by a paired experiment involving bisulfite and oxidation‐bisulfite treatments on the same sample, followed by a methylation assay using a platform such as the Illumina Infinium MethylationEPIC BeadChip (EPIC). Existing methods for analysis of the resulting EPIC data are not ideal. Most approaches ignore the correlation between the two experiments and any imprecision associated with DNA damage from the additional treatment. Estimates of 5mC/5hmC levels free from these limitations are desirable to reveal associations between methylation states and phenotypes. We propose a hierarchical Bayesian method called Constrained HYdroxy Methylation Estimation (CHYME) to simultaneously estimate 5mC/5hmC signals as well as any associations between these signals and covariates or phenotypes, while accounting for the potential impact of DNA damage and dependencies induced by the experimental design. Simulations show that CHYME has valid type 1 error and better power than a range of alternative methods, including the popular OxyBS method and linear models on transformed proportions. Other methods we examined suffer from hugely inflated type 1 error for inference on 5hmC proportions. We use CHYME to explore genome‐wide associations between 5mC/5hmC levels and cause of death in postmortem prefrontal cortex brain tissue samples. These analyses indicate that CHYME is a useful tool to reveal phenotypic associations with 5mC/5hmC levels.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22489"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-06-30"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-05-04"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-06-26"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-0244-4620",
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital Montréal Québec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Jiang",
+      "given": "Lai",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital Montréal Québec Canada"
+        }
+      ],
+      "family": "Greenlaw",
+      "given": "Keelin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University Montréal Québec Canada"
+        }
+      ],
+      "family": "Ciampi",
+      "given": "Antonio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Mathematics and Statistics McMaster University Hamilton Ontario Canada"
+        }
+      ],
+      "family": "Canty",
+      "given": "Angelo J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry Douglas Institute, McGill University Montréal Québec Canada"
+        }
+      ],
+      "family": "Gross",
+      "given": "Jeffrey",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4075-2736",
+      "affiliation": [
+        {
+          "name": "Department of Psychiatry Douglas Institute, McGill University Montréal Québec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Turecki",
+      "given": "Gustavo",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2427-5696",
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute for Medical Research Jewish General Hospital Montréal Québec Canada"
+        },
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University Montréal Québec Canada"
+        },
+        {
+          "name": "Gerald Bronfman Department of Oncology McGill University Montréal Québec Canada"
+        },
+        {
+          "name": "Department of Human Genetics McGill University Montréal Québec Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Greenwood",
+      "given": "Celia M. T.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        26
+      ]
+    ],
+    "date-time": "2022-06-26T17:24:56Z",
+    "timestamp": 1656264296000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        23
+      ]
+    ],
+    "date-time": "2023-08-23T08:21:35Z",
+    "timestamp": 1692778895000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        11
+      ]
+    ],
+    "date-time": "2023-12-11T18:47:19Z",
+    "timestamp": 1702320439295
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        26
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            6,
+            26
+          ]
+        ],
+        "date-time": "2022-06-26T00:00:00Z",
+        "timestamp": 1656201600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22489",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22489",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22489",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "446-462",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        26
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        26
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        10
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "key": "e_1_2_10_2_1",
+      "unstructured": "Alexa A. \u0026Rahnenführer J.(2010). topGO: Enrichment analysis for gene ontology.R package version 2 2010."
+    },
+    {
+      "DOI": "10.3928/00485713-20090526-01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_3_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0131708",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_4_1",
+      "unstructured": "Bjørngaard J. H. Carslake D. Nilsen T. I. L. Linthorst A. C. Smith G. D. Gunnell D. \u0026Romundstad P. R.(2015).Association of body mass index with depression anxiety and suicide—An instrumental variable analysis of the HUNT study.PloS One 10(7).https://doi.org/10.1371/journal.pone.0131708"
+    },
+    {
+      "DOI": "10.1038/nrg3273",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_5_1"
+    },
+    {
+      "DOI": "10.18637/jss.v076.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_6_1"
+    },
+    {
+      "DOI": "10.1038/cr.2015.150",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_7_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddy193",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_8_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0108900",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_9_1",
+      "unstructured": "Chojnicka I. Fudalej S. Walczak A. Wasilewska K. Fudalej M. Stawiński P. \u0026Ploski R.(2014).Inverse association between obesity predisposing FTO genotype and completed suicide.PloS One 9(9).https://doi.org/10.1371/journal.pone.0108900"
+    },
+    {
+      "DOI": "10.1038/tp.2012.86",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_10_1"
+    },
+    {
+      "DOI": "10.1016/j.pnpbp.2013.12.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_11_1"
+    },
+    {
+      "DOI": "10.2174/156802607782341037",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_12_1"
+    },
+    {
+      "DOI": "10.1037/h0044139",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_13_1"
+    },
+    {
+      "key": "e_1_2_10_14_1",
+      "unstructured": "Gabry J. \u0026Goodrich B.(2016). rstanarm: Bayesian applied regression modeling via Stan. R package version 2.10. 0."
+    },
+    {
+      "DOI": "10.1186/gb-2004-5-10-r80",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_15_1"
+    },
+    {
+      "DOI": "10.1038/tp.2017.93",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_16_1"
+    },
+    {
+      "DOI": "10.1186/s12864-015-1875-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_17_1"
+    },
+    {
+      "DOI": "10.1093/nar/29.13.e65",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_18_1"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2013.01.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_19_1"
+    },
+    {
+      "DOI": "10.18637/jss.v076.i14",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_20_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw158",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_21_1"
+    },
+    {
+      "DOI": "10.1126/science.1210597",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_22_1"
+    },
+    {
+      "DOI": "10.1007/978-94-010-1436-6_6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_23_1"
+    },
+    {
+      "DOI": "10.1093/brain/awv284",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_24_1"
+    },
+    {
+      "DOI": "10.1038/onc.2012.362",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_25_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1995.10476572",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_26_1"
+    },
+    {
+      "DOI": "10.1038/nsmb.2372",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_27_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.30551",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_28_1"
+    },
+    {
+      "DOI": "10.1515/sagmb-2018-0031",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_29_1",
+      "unstructured": "Kiihl S. F. Martinez‐Garrido M. J. Domingo‐Relloso A. Bermudez J. \u0026Tellez‐Plaza M.(2019).MLML2R: An R package for maximum likelihood estimation of DNA methylation and hydroxymethylation proportions.Statistical Applications in Genetics and Molecular Biology 18(1) 20180031.https://doi.org/10.1515/sagmb-2018-0031"
+    },
+    {
+      "DOI": "10.3389/fgene.2019.00801",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_30_1",
+      "unstructured": "Kochmanski J. Savonen C. \u0026Bernstein A. I.(2019).A novel application of mixed effects models for reconciling base‐pair resolution 5‐methylcytosine and 5‐hydroxymethylcytosine data in neuroepigenetics.Frontiers in Genetics 10.https://doi.org/10.3389/fgene.2019.00801"
+    },
+    {
+      "DOI": "10.1126/science.1169786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_31_1"
+    },
+    {
+      "DOI": "10.1126/science.1169786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_32_1"
+    },
+    {
+      "DOI": "10.1016/j.neuropharm.2009.07.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_33_1"
+    },
+    {
+      "DOI": "10.1038/nature08514",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_34_1"
+    },
+    {
+      "DOI": "10.1016/j.arr.2017.05.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_35_1"
+    },
+    {
+      "DOI": "10.1007/s00406-015-0612-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_36_1"
+    },
+    {
+      "DOI": "10.1176/appi.ajp.2008.08020274",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_37_1"
+    },
+    {
+      "DOI": "10.1038/mp.2014.21",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_38_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv615",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_39_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006916",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_40_1"
+    },
+    {
+      "DOI": "10.2217/pgs.10.189",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_41_1"
+    },
+    {
+      "DOI": "10.1186/s13059-016-1066-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_42_1"
+    },
+    {
+      "DOI": "10.1097/FPC.0000000000000328",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_43_1"
+    },
+    {
+      "DOI": "10.1089/gtmb.2013.0197",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_44_1"
+    },
+    {
+      "DOI": "10.1016/j.euroneuro.2011.08.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_45_1"
+    },
+    {
+      "DOI": "10.1016/j.pnpbp.2021.110428",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_46_1"
+    },
+    {
+      "DOI": "10.1186/s12864-016-2731-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_47_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bth176",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_48_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0218103",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_49_1",
+      "unstructured": "Slynko A. \u0026Benner A.(2019).Statistical methods for classification of 5hmc levels based on the Illumina inifinium HumanMethylation450 (450k) array data under the paired bisulfite (BS) and oxidative bisulfite (oxBS) treatment.PloS One 14(6).https://doi.org/10.1371/journal.pone.0218103"
+    },
+    {
+      "DOI": "10.1186/s12864-017-4091-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_50_1"
+    },
+    {
+      "DOI": "10.1007/s00439-011-0948-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_51_1"
+    },
+    {
+      "DOI": "10.1126/science.1170116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_52_1"
+    },
+    {
+      "DOI": "10.2147/NDT.S97456",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_53_1"
+    },
+    {
+      "key": "e_1_2_10_54_1",
+      "unstructured": "Stan Development Team. (2016). Stan modeling language users guide and reference manual.Technical report."
+    },
+    {
+      "DOI": "10.1109/GENSiPS.2011.6169428",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_55_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0057945",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_56_1",
+      "unstructured": "Tyagi E. Agrawal R. Zhuang Y. Abad C. Waschek J. A. \u0026Gomez‐Pinilla F.(2013).Vulnerability imposed by diet and brain trauma for anxiety‐like phenotype: Implications for post‐traumatic stress disorders.PloS One 8(3).https://doi.org/10.1371/journal.pone.0057945"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw527",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_57_1"
+    },
+    {
+      "DOI": "10.1038/tp.2013.123",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_58_1"
+    },
+    {
+      "DOI": "10.1016/j.jpsychires.2016.12.019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_59_1"
+    }
+  ],
+  "reference-count": 58,
+  "references-count": 58,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22489"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A Bayesian hierarchical model for improving measurement of 5mC and 5hmC levels: Toward revealing associations between phenotypes and methylation states"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

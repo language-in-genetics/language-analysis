@@ -1,0 +1,753 @@
+{
+  "DOI": "10.1007/s00439-023-02638-x",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-023-02638-x",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIdentifying disease-causing variants in Rare Disease patients’ genome is a challenging problem. To accomplish this task, we describe a machine learning framework, that we called “Suggested Diagnosis”, whose aim is to prioritize genetic variants in an exome/genome based on the probability of being disease-causing. To do so, our method leverages standard guidelines for germline variant interpretation as defined by the American College of Human Genomics (ACMG) and the Association for Molecular Pathology (AMP), inheritance information, phenotypic similarity, and variant quality. Starting from (1) the VCF file containing proband’s variants, (2) the list of proband’s phenotypes encoded in Human Phenotype Ontology terms, and optionally (3) the information about family members (if available), the “Suggested Diagnosis” ranks all the variants according to their machine learning prediction. This method significantly reduces the number of variants that need to be evaluated by geneticists by pinpointing causative variants in the very first positions of the prioritized list. Most importantly, our approach proved to be among the top performers within the CAGI6 Rare Genome Project Challenge, where it was able to rank the true causative variant among the first positions and, uniquely among all the challenge participants, increased the diagnostic yield of 12.5% by solving 2 undiagnosed cases.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2638"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "28 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "27 December 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "23 March 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "FDP, IL, and SZ are full employees of enGenome. RB, IL, PM, ER, and SZ have shares of enGenome."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Zucca",
+      "given": "S.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Nicora",
+      "given": "G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De Paoli",
+      "given": "F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Carta",
+      "given": "M. G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bellazzi",
+      "given": "R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Magni",
+      "given": "P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rizzo",
+      "given": "E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Limongelli",
+      "given": "I.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        23
+      ]
+    ],
+    "date-time": "2024-03-23T10:01:47Z",
+    "timestamp": 1711188107000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        23
+      ]
+    ],
+    "date-time": "2024-03-23T10:04:09Z",
+    "timestamp": 1711188249000
+  },
+  "funder": [
+    {
+      "award": [
+        "190164416",
+        "190164416",
+        "190164416",
+        "190164416",
+        "190164416"
+      ],
+      "name": "EIC Accelerator"
+    },
+    {
+      "DOI": "10.13039/501100004769",
+      "doi-asserted-by": "crossref",
+      "name": "Università degli Studi di Pavia"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        24
+      ]
+    ],
+    "date-time": "2024-03-24T00:44:26Z",
+    "timestamp": 1711241066979
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        23
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            23
+          ]
+        ],
+        "date-time": "2024-03-23T00:00:00Z",
+        "timestamp": 1711152000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            23
+          ]
+        ],
+        "date-time": "2024-03-23T00:00:00Z",
+        "timestamp": 1711152000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02638-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-023-02638-x/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02638-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        23
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        23
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "key": "2638_CR1",
+      "unstructured": "(2021) 100,000 Genomes Pilot on Rare-Disease Diagnosis in Health Care — Preliminary Report. N Engl J Med 385:1868–1880"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "A Auton",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "journal-title": "Nature",
+      "key": "2638_CR2",
+      "unstructured": "Auton A et al (2015) A global reference for human genetic variation. Nature 526:68–74",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1126/scitranslmed.aau9113",
+      "author": "J Birgmeier",
+      "doi-asserted-by": "publisher",
+      "first-page": "9113",
+      "journal-title": "Sci Transl Med",
+      "key": "2638_CR3",
+      "unstructured": "Birgmeier J et al (2020) AMELIE speeds Mendelian diagnosis by matching patient phenotype and genotype to primary literature. Sci Transl Med 12:9113",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "author": "WP Bone",
+      "first-page": "608",
+      "journal-title": "Genet Med off J Am Coll Med Genet",
+      "key": "2638_CR4",
+      "unstructured": "Bone WP et al (2016) Computational evaluation of exome sequence data using human and model organism phenotypes improves diagnostic efficiency. Genet Med off J Am Coll Med Genet 18:608–617",
+      "volume": "18",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature14135",
+      "author": "Deciphering Developmental Disorders Study",
+      "doi-asserted-by": "publisher",
+      "first-page": "223",
+      "journal-title": "Nature",
+      "key": "2638_CR5",
+      "unstructured": "Deciphering Developmental Disorders Study (2015) Large-scale discovery of novel genetic causes of developmental disorders. Nature 519:223–228",
+      "volume": "519",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0115692",
+      "author": "Y Deng",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2638_CR6",
+      "unstructured": "Deng Y, Gao L, Wang B, Guo X (2015) HPOSim: an R package for phenotypic similarity measure and enrichment analysis based on the human phenotype ontology. PLoS ONE 10:e0115692",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1111/j.1469-8749.2011.04032.x",
+      "author": "HV Firth",
+      "doi-asserted-by": "publisher",
+      "first-page": "702",
+      "journal-title": "Dev Med Child Neurol",
+      "key": "2638_CR7",
+      "unstructured": "Firth HV, Wright CF (2011) The deciphering developmental disorders (DDD) study. Dev Med Child Neurol 53:702–703",
+      "volume": "53",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.48550/arXiv.2205.05897",
+      "doi-asserted-by": "publisher",
+      "key": "2638_CR8",
+      "unstructured": "Genome Interpretation Consortium (2022) CAGI, the Critical Assessment of Genome Interpretation, establishes progress and prospects for computational genetic variant interpretation methods. Preprint at https://doi.org/10.48550/arXiv.2205.05897"
+    },
+    {
+      "DOI": "10.1002/humu.22768",
+      "author": "DG Grimm",
+      "doi-asserted-by": "publisher",
+      "first-page": "513",
+      "journal-title": "Hum Mutat",
+      "key": "2638_CR9",
+      "unstructured": "Grimm DG et al (2015) The evaluation of tools used to predict the impact of missense variants is hindered by two types of circularity. Hum Mutat 36:513–523",
+      "volume": "36",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.08.016",
+      "author": "NM Ioannidis",
+      "doi-asserted-by": "publisher",
+      "first-page": "877",
+      "journal-title": "Am J Hum Genet",
+      "key": "2638_CR10",
+      "unstructured": "Ioannidis NM et al (2016) REVEL: an ensemble method for predicting the pathogenicity of rare missense variants. Am J Hum Genet 99:877–885",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/humu.24380",
+      "author": "JOB Jacobsen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Hum Mutat",
+      "key": "2638_CR11",
+      "unstructured": "Jacobsen JOB et al (2022) Phenotype-driven approaches to enhance variant prioritization and diagnosis of rare disease. Hum Mutat. https://doi.org/10.1002/humu.24380",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0072-y",
+      "author": "KA Jagadeesh",
+      "doi-asserted-by": "publisher",
+      "first-page": "464",
+      "journal-title": "Genet Med",
+      "key": "2638_CR12",
+      "unstructured": "Jagadeesh KA et al (2019) Phrank measures phenotype sets similarity to greatly improve Mendelian diagnostic disease prioritization. Genet Med 21:464–470",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/gr.176214.114",
+      "author": "P Katsonis",
+      "doi-asserted-by": "publisher",
+      "first-page": "2050",
+      "journal-title": "Genome Res",
+      "key": "2638_CR13",
+      "unstructured": "Katsonis P, Lichtarge O (2014) A formal perturbation equation between genotype and phenotype determines the Evolutionary Action of protein-coding variations on fitness. Genome Res 24:2050–2058",
+      "volume": "24",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/s12916-019-1426-2",
+      "author": "CJ Kelly",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Med",
+      "key": "2638_CR14",
+      "unstructured": "Kelly CJ, Karthikesalingam A, Suleyman M, Corrado G, King D (2019) Key challenges for delivering clinical impact with artificial intelligence. BMC Med 17:1–9",
+      "volume": "17",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.tig.2022.07.002",
+      "author": "C Kelly",
+      "doi-asserted-by": "publisher",
+      "first-page": "1271",
+      "journal-title": "Trends Genet",
+      "key": "2638_CR15",
+      "unstructured": "Kelly C et al (2022) Phenotype-aware prioritisation of rare Mendelian disease variants. Trends Genet 38:1271–1283",
+      "volume": "38",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1043",
+      "author": "S Köhler",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1207",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2638_CR16",
+      "unstructured": "Köhler S et al (2021) The human phenotype ontology in 2021. Nucleic Acids Res 49:D1207–D1217",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty897",
+      "author": "C Kopanos",
+      "doi-asserted-by": "publisher",
+      "first-page": "1978",
+      "journal-title": "Bioinformatics",
+      "key": "2638_CR17",
+      "unstructured": "Kopanos C et al (2019) VarSome: the human genomic variant search engine. Bioinformatics 35:1978–1980",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.01.004",
+      "author": "Q Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "267",
+      "journal-title": "Am J Hum Genet",
+      "key": "2638_CR18",
+      "unstructured": "Li Q, Wang K (2017) InterVar: clinical interpretation of genetic variants by the 2015 ACMG-AMP guidelines. Am J Hum Genet 100:267–280",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "author": "Q Li",
+      "first-page": "2126",
+      "journal-title": "Genet Med off J Am Coll Med Genet",
+      "key": "2638_CR19",
+      "unstructured": "Li Q, Zhao K, Bustamante CD, Ma X, Wong WH (2019) Xrare: a machine learning method jointly modeling phenotypes and genetic evidence for rare disease diagnosis. Genet Med off J Am Coll Med Genet 21:2126–2134",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fmolb.2023.1169109",
+      "author": "L Licata",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Mol Biosci",
+      "key": "2638_CR20",
+      "unstructured": "Licata L et al (2023) Resources and tools for rare disease variant interpretation. Front Mol Biosci. https://doi.org/10.3389/fmolb.2023.1169109",
+      "year": "2023"
+    },
+    {
+      "author": "G Nicora",
+      "first-page": "925",
+      "journal-title": "AMIA Annu Symp Proc AMIA Symp",
+      "key": "2638_CR21",
+      "unstructured": "Nicora G, Bellazzi R (2020) A reliable machine learning approach applied to single-cell classification in acute myeloid leukemia. AMIA Annu Symp Proc AMIA Symp 2020:925–932",
+      "volume": "2020",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/humu.23665",
+      "author": "G Nicora",
+      "doi-asserted-by": "publisher",
+      "first-page": "1835",
+      "journal-title": "Hum Mutat",
+      "key": "2638_CR22",
+      "unstructured": "Nicora G et al (2018) CardioVAI: An automatic implementation of ACMG-AMP variant interpretation guidelines in the diagnosis of cardiovascular diseases. Hum Mutat 39:1835–1846",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41598-022-06547-3",
+      "author": "G Nicora",
+      "doi-asserted-by": "publisher",
+      "first-page": "2517",
+      "journal-title": "Sci Rep",
+      "key": "2638_CR23",
+      "unstructured": "Nicora G, Zucca S, Limongelli I, Bellazzi R, Magni P (2022a) A machine learning approach based on ACMG/AMP guidelines for genomic variant classification and prioritization. Sci Rep 12:2517",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.jbi.2022.103996",
+      "author": "G Nicora",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Biomed Inform",
+      "key": "2638_CR24",
+      "unstructured": "Nicora G, Rios M, Abu-Hanna A, Bellazzi R (2022b) Evaluating pointwise reliability of machine learning prediction. J Biomed Inform 127:103996",
+      "volume": "127",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s10462-010-9165-y",
+      "author": "JA Olvera-López",
+      "doi-asserted-by": "publisher",
+      "first-page": "133",
+      "journal-title": "Artif Intell Rev",
+      "key": "2638_CR25",
+      "unstructured": "Olvera-López JA, Carrasco-Ochoa JA, Martínez-Trinidad JF, Kittler J (2010) A review of instance selection methods. Artif Intell Rev 34:133–143",
+      "volume": "34",
+      "year": "2010"
+    },
+    {
+      "author": "F Pedregosa",
+      "first-page": "2825",
+      "journal-title": "J Mach Learn Res",
+      "key": "2638_CR26",
+      "unstructured": "Pedregosa F et al (2011) Scikit-learn: machine learning in python. J Mach Learn Res 12:2825–2830",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/humu.24277",
+      "author": "J Peng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1567",
+      "journal-title": "Hum Mutat",
+      "key": "2638_CR27",
+      "unstructured": "Peng J et al (2021) VIP-HL: semi-automated ACMG/AMP variant interpretation platform for genetic hearing loss. Hum Mutat 42:1567–1575",
+      "volume": "42",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41598-017-13841-y",
+      "author": "RJ Pengelly",
+      "doi-asserted-by": "publisher",
+      "first-page": "13509",
+      "journal-title": "Sci Rep",
+      "key": "2638_CR28",
+      "unstructured": "Pengelly RJ et al (2017) Evaluating phenotype-driven approaches for genetic diagnoses from exomes in a clinical setting. Sci Rep 7:13509",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0231728",
+      "author": "A Rao",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2638_CR29",
+      "unstructured": "Rao A et al (2020) PRIORI-T: a tool for rare disease gene prioritization using MEDLINE. PLoS ONE 15:e0231728",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41436-019-0463-8",
+      "author": "V Ravichandran",
+      "doi-asserted-by": "publisher",
+      "first-page": "2116",
+      "journal-title": "Genet Med",
+      "key": "2638_CR30",
+      "unstructured": "Ravichandran V et al (2019) Toward automation of germline variant curation in clinical cancer genetics. Genet Med 21:2116–2125",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13073-021-00835-9",
+      "author": "P Rentzsch",
+      "doi-asserted-by": "publisher",
+      "first-page": "31",
+      "journal-title": "Genome Med",
+      "key": "2638_CR31",
+      "unstructured": "Rentzsch P, Schubach M, Shendure J, Kircher M (2021) CADD-Splice-improving genome-wide variant effect prediction using deep learning-derived splice scores. Genome Med 13:31",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "author": "S Richards",
+      "first-page": "405",
+      "journal-title": "Genet Med off J Am Coll Med Genet",
+      "key": "2638_CR32",
+      "unstructured": "Richards S et al (2015) Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med off J Am Coll Med Genet 17:405–424",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty649",
+      "author": "AD Scott",
+      "doi-asserted-by": "publisher",
+      "first-page": "865",
+      "journal-title": "Bioinformatics",
+      "key": "2638_CR33",
+      "unstructured": "Scott AD et al (2019) CharGer: clinical characterization of germline variants. Bioinformatics 35:865–867",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/978-3-030-44584-3_35",
+      "doi-asserted-by": "crossref",
+      "key": "2638_CR34",
+      "unstructured": "Shaker MH, Hüllermeier E (2020) Aleatoric and Epistemic Uncertainty with Random Forests. In: Advances in Intelligent Data Analysis XVIII (eds. Berthold MR, Feelders A, Krempl G) 444–456 (Springer International Publishing, 2020)"
+    },
+    {
+      "DOI": "10.1038/s41436-020-00996-9",
+      "author": "JJ Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "581",
+      "journal-title": "Genet Med",
+      "key": "2638_CR35",
+      "unstructured": "Shen JJ et al (2021) The role of clinical response to treatment in determining pathogenicity of genomic variants. Genet Med 23:581–585",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nprot.2015.124",
+      "author": "D Smedley",
+      "doi-asserted-by": "publisher",
+      "first-page": "2004",
+      "journal-title": "Nat Protoc",
+      "key": "2638_CR36",
+      "unstructured": "Smedley D et al (2015) Next-generation diagnostics and disease-gene discovery with the Exomiser. Nat Protoc 10:2004–2015",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1101/2023.08.02.23293212",
+      "author": "SL Stenton",
+      "doi-asserted-by": "publisher",
+      "journal-title": "medRxiv",
+      "key": "2638_CR37",
+      "unstructured": "Stenton SL et al (2023) Critical assessment of variant prioritization methods for rare disease diagnosis within the Rare Genomes Project. medRxiv. https://doi.org/10.1101/2023.08.02.23293212",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/gim.2017.210",
+      "author": "SV Tavtigian",
+      "doi-asserted-by": "publisher",
+      "first-page": "1054",
+      "journal-title": "Genet Med",
+      "key": "2638_CR38",
+      "unstructured": "Tavtigian SV et al (2018) Modeling the ACMG/AMP variant classification guidelines as a Bayesian classification framework. Genet Med 20:1054–1060",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/humu.24088",
+      "author": "SV Tavtigian",
+      "doi-asserted-by": "publisher",
+      "first-page": "1734",
+      "journal-title": "Hum Mutat",
+      "key": "2638_CR39",
+      "unstructured": "Tavtigian SV, Harrison SM, Boucher KM, Biesecker LG (2020) Fitting a naturally scaled point system to the ACMG/AMP variant classification guidelines. Hum Mutat 41:1734–1737",
+      "volume": "41",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/humu.24459",
+      "author": "E Tosco-Herrera",
+      "doi-asserted-by": "publisher",
+      "first-page": "2010",
+      "issue": "12",
+      "journal-title": "Hum Mutat",
+      "key": "2638_CR40",
+      "unstructured": "Tosco-Herrera E, Muñoz-Barrera A, Jáspez D, Rubio-Rodríguez LA, Mendoza-Alvarez A, Rodriguez-Perez H, Jou J Iñigo-Campos A, Corrales A, Ciuffreda L, Martinez-Bugallo F, Prieto-Morin C, García-Olivares V, González-Montelongo R, Lorenzo-Salazar JM, Marcelino-Rodriguez I, Flores C (2022) Evaluation of a whole-exome sequencing pipeline and benchmarking of causal germline variant prioritizers. Hum Mutat 43(12):2010–2020. https://doi.org/10.1002/humu.24459",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s12687-020-00500-5",
+      "author": "M Vinkšel",
+      "doi-asserted-by": "publisher",
+      "first-page": "247",
+      "journal-title": "J Commun Genet",
+      "key": "2638_CR41",
+      "unstructured": "Vinkšel M, Writzl K, Maver A, Peterlin B (2021) Improving diagnostics of rare genetic diseases with NGS approaches. J Commun Genet 12:247–256",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/gim.2017.258",
+      "author": "N Whiffin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1246",
+      "journal-title": "Genet Med",
+      "key": "2638_CR42",
+      "unstructured": "Whiffin N et al (2018) CardioClassifier: disease- and gene-specific computational decision support for clinical genome interpretation. Genet Med 20:1246–1254",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1007453",
+      "author": "A Xavier",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLOS Comput Biol",
+      "key": "2638_CR43",
+      "unstructured": "Xavier A, Scott RJ, Talseth-Palmer BA (2019) TAPES: A tool for assessment and prioritisation in exome studies. PLOS Comput Biol 15:e1007453",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nmeth.3484",
+      "author": "H Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "841",
+      "journal-title": "Nat Methods",
+      "key": "2638_CR44",
+      "unstructured": "Yang H, Robinson PN, Wang K (2015) Phenolyzer: phenotype-based prioritization of candidate genes for human diseases. Nat Methods 12:841–843",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bib/bbac019",
+      "author": "X Yuan",
+      "doi-asserted-by": "publisher",
+      "first-page": "bbac019",
+      "journal-title": "Brief Bioinform",
+      "key": "2638_CR45",
+      "unstructured": "Yuan X et al (2022) Evaluation of phenotype-driven gene prioritization methods for Mendelian diseases. Brief Bioinform 23:bbac019",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "author": "M Zhao",
+      "first-page": "lqaao32",
+      "journal-title": "NAR Genom Bioinform",
+      "key": "2638_CR46",
+      "unstructured": "Zhao M et al (2020) Phen2Gene: rapid phenotype-driven gene prioritization for rare diseases. NAR Genom Bioinform 2:lqaao32",
+      "volume": "2",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 46,
+  "references-count": 46,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-023-02638-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum. Genet."
+  ],
+  "source": "Crossref",
+  "title": [
+    "An AI-based approach driven by genotypes and phenotypes to uplift the diagnostic yield of genetic diseases"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

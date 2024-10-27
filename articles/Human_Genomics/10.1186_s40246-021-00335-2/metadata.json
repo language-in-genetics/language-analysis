@@ -1,0 +1,1352 @@
+{
+  "DOI": "10.1186/s40246-021-00335-2",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00335-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003e\n                           \u003cjats:bold\u003eBackground\u003c/jats:bold\u003e\n                        \u003c/jats:title\u003e\n                \u003cjats:p\u003eMitochondrial genome copy number (MT-CN) varies among humans and across tissues and is highly heritable, but its causes and consequences are not well understood. When measured by bulk DNA sequencing in blood, MT-CN may reflect a combination of the number of mitochondria per cell and cell-type composition. Here, we studied MT-CN variation in blood-derived DNA from 19184 Finnish individuals using a combination of genome (N = 4163) and exome sequencing (N = 19034) data as well as imputed genotypes (N = 17718).\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003e\n                           \u003cjats:bold\u003eResults\u003c/jats:bold\u003e\n                        \u003c/jats:title\u003e\n                \u003cjats:p\u003eWe identified two loci significantly associated with MT-CN variation: a common variant at the \u003cjats:italic\u003eMYB-HBS1L\u003c/jats:italic\u003e locus (P = 1.6 × 10\u003cjats:sup\u003e−8\u003c/jats:sup\u003e), which has previously been associated with numerous hematological parameters; and a burden of rare variants in the \u003cjats:italic\u003eTMBIM1\u003c/jats:italic\u003e gene (P = 3.0 × 10\u003cjats:sup\u003e−8\u003c/jats:sup\u003e), which has been reported to protect against non-alcoholic fatty liver disease. We also found that MT-CN is strongly associated with insulin levels (P = 2.0 × 10\u003cjats:sup\u003e−21\u003c/jats:sup\u003e) and other metabolic syndrome (metS)-related traits. Using a Mendelian randomization framework, we show evidence that MT-CN measured in blood is causally related to insulin levels. We then applied an MT-CN polygenic risk score (PRS) derived from Finnish data to the UK Biobank, where the association between the PRS and metS traits was replicated. Adjusting for cell counts largely eliminated these signals, suggesting that MT-CN affects metS via cell-type composition.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003e\n                           \u003cjats:bold\u003eConclusion\u003c/jats:bold\u003e\n                        \u003c/jats:title\u003e\n                \u003cjats:p\u003eThese results suggest that measurements of MT-CN in blood-derived DNA partially reflect differences in cell-type composition and that these differences are causally linked to insulin and related traits.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "335"
+  ],
+  "article-number": "34",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "23 March 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "26 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "7 June 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "\u003c!--Emphasis Type='Bold' removed--\u003eEthics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All participants in both the METSIM and FINRISK studies provided informed consent, and study protocols were approved by the Ethics Committees at participating institutions (National Public Health Institute of Finland, Hospital District of Helsinki and Uusimaa, and Hospital District of Northern Savo). All relevant ethics committees approved this study."
+    },
+    {
+      "group": {
+        "label": "\u003c!--Emphasis Type='Bold' removed--\u003eConsent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable"
+    },
+    {
+      "group": {
+        "label": "\u003c!--Emphasis Type='Bold' removed--\u003eCompeting interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "NOS has received grant funding from Regeneron Pharmaceuticals for unrelated work. The rest of the authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-8762-622X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ganel",
+      "given": "Liron",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Lei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Christ",
+      "given": "Ryan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vangipurapu",
+      "given": "Jagadish",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Young",
+      "given": "Erica",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Das",
+      "given": "Indraniel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kanchi",
+      "given": "Krishna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Larson",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Regier",
+      "given": "Allison",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Abel",
+      "given": "Haley",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kang",
+      "given": "Chul Joo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scott",
+      "given": "Alexandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Havulinna",
+      "given": "Aki",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chiang",
+      "given": "Charleston W. K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Service",
+      "given": "Susan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Freimer",
+      "given": "Nelson",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Palotie",
+      "given": "Aarno",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ripatti",
+      "given": "Samuli",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kuusisto",
+      "given": "Johanna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boehnke",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Laakso",
+      "given": "Markku",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Locke",
+      "given": "Adam",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stitziel",
+      "given": "Nathan O.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hall",
+      "given": "Ira M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ],
+    "date-time": "2021-06-07T20:06:20Z",
+    "timestamp": 1623096380000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ],
+    "date-time": "2021-06-07T20:11:13Z",
+    "timestamp": 1623096673000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "UM1 HG008853",
+        "5U54HG003079"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/501100006306",
+      "doi-asserted-by": "publisher",
+      "name": "Sigrid Juséliuksen Säätiö"
+    },
+    {
+      "name": "University of Helsinki HiLIFE"
+    },
+    {
+      "DOI": "10.13039/501100002341",
+      "award": [
+        "312062",
+        "285380"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Academy of Finland"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "T32HL007081"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100006108",
+      "award": [
+        "UL1TR002345"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Center for Advancing Translational Sciences"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T00:58:47Z",
+    "timestamp": 1713920327693
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            7
+          ]
+        ],
+        "date-time": "2021-06-07T00:00:00Z",
+        "timestamp": 1623024000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            7
+          ]
+        ],
+        "date-time": "2021-06-07T00:00:00Z",
+        "timestamp": 1623024000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00335-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00335-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00335-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "author": "SS Virani",
+      "first-page": "e139",
+      "journal-title": "Circulation. American Heart Association",
+      "key": "335_CR1",
+      "unstructured": "Virani SS, Alonso A, Benjamin EJ, Bittencourt MS, Callaway CW, Carson AP, et al. Heart disease and stroke statistics—2020 update: a report from the American Heart Association. Circulation. American Heart Association. 2020;141:e139–596.",
+      "volume": "141",
+      "year": "2020"
+    },
+    {
+      "key": "335_CR2",
+      "unstructured": "University of Washington Institute for Health Metrics and Evaluation. GBD results tool. Global Health Data Exchange. [cited 2021 Feb 10]. Available from: http://ghdx.healthdata.org/gbd-results-tool"
+    },
+    {
+      "DOI": "10.1161/01.CIR.0000111245.75752.C6",
+      "author": "SM Grundy",
+      "doi-asserted-by": "publisher",
+      "first-page": "433",
+      "journal-title": "Circulation",
+      "key": "335_CR3",
+      "unstructured": "Grundy SM, Brewer HB Jr, Cleeman JI, Smith SC Jr, Lenfant C. American Heart Association, et al. Definition of metabolic syndrome: report of the National Heart, Lung, and Blood Institute/American Heart Association conference on scientific issues related to definition. Circulation. 2004;109:433–8.",
+      "volume": "109",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.ecl.2013.09.009",
+      "author": "SL Samson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Endocrinol Metab Clin North Am.",
+      "key": "335_CR4",
+      "unstructured": "Samson SL, Garber AJ. Metabolic syndrome. Endocrinol Metab Clin North Am. 2014;43(1):1–23. https://doi.org/10.1016/j.ecl.2013.09.009.",
+      "volume": "43",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1146/annurev-nutr-071715-050656",
+      "author": "C Koliaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "337",
+      "issue": "1",
+      "journal-title": "Annu Rev Nutr.",
+      "key": "335_CR5",
+      "unstructured": "Koliaki C, Roden M. Alterations of mitochondrial function and insulin sensitivity in human obesity and diabetes mellitus | Annual Review of Nutrition. Annu Rev Nutr. 2016;36(1):337–67. https://doi.org/10.1146/annurev-nutr-071715-050656.",
+      "volume": "36",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1172/JCI200319246",
+      "author": "SP Weisberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "1796",
+      "issue": "12",
+      "journal-title": "J Clin Invest.",
+      "key": "335_CR6",
+      "unstructured": "Weisberg SP, McCann D, Desai M, Rosenbaum M, Leibel RL, Ferrante AW. Obesity is associated with macrophage accumulation in adipose tissue. J Clin Invest. 2003;112(12):1796–808. https://doi.org/10.1172/JCI200319246.",
+      "volume": "112",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.107.165472",
+      "author": "J-A Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "401",
+      "issue": "4",
+      "journal-title": "Circ Res.",
+      "key": "335_CR7",
+      "unstructured": "Kim J-A, Wei Y, Sowers JR. Role of Mitochondrial dysfunction in insulin resistance. Circ Res. 2008;102(4):401–14. https://doi.org/10.1161/CIRCRESAHA.107.165472.",
+      "volume": "102",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.jnutbio.2011.12.008",
+      "author": "AL Burgueño",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "issue": "1",
+      "journal-title": "J Nutr Biochem.",
+      "key": "335_CR8",
+      "unstructured": "Burgueño AL, Cabrerizo R, Gonzales Mansilla N, Sookoian S, Pirola CJ. Maternal high-fat intake during pregnancy programs metabolic-syndrome-related phenotypes through liver mitochondrial DNA copy number and transcriptional activity of liver PPARGC1A. J Nutr Biochem. 2013;24(1):6–13. https://doi.org/10.1016/j.jnutbio.2011.12.008.",
+      "volume": "24",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/hep.23927",
+      "author": "S Sookoian",
+      "doi-asserted-by": "publisher",
+      "first-page": "1992",
+      "issue": "6",
+      "journal-title": "Hepatology.",
+      "key": "335_CR9",
+      "unstructured": "Sookoian S, Rosselli MS, Gemma C, Burgueño AL, Gianotti TF, Castaño GO, et al. Epigenetic regulation of insulin resistance in nonalcoholic fatty liver disease: impact of liver methylation of the peroxisome proliferator–activated receptor γ coactivator 1α promoter. Hepatology. 2010;52(6):1992–2000. https://doi.org/10.1002/hep.23927.",
+      "volume": "52",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.mito.2005.10.004",
+      "author": "K Begriche",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Mitochondrion.",
+      "key": "335_CR10",
+      "unstructured": "Begriche K, Igoudjil A, Pessayre D, Fromenty B. Mitochondrial dysfunction in NASH: causes, consequences and possible means to prevent it. Mitochondrion. 2006;6(1):1–28. https://doi.org/10.1016/j.mito.2005.10.004.",
+      "volume": "6",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1038/srep29669",
+      "author": "X Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "29669",
+      "issue": "1",
+      "journal-title": "Sci Rep.",
+      "key": "335_CR11",
+      "unstructured": "Zhou X, Li R, Liu X, Wang L, Hui P, Chan L, et al. ROCK1 reduces mitochondrial content and irisin production in muscle suppressing adipocyte browning and impairing insulin sensitivity. Sci Rep. 2016;6(1):29669. https://doi.org/10.1038/srep29669.",
+      "volume": "6",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00109-010-0663-9",
+      "author": "J Ren",
+      "doi-asserted-by": "publisher",
+      "first-page": "993",
+      "issue": "10",
+      "journal-title": "J Mol Med.",
+      "key": "335_CR12",
+      "unstructured": "Ren J, Pulakat L, Whaley-Connell A, Sowers JR. Mitochondrial biogenesis in the metabolic syndrome and cardiovascular disease. J Mol Med. 2010;88(10):993–1001. https://doi.org/10.1007/s00109-010-0663-9.",
+      "volume": "88",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.bbagen.2013.12.004",
+      "author": "EJ Stephenson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1285",
+      "issue": "4",
+      "journal-title": "Biochimica et Biophysica Acta (BBA) - General Subjects.",
+      "key": "335_CR13",
+      "unstructured": "Stephenson EJ, Hawley JA. Mitochondrial function in metabolic health: a genetic and environmental tug of war. Biochimica et Biophysica Acta (BBA) - General Subjects. 2014;1840(4):1285–94. https://doi.org/10.1016/j.bbagen.2013.12.004.",
+      "volume": "1840",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nrendo.2011.138",
+      "author": "J Szendroedi",
+      "doi-asserted-by": "publisher",
+      "first-page": "92",
+      "issue": "2",
+      "journal-title": "Nat Rev Endocrinol.",
+      "key": "335_CR14",
+      "unstructured": "Szendroedi J, Phielix E, Roden M. The role of mitochondria in insulin resistance and type 2 diabetes mellitus. Nat Rev Endocrinol. 2012;8(2):92–103. https://doi.org/10.1038/nrendo.2011.138.",
+      "volume": "8",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005306",
+      "author": "J Ding",
+      "doi-asserted-by": "publisher",
+      "issue": "7",
+      "journal-title": "PLoS Genet.",
+      "key": "335_CR15",
+      "unstructured": "Ding J, Sidore C, Butler TJ, Wing MK, Qian Y, Meirelles O, et al. Assessing mitochondrial DNA variation and copy number in lymphocytes of ~2,000 Sardinians using tailored sequencing analysis tools. PLoS Genet. 2015;11(7):e1005306. https://doi.org/10.1371/journal.pgen.1005306.",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.atherosclerosis.2014.08.051",
+      "author": "S Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "220",
+      "issue": "1",
+      "journal-title": "Atherosclerosis.",
+      "key": "335_CR16",
+      "unstructured": "Chen S, Xie X, Wang Y, Gao Y, Xie X, Yang J, et al. Association between leukocyte mitochondrial DNA content and risk of coronary heart disease: a case-control study. Atherosclerosis. 2014;237(1):220–6. https://doi.org/10.1016/j.atherosclerosis.2014.08.051.",
+      "volume": "237",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/S0168-8227(98)00110-7",
+      "author": "HK Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "issue": "3",
+      "journal-title": "Diabetes Res Clin Pract.",
+      "key": "335_CR17",
+      "unstructured": "Lee HK, Song JH, Shin CS, Park DJ, Park KS, Lee KU, et al. Decreased mitochondrial DNA content in peripheral blood precedes the development of non-insulin-dependent diabetes mellitus. Diabetes Res Clin Pract. 1998;42(3):161–7. https://doi.org/10.1016/S0168-8227(98)00110-7.",
+      "volume": "42",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.3109/07435800.2015.1068797",
+      "author": "Z Shoar",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "issue": "1",
+      "journal-title": "Endocr Res.",
+      "key": "335_CR18",
+      "unstructured": "Shoar Z, Goldenthal MJ, De Luca F, Suarez E. Mitochondrial DNA content and function, childhood obesity, and insulin resistance. Endocr Res. 2016;41(1):49–56. https://doi.org/10.3109/07435800.2015.1068797.",
+      "volume": "41",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.2337/diacare.24.5.865",
+      "author": "J Song",
+      "doi-asserted-by": "publisher",
+      "first-page": "865",
+      "issue": "5",
+      "journal-title": "Diabetes Care.",
+      "key": "335_CR19",
+      "unstructured": "Song J, Oh JY, Sung Y-A, Pak YK, Park KS, Lee HK. Peripheral blood mitochondrial DNA content is related to insulin sensitivity in offspring of type 2 diabetic patients. Diabetes Care. 2001;24(5):865–9. https://doi.org/10.2337/diacare.24.5.865.",
+      "volume": "24",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1016/j.diabres.2008.10.002",
+      "author": "S-W Weng",
+      "doi-asserted-by": "publisher",
+      "first-page": "94",
+      "issue": "1",
+      "journal-title": "Diabetes Res Clin Pract.",
+      "key": "335_CR20",
+      "unstructured": "Weng S-W, Lin T-K, Liou C-W, Chen S-D, Wei Y-H, Lee H-C, et al. Peripheral blood mitochondrial DNA content and dysregulation of glucose metabolism. Diabetes Res Clin Pract. 2009;83(1):94–9. https://doi.org/10.1016/j.diabres.2008.10.002.",
+      "volume": "83",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.atherosclerosis.2017.02.013",
+      "author": "L-P Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "105",
+      "journal-title": "Atherosclerosis.",
+      "key": "335_CR21",
+      "unstructured": "Liu L-P, Cheng K, Ning M-A, Li H-H, Wang H-C, Li F, et al. Association between peripheral blood cells mitochondrial DNA content and severity of coronary heart disease. Atherosclerosis. 2017;261:105–10. https://doi.org/10.1016/j.atherosclerosis.2017.02.013.",
+      "volume": "261",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0228166",
+      "author": "RJ Longchamps",
+      "doi-asserted-by": "publisher",
+      "issue": "1",
+      "journal-title": "PLoS One.",
+      "key": "335_CR22",
+      "unstructured": "Longchamps RJ, Castellani CA, Yang SY, Newcomb CE, Sumpter JA, Lane J, et al. Evaluation of mitochondrial DNA copy number estimation techniques. PLoS One. 2020;15(1):e0228166. https://doi.org/10.1371/journal.pone.0228166.",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.mito.2017.08.007",
+      "author": "AL Guyatt",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "journal-title": "Mitochondrion.",
+      "key": "335_CR23",
+      "unstructured": "Guyatt AL, Burrows K, Guthrie PAI, Ring S, McArdle W, Day INM, et al. Cardiometabolic phenotypes and mitochondrial DNA copy number in two cohorts of UK women. Mitochondrion. 2018;39:9–19. https://doi.org/10.1016/j.mito.2017.08.007.",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1001/jamacardio.2017.3683",
+      "author": "FN Ashar",
+      "doi-asserted-by": "publisher",
+      "first-page": "1247",
+      "issue": "11",
+      "journal-title": "JAMA Cardiol.",
+      "key": "335_CR24",
+      "unstructured": "Ashar FN, Zhang Y, Longchamps RJ, Lane J, Moes A, Grove ML, et al. Association of mitochondrial DNA copy number with cardiovascular disease. JAMA Cardiol. 2017;2(11):1247–55. https://doi.org/10.1001/jamacardio.2017.3683.",
+      "volume": "2",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/jcp.1041360316",
+      "author": "ED Robin",
+      "doi-asserted-by": "publisher",
+      "first-page": "507",
+      "issue": "3",
+      "journal-title": "J Cell Physiol.",
+      "key": "335_CR25",
+      "unstructured": "Robin ED, Wong R. Mitochondrial DNA molecules and virtual number of mitochondria per cell in mammalian cells. J Cell Physiol. 1988;136(3):507–13. https://doi.org/10.1002/jcp.1041360316.",
+      "volume": "136",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1038/sj.cdd.4401320",
+      "author": "NA Maianski",
+      "doi-asserted-by": "publisher",
+      "first-page": "143",
+      "issue": "2",
+      "journal-title": "Cell Death Differ.",
+      "key": "335_CR26",
+      "unstructured": "Maianski NA, Geissler J, Srinivasula SM, Alnemri ES, Roos D, Kuijpers TW. Functional characterization of mitochondria in neutrophils: a role restricted to apoptosis. Cell Death Differ. 2004;11(2):143–53. https://doi.org/10.1038/sj.cdd.4401320.",
+      "volume": "11",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1042/BST20120327",
+      "author": "S Zharikov",
+      "doi-asserted-by": "publisher",
+      "first-page": "118",
+      "issue": "1",
+      "journal-title": "Biochem Soc Trans.",
+      "key": "335_CR27",
+      "unstructured": "Zharikov S, Shiva S. Platelet mitochondrial function: from regulation of thrombosis to biomarker of disease. Biochem Soc Trans. 2013;41(1):118–23. https://doi.org/10.1042/BST20120327.",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.cub.2015.03.008",
+      "author": "N Cai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1146",
+      "issue": "9",
+      "journal-title": "Curr Biol.",
+      "key": "335_CR28",
+      "unstructured": "Cai N, Chang S, Li Y, Li Q, Hu J, Liang J, et al. Molecular signatures of major depression. Curr Biol. 2015;25(9):1146–56. https://doi.org/10.1016/j.cub.2015.03.008.",
+      "volume": "25",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.cub.2015.10.065",
+      "author": "N Cai",
+      "doi-asserted-by": "publisher",
+      "first-page": "3170",
+      "issue": "24",
+      "journal-title": "Curr Biol.",
+      "key": "335_CR29",
+      "unstructured": "Cai N, Li Y, Chang S, Liang J, Lin C, Zhang X, et al. Genetic control over mtDNA and its relationship to major depressive disorder. Curr Biol. 2015;25(24):3170–7. https://doi.org/10.1016/j.cub.2015.10.065.",
+      "volume": "25",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/hmg/ddm101",
+      "author": "JE Curran",
+      "doi-asserted-by": "publisher",
+      "first-page": "1504",
+      "issue": "12",
+      "journal-title": "Hum Mol Genet.",
+      "key": "335_CR30",
+      "unstructured": "Curran JE, Johnson MP, Dyer TD, Göring HHH, Kent JW, Charlesworth JC, et al. Genetic determinants of mitochondrial content. Hum Mol Genet. 2007;16(12):1504–14. https://doi.org/10.1093/hmg/ddm101.",
+      "volume": "16",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1186/s40246-018-0190-2",
+      "author": "AL Guyatt",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "issue": "1",
+      "journal-title": "Hum Genomics.",
+      "key": "335_CR31",
+      "unstructured": "Guyatt AL, Brennan RR, Burrows K, Guthrie PAI, Ascione R, Ring SM, et al. A genome-wide association study of mitochondrial DNA copy number in two population-based cohorts. Hum Genomics. 2019;13(1):6. https://doi.org/10.1186/s40246-018-0190-2.",
+      "volume": "13",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1086/302365",
+      "author": "P Pajukanta",
+      "doi-asserted-by": "publisher",
+      "first-page": "1453",
+      "issue": "5",
+      "journal-title": "Am J Hum Genet.",
+      "key": "335_CR32",
+      "unstructured": "Pajukanta P, Terwilliger JD, Perola M, Hiekkalinna T, Nuotio I, Ellonen P, et al. Genomewide scan for familial combined hyperlipidemia genes in Finnish families, suggesting multiple susceptibility loci influencing triglyceride, cholesterol, and apolipoprotein B levels. Am J Hum Genet. 1999;64(5):1453–63. https://doi.org/10.1086/302365.",
+      "volume": "64",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1086/374177",
+      "author": "P Pajukanta",
+      "doi-asserted-by": "publisher",
+      "first-page": "903",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet.",
+      "key": "335_CR33",
+      "unstructured": "Pajukanta P, Allayee H, Krass KL, Kuraishy A, Soro A, Lilja HE, et al. Combined analysis of genome scans of dutch and finnish families reveals a susceptibility locus for high-density lipoprotein cholesterol on chromosome 16q. Am J Hum Genet. 2003;72(4):903–17. https://doi.org/10.1086/374177.",
+      "volume": "72",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1457-z",
+      "author": "AE Locke",
+      "doi-asserted-by": "publisher",
+      "first-page": "323",
+      "issue": "7769",
+      "journal-title": "Nature.",
+      "key": "335_CR34",
+      "unstructured": "Locke AE, Steinberg KM, Chiang CWK, Service SK, Havulinna AS, Stell L, et al. Exome sequencing of Finnish isolates enhances rare-variant association power. Nature. 2019;572(7769):323–8. https://doi.org/10.1038/s41586-019-1457-z.",
+      "volume": "572",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1194/jlr.M700338-JLR200",
+      "author": "B Kaess",
+      "doi-asserted-by": "publisher",
+      "first-page": "715",
+      "issue": "4",
+      "journal-title": "J Lipid Res.",
+      "key": "335_CR35",
+      "unstructured": "Kaess B, Fischer M, Baessler A, Stark K, Huber F, Kremer W, et al. The lipoprotein subfraction profile: heritability and identification of quantitative trait loci. J Lipid Res. 2008;49(4):715–23. https://doi.org/10.1194/jlr.M700338-JLR200.",
+      "volume": "49",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/ng1726",
+      "author": "LA Weiss",
+      "doi-asserted-by": "publisher",
+      "first-page": "218",
+      "issue": "2",
+      "journal-title": "Nat Genet.",
+      "key": "335_CR36",
+      "unstructured": "Weiss LA, Pan L, Abney M, Ober C. The sex-specific genetic architecture of quantitative traits in humans. Nat Genet. 2006;38(2):218–22. https://doi.org/10.1038/ng1726.",
+      "volume": "38",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002113",
+      "author": "MA Nalls",
+      "doi-asserted-by": "publisher",
+      "issue": "6",
+      "journal-title": "PLoS Genet.",
+      "key": "335_CR37",
+      "unstructured": "Nalls MA, Couper DJ, Tanaka T, van Rooij FJA, Chen M-H, Smith AV, et al. Multiple loci are associated with white blood cell phenotypes. PLoS Genet. 2011;7(6):e1002113. https://doi.org/10.1371/journal.pgen.1002113.",
+      "volume": "7",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.06.045",
+      "author": "M-H Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1198",
+      "journal-title": "Cell",
+      "key": "335_CR38",
+      "unstructured": "Chen M-H, Raffield LM, Mousas A, Sakaue S, Huffman JE, Moscati A, et al. Trans-ethnic and ancestry-specific blood-cell genetics in 746,667 individuals from 5 global populations. Cell. 2020;182:1198–1213.e14.",
+      "volume": "182",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.gene.2018.04.065",
+      "author": "X Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "journal-title": "Gene.",
+      "key": "335_CR39",
+      "unstructured": "Wang X, Angelis N, Thein SL. MYB - a regulatory factor in hematopoiesis. Gene. 2018;665:6–17. https://doi.org/10.1016/j.gene.2018.04.065.",
+      "volume": "665",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s12185-008-0167-3",
+      "author": "RA Pandit",
+      "doi-asserted-by": "publisher",
+      "first-page": "357",
+      "issue": "4",
+      "journal-title": "Int J Hematol.",
+      "key": "335_CR40",
+      "unstructured": "Pandit RA, Svasti S, Sripichai O, Munkongdee T, Triwitayakorn K, Winichagoon P, et al. Association of SNP in exon 1 of HBS1L with hemoglobin F level in beta0-thalassemia/hemoglobin E. Int J Hematol. 2008;88(4):357–61. https://doi.org/10.1007/s12185-008-0167-3.",
+      "volume": "88",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1073/pnas.0611393104",
+      "author": "SL Thein",
+      "doi-asserted-by": "publisher",
+      "first-page": "11346",
+      "issue": "27",
+      "journal-title": "Proceedings of the National Academy of Sciences.",
+      "key": "335_CR41",
+      "unstructured": "Thein SL, Menzel S, Peng X, Best S, Jiang J, Close J, et al. Intergenic variants of HBS1L-MYB are responsible for a major quantitative trait locus on chromosome 6q23 influencing fetal hemoglobin levels in adults. Proceedings of the National Academy of Sciences. 2007;104(27):11346–51. https://doi.org/10.1073/pnas.0611393104.",
+      "volume": "104",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/ng.466",
+      "author": "SK Ganesh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1191",
+      "issue": "11",
+      "journal-title": "Nat Genet.",
+      "key": "335_CR42",
+      "unstructured": "Ganesh SK, Zakai NA, van Rooij FJA, Soranzo N, Smith AV, Nalls MA, et al. Multiple loci influence erythrocyte phenotypes in the CHARGE Consortium. Nat Genet. 2009;41(11):1191–8. https://doi.org/10.1038/ng.466.",
+      "volume": "41",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1182/blood-2007-05-093419",
+      "author": "S Menzel",
+      "doi-asserted-by": "publisher",
+      "first-page": "3624",
+      "issue": "10",
+      "journal-title": "Blood.",
+      "key": "335_CR43",
+      "unstructured": "Menzel S, Jiang J, Silver N, Gallagher J, Cunningham J, Surdulescu G, et al. The HBS1L-MYB intergenic region on chromosome 6q23.3 influences erythrocyte, platelet, and monocyte counts in humans. Blood. 2007;110(10):3624–6. https://doi.org/10.1182/blood-2007-05-093419.",
+      "volume": "110",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/jhg.2017.76",
+      "author": "BD Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "979",
+      "issue": "11",
+      "journal-title": "J Hum Genet.",
+      "key": "335_CR44",
+      "unstructured": "Lin BD, Carnero-Montoro E, Bell JT, Boomsma DI, de Geus EJ, Jansen R, et al. 2SNP heritability and effects of genetic variants for neutrophil-to-lymphocyte and platelet-to-lymphocyte ratio. J Hum Genet. 2017;62(11):979–88. https://doi.org/10.1038/jhg.2017.76.",
+      "volume": "62",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1172/JCI71520",
+      "author": "R Stadhouders",
+      "doi-asserted-by": "publisher",
+      "first-page": "1699",
+      "issue": "4",
+      "journal-title": "J Clin Invest.",
+      "key": "335_CR45",
+      "unstructured": "Stadhouders R, Aktuna S, Thongjuea S, Aghajanirefah A, Pourfarzad F, van Ijcken W, et al. HBS1L-MYB intergenic variants modulate fetal hemoglobin via long-range MYB enhancers. J Clin Invest. 2014;124(4):1699–710. https://doi.org/10.1172/JCI71520.",
+      "volume": "124",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/19.1.149",
+      "author": "S Purcell",
+      "doi-asserted-by": "publisher",
+      "first-page": "149",
+      "issue": "1",
+      "journal-title": "Bioinformatics.",
+      "key": "335_CR46",
+      "unstructured": "Purcell S, Cherny SS, Sham PC. Genetic Power Calculator: design of linkage and association genetic mapping studies of complex traits. Bioinformatics. 2003;19(1):149–50. https://doi.org/10.1093/bioinformatics/19.1.149.",
+      "volume": "19",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.007",
+      "author": "S Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "224",
+      "issue": "2",
+      "journal-title": "Am J Hum Genet.",
+      "key": "335_CR47",
+      "unstructured": "Lee S, Emond MJ, Bamshad MJ, Barnes KC, Rieder MJ, Nickerson DA, et al. Optimal unified approach for rare-variant association testing with application to small-sample case-control whole-exome sequencing studies. Am J Hum Genet. 2012;91(2):224–37. https://doi.org/10.1016/j.ajhg.2012.06.007.",
+      "volume": "91",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.compbiolchem.2008.01.002",
+      "author": "J Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "159",
+      "issue": "3",
+      "journal-title": "Comput Biol Chem.",
+      "key": "335_CR48",
+      "unstructured": "Zhou J, Zhu T, Hu C, Li H, Chen G, Xu G, et al. Comparative genomics and function analysis on BI1 family. Comput Biol Chem. 2008;32(3):159–62. https://doi.org/10.1016/j.compbiolchem.2008.01.002.",
+      "volume": "32",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nm.4334",
+      "author": "G-N Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "742",
+      "issue": "6",
+      "journal-title": "Nat Med.",
+      "key": "335_CR49",
+      "unstructured": "Zhao G-N, Zhang P, Gong J, Zhang X-J, Wang P-X, Yin M, et al. Tmbim1 is a multivesicular body regulator that protects against non-alcoholic fatty liver disease in mice and monkeys by targeting the lysosomal degradation of Tlr4. Nat Med. 2017;23(6):742–52. https://doi.org/10.1038/nm.4334.",
+      "volume": "23",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001779",
+      "author": "C Sudlow",
+      "doi-asserted-by": "publisher",
+      "issue": "3",
+      "journal-title": "PLoS Med.",
+      "key": "335_CR50",
+      "unstructured": "Sudlow C, Gallacher J, Allen N, Beral V, Burton P, Danesh J, et al. UK biobank: an open access resource for identifying the causes of a wide range of complex diseases of middle and old age. PLoS Med. 2015;12(3):e1001779. https://doi.org/10.1371/journal.pmed.1001779.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gky1120",
+      "author": "A Buniello",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1005",
+      "journal-title": "Nucleic Acids Res",
+      "key": "335_CR51",
+      "unstructured": "Buniello A, MacArthur JAL, Cerezo M, Harris LW, Hayhurst J, Malangone C, et al. The NHGRI-EBI GWAS Catalog of published genome-wide association studies, targeted arrays and summary statistics 2019. Nucleic Acids Res. Oxford University Press (OUP). 2019;47:D1005–12.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/ije/dyx204",
+      "author": "LAC Millard",
+      "doi-asserted-by": "publisher",
+      "first-page": "29",
+      "issue": "1",
+      "journal-title": "Int J Epidemiol.",
+      "key": "335_CR52",
+      "unstructured": "Millard LAC, Davies NM, Gaunt TR, Davey Smith G, Tilling K. Software Application Profile: PHESANT: a tool for performing automated phenome scans in UK Biobank. Int J Epidemiol. 2018;47(1):29–35. https://doi.org/10.1093/ije/dyx204.",
+      "volume": "47",
+      "year": "2018"
+    },
+    {
+      "key": "335_CR53",
+      "unstructured": "Neale B. Neale Lab UK Biobank analysis [Internet]. Available from: http://www.nealelab.is/uk-biobank/"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.03.008",
+      "doi-asserted-by": "crossref",
+      "key": "335_CR54",
+      "unstructured": "Chen, L. et al. Association of structural variation with cardiometabolic traits in Finns. Am J Hum Genet. 2021;108:583–96."
+    },
+    {
+      "DOI": "10.1016/j.trsl.2015.06.017",
+      "author": "FK Welty",
+      "doi-asserted-by": "publisher",
+      "first-page": "257",
+      "issue": "1",
+      "journal-title": "Transl Res.",
+      "key": "335_CR55",
+      "unstructured": "Welty FK, Alfaddagh A, Elajami TK. Targeting inflammation in metabolic syndrome. Transl Res. 2016;167(1):257–80. https://doi.org/10.1016/j.trsl.2015.06.017.",
+      "volume": "167",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1152/ajpendo.00302.2006",
+      "author": "SJ Creely",
+      "doi-asserted-by": "publisher",
+      "first-page": "E740",
+      "issue": "3",
+      "journal-title": "Am J Physiol Endocrinol Metab.",
+      "key": "335_CR56",
+      "unstructured": "Creely SJ, McTernan PG, Kusminski CM, Fisher ff M, Da Silva NF, Khanolkar M, et al. Lipopolysaccharide activates an innate immune system response in human adipose tissue in obesity and type 2 diabetes. Am J Physiol Endocrinol Metab. 2007;292(3):E740–7. https://doi.org/10.1152/ajpendo.00302.2006.",
+      "volume": "292",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/nature21363",
+      "author": "GS Hotamisligil",
+      "doi-asserted-by": "publisher",
+      "first-page": "177",
+      "issue": "7640",
+      "journal-title": "Nature.",
+      "key": "335_CR57",
+      "unstructured": "Hotamisligil GS. Inflammation, metaflammation and immunometabolic disorders. Nature. 2017;542(7640):177–85. https://doi.org/10.1038/nature21363.",
+      "volume": "542",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1194/jlr.O072629",
+      "author": "M Laakso",
+      "doi-asserted-by": "publisher",
+      "first-page": "481",
+      "issue": "3",
+      "journal-title": "J Lipid Res.",
+      "key": "335_CR58",
+      "unstructured": "Laakso M, Kuusisto J, Stančáková A, Kuulasmaa T, Pajukanta P, Lusis AJ, et al. The metabolic syndrome in men study: a resource for studies of metabolic and cardiovascular diseases. J Lipid Res. 2017;58(3):481–93. https://doi.org/10.1194/jlr.O072629.",
+      "volume": "58",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/ije/dyx239",
+      "author": "K Borodulin",
+      "doi-asserted-by": "publisher",
+      "first-page": "696",
+      "journal-title": "Int J Epidemiol",
+      "key": "335_CR59",
+      "unstructured": "Borodulin K, Tolonen H, Jousilahti P, Jula A, Juolevi A, Koskinen S, et al. Cohort profile: the national FINRISK study. Int J Epidemiol. 2018;47:696–696i.",
+      "volume": "47",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3643",
+      "author": "S McCarthy",
+      "doi-asserted-by": "publisher",
+      "first-page": "1279",
+      "issue": "10",
+      "journal-title": "Nat Genet.",
+      "key": "335_CR60",
+      "unstructured": "McCarthy S, Das S, Kretzschmar W, Delaneau O, Wood AR, Teumer A, et al. A reference panel of 64,976 haplotypes for genotype imputation. Nat Genet. 2016;48(10):1279–83. https://doi.org/10.1038/ng.3643.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq033",
+      "author": "AR Quinlan",
+      "doi-asserted-by": "publisher",
+      "first-page": "841",
+      "issue": "6",
+      "journal-title": "Bioinformatics.",
+      "key": "335_CR61",
+      "unstructured": "Quinlan AR, Hall IM. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics. 2010;26(6):841–2. https://doi.org/10.1093/bioinformatics/btq033.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "key": "335_CR62",
+      "unstructured": "Picard Toolkit. Broad Institute, GitHub repository; 2019. Available from: http://broadinstitute.github.io/picard/"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.08.005",
+      "author": "M Fromer",
+      "doi-asserted-by": "publisher",
+      "first-page": "597",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet.",
+      "key": "335_CR63",
+      "unstructured": "Fromer M, Moran JL, Chambert K, Banks E, Bergen SE, Ruderfer DM, et al. Discovery and statistical genotyping of copy-number variation from whole-exome sequencing depth. Am J Hum Genet. 2012;91(4):597–607. https://doi.org/10.1016/j.ajhg.2012.08.005.",
+      "volume": "91",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/humu.21382",
+      "author": "A Kloss-Brandstätter",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "issue": "1",
+      "journal-title": "Hum Mutat.",
+      "key": "335_CR64",
+      "unstructured": "Kloss-Brandstätter A, Pacher D, Schönherr S, Weissensteiner H, Binna R, Specht G, et al. HaploGrep: a fast and reliable algorithm for automatic classification of mitochondrial DNA haplogroups. Hum Mutat. 2011;32(1):25–32. https://doi.org/10.1002/humu.21382.",
+      "volume": "32",
+      "year": "2011"
+    },
+    {
+      "key": "335_CR65",
+      "unstructured": "Wheeler B, Torchiano M. lmPerm [Internet]. Available from: https://github.com/mtorchiano/lmPerm"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "author": "J Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "76",
+      "issue": "1",
+      "journal-title": "Am J Hum Genet.",
+      "key": "335_CR66",
+      "unstructured": "Yang J, Lee SH, Goddard ME, Visscher PM. GCTA: a tool for genome-wide complex trait analysis. Am J Hum Genet. 2011;88(1):76–82. https://doi.org/10.1016/j.ajhg.2010.11.011.",
+      "volume": "88",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.02.002",
+      "author": "SH Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "294",
+      "issue": "3",
+      "journal-title": "Am J Hum Genet.",
+      "key": "335_CR67",
+      "unstructured": "Lee SH, Wray NR, Goddard ME, Visscher PM. Estimating missing heritability for disease from genome-wide association studies. Am J Hum Genet. 2011;88(3):294–305. https://doi.org/10.1016/j.ajhg.2011.02.002.",
+      "volume": "88",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ng.3390",
+      "author": "J Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1114",
+      "issue": "10",
+      "journal-title": "Nat Genet.",
+      "key": "335_CR68",
+      "unstructured": "Yang J, Bakshi A, Zhu Z, Hemani G, Vinkhuyzen AAE, Lee SH, et al. Genetic variance estimation with imputed variants finds negligible missing heritability for human height and body mass index. Nat Genet. 2015;47(10):1114–20. https://doi.org/10.1038/ng.3390.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0108-x",
+      "author": "LM Evans",
+      "doi-asserted-by": "publisher",
+      "first-page": "737",
+      "issue": "5",
+      "journal-title": "Nat Genet.",
+      "key": "335_CR69",
+      "unstructured": "Evans LM, Tahmasbi R, Vrieze SI, Abecasis GR, Das S, Gazal S, et al. Comparison of methods that use whole genome data to estimate the heritability and genetic architecture of complex traits. Nat Genet. 2018;50(5):737–45. https://doi.org/10.1038/s41588-018-0108-x.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "author": "AL Price",
+      "doi-asserted-by": "publisher",
+      "first-page": "904",
+      "issue": "8",
+      "journal-title": "Nat Genet. Springer Nature",
+      "key": "335_CR70",
+      "unstructured": "Price AL, Patterson NJ, Plenge RM, Weinblatt ME, Shadick NA, Reich D. Principal components analysis corrects for stratification in genome-wide association studies. Nat Genet. Springer Nature. 2006;38(8):904–9. https://doi.org/10.1038/ng1847.",
+      "volume": "38",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1038/ng.548",
+      "author": "HM Kang",
+      "doi-asserted-by": "publisher",
+      "first-page": "348",
+      "issue": "4",
+      "journal-title": "Nat Genet.",
+      "key": "335_CR71",
+      "unstructured": "Kang HM, Sul JH, Service SK, Zaitlen NA, Kong S-Y, Freimer NB, et al. Variance component model to account for sample structure in genome-wide association studies. Nat Genet. 2010;42(4):348–54. https://doi.org/10.1038/ng.548.",
+      "volume": "42",
+      "year": "2010"
+    },
+    {
+      "key": "335_CR72",
+      "unstructured": "Kang HM. EPACTS [Internet]. Available from: https://genome.sph.umich.edu/wiki/EPACTS"
+    },
+    {
+      "DOI": "10.1136/ebmental-2019-300117",
+      "author": "S Balduzzi",
+      "doi-asserted-by": "publisher",
+      "first-page": "153",
+      "issue": "4",
+      "journal-title": "Evid Based Ment Health.",
+      "key": "335_CR73",
+      "unstructured": "Balduzzi S, Rücker G, Schwarzer G. How to perform a meta-analysis with R: a practical tutorial. Evid Based Ment Health. 2019;22(4):153–60. https://doi.org/10.1136/ebmental-2019-300117.",
+      "volume": "22",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ng.2892",
+      "author": "M Kircher",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "issue": "3",
+      "journal-title": "Nat Genet.",
+      "key": "335_CR74",
+      "unstructured": "Kircher M, Witten DM, Jain P, O’Roak BJ, Cooper GM, Shendure J. A general framework for estimating the relative pathogenicity of human genetic variants. Nat Genet. 2014;46(3):310–5. https://doi.org/10.1038/ng.2892.",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "author": "W McLaren",
+      "doi-asserted-by": "publisher",
+      "first-page": "122",
+      "issue": "1",
+      "journal-title": "Genome Biol.",
+      "key": "335_CR75",
+      "unstructured": "McLaren W, Gil L, Hunt SE, Riat HS, Ritchie GRS, Thormann A, et al. The ensembl variant effect predictor. Genome Biol. 2016;17(1):122. https://doi.org/10.1186/s13059-016-0974-4.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1177/0962280210394459",
+      "author": "TM Palmer",
+      "doi-asserted-by": "publisher",
+      "first-page": "223",
+      "issue": "3",
+      "journal-title": "Stat Methods Med Res.",
+      "key": "335_CR76",
+      "unstructured": "Palmer TM, Lawlor DA, Harbord RM, Sheehan NA, Tobias JH, Timpson NJ, et al. Using multiple genetic variants as instrumental variables for modifiable risk factors. Stat Methods Med Res. 2012;21(3):223–42. https://doi.org/10.1177/0962280210394459.",
+      "volume": "21",
+      "year": "2012"
+    },
+    {
+      "author": "S van Buuren",
+      "first-page": "1",
+      "journal-title": "Journal of Statistical Software, Articles",
+      "key": "335_CR77",
+      "unstructured": "van Buuren S, Groothuis-Oudshoorn K. Mice: multivariate imputation by chained equations in R. Journal of Statistical Software, Articles. 2011;45:1–67.",
+      "volume": "45",
+      "year": "2011"
+    },
+    {
+      "author": "J Honaker",
+      "first-page": "1",
+      "journal-title": "Journal of Statistical Software, Articles.",
+      "key": "335_CR78",
+      "unstructured": "Honaker J, King G, Blackwell M. Amelia II: a program for missing data. Journal of Statistical Software, Articles. 2011;45:1–47.",
+      "volume": "45",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/ije/dyp334",
+      "author": "SR Cole",
+      "doi-asserted-by": "publisher",
+      "first-page": "417",
+      "issue": "2",
+      "journal-title": "Int J Epidemiol.",
+      "key": "335_CR79",
+      "unstructured": "Cole SR, Platt RW, Schisterman EF, Chu H, Westreich D, Richardson D, et al. Illustrating bias due to conditioning on a collider. Int J Epidemiol. 2010;39(2):417–20. https://doi.org/10.1093/ije/dyp334.",
+      "volume": "39",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1097/EDE.0000000000000081",
+      "author": "TJ VanderWeele",
+      "doi-asserted-by": "publisher",
+      "first-page": "427",
+      "issue": "3",
+      "journal-title": "Epidemiology.",
+      "key": "335_CR80",
+      "unstructured": "VanderWeele TJ, Tchetgen Tchetgen EJ, Cornelis M, Kraft P. Methodological challenges in mendelian randomization. Epidemiology. 2014;25(3):427–35. https://doi.org/10.1097/EDE.0000000000000081.",
+      "volume": "25",
+      "year": "2014"
+    },
+    {
+      "key": "335_CR81",
+      "unstructured": "Storey JD, Bass AJ, Dabney A, Robinson D. qvalue: Q-value estimation for false discovery rate control [Internet]. 2019. Available from: http://github.com/jdstorey/qvalue"
+    }
+  ],
+  "reference-count": 81,
+  "references-count": 81,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2020.10.23.20218586",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00335-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Mitochondrial genome copy number measured by DNA sequencing in human blood is strongly associated with metabolic traits via cell-type composition differences"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

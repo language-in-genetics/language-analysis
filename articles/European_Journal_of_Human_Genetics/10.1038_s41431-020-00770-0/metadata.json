@@ -1,0 +1,886 @@
+{
+  "DOI": "10.1038/s41431-020-00770-0",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-020-00770-0",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eLong-read sequencing (LRS) has the potential to comprehensively identify all medically relevant genome variation, including variation commonly missed by short-read sequencing (SRS) approaches. To determine this potential, we performed LRS around 15×–40× genome coverage using the Pacific Biosciences Sequel I System for five trios. The respective probands were diagnosed with intellectual disability (ID) whose etiology remained unresolved after SRS exomes and genomes. Systematic assessment of LRS coverage showed that ~35 Mb of the human reference genome was only accessible by LRS and not SRS. Genome-wide structural variant (SV) calling yielded on average 28,292 SV calls per individual, totaling 12.9 Mb of sequence. Trio-based analyses which allowed to study segregation, showed concordance for up to 95% of these SV calls across the genome, and 80% of the LRS SV calls were not identified by SRS. De novo mutation analysis did not identify any de novo SVs, confirming that these are rare events. Because of high sequence coverage, we were also able to call single nucleotide substitutions. On average, we identified 3 million substitutions per genome, with a Mendelian inheritance concordance of up to 97%. Of these, ~100,000 were located in the ~35 Mb of the genome that was only captured by LRS. Moreover, these variants affected the coding sequence of 64 genes, including 32 known Mendelian disease genes. Our data show the potential added value of LRS compared to SRS for identifying medically relevant genome variation.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "770"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "15 July 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "27 October 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "30 November 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Date",
+      "name": "change_date",
+      "order": 4,
+      "value": "26 March 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Type",
+      "name": "change_type",
+      "order": 5,
+      "value": "Correction"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 6,
+      "value": "A Correction to this paper has been published:"
+    },
+    {
+      "URL": "https://doi.org/10.1038/s41431-021-00868-z",
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 7,
+      "value": "https://doi.org/10.1038/s41431-021-00868-z"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "AMW, SC, and PB are employees and shareholders of Pacific Biosciences, a company commercializing DNA sequencing technologies."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Pauper",
+      "given": "Marc",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3970-7068",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kucuk",
+      "given": "Erdi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wenger",
+      "given": "Aaron M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chakraborty",
+      "given": "Shreyasee",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Baybayan",
+      "given": "Primo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kwint",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0546-1351",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "van der Sanden",
+      "given": "Bart",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nelen",
+      "given": "Marcel R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Derks",
+      "given": "Ronny",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brunner",
+      "given": "Han G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoischen",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6470-5497",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Vissers",
+      "given": "Lisenka E. L. M.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1693-9699",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Gilissen",
+      "given": "Christian",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        11,
+        30
+      ]
+    ],
+    "date-time": "2020-11-30T20:03:01Z",
+    "timestamp": 1606766581000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        18
+      ]
+    ],
+    "date-time": "2022-04-18T02:23:11Z",
+    "timestamp": 1650248591000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001826",
+      "award": [
+        "917-17-353"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "ZonMw"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        27
+      ]
+    ],
+    "date-time": "2024-04-27T06:31:52Z",
+    "timestamp": 1714199512674
+  },
+  "is-referenced-by-count": 28,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        11,
+        30
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            30
+          ]
+        ],
+        "date-time": "2020-11-30T00:00:00Z",
+        "timestamp": 1606694400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            30
+          ]
+        ],
+        "date-time": "2020-11-30T00:00:00Z",
+        "timestamp": 1606694400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-020-00770-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-020-00770-0",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-020-00770-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "637-648",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        11,
+        30
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        11,
+        30
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        4
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/nrg3999",
+      "author": "LELM Vissers",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "journal-title": "Nat Rev Genet",
+      "key": "770_CR1",
+      "unstructured": "Vissers LELM, Gilissen C, Veltman JA. Genetic studies in intellectual disability and related disorders. Nat Rev Genet 2016;17:9–18.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/gim.2014.154",
+      "author": "KD Farwell",
+      "doi-asserted-by": "publisher",
+      "first-page": "578",
+      "journal-title": "Genet Med",
+      "key": "770_CR2",
+      "unstructured": "Farwell KD, Shahmirzadi L, El-Khechen D, et al. Enhanced utility of family-centered diagnostic exome sequencing with inheritance model-based analysis: results from 500 unselected families with undiagnosed genetic conditions. Genet Med. 2015;17:578–86.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/gim.2017.1",
+      "author": "LELM Vissers",
+      "doi-asserted-by": "publisher",
+      "first-page": "1055",
+      "journal-title": "Genet Med",
+      "key": "770_CR3",
+      "unstructured": "Vissers LELM, Van Nimwegen KJM, Schieving JH, et al. A clinical utility study of exome sequencing versus conventional genetic testing in pediatric neurology. Genet Med. 2017;19:1055–63.",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1001/jama.2014.14601",
+      "author": "Y Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1870",
+      "journal-title": "JAMA",
+      "key": "770_CR4",
+      "unstructured": "Yang Y, Muzny DM, Xia F, et al. Molecular findings among patients referred for clinical whole-exome sequencing. JAMA. 2014;312:1870–9.",
+      "volume": "312",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3389/fbioe.2015.00092",
+      "author": "L Tattini",
+      "doi-asserted-by": "publisher",
+      "first-page": "92",
+      "journal-title": "Front Bioeng Biotechnol",
+      "key": "770_CR5",
+      "unstructured": "Tattini L, D’Aurizio R, Magi A. Detection of genomic structural variants from next-generation sequencing data. Front Bioeng Biotechnol. 2015;3:92.",
+      "volume": "3",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1101/gr.214007.116",
+      "author": "J Huddleston",
+      "doi-asserted-by": "publisher",
+      "first-page": "677",
+      "journal-title": "Genome Res",
+      "key": "770_CR6",
+      "unstructured": "Huddleston J, Chaisson MJP, Steinberg KM, et al. Discovery and genotyping of structural variation from long-read haploid genome sequence data. Genome Res. 2017;27:677–85.",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41576-018-0003-4",
+      "author": "FJ Sedlazeck",
+      "doi-asserted-by": "publisher",
+      "first-page": "329",
+      "journal-title": "Nat Rev Genet",
+      "key": "770_CR7",
+      "unstructured": "Sedlazeck FJ, Lee H, Darby CA, Schatz MC. Piercing the dark matter: bioinformatics of long-range sequencing and mapping. Nat Rev Genet. 2018;19:329–46.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1126/science.1162986",
+      "author": "J Eid",
+      "doi-asserted-by": "publisher",
+      "first-page": "133",
+      "journal-title": "Science",
+      "key": "770_CR8",
+      "unstructured": "Eid J, Fehr A, Gray J, et al. Real-time DNA sequencing from single polymerase molecules. Science. 2009;323:133–8.",
+      "volume": "323",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nmeth.3454",
+      "author": "M Pendleton",
+      "doi-asserted-by": "publisher",
+      "first-page": "780",
+      "journal-title": "Nat Methods",
+      "key": "770_CR9",
+      "unstructured": "Pendleton M, Sebra R, Pang AW, et al. Assembly and diploid architecture of an individual human genome via single-molecule technologies. Nat Methods. 2015;12:780–6.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature20098",
+      "author": "JS Seo",
+      "doi-asserted-by": "publisher",
+      "first-page": "243",
+      "journal-title": "Nature",
+      "key": "770_CR10",
+      "unstructured": "Seo JS, Rhie A, Kim J, et al. De novo assembly and phasing of a Korean human genome. Nature. 2016;538:243–7.",
+      "volume": "538",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ncomms12065",
+      "author": "L Shi",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "770_CR11",
+      "unstructured": "Shi L, Guo Y, Dong C, et al. Long-read sequencing and de novo assembly of a Chinese genome. Nat Commun. 2016;7:12065.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature13907",
+      "author": "MJ Chaisson",
+      "doi-asserted-by": "publisher",
+      "first-page": "608",
+      "journal-title": "Nature",
+      "key": "770_CR12",
+      "unstructured": "Chaisson MJ, Huddleston J, Dennis MY, et al. Resolving the complexity of the human genome using single-molecule sequencing. Nature. 2015;517:608–11.",
+      "volume": "517",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nrg2958",
+      "author": "C Alkan",
+      "doi-asserted-by": "publisher",
+      "first-page": "363",
+      "journal-title": "Nat Rev Genet",
+      "key": "770_CR13",
+      "unstructured": "Alkan C, Coe BP, Eichler EE. Genome structural variation discovery and genotyping. Nat Rev Genet. 2011;12:363–76.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/nrg3373",
+      "author": "J Weischenfeldt",
+      "doi-asserted-by": "publisher",
+      "first-page": "125",
+      "journal-title": "Nat Rev Genet",
+      "key": "770_CR14",
+      "unstructured": "Weischenfeldt J, Symmons O, Spitz F, Korbel JO. Phenotypic impact of genomic structural variation: insights from and for human disease. Nat Rev Genet. 2013;14:125–38.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/ng2054",
+      "author": "GM Cooper",
+      "doi-asserted-by": "publisher",
+      "first-page": "S22",
+      "journal-title": "Nat Genet",
+      "key": "770_CR15",
+      "unstructured": "Cooper GM, Nickerson DA, Eichler EE. Mutational and selective effects on copy-number variants in the human genome. Nat Genet. 2007;39:S22–9.",
+      "volume": "39",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/ng.236",
+      "author": "GM Cooper",
+      "doi-asserted-by": "publisher",
+      "first-page": "1199",
+      "journal-title": "Nat Genet",
+      "key": "770_CR16",
+      "unstructured": "Cooper GM, Zerr T, Kidd JM, Eichler EE, Nickerson DA. Systematic assessment of copy number variant detection via genome-wide SNP genotyping. Nat Genet. 2008;40:1199–203.",
+      "volume": "40",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nrg.2015.25",
+      "author": "CM Carvalho",
+      "doi-asserted-by": "publisher",
+      "first-page": "224",
+      "journal-title": "Nat Rev Genet",
+      "key": "770_CR17",
+      "unstructured": "Carvalho CM, Lupski JR. Mechanisms underlying structural variant formation in genomic disorders. Nat Rev Genet. 2016;17:224–38.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bfgp/elv014",
+      "author": "G Escaramís",
+      "doi-asserted-by": "publisher",
+      "first-page": "305",
+      "journal-title": "Brief Funct Genomics",
+      "key": "770_CR18",
+      "unstructured": "Escaramís G, Docampo E, Rabionet R. A decade of structural variants: description, history and methods to detect structural variation. Brief Funct Genomics. 2015;14:305–14.",
+      "volume": "14",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/gim.2017.86",
+      "author": "JD Merker",
+      "doi-asserted-by": "publisher",
+      "first-page": "159",
+      "journal-title": "Genet Med",
+      "key": "770_CR19",
+      "unstructured": "Merker JD, Wenger AM, Sneddon T, et al. Long-read genome sequencing identifies causal structural variation in a Mendelian disease. Genet Med. 2018;20:159–63.",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41525-017-0042-3",
+      "doi-asserted-by": "publisher",
+      "key": "770_CR20",
+      "unstructured": "Reiner J, Pisani L, Qiao W, et al. Cytogenomic identification and long-read single molecule real-time (SMRT) sequencing of a Bardet-Biedl Syndrome 9 (BBS9) deletion. npj Genomic Med. 2018;3. https://doi.org/10.1038/s41525-017-0042-3."
+    },
+    {
+      "DOI": "10.3389/fgene.2019.00426",
+      "doi-asserted-by": "publisher",
+      "key": "770_CR21",
+      "unstructured": "Mantere T, Kersten S, Hoischen A. Long-read sequencing emerging in medical genetics. Front. Genet. 2019;10. https://doi.org/10.3389/fgene.2019.00426."
+    },
+    {
+      "DOI": "10.1186/s13059-019-1707-2",
+      "author": "MTW Ebbert",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Biol",
+      "key": "770_CR22",
+      "unstructured": "Ebbert MTW, Jensen TD, Jansen-West K, et al. Systematic analysis of dark and camouflaged genes reveals disease-relevant genes hiding in plain sight. Genome Biol. 2019;20:1–23.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature13394",
+      "author": "C Gilissen",
+      "doi-asserted-by": "publisher",
+      "first-page": "344",
+      "journal-title": "Nature",
+      "key": "770_CR23",
+      "unstructured": "Gilissen C, Hehir-Kwa JY, Thung DT, et al. Genome sequencing identifies major causes of severe intellectual disability. Nature. 2014;511:344–7.",
+      "volume": "511",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/humu.22442",
+      "author": "AT Vulto-van Silfhout",
+      "doi-asserted-by": "publisher",
+      "first-page": "1679",
+      "journal-title": "Hum Mutat",
+      "key": "770_CR24",
+      "unstructured": "Vulto-van Silfhout AT, Hehir-Kwa JY, van Bon BWM, et al. Clinical significance of de novo and inherited copy-number variation. Hum Mutat. 2013;34:1679–87.",
+      "volume": "34",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1206524",
+      "author": "J de Ligt",
+      "doi-asserted-by": "publisher",
+      "first-page": "1921",
+      "journal-title": "N. Engl J Med",
+      "key": "770_CR25",
+      "unstructured": "de Ligt J, Willemsen MH, van Bon BW, et al. Diagnostic exome sequencing in persons with severe intellectual disability. N. Engl J Med. 2012;367:1921–9.",
+      "volume": "367",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41467-018-04540-x",
+      "doi-asserted-by": "publisher",
+      "key": "770_CR26",
+      "unstructured": "Barbosa M, Joshi RS, Garg P, et al. Identification of rare de novo epigenetic variations in congenital disorders. Nat Commun. 2018;9. https://doi.org/10.1038/s41467-018-04540-x."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw152",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2103",
+      "journal-title": "Bioinformatics",
+      "key": "770_CR27",
+      "unstructured": "Li H. Minimap and miniasm: fast mapping and de novo assembly for noisy long sequences. Bioinformatics. 2016;32:2103–10.",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty304",
+      "author": "V Geoffroy",
+      "doi-asserted-by": "publisher",
+      "first-page": "3572",
+      "journal-title": "Bioinformatics",
+      "key": "770_CR28",
+      "unstructured": "Geoffroy V, Herenger Y, Kress A, et al. AnnotSV: an integrated tool for structural variations annotation. Bioinformatics. 2018;34:3572–4.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-019-12493-y",
+      "author": "P Edge",
+      "doi-asserted-by": "publisher",
+      "first-page": "4660",
+      "journal-title": "Nat Commun",
+      "key": "770_CR29",
+      "unstructured": "Edge P, Bansal V. Longshot: accurate variant calling in diploid genomes using single-molecule long read sequencing. Nat Commun. 2019;10:4660.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkq603",
+      "author": "K Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e164",
+      "journal-title": "Nucleic Acids Res",
+      "key": "770_CR30",
+      "unstructured": "Wang K, Li M, Hakonarson H. ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data. Nucleic Acids Res. 2010;38:e164.",
+      "volume": "38",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv566",
+      "author": "K Okonechnikov",
+      "doi-asserted-by": "publisher",
+      "first-page": "btv566",
+      "journal-title": "Bioinformatics",
+      "key": "770_CR31",
+      "unstructured": "Okonechnikov K, Conesa A, García-Alcalde F. Qualimap 2: advanced multi-sample quality control for high-throughput sequencing data. Bioinformatics. 2015;32:btv566.",
+      "volume": "32",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1206524",
+      "author": "J De Ligt",
+      "doi-asserted-by": "publisher",
+      "first-page": "1921",
+      "journal-title": "N. Engl J Med",
+      "key": "770_CR32",
+      "unstructured": "De Ligt J, Willemsen MH, Van Bon BWM, et al. Diagnostic exome sequencing in persons with severe intellectual disability. N. Engl J Med. 2012;367:1921–9.",
+      "volume": "367",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1101/295071",
+      "doi-asserted-by": "publisher",
+      "key": "770_CR33",
+      "unstructured": "Farek J, Hughes D, Mansfield A et al. xAtlas: Scalable small variant calling across heterogeneous next-generation sequencing experiments. bioRxiv. 2018. https://doi.org/10.1101/295071."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv710",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1220",
+      "journal-title": "Bioinformatics",
+      "key": "770_CR34",
+      "unstructured": "Chen X, Schulz-Trieglaff O, Shaw R, et al. Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics. 2016;32:1220–2.",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/gb-2014-15-6-r84",
+      "author": "RM Layer",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "770_CR35",
+      "unstructured": "Layer RM, Chiang C, Quinlan AR, Hall IM. LUMPY: a probabilistic framework for structural variant discovery. Genome Biol. 2014;15:R84.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts378",
+      "author": "T Rausch",
+      "doi-asserted-by": "crossref",
+      "first-page": "i333",
+      "journal-title": "Bioinformatics",
+      "key": "770_CR36",
+      "unstructured": "Rausch T, Zichner T, Schlattl A, Stutz AM, Benes V, Korbel JO. DELLY: structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics. 2012;28:i333–9.",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/nmeth.3505",
+      "author": "C Chiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "966",
+      "journal-title": "Nat Methods",
+      "key": "770_CR37",
+      "unstructured": "Chiang C, Layer RM, Faust GG, et al. SpeedSeq: ultra-fast personal genome analysis and interpretation. Nat Methods. 2015;12:966–8.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq033",
+      "author": "AR Quinlan",
+      "doi-asserted-by": "publisher",
+      "first-page": "841",
+      "journal-title": "Bioinformatics",
+      "key": "770_CR38",
+      "unstructured": "Quinlan AR, Hall IM. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics. 2010;26:841–2.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41587-019-0217-9",
+      "author": "AM Wenger",
+      "doi-asserted-by": "publisher",
+      "first-page": "1155",
+      "journal-title": "Nat Biotechnol",
+      "key": "770_CR39",
+      "unstructured": "Wenger AM, Peluso P, Rowell WJ, et al. Accurate circular consensus long-read sequencing improves variant detection and assembly of a human genome. Nat Biotechnol. 2019;37:1155–62.",
+      "volume": "37",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.12.019",
+      "author": "PA Audano",
+      "doi-asserted-by": "publisher",
+      "first-page": "663",
+      "journal-title": "Cell",
+      "key": "770_CR40",
+      "unstructured": "Audano PA, Sulovari A, Graves-Lindsay TA, et al. Characterizing the major structural variant alleles of the human genome. Cell. 2019;176:663–75.e19",
+      "volume": "176",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nbt.1754",
+      "author": "JT Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Nat Biotechnol",
+      "key": "770_CR41",
+      "unstructured": "Robinson JT, Thorvaldsdottir H, Winckler W, et al. Integrative genomics viewer. Nat Biotechnol. 2011;29:24–26.",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.12688/f1000research.10571.2",
+      "author": "JL Weirather",
+      "doi-asserted-by": "publisher",
+      "first-page": "100",
+      "journal-title": "F1000Research",
+      "key": "770_CR42",
+      "unstructured": "Weirather JL, de Cesare M, Wang Y, et al. Comprehensive comparison of Pacific Biosciences and Oxford Nanopore Technologies and their applications to transcriptome analysis. F1000Research. 2017;6:100.",
+      "volume": "6",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/1753-6561-8-S1-S21",
+      "doi-asserted-by": "publisher",
+      "key": "770_CR43",
+      "unstructured": "Pilipenko VV, He H, Kurowski BG, et al. Using Mendelian inheritance errors as quality control criteria in whole genome sequencing data set. BMC Proc. 2014;(Suppl 1 Genetic Analysis Workshop 18Vanessa Olmo):S21. https://doi.org/10.1186/1753-6561-8-S1-S21."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu668",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "318",
+      "journal-title": "Bioinformatics",
+      "key": "770_CR44",
+      "unstructured": "Wang J, Raskin L, Samuels DC, Shyr Y, Guo Y. Genome measures used for quality control are dependent on gene function and ancestry. Bioinformatics. 2015;31:318–23.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11146-4",
+      "author": "DL Cameron",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Nat Commun",
+      "key": "770_CR45",
+      "unstructured": "Cameron DL, Di Stefano L, Papenfuss AT. Comprehensive evaluation and characterisation of short read general-purpose structural variant calling software. Nat Commun. 2019;10:1–11.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-018-08148-z",
+      "doi-asserted-by": "publisher",
+      "key": "770_CR46",
+      "unstructured": "Chaisson MJP, Sanders AD, Zhao X, et al. Multi-platform discovery of haplotype-resolved structural variation in human genomes. Nat Commun. 2019;10. https://doi.org/10.1038/s41467-018-08148-z."
+    },
+    {
+      "DOI": "10.1038/nprot.2017.029",
+      "author": "AD Sanders",
+      "doi-asserted-by": "publisher",
+      "first-page": "1151",
+      "journal-title": "Nat Protoc",
+      "key": "770_CR47",
+      "unstructured": "Sanders AD, Falconer E, Hills M, Spierings DCJ, Lansdorp PM. Single-cell template strand sequencing by Strand-seq enables the characterization of individual homologs. Nat Protoc. 2017;12:1151–76.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/978-1-4939-8666-8_16",
+      "author": "S Chan",
+      "doi-asserted-by": "publisher",
+      "first-page": "193",
+      "journal-title": "Methods Mol Biol",
+      "key": "770_CR48",
+      "unstructured": "Chan S, Lam E, Saghbini M, et al. Structural variation detection and analysis using bionano optical mapping. Methods Mol Biol. 2018;1833:193–203.",
+      "volume": "1833",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nrg3241",
+      "author": "JA Veltman",
+      "doi-asserted-by": "publisher",
+      "first-page": "565",
+      "journal-title": "Nat Rev Genet",
+      "key": "770_CR49",
+      "unstructured": "Veltman JA, Brunner HG. De novo mutations in human genetic disease. Nat Rev Genet. 2012;13:565–75.",
+      "volume": "13",
+      "year": "2012"
+    }
+  ],
+  "reference-count": 49,
+  "references-count": 49,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-020-00770-0"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Long-read trio sequencing of individuals with unsolved intellectual disability"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "29"
+}

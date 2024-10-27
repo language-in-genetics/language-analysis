@@ -1,0 +1,1163 @@
+{
+  "DOI": "10.1186/s40246-023-00494-4",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00494-4",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eIndividuals infected with SARS-CoV-2 vary greatly in their disease severity, ranging from asymptomatic infection to severe disease. The regulation of gene expression is an important mechanism in the host immune response and can modulate the outcome of the disease. miRNAs play important roles in post-transcriptional regulation with consequences on downstream molecular and cellular host immune response processes. The nature and magnitude of miRNA perturbations associated with blood phenotypes and intensive care unit (ICU) admission in COVID-19 are poorly understood.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe combined multi-omics profiling—genotyping, miRNA and RNA expression, measured at the time of hospital admission soon after the onset of COVID-19 symptoms—with phenotypes from electronic health records to understand how miRNA expression contributes to variation in disease severity in a diverse cohort of 259 unvaccinated patients in Abu Dhabi, United Arab Emirates. We analyzed 62 clinical variables and expression levels of 632 miRNAs measured at admission and identified 97 miRNAs associated with 8 blood phenotypes significantly associated with later ICU admission. Integrative miRNA-mRNA cross-correlation analysis identified multiple miRNA-mRNA-blood endophenotype associations and revealed the effect of miR-143-3p on neutrophil count mediated by the expression of its target gene BCL2. We report 168 significant \u003cjats:italic\u003ecis\u003c/jats:italic\u003e-miRNA expression quantitative trait loci, 57 of which implicate miRNAs associated with either ICU admission or a blood endophenotype.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThis systems genetics study has given rise to a genomic picture of the architecture of whole blood miRNAs in unvaccinated COVID-19 patients and pinpoints post-transcriptional regulation as a potential mechanism that impacts blood traits underlying COVID-19 severity. The results also highlight the impact of host genetic regulatory control of miRNA expression in early stages of COVID-19 disease.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "494"
+  ],
+  "article-number": "49",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "23 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "10 May 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "12 June 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The blood samples and clinical records were obtained from Al Ain Hospital, Al Rahba Hospital, Mafraq Hospital and Sheikh Khalifa Medical Center in Abu Dhabi, United Arab Emirates. All patients signed an informed consent to participate in the study before sample donation. The study was reviewed and approved by the Research Ethics Committee at New York University Abu Dhabi (NYUAD) (HRPP-2020-59) and the Abu Dhabi COVID-19 Research International Review Board Committee of the Department of Health (Ref no: DOH/CVDC/2020/874). This study was conducted in accordance with the principles of the Helsinki Declaration."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Gjorgjieva",
+      "given": "T.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Chaloemtoem",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shahin",
+      "given": "T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bayaraa",
+      "given": "O.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dieng",
+      "given": "M. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Alshaikh",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Abdalbaqi",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Del Monte",
+      "given": "J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Begum",
+      "given": "G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leonor",
+      "given": "C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Manikandan",
+      "given": "V.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Drou",
+      "given": "N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Arshad",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Arnoux",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kumar",
+      "given": "N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jabari",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Abdulle",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "ElGhazali",
+      "given": "G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ali",
+      "given": "R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shaheen",
+      "given": "S. Y.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Abdalla",
+      "given": "J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Piano",
+      "given": "F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gunsalus",
+      "given": "K. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Daggag",
+      "given": "H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Al Nahdi",
+      "given": "H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Abuzeid",
+      "given": "H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Idaghdour",
+      "given": "Y.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ],
+    "date-time": "2023-06-12T00:01:54Z",
+    "timestamp": 1686528114000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ],
+    "date-time": "2023-06-12T00:02:24Z",
+    "timestamp": 1686528144000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        27
+      ]
+    ],
+    "date-time": "2024-03-27T05:19:23Z",
+    "timestamp": 1711516763731
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            12
+          ]
+        ],
+        "date-time": "2023-06-12T00:00:00Z",
+        "timestamp": 1686528000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            12
+          ]
+        ],
+        "date-time": "2023-06-12T00:00:00Z",
+        "timestamp": 1686528000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00494-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00494-4/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00494-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        6,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1172/JCI137244",
+      "author": "G Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "2620",
+      "issue": "5",
+      "journal-title": "J Clin Investig",
+      "key": "494_CR1",
+      "unstructured": "Chen G, Wu DI, Guo W, Cao Y, Huang D, Wang H, et al. Clinical and immunological features of severe and moderate coronavirus disease 2019. J Clin Investig. 2020;130(5):2620–9.",
+      "volume": "130",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/jmv.25748",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "568",
+      "issue": "6",
+      "journal-title": "J Med Virol",
+      "key": "494_CR2",
+      "unstructured": "Wang Y, Wang Y, Chen Y, Qin Q. Unique epidemiological and clinical features of the emerging 2019 novel coronavirus pneumonia (COVID-19) implicate special control measures. J Med Virol. 2020;92(6):568–76.",
+      "volume": "92",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0254066",
+      "author": "NT Nguyen",
+      "doi-asserted-by": "publisher",
+      "issue": "7",
+      "journal-title": "PLoS ONE",
+      "key": "494_CR3",
+      "unstructured": "Nguyen NT, Chinn J, De Ferrante M, Kirby KA, Hohmann SF, Amin A. Male gender is a predictor of higher mortality in hospitalized adults with COVID-19. PLoS ONE. 2021;16(7): e0254066.",
+      "volume": "16",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3892/mmr.2020.11127",
+      "author": "D Petrakis",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "issue": "1",
+      "journal-title": "Mol Med Rep",
+      "key": "494_CR4",
+      "unstructured": "Petrakis D, Margină D, Tsarouhas K, Tekos F, Stan M, Nikitovic D, et al. Obesity-a risk factor for increased COVID-19 prevalence, severity and lethality. Mol Med Rep. 2020;22(1):9–19.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/bmjopen-2020-044640",
+      "author": "BG Pijls",
+      "doi-asserted-by": "publisher",
+      "first-page": "e044640",
+      "issue": "1",
+      "journal-title": "BMJ Open",
+      "key": "494_CR5",
+      "unstructured": "Pijls BG, Jolani S, Atherley A, Derckx RT, Dijkstra JI, Franssen GH, et al. Demographic risk factors for COVID-19 infection, severity, ICU admission and death: a meta-analysis of 59 studies. BMJ Open. 2021;11(1):e044640.",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/ijcp.13916",
+      "author": "A Rahman",
+      "doi-asserted-by": "publisher",
+      "issue": "7",
+      "journal-title": "Int J Clin Pract",
+      "key": "494_CR6",
+      "unstructured": "Rahman A, Sathi NJ. Risk factors of the severity of COVID-19: a meta-analysis. Int J Clin Pract. 2021;75(7): e13916.",
+      "volume": "75",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.5937/jomb0-27554",
+      "author": "M Ahnach",
+      "doi-asserted-by": "publisher",
+      "first-page": "500",
+      "issue": "4",
+      "journal-title": "J Med Biochem",
+      "key": "494_CR7",
+      "unstructured": "Ahnach M, Zbiri S, Nejjari S, Ousti F, Elkettani C. C-reactive protein as an early predictor of COVID-19 severity. J Med Biochem. 2020;39(4):500.",
+      "volume": "39",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.jgar.2020.07.029",
+      "author": "SH Javanmard",
+      "doi-asserted-by": "publisher",
+      "first-page": "862",
+      "journal-title": "J Glob Antimicrob Resist",
+      "key": "494_CR8",
+      "unstructured": "Javanmard SH, Vaseghi G, Manteghinejad A, Nasirian M. Neutrophil-to-Lymphocyte ratio as a potential biomarker for disease severity in COVID-19 patients. J Glob Antimicrob Resist. 2020;22:862.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.clim.2020.108614",
+      "author": "S Keddie",
+      "doi-asserted-by": "publisher",
+      "first-page": "108614",
+      "journal-title": "Clin Immunol",
+      "key": "494_CR9",
+      "unstructured": "Keddie S, Ziff O, Chou MK, Taylor RL, Heslegrave A, Garr E, et al. Laboratory biomarkers associated with COVID-19 severity and management. Clin Immunol. 2020;221:108614.",
+      "volume": "221",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13054-020-03374-8",
+      "author": "X Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Crit Care",
+      "key": "494_CR10",
+      "unstructured": "Li X, Liu C, Mao Z, Xiao M, Wang L, Qi S, Zhou F. Predictive values of neutrophil-to-lymphocyte ratio on disease severity and mortality in COVID-19 patients: a systematic review and meta-analysis. Crit Care. 2020;24(1):1–10.",
+      "volume": "24",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fpubh.2020.00432",
+      "author": "P Paliogiannis",
+      "doi-asserted-by": "publisher",
+      "first-page": "432",
+      "journal-title": "Front Public Health",
+      "key": "494_CR11",
+      "unstructured": "Paliogiannis P, Mangoni AA, Dettori P, Nasrallah GK, Pintus G, Zinellu A. D-dimer concentrations and COVID-19 severity: a systematic review and meta-analysis. Front Public Health. 2020;66:432.",
+      "volume": "66",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1097/CRD.0000000000000330",
+      "author": "S Shah",
+      "doi-asserted-by": "publisher",
+      "first-page": "295",
+      "issue": "6",
+      "journal-title": "Cardiol Rev",
+      "key": "494_CR12",
+      "unstructured": "Shah S, Shah K, Patel SB, Patel FS, Osman M, Velagapudi P, Turagam MK, Lakkireddy D, Garg J. Elevated D-dimer levels are associated with increased risk of mortality in coronavirus disease 2019: a systematic review and meta-analysis. Cardiol Rev. 2020;28(6):295–302.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/jmv.26031",
+      "author": "W Shang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2188",
+      "issue": "10",
+      "journal-title": "J Med Virol",
+      "key": "494_CR13",
+      "unstructured": "Shang W, Dong J, Ren Y, Tian M, Li W, Hu J, Li Y. The value of clinical parameters in predicting the severity of COVID-19. J Med Virol. 2020;92(10):2188–92.",
+      "volume": "92",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.5858/arpa.2020-0471-SA",
+      "author": "Y Tjendra",
+      "doi-asserted-by": "publisher",
+      "first-page": "1465",
+      "issue": "12",
+      "journal-title": "Arch Pathol Lab Med",
+      "key": "494_CR14",
+      "unstructured": "Tjendra Y, Al Mana AF, Espejo AP, Akgun Y, Millan NC, Gomez-Fernandez C, Cray C. Predicting disease severity and outcome in COVID-19 patients: a review of multiple biomarkers. Arch Pathol Lab Med. 2020;144(12):1465–74.",
+      "volume": "144",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13054-022-04002-3",
+      "author": "C Loyer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Crit Care",
+      "key": "494_CR15",
+      "unstructured": "Loyer C, Lapostolle A, Urbina T, Elabbadi A, Lavillegrand JR, Chaigneau T, et al. Impairment of neutrophil functions and homeostasis in COVID-19 patients: association with disease severity. Crit Care. 2022;26(1):1–16.",
+      "volume": "26",
+      "year": "2022"
+    },
+    {
+      "author": "E McKenna",
+      "first-page": "2548",
+      "journal-title": "Front Immunol",
+      "key": "494_CR16",
+      "unstructured": "McKenna E, Wubben R, Isaza-Correa JM, Melo AM, Mhaonaigh AU, Conlon N, et al. Neutrophils in COVID-19: not innocent bystanders. Front Immunol. 2022;66:2548.",
+      "volume": "66",
+      "year": "2022"
+    },
+    {
+      "author": "N Reusch",
+      "first-page": "952",
+      "journal-title": "Front Immunol",
+      "key": "494_CR17",
+      "unstructured": "Reusch N, De Domenico E, Bonaguro L, Schulte-Schrepping J, Baßler K, Schultze JL, Aschenbrenner AC. Neutrophils in COVID-19. Front Immunol. 2021;66:952.",
+      "volume": "66",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13073-020-00823-5",
+      "author": "AC Aschenbrenner",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Med",
+      "key": "494_CR18",
+      "unstructured": "Aschenbrenner AC, Mouktaroudi M, Krämer B, Oestreich M, Antonakos N, Nuesch-Germano M, et al. Disease severity-specific neutrophil signatures in blood transcriptomes stratify COVID-19 patients. Genome Med. 2021;13(1):1–25.",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ijid.2021.03.066",
+      "author": "D Dennison",
+      "doi-asserted-by": "publisher",
+      "first-page": "155",
+      "journal-title": "Int J Infect Dis",
+      "key": "494_CR19",
+      "unstructured": "Dennison D, Al Khabori M, Al Mamari S, Aurelio A, Al Hinai H, Al Maamari K, et al. Circulating activated neutrophils in COVID-19: An independent predictor for mechanical ventilation and death. Int J Infect Dis. 2021;106:155–9.",
+      "volume": "106",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41431-020-0636-6",
+      "doi-asserted-by": "crossref",
+      "key": "494_CR20",
+      "unstructured": "COVID-19 Host Genetics Initiative. The COVID-19 host genetics initiative, a global initiative to elucidate the role of host genetic factors in susceptibility and severity of the SARS-CoV-2 virus pandemic. Eur J Hum Genet. 2020;28(6):715."
+    },
+    {
+      "DOI": "10.1038/s41586-020-2818-3",
+      "author": "H Zeberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "610",
+      "issue": "7835",
+      "journal-title": "Nature",
+      "key": "494_CR21",
+      "unstructured": "Zeberg H, Pääbo S. The major genetic risk factor for severe COVID-19 is inherited from Neanderthals. Nature. 2020;587(7835):610–2.",
+      "volume": "587",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1126/stke.3672007re1",
+      "doi-asserted-by": "crossref",
+      "key": "494_CR22",
+      "unstructured": "Jackson RJ, Standart N. How do microRNAs regulate gene expression? Science's STKE. 2007;2007(367):re1."
+    },
+    {
+      "DOI": "10.3389/fendo.2018.00402",
+      "author": "J O'Brien",
+      "doi-asserted-by": "publisher",
+      "first-page": "402",
+      "journal-title": "Front Endocrinol",
+      "key": "494_CR23",
+      "unstructured": "O’Brien J, Hayder H, Zayed Y, Peng C. Overview of MicroRNA biogenesis, mechanisms of actions, and circulation. Front Endocrinol. 2018;9:402.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nri.2016.40",
+      "author": "A Mehta",
+      "doi-asserted-by": "publisher",
+      "first-page": "279",
+      "issue": "5",
+      "journal-title": "Nat Rev Immunol",
+      "key": "494_CR24",
+      "unstructured": "Mehta A, Baltimore D. MicroRNAs as regulatory elements in immune system logic. Nat Rev Immunol. 2016;16(5):279–94.",
+      "volume": "16",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.canlet.2018.05.020",
+      "author": "S Hirschberger",
+      "doi-asserted-by": "publisher",
+      "first-page": "11",
+      "journal-title": "Cancer Lett",
+      "key": "494_CR25",
+      "unstructured": "Hirschberger S, Hinske LC, Kreth S. MiRNAs: dynamic regulators of immune cell functions in inflammation and cancer. Cancer Lett. 2018;431:11–21.",
+      "volume": "431",
+      "year": "2018"
+    },
+    {
+      "author": "AM Ardekani",
+      "first-page": "161",
+      "issue": "4",
+      "journal-title": "Avicenna J Med Biotechnol",
+      "key": "494_CR26",
+      "unstructured": "Ardekani AM, Naeini MM. The role of MicroRNAs in human diseases. Avicenna J Med Biotechnol. 2010;2(4):161–79.",
+      "volume": "2",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.3748/wjg.v19.i20.2985",
+      "author": "J Raisch",
+      "doi-asserted-by": "publisher",
+      "first-page": "2985",
+      "issue": "20",
+      "journal-title": "World J Gastroenterol",
+      "key": "494_CR27",
+      "unstructured": "Raisch J, Darfeuille-Michaud A, Nguyen HTT. Role of microRNAs in the immune system, inflammation and cancer. World J Gastroenterol. 2013;19(20):2985.",
+      "volume": "19",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.3389/fmicb.2020.01197",
+      "author": "L Tribolet",
+      "doi-asserted-by": "publisher",
+      "first-page": "1197",
+      "journal-title": "Front Microbiol",
+      "key": "494_CR28",
+      "unstructured": "Tribolet L, Kerr E, Cowled C, Bean A, Stewart CR, Dearnley M, Farr RJ. MicroRNA biomarkers for infectious diseases: from basic research to biosensing. Front Microbiol. 2020;11:1197.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-020-18915-6",
+      "doi-asserted-by": "crossref",
+      "key": "494_CR29",
+      "unstructured": "Dieng MM, Diawara A, Manikandan V, Tamim El Jarkass H, Sermé SS, Sombié S, et al. Integrative genomic analysis reveals mechanisms of immune evasion in P. falciparum malaria. Nat Commun. 2020;11(1):1–11."
+    },
+    {
+      "DOI": "10.1186/1752-0509-4-163",
+      "author": "H Dong",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "BMC Syst Biol",
+      "key": "494_CR30",
+      "unstructured": "Dong H, Luo L, Hong S, Siu H, Xiao Y, Jin L, et al. Integrated analysis of mutations, miRNA and mRNA expression in glioblastoma. BMC Syst Biol. 2010;4(1):1–20.",
+      "volume": "4",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gkz711",
+      "author": "J Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "D956",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "494_CR31",
+      "unstructured": "Li J, Xue Y, Amin MT, Yang Y, Yang J, Zhang W, et al. ncRNA-eQTL: a database to systematically evaluate the effects of SNPs on non-coding RNA expression across cancer types. Nucleic Acids Res. 2020;48(1):D956–63.",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/hmg/ddab361",
+      "author": "K Sonehara",
+      "doi-asserted-by": "publisher",
+      "first-page": "1806",
+      "issue": "11",
+      "journal-title": "Hum Mol Genet",
+      "key": "494_CR32",
+      "unstructured": "Sonehara K, Sakaue S, Maeda Y, Hirata J, Kishikawa T, Yamamoto K, et al. Genetic architecture of microRNA expression and its link to complex diseases in the Japanese population. Hum Mol Genet. 2022;31(11):1806–20.",
+      "volume": "31",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.genrep.2022.101641",
+      "author": "KR Geraylow",
+      "doi-asserted-by": "publisher",
+      "first-page": "101641",
+      "journal-title": "Gene Rep",
+      "key": "494_CR33",
+      "unstructured": "Geraylow KR, Hemmati R, Kakhoda S, Ghafouri-Fard S. miRNA expression in COVID-19. Gene Rep. 2022;66:101641.",
+      "volume": "66",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1371/journal.ppat.1009759",
+      "author": "RJ Farr",
+      "doi-asserted-by": "publisher",
+      "first-page": "1009",
+      "issue": "7",
+      "journal-title": "PLoS Pathog",
+      "key": "494_CR34",
+      "unstructured": "Farr RJ, Rootes CL, Rowntree LC, Nguyen TH, Hensen L, Kedzierski L, et al. Altered microRNA expression in COVID-19 patients enables identification of SARS-CoV-2 infection. PLoS Pathog. 2021;17(7):1009–759.",
+      "volume": "17",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1080/22221751.2022.2038021",
+      "author": "A Fernández-Pato",
+      "doi-asserted-by": "publisher",
+      "first-page": "676",
+      "issue": "1",
+      "journal-title": "Emerg Microbes Infect",
+      "key": "494_CR35",
+      "unstructured": "Fernández-Pato A, Virseda-Berdices A, Resino S, Ryan P, Martínez-González O, Pérez-García F, et al. Plasma miRNA profile at COVID-19 onset predicts severity status and mortality. Emerg Microbes Infect. 2022;11(1):676–88.",
+      "volume": "11",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1080/15321819.2022.2035394",
+      "author": "C Pinacchio",
+      "doi-asserted-by": "publisher",
+      "first-page": "347",
+      "issue": "4",
+      "journal-title": "J Immunoassay Immunochem",
+      "key": "494_CR36",
+      "unstructured": "Pinacchio C, Scordio M, Santinelli L, Frasca F, Sorrentino L, Bitossi C, et al. Analysis of serum microRNAs and rs2910164 GC single-nucleotide polymorphism of miRNA-146a in COVID-19 patients. J Immunoassay Immunochem. 2022;43(4):347–64.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.trsl.2021.05.004",
+      "doi-asserted-by": "crossref",
+      "key": "494_CR37",
+      "unstructured": "De Gonzalo-Calvo D, Benitez ID, Pinilla L, Carratalá A, Moncusi-Moix A, Gort-Paniello C, et al. Circulating microRNA profiles predict the severity of COVID-19 in hospitalized patients. Transl Res. 2021;236:147–59."
+    },
+    {
+      "DOI": "10.3390/cells10123504",
+      "author": "C Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "3504",
+      "issue": "12",
+      "journal-title": "Cells",
+      "key": "494_CR38",
+      "unstructured": "Li C, Wu A, Song K, Gao J, Huang E, Bai Y, Liu X. Identifying putative causal links between MicroRNAs and severe COVID-19 using mendelian randomization. Cells. 2021;10(12):3504.",
+      "volume": "10",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.14348/molcells.2020.0177",
+      "author": "WR Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "953",
+      "issue": "11",
+      "journal-title": "Mol Cells",
+      "key": "494_CR39",
+      "unstructured": "Kim WR, Park EG, Kang KW, Lee SM, Kim B, Kim HS. Expression analyses of microRNAs in hamster lung tissues infected by SARS-CoV-2. Mol Cells. 2020;43(11):953.",
+      "volume": "43",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/jcmm.17492",
+      "author": "A Latini",
+      "doi-asserted-by": "publisher",
+      "first-page": "4940",
+      "issue": "19",
+      "journal-title": "J Cell Mol Med",
+      "key": "494_CR40",
+      "unstructured": "Latini A, Vancheri C, Amati F, Morini E, Grelli S, Matteucci C, et al. Expression analysis of miRNA hsa-let7b-5p in naso-oropharyngeal swabs of COVID-19 patients supports its role in regulating ACE2 and DPP4 receptors. J Cell Mol Med. 2022;26(19):4940–8.",
+      "volume": "26",
+      "year": "2022"
+    },
+    {
+      "author": "SR Trampuž",
+      "first-page": "16",
+      "journal-title": "Front Mol Neurosci",
+      "key": "494_CR41",
+      "unstructured": "Trampuž SR, Vogrinc D, Goričar K, Dolžan V. Shared miRNA landscapes of COVID-19 and neurodegeneration confirm neuroinflammation as an important overlapping feature. Front Mol Neurosci. 2023;66:16.",
+      "volume": "66",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1093/nar/gkx706",
+      "doi-asserted-by": "crossref",
+      "key": "494_CR42",
+      "unstructured": "Juzenas S, Venkatesh G, Hübenthal M, Hoeppner MP, Du ZG, Paulsen M, Rosenstiel P, Senger P, Hofmann-Apitius M, Keller A, Kupcinskas L, Franke A, Hemmrich-Stanisak G. A comprehensive, cell specific microRNA catalogue of human peripheral blood. Nucleic Acids Res. 2017;45(16):9290–9301."
+    },
+    {
+      "DOI": "10.1038/nprot.2015.105",
+      "author": "H Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1556",
+      "issue": "10",
+      "journal-title": "Nat Protoc",
+      "key": "494_CR43",
+      "unstructured": "Yang H, Wang K. Genomic variant annotation and prioritization with ANNOVAR and wANNOVAR. Nat Protoc. 2015;10(10):1556–66.",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.micpath.2021.105051",
+      "author": "Z Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "105051",
+      "journal-title": "Microb Pathog",
+      "key": "494_CR44",
+      "unstructured": "Chen Z, Wang X, Li L, Han M, Wang M, Li Z, et al. Construction of an autophagy interaction network based on competitive endogenous RNA reveals the key pathways and central genes of SARS-CoV-2 infection in vivo. Microb Pathog. 2021;158:105051.",
+      "volume": "158",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/cvr/cvab338",
+      "author": "C Gutmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "461",
+      "issue": "2",
+      "journal-title": "Cardiovasc Res",
+      "key": "494_CR45",
+      "unstructured": "Gutmann C, Khamina K, Theofilatos K, Diendorfer AB, Burnap SA, Nabeebaccus A, et al. Association of cardiometabolic microRNAs with COVID-19 severity and mortality. Cardiovasc Res. 2022;118(2):461–74.",
+      "volume": "118",
+      "year": "2022"
+    },
+    {
+      "author": "CX Li",
+      "first-page": "2021",
+      "issue": "66",
+      "journal-title": "Mediat Inflam",
+      "key": "494_CR46",
+      "unstructured": "Li CX, Chen J, Lv SK, Li JH, Li LL, Hu X. Whole-transcriptome RNA sequencing reveals significant differentially expressed mRNAs, miRNAs, and lncRNAs and related regulating biological pathways in the peripheral blood of COVID-19 patients. Mediat Inflam. 2021;6(66):2021.",
+      "volume": "6",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/jcla.23590",
+      "author": "C Li",
+      "doi-asserted-by": "publisher",
+      "issue": "10",
+      "journal-title": "J Clin Lab Anal",
+      "key": "494_CR47",
+      "unstructured": "Li C, Hu X, Li L, Li JH. Differential microRNA expression in the peripheral blood from human patients with COVID-19. J Clin Lab Anal. 2020;34(10): e23590.",
+      "volume": "34",
+      "year": "2020"
+    },
+    {
+      "author": "HJ Ardila",
+      "first-page": "201",
+      "issue": "2",
+      "journal-title": "Mol Clin Oncol",
+      "key": "494_CR48",
+      "unstructured": "Ardila HJ, Sanabria-Salas MC, Meneses X, Rios R, Huertas-Salgado A, Serrano ML. Circulating miR-141-3p, miR-143-3p and miR-200c-3p are differentially expressed in colorectal cancer and advanced adenomas. Mol Clin Oncol. 2019;11(2):201–7.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s13402-020-00565-x",
+      "author": "T Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "297",
+      "issue": "2",
+      "journal-title": "Cell Oncol",
+      "key": "494_CR49",
+      "unstructured": "Lu T, Qiu T, Han B, Wang Y, Sun X, Qin Y, et al. Circular RNA circCSNK1G3 induces HOXA10 signaling and promotes the growth and metastasis of lung adenocarcinoma cells through hsa-miR-143-3p sponging. Cell Oncol. 2021;44(2):297–310.",
+      "volume": "44",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.117.311572",
+      "author": "S Tiedt",
+      "doi-asserted-by": "publisher",
+      "first-page": "970",
+      "issue": "8",
+      "journal-title": "Circ Res",
+      "key": "494_CR50",
+      "unstructured": "Tiedt S, Prestel M, Malik R, Schieferdecker N, Duering M, Kautzky V, et al. RNA-Seq identifies circulating miR-125a-5p, miR-125b-5p, and miR-143-3p as potential biomarkers for acute ischemic stroke. Circ Res. 2017;121(8):970–80.",
+      "volume": "121",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1042/BSR20193419",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "66",
+      "issue": "7",
+      "journal-title": "Biosci Rep",
+      "key": "494_CR51",
+      "unstructured": "Wang Y, Li H, Shi Y, Wang S, Xu Y, Li H, Liu D. miR-143-3p impacts on pulmonary inflammatory factors and cell apoptosis in mice with mycoplasmal pneumonia by regulating TLR4/MyD88/NF-κB pathway. Biosci Rep. 2020;40(7):66.",
+      "volume": "40",
+      "year": "2020"
+    },
+    {
+      "author": "Z Yang",
+      "first-page": "3781",
+      "issue": "4",
+      "journal-title": "Exp Ther Med",
+      "key": "494_CR52",
+      "unstructured": "Yang Z, Wang J, Pan Z, Zhang Y. miR-143-3p regulates cell proliferation and apoptosis by targeting IGF1R and IGFBP5 and regulating the Ras/p38 MAPK signaling pathway in rheumatoid arthritis. Exp Ther Med. 2018;15(4):3781–90.",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41598-022-15263-x",
+      "author": "L Kalaimani",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "494_CR53",
+      "unstructured": "Kalaimani L, Devarajan B, Namperumalsamy VP, Veerappan M, Daniels JT, Chidambaranathan GP. Hsa-miR-143-3p inhibits Wnt-β-catenin and MAPK signaling in human corneal epithelial stem cells. Sci Rep. 2022;12(1):1–11.",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/jcb.24487",
+      "author": "C Fang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1457",
+      "issue": "7",
+      "journal-title": "J Cell Biochem",
+      "key": "494_CR54",
+      "unstructured": "Fang C, Zhao Y, Guo B. MiR-199b-5p targets HER2 in breast cancer cells. J Cell Biochem. 2013;114(7):1457–63.",
+      "volume": "114",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/cddis.2016.256",
+      "author": "ZH Fang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e2371",
+      "issue": "9",
+      "journal-title": "Cell Death Dis",
+      "key": "494_CR55",
+      "unstructured": "Fang ZH, Wang SL, Zhao JT, Lin ZJ, Chen LY, Su R, et al. miR-150 exerts antileukemia activity in vitro and in vivo through regulating genes in multiple pathways. Cell Death Dis. 2016;7(9):e2371.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s40164-016-0033-6",
+      "author": "AJ Favreau",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Exp Hematol Oncol",
+      "key": "494_CR56",
+      "unstructured": "Favreau AJ, McGlauflin RE, Duarte CW, Sathyanarayana P. miR-199b, a novel tumor suppressor miRNA in acute myeloid leukemia with prognostic implications. Exp Hematol Oncol. 2015;5(1):1–11.",
+      "volume": "5",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.mcp.2020.101567",
+      "author": "H Wang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Cell Probes",
+      "key": "494_CR57",
+      "unstructured": "Wang H, Guo Y, Mi N, Zhou L. miR-101-3p and miR-199b-5p promote cell apoptosis in oral cancer by targeting BICC1. Mol Cell Probes. 2020;52: 101567.",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1159/000493457",
+      "author": "JH He",
+      "doi-asserted-by": "publisher",
+      "first-page": "1539",
+      "issue": "4",
+      "journal-title": "Cell Physiol Biochem",
+      "key": "494_CR58",
+      "unstructured": "He JH, Li YG, Han ZP, Zhou JB, Chen WM, Lv YB, et al. The CircRNA-ACAP2/Hsa-miR-21-5p/Tiam1 regulatory feedback circuit affects the proliferation, migration, and invasion of colon cancer SW480 cells. Cell Physiol Biochem. 2018;49(4):1539–50.",
+      "volume": "49",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41419-018-0928-8",
+      "author": "Q Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "9",
+      "journal-title": "Cell Death Dis",
+      "key": "494_CR59",
+      "unstructured": "Li Q, Li B, Li Q, Wei S, He Z, Huang X, et al. Exosomal miR-21–5p derived from gastric cancer promotes peritoneal metastasis via mesothelial-to-mesenchymal transition. Cell Death Dis. 2018;9(9):1–17.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.7717/peerj.12147",
+      "author": "M Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e12147",
+      "journal-title": "PeerJ",
+      "key": "494_CR60",
+      "unstructured": "Liu M, Mo F, Song X, He Y, Yuan Y, Yan J, Zhang S. Exosomal hsa-miR-21-5p is a biomarker for breast cancer diagnosis. PeerJ. 2021;9:e12147.",
+      "volume": "9",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0379-x",
+      "author": "AR Martin",
+      "doi-asserted-by": "publisher",
+      "first-page": "584",
+      "issue": "4",
+      "journal-title": "Nat Genet",
+      "key": "494_CR61",
+      "unstructured": "Martin AR, Kanai M, Kamatani Y, Okada Y, Neale BM, Daly MJ. Clinical use of current polygenic risk scores may exacerbate health disparities. Nat Genet. 2019;51(4):584–91.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0580-y",
+      "author": "MC Mills",
+      "doi-asserted-by": "publisher",
+      "first-page": "242",
+      "issue": "3",
+      "journal-title": "Nat Genet",
+      "key": "494_CR62",
+      "unstructured": "Mills MC, Rahal C. The GWAS Diversity Monitor tracks diversity by disease in real time. Nat Genet. 2020;52(3):242–3.",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv113",
+      "author": "V Capece",
+      "doi-asserted-by": "publisher",
+      "first-page": "2205",
+      "issue": "13",
+      "journal-title": "Bioinformatics",
+      "key": "494_CR63",
+      "unstructured": "Capece V, Garcia Vizcaino JC, Vidal R, Rahman RU, Pena Centeno T, Shomroni O, et al. Oasis: online analysis of small RNA deep sequencing data. Bioinformatics. 2015;31(13):2205–7.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12859-018-2047-z",
+      "author": "RU Rahman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "BMC Bioinform",
+      "key": "494_CR64",
+      "unstructured": "Rahman RU, Gautam A, Bethune J, Sattar A, Fiosins M, Magruder DS, et al. Oasis 2: improved online analysis of small RNA-seq data. BMC Bioinform. 2018;19(1):1–10.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/pr8111425",
+      "author": "X Xie",
+      "doi-asserted-by": "publisher",
+      "first-page": "1425",
+      "issue": "11",
+      "journal-title": "Processes",
+      "key": "494_CR65",
+      "unstructured": "Xie X, Gjorgjieva T, Attieh Z, Dieng MM, Arnoux M, Khair M, et al. Microfluidic nano-scale qPCR enables ultra-sensitive and quantitative detection of SARS-CoV-2. Processes. 2020;8(11):1425.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12889-017-5012-2",
+      "author": "A Abdulle",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "BMC Public Health",
+      "key": "494_CR66",
+      "unstructured": "Abdulle A, Alnaeemi A, Aljunaibi A, Al Ali A, Al Saedi K, Al Zaabi E, et al. The UAE healthy future study: a pilot for a prospective cohort study of 20,000 United Arab Emirates nationals. BMC Public Health. 2018;18(1):1–9.",
+      "volume": "18",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "author": "S Purcell",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "issue": "3",
+      "journal-title": "Am J Hum Genet",
+      "key": "494_CR67",
+      "unstructured": "Purcell S, Neale B, Todd-Brown K, Thomas L, Ferreira MA, Bender D, et al. PLINK: a tool set for whole-genome association and population-based linkage analyses. Am J Hum Genet. 2007;81(3):559–75.",
+      "volume": "81",
+      "year": "2007"
+    },
+    {
+      "author": "C Bonferroni",
+      "first-page": "3",
+      "journal-title": "Pubblicazioni del R Istituto Superiore di Scienze Economiche e Commericiali di Firenze",
+      "key": "494_CR68",
+      "unstructured": "Bonferroni C. Teoria statistica delle classi e calcolo delle probabilita. Pubblicazioni del R Istituto Superiore di Scienze Economiche e Commericiali di Firenze. 1936;8:3–62.",
+      "volume": "8",
+      "year": "1936"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "1000 Genomes Project Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "494_CR69",
+      "unstructured": "1000 Genomes Project Consortium. A global reference for human genetic variation. Nature. 2015;526(7571):68.",
+      "volume": "526",
+      "year": "2015"
+    }
+  ],
+  "reference-count": 69,
+  "references-count": 69,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00494-4"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Systems genetics identifies miRNA-mediated regulation of host response in COVID-19"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

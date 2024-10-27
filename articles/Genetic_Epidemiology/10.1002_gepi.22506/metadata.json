@@ -1,0 +1,601 @@
+{
+  "DOI": "10.1002/gepi.22506",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22506",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMendelian randomization (MR) is the use of genetic variants to assess the existence of a causal relationship between a risk factor and an outcome of interest. Here, we focus on two‐sample summary‐data MR analyses with many correlated variants from a single gene region, particularly on \u003cjats:italic\u003ecis\u003c/jats:italic\u003e‐MR studies which use protein expression as a risk factor. Such studies must rely on a small, curated set of variants from the studied region; using all variants in the region requires inverting an ill‐conditioned genetic correlation matrix and results in numerically unstable causal effect estimates. We review methods for variable selection and estimation in \u003cjats:italic\u003ecis\u003c/jats:italic\u003e‐MR with summary‐level data, ranging from stepwise pruning and conditional analysis to principal components analysis, factor analysis, and Bayesian variable selection. In a simulation study, we show that the various methods have comparable performance in analyses with large sample sizes and strong genetic instruments. However, when weak instrument bias is suspected, factor analysis and Bayesian variable selection produce more reliable inferences than simple pruning approaches, which are often used in practice. We conclude by examining two case studies, assessing the effects of low‐density lipoprotein‐cholesterol and serum testosterone on coronary heart disease risk using variants in the \u003cjats:italic\u003eHMGCR\u003c/jats:italic\u003e and \u003cjats:italic\u003eSHBG\u003c/jats:italic\u003e gene regions, respectively.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22506"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2022-03-31"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-08-29"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-10-23"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-4942-0025",
+      "affiliation": [
+        {
+          "name": "MRC Biostatistics Unit, School of Clinical Medicine University of Cambridge Cambridge UK"
+        },
+        {
+          "name": "MRC Integrative Epidemiology Unit, Department of Population Health Sciences, Bristol Medical School University of Bristol Bristol UK"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Gkatzionis",
+      "given": "Apostolos",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-5365-8760",
+      "affiliation": [
+        {
+          "name": "MRC Biostatistics Unit, School of Clinical Medicine University of Cambridge Cambridge UK"
+        },
+        {
+          "name": "Department of Public Health and Primary Care, School of Clinical Medicine University of Cambridge Cambridge UK"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Burgess",
+      "given": "Stephen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "MRC Biostatistics Unit, School of Clinical Medicine University of Cambridge Cambridge UK"
+        }
+      ],
+      "family": "Newcombe",
+      "given": "Paul J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        23
+      ]
+    ],
+    "date-time": "2022-10-23T19:29:16Z",
+    "timestamp": 1666553356000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        20
+      ]
+    ],
+    "date-time": "2023-08-20T08:36:41Z",
+    "timestamp": 1692520601000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000265",
+      "doi-asserted-by": "publisher",
+      "name": "Medical Research Council"
+    },
+    {
+      "DOI": "10.13039/501100000288",
+      "doi-asserted-by": "publisher",
+      "name": "Royal Society"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T05:10:08Z",
+    "timestamp": 1714367408191
+  },
+  "is-referenced-by-count": 27,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        23
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            23
+          ]
+        ],
+        "date-time": "2022-10-23T00:00:00Z",
+        "timestamp": 1666483200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22506",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22506",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22506",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "3-25",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        23
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        23
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1161/CIRCGEN.119.002711",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_2_1"
+    },
+    {
+      "DOI": "10.1214/aoms/1177730090",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_3_1"
+    },
+    {
+      "DOI": "10.2307/j.ctvcm4j72",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_4_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11271-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_5_1"
+    },
+    {
+      "DOI": "10.1111/1468-0262.00273",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_6_1"
+    },
+    {
+      "DOI": "10.1038/s41467-018-03621-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_7_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_8_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyv071",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_9_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyy258",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_10_1"
+    },
+    {
+      "DOI": "10.1186/s13059-020-02089-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_11_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0000000000000559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_12_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21758",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_13_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21998",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_14_1"
+    },
+    {
+      "DOI": "10.1002/sim.6835",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_15_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0108891",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_16_1"
+    },
+    {
+      "DOI": "10.1177/0962280215597579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_17_1"
+    },
+    {
+      "DOI": "10.1201/b18084",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_18_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyr036",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_19_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22077",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_20_1"
+    },
+    {
+      "DOI": "10.1038/ng.3396",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_21_1"
+    },
+    {
+      "DOI": "10.1136/bmj.d548",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_22_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(10)61350-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_23_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002805",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_24_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003348",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_26_1"
+    },
+    {
+      "DOI": "10.1159/000446581",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_27_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1806747",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_28_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1604304",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_29_1"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_30_1"
+    },
+    {
+      "DOI": "10.12688/wellcomeopenres.16544.2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_31_1"
+    },
+    {
+      "DOI": "10.1002/sim.9109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_32_1"
+    },
+    {
+      "DOI": "10.1038/ng.3506",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_33_1"
+    },
+    {
+      "DOI": "10.1038/nbt.2786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_34_1"
+    },
+    {
+      "DOI": "10.2307/2529336",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_35_1"
+    },
+    {
+      "DOI": "10.1093/eurheartj/eht571",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_36_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwaa287",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_37_1"
+    },
+    {
+      "DOI": "10.1093/hmg/dds361",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_38_1"
+    },
+    {
+      "DOI": "10.1001/jama.2009.801",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_39_1"
+    },
+    {
+      "DOI": "10.1111/1468-0262.00353",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_40_1"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.107.708388",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_41_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2021.713230",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_42_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0002986",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_43_1"
+    },
+    {
+      "DOI": "10.1201/9781420035933",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_44_1"
+    },
+    {
+      "DOI": "10.1111/1468-0262.00438",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_45_1"
+    },
+    {
+      "DOI": "10.1038/ng.3314",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_46_1"
+    },
+    {
+      "author": "Newcombe P. J.",
+      "first-page": "188",
+      "key": "e_1_2_12_47_1",
+      "volume-title": "Genetic Epidemiology",
+      "year": "2016"
+    },
+    {
+      "key": "e_1_2_12_48_1",
+      "unstructured": "Patel A. Burgess S. Gill D. \u0026Newcombe P. J.(2020). Inference with many correlated weak instruments and summary statistics. arXiv:2005.01765."
+    },
+    {
+      "DOI": "10.1056/NEJMoa1803917",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_49_1"
+    },
+    {
+      "DOI": "10.1038/s41591-020-0751-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_50_1"
+    },
+    {
+      "DOI": "10.1101/2021.06.28.21259622",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_12_51_1",
+      "unstructured": "Sadreev I. I. Elsworth B. L. Mitchell R. E. Paternoster L. Sanderson E. Davies N. M. Millard L. A. Smith G. D. Haycock P. C. Bowden J. Gaunt T. R. \u0026Hemani G.(2021). Navigating sample overlap winner's curse and weak instrument bias in Mendelian randomization studies using the UK Biobank.medRxiv."
+    },
+    {
+      "article-title": "Genetic drug target validation using mendelian randomisation",
+      "author": "Schmidt A.",
+      "issue": "3255",
+      "journal-title": "Nature Communications",
+      "key": "e_1_2_12_52_1",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S2213-8587(16)30396-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_53_1"
+    },
+    {
+      "DOI": "10.1016/j.ijcard.2018.05.051",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_54_1"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.109.865444",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_55_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyw088",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_56_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(14)61183-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_57_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(12)60110-X",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_58_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_59_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_60_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0385-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_61_1"
+    },
+    {
+      "DOI": "10.12688/wellcomeopenres.15334.2",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_12_62_1",
+      "unstructured": "Walker V. M. Davies N. M. Hemani G. Zheng J. Haycock P. C. Gaunt T. R. DaveySmith G. \u0026Martin R. M.(2019).Using the MR‐Base platform to investigate risk factors and drug targets for thousands of phenotypes.Wellcome Open Research."
+    },
+    {
+      "DOI": "10.1161/ATVBAHA.109.201020",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_63_1"
+    },
+    {
+      "DOI": "10.1038/ng.2213",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_64_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyx034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_65_1"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0682-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_66_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2022.04.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_12_67_1"
+    }
+  ],
+  "reference-count": 66,
+  "references-count": 66,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22506"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Statistical methods for \u003ci\u003ecis\u003c/i\u003e‐Mendelian randomization with two‐sample summary‐level data"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "47"
+}

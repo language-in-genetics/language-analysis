@@ -1,0 +1,1348 @@
+{
+  "DOI": "10.1186/s40246-021-00341-4",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00341-4",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eLiver cancer is one of the most common cancers and causes of cancer death worldwide\u003cjats:bold\u003e.\u003c/jats:bold\u003e The objective was to elucidate novel hub genes which were benefit for diagnosis, prognosis, and targeted therapy in liver cancer via integrated analysis.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eGSE84402, GSE101685, and GSE112791 were filtered from the Gene Expression Omnibus (GEO). Differentially expressed genes (DEGs) were identified by using the GEO2R. The GO and KEGG pathway of DEGs were analyzed in the DAVID. PPI and TF network of the DEGs were constructed by using the STRING, TRANSFAC, and Harmonizome. The relationship between hub genes and prognoses in liver cancer was analyzed in UALCAN based on The Cancer Genome Atlas (TCGA). The diagnostic value of hub genes was evaluated by ROC. The relationship between hub genes and tumor-infiltrate lymphocytes was analyzed in TIMER. The protein levels of hub genes were verified in HPA. The interaction between the hub genes and the drug were identified in DGIdb.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn total, 108 upregulated and 60 downregulated DEGs were enriched in 148 GO terms and 20 KEGG pathways. The mRNA levels and protein levels of \u003cjats:italic\u003eCDK1\u003c/jats:italic\u003e, \u003cjats:italic\u003eHMMR\u003c/jats:italic\u003e, \u003cjats:italic\u003ePTTG1\u003c/jats:italic\u003e, and \u003cjats:italic\u003eTTK\u003c/jats:italic\u003e were higher in liver cancer tissues compared to normal tissues, which showed excellent diagnostic and prognostic value. \u003cjats:italic\u003eCDK1\u003c/jats:italic\u003e, \u003cjats:italic\u003eHMMR\u003c/jats:italic\u003e, \u003cjats:italic\u003ePTTG1\u003c/jats:italic\u003e, and \u003cjats:italic\u003eTTK\u003c/jats:italic\u003e were positively correlated with tumor-infiltrate lymphocytes, which might involve tumor immune response. The \u003cjats:italic\u003eCDK1\u003c/jats:italic\u003e, \u003cjats:italic\u003eHMMR,\u003c/jats:italic\u003e and \u003cjats:italic\u003eTTK\u003c/jats:italic\u003e had close interaction with anticancer agents.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe \u003cjats:italic\u003eCDK1\u003c/jats:italic\u003e, \u003cjats:italic\u003eHMMR\u003c/jats:italic\u003e, \u003cjats:italic\u003ePTTG1\u003c/jats:italic\u003e, and \u003cjats:italic\u003eTTK\u003c/jats:italic\u003e were hub genes in liver cancer; hence, they might be potential biomarkers for diagnosis, prognosis, and targeted therapy of liver cancer.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "341"
+  ],
+  "article-number": "39",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "26 January 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "16 June 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "29 June 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The study is the bioinformatics analysis article. The data in our study were obtained from the free online databases and the ethical approval was not necessary. There are no animal and human experiments involved in the study. There are no human subjects in the article and informed consent was not necessary."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The author(s) declared no potential conflicts of interest with respect to the research, authorship, and/or publication of this article."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Lei",
+      "given": "Xinyi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Miao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guan",
+      "given": "Bingsheng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Qiang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dong",
+      "given": "Zhiyong",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3278-9005",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Wang",
+      "given": "Cunchuan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        29
+      ]
+    ],
+    "date-time": "2021-06-29T19:02:36Z",
+    "timestamp": 1624993356000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        29
+      ]
+    ],
+    "date-time": "2021-06-29T19:06:16Z",
+    "timestamp": 1624993576000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        6
+      ]
+    ],
+    "date-time": "2024-04-06T14:36:02Z",
+    "timestamp": 1712414162044
+  },
+  "is-referenced-by-count": 13,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        29
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            29
+          ]
+        ],
+        "date-time": "2021-06-29T00:00:00Z",
+        "timestamp": 1624924800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            29
+          ]
+        ],
+        "date-time": "2021-06-29T00:00:00Z",
+        "timestamp": 1624924800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00341-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00341-4/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00341-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        29
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        29
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.21147/j.issn.1000-9604.2018.06.01",
+      "author": "R Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "571",
+      "issue": "6",
+      "journal-title": "Chin J Cancer Res.",
+      "key": "341_CR1",
+      "unstructured": "Zheng R, Qu C, Zhang S, Zeng H, Sun K, Gu X, et al. Liver cancer incidence and mortality in China: temporal trends and projections to 2030. Chin J Cancer Res. 2018;30(6):571–9. https://doi.org/10.21147/j.issn.1000-9604.2018.06.01.",
+      "volume": "30",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2016.11.048",
+      "author": "D Sia",
+      "doi-asserted-by": "publisher",
+      "first-page": "745",
+      "issue": "4",
+      "journal-title": "Gastroenterology.",
+      "key": "341_CR2",
+      "unstructured": "Sia D, Villanueva A, Friedman SL, Llovet JM. Liver cancer cell of origin, molecular class, and effects on patient prognosis. Gastroenterology. 2017;152(4):745–61. https://doi.org/10.1053/j.gastro.2016.11.048.",
+      "volume": "152",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3322/caac.21492",
+      "author": "F Bray",
+      "doi-asserted-by": "publisher",
+      "first-page": "394",
+      "issue": "6",
+      "journal-title": "CA Cancer J Clin.",
+      "key": "341_CR3",
+      "unstructured": "Bray F, Ferlay J, Soerjomataram I, Siegel RL, Torre LA, Jemal A. Global cancer statistics 2018: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2018;68(6):394–424. https://doi.org/10.3322/caac.21492.",
+      "volume": "68",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/hep.27969",
+      "author": "C de Martel",
+      "doi-asserted-by": "publisher",
+      "first-page": "1190",
+      "issue": "4",
+      "journal-title": "Hepatology.",
+      "key": "341_CR4",
+      "unstructured": "de Martel C, Maucort-Boulch D, Plummer M, Franceschi S. World-wide relative contribution of hepatitis B and C viruses in hepatocellular carcinoma. Hepatology. 2015;62(4):1190–200. https://doi.org/10.1002/hep.27969.",
+      "volume": "62",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1177/1073274817729245",
+      "author": "NN Massarweh",
+      "doi-asserted-by": "publisher",
+      "first-page": "107327481772924",
+      "journal-title": "Cancer Control.",
+      "key": "341_CR5",
+      "unstructured": "Massarweh NN, El-Serag HB. Epidemiology of hepatocellular carcinoma and intrahepatic cholangiocarcinoma. Cancer Control. 2017;24:1073274817729245.",
+      "volume": "24",
+      "year": "2017"
+    },
+    {
+      "author": "D Poon",
+      "first-page": "1111",
+      "journal-title": "LancetOncol.",
+      "key": "341_CR6",
+      "unstructured": "Poon D, Anderson BO, Chen LT, et al. Management of hepatocellular carcinoma in Asia: consensus statement from the Asian Oncology Summit 2009. LancetOncol. 2009;10:1111–8.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.3390/cancers12040775",
+      "author": "S Nakano",
+      "doi-asserted-by": "publisher",
+      "first-page": "775",
+      "issue": "4",
+      "journal-title": "Cancers.",
+      "key": "341_CR7",
+      "unstructured": "Nakano S, Eso Y, Okada H, Takai A, Takahashi K, Seno H. Recent advances in immunotherapy for hepatocellular carcinoma. Cancers. 2020;12(4):775. https://doi.org/10.3390/cancers12040775.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/cells9030746",
+      "author": "OA BBamodu",
+      "doi-asserted-by": "publisher",
+      "first-page": "746",
+      "issue": "3",
+      "journal-title": "Cells.",
+      "key": "341_CR8",
+      "unstructured": "BBamodu OA, Chang HL, Ong JR, et al. Elevated PDK1 expression drives PI3K/AKT/MTOR signaling promotes radiation-resistant and dedifferentiated phenotype of hepatocellular carcinoma. Cells. 2020;9(3):746. https://doi.org/10.3390/cells9030746.",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/cam4.2799",
+      "author": "Z Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1349",
+      "issue": "4",
+      "journal-title": "Cancer Med.",
+      "key": "341_CR9",
+      "unstructured": "Zhang Z, Chen P, Xie H, Cao P. Using circulating tumor DNA as a novel biomarker to screen and diagnose hepatocellular carcinoma: a systematic review and meta-analysis. Cancer Med. 2020;9(4):1349–64. https://doi.org/10.1002/cam4.2799.",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.lfs.2019.117177",
+      "author": "SJ Mou",
+      "doi-asserted-by": "publisher",
+      "first-page": "117177",
+      "journal-title": "Life Sci.",
+      "key": "341_CR10",
+      "unstructured": "Mou SJ, Yang PF, Liu YP, Xu N, Jiang WW, Yue WJ. BCLAF1 promotes cell proliferation, invasion and drug-resistance though targeting lncRNA NEAT1 in hepatocellular carcinoma. Life Sci. 2020;242:117177. https://doi.org/10.1016/j.lfs.2019.117177.",
+      "volume": "242",
+      "year": "2020"
+    },
+    {
+      "author": "Z Lu",
+      "first-page": "583",
+      "issue": "2",
+      "journal-title": "Am J Transl Res.",
+      "key": "341_CR11",
+      "unstructured": "Lu Z, Yu Y, Ding X, Jin D, Wang G, Zhou Y, et al. LncRNA FLJ33360 accelerates the metastasis in hepatocellular carcinoma by targeting miRNA-140/MMP9 axis. Am J Transl Res. 2020;12(2):583–91.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1089/cbr.2019.3335",
+      "author": "C Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "292",
+      "issue": "4",
+      "journal-title": "Cancer Biother Radiopharm.",
+      "key": "341_CR12",
+      "unstructured": "Liu C, Zhang M, Zhao J, Zhu X, Zhu L, Yan M, et al. LncRNA FOXD3-AS1 mediates AKT pathway to promote growth and invasion in hepatocellular carcinoma through regulating RICTOR. Cancer Biother Radiopharm. 2020;35(4):292–300. https://doi.org/10.1089/cbr.2019.3335.",
+      "volume": "35",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/15384101.2020.1731052",
+      "author": "J Gao",
+      "doi-asserted-by": "publisher",
+      "first-page": "870",
+      "issue": "8",
+      "journal-title": "Cell Cycle.",
+      "key": "341_CR13",
+      "unstructured": "Gao J, Dai C, Yu X, Yin XB, Zhou F. LncRNA LEF1-AS1 silencing diminishes EZH2 expression to delay hepatocellular carcinoma development by impairing CEBPB-interaction with CDCA7. Cell Cycle. 2020;19(8):870–83. https://doi.org/10.1080/15384101.2020.1731052.",
+      "volume": "19",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12943-017-0607-x",
+      "author": "H Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "36",
+      "journal-title": "Mol Cancer.",
+      "key": "341_CR14",
+      "unstructured": "Wang H, Huo X, Yang XR, et al. STAT3-mediated upregulation of lncRNA HOXD-AS1 as a ceRNA facilitates liver cancer metastasis by regulating SOX4. Mol Cancer. 2017;16:36.",
+      "volume": "16",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ebiom.2018.12.058",
+      "author": "S Shimada",
+      "doi-asserted-by": "publisher",
+      "first-page": "457",
+      "journal-title": "EBioMedicine.",
+      "key": "341_CR15",
+      "unstructured": "Shimada S, Mogushi K, Akiyama Y, Furuyama T, Watanabe S, Ogura T, et al. Comprehensive molecular and immunological characterization of hepatocellular carcinoma. EBioMedicine. 2019;40:457–70. https://doi.org/10.1016/j.ebiom.2018.12.058.",
+      "volume": "40",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nprot.2008.211",
+      "author": "W Huang da",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "journal-title": "Nat Protoc.",
+      "key": "341_CR16",
+      "unstructured": "Huang da W, Sherman BT, Lempicki RA. Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources. Nat Protoc. 2009;4:44–57.",
+      "volume": "4",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/gkn923",
+      "author": "W Huang da",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "341_CR17",
+      "unstructured": "Huang da W, Sherman BT, Lempicki RA. Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists. Nucleic Acids Res. 2009;37:1–13.",
+      "volume": "37",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/gkw937",
+      "author": "D Szklarczyk",
+      "doi-asserted-by": "publisher",
+      "first-page": "D362",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "341_CR18",
+      "unstructured": "Szklarczyk D, Morris JH, Cook H, Kuhn M, Wyder S, Simonovic M, et al. The STRING database in 2017: quality-controlled protein-protein association networks, made broadly accessible. Nucleic Acids Res. 2017;45(D1):D362–8. https://doi.org/10.1093/nar/gkw937.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/1471-2105-4-2",
+      "author": "GD Bader",
+      "doi-asserted-by": "publisher",
+      "first-page": "2",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics.",
+      "key": "341_CR19",
+      "unstructured": "Bader GD, Hogue CW. An automated method for finding molecular complexes in large protein interaction networks. BMC Bioinformatics. 2003;4(1):2. https://doi.org/10.1186/1471-2105-4-2.",
+      "volume": "4",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/nar/gkg108",
+      "author": "V Matys",
+      "doi-asserted-by": "publisher",
+      "first-page": "374",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "341_CR20",
+      "unstructured": "Matys V, Fricke E, Geffers R, Gössling E, Haubrock M, Hehl R, et al. TRANSFAC: transcriptional regulation, from patterns to profiles. Nucleic Acids Res. 2003;31(1):374–8. https://doi.org/10.1093/nar/gkg108.",
+      "volume": "31",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/nar/gkj143",
+      "author": "V Matys",
+      "doi-asserted-by": "publisher",
+      "first-page": "D108",
+      "issue": "90001",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "341_CR21",
+      "unstructured": "Matys V, Kel-Margoulis OV, Fricke E, Liebich I, Land S, Barre-Dirrie A, et al. TRANSFAC and its module TRANSCompel: transcriptional gene regulation in eukaryotes. Nucleic Acids Res. 2006;34(90001):D108–10. https://doi.org/10.1093/nar/gkj143.",
+      "volume": "34",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/database/baw100",
+      "doi-asserted-by": "publisher",
+      "key": "341_CR22",
+      "unstructured": "Rouillard AD, Gundersen GW, Fernandez NF, et al. The Harmonizome: a collection of processed datasets gathered to serve and mine knowledge about genes and proteins. Database (Oxford). 2016;2016:baw100. https://doi.org/10.1093/database/baw100."
+    },
+    {
+      "DOI": "10.1016/j.neo.2017.05.002",
+      "author": "DS Chandrashekar",
+      "doi-asserted-by": "publisher",
+      "first-page": "649",
+      "issue": "8",
+      "journal-title": "Neoplasia.",
+      "key": "341_CR23",
+      "unstructured": "Chandrashekar DS, Bashel B, Balasubramanya SAH, Creighton CJ, Ponce-Rodriguez I, Chakravarthi BVSK, et al. UALCAN: a portal for facilitating tumor subgroup gene expression and survival analyses. Neoplasia. 2017;19(8):649–58. https://doi.org/10.1016/j.neo.2017.05.002.",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-10-2607",
+      "author": "S Roessler",
+      "doi-asserted-by": "publisher",
+      "first-page": "10202",
+      "issue": "24",
+      "journal-title": "Cancer Res.",
+      "key": "341_CR24",
+      "unstructured": "Roessler S, Jia HL, Budhu A, Forgues M, Ye QH, Lee JS, et al. A unique metastasis gene signature enables prediction of tumor relapse in early-stage hepatocellular carcinoma patients. Cancer Res. 2010;70(24):10202–12. https://doi.org/10.1158/0008-5472.CAN-10-2607.",
+      "volume": "70",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2011.12.039",
+      "author": "S Roessler",
+      "doi-asserted-by": "publisher",
+      "first-page": "957",
+      "issue": "4",
+      "journal-title": "Gastroenterology.",
+      "key": "341_CR25",
+      "unstructured": "Roessler S, Long EL, Budhu A, Chen Y, Zhao X, Ji J, et al. Integrative genomic identification of genes on 8p associated with hepatocellular carcinoma progression and patient survival. Gastroenterology. 2012;142(4):957–66. https://doi.org/10.1053/j.gastro.2011.12.039.",
+      "volume": "142",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/onc.2014.438",
+      "author": "X Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "5095",
+      "issue": "39",
+      "journal-title": "Oncogene.",
+      "key": "341_CR26",
+      "unstructured": "Zhao X, Parpart S, Takai A, Roessler S, Budhu A, Yu Z, et al. Integrative genomics identifies YY1AP1 as an oncogenic driver in EpCAM(+) AFP(+) hepatocellular carcinoma. Oncogene. 2015;34(39):5095–104. https://doi.org/10.1038/onc.2014.438.",
+      "volume": "34",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1096/fj.201802213RR",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "8759",
+      "issue": "8",
+      "journal-title": "FASEB J.",
+      "key": "341_CR27",
+      "unstructured": "Wang Y, Gao B, Tan PY, Handoko YA, Sekar K, Deivasigamani A, et al. Genome-wide CRISPR knockout screens identify NCAPG as an essential oncogene for hepatocellular carcinoma tumor growth. FASEB J. 2019;33(8):8759–70. https://doi.org/10.1096/fj.201802213RR.",
+      "volume": "33",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.7150/ijbs.20836",
+      "author": "Y Sun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1438",
+      "issue": "11",
+      "journal-title": "Int J Biol Sci.",
+      "key": "341_CR28",
+      "unstructured": "Sun Y, Ji F, Kumar MR, Zheng X, Xiao Y, Liu N, et al. Transcriptome integration analysis in hepatocellular carcinoma reveals discordant intronic miRNA-host gene pairs in expression. Int J Biol Sci. 2017;13(11):1438–49. https://doi.org/10.7150/ijbs.20836.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/hep.27923",
+      "author": "Y Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1122",
+      "issue": "4",
+      "journal-title": "Hepatology.",
+      "key": "341_CR29",
+      "unstructured": "Lu Y, Xu W, Ji J, Feng D, Sourbier C, Yang Y, et al. Alternative splicing of the cell fate determinant Numb in hepatocellular carcinoma. Hepatology. 2015;62(4):1122–31. https://doi.org/10.1002/hep.27923.",
+      "volume": "62",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1155/2019/5604843",
+      "doi-asserted-by": "publisher",
+      "key": "341_CR30",
+      "unstructured": "Chen S, Fang H, Li J, et al. Microarray analysis for expression profiles of lncRNAs and circRNAs in rat liver after brain-dead donor liver transplantation. Biomed Res Int. 2019;2019:5604843. https://doi.org/10.1155/2019/5604843."
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-77",
+      "author": "X Robin",
+      "doi-asserted-by": "publisher",
+      "first-page": "77",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics.",
+      "key": "341_CR31",
+      "unstructured": "Robin X, Turck N, Hainard A, Tiberti N, Lisacek F, Sanchez JC, et al. pROC: an open-source package for R and S+ to analyze and compare ROC curves. BMC Bioinformatics. 2011;12(1):77. https://doi.org/10.1186/1471-2105-12-77.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-17-0307",
+      "author": "T Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "e108",
+      "issue": "21",
+      "journal-title": "Cancer Res.",
+      "key": "341_CR32",
+      "unstructured": "Li T, Fan J, Wang B, Traugh N, Chen Q, Liu JS, et al. TIMER: a web server for comprehensive analysis of tumor-infiltrating immune cells. Cancer Res. 2017;77(21):e108–10. https://doi.org/10.1158/0008-5472.CAN-17-0307.",
+      "volume": "77",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/pmic.201100504",
+      "author": "A Asplund",
+      "doi-asserted-by": "publisher",
+      "first-page": "2067",
+      "issue": "13",
+      "journal-title": "Proteomics.",
+      "key": "341_CR33",
+      "unstructured": "Asplund A, Edqvist PH, Schwenk JM, et al. Antibodies for profiling the human proteome-The Human Protein Atlas as a resource for cancer research. Proteomics. 2012;12(13):2067–77. https://doi.org/10.1002/pmic.201100504.",
+      "volume": "12",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1084",
+      "author": "SL Freshour",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1144",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "341_CR34",
+      "unstructured": "Freshour SL, Kiwala S, Cotto KC, Coffman AC, McMichael JF, Song JJ, et al. Integration of the Drug-Gene Interaction Database (DGIdb 4.0) with open crowdsource efforts. Nucleic Acids Res. 2021;49(D1):D1144–51. https://doi.org/10.1093/nar/gkaa1084.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nmeth.2689",
+      "author": "M Griffith",
+      "doi-asserted-by": "publisher",
+      "first-page": "1209",
+      "issue": "12",
+      "journal-title": "Nat Methods.",
+      "key": "341_CR35",
+      "unstructured": "Griffith M, Griffith OL, Coffman AC, Weible JV, McMichael JF, Spies NC, et al. DGIdb: mining the druggable genome. Nat Methods. 2013;10(12):1209–10. https://doi.org/10.1038/nmeth.2689.",
+      "volume": "10",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.3390/ijms20061465",
+      "author": "I Lurje",
+      "doi-asserted-by": "publisher",
+      "first-page": "1465",
+      "issue": "6",
+      "journal-title": "Int J Mol Sci.",
+      "key": "341_CR36",
+      "unstructured": "Lurje I, Czigany Z, Bednarsch J, Roderburg C, Isfort P, Neumann UP, et al. Treatment strategies for hepatocellular carcinoma - a multidisciplinary approach. Int J Mol Sci. 2019;20(6):1465. https://doi.org/10.3390/ijms20061465.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/ijc.32599",
+      "author": "J Han",
+      "doi-asserted-by": "publisher",
+      "first-page": "1741",
+      "issue": "6",
+      "journal-title": "Int J Cancer.",
+      "key": "341_CR37",
+      "unstructured": "Han J, Han ML, Xing H, Li ZL, Yuan DY, Wu H, et al. Tissue and serum metabolomic phenotyping for diagnosis and prognosis of hepatocellular carcinoma. Int J Cancer. 2020;146(6):1741–53. https://doi.org/10.1002/ijc.32599.",
+      "volume": "146",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/btpr.2787",
+      "author": "CH Huang",
+      "doi-asserted-by": "publisher",
+      "issue": "3",
+      "journal-title": "Biotechnol Prog.",
+      "key": "341_CR38",
+      "unstructured": "Huang CH, Lei KF, Tsang NM. Apoptosis and cell cycle arrest of hepatocellular carcinoma spheroids treated by an alternating electric field. Biotechnol Prog. 2019;35(3):e2787. https://doi.org/10.1002/btpr.2787.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13046-018-0872-6",
+      "author": "ZC Nwosu",
+      "doi-asserted-by": "publisher",
+      "first-page": "211",
+      "issue": "1",
+      "journal-title": "J Exp Clin Cancer Res.",
+      "key": "341_CR39",
+      "unstructured": "Nwosu ZC, Battello N, Rothley M, Piorońska W, Sitek B, Ebert MP, et al. Liver cancer cell lines distinctly mimic the metabolic gene expression pattern of the corresponding human tumours. J Exp Clin Cancer Res. 2018;37(1):211. https://doi.org/10.1186/s13046-018-0872-6.",
+      "volume": "37",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2174/1872312812666180709150440",
+      "author": "SR Lepri",
+      "doi-asserted-by": "publisher",
+      "first-page": "138",
+      "issue": "2",
+      "journal-title": "Drug Metab Lett.",
+      "key": "341_CR40",
+      "unstructured": "Lepri SR, Sartori D, Semprebon SC, Baranoski A, Coatti GC, Mantovani MS. Genistein affects expression of cytochrome P450 (CYP450) genes in hepatocellular carcinoma (HEPG2/C3A) Cell Line. Drug Metab Lett. 2018;12(2):138–44. https://doi.org/10.2174/1872312812666180709150440.",
+      "volume": "12",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1177/039139880102401108",
+      "author": "MH Grant",
+      "doi-asserted-by": "publisher",
+      "first-page": "807",
+      "issue": "11",
+      "journal-title": "Int J Artif Organs.",
+      "key": "341_CR41",
+      "unstructured": "Grant MH, Rodgers EH, Anderson K, Haydon GH, Hayes PC. The effect of serum from liver cancer patients on the growth and function of primary and immortalised hepatocytes. Int J Artif Organs. 2001;24(11):807–13. https://doi.org/10.1177/039139880102401108.",
+      "volume": "24",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.4238/2014.April.14.11",
+      "author": "BX Chang",
+      "doi-asserted-by": "publisher",
+      "first-page": "6949",
+      "issue": "3",
+      "journal-title": "Genet Mol Res.",
+      "key": "341_CR42",
+      "unstructured": "Chang BX, You SL, Liu HL, Mao PY, Xin SJ. Establishment of cytochrome P450 3A4 and glutathione S-transferase A1-transfected human hepatoma cell line and functional analysis. Genet Mol Res. 2014;13(3):6949–61. https://doi.org/10.4238/2014.April.14.11.",
+      "volume": "13",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/s00535-013-0928-5",
+      "author": "M Tokunaga",
+      "doi-asserted-by": "publisher",
+      "first-page": "1567",
+      "issue": "12",
+      "journal-title": "J Gastroenterol.",
+      "key": "341_CR43",
+      "unstructured": "Tokunaga M, Uto H, Oda K, Tokunaga M, Mawatari S, Kumagai K, et al. Influence of human T-lymphotropic virus type 1 coinfection on the development of hepatocellular carcinoma in patients with hepatitis C virus infection. J Gastroenterol. 2014;49(12):1567–77. https://doi.org/10.1007/s00535-013-0928-5.",
+      "volume": "49",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1101/cshperspect.a023614",
+      "author": "DC Costa",
+      "doi-asserted-by": "publisher",
+      "first-page": "a023614",
+      "issue": "10",
+      "journal-title": "Cold Spring Harb Perspect Biol.",
+      "key": "341_CR44",
+      "unstructured": "Costa DC, de Oliveira GA, Cino EA, et al. Aggregation and prion-like properties of misfolded tumor suppressors: is cancer a prion disease? Cold Spring Harb Perspect Biol. 2016;8(10):a023614. https://doi.org/10.1101/cshperspect.a023614.",
+      "volume": "8",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-11-3891",
+      "author": "A Cascón",
+      "doi-asserted-by": "publisher",
+      "first-page": "3119",
+      "issue": "13",
+      "journal-title": "Cancer Res.",
+      "key": "341_CR45",
+      "unstructured": "Cascón A, Robledo M. MAX and MYC: a heritable breakup. Cancer Res. 2012;72(13):3119–224. https://doi.org/10.1158/0008-5472.CAN-11-3891.",
+      "volume": "72",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1158/1541-7786.MCR-17-0410",
+      "author": "É Audet-Walsh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1396",
+      "issue": "9",
+      "journal-title": "Mol Cancer Res.",
+      "key": "341_CR46",
+      "unstructured": "Audet-Walsh É, Vernier M, Yee T, Laflamme C, Li S, Chen Y, et al. SREBF1 activity is regulated by an AR/mTOR nuclear axis in prostate cancer. Mol Cancer Res. 2018;16(9):1396–405. https://doi.org/10.1158/1541-7786.MCR-17-0410.",
+      "volume": "16",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/gb4184",
+      "author": "M Malumbres",
+      "doi-asserted-by": "publisher",
+      "first-page": "122",
+      "issue": "6",
+      "journal-title": "Genome Biol.",
+      "key": "341_CR47",
+      "unstructured": "Malumbres M. Cyclin-dependent kinases. Genome Biol. 2014;15(6):122. https://doi.org/10.1186/gb4184.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nrm3888",
+      "author": "N London",
+      "doi-asserted-by": "publisher",
+      "first-page": "736",
+      "issue": "11",
+      "journal-title": "Nat Rev Mol Cell Biol.",
+      "key": "341_CR48",
+      "unstructured": "London N, Biggins S. Signalling dynamics in the spindle checkpoint response. Nat Rev Mol Cell Biol. 2014;15(11):736–47. https://doi.org/10.1038/nrm3888.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "author": "HP Zheng",
+      "first-page": "7233",
+      "issue": "12",
+      "journal-title": "Am J Transl Res.",
+      "key": "341_CR49",
+      "unstructured": "Zheng HP, Huang ZG, He RQ, Lu HP, Dang YW, Lin P, et al. Integrated assessment of CDK1 upregulation in thyroid cancer. Am J Transl Res. 2019;11(12):7233–54.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.gene.2019.02.081",
+      "author": "J Piao",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "journal-title": "Gene.",
+      "key": "341_CR50",
+      "unstructured": "Piao J, Zhu L, Sun J, Li N, Dong B, Yang Y, et al. High expression of CDK1 and BUB1 predicts poor prognosis of pancreatic ductal adenocarcinoma. Gene. 2019;701:15–22. https://doi.org/10.1016/j.gene.2019.02.081.",
+      "volume": "701",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/1471-2407-14-951",
+      "author": "WW Sung",
+      "doi-asserted-by": "publisher",
+      "first-page": "951",
+      "issue": "1",
+      "journal-title": "BMC Cancer.",
+      "key": "341_CR51",
+      "unstructured": "Sung WW, Lin YM, Wu PR, Yen HH, Lai HW, Su TC, et al. High nuclear/cytoplasmic ratio of Cdk1 expression predicts poor prognosis in colorectal cancer patients. BMC Cancer. 2014;14(1):951. https://doi.org/10.1186/1471-2407-14-951.",
+      "volume": "14",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/s13048-017-0356-x",
+      "author": "R Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "60",
+      "issue": "1",
+      "journal-title": "J Ovarian Res.",
+      "key": "341_CR52",
+      "unstructured": "Zhang R, Shi H, Ren F, Zhang M, Ji P, Wang W, et al. The aberrant upstream pathway regulations of CDK1 protein were implicated in the proliferation and apoptosis of ovarian cancer cells. J Ovarian Res. 2017;10(1):60. https://doi.org/10.1186/s13048-017-0356-x.",
+      "volume": "10",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature06046",
+      "author": "D Santamaría",
+      "doi-asserted-by": "publisher",
+      "first-page": "811",
+      "issue": "7155",
+      "journal-title": "Nature.",
+      "key": "341_CR53",
+      "unstructured": "Santamaría D, Barrière C, Cerqueira A, Hunt S, Tardy C, Newton K, et al. Cdk1 is sufficient to drive the mammalian cell cycle. Nature. 2007;448(7155):811–5. https://doi.org/10.1038/nature06046.",
+      "volume": "448",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/sj.onc.1204252",
+      "author": "WR Taylor",
+      "doi-asserted-by": "publisher",
+      "first-page": "1803",
+      "issue": "15",
+      "journal-title": "Oncogene.",
+      "key": "341_CR54",
+      "unstructured": "Taylor WR, Stark GR. Regulation of the G2/M transition by p53. Oncogene. 2001;20(15):1803–15. https://doi.org/10.1038/sj.onc.1204252.",
+      "volume": "20",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-04-1613",
+      "author": "E Bayart",
+      "doi-asserted-by": "publisher",
+      "first-page": "8954",
+      "issue": "24",
+      "journal-title": "Cancer Res.",
+      "key": "341_CR55",
+      "unstructured": "Bayart E, Grigorieva O, Leibovitch S, et al. A major role for mitotic CDC2 kinase inactivation in the establishment of the mitotic DNA damage checkpoint. Cancer Res. 2004;64(24):8954–9. https://doi.org/10.1158/0008-5472.CAN-04-1613.",
+      "volume": "64",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.7150/thno.25487",
+      "author": "CX Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "3737",
+      "issue": "14",
+      "journal-title": "Theranostics.",
+      "key": "341_CR56",
+      "unstructured": "Wu CX, Wang XQ, Chok SH, Man K, Tsang SHY, Chan ACY, et al. Blocking CDK1/PDK1/β-Catenin signaling by CDK1 inhibitor RO3306 increased the efficacy of sorafenib treatment by targeting cancer stem cells in a preclinical model of hepatocellular carcinoma. Theranostics. 2018;8(14):3737–50. https://doi.org/10.7150/thno.25487.",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1080/15384101.2020.1749471",
+      "author": "L Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1236",
+      "issue": "10",
+      "journal-title": "Cell Cycle.",
+      "key": "341_CR57",
+      "unstructured": "Li L, Huang K, Zhao H, Chen B, Ye Q, Yue J. CDK1-PLK1/SGOL2/ANLN pathway mediating abnormal cell division in cell cycle may be a critical process in hepatocellular carcinoma. Cell Cycle. 2020;19(10):1236–52. https://doi.org/10.1080/15384101.2020.1749471.",
+      "volume": "19",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1083/jcb.117.6.1343",
+      "author": "C Hardwick",
+      "doi-asserted-by": "publisher",
+      "first-page": "1343",
+      "issue": "6",
+      "journal-title": "J Cell Biol.",
+      "key": "341_CR58",
+      "unstructured": "Hardwick C, Hoare K, Owens R, Hohn HP, Hook M, Moore D, et al. Molecular cloning of a novel hyaluronan receptor that mediates tumor cell motility. J Cell Biol. 1992;117(6):1343–50. https://doi.org/10.1083/jcb.117.6.1343.",
+      "volume": "117",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1038/ncb1673",
+      "author": "D Konno",
+      "doi-asserted-by": "publisher",
+      "first-page": "93",
+      "issue": "1",
+      "journal-title": "Nat Cell Biol.",
+      "key": "341_CR59",
+      "unstructured": "Konno D, Shioi G, Shitamukai A, Mori A, Kiyonari H, Miyata T, et al. Neuroepithelial progenitors undergo LGN-dependent planar divisions to maintain self-renewability during mammalian neurogenesis. Nat Cell Biol. 2008;10(1):93–101. https://doi.org/10.1038/ncb1673.",
+      "volume": "10",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nn1984",
+      "author": "X Morin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1440",
+      "issue": "11",
+      "journal-title": "Nat Neurosci.",
+      "key": "341_CR60",
+      "unstructured": "Morin X, Jaouen F, Durbec P. Control of planar divisions by the G-protein regulator LGN maintains progenitors in the chick neuroepithelium. Nat Neurosci. 2007;10(11):1440–8. https://doi.org/10.1038/nn1984.",
+      "volume": "10",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1083/jcb.201101039",
+      "author": "E Peyre",
+      "doi-asserted-by": "publisher",
+      "first-page": "141",
+      "issue": "1",
+      "journal-title": "J Cell Biol.",
+      "key": "341_CR61",
+      "unstructured": "Peyre E, Jaouen F, Saadaoui M, Haren L, Merdes A, Durbec P, et al. A lateral belt of cortical LGN and NuMA guides mitotic spindle movements and planar division in neuroepithelial cells. J Cell Biol. 2011;193(1):141–54. https://doi.org/10.1083/jcb.201101039.",
+      "volume": "193",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3389/fonc.2019.00693",
+      "author": "R He",
+      "doi-asserted-by": "publisher",
+      "first-page": "693",
+      "journal-title": "Front Oncol.",
+      "key": "341_CR62",
+      "unstructured": "He R, Zuo S. A robust 8-gene prognostic signature for early-stage non-small cell lung cancer. Front Oncol. 2019;9:693. https://doi.org/10.3389/fonc.2019.00693.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1158/1541-7786.MCR-19-0811",
+      "author": "HG Kang",
+      "doi-asserted-by": "publisher",
+      "first-page": "403",
+      "issue": "3",
+      "journal-title": "Mol Cancer Res.",
+      "key": "341_CR63",
+      "unstructured": "Kang HG, Kim WJ, Kang HG, Chun KH, Kim SJ. Galectin-3 interacts with C/EBPβ and upregulates hyaluronan-mediated motility receptor expression in gastric cancer. Mol Cancer Res. 2020;18(3):403–13. https://doi.org/10.1158/1541-7786.MCR-19-0811.",
+      "volume": "18",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fonc.2019.01030",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1030",
+      "journal-title": "Front Oncol.",
+      "key": "341_CR64",
+      "unstructured": "Wang Y, Chen L, Ju L, Qian K, Liu X, Wang X, et al. Novel biomarkers associated with progression and prognosis of bladder cancer identified by co-expression analysis. Front Oncol. 2019;9:1030. https://doi.org/10.3389/fonc.2019.01030.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.biopha.2019.109433",
+      "author": "D Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "109433",
+      "journal-title": "Biomed Pharmacother.",
+      "key": "341_CR65",
+      "unstructured": "Yang D, Ma Y, Zhao P, Ma J, He C. Systematic screening of protein-coding gene expression identified HMMR as a potential independent indicator of unfavorable survival in patients with papillary muscle-invasive bladder cancer. Biomed Pharmacother. 2019;120:109433. https://doi.org/10.1016/j.biopha.2019.109433.",
+      "volume": "120",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13578-019-0287-x",
+      "author": "T Kido",
+      "doi-asserted-by": "publisher",
+      "first-page": "22",
+      "issue": "1",
+      "journal-title": "Cell Biosci.",
+      "key": "341_CR66",
+      "unstructured": "Kido T, Lau YC. The Y-linked proto-oncogene TSPY contributes to poor prognosis of the male hepatocellular carcinoma patients by promoting the pro-oncogenic and suppressing the anti-oncogenic gene expression. Cell Biosci. 2019;9(1):22. https://doi.org/10.1186/s13578-019-0287-x.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.jhep.2014.10.029",
+      "author": "OW Yeung",
+      "doi-asserted-by": "publisher",
+      "first-page": "607",
+      "issue": "3",
+      "journal-title": "J Hepatol.",
+      "key": "341_CR67",
+      "unstructured": "Yeung OW, Lo CM, Ling CC, et al. Alternatively activated (M2) macrophages promote tumourgrowth and invasiveness in hepatocellular carcinoma. J Hepatol. 2015;62(3):607–16. https://doi.org/10.1016/j.jhep.2014.10.029.",
+      "volume": "62",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1126/science.285.5426.418",
+      "author": "H Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "418",
+      "journal-title": "Science",
+      "key": "341_CR68",
+      "unstructured": "Zou H, McGarry TJ, Bernal T. Identification of a vertebrate sister-chromatid separation inhibitor involved in transformation and tumorigenesis. Science. 1999;285:418–22.",
+      "volume": "285",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1016/j.biopha.2017.01.115",
+      "author": "Q Ren",
+      "doi-asserted-by": "publisher",
+      "first-page": "108",
+      "journal-title": "Biomed Pharmacother.",
+      "key": "341_CR69",
+      "unstructured": "Ren Q, Jin B. The clinical value and biological function of PTTG1 in colorectal cancer. Biomed Pharmacother. 2017;89:108–15. https://doi.org/10.1016/j.biopha.2017.01.115.",
+      "volume": "89",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3892/mco.2014.478",
+      "author": "C Wei",
+      "doi-asserted-by": "publisher",
+      "first-page": "387",
+      "issue": "2",
+      "journal-title": "Mol Clin Oncol.",
+      "key": "341_CR70",
+      "unstructured": "Wei C, Yang X, Xi J, et al. High expression of pituitary tumor-transforming gene-1 predicts poor prognosis in clear cell renal cell carcinoma. Mol Clin Oncol. 2015;3(2):387–91. https://doi.org/10.3892/mco.2014.478.",
+      "volume": "3",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1111/and.12283",
+      "author": "F Pierconti",
+      "doi-asserted-by": "publisher",
+      "first-page": "427",
+      "issue": "4",
+      "journal-title": "Andrologia.",
+      "key": "341_CR71",
+      "unstructured": "Pierconti F, Milardi D, Martini M, Grande G, Cenci T, Gulino G, et al. Pituitary-tumour-transforming-gene 1 expression in testicular cancer. Andrologia. 2015;47(4):427–32. https://doi.org/10.1111/and.12283.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12885-017-3694-6",
+      "author": "H Repo",
+      "doi-asserted-by": "publisher",
+      "first-page": "705",
+      "issue": "1",
+      "journal-title": "BMC Cancer.",
+      "key": "341_CR72",
+      "unstructured": "Repo H, Gurvits N, Löyttyniemi E, Nykänen M, Lintunen M, Karra H, et al. PTTG1-interacting protein (PTTG1IP/PBF) predicts breast cancer survival. BMC Cancer. 2017;17(1):705. https://doi.org/10.1186/s12885-017-3694-6.",
+      "volume": "17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/s12032-010-9775-x",
+      "author": "ZZ Feng",
+      "doi-asserted-by": "publisher",
+      "first-page": "304",
+      "issue": "1",
+      "journal-title": "Med Oncol.",
+      "key": "341_CR73",
+      "unstructured": "Feng ZZ, Chen JW, Yang ZR, Lu GZ, Cai ZG. Expression of PTTG1 and PTEN in endometrial carcinoma: correlation with tumorigenesis and progression. Med Oncol. 2012;29(1):304–10. https://doi.org/10.1007/s12032-010-9775-x.",
+      "volume": "29",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.4161/cbt.11.3.14102",
+      "author": "M Liang",
+      "doi-asserted-by": "publisher",
+      "first-page": "337",
+      "issue": "3",
+      "journal-title": "Cancer Biol Ther.",
+      "key": "341_CR74",
+      "unstructured": "Liang M, Chen X, Liu W, Li S, Li C, Jiang L, et al. Role of the pituitary tumor transforming gene 1 in the progression of hepatocellular carcinoma. Cancer Biol Ther. 2011;11(3):337–45. https://doi.org/10.4161/cbt.11.3.14102.",
+      "volume": "11",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/hep.21181",
+      "author": "T Fujii",
+      "doi-asserted-by": "publisher",
+      "first-page": "1267",
+      "issue": "6",
+      "journal-title": "Hepatology.",
+      "key": "341_CR75",
+      "unstructured": "Fujii T, Nomoto S, Koshikawa K, Yatabe Y, Teshigawara O, Mori T, et al. Overexpression of pituitary tumor transforming gene 1 in HCC is associated with angiogenesis and poor prognosis. Hepatology. 2006;43(6):1267–75. https://doi.org/10.1002/hep.21181.",
+      "volume": "43",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1046/j.1365-2141.2002.03941.x",
+      "author": "R Stoika",
+      "doi-asserted-by": "publisher",
+      "first-page": "1070",
+      "issue": "4",
+      "journal-title": "Br J Haematol.",
+      "key": "341_CR76",
+      "unstructured": "Stoika R, Melmed S. Expression and function of pituitary tumour transforming gene for T-lymphocyte activation. Br J Haematol. 2002;119(4):1070–4. https://doi.org/10.1046/j.1365-2141.2002.03941.x.",
+      "volume": "119",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.jmb.2017.05.014",
+      "author": "JCM Uitdehaag",
+      "doi-asserted-by": "publisher",
+      "first-page": "2211",
+      "issue": "14",
+      "journal-title": "J Mol Biol.",
+      "key": "341_CR77",
+      "unstructured": "Uitdehaag JCM, de Man J, Willemsen-Seegers N, Prinsen MBW, Libouban MAA, Sterrenburg JG, et al. Target residence time-guided optimization on TTK kinase results in inhibitors with potent anti-proliferative activity. J Mol Biol. 2017;429(14):2211–30. https://doi.org/10.1016/j.jmb.2017.05.014.",
+      "volume": "429",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1073/pnas.1705261114",
+      "author": "G Lim",
+      "doi-asserted-by": "publisher",
+      "first-page": "E9261",
+      "issue": "44",
+      "journal-title": "Proc Natl Acad Sci USA.",
+      "key": "341_CR78",
+      "unstructured": "Lim G, Huh WK. Rad52 phosphorylation by Ipl1 and Mps1 contributes to Mps1 kinetochore localization and spindle assembly checkpoint regulation. Proc Natl Acad Sci USA. 2017;114(44):E9261–70. https://doi.org/10.1073/pnas.1705261114.",
+      "volume": "114",
+      "year": "2017"
+    },
+    {
+      "author": "T Yamabuki",
+      "first-page": "1375",
+      "issue": "6",
+      "journal-title": "Int J Oncol.",
+      "key": "341_CR79",
+      "unstructured": "Yamabuki T, Daigo Y, Kato T, Hayama S, Tsunoda T, Miyamoto M, et al. Genome-wide gene expression profile analysis of esophageal squamous cell carcinomas. Int J Oncol. 2006;28(6):1375–84.",
+      "volume": "28",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1056/NEJMoa043330",
+      "author": "R Stupp",
+      "doi-asserted-by": "publisher",
+      "first-page": "987",
+      "issue": "10",
+      "journal-title": "N Engl J Med.",
+      "key": "341_CR80",
+      "unstructured": "Stupp R, Mason WP, van den Bent MJ, Weller M, Fisher B, Taphoorn MJB, et al. Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma. N Engl J Med. 2005;352(10):987–96. https://doi.org/10.1056/NEJMoa043330.",
+      "volume": "352",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1111/j.1349-7006.2008.00844.x",
+      "author": "Y Mizukami",
+      "doi-asserted-by": "publisher",
+      "first-page": "1448",
+      "issue": "7",
+      "journal-title": "Cancer Sci.",
+      "key": "341_CR81",
+      "unstructured": "Mizukami Y, Kono K, Daigo Y, Takano A, Tsunoda T, Kawaguchi Y, et al. Detection of novel cancer-testis antigen-specific T-cell responses in TIL, regional lymph nodes, and PBL in patients with esophageal squamous cell carcinoma. Cancer Sci. 2008;99(7):1448–54. https://doi.org/10.1111/j.1349-7006.2008.00844.x.",
+      "volume": "99",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1056/NEJMoa052933",
+      "author": "C Fan",
+      "doi-asserted-by": "publisher",
+      "first-page": "560",
+      "issue": "6",
+      "journal-title": "N Engl J Med.",
+      "key": "341_CR82",
+      "unstructured": "Fan C, Oh DS, Wessels L, Weigelt B, Nuyten DSA, Nobel AB, et al. Concordance among gene-expression-based predictors for breast cancer. N Engl J Med. 2006;355(6):560–9. https://doi.org/10.1056/NEJMoa052933.",
+      "volume": "355",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1080/1061186X.2016.1258568",
+      "author": "Y Xie",
+      "doi-asserted-by": "publisher",
+      "first-page": "112",
+      "issue": "2",
+      "journal-title": "J Drug Target.",
+      "key": "341_CR83",
+      "unstructured": "Xie Y, Wang A, Lin J, Wu L, Zhang H, Yang X, et al. Mps1/TTK: a novel target and biomarker for cancer. J Drug Target. 2017;25(2):112–8. https://doi.org/10.1080/1061186X.2016.1258568.",
+      "volume": "25",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1074/jbc.M700636200",
+      "author": "S Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "18327",
+      "issue": "25",
+      "journal-title": "J Biol Chem.",
+      "key": "341_CR84",
+      "unstructured": "Zhu S, Wang W, Clarke DC, Liu X. Activation of Mps1 promotes transforming growth factor-beta-independent Smad signaling. J Biol Chem. 2007;282(25):18327–38. https://doi.org/10.1074/jbc.M700636200.",
+      "volume": "282",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1002/2211-5463.12909",
+      "author": "H Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1542",
+      "issue": "8",
+      "journal-title": "FEBS Open Bio.",
+      "key": "341_CR85",
+      "unstructured": "Huang H, Yang Y, Zhang W, Liu X, Yang G. TTK regulates proliferation and apoptosis of gastric cancer cells through the Akt-mTOR pathway. FEBS Open Bio. 2020;10(8):1542–9. https://doi.org/10.1002/2211-5463.12909.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.18632/oncotarget.5295",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "34309",
+      "issue": "33",
+      "journal-title": "Oncotarget.",
+      "key": "341_CR86",
+      "unstructured": "Liu X, Liao W, Yuan Q, Ou Y, Huang J. TTK activates Akt and promotes proliferation and migration of hepatocellular carcinoma cells. Oncotarget. 2015;6(33):34309–20. https://doi.org/10.18632/oncotarget.5295.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3389/fphar.2018.01522",
+      "author": "O Menyhárt",
+      "doi-asserted-by": "publisher",
+      "first-page": "1522",
+      "journal-title": "Front Pharmacol.",
+      "key": "341_CR87",
+      "unstructured": "Menyhárt O, Pongor LS, Győrffy B. Mutations defining patient cohorts with elevated PD-L1 expression in gastric cancer. Front Pharmacol. 2019;9:1522. https://doi.org/10.3389/fphar.2018.01522.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/cancers12102730",
+      "author": "K Regan-Fendt",
+      "doi-asserted-by": "publisher",
+      "first-page": "2730",
+      "journal-title": "Cancers (Basel)",
+      "key": "341_CR88",
+      "unstructured": "Regan-Fendt K, Li D, Reyes R, et al. Transcriptomics-based drug repurposing approach identifies novel drugs against sorafenib-resistant hepatocellular carcinoma. Cancers (Basel). 2020;12:2730.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12964-019-0398-3",
+      "author": "J Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "85",
+      "issue": "1",
+      "journal-title": "Cell Commun Signal.",
+      "key": "341_CR89",
+      "unstructured": "Xu J, Huang F, Yao Z, Jia C, Xiong Z, Liang H, et al. Inhibition of cyclin E1 sensitizes hepatocellular carcinoma cells to regorafenib by mcl-1 suppression. Cell Commun Signal. 2019;17(1):85. https://doi.org/10.1186/s12964-019-0398-3.",
+      "volume": "17",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3892/mmr.2017.6568",
+      "author": "X Mao",
+      "doi-asserted-by": "publisher",
+      "first-page": "208",
+      "issue": "1",
+      "journal-title": "Mol Med Rep.",
+      "key": "341_CR90",
+      "unstructured": "Mao X, Du S, Yang Z, et al. Inhibitors of PARP-1 exert inhibitory effects on the biological characteristics of hepatocellular carcinoma cells in vitro. Mol Med Rep. 2017;16(1):208–14. https://doi.org/10.3892/mmr.2017.6568.",
+      "volume": "16",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1080/2162402X.2015.1008866",
+      "author": "J Pol",
+      "doi-asserted-by": "publisher",
+      "issue": "4",
+      "journal-title": "Oncoimmunology.",
+      "key": "341_CR91",
+      "unstructured": "Pol J, Vacchelli E, Aranda F, Castoldi F, Eggermont A, Cremer I, et al. Trial Watch: Immunogenic cell death inducers for anticancer chemotherapy. Oncoimmunology. 2015;4(4):e1008866. https://doi.org/10.1080/2162402X.2015.1008866.",
+      "volume": "4",
+      "year": "2015"
+    }
+  ],
+  "reference-count": 91,
+  "references-count": 91,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00341-4"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Identification of hub genes associated with prognosis, diagnosis, immune infiltration and therapeutic drug in liver cancer by integrated analysis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

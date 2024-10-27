@@ -1,0 +1,692 @@
+{
+  "DOI": "10.1002/gepi.22421",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22421",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eSARS‐CoV‐2 mortality has been extensively studied in relation to host susceptibility. How sequence variations in the SARS‐CoV‐2 genome affect pathogenicity is poorly understood. Starting in October 2020, using the methodology of genome‐wide association studies (GWAS), we looked at the association between whole‐genome sequencing (WGS) data of the virus and COVID‐19 mortality as a potential method of early identification of highly pathogenic strains to target for containment. Although continuously updating our analysis, in December 2020, we analyzed 7548 single‐stranded SARS‐CoV‐2 genomes of COVID‐19 patients in the GISAID database and associated variants with mortality using a logistic regression. In total, evaluating 29,891 sequenced loci of the viral genome for association with patient/host mortality, two loci, at 12,053 and 25,088 bp, achieved genome‐wide significance (\u003cjats:italic\u003ep\u003c/jats:italic\u003e values of 4.09e−09 and 4.41e−23, respectively), though only 25,088 bp remained significant in follow‐up analyses. Our association findings were exclusively driven by the samples that were submitted from Brazil (\u003cjats:italic\u003ep\u003c/jats:italic\u003e value of 4.90e−13 for 25,088 bp). The mutation frequency of 25,088 bp in the Brazilian samples on GISAID has rapidly increased from about 0.4 in October/December 2020 to 0.77 in March 2021. Although GWAS methodology is suitable for samples in which mutation frequencies varies between geographical regions, it cannot account for mutation frequencies that change rapidly overtime, rendering a GWAS follow‐up analysis of the GISAID samples that have been submitted after December 2020 as invalid. The locus at 25,088 bp is located in the P.1 strain, which later (April 2021) became one of the distinguishing loci (precisely, substitution V1176F) of the Brazilian strain as defined by the Centers for Disease Control. Specifically, the mutations at 25,088 bp occur in the S2 subunit of the SARS‐CoV‐2 spike protein, which plays a key role in viral entry of target host cells. Since the mutations alter amino acid coding sequences, they potentially imposing structural changes that could enhance viral infectivity and symptom severity. Our analysis suggests that GWAS methodology can provide suitable analysis tools for the real‐time detection of new more transmissible and pathogenic viral strains in databases such as GISAID, though new approaches are needed to accommodate rapidly changing mutation frequencies over time, in the presence of simultaneously changing case/control ratios. Improvements of the associated metadata/patient information in terms of quality and availability will also be important to fully utilize the potential of GWAS methodology in this field.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22421"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-02-10"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2021-05-17"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-06-22"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-6008-2720",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Hahn",
+      "given": "Georg",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biological Engineering Massachusetts Institute of Technology  Cambridge Massachusetts USA"
+        }
+      ],
+      "family": "Wu",
+      "given": "Chloe M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Department of Medical Consilience, Graduate School Dankook University  Yongin South Korea"
+        }
+      ],
+      "family": "Lee",
+      "given": "Sanghun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "PRecisiOn Medicine Translational Research (PROMoTeR) Center, Department of Population Medicine Harvard Medical School and Harvard Pilgrim Health Care Institute  Boston MA USA"
+        }
+      ],
+      "family": "Lutz",
+      "given": "Sharon M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Food and Drug Administration  Silver Spring Maryland USA"
+        }
+      ],
+      "family": "Khurana",
+      "given": "Surender",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Infectious Diseases Brigham and Women's Hospital  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Baden",
+      "given": "Lindsey R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Haneuse",
+      "given": "Sebastien",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Department of Medicine, Channing Division of Network Medicine Brigham and Women's Hospital  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Qiao",
+      "given": "Dandi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "PRecisiOn Medicine Translational Research (PROMoTeR) Center, Department of Population Medicine Harvard Medical School and Harvard Pilgrim Health Care Institute  Boston MA USA"
+        },
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Hecker",
+      "given": "Julian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Department of Medicine, Channing Division of Network Medicine Brigham and Women's Hospital  Boston Massachusetts USA"
+        }
+      ],
+      "family": "DeMeo",
+      "given": "Dawn L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Genetics and Aging Research Unit, McCance Center for Brain Health, Department of Neurology Massachusetts General Hospital  Boston MA USA"
+        }
+      ],
+      "family": "Tanzi",
+      "given": "Rudolph E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Choudhary",
+      "given": "Manish C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Etemad",
+      "given": "Behzad",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Mohammadi",
+      "given": "Abbas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Esmaeilzadeh",
+      "given": "Elmira",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Department of Medicine, Channing Division of Network Medicine Brigham and Women's Hospital  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Cho",
+      "given": "Michael H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Li",
+      "given": "Jonathan Z.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Department of Anesthesiology, Critical Care and Pain Medicine Boston Children's Hospital  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Randolph",
+      "given": "Adrienne G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Laird",
+      "given": "Nan M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Department of Medicine, Channing Division of Network Medicine Brigham and Women's Hospital  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Weiss",
+      "given": "Scott T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Department of Medicine, Channing Division of Network Medicine Brigham and Women's Hospital  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Silverman",
+      "given": "Edwin K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biological Engineering Massachusetts Institute of Technology  Cambridge Massachusetts USA"
+        }
+      ],
+      "family": "Ribbeck",
+      "given": "Katharina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Harvard Medical School Harvard University  Boston Massachusetts USA"
+        },
+        {
+          "name": "Department of Medicine, Channing Division of Network Medicine Brigham and Women's Hospital  Boston Massachusetts USA"
+        }
+      ],
+      "family": "Lange",
+      "given": "Christoph",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        23
+      ]
+    ],
+    "date-time": "2021-06-23T05:27:46Z",
+    "timestamp": 1624426066000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        29
+      ]
+    ],
+    "date-time": "2023-08-29T12:26:34Z",
+    "timestamp": 1693311994000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "2U01HG008685",
+        "P01HL120839",
+        "P01HL132825",
+        "U01HL089856",
+        "U01HL089897"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000098",
+      "award": [
+        "1R01AI154470‐01",
+        "2U01HG008685"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "NIH Clinical Center"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01HG008976"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        13
+      ]
+    ],
+    "date-time": "2024-03-13T08:19:53Z",
+    "timestamp": 1710317993200
+  },
+  "is-referenced-by-count": 11,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            22
+          ]
+        ],
+        "date-time": "2021-06-22T00:00:00Z",
+        "timestamp": 1624320000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22421",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22421",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22421",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22421",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "685-693",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        10
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1128/JVI.00259-18",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0809524106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1038/ng2097",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "key": "e_1_2_8_5_1",
+      "unstructured": "Centers for Disease Control and Prevention. (2021).SARS‐CoV‐2 variant classifications and definitions.https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/variant-surveillance/variant-info.html"
+    },
+    {
+      "article-title": "Model‐based evaluation of transmissibility and reinfection for the P.1 variant of the SARS‐CoV‐2",
+      "author": "Coutinho R. M.",
+      "journal-title": "MedRxiv",
+      "key": "e_1_2_8_6_1",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/gch2.1018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1126/science.abh2644",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1073/pnas.2004999117",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1038/s41576-018-0055-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.3390/vaccines9030243",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22373",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22356",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "key": "e_1_2_8_14_1",
+      "unstructured": "Hahn G. Lutz S. M. \u0026Lange C.(2020).locStra: Fast implementation of (local) population stratification methods (v1.3).https://cran.r-project.org/package=locStra"
+    },
+    {
+      "DOI": "10.1016/j.cell.2021.03.036",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2020.04.022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "article-title": "Étude comparative de la distribution florale dans une portion des Alpes et des Jura",
+      "author": "Jaccard P.",
+      "first-page": "547",
+      "journal-title": "Bulletin de la Société vaudoise des sciences naturelles",
+      "key": "e_1_2_8_17_1",
+      "volume": "37",
+      "year": "1901"
+    },
+    {
+      "DOI": "10.1093/nar/gkf436",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1038/s41579-020-0421-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1128/mBio.02707-20",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1002/pro.2814",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1056/NEJMra0905980",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "key": "e_1_2_8_23_1",
+      "unstructured": "Mathur M. B. Smith L. H. Ding P. \u0026VanderWeele T. J.(2021).EValue: Sensitivity analyses for unmeasured confounding and other biases in observational studies and meta‐analyses (v4.1.2).https://cran.r-project.org/package=EValue"
+    },
+    {
+      "DOI": "10.1128/JVI.01930-16",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv752",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1016/S2213-2600(20)30354-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.2807/1560-7917.ES.2017.22.13.30494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "author": "Tan P.‐N.",
+      "key": "e_1_2_8_29_1",
+      "volume-title": "Introduction to data mining",
+      "year": "2005"
+    },
+    {
+      "key": "e_1_2_8_30_1",
+      "unstructured": "UCSC Genome Browser on SARS‐CoV‐2. (2021).Substitution V1176F.https://genome.ucsc.edu/cgi-bin/hgTracks?db=wuhCor1%26lastVirtModeType=default%26lastVirtModeExtraState=%26virtModeType=default%26virtMode=0%26nonVirtPosition=%26position=NC_045512v2%3A1%2D29903%26hgsid=1105354641_9ijaxoab6aags7jVnBFnnFMgXfdC"
+    },
+    {
+      "DOI": "10.7326/M16-2607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1021/acs.jpclett.0c01698",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.02.058",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1128/JVI.01412-08",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1038/s41422-020-0305-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1007/s10930-020-09901-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    }
+  ],
+  "reference-count": 35,
+  "references-count": 35,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22421"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Genome‐wide association analysis of COVID‐19 mortality risk in SARS‐CoV‐2 genomes identifies mutation in the SARS‐CoV‐2 spike protein that colocalizes with P.1 of the Brazilian strain"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

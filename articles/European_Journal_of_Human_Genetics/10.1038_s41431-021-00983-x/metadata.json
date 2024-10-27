@@ -1,0 +1,801 @@
+{
+  "DOI": "10.1038/s41431-021-00983-x",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-021-00983-x",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eCopy Number Variants (CNVs) are deletions, duplications or insertions larger than 50 base pairs. They account for a large percentage of the normal genome variation and play major roles in human pathology. While array-based approaches have long been used to detect them in clinical practice, whole-genome sequencing (WGS) bears the promise to allow concomitant exploration of CNVs and smaller variants. However, accurately calling CNVs from WGS remains a difficult computational task, for which a consensus is still lacking. In this paper, we explore practical calling options to reach the best compromise between sensitivity and sensibility. We show that callers based on different signal (paired-end reads, split reads, coverage depth) yield complementary results. We suggest approaches combining four selected callers (Manta, Delly, ERDS, CNVnator) and a regenotyping tool (SV2), and show that this is applicable in everyday practice in terms of computation time and further interpretation. We demonstrate the superiority of these approaches over array-based Comparative Genomic Hybridization (aCGH), specifically regarding the lack of resolution in breakpoint definition and the detection of potentially relevant CNVs. Finally, we confirm our results on the NA12878 benchmark genome, as well as one clinically validated sample. In conclusion, we suggest that WGS constitutes a timely and economically valid alternative to the combination of aCGH and whole-exome sequencing.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "983"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "18 November 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "23 September 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "4 October 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "8 November 2021"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All individuals provided written informed consent to participate in the study, approved by the Charité Universitätsmedizin Berlin ethics committee."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-0261-7210",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Coutelier",
+      "given": "Marie",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Holtgrewe",
+      "given": "Manuel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jäger",
+      "given": "Marten",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Flöttman",
+      "given": "Ricarda",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8080-8779",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Mensah",
+      "given": "Martin A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Spielmann",
+      "given": "Malte",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3194-8625",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Krawitz",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Horn",
+      "given": "Denise",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Beule",
+      "given": "Dieter",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9788-3166",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Mundlos",
+      "given": "Stefan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        8
+      ]
+    ],
+    "date-time": "2021-11-08T01:02:15Z",
+    "timestamp": 1636333335000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        8
+      ]
+    ],
+    "date-time": "2022-02-08T00:05:18Z",
+    "timestamp": 1644278718000
+  },
+  "funder": [
+    {
+      "name": "MAM is participant in the BIH Charité Junior Clinician Scientist Program funded by the Charité – Universitätsmedizin Berlin and the Berlin Institute of Health."
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "date-time": "2024-04-30T07:43:49Z",
+    "timestamp": 1714463029961
+  },
+  "is-referenced-by-count": 19,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            8
+          ]
+        ],
+        "date-time": "2021-11-08T00:00:00Z",
+        "timestamp": 1636329600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            8
+          ]
+        ],
+        "date-time": "2021-11-08T00:00:00Z",
+        "timestamp": 1636329600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-00983-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-00983-x",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-00983-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "178-186",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        8
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1101/gr.107524.110",
+      "author": "A McKenna",
+      "doi-asserted-by": "crossref",
+      "first-page": "1297",
+      "journal-title": "Genome Res",
+      "key": "983_CR1",
+      "unstructured": "McKenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, Kernytsky A, et al. The genome analysis toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Res. 2010;20:1297–303.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.12.007",
+      "author": "B Trost",
+      "doi-asserted-by": "crossref",
+      "first-page": "142",
+      "journal-title": "Am J Hum Genet",
+      "key": "983_CR2",
+      "unstructured": "Trost B, Walker S, Wang Z, Thiruvahindrapuram B, MacDonald JR, Sung WWL, et al. A comprehensive workflow for read depth-based identification of copy-number variation from whole-genome sequence data. Am J Hum Genet. 2018;102:142–55.",
+      "volume": "102",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nrg3871",
+      "author": "M Zarrei",
+      "doi-asserted-by": "crossref",
+      "first-page": "172",
+      "journal-title": "Nat Rev Genet",
+      "key": "983_CR3",
+      "unstructured": "Zarrei M, MacDonald JR, Merico D, Scherer SW. A copy number variation map of the human genome. Nat Rev Genet. 2015;16:172–83.",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "author": "AW Pang",
+      "journal-title": "Genome Biol",
+      "key": "983_CR4",
+      "unstructured": "Pang AW, MacDonald JR, Pinto D, Wei J, Rafiq MA, Conrad DF, et al. Towards a comprehensive structural variation map of an individual human genome. Genome Biol. 2010;11:R52.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/ng.909",
+      "author": "GM Cooper",
+      "doi-asserted-by": "crossref",
+      "first-page": "838",
+      "journal-title": "Nat Genet",
+      "key": "983_CR5",
+      "unstructured": "Cooper GM, Coe BP, Girirajan S, Rosenfeld JA, Vu TH, Baker C, et al. A copy number variation morbidity map of developmental delay. Nat Genet. 2011;43:838–46.",
+      "volume": "43",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1126/science.1155174",
+      "author": "T Walsh",
+      "doi-asserted-by": "crossref",
+      "first-page": "539",
+      "journal-title": "Science",
+      "key": "983_CR6",
+      "unstructured": "Walsh T, McClellan JM, McCarthy SE, Addington AM, Pierce SB, Cooper GM, et al. Rare structural variants disrupt multiple genes in neurodevelopmental pathways in schizophrenia. Science. 2008;320:539–43.",
+      "volume": "320",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/s41576-018-0007-0",
+      "author": "M Spielmann",
+      "doi-asserted-by": "crossref",
+      "first-page": "453",
+      "journal-title": "Nat Rev Genet",
+      "key": "983_CR7",
+      "unstructured": "Spielmann M, Lupianez DG, Mundlos S. Structural variation in the 3D genome. Nat Rev Genet. 2018;19:453–467.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nrg3373",
+      "author": "J Weischenfeldt",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "journal-title": "Nat Rev Genet",
+      "key": "983_CR8",
+      "unstructured": "Weischenfeldt J, Symmons O, Spitz F, Korbel JO. Phenotypic impact of genomic structural variation: insights from and for human disease. Nat Rev Genet. 2013;14:125–38.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nature12644",
+      "author": "F Jin",
+      "doi-asserted-by": "crossref",
+      "first-page": "290",
+      "journal-title": "Nature",
+      "key": "983_CR9",
+      "unstructured": "Jin F, Li Y, Dixon JR, Selvaraj S, Ye Z, Lee AY, et al. A high-resolution map of the three-dimensional chromatin interactome in human cells. Nature. 2013;503:290–4.",
+      "volume": "503",
+      "year": "2013"
+    },
+    {
+      "author": "JGM Lejeune",
+      "first-page": "1721",
+      "journal-title": "C R Hebd Seances Acad Sci",
+      "key": "983_CR10",
+      "unstructured": "Lejeune JGM, Turpin R. Etude des chromosomes somatiques de neuf enfants mongoliens. C R Hebd Seances Acad Sci. 1959;248:1721–2.",
+      "volume": "248",
+      "year": "1959"
+    },
+    {
+      "DOI": "10.1126/science.3460176",
+      "author": "Y Ben-Neriah",
+      "doi-asserted-by": "crossref",
+      "first-page": "212",
+      "journal-title": "Science",
+      "key": "983_CR11",
+      "unstructured": "Ben-Neriah Y, Daley GQ, Mes-Masson AM, Witte ON, Baltimore D. The chronic myelogenous leukemia-specific P210 protein is the product of the bcr/abl hybrid gene. Science. 1986;233:212–4.",
+      "volume": "233",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1038/sj.ejhg.5201531",
+      "author": "WW Lockwood",
+      "doi-asserted-by": "crossref",
+      "first-page": "139",
+      "journal-title": "Eur J Hum Genet",
+      "key": "983_CR12",
+      "unstructured": "Lockwood WW, Chari R, Chi B, Lam WL. Recent advances in array comparative genomic hybridization technologies and their applications in human genetics. Eur J Hum Genet. 2006;14:139–48.",
+      "volume": "14",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1586/14737159.2015.1053467",
+      "author": "JY Hehir-Kwa",
+      "doi-asserted-by": "crossref",
+      "first-page": "1023",
+      "journal-title": "Expert Rev Mol Diagn",
+      "key": "983_CR13",
+      "unstructured": "Hehir-Kwa JY, Pfundt R, Veltman JA. Exome sequencing and whole genome sequencing for the detection of copy number variation. Expert Rev Mol Diagn. 2015;15:1023–32.",
+      "volume": "15",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/humu.22813",
+      "author": "SH Lelieveld",
+      "doi-asserted-by": "crossref",
+      "first-page": "815",
+      "journal-title": "Human Mutation",
+      "key": "983_CR14",
+      "unstructured": "Lelieveld SH, Spielmann M, Mundlos S, Veltman JA, Gilissen C. Comparison of exome and genome sequencing technologies for the complete capture of protein-coding regions. Human Mutation. 2015;36:815–22.",
+      "volume": "36",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0295-y",
+      "author": "AM Gross",
+      "doi-asserted-by": "crossref",
+      "first-page": "1121",
+      "journal-title": "Genet Med",
+      "key": "983_CR15",
+      "unstructured": "Gross AM, Ajay SS, Rajan V, Brown C, Bluske K, Burns NJ, et al. Copy-number variants in clinical genome sequencing: deployment and interpretation for rare and undiagnosed disease. Genet Med. 2019;21:1121–30.",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts535",
+      "author": "SM Teo",
+      "doi-asserted-by": "crossref",
+      "first-page": "2711",
+      "journal-title": "Bioinformatics",
+      "key": "983_CR16",
+      "unstructured": "Teo SM, Pawitan Y, Ku CS, Chia KS, Salim A. Statistical challenges associated with detecting copy number variations with next-generation sequencing. Bioinformatics. 2012;28:2711–8.",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s13059-019-1720-5",
+      "author": "S Kosugi",
+      "doi-asserted-by": "crossref",
+      "journal-title": "Genome Biol",
+      "key": "983_CR17",
+      "unstructured": "Kosugi S, Momozawa Y, Liu X, Terao C, Kubo M, Kamatani Y. Comprehensive evaluation of structural variation detection algorithms for whole genome sequencing. Genome Biol. 2019;20:117.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-018-08148-z",
+      "doi-asserted-by": "crossref",
+      "key": "983_CR18",
+      "unstructured": "Chaisson M, Sanders A, Zhao X, Malhotra A, Porubsky D, Rausch T, et al. Multi-platform discovery of haplotype-resolved structural variation in human genomes. Nat Commun. 2019;10:1784."
+    },
+    {
+      "DOI": "10.1186/s12864-016-2366-2",
+      "author": "H Parikh",
+      "doi-asserted-by": "crossref",
+      "journal-title": "BMC Genom",
+      "key": "983_CR19",
+      "unstructured": "Parikh H, Mohiyuddin M, Lam HY, Iyer H, Chen D, Pratt M, et al. svclassify: a method to establish benchmark structural variant calls. BMC Genom. 2016;17:64.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/gim.2017.154",
+      "author": "R Flottmann",
+      "doi-asserted-by": "crossref",
+      "first-page": "599",
+      "journal-title": "Genet Med",
+      "key": "983_CR20",
+      "unstructured": "Flottmann R, Kragesteen BK, Geuer S, Socha M, Allou L, Sowinska-Seidler A, et al. Noncoding copy-number variations are associated with congenital limb malformation. Genet Med. 2018;20:599–607.",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/gr.114876.110",
+      "author": "A Abyzov",
+      "doi-asserted-by": "crossref",
+      "first-page": "974",
+      "journal-title": "Genome Res",
+      "key": "983_CR21",
+      "unstructured": "Abyzov A, Urban AE, Snyder M, Gerstein M. CNVnator: an approach to discover, genotype, and characterize typical and atypical CNVs from family and population genome sequencing. Genome Res. 2011;21:974–84.",
+      "volume": "21",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1109/TCBB.2017.2758779",
+      "doi-asserted-by": "publisher",
+      "key": "983_CR22",
+      "unstructured": "Tan R, Wang J, Wu X, Juan L, Zheng L, Ma R, et al. ERDS-exome: a hybrid approach for copy number variant detection from whole-exome sequencing data. IEEE/ACM Trans Comput Biol Bioinform. 2017. https://doi.org/10.1109/TCBB.2017.2758779."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq635",
+      "author": "V Boeva",
+      "doi-asserted-by": "crossref",
+      "first-page": "268",
+      "journal-title": "Bioinformatics",
+      "key": "983_CR23",
+      "unstructured": "Boeva V, Zinovyev A, Bleakley K, Vert JP, Janoueix-Lerosey I, Delattre O, et al. Control-free calling of copy number alterations in deep-sequencing data using GC-content normalization. Bioinformatics. 2011;27:268–9.",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1004873",
+      "author": "E Talevich",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1004873",
+      "journal-title": "PLoS Comput Biol",
+      "key": "983_CR24",
+      "unstructured": "Talevich E, Shain AH, Botton T, Bastian BC. CNVkit: genome-wide copy number detection and visualization from targeted DNA sequencing. PLoS Comput Biol. 2016;12:e1004873.",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts378",
+      "author": "T Rausch",
+      "doi-asserted-by": "crossref",
+      "first-page": "i333",
+      "journal-title": "Bioinformatics",
+      "key": "983_CR25",
+      "unstructured": "Rausch T, Zichner T, Schlattl A, Stutz AM, Benes V, Korbel JO. DELLY: structural variant discovery by integrated paired-end and split-read analysis. Bioinformatics. 2012;28:i333–i339.",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv710",
+      "author": "X Chen",
+      "doi-asserted-by": "crossref",
+      "first-page": "1220",
+      "journal-title": "Bioinformatics",
+      "key": "983_CR26",
+      "unstructured": "Chen X, Schulz-Trieglaff O, Shaw R, Barnes B, Schlesinger F, Kallberg M, et al. Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics. 2016;32:1220–2.",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "key": "983_CR27",
+      "unstructured": "Kim J, Reinert K. Vaquita: Fast and Accurate Identification of Structural Variation Using Combined Evidence. In: 17th International Workshop on Algorithms in Bioinformatics, LIPICS (88). Dagstuhl LIPIcs, Saarbrücken/Wadern, (WABI 2017). 185(13:1)–198(13:14)."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx813",
+      "author": "D Antaki",
+      "doi-asserted-by": "crossref",
+      "first-page": "1774",
+      "journal-title": "Bioinformatics",
+      "key": "983_CR28",
+      "unstructured": "Antaki D, Brandler WM, Sebat J. SV2: accurate structural variation genotyping and de novo mutation detection from whole genomes. Bioinformatics. 2018;34:1774–7.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fgene.2012.00035",
+      "author": "P Cingolani",
+      "doi-asserted-by": "crossref",
+      "first-page": "35",
+      "journal-title": "Front Genet",
+      "key": "983_CR29",
+      "unstructured": "Cingolani P, Patel VM, Coon M, Nguyen T, Land SJ, Ruden DM, et al. Using drosophila melanogaster as a model for genotoxic chemical mutational studies with a new program, SnpSift. Front Genet. 2012;3:35.",
+      "volume": "3",
+      "year": "2012"
+    },
+    {
+      "author": "O Tange",
+      "first-page": "42",
+      "journal-title": "UNESIX Mag",
+      "key": "983_CR30",
+      "unstructured": "Tange O. Gnu parallel-the command-line power tool. UNESIX Mag. 2011;36:42–47.",
+      "volume": "36",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq033",
+      "author": "AR Quinlan",
+      "doi-asserted-by": "crossref",
+      "first-page": "841",
+      "journal-title": "Bioinformatics",
+      "key": "983_CR31",
+      "unstructured": "Quinlan AR, Hall IM. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics. 2010;26:841–2.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/nbt.1754",
+      "author": "JT Robinson",
+      "doi-asserted-by": "crossref",
+      "first-page": "24",
+      "journal-title": "Nat Biotechnol",
+      "key": "983_CR32",
+      "unstructured": "Robinson JT, Thorvaldsdottir H, Winckler W, Guttman M, Lander ES, Getz G, et al. Integrative genomics viewer. Nat Biotechnol. 2011;29:24–26.",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s13073-016-0383-z",
+      "author": "M Jager",
+      "doi-asserted-by": "crossref",
+      "journal-title": "Genome Med",
+      "key": "983_CR33",
+      "unstructured": "Jager M, Schubach M, Zemojtel T, Reinert K, Church DM, Robinson PN. Alternate-locus aware variant calling in whole genome sequencing. Genome Med. 2016;8:130, https://pubmed.ncbi.nlm.nih.gov/27964746/.",
+      "volume": "8",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1136/jmg.2007.055699",
+      "author": "E Klopocki",
+      "doi-asserted-by": "crossref",
+      "first-page": "370",
+      "journal-title": "J Med Genet",
+      "key": "983_CR34",
+      "unstructured": "Klopocki E, Ott CE, Benatar N, Ullmann R, Mundlos S, Lehmann K. A microduplication of the long range SHH limb regulator (ZRS) is associated with triphalangeal thumb-polysyndactyly syndrome. J Med Genet. 2008;45:370–5.",
+      "volume": "45",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1007/s00439-021-02295-y",
+      "doi-asserted-by": "crossref",
+      "key": "983_CR35",
+      "unstructured": "Elsner J, Mensah MA, Holtgrewe M, Hertzberg J, Bigoni S, Busche A, et al. Genome sequencing in families with congenital limb malformations. Hum Genet. 2021."
+    },
+    {
+      "DOI": "10.1038/nature05329",
+      "author": "R Redon",
+      "doi-asserted-by": "crossref",
+      "first-page": "444",
+      "journal-title": "Nature",
+      "key": "983_CR36",
+      "unstructured": "Redon R, Ishikawa S, Fitch KR, Feuk L, Perry GH, Andrews TD, et al. Global variation in copy number in the human genome. Nature. 2006;444:444–54.",
+      "volume": "444",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1038/nature13394",
+      "author": "C Gilissen",
+      "doi-asserted-by": "crossref",
+      "first-page": "344",
+      "journal-title": "Nature",
+      "key": "983_CR37",
+      "unstructured": "Gilissen C, Hehir-Kwa JY, Thung DT, van de Vorst M, van Bon BW, Willemsen MH, et al. Genome sequencing identifies major causes of severe intellectual disability. Nature. 2014;511:344–7.",
+      "volume": "511",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2287-8",
+      "author": "RL Collins",
+      "doi-asserted-by": "crossref",
+      "first-page": "444",
+      "journal-title": "Nature",
+      "key": "983_CR38",
+      "unstructured": "Collins RL, Brand H, Karczewski KJ, Zhao X, Alfoldi J, Francioli LC, et al. A structural variation reference for medical and population genetics. Nature. 2020;581:444–51.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fgene.2015.00138",
+      "author": "M Pirooznia",
+      "doi-asserted-by": "crossref",
+      "first-page": "138",
+      "journal-title": "Front Genet",
+      "key": "983_CR39",
+      "unstructured": "Pirooznia M, Goes FS, Zandi PP. Whole-genome CNV analysis: advances in computational approaches. Front Genet. 2015;6:138.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1201/9781315154770-1",
+      "doi-asserted-by": "crossref",
+      "key": "983_CR40",
+      "unstructured": "Robinson PN, Piro RM, Jäger M. Computational exome and genome analysis. CRC Press, Taylor\u0026Francis Group; https://www.taylorfrancis.com/books/edit/10.1201/9781315154770/computational-exome-genome-analysis-peterrobinson-rosario-piro-marten-j%C3%A4ger. 2018."
+    },
+    {
+      "DOI": "10.1038/nature19800",
+      "author": "M Franke",
+      "doi-asserted-by": "crossref",
+      "first-page": "265",
+      "journal-title": "Nature",
+      "key": "983_CR41",
+      "unstructured": "Franke M, Ibrahim DM, Andrey G, Schwarzer W, Heinrich V, Schopflin R, et al. Formation of new chromatin domains determines pathogenicity of genomic duplications. Nature. 2016;538:265–9.",
+      "volume": "538",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv051",
+      "author": "M Holtgrewe",
+      "doi-asserted-by": "crossref",
+      "first-page": "1904",
+      "journal-title": "Bioinformatics",
+      "key": "983_CR42",
+      "unstructured": "Holtgrewe M, Kuchenbecker L, Reinert K. Methods for the detection and assembly of novel sequence in high-throughput sequencing data. Bioinformatics. 2015;31:1904–12.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature23264",
+      "author": "L Maretty",
+      "doi-asserted-by": "crossref",
+      "first-page": "87",
+      "journal-title": "Nature",
+      "key": "983_CR43",
+      "unstructured": "Maretty L, Jensen JM, Petersen B, Sibbesen JA, Liu S, Villesen P, et al. Sequencing and de novo assembly of 150 genomes from Denmark as a population reference. Nature. 2017;548:87–91.",
+      "volume": "548",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature13907",
+      "author": "MJ Chaisson",
+      "doi-asserted-by": "crossref",
+      "first-page": "608",
+      "journal-title": "Nature",
+      "key": "983_CR44",
+      "unstructured": "Chaisson MJ, Huddleston J, Dennis MY, Sudmant PH, Malig M, Hormozdiari F, et al. Resolving the complexity of the human genome using single-molecule sequencing. Nature. 2015;517:608–11.",
+      "volume": "517",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nmeth.3865",
+      "author": "Y Mostovoy",
+      "doi-asserted-by": "crossref",
+      "first-page": "587",
+      "journal-title": "Nat Methods",
+      "key": "983_CR45",
+      "unstructured": "Mostovoy Y, Levy-Sakin M, Lam J, Lam ET, Hastie AR, Marks P, et al. A hybrid approach for de novo human genome sequence assembly and phasing. Nat Methods. 2016;13:587–90.",
+      "volume": "13",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nmeth.2206",
+      "author": "E Falconer",
+      "doi-asserted-by": "crossref",
+      "first-page": "1107",
+      "journal-title": "Nat Methods",
+      "key": "983_CR46",
+      "unstructured": "Falconer E, Hills M, Naumann U, Poon SS, Chavez EA, Sanders AD, et al. DNA template strand sequencing of single-cells maps genomic rearrangements at high resolution. Nat Methods. 2012;9:1107–12.",
+      "volume": "9",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1101/119651",
+      "doi-asserted-by": "crossref",
+      "key": "983_CR47",
+      "unstructured": "Dixon J, Xu J, Dileep V, Zhan Y, Song F, Le VT, et al. An integrative framework for detecting structural variations in cancer genomes. bioRxiv. 2017 https://www.biorxiv.org/content/10.1101/119651v1.full."
+    }
+  ],
+  "reference-count": 47,
+  "references-count": 47,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-021-00983-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Combining callers improves the detection of copy number variants from whole-genome sequencing"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "30"
+}

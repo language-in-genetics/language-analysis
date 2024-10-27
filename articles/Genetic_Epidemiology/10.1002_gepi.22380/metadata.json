@@ -1,0 +1,525 @@
+{
+  "DOI": "10.1002/gepi.22380",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22380",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eBy treating genetic variants as instrumental variables (IVs), two‐sample Mendelian randomization (MR) methods detect genetically regulated risk exposures for complex diseases using only summary statistics. When considering gene expression as exposure in transcriptome‐wide MR (TWMR) analyses, the eQTLs (expression‐quantitative‐trait‐loci) may have pleiotropic effects or be correlated with variants that have effects on disease not via expression, and the presence of those invalid IVs would lead to biased inference. Moreover, the number of eQTLs as IVs for a gene is generally limited, making the detection of invalid IVs challenging. We propose a method, “MR‐MtRobin,” for accurate TWMR inference in the presence of invalid IVs. By leveraging multi‐tissue eQTL data in a mixed model, the proposed method makes identifiable the IV‐specific random effects due to pleiotropy from estimation errors of eQTL summary statistics, and can provide accurate inference on the dependence (fixed effects) between eQTL and GWAS (genome‐wide association study) effects in the presence of invalid IVs. Moreover, our method can improve power and precision in inference by selecting cross‐tissue eQTLs as IVs that have improved consistency of effects across eQTL and GWAS data. We applied MR‐MtRobin to detect genes associated with schizophrenia risk by integrating summary‐level data from the Psychiatric Genomics Consortium and the Genotype‐Tissue Expression project (V8).\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22380"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-06-08"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2021-02-08"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-04-09"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health Sciences University of Chicago Chicago Illinois USA"
+        }
+      ],
+      "family": "Gleason",
+      "given": "Kevin J.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics and Informatics, Colorado School of Public Health University of Colorado Anschutz Medical Campus Aurora Colorado USA"
+        }
+      ],
+      "family": "Yang",
+      "given": "Fan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health Sciences University of Chicago Chicago Illinois USA"
+        }
+      ],
+      "family": "Chen",
+      "given": "Lin S.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        9
+      ]
+    ],
+    "date-time": "2021-04-09T09:43:54Z",
+    "timestamp": 1617961434000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        1
+      ]
+    ],
+    "date-time": "2023-09-01T18:39:58Z",
+    "timestamp": 1693593598000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000057",
+      "award": [
+        "2R01GM108711",
+        "R01GM108711"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of General Medical Sciences"
+    },
+    {
+      "DOI": "10.13039/100000869",
+      "award": [
+        "GTDR16376189"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Susan G. Komen for the Cure"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        9
+      ]
+    ],
+    "date-time": "2024-03-09T21:33:47Z",
+    "timestamp": 1710020027922
+  },
+  "is-referenced-by-count": 10,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            4,
+            9
+          ]
+        ],
+        "date-time": "2021-04-09T00:00:00Z",
+        "timestamp": 1617926400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22380",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22380",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22380",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "353-371",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        6
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1126/science.aaz1776",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1996.10476902",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22131",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1038/nature24277",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.2307/2291055",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyv080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2017.05.038",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0000000000000559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21758",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-14156-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1007/s10654-015-0011-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1007/s10654-017-0255-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1093/nargab/lqaa010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1186/gb-2007-8-10-r219",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1093/nargab/lqaa028",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1093/nar/gks1188",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.2337/db16-0418",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0409-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1186/s13059-020-02125-w",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007186",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1042/BCJ20160010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0364-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "article-title": "TSEA‐DB: A trait‐tissue association map for human complex traits and diseases",
+      "author": "Jia P.",
+      "first-page": "D1022",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Research",
+      "key": "e_1_2_8_24_1",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/01621459.2014.994705",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1002/sim.3034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1101/gad.1302205",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1214/11-STS361",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1038/s41431-019-0468-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0631-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.2307/2938359",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwt084",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1038/s41467-018-03209-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-10936-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "key": "e_1_2_8_35_1",
+      "unstructured": "Psychiatric Genomics Consortium. (2019). SCZ2; PGC Schizophrenia Downloads.https://www.med.unc.edu/pgc/download‐results/scz"
+    },
+    {
+      "DOI": "10.1038/s41467-019-09432-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13921-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "DOI": "10.1038/nature13595",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "DOI": "10.1038/ng1589",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1038/ng.3244",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1198/073500102288618658",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "key": "e_1_2_8_43_1",
+      "unstructured": "The GTEx Consortium. (2019).eQTL Tissue‐Specific All SNP Gene Associations; GTEx Portal; Version 8.https://gtexportal.org/home/datasets"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0268-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_44_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0099-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxy022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    },
+    {
+      "DOI": "10.1101/gr.216754.116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_47_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz749",
+      "article-title": "Bayesian weighted Mendelian randomization for causal inference based on summary statistics",
+      "author": "Zhao J.",
+      "doi-asserted-by": "crossref",
+      "first-page": "1501",
+      "issue": "5",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_8_48_1",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1214/19-AOS1866",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_49_1"
+    },
+    {
+      "DOI": "10.1038/s41467-017-02088-w",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_50_1"
+    }
+  ],
+  "reference-count": 49,
+  "references-count": 49,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2020.06.04.135541",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22380"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A robust two‐sample transcriptome‐wide Mendelian randomization method integrating GWAS with multi‐tissue eQTL summary statistics"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

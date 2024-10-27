@@ -1,0 +1,855 @@
+{
+  "DOI": "10.1186/s40246-023-00457-9",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00457-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eRNA methylation is a widely known post-transcriptional regulation which exists in many cancer and immune system diseases. However, the potential role and crosstalk of five types RNA methylation regulators in diabetic nephropathy (DN) and immune microenvironment remain unclear.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe mRNA expression of 37 RNA modification regulators and RNA modification regulators related genes were identified in 112 samples from 5 Gene Expression Omnibus datasets. Nonnegative Matrix Factorization clustering method was performed to determine RNA modification patterns. The ssGSEA algorithms and the expression of human leukocyte antigen were employed to assess the immune microenvironment characteristics. Risk model based on differentially expression genes responsible for the modification regulators was constructed to evaluate its predictive capability in DN patients. Furthermore, the results were validated by using immunofluorescence co-localizations and protein experiments in vitro.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe found 24 RNA methylation regulators were significant differently expressed in glomeruli in DN group compared with control group. Four methylation-related genes and six RNA regulators were introduced into riskScore model using univariate Logistic regression and integrated LASSO regression, which could precisely distinguish the DN and healthy individuals. Group with high-risk score was associated with high immune infiltration. Three distinct RNA modification patterns were identified, which has significant differences in immune microenvironment, biological pathway and eGFR. Validation analyses showed the METTL3, ADAR1, DNMT1 were upregulated whereas YTHDC1 was downregulated in DN podocyte cell lines comparing with cells cultured by the normal glucose.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur study reveals that RNA methylation regulators and immune infiltration regulation play critical roles in the pathogenesis of DN. The bioinformatic analyses combine with verification in vitro could provide robust evidence for identification of predictive RNA methylation regulators in DN.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "457"
+  ],
+  "article-number": "6",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "28 November 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "4 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "10 February 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The data generated from GEO were all publicly available data, further approval by an ethics committee was not required."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Jia",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Dongwei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ren",
+      "given": "Jingjing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Guangpu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhao",
+      "given": "Zihao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhao",
+      "given": "Huanhuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yan",
+      "given": "Qianqian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Duan",
+      "given": "Jiayu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Zhangsuo",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        10
+      ]
+    ],
+    "date-time": "2023-02-10T06:03:03Z",
+    "timestamp": 1676008983000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        13
+      ]
+    ],
+    "date-time": "2023-02-13T16:05:45Z",
+    "timestamp": 1676304345000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        12,
+        24
+      ]
+    ],
+    "date-time": "2023-12-24T20:29:34Z",
+    "timestamp": 1703449774118
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            10
+          ]
+        ],
+        "date-time": "2023-02-10T00:00:00Z",
+        "timestamp": 1675987200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            10
+          ]
+        ],
+        "date-time": "2023-02-10T00:00:00Z",
+        "timestamp": 1675987200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00457-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00457-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00457-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        10
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1007/s10157-014-1057-z",
+      "author": "M Haneda",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Clin Exp Nephrol",
+      "key": "457_CR1",
+      "unstructured": "Haneda M, Utsunomiya K, Koya D, Babazono T, Moriya T, Makino H, Kimura K, Suzuki Y, Wada T, Ogawa S, et al. A new classification of Diabetic Nephropathy 2014: a report from Joint Committee on Diabetic Nephropathy. Clin Exp Nephrol. 2015;19(1):1–5.",
+      "volume": "19",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.diabres.2019.107843",
+      "author": "P Saeedi",
+      "doi-asserted-by": "publisher",
+      "first-page": "107843",
+      "journal-title": "Diabetes Res Clin Pract",
+      "key": "457_CR2",
+      "unstructured": "Saeedi P, Petersohn I, Salpea P, Malanda B, Karuranga S, Unwin N, Colagiuri S, Guariguata L, Motala AA, Ogurtsova K, et al. Global and regional diabetes prevalence estimates for 2019 and projections for 2030 and 2045: Results from the International Diabetes Federation Diabetes Atlas, 9 edition. Diabetes Res Clin Pract. 2019;157:107843.",
+      "volume": "157",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1080/14789450.2018.1545577",
+      "author": "AB Sanz",
+      "doi-asserted-by": "publisher",
+      "first-page": "77",
+      "issue": "1",
+      "journal-title": "Expert Rev Proteomics",
+      "key": "457_CR3",
+      "unstructured": "Sanz AB, Ramos AM, Soler MJ, Sanchez-Niño MD, Fernandez-Fernandez B, Perez-Gomez MV, Ortega MR, Alvarez-Llamas G, Ortiz A. Advances in understanding the role of angiotensin-regulated proteins in kidney diseases. Expert Rev Proteomics. 2019;16(1):77–92.",
+      "volume": "16",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41581-019-0248-y",
+      "author": "M Ruiz-Ortega",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "issue": "5",
+      "journal-title": "Nat Rev Nephrol",
+      "key": "457_CR4",
+      "unstructured": "Ruiz-Ortega M, Rayego-Mateos S, Lamas S, Ortiz A, Rodrigues-Diez RR. Targeting the progression of chronic kidney disease. Nat Rev Nephrol. 2020;16(5):269–88.",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fendo.2022.907060",
+      "author": "X Geng",
+      "doi-asserted-by": "publisher",
+      "first-page": "907060",
+      "journal-title": "Front Endocrinol (Lausanne)",
+      "key": "457_CR5",
+      "unstructured": "Geng X, Li Z, Yang Y. Emerging role of epitranscriptomics in diabetes mellitus and its complications. Front Endocrinol (Lausanne). 2022;13:907060.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2016.01.012",
+      "author": "W Xiao",
+      "doi-asserted-by": "publisher",
+      "first-page": "507",
+      "issue": "4",
+      "journal-title": "Mol Cell",
+      "key": "457_CR6",
+      "unstructured": "Xiao W, Adhikari S, Dahal U, Chen Y-S, Hao Y-J, Sun B-F, Sun H-Y, Li A, Ping X-L, Lai W-Y, et al. Nuclear m(6)A reader YTHDC1 regulates mRNA splicing. Mol Cell. 2016;61(4):507–19.",
+      "volume": "61",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature12730",
+      "author": "X Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "117",
+      "issue": "7481",
+      "journal-title": "Nature",
+      "key": "457_CR7",
+      "unstructured": "Wang X, Lu Z, Gomez A, Hon GC, Yue Y, Han D, Fu Y, Parisien M, Dai Q, Jia G, et al. N6-methyladenosine-dependent regulation of messenger RNA stability. Nature. 2014;505(7481):117–20.",
+      "volume": "505",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.cell.2015.05.014",
+      "author": "X Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1388",
+      "issue": "6",
+      "journal-title": "Cell",
+      "key": "457_CR8",
+      "unstructured": "Wang X, Zhao BS, Roundtree IA, Lu Z, Han D, Ma H, Weng X, Chen K, Shi H, He C. N(6)-methyladenosine modulates messenger RNA translation efficiency. Cell. 2015;161(6):1388–99.",
+      "volume": "161",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature14281",
+      "author": "CR Alarcón",
+      "doi-asserted-by": "publisher",
+      "first-page": "482",
+      "issue": "7544",
+      "journal-title": "Nature",
+      "key": "457_CR9",
+      "unstructured": "Alarcón CR, Lee H, Goodarzi H, Halberg N, Tavazoie SF. N6-methyladenosine marks primary microRNAs for processing. Nature. 2015;519(7544):482–5.",
+      "volume": "519",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41590-020-0650-4",
+      "author": "Z Shulman",
+      "doi-asserted-by": "publisher",
+      "first-page": "501",
+      "issue": "5",
+      "journal-title": "Nat Immunol",
+      "key": "457_CR10",
+      "unstructured": "Shulman Z, Stern-Ginossar N. The RNA modification N-methyladenosine as a novel regulator of the immune system. Nat Immunol. 2020;21(5):501–12.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12935-020-01679-w",
+      "author": "S Xie",
+      "doi-asserted-by": "publisher",
+      "first-page": "585",
+      "issue": "1",
+      "journal-title": "Cancer Cell Int",
+      "key": "457_CR11",
+      "unstructured": "Xie S, Chen W, Chen K, Chang Y, Yang F, Lin A, Shu Q, Zhou T, Yan X. Emerging roles of RNA methylation in gastrointestinal cancers. Cancer Cell Int. 2020;20(1):585.",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41419-020-03312-0",
+      "author": "Z Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "issue": "1",
+      "journal-title": "Cell Death Dis",
+      "key": "457_CR12",
+      "unstructured": "Xu Z, Jia K, Wang H, Gao F, Zhao S, Li F, Hao J. METTL14-regulated PI3K/Akt signaling pathway via PTEN affects HDAC5-mediated epithelial-mesenchymal transition of renal tubular cells in diabetic kidney disease. Cell Death Dis. 2021;12(1):32.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nchembio.2040",
+      "author": "X Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "311",
+      "issue": "5",
+      "journal-title": "Nat Chem Biol",
+      "key": "457_CR13",
+      "unstructured": "Li X, Xiong X, Wang K, Wang L, Shu X, Ma S, Yi C. Transcriptome-wide mapping reveals reversible and dynamic N(1)-methyladenosine methylome. Nat Chem Biol. 2016;12(5):311–6.",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3389/fcell.2020.00430",
+      "author": "G Guo",
+      "doi-asserted-by": "publisher",
+      "first-page": "430",
+      "journal-title": "Front Cell Dev Biol",
+      "key": "457_CR14",
+      "unstructured": "Guo G, Wang H, Shi X, Ye L, Yan K, Chen Z, Zhang H, Jin Z, Xue X. Disease activity-associated alteration of mRNA m5 C methylation in CD4+ T cells of systemic lupus erythematosus. Front Cell Dev Biol. 2020;8:430.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nchembio.2099",
+      "author": "S Nakano",
+      "doi-asserted-by": "publisher",
+      "first-page": "546",
+      "issue": "7",
+      "journal-title": "Nat Chem Biol",
+      "key": "457_CR15",
+      "unstructured": "Nakano S, Suzuki T, Kawarada L, Iwata H, Asano K, Suzuki T. NSUN3 methylase initiates 5-formylcytidine biogenesis in human mitochondrial tRNA(Met). Nat Chem Biol. 2016;12(7):546–51.",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature08909",
+      "author": "TW Nilsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "457",
+      "issue": "7280",
+      "journal-title": "Nature",
+      "key": "457_CR16",
+      "unstructured": "Nilsen TW, Graveley BR. Expansion of the eukaryotic proteome by alternative splicing. Nature. 2010;463(7280):457–63.",
+      "volume": "463",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2017.12.006",
+      "author": "J-F Xiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "126",
+      "issue": "1",
+      "journal-title": "Mol Cell",
+      "key": "457_CR17",
+      "unstructured": "Xiang J-F, Yang Q, Liu C-X, Wu M, Chen L-L, Yang L. N-methyladenosines modulate A-to-I RNA editing. Mol Cell. 2018;69(1):126–35.",
+      "volume": "69",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3724/abbs.2021016",
+      "author": "X Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "163",
+      "issue": "2",
+      "journal-title": "Acta Biochim Biophys Sin (Shanghai)",
+      "key": "457_CR18",
+      "unstructured": "Li X, Lu L, Hou W, Huang T, Chen X, Qi J, Zhao Y, Zhu M. Epigenetics in the pathogenesis of diabetic nephropathy. Acta Biochim Biophys Sin (Shanghai). 2022;54(2):163–72.",
+      "volume": "54",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s12943-021-01322-w",
+      "author": "H Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "29",
+      "issue": "1",
+      "journal-title": "Mol Cancer",
+      "key": "457_CR19",
+      "unstructured": "Chen H, Yao J, Bao R, Dong Y, Zhang T, Du Y, Wang G, Ni D, Xun Z, Niu X, et al. Cross-talk of four types of RNA modification writers defines tumor microenvironment and pharmacogenomic landscape in colorectal cancer. Mol Cancer. 2021;20(1):29.",
+      "volume": "20",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1080/2162402X.2021.1936758",
+      "author": "Y Gao",
+      "doi-asserted-by": "publisher",
+      "first-page": "1936758",
+      "issue": "1",
+      "journal-title": "Oncoimmunology",
+      "key": "457_CR20",
+      "unstructured": "Gao Y, Wang H, Li H, Ye X, Xia Y, Yuan S, Lu J, Xie X, Wang L, Zhang J. Integrated analyses of m1A regulator-mediated modification patterns in tumor microenvironment-infiltrating immune cells in colon cancer. Oncoimmunology. 2021;10(1):1936758.",
+      "volume": "10",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fonc.2021.657466",
+      "author": "J Pan",
+      "doi-asserted-by": "publisher",
+      "first-page": "657466",
+      "journal-title": "Front Oncol",
+      "key": "457_CR21",
+      "unstructured": "Pan J, Huang Z, Xu Y. m5C RNA methylation regulators predict prognosis and regulate the immune microenvironment in lung squamous cell carcinoma. Front Oncol. 2021;11:657466.",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.immuni.2013.10.003",
+      "author": "G Bindea",
+      "doi-asserted-by": "publisher",
+      "first-page": "782",
+      "issue": "4",
+      "journal-title": "Immunity",
+      "key": "457_CR22",
+      "unstructured": "Bindea G, Mlecnik B, Tosolini M, Kirilovsky A, Waldner M, Obenauf AC, Angell H, Fredriksen T, Lafontaine L, Berger A, et al. Spatiotemporal dynamics of intratumoral immune cells reveal the immune landscape in human cancer. Immunity. 2013;39(4):782–95.",
+      "volume": "39",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1471-2105-14-7",
+      "author": "S Hänzelmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "journal-title": "BMC Bioinform",
+      "key": "457_CR23",
+      "unstructured": "Hänzelmann S, Castelo R, Guinney J. GSVA: gene set variation analysis for microarray and RNA-seq data. BMC Bioinform. 2013;14:7.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/s12967-022-03496-3",
+      "author": "D Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "298",
+      "issue": "1",
+      "journal-title": "J Transl Med",
+      "key": "457_CR24",
+      "unstructured": "Zhu D, Liu Y, Chen J, Wang Q, Li Y, Zhu Y, Feng J, Jiang J. The methyltransferase METTL3 promotes tumorigenesis via mediating HHLA2 mRNA m6A modification in human renal cell carcinoma. J Transl Med. 2022;20(1):298.",
+      "volume": "20",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41423-020-0361-7",
+      "author": "SA Rieder",
+      "doi-asserted-by": "publisher",
+      "first-page": "1503",
+      "issue": "6",
+      "journal-title": "Cell Mol Immunol",
+      "key": "457_CR25",
+      "unstructured": "Rieder SA, Wang J, White N, Qadri A, Menard C, Stephens G, Karnell JL, Rudd CE, Kolbeck R. B7–H7 (HHLA2) inhibits T-cell activation and proliferation in the presence of TCR and CD28 signaling. Cell Mol Immunol. 2021;18(6):1503–11.",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1021/acs.analchem.8b01703",
+      "author": "X Dai",
+      "doi-asserted-by": "publisher",
+      "first-page": "6380",
+      "issue": "11",
+      "journal-title": "Anal Chem",
+      "key": "457_CR26",
+      "unstructured": "Dai X, Wang T, Gonzalez G, Wang Y. Identification of YTH domain-containing proteins as the readers for N1-methyladenosine in RNA. Anal Chem. 2018;90(11):6380–4.",
+      "volume": "90",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/wrna.1665",
+      "author": "B Song",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1665",
+      "issue": "1",
+      "journal-title": "Wiley Interdiscip Rev RNA",
+      "key": "457_CR27",
+      "unstructured": "Song B, Shiromoto Y, Minakuchi M, Nishikura K. The role of RNA editing enzyme ADAR1 in human disease. Wiley Interdiscip Rev RNA. 2022;13(1):e1665.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s40364-022-00362-8",
+      "author": "H Song",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "issue": "1",
+      "journal-title": "Biomark Res",
+      "key": "457_CR28",
+      "unstructured": "Song H, Zhang J, Liu B, Xu J, Cai B, Yang H, Straube J, Yu X, Ma T. Biological roles of RNA mC modification and its implications in Cancer immunotherapy. Biomark Res. 2022;10(1):15.",
+      "volume": "10",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s13046-021-01852-7",
+      "author": "Y Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "51",
+      "issue": "1",
+      "journal-title": "J Exp Clin Cancer Res",
+      "key": "457_CR29",
+      "unstructured": "Zhang Y, Liu L, Qiu Q, Zhou Q, Ding J, Lu Y, Liu P. Alternative polyadenylation: methods, mechanism, function, and role in cancer. J Exp Clin Cancer Res. 2021;40(1):51.",
+      "volume": "40",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.2337/db11-0358",
+      "author": "K Eller",
+      "doi-asserted-by": "publisher",
+      "first-page": "2954",
+      "issue": "11",
+      "journal-title": "Diabetes",
+      "key": "457_CR30",
+      "unstructured": "Eller K, Kirsch A, Wolf AM, Sopper S, Tagwerker A, Stanzl U, Wolf D, Patsch W, Rosenkranz AR, Eller P. Potential role of regulatory T cells in reversing obesity-linked insulin resistance and diabetic nephropathy. Diabetes. 2011;60(11):2954–62.",
+      "volume": "60",
+      "year": "2011"
+    },
+    {
+      "author": "AS Perlman",
+      "first-page": "256",
+      "issue": "3",
+      "journal-title": "Ann Clin Lab Sci",
+      "key": "457_CR31",
+      "unstructured": "Perlman AS, Chevalier JM, Wilkinson P, Liu H, Parker T, Levine DM, Sloan BJ, Gong A, Sherman R, Farrell FX. Serum inflammatory and immune mediators are elevated in early stage diabetic nephropathy. Ann Clin Lab Sci. 2015;45(3):256–63.",
+      "volume": "45",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nrneph.2017.138",
+      "author": "MJ Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "712",
+      "issue": "11",
+      "journal-title": "Nat Rev Nephrol",
+      "key": "457_CR32",
+      "unstructured": "Smith MJ, Simmons KM, Cambier JC. B cells in type 1 diabetes mellitus and diabetic kidney disease. Nat Rev Nephrol. 2017;13(11):712–20.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/S1074-7613(01)00227-8",
+      "author": "PP Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "763",
+      "issue": "5",
+      "journal-title": "Immunity",
+      "key": "457_CR33",
+      "unstructured": "Lee PP, Fitzpatrick DR, Beard C, Jessup HK, Lehar S, Makar KW, Pérez-Melgosa M, Sweetser MT, Schlissel MS, Nguyen S, et al. A critical role for Dnmt1 and DNA methylation in T cell development, function, and survival. Immunity. 2001;15(5):763–74.",
+      "volume": "15",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.3389/fimmu.2021.627926",
+      "author": "E Magnani",
+      "doi-asserted-by": "publisher",
+      "first-page": "627926",
+      "journal-title": "Front Immunol",
+      "key": "457_CR34",
+      "unstructured": "Magnani E, Macchi F, Madakashira BP, Zhang C, Alaydaroos F, Sadler KC. hrf1 and dnmt1 loss induces an immune response in Zebrafish livers due to viral mimicry by transposable elements. Front Immunol. 2021;12:627926.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.kint.2019.02.020",
+      "author": "G Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "409",
+      "issue": "2",
+      "journal-title": "Kidney Int",
+      "key": "457_CR35",
+      "unstructured": "Chen G, Chen H, Ren S, Xia M, Zhu J, Liu Y, Zhang L, Tang L, Sun L, Liu H, et al. Aberrant DNA methylation of mTOR pathway genes promotes inflammatory activation of immune cells in diabetic kidney disease. Kidney Int. 2019;96(2):409–20.",
+      "volume": "96",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2018.08.011",
+      "author": "J Wei",
+      "doi-asserted-by": "publisher",
+      "first-page": "973",
+      "issue": "6",
+      "journal-title": "Mol Cell",
+      "key": "457_CR36",
+      "unstructured": "Wei J, Liu F, Lu Z, Fei Q, Ai Y, He PC, Shi H, Cui X, Su R, Klungland A, et al. Differential m6A, m6Am, and m1A demethylation mediated by FTO in the cell nucleus and cytoplasm. Mol Cell. 2018;71(6):973–85.",
+      "volume": "71",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13046-022-02254-z",
+      "author": "J Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "42",
+      "issue": "1",
+      "journal-title": "J Exp Clin Cancer Res",
+      "key": "457_CR37",
+      "unstructured": "Huang J, Sun W, Wang Z, Lv C, Zhang T, Zhang D, Dong W, Shao L, He L, Ji X, et al. FTO suppresses glycolysis and growth of papillary thyroid cancer via decreasing stability of APOE mRNA in an N6-methyladenosine-dependent manner. J Exp Clin Cancer Res. 2022;41(1):42.",
+      "volume": "41",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1155/2013/452537",
+      "author": "Z-J Ma",
+      "doi-asserted-by": "publisher",
+      "first-page": "452537",
+      "journal-title": "J Diabetes Res",
+      "key": "457_CR38",
+      "unstructured": "Ma Z-J, Sun P, Guo G, Zhang R, Chen L-M. Association of the HLA-DQA1 and HLA-DQB1 alleles in type 2 diabetes mellitus and diabetic nephropathy in the Han ethnicity of China. J Diabetes Res. 2013;2013:452537.",
+      "volume": "2013",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1159/000070747",
+      "author": "R Dyck",
+      "doi-asserted-by": "publisher",
+      "first-page": "178",
+      "issue": "3",
+      "journal-title": "Am J Nephrol",
+      "key": "457_CR39",
+      "unstructured": "Dyck R, Bohm C, Klomp H. Increased frequency of HLA A2/DR4 and A2/DR8 haplotypes in young saskatchewan aboriginal people with diabetic end-stage renal disease. Am J Nephrol. 2003;23(3):178–85.",
+      "volume": "23",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1007/s00011-020-01411-4",
+      "author": "H Zeng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1215",
+      "issue": "12",
+      "journal-title": "Inflamm Res",
+      "key": "457_CR40",
+      "unstructured": "Zeng H, Qi X, Xu X, Wu Y. TAB1 regulates glycolysis and activation of macrophages in diabetic nephropathy. Inflamm Res. 2020;69(12):1215–34.",
+      "volume": "69",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.15252/embr.201948781",
+      "author": "J Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "e48781",
+      "issue": "2",
+      "journal-title": "EMBO Rep",
+      "key": "457_CR41",
+      "unstructured": "Li J, Sun YBY, Chen W, Fan J, Li S, Qu X, Chen Q, Chen R, Zhu D, Zhang J, et al. Smad4 promotes diabetic nephropathy by modulating glycolysis and OXPHOS. EMBO Rep. 2020;21(2):e48781.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/ijms21082806",
+      "author": "P Calle",
+      "doi-asserted-by": "publisher",
+      "first-page": "2806",
+      "issue": "8",
+      "journal-title": "Int J Mol Sci",
+      "key": "457_CR42",
+      "unstructured": "Calle P, Hotter G. Macrophage phenotype and fibrosis in diabetic nephropathy. Int J Mol Sci. 2020;21(8):2806.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1261/rna.035600.112",
+      "author": "T Chujo",
+      "doi-asserted-by": "publisher",
+      "first-page": "2269",
+      "issue": "12",
+      "journal-title": "RNA",
+      "key": "457_CR43",
+      "unstructured": "Chujo T, Suzuki T. Trmt61B is a methyltransferase responsible for 1-methyladenosine at position 58 of human mitochondrial tRNAs. RNA. 2012;18(12):2269–76.",
+      "volume": "18",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.neurobiolaging.2014.09.027",
+      "author": "S Sekar",
+      "doi-asserted-by": "publisher",
+      "first-page": "583",
+      "issue": "2",
+      "journal-title": "Neurobiol Aging",
+      "key": "457_CR44",
+      "unstructured": "Sekar S, McDonald J, Cuyugan L, Aldrich J, Kurdoglu A, Adkins J, Serrano G, Beach TG, Craig DW, Valla J, et al. Alzheimer’s disease is associated with altered expression of genes involved in immune response and mitochondrial processes in astrocytes. Neurobiol Aging. 2015;36(2):583–91.",
+      "volume": "36",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2019.04.008",
+      "author": "MR Davis",
+      "doi-asserted-by": "publisher",
+      "first-page": "1397",
+      "issue": "5",
+      "journal-title": "Cell Rep",
+      "key": "457_CR45",
+      "unstructured": "Davis MR, Delaleau M, Borden KLB. Nuclear eIF4E stimulates 3′-end cleavage of target RNAs. Cell Rep. 2019;27(5):1397–408.",
+      "volume": "27",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.jaci.2013.12.1083",
+      "author": "C Lagresle-Peyrou",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "issue": "1",
+      "journal-title": "J Allergy Clin Immunol",
+      "key": "457_CR46",
+      "unstructured": "Lagresle-Peyrou C, Millili M, Luce S, Boned A, Sadek H, Rouiller J, Frange P, Cros G, Cavazzana M, André-Schmutz I, et al. The BLNK adaptor protein has a nonredundant role in human B-cell differentiation. J Allergy Clin Immunol. 2014;134(1):145–54.",
+      "volume": "134",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.phrs.2021.105937",
+      "author": "B Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "105937",
+      "journal-title": "Pharmacol Res",
+      "key": "457_CR47",
+      "unstructured": "Yang B, Wang J-Q, Tan Y, Yuan R, Chen Z-S, Zou C. RNA methylation and cancer treatment. Pharmacol Res. 2021;174:105937.",
+      "volume": "174",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 47,
+  "references-count": 47,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00457-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Integrated analysis of RNA methylation regulators crosstalk and immune infiltration for predictive and personalized therapy of diabetic nephropathy"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

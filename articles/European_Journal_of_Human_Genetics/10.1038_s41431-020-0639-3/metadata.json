@@ -1,0 +1,664 @@
+{
+  "DOI": "10.1038/s41431-020-0639-3",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-020-0639-3",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eRegion-based genome-wide scans are usually performed by use of a priori chosen analysis regions. Such an approach will likely miss the region comprising the strongest signal and, thus, may result in increased type II error rates and decreased power. Here, we propose a genomic exhaustive scan approach that analyzes all possible subsequences and does not rely on a prior definition of the analysis regions. As a prime instance, we present a computationally ultraefficient implementation using the rare-variant collapsing test for phenotypic association, the genomic exhaustive collapsing scan (GECS). Our implementation allows for the identification of regions comprising the strongest signals in large, genome-wide rare-variant association studies while controlling the family-wise error rate via permutation. Application of GECS to two genomic data sets revealed several novel significantly associated regions for age-related macular degeneration and for schizophrenia. Our approach also offers a high potential to improve genome-wide scans for selection, methylation, and other analyses.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "639"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "2 July 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "28 February 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "7 April 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "15 May 2020"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "For the sake of completeness, we declare that TB and DD provide compensated consulting services outside of academia, TB as an employee of xValue GmbH, and DD as an independent consultant. Although past and current clients might include biotech, life science, and pharma companies, the services are not related to the presented work and both authors are unaware of any possible conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-2452-8526",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kanoungi",
+      "given": "George",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8305-7114",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Nothnagel",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Becker",
+      "given": "Tim",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-5978-3458",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Drichel",
+      "given": "Dmitriy",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        5,
+        15
+      ]
+    ],
+    "date-time": "2020-05-15T15:06:50Z",
+    "timestamp": 1589555210000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        20
+      ]
+    ],
+    "date-time": "2023-05-20T21:01:52Z",
+    "timestamp": 1684616512000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001659",
+      "award": [
+        "BE 38/28/9-1",
+        "BE 38/28/9-1",
+        "BE 38/28/9-1"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T16:51:01Z",
+    "timestamp": 1709311861665
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "9",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        5,
+        15
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            15
+          ]
+        ],
+        "date-time": "2020-05-15T00:00:00Z",
+        "timestamp": 1589500800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            15
+          ]
+        ],
+        "date-time": "2020-05-15T00:00:00Z",
+        "timestamp": 1589500800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://www.nature.com/articles/s41431-020-0639-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41431-020-0639-3",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41431-020-0639-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1283-1291",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        5,
+        15
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        5,
+        15
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/ng.3843",
+      "author": "IE Christophersen",
+      "doi-asserted-by": "publisher",
+      "first-page": "946",
+      "journal-title": "Nat Genet",
+      "key": "639_CR1",
+      "unstructured": "Christophersen IE, Rienstra M, Roselli C, Yin X, Geelhoed B, Barnard J, et al. Large-scale analyses of common and rare variants identify 12 new loci associated with atrial fibrillation. Nat Genet. 2017;49:946.",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/gr.4252305",
+      "author": "R Nielsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1566",
+      "journal-title": "Genome Res",
+      "key": "639_CR2",
+      "unstructured": "Nielsen R, Williamson S, Kim Y, Hubisz MJ, Clark AG, Bustamante C. Genomic scans for selective sweeps using SNP data. Genome Res. 2005;15:1566–75.",
+      "volume": "15",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/ije/dyr238",
+      "author": "AE Jaffe",
+      "doi-asserted-by": "publisher",
+      "first-page": "200",
+      "journal-title": "Int J Epidemiol",
+      "key": "639_CR3",
+      "unstructured": "Jaffe AE, Murakami P, Lee H, Leek JT, Fallin MD, Feinberg AP, et al. Bump hunting to identify differentially methylated regions in epigenetic epidemiology studies. Int J Epidemiol. 2012;41:200–9.",
+      "volume": "41",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.21037/jtd.2017.05.34",
+      "author": "SY Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1725",
+      "journal-title": "J Thorac Dis",
+      "key": "639_CR4",
+      "unstructured": "Chen SY, Feng Z, Yi X. A general introduction to adjustment for multiple comparisons. J Thorac Dis. 2017;9:1725–9.",
+      "volume": "9",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "author": "TA Manolio",
+      "doi-asserted-by": "publisher",
+      "first-page": "747",
+      "journal-title": "Nature",
+      "key": "639_CR5",
+      "unstructured": "Manolio TA, Collins FS, Cox NJ, Goldstein DB, Hindorff LA, Hunter DJ, et al. Finding the missing heritability of complex diseases. Nature. 2009;461:747–53.",
+      "volume": "461",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1098/rstb.2017.0064",
+      "author": "MW Feldman",
+      "doi-asserted-by": "publisher",
+      "first-page": "20170064",
+      "journal-title": "Philos Trans R Soc Lond B Biol Sci.",
+      "key": "639_CR6",
+      "unstructured": "Feldman MW, Ramachandran S. Missing compared to what? Revisiting heritability, genes and culture. Philos Trans R Soc Lond B Biol Sci. 2018;373:20170064.",
+      "volume": "373",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.04.005",
+      "author": "AL Price",
+      "doi-asserted-by": "publisher",
+      "first-page": "832",
+      "journal-title": "Am J Hum Genet",
+      "key": "639_CR7",
+      "unstructured": "Price AL, Kryukov GV, de Bakker PI, Purcell SM, Staples J, Wei LJ, et al. Pooled association tests for rare variants in exon-resequencing studies. Am J Hum Genet. 2010;86:832–8.",
+      "volume": "86",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1159/000368676",
+      "author": "D Drichel",
+      "doi-asserted-by": "publisher",
+      "first-page": "164",
+      "journal-title": "Hum Heredity",
+      "key": "639_CR8",
+      "unstructured": "Drichel D, Herold C, Lacour A, Ramirez A, Jessen F, Maier W, et al. Rare variant testing of imputed data: an analysis pipeline typified. Hum Heredity. 2014;78:164–78.",
+      "volume": "78",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.10.012",
+      "author": "M Zawistowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "604",
+      "journal-title": "Am J Hum Genet",
+      "key": "639_CR9",
+      "unstructured": "Zawistowski M, Gopalakrishnan S, Ding J, Li Y, Grimm S, Zollner S. Extending rare-variant testing strategies: analysis of noncoding sequence and imputed genotypes. Am J Hum Genet. 2010;87:604–17.",
+      "volume": "87",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.05.002",
+      "author": "MC Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "929",
+      "journal-title": "Am J Hum Genet",
+      "key": "639_CR10",
+      "unstructured": "Wu MC, Kraft P, Epstein MP, Taylor DM, Chanock SJ, Hunter DJ, et al. Powerful SNP-set analysis for case-control genome-wide association studies. Am J Hum Genet. 2010;86:929–42.",
+      "volume": "86",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts568",
+      "author": "H Fier",
+      "doi-asserted-by": "publisher",
+      "first-page": "3027",
+      "journal-title": "Bioinformatics",
+      "key": "639_CR11",
+      "unstructured": "Fier H, Won S, Prokopenko D, AlChawa T, Ludwig KU, Fimmers R, et al. ‘Location, location, location’: a spatial approach for rare variant analysis and an application to a study on non-syndromic cleft lip with or without cleft palate. Bioinformatics. 2012;28:3027–33.",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1056/NEJMra035458",
+      "author": "R Freedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1738",
+      "journal-title": "N Engl J Med",
+      "key": "639_CR12",
+      "unstructured": "Freedman R. Schizophrenia. N Engl J Med. 2003;349:1738–49.",
+      "volume": "349",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/nrg.2017.101",
+      "author": "NJ Timpson",
+      "doi-asserted-by": "publisher",
+      "first-page": "110",
+      "journal-title": "Nat Rev Genet",
+      "key": "639_CR13",
+      "unstructured": "Timpson NJ, Greenwood CMT, Soranzo N, Lawson DJ, Richards JB. Genetic architecture: the shape of the genetic contribution to human traits and disease. Nat Rev Genet. 2018;19:110–24.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "author": "B Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "311",
+      "journal-title": "Am J Hum Genet",
+      "key": "639_CR14",
+      "unstructured": "Li B, Leal SM. Methods for detecting associations with rare variants for common diseases: application to analysis of sequence data. Am J Hum Genet. 2008;83:311–21",
+      "volume": "83",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1002/gepi.20609",
+      "author": "S Basu",
+      "doi-asserted-by": "publisher",
+      "first-page": "606",
+      "journal-title": "Genet Epidemiol",
+      "key": "639_CR15",
+      "unstructured": "Basu S, Pan W. Comparison of statistical tests for disease association with rare variants. Genet Epidemiol. 2011;35:606–19.",
+      "volume": "35",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "author": "S Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "Am J Hum Genet",
+      "key": "639_CR16",
+      "unstructured": "Lee S, Abecasis GR, Boehnke M, Lin X. Rare-variant association analysis: study designs and statistical tests. Am J Hum Genet. 2014;95:5–23.",
+      "volume": "95",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "author": "MC Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "82",
+      "journal-title": "Am J Hum Genet",
+      "key": "639_CR17",
+      "unstructured": "Wu MC, Lee S, Cai T, Li Y, Boehnke M, Lin X. Rare-variant association testing for sequencing data with the sequence kernel association test. Am J Hum Genet. 2011;89:82–93.",
+      "volume": "89",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1214/11-AOS946",
+      "author": "N Meinshausen",
+      "doi-asserted-by": "publisher",
+      "first-page": "3369",
+      "journal-title": "Ann Stat",
+      "key": "639_CR18",
+      "unstructured": "Meinshausen N, Maathuis MH, Buhlmann P. Asymptotic optimality of the Westfall-Young permutation procedure for multiple testing under dependence. Ann Stat. 2011;39:3369–91.",
+      "volume": "39",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/gepi.22032",
+      "author": "SL Pulit",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "journal-title": "Genet Epidemiol",
+      "key": "639_CR19",
+      "unstructured": "Pulit SL, de With SA, de Bakker PI. Resetting the bar: statistical significance in whole-genome sequencing-based association studies of global populations. Genet Epidemiol. 2017;41:145–51.",
+      "volume": "41",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3448",
+      "author": "LG Fritsche",
+      "doi-asserted-by": "publisher",
+      "first-page": "134",
+      "journal-title": "Nat Genet",
+      "key": "639_CR20",
+      "unstructured": "Fritsche LG, Igl W, Bailey JN, Grassmann F, Sengupta S, Bragg-Gresham JL, et al. A large genome-wide association study of age-related macular degeneration highlights contributions of rare and common variants. Nat Genet. 2016;48:134–43.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "author": "MJ Geerlings",
+      "first-page": "75",
+      "journal-title": "Mol Vis",
+      "key": "639_CR21",
+      "unstructured": "Geerlings MJ, Kersten E, Groenewoud JMM, Fritsche LG, Hoyng CB, de Jong EK, et al. Geographic distribution of rare variants associated with age-related macular degeneration. Mol Vis. 2018;24:75–82.",
+      "volume": "24",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/cmi.2009.40",
+      "author": "E Villegas Becerril",
+      "doi-asserted-by": "publisher",
+      "first-page": "303",
+      "journal-title": "Cell Mol Immunol",
+      "key": "639_CR22",
+      "unstructured": "Villegas Becerril E, Gonzalez Fernandez R, Perula Torres L, Lacomba MS, Gallardo Galera JM. HLA B27 as predisposition factor to suffer age related macular degeneration. Cell Mol Immunol. 2009;6:303–7.",
+      "volume": "6",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1097/APO.0b013e31823e57fe",
+      "author": "TK Ng",
+      "doi-asserted-by": "publisher",
+      "first-page": "51",
+      "journal-title": "Asia Pac J Ophthalmol",
+      "key": "639_CR23",
+      "unstructured": "Ng TK, Liang XY, Pang CP. HTRA1 in age-related macular degeneration. Asia Pac J Ophthalmol. 2012;1:51–63.",
+      "volume": "1",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1167/iovs.11-8135",
+      "author": "XY Liang",
+      "doi-asserted-by": "publisher",
+      "first-page": "3175",
+      "journal-title": "Investig Ophthalmol Vis Sci",
+      "key": "639_CR24",
+      "unstructured": "Liang XY, Lai TY, Liu DT, Fan AH, Chen LJ, Tam PO, et al. Differentiation of exudative age-related macular degeneration and polypoidal choroidal vasculopathy in the ARMS2/HTRA1 locus. Investig Ophthalmol Vis Sci. 2012;53:3175–82.",
+      "volume": "53",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1136/bjo.2010.193680",
+      "author": "M McKibbin",
+      "doi-asserted-by": "publisher",
+      "first-page": "208",
+      "journal-title": "Br J Ophthalmol",
+      "key": "639_CR25",
+      "unstructured": "McKibbin M, Ali M, Bansal S, Baxter PD, West K, Williams G, et al. CFH, VEGF and HTRA1 promoter genotype may influence the response to intravitreal ranibizumab therapy for neovascular age-related macular degeneration. Br J Ophthalmol. 2012;96:208–12",
+      "volume": "96",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/ng1750",
+      "author": "B Gold",
+      "doi-asserted-by": "publisher",
+      "first-page": "458",
+      "journal-title": "Nat Genet",
+      "key": "639_CR26",
+      "unstructured": "Gold B, Merriam JE, Zernant J, Hancox LS, Taiber AJ, Gehrs K, et al. Variation in factor B (BF) and complement component 2 (C2) genes is associated with age-related macular degeneration. Nat Genet. 2006;38:458–62.",
+      "volume": "38",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.3389/fphar.2017.00941",
+      "author": "M Fumagalli",
+      "doi-asserted-by": "publisher",
+      "first-page": "941",
+      "journal-title": "Front Pharmacol",
+      "key": "639_CR27",
+      "unstructured": "Fumagalli M, Lecca D, Abbracchio MP, Ceruti S. Pathophysiological role of purines and pyrimidines in neurodevelopment: unveiling new pharmacological approaches to congenital brain diseases. Front Pharmacol. 2017;8:941.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/gr.086652.108",
+      "author": "JM Akey",
+      "doi-asserted-by": "publisher",
+      "first-page": "711",
+      "journal-title": "Genome Res",
+      "key": "639_CR28",
+      "unstructured": "Akey JM. Constructing genomic maps of positive selection in humans: where do we go from here? Genome Res. 2009;19:711–22.",
+      "volume": "19",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "A Auton",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "journal-title": "Nature",
+      "key": "639_CR29",
+      "unstructured": "Auton A, Brooks LD, Durbin RM, Garrison EP, Kang HM, Korbel JO, et al. A global reference for human genetic variation. Nature. 2015;526:68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ejhg.2016.206",
+      "author": "PL Auer",
+      "doi-asserted-by": "publisher",
+      "first-page": "395",
+      "journal-title": "Eur J Hum Genet",
+      "key": "639_CR30",
+      "unstructured": "Auer PL, Leal SM. From exomes to genomes: challenges and solutions in population-based genetic association studies. Eur J Hum Genet. 2017;25:395–6.",
+      "volume": "25",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1004842",
+      "author": "J Kelleher",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1004842",
+      "journal-title": "PLoS Comput Biol",
+      "key": "639_CR31",
+      "unstructured": "Kelleher J, Etheridge AM, McVean G. Efficient coalescent simulation and genealogical analysis for large sample sizes. PLoS Comput Biol. 2016;12:e1004842.",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003905",
+      "author": "L Excoffier",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1003905",
+      "journal-title": "PLoS Genet",
+      "key": "639_CR32",
+      "unstructured": "Excoffier L, Dupanloup I, Huerta-Sánchez E, Sousa VC, Foll M. Robust demographic inference from genomic and SNP data. PLoS Genet. 2013;9:e1003905.",
+      "volume": "9",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1073/pnas.1310398110",
+      "author": "E Gazave",
+      "doi-asserted-by": "publisher",
+      "first-page": "757",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "639_CR33",
+      "unstructured": "Gazave E, Ma L, Chang D, Coventry A, Gao F, Muzny D, et al. Neutral genomic regions refine models of recent rapid human population growth. Proc Natl Acad Sci USA. 2014;111:757–62.",
+      "volume": "111",
+      "year": "2014"
+    }
+  ],
+  "reference-count": 33,
+  "references-count": 33,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/571752",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-020-0639-3"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "The exhaustive genomic scan approach, with an application to rare-variant association analysis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "28"
+}

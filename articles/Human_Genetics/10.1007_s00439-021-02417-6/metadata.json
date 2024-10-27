@@ -1,0 +1,1151 @@
+{
+  "DOI": "10.1007/s00439-021-02417-6",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-021-02417-6",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eDeep generative models can learn the underlying structure, such as pathways or gene programs, from omics data. We provide an introduction as well as an overview of such techniques, specifically illustrating their use with single-cell gene expression data. For example, the low dimensional latent representations offered by various approaches, such as variational auto-encoders, are useful to get a better understanding of the relations between observed gene expressions and experimental factors or phenotypes. Furthermore, by providing a generative model for the latent and observed variables, deep generative models can generate synthetic observations, which allow us to assess the uncertainty in the learned representations. While deep generative models are useful to learn the structure of high-dimensional omics data by efficiently capturing non-linear dependencies between genes, they are sometimes difficult to interpret due to their neural network building blocks. More precisely, to understand the relationship between learned latent variables and observed variables, e.g., gene transcript abundances and external phenotypes, is difficult. Therefore, we also illustrate current approaches that allow us to infer the relationship between learned latent variables and observed variables as well as external phenotypes. Thereby, we render deep learning approaches more interpretable. In an application with single-cell gene expression data, we demonstrate the utility of the discussed methods.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2417"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "14 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "6 August 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "6 January 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-7284-2085",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Treppner",
+      "given": "Martin",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Binder",
+      "given": "Harald",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hess",
+      "given": "Moritz",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        6
+      ]
+    ],
+    "date-time": "2022-01-06T03:02:28Z",
+    "timestamp": 1641438148000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        5
+      ]
+    ],
+    "date-time": "2022-11-05T23:05:30Z",
+    "timestamp": 1667689530000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001659",
+      "award": [
+        "322977937",
+        "431984000"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    },
+    {
+      "DOI": "10.13039/501100002347",
+      "award": [
+        "031L0250A"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Bundesministerium für Bildung und Forschung"
+    },
+    {
+      "name": "Albert-Ludwigs-Universität Freiburg im Breisgau"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        12
+      ]
+    ],
+    "date-time": "2024-01-12T03:50:24Z",
+    "timestamp": 1705031424717
+  },
+  "is-referenced-by-count": 8,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "9",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        6
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            6
+          ]
+        ],
+        "date-time": "2022-01-06T00:00:00Z",
+        "timestamp": 1641427200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            6
+          ]
+        ],
+        "date-time": "2022-01-06T00:00:00Z",
+        "timestamp": 1641427200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02417-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-021-02417-6/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02417-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1481-1498",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        6
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        6
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1126/sciadv.aba1983",
+      "author": "TS Adams",
+      "doi-asserted-by": "publisher",
+      "first-page": "eaba1983",
+      "issue": "28",
+      "journal-title": "Science Adv",
+      "key": "2417_CR1",
+      "unstructured": "Adams TS, Schupp JC, Poli S, Ayaub EA, Neumark N, Ahangari F, Chu SG, Raby BA, DeIuliis G, Januszyk M et al (2020) Single-cell rna-seq reveals ectopic and aberrant lung-resident cell populations in idiopathic pulmonary fibrosis. Science Adv 6(28):eaba1983",
+      "volume": "6",
+      "year": "2020"
+    },
+    {
+      "key": "2417_CR2",
+      "unstructured": "Arjovsky, M., Chintala, S. and Bottou, L. (2017) ,Wasserstein GAN, arXiv preprint arXiv:1701.07875"
+    },
+    {
+      "DOI": "10.1016/j.tig.2020.03.005",
+      "author": "CB Azodi",
+      "doi-asserted-by": "publisher",
+      "first-page": "442",
+      "issue": "6",
+      "journal-title": "Trends Genetics",
+      "key": "2417_CR3",
+      "unstructured": "Azodi CB, Tang J, Shiu S-H (2020) Opening the black box: interpretable machine learning for geneticists. Trends Genetics 36(6):442–455",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0130140",
+      "author": "S Bach",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0130140",
+      "issue": "7",
+      "journal-title": "PloS One",
+      "key": "2417_CR4",
+      "unstructured": "Bach S, Binder A, Montavon G, Klauschen F, Müller K-R, Samek W (2015) On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. PloS One 10(7):e0130140",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1534/genetics.118.301298",
+      "author": "P Bellot",
+      "doi-asserted-by": "publisher",
+      "first-page": "809",
+      "issue": "3",
+      "journal-title": "Genetics",
+      "key": "2417_CR5",
+      "unstructured": "Bellot P, de Los Campos G, Pérez-Enciso M (2018) Can deep learning improve genomic prediction of complex human traits? Genetics 210(3):809–819",
+      "volume": "210",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1080/01621459.2017.1285773",
+      "author": "DM Blei",
+      "doi-asserted-by": "publisher",
+      "first-page": "859",
+      "issue": "518",
+      "journal-title": "J Am stat Assoc",
+      "key": "2417_CR6",
+      "unstructured": "Blei DM, Kucukelbir A, McAuliffe JD (2017) Variational inference: a review for statisticians. J Am stat Assoc 112(518):859–877",
+      "volume": "112",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/978-3-642-35289-8_25",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR7",
+      "unstructured": "Bottou L (2012) Stochastic gradient descent tricks. In: Neural networks: tricks of the trade. Springer, pp 421–436"
+    },
+    {
+      "DOI": "10.1101/794289",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR8",
+      "unstructured": "Boyeau P, Lopez R, Regier J, Gayoso A, Jordan MI, Yosef N (2019) ,Deep generative models for detecting differential expression in single cells, bioRxiv p 794289"
+    },
+    {
+      "DOI": "10.1038/s41587-021-00875-x",
+      "author": "J Breda",
+      "doi-asserted-by": "publisher",
+      "first-page": "1008",
+      "journal-title": "Nat Biotech",
+      "key": "2417_CR9",
+      "unstructured": "Breda J, Zavolan M, van Nimwegen E (2021) Bayesian inference of gene expression states from single-cell rna-seq data. Nat Biotech 39:1008–1016",
+      "volume": "39",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "issue": "1",
+      "journal-title": "Mach Learn",
+      "key": "2417_CR10",
+      "unstructured": "Breiman L (2001) Random forests. Mach Learn 45(1):5–32",
+      "volume": "45",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1073/pnas.0308531101",
+      "author": "J-P Brunet",
+      "doi-asserted-by": "publisher",
+      "first-page": "4164",
+      "issue": "12",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "2417_CR11",
+      "unstructured": "Brunet J-P, Tamayo P, Golub TR, Mesirov JP (2004) Metagenes and molecular pattern discovery using matrix factorization. Proc Natl Acad Sci 101(12):4164–4169",
+      "volume": "101",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1002822",
+      "author": "WS Bush",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1002822",
+      "issue": "12",
+      "journal-title": "PLoS Comput Biol",
+      "key": "2417_CR12",
+      "unstructured": "Bush WS, Moore JH (2012) Genome-wide association studies. PLoS Comput Biol 8(12):e1002822",
+      "volume": "8",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s13073-021-00845-7",
+      "author": "H Chereda",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Med",
+      "key": "2417_CR13",
+      "unstructured": "Chereda H, Bleckmann A, Menck K, Perera-Bel J, Stegmaier P, Auer F, Kramer F, Leha A, Beißbarth T (2021) Explaining decisions of graph convolutional neural networks: patient-specific molecular subnetworks responsible for metastasis prediction in breast cancer. Genome Med 13(1):1–16",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/2021.01.20.427401",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR14",
+      "unstructured": "Cuomo AS, Alvari G, Azodi CB, McCarthy DJ, Bonder MJ et al (2021) Optimising expression quantitative trait locus mapping workflows for single-cell studies, bioRxiv"
+    },
+    {
+      "author": "AP Dempster",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "J Roy Stat Soc: Series B (Methodological)",
+      "key": "2417_CR15",
+      "unstructured": "Dempster AP, Laird NM, Rubin DB (1977) Maximum likelihood from incomplete data via the em algorithm. J Roy Stat Soc: Series B (Methodological) 39(1):1–22",
+      "volume": "39",
+      "year": "1977"
+    },
+    {
+      "DOI": "10.1038/s41467-018-04368-5",
+      "author": "J Ding",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "2417_CR16",
+      "unstructured": "Ding J, Condon A, Shah SP (2018) Interpretable dimensionality reduction of single cell transcriptome data with deep generative models. Nat Commun 9(1):1–13",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/2021.04.28.441833",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR17",
+      "unstructured": "Gayoso A, Lopez R, Xing G, Boyeau P, Wu K, Jayasuriya M, Melhman E, Langevin M, Liu Y, Samaran J, Misrachi G, Nazaret A, Clivio O, Xu C, Ashuach T, Lotfollahi M, Svensson V, Beltrame EdV, Talavera-López C, Pachter L, Theis FJ, Streets A, Jordan MI, Regier J, Yosef N (2021) scvi-tools: a library for deep probabilistic analysis of single-cell omics data, bioRxiv"
+    },
+    {
+      "DOI": "10.1016/j.tig.2008.06.001",
+      "author": "Y Gilad",
+      "doi-asserted-by": "publisher",
+      "first-page": "408",
+      "issue": "8",
+      "journal-title": "Trends Genetics",
+      "key": "2417_CR18",
+      "unstructured": "Gilad Y, Rifkin SA, Pritchard JK (2008) Revealing the architecture of gene regulation: the promise of eqtl studies. Trends Genetics 24(8):408–415",
+      "volume": "24",
+      "year": "2008"
+    },
+    {
+      "author": "I Goodfellow",
+      "key": "2417_CR19",
+      "unstructured": "Goodfellow I, Bengio Y, Courville A, Bengio Y (2016) Deep learning, vol 1. MIT press, Cambridge",
+      "volume-title": "Deep learning",
+      "year": "2016"
+    },
+    {
+      "key": "2417_CR20",
+      "unstructured": "Goodfellow IJ, Pouget-Abadie J, Mirza M, Xu B, Warde-Farley, D, Ozair S, Courville A, Bengio Y (2014) Generative adversarial networks, arXiv preprint arXiv:1406.2661"
+    },
+    {
+      "DOI": "10.1126/sciadv.abc5464",
+      "author": "KW Govek",
+      "doi-asserted-by": "publisher",
+      "first-page": "eabc5464",
+      "issue": "10",
+      "journal-title": "Sci Adv",
+      "key": "2417_CR21",
+      "unstructured": "Govek KW, Troisi EC, Miao Z, Aubin RG, Woodhouse S, Camara PG (2021) Single-cell transcriptomic analysis of mihc images via antigen mapping. Sci Adv 7(10):eabc5464",
+      "volume": "7",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nmeth.2930",
+      "author": "D Grün",
+      "doi-asserted-by": "publisher",
+      "first-page": "637",
+      "issue": "6",
+      "journal-title": "Nat Methods",
+      "key": "2417_CR22",
+      "unstructured": "Grün D, Kester L, Van Oudenaarden A (2014) Validation of noise models for single-cell transcriptomics. Nat Methods 11(6):637–640",
+      "volume": "11",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1101/2021.03.24.435852",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR23",
+      "unstructured": "Gupta A, Shamsi F, Altemose N, Dorlhiac GF, Cypess AM, White AP, Patti ME, Tseng YH, Streets AM. (2021) Characterization of transcript enrichment and detection bias in single-nuclei rna-seq for mapping of distinct human adipocyte lineages. bioRxiv"
+    },
+    {
+      "DOI": "10.1101/2021.01.28.428664",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR24",
+      "unstructured": "Gut G, Stark SG, Rätsch G, Davidson NR (2021) pmvae: learning interpretable single-cell representations with pathway modules. bioRxiv"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa623",
+      "author": "M Hess",
+      "doi-asserted-by": "publisher",
+      "first-page": "5045",
+      "issue": "20",
+      "journal-title": "Bioinformatics",
+      "key": "2417_CR25",
+      "unstructured": "Hess M, Hackenberg M, Binder H (2020) Exploring generative deep learning for omics data using log-linear models. Bioinformatics 36(20):5045–5053",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxx053",
+      "author": "SC Hicks",
+      "doi-asserted-by": "publisher",
+      "first-page": "562",
+      "issue": "4",
+      "journal-title": "Biostatistics",
+      "key": "2417_CR26",
+      "unstructured": "Hicks SC, Townes FW, Teng M, Irizarry RA (2018) Missing data and technical variability in single-cell rna-sequencing experiments. Biostatistics 19(4):562–578",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "key": "2417_CR27",
+      "unstructured": "Higgins I, Matthey, L, Pal, A, Burgess C, Glorot X, Botvinick M, Mohamed S, Lerchner A. (2016) beta-vae: Learning basic visual concepts with a constrained variational framework"
+    },
+    {
+      "DOI": "10.1017/CBO9780511973420",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR28",
+      "unstructured": "Hilbe JM (2011) Negative binomial regression. Cambridge University Press"
+    },
+    {
+      "DOI": "10.1126/science.1127647",
+      "author": "GE Hinton",
+      "doi-asserted-by": "publisher",
+      "first-page": "504",
+      "issue": "5786",
+      "journal-title": "Science",
+      "key": "2417_CR29",
+      "unstructured": "Hinton GE, Salakhutdinov RR (2006) Reducing the dimensionality of data with neural networks. Science 313(5786):504–507",
+      "volume": "313",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/0893-6080(89)90020-8",
+      "author": "K Hornik",
+      "doi-asserted-by": "publisher",
+      "first-page": "359",
+      "issue": "5",
+      "journal-title": "Neural Netw",
+      "key": "2417_CR30",
+      "unstructured": "Hornik K, Stinchcombe M, White H et al (1989) Multilayer feedforward networks are universal approximators. Neural Netw 2(5):359–366",
+      "volume": "2",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1038/s41598-019-56847-4",
+      "author": "Y Hu",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "2417_CR31",
+      "unstructured": "Hu Y, Ranganathan M, Shu C, Liang X, Ganesh S, Osafo-Addo A, Yan C, Zhang X, Aouizerat BE, Krystal JH et al (2020) Single-cell transcriptome mapping identifies common and cell-type specific genes affected by acute delta9-tetrahydrocannabinol in humans. Sci Rep 10(1):1–14",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "author": "B Jassal",
+      "first-page": "D498",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2417_CR32",
+      "unstructured": "Jassal B, Matthews L, Viteri G, Gong C, Lorente P, Fabregat A, Sidiropoulos K, Cook J, Gillespie M, Haw R et al (2020) The reactome pathway knowledgebase. Nucleic Acids Res 48(D1):D498–D503",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ncomms9687",
+      "author": "JK Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nature Commun",
+      "key": "2417_CR33",
+      "unstructured": "Kim JK, Kolodziejczyk AA, Ilicic T, Teichmann SA, Marioni JC (2015) Characterizing noise structure in single-cell rna-seq distinguishes genuine from technical stochastic allelic expression. Nat Commun 6(1):1–9",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa462",
+      "author": "S Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "i389",
+      "issue": "Suppl 1",
+      "journal-title": "Bioinformatics",
+      "key": "2417_CR34",
+      "unstructured": "Kim S, Kim K, Choe J, Lee I, Kang J (2020) Improved survival analysis by learning shared genomic information from pan-cancer data. Bioinformatics 36(Suppl 1):i389–i398",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12859-019-2952-9",
+      "author": "S Kinalis",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "BMC Bioinformatics",
+      "key": "2417_CR35",
+      "unstructured": "Kinalis S, Nielsen FC, Winther O, Bagger FO (2019) Deconvolution of autoencoders to learn biological regulatory modules from single cell mrna sequencing data. BMC Bioinformatics 20(1):1–9",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "key": "2417_CR36",
+      "unstructured": "Kingma DP, Welling M (2013) Auto-encoding variational Bayes. arXiv preprint arXiv:1312.6114"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2015.04.005",
+      "author": "AA Kolodziejczyk",
+      "doi-asserted-by": "publisher",
+      "first-page": "610",
+      "issue": "4",
+      "journal-title": "Mol Cell",
+      "key": "2417_CR37",
+      "unstructured": "Kolodziejczyk AA, Kim JK, Svensson V, Marioni JC, Teichmann SA (2015) The technology and biology of single-cell rna sequencing. Mol Cell 58(4):610–620",
+      "volume": "58",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1214/aoms/1177729694",
+      "author": "S Kullback",
+      "doi-asserted-by": "publisher",
+      "first-page": "79",
+      "issue": "1",
+      "journal-title": "Ann Math stat",
+      "key": "2417_CR38",
+      "unstructured": "Kullback S, Leibler RA (1951) On information and sufficiency. Ann Math stat 22(1):79–86",
+      "volume": "22",
+      "year": "1951"
+    },
+    {
+      "DOI": "10.1101/2021.02.01.429169",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR39",
+      "unstructured": "Kuruc F, Binder H, Hess M (2021) Stratified neural networks in a time-to-event setting. bioRxiv"
+    },
+    {
+      "DOI": "10.24963/ijcai.2019/388",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR40",
+      "unstructured": "Laugel T, Lesot M-J, Marsala C, Renard X, Detyniecki M (2019) The dangers of post-hoc interpretability: unjustified counterfactual explanations arXiv preprint arXiv:1907.09294"
+    },
+    {
+      "DOI": "10.1038/44565",
+      "author": "DD Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "788",
+      "issue": "6755",
+      "journal-title": "Nature",
+      "key": "2417_CR41",
+      "unstructured": "Lee DD, Seung HS (1999) Learning the parts of objects by non-negative matrix factorization. Nature 401(6755):788–791",
+      "volume": "401",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1186/s12859-020-3465-2",
+      "author": "A Lemsara",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Bioinformatics",
+      "key": "2417_CR42",
+      "unstructured": "Lemsara A, Ouadfel S, Fröhlich H (2020) Pathme: pathway based multi-modal sparse autoencoders for clustering of patient-level multi-omics data. BMC Bioinformatics 21:1–20",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.15252/msb.20199198",
+      "author": "R Lopez",
+      "doi-asserted-by": "publisher",
+      "first-page": "e9198",
+      "issue": "9",
+      "journal-title": "Mol Syst Biol",
+      "key": "2417_CR43",
+      "unstructured": "Lopez R, Gayoso A, Yosef N (2020) Enhancing scientific discoveries in molecular biology with deep generative models. Mol Syst Biol 16(9):e9198",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41592-018-0229-2",
+      "author": "R Lopez",
+      "doi-asserted-by": "publisher",
+      "first-page": "1053",
+      "issue": "12",
+      "journal-title": "Nat Methods",
+      "key": "2417_CR44",
+      "unstructured": "Lopez R, Regier J, Cole MB, Jordan MI, Yosef N (2018) Deep generative modeling for single-cell transcriptomics. Nat Methods 15(12):1053–1058",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/2021.04.14.439903",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR45",
+      "unstructured": "Lotfollahi M, Klimovskaia A, De Donno C, Ji Y, Ibarra IL, Wolf FA, Yakubova N, Theis FJ, Lopez-Paz D (2021) Compositional perturbation autoencoder for single-cell response modeling. bioRxiv"
+    },
+    {
+      "DOI": "10.1038/s41592-019-0494-8",
+      "author": "M Lotfollahi",
+      "doi-asserted-by": "publisher",
+      "first-page": "715",
+      "issue": "8",
+      "journal-title": "Nat Methods",
+      "key": "2417_CR46",
+      "unstructured": "Lotfollahi M, Wolf FA, Theis FJ (2019) scgen predicts single-cell perturbation responses. Nat Methods 16(8):715–721",
+      "volume": "16",
+      "year": "2019"
+    },
+    {
+      "key": "2417_CR47",
+      "unstructured": "Louizos C, Shalit U, Mooij, J, Sontag D, Zemel R, Welling M. (2017) Causal effect inference with deep latent-variable models. arXiv preprint arXiv:1705.08821"
+    },
+    {
+      "DOI": "10.1038/s42256-019-0138-9",
+      "author": "SM Lundberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "issue": "1",
+      "journal-title": "Nat Mach Intell",
+      "key": "2417_CR48",
+      "unstructured": "Lundberg SM, Erion G, Chen H, DeGrave A, Prutkin JM, Nair B, Katz R, Himmelfarb J, Bansal N, Lee S-I (2020) From local explanations to global understanding with explainable ai for trees. Nat Mach Intell 2(1):56–67",
+      "volume": "2",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41551-018-0304-0",
+      "author": "SM Lundberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "749",
+      "issue": "10",
+      "journal-title": "Nat Biomed Eng",
+      "key": "2417_CR49",
+      "unstructured": "Lundberg SM, Nair B, Vavilala MS, Horibe M, Eisses MJ, Adams T, Liston DE, Low DK-W, Newman S-F, Kim J et al (2018) Explainable machine-learning predictions for the prevention of hypoxaemia during surgery. Nat Biomed Eng 2(10):749–760",
+      "volume": "2",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-020-19365-w",
+      "author": "I Mandric",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "2417_CR50",
+      "unstructured": "Mandric I, Schwarz T, Majumdar A, Hou K, Briscoe L, Perez R, Subramaniam M, Hafemeister C, Satija R, Ye CJ et al (2020) Optimized design of single-cell rna sequencing experiments for cell-type-specific eqtl analysis. Nat Commun 11(1):1–9",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "key": "2417_CR51",
+      "unstructured": "Märtens K, Yau C (2020) Neural decomposition: Functional anova with variational autoencoders, in International Conference on Artificial Intelligence and Statistics, PMLR, pp 2917–2927"
+    },
+    {
+      "key": "2417_CR52",
+      "unstructured": "Molnar C (2020) Interpretable machine learning. Lulu.com"
+    },
+    {
+      "DOI": "10.1109/IJCNN.2018.8489048",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR53",
+      "unstructured": "Montaez CAC, Fergus P, Montaez AC, Hussain A, Al-Jumeily D, Chalmers C (2018) Deep learning classification of polygenic obesity using genome wide association study snps, In 2018 International Joint Conference on Neural Networks (IJCNN), IEEE, pp 1–8"
+    },
+    {
+      "DOI": "10.1016/j.patcog.2016.11.008",
+      "author": "G Montavon",
+      "doi-asserted-by": "publisher",
+      "first-page": "211",
+      "journal-title": "Pattern Recogn",
+      "key": "2417_CR54",
+      "unstructured": "Montavon G, Lapuschkin S, Binder A, Samek W, Müller K-R (2017) Explaining nonlinear classification decisions with deep Taylor decomposition. Pattern Recogn 65:211–222",
+      "volume": "65",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.dsp.2017.10.011",
+      "author": "G Montavon",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Dig Signal Process",
+      "key": "2417_CR55",
+      "unstructured": "Montavon G, Samek W, Müller K-R (2018) Methods for interpreting and understanding deep neural networks. Dig Signal Process 73:1–15",
+      "volume": "73",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1073/pnas.1900654116",
+      "author": "WJ Murdoch",
+      "doi-asserted-by": "publisher",
+      "first-page": "22071",
+      "issue": "44",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "2417_CR56",
+      "unstructured": "Murdoch WJ, Singh C, Kumbier K, Abbasi-Asl R, Yu B (2019) Definitions, methods, and applications in interpretable machine learning. Proc Natl Acad Sci 116(44):22071–22080",
+      "volume": "116",
+      "year": "2019"
+    },
+    {
+      "key": "2417_CR57",
+      "unstructured": "Murphy KP (2022) Probabilistic machine learning: an introduction. MIT press. probml.ai"
+    },
+    {
+      "DOI": "10.1101/2020.06.11.147058",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR58",
+      "unstructured": "Nußberger J, Boesel F, Lenz S, Binder H, Hess M (2020) Synthetic observations from deep generative models and binary omics data with limited sample size. Briefings in bioinformatics, p bbaa226"
+    },
+    {
+      "key": "2417_CR59",
+      "unstructured": "Parbhoo S, Wieser M, Wieczorek A, Roth V (2018) Cause-effect deep information bottleneck for systematically missing covariates, arXiv preprint arXiv:1807.02326"
+    },
+    {
+      "DOI": "10.1126/science.abc1944",
+      "author": "JJ Quinn",
+      "doi-asserted-by": "publisher",
+      "first-page": "eabc1944",
+      "issue": "6532",
+      "journal-title": "Science",
+      "key": "2417_CR60",
+      "unstructured": "Quinn JJ, Jones MG, Okimoto RA, Nanjo S, Chan MM, Yosef N, Bivona TG, Weissman JS (2021) Single-cell lineages reveal the rates, routes, and drivers of metastasis in cancer xenografts. Science 371(6532):eabc1944",
+      "volume": "371",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13059-020-02128-7",
+      "author": "F Raimundo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "2417_CR61",
+      "unstructured": "Raimundo F, Vallot C, Vert J-P (2020) Tuning parameters of dimensionality reduction methods for single-cell rna-seq analysis. Genome Biol 21(1):1–17",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1142/9789814447331_0043",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR62",
+      "unstructured": "Raychaudhuri S, Stuart JM, Altman RB (1999) Principal components analysis to summarize microarray experiments: application to sporulation time series, in Biocomputing 2000. World Scientific pp 455–466"
+    },
+    {
+      "key": "2417_CR63",
+      "unstructured": "Resnik P, Hardisty E (2010) Gibbs sampling for the uninitiated, Technical report. Maryland Univ College Park Inst for Advanced Computer Studies"
+    },
+    {
+      "DOI": "10.1145/2939672.2939778",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR64",
+      "unstructured": "Ribeiro MT, Singh S, Guestrin C (2016) ”Why should i trust you?” explaining the predictions of any classifier, In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp 1135–1144"
+    },
+    {
+      "DOI": "10.1038/s41592-018-0138-4",
+      "author": "AJ Riesselman",
+      "doi-asserted-by": "publisher",
+      "first-page": "816",
+      "issue": "10",
+      "journal-title": "Nature Methods",
+      "key": "2417_CR65",
+      "unstructured": "Riesselman AJ, Ingraham JB, Marks DS (2018) Deep generative models of genetic variation capture the effects of mutations. Nat Methods 15(10):816–822",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/323533a0",
+      "author": "DE Rumelhart",
+      "doi-asserted-by": "publisher",
+      "first-page": "533",
+      "issue": "6088",
+      "journal-title": "Nature",
+      "key": "2417_CR66",
+      "unstructured": "Rumelhart DE, Hinton GE, Williams RJ (1986) Learning representations by back-propagating errors. Nature 323(6088):533–536",
+      "volume": "323",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1101/2020.12.02.401182",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR67",
+      "unstructured": "Rybakov S, Lotfollahi M, Theis FJ, Wolf FA (2020) Learning interpretable latent autoencoder representations with annotations of feature sets. bioRxiv"
+    },
+    {
+      "key": "2417_CR68",
+      "unstructured": "Salakhutdinov R, Hinton G (2009) Deep boltzmann machines, In Artificial intelligence and statistics. PMLR pp 448–455"
+    },
+    {
+      "DOI": "10.1109/JPROC.2021.3060483",
+      "author": "W Samek",
+      "doi-asserted-by": "publisher",
+      "first-page": "247",
+      "issue": "3",
+      "journal-title": "Proc IEEE",
+      "key": "2417_CR69",
+      "unstructured": "Samek W, Montavon G, Lapuschkin S, Anders CJ, Müller K-R (2021) Explaining deep neural networks and beyond: a review of methods and applications. Proc IEEE 109(3):247–278",
+      "volume": "109",
+      "year": "2021"
+    },
+    {
+      "key": "2417_CR70",
+      "unstructured": "Schockaert C, Macher V, Schmitz A (2020) VAE-LIME: deep generative model based approach for local data-driven model interpretability applied to the ironmaking industry. arXiv preprint. arXiv:2007.10256"
+    },
+    {
+      "DOI": "10.1016/j.csbj.2020.09.014",
+      "author": "JD Silverman",
+      "doi-asserted-by": "publisher",
+      "first-page": "2789",
+      "journal-title": "Comput Struct Biotechnol J",
+      "key": "2417_CR71",
+      "unstructured": "Silverman JD, Roche K, Mukherjee S, David LA (2020) Naught all zeros in sequence count data are the same. Comput Struct Biotechnol J 18:2789–2798",
+      "volume": "18",
+      "year": "2020"
+    },
+    {
+      "author": "N Srivastava",
+      "first-page": "1929",
+      "issue": "1",
+      "journal-title": "J Mach Learn Res",
+      "key": "2417_CR72",
+      "unstructured": "Srivastava N, Hinton G, Krizhevsky A, Sutskever I, Salakhutdinov R (2014) Dropout: a simple way to prevent neural networks from overfitting. J Mach Learn Res 15(1):1929–1958",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1000770",
+      "author": "O Stegle",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1000770",
+      "issue": "5",
+      "journal-title": "PLoS Comput Biol",
+      "key": "2417_CR73",
+      "unstructured": "Stegle O, Parts L, Durbin R, Winn J (2010) A Bayesian framework to account for complex non-genetic factors in gene expression levels greatly increases power in eqtl studies. PLoS Comput Biol 6(5):e1000770",
+      "volume": "6",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.05.031",
+      "author": "T Stuart",
+      "doi-asserted-by": "publisher",
+      "first-page": "1888",
+      "journal-title": "Cell",
+      "key": "2417_CR74",
+      "unstructured": "Stuart T, Butler A, Hoffman P, Hafemeister C, Papalexi E, Mauck WM III, Hao Y, Stoeckius M, Smibert P, Satija R (2019) Comprehensive integration of single-cell data. Cell 177:1888–1902. https://doi.org/10.1016/j.cell.2019.05.031",
+      "volume": "177",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature10354",
+      "author": "K Suhre",
+      "doi-asserted-by": "publisher",
+      "first-page": "54",
+      "issue": "7362",
+      "journal-title": "Nature",
+      "key": "2417_CR75",
+      "unstructured": "Suhre K, Shin S-Y, Petersen A-K, Mohney RP, Meredith D, Wägele B, Altmaier E, Deloukas P, Erdmann J, Grundberg E et al (2011) Human metabolic individuality in biomedical and pharmaceutical research. Nature 477(7362):54–60",
+      "volume": "477",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/s41587-019-0379-5",
+      "author": "V Svensson",
+      "doi-asserted-by": "publisher",
+      "first-page": "147",
+      "issue": "2",
+      "journal-title": "Nat Biotech",
+      "key": "2417_CR76",
+      "unstructured": "Svensson V (2020) Droplet scrna-seq is not zero-inflated. Nat Biotech 38(2):147–150",
+      "volume": "38",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa169",
+      "author": "V Svensson",
+      "doi-asserted-by": "publisher",
+      "first-page": "3418",
+      "issue": "11",
+      "journal-title": "Bioinformatics",
+      "key": "2417_CR77",
+      "unstructured": "Svensson V, Gayoso A, Yosef N, Pachter L (2020a) Interpretable factor models of single-cell rna-seq via variational autoencoders. Bioinformatics 36(11):3418–3421",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa169",
+      "author": "V Svensson",
+      "doi-asserted-by": "publisher",
+      "first-page": "3418",
+      "issue": "11",
+      "journal-title": "Bioinformatics",
+      "key": "2417_CR78",
+      "unstructured": "Svensson V, Gayoso A, Yosef N, Pachter L (2020b) Interpretable factor models of single-cell rna-seq via variational autoencoders. Bioinformatics 36(11):3418–3421. https://doi.org/10.1093/bioinformatics/btaa169",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13059-019-1861-6",
+      "author": "FW Townes",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "2417_CR79",
+      "unstructured": "Townes FW, Hicks SC, Aryee MJ, Irizarry RA (2019) Feature selection and dimension reduction for single-cell rna-seq based on a multinomial model. Genome Biol 20(1):1–16",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41598-021-88875-4",
+      "author": "M Treppner",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "2417_CR80",
+      "unstructured": "Treppner M, Salas-Bastos A, Hess M, Lenz S, Vogel T, Binder H (2021) Synthetic single cell rna sequencing data from small pilot studies using deep generative models. Sci Rep 11(1):1–11",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "author": "L Van der Maaten",
+      "first-page": "2579",
+      "issue": "2605",
+      "journal-title": "J Mach Learn Res",
+      "key": "2417_CR81",
+      "unstructured": "Van der Maaten L, Hinton G (2008) Visualizing data using t-sne. J Mach Learn Res 9(2605):2579–2605",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "author": "L Van Der Maaten",
+      "first-page": "13",
+      "issue": "66–71",
+      "journal-title": "J Mach Learn Res",
+      "key": "2417_CR82",
+      "unstructured": "Van Der Maaten L, Postma E, Van den Herik J (2009) Dimensionality reduction: a comparative. J Mach Learn Res 10(66–71):13",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1145/1390156.1390294",
+      "doi-asserted-by": "crossref",
+      "key": "2417_CR83",
+      "unstructured": "Vincent P, Larochelle H, Bengio Y, Manzagol P-A (2008) Extracting and composing robust features with denoising autoencoders, In Proceedings of the 25th International Conference on Machine Learning, pp 1096–1103"
+    },
+    {
+      "DOI": "10.1073/pnas.1721085115",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "E6437",
+      "issue": "28",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "2417_CR84",
+      "unstructured": "Wang J, Huang M, Torre E, Dueck H, Shaffer S, Murray J, Raj A, Li M, Zhang NR (2018) Gene expression distribution deconvolution in single-cell rna sequencing. Proc Natl Acad Sci 115(28):E6437–E6446",
+      "volume": "115",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13059-017-1382-0",
+      "author": "FA Wolf",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "2417_CR85",
+      "unstructured": "Wolf FA, Angerer P, Theis FJ (2018) Scanpy: large-scale single-cell gene expression data analysis. Genome Biol 19(1):1–5",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.15252/msb.20209620",
+      "author": "C Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e9620",
+      "issue": "1",
+      "journal-title": "Mol Syst Biol",
+      "key": "2417_CR86",
+      "unstructured": "Xu C, Lopez R, Mehlman E, Regier J, Jordan MI, Yosef N (2021) Probabilistic harmonization and annotation of single-cell transcriptomics data with deep generative models. Mol Syst Biol 17(1):e9620",
+      "volume": "17",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa506",
+      "author": "Y Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e85",
+      "issue": "15",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2417_CR87",
+      "unstructured": "Xu Y, Zhang Z, You L, Liu J, Fan Z, Zhou X (2020) scigans: single-cell rna-seq imputation using generative adversarial networks. Nucleic Acids Res 48(15):e85–e85",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt075",
+      "author": "C Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1026",
+      "issue": "8",
+      "journal-title": "Bioinformatics",
+      "key": "2417_CR88",
+      "unstructured": "Yang C, Wang L, Zhang S, Zhao H (2013) Accounting for non-genetic factors by low-rank representation and sparse regression for eqtl mapping. Bioinformatics 29(8):1026–1034",
+      "volume": "29",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/s13059-021-02373-4",
+      "author": "H Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "2417_CR89",
+      "unstructured": "Yu H, Welch JD (2021) Michigan: sampling from disentangled representations of single-cell data using generative adversarial networks. Genome Biol 22(1):1–26",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ncomms14049",
+      "author": "GX Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "2417_CR90",
+      "unstructured": "Zheng GX, Terry JM, Belgrader P, Ryvkin P, Bent ZW, Wilson R, Ziraldo SB, Wheeler TD, McDermott GP, Zhu J et al (2017) Massively parallel digital transcriptional profiling of single cells. Nat Commun 8(1):1–12",
+      "volume": "8",
+      "year": "2017"
+    }
+  ],
+  "reference-count": 90,
+  "references-count": 90,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-021-02417-6"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Interpretable generative deep learning: an illustration with single cell gene expression data"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "141"
+}

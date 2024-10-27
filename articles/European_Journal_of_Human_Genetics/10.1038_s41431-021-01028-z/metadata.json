@@ -1,0 +1,712 @@
+{
+  "DOI": "10.1038/s41431-021-01028-z",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-021-01028-z",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThere is growing interest in the clinical application of polygenic scores as their predictive utility increases for a range of health-related phenotypes. However, providing polygenic score predictions on the absolute scale is an important step for their safe interpretation. We have developed a method to convert polygenic scores to the absolute scale for binary and normally distributed phenotypes. This method uses summary statistics, requiring only the area-under-the-ROC curve (AUC) or variance explained (\u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003e) by the polygenic score, and the prevalence of binary phenotypes, or mean and standard deviation of normally distributed phenotypes. Polygenic scores are converted using normal distribution theory. We also evaluate methods for estimating polygenic score AUC/\u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003efrom genome-wide association study (GWAS) summary statistics alone. We validate the absolute risk conversion and AUC/\u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003eestimation using data for eight binary and three continuous phenotypes in the UK Biobank sample. When the AUC/\u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003eof the polygenic score is known, the observed and estimated absolute values were highly concordant. Estimates of AUC/\u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003efrom the lassosum pseudovalidation method were most similar to the observed AUC/\u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003evalues, though estimated values deviated substantially from the observed for autoimmune disorders. This study enables accurate interpretation of polygenic scores using only summary statistics, providing a useful tool for educational and clinical purposes. Furthermore, we have created interactive webtools implementing the conversion to the absolute (\u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://opain.github.io/GenoPred/PRS_to_Abs_tool.html\"\u003ehttps://opain.github.io/GenoPred/PRS_to_Abs_tool.html\u003c/jats:ext-link\u003e). Several further barriers must be addressed before clinical implementation of polygenic scores, such as ensuring target individuals are well represented by the GWAS sample.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1028"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "16 June 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "16 September 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "9 December 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "4 January 2022"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "CML sits on the Myriad Neuroscience Scientific Advisory Board. The other authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study used data from the UKB, which received ethical approval from the North West—Haydock Research Ethics Committee (reference 16/NW/0274)."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-5680-3281",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Pain",
+      "given": "Oliver",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Gillett",
+      "given": "Alexandra C.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0338-7055",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Austin",
+      "given": "Jehannine C.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0708-9530",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Folkersen",
+      "given": "Lasse",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8249-8476",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Lewis",
+      "given": "Cathryn M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        4
+      ]
+    ],
+    "date-time": "2022-01-04T08:02:57Z",
+    "timestamp": 1641283377000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        21
+      ]
+    ],
+    "date-time": "2023-01-21T18:48:49Z",
+    "timestamp": 1674326929000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000265",
+      "award": [
+        "MR/N015746/1"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "RCUK | Medical Research Council"
+    },
+    {
+      "DOI": "10.13039/501100000272",
+      "doi-asserted-by": "publisher",
+      "name": "DH | National Institute for Health Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        28
+      ]
+    ],
+    "date-time": "2024-04-28T09:48:30Z",
+    "timestamp": 1714297710805
+  },
+  "is-referenced-by-count": 21,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        4
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2022-01-04T00:00:00Z",
+        "timestamp": 1641254400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2022-01-04T00:00:00Z",
+        "timestamp": 1641254400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-01028-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-01028-z",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-01028-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "339-348",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        4
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        4
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        3
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/ng.3285",
+      "author": "TJC Polderman",
+      "doi-asserted-by": "publisher",
+      "first-page": "702",
+      "journal-title": "Nat Genet",
+      "key": "1028_CR1",
+      "unstructured": "Polderman TJC, Benyamin B, de Leeuw CA, Sullivan PF, van Bochoven A, Visscher PM, et al. Meta-analysis of the heritability of human traits based on fifty years of twin studies. Nat Genet. 2015;47:702–9. http://www.ncbi.nlm.nih.gov/pubmed/25985137.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3097",
+      "author": "AR Wood",
+      "doi-asserted-by": "publisher",
+      "first-page": "1173",
+      "journal-title": "Nat Genet",
+      "key": "1028_CR2",
+      "unstructured": "Wood AR, Esko T, Yang J, Vedantam S, Pers TH, Gustafsson S, et al. Defining the role of common variation in the genomic and biological architecture of adult human height. Nat Genet. 2014;46:1173.",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41593-018-0326-7",
+      "author": "DM Howard",
+      "doi-asserted-by": "publisher",
+      "first-page": "343",
+      "journal-title": "Nat Neurosci",
+      "key": "1028_CR3",
+      "unstructured": "Howard DM, Adams MJ, Clarke T-K, Hafferty JD, Gibson J, Shirali M, et al. Genome-wide meta-analysis of depression identifies 102 independent variants and highlights the importance of the prefrontal brain regions. Nat Neurosci. 2019;22:343–52.",
+      "volume": "22",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41596-020-0353-1",
+      "doi-asserted-by": "crossref",
+      "key": "1028_CR4",
+      "unstructured": "Choi SW, Mak TS-H, O’Reilly PF. Tutorial: a guide to performing polygenic risk score analyses. Nat Protoc. 2020;15:1–14."
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009021",
+      "author": "O Pain",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1009021",
+      "journal-title": "PLoS Genet",
+      "key": "1028_CR5",
+      "unstructured": "Pain O, Glanville KP, Hagenaars SP, Selzam S, Fürtjes AE, Gaspar HA, et al. Evaluation of polygenic prediction methodology within a reference-standardized framework. PLoS Genet. 2021;17:e1009021.",
+      "volume": "17",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "author": "AV Khera",
+      "doi-asserted-by": "publisher",
+      "first-page": "1219",
+      "journal-title": "Nat Genet",
+      "key": "1028_CR6",
+      "unstructured": "Khera AV, Chaffin M, Aragam KG, Haas ME, Roselli C, Choi SH, et al. Genome-wide polygenic scores for common diseases identify individuals with risk equivalent to monogenic mutations. Nat Genet. 2018;50:1219–24.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13073-020-00742-5",
+      "author": "CM Lewis",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Med.",
+      "key": "1028_CR7",
+      "unstructured": "Lewis CM, Vassos E. Polygenic risk scores: from research tools to clinical instruments. Genome Med. 2020;12:1–11.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1001/jamapsychiatry.2020.3049",
+      "author": "NR Wray",
+      "doi-asserted-by": "publisher",
+      "first-page": "101",
+      "journal-title": "JAMA Psychiatry",
+      "key": "1028_CR8",
+      "unstructured": "Wray NR, Lin T, Austin J, McGrath JJ, Hickie IB, Murray GK, et al. From basic science to clinical application of polygenic risk scores: a primer. JAMA Psychiatry. 2021;78:101–9.",
+      "volume": "78",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.7326/M14-0295",
+      "author": "DA Zipkin",
+      "doi-asserted-by": "publisher",
+      "first-page": "270",
+      "journal-title": "Ann Intern Med",
+      "key": "1028_CR9",
+      "unstructured": "Zipkin DA, Umscheid CA, Keating NL, Allen E, Aung K, Beyth R, et al. Evidence-based risk communication: a systematic review. Ann Intern Med. 2014;161:270–80.",
+      "volume": "161",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/j.1539-6053.2008.00033.x",
+      "author": "G Gigerenzer",
+      "doi-asserted-by": "publisher",
+      "first-page": "53",
+      "journal-title": "Psychol Sci Public Interest",
+      "key": "1028_CR10",
+      "unstructured": "Gigerenzer G, Gaissmaier W, Kurz-Milcke E, Schwartz LM, Woloshin S. Helping doctors and patients make sense of health statistics. Psychol Sci Public Interest. 2007;8:53–96.",
+      "volume": "8",
+      "year": "2007"
+    },
+    {
+      "key": "1028_CR11",
+      "unstructured": "Furlotte NA, Kleinman A, Smith R, Hinds D. White paper 23-12: estimating complex phenotype prevelance using predictive models. 2015."
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "author": "C Bycroft",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Nature.",
+      "key": "1028_CR12",
+      "unstructured": "Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, et al. The UK Biobank resource with deep phenotyping and genomic data. Nature. 2018;562:203–9.",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3643",
+      "doi-asserted-by": "crossref",
+      "key": "1028_CR13",
+      "unstructured": "McCarthy S, Das S, Kretzschmar W, Delaneau O, Wood AR, Teumer A, et al. A reference panel of 64,976 haplotypes for genotype imputation. Nat Genet. 2016;48:1279–83."
+    },
+    {
+      "DOI": "10.1038/nature14962",
+      "author": "UK10K Consortium.",
+      "doi-asserted-by": "publisher",
+      "first-page": "82",
+      "journal-title": "Nature.",
+      "key": "1028_CR14",
+      "unstructured": "UK10K Consortium. The UK10K project identifies rare variants in health and disease. Nature. 2015;526:82–90.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "author": "CC Chang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Gigascience.",
+      "key": "1028_CR15",
+      "unstructured": "Chang CC, Chow CC, Tellier LCAM, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:1.",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0090-3",
+      "doi-asserted-by": "publisher",
+      "key": "1028_CR16",
+      "unstructured": "Wray NR, Sullivan PF. Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression. bioRxiv. 2017. https://doi.org/10.1038/s41588-018-0090-3."
+    },
+    {
+      "DOI": "10.1126/science.1235488",
+      "doi-asserted-by": "crossref",
+      "key": "1028_CR17",
+      "unstructured": "Rietveld CA, Medland SE, Derringer J, Yang J, Esko T, Martin NW, et al. GWAS of 126,559 individuals identifies genetic variants associated with educational attainment. Science. 2013;340:1235488."
+    },
+    {
+      "DOI": "10.1038/nature14177",
+      "author": "AE Locke",
+      "doi-asserted-by": "publisher",
+      "first-page": "197",
+      "journal-title": "Nature.",
+      "key": "1028_CR18",
+      "unstructured": "Locke AE, Kahali B, Berndt SI, Justice AE, Pers TH, Day FR, et al. Genetic studies of body mass index yield new insights for obesity biology. Nature. 2015;518:197–206.",
+      "volume": "518",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.2337/db16-1253",
+      "author": "RA Scott",
+      "doi-asserted-by": "publisher",
+      "first-page": "2888",
+      "journal-title": "Diabetes.",
+      "key": "1028_CR19",
+      "unstructured": "Scott RA, Scott LJ, Mägi R, Marullo L, Gaulton KJ, Kaakinen M, et al. An expanded genome-wide association study of type 2 diabetes in Europeans. Diabetes. 2017;66:2888–902.",
+      "volume": "66",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3396",
+      "author": "M Nikpay",
+      "doi-asserted-by": "publisher",
+      "first-page": "1121",
+      "journal-title": "Nat Genet",
+      "key": "1028_CR20",
+      "unstructured": "Nikpay M, Goel A, Won H-H, Hall LM, Willenborg C, Kanoni S, et al. A comprehensive 1000 Genomes-based genome-wide association meta-analysis of coronary artery disease. Nat Genet. 2015;47:1121.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3359",
+      "author": "JZ Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "979",
+      "journal-title": "Nat Genet.",
+      "key": "1028_CR21",
+      "unstructured": "Liu JZ, Van Sommeren S, Huang H, Ng SC, Alberts R, Takahashi A, et al. Association analyses identify 38 susceptibility loci for inflammatory bowel disease and highlight shared genetic risk across populations. Nat Genet. 2015;47:979–86.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature10251",
+      "author": "S Sawcer",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "journal-title": "Nature.",
+      "key": "1028_CR22",
+      "unstructured": "Sawcer S, Hellenthal G, Pirinen M, Spencer CCA, Patsopoulos NA, Moutsianas L, et al. Genetic risk and a primary role for cell-mediated immune mechanisms in multiple sclerosis. Nature. 2011;476:214.",
+      "volume": "476",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/nature12873",
+      "author": "Y Okada",
+      "doi-asserted-by": "publisher",
+      "first-page": "376",
+      "journal-title": "Nature.",
+      "key": "1028_CR23",
+      "unstructured": "Okada Y, Wu D, Trynka G, Raj T, Terao C, Ikari K, et al. Genetics of rheumatoid arthritis contributes to biology and drug discovery. Nature. 2014;506:376–81.",
+      "volume": "506",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nature24284",
+      "author": "K Michailidou",
+      "doi-asserted-by": "publisher",
+      "first-page": "92",
+      "journal-title": "Nature.",
+      "key": "1028_CR24",
+      "unstructured": "Michailidou K, Lindström S, Dennis J, Beesley J, Hui S, Kar S, et al. Association analysis identifies 65 new breast cancer risk loci. Nature. 2017;551:92–4.",
+      "volume": "551",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0142-8",
+      "author": "FR Schumacher",
+      "doi-asserted-by": "publisher",
+      "first-page": "928",
+      "journal-title": "Nat Genet",
+      "key": "1028_CR25",
+      "unstructured": "Schumacher FR, Al Olama AA, Berndt SI, Benlloch S, Ahmed M, Saunders EJ, et al. Association analyses of more than 140,000 men identify 63 new prostate cancer susceptibility loci. Nat Genet. 2018;50:928–36.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.03.013",
+      "author": "S Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "679",
+      "journal-title": "Am J Hum Genet",
+      "key": "1028_CR26",
+      "unstructured": "Yang S, Zhou X. Accurate and scalable construction of polygenic scores in large biobank data sets. Am J Hum Genet. 2020;106:679–93.",
+      "volume": "106",
+      "year": "2020"
+    },
+    {
+      "key": "1028_CR27",
+      "unstructured": "R Core Team. R: A Language and Environment for Statistical Computing [Internet]. Vienna, Austria: R Core Team; 2015. http://www.r-project.org."
+    },
+    {
+      "key": "1028_CR28",
+      "unstructured": "Wilhelm S, Manjunath GB. tmvtnorm: Truncated Multivariate Normal and Student t Distribution. 2015."
+    },
+    {
+      "DOI": "10.1002/gepi.22050",
+      "author": "TSH Mak",
+      "doi-asserted-by": "publisher",
+      "first-page": "469",
+      "journal-title": "Genet Epidemiol",
+      "key": "1028_CR29",
+      "unstructured": "Mak TSH, Porsch RM, Choi SW, Zhou X, Sham PC. Polygenic scores via penalized regression on summary statistics. Genet Epidemiol. 2017;41:469–80.",
+      "volume": "41",
+      "year": "2017"
+    },
+    {
+      "key": "1028_CR30",
+      "unstructured": "Aaron B, Kromrey JD, Ferron J. Equating “r”-based and “d”-based effect size indices: problems with a commonly recommended formula. ERIC Clearinghouse. 1998."
+    },
+    {
+      "DOI": "10.1007/s10979-005-6832-7",
+      "author": "ME Rice",
+      "doi-asserted-by": "publisher",
+      "first-page": "615",
+      "journal-title": "Law Hum Behav",
+      "key": "1028_CR31",
+      "unstructured": "Rice ME, Harris GT. Comparing effect sizes in follow-up studies: ROC Area, Cohen’s d, and r. Law Hum Behav. 2005;29:615.",
+      "volume": "29",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.06.005",
+      "author": "L Palla",
+      "doi-asserted-by": "publisher",
+      "first-page": "250",
+      "journal-title": "Am J Hum Genet",
+      "key": "1028_CR32",
+      "unstructured": "Palla L, Dudbridge F. A fast method that uses polygenic scores to estimate the variance explained by genome-wide marker panels and the proportion of variants affecting a trait. Am J Hum Genet. 2015;97:250–9.",
+      "volume": "97",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0220215",
+      "author": "J Patron",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0220215",
+      "journal-title": "PLoS ONE",
+      "key": "1028_CR33",
+      "unstructured": "Patron J, Serra-Cayuela A, Han B, Li C, Wishart DS. Assessing the performance of genome-wide association studies for predicting disease risk. PLoS ONE. 2019;14:e0220215.",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00783-5",
+      "doi-asserted-by": "crossref",
+      "key": "1028_CR34",
+      "unstructured": "Lambert SA, Gil L, Jupp S, Ritchie SC, Xu Y, Buniello A, et al. The Polygenic Score Catalog as an open database for reproducibility and systematic evaluation. Nat Genet. 2021;53:1–6."
+    },
+    {
+      "DOI": "10.1002/gepi.21614",
+      "author": "SH Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "journal-title": "Genet Epidemiol",
+      "key": "1028_CR35",
+      "unstructured": "Lee SH, Goddard ME, Wray NR, Visscher PM. A better coefficient of determination for genetic profile analysis. Genet Epidemiol. 2012;36:214–24.",
+      "volume": "36",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0059-2",
+      "author": "AF Pardiñas",
+      "doi-asserted-by": "publisher",
+      "first-page": "381",
+      "journal-title": "Nat Genet.",
+      "key": "1028_CR36",
+      "unstructured": "Pardiñas AF, Holmans P, Pocklington AJ, Escott-Price V, Ripke S, Carrera N, et al. Common schizophrenia alleles are enriched in mutation-intolerant genes and in regions under strong background selection. Nat Genet. 2018;50:381.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41380-019-0394-4",
+      "author": "AG Allegrini",
+      "doi-asserted-by": "publisher",
+      "first-page": "819",
+      "journal-title": "Mol Psychiatry",
+      "key": "1028_CR37",
+      "unstructured": "Allegrini AG, Selzam S, Rimfeld K, von Stumm S, Pingault J-B, Plomin R. Genomic prediction of cognitive traits in childhood and adolescence. Mol Psychiatry. 2019;24:819–27.",
+      "volume": "24",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41598-018-37186-2",
+      "author": "L Lello",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Sci Rep.",
+      "key": "1028_CR38",
+      "unstructured": "Lello L, Raben TG, Yong SY, Tellier LCAM, Hsu SDH.Genomic prediction of 16 complex disease risks including heart attack, diabetes, breast and prostate cancer. Sci Rep.2019;9:1–16.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.12688/f1000research.21797.1",
+      "author": "TR Wood",
+      "doi-asserted-by": "publisher",
+      "first-page": "2147",
+      "journal-title": "F1000Research",
+      "key": "1028_CR39",
+      "unstructured": "Wood TR, Owens N. Using synthetic datasets to bridge the gap between the promise and reality of basing health-related decisions on common single nucleotide polymorphisms. F1000Research. 2020;8:2147.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0379-x",
+      "author": "AR Martin",
+      "doi-asserted-by": "publisher",
+      "first-page": "584",
+      "journal-title": "Nat Genet",
+      "key": "1028_CR40",
+      "unstructured": "Martin AR, Kanai M, Kamatani Y, Okada Y, Neale BM, Daly MJ. Clinical use of current polygenic risk scores may exacerbate health disparities. Nat Genet. 2019;51:584–91.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03243-6",
+      "author": "H Wand",
+      "doi-asserted-by": "publisher",
+      "first-page": "211",
+      "journal-title": "Nature.",
+      "key": "1028_CR41",
+      "unstructured": "Wand H, Lambert SA, Tamburro C, Iacocca MA, O’Sullivan JW, Sillari C, et al. Improving reporting standards for polygenic scores in risk prediction studies. Nature. 2021;591:211–9.",
+      "volume": "591",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 41,
+  "references-count": 41,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2021.04.16.21255481",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-021-01028-z"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A tool for translating polygenic scores onto the absolute scale using summary statistics"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "30"
+}

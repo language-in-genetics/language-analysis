@@ -1,0 +1,690 @@
+{
+  "DOI": "10.1038/s41431-023-01296-x",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01296-x",
+  "abstract": "\u003cjats:sec\u003e\n                \u003cjats:title\u003eAbstract\u003c/jats:title\u003e\n                \u003cjats:p\u003eGenetic testing in patients with suspected hereditary kidney disease may not reveal the genetic cause for the disorder as potentially pathogenic variants can reside in genes that are not yet known to be involved in kidney disease. We have developed KidneyNetwork, that utilizes tissue-specific expression to inform candidate gene prioritization specifically for kidney diseases. KidneyNetwork is a novel method constructed by integrating a kidney RNA-sequencing co-expression network of 878 samples with a multi-tissue network of 31,499 samples. It uses expression patterns and established gene-phenotype associations to predict which genes could be related to what (disease) phenotypes in an unbiased manner. We applied KidneyNetwork to rare variants in exome sequencing data from 13 kidney disease patients without a genetic diagnosis to prioritize candidate genes. KidneyNetwork can accurately predict kidney-specific gene functions and (kidney disease) phenotypes for disease-associated genes. The intersection of prioritized genes with genes carrying rare variants in a patient with kidney and liver cysts identified \u003cjats:italic\u003eALG6\u003c/jats:italic\u003e as plausible candidate gene. We strengthen this plausibility by identifying \u003cjats:italic\u003eALG6\u003c/jats:italic\u003e variants in several cystic kidney and liver disease cases without alternative genetic explanation. We present KidneyNetwork, a publicly available kidney-specific co-expression network with optimized gene-phenotype predictions for kidney disease phenotypes. We designed an easy-to-use online interface that allows clinicians and researchers to use gene expression and co-regulation data and gene-phenotype connections to accelerate advances in hereditary kidney disease diagnosis and research.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eTranslational statement\u003c/jats:title\u003e\n                \u003cjats:p\u003eGenetic testing in patients with suspected hereditary kidney disease may not reveal the genetic cause for the patient’s disorder. Potentially pathogenic variants can reside in genes not yet known to be involved in kidney disease, making it difficult to interpret the relevance of these variants. This reveals a clear need for methods to predict the phenotypic consequences of genetic variation in an unbiased manner. Here we describe KidneyNetwork, a tool that utilizes tissue-specific expression to predict kidney-specific gene functions. Applying KidneyNetwork to a group of undiagnosed cases identified \u003cjats:italic\u003eALG6\u003c/jats:italic\u003e as a candidate gene in cystic kidney and liver disease. In summary, KidneyNetwork can aid the interpretation of genetic variants and can therefore be of value in translational nephrogenetics and help improve the diagnostic yield in kidney disease patients.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "1296"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "18 July 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "24 November 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "18 January 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "20 February 2023"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "For the development of KidneyNetwork, publicly available datasets were used. Therefore, ethical approval for that part was not applicable. All patients that were included in the validation and application part of this manuscript gave written informed consent for the use of their sequencing data for research purposes."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-5893-1401",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Boulogne",
+      "given": "Floranne",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Claus",
+      "given": "Laura R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wiersma",
+      "given": "Henry",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Oelen",
+      "given": "Roy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schukking",
+      "given": "Floor",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4640-9904",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "de Klein",
+      "given": "Niek",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Shuang",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7038-567X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Westra",
+      "given": "Harm-Jan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van der Zwaag",
+      "given": "Bert",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van Reekum",
+      "given": "Franka",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sierks",
+      "given": "Dana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schönauer",
+      "given": "Ria",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Zhigui",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bijlsma",
+      "given": "Emilia K.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5062-2567",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Bos",
+      "given": "Willem Jan W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Halbritter",
+      "given": "Jan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Knoers",
+      "given": "Nine V. A. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Besse",
+      "given": "Whitney",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5654-3966",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Deelen",
+      "given": "Patrick",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Franke",
+      "given": "Lude",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-5953-5956",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "van Eerde",
+      "given": "Albertien M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "Genomics England Research Consortium",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        20
+      ]
+    ],
+    "date-time": "2023-02-20T07:04:08Z",
+    "timestamp": 1676876648000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        2
+      ]
+    ],
+    "date-time": "2023-11-02T00:03:51Z",
+    "timestamp": 1698883431000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T06:38:17Z",
+    "timestamp": 1714372697164
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "11",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        20
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "11",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            20
+          ]
+        ],
+        "date-time": "2023-02-20T00:00:00Z",
+        "timestamp": 1676851200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            20
+          ]
+        ],
+        "date-time": "2023-02-20T00:00:00Z",
+        "timestamp": 1676851200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01296-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01296-x",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01296-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1300-1308",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        20
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        20
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        11
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1056/NEJMoa1806891",
+      "author": "EE Groopman",
+      "doi-asserted-by": "publisher",
+      "first-page": "142",
+      "journal-title": "N. Engl J Med",
+      "key": "1296_CR1",
+      "unstructured": "Groopman EE, Marasa M, Cameron-Christie S, Petrovski S, Aggarwal VS, Milo-Rasouly H, et al. Diagnostic utility of exome sequencing for Kidney disease. N. Engl J Med. 2019;380:142–51.",
+      "volume": "380",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/ndt/gfaa363",
+      "doi-asserted-by": "crossref",
+      "key": "1296_CR2",
+      "unstructured": "Snoek R, van Jaarsveld RH, Nguyen TQ, Peters EDJ, Elferink MG, Ernst RF, et al. Genetics-first approach improves diagnostics of ESKD patients younger than 50 years. Nephrol Dial Transplant. 2020;37:349–57."
+    },
+    {
+      "DOI": "10.1016/j.kint.2018.10.031",
+      "author": "DM Connaughton",
+      "doi-asserted-by": "publisher",
+      "first-page": "914",
+      "journal-title": "Kidney Int",
+      "key": "1296_CR3",
+      "unstructured": "Connaughton DM, Kennedy C, Shril S, Mann N, Murray SL, Williams PA, et al. Monogenic causes of chronic kidney disease in adults. Kidney Int. 2019;95:914–28.",
+      "volume": "95",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nrg3046",
+      "author": "GM Cooper",
+      "doi-asserted-by": "publisher",
+      "first-page": "628",
+      "journal-title": "Nat Rev Genet",
+      "key": "1296_CR4",
+      "unstructured": "Cooper GM, Shendure J. Needles in stacks of needles: finding disease-causal variants in a wealth of genomic data. Nat Rev Genet. 2011;12:628–40.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bib/bbw139",
+      "doi-asserted-by": "crossref",
+      "key": "1296_CR5",
+      "unstructured": "van Dam S, Võsa U, van der Graaf A, Franke L, de Magalhães JP. Gene co-expression analysis for functional classification and gene–disease predictions. Brief Bioinform. 2017;19:575–92."
+    },
+    {
+      "DOI": "10.1038/s41467-019-10649-4",
+      "author": "P Deelen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1296_CR6",
+      "unstructured": "Deelen P, van Dam S, Herkert JC, Karjalainen JM, Brugge H, Abbott KM, et al. Improving the diagnostic yield of exome- sequencing by predicting gene–phenotype associations using large-scale gene expression analysis. Nat Commun. 2019;10:2837.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gky1105",
+      "author": "S Köhler",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1018",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1296_CR7",
+      "unstructured": "Köhler S, Carmody L, Vasilevsky N, Jacobsen JOB, Danis D, Gourdine JP, et al. Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources. Nucleic Acids Res. 2019;47:D1018–27.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "key": "1296_CR8",
+      "unstructured": "Online Mendelian Inheritance in Man, OMIM®. McKusick-Nathans Institute of Genetic Medicine, Johns Hopkins University (Baltimore, MD) [Internet]. Available from: https://omim.org/"
+    },
+    {
+      "key": "1296_CR9",
+      "unstructured": "Orphanet: an online database of rare diseases and orphan drugs. Copyright, INSERM 1997. [Internet]. Available from: http://www.orpha.net"
+    },
+    {
+      "DOI": "10.2307/2531595",
+      "author": "ER DeLong",
+      "doi-asserted-by": "publisher",
+      "first-page": "837",
+      "journal-title": "Biometrics",
+      "key": "1296_CR10",
+      "unstructured": "DeLong ER, DeLong DM, Clarke-Pearson DL. Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach. Biometrics. 1988;44:837–45.",
+      "volume": "44",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-77",
+      "author": "X Robin",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Bioinforma",
+      "key": "1296_CR11",
+      "unstructured": "Robin X, Turck N, Hainard A, Tiberti N, Lisacek F, Sanchez JC, et al. pROC: an open-source package for R and S+ to analyze and compare ROC curves. BMC Bioinforma. 2011;12:77.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s13073-020-00775-w",
+      "author": "S Li",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Med",
+      "key": "1296_CR12",
+      "unstructured": "Li S, van der Velde KJ, de Ridder D, van Dijk ADJ, Soudis D, Zwerwer LR, et al. CAPICE: a computational method for Consequence-Agnostic Pathogenicity Interpretation of Clinical Exome variations. Genome Med. 2020;12:75.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/gim.2017.26",
+      "author": "N Whiffin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1151",
+      "journal-title": "Genet Med",
+      "key": "1296_CR13",
+      "unstructured": "Whiffin N, Minikel E, Walsh R, O'Donnell-Luria AH, Karczewski K, Ing AY, et al. Using high-resolution variant frequencies to empower clinical genome interpretation. Genet Med. 2017;19:1151–8.",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "key": "1296_CR14",
+      "unstructured": "Caulfield M, Davies J, Dennys M, Elbahy L, Fowler T, Hill S, et al. The National Genomics Research and Healthcare Knowledgebase [Internet]. figshare; 2019 [cited 2021 Jan 6]. p. 4421856 Bytes. Available from: https://figshare.com/articles/dataset/GenomicEnglandProtocol_pdf/4530893/5"
+    },
+    {
+      "DOI": "10.1002/humu.22844",
+      "author": "N Sobreira",
+      "doi-asserted-by": "publisher",
+      "first-page": "928",
+      "journal-title": "Hum Mutat",
+      "key": "1296_CR15",
+      "unstructured": "Sobreira N, Schiettecatte F, Valle D, Hamosh A. GeneMatcher: a matching tool for connecting investigators with an interest in the same gene. Hum Mutat. 2015;36:928–30.",
+      "volume": "36",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1681/ASN.2019030298",
+      "author": "W Besse",
+      "doi-asserted-by": "publisher",
+      "first-page": "2091",
+      "journal-title": "J Am Soc Nephrol Jasn",
+      "key": "1296_CR16",
+      "unstructured": "Besse W, Chang AR, Luo JZ, Triffo WJ, Moore BS, Gulati A, et al. ALG9 mutation carriers develop kidney and liver cysts. J Am Soc Nephrol Jasn. 2019;30:2091–102.",
+      "volume": "30",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "1296_CR17",
+      "unstructured": "Genome Aggregation Database Consortium, Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581:434–43.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.30831",
+      "author": "L Sun",
+      "doi-asserted-by": "publisher",
+      "first-page": "22",
+      "journal-title": "Am J Med Genet A",
+      "key": "1296_CR18",
+      "unstructured": "Sun L, Eklund EA, Van Hove JLK, Freeze HH, Thomas JA. Clinical and molecular characterization of the first adult congenital disorder of glycosylation (CDG) type Ic patient. Am J Med Genet A. 2005;137A:22–6.",
+      "volume": "137A",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1007/s10545-016-9945-x",
+      "author": "E Morava",
+      "doi-asserted-by": "publisher",
+      "first-page": "713",
+      "journal-title": "J Inherit Metab Dis",
+      "key": "1296_CR19",
+      "unstructured": "Morava E, Tiemes V, Thiel C, Seta N, de Lonlay P, de Klerk H, et al. ALG6-CDG: a recognizable phenotype with epilepsy, proximal muscle weakness, ataxia and behavioral and limb anomalies. J Inherit Metab Dis. 2016;39:713–23.",
+      "volume": "39",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1172/JCI90129",
+      "author": "W Besse",
+      "doi-asserted-by": "publisher",
+      "first-page": "1772",
+      "journal-title": "J Clin Invest",
+      "key": "1296_CR20",
+      "unstructured": "Besse W, Dong K, Choi J, Punia S, Fedeles SV, Choi M, et al. Isolated polycystic liver disease genes define effectors of polycystin-1 function. J Clin Invest. 2017;127:1772–85.",
+      "volume": "127",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1006/mgme.2000.3017",
+      "author": "V Westphal",
+      "doi-asserted-by": "publisher",
+      "first-page": "219",
+      "journal-title": "Mol Genet Metab",
+      "key": "1296_CR21",
+      "unstructured": "Westphal V, Schottstädt C, Marquardt T, Freeze HH. Analysis of multiple mutations in the hALG6 gene in a patient with congenital disorder of glycosylation Ic. Mol Genet Metab. 2000;70:219–23.",
+      "volume": "70",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.molbev.a004208",
+      "author": "R Oriol",
+      "doi-asserted-by": "publisher",
+      "first-page": "1451",
+      "journal-title": "Mol Biol Evol",
+      "key": "1296_CR22",
+      "unstructured": "Oriol R, Martinez-Duncker I, Chantret I, Mollicone R, Codogno P. Common origin and evolution of glycosyltransferases using Dol-P-monosaccharides as donor substrate. Mol Biol Evol. 2002;19:1451–63.",
+      "volume": "19",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2044-z",
+      "author": "JS Bloch",
+      "doi-asserted-by": "publisher",
+      "first-page": "443",
+      "journal-title": "Nature",
+      "key": "1296_CR23",
+      "unstructured": "Bloch JS, Pesciullesi G, Boilevin J, Nosol K, Irobalieva RN, Darbre T, et al. Structure and mechanism of the ER-based glucosyltransferase ALG6. Nature. 2020;579:443–7.",
+      "volume": "579",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0816-3",
+      "author": "R Schönauer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1374",
+      "journal-title": "Genet Med",
+      "key": "1296_CR24",
+      "unstructured": "Schönauer R, Baatz S, Nemitz-Kliemchen M, Frank V, Petzold F, Sewerin S, et al. Matching clinical and genetic diagnoses in autosomal dominant polycystic kidney disease reveals novel phenocopies and potential candidate genes. Genet Med. 2020;22:1374–83.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1004220",
+      "author": "E Pierson",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1004220",
+      "journal-title": "PLOS Comput Biol",
+      "key": "1296_CR25",
+      "unstructured": "Pierson E, the GTEx Consortium, Koller D, Battle A, Mostafavi S. Sharing and specificity of co-expression networks across 35 human tissues. Rigoutsos I, editor. PLOS Comput Biol. 2015;11:e1004220.",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1681/ASN.2020010051",
+      "author": "Y Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2326",
+      "journal-title": "J Am Soc Nephrol",
+      "key": "1296_CR26",
+      "unstructured": "Li Y, Haug S, Schlosser P, Teumer A, Tin A, Pattaro C, et al. Integration of GWAS summary statistics and gene expression reveals target cell types underlying Kidney function traits. J Am Soc Nephrol. 2020;31:2326–40.",
+      "volume": "31",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s004390000293",
+      "author": "T Imbach",
+      "doi-asserted-by": "publisher",
+      "first-page": "538",
+      "journal-title": "Hum Genet",
+      "key": "1296_CR27",
+      "unstructured": "Imbach T, Grünewald S, Schenk B, Burda P, Schollen E, Wevers RA, et al. Multi-allelic origin of congenital disorder of glycosylation (CDG)-Ic. Hum Genet. 2000;106:538–45.",
+      "volume": "106",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1111/j.1399-0004.2009.01349.x",
+      "author": "JM Drijvers",
+      "doi-asserted-by": "publisher",
+      "first-page": "507",
+      "journal-title": "Clin Genet",
+      "key": "1296_CR28",
+      "unstructured": "Drijvers JM, Lefeber DJ, Munnik SD, Pfundt R, Leeuw NVD, Marcelis C, et al. Skeletal dysplasia with brachytelephalangy in a patient with a congenital disorder of glycosylation due to ALG6 gene mutations. Clin Genet. 2010;77:507–9.",
+      "volume": "77",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/S1096-7192(03)00089-1",
+      "author": "JW Newell",
+      "doi-asserted-by": "publisher",
+      "first-page": "221",
+      "journal-title": "Mol Genet Metab",
+      "key": "1296_CR29",
+      "unstructured": "Newell JW, Seo NS, Enns GM, McCraken M, Mantovani JF, Freeze HH. Congenital disorder of glycosylation Ic in patients of Indian origin. Mol Genet Metab. 2003;79:221–8.",
+      "volume": "79",
+      "year": "2003"
+    }
+  ],
+  "reference-count": 29,
+  "references-count": 29,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2021.03.10.21253054",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01296-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "KidneyNetwork: using kidney-derived gene expression data to predict and prioritize novel genes involved in kidney disease"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "31"
+}

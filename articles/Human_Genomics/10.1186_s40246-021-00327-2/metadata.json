@@ -1,0 +1,616 @@
+{
+  "DOI": "10.1186/s40246-021-00327-2",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00327-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eMathematical approaches have been for decades used to probe the structure of nucleotide sequences. This has led to the development of Bioinformatics. In this exploratory work, a novel mathematical method is applied to probe the genetic structure of two related viral families: those of coronaviruses and those of influenza viruses. The coronaviruses are SARS-CoV-2, SARS-CoV-1, and MERS. The influenza viruses include H1N1-1918, H1N1-2009, H2N2-1957, and H3N2-1968.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe mathematical method used is the slow feature analysis (SFA), a rather new but promising method to delineate complex structure in nucleotide sequences.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe analysis indicates that the nucleotide sequences exhibit an elaborate and convoluted structure akin to complex networks. We define a measure of complexity and show that each nucleotide sequence exhibits a certain degree of complexity within itself, while at the same time there exists complex inter-relationships between the sequences within a family and between the two families. From these relationships, we find evidence, especially for the coronavirus family, that increasing complexity in a sequence is associated with higher transmission rate but with lower mortality.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe complexity measure defined here may hold a promise and could become a useful tool in the prediction of transmission and mortality rates in future new viral strains.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "327"
+  ],
+  "article-number": "26",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "3 March 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "19 April 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "7 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Date",
+      "name": "change_date",
+      "order": 4,
+      "value": "2 June 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Type",
+      "name": "change_type",
+      "order": 5,
+      "value": "Correction"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 6,
+      "value": "A Correction to this paper has been published:"
+    },
+    {
+      "URL": "https://doi.org/10.1186/s40246-021-00334-3",
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 7,
+      "value": "https://doi.org/10.1186/s40246-021-00334-3"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable"
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-4474-3423",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Tsonis",
+      "given": "Anastasios A.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Geli",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Lvyi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lu",
+      "given": "Wenxu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kayafas",
+      "given": "Aristotle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Del Rio-Tsonis",
+      "given": "Katia",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        7
+      ]
+    ],
+    "date-time": "2021-05-07T13:06:10Z",
+    "timestamp": 1620392770000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        7,
+        30
+      ]
+    ],
+    "date-time": "2021-07-30T16:20:29Z",
+    "timestamp": 1627662029000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        30
+      ]
+    ],
+    "date-time": "2022-03-30T11:54:11Z",
+    "timestamp": 1648641251309
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2021-05-07T00:00:00Z",
+        "timestamp": 1620345600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2021-05-07T00:00:00Z",
+        "timestamp": 1620345600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00327-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00327-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00327-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1101/SQB.1983.047.01.124",
+      "author": "JCW Shepherd",
+      "doi-asserted-by": "publisher",
+      "first-page": "1099",
+      "journal-title": "CSH Symp Quant Biol",
+      "key": "327_CR1",
+      "unstructured": "Shepherd JCW. From primeval message to present day gene. CSH Symp Quant Biol. 1982;47:1099–108.",
+      "volume": "47",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1073/pnas.85.12.4378",
+      "author": "S Ohno",
+      "doi-asserted-by": "publisher",
+      "first-page": "4378",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "327_CR2",
+      "unstructured": "Ohno S. Codon preference is but an illusion created by the construction principle of coding sequences. Proc Natl Acad Sci USA. 1998;85:4378–82.",
+      "volume": "85",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1073/pnas.86.21.8452",
+      "author": "T Yomo",
+      "doi-asserted-by": "publisher",
+      "first-page": "8452",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "327_CR3",
+      "unstructured": "Yomo T, Ohno S. Concordant evolution and noncoding regions made it possible by the universal rule of TA/CG deficiency-TG/Ct excess. Proc Natl Acad Sci USA. 1989;86:8452–6.",
+      "volume": "86",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1016/S0022-5193(05)80381-9",
+      "author": "AA Tsonis",
+      "doi-asserted-by": "publisher",
+      "first-page": "323",
+      "journal-title": "J Theor Biol",
+      "key": "327_CR4",
+      "unstructured": "Tsonis AA, Elsner JB, Tsonis PA. Periodicity in DNA sequences: Implications in gene evolution. J Theor Biol. 1991;151:323–31.",
+      "volume": "151",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1103/PhysRevE.53.1828",
+      "author": "AA Tsonis",
+      "doi-asserted-by": "publisher",
+      "first-page": "1828",
+      "journal-title": "Phys Rev E",
+      "key": "327_CR5",
+      "unstructured": "Tsonis AA, Kumar P, Elsner JB, Tsonis PA. Wavelet analysis of DNA sequences. Phys Rev E. 1996;53:1828–34.",
+      "volume": "53",
+      "year": "1996"
+    },
+    {
+      "author": "AM Lask",
+      "first-page": "474",
+      "key": "327_CR6",
+      "unstructured": "Lask AM. Introduction to Bioinformatics, 3rd edition, Oxford University press; 2008. p. 474.",
+      "volume-title": "Introduction to Bioinformatics, 3rd edition, Oxford University press",
+      "year": "2008"
+    },
+    {
+      "author": "J Pevsner",
+      "first-page": "1124",
+      "key": "327_CR7",
+      "unstructured": "Pevsner J. Bioinformatics and Functional Genomics, 3rd edition, Willey-Blackwell; 2015. p. 1124.",
+      "volume-title": "Bioinformatics and Functional Genomics, 3rd edition, Willey-Blackwell",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1162/089976602317318938",
+      "author": "L Wiskott",
+      "doi-asserted-by": "publisher",
+      "first-page": "715",
+      "journal-title": "Neural Comput",
+      "key": "327_CR8",
+      "unstructured": "Wiskott L, Sejnowski TJ. Slow Feature Analysis: Unsupervised learning of invariance. Neural Comput. 2002;14:715–70.",
+      "volume": "14",
+      "year": "2002"
+    },
+    {
+      "author": "L Wiskott",
+      "key": "327_CR9",
+      "unstructured": "Wiskott L. Estimating driving forces of nonstationary time series with slow feature analysis, (2003), http://arxiv.org/abs/cond-mat/0312317/",
+      "volume-title": "Estimating driving forces of nonstationary time series with slow feature analysis",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1167/5.6.9",
+      "author": "P Berkes",
+      "doi-asserted-by": "publisher",
+      "first-page": "579",
+      "issue": "6",
+      "journal-title": "J Vis",
+      "key": "327_CR10",
+      "unstructured": "Berkes P, Wiskott L. Slow feature analysis yields a rich repertoire of complex cells. J Vis. 2005;5(6):579–602.",
+      "volume": "5",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1162/neco.2006.18.10.2495",
+      "author": "T Blaschke",
+      "doi-asserted-by": "publisher",
+      "first-page": "2495",
+      "issue": "10",
+      "journal-title": "Neural Comput",
+      "key": "327_CR11",
+      "unstructured": "Blaschke T, Berkes P, Wiskott L. What is the relationship between slow feature analysis and independent component analysis? Neural Comput. 2006;18(10):2495–508. https://doi.org/10.1162/neco.2006.18.10.2495.",
+      "volume": "18",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1162/NECO_a_00171",
+      "author": "M Franzius",
+      "doi-asserted-by": "publisher",
+      "first-page": "2289",
+      "issue": "9",
+      "journal-title": "Neural Comput",
+      "key": "327_CR12",
+      "unstructured": "Franzius M, Wilbert N, Wiskott L. Invariant object recognition and pose estimation with slow feature analysis. Neural Comput. 2011;23(9):2289–323. https://doi.org/10.1162/NECO_a_00171.",
+      "volume": "23",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/s00382-015-2761-4",
+      "doi-asserted-by": "publisher",
+      "key": "327_CR13",
+      "unstructured": "Yang P, Wang G, Zhang F, Zhou X. Causality of global warming seen from observations: a scale analysis of driving force of the surface air temperature time series in the Northern Hemisphere. Clim Dyn. 2015. https://doi.org/10.1007/s00382-015-2761-4."
+    },
+    {
+      "DOI": "10.1007/s00382-019-04757-6",
+      "author": "AA Tsonis",
+      "doi-asserted-by": "publisher",
+      "first-page": "1981",
+      "journal-title": "Clim Dyn",
+      "key": "327_CR14",
+      "unstructured": "Tsonis AA, Pan X, Wang G, Nicolis C. On the min-max estimation of mean daily temperatures. Clim Dyn. 2019;53:1981–9. https://doi.org/10.1007/s00382-019-04757-6.",
+      "volume": "53",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.4249/scholarpedia.5282",
+      "author": "L Wiskott",
+      "doi-asserted-by": "publisher",
+      "first-page": "5282",
+      "issue": "4",
+      "journal-title": "Scholarpedia",
+      "key": "327_CR15",
+      "unstructured": "Wiskott L, et al. Slow feature analysis. Scholarpedia. 2011;6(4):5282.",
+      "volume": "6",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1175/1520-0477",
+      "author": "C Torrence",
+      "doi-asserted-by": "publisher",
+      "first-page": "61",
+      "journal-title": "Bull Amer Meteor Soc",
+      "key": "327_CR16",
+      "unstructured": "Torrence C, Compo GP. A practical guide to wavelet analysis. Bull Amer Meteor Soc. 1998;79:61–78. https://doi.org/10.1175/1520-0477.",
+      "volume": "79",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1093/ve/veaa003",
+      "doi-asserted-by": "publisher",
+      "key": "327_CR17",
+      "unstructured": "Ng WM, Stelfox AJ, Bowden TA. Unraveling virus relationships by structure-based phylogenetic classification. Virus Evol. 2020;6(1). https://doi.org/10.1093/ve/veaa003."
+    },
+    {
+      "DOI": "10.1103/PhysRevE.69.26113",
+      "author": "MEJ Newman",
+      "doi-asserted-by": "publisher",
+      "first-page": "026113",
+      "journal-title": "Phys Rev E",
+      "key": "327_CR18",
+      "unstructured": "Newman MEJ, Girwan M. Finding and evaluating community structure in networks. Phys Rev E. 2004;69:026113. https://doi.org/10.1103/PhysRevE.69.26113.",
+      "volume": "69",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1073/pnas.0601602103",
+      "author": "MEJ Newman",
+      "doi-asserted-by": "publisher",
+      "first-page": "8577",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "327_CR19",
+      "unstructured": "Newman MEJ. Modularity and community structure in networks. Proc Natl Acad Sci USA. 2006;103:8577–82.",
+      "volume": "103",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.2217/fvl-2020-0050",
+      "doi-asserted-by": "publisher",
+      "key": "327_CR20",
+      "unstructured": "Fani M, Teimoori A, Ghafari S. Comparison of the COVID-2019 (SARS-CoV-2) pathogenesis with SRS-CoV and MERS-CoV infections. Future Virol. 2020. https://doi.org/10.2217/fvl-2020-0050."
+    },
+    {
+      "DOI": "10.1086/524065",
+      "author": "V Andreasen",
+      "doi-asserted-by": "publisher",
+      "first-page": "270",
+      "issue": "2",
+      "journal-title": "J Infect Dis",
+      "key": "327_CR21",
+      "unstructured": "Andreasen V, Viboud C, Simonsen L. Epidemiologic characterization of the 1918 influenza pandemic summer wave in Copenhagen: implications for pandemic control strategies. J Infect Dis. 2008;197(2):270–728.",
+      "volume": "197",
+      "year": "2008"
+    },
+    {
+      "key": "327_CR22",
+      "unstructured": "Cascella M, Rajnik M, Cuomo A, Dulebohn SC, Di Napoli R. Features, evaluation and treatment Coronavirus (COVID-19): StatPearls Publishing; 2020."
+    },
+    {
+      "DOI": "10.1016/S1473-3099(12)70121-4",
+      "author": "FS Dawood",
+      "doi-asserted-by": "publisher",
+      "first-page": "687",
+      "issue": "9",
+      "journal-title": "Lancet Infect Dis",
+      "key": "327_CR23",
+      "unstructured": "Dawood FS, Iuliano AD, Reed C, Meltzer MI, Shay DK, Cheng P-Y, et al. Estimated global mortality associated with the first 12 months of 2009 pandemic influenza A H1N1 virus circulation: a modelling study. Lancet Infect Dis. 2012;12(9):687–95.",
+      "volume": "12",
+      "year": "2012"
+    },
+    {
+      "author": "SA Hassan",
+      "first-page": "e7355",
+      "issue": "3",
+      "journal-title": "Cureus",
+      "key": "327_CR24",
+      "unstructured": "Hassan SA, Sheikh FN, Jamal S, Ezeh JK, Akhtar A. Coronavirus (COVID-19): a review of clinical features, diagnosis, and treatment. Cureus. 2020;12(3):e7355.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ijsu.2020.07.032",
+      "author": "J Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Int J Surg",
+      "key": "327_CR25",
+      "unstructured": "Liu J, Xie W, Wang Y, Xiong Y, Chen S, Han J, et al. A comparative overview of COVID-19, MERS and SARS: review article. Int J Surg. 2020;81:1–8.",
+      "volume": "81",
+      "year": "2020"
+    },
+    {
+      "author": "JK Taubenberger",
+      "first-page": "86",
+      "issue": "1",
+      "journal-title": "Proc Am Philos Soc",
+      "key": "327_CR26",
+      "unstructured": "Taubenberger JK. The origin and virulence of the 1918 ‘Spanish’ Influenza Virus. Proc Am Philos Soc. 2006;150(1):86–112.",
+      "volume": "150",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1086/431150",
+      "author": "C Viboud",
+      "doi-asserted-by": "publisher",
+      "first-page": "233",
+      "issue": "2",
+      "journal-title": "J Infect Dis",
+      "key": "327_CR27",
+      "unstructured": "Viboud C, Grais RF, Lafont BAP, Miller MA, Simonsen L, Multinational Influenza Seasonal Mortality Study Group. Multinational impact of the 1968 Hong Kong influenza pandemic: evidence for a smoldering pandemic. J Infect Dis. 2005;192(2):233–48.",
+      "volume": "192",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/infdis/jiv534",
+      "author": "C Viboud",
+      "doi-asserted-by": "publisher",
+      "first-page": "738",
+      "issue": "5",
+      "journal-title": "J Infect Dis",
+      "key": "327_CR28",
+      "unstructured": "Viboud C, Simonsen L, Fuentes R, Flores J, Miller MA, Chowell G. Global mortality impact of the 1957-1959 influenza pandemic. J Infect Dis. 2016;213(5):738–45.",
+      "volume": "213",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 28,
+  "references-count": 28,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00327-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "An application of slow feature analysis to the genetic sequences of coronaviruses and influenza viruses"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

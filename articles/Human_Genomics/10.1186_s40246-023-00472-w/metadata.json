@@ -1,0 +1,725 @@
+{
+  "DOI": "10.1186/s40246-023-00472-w",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00472-w",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe American College of Medical Genetics and Genomics (ACMG) recently published new tier-based carrier screening recommendations. While many pan-ethnic genetic disorders are well established, some genes carry pathogenic founder variants (PFVs) that are unique to specific ethnic groups. We aimed to demonstrate a community data-driven approach to creating a pan-ethnic carrier screening panel that meets the ACMG recommendations.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eExome sequencing data from 3061 Israeli individuals were analyzed. Machine learning determined ancestries. Frequencies of candidate pathogenic/likely pathogenic (P/LP) variants based on ClinVar and Franklin were calculated for each subpopulation based on the Franklin community platform and compared with existing screening panels. Candidate PFVs were manually curated through community members and the literature.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe samples were automatically assigned to 13 ancestries. The largest number of samples was classified as Ashkenazi Jewish (\u003cjats:italic\u003en\u003c/jats:italic\u003e = 1011), followed by Muslim Arabs (\u003cjats:italic\u003en\u003c/jats:italic\u003e = 613). We detected one tier-2 and seven tier-3 variants that were not included in existing carrier screening panels for Ashkenazi Jewish or Muslim Arab ancestries. Five of these P/LP variants were supported by evidence from the Franklin community. Twenty additional variants were detected that are potentially pathogenic tier-2 or tier-3.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe community data-driven and sharing approaches facilitate generating inclusive and equitable ethnically based carrier screening panels. This approach identified new PFVs missing from currently available panels and highlighted variants that may require reclassification.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "472"
+  ],
+  "article-number": "30",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "21 August 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "15 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "28 March 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was entirely based on secondary analysis of de-identified data. Clinical consent was obtained from each participant regarding storage of genetic sequencing, and access to available electronic health record data."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "ME, YE and DS are Genoox employees. YY receives consulting fees from Genoox. The remaining authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Einhorn",
+      "given": "Yaron",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Einhorn",
+      "given": "Moshe",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kurolap",
+      "given": "Alina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Steinberg",
+      "given": "Dror",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mory",
+      "given": "Adi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bazak",
+      "given": "Lily",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Paperna",
+      "given": "Tamar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Grinshpun-Cohen",
+      "given": "Julia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Basel-Salmon",
+      "given": "Lina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Weiss",
+      "given": "Karin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Singer",
+      "given": "Amihood",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yaron",
+      "given": "Yuval",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Baris Feldman",
+      "given": "Hagit",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        28
+      ]
+    ],
+    "date-time": "2023-03-28T09:03:06Z",
+    "timestamp": 1679994186000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        28
+      ]
+    ],
+    "date-time": "2023-03-28T09:08:48Z",
+    "timestamp": 1679994528000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        29
+      ]
+    ],
+    "date-time": "2023-03-29T04:33:23Z",
+    "timestamp": 1680064403517
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        28
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            28
+          ]
+        ],
+        "date-time": "2023-03-28T00:00:00Z",
+        "timestamp": 1679961600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            28
+          ]
+        ],
+        "date-time": "2023-03-28T00:00:00Z",
+        "timestamp": 1679961600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00472-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00472-w/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00472-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        28
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        28
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1097/AOG.0000000000000666",
+      "author": "JG Edwards",
+      "doi-asserted-by": "publisher",
+      "first-page": "653",
+      "issue": "3",
+      "journal-title": "Obstet Gynecol",
+      "key": "472_CR1",
+      "unstructured": "Edwards JG, Feldman G, Goldberg J, Gregg AR, Norton ME, Rose NC, et al. Expanded carrier screening in reproductive medicine-points to consider: a joint statement of the American College of Medical Genetics and Genomics, American College of Obstetricians and Gynecologists, National Society of Genetic Counselors, Perinatal Quality Foundation, and Society for Maternal-Fetal Medicine. Obstet Gynecol. 2015;125(3):653–62. https://doi.org/10.1097/AOG.0000000000000666.",
+      "volume": "125",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41436-021-01203-z",
+      "author": "AR Gregg",
+      "doi-asserted-by": "publisher",
+      "first-page": "1793",
+      "issue": "10",
+      "journal-title": "Genet Med",
+      "key": "472_CR2",
+      "unstructured": "Gregg AR, Aarabi M, Klugman S, Leach NT, Bashford MT, Goldwaser T, et al. Screening for autosomal recessive and X-linked conditions during pregnancy and preconception: a practice resource of the American College of Medical Genetics and Genomics (ACMG). Genet Med. 2021;23(10):1793–806. https://doi.org/10.1038/s41436-021-01203-z.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "key": "472_CR3",
+      "unstructured": "Franklin by Genoox: The Future of Genomic Medicine. 2022. Accessed March 9, 2022. https://franklin.genoox.com."
+    },
+    {
+      "DOI": "10.3389/fgene.2018.00113",
+      "author": "A Stajkovska",
+      "doi-asserted-by": "publisher",
+      "first-page": "113",
+      "journal-title": "Front Genet",
+      "key": "472_CR4",
+      "unstructured": "Stajkovska A, Mehandziska S, Stavrevska M, Jakovleva K, Nikchevska N, Mitrev Z, et al. Trio clinical exome sequencing in a patient with multicentric carpotarsal osteolysis syndrome: first case report in the Balkans. Front Genet. 2018;9:113. https://doi.org/10.3389/fgene.2018.00113.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2018-105299",
+      "author": "A Kurolap",
+      "doi-asserted-by": "publisher",
+      "first-page": "779",
+      "issue": "11",
+      "journal-title": "J Med Genet",
+      "key": "472_CR5",
+      "unstructured": "Kurolap A, Eshach-Adiv O, Gonzaga-Jauregui C, Dolnikov K, Mory A, Paperna T, et al. Establishing the role of PLVAP in protein-losing enteropathy: a homozygous missense variant leads to an attenuated phenotype. J Med Genet. 2018;55(11):779–84. https://doi.org/10.1136/jmedgenet-2018-105299.",
+      "volume": "55",
+      "year": "2018"
+    },
+    {
+      "key": "472_CR6",
+      "unstructured": "Einhorn Y, Lev O, Einhorn M, Trabelsi A, Paz-Yaacov N, Gross SJ. Benchmarking an automated Variant Classification Engine (aVCE) algorithm using ClinVar: Results of a time-capsule experiment. ACMG Annual Clinical Genetics Meeting 2018. Charlotte, NC: ACMG; 2018. https://s3.amazonaws.com/resources.genoox.com/posters/time_capsule.pdf"
+    },
+    {
+      "DOI": "10.1001/jamacardio.2021.3370",
+      "author": "ZT Yoneda",
+      "doi-asserted-by": "publisher",
+      "first-page": "1371",
+      "issue": "12",
+      "journal-title": "JAMA Cardiol",
+      "key": "472_CR7",
+      "unstructured": "Yoneda ZT, Anderson KC, Quintana JA, O’Neill MJ, Sims RA, Glazer AM, et al. Early-onset atrial fibrillation and the prevalence of rare variants in cardiomyopathy and arrhythmia genes. JAMA Cardiol. 2021;6(12):1371–9. https://doi.org/10.1001/jamacardio.2021.3370.",
+      "volume": "6",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cancergen.2022.02.006",
+      "author": "E Bora",
+      "doi-asserted-by": "publisher",
+      "first-page": "118",
+      "journal-title": "Cancer Genet",
+      "key": "472_CR8",
+      "unstructured": "Bora E, Caglayan AO, Koc A, Cankaya T, Ozkalayci H, Kocabey M, et al. Evaluation of hereditary/familial breast cancer patients with multigene targeted next generation sequencing panel and MLPA analysis in Turkey. Cancer Genet. 2022;262–263:118–33. https://doi.org/10.1016/j.cancergen.2022.02.006.",
+      "volume": "262–263",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/uog.24885",
+      "author": "Y Yaron",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Ultrasound Obstet Gynecol",
+      "key": "472_CR9",
+      "unstructured": "Yaron Y, Ofen Glassner V, Mory A, Zunz Henig N, Kurolap A, Bar Shira A, et al. Exome sequencing as a first-tier test for fetuses with severe central nervous system structural anomalies. Ultrasound Obstet Gynecol. 2022. https://doi.org/10.1002/uog.24885.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp324",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1754",
+      "issue": "14",
+      "journal-title": "Bioinformatics",
+      "key": "472_CR10",
+      "unstructured": "Li H, Durbin R. Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics. 2009;25(14):1754–60. https://doi.org/10.1093/bioinformatics/btp324.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1101/gr.107524.110",
+      "author": "A McKenna",
+      "doi-asserted-by": "publisher",
+      "first-page": "1297",
+      "issue": "9",
+      "journal-title": "Genome Res",
+      "key": "472_CR11",
+      "unstructured": "McKenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, Kernytsky A, et al. The genome analysis toolkit: a MapReduce framework for analyzing next-generation DNA sequencing data. Genome Res. 2010;20(9):1297–303. https://doi.org/10.1101/gr.107524.110.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "key": "472_CR12",
+      "unstructured": "Garrison E, Marth G. Haplotype-based variant detection from short-read sequencing. 2012. Accessed March 13, 2022. https://arxiv.org/abs/1207.3907"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "issue": "5",
+      "journal-title": "Genet Med",
+      "key": "472_CR13",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17(5):405–24. https://doi.org/10.1038/gim.2015.30.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41436-019-0686-8",
+      "author": "ER Riggs",
+      "doi-asserted-by": "publisher",
+      "first-page": "245",
+      "issue": "2",
+      "journal-title": "Genet Med",
+      "key": "472_CR14",
+      "unstructured": "Riggs ER, Andersen EF, Cherry AM, Kantarci S, Kearney H, Patel A, et al. Technical standards for the interpretation and reporting of constitutional copy-number variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics (ACMG) and the Clinical Genome Resource (ClinGen). Genet Med. 2020;22(2):245–57. https://doi.org/10.1038/s41436-019-0686-8.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/cge.14131",
+      "author": "B Davidov",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Genet",
+      "key": "472_CR15",
+      "unstructured": "Davidov B, Levon A, Volkov H, Orenstein N, Karo R, Fatal Gazit I, et al. Pathogenic variant-based preconception carrier screening in the Israeli Jewish population. Clin Genet. 2022. https://doi.org/10.1111/cge.14131.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/humu.24359",
+      "author": "EDS Rodrigues",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Hum Mutat",
+      "key": "472_CR16",
+      "unstructured": "Rodrigues EDS, Griffith S, Martin R, Antonescu C, Posey JE, Coban-Akdemir Z, et al. Variant-level matching for diagnosis and discovery: Challenges and opportunities. Hum Mutat. 2022. https://doi.org/10.1002/humu.24359.",
+      "year": "2022"
+    },
+    {
+      "key": "472_CR17",
+      "unstructured": "Ashkenazi Jewish Carrier Screen (64 Genes). SEMA4, 2022. Accessed: April 25, 2022. https://sema4.com/products/test-catalog/ashkenazi-jewish-carrier-screen/."
+    },
+    {
+      "key": "472_CR18",
+      "unstructured": "Inheritest® Carrier Screen, Ashkenazi Jewish Panel (48 Genes). 2021. Accessed: April 24, 2022. https://www.labcorp.com/tests/451920/inheritest-carrier-screen-ashkenazi-jewish-panel-48-genes."
+    },
+    {
+      "key": "472_CR19",
+      "unstructured": "Expanded Carrier Screen (502 Genes). SEMA4, 2022. Accessed: April 25, 2022. https://sema4.com/products/test-catalog/expanded-carrier-screen-502-genes/."
+    },
+    {
+      "key": "472_CR20",
+      "unstructured": "Invitae Comprehensive Carrier Screen. Invitae, 2022. Accessed: April 25, 2022. https://www.invitae.com/en/providers/test-catalog/test-60100."
+    },
+    {
+      "DOI": "10.1007/s00125-018-4690-3",
+      "author": "V Bansal",
+      "doi-asserted-by": "publisher",
+      "first-page": "2180",
+      "issue": "10",
+      "journal-title": "Diabetologia",
+      "key": "472_CR21",
+      "unstructured": "Bansal V, Boehm BO, Darvasi A. Identification of a missense variant in the WFS1 gene that causes a mild form of Wolfram syndrome and is associated with risk for type 2 diabetes in Ashkenazi Jewish individuals. Diabetologia. 2018;61(10):2180–8. https://doi.org/10.1007/s00125-018-4690-3.",
+      "volume": "61",
+      "year": "2018"
+    },
+    {
+      "key": "472_CR22",
+      "unstructured": "Singer E. Genetic screening tests in the population to detect couples at risk, update 2021. Ramat-gan: Public Health Services, Israeli Ministry of Health; 2021. https://www.health.gov.il/Subjects/Genetics/Documents/seker_sal2021.pdf"
+    },
+    {
+      "DOI": "10.1038/s41431-019-0487-1",
+      "author": "R Bend",
+      "doi-asserted-by": "publisher",
+      "first-page": "76",
+      "issue": "1",
+      "journal-title": "Eur J Hum Genet",
+      "key": "472_CR23",
+      "unstructured": "Bend R, Cohen L, Carter MT, Lyons MJ, Niyazov D, Mikati MA, et al. Phenotype and mutation expansion of the PTPN23 associated disorder characterized by neurodevelopmental delay and structural brain abnormalities. Eur J Hum Genet. 2020;28(1):76–87. https://doi.org/10.1038/s41431-019-0487-1.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/03630269.2018.1500918",
+      "author": "F Moassas",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "issue": "3",
+      "journal-title": "Hemoglobin",
+      "key": "472_CR24",
+      "unstructured": "Moassas F, Alabloog A, Murad H. Description of a rare beta-globin gene mutation: − 86 (C\u003eG) (HBB: c.-136C\u003eG) observed in a Syrian family. Hemoglobin. 2018;42(3):203–5. https://doi.org/10.1080/03630269.2018.1500918.",
+      "volume": "42",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/jid.2008.109",
+      "author": "SM Hutton",
+      "doi-asserted-by": "publisher",
+      "first-page": "2442",
+      "issue": "10",
+      "journal-title": "J Invest Dermatol",
+      "key": "472_CR25",
+      "unstructured": "Hutton SM, Spritz RA. Comprehensive analysis of oculocutaneous albinism among non-Hispanic caucasians shows that OCA1 is the most prevalent OCA type. J Invest Dermatol. 2008;128(10):2442–50. https://doi.org/10.1038/jid.2008.109.",
+      "volume": "128",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.61284",
+      "author": "R Rabin",
+      "doi-asserted-by": "publisher",
+      "first-page": "2144",
+      "issue": "10",
+      "journal-title": "Am J Med Genet A",
+      "key": "472_CR26",
+      "unstructured": "Rabin R, Hirsch Y, Johansson MM, Ekstein J, Zeevi DA, Keena B, et al. Study of carrier frequency of Warsaw breakage syndrome in the Ashkenazi Jewish population and presentation of two cases. Am J Med Genet A. 2019;179(10):2144–51. https://doi.org/10.1002/ajmg.a.61284.",
+      "volume": "179",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1159/000401631",
+      "author": "B Padeh",
+      "doi-asserted-by": "publisher",
+      "first-page": "170",
+      "journal-title": "Monogr Hum Genet",
+      "key": "472_CR27",
+      "unstructured": "Padeh B, Shachar S, Modan M, Goldman B. Screening and prevention of Tay-Sachs disease in Israel. Monogr Hum Genet. 1978;9:170–5. https://doi.org/10.1159/000401631.",
+      "volume": "9",
+      "year": "1978"
+    },
+    {
+      "author": "A Koren",
+      "first-page": "938",
+      "issue": "11",
+      "journal-title": "Harefuah",
+      "key": "472_CR28",
+      "unstructured": "Koren A, Zalman L, Palmor H, Ekstein E, Schneour Y, Schneour A, et al. The prevention programs for beta thalassemia in the Jezreel and Eiron valleys: results of fifteen years experience. Harefuah. 2002;141(11):938–43.",
+      "volume": "141",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1002/mgg3.73",
+      "author": "J Zlotogora",
+      "doi-asserted-by": "publisher",
+      "first-page": "85",
+      "issue": "2",
+      "journal-title": "Mol Genet Genomic Med",
+      "key": "472_CR29",
+      "unstructured": "Zlotogora J. Genetics and genomic medicine in Israel. Mol Genet Genomic Med. 2014;2(2):85–94. https://doi.org/10.1002/mgg3.73.",
+      "volume": "2",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/gim.2015.123",
+      "author": "B Baskovich",
+      "doi-asserted-by": "publisher",
+      "first-page": "522",
+      "issue": "5",
+      "journal-title": "Genet Med",
+      "key": "472_CR30",
+      "unstructured": "Baskovich B, Hiraki S, Upadhyay K, Meyer P, Carmi S, Barzilai N, et al. Expanded genetic screening panel for the Ashkenazi Jewish population. Genet Med. 2016;18(5):522–8. https://doi.org/10.1038/gim.2015.123.",
+      "volume": "18",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0225656",
+      "author": "AT Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0225656",
+      "issue": "11",
+      "journal-title": "PLoS ONE",
+      "key": "472_CR31",
+      "unstructured": "Chen AT, Brady L, Bulman DE, Sundaram ANE, Rodriguez AR, Margolin E, et al. An evaluation of genetic causes and environmental risks for bilateral optic atrophy. PLoS ONE. 2019;14(11):e0225656. https://doi.org/10.1371/journal.pone.0225656.",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.jmoldx.2014.07.001",
+      "author": "C Perreault-Micale",
+      "doi-asserted-by": "publisher",
+      "first-page": "673",
+      "issue": "6",
+      "journal-title": "J Mol Diagn",
+      "key": "472_CR32",
+      "unstructured": "Perreault-Micale C, Frieden A, Kennedy CJ, Neitzel D, Sullivan J, Faulkner N, et al. Truncating variants in the majority of the cytoplasmic domain of PCDH15 are unlikely to cause Usher syndrome 1F. J Mol Diagn. 2014;16(6):673–8. https://doi.org/10.1016/j.jmoldx.2014.07.001.",
+      "volume": "16",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1167/iovs.10-5359",
+      "author": "E Aller",
+      "doi-asserted-by": "publisher",
+      "first-page": "5480",
+      "issue": "11",
+      "journal-title": "Invest Ophthalmol Vis Sci",
+      "key": "472_CR33",
+      "unstructured": "Aller E, Jaijo T, Garcia-Garcia G, Aparisi MJ, Blesa D, Diaz-Llopis M, et al. Identification of large rearrangements of the PCDH15 gene by combined MLPA and a CGH: large duplications are responsible for Usher syndrome. Invest Ophthalmol Vis Sci. 2010;51(11):5480–5. https://doi.org/10.1167/iovs.10-5359.",
+      "volume": "51",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.2147/TACG.S186476",
+      "author": "FM Pisani",
+      "doi-asserted-by": "publisher",
+      "first-page": "239",
+      "journal-title": "Appl Clin Genet",
+      "key": "472_CR34",
+      "unstructured": "Pisani FM. Spotlight on Warsaw breakage syndrome. Appl Clin Genet. 2019;12:239–48. https://doi.org/10.2147/TACG.S186476.",
+      "volume": "12",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajo.2018.03.008",
+      "author": "JD Sengillo",
+      "doi-asserted-by": "publisher",
+      "first-page": "99",
+      "journal-title": "Am J Ophthalmol",
+      "key": "472_CR35",
+      "unstructured": "Sengillo JD, Lee W, Nagasaki T, Schuerch K, Yannuzzi LA, Freund KB, et al. A distinct phenotype of eyes shut homolog (EYS)-retinitis pigmentosa is associated with variants near the C-terminus. Am J Ophthalmol. 2018;190:99–112. https://doi.org/10.1016/j.ajo.2018.03.008.",
+      "volume": "190",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.15252/emmm.202013258",
+      "author": "REN van der Welle",
+      "doi-asserted-by": "publisher",
+      "first-page": "e13258",
+      "issue": "5",
+      "journal-title": "EMBO Mol Med",
+      "key": "472_CR36",
+      "unstructured": "van der Welle REN, Jobling R, Burns C, Sanza P, van der Beek JA, Fasano A, et al. Neurodegenerative VPS41 variants inhibit HOPS function and mTORC1-dependent TFEB/TFE3 regulation. EMBO Mol Med. 2021;13(5):e13258. https://doi.org/10.15252/emmm.202013258.",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.03.030",
+      "author": "L Boyle",
+      "doi-asserted-by": "publisher",
+      "first-page": "1235",
+      "issue": "6",
+      "journal-title": "Am J Hum Genet",
+      "key": "472_CR37",
+      "unstructured": "Boyle L, Wamelink MMC, Salomons GS, Roos B, Pop A, Dauber A, et al. Mutations in TKT are the cause of a syndrome including short stature, developmental delay, and congenital heart defects. Am J Hum Genet. 2016;98(6):1235–42. https://doi.org/10.1016/j.ajhg.2016.03.030.",
+      "volume": "98",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/jhg.2013.58",
+      "author": "R Brugnoni",
+      "doi-asserted-by": "publisher",
+      "first-page": "581",
+      "issue": "9",
+      "journal-title": "J Hum Genet",
+      "key": "472_CR38",
+      "unstructured": "Brugnoni R, Kapetis D, Imbrici P, Pessia M, Canioni E, Colleoni L, et al. A large cohort of myotonia congenita probands: novel mutations and a high-frequency mutation region in exons 4 and 5 of the CLCN1 gene. J Hum Genet. 2013;58(9):581–7. https://doi.org/10.1038/jhg.2013.58.",
+      "volume": "58",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/ejhg.2008.39",
+      "author": "J Trip",
+      "doi-asserted-by": "publisher",
+      "first-page": "921",
+      "issue": "8",
+      "journal-title": "Eur J Hum Genet",
+      "key": "472_CR39",
+      "unstructured": "Trip J, Drost G, Verbove DJ, van der Kooi AJ, Kuks JB, Notermans NC, et al. In tandem analysis of CLCN1 and SCN4A greatly enhances mutation detection in families with non-dystrophic myotonia. Eur J Hum Genet. 2008;16(8):921–9. https://doi.org/10.1038/ejhg.2008.39.",
+      "volume": "16",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.ymgme.2016.01.008",
+      "author": "M Pupavac",
+      "doi-asserted-by": "publisher",
+      "first-page": "363",
+      "issue": "3",
+      "journal-title": "Mol Genet Metab",
+      "key": "472_CR40",
+      "unstructured": "Pupavac M, Tian X, Chu J, Wang G, Feng Y, Chen S, et al. Added value of next generation gene panel analysis for patients with elevated methylmalonic acid and no clinical diagnosis following functional studies of vitamin B12 metabolism. Mol Genet Metab. 2016;117(3):363–8. https://doi.org/10.1016/j.ymgme.2016.01.008.",
+      "volume": "117",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00472-w"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Community data-driven approach to identify pathogenic founder variants for pan-ethnic carrier screening panels"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

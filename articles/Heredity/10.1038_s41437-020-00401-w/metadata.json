@@ -1,0 +1,1081 @@
+{
+  "DOI": "10.1038/s41437-020-00401-w",
+  "ISSN": [
+    "0018-067X",
+    "1365-2540"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41437-020-00401-w",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eAn increasing number of field studies have shown that the phenotype of an individual plant depends not only on its genotype but also on those of neighboring plants; however, this fact is not taken into consideration in genome-wide association studies (GWAS). Based on the Ising model of ferromagnetism, we incorporated neighbor genotypic identity into a regression model, named “Neighbor GWAS”. Our simulations showed that the effective range of neighbor effects could be estimated using an observed phenotype when the proportion of phenotypic variation explained (PVE) by neighbor effects peaked. The spatial scale of the first nearest neighbors gave the maximum power to detect the causal variants responsible for neighbor effects, unless their effective range was too broad. However, if the effective range of the neighbor effects was broad and minor allele frequencies were low, there was collinearity between the self and neighbor effects. To suppress the false positive detection of neighbor effects, the fixed effect and variance components involved in the neighbor effects should be tested in comparison with a standard GWAS model. We applied neighbor GWAS to field herbivory data from 199 accessions of \u003cjats:italic\u003eArabidopsis thaliana\u003c/jats:italic\u003e and found that neighbor effects explained 8% more of the PVE of the observed damage than standard GWAS. The neighbor GWAS method provides a novel tool that could facilitate the analysis of complex traits in spatially structured environments and is available as an R package at CRAN (\u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://cran.rproject.org/package=rNeighborGWAS\"\u003ehttps://cran.rproject.org/package=rNeighborGWAS\u003c/jats:ext-link\u003e).\u003c/jats:p\u003e",
+  "alternative-id": [
+    "401"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "14 March 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "25 December 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "28 December 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "29 January 2021"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-6466-723X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Sato",
+      "given": "Yasuhiro",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Yamamoto",
+      "given": "Eiji",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6483-1781",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Shimizu",
+      "given": "Kentaro K.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7891-5049",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Nagano",
+      "given": "Atsushi J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Heredity"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        29
+      ]
+    ],
+    "date-time": "2021-01-29T11:18:42Z",
+    "timestamp": 1611919122000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        20
+      ]
+    ],
+    "date-time": "2023-05-20T21:18:10Z",
+    "timestamp": 1684617490000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100002241",
+      "award": [
+        "JPMJCR16O3",
+        "JPMJPR17Q4",
+        "JPMJPR16Q9",
+        "JPMJCR16O3"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "MEXT | Japan Science and Technology Agency"
+    },
+    {
+      "DOI": "10.13039/501100001691",
+      "award": [
+        "16J30005",
+        "18H04785"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "MEXT | Japan Society for the Promotion of Science"
+    },
+    {
+      "DOI": "10.13039/501100001711",
+      "award": [
+        "31003A_182318"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        13
+      ]
+    ],
+    "date-time": "2024-04-13T05:57:52Z",
+    "timestamp": 1712987872574
+  },
+  "is-referenced-by-count": 9,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0018-067X"
+    },
+    {
+      "type": "electronic",
+      "value": "1365-2540"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        29
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            29
+          ]
+        ],
+        "date-time": "2021-01-29T00:00:00Z",
+        "timestamp": 1611878400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            29
+          ]
+        ],
+        "date-time": "2021-01-29T00:00:00Z",
+        "timestamp": 1611878400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-00401-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-00401-w",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-00401-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "597-614",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        29
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        29
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        4
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.cell.2016.05.063",
+      "author": "C Alonso-Blanco",
+      "doi-asserted-by": "publisher",
+      "first-page": "481",
+      "journal-title": "Cell",
+      "key": "401_CR1",
+      "unstructured": "Alonso-Blanco C, Andrade J, Becker C, Bemm F, Bergelson J, Borgwardt KM et al. (2016) 1,135 genomes reveal the global pattern of polymorphism in Arabidopsis thaliana. Cell 166:481–491. https://doi.org/10.1016/j.cell.2016.05.063",
+      "volume": "166",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0010060",
+      "author": "MJ Aranzana",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Genet",
+      "key": "401_CR2",
+      "unstructured": "Aranzana MJ, Kim S, Zhao K, Bakker E, Horton M, Jakob K et al. (2005) Genome-wide association mapping in Arabidopsis identifies previously known flowering time and pathogen resistance genes. PLoS Genet 1:e60. https://doi.org/10.1371/journal.pgen.0010060",
+      "volume": "1",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/nature08800",
+      "author": "S Atwell",
+      "doi-asserted-by": "publisher",
+      "first-page": "627",
+      "journal-title": "Nature",
+      "key": "401_CR3",
+      "unstructured": "Atwell S, Huang YS, Vilhjálmsson BJ, Willems G, Horton M, Li Y et al. (2010) Genome-wide association study of 107 phenotypes in Arabidopsis thaliana inbred lines. Nature 465:627–631. https://doi.org/10.1038/nature08800",
+      "volume": "465",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1186/s13073-015-0138-2",
+      "author": "PL Auer",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Med",
+      "key": "401_CR4",
+      "unstructured": "Auer PL, Lettre G (2015) Rare variant association studies: considerations, challenges and opportunities. Genome Med 7:16. https://doi.org/10.1186/s13073-015-0138-2",
+      "volume": "7",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.jtbi.2009.09.026",
+      "author": "S Azaele",
+      "doi-asserted-by": "publisher",
+      "first-page": "323",
+      "journal-title": "J Theor Biol",
+      "key": "401_CR5",
+      "unstructured": "Azaele S, Muneepeerakul R, Rinaldo A, Rodriguez-Iturbe I (2010) Inferring plant ecosystem organization from species occurrences. J Theor Biol 262:323–329. https://doi.org/10.1016/j.jtbi.2009.09.026",
+      "volume": "262",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1146/annurev.ecolsys.110308.120242",
+      "author": "P Barbosa",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Ann Rev Ecol Evol Sys",
+      "key": "401_CR6",
+      "unstructured": "Barbosa P, Hines J, Kaplan I, Martinson H, Szczepaniec A, Szendrei Z (2009) Associational resistance and associational susceptibility: having right or wrong neighbors. Ann Rev Ecol Evol Sys 40:1–20. https://doi.org/10.1146/annurev.ecolsys.110308.120242",
+      "volume": "40",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1007/s00442-005-0260-8",
+      "author": "UA Bergvall",
+      "doi-asserted-by": "publisher",
+      "first-page": "253",
+      "journal-title": "Oecologia",
+      "key": "401_CR7",
+      "unstructured": "Bergvall UA, Rautio P, Kesti K, Tuomi J, Leimar O (2006) Associational effects of plant defences in relation to within- and between-patch food choice by a mammalian herbivore: neighbour contrast susceptibility and defence. Oecologia 147:253–260. https://doi.org/10.1007/s00442-005-0260-8",
+      "volume": "147",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1186/s13059-017-1212-4",
+      "author": "L Bomba",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "401_CR8",
+      "unstructured": "Bomba L, Walter K, Soranzo N (2017) The impact of rare and low-frequency genetic variants in common disease. Genome Biol 18:77. https://doi.org/10.1186/s13059-017-1212-4",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1073/pnas.1421416112",
+      "author": "B Brachi",
+      "doi-asserted-by": "publisher",
+      "first-page": "4032",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "401_CR9",
+      "unstructured": "Brachi B, Meyer CG, Villoutreix R, Platt A, Morton TC, Roux F et al. (2015) Coselected genes determine adaptive variation in herbivore resistance throughout the native range of Arabidopsis thaliana. Proc Natl Acad Sci USA 112:4032–4037. https://doi.org/10.1073/pnas.1421416112",
+      "volume": "112",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/gb-2011-12-10-232",
+      "author": "B Brachi",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "401_CR10",
+      "unstructured": "Brachi B, Morris GP, Borevitz JO (2011) Genome-wide association studies in plants: the missing heritability is in the field. Genome Biol 12:232. https://doi.org/10.1186/gb-2011-12-10-232",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1111/nph.13410",
+      "author": "JG Bragg",
+      "doi-asserted-by": "publisher",
+      "first-page": "953",
+      "journal-title": "N. Phytol",
+      "key": "401_CR11",
+      "unstructured": "Bragg JG, Supple MA, Andrew RL, Borevitz JO (2015) Genomic variation across landscapes: insights and applications. N. Phytol 207:953–967",
+      "volume": "207",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.01.005",
+      "author": "BL Browning",
+      "doi-asserted-by": "publisher",
+      "first-page": "210",
+      "journal-title": "Am J Hum Genet",
+      "key": "401_CR12",
+      "unstructured": "Browning BL, Browning SR (2009) A unified approach to genotype imputation and haplotype-phase inference for large data sets of trios and unrelated individuals. Am J Hum Genet 84:210–223. https://doi.org/10.1016/j.ajhg.2009.01.005",
+      "volume": "84",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.18129/B9.bioc.GO.db",
+      "doi-asserted-by": "publisher",
+      "key": "401_CR13",
+      "unstructured": "Carlson M (2018) GO.db: A set of annotation maps describing the entire Gene Ontology. R package version 3.7.0. https://doi.org/10.18129/B9.bioc.GO.db"
+    },
+    {
+      "DOI": "10.1111/j.1744-7348.2009.00363.x",
+      "author": "LR Carrasco",
+      "doi-asserted-by": "publisher",
+      "first-page": "63",
+      "journal-title": "Ann Appl Biol",
+      "key": "401_CR14",
+      "unstructured": "Carrasco LR, Harwood TD, Toepfer S, MacLeod A, Levay N, Kiss J et al. (2010) Dispersal kernels of the invasive alien western corn rootworm and the effectiveness of buffer zones in eradication programmes in Europe. Ann Appl Biol 156:63–77. https://doi.org/10.1111/j.1744-7348.2009.00363.x",
+      "volume": "156",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1534/genetics.109.108522",
+      "author": "EKF Chan",
+      "doi-asserted-by": "publisher",
+      "first-page": "991",
+      "journal-title": "Genetics",
+      "key": "401_CR15",
+      "unstructured": "Chan EKF, Rowe HC, Kliebenstein DJ (2010) Understanding the evolution of defense metabolites in Arabidopsis thaliana using genome-wide association mapping. Genetics 185:991–1007. https://doi.org/10.1534/genetics.109.108522",
+      "volume": "185",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/eap.1807",
+      "author": "I Dahlin",
+      "doi-asserted-by": "publisher",
+      "first-page": "2187",
+      "journal-title": "Ecol Appl",
+      "key": "401_CR16",
+      "unstructured": "Dahlin I, Rubene D, Glinwood R, Ninkovic V (2018) Pest suppression in cultivar mixtures is influenced by neighbor-specific plant-plant communication. Ecol Appl 28:2187–2196. https://doi.org/10.1002/eap.1807",
+      "volume": "28",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/j.1365-294X.2006.03155.x",
+      "author": "C Devaux",
+      "doi-asserted-by": "publisher",
+      "first-page": "487",
+      "journal-title": "Mol Ecol",
+      "key": "401_CR17",
+      "unstructured": "Devaux C, Lavigne C, Austerlitz F, Klein EK (2007) Modelling and estimating pollen movement in oilseed rape (Brassica napus) at the landscape scale using genetic markers. Mol Ecol 16:487–499. https://doi.org/10.1111/j.1365-294X.2006.03155.x",
+      "volume": "16",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1007/s11103-005-7306-5",
+      "author": "A Devoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "497",
+      "journal-title": "Plant Mol Biol",
+      "key": "401_CR18",
+      "unstructured": "Devoto A, Ellis C, Magusin A, Chang HS, Chilcott C, Zhu T et al. (2005) Expression profiling reveals COI1 to be a key regulator of genes involved in wound- and methyl jasmonate-induced secondary metabolism, defence, and hormone interactions. Plant Mol Biol 58:497–513. https://doi.org/10.1007/s11103-005-7306-5",
+      "volume": "58",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.tplants.2009.12.002",
+      "author": "M Dicke",
+      "doi-asserted-by": "publisher",
+      "first-page": "167",
+      "journal-title": "Trends Plant Sci",
+      "key": "401_CR19",
+      "unstructured": "Dicke M, Baldwin IT (2010) The evolutionary context for herbivore-induced plant volatiles: beyond the ‘cry for help’. Trends Plant Sci 15:167–175. https://doi.org/10.1016/j.tplants.2009.12.002",
+      "volume": "15",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.pbi.2018.03.008",
+      "author": "M Erb",
+      "doi-asserted-by": "publisher",
+      "first-page": "117",
+      "journal-title": "Curr Opin Plant Biol",
+      "key": "401_CR20",
+      "unstructured": "Erb M (2018) Volatiles as inducers and suppressors of plant defense and immunity - origins, specificity, perception and signaling. Curr Opin Plant Biol 44:117–121. https://doi.org/10.1016/j.pbi.2018.03.008",
+      "volume": "44",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/molbev/msz078",
+      "author": "L Frachon",
+      "doi-asserted-by": "publisher",
+      "first-page": "1442",
+      "journal-title": "Mol Biol Evol",
+      "key": "401_CR21",
+      "unstructured": "Frachon L, Mayjonade B, Bartoli C, Hautekèete NC, Roux F (2019) Adaptation to plant communities across the genome of Arabidopsis thaliana. Mol Biol Evol 36:1442–1456. https://doi.org/10.1093/molbev/msz078",
+      "volume": "36",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1534/g3.118.200700",
+      "author": "JL Gage",
+      "doi-asserted-by": "publisher",
+      "first-page": "3715",
+      "journal-title": "G3: Genes|Genomes|Genet",
+      "key": "401_CR22",
+      "unstructured": "Gage JL, De Leon N, Clayton MK (2018) Comparing genome-wide association study results from different measurements of an underlying phenotype. G3: Genes|Genomes|Genet 8:3715–3722. https://doi.org/10.1534/g3.118.200700",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0059661",
+      "author": "S Geiselhardt",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "401_CR23",
+      "unstructured": "Geiselhardt S, Yoneya K, Blenn B, Drechsler N, Gershenzon J, Kunze R et al. (2013) Egg laying of cabbage white butterfly (Pieris brassicae) on Arabidopsis thaliana affects subsequent performance of the larvae. PLoS ONE 8:e59661. https://doi.org/10.1371/journal.pone.0059661",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/978-1-62703-447-0",
+      "doi-asserted-by": "publisher",
+      "key": "401_CR24",
+      "unstructured": "Gondro C, van der Werf J, Hayes B (eds) (2013) Genome-wide association studies and genomic prediction. Methods in Molecular Biology. Humana Press, New York. https://doi.org/10.1007/978-1-62703-447-0"
+    },
+    {
+      "DOI": "10.1016/j.tig.2010.12.003",
+      "author": "MT Hamblin",
+      "doi-asserted-by": "publisher",
+      "first-page": "98",
+      "journal-title": "Trends Genet",
+      "key": "401_CR25",
+      "unstructured": "Hamblin MT, Buckler ES, Jannink JL (2011) Population genetics of genomics-based crop improvement methods. Trends Genet 27:98–106. https://doi.org/10.1016/j.tig.2010.12.003",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.baae.2008.06.004",
+      "author": "PA Hambäck",
+      "doi-asserted-by": "publisher",
+      "first-page": "228",
+      "journal-title": "Basic Appl Ecol",
+      "key": "401_CR26",
+      "unstructured": "Hambäck PA, Björkman M, Rämert B, Hopkins RJ (2009) Scale-dependent responses in cabbage herbivores affect attack rates in spatially heterogeneous systems. Basic Appl Ecol 10:228–236. https://doi.org/10.1016/j.baae.2008.06.004",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1890/13-0793.1",
+      "author": "PA Hambäck",
+      "doi-asserted-by": "publisher",
+      "first-page": "1370",
+      "journal-title": "Ecology",
+      "key": "401_CR27",
+      "unstructured": "Hambäck PA, Inouye BD, Andersson P, Underwood N (2014) Effects of plant neighborhoods on plant-herbivore interactions: resource dilution and associational effects. Ecology 95:1370–1383. https://doi.org/10.1890/13-0793.1",
+      "volume": "95",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.molbev.a003963",
+      "author": "MT Hauser",
+      "doi-asserted-by": "publisher",
+      "first-page": "1754",
+      "journal-title": "Mol Biol Evol",
+      "key": "401_CR28",
+      "unstructured": "Hauser MT, Harr B, Schlötterer C (2001) Trichome distribution in Arabidopsis thaliana and its close relative Arabidopsis lyrata: molecular analysis of the candidate gene GLABROUS1. Mol Biol Evol 18:1754–1763. https://doi.org/10.1093/oxfordjournals.molbev.a003963",
+      "volume": "18",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/ncomms6320",
+      "author": "MW Horton",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "401_CR29",
+      "unstructured": "Horton MW, Bodenhausen N, Beilsmith K, Meng D, Muegge BD, Subramanian S et al. (2014) Genome-wide association study of Arabidopsis thaliana leaf microbial community. Nat Commun 5:5320. https://doi.org/10.1038/ncomms6320",
+      "volume": "5",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/ng.1042",
+      "author": "MW Horton",
+      "doi-asserted-by": "publisher",
+      "first-page": "212",
+      "journal-title": "Nat Genet",
+      "key": "401_CR30",
+      "unstructured": "Horton MW, Hancock AM, Huang YS, Toomajian C, Atwell S, Auton A et al. (2012) Genome-wide patterns of genetic variation in worldwide Arabidopsis thaliana accessions from the RegMap panel. Nat Genet 44:212–216. https://doi.org/10.1038/ng.1042",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/ece3.4750",
+      "author": "TY Ida",
+      "doi-asserted-by": "publisher",
+      "first-page": "12981",
+      "journal-title": "Ecol Evol",
+      "key": "401_CR31",
+      "unstructured": "Ida TY, Takanashi K, Tamura M, Ozawa R, Nakashima Y, Ohgushi T (2018) Defensive chemicals of neighboring plants limit visits of herbivorous insects: Associational resistance within a plant population. Ecol Evol 8:12981–12990. https://doi.org/10.1002/ece3.4750",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/BF02980577",
+      "author": "E Ising",
+      "doi-asserted-by": "publisher",
+      "first-page": "253",
+      "journal-title": "Z für Phys",
+      "key": "401_CR32",
+      "unstructured": "Ising E (1925) Beitrag zur theorie des ferromagnetismus. Z für Phys 31:253–258",
+      "volume": "31",
+      "year": "1925"
+    },
+    {
+      "DOI": "10.1093/bfgp/elq001",
+      "author": "JL Jannink",
+      "doi-asserted-by": "publisher",
+      "first-page": "166",
+      "journal-title": "Brief Funct Genom",
+      "key": "401_CR33",
+      "unstructured": "Jannink JL, Lorenz AJ, Iwata H (2010) Genomic selection in plant breeding: from theory to practice. Brief Funct Genom 9:166–177. https://doi.org/10.1093/bfgp/elq001",
+      "volume": "9",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1534/genetics.107.080101",
+      "author": "HM Kang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1709",
+      "journal-title": "Genetics",
+      "key": "401_CR34",
+      "unstructured": "Kang HM, Zaitlen NA, Wade CM, Kirby A, Heckerman D, Daly MJ et al. (2008) Efficient control of population structure in model organism association mapping. Genetics 178:1709–1723. https://doi.org/10.1534/genetics.107.080101",
+      "volume": "178",
+      "year": "2008"
+    },
+    {
+      "key": "401_CR35",
+      "unstructured": "Karban R (1992) Plant variation: its effects on populations of herbivorous insects. In: Fritz RS, Simms EL (eds) Plant resistance to herbivores and pathogens: ecology, evolution, and genetics, University of Chicago Press, Chicago, pp. 195–215"
+    },
+    {
+      "DOI": "10.1143/JPSJ.68.2553",
+      "author": "S Kizaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "2553",
+      "journal-title": "J Phys Soc Jpn",
+      "key": "401_CR36",
+      "unstructured": "Kizaki S, Katori M (1999) Analysis of canopy-gap structures of forests by Ising-Gibbs states-equilibrium and scaling property of real forests. J Phys Soc Jpn 68:2553–2560. https://doi.org/10.1143/JPSJ.68.2553",
+      "volume": "68",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts315",
+      "author": "R Kofler",
+      "doi-asserted-by": "publisher",
+      "first-page": "2084",
+      "journal-title": "Bioinformatics",
+      "key": "401_CR37",
+      "unstructured": "Kofler R, Schlotterer C (2012) Gowinda: unbiased analysis of gene set enrichment for genome-wide association studies. Bioinformatics 28:2084–2085. https://doi.org/10.1093/bioinformatics/bts315",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/1746-4811-9-29",
+      "author": "A Korte",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Plant Methods",
+      "key": "401_CR38",
+      "unstructured": "Korte A, Farlow A (2013) The advantages and limitations of trait analysis with GWAS: a review. Plant Methods 9:29. https://doi.org/10.1186/1746-4811-9-29",
+      "volume": "9",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "author": "S Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "Am J Hum Genet",
+      "key": "401_CR39",
+      "unstructured": "Lee S, Abecasis GR, Boehnke M, Lin X (2014) Rare-variant association analysis: study designs and statistical tests. Am J Hum Genet 95:5–23. https://doi.org/10.1016/j.ajhg.2014.06.009",
+      "volume": "95",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1104/pp.108.125757",
+      "author": "J Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1721",
+      "journal-title": "Plant Physiol",
+      "key": "401_CR40",
+      "unstructured": "Li J, Hansen BG, Ober JA, Kliebenstein DJ, Halkier BA (2008) Subclade of flavin-monooxygenases involved in aliphatic glucosinolate biosynthesis. Plant Physiol 148:1721–1733. https://doi.org/10.1104/pp.108.125757",
+      "volume": "148",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1534/genetics.119.302077",
+      "author": "E López-Cortegano",
+      "doi-asserted-by": "publisher",
+      "first-page": "891",
+      "journal-title": "Genetics",
+      "key": "401_CR41",
+      "unstructured": "López-Cortegano E, Caballero A (2019) Inferring the nature of missing heritability in human traits using data from the GWAS catalog. Genetics 212:891–904. https://doi.org/10.1534/genetics.119.302077",
+      "volume": "212",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1143/PTP.127.791",
+      "author": "BM McCoy",
+      "doi-asserted-by": "publisher",
+      "first-page": "791",
+      "journal-title": "Prog Theor Phys",
+      "key": "401_CR42",
+      "unstructured": "McCoy BM, Maillard JM (2012) The importance of the Ising model. Prog Theor Phys 127:791–817. https://doi.org/10.1143/PTP.127.791",
+      "volume": "127",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1146/annurev.phyto.40.011402.113723",
+      "author": "CC Mundt",
+      "doi-asserted-by": "publisher",
+      "first-page": "381",
+      "journal-title": "Ann Rev Phytopathol",
+      "key": "401_CR43",
+      "unstructured": "Mundt CC (2002) Use of multiline cultivars and cultivar mixtures for disease management. Ann Rev Phytopathol 40:381–410. https://doi.org/10.1146/annurev.phyto.40.011402.113723",
+      "volume": "40",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1038/s41559-018-0629-9",
+      "author": "S Nallu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1418",
+      "journal-title": "Nat Ecol Evol",
+      "key": "401_CR44",
+      "unstructured": "Nallu S, Hill JA, Don K, Sahagun C, Zhang W, Meslin C et al. (2018) The molecular genetic basis of herbivory between butterflies and their host plants. Nat Ecol Evol 2:1418–1427. https://doi.org/10.1038/s41559-018-0629-9",
+      "volume": "2",
+      "year": "2018"
+    },
+    {
+      "key": "401_CR45",
+      "unstructured": "Perdry H, Dandine-Roulland C (2018) gaston: Genetic Data Handling (QC, GRM, LD, PCA) \u0026 Linear Mixed Models. R package version 1.5.4. https://CRAN.R-project.org/package=gaston"
+    },
+    {
+      "key": "401_CR46",
+      "unstructured": "R Core Team (2019) R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria, https://www.R-project.org/"
+    },
+    {
+      "DOI": "10.1016/s1369-5266(98)80264-1",
+      "author": "P Reymond",
+      "doi-asserted-by": "publisher",
+      "first-page": "404",
+      "journal-title": "Curr Opin Plant Biol",
+      "key": "401_CR47",
+      "unstructured": "Reymond P, Farmer EE (1998) Jasmonate and salicylate as global signals for defense gene expression. Curr Opin Plant Biol 1:404–411. https://doi.org/10.1016/s1369-5266(98)80264-1",
+      "volume": "1",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0103225",
+      "author": "A Rieux",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS One",
+      "key": "401_CR48",
+      "unstructured": "Rieux A, Soubeyrand S, Bonnot F, Klein EK, Ngando JE, Mehl A et al. (2014) Long-distance wind-dispersal of spores in a fungal plant pathogen: estimation of anisotropic dispersal kernels from an extensive field experiment. PLoS One 9:e103225. https://doi.org/10.1371/journal.pone.0103225",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-77",
+      "author": "X Robin",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Bioinforma",
+      "key": "401_CR49",
+      "unstructured": "Robin X, Turck N, Hainard A, Tiberti N, Lisacek F, Sanchez JC et al. (2011) pROC: an open-source package for R and S+ to analyze and compare ROC curves. BMC Bioinforma 12:77. https://doi.org/10.1186/1471-2105-12-77",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1111/1442-1984.12201",
+      "author": "Y Sato",
+      "doi-asserted-by": "publisher",
+      "first-page": "91",
+      "journal-title": "Plant Species Biol",
+      "key": "401_CR50",
+      "unstructured": "Sato Y (2018) Associational effects and the maintenance of polymorphism in plant defense against herbivores: review and evidence. Plant Species Biol 33:91–108. https://doi.org/10.1111/1442-1984.12201",
+      "volume": "33",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/1365-2435.12937",
+      "author": "Y Sato",
+      "doi-asserted-by": "publisher",
+      "first-page": "2233",
+      "journal-title": "Funct Ecol",
+      "key": "401_CR51",
+      "unstructured": "Sato Y, Ito K, Kudoh H (2017) Optimal foraging by herbivores maintains polymorphism in defence in a natural plant population. Funct Ecol 31:2233–2243. https://doi.org/10.1111/1365-2435.12937",
+      "volume": "31",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/een.12179",
+      "author": "Y Sato",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "journal-title": "Ecol Entomol",
+      "key": "401_CR52",
+      "unstructured": "Sato Y, Kudoh H (2015) Tests of associational defence provided by hairy plants for glabrous plants of Arabidopsis halleri subsp. gemmifera against insect herbivores. Ecol Entomol 40:269–279. https://doi.org/10.1111/een.12179",
+      "volume": "40",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1086/692603",
+      "author": "Y Sato",
+      "doi-asserted-by": "publisher",
+      "first-page": "E67",
+      "journal-title": "Am Nat",
+      "key": "401_CR53",
+      "unstructured": "Sato Y, Kudoh H (2017) Herbivore-mediated interaction promotes the maintenance of trichome dimorphism through negative frequency-dependent selection. Am Nat 190:E67–E77. https://doi.org/10.1086/692603",
+      "volume": "190",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12870-019-1705-2",
+      "author": "Y Sato",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Plant Biol",
+      "key": "401_CR54",
+      "unstructured": "Sato Y, Shimizu-Inatsugi R, Yamazaki M, Shimizu KK, Nagano AJ (2019) Plant trichomes and a single gene GLABRA1 contribute to insect community composition on field-grown Arabidopsis thaliana. BMC Plant Biol 19:163. https://doi.org/10.1186/s12870-019-1705-2",
+      "volume": "19",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.jtbi.2004.04.027",
+      "author": "R Schlicht",
+      "doi-asserted-by": "publisher",
+      "first-page": "65",
+      "journal-title": "J Theor Biol",
+      "key": "401_CR55",
+      "unstructured": "Schlicht R, Iwasa Y (2004) Forest gap dynamics and the Ising model. J Theor Biol 230:65–75. https://doi.org/10.1016/j.jtbi.2004.04.027",
+      "volume": "230",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1534/g3.120.401300",
+      "author": "MF Schrauf",
+      "doi-asserted-by": "publisher",
+      "first-page": "3137",
+      "journal-title": "G3: Genes|Genomes|Genet",
+      "key": "401_CR56",
+      "unstructured": "Schrauf MF, Martini JWR, Simianer H, De los Campos G, Cantet R, Freudenthal J et al. (2020) Phantom epistasis in genomic selection: on the predictive ability of epistatic models. G3: Genes|Genomes|Genet 10:3137–3145. https://doi.org/10.1534/g3.120.401300",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.7554/eLife.04490",
+      "author": "MC Schuman",
+      "doi-asserted-by": "publisher",
+      "journal-title": "eLife",
+      "key": "401_CR57",
+      "unstructured": "Schuman MC, Allmann S, Baldwin IT (2015) Plant defense phenotypes determine the consequences of volatile emission for individuals and neighbors. eLife 4:e04490. https://doi.org/10.7554/eLife.04490",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkw986",
+      "author": "Ü Seren",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1054",
+      "journal-title": "Nucleic Acids Res",
+      "key": "401_CR58",
+      "unstructured": "Seren Ü, Grimm D, Fitz J, Weigel D, Nordborg M, Borgwardt K et al. (2017) AraPheno: a public database for Arabidopsis thaliana phenotypes. Nucleic Acids Res 45:D1054–D1059. https://doi.org/10.1093/nar/gkw986",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/BF00345736",
+      "author": "JO Tahvanainen",
+      "doi-asserted-by": "publisher",
+      "first-page": "321",
+      "journal-title": "Oecologia",
+      "key": "401_CR59",
+      "unstructured": "Tahvanainen JO, Root RB (1972) The influence of vegetational diversity on the population ecology of a specialized herbivore, Phyllotreta cruciferae (Coleoptera: Chrysomelidae). Oecologia 10:321–346. https://doi.org/10.1007/BF00345736",
+      "volume": "10",
+      "year": "1972"
+    },
+    {
+      "DOI": "10.1093/nar/gkx954",
+      "author": "M Togninalli",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1150",
+      "journal-title": "Nucleic Acids Res",
+      "key": "401_CR60",
+      "unstructured": "Togninalli M, Seren Ü, Meng D, Fitz J, Nordborg M, Weigel D et al. (2018) The AraGWAS Catalog: a curated and standardized Arabidopsis thaliana GWAS catalog. Nucleic Acids Res 46:D1150–D1156. https://doi.org/10.1093/nar/gkx954",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1086/707863",
+      "author": "N Underwood",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "journal-title": "Quart Rev Biol",
+      "key": "401_CR61",
+      "unstructured": "Underwood N, Hambäck PA, Inouye BD (2020) Pollinators, herbivores, and plant neighborhood effects. Quart Rev Biol 95:37–57. https://doi.org/10.1086/707863",
+      "volume": "95",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1086/674991",
+      "author": "N Underwood",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Quart Rev Biol",
+      "key": "401_CR62",
+      "unstructured": "Underwood N, Inouye BD, Hambäck PA (2014) A conceptual framework for associational effects: when do neighbors matter and how would we know? Quart Rev Biol 89:1–19. https://doi.org/10.1086/674991",
+      "volume": "89",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1890/0012-9658(2000)081[1565:TEOHPG]2.0.CO;2",
+      "author": "N Underwood",
+      "doi-asserted-by": "publisher",
+      "first-page": "1565",
+      "journal-title": "Ecology",
+      "key": "401_CR63",
+      "unstructured": "Underwood N, Rausher MD (2000) The effects of host-plant genotype on herbivore population dynamics. Ecology 81:1565–1576. https://doi.org/10.1890/0012-9658(2000)081[1565:TEOHPG]2.0.CO;2",
+      "volume": "81",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1098/rspb.2011.0239",
+      "author": "S Utsumi",
+      "doi-asserted-by": "publisher",
+      "first-page": "3108",
+      "journal-title": "Proc R Soc B",
+      "key": "401_CR64",
+      "unstructured": "Utsumi S, Ando Y, Craig TP, Ohgushi T (2011) Plant genotypic diversity increases population size of a herbivorous insect. Proc R Soc B 278:3108–3115. https://doi.org/10.1098/rspb.2011.0239",
+      "volume": "278",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1199/tab.0107",
+      "author": "RM van Poecke",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Arabidopsis Book",
+      "key": "401_CR65",
+      "unstructured": "van Poecke RM (2007) Arabidopsis-insect interactions. Arabidopsis Book 5:e0107. https://doi.org/10.1199/tab.0107",
+      "volume": "5",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1111/1365-2435.12670",
+      "author": "TA Verschut",
+      "doi-asserted-by": "publisher",
+      "first-page": "1826",
+      "journal-title": "Funct Ecol",
+      "key": "401_CR66",
+      "unstructured": "Verschut TA, Becher PG, Anderson P, Hambäck PA (2016) Disentangling associational effects: both resource density and resource frequency affect search behaviour in complex environments. Funct Ecol 30:1826–1833. https://doi.org/10.1111/1365-2435.12670",
+      "volume": "30",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1073/pnas.1710980115",
+      "author": "M Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "E5440",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "401_CR67",
+      "unstructured": "Wang M, Roux F, Bartoli C, Huard-Chauveau C, Meyer C, Lee H et al. (2018) Two-way mixed-effects methods for joint association analysis using both host and pathogen genomes. Proc Natl Acad Sci USA 115:E5440–E5449. https://doi.org/10.1073/pnas.1710980115",
+      "volume": "115",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/0169-5347(90)90095-U",
+      "author": "J Weiner",
+      "doi-asserted-by": "publisher",
+      "first-page": "360",
+      "journal-title": "Trends Ecol Evol",
+      "key": "401_CR68",
+      "unstructured": "Weiner J (1990) Asymmetric competition in plant populations. Trends Ecol Evol 5:360–364. https://doi.org/10.1016/0169-5347(90)90095-U",
+      "volume": "5",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1038/hdy.2016.84",
+      "author": "E Yamamoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "202",
+      "journal-title": "Heredity",
+      "key": "401_CR69",
+      "unstructured": "Yamamoto E, Matsunaga H, Onogi A, Ohyama A, Miyatake K, Yamaguchi H et al. (2017) Efficiency of genomic selection for breeding population design and phenotype prediction in tomato. Heredity 118:202–209. https://doi.org/10.1038/hdy.2016.84",
+      "volume": "118",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1534/genetics.114.170795",
+      "author": "AI Young",
+      "doi-asserted-by": "publisher",
+      "first-page": "1405",
+      "journal-title": "Genetics",
+      "key": "401_CR70",
+      "unstructured": "Young AI, Durbin R (2014) Estimation of epistatic variance components and heritability in founder populations and crosses. Genetics 198:1405–1416. https://doi.org/10.1534/genetics.114.170795",
+      "volume": "198",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1890/11-0876.1",
+      "author": "SL Zeller",
+      "doi-asserted-by": "publisher",
+      "first-page": "1817",
+      "journal-title": "Ecol Appl",
+      "key": "401_CR71",
+      "unstructured": "Zeller SL, Kalinina O, Flynn DFB, Schmid B (2012) Mixtures of genetically modified wheat lines outperform monocultures. Ecol Appl 22:1817–1826. https://doi.org/10.1890/11-0876.1",
+      "volume": "22",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/ng.2310",
+      "author": "X Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "821",
+      "journal-title": "Nat Genet",
+      "key": "401_CR72",
+      "unstructured": "Zhou X, Stephens M (2012) Genome-wide efficient mixed-model analysis for association studies. Nat Genet 44:821–824",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1073/pnas.1119675109",
+      "author": "O Zuk",
+      "doi-asserted-by": "publisher",
+      "first-page": "1193",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "401_CR73",
+      "unstructured": "Zuk O, Hechter E, Sunyaev SR, Lander ES (2012) The mystery of missing heritability: genetic interactions create phantom heritability. Proc Natl Acad Sci USA 109:1193–1198. https://doi.org/10.1073/pnas.1119675109",
+      "volume": "109",
+      "year": "2012"
+    }
+  ],
+  "reference-count": 73,
+  "references-count": 73,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/845735",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41437-020-00401-w"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Heredity"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Neighbor GWAS: incorporating neighbor genotypic identity into genome-wide association studies of field herbivory"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "126"
+}

@@ -1,0 +1,545 @@
+{
+  "DOI": "10.1002/gepi.22435",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22435",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMendelian randomization (MR) is an application of instrumental variable (IV) methods to observational data in which the IV is a genetic variant. MR methods applicable to the general exponential family of distributions are currently not well characterized. We adapt a general linear model framework to the IV setting and propose a general MR method applicable to any full‐rank distribution from the exponential family. Empirical bias and coverage are estimated via simulations. The proposed method is compared to several existing MR methods. Real data analyses are performed using data from the REGARDS study to estimate the potential causal effect of smoking frequency on stroke risk in African Americans. In simulations with binary variates and very weak instruments the proposed method had the lowest median [Q\u003cjats:sub\u003e1\u003c/jats:sub\u003e, Q\u003cjats:sub\u003e3\u003c/jats:sub\u003e] bias (0.10 [−3.68 to 3.62]); compared with 2SPS (0.27 [−3.74 to 4.26]) and the Wald method (−0.69 [−1.72 to 0.35]). Low bias was observed throughout other simulation scenarios; as well as more than 90% coverage for the proposed method. In simulations with count variates, the proposed method performed comparably to 2SPS; the Wald method maintained the most consistent low bias; and 2SRI was biased towards the null. Real data analyses find no evidence for a causal effect of smoking frequency on stroke risk. The proposed MR method has low bias and acceptable coverage across a wide range of distributional scenarios and instrument strengths; and provides a more parsimonious framework for asymptotic hypothesis testing compared to existing two‐stage procedures.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22435"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-07-02"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2021-10-11"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-10-21"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-8860-1676",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Alabama at Birmingham  Birmingham Alabama USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Allman",
+      "given": "Phillip H.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Alabama at Birmingham  Birmingham Alabama USA"
+        }
+      ],
+      "family": "Aban",
+      "given": "Inmaculada",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Alabama at Birmingham  Birmingham Alabama USA"
+        }
+      ],
+      "family": "Long",
+      "given": "Dustin M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Alabama at Birmingham  Birmingham Alabama USA"
+        }
+      ],
+      "family": "Patki",
+      "given": "Amit",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biomedical Data Science Dartmouth College  Hanover New Hampshire USA"
+        }
+      ],
+      "family": "MacKenzie",
+      "given": "Todd",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of Alabama at Birmingham  Birmingham Alabama USA"
+        }
+      ],
+      "family": "Irvin",
+      "given": "Marguerite R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biomedical Informatics and Personalized Medicine, Department of Medicine University of Colorado Anschutz Medical Campus  Aurora Colorado USA"
+        }
+      ],
+      "family": "Lange",
+      "given": "Leslie A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biomedical Informatics and Personalized Medicine, Department of Medicine University of Colorado Anschutz Medical Campus  Aurora Colorado USA"
+        }
+      ],
+      "family": "Lange",
+      "given": "Ethan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Alabama at Birmingham  Birmingham Alabama USA"
+        }
+      ],
+      "family": "Cutter",
+      "given": "Gary",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Alabama at Birmingham  Birmingham Alabama USA"
+        }
+      ],
+      "family": "Tiwari",
+      "given": "Hemant K.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        21
+      ]
+    ],
+    "date-time": "2021-10-21T16:28:21Z",
+    "timestamp": 1634833701000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        27
+      ]
+    ],
+    "date-time": "2023-08-27T08:23:20Z",
+    "timestamp": 1693124600000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000049",
+      "award": [
+        "U01 NS041588"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Aging"
+    },
+    {
+      "DOI": "10.13039/100000065",
+      "award": [
+        "U01 NS041588"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Neurological Disorders and Stroke"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        14
+      ]
+    ],
+    "date-time": "2024-02-14T17:57:39Z",
+    "timestamp": 1707933459501
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        21
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            21
+          ]
+        ],
+        "date-time": "2021-10-21T00:00:00Z",
+        "timestamp": 1634774400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22435",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22435",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22435",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "17-31",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        21
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        21
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.22387",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.1016/0304-4076(74)90033-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1214/aoms/1177730090",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20394",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyu176",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1177/0962280215597579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1002/sim.3843",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "DOI": "10.1002/sim.4498",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyt093",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1201/b18084",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1002/sim.4241",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "author": "Casella G.",
+      "key": "e_1_2_9_13_1",
+      "volume-title": "Statistical inference",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1080/01621459.2012.734171",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_15_1"
+    },
+    {
+      "article-title": "Some problems in interval estimation",
+      "author": "Fieller E.",
+      "first-page": "175",
+      "issue": "2",
+      "journal-title": "Journal of the Royal Statistical Society: Series B",
+      "key": "e_1_2_9_16_1",
+      "volume": "16",
+      "year": "1954"
+    },
+    {
+      "DOI": "10.1161/CIRCGEN.117.002098",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.2307/1913081",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.2307/1913827",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "article-title": "The No‐U‐Turn sampler: adaptively setting path lengths in Hamiltonian Monte Carlo",
+      "author": "Hoffman M.",
+      "first-page": "1593",
+      "issue": "1",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_9_20_1",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1161/01.STR.0000217222.09978.ce",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_21_1"
+    },
+    {
+      "DOI": "10.1159/000086678",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1002/sim.4499",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(86)92972-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.1093/aje/148.1.1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "author": "Koopmans T.",
+      "key": "e_1_2_9_26_1",
+      "volume-title": "Statistical inference in dynamic economic models",
+      "year": "1950"
+    },
+    {
+      "DOI": "10.1002/ana.25534",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "article-title": "Effect of the rs1051730–rs16969968 variant and smoking cessation treatment: A meta‐analysis",
+      "author": "Leung T.",
+      "first-page": "15",
+      "issue": "7",
+      "journal-title": "Pharmacogenomics",
+      "key": "e_1_2_9_28_1",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0307-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_29_1"
+    },
+    {
+      "DOI": "10.1007/s10742-014-0117-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_30_1"
+    },
+    {
+      "DOI": "10.2307/1907619",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "DOI": "10.1586/erc.10.56",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_32_1"
+    },
+    {
+      "DOI": "10.1038/nrg3461",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_33_1"
+    },
+    {
+      "DOI": "10.1126/science.1059431",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_34_1"
+    },
+    {
+      "DOI": "10.1016/j.jhealeco.2007.09.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_35_1"
+    },
+    {
+      "author": "Theil H.",
+      "key": "e_1_2_9_36_1",
+      "volume-title": "Henri Theil's contributions to economics and econometrics",
+      "year": "1953"
+    },
+    {
+      "DOI": "10.1161/01.STR.0000259676.75552.38",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_37_1"
+    },
+    {
+      "DOI": "10.1214/aoms/1177731868",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_38_1"
+    },
+    {
+      "DOI": "10.1001/jama.1988.03720070025028",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_39_1"
+    },
+    {
+      "DOI": "10.1080/00949659308811554",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_40_1"
+    }
+  ],
+  "reference-count": 39,
+  "references-count": 39,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22435"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Mendelian randomization in the multivariate general linear model framework"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

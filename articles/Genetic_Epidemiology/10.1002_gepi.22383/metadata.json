@@ -1,0 +1,825 @@
+{
+  "DOI": "10.1002/gepi.22383",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22383",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe Translational Machine (TM) is a machine learning (ML)‐based analytic pipeline that translates genotypic/variant call data into biologically contextualized features that richly characterize complex variant architectures and permit greater interpretability and biological replication. It also reduces potentially confounding effects of population substructure on outcome prediction. The TM consists of three main components. First, replicable but flexible \u003cjats:italic\u003efeature engineering\u003c/jats:italic\u003e procedures translate genome‐scale data into biologically informative features that appropriately contextualize simple variant calls/genotypes within biological and functional contexts. Second, model‐free, nonparametric ML‐based \u003cjats:italic\u003efeature filtering\u003c/jats:italic\u003e procedures empirically reduce dimensionality and noise of both original genotype calls and engineered features. Third, a powerful ML algorithm for \u003cjats:italic\u003efeature selection\u003c/jats:italic\u003e is used to differentiate risk variant contributions across variant frequency and functional prediction spectra. The TM simultaneously evaluates potential contributions of variants operative under polygenic and heterogeneous models of genetic architecture. Our TM enables integration of biological information (e.g., genomic annotations) within conceptual frameworks akin to geneset‐/pathways‐based and collapsing methods, but overcomes some of these methods' limitations. The full TM pipeline is executed in R. Our approach and initial findings from its application to a whole‐exome schizophrenia case–control data set are presented. These TM procedures extend the findings of the primary investigation and yield novel results.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22383"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-10-23"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2021-03-23"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-05-03"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-1467-8923",
+      "affiliation": [
+        {
+          "name": "Waypoint Centre for Mental Health Care Penetanguishene University of Toronto  Toronto Ontario Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Askland",
+      "given": "Kathleen D.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Family Medicine and Public Health University of California San Diego  San Diego California USA"
+        }
+      ],
+      "family": "Strong",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department Biometry and Data Management Leibniz Institute for Prevention Research and Epidemiology ‐ BIPS GmbH  Germany"
+        }
+      ],
+      "family": "Wright",
+      "given": "Marvin N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Epidemiology, \u0026amp; Informatics, The Perelman School of Medicine University of Pennsylvania  Philadelphia Pennsylvania USA"
+        }
+      ],
+      "family": "Moore",
+      "given": "Jason H.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        4
+      ]
+    ],
+    "date-time": "2021-05-04T06:11:58Z",
+    "timestamp": 1620108718000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        30
+      ]
+    ],
+    "date-time": "2023-08-30T19:24:38Z",
+    "timestamp": 1693423478000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T23:29:33Z",
+    "timestamp": 1714001373877
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            5,
+            3
+          ]
+        ],
+        "date-time": "2021-05-03T00:00:00Z",
+        "timestamp": 1620000000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22383",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22383",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22383",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "485-536",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        5,
+        3
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/ng.2804",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_2_1"
+    },
+    {
+      "DOI": "10.1146/annurev-genet-102209-163421",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_3_1"
+    },
+    {
+      "DOI": "10.1007/s00439-008-0600-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_4_1"
+    },
+    {
+      "DOI": "10.1007/s00439-011-1082-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_5_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2015.00152",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_6_1"
+    },
+    {
+      "DOI": "10.1159/000488679",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_7_1"
+    },
+    {
+      "DOI": "10.3389/fphys.2017.00808",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_8_1"
+    },
+    {
+      "DOI": "10.1007/s00439-013-1334-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_9_1"
+    },
+    {
+      "article-title": "Analysis of a random forests model",
+      "author": "Biau G.",
+      "first-page": "1063",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_11_10_1",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "article-title": "Consistency of random forests and other averaging classifiers",
+      "author": "Biau G.",
+      "first-page": "2015",
+      "issue": "2008",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_11_11_1",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1523/JNEUROSCI.23-06-02306.2003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_12_1"
+    },
+    {
+      "article-title": "The impact of rare and low‐frequency genetic variants in common disease",
+      "author": "Bomba L.",
+      "first-page": "1",
+      "issue": "77",
+      "journal-title": "Genome Biology",
+      "key": "e_1_2_11_13_1",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bib/bbr053",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_14_1"
+    },
+    {
+      "DOI": "10.1002/widm.1072",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_15_1"
+    },
+    {
+      "DOI": "10.1146/annurev-biochem-062209-093836",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_16_1"
+    },
+    {
+      "DOI": "10.3389/fphar.2011.00053",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_17_1"
+    },
+    {
+      "author": "Breiman L.",
+      "key": "e_1_2_11_18_1",
+      "volume-title": "Random forests",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1073/pnas.090034797",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_19_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4615-2970-5_14",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_20_1"
+    },
+    {
+      "DOI": "10.1038/s41398-018-0200-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_21_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003224",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_22_1"
+    },
+    {
+      "DOI": "10.1002/sim.6959",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_23_1"
+    },
+    {
+      "DOI": "10.1186/1756-0381-7-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_24_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2014.00323",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_25_1"
+    },
+    {
+      "DOI": "10.3389/fncel.2017.00115",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_26_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-7-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_27_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.1965.tb00500.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_28_1"
+    },
+    {
+      "article-title": "Altered cell cycle dynamics in schizophrenia",
+      "author": "Fan Y.",
+      "first-page": "129",
+      "issue": "2",
+      "journal-title": "BPS",
+      "key": "e_1_2_11_29_1",
+      "volume": "71",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts568",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_30_1"
+    },
+    {
+      "DOI": "10.1016/j.tics.2017.06.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_31_1"
+    },
+    {
+      "article-title": "Random forests: Some methodological insights",
+      "author": "Genuer R.",
+      "journal-title": "arXiv",
+      "key": "e_1_2_11_32_1",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.patrec.2010.03.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_33_1"
+    },
+    {
+      "DOI": "10.3389/fnbeh.2014.00071",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_34_1"
+    },
+    {
+      "DOI": "10.1038/nn.4422",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_35_1"
+    },
+    {
+      "DOI": "10.1038/nn.3708",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_36_1"
+    },
+    {
+      "DOI": "10.1038/nature09160",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_37_1"
+    },
+    {
+      "DOI": "10.1146/annurev.ecolsys.37.091305.110224",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_38_1"
+    },
+    {
+      "DOI": "10.1016/j.csda.2012.09.020",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_39_1"
+    },
+    {
+      "article-title": "Editorial: Ion channel trafficking and cardiac arrhythmias",
+      "author": "Heyden M.",
+      "first-page": "1",
+      "journal-title": "Frontiers in Physiology",
+      "key": "e_1_2_11_40_1",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.pneurobio.2015.09.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_41_1"
+    },
+    {
+      "article-title": "Evidence of mitochondrial dysfunction within the complex genetic etiology of schizophrenia",
+      "author": "Hjelm B. E.",
+      "first-page": "201",
+      "journal-title": "Molecular Psychiatry",
+      "key": "e_1_2_11_42_1",
+      "volume": "1",
+      "year": "2015"
+    },
+    {
+      "article-title": "Variable selection method for the identification of epistatic models",
+      "author": "Holzinger E.",
+      "first-page": "195",
+      "journal-title": "Pacific Symposium on Biocomputing",
+      "key": "e_1_2_11_43_1",
+      "volume": "20",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0022547",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_44_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2013.00076",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_45_1"
+    },
+    {
+      "DOI": "10.1186/s13040-014-0028-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_46_1"
+    },
+    {
+      "DOI": "10.2174/138620709787047957",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_47_1"
+    },
+    {
+      "DOI": "10.1016/j.mcn.2011.05.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_48_1"
+    },
+    {
+      "DOI": "10.1074/jbc.M113.534495",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_49_1"
+    },
+    {
+      "DOI": "10.1038/npp.2008.19",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_50_1"
+    },
+    {
+      "DOI": "10.1186/s41512-018-0029-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_51_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_52_1"
+    },
+    {
+      "DOI": "10.1002/bimj.201300068",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_53_1"
+    },
+    {
+      "DOI": "10.1111/j.1365-294X.2006.03221.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_54_1"
+    },
+    {
+      "DOI": "10.1093/schbul/22.2.257",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_55_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_56_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1004219",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_57_1"
+    },
+    {
+      "DOI": "10.1038/nrg.2016.29",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_58_1"
+    },
+    {
+      "DOI": "10.1016/j.neulet.2010.08.079",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_59_1"
+    },
+    {
+      "DOI": "10.1186/s13073-020-00742-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_60_1"
+    },
+    {
+      "article-title": "Why sex differences in schizophrenia?",
+      "author": "Li R.",
+      "first-page": "37",
+      "issue": "1",
+      "journal-title": "Journal of Translation Neuroscience",
+      "key": "e_1_2_11_61_1",
+      "volume": "1",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1017/CBO9780511975820",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_62_1"
+    },
+    {
+      "DOI": "10.3414/ME00-01-0052",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_63_1"
+    },
+    {
+      "DOI": "10.1038/ng1337",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_64_1"
+    },
+    {
+      "DOI": "10.1007/s11154-011-9184-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_65_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003959",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_66_1"
+    },
+    {
+      "author": "Moore J.",
+      "first-page": "1150",
+      "key": "e_1_2_11_67_1",
+      "volume-title": "Proceedings of the genetic and evolutionary algorithm conference",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty373",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_68_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_69_1"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2006.03.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_70_1"
+    },
+    {
+      "article-title": "Tunability: Importance of hyperparameters of machine learning algorithms",
+      "author": "Probst P.",
+      "first-page": "1",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_11_71_1",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/widm.1301",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_72_1"
+    },
+    {
+      "DOI": "10.1038/nature12975",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_73_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000340",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_74_1"
+    },
+    {
+      "DOI": "10.1038/nrn2852",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_75_1"
+    },
+    {
+      "DOI": "10.1016/j.semcdb.2010.09.010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_76_1"
+    },
+    {
+      "DOI": "10.1016/j.biopsych.2018.08.022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_77_1"
+    },
+    {
+      "DOI": "10.1007/s11064-008-9865-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_78_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddv620",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_79_1"
+    },
+    {
+      "DOI": "10.1034/j.1600-0447.2000.00011.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_80_1"
+    },
+    {
+      "DOI": "10.1080/09687680801960998",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_81_1"
+    },
+    {
+      "DOI": "10.1016/j.tins.2010.03.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_82_1"
+    },
+    {
+      "DOI": "10.1101/gr.3715005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_83_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0b013e3181c30fb2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_84_1"
+    },
+    {
+      "DOI": "10.1037/a0016973",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_85_1"
+    },
+    {
+      "article-title": "Application of Breiman's random forest to modeling structure‐activity relationships of pharmaceutical molecules",
+      "author": "Svetnik V.",
+      "first-page": "334",
+      "journal-title": "Lecture Notes in Computer Science (Including Subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)",
+      "key": "e_1_2_11_86_1",
+      "volume": "3077",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1186/s13040-016-0087-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_87_1"
+    },
+    {
+      "DOI": "10.1126/science.1219240",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_88_1"
+    },
+    {
+      "DOI": "10.1038/nn.3922",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_89_1"
+    },
+    {
+      "DOI": "10.1016/j.cardiores.2003.08.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_90_1"
+    },
+    {
+      "DOI": "10.1016/j.tig.2004.09.007",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_91_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddn268",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_92_1"
+    },
+    {
+      "DOI": "10.1038/nrg.2017.101",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_93_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.32638",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_94_1"
+    },
+    {
+      "DOI": "10.1152/physrev.00002.2008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_95_1"
+    },
+    {
+      "DOI": "10.1111/epi.12032",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_96_1"
+    },
+    {
+      "DOI": "10.1534/genetics.119.301909",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_97_1"
+    },
+    {
+      "DOI": "10.1186/1753-6561-5-S9-S110",
+      "article-title": "Genome‐wide case‐control study in GAW17 using coalesced rare variants",
+      "author": "Wang L.",
+      "doi-asserted-by": "crossref",
+      "first-page": "S110",
+      "issue": "9",
+      "journal-title": "BMC Proceedings",
+      "key": "e_1_2_11_98_1",
+      "volume": "5",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s12859-017-1600-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_99_1"
+    },
+    {
+      "DOI": "10.18637/jss.v077.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_100_1"
+    },
+    {
+      "DOI": "10.1186/s12859-016-0995-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_101_1"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.2010.00639.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_102_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0101-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_103_1"
+    },
+    {
+      "DOI": "10.1002/widm.1114",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_104_1"
+    }
+  ],
+  "reference-count": 103,
+  "references-count": 103,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22383"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "The Translational Machine: A novel machine‐learning approach to illuminate complex genetic architectures"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

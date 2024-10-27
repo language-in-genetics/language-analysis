@@ -1,0 +1,718 @@
+{
+  "DOI": "10.1186/s40246-022-00399-8",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00399-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eMore than half of human protein-coding genes have an alternative transcription start site (TSS). We aimed to investigate the contribution of alternative TSSs to the acute-stress-induced transcriptome response in human tissue (skeletal muscle) using the cap analysis of gene expression approach. TSSs were examined at baseline and during recovery after acute stress (a cycling exercise).\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe identified 44,680 CAGE TSS clusters (including 3764 first defined) belonging to 12,268 genes and annotated for the first time 290 TSSs belonging to 163 genes. The transcriptome dynamically changes during the first hours after acute stress; the change in the expression of 10% of genes was associated with the activation of alternative TSSs, indicating differential TSSs usage. The majority of the alternative TSSs do not increase proteome complexity suggesting that the function of thousands of alternative TSSs is associated with the fine regulation of mRNA isoform expression from a gene due to the transcription factor-specific activation of various alternative TSSs. We identified individual muscle promoter regions for each TSS using muscle open chromatin data (ATAC-seq and DNase-seq). Then, using the positional weight matrix approach we predicted time course activation of “classic” transcription factors involved in response of skeletal muscle to contractile activity, as well as diversity of less/un-investigated factors.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eTranscriptome response induced by acute stress related to activation of the alternative TSSs indicates that differential TSSs usage is an essential mechanism of fine regulation of gene response to stress stimulus. A comprehensive resource of accurate TSSs and individual promoter regions for each TSS in muscle was created. This resource together with the positional weight matrix approach can be used to accurate prediction of TFs in any gene(s) of interest involved in the response to various stimuli, interventions or pathological conditions in human skeletal muscle.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "399"
+  ],
+  "article-number": "24",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "24 December 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "14 July 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "22 July 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The study was approved by the Biomedicine Ethics Committee of the Institute of Biomedical Problems of the RAS and complied with the guidelines set forth in the Declaration of Helsinki. All participants gave written informed consent to participate in the study."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Makhnovskii",
+      "given": "Pavel A.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Gusev",
+      "given": "Oleg A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bokov",
+      "given": "Roman O.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gazizova",
+      "given": "Guzel R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vepkhvadze",
+      "given": "Tatiana F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lysenko",
+      "given": "Evgeny A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vinogradova",
+      "given": "Olga L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kolpakov",
+      "given": "Fedor A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Popov",
+      "given": "Daniil V.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        22
+      ]
+    ],
+    "date-time": "2022-07-22T13:03:48Z",
+    "timestamp": 1658495028000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        22
+      ]
+    ],
+    "date-time": "2022-07-22T13:11:20Z",
+    "timestamp": 1658495480000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100002261",
+      "award": [
+        "17-00-00308K"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Russian Foundation for Basic Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        24
+      ]
+    ],
+    "date-time": "2024-01-24T03:57:33Z",
+    "timestamp": 1706068653373
+  },
+  "is-referenced-by-count": 11,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            22
+          ]
+        ],
+        "date-time": "2022-07-22T00:00:00Z",
+        "timestamp": 1658448000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            22
+          ]
+        ],
+        "date-time": "2022-07-22T00:00:00Z",
+        "timestamp": 1658448000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00399-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00399-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00399-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        7,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1101/gr.120535.111",
+      "author": "S Pal",
+      "doi-asserted-by": "publisher",
+      "first-page": "1260",
+      "issue": "8",
+      "journal-title": "Genome Res",
+      "key": "399_CR1",
+      "unstructured": "Pal S, Gupta R, Kim H, Wickramasinghe P, Baubet V, Showe LC, et al. Alternative transcription exceeds alternative splicing in generating the transcriptome diversity of cerebellar development. Genome Res. 2011;21(8):1260–72.",
+      "volume": "21",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1165",
+      "author": "A Reyes",
+      "doi-asserted-by": "publisher",
+      "first-page": "582",
+      "issue": "2",
+      "journal-title": "Nucleic Acids Res",
+      "key": "399_CR2",
+      "unstructured": "Reyes A, Huber W. Alternative start and termination sites of transcription drive most transcript isoform differences across human tissues. Nucleic Acids Res. 2018;46(2):582–92.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng1789",
+      "author": "P Carninci",
+      "doi-asserted-by": "publisher",
+      "first-page": "626",
+      "issue": "6",
+      "journal-title": "Nat Genet",
+      "key": "399_CR3",
+      "unstructured": "Carninci P, Sandelin A, Lenhard B, Katayama S, Shimokawa K, Ponjavic J, et al. Genome-wide analysis of mammalian promoter architecture and evolution. Nat Genet. 2006;38(6):626–35.",
+      "volume": "38",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1101/gr.4039406",
+      "author": "K Kimura",
+      "doi-asserted-by": "publisher",
+      "first-page": "55",
+      "issue": "1",
+      "journal-title": "Genome Res",
+      "key": "399_CR4",
+      "unstructured": "Kimura K, Wakamatsu A, Suzuki Y, Ota T, Nishikawa T, Yamashita R, et al. Diversification of transcriptional modulation: large-scale identification and characterization of putative alternative promoters of human genes. Genome Res. 2006;16(1):55–65.",
+      "volume": "16",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1038/nature13182",
+      "author": "AR Forrest",
+      "doi-asserted-by": "publisher",
+      "first-page": "462",
+      "issue": "7493",
+      "journal-title": "Nature",
+      "key": "399_CR5",
+      "unstructured": "Forrest AR, Kawaji H, Rehli M, Baillie JK, de Hoon MJ, Haberle V, et al. A promoter-level mammalian expression atlas. Nature. 2014;507(7493):462–70.",
+      "volume": "507",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/gb-2009-10-7-r73",
+      "author": "EA Rach",
+      "doi-asserted-by": "publisher",
+      "first-page": "R73",
+      "issue": "7",
+      "journal-title": "Genome Biol",
+      "key": "399_CR6",
+      "unstructured": "Rach EA, Yuan HY, Majoros WH, Tomancak P, Ohler U. Motif composition, conservation and condition-specificity of single and alternative transcription start sites in the Drosophila genome. Genome Biol. 2009;10(7):R73.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/ng.375",
+      "author": "H Suzuki",
+      "doi-asserted-by": "publisher",
+      "first-page": "553",
+      "issue": "5",
+      "journal-title": "Nat Genet",
+      "key": "399_CR7",
+      "unstructured": "Suzuki H, Forrest AR, van NE, Daub CO, Balwierz PJ, Irvine KM, et al. The transcriptional network that controls growth arrest and differentiation in a human myeloid leukemia cell line. Nat Genet. 2009;41(5):553–62.",
+      "volume": "41",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1098/rsob.180011",
+      "author": "A Vacca",
+      "doi-asserted-by": "publisher",
+      "first-page": "180011",
+      "issue": "8",
+      "journal-title": "Open Biol",
+      "key": "399_CR8",
+      "unstructured": "Vacca A, Itoh M, Kawaji H, Arner E, Lassmann T, Daub CO, et al. Conserved temporal ordering of promoter activation implicates common mechanisms governing the immediate early response across cell types and stimuli. Open Biol. 2018;8(8):180011.",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pbio.2002887",
+      "author": "M Lizio",
+      "doi-asserted-by": "publisher",
+      "first-page": "e2002887",
+      "issue": "9",
+      "journal-title": "PLoSBiol",
+      "key": "399_CR9",
+      "unstructured": "Lizio M, Deviatiiarov R, Nagai H, Galan L, Arner E, Itoh M, et al. Systematic analysis of transcription start sites in avian development. PLoSBiol. 2017;15(9):e2002887.",
+      "volume": "15",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/gr.153692.112",
+      "author": "C Nepal",
+      "doi-asserted-by": "publisher",
+      "first-page": "1938",
+      "issue": "11",
+      "journal-title": "Genome Res",
+      "key": "399_CR10",
+      "unstructured": "Nepal C, Hadzhiev Y, Previti C, Haberle V, Li N, Takahashi H, et al. Dynamic regulation of the transcription initiation landscape at single nucleotide resolution during vertebrate embryogenesis. Genome Res. 2013;23(11):1938–50.",
+      "volume": "23",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1101/gr.245456.118",
+      "author": "Z Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1198",
+      "issue": "7",
+      "journal-title": "Genome Res",
+      "key": "399_CR11",
+      "unstructured": "Lu Z, Lin Z. Pervasive and dynamic transcription initiation in Saccharomyces cerevisiae. Genome Res. 2019;29(7):1198–210.",
+      "volume": "29",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gky1227",
+      "author": "M Thodberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "1671",
+      "issue": "4",
+      "journal-title": "Nucleic Acids Res",
+      "key": "399_CR12",
+      "unstructured": "Thodberg M, Thieffry A, Bornholdt J, Boyd M, Holmberg C, Azad A, et al. Comprehensive profiling of the fission yeast transcription start site activity during stress and media response. Nucleic Acids Res. 2019;47(4):1671–91.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/ijms22031208",
+      "author": "PA Makhnovskii",
+      "doi-asserted-by": "publisher",
+      "first-page": "1208",
+      "issue": "3",
+      "journal-title": "Int J Mol Sci",
+      "key": "399_CR13",
+      "unstructured": "Makhnovskii PA, Bokov RO, Kolpakov FA, Popov DV. Transcriptomic signatures and upstream regulation in human skeletal muscle adapted to disuse and aerobic exercise. Int J Mol Sci. 2021;22(3):1208.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13869-w",
+      "author": "NJ Pillon",
+      "doi-asserted-by": "publisher",
+      "first-page": "470",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "399_CR14",
+      "unstructured": "Pillon NJ, Gabriel BM, Dollet L, Smith JAB, Sardon PL, Botella J, et al. Transcriptomic profiling of skeletal muscle adaptations to exercise and inactivity. Nat Commun. 2020;11(1):470.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1134/S0026893319040095",
+      "author": "DV Popov",
+      "doi-asserted-by": "publisher",
+      "first-page": "606",
+      "issue": "4",
+      "journal-title": "Mol Biol",
+      "key": "399_CR15",
+      "unstructured": "Popov DV, Vinogradova OL, Zgoda VG. Preparation of human skeletal muscle samples for proteomic analysis with isobaric iTRAQ labels. Mol Biol. 2019;53(4):606–11.",
+      "volume": "53",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1126/science.1259418",
+      "author": "E Arner",
+      "doi-asserted-by": "publisher",
+      "first-page": "1010",
+      "issue": "6225",
+      "journal-title": "Science",
+      "key": "399_CR16",
+      "unstructured": "Arner E, Daub CO, Vitting-Seerup K, Andersson R, Lilje B, Drablos F, et al. Transcribed enhancers lead waves of coordinated transcription in transitioning mammalian cells. Science. 2015;347(6225):1010–4.",
+      "volume": "347",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng2117",
+      "author": "W Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "1235",
+      "issue": "10",
+      "journal-title": "Nat Genet",
+      "key": "399_CR17",
+      "unstructured": "Lee W, Tillo D, Bray N, Morse RH, Davis RW, Hughes TR, et al. A high-resolution atlas of nucleosome occupancy in yeast. Nat Genet. 2007;39(10):1235–44.",
+      "volume": "39",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2015.04.006",
+      "author": "BS Scruggs",
+      "doi-asserted-by": "publisher",
+      "first-page": "1101",
+      "issue": "6",
+      "journal-title": "Mol Cell",
+      "key": "399_CR18",
+      "unstructured": "Scruggs BS, Gilchrist DA, Nechaev S, Muse GW, Burkholder A, Fargo DC, et al. Bidirectional transcription arises from two distinct hubs of transcription factor binding and active chromatin. Mol Cell. 2015;58(6):1101–12.",
+      "volume": "58",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkx174",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "4315",
+      "issue": "8",
+      "journal-title": "Nucleic Acids Res",
+      "key": "399_CR19",
+      "unstructured": "Chen X, Yu B, Carriero N, Silva C, Bonneau R. Mocap: large-scale inference of transcription factor binding sites from chromatin accessibility. Nucleic Acids Res. 2017;45(8):4315–29.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/gr.121541.111",
+      "author": "L Song",
+      "doi-asserted-by": "publisher",
+      "first-page": "1757",
+      "issue": "10",
+      "journal-title": "Genome Res",
+      "key": "399_CR20",
+      "unstructured": "Song L, Zhang Z, Grasfeder LL, Boyle AP, Giresi PG, Lee BK, et al. Open chromatin defined by DNaseI and FAIRE identifies regulatory elements that shape cell-type identity. Genome Res. 2011;21(10):1757–67.",
+      "volume": "21",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/nature05632",
+      "author": "I Albert",
+      "doi-asserted-by": "publisher",
+      "first-page": "572",
+      "issue": "7135",
+      "journal-title": "Nature",
+      "key": "399_CR21",
+      "unstructured": "Albert I, Mavrich TN, Tomsho LP, Qi J, Zanton SJ, Schuster SC, et al. Translational and rotational settings of H2A.Z nucleosomes across the Saccharomyces cerevisiae genome. Nature. 2007;446(7135):572–6.",
+      "volume": "446",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1126/science.1112178",
+      "author": "GC Yuan",
+      "doi-asserted-by": "publisher",
+      "first-page": "626",
+      "issue": "5734",
+      "journal-title": "Science",
+      "key": "399_CR22",
+      "unstructured": "Yuan GC, Liu YJ, Dion MF, Slack MD, Wu LF, Altschuler SJ, et al. Genome-scale identification of nucleosome positions in S. cerevisiae. Science. 2005;309(5734):626–30.",
+      "volume": "309",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa1057",
+      "author": "S Kolmykov",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nucleic Acids Res",
+      "key": "399_CR23",
+      "unstructured": "Kolmykov S, Yevshin I, Kulyashov M, Sharipov R, Kondrakhin Y, Makeev VJ, et al. GTRD: an integrated view of transcription regulation. Nucleic Acids Res. 2020. https://doi.org/10.1093/nar/gkaa1057.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bib/bbn016",
+      "author": "E Wingender",
+      "doi-asserted-by": "publisher",
+      "first-page": "326",
+      "issue": "4",
+      "journal-title": "Brief Bioinform",
+      "key": "399_CR24",
+      "unstructured": "Wingender E. The TRANSFAC project as an example of framework technology that supports the analysis of genomic regulation. Brief Bioinform. 2008;9(4):326–32.",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.01.029",
+      "author": "SA Lambert",
+      "doi-asserted-by": "publisher",
+      "first-page": "650",
+      "issue": "4",
+      "journal-title": "Cell",
+      "key": "399_CR25",
+      "unstructured": "Lambert SA, Jolma A, Campitelli LF, Das PK, Yin Y, Albu M, et al. The human transcription factors. Cell. 2018;172(4):650–65.",
+      "volume": "172",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fphys.2015.00325",
+      "author": "B Kupr",
+      "doi-asserted-by": "publisher",
+      "first-page": "325",
+      "journal-title": "Front Physiol",
+      "key": "399_CR26",
+      "unstructured": "Kupr B, Handschin C. Complex coordination of cell plasticity by a PGC-1alpha-controlled transcriptional network in skeletal muscle. Front Physiol. 2015;6:325.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0485-9",
+      "author": "S Hirabayashi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1369",
+      "issue": "9",
+      "journal-title": "Nat Genet",
+      "key": "399_CR27",
+      "unstructured": "Hirabayashi S, Bhagat S, Matsuki Y, Takegami Y, Uehata T, Kanemaru A, et al. NET-CAGE characterizes the dynamics and topology of human transcribed cis-regulatory elements. Nat Genet. 2019;51(9):1369–79.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.15252/msb.20166941",
+      "author": "X Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "875",
+      "issue": "7",
+      "journal-title": "Mol Syst Biol",
+      "key": "399_CR28",
+      "unstructured": "Wang X, Hou J, Quedenau C, Chen W. Pervasive isoform-specific translational regulation via alternative transcription start sites in mammals. Mol Syst Biol. 2016;12(7):875.",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1152/ajpendo.00449.2018",
+      "author": "DV Popov",
+      "doi-asserted-by": "publisher",
+      "first-page": "e605",
+      "issue": "4",
+      "journal-title": "Am J Physiol Endocrinol Metab",
+      "key": "399_CR29",
+      "unstructured": "Popov DV, Makhnovskii PA, Shagimardanova EI, Gazizova GR, Lysenko EA, Gusev OA, et al. Contractile activity-specific transcriptome response to acute endurance exercise and training in human skeletal muscle. Am J Physiol Endocrinol Metab. 2019;316(4):e605–14.",
+      "volume": "316",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.14814/phy2.12462",
+      "author": "A Combes",
+      "doi-asserted-by": "publisher",
+      "first-page": "e12462",
+      "issue": "9",
+      "journal-title": "Physiol Rep",
+      "key": "399_CR30",
+      "unstructured": "Combes A, Dekerle J, Webborn N, Watt P, Bougault V, Daussin FN. Exercise-induced metabolic fluctuations influence AMPK, p38-MAPK and CaMKII phosphorylation in human skeletal muscle. Physiol Rep. 2015;3(9):e12462.",
+      "volume": "3",
+      "year": "2015"
+    },
+    {
+      "author": "DV Popov",
+      "first-page": "362",
+      "journal-title": "J Sports Med Phys Fitness",
+      "key": "399_CR31",
+      "unstructured": "Popov DV, Zinovkin RA, Karger EM, Tarasova OS, Vinogradova OL. Effects of continuous and intermittent aerobic exercise upon mRNA expression of metabolic genes in human skeletal muscle. J Sports Med Phys Fitness. 2014;54:362–9.",
+      "volume": "54",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/978-1-4939-0805-9_7",
+      "author": "M Murata",
+      "doi-asserted-by": "publisher",
+      "first-page": "67",
+      "journal-title": "Methods Mol Biol",
+      "key": "399_CR32",
+      "unstructured": "Murata M, Nishiyori-Sueki H, Kojima-Ishiyama M, Carninci P, Hayashizaki Y, Itoh M. Detecting expressed genes using CAGE. Methods Mol Biol. 2014;1164:67–85.",
+      "volume": "1164",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.12688/f1000research.8900.2",
+      "author": "M Nowicka",
+      "doi-asserted-by": "publisher",
+      "first-page": "1356",
+      "journal-title": "F1000Research",
+      "key": "399_CR33",
+      "unstructured": "Nowicka M, Robinson MD. DRIMSeq: a dirichlet-multinomial framework for multivariate count outcomes in genomics. F1000Research. 2016;5:1356.",
+      "volume": "5",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3390/microarrays4020270",
+      "author": "J Koschmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "270",
+      "issue": "2",
+      "journal-title": "Microarrays",
+      "key": "399_CR34",
+      "unstructured": "Koschmann J, Bhar A, Stegmaier P, Kel AE, Wingender E. “Upstream analysis”: an integrated promoter-pathway analysis approach to causal interpretation of microarray data. Microarrays. 2015;4(2):270–86.",
+      "volume": "4",
+      "year": "2015"
+    }
+  ],
+  "reference-count": 34,
+  "references-count": 34,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00399-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Alternative transcription start sites contribute to acute-stress-induced transcriptome response in human skeletal muscle"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

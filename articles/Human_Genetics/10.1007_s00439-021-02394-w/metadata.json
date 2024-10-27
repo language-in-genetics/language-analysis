@@ -1,0 +1,1751 @@
+{
+  "DOI": "10.1007/s00439-021-02394-w",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-021-02394-w",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMitochondrial DNA copy number (mtDNA-CN) measured from blood specimens is a minimally invasive marker of mitochondrial function that exhibits both inter-individual and intercellular variation. To identify genes involved in regulating mitochondrial function, we performed a genome-wide association study (GWAS) in 465,809 White individuals from the Cohorts for Heart and Aging Research in Genomic Epidemiology (CHARGE) consortium and the UK Biobank (UKB). We identified 133 SNPs with statistically significant, independent effects associated with mtDNA-CN across 100 loci. A combination of fine-mapping, variant annotation, and co-localization analyses was used to prioritize genes within each of the 133 independent sites. Putative causal genes were enriched for known mitochondrial DNA depletion syndromes (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 3.09 × 10\u003cjats:sup\u003e–15\u003c/jats:sup\u003e) and the gene ontology (GO) terms for mtDNA metabolism (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 1.43 × 10\u003cjats:sup\u003e–8\u003c/jats:sup\u003e) and mtDNA replication (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 1.2 × 10\u003cjats:sup\u003e–7\u003c/jats:sup\u003e). A clustering approach leveraged pleiotropy between mtDNA-CN associated SNPs and 41 mtDNA-CN associated phenotypes to identify functional domains, revealing three distinct groups, including platelet activation, megakaryocyte proliferation, and mtDNA metabolism. Finally, using mitochondrial SNPs, we establish causal relationships between mitochondrial function and a variety of blood cell-related traits, kidney function, liver function and overall (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 0.044) and non-cancer mortality (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 6.56 × 10\u003cjats:sup\u003e–4\u003c/jats:sup\u003e).\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2394"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "23 September 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "22 October 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "2 December 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Psaty serves on the Steering Committee of the Yale Open Data Access Project funded by Johnson \u0026 Johnson. All other authors declare no conflict of interest."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "ALSPAC: Ethical approval for the study was obtained from the ALSPAC Ethics and Law Committee and the Local Research Ethics Committees. Informed consent for the use of data collected via questionnaires and clinics was obtained from participants following the recommendations of the ALSPAC Ethics and Law Committee at the time. ARIC: Institutional Review Board approvals were obtained by the coordinating center and each ARIC study center. The research was conducted in accordance with the principles described in the Helsinki Declaration. All subjects in the ARIC study gave informed consent. CHS: CHS was approved by institutional review committees at each field center and individuals in the present analysis had available DNA and gave informed consent including consent to use of genetic information for the study of cardiovascular disease. FHS: The Boston University Medical Campus Institutional Review Board approved the FHS genome-wide genotyping. MESA: All MESA participants provided written and informed consent to participate in genetic studies. All study sites received approval to conduct this research from local Institutional Review Boards. ROS/MAP: All participants provided written informed consent and approval was obtained from an institutional review board. Participants also signed a repository consent to allow their data to be shared. SHIP: The study has been conducted according to the recommendations of the Declaration of Helsinki. The study protocol of SHIP was approved by the medical ethics committee of the University of Greifswald. Written informed consent was obtained from each of the study participants. UK Biobank: Research was approved by UK Biobank to ensure consistent with participant’s consent and framework of data access."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Longchamps",
+      "given": "R. J.",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6327-0847",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Yang",
+      "given": "S. Y.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Castellani",
+      "given": "C. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shi",
+      "given": "W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lane",
+      "given": "J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Grove",
+      "given": "M. L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bartz",
+      "given": "T. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sarnowski",
+      "given": "C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Burrows",
+      "given": "K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guyatt",
+      "given": "A. L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gaunt",
+      "given": "T. R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kacprowski",
+      "given": "T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De Jager",
+      "given": "P. L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yu",
+      "given": "L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bergman",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xia",
+      "given": "R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fornage",
+      "given": "M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Feitosa",
+      "given": "M. F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wojczynski",
+      "given": "M. K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kraja",
+      "given": "A. T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Province",
+      "given": "M. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Amin",
+      "given": "N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rivadeneira",
+      "given": "F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tiemeier",
+      "given": "H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Uitterlinden",
+      "given": "A. G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Broer",
+      "given": "L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Van Meurs",
+      "given": "J. B. J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Van Duijn",
+      "given": "C. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Raffield",
+      "given": "L. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lange",
+      "given": "L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rich",
+      "given": "S. S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lemaitre",
+      "given": "R. N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Goodarzi",
+      "given": "M. O.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sitlani",
+      "given": "C. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mak",
+      "given": "A. C. Y.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bennett",
+      "given": "D. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rodriguez",
+      "given": "S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Murabito",
+      "given": "J. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lunetta",
+      "given": "K. L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sotoodehnia",
+      "given": "N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Atzmon",
+      "given": "G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ye",
+      "given": "K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Barzilai",
+      "given": "N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brody",
+      "given": "J. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Psaty",
+      "given": "B. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Taylor",
+      "given": "K. D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rotter",
+      "given": "J. I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boerwinkle",
+      "given": "E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pankratz",
+      "given": "N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Arking",
+      "given": "D. E.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        2
+      ]
+    ],
+    "date-time": "2021-12-02T18:03:44Z",
+    "timestamp": 1638468224000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        13
+      ]
+    ],
+    "date-time": "2022-01-13T15:17:16Z",
+    "timestamp": 1642087036000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "R01HL13573",
+        "R01HL144569"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        25
+      ]
+    ],
+    "date-time": "2024-04-25T00:04:35Z",
+    "timestamp": 1714003475003
+  },
+  "is-referenced-by-count": 28,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            2
+          ]
+        ],
+        "date-time": "2021-12-02T00:00:00Z",
+        "timestamp": 1638403200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            2
+          ]
+        ],
+        "date-time": "2021-12-02T00:00:00Z",
+        "timestamp": 1638403200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02394-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-021-02394-w/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02394-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "127-146",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        2
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        1
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s42003-019-0734-6",
+      "author": "AT Ali",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Commun Biol",
+      "key": "2394_CR1",
+      "unstructured": "Ali AT, Idaghdour Y, Hodgkinson A (2020) Analysis of mitochondrial m1A/G RNA modification reveals links to nuclear genetic variants and associated disease processes. Commun Biol 3:1–11",
+      "volume": "3",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00109-014-1233-3",
+      "author": "FN Ashar",
+      "doi-asserted-by": "crossref",
+      "first-page": "177",
+      "journal-title": "J Mol Med",
+      "key": "2394_CR2",
+      "unstructured": "Ashar FN, Moes A, Moore AZ, Grove ML, Chaves PHM, Coresh J, Newman AB, Matteini AM, Bandeen-Roche K, Boerwinkle E et al (2015) Association of mitochondrial DNA levels with frailty and all-cause mortality. J Mol Med 93:177–186",
+      "volume": "93",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1001/jamacardio.2017.3683",
+      "author": "FN Ashar",
+      "doi-asserted-by": "crossref",
+      "first-page": "1247",
+      "journal-title": "JAMA Cardiol",
+      "key": "2394_CR3",
+      "unstructured": "Ashar FN, Zhang Y, Longchamps RJ, Lane J, Moes A, Grove ML, Mychaleckyj JC, Taylor KD, Coresh J, Rotter JI et al (2017) Association of mitochondrial DNA copy number with cardiovascular disease. JAMA Cardiol 2:1247–1255",
+      "volume": "2",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "A Auton",
+      "doi-asserted-by": "crossref",
+      "first-page": "68",
+      "journal-title": "Nature",
+      "key": "2394_CR4",
+      "unstructured": "Auton A, Abecasis GR, Altshuler DM, Durbin RM, Abecasis GR, Bentley DR, Chakravarti A, Clark AG, Donnelly P, Eichler EE et al (2015) A global reference for human genetic variation. Nature 526:68–74",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41467-018-03621-1",
+      "author": "AN Barbeira",
+      "doi-asserted-by": "crossref",
+      "first-page": "1825",
+      "journal-title": "Nat Commun",
+      "key": "2394_CR5",
+      "unstructured": "Barbeira AN, Dickinson SP, Bonazzola R, Zheng J, Wheeler HE, Torres JM, Torstenson ES, Shah KP, Garcia T, Edwards TL et al (2018) Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics. Nat Commun 9:1825",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007889",
+      "author": "AN Barbeira",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1007889",
+      "journal-title": "PLoS Genet",
+      "key": "2394_CR6",
+      "unstructured": "Barbeira AN, Pividori M, Zheng J, Wheeler HE, Nicolae DL, Im HK (2019) Integrating predicted transcriptome from multiple tissues improves association detection. PLoS Genet 15:e1007889",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.clp.2019.10.008",
+      "author": "D Basel",
+      "doi-asserted-by": "crossref",
+      "first-page": "123",
+      "journal-title": "Clin Perinatol",
+      "key": "2394_CR7",
+      "unstructured": "Basel D (2020) Mitochondrial DNA depletion syndromes. Clin Perinatol 47:123–141",
+      "volume": "47",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "author": "C Bycroft",
+      "doi-asserted-by": "crossref",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "2394_CR8",
+      "unstructured": "Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, Motyer A, Vukcevic D, Delaneau O, O’Connell J et al (2018) The UK Biobank resource with deep phenotyping and genomic data. Nature 562:203–209",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1074/jbc.M113.488627",
+      "author": "B Cai",
+      "doi-asserted-by": "crossref",
+      "first-page": "30172",
+      "journal-title": "J Biol Chem",
+      "key": "2394_CR9",
+      "unstructured": "Cai B, Giridharan SSP, Zhang J, Saxena S, Bahl K, Schmidt JA, Sorgen PL, Guo W, Naslavsky N, Caplan S (2013) Differential roles of C-terminal Eps15 homology domain proteins as vesiculators and tubulators of recycling endosomes. J Biol Chem 288:30172–30180",
+      "volume": "288",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.cub.2015.10.065",
+      "author": "N Cai",
+      "doi-asserted-by": "crossref",
+      "first-page": "3170",
+      "journal-title": "Curr Biol",
+      "key": "2394_CR10",
+      "unstructured": "Cai N, Li Y, Chang S, Liang J, Lin C, Zhang X, Liang L, Hu J, Chan W, Kendler KS et al (2015) Genetic control over mtDNA and its relationship to major depressive disorder. Curr Biol 25:3170–3177",
+      "volume": "25",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41591-021-01441-3",
+      "doi-asserted-by": "crossref",
+      "key": "2394_CR11",
+      "unstructured": "Cai N, Gomez-Duran A, Yonova-Doing E, Kundu K, Burgess AI, Golder Z, Calabrese C, Bonder MJ, Camacho M, Lawson RA, et al. (2021) Mitochondrial DNA variants modulate N-formylmethionine, proteostasis and risk of late-onset human diseases. Nat Med 1–12"
+    },
+    {
+      "DOI": "10.1016/j.mito.2011.05.004",
+      "author": "PJ Carling",
+      "doi-asserted-by": "crossref",
+      "first-page": "686",
+      "journal-title": "Mitochondrion",
+      "key": "2394_CR12",
+      "unstructured": "Carling PJ, Cree LM, Chinnery PF (2011) The implications of mitochondrial DNA copy number regulation during embryogenesis. Mitochondrion 11:686–692",
+      "volume": "11",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1074/jbc.M100727200",
+      "author": "E Cavdar Koc",
+      "doi-asserted-by": "crossref",
+      "first-page": "19363",
+      "journal-title": "J Biol Chem",
+      "key": "2394_CR13",
+      "unstructured": "Cavdar Koc E, Burkhart W, Blackburn K, Moseley A, Spremulli LL (2001) The small subunit of the mammalian mitochondrial ribosome. Identification of the full complement of ribosomal proteins present. J Biol Chem 276:19363–19374",
+      "volume": "276",
+      "year": "2001"
+    },
+    {
+      "author": "C Chen",
+      "first-page": "38",
+      "journal-title": "Biology (basel)",
+      "key": "2394_CR14",
+      "unstructured": "Chen C, Turnbull DM, Reeve AK (2019) Mitochondrial dysfunction in Parkinson’s disease-cause or consequence? Biology (basel) 8:38",
+      "volume": "8",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fphys.2020.00598",
+      "author": "H Chew",
+      "doi-asserted-by": "crossref",
+      "first-page": "598",
+      "journal-title": "Front Physiol",
+      "key": "2394_CR15",
+      "unstructured": "Chew H, Solomon VA, Fonteh AN (2020) Involvement of lipids in Alzheimer’s disease pathology and potential therapies. Front Physiol 11:598",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S1673-8527(08)60099-5",
+      "author": "LL Clay Montier",
+      "doi-asserted-by": "crossref",
+      "first-page": "125",
+      "journal-title": "J Genet Genomics",
+      "key": "2394_CR16",
+      "unstructured": "Clay Montier LL, Deng JJ, Bai Y (2009) Number matters: control of mammalian mitochondrial DNA copy number. J Genet Genomics 36:125–131",
+      "volume": "36",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/humrep/15.suppl_2.11",
+      "author": "DA Clayton",
+      "doi-asserted-by": "crossref",
+      "first-page": "11",
+      "issue": "Suppl 2",
+      "journal-title": "Hum Reprod",
+      "key": "2394_CR17",
+      "unstructured": "Clayton DA (2000) Transcription and replication of mitochondrial DNA. Hum Reprod 15(Suppl 2):11–17",
+      "volume": "15",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006407",
+      "author": "T Cohen",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1006407",
+      "journal-title": "PLoS Genet",
+      "key": "2394_CR18",
+      "unstructured": "Cohen T, Levin L, Mishmar D (2016) Ancient Out-of-Africa mitochondrial DNA variants associate with distinct mitochondrial gene expression patterns. PLoS Genet 12:e1006407",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1177/0883073814537380",
+      "author": "WC Copeland",
+      "doi-asserted-by": "crossref",
+      "first-page": "1216",
+      "journal-title": "J Child Neurol",
+      "key": "2394_CR19",
+      "unstructured": "Copeland WC (2014) Defects of mitochondrial DNA replication. J Child Neurol 29:1216–1224",
+      "volume": "29",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/j.1365-2362.1991.tb01397.x",
+      "author": "M Crabos",
+      "doi-asserted-by": "crossref",
+      "first-page": "472",
+      "journal-title": "Eur J Clin Invest",
+      "key": "2394_CR20",
+      "unstructured": "Crabos M, Yamakado T, Heizmann CW, Cerletti N, Bühler FR, Erne P (1991) The calcium binding protein tropomyosin in human platelets and cardiac tissue: elevation in hypertensive cardiac hypertrophy. Eur J Clin Invest 21:472–478",
+      "volume": "21",
+      "year": "1991"
+    },
+    {
+      "author": "H Cui",
+      "first-page": "646354",
+      "journal-title": "J Signal Transduct",
+      "key": "2394_CR21",
+      "unstructured": "Cui H, Kong Y, Zhang H (2012) Oxidative stress, mitochondrial dysfunction, and aging. J Signal Transduct 2012:646354",
+      "volume": "2012",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.111.246140",
+      "author": "D-F Dai",
+      "doi-asserted-by": "crossref",
+      "first-page": "1109",
+      "journal-title": "Circ Res",
+      "key": "2394_CR22",
+      "unstructured": "Dai D-F, Rabinovitch PS, Ungvari Z (2012) Mitochondria and cardiovascular aging. Circ Res 110:1109–1124",
+      "volume": "110",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1182/blood-2002-03-0686",
+      "author": "S De Botton",
+      "doi-asserted-by": "crossref",
+      "first-page": "1310",
+      "journal-title": "Blood",
+      "key": "2394_CR23",
+      "unstructured": "De Botton S, Sabri S, Daugas E, Zermati Y, Guidotti JE, Hermine O, Kroemer G, Vainchenker W, Debili N (2002) Platelet formation is the consequence of caspase activation within megakaryocytes. Blood 100:1310–1317",
+      "volume": "100",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1136/bmjdrc-2020-001204",
+      "author": "B DeBarmore",
+      "doi-asserted-by": "crossref",
+      "first-page": "e001204",
+      "journal-title": "BMJ Open Diabetes Res Care",
+      "key": "2394_CR24",
+      "unstructured": "DeBarmore B, Longchamps RJ, Zhang Y, Kalyani RR, Guallar E, Arking DE, Selvin E, Young JH (2020) Mitochondrial DNA copy number and diabetes: the Atherosclerosis Risk in Communities (ARIC) study. BMJ Open Diabetes Res Care 8:e001204",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13225-y",
+      "author": "O Delaneau",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "2394_CR25",
+      "unstructured": "Delaneau O, Zagury J-F, Robinson MR, Marchini JL, Dermitzakis ET (2019) Accurate, scalable and integrative haplotype estimation. Nat Commun. https://doi.org/10.1038/s41467-019-13225-y",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3324/haematol.2013.096859",
+      "author": "CA Di Buduo",
+      "doi-asserted-by": "crossref",
+      "first-page": "769",
+      "journal-title": "Haematologica",
+      "key": "2394_CR26",
+      "unstructured": "Di Buduo CA, Moccia F, Battiston M, De Marco L, Mazzucato M, Moratti R, Tanzi F, Balduini A (2014) The importance of calcium in the regulation of megakaryocyte function. Haematologica 99:769–778",
+      "volume": "99",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/ncomms13548",
+      "author": "C Dölle",
+      "doi-asserted-by": "crossref",
+      "first-page": "13548",
+      "journal-title": "Nat Commun",
+      "key": "2394_CR27",
+      "unstructured": "Dölle C, Flønes I, Nido GS, Miletic H, Osuagwu N, Kristoffersen S, Lilleng PK, Larsen JP, Tysnes O-B, Haugarvoll K et al (2016) Defective mitochondrial DNA homeostasis in the substantia nigra in Parkinson disease. Nat Commun 7:13548",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1084/jem.20021546",
+      "author": "JB El Khoury",
+      "doi-asserted-by": "crossref",
+      "first-page": "1657",
+      "journal-title": "J Exp Med",
+      "key": "2394_CR28",
+      "unstructured": "El Khoury JB, Moore KJ, Means TK, Leung J, Terada K, Toft M, Freeman MW, Luster AD (2003) CD36 mediates the innate host response to beta-amyloid. J Exp Med 197:1657–1666",
+      "volume": "197",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1007/s13311-013-0177-6",
+      "author": "AW El-Hattab",
+      "doi-asserted-by": "crossref",
+      "first-page": "186",
+      "journal-title": "Neurotherapeutics",
+      "key": "2394_CR29",
+      "unstructured": "El-Hattab AW, Scaglia F (2013) Mitochondrial DNA depletion syndromes: review and updates of genetic basis, manifestations, and therapeutic options. Neurotherapeutics 10:186–198",
+      "volume": "10",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004383",
+      "author": "C Giambartolomei",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1004383",
+      "journal-title": "PLoS Genet",
+      "key": "2394_CR30",
+      "unstructured": "Giambartolomei C, Vukcevic D, Schadt EE, Franke L, Hingorani AD, Wallace C, Plagnol V (2014) Bayesian test for colocalisation between pairs of genetic association studies using summary statistics. PLoS Genet 10:e1004383",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/bs.ircmb.2020.02.005",
+      "author": "L Gibellini",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Int Rev Cell Mol Biol",
+      "key": "2394_CR31",
+      "unstructured": "Gibellini L, De Gaetano A, Mandrioli M, Van Tongeren E, Bortolotti CA, Cossarizza A, Pinti M (2020) The biology of Lonp1: more than a mitochondrial protease. Int Rev Cell Mol Biol 354:1–61",
+      "volume": "354",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/hmg/ddq246",
+      "author": "A Gómez-Durán",
+      "doi-asserted-by": "crossref",
+      "first-page": "3343",
+      "journal-title": "Hum Mol Genet",
+      "key": "2394_CR32",
+      "unstructured": "Gómez-Durán A, Pacheu-Grau D, López-Gallardo E, Díez-Sánchez C, Montoya J, López-Pérez MJ, Ruiz-Pesini E (2010) Unmasking the causes of multifactorial disorders: OXPHOS differences between mitochondrial haplogroups. Hum Mol Genet 19:3343–3353",
+      "volume": "19",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/femsyr/foy022",
+      "author": "TRR Grainha",
+      "doi-asserted-by": "publisher",
+      "journal-title": "FEMS Yeast Res",
+      "key": "2394_CR33",
+      "unstructured": "Grainha TRR, da Silva Jorge PA, Pérez-Pérez M, Pérez Rodríguez G, Pereira MOBO, Lourenço AMG (2018) Exploring anti-quorum sensing and anti-virulence based strategies to fight Candida albicans infections: an in silico approach. FEMS Yeast Res. https://doi.org/10.1093/femsyr/foy022",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.2653",
+      "author": "GTEx Consortium",
+      "doi-asserted-by": "crossref",
+      "first-page": "580",
+      "journal-title": "Nat Genet",
+      "key": "2394_CR34",
+      "unstructured": "GTEx Consortium (2013) The Genotype-Tissue Expression (GTEx) project. Nat Genet 45:580–585",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.mito.2013.08.007",
+      "author": "M Guha",
+      "doi-asserted-by": "crossref",
+      "first-page": "577",
+      "journal-title": "Mitochondrion",
+      "key": "2394_CR35",
+      "unstructured": "Guha M, Avadhani NG (2013) Mitochondrial retrograde signaling at the crossroads of tumor bioenergetics, genetics and epigenetics. Mitochondrion 13:577–591",
+      "volume": "13",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/s40246-018-0190-2",
+      "author": "AL Guyatt",
+      "doi-asserted-by": "crossref",
+      "first-page": "6",
+      "journal-title": "Hum Genomics",
+      "key": "2394_CR36",
+      "unstructured": "Guyatt AL, Brennan RR, Burrows K, Guthrie PAI, Ascione R, Ring SM, Gaunt TR, Pyle A, Cordell HJ, Lawlor DA et al (2019) A genome-wide association study of mitochondrial DNA copy number in two population-based cohorts. Hum Genomics 13:6",
+      "volume": "13",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/2020.09.25.313171",
+      "doi-asserted-by": "crossref",
+      "key": "2394_CR37",
+      "unstructured": "Hägg S, Jylhävä J, Wang Y, Czene K, Grassmann F (2020) Deciphering the genetic and epidemiological landscape of mitochondrial DNA abundance. Hum Genet"
+    },
+    {
+      "DOI": "10.18637/jss.v091.i01",
+      "doi-asserted-by": "crossref",
+      "key": "2394_CR38",
+      "unstructured": "Hahsler M, Piekenbrock M, Arya S, Mount D (2019). dbscan: Density Based Clustering of Applications with Noise (DBSCAN) and Related Algorithms. https://cran.csiro.au/web/packages/dbscan/dbscan.pdf"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.04.014",
+      "author": "B Han",
+      "doi-asserted-by": "crossref",
+      "first-page": "586",
+      "journal-title": "Am J Hum Genet",
+      "key": "2394_CR39",
+      "unstructured": "Han B, Eskin E (2011) Random-effects model aimed at discovering associations in meta-analysis of genome-wide association studies. Am J Hum Genet 88:586–598",
+      "volume": "88",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3389/fneur.2019.00981",
+      "author": "F Hannah-Shmouni",
+      "doi-asserted-by": "crossref",
+      "first-page": "981",
+      "journal-title": "Front Neurol",
+      "key": "2394_CR40",
+      "unstructured": "Hannah-Shmouni F, MacNeil L, Brady L, Nilsson MI, Tarnopolsky M (2019) Expanding the clinical spectrum of LONP1-related mitochondrial cytopathy. Front Neurol 10:981",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.mito.2010.12.013",
+      "author": "A Harvey",
+      "doi-asserted-by": "crossref",
+      "first-page": "829",
+      "journal-title": "Mitochondrion",
+      "key": "2394_CR41",
+      "unstructured": "Harvey A, Gibson T, Lonergan T, Brenner C (2011) Dynamic regulation of mitochondrial function in preimplantation embryos and embryonic stem cells. Mitochondrion 11:829–838",
+      "volume": "11",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3389/fendo.2017.00296",
+      "author": "PM Herst",
+      "doi-asserted-by": "crossref",
+      "first-page": "296",
+      "journal-title": "Front Endocrinol (lausanne)",
+      "key": "2394_CR42",
+      "unstructured": "Herst PM, Rowe MR, Carson GM, Berridge MV (2017) Functional mitochondria in health and disease. Front Endocrinol (lausanne) 8:296",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.120.046001",
+      "author": "YS Hong",
+      "doi-asserted-by": "crossref",
+      "first-page": "1823",
+      "journal-title": "Circulation",
+      "key": "2394_CR43",
+      "unstructured": "Hong YS, Longchamps RJ, Zhao D, Castellani CA, Loehr LR, Chang PP, Matsushita K, Grove ML, Boerwinkle E, Arking DE et al (2020) Mitochondrial DNA copy number and incident heart failure: the atherosclerosis risk in communities (ARIC) study. Circulation 141:1823–1825",
+      "volume": "141",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0163770",
+      "author": "Y Hurtado-Roca",
+      "doi-asserted-by": "crossref",
+      "first-page": "e0163770",
+      "journal-title": "PLoS One",
+      "key": "2394_CR44",
+      "unstructured": "Hurtado-Roca Y, Ledesma M, Gonzalez-Lazaro M, Moreno-Loshuertos R, Fernandez-Silva P, Enriquez JA, Laclaustra M (2016) Adjusting MtDNA quantification in whole blood for peripheral blood platelet and leukocyte counts. PLoS One 11:e0163770",
+      "volume": "11",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1242/jcs.01565",
+      "author": "N Ishihara",
+      "doi-asserted-by": "crossref",
+      "first-page": "6535",
+      "journal-title": "J Cell Sci",
+      "key": "2394_CR45",
+      "unstructured": "Ishihara N, Eura Y, Mihara K (2004) Mitofusin 1 and 2 play distinct roles in mitochondrial fusion reactions via GTPase activity. J Cell Sci 117:6535–6546",
+      "volume": "117",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1084/jem.20110750",
+      "author": "EC Josefsson",
+      "doi-asserted-by": "crossref",
+      "first-page": "2017",
+      "journal-title": "J Exp Med",
+      "key": "2394_CR46",
+      "unstructured": "Josefsson EC, James C, Henley KJ, Debrincat MA, Rogers KL, Dowling MR, White MJ, Kruse EA, Lane RM, Ellis S et al (2011) Megakaryocytes possess a functional intrinsic apoptosis pathway that must be restrained to survive and produce platelets. J Exp Med 208:2017–2031",
+      "volume": "208",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ncomms4455",
+      "author": "EC Josefsson",
+      "doi-asserted-by": "crossref",
+      "first-page": "3455",
+      "journal-title": "Nat Commun",
+      "key": "2394_CR47",
+      "unstructured": "Josefsson EC, Burnett DL, Lebois M, Debrincat MA, White MJ, Henley KJ, Lane RM, Moujalled D, Preston SP, O’Reilly LA et al (2014) Platelet production proceeds independently of the intrinsic and extrinsic apoptosis pathways. Nat Commun 5:3455",
+      "volume": "5",
+      "year": "2014"
+    },
+    {
+      "author": "J Knez",
+      "first-page": "138",
+      "journal-title": "Am J Epidemiol",
+      "key": "2394_CR48",
+      "unstructured": "Knez J, Winckelmans E, Plusquin M, Thijs L, Cauwenberghs N, Gu Y, Staessen JA, Nawrot TS, Kuznetsova T (2016) Correlates of peripheral blood mitochondrial DNA content in a general population. Am J Epidemiol 183:138–146",
+      "volume": "183",
+      "year": "2016"
+    },
+    {
+      "key": "2394_CR49",
+      "unstructured": "Konopka T (2020) umap: Uniform Manifold Approximation and Projection. https://cran.r-project.org/web/packages/umap/index.html"
+    },
+    {
+      "DOI": "10.1038/ng.2501",
+      "author": "C Kornblum",
+      "doi-asserted-by": "crossref",
+      "first-page": "214",
+      "journal-title": "Nat Genet",
+      "key": "2394_CR50",
+      "unstructured": "Kornblum C, Nicholls TJ, Haack TB, Schöler S, Peeva V, Danhauser K, Hallmann K, Zsurka G, Rorbach J, Iuso A et al (2013) Loss-of-function mutations in MGME1 impair mtDNA replication and cause multisystemic mitochondrial disease. Nat Genet 45:214–219",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.15252/embr.201439267",
+      "author": "J Kostan",
+      "doi-asserted-by": "crossref",
+      "first-page": "1154",
+      "journal-title": "EMBO Rep",
+      "key": "2394_CR51",
+      "unstructured": "Kostan J, Salzer U, Orlova A, Törö I, Hodnik V, Senju Y, Zou J, Schreiner C, Steiner J, Meriläinen J et al (2014) Direct interaction of actin filaments with F-BAR protein pacsin2. EMBO Rep 15:1154–1162",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41598-018-31122-0",
+      "author": "P Kumar",
+      "doi-asserted-by": "crossref",
+      "first-page": "12743",
+      "journal-title": "Sci Rep",
+      "key": "2394_CR52",
+      "unstructured": "Kumar P, Efstathopoulos P, Millischer V, Olsson E, Wei YB, Brüstle O, Schalling M, Villaescusa JC, Ösby U, Lavebratt C (2018) Mitochondrial DNA copy number is associated with psychosis severity and anti-psychotic treatment. Sci Rep 8:12743",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.neurobiolaging.2006.12.009",
+      "author": "R Lämsä",
+      "doi-asserted-by": "crossref",
+      "first-page": "848",
+      "journal-title": "Neurobiol Aging",
+      "key": "2394_CR53",
+      "unstructured": "Lämsä R, Helisalmi S, Herukka S-K, Tapiola T, Pirttilä T, Vepsäläinen S, Hiltunen M, Soininen H (2008) Genetic study evaluating LDLR polymorphisms and Alzheimer’s disease. Neurobiol Aging 29:848–855",
+      "volume": "29",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1002/sim.3034",
+      "author": "DA Lawlor",
+      "doi-asserted-by": "crossref",
+      "first-page": "1133",
+      "journal-title": "Stat Med",
+      "key": "2394_CR54",
+      "unstructured": "Lawlor DA, Harbord RM, Sterne JAC, Timpson N, Davey Smith G (2008) Mendelian randomization: using genes as instruments for making causal inferences in epidemiology. Stat Med 27:1133–1163",
+      "volume": "27",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0002986",
+      "author": "P Linsel-Nitschke",
+      "doi-asserted-by": "crossref",
+      "first-page": "e2986",
+      "journal-title": "PLoS One",
+      "key": "2394_CR55",
+      "unstructured": "Linsel-Nitschke P, Götz A, Erdmann J, Braenne I, Braund P, Hengstenberg C, Stark K, Fischer M, Schreiber S, El Mokhtari NE et al (2008) Lifelong reduction of LDL-cholesterol related to a common variant in the LDL-receptor gene decreases the risk of coronary artery disease–a Mendelian Randomisation study. PLoS One 3:e2986",
+      "volume": "3",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1080/10715760310001621342",
+      "author": "C-S Liu",
+      "doi-asserted-by": "crossref",
+      "first-page": "1307",
+      "journal-title": "Free Radic Res",
+      "key": "2394_CR56",
+      "unstructured": "Liu C-S, Tsai C-S, Kuo C-L, Chen H-W, Lii C-K, Ma Y-S, Wei Y-H (2003) Oxidative stress-related alteration of the copy number of mitochondrial DNA in human leukocytes. Free Radic Res 37:1307–1317",
+      "volume": "37",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1074/jbc.M309642200",
+      "author": "T Liu",
+      "doi-asserted-by": "crossref",
+      "first-page": "13902",
+      "journal-title": "J Biol Chem",
+      "key": "2394_CR57",
+      "unstructured": "Liu T, Lu B, Lee I, Ondrovicová G, Kutejová E, Suzuki CK (2004) DNA and RNA binding by the mitochondrial lon protease is regulated by nucleotide and protein substrate. J Biol Chem 279:13902–13910",
+      "volume": "279",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1038/ng.3190",
+      "author": "P-R Loh",
+      "doi-asserted-by": "crossref",
+      "first-page": "284",
+      "journal-title": "Nat Genet",
+      "key": "2394_CR58",
+      "unstructured": "Loh P-R, Tucker G, Bulik-Sullivan BK, Vilhjálmsson BJ, Finucane HK, Salem RM, Chasman DI, Ridker PM, Neale BM, Berger B et al (2015) Efficient Bayesian mixed model analysis increases association power in large cohorts. Nat Genet 47:284–290",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0228166",
+      "author": "RJ Longchamps",
+      "doi-asserted-by": "crossref",
+      "first-page": "e0228166",
+      "journal-title": "PLoS One",
+      "key": "2394_CR59",
+      "unstructured": "Longchamps RJ, Castellani CA, Yang SY, Newcomb CE, Sumpter JA, Lane J, Grove ML, Guallar E, Pankratz N, Taylor KD et al (2020) Evaluation of mitochondrial DNA copy number estimation techniques. PLoS One 15:e0228166",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.mito.2012.10.011",
+      "author": "AN Malik",
+      "doi-asserted-by": "crossref",
+      "first-page": "481",
+      "journal-title": "Mitochondrion",
+      "key": "2394_CR60",
+      "unstructured": "Malik AN, Czajka A (2013) Is mitochondrial DNA content a potential biomarker of mitochondrial dysfunction? Mitochondrion 13:481–492",
+      "volume": "13",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/ng746",
+      "author": "H Mandel",
+      "doi-asserted-by": "crossref",
+      "first-page": "337",
+      "journal-title": "Nat Genet",
+      "key": "2394_CR61",
+      "unstructured": "Mandel H, Szargel R, Labay V, Elpeleg O, Saada A, Shalata A, Anbinder Y, Berkowitz D, Hartman C, Barak M et al (2001) The deoxyguanosine kinase gene is mutated in individuals with depleted hepatocerebral mitochondrial DNA. Nat Genet 29:337–341",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/srep43449",
+      "author": "S Marom",
+      "doi-asserted-by": "crossref",
+      "first-page": "43449",
+      "journal-title": "Sci Rep",
+      "key": "2394_CR62",
+      "unstructured": "Marom S, Friger M, Mishmar D (2017) MtDNA meta-analysis reveals both phenotype specificity and allele heterogeneity: a model for differential association. Sci Rep 7:43449",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41467-017-02787-4",
+      "author": "S Márquez-Jurado",
+      "doi-asserted-by": "crossref",
+      "first-page": "389",
+      "journal-title": "Nat Commun",
+      "key": "2394_CR63",
+      "unstructured": "Márquez-Jurado S, Díaz-Colunga J, das Neves RP, Martinez-Lorente A, Almazán F, Guantes R, Iborra FJ (2018) Mitochondrial levels determine variability in cell death by modulating apoptotic gene expression. Nat Commun 9:389",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1182/blood-2017-11-742684",
+      "author": "K McArthur",
+      "doi-asserted-by": "crossref",
+      "first-page": "605",
+      "journal-title": "Blood",
+      "key": "2394_CR64",
+      "unstructured": "McArthur K, Chappaz S, Kile BT (2018) Apoptosis in megakaryocytes and platelets: the life and death of a lineage. Blood 131:605–610",
+      "volume": "131",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/ije/dyx204",
+      "author": "LAC Millard",
+      "doi-asserted-by": "crossref",
+      "first-page": "29",
+      "journal-title": "Int J Epidemiol",
+      "key": "2394_CR65",
+      "unstructured": "Millard LAC, Davies NM, Gaunt TR, Davey Smith G, Tilling K (2018) Software Application Profile: PHESANT: a tool for performing automated phenome scans in UK Biobank. Int J Epidemiol 47:29–35",
+      "volume": "47",
+      "year": "2018"
+    },
+    {
+      "key": "2394_CR66",
+      "unstructured": "MitoPipeline (2021) Generating Mitochondrial copy number estimates from SNP array data in Genvisis. http://genvisis.org/MitoPipeline/. Accessed 30 Oct 2021"
+    },
+    {
+      "DOI": "10.1002/pros.20697",
+      "author": "T Mizumachi",
+      "doi-asserted-by": "crossref",
+      "first-page": "408",
+      "journal-title": "Prostate",
+      "key": "2394_CR67",
+      "unstructured": "Mizumachi T, Muskhelishvili L, Naito A, Furusawa J, Fan C-Y, Siegel ER, Kadlubar FF, Kumar U, Higuchi M (2008) Increased distributional variance of mitochondrial DNA content associated with prostate cancer cells as compared with normal prostate cells. Prostate 68:408–417",
+      "volume": "68",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1212/NXG.0000000000000044",
+      "author": "K Nuytemans",
+      "doi-asserted-by": "crossref",
+      "first-page": "e44",
+      "journal-title": "Neurol Genet",
+      "key": "2394_CR68",
+      "unstructured": "Nuytemans K, Maldonado L, Ali A, John-Williams K, Beecham GW, Martin E, Scott WK, Vance JM (2016) Overlap between Parkinson disease and Alzheimer disease in ABCA7 functional variants. Neurol Genet 2:e44",
+      "volume": "2",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/nar/gkv1189",
+      "author": "NA O’Leary",
+      "doi-asserted-by": "crossref",
+      "first-page": "D733",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2394_CR69",
+      "unstructured": "O’Leary NA, Wright MW, Brister JR, Ciufo S, Haddad D, McVeigh R, Rajput B, Robbertse B, Smith-White B, Ako-Adjei D et al (2016) Reference sequence (RefSeq) database at NCBI: current status, taxonomic expansion, and functional annotation. Nucleic Acids Res 44:D733-745",
+      "volume": "44",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.metabol.2020.154400",
+      "author": "M Olkowicz",
+      "doi-asserted-by": "crossref",
+      "first-page": "154400",
+      "journal-title": "Metabolism",
+      "key": "2394_CR70",
+      "unstructured": "Olkowicz M, Tomczyk M, Debski J, Tyrankiewicz U, Przyborowski K, Borkowski T, Zabielska-Kaczorowska M, Szupryczynska N, Kochan Z, Smeda M et al (2021) Enhanced cardiac hypoxic injury in atherogenic dyslipidaemia results from alterations in the energy metabolism pattern. Metabolism 114:154400",
+      "volume": "114",
+      "year": "2021"
+    },
+    {
+      "key": "2394_CR71",
+      "unstructured": "PathCards :: Apoptosis and Autophagy Pathway and related pathways."
+    },
+    {
+      "key": "2394_CR72",
+      "unstructured": "PathCards :: Factors involved in megakaryocyte development and platelet production Pathway and related pathways."
+    },
+    {
+      "DOI": "10.1038/ncomms6890",
+      "author": "TH Pers",
+      "doi-asserted-by": "crossref",
+      "first-page": "5890",
+      "journal-title": "Nat Commun",
+      "key": "2394_CR73",
+      "unstructured": "Pers TH, Karjalainen JM, Chan Y, Westra H-J, Wood AR, Yang J, Lui JC, Vedantam S, Gustafsson S, Esko T et al (2015) Biological interpretation of genome-wide association studies using predicted gene functions. Nat Commun 6:5890",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.bbadis.2013.11.012",
+      "author": "M Pinto",
+      "doi-asserted-by": "crossref",
+      "first-page": "1198",
+      "journal-title": "Biochim Biophys Acta",
+      "key": "2394_CR74",
+      "unstructured": "Pinto M, Moraes CT (2014) Mitochondrial genome changes and neurodegenerative diseases. Biochim Biophys Acta 1842:1198–1207",
+      "volume": "1842",
+      "year": "2014"
+    },
+    {
+      "author": "BM Psaty",
+      "first-page": "73",
+      "journal-title": "Circulation",
+      "key": "2394_CR75",
+      "unstructured": "Psaty BM, O’Donnell CJ, Gudnason V, Lunetta KL, Folsom AR, Rotter JI, Uitterlinden AG, Harris TB, Witteman JC, Boerwinkle E (2009) Cohorts for Heart and Aging Research in Genomic Epidemiology (CHARGE) Consortium. Circulation 2:73–80",
+      "volume": "2",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.neurobiolaging.2015.10.033",
+      "author": "A Pyle",
+      "doi-asserted-by": "crossref",
+      "first-page": "216.e7",
+      "journal-title": "Neurobiol Aging",
+      "key": "2394_CR76",
+      "unstructured": "Pyle A, Anugrha H, Kurzawa-Akanbi M, Yarnall A, Burn D, Hudson G (2016) Reduced mitochondrial DNA copy number is a biomarker of Parkinson’s disease. Neurobiol Aging 38:216.e7-216.e10",
+      "volume": "38",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.7554/eLife.10769",
+      "author": "E Reznik",
+      "doi-asserted-by": "crossref",
+      "first-page": "e10769",
+      "journal-title": "Elife",
+      "key": "2394_CR77",
+      "unstructured": "Reznik E, Miller ML, Şenbabaoğlu Y, Riaz N, Sarungbam J, Tickoo SK, Al-Ahmadie HA, Lee W, Seshan VE, Hakimi AA et al (2016) Mitochondrial DNA copy number variation across human cancers. Elife 5:e10769",
+      "volume": "5",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/sj.ejhg.5200629",
+      "author": "B Rodríguez-Santiago",
+      "doi-asserted-by": "crossref",
+      "first-page": "279",
+      "journal-title": "Eur J Hum Genet",
+      "key": "2394_CR78",
+      "unstructured": "Rodríguez-Santiago B, Casademont J, Nunes V (2001) Is mitochondrial DNA depletion involved in Alzheimer’s disease? Eur J Hum Genet 9:279–285",
+      "volume": "9",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009049",
+      "author": "S Rubinacci",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1009049",
+      "journal-title": "PLoS Genet",
+      "key": "2394_CR79",
+      "unstructured": "Rubinacci S, Delaneau O, Marchini J (2020) Genotype imputation using the Positional Burrows Wheeler Transform. PLoS Genet 16:e1009049",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s13353-017-0424-3",
+      "author": "J Rusecka",
+      "doi-asserted-by": "crossref",
+      "first-page": "43",
+      "journal-title": "J Appl Genet",
+      "key": "2394_CR80",
+      "unstructured": "Rusecka J, Kaliszewska M, Bartnik E, Tońska K (2018) Nuclear genes involved in mitochondrial diseases caused by instability of mitochondrial DNA. J Appl Genet 59:43–57",
+      "volume": "59",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2016.02.022",
+      "author": "E Schrepfer",
+      "doi-asserted-by": "crossref",
+      "first-page": "683",
+      "journal-title": "Mol Cell",
+      "key": "2394_CR81",
+      "unstructured": "Schrepfer E, Scorrano L (2016) Mitofusins, from mitochondria to metabolism. Mol Cell 61:683–694",
+      "volume": "61",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/S0955-0674(02)00347-2",
+      "author": "S Sever",
+      "doi-asserted-by": "crossref",
+      "first-page": "463",
+      "journal-title": "Curr Opin Cell Biol",
+      "key": "2394_CR82",
+      "unstructured": "Sever S (2002) Dynamin and endocytosis. Curr Opin Cell Biol 14:463–467",
+      "volume": "14",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/S0092-8674(03)00762-1",
+      "author": "MR Sharma",
+      "doi-asserted-by": "crossref",
+      "first-page": "97",
+      "journal-title": "Cell",
+      "key": "2394_CR83",
+      "unstructured": "Sharma MR, Koc EC, Datta PP, Booth TM, Spremulli LL, Agrawal RK (2003) Structure of the mammalian mitochondrial ribosome reveals an expanded functional role for its component proteins. Cell 115:97–108",
+      "volume": "115",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1002/humu.23422",
+      "author": "L Shen",
+      "doi-asserted-by": "crossref",
+      "first-page": "806",
+      "journal-title": "Hum Mutat",
+      "key": "2394_CR84",
+      "unstructured": "Shen L, Attimonelli M, Bai R, Lott MT, Wallace DC, Falk MJ, Gai X (2018) MSeqDR mvTool: a mitochondrial DNA Web and API resource for comprehensive variant annotation, universal nomenclature collation, and reference genome conversion. Hum Mutat 39:806–810",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/gr.9.8.677",
+      "author": "ST Sherry",
+      "doi-asserted-by": "crossref",
+      "first-page": "677",
+      "journal-title": "Genome Res",
+      "key": "2394_CR85",
+      "unstructured": "Sherry ST, Ward M, Sirotkin K (1999) dbSNP-database for single nucleotide polymorphisms and other classes of minor genetic variation. Genome Res 9:677–679",
+      "volume": "9",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1038/20959",
+      "author": "S Shimizu",
+      "doi-asserted-by": "crossref",
+      "first-page": "483",
+      "journal-title": "Nature",
+      "key": "2394_CR86",
+      "unstructured": "Shimizu S, Narita M, Tsujimoto Y (1999) Bcl-2 family proteins regulate the release of apoptogenic cytochrome c by the mitochondrial channel VDAC. Nature 399:483–487",
+      "volume": "399",
+      "year": "1999"
+    },
+    {
+      "key": "2394_CR87",
+      "unstructured": "Smyth G, Hu Y, Ritchie M, Silver J, Wettenhall J, McCarthy D, Wu D, Shi W, Phipson B, Lun A et al. (2021) limma: linear models for microarray data (Bioconductor version: Release (3.12))"
+    },
+    {
+      "DOI": "10.1002/hep.23927",
+      "author": "S Sookoian",
+      "doi-asserted-by": "crossref",
+      "first-page": "1992",
+      "journal-title": "Hepatology",
+      "key": "2394_CR88",
+      "unstructured": "Sookoian S, Rosselli MS, Gemma C, Burgueño AL, Gianotti TF, Castaño GO, Pirola CJ (2010) Epigenetic regulation of insulin resistance in nonalcoholic fatty liver disease: impact of liver methylation of the peroxisome proliferator–activated receptor γ coactivator 1α promoter. Hepatology 52:1992–2000",
+      "volume": "52",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0279-5",
+      "author": "D Speed",
+      "doi-asserted-by": "crossref",
+      "first-page": "12",
+      "journal-title": "Nat Genet",
+      "key": "2394_CR89",
+      "unstructured": "Speed D (2019) SumHer better estimates the SNP heritability of complex traits from summary statistics. Nat Genet 51:12",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ymgme.2016.07.001",
+      "author": "AR Stiles",
+      "doi-asserted-by": "crossref",
+      "first-page": "91",
+      "journal-title": "Mol Genet Metab",
+      "key": "2394_CR90",
+      "unstructured": "Stiles AR, Simon MT, Stover A, Eftekharian S, Khanlou N, Wang HL, Magaki S, Lee H, Partynski K, Dorrani N et al (2016) Mutations in TFAM, encoding mitochondrial transcription factor A, cause neonatal liver failure associated with mtDNA depletion. Mol Genet Metab 119:91–99",
+      "volume": "119",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0021800",
+      "author": "F Supek",
+      "doi-asserted-by": "crossref",
+      "first-page": "e21800",
+      "journal-title": "PLoS One",
+      "key": "2394_CR91",
+      "unstructured": "Supek F, Bošnjak M, Škunca N, Šmuc T (2011) REVIGO summarizes and visualizes long lists of gene ontology terms. PLoS One 6:e21800",
+      "volume": "6",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1091/mbc.11.4.1471",
+      "author": "Y Tang",
+      "doi-asserted-by": "crossref",
+      "first-page": "1471",
+      "journal-title": "Mol Biol Cell",
+      "key": "2394_CR92",
+      "unstructured": "Tang Y, Schon EA, Wilichowski E, Vazquez-Memije ME, Davidson E, King MP (2000) Rearrangements of Human Mitochondrial DNA (mtDNA): New Insights into the Regulation of mtDNA Copy Number and Gene Expression. Mol Biol Cell 11:1471–1485",
+      "volume": "11",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1681/ASN.2015060661",
+      "author": "A Tin",
+      "doi-asserted-by": "crossref",
+      "first-page": "2467",
+      "journal-title": "J Am Soc Nephrol",
+      "key": "2394_CR93",
+      "unstructured": "Tin A, Grams ME, Ashar FN, Lane JA, Rosenberg AZ, Grove ML, Boerwinkle E, Selvin E, Coresh J, Pankratz N et al (2016) Association between mitochondrial DNA copy number in peripheral blood and incident CKD in the atherosclerosis risk in communities study. J Am Soc Nephrol 27:2467–2473",
+      "volume": "27",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.bbalip.2017.03.012",
+      "author": "M Tomioka",
+      "doi-asserted-by": "crossref",
+      "first-page": "658",
+      "journal-title": "Biochim Biophys Acta Mol Cell Biol Lipids",
+      "key": "2394_CR94",
+      "unstructured": "Tomioka M, Toda Y, Mañucat NB, Akatsu H, Fukumoto M, Kono N, Arai H, Kioka N, Ueda K (2017) Lysophosphatidylcholine export by human ABCA7. Biochim Biophys Acta Mol Cell Biol Lipids 1862:658–665",
+      "volume": "1862",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1258/acb.2008.008008",
+      "author": "M Urata",
+      "doi-asserted-by": "crossref",
+      "first-page": "513",
+      "journal-title": "Ann Clin Biochem",
+      "key": "2394_CR95",
+      "unstructured": "Urata M, Koga-Wada Y, Kayamori Y, Kang D (2008) Platelet contamination causes large variation as well as overestimation of mitochondrial DNA content of peripheral blood mononuclear cells. Ann Clin Biochem 45:513–514",
+      "volume": "45",
+      "year": "2008"
+    },
+    {
+      "author": "E Vagdatli",
+      "first-page": "28",
+      "journal-title": "Hippokratia",
+      "key": "2394_CR96",
+      "unstructured": "Vagdatli E, Gounari E, Lazaridou E, Katsibourlia E, Tsikopoulou F, Labrianou I (2010) Platelet distribution width: a simple, practical and specific marker of activation of coagulation. Hippokratia 14:28–32",
+      "volume": "14",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.bbrc.2016.11.088",
+      "author": "H Vakifahmetoglu-Norberg",
+      "doi-asserted-by": "crossref",
+      "first-page": "426",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "2394_CR97",
+      "unstructured": "Vakifahmetoglu-Norberg H, Ouchida AT, Norberg E (2017) The role of mitochondria in metabolism and cell death. Biochem Biophys Res Commun 482:426–431",
+      "volume": "482",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/447367",
+      "doi-asserted-by": "crossref",
+      "key": "2394_CR98",
+      "unstructured": "Võsa U, Claringbould A, Westra H-J, Bonder MJ, Deelen P, Zeng B, Kirsten H, Saha A, Kreuzhuber R, Kasela S, et al. (2018) Unraveling the polygenic architecture of complex traits using blood eQTL metaanalysis. BioRxiv 447367"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0237235",
+      "author": "CM Vyas",
+      "doi-asserted-by": "crossref",
+      "first-page": "e0237235",
+      "journal-title": "PLoS One",
+      "key": "2394_CR99",
+      "unstructured": "Vyas CM, Ogata S, Reynolds CF, Mischoulon D, Chang G, Cook NR, Manson JE, Crous-Bou M, De Vivo I, Okereke OI (2020) Lifestyle and behavioral factors and mitochondrial DNA copy number in a diverse cohort of mid-life and older adults. PLoS One 15:e0237235",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1146/annurev.bi.61.070192.005523",
+      "author": "DC Wallace",
+      "doi-asserted-by": "crossref",
+      "first-page": "1175",
+      "journal-title": "Annu Rev Biochem",
+      "key": "2394_CR100",
+      "unstructured": "Wallace DC (1992) Diseases of the mitochondrial DNA. Annu Rev Biochem 61:1175–1212",
+      "volume": "61",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1016/j.ymgme.2004.09.005",
+      "author": "L Wang",
+      "doi-asserted-by": "crossref",
+      "first-page": "75",
+      "journal-title": "Mol Genet Metab",
+      "key": "2394_CR101",
+      "unstructured": "Wang L, Limongelli A, Vila MR, Carrara F, Zeviani M, Eriksson S (2005) Molecular insight into mitochondrial DNA depletion syndrome in two patients with novel mutations in the deoxyguanosine kinase and thymidine kinase 2 genes. Mol Genet Metab 84:75–82",
+      "volume": "84",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/nar/gkq603",
+      "author": "K Wang",
+      "doi-asserted-by": "crossref",
+      "first-page": "e164",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2394_CR102",
+      "unstructured": "Wang K, Li M, Hakonarson H (2010) ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data. Nucleic Acids Res 38:e164–e164",
+      "volume": "38",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1111/rssb.12388",
+      "author": "G Wang",
+      "doi-asserted-by": "crossref",
+      "first-page": "1273",
+      "journal-title": "J R Stat Soc B",
+      "key": "2394_CR103",
+      "unstructured": "Wang G, Sarkar A, Carbonetto P, Stephens M (2020) A simple new approach to variable selection in regression, with application to genetic fine mapping. J R Stat Soc B 82:1273–1300",
+      "volume": "82",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s40478-016-0404-6",
+      "author": "W Wei",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "journal-title": "Acta Neuropathol Commun",
+      "key": "2394_CR104",
+      "unstructured": "Wei W, Keogh MJ, Wilson I, Coxhead J, Ryan S, Rollinson S, Griffin H, Kurzawa-Akanbi M, Santibanez-Koref M, Talbot K et al (2017) Mitochondrial DNA point mutations and relative copy number in 1363 disease and control human brains. Acta Neuropathol Commun 5:13",
+      "volume": "5",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq340",
+      "author": "CJ Willer",
+      "doi-asserted-by": "crossref",
+      "first-page": "2190",
+      "journal-title": "Bioinformatics",
+      "key": "2394_CR105",
+      "unstructured": "Willer CJ, Li Y, Abecasis GR (2010) METAL: fast and efficient meta-analysis of genomewide association scans. Bioinformatics 26:2190–2191",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1080/14767058.2016.1252747",
+      "author": "T Workalemahu",
+      "doi-asserted-by": "crossref",
+      "first-page": "2433",
+      "journal-title": "J Matern Fetal Neonatal Med",
+      "key": "2394_CR106",
+      "unstructured": "Workalemahu T, Enquobahrie DA, Tadesse MG, Hevner K, Gelaye B, Sanchez S, Williams MA (2017) Genetic variations related to maternal whole blood mitochondrial DNA copy number: a genome-wide and candidate gene study. J Matern Fetal Neonatal Med 30:2433–2439",
+      "volume": "30",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/jnci/djn213",
+      "author": "J Xing",
+      "doi-asserted-by": "crossref",
+      "first-page": "1104",
+      "journal-title": "J Natl Cancer Inst",
+      "key": "2394_CR107",
+      "unstructured": "Xing J, Chen M, Wood CG, Lin J, Spitz MR, Ma J, Amos CI, Shields PG, Benowitz NL, Gu J et al (2008) Mitochondrial DNA content: its genetic heritability and association with renal cell carcinoma. J Natl Cancer Inst 100:1104–1112",
+      "volume": "100",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1101/gr.269381.120",
+      "author": "SY Yang",
+      "doi-asserted-by": "crossref",
+      "first-page": "349",
+      "journal-title": "Genome Res",
+      "key": "2394_CR108",
+      "unstructured": "Yang SY, Castellani CA, Longchamps RJ, Pillalamarri VK, O’Rourke B, Guallar E, Arking DE (2021) Blood-derived mitochondrial DNA copy number is associated with gene expression across multiple tissues and is predictive for incident neurodegenerative disease. Genome Res 31:349–358",
+      "volume": "31",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1212/WNL.0000000000009582",
+      "author": "J Yin",
+      "doi-asserted-by": "crossref",
+      "first-page": "e2404",
+      "journal-title": "Neurology",
+      "key": "2394_CR109",
+      "unstructured": "Yin J, Reiman EM, Beach TG, Serrano GE, Sabbagh MN, Nielsen M, Caselli RJ, Shi J (2020) Effect of ApoE isoforms on mitochondria in Alzheimer disease. Neurology 94:e2404–e2411",
+      "volume": "94",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/gb-2010-11-2-r14",
+      "author": "MD Young",
+      "doi-asserted-by": "crossref",
+      "first-page": "R14",
+      "journal-title": "Genome Biol",
+      "key": "2394_CR110",
+      "unstructured": "Young MD, Wakefield MJ, Smyth GK, Oshlack A (2010) Gene ontology analysis for RNA-seq: accounting for selection bias. Genome Biol 11:R14",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0557-x",
+      "author": "Y Yuan",
+      "doi-asserted-by": "crossref",
+      "first-page": "342",
+      "journal-title": "Nat Genet",
+      "key": "2394_CR111",
+      "unstructured": "Yuan Y, Ju YS, Kim Y, Li J, Wang Y, Yoon CJ, Yang Y, Martincorena I, Creighton CJ, Weinstein JN et al (2020) Comprehensive molecular characterization of mitochondrial genomes in human cancers. Nat Genet 52:342–352",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1152/physiolgenomics.00079.2012",
+      "author": "D Zhang",
+      "doi-asserted-by": "crossref",
+      "first-page": "1133",
+      "journal-title": "Physiol Genomics",
+      "key": "2394_CR112",
+      "unstructured": "Zhang D, Xi Y, Coccimiglio ML, Mennigen JA, Jonz MG, Ekker M, Trudeau VL (2012) Functional prediction and physiological characterization of a novel short trans-membrane protein 1 as a subunit of mitochondrial respiratory complexes. Physiol Genomics 44:1133–1140",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s12916-020-01715-6",
+      "author": "D Zhao",
+      "doi-asserted-by": "crossref",
+      "first-page": "246",
+      "journal-title": "BMC Med",
+      "key": "2394_CR113",
+      "unstructured": "Zhao D, Bartz TM, Sotoodehnia N, Post WS, Heckbert SR, Alonso A, Longchamps RJ, Castellani CA, Hong YS, Rotter JI et al (2020) Mitochondrial DNA copy number and incident atrial fibrillation. BMC Med 18:246",
+      "volume": "18",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 113,
+  "references-count": 113,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-021-02394-w"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Genome-wide analysis of mitochondrial DNA copy number reveals loci implicated in nucleotide metabolism, platelet activation, and megakaryocyte proliferation"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "141"
+}

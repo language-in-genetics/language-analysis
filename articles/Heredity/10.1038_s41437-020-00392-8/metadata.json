@@ -1,0 +1,738 @@
+{
+  "DOI": "10.1038/s41437-020-00392-8",
+  "ISSN": [
+    "0018-067X",
+    "1365-2540"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41437-020-00392-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe detection of family relationships in genetic databases is of interest in various scientific disciplines such as genetic epidemiology, population and conservation genetics, forensic science, and genealogical research. Nowadays, screening genetic databases for related individuals forms an important aspect of standard quality control procedures. Relatedness research is usually based on an allele sharing analysis of identity by state (IBS) or identity by descent (IBD) alleles. Existing IBS/IBD methods mainly aim to identify first-degree relationships (parent–offspring or full siblings) and second degree (half-siblings, avuncular, or grandparent–grandchild) pairs. Little attention has been paid to the detection of in-between first and second-degree relationships such as three-quarter siblings (3/4S) who share fewer alleles than first-degree relationships but more alleles than second-degree relationships. With the progressively increasing sample sizes used in genetic research, it becomes more likely that such relationships are present in the database under study. In this paper, we extend existing likelihood ratio (LR) methodology to accurately infer the existence of 3/4S, distinguishing them from full siblings and second-degree relatives. We use bootstrap confidence intervals to express uncertainty in the LRs. Our proposal accounts for linkage disequilibrium (LD) by using marker pruning, and we validate our methodology with a pedigree-based simulation study accounting for both LD and recombination. An empirical genome-wide array data set from the GCAT Genomes for Life cohort project is used to illustrate the method.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "392"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "26 October 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "4 November 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "16 November 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "15 January 2021"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-6124-3730",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Galván-Femenía",
+      "given": "Iván",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Barceló-Vidal",
+      "given": "Carles",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sumoy",
+      "given": "Lauro",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2818-5487",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Moreno",
+      "given": "Victor",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Cid",
+      "given": "Rafael",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3900-0780",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Graffelman",
+      "given": "Jan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Heredity"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        15
+      ]
+    ],
+    "date-time": "2021-01-15T18:03:21Z",
+    "timestamp": 1610733801000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        20
+      ]
+    ],
+    "date-time": "2023-05-20T21:18:08Z",
+    "timestamp": 1684617488000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        24
+      ]
+    ],
+    "date-time": "2023-11-24T00:36:46Z",
+    "timestamp": 1700786206963
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0018-067X"
+    },
+    {
+      "type": "electronic",
+      "value": "1365-2540"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        15
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            15
+          ]
+        ],
+        "date-time": "2021-01-15T00:00:00Z",
+        "timestamp": 1610668800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            15
+          ]
+        ],
+        "date-time": "2021-01-15T00:00:00Z",
+        "timestamp": 1610668800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-00392-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-00392-8",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-00392-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "537-547",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        15
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        15
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        3
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1086/497345",
+      "author": "GR Abecasis",
+      "doi-asserted-by": "publisher",
+      "first-page": "754",
+      "journal-title": "Am J Hum Genet",
+      "key": "392_CR1",
+      "unstructured": "Abecasis GR, Wigginton JE (2005) Handling marker-marker linkage disequilibrium: pedigree analysis with clustered markers. Am J Hum Genet 77:754–767",
+      "volume": "77",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/17.8.742",
+      "author": "GR Abecasis",
+      "doi-asserted-by": "publisher",
+      "first-page": "742",
+      "journal-title": "Bioinformatics",
+      "key": "392_CR2",
+      "unstructured": "Abecasis GR, Cherny SS, Cookson WOC, Cardon LR (2001) GRR: graphical representation of relationship errors. Bioinformatics 17:742–743",
+      "volume": "17",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/nprot.2010.116",
+      "author": "CA Anderson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1564",
+      "journal-title": "Nat Protoc",
+      "key": "392_CR3",
+      "unstructured": "Anderson CA, Pettersson FH, Clarke GM, Cardon LR, Morris AP, Zondervan KT (2010) Data quality control in genetic case-control association studies. Nat Protoc 5:1564",
+      "volume": "5",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/ncomms14994",
+      "author": "C Bhérer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Nat Commun",
+      "key": "392_CR4",
+      "unstructured": "Bhérer C, Campbell CL, Auton A (2017) Refined genetic maps reveal sexual dimorphism in human meiotic recombination at multiple scales. Nat Commun 8:1–9",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1086/514862",
+      "author": "M Boehnke",
+      "doi-asserted-by": "publisher",
+      "first-page": "423",
+      "journal-title": "Am J Hum Genet",
+      "key": "392_CR5",
+      "unstructured": "Boehnke M, Cox NJ (1997) Accurate inference of relationships in sib-pair linkage studies. Am J Hum Genet 61:423–429",
+      "volume": "61",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "author": "C Bycroft",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "392_CR6",
+      "unstructured": "Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K et al. (2018) The UK Biobank resource with deep phenotyping and genomic data. Nature 562:203",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007979",
+      "author": "M Caballero",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007979",
+      "journal-title": "PLoS Genet",
+      "key": "392_CR7",
+      "unstructured": "Caballero M, Seidman DN, Qiao Y, Sannerud J, Dyer TD, Lehman DM et al. (2019) Crossover interference and sex-specific genetic maps shape identical by descent sharing in close relatives. PLoS Genet 15:e1007979",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12711-018-0404-z",
+      "author": "MPL Calus",
+      "doi-asserted-by": "publisher",
+      "first-page": "34",
+      "journal-title": "Genet Selection Evolution",
+      "key": "392_CR8",
+      "unstructured": "Calus MPL, Vandenplas J (2018) SNPrune: an efficient algorithm to prune large SNP array and sequence datasets based on high linkage disequilibrium. Genet Selection Evolution 50:34",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ncomms7260",
+      "author": "CL Campbell",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "392_CR9",
+      "unstructured": "Campbell CL, Furlotte NA, Eriksson N, Hinds D, Auton A (2015) Escape from crossover interference increases with maternal age. Nat Commun 6:6260",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13225-y",
+      "author": "O Delaneau",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Nat Commun",
+      "key": "392_CR10",
+      "unstructured": "Delaneau O, Zagury J-F, Robinson MR, Marchini JL, Dermitzakis ET (2019) Accurate, scalable and integrative haplotype estimation. Nat Commun 10:1–10",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1201/9780429246593",
+      "doi-asserted-by": "crossref",
+      "key": "392_CR11",
+      "unstructured": "Efron B (1994) Tibshirani RJ. An introduction to the bootstrap. CRC press"
+    },
+    {
+      "key": "392_CR12",
+      "unstructured": "Evett IW, Weir BS (1998) Interpreting DNA evidence. Sinauer Associates, Inc"
+    },
+    {
+      "DOI": "10.1111/1755-0998.12674",
+      "author": "I Galván-Femenía",
+      "doi-asserted-by": "publisher",
+      "first-page": "1271",
+      "journal-title": "Mol Ecol Resour",
+      "key": "392_CR13",
+      "unstructured": "Galván-Femenía I, Graffelman J, Barceló-Vidal C (2017) Graphics for relatedness research. Mol Ecol Resour 17:1271–1282",
+      "volume": "17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2018-105437",
+      "author": "I Galván-Femenía",
+      "doi-asserted-by": "publisher",
+      "first-page": "765",
+      "journal-title": "J Med Genet",
+      "key": "392_CR14",
+      "unstructured": "Galván-Femenía I, Obón-Santacana M, Piñeyro D, Guindo-Martinez M, Duran X, Carreras A et al. (2018) Multitrait genome association analysis identifies new susceptibility genes for human anthropometric variation in the GCAT cohort. J Med Genet 55:765–778",
+      "volume": "55",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/mec.14833",
+      "author": "J Goudet",
+      "doi-asserted-by": "publisher",
+      "first-page": "4121",
+      "journal-title": "Mol Ecol",
+      "key": "392_CR15",
+      "unstructured": "Goudet J, Kay T, Weir BS (2018) How to estimate kinship. Mol Ecol 27:4121–4135",
+      "volume": "27",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fgene.2019.00341",
+      "author": "J Graffelman",
+      "doi-asserted-by": "publisher",
+      "first-page": "341",
+      "journal-title": "Front Genet",
+      "key": "392_CR16",
+      "unstructured": "Graffelman J, Galván-Femenía I, de Cid R, Barceló-Vidal C (2019) A log-ratio biplot approach for exploring genetic relatedness based on identity by state. Front Genet 10:341",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1515/sagmb-2012-0039",
+      "author": "J Graffelman",
+      "doi-asserted-by": "publisher",
+      "first-page": "433",
+      "journal-title": "Stat Appl Genet Mol Biol",
+      "key": "392_CR17",
+      "unstructured": "Graffelman J, Moreno V (2013) The mid p-value in exact tests for Hardy-Weinberg equilibrium. Stat Appl Genet Mol Biol 12:433–448",
+      "volume": "12",
+      "year": "2013"
+    },
+    {
+      "author": "K Hanghøj",
+      "first-page": "5",
+      "journal-title": "GigaScience",
+      "key": "392_CR18",
+      "unstructured": "Hanghøj K, Moltke I, Andersen PA, Manica A, Korneliussen TS (2019) Fast and accurate relatedness estimation from high-throughput sequencing data in the presence of inbreeding. GigaScience 8:5",
+      "volume": "8",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw550",
+      "author": "V Heinrich",
+      "doi-asserted-by": "publisher",
+      "first-page": "72",
+      "journal-title": "Bioinformatics",
+      "key": "392_CR19",
+      "unstructured": "Heinrich V, Kamphans T, Mundlos S, Robinson PN, Krawitz PM (2016) A likelihood ratio-based method to predict exact pedigrees for complex families from next-generation sequencing data. Bioinformatics 33:72–78",
+      "volume": "33",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1017/S0016672310000480",
+      "author": "WG Hill",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "journal-title": "Genet Res (Camb)",
+      "key": "392_CR20",
+      "unstructured": "Hill WG, Weir BS (2011) Variation in actual relationship as a consequence of mendelian sampling and linkage. Genet Res (Camb) 93:47–64",
+      "volume": "93",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/978-3-642-88415-3",
+      "doi-asserted-by": "crossref",
+      "key": "392_CR21",
+      "unstructured": "Jacquard A (1974) The genetic structure of populations. Springer-Verlag"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "392_CR22",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q et al. (2020) The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 581:434–443",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1198/jasa.2010.ap09258",
+      "author": "HA Katki",
+      "doi-asserted-by": "publisher",
+      "first-page": "552",
+      "journal-title": "J Am Stat Assoc",
+      "key": "392_CR23",
+      "unstructured": "Katki HA, Sanders CL, Graubard BI, Bergen AW (2010) Using DNA fingerprints to infer familial relationships within NHANES III households. J Am Stat Assoc 105:552–563",
+      "volume": "105",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2019.06.019",
+      "author": "D Kling",
+      "doi-asserted-by": "publisher",
+      "first-page": "113",
+      "journal-title": "Forensic Sci Int Genet",
+      "key": "392_CR24",
+      "unstructured": "Kling D, Tillmar A (2019) Forensic genealogy-a comparison of methods to infer distant relationships based on dense SNP data. Forensic Sci Int Genet 42:113–124",
+      "volume": "42",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00414-014-1117-7",
+      "author": "D Kling",
+      "doi-asserted-by": "publisher",
+      "first-page": "943",
+      "journal-title": "Int J Leg Med",
+      "key": "392_CR25",
+      "unstructured": "Kling D, Tillmar A, Egeland T, Mostad P (2015) A general model for likelihood computations of genetic marker data accounting for linkage, linkage disequilibrium, and mutations. Int J Leg Med 129:943–954",
+      "volume": "129",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq559",
+      "author": "A Manichaikul",
+      "doi-asserted-by": "publisher",
+      "first-page": "2867",
+      "journal-title": "Bioinformatics",
+      "key": "392_CR26",
+      "unstructured": "Manichaikul A, Mychaleckyj JC, Rich SS, Daly K, Sale M, Chen Wei-Min (2010) Robust relationship inference in genome-wide association studies. Bioinformatics 26:2867–2873",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/genetics/163.3.1153",
+      "author": "BG Milligan",
+      "doi-asserted-by": "crossref",
+      "first-page": "1153",
+      "journal-title": "Genetics",
+      "key": "392_CR27",
+      "unstructured": "Milligan BG (2003) Maximum-likelihood estimation of relatedness. Genetics 163:1153–1167",
+      "volume": "163",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2016.02.012",
+      "author": "SK Mo",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "journal-title": "Forensic Sci Int Genet",
+      "key": "392_CR28",
+      "unstructured": "Mo SK, Liu Y-C, Wang S-Q, Bo X-C, Li Z, Chen Y et al. (2016) Exploring the efficacy of paternity and kinship testing based on single nucleotide polymorphisms. Forensic Sci Int Genet 22:161–168",
+      "volume": "22",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1136/bmjopen-2017-018324",
+      "author": "M Obón-Santacana",
+      "doi-asserted-by": "publisher",
+      "first-page": "e018324",
+      "journal-title": "BMJ Open",
+      "key": "392_CR29",
+      "unstructured": "Obón-Santacana M, Vilardell M, Carreras A, Duran X, Velasco J, Galván-Femenía I et al. (2018) GCAT|Genomes for life: a prospective cohort study of the genomes of Catalonia. BMJ Open 8:e018324",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1534/genetics.105.049940",
+      "author": "PA Oliehoek",
+      "doi-asserted-by": "publisher",
+      "first-page": "483",
+      "journal-title": "Genetics",
+      "key": "392_CR30",
+      "unstructured": "Oliehoek PA, Windig JJ, van Arendonk JAM, Bijma P (2006) Estimating relatedness between individuals in general populations with a focus on their use in conservation programs. Genetics 173:483–496",
+      "volume": "173",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "author": "S Purcell",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "journal-title": "Am J Hum Genet",
+      "key": "392_CR31",
+      "unstructured": "Purcell S, Neale B, Todd-Brown K, Thomas L, Ferreira MA, Bender D et al. (2007) PLINK: a tool set for whole-genome association and population-based linkage analyses. Am J Hum Genet 81:559–575",
+      "volume": "81",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.2006.00285.x",
+      "author": "NA Rosenberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "841",
+      "journal-title": "Ann Hum Genet",
+      "key": "392_CR32",
+      "unstructured": "Rosenberg NA (2006) Standardized subsets of the hgdp-ceph human genome diversity cell line panel, accounting for atypical and duplicated samples and pairs of close relatives. Ann Hum Genet 70:841–847",
+      "volume": "70",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.03.012",
+      "author": "J Staples",
+      "doi-asserted-by": "publisher",
+      "first-page": "874",
+      "journal-title": "Am J Hum Genet",
+      "key": "392_CR33",
+      "unstructured": "Staples J, Maxwell EK, Gosalia N, Gonzaga-Jauregui C, Snyder C, Hawes A et al. (2018) Profiling and leveraging relatedness in a precision medicine cohort of 92,455 exomes. Am J Hum Genet 102:874–889",
+      "volume": "102",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.10.005",
+      "author": "J Staples",
+      "doi-asserted-by": "publisher",
+      "first-page": "553",
+      "journal-title": "Am J Hum Genet",
+      "key": "392_CR34",
+      "unstructured": "Staples J, Qiao D, Cho MH, Silverman EK, Genomics U, Nickerso DA et al. (2014) PRIMUS: Rapid Reconstruction of Pedigrees from Genome-wide Estimates of Identity by Descent. Am J Hum Genet 95:553–564",
+      "volume": "95",
+      "year": "2014"
+    },
+    {
+      "key": "392_CR35",
+      "unstructured": "Taliun D, Harris DN, Kessler MD, Carlson J, Szpiech ZA, Torres R et al. (2019) Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program. bioRxiv"
+    },
+    {
+      "DOI": "10.1111/j.1469-1809.1975.tb00120.x",
+      "author": "EA Thompson",
+      "doi-asserted-by": "publisher",
+      "first-page": "173",
+      "journal-title": "Ann Hum Genet",
+      "key": "392_CR36",
+      "unstructured": "Thompson EA (1975) The estimation of pairwise relationships. Ann Hum Genet 39:173–188",
+      "volume": "39",
+      "year": "1975"
+    },
+    {
+      "author": "EA Thompson",
+      "first-page": "285",
+      "journal-title": "Am J Hum Genet",
+      "key": "392_CR37",
+      "unstructured": "Thompson EA (1986) Likelihood inference of paternity. Am J Hum Genet 39:285",
+      "volume": "39",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1016/S0169-7161(05)80164-6",
+      "author": "EA Thompson",
+      "doi-asserted-by": "publisher",
+      "first-page": "255",
+      "journal-title": "Handb Stat",
+      "key": "392_CR38",
+      "unstructured": "Thompson EA (1991) Estimation of relationships from genetic data. Handb Stat 8:255–269",
+      "volume": "8",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.06.005",
+      "author": "PM Visscher",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "Am J Hum Genet",
+      "key": "392_CR39",
+      "unstructured": "Visscher PM, Wray NR, Zhang Q, Sklar P, McCarthy MI, Brown MA et al. (2017) 10 years of GWAS discovery: biology, function, and translation. Am J Hum Genet 101:5–22. ISSN 0002-9297",
+      "volume": "101",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/sj.hdy.6800865",
+      "author": "AP Wagner",
+      "doi-asserted-by": "publisher",
+      "first-page": "336",
+      "journal-title": "Heredity",
+      "key": "392_CR40",
+      "unstructured": "Wagner AP, Creel S, Kalinowski ST (2006) Estimating relatedness and relationships using microsatellite loci with null alleles. Heredity 97:336",
+      "volume": "97",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1534/genetics.166.4.1963",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1963",
+      "journal-title": "Genetics",
+      "key": "392_CR41",
+      "unstructured": "Wang J (2004) Sibship reconstruction from genetic data with typing errors. Genetics 166:1963–1979",
+      "volume": "166",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1038/nrg1960",
+      "author": "BS Weir",
+      "doi-asserted-by": "publisher",
+      "first-page": "771",
+      "journal-title": "Nat Rev Genet",
+      "key": "392_CR42",
+      "unstructured": "Weir BS, Anderson AD, Hepler AB (2006) Genetic relatedness analysis: modern data and new challenges. Nat Rev Genet 7:771",
+      "volume": "7",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1534/genetics.116.198424",
+      "author": "BS Weir",
+      "doi-asserted-by": "publisher",
+      "first-page": "2085",
+      "journal-title": "Genetics",
+      "key": "392_CR43",
+      "unstructured": "Weir BS, Goudet J (2017) A unified characterization of population structure and relatedness. Genetics 206:2085–2103",
+      "volume": "206",
+      "year": "2017"
+    }
+  ],
+  "reference-count": 43,
+  "references-count": 43,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41437-020-00392-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Heredity"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A likelihood ratio approach for identifying three-quarter siblings in genetic databases"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "126"
+}

@@ -1,0 +1,792 @@
+{
+  "DOI": "10.1186/s40246-021-00350-3",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00350-3",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\u003cjats:title\u003eBackground\u003c/jats:title\u003e\u003cjats:p\u003eSkin cutaneous melanoma (SKCM) is one of the most highly prevalent and complicated malignancies. Glycolysis and cholesterogenesis pathways both play important roles in cancer metabolic adaptations. The main aims of this study are to subtype SKCM based on glycolytic and cholesterogenic genes and to build a clinical outcome predictive algorithm based on the subtypes.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eMethods\u003c/jats:title\u003e\u003cjats:p\u003eA dataset with 471 SKCM specimens was downloaded from The Cancer Genome Atlas (TCGA) database. We extracted and clustered genes from the Molecular Signatures Database v7.2 and acquired co-expressed glycolytic and cholesterogenic genes. We then subtyped the SKCM samples and validated the efficacy of subtypes with respect to simple nucleotide variations (SNVs), copy number variation (CNV), patients’ survival statuses, tumor microenvironment, and proliferation scores. We also constructed a risk score model based on metabolic subclassification and verified the model using validating datasets. Finally, we explored potential drugs for high-risk SKCM patients.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eResults\u003c/jats:title\u003e\u003cjats:p\u003eSKCM patients were divided into four subtype groups: glycolytic, cholesterogenic, mixed, and quiescent subgroups. The glycolytic subtype had the worst prognosis and\u003cjats:italic\u003eMGAM\u003c/jats:italic\u003eSNV extent. Compared with the cholesterogenic subgroup, the glycolytic subgroup had higher rates of\u003cjats:italic\u003eDDR2\u003c/jats:italic\u003eand\u003cjats:italic\u003eTPR\u003c/jats:italic\u003eCNV and higher proliferation scores and MK167 expression levels, but a lower tumor purity proportion. We constructed a forty-four-gene predictive signature and identified MST-321, SB-743921, Neuronal Differentiation Inducer III, romidepsin, vindesine, and YM-155 as high-sensitive drugs for high-risk SKCM patients.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eConclusions\u003c/jats:title\u003e\u003cjats:p\u003eSubtyping SKCM patients via glycolytic and cholesterogenic genes was effective, and patients in the glycolytic-gene enriched group were found to have the worst outcome. A robust prognostic algorithm was developed to enhance clinical decisions in relation to drug administration.\u003c/jats:p\u003e\u003c/jats:sec\u003e",
+  "alternative-id": [
+    "350"
+  ],
+  "article-number": "53",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "12 April 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "26 July 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "12 August 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Enchong",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Yijing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bao",
+      "given": "Shurui",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hou",
+      "given": "Xueying",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hu",
+      "given": "Jing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mu",
+      "given": "Oscar Yong Nan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Song",
+      "given": "Yongsheng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shan",
+      "given": "Liping",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        12
+      ]
+    ],
+    "date-time": "2021-08-12T10:03:43Z",
+    "timestamp": 1628762623000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        7
+      ]
+    ],
+    "date-time": "2023-01-07T06:11:59Z",
+    "timestamp": 1673071919000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        14
+      ]
+    ],
+    "date-time": "2024-04-14T13:48:01Z",
+    "timestamp": 1713102481499
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            12
+          ]
+        ],
+        "date-time": "2021-08-12T00:00:00Z",
+        "timestamp": 1628726400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            12
+          ]
+        ],
+        "date-time": "2021-08-12T00:00:00Z",
+        "timestamp": 1628726400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00350-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00350-3/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00350-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        12
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3322/caac.21565",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR1",
+      "unstructured": "Miller KD, Nogueira L, Mariotto AB, Rowland JH, Yabroff KR, Alfano CM, et al. Cancer treatment and survivorship statistics, 2019. CA Cancer J Clin. 2019;69(5):363–85. Epub 2019/06/12. 31184787. https://doi.org/10.3322/caac.21565."
+    },
+    {
+      "DOI": "10.1080/15384047.2019.1640032",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR2",
+      "unstructured": "Davis LE, Shalin SC, Tackett AJ. Current state of melanoma diagnosis and treatment. Cancer Biol Ther (2019) 20(11):1366-1379. Epub 2019/08/02. doi: https://doi.org/10.1080/15384047.2019.1640032. PubMed PMID: 31366280; PubMed Central PMCID: PMCPMC6804807."
+    },
+    {
+      "DOI": "10.1016/s1470-2045(19)30332-8",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR3",
+      "unstructured": "Amaria RN, Menzies AM, Burton EM, Scolyer RA, Tetzlaff MT, Antdbacka R, Ariyan C, Bassett R, Carter B, Daud A, Faries M, Fecher LA, Flaherty KT, Gershenwald JE, Hamid O, Hong A, Kirkwood JM, Lo S, Margolin K, Messina J, Postow MA, Rizos H, Ross MI, Rozeman EA, Saw RPM, Sondak V, Sullivan RJ, Taube JM, Thompson JF, van de Wiel BA, Eggermont AM, Davies MA, Ascierto PA, Spillane AJ, van Akkooi ACJ, Wargo JA, Blank CU, Tawbi HA, Long GV, Andrews MC, Berry DA, Block MS, Boland GM, Bollin KB, Carlino MS, Carvajal RD, Cohen J, Davar D, Delman KA, Dummer R, Farwell MD, Fisher DE, Fusi A, Glitza IC, de Gruijl TD, Gyorki DE, Hauschild A, Hieken TJ, Larkin J, Lawson DH, Lebbe C, Lee JE, Lowe MC, Luke JJ, McArthur GA, McDermott DF, McQuade JL, Mitchell TC, Petrella TM, Prieto PA, Puzanov I, Robert C, Salama AK, Sandhu S, Schadendorf D, Shoushtari AN, Sosman JA, Swetter SM, Tanabe KK, Turajlic S, Tyler DS, Woodman SE, Wright FC, Zager JS Neoadjuvant systemic therapy in melanoma: recommendations of the international neoadjuvant melanoma consortium. Lancet Oncol (2019) 20(7):e378-ee89. Epub 2019/07/04. doi: https://doi.org/10.1016/s1470-2045(19)30332-8. PubMed PMID: 31267972."
+    },
+    {
+      "DOI": "10.1038/s41586-019-1847-2",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR4",
+      "unstructured": "Tasdogan A, Faubert B, Ramesh V, Ubellacker JM, Shen B, Solmonson A, et al. Metabolic heterogeneity confers differences in melanoma metastatic potential. Nature (2020) 577(7788):115-120. Epub 2019/12/20. doi: https://doi.org/10.1038/s41586-019-1847-2. PubMed PMID: 31853067; PubMed Central PMCID: PMCPMC6930341."
+    },
+    {
+      "DOI": "10.1016/j.cell.2015.05.044",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR5",
+      "unstructured": "Cancer Genome Atlas Network Genomic Classification of Cutaneous Melanoma. Cell. 2015;161(7):1681-96. https://doi.org/10.1016/j.cell.2015.05.044. PubMed PMID: 26091043."
+    },
+    {
+      "DOI": "10.1016/j.intimp.2020.107162",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR6",
+      "unstructured": "Hu B, Wei Q, Zhou C, Ju M, Wang L, Chen L, et al. Analysis of immune subtypes based on immunogenomic profiling identifies prognostic signature for cutaneous melanoma. Int Immunopharmacol (2020) 89(Pt A):107162. doi: https://doi.org/10.1016/j.intimp.2020.107162. PubMed PMID: 33168410."
+    },
+    {
+      "DOI": "10.1038/s41598-020-69330-2",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR7",
+      "unstructured": "Liao M, Zeng F, Li Y, Gao Q, Yin M, Deng G, Chen X A novel predictive model incorporating immune-related gene signatures for overall survival in melanoma patients. Sci Rep (2020) 10(1):12462. doi: https://doi.org/10.1038/s41598-020-69330-2. PubMed PMID: 32719391."
+    },
+    {
+      "DOI": "10.3233/CBM-190825",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR8",
+      "unstructured": "Wan Q, Tang J, Lu J, Jin L, Su Y, Wang S, Cheng Y, Liu Y, Li C, Wang Z Six-gene-based prognostic model predicts overall survival in patients with uveal melanoma. Cancer Biomark (2020) 27(3):343-356. doi: https://doi.org/10.3233/CBM-190825. PubMed PMID: 31903983."
+    },
+    {
+      "DOI": "10.1016/j.ceb.2017.05.006",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR9",
+      "unstructured": "Reina-Campos M, Moscat J, Diaz-Meco M. Metabolism shapes the tumor microenvironment. Curr Opin Cell Biol (2017) 48:47-53. Epub 2017/06/13. doi: https://doi.org/10.1016/j.ceb.2017.05.006. PubMed PMID: 28605656; PubMed Central PMCID: PMCPMC5650101."
+    },
+    {
+      "DOI": "10.1016/j.bbabio.2017.02.001",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR10",
+      "unstructured": "Danhier P, Bański P, Payen VL, Grasso D, Ippolito L, Sonveaux P, Porporato PE Cancer metabolism in space and time: beyond the Warburg effect. Biochim Biophys Acta Bioenerg (2017) 1858(8):556-572. Epub 2017/02/09. doi: https://doi.org/10.1016/j.bbabio.2017.02.001. PubMed PMID: 28167100."
+    },
+    {
+      "DOI": "10.1158/2159-8290.Cd-16-0615",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR11",
+      "unstructured": "Vernieri C, Casola S, Foiani M, Pietrantonio F, de Braud F, Longo V. Targeting cancer metabolism: dietary and pharmacologic interventions. Cancer Discov (2016) 6(12):1315-1333. Epub 2016/11/23. doi: https://doi.org/10.1158/2159-8290.Cd-16-0615. PubMed PMID: 27872127; PubMed Central PMCID: PMCPMC5140697."
+    },
+    {
+      "DOI": "10.1016/j.celrep.2019.08.068",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR12",
+      "unstructured": "Renner K, Bruss C, Schnell A, Koehl G, Becker HM, Fante M, et al. Restricting glycolysis preserves T cell effector functions and augments checkpoint therapy. Cell Rep (2019) 29(1):135-50.e9. Epub 2019/10/03. doi: https://doi.org/10.1016/j.celrep.2019.08.068. PubMed PMID: 31577944."
+    },
+    {
+      "DOI": "10.1016/j.prp.2019.152752",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR13",
+      "unstructured": "Koch A, Ebert EV, Seitz T, Dietrich P, Berneburg M, Bosserhoff A, Hellerbrand C Characterization of glycolysis-related gene expression in malignant melanoma. Pathol Res Pract (2020) 216(1):152752. Epub 2019/12/04. doi: https://doi.org/10.1016/j.prp.2019.152752. PubMed PMID: 31791701."
+    },
+    {
+      "DOI": "10.1097/pas.0000000000001004",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR14",
+      "unstructured": "Landau MA, Zhu B, Akwuole FN, Pai RK. Site-specific differences in colonic adenocarcinoma: KRAS mutations and high tumor budding are more frequent in cecal adenocarcinoma. Am J Surg Pathol (2018) 42(3):351-358. Epub 2017/12/15. doi: https://doi.org/10.1097/pas.0000000000001004. PubMed PMID: 29240583."
+    },
+    {
+      "DOI": "10.1038/nature16967",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR15",
+      "unstructured": "Kerr EM, Gaude E, Turrell FK, Frezza C, Martins CP. Mutant Kras copy number defines metabolic reprogramming and therapeutic susceptibilities. Nature (2016) 531(7592):110-113. Epub 2016/02/26. doi: https://doi.org/10.1038/nature16967. PubMed PMID: 26909577; PubMed Central PMCID: PMCPMC4780242."
+    },
+    {
+      "DOI": "10.1016/j.leukres.2016.09.013",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR16",
+      "unstructured": "Hong M, Xia Y, Zhu Y, Zhao HH, Zhu H, Xie Y, Fan L, Wang L, Miao KR, Yu H, Miao YQ, Wu W, Zhu HY, Chen YY, Xu W, Qian SX, Li JY TP53-induced glycolysis and apoptosis regulator protects from spontaneous apoptosis and predicts poor prognosis in chronic lymphocytic leukemia. Leuk Res (2016) 50:72-77. Epub 2016/10/27. doi: https://doi.org/10.1016/j.leukres.2016.09.013. PubMed PMID: 27693855."
+    },
+    {
+      "DOI": "10.1126/science.aaa5004",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR17",
+      "unstructured": "Yun J, Mullarky E, Lu C, Bosch KN, Kavalier A, Rivera K, et al. Vitamin C selectively kills KRAS and BRAF mutant colorectal cancer cells by targeting GAPDH. Science (2015) 350(6266):1391-1396. Epub 2015/11/07. doi: https://doi.org/10.1126/science.aaa5004. PubMed PMID: 26541605; PubMed Central PMCID: PMCPMC4778961."
+    },
+    {
+      "key": "350_CR18",
+      "unstructured": "Bhattacharya B, Mohd Omar MF, Soong R. The Warburg effect and drug resistance. Br J Pharmacol (2016) 173(6):970-9. Epub 2016/01/12. doi: 10.1111/bph.13422. PubMed PMID: 26750865; PubMed Central PMCID: PMCPMC4793921."
+    },
+    {
+      "DOI": "10.1016/j.bbamcr.2016.01.017",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR19",
+      "unstructured": "Bender T, Martinou JC. The mitochondrial pyruvate carrier in health and disease: to carry or not to carry? Biochim Biophys Acta (2016) 1863(10):2436-2442. Epub 2016/01/31. doi: https://doi.org/10.1016/j.bbamcr.2016.01.017. PubMed PMID: 26826034."
+    },
+    {
+      "DOI": "10.1016/0300-9084(92)90016-8",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR20",
+      "unstructured": "Baggetto LG. Deviant energetic metabolism of glycolytic cancer cells. Biochimie (1992) 74(11):959-974. Epub 1992/11/01. doi: https://doi.org/10.1016/0300-9084(92)90016-8. PubMed PMID: 1477140."
+    },
+    {
+      "DOI": "10.1016/j.bbcan.2020.188394",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR21",
+      "unstructured": "Xu H, Zhou S, Tang Q, Xia H, Bi F. Cholesterol metabolism: new functions and therapeutic approaches in cancer. Biochim Biophys Acta Rev Cancer (2020) 1874(1):188394. Epub 2020/07/23. doi: https://doi.org/10.1016/j.bbcan.2020.188394. PubMed PMID: 32698040."
+    },
+    {
+      "DOI": "10.2174/1874467209666160112123205",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR22",
+      "unstructured": "Bathaie SZ, Ashrafi M, Azizian M, Tamanoi F. Mevalonate pathway and human cancers. Curr Mol Pharmacol (2017) 10(2):77-85. Epub 2016/01/14. doi: https://doi.org/10.2174/1874467209666160112123205. PubMed PMID: 26758953."
+    },
+    {
+      "DOI": "10.1001/jama.295.1.74",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR23",
+      "unstructured": "Dale KM, Coleman CI, Henyan NN, Kluger J, White CM. Statins and cancer risk: a meta-analysis. Jama (2006) 295(1):74-80. Epub 2006/01/05. doi: https://doi.org/10.1001/jama.295.1.74. PubMed PMID: 16391219."
+    },
+    {
+      "DOI": "10.1158/0008-5472",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR24",
+      "unstructured": "Kuzu OF, Noory MA, Robertson GP. The role of cholesterol in cancer. Cancer Res (2016) 76(8):2063-2070. Epub 2016/05/20. doi: https://doi.org/10.1158/0008-5472.Can-15-2613. PubMed PMID: 27197250; PubMed Central PMCID: PMCPMC5813477."
+    },
+    {
+      "DOI": "10.1016/j.molcel.2014.09.026",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR25",
+      "unstructured": "Schell JC, Olson KA, Jiang L, Hawkins AJ, Van Vranken JG, Xie J, et al. A role for the mitochondrial pyruvate carrier as a repressor of the Warburg effect and colon cancer cell growth. Mol Cell (2014) 56(3):400-413. Epub 2014/12/03. doi: https://doi.org/10.1016/j.molcel.2014.09.026. PubMed PMID: 25458841; PubMed Central PMCID: PMCPMC4268416."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq170",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR26",
+      "unstructured": "Wilkerson MD, Hayes DN. ConsensusClusterPlus: a class discovery tool with confidence assessments and item tracking. Bioinformatics (Oxford, England) (2010) 26(12):1572-1573. Epub 2010/04/28. doi: https://doi.org/10.1093/bioinformatics/btq170. PubMed PMID: 20427518."
+    },
+    {
+      "DOI": "10.1016/j.csbj.2019.03.008",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR27",
+      "unstructured": "Xu S, Feng Y, Zhao S. Proteins with evolutionarily hypervariable domains are associated with immune response and better survival of basal-like breast cancer patients. Comput Struct Biotechnol J (2019) 17:430-440. doi: https://doi.org/10.1016/j.csbj.2019.03.008. PubMed PMID: 30996822."
+    },
+    {
+      "DOI": "10.1093/abbs/gmv005",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR28",
+      "unstructured": "Poudel B, Lee Y-M, Kim D-K. DDR2 inhibition reduces migration and invasion of murine metastatic melanoma cells by suppressing MMP2/9 expression through ERK/NF-κB pathway. Acta Biochim Biophys Sin Shanghai (2015) 47(4):292-298. doi: https://doi.org/10.1093/abbs/gmv005. PubMed PMID: 25733533."
+    },
+    {
+      "DOI": "10.1126/sciadv.aav2437",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR29",
+      "unstructured": "Tu MM, Lee FYF, Jones RT, Kimball AK, Saravia E, Graziano RF, et al. Targeting DDR2 enhances tumor response to anti-PD-1 immunotherapy. Sci Adv (2019) 5(2):eaav2437. doi: https://doi.org/10.1126/sciadv.aav2437. PubMed PMID: 30801016."
+    },
+    {
+      "DOI": "10.18632/oncotarget.24344",
+      "doi-asserted-by": "crossref",
+      "key": "350_CR30",
+      "unstructured": "Dewi FRP, Domoto T, Hazawa M, Kobayashi A, Douwaki T, Minamoto T, et al. Colorectal cancer cells require glycogen synthase kinase-3\u0026#x03B2; for sustaining mitosis via translocated promoter region (TPR)-dynein interaction. Oncotarget (2018) 9(17)."
+    },
+    {
+      "DOI": "10.1186/s40169-016-0106-5",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR31",
+      "unstructured": "Ribas V, García-Ruiz C, Fernández-Checa JC. Mitochondria, cholesterol and cancer cell metabolism. Clin Transl Med (2016) 5(1):22. Epub 2016/07/28. doi: https://doi.org/10.1186/s40169-016-0106-5. PubMed PMID: 27455839; PubMed Central PMCID: PMCPMC4960093."
+    },
+    {
+      "DOI": "10.1158/1078-0432.Ccr-19-1543",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR32",
+      "unstructured": "Karasinska JM, Topham JT, Kalloger SE, Jang GH, Denroche RE, Culibrk L, Williamson LM, Wong HL, Lee MKC, O'Kane GM, Moore RA, Mungall AJ, Moore MJ, Warren C, Metcalfe A, Notta F, Knox JJ, Gallinger S, Laskin J, Marra MA, Jones SJM, Renouf DJ, Schaeffer DF Altered gene expression along the glycolysis-cholesterol synthesis axis is associated with outcome in pancreatic cancer. Clin Cancer Res (2020) 26(1):135-146. Epub 2019/09/05. doi: https://doi.org/10.1158/1078-0432.Ccr-19-1543. PubMed PMID: 31481506."
+    },
+    {
+      "DOI": "10.1016/j.cels.2015.12.004",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR33",
+      "unstructured": "Liberzon A, Birger C, Thorvaldsdóttir H, Ghandi M, Mesirov JP, Tamayo P. The molecular signatures database (MSigDB) hallmark gene set collection. Cell Syst (2015) 1(6):417-425. doi: https://doi.org/10.1016/j.cels.2015.12.004. PubMed PMID: 26771021."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr260",
+      "author": "A Liberzon",
+      "doi-asserted-by": "publisher",
+      "first-page": "1739",
+      "issue": "12",
+      "journal-title": "Bioinformatics",
+      "key": "350_CR34",
+      "unstructured": "Liberzon A, Subramanian A, Pinchback R, Thorvaldsdóttir H, Tamayo P, Mesirov JP. Molecular signatures database (MSigDB) 3.0. Bioinformatics. 2011;27(12):1739–40. https://doi.org/10.1093/bioinformatics/btr260.",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/ijc.20885",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR35",
+      "unstructured": "Di Stasi D, Vallacchi V, Campi V, Ranzani T, Daniotti M, Chiodini E, et al. DHCR24 gene expression is upregulated in melanoma metastases and associated to resistance to oxidative stress-induced apoptosis. Int J Cancer (2005) 115(2):224-230. Epub 2005/02/03. doi: https://doi.org/10.1002/ijc.20885. PubMed PMID: 15688385."
+    },
+    {
+      "key": "350_CR36",
+      "unstructured": "Ness C, Garred Ø, Eide NA, Kumar T, Olstad OK, Bærland TP, et al. Multicellular tumor spheroids of human uveal melanoma induce genes associated with anoikis resistance, lipogenesis, and SSXs. Mol Vis (2017) 23:680-694. Epub 2017/10/17. PubMed PMID: 29033534; PubMed Central PMCID: PMCPMC5632686."
+    },
+    {
+      "DOI": "10.1001/jamaneurol.2018.2598",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR37",
+      "unstructured": "Mariampillai K, Granger B, Amelin D, Guiguet M, Hachulla E, Maurier F, et al. Development of a new classification system for idiopathic inflammatory myopathies based on clinical manifestations and myositis-specific autoantibodies. JAMA Neurol (2018) 75(12):1528-1537. Epub 2018/09/13. doi: https://doi.org/10.1001/jamaneurol.2018.2598. PubMed PMID: 30208379; PubMed Central PMCID: PMCPMC6583199."
+    },
+    {
+      "DOI": "10.1074/jbc.M117.788778",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR38",
+      "unstructured": "Zhao L, Fan J, Xia S, Pan Y, Liu S, Qian G, et al. HMG-CoA synthase 1 is a synthetic lethal partner of BRAF(V600E) in human cancers. J Biol Chem (2017) 292(24):10142-10152. Epub 2017/05/05. doi: https://doi.org/10.1074/jbc.M117.788778. PubMed PMID: 28468827; PubMed Central PMCID: PMCPMC5473220."
+    },
+    {
+      "DOI": "10.1002/jcb.29250",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR39",
+      "unstructured": "Xu Y, Han W, Xu WH, Wang Y, Yang XL, Nie HL, Yao J, Shen GL, Zhang XF Identification of differentially expressed genes and functional annotations associated with metastases of the uveal melanoma. J Cell Biochem (2019) 120(11):19202-19214. Epub 2019/07/05. doi: https://doi.org/10.1002/jcb.29250. PubMed PMID: 31270856."
+    },
+    {
+      "DOI": "10.1053/hupa.2002.124785",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR40",
+      "unstructured": "Gould VE, Orucevic A, Zentgraf H, Gattuso P, Martinez N, Alonso A. Nup88 (karyoporin) in human malignant neoplasms and dysplasias: correlations of immunostaining of tissue sections, cytologic smears, and immunoblot analysis. Hum Pathol (2002) 33(5):536-544. Epub 2002/07/03. doi: https://doi.org/10.1053/hupa.2002.124785. PubMed PMID: 12094380."
+    },
+    {
+      "DOI": "10.1158/1078-0432.Ccr-18-3442",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR41",
+      "unstructured": "Zhou R, Shi C, Tao W, Li J, Wu J, Han Y, Yang G, Gu Z, Xu S, Wang Y, Wang L, Wang Y, Zhou G, Zhang C, Zhang Z, Sun S Analysis of mucosal melanoma whole-genome landscapes reveals clinically relevant genomic aberrations. Clin Cancer Res (2019) 25(12):3548-3560. Epub 2019/02/21. doi: https://doi.org/10.1158/1078-0432.Ccr-18-3442. PubMed PMID: 30782616."
+    },
+    {
+      "DOI": "10.1038/sj.onc.1203389",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR42",
+      "unstructured": "Calin GA, di Iasio MG, Caprini E, Vorechovsky I, Natali PG, Sozzi G, Croce CM, Barbanti-Brodano G, Russo G, Negrini M Low frequency of alterations of the alpha (PPP2R1A) and beta (PPP2R1B) isoforms of the subunit a of the serine-threonine phosphatase 2A in human neoplasms. Oncogene (2000) 19(9):1191-1195. Epub 2000/03/14. doi: https://doi.org/10.1038/sj.onc.1203389. PubMed PMID: 10713707."
+    },
+    {
+      "DOI": "10.1111/j.1755-148X.2007.00425.x",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR43",
+      "unstructured": "Alizadeh A, Fitch KR, Niswender CM, McKnight GS, Barsh GS. Melanocyte-lineage expression of Cre recombinase using Mitf regulatory elements. Pigment Cell Melanoma Res (2008) 21(1):63-69. Epub 2008/03/21. doi: https://doi.org/10.1111/j.1755-148X.2007.00425.x. PubMed PMID: 18353144."
+    },
+    {
+      "DOI": "10.1093/molbev/msaa034",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR44",
+      "unstructured": "Brun A, Mendez-Aranda D, Magallanes ME, Karasov WH, Martínez Del Rio C, Baldwin MW, et al. Duplications and functional convergence of intestinal carbohydrate-digesting enzymes. Mol Biol Evol (2020) 37(6):1657-1666. Epub 2020/02/16. doi: https://doi.org/10.1093/molbev/msaa034. PubMed PMID: 32061124."
+    },
+    {
+      "DOI": "10.1016/j.csbj.2019.03.008",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR45",
+      "unstructured": "Xu S, Feng Y, Zhao S. Proteins with evolutionarily hypervariable domains are associated with immune response and better survival of basal-like breast cancer patients. Comput Struct Biotechnol J (2019) 17:430-440. Epub 2019/04/19. doi: https://doi.org/10.1016/j.csbj.2019.03.008. PubMed PMID: 30996822; PubMed Central PMCID: PMCPMC6451114."
+    },
+    {
+      "DOI": "10.1001/jamanetworkopen.2019.6879",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR46",
+      "unstructured": "Yu Y, Zeng D, Ou Q, Liu S, Li A, Chen Y, et al. Association of survival and immune-related biomarkers with immunotherapy in patients with non-small cell lung cancer: a meta-analysis and individual patient-level analysis. JAMA Netw Open (2019) 2(7):e196879. Epub 2019/07/11. doi: https://doi.org/10.1001/jamanetworkopen.2019.6879. PubMed PMID: 31290993; PubMed Central PMCID: PMCPMC6625073."
+    },
+    {
+      "DOI": "10.3892/ijmm.2018.3985",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR47",
+      "unstructured": "Ci C, Tang B, Lyu D, Liu W, Qiang D, Ji X, et al. Overexpression of CDCA8 promotes the malignant progression of cutaneous melanoma and leads to poor prognosis. Int J Mol Med (2019) 43(1):404-12. Epub 2018/11/16. doi: https://doi.org/10.3892/ijmm.2018.3985. PubMed PMID: 30431060; PubMed Central PMCID: PMCPMC6257860."
+    },
+    {
+      "DOI": "10.1016/j.yexcr.2019.03.021",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR48",
+      "unstructured": "Xu Y, Sun W, Zheng B, Liu X, Luo Z, Kong Y, Xu M., Chen Y. DEPDC1B knockdown inhibits the development of malignant melanoma through suppressing cell proliferation and inducing cell apoptosis. Exp Cell Res (2019) 379(1):48-54. Epub 2019/03/19. doi: https://doi.org/10.1016/j.yexcr.2019.03.021. PubMed PMID: 30880030."
+    },
+    {
+      "DOI": "10.3892/or.2018.6356",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR49",
+      "unstructured": "Wei C, Lu N, Wang L, Zhang Y, Feng Z, Yang Y, et al. Upregulation of UHRF1 promotes the progression of melanoma by inducing cell proliferation. Oncol Rep (2018) 39(6):2553-2562. Epub 2018/04/06. doi: https://doi.org/10.3892/or.2018.6356. PubMed PMID: 29620240; PubMed Central PMCID: PMCPMC5983928."
+    },
+    {
+      "DOI": "10.1080/15384047.2020.1824512",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR50",
+      "unstructured": "Lu H, Yin M, Wang L, Cheng J, Cheng W, An H, et al. FGF13 interaction with SHCBP1 activates AKT-GSK3α/β signaling and promotes the proliferation of A549 cells. Cancer Biol Ther (2020) 21(11):1014-1024. Epub 2020/10/17. doi: https://doi.org/10.1080/15384047.2020.1824512. PubMed PMID: 33064958; PubMed Central PMCID: PMCPMC7678946."
+    },
+    {
+      "DOI": "10.1158/1541-7786.Mcr-16-0099",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR51",
+      "unstructured": "Fatkhutdinov N, Sproesser K, Krepler C, Liu Q, Brafford PA, Herlyn M, et al. Targeting RRM2 and mutant BRAF is a novel combinatorial strategy for melanoma. Mol Cancer Res (2016) 14(9):767-775. Epub 2016/06/15. doi: https://doi.org/10.1158/1541-7786.Mcr-16-0099. PubMed PMID: 27297629; PubMed Central PMCID: PMCPMC5025362."
+    },
+    {
+      "DOI": "10.1158/1535-7163.Mct-20-0654",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR52",
+      "unstructured": "Su S, Chhabra G, Ndiaye MA, Singh CK, Ye T, Huang W, et al. PLK1 and NOTCH positively correlate in melanoma and their combined inhibition results in synergistic modulations of key melanoma pathways. Mol Cancer Ther (2021) 20(1):161-172. Epub 2020/11/13. doi: https://doi.org/10.1158/1535-7163.Mct-20-0654. PubMed PMID: 33177155; PubMed Central PMCID: PMCPMC7790869."
+    },
+    {
+      "DOI": "10.1016/j.lfs.2019.04.060",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR53",
+      "unstructured": "Ameri Z, Ghiasi S, Farsinejad A, Hassanshahi G, Ehsan M, Fatemi A. Telomerase inhibitor MST-312 induces apoptosis of multiple myeloma cells and down-regulation of anti-apoptotic, proliferative and inflammatory genes. Life Sci (2019) 228:66-71. Epub 2019/04/29. doi: https://doi.org/10.1016/j.lfs.2019.04.060. PubMed PMID: 31029779."
+    },
+    {
+      "DOI": "10.1097/cad.0000000000000508",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR54",
+      "unstructured": "Morais KS, Guimarãesb AFR, Ramos DAR, Silva FP, de Oliveira DM. Long-term exposure to MST-312 leads to telomerase reverse transcriptase overexpression in MCF-7 breast cancer cells. Anti-Cancer Drugs (2017) 28(7):750-756. Epub 2017/05/19. doi: https://doi.org/10.1097/cad.0000000000000508. PubMed PMID: 28520570."
+    },
+    {
+      "DOI": "10.1186/1741-7015-6-14",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR55",
+      "unstructured": "Silber J, Lim DA, Petritsch C, Persson AI, Maunakea AK, Yu M, et al. miR-124 and miR-137 inhibit proliferation of glioblastoma multiforme cells and induce differentiation of brain tumor stem cells. BMC Med (2008) 6:14. Epub 2008/06/26. doi: https://doi.org/10.1186/1741-7015-6-14. PubMed PMID: 18577219; PubMed Central PMCID: PMCPMC2443372."
+    },
+    {
+      "DOI": "10.1097/cad.0000000000000402",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR56",
+      "unstructured": "Zhu L, Xiao F, Yu Y, Wang H, Fang M, Yang Y, et al. KSP inhibitor SB743921 inhibits growth and induces apoptosis of breast cancer cells by regulating p53, Bcl-2, and DTL. Anti-Cancer Drugs (2016) 27(9):863-872. Epub 2016/07/06. doi: https://doi.org/10.1097/cad.0000000000000402. PubMed PMID: 27379929; PubMed Central PMCID: PMCPMC5010280."
+    },
+    {
+      "DOI": "10.5483/bmbrep.2015.48.10.015",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR57",
+      "unstructured": "Song IS, Jeong YJ, Nyamaa B, Jeong SH, Kim HK, Kim N, et al. KSP inhibitor SB743921 induces death of multiple myeloma cells via inhibition of the NF-κB signaling pathway. BMB Rep (2015) 48(10):571-576. Epub 2015/03/17. doi: https://doi.org/10.5483/bmbrep.2015.48.10.015. PubMed PMID: 25772758; PubMed Central PMCID: PMCPMC4911184."
+    },
+    {
+      "DOI": "10.1038/bjc.1985.203",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR58",
+      "unstructured": "Gaukroger JM, Wilson L, MacKie R. Cytotoxicity of etretinate and vindesine. Br J Cancer (1985) 52(3):369-375. Epub 1985/09/01. doi: https://doi.org/10.1038/bjc.1985.203. PubMed PMID: 4041363; PubMed Central PMCID: PMCPMC1977201."
+    },
+    {
+      "DOI": "10.4049/jimmunol.1800885",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR59",
+      "unstructured": "Badamchi-Zadeh A, Moynihan KD, Larocca RA, Aid M, Provine NM, Iampietro MJ, et al. Combined HDAC and BET inhibition enhances melanoma vaccine immunogenicity and efficacy. J Immunol (2018) 201(9):2744-2752. Epub 2018/09/27. doi: https://doi.org/10.4049/jimmunol.1800885. PubMed PMID: 30249811; PubMed Central PMCID: PMCPMC6196294."
+    },
+    {
+      "DOI": "10.1158/1078-0432.Ccr-10-3410",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR60",
+      "unstructured": "Yamanaka K, Nakahara T, Yamauchi T, Kita A, Takeuchi M, Kiyonaga F, Kaneko N, Sasamata M Antitumor activity of YM155, a selective small-molecule survivin suppressant, alone and in combination with docetaxel in human malignant melanoma models. Clin Cancer Res (2011) 17(16):5423-5431. Epub 2011/07/09. doi: https://doi.org/10.1158/1078-0432.Ccr-10-3410. PubMed PMID: 21737502."
+    },
+    {
+      "DOI": "10.1097/SLA.0000000000002116",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR61",
+      "unstructured": "Jiang Y, Zhang Q, Hu Y, Li T, Yu J, Zhao L, Ye G, Deng H, Mou T, Cai S, Zhou Z, Liu H, Chen G, Li G, Qi X ImmunoScore signature: a prognostic and predictive tool in gastric cancer. Ann Surg (2018) 267(3):504-513. doi: https://doi.org/10.1097/SLA.0000000000002116. PubMed PMID: 28002059."
+    },
+    {
+      "DOI": "10.3389/fgene.2020.00012",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR62",
+      "unstructured": "Qiu H, Hu X, He C, Yu B, Li Y, Li J. Identification and validation of an individualized prognostic signature of bladder cancer based on seven immune related genes. Front Genet (2020) 11:12. doi: https://doi.org/10.3389/fgene.2020.00012. PubMed PMID: 32117435."
+    },
+    {
+      "DOI": "10.3389/fonc.2020.580263",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR63",
+      "unstructured": "Qiu H, Li Y, Cheng S, Li J, He C, Li J. A prognostic microenvironment-related immune signature ESTIMATE (PROMISE model) predicts overall survival of patients with glioma. Front Oncol (2020) 10:580263. doi: https://doi.org/10.3389/fonc.2020.580263. PubMed PMID: 33425732."
+    },
+    {
+      "DOI": "10.1186/1753-6561-8-S5-S7",
+      "doi-asserted-by": "crossref",
+      "key": "350_CR64",
+      "unstructured": "Ogutu JO, Piepho H-P, editors. Regularized group regression methods for genomic prediction: Bridge, MCP, SCAD, group bridge, group lasso, sparse group lasso, group MCP and group SCAD. BMC proceedings; 2014: Springer."
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.02.052",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR65",
+      "unstructured": "Liu J, Lichtenberg T, Hoadley KA, Poisson LM, Lazar AJ, Cherniack AD, et al. An integrated TCGA Pan-cancer clinical data resource to drive high-quality survival outcome analytics. Cell (2018) 173(2). doi: https://doi.org/10.1016/j.cell.2018.02.052."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw325",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR66",
+      "unstructured": "Skidmore ZL, Wagner AH, Lesurf R, Campbell KM, Kunisaki J, Griffith OL, et al. GenVisR: genomic visualizations in R. Bioinformatics. 2016;32(19):3012–14. https://doi.org/10.1093/bioinformatics/btw325."
+    },
+    {
+      "DOI": "10.1038/ncomms3612",
+      "author": "K Yoshihara",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "350_CR67",
+      "unstructured": "Yoshihara K, Shahmoradgoli M, Martínez E, Vegesna R, Kim H, Torres-Garcia W, et al. Inferring tumour purity and stromal and immune cell admixture from expression data. Nat Commun. 2013;4(1):1–11.",
+      "volume": "4",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.immuni.2018.03.023",
+      "author": "V Thorsson",
+      "doi-asserted-by": "publisher",
+      "first-page": "812",
+      "issue": "4",
+      "journal-title": "Immunity",
+      "key": "350_CR68",
+      "unstructured": "Thorsson V, Gibbs DL, Brown SD, Wolf D, Bortone DS, Yang T-HO, et al. The immune landscape of cancer. Immunity. 2018;48(4):812–30. e14.",
+      "volume": "48",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-559",
+      "author": "P Langfelder",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "issue": "1",
+      "journal-title": "BMC bioinformatics",
+      "key": "350_CR69",
+      "unstructured": "Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC bioinformatics. 2008;9(1):559. https://doi.org/10.1186/1471-2105-9-559.",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/nar/gkm882",
+      "author": "M Kanehisa",
+      "doi-asserted-by": "publisher",
+      "first-page": "D480",
+      "issue": "suppl_1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "350_CR70",
+      "unstructured": "Kanehisa M, Araki M, Goto S, Hattori M, Hirakawa M, Itoh M, et al. KEGG for linking genomes to life and the environment. Nucleic Acids Res. 2007;36(suppl_1):D480–D4.",
+      "volume": "36",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1089/omi.2011.0118",
+      "author": "G Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "284",
+      "issue": "5",
+      "journal-title": "Omics",
+      "key": "350_CR71",
+      "unstructured": "Yu G, Wang L-G, Han Y, He Q-Y. clusterProfiler: an R package for comparing biological themes among gene clusters. Omics. 2012;16(5):284–7. https://doi.org/10.1089/omi.2011.0118.",
+      "volume": "16",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/bjs.10895",
+      "doi-asserted-by": "crossref",
+      "key": "350_CR72",
+      "unstructured": "Ranstam J, Cook J. LASSO regression. (2018), LASSO regression."
+    },
+    {
+      "key": "350_CR73",
+      "unstructured": "Friedman J, Hastie T, Tibshirani R. glmnet: Lasso and elastic-net regularized generalized linear models. R package version (2009) 1(4)."
+    },
+    {
+      "key": "350_CR74",
+      "unstructured": "Kuhn M. Caret: classification and regression training. ascl (2015):ascl: 1505.003."
+    },
+    {
+      "DOI": "10.1186/gb-2014-15-3-r47",
+      "doi-asserted-by": "publisher",
+      "key": "350_CR75",
+      "unstructured": "Geeleher P, Cox NJ, Huang RS. Clinical drug response can be predicted using baseline gene expression levels and in vitro drug sensitivity in cell lines. Genome Biol (2014) 15(3):R47. doi: https://doi.org/10.1186/gb-2014-15-3-r47. PubMed PMID: 24580837."
+    },
+    {
+      "DOI": "10.1371/journal.pone.0107468",
+      "author": "P Geeleher",
+      "doi-asserted-by": "publisher",
+      "issue": "9",
+      "journal-title": "PLoS One",
+      "key": "350_CR76",
+      "unstructured": "Geeleher P, Cox N, Huang RS. pRRophetic: an R package for prediction of clinical chemotherapeutic response from tumor gene expression levels. PLoS One. 2014;9(9):e107468. https://doi.org/10.1371/journal.pone.0107468.",
+      "volume": "9",
+      "year": "2014"
+    }
+  ],
+  "reference-count": 76,
+  "references-count": 76,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00350-3"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Identification of subgroups along the glycolysis-cholesterol synthesis axis and the development of an associated prognostic risk model"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

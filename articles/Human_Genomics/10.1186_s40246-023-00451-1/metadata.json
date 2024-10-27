@@ -1,0 +1,845 @@
+{
+  "DOI": "10.1186/s40246-023-00451-1",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00451-1",
+  "abstract": "\u003cjats:sec\u003e\n                \u003cjats:title\u003eAbstract\u003c/jats:title\u003e\n                \u003cjats:p\u003eSpliceAI is an open-source deep learning splicing prediction algorithm that has demonstrated in the past few years its high ability to predict splicing defects caused by DNA variations. However, its outputs present several drawbacks: (1) although the numerical values are very convenient for batch filtering, their precise interpretation can be difficult, (2) the outputs are delta scores which can sometimes mask a severe consequence, and (3) complex delins are most often not handled. We present here SpliceAI-visual, a free online tool based on the SpliceAI algorithm, and show how it complements the traditional SpliceAI analysis. First, SpliceAI-visual manipulates raw scores and not delta scores, as the latter can be misleading in certain circumstances. Second, the outcome of SpliceAI-visual is user-friendly thanks to the graphical presentation. Third, SpliceAI-visual is currently one of the only SpliceAI-derived implementations able to annotate complex variants (e.g., complex delins). We report here the benefits of using SpliceAI-visual and demonstrate its relevance in the assessment/modulation of the PVS1 classification criteria. We also show how SpliceAI-visual can elucidate several complex splicing defects taken from the literature but also from unpublished cases. SpliceAI-visual is available as a Google Colab notebook and has also been fully integrated in a free online variant interpretation tool, MobiDetails (\u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://mobidetails.iurc.montp.inserm.fr/MD\"\u003ehttps://mobidetails.iurc.montp.inserm.fr/MD\u003c/jats:ext-link\u003e).\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eGraphical abstract\u003c/jats:title\u003e\n                \n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "451"
+  ],
+  "article-number": "7",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "1 December 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "18 January 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "10 February 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "A written informed consent was obtained from all participants as required by the guidelines of the Declaration of Helsinki, and approved on April, 8, 2019, by the Research Ethics Committee of Brest (IDRCB: 2018-A02287-48)."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "de Sainte Agathe",
+      "given": "Jean-Madeleine",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Filser",
+      "given": "Mathilde",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Isidor",
+      "given": "Bertrand",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Besnard",
+      "given": "Thomas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gueguen",
+      "given": "Paul",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Perrin",
+      "given": "Aurélien",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Van Goethem",
+      "given": "Charles",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Verebi",
+      "given": "Camille",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Masingue",
+      "given": "Marion",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rendu",
+      "given": "John",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cossée",
+      "given": "Mireille",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bergougnoux",
+      "given": "Anne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Frobert",
+      "given": "Laurent",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Buratti",
+      "given": "Julien",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lejeune",
+      "given": "Élodie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Le Guern",
+      "given": "Éric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pasquier",
+      "given": "Florence",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Clot",
+      "given": "Fabienne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kalatzis",
+      "given": "Vasiliki",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Roux",
+      "given": "Anne-Françoise",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cogné",
+      "given": "Benjamin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Baux",
+      "given": "David",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        10
+      ]
+    ],
+    "date-time": "2023-02-10T06:03:03Z",
+    "timestamp": 1676008983000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        13
+      ]
+    ],
+    "date-time": "2023-02-13T16:05:42Z",
+    "timestamp": 1676304342000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100004923",
+      "award": [
+        "21384"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "AFM-Téléthon"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        26
+      ]
+    ],
+    "date-time": "2024-04-26T13:43:30Z",
+    "timestamp": 1714139010854
+  },
+  "is-referenced-by-count": 19,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            10
+          ]
+        ],
+        "date-time": "2023-02-10T00:00:00Z",
+        "timestamp": 1675987200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            10
+          ]
+        ],
+        "date-time": "2023-02-10T00:00:00Z",
+        "timestamp": 1675987200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00451-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00451-1/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00451-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        10
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.febslet.2005.02.047",
+      "author": "N López-Bigas",
+      "doi-asserted-by": "publisher",
+      "first-page": "1900",
+      "issue": "9",
+      "journal-title": "FEBS Lett",
+      "key": "451_CR1",
+      "unstructured": "López-Bigas N, Audit B, Ouzounis C, Parra G, Guigó R. Are splicing mutations the most frequent cause of hereditary disease? FEBS Lett. 2005;579(9):1900–3. https://doi.org/10.1016/j.febslet.2005.02.047.",
+      "volume": "579",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.12.015",
+      "author": "K Jaganathan",
+      "doi-asserted-by": "publisher",
+      "first-page": "535",
+      "issue": "3",
+      "journal-title": "Cell",
+      "key": "451_CR2",
+      "unstructured": "Jaganathan K, Kyriazopoulou Panagiotopoulou S, McRae JF, et al. Predicting splicing from primary sequence with deep learning. Cell. 2019;176(3):535-548.e24. https://doi.org/10.1016/j.cell.2018.12.015.",
+      "volume": "176",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0766-9",
+      "author": "HA Wai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1005",
+      "issue": "6",
+      "journal-title": "Genet Med",
+      "key": "451_CR3",
+      "unstructured": "Wai HA, Lord J, Lyon M, et al. Blood RNA analysis can increase clinical diagnostic rate and resolve variants of uncertain significance. Genet Med. 2020;22(6):1005–14. https://doi.org/10.1038/s41436-020-0766-9.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/genes12091308",
+      "author": "C Ha",
+      "doi-asserted-by": "publisher",
+      "first-page": "1308",
+      "issue": "9",
+      "journal-title": "Genes",
+      "key": "451_CR4",
+      "unstructured": "Ha C, Kim JW, Jang JH. Performance evaluation of SpliceAI for the prediction of splicing of NF1 variants. Genes. 2021;12(9):1308. https://doi.org/10.3390/genes12091308.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3390/ijms22084154",
+      "author": "I Bychkov",
+      "doi-asserted-by": "publisher",
+      "first-page": "4154",
+      "issue": "8",
+      "journal-title": "IJMS",
+      "key": "451_CR5",
+      "unstructured": "Bychkov I, Galushkin A, Filatova A, et al. Functional analysis of the PCCA and PCCB gene variants predicted to affect splicing. IJMS. 2021;22(8):4154. https://doi.org/10.3390/ijms22084154.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.06.014",
+      "author": "D Danis",
+      "doi-asserted-by": "publisher",
+      "first-page": "1564",
+      "issue": "9",
+      "journal-title": "Am J Hum Genet",
+      "key": "451_CR6",
+      "unstructured": "Danis D, Jacobsen JOB, Carmody LC, et al. Interpretable prioritization of splice variants in diagnostic next-generation sequencing. Am J Hum Genet. 2021;108(9):1564–77. https://doi.org/10.1016/j.ajhg.2021.06.014.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-022-29271-y",
+      "author": "R Dawes",
+      "doi-asserted-by": "publisher",
+      "first-page": "1655",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "451_CR7",
+      "unstructured": "Dawes R, Joshi H, Cooper ST. Empirical prediction of variant-activated cryptic splice donors using population-based RNA-Seq data. Nat Commun. 2022;13(1):1655. https://doi.org/10.1038/s41467-022-29271-y.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41598-021-99747-2",
+      "author": "C Rowlands",
+      "doi-asserted-by": "publisher",
+      "first-page": "20607",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "451_CR8",
+      "unstructured": "Rowlands C, Thomas HB, Lord J, et al. Comparison of in silico strategies to prioritize rare genomic variants impacting RNA splicing for the diagnosis of genomic disorders. Sci Rep. 2021;11(1):20607. https://doi.org/10.1038/s41598-021-99747-2.",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.gim.2021.09.001",
+      "author": "AM Bournazos",
+      "doi-asserted-by": "publisher",
+      "first-page": "130",
+      "issue": "1",
+      "journal-title": "Genet Med",
+      "key": "451_CR9",
+      "unstructured": "Bournazos AM, Riley LG, Bommireddipalli S, et al. Standardized practices for RNA diagnostics using clinically accessible specimens reclassifies 75% of putative splicing variants. Genet Med. 2022;24(1):130–45. https://doi.org/10.1016/j.gim.2021.09.001.",
+      "volume": "24",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/nar/gkac686",
+      "author": "K Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "9115",
+      "issue": "16",
+      "journal-title": "Nucleic Acids Res",
+      "key": "451_CR10",
+      "unstructured": "Li K, Luo T, Zhu Y, et al. Performance evaluation of differential splicing analysis methods and splicing analytics platform construction. Nucleic Acids Res. 2022;50(16):9115–26. https://doi.org/10.1093/nar/gkac686.",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s13059-022-02664-4",
+      "author": "T Zeng",
+      "doi-asserted-by": "publisher",
+      "first-page": "103",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "451_CR11",
+      "unstructured": "Zeng T, Li YI. Predicting RNA splicing from DNA sequence using Pangolin. Genome Biol. 2022;23(1):103. https://doi.org/10.1186/s13059-022-02664-4.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0269159",
+      "author": "Y Strauch",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0269159",
+      "issue": "6",
+      "journal-title": "PLoS ONE",
+      "key": "451_CR12",
+      "unstructured": "Strauch Y, Lord J, Niranjan M, Baralle D. CI-SpliceAI-Improving machine learning predictions of disease causing splicing variants using curated alternative splice sites. PLoS ONE. 2022;17(6):e0269159. https://doi.org/10.1371/journal.pone.0269159.",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1101/gr.229102",
+      "author": "WJ Kent",
+      "doi-asserted-by": "publisher",
+      "first-page": "996",
+      "issue": "6",
+      "journal-title": "Genome Res",
+      "key": "451_CR13",
+      "unstructured": "Kent WJ, Sugnet CW, Furey TS, et al. The human genome browser at UCSC. Genome Res. 2002;12(6):996–1006. https://doi.org/10.1101/gr.229102.",
+      "volume": "12",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-17-0337",
+      "author": "JT Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "e31",
+      "issue": "21",
+      "journal-title": "Cancer Res",
+      "key": "451_CR14",
+      "unstructured": "Robinson JT, Thorvaldsdóttir H, Wenger AM, Zehir A, Mesirov JP. Variant review with the integrative genomics viewer. Cancer Res. 2017;77(21):e31–4. https://doi.org/10.1158/0008-5472.CAN-17-0337.",
+      "volume": "77",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41431-020-00755-z",
+      "author": "D Baux",
+      "doi-asserted-by": "publisher",
+      "first-page": "356",
+      "issue": "2",
+      "journal-title": "Eur J Hum Genet",
+      "key": "451_CR15",
+      "unstructured": "Baux D, Van Goethem C, Ardouin O, et al. MobiDetails: online DNA variants interpretation. Eur J Hum Genet. 2021;29(2):356–60. https://doi.org/10.1038/s41431-020-00755-z.",
+      "volume": "29",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-022-04558-8",
+      "author": "J Morales",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "issue": "7905",
+      "journal-title": "Nature",
+      "key": "451_CR16",
+      "unstructured": "Morales J, Pujar S, Loveland JE, et al. A joint NCBI and EMBL-EBI transcript set for clinical genomics and research. Nature. 2022;604(7905):310–5. https://doi.org/10.1038/s41586-022-04558-8.",
+      "volume": "604",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s12920-021-01008-8",
+      "author": "Q Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "152",
+      "issue": "1",
+      "journal-title": "BMC Med Genom",
+      "key": "451_CR17",
+      "unstructured": "Li Q, Wang Y, Pan Y, Wang J, Yu W, Wang X. Unraveling synonymous and deep intronic variants causing aberrant splicing in two genetically undiagnosed epilepsy families. BMC Med Genom. 2021;14(1):152. https://doi.org/10.1186/s12920-021-01008-8.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/eji.200940096",
+      "author": "H Yamaguchi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1778",
+      "issue": "6",
+      "journal-title": "Eur J Immunol",
+      "key": "451_CR18",
+      "unstructured": "Yamaguchi H, Fujimoto T, Nakamura S, et al. Aberrant splicing of the milk fat globule-EGF factor 8 (MFG-E8) gene in human systemic lupus erythematosus. Eur J Immunol. 2010;40(6):1778–85. https://doi.org/10.1002/eji.200940096.",
+      "volume": "40",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.3233/JAD-140717",
+      "author": "G Puoti",
+      "doi-asserted-by": "publisher",
+      "first-page": "939",
+      "issue": "3",
+      "journal-title": "J Alzheimers Dis",
+      "key": "451_CR19",
+      "unstructured": "Puoti G, Lerza MC, Ferretti MG, Bugiani O, Tagliavini F, Rossi G. A mutation in the 5’-UTR of GRN gene associated with frontotemporal lobar degeneration: phenotypic variability and possible pathogenetic mechanisms. J Alzheimers Dis. 2014;42(3):939–47. https://doi.org/10.3233/JAD-140717.",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0256411",
+      "author": "AC Gleason",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0256411",
+      "issue": "6",
+      "journal-title": "PLoS ONE",
+      "key": "451_CR20",
+      "unstructured": "Gleason AC, Ghadge G, Chen J, Sonobe Y, Roos RP. Machine learning predicts translation initiation sites in neurologic diseases with nucleotide repeat expansions. PLoS ONE. 2022;17(6):e0256411. https://doi.org/10.1371/journal.pone.0256411.",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "doi-asserted-by": "publisher",
+      "key": "451_CR21",
+      "unstructured": "on behalf of the ACMG Laboratory Quality Assurance Committee, Richards S, Aziz N, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17(5):405–423. https://doi.org/10.1038/gim.2015.30."
+    },
+    {
+      "DOI": "10.1038/s41436-020-0814-5",
+      "author": "RLS Mesman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1355",
+      "issue": "8",
+      "journal-title": "Genet Med",
+      "key": "451_CR22",
+      "unstructured": "Mesman RLS, Calléja FMGR, de la Hoya M, et al. Alternative mRNA splicing can attenuate the pathogenicity of presumed loss-of-function variants in BRCA2. Genet Med. 2020;22(8):1355–65. https://doi.org/10.1038/s41436-020-0814-5.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001153",
+      "author": "A Hinzpeter",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1001153",
+      "issue": "10",
+      "journal-title": "PLoS Genet.",
+      "key": "451_CR23",
+      "unstructured": "Hinzpeter A, Aissat A, Sondo E, et al. Alternative splicing at a NAGNAG acceptor site as a novel phenotype modifier. PLoS Genet. 2010;6(10):e1001153. https://doi.org/10.1371/journal.pgen.1001153.",
+      "volume": "6",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "doi-asserted-by": "publisher",
+      "key": "451_CR24",
+      "unstructured": "Genome Aggregation Database Consortium, Karczewski KJ, Francioli LC, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581(7809):434–443. https://doi.org/10.1038/s41586-020-2308-7"
+    },
+    {
+      "DOI": "10.1038/s41586-022-04965-x",
+      "author": "BV Halldorsson",
+      "doi-asserted-by": "publisher",
+      "first-page": "732",
+      "issue": "7920",
+      "journal-title": "Nature",
+      "key": "451_CR25",
+      "unstructured": "Halldorsson BV, Eggertsson HP, Moore KHS, et al. The sequences of 150,119 genomes in the UK Biobank. Nature. 2022;607(7920):732–40. https://doi.org/10.1038/s41586-022-04965-x.",
+      "volume": "607",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1153",
+      "author": "MJ Landrum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1062",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "451_CR26",
+      "unstructured": "Landrum MJ, Lee JM, Benson M, et al. ClinVar: improving access to variant interpretations and supporting evidence. Nucleic Acids Res. 2018;46(D1):D1062–7. https://doi.org/10.1093/nar/gkx1153.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.xgen.2022.100168",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "100168",
+      "issue": "9",
+      "journal-title": "Cell Genom",
+      "key": "451_CR27",
+      "unstructured": "Karczewski KJ, Solomonson M, Chao KR, et al. Systematic single-variant and gene-based association testing of thousands of phenotypes in 394,841 UK Biobank exomes. Cell Genom. 2022;2(9):100168. https://doi.org/10.1016/j.xgen.2022.100168.",
+      "volume": "2",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.4161/fly.19695",
+      "author": "P Cingolani",
+      "doi-asserted-by": "publisher",
+      "first-page": "80",
+      "issue": "2",
+      "journal-title": "Fly (Austin)",
+      "key": "451_CR28",
+      "unstructured": "Cingolani P, Platts A, Wang LL, et al. A program for annotating and predicting the effects of single nucleotide polymorphisms, SnpEff: SNPs in the genome of Drosophila melanogaster strain w1118; iso-2; iso-3. Fly (Austin). 2012;6(2):80–92. https://doi.org/10.4161/fly.19695.",
+      "volume": "6",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "author": "W McLaren",
+      "doi-asserted-by": "publisher",
+      "first-page": "122",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "451_CR29",
+      "unstructured": "McLaren W, Gil L, Hunt SE, et al. The ensembl variant effect predictor. Genome Biol. 2016;17(1):122. https://doi.org/10.1186/s13059-016-0974-4.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41598-021-87224-9",
+      "author": "IM Westin",
+      "doi-asserted-by": "publisher",
+      "first-page": "7696",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "451_CR30",
+      "unstructured": "Westin IM, Jonsson F, Österman L, Holmberg M, Burstedt M, Golovleva I. EYS mutations and implementation of minigene assay for variant classification in EYS-associated retinitis pigmentosa in northern Sweden. Sci Rep. 2021;11(1):7696. https://doi.org/10.1038/s41598-021-87224-9.",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/2021.07.18.452855",
+      "author": "R Dawes",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genetics",
+      "key": "451_CR31",
+      "unstructured": "Dawes R, Joshi H, Cooper ST. Empirical prediction of variant-associated cryptic-donors with 87% sensitivity and 95% specificity. Genetics. 2021. https://doi.org/10.1101/2021.07.18.452855.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/hmg/ddl015",
+      "author": "A Disset",
+      "doi-asserted-by": "publisher",
+      "first-page": "999",
+      "issue": "6",
+      "journal-title": "Hum Mol Genet",
+      "key": "451_CR32",
+      "unstructured": "Disset A, Bourgeois CF, Benmalek N, Claustres M, Stevenin J, Tuffery-Giraud S. An exon skipping-associated nonsense mutation in the dystrophin gene uncovers a complex interplay between multiple antagonistic splicing elements. Hum Mol Genet. 2006;15(6):999–1013. https://doi.org/10.1093/hmg/ddl015.",
+      "volume": "15",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1186/1750-1172-7-18",
+      "author": "L Burglen",
+      "doi-asserted-by": "publisher",
+      "first-page": "18",
+      "issue": "1",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "451_CR33",
+      "unstructured": "Burglen L, Chantot-Bastaraud S, Garel C, et al. Spectrum of pontocerebellar hypoplasia in 13 girls and boys with CASK mutations: confirmation of a recognizable phenotype and first description of a male mosaic patient. Orphanet J Rare Dis. 2012;7(1):18. https://doi.org/10.1186/1750-1172-7-18.",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s13023-015-0256-3",
+      "author": "U Moog",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "issue": "1",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "451_CR34",
+      "unstructured": "Moog U, Bierhals T, Brand K, et al. Phenotypic and molecular insights into CASK-related disorders in males. Orphanet J Rare Dis. 2015;10(1):44. https://doi.org/10.1186/s13023-015-0256-3.",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ejhg.2009.220",
+      "author": "A Hackett",
+      "doi-asserted-by": "publisher",
+      "first-page": "544",
+      "issue": "5",
+      "journal-title": "Eur J Hum Genet",
+      "key": "451_CR35",
+      "unstructured": "Hackett A, Tarpey PS, Licata A, et al. CASK mutations are frequent in males and cause X-linked nystagmus and variable XLMR phenotypes. Eur J Hum Genet. 2010;18(5):544–52. https://doi.org/10.1038/ejhg.2009.220.",
+      "volume": "18",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/humu.23626",
+      "author": "AN Abou Tayoun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1517",
+      "issue": "11",
+      "journal-title": "Hum Mutat",
+      "key": "451_CR36",
+      "unstructured": "Abou Tayoun AN, Pesaran T, DiStefano MT, et al. Recommendations for interpreting the loss of function PVS1 ACMG/AMP variant criterion. Hum Mutat. 2018;39(11):1517–24. https://doi.org/10.1002/humu.23626.",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/humu.21426",
+      "author": "KM Flanigan",
+      "doi-asserted-by": "publisher",
+      "first-page": "299",
+      "issue": "3",
+      "journal-title": "Hum Mutat",
+      "key": "451_CR37",
+      "unstructured": "Flanigan KM, Dunn DM, von Niederhausern A, et al. Nonsense mutation-associated Becker muscular dystrophy: interplay between exon definition and splicing regulatory elements within the DMD gene. Hum Mutat. 2011;32(3):299–308. https://doi.org/10.1002/humu.21426.",
+      "volume": "32",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/s00439-017-1820-9",
+      "author": "S Tuffery-Giraud",
+      "doi-asserted-by": "publisher",
+      "first-page": "1155",
+      "issue": "9",
+      "journal-title": "Hum Genet",
+      "key": "451_CR38",
+      "unstructured": "Tuffery-Giraud S, Miro J, Koenig M, Claustres M. Normal and altered pre-mRNA processing in the DMD gene. Hum Genet. 2017;136(9):1155–72. https://doi.org/10.1007/s00439-017-1820-9.",
+      "volume": "136",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/cge.13132",
+      "author": "Z Powis",
+      "doi-asserted-by": "publisher",
+      "first-page": "752",
+      "issue": "4",
+      "journal-title": "Clin Genet",
+      "key": "451_CR39",
+      "unstructured": "Powis Z, Farwell Hagman KD, Mroske C, et al. Expansion and further delineation of the SETD5 phenotype leading to global developmental delay, variable dysmorphic features, and reduced penetrance. Clin Genet. 2018;93(4):752–61. https://doi.org/10.1111/cge.13132.",
+      "volume": "93",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.15252/embj.201592759",
+      "author": "TG Johnstone",
+      "doi-asserted-by": "publisher",
+      "first-page": "706",
+      "issue": "7",
+      "journal-title": "EMBO J",
+      "key": "451_CR40",
+      "unstructured": "Johnstone TG, Bazzini AA, Giraldez AJ. Upstream ORFs are prevalent translational repressors in vertebrates. EMBO J. 2016;35(7):706–23. https://doi.org/10.15252/embj.201592759.",
+      "volume": "35",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00451-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "SpliceAI-visual: a free online tool to improve SpliceAI splicing variant interpretation"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

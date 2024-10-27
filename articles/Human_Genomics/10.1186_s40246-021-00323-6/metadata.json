@@ -1,0 +1,607 @@
+{
+  "DOI": "10.1186/s40246-021-00323-6",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00323-6",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003ePsoriasis is an immune-mediated, inflammatory disorder of the skin with chronic inflammation and hyper-proliferation of the epidermis. Since psoriasis has genetic components and the diseased tissue of psoriasis is very easily accessible, it is natural to use high-throughput technologies to characterize psoriasis and thus seek targeted therapies. Transcriptional profiles change correspondingly after an intervention. Unlike cross-sectional gene expression data, longitudinal gene expression data can capture the dynamic changes and thus facilitate causal inference.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eUsing the iCluster method as a building block, an ensemble method was proposed and applied to a longitudinal gene expression dataset for psoriasis, with the objective of identifying key lncRNAs that can discriminate the responders from the non-responders to two immune treatments of psoriasis.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eUsing support vector machine models, the leave-one-out predictive accuracy of the 20-lncRNA signature identified by this ensemble was estimated as 80%, which outperforms several competing methods. Furthermore, pathway enrichment analysis was performed on the target mRNAs of the identified lncRNAs. Of the enriched GO terms or KEGG pathways, proteasome, and protein deubiquitination is included. The ubiquitination-proteasome system is regarded as a key player in psoriasis, and a proteasome inhibitor to target ubiquitination pathway holds promises for treating psoriasis.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eAn integrative method such as iCluster for multiple data integration can be adopted directly to analyze longitudinal gene expression data, which offers more promising options for longitudinal big data analysis. A comprehensive evaluation and validation of the resulting 20-lncRNA signature is highly desirable.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "323"
+  ],
+  "article-number": "23",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "30 March 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "12 April 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "20 April 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable"
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "No competing interests have been declared."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-5942-1542",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Tian",
+      "given": "Suyan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Chi",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        20
+      ]
+    ],
+    "date-time": "2021-04-20T11:09:37Z",
+    "timestamp": 1618916977000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        20
+      ]
+    ],
+    "date-time": "2021-04-20T11:51:36Z",
+    "timestamp": 1618919496000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "31401123"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/501100010211",
+      "award": [
+        "JJKH20190032KJ"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Education Department of Jilin Province"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        25
+      ]
+    ],
+    "date-time": "2024-04-25T12:31:58Z",
+    "timestamp": 1714048318859
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        20
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            4,
+            20
+          ]
+        ],
+        "date-time": "2021-04-20T00:00:00Z",
+        "timestamp": 1618876800000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            4,
+            20
+          ]
+        ],
+        "date-time": "2021-04-20T00:00:00Z",
+        "timestamp": 1618876800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00323-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00323-6/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00323-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        20
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        20
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3390/ijms20061475",
+      "author": "A Rendon",
+      "doi-asserted-by": "publisher",
+      "first-page": "E1475",
+      "journal-title": "Int J Mol Sci",
+      "key": "323_CR1",
+      "unstructured": "Rendon A, Schakel K. Psoriasis pathogenesis and treatment. Int J Mol Sci. 2019;20:E1475.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bib/bbw060",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "558",
+      "issue": "4",
+      "journal-title": "Briefings Bioinformatics",
+      "key": "323_CR2",
+      "unstructured": "Chen X, Yan CC, Zhang X, You Z. Long non-coding RNAs and complex diseases: from experimental results to computational models. Briefings Bioinformatics. 2017;18(4):558–76. https://doi.org/10.1093/bib/bbw060.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.intimp.2019.106053",
+      "author": "A Rakhshan",
+      "doi-asserted-by": "publisher",
+      "first-page": "106053",
+      "journal-title": "Int Immunopharmacol",
+      "key": "323_CR3",
+      "unstructured": "Rakhshan A, Zarrinpour N, Moradi A, Ahadi M, Davood M. Genetic variants within ANRIL ( antisense non coding RNA in the INK4 locus ) are associated with risk of psoriasis. Int Immunopharmacol. 2020;78:106053. https://doi.org/10.1016/j.intimp.2019.106053.",
+      "volume": "78",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12860-019-0229-9",
+      "author": "H Jia",
+      "doi-asserted-by": "publisher",
+      "first-page": "46",
+      "issue": "1",
+      "journal-title": "BMC Mol Cell Biol",
+      "key": "323_CR4",
+      "unstructured": "Jia H, Zhang K, Lu W, Xu G, Zhang J, Tang Z. LncRNA MEG3 influences the proliferation and apoptosis of psoriasis epidermal cells by targeting miR-21/caspase-8. BMC Mol Cell Biol. 2019;20(1):46. https://doi.org/10.1186/s12860-019-0229-9.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-559",
+      "doi-asserted-by": "publisher",
+      "key": "323_CR5",
+      "unstructured": "Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics. 2008;9(1). https://doi.org/10.1186/1471-2105-9-559."
+    },
+    {
+      "DOI": "10.1186/s12864-016-3188-y",
+      "author": "R Ahn",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Genomics",
+      "key": "323_CR6",
+      "unstructured": "Ahn R, Gupta R, Lai K, Chopra N, Arron ST, Liao W. Network analysis of psoriasis reveals biological pathways and roles for coding and long non-coding RNAs. BMC Genomics. 2016;17:1–10.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.jaci.2009.08.046",
+      "author": "LC Zaba",
+      "doi-asserted-by": "publisher",
+      "first-page": "1022",
+      "journal-title": "J Allergy Clin Immunol",
+      "key": "323_CR7",
+      "unstructured": "Zaba LC, Suarez-Farinas M, Fuentes-Duculan J, Nograles K, Guttman-Yassky E, Cardinale I, et al. Effective treatment of psoriasis with etanercept is linked to suppression of IL-17 signaling, not “immediate-response” TNF genes. J Allergy Clin Immunol. 2009;124:1022–10.e1-395.",
+      "volume": "124",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.jid.2016.09.015",
+      "author": "J Correa",
+      "doi-asserted-by": "publisher",
+      "first-page": "305",
+      "issue": "2",
+      "journal-title": "J Investigative Dermatol",
+      "key": "323_CR8",
+      "unstructured": "Correa J, Kim J, Tian S, Tomalin LE, Krueger JG. Shrinking the psoriasis assessment gap: early gene-expression profiling accurately predicts response to long-term treatment. J Investigative Dermatol. 2017;137(2):305–12. https://doi.org/10.1016/j.jid.2016.09.015.",
+      "volume": "137",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1001/jamadermatol.2015.0452",
+      "author": "AM Goldminz",
+      "doi-asserted-by": "publisher",
+      "first-page": "837",
+      "issue": "8",
+      "journal-title": "JAMA dermatol",
+      "key": "323_CR9",
+      "unstructured": "Goldminz AM, Suárez-Fariñas M, Wang AC, Dumont N, Krueger JG, Gottlieb AB. CCL20 and IL22 messenger RNA expression after adalimumab vs methotrexate treatment of psoriasis: a randomized clinical trial. JAMA dermatol. 2015;151(8):837–46. https://doi.org/10.1001/jamadermatol.2015.0452.",
+      "volume": "151",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/jid.2012.184",
+      "author": "M Suárez-Fariñas",
+      "doi-asserted-by": "publisher",
+      "first-page": "2552",
+      "issue": "11",
+      "journal-title": "J Investigative dermatol",
+      "key": "323_CR10",
+      "unstructured": "Suárez-Fariñas M, Li K, Fuentes-Duculan J, Hayden K, Brodmerkel C, Krueger JG. Expanding the psoriasis disease profile: interrogation of the skin and serum of patients with moderate-to-severe psoriasis. J Investigative dermatol. 2012;132(11):2552–64. https://doi.org/10.1038/jid.2012.184.",
+      "volume": "132",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp543",
+      "author": "R Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "2906",
+      "issue": "22",
+      "journal-title": "Bioinformatics",
+      "key": "323_CR11",
+      "unstructured": "Shen R, Olshen AB, Ladanyi M. Integrative clustering of multiple genomic data types using a joint latent variable model with application to breast and lung cancer subtype analysis. Bioinformatics. 2009;25(22):2906–12. https://doi.org/10.1093/bioinformatics/btp543.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1073/pnas.1208949110",
+      "author": "Q Mo",
+      "doi-asserted-by": "publisher",
+      "first-page": "4245",
+      "issue": "11",
+      "journal-title": "Proc Nat Acad Sci USA",
+      "key": "323_CR12",
+      "unstructured": "Mo Q, Wang S, Seshan VE, Olshen AB, Schultz N, Sander C, et al. Pattern discovery and cancer gene identification in integrated cancer genomic data. Proc Nat Acad Sci USA. 2013;110(11):4245–50. https://doi.org/10.1073/pnas.1208949110.",
+      "volume": "110",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxx017",
+      "author": "Q Mo",
+      "doi-asserted-by": "publisher",
+      "first-page": "71",
+      "issue": "1",
+      "journal-title": "Biostatistics",
+      "key": "323_CR13",
+      "unstructured": "Mo Q, Chan KS, Hilsenbeck SG. A fully Bayesian latent variable model for integrative clustering analysis of multi-type omics data. Biostatistics. 2018;19(1):71–86. https://doi.org/10.1093/biostatistics/kxx017.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1214/12-AOAS578",
+      "author": "R Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "issue": "1",
+      "journal-title": "Ann Appl Stat",
+      "key": "323_CR14",
+      "unstructured": "Shen R, Wang S, Mo Q. Sparse integrative clustering of multiple omics. Ann Appl Stat. 2013;7(1):269–94. https://doi.org/10.1214/12-AOAS578.",
+      "volume": "7",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1109/DSAA.2018.00021",
+      "doi-asserted-by": "crossref",
+      "key": "323_CR15",
+      "unstructured": "Min EJ, Chang C, Long Q. Generalized bayesian factor analysis for integrative clustering with applications to multi-omics data. Proc Int Conf Data Sci Adv Anal. 2018:109–19."
+    },
+    {
+      "DOI": "10.1371/journal.pone.0035236",
+      "author": "R Shen",
+      "doi-asserted-by": "publisher",
+      "issue": "4",
+      "journal-title": "PloS one",
+      "key": "323_CR16",
+      "unstructured": "Shen R, Mo Q, Schultz N, Seshan VE, Olshen AB, Huse J, et al. Integrative subtype discovery in glioblastoma using iCluster. PloS one. 2012;7(4):e35236. https://doi.org/10.1371/journal.pone.0035236.",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/nature20805",
+      "author": "The cancer genome atlas network",
+      "doi-asserted-by": "publisher",
+      "first-page": "169",
+      "issue": "7636",
+      "journal-title": "Nature",
+      "key": "323_CR17",
+      "unstructured": "The cancer genome atlas network. Integrated genomic characterization of oesophageal carcinoma. Nature. 2017;541(7636):169–75. https://doi.org/10.1038/nature20805.",
+      "volume": "541",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bib/bbw113",
+      "doi-asserted-by": "crossref",
+      "key": "323_CR18",
+      "unstructured": "Li Y, Wu F, Ngom A. A review on machine learning principles for multi-view biological data integration. Brief Bioinform. 2016;19(2):325-40."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btk005",
+      "author": "JT Leek",
+      "doi-asserted-by": "publisher",
+      "first-page": "507",
+      "issue": "4",
+      "journal-title": "Bioinformatics",
+      "key": "323_CR19",
+      "unstructured": "Leek JT, Monsen E, Dabney AR, Storey JD. Edge: extraction and analysis of differential gene expression. Bioinformatics. 2006;22(4):507–8. https://doi.org/10.1093/bioinformatics/btk005.",
+      "volume": "22",
+      "year": "2006"
+    },
+    {
+      "key": "323_CR20",
+      "unstructured": "Kolde R: Package “pheatmap”: pretty heat map https://cran.r-project.org/web/packages/pheatmap/pheatmap.pdf."
+    },
+    {
+      "key": "323_CR21",
+      "unstructured": "Package “ locfit ”. https://cran.r-project.org/web/packages/locfit/locfit.pdf."
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "author": "J Friedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "J Stat Software",
+      "key": "323_CR22",
+      "unstructured": "Friedman J, Hastie T, Tibshirani R. Regularization paths for generalized linear models via coordinate descent. J Stat Software. 2010;33(1):1–22.",
+      "volume": "33",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gky905",
+      "author": "Z Bao",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1034",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "323_CR23",
+      "unstructured": "Bao Z, Yang Z, Huang Z, Zhou Y, Cui Q, Dong D. LncRNADisease 2.0: an updated database of long non-coding RNA-associated diseases. Nucleic Acids Res. 2019;47(D1):D1034–7. https://doi.org/10.1093/nar/gky905.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/database/baq020",
+      "author": "M Safran",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Database",
+      "key": "323_CR24",
+      "unstructured": "Safran M, Dalah I, Alexander J, Rosen N, Iny Stein T, Shmoish M, et al. GeneCards Version 3: the human gene integrator. Database. 2010;2010:1–16.",
+      "volume": "2010",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "doi-asserted-by": "crossref",
+      "key": "323_CR25",
+      "unstructured": "Tibshirani R. Regression shrinkage selection via the LASSO. J Royal Stat Soc Ser B (Stat Methodol). 1996;58(1):267-88."
+    },
+    {
+      "DOI": "10.1111/biom.12137",
+      "author": "P Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "356",
+      "issue": "2",
+      "journal-title": "Biometrics",
+      "key": "323_CR26",
+      "unstructured": "Xu P, Zhu L, Li Y. Ultrahigh dimensional time course feature selection. Biometrics. 2014;70(2):356–65. https://doi.org/10.1111/biom.12137.",
+      "volume": "70",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gks1094",
+      "author": "A Franceschini",
+      "doi-asserted-by": "publisher",
+      "first-page": "D808",
+      "issue": "Database issue",
+      "journal-title": "Nucleic Acids Res",
+      "key": "323_CR27",
+      "unstructured": "Franceschini A, Szklarczyk D, Frankild S, Kuhn M, Simonovic M, Roth A, et al. STRING v9.1: protein-protein interaction networks, with increased coverage and integration. Nucleic Acids Res. 2013;41(Database issue):D808–15. https://doi.org/10.1093/nar/gks1094.",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/30.1.42",
+      "author": "M Kanehisa",
+      "doi-asserted-by": "publisher",
+      "first-page": "42",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "323_CR28",
+      "unstructured": "Kanehisa M, Goto S, Kawashima S, Nakaya A. The KEGG databases at GenomeNet. Nucleic Acids Res. 2002;30(1):42–6. https://doi.org/10.1093/nar/30.1.42.",
+      "volume": "30",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1038/75556",
+      "author": "M Ashburner",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "issue": "1",
+      "journal-title": "Nat Genet",
+      "key": "323_CR29",
+      "unstructured": "Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, et al. Gene ontology: tool for the unification of biology. The Gene Ontology Consortium. Nat Genet. 2000;25(1):25–9. https://doi.org/10.1038/75556.",
+      "volume": "25",
+      "year": "2000"
+    },
+    {
+      "key": "323_CR30",
+      "unstructured": "Tian S, Wang C, Chang HH: A longitudinal feature selection method identifies relevant genes to distinguish complicated injury and uncomplicated injury over time.https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-018-0685-8."
+    },
+    {
+      "DOI": "10.12688/f1000research.15357.1",
+      "doi-asserted-by": "crossref",
+      "key": "323_CR31",
+      "unstructured": "Tian S, Wang C, Chang HH. To select relevant features for longitudinal gene expression data by extending a pathway analysis method. F1000 Res. 2018;7:1166."
+    },
+    {
+      "author": "S Tian",
+      "first-page": "2019",
+      "key": "323_CR32",
+      "unstructured": "Tian S. Feature selection for longitudinal data by using sign averages to summarize gene expression values over time; 2019. p. 2019.",
+      "volume-title": "Feature selection for longitudinal data by using sign averages to summarize gene expression values over time",
+      "year": "2019"
+    }
+  ],
+  "reference-count": 32,
+  "references-count": 32,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00323-6"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "An ensemble of the iCluster method to analyze longitudinal lncRNA expression data for psoriasis patients"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

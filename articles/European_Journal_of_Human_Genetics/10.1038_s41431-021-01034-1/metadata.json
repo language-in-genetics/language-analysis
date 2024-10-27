@@ -1,0 +1,535 @@
+{
+  "DOI": "10.1038/s41431-021-01034-1",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-021-01034-1",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eAccurate detection of pathogenic single nucleotide variants (SNVs) is a key challenge in whole exome and whole genome sequencing studies. To date, several \u003cjats:italic\u003ein silico\u003c/jats:italic\u003e tools have been developed to predict deleterious variants from this type of data. However, these tools have limited power to detect new pathogenic variants, especially in non-coding regions. In this study, we evaluate the use of a new metric, the Shannon Entropy of Locus Variability (SELV), calculated as the Shannon entropy of the variant frequencies reported in genome-wide population studies at a given locus, as a new predictor of potentially pathogenic variants in non-coding nuclear and mitochondrial DNA and also in coding regions with a selective pressure other than that imposed by the genetic code, \u003cjats:italic\u003ee.g\u003c/jats:italic\u003e splice-sites. For benchmarking, SELV was compared to predictors of pathogenicity in different genomic contexts. In nuclear non-coding DNA, SELV outperformed CDTS (AUC\u003cjats:sub\u003eSELV\u003c/jats:sub\u003e = 0.97 in ROC curve and PR-AUC\u003cjats:sub\u003eSELV\u003c/jats:sub\u003e = 0.96 in Precision-recall curve). For non-coding mitochondrial variants (AUC\u003cjats:sub\u003eSELV\u003c/jats:sub\u003e = 0.98 in ROC curve and PR-AUC\u003cjats:sub\u003eSELV\u003c/jats:sub\u003e = 1.00 in Precision-recall curve) SELV outperformed HmtVar. Moreover, SELV was compared against two state-of-the-art ensemble predictors of pathogenicity in splice-sites, ada-score, and rf-score, matching their overall performance both in ROC (AUC\u003cjats:sub\u003eSELV\u003c/jats:sub\u003e = 0.95) and Precision-recall curves (PR-AUC = 0.97), with the advantage that SELV can be easily calculated for every position in the genome, as opposite to ada-score and rf-score. Therefore, we suggest that the information about the observed genetic variability in a locus reported from large scale population studies could improve the prioritization of SNVs in splice-sites and in non-coding regions.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1034"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "9 August 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "14 December 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "20 December 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "26 January 2022"
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "In this study, we conducted a secondary analysis of publicly available data, which were properly anonymised, and therefore we consider that ethical approval is not needed in this particular case."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-2880-509X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Cabrera-Alarcon",
+      "given": "José Luis",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Martinez",
+      "given": "Jorge García",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3671-2961",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Enríquez",
+      "given": "José Antonio",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1881-1664",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Sánchez-Cabo",
+      "given": "Fátima",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        26
+      ]
+    ],
+    "date-time": "2022-01-26T01:02:34Z",
+    "timestamp": 1643158954000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        10
+      ]
+    ],
+    "date-time": "2022-05-10T23:05:46Z",
+    "timestamp": 1652223946000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "date-time": "2024-04-30T00:27:17Z",
+    "timestamp": 1714436837157
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        26
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            26
+          ]
+        ],
+        "date-time": "2022-01-26T00:00:00Z",
+        "timestamp": 1643155200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            1,
+            26
+          ]
+        ],
+        "date-time": "2022-01-26T00:00:00Z",
+        "timestamp": 1643155200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-01034-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-01034-1",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-021-01034-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "555-559",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        26
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        1,
+        26
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        5
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "1034_CR1",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581:434–443. https://doi.org/10.1038/s41586-020-2308-7",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/798264",
+      "doi-asserted-by": "publisher",
+      "key": "1034_CR2",
+      "unstructured": "Bolze A, Mendez F, White S, Tanudjaja F, Isaksson M, Rashkin M, et al. Selective constraints and pathogenicity of mitochondrial DNA variants inferred from a novel database of 196,554 unrelated individuals. Preprint at https://doi.org/10.1101/798264 (2019)."
+    },
+    {
+      "DOI": "10.1186/s13073-017-0403-7",
+      "author": "Y Kobayashi",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Med",
+      "key": "1034_CR3",
+      "unstructured": "Kobayashi Y, Yang S, Nykamp K, Garcia J, Lincoln SE, Topper SE. Pathogenic variant burden in the ExAC database: an empirical approach to evaluating population data for clinical variant interpretation. Genome Med. 2017;9:13. https://doi.org/10.1186/s13073-017-0403-7",
+      "volume": "9",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3511",
+      "author": "V Aggarwala",
+      "doi-asserted-by": "publisher",
+      "first-page": "349",
+      "journal-title": "Nat Genet",
+      "key": "1034_CR4",
+      "unstructured": "Aggarwala V, Voight BF. An expanded sequence context model broadly explains variability in polymorphism levels across the human genome. Nat Genet. 2016;48:349–355. https://doi.org/10.1038/ng.3511",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1534/genetics.116.195677",
+      "author": "H Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "843",
+      "journal-title": "Genetics",
+      "key": "1034_CR5",
+      "unstructured": "Zhang H, Lang Z, Zhu JK. Statistical methods for identifying sequence motifs affecting point mutations. Genetics. 2017;205:843–856. https://doi.org/10.1534/genetics.116.195677",
+      "volume": "205",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/0005-2787(66)90198-5",
+      "author": "OW Jones",
+      "doi-asserted-by": "publisher",
+      "first-page": "400",
+      "journal-title": "Biochim Biophys Acta",
+      "key": "1034_CR6",
+      "unstructured": "Jones OW, Nirenberg MW. Degeneracy in the amino acid code. Biochim Biophys Acta. 1966;119:400–406. https://doi.org/10.1016/0005-2787(66)90198-5",
+      "volume": "119",
+      "year": "1966"
+    },
+    {
+      "DOI": "10.1002/iub.2434",
+      "author": "AV Lechuga-Vieco",
+      "doi-asserted-by": "publisher",
+      "first-page": "511",
+      "journal-title": "IUBMB Life",
+      "key": "1034_CR7",
+      "unstructured": "Lechuga-Vieco AV, Justo-Méndez R, Enríquez JA. Not all mitochondrial DNAs are made equal and the nucleus knows it. IUBMB Life. 2021;73:511–529. https://doi.org/10.1002/iub.2434",
+      "volume": "73",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cell.2015.08.067",
+      "author": "DC Wallace",
+      "doi-asserted-by": "publisher",
+      "first-page": "33",
+      "journal-title": "Cell",
+      "key": "1034_CR8",
+      "unstructured": "Wallace DC. Mitochondrial DNA variation in human radiation and disease. Cell. 2015;163:33–38. https://doi.org/10.1016/j.cell.2015.08.067",
+      "volume": "163",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nmeth0410-248",
+      "author": "IA Adzhubei",
+      "doi-asserted-by": "publisher",
+      "first-page": "248",
+      "journal-title": "Nat Methods",
+      "key": "1034_CR9",
+      "unstructured": "Adzhubei IA, Schmidt S, Peshkin L, Ramensky VE, Gerasimova A, Bork P, et al. A method and server for predicting damaging missense mutations. Nat Methods. 2010;7:248–249. https://doi.org/10.1038/nmeth0410-248",
+      "volume": "7",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003143",
+      "author": "MX Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1003143",
+      "journal-title": "PLoS Genet",
+      "key": "1034_CR10",
+      "unstructured": "Li MX, Kwan JSH, Bao SY, Yang W, Ho SL, Song YQ, et al. Predicting mendelian disease-causing non-synonymous single nucleotide variants in exome sequencing studies. PLoS Genet. 2013;9:e1003143. https://doi.org/10.1371/journal.pgen.1003143",
+      "volume": "9",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/humu.22204",
+      "author": "PS Nair",
+      "doi-asserted-by": "publisher",
+      "first-page": "42",
+      "journal-title": "Hum Mutat",
+      "key": "1034_CR11",
+      "unstructured": "Nair PS, Vihinen M. VariBench: a benchmark database for variations. Hum Mutat. 2013;34:42–49. https://doi.org/10.1002/humu.22204",
+      "volume": "34",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1003440",
+      "author": "J Bendl",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1003440",
+      "journal-title": "PLoS Comput Biol",
+      "key": "1034_CR12",
+      "unstructured": "Bendl J, Stourac J, Salanda O, Pavelka A, Wieben ED, Zendulka J, et al. PredictSNP: robust and accurate consensus classifier for prediction of disease-related mutations. PLoS Comput Biol. 2014;10:e1003440. https://doi.org/10.1371/journal.pcbi.1003440",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq028",
+      "author": "A Mottaz",
+      "doi-asserted-by": "publisher",
+      "first-page": "851",
+      "journal-title": "Bioinformatics",
+      "key": "1034_CR13",
+      "unstructured": "Mottaz A, David FPA, Veuthey AL, Yip YL. Easy retrieval of single amino-acid polymorphisms and phenotype information using SwissVar. Bioinformatics. 2010;26:851–852. https://doi.org/10.1093/bioinformatics/btq028",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1153",
+      "author": "MJ Landrum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1062",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1034_CR14",
+      "unstructured": "Landrum MJ, Lee JM, Benson M, Brown GR, Chao C, Chitipiralla S, et al. ClinVar: improving access to variant interpretations and supporting evidence. Nucleic Acids Res. 2018;46:D1062–D1067. https://doi.org/10.1093/nar/gkx1153",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gku1206",
+      "author": "X Jian",
+      "doi-asserted-by": "publisher",
+      "first-page": "13534",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1034_CR15",
+      "unstructured": "Jian X, Boerwinkle E, Liu X. In silico prediction of splice-altering single nucleotide variants in the human genome. Nucleic Acids Res. 2014;42:13534–13544. https://doi.org/10.1093/nar/gku1206",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/humu.22932",
+      "doi-asserted-by": "publisher",
+      "key": "1034_CR16",
+      "unstructured": "Liu X, Wu C, Li C, Boerwinkle E dbNSFP v3.0: A one-stop database of functional predictions and annotations for human nonsynonymous and splice-site SNVs. Hum Mutat. 216;37:235–241. https://doi.org/10.1002/humu.22932."
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "author": "W McLaren",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "1034_CR17",
+      "unstructured": "McLaren W, Gil L, Hunt SE, Riat HS, Ritchie GRS, Thormann A, et al. The ensembl variant effect predictor. Genome Biol. 2016;17:122. https://doi.org/10.1186/s13059-016-0974-4",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1101/gr.3715005",
+      "author": "A Siepel",
+      "doi-asserted-by": "publisher",
+      "first-page": "1034",
+      "journal-title": "Genome Res",
+      "key": "1034_CR18",
+      "unstructured": "Siepel A, Bejerano G, Pedersen JS, Hinrichs AS, Hou M, Rosenbloom K, et al. Evolutionarily conserved elements in vertebrate, insect, worm, and yeast genomes. Genome Res. 2005;15:1034–1050. https://doi.org/10.1101/gr.3715005",
+      "volume": "15",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1101/gr.097857.109",
+      "author": "KS Pollard",
+      "doi-asserted-by": "publisher",
+      "first-page": "110",
+      "journal-title": "Genome Res",
+      "key": "1034_CR19",
+      "unstructured": "Pollard KS, Hubisz MJ, Rosenbloom KR, Siepel A. Detection of nonneutral substitution rates on mammalian phylogenies. Genome Res. 2010;20:110–121. https://doi.org/10.1101/gr.097857.109",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gkh103",
+      "author": "D Karolchik",
+      "doi-asserted-by": "publisher",
+      "first-page": "493D",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1034_CR20",
+      "unstructured": "Karolchik D, Hinrichs AS, Furey TS, Roskin KM, Sugnet CW, Haussler D, et al. The UCSC Table Browser data retrieval tool. Nucleic Acids Res. 2004;32:493D–D496. https://doi.org/10.1093/nar/gkh103",
+      "volume": "32",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1002/0471250953.bi0123s44",
+      "author": "MT Lott",
+      "doi-asserted-by": "publisher",
+      "first-page": "1.23.1",
+      "journal-title": "Curr Protoc Bioinforma",
+      "key": "1034_CR21",
+      "unstructured": "Lott MT, Leipzig JN, Derbeneva O, Xie HM, Chalkia D, Sarmady M, et al. mtDNA variation and analysis using mitomap and mitomaster. Curr Protoc Bioinforma. 2013;44:1.23.1–1.23.26. https://doi.org/10.1002/0471250953.bi0123s44",
+      "volume": "44",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gky1024",
+      "author": "R Preste",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1202",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1034_CR22",
+      "unstructured": "Preste R, Vitale O, Clima R, Gasparre G, Attimonelli M. HmtVar: a new resource for human mitochondrial variations and pathogenicity data. Nucleic Acids Res. 2019;47:D1202–D1210. https://doi.org/10.1093/nar/gky1024",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0062-7",
+      "author": "J di Iulio",
+      "doi-asserted-by": "publisher",
+      "first-page": "333",
+      "journal-title": "Nat Genet",
+      "key": "1034_CR23",
+      "unstructured": "di Iulio J, Bartha I, Wong EHM, Yu H-C, Lavrenko V, Yang D, et al. The human noncoding genome defined by genetic diversity. Nat Genet. 2018;50:333–337. https://doi.org/10.1038/s41588-018-0062-7",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/humu.22727",
+      "author": "GC Schaafsma",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "journal-title": "Hum Mutat",
+      "key": "1034_CR24",
+      "unstructured": "Schaafsma GC, Vihinen M. VariSNP, a benchmark database for variations from dbSNP. Hum Mutat. 2015;36:161–166. https://doi.org/10.1002/humu.22727",
+      "volume": "36",
+      "year": "2015"
+    }
+  ],
+  "reference-count": 24,
+  "references-count": 24,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-021-01034-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Variant pathogenic prediction by locus variability: the importance of the current picture of evolution"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "30"
+}

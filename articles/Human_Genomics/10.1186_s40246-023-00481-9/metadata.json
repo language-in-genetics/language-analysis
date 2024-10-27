@@ -1,0 +1,628 @@
+{
+  "DOI": "10.1186/s40246-023-00481-9",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00481-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003ePhenylketonuria (PKU) is caused by mutations in the phenylalanine hydroxylase (PAH) gene. Our study aimed to predict the phenotype using the allelic genotype.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eA total of 1291 PKU patients with 623 various variants were used as the training dataset for predicting allelic phenotypes. We designed a common machine learning framework to predict allelic genotypes associated with the phenotype.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe identified 235 different mutations and 623 various allelic genotypes. The features extracted from the structure of mutations and graph properties of the PKU network to predict the phenotype of PKU were named PPML (PKU phenotype predicted by machine learning). The phenotype of PKU was classified into three different categories: classical PKU (cPKU), mild PKU (mPKU) and mild hyperphenylalaninemia (MHP). Three hub nodes (c.728G\u0026gt;A for cPKU, c.721 for mPKU and c.158G\u0026gt;A for HPA) were used as each classification center, and 5 node attributes were extracted from the network graph for machine learning training features. The area under the ROC curve was AUC = 0.832 for cPKU, AUC = 0.678 for mPKU and AUC = 0.874 for MHP. This suggests that PPML is a powerful method to predict allelic phenotypes in PKU and can be used for genetic counseling of PKU families.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe web version of PPML predicts PKU allele classification supported by applicable real cases and prediction results. It is an online database that can be used for PKU phenotype prediction \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://www.bioinfogenetics.info/PPML/\"\u003ehttp://www.bioinfogenetics.info/PPML/\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "481"
+  ],
+  "article-number": "34",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "9 July 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "25 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "31 March 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Fang",
+      "given": "Yang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Gao",
+      "given": "Jinshuang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guo",
+      "given": "Yaqing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Xiaole",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yuan",
+      "given": "Enwu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yuan",
+      "given": "Erfeng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Song",
+      "given": "Liying",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shi",
+      "given": "Qianqian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yu",
+      "given": "Haiyang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhao",
+      "given": "Dehua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Linlin",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        4
+      ]
+    ],
+    "date-time": "2023-04-04T11:09:37Z",
+    "timestamp": 1680606577000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        4
+      ]
+    ],
+    "date-time": "2023-04-04T11:37:07Z",
+    "timestamp": 1680608227000
+  },
+  "funder": [
+    {
+      "award": [
+        "2021080"
+      ],
+      "name": "This work is supported by the PhD research startup foundation of the Third Affiliated Hospital of Zhengzhou University"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        4,
+        5
+      ]
+    ],
+    "date-time": "2023-04-05T04:55:02Z",
+    "timestamp": 1680670502016
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        31
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2023-03-31T00:00:00Z",
+        "timestamp": 1680220800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            31
+          ]
+        ],
+        "date-time": "2023-03-31T00:00:00Z",
+        "timestamp": 1680220800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00481-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00481-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00481-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        31
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        31
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s41572-021-00267-0",
+      "author": "FJ van Spronsen",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Rev Dis Primers",
+      "key": "481_CR1",
+      "unstructured": "van Spronsen FJ, Blau N, Harding C, Burlina A, Longo N, Bosch AM. Phenylketonuria. Nat Rev Dis Primers. 2021;7(1):1–19.",
+      "volume": "7",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.06.006",
+      "author": "A Hillert",
+      "doi-asserted-by": "publisher",
+      "first-page": "234",
+      "issue": "2",
+      "journal-title": "Am J Hum Genet",
+      "key": "481_CR2",
+      "unstructured": "Hillert A, Anikster Y, Belanger-Quintana A, Burlina A, Burton BK, Carducci C, Chiesa AE, Christodoulou J, Dordevic M, Desviat LR, et al. The genetic landscape and epidemiology of phenylketonuria. Am J Hum Genet. 2020;107(2):234–50.",
+      "volume": "107",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(10)60961-0",
+      "author": "N Blau",
+      "doi-asserted-by": "publisher",
+      "first-page": "1417",
+      "issue": "9750",
+      "journal-title": "Lancet",
+      "key": "481_CR3",
+      "unstructured": "Blau N, Van Spronsen FJ, Levy HL. Phenylketonuria. Lancet. 2010;376(9750):1417–27.",
+      "volume": "376",
+      "year": "2010"
+    },
+    {
+      "author": "RA Williams",
+      "first-page": "31",
+      "issue": "1",
+      "journal-title": "Clin Biochem Rev",
+      "key": "481_CR4",
+      "unstructured": "Williams RA, Mamotte CD, Burnett JR. Phenylketonuria: an inborn error of phenylalanine metabolism. Clin Biochem Rev. 2008;29(1):31.",
+      "volume": "29",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1136/adc.71.2.114",
+      "author": "P Verkerk",
+      "doi-asserted-by": "publisher",
+      "first-page": "114",
+      "issue": "2",
+      "journal-title": "Arch Dis Child",
+      "key": "481_CR5",
+      "unstructured": "Verkerk P, Van Spronsen F, Smit G, Sengers R. Impaired prenatal and postnatal growth in Dutch patients with phenylketonuria. The National PKU Steering Committee. Arch Dis Child. 1994;71(2):114–8.",
+      "volume": "71",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(72)90797-0",
+      "author": "L Saugstad",
+      "doi-asserted-by": "publisher",
+      "first-page": "809",
+      "issue": "7755",
+      "journal-title": "Lancet",
+      "key": "481_CR6",
+      "unstructured": "Saugstad L. Birthweights in children with phenylketonuria and in their siblings. Lancet. 1972;299(7755):809–13.",
+      "volume": "299",
+      "year": "1972"
+    },
+    {
+      "DOI": "10.1016/S2213-8587(16)30320-5",
+      "author": "FJ van Spronsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "743",
+      "issue": "9",
+      "journal-title": "Lancet Diabetes Endocrinol",
+      "key": "481_CR7",
+      "unstructured": "van Spronsen FJ, van Wegberg AM, Ahring K, Belanger-Quintana A, Blau N, Bosch AM, Burlina A, Campistol J, Feillet F, Gizewska M, et al. Key European guidelines for the diagnosis and management of patients with phenylketonuria. Lancet Diabetes Endocrinol. 2017;5(9):743–56.",
+      "volume": "5",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ymgme.2014.02.013",
+      "author": "KM Camp",
+      "doi-asserted-by": "publisher",
+      "first-page": "87",
+      "issue": "2",
+      "journal-title": "Mol Genet Metab",
+      "key": "481_CR8",
+      "unstructured": "Camp KM, Parisi MA, Acosta PB, Berry GT, Bilder DA, Blau N, Bodamer OA, Brosco JP, Brown CS, Burlina AB. Phenylketonuria Scientific Review Conference: state of the science and future research needs. Mol Genet Metab. 2014;112(2):87–122.",
+      "volume": "112",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1086/301920",
+      "author": "P Guldberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "71",
+      "issue": "1",
+      "journal-title": "Am J Hum Genet",
+      "key": "481_CR9",
+      "unstructured": "Guldberg P, Rey F, Zschocke J, Romano V, François B, Michiels L, Ullrich K, Hoffmann GF, Burgard P, Schmidt H. A European multicenter study of phenylalanine hydroxylase deficiency: classification of 105 mutations and a general system for genotype-based prediction of metabolic phenotype. Am J Hum Genet. 1998;63(1):71–9.",
+      "volume": "63",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0081-x",
+      "author": "SF Garbade",
+      "doi-asserted-by": "publisher",
+      "first-page": "580",
+      "issue": "3",
+      "journal-title": "Genet Med",
+      "key": "481_CR10",
+      "unstructured": "Garbade SF, Shen N, Himmelreich N, Haas D, Trefz FK, Hoffmann GF, Burgard P, Blau N. Allelic phenotype values: a model for genotype-based phenotype prediction in phenylketonuria. Genet Med. 2019;21(3):580–90.",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12881-017-0467-7",
+      "author": "N Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "BMC Med Genet",
+      "key": "481_CR11",
+      "unstructured": "Liu N, Huang Q, Li Q, Zhao D, Li X, Cui L, Bai Y, Feng Y, Kong X. Spectrum of PAH gene variants among a population of Han Chinese patients with phenylketonuria from northern China. BMC Med Genet. 2017;18(1):1–7.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/gr.1239303",
+      "author": "P Shannon",
+      "doi-asserted-by": "publisher",
+      "first-page": "2498",
+      "issue": "11",
+      "journal-title": "Genome Res",
+      "key": "481_CR12",
+      "unstructured": "Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T. Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res. 2003;13(11):2498–504.",
+      "volume": "13",
+      "year": "2003"
+    },
+    {
+      "author": "F Pedregosa",
+      "first-page": "2825",
+      "journal-title": "J Mach Learn Res",
+      "key": "481_CR13",
+      "unstructured": "Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, Blondel M, Prettenhofer P, Weiss R, Dubourg V. Scikit-learn: machine learning in Python. J Mach Learn Res. 2011;12:2825–30.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1086/301638",
+      "author": "E Kayaalp",
+      "doi-asserted-by": "publisher",
+      "first-page": "1309",
+      "issue": "6",
+      "journal-title": "Am J Hum Genet",
+      "key": "481_CR14",
+      "unstructured": "Kayaalp E, Treacy E, Waters PJ, Byck S, Nowacki P, Scriver CR. Human phenylalanine hydroxylase mutations and hyperphenylalaninemia phenotypes: a metanalysis of genotype–phenotype correlations. Am J Hum Genet. 1997;61(6):1309–17.",
+      "volume": "61",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1002/humu.10198",
+      "author": "AL Pey",
+      "doi-asserted-by": "publisher",
+      "first-page": "370",
+      "issue": "4",
+      "journal-title": "Hum Mutat",
+      "key": "481_CR15",
+      "unstructured": "Pey AL, Desviat LR, Gámez A, Ugarte M, Pérez B. Phenylketonuria: genotype–phenotype correlations based on expression analysis of structural and functional mutations in PAH. Hum Mutat. 2003;21(4):370–8.",
+      "volume": "21",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/0009-8981(93)90233-T",
+      "author": "FK Trefz",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "issue": "1",
+      "journal-title": "Clin Chim Acta Int J Clin Chem",
+      "key": "481_CR16",
+      "unstructured": "Trefz FK, Burgard P, König T, Goebel-Schreiner B, Lichter-Konecki U, Konecki D, Schmidt E, Schmidt H, Bickel H. Genotype–phenotype correlations in phenylketonuria. Clin Chim Acta Int J Clin Chem. 1993;217(1):15–21.",
+      "volume": "217",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1016/j.cca.2015.07.014",
+      "author": "R Trunzo",
+      "doi-asserted-by": "publisher",
+      "first-page": "51",
+      "journal-title": "Clin Chim Acta Int J Clin Chem",
+      "key": "481_CR17",
+      "unstructured": "Trunzo R, Santacroce R, D’Andrea G, Longo V, De Girolamo G, Dimatteo C, Leccese A, Bafunno V, Lillo V, Papadia F, et al. Phenylalanine hydroxylase deficiency in south Italy: genotype–phenotype correlations, identification of a novel mutant PAH allele and prediction of BH4 responsiveness. Clin Chim Acta Int J Clin Chem. 2015;450:51–5.",
+      "volume": "450",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ejhg.2014.114",
+      "author": "S Wettstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "302",
+      "issue": "3",
+      "journal-title": "Eur J Hum Genet EJHG",
+      "key": "481_CR18",
+      "unstructured": "Wettstein S, Underhaug J, Perez B, Marsden BD, Yue WW, Martinez A, Blau N. Linking genotypes database with locus-specific database and genotype–phenotype correlation in phenylketonuria. Eur J Hum Genet EJHG. 2015;23(3):302–9.",
+      "volume": "23",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.gene.2013.07.079",
+      "author": "T Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "80",
+      "issue": "1",
+      "journal-title": "Gene",
+      "key": "481_CR19",
+      "unstructured": "Zhu T, Ye J, Han L, Qiu W, Zhang H, Liang L, Gu X. Variations in genotype–phenotype correlations in phenylalanine hydroxylase deficiency in Chinese Han population. Gene. 2013;529(1):80–7.",
+      "volume": "529",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.4238/vol9-1gmr670",
+      "author": "LL Santos",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genet Mol Res GMR",
+      "key": "481_CR20",
+      "unstructured": "Santos LL, Fonseca CG, Starling AL, Januário JN, Aguiar MJ, Peixoto MG, Carvalho MR. Variations in genotype–phenotype correlations in phenylketonuria patients. Genet Mol Res GMR. 2010;9(1):1–8.",
+      "volume": "9",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/humu.10200",
+      "author": "CR Scriver",
+      "doi-asserted-by": "publisher",
+      "first-page": "333",
+      "issue": "4",
+      "journal-title": "Hum Mutat",
+      "key": "481_CR21",
+      "unstructured": "Scriver CR, Hurtubise M, Konecki D, Phommarinh M, Prevost L, Erlandsen H, Stevens R, Waters PJ, Ryan S, McDonald D, et al. PAHdb 2003: what a locus-specific knowledgebase can do. Hum Mutat. 2003;21(4):333–44.",
+      "volume": "21",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1586/14737159.2014.923760",
+      "author": "N Blau",
+      "doi-asserted-by": "publisher",
+      "first-page": "655",
+      "issue": "6",
+      "journal-title": "Expert Rev Mol Diagn",
+      "key": "481_CR22",
+      "unstructured": "Blau N, Shen N, Carducci C. Molecular genetics and diagnosis of phenylketonuria: state of the art. Expert Rev Mol Diagn. 2014;14(6):655–71.",
+      "volume": "14",
+      "year": "2014"
+    },
+    {
+      "author": "S Kaufman",
+      "first-page": "245",
+      "journal-title": "Adv Enzymol Relat Areas Mol Biol",
+      "key": "481_CR23",
+      "unstructured": "Kaufman S. The phenylalanine hydroxylating system from mammalian liver. Adv Enzymol Relat Areas Mol Biol. 1971;35:245–319.",
+      "volume": "35",
+      "year": "1971"
+    },
+    {
+      "DOI": "10.1002/humu.20366",
+      "author": "B Thöny",
+      "doi-asserted-by": "publisher",
+      "first-page": "870",
+      "issue": "9",
+      "journal-title": "Hum Mutat",
+      "key": "481_CR24",
+      "unstructured": "Thöny B, Blau N. Mutations in the BH4-metabolizing genes GTP cyclohydrolase I, 6-pyruvoyl-tetrahydropterin synthase, sepiapterin reductase, carbinolamine-4a-dehydratase, and dihydropteridine reductase. Hum Mutat. 2006;27(9):870–8.",
+      "volume": "27",
+      "year": "2006"
+    },
+    {
+      "key": "481_CR25",
+      "unstructured": "Blau N. Disorder of tetrahydrobiopterin and related biogenic amines. In: The metabolic and molecular bases of inherited disease. 2000."
+    },
+    {
+      "DOI": "10.1086/321970",
+      "author": "L Bonafé",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "issue": "2",
+      "journal-title": "Am J Hum Genet",
+      "key": "481_CR26",
+      "unstructured": "Bonafé L, Thöny B, Penzien JM, Czarnecki B, Blau N. Mutations in the sepiapterin reductase gene cause a novel tetrahydrobiopterin-dependent monoamine-neurotransmitter deficiency without hyperphenylalaninemia. Am J Hum Genet. 2001;69(2):269–77.",
+      "volume": "69",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/ng1194-236",
+      "author": "H Ichinose",
+      "doi-asserted-by": "publisher",
+      "first-page": "236",
+      "issue": "3",
+      "journal-title": "Nat Genet",
+      "key": "481_CR27",
+      "unstructured": "Ichinose H, Ohye T, Takahashi E, Seki N, Hori T, Segawa M, Nomura Y, Endo K, Tanaka H, Tsuji S, et al. Hereditary progressive dystonia with marked diurnal fluctuation caused by mutations in the GTP cyclohydrolase I gene. Nat Genet. 1994;8(3):236–42.",
+      "volume": "8",
+      "year": "1994"
+    }
+  ],
+  "reference-count": 27,
+  "references-count": 27,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00481-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Allelic phenotype prediction of phenylketonuria based on the machine learning method"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

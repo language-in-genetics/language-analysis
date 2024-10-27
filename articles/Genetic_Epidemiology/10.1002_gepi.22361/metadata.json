@@ -1,0 +1,511 @@
+{
+  "DOI": "10.1002/gepi.22361",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22361",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn this paper, we develop TWO‐SIGMA, a TWO‐component SInGle cell Model‐based Association method for differential expression (DE) analyses in single‐cell RNA‐seq (scRNA‐seq) data. The first component models the probability of “drop‐out” with a mixed‐effects logistic regression model and the second component models the (conditional) mean expression with a mixed‐effects negative binomial regression model. TWO‐SIGMA is extremely flexible in that it: (i) does not require a log‐transformation of the outcome, (ii) allows for overdispersed and zero‐inflated counts, (iii) accommodates a correlation structure between cells from the same individual via random effect terms, (iv) can analyze unbalanced designs (in which the number of cells does not need to be identical for all samples), (v) can control for additional sample‐level and cell‐level covariates including batch effects, (vi) provides interpretable effect size estimates, and (vii) enables general tests of DE beyond two‐group comparisons. To our knowledge, TWO‐SIGMA is the only method for analyzing scRNA‐seq data that can simultaneously accomplish each of these features. Simulations studies show that TWO‐SIGMA outperforms alternative regression‐based approaches in both type‐I error control and power enhancement when the data contains even moderate within‐sample correlation. A real data analysis using pancreas islet single‐cells exhibits the flexibility of TWO‐SIGMA and demonstrates that incorrectly failing to include random effect terms can have dramatic impacts on scientific conclusions. TWO‐SIGMA is implemented in the R package \u003cjats:styled-content\u003etwosigma\u003c/jats:styled-content\u003e available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/edvanburen/twosigma\"\u003ehttps://github.com/edvanburen/twosigma\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22361"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-02-13"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-09-03"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-09-29"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics The University of North Carolina at Chapel Hill Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Van Buren",
+      "given": "Eric",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Quantitative Health Sciences, Lerner Research Institute Cleveland Clinic Foundation Cleveland Ohio USA"
+        }
+      ],
+      "family": "Hu",
+      "given": "Ming",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics, School of Medicine Case Western Reserve University Cleveland Ohio USA"
+        }
+      ],
+      "family": "Weng",
+      "given": "Chen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics, School of Medicine Case Western Reserve University Cleveland Ohio USA"
+        }
+      ],
+      "family": "Jin",
+      "given": "Fulai",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics, School of Medicine Case Western Reserve University Cleveland Ohio USA"
+        }
+      ],
+      "family": "Li",
+      "given": "Yan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics The University of North Carolina at Chapel Hill Chapel Hill North Carolina USA"
+        },
+        {
+          "name": "Division of Oral and Craniofacial Health Sciences, Adams School of Dentistry The University of North Carolina at Chapel Hill  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Wu",
+      "given": "Di",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9275-4189",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics The University of North Carolina at Chapel Hill Chapel Hill North Carolina USA"
+        },
+        {
+          "name": "Department of Genetics The University of North Carolina at Chapel Hill  Chapel Hill North Carolina USA"
+        },
+        {
+          "name": "Department of Computer Science The University of North Carolina at Chapel Hill  Chapel Hill North Carolina USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Li",
+      "given": "Yun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        29
+      ]
+    ],
+    "date-time": "2020-09-29T11:13:49Z",
+    "timestamp": 1601378029000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        24
+      ]
+    ],
+    "date-time": "2023-08-24T07:16:29Z",
+    "timestamp": 1692861389000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000072",
+      "award": [
+        "R03DE028983"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Dental and Craniofacial Research"
+    },
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "R01DK113185",
+        "U54DK107977"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01HG009658"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "R01HL129132"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100009633",
+      "award": [
+        "U54HD079124"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Eunice Kennedy Shriver National Institute of Child Health and Human Development"
+    },
+    {
+      "DOI": "10.13039/100000057",
+      "award": [
+        "R01GM105785"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of General Medical Sciences"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:55:16Z",
+    "timestamp": 1709254516820
+  },
+  "is-referenced-by-count": 10,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        29
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          3
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            29
+          ]
+        ],
+        "date-time": "2020-09-29T00:00:00Z",
+        "timestamp": 1601337600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22361",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22361",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22361",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "142-153",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        29
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        29
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        3
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "author": "Agresti A.",
+      "key": "e_1_2_8_2_1",
+      "volume-title": "Categorical data analysis",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.32614/RJ-2017-066",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2019.02.043",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1186/s13059-015-0844-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "author": "Fitzmaurice G. M.",
+      "key": "e_1_2_8_7_1",
+      "volume-title": "Applied longitudinal analysis",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.2000.01030.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxx053",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_9_1",
+      "unstructured": "Hicks S. C. Teng M. \u0026Irizarry R. A.(2015). On the widespread and critical impact of systematic bias and batch effects in single‐cell RNA‐seq data.Biostatistics 19(4) 562–578."
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxx053",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2967",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1186/s13059-016-1077-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.2307/1269547",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1101/gr.212720.116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1186/s13059-014-0550-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.15252/msb.20188746",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1101/404962",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_17_1",
+      "unstructured": "Lun A.(2018). Overcoming systematic errors caused by log‐transformation of normalized single‐cell rna sequencing data.bioRxiv."
+    },
+    {
+      "DOI": "10.1093/nar/gks042",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty332",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1191/1471082X05st084oa",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1186/s13059-015-0805-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1159/000338992",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1038/s41467-017-02554-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.4612",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1111/biom.12492",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1101/574574",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_26_1",
+      "unstructured": "Townes F. W. Hicks S. C. Aryee M. J. \u0026Irizarry R. A.(2019). Feature selection and dimension reduction for single cell RNA‐seq based on a multinomial model.bioRxiv."
+    },
+    {
+      "DOI": "10.1186/s13059-018-1406-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1186/s13059-018-1406-4",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_8_28_1",
+      "unstructured": "Van den Berge K. Soneson C. Love M. I. Robinson M. D. \u0026Clement L.(2018). zinger: Unlocking rna‐seq tools for zero‐inflation and single cell applications.Genome Biology 19 24."
+    },
+    {
+      "DOI": "10.1186/s12859-019-2599-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1038/nbt.2642",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "author": "Zhang D.",
+      "first-page": "19",
+      "key": "e_1_2_8_31_1",
+      "volume-title": "Variance component testing in generalized linear mixed models for longitudinal/clustered data and other related topics",
+      "year": "2008"
+    }
+  ],
+  "reference-count": 30,
+  "references-count": 30,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/709238",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22361"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "TWO‐SIGMA: A novel two‐component single cell model‐based association method for single‐cell RNA‐seq data"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

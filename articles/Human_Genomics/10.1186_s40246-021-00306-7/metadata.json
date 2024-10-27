@@ -1,0 +1,910 @@
+{
+  "DOI": "10.1186/s40246-021-00306-7",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00306-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe severity of coronavirus disease 2019 (COVID-19) caused by the severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is highly heterogeneous. Studies have reported that males and some ethnic groups are at increased risk of death from COVID-19, which implies that individual risk of death might be influenced by host genetic factors.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn this project, we consider the mortality as the trait of interest and perform a genome-wide association study (GWAS) of data for 1778 infected cases (445 deaths, 25.03%) distributed by the UK Biobank. Traditional GWAS fails to identify any genome-wide significant genetic variants from this dataset. To enhance the power of GWAS and account for possible multi-loci interactions, we adopt the concept of super variant for the detection of genetic factors. A discovery-validation procedure is used for verifying the potential associations.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe find 8 super variants that are consistently identified across multiple replications as susceptibility loci for COVID-19 mortality. The identified risk factors on chromosomes 2, 6, 7, 8, 10, 16, and 17 contain genetic variants and genes related to cilia dysfunctions (\u003cjats:italic\u003eDNAH7\u003c/jats:italic\u003e and \u003cjats:italic\u003eCLUAP1\u003c/jats:italic\u003e), cardiovascular diseases (\u003cjats:italic\u003eDES\u003c/jats:italic\u003e and \u003cjats:italic\u003eSPEG\u003c/jats:italic\u003e), thromboembolic disease (\u003cjats:italic\u003eSTXBP5\u003c/jats:italic\u003e), mitochondrial dysfunctions (\u003cjats:italic\u003eTOMM7\u003c/jats:italic\u003e), and innate immune system (\u003cjats:italic\u003eWSB1\u003c/jats:italic\u003e). It is noteworthy that \u003cjats:italic\u003eDNAH7\u003c/jats:italic\u003e has been reported recently as the most downregulated gene after infecting human bronchial epithelial cells with SARS-CoV-2.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eEight genetic variants are identified to significantly increase the risk of COVID-19 mortality among the patients with white British ancestry. These findings may provide timely clues and potential directions for better understanding the molecular pathogenesis of COVID-19 and the genetic basis of heterogeneous susceptibility, with potential impact on new therapeutic options.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "306"
+  ],
+  "article-number": "10",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "22 October 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "15 January 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "3 February 2021"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Ethical approval and participant consent were collected by UK Biobank at the time participants enrolled. This paper is an analysis of anonymized data provided by UK Biobank. According to Yale IRB, analysis of anonymized data does not constitute Human Subjects Research."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Hu",
+      "given": "Jianchang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Cai",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Shiying",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Ting",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0688-4076",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Zhang",
+      "given": "Heping",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        3
+      ]
+    ],
+    "date-time": "2021-02-03T12:06:26Z",
+    "timestamp": 1612353986000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        3
+      ]
+    ],
+    "date-time": "2021-02-03T12:14:19Z",
+    "timestamp": 1612354459000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01HG010171"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000025",
+      "award": [
+        "R01MH116527"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Mental Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T00:53:53Z",
+    "timestamp": 1714524833089
+  },
+  "is-referenced-by-count": 69,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            2,
+            3
+          ]
+        ],
+        "date-time": "2021-02-03T00:00:00Z",
+        "timestamp": 1612310400000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            2,
+            3
+          ]
+        ],
+        "date-time": "2021-02-03T00:00:00Z",
+        "timestamp": 1612310400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-021-00306-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-021-00306-7/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-021-00306-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        2,
+        3
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1056/NEJMoa2001017",
+      "author": "N Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "727",
+      "journal-title": "N Engl J Med.",
+      "key": "306_CR1",
+      "unstructured": "Zhu N, et al. A novel coronavirus from patients with pneumonia in China, 2019. N Engl J Med. 2020;382:727–33.",
+      "volume": "382",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(20)30183-5",
+      "author": "C Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "497",
+      "issue": "10223",
+      "journal-title": "Lancet",
+      "key": "306_CR2",
+      "unstructured": "Huang C, et al. Clinical features of patients infected with 2019 novel coronavirus in Wuhan, China. Lancet. 2020;395(10223):497–506.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S1473-3099(20)30120-1",
+      "author": "E Dong",
+      "doi-asserted-by": "publisher",
+      "first-page": "533",
+      "issue": "5",
+      "journal-title": "Lancet Infect Dis",
+      "key": "306_CR3",
+      "unstructured": "Dong E, Du H, Gardner L. An interactive web-based dashboard to track COVID-19 in real time. Lancet Infect Dis. 2020;20(5):533–4.",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(20)30360-3",
+      "author": "H Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "809",
+      "issue": "10226",
+      "journal-title": "Lancet",
+      "key": "306_CR4",
+      "unstructured": "Chen H, et al. Clinical characteristics and intrauterine vertical transmission potential of COVID-19 infection in nine pregnant women: a retrospective review of medical records. Lancet. 2020;395(10226):809–15.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(20)30211-7",
+      "author": "N Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "507",
+      "issue": "10223",
+      "journal-title": "Lancet",
+      "key": "306_CR5",
+      "unstructured": "Chen N, et al. Epidemiological and clinical characteristics of 99 cases of 2019 novel coronavirus pneumonia in Wuhan, China: a descriptive study. Lancet. 2020;395(10223):507–13.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2002032",
+      "author": "W-j Guan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1708",
+      "issue": "18",
+      "journal-title": "N Engl J Med",
+      "key": "306_CR6",
+      "unstructured": "Guan W-j, et al. Clinical characteristics of coronavirus disease 2019 in China. N Engl J Med. 2020;382(18):1708–20.",
+      "volume": "382",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1001/jama.2020.1585",
+      "author": "D Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1061",
+      "issue": "11",
+      "journal-title": "Jama",
+      "key": "306_CR7",
+      "unstructured": "Wang D, et al. Clinical characteristics of 138 hospitalized patients with 2019 novel coronavirus–infected pneumonia in Wuhan, China. Jama. 2020;323(11):1061–9.",
+      "volume": "323",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/bmj.m606",
+      "author": "XW Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "m606",
+      "journal-title": "BMJ",
+      "key": "306_CR8",
+      "unstructured": "Xu XW, et al. Clinical findings in a group of patients infected with the 2019 novel coronavirus (SARS-Cov-2) outside of Wuhan, China: retrospective case series. BMJ. 2020;368:m606.",
+      "volume": "368",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1001/jama.2020.6130",
+      "author": "A Pan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1915",
+      "issue": "19",
+      "journal-title": "JAMA",
+      "key": "306_CR9",
+      "unstructured": "Pan A, et al. Association of public health interventions with the epidemiology of the COVID-19 outbreak in Wuhan, China. JAMA. 2020;323(19):1915–23.",
+      "volume": "323",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2001316",
+      "author": "Q Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1199",
+      "journal-title": "N Engl J Med.",
+      "key": "306_CR10",
+      "unstructured": "Li Q, et al. Early transmission dynamics in Wuhan, China, of novel coronavirus–infected pneumonia. N Engl J Med. 2020;382:1199–207.",
+      "volume": "382",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2521-4",
+      "author": "EJ Williamson",
+      "doi-asserted-by": "publisher",
+      "first-page": "430",
+      "issue": "7821",
+      "journal-title": "Nature",
+      "key": "306_CR11",
+      "unstructured": "Williamson EJ, et al. Factors associated with COVID-19-related death using OpenSAFELY. Nature. 2020;584(7821):430–6.",
+      "volume": "584",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(20)30251-8",
+      "author": "R Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "565",
+      "issue": "10224",
+      "journal-title": "Lancet",
+      "key": "306_CR12",
+      "unstructured": "Lu R, et al. Genomic characterisation and epidemiology of 2019 novel coronavirus: implications for virus origins and receptor binding. Lancet. 2020;395(10224):565–74.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2020283",
+      "author": "GG Severe Covid",
+      "doi-asserted-by": "publisher",
+      "first-page": "1522",
+      "issue": "16",
+      "journal-title": "N Engl J Med",
+      "key": "306_CR13",
+      "unstructured": "Severe Covid GG, et al. Genomewide association study of severe covid-19 with respiratory failure. N Engl J Med. 2020;383(16):1522–34.",
+      "volume": "383",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41431-020-0636-6",
+      "author": "C-HG Initiative",
+      "doi-asserted-by": "publisher",
+      "first-page": "715",
+      "issue": "6",
+      "journal-title": "Eur J Hum Genet",
+      "key": "306_CR14",
+      "unstructured": "Initiative C-HG. The COVID-19 host genetics initiative, a global initiative to elucidate the role of host genetic factors in susceptibility and severity of the SARS-CoV-2 virus pandemic. Eur J Hum Genet. 2020;28(6):715–8.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/bmj.m1985",
+      "author": "AB Docherty",
+      "doi-asserted-by": "publisher",
+      "first-page": "m1985",
+      "journal-title": "BMJ",
+      "key": "306_CR15",
+      "unstructured": "Docherty AB, et al. Features of 20 133 UK patients in hospital with covid-19 using the ISARIC WHO clinical characterisation protocol: prospective observational cohort study. BMJ. 2020;369:m1985.",
+      "volume": "369",
+      "year": "2020"
+    },
+    {
+      "author": "AP Stoian",
+      "first-page": "e13666",
+      "journal-title": "Int J Clin Pract",
+      "key": "306_CR16",
+      "unstructured": "Stoian AP, et al. Gender differences in the battle against COVID-19: impact of genetics, comorbidities, inflammation and lifestyle on differences in outcomes. Int J Clin Pract. 2020;75:e13666.",
+      "volume": "75",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.jaccas.2020.04.027",
+      "author": "G Sharma",
+      "doi-asserted-by": "publisher",
+      "first-page": "1407",
+      "issue": "9",
+      "journal-title": "JACC Case Rep",
+      "key": "306_CR17",
+      "unstructured": "Sharma G, Volgman AS, Michos ED. Sex differences in mortality from COVID-19 pandemic: are men vulnerable and women protected? JACC Case Rep. 2020;2(9):1407–10.",
+      "volume": "2",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fpubh.2020.00152",
+      "author": "J-M Jin",
+      "doi-asserted-by": "publisher",
+      "first-page": "152",
+      "journal-title": "Front Public Health",
+      "key": "306_CR18",
+      "unstructured": "Jin J-M, et al. Gender differences in patients with COVID-19: focus on severity and mortality. Front Public Health. 2020;8:152.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(20)30922-3",
+      "author": "M Pareek",
+      "doi-asserted-by": "publisher",
+      "first-page": "1421",
+      "issue": "10234",
+      "journal-title": "Lancet",
+      "key": "306_CR19",
+      "unstructured": "Pareek M, et al. Ethnicity and COVID-19: an urgent public health research priority. Lancet. 2020;395(10234):1421–2.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.12688/wellcomeopenres.15922.2",
+      "author": "RW Aldridge",
+      "doi-asserted-by": "publisher",
+      "first-page": "88",
+      "issue": "88",
+      "journal-title": "Wellcome Open Research",
+      "key": "306_CR20",
+      "unstructured": "Aldridge RW, et al. Black, Asian and minority ethnic groups in England are at increased risk of death from COVID-19: indirect standardisation of NHS mortality data. Wellcome Open Research. 2020;5(88):88.",
+      "volume": "5",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001779",
+      "doi-asserted-by": "crossref",
+      "key": "306_CR21",
+      "unstructured": "Sudlow C, et al. UK Biobank: an open access resource for identifying the causes of a wide range of complex diseases of middle and old age. PLoS Med. 2015;12(3):e1001779."
+    },
+    {
+      "DOI": "10.1099/mgen.0.000397",
+      "doi-asserted-by": "crossref",
+      "key": "306_CR22",
+      "unstructured": "Armstrong J, et al. Dynamic linkage of covid-19 test results between public health England’s second generation surveillance system and UK Biobank. Microbial genomics. 2020;6(7):mgen000397."
+    },
+    {
+      "DOI": "10.1002/gepi.21843",
+      "author": "C Song",
+      "doi-asserted-by": "publisher",
+      "first-page": "552",
+      "issue": "6",
+      "journal-title": "Genet Epidemiol",
+      "key": "306_CR23",
+      "unstructured": "Song C, Zhang H. TARV: tree-based analysis of rare variants identifying risk modifying variants in CTNNA2 and CNTNAP2 for alcohol addiction. Genet Epidemiol. 2014;38(6):552–9.",
+      "volume": "38",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "author": "BE Madsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1000384",
+      "issue": "2",
+      "journal-title": "PLoS Genet",
+      "key": "306_CR24",
+      "unstructured": "Madsen BE, Browning SR. A groupwise association test for rare mutations using a weighted sum statistic. PLoS Genet. 2009;5(2):e1000384.",
+      "volume": "5",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1002/gepi.22350",
+      "author": "J Hu",
+      "doi-asserted-by": "publisher",
+      "first-page": "934",
+      "issue": "8",
+      "journal-title": "Genet Epidemiol",
+      "key": "306_CR25",
+      "unstructured": "Hu J, et al. Supervariants identification for breast cancer. Genet Epidemiol. 2020;44(8):934–47.",
+      "volume": "44",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/978-1-4419-6824-1",
+      "author": "H Zhang",
+      "doi-asserted-by": "publisher",
+      "key": "306_CR26",
+      "unstructured": "Zhang H, Singer BH. Recursive partitioning and applications. New York: Springer-Verlag; 2010.",
+      "volume-title": "Recursive partitioning and applications",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1073/pnas.0709868104",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "19199",
+      "issue": "49",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "306_CR27",
+      "unstructured": "Chen X, et al. A forest-based approach to identifying gene and gene–gene interactions. Proc Natl Acad Sci. 2007;104(49):19199–203.",
+      "volume": "104",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxaa021",
+      "doi-asserted-by": "publisher",
+      "key": "306_CR28",
+      "unstructured": "Chen V, Zhang H. Depth importance in precision medicine (DIPM): a tree-and forest-based method for right-censored survival outcomes. Biostatistics. 2020;kxaa021. https://doi.org/10.1093/biostatistics/kxaa021."
+    },
+    {
+      "DOI": "10.1038/s41576-019-0127-1",
+      "author": "V Tam",
+      "doi-asserted-by": "publisher",
+      "first-page": "467",
+      "issue": "8",
+      "journal-title": "Nat Rev Genet",
+      "key": "306_CR29",
+      "unstructured": "Tam V, et al. Benefits and limitations of genome-wide association studies. Nat Rev Genet. 2019;20(8):467–84.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41577-020-0348-8",
+      "author": "EP Scully",
+      "doi-asserted-by": "publisher",
+      "first-page": "442",
+      "issue": "7",
+      "journal-title": "Nat Rev Immunol",
+      "key": "306_CR30",
+      "unstructured": "Scully EP, et al. Considering how biological sex impacts immune responses and COVID-19 outcomes. Nat Rev Immunol. 2020;20(7):442–7.",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2700-3",
+      "author": "T Takahashi",
+      "doi-asserted-by": "publisher",
+      "first-page": "315",
+      "issue": "7837",
+      "journal-title": "Nature",
+      "key": "306_CR31",
+      "unstructured": "Takahashi T, et al. Sex differences in immune responses that underlie COVID-19 disease outcomes. Nature. 2020;588(7837):315–20.",
+      "volume": "588",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gky1016",
+      "author": "P Rentzsch",
+      "doi-asserted-by": "publisher",
+      "first-page": "D886",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "306_CR32",
+      "unstructured": "Rentzsch P, et al. CADD: predicting the deleteriousness of variants throughout the human genome. Nucleic Acids Res. 2019;47(D1):D886–94.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1074/jbc.M200348200",
+      "author": "YJ Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "17906",
+      "issue": "20",
+      "journal-title": "J Biol Chem",
+      "key": "306_CR33",
+      "unstructured": "Zhang YJ, et al. Identification of dynein heavy chain 7 as an inner arm component of human cilia that is synthesized but not assembled in a case of primary ciliary dyskinesia. J Biol Chem. 2002;277(20):17906–15.",
+      "volume": "277",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.yexcr.2020.112204",
+      "author": "G Nunnari",
+      "doi-asserted-by": "publisher",
+      "first-page": "112204",
+      "issue": "2",
+      "journal-title": "Exp Cell Res",
+      "key": "306_CR34",
+      "unstructured": "Nunnari G, et al. Network perturbation analysis in human bronchial epithelial cells following SARS-CoV2 infection. Exp Cell Res. 2020;395(2):112204.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1073/pnas.1323549111",
+      "author": "T Miyai",
+      "doi-asserted-by": "publisher",
+      "first-page": "11780",
+      "issue": "32",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "306_CR35",
+      "unstructured": "Miyai T, et al. Zinc transporter SLC39A10/ZIP10 facilitates antiapoptotic signaling during early B-cell development. Proc Natl Acad Sci. 2014;111(32):11780–5.",
+      "volume": "111",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1073/pnas.1323557111",
+      "author": "S Hojyo",
+      "doi-asserted-by": "publisher",
+      "first-page": "11786",
+      "issue": "32",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "306_CR36",
+      "unstructured": "Hojyo S, et al. Zinc transporter SLC39A10/ZIP10 controls humoral immunity by modulating B-cell receptor signal strength. Proc Natl Acad Sci. 2014;111(32):11786–91.",
+      "volume": "111",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1073/pnas.1708018114",
+      "author": "H Gao",
+      "doi-asserted-by": "publisher",
+      "first-page": "12940",
+      "issue": "49",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "306_CR37",
+      "unstructured": "Gao H, et al. Metal transporter Slc39a10 regulates susceptibility to inflammatory stimuli by controlling macrophage survival. Proc Natl Acad Sci. 2017;114(49):12940–5.",
+      "volume": "114",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1146/annurev-physiol-021014-071931",
+      "author": "AE Tilley",
+      "doi-asserted-by": "publisher",
+      "first-page": "379",
+      "journal-title": "Annu Rev Physiol",
+      "key": "306_CR38",
+      "unstructured": "Tilley AE, et al. Cilia dysfunction in lung disease. Annu Rev Physiol. 2015;77:379–406.",
+      "volume": "77",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1165/rcmb.2006-0466OC",
+      "author": "AJ Ross",
+      "doi-asserted-by": "publisher",
+      "first-page": "169",
+      "issue": "2",
+      "journal-title": "Am J Respir Cell Mol Biol",
+      "key": "306_CR39",
+      "unstructured": "Ross AJ, et al. Transcriptional profiling of mucociliary differentiation in human airway epithelial cells. Am J Respir Cell Mol Biol. 2007;37(2):169–85.",
+      "volume": "37",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1186/2046-2530-1-20",
+      "author": "RC Pasek",
+      "doi-asserted-by": "publisher",
+      "first-page": "20",
+      "issue": "1",
+      "journal-title": "Cilia",
+      "key": "306_CR40",
+      "unstructured": "Pasek RC, et al. Mammalian Clusterin associated protein 1 is an evolutionarily conserved protein required for ciliogenesis. Cilia. 2012;1(1):20.",
+      "volume": "1",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1007/s12551-018-0429-0",
+      "author": "A Brodehl",
+      "doi-asserted-by": "publisher",
+      "first-page": "983",
+      "issue": "4",
+      "journal-title": "Biophys Rev",
+      "key": "306_CR41",
+      "unstructured": "Brodehl A, Gaertner-Rommel A, Milting H. Molecular insights into cardiomyopathies associated with desmin (DES) mutations. Biophys Rev. 2018;10(4):983–1006.",
+      "volume": "10",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.108.799536",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "261",
+      "issue": "2",
+      "journal-title": "Circulation",
+      "key": "306_CR42",
+      "unstructured": "Liu X, et al. Disruption of striated preferentially expressed gene locus leads to dilated cardiomyopathy in mice. Circulation. 2009;119(2):261.",
+      "volume": "119",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.07.004",
+      "author": "PB Agrawal",
+      "doi-asserted-by": "publisher",
+      "first-page": "218",
+      "issue": "2",
+      "journal-title": "Am J Hum Genet",
+      "key": "306_CR43",
+      "unstructured": "Agrawal PB, et al. SPEG interacts with myotubularin, and its deficiency causes centronuclear myopathy with dilated cardiomyopathy. Am J Hum Genet. 2014;95(2):218–26.",
+      "volume": "95",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1001/jama.2020.4326",
+      "author": "M Arentz",
+      "doi-asserted-by": "publisher",
+      "first-page": "1612",
+      "issue": "16",
+      "journal-title": "Jama",
+      "key": "306_CR44",
+      "unstructured": "Arentz M, et al. Characteristics and outcomes of 21 critically ill patients with COVID-19 in Washington state. Jama. 2020;323(16):1612–4.",
+      "volume": "323",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1001/jamacardio.2020.1017",
+      "author": "T Guo",
+      "doi-asserted-by": "publisher",
+      "first-page": "811",
+      "journal-title": "JAMA Cardiol",
+      "key": "306_CR45",
+      "unstructured": "Guo T, et al. Cardiovascular implications of fatal outcomes of patients with coronavirus disease 2019 (COVID-19). JAMA Cardiol. 2020;5:811.",
+      "volume": "5",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41569-020-0360-5",
+      "author": "Y-Y Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "259",
+      "issue": "5",
+      "journal-title": "Nat Rev Cardiol",
+      "key": "306_CR46",
+      "unstructured": "Zheng Y-Y, et al. COVID-19 and the cardiovascular system. Nat Rev Cardiol. 2020;17(5):259–60.",
+      "volume": "17",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/j.1460-2075.1996.tb00566.x",
+      "author": "A Hönlinger",
+      "doi-asserted-by": "publisher",
+      "first-page": "2125",
+      "issue": "9",
+      "journal-title": "EMBO J",
+      "key": "306_CR47",
+      "unstructured": "Hönlinger A, et al. Tom7 modulates the dynamics of the mitochondrial outer membrane translocase and plays a pathway-related role in protein import. EMBO J. 1996;15(9):2125–37.",
+      "volume": "15",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1172/JCI71245",
+      "author": "Q Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "4503",
+      "issue": "10",
+      "journal-title": "J Clin Invest",
+      "key": "306_CR48",
+      "unstructured": "Zhu Q, et al. Syntaxin-binding protein STXBP5 inhibits endothelial exocytosis and promotes platelet secretion. J Clin Invest. 2014;124(10):4503–16.",
+      "volume": "124",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/jcb.28023",
+      "author": "J Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "7489",
+      "issue": "5",
+      "journal-title": "J Cell Biochem",
+      "key": "306_CR49",
+      "unstructured": "Huang J, et al. Long noncoding RNA STXBP5-AS1 inhibits cell proliferation, migration, and invasion via preventing the PI3K/AKT against STXBP5 expression in non–small-cell lung carcinoma. J Cell Biochem. 2019;120(5):7489–98.",
+      "volume": "120",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.2147/OTT.S194463",
+      "author": "D Cen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1929",
+      "journal-title": "OncoTargets and therapy",
+      "key": "306_CR50",
+      "unstructured": "Cen D, et al. Long noncoding RNA STXBP5-AS1 inhibits cell proliferation, migration, and invasion through inhibiting the PI3K/AKT signaling pathway in gastric cancer cells. OncoTargets and therapy. 2019;12:1929.",
+      "volume": "12",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.cellimm.2011.03.010",
+      "author": "H Nara",
+      "doi-asserted-by": "publisher",
+      "first-page": "54",
+      "issue": "1",
+      "journal-title": "Cell Immunol",
+      "key": "306_CR51",
+      "unstructured": "Nara H, et al. WSB-1, a novel IL-21 receptor binding molecule, enhances the maturation of IL-21 receptor. Cell Immunol. 2011;269(1):54–9.",
+      "volume": "269",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/gerona/glaa183",
+      "doi-asserted-by": "crossref",
+      "key": "306_CR52",
+      "unstructured": "Atkins JL, et al. Preexisting comorbidities predicting COVID-19 and mortality in the UK Biobank community cohort. J Gerontol A Biol Sci Med Sci. 2020;75(11):2224–30."
+    },
+    {
+      "DOI": "10.1164/rccm.202005-1523PP",
+      "author": "N Thakur",
+      "doi-asserted-by": "publisher",
+      "first-page": "943",
+      "issue": "7",
+      "journal-title": "Am J Respir Crit Care Med",
+      "key": "306_CR53",
+      "unstructured": "Thakur N, et al. The structural and social determinants of the racial/ethnic disparities in the US COVID-19 pandemic. What’s our role? Am J Respir Crit Care Med. 2020;202(7):943–9.",
+      "volume": "202",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/geronb/gbaa117",
+      "doi-asserted-by": "publisher",
+      "key": "306_CR54",
+      "unstructured": "Gauthier GR, et al. Exacerbating inequalities: social networks, racial/ethnic disparities, and the COVID-19 pandemic. J Gerontol B Psychol Sci Soc Sci. 2020;gbaa117. https://doi.org/10.1093/geronb/gbaa117."
+    }
+  ],
+  "reference-count": 54,
+  "references-count": 54,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2020.11.05.20226761",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00306-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Genetic variants are identified to increase risk of COVID-19 related mortality from UK Biobank data"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

@@ -1,0 +1,797 @@
+{
+  "DOI": "10.1002/gepi.22344",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22344",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIt is challenging to estimate the phenotypic impact of the structural genome changes known as copy‐number variations (CNVs), since there are many unique CNVs which are nonrecurrent, and most are too rare to be studied individually. In recent work, we found that CNV‐aggregated genomic annotations, that is, specifically the intolerance to mutation as measured by the pLI score (probability of being loss‐of‐function intolerant), can be strong predictors of intellectual quotient (IQ) loss. However, this aggregation method only estimates the individual CNV effects indirectly. Here, we propose the use of hierarchical Bayesian models to directly estimate individual effects of rare CNVs on measures of intelligence. Annotation information on the impact of major mutations in genomic regions is extracted from genomic databases and used to define prior information for the approach we call HBIQ. We applied HBIQ to the analysis of CNV deletions and duplications from three datasets and identified several genomic regions containing CNVs demonstrating significant deleterious effects on IQ, some of which validate previously known associations. We also show that several CNVs were identified as deleterious by HBIQ even if they have a zero pLI score, and the converse is also true. Furthermore, we show that our new model yields higher out‐of‐sample concordance (78%) for predicting the consequences of carrying known recurrent CNVs compared with our previous approach.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22344"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2019-12-05"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-07-21"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-08-11"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-0244-4620",
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute Jewish General Hospital  Montreal Canada"
+        },
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University  Montreal Canada"
+        },
+        {
+          "name": "Centre Hospitalier Universitaire (CHU) Sainte‐Justine  Montreal Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Jiang",
+      "given": "Lai",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4746-6030",
+      "affiliation": [
+        {
+          "name": "Centre Hospitalier Universitaire (CHU) Sainte‐Justine  Montreal Canada"
+        },
+        {
+          "name": "Universite de Montreal  Montreal Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Huguet",
+      "given": "Guillaume",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute Jewish General Hospital  Montreal Canada"
+        },
+        {
+          "name": "Centre Hospitalier Universitaire (CHU) Sainte‐Justine  Montreal Canada"
+        },
+        {
+          "name": "Universite de Montreal  Montreal Canada"
+        }
+      ],
+      "family": "Schramm",
+      "given": "Catherine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University  Montreal Canada"
+        }
+      ],
+      "family": "Ciampi",
+      "given": "Antonio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre Hospitalier Universitaire (CHU) Sainte‐Justine  Montreal Canada"
+        },
+        {
+          "name": "Universite de Montreal  Montreal Canada"
+        },
+        {
+          "name": "Department of Decision Sciences Hautes etudes commerciales de Montreal (HEC)  Montreal Canada"
+        }
+      ],
+      "family": "Main",
+      "given": "Antoine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre Hospitalier Universitaire (CHU) Sainte‐Justine  Montreal Canada"
+        },
+        {
+          "name": "Universite de Montreal  Montreal Canada"
+        }
+      ],
+      "family": "Passo",
+      "given": "Claudine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre Hospitalier Universitaire (CHU) Sainte‐Justine  Montreal Canada"
+        },
+        {
+          "name": "Universite de Montreal  Montreal Canada"
+        }
+      ],
+      "family": "Jean‐Louis",
+      "given": "Martineau",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Centre Hospitalier Universitaire (CHU) Sainte‐Justine  Montreal Canada"
+        },
+        {
+          "name": "Universite de Montreal  Montreal Canada"
+        }
+      ],
+      "family": "Auger",
+      "given": "Maude",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Psychiatry, Psychology, and Neuroscience King's College London  London UK"
+        }
+      ],
+      "family": "Schumann",
+      "given": "Gunter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Psychology, Lothian Birth Cohorts Group, School of Philosophy, Psychology and Language Sciences The University of Edinburgh  Edinburgh UK"
+        },
+        {
+          "name": "Medical Genetics Section, Centre for Genomic Experimental Medicine, MRC Institute of Genetics Molecular Medicine, Western General Hospital The University of Edinburgh  Edinburgh UK"
+        },
+        {
+          "name": "Generation Scotland, Centre for Genomic and Experimental Medicine University of Edinburgh  Edinburgh UK"
+        }
+      ],
+      "family": "Porteous",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6838-8767",
+      "affiliation": [
+        {
+          "name": "Centre Hospitalier Universitaire (CHU) Sainte‐Justine  Montreal Canada"
+        },
+        {
+          "name": "Universite de Montreal  Montreal Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Jacquemont",
+      "given": "Sébastien",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2427-5696",
+      "affiliation": [
+        {
+          "name": "Lady Davis Institute Jewish General Hospital  Montreal Canada"
+        },
+        {
+          "name": "Department of Epidemiology, Biostatistics and Occupational Health McGill University  Montreal Canada"
+        },
+        {
+          "name": "Gerald Bronfman Department of Oncology McGill University  Montreal Canada"
+        },
+        {
+          "name": "Department of Human Genetics McGill University  Montreal Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Greenwood",
+      "given": "Celia M. T.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        12
+      ]
+    ],
+    "date-time": "2020-08-12T05:31:54Z",
+    "timestamp": 1597210314000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        4
+      ]
+    ],
+    "date-time": "2023-09-04T23:11:15Z",
+    "timestamp": 1693869075000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000024",
+      "award": [
+        "PJT‐148620 159734"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Canadian Institutes of Health Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        7
+      ]
+    ],
+    "date-time": "2023-09-07T20:41:54Z",
+    "timestamp": 1694119314488
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        11
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            11
+          ]
+        ],
+        "date-time": "2020-08-11T00:00:00Z",
+        "timestamp": 1597104000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22344",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22344",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22344",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22344",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "825-840",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        11
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        11
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1146/annurev-genet-102209-163421",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1038/nrg2867",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1080/09297040590951587",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1038/nn.2719",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.7326/0003-4819-137-8-200210150-00015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1201/b10905",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.2307/1390675",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1159/000438708",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.18637/jss.v076.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1017/CBO9780511571312",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0288-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1038/ng.3092",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkm076",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2011.06.013",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1146/annurev-psych-120710-100353",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "author": "De Haan L.",
+      "key": "e_1_2_7_17_1",
+      "series-title": "Springer Series in Operations Research and Financial Engineering",
+      "volume-title": "Extreme value theory: An introduction",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1007/BF02922904",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2010.10.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "article-title": "rstanarm: Bayesian applied regression modeling via Stan",
+      "author": "Gabry J.",
+      "issue": "1",
+      "journal-title": "R Package Version",
+      "key": "e_1_2_7_20_1",
+      "volume": "2",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1214/08-AOAS191",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1214/ss/1177011136",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1201/b16018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1214/17-BA1051",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1002/ajmg.b.32637",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a113083",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1093/biomet/57.1.97",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1038/nn.4171",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1038/s41380-017-0005-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1038/s41380-017-0001-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "article-title": "The no‐u‐turn sampler: Adaptively setting path lengths in Hamiltonian Monte Carlo",
+      "author": "Hoffman M. D.",
+      "first-page": "1593",
+      "issue": "1",
+      "journal-title": "Journal of Machine Learning Research",
+      "key": "e_1_2_7_31_1",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1146/annurev-genom-091212-153431",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1001/jamapsychiatry.2018.0039",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "article-title": "Estimating the effect‐size of gene dosage on cognitive ability across the coding genome",
+      "author": "Huguet G.",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_7_34_1",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.intell.2006.10.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1198/jbes.2009.07145",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1093/jb/mvy022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkg129",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "author": "Kaufman A.",
+      "key": "e_1_2_7_39_1",
+      "volume-title": "Assessing adolescent and adult intelligence",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.biopsych.2016.08.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddm376",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "DOI": "10.1038/nature19057",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_43_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1038/mp.2014.145",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    },
+    {
+      "DOI": "10.1038/ng.3725",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_47_1"
+    },
+    {
+      "DOI": "10.1201/b10905-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_48_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001322",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_49_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20402",
+      "article-title": "Asymptotic tests of association with multiple snps in linkage disequilibrium",
+      "author": "Pan W.",
+      "doi-asserted-by": "crossref",
+      "first-page": "497",
+      "issue": "6",
+      "journal-title": "Genetic Epidemiology: The Official Publication of the International Genetic Epidemiology Society",
+      "key": "e_1_2_7_50_1",
+      "volume": "33",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005492",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_51_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.03.018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_52_1"
+    },
+    {
+      "DOI": "10.1038/ng.3285",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_53_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_54_1"
+    },
+    {
+      "DOI": "10.1038/nn.3801",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_55_1"
+    },
+    {
+      "DOI": "10.1038/s41436-019-0686-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_56_1"
+    },
+    {
+      "DOI": "10.1038/ng.3638",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_57_1"
+    },
+    {
+      "DOI": "10.1186/s13039-015-0144-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_58_1"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2015.09.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_59_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0152-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_60_1"
+    },
+    {
+      "DOI": "10.1038/mp.2010.4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_61_1"
+    },
+    {
+      "DOI": "10.1037/0033-2909.86.2.420",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_62_1"
+    },
+    {
+      "DOI": "10.1186/1471-2350-7-74",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_63_1"
+    },
+    {
+      "key": "e_1_2_7_64_1",
+      "unstructured": "Stan(2016).Stan modeling language users guide and reference manual. Technical report."
+    },
+    {
+      "DOI": "10.1002/gepi.21717",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_65_1"
+    },
+    {
+      "DOI": "10.1038/mp.2014.40",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_66_1"
+    },
+    {
+      "DOI": "10.1093/nar/gku1003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_67_1"
+    },
+    {
+      "DOI": "10.1101/gr.6861907",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_68_1"
+    },
+    {
+      "author": "Wechsler D.",
+      "key": "e_1_2_7_69_1",
+      "volume-title": "Wechsler intelligence scale for children",
+      "year": "1949"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a113266",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_70_1"
+    },
+    {
+      "DOI": "10.1186/s13073-017-0498-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_71_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_72_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0016339",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_73_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw500",
+      "article-title": "A novel copy number variants kernel association test with application to autism spectrum disorders studies",
+      "author": "Zhan X.",
+      "doi-asserted-by": "crossref",
+      "first-page": "3603",
+      "issue": "23",
+      "journal-title": "Bioinformatics",
+      "key": "e_1_2_7_74_1",
+      "volume": "32",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 73,
+  "references-count": 73,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22344"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Estimating the effects of copy‐number variants on intelligence using hierarchical Bayesian models"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

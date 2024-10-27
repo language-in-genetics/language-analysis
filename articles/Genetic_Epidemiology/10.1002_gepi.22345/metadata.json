@@ -1,0 +1,448 @@
+{
+  "DOI": "10.1002/gepi.22345",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22345",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMany variants with low frequencies or with low to modest effects likely remain unidentified in genome‐wide association studies (GWAS) because of stringent genome‐wide thresholds for detection. To improve the power of detection, variant prioritization based on their functional annotations and epigenetic landmarks has been used successfully. Here, we propose a novel method of prioritization of a GWAS by exploiting gene‐level knowledge (e.g., annotations to pathways and ontologies) and show that it further improves power. Often, disease associated variants are found near genes that are coinvolved in specific biological pathways relevant to disease process. Utilization of this knowledge to conduct a prioritized scan increases the power to detect loci that map to genes clustered in a few specific pathways. We have developed a computationally scalable framework based on penalized logistic regression (termed \u003cjats:italic\u003eGKnowMTest\u003c/jats:italic\u003e—\u003cjats:italic\u003eG\u003c/jats:italic\u003eenomic \u003cjats:italic\u003eKnow\u003c/jats:italic\u003eledge‐guided \u003cjats:italic\u003eM\u003c/jats:italic\u003eultiplte \u003cjats:italic\u003eTest\u003c/jats:italic\u003eing) to enable a prioritized pathway‐guided GWAS scan with a very large number of gene‐level annotations. We demonstrate that the proposed strategy improves overall power and maintains the Type 1 error globally. Our method works on genome‐wide summary level data and a user‐specified list of pathways (e.g., those extracted from large pathway databases without reference to biology of a specific disease). It automatically reweights the input \u003cjats:italic\u003ep\u003c/jats:italic\u003e values by incorporating the pathway enrichments as “adaptively learned” from the data using a cross‐validation technique to avoid overfitting. We used whole‐genome simulations and some publicly available GWAS data sets to illustrate the application of our method. The \u003cjats:italic\u003eGKnowMTest\u003c/jats:italic\u003e framework has been implemented as a user‐friendly open‐source R package.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22345"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-04-07"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-07-10"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-08-10"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "National Institute of Biomedical Genomics Kalyani India"
+        }
+      ],
+      "family": "Biswas",
+      "given": "Shrayashi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "National Institute of Biomedical Genomics Kalyani India"
+        }
+      ],
+      "family": "Pal",
+      "given": "Soumen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "National Institute of Biomedical Genomics Kalyani India"
+        }
+      ],
+      "family": "Majumder",
+      "given": "Partha P.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8549-1130",
+      "affiliation": [
+        {
+          "name": "National Institute of Biomedical Genomics Kalyani India"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Bhattacharjee",
+      "given": "Samsiddhi",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        11
+      ]
+    ],
+    "date-time": "2020-08-11T06:38:27Z",
+    "timestamp": 1597127907000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        4
+      ]
+    ],
+    "date-time": "2023-09-04T23:11:30Z",
+    "timestamp": 1693869090000
+  },
+  "funder": [
+    {
+      "award": [
+        "IA/I/14/1/501311"
+      ],
+      "name": "The DBT/Wellcome Trust India Alliance"
+    },
+    {
+      "name": "National Institute of Biomedical Genomics"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        9
+      ]
+    ],
+    "date-time": "2024-04-09T10:39:31Z",
+    "timestamp": 1712659171544
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            10
+          ]
+        ],
+        "date-time": "2020-08-10T00:00:00Z",
+        "timestamp": 1597017600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22345",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22345",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22345",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22345",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "841-853",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/75556",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.03.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "key": "e_1_2_7_5_1",
+      "unstructured": "Bush W. S. Dudek S. M. \u0026Ritchie M. D.(2009) Biofilter: A knowledge‐integration system for the multi‐locus analysis of genome‐wide association studies. InPacific Symposium on Biocomputing. Pacific Symposium on Biocomputing(p. 368). NIH Public Access."
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003770",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20542",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "key": "e_1_2_7_8_1",
+      "unstructured": "Efron B.(2005).Local false discovery rates. Division of Biostatistics Stanford University."
+    },
+    {
+      "key": "e_1_2_7_9_1",
+      "unstructured": "Efron B. Turnbull B. \u0026Narasimhan B.(2015).locfdr: Computes local false discovery rates. Retrieved fromhttp://CRAN.R-project.org/package=locfdr"
+    },
+    {
+      "DOI": "10.1038/ng.3528",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1186/1471-2164-15-398",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1007/s00439-013-1377-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1093/nar/28.1.27",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004722",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1101/gr.118992.110",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkw1133",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkj143",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1038/ng.2383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004517",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000888",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.03.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20237",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1214/09-STS289",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddx060",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003449",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1038/ng.3865",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.2337/db11-0415",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1038/ng.3507",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1093/nar/gkt1211",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.06.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1038/ng.609",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1038/nrg2884",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1002383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.08.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0193-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1038/ng.3943",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    }
+  ],
+  "reference-count": 36,
+  "references-count": 36,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22345"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A framework for pathway knowledge driven prioritization in genome‐wide association studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

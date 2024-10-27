@@ -1,0 +1,813 @@
+{
+  "DOI": "10.1186/s40246-020-00270-8",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-020-00270-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eColon adenocarcinoma (COAD) is one of the common gastrointestinal malignant diseases, with high mortality rate and poor prognosis due to delayed diagnosis. This study aimed to construct a prognostic prediction model for patients with colon adenocarcinoma (COAD) recurrence.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eDifferently expressed RNAs (DERs) between recurrence and non-recurrence COAD samples were identified based on expression profile data from the NCBI Gene Expression Omnibus (GEO) repository and The Cancer Genome Atlas (TCGA) database. Then, recurrent COAD discriminating classifier was established using SMV-RFE algorithm, and receiver operating characteristic curve was used to assess the predictive power of classifier. Furthermore, the prognostic prediction model was constructed based on univariate and multivariate Cox regression analysis, and Kaplan-Meier survival curve analysis was used to estimate this model. Furthermore, the co-expression network of DElncRNAs and DEmRNAs was constructed followed by GO and KEGG pathway enrichment analysis.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eA total of 54 optimized signature DElncRNAs were screened and SMV classifier was constructed, which presented a high accuracy to distinguish recurrence and non-recurrence COAD samples. Furthermore, six independent prognostic lncRNAs signatures (LINC00852, ZNF667-AS1, FOXP1-IT1, LINC01560, TAF1A-AS1, and LINC00174) in COAD patients with recurrence were screened, and the prognostic prediction model for recurrent COAD was constructed, which possessed a relative satisfying predicted ability both in the training dataset and validation dataset. Furthermore, the DEmRNAs in the co-expression network were mainly enriched in glycan biosynthesis, cardiac muscle contraction, and colorectal cancer.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur study revealed that six lncRNA signatures acted as an independent prognostic biomarker for patients with COAD recurrence.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "270"
+  ],
+  "article-number": "24",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "9 October 2019"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "13 May 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "10 June 2020"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All authors of this paper consent for publishing the manuscript and figures in the journal."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Jin",
+      "given": "Lipeng",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Chenyao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Tao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Lei",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        10
+      ]
+    ],
+    "date-time": "2020-06-10T12:02:47Z",
+    "timestamp": 1591790567000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        9
+      ]
+    ],
+    "date-time": "2021-06-09T23:24:48Z",
+    "timestamp": 1623281088000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        20
+      ]
+    ],
+    "date-time": "2024-03-20T16:55:12Z",
+    "timestamp": 1710953712038
+  },
+  "is-referenced-by-count": 12,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            10
+          ]
+        ],
+        "date-time": "2020-06-10T00:00:00Z",
+        "timestamp": 1591747200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            10
+          ]
+        ],
+        "date-time": "2020-06-10T00:00:00Z",
+        "timestamp": 1591747200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-020-00270-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-020-00270-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-020-00270-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "author": "RL Siegel",
+      "first-page": "7",
+      "issue": "1",
+      "journal-title": "CA: a cancer journal for clinicians",
+      "key": "270_CR1",
+      "unstructured": "Siegel RL, Miller KD, Jemal A. Cancer statistics, 2019. CA: a cancer journal for clinicians. 2019;69(1):7–34.",
+      "volume": "69",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s10147-019-01485-z",
+      "doi-asserted-by": "crossref",
+      "key": "270_CR2",
+      "unstructured": "Hashiguchi Y, Muro K, Saito Y, Ito Y, Ajioka Y, Hamaguchi T, Hasegawa K, Hotta K, Ishida H, Ishiguro M. Japanese Society for Cancer of the Colon and Rectum (JSCCR) guidelines 2019 for the treatment of colorectal cancer. International journal of clinical oncology. 2019:1–42."
+    },
+    {
+      "DOI": "10.1007/s00432-015-1928-z",
+      "author": "N Vatandoost",
+      "doi-asserted-by": "publisher",
+      "first-page": "341",
+      "issue": "2",
+      "journal-title": "Journal of cancer research and clinical oncology",
+      "key": "270_CR3",
+      "unstructured": "Vatandoost N, Ghanbari J, Mojaver M, Avan A, Ghayour-Mobarhan M, Nedaeinia R, Salehi R. Early detection of colorectal cancer: from conventional methods to novel biomarkers. Journal of cancer research and clinical oncology. 2016;142(2):341–51.",
+      "volume": "142",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1200/JCO.2008.17.7147",
+      "author": "HK Sanoff",
+      "doi-asserted-by": "publisher",
+      "first-page": "5721",
+      "issue": "35",
+      "journal-title": "Journal of Clinical Oncology",
+      "key": "270_CR4",
+      "unstructured": "Sanoff HK, Sargent DJ, Campbell ME, Morton RF, Fuchs CS, Ramanathan RK, Williamson SK, Findlay BP, Pitot HC, Goldberg RM. Five-year data and prognostic factor analysis of oxaliplatin and irinotecan combinations for advanced colorectal cancer: N9741. Journal of Clinical Oncology. 2008;26(35):5721.",
+      "volume": "26",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1037/a0037357",
+      "author": "J Wardle",
+      "doi-asserted-by": "publisher",
+      "first-page": "119",
+      "issue": "2",
+      "journal-title": "American psychologist",
+      "key": "270_CR5",
+      "unstructured": "Wardle J, Robb K, Vernon S, Waller J. Screening for prevention and early diagnosis of cancer. American psychologist. 2015;70(2):119.",
+      "volume": "70",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nrc.2017.99",
+      "author": "E Anastasiadou",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "issue": "1",
+      "journal-title": "Nature Reviews Cancer",
+      "key": "270_CR6",
+      "unstructured": "Anastasiadou E, Jacob LS, Slack FJ. Non-coding RNA networks in cancer. Nature Reviews Cancer. 2018;18(1):5.",
+      "volume": "18",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3192",
+      "author": "MK Iyer",
+      "doi-asserted-by": "publisher",
+      "first-page": "199",
+      "issue": "3",
+      "journal-title": "Nature genetics",
+      "key": "270_CR7",
+      "unstructured": "Iyer MK, Niknafs YS, Malik R, Singhal U, Sahu A, Hosono Y, Barrette TR, Prensner JR, Evans JR, Zhao S. The landscape of long noncoding RNAs in the human transcriptome. Nature genetics. 2015;47(3):199.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-16-2634",
+      "author": "A Bhan",
+      "doi-asserted-by": "publisher",
+      "first-page": "3965",
+      "issue": "15",
+      "journal-title": "Cancer research",
+      "key": "270_CR8",
+      "unstructured": "Bhan A, Soleimani M, Mandal SS. Long noncoding RNA and cancer: a new paradigm. Cancer research. 2017;77(15):3965–81.",
+      "volume": "77",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12967-015-0556-3",
+      "author": "M Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "231",
+      "issue": "1",
+      "journal-title": "Journal of translational medicine",
+      "key": "270_CR9",
+      "unstructured": "Zhou M, Guo M, He D, Wang X, Cui Y, Yang H, Hao D, Sun J. A potential signature of eight long non-coding RNAs predicts survival in patients with non-small cell lung cancer. Journal of translational medicine. 2015;13(1):231.",
+      "volume": "13",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.18632/oncotarget.8653",
+      "author": "M Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "32433",
+      "issue": "22",
+      "journal-title": "Oncotarget",
+      "key": "270_CR10",
+      "unstructured": "Zhou M, Sun Y, Sun Y, Xu W, Zhang Z, Zhao H, Zhong Z, Sun J. Comprehensive analysis of lncRNA expression profiles reveals a novel lncRNA signature to discriminate nonequivalent outcomes in patients with ovarian cancer. Oncotarget. 2016;7(22):32433.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13046-015-0219-5",
+      "author": "M Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "102",
+      "issue": "1",
+      "journal-title": "Journal of experimental \u0026 clinical cancer research",
+      "key": "270_CR11",
+      "unstructured": "Zhou M, Zhao H, Wang Z, Cheng L, Yang L, Shi H, Yang H, Sun J. Identification and validation of potential prognostic lncRNA biomarkers for predicting survival in patients with multiple myeloma. Journal of experimental \u0026 clinical cancer research. 2015;34(1):102.",
+      "volume": "34",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.18632/oncotarget.17924",
+      "author": "J Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "75834",
+      "issue": "44",
+      "journal-title": "Oncotarget",
+      "key": "270_CR12",
+      "unstructured": "Li J, Xue W, Lv J, Han P, Liu Y, Cui B. Identification of potential long non-coding RNA biomarkers associated with the progression of colon cancer. Oncotarget. 2017;8(44):75834.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.18632/oncotarget.14728",
+      "author": "J Luo",
+      "doi-asserted-by": "publisher",
+      "first-page": "22187",
+      "issue": "13",
+      "journal-title": "Oncotarget",
+      "key": "270_CR13",
+      "unstructured": "Luo J, Qu J, Wu D-K, Lu Z-L, Sun Y-S, Qu Q. Long non-coding RNAs: a rising biotarget in colorectal cancer. Oncotarget. 2017;8(13):22187.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.molonc.2014.05.010",
+      "author": "H Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1393",
+      "issue": "8",
+      "journal-title": "Molecular oncology",
+      "key": "270_CR14",
+      "unstructured": "Chen H, Xu J, Hong J, Tang R, Zhang X, Fang J-Y. Long noncoding RNA profiles identify five distinct molecular subtypes of colorectal cancer with clinical relevance. Molecular oncology. 2014;8(8):1393–403.",
+      "volume": "8",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001453",
+      "author": "L Marisa",
+      "doi-asserted-by": "publisher",
+      "issue": "5",
+      "journal-title": "PLoS medicine",
+      "key": "270_CR15",
+      "unstructured": "Marisa L, de Reyniès A, Duval A, Selves J, Gaub MP, Vescovo L, Etienne-Grimaldi M-C, Schiappa R, Guenot D, Ayadi M. Gene expression classification of colon cancer into molecular subtypes: characterization, validation, and prognostic value. PLoS medicine. 2013;10(5):e1001453.",
+      "volume": "10",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1479-7364-8-7",
+      "author": "MW Wright",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "issue": "1",
+      "journal-title": "Human genomics",
+      "key": "270_CR16",
+      "unstructured": "Wright MW. A short guide to long non-coding RNA gene nomenclature. Human genomics. 2014;8(1):7.",
+      "volume": "8",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gkv007",
+      "author": "ME Ritchie",
+      "doi-asserted-by": "publisher",
+      "first-page": "e47",
+      "issue": "7",
+      "journal-title": "Nucleic acids research",
+      "key": "270_CR17",
+      "unstructured": "Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, Smyth GK. Limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic acids research. 2015;43(7):e47.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1073/pnas.95.25.14863",
+      "author": "MB Eisen",
+      "doi-asserted-by": "publisher",
+      "first-page": "14863",
+      "issue": "25",
+      "journal-title": "Proceedings of the National Academy of Sciences",
+      "key": "270_CR18",
+      "unstructured": "Eisen MB, Spellman PT, Brown PO, Botstein D. Cluster analysis and display of genome-wide expression patterns. Proceedings of the National Academy of Sciences. 1998;95(25):14863–8.",
+      "volume": "95",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1186/1471-2229-14-169",
+      "author": "L Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "169",
+      "issue": "1",
+      "journal-title": "BMC plant biology",
+      "key": "270_CR19",
+      "unstructured": "Wang L, Cao C, Ma Q, Zeng Q, Wang H, Cheng Z, Zhu G, Qi J, Ma H, Nian H. RNA-seq analyses of multiple meristems of soybean: novel and alternative transcripts, evolutionary and functional implications. BMC plant biology. 2014;14(1):169.",
+      "volume": "14",
+      "year": "2014"
+    },
+    {
+      "author": "Q Wang",
+      "first-page": "2311",
+      "journal-title": "OncoTargets and therapy",
+      "key": "270_CR20",
+      "unstructured": "Wang Q, Liu X. Screening of feature genes in distinguishing different types of breast cancer using support vector machine. OncoTargets and therapy. 2015;8:2311.",
+      "volume": "8",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/mp.12967",
+      "author": "TM Deist",
+      "doi-asserted-by": "publisher",
+      "first-page": "3449",
+      "issue": "7",
+      "journal-title": "Medical physics",
+      "key": "270_CR21",
+      "unstructured": "Deist TM, Dankers FJ, Valdes G, Wijsman R, Hsu IC, Oberije C, Lustberg T, van Soest J, Hoebers F, Jochems A. Machine learning algorithms for outcome prediction in (chemo) radiotherapy: an empirical comparison of classifiers. Medical physics. 2018;45(7):3449–59.",
+      "volume": "45",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-77",
+      "author": "X Robin",
+      "doi-asserted-by": "publisher",
+      "first-page": "77",
+      "issue": "1",
+      "journal-title": "BMC bioinformatics",
+      "key": "270_CR22",
+      "unstructured": "Robin X, Turck N, Hainard A, Tiberti N, Lisacek F, Sanchez J-C, Müller M. pROC: an open-source package for R and S+ to analyze and compare ROC curves. BMC bioinformatics. 2011;12(1):77.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.18632/oncotarget.10533",
+      "author": "P Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "55343",
+      "issue": "34",
+      "journal-title": "Oncotarget",
+      "key": "270_CR23",
+      "unstructured": "Wang P, Wang Y, Hang B, Zou X, Mao J-H. A novel gene expression-based prognostic scoring system to predict survival in gastric cancer. Oncotarget. 2016;7(34):55343.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0084483",
+      "author": "A Mayr",
+      "doi-asserted-by": "publisher",
+      "issue": "1",
+      "journal-title": "PloS one",
+      "key": "270_CR24",
+      "unstructured": "Mayr A, Schmid M. Boosting the concordance index for survival data—a unified framework to derive and evaluate biomarker combinations. PloS one. 2014;9(1):e84483.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1534/genetics.116.189191",
+      "author": "X Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "89",
+      "issue": "1",
+      "journal-title": "Genetics",
+      "key": "270_CR25",
+      "unstructured": "Zhang X, Li Y, Akinyemiju T, Ojesina AI, Buckhaults P, Liu N, Xu B, Yi N. Pathway-structured predictive model for cancer survival prediction: a two-stage approach. Genetics. 2017;205(1):89–100.",
+      "volume": "205",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr511",
+      "author": "MS Schröder",
+      "doi-asserted-by": "publisher",
+      "first-page": "3206",
+      "issue": "22",
+      "journal-title": "Bioinformatics",
+      "key": "270_CR26",
+      "unstructured": "Schröder MS, Culhane AC, Quackenbush J. Haibe-Kains B: survcomp: an R/Bioconductor package for performance assessment and comparison of survival models. Bioinformatics. 2011;27(22):3206–8.",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1148/radiol.2273011499",
+      "author": "KH Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "617",
+      "issue": "3",
+      "journal-title": "Radiology",
+      "key": "270_CR27",
+      "unstructured": "Zou KH, Tuncali K, Silverman SG. Correlation and simple linear regression. Radiology. 2003;227(3):617–28.",
+      "volume": "227",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/nprot.2008.211",
+      "author": "DW Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "issue": "1",
+      "journal-title": "Nature protocols",
+      "key": "270_CR28",
+      "unstructured": "Huang DW, Sherman BT, Lempicki RA. Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources. Nature protocols. 2009;4(1):44.",
+      "volume": "4",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/gkn923",
+      "author": "DW Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nucleic acids research",
+      "key": "270_CR29",
+      "unstructured": "Huang DW, Sherman BT, Lempicki RA. Bioinformatics enrichment tools: paths toward the comprehensive functional analysis of large gene lists. Nucleic acids research. 2008;37(1):1–13.",
+      "volume": "37",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1007/978-1-4614-0782-9",
+      "doi-asserted-by": "crossref",
+      "key": "270_CR30",
+      "unstructured": "Rodríguez-Ezpeleta N, Hackenberg M, Aransay AM. Bioinformatics for high throughput sequencing. Springer Science \u0026 Business Media. 2011."
+    },
+    {
+      "author": "S Huang",
+      "first-page": "41",
+      "issue": "1",
+      "journal-title": "Cancer Genomics-Proteomics",
+      "key": "270_CR31",
+      "unstructured": "Huang S, Cai N, Pacheco PP, Narrandes S, Wang Y, Xu W. Applications of support vector machine (SVM) learning in cancer genomics. Cancer Genomics-Proteomics. 2018;15(1):41–51.",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/idj.12326",
+      "author": "M Feres",
+      "doi-asserted-by": "publisher",
+      "first-page": "39",
+      "issue": "1",
+      "journal-title": "International dental journal",
+      "key": "270_CR32",
+      "unstructured": "Feres M, Louzoun Y, Haber S, Faveri M, Figueiredo LC, Levin L. Support vector machine-based differentiation between aggressive and chronic periodontitis using microbial profiles. International dental journal. 2018;68(1):39–46.",
+      "volume": "68",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.18632/oncotarget.14441",
+      "author": "Z Bao",
+      "doi-asserted-by": "publisher",
+      "first-page": "10485",
+      "issue": "6",
+      "journal-title": "Oncotarget",
+      "key": "270_CR33",
+      "unstructured": "Bao Z, Zhang W, Dong D. A potential prognostic lncRNA signature for predicting survival in patients with bladder urothelial carcinoma. Oncotarget. 2017;8(6):10485.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/jcb.27791",
+      "author": "M Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "5151",
+      "issue": "4",
+      "journal-title": "J Cell Biochem",
+      "key": "270_CR34",
+      "unstructured": "Jiang M, Wang YR, Xu N, Zhou L, An Q. Long noncoding RNA MEG3 play an important role in osteosarcoma development through sponging microRNAs. J Cell Biochem. 2019;120(4):5151–9.",
+      "volume": "120",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12950-015-0109-9",
+      "author": "J Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Journal of Inflammation",
+      "key": "270_CR35",
+      "unstructured": "Lu J, Chatterjee M, Schmid H, Beck S, Gawaz M. CXCL14 as an emerging immune and inflammatory modulator. Journal of Inflammation. 2016;13(1):1.",
+      "volume": "13",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/1479-5876-11-6",
+      "author": "J Zeng",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "issue": "1",
+      "journal-title": "Journal of translational medicine",
+      "key": "270_CR36",
+      "unstructured": "Zeng J, Yang X, Cheng L, Liu R, Lei Y, Dong D, Li F, Lau QC, Deng L, Nice EC. Chemokine CXCL14 is associated with prognosis in patients with colorectal carcinoma after curative resection. Journal of translational medicine. 2013;11(1):6.",
+      "volume": "11",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/BF00711092",
+      "author": "VE Shashoua",
+      "doi-asserted-by": "publisher",
+      "first-page": "183",
+      "issue": "1",
+      "journal-title": "Cellular and molecular neurobiology",
+      "key": "270_CR37",
+      "unstructured": "Shashoua VE. The role of brain extracellular proteins in neuroplasticity and learning. Cellular and molecular neurobiology. 1985;5(1):183–207.",
+      "volume": "5",
+      "year": "1985"
+    },
+    {
+      "DOI": "10.1136/esmoopen-2018-EACR25.221",
+      "doi-asserted-by": "crossref",
+      "key": "270_CR38",
+      "unstructured": "Gimeno-Valiente F, Riffo-Campos A, Tarazona N, Montón-Bueno J, Gambardella V, Huerta M, Cervantes A, López-Rodas G, Franco L, Castillo J. PO-182 The upregulation of EPDR1 is related to tumour invasiveness in a cohort of localised colorectal cancer patients. In.: BMJ Publishing Group Limited. 2018."
+    },
+    {
+      "key": "270_CR39",
+      "unstructured": "Lee LH, Moh MC, Shen S. A novel Ig-like cell adhesion molecule hepaCAM, frequently lost in diverse human cancers, promotes cell-matrix interactions and inhibits cell growth. In.: AACR. 2007."
+    },
+    {
+      "DOI": "10.3727/096504016X14813914187138",
+      "author": "G H-t",
+      "doi-asserted-by": "publisher",
+      "first-page": "1039",
+      "issue": "7",
+      "journal-title": "Oncology Research Featuring Preclinical and Clinical Cancer Therapeutics",
+      "key": "270_CR40",
+      "unstructured": "H-t G, R-j C, Cheng L, Liu C-Y. Overexpression of hepatocyte cell adhesion molecule (hepaCAM) inhibits the proliferation, migration, and invasion in colorectal cancer cells. Oncology Research Featuring Preclinical and Clinical Cancer Therapeutics. 2017;25(7):1039–46.",
+      "volume": "25",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/glycob/9.11.1213",
+      "author": "Y Ikehara",
+      "doi-asserted-by": "publisher",
+      "first-page": "1213",
+      "issue": "11",
+      "journal-title": "Glycobiology",
+      "key": "270_CR41",
+      "unstructured": "Ikehara Y, Kojima N, Kurosawa N, Kudo T, Kono M, Nishihara S, Issiki S, Morozumi K, Itzkowitz S, Tsuda T. Cloning and expression of a human gene encoding an N-acetylgalactosamine-α2, 6-sialyltransferase (ST6GalNAc I): a candidate for synthesis of cancer-associated sialyl-Tn antigens. Glycobiology. 1999;9(11):1213–24.",
+      "volume": "9",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1093/glycob/cwj033",
+      "author": "S Julien",
+      "doi-asserted-by": "publisher",
+      "first-page": "54",
+      "issue": "1",
+      "journal-title": "Glycobiology",
+      "key": "270_CR42",
+      "unstructured": "Julien S, Adriaenssens E, Ottenberg K, Furlan A, Courtand G, Vercoutter-Edouart A-S, Hanisch F-G, Delannoy P, Le Bourhis X. ST6GalNAc I expression in MDA-MB-231 breast cancer cells greatly modifies their O-glycosylation pattern and enhances their tumourigenicity. Glycobiology. 2005;16(1):54–64.",
+      "volume": "16",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1007/s10585-011-9445-1",
+      "author": "H Ozaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "229",
+      "issue": "3",
+      "journal-title": "Clinical \u0026 experimental metastasis",
+      "key": "270_CR43",
+      "unstructured": "Ozaki H, Matsuzaki H, Ando H, Kaji H, Nakanishi H, Ikehara Y, Narimatsu H. Enhancement of metastatic ability by ectopic expression of ST6GalNAcI on a gastric cancer cell line in a mouse model. Clinical \u0026 experimental metastasis. 2012;29(3):229–38.",
+      "volume": "29",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/1878-0261.12565",
+      "author": "YJYZ Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2375",
+      "issue": "11",
+      "journal-title": "Mol Oncol",
+      "key": "270_CR44",
+      "unstructured": "Li YJYZ, Wang YY, Wang Y. Long noncoding RNA ZNF667-AS1 reduces tumor invasion and metastasis in cervical cancer by counteracting microRNA-93-3p-dependent PEG3 downregulation. Mol Oncol. 2019;13(11):2375–92.",
+      "volume": "13",
+      "year": "2019"
+    },
+    {
+      "author": "ZLS Dong",
+      "first-page": "930",
+      "issue": "12",
+      "journal-title": "Dong Z, Li S, Wu X, Niu Y, Liang X, Yang L, Guo Y, Shen S, Liang J, Guo W",
+      "key": "270_CR45",
+      "unstructured": "Dong ZLS, Wu X, Niu Y, Liang X, Yang L, Guo Y, Shen S, Liang J, Guo W. Aberrant hypermethylation-mediated downregulation of antisense lncRNA ZNF667-AS1 and its sense gene ZNF667 correlate with progression and prognosis of esophageal squamous cell carcinoma. Dong Z, Li S, Wu X, Niu Y, Liang X, Yang L, Guo Y, Shen S, Liang J, Guo W. 2019;10(12):930.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12929-019-0506-0",
+      "author": "WCW Meng",
+      "doi-asserted-by": "publisher",
+      "first-page": "13",
+      "issue": "1",
+      "journal-title": "J Biomed Sci",
+      "key": "270_CR46",
+      "unstructured": "Meng WCW, Zhao L, Chi W, Cao H, Wang B. Aberrant methylation and downregulation of ZNF667-AS1 and ZNF667 promote the malignant progression of laryngeal squamous cell carcinoma. J Biomed Sci. 2019;26(1):13.",
+      "volume": "26",
+      "year": "2019"
+    },
+    {
+      "author": "S Peng",
+      "first-page": "2185",
+      "issue": "3",
+      "journal-title": "Oncol Lett",
+      "key": "270_CR47",
+      "unstructured": "Peng S, Yin X, Zhang Y, Mi W, Li T, Yu Y, Jiang J, Liu Q, Fu Y. Competing endogenous RNA network analysis reveals potential long non-coding RNAs as predictive biomarkers of gastric cancer. Oncol Lett. 2020;19(3):2185–96.",
+      "volume": "19",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/cbf.3498",
+      "doi-asserted-by": "crossref",
+      "key": "270_CR48",
+      "unstructured": "Zhao JTCB, Sun Y, Chi NN, Zhang XM, Sun JB, Chen Y, Xia Y. LINC00174 is an oncogenic lncRNA of hepatocellular carcinoma and regulates miR-320/S100A10 axis. Cell Biochem Funct. 2020."
+    },
+    {
+      "DOI": "10.1016/j.gene.2018.05.001",
+      "author": "YGX Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "64",
+      "journal-title": "Gene",
+      "key": "270_CR49",
+      "unstructured": "Shen YGX, Tan W, Xu T. STAT1-mediated upregulation of lncRNA LINC00174 functions a ceRNA for miR-1910-3p to facilitate colorectal carcinoma progression through regulation of TAZ. Gene. 2018;666:64–71.",
+      "volume": "666",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 49,
+  "references-count": 49,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-020-00270-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A potential prognostic prediction model of colon adenocarcinoma with recurrence based on prognostic lncRNA signatures"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "14"
+}

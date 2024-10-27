@@ -1,0 +1,739 @@
+{
+  "DOI": "10.1038/s41437-020-0329-5",
+  "ISSN": [
+    "0018-067X",
+    "1365-2540"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41437-020-0329-5",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe genetic underpinnings of calf mortality can be partly polygenic and partly due to deleterious effects of recessive lethal alleles. Prediction of the genetic merits of selection candidates should thus take into account both genetic components contributing to calf mortality. However, simultaneously modeling polygenic risk and recessive lethal allele effects in genomic prediction is challenging due to effects that behave differently. In this study, we present a novel approach where mortality risk probabilities from polygenic and lethal allele components are predicted separately to compute the total risk probability of an individual for its future offspring as a basis for selection. We present methods for transforming genomic estimated breeding values of polygenic effect into risk probabilities using normal density and cumulative distribution functions and show computations of risk probability from recessive lethal alleles given sire genotypes and population recessive allele frequencies. Simulated data were used to test the novel approach as implemented in probit, logit, and linear models. In the simulation study, the accuracy of predicted risk probabilities was computed as the correlation between predicted mortality probabilities and observed calf mortality for validation sires. The results indicate that our novel approach can greatly increase the accuracy of selection for mortality traits compared with the accuracy of predictions obtained without distinguishing polygenic and lethal gene effects.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "329"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "21 January 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "2 June 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "2 June 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "12 June 2020"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-4757-3060",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Gebreyesus",
+      "given": "Grum",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7608-7577",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Sahana",
+      "given": "Goutam",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Christian Sørensen",
+      "given": "A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lund",
+      "given": "Mogens S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Su",
+      "given": "Guosheng",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Heredity"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        12
+      ]
+    ],
+    "date-time": "2020-06-12T17:02:44Z",
+    "timestamp": 1591981364000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        20
+      ]
+    ],
+    "date-time": "2023-05-20T21:18:21Z",
+    "timestamp": 1684617501000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100011055",
+      "award": [
+        "34009-16-1101",
+        "34009-16-1101",
+        "34009-16-1101",
+        "34009-16-1101"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Miljø- og Fødevareministeriet"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        28
+      ]
+    ],
+    "date-time": "2024-02-28T23:59:00Z",
+    "timestamp": 1709164740721
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0018-067X"
+    },
+    {
+      "type": "electronic",
+      "value": "1365-2540"
+    }
+  ],
+  "issue": "3",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            12
+          ]
+        ],
+        "date-time": "2020-06-12T00:00:00Z",
+        "timestamp": 1591920000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            12
+          ]
+        ],
+        "date-time": "2020-06-12T00:00:00Z",
+        "timestamp": 1591920000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-0329-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-0329-5",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41437-020-0329-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "155-166",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        6,
+        12
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1177/104063870101300401",
+      "author": "JS Agerholm",
+      "doi-asserted-by": "publisher",
+      "first-page": "283",
+      "issue": "4",
+      "journal-title": "J Vet Diagn Invest",
+      "key": "329_CR1",
+      "unstructured": "Agerholm JS, Bendixen C, Andersen O, Arnbjerg J (2001) Complex vertebral malformation in holstein calves. J Vet Diagn Invest 13(4):283–289",
+      "volume": "13",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/ng.96",
+      "author": "C Charlier",
+      "doi-asserted-by": "publisher",
+      "first-page": "449",
+      "issue": "4",
+      "journal-title": "Nat Genet",
+      "key": "329_CR2",
+      "unstructured": "Charlier C, Coppieters W, Rollin F, Desmecht D, Agerholm JS, Cambisano N et al. (2008) Highly effective SNP-based association mapping and management of recessive defects in livestock. Nat Genet 40(4):449–454. https://doi.org/10.1038/ng.96",
+      "volume": "40",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/s12711-015-0174-9",
+      "author": "JB Cole",
+      "doi-asserted-by": "publisher",
+      "first-page": "94",
+      "issue": "47",
+      "journal-title": "Genet Sel Evol",
+      "key": "329_CR3",
+      "unstructured": "Cole JB (2015) A simple strategy for managing many recessive disorders in a dairy cattle breeding program. Genet Sel Evol 30(47):94. https://doi.org/10.1186/s12711-015-0174-9",
+      "volume": "30",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3168/jds.2015-10777",
+      "author": "JB Cole",
+      "doi-asserted-by": "publisher",
+      "first-page": "7274",
+      "issue": "9",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR4",
+      "unstructured": "Cole JB, Null DJ, VanRaden PM (2016) Phenotypic and genetic effects of recessive haplotypes on yield, longevity, and fertility. J Dairy Sci 99(9):7274–7288. https://doi.org/10.3168/jds.2015-10777",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3168/jds.2008-1762",
+      "author": "JB Cole",
+      "doi-asserted-by": "publisher",
+      "first-page": "2931",
+      "issue": "6",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR5",
+      "unstructured": "Cole JB, VanRaden PM, O’Connell JR, Van Tassell CP, Sonstegard TS, Schnabel RD et al. (2009) Distribution and location of genetic effects for dairy traits. J Dairy Sci 92(6):2931–2946. https://doi.org/10.3168/jds.2008-1762",
+      "volume": "92",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/genetics/35.2.212",
+      "author": "ER Dempster",
+      "doi-asserted-by": "crossref",
+      "first-page": "212",
+      "journal-title": "Genetics",
+      "key": "329_CR6",
+      "unstructured": "Dempster ER, Lerner IM (1950) Heritability of threshold characters. Genetics 35:212–235",
+      "volume": "35",
+      "year": "1950"
+    },
+    {
+      "DOI": "10.1093/hmg/ddp295",
+      "author": "DM Evans",
+      "doi-asserted-by": "publisher",
+      "first-page": "3525",
+      "journal-title": "Hum Mol Genet",
+      "key": "329_CR7",
+      "unstructured": "Evans DM, Visscher PM, Wray NR (2009) Harnessing the information contained within genome-wide association studies to improve individual prediction of complex disease risk. Hum Mol Genet 18:3525–3531. https://doi.org/10.1093/hmg/ddp295",
+      "volume": "18",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/1297-9686-21-4-467",
+      "author": "RL Fernando",
+      "doi-asserted-by": "publisher",
+      "first-page": "467",
+      "journal-title": "Genet Sel Evol",
+      "key": "329_CR8",
+      "unstructured": "Fernando RL (1989) Grossman M. Marker assisted selection using best linear unbiased prediction. Genet Sel Evol 21:467–477",
+      "volume": "21",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0065550",
+      "author": "S Fritz",
+      "doi-asserted-by": "publisher",
+      "issue": "6",
+      "journal-title": "PLoS One",
+      "key": "329_CR9",
+      "unstructured": "Fritz S, Capitan A, Djari A, Rodriguez SC, Barbat A, Baur A et al. (2013) Detection of haplotypes associated with prenatal death in dairy cattle and identification of deleterious mutations in GART, SHBG and SLC37A2. PLoS One 8(6):e65550",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.3168/jds.2010-3227",
+      "author": "B Fuerst-Waltl",
+      "doi-asserted-by": "publisher",
+      "first-page": "5436",
+      "issue": "11",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR10",
+      "unstructured": "Fuerst-Waltl B, Sørensen MK (2010) Genetic analysis of calf and heifer losses in Danish Holstein. J Dairy Sci 93(11):5436–5442. https://doi.org/10.3168/jds.2010-3227",
+      "volume": "93",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.3168/jds.S0022-0302(03)73766-7",
+      "author": "M Hansen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1807",
+      "issue": "5",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR11",
+      "unstructured": "Hansen M, Madsen P, Jensen J, Pedersen J, Christensen LG (2003) Genetic parameters of postnatal mortality in Danish Holstein calves. J Dairy Sci 86(5):1807–1817",
+      "volume": "86",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1017/S0016672308009981",
+      "author": "BJ Hayes",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "issue": "1",
+      "journal-title": "Genet Res",
+      "key": "329_CR12",
+      "unstructured": "Hayes BJ, Visscher PM, Goddard ME (2009) Increased accuracy of artificial selection by using the realized relationship matrix. Genet Res 91(1):47–60. https://doi.org/10.1017/S0016672308009981",
+      "volume": "91",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001139",
+      "author": "BJ Hayes",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Genet",
+      "key": "329_CR13",
+      "unstructured": "Hayes BJ, Pryce J, Chamberlain AJ, Bowman PJ, Goddard ME (2010) Genetic architecture of complex traits and accuracy of genomic prediction: coat colour, milk-fat percentage, and type in Holstein cattle as contrasting model traits. PLoS Genet 6:e1001139",
+      "volume": "6",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.3168/jds.2010-3243",
+      "author": "L Henderson",
+      "doi-asserted-by": "publisher",
+      "first-page": "461",
+      "issue": "1",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR14",
+      "unstructured": "Henderson L, Miglior F, Sewalem A, Kelton D, Robinson A, Leslie KE (2011) Estimation of genetic parameters for measures of calf survival in a population of Holstein heifer calves from a heifer-raising facility in New York State. J Dairy Sci 94(1):461–470. https://doi.org/10.3168/jds.2010-3243",
+      "volume": "94",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/BF00288836",
+      "author": "I Hoeschele",
+      "doi-asserted-by": "publisher",
+      "first-page": "81",
+      "issue": "1",
+      "journal-title": "Theor Appl Genet",
+      "key": "329_CR15",
+      "unstructured": "Hoeschele I (1988) Genetic evaluation with data presenting evidence of mixed major gene and polygenic inheritance. Theor Appl Genet 76(1):81–92. https://doi.org/10.1007/BF00288836",
+      "volume": "76",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1186/s12864-017-4196-2",
+      "author": "JL Hoff",
+      "doi-asserted-by": "publisher",
+      "issue": "1",
+      "journal-title": "BMC Genomics",
+      "key": "329_CR16",
+      "unstructured": "Hoff JL, Decker JE, Schnabel RD, Taylor JF (2017) Candidate lethal haplotypes and causal mutations in Angus cattle. BMC Genomics 18(1):799",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12711-019-0456-8",
+      "author": "M Johnsson",
+      "doi-asserted-by": "publisher",
+      "first-page": "14",
+      "issue": "1",
+      "journal-title": "Genet Sel Evol",
+      "key": "329_CR17",
+      "unstructured": "Johnsson M, Gaynor RC, Jenko J, Gorjanc G, de Koning DJ, Hickey JM (2019) Removal of alleles by genome editing (RAGE) against deleterious load. Genet Sel Evol 51(1):14. https://doi.org/10.1186/s12711-019-0456-8",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004049",
+      "author": "NK Kadri",
+      "doi-asserted-by": "publisher",
+      "issue": "1",
+      "journal-title": "PLoS Genet",
+      "key": "329_CR18",
+      "unstructured": "Kadri NK, Sahana G, Charlier C, Iso-Touru T, Guldbrandtsen B, Karim L et al (2014) A 660-Kb deletion with antagonistic effects on fertility and milk production segregates at high frequency in Nordic Red cattle: additional evidence for the common occurrence of balancing selection in livestock PLoS Genet 10(1):e1004049",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1017/S0016672310000534",
+      "author": "A Legarra",
+      "doi-asserted-by": "publisher",
+      "first-page": "77",
+      "journal-title": "Genet Res",
+      "key": "329_CR19",
+      "unstructured": "Legarra A, Robert-Granié C, Croiseau P, Guillaume F, Fritz S (2011) Improved Lasso for genomic selection. Genet Res 93:77–87",
+      "volume": "93",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.2527/jas.2012-5826",
+      "author": "DA Lourenco",
+      "doi-asserted-by": "publisher",
+      "first-page": "4090",
+      "issue": "9",
+      "journal-title": "J Anim Sci",
+      "key": "329_CR20",
+      "unstructured": "Lourenco DA, Misztal I, Wang H, Aguilar I, Tsuruta S, Bertrand JK (2013) Prediction accuracy for a simulated maternally affected trait of beef cattle using different genomic evaluation models. J Anim Sci 91(9):4090–4098. https://doi.org/10.2527/jas.2012-5826",
+      "volume": "91",
+      "year": "2013"
+    },
+    {
+      "author": "P Madsen",
+      "key": "329_CR21",
+      "unstructured": "Madsen P, Jensen J (2013) A user’s guide to DMU. version 6, release 5.2. Aarhus University Foulum, Denmark",
+      "volume-title": "A user’s guide to DMU. version 6, release 5.2",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1297-9686-17-1-115",
+      "author": "A Meijering",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "issue": "1",
+      "journal-title": "Genet Sel Evol",
+      "key": "329_CR22",
+      "unstructured": "Meijering A, Gianola D (1985) Linear versus nonlinear methods of sire evaluation for categorical traits: a simulation study. Genet Sel Evol 17(1):115–132. https://doi.org/10.1186/1297-9686-17-1-115",
+      "volume": "17",
+      "year": "1985"
+    },
+    {
+      "DOI": "10.1016/j.livsci.2008.06.028.",
+      "author": "LD Pedersen",
+      "doi-asserted-by": "publisher",
+      "first-page": "343",
+      "journal-title": "Livest Sci",
+      "key": "329_CR23",
+      "unstructured": "Pedersen LD, Sørensen AC, Henryon M, Ansari-Mahyari S, Berg P (2009) ADAM: a computer program to simulate selectivebreeding schemes for animals. Livest Sci 121:343–344. https://doi.org/10.1016/j.livsci.2008.06.028.",
+      "volume": "121",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/j.1439-0388.2010.00893.x",
+      "author": "F Peñagaricano",
+      "doi-asserted-by": "publisher",
+      "first-page": "105",
+      "issue": "2",
+      "journal-title": "J Anim Breed Genet",
+      "key": "329_CR24",
+      "unstructured": "Peñagaricano F, Urioste JI, Naya H, de los Campos G, Gianola D (2011) Assessment of poisson, probit and linear models for genetic analysis of presence and number of black spots in Corriedale sheep. J Anim Breed Genet 128(2):105–113. https://doi.org/10.1111/j.1439-0388.2010.00893.x",
+      "volume": "128",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/0047-259X(82)90019-7",
+      "author": "S Portnoy",
+      "doi-asserted-by": "publisher",
+      "first-page": "256",
+      "journal-title": "J Mult Anal",
+      "key": "329_CR25",
+      "unstructured": "Portnoy S (1982) Maximizing the probability of correctly ordering random variables using linear predictors. J Mult Anal 12:256–269",
+      "volume": "12",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.3168/jds.2011-4254",
+      "author": "JE Pryce",
+      "doi-asserted-by": "publisher",
+      "first-page": "377",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR26",
+      "unstructured": "Pryce JE, Hayes BJ, Goddard ME (2012) Novel strategies to minimize progeny inbreeding while maximizing genetic gain using genomic information. J Dairy Sci 95:377–388",
+      "volume": "95",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1023/A:1017507624695",
+      "author": "S Rao",
+      "doi-asserted-by": "publisher",
+      "first-page": "183",
+      "issue": "3",
+      "journal-title": "Genetica",
+      "key": "329_CR27",
+      "unstructured": "Rao S, Xia L (2000) Strategies for genetic mapping of categorical traits. Genetica 109(3):183–197",
+      "volume": "109",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0082909",
+      "author": "G Sahana",
+      "doi-asserted-by": "publisher",
+      "issue": "12",
+      "journal-title": "PLoS One",
+      "key": "329_CR28",
+      "unstructured": "Sahana G, Nielsen US, Aamand GP, Lund MS, Guldbrandtsen B (2013) Novel harmful recessive haplotypes identified for fertility traits in Nordic Holstein cattle. PLoS One 20(12):e82909",
+      "volume": "20",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/s12711-016-0215-z",
+      "author": "G Sahana",
+      "doi-asserted-by": "publisher",
+      "first-page": "35",
+      "journal-title": "Genet Sel Evol",
+      "key": "329_CR29",
+      "unstructured": "Sahana G, Iso-Touru T, Wu X, Nielsen US, de Koning DJ, Lund MS et al. (2016) A 0.5-Mbp deletion on bovine chromosome 23 is a strong candidate for stillbirth in Nordic Red cattle. Genet Sel Evol 48:35",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "author": "D Segelke",
+      "first-page": "85",
+      "journal-title": "Interbull Bull",
+      "key": "329_CR30",
+      "unstructured": "Segelke D, Täubert H, Jansen S, Pausch H, Reinhardt F, Thaller G (2014) Management of genetic characteristics. Interbull Bull 48:85–88",
+      "volume": "48",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1073/pnas.89.19.9225",
+      "author": "DE Shuster",
+      "doi-asserted-by": "publisher",
+      "first-page": "9225",
+      "issue": "19",
+      "journal-title": "Proc Nat Acad Sci USA",
+      "key": "329_CR31",
+      "unstructured": "Shuster DE, Kehrli Jr ME, Ackermann MR, Gilbert RO (1992) Identification and prevalence of a genetic defect that causes leukocyte adhesion deficiency in Holstein cattle. Proc Nat Acad Sci USA 89(19):9225–9229",
+      "volume": "89",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.3168/jds.2019-16974",
+      "doi-asserted-by": "publisher",
+      "key": "329_CR32",
+      "unstructured": "Thomasen JR, Liu H, Sørensen AC (2019) Genotyping more cows increases genetic gain and reduces rate of true inbreeding in a dairy cattle breeding scheme using female reproductive technologies. J Dairy Sci 13. https://doi.org/10.3168/jds.2019-16974."
+    },
+    {
+      "DOI": "10.2527/jas.2005-774",
+      "author": "PN Thompson",
+      "doi-asserted-by": "publisher",
+      "first-page": "2629",
+      "issue": "10",
+      "journal-title": "J Anim Sci",
+      "key": "329_CR33",
+      "unstructured": "Thompson PN, Heesterbeek JA, van Arendonk JA (2006) Changes in disease gene frequency over time with differential genotypic fitness and various control strategies. J Anim Sci 84(10):2629–2635",
+      "volume": "84",
+      "year": "2006"
+    },
+    {
+      "key": "329_CR34",
+      "unstructured": "Van Eenennaam AL, Kinghorn BP (2014) Use of mate selection software to manage lethal recessive conditions in livestock populations. In: Proceedings of the 10th World Congress on Genetics Applied to Livestock Production, Vancouver, 17–22 Aug 2014"
+    },
+    {
+      "DOI": "10.3168/jds.2007-0980",
+      "author": "PM VanRaden",
+      "doi-asserted-by": "publisher",
+      "first-page": "4414",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR35",
+      "unstructured": "VanRaden PM (2008) Efficient methods to compute genomic predictions. J Dairy Sci 91:4414–4423",
+      "volume": "91",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.3168/jds.2011-4624",
+      "author": "PM VanRaden",
+      "doi-asserted-by": "publisher",
+      "first-page": "6153",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR36",
+      "unstructured": "VanRaden PM, Olson KM, Null DJ, Hutchison JL (2011) Harmful recessive effects on fertility detected by absence of homozygous haplotypes. J Dairy Sci 94:6153–6161",
+      "volume": "94",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1101/gr.6665407",
+      "author": "NR Wray",
+      "doi-asserted-by": "publisher",
+      "first-page": "1520",
+      "journal-title": "Genome Res",
+      "key": "329_CR37",
+      "unstructured": "Wray NR, Goddard ME, Visscher PM (2007) Prediction of individual genetic risk to disease from genome-wide association studies. Genome Res 17:1520–1528. https://doi.org/10.1101/gr.6665407",
+      "volume": "17",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1534/genetics.119.301859",
+      "author": "NR Wray",
+      "doi-asserted-by": "publisher",
+      "first-page": "1131",
+      "issue": "4",
+      "journal-title": "Genetics",
+      "key": "329_CR38",
+      "unstructured": "Wray NR, Kemper KE, Hayes BJ, Goddard ME, Visscher PM (2019) Complex trait prediction from genome data: contrasting EBV in livestock to PRS in humans: genomic prediction. Genetics 211(4):1131–1141. https://doi.org/10.1534/genetics.119.301859",
+      "volume": "211",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/genetics/19.6.506",
+      "author": "S Wright",
+      "doi-asserted-by": "publisher",
+      "first-page": "506",
+      "journal-title": "Genetics",
+      "key": "329_CR39",
+      "unstructured": "Wright S (1934) An analysis of variability in number of digits in an inbred strain of guinea pigs. Genetics 19:506",
+      "volume": "19",
+      "year": "1934"
+    },
+    {
+      "DOI": "10.3168/jds.2019-17831",
+      "author": "X Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "4570",
+      "issue": "5",
+      "journal-title": "J Dairy Sci",
+      "key": "329_CR40",
+      "unstructured": "Wu X, Mesbah-Uddin M, Guldbrandtsen B, Lund MS, Sahana G (2020) Novel haplotypes responsible for prenatal death in Nordic Red and Danish Jersey cattle. J Dairy Sci 103(5):4570–4578. https://doi.org/10.3168/jds.2019-17831",
+      "volume": "103",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41437-020-0329-5"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Heredity"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Novel approach to incorporate information about recessive lethal genes increases the accuracy of genomic prediction for mortality traits"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "125"
+}

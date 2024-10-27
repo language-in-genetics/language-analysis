@@ -1,0 +1,865 @@
+{
+  "DOI": "10.1007/s00439-022-02494-1",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-022-02494-1",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eCopy number variants (CNVs) represent major etiologic factors in rare genetic diseases. Current clinical CNV interpretation workflows require extensive back-and-forth with multiple tools and databases. This increases complexity and time burden, potentially resulting in missed genetic diagnoses. We present the Suite for CNV Interpretation and Prioritization (SCIP), a software package for the clinical interpretation of CNVs detected by whole-genome sequencing (WGS). The SCIP Visualization Module near-instantaneously displays all information necessary for CNV interpretation (variant quality, population frequency, inheritance pattern, and clinical relevance) on a single page—supported by modules providing variant filtration and prioritization. SCIP was comprehensively evaluated using WGS data from 1027 families with congenital cardiac disease and/or autism spectrum disorder, containing 187 pathogenic or likely pathogenic (P/LP) CNVs identified in previous curations. SCIP was efficient in filtration and prioritization: a median of just two CNVs per case were selected for review, yet it captured all P/LP findings (92.5% of which ranked 1st). SCIP was also able to identify one pathogenic CNV previously missed. SCIP was benchmarked against AnnotSV and a spreadsheet-based manual workflow and performed superiorly than both. In conclusion, SCIP is a novel software package for efficient clinical CNV interpretation, substantially faster and more accurate than previous tools (available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/qd29/SCIP\"\u003ehttps://github.com/qd29/SCIP\u003c/jats:ext-link\u003e, a video tutorial series is available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://bit.ly/SCIPVideos\"\u003ehttps://bit.ly/SCIPVideos\u003c/jats:ext-link\u003e).\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2494"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "26 May 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "9 October 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "14 November 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "None declared."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Data used in this study were obtained as part of research protocols approved by the Research Ethics Boards at The Hospital for Sick Children (1000053844, 0019980189), the University Health Network (16–6282), and the Mount Sinai Hospital (19–0320-E)."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-1771-2891",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ding",
+      "given": "Qiliang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Somerville",
+      "given": "Cherith",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Manshaei",
+      "given": "Roozbeh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Trost",
+      "given": "Brett",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Reuter",
+      "given": "Miriam S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kalbfleisch",
+      "given": "Kelsey",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stanley",
+      "given": "Kaitlin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Okello",
+      "given": "John B. A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hosseini",
+      "given": "S. Mohsen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liston",
+      "given": "Eriskay",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Curtis",
+      "given": "Meredith",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zarrei",
+      "given": "Mehdi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Higginbotham",
+      "given": "Edward J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chan",
+      "given": "Ada J. S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Engchuan",
+      "given": "Worrawat",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thiruvahindrapuram",
+      "given": "Bhooma",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scherer",
+      "given": "Stephen W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kim",
+      "given": "Raymond H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jobling",
+      "given": "Rebekah K.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        14
+      ]
+    ],
+    "date-time": "2022-11-14T22:07:57Z",
+    "timestamp": 1668463677000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        13
+      ]
+    ],
+    "date-time": "2023-02-13T16:24:17Z",
+    "timestamp": 1676305457000
+  },
+  "funder": [
+    {
+      "name": "Ted Rogers Centre for Heart Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        4
+      ]
+    ],
+    "date-time": "2024-04-04T23:09:58Z",
+    "timestamp": 1712272198332
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "2",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        14
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "2",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            14
+          ]
+        ],
+        "date-time": "2022-11-14T00:00:00Z",
+        "timestamp": 1668384000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            14
+          ]
+        ],
+        "date-time": "2022-11-14T00:00:00Z",
+        "timestamp": 1668384000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02494-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-022-02494-1/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02494-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "201-216",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        14
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        14
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1002/humu.23626",
+      "author": "AN Abou Tayoun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1517",
+      "journal-title": "Hum Mutat",
+      "key": "2494_CR1",
+      "unstructured": "Abou Tayoun AN, Pesaran T, DiStefano MT, Oza A, Rehm HL, Biesecker LG, Harrison SM, Working CSVI, G, (2018) Recommendations for interpreting the loss of function PVS1 ACMG/AMP variant criterion. Hum Mutat 39:1517–1524. https://doi.org/10.1002/humu.23626",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/gr.114876.110",
+      "author": "A Abyzov",
+      "doi-asserted-by": "publisher",
+      "first-page": "974",
+      "journal-title": "Genome Res",
+      "key": "2494_CR2",
+      "unstructured": "Abyzov A, Urban AE, Snyder M, Gerstein M (2011) CNVnator: an approach to discover, genotype, and characterize typical and atypical CNVs from family and population genome sequencing. Genome Res 21:974–984. https://doi.org/10.1101/gr.114876.110",
+      "volume": "21",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/nar/gky1151",
+      "author": "JS Amberger",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1038",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2494_CR3",
+      "unstructured": "Amberger JS, Bocchini CA, Scott AF, Hamosh A (2019) OMIM.org: leveraging knowledge across phenotype-gene relationships. Nucleic Acids Res 47:D1038–D1043. https://doi.org/10.1093/nar/gky1151",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41525-022-00295-z",
+      "author": "CA Austin-Tse",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "journal-title": "NPJ Genom Med",
+      "key": "2494_CR4",
+      "unstructured": "Austin-Tse CA, Jobanputra V, Perry DL, Bick D, Taft RJ, Venner E, Gibbs RA, Young T, Barnett S, Belmont JW, Boczek N, Chowdhury S, Ellsworth KA, Guha S, Kulkarni S, Marcou C, Meng L, Murdock DR, Rehman AU, Spiteri E, Thomas-Wilson A, Kearney HM, Rehm HL (2022) Best practices for the interpretation and reporting of clinical whole genome sequencing. NPJ Genom Med 7:27. https://doi.org/10.1038/s41525-022-00295-z",
+      "volume": "7",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s13059-021-02380-5",
+      "author": "JR Belyeu",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "journal-title": "Genome Biol",
+      "key": "2494_CR5",
+      "unstructured": "Belyeu JR, Chowdhury M, Brown J, Pedersen BS, Cormier MJ, Quinlan AR, Layer RM (2021) Samplot: a platform for structural variant visual validation and automated filtering. Genome Biol 22:161–161. https://doi.org/10.1186/s13059-021-02380-5",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/1750-1172-1-33",
+      "author": "P Cerruti Mainardi",
+      "doi-asserted-by": "publisher",
+      "first-page": "33",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "2494_CR6",
+      "unstructured": "Cerruti Mainardi P (2006) Cri du Chat syndrome. Orphanet J Rare Dis 1:33. https://doi.org/10.1186/1750-1172-1-33",
+      "volume": "1",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv710",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1220",
+      "journal-title": "Bioinformatics",
+      "key": "2494_CR7",
+      "unstructured": "Chen X, Schulz-Trieglaff O, Shaw R, Barnes B, Schlesinger F, Källberg M, Cox AJ, Kruglyak S, Saunders CT (2016) Manta: rapid detection of structural variants and indels for germline and cancer sequencing applications. Bioinformatics 32:1220–1222. https://doi.org/10.1093/bioinformatics/btv710",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2287-8",
+      "author": "RL Collins",
+      "doi-asserted-by": "publisher",
+      "first-page": "444",
+      "journal-title": "Nature",
+      "key": "2494_CR8",
+      "unstructured": "Collins RL, Brand H, Karczewski KJ, Zhao X, Alföldi J, Francioli LC, Khera AV, Lowther C, Gauthier LD, Wang H, Watts NA, Solomonson M, O’Donnell-Luria A, Baumann A, Munshi R, Walker M, Whelan CW, Huang Y, Brookings T, Sharpe T, Stone MR, Valkanas E, Fu J, Tiao G, Laricchia KM, Ruano-Rubio V, Stevens C, Gupta N, Cusick C, Margolin L, Genome Aggregation Database Production T, Genome Aggregation Database C, Taylor KD, Lin HJ, Rich SS, Post WS, Chen Y-DI, Rotter JI, Nusbaum C, Philippakis A, Lander E, Gabriel S, Neale BM, Kathiresan S, Daly MJ, Banks E, MacArthur DG, Talkowski ME (2020) A structural variation reference for medical and population genetics. Nature 581:444–451. https://doi.org/10.1038/s41586-020-2287-8",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/cge.14072",
+      "author": "CIS Costa",
+      "doi-asserted-by": "publisher",
+      "first-page": "134",
+      "journal-title": "Clin Genet",
+      "key": "2494_CR9",
+      "unstructured": "Costa CIS, da Silva Montenegro EM, Zarrei M, de Sá ME, Silva IMW, de Oliveira SM, Wang JYT, Zachi EC, Branco EV, da Costa SS, Lourenço NCV, Vianna-Morgante AM, Rosenberg C, Krepischi ACV, Scherer SW, Passos-Bueno MR (2022) Copy number variations in a Brazilian cohort with autism spectrum disorders highlight the contribution of cell adhesion genes. Clin Genet 101:134–141. https://doi.org/10.1111/cge.14072",
+      "volume": "101",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2329-2",
+      "author": "BB Cummings",
+      "doi-asserted-by": "publisher",
+      "first-page": "452",
+      "journal-title": "Nature",
+      "key": "2494_CR10",
+      "unstructured": "Cummings BB, Karczewski KJ, Kosmicki JA, Seaby EG, Watts NA, Singer-Berk M, Mudge JM, Karjalainen J, Satterstrom FK, O’Donnell-Luria AH, Poterba T, Seed C, Solomonson M, Alföldi J, Genome Aggregation Database Production T, Genome Aggregation Database C, Daly MJ, MacArthur DG (2020) Transcript expression-aware annotation improves rare variant interpretation. Nature 581:452–458. https://doi.org/10.1038/s41586-020-2329-2",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nrg1767",
+      "author": "L Feuk",
+      "doi-asserted-by": "publisher",
+      "first-page": "85",
+      "journal-title": "Nat Rev Genet",
+      "key": "2494_CR11",
+      "unstructured": "Feuk L, Carson AR, Scherer SW (2006) Structural variation in the human genome. Nat Rev Genet 7:85–97. https://doi.org/10.1038/nrg1767",
+      "volume": "7",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.03.010",
+      "author": "HV Firth",
+      "doi-asserted-by": "publisher",
+      "first-page": "524",
+      "journal-title": "Am J Hum Genet",
+      "key": "2494_CR12",
+      "unstructured": "Firth HV, Richards SM, Bevan AP, Clayton S, Corpas M, Rajan D, Van Vooren S, Moreau Y, Pettett RM, Carter NP (2009) DECIPHER: database of chromosomal imbalance and phenotype in humans using ensembl resources. Am J Hum Genet 84:524–533. https://doi.org/10.1016/j.ajhg.2009.03.010",
+      "volume": "84",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/gim.2017.154",
+      "author": "R Flöttmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "599",
+      "journal-title": "Genet Med",
+      "key": "2494_CR13",
+      "unstructured": "Flöttmann R, Kragesteen BK, Geuer S, Socha M, Allou L, Sowińska-Seidler A, Bosquillon de Jarcy L, Wagner J, Jamsheer A, Oehl-Jaschkowitz B, Wittler L, de Silva D, Kurth I, Maya I, Santos-Simarro F, Hülsemann W, Klopocki E, Mountford R, Fryer A, Borck G, Horn D, Lapunzina P, Wilson M, Mascrez B, Duboule D, Mundlos S, Spielmann M (2018) Noncoding copy-number variations are associated with congenital limb malformation. Genet Med 20:599–607. https://doi.org/10.1038/gim.2017.154",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkab402",
+      "author": "V Geoffroy",
+      "doi-asserted-by": "publisher",
+      "first-page": "W21",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2494_CR14",
+      "unstructured": "Geoffroy V, Guignard T, Kress A, Gaillard JB, Solli-Nowlan T, Schalk A, Gatinois V, Dollfus H, Scheidecker S, Muller J (2021) AnnotSV and knotAnnotSV: a web server for human structural variations annotations, ranking and analysis. Nucleic Acids Res 49:W21-w28. https://doi.org/10.1093/nar/gkab402",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41436-018-0295-y",
+      "author": "AM Gross",
+      "doi-asserted-by": "publisher",
+      "first-page": "1121",
+      "journal-title": "Genet Med: off J Am Coll Med Genet",
+      "key": "2494_CR15",
+      "unstructured": "Gross AM, Ajay SS, Rajan V, Brown C, Bluske K, Burns NJ, Chawla A, Coffey AJ, Malhotra A, Scocchia A, Thorpe E, Dzidic N, Hovanes K, Sahoo T, Dolzhenko E, Lajoie B, Khouzam A, Chowdhury S, Belmont J, Roller E, Ivakhno S, Tanner S, McEachern J, Hambuch T, Eberle M, Hagelstrom RT, Bentley DR, Perry DL, Taft RJ (2019) Copy-number variants in clinical genome sequencing: deployment and interpretation for rare and undiagnosed disease. Genet Med: off J Am Coll Med Genet 21:1121–1130. https://doi.org/10.1038/s41436-018-0295-y",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ng.768",
+      "author": "RE Handsaker",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "journal-title": "Nat Genet",
+      "key": "2494_CR16",
+      "unstructured": "Handsaker RE, Korn JM, Nemesh J, McCarroll SA (2011) Discovery and genotyping of genome structural polymorphism by sequencing on a population scale. Nat Genet 43:269–276. https://doi.org/10.1038/ng.768",
+      "volume": "43",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ng1416",
+      "author": "AJ Iafrate",
+      "doi-asserted-by": "publisher",
+      "first-page": "949",
+      "journal-title": "Nat Genet",
+      "key": "2494_CR17",
+      "unstructured": "Iafrate AJ, Feuk L, Rivera MN, Listewnik ML, Donahoe PK, Qi Y, Scherer SW, Lee C (2004) Detection of large-scale variation in the human genome. Nat Genet 36:949–951. https://doi.org/10.1038/ng1416",
+      "volume": "36",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.06.012",
+      "author": "Y-h Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "249",
+      "journal-title": "Am J Hum Genet",
+      "key": "2494_CR18",
+      "unstructured": "Jiang Y-h, Yuen RKC, Jin X, Wang M, Chen N, Wu X, Ju J, Mei J, Shi Y, He M, Wang G, Liang J, Wang Z, Cao D, Carter MT, Chrysler C, Drmic IE, Howe JL, Lau L, Marshall CR, Merico D, Nalpathamkalam T, Thiruvahindrapuram B, Thompson A, Uddin M, Walker S, Luo J, Anagnostou E, Zwaigenbaum L, Ring RH, Wang J, Lajonchere C, Wang J, Shih A, Szatmari P, Yang H, Dawson G, Li Y, Scherer SW (2013) Detection of clinically relevant genetic variants in autism spectrum disorder by whole-genome sequencing. Am J Hum Genet 93:249–263. https://doi.org/10.1016/j.ajhg.2013.06.012",
+      "volume": "93",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "2494_CR19",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, Collins RL, Laricchia KM, Ganna A, Birnbaum DP, Gauthier LD, Brand H, Solomonson M, Watts NA, Rhodes D, Singer-Berk M, England EM, Seaby EG, Kosmicki JA, Walters RK, Tashman K, Farjoun Y, Banks E, Poterba T, Wang A, Seed C, Whiffin N, Chong JX, Samocha KE, Pierce-Hoffman E, Zappala Z, O’Donnell-Luria AH, Minikel EV, Weisburd B, Lek M, Ware JS, Vittal C, Armean IM, Bergelson L, Cibulskis K, Connolly KM, Covarrubias M, Donnelly S, Ferriera S, Gabriel S, Gentry J, Gupta N, Jeandet T, Kaplan D, Llanwarne C, Munshi R, Novod S, Petrillo N, Roazen D, Ruano-Rubio V, Saltzman A, Schleicher M, Soto J, Tibbetts K, Tolonen C, Wade G, Talkowski ME, Genome Aggregation Database C, Neale BM, Daly MJ, MacArthur DG (2020) The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 581:434–443. https://doi.org/10.1038/s41586-020-2308-7",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1153",
+      "author": "MJ Landrum",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1062",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2494_CR20",
+      "unstructured": "Landrum MJ, Lee JM, Benson M, Brown GR, Chao C, Chitipiralla S, Gu B, Hart J, Hoffman D, Jang W, Karapetyan K, Katz K, Liu C, Maddipatla Z, Malheiro A, McDaniel K, Ovetsky M, Riley G, Zhou G, Holmes JB, Kattman BL, Maglott DR (2018) ClinVar: improving access to variant interpretations and supporting evidence. Nucleic Acids Res 46:D1062–D1067. https://doi.org/10.1093/nar/gkx1153",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nature19057",
+      "author": "M Lek",
+      "doi-asserted-by": "publisher",
+      "first-page": "285",
+      "journal-title": "Nature",
+      "key": "2494_CR21",
+      "unstructured": "Lek M, Karczewski KJ, Minikel EV, Samocha KE, Banks E, Fennell T, O’Donnell-Luria AH, Ware JS, Hill AJ, Cummings BB, Tukiainen T, Birnbaum DP, Kosmicki JA, Duncan LE, Estrada K, Zhao F, Zou J, Pierce-Hoffman E, Berghout J, Cooper DN, Deflaux N, DePristo M, Do R, Flannick J, Fromer M, Gauthier L, Goldstein J, Gupta N, Howrigan D, Kiezun A, Kurki MI, Moonshine AL, Natarajan P, Orozco L, Peloso GM, Poplin R, Rivas MA, Ruano-Rubio V, Rose SA, Ruderfer DM, Shakir K, Stenson PD, Stevens C, Thomas BP, Tiao G, Tusie-Luna MT, Weisburd B, Won H-H, Yu D, Altshuler DM, Ardissino D, Boehnke M, Danesh J, Donnelly S, Elosua R, Florez JC, Gabriel SB, Getz G, Glatt SJ, Hultman CM, Kathiresan S, Laakso M, McCarroll S, McCarthy MI, McGovern D, McPherson R, Neale BM, Palotie A, Purcell SM, Saleheen D, Scharf JM, Sklar P, Sullivan PF, Tuomilehto J, Tsuang MT, Watkins HC, Wilson JG, Daly MJ, MacArthur DG, Exome Aggregation C (2016) Analysis of protein-coding genetic variation in 60,706 humans. Nature 536:285–291. https://doi.org/10.1038/nature19057",
+      "volume": "536",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp324",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1754",
+      "journal-title": "Bioinformatics (oxford, England)",
+      "key": "2494_CR22",
+      "unstructured": "Li H, Durbin R (2009) Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics (oxford, England) 25:1754–1760. https://doi.org/10.1093/bioinformatics/btp324",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/gim.2017.119",
+      "author": "AC Lionel",
+      "doi-asserted-by": "publisher",
+      "first-page": "435",
+      "journal-title": "Genet Med: off J Am Coll Med Genet",
+      "key": "2494_CR23",
+      "unstructured": "Lionel AC, Costain G, Monfared N, Walker S, Reuter MS, Hosseini SM, Thiruvahindrapuram B, Merico D, Jobling R, Nalpathamkalam T, Pellecchia G, Sung WWL, Wang Z, Bikangaga P, Boelman C, Carter MT, Cordeiro D, Cytrynbaum C, Dell SD, Dhir P, Dowling JJ, Heon E, Hewson S, Hiraki L, Inbar-Feigenberg M, Klatt R, Kronick J, Laxer RM, Licht C, MacDonald H, Mercimek-Andrews S, Mendoza-Londono R, Piscione T, Schneider R, Schulze A, Silverman E, Siriwardena K, Snead OC, Sondheimer N, Sutherland J, Vincent A, Wasserman JD, Weksberg R, Shuman C, Carew C, Szego MJ, Hayeems RZ, Basran R, Stavropoulos DJ, Ray PN, Bowdin S, Meyn MS, Cohn RD, Scherer SW, Marshall CR (2018) Improved diagnostic yield compared with targeted gene sequencing panels suggests a role for whole-genome sequencing as a first-tier genetic test. Genet Med: off J Am Coll Med Genet 20:435–443. https://doi.org/10.1038/gim.2017.119",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkt958",
+      "author": "JR MacDonald",
+      "doi-asserted-by": "publisher",
+      "first-page": "D986",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2494_CR24",
+      "unstructured": "MacDonald JR, Ziman R, Yuen RKC, Feuk L, Scherer SW (2014) The database of genomic variants: a curated collection of structural variation in the human genome. Nucleic Acids Res 42:D986–D992. https://doi.org/10.1093/nar/gkt958",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41436-021-01242-6",
+      "author": "K Manickam",
+      "doi-asserted-by": "publisher",
+      "first-page": "2029",
+      "journal-title": "Genet Med",
+      "key": "2494_CR25",
+      "unstructured": "Manickam K, McClain MR, Demmer LA, Biswas S, Kearney HM, Malinowski J, Massingham LJ, Miller D, Yu TW, Hisama FM, Directors ABo (2021) Exome and genome sequencing for pediatric patients with congenital anomalies or intellectual disability: an evidence-based clinical guideline of the American college of medical genetics and genomics (ACMG). Genet Med 23:2029–2037. https://doi.org/10.1038/s41436-021-01242-6",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41598-019-42858-8",
+      "author": "JF Markham",
+      "doi-asserted-by": "publisher",
+      "first-page": "6426",
+      "journal-title": "Sci Rep",
+      "key": "2494_CR26",
+      "unstructured": "Markham JF, Yerneni S, Ryland GL, Leong HS, Fellowes A, Thompson ER, De Silva W, Kumar A, Lupat R, Li J, Ellul J, Fox S, Dickinson M, Papenfuss AT, Blombery P (2019) CNspector: a web-based tool for visualisation and clinical diagnosis of copy number variation from next generation sequencing. Sci Rep 9:6426–6426. https://doi.org/10.1038/s41598-019-42858-8",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41525-020-00154-9",
+      "author": "CR Marshall",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "journal-title": "NPJ Genom Med",
+      "key": "2494_CR27",
+      "unstructured": "Marshall CR, Chowdhury S, Taft RJ, Lebo MS, Buchan JG, Harrison SM, Rowsey R, Klee EW, Liu P, Worthey EA, Jobanputra V, Dimmock D, Kearney HM, Bick D, Kulkarni S, Taylor SL, Belmont JW, Stavropoulos DJ, Lennon NJ, Medical Genome I (2020) Best practices for the analytical validation of clinical whole-genome sequencing intended for the diagnosis of germline disease. NPJ Genom Med 5:47–47. https://doi.org/10.1038/s41525-020-00154-9",
+      "volume": "5",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nrdp.2015.71",
+      "author": "DM McDonald-McGinn",
+      "doi-asserted-by": "publisher",
+      "first-page": "15071",
+      "journal-title": "Nat Rev Dis Primers",
+      "key": "2494_CR28",
+      "unstructured": "McDonald-McGinn DM, Sullivan KE, Marino B, Philip N, Swillen A, Vorstman JAS, Zackai EH, Emanuel BS, Vermeesch JR, Morrow BE, Scambler PJ, Bassett AS (2015) 22q11.2 deletion syndrome. Nat Rev Dis Primers 1:15071. https://doi.org/10.1038/nrdp.2015.71",
+      "volume": "1",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s13073-021-00841-x",
+      "author": "AE Minoche",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "journal-title": "Genome Med",
+      "key": "2494_CR29",
+      "unstructured": "Minoche AE, Lundie B, Peters GB, Ohnesorg T, Pinese M, Thomas DM, Zankl A, Roscioli T, Schonrock N, Kummerfeld S, Burnett L, Dinger ME, Cowley MJ (2021) ClinSV: clinical grade structural and copy number variant detection from whole genome sequencing data. Genome Med 13:32–32. https://doi.org/10.1186/s13073-021-00841-x",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1001/jamapediatrics.2021.3496",
+      "author": "ID Krantz",
+      "doi-asserted-by": "publisher",
+      "first-page": "1218",
+      "journal-title": "JAMA Pediatr",
+      "key": "2494_CR30",
+      "unstructured": "NICUSeq Study Group, Krantz ID, Medne L, Weatherly JM, Wild KT, Biswas S, Devkota B, Hartman T, Brunelli L, Fishler KP, Abdul-Rahman O, Euteneuer JC, Hoover D, Dimmock D, Cleary J, Farnaes L, Knight J, Schwarz AJ, Vargas-Shiraishi OM, Wigby K, Zadeh N, Shinawi M, Wambach JA, Baldridge D, Cole FS, Wegner DJ, Urraca N, Holtrop S, Mostafavi R, Mroczkowski HJ, Pivnick EK, Ward JC, Talati A, Brown CW, Belmont JW, Ortega JL, Robinson KD, Brocklehurst WT, Perry DL, Ajay SS, Hagelstrom RT, Bennett M, Rajan V, Taft RJ (2021) Effect of whole-genome sequencing on the clinical management of acutely Ill infants with suspected genetic disease: a randomized clinical trial. JAMA Pediatr 175:1218–1226. https://doi.org/10.1001/jamapediatrics.2021.3496",
+      "volume": "175",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ncomms8949",
+      "author": "M Oskoui",
+      "doi-asserted-by": "publisher",
+      "first-page": "7949",
+      "journal-title": "Nat Commun",
+      "key": "2494_CR31",
+      "unstructured": "Oskoui M, Gazzellone MJ, Thiruvahindrapuram B, Zarrei M, Andersen J, Wei J, Wang Z, Wintle RF, Marshall CR, Cohn RD, Weksberg R, Stavropoulos DJ, Fehlings D, Shevell MI, Scherer SW (2015) Clinically relevant copy number variations detected in cerebral palsy. Nat Commun 6:7949–7949. https://doi.org/10.1038/ncomms8949",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1542/pir.2016-0073",
+      "author": "E Pereira",
+      "doi-asserted-by": "publisher",
+      "first-page": "46",
+      "journal-title": "Pediatr Rev",
+      "key": "2494_CR32",
+      "unstructured": "Pereira E, Marion R (2018) Contiguous gene syndromes. Pediatr Rev 39:46–49. https://doi.org/10.1542/pir.2016-0073",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1056/NEJMsr1406261",
+      "author": "HL Rehm",
+      "doi-asserted-by": "publisher",
+      "first-page": "2235",
+      "journal-title": "N Engl J Med",
+      "key": "2494_CR33",
+      "unstructured": "Rehm HL, Berg JS, Brooks LD, Bustamante CD, Evans JP, Landrum MJ, Ledbetter DH, Maglott DR, Martin CL, Nussbaum RL, Plon SE, Ramos EM, Sherry ST, Watson MS, ClinGen (2015) ClinGen–the clinical genome resource. N Engl J Med 372:2235–2242. https://doi.org/10.1056/NEJMsr1406261",
+      "volume": "372",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkab347",
+      "author": "F Requena",
+      "doi-asserted-by": "publisher",
+      "first-page": "W93",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2494_CR34",
+      "unstructured": "Requena F, Abdallah HH, García A, Nitschké P, Romana S, Malan V, Rausell A (2021) CNVxplorer: a web tool to assist clinical interpretation of CNVs in rare disease patients. Nucleic Acids Res 49:W93–W103. https://doi.org/10.1093/nar/gkab347",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0757-x",
+      "author": "MS Reuter",
+      "doi-asserted-by": "publisher",
+      "first-page": "1015",
+      "journal-title": "Genet Med: off J Am Coll Med Genet",
+      "key": "2494_CR35",
+      "unstructured": "Reuter MS, Chaturvedi RR, Liston E, Manshaei R, Aul RB, Bowdin S, Cohn I, Curtis M, Dhir P, Hayeems RZ, Hosseini SM, Khan R, Ly LG, Marshall CR, Mertens L, Okello JBA, Pereira SL, Raajkumar A, Seed M, Thiruvahindrapuram B, Scherer SW, Kim RH, Jobling RK (2020) The cardiac genome clinic: implementing genome sequencing in pediatric heart disease. Genet Med: off J Am Coll Med Genet 22:1015–1024. https://doi.org/10.1038/s41436-020-0757-x",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41436-019-0686-8",
+      "author": "ER Riggs",
+      "doi-asserted-by": "publisher",
+      "first-page": "245",
+      "journal-title": "Genet Med: off J Am Coll Med Genet",
+      "key": "2494_CR36",
+      "unstructured": "Riggs ER, Andersen EF, Cherry AM, Kantarci S, Kearney H, Patel A, Raca G, Ritter DI, South ST, Thorland EC, Pineda-Alvarez D, Aradhya S, Martin CL (2020) Technical standards for the interpretation and reporting of constitutional copy-number variants: a joint consensus recommendation of the American college of medical genetics and genomics (ACMG) and the clinical genome resource (ClinGen). Genet Med: off J Am Coll Med Genet 22:245–257. https://doi.org/10.1038/s41436-019-0686-8",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1126/science.1098918",
+      "author": "J Sebat",
+      "doi-asserted-by": "publisher",
+      "first-page": "525",
+      "journal-title": "Science",
+      "key": "2494_CR37",
+      "unstructured": "Sebat J, Lakshmi B, Troge J, Alexander J, Young J, Lundin P, Månér S, Massa H, Walker M, Chi M, Navin N, Lucito R, Healy J, Hicks J, Ye K, Reiner A, Gilliam TC, Trask B, Patterson N, Zetterberg A, Wigler M (2004) Large-scale copy number polymorphism in the human genome. Science 305:525–528. https://doi.org/10.1126/science.1098918",
+      "volume": "305",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/bib/bbs017",
+      "author": "H Thorvaldsdóttir",
+      "doi-asserted-by": "publisher",
+      "first-page": "178",
+      "journal-title": "Brief Bioinform",
+      "key": "2494_CR38",
+      "unstructured": "Thorvaldsdóttir H, Robinson JT, Mesirov JP (2013) Integrative genomics viewer (IGV): high-performance genomics data visualization and exploration. Brief Bioinform 14:178–192. https://doi.org/10.1093/bib/bbs017",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.12.007",
+      "author": "B Trost",
+      "doi-asserted-by": "publisher",
+      "first-page": "142",
+      "journal-title": "Am J Hum Genet",
+      "key": "2494_CR39",
+      "unstructured": "Trost B, Walker S, Wang Z, Thiruvahindrapuram B, MacDonald JR, Sung WWL, Pereira SL, Whitney J, Chan AJS, Pellecchia G, Reuter MS, Lok S, Yuen RKC, Marshall CR, Merico D, Scherer SW (2018) A Comprehensive workflow for read depth-based identification of copy-number variation from whole-genome sequence data. Am J Hum Genet 102:142–155. https://doi.org/10.1016/j.ajhg.2017.12.007",
+      "volume": "102",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/2022.05.05.22274031",
+      "author": "B Trost",
+      "doi-asserted-by": "publisher",
+      "journal-title": "MedRxiv",
+      "key": "2494_CR40",
+      "unstructured": "Trost B, Thiruvahindrapuram B, Chan AJS, Engchuan W, Higginbotham EJ, Howe JL, Loureiro LO, Reuter MS, Roshandel D, Whitney J, Zarrei M, Bookman M, Somerville C, Shaath R, Abdi M, Aliyev E, Patel RV, Nalpathamkalam T, Pellecchia G, Hamdan O, Kaur G, Wang Z, MacDonald JR, Wei J, Sung WWL, Lamoureux S, Hoang N, Selvanayagam T, Deflaux N, Geng M, Ghaffari S, Bates J, Young EJ, Ding Q, Shum C, D’abate L, Bradley CA, Rutherford A, Aguda V, Apresto B, Chen N, Desai S, Du X, Fong MLY, Pullenayegum S, Samler K, Wang T, Ho K, Paton T, Pereira SL, Herbrick J-A, Wintle RF, Fuerth J, Noppornpitak J, Ward H, Magee P, Baz AA, Kajendirarajah U, Kapadia S, Vlasblom J, Valluri M, Green J, Seifer V, Quirbach M, Rennie O, Kelley E, Masjedi N, Lord C, Szego MJ, MnH Z, Lang M, Strug LJ, Marshall CR, Costain G, Calli K, Iaboni A, Yusuf A, Ambrozewicz P, Gallagher L, Amaral DG, Brian J, Elsabbagh M, Georgiades S, Messinger DS, Ozonoff S, Sebat J, Sjaarda C, Smith IM, Szatmari P, Zwaigenbaum L, Kushki A, Frazier TW, Vorstman JAS, Fakhro KA, Fernandez BA, Lewis MES, Weksberg R, Fiume M, Yuen RKC, Anagnostou E et al (2022) Genomic architecture of autism spectrum disorder from comprehensive whole-genome sequence annotation. MedRxiv. https://doi.org/10.1101/2022.05.05.22274031",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/npjgenmed.2016.27",
+      "author": "RKC Yuen",
+      "doi-asserted-by": "publisher",
+      "first-page": "16027",
+      "journal-title": "NPJ Genom Med",
+      "key": "2494_CR41",
+      "unstructured": "Yuen RKC, Merico D, Cao H, Pellecchia G, Alipanahi B, Thiruvahindrapuram B, Tong X, Sun Y, Cao D, Zhang T, Wu X, Jin X, Zhou Z, Liu X, Nalpathamkalam T, Walker S, Howe JL, Wang Z, MacDonald JR, Chan AJS, D’Abate L, Deneault E, Siu MT, Tammimies K, Uddin M, Zarrei M, Wang M, Li Y, Wang J, Wang J, Yang H, Bookman M, Bingham J, Gross SS, Loy D, Pletcher M, Marshall CR, Anagnostou E, Zwaigenbaum L, Weksberg R, Fernandez BA, Roberts W, Szatmari P, Glazer D, Frey BJ, Ring RH, Xu X, Scherer SW (2016) Genome-wide characteristics of de novo mutations in autism. NPJ Genom Med 1:16027. https://doi.org/10.1038/npjgenmed.2016.27",
+      "volume": "1",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nn.4524",
+      "author": "RKC Yuen",
+      "doi-asserted-by": "publisher",
+      "first-page": "602",
+      "journal-title": "Nat Neurosci",
+      "key": "2494_CR42",
+      "unstructured": "Yuen RKC, Merico D, Bookman M, Howe JL, Thiruvahindrapuram B, Patel RV, Whitney J, Deflaux N, Bingham J, Wang Z, Pellecchia G, Buchanan JA, Walker S, Marshall CR, Uddin M, Zarrei M, Deneault E, D’Abete L, Chan AJS, Koyanagi S, Paton T, Pereira SL, Hoang N, Engchuan W, Higginbotham EJ, Ho K, Lamoureux S, Li W, MacDonald JR, Nalpathamkalam T, Sung WWL, Tsoi FJ, Wei J, Xu L, Tasse A-M, Kirby E, Van Etten W, Twigger S, Roberts W, Drmic I, Jilderda S, Modi BM, Kellam B, Szego M, Cytrynbaum C, Weksberg R, Zwaigenbaum L, Woodbury-Smith M, Brian J, Senman L, Iaboni A, Doyle-Thomas K, Thompson A, Chrysler C, Leef J, Savion-Lemieux T, Smith IM, Liu X, Nicolson R, Seifer V, Fedele A, Cook EH, Dager S, Estes A, Gallagher L, Malow BA, Parr JR, Spence SJ, Vorstman J, Frey BJ, Robinson JT, Strug LJ, Fernandez BA, Elsabbagh M, Carter MT, Hallmayer J, Knoppers BM, Anagnostou E, Szatmari P, Ring RH, Glazer D, Pletcher MT, Scherer SW (2017) Whole genome sequencing resource identifies 18 new candidate genes for autism spectrum disorder. Nat Neurosci 20:602–611. https://doi.org/10.1038/nn.4524",
+      "volume": "20",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41525-019-0098-3",
+      "author": "M Zarrei",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "journal-title": "NPJ Genom Med",
+      "key": "2494_CR43",
+      "unstructured": "Zarrei M, Burton CL, Engchuan W, Young EJ, Higginbotham EJ, MacDonald JR, Trost B, Chan AJS, Walker S, Lamoureux S, Heung T, Mojarad BA, Kellam B, Paton T, Faheem M, Miron K, Lu C, Wang T, Samler K, Wang X, Costain G, Hoang N, Pellecchia G, Wei J, Patel RV, Thiruvahindrapuram B, Roifman M, Merico D, Goodale T, Drmic I, Speevak M, Howe JL, Yuen RKC, Buchanan JA, Vorstman JAS, Marshall CR, Wintle RF, Rosenberg DR, Hanna GL, Woodbury-Smith M, Cytrynbaum C, Zwaigenbaum L, Elsabbagh M, Flanagan J, Fernandez BA, Carter MT, Szatmari P, Roberts W, Lerch J, Liu X, Nicolson R, Georgiades S, Weksberg R, Arnold PD, Bassett AS, Crosbie J, Schachar R, Stavropoulos DJ, Anagnostou E, Scherer SW (2019) A large data resource of genomic copy number variation across neurodevelopmental disorders. NPJ Genom Med 4:26–26. https://doi.org/10.1038/s41525-019-0098-3",
+      "volume": "4",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.07.004",
+      "author": "M Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "408",
+      "journal-title": "Am J Hum Genet",
+      "key": "2494_CR44",
+      "unstructured": "Zhu M, Need AC, Han Y, Ge D, Maia JM, Zhu Q, Heinzen EL, Cirulli ET, Pelak K, He M, Ruzzo EK, Gumbs C, Singh A, Feng S, Shianna KV, Goldstein DB (2012) Using ERDS to infer copy-number variants in high-coverage genomes. Am J Hum Genet 91:408–421. https://doi.org/10.1016/j.ajhg.2012.07.004",
+      "volume": "91",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/sdata.2016.25",
+      "author": "JM Zook",
+      "doi-asserted-by": "publisher",
+      "first-page": "160025",
+      "journal-title": "Sci Data",
+      "key": "2494_CR45",
+      "unstructured": "Zook JM, Catoe D, McDaniel J, Vang L, Spies N, Sidow A, Weng Z, Liu Y, Mason CE, Alexander N, Henaff E, McIntyre ABR, Chandramohan D, Chen F, Jaeger E, Moshrefi A, Pham K, Stedman W, Liang T, Saghbini M, Dzakula Z, Hastie A, Cao H, Deikus G, Schadt E, Sebra R, Bashir A, Truty RM, Chang CC, Gulbahce N, Zhao K, Ghosh S, Hyland F, Fu Y, Chaisson M, Xiao C, Trow J, Sherry ST, Zaranek AW, Ball M, Bobe J, Estep P, Church GM, Marks P, Kyriazopoulou-Panagiotopoulou S, Zheng GXY, Schnall-Levin M, Ordonez HS, Mudivarti PA, Giorda K, Sheng Y, Rypdal KB, Salit M (2016) Extensive sequencing of seven human genomes to characterize benchmark reference materials. Sci Data 3:160025–160025. https://doi.org/10.1038/sdata.2016.25",
+      "volume": "3",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-022-02494-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "SCIP: software for efficient clinical interpretation of copy number variants detected by whole-genome sequencing"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

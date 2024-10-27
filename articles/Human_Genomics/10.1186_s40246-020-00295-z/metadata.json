@@ -1,0 +1,719 @@
+{
+  "DOI": "10.1186/s40246-020-00295-z",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-020-00295-z",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\u003cjats:title\u003eBackground\u003c/jats:title\u003e\u003cjats:p\u003eGermline variants of ten keratin genes (\u003cjats:italic\u003eK1\u003c/jats:italic\u003e,\u003cjats:italic\u003eK2\u003c/jats:italic\u003e,\u003cjats:italic\u003eK5\u003c/jats:italic\u003e,\u003cjats:italic\u003eK6A\u003c/jats:italic\u003e,\u003cjats:italic\u003eK6B\u003c/jats:italic\u003e,\u003cjats:italic\u003eK9\u003c/jats:italic\u003e,\u003cjats:italic\u003eK10\u003c/jats:italic\u003e,\u003cjats:italic\u003eK14\u003c/jats:italic\u003e,\u003cjats:italic\u003eK16\u003c/jats:italic\u003e, and\u003cjats:italic\u003eK17\u003c/jats:italic\u003e) have been reported for causing different types of genodermatoses with an autosomal dominant mode of inheritance. Among all the variants of these ten keratin genes, most of them are missense variants. Unlike pathogenic and likely pathogenic variants, understanding the clinical importance of novel missense variants or variants of uncertain significance (VUS) is the biggest challenge for clinicians or medical geneticists. Functional characterization is the only way to understand the clinical association of novel missense variants or VUS but it is time consuming, costly, and depends on the availability of patient’s samples. Existing databases report the pathogenic variants of the keratin genes, but never emphasize the systematic effects of these variants on keratin protein structure and genotype-phenotype correlation.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eResults\u003c/jats:title\u003e\u003cjats:p\u003eTo address this need, we developed a comprehensive database KVarPredDB, which contains information of all ten keratin genes associated with genodermatoses. We integrated and curated 400 reported pathogenic missense variants as well as 4629 missense VUS. KVarPredDB predicts the pathogenicity of novel missense variants as well as to understand the severity of disease phenotype, based on four criteria; firstly, the difference in physico-chemical properties between the wild type and substituted amino acids; secondly, the loss of inter/intra-chain interactions; thirdly, evolutionary conservation of the wild type amino acids and lastly, the effect of the substituted amino acids in the heptad repeat. Molecular docking simulations based on resolved crystal structures were adopted to predict stability changes and get the binding energy to compare the wild type protein with the mutated one. We use this basic information to determine the structural and functional impact of novel missense variants on the keratin coiled-coil heterodimer. KVarPredDB was built under the integrative web application development framework SSM (SpringBoot, Spring MVC, MyBatis) and implemented in Java, Bootstrap, React-mutation-mapper, MySQL, Tomcat. The website can be accessed through\u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://bioinfo.zju.edu.cn/KVarPredDB\"\u003ehttp://bioinfo.zju.edu.cn/KVarPredDB\u003c/jats:ext-link\u003e. The genomic variants and analysis results are freely available under the Creative Commons license.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eConclusions\u003c/jats:title\u003e\u003cjats:p\u003eKVarPredDB provides an intuitive and user-friendly interface with computational analytical investigation for each missense variant of the keratin genes associated with genodermatoses.\u003c/jats:p\u003e\u003c/jats:sec\u003e",
+  "alternative-id": [
+    "295"
+  ],
+  "article-number": "45",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "29 August 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "25 November 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "7 December 2020"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "N/A."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare no conflict of interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Ying",
+      "given": "Yuyi",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Lu",
+      "given": "Lu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Banerjee",
+      "given": "Santasree",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xu",
+      "given": "Lizhen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhao",
+      "given": "Qiang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wu",
+      "given": "Hao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Ruiqi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xu",
+      "given": "Xiao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yu",
+      "given": "Hua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Neculai",
+      "given": "Dante",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xi",
+      "given": "Yongmei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Fan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Qin",
+      "given": "Jiale",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8014-6848",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Li",
+      "given": "Chen",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        12,
+        7
+      ]
+    ],
+    "date-time": "2020-12-07T11:04:02Z",
+    "timestamp": 1607339042000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        4,
+        16
+      ]
+    ],
+    "date-time": "2021-04-16T21:39:18Z",
+    "timestamp": 1618609158000
+  },
+  "funder": [
+    {
+      "award": [
+        "LY17C060003"
+      ],
+      "name": "Zhejiang Provincial Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "81601515"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Chinese National Natural Science Foundation"
+    },
+    {
+      "award": [
+        "WKJ-ZJ-2033"
+      ],
+      "name": "Zhejiang Provincial Key Projects of Technology Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        2
+      ]
+    ],
+    "date-time": "2024-03-02T21:58:09Z",
+    "timestamp": 1709416689228
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2020-12-01T00:00:00Z",
+        "timestamp": 1606780800000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 6,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            12,
+            7
+          ]
+        ],
+        "date-time": "2020-12-07T00:00:00Z",
+        "timestamp": 1607299200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-020-00295-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-020-00295-z/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-020-00295-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        12,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.ultramic.2010.07.009",
+      "author": "V Lulevich",
+      "doi-asserted-by": "publisher",
+      "first-page": "1435",
+      "issue": "12",
+      "journal-title": "Ultramicroscopy.",
+      "key": "295_CR1",
+      "unstructured": "Lulevich V, Yang HY, Isseroff RR, Liu GY. Single cell mechanics of keratinocyte cells. Ultramicroscopy. 2010;110(12):1435–42.",
+      "volume": "110",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/nrm3175",
+      "author": "CL Simpson",
+      "doi-asserted-by": "publisher",
+      "first-page": "565",
+      "issue": "9",
+      "journal-title": "Nat Rev Mol Cell Biol.",
+      "key": "295_CR2",
+      "unstructured": "Simpson CL, Patel DM, Green KJ. Deconstructing the skin: cytoarchitectural determinants of epidermal morphogenesis. Nat Rev Mol Cell Biol. 2011;12(9):565–80.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1172/JCI39894",
+      "author": "MB Omary",
+      "doi-asserted-by": "publisher",
+      "first-page": "1756",
+      "issue": "7",
+      "journal-title": "J Clin Invest.",
+      "key": "295_CR3",
+      "unstructured": "Omary MB. “IF-pathies”: a broad spectrum of intermediate filament-associated diseases. J Clin Invest. 2009;119(7):1756–62.",
+      "volume": "119",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1002/bies.201500142",
+      "author": "A Robert",
+      "doi-asserted-by": "publisher",
+      "first-page": "232",
+      "issue": "3",
+      "journal-title": "Bioessays.",
+      "key": "295_CR4",
+      "unstructured": "Robert A, Hookway C, Gelfand VI. Intermediate filament dynamics: what we can see now and why it matters. Bioessays. 2016;38(3):232–43.",
+      "volume": "38",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.jid.2016.08.018",
+      "author": "CG Bunick",
+      "doi-asserted-by": "publisher",
+      "first-page": "142",
+      "issue": "1",
+      "journal-title": "J Invest Dermatol.",
+      "key": "295_CR5",
+      "unstructured": "Bunick CG, Milstone LM. The X-ray crystal structure of the keratin 1-keratin 10 helix 2B heterodimer reveals molecular surface properties and biochemical insights into human skin disease. J Invest Dermatol. 2017;137(1):142–50.",
+      "volume": "137",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ceb.2014.12.008",
+      "author": "DM Toivola",
+      "doi-asserted-by": "publisher",
+      "first-page": "73",
+      "journal-title": "Curr Opin Cell Biol",
+      "key": "295_CR6",
+      "unstructured": "Toivola DM, Boor P, Alam C, Strnad P. Keratins in health and disease. Curr Opin Cell Biol. 2015;32:73–81.",
+      "volume": "32",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1007/s00441-014-2105-4",
+      "author": "M Knöbel",
+      "doi-asserted-by": "publisher",
+      "first-page": "583",
+      "issue": "3",
+      "journal-title": "Cell Tissue Res.",
+      "key": "295_CR7",
+      "unstructured": "Knöbel M, O’Toole EA, Smith FJ. Keratins and skin disease. Cell Tissue Res. 2015;360(3):583–9.",
+      "volume": "360",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s40246-018-0158-2",
+      "author": "T Elango",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "issue": "1",
+      "journal-title": "Hum Genomics.",
+      "key": "295_CR8",
+      "unstructured": "Elango T, Sun J, Zhu C, Zhou F, Zhang Y, Sun L, Yang S, Zhang X. Mutational analysis of epidermal and hyperproliferative type I keratins in mild and moderate psoriasis vulgaris patients: a possible role in the pathogenesis of psoriasis along with disease severity. Hum Genomics. 2018;12(1):27.",
+      "volume": "12",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.clindermatol.2004.09.005",
+      "author": "PH Itin",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "issue": "1",
+      "journal-title": "Clin Dermatol.",
+      "key": "295_CR9",
+      "unstructured": "Itin PH, Fistarol SK. Palmoplantar keratodermas. Clin Dermatol. 2005;23(1):15–22.",
+      "volume": "23",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/jid.2009.395",
+      "author": "PE Bowden",
+      "doi-asserted-by": "publisher",
+      "first-page": "336",
+      "issue": "2",
+      "journal-title": "J Invest Dermatol",
+      "key": "295_CR10",
+      "unstructured": "Bowden PE. Mutations in a keratin 6 isomer (K6c) cause a type of focal palmoplantar keratoderma. J Invest Dermatol. 2010;130(2):336–8.",
+      "volume": "130",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/jid.2011.169",
+      "author": "SD Atkinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "2079",
+      "issue": "10",
+      "journal-title": "J Invest Dermatol",
+      "key": "295_CR11",
+      "unstructured": "Atkinson SD, McGilligan VE, Liao HH, Szeverenyi I, Smith FJD, Moore CBT, McLean WHI. Development of allele-specific therapeutic siRNA for keratin 5 mutations in epidermolysis bullosa simplex. J Invest Dermatol. 2011;131(10):2079–86.",
+      "volume": "131",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "issue": "5",
+      "journal-title": "Genet Med.",
+      "key": "295_CR12",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, Grody WW, Hegde M, Lyon E, Spector E, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17(5):405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1111/bjd.19384",
+      "doi-asserted-by": "publisher",
+      "key": "295_CR13",
+      "unstructured": "Chiu FP, Doolan BJ, McGrath JA, Onoufriadis A. A decade of next-generation sequencing in genodermatoses: the impact on gene discovery and clinical diagnostics. Br J Dermatol. 2020. https://doi.org/10.1111/bjd.19384."
+    },
+    {
+      "DOI": "10.1002/humu.20652",
+      "author": "I Szeverenyi",
+      "doi-asserted-by": "publisher",
+      "first-page": "351",
+      "issue": "3",
+      "journal-title": "Human Mutat.",
+      "key": "295_CR14",
+      "unstructured": "Szeverenyi I, Cassidy AJ, Chung CW, Lee BT, Common JEA, Ogg SC, Chen H, Sim SY, Goh WLR, Ng KW, et al. The human intermediate filament database: comprehensive information on a gene family involved in many human diseases. Human Mutat. 2008;29(3):351–60.",
+      "volume": "29",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/nar/29.1.308",
+      "author": "ST Sherry",
+      "doi-asserted-by": "publisher",
+      "first-page": "308",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "295_CR15",
+      "unstructured": "Sherry ST, Ward MH, Kholodov M, Baker J, Phan L, Smigielski EM, Sirotkin K. dbSNP: the NCBI database of genetic variation. Nucleic Acids Res. 2001;29(1):308–11.",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1007/s00439-017-1779-6",
+      "author": "PD Stenson",
+      "doi-asserted-by": "publisher",
+      "first-page": "665",
+      "issue": "6",
+      "journal-title": "Human Genet.",
+      "key": "295_CR16",
+      "unstructured": "Stenson PD, Mort M, Ball EV, Evans K, Hayden M, Heywood S, Hussain M, Phillips AD, Cooper DN. The Human Gene Mutation Database: towards a comprehensive repository of inherited mutation data for medical research, genetic diagnosis and next-generation sequencing studies. Human Genet. 2017;136(6):665–77.",
+      "volume": "136",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/1479-7364-4-2-69",
+      "author": "PD Stenson",
+      "doi-asserted-by": "publisher",
+      "first-page": "69",
+      "issue": "2",
+      "journal-title": "Hum Genomics.",
+      "key": "295_CR17",
+      "unstructured": "Stenson PD, Ball EV, Howells K, Phillips AD, Mort M, Cooper DN. The Human Gene Mutation Database: providing a comprehensive central mutation database for molecular diagnostics and personalized genomics. Hum Genomics. 2009;4(2):69–72.",
+      "volume": "4",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1002/humu.21438",
+      "author": "IFAC Fokkema",
+      "doi-asserted-by": "publisher",
+      "first-page": "557",
+      "issue": "5",
+      "journal-title": "Human Mutat.",
+      "key": "295_CR18",
+      "unstructured": "Fokkema IFAC, Taschner PEM, Schaafsma GCP, Celli J, Laros JFJ, den Dunnen JT. LOVD v.2.0: the next generation in gene variant databases. Human Mutat. 2011;32(5):557–63.",
+      "volume": "32",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1039/C4MB00138A",
+      "author": "S Banerjee",
+      "doi-asserted-by": "publisher",
+      "first-page": "2567",
+      "issue": "10",
+      "journal-title": "Mol Biosystems.",
+      "key": "295_CR19",
+      "unstructured": "Banerjee S, Wu Q, Yu P, Qi M, Li C. In silico analysis of all point mutations on the 2B domain of K5/K14 causing epidermolysis bullosa simplex: a genotype-phenotype correlation. Mol Biosystems. 2014;10(10):2567–77.",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.18632/oncotarget.10599",
+      "author": "S Banerjee",
+      "doi-asserted-by": "publisher",
+      "first-page": "52766",
+      "issue": "33",
+      "journal-title": "Oncotarget.",
+      "key": "295_CR20",
+      "unstructured": "Banerjee S, Wu Q, Ying YY, Li YN, Shirota M, Neculai D, Li C. In silico predicted structural and functional insights of all missense mutations on 2B domain of K1/K10 causing genodermatoses. Oncotarget. 2016;7(33):52766–80.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nsmb.2330",
+      "author": "CH Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "707",
+      "issue": "7",
+      "journal-title": "Nat Struct Mol Biol.",
+      "key": "295_CR21",
+      "unstructured": "Lee CH, Kim MS, Chung BM, Leahy DJ, Coulombe PA. Structural basis for heteromeric assembly and perinuclear organization of keratin filaments. Nat Struct Mol Biol. 2012;19(7):707–15.",
+      "volume": "19",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.15252/embj.2018100741",
+      "doi-asserted-by": "crossref",
+      "key": "295_CR22",
+      "unstructured": "Eldirany SA, Ho M, Hinbest AJ, Lomakin IB, Bunick CG. Human keratin 1/10-1B tetramer structures reveal a knob-pocket mechanism in intermediate filament assembly. Embo j. 2019;38(11):e100741."
+    },
+    {
+      "DOI": "10.1093/nar/gkg509",
+      "author": "PC Ng",
+      "doi-asserted-by": "publisher",
+      "first-page": "3812",
+      "issue": "13",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "295_CR23",
+      "unstructured": "Ng PC, Henikoff S. SIFT: predicting amino acid changes that affect protein function. Nucleic Acids Res. 2003;31(13):3812–4.",
+      "volume": "31",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/nmeth0410-248",
+      "author": "IA Adzhubei",
+      "doi-asserted-by": "publisher",
+      "first-page": "248",
+      "issue": "4",
+      "journal-title": "Nature Methods.",
+      "key": "295_CR24",
+      "unstructured": "Adzhubei IA, Schmidt S, Peshkin L, Ramensky VE, Gerasimova A, Bork P, Kondrashov AS, Sunyaev SR. A method and server for predicting damaging missense mutations. Nature Methods. 2010;7(4):248–9.",
+      "volume": "7",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gku411",
+      "author": "DEV Pires",
+      "doi-asserted-by": "publisher",
+      "first-page": "W314",
+      "issue": "W1",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "295_CR25",
+      "unstructured": "Pires DEV, Ascher DB, Blundell TL. DUET: a server for predicting effects of mutations on protein stability using an integrated computational approach. Nucleic Acids Res. 2014;42(W1):W314–9.",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/gb-2007-8-11-r232",
+      "author": "B Reva",
+      "doi-asserted-by": "publisher",
+      "first-page": "R232",
+      "issue": "11",
+      "journal-title": "Genome Biol.",
+      "key": "295_CR26",
+      "unstructured": "Reva B, Antipin Y, Sander C. Determinants of protein function revealed by combinatorial entropy optimization. Genome Biol. 2007;8(11):R232.",
+      "volume": "8",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/nar/gkr407",
+      "author": "B Reva",
+      "doi-asserted-by": "publisher",
+      "first-page": "e118",
+      "issue": "17",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "295_CR27",
+      "unstructured": "Reva B, Antipin Y, Sander C. Predicting the functional impact of protein mutations: application to cancer genomics. Nucleic Acids Res. 2011;39(17):e118.",
+      "volume": "39",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1126/scisignal.2004088",
+      "doi-asserted-by": "crossref",
+      "key": "295_CR28",
+      "unstructured": "Gao JJ, Aksoy BA, Dogrusoz U, Dresdner G, Gross B, Sumer SO, Sun YC, Jacobsen A, Sinha R, Larsson E, et al. Integrative analysis of complex cancer genomics and clinical profiles using the cBioPortal. Science Signaling. 2013;6(269):pl1."
+    },
+    {
+      "DOI": "10.1002/pro.2389",
+      "author": "P Conway",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "issue": "1",
+      "journal-title": "Protein Sci.",
+      "key": "295_CR29",
+      "unstructured": "Conway P, Tyka MD, DiMaio F, Konerding DE, Baker D. Relaxation of backbone bond geometry improves protein energy landscape modeling. Protein Sci. 2014;23(1):47–55.",
+      "volume": "23",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1002503",
+      "doi-asserted-by": "crossref",
+      "key": "295_CR30",
+      "unstructured": "Cheng FX, Liu C, Jiang J, Lu WQ, Li WH, Liu GX, Zhou WX, Huang J, Tang Y. Prediction of drug-target interactions and drug repositioning via network-based inference. Plos Comput Biol. 2012;8(5):e1002503."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty419",
+      "author": "AS Rose",
+      "doi-asserted-by": "publisher",
+      "first-page": "3755",
+      "issue": "21",
+      "journal-title": "Bioinformatics.",
+      "key": "295_CR31",
+      "unstructured": "Rose AS, Bradley AR, Valasatava Y, Duarte JM, Prlic A, Rose PW. NGL viewer: web-based molecular graphics for large complexes. Bioinformatics. 2018;34(21):3755–8.",
+      "volume": "34",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 31,
+  "references-count": 31,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-68420/v3",
+        "id-type": "doi"
+      },
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-68420/v1",
+        "id-type": "doi"
+      },
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-68420/v2",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-020-00295-z"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "KVarPredDB: a database for predicting pathogenicity of missense sequence variants of keratin genes associated with genodermatoses"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "14"
+}

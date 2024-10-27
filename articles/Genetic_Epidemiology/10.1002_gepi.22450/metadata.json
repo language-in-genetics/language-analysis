@@ -1,0 +1,392 @@
+{
+  "DOI": "10.1002/gepi.22450",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22450",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eNext‐generation sequencing technologies have opened up the possibility to sequence large samples of cases and controls to test for association with rare variants. To limit cost and increase sample sizes, data from controls could be used in multiple studies and might thus be generated on different sequencing platforms. This could pose some problems of comparability between cases and controls due to batch effects that could be confounding factors, leading to false‐positive association signals. To limit batch effects and ensure comparability of datasets, stringent quality controls are required. We propose an integrative five‐steps pipeline, RAVAQ, that (a) performs a specific three‐step quality control taking into account the case–control status to ensure data comparability, (b) selects qualifying variants as defined by the user, and (c) performs rare variant association tests per genomic region. The RAVAQ pipeline is wrapped in an R package. It is user‐friendly and flexible in its arguments to adapt to the specificity of each research project. We provide examples showing how RAVAQ improves rare variant association tests. The default RAVAQ quality control outperformed the widely used Variant Quality Score Recalibration method, removing inflation due to spurious signals. RAVAQ is open source and freely available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://gitlab.com/gmarenne/ravaq\"\u003ehttps://gitlab.com/gmarenne/ravaq\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22450"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-10-13"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2022-03-15"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2022-04-14"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-4363-7170",
+      "affiliation": [
+        {
+          "name": "Inserm, Univ Brest, EFS, UMR 1078, GGB Brest France"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Marenne",
+      "given": "Gaëlle",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Inserm, Univ Brest, EFS, UMR 1078, GGB Brest France"
+        },
+        {
+          "name": "CHU Brest Brest France"
+        }
+      ],
+      "family": "Ludwig",
+      "given": "Thomas E.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2467-9236",
+      "affiliation": [
+        {
+          "name": "Inserm, Univ Brest, EFS, UMR 1078, GGB Brest France"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Bocher",
+      "given": "Ozvan",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9392-9924",
+      "affiliation": [
+        {
+          "name": "Inserm, Univ Brest, EFS, UMR 1078, GGB Brest France"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Herzig",
+      "given": "Anthony F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Université de Paris, NeuroDiderot, Inserm UMR 1141 Paris France"
+        }
+      ],
+      "family": "Aloui",
+      "given": "Chaker",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Université de Paris, NeuroDiderot, Inserm UMR 1141 Paris France"
+        },
+        {
+          "name": "AP‐HP, Service de Génétique Moléculaire Neurovasculaire, Hôpital Saint‐Louis Paris France"
+        }
+      ],
+      "family": "Tournier‐Lasserve",
+      "given": "Elisabeth",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Inserm, Univ Brest, EFS, UMR 1078, GGB Brest France"
+        },
+        {
+          "name": "CHU Brest Brest France"
+        }
+      ],
+      "family": "Génin",
+      "given": "Emmanuelle",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        14
+      ]
+    ],
+    "date-time": "2022-04-14T08:40:52Z",
+    "timestamp": 1649925652000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        23
+      ]
+    ],
+    "date-time": "2023-08-23T22:04:56Z",
+    "timestamp": 1692828296000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        24
+      ]
+    ],
+    "date-time": "2023-08-24T16:16:23Z",
+    "timestamp": 1692893783125
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5-6",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        14
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5-6",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            14
+          ]
+        ],
+        "date-time": "2022-04-14T00:00:00Z",
+        "timestamp": 1649894400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22450",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22450",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22450",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "256-265",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        14
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        14
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/s41598-019-52614-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22210",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1038/s41431-020-00792-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.1159/000447634",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.1038/ejhg.2017.92",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22386",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "DOI": "10.1007/s00439-010-0880-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_8_1"
+    },
+    {
+      "DOI": "10.1038/jhg.2010.132",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.06.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2008.06.024",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000384",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_12_1"
+    },
+    {
+      "DOI": "10.1007/978-1-4939-2824-8_3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "DOI": "10.1016/j.mrfmmm.2006.09.003",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_15_1"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.04.004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1038/nbt.2835",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "DOI": "10.1038/s41587-019-0074-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_20_1"
+    }
+  ],
+  "reference-count": 19,
+  "references-count": 19,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22450"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "RAVAQ: An integrative pipeline from quality control to region‐based rare variant association analysis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

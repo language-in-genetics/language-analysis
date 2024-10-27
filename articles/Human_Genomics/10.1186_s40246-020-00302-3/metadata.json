@@ -1,0 +1,647 @@
+{
+  "DOI": "10.1186/s40246-020-00302-3",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-020-00302-3",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eFunctional disruptions by large germline genomic structural variants in susceptible genes are known risks for cancer. We used deletion structural variants (DSVs) generated from germline whole-genome sequencing (WGS) and DSV immune-related association tumor microenvironment (TME) to predict cancer risk and prognosis.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe investigated the contribution of germline DSVs to cancer susceptibility and prognosis by silicon and causal inference models. DSVs in germline WGS data were generated from the blood samples of 192 cancer and 499 non-cancer subjects. Clinical information, including family cancer history (FCH), was obtained from the National Cheng Kung University Hospital and Taiwan Biobank. Ninety-nine colorectal cancer (CRC) patients had immune response gene expression data. We used joint calling tools and an attention-weighted model to build the cancer risk predictive model and identify DSVs in familial cancer. The survival support vector machine (survival-SVM) was used to select prognostic DSVs.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe identified 671 DSVs that could predict cancer risk. The area under the curve (AUC) of the receiver operating characteristic curve (ROC) of the attention-weighted model was 0.71. The 3 most frequent DSV genes observed in cancer patients were identified as \u003cjats:italic\u003eADCY9\u003c/jats:italic\u003e, \u003cjats:italic\u003eAURKAPS1\u003c/jats:italic\u003e, and \u003cjats:italic\u003eRAB3GAP2\u003c/jats:italic\u003e (\u003cjats:italic\u003ep\u003c/jats:italic\u003e \u0026lt; 0.05). The DSVs in \u003cjats:italic\u003eSGSM2\u003c/jats:italic\u003e and \u003cjats:italic\u003eLHFPL3\u003c/jats:italic\u003e were relevant to colorectal cancer. We found a higher incidence of FCH in cancer patients than in non-cancer subjects (\u003cjats:italic\u003ep\u003c/jats:italic\u003e \u0026lt; 0.05). \u003cjats:italic\u003eSMYD3\u003c/jats:italic\u003e and \u003cjats:italic\u003eNKD2DSV\u003c/jats:italic\u003e genes were associated with cancer patients with FCH (\u003cjats:italic\u003ep\u003c/jats:italic\u003e \u0026lt; 0.05). We identified 65 immune-associated DSV markers for assessing cancer prognosis (\u003cjats:italic\u003ep\u003c/jats:italic\u003e \u0026lt; 0.05). The functional protein of \u003cjats:italic\u003eMUC4\u003c/jats:italic\u003e DSV gene interacted with \u003cjats:italic\u003eMAGE1\u003c/jats:italic\u003e expression, according to the STRING database. The causal inference model showed that deleting the \u003cjats:italic\u003eCEP72\u003c/jats:italic\u003e DSV gene affect the recurrence-free survival (RFS) of \u003cjats:italic\u003eIFIT1\u003c/jats:italic\u003e expression.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe established an explainable attention-weighted model for cancer risk prediction and used the survival-SVM for prognostic stratification by using germline DSVs and immune gene expression datasets. Comprehensive assessments of germline DSVs can predict the cancer risk and clinical outcome of colon cancer patients.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "302"
+  ],
+  "article-number": "3",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "17 September 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "22 December 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "11 January 2021"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "This study was approved by the institutional review board of National Cheng Kung University Hospital (NCKUH) (A-ER-103-395 and A-ER-104-153) and conducted in accordance with the Declaration of Helsinki. All participants provided written informed consent."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Lin",
+      "given": "Peng-Chan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Hui-O",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lee",
+      "given": "Chih-Jung",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yeh",
+      "given": "Yu-Min",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shen",
+      "given": "Meng-Ru",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chiang",
+      "given": "Jung-Hsien",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        11
+      ]
+    ],
+    "date-time": "2021-01-11T13:28:51Z",
+    "timestamp": 1610371731000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        11
+      ]
+    ],
+    "date-time": "2021-01-11T15:20:17Z",
+    "timestamp": 1610378417000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100004663",
+      "award": [
+        "MOST-108-2634-F-006-006",
+        "MOST 108-2634-F-006-011"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Ministry of Science and Technology, Taiwan"
+    },
+    {
+      "DOI": "10.13039/100008903",
+      "award": [
+        "MOHW108-TDU-B-211-124018 and MOHW108-TDU-B-211-133003"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Ministry of Health and Welfare"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        2
+      ]
+    ],
+    "date-time": "2024-03-02T21:57:10Z",
+    "timestamp": 1709416630137
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        11
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            11
+          ]
+        ],
+        "date-time": "2021-01-11T00:00:00Z",
+        "timestamp": 1610323200000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            11
+          ]
+        ],
+        "date-time": "2021-01-11T00:00:00Z",
+        "timestamp": 1610323200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-020-00302-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-020-00302-3/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-020-00302-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        11
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        11
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s41416-019-0393-x",
+      "author": "M Escala-Garcia",
+      "doi-asserted-by": "publisher",
+      "first-page": "647",
+      "journal-title": "Br J Cancer",
+      "key": "302_CR1",
+      "unstructured": "Escala-Garcia M, Guo Q, Dörk T, Canisius S, Keeman R, Dennis J, et al. Genome-wide association study of germline variants and breast cancer-specific mortality. Br J Cancer. 2019;120:647–57.",
+      "volume": "120",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nrg2574",
+      "author": "A Tenesa",
+      "doi-asserted-by": "publisher",
+      "first-page": "353",
+      "journal-title": "Nat Rev Genet",
+      "key": "302_CR2",
+      "unstructured": "Tenesa A, Dunlop MG. New insights into the aetiology of colorectal cancer from genome-wide association studies. Nat Rev Genet. 2009;10:353–8.",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/s13073-018-0606-6",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR3",
+      "unstructured": "Sanchis-Juan A, Stephens J, French CE, Gleadall N, Mégy K, Penkett C, et al. Complex structural variants in Mendelian disorders: identification and breakpoint resolution using short- and long-read genome sequencing. Genome Med. 2018;10:1–10."
+    },
+    {
+      "DOI": "10.1038/gim.2017.86",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR4",
+      "unstructured": "Merker JD, Wenger AM, Sneddon T, Grove M, Zappala Z, Fresard L, et al. Long-read genome sequencing identifies causal structural variation in a Mendelian disease. Genet Med. 2018;20:159–63."
+    },
+    {
+      "DOI": "10.1038/s41436-020-0880-8",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR5",
+      "unstructured": "Thibodeau ML, O’Neill K, Dixon K, Reisle C, Mungall KL, Krzywinski M, et al. Improved structural variant interpretation for hereditary cancer susceptibility using long-read sequencing. Genet Med. 2020;22:1892–7."
+    },
+    {
+      "author": "X Wang",
+      "first-page": "19",
+      "journal-title": "Cancer Inform",
+      "key": "302_CR6",
+      "unstructured": "Wang X, Oldani MJ, Zhao X, Huang X, Qian D. A review of cancer risk prediction models with genetic variants. Cancer Inform. 2014;13:19–28.",
+      "volume": "13",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1073/pnas.1717960115",
+      "author": "BJ Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "1322",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "302_CR7",
+      "unstructured": "Kim BJ, Kim SH. Prediction of inherited genomic susceptibility to 20 common cancer types by a supervised machine-learning method. Proc Natl Acad Sci U S A. 2018;115:1322–7.",
+      "volume": "115",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41576-019-0122-6",
+      "author": "G Eraslan",
+      "doi-asserted-by": "publisher",
+      "first-page": "389",
+      "journal-title": "Nat Rev Genet",
+      "key": "302_CR8",
+      "unstructured": "Eraslan G, Avsec Ž, Gagneur J, Theis FJ. Deep learning: new computational modelling techniques for genomics. Nat Rev Genet. 2019;20:389–403.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1177/117693510600200030",
+      "author": "JA Cruz",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "journal-title": "Cancer Inform",
+      "key": "302_CR9",
+      "unstructured": "Cruz JA, Wishart DS. Applications of machine learning in cancer prediction and prognosis. Cancer Inform. 2006;2:59–77.",
+      "volume": "2",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1038/ng.3801",
+      "author": "B Kehr",
+      "doi-asserted-by": "publisher",
+      "first-page": "588",
+      "journal-title": "Nat Genet",
+      "key": "302_CR10",
+      "unstructured": "Kehr B, Helgadottir A, Melsted P, Jonsson H, Helgason H, Jonasdottir A, et al. Diversity in non-repetitive human sequences not found in the reference genome. Nat Genet. 2017;49:588–93.",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.12.019",
+      "author": "PA Audano",
+      "doi-asserted-by": "publisher",
+      "first-page": "663",
+      "journal-title": "Cell",
+      "key": "302_CR11",
+      "unstructured": "Audano PA, Sulovari A, Graves-Lindsay TA, Cantsilieris S, Sorensen M, Welch AME, et al. Characterizing the major structural variant alleles of the human genome. Cell. 2019;176:663–675.e19.",
+      "volume": "176",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11112-0",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR12",
+      "unstructured": "Duncan L, Shen H, Gelaye B, Meijsen J, Ressler K, Feldman M, et al. Analysis of polygenic risk score usage and performance in diverse human populations. Nat Commun. 2019;10:1–9."
+    },
+    {
+      "DOI": "10.1093/hmg/ddy005",
+      "author": "X Guo",
+      "doi-asserted-by": "publisher",
+      "first-page": "853",
+      "journal-title": "Hum Mol Genet",
+      "key": "302_CR13",
+      "unstructured": "Guo X, Shi J, Cai Q, Shu XO, He J, Wen W, et al. Use of deep whole-genome sequencing data to identify structure risk variants in breast cancer susceptibility genes. Hum Mol Genet. 2018;27:853–9.",
+      "volume": "27",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkz1031",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR14",
+      "unstructured": "Jassal B, Matthews L, Viteri G, Gong C, Lorente P, Fabregat A, et al. The reactome pathway knowledgebase. Nucleic Acids Res. 2020;48:D498–503."
+    },
+    {
+      "DOI": "10.1056/NEJMoa1508054",
+      "author": "J Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2336",
+      "journal-title": "N Engl J Med",
+      "key": "302_CR15",
+      "unstructured": "Zhang J, Walsh MF, Wu G, Edmonson MN, Gruber TA, Easton J, et al. Germline mutations in predisposition genes in pediatric cancer. N Engl J Med. 2015;373:2336–46.",
+      "volume": "373",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.cell.2011.02.013",
+      "author": "D Hanahan",
+      "doi-asserted-by": "publisher",
+      "first-page": "646",
+      "journal-title": "Cell",
+      "key": "302_CR16",
+      "unstructured": "Hanahan D, Weinberg RA. Hallmarks of cancer: the next generation. Cell. 2011;144:646–74.",
+      "volume": "144",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/978-3-319-23525-7_15",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR17",
+      "unstructured": "Pölsterl S, Navab N, Katouzian A. Fast training of support vector machines for survival analysis. In: Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). 2015. p. 243–59."
+    },
+    {
+      "DOI": "10.1038/s41591-018-0014-x",
+      "author": "M Binnewies",
+      "doi-asserted-by": "publisher",
+      "first-page": "541",
+      "journal-title": "Nat Med",
+      "key": "302_CR18",
+      "unstructured": "Binnewies M, Roberts EW, Kersten K, Chan V, Fearon DF, Merad M, et al. Understanding the tumor immune microenvironment (TIME) for effective therapy. Nat Med. 2018;24:541–50.",
+      "volume": "24",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/jcp.27884",
+      "author": "A Fanipakdel",
+      "doi-asserted-by": "publisher",
+      "first-page": "12080",
+      "journal-title": "J Cell Physiol",
+      "key": "302_CR19",
+      "unstructured": "Fanipakdel A, Seilanian Toussi M, Rezazadeh F, Mohamadian Roshan N, Javadinia SA. Overexpression of cancer-testis antigen melanoma-associated antigen A1 in lung cancer: a novel biomarker for prognosis, and a possible target for immunotherapy. J Cell Physiol. 2019;234:12080–6.",
+      "volume": "234",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1200/JCO.2017.35.15_suppl.e20085",
+      "author": "Y Mao",
+      "doi-asserted-by": "publisher",
+      "first-page": "e20085",
+      "issue": "15_suppl",
+      "journal-title": "J Clin Oncol",
+      "key": "302_CR20",
+      "unstructured": "Mao Y, Tang Q, Fan W, Tang X, Xu L, Zhu J, et al. A novel MAGE-A1-IgG antibody for lung adenocarcinoma. J Clin Oncol. 2017;35(15_suppl):e20085.",
+      "volume": "35",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/nar/gks1094",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR21",
+      "unstructured": "Franceschini A, Szklarczyk D, Frankild S, Kuhn M, Simonovic M, Roth A, et al. STRING v9.1: Protein-protein interaction networks, with increased coverage and integration. Nucleic Acids Res. 2013;41:D808–15."
+    },
+    {
+      "DOI": "10.1146/annurev-statistics-031017-100630",
+      "author": "C Heinze-Deml",
+      "doi-asserted-by": "publisher",
+      "first-page": "371",
+      "journal-title": "Annu Rev Stat Its Appl",
+      "key": "302_CR22",
+      "unstructured": "Heinze-Deml C, Maathuis MH, Meinshausen N. Causal structure learning. Annu Rev Stat Its Appl. 2018;5:371–91.",
+      "volume": "5",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.7551/mitpress/1754.001.0001",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR23",
+      "unstructured": "Spirtes P, Glymour C, Scheines R. Causation, prediction, and search, 2nd edition. 2000."
+    },
+    {
+      "DOI": "10.1038/s41388-018-0662-9",
+      "author": "VK Pidugu",
+      "doi-asserted-by": "publisher",
+      "first-page": "3232",
+      "journal-title": "Oncogene",
+      "key": "302_CR24",
+      "unstructured": "Pidugu VK, Wu MM, Yen AH, Pidugu HB, Chang KW, Liu CJ, et al. IFIT1 and IFIT3 promote oral squamous cell carcinoma metastasis and contribute to the anti-tumor effect of gefitinib via enhancing p-EGFR recycling. Oncogene. 2019;38:3232–47.",
+      "volume": "38",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1096/fj.07-9673rev",
+      "author": "P Chaturvedi",
+      "doi-asserted-by": "publisher",
+      "first-page": "966",
+      "journal-title": "FASEB J",
+      "key": "302_CR25",
+      "unstructured": "Chaturvedi P, Singh AP, Batra SK. Structure, evolution, and biology of the MUC4 mucin. FASEB J. 2008;22:966–81.",
+      "volume": "22",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/emboj.2009.161",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR26",
+      "unstructured": "Oshimori N, Li X, Ohsugi M, Yamamoto T. Cep72 regulates the localization of key centrosomal proteins and proper bipolar spindle formation. EMBO J. 2009;28:2066–76."
+    },
+    {
+      "DOI": "10.1186/s13073-017-0493-2",
+      "author": "KP Soh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Med",
+      "key": "302_CR27",
+      "unstructured": "Soh KP, Szczurek E, Sakoparnig T, Beerenwinkel N. Predicting cancer type from tumour DNA signatures. Genome Med. 2017;9:1–11.",
+      "volume": "9",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1042/BSR20180879",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR28",
+      "unstructured": "Li Z, Qian R, Zhang J, Shi X. MiR-218-5p targets LHFPL3 to regulate proliferation, migration, and epithelial–mesenchymal transitions of human glioma cells. Biosci Rep. 2019;39:1–14."
+    },
+    {
+      "DOI": "10.18632/oncotarget.21325",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR29",
+      "unstructured": "Liang YK, Lin HY, Chen CF, Zeng D. Prognostic values of distinct CBX family members in breast cancer. Oncotarget. 2017;8:92375–87."
+    },
+    {
+      "DOI": "10.1038/75556",
+      "author": "M Ashburner",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "journal-title": "Nat Genet",
+      "key": "302_CR30",
+      "unstructured": "Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, et al. Gene ontology: tool for the unification of biology. Nat Genet. 2000;25:25–9.",
+      "volume": "25",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1038/nri1995",
+      "author": "H Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "41",
+      "journal-title": "Nat Rev Immunol",
+      "key": "302_CR31",
+      "unstructured": "Yu H, Kortylewski M, Pardoll D. Crosstalk between cancer and immune cells: Role of STAT3 in the tumour microenvironment. Nat Rev Immunol. 2007;7:41–51.",
+      "volume": "7",
+      "year": "2007"
+    },
+    {
+      "author": "R Kondou",
+      "first-page": "219",
+      "journal-title": "Int J Oncol",
+      "key": "302_CR32",
+      "unstructured": "Kondou R, Iizuka A, Nonomura C, Miyata H, Ashizawa T, Nagashima T, et al. Classification of tumor microenvironment immune types based on immune response-associated gene expression. Int J Oncol. 2019;54:219–28.",
+      "volume": "54",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/hmg/ddw346",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR33",
+      "unstructured": "Chen CH, Yang JH, Chiang CWK, Hsiung CN, Wu PE, Chang LC, et al. Population structure of Han Chinese in the modern Taiwanese population based on 10,000 participants in the Taiwan Biobank project. Hum Mol Genet. 2016;25:5321–31."
+    },
+    {
+      "key": "302_CR34",
+      "unstructured": "Li H. Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM. Preprint at https://arxiv.org/abs/1303.3997(2013)."
+    },
+    {
+      "DOI": "10.1038/ng.806",
+      "author": "MA Depristo",
+      "doi-asserted-by": "publisher",
+      "first-page": "491",
+      "journal-title": "Nat Genet",
+      "key": "302_CR35",
+      "unstructured": "Depristo MA, Banks E, Poplin R, Garimella KV, Maguire JR, Hartl C, et al. A framework for variation discovery and genotyping using next-generation DNA sequencing data. Nat Genet. 2011;43:491–501.",
+      "volume": "43",
+      "year": "2011"
+    },
+    {
+      "author": "A Vaswani",
+      "first-page": "5999",
+      "journal-title": "Adv Neural Inf Process Syst",
+      "key": "302_CR36",
+      "unstructured": "Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, et al. Attention is all you need. Adv Neural Inf Process Syst. 2017;30:5999–6009.",
+      "volume": "30",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/9781118445112.stat06227",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR37",
+      "unstructured": "Kornbrot D. Point biserial correlation. In: Wiley StatsRef: Statistics Reference Online. 2014."
+    },
+    {
+      "DOI": "10.1186/cc2955",
+      "doi-asserted-by": "crossref",
+      "key": "302_CR38",
+      "unstructured": "Bewick V, Cheek L, Ball J. Statistics review 12: Survival analysis. Crit Care. 2004;8:389–94."
+    }
+  ],
+  "reference-count": 38,
+  "references-count": 38,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-79420/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-020-00302-3"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Comprehensive assessments of germline deletion structural variants reveal the association between prognostic MUC4 and CEP72 deletions and immune response gene expression in colorectal cancer patients"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

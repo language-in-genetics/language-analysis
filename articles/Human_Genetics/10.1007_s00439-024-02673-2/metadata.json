@@ -1,0 +1,989 @@
+{
+  "DOI": "10.1007/s00439-024-02673-2",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-024-02673-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eCopper is a vital micronutrient involved in many biological processes and is an essential component of tumour cell growth and migration. Copper influences tumour growth through a process called cuproplasia, defined as abnormal copper-dependent cell-growth and proliferation. Copper-chelation therapy targeting this process has demonstrated efficacy in several clinical trials against cancer. While the molecular pathways associated with cuproplasia are partially known, genetic heterogeneity across different cancer types has limited the understanding of how cuproplasia impacts patient survival. Utilising RNA-sequencing data from The Cancer Genome Atlas (TCGA) and the Genotype-Tissue Expression (GTEx) datasets, we generated gene regulatory networks to identify the critical cuproplasia-related genes across 23 different cancer types. From this, we identified a novel 8-gene cuproplasia-related gene signature associated with pan-cancer survival, and a 6-gene prognostic risk score model in low grade glioma. These findings highlight the use of gene regulatory networks to identify cuproplasia-related gene signatures that could be used to generate risk score models. This can potentially identify patients who could benefit from copper-chelation therapy and identifies novel targeted therapeutic strategies.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2673"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "11 October 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "26 March 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "20 April 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Pham",
+      "given": "Vu Viet Hoang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Jue",
+      "given": "Toni Rose",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bell",
+      "given": "Jessica Lilian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Luciani",
+      "given": "Fabio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Michniewicz",
+      "given": "Filip",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cirillo",
+      "given": "Giuseppe",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vahdat",
+      "given": "Linda",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mayoh",
+      "given": "Chelsea",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vittorio",
+      "given": "Orazio",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        20
+      ]
+    ],
+    "date-time": "2024-04-20T09:02:11Z",
+    "timestamp": 1713603731000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        20
+      ]
+    ],
+    "date-time": "2024-04-20T09:06:57Z",
+    "timestamp": 1713604017000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001773",
+      "doi-asserted-by": "crossref",
+      "name": "University of New South Wales"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        21
+      ]
+    ],
+    "date-time": "2024-04-21T00:33:42Z",
+    "timestamp": 1713659622785
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        20
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            20
+          ]
+        ],
+        "date-time": "2024-04-20T00:00:00Z",
+        "timestamp": 1713571200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            20
+          ]
+        ],
+        "date-time": "2024-04-20T00:00:00Z",
+        "timestamp": 1713571200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-024-02673-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-024-02673-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-024-02673-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        20
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        20
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3389/fimmu.2022.933973",
+      "author": "JH Bao",
+      "doi-asserted-by": "publisher",
+      "first-page": "933973",
+      "journal-title": "Front Immunol",
+      "key": "2673_CR1",
+      "unstructured": "Bao JH, Lu WC, Duan H, Ye YQ, Li JB, Liao WT, Li YC, Sun YP (2022) Identification of a novel cuproptosis-related gene signature and integrative analyses in patients with lower-grade gliomas. Front Immunol 13:933973. https://doi.org/10.3389/fimmu.2022.933973",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/sim.5958",
+      "author": "P Blanche",
+      "doi-asserted-by": "publisher",
+      "first-page": "5381",
+      "journal-title": "Stat Med",
+      "key": "2673_CR2",
+      "unstructured": "Blanche P, Dartigues JF, Jacqmin-Gadda H (2013) Estimating and comparing time-dependent areas under receiver operating characteristic curves for censored event times with competing risks. Stat Med 32:5381–5397. https://doi.org/10.1002/sim.5958",
+      "volume": "32",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/(SICI)1097-0142(20000501)88:9\u003c2154::AID-CNCR23\u003e3.0.CO;2-9",
+      "author": "W Bruening",
+      "doi-asserted-by": "publisher",
+      "first-page": "2154",
+      "journal-title": "Cancer",
+      "key": "2673_CR3",
+      "unstructured": "Bruening W, Giasson BI, Klein-Szanto AJ, Lee VM, Trojanowski JQ, Godwin AK (2000) Synucleins are expressed in the majority of breast and ovarian carcinomas and in preneoplastic lesions of the ovary. Cancer 88:2154–2163",
+      "volume": "88",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1111/jcmm.17061",
+      "author": "B Chao",
+      "doi-asserted-by": "publisher",
+      "first-page": "133",
+      "journal-title": "J Cell Mol Med",
+      "key": "2673_CR4",
+      "unstructured": "Chao B, Jiang F, Bai H, Meng P, Wang L, Wang F (2022) Predicting the prognosis of glioma by pyroptosis-related signature. J Cell Mol Med 26:133–143. https://doi.org/10.1111/jcmm.17061",
+      "volume": "26",
+      "year": "2022"
+    },
+    {
+      "author": "H Chen",
+      "first-page": "484",
+      "journal-title": "Zhonghua Zhong Liu Za Zhi",
+      "key": "2673_CR7",
+      "unstructured": "Chen H, Huang Q, Zhai DZ, Dong J, Wang AD, Lan Q (2007) [CDK1 expression and effects of CDK1 silencing on the malignant phenotype of glioma cells]. Zhonghua Zhong Liu Za Zhi 29:484–488",
+      "volume": "29",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1186/1471-2105-14-128",
+      "author": "EY Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "128",
+      "journal-title": "BMC Bioinformatics",
+      "key": "2673_CR6",
+      "unstructured": "Chen EY, Tan CM, Kou Y, Duan Q, Wang Z, Meirelles GV, Clark NR, Ma’ayan A (2013) Enrichr: interactive and collaborative HTML5 gene list enrichment analysis tool. BMC Bioinformatics 14:128. https://doi.org/10.1186/1471-2105-14-128",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.compbiomed.2022.105924",
+      "author": "B Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "105924",
+      "journal-title": "Comput Biol Med",
+      "key": "2673_CR5",
+      "unstructured": "Chen B, Zhou X, Yang L, Zhou H, Meng M, Zhang L, Li J (2022) A cuproptosis activation scoring model predicts neoplasm-immunity interactions and personalized treatments in glioma. Comput Biol Med 148:105924. https://doi.org/10.1016/j.compbiomed.2022.105924",
+      "volume": "148",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1136/jmg.2007.052746",
+      "author": "P de Bie",
+      "doi-asserted-by": "publisher",
+      "first-page": "673",
+      "journal-title": "J Med Genet",
+      "key": "2673_CR8",
+      "unstructured": "de Bie P, Muller P, Wijmenga C, Klomp LW (2007) Molecular pathogenesis of Wilson and Menkes disease: correlation of mutations with molecular defects and disease phenotypes. J Med Genet 44:673–688. https://doi.org/10.1136/jmg.2007.052746",
+      "volume": "44",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/s41596-019-0136-8",
+      "author": "A Dhawan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1377",
+      "journal-title": "Nat Protoc",
+      "key": "2673_CR9",
+      "unstructured": "Dhawan A, Barberis A, Cheng W-C, Domingo E, West C, Maughan T, Scott JG, Harris AL, Buffa FM (2019) Guidelines for using sigQC for systematic evaluation of gene signatures. Nat Protoc 14:1377–1400. https://doi.org/10.1038/s41596-019-0136-8",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "author": "J Friedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "J Stat Softw",
+      "key": "2673_CR10",
+      "unstructured": "Friedman J, Hastie T, Tibshirani R (2010) Regularization paths for generalized Linear models via Coordinate Descent. J Stat Softw 33:1–22",
+      "volume": "33",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41568-021-00417-2",
+      "author": "EJ Ge",
+      "doi-asserted-by": "publisher",
+      "first-page": "102",
+      "journal-title": "Nat Rev Cancer",
+      "key": "2673_CR11",
+      "unstructured": "Ge EJ, Bush AI, Casini A, Cobine PA, Cross JR, DeNicola GM, Dou QP, Franz KJ, Gohil VM, Gupta S, Kaler SG, Lutsenko S, Mittal V, Petris MJ, Polishchuk R, Ralle M, Schilsky ML, Tonks NK, Vahdat LT, Van Aelst L, Xi D, Yuan P, Brady DC, Chang CJ (2022) Connecting copper and cancer: from transition metal signalling to metalloplasia. Nat Rev Cancer 22:102–113. https://doi.org/10.1038/s41568-021-00417-2",
+      "volume": "22",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41587-020-0546-8",
+      "author": "MJ Goldman",
+      "doi-asserted-by": "publisher",
+      "first-page": "675",
+      "journal-title": "Nat Biotechnol",
+      "key": "2673_CR12",
+      "unstructured": "Goldman MJ, Craft B, Hastie M, Repečka K, McDade F, Kamath A, Banerjee A, Luo Y, Rogers D, Brooks AN, Zhu J, Haussler D (2020) Visualizing and interpreting cancer genomics data via the Xena platform. Nat Biotechnol 38:675–678. https://doi.org/10.1038/s41587-020-0546-8",
+      "volume": "38",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fgene.2022.978988",
+      "author": "X Guan",
+      "doi-asserted-by": "publisher",
+      "first-page": "978988",
+      "journal-title": "Front Genet",
+      "key": "2673_CR13",
+      "unstructured": "Guan X, Lu N, Zhang J (2022) The combined prognostic model of copper-dependent to predict the prognosis of pancreatic cancer. Front Genet 13:978988. https://doi.org/10.3389/fgene.2022.978988",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.mgene.2021.100941",
+      "author": "M Guven",
+      "doi-asserted-by": "publisher",
+      "first-page": "100941",
+      "journal-title": "Meta Gene",
+      "key": "2673_CR14",
+      "unstructured": "Guven M, Mete M, Trabulus DC, Ozoran E, Erhan D (2021) Association of TMPRSS6 polymorphisms with hematologic parameters, histopathological data and breast cancer risk in Turkish population. Meta Gene 29:100941. https://doi.org/10.1016/j.mgene.2021.100941",
+      "volume": "29",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nm.2385",
+      "author": "Q Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "860",
+      "journal-title": "Nat Med",
+      "key": "2673_CR15",
+      "unstructured": "Huang Q, Li F, Liu X, Li W, Shi W, Liu FF, O’Sullivan B, He Z, Peng Y, Tan AC, Zhou L, Shen J, Han G, Wang XJ, Thorburn J, Thorburn A, Jimeno A, Raben D, Bedford JS, Li CY (2011) Caspase 3-mediated stimulation of tumor cell repopulation during cancer radiotherapy. Nat Med 17:860–866. https://doi.org/10.1038/nm.2385",
+      "volume": "17",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.08.016",
+      "author": "NM Ioannidis",
+      "doi-asserted-by": "publisher",
+      "first-page": "877",
+      "journal-title": "Am J Hum Genet",
+      "key": "2673_CR16",
+      "unstructured": "Ioannidis NM, Rothstein JH, Pejaver V, Middha S, McDonnell SK, Baheti S, Musolf A, Li Q, Holzinger E, Karyadi D, Cannon-Albright LA, Teerlink CC, Stanford JL, Isaacs WB, Xu J, Cooney KA, Lange EM, Schleutker J, Carpten JD, Powell IJ, Cussenot O, Cancel-Tassin G, Giles GG, MacInnis RJ, Maier C, Hsieh CL, Wiklund F, Catalona WJ, Foulkes WD, Mandal D, Eeles RA, Kote-Jarai Z, Bustamante CD, Schaid DJ, Hastie T, Ostrander EA, Bailey-Wilson JE, Radivojac P, Thibodeau SN, Whittemore AS, Sieh W (2016) REVEL: an Ensemble Method for Predicting the pathogenicity of rare missense variants. Am J Hum Genet 99:877–885. https://doi.org/10.1016/j.ajhg.2016.08.016",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.2217/nnm-2021-0374",
+      "author": "Y Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "303",
+      "journal-title": "Nanomed (Lond)",
+      "key": "2673_CR17",
+      "unstructured": "Jiang Y, Huo Z, Qi X, Zuo T, Wu Z (2022) Copper-induced tumor cell death mechanisms and antitumor theragnostic applications of copper complexes. Nanomed (Lond) 17:303–324. https://doi.org/10.2217/nnm-2021-0374",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/noajnl/vdab074",
+      "author": "K Kaneva",
+      "doi-asserted-by": "publisher",
+      "first-page": "vdab074",
+      "journal-title": "Neurooncol Adv",
+      "key": "2673_CR18",
+      "unstructured": "Kaneva K, O’Halloran K, Triska P, Liu X, Merkurjev D, Bootwalla M, Ryutov A, Cotter JA, Ostrow D, Biegel JA, Gai X (2021) The spectrum of mitochondrial DNA (mtDNA) mutations in pediatric CNS tumors. Neurooncol Adv 3:vdab074. https://doi.org/10.1093/noajnl/vdab074",
+      "volume": "3",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/pl00007419",
+      "author": "M Kawashima",
+      "doi-asserted-by": "publisher",
+      "first-page": "154",
+      "journal-title": "Acta Neuropathol",
+      "key": "2673_CR19",
+      "unstructured": "Kawashima M, Suzuki SO, Doh-ura K, Iwaki T (2000) Alpha-synuclein is expressed in a variety of brain tumors showing neuronal differentiation. Acta Neuropathol 99:154–160. https://doi.org/10.1007/pl00007419",
+      "volume": "99",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1093/nar/gkw377",
+      "author": "MV Kuleshov",
+      "doi-asserted-by": "publisher",
+      "first-page": "W90",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2673_CR20",
+      "unstructured": "Kuleshov MV, Jones MR, Rouillard AD, Fernandez NF, Duan Q, Wang Z, Koplev S, Jenkins SL, Jagodnik KM, Lachmann A, McDermott MG, Monteiro CD, Gundersen GW, Ma’ayan A (2016) Enrichr: a comprehensive gene set enrichment analysis web server 2016 update. Nucleic Acids Res 44:W90–W97. https://doi.org/10.1093/nar/gkw377",
+      "volume": "44",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ncomms12632",
+      "author": "C-W Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "12632",
+      "journal-title": "Nat Commun",
+      "key": "2673_CR21",
+      "unstructured": "Li C-W, Lim S-O, Xia W, Lee H-H, Chan L-C, Kuo C-W, Khoo K-H, Chang S-S, Cha J-H, Kim T, Hsu JL, Wu Y, Hsu J-M, Yamaguchi H, Ding Q, Wang Y, Yao J, Lee C-C, Wu H-J, Sahin AA, Allison JP, Yu D, Hortobagyi GN, Hung M-C (2016) Glycosylation and stabilization of programmed death ligand-1 suppresses T-cell activity. Nat Commun 7:12632. https://doi.org/10.1038/ncomms12632",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s12859-022-04894-6",
+      "author": "L Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "350",
+      "journal-title": "BMC Bioinformatics",
+      "key": "2673_CR22",
+      "unstructured": "Li L, Li L, Sun Q (2022) High expression of cuproptosis-related SLC31A1 gene in relation to unfavorable outcome and deregulated immune cell infiltration in breast cancer: an analysis based on public databases. BMC Bioinformatics 23:350. https://doi.org/10.1186/s12859-022-04894-6",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.cels.2015.12.004",
+      "author": "A Liberzon",
+      "doi-asserted-by": "publisher",
+      "first-page": "417",
+      "journal-title": "Cell Syst",
+      "key": "2673_CR23",
+      "unstructured": "Liberzon A, Birger C, Thorvaldsdóttir H, Ghandi M, Mesirov JP, Tamayo P (2015) The Molecular signatures database (MSigDB) hallmark gene set collection. Cell Syst 1:417–425. https://doi.org/10.1016/j.cels.2015.12.004",
+      "volume": "1",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature10011",
+      "author": "Y-Y Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "167",
+      "journal-title": "Nature",
+      "key": "2673_CR28",
+      "unstructured": "Liu Y-Y, Slotine J-J, Barabási A-L (2011) Controllability of complex networks. Nature 473:167–173. https://doi.org/10.1038/nature10011",
+      "volume": "473",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/nar/gkw772",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e164",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2673_CR26",
+      "unstructured": "Liu X, Wang Y, Ji H, Aihara K, Chen L (2016) Personalized characterization of diseases using sample-specific networks. Nucleic Acids Res 44:e164. https://doi.org/10.1093/nar/gkw772",
+      "volume": "44",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty411",
+      "author": "C-J Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "3771",
+      "journal-title": "Bioinformatics",
+      "key": "2673_CR24",
+      "unstructured": "Liu C-J, Hu F-F, Xia M-X, Han L, Zhang Q, Guo A-Y (2018a) GSCALite: a web server for gene set cancer analysis. Bioinformatics 34:3771–3772. https://doi.org/10.1093/bioinformatics/bty411",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.nicl.2018.10.014",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1070",
+      "journal-title": "NeuroImage: Clin",
+      "key": "2673_CR25",
+      "unstructured": "Liu X, Li Y, Qian Z, Sun Z, Xu K, Wang K, Liu S, Fan X, Li S, Zhang Z, Jiang T, Wang Y (2018b) A radiomic signature as a non-invasive predictor of progression-free survival in patients with lower-grade gliomas. NeuroImage: Clin 20:1070–1077. https://doi.org/10.1016/j.nicl.2018.10.014",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/cancers14112658",
+      "doi-asserted-by": "publisher",
+      "key": "2673_CR27",
+      "unstructured": "Liu X, Wu H, Liu Z (2022a) An Integrative Human Pan-cancer Analysis of Cyclin-Dependent Kinase 1 (CDK1). Cancers (Basel) 14. https://doi.org/10.3390/cancers14112658"
+    },
+    {
+      "DOI": "10.3389/fnmol.2022.1037835",
+      "author": "Y Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1037835",
+      "journal-title": "Front Mol Neurosci",
+      "key": "2673_CR29",
+      "unstructured": "Liu Y, Xiang J, Liao Y, Peng G, Shen C (2022b) Identification of tryptophan metabolic gene-related subtypes, development of prognostic models, and characterization of tumor microenvironment infiltration in gliomas. Front Mol Neurosci 15:1037835. https://doi.org/10.3389/fnmol.2022.1037835",
+      "volume": "15",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/ng.2653",
+      "author": "J Lonsdale",
+      "doi-asserted-by": "publisher",
+      "first-page": "580",
+      "journal-title": "Nat Genet",
+      "key": "2673_CR30",
+      "unstructured": "Lonsdale J, Thomas J, Salvatore M, Phillips R, Lo E, Shad S, Hasz R, Walters G, Garcia F, Young N, Foster B, Moser M, Karasik E, Gillard B, Ramsey K, Sullivan S, Bridge J, Magazine H, Syron J, Fleming J, Siminoff L, Traino H, Mosavel M, Barker L, Jewell S, Rohrer D, Maxim D, Filkins D, Harbach P, Cortadillo E, Berghuis B, Turner L, Hudson E, Feenstra K, Sobin L, Robb J, Branton P, Korzeniewski G, Shive C, Tabor D, Qi L, Groch K, Nampally S, Buia S, Zimmerman A, Smith A, Burges R, Robinson K, Valentino K, Bradbury D, Cosentino M, Diaz-Mayoral N, Kennedy M, Engel T, Williams P, Erickson K, Ardlie K, Winckler W, Getz G, DeLuca D, MacArthur D, Kellis M, Thomson A, Young T, Gelfand E, Donovan M, Meng Y, Grant G, Mash D, Marcus Y, Basile M, Liu J, Zhu J, Tu Z, Cox NJ, Nicolae DL, Gamazon ER, Im HK, Konkashbaev A, Pritchard J, Stevens M, Flutre T, Wen X, Dermitzakis ET, Lappalainen T, Guigo R, Monlong J, Sammeth M, Koller D, Battle A, Mostafavi S, McCarthy M, Rivas M, Maller J, Rusyn I, Nobel A, Wright F, Shabalin A, Feolo M, Sharopova N et al (2013) The genotype-tissue expression (GTEx) project. Nat Genet 45:580–585. https://doi.org/10.1038/ng.2653",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/brain/awt012",
+      "author": "D Martinelli",
+      "doi-asserted-by": "publisher",
+      "first-page": "872",
+      "journal-title": "Brain",
+      "key": "2673_CR31",
+      "unstructured": "Martinelli D, Travaglini L, Drouin CA, Ceballos-Picot I, Rizza T, Bertini E, Carrozzo R, Petrini S, de Lonlay P, El Hachem M, Hubert L, Montpetit A, Torre G, Dionisi-Vici C (2013) MEDNIK syndrome: a novel defect of copper metabolism treatable by zinc acetate therapy. Brain 136:872–881. https://doi.org/10.1093/brain/awt012",
+      "volume": "136",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/0014-4827(80)90051-8",
+      "author": "B McAuslan",
+      "doi-asserted-by": "publisher",
+      "first-page": "147",
+      "journal-title": "Exp Cell Res",
+      "key": "2673_CR32",
+      "unstructured": "McAuslan B, Reilly W (1980) Endothelial cell phagokinesis in response to specific metal ions. Exp Cell Res 130:147–157. https://doi.org/10.1016/0014-4827(80)90051-8",
+      "volume": "130",
+      "year": "1980"
+    },
+    {
+      "DOI": "10.1007/s11033-020-05498-0",
+      "author": "M Mete",
+      "doi-asserted-by": "publisher",
+      "first-page": "4225",
+      "journal-title": "Mol Biol Rep",
+      "key": "2673_CR33",
+      "unstructured": "Mete M, Trabulus DC, Talu CK, Ozoran E, Mutlu T, Tekin B, Guven M (2020) An investigation of the relationship between TMPRSS6 gene expression, genetic variants and clinical findings in breast cancer. Mol Biol Rep 47:4225–4231. https://doi.org/10.1007/s11033-020-05498-0",
+      "volume": "47",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/neuonc/noaa222.124",
+      "author": "F Michniewicz",
+      "doi-asserted-by": "publisher",
+      "first-page": "iii303",
+      "journal-title": "Neurooncology",
+      "key": "2673_CR35",
+      "unstructured": "Michniewicz F, Saletta F, Rouen J, Ziegler D, Vittorio O, COPPER CHELATING AGENTS TO TARGET RECEPTOR TYROSINE KINASE SIGNALLING IN DIFFUSE INTRINSIC PONTINE GLIOMA (DIPG) (2020) DIPG-83. USING. Neurooncology 22:iii303–iii303. https://doi.org/10.1093/neuonc/noaa222.124",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/cmdc.202100172",
+      "author": "F Michniewicz",
+      "doi-asserted-by": "publisher",
+      "first-page": "2315",
+      "journal-title": "ChemMedChem",
+      "key": "2673_CR34",
+      "unstructured": "Michniewicz F, Saletta F, Rouaen JRC, Hewavisenti RV, Mercatelli D, Cirillo G, Giorgi FM, Trahair T, Ziegler D, Vittorio O (2021) Copper: an intracellular Achilles’ Heel allowing the targeting of epigenetics, kinase pathways, and cell metabolism in Cancer therapeutics. ChemMedChem 16:2315–2329. https://doi.org/10.1002/cmdc.202100172",
+      "volume": "16",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1158/1538-7445.AM2022-5716",
+      "author": "F Michniewicz",
+      "doi-asserted-by": "publisher",
+      "first-page": "5716",
+      "journal-title": "Cancer Res",
+      "key": "2673_CR36",
+      "unstructured": "Michniewicz F, Saletta F, Watkinson T, Mercatelli D, Giorgi FM, Bell J, Tsoli M, Ziegler D, Vittorio O (2022) Abstract 5716: using copper chelating agents to simultaneously target epigenetic mechanisms and receptor tyrosine kinase (RTK) signaling in diffuse intrinsic pontine glioma (DIPG). Cancer Res 82:5716–5716. https://doi.org/10.1158/1538-7445.AM2022-5716",
+      "volume": "82",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/nar/gkv1189",
+      "author": "NA O’Leary",
+      "doi-asserted-by": "publisher",
+      "first-page": "D733",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2673_CR37",
+      "unstructured": "O’Leary NA, Wright MW, Brister JR, Ciufo S, Haddad D, McVeigh R, Rajput B, Robbertse B, Smith-White B, Ako-Adjei D, Astashyn A, Badretdin A, Bao Y, Blinkova O, Brover V, Chetvernin V, Choi J, Cox E, Ermolaeva O, Farrell CM, Goldfarb T, Gupta T, Haft D, Hatcher E, Hlavina W, Joardar VS, Kodali VK, Li W, Maglott D, Masterson P, McGarvey KM, Murphy MR, O’Neill K, Pujar S, Rangwala SH, Rausch D, Riddick LD, Schoch C, Shkeda A, Storz SS, Sun H, Thibaud-Nissen F, Tolstoy I, Tully RE, Vatsan AR, Wallin C, Webb D, Wu W, Landrum MJ, Kimchi A, Tatusova T, DiCuccio M, Kitts P, Murphy TD, Pruitt KD (2016) Reference sequence (RefSeq) database at NCBI: current status, taxonomic expansion, and functional annotation. Nucleic Acids Res 44:D733–D745. https://doi.org/10.1093/nar/gkv1189",
+      "volume": "44",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1007538",
+      "author": "VVH Pham",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007538",
+      "journal-title": "PLoS Comput Biol",
+      "key": "2673_CR39",
+      "unstructured": "Pham VVH, Liu L, Bracken CP, Goodall GJ, Long Q, Li J, Le TD (2019) CBNA: a control theory based method for identifying coding and non-coding cancer drivers. PLoS Comput Biol 15:e1007538. https://doi.org/10.1371/journal.pcbi.1007538",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa797",
+      "author": "VVH Pham",
+      "doi-asserted-by": "publisher",
+      "first-page": "i583",
+      "journal-title": "Bioinformatics",
+      "key": "2673_CR38",
+      "unstructured": "Pham VVH, Liu L, Bracken CP, Goodall GJ, Li J, Le TD (2020) DriverGroup: a novel method for identifying driver gene groups. Bioinformatics 36:i583–i591. https://doi.org/10.1093/bioinformatics/btaa797",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btab262",
+      "author": "VVH Pham",
+      "doi-asserted-by": "publisher",
+      "first-page": "3285",
+      "journal-title": "Bioinformatics",
+      "key": "2673_CR40",
+      "unstructured": "Pham VVH, Liu L, Bracken CP, Nguyen T, Goodall GJ, Li J, Le TD (2021) pDriver: a novel method for unravelling personalized coding and miRNA cancer drivers. Bioinformatics 37:3285–3292. https://doi.org/10.1093/bioinformatics/btab262",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13578-023-01083-7",
+      "author": "EM Poursani",
+      "doi-asserted-by": "publisher",
+      "first-page": "132",
+      "journal-title": "Cell Bioscience",
+      "key": "2673_CR41",
+      "unstructured": "Poursani EM, Mercatelli D, Raninga P, Bell JL, Saletta F, Kohane FV, Neumann DP, Zheng Y, Rouaen JRC, Jue TR, Michniewicz FT, Schadel P, Kasiou E, Tsoli M, Cirillo G, Waters S, Shai-Hee T, Cazzoli R, Brettle M, Slapetova I, Kasherman M, Whan R, Souza-Fonseca-Guimaraes F, Vahdat L, Ziegler D, Lock JG, Giorgi FM, Khanna K, Vittorio O (2023) Copper chelation suppresses epithelial-mesenchymal transition by inhibition of canonical and non-canonical TGF-β signaling pathways in cancer. Cell Bioscience 13:132. https://doi.org/10.1186/s13578-023-01083-7",
+      "volume": "13",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1021/cr078203u",
+      "author": "EL Que",
+      "doi-asserted-by": "publisher",
+      "first-page": "1517",
+      "journal-title": "Chem Rev",
+      "key": "2673_CR42",
+      "unstructured": "Que EL, Domaille DW, Chang CJ (2008) Metals in neurobiology: probing their chemistry and biology with molecular imaging. Chem Rev 108:1517–1549. https://doi.org/10.1021/cr078203u",
+      "volume": "108",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/nar/gkv007",
+      "author": "ME Ritchie",
+      "doi-asserted-by": "publisher",
+      "first-page": "e47",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2673_CR43",
+      "unstructured": "Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, Smyth GK (2015) Limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Res 43:e47. https://doi.org/10.1093/nar/gkv007",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1158/1538-7445.AM2022-5214",
+      "author": "JR Rouaen",
+      "doi-asserted-by": "publisher",
+      "first-page": "5214",
+      "journal-title": "Cancer Res",
+      "key": "2673_CR44",
+      "unstructured": "Rouaen JR, Mercatelli D, Saletta F, Poursani EM, Murray JE, Tedla N, Giorgi FM, Vittorio O (2022) Abstract 5214: copper chelation overcomes the immunosuppressive tumor microenvironment in neuroblastoma. Cancer Res 82:5214–5214. https://doi.org/10.1158/1538-7445.AM2022-5214",
+      "volume": "82",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1152/ajpheart.01015.2001",
+      "author": "C Sen",
+      "doi-asserted-by": "publisher",
+      "first-page": "H1821",
+      "journal-title": "Heart Circ Physiol",
+      "key": "2673_CR45",
+      "unstructured": "Sen C, Khanna S, Venojärvi M, Trikha P, Ellison E, Hunt T, Roy S (2002) Copper-Induced Vascular endothelial growth factor expression and Wound Healing. American journal of physiology. Heart Circ Physiol 282:H1821–H1827. https://doi.org/10.1152/ajpheart.01015.2001",
+      "volume": "282",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1007/s12032-022-01748-2",
+      "author": "S Sofi",
+      "doi-asserted-by": "publisher",
+      "first-page": "133",
+      "journal-title": "Med Oncol",
+      "key": "2673_CR46",
+      "unstructured": "Sofi S, Mehraj U, Qayoom H, Aisha S, Almilaibary A, Alkhanani M, Mir MA (2022) Targeting cyclin-dependent kinase 1 (CDK1) in cancer: molecular docking and dynamic simulations of potential CDK1 inhibitors. Med Oncol 39:133. https://doi.org/10.1007/s12032-022-01748-2",
+      "volume": "39",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1021/cr950046o",
+      "author": "EI Solomon",
+      "doi-asserted-by": "publisher",
+      "first-page": "2563",
+      "journal-title": "Chem Rev",
+      "key": "2673_CR47",
+      "unstructured": "Solomon EI, Sundaram UM, Machonkin TE (1996) Multicopper oxidases and oxygenases. Chem Rev 96:2563–2606. https://doi.org/10.1021/cr950046o",
+      "volume": "96",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.958368",
+      "author": "Q Song",
+      "doi-asserted-by": "publisher",
+      "first-page": "958368",
+      "journal-title": "Front Immunol",
+      "key": "2673_CR48",
+      "unstructured": "Song Q, Zhou R, Shu F, Fu W (2022) Cuproptosis scoring system to predict the clinical outcome and immune response in bladder cancer. Front Immunol 13:958368. https://doi.org/10.3389/fimmu.2022.958368",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1073/pnas.0506580102",
+      "author": "A Subramanian",
+      "doi-asserted-by": "publisher",
+      "first-page": "15545",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "2673_CR49",
+      "unstructured": "Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, Paulovich A, Pomeroy SL, Golub TR, Lander ES, Mesirov JP (2005) Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci U S A 102:15545–15550. https://doi.org/10.1073/pnas.0506580102",
+      "volume": "102",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/nar/gky1131",
+      "author": "D Szklarczyk",
+      "doi-asserted-by": "publisher",
+      "first-page": "D607",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2673_CR50",
+      "unstructured": "Szklarczyk D, Gable AL, Lyon D, Junge A, Wyder S, Huerta-Cepas J, Simonovic M, Doncheva NT, Morris JH, Bork P, Jensen LJ, Mering CV (2019) STRING v11: protein-protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. Nucleic Acids Res 47:D607–d613. https://doi.org/10.1093/nar/gky1131",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/cancers14163986",
+      "doi-asserted-by": "crossref",
+      "key": "2673_CR51",
+      "unstructured": "Tang S, Zhao L, Wu X-B, Wang Z, Cai L-Y, Pan D, Li Y, Zhou Y, Shen Y (2022) Identification of a Novel cuproptosis-related gene signature for Prognostic Implication in Head and Neck squamous carcinomas. Cancers, p 14"
+    },
+    {
+      "DOI": "10.3389/fimmu.2022.899710",
+      "doi-asserted-by": "publisher",
+      "key": "2673_CR52",
+      "unstructured": "Teng C, Zhu Y, Li Y, Dai L, Pan Z, Wanggou S, Li X (2022) Recurrence- and Malignant Progression-Associated biomarkers in low-Grade Gliomas and their roles in Immunotherapy. 13. https://doi.org/10.3389/fimmu.2022.899710"
+    },
+    {
+      "DOI": "10.1007/978-1-4757-3294-8",
+      "doi-asserted-by": "crossref",
+      "key": "2673_CR53",
+      "unstructured": "Therneau TM, Grambsch PM (2000) Modeling Survival Data: extending the Cox Model. Springer"
+    },
+    {
+      "DOI": "10.1016/j.cub.2021.03.054",
+      "author": "T Tsang",
+      "doi-asserted-by": "publisher",
+      "first-page": "R421",
+      "journal-title": "Curr Biol",
+      "key": "2673_CR54",
+      "unstructured": "Tsang T, Davis CI, Brady DC (2021) Copper biology. Curr Biol 31:R421–r427. https://doi.org/10.1016/j.cub.2021.03.054",
+      "volume": "31",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1073/pnas.1700200114",
+      "doi-asserted-by": "publisher",
+      "key": "2673_CR55",
+      "unstructured": "Turriani E, Lázaro DF, Ryazanov S, Leonov A, Giese A, Schön M, Schön MP, Griesinger C, Outeiro TF, Arndt-Jovin DJ, Becker D (2017) Treatment with diphenyl–pyrazole compound anle138b/c reveals that α-synuclein protects melanoma cells from autophagic cell death. Proceedings of the National Academy of Sciences 114: E4971-E4977. https://doi.org/10.1073/pnas.1700200114"
+    },
+    {
+      "DOI": "10.1158/0008-5472.Can-20-0471",
+      "author": "F Voli",
+      "doi-asserted-by": "publisher",
+      "first-page": "4129",
+      "journal-title": "Cancer Res",
+      "key": "2673_CR56",
+      "unstructured": "Voli F, Valli E, Lerra L, Kimpton K, Saletta F, Giorgi FM, Mercatelli D, Rouaen JRC, Shen S, Murray JE, Ahmed-Cox A, Cirillo G, Mayoh C, Beavis PA, Haber M, Trapani JA, Kavallaris M, Vittorio O (2020) Intratumoral Copper modulates PD-L1 expression and influences Tumor Immune Evasion. Cancer Res 80:4129–4144. https://doi.org/10.1158/0008-5472.Can-20-0471",
+      "volume": "80",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nmeth.2810",
+      "author": "B Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "333",
+      "journal-title": "Nat Methods",
+      "key": "2673_CR57",
+      "unstructured": "Wang B, Mezlini AM, Demir F, Fiume M, Tu Z, Brudno M, Haibe-Kains B, Goldenberg A (2014) Similarity network fusion for aggregating data types on a genomic scale. Nat Methods 11:333–337. https://doi.org/10.1038/nmeth.2810",
+      "volume": "11",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/neuonc/nou130",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "282",
+      "journal-title": "Neurooncology",
+      "key": "2673_CR58",
+      "unstructured": "Wang Y, Qian T, You G, Peng X, Chen C, You Y, Yao K, Wu C, Ma J, Sha Z, Wang S, Jiang T (2015) Localizing seizure-susceptible brain regions associated with low-grade gliomas using voxel-based lesion-symptom mapping. Neurooncology 17:282–288. https://doi.org/10.1093/neuonc/nou130",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.2764",
+      "author": "JN Weinstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "1113",
+      "journal-title": "Nat Genet",
+      "key": "2673_CR59",
+      "unstructured": "Weinstein JN, Collisson EA, Mills GB, Shaw KR, Ozenberger BA, Ellrott K, Shmulevich I, Sander C, Stuart JM (2013) The Cancer Genome Atlas Pan-cancer analysis project. Nat Genet 45:1113–1120. https://doi.org/10.1038/ng.2764",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/cpz1.90",
+      "author": "Z Xie",
+      "doi-asserted-by": "publisher",
+      "first-page": "e90",
+      "journal-title": "Curr Protocols",
+      "key": "2673_CR60",
+      "unstructured": "Xie Z, Bailey A, Kuleshov MV, Clarke DJB, Evangelista JE, Jenkins SL, Lachmann A, Wojciechowicz ML, Kropiwnicki E, Jagodnik KM, Jeon M, Ma’ayan A (2021) Gene Set Knowledge Discovery with Enrichr. Curr Protocols 1:e90. https://doi.org/10.1002/cpz1.90",
+      "volume": "1",
+      "year": "2021"
+    },
+    {
+      "author": "Q Ye",
+      "first-page": "429",
+      "journal-title": "Oncol Rep",
+      "key": "2673_CR61",
+      "unstructured": "Ye Q, Wang TF, Peng YF, Xie J, Feng B, Qiu MY, Li LH, Lu AG, Liu BY, Zheng MH (2010) Expression of alpha-, beta- and gamma-synuclein in colorectal cancer, and potential clinical significance in progression of the disease. Oncol Rep 23:429–436",
+      "volume": "23",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gkx787",
+      "author": "X Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e170",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2673_CR62",
+      "unstructured": "Yu X, Zhang J, Sun S, Zhou X, Zeng T, Chen L (2017) Individual-specific edge-network analysis for disease prediction. Nucleic Acids Res 45:e170. https://doi.org/10.1093/nar/gkx787",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12885-022-09289-7",
+      "author": "X Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "406",
+      "journal-title": "BMC Cancer",
+      "key": "2673_CR63",
+      "unstructured": "Zhang X, Wu Z, Ma K (2022) SNCA correlates with immune infiltration and serves as a prognostic biomarker in lung adenocarcinoma. BMC Cancer 22:406. https://doi.org/10.1186/s12885-022-09289-7",
+      "volume": "22",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.gpb.2020.10.005",
+      "author": "Z Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genom Proteom Bioinform",
+      "key": "2673_CR64",
+      "unstructured": "Zhao Z, Zhang K-N, Wang Q, Li G, Zeng F, Zhang Y, Wu F, Chai R, Wang Z, Zhang C, Zhang W, Bao Z, Jiang T (2021) Chinese Glioma Genome Atlas (CGGA): a Comprehensive Resource with functional genomic data from Chinese glioma patients. Genom Proteom Bioinform 19:1–12. https://doi.org/10.1016/j.gpb.2020.10.005",
+      "volume": "19",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.2147/cmar.S346519",
+      "author": "D Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1475",
+      "journal-title": "Cancer Manag Res",
+      "key": "2673_CR65",
+      "unstructured": "Zheng D, Fu W, Jin L, Jiang X, Jiang W, Guan Y, Hao R (2022) The overexpression and clinical significance of AP1S1 in breast Cancer. Cancer Manag Res 14:1475–1492. https://doi.org/10.2147/cmar.S346519",
+      "volume": "14",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/ijc.31374",
+      "author": "M Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "921",
+      "journal-title": "Int J Cancer",
+      "key": "2673_CR66",
+      "unstructured": "Zhou M, Liu X, Li Z, Huang Q, Li F, Li C-Y (2018) Caspase-3 regulates the migration, invasion and metastasis of colon cancer cells. Int J Cancer 143:921–930. https://doi.org/10.1002/ijc.31374",
+      "volume": "143",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fmolb.2022.776808",
+      "author": "Z Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "776808",
+      "journal-title": "Front Mol Biosci",
+      "key": "2673_CR67",
+      "unstructured": "Zhou Z, Xu S, Jiang L, Tan Z, Wang J (2022) A systematic Pan-cancer analysis of CASP3 as a potential target for Immunotherapy. Front Mol Biosci 9:776808. https://doi.org/10.3389/fmolb.2022.776808",
+      "volume": "9",
+      "year": "2022"
+    }
+  ],
+  "reference-count": 67,
+  "references-count": 67,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-024-02673-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum. Genet."
+  ],
+  "source": "Crossref",
+  "title": [
+    "A novel network-based method identifies a cuproplasia-related pan-cancer gene signature to predict patient outcome"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

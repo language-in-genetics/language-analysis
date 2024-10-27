@@ -1,0 +1,595 @@
+{
+  "DOI": "10.1038/s41431-023-01284-1",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-023-01284-1",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eGermline structural variants (SVs) are challenging to resolve by conventional genetic testing assays. Long-read sequencing has improved the global characterization of SVs, but its sensitivity at cancer susceptibility loci has not been reported. Nanopore long-read genome sequencing was performed for nineteen individuals with pathogenic copy number alterations in \u003cjats:italic\u003eBRCA1\u003c/jats:italic\u003e, \u003cjats:italic\u003eBRCA2\u003c/jats:italic\u003e, \u003cjats:italic\u003eCHEK2\u003c/jats:italic\u003e and \u003cjats:italic\u003ePALB2\u003c/jats:italic\u003e identified by prior clinical testing. Fourteen variants, which spanned single exons to whole genes and included a tandem duplication, were accurately represented. Defining the precise breakpoints of SVs in \u003cjats:italic\u003eBRCA1\u003c/jats:italic\u003e and \u003cjats:italic\u003eCHEK2\u003c/jats:italic\u003e revealed unforeseen allelic heterogeneity and informed the mechanisms underlying the formation of recurrent deletions. Integrating read-based and statistical phasing further helped define extended haplotypes associated with founder alleles. Long-read sequencing is a sensitive method for characterizing private, recurrent and founder SVs underlying breast cancer susceptibility. Our findings demonstrate the potential for nanopore sequencing as a powerful genetic testing assay in the hereditary cancer setting.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1284"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "14 February 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "23 December 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "10 January 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "16 February 2023"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by the University of British Columbia Clinical Research Ethics Board (#H19-01594). Study participants were ascertained prospectively and written informed consent was obtained for each participant."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Dixon",
+      "given": "Katherine",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Shen",
+      "given": "Yaoqing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "O’Neill",
+      "given": "Kieran",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mungall",
+      "given": "Karen L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chan",
+      "given": "Simon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bilobram",
+      "given": "Steve",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bezeau",
+      "given": "Marjorie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sharma",
+      "given": "Alshanee",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fok",
+      "given": "Alexandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mungall",
+      "given": "Andrew J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moore",
+      "given": "Richard",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bosdet",
+      "given": "Ian",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2600-1197",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Thibodeau",
+      "given": "My Linh",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sun",
+      "given": "Sophie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8514-9861",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Yip",
+      "given": "Stephen",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7413-4314",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Schrader",
+      "given": "Kasmintan A.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3394-2208",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Jones",
+      "given": "Steven J. M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        16
+      ]
+    ],
+    "date-time": "2023-02-16T07:06:14Z",
+    "timestamp": 1676531174000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        10
+      ]
+    ],
+    "date-time": "2023-05-10T23:08:42Z",
+    "timestamp": 1683760122000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100005614",
+      "award": [
+        "NA",
+        "NA"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Provincial Health Services Authority, British Columbia | BC Cancer Agency"
+    },
+    {
+      "name": "BC Cancer Foundation Neil Macrae Hereditary Cancer Research Fund"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        6
+      ]
+    ],
+    "date-time": "2024-03-06T06:05:17Z",
+    "timestamp": 1709705117951
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        16
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            16
+          ]
+        ],
+        "date-time": "2023-02-16T00:00:00Z",
+        "timestamp": 1676505600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            16
+          ]
+        ],
+        "date-time": "2023-02-16T00:00:00Z",
+        "timestamp": 1676505600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01284-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01284-1",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-023-01284-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "602-606",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        16
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        5
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3322/caac.21660",
+      "author": "H Sung",
+      "doi-asserted-by": "publisher",
+      "first-page": "209",
+      "journal-title": "CA Cancer J Clin",
+      "key": "1284_CR1",
+      "unstructured": "Sung H, Ferlay J, Siegel RL, Laversanne M, Soerjomataram I, Jemal A, et al. Global Cancer Statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2021;71:209–49.",
+      "volume": "71",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s10549-016-4085-4",
+      "author": "M Pritzlaff",
+      "doi-asserted-by": "publisher",
+      "first-page": "575",
+      "journal-title": "Breast Cancer Res Treat",
+      "key": "1284_CR2",
+      "unstructured": "Pritzlaff M, Summerour P, McFarland R, Li S, Reineke P, Dolinsky JS, et al. Male breast cancer in a multi-gene panel testing cohort: insights and unexpected results. Breast Cancer Res Treat. 2017;161:575–86.",
+      "volume": "161",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1158/1538-7445.SABCS20-PS8-40",
+      "author": "RS Chamseddine",
+      "doi-asserted-by": "publisher",
+      "first-page": "PS8",
+      "journal-title": "Cancer Res",
+      "key": "1284_CR3",
+      "unstructured": "Chamseddine RS, Wang J, Yin K, Singh P, Zhou J, Braun D, et al. Abstract PS8-40: Penetrance of male breast cancer susceptibility genes: a systematic review. Cancer Res. 2021;81:PS8–40.",
+      "volume": "81",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/gim.2014.40",
+      "author": "H LaDuca",
+      "doi-asserted-by": "publisher",
+      "first-page": "830",
+      "journal-title": "Genet Med",
+      "key": "1284_CR4",
+      "unstructured": "LaDuca H, Stuenkel AJ, Dolinsky JS, Keiles S, Tandy S, Pesaran T, et al. Utilization of multigene panels in hereditary cancer predisposition testing: analysis of more than 2,000 patients. Genet Med. 2014;16:830–7.",
+      "volume": "16",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41436-021-01187-w",
+      "author": "SE Lincoln",
+      "doi-asserted-by": "publisher",
+      "first-page": "1673",
+      "journal-title": "Genet Med",
+      "key": "1284_CR5",
+      "unstructured": "Lincoln SE, Hambuch T, Zook JM, Bristow SL, Hatchell K, Truty R, et al. One in seven pathogenic variants can be challenging to detect by NGS: an analysis of 450,000 patients with implications for clinical sensitivity and genetic test implementation. Genet Med. 2021;23:1673–80.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.06.006",
+      "author": "DE Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "1436",
+      "journal-title": "Am J Hum Genet",
+      "key": "1284_CR6",
+      "unstructured": "Miller DE, Sulovari A, Wang T, Loucks H, Hoekzema K, Munson KM, et al. Targeted long-read sequencing identifies missing disease-causing variation. Am J Hum Genet. 2021;108:1436–49.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41587-020-0503-6",
+      "author": "K Shafin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1044",
+      "journal-title": "Nat Biotechnol",
+      "key": "1284_CR7",
+      "unstructured": "Shafin K, Pesout T, Lorig-Roach R, Haukness M, Olsen HE, Bosworth C, et al. Nanopore sequencing and the Shasta toolkit enable efficient de novo assembly of eleven human genomes. Nat Biotechnol. 2020;38:1044–53.",
+      "volume": "38",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13225-y",
+      "author": "O Delaneau",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1284_CR8",
+      "unstructured": "Delaneau O, Zagury J-F, Robinson MR, Marchini JL, Dermitzakis ET. Accurate, scalable and integrative haplotype estimation. Nat Commun. 2019;10:5436.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1086/339434",
+      "author": "N Puget",
+      "doi-asserted-by": "publisher",
+      "first-page": "858",
+      "journal-title": "Am J Hum Genet",
+      "key": "1284_CR9",
+      "unstructured": "Puget N, Gad S, Perrin-Vidoz L, Sinilnikova OM, Stoppa-Lyonnet D, Lenoir GM, et al. Distinct BRCA1 rearrangements involving the BRCA1 pseudogene suggest the existence of a recombination hot spot. Am J Hum Genet. 2002;70:858–65.",
+      "volume": "70",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1086/302211",
+      "author": "N Puget",
+      "doi-asserted-by": "publisher",
+      "first-page": "300",
+      "journal-title": "Am J Hum Genet",
+      "key": "1284_CR10",
+      "unstructured": "Puget N, Sinilnikova OM, Stoppa-Lyonnet D, Audoynaud C, Pages S, Lynch HT, et al. An Alu-mediated 6-kb duplication in the BRCA1 gene: a new founder mutation? Am J Hum Genet. 1999;64:300–2.",
+      "volume": "64",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1001/jama.295.12.1379",
+      "author": "T Walsh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1379",
+      "journal-title": "JAMA.",
+      "key": "1284_CR11",
+      "unstructured": "Walsh T, Casadei S, Coats KH, Swisher E, Stray SM, Higgins J, et al. Spectrum of mutations in BRCA1, BRCA2, CHEK2, and TP53 in families at high risk of breast cancer. JAMA. 2006;295:1379–88.",
+      "volume": "295",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1007/s10549-006-9320-y",
+      "author": "C Cybulski",
+      "doi-asserted-by": "publisher",
+      "first-page": "119",
+      "journal-title": "Breast Cancer Res Treat",
+      "key": "1284_CR12",
+      "unstructured": "Cybulski C, Wokołorczyk D, Huzarski T, Byrski T, Gronwald J, Górski B, et al. A deletion in CHEK2 of 5,395 bp predisposes to breast cancer in Poland. Breast Cancer Res Treat. 2006;102:119–22.",
+      "volume": "102",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.3390/cancers13133171",
+      "author": "SM Caputo",
+      "doi-asserted-by": "publisher",
+      "first-page": "17",
+      "journal-title": "Cancers",
+      "key": "1284_CR13",
+      "unstructured": "Caputo SM, Telly D, Briaux A, Sesen J, Ceppi M, Bonnet F, et al. 5′ region large genomic rearrangements in the BRCA1 gene in French families: identification of a tandem triplication and nine distinct deletions with five recurrent breakpoints. Cancers. 2021;13:17.",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.12.017",
+      "author": "S Newman",
+      "doi-asserted-by": "publisher",
+      "first-page": "208",
+      "journal-title": "Am J Hum Genet",
+      "key": "1284_CR14",
+      "unstructured": "Newman S, Hermetz KE, Weckselblatt B, Rudd MK. Next-generation sequencing of duplication CNVs reveals that most are tandem and some create fusion genes at breakpoints. Am J Hum Genet. 2015;96:208.",
+      "volume": "96",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0880-8",
+      "author": "ML Thibodeau",
+      "doi-asserted-by": "publisher",
+      "first-page": "1892",
+      "journal-title": "Genet Med",
+      "key": "1284_CR15",
+      "unstructured": "Thibodeau ML, O’Neill K, Dixon K, Reisle C, Mungall KL, Krzywinski M, et al. Improved structural variant interpretation for hereditary cancer susceptibility using long-read sequencing. Genet Med. 2020;22:1892–7.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2020-107320",
+      "author": "T Walsh",
+      "doi-asserted-by": "publisher",
+      "first-page": "850",
+      "journal-title": "J Med Genet",
+      "key": "1284_CR16",
+      "unstructured": "Walsh T, Casadei S, Munson KM, Eng M, Mandell JB, Gulsuner S, et al. CRISPR–Cas9/long-read sequencing approach to identify cryptic mutations in BRCA1 and other tumour suppressor genes. J Med Genet. 2021;58:850–2.",
+      "volume": "58",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/gim.2013.84",
+      "author": "M Luo",
+      "doi-asserted-by": "publisher",
+      "first-page": "149",
+      "journal-title": "Genet Med",
+      "key": "1284_CR17",
+      "unstructured": "Luo M, Liu L, Peter I, Zhu J, Scott SA, Zhao G, et al. An Ashkenazi Jewish SMN1 haplotype specific to duplication alleles improves pan-ethnic carrier screening for spinal muscular atrophy. Genet Med. 2014;16:149–56.",
+      "volume": "16",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007308",
+      "author": "Y Choi",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007308",
+      "journal-title": "PLOS Genet",
+      "key": "1284_CR18",
+      "unstructured": "Choi Y, Chan AP, Kirkness E, Telenti A, Schork NJ. Comparison of phasing strategies for whole human genomes. PLOS Genet. 2018;14:e1007308.",
+      "volume": "14",
+      "year": "2018"
+    },
+    {
+      "key": "1284_CR19",
+      "unstructured": "Accuracy. https://nanoporetech.com/accuracy. Accessed 22 Dec 2022."
+    },
+    {
+      "DOI": "10.1093/nar/gky411",
+      "author": "T Gabrieli",
+      "doi-asserted-by": "publisher",
+      "first-page": "e87",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1284_CR20",
+      "unstructured": "Gabrieli T, Sharim H, Fridman D, Arbib N, Michaeli Y, Ebenstein Y. Selective nanopore sequencing of human BRCA1 by Cas9-assisted targeting of chromosome segments (CATCH). Nucleic Acids Res. 2018;46:e87–e87.",
+      "volume": "46",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 20,
+  "references-count": 20,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-023-01284-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Defining the heterogeneity of unbalanced structural variation underlying breast cancer susceptibility by nanopore genome sequencing"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "31"
+}

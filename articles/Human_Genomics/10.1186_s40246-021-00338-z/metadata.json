@@ -1,0 +1,801 @@
+{
+  "DOI": "10.1186/s40246-021-00338-z",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00338-z",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eTrisomy 18 syndrome (Edwards syndrome, ES) is a type of aneuploidy caused by the presence of an extra chromosome 18. Aneuploidy is the leading cause of early pregnancy loss, intellectual disability, and multiple congenital anomalies. The research of trisomy 18 is progressing slowly, and the molecular characteristics of the disease mechanism and phenotype are still largely unclear.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn this study, we used the commercial Chromium platform (10× Genomics) to perform sc-ATAC-seq to measure chromatin accessibility in 11,611 single umbilical cord blood cells derived from one trisomy 18 syndrome patient and one healthy donor. We obtained 13 distinct major clusters of cells and identified them as 6 human umbilical cord blood mononuclear cell types using analysis tool. Compared with the NC group, the ES group had a lower ratio of T cells to NK cells, the ratio of monocytes/DC cell population did not change significantly, and the ratio of B cell nuclear progenitor and megakaryocyte erythroid cells was higher. The differential genes of ME-0 are enriched in Human T cell leukemia virus 1 infection pathway, and the differential peak genes of ME-1 are enriched in apopotosis pathway. We found that CCNB2 and MCM3 may be vital to the development of trisomy 18. CCNB2 and MCM3, which have been reported to be essential components of the cell cycle and chromatin.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe have identified 6 cell populations in cord blood. Disorder in megakaryocyte erythroid cells implicates trisomy 18 in perturbing fetal hematopoiesis. We identified a pathway in which the master differential regulatory pathway in the ME-0 cell population involves human T cell leukemia virus 1 infection, a pathway that is dysregulated in patients with trisomy 18 and which may increase the risk of leukemia in patients with trisomy 18. CCNB2 and MCM3 in progenitor may be vital to the development of trisomy 18. CCNB2 and MCM3, which have been reported to be essential components of the cell cycle and chromatin, may be related to chromosomal abnormalities in trisomy 18.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "338"
+  ],
+  "article-number": "40",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "19 April 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "29 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "30 June 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The Institutional Review Board of the Shenzhen People’s Hospital approved the current study, and the study protocol adhered to the Declaration of Helsinki. Written informed consent was given by all participants. Ethical review number of this study: LL-KT-2018356."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Qiu",
+      "given": "Xiaofen",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Yu",
+      "given": "Haiyan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wu",
+      "given": "Hongwei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hu",
+      "given": "Zhiyang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhou",
+      "given": "Jun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lin",
+      "given": "Hua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xue",
+      "given": "Wen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cai",
+      "given": "Wanxia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Jiejing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yan",
+      "given": "Qiang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dai",
+      "given": "Weier",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Ming",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tang",
+      "given": "Donge",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6840-9158",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Dai",
+      "given": "Yong",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        30
+      ]
+    ],
+    "date-time": "2021-06-30T13:02:56Z",
+    "timestamp": 1625058176000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        30
+      ]
+    ],
+    "date-time": "2021-06-30T13:18:06Z",
+    "timestamp": 1625059086000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100012245",
+      "award": [
+        "No. 2017B020209001"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Science and Technology Planning Project of Guangdong Province"
+    },
+    {
+      "award": [
+        "JCYJ20180305163846927"
+      ],
+      "name": "the science and technology plan of Shenzhen"
+    },
+    {
+      "award": [
+        "20-065-76"
+      ],
+      "name": "Guangxi Key Laboratory of Metabolic Diseases Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        14
+      ]
+    ],
+    "date-time": "2024-03-14T16:03:34Z",
+    "timestamp": 1710432214152
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        30
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            30
+          ]
+        ],
+        "date-time": "2021-06-30T00:00:00Z",
+        "timestamp": 1625011200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            30
+          ]
+        ],
+        "date-time": "2021-06-30T00:00:00Z",
+        "timestamp": 1625011200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00338-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00338-z/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00338-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        30
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        30
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1186/1750-1172-7-81",
+      "author": "A Cereda",
+      "doi-asserted-by": "publisher",
+      "first-page": "81",
+      "issue": "1",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "338_CR1",
+      "unstructured": "Cereda A, Carey JC. The trisomy 18 syndrome. Orphanet J Rare Dis. 2012;7(1):81. https://doi.org/10.1186/1750-1172-7-81.",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/s0140-6736(60)90675-9",
+      "author": "JH Edwards",
+      "doi-asserted-by": "publisher",
+      "first-page": "787",
+      "issue": "7128",
+      "journal-title": "Lancet",
+      "key": "338_CR2",
+      "unstructured": "Edwards JH, Harnden DG, Cameron AH, Crosse VM, Wolff OH. A new trisomic syndrome. Lancet. 1960;1(7128):787–90. https://doi.org/10.1016/s0140-6736(60)90675-9.",
+      "volume": "1",
+      "year": "1960"
+    },
+    {
+      "DOI": "10.1016/s0022-3476(60)80241-7",
+      "author": "DW Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "338",
+      "issue": "3",
+      "journal-title": "J Pediatr",
+      "key": "338_CR3",
+      "unstructured": "Smith DW, Patau K, Therman E, Inhorn SL. A new autosomal trisomy syndrome: multiple congenital anomalies caused by an extra chromosome. J Pediatr. 1960;57(3):338–45. https://doi.org/10.1016/s0022-3476(60)80241-7.",
+      "volume": "57",
+      "year": "1960"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.61365",
+      "author": "N Goel",
+      "doi-asserted-by": "publisher",
+      "first-page": "2382",
+      "issue": "12",
+      "journal-title": "Am J Med Genet A",
+      "key": "338_CR4",
+      "unstructured": "Goel N, Morris JK, Tucker D, de Walle HEK, Bakker MK, Kancherla V, et al. Trisomy 13 and 18-Prevalence and mortality-A multi-registry population based analysis. Am J Med Genet A. 2019;179(12):2382–92. https://doi.org/10.1002/ajmg.a.61365.",
+      "volume": "179",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1534/genetics.108.090878",
+      "author": "EM Torres",
+      "doi-asserted-by": "publisher",
+      "first-page": "737",
+      "issue": "2",
+      "journal-title": "Genetics",
+      "key": "338_CR5",
+      "unstructured": "Torres EM, Williams BR, Amon A. Aneuploidy: cells losing their balance. Genetics. 2008;179(2):737–46. https://doi.org/10.1534/genetics.108.090878.",
+      "volume": "179",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1002/9781119432692.ch58",
+      "doi-asserted-by": "publisher",
+      "key": "338_CR6",
+      "unstructured": "Carey JC. Trisomy 18 and trisomy 13 syndromes. Cassidy and Allanson's Management of Genetic Syndromes. 2021:937–56. https://doi.org/10.1002/9781119432692.ch58."
+    },
+    {
+      "author": "JM Fisher",
+      "first-page": "669",
+      "issue": "3",
+      "journal-title": "Am J Hum Genet",
+      "key": "338_CR7",
+      "unstructured": "Fisher JM, Harvey JF, Morton NE, Jacobs PA. Trisomy 18: studies of the parent and cell division of origin and the effect of aberrant recombination on nondisjunction. Am J Hum Genet. 1995;56(3):669–75.",
+      "volume": "56",
+      "year": "1995"
+    },
+    {
+      "author": "KG Kupke",
+      "first-page": "599",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet",
+      "key": "338_CR8",
+      "unstructured": "Kupke KG, Muller U. Parental origin of the extra chromosome in trisomy 18. Am J Hum Genet. 1989;45(4):599–605.",
+      "volume": "45",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1093/hmg/11.26.3249",
+      "author": "DR FitzPatrick",
+      "doi-asserted-by": "publisher",
+      "first-page": "3249",
+      "issue": "26",
+      "journal-title": "Hum Mol Genet",
+      "key": "338_CR9",
+      "unstructured": "FitzPatrick DR, Ramsay J, McGill NI, Shade M, Carothers AD, Hastie ND. Transcriptome analysis of human autosomal trisomy. Hum Mol Genet. 2002;11(26):3249–56. https://doi.org/10.1093/hmg/11.26.3249.",
+      "volume": "11",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1186/1471-2164-14-S5-S8",
+      "author": "R Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "S8",
+      "issue": "Suppl 5",
+      "journal-title": "BMC Genomics",
+      "key": "338_CR10",
+      "unstructured": "Zhang R, Hao L, Wang L, Chen M, Li W, Li R, et al. Gene expression analysis of induced pluripotent stem cells from aneuploid chromosomal syndromes. BMC Genomics. 2013;14(Suppl 5):S8. https://doi.org/10.1186/1471-2164-14-S5-S8.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nature12394",
+      "author": "J Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "296",
+      "issue": "7462",
+      "journal-title": "Nature",
+      "key": "338_CR11",
+      "unstructured": "Jiang J, Jing Y, Cost GJ, Chiang JC, Kolpa HJ, Cotton AM, et al. Translating dosage compensation to trisomy 21. Nature. 2013;500(7462):296–300. https://doi.org/10.1038/nature12394.",
+      "volume": "500",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41587-019-0206-z",
+      "author": "AT Satpathy",
+      "doi-asserted-by": "publisher",
+      "first-page": "925",
+      "issue": "8",
+      "journal-title": "Nat Biotechnol",
+      "key": "338_CR12",
+      "unstructured": "Satpathy AT, Granja JM, Yost KE, Qi Y, Meschi F, McDermott GP, et al. Massively parallel single-cell chromatin landscapes of human immune cell development and intratumoral T cell exhaustion. Nat Biotechnol. 2019;37(8):925–36. https://doi.org/10.1038/s41587-019-0206-z.",
+      "volume": "37",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/gr.192294.115",
+      "author": "AN Schep",
+      "doi-asserted-by": "publisher",
+      "first-page": "1757",
+      "issue": "11",
+      "journal-title": "Genome Res",
+      "key": "338_CR13",
+      "unstructured": "Schep AN, Buenrostro JD, Denny SK, Schwartz K, Sherlock G, Greenleaf WJ. Structured nucleosome fingerprints enable high-resolution mapping of chromatin architecture within regulatory regions. Genome Res. 2015;25(11):1757–70. https://doi.org/10.1101/gr.192294.115.",
+      "volume": "25",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nmeth.2688",
+      "author": "JD Buenrostro",
+      "doi-asserted-by": "publisher",
+      "first-page": "1213",
+      "issue": "12",
+      "journal-title": "Nat Methods",
+      "key": "338_CR14",
+      "unstructured": "Buenrostro JD, Giresi PG, Zaba LC, Chang HY, Greenleaf WJ. Transposition of native chromatin for fast and sensitive epigenomic profiling of open chromatin, DNA-binding proteins and nucleosome position. Nat Methods. 2013;10(12):1213–8. https://doi.org/10.1038/nmeth.2688.",
+      "volume": "10",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gky950",
+      "author": "SM Baker",
+      "doi-asserted-by": "publisher",
+      "first-page": "e10",
+      "issue": "2",
+      "journal-title": "Nucleic acids Res",
+      "key": "338_CR15",
+      "unstructured": "Baker SM, Rogerson C, Hayes A, Sharrocks AD, Rattray M. Classifying cells with Scasat, a single-cell ATAC-seq analysis tool. Nucleic acids Res. 2019;47(2):e10. https://doi.org/10.1093/nar/gky950.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2013.07.011",
+      "author": "A Criscuolo",
+      "doi-asserted-by": "publisher",
+      "first-page": "500",
+      "issue": "5-6",
+      "journal-title": "Genomics",
+      "key": "338_CR16",
+      "unstructured": "Criscuolo A, Brisse S. AlienTrimmer: a tool to quickly and accurately trim off multiple short contaminant sequences from high-throughput sequencing reads. Genomics. 2013;102(5-6):500–6. https://doi.org/10.1016/j.ygeno.2013.07.011.",
+      "volume": "102",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.molp.2015.02.002",
+      "author": "J Clevenger",
+      "doi-asserted-by": "publisher",
+      "first-page": "831",
+      "issue": "6",
+      "journal-title": "Mol Plant",
+      "key": "338_CR17",
+      "unstructured": "Clevenger J, Chavarro C, Pearl SA, Ozias-Akins P, Jackson SA. Single Nucleotide Polymorphism Identification in Polyploids: A Review, Example, and Recommendations. Mol Plant. 2015;8(6):831–46. https://doi.org/10.1016/j.molp.2015.02.002.",
+      "volume": "8",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.05.031",
+      "author": "T Stuart",
+      "doi-asserted-by": "publisher",
+      "first-page": "1888",
+      "issue": "7",
+      "journal-title": "Cell",
+      "key": "338_CR18",
+      "unstructured": "Stuart T, Butler A, Hoffman P, Hafemeister C, Papalexi E, Mauck WM 3rd, et al. Comprehensive integration of single-cell data. Cell. 2019;177(7):1888–1902.e1821. https://doi.org/10.1016/j.cell.2019.05.031.",
+      "volume": "177",
+      "year": "2019"
+    },
+    {
+      "author": "XF Qiu",
+      "first-page": "74",
+      "issue": "01",
+      "journal-title": "Hereditas",
+      "key": "338_CR19",
+      "unstructured": "Qiu XF, Tang D, Yu HY, Liao QY, Hu ZY, Zhou J, et al. Analysis of transcription factors in accessible open chromatin in the 18-trisomy syndrome based on single cell ATAC sequencing technique. Hereditas. 2021;43(01):74–88.",
+      "volume": "43",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.21105/joss.00861",
+      "doi-asserted-by": "crossref",
+      "key": "338_CR20",
+      "unstructured": "McInnes L, Healy J, Melville J. Umap: Uniform manifold approximation and projection for dimension reduction. arXiv preprint arXiv:180203426 2018."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq033",
+      "author": "AR Quinlan",
+      "doi-asserted-by": "publisher",
+      "first-page": "841",
+      "issue": "6",
+      "journal-title": "Bioinformatics",
+      "key": "338_CR21",
+      "unstructured": "Quinlan AR, Hall IM. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics. 2010;26(6):841–2. https://doi.org/10.1093/bioinformatics/btq033.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41467-016-0009-6",
+      "author": "GX Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "338_CR22",
+      "unstructured": "Zheng GX, Terry JM, Belgrader P, Ryvkin P, Bent ZW, Wilson R, et al. Massively parallel digital transcriptional profiling of single cells. Nat Commun. 2017;8(1):1–12.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.11.021",
+      "author": "JT Neal",
+      "doi-asserted-by": "publisher",
+      "first-page": "1972",
+      "issue": "7",
+      "journal-title": "Cell",
+      "key": "338_CR23",
+      "unstructured": "Neal JT, Li X, Zhu J, Giangarra V, Grzeskowiak CL, Ju J, et al. Organoid modeling of the tumor immune microenvironment. Cell. 2018;175(7):1972–1988. e1916.",
+      "volume": "175",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.jtcvs.2014.06.074",
+      "author": "X Yao",
+      "doi-asserted-by": "publisher",
+      "first-page": "3224",
+      "issue": "6",
+      "journal-title": "J Thorac Cardiovasc Surg",
+      "key": "338_CR24",
+      "unstructured": "Yao X, Williamson C, Adalsteinsson VA, D'Agostino RS, Fitton T, Smaroff GG, et al. Tumor cells are dislodged into the pulmonary vein during lobectomy. J Thorac Cardiovasc Surg. 2014;148(6):3224–3231. e3225.",
+      "volume": "148",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.jhep.2005.08.010",
+      "author": "F Cabillic",
+      "doi-asserted-by": "publisher",
+      "first-page": "552",
+      "issue": "3",
+      "journal-title": "J Hepatol",
+      "key": "338_CR25",
+      "unstructured": "Cabillic F, Rougier N, Basset C, Lecouillard I, Quelvennec E, Toujas L, et al. Hepatic environment elicits monocyte differentiation into a dendritic cell subset directing Th2 response. J Hepatol. 2006;44(3):552–9. https://doi.org/10.1016/j.jhep.2005.08.010.",
+      "volume": "44",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/nar/gky007",
+      "author": "D Sinha",
+      "doi-asserted-by": "publisher",
+      "first-page": "e36",
+      "issue": "6",
+      "journal-title": "Nucleic Acids Res",
+      "key": "338_CR26",
+      "unstructured": "Sinha D, Kumar A, Kumar H, Bandyopadhyay S, Sengupta D. dropClust: efficient clustering of ultra-large scRNA-seq data. Nucleic Acids Res. 2018;46(6):e36. https://doi.org/10.1093/nar/gky007.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.cell.2017.05.035",
+      "author": "C Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1342",
+      "issue": "7",
+      "journal-title": "Cell",
+      "key": "338_CR27",
+      "unstructured": "Zheng C, Zheng L, Yoo J-K, Guo H, Zhang Y, Guo X, et al. Landscape of infiltrating T cells in liver cancer revealed by single-cell sequencing. Cell. 2017;169(7):1342–1356. e1316.",
+      "volume": "169",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.jcyt.2014.11.004",
+      "author": "J Kellner",
+      "doi-asserted-by": "publisher",
+      "first-page": "418",
+      "issue": "4",
+      "journal-title": "Cytotherapy",
+      "key": "338_CR28",
+      "unstructured": "Kellner J, Li S, Zweidler-McKay PA, Shpall EJ, McNiece I. Phenotypic and functional comparison of mobilized peripheral blood versus umbilical cord blood megakaryocyte populations. Cytotherapy. 2015;17(4):418–27. https://doi.org/10.1016/j.jcyt.2014.11.004.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1097/PGP.0b013e3182102754",
+      "author": "I Cervelló",
+      "doi-asserted-by": "publisher",
+      "first-page": "317",
+      "issue": "4",
+      "journal-title": "Int J Gynecol Pathol",
+      "key": "338_CR29",
+      "unstructured": "Cervelló I, Mirantes C, Santamaria X, Dolcet X, Matias-Guiu X, Simón C. Stem cells in human endometrium and endometrial carcinoma. Int J Gynecol Pathol. 2011;30(4):317–27. https://doi.org/10.1097/PGP.0b013e3182102754.",
+      "volume": "30",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/pd.1970140403",
+      "author": "G Makrydimas",
+      "doi-asserted-by": "publisher",
+      "first-page": "239",
+      "issue": "4",
+      "journal-title": "Prenat Diagn",
+      "key": "338_CR30",
+      "unstructured": "Makrydimas G, Plachouras N, Thilaganathan B, Nicolaides K. Abnormal immunological development in fetuses with trisomy 18. Prenat Diagn. 1994;14(4):239–41. https://doi.org/10.1002/pd.1970140403.",
+      "volume": "14",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1073/pnas.1211405109",
+      "author": "A Roy",
+      "doi-asserted-by": "publisher",
+      "first-page": "17579",
+      "issue": "43",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "338_CR31",
+      "unstructured": "Roy A, Cowan G, Mead AJ, Filippi S, Bohn G, Chaidos A, et al. Perturbation of fetal liver hematopoietic stem and progenitor cell development by trisomy 21. Proc Natl Acad Sci. 2012;109(43):17579–84. https://doi.org/10.1073/pnas.1211405109.",
+      "volume": "109",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/ajmg.c.31511",
+      "doi-asserted-by": "crossref",
+      "key": "338_CR32",
+      "unstructured": "Satgé D, Nishi M, Sirvent N, Vekemans M: A tumor profile in Edwards syndrome (trisomy 18). In: American Journal of Medical Genetics Part C: Seminars in Medical Genetics: 2016. Wiley Online Library: 296-306."
+    },
+    {
+      "DOI": "10.1016/0165-4608(94)90146-5",
+      "author": "A Younes",
+      "doi-asserted-by": "publisher",
+      "first-page": "39",
+      "issue": "1",
+      "journal-title": "Cancer Genet Cytogenet",
+      "key": "338_CR33",
+      "unstructured": "Younes A, Jendiroba D, Engel H, Escudier S, Katz R, Rodriguez MA, et al. High incidence of monosomy 18 in lymphoid malignancies that have bone marrow and peripheral blood involvement. Cancer Genet Cytogenet. 1994;77(1):39–44. https://doi.org/10.1016/0165-4608(94)90146-5.",
+      "volume": "77",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1016/j.urolonc.2015.11.011",
+      "doi-asserted-by": "crossref",
+      "key": "338_CR34",
+      "unstructured": "Lei C-y, Wang W, Zhu Y-t, Fang W-y, Tan W-l: The decrease of cyclin B2 expression inhibits invasion and metastasis of bladder cancer. In: Urologic Oncology: Seminars and Original Investigations: 2016. Elsevier: 237. e231-237. e210."
+    },
+    {
+      "DOI": "10.1016/j.molcel.2018.01.012",
+      "author": "J Murai",
+      "doi-asserted-by": "publisher",
+      "first-page": "371",
+      "issue": "3",
+      "journal-title": "Mol Cell",
+      "key": "338_CR35",
+      "unstructured": "Murai J, Tang S-W, Leo E, Baechler SA, Redon CE, Zhang H, et al. SLFN11 blocks stressed replication forks independently of ATR. Mol Cell. 2018;69(3):371–384. e376.",
+      "volume": "69",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/BF00285103",
+      "author": "GR Paton",
+      "doi-asserted-by": "publisher",
+      "first-page": "173",
+      "issue": "3",
+      "journal-title": "Humangenetik",
+      "key": "338_CR36",
+      "unstructured": "Paton GR, Silver MF, Allison AC. Comparison of cell cycle time in normal and trisomic cells. Humangenetik. 1974;23(3):173–82. https://doi.org/10.1007/BF00285103.",
+      "volume": "23",
+      "year": "1974"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.06.052",
+      "author": "DA Cusanovich",
+      "doi-asserted-by": "publisher",
+      "first-page": "1309",
+      "issue": "5",
+      "journal-title": "Cell",
+      "key": "338_CR37",
+      "unstructured": "Cusanovich DA, Hill AJ, Aghamirzaie D, Daza RM, Pliner HA, Berletch JB, et al. A single-cell atlas of in vivo mammalian chromatin accessibility. Cell. 2018;174(5):1309–1324. e1318.",
+      "volume": "174",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41422-020-00401-9",
+      "author": "L Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "463",
+      "issue": "4",
+      "journal-title": "Cell Res",
+      "key": "338_CR38",
+      "unstructured": "Li L, Li L, Li Q, Liu X, Ma X, Yong J, et al. Dissecting the epigenomic dynamics of human fetal germ cell development at single-cell resolution. Cell Res. 2021;31(4):463–77. https://doi.org/10.1038/s41422-020-00401-9.",
+      "volume": "31",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1126/science.aba7721",
+      "doi-asserted-by": "publisher",
+      "key": "338_CR39",
+      "unstructured": "Cao J, O'Day DR, Pliner HA, Kingsley PD, Deng M, Daza RM, et al. A human cell atlas of fetal gene expression. Science. 2020;370(6518). https://doi.org/10.1126/science.aba7721."
+    },
+    {
+      "DOI": "10.1126/science.aba7612",
+      "doi-asserted-by": "publisher",
+      "key": "338_CR40",
+      "unstructured": "Domcke S, Hill AJ, Daza RM, Cao J, O'Day DR, Pliner HA, et al. A human cell atlas of fetal chromatin accessibility. Science. 2020;370(6518). https://doi.org/10.1126/science.aba7612."
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00338-z"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Single-cell chromatin accessibility landscape of human umbilical cord blood in trisomy 18 syndrome"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

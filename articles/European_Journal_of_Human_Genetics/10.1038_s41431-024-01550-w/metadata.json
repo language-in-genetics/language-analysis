@@ -1,0 +1,598 @@
+{
+  "DOI": "10.1038/s41431-024-01550-w",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-024-01550-w",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIt is believed that \u0026gt;95% of people with Lynch syndrome (LS) remain undiagnosed. Within the National Health Service (NHS) in England, formal guidelines issued in 2017 state that all colorectal cancers (CRC) should be tested for DNA Mismatch Repair deficiency (dMMR). We used a comprehensive population-level national dataset to analyse implementation of the agreed diagnostic pathway at a baseline point 2 years post-publication of official guidelines. Using real-world data collected and curated by the National Cancer Registration and Analysis Service (NCRAS), we retrospectively followed up all people diagnosed with CRC in England in 2019. Nationwide laboratory diagnostic data incorporated somatic (tumour) testing for dMMR (via immunohistochemistry or microsatellite instability), somatic testing for \u003cjats:italic\u003eMLH1\u003c/jats:italic\u003e promoter methylation and \u003cjats:italic\u003eBRAF\u003c/jats:italic\u003e status, and constitutional (germline) testing of MMR genes. Only 44% of CRCs were screened for dMMR; these figures varied over four-fold with respect to geography. Of those CRCs identified as dMMR, only 51% underwent subsequent diagnostic testing. Overall, only 1.3% of patients with colorectal cancer had a germline MMR genetic test performed; up to 37% of these tests occurred outside of NICE guidelines. The low rates of molecular diagnostic testing in CRC support the premise that Lynch syndrome is underdiagnosed, with significant attrition at all stages of the testing pathway. Applying our methodology to subsequent years’ data will allow ongoing monitoring and analysis of the impact of recent investment. If the diagnostic guidelines were fully implemented, we estimate that up to 700 additional people with LS could be identified each year.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1550"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "8 August 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "8 January 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "23 January 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "15 February 2024"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "JB was awarded funding from Bowel Cancer UK (grant 18PG0019), which provided primary funding for the bioinformatics aspects of this work. CT is Chief Investigator for the CRUK Programme CanGene-CanVar (grant C61296/A27223), which provided additional funding for the bioinformatics aspects of this work. ACS is partly funded by the NHS South East Genomic Medicine Service as Co-Chair of the National Lynch syndrome diagnosis transformation project. IMF has received travel support from St Vincent’s University Hospital, Dublin. He is an Assessor for the UK National External Quality Assessment Service for immunocytochemistry and in situ hybridisation (UK NEQAS ICC\u0026ISH), receiving honoraria and travel expenses. He also undertakes unpaid roles as Honorary Treasurer \u0026 Trustee, International Society for Gastrointestinal Hereditary Tumours (InSiGHT); President \u0026 Trustee, Association of Clinical Pathologists, UK; and Member of Council, UK Cancer Genetics Group. KJM has previously received funding from 40tude cancer charity, and sits on the Medical Advisory Board for Bowel Cancer UK and Lynch Syndrome UK. All other authors have declared no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Data used in this study were routinely collected by NDRS as part of NHS patient care and support. No human or animal subjects were used. Further ethical approval for this study was not required per the definition of research according to the UK Policy Framework for Health and Social Care Research."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-7226-9461",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "McRonald",
+      "given": "Fiona E.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Pethick",
+      "given": "Joanna",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8500-1656",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Santaniello",
+      "given": "Francesco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shand",
+      "given": "Brian",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0135-7397",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Tyson",
+      "given": "Adele",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tulloch",
+      "given": "Oliver",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Goel",
+      "given": "Shilpi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lüchtenborg",
+      "given": "Margreet",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Borthwick",
+      "given": "Gillian M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Turnbull",
+      "given": "Clare",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shaw",
+      "given": "Adam C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Monahan",
+      "given": "Kevin J.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3420-0794",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Frayling",
+      "given": "Ian M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hardy",
+      "given": "Steven",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9823-2322",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Burn",
+      "given": "John",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        15
+      ]
+    ],
+    "date-time": "2024-02-15T03:02:29Z",
+    "timestamp": 1707966149000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        15
+      ]
+    ],
+    "date-time": "2024-02-15T03:02:55Z",
+    "timestamp": 1707966175000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T00:48:56Z",
+    "timestamp": 1714524536415
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        15
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2024-02-15T00:00:00Z",
+        "timestamp": 1707955200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            15
+          ]
+        ],
+        "date-time": "2024-02-15T00:00:00Z",
+        "timestamp": 1707955200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01550-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01550-w",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01550-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        15
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        15
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/nature12981",
+      "author": "N Rahman",
+      "doi-asserted-by": "publisher",
+      "first-page": "302",
+      "journal-title": "Nature",
+      "key": "1550_CR1",
+      "unstructured": "Rahman N. Realizing the promise of cancer predisposition genes. Nature. 2014;505:302–8.",
+      "volume": "505",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1056/NEJMoa043146",
+      "author": "H Hampel",
+      "doi-asserted-by": "publisher",
+      "first-page": "1851",
+      "journal-title": "N Engl J Med",
+      "key": "1550_CR2",
+      "unstructured": "Hampel H, Frankel WL, Martin E, Arnold M, Khanduja K, Kuebler P, et al. Screening for the Lynch syndrome (hereditary nonpolyposis colorectal cancer). N Engl J Med. 2005;352:1851–60.",
+      "volume": "352",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1056/NEJMoa053493",
+      "author": "RA Barnetson",
+      "doi-asserted-by": "publisher",
+      "first-page": "2751",
+      "journal-title": "N Engl J Med",
+      "key": "1550_CR3",
+      "unstructured": "Barnetson RA, Tenesa A, Farrington SM, Nicholl ID, Cetnarskyj R, Porteous ME, et al. Identification and survival of carriers of mutations in DNA mismatch-repair genes in colon cancer. N Engl J Med. 2006;354:2751–63.",
+      "volume": "354",
+      "year": "2006"
+    },
+    {
+      "key": "1550_CR4",
+      "unstructured": "Idos G, Valle L. Lynch syndrome. In: Adam MP, Everman DB, Mirzaa GM, et al., editors. GeneReviews® [Internet]. Seattle (WA): University of Washington; 1993–2022. https://www.ncbi.nlm.nih.gov/books/NBK1211/."
+    },
+    {
+      "DOI": "10.1158/1055-9965.EPI-16-0693",
+      "author": "AK Win",
+      "doi-asserted-by": "publisher",
+      "first-page": "404",
+      "journal-title": "Cancer Epidemiol Biomark Prev",
+      "key": "1550_CR5",
+      "unstructured": "Win AK, Jenkins MA, Dowty JG, Antoniou AC, Lee A, Giles GG, et al. Prevalence and penetrance of major genes and polygenes for colorectal cancer. Cancer Epidemiol Biomark Prev. 2017;26:404–12.",
+      "volume": "26",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1001/jamanetworkopen.2020.3959",
+      "author": "AP Patel",
+      "doi-asserted-by": "publisher",
+      "first-page": "e203959",
+      "journal-title": "JAMA Netw Open",
+      "key": "1550_CR6",
+      "unstructured": "Patel AP, Wang M, Fahed AC, Mason-Suares H, Brockman D, Pelletier R, et al. Association of rare pathogenic DNA variants for familial hypercholesterolemia, hereditary breast and ovarian cancer syndrome, and lynch syndrome with disease risk in adults according to family history. JAMA Netw Open. 2020;3:e203959.",
+      "volume": "3",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41591-020-0982-5",
+      "author": "JJ Grzymski",
+      "doi-asserted-by": "publisher",
+      "first-page": "1235",
+      "journal-title": "Nat Med",
+      "key": "1550_CR7",
+      "unstructured": "Grzymski JJ, Elhanan G, Morales Rosado JA, Smith E, Schlauch KA, Read R, et al. Population genetic screening efficiently identifies carriers of autosomal dominant diseases. Nat Med. 2020;26:1235–9.",
+      "volume": "26",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3310/hta18580",
+      "author": "T Snowsill",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Health Technol Assess",
+      "key": "1550_CR8",
+      "unstructured": "Snowsill T, Huxley N, Hoyle M, Jones-Hughes T, Coelho H, Cooper C, et al. A systematic review and economic evaluation of diagnostic strategies for Lynch syndrome. Health Technol Assess. 2014;18:1–406.",
+      "volume": "18",
+      "year": "2014"
+    },
+    {
+      "key": "1550_CR9",
+      "unstructured": "NICE Diagnostics guidance [DG27]. Molecular testing strategies for Lynch syndrome in people with colorectal cancer. 2017. https://www.nice.org.uk/guidance/dg27."
+    },
+    {
+      "key": "1550_CR10",
+      "unstructured": "Bowel Cancer UK. People at high risk of cancer denied a £200 life saving genetic test. 2018. https://www.bowelcanceruk.org.uk/news-and-blogs/news/people-at-high-risk-of-cancer-denied-a-£200-life-saving-genetic-test/."
+    },
+    {
+      "key": "1550_CR11",
+      "unstructured": "Bowel Cancer UK. Testing for Lynch syndrome – what you need to know. 2018. https://www.bowelcanceruk.org.uk/news-and-blogs/research-blog/testing-for-lynch-syndrome-%E2%80%93-what-you-need-to-know/."
+    },
+    {
+      "DOI": "10.1093/ije/dyz076",
+      "author": "KE Henson",
+      "doi-asserted-by": "publisher",
+      "first-page": "16",
+      "journal-title": "Int J Epidemiol",
+      "key": "1550_CR12",
+      "unstructured": "Henson KE, Elliss-Brookes L, Coupland VH, Payne E, Vernon S, Rous B, et al. Data resource profile: national cancer registration dataset in England. Int J Epidemiol. 2020;49:16–h.",
+      "volume": "49",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/jmg-2022-108800",
+      "author": "L Loong",
+      "doi-asserted-by": "publisher",
+      "first-page": "669",
+      "journal-title": "J Med Genet",
+      "key": "1550_CR13",
+      "unstructured": "Loong L, Huntley C, McRonald F, Santaniello F, Pethick J, Torr B, et al. Germline mismatch repair (MMR) gene analyses from English NHS regional molecular genomics laboratories 1996-2020: development of a national resource of patient-level genomics laboratory records. J Med Genet. 2023;60:669–78.",
+      "volume": "60",
+      "year": "2023"
+    },
+    {
+      "key": "1550_CR14",
+      "unstructured": "R Core Team. R: a language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing; 2022. https://www.R-project.org/."
+    },
+    {
+      "key": "1550_CR15",
+      "unstructured": "NHS England. National Disease Registries Directions 2021. 2021. https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/directions-and-data-provision-notices/secretary-of-state-directions/national-disease-register-service-directions."
+    },
+    {
+      "key": "1550_CR16",
+      "unstructured": "NHS England. Rare and inherited disease eligibility criteria. In: National Genomic Test Directory. 2018. https://www.england.nhs.uk/publication/national-genomic-test-directories/. Version 5.2 accessed 5th July 2023."
+    },
+    {
+      "DOI": "10.1136/bmjonc-2023-000124",
+      "author": "KJ Monahan",
+      "doi-asserted-by": "publisher",
+      "first-page": "e000124",
+      "journal-title": "BMJ Oncol",
+      "key": "1550_CR17",
+      "unstructured": "Monahan KJ, Ryan N, Monje-Garcia L, Armstrong R, Church DN, Cook J, et al. The English National Lynch Syndrome transformation project: an NHS Genomic Medicine Service Alliance (GMSA) programme. BMJ Oncol. 2023;2:e000124. https://doi.org/10.1136/bmjonc-2023-000124.",
+      "volume": "2",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1111/j.1463-1318.2009.01830.x",
+      "author": "G Tranø",
+      "doi-asserted-by": "publisher",
+      "first-page": "456",
+      "journal-title": "Colorectal Dis",
+      "key": "1550_CR18",
+      "unstructured": "Tranø G, Wasmuth HH, Sjursen W, Hofsli E, Vatten LJ. Awareness of heredity in colorectal cancer patients is insufficient among clinicians: a Norwegian population-based study. Colorectal Dis. 2009;11:456–61.",
+      "volume": "11",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1007/s10689-009-9291-3",
+      "author": "HF Vasen",
+      "doi-asserted-by": "publisher",
+      "first-page": "109",
+      "journal-title": "Fam Cancer",
+      "key": "1550_CR19",
+      "unstructured": "Vasen HF, Möslein G, Alonso A, Aretz S, Bernstein I, Bertario L, et al. Recommendations to improve identification of hereditary and familial colorectal cancer in Europe. Fam Cancer. 2010;9:109–15.",
+      "volume": "9",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(20)30366-4",
+      "author": "J Burn",
+      "doi-asserted-by": "publisher",
+      "first-page": "1855",
+      "journal-title": "Lancet",
+      "key": "1550_CR20",
+      "unstructured": "Burn J, Sheth H, Elliott F, Reed L, Macrae F, Mecklin JP, et al. Cancer prevention with aspirin in hereditary colorectal cancer (Lynch syndrome), 10-year follow-up and registry-based 20-year data in the CAPP2 study: a double-blind, randomised, placebo-controlled trial. Lancet. 2020;395:1855–63.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "key": "1550_CR21",
+      "unstructured": "NICE guideline [NG151]. Reduction in risk of colorectal cancer in people with Lynch syndrome. 2020. https://www.nice.org.uk/guidance/ng151."
+    },
+    {
+      "DOI": "10.1158/1940-6207.CAPR-22-0044",
+      "author": "JC Mathers",
+      "doi-asserted-by": "publisher",
+      "first-page": "623",
+      "journal-title": "Cancer Prev Res",
+      "key": "1550_CR22",
+      "unstructured": "Mathers JC, Elliott F, Macrae F, Mecklin JP, Möslein G, McRonald FE, et al. Cancer prevention with resistant starch in Lynch syndrome patients in the CAPP2-randomized placebo controlled trial: planned 10-year follow-up. Cancer Prev Res. 2022;15:623–34.",
+      "volume": "15",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1500596",
+      "author": "DT Le",
+      "doi-asserted-by": "publisher",
+      "first-page": "2509",
+      "journal-title": "N Engl J Med",
+      "key": "1550_CR23",
+      "unstructured": "Le DT, Uram JN, Wang H, Bartlett BR, Kemberling H, Eyring AD, et al. PD-1 blockade in tumors with mismatch-repair deficiency. N Engl J Med. 2015;372:2509–20.",
+      "volume": "372",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1126/science.aan6733",
+      "author": "DT Le",
+      "doi-asserted-by": "publisher",
+      "first-page": "409",
+      "journal-title": "Science",
+      "key": "1550_CR24",
+      "unstructured": "Le DT, Durham JN, Smith KN, Wang H, Bartlett BR, Aulakh LK, et al. Mismatch repair deficiency predicts response of solid tumors to PD-1 blockade. Science. 2017;357:409–13.",
+      "volume": "357",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2017699",
+      "author": "T André",
+      "doi-asserted-by": "publisher",
+      "first-page": "2207",
+      "journal-title": "N Engl J Med",
+      "key": "1550_CR25",
+      "unstructured": "André T, Shiu KK, Kim TW, Jensen BV, Jensen LH, Punt C, et al. Pembrolizumab in microsatellite-instability-high advanced colorectal cancer. N Engl J Med. 2020;383:2207–18.",
+      "volume": "383",
+      "year": "2020"
+    },
+    {
+      "key": "1550_CR26",
+      "unstructured": "NICE Technology Appraisal Guidance [TA716]. Nivolumab with ipilimumab for previously treated metastatic colorectal cancer with high microsatellite instability or mismatch repair deficiency. 2021. https://www.nice.org.uk/guidance/ta716."
+    },
+    {
+      "DOI": "10.1136/gutjnl-2019-319915",
+      "author": "KJ Monahan",
+      "doi-asserted-by": "publisher",
+      "first-page": "411",
+      "journal-title": "Gut",
+      "key": "1550_CR27",
+      "unstructured": "Monahan KJ, Bradshaw N, Dolwani S, Desouza B, Dunlop MG, East JE, et al. Guidelines for the management of hereditary colorectal cancer from the British Society of Gastroenterology (BSG)/Association of Coloproctology of Great Britain and Ireland (ACPGBI)/United Kingdom Cancer Genetics Group (UKCGG). Gut. 2020;69:411–44.",
+      "volume": "69",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/his.14390",
+      "author": "NP West",
+      "doi-asserted-by": "publisher",
+      "first-page": "690",
+      "journal-title": "Histopathology",
+      "key": "1550_CR28",
+      "unstructured": "West NP, Gallop N, Kaye D, Glover A, Young C, Hutchins GGA, et al. Lynch syndrome screening in colorectal cancer: results of a prospective 2-year regional programme validating the NICE diagnostics guidance pathway throughout a 5.2-million population. Histopathology. 2021;79:690–9.",
+      "volume": "79",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3310/hta21510",
+      "author": "T Snowsill",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Health Technol Assess",
+      "key": "1550_CR29",
+      "unstructured": "Snowsill T, Coelho H, Huxley N, Jones-Hughes T, Briscoe S, Frayling IM, et al. Molecular testing for Lynch syndrome in people with colorectal cancer: systematic reviews and economic evaluation. Health Technol Assess. 2017;21:1–238.",
+      "volume": "21",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2019-106759",
+      "author": "A Garrett",
+      "doi-asserted-by": "publisher",
+      "first-page": "829",
+      "journal-title": "J Med Genet",
+      "key": "1550_CR30",
+      "unstructured": "Garrett A, Callaway A, Durkie M, Cubuk C, Alikian M, Burghel GJ, et al. Cancer Variant Interpretation Group UK (CanVIG-UK): an exemplar national subspecialty multidisciplinary network. J Med Genet. 2020;57:829–34.",
+      "volume": "57",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 30,
+  "references-count": 30,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-024-01550-w"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Identification of people with Lynch syndrome from those presenting with colorectal cancer in England: baseline analysis of the diagnostic pathway"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

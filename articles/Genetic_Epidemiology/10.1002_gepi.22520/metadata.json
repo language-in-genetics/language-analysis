@@ -1,0 +1,553 @@
+{
+  "DOI": "10.1002/gepi.22520",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22520",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMendelian randomization is a statistical method for inferring the causal relationship between exposures and outcomes using an economics‐derived instrumental variable approach. The research results are relatively complete when both exposures and outcomes are continuous variables. However, due to the noncollapsing nature of the logistic model, the existing methods inherited from the linear model for exploring binary outcome cannot take the effect of confounding factors into account, which leads to biased estimate of the causal effect. In this article, we propose an integrated likelihood method MR‐BOIL to investigate causal relationships for binary outcomes by treating confounders as latent variables in one‐sample Mendelian randomization. Under the assumption of a joint normal distribution of the confounders, we use expectation maximization algorithm to estimate the causal effect. Extensive simulations demonstrate that the estimator of MR‐BOIL is asymptotically unbiased and that our method improves statistical power without inflating type I error rate. We then apply this method to analyze the data from Atherosclerosis Risk in Communications Study. The results show that MR‐BOIL can better identify plausible causal relationships with high reliability, compared with the unreliable results of existing methods. MR‐BOIL is implemented in R and the corresponding R code is provided for free download.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22520"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2022-08-17"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2023-02-01"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2023-02-19"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Shanghai Center for Mathematical Sciences Fudan University Shanghai China"
+        }
+      ],
+      "family": "Shi",
+      "given": "Dapeng",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "State Key Laboratory of Genetic Engineering, Human Phenome Institute, Institute of Biostatistics, School of Life Sciences Fudan University Shanghai China"
+        }
+      ],
+      "family": "Wang",
+      "given": "Yuquan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics and Data Science, School of Management Fudan University Shanghai China"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Ziyong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "State Key Laboratory of Genetic Engineering, Human Phenome Institute, Institute of Biostatistics, School of Life Sciences Fudan University Shanghai China"
+        }
+      ],
+      "family": "Cao",
+      "given": "Yunlong",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5730-0317",
+      "affiliation": [
+        {
+          "name": "Shanghai Center for Mathematical Sciences Fudan University Shanghai China"
+        },
+        {
+          "name": "State Key Laboratory of Genetic Engineering, Human Phenome Institute, Institute of Biostatistics, School of Life Sciences Fudan University Shanghai China"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Hu",
+      "given": "Yue‐Qing",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        19
+      ]
+    ],
+    "date-time": "2023-02-19T22:37:06Z",
+    "timestamp": 1676846226000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        20
+      ]
+    ],
+    "date-time": "2023-08-20T09:20:04Z",
+    "timestamp": 1692523204000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "11971117",
+        "11571082"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        23
+      ]
+    ],
+    "date-time": "2024-01-23T20:51:08Z",
+    "timestamp": 1706043068381
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        19
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            19
+          ]
+        ],
+        "date-time": "2023-02-19T00:00:00Z",
+        "timestamp": 1676764800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22520",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22520",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22520",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "332-357",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        19
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        6
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1002/gepi.22387",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_2_1"
+    },
+    {
+      "DOI": "10.1214/aoms/1177730090",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_3_1"
+    },
+    {
+      "DOI": "10.2307/2951620",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_4_1"
+    },
+    {
+      "DOI": "10.1080/01621459.1996.10476902",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_5_1"
+    },
+    {
+      "DOI": "10.1007/978-3-642-35289-8_25",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_6_1"
+    },
+    {
+      "DOI": "10.1002/sim.4138",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_7_1"
+    },
+    {
+      "DOI": "10.1136/bmj.e7325",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_8_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21758",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_9_1"
+    },
+    {
+      "DOI": "10.1002/sim.5871",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_10_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwu107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_11_1"
+    },
+    {
+      "DOI": "10.1177/0962280215597579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_12_1"
+    },
+    {
+      "DOI": "10.1002/sim.4498",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_13_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyt093",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_14_1"
+    },
+    {
+      "DOI": "10.1201/b18084",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_15_1"
+    },
+    {
+      "DOI": "10.1002/sim.4241",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_16_1"
+    },
+    {
+      "DOI": "10.1080/00949659608811772",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_17_1"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_18_1",
+      "unstructured": "Chang C. C. Chow C. C. Tellier L. C. Vattikuti S. Purcell S. M. \u0026Lee J. J.(2015). Second‐generation PLINK: Rising to the challenge of larger and richer datasets.GigaScience 4(1) s13742‐015‐0047‐8."
+    },
+    {
+      "DOI": "10.1080/01621459.2012.734171",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_19_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwu291",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_20_1"
+    },
+    {
+      "DOI": "10.1038/ng.3656",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_21_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_22_1"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1977.tb01600.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_23_1"
+    },
+    {
+      "DOI": "10.1214/ss/1177013815",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_24_1"
+    },
+    {
+      "DOI": "10.1214/ss/1009211805",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_25_1"
+    },
+    {
+      "DOI": "10.1111/1468-0262.00272",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_26_1"
+    },
+    {
+      "DOI": "10.1002/sim.5659",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_27_1"
+    },
+    {
+      "DOI": "10.1097/01.ede.0000222409.00878.37",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_28_1"
+    },
+    {
+      "DOI": "10.1002/j.2330-8516.1988.tb00270.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_29_1"
+    },
+    {
+      "DOI": "10.1101/2021.03.11.434915",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_30_1",
+      "unstructured": "Hu X. Zhao J. Lin Z. Wang Y. Peng H. Zhao H. Wan X. \u0026Yang C.(2021). MR‐APSS: A unified approach to Mendelian Randomization accounting for pleiotropy and sample structure using genome‐wide summary statistics.BioRxiv."
+    },
+    {
+      "DOI": "10.1080/01621459.2014.994705",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_31_1"
+    },
+    {
+      "DOI": "10.3982/ECTA11974",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_32_1"
+    },
+    {
+      "DOI": "10.1080/07350015.2014.978175",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_33_1"
+    },
+    {
+      "DOI": "10.1002/sim.3034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_34_1"
+    },
+    {
+      "DOI": "10.2307/3318671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_35_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyn080",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_36_1"
+    },
+    {
+      "DOI": "10.1177/0962280213505804",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_37_1"
+    },
+    {
+      "DOI": "10.1101/2020.06.01.128264",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_10_38_1",
+      "unstructured": "Sanderson E. Richardson T. G. Hemani G. \u0026Smith G. D.(2020). The use of negative control outcomes in Mendelian Randomisation to detect potential population stratification or selection bias.BioRxiv."
+    },
+    {
+      "DOI": "10.2307/1907619",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_39_1"
+    },
+    {
+      "DOI": "10.1198/016214507000000608",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_40_1"
+    },
+    {
+      "DOI": "10.1038/nrg3461",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_41_1"
+    },
+    {
+      "DOI": "10.1198/073500102288618658",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_42_1"
+    },
+    {
+      "DOI": "10.1016/j.jhealeco.2007.09.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_43_1"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_44_1"
+    },
+    {
+      "author": "Van der Vaart A. W.",
+      "key": "e_1_2_10_45_1",
+      "volume-title": "Asymptotic statistics",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1214/11-STS360",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_46_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0099-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_47_1"
+    },
+    {
+      "DOI": "10.1214/aoms/1177731868",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_48_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22445",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_49_1"
+    },
+    {
+      "author": "Wooldridge J. M.",
+      "key": "e_1_2_10_50_1",
+      "volume-title": "Econometric analysis of cross section and panel data",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bib/bbab019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_51_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.05.014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_52_1"
+    },
+    {
+      "DOI": "10.1214/19-AOS1866",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_10_53_1"
+    },
+    {
+      "article-title": "Parallelized stochastic gradient descent",
+      "author": "Zinkevich M.",
+      "first-page": "2595",
+      "issue": "1",
+      "journal-title": "Advances in Neural Information Processing Systems",
+      "key": "e_1_2_10_54_1",
+      "volume": "23",
+      "year": "2010"
+    }
+  ],
+  "reference-count": 53,
+  "references-count": 53,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22520"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "MR‐BOIL: Causal inference in one‐sample Mendelian randomization for binary outcome with integrated likelihood method"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "47"
+}

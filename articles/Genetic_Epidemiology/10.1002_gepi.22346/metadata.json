@@ -1,0 +1,645 @@
+{
+  "DOI": "10.1002/gepi.22346",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22346",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe integration of transcriptomic studies and genome‐wide association studies (GWAS) via imputed expression has seen extensive application in recent years, enabling the functional characterization and causal gene prioritization of GWAS loci. However, the techniques for imputing transcriptomic traits from DNA variation remain underdeveloped. Furthermore, associations found when linking eQTL studies to complex traits through methods like PrediXcan can lead to false positives due to linkage disequilibrium between distinct causal variants. Therefore, the best prediction performance models may not necessarily lead to more reliable causal gene discovery. With the goal of improving discoveries without increasing false positives, we develop and compare multiple transcriptomic imputation approaches using the most recent GTEx release of expression and splicing data on 17,382 RNA‐sequencing samples from 948 post‐mortem donors in 54 tissues. We find that informing prediction models with posterior causal probability from fine‐mapping (\u003cjats:italic\u003edap‐g\u003c/jats:italic\u003e) and borrowing information across tissues (\u003cjats:italic\u003emashr\u003c/jats:italic\u003e) can lead to better performance in terms of number and proportion of significant associations that are colocalized and the proportion of silver standard genes identified as indicated by precision‐recall and receiver operating characteristic curves. All prediction models are made publicly available at predictdb.org.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22346"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-04-28"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-06-26"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-09-10"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-9153-6120",
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine, Department of Medicine The University of Chicago Chicago Illinois"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Barbeira",
+      "given": "Alvaro N.",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0737-3718",
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine, Department of Medicine The University of Chicago Chicago Illinois"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Melia",
+      "given": "Owen J.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8893-6505",
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine, Department of Medicine The University of Chicago Chicago Illinois"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Liang",
+      "given": "Yanyu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine, Department of Medicine The University of Chicago Chicago Illinois"
+        }
+      ],
+      "family": "Bonazzola",
+      "given": "Rodrigo",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9336-402X",
+      "affiliation": [
+        {
+          "name": "Department of Human Genetics The University of Chicago Chicago Illinois"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Wang",
+      "given": "Gao",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1365-9667",
+      "affiliation": [
+        {
+          "name": "Department of Biology Loyola University Chicago Chicago Illinois"
+        },
+        {
+          "name": "Department of Computer Science Loyola University Chicago Chicago Illinois"
+        },
+        {
+          "name": "Department of Public Health Sciences, Stritch School of Medicine Loyola University Chicago Maywood Illinois"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Wheeler",
+      "given": "Heather E.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9414-300X",
+      "affiliation": [
+        {
+          "name": "The Broad Institute of MIT and Harvard Cambridge Massachusetts"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Aguet",
+      "given": "François",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4272-6283",
+      "affiliation": [
+        {
+          "name": "The Broad Institute of MIT and Harvard Cambridge Massachusetts"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Ardlie",
+      "given": "Kristin G.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8990-2737",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of Michigan Ann Arbor Michigan"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Wen",
+      "given": "Xiaoquan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Section of Genetic Medicine, Department of Medicine The University of Chicago Chicago Illinois"
+        },
+        {
+          "name": "Department of Human Genetics The University of Chicago Chicago Illinois"
+        }
+      ],
+      "family": "Im",
+      "given": "Hae K.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        17
+      ]
+    ],
+    "date-time": "2020-09-17T08:00:47Z",
+    "timestamp": 1600329647000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        4
+      ]
+    ],
+    "date-time": "2023-09-04T23:11:37Z",
+    "timestamp": 1693869097000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100006108",
+      "award": [
+        "UL1TR000430"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Center for Advancing Translational Sciences"
+    },
+    {
+      "DOI": "10.13039/501100006364",
+      "award": [
+        "HHSN261200800001E"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Institut National Du Cancer"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "1R35HG010718",
+        "5U41HG009494",
+        "R01HG10067",
+        "R15HG009569",
+        "U01HG007593",
+        "U01HG007598"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000026",
+      "award": [
+        "DA006227",
+        "R01DA006227‐17"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute on Drug Abuse"
+    },
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "P30DK020595"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "1R01HL133559",
+        "HHSN268201000029C",
+        "T32HL00782"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100004400",
+      "award": [
+        "10ST1035"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Science Applications International Corporation"
+    },
+    {
+      "DOI": "10.13039/100000025",
+      "award": [
+        "R01MH101814",
+        "R01MH101822",
+        "R01MH107666"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Mental Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        16
+      ]
+    ],
+    "date-time": "2024-04-16T09:51:43Z",
+    "timestamp": 1713261103783
+  },
+  "is-referenced-by-count": 27,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            10
+          ]
+        ],
+        "date-time": "2020-09-10T00:00:00Z",
+        "timestamp": 1599696000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22346",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22346",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22346",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22346",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "854-867",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "The GTEx Consortium atlas of genetic regulatory effects across human tissues",
+      "author": "Aguet F.",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_8_2_1",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature24277",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1038/nrg3891",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1038/nature09298",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1093/nar/gky1151",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "article-title": "Widespread dose‐dependent effects of RNA expression and splicing on complex diseases and traits",
+      "author": "Barbeira A. N.",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_8_7_1",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-018-03621-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007889",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv546",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts196",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts635",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1093/nar/gky955",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.18637/jss.v033.i01",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1038/s41431-018-0176-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1038/ng.3506",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0092-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1093/nar/gky1095",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0345-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0364-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1038/nature12531",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt500",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-323",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "article-title": "Annotation‐free quantification of RNA splicing using LeafCutter",
+      "author": "Li Y. I.",
+      "first-page": "151",
+      "issue": "1",
+      "journal-title": "Nature Publishing Group",
+      "key": "e_1_2_8_26_1",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3977",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1457-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1038/s41467-018-06302-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1038/nature21039",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv722",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-77",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1186/gb-2010-11-3-r25",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1101/gr.213611.116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1038/nn.4618",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1000770",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0268-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0385-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_38_1"
+    },
+    {
+      "article-title": "A simple new approach to variable selection in regression, with application to genetic fine‐mapping",
+      "author": "Wang G.",
+      "journal-title": "bioRxiv",
+      "key": "e_1_2_8_39_1",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.03.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006646",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006423",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0132-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_43_1"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11874-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_44_1"
+    }
+  ],
+  "reference-count": 43,
+  "references-count": 43,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22346"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Fine‐mapping and QTL tissue‐sharing information improves the reliability of causal gene identification"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

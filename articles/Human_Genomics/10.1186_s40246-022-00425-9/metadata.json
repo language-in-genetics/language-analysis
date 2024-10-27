@@ -1,0 +1,852 @@
+{
+  "DOI": "10.1186/s40246-022-00425-9",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00425-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eProteins and metabolites are essential for many biological functions and often linked through enzymatic or transport reactions. Individual molecules have been associated with all-cause mortality. Many of these are correlated and might jointly represent pathways or endophenotypes involved in diseases.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe present an integrated analysis of proteomics and metabolomics via a local dimensionality reduction clustering method. We identified 224 modules of correlated proteins and metabolites in the Atherosclerosis Risk in Communities (ARIC) study, a general population cohort of older adults (\u003cjats:italic\u003eN\u003c/jats:italic\u003e = 4046, mean age 75.7, mean eGFR 65). Many of the modules displayed strong cross-sectional associations with demographic and clinical characteristics. In comprehensively adjusted analyses, including fasting plasma glucose, history of cardiovascular disease, systolic blood pressure and kidney function among others, 60 modules were associated with mortality. We transferred the network structure to the African American Study of Kidney Disease and Hypertension (AASK) (\u003cjats:italic\u003eN\u003c/jats:italic\u003e = 694, mean age 54.5, mean mGFR 46) and identified mortality associated modules relevant in this disease specific cohort. The four mortality modules relevant in both the general population and CKD were all a combination of proteins and metabolites and were related to diabetes / insulin secretion, cardiovascular disease and kidney function. Key components of these modules included N-terminal (NT)-pro hormone BNP (NT-proBNP), Sushi, Von Willebrand Factor Type A, EGF And Pentraxin (SVEP1), and several kallikrein proteases.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eThrough integrated biomarkers of the proteome and metabolome we identified functions of (patho-) physiologic importance related to diabetes, cardiovascular disease and kidney function.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "425"
+  ],
+  "article-number": "53",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "18 August 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "18 October 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "3 November 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The Atherosclerosis Risk In Communities (ARIC) study was approved by the IRB of the University of North Carolina at Chapel Hill, Johns Hopkins University, University of Mississippi Medical Center, Wake Forest University, University of Minnesota, Brigham and Women's Hospital, and Baylor College of Medicine. The African American Study of Kidney Disease and Hypertension clinical protocol was approved by the Institutional Review Board (IRB) of each participating institution, and each patient provided informed consent."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "All authors have approved the manuscript and give their consent for submission and publication."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no competing interest."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Zhou",
+      "given": "Linda",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Surapaneni",
+      "given": "Aditya",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rhee",
+      "given": "Eugene P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yu",
+      "given": "Bing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boerwinkle",
+      "given": "Eric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Coresh",
+      "given": "Josef",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Grams",
+      "given": "Morgan E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schlosser",
+      "given": "Pascal",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        3
+      ]
+    ],
+    "date-time": "2022-11-03T15:04:37Z",
+    "timestamp": 1667487877000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        3
+      ]
+    ],
+    "date-time": "2022-11-03T15:11:03Z",
+    "timestamp": 1667488263000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "R01 DK108803"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "K24 HL155861"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/501100001659",
+      "award": [
+        "SCHL 2292/1-1"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    },
+    {
+      "DOI": "10.13039/501100021729",
+      "award": [
+        "EQUIP Program for Medical Scientists"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Faculty of Medicine, University of Freiburg"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        19
+      ]
+    ],
+    "date-time": "2024-04-19T18:49:50Z",
+    "timestamp": 1713552590176
+  },
+  "is-referenced-by-count": 5,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            3
+          ]
+        ],
+        "date-time": "2022-11-03T00:00:00Z",
+        "timestamp": 1667433600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            3
+          ]
+        ],
+        "date-time": "2022-11-03T00:00:00Z",
+        "timestamp": 1667433600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00425-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00425-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00425-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        3
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.chest.2018.05.038",
+      "author": "RS Kelly",
+      "doi-asserted-by": "publisher",
+      "first-page": "335",
+      "issue": "2",
+      "journal-title": "Chest",
+      "key": "425_CR1",
+      "unstructured": "Kelly RS, Chawes BL, Blighe K, et al. An integrative transcriptomic and metabolomic study of lung function in children with asthma. Chest. 2018;154(2):335–48.",
+      "volume": "154",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.semnephrol.2018.01.009",
+      "author": "A Kottgen",
+      "doi-asserted-by": "publisher",
+      "first-page": "151",
+      "issue": "2",
+      "journal-title": "Semin Nephrol",
+      "key": "425_CR2",
+      "unstructured": "Kottgen A, Raffler J, Sekula P, Kastenmuller G. Genome-wide association studies of metabolite concentrations (mGWAS): relevance for nephrology. Semin Nephrol. 2018;38(2):151–74.",
+      "volume": "38",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2215/CJN.07420619",
+      "author": "RF Dubin",
+      "doi-asserted-by": "publisher",
+      "first-page": "404",
+      "issue": "3",
+      "journal-title": "Clin J Am Soc Nephrol",
+      "key": "425_CR3",
+      "unstructured": "Dubin RF, Rhee EP. Proteomics and metabolomics in kidney disease, including insights into etiology, treatment, and prevention. Clin J Am Soc Nephrol. 2020;15(3):404–11. https://doi.org/10.2215/CJN.07420619.",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/JAHA.117.008108",
+      "author": "JE Ho",
+      "doi-asserted-by": "publisher",
+      "first-page": "e008108",
+      "issue": "14",
+      "journal-title": "J Am Heart Assoc",
+      "key": "425_CR4",
+      "unstructured": "Ho JE, Lyass A, Courchesne P, et al. Protein biomarkers of cardiovascular disease and mortality in the community. J Am Heart Assoc. 2018;7(14):e008108. https://doi.org/10.1161/JAHA.117.008108.",
+      "volume": "7",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/aje/kwv213",
+      "author": "B Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "650",
+      "issue": "7",
+      "journal-title": "Am J Epidemiol",
+      "key": "425_CR5",
+      "unstructured": "Yu B, Heiss G, Alexander D, Grams ME, Boerwinkle E. Associations between the serum metabolome and all-cause mortality among african americans in the atherosclerosis risk in communities (ARIC) study. Am J Epidemiol. 2016;183(7):650–6. https://doi.org/10.1093/aje/kwv213.",
+      "volume": "183",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11311-9",
+      "author": "J Deelen",
+      "doi-asserted-by": "publisher",
+      "first-page": "3346",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "425_CR6",
+      "unstructured": "Deelen J, Kettunen J, Fischer K, et al. A metabolic profile of all-cause mortality risk identified in an observational study of 44,168 individuals. Nat Commun. 2019;10(1):3346. https://doi.org/10.1038/s41467-019-11311-9.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/S0002-9343(99)00066-2",
+      "author": "TB Harris",
+      "doi-asserted-by": "publisher",
+      "first-page": "506",
+      "issue": "5",
+      "journal-title": "Am J Med",
+      "key": "425_CR7",
+      "unstructured": "Harris TB, Ferrucci L, Tracy RP, et al. Associations of elevated interleukin-6 and C-reactive protein levels with mortality in the elderly. Am J Med. 1999;106(5):506–12.",
+      "volume": "106",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1111/acel.12717",
+      "author": "ES Orwoll",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Aging Cell",
+      "key": "425_CR8",
+      "unstructured": "Orwoll ES, Wiedrick J, Jacobs J, et al. High-throughput serum proteomics for the identification of protein biomarkers of mortality in older men. Aging Cell. 2018. https://doi.org/10.1111/acel.12717.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s12979-019-0168-5",
+      "author": "Z Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "28",
+      "issue": "1",
+      "journal-title": "Immun Ageing",
+      "key": "425_CR9",
+      "unstructured": "Li Z, Zhong W, Lv Y, et al. Associations of plasma high-sensitivity C-reactive protein concentrations with all-cause and cause-specific mortality among middle-aged and elderly individuals. Immun Ageing. 2019;16(1):28. https://doi.org/10.1186/s12979-019-0168-5.",
+      "volume": "16",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.kint.2018.03.008",
+      "author": "JR Hu",
+      "doi-asserted-by": "publisher",
+      "first-page": "381",
+      "issue": "2",
+      "journal-title": "Kidney Int",
+      "key": "425_CR10",
+      "unstructured": "Hu JR, Coresh J, Inker LA, et al. Serum metabolites are associated with all-cause mortality in chronic kidney disease. Kidney Int. 2018;94(2):381–9.",
+      "volume": "94",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ncomms14357",
+      "author": "K Suhre",
+      "doi-asserted-by": "publisher",
+      "first-page": "14357",
+      "journal-title": "Nat Commun",
+      "key": "425_CR11",
+      "unstructured": "Suhre K, Arnold M, Bhagwat AM, et al. Connecting genetic risk to disease end points through the human blood plasma proteome. Nat Commun. 2017;8:14357. https://doi.org/10.1038/ncomms14357.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/2021.01.14.426721",
+      "author": "DP Gomari",
+      "doi-asserted-by": "publisher",
+      "journal-title": "bioRxiv",
+      "key": "425_CR12",
+      "unstructured": "Gomari DP, Schweickart A, Cerchietti L, et al. Variational autoencoders learn universal latent representations of metabolomics data. bioRxiv. 2021. https://doi.org/10.1101/2021.01.14.426721.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1109/TCBB.2020.2983010",
+      "author": "P Schlosser",
+      "doi-asserted-by": "publisher",
+      "first-page": "2635",
+      "issue": "6",
+      "journal-title": "IEEE/ACM Trans Comput Biol Bioinform",
+      "key": "425_CR13",
+      "unstructured": "Schlosser P, Knaus J, Schmutz M, et al. Netboost: Boosting-supported network analysis improves high-dimensional omics prediction in acute myeloid leukemia and huntington’s disease. IEEE/ACM Trans Comput Biol Bioinform. 2021;18(6):2635–48. https://doi.org/10.1109/TCBB.2020.2983010.",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0567-8",
+      "author": "P Schlosser",
+      "doi-asserted-by": "publisher",
+      "first-page": "167",
+      "issue": "2",
+      "journal-title": "Nat Genet",
+      "key": "425_CR14",
+      "unstructured": "Schlosser P, Li Y, Sekula P, et al. Genetic studies of urinary metabolites illuminate mechanisms of detoxification and excretion in humans. Nat Genet. 2020;52(2):167–76. https://doi.org/10.1038/s41588-019-0567-8.",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2021.04.035",
+      "author": "JD Wright",
+      "doi-asserted-by": "publisher",
+      "first-page": "2939",
+      "issue": "23",
+      "journal-title": "J Am Coll Cardiol",
+      "key": "425_CR15",
+      "unstructured": "Wright JD, Folsom AR, Coresh J, et al. The ARIC (atherosclerosis risk in communities) study: JACC focus seminar 3/8. J Am Coll Cardiol. 2021;77(23):2939–59.",
+      "volume": "77",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.2337/db20-0104",
+      "author": "VR Curovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "2217",
+      "issue": "10",
+      "journal-title": "Diabetes",
+      "key": "425_CR16",
+      "unstructured": "Curovic VR, Suvitaival T, Mattila I, et al. Circulating metabolites and lipids are associated to diabetic retinopathy in individuals with type 1 diabetes. Diabetes. 2020;69(10):2217. https://doi.org/10.2337/db20-0104.",
+      "volume": "69",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1536/ihj.18-246",
+      "author": "N Morikawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "issue": "2",
+      "journal-title": "Int Heart J",
+      "key": "425_CR17",
+      "unstructured": "Morikawa N, Adachi H, Enomoto M, et al. Thrombospondin-2 as a potential risk factor in a general population. Int Heart J. 2019;60(2):310–7. https://doi.org/10.1536/ihj.18-246.",
+      "volume": "60",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12902-021-00726-5",
+      "author": "L Gao",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "issue": "1",
+      "journal-title": "BMC Endocr Disord",
+      "key": "425_CR18",
+      "unstructured": "Gao L, Zhang Y, Wang X, Dong H. Association of apolipoproteins A1 and B with type 2 diabetes and fasting blood glucose: a cross-sectional study. BMC Endocr Disord. 2021;21(1):59. https://doi.org/10.1186/s12902-021-00726-5.",
+      "volume": "21",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3390/jcm9020400",
+      "author": "L Shalaby",
+      "doi-asserted-by": "publisher",
+      "first-page": "400",
+      "issue": "2",
+      "journal-title": "J Clin Med",
+      "key": "425_CR19",
+      "unstructured": "Shalaby L, Thounaojam M, Tawfik A, et al. Role of endothelial ADAM17 in early vascular changes associated with diabetic retinopathy. J Clin Med. 2020;9(2):400. https://doi.org/10.3390/jcm9020400.",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/cells9051085",
+      "author": "V Lundbäck",
+      "doi-asserted-by": "publisher",
+      "first-page": "1085",
+      "issue": "5",
+      "journal-title": "Cells",
+      "key": "425_CR20",
+      "unstructured": "Lundbäck V, Kulyté A, Arner P, Strawbridge RJ, Dahlman I. Genome-wide association study of diabetogenic adipose morphology in the GENetics of adipocyte lipolysis (GENiAL) cohort. Cells. 2020;9(5):1085. https://doi.org/10.3390/cells9051085.",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.diabres.2017.06.015",
+      "author": "S Antonopoulos",
+      "doi-asserted-by": "publisher",
+      "first-page": "252",
+      "journal-title": "Diabetes Res Clin Pract",
+      "key": "425_CR21",
+      "unstructured": "Antonopoulos S, Mylonopoulou M, Angelidi AM, Kousoulis AA, Tentolouris N. Association of matrix γ-carboxyglutamic acid protein levels with insulin resistance and lp(a) in diabetes: a cross-sectional study. Diabetes Res Clin Pract. 2017;130:252–7.",
+      "volume": "130",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1113/EP088567",
+      "author": "SR Nandula",
+      "doi-asserted-by": "publisher",
+      "first-page": "1280",
+      "issue": "8",
+      "journal-title": "Exp Physiol",
+      "key": "425_CR22",
+      "unstructured": "Nandula SR, Huxford I, Wheeler TT, Aparicio C, Gorr SU. The parotid secretory protein BPIFA2 is a salivary surfactant that affects lipopolysaccharide action. Exp Physiol. 2020;105(8):1280–92. https://doi.org/10.1113/EP088567.",
+      "volume": "105",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.2337/db21-1056",
+      "author": "JC Chai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1338",
+      "issue": "6",
+      "journal-title": "Diabetes",
+      "key": "425_CR23",
+      "unstructured": "Chai JC, Chen GC, Yu B, et al. Serum metabolomics of incident diabetes and glycemic changes in a population with high diabetes burden: the hispanic community health study/study of latinos. Diabetes. 2022;71(6):1338–49. https://doi.org/10.2337/db21-1056.",
+      "volume": "71",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/BF00260962",
+      "author": "G Marchesini",
+      "doi-asserted-by": "publisher",
+      "first-page": "456",
+      "issue": "5",
+      "journal-title": "Diabetologia",
+      "key": "425_CR24",
+      "unstructured": "Marchesini G, Forlani G, Zoli M, Vannini P, Pisi E. Muscle protein breakdown in uncontrolled diabetes as assessed by urinary 3-methylhistidine excretion. Diabetologia. 1982;23(5):456–8. https://doi.org/10.1007/BF00260962.",
+      "volume": "23",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1007/s00395-020-00828-6",
+      "author": "MJ Winkler",
+      "doi-asserted-by": "publisher",
+      "first-page": "67",
+      "issue": "6",
+      "journal-title": "Basic Res Cardiol",
+      "key": "425_CR25",
+      "unstructured": "Winkler MJ, Müller P, Sharifi AM, et al. Functional investigation of the coronary artery disease gene SVEP1. Basic Res Cardiol. 2020;115(6):67. https://doi.org/10.1007/s00395-020-00828-6.",
+      "volume": "115",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/ehf2.13032",
+      "author": "MU Sani",
+      "doi-asserted-by": "publisher",
+      "first-page": "74",
+      "issue": "1",
+      "journal-title": "ESC Heart Fail",
+      "key": "425_CR26",
+      "unstructured": "Sani MU, Damasceno A, Davison BA, et al. N-terminal pro BNP and galectin-3 are prognostic biomarkers of acute heart failure in sub-saharan africa: lessons from the BAHEF trial. ESC Heart Fail. 2021;8(1):74–84. https://doi.org/10.1002/ehf2.13032.",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1097/CRD.0000000000000069",
+      "author": "D Kolte",
+      "doi-asserted-by": "publisher",
+      "first-page": "99",
+      "issue": "3",
+      "journal-title": "Cardiol Rev",
+      "key": "425_CR27",
+      "unstructured": "Kolte D, Shariat-Madar Z. Plasma kallikrein inhibitors in cardiovascular disease: an innovative therapeutic approach. Cardiol Rev. 2016;24(3):99–109. https://doi.org/10.1097/CRD.0000000000000069.",
+      "volume": "24",
+      "year": "2016"
+    },
+    {
+      "author": "JN Sharma",
+      "first-page": "15",
+      "journal-title": "Prog Drug Res",
+      "key": "425_CR28",
+      "unstructured": "Sharma JN, Narayanan P. The kallikrein-kinin pathways in hypertension and diabetes. Prog Drug Res. 2014;69:15–36.",
+      "volume": "69",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.2337/db20-0475",
+      "author": "C Pipino",
+      "doi-asserted-by": "publisher",
+      "first-page": "2206",
+      "issue": "10",
+      "journal-title": "Diabetes",
+      "key": "425_CR29",
+      "unstructured": "Pipino C, Shah H, Prudente S, et al. Association of the 1q25 diabetes-specific coronary heart disease locus with alterations of the γ-glutamyl cycle and increased methylglyoxal levels in endothelial cells. Diabetes. 2020;69(10):2206–16. https://doi.org/10.2337/db20-0475.",
+      "volume": "69",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1152/ajpcell.00366.2020",
+      "author": "A Sánchez-Navarro",
+      "doi-asserted-by": "publisher",
+      "first-page": "C106",
+      "issue": "1",
+      "journal-title": "Am J Physiol Cell Physiol",
+      "key": "425_CR30",
+      "unstructured": "Sánchez-Navarro A, González-Soria I, Caldiño-Bohn R, Bobadilla NA. An integrative view of serpins in health and disease: the contribution of SerpinA3. Am J Physiol Cell Physiol. 2021;320(1):C106–18. https://doi.org/10.1152/ajpcell.00366.2020.",
+      "volume": "320",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s00726-019-02783-6",
+      "author": "E Hanff",
+      "doi-asserted-by": "publisher",
+      "first-page": "1485",
+      "issue": "10–12",
+      "journal-title": "Amino Acids",
+      "key": "425_CR31",
+      "unstructured": "Hanff E, Said MY, Kayacelebi AA, et al. High plasma guanidinoacetate-to-homoarginine ratio is associated with high all-cause and cardiovascular mortality rate in adult renal transplant recipients. Amino Acids. 2019;51(10–12):1485–99. https://doi.org/10.1007/s00726-019-02783-6.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1681/ASN.2019080811",
+      "author": "Y Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "817",
+      "issue": "4",
+      "journal-title": "J Am Soc Nephrol",
+      "key": "425_CR32",
+      "unstructured": "Chen Y, Zelnick LR, Wang K, et al. Kidney clearance of secretory solutes is associated with progression of CKD: the CRIC study. J Am Soc Nephrol. 2020;31(4):817–27. https://doi.org/10.1681/ASN.2019080811.",
+      "volume": "31",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41598-020-69559-x",
+      "author": "Y Cheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "12675",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "425_CR33",
+      "unstructured": "Cheng Y, Li Y, Benkowitz P, Lamina C, Köttgen A, Sekula P. The relationship between blood metabolites of the tryptophan pathway and kidney function: a bidirectional mendelian randomization analysis. Sci Rep. 2020;10(1):12675–x. https://doi.org/10.1038/s41598-020-69559-x.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/1061186X.2019.1566342",
+      "author": "S Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "876",
+      "issue": "8",
+      "journal-title": "J Drug Target",
+      "key": "425_CR34",
+      "unstructured": "Jiang S, Qiu GH, Zhu N, Hu ZY, Liao DF, Qin L. ANGPTL3: a novel biomarker and promising therapeutic target. J Drug Target. 2019;27(8):876–84. https://doi.org/10.1080/1061186X.2019.1566342.",
+      "volume": "27",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0134311",
+      "author": "C Barrios",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0134311",
+      "issue": "8",
+      "journal-title": "PLoS One",
+      "key": "425_CR35",
+      "unstructured": "Barrios C, Beaumont M, Pallister T, et al. Gut-microbiota-metabolite axis in early renal function decline. PLoS One. 2015;10(8):e0134311. https://doi.org/10.1371/journal.pone.0134311.",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1097/00005072-197503000-00005",
+      "author": "JW Olney",
+      "doi-asserted-by": "publisher",
+      "first-page": "167",
+      "issue": "2",
+      "journal-title": "J Neuropathol Exp Neurol",
+      "key": "425_CR36",
+      "unstructured": "Olney JW, Misra CH, Gubareff TD. Cysteine-S-sulfate: Brain damaging metabolite in sulfite oxidase Deficiency1. J Neuropathol Exp Neurol. 1975;34(2):167–77. https://doi.org/10.1097/00005072-197503000-00005.",
+      "volume": "34",
+      "year": "1975"
+    },
+    {
+      "DOI": "10.1007/s00262-013-1500-0",
+      "author": "B Chaudhary",
+      "doi-asserted-by": "publisher",
+      "first-page": "81",
+      "issue": "2",
+      "journal-title": "Cancer Immunol Immunother",
+      "key": "425_CR37",
+      "unstructured": "Chaudhary B, Khaled YS, Ammori BJ, Elkord E. Neuropilin 1: function and therapeutic potential in cancer. Cancer Immunol Immunother. 2014;63(2):81–99. https://doi.org/10.1007/s00262-013-1500-0.",
+      "volume": "63",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.aje.a115184",
+      "author": "Aric Investigators",
+      "doi-asserted-by": "publisher",
+      "first-page": "687",
+      "issue": "4",
+      "journal-title": "Am J Epidemiol",
+      "key": "425_CR38",
+      "unstructured": "Aric Investigators. The atherosclerosis risk in communities (ARIC) study: design and objectives the ARIC investigators. Am J Epidemiol. 1989;129(4):687–702.",
+      "volume": "129",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1681/ASN.2020111607",
+      "author": "ME Grams",
+      "doi-asserted-by": "publisher",
+      "first-page": "2291",
+      "issue": "9",
+      "journal-title": "J Am Soc Nephrol",
+      "key": "425_CR39",
+      "unstructured": "Grams ME, Surapaneni A, Chen J, et al. Proteins associated with risk of kidney function decline in the general population. J Am Soc Nephrol. 2021;32(9):2291. https://doi.org/10.1681/ASN.2020111607.",
+      "volume": "32",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.2215/CJN.10010818",
+      "author": "S Luo",
+      "doi-asserted-by": "publisher",
+      "first-page": "342",
+      "issue": "3",
+      "journal-title": "Clin J Am Soc Nephrol",
+      "key": "425_CR40",
+      "unstructured": "Luo S, Coresh J, Tin A, et al. Serum metabolomic alterations associated with proteinuria in CKD. Clin J Am Soc Nephrol. 2019;14(3):342–53. https://doi.org/10.2215/CJN.10010818.",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.xkme.2022.100522",
+      "author": "L Bernard",
+      "doi-asserted-by": "publisher",
+      "first-page": "100522",
+      "issue": "9",
+      "journal-title": "Kidney Med",
+      "key": "425_CR41",
+      "unstructured": "Bernard L, Zhou L, Surapaneni A, et al. Serum metabolites and kidney outcomes: the atherosclerosis risk in communities study. Kidney Med. 2022;4(9):100522. https://doi.org/10.1016/j.xkme.2022.100522.",
+      "volume": "4",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/ndt/gfac187",
+      "doi-asserted-by": "publisher",
+      "key": "425_CR42",
+      "unstructured": "Bächle H, Sekula P, Schlosser P et al. Uromodulin and its association with urinary metabolites: the german chronic kidney disease study. Nephrol Dial Transplant. 2022. https://doi.org/10.1093/ndt/gfac187."
+    },
+    {
+      "DOI": "10.7326/0003-4819-150-9-200905050-00006",
+      "author": "AS Levey",
+      "doi-asserted-by": "publisher",
+      "first-page": "604",
+      "issue": "9",
+      "journal-title": "Ann Intern Med",
+      "key": "425_CR43",
+      "unstructured": "Levey AS, Stevens LA, Schmid CH, et al. A new equation to estimate glomerular filtration rate. Ann Intern Med. 2009;150(9):604–12.",
+      "volume": "150",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/S2213-8587(18)30288-2",
+      "author": "K Bhaskaran",
+      "doi-asserted-by": "publisher",
+      "first-page": "944",
+      "issue": "12",
+      "journal-title": "Lancet Diabetes Endocrinol",
+      "key": "425_CR44",
+      "unstructured": "Bhaskaran K, Dos-Santos-Silva I, Leon DA, Douglas IJ, Smeeth L. Association of BMI with overall and cause-specific mortality: a population-based cohort study of 3·6 million adults in the UK. Lancet Diabetes Endocrinol. 2018;6(12):944–53.",
+      "volume": "6",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41598-018-38461-y",
+      "author": "S Yi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1596",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "425_CR45",
+      "unstructured": "Yi S, Yi J, Ohrr H. Total cholesterol and all-cause mortality by sex and age: a prospective cohort study among 128 million adults. Sci Rep. 2019;9(1):1596. https://doi.org/10.1038/s41598-018-38461-y.",
+      "volume": "9",
+      "year": "2019"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00425-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Integrated proteomic and metabolomic modules identified as biomarkers of mortality in the Atherosclerosis Risk in Communities study and the African American Study of Kidney Disease and Hypertension"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

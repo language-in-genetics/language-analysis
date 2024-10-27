@@ -1,0 +1,763 @@
+{
+  "DOI": "10.1186/s40246-021-00363-y",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00363-y",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eAcute kidney injury (AKI) is a life-threatening complication characterized by rapid decline in renal function, which frequently occurs after transplantation surgery. However, the molecular mechanism underlying the development of post-transplant (post-Tx) AKI still remains unknown. An increasing number of studies have demonstrated that certain microRNAs (miRNAs) exert crucial functions in AKI. The present study sought to elucidate the molecular mechanisms in post-Tx AKI by constructing a regulatory miRNA–mRNA network.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eBased on two datasets (GSE53771 and GSE53769), three key modules, which contained 55 mRNAs, 76 mRNAs, and 151 miRNAs, were identified by performing weighted gene co-expression network analysis (WGCNA). The miRDIP v4.1 was applied to predict the interactions of key module mRNAs and miRNAs, and the miRNA–mRNA pairs with confidence of more than 0.2 were selected to construct a regulatory miRNA–mRNA network by Cytoscape. The miRNA–mRNA network consisted of 82 nodes (48 mRNAs and 34 miRNAs) and 125 edges. Two miRNAs (miR-203a-3p and miR-205-5p) and ERBB4 with higher node degrees compared with other nodes might play a central role in post-Tx AKI. Additionally, Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis indicated that this network was mainly involved in kidney-/renal-related functions and PI3K–Akt/HIF-1/Ras/MAPK signaling pathways.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe constructed a regulatory miRNA–mRNA network to provide novel insights into post-Tx AKI development, which might help discover new biomarkers or therapeutic drugs for enhancing the ability for early prediction and intervention and decreasing mortality rate of AKI after transplantation.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "363"
+  ],
+  "article-number": "69",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "28 December 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "11 October 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "9 December 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Guo",
+      "given": "Duan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Fan",
+      "given": "Yu",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2946-2132",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Yue",
+      "given": "Ji-Rong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lin",
+      "given": "Tao",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        9
+      ]
+    ],
+    "date-time": "2021-12-09T09:02:58Z",
+    "timestamp": 1639040578000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        9
+      ]
+    ],
+    "date-time": "2021-12-09T09:12:34Z",
+    "timestamp": 1639041154000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "81870513"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "award": [
+        "ZY2016104"
+      ],
+      "name": "1.3.5 Project For Disciplines of Excellence, West China Hospital, Sichuan University"
+    },
+    {
+      "award": [
+        "2019JYJH08"
+      ],
+      "name": "Special Supportive Program for Organ Transplantation by COTDF"
+    },
+    {
+      "award": [
+        "18PJ453"
+      ],
+      "name": "Research Funding of Sichuan Health and Family Planning Commission"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        22
+      ]
+    ],
+    "date-time": "2023-11-22T06:01:59Z",
+    "timestamp": 1700632919381
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            1
+          ]
+        ],
+        "date-time": "2021-12-01T00:00:00Z",
+        "timestamp": 1638316800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 8,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            12,
+            9
+          ]
+        ],
+        "date-time": "2021-12-09T00:00:00Z",
+        "timestamp": 1639008000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00363-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00363-y/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00363-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        12,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1053/j.ackd.2017.05.005",
+      "author": "BG Abu Jawdeh",
+      "doi-asserted-by": "publisher",
+      "first-page": "228",
+      "issue": "4",
+      "journal-title": "Adv Chronic Kidney Dis",
+      "key": "363_CR1",
+      "unstructured": "Abu Jawdeh BG, Govil A. Acute kidney injury in transplant setting: differential diagnosis and impact on health and health care. Adv Chronic Kidney Dis. 2017;24(4):228–32.",
+      "volume": "24",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12882-018-0824-6",
+      "author": "WR Cooke",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "issue": "1",
+      "journal-title": "BMC Nephrol",
+      "key": "363_CR2",
+      "unstructured": "Cooke WR, Hemmilä UK, Craik AL, Mandula CJ, Mvula P, Msusa A, et al. Incidence, aetiology and outcomes of obstetric-related acute kidney injury in Malawi: a prospective observational study. BMC Nephrol. 2018;19(1):25.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "author": "C Solé",
+      "first-page": "1891",
+      "issue": "11",
+      "journal-title": "Liver Int Off J Int Assoc Study Liver",
+      "key": "363_CR3",
+      "unstructured": "Solé C, Pose E, Solà E, Ginès P. Hepatorenal syndrome in the era of acute kidney injury. Liver Int Off J Int Assoc Study Liver. 2018;38(11):1891–901.",
+      "volume": "38",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.bpa.2017.09.001",
+      "author": "M Ostermann",
+      "doi-asserted-by": "publisher",
+      "first-page": "305",
+      "issue": "3",
+      "journal-title": "Best Pract Res Clin Anaesthesiol",
+      "key": "363_CR4",
+      "unstructured": "Ostermann M, Liu K. Pathophysiology of AKI. Best Pract Res Clin Anaesthesiol. 2017;31(3):305–14.",
+      "volume": "31",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/jcp.27486",
+      "author": "K Saliminejad",
+      "doi-asserted-by": "publisher",
+      "first-page": "5451",
+      "issue": "5",
+      "journal-title": "J Cell Physiol",
+      "key": "363_CR5",
+      "unstructured": "Saliminejad K, Khorram Khorshid HR, Soleymani Fard S, Ghaffari SH. An overview of microRNAs: biology, functions, therapeutics, and analysis methods. J Cell Physiol. 2019;234(5):5451–65.",
+      "volume": "234",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/gr.082701.108",
+      "author": "RC Friedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "92",
+      "issue": "1",
+      "journal-title": "Genome Res",
+      "key": "363_CR6",
+      "unstructured": "Friedman RC, Farh KK, Burge CB, Bartel DP. Most mammalian mRNAs are conserved targets of microRNAs. Genome Res. 2009;19(1):92–105.",
+      "volume": "19",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0202369",
+      "author": "X Pan",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0202369",
+      "issue": "8",
+      "journal-title": "PLoS ONE",
+      "key": "363_CR7",
+      "unstructured": "Pan X, Wenzel A, Jensen LJ, Gorodkin J. Genome-wide identification of clusters of predicted microRNA binding sites as microRNA sponge candidates. PLoS ONE. 2018;13(8):e0202369.",
+      "volume": "13",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s11064-020-03155-3",
+      "doi-asserted-by": "crossref",
+      "key": "363_CR8",
+      "unstructured": "Chen B, Hua Z, Qin X, Li Z. Integrated microarray to identify the hub miRNAs and constructed miRNA-mRNA network in neuroblastoma via bioinformatics analysis. Neurochem Res. 2020."
+    },
+    {
+      "DOI": "10.1016/j.archoralbio.2020.104947",
+      "author": "HM Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "104947",
+      "journal-title": "Arch Oral Biol",
+      "key": "363_CR9",
+      "unstructured": "Liu HM, Huang Y, Li L, Zhang Y, Cong X, Wu LL, et al. MicroRNA-mRNA expression profiles and functional network of submandibular gland in type 2 diabetic db/db mice. Arch Oral Biol. 2020;120:104947.",
+      "volume": "120",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s12035-020-01872-y",
+      "author": "I Iwuchukwu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2346",
+      "issue": "5",
+      "journal-title": "Mol Neurobiol",
+      "key": "363_CR10",
+      "unstructured": "Iwuchukwu I, Nguyen D, Beavers M, Tran V, Sulaiman W, Fannin E, et al. MicroRNA regulatory network as biomarkers of late seizure in patients with spontaneous intracerebral hemorrhage. Mol Neurobiol. 2020;57(5):2346–57.",
+      "volume": "57",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ajpath.2016.10.017",
+      "author": "AJ van Zonneveld",
+      "doi-asserted-by": "publisher",
+      "first-page": "20",
+      "issue": "1",
+      "journal-title": "Am J Pathol",
+      "key": "363_CR11",
+      "unstructured": "van Zonneveld AJ, Rabelink TJ, Bijkerk R. miRNA-coordinated networks as promising therapeutic targets for acute kidney injury. Am J Pathol. 2017;187(1):20–4.",
+      "volume": "187",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ejphar.2019.02.015",
+      "author": "J Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Eur J Pharmacol",
+      "key": "363_CR12",
+      "unstructured": "Wu J, Li DD, Li JY, Yin YC, Li PC, Qiu L, et al. Identification of microRNA-mRNA networks involved in cisplatin-induced renal tubular epithelial cells injury. Eur J Pharmacol. 2019;851:1–12.",
+      "volume": "851",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-559",
+      "author": "P Langfelder",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "journal-title": "BMC Bioinform",
+      "key": "363_CR13",
+      "unstructured": "Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinform. 2008;9:559.",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.7150/jca.38211",
+      "author": "X Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2150",
+      "issue": "8",
+      "journal-title": "J Cancer",
+      "key": "363_CR14",
+      "unstructured": "Zhang X, Bai J, Yuan C, Long L, Zheng Z, Wang Q, et al. Bioinformatics analysis and identification of potential genes related to pathogenesis of cervical intraepithelial neoplasia. J Cancer. 2020;11(8):2150–7.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41417-019-0105-y",
+      "author": "J Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "issue": "1–2",
+      "journal-title": "Cancer Gene Ther",
+      "key": "363_CR15",
+      "unstructured": "Li J, Lu L, Zhang YH, Xu Y, Liu M, Feng K, et al. Identification of leukemia stem cell expression signatures through Monte Carlo feature selection strategy and support vector machine. Cancer Gene Ther. 2020;27(1–2):56–69.",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fbioe.2019.00339",
+      "author": "X Pan",
+      "doi-asserted-by": "publisher",
+      "first-page": "339",
+      "journal-title": "Front Bioeng Biotechnol",
+      "key": "363_CR16",
+      "unstructured": "Pan X, Zeng T, Yuan F, Zhang YH, Chen L, Zhu L, et al. Screening of methylation signature and gene functions associated with the subtypes of isocitrate dehydrogenase-mutation gliomas. Front Bioeng Biotechnol. 2019;7:339.",
+      "volume": "7",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00213-019-05209-z",
+      "author": "M Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "2119",
+      "issue": "7",
+      "journal-title": "Psychopharmacology",
+      "key": "363_CR17",
+      "unstructured": "Shen M, Song Z, Wang JH. microRNA and mRNA profiles in the amygdala are associated with stress-induced depression and resilience in juvenile mice. Psychopharmacology. 2019;236(7):2119–42.",
+      "volume": "236",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.bbrc.2020.05.158",
+      "author": "T An",
+      "doi-asserted-by": "publisher",
+      "first-page": "520",
+      "issue": "3",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "363_CR18",
+      "unstructured": "An T, Song Z, Wang JH. Molecular mechanism of reward treatment ameliorating chronic stress-induced depressive-like behavior assessed by sequencing miRNA and mRNA in medial prefrontal cortex. Biochem Biophys Res Commun. 2020;528(3):520–7.",
+      "volume": "528",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1146/annurev-med-050214-013407",
+      "author": "A Zuk",
+      "doi-asserted-by": "publisher",
+      "first-page": "293",
+      "journal-title": "Annu Rev Med",
+      "key": "363_CR19",
+      "unstructured": "Zuk A, Bonventre JV. Acute kidney injury. Annu Rev Med. 2016;67:293–307.",
+      "volume": "67",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0104164",
+      "doi-asserted-by": "crossref",
+      "key": "363_CR20",
+      "unstructured": "Wilflingseder J, Sunzenauer J, Toronyi E, Heinzel A, Kainz A, Mayer B, et al. Molecular pathogenesis of post-transplant acute kidney injury: assessment of whole-genome mRNA and miRNA profiles. PLoS ONE. 2014;9(8):e104164-e."
+    },
+    {
+      "author": "J Zhao",
+      "first-page": "2123787",
+      "journal-title": "Biomed Res Int",
+      "key": "363_CR21",
+      "unstructured": "Zhao J, Su Y, Jiao J, Wang Z, Fang X, He X, et al. Identification of lncRNA and mRNA biomarkers in osteoarthritic degenerative meniscus by weighted gene coexpression network and competing endogenous RNA network analysis. Biomed Res Int. 2020;2020:2123787.",
+      "volume": "2020",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fgene.2020.00176",
+      "author": "J Wei",
+      "doi-asserted-by": "publisher",
+      "first-page": "176",
+      "journal-title": "Front Genet",
+      "key": "363_CR22",
+      "unstructured": "Wei J, Yin Y, Deng Q, Zhou J, Wang Y, Yin G, et al. Integrative analysis of MicroRNA and gene interactions for revealing candidate signatures in prostate cancer. Front Genet. 2020;11:176.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "author": "X Ma",
+      "first-page": "292",
+      "issue": "1",
+      "journal-title": "Oncol Rep",
+      "key": "363_CR23",
+      "unstructured": "Ma X, Tao R, Li L, Chen H, Liu Z, Bai J, et al. Identification of a 5-microRNA signature and hub miRNA-mRNA interactions associated with pancreatic cancer. Oncol Rep. 2019;41(1):292–300.",
+      "volume": "41",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0026683",
+      "author": "MV DiLeo",
+      "doi-asserted-by": "publisher",
+      "first-page": "e26683",
+      "issue": "10",
+      "journal-title": "PLoS ONE",
+      "key": "363_CR24",
+      "unstructured": "DiLeo MV, Strahan GD, den Bakker M, Hoekenga OA. Weighted correlation network analysis (WGCNA) applied to the tomato fruit metabolome. PLoS ONE. 2011;6(10):e26683.",
+      "volume": "6",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3390/cancers12010037",
+      "doi-asserted-by": "crossref",
+      "key": "363_CR25",
+      "unstructured": "Niemira M, Collin F, Szalkowska A, Bielska A, Chwialkowska K, Reszec J, et al. Molecular signature of subtypes of non-small-cell lung cancer by large-scale transcriptional profiling: identification of key modules and genes by weighted gene co-expression network analysis (WGCNA). Cancers. 2019;12(1)."
+    },
+    {
+      "DOI": "10.3389/fphys.2019.01081",
+      "author": "Y Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1081",
+      "journal-title": "Front Physiol",
+      "key": "363_CR26",
+      "unstructured": "Liu Y, Gu HY, Zhu J, Niu YM, Zhang C, Guo GL. Identification of hub genes and key pathways associated with bipolar disorder based on weighted gene co-expression network analysis. Front Physiol. 2019;10:1081.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.7717/peerj.7113",
+      "author": "MM Perales-Quintana",
+      "doi-asserted-by": "publisher",
+      "first-page": "e7113",
+      "journal-title": "PeerJ",
+      "key": "363_CR27",
+      "unstructured": "Perales-Quintana MM, Saucedo AL, Lucio-Gutiérrez JR, Waksman N, Alarcon-Galvan G, Govea-Torres G, et al. Metabolomic and biochemical characterization of a new model of the transition of acute kidney injury to chronic kidney disease induced by folic acid. PeerJ. 2019;7:e7113.",
+      "volume": "7",
+      "year": "2019"
+    },
+    {
+      "author": "M Teschner",
+      "first-page": "24",
+      "issue": "Suppl 5",
+      "journal-title": "Nephrol Dial Transpl Off Publ Eur Dial Transpl Assoc Eur Renal Assoc",
+      "key": "363_CR28",
+      "unstructured": "Teschner M, Kosch M, Schaefer RM. Folate metabolism in renal failure. Nephrol Dial Transpl Off Publ Eur Dial Transpl Assoc Eur Renal Assoc. 2002;17(Suppl 5):24–7.",
+      "volume": "17",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1155/2011/768512",
+      "author": "D Feliers",
+      "doi-asserted-by": "publisher",
+      "first-page": "768512",
+      "journal-title": "J Signal Transduct",
+      "key": "363_CR29",
+      "unstructured": "Feliers D, Kasinath BS. Erk in kidney diseases. J Signal Transduct. 2011;2011:768512.",
+      "volume": "2011",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.4061/2010/201367",
+      "doi-asserted-by": "crossref",
+      "key": "363_CR30",
+      "unstructured": "Basu A, Krishnamurthy S. Cellular responses to Cisplatin-induced DNA damage. J Nucl Acids 2010;2010"
+    },
+    {
+      "DOI": "10.3390/molecules25235641",
+      "doi-asserted-by": "crossref",
+      "key": "363_CR31",
+      "unstructured": "Dachuri V, Song PH, Kim YW, Ku SK, Song CH. Protective effects of traditional polyherbs on cisplatin-induced acute kidney injury cell model by inhibiting oxidative stress and MAPK signaling pathway. Molecules (Basel, Switzerland). 2020;25(23)."
+    },
+    {
+      "DOI": "10.18632/oncotarget.17002",
+      "author": "DH Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "51096",
+      "issue": "31",
+      "journal-title": "Oncotarget",
+      "key": "363_CR32",
+      "unstructured": "Lee DH, Park JH, Han SB, Yoon DY, Jung YY, Hong JT. Peroxiredoxin 6 overexpression attenuates lipopolysaccharide-induced acute kidney injury. Oncotarget. 2017;8(31):51096–107.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/s00204-015-1472-2",
+      "author": "EK Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "867",
+      "issue": "6",
+      "journal-title": "Arch Toxicol",
+      "key": "363_CR33",
+      "unstructured": "Kim EK, Choi EJ. Compromised MAPK signaling in human diseases: an update. Arch Toxicol. 2015;89(6):867–82.",
+      "volume": "89",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1177/1535370217749472",
+      "author": "YF Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "129",
+      "issue": "2",
+      "journal-title": "Exp Biol Med (Maywood)",
+      "key": "363_CR34",
+      "unstructured": "Zou YF, Zhang W. Role of microRNA in the detection, progression, and intervention of acute kidney injury. Exp Biol Med (Maywood). 2018;243(2):129–36.",
+      "volume": "243",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1681/ASN.2016010045",
+      "author": "L Amrouche",
+      "doi-asserted-by": "publisher",
+      "first-page": "479",
+      "issue": "2",
+      "journal-title": "J Am Soc Nephrol",
+      "key": "363_CR35",
+      "unstructured": "Amrouche L, Desbuissons G, Rabant M, Sauvaget V, Nguyen C, Benon A, et al. MicroRNA-146a in human and experimental ischemic AKI: CXCL8-dependent mechanism of action. J Am Soc Nephrol. 2017;28(2):479–93.",
+      "volume": "28",
+      "year": "2017"
+    },
+    {
+      "author": "P Arvin",
+      "first-page": "626",
+      "issue": "10",
+      "journal-title": "Bratisl Lek Listy",
+      "key": "363_CR36",
+      "unstructured": "Arvin P, Samimagham HR, Montazerghaem H, Khayatian M, Mahboobi H, Ghadiri SF. Early detection of cardiac surgery-associated acute kidney injury by microRNA-21. Bratisl Lek Listy. 2017;118(10):626–31.",
+      "volume": "118",
+      "year": "2017"
+    },
+    {
+      "author": "FP Schena",
+      "first-page": "755",
+      "issue": "4",
+      "journal-title": "Nephrol Dial Transpl Off Publi Euro Dial Transpl Associ Eur Renal Assoc",
+      "key": "363_CR37",
+      "unstructured": "Schena FP, Serino G, Sallustio F. MicroRNAs in kidney diseases: new promising biomarkers for diagnosis and monitoring. Nephrol Dial Transpl Off Publi Euro Dial Transpl Associ Eur Renal Assoc. 2014;29(4):755–63.",
+      "volume": "29",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3389/fphar.2020.563756",
+      "doi-asserted-by": "crossref",
+      "key": "363_CR38",
+      "unstructured": "Sessa F, Salerno M, Bertozzi G, Cipolloni L, Messina G, Aromatario M, et al. miRNAs as novel biomarkers of chronic kidney injury in anabolic-androgenic steroid users: an experimental study. Front Pharmacol. 2020;11:563756."
+    },
+    {
+      "author": "X Liang",
+      "first-page": "4559",
+      "issue": "3",
+      "journal-title": "FASEB J Off Publ Fed Am Soc Exp Biol",
+      "key": "363_CR39",
+      "unstructured": "Liang X, Ding Y, Lin F, Zhang Y, Zhou X, Meng Q, et al. Overexpression of ERBB4 rejuvenates aged mesenchymal stem cells and enhances angiogenesis via PI3K/AKT and MAPK/ERK pathways. FASEB J Off Publ Fed Am Soc Exp Biol. 2019;33(3):4559–70.",
+      "volume": "33",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1681/ASN.2007040419",
+      "author": "A Weidemann",
+      "doi-asserted-by": "publisher",
+      "first-page": "486",
+      "issue": "3",
+      "journal-title": "J Am Soc Nephrol",
+      "key": "363_CR40",
+      "unstructured": "Weidemann A, Bernhardt WM, Klanke B, Daniel C, Buchholz B, Câmpean V, et al. HIF activation protects from acute kidney injury. J Am Soc Nephrol. 2008;19(3):486–94.",
+      "volume": "19",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1159/000443414",
+      "author": "G Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "129",
+      "issue": "2",
+      "journal-title": "Kidney Blood Press Res",
+      "key": "363_CR41",
+      "unstructured": "Zhang G, Wang Q, Zhou Q, Wang R, Xu M, Wang H, et al. Protective effect of tempol on acute kidney injury through PI3K/Akt/Nrf2 signaling pathway. Kidney Blood Press Res. 2016;41(2):129–38.",
+      "volume": "41",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1101/gr.1239303",
+      "doi-asserted-by": "crossref",
+      "key": "363_CR42",
+      "unstructured": "P S, A M, O O, NS B, JT W, D R, et al. Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res. 2003;13(11):2498–504."
+    },
+    {
+      "DOI": "10.1093/nar/gkx1144",
+      "doi-asserted-by": "crossref",
+      "key": "363_CR43",
+      "unstructured": "Tokar T, Pastrello C, Rossos AEM, Abovsky M, Hauschild AC, Tsay M, et al. mirDIP 4.1-integrative database of human microRNA target predictions. Nucl Acids Res. 2018;46(D1):D360-d70."
+    },
+    {
+      "DOI": "10.1089/omi.2011.0118",
+      "author": "G Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "284",
+      "issue": "5",
+      "journal-title": "OMICS",
+      "key": "363_CR44",
+      "unstructured": "Yu G, Wang L-G, Han Y, He Q-Y. clusterProfiler: an R package for comparing biological themes among gene clusters. OMICS. 2012;16(5):284–7.",
+      "volume": "16",
+      "year": "2012"
+    }
+  ],
+  "reference-count": 44,
+  "references-count": 44,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00363-y"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A regulatory miRNA–mRNA network is associated with transplantation response in acute kidney injury"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

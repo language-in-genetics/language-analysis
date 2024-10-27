@@ -1,0 +1,572 @@
+{
+  "DOI": "10.1038/s41431-022-01113-x",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-022-01113-x",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn 2016, guidelines for diagnostic Next Generation Sequencing (NGS) have been published by EuroGentest in order to assist laboratories in the implementation and accreditation of NGS in a diagnostic setting. These guidelines mainly focused on Whole Exome Sequencing (WES) and targeted (gene panels) sequencing detecting small germline variants (Single Nucleotide Variants (SNVs) and insertions/deletions (indels)). Since then, Whole Genome Sequencing (WGS) has been increasingly introduced in the diagnosis of rare diseases as WGS allows the simultaneous detection of SNVs, Structural Variants (SVs) and other types of variants such as repeat expansions. The use of WGS in diagnostics warrants the re-evaluation and update of previously published guidelines. This work was jointly initiated by EuroGentest and the Horizon2020 project Solve-RD. Statements from the 2016 guidelines have been reviewed in the context of WGS and updated where necessary. The aim of these recommendations is primarily to list the points to consider for clinical (laboratory) geneticists, bioinformaticians, and (non-)geneticists, to provide technical advice, aid clinical decision-making and the reporting of the results.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1113"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "23 December 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "21 April 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "16 May 2022"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "JWB was a full-time employee of Illumina, Inc. at the time of manuscript composition."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "No specific ethical approval was required. The recommendations referred to in this paper are the result of discussion during expert meetings with colleagues with different fields of expertise and backgrounds from different countries across Europe and beyond."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Souche",
+      "given": "Erika",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2810-3445",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Beltran",
+      "given": "Sergi",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8235-4010",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Brosens",
+      "given": "Erwin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Belmont",
+      "given": "John W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fossum",
+      "given": "Magdalena",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Riess",
+      "given": "Olaf",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1693-9699",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Gilissen",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ardeshirdavani",
+      "given": "Amin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Houge",
+      "given": "Gunnar",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1073-0539",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "van Gijn",
+      "given": "Marielle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Clayton-Smith",
+      "given": "Jill",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2280-7273",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Synofzik",
+      "given": "Matthis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Leeuw",
+      "given": "Nicole",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9361-6012",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Deans",
+      "given": "Zandra C.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1179-7735",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Dincer",
+      "given": "Yasemin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Eck",
+      "given": "Sebastian H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van der Crabben",
+      "given": "Saskia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Balasubramanian",
+      "given": "Meena",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9803-7183",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Graessner",
+      "given": "Holm",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6552-8362",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Sturm",
+      "given": "Marc",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Firth",
+      "given": "Helen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ferlini",
+      "given": "Alessandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nabbout",
+      "given": "Rima",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De Baere",
+      "given": "Elfride",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1672-3054",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Liehr",
+      "given": "Thomas",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5173-5280",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Macek",
+      "given": "Milan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Matthijs",
+      "given": "Gert",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scheffer",
+      "given": "Hans",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9414-4555",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Bauer",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3877-6328",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Yntema",
+      "given": "Helger G.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0936-1406",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Weiss",
+      "given": "Marjan M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        16
+      ]
+    ],
+    "date-time": "2022-05-16T09:05:54Z",
+    "timestamp": 1652691954000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        1
+      ]
+    ],
+    "date-time": "2022-09-01T23:05:06Z",
+    "timestamp": 1662073506000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        12
+      ]
+    ],
+    "date-time": "2024-04-12T08:20:39Z",
+    "timestamp": 1712910039328
+  },
+  "is-referenced-by-count": 47,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "9",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        16
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            16
+          ]
+        ],
+        "date-time": "2022-05-16T00:00:00Z",
+        "timestamp": 1652659200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            16
+          ]
+        ],
+        "date-time": "2022-05-16T00:00:00Z",
+        "timestamp": 1652659200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01113-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01113-x",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01113-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1017-1021",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        5,
+        16
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/ejhg.2015.226",
+      "author": "G Matthijs",
+      "doi-asserted-by": "publisher",
+      "first-page": "2",
+      "journal-title": "Eur J Hum Genet",
+      "key": "1113_CR1",
+      "unstructured": "Matthijs G, Souche E, Alders M, Corveleyn A, Eck S, Feenstra I, et al. Guidelines for diagnostic next-generation sequencing. Eur J Hum Genet. 2016;24:2–5.",
+      "volume": "24",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature13394",
+      "author": "C Gilissen",
+      "doi-asserted-by": "publisher",
+      "first-page": "344",
+      "journal-title": "Nature",
+      "key": "1113_CR2",
+      "unstructured": "Gilissen C, Hehir-Kwa JY, Thung DT, van de Vorst M, van Bon BW, Willemsen MH, et al. Genome sequencing identifies major causes of severe intellectual disability. Nature 2014;511:344–7.",
+      "volume": "511",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0793-6",
+      "author": "LG Riley",
+      "doi-asserted-by": "publisher",
+      "first-page": "1254",
+      "journal-title": "Genet Med",
+      "key": "1113_CR3",
+      "unstructured": "Riley LG, Cowley MJ, Gayevskiy V, Minoche AE, Puttick C, Thorburn DR, et al. The diagnostic utility of genome sequencing in a pediatric cohort with suspected mitochondrial disease. Genet Med. 2020;22:1254–61.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2019.08.009",
+      "author": "SF Kingsmore",
+      "doi-asserted-by": "publisher",
+      "first-page": "719",
+      "journal-title": "Am J Hum Genet",
+      "key": "1113_CR4",
+      "unstructured": "Kingsmore SF, Cakici JA, Clark MM, Gaughran M, Feddock M, Batalov S, et al. A randomized, controlled trial of the analytic and diagnostic performance of singleton and trio, rapid genome and exome sequencing in Ill infants. Am J Hum Genet. 2019;105:719–33.",
+      "volume": "105",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2434-2",
+      "author": "E Turro",
+      "doi-asserted-by": "publisher",
+      "first-page": "96",
+      "journal-title": "Nature",
+      "key": "1113_CR5",
+      "unstructured": "Turro E, Astle WJ, Megy K, Graf S, Greene D, Shamardina O, et al. Whole-genome sequencing of patients with rare diseases in a national health system. Nature 2020;583:96–102.",
+      "volume": "583",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/gr.225672.117",
+      "author": "E Dolzhenko",
+      "doi-asserted-by": "publisher",
+      "first-page": "1895",
+      "journal-title": "Genome Res",
+      "key": "1113_CR6",
+      "unstructured": "Dolzhenko E, van Vugt J, Shaw RJ, Bekritsky MA, van Blitterswijk M, Narzisi G, et al. Detection of long repeat expansions from PCR-free whole-genome sequence data. Genome Res. 2017;27:1895–903.",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s13059-019-1909-7",
+      "author": "S Chen",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "1113_CR7",
+      "unstructured": "Chen S, Krusche P, Dolzhenko E, Sherman RM, Petrovski R, Schlesinger F, et al. Paragraph: a graph-based structural variant genotyper for short-read sequence data. Genome Biol. 2019;20:291.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ejhg.2016.48",
+      "author": "AC Mallawaarachchi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1584",
+      "journal-title": "Eur J Hum Genet",
+      "key": "1113_CR8",
+      "unstructured": "Mallawaarachchi AC, Hort Y, Cowley MJ, McCabe MJ, Minoche A, Dinger ME, et al. Whole-genome sequencing overcomes pseudogene homology to diagnose autosomal dominant polycystic kidney disease. Eur J Hum Genet. 2016;24:1584–90.",
+      "volume": "24",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/humu.22368",
+      "author": "MM Weiss",
+      "doi-asserted-by": "publisher",
+      "first-page": "1313",
+      "journal-title": "Hum Mutat",
+      "key": "1113_CR9",
+      "unstructured": "Weiss MM, Van der Zwaag B, Jongbloed JD, Vogel MJ, Bruggenwirth HT, Lekanne Deprez RH, et al. Best practice guidelines for the use of next-generation sequencing applications in genome diagnostics: a national collaborative study of Dutch genome diagnostic laboratories. Hum Mutat. 2013;34:1313–21.",
+      "volume": "34",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41431-022-01091-0",
+      "doi-asserted-by": "publisher",
+      "key": "1113_CR10",
+      "unstructured": "Deans ZC, Ahn JW, Carreira IM, Dequeker E, Henderson M, Lovrecic L, et al. Recommendations for reporting results of diagnostic genomic testing. Eur J Hum Genet. 2022. https://doi.org/10.1038/s41431-022-01091-0. Epub ahead of print."
+    },
+    {
+      "DOI": "10.1038/ejhg.2013.125",
+      "author": "M Claustres",
+      "doi-asserted-by": "publisher",
+      "first-page": "160",
+      "journal-title": "Eur J Hum Genet",
+      "key": "1113_CR11",
+      "unstructured": "Claustres M, Kozich V, Dequeker E, Fowler B, Hehir-Kwa JY, Miller K, et al. Recommendations for reporting results of diagnostic genetic testing (biochemical, cytogenetic and molecular genetic). Eur J Hum Genet. 2014;22:160–70.",
+      "volume": "22",
+      "year": "2014"
+    }
+  ],
+  "reference-count": 11,
+  "references-count": 11,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-022-01113-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Recommendations for whole genome sequencing in diagnostics for rare diseases"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "30"
+}

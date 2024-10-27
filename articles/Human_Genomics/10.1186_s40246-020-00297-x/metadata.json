@@ -1,0 +1,905 @@
+{
+  "DOI": "10.1186/s40246-020-00297-x",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-020-00297-x",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIn this paper, we introduce a network machine learning method to identify potential bioactive anti-COVID-19 molecules in foods based on their capacity to target the SARS-CoV-2-host gene-gene (protein-protein) interactome. Our analyses were performed using a supercomputing DreamLab App platform, harnessing the idle computational power of thousands of smartphones. Machine learning models were initially calibrated by demonstrating that the proposed method can predict anti-COVID-19 candidates among experimental and clinically approved drugs (5658 in total) targeting COVID-19 interactomics with the balanced classification accuracy of 80–85% in 5-fold cross-validated settings. This identified the most promising drug candidates that can be potentially “repurposed” against COVID-19 including common drugs used to combat cardiovascular and metabolic disorders, such as simvastatin, atorvastatin and metformin. A database of 7694 bioactive food-based molecules was run through the calibrated machine learning algorithm, which identified 52 biologically active molecules, from varied chemical classes, including flavonoids, terpenoids, coumarins and indoles predicted to target SARS-CoV-2-host interactome networks. This in turn was used to construct a “food map” with the theoretical anti-COVID-19 potential of each ingredient estimated based on the diversity and relative levels of candidate compounds with antiviral properties. We expect this in silico predicted food map to play an important role in future clinical studies of precision nutrition interventions against COVID-19 and other viral diseases.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "297"
+  ],
+  "article-number": "1",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "20 November 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "30 November 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "2 January 2021"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Laponogov",
+      "given": "Ivan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Gonzalez",
+      "given": "Guadalupe",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shepherd",
+      "given": "Madelen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Qureshi",
+      "given": "Ahad",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Veselkov",
+      "given": "Dennis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Charkoftaki",
+      "given": "Georgia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vasiliou",
+      "given": "Vasilis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Youssef",
+      "given": "Jozef",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mirnezami",
+      "given": "Reza",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bronstein",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1164-0359",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Veselkov",
+      "given": "Kirill",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        2
+      ]
+    ],
+    "date-time": "2021-01-02T00:08:08Z",
+    "timestamp": 1609546088000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        12,
+        10
+      ]
+    ],
+    "date-time": "2022-12-10T06:41:06Z",
+    "timestamp": 1670654466000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100010663",
+      "award": [
+        "899932",
+        "724228"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "H2020 European Research Council"
+    },
+    {
+      "DOI": "10.13039/100008058",
+      "award": [
+        "RONA-AI/DREAMLAB"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Vodafone Foundation"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        22
+      ]
+    ],
+    "date-time": "2024-04-22T18:34:49Z",
+    "timestamp": 1713810889080
+  },
+  "is-referenced-by-count": 22,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            2
+          ]
+        ],
+        "date-time": "2021-01-02T00:00:00Z",
+        "timestamp": 1609545600000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            2
+          ]
+        ],
+        "date-time": "2021-01-02T00:00:00Z",
+        "timestamp": 1609545600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-020-00297-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-020-00297-x/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-020-00297-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        2
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/S0140-6736(20)30185-9",
+      "author": "C Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "470",
+      "issue": "10223",
+      "journal-title": "Lancet",
+      "key": "297_CR1",
+      "unstructured": "Wang C, et al. A novel coronavirus outbreak of global health concern. Lancet. 2020;395(10223):470–3.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/jcm9082589",
+      "doi-asserted-by": "crossref",
+      "key": "297_CR2",
+      "unstructured": "Fernandez-Quintela A, et al. Key aspects in nutritional management of COVID-19 patients. J Clin Med. 2020;9(8):1–24."
+    },
+    {
+      "DOI": "10.3390/foods9081036",
+      "doi-asserted-by": "crossref",
+      "key": "297_CR3",
+      "unstructured": "Di Matteo G, et al. Food and COVID-19: preventive/co-therapeutic strategies explored by current clinical trials and in silico studies. Foods. 2020;9(8):1–18."
+    },
+    {
+      "DOI": "10.1038/448645a",
+      "author": "CR Chong",
+      "doi-asserted-by": "publisher",
+      "first-page": "645",
+      "issue": "7154",
+      "journal-title": "Nature",
+      "key": "297_CR4",
+      "unstructured": "Chong CR, Sullivan DJ Jr. New uses for old drugs. Nature. 2007;448(7154):645–6.",
+      "volume": "448",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/S2589-7500(20)30192-8",
+      "doi-asserted-by": "crossref",
+      "key": "297_CR5",
+      "unstructured": "Zhou Y, et al. Artificial intelligence in COVID-19 drug repurposing. Lancet Digit Health. 2020; 2:e667–76."
+    },
+    {
+      "DOI": "10.1126/science.abb9332",
+      "author": "RK Guy",
+      "doi-asserted-by": "publisher",
+      "first-page": "829",
+      "issue": "6493",
+      "journal-title": "Science",
+      "key": "297_CR6",
+      "unstructured": "Guy RK, et al. Rapid repurposing of drugs for COVID-19. Science. 2020;368(6493):829–30.",
+      "volume": "368",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2021436",
+      "doi-asserted-by": "publisher",
+      "key": "297_CR7",
+      "unstructured": "Group RC, et al. Dexamethasone in hospitalized patients with Covid-19 - preliminary report. N Engl J Med. 2020. https://doi.org/10.1056/NEJMoa2021436."
+    },
+    {
+      "DOI": "10.3945/ajcn.113.076133",
+      "author": "A Scalbert",
+      "doi-asserted-by": "publisher",
+      "first-page": "1286",
+      "issue": "6",
+      "journal-title": "Am J Clin Nutr",
+      "key": "297_CR8",
+      "unstructured": "Scalbert A, et al. The food metabolome: a window over dietary exposure. Am J Clin Nutr. 2014;99(6):1286–308.",
+      "volume": "99",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1017/jns.2016.41",
+      "author": "AN Panche",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Nutr Sci",
+      "key": "297_CR9",
+      "unstructured": "Panche AN, Diwan AD, Chandra SR. Flavonoids: an overview. J Nutr Sci. 2016;5:e47.",
+      "volume": "5",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.2174/138955708785909943",
+      "author": "R Naithani",
+      "doi-asserted-by": "publisher",
+      "first-page": "1106",
+      "issue": "11",
+      "journal-title": "Mini Rev Med Chem",
+      "key": "297_CR10",
+      "unstructured": "Naithani R, et al. Antiviral activity of phytochemicals: a comprehensive review. Mini Rev Med Chem. 2008;8(11):1106–33.",
+      "volume": "8",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/s43016-019-0005-1",
+      "author": "A-L Barabási",
+      "doi-asserted-by": "publisher",
+      "first-page": "33",
+      "issue": "1",
+      "journal-title": "Nature Food",
+      "key": "297_CR11",
+      "unstructured": "Barabási A-L, Menichetti G, Loscalzo J. The unmapped chemical complexity of our diet. Nature Food. 2020;1(1):33–7.",
+      "volume": "1",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1056/NEJMp2021264",
+      "author": "MJ Belanger",
+      "doi-asserted-by": "publisher",
+      "issue": "11",
+      "journal-title": "N Engl J Med",
+      "key": "297_CR12",
+      "unstructured": "Belanger MJ, et al. Covid-19 and disparities in nutrition and obesity. N Engl J Med. 2020;383(11):e69.",
+      "volume": "383",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/obr.13095",
+      "author": "M Foldi",
+      "doi-asserted-by": "publisher",
+      "issue": "10",
+      "journal-title": "Obes Rev",
+      "key": "297_CR13",
+      "unstructured": "Foldi M, et al. Obesity is a risk factor for developing critical condition in COVID-19 patients: a systematic review and meta-analysis. Obes Rev. 2020;21(10):e13095.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/gutjnl-2020-322294",
+      "doi-asserted-by": "crossref",
+      "key": "297_CR14",
+      "unstructured": "Zuo T, et al. Depicting SARS-CoV-2 faecal viral activity in association with gut microbiota composition in patients with COVID-19. Gut. 2020;0:1-9."
+    },
+    {
+      "DOI": "10.1038/s41598-019-45349-y",
+      "author": "K Veselkov",
+      "doi-asserted-by": "publisher",
+      "first-page": "9237",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "297_CR15",
+      "unstructured": "Veselkov K, et al. HyperFoods: machine intelligent mapping of cancer-beating molecules in foods. Sci Rep. 2019;9(1):9237.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41587-020-0700-3",
+      "doi-asserted-by": "publisher",
+      "key": "297_CR16",
+      "unstructured": "Aksenov AA, Laponogov I, Zhang Z, et al. Auto-deconvolution and molecular networking of gas chromatography–mass spectrometry data. NatBiotechnol. 2020. https://doi.org/10.1038/s41587-020-0700-3."
+    },
+    {
+      "DOI": "10.1002/ptr.6873",
+      "doi-asserted-by": "publisher",
+      "key": "297_CR17",
+      "unstructured": "Boozari M, Hosseinzadeh H. Natural products for COVID‐19 prevention and treatment regarding to previous coronavirus infections and novel studies. Phytotherapy Res. 2020. p. 1-13. https://doi.org/10.1002/ptr.6873."
+    },
+    {
+      "DOI": "10.1016/j.apsb.2020.06.002",
+      "author": "Y Xian",
+      "doi-asserted-by": "publisher",
+      "first-page": "1163",
+      "issue": "7",
+      "journal-title": "Acta Pharm Sin B",
+      "key": "297_CR18",
+      "unstructured": "Xian Y, et al. Bioactive natural compounds against human coronaviruses: a review and perspective. Acta Pharm Sin B. 2020;10(7):1163–74.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2286-9",
+      "author": "DE Gordon",
+      "doi-asserted-by": "publisher",
+      "first-page": "459",
+      "issue": "7816",
+      "journal-title": "Nature",
+      "key": "297_CR19",
+      "unstructured": "Gordon DE, et al. A SARS-CoV-2 protein interaction map reveals targets for drug repurposing. Nature. 2020;583(7816):459–68.",
+      "volume": "583",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13073-014-0115-1",
+      "author": "B de Chassey",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "issue": "11",
+      "journal-title": "Genome Med",
+      "key": "297_CR20",
+      "unstructured": "de Chassey B, et al. Virus-host interactomics: new insights and opportunities for antiviral drug discovery. Genome Med. 2014;6(11):115.",
+      "volume": "6",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41598-020-74715-4",
+      "author": "A Basu",
+      "doi-asserted-by": "publisher",
+      "first-page": "17699",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "297_CR21",
+      "unstructured": "Basu A, Sarkar A, Maulik U. Molecular docking study of potential phytochemicals and their effects on the complex of SARS-CoV2 spike protein and human ACE2. Sci Rep. 2020;10(1):17699.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.06.043",
+      "author": "B Korber",
+      "doi-asserted-by": "publisher",
+      "first-page": "812",
+      "issue": "4",
+      "journal-title": "Cell",
+      "key": "297_CR22",
+      "unstructured": "Korber B, et al. Tracking changes in SARS-CoV-2 spike: evidence that D614G increases infectivity of the COVID-19 virus. Cell. 2020;182(4):812–827 e19.",
+      "volume": "182",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41597-020-0477-8",
+      "author": "M Ostaszewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "136",
+      "issue": "1",
+      "journal-title": "Sci Data",
+      "key": "297_CR23",
+      "unstructured": "Ostaszewski M, et al. COVID-19 Disease Map, building a computational repository of SARS-CoV-2 virus-host interaction mechanisms. Sci Data. 2020;7(1):136.",
+      "volume": "7",
+      "year": "2020"
+    },
+    {
+      "key": "297_CR24",
+      "unstructured": "Gysi DM, Í Do V, Zitnik M, Ameli A, Gan X, Varol O, Ghiassian SD, Patten JJ, Davey R, Loscalzo J, Barabási AL. Network medicine framework for identifying drug repurposing opportunities for COVID-19. 2020. arXiv. [Internet]. http://arxiv.org/abs/2004.07229."
+    },
+    {
+      "DOI": "10.1038/nmeth.2651",
+      "author": "M Hofree",
+      "doi-asserted-by": "publisher",
+      "first-page": "1108",
+      "issue": "11",
+      "journal-title": "Nat Methods",
+      "key": "297_CR25",
+      "unstructured": "Hofree M, et al. Network-based stratification of tumor mutations. Nat Methods. 2013;10(11):1108–15.",
+      "volume": "10",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nrd.2018.168",
+      "author": "S Pushpakom",
+      "doi-asserted-by": "publisher",
+      "first-page": "41",
+      "issue": "1",
+      "journal-title": "Nat Rev Drug Discov",
+      "key": "297_CR26",
+      "unstructured": "Pushpakom S, et al. Drug repurposing: progress, challenges and recommendations. Nat Rev Drug Discov. 2019;18(1):41–58.",
+      "volume": "18",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.envres.2020.109858",
+      "author": "A Angelopoulou",
+      "doi-asserted-by": "publisher",
+      "first-page": "109858",
+      "journal-title": "Environ Res",
+      "key": "297_CR27",
+      "unstructured": "Angelopoulou A, et al. Imiquimod - a toll like receptor 7 agonist - is an ideal option for management of COVID 19. Environ Res. 2020;188:109858.",
+      "volume": "188",
+      "year": "2020"
+    },
+    {
+      "key": "297_CR28",
+      "unstructured": "Al-Motawa MS, et al. Vulnerabilities of the SARS-CoV-2 virus to proteotoxicity—opportunity for repurposed chemotherapy of COVID-19 infection. Front Pharmacol. 2020;11(1579):1–12."
+    },
+    {
+      "DOI": "10.3390/pathogens9050320",
+      "doi-asserted-by": "crossref",
+      "key": "297_CR29",
+      "unstructured": "Neogi U, et al. Feasibility of known RNA polymerase inhibitors as anti-SARS-CoV-2 drugs. Pathogens. 2020;9(5):1–16."
+    },
+    {
+      "DOI": "10.18632/oncotarget.23258",
+      "author": "K Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "115315",
+      "issue": "70",
+      "journal-title": "Oncotarget",
+      "key": "297_CR30",
+      "unstructured": "Lee K, et al. Gemcitabine, a broad-spectrum antiviral drug, suppresses enterovirus infections through innate immunity induced by the inhibition of pyrimidine biosynthesis and nucleotide depletion. Oncotarget. 2017;8(70):115315–25.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s43018-020-00122-3",
+      "author": "L Derosa",
+      "doi-asserted-by": "publisher",
+      "first-page": "946",
+      "issue": "10",
+      "journal-title": "Nature Cancer",
+      "key": "297_CR31",
+      "unstructured": "Derosa L, et al. The immuno-oncological challenge of COVID-19. Nature Cancer. 2020;1(10):946–64.",
+      "volume": "1",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.15252/embj.2020106057",
+      "author": "S Wang",
+      "doi-asserted-by": "publisher",
+      "issue": "21",
+      "journal-title": "EMBO J",
+      "key": "297_CR32",
+      "unstructured": "Wang S, et al. Cholesterol 25-Hydroxylase inhibits SARS-CoV-2 and other coronaviruses by depleting membrane cholesterol. EMBO J. 2020;39(21):e106057.",
+      "volume": "39",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.amjcard.2020.08.004",
+      "author": "CS Kow",
+      "doi-asserted-by": "publisher",
+      "first-page": "153",
+      "journal-title": "Am J Cardiol",
+      "key": "297_CR33",
+      "unstructured": "Kow CS, Hasan SS. Meta-analysis of effect of statins in patients with COVID-19. Am J Cardiol. 2020;134:153–5.",
+      "volume": "134",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ajog.2017.06.003",
+      "author": "R Romero",
+      "doi-asserted-by": "publisher",
+      "first-page": "282",
+      "issue": "3",
+      "journal-title": "Am J Obstet Gynecol",
+      "key": "297_CR34",
+      "unstructured": "Romero R, et al. Metformin, the aspirin of the 21st century: its role in gestational diabetes mellitus, prevention of preeclampsia and cancer, and the promotion of longevity. Am J Obstet Gynecol. 2017;217(3):282–302.",
+      "volume": "217",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.diabet.2020.07.006",
+      "doi-asserted-by": "crossref",
+      "key": "297_CR35",
+      "unstructured": "Scheen AJ. Metformin and COVID-19: from cellular mechanisms to reduced mortality. Diabetes Metab. 2020;46:423–6."
+    },
+    {
+      "DOI": "10.1002/jmv.26498",
+      "doi-asserted-by": "publisher",
+      "key": "297_CR36",
+      "unstructured": "Kow CS, Hasan SS. Mortality risk with preadmission metformin use in patients with COVID-19 and diabetes: a meta-analysis. J Med Virol. 2020. p. 1–3. https://doi.org/10.1002/jmv.26498."
+    },
+    {
+      "DOI": "10.1016/j.nbt.2009.03.007",
+      "author": "D Chattopadhyay",
+      "doi-asserted-by": "publisher",
+      "first-page": "347",
+      "issue": "5",
+      "journal-title": "N Biotechnol",
+      "key": "297_CR37",
+      "unstructured": "Chattopadhyay D, et al. Recent advancements for the evaluation of anti-viral activities of natural products. N Biotechnol. 2009;25(5):347–68.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/ajcn/72.6.1424",
+      "author": "A Drewnowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "1424",
+      "issue": "6",
+      "journal-title": "Am J Clin Nutr",
+      "key": "297_CR38",
+      "unstructured": "Drewnowski A, Gomez-Carneros C. Bitter taste, phytonutrients, and the consumer: a review. Am J Clin Nutr. 2000;72(6):1424–35.",
+      "volume": "72",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.3390/molecules191016240",
+      "author": "J Mierziak",
+      "doi-asserted-by": "publisher",
+      "first-page": "16240",
+      "issue": "10",
+      "journal-title": "Molecules",
+      "key": "297_CR39",
+      "unstructured": "Mierziak J, Kostyn K, Kulma A. Flavonoids as important molecules of plant interactions with the environment. Molecules. 2014;19(10):16240–65.",
+      "volume": "19",
+      "year": "2014"
+    },
+    {
+      "author": "M Jang",
+      "first-page": "5630838",
+      "journal-title": "Evid Based Complement Alternat Med",
+      "key": "297_CR40",
+      "unstructured": "Jang M, et al. Tea polyphenols EGCG and theaflavin inhibit the activity of SARS-CoV-2 3CL-protease in vitro. Evid Based Complement Alternat Med. 2020;2020:5630838.",
+      "volume": "2020",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/jn/134.12.3479S",
+      "author": "RH Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "3479S",
+      "issue": "12 Suppl",
+      "journal-title": "J Nutr",
+      "key": "297_CR41",
+      "unstructured": "Liu RH. Potential synergy of phytochemicals in cancer prevention: mechanism of action. J Nutr. 2004;134(12 Suppl):3479S–85S.",
+      "volume": "134",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1002/ptr.6887",
+      "doi-asserted-by": "publisher",
+      "key": "297_CR42",
+      "unstructured": "Derosa G, et al. A role for quercetin in coronavirus disease 2019 (COVID-19). Phytother Res. 2020. p. 1–7. https://doi.org/10.1002/ptr.6887."
+    },
+    {
+      "DOI": "10.1093/ajcn/78.3.517S",
+      "author": "RH Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "517S",
+      "issue": "3 Suppl",
+      "journal-title": "Am J Clin Nutr",
+      "key": "297_CR43",
+      "unstructured": "Liu RH. Health benefits of fruit and vegetables are from additive and synergistic combinations of phytochemicals. Am J Clin Nutr. 2003;78(3 Suppl):517S–20S.",
+      "volume": "78",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1111/all.14549",
+      "doi-asserted-by": "publisher",
+      "key": "297_CR44",
+      "unstructured": "Bousquet J, et al. Cabbage and fermented vegetables: from death rate heterogeneity in countries to candidates for mitigation strategies of severe COVID-19. Allergy. 2020;00:1–16. https://doi.org/10.1111/all.14549."
+    },
+    {
+      "DOI": "10.5387/fms.59.35",
+      "author": "K Ikuta",
+      "doi-asserted-by": "publisher",
+      "first-page": "35",
+      "issue": "1",
+      "journal-title": "Fukushima J Med Sci",
+      "key": "297_CR45",
+      "unstructured": "Ikuta K, Mizuta K, Suzutani T. Anti-influenza virus activity of two extracts of the blackcurrant (Ribes nigrum L.) from New Zealand and Poland. Fukushima J Med Sci. 2013;59(1):35–8.",
+      "volume": "59",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gky1015",
+      "author": "JG Tate",
+      "doi-asserted-by": "publisher",
+      "first-page": "D941",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "297_CR46",
+      "unstructured": "Tate JG, et al. COSMIC: the catalogue of somatic mutations in cancer. Nucleic Acids Res. 2019;47(D1):D941–7.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gku1055",
+      "author": "GR Brown",
+      "doi-asserted-by": "publisher",
+      "first-page": "D36",
+      "issue": "Database issue",
+      "journal-title": "Nucleic Acids Res",
+      "key": "297_CR47",
+      "unstructured": "Brown GR, et al. Gene: a gene-centered information resource at NCBI. Nucleic Acids Res. 2015;43(Database issue):D36–42.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gky1131",
+      "author": "D Szklarczyk",
+      "doi-asserted-by": "publisher",
+      "first-page": "D607",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "297_CR48",
+      "unstructured": "Szklarczyk D, et al. STRING v11: protein-protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. Nucleic Acids Res. 2019;47(D1):D607–13.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gky1049",
+      "author": "C UniProt",
+      "doi-asserted-by": "publisher",
+      "first-page": "D506",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "297_CR49",
+      "unstructured": "UniProt C. UniProt: a worldwide hub of protein knowledge. Nucleic Acids Res. 2019;47(D1):D506–15.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.cell.2015.06.043",
+      "author": "EL Huttlin",
+      "doi-asserted-by": "publisher",
+      "first-page": "425",
+      "issue": "2",
+      "journal-title": "Cell",
+      "key": "297_CR50",
+      "unstructured": "Huttlin EL, et al. The BioPlex network: a systematic exploration of the human interactome. Cell. 2015;162(2):425–40.",
+      "volume": "162",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkp937",
+      "author": "M Kuhn",
+      "doi-asserted-by": "publisher",
+      "first-page": "D552",
+      "issue": "Database issue",
+      "journal-title": "Nucleic Acids Res",
+      "key": "297_CR51",
+      "unstructured": "Kuhn M, et al. STITCH 2: an interaction network database for small molecules and proteins. Nucleic Acids Res. 2010;38(Database issue):D552–6.",
+      "volume": "38",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1037",
+      "author": "DS Wishart",
+      "doi-asserted-by": "publisher",
+      "first-page": "D1074",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "297_CR52",
+      "unstructured": "Wishart DS, et al. DrugBank 5.0: a major update to the DrugBank database for 2018. Nucleic Acids Res. 2018;46(D1):D1074–82.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkw993",
+      "author": "O Ursu",
+      "doi-asserted-by": "publisher",
+      "first-page": "D932",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "297_CR53",
+      "unstructured": "Ursu O, et al. DrugCentral: online drug compendium. Nucleic Acids Res. 2017;45(D1):D932–9.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.patter.2020.100090",
+      "author": "MV Kuleshov",
+      "doi-asserted-by": "publisher",
+      "first-page": "100090",
+      "issue": "6",
+      "journal-title": "Patterns (N Y)",
+      "key": "297_CR54",
+      "unstructured": "Kuleshov MV, et al. The COVID-19 drug and gene set library. Patterns (N Y). 2020;1(6):100090.",
+      "volume": "1",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.02.052",
+      "author": "M Hoffmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "271",
+      "issue": "2",
+      "journal-title": "Cell",
+      "key": "297_CR55",
+      "unstructured": "Hoffmann M, et al. SARS-CoV-2 cell entry depends on ACE2 and TMPRSS2 and is blocked by a clinically proven protease inhibitor. Cell. 2020;181(2):271–280 e8.",
+      "volume": "181",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 55,
+  "references-count": 55,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-113421/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-020-00297-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Network machine learning maps phytochemically rich “Hyperfoods” to fight COVID-19"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

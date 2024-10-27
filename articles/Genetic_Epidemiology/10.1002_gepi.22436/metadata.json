@@ -1,0 +1,631 @@
+{
+  "DOI": "10.1002/gepi.22436",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22436",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eHematological measures are important intermediate clinical phenotypes for many acute and chronic diseases and are highly heritable. Although genome‐wide association studies (GWAS) have identified thousands of loci containing trait‐associated variants, the causal genes underlying these associations are often uncertain. To better understand the underlying genetic regulatory mechanisms, we performed a transcriptome‐wide association study (TWAS) to systematically investigate the association between genetically predicted gene expression and hematological measures in 54,542 Europeans from the Genetic Epidemiology Research on Aging cohort. We found 239 significant gene‐trait associations with hematological measures; we replicated 71 associations at \u003cjats:italic\u003ep\u003c/jats:italic\u003e \u0026lt; 0.05 in a TWAS meta‐analysis consisting of up to 35,900 Europeans from the Women's Health Initiative, Atherosclerosis Risk in Communities Study, and BioMe Biobank. Additionally, we attempted to refine this list of candidate genes by performing conditional analyses, adjusting for individual variants previously associated with hematological measures, and performed further fine‐mapping of TWAS loci. To facilitate interpretation of our findings, we designed an R Shiny application to interactively visualize our TWAS results by integrating them with additional genetic data sources (GWAS, TWAS from multiple reference panels, conditional analyses, known GWAS variants, etc.). Our results and application highlight frequently overlooked TWAS challenges and illustrate the complexity of TWAS fine‐mapping.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22436"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-07-02"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2021-10-18"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-11-15"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Tapia",
+      "given": "Amanda L.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Rowland",
+      "given": "Bryce T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Rosen",
+      "given": "Jonathan D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "The Charles Bronfman Institute for Personalized Medicine Icahn School of Medicine at Mount Sinai  New York New York USA"
+        }
+      ],
+      "family": "Preuss",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of North Carolina  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Young",
+      "given": "Kris",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of North Carolina  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Graff",
+      "given": "Misa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Research Kaiser Permanente Northern California  Oakland California USA"
+        }
+      ],
+      "family": "Choquet",
+      "given": "Hélène",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Couper",
+      "given": "David J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Statistics Rutgers University  Piscataway New Jersey USA"
+        }
+      ],
+      "family": "Buyske",
+      "given": "Steve",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8713-4583",
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Bien",
+      "given": "Stephanie A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Research Kaiser Permanente Northern California  Oakland California USA"
+        }
+      ],
+      "family": "Jorgenson",
+      "given": "Eric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Public Health Sciences Fred Hutchinson Cancer Research Center  Seattle Washington USA"
+        }
+      ],
+      "family": "Kooperberg",
+      "given": "Charles",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "The Charles Bronfman Institute for Personalized Medicine Icahn School of Medicine at Mount Sinai  New York New York USA"
+        }
+      ],
+      "family": "Loos",
+      "given": "Ruth J. F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology, Human Genetics, and Environmental Sciences, Human Genetics Center, School of Public Health The University of Texas Health Science Center at Houston  Houston Texas USA"
+        }
+      ],
+      "family": "Morrison",
+      "given": "Alanna C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of North Carolina  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "North",
+      "given": "Kari E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology, Human Genetics, and Environmental Sciences, Human Genetics Center, School of Public Health The University of Texas Health Science Center at Houston  Houston Texas USA"
+        }
+      ],
+      "family": "Yu",
+      "given": "Bing",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology University of Washington  Seattle Washington USA"
+        }
+      ],
+      "family": "Reiner",
+      "given": "Alexander P.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9275-4189",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics University of North Carolina  Chapel Hill North Carolina USA"
+        },
+        {
+          "name": "Department of Genetics University of North Carolina  Chapel Hill North Carolina USA"
+        },
+        {
+          "name": "Department of Computer Science University of North Carolina at Chapel Hill  Chapel Hill North Carolina USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Li",
+      "given": "Yun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetics University of North Carolina  Chapel Hill North Carolina USA"
+        }
+      ],
+      "family": "Raffield",
+      "given": "Laura M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        15
+      ]
+    ],
+    "date-time": "2021-11-15T09:35:37Z",
+    "timestamp": 1636968937000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        27
+      ]
+    ],
+    "date-time": "2023-08-27T08:23:27Z",
+    "timestamp": 1693124607000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000062",
+      "award": [
+        "R01 DK116738",
+        "R01 DK124097",
+        "R01DK107786"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institute of Diabetes and Digestive and Kidney Diseases"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "R01DK110113",
+        "R01HL129132"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/100000053",
+      "award": [
+        "EY027004"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Eye Institute"
+    },
+    {
+      "DOI": "10.13039/100011485",
+      "award": [
+        "KL2TR002490"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "North Carolina Translational and Clinical Sciences Institute, University of North Carolina at Chapel Hill"
+    },
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "HL129982",
+        "R01HL142302"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "R01HG010297",
+        "U01HG007376"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        28
+      ]
+    ],
+    "date-time": "2023-08-28T04:35:14Z",
+    "timestamp": 1693197314438
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        15
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            11,
+            15
+          ]
+        ],
+        "date-time": "2021-11-15T00:00:00Z",
+        "timestamp": 1636934400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22436",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22436",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22436",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22436",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "3-16",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        15
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        11,
+        15
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1016/j.cell.2016.10.042",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_2_1"
+    },
+    {
+      "DOI": "10.1534/genetics.115.178616",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_3_1"
+    },
+    {
+      "DOI": "10.1101/gr.155192.113",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_4_1"
+    },
+    {
+      "DOI": "10.1182/blood-2009-11-254490",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_5_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.06.045",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_6_1"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_7_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0092-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_8_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0345-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_9_1"
+    },
+    {
+      "key": "e_1_2_11_10_1",
+      "unstructured": "Human Protein Atlas. (2020a). Human Protein Atlas CCR7.https://www.proteinatlas.org/ENSG00000126353-CCR7"
+    },
+    {
+      "key": "e_1_2_11_11_1",
+      "unstructured": "Human Protein Atlas. (2020b). Human Protein Atlas CREB5.https://www.proteinatlas.org/ENSG00000146592-CREB5"
+    },
+    {
+      "key": "e_1_2_11_12_1",
+      "unstructured": "Human Protein Atlas. (2020c). Human Protein Atlas CSF3.https://www.proteinatlas.org/ENSG00000108342-CSF3/tissue"
+    },
+    {
+      "key": "e_1_2_11_13_1",
+      "unstructured": "Human Protein Atlas. (2020d). Human Protein Atlas JAZF1.https://www.proteinatlas.org/ENSG00000153814-JAZF1"
+    },
+    {
+      "key": "e_1_2_11_14_1",
+      "unstructured": "Human Protein Atlas. (2020e). Human Protein Atlas MED24.https://www.proteinatlas.org/ENSG00000008838-MED24"
+    },
+    {
+      "key": "e_1_2_11_15_1",
+      "unstructured": "Human Protein Atlas. (2020f). Human Protein Atlas MICAL1.https://www.proteinatlas.org/ENSG00000135596-MICAL1/tissue"
+    },
+    {
+      "key": "e_1_2_11_16_1",
+      "unstructured": "Human Protein Atlas. (2020g). Human Protein Atlas PSMD3.https://www.proteinatlas.org/ENSG00000108344-PSMD3"
+    },
+    {
+      "DOI": "10.1534/genetics.115.178905",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_17_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddt356",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_18_1"
+    },
+    {
+      "DOI": "10.1038/ng.2653",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_19_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0367-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_20_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_21_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007586",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_22_1"
+    },
+    {
+      "article-title": "The ARIC investigators",
+      "author": "The Atherosclerosis Risk in Communities (ARIC) Study: design and objectives",
+      "first-page": "687",
+      "issue": "4",
+      "journal-title": "American Journal of Epidemiology",
+      "key": "e_1_2_11_23_1",
+      "volume": "129",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1016/S0197-2456(97)00078-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_24_1"
+    },
+    {
+      "DOI": "10.1126/science.1260419",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_25_1"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.08.008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_26_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0385-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_27_1"
+    },
+    {
+      "DOI": "10.1182/blood.V92.3.849",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_28_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq340",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_29_1"
+    },
+    {
+      "DOI": "10.1182/blood.V92.8.2613",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_30_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw079",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_31_1"
+    },
+    {
+      "DOI": "10.1177/0962280211428387",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_32_1"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0706-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_33_1"
+    }
+  ],
+  "reference-count": 32,
+  "references-count": 32,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22436"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A large‐scale transcriptome‐wide association study (TWAS) of 10 blood cell phenotypes reveals complexities of TWAS fine‐mapping"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "46"
+}

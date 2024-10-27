@@ -1,0 +1,886 @@
+{
+  "DOI": "10.1186/s40246-024-00607-7",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-024-00607-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eObjective\u003c/jats:title\u003e\n                \u003cjats:p\u003eMyasthenia gravis (MG) is a complex autoimmune disease affecting the neuromuscular junction with limited drug options, but the field of MG treatment recently benefits from novel biological agents. We performed a drug-targeted Mendelian randomization (MR) study to identify novel therapeutic targets of MG.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eCis-expression quantitative loci (cis-eQTL), which proxy expression levels for 2176 druggable genes, were used for MR analysis. Causal relationships between genes and disease, identified by eQTL MR analysis, were verified by comprehensive sensitivity, colocalization, and protein quantitative loci (pQTL) MR analyses. The protein-protein interaction (PPI) analysis was also performed to extend targets, followed by enzyme-linked immunosorbent assay (ELISA) to explore the serum level of drug targets in MG patients. A phenome-wide MR analysis was then performed to assess side effects with a clinical trial review assessing druggability.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe eQTL MR analysis has identified eight potential targets for MG, one for early-onset MG and seven for late-onset MG. Further colocalization analyses indicated that CD226, CDC42BPB, PRSS36, and TNFSF12 possess evidence for colocalization with MG or late-onset MG. pQTL MR analyses identified the causal relations of TNFSF12 and CD226 with MG and late-onset MG. Furthermore, PPI analysis has revealed the protein interaction between TNFSF12-TNFSF13(APRIL) and TNFSF12-TNFSF13B(BLyS). Elevated TNFSF13 serum level of MG patients was also identified by ELISA experiments. This study has ultimately proposed three promising therapeutic targets (TNFSF12, TNFSF13, TNFSF13B) of MG.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThree drug targets associated with the BLyS/APRIL pathway have been identified. Multiple biological agents, including telitacicept and belimumab, are promising for MG therapy.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "607"
+  ],
+  "article-number": "43",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "2 December 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "5 April 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "24 April 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The study involving human participants was reviewed and approved by the Ethics Committee of Xiangya Hospital, Central South University, China (201703107). The patients/participants provided their written informed consent to participate in this study."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Ouyang",
+      "given": "Yuzhen",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Yu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Kangzhi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tang",
+      "given": "Zhenwei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shi",
+      "given": "Guanzhong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Qu",
+      "given": "Chunrun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Kaiyue",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Huan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T11:02:14Z",
+    "timestamp": 1713956534000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T12:08:18Z",
+    "timestamp": 1713960498000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "82171399"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        25
+      ]
+    ],
+    "date-time": "2024-04-25T00:27:21Z",
+    "timestamp": 1714004841727
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            24
+          ]
+        ],
+        "date-time": "2024-04-24T00:00:00Z",
+        "timestamp": 1713916800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            24
+          ]
+        ],
+        "date-time": "2024-04-24T00:00:00Z",
+        "timestamp": 1713916800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00607-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-024-00607-7/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00607-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1056/NEJMra1602678",
+      "author": "NE Gilhus",
+      "doi-asserted-by": "publisher",
+      "first-page": "2570",
+      "issue": "26",
+      "journal-title": "N Engl J Med",
+      "key": "607_CR1",
+      "unstructured": "Gilhus NE. Myasthenia Gravis. N Engl J Med. 2016;375(26):2570–81.",
+      "volume": "375",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/1471-2377-10-46",
+      "author": "AS Carr",
+      "doi-asserted-by": "publisher",
+      "first-page": "46",
+      "journal-title": "BMC Neurol",
+      "key": "607_CR2",
+      "unstructured": "Carr AS, Cardwell CR, McCarron PO, McConville J. A systematic review of population based epidemiological studies in Myasthenia Gravis. BMC Neurol. 2010;10:46.",
+      "volume": "10",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1212/WNL.0000000000002790",
+      "author": "DB Sanders",
+      "doi-asserted-by": "publisher",
+      "first-page": "419",
+      "issue": "4",
+      "journal-title": "Neurology",
+      "key": "607_CR3",
+      "unstructured": "Sanders DB, Wolfe GI, Benatar M, Evoli A, Gilhus NE, Illa I, Kuntz N, Massey JM, Melms A, Murai H, et al. International consensus guidance for management of myasthenia gravis: executive summary. Neurology. 2016;87(4):419–25.",
+      "volume": "87",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00415-014-7532-3",
+      "author": "R Iorio",
+      "doi-asserted-by": "publisher",
+      "first-page": "1115",
+      "issue": "5",
+      "journal-title": "J Neurol",
+      "key": "607_CR4",
+      "unstructured": "Iorio R, Damato V, Alboini PE, Evoli A. Efficacy and safety of rituximab for myasthenia gravis: a systematic review and meta-analysis. J Neurol. 2015;262(5):1115–9.",
+      "volume": "262",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1001/jama.2020.1166",
+      "author": "OJ Wouters",
+      "doi-asserted-by": "publisher",
+      "first-page": "844",
+      "issue": "9",
+      "journal-title": "JAMA",
+      "key": "607_CR5",
+      "unstructured": "Wouters OJ, McKee M, Luyten J. Estimated Research and Development Investment Needed to bring a New Medicine to Market, 2009–2018. JAMA. 2020;323(9):844–53.",
+      "volume": "323",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "author": "GD Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Int J Epidemiol",
+      "key": "607_CR6",
+      "unstructured": "Smith GD, Ebrahim S. Mendelian randomization’: can genetic epidemiology contribute to understanding environmental determinants of disease? Int J Epidemiol. 2003;32(1):1–22.",
+      "volume": "32",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1038/s41591-021-01310-z",
+      "author": "L Gaziano",
+      "doi-asserted-by": "publisher",
+      "first-page": "668",
+      "issue": "4",
+      "journal-title": "Nat Med",
+      "key": "607_CR7",
+      "unstructured": "Gaziano L, Giambartolomei C, Pereira AC, Gaulton A, Posner DC, Swanson SA, Ho YL, Iyengar SK, Kosik NM, Vujkovic M, et al. Actionable druggable genome-wide mendelian randomization identifies repurposing opportunities for COVID-19. Nat Med. 2021;27(4):668–76.",
+      "volume": "27",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-021-26280-1",
+      "author": "CS Storm",
+      "doi-asserted-by": "publisher",
+      "first-page": "7342",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "607_CR8",
+      "unstructured": "Storm CS, Kia DA, Almramhi MM, Bandres-Ciga S, Finan C, Hingorani AD, Wood NW. Finding genetically-supported drug targets for Parkinson’s disease using mendelian randomization of the druggable genome. Nat Commun. 2021;12(1):7342.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ebiom.2022.104199",
+      "author": "Y Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "104199",
+      "journal-title": "EBioMedicine",
+      "key": "607_CR9",
+      "unstructured": "Chen Y, Xu X, Wang L, Li K, Sun Y, Xiao L, Dai J, Huang M, Wang Y, Wang DW. Genetic insights into therapeutic targets for aortic aneurysms: a mendelian randomization study. EBioMedicine. 2022;83:104199.",
+      "volume": "83",
+      "year": "2022"
+    },
+    {
+      "key": "607_CR10",
+      "unstructured": "Ge YJ, Ou YN, Deng YT, Wu BS, Yang L, Zhang YR, Chen SD, Huang YY, Dong Q, Tan L et al. Prioritization of drug targets for neurodegenerative diseases by integrating genetic and proteomic data from brain and blood. Biol Psychiatry 2022."
+    },
+    {
+      "DOI": "10.1093/brain/awad070",
+      "doi-asserted-by": "crossref",
+      "key": "607_CR11",
+      "unstructured": "Lin J, Zhou J, Xu Y. Potential drug targets for multiple sclerosis identified through mendelian randomization analysis. Brain 2023."
+    },
+    {
+      "DOI": "10.1007/s00439-023-02627-0",
+      "doi-asserted-by": "crossref",
+      "key": "607_CR12",
+      "unstructured": "Chen Y, Liu S, Gong W, Guo P, Xue F, Zhou X, Wang S, Yuan Z. Protein-centric omics integration analysis identifies candidate plasma proteins for multiple autoimmune diseases. Hum Genet 2023."
+    },
+    {
+      "DOI": "10.1126/scitranslmed.aag1166",
+      "doi-asserted-by": "crossref",
+      "key": "607_CR13",
+      "unstructured": "Finan C, Gaulton A, Kruger FA, Lumbers RT, Shah T, Engmann J, Galver L, Kelley R, Karlsson A, Santos R et al. The druggable genome and support for target identification and validation in drug development. Sci Transl Med 2017, 9(383)."
+    },
+    {
+      "DOI": "10.1038/s41588-021-00913-z",
+      "author": "U Võsa",
+      "doi-asserted-by": "publisher",
+      "first-page": "1300",
+      "issue": "9",
+      "journal-title": "Nat Genet",
+      "key": "607_CR14",
+      "unstructured": "Võsa U, Claringbould A, Westra HJ, Bonder MJ, Deelen P, Zeng B, Kirsten H, Saha A, Kreuzhuber R, Yazar S, et al. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. Nat Genet. 2021;53(9):1300–10.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1073/pnas.2206754119",
+      "doi-asserted-by": "crossref",
+      "key": "607_CR15",
+      "unstructured": "Chia R, Saez-Atienzar S, Murphy N, Chiò A, Blauwendraat C, Roda RH, Tienari PJ, Kaminski HJ, Ricciardi R, Guida M et al. Identification of genetic risk loci and prioritization of genes and pathways for myasthenia gravis: a genome-wide association study. Proc Natl Acad Sci U S A 2022, 119(5)."
+    },
+    {
+      "DOI": "10.12688/wellcomeopenres.15555.1",
+      "author": "S Burgess",
+      "doi-asserted-by": "publisher",
+      "first-page": "186",
+      "journal-title": "Wellcome Open Res",
+      "key": "607_CR16",
+      "unstructured": "Burgess S, Davey Smith G, Davies NM, Dudbridge F, Gill D, Glymour MM, Hartwig FP, Holmes MV, Minelli C, Relton CL, et al. Guidelines for performing mendelian randomization investigations. Wellcome Open Res. 2019;4:186.",
+      "volume": "4",
+      "year": "2019"
+    },
+    {
+      "author": "J Bowden",
+      "first-page": "1961",
+      "issue": "6",
+      "journal-title": "Int J Epidemiol",
+      "key": "607_CR17",
+      "unstructured": "Bowden J, Del Greco MF, Minelli C, Davey Smith G, Sheehan NA, Thompson JR. Assessing the suitability of summary data for two-sample mendelian randomization analyses using MR-Egger regression: the role of the I2 statistic. Int J Epidemiol. 2016;45(6):1961–74.",
+      "volume": "45",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0099-7",
+      "author": "M Verbanck",
+      "doi-asserted-by": "publisher",
+      "first-page": "693",
+      "issue": "5",
+      "journal-title": "Nat Genet",
+      "key": "607_CR18",
+      "unstructured": "Verbanck M, Chen CY, Neale B, Do R. Detection of widespread horizontal pleiotropy in causal relationships inferred from mendelian randomization between complex traits and diseases. Nat Genet. 2018;50(5):693–8.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004383",
+      "author": "C Giambartolomei",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1004383",
+      "issue": "5",
+      "journal-title": "PLoS Genet",
+      "key": "607_CR19",
+      "unstructured": "Giambartolomei C, Vukcevic D, Schadt EE, Franke L, Hingorani AD, Wallace C, Plagnol V. Bayesian test for colocalisation between pairs of genetic association studies using summary statistics. PLoS Genet. 2014;10(5):e1004383.",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq419",
+      "author": "RJ Pruim",
+      "doi-asserted-by": "publisher",
+      "first-page": "2336",
+      "issue": "18",
+      "journal-title": "Bioinformatics",
+      "key": "607_CR20",
+      "unstructured": "Pruim RJ, Welch RP, Sanna S, Teslovich TM, Chines PS, Gliedt TP, Boehnke M, Abecasis GR, Willer CJ. LocusZoom: regional visualization of genome-wide association scan results. Bioinformatics. 2010;26(18):2336–7.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00978-w",
+      "author": "E Ferkingstad",
+      "doi-asserted-by": "publisher",
+      "first-page": "1712",
+      "issue": "12",
+      "journal-title": "Nat Genet",
+      "key": "607_CR21",
+      "unstructured": "Ferkingstad E, Sulem P, Atlason BA, Sveinbjornsson G, Magnusson MI, Styrmisdottir EL, Gunnarsdottir K, Helgason A, Oddsson A, Halldorsson BV, et al. Large-scale integration of the plasma proteome with genetics and disease. Nat Genet. 2021;53(12):1712–21.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0682-6",
+      "author": "J Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1122",
+      "issue": "10",
+      "journal-title": "Nat Genet",
+      "key": "607_CR22",
+      "unstructured": "Zheng J, Haberland V, Baird D, Walker V, Haycock PC, Hurle MR, Gutteridge A, Erola P, Liu Y, Luo S, et al. Phenome-wide mendelian randomization mapping the influence of the plasma proteome on complex diseases. Nat Genet. 2020;52(10):1122–31.",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41586-023-06592-6",
+      "author": "BB Sun",
+      "doi-asserted-by": "publisher",
+      "first-page": "329",
+      "issue": "7982",
+      "journal-title": "Nature",
+      "key": "607_CR23",
+      "unstructured": "Sun BB, Chiou J, Traylor M, Benner C, Hsu YH, Richardson TG, Surendran P, Mahajan A, Robins C, Vasquez-Grinnell SG, et al. Plasma proteomic associations with genetics and health in the UK Biobank. Nature. 2023;622(7982):329–38.",
+      "volume": "622",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.7554/eLife.34408",
+      "doi-asserted-by": "crossref",
+      "key": "607_CR24",
+      "unstructured": "Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, Laurin C, Burgess S, Bowden J, Langdon R et al. The MR-Base platform supports systematic causal inference across the human phenome. Elife 2018, 7."
+    },
+    {
+      "DOI": "10.1101/2020.08.10.244293",
+      "doi-asserted-by": "crossref",
+      "key": "607_CR25",
+      "unstructured": "Elsworth B, Lyon M, Alexander T, Liu Y, Matthews P, Hallett J, Bates P, Palmer T, Haberland V, Smith GD et al. The MRC IEU OpenGWAS data infrastructure. bioRxiv 2020:2020.2008.2010.244293."
+    },
+    {
+      "DOI": "10.1093/hmg/ddy163",
+      "author": "G Hemani",
+      "doi-asserted-by": "publisher",
+      "first-page": "R195",
+      "issue": "R2",
+      "journal-title": "Hum Mol Genet",
+      "key": "607_CR26",
+      "unstructured": "Hemani G, Bowden J, Davey Smith G. Evaluating the potential role of pleiotropy in mendelian randomization studies. Hum Mol Genet. 2018;27(R2):R195–208.",
+      "volume": "27",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ebiom.2023.104494",
+      "author": "J Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "104494",
+      "journal-title": "EBioMedicine",
+      "key": "607_CR27",
+      "unstructured": "Chen J, Xu F, Ruan X, Sun J, Zhang Y, Zhang H, Zhao J, Zheng J, Larsson SC, Wang X, et al. Therapeutic targets for inflammatory bowel disease: proteome-wide mendelian randomization and colocalization analyses. EBioMedicine. 2023;89:104494.",
+      "volume": "89",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/s41591-021-01281-1",
+      "author": "S Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "659",
+      "issue": "4",
+      "journal-title": "Nat Med",
+      "key": "607_CR28",
+      "unstructured": "Zhou S, Butler-Laporte G, Nakanishi T, Morrison DR, Afilalo J, Afilalo M, Laurent L, Pietzner M, Kerrison N, Zhao K, et al. A neanderthal OAS1 isoform protects individuals of European ancestry against COVID-19 susceptibility and severity. Nat Med. 2021;27(4):659–67.",
+      "volume": "27",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fimmu.2021.713225",
+      "author": "M Nakano",
+      "doi-asserted-by": "publisher",
+      "first-page": "713225",
+      "journal-title": "Front Immunol",
+      "key": "607_CR29",
+      "unstructured": "Nakano M, Ayano M, Kushimoto K, Kawano S, Higashioka K, Inokuchi S, Mitoma H, Kimoto Y, Akahoshi M, Ono N, et al. Increased proportion of CD226(+) B cells is Associated with the Disease activity and prognosis of systemic Lupus Erythematosus. Front Immunol. 2021;12:713225.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/rheumatology/kead265",
+      "author": "D Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "698",
+      "issue": "3",
+      "journal-title": "Rheumatology (Oxford)",
+      "key": "607_CR30",
+      "unstructured": "Xu D, Fang J, Zhang S, Huang C, Huang C, Qin L, Li X, Chen M, Liu X, Liu Y, et al. Efficacy and safety of telitacicept in primary Sjögren’s syndrome: a randomized, double-blind, placebo-controlled, phase 2 trial. Rheumatology (Oxford). 2024;63(3):698–705.",
+      "volume": "63",
+      "year": "2024"
+    },
+    {
+      "DOI": "10.1136/ard-2023-224854",
+      "author": "D Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "475",
+      "issue": "4",
+      "journal-title": "Ann Rheum Dis",
+      "key": "607_CR31",
+      "unstructured": "Wu D, Li J, Xu D, Merrill JT, van Vollenhoven RF, Liu Y, Hu J, Li Y, Li F, Huang C, et al. Telitacicept in patients with active systemic lupus erythematosus: results of a phase 2b, randomised, double-blind, placebo-controlled trial. Ann Rheum Dis. 2024;83(4):475–87.",
+      "volume": "83",
+      "year": "2024"
+    },
+    {
+      "DOI": "10.1002/acn3.51492",
+      "author": "E Cortés-Vicente",
+      "doi-asserted-by": "publisher",
+      "first-page": "122",
+      "issue": "2",
+      "journal-title": "Ann Clin Transl Neurol",
+      "key": "607_CR32",
+      "unstructured": "Cortés-Vicente E, Álvarez-Velasco R, Pla-Junca F, Rojas-Garcia R, Paradas C, Sevilla T, Casasnovas C, Gómez-Caravaca MT, Pardo J, Ramos-Fransi A, et al. Drug-refractory myasthenia gravis: clinical characteristics, treatments, and outcome. Ann Clin Transl Neurol. 2022;9(2):122–31.",
+      "volume": "9",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.jns.2020.116740",
+      "author": "T Sugimoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "116740",
+      "journal-title": "J Neurol Sci",
+      "key": "607_CR33",
+      "unstructured": "Sugimoto T, Ochi K, Ishikawa R, Tazuma T, Hayashi M, Mine N, Naito H, Nomura E, Kohriyama T, Yamawaki T. Initial deterioration and intravenous methylprednisolone therapy in patients with myasthenia gravis. J Neurol Sci. 2020;412:116740.",
+      "volume": "412",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s40265-022-01726-y",
+      "author": "D Menon",
+      "doi-asserted-by": "publisher",
+      "first-page": "865",
+      "issue": "8",
+      "journal-title": "Drugs",
+      "key": "607_CR34",
+      "unstructured": "Menon D, Bril V. Pharmacotherapy of generalized myasthenia gravis with special emphasis on newer biologicals. Drugs. 2022;82(8):865–87.",
+      "volume": "82",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.cytogfr.2013.04.003",
+      "author": "FB Vincent",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "issue": "3",
+      "journal-title": "Cytokine Growth Factor Rev",
+      "key": "607_CR35",
+      "unstructured": "Vincent FB, Saulep-Easton D, Figgett WA, Fairfax KA, Mackay F. The BAFF/APRIL system: emerging functions beyond B cell biology and autoimmunity. Cytokine Growth Factor Rev. 2013;24(3):203–15.",
+      "volume": "24",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/s40265-021-01591-1",
+      "author": "S Dhillon",
+      "doi-asserted-by": "publisher",
+      "first-page": "1671",
+      "issue": "14",
+      "journal-title": "Drugs",
+      "key": "607_CR36",
+      "unstructured": "Dhillon S. Telitacicept: first approval. Drugs. 2021;81(14):1671–5.",
+      "volume": "81",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3389/fimmu.2023.1279808",
+      "author": "Y Ren",
+      "doi-asserted-by": "publisher",
+      "first-page": "1279808",
+      "journal-title": "Front Immunol",
+      "key": "607_CR37",
+      "unstructured": "Ren Y, Chen S, Yang H. Case Report: Telitacicept in treating a patient with NF155 + autoimmune nodopathy: a successful attempt to manage recurrent elevated sero-anti-NF155 antibodies. Front Immunol. 2023;14:1279808.",
+      "volume": "14",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1002/art.40360",
+      "author": "JT Merrill",
+      "doi-asserted-by": "publisher",
+      "first-page": "266",
+      "issue": "2",
+      "journal-title": "Arthritis Rheumatol",
+      "key": "607_CR38",
+      "unstructured": "Merrill JT, Wallace DJ, Wax S, Kao A, Fraser PA, Chang P, Isenberg D. Efficacy and safety of atacicept in patients with systemic Lupus Erythematosus: results of a twenty-Four-Week, Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel-Arm, phase IIb study. Arthritis Rheumatol. 2018;70(2):266–76.",
+      "volume": "70",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/S1474-4422(14)70028-6",
+      "author": "L Kappos",
+      "doi-asserted-by": "publisher",
+      "first-page": "353",
+      "issue": "4",
+      "journal-title": "Lancet Neurol",
+      "key": "607_CR39",
+      "unstructured": "Kappos L, Hartung HP, Freedman MS, Boyko A, Radü EW, Mikol DD, Lamarine M, Hyvert Y, Freudensprung U, Plitz T, et al. Atacicept in multiple sclerosis (ATAMS): a randomised, placebo-controlled, double-blind, phase 2 trial. Lancet Neurol. 2014;13(4):353–63.",
+      "volume": "13",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1212/NXI.0000000000000973",
+      "author": "G Kumar",
+      "doi-asserted-by": "publisher",
+      "first-page": "e973",
+      "issue": "3",
+      "journal-title": "Neurol - Neuroimmunol Neuroinflammation",
+      "key": "607_CR40",
+      "unstructured": "Kumar G, Maria Z, Kohli U, Agasing A, Quinn JL, Ko RM, Zamvil SS, Axtell RC. CNS autoimmune responses in BCMA-Deficient mice provide insight for the failure of Atacicept in MS. Neurol - Neuroimmunol Neuroinflammation. 2021;8(3):e973.",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/art.41900",
+      "author": "E Ginzler",
+      "doi-asserted-by": "publisher",
+      "first-page": "112",
+      "issue": "1",
+      "journal-title": "Arthritis Rheumatol",
+      "key": "607_CR41",
+      "unstructured": "Ginzler E, Guedes Barbosa LS, D’Cruz D, Furie R, Maksimowicz-McKinnon K, Oates J, Santiago MB, Saxena A, Sheikh S, Bass DL, et al. Phase III/IV, Randomized, fifty-two-week study of the efficacy and Safety of Belimumab in patients of black African ancestry with systemic Lupus Erythematosus. Arthritis Rheumatol. 2022;74(1):112–23.",
+      "volume": "74",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/S2665-9913(20)30355-6",
+      "author": "SZ Sheikh",
+      "doi-asserted-by": "publisher",
+      "first-page": "e122",
+      "issue": "2",
+      "journal-title": "Lancet Rheumatol",
+      "key": "607_CR42",
+      "unstructured": "Sheikh SZ, Scheinberg MA, Wei JC-C, Tegzova D, Stohl W, de Toledo RA, Mucenic T, Banfi MRA, Maksimowicz-McKinnon K, Abud-Mendoza C, et al. Mortality and adverse events of special interest with intravenous belimumab for adults with active, autoantibody-positive systemic lupus erythematosus (BASE): a multicentre, double-blind, randomised, placebo-controlled, phase 4 trial. Lancet Rheumatol. 2021;3(2):e122–30.",
+      "volume": "3",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1177/09612033211028653",
+      "doi-asserted-by": "crossref",
+      "key": "607_CR43",
+      "unstructured": "Levy RA, Gonzalez-Rivera T, Khamashta M, Fox NL, Jones-Leone A, Rubin B, Burriss SW, Gairy K, Maurik AV, Roth DA. 10 years of belimumab experience: what have we learnt? Lupus 2021;30(11):1705–21."
+    },
+    {
+      "DOI": "10.1212/WNL.0000000000005323",
+      "author": "K Hewett",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1425",
+      "issue": "16",
+      "journal-title": "Neurology",
+      "key": "607_CR44",
+      "unstructured": "Hewett K, Sanders DB, Grove RA, Broderick CL, Rudo TJ, Bassiri A, Zvartau-Hind M, Bril V. Randomized study of adjunctive belimumab in participants with generalized myasthenia gravis. Neurology. 2018;90(16):e1425–34.",
+      "volume": "90",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fimmu.2013.00473",
+      "author": "E Cheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "473",
+      "journal-title": "Front Immunol",
+      "key": "607_CR45",
+      "unstructured": "Cheng E, Armstrong CL, Galisteo R, Winkles JA. TWEAK/Fn14 Axis-targeted therapeutics: moving Basic Science discoveries to the clinic. Front Immunol. 2013;4:473.",
+      "volume": "4",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.3389/fimmu.2017.01534",
+      "author": "A Boulamery",
+      "doi-asserted-by": "publisher",
+      "first-page": "1534",
+      "journal-title": "Front Immunol",
+      "key": "607_CR46",
+      "unstructured": "Boulamery A, Desplat-Jégo S. Regulation of Neuroinflammation: what role for the Tumor necrosis factor-like weak inducer of Apoptosis/Fn14 pathway? Front Immunol. 2017;8:1534.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.clim.2005.06.005",
+      "author": "S Desplat-Jégo",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "issue": "1",
+      "journal-title": "Clin Immunol",
+      "key": "607_CR47",
+      "unstructured": "Desplat-Jégo S, Creidy R, Varriale S, Allaire N, Luo Y, Bernard D, Hahm K, Burkly L, Boucraut J. Anti-TWEAK monoclonal antibodies reduce immune cell infiltration in the central nervous system and severity of experimental autoimmune encephalomyelitis. Clin Immunol. 2005;117(1):15–23.",
+      "volume": "117",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.2353/ajpath.2009.080462",
+      "author": "M Razmara",
+      "doi-asserted-by": "publisher",
+      "first-page": "460",
+      "issue": "2",
+      "journal-title": "Am J Pathol",
+      "key": "607_CR48",
+      "unstructured": "Razmara M, Hilliard B, Ziarani AK, Murali R, Yellayi S, Ghazanfar M, Chen YH, Tykocinski ML. Fn14-TRAIL, a chimeric intercellular signal exchanger, attenuates experimental autoimmune encephalomyelitis. Am J Pathol. 2009;174(2):460–74.",
+      "volume": "174",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/S1474-4422(17)30369-1",
+      "author": "JF Howard Jr",
+      "doi-asserted-by": "publisher",
+      "first-page": "976",
+      "issue": "12",
+      "journal-title": "Lancet Neurol",
+      "key": "607_CR49",
+      "unstructured": "Howard JF Jr., Utsugisawa K, Benatar M, Murai H, Barohn RJ, Illa I, Jacob S, Vissing J, Burns TM, Kissel JT, et al. Safety and efficacy of eculizumab in anti-acetylcholine receptor antibody-positive refractory generalised myasthenia gravis (REGAIN): a phase 3, randomised, double-blind, placebo-controlled, multicentre study. Lancet Neurol. 2017;16(12):976–86.",
+      "volume": "16",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1136/jnnp-2021-328665",
+      "author": "C Nelke",
+      "doi-asserted-by": "publisher",
+      "first-page": "548",
+      "issue": "5",
+      "journal-title": "J Neurol Neurosurg Psychiatry",
+      "key": "607_CR50",
+      "unstructured": "Nelke C, Schroeter CB, Stascheit F, Pawlitzki M, Regner-Nelke L, Huntemann N, Arat E, Öztürk M, Melzer N, Mergenthaler P, et al. Eculizumab versus Rituximab in generalised myasthenia gravis. J Neurol Neurosurg Psychiatry. 2022;93(5):548–54.",
+      "volume": "93",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/S1474-4422(23)00080-7",
+      "author": "JF Howard Jr",
+      "doi-asserted-by": "publisher",
+      "first-page": "395",
+      "issue": "5",
+      "journal-title": "Lancet Neurol",
+      "key": "607_CR51",
+      "unstructured": "Howard JF Jr., Bresch S, Genge A, Hewamadduma C, Hinton J, Hussain Y, Juntas-Morales R, Kaminski HJ, Maniaol A, Mantegazza R, et al. Safety and efficacy of zilucoplan in patients with generalised myasthenia gravis (RAISE): a randomised, double-blind, placebo-controlled, phase 3 study. Lancet Neurol. 2023;22(5):395–406.",
+      "volume": "22",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1007/s00415-023-11699-x",
+      "author": "A Meisel",
+      "doi-asserted-by": "publisher",
+      "first-page": "3862",
+      "issue": "8",
+      "journal-title": "J Neurol",
+      "key": "607_CR52",
+      "unstructured": "Meisel A, Annane D, Vu T, Mantegazza R, Katsuno M, Aguzzi R, Frick G, Gault L, Howard JF Jr. Long-term efficacy and safety of ravulizumab in adults with anti-acetylcholine receptor antibody-positive generalized myasthenia gravis: results from the phase 3 CHAMPION MG open-label extension. J Neurol. 2023;270(8):3862–75.",
+      "volume": "270",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1016/S1474-4422(21)00159-9",
+      "author": "JF Howard Jr",
+      "doi-asserted-by": "publisher",
+      "first-page": "526",
+      "issue": "7",
+      "journal-title": "Lancet Neurol",
+      "key": "607_CR53",
+      "unstructured": "Howard JF Jr., Bril V, Vu T, Karam C, Peric S, Margania T, Murai H, Bilinska M, Shakarishvili R, Smilowski M, et al. Safety, efficacy, and tolerability of efgartigimod in patients with generalised myasthenia gravis (ADAPT): a multicentre, randomised, placebo-controlled, phase 3 trial. Lancet Neurol. 2021;20(7):526–36.",
+      "volume": "20",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1001/jamaneurol.2024.0044",
+      "doi-asserted-by": "crossref",
+      "key": "607_CR54",
+      "unstructured": "Yan C, Yue Y, Guan Y, Bu B, Ke Q, Duan R, Deng H, Xue Q, Jiang H, Xiao F et al. Batoclimab vs Placebo for generalized Myasthenia gravis: a Randomized Clinical Trial. JAMA Neurol 2024."
+    }
+  ],
+  "reference-count": 54,
+  "references-count": 54,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-024-00607-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Mendelian randomization and colocalization analysis reveal novel drug targets for myasthenia gravis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "18"
+}

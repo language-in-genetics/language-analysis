@@ -1,0 +1,814 @@
+{
+  "DOI": "10.1038/s41431-020-00793-7",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-020-00793-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eWithin the GEN-COVID Multicenter Study, biospecimens from more than 1000 SARS-CoV-2 positive individuals have thus far been collected in the GEN-COVID Biobank (GCB). Sample types include whole blood, plasma, serum, leukocytes, and DNA. The GCB links samples to detailed clinical data available in the GEN-COVID Patient Registry (GCPR). It includes hospitalized patients (74.25%), broken down into intubated, treated by CPAP-biPAP, treated with O\u003cjats:sub\u003e2\u003c/jats:sub\u003esupplementation, and without respiratory support (9.5%, 18.4%, 31.55% and 14.8, respectively); and non-hospitalized subjects (25.75%), either pauci- or asymptomatic. More than 150 clinical patient-level data fields have been collected and binarized for further statistics according to the organs/systems primarily affected by COVID-19: heart, liver, pancreas, kidney, chemosensors, innate or adaptive immunity, and clotting system. Hierarchical clustering analysis identified five main clinical categories: (1) severe multisystemic failure with either thromboembolic or pancreatic variant; (2) cytokine storm type, either severe with liver involvement or moderate; (3) moderate heart type, either with or without liver damage; (4) moderate multisystemic involvement, either with or without liver damage; (5) mild, either with or without hyposmia. GCB and GCPR are further linked to the GCGDR, which includes data from whole-exome sequencing and high-density SNP genotyping. The data are available for sharing through the Network for Italian Genomes, found within the COVID-19 dedicated section. The study objective is to systematize this comprehensive data collection and begin identifying multi-organ involvement in COVID-19, defining genetic parameters for infection susceptibility within the population, and mapping genetically COVID-19 severity and clinical complexity among patients.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "793"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "24 July 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "27 October 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "25 November 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "17 January 2021"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The GEN-COVID study was approved by the University Hospital of Siena Ethical Review Board (Protocol no. 16929, dated March 16, 2020)."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-6419-9456",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Daga",
+      "given": "Sergio",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "name": "GEN-COVID Multicenter Study",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7386-3224",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Fallerini",
+      "given": "Chiara",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0391-1980",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Baldassarri",
+      "given": "Margherita",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4363-2353",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Fava",
+      "given": "Francesca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Valentino",
+      "given": "Floriana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Doddato",
+      "given": "Gabriella",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0819-604X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Benetti",
+      "given": "Elisa",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1099-8279",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Furini",
+      "given": "Simone",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Giliberti",
+      "given": "Annarita",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4876-7158",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Tita",
+      "given": "Rossella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Amitrano",
+      "given": "Sara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bruttini",
+      "given": "Mirella",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6255-9761",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Meloni",
+      "given": "Ilaria",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6259-6901",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Pinto",
+      "given": "Anna Maria",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6891-3178",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Raimondi",
+      "given": "Francesco",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-2850-3964",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Stella",
+      "given": "Alessandra",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-3901-2354",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Biscarini",
+      "given": "Filippo",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3454-7250",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Picchiotti",
+      "given": "Nicola",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gori",
+      "given": "Marco",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9786-2851",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Pinoli",
+      "given": "Pietro",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0671-2415",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ceri",
+      "given": "Stefano",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sanarico",
+      "given": "Maurizio",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6893-5916",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Crawley",
+      "given": "Francis P.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0160-9312",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Birolo",
+      "given": "Giovanni",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0846-9220",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Renieri",
+      "given": "Alessandra",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1992-1654",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Mari",
+      "given": "Francesca",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-5634-031X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Frullanti",
+      "given": "Elisa",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        17
+      ]
+    ],
+    "date-time": "2021-01-17T11:02:19Z",
+    "timestamp": 1610881339000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        20
+      ]
+    ],
+    "date-time": "2023-05-20T21:01:20Z",
+    "timestamp": 1684616480000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T00:54:52Z",
+    "timestamp": 1714524892343
+  },
+  "is-referenced-by-count": 33,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        17
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            17
+          ]
+        ],
+        "date-time": "2021-01-17T00:00:00Z",
+        "timestamp": 1610841600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            17
+          ]
+        ],
+        "date-time": "2021-01-17T00:00:00Z",
+        "timestamp": 1610841600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://www.nature.com/articles/s41431-020-00793-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41431-020-00793-7",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://www.nature.com/articles/s41431-020-00793-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "745-759",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        17
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        17
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        5
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/sdata.2016.18",
+      "author": "M Wilkinson",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci Data",
+      "key": "793_CR1",
+      "unstructured": "Wilkinson M, Dumontier M, Aalbersberg I, Appleton G, Axton M, Baal A, et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data. 2019;6:6. https://doi.org/10.1038/sdata.2016.18",
+      "volume": "6",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1056/NEJMoa2001017",
+      "author": "N Zhu",
+      "doi-asserted-by": "crossref",
+      "first-page": "727",
+      "journal-title": "N Engl J Med.",
+      "key": "793_CR2",
+      "unstructured": "Zhu N, Zhang D, Wang W, Li X, Yang B, Song J, et al. A novel coronavirus from patients with pneumonia in China, 2019. N Engl J Med. 2020;382:727–33.",
+      "volume": "382",
+      "year": "2020"
+    },
+    {
+      "key": "793_CR3",
+      "unstructured": "Italian Civil Protection Department—COVID-19 case update. http://opendatadpc.maps.arcgis.com/apps/opsdashboard/index.html#/b0c68bce2cce478eaac82fe38d4138b1."
+    },
+    {
+      "DOI": "10.1001/jama.2020.2648",
+      "doi-asserted-by": "publisher",
+      "key": "793_CR4",
+      "unstructured": "Wu Z, McGoogan JM. Characteristics of and important lessons from the coronavirus disease 2019 (COVID-19) outbreak in China: summary of a report of 72 314 cases from the Chinese Center for Disease Control and Prevention. JAMA. 2020. https://doi.org/10.1001/jama.2020.2648."
+    },
+    {
+      "DOI": "10.1038/s41431-020-0691-z",
+      "author": "E Benetti",
+      "doi-asserted-by": "publisher",
+      "first-page": "1602",
+      "journal-title": "Eur J Hum Genet.",
+      "key": "793_CR5",
+      "unstructured": "Benetti E, Tita R, Spiga O, Ciolfi A, Birolo G, Bruselles A, et al. ACE2 gene variants may underlie interindividual variability and susceptibility to COVID-19 in the Italian population. Eur J Hum Genet. 2020;28:1602–14. https://doi.org/10.1038/s41431-020-0691-z.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "key": "793_CR6",
+      "unstructured": "Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)."
+    },
+    {
+      "DOI": "10.1101/2020.05.22.20108845",
+      "doi-asserted-by": "crossref",
+      "key": "793_CR7",
+      "unstructured": "Benetti E, Giliberti A, Emiliozzi A, Valentino F, Bergantini L, Fallerini C, et al. Clinical and molecular characterization of COVID-19 hospitalized patients. 2020. http://medrxiv.org/content/early/2020/05/25/2020.05.22.20108845."
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "author": "CC Chang",
+      "doi-asserted-by": "crossref",
+      "first-page": "s13742",
+      "journal-title": "Gigascience",
+      "key": "793_CR8",
+      "unstructured": "Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:s13742–015.",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/17.6.520",
+      "author": "O Troyanskaya",
+      "doi-asserted-by": "crossref",
+      "first-page": "520",
+      "journal-title": "Bioinformatics",
+      "key": "793_CR9",
+      "unstructured": "Troyanskaya O, Cantor M, Sherlock G, Brown P, Hastie T, Tibshirani R, et al. Missing value estimation methods for DNA microarrays. Bioinformatics. 2001;17:520–5.",
+      "volume": "17",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.2307/2528823",
+      "author": "JC Gower",
+      "doi-asserted-by": "crossref",
+      "first-page": "857",
+      "journal-title": "Biometrics.",
+      "key": "793_CR10",
+      "unstructured": "Gower JC. A general coefficient of similarity and some of its properties. Biometrics. 1971;27:857.",
+      "volume": "27",
+      "year": "1971"
+    },
+    {
+      "key": "793_CR11",
+      "unstructured": "R Core Team. R: a language and environment for statistical computing. 2018, Vienna: R Foundation for Statistical Computing."
+    },
+    {
+      "key": "793_CR12",
+      "unstructured": "‘BBMRI.it’. https://www.bbmri.it/. Accessed Mar 2020."
+    },
+    {
+      "key": "793_CR13",
+      "unstructured": "‘EuroBioBank – EuroBioBank website’. http://www.eurobiobank.org/. Accessed Mar 2020."
+    },
+    {
+      "key": "793_CR14",
+      "unstructured": "‘Telethon Network of Genetic Biobanks’. http://biobanknetwork.telethon.it/. Accessed Mar 2020."
+    },
+    {
+      "key": "793_CR15",
+      "unstructured": "‘RD-Connect – RD-Connect website’. https://rd-connect.eu/. Accessed Mar 2020."
+    },
+    {
+      "DOI": "10.1038/s41431-020-0636-6",
+      "author": "COVID-19 Host Genetics Initiative.",
+      "doi-asserted-by": "publisher",
+      "first-page": "715",
+      "journal-title": "Eur J Hum Genet",
+      "key": "793_CR16",
+      "unstructured": "COVID-19 Host Genetics Initiative. The COVID-19 Host Genetics Initiative, a global initiative to elucidate the role of host genetic factors in susceptibility and severity of the SARS-CoV-2 virus pandemic. Eur J Hum Genet. 2020;28:715–8. https://doi.org/10.1038/s41431-020-0636-6.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S2213-2600(20)30117-X",
+      "author": "H Cai",
+      "doi-asserted-by": "crossref",
+      "first-page": "e20",
+      "journal-title": "Lancet Respir Med",
+      "key": "793_CR17",
+      "unstructured": "Cai H. Sex difference and smoking predisposition in patients with COVID-19. Lancet Respir Med. 2020;8.4:e20.",
+      "volume": "8.4",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.120.049252",
+      "doi-asserted-by": "publisher",
+      "key": "793_CR18",
+      "unstructured": "Knight DS, Kotecha T, Razvi Y, Chacko L, Brown JT, Jeetley PS, et al. COVID-19: myocardial injury in survivors. Circulation. 2020. https://doi.org/10.1161/CIRCULATIONAHA.120.049252."
+    },
+    {
+      "DOI": "10.1055/s-0040-1714053",
+      "doi-asserted-by": "publisher",
+      "key": "793_CR19",
+      "unstructured": "Waisse S, Oberbaum M, Frass M. The hydra-headed coronaviruses: implications of COVID-19 for Homeopathy. Homeopathy. 2020. https://doi.org/10.1055/s-0040-1714053."
+    },
+    {
+      "DOI": "10.15586/jptcp.v27iSP1.691",
+      "author": "R Massabeti",
+      "doi-asserted-by": "crossref",
+      "first-page": "e26",
+      "journal-title": "J Popul Ther Clin Pharmacol",
+      "key": "793_CR20",
+      "unstructured": "Massabeti R, Cipriani MS, Valenti I. Covid-19: a systemic disease treated with a wide-ranging approach: a case report. J Popul Ther Clin Pharmacol. 2020;27:e26–30.",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/jmv.26294",
+      "doi-asserted-by": "publisher",
+      "key": "793_CR21",
+      "unstructured": "Zheng KI, Feng G, Liu WY, Targher G, Byrne CD, Zheng MH. Extrapulmonary complications of COVID-19: a multisystem disease? J Med Virol. 2020. https://doi.org/10.1002/jmv.26294."
+    },
+    {
+      "DOI": "10.1172/JCI137244",
+      "author": "G Chen",
+      "doi-asserted-by": "crossref",
+      "first-page": "2620",
+      "journal-title": "J Clin Investig.",
+      "key": "793_CR22",
+      "unstructured": "Chen G, Wu D, Guo W, Cao Y, Huang D, Wang H, et al. Clinical and immunological features of severe and moderate coronavirus disease 2019. J Clin Investig. 2020;130:2620–9.",
+      "volume": "130",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/jth.14768",
+      "author": "N Tang",
+      "doi-asserted-by": "crossref",
+      "first-page": "844",
+      "journal-title": "J Thromb Haemost",
+      "key": "793_CR23",
+      "unstructured": "Tang N, Li D, Wang X, Sun Z. Abnormal coagulation parameters are associated with poor prognosis in patients with novel coronavirus pneumonia. J Thromb Haemost. 2020;18:844–7.",
+      "volume": "18",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2020.03.055",
+      "author": "F Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "367",
+      "journal-title": "Gastroenterology.",
+      "key": "793_CR24",
+      "unstructured": "Wang F, Wang H, Fan J, Zhang Y, Wang H, Zhao Q. Pancreatic injury patterns in patients with COVID-19 pneumonia. Gastroenterology. 2020;159:367–70. https://doi.org/10.1053/j.gastro.2020.03.055.",
+      "volume": "159",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2020.05.086",
+      "doi-asserted-by": "publisher",
+      "key": "793_CR25",
+      "unstructured": "Ashok A, Faghih M, Singh VK. Mild Pancreatic enzyme elevations in COVID-19 pneumonia: synonymous with injury or noise? Gastroenterology. 2020, S0016-5085:34778-8. https://doi.org/10.1053/j.gastro.2020.05.086."
+    },
+    {
+      "DOI": "10.1053/j.gastro.2020.05.069",
+      "author": "P Szatmary",
+      "doi-asserted-by": "publisher",
+      "first-page": "1551",
+      "journal-title": "Gastroenterology.",
+      "key": "793_CR26",
+      "unstructured": "Szatmary P, Arora A, Raraty MGT, Dunne DFJ, Baron RD, Halloran CM. Emerging phenotype of SARS-CoV2 associated pancreatitis. Gastroenterology. 2020;159:1551–4. https://doi.org/10.1053/j.gastro.2020.05.069.",
+      "volume": "159",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S2213-2600(20)30076-X",
+      "author": "Z Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "420",
+      "journal-title": "Lancet Respir Med.",
+      "key": "793_CR27",
+      "unstructured": "Xu Z, Shi L, Wang Y, Zhang J, Huang L, Zhang C, et al. Pathological findings of COVID‐19 associated with acute respiratory distress syndrome. Lancet Respir Med. 2020;8:420–2. https://doi.org/10.1016/S2213-2600(20)30076-X.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41569-020-0360-5",
+      "author": "YY Zheng",
+      "doi-asserted-by": "crossref",
+      "first-page": "259",
+      "journal-title": "Nat Rev Cardiol",
+      "key": "793_CR28",
+      "unstructured": "Zheng YY, Ma YT, Zhang JY, Xie X. COVID‐19 and the cardiovascular system. Nat Rev Cardiol. 2020;17:259–60.",
+      "volume": "17",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fmed.2020.00347",
+      "author": "S Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "347",
+      "journal-title": "Front Med",
+      "key": "793_CR29",
+      "unstructured": "Jiang S, Wang R, Li L, Hong D, Ru R, Rao Y, et al. Liver injury in critically ill and non-critically ill COVID-19 patients: a Multicenter, Retrospective, Observational Study. Front Med. 2020;7:347. https://doi.org/10.3389/fmed.2020.00347.",
+      "volume": "7",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.14218/JCTH.2020.00018",
+      "author": "G Feng",
+      "doi-asserted-by": "publisher",
+      "first-page": "18",
+      "journal-title": "J Clin Transl Hepatol",
+      "key": "793_CR30",
+      "unstructured": "Feng G, Zheng KI, Yan QQ, Rios RS, Targher G, Byrne CD, et al. COVID-19 and liver dysfunction: current insights and emergent therapeutic strategies. J Clin Transl Hepatol. 2020;8:18–24. https://doi.org/10.14218/JCTH.2020.00018.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1021/acschemneuro.0c00460",
+      "author": "CS Von Bartheld",
+      "doi-asserted-by": "publisher",
+      "first-page": "2944",
+      "journal-title": "ACS Chem Neurosci",
+      "key": "793_CR31",
+      "unstructured": "Von Bartheld CS, Hagen MM, Butowt R. Prevalence of chemosensory dysfunction in COVID-19 patients: a systematic review and meta-analysis reveals significant ethnic differences. ACS Chem Neurosci. 2020;11:2944–61. https://doi.org/10.1021/acschemneuro.0c00460.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cmi.2020.04.040",
+      "author": "GU Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "948.e1",
+      "journal-title": "Clin Microbiol Infect",
+      "key": "793_CR32",
+      "unstructured": "Kim GU, Kim MJ, Ra SH, Lee J, Bae S, Hung J, et al. Clinical characteristics of asymptomatic and symptomatic patients with mild COVID-19. Clin Microbiol Infect. 2020;26:948.e1–3. https://doi.org/10.1016/j.cmi.2020.04.040.",
+      "volume": "26",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nrg.2017.52",
+      "author": "K Eilbeck",
+      "doi-asserted-by": "publisher",
+      "first-page": "599",
+      "journal-title": "Nat Rev Genet",
+      "key": "793_CR33",
+      "unstructured": "Eilbeck K, Quinlan A, Yandell M. Settling the score: variant prioritization and Mendelian disease. Nat Rev Genet. 2017;18:599–612. https://doi.org/10.1038/nrg.2017.52.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nmeth.3440",
+      "author": "P Creixell",
+      "doi-asserted-by": "publisher",
+      "first-page": "615",
+      "journal-title": "Nat Methods",
+      "key": "793_CR34",
+      "unstructured": "Creixell P, Reimand J, Haider S, Wu G, Shibata T, Vazquez M, et al. Pathway and network analysis of cancer genomes. Nat Methods. 2015;12:615–21. https://doi.org/10.1038/nmeth.3440.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nrg.2017.38",
+      "author": "L Cowen",
+      "doi-asserted-by": "publisher",
+      "first-page": "551",
+      "journal-title": "Nat Rev Genet",
+      "key": "793_CR35",
+      "unstructured": "Cowen L, Ideker T, Raphael BJ, Sharan R. Network propagation: a universal amplifier of genetic associations. Nat Rev Genet. 2017;18:551–62. https://doi.org/10.1038/nrg.2017.38.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s42256-020-0180-7",
+      "author": "L Yan",
+      "doi-asserted-by": "publisher",
+      "first-page": "283",
+      "journal-title": "Nat Mach Intell",
+      "key": "793_CR36",
+      "unstructured": "Yan L, Zhang H-T, Goncalves J, Xiao Y, Wang M, Guo Y, et al. An interpretable mortality prediction model for COVID-19 patients. Nat Mach Intell. 2020;2:283–8. https://doi.org/10.1038/s42256-020-0180-7.",
+      "volume": "2",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13929-1",
+      "author": "S Shuai",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "793_CR37",
+      "unstructured": "Shuai S, PCAWG Drivers and Functional Interpretation Working Group, Steven G, Lincoln S, PCAWG Consortium. Combined burden and functional impact tests for cancer driver discovery using DriverPower. Nat Commun. 2020;11:734. https://doi.org/10.1038/s41467-019-13929-1.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.1083",
+      "author": "CA Albers",
+      "doi-asserted-by": "publisher",
+      "first-page": "435",
+      "journal-title": "Nat Genet",
+      "key": "793_CR38",
+      "unstructured": "Albers CA, Paul DS, Schulze H, Freson K, Stephens JC, Smethurst PA, et al. Compound inheritance of a low-frequency regulatory SNP and a rare null mutation in exon-junction complex subunit RBM8A causes TAR syndrome. Nat Genet. 2012;44:435–S2. https://doi.org/10.1038/ng.1083.",
+      "volume": "44",
+      "year": "2012"
+    }
+  ],
+  "reference-count": 38,
+  "references-count": 38,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2020.07.24.20161307",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-020-00793-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Employing a systematic approach to biobanking and analyzing clinical and genetic data for advancing COVID-19 research"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "29"
+}

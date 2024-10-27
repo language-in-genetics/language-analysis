@@ -1,0 +1,3904 @@
+{
+  "DOI": "10.1186/s40246-022-00429-5",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00429-5",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eFollowing the draft sequence of the first human genome over 20 years ago, we have achieved unprecedented insights into the rules governing its evolution, often with direct translational relevance to specific diseases. However, staggering sequence complexity has also challenged the development of a more comprehensive understanding of human genome biology. In this context, interspecific genomic studies between humans and other animals have played a critical role in our efforts to decode human gene families. In this review, we focus on how the rapid surge of genome sequencing of both model and non-model organisms now provides a broader comparative framework poised to empower novel discoveries. We begin with a general overview of how comparative approaches are essential for understanding gene family evolution in the human genome, followed by a discussion of analyses of gene expression. We show how homology can provide insights into the genes and gene families associated with immune response, cancer biology, vision, chemosensation, and metabolism, by revealing similarity in processes among distant species. We then explain methodological tools that provide critical advances and show the limitations of common approaches. We conclude with a discussion of how these investigations position us to gain fundamental insights into the evolution of gene families among living organisms in general. We hope that our review catalyzes additional excitement and research on the emerging field of comparative genomics, while aiding the placement of the human genome into its existentially evolutionary context.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "429"
+  ],
+  "article-number": "56",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "28 July 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "12 October 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "11 November 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Dornburg",
+      "given": "Alex",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Mallik",
+      "given": "Rittika",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Zheng",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bernal",
+      "given": "Moisés A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thompson",
+      "given": "Brian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bruford",
+      "given": "Elspeth A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nebert",
+      "given": "Daniel W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vasiliou",
+      "given": "Vasilis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yohe",
+      "given": "Laurel R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yoder",
+      "given": "Jeffrey A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Townsend",
+      "given": "Jeffrey P.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        11
+      ]
+    ],
+    "date-time": "2022-11-11T19:03:27Z",
+    "timestamp": 1668193407000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        30
+      ]
+    ],
+    "date-time": "2023-11-30T17:55:59Z",
+    "timestamp": 1701366959000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "IOS-1755242",
+        "IOS-1755330",
+        "IOS-1916137"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    },
+    {
+      "DOI": "10.13039/100010269",
+      "award": [
+        "208349/Z/17/Z"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Wellcome Trust"
+    },
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "U24HG003345"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "P30ES006096",
+        "P42ES033815-01"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "award": [
+        "DEB-2032073"
+      ],
+      "name": "NSF"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        5
+      ]
+    ],
+    "date-time": "2024-03-05T23:20:53Z",
+    "timestamp": 1709680853893
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        11
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            11
+          ]
+        ],
+        "date-time": "2022-11-11T00:00:00Z",
+        "timestamp": 1668124800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            11
+          ]
+        ],
+        "date-time": "2022-11-11T00:00:00Z",
+        "timestamp": 1668124800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00429-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00429-5/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00429-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        11
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        11
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1007/s00251-010-0506-4",
+      "author": "JA Yoder",
+      "doi-asserted-by": "publisher",
+      "first-page": "123",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR1",
+      "unstructured": "Yoder JA, Litman GW. The phylogenetic origins of natural killer receptors and recognition: relationships, possibilities, and realities. Immunogenetics. 2011;63:123–41.",
+      "volume": "63",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.it.2004.10.001",
+      "author": "MF Flajnik",
+      "doi-asserted-by": "publisher",
+      "first-page": "640",
+      "journal-title": "Trends Immunol",
+      "key": "429_CR2",
+      "unstructured": "Flajnik MF, Du Pasquier L. Evolution of innate and adaptive immunity: can we draw a line? Trends Immunol. 2004;25:640–4.",
+      "volume": "25",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1073/pnas.1617722114",
+      "author": "MG Tassia",
+      "doi-asserted-by": "publisher",
+      "first-page": "7055",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR3",
+      "unstructured": "Tassia MG, Whelan NV, Halanych KM. Toll-like receptor pathway evolution in deuterostomes. Proc Natl Acad Sci USA. 2017;114:7055–60.",
+      "volume": "114",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12862-015-0309-1",
+      "author": "U Grimholt",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "journal-title": "BMC Evol Biol",
+      "key": "429_CR4",
+      "unstructured": "Grimholt U, Tsukamoto K, Azuma T, Leong J, Koop BF, Dijkstra JM. A comprehensive analysis of teleost MHC class I sequences. BMC Evol Biol. 2015;15:32.",
+      "volume": "15",
+      "year": "2015"
+    },
+    {
+      "author": "M Schartl",
+      "first-page": "181",
+      "journal-title": "Dis Model Mech",
+      "key": "429_CR5",
+      "unstructured": "Schartl M. Beyond the zebrafish: diverse fish species for modeling human disease. Dis Model Mech. 2014;7:181–92.",
+      "volume": "7",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/978-1-4939-8736-8_3",
+      "author": "LR Yohe",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "journal-title": "Methods Mol Biol",
+      "key": "429_CR6",
+      "unstructured": "Yohe LR, Liu L, Dávalos LM, Liberles DA. Protocols for the molecular evolutionary analysis of membrane protein gene duplicates. Methods Mol Biol. 2019;1851:49–62.",
+      "volume": "1851",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1073/pnas.0409186102",
+      "author": "X Gu",
+      "doi-asserted-by": "publisher",
+      "first-page": "707",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR7",
+      "unstructured": "Gu X, Zhang Z, Huang W. Rapid evolution of expression and regulatory divergences after yeast gene duplication. Proc Natl Acad Sci USA. 2005;102:707–12.",
+      "volume": "102",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006867",
+      "author": "F Trail",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1006867",
+      "journal-title": "PLoS Genet",
+      "key": "429_CR8",
+      "unstructured": "Trail F, Wang Z, Stefanko K, Cubba C, Townsend JP. The ancestral levels of transcription and the evolution of sexual phenotypes in filamentous fungi. PLoS Genet. 2017;13:e1006867.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/j.1365-294X.2006.02868.x",
+      "author": "A Whitehead",
+      "doi-asserted-by": "publisher",
+      "first-page": "1197",
+      "journal-title": "Mol Ecol",
+      "key": "429_CR9",
+      "unstructured": "Whitehead A, Crawford DL. Variation within and among species in gene expression: raw material for evolution. Mol Ecol. 2006;15:1197–211.",
+      "volume": "15",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/molbev/mst190",
+      "author": "RV Rohlfs",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR10",
+      "unstructured": "Rohlfs RV, Harrigan P, Nielsen R. Modeling gene expression evolution with an extended ornstein-uhlenbeck process accounting for within-species variation. Mol Biol Evol. 2014. https://doi.org/10.1093/molbev/mst190.",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1073/pnas.1605886113",
+      "author": "DW Loehlin",
+      "doi-asserted-by": "publisher",
+      "first-page": "5988",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR11",
+      "unstructured": "Loehlin DW, Carroll SB. Expression of tandem gene duplicates is often greater than twofold. Proc Natl Acad Sci USA. 2016;113:5988–92.",
+      "volume": "113",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/sysbio/syv042",
+      "author": "RV Rohlfs",
+      "doi-asserted-by": "publisher",
+      "first-page": "695",
+      "journal-title": "Syst Biol",
+      "key": "429_CR12",
+      "unstructured": "Rohlfs RV, Nielsen R. Phylogenetic ANOVA: the expression variance and evolution model for quantitative trait evolution. Syst Biol. 2015;64:695–708.",
+      "volume": "64",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.fbr.2018.02.001",
+      "author": "Z Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "249",
+      "journal-title": "Fungal Biol Rev",
+      "key": "429_CR13",
+      "unstructured": "Wang Z, Gudibanda A, Ugwuowo U, Trail F, Townsend JP. Using evolutionary genomics, transcriptomics, and systems biology to reveal gene networks underlying fungal development. Fungal Biol Rev. 2018;32:249–64.",
+      "volume": "32",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/molbev/msv094",
+      "author": "A Hodgins-Davis",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR14",
+      "unstructured": "Hodgins-Davis A, Rice DP, Townsend JP. Gene expression evolves under a house-of-cards model of stabilizing selection. Mol Biol Evol. 2015. https://doi.org/10.1093/molbev/msv094.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1111/j.0014-3820.2005.tb00900.x",
+      "author": "B Lemos",
+      "doi-asserted-by": "publisher",
+      "first-page": "126",
+      "journal-title": "Evolution",
+      "key": "429_CR15",
+      "unstructured": "Lemos B, Meiklejohn CD, Cáceres M, Hartl DL. Rates of divergence in gene expression profiles of primates, mice, and flies: stabilizing selection and variability among functional categories. Evolution. 2005;59:126–37.",
+      "volume": "59",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/molbev/msw011",
+      "author": "BPH Metzger",
+      "doi-asserted-by": "publisher",
+      "first-page": "1131",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR16",
+      "unstructured": "Metzger BPH, Duveau F, Yuan DC, Tryban S, Yang B, Wittkopp PJ. Contrasting frequencies and effects of cis- and trans-regulatory mutations affecting gene expression. Mol Biol Evol. 2016;33:1131–46.",
+      "volume": "33",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1073/pnas.0812009106",
+      "author": "T Bedford",
+      "doi-asserted-by": "publisher",
+      "first-page": "1133",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR17",
+      "unstructured": "Bedford T, Hartl DL. Optimization of gene expression by natural selection. Proc Natl Acad Sci USA. 2009;106:1133–8.",
+      "volume": "106",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nrg3095",
+      "author": "PJ Wittkopp",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "journal-title": "Nat Rev Genet",
+      "key": "429_CR18",
+      "unstructured": "Wittkopp PJ, Kalay G. Cis-regulatory elements: molecular mechanisms and evolutionary processes underlying divergence. Nat Rev Genet. 2011;13:59–69.",
+      "volume": "13",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1111/evo.12372",
+      "author": "P Labbé",
+      "doi-asserted-by": "publisher",
+      "first-page": "2092",
+      "journal-title": "Evolution",
+      "key": "429_CR19",
+      "unstructured": "Labbé P, Milesi P, Yébakima A, Pasteur N, Weill M, Lenormand T. GENE-dosage effects on fitness in recent adaptive duplications: ace-1 in the mosquito Culex pipiens. Evolution. 2014;68:2092–101.",
+      "volume": "68",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/jfb.12824",
+      "author": "JA Nelson",
+      "doi-asserted-by": "publisher",
+      "first-page": "10",
+      "journal-title": "J Fish Biol",
+      "key": "429_CR20",
+      "unstructured": "Nelson JA. Oxygen consumption rate v. rate of energy utilization of fishes: a comparison and brief history of the two measurements. J Fish Biol. 2016;88:10–25.",
+      "volume": "88",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1242/jeb.134585",
+      "author": "H-O Pörtner",
+      "doi-asserted-by": "publisher",
+      "first-page": "2685",
+      "journal-title": "J Exp Biol",
+      "key": "429_CR21",
+      "unstructured": "Pörtner H-O, Bock C, Mark FC. Oxygen- and capacity-limited thermal tolerance: bridging ecology and physiology. J Exp Biol. 2017;220:2685–96.",
+      "volume": "220",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/mec.14884",
+      "author": "MA Bernal",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Ecol",
+      "key": "429_CR22",
+      "unstructured": "Bernal MA, Donelson JM, Veilleux HD, Ryu T, Munday PL, Ravasi T. Phenotypic and molecular consequences of stepwise temperature increase across generations in a coral reef fish. Mol Ecol. 2018. https://doi.org/10.1111/mec.14884.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1126/sciadv.aay3423",
+      "author": "MA Bernal",
+      "doi-asserted-by": "publisher",
+      "first-page": "eaay3423",
+      "journal-title": "Sci Adv",
+      "key": "429_CR23",
+      "unstructured": "Bernal MA, Schunter C, Lehmann R, Lightfoot DJ, Allan BJM, Veilleux HD, et al. Species-specific molecular responses of wild coral reef fishes during a marine heatwave. Sci Adv. 2020;6:eaay3423.",
+      "volume": "6",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/eva.13337",
+      "author": "MA Bernal",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Evol Appl",
+      "key": "429_CR24",
+      "unstructured": "Bernal MA, Ravasi T, Rodgers GG, Munday PL, Donelson JM. Plasticity to ocean warming is influenced by transgenerational, reproductive, and developmental exposure in a coral reef fish. Evol Appl. 2022. https://doi.org/10.1111/eva.13337.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.omtm.2018.01.007",
+      "author": "A Alrafiah",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Ther Methods Clin Dev",
+      "key": "429_CR25",
+      "unstructured": "Alrafiah A, Karyka E, Coldicott I, Iremonger K, Lewis KE, Ning K, et al. Plastin 3 promotes motor neuron axonal growth and extends survival in a mouse model of spinal muscular atrophy. Mol Ther Methods Clin Dev. 2018. https://doi.org/10.1016/j.omtm.2018.01.007.",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fmars.2022.784418",
+      "author": "MA Bernal",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Mar Sci",
+      "key": "429_CR26",
+      "unstructured": "Bernal MA, Schmidt E, Donelson JM, Munday PL, Ravasi T. Molecular response of the brain to cross-generational warming in a coral reef fish. Front Mar Sci. 2022. https://doi.org/10.3389/fmars.2022.784418.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1111/jeb.13981",
+      "author": "LJ Buckingham",
+      "doi-asserted-by": "publisher",
+      "first-page": "205",
+      "journal-title": "J Evol Biol",
+      "key": "429_CR27",
+      "unstructured": "Buckingham LJ, Ashby B. Coevolutionary theory of hosts and parasites. J Evol Biol. 2022;35:205–24.",
+      "volume": "35",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1111/j.1365-2567.2009.03208.x",
+      "author": "D Middleton",
+      "doi-asserted-by": "publisher",
+      "first-page": "8",
+      "journal-title": "Immunology",
+      "key": "429_CR28",
+      "unstructured": "Middleton D, Gonzelez F. The extensive polymorphism of KIR genes. Immunology. 2010;129:8–19.",
+      "volume": "129",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1111/imr.12314",
+      "author": "J Trowsdale",
+      "doi-asserted-by": "publisher",
+      "first-page": "117",
+      "journal-title": "Immunol Rev",
+      "key": "429_CR29",
+      "unstructured": "Trowsdale J, Jones DC, Barrow AD, Traherne JA. Surveillance of cell and tissue perturbation by receptors in the LRC. Immunol Rev. 2015;267:117–36.",
+      "volume": "267",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pbio.1001208",
+      "author": "K Pelak",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Biol",
+      "key": "429_CR30",
+      "unstructured": "Pelak K, Need AC, Fellay J, Shianna KV, Feng S, Urban TJ, et al. Copy number variation of KIR genes influences HIV-1 control. PLoS Biol. 2011;9: e1001208.",
+      "volume": "9",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/s41423-020-0482-z",
+      "author": "S Tukwasibwe",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cell Mol Immunol",
+      "key": "429_CR31",
+      "unstructured": "Tukwasibwe S, Nakimuli A, Traherne J, Chazara O, Jayaraman J, Trowsdale J, et al. Variations in killer-cell immunoglobulin-like receptor and human leukocyte antigen genes and immunity to malaria. Cell Mol Immunol. 2020. https://doi.org/10.1038/s41423-020-0482-z.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1515/bmc-2019-0024",
+      "author": "PA Sorgho",
+      "doi-asserted-by": "publisher",
+      "first-page": "226",
+      "journal-title": "Biomol Concepts",
+      "key": "429_CR32",
+      "unstructured": "Sorgho PA, Djigma FW, Martinson JJ, Yonli AT, Nagalo BM, Compaore TR, et al. Role of Killer cell immunoglobulin-like receptors (KIR) genes in stages of HIV-1 infection among patients from Burkina Faso. Biomol Concepts. 2019;10:226–36.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.clim.2020.108449",
+      "author": "S Agrawal",
+      "doi-asserted-by": "publisher",
+      "first-page": "108449",
+      "journal-title": "Clin Immunol",
+      "key": "429_CR33",
+      "unstructured": "Agrawal S, Prakash S. Significance of KIR like natural killer cell receptors in autoimmune disorders. Clin Immunol. 2020;216:108449.",
+      "volume": "216",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.humimm.2020.03.004",
+      "author": "M Mansouri",
+      "doi-asserted-by": "publisher",
+      "first-page": "285",
+      "journal-title": "Hum Immunol",
+      "key": "429_CR34",
+      "unstructured": "Mansouri M, Villard J, Ramzi M, Alavianmehr A, Farjadian S. Impact of donor KIRs and recipient KIR/HLA class I combinations on GVHD in patients with acute leukemia after HLA-matched sibling HSCT. Hum Immunol. 2020;81:285–92.",
+      "volume": "81",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/imr.12318",
+      "author": "MMA Rahim",
+      "doi-asserted-by": "publisher",
+      "first-page": "137",
+      "journal-title": "Immunol Rev",
+      "key": "429_CR35",
+      "unstructured": "Rahim MMA, Makrigiannis AP. Ly49 receptors: evolution, genetic diversity, and impact on immunity. Immunol Rev. 2015;267:137–47.",
+      "volume": "267",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng0501-42",
+      "author": "SH Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "42",
+      "journal-title": "Nat Genet",
+      "key": "429_CR36",
+      "unstructured": "Lee SH, Girard S, Macina D, Busà M, Zafer A, Belouchi A, et al. Susceptibility to mouse cytomegalovirus is associated with deletion of an activating natural killer cell receptor of the C-type lectin superfamily. Nat Genet. 2001;28:42–5.",
+      "volume": "28",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1098/rstb.2011.0266",
+      "author": "P Parham",
+      "doi-asserted-by": "publisher",
+      "first-page": "800",
+      "journal-title": "Philos Trans R Soc Lond B Biol Sci",
+      "key": "429_CR37",
+      "unstructured": "Parham P, Norman PJ, Abi-Rached L, Guethlein LA. Human-specific evolution of killer cell immunoglobulin-like receptor recognition of major histocompatibility complex class I molecules. Philos Trans R Soc Lond B Biol Sci. 2012;367:800–11.",
+      "volume": "367",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/gbe/evz102",
+      "author": "SV Guselnikov",
+      "doi-asserted-by": "publisher",
+      "first-page": "1586",
+      "journal-title": "Genome Biol Evol",
+      "key": "429_CR38",
+      "unstructured": "Guselnikov SV, Taranin AV. Unraveling the LRC evolution in mammals: IGSF1 and A1BG provide the keys. Genome Biol Evol. 2019;11:1586–601.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0064736",
+      "author": "J Futas",
+      "doi-asserted-by": "publisher",
+      "first-page": "e64736",
+      "journal-title": "PLoS ONE",
+      "key": "429_CR39",
+      "unstructured": "Futas J, Horin P. Natural killer cell receptor genes in the family equidae: not only Ly49. PLoS ONE. 2013;8:e64736.",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.4049/jimmunol.1401980",
+      "author": "ND Sanderson",
+      "doi-asserted-by": "publisher",
+      "first-page": "6016",
+      "journal-title": "J Immunol",
+      "key": "429_CR40",
+      "unstructured": "Sanderson ND, Norman PJ, Guethlein LA, Ellis SA, Williams C, Breen M, et al. Definition of the cattle killer cell Ig-like receptor gene family: comparison with aurochs and human counterparts. J Immunol. 2014;193:6016–30.",
+      "volume": "193",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/j.1600-065X.2008.00653.x",
+      "author": "AD Barrow",
+      "doi-asserted-by": "publisher",
+      "first-page": "98",
+      "journal-title": "Immunol Rev",
+      "key": "429_CR41",
+      "unstructured": "Barrow AD, Trowsdale J. The extended human leukocyte receptor complex: diverse ways of modulating immune responses. Immunol Rev. 2008;224:98–123.",
+      "volume": "224",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/S1471-4906(01)02155-X",
+      "author": "AM Martin",
+      "doi-asserted-by": "publisher",
+      "first-page": "81",
+      "journal-title": "Trends Immunol",
+      "key": "429_CR42",
+      "unstructured": "Martin AM, Kulski JK, Witt C, Pontarotti P, Christiansen FT. Leukocyte Ig-like receptor complex (LRC) in mice and men. Trends Immunol. 2002;23:81–8.",
+      "volume": "23",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.3389/fimmu.2016.00281",
+      "author": "LE Hudson",
+      "doi-asserted-by": "publisher",
+      "first-page": "281",
+      "journal-title": "Front Immunol",
+      "key": "429_CR43",
+      "unstructured": "Hudson LE, Allen RL. Leukocyte Ig-like receptors: a model for MHC class I disease associations. Front Immunol. 2016;7:281.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0034291",
+      "author": "L Hogan",
+      "doi-asserted-by": "publisher",
+      "first-page": "e34291",
+      "journal-title": "PLoS ONE",
+      "key": "429_CR44",
+      "unstructured": "Hogan L, Bhuju S, Jones DC, Laing K, Trowsdale J, Butcher P, et al. Characterisation of bovine leukocyte Ig-like receptors. PLoS ONE. 2012;7:e34291.",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1111/j.1365-2567.2005.02177.x",
+      "author": "T Takai",
+      "doi-asserted-by": "publisher",
+      "first-page": "433",
+      "journal-title": "Immunology",
+      "key": "429_CR45",
+      "unstructured": "Takai T. Paired immunoglobulin-like receptors and their MHC class I recognition. Immunology. 2005;115:433–40.",
+      "volume": "115",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1034/j.1399-0039.2003.00042.x",
+      "author": "T Tun",
+      "doi-asserted-by": "publisher",
+      "first-page": "220",
+      "journal-title": "Tissue Antigens",
+      "key": "429_CR46",
+      "unstructured": "Tun T, Kubagawa Y, Dennis G, Burrows PD, Cooper MD, Kubagawa H. Genomic structure of mouse PIR-A6, an activating member of the paired immunoglobulin-like receptor gene family. Tissue Antigens. 2003;61:220–30.",
+      "volume": "61",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1007/s00251-018-1067-1",
+      "author": "JC Schwartz",
+      "doi-asserted-by": "publisher",
+      "first-page": "661",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR47",
+      "unstructured": "Schwartz JC, Hammond JA. The unique evolution of the pig LRC, a single KIR but expansion of LILR and a novel Ig receptor family. Immunogenetics. 2018;70:661–9.",
+      "volume": "70",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fimmu.2013.00090",
+      "author": "AR Schenkel",
+      "doi-asserted-by": "publisher",
+      "first-page": "90",
+      "journal-title": "Front Immunol",
+      "key": "429_CR48",
+      "unstructured": "Schenkel AR, Kingry LC, Slayden RA. The ly49 gene family: a brief guide to the nomenclature, genetics, and role in intracellular infection. Front Immunol. 2013;4:90.",
+      "volume": "4",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.4049/jimmunol.0803026",
+      "author": "JA Hammond",
+      "doi-asserted-by": "publisher",
+      "first-page": "3618",
+      "journal-title": "J Immunol",
+      "key": "429_CR49",
+      "unstructured": "Hammond JA, Guethlein LA, Abi-Rached L, Moesta AK, Parham P. Evolution and survival of marine carnivores did not require a diversity of killer cell Ig-like receptors or Ly49 NK cell receptors. J Immunol. 2009;182:3618–27.",
+      "volume": "182",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.4049/jimmunol.158.1.9",
+      "author": "S Rojo",
+      "doi-asserted-by": "crossref",
+      "first-page": "9",
+      "journal-title": "J Immunol",
+      "key": "429_CR50",
+      "unstructured": "Rojo S, Burshtyn DN, Long EO, Wagtmann N. Type I transmembrane receptor with inhibitory function in mouse mast cells and NK cells. J Immunol. 1997;158:9–12.",
+      "volume": "158",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.4049/jimmunol.158.1.13",
+      "author": "LL Wang",
+      "doi-asserted-by": "crossref",
+      "first-page": "13",
+      "journal-title": "J Immunol",
+      "key": "429_CR51",
+      "unstructured": "Wang LL, Mehta IK, LeBlanc PA, Yokoyama WM. Mouse natural killer cells express gp49B1, a structural homologue of human killer inhibitory receptors. J Immunol. 1997;158:13–7.",
+      "volume": "158",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1016/S0145-305X(01)00056-8",
+      "author": "L Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "141",
+      "journal-title": "Dev Comp Immunol",
+      "key": "429_CR52",
+      "unstructured": "Shen L, Stuge TB, Zhou H, Khayat M, Barker KS, Quiniou SMA, et al. Channel catfish cytotoxic cells: a mini-review. Dev Comp Immunol. 2002;26:141–9.",
+      "volume": "26",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.fsi.2013.04.018",
+      "author": "U Fischer",
+      "doi-asserted-by": "publisher",
+      "first-page": "197",
+      "journal-title": "Fish Shellfish Immunol",
+      "key": "429_CR53",
+      "unstructured": "Fischer U, Koppang EO, Nakanishi T. Teleost T and NK cell immunity. Fish Shellfish Immunol. 2013;35:197–206.",
+      "volume": "35",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1034/j.1600-065X.2001.1810121.x",
+      "author": "GW Litman",
+      "doi-asserted-by": "publisher",
+      "first-page": "250",
+      "journal-title": "Immunol Rev",
+      "key": "429_CR54",
+      "unstructured": "Litman GW, Hawke NA, Yoder JA. Novel immune-type receptor genes. Immunol Rev. 2001;181:250–9.",
+      "volume": "181",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1016/j.dci.2008.09.004",
+      "author": "JA Yoder",
+      "doi-asserted-by": "publisher",
+      "first-page": "135",
+      "journal-title": "Dev Comp Immunol",
+      "key": "429_CR55",
+      "unstructured": "Yoder JA. Form, function and phylogenetics of NITRs in bony fish. Dev Comp Immunol. 2009;33:135–44.",
+      "volume": "33",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.immuni.2008.05.018",
+      "author": "JP Cannon",
+      "doi-asserted-by": "publisher",
+      "first-page": "228",
+      "journal-title": "Immunity",
+      "key": "429_CR56",
+      "unstructured": "Cannon JP, Haire RN, Magis AT, Eason DD, Winfrey KN, Hernandez Prada JA, et al. A bony fish immunological receptor of the NITR multigene family mediates allogeneic recognition. Immunity. 2008;29:228–37.",
+      "volume": "29",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1007/s00251-007-0250-6",
+      "author": "S Wei",
+      "doi-asserted-by": "publisher",
+      "first-page": "813",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR57",
+      "unstructured": "Wei S, Zhou J-M, Chen X, Shah RN, Liu J, Orcutt TM, et al. The zebrafish activating immune receptor Nitr9 signals via Dap12. Immunogenetics. 2007;59:813–21.",
+      "volume": "59",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-812431-4.00019-1",
+      "author": "D Traver",
+      "doi-asserted-by": "publisher",
+      "first-page": "191",
+      "key": "429_CR58",
+      "unstructured": "Traver D, Yoder JA. Chapter 19: immunology. In: Cartner SC, Eisen JS, Farmer SC, Guillemin KJ, Kent ML, Sanders GE, editors. The zebrafish in biomedical research. Academic Press; 2020. p. 191–216.",
+      "volume-title": "The zebrafish in biomedical research",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/2021.06.11.448072",
+      "doi-asserted-by": "publisher",
+      "key": "429_CR59",
+      "unstructured": "Dornburg A, Wcisel DJ, Zapfe K, Ferraro E, Roupe-Abrams L, Thompson AW, et al. Holosteans contextualize the role of the teleost genome duplication in promoting the rise of evolutionary novelties in the ray-finned fish innate immune system. https://doi.org/10.1101/2021.06.11.448072"
+    },
+    {
+      "DOI": "10.1038/ng.3526",
+      "author": "I Braasch",
+      "doi-asserted-by": "publisher",
+      "first-page": "427",
+      "journal-title": "Nat Genet",
+      "key": "429_CR60",
+      "unstructured": "Braasch I, Gehrke AR, Smith JJ, Kawasaki K, Manousaki T, Pasquier J, et al. The spotted gar genome illuminates vertebrate evolution and facilitates human-teleost comparisons. Nat Genet. 2016;48:427–37.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.21203/rs.3.rs-92055/v1",
+      "doi-asserted-by": "publisher",
+      "key": "429_CR61",
+      "unstructured": "Thompson A, Hawkins M, Parey E, Wcisel D, Ota T, Kawasaki K, et al. The genome of the bowfin (Amia calva) illuminates the developmental evolution of ray-finned fishes. https://doi.org/10.21203/rs.3.rs-92055/v1"
+    },
+    {
+      "DOI": "10.1002/jez.b.22738",
+      "author": "DJ Wcisel",
+      "doi-asserted-by": "publisher",
+      "first-page": "666",
+      "journal-title": "J Exp Zool B Mol Dev Evol",
+      "key": "429_CR62",
+      "unstructured": "Wcisel DJ, Ota T, Litman GW, Yoder JA. Spotted gar and the evolution of innate immune receptors. J Exp Zool B Mol Dev Evol. 2017;328:666–84.",
+      "volume": "328",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.fsi.2016.03.034",
+      "author": "DJ Wcisel",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Fish Shellfish Immunol",
+      "key": "429_CR63",
+      "unstructured": "Wcisel DJ, Yoder JA. The confounding complexity of innate immune receptors within and between teleost species. Fish Shellfish Immunol. 2016;53:24–34.",
+      "volume": "53",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.dci.2014.02.004",
+      "author": "I Rodríguez-Nunez",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Dev Comp Immunol",
+      "key": "429_CR64",
+      "unstructured": "Rodríguez-Nunez I, Wcisel DJ, Litman GW, Yoder JA. Multigene families of immunoglobulin domain-containing innate immune receptors in zebrafish: deciphering the differences. Dev Comp Immunol. 2014;46:24–34.",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1101/2022.04.21.489081.abstract",
+      "doi-asserted-by": "publisher",
+      "key": "429_CR65",
+      "unstructured": "Wcisel DJ, Dornburg A, McConnell SC, Hernandez KM, Andrade J, de Jong JLO, et al. A highly diverse set of novel immunoglobulin-like transcript (NILT) genes in zebrafish indicates a wide range of functions with complex relationships to mammalian receptors. Cold Spring Harbor Laboratory; 2022; https://doi.org/10.1101/2022.04.21.489081.abstract"
+    },
+    {
+      "DOI": "10.1016/s0092-8674(00)81683-9",
+      "author": "D Hanahan",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cell",
+      "key": "429_CR66",
+      "unstructured": "Hanahan D, Weinberg RA. The hallmarks of cancer. Cell. 2000. https://doi.org/10.1016/s0092-8674(00)81683-9.",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1016/j.cell.2011.02.013",
+      "author": "D Hanahan",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cell",
+      "key": "429_CR67",
+      "unstructured": "Hanahan D, Weinberg RA. Hallmarks of cancer: the next generation. Cell. 2011. https://doi.org/10.1016/j.cell.2011.02.013.",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.12688/f1000research.12682.1",
+      "author": "S Haupt",
+      "doi-asserted-by": "publisher",
+      "first-page": "2041",
+      "journal-title": "F1000Res",
+      "key": "429_CR68",
+      "unstructured": "Haupt S, Haupt Y. P53 at the start of the 21st century: lessons from elephants. F1000Res. 2017;6:2041.",
+      "volume": "6",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/cshperspect.a001198",
+      "author": "VA Belyi",
+      "doi-asserted-by": "publisher",
+      "first-page": "a001198",
+      "journal-title": "Cold Spring Harb Perspect Biol",
+      "key": "429_CR69",
+      "unstructured": "Belyi VA, Ak P, Markert E, Wang H, Hu W, Puzio-Kuter A, et al. The origins and evolution of the p53 family of genes. Cold Spring Harb Perspect Biol. 2010;2:a001198.",
+      "volume": "2",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1098/rspb.2018.1743",
+      "author": "L Nunney",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Proc Biol Sci",
+      "key": "429_CR70",
+      "unstructured": "Nunney L. Size matters: height, cell number and a person’s risk of cancer. Proc Biol Sci. 2018. https://doi.org/10.1098/rspb.2018.1743.",
+      "year": "2018"
+    },
+    {
+      "author": "M Casás-Selves",
+      "first-page": "624",
+      "journal-title": "Evolution",
+      "key": "429_CR71",
+      "unstructured": "Casás-Selves M, Degregori J. How cancer shapes evolution, and how evolution shapes cancer. Evolution. 2011;4:624–34.",
+      "volume": "4",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.amepre.2013.10.029",
+      "author": "MC White",
+      "doi-asserted-by": "publisher",
+      "first-page": "S7",
+      "journal-title": "Am J Prev Med",
+      "key": "429_CR72",
+      "unstructured": "White MC, Holman DM, Boehm JE, Peipins LA, Grossman M, Henley SJ. Age and cancer risk: a potentially modifiable relationship. Am J Prev Med. 2014;46:S7-15.",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2018.07.042",
+      "author": "JM Vazquez",
+      "doi-asserted-by": "publisher",
+      "first-page": "1765",
+      "journal-title": "Cell Rep",
+      "key": "429_CR73",
+      "unstructured": "Vazquez JM, Sulak M, Chigurupati S, Lynch VJ. A zombie LIF Gene in elephants is upregulated by TP53 to Induce apoptosis in response to DNA damage. Cell Rep. 2018;24:1765–76.",
+      "volume": "24",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/gbe/evaa228",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol Evol",
+      "key": "429_CR74",
+      "unstructured": "Dornburg A, Wang Z, Wang J, Mo ES, López-Giráldez F, Townsend JP. Comparative genomics within and across bilaterians illuminates the evolutionary history of ALK and LTK proto-oncogene origination and diversification. Genome Biol Evol. 2021. https://doi.org/10.1093/gbe/evaa228.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03959-5",
+      "author": "S De Munck",
+      "doi-asserted-by": "publisher",
+      "first-page": "143",
+      "journal-title": "Nature",
+      "key": "429_CR75",
+      "unstructured": "De Munck S, Provost M, Kurikawa M, Omori I, Mukohyama J, Felix J, et al. Structural basis of cytokine-mediated activation of ALK family receptors. Nature. 2021;600:143–7.",
+      "volume": "600",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nrc3580",
+      "author": "B Hallberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "685",
+      "journal-title": "Nat Rev Cancer",
+      "key": "429_CR76",
+      "unstructured": "Hallberg B, Palmer RH. Mechanistic insight into ALK receptor tyrosine kinase in human cancer biology. Nat Rev Cancer. 2013;13:685–700.",
+      "volume": "13",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.isci.2019.06.001",
+      "author": "R Janostiak",
+      "doi-asserted-by": "publisher",
+      "first-page": "453",
+      "journal-title": "iScience",
+      "key": "429_CR77",
+      "unstructured": "Janostiak R, Malvi P, Wajapeyee N. Anaplastic lymphoma kinase confers resistance to BRAF kinase inhibitors in melanoma. iScience. 2019;16:453–67.",
+      "volume": "16",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/b978-0-12-821774-0.00015-2",
+      "author": "R Katayama",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Ther Strateg Overcome ALK Resist Cancer",
+      "key": "429_CR78",
+      "unstructured": "Katayama R. Resistance to anaplastic lymphoma kinase (ALK) tyrosine kinase inhibitors (TKIs) in patients with lung cancer: single mutations, compound mutations, and other mechanisms of drug resistance. Ther Strateg Overcome ALK Resist Cancer. 2021. https://doi.org/10.1016/b978-0-12-821774-0.00015-2.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nature01950",
+      "author": "C Englund",
+      "doi-asserted-by": "publisher",
+      "first-page": "512",
+      "journal-title": "Nature",
+      "key": "429_CR79",
+      "unstructured": "Englund C, Lorén CE, Grabbe C, Varshney GK, Deleuil F, Hallberg B, et al. Jeb signals through the Alk receptor tyrosine kinase to drive visceral muscle fusion. Nature. 2003;425:512–6.",
+      "volume": "425",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/S0092-8674(02)00748-1",
+      "author": "T Ishihara",
+      "doi-asserted-by": "publisher",
+      "first-page": "639",
+      "journal-title": "Cell",
+      "key": "429_CR80",
+      "unstructured": "Ishihara T, Iino Y, Mohri A, Mori I, Gengyo-Ando K, Mitani S, et al. HEN-1, a secretory protein with an LDL receptor motif, regulates sensory integration and learning in Caenorhabditis elegans. Cell. 2002;109:639–49.",
+      "volume": "109",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1073/pnas.1520099112",
+      "author": "AV Reshetnyak",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "429_CR81",
+      "unstructured": "Reshetnyak AV, Murray PB, Shi X, Mo ES, Mohanty J, Tome F, et al. Augmentor α and β (FAM150) are ligands of the receptor tyrosine kinases ALK and LTK: hierarchy and specificity of ligand–receptor interactions. Proc Natl Acad Sci. 2015. https://doi.org/10.1073/pnas.1520099112.",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1073/pnas.1710254114",
+      "author": "ES Mo",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "429_CR82",
+      "unstructured": "Mo ES, Cheng Q, Reshetnyak AV, Schlessinger J, Nicoli S. Alk and Ltk ligands are essential for iridophore development in zebrafish mediated by the receptor tyrosine kinase Ltk. Proc Natl Acad Sci. 2017. https://doi.org/10.1073/pnas.1710254114.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nri1859",
+      "author": "AN Barclay",
+      "doi-asserted-by": "publisher",
+      "first-page": "457",
+      "journal-title": "Nat Rev Immunol",
+      "key": "429_CR83",
+      "unstructured": "Barclay AN, Brown MH. The SIRP family of receptors and immune regulation. Nat Rev Immunol. 2006;6:457–64.",
+      "volume": "6",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1111/cas.13663",
+      "author": "Y Murata",
+      "doi-asserted-by": "publisher",
+      "first-page": "2349",
+      "journal-title": "Cancer Sci",
+      "key": "429_CR84",
+      "unstructured": "Murata Y, Saito Y, Kotani T, Matozaki T. CD47-signal regulatory protein α signaling system and its application to cancer immunotherapy. Cancer Sci. 2018;109:2349–57.",
+      "volume": "109",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s00251-021-01232-7",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR85",
+      "unstructured": "Dornburg A, Yoder JA. On the relationship between extant innate immune receptors and the evolutionary origins of jawed vertebrate adaptive immunity. Immunogenetics. 2022. https://doi.org/10.1007/s00251-021-01232-7.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.4049/jimmunol.175.12.7781",
+      "author": "EM van Beek",
+      "doi-asserted-by": "publisher",
+      "first-page": "7781",
+      "journal-title": "J Immunol",
+      "key": "429_CR86",
+      "unstructured": "van Beek EM, Cochrane F, Barclay AN, van den Berg TK. Signal regulatory proteins in the immune system. J Immunol. 2005;175:7781–7.",
+      "volume": "175",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1007/s100380070013",
+      "author": "Y Ichigotani",
+      "doi-asserted-by": "publisher",
+      "first-page": "378",
+      "journal-title": "J Hum Genet",
+      "key": "429_CR87",
+      "unstructured": "Ichigotani Y, Matsuda S, Machida K, Oshima K, Iwamoto T, Yamaki K, et al. Molecular cloning of a novel human gene (SIRP-B2) which encodes a new member of the SIRP/SHPS-1 protein family. J Hum Genet. 2000;45:378–82.",
+      "volume": "45",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1007/s00251-006-0091-8",
+      "author": "BC Viertlboeck",
+      "doi-asserted-by": "publisher",
+      "first-page": "180",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR88",
+      "unstructured": "Viertlboeck BC, Schmitt R, Göbel TW. The chicken immunoregulatory receptor families SIRP, TREM, and CMRF35/CD300L. Immunogenetics. 2006;58:180–90.",
+      "volume": "58",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1111/imr.12527",
+      "author": "HL Matlung",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "journal-title": "Immunol Rev",
+      "key": "429_CR89",
+      "unstructured": "Matlung HL, Szilagyi K, Barclay NA, van den Berg TK. The CD47-SIRPα signaling axis as an innate immune checkpoint in cancer. Immunol Rev. 2017;276:145–64.",
+      "volume": "276",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.4103/ctm.ctm_26_17",
+      "author": "L Liu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cancer Transl Med",
+      "key": "429_CR90",
+      "unstructured": "Liu L, Xiang Y-R. “Eating” Cancer cells by blocking CD47 signaling: Cancer therapy by targeting the innate immune checkpoint. Cancer Transl Med. 2017. https://doi.org/10.4103/ctm.ctm_26_17.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1053/j.seminoncol.2020.05.009",
+      "author": "B Oronsky",
+      "doi-asserted-by": "publisher",
+      "first-page": "117",
+      "journal-title": "Semin Oncol",
+      "key": "429_CR91",
+      "unstructured": "Oronsky B, Carter C, Reid T, Brinkhaus F, Knox SJ. Just eat it: a review of CD47 and SIRP-α antagonism. Semin Oncol. 2020;47:117–24.",
+      "volume": "47",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1158/1078-0432.CCR-16-1700",
+      "author": "PS Petrova",
+      "doi-asserted-by": "publisher",
+      "first-page": "1068",
+      "journal-title": "Clin Cancer Res",
+      "key": "429_CR92",
+      "unstructured": "Petrova PS, Viller NN, Wong M, Pang X, Lin GHY, Dodge K, et al. TTI-621 (SIRPαFc): a CD47-blocking innate immune checkpoint inhibitor with broad antitumor activity and minimal erythrocyte binding. Clin Cancer Res. 2017;23:1068–79.",
+      "volume": "23",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.4049/jimmunol.173.4.2562",
+      "author": "G Brooke",
+      "doi-asserted-by": "publisher",
+      "first-page": "2562",
+      "journal-title": "J Immunol",
+      "key": "429_CR93",
+      "unstructured": "Brooke G, Holbrook JD, Brown MH, Barclay AN. Human lymphocytes interact directly with CD47 through a novel member of the signal regulatory protein (SIRP) family. J Immunol. 2004;173:2562–70.",
+      "volume": "173",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1182/blood.V97.9.2741",
+      "author": "M Seiffert",
+      "doi-asserted-by": "publisher",
+      "first-page": "2741",
+      "journal-title": "Blood",
+      "key": "429_CR94",
+      "unstructured": "Seiffert M, Brossart P, Cant C, Cella M, Colonna M, Brugger W, et al. Signal-regulatory protein alpha (SIRPalpha) but not SIRPbeta is involved in T-cell activation, binds to CD47 with high affinity, and is expressed on immature CD34(+)CD38(-) hematopoietic cells. Blood. 2001;97:2741–9.",
+      "volume": "97",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1073/pnas.1121623109",
+      "author": "SB Willingham",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "429_CR95",
+      "unstructured": "Willingham SB, Volkmer J-P, Gentles AJ, Sahoo D, Dalerba P, Mitra SS, et al. The CD47-signal regulatory protein alpha (SIRPa) interaction is a therapeutic target for human solid tumors. Proc Natl Acad Sci. 2012. https://doi.org/10.1073/pnas.1121623109.",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1126/science.277.5331.1505",
+      "author": "KC Yeh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1505",
+      "journal-title": "Science",
+      "key": "429_CR96",
+      "unstructured": "Yeh KC, Wu SH, Murphy JT, Lagarias JC. A cyanobacterial phytochrome two-component light sensory system. Science. 1997;277:1505–8.",
+      "volume": "277",
+      "year": "1997"
+    },
+    {
+      "author": "CT Mörner",
+      "first-page": "61",
+      "journal-title": "De Gruyter",
+      "key": "429_CR97",
+      "unstructured": "Mörner CT. Untersuchung der proteїnsubstanzen in den leichtbrechenden medien des auges I. De Gruyter. 1894;18:61–106.",
+      "volume": "18",
+      "year": "1894"
+    },
+    {
+      "author": "WW de Jong",
+      "first-page": "103",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR98",
+      "unstructured": "de Jong WW, Leunissen JA, Voorter CE. Evolution of the alpha-crystallin/small heat-shock protein family. Mol Biol Evol. 1993;10:103–26.",
+      "volume": "10",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1038/42628",
+      "author": "KA Crandall",
+      "doi-asserted-by": "publisher",
+      "first-page": "667",
+      "journal-title": "Nature",
+      "key": "429_CR99",
+      "unstructured": "Crandall KA, Hillis DM. Rhodopsin evolution in the dark. Nature. 1997;387:667–8.",
+      "volume": "387",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.molbev.a004211",
+      "author": "BSW Chang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1483",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR100",
+      "unstructured": "Chang BSW, Jönsson K, Kazmi MA, Donoghue MJ, Sakmar TP. Recreating a functional ancestral archosaur visual pigment. Mol Biol Evol. 2002;19:1483–9.",
+      "volume": "19",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1073/pnas.1900481116",
+      "author": "Y Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "12627",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR101",
+      "unstructured": "Liu Y, Cui Y, Chi H, Xia Y, Liu H, Rossiter SJ, et al. Scotopic rod vision in tetrapods arose from multiple early adaptive shifts in the rate of retinal release. Proc Natl Acad Sci USA. 2019;116:12627–8.",
+      "volume": "116",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1073/pnas.0802426105",
+      "author": "S Yokoyama",
+      "doi-asserted-by": "publisher",
+      "first-page": "13480",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR102",
+      "unstructured": "Yokoyama S, Tada T, Zhang H, Britt L. Elucidation of phenotypic adaptations: Molecular analyses of dim-light vision proteins in vertebrates. Proc Natl Acad Sci USA. 2008;105:13480–5.",
+      "volume": "105",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/1471-2148-9-1",
+      "author": "N Pohl",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "BMC Evol Biol BioMed Central",
+      "key": "429_CR103",
+      "unstructured": "Pohl N, Sison-Mangus MP, Yee EN, Liswi SW, Briscoe AD. Impact of duplicate gene copies on phylogenetic analysis and divergence time estimates in butterflies. BMC Evol Biol BioMed Central. 2009;9:1–16.",
+      "volume": "9",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1080/10635150802562392",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "905",
+      "journal-title": "Syst Biol",
+      "key": "429_CR104",
+      "unstructured": "Dornburg A, Santini F, Alfaro ME. The influence of model averaging on clade posteriors: an example using the triggerfishes (Family Balistidae). Syst Biol. 2008;57:905–19.",
+      "volume": "57",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1146/annurev-ecolsys-122120-122554",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Ann Rev Ecol Evol Syst",
+      "key": "429_CR105",
+      "unstructured": "Dornburg A, Near TJ. The emerging phylogenetic perspective on the evolution of actinopterygian fishes. Ann Rev Ecol Evol Syst. 2021. https://doi.org/10.1146/annurev-ecolsys-122120-122554.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41579-018-0109-x",
+      "author": "Z Yu",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "journal-title": "Nat Rev Microbiol",
+      "key": "429_CR106",
+      "unstructured": "Yu Z, Fischer R. Light sensing and responses in fungi. Nat Rev Microbiol. 2018;17:25–36.",
+      "volume": "17",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/b978-012372484-7/50014-x",
+      "author": "RD Vierstra",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Histidine Kinases Signal Transduct",
+      "key": "429_CR107",
+      "unstructured": "Vierstra RD. Cyanophytochromes, bacteriophytochromes, and plant phytochromes. Histidine Kinases Signal Transduct. 2003. https://doi.org/10.1016/b978-012372484-7/50014-x.",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1146/annurev.micro.112408.134000",
+      "author": "J Rodriguez-Romero",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Ann Rev Microbiol",
+      "key": "429_CR108",
+      "unstructured": "Rodriguez-Romero J, Hedtke M, Kastner C, Müller S, Fischer R. Fungi, hidden in soil or up in the air: light makes a difference. Ann Rev Microbiol. 2010. https://doi.org/10.1146/annurev.micro.112408.134000.",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.cub.2016.04.038",
+      "author": "LM Corrochano",
+      "doi-asserted-by": "publisher",
+      "first-page": "1577",
+      "journal-title": "Curr Biol",
+      "key": "429_CR109",
+      "unstructured": "Corrochano LM, Kuo A, Marcet-Houben M, Polaino S, Salamov A, Villalobos-Escobedo JM, et al. Expansion of signal transduction pathways in fungi by extensive genome duplication. Curr Biol. 2016;26:1577–84.",
+      "volume": "26",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1146/annurev-genet-120417-031415",
+      "author": "LM Corrochano",
+      "doi-asserted-by": "publisher",
+      "first-page": "149",
+      "journal-title": "Annu Rev Genet",
+      "key": "429_CR110",
+      "unstructured": "Corrochano LM. Light in the fungal world: from photoreception to gene transcription and beyond. Annu Rev Genet. 2019;53:149–70.",
+      "volume": "53",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1111/mec.14425",
+      "author": "Z Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "216",
+      "journal-title": "Mol Ecol",
+      "key": "429_CR111",
+      "unstructured": "Wang Z, Wang J, Li N, Li J, Trail F, Dunlap JC, et al. Light sensing by opsins and fungal ecology: NOP-1 modulates entry into sexual reproduction in response to environmental cues. Mol Ecol. 2018;27:216–32.",
+      "volume": "27",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1128/mBio.02148-15",
+      "author": "Z Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e02148",
+      "journal-title": "MBio",
+      "key": "429_CR112",
+      "unstructured": "Wang Z, Li N, Li J, Dunlap JC, Trail F, Townsend JP. The fast-evolving phy-2 gene modulates sexual development in response to light in the model fungus Neurospora crassa. MBio. 2016;7:e02148.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/1479-7364-6-1",
+      "author": "G Wistow",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "journal-title": "Hum Genom BioMed Central",
+      "key": "429_CR113",
+      "unstructured": "Wistow G. The human crystallin gene families. Hum Genom BioMed Central. 2012;6:1–10.",
+      "volume": "6",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-374203-2.00031-2",
+      "author": "G Wistow",
+      "doi-asserted-by": "publisher",
+      "first-page": "229",
+      "key": "429_CR114",
+      "unstructured": "Wistow G, Slingsby C. Structure and evolution of crystallins. In: Encyclopedia of the eye. Academic Press; 2010. p. 229–38.",
+      "volume-title": "Encyclopedia of the eye",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1007/s00239-010-9379-2",
+      "author": "G Kappé",
+      "doi-asserted-by": "publisher",
+      "first-page": "219",
+      "journal-title": "J Mol Evol",
+      "key": "429_CR115",
+      "unstructured": "Kappé G, Purkiss AG, van Genesen ST, Slingsby C, Lubsen NH. Explosive expansion of betagamma-crystallin genes in the ancestral vertebrate. J Mol Evol. 2010;71:219–30.",
+      "volume": "71",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/sj.ejhg.5201046",
+      "author": "DS Mackay",
+      "doi-asserted-by": "publisher",
+      "first-page": "784",
+      "journal-title": "Eur J Hum Genet",
+      "key": "429_CR116",
+      "unstructured": "Mackay DS, Andley UP, Shiels A. Cell death triggered by a novel mutation in the alphaA-crystallin gene underlies autosomal dominant cataract linked to chromosome 21q. Eur J Hum Genet. 2003;11:784–93.",
+      "volume": "11",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/hmg/7.3.471",
+      "author": "M Litt",
+      "doi-asserted-by": "publisher",
+      "first-page": "471",
+      "journal-title": "Hum Mol Genet",
+      "key": "429_CR117",
+      "unstructured": "Litt M, Kramer P, LaMorticella DM, Murphey W, Lovrien EW, Weleber RG. Autosomal dominant congenital cataract associated with a missense mutation in the human alpha crystallin gene CRYAA. Hum Mol Genet. 1998;7:471–4.",
+      "volume": "7",
+      "year": "1998"
+    },
+    {
+      "author": "RR Devi",
+      "first-page": "1157",
+      "journal-title": "Mol Vis",
+      "key": "429_CR118",
+      "unstructured": "Devi RR, Yao W, Vijayalakshmi P, Sergeev YV, Sundaresan P, Fielding HJ. Crystallin gene mutations in Indian families with inherited pediatric cataract. Mol Vis. 2008;14:1157.",
+      "volume": "14",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/0022-2836(90)90380-5",
+      "author": "RH Brakenhoff",
+      "doi-asserted-by": "publisher",
+      "first-page": "519",
+      "journal-title": "J Mol Biol",
+      "key": "429_CR119",
+      "unstructured": "Brakenhoff RH, Aarts HJ, Reek FH, Lubsen NH, Schoenmakers JG. Human gamma-crystallin genes: a gene family on its way to extinction. J Mol Biol. 1990;216:519–32.",
+      "volume": "216",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1016/0079-6107(88)90010-7",
+      "author": "NH Lubsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "journal-title": "Prog Biophys Mol Biol",
+      "key": "429_CR120",
+      "unstructured": "Lubsen NH, Aarts HJ, Schoenmakers JG. The evolution of lenticular proteins: the beta- and gamma-crystallin super gene family. Prog Biophys Mol Biol. 1988;51:47–76.",
+      "volume": "51",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1016/0014-5793(82)80805-3",
+      "author": "YuA Ovchinnikov",
+      "doi-asserted-by": "publisher",
+      "first-page": "179",
+      "journal-title": "FEBS Lett",
+      "key": "429_CR121",
+      "unstructured": "Ovchinnikov YuA. Rhodopsin and bacteriorhodopsin: structure-function relationships. FEBS Lett. 1982;148:179–91.",
+      "volume": "148",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1016/0092-8674(83)90537-8",
+      "author": "J Nathans",
+      "doi-asserted-by": "publisher",
+      "first-page": "807",
+      "journal-title": "Cell",
+      "key": "429_CR122",
+      "unstructured": "Nathans J, Hogness DS. Isolation, sequence analysis, and intron-exon arrangement of the gene encoding bovine rhodopsin. Cell. 1983;34:807–14.",
+      "volume": "34",
+      "year": "1983"
+    },
+    {
+      "author": "A Terakita",
+      "first-page": "1",
+      "journal-title": "Genome Biol BioMed Central",
+      "key": "429_CR123",
+      "unstructured": "Terakita A. The opsins. Genome Biol BioMed Central. 2005;6:1–9.",
+      "volume": "6",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1073/pnas.2002235117",
+      "author": "H Chi",
+      "doi-asserted-by": "publisher",
+      "first-page": "8303",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR124",
+      "unstructured": "Chi H, Cui Y, Rossiter SJ, Liu Y. Convergent spectral shifts to blue-green vision in mammals extends the known sensitivity of vertebrate M/LWS pigments. Proc Natl Acad Sci USA. 2020;117:8303–5.",
+      "volume": "117",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1126/science.2937147",
+      "author": "J Nathans",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Science",
+      "key": "429_CR125",
+      "unstructured": "Nathans J, Thomas D, Hogness DS. Molecular genetics of human color vision: the genes encoding blue, green, and red pigments. Science. 1986. https://doi.org/10.1126/science.2937147.",
+      "year": "1986"
+    },
+    {
+      "DOI": "10.1146/annurev-cellbio-120219-024915",
+      "author": "Z Musilova",
+      "doi-asserted-by": "publisher",
+      "first-page": "441",
+      "journal-title": "Annu Rev Cell Dev Biol",
+      "key": "429_CR126",
+      "unstructured": "Musilova Z, Salzburger W, Cortesi F. The visual opsin gene repertoires of teleost fishes: evolution, ecology, and function. Annu Rev Cell Dev Biol. 2021;37:441–68.",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41598-017-15868-7",
+      "author": "J-J Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "15568",
+      "journal-title": "Sci Rep",
+      "key": "429_CR127",
+      "unstructured": "Lin J-J, Wang F-Y, Li W-H, Wang T-Y. The rises and falls of opsin genes in 59 ray-finned fish genomes and their implications for environmental adaptation. Sci Rep. 2017;7:15568.",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1073/pnas.0813201106",
+      "author": "H Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "8980",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR128",
+      "unstructured": "Zhao H, Rossiter SJ, Teeling EC, Li C, Cotton JA, Zhang S. The evolution of color vision in nocturnal mammals. Proc Natl Acad Sci USA. 2009;106:8980–5.",
+      "volume": "106",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/gbe/evaa237",
+      "author": "KM Eaton",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genom Biol Evol",
+      "key": "429_CR129",
+      "unstructured": "Eaton KM, Bernal MA, Backenstose NJC, Yule DL, Krabbenhoft TJ. Nanopore amplicon sequencing reveals molecular convergence and local adaptation of rhodopsin in great lakes salmonids. Genom Biol Evol. 2021. https://doi.org/10.1093/gbe/evaa237.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1073/pnas.1908332116",
+      "author": "J Hill",
+      "doi-asserted-by": "publisher",
+      "first-page": "18473",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR130",
+      "unstructured": "Hill J, Enbody ED, Pettersson ME, Sprehn CG, Bekkevold D, Folkvord A, et al. Recurrent convergent evolution at amino acid residue 261 in fish rhodopsin. Proc Natl Acad Sci USA. 2019;116:18473–8.",
+      "volume": "116",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/2022.09.28.509872",
+      "doi-asserted-by": "publisher",
+      "key": "429_CR131",
+      "unstructured": "Yoder EB, Parker CE, Tew A, Jones CD, Dornburg A. Decoupled spectral tuning and eye size diversification patterns in an Antarctic adaptive radiation. bioRxiv. 2022. https://doi.org/10.1101/2022.09.28.509872"
+    },
+    {
+      "DOI": "10.1038/s41467-019-09124-x",
+      "author": "MH Berry",
+      "doi-asserted-by": "publisher",
+      "first-page": "1221",
+      "journal-title": "Nat Commun",
+      "key": "429_CR132",
+      "unstructured": "Berry MH, Holt A, Salari A, Veit J, Visel M, Levitz J, et al. Restoration of high-sensitivity and adapting vision with a cone opsin. Nat Commun. 2019;10:1221.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "key": "429_CR133",
+      "unstructured": "Davidoff C. Cone opsin gene variants in color blindness and other vision disorders. 2015."
+    },
+    {
+      "DOI": "10.1073/pnas.0811087106",
+      "author": "ME Alfaro",
+      "doi-asserted-by": "publisher",
+      "first-page": "13410",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR134",
+      "unstructured": "Alfaro ME, Santini F, Brock C, Alamillo H, Dornburg A, Rabosky DL, et al. Nine exceptional radiations plus high turnover explain species diversity in jawed vertebrates. Proc Natl Acad Sci USA. 2009;106:13410–4.",
+      "volume": "106",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41559-019-1069-x",
+      "author": "R Fernández",
+      "doi-asserted-by": "publisher",
+      "first-page": "524",
+      "journal-title": "Nat Ecol Evol",
+      "key": "429_CR135",
+      "unstructured": "Fernández R, Gabaldón T. Gene gain and loss across the metazoan tree of life. Nat Ecol Evol. 2020;4:524–33.",
+      "volume": "4",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/phpp.12578",
+      "author": "S Suh",
+      "doi-asserted-by": "publisher",
+      "first-page": "329",
+      "journal-title": "Photodermatol Photoimmunol Photomed",
+      "key": "429_CR136",
+      "unstructured": "Suh S, Choi EH, Atanaskova MN. The expression of opsins in the human skin and its implications for photobiomodulation: a systematic review. Photodermatol Photoimmunol Photomed. 2020;36:329–38.",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00441-021-03500-0",
+      "author": "MN Moraes",
+      "doi-asserted-by": "publisher",
+      "first-page": "519",
+      "journal-title": "Cell Tissue Res",
+      "key": "429_CR137",
+      "unstructured": "Moraes MN, de Assis LVM, Provencio I, de Castrucci AM. Opsins outside the eye and the skin: a more complex scenario than originally thought for a classical light sensor. Cell Tissue Res. 2021;385:519–38.",
+      "volume": "385",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1098/rsbl.2010.0223",
+      "author": "LM Mäthger",
+      "doi-asserted-by": "publisher",
+      "first-page": "600",
+      "journal-title": "Sepia officinalis Biol Lett",
+      "key": "429_CR138",
+      "unstructured": "Mäthger LM, Roberts SB, Hanlon RT. Evidence for distributed light sensing in the skin of cuttlefish. Sepia officinalis Biol Lett. 2010;6:600–3.",
+      "volume": "6",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/lsm.23015",
+      "author": "I Castellano-Pellicena",
+      "doi-asserted-by": "publisher",
+      "first-page": "370",
+      "journal-title": "Lasers Surg Med",
+      "key": "429_CR139",
+      "unstructured": "Castellano-Pellicena I, Uzunbajakava NE, Mignon C, Raafs B, Botchkarev VA, Thornton MJ. Does blue light restore human epidermal barrier function via activation of Opsin during cutaneous wound healing? Lasers Surg Med. 2019;51:370–82.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/0092-8674(91)90418-X",
+      "author": "L Buck",
+      "doi-asserted-by": "publisher",
+      "first-page": "175",
+      "journal-title": "Cell",
+      "key": "429_CR140",
+      "unstructured": "Buck L, Axel R. A novel multigene family may encode odorant receptors: a molecular basis for odor recognition. Cell. 1991;65:175–87.",
+      "volume": "65",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1016/S0092-8674(00)80582-6",
+      "author": "LB Vosshall",
+      "doi-asserted-by": "publisher",
+      "first-page": "725",
+      "journal-title": "Cell",
+      "key": "429_CR141",
+      "unstructured": "Vosshall LB, Amrein H, Morozov PS, Rzhetsky A, Axel R. A spatial map of olfactory receptor expression in the Drosophila antenna. Cell. 1999;96:725–36.",
+      "volume": "96",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1146/annurev.neuro.20.1.595",
+      "author": "JG Hildebrand",
+      "doi-asserted-by": "publisher",
+      "first-page": "595",
+      "journal-title": "Annu Rev Neurosci",
+      "key": "429_CR142",
+      "unstructured": "Hildebrand JG, Shepherd GM. Mechanisms of olfactory discrimination: converging evidence for common principles across phyla. Annu Rev Neurosci. 1997;20:595–631.",
+      "volume": "20",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1038/nrn2789",
+      "author": "UB Kaupp",
+      "doi-asserted-by": "publisher",
+      "first-page": "188",
+      "journal-title": "Nat Rev Neurosci",
+      "key": "429_CR143",
+      "unstructured": "Kaupp UB. Olfactory signalling in vertebrates and insects: differences and commonalities. Nat Rev Neurosci. 2010;11:188–200.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1101/gr.099416.109",
+      "author": "S Hayden",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Res",
+      "key": "429_CR144",
+      "unstructured": "Hayden S, Bekaert M, Crider TA, Mariani S, Murphy WJ, Teeling EC. Ecological adaptation determines functional mammalian olfactory subgenomes. Genome Res. 2010;20:1–9.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.2174/138920212799860706",
+      "author": "Y Niimura",
+      "doi-asserted-by": "publisher",
+      "first-page": "103",
+      "journal-title": "Curr Genom",
+      "key": "429_CR145",
+      "unstructured": "Niimura Y. Olfactory receptor multigene family in vertebrates: from the viewpoint of evolutionary genomics. Curr Genom. 2012;13:103–14.",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1101/gr.169532.113",
+      "author": "Y Niimura",
+      "doi-asserted-by": "publisher",
+      "first-page": "1485",
+      "journal-title": "Genome Res",
+      "key": "429_CR146",
+      "unstructured": "Niimura Y, Matsui A, Touhara K. Extreme expansion of the olfactory receptor gene repertoire in African elephants and evolutionary dynamics of orthologous gene groups in 13 placental mammals. Genome Res. 2014;24:1485–96.",
+      "volume": "24",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/cz/zoaa051",
+      "author": "LR Yohe",
+      "doi-asserted-by": "publisher",
+      "first-page": "505",
+      "journal-title": "Curr Zool",
+      "key": "429_CR147",
+      "unstructured": "Yohe LR, Fabbri M, Hanson M, Bhullar B-AS. Olfactory receptor gene evolution is unusually rapid across Tetrapoda and outpaces chemosensory phenotypic change. Curr Zool. 2020;66:505–14.",
+      "volume": "66",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1146/annurev.genet.39.073003.112240",
+      "author": "M Nei",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Ann Rev Genet",
+      "key": "429_CR148",
+      "unstructured": "Nei M, Rooney AP. Concerted and birth-and-death evolution of multigene families. Ann Rev Genet. 2005. https://doi.org/10.1146/annurev.genet.39.073003.112240.",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0000708",
+      "author": "Y Niimura",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "429_CR149",
+      "unstructured": "Niimura Y, Nei M. Extensive gains and losses of olfactory receptor genes in mammalian evolution. PLoS ONE. 2007. https://doi.org/10.1371/journal.pone.0000708.",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/hdy.2009.55",
+      "author": "A Sánchez-Gracia",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Heredity",
+      "key": "429_CR150",
+      "unstructured": "Sánchez-Gracia A, Vieira FG, Rozas J. Molecular evolution of the major chemosensory gene families in insects. Heredity. 2009. https://doi.org/10.1038/hdy.2009.55.",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.cub.2016.09.011",
+      "author": "DM Bear",
+      "doi-asserted-by": "publisher",
+      "first-page": "R1039",
+      "journal-title": "Curr Biol",
+      "key": "429_CR151",
+      "unstructured": "Bear DM, Lassance J-M, Hoekstra HE, Datta SR. The evolving neural and genetic architecture of vertebrate olfaction. Curr Biol. 2016;26:R1039–49.",
+      "volume": "26",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1111/j.1447-073X.2007.00215.x",
+      "author": "T Sato",
+      "doi-asserted-by": "publisher",
+      "first-page": "195",
+      "journal-title": "Anat Sci Int",
+      "key": "429_CR152",
+      "unstructured": "Sato T, Hirono J, Hamana H, Ishikawa T, Shimizu A, Takashima I, et al. Architecture of odor information processing in the olfactory system. Anat Sci Int. 2008;83:195–206.",
+      "volume": "83",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/gbe/evs041",
+      "author": "Y Dehara",
+      "doi-asserted-by": "publisher",
+      "first-page": "602",
+      "journal-title": "Genome Biol Evol",
+      "key": "429_CR153",
+      "unstructured": "Dehara Y, Hashiguchi Y, Matsubara K, Yanai T, Kubo M, Kumazawa Y. Characterization of squamate olfactory receptor genes and their transcripts by the high-throughput sequencing approach. Genome Biol Evol. 2012;4:602–16.",
+      "volume": "4",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1073/pnas.0608424104",
+      "author": "CS McBride",
+      "doi-asserted-by": "publisher",
+      "first-page": "4996",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR154",
+      "unstructured": "McBride CS. Rapid evolution of smell and taste receptor genes during host specialization in Drosophila sechellia. Proc Natl Acad Sci USA. 2007;104:4996–5001.",
+      "volume": "104",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1534/genetics.107.078683",
+      "author": "CS McBride",
+      "doi-asserted-by": "publisher",
+      "first-page": "1395",
+      "journal-title": "Genetics",
+      "key": "429_CR155",
+      "unstructured": "McBride CS, Arguello JR, O’Meara BC. Five Drosophila genomes reveal nonneutral evolution and the signature of host specialization in the chemoreceptor superfamily. Genetics. 2007;177:1395–416.",
+      "volume": "177",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/molbev/msu043",
+      "author": "S Hayden",
+      "doi-asserted-by": "publisher",
+      "first-page": "917",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR156",
+      "unstructured": "Hayden S, Bekaert M, Goodbla A, Murphy WJ, Dávalos LM, Teeling EC. A cluster of olfactory receptor genes linked to frugivory in bats. Mol Biol Evol. 2014;31:917–27.",
+      "volume": "31",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1073/pnas.1424656112",
+      "author": "B Goldman-Huertas",
+      "doi-asserted-by": "publisher",
+      "first-page": "3026",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR157",
+      "unstructured": "Goldman-Huertas B, Mitchell RF, Lapoint RT, Faucher CP, Hildebrand JG, Whiteman NK. Evolution of herbivory in Drosophilidae linked to loss of behaviors, antennal responses, odorant receptors, and ancestral diet. Proc Natl Acad Sci USA. 2015;112:3026–31.",
+      "volume": "112",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1073/pnas.0910945107",
+      "author": "F Gould",
+      "doi-asserted-by": "publisher",
+      "first-page": "8660",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR158",
+      "unstructured": "Gould F, Estock M, Hillier NK, Powell B, Groot AT, Ward CM, et al. Sexual isolation of male moths explained by a single pheromone response QTL containing four receptor genes. Proc Natl Acad Sci USA. 2010;107:8660–5.",
+      "volume": "107",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1073/pnas.1103317108",
+      "author": "DM Ferrero",
+      "doi-asserted-by": "publisher",
+      "first-page": "11235",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "429_CR159",
+      "unstructured": "Ferrero DM, Lemon JK, Fluegge D, Pashkovski SL, Korzan WJ, Datta SR, et al. Detection and avoidance of a carnivore odor by prey. Proc Natl Acad Sci USA. 2011;108:11235–40.",
+      "volume": "108",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.cell.2006.01.050",
+      "author": "EA Hallem",
+      "doi-asserted-by": "publisher",
+      "first-page": "143",
+      "journal-title": "Cell",
+      "key": "429_CR160",
+      "unstructured": "Hallem EA, Carlson JR. Coding of odors by a receptor repertoire. Cell. 2006;125:143–60.",
+      "volume": "125",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/S0092-8674(00)80581-4",
+      "author": "B Malnic",
+      "doi-asserted-by": "publisher",
+      "first-page": "713",
+      "journal-title": "Cell",
+      "key": "429_CR161",
+      "unstructured": "Malnic B, Hirono J, Sato T, Buck LB. Combinatorial receptor codes for odors. Cell. 1999;96:713–23.",
+      "volume": "96",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1016/j.tcb.2013.04.005",
+      "author": "A Magklara",
+      "doi-asserted-by": "publisher",
+      "first-page": "449",
+      "journal-title": "Trends Cell Biol",
+      "key": "429_CR162",
+      "unstructured": "Magklara A, Lomvardas S. Stochastic gene expression in mammals: lessons from olfaction. Trends Cell Biol. 2013;23:449–56.",
+      "volume": "23",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1523/JNEUROSCI.1282-11.2011",
+      "author": "K Nara",
+      "doi-asserted-by": "publisher",
+      "first-page": "9179",
+      "journal-title": "J Neurosci",
+      "key": "429_CR163",
+      "unstructured": "Nara K, Saraiva LR, Ye X, Buck LB. A large-scale analysis of odor coding in the olfactory epithelium. J Neurosci. 2011;31:9179–91.",
+      "volume": "31",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.cell.2013.09.032",
+      "author": "I Rodriguez",
+      "doi-asserted-by": "publisher",
+      "first-page": "274",
+      "journal-title": "Cell",
+      "key": "429_CR164",
+      "unstructured": "Rodriguez I. Singular expression of olfactory receptor genes. Cell. 2013;155:274–7.",
+      "volume": "155",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1523/JNEUROSCI.3625-14.2014",
+      "author": "TS McClintock",
+      "doi-asserted-by": "publisher",
+      "first-page": "15669",
+      "journal-title": "J Neurosci",
+      "key": "429_CR165",
+      "unstructured": "McClintock TS, Adipietro K, Titlow WB, Breheny P, Walz A, Mombaerts P, et al. In vivo identification of eugenol-responsive and muscone-responsive mouse odorant receptors. J Neurosci. 2014;34:15669–78.",
+      "volume": "34",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1126/science.1249168",
+      "author": "C Bushdid",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Science",
+      "key": "429_CR166",
+      "unstructured": "Bushdid C, Magnasco MO, Vosshall LB, Keller A. Humans can discriminate more than 1 trillion olfactory stimuli. Science. 2014. https://doi.org/10.1126/science.1249168.",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3389/fphys.2018.00049",
+      "author": "A Haverkamp",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "journal-title": "Front Physiol",
+      "key": "429_CR167",
+      "unstructured": "Haverkamp A, Hansson BS, Knaden M. Combinatorial codes and labeled lines: how insects use olfactory cues to find and judge food, mates, and oviposition sites in complex environments. Front Physiol. 2018;9:49.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2561-9",
+      "author": "NJ Gemmell",
+      "doi-asserted-by": "publisher",
+      "first-page": "403",
+      "journal-title": "Nature",
+      "key": "429_CR168",
+      "unstructured": "Gemmell NJ, Rutherford K, Prost S, Tollis M, Winter D, Macey JR, et al. The tuatara genome reveals ancient features of amniote evolution. Nature. 2020;584:403–9.",
+      "volume": "584",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/g3journal/jkac153",
+      "author": "Z Drum",
+      "doi-asserted-by": "publisher",
+      "journal-title": "G3",
+      "key": "429_CR169",
+      "unstructured": "Drum Z, Lanno S, Gregory S, Shimshak S, Barr W, Gatesman A, et al. Genomics analysis of drosophila sechellia response to morinda citrifolia fruit diet. G3. 2022. https://doi.org/10.1093/g3journal/jkac153.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/gbe/evv183",
+      "author": "M-S Shiao",
+      "doi-asserted-by": "publisher",
+      "first-page": "2843",
+      "journal-title": "Genome Biol Evol",
+      "key": "429_CR170",
+      "unstructured": "Shiao M-S, Chang J-M, Fan W-L, Lu M-YJ, Notredame C, Fang S, et al. Expression divergence of chemosensory genes between drosophila sechellia and its sibling species and its implications for host shift. Genome Biol Evol. 2015;7:2843–58.",
+      "volume": "7",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/g3journal/jkab354",
+      "author": "ZA Drum",
+      "doi-asserted-by": "publisher",
+      "journal-title": "G3",
+      "key": "429_CR171",
+      "unstructured": "Drum ZA, Lanno SM, Gregory SM, Shimshak SJ, Ahamed M, Barr W, et al. Genomics analysis of hexanoic acid exposure in drosophila species. G3. 2022. https://doi.org/10.1093/g3journal/jkab354.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2073-7",
+      "author": "TO Auer",
+      "doi-asserted-by": "publisher",
+      "first-page": "402",
+      "journal-title": "Nature",
+      "key": "429_CR172",
+      "unstructured": "Auer TO, Khallaf MA, Silbering AF, Zappia G, Ellis K, Álvarez-Ocaña R, et al. Olfactory receptor and circuit evolution promote host specialization. Nature. 2020;579:402–8.",
+      "volume": "579",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2016.12.024",
+      "author": "LL Prieto-Godino",
+      "doi-asserted-by": "publisher",
+      "first-page": "661",
+      "journal-title": "Neuron",
+      "key": "429_CR173",
+      "unstructured": "Prieto-Godino LL, Rytz R, Cruchet S, Bargeton B, Abuin L, Silbering AF, et al. Evolution of acid-sensing olfactory circuits in drosophilids. Neuron. 2017;93:661-76.e6.",
+      "volume": "93",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1146/annurev.es.13.110182.002105",
+      "author": "RL Dressler",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Ann Rev Ecol Syst",
+      "key": "429_CR174",
+      "unstructured": "Dressler RL. Biology of the orchid bees (Euglossini). Ann Rev Ecol Syst. 1982. https://doi.org/10.1146/annurev.es.13.110182.002105.",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1111/j.1095-8312.1983.tb01878.x",
+      "author": "JD Ackerman",
+      "doi-asserted-by": "publisher",
+      "first-page": "301",
+      "journal-title": "Biol J Linnean Soc",
+      "key": "429_CR175",
+      "unstructured": "Ackerman JD. Specificity and mutual dependency of the orchid-euglossine bee interaction. Biol J Linnean Soc. 1983;20:301–14. https://doi.org/10.1111/j.1095-8312.1983.tb01878.x.",
+      "volume": "20",
+      "year": "1983"
+    },
+    {
+      "DOI": "10.1146/annurev.ento.49.072103.115855",
+      "author": "SA Cameron",
+      "doi-asserted-by": "publisher",
+      "first-page": "377",
+      "journal-title": "Annu Rev Entomol",
+      "key": "429_CR176",
+      "unstructured": "Cameron SA. Phylogeny and biology of neotropical orchid bees (Euglossini). Annu Rev Entomol. 2004;49:377–404.",
+      "volume": "49",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/S0003-3472(80)80088-1",
+      "author": "LS Kimsey",
+      "doi-asserted-by": "publisher",
+      "first-page": "996",
+      "issue": "4",
+      "journal-title": "Animal Behav",
+      "key": "429_CR177",
+      "unstructured": "Kimsey LS. The behaviour of male orchid bees (Apidae, Hymenoptera, Insecta) and the question of leks. Animal Behav. 1980;28(4):996–1004. https://doi.org/10.1016/S0003-3472(80)80088-1.",
+      "volume": "28",
+      "year": "1980"
+    },
+    {
+      "DOI": "10.1007/s00359-005-0603-2",
+      "author": "T Eltz",
+      "doi-asserted-by": "publisher",
+      "first-page": "575",
+      "journal-title": "J Comp Physiol A Neuroethol Sens Neural Behav Physiol",
+      "key": "429_CR178",
+      "unstructured": "Eltz T, Sager A, Lunau K. Juggling with volatiles: exposure of perfumes by displaying male orchid bees. J Comp Physiol A Neuroethol Sens Neural Behav Physiol. 2005;191:575–81.",
+      "volume": "191",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1007/s00265-006-0227-8",
+      "author": "Y Zimmermann",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Behav Ecol Sociobiol",
+      "key": "429_CR179",
+      "unstructured": "Zimmermann Y, Roubik DW, Eltz T. Species-specific attraction to pheromonal analogues in orchid bees. Behav Ecol Sociobiol. 2006. https://doi.org/10.1007/s00265-006-0227-8.",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1002/ecy.1755",
+      "author": "T Pokorny",
+      "doi-asserted-by": "publisher",
+      "first-page": "1140",
+      "journal-title": "Ecology",
+      "key": "429_CR180",
+      "unstructured": "Pokorny T, Vogler I, Losch R, Schlütting P, Juarez P, Bissantz N, et al. Blown by the wind: the ecology of male courtship display behavior in orchid bees. Ecology. 2017;98:1140–52.",
+      "volume": "98",
+      "year": "2017"
+    },
+    {
+      "author": "DL Stern",
+      "first-page": "88",
+      "journal-title": "J Kansas Entomol Soc",
+      "key": "429_CR181",
+      "unstructured": "Stern DL, Dudley TR. Wing buzzing by male orchid bees, Eulaema meriana (Hymenoptera: Apidae). J Kansas Entomol Soc. 1991;64:88–94.",
+      "volume": "64",
+      "year": "1991"
+    },
+    {
+      "author": "CH Dodson",
+      "first-page": "607",
+      "journal-title": "J Kansas Entomol Soc",
+      "key": "429_CR182",
+      "unstructured": "Dodson CH. Ethology of some bees of the tribe Euglossini (Hymenoptera: Apidae). J Kansas Entomol Soc. 1966;39:607–29.",
+      "volume": "39",
+      "year": "1966"
+    },
+    {
+      "DOI": "10.1890/08-1858.1",
+      "author": "Y Zimmermann",
+      "doi-asserted-by": "publisher",
+      "first-page": "2994",
+      "journal-title": "Ecology",
+      "key": "429_CR183",
+      "unstructured": "Zimmermann Y, Ramírez SR, Eltz T. Chemical niche differentiation among sympatric species of orchid bees. Ecology. 2009;90:2994–3008.",
+      "volume": "90",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/ele.12667",
+      "author": "MG Weber",
+      "doi-asserted-by": "publisher",
+      "first-page": "1314",
+      "journal-title": "Ecol Lett",
+      "key": "429_CR184",
+      "unstructured": "Weber MG, Mitko L, Eltz T, Ramírez SR. Macroevolution of perfume signalling in orchid bees. Ecol Lett. 2016;19:1314–23.",
+      "volume": "19",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s12862-015-0451-9",
+      "author": "P Brand",
+      "doi-asserted-by": "publisher",
+      "first-page": "176",
+      "journal-title": "BMC Evol Biol",
+      "key": "429_CR185",
+      "unstructured": "Brand P, Ramírez SR, Leese F, Quezada-Euan JJG, Tollrian R, Eltz T. Rapid evolution of chemosensory receptor genes in a pair of sibling species of orchid bees (Apidae: Euglossini). BMC Evol Biol. 2015;15:176.",
+      "volume": "15",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1534/g3.117.043687",
+      "author": "P Brand",
+      "doi-asserted-by": "publisher",
+      "first-page": "2891",
+      "journal-title": "G3",
+      "key": "429_CR186",
+      "unstructured": "Brand P, Saleh N, Pan H, Li C, Kapheim KM, Ramírez SR. The nuclear and mitochondrial genomes of the facultatively eusocial orchid bee. G3. 2017;7:2891–8.",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3389/fnana.2014.00153",
+      "author": "AD Yoder",
+      "doi-asserted-by": "publisher",
+      "first-page": "153",
+      "journal-title": "Front Neuroanat",
+      "key": "429_CR187",
+      "unstructured": "Yoder AD, Larsen PA. The molecular evolutionary dynamics of the vomeronasal receptor (class 1) genes in primates: a gene family on the verge of a functional breakdown. Front Neuroanat. 2014;8:153.",
+      "volume": "8",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/evo.14591",
+      "author": "LR Yohe",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Evolution",
+      "key": "429_CR188",
+      "unstructured": "Yohe LR. Ecological constraints on highly evolvable olfactory receptor genes and morphology in neotropical bats. Evolution. 2022. https://doi.org/10.1111/evo.14591.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/ncomms11855",
+      "author": "JR Arguello",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "429_CR189",
+      "unstructured": "Arguello JR, Roman Arguello J, Cardoso-Moreira M, Grenier JK, Gottipati S, Clark AG, et al. Extensive local adaptation within the chemosensory system following Drosophila melanogaster’s global expansion. Nat Commun. 2016. https://doi.org/10.1038/ncomms11855.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/cz/zoy048",
+      "author": "LR Yohe",
+      "doi-asserted-by": "publisher",
+      "first-page": "525",
+      "journal-title": "Curr Zool.",
+      "key": "429_CR190",
+      "unstructured": "Yohe LR, Brand P. Handling editor: Rebecca Fulle: evolutionary ecology of chemosensation and its role in sensory drive. Curr Zool. 2018;64:525–33.",
+      "volume": "64",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.gene.2017.11.048",
+      "author": "K Moriya-Ito",
+      "doi-asserted-by": "publisher",
+      "first-page": "343",
+      "journal-title": "Gene",
+      "key": "429_CR191",
+      "unstructured": "Moriya-Ito K, Hayakawa T, Suzuki H, Hagino-Yamagishi K, Nikaido M. Evolution of vomeronasal receptor 1 (V1R) genes in the common marmoset (Callithrix jacchus). Gene. 2018;642:343–53.",
+      "volume": "642",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1159/000156637",
+      "author": "M Perret",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Folia Primatol",
+      "key": "429_CR192",
+      "unstructured": "Perret M. Environmental and social determinants of sexual function in the male lesser mouse lemur (Microcebus murinus). Folia Primatol. 1992;59:1–25.",
+      "volume": "59",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1016/s0031-9384(97)00206-0",
+      "author": "F Aujard",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Physiol Behav",
+      "key": "429_CR193",
+      "unstructured": "Aujard F. Effect of vomeronasal organ removal on male socio-sexual responses to female in a prosimian primate (Microcebus murinus). Physiol Behav. 1997. https://doi.org/10.1016/s0031-9384(97)00206-0.",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1159/000052718",
+      "author": "CD Buesching",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Folia Primatol",
+      "key": "429_CR194",
+      "unstructured": "Buesching CD, Heistermann M, Hodges JK, Zimmermann E. Multimodal oestrus advertisement in a small nocturnal prosimian, Microcebus murinus. Folia Primatol. 1998. https://doi.org/10.1159/000052718.",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1007/s00265-004-0826-1",
+      "author": "M Eberle",
+      "doi-asserted-by": "publisher",
+      "first-page": "77",
+      "issue": "1",
+      "journal-title": "Behav Ecol Sociobiol",
+      "key": "429_CR195",
+      "unstructured": "Eberle M, Kappeler PM. Sex in the dark: determinants and consequences of mixed male mating tactics in Microcebus murinus, a small solitary nocturnal primate. Behav Ecol Sociobiol. 2004;57(1):77–90. https://doi.org/10.1007/s00265-004-0826-1.",
+      "volume": "57",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1186/1471-2164-13-415",
+      "author": "EH Wynn",
+      "doi-asserted-by": "publisher",
+      "first-page": "415",
+      "journal-title": "BMC Genomics",
+      "key": "429_CR196",
+      "unstructured": "Wynn EH, Sánchez-Andrade G, Carss KJ, Logan DW. Genomic variation in the vomeronasal receptor gene repertoires of inbred mice. BMC Genomics. 2012;13:415.",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.gene.2004.07.037",
+      "author": "WE Grus",
+      "doi-asserted-by": "publisher",
+      "first-page": "303",
+      "journal-title": "Gene",
+      "key": "429_CR197",
+      "unstructured": "Grus WE, Zhang J. Rapid turnover and species-specificity of vomeronasal pheromone receptor genes in mice and rats. Gene. 2004;340:303–12.",
+      "volume": "340",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1101/gr.2117004",
+      "author": "RP Lane",
+      "doi-asserted-by": "publisher",
+      "first-page": "603",
+      "journal-title": "Genome Res",
+      "key": "429_CR198",
+      "unstructured": "Lane RP, Young J, Newman T, Trask BJ. Species specificity in rodent pheromone receptor repertoires. Genome Res. 2004;14:603–8.",
+      "volume": "14",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/gbe/evr039",
+      "author": "SH Park",
+      "doi-asserted-by": "publisher",
+      "first-page": "401",
+      "journal-title": "Genome Biol Evol",
+      "key": "429_CR199",
+      "unstructured": "Park SH, Podlaha O, Grus WE, Zhang J. The microevolution of V1r vomeronasal receptor genes in mice. Genome Biol Evol. 2011;3:401–12.",
+      "volume": "3",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1098/rsos.161014",
+      "author": "JP Herrera",
+      "doi-asserted-by": "publisher",
+      "first-page": "161014",
+      "journal-title": "R Soc Open Sci",
+      "key": "429_CR200",
+      "unstructured": "Herrera JP. Testing the adaptive radiation hypothesis for the lemurs of Madagascar. R Soc Open Sci. 2017;4:161014.",
+      "volume": "4",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/sysbio/syw035",
+      "author": "JP Herrera",
+      "doi-asserted-by": "publisher",
+      "first-page": "772",
+      "journal-title": "Syst Biol",
+      "key": "429_CR201",
+      "unstructured": "Herrera JP, Dávalos LM. Phylogeny and divergence times of lemurs inferred with recent and ancient fossils in the tree. Syst Biol. 2016;65:772–91.",
+      "volume": "65",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/gbe/evz179",
+      "author": "LR Yohe",
+      "doi-asserted-by": "publisher",
+      "first-page": "2741",
+      "journal-title": "Genome Biol Evol",
+      "key": "429_CR202",
+      "unstructured": "Yohe LR, Davies KTJ, Rossiter SJ, Dávalos LM. Expressed vomeronasal type-1 receptors (V1rs) in bats uncover conserved sequences underlying social chemical signaling. Genome Biol Evol. 2019;11:2741–9.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002821",
+      "author": "KA Adipietro",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1002821",
+      "issue": "7",
+      "journal-title": "PLoS Genet",
+      "key": "429_CR203",
+      "unstructured": "Adipietro KA, Mainland JD, Matsunami H. Functional evolution of mammalian odorant receptors. PLoS Genet. 2012;8(7):e1002821. https://doi.org/10.1371/journal.pgen.1002821.",
+      "volume": "8",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1007/s11427-021-2081-6",
+      "author": "W Han",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci China Life Sci",
+      "key": "429_CR204",
+      "unstructured": "Han W, Yiran W, Zeng L, Zhao S. Building the chordata olfactory receptor database using more than 400,000 receptors annotated by genome2or. Sci China Life Sci. 2022. https://doi.org/10.1007/s11427-021-2081-6.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/0168-9525(90)90174-5",
+      "author": "FJ Gonzalez",
+      "doi-asserted-by": "publisher",
+      "first-page": "182",
+      "journal-title": "Trends Genet",
+      "key": "429_CR205",
+      "unstructured": "Gonzalez FJ, Nebert DW. Evolution of the P450 gene superfamily: animal-plant “warfare”, molecular drive and human genetic differences in drug oxidation. Trends Genet. 1990;6:182–6.",
+      "volume": "6",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1097/00008571-200401000-00001",
+      "author": "DR Nelson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Pharmacogenetics",
+      "key": "429_CR206",
+      "unstructured": "Nelson DR, Zeldin DC, Hoffman SMG, Maltais LJ, Wain HM, Nebert DW. Comparison of cytochrome P450 (CYP) genes from the mouse and human genomes, including nomenclature recommendations for genes, pseudogenes and alternative-splice variants. Pharmacogenetics. 2004;14:1–18.",
+      "volume": "14",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.plipres.2017.06.001",
+      "author": "DW Nebert",
+      "doi-asserted-by": "publisher",
+      "first-page": "38",
+      "journal-title": "Prog Lipid Res",
+      "key": "429_CR207",
+      "unstructured": "Nebert DW. Aryl hydrocarbon receptor (AHR): “pioneer member” of the basic-helix/loop/helix per-Arnt-sim (bHLH/PAS) family of “sensors” of foreign and endogenous signals. Prog Lipid Res. 2017;67:38–57.",
+      "volume": "67",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12915-017-0454-7",
+      "author": "ER Davenport",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Biol",
+      "key": "429_CR208",
+      "unstructured": "Davenport ER, Sanders JG, Song SJ, Amato KR, Clark AG, Knight R. The human microbiome in evolution. BMC Biol. 2017. https://doi.org/10.1186/s12915-017-0454-7.",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1111/joa.12964",
+      "author": "L Schwertmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "656",
+      "journal-title": "J Anat",
+      "key": "429_CR209",
+      "unstructured": "Schwertmann L, Focke O, Dirks J-H. Morphology, shape variation and movement of skeletal elements in starfish (Asterias rubens). J Anat. 2019;234:656–67.",
+      "volume": "234",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1210/mend-5-9-1203",
+      "author": "DW Nebert",
+      "doi-asserted-by": "publisher",
+      "first-page": "1203",
+      "journal-title": "Mol Endocrinol",
+      "key": "429_CR210",
+      "unstructured": "Nebert DW. Proposed role of drug-metabolizing enzymes: regulation of steady state levels of the ligands that effect growth, homeostasis, differentiation, and neuroendocrine functions. Mol Endocrinol. 1991;5:1203–14.",
+      "volume": "5",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1016/0006-2952(94)90434-0",
+      "author": "DW Nebert",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "journal-title": "Biochem Pharmacol",
+      "key": "429_CR211",
+      "unstructured": "Nebert DW. Drug-metabolizing enzymes in ligand-modulated transcription. Biochem Pharmacol. 1994;47:25–37.",
+      "volume": "47",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1146/annurev.pharmtox.47.120505.105349",
+      "author": "J-M Pascussi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Annu Rev Pharmacol Toxicol",
+      "key": "429_CR212",
+      "unstructured": "Pascussi J-M, Gerbal-Chaloin S, Duret C, Daujat-Chavanieu M, Vilarem M-J, Maurel P. The tangle of nuclear receptors that controls xenobiotic metabolism and transport: crosstalk and consequences. Annu Rev Pharmacol Toxicol. 2008;48:1–32.",
+      "volume": "48",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1098/rstb.2012.0431",
+      "author": "DW Nebert",
+      "doi-asserted-by": "publisher",
+      "first-page": "20120431",
+      "journal-title": "Philos Trans R Soc Lond B Biol Sci",
+      "key": "429_CR213",
+      "unstructured": "Nebert DW, Wikvall K, Miller WL. Human cytochromes P450 in health and disease. Philos Trans R Soc Lond B Biol Sci. 2013;368:20120431.",
+      "volume": "368",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1124/mol.112.080036",
+      "author": "N Scheer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1022",
+      "journal-title": "Mol Pharmacol",
+      "key": "429_CR214",
+      "unstructured": "Scheer N, Kapelyukh Y, Chatham L, Rode A, Buechel S, Wolf CR. Generation and characterization of novel cytochrome P450 Cyp2c gene cluster knockout and CYP2C9 humanized mouse lines. Mol Pharmacol. 2012;82:1022–9.",
+      "volume": "82",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1159/000131404",
+      "author": "TB Shows",
+      "doi-asserted-by": "publisher",
+      "first-page": "96",
+      "journal-title": "Cytogenet Cell Genet",
+      "key": "429_CR215",
+      "unstructured": "Shows TB, Alper CA, Bootsma D, Dorf M, Douglas T, Huisman T, et al. International system for human gene nomenclature (1979) ISGN (1979). Cytogenet Cell Genet. 1979;25:96–116.",
+      "volume": "25",
+      "year": "1979"
+    },
+    {
+      "DOI": "10.1159/000132471",
+      "author": "TB Shows",
+      "doi-asserted-by": "publisher",
+      "first-page": "11",
+      "journal-title": "Cytogenet Cell Genet",
+      "key": "429_CR216",
+      "unstructured": "Shows TB, McAlpine PJ, Boucheix C, Collins FS, Conneally PM, Frézal J, et al. Guidelines for human gene nomenclature: an international system for human gene nomenclature (ISGN, 1987). Cytogenet Cell Genet. 1987;46:11–28.",
+      "volume": "46",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0669-3",
+      "author": "EA Bruford",
+      "doi-asserted-by": "publisher",
+      "first-page": "754",
+      "journal-title": "Nat Genet",
+      "key": "429_CR217",
+      "unstructured": "Bruford EA, Braschi B, Denny P, Jones TEM, Seal RL, Tweedie S. Guidelines for human gene nomenclature. Nat Genet. 2020;52:754–8.",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "author": "GD Snell",
+      "first-page": "34",
+      "key": "429_CR218",
+      "unstructured": "Snell GD. Gene and chromosome mutations. In: Little CC, Snell GD, editors. Biology of the laboratory mouse. Philadelphia: Blakiston Co.; 2012. p. 34–247.",
+      "volume-title": "Biology of the laboratory mouse",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1182/blood-2012-09-435057",
+      "author": "F Borrego",
+      "doi-asserted-by": "publisher",
+      "first-page": "1951",
+      "journal-title": "Blood",
+      "key": "429_CR219",
+      "unstructured": "Borrego F. The CD300 molecules: an emerging family of regulators of the immune system. Blood. 2013;121:1951–60.",
+      "volume": "121",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/eji.201847951",
+      "author": "J Vitallé",
+      "doi-asserted-by": "publisher",
+      "first-page": "364",
+      "journal-title": "Eur J Immunol",
+      "key": "429_CR220",
+      "unstructured": "Vitallé J, Terrén I, Orrantia A, Zenarruzabeitia O, Borrego F. CD300 receptor family in viral infections. Eur J Immunol. 2019;49:364–74.",
+      "volume": "49",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/ijms21093173",
+      "author": "J Vitallé",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Mol Sci",
+      "key": "429_CR221",
+      "unstructured": "Vitallé J, Terrén I, Orrantia A, Bilbao A, Gamboa PM, Borrego F, et al. The expression and function of CD300 molecules in the main players of allergic responses: mast cells, basophils and eosinophils. Int J Mol Sci. 2020. https://doi.org/10.3390/ijms21093173.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1146/annurev.bi.56.070187.004501",
+      "author": "DW Nebert",
+      "doi-asserted-by": "publisher",
+      "first-page": "945",
+      "journal-title": "Annu Rev Biochem",
+      "key": "429_CR222",
+      "unstructured": "Nebert DW, Gonzalez FJ. P450 genes: structure, evolution, and regulation. Annu Rev Biochem. 1987;56:945–93.",
+      "volume": "56",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1089/dna.1987.6.1",
+      "author": "DW Nebert",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "DNA",
+      "key": "429_CR223",
+      "unstructured": "Nebert DW, Adesnik M, Coon MJ, Estabrook RW, Gonzalez FJ, Guengerich FP, et al. The P450 gene superfamily: recommended nomenclature. DNA. 1987;6:1–11.",
+      "volume": "6",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1089/dna.1.1989.8.1",
+      "author": "DW Nebert",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "DNA",
+      "key": "429_CR224",
+      "unstructured": "Nebert DW, Nelson DR, Adesnik M, Coon MJ, Estabrook RW, Gonzalez FJ, et al. The P450 superfamily: updated listing of all genes and recommended nomenclature for the chromosomal loci. DNA. 1989;8:1–13.",
+      "volume": "8",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1016/j.molp.2021.06.028",
+      "author": "CC Hansen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1244",
+      "journal-title": "Mol Plant",
+      "key": "429_CR225",
+      "unstructured": "Hansen CC, Nelson DR, Møller BL, Werck-Reichhart D. Plant cytochrome P450 plasticity and evolution. Mol Plant. 2021;14:1244–65.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1080/10635150701424546",
+      "author": "I Agnarsson",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Syst Biol",
+      "key": "429_CR226",
+      "unstructured": "Agnarsson I, Kuntner M. Taxonomy in a changing world: seeking solutions for a science in crisis. Syst Biol. 2007. https://doi.org/10.1080/10635150701424546.",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1186/s12862-020-01607-6",
+      "author": "T Olender",
+      "doi-asserted-by": "publisher",
+      "first-page": "42",
+      "journal-title": "BMC Evol Biol",
+      "key": "429_CR227",
+      "unstructured": "Olender T, Jones TEM, Bruford E, Lancet D. A unified nomenclature for vertebrate olfactory receptors. BMC Evol Biol. 2020;20:42.",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkaa980",
+      "author": "S Tweedie",
+      "doi-asserted-by": "publisher",
+      "first-page": "D939",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "429_CR228",
+      "unstructured": "Tweedie S, Braschi B, Gray K, Jones TEM, Seal RL, Yates B, et al. Genenames.org: the HGNC and VGNC resources in 2021. Nucleic Acids Res. 2021;49(D1):D939–46.",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.20944/preprints202109.0485.v1",
+      "doi-asserted-by": "crossref",
+      "key": "429_CR229",
+      "unstructured": "McCarthy FM, Jones TEM, Kwitek AE, Smith CL, Vize PD, Westerfield M, et al. The case for standardising gene nomenclature across vertebrates. Preprints; 2021 [cited 2022 Sep 8]; https://www.preprints.org/manuscript/202109.0485/v1"
+    },
+    {
+      "DOI": "10.1089/zeb.2021.0071",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "343",
+      "journal-title": "Zebrafish",
+      "key": "429_CR230",
+      "unstructured": "Dornburg A, Ota T, Criscitiello MF, Irene Salinas J, Sunyer O, Magadán S, et al. From IgZ to IgT: a call for a common nomenclature for immunoglobulin heavy chain genes of ray-finned fish. Zebrafish. 2021;18:343–5. https://doi.org/10.1089/zeb.2021.0071.",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/S0022-2836(05)80360-2",
+      "author": "SF Altschul",
+      "doi-asserted-by": "publisher",
+      "first-page": "403",
+      "journal-title": "J Mol Biol",
+      "key": "429_CR231",
+      "unstructured": "Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ. Basic local alignment search tool. J Mol Biol. 1990;215:403–10.",
+      "volume": "215",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1093/nar/gkn201",
+      "author": "M Johnson",
+      "doi-asserted-by": "publisher",
+      "first-page": "W5",
+      "journal-title": "Nucleic Acids Res",
+      "key": "429_CR232",
+      "unstructured": "Johnson M, Zaretskaya I, Raytselis Y, Merezhuk Y, McGinnis S, Madden TL. NCBI BLAST: a better web interface. Nucleic Acids Res. 2008;36:W5-9.",
+      "volume": "36",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/S0968-0004(01)02039-4",
+      "author": "DT Jones",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "journal-title": "Trends Biochem Sci Elsevier",
+      "key": "429_CR233",
+      "unstructured": "Jones DT, Swindells MB. Getting the most from PSI–BLAST. Trends Biochem Sci Elsevier. 2002;27:161–4.",
+      "volume": "27",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1093/nar/25.17.3389",
+      "author": "SF Altschul",
+      "doi-asserted-by": "publisher",
+      "first-page": "3389",
+      "journal-title": "Nucleic Acids Res",
+      "key": "429_CR234",
+      "unstructured": "Altschul SF, Madden TL, Schäffer AA, Zhang J, Zhang Z, Miller W, et al. Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. Nucleic Acids Res. 1997;25:3389–402.",
+      "volume": "25",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1038/nmeth.3176",
+      "author": "B Buchfink",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "journal-title": "Nat Methods",
+      "key": "429_CR235",
+      "unstructured": "Buchfink B, Xie C, Huson DH. Fast and sensitive protein alignment using DIAMOND. Nat Methods. 2014;12:59–60.",
+      "volume": "12",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1002195",
+      "author": "SR Eddy",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1002195",
+      "journal-title": "PLoS Comput Biol",
+      "key": "429_CR236",
+      "unstructured": "Eddy SR. Accelerated Profile HMM Searches. PLoS Comput Biol. 2011;7:e1002195.",
+      "volume": "7",
+      "year": "2011"
+    },
+    {
+      "author": "SR Eddy",
+      "first-page": "205",
+      "journal-title": "Genome Inform",
+      "key": "429_CR237",
+      "unstructured": "Eddy SR. A new generation of homology search tools based on probabilistic inference. Genome Inform. 2009;23:205–11.",
+      "volume": "23",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/gky1049",
+      "author": "UniProt Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "D506",
+      "journal-title": "Nucleic Acids Res",
+      "key": "429_CR238",
+      "unstructured": "UniProt Consortium. UniProt: a worldwide hub of protein knowledge. Nucleic Acids Res. 2019;47:D506–15.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/molbev/msaa015",
+      "author": "BQ Minh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1530",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR239",
+      "unstructured": "Minh BQ, Schmidt HA, Chernomor O, Schrempf D, Woodhams MD, von Haeseler A, et al. IQ-TREE 2: new models and efficient methods for phylogenetic inference in the genomic era. Mol Biol Evol. 2020;37:1530–4.",
+      "volume": "37",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/sysbio/syw021",
+      "author": "S Höhna",
+      "doi-asserted-by": "publisher",
+      "first-page": "726",
+      "journal-title": "Syst Biol Oxford Academic",
+      "key": "429_CR240",
+      "unstructured": "Höhna S, Landis MJ, Heath TA, Boussau B, Lartillot N, Moore BR, et al. RevBayes: bayesian phylogenetic inference using graphical models and an interactive model-specification language. Syst Biol Oxford Academic. 2016;65:726–36.",
+      "volume": "65",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/sysbio/syw042",
+      "author": "PO Lewis",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Syst Biol",
+      "key": "429_CR241",
+      "unstructured": "Lewis PO, Chen M-H, Kuo L, Lewis LA, Fučíková K, Neupane S, et al. Estimating bayesian phylogenetic information content. Syst Biol. 2016. https://doi.org/10.1093/sysbio/syw042.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature12130",
+      "author": "L Salichos",
+      "doi-asserted-by": "publisher",
+      "first-page": "327",
+      "journal-title": "Nature",
+      "key": "429_CR242",
+      "unstructured": "Salichos L, Leonidas S, Antonis R. Inferring ancient divergences requires genes with strong phylogenetic signals. Nature. 2013;497:327–31.",
+      "volume": "497",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/sysbio/syv059",
+      "author": "M-Y Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1104",
+      "journal-title": "Syst Biol",
+      "key": "429_CR243",
+      "unstructured": "Chen M-Y, Liang D, Zhang P. Selecting question-specific genes to reduce incongruence in phylogenomics: a case study of jawed vertebrate backbone phylogeny. Syst Biol. 2015;64:1104–20.",
+      "volume": "64",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/molbev/mst116",
+      "author": "J Romiguier",
+      "doi-asserted-by": "publisher",
+      "first-page": "2134",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR244",
+      "unstructured": "Romiguier J, Ranwez V, Delsuc F, Galtier N, Douzery EJP. Less is more in mammalian phylogenomics: AT-rich genes minimize tree conflicts and unravel the root of placental mammals. Mol Biol Evol. 2013;30:2134–44.",
+      "volume": "30",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41559-017-0126",
+      "author": "X-X Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "126",
+      "journal-title": "Nat Ecol Evol",
+      "key": "429_CR245",
+      "unstructured": "Shen X-X, Hittinger CT, Rokas A. Contentious relationships in phylogenomic studies can be driven by a handful of genes. Nat Ecol Evol. 2017;1:126.",
+      "volume": "1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/sysbio/sys036",
+      "author": "JP Townsend",
+      "doi-asserted-by": "publisher",
+      "first-page": "835",
+      "journal-title": "Syst Biol",
+      "key": "429_CR246",
+      "unstructured": "Townsend JP, Su Z, Tekle YI. Phylogenetic signal and noise: predicting the power of a data set to resolve phylogeny. Syst Biol. 2012;61:835–49.",
+      "volume": "61",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.ympev.2015.05.027",
+      "author": "PS Gilbert",
+      "doi-asserted-by": "publisher",
+      "first-page": "140",
+      "journal-title": "Mol Phylogenet Evol",
+      "key": "429_CR247",
+      "unstructured": "Gilbert PS, Chang J, Pan C, Sobel EM, Sinsheimer JS, Faircloth BC, et al. Genome-wide ultraconserved elements exhibit higher phylogenetic informativeness than traditional gene markers in percomorph fishes. Mol Phylogenet Evol. 2015;92:140–6.",
+      "volume": "92",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12862-015-0416-z",
+      "author": "C Granados Mendoza",
+      "doi-asserted-by": "publisher",
+      "first-page": "132",
+      "journal-title": "BMC Evol Biol",
+      "key": "429_CR248",
+      "unstructured": "Granados Mendoza C, Naumann J, Samain M-S, Goetghebeur P, De Smet Y, Wanke S. A genome-scale mining strategy for recovering novel rapidly-evolving nuclear single-copy genes for addressing shallow-scale phylogenetics in Hydrangea. BMC Evol Biol. 2015;15:132.",
+      "volume": "15",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/bs.adgen.2017.09.007",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Adv Genet",
+      "key": "429_CR249",
+      "unstructured": "Dornburg A, Townsend JP, Wang Z. Maximizing power in phylogenetics and phylogenomics: a perspective illuminated by fungal big data. Adv Genet. 2017;100:1–47.",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/sysbio/syy047",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "journal-title": "Syst Biol",
+      "key": "429_CR250",
+      "unstructured": "Dornburg A, Su Z, Townsend JP. Optimal rates for phylogenetic inference and experimental design in the era of genome-scale data sets. Syst Biol. 2019;68:145–56.",
+      "volume": "68",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pbio.3000862",
+      "author": "CM Weisman",
+      "doi-asserted-by": "publisher",
+      "first-page": "e3000862",
+      "journal-title": "PLoS Biol",
+      "key": "429_CR251",
+      "unstructured": "Weisman CM, Murray AW, Eddy SR. Many, but not all, lineage-specific genes can be explained by homology detection failure. PLoS Biol. 2020;18:e3000862.",
+      "volume": "18",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/sysbio/43.2.174",
+      "author": "A Graybeal",
+      "doi-asserted-by": "publisher",
+      "first-page": "174",
+      "journal-title": "Syst Biol",
+      "key": "429_CR252",
+      "unstructured": "Graybeal A. Evaluating the phylogenetic utility of genes: a search for genes informative about deep divergences among vertebrates. Syst Biol. 1994;43:174–93.",
+      "volume": "43",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1016/j.ympev.2010.04.036",
+      "author": "DM Roje",
+      "doi-asserted-by": "publisher",
+      "first-page": "586",
+      "journal-title": "Mol Phylogenet Evol",
+      "key": "429_CR253",
+      "unstructured": "Roje DM. Incorporating molecular phylogenetics with larval morphology while mitigating the effects of substitution saturation on phylogeny estimation: a new hypothesis of relationships for the flatfish family pleuronectidae (Percomorpha: Pleuronectiformes). Mol Phylogenet Evol. 2010;56:586–600.",
+      "volume": "56",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1080/10635150500541672",
+      "author": "RL Mueller",
+      "doi-asserted-by": "publisher",
+      "first-page": "289",
+      "journal-title": "Syst Biol",
+      "key": "429_CR254",
+      "unstructured": "Mueller RL. Evolutionary rates, divergence dates, and the performance of mitochondrial genes in Bayesian phylogenetic analysis. Syst Biol. 2006;55:289–300.",
+      "volume": "55",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.ympev.2017.02.017",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "journal-title": "Mol Phylogenet Evol",
+      "key": "429_CR255",
+      "unstructured": "Dornburg A, Townsend JP, Brooks W, Spriggs E, Eytan RI, Moore JA, et al. New insights on the sister lineage of percomorph fishes with an anchored hybrid enrichment dataset. Mol Phylogenet Evol. 2017;110:27–38.",
+      "volume": "110",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/sysbio/syab075",
+      "author": "DA Duchêne",
+      "doi-asserted-by": "publisher",
+      "first-page": "676",
+      "journal-title": "Syst Biol",
+      "key": "429_CR256",
+      "unstructured": "Duchêne DA, Mather N, Van Der Wal C, Ho SYW. Excluding loci with substitution saturation improves inferences from phylogenomic data. Syst Biol. 2022;71:676–89.",
+      "volume": "71",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1371/journal.pbio.1000602",
+      "author": "H Philippe",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1000602",
+      "journal-title": "PLoS Biol",
+      "key": "429_CR257",
+      "unstructured": "Philippe H, Brinkmann H, Lavrov DV, Littlewood DTJ, Manuel M, Wörheide G, et al. Resolving difficult phylogenetic questions: why more sequences are not enough. PLoS Biol. 2011;9:e1000602.",
+      "volume": "9",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.7287/peerj.preprints.27521",
+      "doi-asserted-by": "publisher",
+      "key": "429_CR258",
+      "unstructured": "Field DJ, Berv JS, Hsiang AY, Lanfear R, Landis MJ, Dornburg A. Timing the extant avian radiation: The rise of modern birds, and the importance of modeling molecular rate variation. https://doi.org/10.7287/peerj.preprints.27521."
+    },
+    {
+      "DOI": "10.1016/j.ympev.2012.01.003",
+      "author": "JA Rosenfeld",
+      "doi-asserted-by": "publisher",
+      "first-page": "342",
+      "issue": "2",
+      "journal-title": "Mol Phylogenet Evol",
+      "key": "429_CR259",
+      "unstructured": "Rosenfeld JA, DeSalle R. E value cutoff and eukaryotic genome content phylogenetics. Mol Phylogenet Evol. 2012;63(2):342–50. https://doi.org/10.1016/j.ympev.2012.01.003.",
+      "volume": "63",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/sysbio/syq025",
+      "author": "JP Townsend",
+      "doi-asserted-by": "publisher",
+      "first-page": "446",
+      "journal-title": "Syst Biol",
+      "key": "429_CR260",
+      "unstructured": "Townsend JP, Lopez-Giraldez F. Optimal selection of gene and ingroup taxon sampling for resolving phylogenetic relationships. Syst Biol. 2010;59:446–57.",
+      "volume": "59",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/sysbio/syq097",
+      "author": "JP Townsend",
+      "doi-asserted-by": "publisher",
+      "first-page": "358",
+      "issue": "3",
+      "journal-title": "Syst Biol",
+      "key": "429_CR261",
+      "unstructured": "Townsend JP, Leuenberger C. Taxon sampling and the optimal rates of evolution for phylogenetic inference. Syst Biol. 2011;60(3):358–65. https://doi.org/10.1093/sysbio/syq097.",
+      "volume": "60",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/sysbio/syt039",
+      "author": "R Betancur-R",
+      "doi-asserted-by": "publisher",
+      "first-page": "763",
+      "journal-title": "Syst Biol",
+      "key": "429_CR262",
+      "unstructured": "Betancur-R R, Li C, Munroe TA, Ballesteros JA, Ortí G. Addressing gene tree discordance and non-stationarity to resolve a multi-locus phylogeny of the flatfishes (Teleostei: Pleuronectiformes). Syst Biol. 2013;62:763–85.",
+      "volume": "62",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/molbev/mss239",
+      "author": "N Lartillot",
+      "doi-asserted-by": "publisher",
+      "first-page": "489",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR263",
+      "unstructured": "Lartillot N. Phylogenetic patterns of GC-biased gene conversion in placental mammals and the evolutionary dynamics of recombination landscapes. Mol Biol Evol. 2013;30:489–502.",
+      "volume": "30",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/s00239-008-9142-0",
+      "author": "JP Townsend",
+      "doi-asserted-by": "publisher",
+      "first-page": "437",
+      "journal-title": "J Mol Evol",
+      "key": "429_CR264",
+      "unstructured": "Townsend JP, López-Giráldez F, Friedman R. The phylogenetic informativeness of nucleotide and amino acid sequences for reconstructing the vertebrate tree. J Mol Evol. 2008;67:437–47.",
+      "volume": "67",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/s12862-014-0169-0",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "169",
+      "journal-title": "BMC Evol Biol",
+      "key": "429_CR265",
+      "unstructured": "Dornburg A, Townsend JP, Friedman M, Near TJ. Phylogenetic informativeness reconciles ray-finned fish molecular divergence times. BMC Evol Biol. 2014;14:169.",
+      "volume": "14",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.ympev.2019.01.025",
+      "author": "E Parker",
+      "doi-asserted-by": "publisher",
+      "first-page": "282",
+      "journal-title": "Mol Phylogenet Evol",
+      "key": "429_CR266",
+      "unstructured": "Parker E, Dornburg A, Domínguez-Domínguez O, Piller KR. Assessing phylogenetic information to reveal uncertainty in historical data: An example using Goodeinae (Teleostei: Cyprinodontiformes: Goodeidae). Mol Phylogenet Evol. 2019;134:282–90.",
+      "volume": "134",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12862-016-0837-3",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "262",
+      "journal-title": "BMC Evol Biol",
+      "key": "429_CR267",
+      "unstructured": "Dornburg A, Fisk JN, Tamagnan J, Townsend JP. PhyInformR: phylogenetic experimental design and phylogenomic data exploration in R. BMC Evol Biol. 2016;16:262.",
+      "volume": "16",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature01771",
+      "author": "B Papp",
+      "doi-asserted-by": "publisher",
+      "first-page": "194",
+      "journal-title": "Nature",
+      "key": "429_CR268",
+      "unstructured": "Papp B, Pál C, Hurst LD. Dosage sensitivity and the evolution of gene families in yeast. Nature. 2003;424:194–7.",
+      "volume": "424",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1002/9780470619902.ch16",
+      "author": "S Kuraku",
+      "doi-asserted-by": "crossref",
+      "first-page": "299",
+      "key": "429_CR269",
+      "unstructured": "Kuraku S, Meyer A. Whole genome duplications and the radiation of vertebrates. In: Dittmar K, Liberles D, editors. Evolution after gene duplication. Hoboken: Wiley; 2010. p. 299–311.",
+      "volume-title": "Evolution after gene duplication",
+      "year": "2010"
+    },
+    {
+      "author": "S Ohno",
+      "key": "429_CR270",
+      "unstructured": "Ohno S. Evolution by Gene Duplication. Cham: Springer; 2014.",
+      "volume-title": "Evolution by Gene Duplication",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/molbev/msh217",
+      "author": "S Yokoyama",
+      "doi-asserted-by": "publisher",
+      "first-page": "2071",
+      "journal-title": "Mol Biol Evol",
+      "key": "429_CR271",
+      "unstructured": "Yokoyama S, Takenaka N. The molecular basis of adaptive evolution of squirrelfish rhodopsins. Mol Biol Evol. 2004;21:2071–8.",
+      "volume": "21",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1146/annurev-ecolsys-121415-032254",
+      "author": "JT Stroud",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Ann Rev Ecol Evol Syst",
+      "key": "429_CR272",
+      "unstructured": "Stroud JT, Losos JB. Ecological opportunity and adaptive radiation. Ann Rev Ecol Evol Syst. 2016. https://doi.org/10.1146/annurev-ecolsys-121415-032254.",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1111/j.1558-5646.2011.01275.x",
+      "author": "A Dornburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "1912",
+      "journal-title": "Evolution",
+      "key": "429_CR273",
+      "unstructured": "Dornburg A, Sidlauskas B, Santini F, Sorenson L, Near TJ, Alfaro ME. The influence of an innovative locomotor strategy on the phenotypic diversification of triggerfish (family: Balistidae). Evolution. 2011;65:1912–26.",
+      "volume": "65",
+      "year": "2011"
+    },
+    {
+      "author": "SA Price",
+      "first-page": "20140321",
+      "journal-title": "Proc Biol Sci",
+      "key": "429_CR274",
+      "unstructured": "Price SA, Schmitz L, Oufiero CE, Eytan RI, Dornburg A, Smith WL, et al. Two waves of colonization straddling the K-Pg boundary formed the modern reef fish fauna. Proc Biol Sci. 2014;281:20140321.",
+      "volume": "281",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41559-019-0914-2",
+      "author": "JM Daane",
+      "doi-asserted-by": "publisher",
+      "first-page": "1102",
+      "journal-title": "Nat Ecol Evol",
+      "key": "429_CR275",
+      "unstructured": "Daane JM, Dornburg A, Smits P, MacGuigan DJ, Brent Hawkins M, Near TJ, et al. Historical contingency shapes adaptive radiation in Antarctic fishes. Nat Ecol Evol. 2019;3:1102–9.",
+      "volume": "3",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature13726",
+      "author": "D Brawand",
+      "doi-asserted-by": "publisher",
+      "first-page": "375",
+      "journal-title": "Nature",
+      "key": "429_CR276",
+      "unstructured": "Brawand D, Wagner CE, Li YI, Malinsky M, Keller I, Fan S, et al. The genomic substrate for adaptive radiation in African cichlid fish. Nature. 2014;513:375–81.",
+      "volume": "513",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.2307/j.ctvjsf433",
+      "author": "SJ Gould",
+      "doi-asserted-by": "publisher",
+      "key": "429_CR277",
+      "unstructured": "Gould SJ. The structure of evolutionary theory. Harvard: Harvard University Press; 2002.",
+      "volume-title": "The structure of evolutionary theory",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1007/s00285-006-0040-z",
+      "author": "R Rudnicki",
+      "doi-asserted-by": "publisher",
+      "first-page": "759",
+      "journal-title": "J Math Biol Springer",
+      "key": "429_CR278",
+      "unstructured": "Rudnicki R, Tiuryn J, Wójtowicz D. A model for the evolution of paralog families in genomes. J Math Biol Springer. 2006;53:759–70.",
+      "volume": "53",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btl097",
+      "author": "T De Bie",
+      "doi-asserted-by": "publisher",
+      "first-page": "1269",
+      "issue": "10",
+      "journal-title": "Bioinformatics",
+      "key": "429_CR279",
+      "unstructured": "De Bie T, Cristianini N, Demuth JP, Hahn MW. CAFE: a computational tool for the study of gene family evolution. Bioinformatics. 2006;22(10):1269–71. https://doi.org/10.1093/bioinformatics/btl097.",
+      "volume": "22",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1089/cmb.2008.0054",
+      "author": "C Chauve",
+      "doi-asserted-by": "publisher",
+      "first-page": "1043",
+      "journal-title": "J Comput Biol",
+      "key": "429_CR280",
+      "unstructured": "Chauve C, Doyon J-P, El-Mabrouk N. Gene family evolution by duplication, speciation, and loss. J Comput Biol. 2008;15:1043–62. https://doi.org/10.1089/cmb.2008.0054.",
+      "volume": "15",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1001192",
+      "author": "L Abi-Rached",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1001192",
+      "journal-title": "PLoS Genet",
+      "key": "429_CR281",
+      "unstructured": "Abi-Rached L, Moesta AK, Rajalingam R, Guethlein LA, Parham P. Human-specific evolution and adaptation led to major qualitative differences in the variable receptors of human and chimpanzee natural killer cells. PLoS Genet. 2010;6:e1001192.",
+      "volume": "6",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.4049/jimmunol.1602163",
+      "author": "LA Guethlein",
+      "doi-asserted-by": "publisher",
+      "first-page": "3157",
+      "journal-title": "J Immunol",
+      "key": "429_CR282",
+      "unstructured": "Guethlein LA, Norman PJ, Heijmans CMC, de Groot NG, Hilton HG, Babrzadeh F, et al. Two orangutan species have evolved different KIR alleles and haplotypes. J Immunol. 2017;198:3157–69.",
+      "volume": "198",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3389/fimmu.2019.00177",
+      "author": "EE Wroblewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "177",
+      "journal-title": "Front Immunol",
+      "key": "429_CR283",
+      "unstructured": "Wroblewski EE, Parham P, Guethlein LA. Two to Tango: co-evolution of hominid natural killer cell receptors and MHC. Front Immunol. 2019;10:177.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/S0960-9822(01)00148-8",
+      "author": "DL Mager",
+      "doi-asserted-by": "publisher",
+      "first-page": "626",
+      "journal-title": "Curr Biol",
+      "key": "429_CR284",
+      "unstructured": "Mager DL, McQueen KL, Wee V, Freeman JD. Evolution of natural killer cell receptors: coexistence of functional Ly49 and KIR genes in baboons. Curr Biol. 2001;11:626–30.",
+      "volume": "11",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1007/s00251-022-01259-4",
+      "author": "J Bruijnesteijn",
+      "doi-asserted-by": "publisher",
+      "first-page": "313",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR285",
+      "unstructured": "Bruijnesteijn J, de Groot N, de Vos-Rouweler AJM, de Groot NG, Bontrop RE. Comparative genetics of KIR haplotype diversity in humans and rhesus macaques: the balancing act. Immunogenetics. 2022;74:313–26.",
+      "volume": "74",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s00251-008-0342-y",
+      "author": "LF Cadavid",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR286",
+      "unstructured": "Cadavid LF, Lun C-M. Lineage-specific diversification of killer cell Ig-like receptors in the owl monkey, a New World primate. Immunogenetics. 2009;61:27–41.",
+      "volume": "61",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000688",
+      "author": "A Averdam",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1000688",
+      "journal-title": "PLoS Genet",
+      "key": "429_CR287",
+      "unstructured": "Averdam A, Petersen B, Rosner C, Neff J, Roos C, Eberle M, et al. A novel system of polymorphic and diverse NK cell receptors in primates. PLoS Genet. 2009;5:e1000688.",
+      "volume": "5",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.4049/jimmunol.170.5.2259",
+      "author": "SE Hoelsbrekken",
+      "doi-asserted-by": "publisher",
+      "first-page": "2259",
+      "journal-title": "J Immunol",
+      "key": "429_CR288",
+      "unstructured": "Hoelsbrekken SE, Nylenna Ø, Saether PC, Slettedal IO, Ryan JC, Fossum S, et al. Cutting edge: molecular cloning of a killer cell Ig-like receptor in the mouse and rat. J Immunol. 2003;170:2259–63.",
+      "volume": "170",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1007/s00251-006-0110-9",
+      "author": "JG Sambrook",
+      "doi-asserted-by": "publisher",
+      "first-page": "481",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR289",
+      "unstructured": "Sambrook JG, Sehra H, Coggill P, Humphray S, Palmer S, Sims S, et al. Identification of a single killer immunoglobulin-like receptor (KIR) gene in the porcine leukocyte receptor complex on chromosome 6q. Immunogenetics. 2006;58:481–6.",
+      "volume": "58",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1007/s002510050675",
+      "author": "R Barten",
+      "doi-asserted-by": "publisher",
+      "first-page": "731",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR290",
+      "unstructured": "Barten R, Trowsdale J. The human Ly-49L gene. Immunogenetics. 1999;49:731–4.",
+      "volume": "49",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.4049/jimmunol.169.1.220",
+      "author": "LA Guethlein",
+      "doi-asserted-by": "publisher",
+      "first-page": "220",
+      "journal-title": "J Immunol",
+      "key": "429_CR291",
+      "unstructured": "Guethlein LA, Flodin LR, Adams EJ, Parham P. NK cell receptors of the orangutan (Pongo pygmaeus): a pivotal species for tracking the coevolution of killer cell Ig-like receptors with MHC-C. J Immunol. 2002;169:220–9.",
+      "volume": "169",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1007/s00251-003-0558-9",
+      "author": "L Gagnier",
+      "doi-asserted-by": "publisher",
+      "first-page": "109",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR292",
+      "unstructured": "Gagnier L, Wilhelm BT, Mager DL. Ly49 genes in non-rodent mammals. Immunogenetics. 2003;55:109–15.",
+      "volume": "55",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1007/s00251-017-0973-y",
+      "author": "JC Schwartz",
+      "doi-asserted-by": "publisher",
+      "first-page": "255",
+      "journal-title": "Immunogenetics",
+      "key": "429_CR293",
+      "unstructured": "Schwartz JC, Gibson MS, Heimeier D, Koren S, Phillippy AM, Bickhart DM, et al. The evolution of the natural killer complex; a comparison between mammals using new high-quality genome assemblies and targeted annotation. Immunogenetics. 2017;69:255–69.",
+      "volume": "69",
+      "year": "2017"
+    },
+    {
+      "author": "J Futas",
+      "first-page": "257",
+      "journal-title": "Hladnikia",
+      "key": "429_CR294",
+      "unstructured": "Futas J, Oppelt J, Janova E, Musilova P, Horin P. Complex variation in the KLRA (LY49) immunity-related genomic region in horses. Hladnikia. 2020;96:257–67.",
+      "volume": "96",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0958-1669(00)00142-7",
+      "author": "HL Holland",
+      "doi-asserted-by": "publisher",
+      "first-page": "547",
+      "journal-title": "Curr Opin Biotechnol",
+      "key": "429_CR295",
+      "unstructured": "Holland HL, Weber HK. Enzymatic hydroxylation reactions. Curr Opin Biotechnol. 2000;11:547–53.",
+      "volume": "11",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1038/s43586-021-00044-z",
+      "author": "EL Bell",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Rev Methods Primers",
+      "key": "429_CR296",
+      "unstructured": "Bell EL, Finnigan W, France SP, Green AP, Hayes MA, Hepworth LJ, et al. Biocatalysis. Nat Rev Methods Primers. 2021. https://doi.org/10.1038/s43586-021-00044-z.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1006/abbi.1999.1352",
+      "author": "DR Nelson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Arch Biochem Biophys",
+      "key": "429_CR297",
+      "unstructured": "Nelson DR. Cytochrome P450 and the individuality of species. Arch Biochem Biophys. 1999;369:1–10.",
+      "volume": "369",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1097/00008571-200402000-00006",
+      "author": "D Hernandez",
+      "doi-asserted-by": "publisher",
+      "first-page": "117",
+      "journal-title": "Pharmacogenetics",
+      "key": "429_CR298",
+      "unstructured": "Hernandez D, Janmohamed A, Chandan P, Phillips IR, Shephard EA. Organization and evolution of the flavin-containing monooxygenase genes of human and mouse: identification of novel gene and pseudogene clusters. Pharmacogenetics. 2004;14:117–30.",
+      "volume": "14",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.pharmthera.2005.01.001",
+      "author": "SK Krueger",
+      "doi-asserted-by": "publisher",
+      "first-page": "357",
+      "journal-title": "Pharmacol Ther",
+      "key": "429_CR299",
+      "unstructured": "Krueger SK, Williams DE. Mammalian flavin-containing monooxygenases: structure/function, genetic polymorphisms and role in drug metabolism. Pharmacol Ther. 2005;106:357–87.",
+      "volume": "106",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.cbi.2016.11.029",
+      "author": "H Jörnvall",
+      "doi-asserted-by": "publisher",
+      "first-page": "75",
+      "journal-title": "Chem Biol Interact",
+      "key": "429_CR300",
+      "unstructured": "Jörnvall H. MDR-alcohol dehydrogenases. Chem Biol Interact. 2017;276:75–6.",
+      "volume": "276",
+      "year": "2017"
+    },
+    {
+      "author": "RS Holmes",
+      "first-page": "127",
+      "journal-title": "Alcohol Alcohol Suppl",
+      "key": "429_CR301",
+      "unstructured": "Holmes RS. Alcohol dehydrogenases: a family of isozymes with differential functions. Alcohol Alcohol Suppl. 1994;2:127–30.",
+      "volume": "2",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1097/00008571-199910000-00004",
+      "author": "V Vasiliou",
+      "doi-asserted-by": "crossref",
+      "first-page": "421",
+      "journal-title": "Pharmacogenetics",
+      "key": "429_CR302",
+      "unstructured": "Vasiliou V, Bairoch A, Tipton KF, Nebert DW. Eukaryotic aldehyde dehydrogenase (ALDH) genes: human polymorphisms, and recommended nomenclature based on divergent evolution and chromosomal mapping. Pharmacogenetics. 1999;9:421–34.",
+      "volume": "9",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.3389/fmolb.2021.659550",
+      "author": "K Shortall",
+      "doi-asserted-by": "publisher",
+      "first-page": "659550",
+      "journal-title": "Front Mol Biosci",
+      "key": "429_CR303",
+      "unstructured": "Shortall K, Djeghader A, Magner E, Soulimane T. Insights into aldehyde dehydrogenase enzymes: a structural perspective. Front Mol Biosci. 2021;8:659550.",
+      "volume": "8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/emm.2017.11",
+      "author": "K Hyun",
+      "doi-asserted-by": "publisher",
+      "first-page": "e324",
+      "journal-title": "Exp Mol Med",
+      "key": "429_CR304",
+      "unstructured": "Hyun K, Jeon J, Park K, Kim J. Writing, erasing and reading histone lysine methylations. Exp Mol Med. 2017;49:e324.",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2012.11.006",
+      "author": "JC Black",
+      "doi-asserted-by": "publisher",
+      "first-page": "491",
+      "journal-title": "Mol Cell",
+      "key": "429_CR305",
+      "unstructured": "Black JC, Van Rechem C, Whetstine JR. Histone lysine methylation dynamics: establishment, regulation, and biological impact. Mol Cell. 2012;48:491–507.",
+      "volume": "48",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1007/978-981-10-7757-9_5",
+      "author": "DE Edmondson",
+      "doi-asserted-by": "publisher",
+      "first-page": "117",
+      "journal-title": "Subcell Biochem",
+      "key": "429_CR306",
+      "unstructured": "Edmondson DE, Binda C. Monoamine oxidases. Subcell Biochem. 2018;87:117–39.",
+      "volume": "87",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1046/j.1472-8206.2001.00011.x",
+      "author": "MS Benedetti",
+      "doi-asserted-by": "publisher",
+      "first-page": "75",
+      "journal-title": "Fundam Clin Pharmacol",
+      "key": "429_CR307",
+      "unstructured": "Benedetti MS. Biotransformation of xenobiotics by amine oxidases. Fundam Clin Pharmacol. 2001;15:75–84.",
+      "volume": "15",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1016/j.foodres.2021.110266",
+      "author": "FK de Oliveira",
+      "doi-asserted-by": "publisher",
+      "first-page": "110266",
+      "journal-title": "Food Res Int",
+      "key": "429_CR308",
+      "unstructured": "de Oliveira FK, Santos LO, Buffon JG. Mechanism of action, sources, and application of peroxidases. Food Res Int. 2021;143:110266.",
+      "volume": "143",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/S0009-2797(00)00201-5",
+      "author": "PJ O’Brien",
+      "doi-asserted-by": "publisher",
+      "first-page": "113",
+      "journal-title": "Chem Biol Interact",
+      "key": "429_CR309",
+      "unstructured": "O’Brien PJ. Peroxidases. Chem Biol Interact. 2000;129:113–39.",
+      "volume": "129",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1007/s13238-010-0113-z",
+      "author": "MM Goyal",
+      "doi-asserted-by": "publisher",
+      "first-page": "888",
+      "journal-title": "Protein Cell",
+      "key": "429_CR310",
+      "unstructured": "Goyal MM, Basak A. Human catalase: looking for complete identity. Protein Cell. 2010;1:888–97.",
+      "volume": "1",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1089/ars.2008.2046",
+      "author": "M Zamocky",
+      "doi-asserted-by": "publisher",
+      "first-page": "1527",
+      "journal-title": "Antioxid Redox Signal",
+      "key": "429_CR311",
+      "unstructured": "Zamocky M, Furtmüller PG, Obinger C. Evolution of catalases from bacteria to humans. Antioxid Redox Signal. 2008;10:1527–48.",
+      "volume": "10",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.biotechadv.2017.06.003",
+      "author": "AT Martínez",
+      "doi-asserted-by": "publisher",
+      "first-page": "815",
+      "journal-title": "Biotechnol Adv",
+      "key": "429_CR312",
+      "unstructured": "Martínez AT, Ruiz-Dueñas FJ, Camarero S, Serrano A, Linde D, Lund H, et al. Oxidoreductases on their way to industrial biotransformations. Biotechnol Adv. 2017;35:815–31.",
+      "volume": "35",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1021/tx500444e",
+      "author": "S Rendic",
+      "doi-asserted-by": "publisher",
+      "first-page": "38",
+      "journal-title": "Chem Res Toxicol",
+      "key": "429_CR313",
+      "unstructured": "Rendic S, Guengerich FP. Survey of human oxidoreductases and cytochrome p450 enzymes involved in the metabolism of xenobiotic and natural chemicals. Chem Res Toxicol. 2015;28:38–42.",
+      "volume": "28",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1007/978-3-319-12108-6_2",
+      "author": "L Waskell",
+      "doi-asserted-by": "crossref",
+      "first-page": "33",
+      "key": "429_CR314",
+      "unstructured": "Waskell L, Kim J-JP. Electron transfer partners of cytochrome P450. In: Paul R, de Montellano O, editors. Cytochrome P450. Cham: Springer; 2015. p. 33–68.",
+      "volume-title": "Cytochrome P450",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/S0891-5849(00)00308-7",
+      "author": "S Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "276",
+      "journal-title": "Free Radic Biol Med",
+      "key": "429_CR315",
+      "unstructured": "Chen S, Wu K, Knox R. Structure-function studies of DT-diaphorase (NQO1) and NRH: quinone oxidoreductase (NQO2). Free Radic Biol Med. 2000;29:276–84.",
+      "volume": "29",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1016/j.cbi.2014.09.024",
+      "author": "TM Penning",
+      "doi-asserted-by": "publisher",
+      "first-page": "236",
+      "journal-title": "Chem Biol Interact",
+      "key": "429_CR316",
+      "unstructured": "Penning TM. The aldo-keto reductases (AKRs): overview. Chem Biol Interact. 2015;234:236–46.",
+      "volume": "234",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/S0009-2797(00)00196-4",
+      "author": "GL Forrest",
+      "doi-asserted-by": "publisher",
+      "first-page": "21",
+      "journal-title": "Chem Biol Interact",
+      "key": "429_CR317",
+      "unstructured": "Forrest GL, Gonzalez B. Carbonyl reductase. Chem Biol Interact. 2000;129:21–40.",
+      "volume": "129",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1110/ps.26902",
+      "author": "Y Kallberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "636",
+      "journal-title": "Protein Sci",
+      "key": "429_CR318",
+      "unstructured": "Kallberg Y, Oppermann U, Jörnvall H, Persson B. Short-chain dehydrogenase/reductase (SDR) relationships: a large family with eight clusters common to human, animal, and plant genomes. Protein Sci. 2002;11:636–41.",
+      "volume": "11",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1002/anie.201800343",
+      "author": "J Dong",
+      "doi-asserted-by": "publisher",
+      "first-page": "9238",
+      "journal-title": "Angew Chem Int Ed Engl",
+      "key": "429_CR319",
+      "unstructured": "Dong J, Fernández-Fueyo E, Hollmann F, Paul CE, Pesic M, Schmidt S, et al. Biocatalytic oxidation reactions: a chemist’s perspective. Angew Chem Int Ed Engl. 2018;57:9238–61.",
+      "volume": "57",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1124/dmd.115.063339",
+      "author": "SD Kodani",
+      "doi-asserted-by": "publisher",
+      "first-page": "788",
+      "issue": "5",
+      "journal-title": "Drug Metab Dispos",
+      "key": "429_CR320",
+      "unstructured": "Kodani SD, Hammock BD. The 2014 Bernard B. brodie award lecture—epoxide hydrolases: drug metabolism to therapeutics for chronic pain. Drug Metab Dispos. 2015;43(5):788–802. https://doi.org/10.1124/dmd.115.063339.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3390/ijms22010013",
+      "author": "J Gautheron",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Int J Mol Sci",
+      "key": "429_CR321",
+      "unstructured": "Gautheron J, Jéru I. The multifaceted role of epoxide hydrolases in human health and disease. Int J Mol Sci. 2020. https://doi.org/10.3390/ijms22010013.",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.biotechadv.2020.107574",
+      "author": "Z Wu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Biotechnol Adv",
+      "key": "429_CR322",
+      "unstructured": "Wu Z, Liu C, Zhang Z, Zheng R, Zheng Y. Amidase as a versatile tool in amide-bond cleavage: From molecular features to biotechnological applications. Biotechnol Adv. 2020;43: 107574.",
+      "volume": "43",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S1387-2656(08)70056-5",
+      "author": "HW Anthonsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "315",
+      "journal-title": "Biotechnol Annu Rev",
+      "key": "429_CR323",
+      "unstructured": "Anthonsen HW, Baptista A, Drabløs F, Martel P, Petersen SB, Sebastião M, et al. Lipases and esterases: a review of their sequences, structure and evolution. Biotechnol Annu Rev. 1995;1:315–71.",
+      "volume": "1",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1016/S0300-9084(00)01188-3",
+      "author": "P Fojan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1033",
+      "journal-title": "Biochimie",
+      "key": "429_CR324",
+      "unstructured": "Fojan P, Jonson PH, Petersen MT, Petersen SB. What distinguishes an esterase from a lipase: a novel structural approach. Biochimie. 2000;82:1033–41.",
+      "volume": "82",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2011.12.018",
+      "author": "R Zechner",
+      "doi-asserted-by": "publisher",
+      "first-page": "279",
+      "journal-title": "Cell Metab",
+      "key": "429_CR325",
+      "unstructured": "Zechner R, Zimmermann R, Eichmann TO, Kohlwein SD, Haemmerle G, Lass A, et al. FAT SIGNALS–lipases and lipolysis in lipid metabolism and signaling. Cell Metab. 2012;15:279–91.",
+      "volume": "15",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1152/physrev.00058.2017",
+      "author": "R Meech",
+      "doi-asserted-by": "publisher",
+      "first-page": "1153",
+      "journal-title": "Physiol Rev",
+      "key": "429_CR326",
+      "unstructured": "Meech R, Hu DG, McKinnon RA, Mubarokah SN, Haines AZ, Nair PC, et al. The UDP-glycosyltransferase (UGT) superfamily: new members, new functions, and novel paradigms. Physiol Rev. 2019;99:1153–222.",
+      "volume": "99",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.dmpk.2014.12.001",
+      "author": "S Oda",
+      "doi-asserted-by": "publisher",
+      "first-page": "30",
+      "journal-title": "Drug Metab Pharmacokinet",
+      "key": "429_CR327",
+      "unstructured": "Oda S, Fukami T, Yokoi T, Nakajima M. A comprehensive review of UDP-glucuronosyltransferase and esterases for drug development. Drug Metab Pharmacokinet. 2015;30:30–51.",
+      "volume": "30",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/1479-7364-1-6-460",
+      "author": "DW Nebert",
+      "doi-asserted-by": "publisher",
+      "first-page": "460",
+      "journal-title": "Hum Genom",
+      "key": "429_CR328",
+      "unstructured": "Nebert DW, Vasiliou V. Analysis of the glutathione S-transferase (GST) gene family. Hum Genom. 2004;1:460–4.",
+      "volume": "1",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1097/00008571-200403000-00009",
+      "author": "RL Blanchard",
+      "doi-asserted-by": "publisher",
+      "first-page": "199",
+      "journal-title": "Pharmacogenetics",
+      "key": "429_CR329",
+      "unstructured": "Blanchard RL, Freimuth RR, Buck J, Weinshilboum RM, Coughtrie MWH. A proposed nomenclature system for the cytosolic sulfotransferase (SULT) superfamily. Pharmacogenetics. 2004;14:199–211.",
+      "volume": "14",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1124/dmd.121.000478",
+      "author": "LC Pedersen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1027",
+      "journal-title": "Drug Metab Dispos",
+      "key": "429_CR330",
+      "unstructured": "Pedersen LC, Yi M, Pedersen LG, Kaminski AM. From steroid and drug metabolism to glycobiology, using sulfotransferase structures to understand and tailor function. Drug Metab Dispos. 2022;50:1027–41.",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.abb.2004.09.003",
+      "author": "MW Vetting",
+      "doi-asserted-by": "publisher",
+      "first-page": "212",
+      "journal-title": "Arch Biochem Biophys",
+      "key": "429_CR331",
+      "unstructured": "Vetting MW, de Carvalho LPS, Yu M, Hegde SS, Magnet S, Roderick SL, et al. Structure and functions of the GNAT superfamily of acetyltransferases. Arch Biochem Biophys. 2005;433:212–26.",
+      "volume": "433",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/B978-0-12-398339-8.00005-7",
+      "author": "E Sim",
+      "doi-asserted-by": "publisher",
+      "first-page": "169",
+      "journal-title": "Adv Pharmacol",
+      "key": "429_CR332",
+      "unstructured": "Sim E, Fakis G, Laurieri N, Boukouvala S. Arylamine N-acetyltransferases–from drug metabolism and pharmacogenetics to identification of novel targets for pharmacological intervention. Adv Pharmacol. 2012;63:169–205.",
+      "volume": "63",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.4049/jimmunol.1300699",
+      "author": "S Divanovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "3347",
+      "journal-title": "J Immunol",
+      "key": "429_CR333",
+      "unstructured": "Divanovic S, Dalli J, Jorge-Nebert LF, Flick LM, Gálvez-Peralta M, Boespflug ND, et al. Contributions of the three CYP1 monooxygenases to pro-inflammatory and inflammation-resolution lipid mediator pathways. J Immunol. 2013;191:3347–57.",
+      "volume": "191",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.pharmthera.2012.12.007",
+      "author": "UM Zanger",
+      "doi-asserted-by": "publisher",
+      "first-page": "103",
+      "journal-title": "Pharmacol Ther",
+      "key": "429_CR334",
+      "unstructured": "Zanger UM, Schwab M. Cytochrome P450 enzymes in drug metabolism: regulation of gene expression, enzyme activities, and impact of genetic variation. Pharmacol Ther. 2013;138:103–41.",
+      "volume": "138",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41467-019-14162-6",
+      "author": "P Brand",
+      "doi-asserted-by": "publisher",
+      "first-page": "244",
+      "journal-title": "Nat Commun",
+      "key": "429_CR335",
+      "unstructured": "Brand P, Hinojosa-Díaz IA, Ayala R, Daigle M, Yurrita Obiols CL, Eltz T, et al. The evolution of sexual signaling is linked to odorant receptor tuning in perfume-collecting orchid bees. Nat Commun. 2020;11:244.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cub.2008.10.049",
+      "author": "T Eltz",
+      "doi-asserted-by": "publisher",
+      "first-page": "1844",
+      "journal-title": "Curr Biol",
+      "key": "429_CR336",
+      "unstructured": "Eltz T, Zimmermann Y, Pfeiffer C, Pech JR, Twele R, Francke W, et al. An olfactory shift is associated with male perfume differentiation and species divergence in orchid bees. Curr Biol. 2008;18:1844–8.",
+      "volume": "18",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1126/science.1209175",
+      "author": "SR Ramírez",
+      "doi-asserted-by": "publisher",
+      "first-page": "1742",
+      "journal-title": "Science",
+      "key": "429_CR337",
+      "unstructured": "Ramírez SR, Eltz T, Fujiwara MK, Gerlach G, Goldman-Huertas B, Tsutsui ND, et al. Asynchronous diversification in a specialized plant-pollinator mutualism. Science. 2011;333:1742–6.",
+      "volume": "333",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1111/j.1096-3642.2011.00740.x",
+      "author": "T Eltz",
+      "doi-asserted-by": "publisher",
+      "first-page": "1064",
+      "journal-title": "Zool J Linnean Soc",
+      "key": "429_CR338",
+      "unstructured": "Eltz T, Fritzsch F, Pech JR, Zimmermann Y, Ramírez SR, Quezada-Euan JJG, et al. Characterization of the orchid bee Euglossa viridissima (Apidae: Euglossini) and a novel cryptic sibling species, by morphological, chemical, and genetic characters. Zool J Linnean Soc. 2011;163:1064–76. https://doi.org/10.1111/j.1096-3642.2011.00740.x.",
+      "volume": "163",
+      "year": "2011"
+    }
+  ],
+  "reference-count": 338,
+  "references-count": 338,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00429-5"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Placing human gene families into their evolutionary context"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

@@ -1,0 +1,811 @@
+{
+  "DOI": "10.1038/s41431-022-01083-0",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-022-01083-0",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe additional sex combs-like (ASXL) gene family—encoded by \u003cjats:italic\u003eASXL1\u003c/jats:italic\u003e, \u003cjats:italic\u003eASXL2\u003c/jats:italic\u003e, and \u003cjats:italic\u003eASXL3\u003c/jats:italic\u003e—is crucial for mammalian development. Pathogenic variants in the \u003cjats:italic\u003eASXL\u003c/jats:italic\u003e gene family are associated with three phenotypically distinct neurodevelopmental syndromes. Our previous work has shown that syndromic conditions caused by pathogenic variants in epigenetic regulatory genes show consistent patterns of genome-wide DNA methylation (DNAm) alterations, i.e., DNAm signatures in peripheral blood. Given the role of ASXL1 in chromatin modification, we hypothesized that pathogenic \u003cjats:italic\u003eASXL1\u003c/jats:italic\u003e variants underlying Bohring-Opitz syndrome (BOS) have a unique DNAm signature. We profiled whole-blood DNAm for 17 \u003cjats:italic\u003eASXL1\u003c/jats:italic\u003e variants, and 35 sex- and age-matched typically developing individuals, using Illumina’s Infinium EPIC array. We identified 763 differentially methylated CpG sites in individuals with BOS. Differentially methylated sites overlapped 323 unique genes, including \u003cjats:italic\u003eHOXA5\u003c/jats:italic\u003e and \u003cjats:italic\u003eHOXB4\u003c/jats:italic\u003e, supporting the functional relevance of DNAm signatures. We used a machine-learning classification model based on the BOS DNAm signature to classify variants of uncertain significance in \u003cjats:italic\u003eASXL1\u003c/jats:italic\u003e, as well as pathogenic \u003cjats:italic\u003eASXL2\u003c/jats:italic\u003e and \u003cjats:italic\u003eASXL3\u003c/jats:italic\u003e variants. The DNAm profile of one individual with the \u003cjats:italic\u003eASXL2\u003c/jats:italic\u003e variant was BOS-like, whereas the DNAm profiles of three individuals with \u003cjats:italic\u003eASXL3\u003c/jats:italic\u003e variants were control-like. We also used Horvath’s epigenetic clock, which showed acceleration in DNAm age in individuals with pathogenic \u003cjats:italic\u003eASXL1\u003c/jats:italic\u003e variants, and the individual with the pathogenic \u003cjats:italic\u003eASXL2\u003c/jats:italic\u003e variant, but not in individuals with \u003cjats:italic\u003eASXL3\u003c/jats:italic\u003e variants. These studies enhance our understanding of the epigenetic dysregulation underpinning \u003cjats:italic\u003eASXL\u003c/jats:italic\u003e gene family-associated syndromes.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1083"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "20 September 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "20 February 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "1 March 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "1 April 2022"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Informed consent was obtained from all research participants and/or their guardian(s) according to the protocol approved by the Research Ethics Board of the Hospital for Sick Children (REB# 1000038847) and UCLA (IRB #11-001087)."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Awamleh",
+      "given": "Zain",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Chater-Diehl",
+      "given": "Eric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Choufani",
+      "given": "Sanaa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wei",
+      "given": "Elizabeth",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0555-8313",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kianmahd",
+      "given": "Rebecca R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yu",
+      "given": "Anna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chad",
+      "given": "Lauren",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Costain",
+      "given": "Gregory",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tan",
+      "given": "Wen-Hann",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8326-1999",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Scherer",
+      "given": "Stephen W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Arboleda",
+      "given": "Valerie A.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3934-9800",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Russell",
+      "given": "Bianca E.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6501-4150",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Weksberg",
+      "given": "Rosanna",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        1
+      ]
+    ],
+    "date-time": "2022-04-01T03:18:16Z",
+    "timestamp": 1648783096000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        8
+      ]
+    ],
+    "date-time": "2022-06-08T23:05:08Z",
+    "timestamp": 1654729508000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        10
+      ]
+    ],
+    "date-time": "2024-04-10T01:02:04Z",
+    "timestamp": 1712710924285
+  },
+  "is-referenced-by-count": 15,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        1
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:00:00Z",
+        "timestamp": 1648771200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01083-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01083-0",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01083-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "695-702",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        1
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        1
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        6
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/bjc.2013.281",
+      "author": "M Katoh",
+      "doi-asserted-by": "publisher",
+      "first-page": "299",
+      "journal-title": "Br J Cancer",
+      "key": "1083_CR1",
+      "unstructured": "Katoh M. Functional and cancer genomics of ASXL family members. Br J Cancer. 2013;109:299–306.",
+      "volume": "109",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.62156",
+      "author": "VA Cuddapah",
+      "doi-asserted-by": "publisher",
+      "first-page": "1700",
+      "journal-title": "Am J Med Genet A",
+      "key": "1083_CR2",
+      "unstructured": "Cuddapah VA, Dubbs HA, Adang L, Kugler SL, McCormick EM, Zolkipli-Cunningham Z, et al. Understanding the phenotypic spectrum of ASXL-related disease: Ten cases and a review of the literature. Am J Med Genet A. 2021;185:1700–11.",
+      "volume": "185",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ng.868",
+      "author": "A Hoischen",
+      "doi-asserted-by": "publisher",
+      "first-page": "729",
+      "journal-title": "Nat Genet",
+      "key": "1083_CR3",
+      "unstructured": "Hoischen A, van Bon BW, Rodríguez-Santiago B, Gilissen C, Vissers LE, de Vries P, et al. De novo nonsense mutations in ASXL1 cause Bohring-Opitz syndrome. Nat Genet. 2011;43:729–31.",
+      "volume": "43",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.37131",
+      "author": "B Russell",
+      "doi-asserted-by": "publisher",
+      "first-page": "2122",
+      "journal-title": "Am J Med Genet A",
+      "key": "1083_CR4",
+      "unstructured": "Russell B, Johnston JJ, Biesecker LG, Kramer N, Pickart A, Rhead W, et al. Clinical management of patients with ASXL1 mutations and Bohring-Opitz syndrome, emphasizing the need for Wilms tumor surveillance. Am J Med Genet A. 2015;167a:2122–31.",
+      "volume": "167a",
+      "year": "2015"
+    },
+    {
+      "key": "1083_CR5",
+      "unstructured": "Russell BTW, Graham JM Jr. Bohring-Opitz Syndrome. GeneReviews® [Internet] Seattle (WA): University of Washington, Seattle; 1993–2021."
+    },
+    {
+      "DOI": "10.1186/gm415",
+      "author": "MN Bainbridge",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Med",
+      "key": "1083_CR6",
+      "unstructured": "Bainbridge MN, Hu H, Muzny DM, Musante L, Lupski JR, Graham BH, et al. De novo truncating mutations in ASXL3 are associated with a novel clinical phenotype with similarities to Bohring-Opitz syndrome. Genome Med. 2013;5:11.",
+      "volume": "5",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2016.08.017",
+      "author": "V Shashi",
+      "doi-asserted-by": "publisher",
+      "first-page": "991",
+      "journal-title": "Am J Hum Genet",
+      "key": "1083_CR7",
+      "unstructured": "Shashi V, Pena LD, Kim K, Burton B, Hempel M, Schoch K, et al. De Novo truncating variants in ASXL2 are associated with a unique and recognizable clinical phenotype. Am J Hum Genet. 2016;99:991–9.",
+      "volume": "99",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1101/cshperspect.a026526",
+      "author": "JB Micol",
+      "doi-asserted-by": "publisher",
+      "first-page": "a026526",
+      "journal-title": "Cold Spring Harb Perspect Med.",
+      "key": "1083_CR8",
+      "unstructured": "Micol JB, Abdel-Wahab O. The role of additional sex combs-like proteins in cancer. Cold Spring Harb Perspect Med. 2016;6:a026526.",
+      "volume": "6",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/humu.23203",
+      "author": "CM Carlston",
+      "doi-asserted-by": "publisher",
+      "first-page": "517",
+      "journal-title": "Hum Mutat",
+      "key": "1083_CR9",
+      "unstructured": "Carlston CM, O’Donnell-Luria AH, Underhill HR, Cummings BB, Weisburd B, Minikel EV, et al. Pathogenic ASXL1 somatic variants in reference databases complicate germline variant interpretation for Bohring-Opitz Syndrome. Hum Mutat. 2017;38:517–23.",
+      "volume": "38",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature08966",
+      "author": "JC Scheuermann",
+      "doi-asserted-by": "publisher",
+      "first-page": "243",
+      "journal-title": "Nature",
+      "key": "1083_CR10",
+      "unstructured": "Scheuermann JC, de Ayala Alonso AG, Oktaba K, Ly-Hartig N, McGinty RK, Fraterman S, et al. Histone H2A deubiquitinase activity of the Polycomb repressive complex PR-DUB. Nature 2010;465:243–7.",
+      "volume": "465",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.ccr.2012.06.032",
+      "author": "O Abdel-Wahab",
+      "doi-asserted-by": "publisher",
+      "first-page": "180",
+      "journal-title": "Cancer Cell",
+      "key": "1083_CR11",
+      "unstructured": "Abdel-Wahab O, Adli M, LaFave LM, Gao J, Hricik T, Shih AH, et al. ASXL1 mutations promote myeloid transformation through loss of PRC2-mediated gene repression. Cancer Cell. 2012;22:180–93.",
+      "volume": "22",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1126/sciadv.1601602",
+      "author": "Z Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1601602",
+      "journal-title": "Sci Adv",
+      "key": "1083_CR12",
+      "unstructured": "Li Z, Zhang P, Yan A, Guo Z, Ban Y, Li J, et al. ASXL1 interacts with the cohesin complex to maintain chromatid separation and gene expression for normal hematopoiesis. Sci Adv. 2017;3:e1601602.",
+      "volume": "3",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ncomms10207",
+      "author": "S Choufani",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1083_CR13",
+      "unstructured": "Choufani S, Cytrynbaum C, Chung BH, Turinsky AL, Grafodatskaya D, Chen YA, et al. NSD1 mutations generate a genome-wide DNA methylation signature. Nat Commun. 2015;6:10207.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.04.004",
+      "author": "DT Butcher",
+      "doi-asserted-by": "publisher",
+      "first-page": "773",
+      "journal-title": "Am J Hum Genet",
+      "key": "1083_CR14",
+      "unstructured": "Butcher DT, Cytrynbaum C, Turinsky AL, Siu MT, Inbar-Feigenberg M, Mendoza-Londono R, et al. CHARGE and Kabuki Syndromes: gene-specific DNA methylation signatures identify epigenetic mechanisms linking these clinically overlapping conditions. Am J Hum Genet. 2017;100:773–88.",
+      "volume": "100",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s13148-019-0684-3",
+      "author": "MT Siu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Clin Epigenetics",
+      "key": "1083_CR15",
+      "unstructured": "Siu MT, Butcher DT, Turinsky AL, Cytrynbaum C, Stavropoulos DJ, Walker S, et al. Functional DNA methylation signatures for autism spectrum disorder genomic risk loci: 16p11.2 deletions and CHD8 variants. Clin Epigenetics. 2019;11:103.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12920-019-0555-y",
+      "author": "E Chater-Diehl",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMC Med Genomics",
+      "key": "1083_CR16",
+      "unstructured": "Chater-Diehl E, Ejaz R, Cytrynbaum C, Siu MT, Turinsky A, Choufani S, et al. New insights into DNA methylation signatures: SMARCA2 variants in Nicolaides-Baraitser syndrome. BMC Med Genomics. 2019;12:105.",
+      "volume": "12",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.03.008",
+      "author": "S Choufani",
+      "doi-asserted-by": "publisher",
+      "first-page": "596",
+      "journal-title": "Am J Hum Genet",
+      "key": "1083_CR17",
+      "unstructured": "Choufani S, Gibson WT, Turinsky AL, Chung BHY, Wang T, Garg K, et al. DNA methylation signature for EZH2 functionally classifies sequence variants in three PRC2 complex genes. Am J Hum Genet. 2020;106:596–610.",
+      "volume": "106",
+      "year": "2020"
+    },
+    {
+      "author": "SJ Goodman",
+      "first-page": "144",
+      "journal-title": "J Transl Genet Genomics",
+      "key": "1083_CR18",
+      "unstructured": "Goodman SJ, Cytrynbaum C, Chung BH-Y, Chater-Diehl E, Aziz C, Turinsky AL, et al. EHMT1 pathogenic variants and 9q34.3 microdeletions share altered DNA methylation patterns in patients with Kleefstra syndrome. J Transl Genet Genomics. 2020;4:144–58.",
+      "volume": "4",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.04.008",
+      "author": "D Rots",
+      "doi-asserted-by": "publisher",
+      "first-page": "1053",
+      "journal-title": "Am J Hum Genet",
+      "key": "1083_CR19",
+      "unstructured": "Rots D, Chater-Diehl E, Dingemans AJM, Goodman SJ, Siu MT, Cytrynbaum C, et al. Truncating SRCAP variants outside the Floating-Harbor syndrome locus cause a distinct neurodevelopmental disorder with a specific DNA methylation signature. Am J Hum Genet. 2021;108:1053–68.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41576-021-00416-x",
+      "doi-asserted-by": "crossref",
+      "key": "1083_CR20",
+      "unstructured": "Janssen SM, Lorincz MC. Interplay between chromatin marks in development and disease. Nat Rev Genet. 2021;23:137–153."
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.06.015",
+      "author": "E Chater-Diehl",
+      "doi-asserted-by": "publisher",
+      "first-page": "1359",
+      "journal-title": "Am J Hum Genet",
+      "key": "1083_CR21",
+      "unstructured": "Chater-Diehl E, Goodman SJ, Cytrynbaum C, Turinsky AL, Choufani S, Weksberg R. Anatomy of DNA methylation signatures: Emerging insights and applications. Am J Hum Genet. 2021;108:1359–66.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nn.4524",
+      "author": "CY RK",
+      "doi-asserted-by": "publisher",
+      "first-page": "602",
+      "journal-title": "Nat Neurosci",
+      "key": "1083_CR22",
+      "unstructured": "RK CY, Merico D, Bookman M, J LH, Thiruvahindrapuram B, Patel RV, et al. Whole genome sequencing resource identifies 18 new candidate genes for autism spectrum disorder. Nat Neurosci. 2017;20:602–11.",
+      "volume": "20",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2010.10.006",
+      "author": "GD Fischbach",
+      "doi-asserted-by": "publisher",
+      "first-page": "192",
+      "journal-title": "Neuron",
+      "key": "1083_CR23",
+      "unstructured": "Fischbach GD, Lord C. The Simons Simplex Collection: a resource for identification of autism genetic risk factors. Neuron 2010;68:192–5.",
+      "volume": "68",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu049",
+      "author": "MJ Aryee",
+      "doi-asserted-by": "publisher",
+      "first-page": "1363",
+      "journal-title": "Bioinformatics",
+      "key": "1083_CR24",
+      "unstructured": "Aryee MJ, Jaffe AE, Corrada-Bravo H, Ladd-Acosta C, Feinberg AP, Hansen KD, et al. Minfi: a flexible and comprehensive Bioconductor package for the analysis of Infinium DNA methylation microarrays. Bioinformatics 2014;30:1363–9.",
+      "volume": "30",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.06.020",
+      "author": "YA Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "762",
+      "journal-title": "Am J Hum Genet",
+      "key": "1083_CR25",
+      "unstructured": "Chen YA, Choufani S, Grafodatskaya D, Butcher DT, Ferreira JC, Weksberg R. Cross-reactive DNA microarray probes lead to false discovery of autosomal sex-associated DNA methylation. Am J Hum Genet. 2012;91:762–4.",
+      "volume": "91",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/gb-2013-14-10-r115",
+      "author": "S Horvath",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "1083_CR26",
+      "unstructured": "Horvath S. DNA methylation age of human tissues and cell types. Genome Biol. 2013;14:R115.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gkv007",
+      "author": "ME Ritchie",
+      "doi-asserted-by": "publisher",
+      "first-page": "e47",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1083_CR27",
+      "unstructured": "Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, et al. limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Res. 2015;43:e47.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nbt.1630",
+      "author": "CY McLean",
+      "doi-asserted-by": "publisher",
+      "first-page": "495",
+      "journal-title": "Nat Biotechnol",
+      "key": "1083_CR28",
+      "unstructured": "McLean CY, Bristor D, Hiller M, Clarke SL, Schaar BT, Lowe CB, et al. GREAT improves functional interpretation of cis-regulatory regions. Nat Biotechnol. 2010;28:495–501.",
+      "volume": "28",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.15252/embr.201846255",
+      "author": "S Oki",
+      "doi-asserted-by": "publisher",
+      "first-page": "e46255",
+      "journal-title": "EMBO Rep",
+      "key": "1083_CR29",
+      "unstructured": "Oki S, Ohta T, Shioi G, Hatanaka H, Ogasawara O, Okuda Y, et al. ChIP-Atlas: a data-mining suite powered by full integration of public ChIP-seq data. EMBO Rep. 2018;19:e46255.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med",
+      "key": "1083_CR30",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17:405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3466",
+      "author": "X Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "4",
+      "journal-title": "Nat Genet",
+      "key": "1083_CR31",
+      "unstructured": "Zhou X, Edmonson MN, Wilkinson MR, Patel A, Wu G, Liu Y, et al. Exploring genomic alteration in pediatric cancer using ProteinPaint. Nat Genet. 2016;48:4–6.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13059-019-1753-9",
+      "author": "DE Martin-Herranz",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "1083_CR32",
+      "unstructured": "Martin-Herranz DE, Aref-Eshghi E, Bonder MJ, Stubbs TM, Choufani S, Weksberg R, et al. Screening for genes that accelerate the epigenetic aging clock in humans reveals a role for the H3K36 methyltransferase NSD1. Genome Biol. 2019;20:146.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/gr.243584.118",
+      "author": "AR Jeffries",
+      "doi-asserted-by": "publisher",
+      "first-page": "1057",
+      "journal-title": "Genome Res",
+      "key": "1083_CR33",
+      "unstructured": "Jeffries AR, Maroofian R, Salter CG, Chioza BA, Cross HE, Patton MA, et al. Growth disrupting mutations in epigenetic regulatory molecules are associated with abnormalities of epigenetic aging. Genome Res. 2019;29:1057–66.",
+      "volume": "29",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/gr.103101.109",
+      "author": "VK Rakyan",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Genome Res",
+      "key": "1083_CR34",
+      "unstructured": "Rakyan VK, Down TA, Maslau S, Andrew T, Yang TP, Beyan H, et al. Human aging-associated DNA hypermethylation occurs preferentially at bivalent chromatin domains. Genome Res. 2010;20:434–9.",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.ydbio.2009.10.004",
+      "author": "CL Fisher",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "journal-title": "Dev Biol",
+      "key": "1083_CR35",
+      "unstructured": "Fisher CL, Lee I, Bloyer S, Bozza S, Chevalier J, Dahl A, et al. Additional sex combs-like 1 belongs to the enhancer of trithorax and polycomb group and genetically interacts with Cbx2 in mice. Dev Biol. 2010;337:9–15.",
+      "volume": "337",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41467-018-05085-9",
+      "author": "S Asada",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1083_CR36",
+      "unstructured": "Asada S, Goyama S, Inoue D, Shikata S, Takeda R, Fukushima T, et al. Mutant ASXL1 cooperates with BAP1 to promote myeloid leukaemogenesis. Nat Commun. 2018;9:2733.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ncomms8307",
+      "author": "A Balasubramani",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1083_CR37",
+      "unstructured": "Balasubramani A, Larjo A, Bassein JA, Chang X, Hastie RB, Togher SM, et al. Cancer-associated ASXL1 mutations may act as gain-of-function mutations of the ASXL1-BAP1 complex. Nat Commun. 2015;6:7307.",
+      "volume": "6",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3390/jdb4020013",
+      "doi-asserted-by": "crossref",
+      "key": "1083_CR38",
+      "unstructured": "Jeannotte L, Gotti F, Landry-Truchon K. Hoxa5: a key player in development and disease. J Dev Biol. 2016;4:13–31."
+    },
+    {
+      "DOI": "10.1007/s00109-014-1181-y",
+      "author": "S Bhatlekar",
+      "doi-asserted-by": "publisher",
+      "first-page": "811",
+      "journal-title": "J Mol Med",
+      "key": "1083_CR39",
+      "unstructured": "Bhatlekar S, Fields JZ, Boman BM. HOX genes and their role in the development of human cancers. J Mol Med. 2014;92:811–23.",
+      "volume": "92",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41416-020-01102-1",
+      "author": "J Brzezinski",
+      "doi-asserted-by": "publisher",
+      "first-page": "437",
+      "journal-title": "Br J Cancer",
+      "key": "1083_CR40",
+      "unstructured": "Brzezinski J, Choufani S, Romao R, Shuman C, Chen H, Cunanan J, et al. Clinically and biologically relevant subgroups of Wilms tumour defined by genomic and epigenomic analyses. Br J Cancer. 2021;124:437–46.",
+      "volume": "124",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3390/cells8080921",
+      "doi-asserted-by": "crossref",
+      "key": "1083_CR41",
+      "unstructured": "Guerra J, Pereira BMS, Cruz J, Scherer NM, Furtado C, Montalvão de Azevedo R, et al. Genes controlled by DNA methylation are involved in Wilms tumor Progression. Cells. 2019;8:921-936."
+    },
+    {
+      "DOI": "10.1038/nature04431",
+      "author": "E Viré",
+      "doi-asserted-by": "publisher",
+      "first-page": "871",
+      "journal-title": "Nature",
+      "key": "1083_CR42",
+      "unstructured": "Viré E, Brenner C, Deplus R, Blanchon L, Fraga M, Didelot C, et al. The Polycomb group protein EZH2 directly controls DNA methylation. Nature 2006;439:871–4.",
+      "volume": "439",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1002/pmic.201400013",
+      "author": "HI Baymaz",
+      "doi-asserted-by": "publisher",
+      "first-page": "2179",
+      "journal-title": "Proteomics",
+      "key": "1083_CR43",
+      "unstructured": "Baymaz HI, Fournier A, Laget S, Ji Z, Jansen PW, Smits AH, et al. MBD5 and MBD6 interact with the human PR-DUB complex through their methyl-CpG-binding domain. Proteomics 2014;14:2179–89.",
+      "volume": "14",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.2217/epi.15.39",
+      "author": "Q Du",
+      "doi-asserted-by": "publisher",
+      "first-page": "1051",
+      "journal-title": "Epigenomics",
+      "key": "1083_CR44",
+      "unstructured": "Du Q, Luu PL, Stirzaker C, Clark SJ. Methyl-CpG-binding domain proteins: readers of the epigenome. Epigenomics 2015;7:1051–73.",
+      "volume": "7",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41467-018-08255-x",
+      "author": "A Campagne",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1083_CR45",
+      "unstructured": "Campagne A, Lee MK, Zielinski D, Michaud A, Le Corre S, Dingli F, et al. BAP1 complex promotes transcription by opposing PRC1-mediated H2A ubiquitylation. Nat Commun. 2019;10:348.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ncomms10292",
+      "author": "DD Sahtoe",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1083_CR46",
+      "unstructured": "Sahtoe DD, van Dijk WJ, Ekkebus R, Ovaa H, Sixma TK. BAP1/ASXL1 recruitment and activation for H2A deubiquitination. Nat Commun. 2016;7:10292.",
+      "volume": "7",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 46,
+  "references-count": 46,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-022-01083-0"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "DNA methylation signature associated with Bohring-Opitz syndrome: a new tool for functional classification of variants in ASXL genes"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "30"
+}

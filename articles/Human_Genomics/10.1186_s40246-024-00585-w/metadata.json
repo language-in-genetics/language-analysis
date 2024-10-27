@@ -1,0 +1,1408 @@
+{
+  "DOI": "10.1186/s40246-024-00585-w",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-024-00585-w",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003e'Benign ethnic neutropenia' (BEN) is a heritable condition characterized by lower neutrophil counts, predominantly observed in individuals of African ancestry, and the genetic basis of BEN remains a subject of extensive research. In this study, we aimed to dissect the genetic architecture underlying neutrophil count variation through a linear-mixed model genome-wide association study (GWAS) in a population of African ancestry (\u003cjats:italic\u003eN\u003c/jats:italic\u003e = 5976). Malaria caused by \u003cjats:italic\u003eP. falciparum\u003c/jats:italic\u003e imposes a tremendous public health burden on people living in sub-Saharan Africa. Individuals living in malaria endemic regions often have a reduced circulating neutrophil count due to BEN, raising the possibility that reduced neutrophil counts modulate severity of malaria in susceptible populations. As a follow-up, we tested this hypothesis by conducting a Mendelian randomization (MR) analysis of neutrophil counts on severe malaria (MalariaGEN, \u003cjats:italic\u003eN\u003c/jats:italic\u003e = 17,056).\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe carried out a GWAS of neutrophil count in individuals associated to an African continental ancestry group within UK Biobank, identifying 73 loci (\u003cjats:italic\u003er\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003e = 0.1) and 10 index SNPs (GCTA-COJO loci) associated with neutrophil count, including previously unknown rare loci regulating neutrophil count in a non-European population. BOLT-LMM was reliable when conducted in a non-European population, and additional covariates added to the model did not largely alter the results of the top loci or index SNPs. The two-sample bi-directional MR analysis between neutrophil count and severe malaria showed the greatest evidence for an effect between neutrophil count and severe anaemia, although the confidence intervals crossed the null.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur GWAS of neutrophil count revealed unique loci present in individuals of African ancestry. We note that a small sample-size reduced our power to identify variants with low allele frequencies and/or low effect sizes in our GWAS. Our work highlights the need for conducting large-scale biobank studies in Africa and for further exploring the link between neutrophils and severe malaria.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "585"
+  ],
+  "article-number": "26",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "19 October 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "12 February 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "15 March 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "UK Biobank received ethical approval from the NHS National Research Ethics Service North West (11/NW/0382; 16/NW/0274) and was conducted in accordance with the Declaration of Helsinki. All participants provided written informed consent before enrolment in the study."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "All authors consented to the publication of this work."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Constantinescu",
+      "given": "Andrei-Emil",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Hughes",
+      "given": "David A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bull",
+      "given": "Caroline J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fleming",
+      "given": "Kathryn",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mitchell",
+      "given": "Ruth E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zheng",
+      "given": "Jie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kar",
+      "given": "Siddhartha",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Timpson",
+      "given": "Nicholas J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Amulic",
+      "given": "Borko",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vincent",
+      "given": "Emma E.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        15
+      ]
+    ],
+    "date-time": "2024-03-15T11:02:20Z",
+    "timestamp": 1710500540000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        15
+      ]
+    ],
+    "date-time": "2024-03-15T11:08:44Z",
+    "timestamp": 1710500924000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000265",
+      "award": [
+        "MR/N0137941/1",
+        "MC_UU_00011/1",
+        "MC_UU_00011/1",
+        "MR/R02149x/1"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Medical Research Council"
+    },
+    {
+      "DOI": "10.13039/100010269",
+      "award": [
+        "202802/Z/16/Z",
+        "202802/Z/16/Z"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Wellcome Trust"
+    },
+    {
+      "DOI": "10.13039/501100000289",
+      "award": [
+        "C18281/A29019",
+        "C18281/A29019",
+        "C18281/A29019"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Cancer Research UK"
+    },
+    {
+      "DOI": "10.13039/501100000361",
+      "award": [
+        "17/0005587",
+        "17/0005587"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Diabetes UK"
+    },
+    {
+      "DOI": "10.13039/100013743",
+      "award": [
+        "IIG_2019_2009",
+        "IIG_2019_2009"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "World Cancer Research Fund International"
+    },
+    {
+      "DOI": "10.13039/501100023699",
+      "doi-asserted-by": "publisher",
+      "name": "Health Data Research UK"
+    },
+    {
+      "name": "GW4-CAT PhD Programme for Health Professionals"
+    },
+    {
+      "DOI": "10.13039/501100018635",
+      "doi-asserted-by": "publisher",
+      "name": "Thousand Young Talents Program of China"
+    },
+    {
+      "DOI": "10.13039/501100018684",
+      "doi-asserted-by": "publisher",
+      "name": "National Health Commission of the People's Republic of China"
+    },
+    {
+      "DOI": "10.13039/100014013",
+      "award": [
+        "MR/T043202/1"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "UK Research and Innovation"
+    },
+    {
+      "DOI": "10.13039/100015250",
+      "award": [
+        "BRC-1215-2001"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "NIHR Bristol Biomedical Research Centre"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        16
+      ]
+    ],
+    "date-time": "2024-03-16T00:15:45Z",
+    "timestamp": 1710548145054
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        15
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            15
+          ]
+        ],
+        "date-time": "2024-03-15T00:00:00Z",
+        "timestamp": 1710460800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            15
+          ]
+        ],
+        "date-time": "2024-03-15T00:00:00Z",
+        "timestamp": 1710460800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00585-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-024-00585-w/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00585-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        15
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        15
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "key": "585_CR1",
+      "unstructured": "WHO Africa. World malaria report 2019. 2019."
+    },
+    {
+      "DOI": "10.1016/j.pt.2020.03.009",
+      "author": "RN Price",
+      "doi-asserted-by": "publisher",
+      "first-page": "560",
+      "journal-title": "Trends Parasitol",
+      "key": "585_CR2",
+      "unstructured": "Price RN, Commons RJ, Battle KE, Thriemer K, Mendis K. Plasmodium vivax in the era of the shrinking P. falciparum map. Trends Parasitol. 2020;36:560–70. https://doi.org/10.1016/j.pt.2020.03.009.",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1146/annurev-pathmechdis-012419-032640",
+      "author": "CA Moxon",
+      "doi-asserted-by": "publisher",
+      "first-page": "315",
+      "journal-title": "Annu Rev Pathol",
+      "key": "585_CR3",
+      "unstructured": "Moxon CA, Gibbins MP, McGuinness D, Milner DA, Marti M. New insights into malaria pathogenesis. Annu Rev Pathol. 2020;15:315–43. https://doi.org/10.1146/annurev-pathmechdis-012419-032640.",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1126/SCIIMMUNOL.AAW0336",
+      "author": "SL Knackstedt",
+      "doi-asserted-by": "publisher",
+      "first-page": "336",
+      "journal-title": "Sci Immunol",
+      "key": "585_CR4",
+      "unstructured": "Knackstedt SL, Georgiadou A, Apel F, Abu-Abed U, Moxon CA, Cunnington AJ, et al. Neutrophil extracellular traps drive inflammatory pathogenesis in malaria. Sci Immunol. 2019;4:336. https://doi.org/10.1126/SCIIMMUNOL.AAW0336.",
+      "volume": "4",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fimmu.2019.00830",
+      "author": "F Sierro",
+      "doi-asserted-by": "publisher",
+      "first-page": "830",
+      "journal-title": "Front Immunol",
+      "key": "585_CR5",
+      "unstructured": "Sierro F, Grau GER. The ins and outs of cerebral malaria pathogenesis: immunopathology, extracellular vesicles, immunometabolism, and trained immunity. Front Immunol. 2019;10:830. https://doi.org/10.3389/fimmu.2019.00830.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/JLB.4AB1120-780R",
+      "author": "D Cela",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Leukoc Biol",
+      "key": "585_CR6",
+      "unstructured": "Cela D, Knackstedt SL, Groves S, Rice CM, Kwon JTW, Mordmüller B, et al. PAD4 controls chemoattractant production and neutrophil trafficking in malaria. J Leukoc Biol. 2021. https://doi.org/10.1002/JLB.4AB1120-780R.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/S00439-020-02142-6",
+      "author": "SN Kariuki",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR7",
+      "unstructured": "Kariuki SN, Williams TN. Human genetics and malaria resistance, vol. 139. Cham: Springer; 2020. https://doi.org/10.1007/S00439-020-02142-6.",
+      "volume-title": "Human genetics and malaria resistance",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/bmj.1.4857.290",
+      "author": "AC Allison",
+      "doi-asserted-by": "publisher",
+      "first-page": "290",
+      "journal-title": "Br Med J",
+      "key": "585_CR8",
+      "unstructured": "Allison AC. Protection afforded by sickle-cell trait against subtertian malarial infection. Br Med J. 1954;1:290–4. https://doi.org/10.1136/bmj.1.4857.290.",
+      "volume": "1",
+      "year": "1954"
+    },
+    {
+      "DOI": "10.1086/432519",
+      "author": "DP Kwiatkowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "171",
+      "journal-title": "The American Journal of Human Genetics",
+      "key": "585_CR9",
+      "unstructured": "Kwiatkowski DP. How Malaria Has Affected the Human Genome and What Human Genetics Can Teach Us about Malaria. The American Journal of Human Genetics. 2005;77:171–92. https://doi.org/10.1086/432519.",
+      "volume": "77",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/S2352-3026(18)30107-8",
+      "author": "CM Ndila",
+      "doi-asserted-by": "publisher",
+      "first-page": "e333",
+      "journal-title": "Lancet Haematol",
+      "key": "585_CR10",
+      "unstructured": "Ndila CM, Uyoga S, Macharia AW, Nyutu G, Peshu N, Ojal J, et al. Human candidate gene polymorphisms and risk of severe malaria in children in Kilifi, Kenya: a case-control association study. Lancet Haematol. 2018;5:e333–45. https://doi.org/10.1016/S2352-3026(18)30107-8.",
+      "volume": "5",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.0020340",
+      "author": "MJ Mackinnon",
+      "doi-asserted-by": "publisher",
+      "first-page": "e340",
+      "journal-title": "PLoS Med",
+      "key": "585_CR11",
+      "unstructured": "Mackinnon MJ, Mwangi TW, Snow RW, Marsh K, Williams TN. Heritability of Malaria in Africa. PLoS Med. 2005;2:e340. https://doi.org/10.1371/journal.pmed.0020340.",
+      "volume": "2",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0002000",
+      "author": "A Sakuntabhai",
+      "doi-asserted-by": "publisher",
+      "first-page": "e2000",
+      "journal-title": "PLoS ONE",
+      "key": "585_CR12",
+      "unstructured": "Sakuntabhai A, Ndiaye R, Casadémont I, Peerapittayamonkol C, Rogier C, Tortevoye P, et al. Genetic determination and linkage mapping of Plasmodium falciparum malaria related traits in senegal. PLoS ONE. 2008;3:e2000. https://doi.org/10.1371/journal.pone.0002000.",
+      "volume": "3",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.blre.2019.06.003",
+      "author": "SA Atallah-Yunes",
+      "doi-asserted-by": "publisher",
+      "first-page": "100586",
+      "journal-title": "Blood Rev",
+      "key": "585_CR13",
+      "unstructured": "Atallah-Yunes SA, Ready A, Newburger PE. Benign ethnic neutropenia. Blood Rev. 2019;37:100586. https://doi.org/10.1016/j.blre.2019.06.003.",
+      "volume": "37",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1111/j.1600-0609.1988.tb01192.x",
+      "author": "Y Shoenfeld",
+      "doi-asserted-by": "publisher",
+      "first-page": "273",
+      "journal-title": "Eur J Haematol",
+      "key": "585_CR14",
+      "unstructured": "Shoenfeld Y, Alkan ML, Asaly A, Carmeli Y, Katz M. Benign familial leukopenia and neutropenia in different ethnic groups. Eur J Haematol. 1988;41:273–7. https://doi.org/10.1111/j.1600-0609.1988.tb01192.x.",
+      "volume": "41",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(67)90086-4",
+      "author": "JJ Rippey",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "journal-title": "The Lancet",
+      "key": "585_CR15",
+      "unstructured": "Rippey JJ. Leucopenia in West Indians and Africans. The Lancet. 1967;290:44. https://doi.org/10.1016/S0140-6736(67)90086-4.",
+      "volume": "290",
+      "year": "1967"
+    },
+    {
+      "DOI": "10.1186/1471-2326-9-3",
+      "author": "S Denic",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "journal-title": "BMC Blood Disord",
+      "key": "585_CR16",
+      "unstructured": "Denic S, Showqi S, Klein C, Takala M, Nagelkerke N, Agarwal MM. Prevalence, phenotype and inheritance of benign neutropenia in Arabs. BMC Blood Disord. 2009;9:3. https://doi.org/10.1186/1471-2326-9-3.",
+      "volume": "9",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.7326/0003-4819-146-7-200704030-00004",
+      "author": "MM Hsieh",
+      "doi-asserted-by": "publisher",
+      "first-page": "486",
+      "journal-title": "Ann Intern Med",
+      "key": "585_CR17",
+      "unstructured": "Hsieh MM, Everhart JE, Byrd-Holt DD, Tisdale JF, Rodgers GP. Prevalence of neutropenia in the U.S. population: age, sex, smoking status, and ethnic differences. Ann Intern Med. 2007;146:486. https://doi.org/10.7326/0003-4819-146-7-200704030-00004.",
+      "volume": "146",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1146/ANNUREV-IMMUNOL-020711-074942",
+      "author": "B Amulic",
+      "doi-asserted-by": "publisher",
+      "first-page": "459",
+      "journal-title": "Annu Rev Immunol",
+      "key": "585_CR18",
+      "unstructured": "Amulic B, Cazalet C, Hayes GL, Metzler KD, Zychlinsky A. Neutrophil function: from mechanisms to disease. Annu Rev Immunol. 2012;30:459–89. https://doi.org/10.1146/ANNUREV-IMMUNOL-020711-074942.",
+      "volume": "30",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000360",
+      "author": "D Reich",
+      "doi-asserted-by": "publisher",
+      "first-page": "360",
+      "journal-title": "PLoS Genet",
+      "key": "585_CR19",
+      "unstructured": "Reich D, Nalls MA, Kao WHL, Akylbekova EL, Tandon A, Patterson N, et al. Reduced neutrophil count in people of African descent is due to a regulatory variant in the Duffy antigen receptor for chemokines gene. PLoS Genet. 2009;5:360. https://doi.org/10.1371/journal.pgen.1000360.",
+      "volume": "5",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/bjh.15730",
+      "author": "N Rappoport",
+      "doi-asserted-by": "publisher",
+      "first-page": "497",
+      "issue": "4",
+      "journal-title": "Br J Haematol",
+      "key": "585_CR20",
+      "unstructured": "Rappoport N, Simon AJ, Amariglio N, Rechavi G. The Duffy antigen receptor for chemokines, ACKR 1,–‘Jeanne DARC’of benign neutropenia. Br J Haematol. 2019;184(4):497–507. https://doi.org/10.1111/bjh.15730.",
+      "volume": "184",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/pbc.27361",
+      "author": "J Palmblad",
+      "doi-asserted-by": "publisher",
+      "first-page": "e27361",
+      "journal-title": "Pediatr Blood Cancer",
+      "key": "585_CR21",
+      "unstructured": "Palmblad J, Höglund P. Ethnic benign neutropenia: a phenomenon finds an explanation. Pediatr Blood Cancer. 2018;65:e27361. https://doi.org/10.1002/pbc.27361.",
+      "volume": "65",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.pt.2020.03.003",
+      "author": "B Amulic",
+      "doi-asserted-by": "publisher",
+      "first-page": "501",
+      "issue": "6",
+      "journal-title": "Trends Parasitol",
+      "key": "585_CR22",
+      "unstructured": "Amulic B, Moxon CA, Cunnington AJ. A more granular view of neutrophils in malaria. Trends Parasitol. 2020;36(6):501–3.",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fimmu.2018.03005",
+      "author": "EH Aitken",
+      "doi-asserted-by": "publisher",
+      "first-page": "3005",
+      "journal-title": "Front Immunol",
+      "key": "585_CR23",
+      "unstructured": "Aitken EH, Alemu A, Rogerson SJ. Neutrophils and malaria. Front Immunol. 2018;9:3005. https://doi.org/10.3389/fimmu.2018.03005.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.21203/RS.3.RS-3150748/V1",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR24",
+      "unstructured": "Anyona S, Cheng Q, Guo Y, Seidenberg P, Schneider K, Lambert C, et al. Entire expressed peripheral blood transcriptome in pediatric severe malarial anemia. Res Square 2023. https://doi.org/10.21203/RS.3.RS-3150748/V1."
+    },
+    {
+      "DOI": "10.1038/S42003-021-02511-5",
+      "author": "A Garcia-Senosiain",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Commun Biol",
+      "key": "585_CR25",
+      "unstructured": "Garcia-Senosiain A, Kana IH, Singh S, Das MK, Dziegiel MH, Hertegonne S, et al. Neutrophils dominate in opsonic phagocytosis of P. falciparum blood-stage merozoites and protect against febrile malaria. Commun Biol. 2021. https://doi.org/10.1038/S42003-021-02511-5.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/2021.05.09.443317",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR26",
+      "unstructured": "Zelter T, Strahilevitz J, Simantov K, Yajuk O, Jensen AR, Dzikowski R, et al. Neutrophils impose strong selective pressure against PfEMP1 variants implicated in cerebral malaria. BioRxiv 2021:2021.05.09.443317. https://doi.org/10.1101/2021.05.09.443317."
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "author": "GD Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Int J Epidemiol",
+      "key": "585_CR27",
+      "unstructured": "Smith GD, Ebrahim S. “Mendelian randomization”: Can genetic epidemiology contribute to understanding environmental determinants of disease? Int J Epidemiol. 2003;32:1–22. https://doi.org/10.1093/ije/dyg070.",
+      "volume": "32",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/ije/dyh132",
+      "author": "GD Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "30",
+      "journal-title": "Int J Epidemiol",
+      "key": "585_CR28",
+      "unstructured": "Smith GD, Ebrahim S. Mendelian randomization: prospects, potentials, and limitations. Int J Epidemiol. 2004;33:30–42. https://doi.org/10.1093/ije/dyh132.",
+      "volume": "33",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/hmg/ddu328",
+      "author": "G Davey Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "R89",
+      "journal-title": "Hum Mol Genet",
+      "key": "585_CR29",
+      "unstructured": "Davey Smith G, Hemani G. Mendelian randomization: genetic anchors for causal inference in epidemiological studies. Hum Mol Genet. 2014;23:R89-98. https://doi.org/10.1093/hmg/ddu328.",
+      "volume": "23",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/s40471-017-0128-6",
+      "author": "J Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "330",
+      "journal-title": "Curr Epidemiol Rep",
+      "key": "585_CR30",
+      "unstructured": "Zheng J, Baird D, Borges M-C, Bowden J, Hemani G, Haycock P, et al. Recent developments in mendelian randomization studies. Curr Epidemiol Rep. 2017;4:330–45. https://doi.org/10.1007/s40471-017-0128-6.",
+      "volume": "4",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "author": "C Bycroft",
+      "doi-asserted-by": "publisher",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "585_CR31",
+      "unstructured": "Bycroft C, Freeman C, Petkova D, Band G, Elliott LT, Sharp K, et al. The UK Biobank resource with deep phenotyping and genomic data. Nature. 2018;562:203–9. https://doi.org/10.1038/s41586-018-0579-z.",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1136/BMJ.N2233",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR32",
+      "unstructured": "Skrivankova VW, Richmond RC, Woolf BAR, Davies NM, Swanson SA, Vanderweele TJ, et al. Strengthening the reporting of observational studies in epidemiology using mendelian randomisation (STROBE-MR): explanation and elaboration. BMJ 2021;375. https://doi.org/10.1136/BMJ.N2233."
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.06.045",
+      "author": "MH Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1198",
+      "journal-title": "Cell",
+      "key": "585_CR33",
+      "unstructured": "Chen MH, Raffield LM, Mousas A, Sakaue S, Huffman JE, Moscati A, et al. Trans-ethnic and ancestry-specific blood-cell genetics in 746,667 individuals from 5 global populations. Cell. 2020;182:1198-1213.e14. https://doi.org/10.1016/j.cell.2020.06.045.",
+      "volume": "182",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/S40246-022-00380-5",
+      "author": "A-E Constantinescu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Hum Genomics",
+      "key": "585_CR34",
+      "unstructured": "Constantinescu A-E, Mitchell RE, Zheng J, Bull CJ, Timpson NJ, Amulic B, et al. A framework for research into continental ancestry groups of the UK Biobank. Hum Genomics. 2022;16:1–14. https://doi.org/10.1186/S40246-022-00380-5.",
+      "volume": "16",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/ije/dyg070",
+      "author": "G Davey Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Int J Epidemiol",
+      "key": "585_CR35",
+      "unstructured": "Davey Smith G, Ebrahim S, Smith GD, Ebrahim S. ‘Mendelian randomization’: can genetic epidemiology contribute to understanding environmental determinants of disease? Int J Epidemiol. 2003;32:1–22. https://doi.org/10.1093/ije/dyg070.",
+      "volume": "32",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/ije/dyx028",
+      "author": "FP Hartwig",
+      "doi-asserted-by": "publisher",
+      "first-page": "1717",
+      "journal-title": "Int J Epidemiol",
+      "key": "585_CR36",
+      "unstructured": "Hartwig FP, Davies NM, Hemani G, Smith GD. Two-sample Mendelian randomization: avoiding the downsides of a powerful, widely applicable but potentially fallible technique. Int J Epidemiol. 2016;45:1717–26.",
+      "volume": "45",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41467-019-13480-z",
+      "author": "MGE Network",
+      "doi-asserted-by": "publisher",
+      "first-page": "5732",
+      "journal-title": "Nat Commun",
+      "key": "585_CR37",
+      "unstructured": "Network MGE. Insights into malaria susceptibility using genome-wide data on 17,000 individuals from Africa, Asia and Oceania. Nat Commun. 2019;10:5732. https://doi.org/10.1038/s41467-019-13480-z.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.cell.2016.10.042",
+      "author": "WJ Astle",
+      "doi-asserted-by": "publisher",
+      "first-page": "1415",
+      "journal-title": "Cell",
+      "key": "585_CR38",
+      "unstructured": "Astle WJ, Elding H, Jiang T, Allen D, Ruklisa D, Mann AL, et al. The allelic landscape of human blood cell trait variation and links to common complex disease. Cell. 2016;167:1415-1429.e19. https://doi.org/10.1016/j.cell.2016.10.042.",
+      "volume": "167",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/mpr.1608",
+      "author": "AT Marees",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Int J Methods Psychiatr Res",
+      "key": "585_CR39",
+      "unstructured": "Marees AT, de Kluiver H, Stringer S, Vorspan F, Curis E, Marie-Claire C, et al. A tutorial on conducting genome-wide association studies: quality control and statistical analysis. Int J Methods Psychiatr Res. 2018;27:1–10. https://doi.org/10.1002/mpr.1608.",
+      "volume": "27",
+      "year": "2018"
+    },
+    {
+      "key": "585_CR40",
+      "unstructured": "Sheard S, Nicholls R, Froggatt J. UK Biobank Haematology Data Companion Document n.d."
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "author": "J Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "76",
+      "journal-title": "Am J Hum Genet",
+      "key": "585_CR41",
+      "unstructured": "Yang J, Lee SH, Goddard ME, Visscher PM. GCTA: a tool for genome-wide complex trait analysis. Am J Hum Genet. 2011;88:76–82. https://doi.org/10.1016/j.ajhg.2010.11.011.",
+      "volume": "88",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ng.2213",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR42",
+      "unstructured": "Yang J, Ferreira T, Morris AP, Medland SE, Genetic Investigation of AnTC, Consortium DiaIaGRAM (DIAGRAM), et al. Conditional and joint multiple-SNP analysis of GWAS summary statistics identifies additional variants influencing complex traits. Nat Genet 2012;44:369-75. https://doi.org/10.1038/ng.2213."
+    },
+    {
+      "DOI": "10.1038/s41467-017-01261-5",
+      "author": "K Watanabe",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Nat Commun",
+      "key": "585_CR43",
+      "unstructured": "Watanabe K, Taskesen E, Van Bochoven A, Posthuma D. Functional mapping and annotation of genetic associations with FUMA. Nat Commun. 2017;8:1–11. https://doi.org/10.1038/s41467-017-01261-5.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1176/APPI.AJP.2020.19111158",
+      "author": "KW Choi",
+      "doi-asserted-by": "publisher",
+      "first-page": "944",
+      "journal-title": "Am J Psychiatry",
+      "key": "585_CR44",
+      "unstructured": "Choi KW, Stein MB, Nishimi KM, Ge T, Coleman JRI, Chen CY, et al. An exposure-wide and mendelian randomization approach to identifying modifiable factors for the prevention of depression. Am J Psychiatry. 2020;177:944–54. https://doi.org/10.1176/APPI.AJP.2020.19111158.",
+      "volume": "177",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/MDS.27873",
+      "author": "AJ Noyce",
+      "doi-asserted-by": "publisher",
+      "first-page": "1864",
+      "journal-title": "Mov Disord",
+      "key": "585_CR45",
+      "unstructured": "Noyce AJ, Bandres-Ciga S, Kim J, Heilbron K, Kia D, Hemani G, et al. The Parkinson’s disease Mendelian randomization research portal. Mov Disord. 2019;34:1864. https://doi.org/10.1002/MDS.27873.",
+      "volume": "34",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/NG.608",
+      "author": "J Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "565",
+      "journal-title": "Nat Genet",
+      "key": "585_CR46",
+      "unstructured": "Yang J, Benyamin B, McEvoy BP, Gordon S, Henders AK, Nyholt DR, et al. Common SNPs explain a large proportion of heritability for human height. Nat Genet. 2010;42:565. https://doi.org/10.1038/NG.608.",
+      "volume": "42",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1111/tmi.12313",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR47",
+      "unstructured": "WHO Africa. Severe Malaria 2014https://doi.org/10.1111/tmi.12313"
+    },
+    {
+      "DOI": "10.1007/s00439-019-02014-8",
+      "author": "DJ Lawson",
+      "doi-asserted-by": "publisher",
+      "first-page": "23",
+      "journal-title": "Hum Genet",
+      "key": "585_CR48",
+      "unstructured": "Lawson DJ, Davies NM, Haworth S, Ashraf B, Howe L, Crawford A, et al. Is population structure in the genetic biobank era irrelevant, a challenge, or an opportunity? Hum Genet. 2020;139:23–41. https://doi.org/10.1007/s00439-019-02014-8.",
+      "volume": "139",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/BIOINFORMATICS/BTQ340",
+      "author": "CJ Willer",
+      "doi-asserted-by": "publisher",
+      "first-page": "2190",
+      "journal-title": "Bioinformatics",
+      "key": "585_CR49",
+      "unstructured": "Willer CJ, Li Y, Abecasis GR. METAL: Fast and efficient meta-analysis of genomewide association scans. Bioinformatics. 2010;26:2190–1. https://doi.org/10.1093/BIOINFORMATICS/BTQ340.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/NG.74",
+      "author": "S Sanna",
+      "doi-asserted-by": "publisher",
+      "first-page": "198",
+      "journal-title": "Nat Genet",
+      "key": "585_CR50",
+      "unstructured": "Sanna S, Jackson AU, Nagaraja R, Willer CJ, Chen WM, Bonnycastle LL, et al. Common variants in the GDF5-UQCC region are associated with variation in human height. Nat Genet. 2008;40:198–203. https://doi.org/10.1038/NG.74.",
+      "volume": "40",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/NG.76",
+      "author": "CJ Willer",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "journal-title": "Nat Genet",
+      "key": "585_CR51",
+      "unstructured": "Willer CJ, Sanna S, Jackson AU, Scuteri A, Bonnycastle LL, Clarke R, et al. Newly identified loci that influence lipid concentrations and risk of coronary artery disease. Nat Genet. 2008;40:161–9. https://doi.org/10.1038/NG.76.",
+      "volume": "40",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1371/JOURNAL.PGEN.1007081",
+      "author": "G Hemani",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007081",
+      "journal-title": "PLoS Genet",
+      "key": "585_CR52",
+      "unstructured": "Hemani G, Tilling K, Davey SG. Orienting the causal relationship between imprecisely measured traits using GWAS summary data. PLoS Genet. 2017;13:e1007081. https://doi.org/10.1371/JOURNAL.PGEN.1007081.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.7554/eLife.34408",
+      "author": "G Hemani",
+      "doi-asserted-by": "publisher",
+      "first-page": "e34408",
+      "journal-title": "Elife",
+      "key": "585_CR53",
+      "unstructured": "Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, et al. The MR-base platform supports systematic causal inference across the human phenome. Elife. 2018;7:e34408.",
+      "volume": "7",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/sim.6835",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR54",
+      "unstructured": "Burgess S, Dudbridge F, Thompson SG. Combining information on multiple instrumental variables in Mendelian randomization: comparison of allele score and summarized data methods. Stat Med 2016;35:1880–906. https://doi.org/10.1002/sim.6835."
+    },
+    {
+      "DOI": "10.1093/ije/dyv080",
+      "author": "J Bowden",
+      "doi-asserted-by": "publisher",
+      "first-page": "512",
+      "journal-title": "Int J Epidemiol",
+      "key": "585_CR55",
+      "unstructured": "Bowden J, Davey Smith G, Burgess S. Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression. Int J Epidemiol. 2015;44:512–25. https://doi.org/10.1093/ije/dyv080.",
+      "volume": "44",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/AJE/KWY185",
+      "author": "J Bowden",
+      "doi-asserted-by": "publisher",
+      "first-page": "2681",
+      "journal-title": "Am J Epidemiol",
+      "key": "585_CR56",
+      "unstructured": "Bowden J, Hemani G, Davey SG. Invited Commentary: Detecting individual and global horizontal pleiotropy in mendelian randomization—a job for the humble heterogeneity statistic? Am J Epidemiol. 2018;187:2681–5. https://doi.org/10.1093/AJE/KWY185.",
+      "volume": "187",
+      "year": "2018"
+    },
+    {
+      "key": "585_CR57",
+      "unstructured": "Age groups - GOV.UK Ethnicity facts and figures n.d. https://www.ethnicity-facts-figures.service.gov.uk/uk-population-by-ethnicity/demographics/age-groups/latest (accessed August 17, 2022)."
+    },
+    {
+      "key": "585_CR58",
+      "unstructured": "Health Survey for England: Weight n.d. http://healthsurvey.hscic.gov.uk/data-visualisation/data-visualisation/explore-the-trends/weight.aspx (accessed August 17, 2022)."
+    },
+    {
+      "DOI": "10.1186/1471-2156-8-58",
+      "author": "RJ Klein",
+      "doi-asserted-by": "publisher",
+      "first-page": "58",
+      "journal-title": "BMC Genet",
+      "key": "585_CR59",
+      "unstructured": "Klein RJ. Power analysis for genome-wide association studies. BMC Genet. 2007;8:58. https://doi.org/10.1186/1471-2156-8-58.",
+      "volume": "8",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/AJE/KWT084",
+      "author": "BL Pierce",
+      "doi-asserted-by": "publisher",
+      "first-page": "1177",
+      "journal-title": "Am J Epidemiol",
+      "key": "585_CR60",
+      "unstructured": "Pierce BL, Burgess S. Efficient design for mendelian randomization studies: subsample and 2-sample instrumental variable estimators. Am J Epidemiol. 2013;178:1177. https://doi.org/10.1093/AJE/KWT084.",
+      "volume": "178",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1371/JOURNAL.PGEN.1004269",
+      "author": "PM Visscher",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1004269",
+      "journal-title": "PLoS Genet",
+      "key": "585_CR61",
+      "unstructured": "Visscher PM, Hemani G, Vinkhuyzen AAE, Chen GB, Lee SH, Wray NR, et al. Statistical power to detect genetic (Co)variance of complex traits using SNP data in unrelated samples. PLoS Genet. 2014;10:e1004269. https://doi.org/10.1371/JOURNAL.PGEN.1004269.",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/ng.3190",
+      "author": "PR Loh",
+      "doi-asserted-by": "publisher",
+      "first-page": "284",
+      "journal-title": "Nat Genet",
+      "key": "585_CR62",
+      "unstructured": "Loh PR, Tucker G, Bulik-Sullivan BK, Vilhjálmsson BJ, Finucane HK, Salem RM, et al. Efficient Bayesian mixed-model analysis increases association power in large cohorts. Nat Genet. 2015;47:284–90. https://doi.org/10.1038/ng.3190.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/S41588-022-01036-9",
+      "author": "O Weissbrod",
+      "doi-asserted-by": "publisher",
+      "first-page": "450",
+      "journal-title": "Nat Genet",
+      "key": "585_CR63",
+      "unstructured": "Weissbrod O, Kanai M, Shi H, Gazal S, Peyrot WJ, Khera AV, et al. Leveraging fine-mapping and multi-population training data to improve cross-population polygenic risk scores. Nat Genet. 2022;54:450. https://doi.org/10.1038/S41588-022-01036-9.",
+      "volume": "54",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/ng.548",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR64",
+      "unstructured": "Kang HM, Sul JH, Service SK, Zaitlen NA, Kong SY, Freimer NB, Sabatti C, Eskin E. Variance component model to account for sample structure in genome-wide association studies. Nat Genet. 2010;42(4):348-54.https://doi.org/10.1038/ng.548"
+    },
+    {
+      "DOI": "10.1038/s41467-020-20188-y",
+      "author": "F Lichou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Nature Commun",
+      "key": "585_CR65",
+      "unstructured": "Lichou F, Trynka G. Functional studies of GWAS variants are gaining momentum. Nature Commun. 2020;11:1–4. https://doi.org/10.1038/s41467-020-20188-y.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/NAR/GKQ603",
+      "author": "K Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e164",
+      "journal-title": "Nucleic Acids Res",
+      "key": "585_CR66",
+      "unstructured": "Wang K, Li M, Hakonarson H. ANNOVAR: functional annotation of genetic variants from high-throughput sequencing data. Nucleic Acids Res. 2010;38:e164–e164. https://doi.org/10.1093/NAR/GKQ603.",
+      "volume": "38",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/NAR/GKY1120",
+      "author": "A Buniello",
+      "doi-asserted-by": "publisher",
+      "first-page": "D005",
+      "journal-title": "Nucleic Acids Res",
+      "key": "585_CR67",
+      "unstructured": "Buniello A, Macarthur JAL, Cerezo M, Harris LW, Hayhurst J, Malangone C, et al. The NHGRI-EBI GWAS Catalog of published genome-wide association studies, targeted arrays and summary statistics 2019. Nucleic Acids Res. 2019;47:D005-12. https://doi.org/10.1093/NAR/GKY1120.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/genes12071049",
+      "author": "J Wen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1049",
+      "journal-title": "Genes (Basel)",
+      "key": "585_CR68",
+      "unstructured": "Wen J, Xie M, Rowland B, Rosen JD, Sun Q, Chen J, et al. Transcriptome-wide association study of blood cell traits in african ancestry and hispanic/latino populations. Genes (Basel). 2021;12:1049. https://doi.org/10.3390/genes12071049.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/S12864-021-07745-5",
+      "author": "Y Hu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Genomics",
+      "key": "585_CR69",
+      "unstructured": "Hu Y, Bien SA, Nishimura KK, Haessler J, Hodonsky CJ, Baldassari AR, et al. Multi-ethnic genome-wide association analyses of white blood cell and platelet traits in the Population Architecture using Genomics and Epidemiology (PAGE) study. BMC Genomics. 2021;22:1–11. https://doi.org/10.1186/S12864-021-07745-5.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/NATURE08909",
+      "author": "TW Nilsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "457",
+      "journal-title": "Nature",
+      "key": "585_CR70",
+      "unstructured": "Nilsen TW, Graveley BR. Expansion of the eukaryotic proteome by alternative splicing. Nature. 2010;463:457. https://doi.org/10.1038/NATURE08909.",
+      "volume": "463",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41467-020-20578-2",
+      "author": "D Garrido-Martín",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Nature Commun",
+      "key": "585_CR71",
+      "unstructured": "Garrido-Martín D, Borsari B, Calvo M, Reverter F, Guigó R. Identification and analysis of splicing quantitative trait loci across multiple tissues in the human genome. Nature Commun. 2021;12:1–16. https://doi.org/10.1038/s41467-020-20578-2.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/S13059-021-02398-9",
+      "author": "DL McCartney",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "journal-title": "Genome Biol",
+      "key": "585_CR72",
+      "unstructured": "McCartney DL, Min JL, Richmond RC, Lu AT, Sobczyk MK, Davies G, et al. Genome-wide association studies identify 137 genetic loci for DNA methylation biomarkers of aging. Genome Biol. 2021;22:25. https://doi.org/10.1186/S13059-021-02398-9.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/J.BIOCEL.2013.07.022",
+      "author": "F Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "2479",
+      "journal-title": "Int J Biochem Cell Biol",
+      "key": "585_CR73",
+      "unstructured": "Zhou F, Xing Y, Xu X, Yang Y, Zhang J, Ma Z, et al. NBPF is a potential DNA-binding transcription factor that is directly regulated by NF-κB. Int J Biochem Cell Biol. 2013;45:2479–90. https://doi.org/10.1016/J.BIOCEL.2013.07.022.",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/OFID/OFU113",
+      "author": "CB Moore",
+      "doi-asserted-by": "publisher",
+      "first-page": "113",
+      "journal-title": "Open Forum Infect Dis",
+      "key": "585_CR74",
+      "unstructured": "Moore CB, Verma A, Pendergrass S, Verma SS, Johnson DH, Daar ES, et al. Phenome-wide association study relating pretreatment laboratory parameters with human genetic variants in AIDS clinical trials group protocols. Open Forum Infect Dis. 2015;2:113. https://doi.org/10.1093/OFID/OFU113.",
+      "volume": "2",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/J.CELL.2019.10.004",
+      "author": "D Gurdasani",
+      "doi-asserted-by": "publisher",
+      "first-page": "984",
+      "journal-title": "Cell",
+      "key": "585_CR75",
+      "unstructured": "Gurdasani D, Carstensen T, Fatumo S, Chen G, Franklin CS, Prado-Martinez J, et al. Uganda genome resource enables insights into population history and genomic discovery in Africa. Cell. 2019;179:984. https://doi.org/10.1016/J.CELL.2019.10.004.",
+      "volume": "179",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002108",
+      "author": "AP Reiner",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1002108",
+      "journal-title": "PLoS Genet",
+      "key": "585_CR76",
+      "unstructured": "Reiner AP, Lettre G, Nalls MA, Ganesh SK, Mathias R, Austin MA, et al. Genome-Wide Association Study of White Blood Cell Count in 16,388 African Americans: the Continental Origins and Genetic Epidemiology Network (COGENT). PLoS Genet. 2011;7:e1002108. https://doi.org/10.1371/journal.pgen.1002108.",
+      "volume": "7",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3389/FGENE.2021.749415/FULL",
+      "author": "O Soremekun",
+      "doi-asserted-by": "publisher",
+      "first-page": "749415",
+      "journal-title": "Front Genet",
+      "key": "585_CR77",
+      "unstructured": "Soremekun O, Soremekun C, Machipisa T, Soliman M, Nashiru O, Chikowore T, et al. Genome-wide association and Mendelian randomization analysis reveal the causal relationship between white blood cell subtypes and asthma in Africans. Front Genet. 2021;12:749415. https://doi.org/10.3389/FGENE.2021.749415/FULL.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/HMG/DDX024",
+      "author": "D Jain",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Hum Mol Genet",
+      "key": "585_CR78",
+      "unstructured": "Jain D, Hodonsky CJ, Schick UM, Morrison JV, Minnerath S, Brown L, et al. Genome-wide association of white blood cell counts in Hispanic/Latino Americans: the Hispanic Community Health Study/Study of Latinos. Hum Mol Genet. 2017;26:24. https://doi.org/10.1093/HMG/DDX024.",
+      "volume": "26",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41380-018-0335-7",
+      "author": "SE Legge",
+      "doi-asserted-by": "publisher",
+      "first-page": "328",
+      "journal-title": "Mol Psychiatry",
+      "key": "585_CR79",
+      "unstructured": "Legge SE, Pardiñas AF, Helthuis M, Jansen JA, Jollie K, Knapper S, et al. A genome-wide association study in individuals of African ancestry reveals the importance of the Duffy-null genotype in the assessment of clozapine-related neutropenia. Mol Psychiatry. 2019;24:328–37. https://doi.org/10.1038/s41380-018-0335-7.",
+      "volume": "24",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/J.AJHG.2021.08.004",
+      "author": "L Kachuri",
+      "doi-asserted-by": "publisher",
+      "first-page": "1823",
+      "journal-title": "Am J Hum Genet",
+      "key": "585_CR80",
+      "unstructured": "Kachuri L, Jeon S, DeWan AT, Metayer C, Ma X, Witte JS, et al. Genetic determinants of blood-cell traits influence susceptibility to childhood acute lymphoblastic leukemia. Am J Hum Genet. 2021;108:1823–35. https://doi.org/10.1016/J.AJHG.2021.08.004.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/J.CELL.2020.08.008/ATTACHMENT/347CE04A-7337-4664-BB5B-5ED6234B8F9E/MMC11.DOCX",
+      "author": "D Vuckovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "1214",
+      "journal-title": "Cell",
+      "key": "585_CR81",
+      "unstructured": "Vuckovic D, Bao EL, Akbari P, Lareau CA, Mousas A, Jiang T, et al. The polygenic and monogenic basis of blood traits and diseases. Cell. 2020;182:1214-1231.e11. https://doi.org/10.1016/J.CELL.2020.08.008/ATTACHMENT/347CE04A-7337-4664-BB5B-5ED6234B8F9E/MMC11.DOCX.",
+      "volume": "182",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00931-x",
+      "author": "S Sakaue",
+      "doi-asserted-by": "publisher",
+      "first-page": "1415",
+      "journal-title": "Nat Genetics",
+      "key": "585_CR82",
+      "unstructured": "Sakaue S, Kanai M, Tanigawa Y, Karjalainen J, Kurki M, Koshiba S, et al. A cross-population atlas of genetic associations for 220 human phenotypes. Nat Genetics. 2021;53:1415–24. https://doi.org/10.1038/s41588-021-00931-x.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0047-6",
+      "author": "M Kanai",
+      "doi-asserted-by": "publisher",
+      "first-page": "390",
+      "journal-title": "Nat Genetics",
+      "key": "585_CR83",
+      "unstructured": "Kanai M, Akiyama M, Takahashi A, Matoba N, Momozawa Y, Ikeda M, et al. Genetic analysis of quantitative traits in the Japanese population links cell types to complex human diseases. Nat Genetics. 2018;50:390–400. https://doi.org/10.1038/s41588-018-0047-6.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/ECI.12949",
+      "author": "K De Filippo",
+      "doi-asserted-by": "publisher",
+      "first-page": "12949",
+      "journal-title": "Eur J Clin Invest",
+      "key": "585_CR84",
+      "unstructured": "De Filippo K, Rankin SM. CXCR4, the master regulator of neutrophil trafficking in homeostasis and disease. Eur J Clin Invest. 2018;48:12949. https://doi.org/10.1111/ECI.12949.",
+      "volume": "48",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1182/BLOOD-2008-09-177287",
+      "author": "KJ Eash",
+      "doi-asserted-by": "publisher",
+      "first-page": "4711",
+      "journal-title": "Blood",
+      "key": "585_CR85",
+      "unstructured": "Eash KJ, Means JM, White DW, Link DC. CXCR4 is a key regulator of neutrophil release from the bone marrow under basal and stress granulopoiesis conditions. Blood. 2009;113:4711. https://doi.org/10.1182/BLOOD-2008-09-177287.",
+      "volume": "113",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1073/PNAS.0804017105",
+      "author": "C Weber",
+      "doi-asserted-by": "publisher",
+      "first-page": "16278",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "585_CR86",
+      "unstructured": "Weber C, Kraemer S, Drechsler M, Lue H, Koenen RR, Kapurniotu A, et al. Structural determinants of MIF functions in CXCR2-mediated inflammatory and atherogenic leukocyte recruitment. Proc Natl Acad Sci U S A. 2008;105:16278. https://doi.org/10.1073/PNAS.0804017105.",
+      "volume": "105",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.3389/FIMMU.2019.01995/BIBTEX",
+      "author": "S Ghosh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1995",
+      "journal-title": "Front Immunol",
+      "key": "585_CR87",
+      "unstructured": "Ghosh S, Jiang N, Farr L, Ngobeni R, Moonah S. Parasite-produced MIF cytokine: role in immune evasion, invasion, and pathogenesis. Front Immunol. 2019;10:1995. https://doi.org/10.3389/FIMMU.2019.01995/BIBTEX.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1084/jem.20182227",
+      "author": "H Bando",
+      "doi-asserted-by": "publisher",
+      "first-page": "1733",
+      "journal-title": "J Exp Med",
+      "key": "585_CR88",
+      "unstructured": "Bando H, Pradipta A, Iwanaga S, Okamoto T, Okuzaki D, Tanaka S, et al. CXCR4 regulates Plasmodium development in mouse and human hepatocytes. J Exp Med. 2019;216:1733.",
+      "volume": "216",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/J.XHGG.2022.100163",
+      "author": "KL Young",
+      "doi-asserted-by": "publisher",
+      "first-page": "100163",
+      "journal-title": "Hum Genet Genomics Adv",
+      "key": "585_CR89",
+      "unstructured": "Young KL, Fisher V, Deng X, Brody JA, Graff M, Lim E, et al. Whole-exome sequence analysis of anthropometric traits illustrates challenges in identifying effects of rare genetic variants. Hum Genet Genomics Adv. 2023;4:100163. https://doi.org/10.1016/J.XHGG.2022.100163.",
+      "volume": "4",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1016/J.CELL.2019.02.048",
+      "author": "G Sirugo",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "journal-title": "Cell",
+      "key": "585_CR90",
+      "unstructured": "Sirugo G, Williams SM, Tishkoff SA. The missing diversity in human genetic studies. Cell. 2019;177:26–31. https://doi.org/10.1016/J.CELL.2019.02.048.",
+      "volume": "177",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fgene.2020.00875",
+      "author": "JN Cooke Bailey",
+      "doi-asserted-by": "publisher",
+      "first-page": "875",
+      "journal-title": "Front Genet",
+      "key": "585_CR91",
+      "unstructured": "Cooke Bailey JN, Bush WS, Crawford DC. Editorial: the importance of diversity in precision medicine research. Front Genet. 2020;11:875. https://doi.org/10.3389/fgene.2020.00875.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/JOURNAL.PGEN.1006925",
+      "author": "A Mousas",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1006925",
+      "journal-title": "PLoS Genet",
+      "key": "585_CR92",
+      "unstructured": "Mousas A, Ntritsos G, Chen MH, Song C, Huffman JE, Tzoulaki I, et al. Rare coding variants pinpoint genes that control human hematological traits. PLoS Genet. 2017;13:e1006925. https://doi.org/10.1371/JOURNAL.PGEN.1006925.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.semcdb.2021.08.008",
+      "author": "T Fadason",
+      "doi-asserted-by": "publisher",
+      "first-page": "135",
+      "journal-title": "Semin Cell Dev Biol",
+      "key": "585_CR93",
+      "unstructured": "Fadason T, Farrow S, Gokuladhas S, Golovina E, Nyaga D, O’Sullivan JM, et al. Assigning function to SNPs: considerations when interpreting genetic variation. Semin Cell Dev Biol. 2022;121:135–42. https://doi.org/10.1016/j.semcdb.2021.08.008.",
+      "volume": "121",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1257/JEP.2.1.191",
+      "author": "RH Thaler",
+      "doi-asserted-by": "publisher",
+      "first-page": "191",
+      "journal-title": "J Econ Perspect",
+      "key": "585_CR94",
+      "unstructured": "Thaler RH. Anomalies: the winner’s curse. J Econ Perspect. 1988;2:191–202. https://doi.org/10.1257/JEP.2.1.191.",
+      "volume": "2",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1093/IJE/DYR178",
+      "author": "OA Panagiotou",
+      "doi-asserted-by": "publisher",
+      "first-page": "273",
+      "journal-title": "Int J Epidemiol",
+      "key": "585_CR95",
+      "unstructured": "Panagiotou OA, Ioannidis JPA, Hirschhorn JN, Abecasis GR, Frayling TM, McCarthy MI, et al. What should the genome-wide significance threshold be? Empirical replication of borderline genetic associations. Int J Epidemiol. 2012;41:273–86. https://doi.org/10.1093/IJE/DYR178.",
+      "volume": "41",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/G3JOURNAL/JKAA056",
+      "doi-asserted-by": "publisher",
+      "key": "585_CR96",
+      "unstructured": "Chen Z, Boehnke M, Wen X, Mukherjee B. Revisiting the genome-wide significance threshold for common variant GWAS. G3 Genes|Genomes|Genetics 2021;11:jkaa056. https://doi.org/10.1093/G3JOURNAL/JKAA056."
+    },
+    {
+      "DOI": "10.1097/EDE.0B013E318181B865",
+      "author": "P Kraft",
+      "doi-asserted-by": "publisher",
+      "first-page": "649",
+      "journal-title": "Epidemiology",
+      "key": "585_CR97",
+      "unstructured": "Kraft P. Curses: Winner’s and otherwise—In genetic epidemiology. Epidemiology. 2008;19:649–51. https://doi.org/10.1097/EDE.0B013E318181B865.",
+      "volume": "19",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1097/EDE.0B013E31818131E7",
+      "author": "JPA Ioannidis",
+      "doi-asserted-by": "publisher",
+      "first-page": "640",
+      "journal-title": "Epidemiology",
+      "key": "585_CR98",
+      "unstructured": "Ioannidis JPA. Why most discovered true associations are inflated. Epidemiology. 2008;19:640–8. https://doi.org/10.1097/EDE.0B013E31818131E7.",
+      "volume": "19",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/J.JCLINEPI.2015.09.016",
+      "author": "JM Gaziano",
+      "doi-asserted-by": "publisher",
+      "first-page": "214",
+      "journal-title": "J Clin Epidemiol",
+      "key": "585_CR99",
+      "unstructured": "Gaziano JM, Concato J, Brophy M, Fiore L, Pyarajan S, Breeling J, et al. Million Veteran Program: a mega-biobank to study genetic influences on health and disease. J Clin Epidemiol. 2016;70:214–23. https://doi.org/10.1016/J.JCLINEPI.2015.09.016.",
+      "volume": "70",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 99,
+  "references-count": 99,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-024-00585-w"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A genome-wide association study of neutrophil count in individuals associated to an African continental ancestry group facilitates studies of malaria pathogenesis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "18"
+}

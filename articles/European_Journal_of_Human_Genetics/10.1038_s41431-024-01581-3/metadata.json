@@ -1,0 +1,702 @@
+{
+  "DOI": "10.1038/s41431-024-01581-3",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-024-01581-3",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIntellectual disability (ID) is a common disorder, yet there is a wide spectrum of impairment from mild to profoundly affected individuals. Mild ID is seen as the low extreme of the general distribution of intelligence, while severe ID is often seen as a monogenic disorder caused by rare, pathogenic, highly penetrant variants. To investigate the genetic factors influencing mild and severe ID, we evaluated rare and common variation in the Northern Finland Intellectual Disability cohort (\u003cjats:italic\u003en\u003c/jats:italic\u003e = 1096 ID patients), a cohort with a high percentage of mild ID (\u003cjats:italic\u003en\u003c/jats:italic\u003e = 550) and from a population bottleneck enriched in rare, damaging variation. Despite this enrichment, we found only a small percentage of ID was due to recessive Finnish-enriched variants (0.5%). A larger proportion was linked to dominant variation, with a significant burden of rare, damaging variation in both mild and severe ID. This rare variant burden was enriched in more severe ID (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 2.4e-4), patients without a relative with ID (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 4.76e-4), and in those with features associated with monogenic disorders. We also found a significant burden of common variants associated with decreased cognitive function, with no difference between mild and more severe ID. When we included common and rare variants in a joint model, the rare and common variants had additive effects in both mild and severe ID. A multimodel inference approach also found that common and rare variants together best explained ID status (ΔAIC = 16.8, ΔBIC = 10.2). Overall, we report evidence for the additivity of rare and common variant burden throughout the spectrum of intellectual disability.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1581"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "11 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "19 January 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "22 February 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "11 March 2024"
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Ethical permission for the Northern Finnish Intellectual Disability study protocol has been given by the Joint Authority for the Hospital District of Northern Ostrobothnia, Regional Ethics Committee (latest decision on November 2015, §340) in accordance with the Finnish Medical Research Act (488/1999). All subjects and/or their legal guardians provided written informed consent to participate in the study."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "AP is the chief scientific officer for the FinnGen project that is co-funded by 13 international pharmaceutical companies. VS. has had research collaboration with Bayer Ltd (unrelated to the present study)."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-8712-3518",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Urpa",
+      "given": "Lea",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Kurki",
+      "given": "Mitja I.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-2760-7059",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Rahikkala",
+      "given": "Elisa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hämäläinen",
+      "given": "Eija",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7563-5324",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Salomaa",
+      "given": "Veikko",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7167-0990",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Suvisaari",
+      "given": "Jaana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Keski-Filppula",
+      "given": "Riikka",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rauhala",
+      "given": "Merja",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Korpi-Heikkilä",
+      "given": "Satu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Komulainen-Ebrahim",
+      "given": "Jonna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Helander",
+      "given": "Heli",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0796-8706",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Vieira",
+      "given": "Päivi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Uusimaa",
+      "given": "Johanna",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8041-3205",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Moilanen",
+      "given": "Jukka S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Körkkö",
+      "given": "Jarmo",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0601-6815",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Singh",
+      "given": "Tarjinder",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kuismin",
+      "given": "Outi",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4387-1861",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Pietiläinen",
+      "given": "Olli",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2527-5874",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Palotie",
+      "given": "Aarno",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Daly",
+      "given": "Mark J.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        11
+      ]
+    ],
+    "date-time": "2024-03-11T06:01:49Z",
+    "timestamp": 1710136909000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        11
+      ]
+    ],
+    "date-time": "2024-03-11T06:02:46Z",
+    "timestamp": 1710136966000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T00:47:56Z",
+    "timestamp": 1714524476202
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        11
+      ]
+    ]
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            11
+          ]
+        ],
+        "date-time": "2024-03-11T00:00:00Z",
+        "timestamp": 1710115200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            11
+          ]
+        ],
+        "date-time": "2024-03-11T00:00:00Z",
+        "timestamp": 1710115200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01581-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01581-3",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-024-01581-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        11
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        11
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.ridd.2010.12.018",
+      "author": "PK Maulik",
+      "doi-asserted-by": "publisher",
+      "first-page": "419",
+      "journal-title": "Res Dev Disabil",
+      "key": "1581_CR1",
+      "unstructured": "Maulik PK, Mascarenhas MN, Mathers CD, Dua T, Saxena S. Prevalence of intellectual disability: a meta-analysis of population-based studies. Res Dev Disabil. 2011;32:419–36.",
+      "volume": "32",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.03.010",
+      "author": "HV Firth",
+      "doi-asserted-by": "publisher",
+      "first-page": "524",
+      "journal-title": "Am J Hum Genet",
+      "key": "1581_CR2",
+      "unstructured": "Firth HV, Richards SM, Bevan AP, Clayton S, Corpas M, Rajan D, et al. DECIPHER: database of chromosomal imbalance and phenotype in humans using ensembl resources. Am J Hum Genet. 2009;84:524–33.",
+      "volume": "84",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1073/pnas.1508093112",
+      "author": "A Reichenberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "1098",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "1581_CR3",
+      "unstructured": "Reichenberg A, Cederlöf M, McMillan A, Trzaskowski M, Kapra O, Fruchter E, et al. Discontinuity in the genetic and environmental causes of the intellectual disability spectrum. Proc Natl Acad Sci USA. 2016;113:1098–103.",
+      "volume": "113",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1111/jcpp.13560",
+      "author": "P Lichtenstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "1092",
+      "journal-title": "J Child Psychol Psychiatry",
+      "key": "1581_CR4",
+      "unstructured": "Lichtenstein P, Tideman M, Sullivan PF, Serlachius E, Larsson H, Kuja-Halkola R, et al. Familial risk and heritability of intellectual disability: a population-based cohort study in Sweden. J Child Psychol Psychiatry. 2022;63:1092–102.",
+      "volume": "63",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0566-4",
+      "author": "MEK Niemi",
+      "doi-asserted-by": "publisher",
+      "first-page": "268",
+      "journal-title": "Nature",
+      "key": "1581_CR5",
+      "unstructured": "Niemi MEK, Martin HC, Rice DL, Gallone G, Gordon S, Kelemen M, et al. Common genetic variants contribute to risk of rare severe neurodevelopmental disorders. Nature. 2018;562:268–71.",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-018-08262-y",
+      "author": "MI Kurki",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1581_CR6",
+      "unstructured": "Kurki MI, Saarentaus E, Pietiläinen O, Gormley P, Lal D, Kerminen S, et al. Contribution of rare and common variants to intellectual disability in a sub-isolate of Northern Finland. Nat Commun. 2019;10:410.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1101/2022.06.24.22276728",
+      "doi-asserted-by": "crossref",
+      "key": "1581_CR7",
+      "unstructured": "Chen CY, Tian R, Ge T, Lam M, Sanchez-Andrade G, Singh T, et al. The impact of rare protein coding genetic variation on adult cognitive function [Internet]. medRxiv; 2022. p. 2022.06.24.22276728. Available from: https://www.medrxiv.org/content/10.1101/2022.06.24.22276728v1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2022.05.011",
+      "author": "R Kingdom",
+      "doi-asserted-by": "publisher",
+      "first-page": "1308",
+      "journal-title": "Am J Hum Genet",
+      "key": "1581_CR8",
+      "unstructured": "Kingdom R, Tuke M, Wood A, Beaumont RN, Frayling TM, Weedon MN, et al. Rare genetic variants in genes and loci linked to dominant monogenic developmental disorders cause milder related phenotypes in the general population. Am J Hum Genet. 2022;109:1308–16.",
+      "volume": "109",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004494",
+      "author": "ET Lim",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1004494",
+      "journal-title": "PLOS Genet",
+      "key": "1581_CR9",
+      "unstructured": "Lim ET, Würtz P, Havulinna AS, Palta P, Tukiainen T, Rehnström K, et al. Distribution and medical impact of loss-of-function variants in the Finnish founder population. PLOS Genet. 2014;10:e1004494.",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/s00439-002-0875-3",
+      "author": "R Norio",
+      "doi-asserted-by": "publisher",
+      "first-page": "441",
+      "journal-title": "Hum Genet",
+      "key": "1581_CR10",
+      "unstructured": "Norio R. Finnish disease heritage I. Hum Genet. 2003;112:441–56.",
+      "volume": "112",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/ije/dyp330",
+      "author": "E Vartiainen",
+      "doi-asserted-by": "publisher",
+      "first-page": "504",
+      "journal-title": "Int J Epidemiol",
+      "key": "1581_CR11",
+      "unstructured": "Vartiainen E, Laatikainen T, Peltonen M, Juolevi A, Männistö S, Sundvall J, et al. Thirty-five-year trends in cardiovascular risk factors in Finland. Int J Epidemiol. 2010;39:504–18.",
+      "volume": "39",
+      "year": "2010"
+    },
+    {
+      "key": "1581_CR12",
+      "unstructured": "Gould R, Ilmarinen J, Järvisalo J, Koskinen S. Dimensions of work ability: results of the health 2000 survey. 2022. Available from: https://www.julkari.fi/handle/10024/78055."
+    },
+    {
+      "DOI": "10.1038/ncomms12342",
+      "author": "MA Rivas",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1581_CR13",
+      "unstructured": "Rivas MA, Graham D, Sulem P, Stevens C, Desch AN, Goyette P, et al. A protein-truncating R179X variant in RNF186 confers protection against ulcerative colitis. Nat Commun. 2016;7:12342.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq559",
+      "doi-asserted-by": "crossref",
+      "key": "1581_CR14",
+      "unstructured": "Robust relationship inference in genome-wide association studies | Bioinformatics | Oxford Academic. (2022). Available from: https://academic.oup.com/bioinformatics/article/26/22/2867/228512"
+    },
+    {
+      "key": "1581_CR15",
+      "unstructured": "Hail Team. Hail https://github.com/hail-is/hail/commit/39909e0a396f. Available from: https://github.com/hail-is/hail/commit/39909e0a396f."
+    },
+    {
+      "DOI": "10.1186/s13059-016-0974-4",
+      "author": "W McLaren",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "1581_CR16",
+      "unstructured": "McLaren W, Gil L, Hunt SE, Riat HS, Ritchie GRS, Thormann A, et al. The ensembl variant effect predictor. Genome Biol. 2016;17:122.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "journal-title": "Nature",
+      "key": "1581_CR17",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581:434–43.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/148353",
+      "doi-asserted-by": "crossref",
+      "key": "1581_CR18",
+      "unstructured": "Samocha KE, Kosmicki JA, Karczewski KJ, O’Donnell-Luria AH, Pierce-Hoffman E, MacArthur DG, et al. Regional missense constraint improves variant deleteriousness prediction. bioRxiv; 2017. p. 148353. Available from: https://www.biorxiv.org/content/10.1101/148353v1"
+    },
+    {
+      "DOI": "10.1093/nar/gky1016",
+      "author": "P Rentzsch",
+      "doi-asserted-by": "publisher",
+      "first-page": "D886",
+      "journal-title": "Nucleic Acids Res",
+      "key": "1581_CR19",
+      "unstructured": "Rentzsch P, Witten D, Cooper GM, Shendure J, Kircher M. CADD: predicting the deleteriousness of variants throughout the human genome. Nucleic Acids Res. 2019;47:D886–94.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ng.3050",
+      "author": "KE Samocha",
+      "doi-asserted-by": "publisher",
+      "first-page": "944",
+      "journal-title": "Nat Genet",
+      "key": "1581_CR20",
+      "unstructured": "Samocha KE, Robinson EB, Sanders SJ, Stevens C, Sabo A, McGrath LM, et al. A framework for the interpretation of de novo mutation in human disease. Nat Genet. 2014;46:944–50.",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "key": "1581_CR21",
+      "unstructured": "Dewey M. metap: meta-analysis of significance values. 2022. Available from: https://CRAN.R-project.org/package=metap"
+    },
+    {
+      "key": "1581_CR22",
+      "unstructured": "Consortium TSWG of the PG, Ripke S, Walters JT, O’Donovan MC. Mapping genomic loci prioritises genes and implicates synaptic biology in schizophrenia. medRxiv; 2020. p. 2020.09.12.20192922. Available from: https://www.medrxiv.org/content/10.1101/2020.09.12.20192922v1"
+    },
+    {
+      "key": "1581_CR23",
+      "unstructured": "Demontis D, Walters RK, Martin J, Mattheisen M, Als TD, Agerbo E, et al. Discovery of the first genome-wide significant risk loci for ADHD. bioRxiv; 2017. p. 145581. Available from: https://www.biorxiv.org/content/10.1101/145581v1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0397-8",
+      "author": "EA Stahl",
+      "doi-asserted-by": "publisher",
+      "first-page": "793",
+      "journal-title": "Nat Genet",
+      "key": "1581_CR24",
+      "unstructured": "Stahl EA, Breen G, Forstner AJ, McQuillin A, Ripke S, Trubetskoy V, et al. Genome-wide association study identifies 30 Loci Associated with Bipolar Disorder. Nat Genet. 2019;51:793–803.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0147-3",
+      "author": "JJ Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "1112",
+      "journal-title": "Nat Genet",
+      "key": "1581_CR25",
+      "unstructured": "Lee JJ, Wedow R, Okbay A, Kong E, Maghzian O, Zacher M, et al. Gene discovery and polygenic prediction from a genome-wide association study of educational attainment in 1.1 million individuals. Nat Genet. 2018;50:1112–21.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-018-07524-z",
+      "author": "B Abou-Khalil",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1581_CR26",
+      "unstructured": "Abou-Khalil B, Auce P, Avbersek A, Bahlo M, Balding DJ, Bast T, et al. Genome-wide mega-analysis identifies 16 loci and highlights diverse biological mechanisms in the common epilepsies. Nat Commun. 2018;9:5269.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0090-3",
+      "author": "NR Wray",
+      "doi-asserted-by": "publisher",
+      "first-page": "668",
+      "journal-title": "Nat Genet",
+      "key": "1581_CR27",
+      "unstructured": "Wray NR, Ripke S, Mattheisen M, Trzaskowski M, Byrne EM, Abdellaoui A, et al. Genome-wide association analyses identify 44 risk variants and refine the genetic architecture of major depression. Nat Genet. 2018;50:668–81.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0152-6",
+      "author": "JE Savage",
+      "doi-asserted-by": "publisher",
+      "first-page": "912",
+      "journal-title": "Nat Genet",
+      "key": "1581_CR28",
+      "unstructured": "Savage JE, Jansen PR, Stringer S, Watanabe K, Bryois J, de Leeuw CA, et al. Genome-wide association meta-analysis in 269,867 individuals identifies new genetic and functional links to intelligence. Nat Genet. 2018;50:912–9.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/mp.2017.77",
+      "author": "LE Duncan",
+      "doi-asserted-by": "publisher",
+      "first-page": "666",
+      "journal-title": "Mol Psychiatry",
+      "key": "1581_CR29",
+      "unstructured": "Duncan LE, Ratanatharathorn A, Aiello AE, Almli LM, Amstadter AB, Ashley-Koch AE, et al. Largest GWAS of PTSD (N=20 070) yields genetic overlap with schizophrenia and sex differences in heritability. Mol Psychiatry. 2018;23:666–73.",
+      "volume": "23",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0151-7",
+      "author": "M Nagel",
+      "doi-asserted-by": "publisher",
+      "first-page": "920",
+      "journal-title": "Nat Genet",
+      "key": "1581_CR30",
+      "unstructured": "Nagel M, Jansen PR, Stringer S, Watanabe K, de Leeuw CA, Bryois J, et al. Meta-analysis of genome-wide association studies for neuroticism in 449,484 individuals identifies novel genetic loci and pathways. Nat Genet. 2018;50:920–7.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-019-09718-5",
+      "author": "T Ge",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "1581_CR31",
+      "unstructured": "Ge T, Chen CY, Ni Y, Feng YCA, Smoller JW. Polygenic prediction via Bayesian regression and continuous shrinkage priors. Nat Commun. 2019;10:1776.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "author": "CC Chang",
+      "doi-asserted-by": "publisher",
+      "first-page": "s13742-015",
+      "journal-title": "GigaScience",
+      "key": "1581_CR32",
+      "unstructured": "Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. GigaScience. 2015;4:s13742-015–0047–8.",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "key": "1581_CR33",
+      "unstructured": "Lenth RV, Buerkner P, Herve M, Jung M, Love J, Miguez F, et al. Emmeans: estimated marginal means, aka least-squares means. Available from: https://cran.r-project.org/web/packages/emmeans/index.html"
+    },
+    {
+      "key": "1581_CR34",
+      "unstructured": "Bartón K. MuMIn: Multi-model inference. 2022. Available from: https://cran.r-project.org/web/packages/MuMIn/MuMIn.pdf"
+    },
+    {
+      "DOI": "10.1007/s00439-021-02268-1",
+      "author": "I Järvelä",
+      "doi-asserted-by": "publisher",
+      "first-page": "1011",
+      "journal-title": "Hum Genet",
+      "key": "1581_CR35",
+      "unstructured": "Järvelä I, Määttä T, Acharya A, Leppälä J, Jhangiani SN, Arvio M, et al. Exome sequencing reveals predominantly de novo variants in disorders with intellectual disability (ID) in the founder population of Finland. Hum Genet. 2021;140:1011–29.",
+      "volume": "140",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ebiom.2022.104079",
+      "doi-asserted-by": "crossref",
+      "key": "1581_CR36",
+      "unstructured": "Oliver KL, Ellis CA, Scheffer IE, Ganesan S, Leu C, Sadleir LG, et al. Common risk variants for epilepsy are enriched in families previously targeted for rare monogenic variant discovery. eBioMedicine. 2022;81. Available from: https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(22)00260-2/fulltext"
+    },
+    {
+      "DOI": "10.1016/j.tig.2022.03.009",
+      "author": "T Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "895",
+      "journal-title": "Trends Genet",
+      "key": "1581_CR37",
+      "unstructured": "Wang T, Zhao PA, Eichler EE. Rare variants and the oligogenic architecture of autism. Trends Genet. 2022;38:895–903.",
+      "volume": "38",
+      "year": "2022"
+    }
+  ],
+  "reference-count": 37,
+  "references-count": 37,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-024-01581-3"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Evidence for the additivity of rare and common variant burden throughout the spectrum of intellectual disability"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy"
+}

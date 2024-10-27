@@ -1,0 +1,801 @@
+{
+  "DOI": "10.1186/s40246-023-00467-7",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00467-7",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eLong-read sequencing technologies have the potential to overcome the limitations of short reads and provide a comprehensive picture of the human genome. However, the characterization of repetitive sequences by reconstructing genomic structures at high resolution solely from long reads remains difficult. Here, we developed a localized assembly method (LoMA) that constructs highly accurate consensus sequences (CSs) from long reads.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe developed LoMA by combining minimap2, MAFFT, and our algorithm, which classifies diploid haplotypes based on structural variants and CSs. Using this tool, we analyzed two human samples (NA18943 and NA19240) sequenced with the Oxford Nanopore sequencer. We defined target regions in each genome based on mapping patterns and then constructed a high-quality catalog of the human insertion solely from the long-read data.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe assessment of LoMA showed a high accuracy of CSs (error rate \u0026lt; 0.3%) compared with raw data (error rate \u0026gt; 8%) and superiority to a previous study. The genome-wide analysis of NA18943 and NA19240 identified 5516 and 6542 insertions (≥ 100 bp), respectively. Most insertions (~ 80%) were derived from tandem repeats and transposable elements. We also detected processed pseudogenes, insertions in transposable elements, and long insertions (\u0026gt; 10 kbp). Finally, our analysis suggested that short tandem duplications are associated with gene expression and transposons.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur analysis showed that LoMA constructs high-quality sequences from long reads with substantial errors. This study revealed the true structures of the insertions with high accuracy and inferred the mechanisms for the insertions, thus contributing to future human genome studies. LoMA is available at our GitHub page: \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/kolikem/loma\"\u003ehttps://github.com/kolikem/loma\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "467"
+  ],
+  "article-number": "21",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "30 November 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "1 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "9 March 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interest."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Ikemoto",
+      "given": "Ko",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Fujimoto",
+      "given": "Hinano",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fujimoto",
+      "given": "Akihiro",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        26
+      ]
+    ],
+    "date-time": "2023-03-26T20:14:21Z",
+    "timestamp": 1679861661000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        26
+      ]
+    ],
+    "date-time": "2023-03-26T20:18:17Z",
+    "timestamp": 1679861897000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100009619",
+      "award": [
+        "JP21km0908001"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "AMED"
+    },
+    {
+      "award": [
+        "18H05511"
+      ],
+      "name": "MEXT KAKENHI"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        2
+      ]
+    ],
+    "date-time": "2024-03-02T21:57:38Z",
+    "timestamp": 1709416658964
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2023-03-09T00:00:00Z",
+        "timestamp": 1678320000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2023-03-09T00:00:00Z",
+        "timestamp": 1678320000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00467-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00467-7/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00467-7.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s41576-020-0236-x",
+      "author": "GA Logsdon",
+      "doi-asserted-by": "publisher",
+      "first-page": "597",
+      "journal-title": "Nat Rev Genet",
+      "key": "467_CR1",
+      "unstructured": "Logsdon GA, Vollger MR, Eichler EE. Long-read human genome sequencing and its applications. Nat Rev Genet. 2020;21:597–614. https://doi.org/10.1038/s41576-020-0236-x.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0459-y",
+      "author": "J Sone",
+      "doi-asserted-by": "publisher",
+      "first-page": "1215",
+      "journal-title": "Nat Genet",
+      "key": "467_CR2",
+      "unstructured": "Sone J, Mitsuhashi S, Fujita A, Mizuguchi T, Hamanaka K, Mori K, et al. Long-read sequencing identifies GGC repeat expansions in NOTCH2NLC associated with neuronal intranuclear inclusion disease. Nat Genet. 2019;51:1215–21. https://doi.org/10.1038/s41588-019-0459-y.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s13073-021-00883-1",
+      "author": "A Fujimoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Med",
+      "key": "467_CR3",
+      "unstructured": "Fujimoto A, Wong JH, Yoshii Y, Akiyama S, Tanaka A, Yagi H, et al. Whole-genome sequencing with long reads reveals complex structure and origin of structural variation in human genetic variations and somatic mutations in cancer. Genome Med. 2021;13:1–15. https://doi.org/10.1186/s13073-021-00883-1.",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2547-7",
+      "author": "KH Miga",
+      "doi-asserted-by": "publisher",
+      "first-page": "79",
+      "journal-title": "Nature",
+      "key": "467_CR4",
+      "unstructured": "Miga KH, Koren S, Rhie A, Vollger MR, Gershman A, Bzikadze A, et al. Telomere-to-telomere assembly of a complete human X chromosome. Nature. 2020;585:79–84. https://doi.org/10.1038/s41586-020-2547-7.",
+      "volume": "585",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2022-108428",
+      "author": "Y Sano",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Med Genet",
+      "key": "467_CR5",
+      "unstructured": "Sano Y, Koyanagi Y, Wong JH, Murakami Y, Fujiwara K, Endo M, et al. Likely pathogenic structural variants in genetically unsolved patients with retinitis pigmentosa revealed by long-read sequencing. J Med Genet. 2022. https://doi.org/10.1136/jmedgenet-2022-108428.",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/nrg3117",
+      "author": "TJ Treangen",
+      "doi-asserted-by": "publisher",
+      "first-page": "36",
+      "journal-title": "Nat Rev Genet",
+      "key": "467_CR6",
+      "unstructured": "Treangen TJ, Salzberg SL. Repetitive DNA and next-generation sequencing: computational challenges and solutions. Nat Rev Genet. 2012;13:36–46. https://doi.org/10.1038/nrg3117.",
+      "volume": "13",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.09.013",
+      "author": "H Tang",
+      "doi-asserted-by": "publisher",
+      "first-page": "700",
+      "journal-title": "Am J Hum Genet",
+      "key": "467_CR7",
+      "unstructured": "Tang H, Kirkness EF, Lippert C, Biggs WH, Fabani M, Guzman E, et al. Profiling of short-tandem-repeat disease alleles in 12,632 human whole genomes. Am J Hum Genet. 2017;101:700–15. https://doi.org/10.1016/j.ajhg.2017.09.013.",
+      "volume": "101",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nrg.2017.115",
+      "author": "AJ Hannan",
+      "doi-asserted-by": "publisher",
+      "first-page": "286",
+      "journal-title": "Nat Rev Genet",
+      "key": "467_CR8",
+      "unstructured": "Hannan AJ. Tandem repeats mediating genetic plasticity in health and disease. Nat Rev Genet. 2018;19:286–98. https://doi.org/10.1038/nrg.2017.115.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1073/pnas.1704117114",
+      "author": "LM Payer",
+      "doi-asserted-by": "publisher",
+      "first-page": "E3984",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "467_CR9",
+      "unstructured": "Payer LM, Steranka JP, Yang WR, Kryatova M, Medabalimi S, Ardeljan D, et al. Structural variants caused by Alu insertions are associated with risks for many human diseases. Proc Natl Acad Sci U S A. 2017;114:E3984–92. https://doi.org/10.1073/pnas.1704117114.",
+      "volume": "114",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1073/pnas.1704117114",
+      "author": "CP Mavragani",
+      "doi-asserted-by": "publisher",
+      "first-page": "2686",
+      "journal-title": "Arthritis Rheumatol",
+      "key": "467_CR10",
+      "unstructured": "Mavragani CP, Sagalovskiy I, Guo Q, Nezos A, Kapsogeorgou EK, Lu P, et al. Expression of long interspersed nuclear element 1 retroelements and induction of type I interferon in patients with systemic autoimmune disease. Arthritis Rheumatol. 2016;68:2686–96. https://doi.org/10.1073/pnas.1704117114.",
+      "volume": "68",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1126/science.abj6987",
+      "author": "S Nurk",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "journal-title": "Science",
+      "key": "467_CR11",
+      "unstructured": "Nurk S, Sergey Koren AR, et al. The complete sequence of a human genome. Science. 2022;376:44–53. https://doi.org/10.1126/science.abj6987.",
+      "volume": "376",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s13059-019-1828-7",
+      "author": "M Mahmoud",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Biol",
+      "key": "467_CR12",
+      "unstructured": "Mahmoud M, Gobet N, Cruz-Dávalos DI, Mounier N, Dessimoz C, Sedlazeck FJ. Structural variant calling: the long and the short of it. Genome Biol. 2019;20:1–14. https://doi.org/10.1186/s13059-019-1828-7.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw369",
+      "author": "M Nattestad",
+      "doi-asserted-by": "publisher",
+      "first-page": "3021",
+      "journal-title": "Bioinformatics",
+      "key": "467_CR13",
+      "unstructured": "Nattestad M, Schatz MC. Assemblytics: a web analytics tool for the detection of variants from an assembly. Bioinformatics. 2016;32:3021–3. https://doi.org/10.1093/bioinformatics/btw369.",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nmeth.1935",
+      "author": "M Baker",
+      "doi-asserted-by": "publisher",
+      "first-page": "333",
+      "journal-title": "Nat Methods",
+      "key": "467_CR14",
+      "unstructured": "Baker M. De novo genome assembly: what every biologist should know. Nat Methods. 2019;9:333–7. https://doi.org/10.1038/nmeth.1935.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/978-1-0716-1036-7_9",
+      "doi-asserted-by": "publisher",
+      "key": "467_CR15",
+      "unstructured": "Frith MC, Mitsuhashi S, Katoh K. lamassemble: Multiple Alignment and Consensus Sequence of Long Reads. In: Katoh K, editor, Mult Seq Alignment Methods Protoc. 2021;2231:135–145. https://doi.org/10.1007/978-1-0716-1036-7_9."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty191",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "3094",
+      "journal-title": "Bioinformatics",
+      "key": "467_CR16",
+      "unstructured": "Li H. Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics. 2018;34:3094–100. https://doi.org/10.1093/bioinformatics/bty191.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/molbev/mst010",
+      "author": "K Katoh",
+      "doi-asserted-by": "publisher",
+      "first-page": "772",
+      "journal-title": "Mol Biol Evol",
+      "key": "467_CR17",
+      "unstructured": "Katoh K, Standley DM. MAFFT multiple sequence alignment software version 7: improvements in performance and usability. Mol Biol Evol. 2013;30:772–80. https://doi.org/10.1093/molbev/mst010.",
+      "volume": "30",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nature02168",
+      "author": "JW Belmont",
+      "doi-asserted-by": "publisher",
+      "first-page": "789",
+      "journal-title": "Nature",
+      "key": "467_CR18",
+      "unstructured": "Belmont JW, Hardenbol P, Willis TD, Yu F, Yang H, Ch’Ang LY, et al. The international HapMap project. Nature. 2003;426:789–96.",
+      "volume": "426",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1101/gr.244939.118",
+      "author": "W De Coster",
+      "doi-asserted-by": "publisher",
+      "first-page": "1178",
+      "journal-title": "Genome Res",
+      "key": "467_CR19",
+      "unstructured": "De Coster W, De Rijk P, De Roeck A, De Pooter T, D’Hert S, Strazisar M, et al. Structural variants identified by Oxford Nanopore PromethION sequencing of the human genome. Genome Res. 2019;29:1178–87. https://doi.org/10.1101/gr.244939.118.",
+      "volume": "29",
+      "year": "2019"
+    },
+    {
+      "key": "467_CR20",
+      "unstructured": "European Nucleotide Archive. https://www.ebi.ac.uk/ena/browser/home. Accessed 5 Mar 2023."
+    },
+    {
+      "DOI": "10.1038/ng.691",
+      "author": "A Fujimoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "931",
+      "journal-title": "Nat Genet",
+      "key": "467_CR21",
+      "unstructured": "Fujimoto A, Nakagawa H, Hosono N, Nakano K, Abe T, Boroevich KA, et al. Whole-genome sequencing and comprehensive variant analysis of a Japanese individual using massively parallel sequencing. Nat Genet. 2010;42:931–6. https://doi.org/10.1038/ng.691.",
+      "volume": "42",
+      "year": "2010"
+    },
+    {
+      "key": "467_CR22",
+      "unstructured": "Guppy. https://community.nanoporetech.com/docs/prepare/library_prep_protocols/Guppy-protocol/v/gpb_2003_v1_revap_14dec2018/guppy-for-macos. Accessed 5 Mar 2023."
+    },
+    {
+      "DOI": "10.1093/gigascience/gix010",
+      "author": "C Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Gigascience",
+      "key": "467_CR23",
+      "unstructured": "Yang C, Chu J, Warren RL, Birol I. NanoSim: nanopore sequence read simulator based on statistical characterization. Gigascience. 2017;6:1–6. https://doi.org/10.1093/gigascience/gix010.",
+      "volume": "6",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/BIOINFORMATICS/BTP352",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2078",
+      "journal-title": "Bioinformatics",
+      "key": "467_CR24",
+      "unstructured": "Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, et al. The sequence alignment/map format and SAMtools. Bioinformatics. 2009;25:2078–9. https://doi.org/10.1093/BIOINFORMATICS/BTP352.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41467-018-08148-z",
+      "author": "MJ Chaisson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1784",
+      "journal-title": "Nat Commun",
+      "key": "467_CR25",
+      "unstructured": "Chaisson MJ. Multi-platform discovery of haplotype-resolved structural variation in human genomes. Nat Commun. 2019;10:1784. https://doi.org/10.1038/s41467-018-08148-z.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12864-020-07125-5",
+      "author": "WJ Delage",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Genomics",
+      "key": "467_CR26",
+      "unstructured": "Delage WJ, Thevenon J, Lemaitre C. Towards a better understanding of the low recall of insertion variants with short-read based variant callers. BMC Genomics. 2020;21:1–17. https://doi.org/10.1186/s12864-020-07125-5.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/27.2.573",
+      "doi-asserted-by": "publisher",
+      "key": "467_CR27",
+      "unstructured": "Benson G. Tandem repeats finder: a program to analyze DNA sequences. Nucleic Acids Res. 1999;27:573–80. https://doi.org/10.1093/nar/27.2.573."
+    },
+    {
+      "key": "467_CR28",
+      "unstructured": "Smit AFA, Hubley R, Green P. RepeatMasker at http://repeatmasker.org. Accessed 5 Mar 2023."
+    },
+    {
+      "DOI": "10.1007/s00439-021-02291-2",
+      "author": "S Ashouri",
+      "doi-asserted-by": "publisher",
+      "first-page": "1201",
+      "journal-title": "Hum Genet",
+      "key": "467_CR29",
+      "unstructured": "Ashouri S, Wong JH, Nakagawa H, Shimada M, Tokunaga K, Fujimoto A. Characterization of intermediate-sized insertions using whole-genome sequencing data and analysis of their functional impact on gene expression. Hum Genet. 2021;140:1201–16. https://doi.org/10.1007/s00439-021-02291-2.",
+      "volume": "140",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/gr.229202",
+      "author": "WJ Kent",
+      "doi-asserted-by": "publisher",
+      "first-page": "656",
+      "journal-title": "Genome Res",
+      "key": "467_CR30",
+      "unstructured": "Kent WJ. BLAT—the BLAST-like alignment tool. Genome Res. 2002;12:656–64. https://doi.org/10.1101/gr.229202.",
+      "volume": "12",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1038/74249",
+      "author": "H Ellegren",
+      "doi-asserted-by": "publisher",
+      "first-page": "400",
+      "journal-title": "Nat Genet",
+      "key": "467_CR31",
+      "unstructured": "Ellegren H. Heterogeneous mutation processes in human microsatellite DNA sequences. Nat Genet. 2000;24:400–2. https://doi.org/10.1038/74249.",
+      "volume": "24",
+      "year": "2000"
+    },
+    {
+      "key": "467_CR32",
+      "unstructured": "RefSeq. http://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/. Accessed 5 Mar 2023."
+    },
+    {
+      "DOI": "10.1038/nrc.2017.35",
+      "author": "KH Burns",
+      "doi-asserted-by": "publisher",
+      "first-page": "415",
+      "journal-title": "Nat Rev Cancer",
+      "key": "467_CR33",
+      "unstructured": "Burns KH. Transposable elements in cancer. Nat Rev Cancer. 2017;17:415–24. https://doi.org/10.1038/nrc.2017.35.",
+      "volume": "17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/gb-2011-12-12-236",
+      "author": "P Deininger",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Biol",
+      "key": "467_CR34",
+      "unstructured": "Deininger P. Alu elements: know the SINEs. Genome Biol. 2011;12:1–12. https://doi.org/10.1186/gb-2011-12-12-236.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/nar/gkv416",
+      "author": "TL Bailey",
+      "doi-asserted-by": "publisher",
+      "first-page": "W39",
+      "journal-title": "Nucleic Acids Res",
+      "key": "467_CR35",
+      "unstructured": "Bailey TL, Johnson J, Grant CE, Noble WS. The MEME Suite. Nucleic Acids Res. 2015;43:W39-49. https://doi.org/10.1093/nar/gkv416.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "key": "467_CR36",
+      "unstructured": "GTEx data. https://gtexportal.org/home/datasets. Accessed 5 Mar 2023."
+    },
+    {
+      "DOI": "10.1038/nature11632",
+      "author": "DM Altshuler",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "journal-title": "Nature",
+      "key": "467_CR37",
+      "unstructured": "Altshuler DM, Durbin RM, Abecasis GR, Bentley DR, Chakravarti A, Clark AG, et al. An integrated map of genetic variation from 1,092 human genomes. Nature. 2012;491:56–65. https://doi.org/10.1038/nature11632.",
+      "volume": "491",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/nrg798",
+      "author": "MA Batzer",
+      "doi-asserted-by": "publisher",
+      "first-page": "370",
+      "journal-title": "Nat Rev Genet",
+      "key": "467_CR38",
+      "unstructured": "Batzer MA, Deininger PL. Alu repeats and human genomic diversity. Nat Rev Genet. 2002;3:370–9. https://doi.org/10.1038/nrg798.",
+      "volume": "3",
+      "year": "2002"
+    },
+    {
+      "key": "467_CR39",
+      "unstructured": "UCSC Genome Browser. https://genome.ucsc.edu. Accessed 5 Mar 2023."
+    },
+    {
+      "DOI": "10.1186/gb-2010-11-5-r52",
+      "author": "AW Pang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "467_CR40",
+      "unstructured": "Pang AW, Macdonald JR, Pinto D, Wei J, Rafiq MA, Conrad DF, et al. Towards a comprehensive structural variation map of an individual human genome. Genome Biol. 2010. https://doi.org/10.1186/gb-2010-11-5-r52.",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/jhg.2008.5",
+      "author": "T Shiina",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "journal-title": "J Hum Genet",
+      "key": "467_CR41",
+      "unstructured": "Shiina T, Hosomichi K, Inoko H, Kulski JK. The HLA genomic loci map: expression, interaction, diversity and disease. J Hum Genet. 2009;54:15–39. https://doi.org/10.1038/jhg.2008.5.",
+      "volume": "54",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/s13059-019-1667-6",
+      "author": "S Mitsuhashi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Biol",
+      "key": "467_CR42",
+      "unstructured": "Mitsuhashi S, Frith MC, Mizuguchi T, Miyatake S, Toyota T, Adachi H, et al. Tandem-genotypes: robust detection of tandem repeat expansions from long DNA reads. Genome Biol. 2019;20:1–17. https://doi.org/10.1186/s13059-019-1667-6.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2579-z",
+      "author": "B Trost",
+      "doi-asserted-by": "publisher",
+      "first-page": "80",
+      "journal-title": "Nature",
+      "key": "467_CR43",
+      "unstructured": "Trost B, Engchuan W, Nguyen CM, Thiruvahindrapuram B, Dolzhenko E, Backstrom I, et al. Genome-wide detection of tandem DNA repeats that are expanded in autism. Nature. 2020;586:80–6. https://doi.org/10.1038/s41586-020-2579-z.",
+      "volume": "586",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s40478-021-01201-x",
+      "author": "SR Chintalaphani",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Acta Neuropathol Commun",
+      "key": "467_CR44",
+      "unstructured": "Chintalaphani SR, Pineda SS, Deveson IW, Kumar KR. An update on the neurological short tandem repeat expansion disorders and the emergence of long-read sequencing diagnostics. Acta Neuropathol Commun. 2021. https://doi.org/10.1186/s40478-021-01201-x.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/BF00364656",
+      "author": "HS Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "journal-title": "Mamm Genome",
+      "key": "467_CR45",
+      "unstructured": "Kim HS, Lyons KM, Saitoh E, Azen EA, Smithies O, Maeda N. The structure and evolution of the human salivary proline-rich protein gene family. Mamm Genome. 1993;4:3–14. https://doi.org/10.1007/BF00364656.",
+      "volume": "4",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1093/hmg/dds382",
+      "author": "M Mangino",
+      "doi-asserted-by": "publisher",
+      "first-page": "5385",
+      "journal-title": "Hum Mol Genet",
+      "key": "467_CR46",
+      "unstructured": "Mangino M, Hwang SJ, Spector TD, Hunt SC, Kimura M, Fitzpatrick AL, et al. Genome-wide meta-analysis points to CTC1 and ZNF676 as genes regulating telomere homeostasis in humans. Hum Mol Genet. 2012;21:5385–94. https://doi.org/10.1093/hmg/dds382.",
+      "volume": "21",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1101/gr.275515.121",
+      "author": "EJ van Bree",
+      "doi-asserted-by": "publisher",
+      "first-page": "656",
+      "journal-title": "Genome Res",
+      "key": "467_CR47",
+      "unstructured": "van Bree EJ, Guimarães RLFP, Lundberg M, Blujdea ER, Rosenkrantz JL, White FTG, et al. A hidden layer of structural variation in transposable elements reveals potential genetic modifiers in human disease-risk loci. Genome Res. 2022;32:656–70. https://doi.org/10.1101/gr.275515.121.",
+      "volume": "32",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s11568-007-9002-9",
+      "author": "JM Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "journal-title": "Genomic Med",
+      "key": "467_CR48",
+      "unstructured": "Chen JM, Férec C, Cooper DN. Mechanism of Alu integration into the human genome. Genomic Med. 2007;1:9–17. https://doi.org/10.1007/s11568-007-9002-9.",
+      "volume": "1",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/S0092-8674(00)81997-2",
+      "author": "Q Feng",
+      "doi-asserted-by": "publisher",
+      "first-page": "905",
+      "journal-title": "Cell",
+      "key": "467_CR49",
+      "unstructured": "Feng Q, Moran JV, Kazazian HH, Boeke JD. Human L1 retrotransposon encodes a conserved endonuclease required for retrotransposition. Cell. 1996;87:905–16. https://doi.org/10.1016/S0092-8674(00)81997-2.",
+      "volume": "87",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1073/pnas.94.5.1872",
+      "author": "J Jurka",
+      "doi-asserted-by": "publisher",
+      "first-page": "1872",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "467_CR50",
+      "unstructured": "Jurka J. Sequence patterns indicate an enzymatic involvement in integration of mammalian retroposons. Proc Natl Acad Sci U S A. 1997;94:1872–7. https://doi.org/10.1073/pnas.94.5.1872.",
+      "volume": "94",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1101/gr.205701",
+      "author": "EM Ostertag",
+      "doi-asserted-by": "publisher",
+      "first-page": "2059",
+      "journal-title": "Genome Res",
+      "key": "467_CR51",
+      "unstructured": "Ostertag EM, Kazazian J. Twin priming: A proposed mechanism for the creation of inversions in L1 retrotransposition. Genome Res. 2001;11:2059–65. https://doi.org/10.1101/gr.205701.",
+      "volume": "11",
+      "year": "2001"
+    },
+    {
+      "key": "467_CR52",
+      "unstructured": "DDBJ. https://www.ddbj.nig.ac.jp/index-e.html. Accessed 5 Mar 2023."
+    },
+    {
+      "key": "467_CR53",
+      "unstructured": "GitHub page of Ko Ikemoto. https://github.com/kolikem/. Accessed 5 Mar 2023."
+    }
+  ],
+  "reference-count": 53,
+  "references-count": 53,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-2327629/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00467-7"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Localized assembly for long reads enables genome-wide analysis of repetitive regions at single-base resolution in human genomes"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

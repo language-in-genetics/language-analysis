@@ -1,0 +1,531 @@
+{
+  "DOI": "10.1002/gepi.22356",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22356",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003e\u003cjats:italic\u003elocStra\u003c/jats:italic\u003e is an \u003cjats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"graphic/gepi22356-math-0001.png\" xlink:title=\"urn:x-wiley:07410395:media:gepi22356:gepi22356-math-0001\" /\u003e‐package for the analysis of regional and global population stratification in whole‐genome sequencing (WGS) studies, where regional stratification refers to the substructure defined by the loci in a particular region on the genome. Population substructure can be assessed based on the genetic covariance matrix, the genomic relationship matrix, and the unweighted/weighted genetic Jaccard similarity matrix. Using a sliding window approach, the regional similarity matrices are compared with the global ones, based on user‐defined window sizes and metrics, for example, the correlation between regional and global eigenvectors. An algorithm for the specification of the window size is provided. As the implementation fully exploits sparse matrix algebra and is written in C++, the analysis is highly efficient. Even on single cores, for realistic study sizes (several thousand subjects, several million rare variants per subject), the runtime for the genome‐wide computation of all regional similarity matrices does typically not exceed one hour, enabling an unprecedented investigation of regional stratification across the entire genome. The package is applied to three WGS studies, illustrating the varying patterns of regional substructure across the genome and its beneficial effects on association testing.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22356"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-04-13"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-08-24"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-09-14"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-6008-2720",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University Boston Massachusetts USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Hahn",
+      "given": "Georg",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University Boston Massachusetts USA"
+        }
+      ],
+      "family": "Lutz",
+      "given": "Sharon M.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7918-089X",
+      "affiliation": [
+        {
+          "name": "Department of Medicine, Brigham and Women's Hospital Harvard University Boston Massachusetts USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Hecker",
+      "given": "Julian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Massachusetts General Hospital Harvard University Boston Massachusetts USA"
+        }
+      ],
+      "family": "Prokopenko",
+      "given": "Dmitry",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine, Brigham and Women's Hospital Harvard University Boston Massachusetts USA"
+        }
+      ],
+      "family": "Cho",
+      "given": "Michael H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine, Brigham and Women's Hospital Harvard University Boston Massachusetts USA"
+        }
+      ],
+      "family": "Silverman",
+      "given": "Edwin K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine, Brigham and Women's Hospital Harvard University Boston Massachusetts USA"
+        }
+      ],
+      "family": "Weiss",
+      "given": "Scott T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, T.H. Chan School of Public Health Harvard University Boston Massachusetts USA"
+        }
+      ],
+      "family": "Lange",
+      "given": "Christoph",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "The NHLBI Trans‐Omics for Precision Medicine (TOPMed) Consortium",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        24
+      ]
+    ],
+    "date-time": "2020-09-24T14:40:49Z",
+    "timestamp": 1600958449000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        3
+      ]
+    ],
+    "date-time": "2023-09-03T18:38:51Z",
+    "timestamp": 1693766331000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:54:50Z",
+    "timestamp": 1709254490371
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        14
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          2
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            14
+          ]
+        ],
+        "date-time": "2020-09-14T00:00:00Z",
+        "timestamp": 1600041600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22356",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22356",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22356",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "82-98",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        14
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        14
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        2
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1093/bioinformatics/bts144",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_2_1"
+    },
+    {
+      "DOI": "10.18637/jss.v052.i05",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_3_1"
+    },
+    {
+      "DOI": "10.1038/ng.f.136",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_4_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.1999.00997.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_5_1"
+    },
+    {
+      "DOI": "10.1038/ng.3954",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_6_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0231-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_7_1"
+    },
+    {
+      "key": "e_1_2_9_8_1",
+      "unstructured": "Hahn G. Lutz S. M. andLange C.(2020). locStra: Fast implementation of (Local) population stratification methods (Version 1.3) [Software].https://cran.r-project.org/web/packages/locStra/index.html"
+    },
+    {
+      "DOI": "10.1016/j.jaci.2006.12.609",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_9_1"
+    },
+    {
+      "DOI": "10.1126/science.1217283",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_10_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0812824106",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_11_1"
+    },
+    {
+      "author": "Laird N. M.",
+      "key": "e_1_2_9_12_1",
+      "volume-title": "The fundamentals of modern statistical genetics",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/gepi.21621",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_13_1"
+    },
+    {
+      "DOI": "10.1038/nmeth.2037",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_14_1"
+    },
+    {
+      "article-title": "A genome‐wide association study identifies risk loci for spirometric measures among smokers of European and African ancestry",
+      "author": "Lutz S. M.",
+      "first-page": "1",
+      "issue": "138",
+      "journal-title": "BMC Genetics",
+      "key": "e_1_2_9_15_1",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.06.020",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_16_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22103",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_17_1"
+    },
+    {
+      "DOI": "10.1046/j.1469-1809.2000.6420171.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_18_1"
+    },
+    {
+      "DOI": "10.1038/ng.2671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_19_1"
+    },
+    {
+      "key": "e_1_2_9_20_1",
+      "unstructured": "NHLBI TOPMed. (2018). Boston early‐onset COPD study in the national heart Lung and Blood Institute (NHLBI) Trans‐Omics for Precision Medicine (TOPMed) program."
+    },
+    {
+      "key": "e_1_2_9_21_1",
+      "unstructured": "NHLBI TOPMed. (2019). The Genetic Epidemiology of Asthma in Costa Rica."
+    },
+    {
+      "DOI": "10.1093/hmg/ddt376",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_22_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020190",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_23_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000421",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_24_1"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_25_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000519",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_26_1"
+    },
+    {
+      "DOI": "10.1086/302959",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_27_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv752",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_28_1"
+    },
+    {
+      "key": "e_1_2_9_29_1",
+      "unstructured": "Purcell S.andChang C.(2019). PLINK2 (Version 2.0) [Software].www.cog-genomics.org/plink/2.0/"
+    },
+    {
+      "article-title": "Genetic epidemiology of COPD (COPDGene) study design",
+      "author": "Regan E. A.",
+      "first-page": "32",
+      "issue": "7",
+      "journal-title": "COPD",
+      "key": "e_1_2_9_30_1",
+      "volume": "7",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1534/genetics.119.302139",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_31_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2007.09.022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_32_1"
+    },
+    {
+      "key": "e_1_2_9_33_1",
+      "unstructured": "Schlauch D.(2016). Implementation of the stego algorithm—Similarity test for estimating genetic outliers (Version 1.0) [Software].https://github.com/dschlauch/stego"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_34_1"
+    },
+    {
+      "DOI": "10.1086/504302",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_35_1"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_36_1"
+    },
+    {
+      "article-title": "Local and global ancestry inference, and applications to genetic association analysis for admixed populations",
+      "author": "Thornton T. A.",
+      "first-page": "S5S12",
+      "issue": "01",
+      "journal-title": "Genetic Epidemiology",
+      "key": "e_1_2_9_37_1",
+      "volume": "38",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/zamm.19290090206",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_38_1"
+    },
+    {
+      "DOI": "10.1534/genetics.116.197004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_39_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq709",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_40_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_41_1"
+    },
+    {
+      "DOI": "10.1186/s12859-015-0825-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_42_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2019.04.009",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_9_43_1"
+    }
+  ],
+  "reference-count": 42,
+  "references-count": 42,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2020.03.06.981050",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22356"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "locStra: Fast analysis of regional/global stratification in whole‐genome sequencing studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

@@ -1,0 +1,956 @@
+{
+  "DOI": "10.1038/s41431-022-01045-6",
+  "ISSN": [
+    "1018-4813",
+    "1476-5438"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41431-022-01045-6",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe role and biological significance of gene-environment interactions in human traits and diseases remain poorly understood. To address these questions, the \u003cjats:italic\u003eCHARGE Gene-Lifestyle Interactions Working Group\u003c/jats:italic\u003e conducted series of genome-wide interaction studies (GWIS) involving up to 610,475 individuals across four ancestries for three lipids and four blood pressure traits, while accounting for interaction effects with drinking and smoking exposures. Here we used GWIS summary statistics from these studies to decipher potential differences in genetic associations and G×E interactions across phenotype-exposure-ancestry combinations, and to derive insights on the potential mechanistic underlying G×E through in-silico functional analyses. Our analyses show first that interaction effects likely contribute to the commonly reported ancestry-specific genetic effect in complex traits, and second, that some phenotype-exposures pairs are more likely to benefit from a greater detection power when accounting for interactions. It also highlighted modest correlation between marginal and interaction effects, providing material for future methodological development and biological discussions. We also estimated contributions to phenotypic variance, including in particular the genetic heritability conditional on the exposure, and heritability partitioned across a range of functional annotations and cell types. In these analyses, we found multiple instances of potential heterogeneity of functional partitions between exposed and unexposed individuals, providing new evidence for likely exposure-specific genetic pathways. Finally, along this work, we identified potential biases in methods used to jointly meta-analyze genetic and interaction effects. We performed simulations to characterize these limitations and to provide the community with guidelines for future G×E studies.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "1045"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "23 June 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "22 December 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "10 January 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "22 March 2022"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The study did not require ethical approval as no human subject was involved."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-4946-698X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Laville",
+      "given": "Vincent",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0482-1602",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Majarian",
+      "given": "Timothy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sung",
+      "given": "Yun J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schwander",
+      "given": "Karen",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0933-2410",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Feitosa",
+      "given": "Mary F.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-3357-0862",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Chasman",
+      "given": "Daniel I.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0827-9101",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Bentley",
+      "given": "Amy R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rotimi",
+      "given": "Charles N.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0273-7965",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Cupples",
+      "given": "L. Adrienne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Vries",
+      "given": "Paul S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brown",
+      "given": "Michael R.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6381-4296",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Morrison",
+      "given": "Alanna C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kraja",
+      "given": "Aldi T.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6102-774X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Province",
+      "given": "Mike",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8527-8145",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Gu",
+      "given": "C. Charles",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gauderman",
+      "given": "W. James",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Laville",
+      "given": "Vincent",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Majarian",
+      "given": "Timothy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sung",
+      "given": "Yun J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schwander",
+      "given": "Karen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Feitosa",
+      "given": "Mary F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chasman",
+      "given": "Daniel I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bentley",
+      "given": "Amy R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rotimi",
+      "given": "Charles N.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cupples",
+      "given": "L. Adrienne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Vries",
+      "given": "Paul S.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brown",
+      "given": "Michael R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Morrison",
+      "given": "Alanna C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kraja",
+      "given": "Aldi T.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Province",
+      "given": "Mike",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gu",
+      "given": "C. Charles",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gauderman",
+      "given": "W. James",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rao",
+      "given": "D. C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Manning",
+      "given": "Alisa K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Aschard",
+      "given": "Hugues",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rao",
+      "given": "D. C.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0247-902X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Manning",
+      "given": "Alisa K.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7554-6783",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Aschard",
+      "given": "Hugues",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "the CHARGE Gene-Lifestyle Interactions Working Group",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "European Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        22
+      ]
+    ],
+    "date-time": "2022-03-22T06:07:47Z",
+    "timestamp": 1647929267000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        6,
+        8
+      ]
+    ],
+    "date-time": "2022-06-08T23:04:24Z",
+    "timestamp": 1654729464000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "R01HL118305",
+        "K25HL121091",
+        "K25HL121091"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "U.S. Department of Health \u0026 Human Services | NIH | National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000968",
+      "award": [
+        "18CDA34110116",
+        "18CDA34110116"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "American Heart Association"
+    },
+    {
+      "name": "U.S. Department of Health \u0026 Human Services | NIH | National Heart, Lung, and Blood Institute"
+    },
+    {
+      "name": "U.S. Department of Health \u0026 Human Services | NIH | National Heart, Lung, and Blood Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        22
+      ]
+    ],
+    "date-time": "2024-04-22T09:08:44Z",
+    "timestamp": 1713776924092
+  },
+  "is-referenced-by-count": 12,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "1018-4813"
+    },
+    {
+      "type": "electronic",
+      "value": "1476-5438"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        22
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            22
+          ]
+        ],
+        "date-time": "2022-03-22T00:00:00Z",
+        "timestamp": 1647907200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            22
+          ]
+        ],
+        "date-time": "2022-03-22T00:00:00Z",
+        "timestamp": 1647907200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01045-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01045-6",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41431-022-01045-6.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "730-739",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        22
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        22
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        6
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1093/aje/kwx227",
+      "author": "K McAllister",
+      "doi-asserted-by": "publisher",
+      "first-page": "753",
+      "journal-title": "Am J Epidemiol",
+      "key": "1045_CR1",
+      "unstructured": "McAllister K, Mechanic LE, Amos C, Aschard H, Blair IA, Chatterjee N, et al. Current challenges and new opportunities for gene-environment interaction studies of complex diseases. Am J Epidemiol. 2017;186:753–61.",
+      "volume": "186",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/aje/kwx228",
+      "author": "WJ Gauderman",
+      "doi-asserted-by": "publisher",
+      "first-page": "762",
+      "journal-title": "Am J Epidemiol",
+      "key": "1045_CR2",
+      "unstructured": "Gauderman WJ, Mukherjee B, Aschard H, Hsu L, Lewinger JP, Patel CJ, et al. Update on the state of the science for analytical methods for gene-environment interactions. Am J Epidemiol. 2017;186:762–70.",
+      "volume": "186",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/aje/kwx229",
+      "author": "MD Ritchie",
+      "doi-asserted-by": "publisher",
+      "first-page": "771",
+      "journal-title": "Am J Epidemiol",
+      "key": "1045_CR3",
+      "unstructured": "Ritchie MD, Davis JR, Aschard H, Battle A, Conti D, Du M, et al. Incorporation of biological knowledge into the study of gene-environment interactions. Am J Epidemiol. 2017;186:771–7.",
+      "volume": "186",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/gepi.21989",
+      "author": "H Aschard",
+      "doi-asserted-by": "publisher",
+      "first-page": "678",
+      "journal-title": "Genet Epidemiol",
+      "key": "1045_CR4",
+      "unstructured": "Aschard H. A perspective on interaction effects in genetic association studies. Genet Epidemiol. 2016;40:678–88.",
+      "volume": "40",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1161/CIRCGENETICS.116.001649",
+      "author": "DC Rao",
+      "doi-asserted-by": "publisher",
+      "first-page": "e001649",
+      "journal-title": "Circ Cardiovasc Genet.",
+      "key": "1045_CR5",
+      "unstructured": "Rao DC, Sung YJ, Winkler TW, Schwander K, Borecki I, Cupples LA, et al. Multiancestry study of gene-lifestyle interactions for cardiovascular traits in 610 475 individuals from 124 cohorts: design and rationale. Circ Cardiovasc Genet. 2017;10:e001649.",
+      "volume": "10",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1159/000099183",
+      "author": "P Kraft",
+      "doi-asserted-by": "publisher",
+      "first-page": "111",
+      "journal-title": "Hum Hered",
+      "key": "1045_CR6",
+      "unstructured": "Kraft P, Yen YC, Stram DO, Morrison J, Gauderman WJ. Exploiting gene-environment interaction to detect genetic associations. Hum Hered. 2007;63:111–9.",
+      "volume": "63",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0198166",
+      "author": "MF Feitosa",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0198166",
+      "journal-title": "PLoS ONE",
+      "key": "1045_CR7",
+      "unstructured": "Feitosa MF, Kraja AT, Chasman DI, Sung YJ, Winkler TW, Ntalla I, et al. Novel genetic associations for blood pressure identified via gene-alcohol interaction in up to 570K individuals across multiple ancestries. PLoS ONE. 2018;13:e0198166.",
+      "volume": "13",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.01.015",
+      "author": "YJ Sung",
+      "doi-asserted-by": "publisher",
+      "first-page": "375",
+      "journal-title": "Am J Hum Genet",
+      "key": "1045_CR8",
+      "unstructured": "Sung YJ, Winkler TW, de Las Fuentes L, Bentley AR, Brown MR, Kraja AT, et al. A large-scale multi-ancestry genome-wide study accounting for smoking behavior identifies multiple significant loci for blood pressure. Am J Hum Genet. 2018;102:375–400.",
+      "volume": "102",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/hmg/ddz070",
+      "author": "YJ Sung",
+      "doi-asserted-by": "publisher",
+      "first-page": "2615",
+      "journal-title": "Hum Mol Genet.",
+      "key": "1045_CR9",
+      "unstructured": "Sung YJ, de Las Fuentes L, Winkler TW, Chasman DI, Bentley AR, Kraja AT, et al. A multi-ancestry genome-wide study incorporating gene-smoking interactions identifies multiple new loci for pulse pressure and mean arterial pressure. Hum Mol Genet. 2019;28:2615–33.",
+      "volume": "28",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/aje/kwz005",
+      "author": "PS de Vries",
+      "doi-asserted-by": "publisher",
+      "first-page": "1033",
+      "journal-title": "Am J Epidemiol.",
+      "key": "1045_CR10",
+      "unstructured": "de Vries PS, Brown MR, Bentley AR, Sung YJ, Winkler TW, Ntalla I, et al. Multi-Ancestry Genome-Wide Association Study of Lipid Levels Incorporating Gene-Alcohol Interactions. Am J Epidemiol. 2019;188:1033–54.",
+      "volume": "188",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0378-y",
+      "author": "AR Bentley",
+      "doi-asserted-by": "publisher",
+      "first-page": "636",
+      "journal-title": "Nat Genet",
+      "key": "1045_CR11",
+      "unstructured": "Bentley AR, Sung YJ, Brown MR, Winkler TW, Kraja AT, Ntalla I, et al. Multi-ancestry genome-wide gene-smoking interaction study of 387,272 individuals identifies new loci associated with serum lipids. Nat Genet. 2019;51:636–48.",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/gepi.20300",
+      "author": "C Kooperberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "255",
+      "journal-title": "Genet Epidemiol",
+      "key": "1045_CR12",
+      "unstructured": "Kooperberg C, Leblanc M. Increasing the power of identifying gene x gene interactions in genome-wide association studies. Genet Epidemiol. 2008;32:255–63.",
+      "volume": "32",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "author": "CC Chang",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Gigascience.",
+      "key": "1045_CR13",
+      "unstructured": "Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:7.",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "C Genomes Project",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "journal-title": "Nature.",
+      "key": "1045_CR14",
+      "unstructured": "Genomes Project C, Auton A, Brooks LD, Durbin RM, Garrison EP, Kang HM, et al. A global reference for human genetic variation. Nature. 2015;526:68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3405",
+      "author": "N Kato",
+      "doi-asserted-by": "publisher",
+      "first-page": "1282",
+      "journal-title": "Nat Genet",
+      "key": "1045_CR15",
+      "unstructured": "Kato N, Loh M, Takeuchi F, Verweij N, Wang X, Zhang W, et al. Trans-ancestry genome-wide association study identifies 12 genetic loci influencing blood pressure and implicates a role for DNA methylation. Nat Genet. 2015;47:1282–93.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006728",
+      "author": "J Liang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1006728",
+      "journal-title": "PLoS Genet",
+      "key": "1045_CR16",
+      "unstructured": "Liang J, Le TH, Edwards DRV, Tayo BO, Gaulton KJ, Smith JA, et al. Single-trait and multi-trait genome-wide association analyses identify novel loci for blood pressure in African-ancestry populations. PLoS Genet. 2017;13:e1006728.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3768",
+      "author": "HR Warren",
+      "doi-asserted-by": "publisher",
+      "first-page": "403",
+      "journal-title": "Nat Genet",
+      "key": "1045_CR17",
+      "unstructured": "Warren HR, Evangelou E, Cabrera CP, Gao H, Ren M, Mifsud B, et al. Genome-wide association analysis identifies novel blood pressure loci and offers biological insights into cardiovascular risk. Nat Genet. 2017;49:403–15.",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/srep19429",
+      "author": "JE Below",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci Rep",
+      "key": "1045_CR18",
+      "unstructured": "Below JE, Parra EJ, Gamazon ER, Torres J, Krithika S, Candille S, et al. Meta-analysis of lipid-traits in Hispanics identifies novel loci, population-specific effects, and tissue-specific enrichment of eQTLs. Sci Rep. 2016;6:19429.",
+      "volume": "6",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41598-017-10812-1",
+      "author": "BP Prins",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci Rep",
+      "key": "1045_CR19",
+      "unstructured": "Prins BP, Kuchenbaecker KB, Bao Y, Smart M, Zabaneh D, Fatemifar G, et al. Genome-wide analysis of health-related biomarkers in the UK Household Longitudinal Study reveals novel associations. Sci Rep. 2017;7:11008.",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3300",
+      "author": "I Surakka",
+      "doi-asserted-by": "publisher",
+      "first-page": "589",
+      "journal-title": "Nat Genet",
+      "key": "1045_CR20",
+      "unstructured": "Surakka I, Horikoshi M, Magi R, Sarin AP, Mahajan A, Lagou V, et al. The impact of low-frequency and rare variants on lipid levels. Nat Genet. 2015;47:589–97.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nature09270",
+      "author": "TM Teslovich",
+      "doi-asserted-by": "publisher",
+      "first-page": "707",
+      "journal-title": "Nature.",
+      "key": "1045_CR21",
+      "unstructured": "Teslovich TM, Musunuru K, Smith AV, Edmondson AC, Stylianou IM, Koseki M, et al. Biological, clinical and population relevance of 95 loci for blood lipids. Nature. 2010;466:707–13.",
+      "volume": "466",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty379",
+      "author": "V Laville",
+      "doi-asserted-by": "publisher",
+      "first-page": "3412",
+      "journal-title": "Bioinformatics.",
+      "key": "1045_CR22",
+      "unstructured": "Laville V, Bentley AR, Prive F, Zhu X, Gauderman J, Winkler TW, et al. VarExp: estimating variance explained by genome-wide G×E summary statistics. Bioinformatics. 2018;34:3412–4.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3211",
+      "author": "BK Bulik-Sullivan",
+      "doi-asserted-by": "publisher",
+      "first-page": "291",
+      "journal-title": "Nat Genet",
+      "key": "1045_CR23",
+      "unstructured": "Bulik-Sullivan BK, Loh PR, Finucane HK, Ripke S, Yang J. Schizophrenia Working Group of the Psychiatric Genomics C, et al. LD Score regression distinguishes confounding from polygenicity in genome-wide association studies. Nat Genet. 2015;47:291–5.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12859-020-03569-4",
+      "author": "V Laville",
+      "doi-asserted-by": "publisher",
+      "first-page": "251",
+      "journal-title": "BMC Bioinformatics",
+      "key": "1045_CR24",
+      "unstructured": "Laville V, Majarian T, de Vries PS, Bentley AR, Feitosa MF, Sung YJ, et al. Deriving stratified effects from joint models investigating Gene-Environment Interactions. BMC Bioinformatics. 2020;21:251",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.3404",
+      "author": "HK Finucane",
+      "doi-asserted-by": "publisher",
+      "first-page": "1228",
+      "journal-title": "Nat Genet",
+      "key": "1045_CR25",
+      "unstructured": "Finucane HK, Bulik-Sullivan B, Gusev A, Trynka G, Reshef Y, Loh PR, et al. Partitioning heritability by functional annotation using genome-wide association summary statistics. Nat Genet. 2015;47:1228–35.",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0081-4",
+      "author": "HK Finucane",
+      "doi-asserted-by": "publisher",
+      "first-page": "621",
+      "journal-title": "Nat Genet",
+      "key": "1045_CR26",
+      "unstructured": "Finucane HK, Reshef YA, Anttila V, Slowikowski K, Gusev A, Byrnes A, et al. Heritability enrichment of specifically expressed genes identifies disease-relevant tissues and cell types. Nat Genet. 2018;50:621–9.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0222-9",
+      "author": "D Klarin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1514",
+      "journal-title": "Nat Genet",
+      "key": "1045_CR27",
+      "unstructured": "Klarin D, Damrauer SM, Cho K, Sun YV, Teslovich TM, Honerlaw J, et al. Genetics of blood lipids among ~300,000 multi-ethnic participants of the Million Veteran Program. Nat Genet. 2018;50:1514–23.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/mp.2017.153",
+      "author": "TK Clarke",
+      "doi-asserted-by": "publisher",
+      "first-page": "1376",
+      "journal-title": "Mol Psychiatry",
+      "key": "1045_CR28",
+      "unstructured": "Clarke TK, Adams MJ, Davies G, Howard DM, Hall LS, Padmanabhan S, et al. Genome-wide association study of alcohol consumption and genetic overlap with other health-related traits in UK Biobank (N = 112 117). Mol Psychiatry. 2017;22:1376–84.",
+      "volume": "22",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/mp.2017.101",
+      "author": "E Jorgenson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1359",
+      "journal-title": "Mol Psychiatry",
+      "key": "1045_CR29",
+      "unstructured": "Jorgenson E, Thai KK, Hoffmann TJ, Sakoda LC, Kvale MN, Banda Y, et al. Genetic contributors to variation in alcohol consumption vary by race/ethnicity in a large multi-ethnic genome-wide association study. Mol Psychiatry. 2017;22:1359–67.",
+      "volume": "22",
+      "year": "2017"
+    },
+    {
+      "author": "H Aschard",
+      "first-page": "894",
+      "journal-title": "Int J Epidemiol",
+      "key": "1045_CR30",
+      "unstructured": "Aschard H, Tobin MD, Hancock DB, Skurnik D, Sood A, James A, et al. Evidence for large-scale gene-by-smoking interaction effects on pulmonary function. Int J Epidemiol. 2017;46:894–904.",
+      "volume": "46",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/gepi.21748",
+      "author": "WJ Gauderman",
+      "doi-asserted-by": "publisher",
+      "first-page": "603",
+      "journal-title": "Genet Epidemiol",
+      "key": "1045_CR31",
+      "unstructured": "Gauderman WJ, Zhang P, Morrison JL, Lewinger JP. Finding novel genes by testing GxE interactions in a genome-wide association study. Genet Epidemiol. 2013;37:603–13.",
+      "volume": "37",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/gepi.21977",
+      "author": "P Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "394",
+      "journal-title": "Genet Epidemiol",
+      "key": "1045_CR32",
+      "unstructured": "Zhang P, Lewinger JP, Conti D, Morrison JL, Gauderman WJ. Detecting gene-environment interactions for a quantitative trait in a genome-wide association study. Genet Epidemiol. 2016;40:394–403.",
+      "volume": "40",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005947",
+      "author": "Q Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1005947",
+      "journal-title": "PLoS Genet",
+      "key": "1045_CR33",
+      "unstructured": "Lu Q, Powles RL, Wang Q, He BJ, Zhao H. Integrative tissue-specific functional annotations in the human genome provide novel insights on many complex traits and improve signal prioritization in genome wide association studies. PLoS Genet. 2016;12:e1005947.",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006933",
+      "author": "Q Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1006933",
+      "journal-title": "PLoS Genet",
+      "key": "1045_CR34",
+      "unstructured": "Lu Q, Powles RL, Abdallah S, Ou D, Wang Q, Hu Y, et al. Systematic tissue-specific functional annotation of the human genome highlights immune-related DNA elements for late-onset Alzheimer’s disease. PLoS Genet. 2017;13:e1006933.",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq340",
+      "author": "CJ Willer",
+      "doi-asserted-by": "publisher",
+      "first-page": "2190",
+      "journal-title": "Bioinformatics",
+      "key": "1045_CR35",
+      "unstructured": "Willer CJ, Li Y, Abecasis GR. METAL: fast and efficient meta-analysis of genomewide association scans. Bioinformatics 2010;26:2190–1.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/gepi.20546",
+      "author": "AK Manning",
+      "doi-asserted-by": "publisher",
+      "first-page": "11",
+      "journal-title": "Genet Epidemiol",
+      "key": "1045_CR36",
+      "unstructured": "Manning AK, LaValley M, Liu CT, Rice K, An P, Liu Y, et al. Meta-analysis of gene-environment interaction: joint estimation of SNP and SNP x environment regression coefficients. Genet Epidemiol. 2011;35:11–8.",
+      "volume": "35",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.04.017",
+      "author": "H Aschard",
+      "doi-asserted-by": "publisher",
+      "first-page": "962",
+      "journal-title": "Am J Hum Genet",
+      "key": "1045_CR37",
+      "unstructured": "Aschard H, Chen J, Cornelis MC, Chibnik LB, Karlson EW, Kraft P. Inclusion of gene-gene and gene-environment interactions unlikely to dramatically improve risk prediction for complex diseases. Am J Hum Genet. 2012;90:962–72.",
+      "volume": "90",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1097/EDE.0000000000000195",
+      "author": "H Aschard",
+      "doi-asserted-by": "publisher",
+      "first-page": "51",
+      "journal-title": "Epidemiology.",
+      "key": "1045_CR38",
+      "unstructured": "Aschard H, Zaitlen N, Lindstrom S, Kraft P. Variation in predictive ability of common genetic variants by established strata: the example of breast cancer and age. Epidemiology. 2015;26:51–8.",
+      "volume": "26",
+      "year": "2015"
+    },
+    {
+      "key": "1045_CR39",
+      "unstructured": "Fryar CD, Ostchega Y, Hales CM, Zhang G, Kruszon-Moran D. Hypertension prevalence and control among adults: United States, 2015–2016. NCHS Data Brief. 2017 p. 1–8."
+    },
+    {
+      "key": "1045_CR40",
+      "unstructured": "Carroll MD, Fryar CD, Nguyen DT. Total and high-density lipoprotein cholesterol in adults: United States, 2015–2018. NCHS Data Brief, no 363. Hyattsville, MD: National Center for Health Statistics. 2020."
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41431-022-01045-6"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Eur J Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Gene-lifestyle interactions in the genomics of human complex traits"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "30"
+}

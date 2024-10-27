@@ -1,0 +1,861 @@
+{
+  "DOI": "10.1038/s41437-020-00353-1",
+  "ISSN": [
+    "0018-067X",
+    "1365-2540"
+  ],
+  "URL": "http://dx.doi.org/10.1038/s41437-020-00353-1",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eModern whole-genome prediction (WGP) frameworks that focus on multi-environment trials (MET) integrate large-scale genomics, phenomics, and envirotyping data. However, the more complex the statistical model, the longer the computational processing times, which do not always result in accuracy gains. We investigated the use of new kernel methods and modeling structures involving genomics and nongenomic sources of variation in two MET maize data sets. Five WGP models were considered, advancing in complexity from a main-effect additive model (A) to more complex structures, including dominance deviations (D), genotype × environment interaction (AE and DE), and the reaction-norm model using environmental covariables (W) and their interaction with A and D (AW + DW). A combination of those models built with three different kernel methods, Gaussian kernel (GK), Deep kernel (DK), and the benchmark genomic best linear-unbiased predictor (GBLUP/GB), was tested under three prediction scenarios: newly developed hybrids (CV1), sparse MET conditions (CV2), and new environments (CV0). GK and DK outperformed GB in prediction accuracy and reduction of computation time (~up to 20%) under all model–kernel scenarios. GK was more efficient in capturing the variation due to A + AE and D + DE effects and translated it into accuracy gains (~up to 85% compared with GB). DK provided more consistent predictions, even for more complex structures such as W + AW + DW. Our results suggest that DK and GK are more efficient in translating model complexity into accuracy, and more suitable for including dominance and reaction-norm effects in a biologically accurate and faster way.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "353"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "23 May 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Revised",
+      "name": "revised",
+      "order": 2,
+      "value": "29 July 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 3,
+      "value": "30 July 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 4,
+      "value": "27 August 2020"
+    },
+    {
+      "group": {
+        "label": "Compliance with ethical standards",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-1137-6786",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Costa-Neto",
+      "given": "Germano",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4310-0047",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Fritsche-Neto",
+      "given": "Roberto",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-9429-5855",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Crossa",
+      "given": "José",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Heredity"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        27
+      ]
+    ],
+    "date-time": "2020-08-27T11:02:38Z",
+    "timestamp": 1598526158000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        6
+      ]
+    ],
+    "date-time": "2023-10-06T11:06:29Z",
+    "timestamp": 1696590389000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        28
+      ]
+    ],
+    "date-time": "2024-04-28T04:35:28Z",
+    "timestamp": 1714278928149
+  },
+  "is-referenced-by-count": 73,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0018-067X"
+    },
+    {
+      "type": "electronic",
+      "value": "1365-2540"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        27
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            27
+          ]
+        ],
+        "date-time": "2020-08-27T00:00:00Z",
+        "timestamp": 1598486400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            27
+          ]
+        ],
+        "date-time": "2020-08-27T00:00:00Z",
+        "timestamp": 1598486400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://www.nature.com/articles/s41437-020-00353-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41437-020-00353-1",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://www.nature.com/articles/s41437-020-00353-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "92-106",
+  "prefix": "10.1038",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        27
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        27
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        1
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1007/s00122-017-2898-0",
+      "author": "R Acosta-Pech",
+      "doi-asserted-by": "publisher",
+      "first-page": "1431",
+      "journal-title": "Theor Appl Genet",
+      "key": "353_CR1",
+      "unstructured": "Acosta-Pech R, Crossa J, de los Campos G, Teyssèdre S, Claustres B, Pérez-Elizalde S et al. (2017) Genomic models with genotype × environment interaction for predicting hybrid performance: an application in maize hybrids. Theor Appl Genet 130:1431–1440",
+      "volume": "130",
+      "year": "2017"
+    },
+    {
+      "key": "353_CR2",
+      "unstructured": "Allen RG, Pereira LS, Raes D, Smith M (1998) Crop Evapotranspiration – guidelines for computing crop water requirements. 56th edn. (Food and Agriculture Organization, Ed.). FAO Irrigation and Drainage Paper No 56, Rome. http://www.fao.org/3/x0490e/x0490e00.htm"
+    },
+    {
+      "DOI": "10.1186/s13007-019-0388-x",
+      "author": "FC Alves",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Plant Methods",
+      "key": "353_CR3",
+      "unstructured": "Alves FC, Granato ÍSC, Galli G, Lyra DH, Fritsche-Neto R, De Los Campos G (2019) Bayesian analysis and prediction of hybrid performance. Plant Methods 15:1–18",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12863-015-0264-2",
+      "author": "CF Azevedo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Genet",
+      "key": "353_CR4",
+      "unstructured": "Azevedo CF, de Resende MDV, E Silva FF, Viana JMS, Valente MSF, Resende MFR et al. (2015) Ridge, Lasso and Bayesian additive-dominance genomic models. BMC Genet 16:1–13",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3835/plantgenome2018.07.0051",
+      "author": "BR Basnet",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Plant Genome",
+      "key": "353_CR5",
+      "unstructured": "Basnet BR, Crossa J, Dreisigacker S, Pérez‐Rodríguez P, Manes Y, Singh RP et al. (2019) Hybrid wheat prediction using genomic, pedigree, and environmental covariables interaction models. Plant Genome 12:1–13",
+      "volume": "12",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.2135/cropsci1994.0011183X003400010003x",
+      "author": "R Bernardo",
+      "doi-asserted-by": "publisher",
+      "first-page": "20",
+      "journal-title": "Crop Sci",
+      "key": "353_CR6",
+      "unstructured": "Bernardo R (1994) Prediction of maize single-cross performance using RFLPs and information from related hybrids. Crop Sci 34:20–25",
+      "volume": "34",
+      "year": "1994"
+    },
+    {
+      "DOI": "10.1007/BF00230131",
+      "author": "R Bernardo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1098",
+      "journal-title": "Theor Appl Genet",
+      "key": "353_CR7",
+      "unstructured": "Bernardo R (1996) Testcross additive and dominance effects in best linear unbiased prediction of maize single-cross performance. Theor Appl Genet 93:1098–1102",
+      "volume": "93",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1007/978-3-540-24775-3_3",
+      "doi-asserted-by": "crossref",
+      "key": "353_CR8",
+      "unstructured": "Bouckaert RR, Frank E (2004) Evaluating the replicability of significance tests for comparing learning algorithms. In: Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics), vol 3056, pp 3–12."
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2009.01.005",
+      "author": "BL Browning",
+      "doi-asserted-by": "publisher",
+      "first-page": "210",
+      "journal-title": "Am J Hum Genet",
+      "key": "353_CR9",
+      "unstructured": "Browning BL, Browning SR (2008) A unified approach to genotype imputation and haplotype-phase inference for large data sets of trios and unrelated individuals. Am J Hum Genet 84:210–223",
+      "volume": "84",
+      "year": "2008"
+    },
+    {
+      "key": "353_CR10",
+      "unstructured": "Cho Y, Saul LK (2009) Kernel methods for deep learning. In: Advances in Neural Information Processing Systems 22. Proceedings of the 2009 Conference, Vancouver, BC, pp 342–350"
+    },
+    {
+      "DOI": "10.1071/CP14007",
+      "author": "M Cooper",
+      "doi-asserted-by": "publisher",
+      "first-page": "311",
+      "journal-title": "Crop Pasture Sci",
+      "key": "353_CR11",
+      "unstructured": "Cooper M, Messina CD, Podlich D, Totir LR, Baumgarten A, Hausmann NJ et al. (2014) Predicting the future of plant breeding: Complementing empirical evaluation with genetic prediction. Crop Pasture Sci 65:311–336",
+      "volume": "65",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/s10681-020-2573-4",
+      "author": "GMF Costa-Neto",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Euphytica",
+      "key": "353_CR12",
+      "unstructured": "Costa-Neto GMF, Morais Júnior OP, Heinemann AB, de Castro AP, Duarte JB (2020) A novel GIS-based tool to reveal spatial trends in reaction norm: upland rice case study. Euphytica 216:1–16",
+      "volume": "216",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fgene.2019.01168",
+      "author": "J Crossa",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Front Genet",
+      "key": "353_CR13",
+      "unstructured": "Crossa J, Martini JWR, Gianola D, Pérez-Rodríguez P, Jarquin D, Juliana P et al. (2019) Deep kernel and deep learning for genome-based prediction of single traits in multienvironment breeding trials. Front Genet 10:1–13",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.tplants.2017.08.011",
+      "author": "J Crossa",
+      "doi-asserted-by": "publisher",
+      "first-page": "961",
+      "journal-title": "Trends Plant Sci",
+      "key": "353_CR14",
+      "unstructured": "Crossa J, Pérez-Rodríguez P, Cuevas J, Montesinos-López O, Jarquín D, de los Campos G et al. (2017) Genomic selection in plant breeding: methods, models, and perspectives. Trends Plant Sci 22:961–975",
+      "volume": "22",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3835/plantgenome2016.03.0024",
+      "author": "J Cuevas",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Plant Genome",
+      "key": "353_CR15",
+      "unstructured": "Cuevas J, Crossa J, Soberanis V, Perez-Elizalde S, Perez-Rodriguez P, de Los Campos G et al. (2016) Genomic prediction of genotype × environment interaction kernel regression models. Plant Genome 9:1–20",
+      "volume": "9",
+      "year": "2016"
+    },
+    {
+      "author": "J Cuevas",
+      "first-page": "1347",
+      "journal-title": "Trials",
+      "key": "353_CR16",
+      "unstructured": "Cuevas J, Granato I, Fritsche-Neto R, Montesinos-López OA, Burgueño J (2018) Genomic-enabled prediction kernel models with random intercepts for multi-environment. Trials 8:1347–1365",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1534/g3.119.400493",
+      "author": "J Cuevas",
+      "doi-asserted-by": "crossref",
+      "first-page": "2913",
+      "journal-title": "G3 Genes, Genomes, Genet",
+      "key": "353_CR17",
+      "unstructured": "Cuevas J, Montesinos-López O, Juliana P, Guzmán C, Pérez-Rodríguez P, González-Bucio J et al. (2019) Deep Kernel for genomic and near infrared predictions in multi-environment breeding trials. G3 Genes, Genomes, Genet 9:2913–2924",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1534/g3.114.013094",
+      "author": "J Cuevas",
+      "doi-asserted-by": "crossref",
+      "first-page": "1991",
+      "journal-title": "G3 Genes, Genomes, Genet",
+      "key": "353_CR18",
+      "unstructured": "Cuevas J, Pérez-Elizalde S, Soberanis V, Pérez-Rodríguez P, Gianola D, Crossa J (2014) Bayesian genomic-enabled prediction as an inverse problem. G3 Genes, Genomes, Genet 4:1991–2001",
+      "volume": "4",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/hdy.2016.23",
+      "author": "JE De Almeida Filho",
+      "doi-asserted-by": "publisher",
+      "first-page": "33",
+      "journal-title": "Heredity",
+      "key": "353_CR19",
+      "unstructured": "De Almeida Filho JE, Guimarães JFR, E Silva FF, De Resende MDV, Muñoz P, Kirst M et al. (2016) The contribution of dominance to phenotype prediction in a pine breeding and simulated population. Heredity 117:33–41",
+      "volume": "117",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1017/S0016672310000285",
+      "author": "G De Los Campos",
+      "doi-asserted-by": "publisher",
+      "first-page": "295",
+      "journal-title": "Genet Res",
+      "key": "353_CR20",
+      "unstructured": "De Los Campos G, Gianola D, Rosa GJM, Weigel KA, Crossa J (2010) Semi-parametric genomic-enabled prediction of genetic values using reproducing kernel Hilbert spaces methods. Genet Res 92:295–308",
+      "volume": "92",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41437-018-0053-6",
+      "author": "KODG Dias",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Heredity",
+      "key": "353_CR21",
+      "unstructured": "Dias KODG, Gezan SA, Guimarães CT, Nazarian A, Da Costa E Silva L, Parentoni SN et al. (2018) Improving accuracies of genomic predictions for drought tolerance in maize by joint modeling of additive and dominance effects in multi-environment trials. Heredity 121:24–37",
+      "volume": "121",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/csc2.20096",
+      "author": "LFV Ferrão",
+      "doi-asserted-by": "publisher",
+      "first-page": "666",
+      "journal-title": "Crop Sci.",
+      "key": "353_CR22",
+      "unstructured": "Ferrão LFV, Marinho CD, Munoz PR, Resende MFR (2020) Improvement of predictive ability in maize hybrids by including dominance effects and marker × environment models. Crop Sci. 60:666–677",
+      "volume": "60",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1534/genetics.105.049510",
+      "author": "D Gianola",
+      "doi-asserted-by": "publisher",
+      "first-page": "1761",
+      "journal-title": "Genetics",
+      "key": "353_CR23",
+      "unstructured": "Gianola D, Fernando RL, Stella A (2006) Genomic-assisted prediction of genetic value with semiparametric procedures. Genetics 173:1761–1776",
+      "volume": "173",
+      "year": "2006"
+    },
+    {
+      "key": "353_CR24",
+      "unstructured": "Gianola D, Morota G, Crossa J (2014) Genome-enabled prediction of complex traits with kernel methods: What have we learned? In: Proceedings, 10th World Congress of Genetics Applied to Livestock Production, Vancouver, BC, pp 1–6"
+    },
+    {
+      "DOI": "10.1186/1471-2156-12-87",
+      "author": "D Gianola",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Genet",
+      "key": "353_CR25",
+      "unstructured": "Gianola D, Okut H, Weigel KA, Rosa GJM (2011) Predicting complex quantitative traits with Bayesian neural networks: a case study with Jersey cows and wheat. BMC Genet 12:1–14",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1534/genetics.107.084285",
+      "author": "D Gianola",
+      "doi-asserted-by": "publisher",
+      "first-page": "2289",
+      "journal-title": "Genetics",
+      "key": "353_CR26",
+      "unstructured": "Gianola D, Van Kaam JBCHM (2008) Reproducing kernel Hilbert spaces regression methods for genomic assisted prediction of quantitative traits. Genetics 178:2289–2303",
+      "volume": "178",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1007/s00122-012-1868-9",
+      "author": "JM González-Camacho",
+      "doi-asserted-by": "publisher",
+      "first-page": "759",
+      "journal-title": "Theor Appl Genet",
+      "key": "353_CR27",
+      "unstructured": "González-Camacho JM, de los Campos G, Pérez P, Gianola D, Cairns JE, Mahuku G et al. (2012) Genome-enabled prediction of genetic values using radial basis function neural networks. Theor Appl Genet 125:759–771",
+      "volume": "125",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1534/g3.118.200435",
+      "doi-asserted-by": "crossref",
+      "key": "353_CR28",
+      "unstructured": "Granato I, Cuevas J, Luna-Vázquez F, Crossa J, Montesinos-López O, Burgueño J et al. (2018) BGGE: a new package for genomic-enabled prediction incorporating genotype × environment interaction models. G3 Genes, Genomes, Genet 8:3039–3047"
+    },
+    {
+      "DOI": "10.1007/s00122-013-2243-1",
+      "author": "D Jarquín",
+      "doi-asserted-by": "publisher",
+      "first-page": "595",
+      "journal-title": "Theor Appl Genet",
+      "key": "353_CR29",
+      "unstructured": "Jarquín D, Crossa J, Lacaze X, Du Cheyron P, Daucourt J, Lorgeou J et al. (2014) A reaction norm model for genomic selection using high-dimensional genomic and environmental data. Theor Appl Genet 127:595–607",
+      "volume": "127",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1534/genetics.115.177907",
+      "author": "Y Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "759",
+      "journal-title": "Genetics",
+      "key": "353_CR30",
+      "unstructured": "Jiang Y, Reif JC (2015) Modeling epistasis in genomic selection. Genetics 201:759–768",
+      "volume": "201",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1534/genetics.114.161943",
+      "author": "C Lehermeier",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "journal-title": "Genetics",
+      "key": "353_CR31",
+      "unstructured": "Lehermeier C, Krämer N, Bauer E, Bauland C, Camisan C, Campo L et al. (2014) Usefulness of multiparental populations of maize (Zea mays L.) for genome-based prediction. Genetics 198:3–16",
+      "volume": "198",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1073/pnas.1718326115",
+      "author": "X Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "6679",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "353_CR32",
+      "unstructured": "Li X, Guo T, Mu Q, Li X, Yu J (2018) Genomic and environmental determinants and their interplay underlying phenotypic plasticity. Proc Natl Acad Sci 11:6679–6684",
+      "volume": "11",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1534/g3.114.016097",
+      "author": "M Lopez-Cruz",
+      "doi-asserted-by": "publisher",
+      "first-page": "569",
+      "journal-title": "G3",
+      "key": "353_CR33",
+      "unstructured": "Lopez-Cruz M, Crossa J, Bonnett D, Dreisigacker S, Poland J, Jannink J-L et al. (2015) Increased prediction accuracy in wheat breeding trials using a marker × environment interaction genomic selection model. G3 5:569–582",
+      "volume": "5",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.fcr.2017.08.020",
+      "author": "D Ly",
+      "doi-asserted-by": "publisher",
+      "first-page": "32",
+      "journal-title": "F Crop Res",
+      "key": "353_CR34",
+      "unstructured": "Ly D, Huet S, Gauffreteau A, Rincent R, Touzy G, Mini A et al. (2018) Whole-genome prediction of reaction norms to environmental stress in bread wheat (Triticum aestivum L.) by genomic random regression. F Crop Res 216:32–41",
+      "volume": "216",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/s00122-016-2675-5",
+      "author": "JWR Martini",
+      "doi-asserted-by": "publisher",
+      "first-page": "963",
+      "journal-title": "Theor Appl Genet",
+      "key": "353_CR35",
+      "unstructured": "Martini JWR, Wimmer V, Erbe M, Simianer H (2016) Epistasis and covariance: how gene interaction translates into genomic relationship. Theor Appl Genet 129:963–976",
+      "volume": "129",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/genetics/157.4.1819",
+      "author": "THE Meuwissen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1819",
+      "journal-title": "Genetics",
+      "key": "353_CR36",
+      "unstructured": "Meuwissen THE, Hayes BJ, Goddard ME (2001) Prediction of total genetic value using genome-wide dense marker maps. Genetics 157:1819–1829",
+      "volume": "157",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0414-y",
+      "author": "EJ Millet",
+      "doi-asserted-by": "publisher",
+      "first-page": "952",
+      "journal-title": "Nat Genet",
+      "key": "353_CR37",
+      "unstructured": "Millet EJ, Kruijer W, Coupel-Ledru A, Alvarez Prado S, Cabrera-Bosquet L, Lacube S et al. (2019) Genomic prediction of maize yield across European environmental conditions. Nat Genet 51:952–956",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.2135/cropsci2017.06.0366",
+      "author": "OP Morais Júnior",
+      "doi-asserted-by": "publisher",
+      "first-page": "592",
+      "journal-title": "Crop Sci",
+      "key": "353_CR38",
+      "unstructured": "Morais Júnior OP, Duarte JB, Breseghello F, Coelho ASG, Magalhães Jr AM (2018) Single-step reaction norm models for genomic prediction in multienvironment recurrent selection trials. Crop Sci 58:592–607",
+      "volume": "58",
+      "year": "2018"
+    },
+    {
+      "author": "G Morota",
+      "first-page": "1",
+      "journal-title": "Front Genet",
+      "key": "353_CR39",
+      "unstructured": "Morota G, Gianola D (2014) Kernel-based whole-genome prediction of complex traits: a review. Front Genet 5:1–13",
+      "volume": "5",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1007/978-1-4612-0745-0_1",
+      "doi-asserted-by": "crossref",
+      "key": "353_CR40",
+      "unstructured": "Neal R (1996) Bayesian learning for neural networks. Lect notes stat. Springer verlag, New York. 1."
+    },
+    {
+      "DOI": "10.1007/s13253-015-0229-y",
+      "author": "S Pérez-Elizalde",
+      "doi-asserted-by": "publisher",
+      "first-page": "512",
+      "journal-title": "J Agric Biol Environ Stat",
+      "key": "353_CR41",
+      "unstructured": "Pérez-Elizalde S, Cuevas J, Pérez-Rodríguez P, Crossa J (2015) Selection of the bandwidth parameter in a Bayesian kernel regression model for genomic-enabled prediction. J Agric Biol Environ Stat 20:512–532",
+      "volume": "20",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1534/g3.112.003665",
+      "author": "P Pérez-Rodríguez",
+      "doi-asserted-by": "crossref",
+      "first-page": "1595",
+      "journal-title": "G3 Genes, Genomes, Genet",
+      "key": "353_CR42",
+      "unstructured": "Pérez-Rodríguez P, Gianola D, González-Camacho JM, Crossa J, Manès Y, Dreisigacker S (2012) Comparison between linear and non-parametric regression models for genome-enabled prediction in wheat. G3 Genes, Genomes, Genet 2:1595–1605",
+      "volume": "2",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.fcr.2019.107697",
+      "author": "K Porker",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "F Crop Res",
+      "key": "353_CR43",
+      "unstructured": "Porker K, Coventry S, Fettell NA, Cozzolino D, Eglinton J (2020) Using a novel PLS approach for envirotyping of barley phenology and adaptation. F Crop Res 246:1–11",
+      "volume": "246",
+      "year": "2020"
+    },
+    {
+      "author": "R Core Team",
+      "key": "353_CR44",
+      "unstructured": "R Core Team (2019) A language and environment for statistical computing. R Found Stat Comput Austria, Vienna, Au",
+      "volume-title": "A language and environment for statistical computing",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1079/9781845939700.0000",
+      "author": "A Soltani",
+      "doi-asserted-by": "publisher",
+      "key": "353_CR45",
+      "unstructured": "Soltani A, Sinclair TR (2012) Modeling physiology of crop development, growth and yield (CAB International, Ed.). International, Wallingford, Cambridge",
+      "volume-title": "Modeling physiology of crop development, growth and yield (CAB International, Ed.)",
+      "year": "2012"
+    },
+    {
+      "author": "MB Souza",
+      "first-page": "g3.117.042341",
+      "journal-title": "G3",
+      "key": "353_CR46",
+      "unstructured": "Souza MB, Cuevas J, Couto EG, de O, Pérez-Rodríguez P, Jarquín D, Fritsche-Neto R et al. (2017) Genomic-enabled prediction in maize using Kernel models with genotype × environment interaction. G3 7:g3.117.042341",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.21105/joss.01035",
+      "author": "A Sparks",
+      "doi-asserted-by": "publisher",
+      "first-page": "1035",
+      "journal-title": "J Open Source Softw",
+      "key": "353_CR47",
+      "unstructured": "Sparks A (2018) nasapower: a NASA POWER global meteorology, surface solar energy and climatology data client for R. J Open Source Softw 3:1035",
+      "volume": "3",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1534/genetics.114.165860",
+      "author": "F Technow",
+      "doi-asserted-by": "publisher",
+      "first-page": "1343",
+      "journal-title": "Genetics",
+      "key": "353_CR48",
+      "unstructured": "Technow F, Schrag TA, Schipprack W, Bauer E, Simianer H, Melchinger AE (2014) Genome properties and prospects of genomic prediction of hybrid performance in a breeding program of maize. Genetics 197:1343–1355",
+      "volume": "197",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/1471-2164-15-823",
+      "author": "S Unterseer",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Genomics",
+      "key": "353_CR49",
+      "unstructured": "Unterseer S, Bauer E, Haberer G, Seidel M, Knaak C, Ouzunova M et al. (2014) A powerful tool for genome analysis in maize: development and evaluation of the high density 600 k SNP genotyping array. BMC Genomics 15:1–15",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3168/jds.2007-0980",
+      "author": "PM VanRaden",
+      "doi-asserted-by": "publisher",
+      "first-page": "4414",
+      "journal-title": "J Dairy Sci",
+      "key": "353_CR50",
+      "unstructured": "VanRaden PM (2008) Efficient methods to compute genomic predictions. J Dairy Sci 91:4414–4423",
+      "volume": "91",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1534/genetics.113.155176",
+      "author": "ZG Vitezica",
+      "doi-asserted-by": "publisher",
+      "first-page": "1223",
+      "journal-title": "Genetics",
+      "key": "353_CR51",
+      "unstructured": "Vitezica ZG, Varona L, Legarra A (2013) On the additive and dominant variance and covariance of individuals within the genomic selection scope. Genetics 195:1223–1230",
+      "volume": "195",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1007/s00122-018-3270-8",
+      "author": "KP Voss-Fels",
+      "doi-asserted-by": "publisher",
+      "first-page": "669",
+      "journal-title": "Theor Appl Genet",
+      "key": "353_CR52",
+      "unstructured": "Voss-Fels KP, Cooper M, Hayes BJ (2019) Accelerating crop genetic gains with genomic selection. Theor Appl Genet 132:669–686",
+      "volume": "132",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/hdy.2016.87",
+      "author": "X Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "302",
+      "journal-title": "Heredity",
+      "key": "353_CR53",
+      "unstructured": "Wang X, Li L, Yang Z, Zheng X, Yu S, Xu C et al. (2017) Predicting rice hybrid performance using univariate and multivariate GBLUP models based on North Carolina mating design II. Heredity 118:302–310",
+      "volume": "118",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1162/089976698300017412",
+      "doi-asserted-by": "crossref",
+      "key": "353_CR54",
+      "unstructured": "Williams CKI (1998) Computing with infinite networks. Neural Comput 10:295–301"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts335",
+      "author": "V Wimmer",
+      "doi-asserted-by": "publisher",
+      "first-page": "2086",
+      "journal-title": "Bioinformatics",
+      "key": "353_CR55",
+      "unstructured": "Wimmer V, Albrecht T, Auinger HJ, Schön CC (2012) Synbreed: a framework for the analysis of genomic prediction data using R. Bioinformatics 28:2086–2087",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1534/g3.112.003699",
+      "author": "VS Windhausen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1427",
+      "journal-title": "Genes|Genomes|Genet",
+      "key": "353_CR56",
+      "unstructured": "Windhausen VS, Atlin GN, Hickey JM, Crossa J, Jannink J-L, Sorrells ME et al. (2012) Effectiveness of genomic prediction of maize hybrid performance in different breeding populations and environments. Genes|Genomes|Genet 2:1427–1436",
+      "volume": "2",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1007/s00122-016-2691-5",
+      "author": "Y Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "653",
+      "journal-title": "Theor Appl Genet",
+      "key": "353_CR57",
+      "unstructured": "Xu Y (2016) Envirotyping for deciphering environmental impacts on crop plants. Theor Appl Genet 129:653–673",
+      "volume": "129",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1534/g3.117.043141",
+      "author": "X Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2315",
+      "journal-title": "G3",
+      "key": "353_CR58",
+      "unstructured": "Zhang X, Pérez-Rodríguez P, Burgueño J, Olsen M, Buckler E, Atlin G et al. (2017) Rapid cycling genomic selection in a multiparental tropical maize population. G3 7:2315–2326",
+      "volume": "7",
+      "year": "2017"
+    }
+  ],
+  "reference-count": 58,
+  "references-count": 58,
+  "resource": {
+    "primary": {
+      "URL": "https://www.nature.com/articles/s41437-020-00353-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Heredity"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Nonlinear kernels, dominance, and envirotyping data increase the accuracy of genome-based prediction in multi-environment trials"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "126"
+}

@@ -1,0 +1,989 @@
+{
+  "DOI": "10.1186/s40246-022-00406-y",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00406-y",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eIntroduction\u003c/jats:title\u003e\n                \u003cjats:p\u003eA major challenge to enabling precision health at a global scale is the bias between those who enroll in state sponsored genomic research and those suffering from chronic disease. More than 30 million people have been genotyped by direct-to-consumer (DTC) companies such as 23andMe, Ancestry DNA, and MyHeritage, providing a potential mechanism for democratizing access to medical interventions and thus catalyzing improvements in patient outcomes as the cost of data acquisition drops. However, much of these data are sequestered in the initial provider network, without the ability for the scientific community to either access or validate. Here, we present a novel geno-pheno platform that integrates heterogeneous data sources and applies learnings to common chronic disease conditions including Type 2 diabetes (T2D) and hypertension.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe collected genotyped data from a novel DTC platform where participants upload their genotype data files and were invited to answer general health questionnaires regarding cardiometabolic traits over a period of 6 months. Quality control, imputation, and genome-wide association studies were performed on this dataset, and polygenic risk scores were built in a case–control setting using the BASIL algorithm.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe collected data on \u003cjats:italic\u003eN\u003c/jats:italic\u003e = 4,550 (389 cases / 4,161 controls) who reported being affected or previously affected for T2D and \u003cjats:italic\u003eN\u003c/jats:italic\u003e = 4,528 (1,027 cases / 3,501 controls) for hypertension. We identified 164 out of 272 variants showing identical effect direction to previously reported genome-significant findings in Europeans. Performance metric of the PRS models was AUC = 0.68, which is comparable to previously published PRS models obtained with larger datasets including clinical biomarkers.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eDiscussion\u003c/jats:title\u003e\n                \u003cjats:p\u003eDTC platforms have the potential of inverting research models of genome sequencing and phenotypic data acquisition. Quality control (QC) mechanisms proved to successfully enable traditional GWAS and PRS analyses. The direct participation of individuals has shown the potential to generate rich datasets enabling the creation of PRS cardiometabolic models. More importantly, federated learning of PRS from reuse of DTC data provides a mechanism for scaling precision health care delivery beyond the small number of countries who can afford to finance these efforts directly.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe genetics of T2D and hypertension have been studied extensively in controlled datasets, and various polygenic risk scores (PRS) have been developed. We developed predictive tools for both phenotypes trained with heterogeneous genotypic and phenotypic data generated outside of the clinical environment and show that our methods can recapitulate prior findings with fidelity. From these observations, we conclude that it is possible to leverage DTC genetic repositories to identify individuals at risk of debilitating diseases based on their unique genetic landscape so that informed, timely clinical interventions can be incorporated.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "406"
+  ],
+  "article-number": "37",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "8 March 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "6 August 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "8 September 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by the institutional review board (IRB) at WCG IRB () under IRB tracking number protocol number 20201332."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "ARM, SMG, MTML, ALP, CDB, AI, MNA, and NK are employees of or consultants to Galatea Bio. MV, KN, YM, and TT are employees of Genomelink. CDB, IA, and NK are shareholders of Galatea Bio stock. CDB, KN, YM, and TT are shareholders of Genomelink stock. The remaining authors declare that there is no conflict of interest regarding the publication of this article."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Lopez-Pineda",
+      "given": "Arturo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Vernekar",
+      "given": "Manvi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moreno-Grau",
+      "given": "Sonia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rojas-Muñoz",
+      "given": "Agustin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Moatamed",
+      "given": "Babak",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lee",
+      "given": "Ming Ta Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nava-Aguilar",
+      "given": "Marco A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gonzalez-Arroyo",
+      "given": "Gilberto",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Numakura",
+      "given": "Kensuke",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Matsuda",
+      "given": "Yuta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ioannidis",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Katsanis",
+      "given": "Nicholas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Takano",
+      "given": "Tomohiro",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bustamante",
+      "given": "Carlos D.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ],
+    "date-time": "2022-09-08T07:12:20Z",
+    "timestamp": 1662621140000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        18
+      ]
+    ],
+    "date-time": "2022-11-18T20:14:44Z",
+    "timestamp": 1668802484000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100003051",
+      "award": [
+        "JPNP19001",
+        "JPNP19001",
+        "JPNP19001",
+        "JPNP19001"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "New Energy and Industrial Technology Development Organization"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T00:54:33Z",
+    "timestamp": 1714524873621
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            8
+          ]
+        ],
+        "date-time": "2022-09-08T00:00:00Z",
+        "timestamp": 1662595200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            8
+          ]
+        ],
+        "date-time": "2022-09-08T00:00:00Z",
+        "timestamp": 1662595200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00406-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00406-y/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00406-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        9,
+        8
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1371/journal.pmed.0030442",
+      "author": "CD Mathers",
+      "doi-asserted-by": "publisher",
+      "first-page": "442",
+      "issue": "11",
+      "journal-title": "PLoS Med",
+      "key": "406_CR1",
+      "unstructured": "Mathers CD, Loncar D. Projections of global mortality and burden of disease from 2002 to 2030. PLoS Med. 2006;3(11):442–520.",
+      "volume": "3",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1900/RDS.2010.7.26",
+      "author": "T Psaltopoulou",
+      "doi-asserted-by": "publisher",
+      "first-page": "26",
+      "issue": "1",
+      "journal-title": "Rev Diabet Stud",
+      "key": "406_CR2",
+      "unstructured": "Psaltopoulou T, Ilias I, Alevizaki M. The role of diet and lifestyle in primary, secondary, and tertiary diabetes prevention: a review of meta-analyses. Rev Diabet Stud. 2010;7(1):26–35.",
+      "volume": "7",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/S2213-8587(21)00349-1",
+      "author": "E Cousin",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Lancet Diabetes Endocrinol",
+      "key": "406_CR3",
+      "unstructured": "Cousin E, Duncan BB, Stein C, Ong KL, Vos T, Abbafati C, Haque S. Diabetes mortality and trends before 25 years of age: an analysis of the Global Burden of Disease Study 2019. Lancet Diabetes Endocrinol. 2022. https://doi.org/10.1016/S2213-8587(21)00349-1.",
+      "year": "2022"
+    },
+    {
+      "key": "406_CR4",
+      "unstructured": "World Health Organization. (2022a). Diabetes. World Health Organization. Retrieved February 15, 2022, from https://www.who.int/news-room/fact-sheets/detail/diabetes"
+    },
+    {
+      "DOI": "10.1161/HYPERTENSIONAHA.117.10546",
+      "author": "V Tsimihodimos",
+      "doi-asserted-by": "publisher",
+      "first-page": "422",
+      "issue": "3",
+      "journal-title": "Hypertension",
+      "key": "406_CR5",
+      "unstructured": "Tsimihodimos V, Gonzalez-Villalpando C, Meigs JB, Ferrannini E. Hypertension and diabetes mellitus: coprediction and time trajectories. Hypertension. 2018;71(3):422–8.",
+      "volume": "71",
+      "year": "2018"
+    },
+    {
+      "key": "406_CR6",
+      "unstructured": "World Health Organization. (2022b). Hypertension. World Health Organization. Retrieved February 15, 2022, from https://www.who.int/news-room/fact-sheets/detail/hypertension"
+    },
+    {
+      "DOI": "10.1038/s41440-017-0008-y",
+      "author": "D Yamazaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "147",
+      "issue": "3",
+      "journal-title": "Hypertens Res",
+      "key": "406_CR7",
+      "unstructured": "Yamazaki D, Hitomi H, Nishiyama A. Hypertension with diabetes mellitus complications. Hypertens Res. 2018;41(3):147–56.",
+      "volume": "41",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s12872-022-02491-2",
+      "author": "C Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "47",
+      "issue": "1",
+      "journal-title": "BMC Cardiovasc Disord",
+      "key": "406_CR8",
+      "unstructured": "Wang C, Du Z, Ye N, Shi C, Liu S, Geng D, Sun Y. Hyperlipidemia and hypertension have synergistic interaction on ischemic stroke: insights from a general population survey in China. BMC Cardiovasc Disord. 2022;22(1):47. https://doi.org/10.1186/s12872-022-02491-2.",
+      "volume": "22",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/978-3-030-85113-2_7",
+      "doi-asserted-by": "crossref",
+      "key": "406_CR9",
+      "unstructured": "Buscemi S, Corleo D, Randazzo C. Risk Factors for COVID-19: diabetes, hypertension, and obesity. In: Coronavirus therapeutics–volume II. Springer, Cham; 2021. pp. 115–129."
+    },
+    {
+      "DOI": "10.4172/2155-6156.1000198",
+      "author": "DK Sanghera",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Diabetes Metab",
+      "key": "406_CR10",
+      "unstructured": "Sanghera DK, Blackett PR. Type 2 diabetes genetics: beyond GWAS. J Diabetes Metab. 2012. https://doi.org/10.4172/2155-6156.1000198.",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.11.021",
+      "author": "G Hindy",
+      "doi-asserted-by": "publisher",
+      "first-page": "81",
+      "issue": "1",
+      "journal-title": "Am J Hum Genet",
+      "key": "406_CR11",
+      "unstructured": "Hindy G, Dornbos P, Chaffin MD, Liu DJ, Wang M, Selvaraj MS, So WY. Rare coding variants in 35 genes associate with circulating lipid levels—A multi-ancestry analysis of 170,000 exomes. Am J Hum Genet. 2022;109(1):81–96.",
+      "volume": "109",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41467-021-27258-9",
+      "author": "M Patxot",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "406_CR12",
+      "unstructured": "Patxot M, Banos DT, Kousathanas A, Orliac EJ, Ojavee SE, Moser G, Robinson MR. Probabilistic inference of the genetic architecture underlying functional enrichment of complex traits. Nat Commun. 2021;12(1):1–16.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cell.2017.06.011",
+      "author": "V Rusu",
+      "doi-asserted-by": "publisher",
+      "first-page": "199",
+      "issue": "1",
+      "journal-title": "Cell",
+      "key": "406_CR13",
+      "unstructured": "Rusu V, Hoch E, Mercader JM, Tenen DE, Gymrek M, Hartigan CR, Lander ES. Type 2 diabetes variants disrupt function of SLC16A11 through two distinct mechanisms. Cell. 2017;170(1):199–212.",
+      "volume": "170",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2014.12.010",
+      "author": "SM Burns",
+      "doi-asserted-by": "publisher",
+      "first-page": "126",
+      "issue": "1",
+      "journal-title": "Cell Metab",
+      "key": "406_CR14",
+      "unstructured": "Burns SM, Vetere A, Walpita D, Dančík V, Khodier C, Perez J, Altshuler D. High-throughput luminescent reporter of insulin secretion for discovering regulators of pancreatic Beta-cell function. Cell Metab. 2015;21(1):126–37.",
+      "volume": "21",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2015.03.006",
+      "author": "N Dai",
+      "doi-asserted-by": "publisher",
+      "first-page": "609",
+      "issue": "4",
+      "journal-title": "Cell Metab",
+      "key": "406_CR15",
+      "unstructured": "Dai N, Zhao L, Wrighting D, Krämer D, Majithia A, Wang Y, Avruch J. IGF2BP2/IMP2-deficient mice resist obesity through enhanced translation of Ucp1 mRNA and other mRNAs encoding mitochondrial proteins. Cell Metab. 2015;21(4):609–21.",
+      "volume": "21",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0241-6",
+      "author": "A Mahajan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1505",
+      "issue": "11",
+      "journal-title": "Nat Genet",
+      "key": "406_CR16",
+      "unstructured": "Mahajan A, Taliun D, Thurner M, Robertson NR, Torres JM, Rayner NW, McCarthy MI. Fine-mapping type 2 diabetes loci to single-variant resolution using high-density imputation and islet-specific epigenome maps. Nat Genet. 2018;50(11):1505–13.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nature12828",
+      "author": "AL Williams",
+      "doi-asserted-by": "publisher",
+      "first-page": "97",
+      "issue": "7486",
+      "journal-title": "Nature",
+      "key": "406_CR17",
+      "unstructured": "Williams AL, Jacobs SB, Moreno-Macías H, Huerta-Chagoya A, Churchhouse C, Márquez-Luna C, Altshuler D. Sequence variants in SLC16A11 are a common risk factor for type 2 diabetes in Mexico. Nature. 2014;506(7486):97.",
+      "volume": "506",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1001/jama.2014.6511",
+      "author": "K Estrada",
+      "doi-asserted-by": "publisher",
+      "first-page": "2305",
+      "issue": "22",
+      "journal-title": "JAMA",
+      "key": "406_CR18",
+      "unstructured": "Estrada K, Aukrust I, Bjørkhaug L, Burtt NP, Mercader JM, Garcia-Ortiz H, SIGMA Type 2 Diabetes Consortium. Association of a low-frequency variant in HNF1A with type 2 diabetes in a Latino population. JAMA. 2014;311(22):2305–14.",
+      "volume": "311",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1310-4",
+      "author": "GL Wojcik",
+      "doi-asserted-by": "publisher",
+      "first-page": "514",
+      "issue": "7762",
+      "journal-title": "Nature",
+      "key": "406_CR19",
+      "unstructured": "Wojcik GL, Graff M, Nishimura KK, Tao R, Haessler J, Gignoux CR, Carlson CS. Genetic analyses of diverse populations improves discovery for complex traits. Nature. 2019;570(7762):514–8.",
+      "volume": "570",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1001/jamacardio.2018.1717",
+      "author": "MA Said",
+      "doi-asserted-by": "publisher",
+      "first-page": "693",
+      "issue": "8",
+      "journal-title": "JAMA Cardiol",
+      "key": "406_CR20",
+      "unstructured": "Said MA, Verweij N, van der Harst P. Associations of combined genetic and lifestyle risks with incident cardiovascular disease and diabetes in the UK Biobank Study. JAMA Cardiol. 2018;3(8):693–702.",
+      "volume": "3",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1008500",
+      "author": "MH Kowalski",
+      "doi-asserted-by": "publisher",
+      "issue": "12",
+      "journal-title": "PLoS Genet",
+      "key": "406_CR21",
+      "unstructured": "Kowalski MH, Qian H, Hou Z, Rosen JD, Tapia AL, Shan Y, Li Y. Use of\u003e 100,000 NHLBI trans-omics for precision medicine (TOPMed) Consortium whole genome sequences improves imputation quality and detection of rare variant associations in admixed African and Hispanic/Latino populations. PLoS Genet. 2019;15(12): e1008500.",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "key": "406_CR22",
+      "unstructured": "Zhou W, Global Biobank Meta-analysis Initiative. In: Global Biobank Meta-analysis Initiative: Powering genetic discovery across human diseases; 2021. medRxiv."
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000993",
+      "author": "N Eriksson",
+      "doi-asserted-by": "publisher",
+      "issue": "6",
+      "journal-title": "PLoS Genet",
+      "key": "406_CR23",
+      "unstructured": "Eriksson N, Macpherson JM, Tung JY, Hon LS, Naughton B, Saxonov S, Mountain J. Web-based, participant-driven studies yield novel genetic associations for common traits. PLoS Genet. 2010;6(6): e1000993.",
+      "volume": "6",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/s41562-021-01119-3",
+      "doi-asserted-by": "crossref",
+      "key": "406_CR24",
+      "unstructured": "Becker J. et al. Resource profile and user guide of the Polygenic Index Repository. Nat Hum Behav 5.12 ; 2021: 1744–1758."
+    },
+    {
+      "key": "406_CR25",
+      "unstructured": "Food and Drug Administration. FDA allows marketing of first direct-to-consumer tests that provide genetic risk information for certain conditions. U.S. Food and Drug Administration.; 2021. Retrieved February 16, 2022, from https://www.fda.gov/news-events/press-announcements/fda-allows-marketing-first-direct-consumer-tests-provide-genetic-risk-information-certain-conditions"
+    },
+    {
+      "DOI": "10.1001/jama.2019.3241",
+      "author": "G Singal",
+      "doi-asserted-by": "publisher",
+      "first-page": "1391",
+      "issue": "14",
+      "journal-title": "JAMA",
+      "key": "406_CR26",
+      "unstructured": "Singal G, Miller PG, Agarwala V, Li G, Kaushik G, Backenroth D, Miller VA. Association of patient characteristics and tumor genomics with clinical outcomes among patients with non–small cell lung cancer using a clinicogenomic database. JAMA. 2019;321(14):1391–9.",
+      "volume": "321",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1200/PO.21.00122",
+      "author": "JK Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "1354",
+      "journal-title": "JCO Precis Oncol",
+      "key": "406_CR27",
+      "unstructured": "Lee JK, Madison R, Classon A, Gjoerup O, Rosenzweig M, Frampton GM, Schrock AB. Characterization of non–small-cell lung cancers with MET Exon 14 skipping alterations detected in tissue or liquid: clinicogenomics and real-world treatment patterns. JCO Precis Oncol. 2021;5:1354–76.",
+      "volume": "5",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/onco.13804",
+      "author": "S Turner",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1133",
+      "issue": "7",
+      "journal-title": "Oncologist",
+      "key": "406_CR28",
+      "unstructured": "Turner S, Chia S, Kanakamedala H, Hsu WC, Park J, Chandiwana D, Rugo HS. Effectiveness of alpelisib+ fulvestrant compared with real-world standard treatment among patients with HR+, HER2–, PIK3CA-mutated breast cancer. Oncologist. 2021;26(7):e1133–42.",
+      "volume": "26",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03430-5",
+      "author": "R Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "629",
+      "issue": "7855",
+      "journal-title": "Nature",
+      "key": "406_CR29",
+      "unstructured": "Liu R, Rizzo S, Whipple S, Pal N, Pineda AL, Lu M, Zou J. Evaluating eligibility criteria of oncology trials using real-world data and AI. Nature. 2021;592(7855):629–33.",
+      "volume": "592",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13073-017-0512-3",
+      "author": "M Francisco",
+      "doi-asserted-by": "crossref",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Genome Med",
+      "key": "406_CR30",
+      "unstructured": "Francisco M, Bustamante CD. Polygenic risk scores: a biased prediction? Genome Med. 2018;10(1):1–3.",
+      "volume": "10",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41596-020-0353-1",
+      "author": "SW Choi",
+      "doi-asserted-by": "publisher",
+      "first-page": "2759",
+      "issue": "9",
+      "journal-title": "Nat Protoc",
+      "key": "406_CR31",
+      "unstructured": "Choi SW, Mak TSH, O’Reilly PF. Tutorial: a guide to performing polygenic risk score analyses. Nat Protoc. 2020;15(9):2759–72.",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00783-5",
+      "author": "SA Lambert",
+      "doi-asserted-by": "publisher",
+      "first-page": "420",
+      "issue": "4",
+      "journal-title": "Nat Genet",
+      "key": "406_CR32",
+      "unstructured": "Lambert SA, Gil L, Jupp S, Ritchie SC, Xu Y, Buniello A, Inouye M. The polygenic score catalog as an open database for reproducibility and systematic evaluation. Nat Genet. 2021;53(4):420–5.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "author": "K Av",
+      "doi-asserted-by": "publisher",
+      "first-page": "1219",
+      "journal-title": "Nat Genet",
+      "key": "406_CR33",
+      "unstructured": "Av K, Chaffin M, Aragam KG, Me H, Roselli C, Choi SH, Natarajan P, Lander ES, Lubitz SA, Ellinor PT, Kathiresan S. Genome-wide polygenic scores for common diseases identify individuals with risk equivalent to monogenic mutations. Nat Genet. 2018;50:1219–24.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/gim.2016.103",
+      "author": "K Läll",
+      "doi-asserted-by": "publisher",
+      "first-page": "322",
+      "issue": "3",
+      "journal-title": "Genet Med",
+      "key": "406_CR34",
+      "unstructured": "Läll K, Mägi R, Morris A, Metspalu A, Fischer K. Personalized risk prediction for type 2 diabetes: the potential of genetic risk scores. Genet Med. 2017;19(3):322–9.",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.2337/db13-1663",
+      "author": "JL Vassy",
+      "doi-asserted-by": "publisher",
+      "first-page": "2172",
+      "issue": "6",
+      "journal-title": "Diabetes",
+      "key": "406_CR35",
+      "unstructured": "Vassy JL, Hivert MF, Porneala B, Dauriz M, Florez JC, Dupuis J, Meigs JB. Polygenic type 2 diabetes prediction at the limit of common variant detection. Diabetes. 2014;63(6):2172–82.",
+      "volume": "63",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.2337/db16-1150",
+      "author": "Q Qi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1419",
+      "issue": "5",
+      "journal-title": "Diabetes",
+      "key": "406_CR36",
+      "unstructured": "Qi Q, Stilp AM, Sofer T, Moon JY, Hidalgo B, Szpiro AA, Kaplan RC. Genetics of type 2 diabetes in US Hispanic/Latino individuals: results from the Hispanic Community Health Study/Study of Latinos (HCHS/SOL). Diabetes. 2017;66(5):1419–25.",
+      "volume": "66",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41591-020-0800-0",
+      "author": "N Mars",
+      "doi-asserted-by": "publisher",
+      "first-page": "549",
+      "issue": "4",
+      "journal-title": "Nat Med",
+      "key": "406_CR37",
+      "unstructured": "Mars N, Koskela JT, Ripatti P, Kiiskinen TT, Havulinna AS, Lindbohm JV, Ripatti S. Polygenic and clinical risk scores and their impact on age at onset and prediction of cardiometabolic diseases and common cancers. Nat Med. 2020;26(4):549–57.",
+      "volume": "26",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-020-00757-z",
+      "author": "N Sinnott-Armstrong",
+      "doi-asserted-by": "publisher",
+      "first-page": "185",
+      "issue": "2",
+      "journal-title": "Nat Genet",
+      "key": "406_CR38",
+      "unstructured": "Sinnott-Armstrong N, Tanigawa Y, Amar D, Mars N, Benner C, Aguirre M, Rivas MA. Genetics of 35 blood and urine biomarkers in the UK Biobank. Nat Genet. 2021;53(2):185–94.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s42255-021-00478-5",
+      "author": "SC Ritchie",
+      "doi-asserted-by": "publisher",
+      "first-page": "1476",
+      "issue": "11",
+      "journal-title": "Nat Metab",
+      "key": "406_CR39",
+      "unstructured": "Ritchie SC, Lambert SA, Arnold M, Teo SM, Lim S, Scepanovic P, Inouye M. Integrative analysis of the plasma proteome and polygenic risk of cardiometabolic diseases. Nat Metab. 2021;3(11):1476–83.",
+      "volume": "3",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.xhgg.2021.100029",
+      "author": "LM Polfus",
+      "doi-asserted-by": "publisher",
+      "first-page": "100029",
+      "issue": "2",
+      "journal-title": "Hum Genet Genom Adv",
+      "key": "406_CR40",
+      "unstructured": "Polfus LM, Darst BF, Highland H, Sheng X, Ng MC, Below JE, DIAMANTE Hispanic/Latino Consortium. Genetic discovery and risk characterization in type 2 diabetes across diverse populations. Hum Genet Genom Adv. 2021;2(2):100029.",
+      "volume": "2",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00948-2",
+      "author": "D Mansour Aly",
+      "doi-asserted-by": "publisher",
+      "first-page": "1534",
+      "issue": "11",
+      "journal-title": "Nat Genet",
+      "key": "406_CR41",
+      "unstructured": "Mansour Aly D, Dwivedi OP, Prasad RB, Käräjämäki A, Hjort R, Thangam M, Ahlqvist E. Genome-wide association analyses highlight etiological differences underlying newly defined subtypes of diabetes. Nat Genet. 2021;53(11):1534–42.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1210/clinem/dgz102",
+      "author": "MA Aksit",
+      "doi-asserted-by": "publisher",
+      "first-page": "1401",
+      "issue": "5",
+      "journal-title": "J Clin Endocrinol Metab",
+      "key": "406_CR42",
+      "unstructured": "Aksit MA, Pace RG, Vecchio-Pagán B, Ling H, Rommens JM, Boelle PY, Blackman SM. Genetic modifiers of cystic fibrosis-related diabetes have extensive overlap with type 2 diabetes and related traits. J Clin Endocrinol Metab. 2020;105(5):1401–15.",
+      "volume": "105",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/2021.09.02.21262942",
+      "doi-asserted-by": "crossref",
+      "key": "406_CR43",
+      "unstructured": "Tanigawa Y, Qian J, Venkataraman GR, Justesen JM, Li R, Tibshirani R, Rivas MA. Significant Sparse Polygenic Risk Scores across 428 traits in UK Biobank; 2021. medRxiv."
+    },
+    {
+      "DOI": "10.1161/CIRCGEN.120.003128",
+      "author": "Y Ye",
+      "doi-asserted-by": "publisher",
+      "first-page": "003128",
+      "issue": "1",
+      "journal-title": "Circ Genom Precis Med",
+      "key": "406_CR44",
+      "unstructured": "Ye Y, Chen X, Han J, Jiang W, Natarajan P, Zhao H. Interactions between enhanced polygenic risk scores and lifestyle for cardiovascular disease, diabetes, and lipid levels. Circ Genom Precis Med. 2021;14(1):003128.",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.11.008",
+      "author": "F Privé",
+      "doi-asserted-by": "publisher",
+      "first-page": "12",
+      "issue": "1",
+      "journal-title": "Am J Hum Genet",
+      "key": "406_CR45",
+      "unstructured": "Privé F, Aschard H, Carmi S, Folkersen L, Hoggart C, O’Reilly PF, Vilhjálmsson BJ. Portability of 245 polygenic scores when derived from the UK Biobank and applied to 9 ancestry groups from the same cohort. Am J Hum Genet. 2022;109(1):12–23.",
+      "volume": "109",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/538161a",
+      "author": "AB Popejoy",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "issue": "7624",
+      "journal-title": "Nature News",
+      "key": "406_CR46",
+      "unstructured": "Popejoy AB, Fullerton SM. Genomics is failing on diversity. Nature News. 2016;538(7624):161.",
+      "volume": "538",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nrg.2017.89",
+      "author": "LA Hindorff",
+      "doi-asserted-by": "publisher",
+      "first-page": "175",
+      "issue": "3",
+      "journal-title": "Nat Rev Genet",
+      "key": "406_CR47",
+      "unstructured": "Hindorff LA, Bonham VL, Brody LC, Ginoza ME, Hutter CM, Manolio TA, Green ED. Prioritizing diversity in human genomics research. Nat Rev Genet. 2018;19(3):175.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1086/519795",
+      "author": "S Purcell",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "issue": "3",
+      "journal-title": "Am J Hum Genet",
+      "key": "406_CR48",
+      "unstructured": "Purcell S, Neale B, Todd-Brown K, Thomas L, Ferreira MA, Bender D, Sham PC. PLINK: a tool set for whole-genome association and population-based linkage analyses. Am J Hum Genet. 2007;81(3):559–75.",
+      "volume": "81",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/sysbio/syr100",
+      "author": "DL Ayres",
+      "doi-asserted-by": "publisher",
+      "first-page": "170",
+      "issue": "1",
+      "journal-title": "Syst Biol",
+      "key": "406_CR49",
+      "unstructured": "Ayres DL, Darling A, Zwickl DJ, Beerli P, Holder MT, Lewis PO, Suchard MA. BEAGLE: an application programming interface and high-performance computing library for statistical phylogenetics. Syst Biol. 2012;61(1):170–3.",
+      "volume": "61",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009141",
+      "author": "J Qian",
+      "doi-asserted-by": "publisher",
+      "issue": "10",
+      "journal-title": "PLoS Genet",
+      "key": "406_CR50",
+      "unstructured": "Qian J, Tanigawa Y, Du W, Aguirre M, Chang C, Tibshirani R, Hastie T. A fast and scalable framework for large-scale and ultrahigh-dimensional sparse regression with application to the UK Biobank. PLoS Genet. 2020;16(10): e1009141.",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "author": "R Tibshirani",
+      "first-page": "267",
+      "issue": "1",
+      "journal-title": "J Roy Stat Soc Ser B Methodol",
+      "key": "406_CR51",
+      "unstructured": "Tibshirani R. Regression shrinkage and selection via the lasso. J Roy Stat Soc Ser B Methodol. 1996;58(1):267–88.",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1017/CBO9780511804441",
+      "author": "S Boyd",
+      "doi-asserted-by": "publisher",
+      "key": "406_CR52",
+      "unstructured": "Boyd S, Boyd SP, Vandenberghe L. Convex optimization. Cambridge University Press; 2004.",
+      "volume-title": "Convex optimization",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1038/ng1847",
+      "author": "AL Price",
+      "doi-asserted-by": "publisher",
+      "first-page": "904",
+      "issue": "8",
+      "journal-title": "Nat Genet",
+      "key": "406_CR53",
+      "unstructured": "Price AL, Patterson NJ, Plenge RM, Weinblatt ME, Shadick NA, Reich D. Principal components analysis corrects for stratification in genome-wide association studies. Nat Genet. 2006;38(8):904–9. https://doi.org/10.1038/ng1847.",
+      "volume": "38",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1038/nrg2813",
+      "author": "AL Price",
+      "doi-asserted-by": "publisher",
+      "first-page": "459",
+      "issue": "7",
+      "journal-title": "Nat Rev Genet",
+      "key": "406_CR54",
+      "unstructured": "Price AL, Zaitlen NA, Reich D, Patterson N. New approaches to population stratification in genome-wide association studies. Nat Rev Genet. 2010;11(7):459–63.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1101/2021.06.27.450081",
+      "doi-asserted-by": "crossref",
+      "key": "406_CR55",
+      "unstructured": "Mantes AD, Montserrat DM, Bustamante CD, Giró-i-Nieto X, Ioannidis AG. Neural ADMIXTURE: rapid population clustering with autoencoders; 2021. bioRxiv."
+    },
+    {
+      "DOI": "10.1101/gr.094052.109",
+      "author": "DH Alexander",
+      "doi-asserted-by": "publisher",
+      "first-page": "1655",
+      "issue": "9",
+      "journal-title": "Genome Res",
+      "key": "406_CR56",
+      "unstructured": "Alexander DH, Novembre J, Lange K. Fast model-based estimation of ancestry in unrelated individuals. Genome Res. 2009;19(9):1655–64. https://doi.org/10.1101/gr.094052.109.",
+      "volume": "19",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "Genomes Project Consortium",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "406_CR57",
+      "unstructured": "Genomes Project Consortium. A global reference for human genetic variation. Nature. 2015;526(7571):68.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-77",
+      "author": "X Robin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "BMC Bioinform",
+      "key": "406_CR58",
+      "unstructured": "Robin X, Turck N, Hainard A, Tiberti N, Lisacek F, Sanchez JC, Müller M. pROC: an open-source package for R and S+ to analyze and compare ROC curves. BMC Bioinform. 2011;12(1):1–8.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.2307/2531595",
+      "author": "ER DeLong",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Biometrics",
+      "key": "406_CR59",
+      "unstructured": "DeLong ER, DeLong DM, Clarke-Pearson DL. Comparing the areas under two or more correlated receiver operating characteristic curves: a nonparametric approach. Biometrics. 1988. https://doi.org/10.2307/2531595.",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0205-x",
+      "author": "E Evangelou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1412",
+      "issue": "10",
+      "journal-title": "Nat Genet",
+      "key": "406_CR60",
+      "unstructured": "Evangelou E, Warren HR, et al. Genetic analysis of over 1 million people identifies 535 new loci associated with blood pressure traits. Nat Genet. 2018;50(10):1412–25.",
+      "volume": "50",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 60,
+  "references-count": 60,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2022.03.01.22271722",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00406-y"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Validating and automating learning of cardiometabolic polygenic risk scores from direct-to-consumer genetic and phenotypic data: implications for scaling precision health research"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

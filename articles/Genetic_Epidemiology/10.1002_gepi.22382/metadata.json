@@ -1,0 +1,521 @@
+{
+  "DOI": "10.1002/gepi.22382",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22382",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003ePrevious genome‐wide association studies (GWASs) have been largely focused on European (EUR) populations. However, polygenic risk scores (PRSs) derived from EUR have been shown to perform worse in non‐EURs compared with EURs. In this study, we aim to improve PRS prediction in East Asians (EASs). We introduce a rescaled meta‐analysis framework to combine both EUR (\u003cjats:italic\u003eN\u003c/jats:italic\u003e = 122,175) and EAS (\u003cjats:italic\u003eN\u003c/jats:italic\u003e = 30,801) GWAS summary statistics. To improve PRS prediction in EASs, we use a scaling factor to up‐weight the EAS data, such that the resulting effect size estimates are more relevant to EASs. We then derive PRSs for EAS from the rescaled meta‐analysis results of EAS and EUR data. Evaluated in an independent EAS validation data set, this approach increases the prediction liability‐adjusted Nagelkerke's pseudo \u003cjats:italic\u003eR\u003c/jats:italic\u003e\u003cjats:sup\u003e2\u003c/jats:sup\u003e by 40%, 41%, and 5%, respectively, compared with PRSs derived from an EAS GWAS only, EUR GWAS only, and conventional fixed‐effects meta‐analysis of EAS and EUR data. The PRS derived from the rescaled meta‐analysis approach achieved an area under the receiver operating characteristic curve (AUC) of 0.6059, higher than AUC = 0.5782, 0.5809, 0.6008 for EAS, EUR, and conventional meta‐analysis of EAS and EUR. We further compare PRSs constructed by single‐nucleotide polymorphisms that have different linkage disequilibrium (LD) scores and minor allele frequencies (MAFs) between EUR and EAS, and observe that lower LD scores or MAF in EAS correspond to poorer PRS performance (AUC = 0.5677, 0.5530, respectively) than higher LD scores or MAF (AUC = 0.589, 0.5993, respectively). We finally build a PRS stratified by LD score differences in EUR and EAS using rescaled meta‐analysis, and obtain an AUC of 0.6096, with improvement over other strategies investigated.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22382"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-09-22"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2021-02-08"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-03-19"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-5691-1303",
+      "affiliation": [
+        {
+          "name": "Department of Molecular Physiology \u0026amp; Biophysics, Vanderbilt Genetics Institute Vanderbilt University  Nashville Tennessee USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Ji",
+      "given": "Ying",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Epidemiology, Department of Medicine, Vanderbilt Epidemiology Center, Vanderbilt‐Ingram Cancer Center Vanderbilt University Medical Center  Nashville Tennessee USA"
+        }
+      ],
+      "family": "Long",
+      "given": "Jirong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Preventive Medicine Chonnam National University Medical School  Hwasun Korea"
+        },
+        {
+          "name": "Jeonnam Regional Cancer Center Chonnam National University Hwasun Hospital  Hwasun Korea"
+        }
+      ],
+      "family": "Kweon",
+      "given": "Sun‐Seog",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biomedical Sciences, Cancer Research Institute Seoul National University College of Medicine  Seoul Korea"
+        },
+        {
+          "name": "Institute of Environmental Medicine Seoul National University Medical Research Center  Seoul Korea"
+        }
+      ],
+      "family": "Kang",
+      "given": "Daehee",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Laboratory for Genotyping Development RIKEN Center for Integrative Medical Sciences  Yokohama Japan"
+        }
+      ],
+      "family": "Kubo",
+      "given": "Michiaki",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Medicine Hanyang University College of Medicine  Seoul Korea"
+        }
+      ],
+      "family": "Park",
+      "given": "Boyoung",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Epidemiology, Department of Medicine, Vanderbilt Epidemiology Center, Vanderbilt‐Ingram Cancer Center Vanderbilt University Medical Center  Nashville Tennessee USA"
+        }
+      ],
+      "family": "Shu",
+      "given": "Xiao‐Ou",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Epidemiology, Department of Medicine, Vanderbilt Epidemiology Center, Vanderbilt‐Ingram Cancer Center Vanderbilt University Medical Center  Nashville Tennessee USA"
+        }
+      ],
+      "family": "Zheng",
+      "given": "Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics, Vanderbilt Genetics Institute Vanderbilt University Medical Center  Nashville Tennessee USA"
+        }
+      ],
+      "family": "Tao",
+      "given": "Ran",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-2129-168X",
+      "affiliation": [
+        {
+          "name": "Department of Molecular Physiology \u0026amp; Biophysics, Vanderbilt Genetics Institute Vanderbilt University  Nashville Tennessee USA"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Li",
+      "given": "Bingshan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        19
+      ]
+    ],
+    "date-time": "2021-03-19T09:37:15Z",
+    "timestamp": 1616146635000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        30
+      ]
+    ],
+    "date-time": "2023-08-30T19:24:45Z",
+    "timestamp": 1693423485000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000051",
+      "award": [
+        "U01HG009086"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Human Genome Research Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "date-time": "2024-04-30T17:11:42Z",
+    "timestamp": 1714497102342
+  },
+  "is-referenced-by-count": 8,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "5",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        19
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "5",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            19
+          ]
+        ],
+        "date-time": "2021-03-19T00:00:00Z",
+        "timestamp": 1616112000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22382",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22382",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22382",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "471-484",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        19
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        19
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nature15393",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1007/s10549-015-3641-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "article-title": "Tractor: A framework allowing for improved inclusion of admixed individuals in large‐scale association studies",
+      "author": "Atkinson E. G.",
+      "journal-title": "BioRxiv",
+      "key": "e_1_2_8_4_1",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.3211",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1038/ng.3041",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.03.008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.06.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(16)31795-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu848",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "DOI": "10.1038/ng.3954",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_11_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22166",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1005589",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0512-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21614",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "article-title": "Meta‐analysis of genome‐wide association studies: No efficiency gain in using individual participant data",
+      "author": "Lin D. Y.",
+      "first-page": "60",
+      "issue": "1",
+      "journal-title": "Genetic Epidemiology",
+      "key": "e_1_2_8_17_1",
+      "volume": "34",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41467-019-12653-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "article-title": "Modeling functional enrichment improves polygenic prediction accuracy in UK Biobank and 23andMe data sets",
+      "author": "Marquez‐Luna C.",
+      "first-page": "375337",
+      "journal-title": "BioRxiv",
+      "key": "e_1_2_8_19_1",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/gepi.22083",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0379-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.11.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1038/ng.3242",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "DOI": "10.1038/nature24284",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_24_1"
+    },
+    {
+      "DOI": "10.1038/87876",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1038/s41467-020-15046-w",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0279-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1038/ng.3865",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "article-title": "Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program",
+      "author": "Taliun D.",
+      "first-page": "563866",
+      "journal-title": "BioRxiv",
+      "key": "e_1_2_8_29_1",
+      "volume": "2",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3322/caac.21262",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "DOI": "10.1038/s41467-020-19854-y",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_32_1"
+    },
+    {
+      "DOI": "10.1186/s13058-016-0786-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1310-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1038/ng.318",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddt089",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    }
+  ],
+  "reference-count": 35,
+  "references-count": 35,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22382"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Incorporating European GWAS findings improve polygenic risk prediction accuracy of breast cancer among East Asians"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

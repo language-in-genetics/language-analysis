@@ -1,0 +1,852 @@
+{
+  "DOI": "10.1186/s40246-021-00333-4",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00333-4",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eRecent efforts in the field of nutritional science have allowed the discovery of disease-beating molecules within foods based on the commonality of bioactive food molecules to FDA-approved drugs. The pioneering work in this field used an unsupervised network propagation algorithm to learn the systemic-wide effect on the human interactome of 1962 FDA-approved drugs and a supervised algorithm to predict anticancer therapeutics using the learned representations. Then, a set of bioactive molecules within foods was fed into the model, which predicted molecules with cancer-beating potential.The employed methodology consisted of disjoint unsupervised feature generation and classification tasks, which can result in sub-optimal learned drug representations with respect to the classification task. Additionally, due to the disjoint nature of the tasks, the employed approach proved cumbersome to optimize, requiring testing of thousands of hyperparameter combinations and significant computational resources.To overcome the technical limitations highlighted above, we represent each drug as a graph (human interactome) with its targets as binary node features on the graph and formulate the problem as a graph classification task. To solve this task, inspired by the success of graph neural networks in graph classification problems, we use an end-to-end graph neural network model operating directly on the graphs, which learns drug representations to optimize model performance in the prediction of anticancer therapeutics.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe proposed model outperforms the baseline approach in the anticancer therapeutic prediction task, achieving an F1 score of 67.99\u003cjats:italic\u003e%\u003c/jats:italic\u003e±2.52\u003cjats:italic\u003e%\u003c/jats:italic\u003e and an AUPR of 73.91\u003cjats:italic\u003e%\u003c/jats:italic\u003e±3.49\u003cjats:italic\u003e%\u003c/jats:italic\u003e. It is also shown that the model is able to capture knowledge of biological pathways to predict anticancer molecules based on the molecules’ effects on cancer-related pathways.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe introduce an end-to-end graph convolutional model to predict cancer-beating molecules within food. The introduced model outperforms the existing baseline approach, and shows interpretability, paving the way to the future of a personalized nutritional science approach allowing the development of nutrition strategies for cancer prevention and/or therapeutics.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "333"
+  ],
+  "article-number": "33",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "26 February 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "13 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "7 June 2021"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Not applicable"
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable"
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Gonzalez",
+      "given": "Guadalupe",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Gong",
+      "given": "Shunwang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Laponogov",
+      "given": "Ivan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bronstein",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-1164-0359",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Veselkov",
+      "given": "Kirill",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ],
+    "date-time": "2021-06-07T08:06:57Z",
+    "timestamp": 1623053217000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        2,
+        3
+      ]
+    ],
+    "date-time": "2023-02-03T16:04:41Z",
+    "timestamp": 1675440281000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100008058",
+      "doi-asserted-by": "publisher",
+      "name": "Vodafone Foundation"
+    },
+    {
+      "DOI": "10.13039/501100000781",
+      "award": [
+        "724228"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "European Research Council"
+    },
+    {
+      "DOI": "10.13039/501100013342",
+      "doi-asserted-by": "publisher",
+      "name": "NIHR Imperial Biomedical Research Centre"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        12
+      ]
+    ],
+    "date-time": "2024-03-12T18:02:07Z",
+    "timestamp": 1710266527025
+  },
+  "is-referenced-by-count": 9,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            7
+          ]
+        ],
+        "date-time": "2021-06-07T00:00:00Z",
+        "timestamp": 1623024000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            7
+          ]
+        ],
+        "date-time": "2021-06-07T00:00:00Z",
+        "timestamp": 1623024000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00333-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00333-4/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00333-4.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        7
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3322/caac.21551",
+      "author": "RL Siegel",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "issue": "1",
+      "journal-title": "CA Cancer J Clin",
+      "key": "333_CR1",
+      "unstructured": "Siegel RL, Miller KD, Jemal A. Cancer statistics, 2019. CA Cancer J Clin. 2019; 69(1):7–34. https://doi.org/10.3322/caac.21551.",
+      "volume": "69",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/s0899-9007(99)00021-0",
+      "author": "MJ Glade",
+      "doi-asserted-by": "publisher",
+      "first-page": "523",
+      "issue": "6",
+      "journal-title": "Nutrition",
+      "key": "333_CR2",
+      "unstructured": "Glade MJ. Food, nutrition, and the prevention of cancer: a global perspective. American Institute for Cancer Research/World Cancer Research Fund, American Institute for Cancer Research, 1997. Nutrition. 1999; 15(6):523–6. https://doi.org/10.1016/s0899-9007(99)00021-0. PMID: 10378216.",
+      "volume": "15",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1186/1475-2891-3-19",
+      "author": "MS Donaldson",
+      "doi-asserted-by": "publisher",
+      "first-page": "19",
+      "issue": "1",
+      "journal-title": "Nutr J",
+      "key": "333_CR3",
+      "unstructured": "Donaldson MS. Nutrition and cancer: a review of the evidence for an anti-cancer diet. Nutr J. 2004; 3(1):19. https://doi.org/10.1186/1475-2891-3-19.",
+      "volume": "3",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1038/nature13959",
+      "author": "D Tilman",
+      "doi-asserted-by": "publisher",
+      "first-page": "518",
+      "issue": "7528",
+      "journal-title": "Nature",
+      "key": "333_CR4",
+      "unstructured": "Tilman D, Clark M. Global diets link environmental sustainability and human health. Nature. 2014; 515(7528):518–22. https://doi.org/10.1038/nature13959.",
+      "volume": "515",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/ijc.31198",
+      "author": "L Schwingshackl",
+      "doi-asserted-by": "publisher",
+      "first-page": "1748",
+      "issue": "9",
+      "journal-title": "Int J Cancer",
+      "key": "333_CR5",
+      "unstructured": "Schwingshackl L, Schwedhelm C, Hoffmann G, Knüppel S, Laure Preterre A, Iqbal K, Bechthold A, De Henauw S, Michels N, Devleesschauwer B, Boeing H, Schlesinger S. Food groups and risk of colorectal cancer. Int J Cancer. 2018; 142(9):1748–58. https://doi.org/10.1002/ijc.31198.",
+      "volume": "142",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/annonc/mds601",
+      "author": "QJ Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1079",
+      "issue": "4",
+      "journal-title": "Ann Oncol",
+      "key": "333_CR6",
+      "unstructured": "Wu QJ, Yang Y, Vogtmann E, Wang J, Han LH, Li HL, Xiang YB. Cruciferous vegetables intake and the risk of colorectal cancer: a meta-analysis of observational studies. Ann Oncol. 2013; 24(4):1079–87. https://doi.org/10.1093/annonc/mds601.",
+      "volume": "24",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1021/acs.chemrestox.6b00413",
+      "author": "W Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2071",
+      "issue": "12",
+      "journal-title": "Chem Res Toxicol",
+      "key": "333_CR7",
+      "unstructured": "Li W, Guo Y, Zhang C, Wu R, Yang AY, Gaspar J, Kong A-NT. Dietary phytochemicals and cancer chemoprevention: a perspective on oxidative stress, inflammation, and epigenetics. Chem Res Toxicol. 2016; 29(12):2071–95. https://doi.org/10.1021/acs.chemrestox.6b00413.",
+      "volume": "29",
+      "year": "2016"
+    },
+    {
+      "key": "333_CR8",
+      "unstructured": "Wishart Research Group. FooDB. 2017. http://foodb.ca. Accessed 07 Mar 2019."
+    },
+    {
+      "DOI": "10.1093/database/bax044",
+      "author": "Y Ni",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Database",
+      "key": "333_CR9",
+      "unstructured": "Ni Y, Jensen K, Kouskoumvekaki I, Panagiotou G. NutriChem 2.0: exploring the effect of plant-based foods on human health and drug efficacy. Database. 2017; 2017:1–6. https://doi.org/10.1093/database/bax044.",
+      "volume": "2017",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3389/fphys.2017.00753",
+      "author": "T Zheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "SEP",
+      "journal-title": "Front Physiol",
+      "key": "333_CR10",
+      "unstructured": "Zheng T, Ni Y, Li J, Chow BKC, Panagiotou G. Designing dietary recommendations using system level interactomics analysis and network-based inference. Front Physiol. 2017; 8(SEP):1–16. https://doi.org/10.3389/fphys.2017.00753.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1004048",
+      "author": "K Jensen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1004048",
+      "issue": "2",
+      "journal-title": "PLOS Comput Biol",
+      "key": "333_CR11",
+      "unstructured": "Jensen K, Ni Y, Panagiotou G, Kouskoumvekaki I. Developing a molecular roadmap of drug-food interactions. PLOS Comput Biol. 2015; 11(2):1004048. https://doi.org/10.1371/journal.pcbi.1004048.",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41598-019-45349-y",
+      "author": "K Veselkov",
+      "doi-asserted-by": "publisher",
+      "first-page": "9237",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "333_CR12",
+      "unstructured": "Veselkov K, Gonzalez G, Aljifri S, Galea D, Mirnezami R, Youssef J, Bronstein M, Laponogov I. HyperFoods: machine intelligent mapping of cancer-beating molecules in foods. Sci Rep. 2019; 9(1):9237. https://doi.org/10.1038/s41598-019-45349-y.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41540-017-0009-0",
+      "author": "J Menche",
+      "doi-asserted-by": "publisher",
+      "first-page": "10",
+      "issue": "1",
+      "journal-title": "NPJ Syst Biol Appl",
+      "key": "333_CR13",
+      "unstructured": "Menche J, Guney E, Sharma A, Branigan PJ, Loza MJ, Baribaud F, Dobrin R, Barabási A-L. Integrating personalized gene expression profiles into predictive disease-associated gene pools. NPJ Syst Biol Appl. 2017; 3(1):10. https://doi.org/10.1038/s41540-017-0009-0.",
+      "volume": "3",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nmeth.3440",
+      "author": "P Creixell",
+      "doi-asserted-by": "publisher",
+      "first-page": "615",
+      "issue": "7",
+      "journal-title": "Nat Methods",
+      "key": "333_CR14",
+      "unstructured": "Creixell P, Reimand J, Haider S, Wu G, Shibata T, Vazquez M, Mustonen V, Gonzalez-Perez A, Pearson J, Sander C, Raphael BJ, Marks DS, Ouellette BFF, Valencia A, Bader GD, Boutros PC, Stuart JM, Linding R, Lopez-Bigas N, Stein LD. Pathway and network analysis of cancer genomes. Nat Methods. 2015; 12(7):615–21. https://doi.org/10.1038/nmeth.3440.",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2015.05.008",
+      "doi-asserted-by": "publisher",
+      "key": "333_CR15",
+      "unstructured": "Krogan NJ, Lippman S, Agard DA, Ashworth A, Ideker T. The Cancer Cell Map Initiative: Defining the Hallmark Networks of Cancer. Cell Press. 2015. https://doi.org/10.1016/j.molcel.2015.05.008."
+    },
+    {
+      "DOI": "10.1038/nrg.2017.38",
+      "author": "L Cowen",
+      "doi-asserted-by": "publisher",
+      "first-page": "551",
+      "issue": "9",
+      "journal-title": "Nat Rev Genet",
+      "key": "333_CR16",
+      "unstructured": "Cowen L, Ideker T, Raphael BJ, Sharan R. Network propagation: a universal amplifier of genetic associations. Nat Rev Genet. 2017; 18(9):551–62. https://doi.org/10.1038/nrg.2017.38.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1109/MSP.2017.2693418",
+      "author": "MM Bronstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "18",
+      "issue": "4",
+      "journal-title": "IEEE Signal Proc Mag",
+      "key": "333_CR17",
+      "unstructured": "Bronstein MM, Bruna J, LeCun Y, Szlam A, Vandergheynst P. Geometric deep learning: going beyond Euclidean data. IEEE Signal Proc Mag. 2017; 34(4):18–42. https://doi.org/10.1109/MSP.2017.2693418.",
+      "volume": "34",
+      "year": "2017"
+    },
+    {
+      "key": "333_CR18",
+      "unstructured": "Hamilton WL, Ying R, Leskovec J. Inductive representation learning on large graphs. In: 31st Conference on Neural Information Processing Systems (NIPS 2017): 2017. https://arxiv.org/abs/1706.02216. Accessed 14 Dec 2018."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty294",
+      "author": "M Zitnik",
+      "doi-asserted-by": "publisher",
+      "first-page": "457",
+      "issue": "13",
+      "journal-title": "Bioinformatics",
+      "key": "333_CR19",
+      "unstructured": "Zitnik M, Agrawal M, Leskovec J. Modeling polypharmacy side effects with graph convolutional networks. Bioinformatics. 2018; 34(13):457–66. https://doi.org/10.1101/258814.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.24963/ijcai.2018/490",
+      "doi-asserted-by": "publisher",
+      "key": "333_CR20",
+      "unstructured": "Rhee S, Seo S, Kim S. Hybrid Approach of Relation Network and Localized Graph Convolutional Filtering for Breast Cancer Subtype Classification. Twenty-Seventh Int Joint Conf Artif Intell (IJCAI). 2018:3527–3534. https://doi.org/10.24963/ijcai.2018/490."
+    },
+    {
+      "DOI": "10.21203/rs.2.18936/v1",
+      "doi-asserted-by": "publisher",
+      "key": "333_CR21",
+      "unstructured": "Xie Y, Peng J, Zhou Y, et al.Integrating Protein-Protein Interaction Information into Drug Response Prediction by Graph Neural Encoding. 2019. PREPRINT (Version 1) available at Research Square. 2020. https://doi.org/10.21203/rs.2.18936/v1."
+    },
+    {
+      "DOI": "10.1093/nar/gkg034",
+      "author": "C von Mering",
+      "doi-asserted-by": "publisher",
+      "first-page": "258",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "333_CR22",
+      "unstructured": "von Mering C, Huynen M, Jaeggi D, Schmidt S, Bork P, Snel B. STRING: a database of predicted functional associations between proteins. Nucleic Acids Res. 2003; 31(1):258–61.",
+      "volume": "31",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/nar/gkw1099",
+      "author": "A Bateman",
+      "doi-asserted-by": "publisher",
+      "first-page": "158",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "333_CR23",
+      "unstructured": "Bateman A, Martin M, O’Donovan C, Magrane M, Alpi E, Antunes R, Bely B, Bingley M, Bonilla C, Britto R, Bursteinas B, Bye-A-Jee H, Cowley A, Silva AD, Giorgi MD, Dogan T, Fazzini F, Castro LG, Figueira L, Garmiri P, Georghiou G, Gonzalez D, Hatton-Ellis E, Li W, Liu W, Lopez R, Luo J, Lussi Y, MacDougall A, Nightingale A, Palka B, Pichler K, Poggioli D, Pundir S, Pureza L, Qi G, Renaux A, Rosanoff S, Saidi R, Sawford T, Shypitsyna A, Speretta E, Turner E, Tyagi N, Volynkin V, Wardell T, Warner K, Watkins X, Zaru R, Zellner H, Xenarios I, Bougueleret L, Bridge A, Poux S, Redaschi N, Aimo L, Argoud-Puy G, Auchincloss A, Axelsen K, Bansal P, Baratin D, Blatter M-C, Boeckmann B, Bolleman J, Boutet E, Breuza L, Casal-Casas C, Castro E. d., Coudert E, Cuche B, Doche M, Dornevil D, Duvaud S, Estreicher A, Famiglietti L, Feuermann M, Gasteiger E, Gehant S, Gerritsen V, Gos A, Gruaz-Gumowski N, Hinz U, Hulo C, Jungo F, Keller G, Lara V, Lemercier P, Lieberherr D, Lombardot T, Martin X, Masson P, Morgat A, Neto T, Nouspikel N, Paesano S, Pedruzzi I, Pilbout S, Pozzato M, Pruess M, Rivoire C, Roechert B, Schneider M, Sigrist C, Sonesson K, Staehli S, Stutz A, Sundaram S, Tognolli M, Verbregue L, Veuthey A-L, Wu CH, Arighi CN, Arminski L, Chen C, Chen Y, Garavelli JS, Huang H, Laiho K, McGarvey P, Natale DA, Ross K, Vinayaka CR, Wang Q, Wang Y, Yeh L-S, Zhang J. UniProt: the universal protein knowledgebase. Nucleic Acids Res. 2017; 45(D1):158–69. https://doi.org/10.1093/nar/gkw1099.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/sj.bjc.6601894",
+      "author": "S Bamford",
+      "doi-asserted-by": "publisher",
+      "first-page": "355",
+      "issue": "2",
+      "journal-title": "Br J Cancer",
+      "key": "333_CR24",
+      "unstructured": "Bamford S, Dawson E, Forbes S, Clements J, Pettett R, Dogan A, Flanagan A, Teague J, Futreal PA, Stratton MR, Wooster R. The COSMIC (Catalogue of Somatic Mutations in Cancer) database and website. Br J Cancer. 2004; 91(2):355–8. https://doi.org/10.1038/sj.bjc.6601894.",
+      "volume": "91",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/nar/gku1055",
+      "author": "GR Brown",
+      "doi-asserted-by": "publisher",
+      "first-page": "36",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "333_CR25",
+      "unstructured": "Brown GR, Hem V, Katz KS, Ovetsky M, Wallin C, Ermolaeva O, Tolstoy I, Tatusova T, Pruitt KD, Maglott DR, Murphy TD. Gene: a gene-centered information resource at NCBI. Nucleic Acids Res. 2015; 43(D1):36–42. https://doi.org/10.1093/nar/gku1055.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/gkx1037",
+      "author": "DS Wishart",
+      "doi-asserted-by": "publisher",
+      "first-page": "1074",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "333_CR26",
+      "unstructured": "Wishart DS, Feunang YD, Guo AC, Lo EJ, Marcu A, Grant JR, Sajed T, Johnson D, Li C, Sayeeda Z, Assempour N, Iynkkaran I, Liu Y, Maciejewski A, Gale N, Wilson A, Chin L, Cummings R, Le D, Pon A, Knox C, Wilson M. DrugBank 5.0: a major update to the DrugBank database for 2018. Nucleic Acids Res. 2018; 46(D1):1074–82. https://doi.org/10.1093/nar/gkx1037.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkw993",
+      "author": "O Ursu",
+      "doi-asserted-by": "publisher",
+      "first-page": "932",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "333_CR27",
+      "unstructured": "Ursu O, Holmes J, Knockel J, Bologa CG, Yang JJ, Mathias SL, Nelson SJ, Oprea TI. DrugCentral: online drug compendium. Nucleic Acids Res. 2017; 45(D1):932–9. https://doi.org/10.1093/nar/gkw993.",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/nar/gkm795",
+      "author": "M Kuhn",
+      "doi-asserted-by": "publisher",
+      "first-page": "684",
+      "issue": "Database issue",
+      "journal-title": "Nucleic Acids Res",
+      "key": "333_CR28",
+      "unstructured": "Kuhn M, von Mering C, Campillos M, Jensen LJ, Bork P. STITCH: interaction networks of chemicals and proteins. Nucleic Acids Res. 2008; 36(Database issue):684–8. https://doi.org/10.1093/nar/gkm795.",
+      "volume": "36",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/nar/28.1.27",
+      "author": "M Kanehisa",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "333_CR29",
+      "unstructured": "Kanehisa M. KEGG: Kyoto Encyclopedia of Genes and Genomes. Nucleic Acids Res. 2000; 28(1):27–30. https://doi.org/10.1093/nar/28.1.27.",
+      "volume": "28",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1073/pnas.0506580102",
+      "author": "A Subramanian",
+      "doi-asserted-by": "publisher",
+      "first-page": "15545",
+      "issue": "43",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "333_CR30",
+      "unstructured": "Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, Paulovich A, Pomeroy SL, Golub TR, Lander ES, Mesirov JP. Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci U S A. 2005; 102(43):15545–50. https://doi.org/10.1073/pnas.0506580102.",
+      "volume": "102",
+      "year": "2005"
+    },
+    {
+      "key": "333_CR31",
+      "unstructured": "Kipf TN, Welling M. Semi-Supervised Classification with Graph Convolutional Networks. In: 5th International Conference on Learning Representations, ICLR 2017 - Conference Track Proceedings: 2016. http://arxiv.org/abs/1609.02907. Accessed 12 Oct 2018."
+    },
+    {
+      "key": "333_CR32",
+      "unstructured": "Defferrard M, Bresson X, Vandergheynst P. Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering. Adv Neural Inf Process Syst (NIPS). 2016. http://arxiv.org/abs/1606.09375. Accessed 12 Oct 2018."
+    },
+    {
+      "key": "333_CR33",
+      "unstructured": "Xu K, Li C, Tian Y, Sonobe T, Kawarabayashi K-I, Jegelka S. Representation Learning on Graphs with Jumping Knowledge Networks. In: Proceedings of the 35th International Conference on Machine Learning, in Proceedings of Machine Learning Research: 2018. p. 5453–5462. http://proceedings.mlr.press/v80/xu18c.html. Accessed Mar 16 2019."
+    },
+    {
+      "key": "333_CR34",
+      "unstructured": "Sundararajan M, Taly A, Yan Q. Axiomatic Attribution for Deep Networks In: Precup D, Teh YW, editors. Proceedings of the 34th International Conference on Machine Learning, vol. 70: 2017. p. 3319–3328. http://proceedings.mlr.press/v70/sundararajan17a.html."
+    },
+    {
+      "key": "333_CR35",
+      "unstructured": "Paszke A, Gross S, Chintala S, Chanan G, Yang E, Facebook ZD, Research AI, Lin Z, Desmaison A, Antiga L, Srl O, Lerer A. Automatic differentiation in PyTorch. In: 31st Conference on Neural Information Processing Systems (NIPS): 2017."
+    },
+    {
+      "key": "333_CR36",
+      "unstructured": "Fey M, Lenssen JE. Fast Graph Representation Learning with PyTorch Geometric. ArXiv. 2019. http://arxiv.org/abs/1903.02428. Accessed Jan 20 2020."
+    },
+    {
+      "DOI": "10.1016/j.critrevonc.2017.09.004",
+      "author": "V Mukund",
+      "doi-asserted-by": "publisher",
+      "first-page": "13",
+      "journal-title": "Crit Rev Oncol/Hematol",
+      "key": "333_CR37",
+      "unstructured": "Mukund V, Mukund D, Sharma V, Mannarapu M, Alam A. Genistein: its role in metabolic diseases and cancer. Crit Rev Oncol/Hematol. 2017; 119:13–22. https://doi.org/10.1016/J.CRITREVONC.2017.09.004.",
+      "volume": "119",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1080/10408398.2016.1263597",
+      "author": "A Rauf",
+      "doi-asserted-by": "publisher",
+      "first-page": "1428",
+      "issue": "9",
+      "journal-title": "Crit Rev Food Sci Nutr",
+      "key": "333_CR38",
+      "unstructured": "Rauf A, Imran M, Butt MS, Nadeem M, Peters DG, Mubarak MS. Resveratrol as an anti-cancer agent: a review. Crit Rev Food Sci Nutr. 2018; 58(9):1428–47. https://doi.org/10.1080/10408398.2016.1263597.",
+      "volume": "58",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/ijms19010287",
+      "author": "R-J Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "287",
+      "issue": "1",
+      "journal-title": "Int J Mol Sci",
+      "key": "333_CR39",
+      "unstructured": "Chen R-J, Kuo H-C, Cheng L-H, Lee Y-H, Chang W-T, Wang B-J, Wang Y-J, Cheng H-C. Apoptotic and nonapoptotic activities of pterostilbene against cancer. Int J Mol Sci. 2018; 19(1):287. https://doi.org/10.3390/ijms19010287.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/biof.1400",
+      "author": "Y-R Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "69",
+      "issue": "1",
+      "journal-title": "BioFactors",
+      "key": "333_CR40",
+      "unstructured": "Li Y-R, Li S, Lin C-C. Effect of resveratrol and pterostilbene on aging and longevity. BioFactors. 2018; 44(1):69–82. https://doi.org/10.1002/biof.1400.",
+      "volume": "44",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1017/S0007114516000696",
+      "author": "R Dou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1643",
+      "issue": "9",
+      "journal-title": "Br J Nutr",
+      "key": "333_CR41",
+      "unstructured": "Dou R, Ng K, Giovannucci EL, Manson JE, Qian ZR, Ogino S. Vitamin D and colorectal cancer: molecular, epidemiological and clinical evidence. Br J Nutr. 2016; 115(9):1643–60. https://doi.org/10.1017/S0007114516000696.",
+      "volume": "115",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.jsbmb.2018.07.002",
+      "author": "G Ferrer-Mayorga",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "J Steroid Biochem Mol Biol",
+      "key": "333_CR42",
+      "unstructured": "Ferrer-Mayorga G, Larriba MJ, Crespo P, Muñoz A. Mechanisms of action of vitamin D in colon cancer. J Steroid Biochem Mol Biol. 2019; 185:1–6. https://doi.org/10.1016/J.JSBMB.2018.07.002.",
+      "volume": "185",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.4103/JLP.JLP_49_17",
+      "author": "A Mahendra",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "J Lab Physicians",
+      "key": "333_CR43",
+      "unstructured": "Mahendra A, Karishma, Choudhury BK, Sharma T, Bansal N, Bansal R, Gupta S. Vitamin D and gastrointestinal cancer. J Lab Physicians. 2018; 10(1):1–5. https://doi.org/10.4103/JLP.JLP_49.",
+      "volume": "10",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.critrevonc.2017.02.015",
+      "author": "MJ Duffy",
+      "doi-asserted-by": "publisher",
+      "first-page": "190",
+      "journal-title": "Crit Rev Oncol/Hematol",
+      "key": "333_CR44",
+      "unstructured": "Duffy MJ, Murray A, Synnott NC, O’Donovan N, Crown J. Vitamin D analogues: potential use in cancer treatment. Crit Rev Oncol/Hematol. 2017; 112:190–7. https://doi.org/10.1016/J.CRITREVONC.2017.02.015.",
+      "volume": "112",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.canlet.2015.06.030",
+      "author": "SG Barreto",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Cancer Lett",
+      "key": "333_CR45",
+      "unstructured": "Barreto SG, Neale RE. Vitamin D and pancreatic cancer. Cancer Lett. 2015; 368(1):1–6. https://doi.org/10.1016/J.CANLET.2015.06.030.",
+      "volume": "368",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1007/s11154-017-9406-3",
+      "author": "IC Nettore",
+      "doi-asserted-by": "publisher",
+      "first-page": "347",
+      "issue": "3",
+      "journal-title": "Rev Endocr Metab Disord",
+      "key": "333_CR46",
+      "unstructured": "Nettore IC, Albano L, Ungaro P, Colao A, Macchia PE. Sunshine vitamin and thyroid. Rev Endocr Metab Disord. 2017; 18(3):347–54. https://doi.org/10.1007/s11154-017-9406-3.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.7150/jca.13470",
+      "author": "M Ben-Eltriki",
+      "doi-asserted-by": "publisher",
+      "first-page": "391",
+      "issue": "4",
+      "journal-title": "J Cancer",
+      "key": "333_CR47",
+      "unstructured": "Ben-Eltriki M, Deb S, Guns EST. Calcitriol in combination therapy for prostate cancer: pharmacokinetic and pharmacodynamic interactions. J Cancer. 2016; 7(4):391–407. https://doi.org/10.7150/jca.13470.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/1477-7827-1-65",
+      "author": "C Gründker",
+      "doi-asserted-by": "publisher",
+      "first-page": "65",
+      "journal-title": "Reprod Biol Endocrinol RB\u0026E",
+      "key": "333_CR48",
+      "unstructured": "Gründker C, Emons G. Role of gonadotropin-releasing hormone (GnRH) in ovarian cancer. Reprod Biol Endocrinol RB\u0026E. 2003; 1:65. https://doi.org/10.1186/1477-7827-1-65.",
+      "volume": "1",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1530/eje.0.1510141",
+      "author": "C Gründker",
+      "doi-asserted-by": "publisher",
+      "first-page": "141",
+      "issue": "1",
+      "journal-title": "Eur J Endocrinol",
+      "key": "333_CR49",
+      "unstructured": "Gründker C, Schlotawa L, Viereck V, Eicke N, Horst A, Kairies B, Emons G. Antiproliferative effects of the GnRH antagonist cetrorelix and of GnRH-II on human endometrial and ovarian cancer cells are not mediated through the GnRH type I receptor. Eur J Endocrinol. 2004; 151(1):141–9. https://doi.org/10.1530/eje.0.1510141.",
+      "volume": "151",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/0753-3322(92)90004-Q",
+      "author": "A Schally",
+      "doi-asserted-by": "publisher",
+      "first-page": "465",
+      "issue": "10",
+      "journal-title": "Biomed Pharmacother",
+      "key": "333_CR50",
+      "unstructured": "Schally A, Comaru-Schally A, Gonzalez-Barcena D. Present status of agonistic and antagonistic analogs of LH-RH in the treatment of advanced prostate cancer. Biomed Pharmacother. 1992; 46(10):465–71. https://doi.org/10.1016/0753-3322(92)90004-Q.",
+      "volume": "46",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1016/S0959-8049(97)00072-5",
+      "author": "A Jungwirth",
+      "doi-asserted-by": "publisher",
+      "first-page": "1141",
+      "issue": "7",
+      "journal-title": "Eur J Cancer",
+      "key": "333_CR51",
+      "unstructured": "Jungwirth A, Pinski J, Galvan G, Halmos G, Szepeshazi K, Cai RZ, Groot K, Vadillo-Buenfil’ M, Schally’ AV. Inhibition of growth of androgen-independent DU-145 prostate cancer in vi’vo by luteinising hormone-releasing hormone antagonist cetrorelix and bombesin antagonists RC-3940-11 and RC-39509II*. Eur J Cancer. 1997; 33(7):1141–8.",
+      "volume": "33",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.2174/0929867023371210",
+      "author": "S Ahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "263",
+      "issue": "2",
+      "journal-title": "Curr Med Chem",
+      "key": "333_CR52",
+      "unstructured": "Ahmed S, Owen CP, James K, Sampson L, Patel CK. Review of estrone sulfatase and its inhibitors–an important new target against hormone dependent breast cancer. Curr Med Chem. 2002; 9(2):263–73. https://doi.org/10.2174/0929867023371210.",
+      "volume": "9",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/S0960-0760(03)00364-9",
+      "author": "J Geisler",
+      "doi-asserted-by": "publisher",
+      "first-page": "245",
+      "issue": "3-5",
+      "journal-title": "J Steroid Biochem Mol Biol",
+      "key": "333_CR53",
+      "unstructured": "Geisler J. Breast cancer tissue estrogens and their manipulation with aromatase inhibitors and inactivators. J Steroid Biochem Mol Biol. 2003; 86(3-5):245–53. https://doi.org/10.1016/S0960-0760(03)00364-9.",
+      "volume": "86",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.2174/187152009788679985",
+      "author": "K Aidoo-Gyamfi",
+      "doi-asserted-by": "publisher",
+      "first-page": "599",
+      "issue": "6",
+      "journal-title": "Anti Cancer Agents Med Chem",
+      "key": "333_CR54",
+      "unstructured": "Aidoo-Gyamfi K, Cartledge T, Shah K, Ahmed S. Estrone sulfatase and its inhibitors. Anti Cancer Agents Med Chem. 2009; 9(6):599–612. https://doi.org/10.2174/187152009788679985.",
+      "volume": "9",
+      "year": "2009"
+    }
+  ],
+  "reference-count": 54,
+  "references-count": 54,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00333-4"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Predicting anticancer hyperfoods with graph convolutional networks"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

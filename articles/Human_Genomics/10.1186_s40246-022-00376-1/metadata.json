@@ -1,0 +1,956 @@
+{
+  "DOI": "10.1186/s40246-022-00376-1",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00376-1",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIdentification of genomic signals as indicators for functional genomic elements is one of the areas that received early and widespread application of machine learning methods. With time, the methods applied grew in variety and generally exhibited a tendency to improve their ability to identify some major genomic and transcriptomics signals. The evolution of machine learning in genomics followed a similar path to applications of machine learning in other fields. These were impacted in a major way by three dominant developments, namely an enormous increase in availability and quality of data, a significant increase in computational power available to machine learning applications, and finally, new machine learning paradigms, of which deep learning is the most well-known example. It is not easy in general to distinguish factors leading to improvements in results of applications of machine learning. This is even more so in the field of genomics, where the advent of next-generation sequencing and the increased ability to perform functional analysis of raw data have had a major effect on the applicability of machine learning in OMICS fields. In this paper, we survey the results from a subset of published work in application of machine learning in the recognition of genomic signals and regions in human genome and summarize some lessons learnt from this endeavor. There is no doubt that a significant progress has been made both in terms of accuracy and reliability of models. Questions remain however whether the progress has been sufficient and what these developments bring to the field of genomics in general and human genomics in particular. Improving usability, interpretability and accuracy of models remains an important open challenge for current and future research in application of machine learning and more generally of artificial intelligence methods in genomics.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "376"
+  ],
+  "article-number": "7",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "26 September 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "2 January 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "18 February 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Jankovic",
+      "given": "Boris",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Gojobori",
+      "given": "Takashi",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        18
+      ]
+    ],
+    "date-time": "2022-02-18T05:02:46Z",
+    "timestamp": 1645160566000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        17
+      ]
+    ],
+    "date-time": "2023-11-17T18:12:35Z",
+    "timestamp": 1700244755000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100004052",
+      "award": [
+        "BAS/1/1059-01-01"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "King Abdullah University of Science and Technology"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        2
+      ]
+    ],
+    "date-time": "2024-03-02T11:40:40Z",
+    "timestamp": 1709379640888
+  },
+  "is-referenced-by-count": 3,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        18
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            18
+          ]
+        ],
+        "date-time": "2022-02-18T00:00:00Z",
+        "timestamp": 1645142400000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            18
+          ]
+        ],
+        "date-time": "2022-02-18T00:00:00Z",
+        "timestamp": 1645142400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00376-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00376-1/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00376-1.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        18
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        18
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1093/nar/15.20.8125",
+      "author": "M Kozak",
+      "doi-asserted-by": "publisher",
+      "first-page": "8125",
+      "issue": "20",
+      "journal-title": "Nucleic Acids Res",
+      "key": "376_CR1",
+      "unstructured": "Kozak M. An analysis of 5’-noncoding sequences from 699 vertebrate messenger RNAs. Nucleic Acids Res. 1987;15(20):8125–48. https://doi.org/10.1093/nar/15.20.8125.",
+      "volume": "15",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1093/bib/bbaa199",
+      "author": "M Kulmanov",
+      "doi-asserted-by": "publisher",
+      "first-page": "bbaa199",
+      "issue": "4",
+      "journal-title": "Brief Bioinform.",
+      "key": "376_CR2",
+      "unstructured": "Kulmanov M, Smaili FZ, Gao X, Hoehndorf R. Semantic similarity and machine learning with ontologies. Brief Bioinform. 2021;22(4):bbaa199. https://doi.org/10.1093/bib/bbaa199.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "author": "M Sugiyama",
+      "key": "376_CR3",
+      "unstructured": "Sugiyama M. Introduction to statistical machine learning. Burlington: Morgan Kaufmann Publishers; 2016.",
+      "volume-title": "Introduction to statistical machine learning",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1109/CVPR.2015.7298594",
+      "doi-asserted-by": "crossref",
+      "key": "376_CR4",
+      "unstructured": "Szegedy C, Liu W, Jia Y, Sermanet P, Reed S, Anguelov D, et al. Going deeper with convolutions. In: 2015 IEEE conference on computer vision and pattern recognition (CVPR). 2015. p. 1–9."
+    },
+    {
+      "DOI": "10.1145/3065386",
+      "author": "A Krizhevsky",
+      "doi-asserted-by": "publisher",
+      "first-page": "84",
+      "issue": "6",
+      "journal-title": "Commun ACM",
+      "key": "376_CR5",
+      "unstructured": "Krizhevsky A, Sutskever I, Hinton GE. ImageNet classification with deep convolutional neural networks. Commun ACM. 2017;60(6):84–90.",
+      "volume": "60",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1126/science.aar6404",
+      "author": "D Silver",
+      "doi-asserted-by": "publisher",
+      "first-page": "1140 LP",
+      "issue": "6419",
+      "journal-title": "Science (80-)",
+      "key": "376_CR6",
+      "unstructured": "Silver D, Hubert T, Schrittwieser J, Antonoglou I, Lai M, Guez A, et al. A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play. Science (80-). 2018;362(6419):1140 LP-1144 LP.",
+      "volume": "362",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/0375-9601(73)90506-9",
+      "author": "V Veljković",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "issue": "1",
+      "journal-title": "Phys Lett A",
+      "key": "376_CR7",
+      "unstructured": "Veljković V, Lalović DI. General model pseudopotential for positive ions. Phys Lett A. 1973;45(1):59–60.",
+      "volume": "45",
+      "year": "1973"
+    },
+    {
+      "author": "AS Nair",
+      "first-page": "197",
+      "issue": "6",
+      "journal-title": "Bioinformation",
+      "key": "376_CR8",
+      "unstructured": "Nair AS, Sreenadhan SP. A coding measure scheme employing electron-ion interaction pseudopotential (EIIP). Bioinformation. 2006;1(6):197–202.",
+      "volume": "1",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/nar/gkn597",
+      "author": "M Friedel",
+      "doi-asserted-by": "publisher",
+      "first-page": "37",
+      "issue": "suppl_1",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "376_CR9",
+      "unstructured": "Friedel M, Nikolajewa S, Sühnel J, Wilhelm T. DiProDB: a database for dinucleotide properties. Nucleic Acids Res. 2009;37(suppl_1):37–40. https://doi.org/10.1093/nar/gkn597.",
+      "volume": "37",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1103/PhysRevLett.29.105",
+      "author": "V Veljković",
+      "doi-asserted-by": "publisher",
+      "first-page": "105",
+      "issue": "2",
+      "journal-title": "Phys Rev Lett",
+      "key": "376_CR10",
+      "unstructured": "Veljković V, Slavić I. Simple general-model pseudopotential. Phys Rev Lett. 1972;29(2):105–7.",
+      "volume": "29",
+      "year": "1972"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn172",
+      "author": "T Abeel",
+      "doi-asserted-by": "publisher",
+      "first-page": "i24",
+      "issue": "13",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR11",
+      "unstructured": "Abeel T, Saeys Y, Rouzé P, Van de Peer Y. ProSOM: core promoter prediction based on unsupervised clustering of DNA physical profiles. Bioinformatics. 2008;24(13):i24-31. https://doi.org/10.1093/bioinformatics/btn172.",
+      "volume": "24",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr602",
+      "author": "M Kalkatawi",
+      "doi-asserted-by": "publisher",
+      "first-page": "127",
+      "issue": "1",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR12",
+      "unstructured": "Kalkatawi M, Rangkuti F, Schramm M, Jankovic BR, Kamau A, Chowdhary R, et al. Dragon PolyA Spotter: predictor of poly(A) motifs within human genomic DNA sequences. Bioinformatics. 2012;28(1):127–9.",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "author": "F Zeng",
+      "first-page": "192",
+      "journal-title": "Genome Inform",
+      "key": "376_CR13",
+      "unstructured": "Zeng F, Yap RHC, Wong L. Using feature generation and feature selection for accurate prediction of translation initiation sites. Genome Inform. 2002;13:192–200.",
+      "volume": "13",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/16.9.799",
+      "author": "A Zien",
+      "doi-asserted-by": "publisher",
+      "first-page": "799",
+      "issue": "9",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR14",
+      "unstructured": "Zien A, Rätsch G, Mika S, Schölkopf B, Lengauer T, Müller KR. Engineering support vector machine kernels that recognize translation initiation sites. Bioinformatics. 2000;16(9):799–807.",
+      "volume": "16",
+      "year": "2000"
+    },
+    {
+      "author": "AG Pedersen",
+      "first-page": "226",
+      "journal-title": "Proc Int Conf Intell Syst Mol Biol",
+      "key": "376_CR15",
+      "unstructured": "Pedersen AG, Nielsen H. Neural network prediction of translation initiation sites in eukaryotes: perspectives for EST and genome analysis. Proc Int Conf Intell Syst Mol Biol. 1997;5:226–33.",
+      "volume": "5",
+      "year": "1997"
+    },
+    {
+      "author": "SL Salzberg",
+      "first-page": "365",
+      "issue": "4",
+      "journal-title": "Comput Appl Biosci",
+      "key": "376_CR16",
+      "unstructured": "Salzberg SL. A method for identifying splice sites and translational start sites in eukaryotic mRNA. Comput Appl Biosci. 1997;13(4):365–76.",
+      "volume": "13",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1007/3-540-45784-4_16",
+      "author": "M Pertea",
+      "doi-asserted-by": "publisher",
+      "first-page": "210",
+      "key": "376_CR17",
+      "unstructured": "Pertea M, Salzberg SL. A method to improve the performance of translation start site detection and its application for gene finding. In: Guigó R, Gusfield D, editors. Algorithms in bioinformatics. Berlin: Springer; 2002. p. 210–9.",
+      "volume-title": "Algorithms in bioinformatics",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm177",
+      "author": "Y Saeys",
+      "doi-asserted-by": "publisher",
+      "first-page": "i418",
+      "issue": "13",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR18",
+      "unstructured": "Saeys Y, Abeel T, Degroeve S, Van de Peer Y. Translation initiation site prediction on a genomic scale: beauty in simplicity. Bioinformatics. 2007;23(13):i418–23. https://doi.org/10.1093/bioinformatics/btm177.",
+      "volume": "23",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1016/j.bbrc.2008.03.008",
+      "author": "S Tikole",
+      "doi-asserted-by": "publisher",
+      "first-page": "1166",
+      "issue": "4",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "376_CR19",
+      "unstructured": "Tikole S, Sankararamakrishnan R. Prediction of translation initiation sites in human mRNA sequences with AUG start codon in weak Kozak context: a neural network approach. Biochem Biophys Res Commun. 2008;369(4):1166–8.",
+      "volume": "369",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.ab.2014.06.022",
+      "author": "W Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "76",
+      "journal-title": "Anal Biochem",
+      "key": "376_CR20",
+      "unstructured": "Chen W, Feng P-M, Deng E-Z, Lin H, Chou K-C. iTIS-PseTNC: A sequence-based predictor for identifying translation initiation site in human genes using pseudo trinucleotide composition. Anal Biochem. 2014;462:76–83.",
+      "volume": "462",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx247",
+      "author": "S Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "i234",
+      "issue": "14",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR21",
+      "unstructured": "Zhang S, Hu H, Jiang T, Zhang L, Zeng J. TITER: predicting translation initiation sites by deep learning. Bioinformatics. 2017;33(14):i234–42.",
+      "volume": "33",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty752",
+      "author": "M Kalkatawi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1125",
+      "issue": "7",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR22",
+      "unstructured": "Kalkatawi M, Magana-Mora A, Jankovic B, Bajic VB. DeepGSR: an optimized deep-learning structure for the recognition of genomic signals and regions. Bioinformatics. 2019;35(7):1125–32. https://doi.org/10.1093/bioinformatics/bty752.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.heliyon.2020.e04825",
+      "author": "N Goel",
+      "doi-asserted-by": "publisher",
+      "first-page": "04825",
+      "issue": "9",
+      "journal-title": "Heliyon.",
+      "key": "376_CR23",
+      "unstructured": "Goel N, Singh S, Aseri TC. Global sequence features based translation initiation site prediction in human genomic sequences. Heliyon. 2020;6(9):04825.",
+      "volume": "6",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/29.5.1185",
+      "author": "M Pertea",
+      "doi-asserted-by": "publisher",
+      "first-page": "1185",
+      "issue": "5",
+      "journal-title": "Nucleic Acids Res",
+      "key": "376_CR24",
+      "unstructured": "Pertea M, Lin X, Salzberg SL. GeneSplicer: a new computational method for splice site prediction. Nucleic Acids Res. 2001;29(5):1185–90. https://doi.org/10.1093/nar/29.5.1185.",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bth058",
+      "author": "V Brendel",
+      "doi-asserted-by": "publisher",
+      "first-page": "1157",
+      "issue": "7",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR25",
+      "unstructured": "Brendel V, Xing L, Zhu W. Gene structure prediction from consensus spliced alignment of multiple ESTs matching the same genomic locus. Bioinformatics. 2004;20(7):1157–69.",
+      "volume": "20",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.eswa.2009.09.014",
+      "author": "Q Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2771",
+      "issue": "4",
+      "journal-title": "Expert Syst Appl",
+      "key": "376_CR26",
+      "unstructured": "Zhang Q, Peng Q, Zhang Q, Yan Y, Li K, Li J. Splice sites prediction of Human genome using length-variable Markov model and feature selection. Expert Syst Appl. 2010;37(4):2771–82.",
+      "volume": "37",
+      "year": "2010"
+    },
+    {
+      "author": "AT Bari",
+      "first-page": "1",
+      "issue": "4",
+      "journal-title": "MATCH Commun Math Comput Chem.",
+      "key": "376_CR27",
+      "unstructured": "Bari AT, Reaz MR, Jeong BS. Effective DNA encoding for splice site prediction using SVM. MATCH Commun Math Comput Chem. 2012;4(4):1–125.",
+      "volume": "4",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.procs.2015.07.350",
+      "author": "N Goel",
+      "doi-asserted-by": "publisher",
+      "first-page": "358",
+      "journal-title": "Procedia Comput Sci",
+      "key": "376_CR28",
+      "unstructured": "Goel N, Singh S, Aseri TC. An Improved method for splice site prediction in DNA Sequences using support vector machines. Procedia Comput Sci. 2015;57:358–67.",
+      "volume": "57",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1145/3135954.3135960",
+      "doi-asserted-by": "publisher",
+      "key": "376_CR29",
+      "unstructured": "Li W, Li J, Huo L, Li W, Du X. Prediction of splice site using support vector machine with feature selection. In: Proceedings of the international conference on bioinformatics and computational intelligence. New York: Association for Computing Machinery; 2017. p. 1–5 (ICBCI 2017). https://doi.org/10.1145/3135954.3135960."
+    },
+    {
+      "DOI": "10.1109/ACCESS.2018.2848847",
+      "author": "X Du",
+      "doi-asserted-by": "publisher",
+      "first-page": "32958",
+      "journal-title": "IEEE Access",
+      "key": "376_CR30",
+      "unstructured": "Du X, Yao Y, Diao Y, Zhu H, Zhang Y, Li S. DeepSS: exploring splice site motif through convolutional neural network directly from DNA sequence. IEEE Access. 2018;6:32958–78.",
+      "volume": "6",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty497",
+      "author": "J Zuallaert",
+      "doi-asserted-by": "publisher",
+      "first-page": "4180",
+      "issue": "24",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR31",
+      "unstructured": "Zuallaert J, Godin F, Kim M, Soete A, Saeys Y, De Neve W. SpliceRover: interpretable convolutional neural networks for improved splice site prediction. Bioinformatics. 2018;34(24):4180–8. https://doi.org/10.1093/bioinformatics/bty497.",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "author": "S Albaradei",
+      "first-page": "100035",
+      "journal-title": "Gene X.",
+      "key": "376_CR32",
+      "unstructured": "Albaradei S, Magana-Mora A, Thafar M, Uludag M, Bajic VB, Gojobori T, et al. Splice2Deep: an ensemble of deep convolutional neural networks for improved splice site prediction in genomic DNA. Gene X. 2020;5:100035.",
+      "volume": "5",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/0968-0004(89)90011-X",
+      "author": "P Bernstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "373",
+      "issue": "9",
+      "journal-title": "Trends Biochem Sci",
+      "key": "376_CR33",
+      "unstructured": "Bernstein P, Ross J. Poly(A), poly(A) binding protein and the regulation of mRNA stability. Trends Biochem Sci. 1989;14(9):373–7.",
+      "volume": "14",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1101/gr.10.7.1001",
+      "author": "E Beaudoing",
+      "doi-asserted-by": "publisher",
+      "first-page": "1001",
+      "issue": "7",
+      "journal-title": "Genome Res",
+      "key": "376_CR34",
+      "unstructured": "Beaudoing E, Freier S, Wyatt JR, Claverie JM, Gautheret D. Patterns of variant polyadenylation signal usage in human genes. Genome Res. 2000;10(7):1001–10.",
+      "volume": "10",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1186/s12864-017-4033-7",
+      "author": "A Magana-Mora",
+      "doi-asserted-by": "publisher",
+      "first-page": "620",
+      "issue": "1",
+      "journal-title": "BMC Genomics",
+      "key": "376_CR35",
+      "unstructured": "Magana-Mora A, Kalkatawi M, Bajic VB. Omni-PolyA: a method and tool for accurate recognition of Poly(A) signals in human genomic DNA. BMC Genomics. 2017;18(1):620. https://doi.org/10.1186/s12864-017-4033-7.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/S0378-1119(99)00104-3",
+      "author": "JE Tabaska",
+      "doi-asserted-by": "publisher",
+      "first-page": "77",
+      "issue": "1–2",
+      "journal-title": "Gene",
+      "key": "376_CR36",
+      "unstructured": "Tabaska JE, Zhang MQ. Detection of polyadenylation signals in human DNA sequences. Gene. 1999;231(1–2):77–86.",
+      "volume": "231",
+      "year": "1999"
+    },
+    {
+      "author": "H Liu",
+      "first-page": "84",
+      "journal-title": "Genome Inform",
+      "key": "376_CR37",
+      "unstructured": "Liu H, Han H, Li J, Wong L. An in-silico method for prediction of polyadenylation signals in human sequences. Genome Inform. 2003;14:84–93.",
+      "volume": "14",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1186/1471-2164-4-7",
+      "author": "M Legendre",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "issue": "1",
+      "journal-title": "BMC Genomics",
+      "key": "376_CR38",
+      "unstructured": "Legendre M, Gautheret D. Sequence determinants in human polyadenylation site selection. BMC Genomics. 2003;4(1):7.",
+      "volume": "4",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btl394",
+      "author": "Y Cheng",
+      "doi-asserted-by": "publisher",
+      "first-page": "2320",
+      "issue": "19",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR39",
+      "unstructured": "Cheng Y, Miura RM, Tian B. Prediction of mRNA polyadenylation sites by support vector machine. Bioinformatics. 2006;22(19):2320–5. https://doi.org/10.1093/bioinformatics/btl394.",
+      "volume": "22",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1016/j.jbiosc.2009.01.001",
+      "author": "M Kamasawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "569",
+      "issue": "5",
+      "journal-title": "J Biosci Bioeng",
+      "key": "376_CR40",
+      "unstructured": "Kamasawa M, Horiuchi J-I. Prediction of non-canonical polyadenylation signals in human genomic sequences based on a novel algorithm using a fuzzy membership function. J Biosci Bioeng. 2009;107(5):569–78.",
+      "volume": "107",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.3233/ISB-2009-0395",
+      "author": "F Ahmed",
+      "doi-asserted-by": "publisher",
+      "first-page": "135",
+      "issue": "3",
+      "journal-title": "In Silico Biol",
+      "key": "376_CR41",
+      "unstructured": "Ahmed F, Kumar M, Raghava GPS. Prediction of polyadenylation signals in human DNA sequences using nucleotide frequencies. In Silico Biol. 2009;9(3):135–48.",
+      "volume": "9",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/1471-2164-11-646",
+      "author": "MN Akhtar",
+      "doi-asserted-by": "publisher",
+      "first-page": "646",
+      "journal-title": "BMC Genomics",
+      "key": "376_CR42",
+      "unstructured": "Akhtar MN, Bukhari SA, Fazal Z, Qamar R, Shahmuradov IA. POLYAR, a new computer program for prediction of poly(A) sites in human sequences. BMC Genomics. 2010;11:646.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1007/s11517-011-0732-4",
+      "author": "T-H Chang",
+      "doi-asserted-by": "publisher",
+      "first-page": "463",
+      "issue": "4",
+      "journal-title": "Med Biol Eng Comput",
+      "key": "376_CR43",
+      "unstructured": "Chang T-H, Wu L-C, Chen Y-T, Huang H-D, Liu B-J, Cheng K-F, et al. Characterization and prediction of mRNA polyadenylation sites in human genes. Med Biol Eng Comput. 2011;49(4):463–72. https://doi.org/10.1007/s11517-011-0732-4.",
+      "volume": "49",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btt218",
+      "author": "B Xie",
+      "doi-asserted-by": "publisher",
+      "first-page": "i316",
+      "issue": "13",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR44",
+      "unstructured": "Xie B, Jankovic BR, Bajic VB, Song L, Gao X. Poly(A) motif prediction using spectral latent features from human DNA sequences. Bioinformatics. 2013;29(13):i316–25. https://doi.org/10.1093/bioinformatics/btt218.",
+      "volume": "29",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.compbiolchem.2014.12.001",
+      "author": "S Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "49",
+      "journal-title": "Comput Biol Chem",
+      "key": "376_CR45",
+      "unstructured": "Zhang S, Han J, Liu J, Zheng J, Liu R. An improved poly(A) motifs recognition method based on decision level fusion. Comput Biol Chem. 2015;54:49–56.",
+      "volume": "54",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty991",
+      "author": "Z Xia",
+      "doi-asserted-by": "publisher",
+      "first-page": "2371",
+      "issue": "14",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR46",
+      "unstructured": "Xia Z, Li Y, Zhang B, Li Z, Hu Y, Chen W, et al. DeeReCT-PolyA: a robust and generic deep learning method for PAS identification. Bioinformatics. 2019;35(14):2371–9. https://doi.org/10.1093/bioinformatics/bty991.",
+      "volume": "35",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.cell.2010.01.044",
+      "author": "T Ravasi",
+      "doi-asserted-by": "publisher",
+      "first-page": "744",
+      "issue": "5",
+      "journal-title": "Cell",
+      "key": "376_CR47",
+      "unstructured": "Ravasi T, Suzuki H, Cannistraci CV, Katayama S, Bajic VB, Tan K, et al. An atlas of combinatorial transcriptional regulation in mouse and man. Cell. 2010;140(5):744–52.",
+      "volume": "140",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btz694",
+      "author": "Z Hong",
+      "doi-asserted-by": "crossref",
+      "first-page": "1037",
+      "issue": "4",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR48",
+      "unstructured": "Hong Z, Zeng X, Wei L, Liu X. Identifying enhancer-promoter interactions with neural network based on pre-trained DNA vectors and attention mechanism. Bioinformatics. 2020;36(4):1037–43.",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bib/bbv101",
+      "author": "D Kleftogiannis",
+      "doi-asserted-by": "publisher",
+      "first-page": "967",
+      "issue": "6",
+      "journal-title": "Brief Bioinform",
+      "key": "376_CR49",
+      "unstructured": "Kleftogiannis D, Kalnis P, Bajic VB. Progress and challenges in bioinformatics approaches for enhancer identification. Brief Bioinform. 2016;17(6):967–79. https://doi.org/10.1093/bib/bbv101.",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-547",
+      "author": "K-J Won",
+      "doi-asserted-by": "publisher",
+      "first-page": "547",
+      "issue": "1",
+      "journal-title": "BMC Bioinform",
+      "key": "376_CR50",
+      "unstructured": "Won K-J, Chepelev I, Ren B, Wang W. Prediction of regulatory elements in mammalian genomes using chromatin signatures. BMC Bioinform. 2008;9(1):547.",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nmeth.1906",
+      "author": "J Ernst",
+      "doi-asserted-by": "publisher",
+      "first-page": "215",
+      "issue": "3",
+      "journal-title": "Nat Methods",
+      "key": "376_CR51",
+      "unstructured": "Ernst J, Kellis M. ChromHMM: automating chromatin-state discovery and characterization. Nat Methods. 2012;9(3):215–6.",
+      "volume": "9",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/nprot.2017.124",
+      "author": "J Ernst",
+      "doi-asserted-by": "publisher",
+      "first-page": "2478",
+      "issue": "12",
+      "journal-title": "Nat Protoc",
+      "key": "376_CR52",
+      "unstructured": "Ernst J, Kellis M. Chromatin-state discovery and genome annotation with ChromHMM. Nat Protoc. 2017;12(12):2478–92.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/nar/gkt143",
+      "author": "K-J Won",
+      "doi-asserted-by": "publisher",
+      "first-page": "4423",
+      "issue": "8",
+      "journal-title": "Nucleic Acids Res",
+      "key": "376_CR53",
+      "unstructured": "Won K-J, Zhang X, Wang T, Ding B, Raha D, Snyder M, et al. Comparative annotation of functional regions in the human genome using epigenomic data. Nucleic Acids Res. 2013;41(8):4423–32. https://doi.org/10.1093/nar/gkt143.",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/nar/gks149",
+      "author": "M Fernández",
+      "doi-asserted-by": "publisher",
+      "first-page": "e77",
+      "issue": "10",
+      "journal-title": "Nucleic Acids Res",
+      "key": "376_CR54",
+      "unstructured": "Fernández M, Miranda-Saavedra D. Genome-wide enhancer prediction from epigenetic signatures using genetic algorithm-optimized support vector machines. Nucleic Acids Res. 2012;40(10):e77–e77.",
+      "volume": "40",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/nar/gkt519",
+      "author": "C Fletez-Brant",
+      "doi-asserted-by": "publisher",
+      "first-page": "W544",
+      "issue": "W1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "376_CR55",
+      "unstructured": "Fletez-Brant C, Lee D, McCallion AS, Beer MA. kmer-SVM: a web server for identifying predictive regulatory sequence features in genomic data sets. Nucleic Acids Res. 2013;41(W1):W544–56.",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1003711",
+      "author": "M Ghandi",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1003711",
+      "issue": "7",
+      "journal-title": "PLoS Comput Biol.",
+      "key": "376_CR56",
+      "unstructured": "Ghandi M, Lee D, Mohammad-Noori M, Beer MA. Enhanced regulatory sequence prediction using gapped k-mer features. PLoS Comput Biol. 2014;10(7):e1003711.",
+      "volume": "10",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq248",
+      "author": "HA Firpi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1579",
+      "issue": "13",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR57",
+      "unstructured": "Firpi HA, Ucar D, Tan K. Discover regulatory DNA elements using chromatin signatures and artificial neural network. Bioinformatics. 2010;26(13):1579–86.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/nar/gku1058",
+      "author": "D Kleftogiannis",
+      "doi-asserted-by": "publisher",
+      "first-page": "e6",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "376_CR58",
+      "unstructured": "Kleftogiannis D, Kalnis P, Bajic VB. DEEP: a general computational framework for predicting enhancers. Nucleic Acids Res. 2015;43(1):e6–e6.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12859-017-1878-3",
+      "author": "X Min",
+      "doi-asserted-by": "publisher",
+      "first-page": "478",
+      "issue": "13",
+      "journal-title": "BMC Bioinform",
+      "key": "376_CR59",
+      "unstructured": "Min X, Zeng W, Chen S, Chen N, Chen T, Jiang R. Predicting enhancers with deep convolutional neural networks. BMC Bioinform. 2017;18(13):478. https://doi.org/10.1186/s12859-017-1878-3.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1006484",
+      "author": "L Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "10",
+      "journal-title": "PLOS Comput Biol",
+      "key": "376_CR60",
+      "unstructured": "Chen L, Fish AE, Capra JA. Prediction of gene regulatory enhancers across species reveals evolutionarily conserved sequence properties. PLOS Comput Biol. 2018;14(10):1–30. https://doi.org/10.1371/journal.pcbi.1006484.",
+      "volume": "14",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btab349",
+      "author": "J Hong",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Bioinformatics",
+      "key": "376_CR61",
+      "unstructured": "Hong J, Gao R, Yang Y. CrepHAN: cross-species prediction of enhancers by using hierarchical attention networks. Bioinformatics. 2021. https://doi.org/10.1093/bioinformatics/btab349.",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 61,
+  "references-count": 61,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00376-1"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "From shallow to deep: some lessons learned from application of machine learning for recognition of functional genomic elements in human genome"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

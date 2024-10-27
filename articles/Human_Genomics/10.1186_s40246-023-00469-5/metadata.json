@@ -1,0 +1,950 @@
+{
+  "DOI": "10.1186/s40246-023-00469-5",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00469-5",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eCuproptosis, as a copper-induced mitochondrial cell death, has attracted extensive attention recently, especially in cancer. Although some key regulatory genes have been identified in cuproptosis, the related lncRNAs have not been further studied. Exploring the prognostic and diagnostic value of cuproptosis-related lncRNAs (CRLs) in colon adenocarcinoma and providing guidance for individualized immunotherapy for patients are of great significance.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eA total of 2003 lncRNAs were correlated with cuproptosis genes and considered as CRLs. We screened 33 survival-associated CRLs and established a prognostic signature base on 7 CRLs in the training group. The patients in the low-risk group had better outcomes in both training group (\u003cjats:italic\u003eP\u003c/jats:italic\u003e \u0026lt; 0.001) and test group (\u003cjats:italic\u003eP\u003c/jats:italic\u003e = 0.016). More exciting, our model showed good prognosis prediction in both stage I–II (\u003cjats:italic\u003eP\u003c/jats:italic\u003e = 0.020) and stage III–IV (\u003cjats:italic\u003eP\u003c/jats:italic\u003e = 0.001). The nomogram model could further improve the accuracy of prognosis prediction. Interestingly, glucose-related metabolic pathways, which were closely related to cuproptosis, were enriched in the low-risk group. Meanwhile, the immune infiltration scores were lower in the high-risk group. The high-risk group was more sensitive to OSI.906 and ABT.888, while low-risk group was more sensitive to Sorafenib. Three lncRNAs, FALEC, AC083967.1 and AC010997.4, were highly expressed in serum of COAD patients, and the AUC was 0.772, 0.726 and 0.714, respectively, indicating their valuable diagnostic value.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur research constructed a prognostic signature based on 7 CRLs and found three promising diagnostic markers for COAD patients. Our results provided a reference to the personalized immunotherapy strategies.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "469"
+  ],
+  "article-number": "22",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "12 August 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "4 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "13 March 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by the Ethics Committee of Qilu Hospital of Shandong University, and written informed consent was obtained from each subject (Approval Number: KYLL-2021(KS)-114). Written informed consent was obtained from every participant for the use of venous blood sample. All research methods were implemented following relevant guidelines and regulations."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable for that section."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Shichao",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhang",
+      "given": "Shoucai",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Yingjie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "XiaoRong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zheng",
+      "given": "Guixi",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        26
+      ]
+    ],
+    "date-time": "2023-03-26T20:28:34Z",
+    "timestamp": 1679862514000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        26
+      ]
+    ],
+    "date-time": "2023-03-26T20:33:06Z",
+    "timestamp": 1679862786000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "82172347"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/501100018532",
+      "award": [
+        "2021CXGC010603"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Major Scientific and Technological Innovation Project of Shandong Province"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        17
+      ]
+    ],
+    "date-time": "2023-10-17T16:28:04Z",
+    "timestamp": 1697560084886
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        13
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            13
+          ]
+        ],
+        "date-time": "2023-03-13T00:00:00Z",
+        "timestamp": 1678665600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            13
+          ]
+        ],
+        "date-time": "2023-03-13T00:00:00Z",
+        "timestamp": 1678665600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00469-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00469-5/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00469-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        13
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        13
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3322/caac.21601",
+      "author": "RL Siegel",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "issue": "3",
+      "journal-title": "CA Cancer J Clin",
+      "key": "469_CR1",
+      "unstructured": "Siegel RL, Miller KD, Goding Sauer A, et al. Colorectal cancer statistics, 2020. CA Cancer J Clin. 2020;70(3):145–64.",
+      "volume": "70",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3322/caac.21660",
+      "author": "H Sung",
+      "doi-asserted-by": "publisher",
+      "first-page": "209",
+      "issue": "3",
+      "journal-title": "CA Cancer J Clin",
+      "key": "469_CR2",
+      "unstructured": "Sung H, Ferlay J, Siegel RL, et al. Global cancer statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. CA Cancer J Clin. 2021;71(3):209–49.",
+      "volume": "71",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3322/caac.21565",
+      "author": "KD Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "363",
+      "issue": "5",
+      "journal-title": "CA Cancer J Clin",
+      "key": "469_CR3",
+      "unstructured": "Miller KD, Nogueira L, Mariotto AB, et al. Cancer treatment and survivorship statistics, 2019. CA Cancer J Clin. 2019;69(5):363–85.",
+      "volume": "69",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.soc.2021.11.006",
+      "author": "S Sakata",
+      "doi-asserted-by": "publisher",
+      "first-page": "255",
+      "issue": "2",
+      "journal-title": "Surg Oncol Clin N Am",
+      "key": "469_CR4",
+      "unstructured": "Sakata S, Larson DW. Targeted therapy for colorectal cancer. Surg Oncol Clin N Am. 2022;31(2):255–64.",
+      "volume": "31",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.critrevonc.2022.103663",
+      "author": "AE Boukouris",
+      "doi-asserted-by": "publisher",
+      "first-page": "103663",
+      "journal-title": "Crit Rev Oncol Hematol",
+      "key": "469_CR5",
+      "unstructured": "Boukouris AE, Theochari M, Stefanou D, et al. Latest evidence on immune checkpoint inhibitors in metastatic colorectal cancer: a 2022 update. Crit Rev Oncol Hematol. 2022;173:103663.",
+      "volume": "173",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s12957-022-02549-7",
+      "author": "X Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "93",
+      "issue": "1",
+      "journal-title": "World J Surg Oncol",
+      "key": "469_CR6",
+      "unstructured": "Zhang X, Yang Z, An Y, et al. Clinical benefits of PD-1/PD-L1 inhibitors in patients with metastatic colorectal cancer: a systematic review and meta-analysis. World J Surg Oncol. 2022;20(1):93.",
+      "volume": "20",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1080/10717544.2022.2027573",
+      "author": "Y Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "342",
+      "issue": "1",
+      "journal-title": "Drug Deliv",
+      "key": "469_CR7",
+      "unstructured": "Liu Y, Zhang H, Cui H, et al. Combined and targeted drugs delivery system for colorectal cancer treatment: conatumumab decorated, reactive oxygen species sensitive irinotecan prodrug and quercetin co-loaded nanostructured lipid carriers. Drug Deliv. 2022;29(1):342–50.",
+      "volume": "29",
+      "year": "2022"
+    },
+    {
+      "author": "XZ Liu",
+      "first-page": "219",
+      "issue": "3",
+      "journal-title": "Zhonghua wei chang wai ke za zhi = Chin J Gastrointest Surg",
+      "key": "469_CR8",
+      "unstructured": "Liu XZ, Xiong Z, Xiao BY, et al. Multicenter real-world study on safety and efficacy of neoadjuvant therapy in combination with immunotherapy for colorectal cancer. Zhonghua wei chang wai ke za zhi = Chin J Gastrointest Surg. 2022;25(3):219–27.",
+      "volume": "25",
+      "year": "2022"
+    },
+    {
+      "author": "PR Ding",
+      "first-page": "199",
+      "issue": "3",
+      "journal-title": "Zhonghua wei chang wai ke za zhi = Chin J Gastrointest Surg",
+      "key": "469_CR9",
+      "unstructured": "Ding PR. Immunotherapy for microsatellite-instability-high advanced colorectal cancer. Zhonghua wei chang wai ke za zhi = Chin J Gastrointest Surg. 2022;25(3):199–204.",
+      "volume": "25",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41422-022-00653-7",
+      "author": "D Tang",
+      "doi-asserted-by": "publisher",
+      "first-page": "417",
+      "journal-title": "Cell Res",
+      "key": "469_CR10",
+      "unstructured": "Tang D, Chen X, Kroemer G. Cuproptosis: a copper-triggered modality of mitochondrial cell death. Cell Res. 2022;32:417–8.",
+      "volume": "32",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41568-021-00417-2",
+      "author": "EJ Ge",
+      "doi-asserted-by": "publisher",
+      "first-page": "102",
+      "issue": "2",
+      "journal-title": "Nat Rev Cancer",
+      "key": "469_CR11",
+      "unstructured": "Ge EJ, Bush AI, Casini A, et al. Connecting copper and cancer: from transition metal signalling to metalloplasia. Nat Rev Cancer. 2022;22(2):102–13.",
+      "volume": "22",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.jinorgbio.2021.111634",
+      "author": "DA da Silva",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Inorg Biochem",
+      "key": "469_CR12",
+      "unstructured": "da Silva DA, De Luca A, Squitti R, et al. Copper in tumors and the use of copper-based compounds in cancer treatment. J Inorg Biochem. 2022;226: 111634.",
+      "volume": "226",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1039/D1RA08788F",
+      "author": "G Passeri",
+      "doi-asserted-by": "publisher",
+      "first-page": "5290",
+      "issue": "9",
+      "journal-title": "RSC Adv",
+      "key": "469_CR13",
+      "unstructured": "Passeri G, Northcote-Smith J, Suntharalingam K. Delivery of an immunogenic cell death-inducing copper complex to cancer stem cells using polymeric nanoparticles. RSC Adv. 2022;12(9):5290–9.",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.2217/nnm-2021-0374",
+      "author": "Y Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "303",
+      "issue": "5",
+      "journal-title": "Nanomedicine",
+      "key": "469_CR14",
+      "unstructured": "Jiang Y, Huo Z, Qi X, Zuo T, Wu Z. Copper-induced tumor cell death mechanisms and antitumor theragnostic applications of copper complexes. Nanomedicine. 2022;17(5):303–24.",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fphar.2021.752825",
+      "author": "Y Hu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Pharmacol",
+      "key": "469_CR15",
+      "unstructured": "Hu Y, Qian Y, Wei J, et al. The disulfiram/copper complex induces autophagic cell death in colorectal cancer by targeting ULK1. Front Pharmacol. 2021;12: 752825.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cbic.202000553",
+      "author": "P Kaur",
+      "doi-asserted-by": "publisher",
+      "first-page": "3618",
+      "issue": "24",
+      "journal-title": "ChemBioChem",
+      "key": "469_CR16",
+      "unstructured": "Kaur P, Johnson A, Northcote-Smith J, Lu C, Suntharalingam K. Immunogenic cell death of breast cancer stem cells induced by an endoplasmic reticulum-targeting copper(ii) complex. ChemBioChem. 2020;21(24):3618–24.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3892/ijo.2014.2396",
+      "author": "K Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "439",
+      "issue": "1",
+      "journal-title": "Int J Oncol",
+      "key": "469_CR17",
+      "unstructured": "Lee K, Hart MR, Briehl MM, Mazar AP, Tome ME. The copper chelator ATN-224 induces caspase-independent cell death in diffuse large B cell lymphoma. Int J Oncol. 2014;45(1):439–47.",
+      "volume": "45",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.omtn.2017.12.011",
+      "author": "DQ Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "269",
+      "journal-title": "Mol Ther Nucleic Acids",
+      "key": "469_CR18",
+      "unstructured": "Wang DQ, Fu P, Yao C, et al. Long non-coding RNAs, novel culprits, or bodyguards in neurodegenerative diseases. Mol Ther Nucleic Acids. 2018;10:269–76.",
+      "volume": "10",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41568-021-00353-1",
+      "author": "SJ Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "446",
+      "issue": "7",
+      "journal-title": "Nat Rev Cancer",
+      "key": "469_CR19",
+      "unstructured": "Liu SJ, Dang HX, Lim DA, Feng FY, Maher CA. Long noncoding RNAs in cancer metastasis. Nat Rev Cancer. 2021;21(7):446–60.",
+      "volume": "21",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.7150/jca.42093",
+      "author": "J Gao",
+      "doi-asserted-by": "publisher",
+      "first-page": "4284",
+      "issue": "14",
+      "journal-title": "J Cancer",
+      "key": "469_CR20",
+      "unstructured": "Gao J, Wang F, Wu P, Chen Y, Jia Y. Aberrant LncRNA expression in leukemia. J Cancer. 2020;11(14):4284–96.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.prp.2020.152983",
+      "author": "XH Du",
+      "doi-asserted-by": "publisher",
+      "issue": "6",
+      "journal-title": "Pathol Res Pract",
+      "key": "469_CR21",
+      "unstructured": "Du XH, Wei H, Qu GX, Tian ZC, Yao WT, Cai QQ. Gene expression regulations by long noncoding RNAs and their roles in cancer. Pathol Res Pract. 2020;216(6): 152983.",
+      "volume": "216",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ncrna.2022.02.004",
+      "author": "O Beylerli",
+      "doi-asserted-by": "publisher",
+      "first-page": "66",
+      "issue": "2",
+      "journal-title": "Noncoding RNA Res",
+      "key": "469_CR22",
+      "unstructured": "Beylerli O, Gareev I, Sufianov A, Ilyasova T, Guang Y. Long noncoding RNAs as promising biomarkers in cancer. Noncoding RNA Res. 2022;7(2):66–70.",
+      "volume": "7",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-16-2634",
+      "author": "A Bhan",
+      "doi-asserted-by": "publisher",
+      "first-page": "3965",
+      "issue": "15",
+      "journal-title": "Cancer Res",
+      "key": "469_CR23",
+      "unstructured": "Bhan A, Soleimani M, Mandal SS. Long noncoding RNA and cancer: a new paradigm. Cancer Res. 2017;77(15):3965–81.",
+      "volume": "77",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.18632/aging.103496",
+      "author": "T Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "14506",
+      "issue": "14",
+      "journal-title": "Aging",
+      "key": "469_CR24",
+      "unstructured": "Zhao T, Khadka VS, Deng Y. Identification of lncRNA biomarkers for lung cancer through integrative cross-platform data analyses. Aging. 2020;12(14):14506–27.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12885-021-09062-2",
+      "author": "L Lei",
+      "doi-asserted-by": "publisher",
+      "first-page": "365",
+      "issue": "1",
+      "journal-title": "BMC Cancer",
+      "key": "469_CR25",
+      "unstructured": "Lei L, Li N, Yuan P, Liu D. A new risk model based on a 11-m(6)A-related lncRNA signature for predicting prognosis and monitoring immunotherapy for gastric cancer. BMC Cancer. 2022;22(1):365.",
+      "volume": "22",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/jcla.24244",
+      "author": "Y Chen",
+      "doi-asserted-by": "publisher",
+      "issue": "3",
+      "journal-title": "J Clin Lab Anal",
+      "key": "469_CR26",
+      "unstructured": "Chen Y, Xi L, Wei L, Sun D, Zeng T. Immune-related lncRNA signature delineates an immune-excluded subtype of liver cancer with unfavorable clinical outcomes. J Clin Lab Anal. 2022;36(3): e24244.",
+      "volume": "36",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1002/jcla.24302",
+      "author": "F Chen",
+      "doi-asserted-by": "publisher",
+      "issue": "4",
+      "journal-title": "J Clin Lab Anal",
+      "key": "469_CR27",
+      "unstructured": "Chen F, Yang J, Fang M, Wu Y, Su D, Sheng Y. Necroptosis-related lncRNA to establish novel prognostic signature and predict the immunotherapy response in breast cancer. J Clin Lab Anal. 2022;36(4): e24302.",
+      "volume": "36",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.bulcan.2021.10.005",
+      "author": "Z Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "258",
+      "issue": "3",
+      "journal-title": "Bull Cancer",
+      "key": "469_CR28",
+      "unstructured": "Zhou Z, Wang W, Deng J, et al. A long noncoding RNA, LncRNA-LOC100127888, is associated with poor prognosis in colorectal cancer patients. Bull Cancer. 2022;109(3):258–67.",
+      "volume": "109",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/cancers13050977",
+      "author": "A Balihodzic",
+      "doi-asserted-by": "publisher",
+      "first-page": "977",
+      "issue": "5",
+      "journal-title": "Cancers",
+      "key": "469_CR29",
+      "unstructured": "Balihodzic A, Barth DA, Prinz F, Pichler M. Involvement of long non-coding RNAs in glucose metabolism in cancer. Cancers. 2021;13(5):977.",
+      "volume": "13",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ng.2764",
+      "author": "JN Weinstein",
+      "doi-asserted-by": "publisher",
+      "first-page": "1113",
+      "issue": "10",
+      "journal-title": "Nat Genet",
+      "key": "469_CR30",
+      "unstructured": "Weinstein JN, Collisson EA, Mills GB, et al. The Cancer Genome Atlas pan-cancer analysis project. Nat Genet. 2013;45(10):1113–20.",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1126/science.abf0529",
+      "author": "P Tsvetkov",
+      "doi-asserted-by": "publisher",
+      "first-page": "1254",
+      "issue": "6586",
+      "journal-title": "Science",
+      "key": "469_CR31",
+      "unstructured": "Tsvetkov P, Coy S, Petrova B, et al. Copper induces cell death by targeting lipoylated TCA cycle proteins. Science. 2022;375(6586):1254–61.",
+      "volume": "375",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fgene.2020.00510",
+      "author": "JE Cronan",
+      "doi-asserted-by": "publisher",
+      "first-page": "510",
+      "journal-title": "Front Genet",
+      "key": "469_CR32",
+      "unstructured": "Cronan JE. Progress in the enzymology of the mitochondrial diseases of lipoic acid requiring enzymes. Front Genet. 2020;11:510.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1242/jcs.240523",
+      "author": "S Lutsenko",
+      "doi-asserted-by": "publisher",
+      "first-page": "jcs240523",
+      "issue": "21",
+      "journal-title": "J Cell Sci",
+      "key": "469_CR33",
+      "unstructured": "Lutsenko S. Dynamic and cell-specific transport networks for intracellular copper ions. J Cell Sci. 2021;134(21):jcs240523.",
+      "volume": "134",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s42003-021-02805-8",
+      "author": "N Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1289",
+      "issue": "1",
+      "journal-title": "Commun Biol",
+      "key": "469_CR34",
+      "unstructured": "Shen N, Korm S, Karantanos T, et al. DLST-dependence dictates metabolic heterogeneity in TCA-cycle usage among triple-negative breast cancer. Commun Biol. 2021;4(1):1289.",
+      "volume": "4",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.jinorgbio.2022.111750",
+      "author": "Q Li",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Inorg Biochem",
+      "key": "469_CR35",
+      "unstructured": "Li Q, Liao J, Zhang K, et al. Toxicological mechanism of large amount of copper supplementation: Effects on endoplasmic reticulum stress and mitochondria-mediated apoptosis by Nrf2/HO-1 pathway-induced oxidative stress in the porcine myocardium. J Inorg Biochem. 2022;230: 111750.",
+      "volume": "230",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.4049/jimmunol.1700712",
+      "author": "N Deigendesch",
+      "doi-asserted-by": "publisher",
+      "first-page": "1607",
+      "issue": "5",
+      "journal-title": "J Immunol",
+      "key": "469_CR36",
+      "unstructured": "Deigendesch N, Zychlinsky A, Meissner F. Copper regulates the canonical NLRP3 inflammasome. J Immunol. 2018;200(5):1607–17.",
+      "volume": "200",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkv007",
+      "author": "ME Ritchie",
+      "doi-asserted-by": "publisher",
+      "first-page": "e47",
+      "issue": "7",
+      "journal-title": "Nucleic Acids Res",
+      "key": "469_CR37",
+      "unstructured": "Ritchie ME, Phipson B, Wu D, et al. limma powers differential expression analyses for RNA-sequencing and microarray studies. Nucleic Acids Res. 2015;43(7):e47.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/sim.5958",
+      "author": "P Blanche",
+      "doi-asserted-by": "publisher",
+      "first-page": "5381",
+      "issue": "30",
+      "journal-title": "Stat Med",
+      "key": "469_CR38",
+      "unstructured": "Blanche P, Dartigues JF, Jacqmin-Gadda H. Estimating and comparing time-dependent areas under receiver operating characteristic curves for censored event times with competing risks. Stat Med. 2013;32(30):5381–97.",
+      "volume": "32",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1073/pnas.0506580102",
+      "author": "A Subramanian",
+      "doi-asserted-by": "publisher",
+      "first-page": "15545",
+      "issue": "43",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "469_CR39",
+      "unstructured": "Subramanian A, Tamayo P, Mootha VK, et al. Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci U S A. 2005;102(43):15545–50.",
+      "volume": "102",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/nature08460",
+      "author": "DA Barbie",
+      "doi-asserted-by": "publisher",
+      "first-page": "108",
+      "issue": "7269",
+      "journal-title": "Nature",
+      "key": "469_CR40",
+      "unstructured": "Barbie DA, Tamayo P, Boehm JS, et al. Systematic RNA interference reveals that oncogenic KRAS-driven cancers require TBK1. Nature. 2009;462(7269):108–12.",
+      "volume": "462",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1126/science.abo3959",
+      "author": "MA Kahlson",
+      "doi-asserted-by": "publisher",
+      "first-page": "1231",
+      "issue": "6586",
+      "journal-title": "Science",
+      "key": "469_CR41",
+      "unstructured": "Kahlson MA, Dixon SJ. Copper-induced cell death. Science. 2022;375(6586):1231–2.",
+      "volume": "375",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41423-022-00866-1",
+      "doi-asserted-by": "crossref",
+      "key": "469_CR42",
+      "unstructured": "Wang Y, Zhang L, Zhou F. Cuproptosis: a new form of programmed cell death. Cell Mol Immunol. 2022;4."
+    },
+    {
+      "DOI": "10.1007/s40572-016-0092-1",
+      "author": "O Karlsson",
+      "doi-asserted-by": "publisher",
+      "first-page": "178",
+      "issue": "3",
+      "journal-title": "Curr Environ Health Rep",
+      "key": "469_CR43",
+      "unstructured": "Karlsson O, Baccarelli AA. Environmental health and long non-coding RNAs. Curr Environ Health Rep. 2016;3(3):178–87.",
+      "volume": "3",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.prp.2021.153432",
+      "author": "S Ghafouri-Fard",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Pathol Res Pract",
+      "key": "469_CR44",
+      "unstructured": "Ghafouri-Fard S, Hussen BM, Gharebaghi A, Eghtedarian R, Taheri M. LncRNA signature in colorectal cancer. Pathol Res Pract. 2021;222: 153432.",
+      "volume": "222",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/jcp.29451",
+      "author": "A Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "7970",
+      "issue": "11",
+      "journal-title": "J Cell Physiol",
+      "key": "469_CR45",
+      "unstructured": "Chen A, Jiang P, Zeb F, et al. EGCG regulates CTR1 expression through its pro-oxidative property in non-small-cell lung cancer cells. J Cell Physiol. 2020;235(11):7970–81.",
+      "volume": "235",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/15384047.2020.1824514",
+      "author": "H Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1025",
+      "issue": "11",
+      "journal-title": "Cancer Biol Ther",
+      "key": "469_CR46",
+      "unstructured": "Jiang H, Liu H, Jiang B. Long non-coding RNA FALEC promotes colorectal cancer progression via regulating miR-2116-3p-targeted PIWIL1. Cancer Biol Ther. 2020;21(11):1025–32.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/genes13061094",
+      "author": "S Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1094",
+      "issue": "6",
+      "journal-title": "Genes",
+      "key": "469_CR47",
+      "unstructured": "Xu S, Zhou Y, Luo J, et al. Integrated analysis of a ferroptosis-related LncRNA signature for evaluating the prognosis of patients with colorectal cancer. Genes. 2022;13(6):1094.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "author": "Y Liang",
+      "first-page": "4556585",
+      "journal-title": "Dis Mark",
+      "key": "469_CR48",
+      "unstructured": "Liang Y, Sun HX, Ma B, Meng QK. Identification of a genomic instability-related long noncoding RNA prognostic model in colorectal cancer based on bioinformatic analysis. Dis Mark. 2022;2022:4556585.",
+      "volume": "2022",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3389/fonc.2019.00712",
+      "author": "QR Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "712",
+      "journal-title": "Front Oncol",
+      "key": "469_CR49",
+      "unstructured": "Huang QR, Pan XB. Prognostic lncRNAs, miRNAs, and mRNAs form a competing endogenous RNA network in colon cancer. Front Oncol. 2019;9:712.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.21037/jgo-22-384",
+      "author": "R Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1178",
+      "issue": "3",
+      "journal-title": "J Gastrointest Oncol",
+      "key": "469_CR50",
+      "unstructured": "Li R, Gao X, Sun H, Sun L, Hu X. Expression characteristics of long non-coding RNA in colon adenocarcinoma and its potential value for judging the survival and prognosis of patients: bioinformatics analysis based on The Cancer Genome Atlas database. J Gastrointest Oncol. 2022;13(3):1178–87.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s12943-020-01170-0",
+      "author": "B Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "53",
+      "issue": "1",
+      "journal-title": "Mol Cancer",
+      "key": "469_CR51",
+      "unstructured": "Zhang B, Wu Q, Li B, Wang D, Wang L, Zhou YL. m(6)A regulator-mediated methylation modification patterns and tumor microenvironment infiltration characterization in gastric cancer. Mol Cancer. 2020;19(1):53.",
+      "volume": "19",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/annonc/mdw217",
+      "author": "JM Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "1492",
+      "issue": "8",
+      "journal-title": "Ann Oncol",
+      "key": "469_CR52",
+      "unstructured": "Kim JM, Chen DS. Immune escape to PD-L1/PD-1 blockade: seven steps to success (or failure). Ann Oncol. 2016;27(8):1492–504.",
+      "volume": "27",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1053/j.seminoncol.2015.05.011",
+      "author": "TF Gajewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "663",
+      "issue": "4",
+      "journal-title": "Semin Oncol",
+      "key": "469_CR53",
+      "unstructured": "Gajewski TF. The next hurdle in cancer immunotherapy: overcoming the non-T-cell-inflamed tumor microenvironment. Semin Oncol. 2015;42(4):663–71.",
+      "volume": "42",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1126/science.aaa6204",
+      "author": "JA Joyce",
+      "doi-asserted-by": "publisher",
+      "first-page": "74",
+      "issue": "6230",
+      "journal-title": "Science",
+      "key": "469_CR54",
+      "unstructured": "Joyce JA, Fearon DT. T cell exclusion, immune privilege and the tumor microenvironment. Science. 2015;348(6230):74–80.",
+      "volume": "348",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1172/JCI45817",
+      "author": "H Salmon",
+      "doi-asserted-by": "publisher",
+      "first-page": "899",
+      "issue": "3",
+      "journal-title": "J Clin Invest",
+      "key": "469_CR55",
+      "unstructured": "Salmon H, Franciszkiewicz K, Damotte D, et al. Matrix architecture defines the preferential localization and migration of T cells into the stroma of human lung tumors. J Clin Invest. 2012;122(3):899–910.",
+      "volume": "122",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1200690",
+      "author": "SL Topalian",
+      "doi-asserted-by": "publisher",
+      "first-page": "2443",
+      "issue": "26",
+      "journal-title": "N Engl J Med",
+      "key": "469_CR56",
+      "unstructured": "Topalian SL, Hodi FS, Brahmer JR, et al. Safety, activity, and immune correlates of anti-PD-1 antibody in cancer. N Engl J Med. 2012;366(26):2443–54.",
+      "volume": "366",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.prp.2019.152495",
+      "author": "G Naizhaer",
+      "doi-asserted-by": "publisher",
+      "first-page": "152495",
+      "issue": "8",
+      "journal-title": "Pathol Res Pract",
+      "key": "469_CR57",
+      "unstructured": "Naizhaer G, Kuerban A, Kuerban R, Zhou P. Up-regulation of lncRNA FALEC indicates prognosis and diagnosis values in cervical cancer. Pathol Res Pract. 2019;215(8):152495.",
+      "volume": "215",
+      "year": "2019"
+    }
+  ],
+  "reference-count": 57,
+  "references-count": 57,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00469-5"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Comprehensive analysis of cuproptosis-related long noncoding RNA for predicting prognostic and diagnostic value and immune landscape in colorectal adenocarcinoma"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

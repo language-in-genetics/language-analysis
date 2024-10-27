@@ -1,0 +1,790 @@
+{
+  "DOI": "10.1186/s40246-021-00316-5",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00316-5",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn the novel coronavirus pandemic, the high infection rate and high mortality have seriously affected people’s health and social order. To better explore the infection mechanism and treatment, the three-dimensional structure of human bronchus has been employed in a better in-depth study on severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe downloaded a separate microarray from the Integrated Gene Expression System (GEO) on a human bronchial organoids sample to identify differentially expressed genes (DEGS) and analyzed it with R software. After processing with R software, Gene Ontology (GO) and Kyoto PBMCs of Genes and Genomes (KEGG) were analyzed, while a protein–protein interaction (PPI) network was constructed to show the interactions and influence relationships between these differential genes. Finally, the selected highly connected genes, which are called hub genes, were verified in CytoHubba plug-in.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn this study, a total of 966 differentially expressed genes, including 490 upregulated genes and 476 downregulated genes were used. Analysis of GO and KEGG revealed that these differentially expressed genes were significantly enriched in pathways related to immune response and cytokines. We construct protein-protein interaction network and identify 10 hub genes, including IL6, MMP9, IL1B, CXCL8, ICAM1, FGF2, EGF, CXCL10, CCL2, CCL5, CXCL1, and FN1. Finally, with the help of GSE150728, we verified that CXCl1, CXCL8, CXCL10, CCL5, EGF differently expressed before and after SARS-CoV-2 infection in clinical patients.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn this study, we used mRNA expression data from GSE150819 to preliminarily confirm the feasibility of hBO as an in vitro model to further study the pathogenesis and potential treatment of COVID-19. Moreover, based on the mRNA differentiated expression of this model, we found that CXCL8, CXCL10, and EGF are hub genes in the process of SARS-COV-2 infection, and we emphasized their key roles in SARS-CoV-2 infection. And we also suggested that further study of these hub genes may be beneficial to treatment, prognostic prediction of COVID-19.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "316"
+  ],
+  "article-number": "18",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "27 October 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "4 March 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "16 March 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "All of the authors have read and approved the content, and agree to submit the whole article in your journal."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "All the authors declare that there are no competing interests associated with the manuscript."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Fang",
+      "given": "Ke-Ying",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Cao",
+      "given": "Wen-Chao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xie",
+      "given": "Tian-Ao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lv",
+      "given": "Jie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Jia-Xin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cao",
+      "given": "Xun-Jie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Zhong-Wei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Deng",
+      "given": "Shu-Ting",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-1302-5234",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Guo",
+      "given": "Xu-Guang",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        16
+      ]
+    ],
+    "date-time": "2021-03-16T14:03:27Z",
+    "timestamp": 1615903407000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        16
+      ]
+    ],
+    "date-time": "2021-03-16T14:10:41Z",
+    "timestamp": 1615903841000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        29
+      ]
+    ],
+    "date-time": "2024-02-29T12:09:13Z",
+    "timestamp": 1709208553188
+  },
+  "is-referenced-by-count": 16,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        16
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            16
+          ]
+        ],
+        "date-time": "2021-03-16T00:00:00Z",
+        "timestamp": 1615852800000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            3,
+            16
+          ]
+        ],
+        "date-time": "2021-03-16T00:00:00Z",
+        "timestamp": 1615852800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-021-00316-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-021-00316-5/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-021-00316-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        3,
+        16
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/s41591-020-0912-6",
+      "author": "J Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1077",
+      "issue": "7",
+      "journal-title": "Nat Med",
+      "key": "316_CR1",
+      "unstructured": "Zhou J, Li C, Liu X, Chiu MC, Zhao X, Wang D, Wei Y, Lee A, Zhang AJ, Chu H, Cai JP, Yip CCY, Chan IHY, Wong KKY, Tsang OTY, Chan KH, Chan JFW, To KKW, Chen H, Yuen KY. Infection of bat and human intestinal organoids by SARS-CoV-2. Nat Med. 2020;26(7):1077–83. https://doi.org/10.1038/s41591-020-0912-6.",
+      "volume": "26",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00259-020-04735-9",
+      "author": "X Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1275",
+      "issue": "5",
+      "journal-title": "Eur J Nucl Med Mol Imaging",
+      "key": "316_CR2",
+      "unstructured": "Xu X, Yu C, Qu J, Zhang L, Jiang S, Huang D, Chen B, Zhang Z, Guan W, Ling Z, Jiang R, Hu T, Ding Y, Lin L, Gan Q, Luo L, Tang X, Liu J. Imaging and clinical features of patients with 2019 novel coronavirus SARS-CoV-2. Eur J Nucl Med Mol Imaging. 2020;47(5):1275–80. https://doi.org/10.1007/s00259-020-04735-9.",
+      "volume": "47",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(20)30211-7",
+      "author": "N Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "507",
+      "issue": "10223",
+      "journal-title": "The Lancet",
+      "key": "316_CR3",
+      "unstructured": "Chen N, Zhou M, Dong X, Qu J, Gong F, Han Y, Qiu Y, Wang J, Liu Y, Wei Y, Xia J', Yu T, Zhang X, Zhang L. Epidemiological and clinical characteristics of 99 cases of 2019 novel coronavirus pneumonia in Wuhan, China: a descriptive study. The Lancet. 2020;395(10223):507–13. https://doi.org/10.1016/S0140-6736(20)30211-7.",
+      "volume": "395",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s12250-020-00252-z",
+      "author": "A Singh",
+      "doi-asserted-by": "publisher",
+      "first-page": "290",
+      "issue": "3",
+      "journal-title": "Virol Sin",
+      "key": "316_CR4",
+      "unstructured": "Singh A, Singh RS, Sarma P, Batra G, Joshi R, Kaur H, Sharma AR, Prakash A, Medhi B. A comprehensive review of animal models for coronaviruses: SARS-CoV-2, SARS-CoV, and MERS-CoV. Virol Sin. 2020;35(3):290–304. https://doi.org/10.1007/s12250-020-00252-z.",
+      "volume": "35",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.compbiomed.2020.103967",
+      "author": "A Rakib",
+      "doi-asserted-by": "publisher",
+      "first-page": "103967",
+      "journal-title": "Comput Biol Med",
+      "key": "316_CR5",
+      "unstructured": "Rakib A, Sami SA, Mimi NJ, Chowdhury MM, Eva TA, Nainu F, Paul A, Shahriar A, Tareq AM, Emon NU, Chakraborty S, Shil S, Mily SJ, Ben Hadda T, Almalki FA, Emran TB. Immunoinformatics-guided design of an epitope-based vaccine against severe acute respiratory syndrome coronavirus 2 spike glycoprotein. Comput Biol Med. 2020;124:103967. https://doi.org/10.1016/j.compbiomed.2020.103967.",
+      "volume": "124",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12943-020-01218-1",
+      "author": "W Feng",
+      "doi-asserted-by": "publisher",
+      "first-page": "100",
+      "issue": "1",
+      "journal-title": "Mol Cancer",
+      "key": "316_CR6",
+      "unstructured": "Feng W, Zong W, Wang F, Ju S. Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2): a review. Mol Cancer. 2020;19(1):100. https://doi.org/10.1186/s12943-020-01218-1.",
+      "volume": "19",
+      "year": "2020"
+    },
+    {
+      "key": "316_CR7",
+      "unstructured": "WHO. 2020/10/15; Available from: https://covid19.who.int/."
+    },
+    {
+      "DOI": "10.3390/ijms20215404",
+      "author": "G Desole",
+      "doi-asserted-by": "publisher",
+      "first-page": "21",
+      "journal-title": "Int J Mol Sci",
+      "key": "316_CR8",
+      "unstructured": "Desole G, et al. Modelling neurotropic flavivirus infection in human induced pluripotent stem cell-derived systems. Int J Mol Sci. 2019;20:21.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.stem.2020.09.016",
+      "doi-asserted-by": "publisher",
+      "key": "316_CR9",
+      "unstructured": "Jacob F, et al. Human pluripotent stem cell-derived neural cells and brain organoids reveal SARS-CoV-2 neurotropism. bioRxiv. 2020;27(6):937–950.e9. https://doi.org/10.1016/j.stem.2020.09.016."
+    },
+    {
+      "DOI": "10.1038/s41422-020-0364-z",
+      "author": "C Shan",
+      "doi-asserted-by": "publisher",
+      "first-page": "670",
+      "issue": "8",
+      "journal-title": "Cell Res",
+      "key": "316_CR10",
+      "unstructured": "Shan C, Yao YF, Yang XL, Zhou YW, Gao G, Peng Y, Yang L, Hu X, Xiong J, Jiang RD, Zhang HJ, Gao XX, Peng C, Min J, Chen Y, Si HR, Wu J, Zhou P, Wang YY, Wei HP, Pang W, Hu ZF, Lv LB, Zheng YT, Shi ZL, Yuan ZM. Infection with novel coronavirus (SARS-CoV-2) causes pneumonia in Rhesus macaques. Cell Res. 2020;30(8):670–7. https://doi.org/10.1038/s41422-020-0364-z.",
+      "volume": "30",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.chom.2020.05.020",
+      "author": "SH Sun",
+      "doi-asserted-by": "publisher",
+      "first-page": "124",
+      "issue": "1",
+      "journal-title": "Cell Host Microbe",
+      "key": "316_CR11",
+      "unstructured": "Sun SH, Chen Q, Gu HJ, Yang G, Wang YX, Huang XY, Liu SS, Zhang NN, Li XF, Xiong R, Guo Y, Deng YQ, Huang WJ, Liu Q, Liu QM, Shen YL, Zhou Y, Yang X, Zhao TY, Fan CF, Zhou YS, Qin CF, Wang YC. A mouse model of SARS-CoV-2 infection and pathogenesis. Cell Host Microbe. 2020;28(1):124–33 e4. https://doi.org/10.1016/j.chom.2020.05.020.",
+      "volume": "28",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1073/pnas.2009799117",
+      "author": "M Imai",
+      "doi-asserted-by": "publisher",
+      "first-page": "16587",
+      "issue": "28",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "316_CR12",
+      "unstructured": "Imai M, Iwatsuki-Horimoto K, Hatta M, Loeber S, Halfmann PJ, Nakajima N, Watanabe T, Ujie M, Takahashi K, Ito M, Yamada S, Fan S, Chiba S, Kuroda M, Guan L, Takada K, Armbrust T, Balogh A, Furusawa Y, Okuda M, Ueki H, Yasuhara A, Sakai-Tagawa Y, Lopes TJS, Kiso M, Yamayoshi S, Kinoshita N, Ohmagari N, Hattori SI, Takeda M, Mitsuya H, Krammer F, Suzuki T, Kawaoka Y. Syrian hamsters as a small animal model for SARS-CoV-2 infection and countermeasure development. Proc Natl Acad Sci U S A. 2020;117(28):16587–95. https://doi.org/10.1073/pnas.2009799117.",
+      "volume": "117",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/2020.05.27.118893",
+      "doi-asserted-by": "publisher",
+      "key": "316_CR13",
+      "unstructured": "Israelow B, Song E, Mao T, Lu P, Meir A, Liu F, Alfajaro MM, Wei J, Dong H, Homer RJ, Ring A, Wilen CB, Iwasaki A. Mouse model of SARSCoV-2 reveals inflammatory role of type I interferon signaling. bioRxiv [Preprint]. 2020:2020.05.27.118893. https://doi.org/10.1101/2020.05.27.118893."
+    },
+    {
+      "DOI": "10.1016/j.chom.2020.03.023",
+      "author": "YI Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "704",
+      "issue": "5",
+      "journal-title": "Cell Host Microbe",
+      "key": "316_CR14",
+      "unstructured": "Kim YI, Kim SG, Kim SM, Kim EH, Park SJ, Yu KM, Chang JH, Kim EJ, Lee S, Casel MAB, Um J, Song MS, Jeong HW, Lai VD, Kim Y, Chin BS, Park JS, Chung KH, Foo SS, Poo H, Mo IP, Lee OJ, Webby RJ, Jung JU, Choi YK. Infection and rapid transmission of SARS-CoV-2 in ferrets. Cell Host Microbe. 2020;27(5):704–9 e2. https://doi.org/10.1016/j.chom.2020.03.023.",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1073/pnas.1806308115",
+      "author": "J Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "6822",
+      "issue": "26",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "316_CR15",
+      "unstructured": "Zhou J, Li C, Sachs N, Chiu MC, Wong BHY, Chu H, Poon VKM, Wang D, Zhao X, Wen L, Song W, Yuan S, Wong KKY, Chan JFW, To KKW, Chen H, Clevers H, Yuen KY. Differentiated human airway organoids to assess infectivity of emerging influenza virus. Proc Natl Acad Sci U S A. 2018;115(26):6822–7. https://doi.org/10.1073/pnas.1806308115.",
+      "volume": "115",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1128/mBio.00723-19",
+      "author": "M Porotto",
+      "doi-asserted-by": "publisher",
+      "first-page": "e00723",
+      "issue": "3",
+      "journal-title": "mBio",
+      "key": "316_CR16",
+      "unstructured": "Porotto M, et al. Authentic modeling of human respiratory virus infection in human pluripotent stem cell-derived lung organoids. mBio. 2019;10(3):e00723.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41426-018-0080-7",
+      "author": "DP Strange",
+      "doi-asserted-by": "publisher",
+      "first-page": "82",
+      "issue": "1",
+      "journal-title": "Emerg Microbes Infect",
+      "key": "316_CR17",
+      "unstructured": "Strange DP, Zarandi NP, Trivedi G, Atala A, Bishop CE, Sadri-Ardekani H, Verma S. Human testicular organoid system as a novel tool to study Zika virus pathogenesis. Emerg Microbes Infect. 2018;7(1):82. https://doi.org/10.1038/s41426-018-0080-7.",
+      "volume": "7",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.04.004",
+      "author": "V Monteil",
+      "doi-asserted-by": "publisher",
+      "first-page": "905",
+      "issue": "4",
+      "journal-title": "Cell",
+      "key": "316_CR18",
+      "unstructured": "Monteil V, Kwon H, Prado P, Hagelkrüys A, Wimmer RA, Stahl M, Leopoldi A, Garreta E, Hurtado del Pozo C, Prosper F, Romero JP, Wirnsberger G, Zhang H, Slutsky AS, Conder R, Montserrat N, Mirazimi A, Penninger JM. Inhibition of SARS-CoV-2 infections in engineered human tissues using clinical-grade soluble human ACE2. Cell. 2020;181(4):905–13 e7. https://doi.org/10.1016/j.cell.2020.04.004.",
+      "volume": "181",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.5551/jat.52993",
+      "author": "Y Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1068",
+      "issue": "10",
+      "journal-title": "J Atheroscler Thromb",
+      "key": "316_CR19",
+      "unstructured": "Liu Y, Huan W, Wu J, Zou S, Qu L. IGFBP6 is downregulated in unstable carotid atherosclerotic plaques according to an integrated bioinformatics analysis and experimental verification. J Atheroscler Thromb. 2020;27(10):1068–85. https://doi.org/10.5551/jat.52993.",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3934/mbe.2020124",
+      "author": "N Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2330",
+      "issue": "3",
+      "journal-title": "Math Biosci Eng",
+      "key": "316_CR20",
+      "unstructured": "Li N, Zhou JN. Screening and validating the immune-related gene expression signatures in peripheral blood mononuclear cells of nonischaemic cardiomyopathy. Math Biosci Eng. 2020;17(3):2330–47. https://doi.org/10.3934/mbe.2020124.",
+      "volume": "17",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1097/MD.0000000000019628",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "issue": "14",
+      "journal-title": "Medicine (Baltimore)",
+      "key": "316_CR21",
+      "unstructured": "Chen X, Wang J, Peng X, Liu K, Zhang C, Zeng X, Lai Y. Comprehensive analysis of biomarkers for prostate cancer based on weighted gene co-expression network analysis. Medicine (Baltimore). 2020;99(14):e19628. https://doi.org/10.1097/MD.0000000000019628.",
+      "volume": "99",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1165/rcmb.2016-0428OC",
+      "author": "JG Jayne",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "issue": "3",
+      "journal-title": "Am J Respir Cell Mol Biol",
+      "key": "316_CR22",
+      "unstructured": "Jayne JG, Bensman TJ, Schaal JB, Park AYJ, Kimura E, Tran D, Selsted ME, Beringer PM. Rhesus theta-Defensin-1 attenuates endotoxin-induced acute lung injury by inhibiting proinflammatory cytokines and neutrophil recruitment. Am J Respir Cell Mol Biol. 2018;58(3):310–9. https://doi.org/10.1165/rcmb.2016-0428OC.",
+      "volume": "58",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/jmcb/mjaa067",
+      "doi-asserted-by": "publisher",
+      "key": "316_CR23",
+      "unstructured": "Petruk G, Puthia M, Petrlova J, Samsudin F, Strömdahl AC, Cerps S, Uller L, Kjellström S, Bond PJ, Schmidtchen A. SARS-CoV-2 Spike protein binds to bacterial lipopolysaccharide and boosts proinflammatory activity. J Mol Cell Biol. 2020:mjaa067. https://doi.org/10.1093/jmcb/mjaa067."
+    },
+    {
+      "author": "H Shaath",
+      "first-page": "260",
+      "issue": "9",
+      "journal-title": "Biology (Basel)",
+      "key": "316_CR24",
+      "unstructured": "Shaath H, Alajez NM. Computational and transcriptome analyses revealed preferential induction of chemotaxis and lipid synthesis by SARS-CoV-2. Biology (Basel). 2020;9(9):260.",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41577-020-00470-2",
+      "doi-asserted-by": "publisher",
+      "key": "316_CR25",
+      "unstructured": "Alon R, Sportiello M, Kozlovski S, Kumar A, Reilly EC, Zarbock A, Garbi N, Topham DJ. Leukocyte trafficking to the lungs and beyond: lessons from influenza for COVID-19. Nat Rev Immunol. 2021;21(1):49–64. https://doi.org/10.1038/s41577-020-00470-2."
+    },
+    {
+      "DOI": "10.1016/S0140-6736(20)31305-2",
+      "author": "BT Bradley",
+      "doi-asserted-by": "publisher",
+      "first-page": "320",
+      "issue": "10247",
+      "journal-title": "Lancet",
+      "key": "316_CR26",
+      "unstructured": "Bradley BT, Maioli H, Johnston R, Chaudhry I, Fink SL, Xu H, Najafian B, Deutsch G, Lacy JM, Williams T, Yarid N, Marshall DA. Histopathology and ultrastructural findings of fatal COVID-19 infections in Washington State: a case series. Lancet. 2020;396(10247):320–32. https://doi.org/10.1016/S0140-6736(20)31305-2.",
+      "volume": "396",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.21037/atm.2020.03.30",
+      "author": "Y Jin",
+      "doi-asserted-by": "publisher",
+      "first-page": "282",
+      "issue": "6",
+      "journal-title": "Ann Transl Med",
+      "key": "316_CR27",
+      "unstructured": "Jin Y, Qin X. Comprehensive analysis of transcriptome data for identifying biomarkers and therapeutic targets in head and neck squamous cell carcinoma. Ann Transl Med. 2020;8(6):282. https://doi.org/10.21037/atm.2020.03.30.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.clim.2020.108576",
+      "author": "MC Montalvo Villalba",
+      "doi-asserted-by": "publisher",
+      "first-page": "108576",
+      "journal-title": "Clin Immunol",
+      "key": "316_CR28",
+      "unstructured": "Montalvo Villalba MC, Valdés Ramírez O, Muné Jiménez M, Arencibia Garcia A, Martinez Alfonso J, González Baéz G, Roque Arrieta R, Rosell Simón D, Alvárez Gainza D, Sierra Vázquez B, Resik Aguirre S, Guzmán Tirado MG. Interferon gamma, TGF-beta1 and RANTES expression in upper airway samples from SARS-CoV-2 infected patients. Clin Immunol. 2020;220:108576. https://doi.org/10.1016/j.clim.2020.108576.",
+      "volume": "220",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1517/14728222.2013.837886",
+      "author": "RE Marques",
+      "doi-asserted-by": "publisher",
+      "first-page": "1439",
+      "issue": "12",
+      "journal-title": "Expert Opin Ther Targets",
+      "key": "316_CR29",
+      "unstructured": "Marques RE, Guabiraba R, Russo RC, Teixeira MM. Targeting CCL5 in inflammation. Expert Opin Ther Targets. 2013;17(12):1439–60. https://doi.org/10.1517/14728222.2013.837886.",
+      "volume": "17",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41423-019-0279-0",
+      "author": "M Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "753",
+      "issue": "7",
+      "journal-title": "Cell Mol Immunol",
+      "key": "316_CR30",
+      "unstructured": "Li M, Sun X, Zhao J, Xia L, Li J, Xu M, Wang B, Guo H, Yu C, Gao Y, Wu H, Kong X, Xia Q. CCL5 deficiency promotes liver repair by improving inflammation resolution and liver regeneration through M2 macrophage polarization. Cell Mol Immunol. 2020;17(7):753–64. https://doi.org/10.1038/s41423-019-0279-0.",
+      "volume": "17",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-020-15375-w",
+      "author": "W Seo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1562",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "316_CR31",
+      "unstructured": "Seo W, Shimizu K, Kojo S, Okeke A, Kohwi-Shigematsu T, Fujii SI, Taniuchi I. Runx-mediated regulation of CCL5 via antagonizing two enhancers influences immune cell function and anti-tumor immunity. Nat Commun. 2020;11(1):1562. https://doi.org/10.1038/s41467-020-15375-w.",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/srep33123",
+      "author": "KV Sawant",
+      "doi-asserted-by": "publisher",
+      "first-page": "33123",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "316_CR32",
+      "unstructured": "Sawant KV, Poluri KM, Dutta AK, Sepuru KM, Troshkina A, Garofalo RP, Rajarathnam K. Chemokine CXCL1 mediated neutrophil recruitment: role of glycosaminoglycan interactions. Sci Rep. 2016;6(1):33123. https://doi.org/10.1038/srep33123.",
+      "volume": "6",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.cellsig.2018.11.004",
+      "author": "K Rajarathnam",
+      "doi-asserted-by": "publisher",
+      "first-page": "69",
+      "journal-title": "Cell Signal",
+      "key": "316_CR33",
+      "unstructured": "Rajarathnam K, Schnoor M, Richardson RM, Rajagopal S. How do chemokines navigate neutrophils to the target site: dissecting the structural mechanisms and signaling pathways. Cell Signal. 2019;54:69–80. https://doi.org/10.1016/j.cellsig.2018.11.004.",
+      "volume": "54",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1159/000430914",
+      "author": "KV Sawant",
+      "doi-asserted-by": "publisher",
+      "first-page": "647",
+      "issue": "6",
+      "journal-title": "J Innate Immun",
+      "key": "316_CR34",
+      "unstructured": "Sawant KV, Xu R, Cox R, Hawkins H, Sbrana E, Kolli D, Garofalo RP, Rajarathnam K. Chemokine CXCL1-mediated neutrophil trafficking in the lung: role of CXCR2 activation. J Innate Immun. 2015;7(6):647–58. https://doi.org/10.1159/000430914.",
+      "volume": "7",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/S2213-2600(20)30225-3",
+      "author": "PM George",
+      "doi-asserted-by": "publisher",
+      "first-page": "807",
+      "issue": "8",
+      "journal-title": "Lancet Respir Med",
+      "key": "316_CR35",
+      "unstructured": "George PM, Wells AU, Jenkins RG. Pulmonary fibrosis and COVID-19: the potential role for antifibrotic therapy. Lancet Respir Med. 2020;8(8):807–15. https://doi.org/10.1016/S2213-2600(20)30225-3.",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/jcm9061917",
+      "author": "K Lechowicz",
+      "doi-asserted-by": "publisher",
+      "first-page": "1917",
+      "issue": "6",
+      "journal-title": "J Clin Med",
+      "key": "316_CR36",
+      "unstructured": "Lechowicz K, et al. COVID-19: the potential treatment of pulmonary fibrosis associated with SARS-CoV-2 infection. J Clin Med. 2020;9(6):1917.",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.vaccine.2017.02.012",
+      "author": "CM Coleman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1586",
+      "issue": "12",
+      "journal-title": "Vaccine",
+      "key": "316_CR37",
+      "unstructured": "Coleman CM, Venkataraman T, Liu YV, Glenn GM, Smith GE, Flyer DC, Frieman MB. MERS-CoV spike nanoparticles protect mice from MERS-CoV infection. Vaccine. 2017;35(12):1586–9. https://doi.org/10.1016/j.vaccine.2017.02.012.",
+      "volume": "35",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.jaci.2020.08.031",
+      "doi-asserted-by": "publisher",
+      "key": "316_CR38",
+      "unstructured": "Sims JT, Krishnan V, Chang CY, Engle SM, Casalini G, Rodgers GH, Bivi N, Nickoloff BJ, Konrad RJ, de Bono S, Higgs RE, Benschop RJ, Ottaviani S, Cardoso A, Nirula A, Corbellino M, Stebbing J. Characterization of the cytokine storm reflects hyperinflammatory endothelial dysfunction in COVID-19. J Allergy Clin Immunol. 2021;147(1):107–11. https://doi.org/10.1016/j.jaci.2020.08.031."
+    },
+    {
+      "DOI": "10.1128/mSphere.00288-20",
+      "author": "SW Mamber",
+      "doi-asserted-by": "publisher",
+      "first-page": "e00288",
+      "issue": "3",
+      "journal-title": "mSphere",
+      "key": "316_CR39",
+      "unstructured": "Mamber SW, et al. Can unconventional immunomodulatory agents help alleviate COVID-19 symptoms and severity? mSphere. 2020;5(3):e00288.",
+      "volume": "5",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1177/1073858420939033",
+      "doi-asserted-by": "publisher",
+      "key": "316_CR40",
+      "unstructured": "Oliviero A, de Castro F, Coperchini F, Chiovato L, Rotondi M. COVID-19 Pulmonary and Olfactory Dysfunctions: Is the Chemokine CXCL10 the Common Denominator? Neuroscientist. 2020:1073858420939033. https://doi.org/10.1177/1073858420939033."
+    },
+    {
+      "DOI": "10.1016/j.cytogfr.2020.05.003",
+      "author": "F Coperchini",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "journal-title": "Cytokine Growth Factor Rev",
+      "key": "316_CR41",
+      "unstructured": "Coperchini F, Chiovato L, Croce L, Magri F, Rotondi M. The cytokine storm in COVID-19: an overview of the involvement of the chemokine/chemokine-receptor system. Cytokine Growth Factor Rev. 2020;53:25–32. https://doi.org/10.1016/j.cytogfr.2020.05.003.",
+      "volume": "53",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0169100",
+      "author": "S Lang",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0169100",
+      "issue": "1",
+      "journal-title": "PLoS One",
+      "key": "316_CR42",
+      "unstructured": "Lang S, Li L, Wang X, Sun J, Xue X, Xiao Y, Zhang M, Ao T, Wang J. CXCL10/IP-10 neutralization can ameliorate lipopolysaccharide-induced acute respiratory distress syndrome in rats. PLoS One. 2017;12(1):e0169100. https://doi.org/10.1371/journal.pone.0169100.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1164/rccm.202005-1885OC",
+      "author": "S Hue",
+      "doi-asserted-by": "publisher",
+      "first-page": "1509",
+      "issue": "11",
+      "journal-title": "Am J Respir Crit Care Med",
+      "key": "316_CR43",
+      "unstructured": "Hue S, Beldi-Ferchiou A, Bendib I, Surenaud M, Fourati S, Frapard T, Rivoal S, Razazi K, Carteaux G, Delfau-Larue MH, Mekontso-Dessap A, Audureau E, de Prost N. Uncontrolled innate and impaired adaptive immune responses in patients with COVID-19 acute respiratory distress syndrome. Am J Respir Crit Care Med. 2020;202(11):1509–19. https://doi.org/10.1164/rccm.202005-1885OC.",
+      "volume": "202",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.5858/arpa.2013-0182-RA",
+      "author": "TC Allen",
+      "doi-asserted-by": "publisher",
+      "first-page": "266",
+      "issue": "2",
+      "journal-title": "Arch Pathol Lab Med",
+      "key": "316_CR44",
+      "unstructured": "Allen TC, Kurdowska A. Interleukin 8 and acute lung injury. Arch Pathol Lab Med. 2014;138(2):266–9. https://doi.org/10.5858/arpa.2013-0182-RA.",
+      "volume": "138",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/JLB.3AB0220-470R",
+      "author": "M Metzemaekers",
+      "doi-asserted-by": "publisher",
+      "first-page": "1167",
+      "issue": "6",
+      "journal-title": "J Leukoc Biol",
+      "key": "316_CR45",
+      "unstructured": "Metzemaekers M, Vandendriessche S, Berghmans N, Gouwy M, Proost P. Truncation of CXCL8 to CXCL8(9-77) enhances actin polymerization and in vivo migration of neutrophils. J Leukoc Biol. 2020;107(6):1167–73. https://doi.org/10.1002/JLB.3AB0220-470R.",
+      "volume": "107",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00316-5"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Exploration and validation of related hub gene expression during SARS-CoV-2 infection of human bronchial organoids"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

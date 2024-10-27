@@ -1,0 +1,769 @@
+{
+  "DOI": "10.1186/s40246-021-00357-w",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00357-w",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eLow-pass sequencing (LPS) has been extensively investigated for applicability to various genetic studies due to its advantages over genotype array data including cost-effectiveness. Predicting the risk of complex diseases such as Parkinson’s disease (PD) using polygenic risk score (PRS) based on the genetic variations has shown decent prediction accuracy. Although ultra-LPS has been shown to be effective in PRS calculation, array data has been favored to the majority of PRS analysis, especially for PD.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eUsing eight high-coverage WGS, we assessed imputation approaches for downsampled LPS data ranging from 0.5 × to 7.0 × . We demonstrated that uncertain genotype calls of LPS diminished imputation accuracy, and an imputation approach using genotype likelihoods was plausible for LPS. Additionally, comparing imputation accuracies between LPS and simulated array illustrated that LPS had higher accuracies particularly at rare frequencies. To evaluate ultra-low coverage data in PRS calculation for PD, we prepared low-coverage WGS and genotype array of 87 PD cases and 101 controls. Genotype imputation of array and downsampled LPS were conducted using a population-specific reference panel, and we calculated risk scores based on the PD-associated SNPs from an East Asian meta-GWAS. The PRS models discriminated cases and controls as previously reported when both LPS and genotype array were used. Also strong correlations in PRS models for PD between LPS and genotype array were discovered.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eOverall, this study highlights the potentials of LPS under 1.0 × followed by genotype imputation in PRS calculation and suggests LPS as attractive alternatives to genotype array in the area of precision medicine for PD.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "357"
+  ],
+  "article-number": "58",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "25 June 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "22 August 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "28 August 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Samples used in this study were approved by the institutional review board of Asan Medical Center (No: 2019–0443). Informed consents were obtained from all participants in this study."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Kim",
+      "given": "Sungjae",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Shin",
+      "given": "Jong-Yeon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kwon",
+      "given": "Nak-Jung",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kim",
+      "given": "Chang-Uk",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kim",
+      "given": "Changhoon",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lee",
+      "given": "Chong Sik",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Seo",
+      "given": "Jeong-Sun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        28
+      ]
+    ],
+    "date-time": "2021-08-28T13:02:44Z",
+    "timestamp": 1630155764000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        28
+      ]
+    ],
+    "date-time": "2021-08-28T13:11:54Z",
+    "timestamp": 1630156314000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        6
+      ]
+    ],
+    "date-time": "2024-03-06T06:03:09Z",
+    "timestamp": 1709704989438
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        28
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            28
+          ]
+        ],
+        "date-time": "2021-08-28T00:00:00Z",
+        "timestamp": 1630108800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            8,
+            28
+          ]
+        ],
+        "date-time": "2021-08-28T00:00:00Z",
+        "timestamp": 1630108800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00357-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-021-00357-w/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-021-00357-w.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        28
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        8,
+        28
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "key": "357_CR1",
+      "unstructured": "Wetterstrand KA. DNA Sequencing Costs: Data from the NHGRI Genome Sequencing Program (GSP) Available at: https://www.genome.gov/sequencingcostsdata. Accessed 22 June 2021."
+    },
+    {
+      "DOI": "10.1002/gepi.22326",
+      "author": "C Quick",
+      "doi-asserted-by": "publisher",
+      "first-page": "537",
+      "issue": "6",
+      "journal-title": "Genet Epidemiol",
+      "key": "357_CR2",
+      "unstructured": "Quick C, et al. Sequencing and imputation in GWAS: Cost-effective strategies to increase power and genomic coverage across diverse populations. Genet Epidemiol. 2020;44(6):537–49.",
+      "volume": "44",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.jmoldx.2020.03.008",
+      "author": "A Chaubey",
+      "doi-asserted-by": "publisher",
+      "first-page": "823",
+      "issue": "6",
+      "journal-title": "J Mol Diagn",
+      "key": "357_CR3",
+      "unstructured": "Chaubey A, et al. Low-pass genome sequencing: validation and diagnostic utility from 409 clinical cases of low-pass genome sequencing for the detection of copy number variants to replace constitutional microarray. J Mol Diagn. 2020;22(6):823–40.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/gr.266486.120",
+      "author": "JH Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "529",
+      "issue": "4",
+      "journal-title": "Genome Res",
+      "key": "357_CR4",
+      "unstructured": "Li JH, et al. Low-pass sequencing increases the power of GWAS and decreases measurement error of polygenic risk scores compared to genotyping arrays. Genome Res. 2021;31(4):529–37.",
+      "volume": "31",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ng.2283",
+      "author": "B Pasaniuc",
+      "doi-asserted-by": "publisher",
+      "first-page": "631",
+      "issue": "6",
+      "journal-title": "Nat Genet",
+      "key": "357_CR5",
+      "unstructured": "Pasaniuc B, et al. Extremely low-coverage sequencing and imputation increases power for genome-wide association studies. Nat Genet. 2012;44(6):631–5.",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s13073-019-0682-2",
+      "author": "JR Homburger",
+      "doi-asserted-by": "publisher",
+      "first-page": "74",
+      "issue": "1",
+      "journal-title": "Genome Med",
+      "key": "357_CR6",
+      "unstructured": "Homburger JR, et al. Low coverage whole genome sequencing enables accurate assessment of common variants and calculation of genome-wide polygenic scores. Genome Med. 2019;11(1):74.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00441-018-2817-y",
+      "author": "KJ Billingsley",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "issue": "1",
+      "journal-title": "Cell Tissue Res",
+      "key": "357_CR7",
+      "unstructured": "Billingsley KJ, et al. Genetic risk factors in Parkinson’s disease. Cell Tissue Res. 2018;373(1):9–20.",
+      "volume": "373",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.nbd.2020.104782",
+      "author": "S Bandres-Ciga",
+      "doi-asserted-by": "publisher",
+      "first-page": "104782",
+      "journal-title": "Neurobiol Dis",
+      "key": "357_CR8",
+      "unstructured": "Bandres-Ciga S, et al. Genetics of Parkinson’s disease: an introspection of its journey towards precision medicine. Neurobiol Dis. 2020;137:104782.",
+      "volume": "137",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3389/fnagi.2020.00004",
+      "author": "A Iarkov",
+      "doi-asserted-by": "publisher",
+      "first-page": "4",
+      "journal-title": "Front Aging Neurosci",
+      "key": "357_CR9",
+      "unstructured": "Iarkov A, et al. Strategies for the Treatment of Parkinson’s Disease: Beyond Dopamine. Front Aging Neurosci. 2020;12:4.",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00702-020-02184-0",
+      "author": "J Ohnmacht",
+      "doi-asserted-by": "publisher",
+      "first-page": "729",
+      "issue": "5",
+      "journal-title": "J Neural Transm (Vienna)",
+      "key": "357_CR10",
+      "unstructured": "Ohnmacht J, et al. Missing heritability in Parkinson’s disease: the emerging role of non-coding genetic variation. J Neural Transm (Vienna). 2020;127(5):729–48.",
+      "volume": "127",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S1474-4422(19)30287-X",
+      "author": "C Blauwendraat",
+      "doi-asserted-by": "publisher",
+      "first-page": "170",
+      "issue": "2",
+      "journal-title": "Lancet Neurol",
+      "key": "357_CR11",
+      "unstructured": "Blauwendraat C, Nalls MA, Singleton AB. The genetic architecture of Parkinson’s disease. Lancet Neurol. 2020;19(2):170–8.",
+      "volume": "19",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1001/jamaneurol.2020.0428",
+      "author": "JN Foo",
+      "doi-asserted-by": "publisher",
+      "first-page": "746",
+      "issue": "6",
+      "journal-title": "JAMA Neurol",
+      "key": "357_CR12",
+      "unstructured": "Foo JN, et al. Identification of risk loci for Parkinson disease in Asians and comparison of risk between Asians and Europeans: a genome-wide association study. JAMA Neurol. 2020;77(6):746–54.",
+      "volume": "77",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41576-018-0018-x",
+      "author": "A Torkamani",
+      "doi-asserted-by": "publisher",
+      "first-page": "581",
+      "issue": "9",
+      "journal-title": "Nat Rev Genet",
+      "key": "357_CR13",
+      "unstructured": "Torkamani A, Wineinger NE, Topol EJ. The personal and clinical utility of polygenic risk scores. Nat Rev Genet. 2018;19(9):581–90.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/S1474-4422(17)30328-9",
+      "author": "JC Latourelle",
+      "doi-asserted-by": "publisher",
+      "first-page": "908",
+      "issue": "11",
+      "journal-title": "Lancet Neurol",
+      "key": "357_CR14",
+      "unstructured": "Latourelle JC, et al. Large-scale identification of clinical and genetic predictors of motor progression in patients with newly diagnosed Parkinson’s disease: a longitudinal cohort study and validation. Lancet Neurol. 2017;16(11):908–16.",
+      "volume": "16",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1001/jamaneurol.2017.4206",
+      "author": "KC Paul",
+      "doi-asserted-by": "publisher",
+      "first-page": "360",
+      "issue": "3",
+      "journal-title": "JAMA Neurol",
+      "key": "357_CR15",
+      "unstructured": "Paul KC, et al. Association of polygenic risk score with cognitive decline and motor progression in Parkinson disease. JAMA Neurol. 2018;75(3):360–6.",
+      "volume": "75",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41588-020-00756-0",
+      "author": "S Rubinacci",
+      "doi-asserted-by": "publisher",
+      "first-page": "120",
+      "issue": "1",
+      "journal-title": "Nat Genet",
+      "key": "357_CR16",
+      "unstructured": "Rubinacci S, et al. Efficient phasing and imputation of low-coverage sequencing data using large reference panels. Nat Genet. 2021;53(1):120–6.",
+      "volume": "53",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41598-020-75387-w",
+      "author": "R Hui",
+      "doi-asserted-by": "publisher",
+      "first-page": "18542",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "357_CR17",
+      "unstructured": "Hui R, et al. Evaluating genotype imputation pipeline for ultra-low coverage ancient genomes. Sci Rep. 2020;10(1):18542.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.3679",
+      "author": "PR Loh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1443",
+      "issue": "11",
+      "journal-title": "Nat Genet",
+      "key": "357_CR18",
+      "unstructured": "Loh PR, et al. Reference-based phasing using the Haplotype Reference Consortium panel. Nat Genet. 2016;48(11):1443–8.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ng.3656",
+      "author": "S Das",
+      "doi-asserted-by": "publisher",
+      "first-page": "1284",
+      "issue": "10",
+      "journal-title": "Nat Genet",
+      "key": "357_CR19",
+      "unstructured": "Das S, et al. Next-generation genotype imputation service and methods. Nat Genet. 2016;48(10):1284–7.",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41598-019-54288-7",
+      "author": "M Wright Muelas",
+      "doi-asserted-by": "publisher",
+      "first-page": "17960",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "357_CR20",
+      "unstructured": "Wright Muelas M, et al. The role and robustness of the Gini coefficient as an unbiased tool for the selection of Gini genes for normalising expression profiling data. Sci Rep. 2019;9(1):17960.",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1073/pnas.1513988112",
+      "author": "Y Fu",
+      "doi-asserted-by": "publisher",
+      "first-page": "11923",
+      "issue": "38",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "357_CR21",
+      "unstructured": "Fu Y, et al. Uniform and accurate single-cell sequencing based on emulsion whole-genome amplification. Proc Natl Acad Sci U S A. 2015;112(38):11923–8.",
+      "volume": "112",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s13073-019-0677-z",
+      "author": "SK Yoo",
+      "doi-asserted-by": "publisher",
+      "first-page": "64",
+      "issue": "1",
+      "journal-title": "Genome Med",
+      "key": "357_CR22",
+      "unstructured": "Yoo SK, et al. NARD: whole-genome reference panel of 1779 Northeast Asians improves imputation accuracy of rare and low-frequency variants. Genome Med. 2019;11(1):64.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "author": "KJ Karczewski",
+      "doi-asserted-by": "publisher",
+      "first-page": "434",
+      "issue": "7809",
+      "journal-title": "Nature",
+      "key": "357_CR23",
+      "unstructured": "Karczewski KJ, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. Nature. 2020;581(7809):434–43.",
+      "volume": "581",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11112-0",
+      "author": "L Duncan",
+      "doi-asserted-by": "publisher",
+      "first-page": "3328",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "357_CR24",
+      "unstructured": "Duncan L, et al. Analysis of polygenic risk score usage and performance in diverse human populations. Nat Commun. 2019;10(1):3328.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0248-z",
+      "author": "O Canela-Xandri",
+      "doi-asserted-by": "publisher",
+      "first-page": "1593",
+      "issue": "11",
+      "journal-title": "Nat Genet",
+      "key": "357_CR25",
+      "unstructured": "Canela-Xandri O, Rawlik K, Tenesa A. An atlas of genetic associations in UK Biobank. Nat Genet. 2018;50(11):1593–9.",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13059-018-1561-7",
+      "author": "MS Kim",
+      "doi-asserted-by": "publisher",
+      "first-page": "179",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "357_CR26",
+      "unstructured": "Kim MS, et al. Genetic disease risks can be misestimated across global populations. Genome Biol. 2018;19(1):179.",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv402",
+      "author": "MJ Machiela",
+      "doi-asserted-by": "publisher",
+      "first-page": "3555",
+      "issue": "21",
+      "journal-title": "Bioinformatics",
+      "key": "357_CR27",
+      "unstructured": "Machiela MJ, Chanock SJ. LDlink: a web-based application for exploring population-specific haplotype structure and linking correlated alleles of possible functional variants. Bioinformatics. 2015;31(21):3555–7.",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41467-019-09718-5",
+      "author": "T Ge",
+      "doi-asserted-by": "publisher",
+      "first-page": "1776",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "357_CR28",
+      "unstructured": "Ge T, et al. Polygenic prediction via Bayesian regression and continuous shrinkage priors. Nat Commun. 2019;10(1):1776.",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1007565",
+      "author": "S Song",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007565",
+      "issue": "2",
+      "journal-title": "PLoS Comput Biol",
+      "key": "357_CR29",
+      "unstructured": "Song S, et al. Leveraging effect size distributions to improve polygenic risk scores derived from summary statistics of genome-wide association studies. PLoS Comput Biol. 2020;16(2):e1007565.",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2021.03.012",
+      "author": "AR Martin",
+      "doi-asserted-by": "publisher",
+      "first-page": "656",
+      "issue": "4",
+      "journal-title": "Am J Hum Genet",
+      "key": "357_CR30",
+      "unstructured": "Martin AR, et al. Low-coverage sequencing cost-effectively detects known and novel variation in underrepresented populations. Am J Hum Genet. 2021;108(4):656–68.",
+      "volume": "108",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41436-020-01007-7",
+      "author": "T Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "508",
+      "issue": "3",
+      "journal-title": "Genet Med",
+      "key": "357_CR31",
+      "unstructured": "Lu T, et al. Individuals with common diseases but with a low polygenic risk score could be prioritized for rare variant screening. Genet Med. 2021;23(3):508–15.",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/1755-0998.13070",
+      "author": "B Benjelloun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1497",
+      "issue": "6",
+      "journal-title": "Mol Ecol Resour",
+      "key": "357_CR32",
+      "unstructured": "Benjelloun B, et al. An evaluation of sequencing coverage and genotyping strategies to assess neutral and adaptive diversity. Mol Ecol Resour. 2019;19(6):1497–515.",
+      "volume": "19",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12883-017-0978-z",
+      "author": "L Ibanez",
+      "doi-asserted-by": "publisher",
+      "first-page": "198",
+      "issue": "1",
+      "journal-title": "BMC Neurol",
+      "key": "357_CR33",
+      "unstructured": "Ibanez L, et al. Parkinson disease polygenic risk score is associated with Parkinson disease status and age at onset but not with alpha-synuclein cerebrospinal fluid levels. BMC Neurol. 2017;17(1):198.",
+      "volume": "17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1212/NXG.0000000000000492",
+      "author": "CDJ Kusters",
+      "doi-asserted-by": "publisher",
+      "first-page": "e492",
+      "issue": "5",
+      "journal-title": "Neurol Genet",
+      "key": "357_CR34",
+      "unstructured": "Kusters CDJ, et al. Genetic risk scores and hallucinations in patients with Parkinson disease. Neurol Genet. 2020;6(5):e492.",
+      "volume": "6",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/201178v3",
+      "doi-asserted-by": "publisher",
+      "key": "357_CR35",
+      "unstructured": "Poplin R, et al. Scaling accurate genetic variant discovery to tens of thousands of samples. 2018. Preprint at: https://doi.org/10.1101/201178v3."
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2078",
+      "issue": "16",
+      "journal-title": "Bioinformatics",
+      "key": "357_CR36",
+      "unstructured": "Li H, et al. The sequence alignment/map format and SAMtools. Bioinformatics. 2009;25(16):2078–9.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp324",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1754",
+      "issue": "14",
+      "journal-title": "Bioinformatics",
+      "key": "357_CR37",
+      "unstructured": "Li H, Durbin R. Fast and accurate short read alignment with Burrows–Wheeler transform. Bioinformatics. 2009;25(14):1754–60.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nature15393",
+      "author": "Genomes Project C.",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "issue": "7571",
+      "journal-title": "Nature",
+      "key": "357_CR38",
+      "unstructured": "Genomes Project C., et al. A global reference for human genetic variation. Nature. 2015;526(7571):68–74.",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "author": "CC Chang",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "journal-title": "Gigascience",
+      "key": "357_CR39",
+      "unstructured": "Chang CC, et al. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:7.",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41596-020-0353-1",
+      "author": "SW Choi",
+      "doi-asserted-by": "publisher",
+      "first-page": "2759",
+      "issue": "9",
+      "journal-title": "Nat Protoc",
+      "key": "357_CR40",
+      "unstructured": "Choi SW, Mak TS, O’Reilly PF. Tutorial: a guide to performing polygenic risk score analyses. Nat Protoc. 2020;15(9):2759–72.",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "author": "F Pedregosa",
+      "first-page": "2825",
+      "journal-title": "J Learn Res",
+      "key": "357_CR41",
+      "unstructured": "Pedregosa F, et al. Scikit-learn: machine learning in python. J Learn Res. 2011;12:2825–30.",
+      "volume": "12",
+      "year": "2011"
+    }
+  ],
+  "reference-count": 41,
+  "references-count": 41,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00357-w"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Evaluation of low-pass genome sequencing in polygenic risk score calculation for Parkinson’s disease"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

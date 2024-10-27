@@ -1,0 +1,509 @@
+{
+  "DOI": "10.1002/gepi.22351",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22351",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eComplex human diseases are affected by genetic and environmental risk factors and their interactions. Gene–environment interaction (GEI) tests for aggregate genetic variant sets have been developed in recent years. However, existing statistical methods become rate limiting for large biobank‐scale sequencing studies with correlated samples. We propose efficient Mixed‐model Association tests for GEne–Environment interactions (MAGEE), for testing GEI between an aggregate variant set and environmental exposures on quantitative and binary traits in large‐scale sequencing studies with related individuals. Joint tests for the aggregate genetic main effects and GEI effects are also developed. A null generalized linear mixed model adjusting for covariates but without any genetic effects is fit only once in a whole genome GEI analysis, thereby vastly reducing the overall computational burden. Score tests for variant sets are performed as a combination of genetic burden and variance component tests by accounting for the genetic main effects using matrix projections. The computational complexity is dramatically reduced in a whole genome GEI analysis, which makes MAGEE scalable to hundreds of thousands of individuals. We applied MAGEE to the exome sequencing data of 41,144 related individuals from the UK Biobank, and the analysis of 18,970 protein coding genes finished within 10.4 CPU hours.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22351"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-04-13"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-08-08"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-08-30"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics and Data Science, School of Public Health The University of Texas Health Science Center at Houston  Houston Texas"
+        }
+      ],
+      "family": "Wang",
+      "given": "Xinyu",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University  Boston Massachusetts"
+        }
+      ],
+      "family": "Lim",
+      "given": "Elise",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0703-0742",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics Boston University  Boston Massachusetts"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Liu",
+      "given": "Ching‐Ti",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Washington University School of Medicine  St. Louis Missouri"
+        }
+      ],
+      "family": "Sung",
+      "given": "Yun Ju",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Division of Biostatistics Washington University School of Medicine  St. Louis Missouri"
+        }
+      ],
+      "family": "Rao",
+      "given": "Dabeeru C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Center, Department of Epidemiology, Human Genetics and Environmental Sciences, School of Public Health The University of Texas Health Science Center at Houston  Houston Texas"
+        }
+      ],
+      "family": "Morrison",
+      "given": "Alanna C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Human Genetics Center, Department of Epidemiology, Human Genetics and Environmental Sciences, School of Public Health The University of Texas Health Science Center at Houston  Houston Texas"
+        },
+        {
+          "name": "Human Genome Sequencing Center Baylor College of Medicine  Houston Texas"
+        }
+      ],
+      "family": "Boerwinkle",
+      "given": "Eric",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Center for Human Genetics Research Massachusetts General Hospital  Boston Massachusetts"
+        },
+        {
+          "name": "Program in Medical and Population Genetics Broad Institute of MIT and Harvard  Cambridge Massachusetts"
+        }
+      ],
+      "family": "Manning",
+      "given": "Alisa K.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9510-4923",
+      "affiliation": [
+        {
+          "name": "Human Genetics Center, Department of Epidemiology, Human Genetics and Environmental Sciences, School of Public Health The University of Texas Health Science Center at Houston  Houston Texas"
+        },
+        {
+          "name": "Center for Precision Health, School of Public Health and School of Biomedical Informatics The University of Texas Health Science Center at Houston  Houston Texas"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Chen",
+      "given": "Han",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        31
+      ]
+    ],
+    "date-time": "2020-08-31T05:49:41Z",
+    "timestamp": 1598852981000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        4
+      ]
+    ],
+    "date-time": "2023-09-04T23:11:52Z",
+    "timestamp": 1693869112000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "award": [
+        "R00 HL130593",
+        "R01 HL145025"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        15
+      ]
+    ],
+    "date-time": "2024-04-15T08:43:27Z",
+    "timestamp": 1713170607275
+  },
+  "is-referenced-by-count": 15,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        30
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            30
+          ]
+        ],
+        "date-time": "2020-08-30T00:00:00Z",
+        "timestamp": 1598745600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22351",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22351",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22351",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "908-923",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        30
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        30
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1016/j.ajhg.2019.10.008",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_2_1"
+    },
+    {
+      "DOI": "10.1136/bmj.310.6973.170",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_3_1"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_4_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.12.012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_5_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21703",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_6_1"
+    },
+    {
+      "DOI": "10.1159/000363347",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_7_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.12.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_8_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwr368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_9_1"
+    },
+    {
+      "DOI": "10.3389/fendo.2012.00029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_10_1"
+    },
+    {
+      "article-title": "Statistical methods for research workers. second edition, revised and enlarged. edinburgh: Oliver and boyd",
+      "author": "Fisher R. A.",
+      "first-page": "261",
+      "journal-title": "Journal of Comparative Pathology and Therapeutics",
+      "key": "e_1_2_11_11_1",
+      "volume": "41",
+      "year": "1928"
+    },
+    {
+      "author": "Hastie T.",
+      "key": "e_1_2_11_12_1",
+      "volume-title": "The elements of statistical learning data mining, inference, and prediction",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0074362",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_13_1"
+    },
+    {
+      "DOI": "10.1038/ng.2892",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_14_1"
+    },
+    {
+      "DOI": "10.1159/000099183",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_15_1"
+    },
+    {
+      "DOI": "10.1038/nn.4202",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_16_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxs014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_17_1"
+    },
+    {
+      "DOI": "10.1002/sim.8446",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_18_1"
+    },
+    {
+      "DOI": "10.1111/biom.12368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_19_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq559",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_20_1"
+    },
+    {
+      "DOI": "10.3390/ijerph14101134",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_21_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwx227",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_22_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0271-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_23_1"
+    },
+    {
+      "DOI": "10.1534/genetics.114.165035",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_24_1"
+    },
+    {
+      "DOI": "10.1038/s41467-018-06159-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_25_1"
+    },
+    {
+      "DOI": "10.1093/nar/gky1016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_26_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btx536",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_27_1"
+    },
+    {
+      "article-title": "A global reference for human genetic variation",
+      "author": "Sabeti P. C.",
+      "first-page": "7571",
+      "journal-title": "Nature",
+      "key": "e_1_2_11_28_1",
+      "volume": "526",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxw034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_29_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr341",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_30_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21717",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_31_1"
+    },
+    {
+      "DOI": "10.1111/biom.12813",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_32_1"
+    },
+    {
+      "DOI": "10.1038/2407",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_33_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.05.029",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_11_34_1"
+    }
+  ],
+  "reference-count": 33,
+  "references-count": 33,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2020.04.28.067173",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22351"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Efficient gene–environment interaction tests for large biobank‐scale sequencing studies"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

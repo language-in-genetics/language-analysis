@@ -1,0 +1,992 @@
+{
+  "DOI": "10.1186/s40246-024-00586-9",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-024-00586-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eSingle-nucleotide variants (SNVs) within gene coding sequences can significantly impact pre-mRNA splicing, bearing profound implications for pathogenic mechanisms and precision medicine. In this study, we aim to harness the well-established full-length gene splicing assay (FLGSA) in conjunction with SpliceAI to prospectively interpret the splicing effects of all potential coding SNVs within the four-exon \u003cjats:italic\u003eSPINK1\u003c/jats:italic\u003e gene, a gene associated with chronic pancreatitis.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur study began with a retrospective analysis of 27 \u003cjats:italic\u003eSPINK1\u003c/jats:italic\u003e coding SNVs previously assessed using FLGSA, proceeded with a prospective analysis of 35 new FLGSA-tested \u003cjats:italic\u003eSPINK1\u003c/jats:italic\u003e coding SNVs, followed by data extrapolation, and ended with further validation. In total, we analyzed 67 \u003cjats:italic\u003eSPINK1\u003c/jats:italic\u003e coding SNVs, which account for 9.3% of the 720 possible coding SNVs. Among these 67 FLGSA-analyzed SNVs, 12 were found to impact splicing. Through detailed comparison of FLGSA results and SpliceAI predictions, we inferred that the remaining 653 untested coding SNVs in the \u003cjats:italic\u003eSPINK1\u003c/jats:italic\u003e gene are unlikely to significantly affect splicing. Of the 12 splice-altering events, nine produced both normally spliced and aberrantly spliced transcripts, while the remaining three only generated aberrantly spliced transcripts. These splice-impacting SNVs were found solely in exons 1 and 2, notably at the first and/or last coding nucleotides of these exons. Among the 12 splice-altering events, 11 were missense variants (2.17% of 506 potential missense variants), and one was synonymous (0.61% of 164 potential synonymous variants). Notably, adjusting the SpliceAI cut-off to 0.30 instead of the conventional 0.20 would improve specificity without reducing sensitivity.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eBy integrating FLGSA with SpliceAI, we have determined that less than 2% (1.67%) of all possible coding SNVs in \u003cjats:italic\u003eSPINK1\u003c/jats:italic\u003e significantly influence splicing outcomes. Our findings emphasize the critical importance of conducting splicing analysis within the broader genomic sequence context of the study gene and highlight the inherent uncertainties associated with intermediate SpliceAI scores (0.20 to 0.80). This study contributes to the field by being the first to prospectively interpret all potential coding SNVs in a disease-associated gene with a high degree of accuracy, representing a meaningful attempt at shifting from retrospective to prospective variant analysis in the era of exome and genome sequencing.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "586"
+  ],
+  "article-number": "21",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "9 November 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "13 February 2024"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "27 February 2024"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Jian-Min Chen serves as an Associate Editor for Human Genomics but was not involved in the editorial review process or the decision to publish this article. All remaining authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Wu",
+      "given": "Hao",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Lin",
+      "given": "Jin-Huan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tang",
+      "given": "Xin-Ying",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Marenne",
+      "given": "Gaëlle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zou",
+      "given": "Wen-Bin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schutz",
+      "given": "Sacha",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Masson",
+      "given": "Emmanuelle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Génin",
+      "given": "Emmanuelle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fichou",
+      "given": "Yann",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Le Gac",
+      "given": "Gerald",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Férec",
+      "given": "Claude",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liao",
+      "given": "Zhuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Jian-Min",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        27
+      ]
+    ],
+    "date-time": "2024-02-27T12:03:01Z",
+    "timestamp": 1709035381000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        27
+      ]
+    ],
+    "date-time": "2024-02-27T16:10:58Z",
+    "timestamp": 1709050258000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "81800569",
+        "82000611",
+        "82000606",
+        "82120108006"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "award": [
+        "2020PJD061"
+      ],
+      "name": "Shanghai Pujiang Program"
+    },
+    {
+      "award": [
+        "20YF1459400"
+      ],
+      "name": "Shanghai Sailing Program"
+    },
+    {
+      "DOI": "10.13039/501100001677",
+      "doi-asserted-by": "crossref",
+      "name": "Institut National de la Santé et de la Recherche Médicale"
+    },
+    {
+      "name": "Association des Pancréatites Chroniques Héréditaires, France"
+    },
+    {
+      "name": "Association Gaétan Saleün, France"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T00:57:00Z",
+    "timestamp": 1713920220198
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        27
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            27
+          ]
+        ],
+        "date-time": "2024-02-27T00:00:00Z",
+        "timestamp": 1708992000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            27
+          ]
+        ],
+        "date-time": "2024-02-27T00:00:00Z",
+        "timestamp": 1708992000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00586-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-024-00586-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-024-00586-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        27
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        27
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1073/pnas.1101135108",
+      "author": "KH Lim",
+      "doi-asserted-by": "publisher",
+      "first-page": "11093",
+      "issue": "27",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "586_CR1",
+      "unstructured": "Lim KH, Ferraris L, Filloux ME, Raphael BJ, Fairbrother WG. Using positional distribution to identify splicing elements and predict pre-mRNA processing defects in human genes. Proc Natl Acad Sci U S A. 2011;108(27):11093–8.",
+      "volume": "108",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/nrm.2016.139",
+      "author": "KS Manning",
+      "doi-asserted-by": "publisher",
+      "first-page": "102",
+      "issue": "2",
+      "journal-title": "Nat Rev Mol Cell Biol",
+      "key": "586_CR2",
+      "unstructured": "Manning KS, Cooper TA. The roles of RNA processing in translating genotype to phenotype. Nat Rev Mol Cell Biol. 2017;18(2):102–14.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nrg775",
+      "author": "L Cartegni",
+      "doi-asserted-by": "publisher",
+      "first-page": "285",
+      "issue": "4",
+      "journal-title": "Nat Rev Genet",
+      "key": "586_CR3",
+      "unstructured": "Cartegni L, Chew SL, Krainer AR. Listening to silence and understanding nonsense: exonic mutations that affect splicing. Nat Rev Genet. 2002;3(4):285–98.",
+      "volume": "3",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.mrrev.2022.108444",
+      "author": "A Sarkar",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mutat Res Rev Mutat Res",
+      "key": "586_CR4",
+      "unstructured": "Sarkar A, Panati K, Narala VR. Code inside the codon: The role of synonymous mutations in regulating splicing machinery and its impact on disease. Mutat Res Rev Mutat Res. 2022;790: 108444.",
+      "volume": "790",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0780-y",
+      "author": "JK Aicher",
+      "doi-asserted-by": "publisher",
+      "first-page": "1181",
+      "issue": "7",
+      "journal-title": "Genet Med",
+      "key": "586_CR5",
+      "unstructured": "Aicher JK, Jewell P, Vaquero-Garcia J, Barash Y, Bhoj EJ. Mapping RNA splicing variations in clinically accessible and nonaccessible tissues to facilitate Mendelian disease diagnosis using RNA-seq. Genet Med. 2020;22(7):1181–90.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41436-020-0766-9",
+      "author": "HA Wai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1005",
+      "issue": "6",
+      "journal-title": "Genet Med",
+      "key": "586_CR6",
+      "unstructured": "Wai HA, Lord J, Lyon M, Gunning A, Kelly H, Cibin P, et al. Blood RNA analysis can increase clinical diagnostic rate and resolve variants of uncertain significance. Genet Med. 2020;22(6):1005–14.",
+      "volume": "22",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/978-1-60761-759-4_15",
+      "author": "P Gaildrat",
+      "doi-asserted-by": "publisher",
+      "first-page": "249",
+      "journal-title": "Methods Mol Biol",
+      "key": "586_CR7",
+      "unstructured": "Gaildrat P, Killian A, Martins A, Tournier I, Frebourg T, Tosi M. Use of splicing reporter minigene assay to evaluate the effect on splicing of unclassified genetic variants. Methods Mol Biol. 2010;653:249–57.",
+      "volume": "653",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1136/gutjnl-2017-313948",
+      "author": "H Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2195",
+      "issue": "12",
+      "journal-title": "Gut",
+      "key": "586_CR8",
+      "unstructured": "Wu H, Boulling A, Cooper DN, Li ZS, Liao Z, Chen JM, et al. In vitro and in silico evidence against a significant effect of the SPINK1 c.194G\u003eA variant on pre-mRNA splicing. Gut. 2017;66(12):2195–6.",
+      "volume": "66",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3389/fgene.2021.701652",
+      "author": "JH Lin",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Genet",
+      "key": "586_CR9",
+      "unstructured": "Lin JH, Wu H, Zou WB, Masson E, Fichou Y, Le Gac G, et al. Splicing outcomes of 5’ splice site GT\u003eGC variants that generate wild-type transcripts differ significantly between full-length and minigene splicing assays. Front Genet. 2021;12: 701652.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nrg3778",
+      "author": "XD Fu",
+      "doi-asserted-by": "publisher",
+      "first-page": "689",
+      "issue": "10",
+      "journal-title": "Nat Rev Genet",
+      "key": "586_CR10",
+      "unstructured": "Fu XD, Ares M Jr. Context-dependent control of alternative splicing by RNA-binding proteins. Nat Rev Genet. 2014;15(10):689–701.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2019.11.017",
+      "author": "HL Drexler",
+      "doi-asserted-by": "publisher",
+      "first-page": "985",
+      "issue": "5",
+      "journal-title": "Mol Cell",
+      "key": "586_CR11",
+      "unstructured": "Drexler HL, Choquet K, Churchman LS. Splicing kinetics and coordination revealed by direct nascent RNA sequencing through nanopores. Mol Cell. 2020;77(5):985–98.",
+      "volume": "77",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.12.015",
+      "author": "K Jaganathan",
+      "doi-asserted-by": "publisher",
+      "first-page": "535",
+      "issue": "3",
+      "journal-title": "Cell",
+      "key": "586_CR12",
+      "unstructured": "Jaganathan K, Kyriazopoulou Panagiotopoulou S, McRae JF, Darbandi SF, Knowles D, Li YI, et al. Predicting splicing from primary sequence with deep learning. Cell. 2019;176(3):535–48.",
+      "volume": "176",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fgene.2021.689892",
+      "author": "J Lord",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Genet",
+      "key": "586_CR13",
+      "unstructured": "Lord J, Baralle D. Splicing in the diagnosis of rare disease: advances and challenges. Front Genet. 2021;12: 689892.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-022-29271-y",
+      "author": "R Dawes",
+      "doi-asserted-by": "publisher",
+      "first-page": "1655",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "586_CR14",
+      "unstructured": "Dawes R, Joshi H, Cooper ST. Empirical prediction of variant-activated cryptic splice donors using population-based RNA-Seq data. Nat Commun. 2022;13(1):1655.",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.pan.2023.04.004",
+      "author": "E Masson",
+      "doi-asserted-by": "publisher",
+      "first-page": "491",
+      "issue": "5",
+      "journal-title": "Pancreatology",
+      "key": "586_CR15",
+      "unstructured": "Masson E, Zou WB, Pu N, Rebours V, Genin E, Wu H, et al. Classification of PRSS1 variants responsible for chronic pancreatitis: An expert perspective from the Franco-Chinese GREPAN study group. Pancreatology. 2023;23(5):491–506.",
+      "volume": "23",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2023.06.002",
+      "author": "LC Walker",
+      "doi-asserted-by": "publisher",
+      "first-page": "1046",
+      "issue": "7",
+      "journal-title": "Am J Hum Genet",
+      "key": "586_CR16",
+      "unstructured": "Walker LC, Hoya M, Wiggins GAR, Lindy A, Vincent LM, Parsons MT, et al. Using the ACMG/AMP framework to capture evidence related to predicted and observed impact on splicing: recommendations from the ClinGen SVI Splicing Subgroup. Am J Hum Genet. 2023;110(7):1046–67.",
+      "volume": "110",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1186/s12944-023-01898-w",
+      "author": "G Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "128",
+      "issue": "1",
+      "journal-title": "Lipids Health Dis",
+      "key": "586_CR17",
+      "unstructured": "Zhang G, Hu Y, Yang Q, Pu N, Li G, Zhang J, et al. Frameshift coding sequence variants in the LPL gene: identification of two novel events and exploration of the genotype-phenotype relationship for variants reported to date. Lipids Health Dis. 2023;22(1):128.",
+      "volume": "22",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1053/j.ajkd.2023.12.011",
+      "author": "F Richter",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Am J Kidney Dis",
+      "key": "586_CR18",
+      "unstructured": "Richter F, Rutherford KD, Cooke AJ, Meshkati M, Eddy-Abrams V, Greene D, et al. A deep intronic PKHD1 variant identified by SpliceAI in a deceased neonate with autosomal recessive polycystic kidney disease. Am J Kidney Dis. 2024. https://doi.org/10.1053/j.ajkd.2023.12.011.",
+      "year": "2024"
+    },
+    {
+      "DOI": "10.1038/s10038-024-01219-8",
+      "author": "Y Inoue",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Hum Genet",
+      "key": "586_CR19",
+      "unstructured": "Inoue Y, Tsuchida N, Kim CA, de Oliveira SB, Castro MAA, Honjo RS, et al. Novel compound heterozygous ABCA2 variants cause IDPOGSA, a variable phenotypic syndrome with intellectual disability. J Hum Genet. 2024. https://doi.org/10.1038/s10038-024-01219-8.",
+      "year": "2024"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "issue": "5",
+      "journal-title": "Genet Med",
+      "key": "586_CR20",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, et al. Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med. 2015;17(5):405–24.",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.02.003",
+      "author": "J Shendure",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "issue": "1",
+      "journal-title": "Cell",
+      "key": "586_CR21",
+      "unstructured": "Shendure J, Findlay GM, Snyder MW. Genomic medicine-progress, pitfalls, and promise. Cell. 2019;177(1):45–57.",
+      "volume": "177",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.07.014",
+      "author": "LM Starita",
+      "doi-asserted-by": "publisher",
+      "first-page": "315",
+      "issue": "3",
+      "journal-title": "Am J Hum Genet",
+      "key": "586_CR22",
+      "unstructured": "Starita LM, Ahituv N, Dunham MJ, Kitzman JO, Roth FP, Seelig G, et al. Variant interpretation: functional assays to the rescue. Am J Hum Genet. 2017;101(3):315–25.",
+      "volume": "101",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nprot.2016.135",
+      "author": "M Gasperini",
+      "doi-asserted-by": "publisher",
+      "first-page": "1782",
+      "issue": "10",
+      "journal-title": "Nat Protoc",
+      "key": "586_CR23",
+      "unstructured": "Gasperini M, Starita L, Shendure J. The power of multiplexed functional analysis of genetic variants. Nat Protoc. 2016;11(10):1782–7.",
+      "volume": "11",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0461-z",
+      "author": "GM Findlay",
+      "doi-asserted-by": "publisher",
+      "first-page": "217",
+      "issue": "7726",
+      "journal-title": "Nature",
+      "key": "586_CR24",
+      "unstructured": "Findlay GM, Daza RM, Martin B, Zhang MD, Leith AP, Gasperini M, et al. Accurate classification of BRCA1 variants with saturation genome editing. Nature. 2018;562(7726):217–22.",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/76088",
+      "author": "H Witt",
+      "doi-asserted-by": "publisher",
+      "first-page": "213",
+      "issue": "2",
+      "journal-title": "Nat Genet",
+      "key": "586_CR25",
+      "unstructured": "Witt H, Luck W, Hennies HC, Classen M, Kage A, Lass U, et al. Mutations in the gene encoding the serine protease inhibitor, Kazal type 1 are associated with chronic pancreatitis. Nat Genet. 2000;25(2):213–6.",
+      "volume": "25",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1136/gutjnl-2011-300645",
+      "author": "J Rosendahl",
+      "doi-asserted-by": "publisher",
+      "first-page": "582",
+      "issue": "4",
+      "journal-title": "Gut",
+      "key": "586_CR26",
+      "unstructured": "Rosendahl J, Landt O, Bernadova J, Kovacs P, Teich N, Bodeker H, et al. CFTR, SPINK1, CTRC and PRSS1 variants in chronic pancreatitis: is the role of mutated CFTR overestimated? Gut. 2013;62(4):582–92.",
+      "volume": "62",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0073522",
+      "author": "E Masson",
+      "doi-asserted-by": "publisher",
+      "issue": "8",
+      "journal-title": "PLoS ONE",
+      "key": "586_CR27",
+      "unstructured": "Masson E, Chen JM, Audrezet MP, Cooper DN, Férec C. A conservative assessment of the major genetic causes of idiopathic chronic pancreatitis: data from a comprehensive analysis of PRSS1, SPINK1, CTRC and CFTR genes in 253 young French patients. PLoS ONE. 2013;8(8):e73522.",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41424-018-0069-5",
+      "author": "WB Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "204",
+      "issue": "11",
+      "journal-title": "Clin Transl Gastroenterol",
+      "key": "586_CR28",
+      "unstructured": "Zou WB, Tang XY, Zhou DZ, Qian YY, Hu LH, Yu FF, et al. SPINK1, PRSS1, CTRC, and CFTR genotypes influence disease onset and clinical outcomes in chronic pancreatitis. Clin Transl Gastroenterol. 2018;9(11):204.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/0006-291X(85)91176-3",
+      "author": "T Yamamoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "605",
+      "issue": "2",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "586_CR29",
+      "unstructured": "Yamamoto T, Nakamura Y, Nishide J, Emi M, Ogawa M, Mori T, et al. Molecular cloning and nucleotide sequence of human pancreatic secretory trypsin inhibitor (PSTI) cDNA. Biochem Biophys Res Commun. 1985;132(2):605–12.",
+      "volume": "132",
+      "year": "1985"
+    },
+    {
+      "DOI": "10.1016/0006-291X(87)90415-3",
+      "author": "A Horii",
+      "doi-asserted-by": "publisher",
+      "first-page": "635",
+      "issue": "2",
+      "journal-title": "Biochem Biophys Res Commun",
+      "key": "586_CR30",
+      "unstructured": "Horii A, Kobayashi T, Tomita N, Yamamoto T, Fukushige S, Murotsu T, et al. Primary structure of human pancreatic secretory trypsin inhibitor (PSTI) gene. Biochem Biophys Res Commun. 1987;149(2):635–41.",
+      "volume": "149",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1007/s10620-017-4601-3",
+      "author": "E Hegyi",
+      "doi-asserted-by": "publisher",
+      "first-page": "1692",
+      "issue": "7",
+      "journal-title": "Dig Dis Sci",
+      "key": "586_CR31",
+      "unstructured": "Hegyi E, Sahin-Tóth M. Genetic risk in chronic pancreatitis: the trypsin-dependent pathway. Dig Dis Sci. 2017;62(7):1692–701.",
+      "volume": "62",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s40246-022-00407-x",
+      "author": "E Masson",
+      "doi-asserted-by": "publisher",
+      "first-page": "31",
+      "issue": "1",
+      "journal-title": "Hum Genomics",
+      "key": "586_CR32",
+      "unstructured": "Masson E, Zou WB, Genin E, Cooper DN, Le Gac G, Fichou Y, et al. Expanding ACMG variant classification guidelines into a general framework. Hum Genomics. 2022;16(1):31.",
+      "volume": "16",
+      "year": "2022"
+    },
+    {
+      "author": "A Boulling",
+      "first-page": "WMC003084",
+      "journal-title": "WebmedCentral. GENETICS.",
+      "key": "586_CR33",
+      "unstructured": "Boulling A, Chen JM, Callebaut I, Férec C. Is the SPINK1 p.Asn34Ser missense mutation per se the true culprit within its associated haplotype? WebmedCentral GENETICS. 2012;3:WMC003084.",
+      "volume": "3",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1136/gutjnl-2015-311168",
+      "author": "WB Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "884",
+      "issue": "5",
+      "journal-title": "Gut",
+      "key": "586_CR34",
+      "unstructured": "Zou WB, Boulling A, Masson E, Cooper DN, Liao Z, Li ZS, et al. Clarifying the clinical relevance of SPINK1 intronic variants in chronic pancreatitis. Gut. 2016;65(5):884–6.",
+      "volume": "65",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1136/gutjnl-2016-311428",
+      "author": "WB Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1055",
+      "issue": "6",
+      "journal-title": "Gut",
+      "key": "586_CR35",
+      "unstructured": "Zou WB, Masson E, Boulling A, Cooper DN, Li ZS, Liao Z, et al. Digging deeper into the intronic sequences of the SPINK1 gene. Gut. 2016;65(6):1055–6.",
+      "volume": "65",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s40246-017-0103-9",
+      "author": "WB Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "issue": "1",
+      "journal-title": "Hum Genomics",
+      "key": "586_CR36",
+      "unstructured": "Zou WB, Wu H, Boulling A, Cooper DN, Li ZS, Liao Z, et al. In silico prioritization and further functional characterization of SPINK1 intronic variants. Hum Genomics. 2017;11(1):7.",
+      "volume": "11",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s40246-019-0193-7",
+      "author": "XY Tang",
+      "doi-asserted-by": "publisher",
+      "first-page": "8",
+      "issue": "1",
+      "journal-title": "Hum Genomics",
+      "key": "586_CR37",
+      "unstructured": "Tang XY, Lin JH, Zou WB, Masson E, Boulling A, Deng SJ, et al. Toward a clinical diagnostic pipeline for SPINK1 intronic variants. Hum Genomics. 2019;13(1):8.",
+      "volume": "13",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3390/genes8100263",
+      "author": "H Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "263",
+      "issue": "10",
+      "journal-title": "Genes (Basel)",
+      "key": "586_CR38",
+      "unstructured": "Wu H, Boulling A, Cooper DN, Li ZS, Liao Z, Férec C, et al. Analysis of the impact of known SPINK1 missense variants on pre-mRNA splicing and/or mRNA stability in a full-length gene assay. Genes (Basel). 2017;8(10):263.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/humu.23821",
+      "author": "JH Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1856",
+      "issue": "10",
+      "journal-title": "Hum Mutat",
+      "key": "586_CR39",
+      "unstructured": "Lin JH, Tang XY, Boulling A, Zou WB, Masson E, Fichou Y, et al. First estimate of the scale of canonical 5’ splice site GT\u003eGC variants capable of generating wild-type transcripts. Hum Mutat. 2019;40(10):1856–73.",
+      "volume": "40",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1136/gut.2006.095752",
+      "author": "K Kume",
+      "doi-asserted-by": "publisher",
+      "first-page": "1214",
+      "issue": "8",
+      "journal-title": "Gut",
+      "key": "586_CR40",
+      "unstructured": "Kume K, Masamune A, Kikuta K, Shimosegawa T. [-215G\u003eA; IVS3+2T\u003eC] mutation in the SPINK1 gene causes exon 3 skipping and loss of the trypsin binding site. Gut. 2006;55(8):1214.",
+      "volume": "55",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.2174/1389202921666200210141701",
+      "author": "JM Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "issue": "1",
+      "journal-title": "Curr Genomics",
+      "key": "586_CR41",
+      "unstructured": "Chen JM, Lin JH, Masson E, Liao Z, Férec C, Cooper DN, et al. The experimentally obtained functional impact assessments of 5’ splice site GT\u003eGC variants differ markedly from those predicted. Curr Genomics. 2020;21(1):56–66.",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1620/tjem.221.197",
+      "author": "Y Ota",
+      "doi-asserted-by": "publisher",
+      "first-page": "197",
+      "issue": "3",
+      "journal-title": "Tohoku J Exp Med",
+      "key": "586_CR42",
+      "unstructured": "Ota Y, Masamune A, Inui K, Kume K, Shimosegawa T, Kikuyama M. Phenotypic variability of the homozygous IVS3+2T\u003eC mutation in the serine protease inhibitor Kazal type 1 (SPINK1) gene in patients with chronic pancreatitis. Tohoku J Exp Med. 2010;221(3):197–201.",
+      "volume": "221",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/humu.23343",
+      "author": "T Venet",
+      "doi-asserted-by": "publisher",
+      "first-page": "1660",
+      "issue": "12",
+      "journal-title": "Hum Mutat",
+      "key": "586_CR43",
+      "unstructured": "Venet T, Masson E, Talbotec C, Billiemaz K, Touraine R, Gay C, et al. Severe infantile isolated exocrine pancreatic insufficiency caused by the complete functional loss of the SPINK1 gene. Hum Mutat. 2017;38(12):1660–5.",
+      "volume": "38",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1101/2023.11.14.23298498",
+      "doi-asserted-by": "publisher",
+      "key": "586_CR44",
+      "unstructured": "Wu H, Lin JH, Tang XY, Zou WB, Schutz S, Masson E, Fichou F, Le Gac G, Férec C, Liao Z, Chen JM. medRxiv 2023.11.14.23298498; doi: https://doi.org/10.1101/2023.11.14.23298498"
+    },
+    {
+      "DOI": "10.1038/s41586-022-04558-8",
+      "author": "J Morales",
+      "doi-asserted-by": "publisher",
+      "first-page": "310",
+      "issue": "7905",
+      "journal-title": "Nature",
+      "key": "586_CR45",
+      "unstructured": "Morales J, Pujar S, Loveland JE, Astashyn A, Bennett R, Berry A, et al. A joint NCBI and EMBL-EBI transcript set for clinical genomics and research. Nature. 2022;604(7905):310–5.",
+      "volume": "604",
+      "year": "2022"
+    },
+    {
+      "key": "586_CR46",
+      "unstructured": "Illumina precomputed SpliceAI scores. https://github.com/Illumina/SpliceAI (version 1.3). Accessed 18 February 2020."
+    },
+    {
+      "key": "586_CR47",
+      "unstructured": "SpliceAI Virtual website. https://mobidetails.iurc.montp.inserm.fr/MD. Accessed 29 September 2023."
+    },
+    {
+      "key": "586_CR48",
+      "unstructured": "SpliceAI Lookup. https://spliceailookup.broadinstitute.org/. Accessed 16 October 2023."
+    },
+    {
+      "key": "586_CR49",
+      "unstructured": "ImageJ. https://imagej.net/. Accessed 18 October 2023."
+    },
+    {
+      "key": "586_CR50",
+      "unstructured": "ChatGPT-4. https://chat.openai.com/. Last accessed 05 February 2024."
+    },
+    {
+      "key": "586_CR51",
+      "unstructured": "SPINK1. https://www.ncbi.nlm.nih.gov/gene/6690. Accessed 16 October 2023."
+    },
+    {
+      "DOI": "10.1093/nar/gky372",
+      "author": "R Leman",
+      "doi-asserted-by": "publisher",
+      "first-page": "7913",
+      "issue": "15",
+      "journal-title": "Nucleic Acids Res",
+      "key": "586_CR52",
+      "unstructured": "Leman R, Gaildrat P, Gac GL, Ka C, Fichou Y, Audrezet MP, et al. Novel diagnostic tool for prediction of variant spliceogenicity derived from a set of 395 combined in silico/in vitro studies: an international collaborative effort. Nucleic Acids Res. 2018;46(15):7913–23.",
+      "volume": "46",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/humu.24491",
+      "author": "R Leman",
+      "doi-asserted-by": "publisher",
+      "first-page": "2308",
+      "issue": "12",
+      "journal-title": "Hum Mutat",
+      "key": "586_CR53",
+      "unstructured": "Leman R, Parfait B, Vidaud D, Girodon E, Pacot L, Le Gac G, et al. SPiP: Splicing Prediction Pipeline, a machine learning tool for massive detection of exonic and intronic variant effects on mRNA splicing. Hum Mutat. 2022;43(12):2308–23.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1007/s00439-023-02624-3",
+      "author": "J Lord",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Hum Genet",
+      "key": "586_CR54",
+      "unstructured": "Lord J, Oquendo CJ, Wai HA, Douglas AGL, Bunyan DJ, Wang Y, et al. Predicting the impact of rare variants on RNA splicing in CAGI6. Hum Genet. 2024. https://doi.org/10.1007/s00439-023-02624-3.",
+      "year": "2024"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01293-8",
+      "author": "R Dawes",
+      "doi-asserted-by": "publisher",
+      "first-page": "324",
+      "issue": "2",
+      "journal-title": "Nat Genet",
+      "key": "586_CR55",
+      "unstructured": "Dawes R, Bournazos AM, Bryen SJ, Bommireddipalli S, Marchant RG, Joshi H, et al. SpliceVault predicts the precise nature of variant-associated mis-splicing. Nat Genet. 2023;55(2):324–32.",
+      "volume": "55",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1002/humu.24212",
+      "author": "TV Riepe",
+      "doi-asserted-by": "publisher",
+      "first-page": "799",
+      "issue": "7",
+      "journal-title": "Hum Mutat",
+      "key": "586_CR56",
+      "unstructured": "Riepe TV, Khan M, Roosing S, Cremers FPM, Hoen PAC. Benchmarking deep learning splice prediction tools using functional splice assays. Hum Mutat. 2021;42(7):799–810.",
+      "volume": "42",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13059-023-03144-z",
+      "author": "C Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "294",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "586_CR57",
+      "unstructured": "Smith C, Kitzman JO. Benchmarking splice variant prediction algorithms using massively parallel splicing assays. Genome Biol. 2023;24(1):294.",
+      "volume": "24",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1186/s40246-023-00451-1",
+      "author": "JM de Sainte Agathe",
+      "doi-asserted-by": "publisher",
+      "first-page": "7",
+      "issue": "1",
+      "journal-title": "Hum Genomics",
+      "key": "586_CR58",
+      "unstructured": "de Sainte Agathe JM, Filser M, Isidor B, Besnard T, Gueguen P, Perrin A, et al. SpliceAI-visual: a free online tool to improve SpliceAI splicing variant interpretation. Hum Genomics. 2023;17(1):7.",
+      "volume": "17",
+      "year": "2023"
+    }
+  ],
+  "reference-count": 58,
+  "references-count": 58,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2023.11.14.23298498",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-024-00586-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Combining full-length gene assay and SpliceAI to interpret the splicing impact of all possible SPINK1 coding variants"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "18"
+}

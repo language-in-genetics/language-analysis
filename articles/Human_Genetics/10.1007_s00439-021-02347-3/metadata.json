@@ -1,0 +1,891 @@
+{
+  "DOI": "10.1007/s00439-021-02347-3",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-021-02347-3",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe highly conserved YrdC domain-containing protein (YRDC) interacts with the well-described KEOPS complex, regulating specific tRNA modifications to ensure accurate protein synthesis. Previous studies have linked the KEOPS complex to a role in promoting telomere maintenance and controlling genome integrity. Here, we report on a newborn with a severe neonatal progeroid phenotype including generalized loss of subcutaneous fat, microcephaly, growth retardation, wrinkled skin, renal failure, and premature death at the age of 12 days. By trio whole-exome sequencing, we identified a novel homozygous missense mutation, c.662T \u0026gt; C, in \u003cjats:italic\u003eYRDC\u003c/jats:italic\u003e affecting an evolutionary highly conserved amino acid (p.Ile221Thr). Functional characterization of patient-derived dermal fibroblasts revealed that this mutation impairs YRDC function and consequently results in reduced t\u003cjats:sup\u003e6\u003c/jats:sup\u003eA modifications of tRNAs. Furthermore, we established and performed a novel and highly sensitive 3-D Q-FISH analysis based on single-telomere detection to investigate the impact of YRDC on telomere maintenance. This analysis revealed significant telomere shortening in YRDC-mutant cells. Moreover, single-cell RNA sequencing analysis of YRDC-mutant fibroblasts revealed significant transcriptome-wide changes in gene expression, specifically enriched for genes associated with processes involved in DNA repair. We next examined the DNA damage response of patient’s dermal fibroblasts and detected an increased susceptibility to genotoxic agents and a global DNA double-strand break repair defect. Thus, our data suggest that YRDC may affect the maintenance of genomic stability. Together, our findings indicate that biallelic variants in \u003cjats:italic\u003eYRDC\u003c/jats:italic\u003e result in a developmental disorder with progeroid features and might be linked to increased genomic instability and telomere shortening.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2347"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "6 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "13 August 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "20 September 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors have declared that no conflict of interest exists."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The study was approved by the Ethics Committee of University Medical Center Göttingen (approval number 3/2/16) and performed in accordance with the Declaration of Helsinki protocols."
+    },
+    {
+      "group": {
+        "label": "Informed consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Written informed consent was obtained from all participants or their legal representatives prior to the participation in the study, and DNA from participating family members was extracted from peripheral blood lymphocytes by standard extraction procedures."
+    },
+    {
+      "group": {
+        "label": "Informed consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 5,
+      "value": "Consent for publication was obtained from all participants."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-5942-2924",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Schmidt",
+      "given": "Julia",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Goergens",
+      "given": "Jonas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pochechueva",
+      "given": "Tatiana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kotter",
+      "given": "Annika",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schwenzer",
+      "given": "Niko",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sitte",
+      "given": "Maren",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Werner",
+      "given": "Gesa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Altmüller",
+      "given": "Janine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thiele",
+      "given": "Holger",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nürnberg",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Isensee",
+      "given": "Jörg",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Yun",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Müller",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Leube",
+      "given": "Barbara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Reinhardt",
+      "given": "H. Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hucho",
+      "given": "Tim",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Salinas",
+      "given": "Gabriela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Helm",
+      "given": "Mark",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jachimowicz",
+      "given": "Ron D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wieczorek",
+      "given": "Dagmar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kohl",
+      "given": "Tobias",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lehnart",
+      "given": "Stephan E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yigit",
+      "given": "Gökhan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wollnik",
+      "given": "Bernd",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        9,
+        20
+      ]
+    ],
+    "date-time": "2021-09-20T16:31:03Z",
+    "timestamp": 1632155463000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        28
+      ]
+    ],
+    "date-time": "2021-10-28T12:04:45Z",
+    "timestamp": 1635422685000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001659",
+      "award": [
+        "SPP 1784",
+        "FOR 2800",
+        "FOR 2800",
+        "EXC 2067",
+        "EXC 2067",
+        "SFB 1002",
+        "SFB 1002",
+        "A09",
+        "S02",
+        "D02"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    },
+    {
+      "DOI": "10.13039/501100003385",
+      "doi-asserted-by": "crossref",
+      "name": "Georg-August-Universität Göttingen"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        25
+      ]
+    ],
+    "date-time": "2022-11-25T00:19:53Z",
+    "timestamp": 1669335593283
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "12",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        9,
+        20
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "12",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            20
+          ]
+        ],
+        "date-time": "2021-09-20T00:00:00Z",
+        "timestamp": 1632096000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            20
+          ]
+        ],
+        "date-time": "2021-09-20T00:00:00Z",
+        "timestamp": 1632096000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02347-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-021-02347-3/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02347-3.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1679-1693",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        9,
+        20
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        9,
+        20
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1186/s13059-016-1110-1",
+      "doi-asserted-by": "crossref",
+      "key": "2347_CR1001",
+      "unstructured": "Acuna-Hidalgo R, Veltman JA, Hoischen A (2016) New insights into the generation and role of de novo mutations in health and disease. Genome Biol 17(1)"
+    },
+    {
+      "DOI": "10.1038/s41467-019-11951-x",
+      "author": "C Arrondel",
+      "doi-asserted-by": "publisher",
+      "first-page": "3967",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "2347_CR1",
+      "unstructured": "Arrondel C, Missoury S, Snoek R, Patat J, Menara G, Collinet B, Liger D, Durand D, Gribouval O, Boyer O, Buscara L, Martin G, Machuca E, Nevo F, Lescop E, Braun DA, Boschat A-C, Sanquer S, Guerrera IC, Revy P, Parisot M, Masson C, Boddaert N, Charbit M, Decramer S, Novo R, Macher M-A, Ranchin B, Bacchetta J, Laurent A, Collardeau-Frachon S, van Eerde AM, Hildebrandt F, Magen D, Antignac C, van Tilbeurgh H, Mollet G (2019) Defects in t6A tRNA modification due to GON7 and YRDC mutations lead to Galloway-Mowat syndrome. Nat Commun 10(1):3967",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/350569a0",
+      "author": "EH Blackburn",
+      "doi-asserted-by": "publisher",
+      "first-page": "569",
+      "issue": "6319",
+      "journal-title": "Nature",
+      "key": "2347_CR2",
+      "unstructured": "Blackburn EH (1991) Structure and function of telomeres. Nature 350(6319):569–573",
+      "volume": "350",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1038/ng.3933",
+      "author": "DA Braun",
+      "doi-asserted-by": "publisher",
+      "first-page": "1529",
+      "issue": "10",
+      "journal-title": "Nat Genet",
+      "key": "2347_CR3",
+      "unstructured": "Braun DA, Rao J, Mollet G, Schapiro D, Daugeron M-C, Tan W, Gribouval O, Boyer O, Revy P, Jobst-Schwan T, Schmidt JM, Lawson JA, Schanze D, Ashraf S, Ullmann JFP, Hoogstraten CA, Boddaert N, Collinet B, Martin G, Liger D, Lovric S, Furlano M, Guerrera IC, Sanchez-Ferras O, Hu JF, Boschat A-C, Sanquer S, Menten B, Vergult S, de Rocker N, Airik M, Hermle T, Shril S, Widmeier E, Gee HY, Choi W-I, Sadowski CE, Pabst WL, Warejko JK, Daga A, Basta T, Matejas V, Scharmann K, Kienast SD, Behnam B, Beeson B, Begtrup A, Bruce M, Ch’ng G-S, Lin S-P, Chang J-H, Chen C-H, Cho MT, Gaffney PM, Gipson PE, Hsu C-H, Kari JA, Ke Y-Y, Kiraly-Borri C, Lai W-M, Lemyre E, Littlejohn RO, Masri A, Moghtaderi M, Nakamura K, Ozaltin F, Praet M, Prasad C, Prytula A, Roeder ER, Rump P, Schnur RE, Shiihara T, Sinha MD, Soliman NA, Soulami K, Sweetser DA, Tsai W-H, Tsai J-D, Topaloglu R, Vester U, Viskochil DH, Vatanavicharn N, Waxler JL, Wierenga KJ, Wolf MTF, Wong S-N, Leidel SA, Truglio G, Dedon PC, Poduri A, Mane S, Lifton RP, Bouchard M, Kannu P, Chitayat D, Magen D, Callewaert B, van Tilbeurgh H, Zenker M, Antignac C, Hildebrandt F (2017) Mutations in KEOPS-complex genes cause nephrotic syndrome with primary microcephaly. Nat Genet 49(10):1529–1538",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1242/dmm.024711",
+      "author": "D Carrero",
+      "doi-asserted-by": "publisher",
+      "first-page": "719",
+      "issue": "7",
+      "journal-title": "Dis Model Mech",
+      "key": "2347_CR4",
+      "unstructured": "Carrero D, Soria-Valles C, López-Otín C (2016) Hallmarks of progeroid syndromes: lessons from mice and reprogrammed cells. Dis Model Mech 9(7):719–735",
+      "volume": "9",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.ejphar.2014.07.025",
+      "author": "S Dasari",
+      "doi-asserted-by": "publisher",
+      "first-page": "364",
+      "journal-title": "Eur J Pharmacol",
+      "key": "2347_CR5",
+      "unstructured": "Dasari S, Tchounwou PB (2014) Cisplatin in cancer therapy: molecular mechanisms of action. Eur J Pharmacol 740:364–378",
+      "volume": "740",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gkr178",
+      "author": "M-C Daugeron",
+      "doi-asserted-by": "publisher",
+      "first-page": "6148",
+      "issue": "14",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2347_CR6",
+      "unstructured": "Daugeron M-C, Lenstra TL, Frizzarin M, El Yacoubi B, Liu X, Baudin-Baillieu A, Lijnzaad P, Decourty L, Saveanu C, Jacquier A, Holstege FCP, de Crécy-Lagard V, van Tilbeurgh H, Libri D (2011) Gcn4 misregulation reveals a direct role for the evolutionary conserved EKC/KEOPS in the t6A modification of tRNAs. Nucleic Acids Res 39(14):6148–6160",
+      "volume": "39",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1101/gad.1346005",
+      "author": "T de Lange",
+      "doi-asserted-by": "publisher",
+      "first-page": "2100",
+      "issue": "18",
+      "journal-title": "Genes Dev",
+      "key": "2347_CR7",
+      "unstructured": "de Lange T (2005) Shelterin: the protein complex that shapes and safeguards human telomeres. Genes Dev 19(18):2100–2110",
+      "volume": "19",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/s41580-020-00314-w",
+      "author": "R Di Micco",
+      "doi-asserted-by": "publisher",
+      "first-page": "75",
+      "issue": "2",
+      "journal-title": "Nat Rev Mol Cell Biol",
+      "key": "2347_CR8",
+      "unstructured": "Di Micco R, Krizhanovsky V, Baker D, Di d’Adda FF (2021) Cellular senescence in ageing: from mechanisms to therapeutic opportunities. Nat Rev Mol Cell Biol 22(2):75–95",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cell.2005.12.044",
+      "author": "M Downey",
+      "doi-asserted-by": "publisher",
+      "first-page": "1155",
+      "issue": "6",
+      "journal-title": "Cell",
+      "key": "2347_CR9",
+      "unstructured": "Downey M, Houlsworth R, Maringele L, Rollie A, Brehme M, Galicia S, Guillard S, Partington M, Zubko MK, Krogan NJ, Emili A, Greenblatt JF, Harrington L, Lydall D, Durocher D (2006) A genome-wide screen identifies the evolutionarily conserved KEOPS complex as a telomere regulator. Cell 124(6):1155–1168",
+      "volume": "124",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/nar/gkp152",
+      "author": "B El Yacoubi",
+      "doi-asserted-by": "publisher",
+      "first-page": "2894",
+      "issue": "9",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2347_CR10",
+      "unstructured": "El Yacoubi B, Lyons B, Cruz Y, Reddy R, Nordin B, Agnelli F, Williamson JR, Schimmel P, Swairjo MA, de Crécy-Lagard V (2009) The universal YrdC/Sua5 family is required for the formation of threonylcarbamoyladenosine in tRNA. Nucleic Acids Res 37(9):2894–2909",
+      "volume": "37",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/emboj.2010.363",
+      "author": "B El Yacoubi",
+      "doi-asserted-by": "publisher",
+      "first-page": "882",
+      "issue": "5",
+      "journal-title": "EMBO J",
+      "key": "2347_CR11",
+      "unstructured": "El Yacoubi B, Hatin I, Deutsch C, Kahveci T, Rousset J-P, Iwata-Reuyl D, Murzin AG, de Crécy-Lagard V (2011) A role for the universal Kae1/Qri7/YgjD (COG0533) family in tRNA modification. EMBO J 30(5):882–893",
+      "volume": "30",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.semcancer.2021.01.004",
+      "doi-asserted-by": "publisher",
+      "key": "2347_CR12",
+      "unstructured": "Gal H, Majewska J, Krizhanovsky V (2021) The intricate nature of senescence in development and cell plasticity. Semin Cancer Biol. S1044-579X(21)00010-9. https://doi.org/10.1016/j.semcancer.2021.01.004. [Epub ahead of print]. PMID: 33486077"
+    },
+    {
+      "DOI": "10.1016/j.cell.2013.12.028",
+      "author": "LB Gordon",
+      "doi-asserted-by": "publisher",
+      "first-page": "400",
+      "issue": "3",
+      "journal-title": "Cell",
+      "key": "2347_CR13",
+      "unstructured": "Gordon LB, Rothman FG, Lopez-Otin C, Misteli T (2014) Progeria: a paradigm for translational medicine. Cell 156(3):400–407",
+      "volume": "156",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/345458a0",
+      "author": "CB Harley",
+      "doi-asserted-by": "publisher",
+      "first-page": "458",
+      "issue": "6274",
+      "journal-title": "Nature",
+      "key": "2347_CR14",
+      "unstructured": "Harley CB, Futcher AB, Greider CW (1990) Telomeres shorten during ageing of human fibroblasts. Nature 345(6274):458–460",
+      "volume": "345",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1093/nar/gkz228",
+      "author": "M-H He",
+      "doi-asserted-by": "publisher",
+      "first-page": "5684",
+      "issue": "11",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2347_CR15",
+      "unstructured": "He M-H, Liu J-C, Lu Y-S, Wu Z-J, Liu Y-Y, Wu Z, Peng J, Zhou J-Q (2019) KEOPS complex promotes homologous recombination via DNA resection. Nucleic Acids Res 47(11):5684–5697",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0114749",
+      "author": "AD Herbert",
+      "doi-asserted-by": "publisher",
+      "first-page": "e114749",
+      "issue": "12",
+      "journal-title": "PLoS ONE",
+      "key": "2347_CR16",
+      "unstructured": "Herbert AD, Carr AM, Hoffmann E (2014) FindFoci: a focus detection algorithm with automated parameter training that closely matches human assignments, reduces human inconsistencies and increases speed of analysis. PLoS ONE 9(12):e114749",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.biopha.2019.108859",
+      "author": "S Huang",
+      "doi-asserted-by": "publisher",
+      "first-page": "108859",
+      "journal-title": "Biomed Pharmacother",
+      "key": "2347_CR17",
+      "unstructured": "Huang S, Zhu P, Sun B, Guo J, Zhou H, Shu Y, Li Q (2019) Modulation of YrdC promotes hepatocellular carcinoma progression via MEK/ERK signaling pathway. Biomed Pharmacother 114:108859",
+      "volume": "114",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.cell.2018.11.024",
+      "author": "RD Jachimowicz",
+      "doi-asserted-by": "publisher",
+      "first-page": "505",
+      "issue": "3",
+      "journal-title": "Cell",
+      "key": "2347_CR18",
+      "unstructured": "Jachimowicz RD, Beleggia F, Isensee J, Velpula BB, Goergens J, Bustos MA, Doll MA, Shenoy A, Checa-Rodriguez C, Wiederstein JL, Baranes-Bachar K, Bartenhagen C, Hertwig F, Teper N, Nishi T, Schmitt A, Distelmaier F, Lüdecke H-J, Albrecht B, Krüger M, Schumacher B, Geiger T, Hoon DSB, Huertas P, Fischer M, Hucho T, Peifer M, Ziv Y, Reinhardt HC, Wieczorek D, Shiloh Y (2019) UBQLN4 represses homologous recombination and is overexpressed in aggressive tumors. Cell 176(3):505-519.e22",
+      "volume": "176",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2308-7",
+      "doi-asserted-by": "publisher",
+      "key": "2347_CR19",
+      "unstructured": "Karczewski KJ, Francioli LC, Tiao G, Cummings BB, Alföldi J, Wang Q, Collins RL, Laricchia KM, Ganna A, Birnbaum DP, Gauthier LD, Brand H, Solomonson M, Watts NA, Rhodes D, Singer-Berk M, England EM, Seaby EG, Kosmicki JA, Walters RK, Tashman K, Farjoun Y, Banks E, Poterba T, Wang A, Seed C, Whiffin N, Chong JX, Samocha KE, Pierce-Hoffman E, Zappala Z, O’Donnell-Luria AH, Minikel EV, Weisburd B, Lek M, Ware JS, Vittal C, Armean IM, Bergelson L, Cibulskis K, Connolly KM, Covarrubias M, Donnelly S, Ferriera S, Gabriel S, Gentry J, Gupta N, Jeandet T, Kaplan D, Llanwarne C, Munshi R, Novod S, Petrillo N, Roazen D, Ruano-Rubio V, Saltzman A, Schleicher M, Soto J, Tibbetts K, Tolonen C, Wade G, Talkowski ME; Genome Aggregation Database Consortium, Neale BM, Daly MJ, MacArthur DG (2019) The mutational constraint spectrum quantified from variation in 141,456 humans. Nature 581(7809):434–443. https://doi.org/10.1038/s41586-020-2308-7"
+    },
+    {
+      "DOI": "10.1093/nar/gku733",
+      "author": "S Kellner",
+      "doi-asserted-by": "publisher",
+      "first-page": "e142",
+      "issue": "18",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2347_CR20",
+      "unstructured": "Kellner S, Ochel A, Thüring K, Spenkuch F, Neumann J, Sharma S, Entian K-D, Schneider D, Helm M (2014) Absolute and relative quantification of RNA modifications via biosynthetic isotopomers. Nucleic Acids Res 42(18):e142",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "author": "D Lessel",
+      "first-page": "489",
+      "issue": "29–30",
+      "journal-title": "Deutsches Arzteblatt International",
+      "key": "2347_CR21",
+      "unstructured": "Lessel D, Kubisch C (2019) Hereditary syndromes with signs of premature aging. Deutsches Arzteblatt International 116(29–30):489–496",
+      "volume": "116",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-018-04250-4",
+      "author": "H Lin",
+      "doi-asserted-by": "publisher",
+      "first-page": "1875",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "2347_CR22",
+      "unstructured": "Lin H, Miyauchi K, Harada T, Okita R, Takeshita E, Komaki H, Fujioka K, Yagasaki H, Goto Y-I, Yanaka K, Nakagawa S, Sakaguchi Y, Suzuki T (2018) CO2-sensitive tRNA modification associated with human mitochondrial disease. Nat Commun 9(1):1875",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.jgg.2018.03.004",
+      "author": "Y-Y Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "247",
+      "issue": "5",
+      "journal-title": "J Genet Genomics",
+      "key": "2347_CR23",
+      "unstructured": "Liu Y-Y, He M-H, Liu J-C, Lu Y-S, Peng J, Zhou J-Q (2018) Yeast KEOPS complex regulates telomere length independently of its t6A modification function. J Genet Genomics 45(5):247–257",
+      "volume": "45",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng0198-76",
+      "author": "UM Martens",
+      "doi-asserted-by": "publisher",
+      "first-page": "76",
+      "issue": "1",
+      "journal-title": "Nat Genet",
+      "key": "2347_CR24",
+      "unstructured": "Martens UM, Zijlmans JM, Poon SS, Dragowska W, Yui J, Chavez EA, Ward RK, Lansdorp PM (1998) Short telomeres on human chromosome 17p. Nat Genet 18(1):76–80",
+      "volume": "18",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1038/nrc3025",
+      "author": "P Martínez",
+      "doi-asserted-by": "publisher",
+      "first-page": "161",
+      "issue": "3",
+      "journal-title": "Nat Rev Cancer",
+      "key": "2347_CR25",
+      "unstructured": "Martínez P, Blasco MA (2011) Telomeric and extra-telomeric roles for telomerase and the telomere-binding proteins. Nat Rev Cancer 11(3):161–176",
+      "volume": "11",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/emboj.2009.92",
+      "author": "F-L Meng",
+      "doi-asserted-by": "publisher",
+      "first-page": "1466",
+      "issue": "10",
+      "journal-title": "EMBO J",
+      "key": "2347_CR26",
+      "unstructured": "Meng F-L, Hu Y, Shen N, Tong X-J, Wang J, Ding J, Zhou J-Q (2009) Sua5p a single-stranded telomeric DNA-binding protein facilitates telomere replication. EMBO J 28(10):1466–1478",
+      "volume": "28",
+      "year": "2009"
+    },
+    {
+      "author": "F-L Meng",
+      "first-page": "495",
+      "issue": "4",
+      "journal-title": "Cytometry",
+      "key": "2347_CR27",
+      "unstructured": "Meng F-L, Chen X-F, Hu Y, Tang H-B, Dang W, Zhou J-Q (2010) Sua5p is required for telomere recombination in Saccharomyces cerevisiae. Cytometry 20(4):495–498",
+      "volume": "20",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/nrm3823",
+      "author": "D Muñoz-Espín",
+      "doi-asserted-by": "publisher",
+      "first-page": "482",
+      "issue": "7",
+      "journal-title": "Nat Rev Mol Cell Biol",
+      "key": "2347_CR28",
+      "unstructured": "Muñoz-Espín D, Serrano M (2014) Cellular senescence: from physiology to pathology. Nat Rev Mol Cell Biol 15(7):482–496",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.cell.2013.10.019",
+      "author": "D Muñoz-Espín",
+      "doi-asserted-by": "publisher",
+      "first-page": "1104",
+      "issue": "5",
+      "journal-title": "Cell",
+      "key": "2347_CR29",
+      "unstructured": "Muñoz-Espín D, Cañamero M, Maraver A, Gómez-López G, Contreras J, Murillo-Cuesta S, Rodríguez-Baeza A, Varela-Nieto I, Ruberte J, Collado M, Serrano M (2013) Programmed cell senescence during mammalian embryonic development. Cell 155(5):1104–1118",
+      "volume": "155",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.05.040",
+      "author": "M Olivieri",
+      "doi-asserted-by": "publisher",
+      "first-page": "481",
+      "issue": "2",
+      "journal-title": "Cell",
+      "key": "2347_CR30",
+      "unstructured": "Olivieri M, Cho T, Álvarez-Quilón A, Li K, Schellenberg MJ, Zimmermann M, Hustedt N, Rossi SE, Adam S, Melo H, Heijink AM, Sastre-Moreno G, Moatti N, Szilard RK, McEwan A, Ling AK, Serrano-Benitez A, Ubhi T, Feng S, Pawling J, Delgado-Sainz I, Ferguson MW, Dennis JW, Brown GW, Cortés-Ledesma F, Williams RS, Martin A, Xu D, Durocher D (2020) A genetic map of the response to DNA damage in human cells. Cell 182(2):481–496",
+      "volume": "182",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/978-1-4939-6892-3_3",
+      "author": "I Ourliac-Garnier",
+      "doi-asserted-by": "publisher",
+      "first-page": "29",
+      "journal-title": "Methods Mol Biol (clifton, N.J.)",
+      "key": "2347_CR31",
+      "unstructured": "Ourliac-Garnier I, Londoño-Vallejo A (2017) Telomere length analysis by quantitative fluorescent in situ hybridization (Q-FISH). Methods Mol Biol (clifton, N.J.) 1587:29–39",
+      "volume": "1587",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/gim.2017.42",
+      "author": "M Palomares-Bralo",
+      "doi-asserted-by": "publisher",
+      "first-page": "1285",
+      "issue": "11",
+      "journal-title": "Genet Med",
+      "key": "2347_CR32",
+      "unstructured": "Palomares-Bralo M, Vallespín E, del Pozo Á, Ibañez K, Silla JC, Galán E, Gordo G, Martínez-Glez V, Alba-Valdivia LI, Heath KE, García-Miñaúr S, Lapunzina P, Santos-Simarro F (2017) Pitfalls of trio-based exome sequencing: imprinted genes and parental mosaicism—MAGEL2 as an example. Genet Med 19(11):1285–1286",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/nar/gks1287",
+      "author": "L Perrochia",
+      "doi-asserted-by": "publisher",
+      "first-page": "1953",
+      "issue": "3",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2347_CR33",
+      "unstructured": "Perrochia L, Crozat E, Hecker A, Zhang W, Bareille J, Collinet B, van Tilbeurgh H, Forterre P, Basta T (2013) In vitro biosynthesis of a universal t6A tRNA modification in Archaea and Eukarya. Nucleic Acids Res 41(3):1953–1964",
+      "volume": "41",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/(SICI)1097-0320(19990801)36:4\u003c267::AID-CYTO1\u003e3.0.CO;2-O",
+      "author": "SSS Poon",
+      "doi-asserted-by": "publisher",
+      "first-page": "267",
+      "issue": "4",
+      "journal-title": "Cytometry",
+      "key": "2347_CR34",
+      "unstructured": "Poon SSS, Martens UM, Ward RK, Lansdorp PM (1999) Telomere length measurements using digital fluorescence microscopy. Cytometry 36(4):267–278",
+      "volume": "36",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1242/dev.151837",
+      "author": "M Rhinn",
+      "doi-asserted-by": "publisher",
+      "first-page": "dev151837",
+      "issue": "20",
+      "journal-title": "Development",
+      "key": "2347_CR35",
+      "unstructured": "Rhinn M, Ritschka B, Keyes WM (2019) Cellular senescence in development, regeneration and disease. Development 146(20):dev151837",
+      "volume": "146",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.arr.2016.05.002",
+      "author": "Y Shiloh",
+      "doi-asserted-by": "publisher",
+      "first-page": "76",
+      "journal-title": "Ageing Res Rev",
+      "key": "2347_CR36",
+      "unstructured": "Shiloh Y, Lederman HM (2017) Ataxia-telangiectasia (A-T): An emerging dimension of premature ageing. Ageing Res Rev 33:76–88",
+      "volume": "33",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/emboj.2010.343",
+      "author": "M Srinivasan",
+      "doi-asserted-by": "publisher",
+      "first-page": "873",
+      "issue": "5",
+      "journal-title": "EMBO J",
+      "key": "2347_CR37",
+      "unstructured": "Srinivasan M, Mehta P, Yu Y, Prugar E, Koonin EV, Karzai AW, Sternglanz R (2011) The highly conserved KEOPS/EKC complex is essential for a universal tRNA modification, t6A. EMBO J 30(5):873–881",
+      "volume": "30",
+      "year": "2011"
+    },
+    {
+      "author": "C Trapp",
+      "first-page": "4044",
+      "issue": "27",
+      "journal-title": "EMBO J",
+      "key": "2347_CR38",
+      "unstructured": "Trapp C, Reite K, Klungland A, Epe B (2007) Deficiency of the Cockayne syndrome B (CSB) gene aggravates the genomic instability caused by endogenous oxidative DNA base damage in mice. EMBO J 26(27):4044–4048",
+      "volume": "26",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/nature02253",
+      "author": "L Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "870",
+      "issue": "6968",
+      "journal-title": "Nature",
+      "key": "2347_CR39",
+      "unstructured": "Wu L, Hickson ID (2003) The Bloom’s syndrome helicase suppresses crossing over during homologous recombination. Nature 426(6968):870–874",
+      "volume": "426",
+      "year": "2003"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-021-02347-3"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Biallelic variants in YRDC cause a developmental disorder with progeroid features"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "140"
+}

@@ -1,0 +1,312 @@
+{
+  "DOI": "10.1002/gepi.10323",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.10323",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eThe importance of haplotype analysis in the context of association fine mapping of disease genes has grown steadily over the last years. Since experimental methods to determine haplotypes on a large scale are not available, phase has to be inferred statistically. For individual genotype data, several reconstruction techniques and many implementations of the expectation‐maximization (EM) algorithm for haplotype frequency estimation exist. Recent research work has shown that incorporating available genotype information of related individuals largely increases the precision of haplotype frequency estimates. We, therefore, implemented a highly flexible program written in C, called FAMHAP, which calculates maximum likelihood estimates (MLEs) of haplotype frequencies from general nuclear families with an arbitrary number of children via the EM‐algorithm for up to 20 SNPs. For more loci, we have implemented a locus‐iterative mode of the EM‐algorithm, which gives reliable approximations of the MLEs for up to 63 SNP loci, or less when multi‐allelic markers are incorporated into the analysis. Missing genotypes can be handled as well. The program is able to distinguish cases (haplotypes transmitted to the first affected child of a family) from pseudo‐controls (non‐transmitted haplotypes with respect to the child). We tested the performance of FAMHAP and the accuracy of the obtained haplotype frequencies on a variety of simulated data sets. The implementation proved to work well when many markers were considered and no significant differences between the estimates obtained with the usual EM‐algorithm and those obtained in its locus‐iterative mode were observed. We conclude from the simulations that the accuracy of haplotype frequency estimation and reconstruction in nuclear families is very reliable in general and robust against missing genotypes. © 2004 Wiley‐Liss, Inc.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.10323"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Becker",
+      "given": "Tim",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Knapp",
+      "given": "Michael",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": []
+  },
+  "created": {
+    "date-parts": [
+      [
+        2004,
+        5,
+        3
+      ]
+    ],
+    "date-time": "2004-05-03T17:00:46Z",
+    "timestamp": 1083603646000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        28
+      ]
+    ],
+    "date-time": "2023-09-28T15:58:45Z",
+    "timestamp": 1695916725000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        28
+      ]
+    ],
+    "date-time": "2024-03-28T17:16:03Z",
+    "timestamp": 1711646163226
+  },
+  "is-referenced-by-count": 154,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2004,
+        5,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2004,
+          7
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2004,
+            5,
+            3
+          ]
+        ],
+        "date-time": "2004-05-03T00:00:00Z",
+        "timestamp": 1083542400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.10323",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.10323",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "21-32",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2004,
+        5,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2004,
+        5,
+        3
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2004,
+        7
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1159/000066692",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_2_1"
+    },
+    {
+      "author": "Chen HS",
+      "first-page": "165",
+      "key": "e_1_2_1_3_1",
+      "volume-title": "Proceeding of the international conference on mathematics and engineering techniques in medicine and biological sciences",
+      "year": "2003"
+    },
+    {
+      "article-title": "Inference of haplotypes from PCR‐amplified samples of diploid populations",
+      "author": "Clark AG",
+      "first-page": "111",
+      "journal-title": "Mol Biol Evol",
+      "key": "e_1_2_1_4_1",
+      "volume": "7",
+      "year": "1990"
+    },
+    {
+      "DOI": "10.1086/302577",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_5_1"
+    },
+    {
+      "DOI": "10.1073/pnas.97.19.10483",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_6_1"
+    },
+    {
+      "article-title": "Maximum‐likelihood estimation of molecular haplotype frequencies in a diploid population",
+      "author": "Excoffier L",
+      "first-page": "921",
+      "journal-title": "Mol Biol Evol",
+      "key": "e_1_2_1_7_1",
+      "volume": "12",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1086/301674",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_8_1"
+    },
+    {
+      "DOI": "10.1086/303069",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_9_1"
+    },
+    {
+      "DOI": "10.1093/oxfordjournals.jhered.a111613",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_10_1"
+    },
+    {
+      "DOI": "10.1126/science.2570460",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_11_1"
+    },
+    {
+      "DOI": "10.1159/000073727",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_12_1"
+    },
+    {
+      "article-title": "Parametric and nonparametric linkage analysis: a unified multipoint approach",
+      "author": "Kruglyak L",
+      "first-page": "1347",
+      "journal-title": "Am J Hum Genet",
+      "key": "e_1_2_1_13_1",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1073/pnas.84.8.2363",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_14_1"
+    },
+    {
+      "DOI": "10.1086/344347",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_15_1"
+    },
+    {
+      "DOI": "10.1086/378779",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_16_1"
+    },
+    {
+      "DOI": "10.1038/907",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_17_1"
+    },
+    {
+      "DOI": "10.1086/338446",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_18_1"
+    },
+    {
+      "DOI": "10.1086/344207",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_19_1"
+    },
+    {
+      "DOI": "10.1002/humu.26",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_20_1"
+    },
+    {
+      "DOI": "10.1002/gepi.10184",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_21_1"
+    },
+    {
+      "DOI": "10.1086/342666",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_22_1"
+    },
+    {
+      "DOI": "10.1086/319501",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_23_1"
+    },
+    {
+      "DOI": "10.1086/303073",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_1_24_1"
+    }
+  ],
+  "reference-count": 23,
+  "references-count": 23,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.10323"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Maximum‐likelihood estimation of haplotype frequencies in nuclear families"
+  ],
+  "type": "journal-article",
+  "volume": "27"
+}

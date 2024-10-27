@@ -1,0 +1,662 @@
+{
+  "DOI": "10.1002/gepi.22282",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22282",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eUnderstanding the genetic background of complex diseases and disorders plays an essential role in the promising precision medicine. The evaluation of candidate genes, however, requires time‐consuming and expensive experiments given a large number of possibilities. Thus, computational methods have seen increasing applications in predicting gene‐disease associations. We proposed a bioinformatics framework, \u003cjats:italic\u003eP\u003c/jats:italic\u003erioritization of \u003cjats:italic\u003eA\u003c/jats:italic\u003eutism‐genes using \u003cjats:italic\u003eN\u003c/jats:italic\u003eetwork‐based \u003cjats:italic\u003eD\u003c/jats:italic\u003eeep‐learning \u003cjats:italic\u003eA\u003c/jats:italic\u003epproach (PANDA). Our approach aims to identify autism‐genes across the human genome based on patterns of gene–gene interactions and topological similarity of genes in the interaction network. PANDA trains a graph deep learning classifier using the input of the human molecular interaction network and predicts and ranks the probability of autism association of every node (gene) in the network. PANDA was able to achieve a high classification accuracy of 89%, outperforming three other commonly used machine learning algorithms. Moreover, the gene prioritization ranking list produced by PANDA was evaluated and validated using an independent large‐scale exome‐sequencing study. The top 10% of PANDA‐ranked genes were found significantly enriched for autism association.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22282"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2019-10-04"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-01-27"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-02-10"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science Memorial University  St. John's Newfoundland and Labrador Canada"
+        }
+      ],
+      "family": "Zhang",
+      "given": "Yu",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Computer Science Memorial University  St. John's Newfoundland and Labrador Canada"
+        }
+      ],
+      "family": "Chen",
+      "given": "Yuanzhu",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-6382-0602",
+      "affiliation": [
+        {
+          "name": "Department of Computer Science Memorial University  St. John's Newfoundland and Labrador Canada"
+        },
+        {
+          "name": "School of Computing Queen's University Kingston Ontario Canada"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Hu",
+      "given": "Ting",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        10
+      ]
+    ],
+    "date-time": "2020-02-10T10:15:37Z",
+    "timestamp": 1581329737000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        6
+      ]
+    ],
+    "date-time": "2023-09-06T19:45:59Z",
+    "timestamp": 1694029559000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100000038",
+      "award": [
+        "Discovery Grant RGPIN‐2016‐04699"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Natural Sciences and Engineering Research Council of Canada"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        1,
+        29
+      ]
+    ],
+    "date-time": "2024-01-29T11:44:21Z",
+    "timestamp": 1706528661183
+  },
+  "is-referenced-by-count": 15,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          6
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            2,
+            10
+          ]
+        ],
+        "date-time": "2020-02-10T00:00:00Z",
+        "timestamp": 1581292800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22282",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22282",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22282",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22282",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "382-394",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        2,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        6
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "article-title": "Tensorflow: Large‐scale machine learning on heterogeneous distributed systems",
+      "author": "Abadi M.",
+      "journal-title": "arXiv preprint",
+      "key": "e_1_2_7_2_1",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/2040-2392-4-36",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "article-title": "Large‐scale analysis of disease pathways in the human interactome",
+      "author": "Agrawal M.",
+      "first-page": "111",
+      "journal-title": "Pacific Symposium on Biocomputing",
+      "key": "e_1_2_7_4_1",
+      "volume": "23",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nbt.3300",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0205936",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.15252/msb.20156651",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1038/nrg1272",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1038/nrg2918",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "key": "e_1_2_7_10_1",
+      "unstructured": "Batagelj V. \u0026Zaversnik M.(2003). An O(m) algorithm for cores decomposition of networks.arXiv preprint cs/0310049."
+    },
+    {
+      "DOI": "10.1038/jhg.2014.107",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1681/ASN.2016040387",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "author": "Brameier M. F.",
+      "key": "e_1_2_7_13_1",
+      "volume-title": "Linear genetic programming",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw074",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1186/s13039-015-0149-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1103/PhysRevE.70.066111",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1007/BF00994018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1038/nature13772",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1038/nature05127",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1038/s41398-018-0098-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2010.10.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1017/S0033291799008508",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "author": "Fout A.",
+      "first-page": "6533",
+      "key": "e_1_2_7_23_1",
+      "volume-title": "Proceedings of the 31st International Conference on Neural Information Processing Systems",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3039",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1004120",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1126/science.1076641",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1137/140976649",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.1038/nature07953",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1073/pnas.0701361104",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1016/j.tig.2003.09.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "author": "Goodfellow I.",
+      "key": "e_1_2_7_31_1",
+      "volume-title": "Deep learning",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/tp.2017.27",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "author": "Griffiths A.",
+      "key": "e_1_2_7_33_1",
+      "volume-title": "An introduction to genetic analysis",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1128/MCB.24.24.10905-10922.2004",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.24963/ijcai.2017/250",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "author": "Hamilton W.",
+      "first-page": "1025",
+      "key": "e_1_2_7_36_1",
+      "volume-title": "Proceedings of the 31st International Conference on Neural Information Processing Systems",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/nar/gki033",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1109/ICDAR.1995.598994",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.4161/cib.15967",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1136/amiajnl-2012-001525",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1005986",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-12-364",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "article-title": "Complex network analysis of a genetic programming phenotype network",
+      "author": "Hu T.",
+      "first-page": "49",
+      "journal-title": "Proceedings of the 22nd European Conference on Genetic Programming",
+      "key": "e_1_2_7_43_1",
+      "volume": "11451",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature13908",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "key": "e_1_2_7_45_1",
+      "unstructured": "Kingma D. P. \u0026Ba J.(2015). Adam: A method for stochastic optimization.Proceedings of the 3rdInternational Conference for Learning Representations."
+    },
+    {
+      "key": "e_1_2_7_46_1",
+      "unstructured": "Kipf T. N. \u0026Welling M.(2016). Semi‐supervised classification with graph convolutional networks.Proceedings of the 5th International Conference on Learning Representation."
+    },
+    {
+      "article-title": "The candidate gene approach",
+      "author": "Kwon J. M.",
+      "first-page": "164",
+      "issue": "3",
+      "journal-title": "Alcohol Research \u0026 Health",
+      "key": "e_1_2_7_47_1",
+      "volume": "24",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu277",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_48_1"
+    },
+    {
+      "DOI": "10.1038/nrg3920",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_49_1"
+    },
+    {
+      "DOI": "10.1016/S0896-6273(00)00115-X",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_50_1"
+    },
+    {
+      "DOI": "10.1038/msb4100163",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_51_1"
+    },
+    {
+      "DOI": "10.1007/s00415-017-8689-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_52_1"
+    },
+    {
+      "DOI": "10.1126/science.1257601",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_53_1"
+    },
+    {
+      "DOI": "10.4137/CIN.S680",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_54_1"
+    },
+    {
+      "article-title": "Deep learning in bioinformatics",
+      "author": "Min S.",
+      "first-page": "851",
+      "issue": "5",
+      "journal-title": "Briefings in Bioinformatics",
+      "key": "e_1_2_7_55_1",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/acprof:oso/9780199206650.001.0001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_56_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003221",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_57_1"
+    },
+    {
+      "DOI": "10.1038/ng.835",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_58_1"
+    },
+    {
+      "DOI": "10.1038/nature10989",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_59_1"
+    },
+    {
+      "DOI": "10.1093/nar/gky1079",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_60_1"
+    },
+    {
+      "DOI": "10.1038/nature03607",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_61_1"
+    },
+    {
+      "DOI": "10.1038/nbt.3313",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_62_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btl301",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_63_1"
+    },
+    {
+      "DOI": "10.1038/nrg3585",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_64_1"
+    },
+    {
+      "article-title": "Graph networks as learnable physics engines for inference and control",
+      "author": "Sanchez‐Gonzalez A.",
+      "first-page": "4470",
+      "journal-title": "Proceedings of the 35th International Conference on Machine Learning, in PMLR",
+      "key": "e_1_2_7_65_1",
+      "volume": "80",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.neuron.2015.09.016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_66_1"
+    },
+    {
+      "DOI": "10.1038/nature10945",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_67_1"
+    },
+    {
+      "DOI": "10.1109/TNN.2008.2005605",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_68_1"
+    },
+    {
+      "DOI": "10.4161/cib.27887",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_69_1"
+    },
+    {
+      "DOI": "10.1186/1471-2105-15-304",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_70_1"
+    },
+    {
+      "DOI": "10.1038/nrg796",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_71_1"
+    },
+    {
+      "key": "e_1_2_7_72_1",
+      "unstructured": "Xu K. Hu W. Leskovec J. \u0026Jegelka S.(2018). How powerful are graph neural networks?Proceedings of the 7th International Conference on Learning Representation."
+    },
+    {
+      "DOI": "10.1038/nm.3792",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_73_1"
+    },
+    {
+      "article-title": "Graph neural networks: A review of methods and applications",
+      "author": "Zhou J.",
+      "journal-title": "arXiv preprint",
+      "key": "e_1_2_7_74_1",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.7150/ijbs.3.420",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_75_1"
+    }
+  ],
+  "reference-count": 74,
+  "references-count": 74,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22282"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "PANDA: Prioritization of autism‐genes using network‐based deep‐learning approach"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

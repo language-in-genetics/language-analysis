@@ -1,0 +1,869 @@
+{
+  "DOI": "10.1186/s40246-023-00465-9",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00465-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe metabolome is the best representation of cancer phenotypes. Gene expression can be considered a confounding covariate affecting metabolite levels. Data integration across metabolomics and genomics to establish the biological relevance of cancer metabolism is challenging. This study aimed to eliminate the confounding effect of metabolic gene expression to reflect actual metabolite levels in microsatellite instability (MSI) cancers.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eMethods\u003c/jats:title\u003e\n                \u003cjats:p\u003eIn this study, we propose a new strategy using covariate-adjusted tensor classification in high dimensions (CATCH) models to integrate metabolite and metabolic gene expression data to classify MSI and microsatellite stability (MSS) cancers. We used datasets from the Cancer Cell Line Encyclopedia (CCLE) phase II project and treated metabolomic data as tensor predictors and data on gene expression of metabolic enzymes as confounding covariates.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThe CATCH model performed well, with high accuracy (0.82), sensitivity (0.66), specificity (0.88), precision (0.65), and F1 score (0.65). Seven metabolite features adjusted for metabolic gene expression, namely, 3-phosphoglycerate, 6-phosphogluconate, cholesterol ester, lysophosphatidylethanolamine (LPE), phosphatidylcholine, reduced glutathione, and sarcosine, were found in MSI cancers. Only one metabolite, Hippurate, was present in MSS cancers. The gene expression of phosphofructokinase 1 (\u003cjats:italic\u003ePFKP\u003c/jats:italic\u003e), which is involved in the glycolytic pathway, was related to 3-phosphoglycerate. \u003cjats:italic\u003eALDH4A1\u003c/jats:italic\u003e and \u003cjats:italic\u003eGPT2\u003c/jats:italic\u003e were associated with sarcosine. LPE was associated with the expression of \u003cjats:italic\u003eCHPT1\u003c/jats:italic\u003e, which is involved in lipid metabolism. The glycolysis, nucleotide, glutamate, and lipid metabolic pathways were enriched in MSI cancers.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe propose an effective CATCH model for predicting MSI cancer status. By controlling the confounding effect of metabolic gene expression, we identified cancer metabolic biomarkers and therapeutic targets. In addition, we provided the possible biology and genetics of MSI cancer metabolism.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "465"
+  ],
+  "article-number": "18",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "12 December 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "22 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "6 March 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "This study was approved by the Institutional Review Board of NCKUH (A-ER-103-395, B-ER-110-342, and B-ER-110-442) and was conducted in accordance with the Declaration of Helsinki."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "All participants provided written informed consent."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no conflicts of interest."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Chung-I.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Yeh",
+      "given": "Yu-Min",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tsai",
+      "given": "Yi-Shan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Huang",
+      "given": "Tzu-Hsuan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shen",
+      "given": "Meng-Ru",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lin",
+      "given": "Peng-Chan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        6
+      ]
+    ],
+    "date-time": "2023-03-06T15:03:14Z",
+    "timestamp": 1678114994000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        6
+      ]
+    ],
+    "date-time": "2023-03-06T15:06:43Z",
+    "timestamp": 1678115203000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100004663",
+      "award": [
+        "MOST 111-2634-F-006-002",
+        "MOST 111-2634-F-006-002"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "Ministry of Science and Technology, Taiwan"
+    },
+    {
+      "award": [
+        "MOHW111-TDU-B-221-114005",
+        "MOHW111-TDU-B-221-114005"
+      ],
+      "name": "Ministry of Health and Welfare"
+    },
+    {
+      "DOI": "10.13039/501100004844",
+      "award": [
+        "NCKUH-11102061"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Cheng Kung University Hospital"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        3
+      ]
+    ],
+    "date-time": "2023-08-03T16:22:34Z",
+    "timestamp": 1691079754838
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        6
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            6
+          ]
+        ],
+        "date-time": "2023-03-06T00:00:00Z",
+        "timestamp": 1678060800000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            6
+          ]
+        ],
+        "date-time": "2023-03-06T00:00:00Z",
+        "timestamp": 1678060800000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00465-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00465-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00465-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        6
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        6
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/ncomms15180",
+      "author": "I Cortes-Ciriano",
+      "doi-asserted-by": "publisher",
+      "first-page": "15180",
+      "journal-title": "Nat Commun",
+      "key": "465_CR1",
+      "unstructured": "Cortes-Ciriano I, Lee S, Park WY, Kim TM, Park PJ. A molecular portrait of microsatellite instability across multiple cancers. Nat Commun. 2017;8:15180. https://doi.org/10.1038/ncomms15180.",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1126/science.aan6733",
+      "author": "DT Le",
+      "doi-asserted-by": "publisher",
+      "first-page": "409",
+      "issue": "6349",
+      "journal-title": "Science",
+      "key": "465_CR2",
+      "unstructured": "Le DT, Durham JN, Smith KN, Wang H, Bartlett BR, Aulakh LK, et al. Mismatch repair deficiency predicts response of solid tumors to PD-1 blockade. Science. 2017;357(6349):409–13. https://doi.org/10.1126/science.aan6733.",
+      "volume": "357",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1002/cam4.1372",
+      "author": "A Vanderwalde",
+      "doi-asserted-by": "publisher",
+      "first-page": "746",
+      "issue": "3",
+      "journal-title": "Cancer Med",
+      "key": "465_CR3",
+      "unstructured": "Vanderwalde A, Spetzler D, Xiao N, Gatalica Z, Marshall J. Microsatellite instability status determined by next-generation sequencing and compared with PD-L1 and tumor mutational burden in 11,348 patients. Cancer Med. 2018;7(3):746–56. https://doi.org/10.1002/cam4.1372.",
+      "volume": "7",
+      "year": "2018"
+    },
+    {
+      "author": "CR Boland",
+      "first-page": "5248",
+      "issue": "22",
+      "journal-title": "Cancer Res",
+      "key": "465_CR4",
+      "unstructured": "Boland CR, Thibodeau SN, Hamilton SR, Sidransky D, Eshleman JR, Burt RW, et al. A national cancer institute workshop on microsatellite instability for cancer detection and familial predisposition: development of international criteria for the determination of microsatellite instability in colorectal cancer. Cancer Res. 1998;58(22):5248–57.",
+      "volume": "58",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1038/s41416-019-0599-y",
+      "author": "IH Sahin",
+      "doi-asserted-by": "publisher",
+      "first-page": "809",
+      "issue": "10",
+      "journal-title": "Br J Cancer",
+      "key": "465_CR5",
+      "unstructured": "Sahin IH, Akce M, Alese O, Shaib W, Lesinski GB, El-Rayes B, Wu C. Immune checkpoint inhibitors for the treatment of MSI-H/MMR-D colorectal cancer and a perspective on resistance mechanisms. Br J Cancer. 2019;121(10):809–18. https://doi.org/10.1038/s41416-019-0599-y.",
+      "volume": "121",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41573-021-00339-6",
+      "author": "ZE Stine",
+      "doi-asserted-by": "publisher",
+      "first-page": "141",
+      "issue": "2",
+      "journal-title": "Nat Rev Drug Discov",
+      "key": "465_CR6",
+      "unstructured": "Stine ZE, Schug ZT, Salvino JM, Dang CV. Targeting cancer metabolism in the era of precision oncology. Nat Rev Drug Discov. 2022;21(2):141–62. https://doi.org/10.1038/s41573-021-00339-6.",
+      "volume": "21",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ccr.2008.05.005",
+      "author": "G Kroemer",
+      "doi-asserted-by": "publisher",
+      "first-page": "472",
+      "issue": "6",
+      "journal-title": "Cancer Cell",
+      "key": "465_CR7",
+      "unstructured": "Kroemer G, Pouyssegur J. Tumor cell metabolism: cancer’s Achilles’ heel. Cancer Cell. 2008;13(6):472–82. https://doi.org/10.1016/j.ccr.2008.05.005.",
+      "volume": "13",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.tig.2012.09.006",
+      "author": "N Carreno-Quintero",
+      "doi-asserted-by": "publisher",
+      "first-page": "41",
+      "issue": "1",
+      "journal-title": "Trends Genet",
+      "key": "465_CR8",
+      "unstructured": "Carreno-Quintero N, Bouwmeester HJ, Keurentjes JJ. Genetic analysis of metabolome-phenotype interactions: from model to crop species. Trends Genet. 2013;29(1):41–50. https://doi.org/10.1016/j.tig.2012.09.006.",
+      "volume": "29",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.tibtech.2005.08.005",
+      "author": "J Nielsen",
+      "doi-asserted-by": "publisher",
+      "first-page": "544",
+      "issue": "11",
+      "journal-title": "Trends Biotechnol",
+      "key": "465_CR9",
+      "unstructured": "Nielsen J, Oliver S. The next wave in metabolome analysis. Trends Biotechnol. 2005;23(11):544–6. https://doi.org/10.1016/j.tibtech.2005.08.005.",
+      "volume": "23",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.3389/fcell.2021.793428",
+      "author": "M Huo",
+      "doi-asserted-by": "publisher",
+      "first-page": "793428",
+      "issue": "9",
+      "journal-title": "Front Cell Dev Biol",
+      "key": "465_CR10",
+      "unstructured": "Huo M, Zhang J, Huang W, Wang Y. Interplay among metabolism, epigenetic modifications and gene expression in cancer. Front Cell Dev Biol. 2021;24(9):793428. https://doi.org/10.3389/fcell.2021.793428.",
+      "volume": "24",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1101/gad.289140.116",
+      "author": "JA van der Knaap",
+      "doi-asserted-by": "publisher",
+      "first-page": "2345",
+      "issue": "21",
+      "journal-title": "Genes Dev",
+      "key": "465_CR11",
+      "unstructured": "van der Knaap JA, Verrijzer CP. Undercover: gene control by metabolites and metabolic enzymes. Genes Dev. 2016;30(21):2345–69. https://doi.org/10.1101/gad.289140.116.",
+      "volume": "30",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ng.2982",
+      "doi-asserted-by": "crossref",
+      "key": "465_CR12",
+      "unstructured": "Shin SY, Fauman EB, Petersen AK, Krumsiek J, Santos R, Huang J, Arnold M, Erte I, Forgetta V, Yang TP, Walter K, Menni C, Chen L, Vasquez L, Valdes AM, Hyde CL, Wang V, Ziemek D, Roberts P, Xi L, Grundberg E; Multiple Tissue Human Expression Resource (MuTHER) Consortium; Waldenberger M, Richards JB, Mohney RP, Milburn MV, John SL, Trimmer J, Theis FJ, Overington JP, Suhre K, Brosnan MJ, Gieger C, Kastenmüller G, Spector TD, Soranzo N. An atlas of genetic influences on human blood metabolites. Nat Genet. 2014:46(6):543–550."
+    },
+    {
+      "DOI": "10.3390/metabo12060488",
+      "doi-asserted-by": "publisher",
+      "key": "465_CR13",
+      "unstructured": "Resurreccion EP, Fong KW. The integration of metabolomics with other omics: insights into understanding prostate cancer. Metabolites. 2022:27;12(6):488. https://doi.org/10.3390/metabo12060488."
+    },
+    {
+      "DOI": "10.3389/fonc.2020.602498",
+      "doi-asserted-by": "publisher",
+      "key": "465_CR14",
+      "unstructured": "Zhang M, Wang HZ, Peng RY, Xu F, Wang F, Zhao Q. Metabolism-associated molecular classification of colorectal cancer. Front Oncol. 2020;10:602498. https://doi.org/10.3389/fonc.2020.602498."
+    },
+    {
+      "DOI": "10.1021/acs.chemrev.7b00775",
+      "author": "JL Counihan",
+      "doi-asserted-by": "publisher",
+      "first-page": "6893",
+      "issue": "14",
+      "journal-title": "Chem Rev",
+      "key": "465_CR15",
+      "unstructured": "Counihan JL, Grossman EA, Nomura DK. Cancer metabolism: current understanding and therapies. Chem Rev. 2018;118(14):6893–923. https://doi.org/10.1021/acs.chemrev.7b00775.",
+      "volume": "118",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1021/acs.jproteome.7b00879",
+      "author": "JM Posma",
+      "doi-asserted-by": "publisher",
+      "first-page": "1586",
+      "issue": "4",
+      "journal-title": "J Proteome Res",
+      "key": "465_CR16",
+      "unstructured": "Posma JM, Garcia-Perez I, Ebbels TMD, Lindon JC, Stamler J, Elliott P, Holmes E, Nicholson JK. Optimized phenotypic biomarker discovery and confounder elimination via covariate-adjusted projection to latent structures from metabolic spectroscopy data. J Proteome Res. 2018;17(4):1586–95. https://doi.org/10.1021/acs.jproteome.7b00879.",
+      "volume": "17",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13059-017-1215-1",
+      "author": "Y Hasin",
+      "doi-asserted-by": "publisher",
+      "first-page": "83",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "465_CR17",
+      "unstructured": "Hasin Y, Seldin M, Lusis A. Multi-omics approaches to disease. Genome Biol. 2017;18(1):83. https://doi.org/10.1186/s13059-017-1215-1.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41596-022-00710-w",
+      "author": "Z Pang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1735",
+      "issue": "8",
+      "journal-title": "Nat Protoc",
+      "key": "465_CR18",
+      "unstructured": "Pang Z, Zhou G, Ewald J, Chang L, Hacariz O, Basu N, et al. Using metaboanalyst 50 for LC-HRMS spectra processing, multi-omics integration and covariate adjustment of global metabolomics data. Nat Protoc. 2022;17(8):1735–61. https://doi.org/10.1038/s41596-022-00710-w.",
+      "volume": "17",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1080/01621459.2018.1497500",
+      "author": "Y Pan",
+      "doi-asserted-by": "publisher",
+      "first-page": "1305",
+      "journal-title": "J Am Stat Assoc",
+      "key": "465_CR19",
+      "unstructured": "Pan Y, Mai Q, Zhang X. Covariate-adjusted tensor classification in high dimensions. J Am Stat Assoc. 2019;114:1305–19.",
+      "volume": "114",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41389-022-00393-8",
+      "author": "C Rossi",
+      "doi-asserted-by": "publisher",
+      "first-page": "17",
+      "issue": "1",
+      "journal-title": "Oncogenesis",
+      "key": "465_CR20",
+      "unstructured": "Rossi C, Cicalini I, Cufaro MC, Consalvo A, Upadhyaya P, Sala G, et al. Breast cancer in the era of integrating “Omics” approaches. Oncogenesis. 2022;11(1):17. https://doi.org/10.1038/s41389-022-00393-8.",
+      "volume": "11",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.3390/metabo12040357",
+      "author": "Y Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "357",
+      "issue": "4",
+      "journal-title": "Metabolites",
+      "key": "465_CR21",
+      "unstructured": "Chen Y, Li EM, Xu LY. Guide to metabolomics analysis: a bioinformatics workflow. Metabolites. 2022;12(4):357. https://doi.org/10.3390/metabo12040357.",
+      "volume": "12",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1186-3",
+      "author": "M Ghandi",
+      "doi-asserted-by": "publisher",
+      "first-page": "503",
+      "issue": "7757",
+      "journal-title": "Nature",
+      "key": "465_CR22",
+      "unstructured": "Ghandi M, Huang FW, Jané-Valbuena J, Kryukov GV, Lo CC, McDonald ER 3rd, et al. Next-generation characterization of the cancer cell line encyclopedia. Nature. 2019;569(7757):503–8. https://doi.org/10.1038/s41586-019-1186-3.",
+      "volume": "569",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature11003",
+      "author": "J Barretina",
+      "doi-asserted-by": "publisher",
+      "first-page": "603",
+      "issue": "7391",
+      "journal-title": "Nature",
+      "key": "465_CR23",
+      "unstructured": "Barretina J, Caponigro G, Stransky N, Venkatesan K, Margolin AA, Kim S, et al. The cancer cell line encyclopedia enables predictive modelling of anticancer drug sensitivity. Nature. 2012;483(7391):603–7. https://doi.org/10.1038/nature11003.",
+      "volume": "483",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1102-x",
+      "author": "EM Chan",
+      "doi-asserted-by": "publisher",
+      "first-page": "551",
+      "issue": "7753",
+      "journal-title": "Nature",
+      "key": "465_CR24",
+      "unstructured": "Chan EM, Shibue T, McFarland JM, Gaeta B, Ghandi M, Dumont N, et al. WRN helicase is a synthetic lethal target in microsatellite unstable cancers. Nature. 2019;568(7753):551–6. https://doi.org/10.1038/s41586-019-1102-x.",
+      "volume": "568",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41591-019-0404-8",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "850",
+      "issue": "5",
+      "journal-title": "Nat Med",
+      "key": "465_CR25",
+      "unstructured": "Li H, Ning S, Ghandi M, Kryukov GV, Gopal S, Deik A, et al. The landscape of cancer cell line metabolism. Nat Med. 2019;25(5):850–60. https://doi.org/10.1038/s41591-019-0404-8.",
+      "volume": "25",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1177/1177932219899051",
+      "author": "I Subramanian",
+      "doi-asserted-by": "publisher",
+      "first-page": "117793221989905",
+      "journal-title": "Bioinform Biol Insights",
+      "key": "465_CR26",
+      "unstructured": "Subramanian I, Verma S, Kumar S, Jere A, Anamika K. Multi-omics data integration, interpretation, and its application. Bioinform Biol Insights. 2020;14:1177932219899051. https://doi.org/10.1177/1177932219899051.",
+      "volume": "14",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/nar/gkr1132",
+      "doi-asserted-by": "publisher",
+      "key": "465_CR27",
+      "unstructured": "Wang Y, Xiao J, Suzek TO, Zhang J, Wang J, Zhou Z. et al. pubchem's bioassay database. Nucleic Acids Res. 2012;40(Database issue):D400-D412. https://doi.org/10.1093/nar/gkr1132."
+    },
+    {
+      "DOI": "10.1093/nar/gkab1062",
+      "author": "DS Wishart",
+      "doi-asserted-by": "publisher",
+      "first-page": "D622",
+      "issue": "D1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "465_CR28",
+      "unstructured": "Wishart DS, Guo A, Oler E, et al. HMDB 5.0: the human metabolome database for 2022. Nucleic Acids Res. 2022;50(D1):D622–31. https://doi.org/10.1093/nar/gkab1062.",
+      "volume": "50",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/nar/27.1.29",
+      "author": "H Ogata",
+      "doi-asserted-by": "publisher",
+      "first-page": "29",
+      "issue": "1",
+      "journal-title": "Nucleic Acids Res",
+      "key": "465_CR29",
+      "unstructured": "Ogata H, Goto S, Sato K, Fujibuchi W, Bono H, Kanehisa M. KEGG: kyoto encyclopedia of genes and genomes. Nucleic Acids Res. 1999;27(1):29–34. https://doi.org/10.1093/nar/27.1.29.",
+      "volume": "27",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1021/ac5005103",
+      "author": "GA Nagana Gowda",
+      "doi-asserted-by": "publisher",
+      "first-page": "5433",
+      "issue": "11",
+      "journal-title": "Anal Chem",
+      "key": "465_CR30",
+      "unstructured": "Nagana Gowda GA, Raftery D. Quantitating metabolites in protein precipitated serum using NMR spectroscopy. Anal Chem. 2014;86(11):5433–40. https://doi.org/10.1021/ac5005103.",
+      "volume": "86",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/s42003-019-0666-1",
+      "author": "M Sinkala",
+      "doi-asserted-by": "publisher",
+      "first-page": "414",
+      "journal-title": "Commun Biol",
+      "key": "465_CR31",
+      "unstructured": "Sinkala M, Mulder N, Patrick MD. Metabolic gene alterations impact the clinical aggressiveness and drug responses of 32 human cancers. Commun Biol. 2019;2:414. https://doi.org/10.1038/s42003-019-0666-1.",
+      "volume": "2",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature07762",
+      "author": "A Sreekumar",
+      "doi-asserted-by": "publisher",
+      "first-page": "910",
+      "issue": "7231",
+      "journal-title": "Nature",
+      "key": "465_CR32",
+      "unstructured": "Sreekumar A, Poisson LM, Rajendiran TM, Khan AP, Cao Q, Yu J, et al. Metabolomic profiles delineate potential role for sarcosine in prostate cancer progression. Nature. 2009;457(7231):910–4. https://doi.org/10.1038/nature07762.",
+      "volume": "457",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1084/jem.20201606",
+      "author": "X Bian",
+      "doi-asserted-by": "publisher",
+      "first-page": "e20201606",
+      "issue": "1",
+      "journal-title": "J Exp Med",
+      "key": "465_CR33",
+      "unstructured": "Bian X, Liu R, Meng Y, Xing D, Xu D, Lu Z. Lipid metabolism and cancer. J Exp Med. 2021;218(1):e20201606. https://doi.org/10.1084/jem.20201606.",
+      "volume": "218",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1155/2013/972913",
+      "author": "N Traverso",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Oxid Med Cell Longev",
+      "key": "465_CR34",
+      "unstructured": "Traverso N, Ricciarelli R, Nitti M, Marengo B, Furfaro AL, Pronzato MA, et al. Role of glutathione in cancer progression and chemoresistance. Oxid Med Cell Longev. 2013. https://doi.org/10.1155/2013/972913.",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btab125",
+      "author": "SM Chang",
+      "doi-asserted-by": "publisher",
+      "first-page": "2259",
+      "issue": "16",
+      "journal-title": "Bioinformatics",
+      "key": "465_CR35",
+      "unstructured": "Chang SM, Yang M, Lu W, Huang YJ, Huang Y, Hung H, et al. Gene-set integrative analysis of multi-omics data using tensor-based association test. Bioinformatics. 2021;37(16):2259–65. https://doi.org/10.1093/bioinformatics/btab125.",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2014.10.008",
+      "author": "I Shimizu",
+      "doi-asserted-by": "publisher",
+      "first-page": "967",
+      "issue": "6",
+      "journal-title": "Cell Metab",
+      "key": "465_CR36",
+      "unstructured": "Shimizu I, Yoshida Y, Suda M, Minamino T. DNA damage response and metabolic disease. Cell Metab. 2014;20(6):967–77. https://doi.org/10.1016/j.cmet.2014.10.008.",
+      "volume": "20",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3390/ijms22126262",
+      "author": "M Nenkov",
+      "doi-asserted-by": "publisher",
+      "first-page": "6262",
+      "issue": "12",
+      "journal-title": "Int J Mol Sci",
+      "key": "465_CR37",
+      "unstructured": "Nenkov M, Ma Y, Gaßler N, Chen Y. Metabolic reprogramming of colorectal cancer cells and the microenvironment: implication for therapy. Int J Mol Sci. 2021;22(12):6262. https://doi.org/10.3390/ijms22126262.",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/j.1349-7006.2012.02262.x",
+      "author": "T Yoshie",
+      "doi-asserted-by": "publisher",
+      "first-page": "1010",
+      "issue": "6",
+      "journal-title": "Cancer Sci",
+      "key": "465_CR38",
+      "unstructured": "Yoshie T, Nishiumi S, Izumi Y, Sakai A, Inoue J, Azuma T, et al. Regulation of the metabolite profile by an APC gene mutation in colorectal cancer. Cancer Sci. 2012;103(6):1010–21. https://doi.org/10.1111/j.1349-7006.2012.02262.x.",
+      "volume": "103",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/pros.23450",
+      "author": "MAM Rodrigo",
+      "doi-asserted-by": "publisher",
+      "first-page": "104",
+      "issue": "2",
+      "journal-title": "Prostate",
+      "key": "465_CR39",
+      "unstructured": "Rodrigo MAM, Strmiska V, Horackova E, Buchtelova H, Michalek P, Stiborova M, et al. Sarcosine influences apoptosis and growth of prostate cells via cell-type specific regulation of distinct sets of genes. Prostate. 2018;78(2):104–12. https://doi.org/10.1002/pros.23450.",
+      "volume": "78",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/genes12020245",
+      "doi-asserted-by": "publisher",
+      "key": "465_CR40",
+      "unstructured": "Salgado-García R, Coronel-Hernández J, Delgado-Waldo I, Cantú de León D, García-Castillo V, López-Urrutia E. et al. Negative regulation of ULK1 by microRNA-106a in autophagy induced by a triple drug combination in colorectal cancer cells in vitro. Genes (Basel). 2021;12(2):245. https://doi.org/10.3390/genes12020245."
+    },
+    {
+      "DOI": "10.1016/0014-4800(87)90070-0",
+      "author": "MG Paggi",
+      "doi-asserted-by": "publisher",
+      "first-page": "154",
+      "issue": "2",
+      "journal-title": "Exp Mol Pathol",
+      "key": "465_CR41",
+      "unstructured": "Paggi MG, Zupi G, Fanciulli M, Del Carlo C, Giorno S, Laudonio N, et al. Effect of lonidamine on the utilization of 14C-labeled glucose by human astrocytoma cells. Exp Mol Pathol. 1987;47(2):154–65. https://doi.org/10.1016/0014-4800(87)90070-0.",
+      "volume": "47",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1158/1535-7163.MCT-17-1148",
+      "author": "KM Lemberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "1824",
+      "issue": "9",
+      "journal-title": "Mol Cancer Ther",
+      "key": "465_CR42",
+      "unstructured": "Lemberg KM, Vornov JJ, Rais R, Slusher BS. We’re not “DON” yet: optimal dosing and prodrug delivery of 6-Diazo-5-oxo-L-norleucine. Mol Cancer Ther. 2018;17(9):1824–32. https://doi.org/10.1158/1535-7163.MCT-17-1148.",
+      "volume": "17",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-20-0600",
+      "author": "Y Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "4815",
+      "issue": "21",
+      "journal-title": "Cancer Res",
+      "key": "465_CR43",
+      "unstructured": "Zhao Y, Feng X, Chen Y, Selfridge JE, Gorityala S, Du Z, et al. 5-Fluorouracil enhances the antitumor activity of the glutaminase inhibitor CB-839 against PIK3CA-mutant colorectal cancers. Cancer Res. 2020;80(21):4815–27. https://doi.org/10.1158/0008-5472.CAN-20-0600.",
+      "volume": "80",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2022.01.007",
+      "author": "NN Pavlova",
+      "doi-asserted-by": "publisher",
+      "first-page": "355",
+      "issue": "3",
+      "journal-title": "Cell Metab",
+      "key": "465_CR44",
+      "unstructured": "Pavlova NN, Zhu J, Thompson CB. The hallmarks of cancer metabolism: Still emerging. Cell Metab. 2022;34(3):355–77. https://doi.org/10.1016/j.cmet.2022.01.007.",
+      "volume": "34",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.4161/epi.29632",
+      "author": "BM Lindqvist",
+      "doi-asserted-by": "publisher",
+      "first-page": "1149",
+      "issue": "8",
+      "journal-title": "Epigenetics",
+      "key": "465_CR45",
+      "unstructured": "Lindqvist BM, Wingren S, Motlagh PB, Nilsson TK. Whole genome DNA methylation signature of HER2-positive breast cancer. Epigenetics. 2014;9(8):1149–62. https://doi.org/10.4161/epi.29632.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.molcel.2018.03.018",
+      "author": "JH Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "197",
+      "issue": "2",
+      "journal-title": "Mol Cell",
+      "key": "465_CR46",
+      "unstructured": "Lee JH, Liu R, Li J, Wang Y, Tan L, Li XJ, et al. EGFR-phosphorylated platelet isoform of phosphofructokinase 1 promotes PI3K activation. Mol Cell. 2018;70(2):197-210.e7. https://doi.org/10.1016/j.molcel.2018.03.018.",
+      "volume": "70",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.tem.2021.03.003",
+      "author": "M Butler",
+      "doi-asserted-by": "publisher",
+      "first-page": "367",
+      "issue": "6",
+      "journal-title": "Trends Endocrinol Metab",
+      "key": "465_CR47",
+      "unstructured": "Butler M, van der Meer LT, van Leeuwen FN. Amino acid depletion therapies: starving cancer cells to death. Trends Endocrinol Metab. 2021;32(6):367–81. https://doi.org/10.1016/j.tem.2021.03.003.",
+      "volume": "32",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1021/pr300900b",
+      "author": "HJ Lees",
+      "doi-asserted-by": "publisher",
+      "first-page": "1527",
+      "issue": "4",
+      "journal-title": "J Proteome Res",
+      "key": "465_CR48",
+      "unstructured": "Lees HJ, Swann JR, Wilson ID, Nicholson JK, Holmes E. Hippurate: the natural history of a mammalian-microbial cometabolite. J Proteome Res. 2013;12(4):1527–46. https://doi.org/10.1021/pr300900b.",
+      "volume": "12",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41598-017-13722-4",
+      "author": "T Pallister",
+      "doi-asserted-by": "publisher",
+      "first-page": "13670",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "465_CR49",
+      "unstructured": "Pallister T, Jackson MA, Martin TC, Zierer J, Jennings A, Mohney RP, et al. Hippurate as a metabolomic marker of gut microbiome diversity: modulation by diet and relationship to metabolic syndrome. Sci Rep. 2017;7(1):13670. https://doi.org/10.1038/s41598-017-13722-4.",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.2147/IJGM.S343426",
+      "author": "M Gong",
+      "doi-asserted-by": "publisher",
+      "first-page": "9503",
+      "journal-title": "Int J Gen Med.",
+      "key": "465_CR50",
+      "unstructured": "Gong M, Liu X, Yang W, Song H, Zhao X, Ai X, et al. Identification of a lipid metabolism-associated gene signature predicting survival in breast cancer. Int J Gen Med. 2021;14:9503–13. https://doi.org/10.2147/IJGM.S343426.",
+      "volume": "14",
+      "year": "2021"
+    }
+  ],
+  "reference-count": 50,
+  "references-count": 50,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00465-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Controlling the confounding effect of metabolic gene expression to identify actual metabolite targets in microsatellite instability cancers"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

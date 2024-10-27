@@ -1,0 +1,856 @@
+{
+  "DOI": "10.1007/s00439-022-02444-x",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-022-02444-x",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eSequencing exomes/genomes have been successful for identifying recessive genes; however, discovery of dominant genes including deafness genes (DFNA) remains challenging. We report a new DFNA gene, \u003cjats:italic\u003eATP11A\u003c/jats:italic\u003e, in a Newfoundland family with a variable form of bilateral sensorineural hearing loss (SNHL). Genome-wide SNP genotyping linked SNHL to \u003cjats:italic\u003eDFNA33\u003c/jats:italic\u003e (LOD = 4.77), a locus on 13q34 previously mapped in a German family with variable SNHL. Whole-genome sequencing identified 51 unremarkable positional variants on 13q34\u003cjats:italic\u003e.\u003c/jats:italic\u003e Continuous clinical ascertainment identified several key recombination events and reduced the disease interval to 769 kb, excluding all but one variant. \u003cjats:italic\u003eATP11A\u003c/jats:italic\u003e (NC_000013.11: chr13:113534963G\u0026gt;A) is a novel variant predicted to be a cryptic donor splice site. RNA studies verified in silico predictions, revealing the retention of 153 bp of intron in the 3′ UTR of several \u003cjats:italic\u003eATP11A\u003c/jats:italic\u003e isoforms. Two unresolved families from Israel were subsequently identified with a similar, variable form of SNHL and a novel duplication (NM_032189.3:c.3322_3327+2dupGTCCAGGT) in exon 28 of \u003cjats:italic\u003eATP11A\u003c/jats:italic\u003e extended exon 28 by 8 bp, leading to a frameshift and premature stop codon (p.Asn1110Valfs43Ter). \u003cjats:italic\u003eATP11A\u003c/jats:italic\u003e is a type of P4-ATPase that transports (flip) phospholipids from the outer to inner leaflet of cell membranes to maintain asymmetry. Haploinsufficiency of ATP11A, the phospholipid flippase that specially transports phosphatidylserine (PS) and phosphatidylethanolamine (PE), could leave cells with PS/PE at the extracellular side vulnerable to phagocytic degradation. Given that surface PS can be pharmaceutically targeted, hearing loss due to \u003cjats:italic\u003eATP11A\u003c/jats:italic\u003e could potentially be treated. It is also likely that \u003cjats:italic\u003eATP11A\u003c/jats:italic\u003e is the gene underlying \u003cjats:italic\u003eDFNA33\u003c/jats:italic\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2444"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "24 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "22 February 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "12 March 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare they have no conflict of interest."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "This study was approved by the institutional review board at Memorial University (#1.186), the Ethics Committee of Tel Aviv University and the Helsinki Committee of the Israel Ministry of Health."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Informed consent was obtained from all individual participants included in this study."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 5,
+      "value": "Participants signed informed consent regarding publishing their data."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Pater",
+      "given": "Justin A.",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Penney",
+      "given": "Cindy",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "O’Rielly",
+      "given": "Darren D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Griffin",
+      "given": "Anne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kamal",
+      "given": "Lara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brownstein",
+      "given": "Zippora",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vona",
+      "given": "Barbara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vinkler",
+      "given": "Chana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shohat",
+      "given": "Mordechai",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Barel",
+      "given": "Ortal",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "French",
+      "given": "Curtis R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Singh",
+      "given": "Sushma",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Werdyani",
+      "given": "Salem",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Burt",
+      "given": "Taylor",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Abdelfatah",
+      "given": "Nelly",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Houston",
+      "given": "Jim",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Doucette",
+      "given": "Lance P.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Squires",
+      "given": "Jessica",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Glaser",
+      "given": "Fabian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Roslin",
+      "given": "Nicole M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vincent",
+      "given": "Daniel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Marquis",
+      "given": "Pascale",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Woodland",
+      "given": "Geoffrey",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Benoukraf",
+      "given": "Touati",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hawkey-Noble",
+      "given": "Alexia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Avraham",
+      "given": "Karen B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stanton",
+      "given": "Susan G.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4673-6470",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Young",
+      "given": "Terry-Lynn",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        12
+      ]
+    ],
+    "date-time": "2022-03-12T06:02:32Z",
+    "timestamp": 1647064952000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        23
+      ]
+    ],
+    "date-time": "2022-04-23T07:09:21Z",
+    "timestamp": 1650697761000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100008762",
+      "doi-asserted-by": "publisher",
+      "name": "Genome Canada"
+    },
+    {
+      "DOI": "10.13039/501100000030",
+      "doi-asserted-by": "publisher",
+      "name": "Institute of Genetics"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T13:01:31Z",
+    "timestamp": 1714568491468
+  },
+  "is-referenced-by-count": 7,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "3-4",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        12
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "3-4",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            12
+          ]
+        ],
+        "date-time": "2022-03-12T00:00:00Z",
+        "timestamp": 1647043200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            12
+          ]
+        ],
+        "date-time": "2022-03-12T00:00:00Z",
+        "timestamp": 1647043200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02444-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-022-02444-x/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02444-x.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "431-444",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        12
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        12
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        4
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.3389/fphys.2016.00275",
+      "author": "JP Andersen",
+      "doi-asserted-by": "publisher",
+      "first-page": "275",
+      "journal-title": "Front Physiol",
+      "key": "2444_CR1",
+      "unstructured": "Andersen JP, Vestergaard AL, Mikkelsen SA, Mogensen LS, Chalat M, Molday RS (2016) P4-ATPases as phospholipid flippases-structure, function, and enigmas. Front Physiol 7:275. https://doi.org/10.3389/fphys.2016.00275",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3324/haematol.2016.142273",
+      "author": "N Arashiki",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "journal-title": "Haematologica",
+      "key": "2444_CR2",
+      "unstructured": "Arashiki N, Takakuwa Y, Mohandas N, Hale J, Yoshida K, Ogura H, Utsugisawa T, Ohga S, Miyano S, Ogawa S, Kojima S, Kanno H (2016) ATP11C is a major flippase in human erythrocytes and its defect causes congenital hemolytic anemia. Haematologica 101:559–565. https://doi.org/10.3324/haematol.2016.142273",
+      "volume": "101",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1073/pnas.1418631112",
+      "author": "A Belkadi",
+      "doi-asserted-by": "publisher",
+      "first-page": "5473",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "2444_CR3",
+      "unstructured": "Belkadi A, Bolze A, Itan Y, Cobat A, Vincent QB, Antipenko A, Shang L, Boisson B, Casanova JL, Abel L (2015) Whole-genome sequencing is more powerful than whole-exome sequencing for detecting exome variants. Proc Natl Acad Sci USA 112:5473–5478. https://doi.org/10.1073/pnas.1418631112",
+      "volume": "112",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/cdd.2016.11",
+      "author": "RB Birge",
+      "doi-asserted-by": "publisher",
+      "first-page": "962",
+      "journal-title": "Cell Death Differ",
+      "key": "2444_CR4",
+      "unstructured": "Birge RB, Boeltz S, Kumar S, Carlson J, Wanderley J, Calianese D, Barcinski M, Brekken RA, Huang X, Hutchins JT, Freimark B, Empig C, Mercer J, Schroit AJ, Schett G, Herrmann M (2016) Phosphatidylserine is a global immunosuppressive signal in efferocytosis, infectious disease, and cancer. Cell Death Differ 23:962–978. https://doi.org/10.1038/cdd.2016.11",
+      "volume": "23",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00106-008-1832-9",
+      "author": "D Bonsch",
+      "doi-asserted-by": "publisher",
+      "first-page": "371",
+      "journal-title": "HNO",
+      "key": "2444_CR5",
+      "unstructured": "Bonsch D, Schmidt CM, Scheer P, Bohlender J, Neumann C, Am Zehnhoff-Dinnesen A, Deufel T (2009) A new gene locus for an autosomal-dominant non-syndromic hearing impairment (DFNA 33) is situated on chromosome 13q34-qter. HNO 57:371–376. https://doi.org/10.1007/s00106-008-1832-9",
+      "volume": "57",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1074/jbc.M110.139543",
+      "author": "S Bryde",
+      "doi-asserted-by": "publisher",
+      "first-page": "40562",
+      "journal-title": "J Biol Chem",
+      "key": "2444_CR6",
+      "unstructured": "Bryde S, Hennrich H, Verhulst PM, Devaux PF, Lenoir G, Holthuis JC (2010) CDC50 proteins are critical components of the human class-1 P4-ATPase transport machinery. J Biol Chem 285:40562–40572. https://doi.org/10.1074/jbc.M110.139543",
+      "volume": "285",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/ng0398-219",
+      "author": "LN Bull",
+      "doi-asserted-by": "publisher",
+      "first-page": "219",
+      "journal-title": "Nat Genet",
+      "key": "2444_CR7",
+      "unstructured": "Bull LN, van Eijk MJ, Pawlikowska L, DeYoung JA, Juijn JA, Liao M, Klomp LW, Lomri N, Berger R, Scharschmidt BF, Knisely AS, Houwen RH, Freimer NB (1998) A gene encoding a P-type ATPase mutated in two forms of hereditary cholestasis. Nat Genet 18:219–224. https://doi.org/10.1038/ng0398-219",
+      "volume": "18",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.1091/mbc.E16-06-0453",
+      "author": "M Chalat",
+      "doi-asserted-by": "publisher",
+      "first-page": "452",
+      "journal-title": "Mol Biol Cell",
+      "key": "2444_CR8",
+      "unstructured": "Chalat M, Moleschi K, Molday RS (2017) C-terminus of the P4-ATPase ATP8A2 functions in protein folding and regulation of phospholipid flippase activity. Mol Biol Cell 28:452–462. https://doi.org/10.1091/mbc.E16-06-0453",
+      "volume": "28",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1242/jcs.145052",
+      "author": "JA Coleman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1138",
+      "journal-title": "J Cell Sci",
+      "key": "2444_CR9",
+      "unstructured": "Coleman JA, Zhu X, Djajadi HR, Molday LL, Smith RS, Libby RT, John SW, Molday RS (2014) Phospholipid flippase ATP8A2 is required for normal visual and auditory function and photoreceptor and spiral ganglion cell survival. J Cell Sci 127:1138–1149. https://doi.org/10.1242/jcs.145052",
+      "volume": "127",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1101/pdb.prot4141",
+      "author": "GL Costa",
+      "doi-asserted-by": "publisher",
+      "journal-title": "CSH Protoc",
+      "key": "2444_CR10",
+      "unstructured": "Costa GL, Weiner MP (2006) Colony PCR. CSH Protoc. https://doi.org/10.1101/pdb.prot4141",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1089/1066527041410409",
+      "author": "M Fishelson",
+      "doi-asserted-by": "publisher",
+      "first-page": "263",
+      "journal-title": "J Comput Biol",
+      "key": "2444_CR11",
+      "unstructured": "Fishelson M, Geiger D (2004) Optimizing exact genetic linkage computations. J Comput Biol 11:263–275. https://doi.org/10.1089/1066527041410409",
+      "volume": "11",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1016/j.gep.2020.119115",
+      "author": "A Hawkey-Noble",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Gene Expr Patterns",
+      "key": "2444_CR001",
+      "unstructured": "Hawkey-Noble A, Umali J, Fowler French CR (2020) Expression of three P4-phospholipid flippases—atp11a, atp11b, and atp11c in zebrafish (Danio rerio). Gene Expr Patterns 36:119115. https://doi.org/10.1016/j.gep.2020.119115",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/lary.20664",
+      "author": "MS Hildebrand",
+      "doi-asserted-by": "publisher",
+      "first-page": "2211",
+      "journal-title": "Laryngoscope",
+      "key": "2444_CR12",
+      "unstructured": "Hildebrand MS, DeLuca AP, Taylor KR, Hoskinson DP, Hur IA, Tack D, McMordie SJ, Huygen PL, Casavant TL, Smith RJ (2009) A contemporary review of AudioGene audioprofiling: a machine-based candidate gene prediction tool for autosomal dominant nonsyndromic hearing loss. Laryngoscope 119:2211–2215. https://doi.org/10.1002/lary.20664",
+      "volume": "119",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03819-2",
+      "author": "J Jumper",
+      "doi-asserted-by": "publisher",
+      "first-page": "583",
+      "journal-title": "Nature",
+      "key": "2444_CR13",
+      "unstructured": "Jumper J, Evans R, Pritzel A, Green T, Figurnov M, Ronneberger O, Tunyasuvunakool K, Bates R, Žídek A, Potapenko A, Bridgland A, Meyer C, Kohl SAA, Ballard AJ, Cowie A, Romera-Paredes B, Nikolov S, Jain R, Adler J, Back T, Petersen S, Reiman D, Clancy E, Zielinski M, Steinegger M, Pacholska M, Berghammer T, Bodenstein S, Silver D, Vinyals O, Senior AW, Kavukcuoglu K, Kohli P, Hassabis D (2021) Highly accurate protein structure prediction with AlphaFold. Nature 596:583–589. https://doi.org/10.1038/s41586-021-03819-2",
+      "volume": "596",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s10048-016-0496-y",
+      "author": "E Martin-Hernandez",
+      "doi-asserted-by": "publisher",
+      "first-page": "259",
+      "journal-title": "Neurogenetics",
+      "key": "2444_CR14",
+      "unstructured": "Martin-Hernandez E, Rodriguez-Garcia ME, Camacho A, Matilla-Duenas A, Garcia-Silva MT, Quijada-Fraile P, Corral-Juan M, Tejada-Palacios P, de Las Heras RS, Arenas J, Martin MA, Martinez-Azorin F (2016) New ATP8A2 gene mutations associated with a novel syndrome: encephalopathy, intellectual disability, severe hypotonia, chorea and optic atrophy. Neurogenetics 17:259–263. https://doi.org/10.1007/s10048-016-0496-y",
+      "volume": "17",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/nar/16.3.1215",
+      "author": "SA Miller",
+      "doi-asserted-by": "publisher",
+      "first-page": "1215",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2444_CR15",
+      "unstructured": "Miller SA, Dykes DD, Polesky HF (1988) A simple salting out procedure for extracting DNA from human nucleated cells. Nucleic Acids Res 16:1215",
+      "volume": "16",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.1101/2021.08.15.456425",
+      "doi-asserted-by": "publisher",
+      "key": "2444_CR16",
+      "unstructured": "Mirdita M, Ovchinnikov S, Steinegger M (2021) ColabFold—making protein folding accessible to all. bioRxiv: 2021.08.15.456425. https://doi.org/10.1101/2021.08.15.456425"
+    },
+    {
+      "DOI": "10.1056/NEJMra050700",
+      "author": "CC Morton",
+      "doi-asserted-by": "publisher",
+      "first-page": "2151",
+      "journal-title": "N Engl J Med",
+      "key": "2444_CR17",
+      "unstructured": "Morton CC, Nance WE (2006) Newborn hearing screening—a silent revolution. N Engl J Med 354:2151–2164. https://doi.org/10.1056/NEJMra050700",
+      "volume": "354",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1097/01.MLG.0000158666.15447.37",
+      "author": "DA Mouadeb",
+      "doi-asserted-by": "publisher",
+      "first-page": "879",
+      "journal-title": "Laryngoscope",
+      "key": "2444_CR18",
+      "unstructured": "Mouadeb DA, Ruckenstein MJ (2005) Antiphospholipid inner ear syndrome. Laryngoscope 115:879–883. https://doi.org/10.1097/01.MLG.0000158666.15447.37",
+      "volume": "115",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1091/mbc.E20-04-0225",
+      "author": "S Okamoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "2115",
+      "journal-title": "Mol Biol Cell",
+      "key": "2444_CR19",
+      "unstructured": "Okamoto S, Naito T, Shigetomi R, Kosugi Y, Nakayama K, Takatsu H, Shin H-W (2020) The N- or C-terminal cytoplasmic regions of P4-ATPases determine their cellular localization. Mol Biol Cell 31:2115–2124. https://doi.org/10.1091/mbc.E20-04-0225",
+      "volume": "31",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/humu.23630",
+      "author": "AM Oza",
+      "doi-asserted-by": "publisher",
+      "first-page": "1593",
+      "journal-title": "Hum Mutat",
+      "key": "2444_CR20",
+      "unstructured": "Oza AM, DiStefano MT, Hemphill SE, Cushman BJ, Grant AR, Siegert RK, Shen J, Chapin A, Boczek NJ, Schimmenti LA, Murry JB, Hasadsri L, Nara K, Kenna M, Booth KT, Azaiez H, Griffith A, Avraham KB, Kremer H, Rehm HL, Amr SS, Abou Tayoun AN, ClinGen Hearing Loss Clinical Domain Working Group (2018) Expert specification of the ACMG/AMP variant interpretation guidelines for genetic hearing loss. Hum Mutat 39:1593–1613. https://doi.org/10.1002/humu.23630",
+      "volume": "39",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.febslet.2010.04.071",
+      "author": "CC Paulusma",
+      "doi-asserted-by": "publisher",
+      "first-page": "2708",
+      "journal-title": "FEBS Lett",
+      "key": "2444_CR21",
+      "unstructured": "Paulusma CC, Elferink RP (2010) P4 ATPases—the physiological relevance of lipid flipping transporters. FEBS Lett 584:2708–2716. https://doi.org/10.1016/j.febslet.2010.04.071",
+      "volume": "584",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1002/pro.3943",
+      "author": "EF Pettersen",
+      "doi-asserted-by": "publisher",
+      "first-page": "70",
+      "journal-title": "Protein Sci",
+      "key": "2444_CR22",
+      "unstructured": "Pettersen EF, Goddard TD, Huang CC, Meng EC, Couch GS, Croll TI, Morris JH, Ferrin TE (2021) UCSF ChimeraX: structure visualization for researchers, educators, and developers. Protein Sci 30:70–82. https://doi.org/10.1002/pro.3943",
+      "volume": "30",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.celrep.2019.02.053",
+      "author": "PT Ranum",
+      "doi-asserted-by": "publisher",
+      "issue": "3160–3171",
+      "journal-title": "Cell Rep",
+      "key": "2444_CR23",
+      "unstructured": "Ranum PT, Goodwin AT, Yoshimura H, Kolbe DL, Walls WD, Koh JY, He DZZ, Smith RJH (2019) Insights into the biology of hearing and deafness revealed by single-cell RNA sequencing. Cell Rep 26(3160–3171):e3. https://doi.org/10.1016/j.celrep.2019.02.053",
+      "volume": "26",
+      "year": "2019"
+    },
+    {
+      "key": "2444_CR24",
+      "unstructured": "Richard JH, Smith ES, Hildebrand MS, Van Camp G (1999) GeneReviews. NCBI. http://www.ncbi.nlm.nih.gov/books/NBK1434/. Accessed 1 Oct 2018"
+    },
+    {
+      "DOI": "10.1038/gim.2015.30",
+      "author": "S Richards",
+      "doi-asserted-by": "publisher",
+      "first-page": "405",
+      "journal-title": "Genet Med off J Am Coll Med Genet",
+      "key": "2444_CR25",
+      "unstructured": "Richards S, Aziz N, Bale S, Bick D, Das S, Gastier-Foster J, Grody WW, Hegde M, Lyon E, Spector E, Voelkerding K, Rehm HL, Committee ALQA (2015) Standards and guidelines for the interpretation of sequence variants: a joint consensus recommendation of the American College of Medical Genetics and Genomics and the Association for Molecular Pathology. Genet Med off J Am Coll Med Genet 17:405–424. https://doi.org/10.1038/gim.2015.30",
+      "volume": "17",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.jmb.2021.167208",
+      "author": "KM Ruff",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Mol Biol",
+      "key": "2444_CR26",
+      "unstructured": "Ruff KM, Pappu RV (2021) AlphaFold and implications for intrinsically disordered proteins. J Mol Biol 433:167208. https://doi.org/10.1016/j.jmb.2021.167208",
+      "volume": "433",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/S0021-9258(18)89189-X",
+      "author": "AJ Schroit",
+      "doi-asserted-by": "publisher",
+      "first-page": "5131",
+      "journal-title": "J Biol Chem",
+      "key": "2444_CR27",
+      "unstructured": "Schroit AJ, Madsen JW, Tanaka Y (1985) In vivo recognition and clearance of red blood cells containing phosphatidylserine in their plasma membranes. J Biol Chem 260:5131–5138",
+      "volume": "260",
+      "year": "1985"
+    },
+    {
+      "DOI": "10.1126/science.1252809",
+      "author": "K Segawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "1164",
+      "journal-title": "Science",
+      "key": "2444_CR28",
+      "unstructured": "Segawa K, Kurata S, Yanagihashi Y, Brummelkamp TR, Matsuda F, Nagata S (2014) Caspase-mediated cleavage of phospholipid flippase for apoptotic phosphatidylserine exposure. Science 344:1164–1168. https://doi.org/10.1126/science.1252809",
+      "volume": "344",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1074/jbc.M115.690727",
+      "author": "K Segawa",
+      "doi-asserted-by": "publisher",
+      "first-page": "762",
+      "journal-title": "J Biol Chem",
+      "key": "2444_CR29",
+      "unstructured": "Segawa K, Kurata S, Nagata S (2016) Human type IV P-type ATPases that work as plasma membrane phospholipid flippases and their regulation by caspase and calcium. J Biol Chem 291:762–772. https://doi.org/10.1074/jbc.M115.690727",
+      "volume": "291",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/database/bav071",
+      "author": "J Shen",
+      "doi-asserted-by": "publisher",
+      "first-page": "bav071",
+      "journal-title": "Database (oxf)",
+      "key": "2444_CR30",
+      "unstructured": "Shen J, Scheffer DI, Kwan KY, Corey DP (2015) SHIELD: an integrative gene expression database for inner ear research. Database (oxf) 2015:bav071. https://doi.org/10.1093/database/bav071",
+      "volume": "2015",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/nar/29.1.308",
+      "author": "ST Sherry",
+      "doi-asserted-by": "publisher",
+      "first-page": "308",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2444_CR31",
+      "unstructured": "Sherry ST, Ward MH, Kholodov M, Baker J, Phan L, Smigielski EM, Sirotkin K (2001) dbSNP: the NCBI database of genetic variation. Nucleic Acids Res 29:308–311",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1073/pnas.0807919106",
+      "author": "JM Stapelbroek",
+      "doi-asserted-by": "publisher",
+      "first-page": "9709",
+      "journal-title": "Proc Natl Acad Sci USA",
+      "key": "2444_CR32",
+      "unstructured": "Stapelbroek JM, Peters TA, van Beurden DH, Curfs JH, Joosten A, Beynon AJ, van Leeuwen BM, van der Velden LM, Bull L, Oude Elferink RP, van Zanten BA, Klomp LW, Houwen RH (2009) ATP8B1 is essential for maintaining normal hearing. Proc Natl Acad Sci USA 106:9709–9714. https://doi.org/10.1073/pnas.0807919106",
+      "volume": "106",
+      "year": "2009"
+    },
+    {
+      "key": "2444_CR33",
+      "unstructured": "Van Camp G, Smith RJH (2015) Hereditary hearing loss homepage. http://hereditaryhearingloss.org. Accessed 10 Oct 2018"
+    },
+    {
+      "DOI": "10.1038/s41598-018-29108-z",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "10795",
+      "journal-title": "Sci Rep",
+      "key": "2444_CR34",
+      "unstructured": "Wang J, Molday LL, Hii T, Coleman JA, Wen T, Andersen JP, Molday RS (2018) Proteomic analysis and functional characterization of P4-ATPase phospholipid flippases from murine tissues. Sci Rep 8:10795. https://doi.org/10.1038/s41598-018-29108-z",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "author": "NM Wiles",
+      "first-page": "ECR46",
+      "journal-title": "Haematologica",
+      "key": "2444_CR35",
+      "unstructured": "Wiles NM, Hunt BJ, Callanan V, Chevretton EB (2006) Sudden sensorineural hearing loss and antiphospholipid syndrome. Haematologica 91:ECR46",
+      "volume": "91",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1093/nar/gkv1157",
+      "author": "A Yates",
+      "doi-asserted-by": "publisher",
+      "first-page": "D710",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2444_CR36",
+      "unstructured": "Yates A, Akanni W, Amode MR, Barrell D, Billis K, Carvalho-Silva D, Cummins C, Clapham P, Fitzgerald S, Gil L, Giron CG, Gordon L, Hourlier T, Hunt SE, Janacek SH, Johnson N, Juettemann T, Keenan S, Lavidas I, Martin FJ, Maurel T, McLaren W, Murphy DN, Nag R, Nuhn M, Parker A, Patricio M, Pignatelli M, Rahtz M, Riat HS, Sheppard D, Taylor K, Thormann A, Vullo A, Wilder SP, Zadissa A, Birney E, Harrow J, Muffato M, Perry E, Ruffier M, Spudich G, Trevanion SJ, Cunningham F, Aken BL, Zerbino DR, Flicek P (2016) Ensembl 2016. Nucleic Acids Res 44:D710–D716. https://doi.org/10.1093/nar/gkv1157",
+      "volume": "44",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1042/bj2940001",
+      "author": "A Zachowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "Pt 1",
+      "journal-title": "Biochem J",
+      "key": "2444_CR37",
+      "unstructured": "Zachowski A (1993) Phospholipids in animal eukaryotic membranes: transverse asymmetry and movement. Biochem J 294(Pt 1):1–14",
+      "volume": "294",
+      "year": "1993"
+    },
+    {
+      "DOI": "10.1186/s12864-015-1308-8",
+      "author": "S Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "97",
+      "journal-title": "BMC Genom",
+      "key": "2444_CR38",
+      "unstructured": "Zhao S, Zhang B (2015) A comprehensive evaluation of ensembl, RefSeq, and UCSC annotations in the context of RNA-seq read mapping and gene quantification. BMC Genom 16:97. https://doi.org/10.1186/s12864-015-1308-8",
+      "volume": "16",
+      "year": "2015"
+    }
+  ],
+  "reference-count": 39,
+  "references-count": 39,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-022-02444-x"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Autosomal dominant non-syndromic hearing loss maps to DFNA33 (13q34) and co-segregates with splice and frameshift variants in ATP11A, a phospholipid flippase gene"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "141"
+}

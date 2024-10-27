@@ -1,0 +1,735 @@
+{
+  "DOI": "10.1186/s40246-021-00308-5",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-021-00308-5",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eRNA sequencing (RNA-Seq) has been widely applied in oncology for monitoring transcriptome changes. However, the emerging problem that high variation of gene expression levels caused by tumor heterogeneity may affect the reproducibility of differential expression (DE) results has rarely been studied. Here, we investigated the reproducibility of DE results for any given number of biological replicates between 3 and 24 and explored why a great many differentially expressed genes (DEGs) were not reproducible.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eOur findings demonstrate that poor reproducibility of DE results exists not only for small sample sizes, but also for relatively large sample sizes. Quite a few of the DEGs detected are specific to the samples in use, rather than genuinely differentially expressed under different conditions. Poor reproducibility of DE results is mainly caused by high variation of gene expression levels for the same gene in different samples. Even though biological variation may account for much of the high variation of gene expression levels, the effect of outlier count data also needs to be treated seriously, as outlier data severely interfere with DE analysis.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eHigh heterogeneity exists not only in tumor tissue samples of each cancer type studied, but also in normal samples. High heterogeneity leads to poor reproducibility of DEGs, undermining generalization of differential expression results. Therefore, it is necessary to use large sample sizes (at least 10 if possible) in RNA-Seq experimental designs to reduce the impact of biological variability and DE results should be interpreted cautiously unless soundly validated.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "308"
+  ],
+  "article-number": "7",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "26 June 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "19 January 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "28 January 2021"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Cui",
+      "given": "Weitong",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Xue",
+      "given": "Huaru",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wei",
+      "given": "Lei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jin",
+      "given": "Jinghua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tian",
+      "given": "Xuewen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Qinglu",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        28
+      ]
+    ],
+    "date-time": "2021-01-28T13:06:26Z",
+    "timestamp": 1611839186000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        28
+      ]
+    ],
+    "date-time": "2021-01-28T13:40:52Z",
+    "timestamp": 1611841252000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100007129",
+      "award": [
+        "ZR2019PC053"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Natural Science Foundation of Shandong Province"
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "31701042"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "award": [
+        "2018kj040045"
+      ],
+      "name": "Key Research and Development Program of Zibo"
+    },
+    {
+      "award": [
+        "2018ZBXC008"
+      ],
+      "name": "Zibo Platform for Gene Editing and Cell Application"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T19:40:41Z",
+    "timestamp": 1714592441890
+  },
+  "is-referenced-by-count": 23,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        28
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            28
+          ]
+        ],
+        "date-time": "2021-01-28T00:00:00Z",
+        "timestamp": 1611792000000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            28
+          ]
+        ],
+        "date-time": "2021-01-28T00:00:00Z",
+        "timestamp": 1611792000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-021-00308-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/article/10.1186/s40246-021-00308-5/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "http://link.springer.com/content/pdf/10.1186/s40246-021-00308-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        28
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        1,
+        28
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.semcancer.2013.06.002",
+      "author": "E Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "279",
+      "journal-title": "Semin Cancer Biol.",
+      "key": "308_CR1",
+      "unstructured": "Wang E, Zou J, Zaman N, Beitel LK, Trifiro M, Paliouras M. Cancer systems biology in the genome sequencing era: part 1, dissecting and modeling of tumor clones and their networks. Semin Cancer Biol. 2013;23:279–85.",
+      "volume": "23",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.semcancer.2013.06.001",
+      "author": "E Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "286",
+      "journal-title": "Semin Cancer Biol.",
+      "key": "308_CR2",
+      "unstructured": "Wang E, Zou J, Zaman N, Beitel LK, Trifiro M, Paliouras M. Cancer systems biology in the genome sequencing era: part 2, evolutionary dynamics of tumor clonal networks and drug resistance. Semin Cancer Biol. 2013;23:286–92.",
+      "volume": "23",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41576-019-0150-2",
+      "author": "R Stark",
+      "doi-asserted-by": "publisher",
+      "first-page": "631",
+      "journal-title": "Nat Rev Genet.",
+      "key": "308_CR3",
+      "unstructured": "Stark R, Grzelak M, Hadfield J. RNA sequencing: the teenage years. Nat Rev Genet. 2019;20:631–56.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1111/gbb.12007",
+      "author": "R Hitzemann",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genes Brain Behav.",
+      "key": "308_CR4",
+      "unstructured": "Hitzemann R, Bottomly D, Darakjian P, Walter N, Iancu O, Searles R, et al. Genes, behavior and next-generation RNA sequencing. Genes Brain Behav. 2013;12:1–12.",
+      "volume": "12",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1101/gr.079558.108",
+      "author": "JC Marioni",
+      "doi-asserted-by": "publisher",
+      "first-page": "1509",
+      "journal-title": "Genome Res.",
+      "key": "308_CR5",
+      "unstructured": "Marioni JC, Mason CE, Mane SM, Stephens M, Gilad Y. RNA-seq: an assessment of technical reproducibility and comparison with gene expression arrays. Genome Res. 2008;18:1509–17.",
+      "volume": "18",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nmeth.1226",
+      "author": "A Mortazavi",
+      "doi-asserted-by": "publisher",
+      "first-page": "621",
+      "journal-title": "Nat Methods.",
+      "key": "308_CR6",
+      "unstructured": "Mortazavi A, Williams BA, McCue K, Schaeffer L, Wold B. Mapping and quantifying mammalian transcriptomes by RNA-Seq. Nat Methods. 2008;5:621–8.",
+      "volume": "5",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-94",
+      "author": "JH Bullard",
+      "doi-asserted-by": "publisher",
+      "first-page": "94",
+      "journal-title": "BMC Bioinformatics.",
+      "key": "308_CR7",
+      "unstructured": "Bullard JH, Purdom E, Hansen KD, Dudoit S. Evaluation of statistical methods for normalization and differential expression in mRNA-Seq experiments. BMC Bioinformatics. 2010;11:94.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/nbt.1910",
+      "author": "KD Hansen",
+      "doi-asserted-by": "publisher",
+      "first-page": "572",
+      "journal-title": "Nat Biotechnol.",
+      "key": "308_CR8",
+      "unstructured": "Hansen KD, Wu Z, Irizarry RA, Leek JT. Sequencing technology does not eliminate biological variability. Nat Biotechnol. 2011;29:572–3.",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3389/fpls.2018.00108",
+      "author": "S Lamarre",
+      "doi-asserted-by": "publisher",
+      "first-page": "108",
+      "journal-title": "Front Plant Sci.",
+      "key": "308_CR9",
+      "unstructured": "Lamarre S, Frasse P, Zouine M, Labourdette D, Sainderichin E, Hu G, et al. Optimization of an RNA-seq differential gene expression analysis depending on biological replicate number and library size. Front Plant Sci. 2018;9:108.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1261/rna.053959.115",
+      "author": "NJ Schurch",
+      "doi-asserted-by": "publisher",
+      "first-page": "839",
+      "journal-title": "RNA.",
+      "key": "308_CR10",
+      "unstructured": "Schurch NJ, Schofield P, Gierlinski M, Cole C, Sherstnev A, Singh V, et al. How many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use? RNA. 2016;22:839–51.",
+      "volume": "22",
+      "year": "2016"
+    },
+    {
+      "author": "A Marusyk",
+      "first-page": "105",
+      "journal-title": "Biochim Biophys Acta.",
+      "key": "308_CR11",
+      "unstructured": "Marusyk A, Polyak K. Tumor heterogeneity: causes and consequences. Biochim Biophys Acta. 1805;2010:105–17.",
+      "volume": "2010",
+      "year": "1805"
+    },
+    {
+      "DOI": "10.1016/j.molonc.2014.06.005",
+      "author": "RA Burrell",
+      "doi-asserted-by": "publisher",
+      "first-page": "1095",
+      "journal-title": "Mol Oncol.",
+      "key": "308_CR12",
+      "unstructured": "Burrell RA, Swanton C. Tumour heterogeneity and the evolution of polyclonal drug resistance. Mol Oncol. 2014;8:1095–111.",
+      "volume": "8",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.eururo.2016.07.008",
+      "author": "L Wei",
+      "doi-asserted-by": "publisher",
+      "first-page": "183",
+      "journal-title": "Eur Urol.",
+      "key": "308_CR13",
+      "unstructured": "Wei L, Wang J, Lampert E, Schlanger S, DePriest AD, Hu Q, et al. Intratumoral and intertumoral genomic heterogeneity of multifocal localized prostate cancer impacts molecular classifications and genomic prognosticators. Eur Urol. 2017;71:183–92.",
+      "volume": "71",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nrclinonc.2017.166",
+      "author": "I Dagogo-Jack",
+      "doi-asserted-by": "publisher",
+      "first-page": "81",
+      "journal-title": "Nat Rev Clin Oncol.",
+      "key": "308_CR14",
+      "unstructured": "Dagogo-Jack I, Shaw AT. Tumour heterogeneity and resistance to cancer therapies. Nat Rev Clin Oncol. 2018;15:81–94.",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/483531a",
+      "author": "CG Begley",
+      "doi-asserted-by": "publisher",
+      "first-page": "531",
+      "journal-title": "Nature.",
+      "key": "308_CR15",
+      "unstructured": "Begley CG, Ellis LM. Drug development: raise standards for preclinical cancer research. Nature. 2012;483:531–3.",
+      "volume": "483",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/533452a",
+      "author": "M Baker",
+      "doi-asserted-by": "publisher",
+      "first-page": "452",
+      "journal-title": "Nature.",
+      "key": "308_CR16",
+      "unstructured": "Baker M. 1,500 scientists lift the lid on reproducibility. Nature. 2016;533:452–4.",
+      "volume": "533",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0087782",
+      "author": "YW Wan",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS One.",
+      "key": "308_CR17",
+      "unstructured": "Wan YW, Mach CM, Allen GI, Anderson ML, Liu Z. On the reproducibility of TCGA ovarian cancer microRNA profiles. PLoS One. 2014;9:e87782.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "author": "K Tomczak",
+      "first-page": "A68",
+      "journal-title": "Contemp Oncol (Pozn).",
+      "key": "308_CR18",
+      "unstructured": "Tomczak K, Czerwinska P, Wiznerowicz M. The Cancer Genome Atlas (TCGA): an immeasurable source of knowledge. Contemp Oncol (Pozn). 2015;19:A68–77.",
+      "volume": "19",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.3892/or.2017.5612",
+      "author": "Y Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "3543",
+      "journal-title": "Oncol Rep.",
+      "key": "308_CR19",
+      "unstructured": "Zhang Y, Sui J, Shen X, Li C, Yao W, Hong W, et al. Differential expression profiles of microRNAs as potential biomarkers for the early diagnosis of lung cancer. Oncol Rep. 2017;37:3543–53.",
+      "volume": "37",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.eururo.2017.03.010",
+      "author": "W Choi",
+      "doi-asserted-by": "publisher",
+      "first-page": "354",
+      "journal-title": "Eur Urol.",
+      "key": "308_CR20",
+      "unstructured": "Choi W, Ochoa A, McConkey DJ, Aine M, Hoglund M, Kim WY, et al. Genetic alterations in the molecular subtypes of bladder cancer: illustration in the Cancer Genome Atlas Dataset. Eur Urol. 2017;72:354–65.",
+      "volume": "72",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41467-018-06566-7",
+      "author": "T Goovaerts",
+      "doi-asserted-by": "publisher",
+      "first-page": "4120",
+      "journal-title": "Nat Commun.",
+      "key": "308_CR21",
+      "unstructured": "Goovaerts T, Steyaert S, Vandenbussche CA, Galle J, Thas O, Van Criekinge W, et al. A comprehensive overview of genomic imprinting in breast and its deregulation in cancer. Nat Commun. 2018;9:4120.",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3390/cancers11081061",
+      "doi-asserted-by": "crossref",
+      "key": "308_CR22",
+      "unstructured": "Bakhoum MF, Esmaeli B. Molecular characteristics of uveal melanoma: insights from the Cancer Genome Atlas (TCGA) Project. Cancers (Basel). 2019;11."
+    },
+    {
+      "DOI": "10.1186/s12881-019-0791-1",
+      "author": "B Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "54",
+      "journal-title": "BMC Med Genet.",
+      "key": "308_CR23",
+      "unstructured": "Zhao B, You Y, Wan Z, Ma Y, Huo Y, Liu H, et al. Weighted correlation network and differential expression analyses identify candidate genes associated with BRAF gene in melanoma. BMC Med Genet. 2019;20:54.",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp616",
+      "author": "MD Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "139",
+      "journal-title": "Bioinformatics.",
+      "key": "308_CR24",
+      "unstructured": "Robinson MD, McCarthy DJ, Smyth GK. edgeR: a Bioconductor package for differential expression analysis of digital gene expression data. Bioinformatics. 2010;26:139–40.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bib/bbt086",
+      "author": "F Seyednasrollah",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "journal-title": "Brief Bioinform.",
+      "key": "308_CR25",
+      "unstructured": "Seyednasrollah F, Laiho A, Elo LL. Comparison of software packages for detecting differential expression in RNA-seq studies. Brief Bioinform. 2015;16:59–70.",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/gb-2013-14-9-r95",
+      "author": "F Rapaport",
+      "doi-asserted-by": "publisher",
+      "first-page": "R95",
+      "journal-title": "Genome Biol.",
+      "key": "308_CR26",
+      "unstructured": "Rapaport F, Khanin R, Liang Y, Pirun M, Krek A, Zumbo P, et al. Comprehensive evaluation of differential gene expression analysis methods for RNA-seq data. Genome Biol. 2013;14:R95.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1261/rna.058339.116",
+      "author": "NJ Schurch",
+      "doi-asserted-by": "publisher",
+      "first-page": "1641",
+      "journal-title": "RNA.",
+      "key": "308_CR27",
+      "unstructured": "Schurch NJ, Schofield P, Gierlinski M, Cole C, Sherstnev A, Singh V, et al. Erratum: how many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use? RNA. 2016;22:1641.",
+      "volume": "22",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/1471-2105-14-91",
+      "author": "C Soneson",
+      "doi-asserted-by": "publisher",
+      "first-page": "91",
+      "journal-title": "BMC Bioinformatics.",
+      "key": "308_CR28",
+      "unstructured": "Soneson C, Delorenzi M. A comparison of methods for differential expression analysis of RNA-seq data. BMC Bioinformatics. 2013;14:91.",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.7717/peerj.576",
+      "author": "CJ Burden",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PeerJ.",
+      "key": "308_CR29",
+      "unstructured": "Burden CJ, Qureshi SE, Wilson SR. Error estimates for the analysis of differential expression from RNA-seq count data. PeerJ. 2014;2:e576.",
+      "volume": "2",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/gb-2010-11-10-r106",
+      "author": "S Anders",
+      "doi-asserted-by": "publisher",
+      "first-page": "R106",
+      "journal-title": "Genome Biol.",
+      "key": "308_CR30",
+      "unstructured": "Anders S, Huber W. Differential expression analysis for sequence count data. Genome Biol. 2010;11:R106.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1038/nrclinonc.2011.34",
+      "author": "L Hutchinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "189",
+      "journal-title": "Nat Rev Clin Oncol.",
+      "key": "308_CR31",
+      "unstructured": "Hutchinson L, Kirk R. High drug attrition rates--where are we going wrong? Nat Rev Clin Oncol. 2011;8:189–90.",
+      "volume": "8",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0170632",
+      "author": "A Esteve-Codina",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS One.",
+      "key": "308_CR32",
+      "unstructured": "Esteve-Codina A, Arpi O, Martinez-Garcia M, Pineda E, Mallo M, Gut M, et al. A comparison of RNA-seq results from paired formalin-fixed paraffin-embedded and fresh-frozen glioblastoma tissue samples. PLoS One. 2017;12:e0170632.",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1200/PO.17.00259",
+      "doi-asserted-by": "crossref",
+      "key": "308_CR33",
+      "unstructured": "Kwong LN, De Macedo MP, Haydu L, Joon AY, Tetzlaff MT, Calderone TL, et al. Biological validation of RNA sequencing data from formalin-fixed paraffin-embedded primary melanomas. JCO Precis Oncol. 2018;2018."
+    },
+    {
+      "DOI": "10.1101/gr.124321.111",
+      "author": "S Tarazona",
+      "doi-asserted-by": "publisher",
+      "first-page": "2213",
+      "journal-title": "Genome Res.",
+      "key": "308_CR34",
+      "unstructured": "Tarazona S, Garcia-Alcalde F, Dopazo J, Ferrer A, Conesa A. Differential expression in RNA-seq: a matter of depth. Genome Res. 2011;21:2213–23.",
+      "volume": "21",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts515",
+      "author": "J Feng",
+      "doi-asserted-by": "publisher",
+      "first-page": "2782",
+      "journal-title": "Bioinformatics.",
+      "key": "308_CR35",
+      "unstructured": "Feng J, Meyer CA, Wang Q, Liu JS, Shirley Liu X, Zhang Y. GFOLD: a generalized fold change for ranking differentially expressed genes from RNA-seq data. Bioinformatics. 2012;28:2782–8.",
+      "volume": "28",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1186/s12859-017-1974-4",
+      "author": "JZB Low",
+      "doi-asserted-by": "publisher",
+      "first-page": "575",
+      "journal-title": "BMC Bioinformatics.",
+      "key": "308_CR36",
+      "unstructured": "Low JZB, Khang TF, Tammi MT. CORNAS: coverage-dependent RNA-Seq analysis of gene expression data without biological replicates. BMC Bioinformatics. 2017;18:575.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/gb-2010-11-3-r25",
+      "author": "MD Robinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "R25",
+      "journal-title": "Genome Biol.",
+      "key": "308_CR37",
+      "unstructured": "Robinson MD, Oshlack A. A scaling normalization method for differential expression analysis of RNA-seq data. Genome Biol. 2010;11:R25.",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.4161/cib.25849",
+      "author": "E Maza",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Commun Integr Biol.",
+      "key": "308_CR38",
+      "unstructured": "Maza E, Frasse P, Senin P, Bouzayen M, Zouine M. Comparison of normalization methods for differential gene expression analysis in RNA-Seq experiments: a matter of relative size of studied transcriptomes. Commun Integr Biol. 2013;6:e25849.",
+      "volume": "6",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.3389/fgene.2016.00164",
+      "author": "E Maza",
+      "doi-asserted-by": "publisher",
+      "first-page": "164",
+      "journal-title": "Front Genet.",
+      "key": "308_CR39",
+      "unstructured": "Maza E. In papyro comparison of TMM (edgeR), RLE (DESeq2), and MRN normalization methods for a simple two-conditions-without-replicates RNA-Seq experimental design. Front Genet. 2016;7:164.",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s12864-020-6502-7",
+      "author": "X Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "75",
+      "journal-title": "BMC Genomics.",
+      "key": "308_CR40",
+      "unstructured": "Li X, Cooper NGF, O'Toole TE, Rouchka EC. Choice of library size normalization and statistical methods for differential gene expression analysis in balanced two-group comparisons for RNA-seq studies. BMC Genomics. 2020;21:75.",
+      "volume": "21",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-021-00308-5"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "High heterogeneity undermines generalization of differential expression results in RNA-Seq analysis"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "15"
+}

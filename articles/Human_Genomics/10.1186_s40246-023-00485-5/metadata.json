@@ -1,0 +1,2518 @@
+{
+  "DOI": "10.1186/s40246-023-00485-5",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-023-00485-5",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eExome and genome sequencing are the predominant techniques in the diagnosis and research of genetic disorders. Sufficient, uniform and reproducible/consistent sequence coverage is a main determinant for the sensitivity to detect single-nucleotide (SNVs) and copy number variants (CNVs). Here we compared the ability to obtain comprehensive exome coverage for recent exome capture kits and genome sequencing techniques.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe compared three different widely used enrichment kits (Agilent SureSelect Human All Exon V5, Agilent SureSelect Human All Exon V7 and Twist Bioscience) as well as short-read and long-read WGS. We show that the Twist exome capture significantly improves complete coverage and coverage uniformity across coding regions compared to other exome capture kits. Twist performance is comparable to that of both short- and long-read whole genome sequencing. Additionally, we show that even at a reduced average coverage of 70× there is only minimal loss in sensitivity for SNV and CNV detection.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusion\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe conclude that exome sequencing with Twist represents a significant improvement and could be performed at lower sequence coverage compared to other exome capture techniques.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "485"
+  ],
+  "article-number": "39",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "17 January 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "20 April 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "3 May 2023"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Data were analyzed anonymously."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Yaldiz",
+      "given": "Burcu",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Kucuk",
+      "given": "Erdi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hampstead",
+      "given": "Juliet",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hofste",
+      "given": "Tom",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pfundt",
+      "given": "Rolph",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Corominas Galbany",
+      "given": "Jordi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rinne",
+      "given": "Tuula",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yntema",
+      "given": "Helger G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoischen",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nelen",
+      "given": "Marcel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gilissen",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Riess",
+      "given": "Olaf",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Haack",
+      "given": "Tobias B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Graessner",
+      "given": "Holm",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zurek",
+      "given": "Birte",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ellwanger",
+      "given": "Kornelia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ossowski",
+      "given": "Stephan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Demidov",
+      "given": "German",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sturm",
+      "given": "Marc",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schulze-Hentrich",
+      "given": "Julia M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schüle",
+      "given": "Rebecca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Xu",
+      "given": "Jishu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kessler",
+      "given": "Christoph",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wayand",
+      "given": "Melanie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Synofzik",
+      "given": "Matthis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wilke",
+      "given": "Carlo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Traschütz",
+      "given": "Andreas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schöls",
+      "given": "Ludger",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hengel",
+      "given": "Holger",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lerche",
+      "given": "Holger",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kegele",
+      "given": "Josua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Heutink",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brunner",
+      "given": "Han",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scheffer",
+      "given": "Hans",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoogerbrugge",
+      "given": "Nicoline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoischen",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoen",
+      "given": "Peter A. C.’t",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vissers",
+      "given": "Lisenka E. L. M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gilissen",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Steyaert",
+      "given": "Wouter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sablauskas",
+      "given": "Karolis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Voer",
+      "given": "Richarda M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kamsteeg",
+      "given": "Erik-Jan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van de Warrenburg",
+      "given": "Bart",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van Os",
+      "given": "Nienke",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "te Paske",
+      "given": "Iris",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Janssen",
+      "given": "Erik",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Boer",
+      "given": "Elke",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Steehouwer",
+      "given": "Marloes",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yaldiz",
+      "given": "Burcu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kleefstra",
+      "given": "Tjitske",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Brookes",
+      "given": "Anthony J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Veal",
+      "given": "Colin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gibson",
+      "given": "Spencer",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Maddi",
+      "given": "Vatsalya",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mehtarizadeh",
+      "given": "Mehdi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Riaz",
+      "given": "Umar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Warren",
+      "given": "Greg",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dizjikan",
+      "given": "Farid Yavari",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Shorter",
+      "given": "Thomas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Töpf",
+      "given": "Ana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Straub",
+      "given": "Volker",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bettolo",
+      "given": "Chiara Marini",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Manera",
+      "given": "Jordi Diaz",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hambleton",
+      "given": "Sophie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Engelhardt",
+      "given": "Karin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Clayton-Smith",
+      "given": "Jill",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Banka",
+      "given": "Siddharth",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Alexander",
+      "given": "Elizabeth",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jackson",
+      "given": "Adam",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Faivre",
+      "given": "Laurence",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thauvin",
+      "given": "Christel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vitobello",
+      "given": "Antonio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Denommé-Pichon",
+      "given": "Anne-Sophie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Duffourd",
+      "given": "Yannis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bruel",
+      "given": "Ange-Line",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Peyron",
+      "given": "Christine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pélissier",
+      "given": "Aurore",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Beltran",
+      "given": "Sergi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gut",
+      "given": "Ivo Glynne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Laurie",
+      "given": "Steven",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Piscia",
+      "given": "Davide",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Matalonga",
+      "given": "Leslie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Papakonstantinou",
+      "given": "Anastasios",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bullich",
+      "given": "Gemma",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Corvo",
+      "given": "Alberto",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fernandez-Callejo",
+      "given": "Marcos",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hernández",
+      "given": "Carles",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Picó",
+      "given": "Daniel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Paramonov",
+      "given": "Ida",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lochmüller",
+      "given": "Hanns",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gumus",
+      "given": "Gulcin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bros-Facer",
+      "given": "Virginie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rath",
+      "given": "Ana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hanauer",
+      "given": "Marc",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lagorce",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hongnat",
+      "given": "Oscar",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chahdil",
+      "given": "Maroua",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lebreton",
+      "given": "Emeline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stevanin",
+      "given": "Giovanni",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Durr",
+      "given": "Alexandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Davoine",
+      "given": "Claire-Sophie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guillot-Noel",
+      "given": "Léna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Heinzmann",
+      "given": "Anna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Coarelli",
+      "given": "Giulia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bonne",
+      "given": "Gisèle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Evangelista",
+      "given": "Teresinha",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Allamand",
+      "given": "Valérie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nelson",
+      "given": "Isabelle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yaou",
+      "given": "Rabah Ben",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Metay",
+      "given": "Corinne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Eymard",
+      "given": "Bruno",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cohen",
+      "given": "Enzo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Atalaia",
+      "given": "Antonio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Stojkovic",
+      "given": "Tanya",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Macek",
+      "given": "Milan",
+      "sequence": "additional",
+      "suffix": "Jr."
+    },
+    {
+      "affiliation": [],
+      "family": "Turnovec",
+      "given": "Marek",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thomasová",
+      "given": "Dana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kremliková",
+      "given": "Radka Pourová",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Franková",
+      "given": "Vera",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Havlovicová",
+      "given": "Markéta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lišková",
+      "given": "Petra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Doležalová",
+      "given": "Pavla",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Parkinson",
+      "given": "Helen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Keane",
+      "given": "Thomas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Freeberg",
+      "given": "Mallory",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thomas",
+      "given": "Coline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Spalding",
+      "given": "Dylan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Robinson",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Danis",
+      "given": "Daniel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Robert",
+      "given": "Glenn",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Costa",
+      "given": "Alessia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Patch",
+      "given": "Christine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hanna",
+      "given": "Mike",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Houlden",
+      "given": "Henry",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Reilly",
+      "given": "Mary",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vandrovcova",
+      "given": "Jana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Efthymiou",
+      "given": "Stephanie",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Morsy",
+      "given": "Heba",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cali",
+      "given": "Elisa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Magrinelli",
+      "given": "Francesca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sisodiya",
+      "given": "Sanjay M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rohrer",
+      "given": "Jonathan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Muntoni",
+      "given": "Francesco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zaharieva",
+      "given": "Irina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sarkozy",
+      "given": "Anna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Timmerman",
+      "given": "Vincent",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Baets",
+      "given": "Jonathan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Vries",
+      "given": "Geert",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De Winter",
+      "given": "Jonathan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Beijer",
+      "given": "Danique",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Jonghe",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Van de Vondel",
+      "given": "Liedewei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De Ridder",
+      "given": "Willem",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Weckhuysen",
+      "given": "Sarah",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Nigro",
+      "given": "Vincenzo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mutarelli",
+      "given": "Margherita",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Morleo",
+      "given": "Manuela",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pinelli",
+      "given": "Michele",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Varavallo",
+      "given": "Alessandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Banfi",
+      "given": "Sandro",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Torella",
+      "given": "Annalaura",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Musacchia",
+      "given": "Francesco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Piluso",
+      "given": "Giulio",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ferlini",
+      "given": "Alessandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Selvatici",
+      "given": "Rita",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gualandi",
+      "given": "Francesca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bigoni",
+      "given": "Stefania",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rossi",
+      "given": "Rachele",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Neri",
+      "given": "Marcella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Aretz",
+      "given": "Stefan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Spier",
+      "given": "Isabel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sommer",
+      "given": "Anna Katharina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Peters",
+      "given": "Sophia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Oliveira",
+      "given": "Carla",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pelaez",
+      "given": "Jose Garcia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Matos",
+      "given": "Ana Rita",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "José",
+      "given": "Celina São",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ferreira",
+      "given": "Marta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gullo",
+      "given": "Irene",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fernandes",
+      "given": "Susana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Garrido",
+      "given": "Luzia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ferreira",
+      "given": "Pedro",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Carneiro",
+      "given": "Fátima",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Swertz",
+      "given": "Morris A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Johansson",
+      "given": "Lennart",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van der Velde",
+      "given": "Joeri K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van der Vries",
+      "given": "Gerben",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Neerincx",
+      "given": "Pieter B.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ruvolo",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Abbott",
+      "given": "Kristin M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Frederikse",
+      "given": "Wilhemina SKerstjens",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zonneveld-Huijssoon",
+      "given": "Eveline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Roelofs-Prins",
+      "given": "Dieuwke",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van Gijn",
+      "given": "Marielle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Köhler",
+      "given": "Sebastian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Metcalfe",
+      "given": "Alison",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Verloes",
+      "given": "Alain",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Drunat",
+      "given": "Séverine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Heron",
+      "given": "Delphine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mignot",
+      "given": "Cyril",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Keren",
+      "given": "Boris",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Sainte Agathe",
+      "given": "Jean-Madeleine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rooryck",
+      "given": "Caroline",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lacombe",
+      "given": "Didier",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Trimouille",
+      "given": "Aurelien",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "De la Paz",
+      "given": "Manuel Posada",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sánchez",
+      "given": "Eva Bermejo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Martín",
+      "given": "Estrella López",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Delgado",
+      "given": "Beatriz Martínez",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de la Rosa",
+      "given": "F. Javier Alonso García",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ciolfi",
+      "given": "Andrea",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dallapiccola",
+      "given": "Bruno",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pizzi",
+      "given": "Simone",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Radio",
+      "given": "Francesca Clementina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Tartaglia",
+      "given": "Marco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Renieri",
+      "given": "Alessandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Furini",
+      "given": "Simone",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fallerini",
+      "given": "Chiara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Benetti",
+      "given": "Elisa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Balicza",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Molnar",
+      "given": "Maria Judit",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Maver",
+      "given": "Ales",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Peterlin",
+      "given": "Borut",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Münchau",
+      "given": "Alexander",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lohmann",
+      "given": "Katja",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Herzog",
+      "given": "Rebecca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pauly",
+      "given": "Martje",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Macaya",
+      "given": "Alfons",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cazurro-Gutiérrez",
+      "given": "Ana",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pérez-Dueñas",
+      "given": "Belén",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Munell",
+      "given": "Francina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jarava",
+      "given": "Clara Franco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Masó",
+      "given": "Laura Batlle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Marcé-Grau",
+      "given": "Anna",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Colobran",
+      "given": "Roger",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Osorio",
+      "given": "Andrés Nascimento",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "de Benito",
+      "given": "Daniel Natera",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lochmüller",
+      "given": "Hanns",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Thompson",
+      "given": "Rachel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Polavarapu",
+      "given": "Kiran",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Grimbacher",
+      "given": "Bodo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Beeson",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cossins",
+      "given": "Judith",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hackman",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Johari",
+      "given": "Mridul",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Savarese",
+      "given": "Marco",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Udd",
+      "given": "Bjarne",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Horvath",
+      "given": "Rita",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chinnery",
+      "given": "Patrick F.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ratnaike",
+      "given": "Thiloka",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gao",
+      "given": "Fei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schon",
+      "given": "Katherine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Capella",
+      "given": "Gabriel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Valle",
+      "given": "Laura",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Holinski-Feder",
+      "given": "Elke",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Laner",
+      "given": "Andreas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Steinke-Lange",
+      "given": "Verena",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schröck",
+      "given": "Evelin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rump",
+      "given": "Andreas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Başak",
+      "given": "Ayşe Nazlı",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hemelsoet",
+      "given": "Dimitri",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Dermaut",
+      "given": "Bart",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schuermans",
+      "given": "Nika",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Poppe",
+      "given": "Bruce",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Verdin",
+      "given": "Hannah",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mei",
+      "given": "Davide",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Vetro",
+      "given": "Annalisa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Balestrini",
+      "given": "Simona",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Guerrini",
+      "given": "Renzo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Claeys",
+      "given": "Kristl",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Santen",
+      "given": "Gijs W. E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bijlsma",
+      "given": "Emilia K.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Hoffer",
+      "given": "Mariette J. V.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ruivenkamp",
+      "given": "Claudia A. L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Boztug",
+      "given": "Kaan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Haimel",
+      "given": "Matthias",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Maystadt",
+      "given": "Isabelle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cordts",
+      "given": "Isabelle",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Deschauer",
+      "given": "Marcus",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zaganas",
+      "given": "Ioannis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kokosali",
+      "given": "Evgenia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lambros",
+      "given": "Mathioudakis",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Evangeliou",
+      "given": "Athanasios",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Spilioti",
+      "given": "Martha",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kapaki",
+      "given": "Elisabeth",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bourbouli",
+      "given": "Mara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Striano",
+      "given": "Pasquale",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zara",
+      "given": "Federico",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Riva",
+      "given": "Antonella",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Iacomino",
+      "given": "Michele",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Uva",
+      "given": "Paolo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scala",
+      "given": "Marcello",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Scudieri",
+      "given": "Paolo",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cilio",
+      "given": "Maria-Roberta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Carpancea",
+      "given": "Evelina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Depondt",
+      "given": "Chantal",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lederer",
+      "given": "Damien",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Sznajer",
+      "given": "Yves",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Duerinckx",
+      "given": "Sarah",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mary",
+      "given": "Sandrine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Depienne",
+      "given": "Christel",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Roos",
+      "given": "Andreas",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "May",
+      "given": "Patrick",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "name": "Solve-RD consortium",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        3
+      ]
+    ],
+    "date-time": "2023-05-03T09:02:45Z",
+    "timestamp": 1683104565000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        3
+      ]
+    ],
+    "date-time": "2023-05-03T09:07:40Z",
+    "timestamp": 1683104860000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100007601",
+      "award": [
+        "779257",
+        "779257",
+        "779257"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Horizon 2020"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        22
+      ]
+    ],
+    "date-time": "2024-04-22T21:12:22Z",
+    "timestamp": 1713820342930
+  },
+  "is-referenced-by-count": 4,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            3
+          ]
+        ],
+        "date-time": "2023-05-03T00:00:00Z",
+        "timestamp": 1683072000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            3
+          ]
+        ],
+        "date-time": "2023-05-03T00:00:00Z",
+        "timestamp": 1683072000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00485-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-023-00485-5/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-023-00485-5.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        5,
+        3
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1002/humu.24360",
+      "author": "J Corominas",
+      "doi-asserted-by": "publisher",
+      "first-page": "1041",
+      "journal-title": "Hum Mutat",
+      "key": "485_CR1",
+      "unstructured": "Corominas J, Smeekens SP, Nelen MR, Yntema HG, Kamsteeg EJ, Pfundt R, et al. Clinical exome sequencing—mistakes and caveats. Hum Mutat. 2022;43:1041.",
+      "volume": "43",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.ymgmr.2019.100464",
+      "author": "P Hartman",
+      "doi-asserted-by": "publisher",
+      "first-page": "100464",
+      "journal-title": "Mol Genet Metab Rep",
+      "key": "485_CR2",
+      "unstructured": "Hartman P, Beckman K, Silverstein K, Yohe S, Schomaker M, Henzler C, et al. Next generation sequencing for clinical diagnostics: five year experience of an academic laboratory. Mol Genet Metab Rep. 2019;19:100464.",
+      "volume": "19",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41431-022-01145-3",
+      "author": "A McNeill",
+      "doi-asserted-by": "publisher",
+      "first-page": "869",
+      "journal-title": "Eur J Hum Genet",
+      "key": "485_CR3",
+      "unstructured": "McNeill A. Exome sequencing-one test to rule them all? Eur J Hum Genet. 2022;30:869.",
+      "volume": "30",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s13073-019-0649-3",
+      "author": "P Arts",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Med",
+      "key": "485_CR4",
+      "unstructured": "Arts P, Simons A, Alzahrani MS, Yilmaz E, Alidrissi E, Van Aerde KJ, et al. Exome sequencing in routine diagnostics: a generic test for 254 patients with primary immunodeficiencies. Genome Med. 2019;11:1–15.",
+      "volume": "11",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/humu.22450",
+      "author": "K Neveling",
+      "doi-asserted-by": "publisher",
+      "first-page": "1721",
+      "journal-title": "Hum Mutat",
+      "key": "485_CR5",
+      "unstructured": "Neveling K, Feenstra I, Gilissen C, Hoefsloot LH, Kamsteeg E-J, et al. A post-hoc comparison of the utility of sanger sequencing and exome sequencing for the diagnosis of heterogeneous diseases. Hum Mutat. 2013;34:1721–6.",
+      "volume": "34",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/jhg.2013.114",
+      "author": "B Rabbani",
+      "doi-asserted-by": "publisher",
+      "first-page": "5",
+      "journal-title": "J Hum Genet",
+      "key": "485_CR6",
+      "unstructured": "Rabbani B, Tekin M, Mahdieh N. The promise of whole-exome sequencing in medical genetics. J Hum Genet. 2014;59:5–15.",
+      "volume": "59",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1186/gb-2011-12-9-r97",
+      "author": "JS Parla",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Biol",
+      "key": "485_CR7",
+      "unstructured": "Parla JS, Iossifov I, Grabill I, Spector MS, Kramer M, Mccombie R. A comparative analysis of exome capture. Genome Biol. 2011;12:1–17.",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.3390/jcm9113656",
+      "author": "A Díaz-de Usera",
+      "doi-asserted-by": "publisher",
+      "first-page": "3656",
+      "journal-title": "J Clin Med",
+      "key": "485_CR8",
+      "unstructured": "Díaz-de Usera A, Lorenzo-Salazar JM, Rubio-Rodríguez LA, Muñoz-Barrera A, Guillen-Guio B, Marcelino-Rodríguez I, et al. Evaluation of whole-exome enrichment solutions: lessons from the high-end of the short-read sequencing scale. J Clin Med. 2020;9:3656.",
+      "volume": "9",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s41065-021-00171-3",
+      "author": "J Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Hereditas",
+      "key": "485_CR9",
+      "unstructured": "Zhou J, Zhang M, Li X, Wang Z, Pan D, Shi Y. Performance comparison of four types of target enrichment baits for exome DNA sequencing. Hereditas. 2021;158:1–12.",
+      "volume": "158",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s12864-022-08825-w",
+      "author": "V Belova",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "BMC Genom",
+      "key": "485_CR10",
+      "unstructured": "Belova V, Shmitko A, Pavlova A, Afasizhev R, Cheranev V, Tabanakova A, et al. Performance comparison of agilent new sureselect all exon v8 probes with v7 probes for exome sequencing. BMC Genom. 2022;23:1–8. https://doi.org/10.1186/s12864-022-08825-w.",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/nar/gkv216",
+      "author": "J Meienberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "e76",
+      "journal-title": "Nucleic Acids Res",
+      "key": "485_CR11",
+      "unstructured": "Meienberg J, Zerjavic K, Keller I, Okoniewski M, Patrignani A, Ludin K, et al. New insights into the performance of human whole-exome capture platforms. Nucleic Acids Res. 2015;43:e76.",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41598-017-01005-x",
+      "author": "Q Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Sci Rep",
+      "key": "485_CR12",
+      "unstructured": "Wang Q, Shashikant CS, Jensen M, Altman NS, Girirajan S. Novel metrics to measure coverage in whole exome sequencing datasets reveal local and global non-uniformity. Sci Rep. 2017;7:1–11. https://doi.org/10.1038/s41598-017-01005-x.",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nbt.1975",
+      "author": "MJ Clark",
+      "doi-asserted-by": "publisher",
+      "first-page": "908",
+      "journal-title": "Nat Biotechnol",
+      "key": "485_CR13",
+      "unstructured": "Clark MJ, Chen R, Lam HYK, Karczewski KJ, Chen R, Euskirchen G, et al. Performance comparison of exome DNA sequencing technologies. Nat Biotechnol. 2011;29:908–16.",
+      "volume": "29",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/s41598-020-59026-y",
+      "author": "YA Barbitoff",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Sci Rep",
+      "key": "485_CR14",
+      "unstructured": "Barbitoff YA, Polev DE, Glotov AS, Serebryakova EA, Shcherbakova IV, Kiselev AM, et al. Systematic dissection of biases in whole-exome and whole-genome sequencing reveals major determinants of coding sequence coverage. Sci Rep. 2020;10:1–13.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.3390/genes12091427",
+      "author": "B Royer-Bertrand",
+      "doi-asserted-by": "publisher",
+      "first-page": "1427",
+      "journal-title": "Genes",
+      "key": "485_CR15",
+      "unstructured": "Royer-Bertrand B, Cisarova K, Niel-Butschi F, Mittaz-Crettol L, Fodstad H, Superti-Furga A. CNV detection from exome sequencing data in routine diagnostics of rare genetic disorders: opportunities and limitations. Genes. 2021;12:1427.",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/gim.2016.163",
+      "author": "R Pfundt",
+      "doi-asserted-by": "publisher",
+      "first-page": "667",
+      "journal-title": "Genet Med",
+      "key": "485_CR16",
+      "unstructured": "Pfundt R, del Rosario M, Vissers L, Kwint MP, Janssen IM, de Leeuw N, et al. Detection of clinically relevant copy-number variants by exome sequencing in a large cohort of genetic disorders. Genet Med. 2017;19:667–75.",
+      "volume": "19",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2019-106377",
+      "author": "X Dong",
+      "doi-asserted-by": "publisher",
+      "first-page": "558",
+      "journal-title": "J Med Genet",
+      "key": "485_CR17",
+      "unstructured": "Dong X, Liu B, Yang L, Wang H, Wu B, Chen X, et al. Clinical exome sequencing as the first-tier test for diagnosing developmental disorders covering both CNV and SNV: a Chinese cohort diagnostics. J Med Genet. 2020;57:558–66.",
+      "volume": "57",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41525-021-00188-7",
+      "author": "F Martinez-Granero",
+      "doi-asserted-by": "publisher",
+      "first-page": "25",
+      "journal-title": "NPJ Genom Med",
+      "key": "485_CR18",
+      "unstructured": "Martinez-Granero F, Blanco-Kelly F, Sanchez-Jimeno C, Avila-Fernandez A, Arteche A, Bustamante-Aragones A, et al. Comparison of the diagnostic yield of aCGH and genome-wide sequencing across different neurodevelopmental disorders. NPJ Genom Med. 2021;6:25.",
+      "volume": "6",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41436-019-0554-6",
+      "author": "S Srivastava",
+      "doi-asserted-by": "publisher",
+      "first-page": "2413",
+      "journal-title": "Genet Med",
+      "key": "485_CR19",
+      "unstructured": "Srivastava S, Love-Nichols JA, Dies KA, Ledbetter DH, Martin CL, Chung WK, et al. Meta-analysis and multidisciplinary consensus statement: exome sequencing is a first-tier clinical diagnostic test for individuals with neurodevelopmental disorders. Genet Med. 2019;21:2413–21.",
+      "volume": "21",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41598-021-98646-w",
+      "author": "BP Shakked",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci Rep",
+      "key": "485_CR20",
+      "unstructured": "Shakked BP, Barel O, Singer A, Regev M, Dayan EZ, Zeev B, et al. A single center experience with publicly funded clinical exome sequencing for neurodevelopmental disorders or multiple congenital anomalies. Sci Rep. 2021. https://doi.org/10.1038/s41598-021-98646-w.",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/cge.13626",
+      "author": "O Diaz-Horta",
+      "doi-asserted-by": "publisher",
+      "first-page": "575",
+      "journal-title": "Clin Genet",
+      "key": "485_CR21",
+      "unstructured": "Diaz-Horta O, Bademci G, Tokgoz-Yilmaz S, Guo S, Zafeer F, Sineni CJ, et al. Novel variant p.E269K confirms causative role of PLS1 mutations in autosomal dominant hearing loss. Clin Genet. 2019;96:575–8.",
+      "volume": "96",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41431-020-00770-0",
+      "author": "M Pauper",
+      "doi-asserted-by": "publisher",
+      "first-page": "637",
+      "journal-title": "Eur J Hum Genet",
+      "key": "485_CR22",
+      "unstructured": "Pauper M, Kucuk E, Wenger AM, Chakraborty S, Baybayan P, Kwint M, et al. Long-read trio sequencing of individuals with unsolved intellectual disability. Eur J Hum Genet. 2021;29:637–48. https://doi.org/10.1038/s41431-020-00770-0.",
+      "volume": "29",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s00439-015-1631-9",
+      "author": "J Meienberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "359",
+      "journal-title": "Hum Genet",
+      "key": "485_CR23",
+      "unstructured": "Meienberg J, Bruggmann R, Oexle K, Matyas G. Clinical sequencing: Is WGS the better WES? Hum Genet. 2016;135:359–62.",
+      "volume": "135",
+      "year": "2016"
+    },
+    {
+      "author": "C Sekhar",
+      "first-page": "1",
+      "journal-title": "BMC Genom",
+      "key": "485_CR24",
+      "unstructured": "Sekhar C, Chilamakuri R, Lorenz S, Madoui M-A, Vodák D, Sun J, et al. Performance comparison of four exome capture systems for deep sequencing. BMC Genom. 2014;15:1–13.",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/srep12742",
+      "author": "D Shigemizu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Sci Rep",
+      "key": "485_CR25",
+      "unstructured": "Shigemizu D, Momozawa Y, Abe T, Morizono T, Boroevich KA, Takata S, et al. Performance comparison of four commercial human whole-exome capture platforms. Sci Rep. 2015;5:1–8.",
+      "volume": "5",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1002/humu.22813",
+      "author": "SH Lelieveld",
+      "doi-asserted-by": "publisher",
+      "first-page": "815",
+      "journal-title": "Hum Mutat",
+      "key": "485_CR26",
+      "unstructured": "Lelieveld SH, Spielmann M, Mundlos S, Veltman JA, Gilissen C. Comparison of exome and genome sequencing technologies for the complete capture of protein-coding regions. Hum Mutat. 2015;36:815–22.",
+      "volume": "36",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp324",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "1754",
+      "journal-title": "Bioinformatics",
+      "key": "485_CR27",
+      "unstructured": "Li H, Durbin R. Fast and accurate short read alignment with Burrows–Wheeler transform. Bioinformatics. 2009;25:1754–60.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/gkt1114",
+      "author": "KD Pruitt",
+      "doi-asserted-by": "publisher",
+      "first-page": "756",
+      "journal-title": "Nucleic Acids Res",
+      "key": "485_CR28",
+      "unstructured": "Pruitt KD, Brown GR, Hiatt SM, Thibaud-Nissen F, Astashyn A, Ermolaeva O, et al. RefSeq: an update on mammalian reference sequences. Nucleic Acids Res. 2014;42:756–63.",
+      "volume": "42",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/nar/gky1113",
+      "author": "F Cunningham",
+      "doi-asserted-by": "publisher",
+      "first-page": "D745",
+      "journal-title": "Nucleic Acids Res",
+      "key": "485_CR29",
+      "unstructured": "Cunningham F, Achuthan P, Akanni W, Allen J, Amode MR, Armean IM, et al. Ensembl 2019. Nucleic Acids Res. 2019;47:D745–51.",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/nar/gkh103",
+      "author": "D Karolchik",
+      "doi-asserted-by": "publisher",
+      "first-page": "D493",
+      "journal-title": "Nucleic Acids Res",
+      "key": "485_CR30",
+      "unstructured": "Karolchik D, Hinrichs AS, Furey TS, Roskin KM, Sugnet CW, Haussler D, et al. The UCSC table browser data retrieval tool. Nucleic Acids Res. 2004;32:D493–6.",
+      "volume": "32",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq033",
+      "author": "AR Quinlan",
+      "doi-asserted-by": "publisher",
+      "first-page": "841",
+      "journal-title": "Bioinformatics",
+      "key": "485_CR31",
+      "unstructured": "Quinlan AR, Hall IM. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics. 2010;26:841–2. https://doi.org/10.1093/bioinformatics/btq033.",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp352",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "2078",
+      "journal-title": "Bioinformatics",
+      "key": "485_CR32",
+      "unstructured": "Li H, Handsaker B, Wysoker A, Fennell T, Ruan J, Homer N, et al. The sequence alignment/map format and SAMtools. Bioinformatics. 2009;25:2078–9. https://doi.org/10.1093/bioinformatics/btp352.",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1093/nar/gkq072",
+      "author": "M Mokry",
+      "doi-asserted-by": "publisher",
+      "first-page": "e116",
+      "journal-title": "Nucleic Acids Res",
+      "key": "485_CR33",
+      "unstructured": "Mokry M, Feitsma H, Nijman IJ, de Bruijn E, van der Zaag PJ, Guryev V, et al. Accurate SNP and mutation detection by targeted custom microarray-based genomic enrichment of short-fragment sequencing libraries. Nucleic Acids Res. 2010;38:e116.",
+      "volume": "38",
+      "year": "2010"
+    },
+    {
+      "key": "485_CR34",
+      "unstructured": "der Auwera GA, O’Connor BD. Genomics in the cloud: using Docker, GATK, and WDL in Terra [Internet]. O’Reilly Media; 2020. Available from: https://books.google.nl/books?id=vsXaDwAAQBAJ."
+    },
+    {
+      "DOI": "10.1038/gim.2016.58",
+      "author": "D Mandelker",
+      "doi-asserted-by": "publisher",
+      "first-page": "1282",
+      "journal-title": "Genet Med",
+      "key": "485_CR35",
+      "unstructured": "Mandelker D, Schmidt RJ, Ankala A, McDonald Gibson K, Bowser M, Sharma H, et al. Navigating highly homologous genes in a molecular diagnostic setting: a resource for clinical next-generation. Genet Med. 2016;18:1282–9.",
+      "volume": "18",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/gim.2018.51",
+      "author": "SW Kong",
+      "doi-asserted-by": "publisher",
+      "first-page": "1617",
+      "journal-title": "Genet Med",
+      "key": "485_CR36",
+      "unstructured": "Kong SW, Lee IH, Liu X, Hirschhorn JN, Mandl KD. Measuring coverage and accuracy of whole-exome sequencing in clinical context. Genet Med. 2018;20:1617–26. https://doi.org/10.1038/gim.2018.51.",
+      "volume": "20",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41598-020-66331-z",
+      "author": "B Iadarola",
+      "doi-asserted-by": "publisher",
+      "first-page": "9424",
+      "journal-title": "Sci Rep",
+      "key": "485_CR37",
+      "unstructured": "Iadarola B, Xumerle L, Lavezzari D, Paterno M, Marcolungo L, Beltrami C, et al. Shedding light on dark genes: enhanced targeted resequencing by optimizing the combination of enrichment technology and DnA fragment length. Sci Rep. 2020;10:9424.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1002/ajmg.a.35942",
+      "author": "SM Jamal",
+      "doi-asserted-by": "publisher",
+      "first-page": "935",
+      "journal-title": "Am J Med Genet Part A",
+      "key": "485_CR38",
+      "unstructured": "Jamal SM, Yu J-H, Chong JX, Dent KM, Conta JH, Tabor HK, et al. Practices and policies of clinical exome sequencing providers: analysis and implications. Am J Med Genet Part A. 2013;161:935–50. https://doi.org/10.1002/ajmg.a.35942.",
+      "volume": "161",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.05.008",
+      "author": "R Acuna-Hidalgo",
+      "doi-asserted-by": "publisher",
+      "first-page": "67",
+      "journal-title": "Am J Hum Genet",
+      "key": "485_CR39",
+      "unstructured": "Acuna-Hidalgo R, Bo T, Kwint MP, Van De Vorst M, Pinelli M, Veltman JA, et al. Post-zygotic point mutations are an underrecognized source of de novo genomic variation. Am J Hum Genet. 2015;97:67–74. https://doi.org/10.1016/j.ajhg.2015.05.008.",
+      "volume": "97",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41431-020-00770-0",
+      "author": "M Pauper",
+      "doi-asserted-by": "publisher",
+      "first-page": "637",
+      "journal-title": "Eur J Hum Genet",
+      "key": "485_CR40",
+      "unstructured": "Pauper M, Kucuk E, Wenger AM, Chakraborty S, Baybayan P, Kwint M, et al. Long-read trio sequencing of individuals with unsolved intellectual disability. Eur J Hum Genet. 2020;29:637–48.",
+      "volume": "29",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-023-00485-5"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Twist exome capture allows for lower average sequence coverage in clinical exome sequencing"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "17"
+}

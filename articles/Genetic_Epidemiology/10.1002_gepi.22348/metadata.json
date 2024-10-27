@@ -1,0 +1,714 @@
+{
+  "DOI": "10.1002/gepi.22348",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22348",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIt is of great scientific interest to identify interactions between genetic variants and environmental exposures that may modify the risk of complex diseases. However, larger sample sizes are usually required to detect gene‐by‐environment interaction (G × E) than required to detect genetic main association effects. To boost the statistical power and improve the understanding of the underlying molecular mechanisms, we incorporate functional genomics information, specifically, expression quantitative trait loci (eQTLs), into a data‐adaptive G × E test, called aGEw. This test adaptively chooses the best eQTL weights from multiple tissues and provides an extra layer of weighting at the genetic variant level. Extensive simulations show that the aGEw test can control the Type 1 error rate, and the power is resilient to the inclusion of neutral variants and noninformative external weights. We applied the proposed aGEw test to the Pancreatic Cancer Case–Control Consortium (discovery cohort of 3,585 cases and 3,482 controls) and the PanScan II genome‐wide association study data (replication cohort of 2,021 cases and 2,105 controls) with smoking as the exposure of interest. Two novel putative smoking‐related pancreatic cancer susceptibility genes, \u003cjats:italic\u003eTRIP10\u003c/jats:italic\u003e and \u003cjats:italic\u003eKDM3A\u003c/jats:italic\u003e, were identified. The aGEw test is implemented in an R package aGE.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22348"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2020-02-03"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-07-30"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-08-10"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics The University of Texas MD Anderson Cancer Center  Houston Texas"
+        },
+        {
+          "name": "Division of Biostatistics University of Minnesota  Minneapolis Minnesota"
+        }
+      ],
+      "family": "Yang",
+      "given": "Tianzhong",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Gastrointestinal Medical Oncology The University of Texas MD Anderson Cancer Center  Houston Texas"
+        }
+      ],
+      "family": "Tang",
+      "given": "Hongwei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology Yale University School of Public Health  New Haven Connecticut"
+        }
+      ],
+      "family": "Risch",
+      "given": "Harvey A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics Memorial Sloan Kettering Cancer Center  New York New York"
+        }
+      ],
+      "family": "Olson",
+      "given": "Sarah H.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Health Sciences Research Mayo Clinic  Rochester Minnesota"
+        }
+      ],
+      "family": "Peterson",
+      "given": "Gloria",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics University of California San Francisco  San Francisco California"
+        }
+      ],
+      "family": "Bracci",
+      "given": "Paige M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Prosserman Centre for Population Health Research, Lunenfeld‐Tanenbaum Research Institute Sinai Health System and University of Toronto  Toronto Canada"
+        }
+      ],
+      "family": "Gallinger",
+      "given": "Steven",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Prosserman Centre for Population Health Research, Lunenfeld‐Tanenbaum Research Institute Sinai Health System and University of Toronto  Toronto Canada"
+        }
+      ],
+      "family": "Hung",
+      "given": "Rayjean J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Cancer Aetiology and Prevention Group QIMR Berghofer Medical Research Institute  Brisbane Queensland Australia"
+        }
+      ],
+      "family": "Neale",
+      "given": "Rachel E.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "International Agency for Research on Cancer  Lyon France"
+        }
+      ],
+      "family": "Scelo",
+      "given": "Ghislaine",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Unit of Nutrition and Cancer, Cancer Epidemiology Research Program, Catalan Institute of Oncology Bellvitge Biomedical Research Institute (ICO‐IDIBELL)  Barcelona Spain"
+        }
+      ],
+      "family": "Duell",
+      "given": "Eric J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Surgery Memorial Sloan Kettering Cancer Center  New York New York"
+        }
+      ],
+      "family": "Kurtz",
+      "given": "Robert C.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Public Health and Primary Care University of Cambridge  Cambridge UK"
+        }
+      ],
+      "family": "Khaw",
+      "given": "Kay‐Tee",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Gustave Roussy  Villejuif France"
+        },
+        {
+          "name": "CESP, Faculty of Medicine, INSERM University of Paris‐Saclay  Villejuif France"
+        }
+      ],
+      "family": "Severi",
+      "given": "Gianluca",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Surgical and Perioperative Sciences Umeå University  Umeå Sweden"
+        }
+      ],
+      "family": "Sund",
+      "given": "Malin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "MRC Epidemiology Unit University of Cambridge School of Clinical Medicine  Cambridge UK"
+        }
+      ],
+      "family": "Wareham",
+      "given": "Nick",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Dan L Duncan Comprehensive Cancer Center Baylor College of Medicine  Houston Texas"
+        }
+      ],
+      "family": "Amos",
+      "given": "Christopher I.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Gastrointestinal Medical Oncology The University of Texas MD Anderson Cancer Center  Houston Texas"
+        }
+      ],
+      "family": "Li",
+      "given": "Donghui",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-7758-6116",
+      "affiliation": [
+        {
+          "name": "Department of Biostatistics The University of Texas MD Anderson Cancer Center  Houston Texas"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Wei",
+      "given": "Peng",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        11
+      ]
+    ],
+    "date-time": "2020-08-11T06:39:10Z",
+    "timestamp": 1597127950000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        4
+      ]
+    ],
+    "date-time": "2023-09-04T23:11:45Z",
+    "timestamp": 1693869105000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "P30CA008748",
+        "R01CA169122",
+        "R01HL116720",
+        "R21HL126032 R01CA154823"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    },
+    {
+      "DOI": "10.13039/501100000925",
+      "award": [
+        "Queensland Pancreatic Cancer Study"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Health and Medical Research Council"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        7
+      ]
+    ],
+    "date-time": "2023-09-07T20:49:10Z",
+    "timestamp": 1694119750230
+  },
+  "is-referenced-by-count": 0,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            10
+          ]
+        ],
+        "date-time": "2020-08-10T00:00:00Z",
+        "timestamp": 1597017600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22348",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22348",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22348",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22348",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "880-892",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        10
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/nrg3891",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1038/ng.429",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0220827",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1016/j.pneurobio.2015.10.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1101/814350",
+      "doi-asserted-by": "crossref",
+      "key": "e_1_2_7_6_1",
+      "unstructured": "Barbeira A. N. Bonazzola R. Gamazon E. R. Liang Y. Park Y. Kim‐Hellmuth S. …Im H. K.(2020). Exploiting the GTEx resources to decipher the mechanisms at GWAS loci.bioRxiv https://doi.org/10.1101/814350"
+    },
+    {
+      "DOI": "10.1038/s41467-018-03621-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007889",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "DOI": "10.1159/000363347",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_9_1"
+    },
+    {
+      "DOI": "10.1038/ng.3341",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20492",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2019.08.018",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1126/science.1105136",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1007/s40572-017-0143-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1016/j.tig.2013.05.006",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1016/0016-5085(91)70029-W",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1038/ng.3506",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1007186",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2013.03.022",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1038/nrg1578",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21756",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2012.00228",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1038/s41467-018-02942-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw577",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.3389/fgene.2013.00103",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "DOI": "10.1111/biom.12368",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_27_1"
+    },
+    {
+      "DOI": "10.2217/epi-2015-0016",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.1038/ng.2653",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0011824",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1008081",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_31_1"
+    },
+    {
+      "DOI": "10.1038/ng.3643",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1000888",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1534/genetics.114.165035",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1038/ng.522",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1093/aje/kwx230",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1214/09-STS289",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1016/j.canlet.2009.06.030",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1155/2016/2454989",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1093/ije/13.3.356",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxw034",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.1093/carcin/bgu010",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "DOI": "10.1038/nature09534",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_43_1"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0385-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.1186/s12931-014-0094-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1086/511312",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    },
+    {
+      "DOI": "10.1111/jcpp.12119",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_47_1"
+    },
+    {
+      "DOI": "10.1038/ng.3052",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_48_1"
+    },
+    {
+      "DOI": "10.1038/ng.1020",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_49_1"
+    },
+    {
+      "DOI": "10.1534/genetics.118.300805",
+      "article-title": "Integration of enhancer‐promoter interactions with GWAS summary results identifies novel schizophrenia‐associated genes and pathways",
+      "author": "Wu C.",
+      "doi-asserted-by": "crossref",
+      "first-page": "699",
+      "journal-title": "Genetics",
+      "key": "e_1_2_7_50_1",
+      "volume": "209",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s13148-019-0777-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_51_1"
+    },
+    {
+      "DOI": "10.1534/genetics.117.300270",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_52_1"
+    },
+    {
+      "DOI": "10.1002/sim.8037",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_53_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22273",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_54_1"
+    },
+    {
+      "DOI": "10.1093/hmg/ddz314",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_55_1"
+    }
+  ],
+  "reference-count": 54,
+  "references-count": 54,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22348"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Incorporating multiple sets of eQTL weights into gene‐by‐environment interaction analysis identifies novel susceptibility loci for pancreatic cancer"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

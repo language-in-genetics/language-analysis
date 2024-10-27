@@ -1,0 +1,812 @@
+{
+  "DOI": "10.1007/s00439-022-02493-2",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-022-02493-2",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eRapidly mutating Y-chromosomal short tandem repeats (RM Y-STRs) were suggested for differentiating patrilineally related men as relevant in forensic genetics, anthropological genetics, and genetic genealogy. Empirical data are available for closely related males, while differentiation rates for more distant relatives are scarce. Available RM Y-STR mutation rate estimates are typically based on father–son pair data, while pedigree-based studies for efficient analysis requiring less samples are rare. Here, we present a large-scale pedigree analysis in 9379 pairs of men separated by 1–34 meioses on 30 Y-STRs with increased mutation rates including all known RM Y-STRs (RMplex). For comparison, part of the samples were genotyped at 25 standard Y-STRs mostly with moderate mutation rates (Yfiler Plus). For 43 of the 49 Y-STRs analyzed, pedigree-based mutation rates were similar to previous father–son based estimates, while for six markers significant differences were observed. Male relative differentiation rates from the 30 RMplex Y-STRs were 43%, 84%, 96%, 99%, and 100% for relatives separated by one, four, six, nine, and twelve meioses, respectively, which largely exceeded rates obtained by 25 standard Y-STRs. Machine learning based models for predicting the degree of patrilineal consanguinity yielded accurate and reasonably precise predictions when using RM Y-STRs. Fully matching haplotypes resulted in a 95% confidence interval of 1–6 meioses with RMplex compared to 1–25 with Yfiler Plus. Our comprehensive pedigree study demonstrates the value of RM Y-STRs for differentiating male relatives of various types, in many cases achieving individual identification, thereby overcoming the largest limitation of forensic Y-chromosome analysis.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2493"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "29 July 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "26 September 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "3 October 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "MK and AR are inventors of a filed patent application: No. EP20158807 (“Novel Y-chromosomal short tandem repeat markers for typing male individuals) but receive no license fees or royalties from this."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The Medical Ethics Committee of the Erasmus MC allowed the execution of the present study within the Erasmus MC (MEC-2020-0535). The samples included in Cohort 1 were collected in the context of the Erasmus Rucphen Family study (Sayed-Tabatabaei et al. CitationRef removed). The Erasmus Rucphen Family study protocol was approved by the Medical Ethics Committee of the Erasmus MC Rotterdam, the Netherlands (MEC 213.575/2002/114). In accordance with the Declaration of Helsinki, the Erasmus Rucphen Family study obtained informed consent from all participants prior to their entering the study. The Medical Ethics committee at KU Leuven/UZ Leuven allowed broad Y-STR analyses of the patrilineal relatives (S55864; S59085; S54010) from Cohort 2, participants provided informed consent. The Ethics board from University of Health Sciences Lahore Pakistan approved the collection of the samples from Cohort 3 (UHS/Education/126-13/2390), which were all collected under informed consent."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Informed consent was obtained from all individual participants included in the study."
+    },
+    {
+      "group": {
+        "label": "Consent to publish",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 5,
+      "value": "No personal data of any of the individual participants is made publically available in this study."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-6052-0807",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ralf",
+      "given": "Arwin",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Montiel González",
+      "given": "Diego",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-2197-6315",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Zandstra",
+      "given": "Dion",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "van Wersch",
+      "given": "Bram",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Kousouri",
+      "given": "Nefeli",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0899-771X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "de Knijff",
+      "given": "Peter",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4537-0059",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Adnan",
+      "given": "Atif",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0857-0211",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Claerhout",
+      "given": "Sofie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9476-7143",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Ghanbari",
+      "given": "Mohsen",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-5974-7235",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Larmuseau",
+      "given": "Maarten H. D.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4958-847X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Kayser",
+      "given": "Manfred",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        3
+      ]
+    ],
+    "date-time": "2022-10-03T13:02:46Z",
+    "timestamp": 1664802166000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        1,
+        13
+      ]
+    ],
+    "date-time": "2023-01-13T08:06:28Z",
+    "timestamp": 1673597188000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        12
+      ]
+    ],
+    "date-time": "2024-02-12T11:00:19Z",
+    "timestamp": 1707735619754
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            3
+          ]
+        ],
+        "date-time": "2022-10-03T00:00:00Z",
+        "timestamp": 1664755200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            10,
+            3
+          ]
+        ],
+        "date-time": "2022-10-03T00:00:00Z",
+        "timestamp": 1664755200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02493-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-022-02493-2/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02493-2.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "145-160",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        3
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        1
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.fsigen.2016.07.005",
+      "author": "A Adnan",
+      "doi-asserted-by": "publisher",
+      "first-page": "45",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR1",
+      "unstructured": "Adnan A, Ralf A, Rakha A, Kousouri N, Kayser M (2016) Improving empirical evidence on differentiating closely related men with RM Y-STRs: a comprehensive pedigree study from Pakistan. Foren Sci Int Genet 25:45–51. https://doi.org/10.1016/j.fsigen.2016.07.005",
+      "volume": "25",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2020.102348",
+      "author": "IB Ambrosio",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR2",
+      "unstructured": "Ambrosio IB, Braganholi DF, Orlando LBM, Andrekenas NC, da Mota PI, da Silva DA, Astolfi-Filho S, de Carvalho EF, Cicarelli RMB, Gusmão L (2020) Mutational data and population profiling of 23 Y-STRs in three Brazilian populations. Foren Sci Int Genet 48:102348. https://doi.org/10.1016/j.fsigen.2020.102348",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "author": "KN Ballantyne",
+      "first-page": "63",
+      "journal-title": "Foren Sci Rev",
+      "key": "2493_CR3",
+      "unstructured": "Ballantyne KN, Kayser M (2012) Additional Y-STRs in Forensics: why, which, and when. Foren Sci Rev 24:63–78",
+      "volume": "24",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.08.006",
+      "doi-asserted-by": "publisher",
+      "key": "2493_CR4",
+      "unstructured": "Ballantyne KN, Goedbloed M, Fang R, Schaap O, Lao O, Wollstein A, Choi Y, van Duijn K, Vermeulen M, Brauer S (2010) Mutability of Y-chromosomal microsatellites: rates, characteristics, molecular bases, and forensic implications. Am J Hum Genet 87: 341–353. https://doi.org/10.1016/j.ajhg.2010.08.006"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2011.04.017",
+      "author": "KN Ballantyne",
+      "doi-asserted-by": "publisher",
+      "first-page": "208",
+      "journal-title": "Forens Sci Int Genet",
+      "key": "2493_CR5",
+      "unstructured": "Ballantyne KN, Keerl V, Wollstein A, Choi Y, Zuniga SB, Ralf A, Vermeulen M, de Knijff P, Kayser M (2012) A new future of forensic Y-chromosome analysis: rapidly mutating Y-STRs for differentiating male relatives and paternal lineages. Forens Sci Int Genet 6:208–218. https://doi.org/10.1016/j.fsigen.2011.04.017",
+      "volume": "6",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/humu.22599",
+      "author": "KN Ballantyne",
+      "doi-asserted-by": "publisher",
+      "first-page": "1021",
+      "journal-title": "Hum Mutat",
+      "key": "2493_CR6",
+      "unstructured": "Ballantyne KN, Ralf A, Aboukhalid R, Achakzai NM, Anjos MJ, Ayub Q, Balažic J, Ballantyne J, Ballard DJ, Berger B (2014) Toward male individualization with rapidly mutating Y-chromosomal short tandem repeats. Hum Mutat 35:1021–1032. https://doi.org/10.1002/humu.22599",
+      "volume": "35",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0165678",
+      "author": "A Boattini",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2493_CR7",
+      "unstructured": "Boattini A, Sarno S, Bini C, Pesci V, Barbieri C, De Fanti S, Quagliariello A, Pagani L, Ayub Q, Ferri G (2016) Mutation rates and discriminating power for 13 rapidly-mutating Y-STRs between related and unrelated individuals. PLoS ONE 11:e0165678. https://doi.org/10.1371/journal.pone.0165678",
+      "volume": "11",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41598-019-45398-3",
+      "author": "A Boattini",
+      "doi-asserted-by": "publisher",
+      "first-page": "9032",
+      "journal-title": "Sci Rep",
+      "key": "2493_CR8",
+      "unstructured": "Boattini A, Sarno S, Mazzarisi AM, Viroli C, De Fanti S, Bini C, Larmuseau MHD, Pelotti S, Luiselli D (2019) Estimating Y-str mutation rates and tmrca through deep-rooting Italian pedigrees. Sci Rep 9:9032. https://doi.org/10.1038/s41598-019-45398-3",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1086/301869",
+      "doi-asserted-by": "publisher",
+      "key": "2493_CR9",
+      "unstructured": "Brinkmann B, Klintschar M, Neuhuber F, Hühne J, Rolf B (1998) Mutation rate in human microsatellites: influence of the structure and length of the tandem repeat. Am J Hum Genet 62: 1408–1415. https://doi.org/10.1086/301869"
+    },
+    {
+      "DOI": "10.1038/ejhg.2010.154",
+      "doi-asserted-by": "publisher",
+      "key": "2493_CR10",
+      "unstructured": "Burgarella C, Navascués M (2011) Mutation rate estimates for 110 Y-chromosome STRs combining population and father–son pair data. Eur J Hum Genet 19: 70. https://doi.org/10.1038/ejhg.2010.154"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0024282",
+      "author": "X Cai",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2493_CR11",
+      "unstructured": "Cai X, Qin Z, Wen B, Xu S, Wang Y, Lu Y, Wei L, Wang C, Li S, Huang X (2011) Human migration through bottlenecks from Southeast Asia into East Asia during last glacial maximum revealed by Y chromosomes. PLoS ONE 6:e24282. https://doi.org/10.1371/journal.pone.0024282",
+      "volume": "6",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/s00439-016-1740-0",
+      "author": "F Calafell",
+      "doi-asserted-by": "publisher",
+      "first-page": "559",
+      "journal-title": "Hum Genet",
+      "key": "2493_CR12",
+      "unstructured": "Calafell F, Larmuseau MHD (2017) The Y chromosome as the most popular marker in genetic genealogy benefits interdisciplinary research. Hum Genet 136:559–573. https://doi.org/10.1007/s00439-016-1740-0",
+      "volume": "136",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2014.10.016",
+      "author": "A Caliebe",
+      "doi-asserted-by": "publisher",
+      "first-page": "69",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR13",
+      "unstructured": "Caliebe A, Jochens A, Willuweit S, Roewer L, Krawczak M (2015) No shortcut solution to the problem of Y-STR match probability calculation. Foren Sci Int Genet 15:69–75. https://doi.org/10.1016/j.fsigen.2014.10.016",
+      "volume": "15",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2018.01.005",
+      "author": "S Claerhout",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR14",
+      "unstructured": "Claerhout S, Vandenbosch M, Nivelle K, Gruyters L, Peeters A, Larmuseau MHD, Decorte R (2018) Determining Y-STR mutation rates in deep-routing genealogies: identification of haplogroup differences. Foren Sci Int Genet 34:1–10. https://doi.org/10.1016/j.fsigen.2018.01.005",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41431-018-0312-2",
+      "doi-asserted-by": "publisher",
+      "key": "2493_CR15",
+      "unstructured": "Claerhout S, Van der Haegen M, Vangeel L, Larmuseau MHD, Decorte R (2019) A game of hide and seq: identification of parallel Y-STR evolution in deep-rooting pedigrees. Eur J Hum Genet 27: 637. https://doi.org/10.1038/s41431-018-0312-2"
+    },
+    {
+      "DOI": "10.1002/humu.24259",
+      "author": "S Claerhout",
+      "doi-asserted-by": "publisher",
+      "first-page": "1307",
+      "journal-title": "Hum Mutat",
+      "key": "2493_CR16",
+      "unstructured": "Claerhout S, Vanpaemel S, Gill MS, Antiga LG, Baele G, Decorte R (2021a) YMrCA: improving Y-chromosomal ancestor time estimation for DNA kinship research. Hum Mutat 42:1307–1320. https://doi.org/10.1002/humu.24259",
+      "volume": "42",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009758",
+      "author": "S Claerhout",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Genet",
+      "key": "2493_CR17",
+      "unstructured": "Claerhout S, Verstraete P, Warnez L, Vanpaemel S, Larmuseau M, Decorte R (2021b) CSYseq: The first Y-chromosome sequencing tool typing a large number of Y-SNPs and Y-STRs to unravel worldwide human population genetics. PLoS Genet 17:e1009758. https://doi.org/10.1371/journal.pgen.1009758",
+      "volume": "17",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.3390/genes13050898",
+      "author": "P de Knijff",
+      "doi-asserted-by": "publisher",
+      "first-page": "898",
+      "journal-title": "Genes",
+      "key": "2493_CR18",
+      "unstructured": "de Knijff P (2022) On the forensic Use of Y-chromosome polymorphisms. Genes 13:898. https://doi.org/10.3390/genes13050898",
+      "volume": "13",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2016.07.006",
+      "author": "S Gopinath",
+      "doi-asserted-by": "publisher",
+      "first-page": "164",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR19",
+      "unstructured": "Gopinath S, Zhong C, Nguyen V, Ge J, Lagacé RE, Short ML, Mulero JJ (2016) Developmental validation of the Yfiler® Plus PCR amplification Kit: an enhanced Y-STR multiplex for casework and database applications. Foren Sci Int Genet 24:164–175. https://doi.org/10.1016/j.fsigen.2016.07.006",
+      "volume": "24",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s00414-018-1851-3",
+      "author": "F Javed",
+      "doi-asserted-by": "publisher",
+      "first-page": "1621",
+      "journal-title": "Int J Legal Med",
+      "key": "2493_CR20",
+      "unstructured": "Javed F, Sumbal S, Shafique M, Shahid AA, Shahzadi A, Rani N, Javid H, Javed M, Gillani N, Husnain T (2018) Male individualization using 12 rapidly mutating Y-STRs in Arain ethnic group and shared paternal lineage of Pakistani population. Int J Legal Med 132:1621–1624. https://doi.org/10.1007/s00414-018-1851-3",
+      "volume": "132",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1534/genetics.111.132308",
+      "author": "A Jochens",
+      "doi-asserted-by": "publisher",
+      "first-page": "1403",
+      "journal-title": "Genetics",
+      "key": "2493_CR21",
+      "unstructured": "Jochens A, Caliebe A, Rösler U, Krawczak M (2011) Empirical evaluation reveals best fit of a logistic mutation model for human Y-chromosomal microsatellites. Genetics 189:1403–1411. https://doi.org/10.1534/genetics.111.132308",
+      "volume": "189",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/s00439-017-1776-9",
+      "doi-asserted-by": "publisher",
+      "key": "2493_CR22",
+      "unstructured": "Kayser M (2017) Forensic use of Y-chromosome DNA: a general overview. Hum Genet 136: 621–635. https://doi.org/10.1007/s00439-017-1776-9"
+    },
+    {
+      "DOI": "10.1016/s0379-0738(00)00480-1",
+      "author": "M Kayser",
+      "doi-asserted-by": "publisher",
+      "first-page": "116",
+      "journal-title": "Forensic Sci Int",
+      "key": "2493_CR23",
+      "unstructured": "Kayser M, Sajantila A (2001) Mutations at Y-STR loci: implications for paternity testing and forensic analysis. Forensic Sci Int 118:116–121. https://doi.org/10.1016/s0379-0738(00)00480-1",
+      "volume": "118",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1007/s004140050051",
+      "author": "M Kayser",
+      "doi-asserted-by": "publisher",
+      "first-page": "125",
+      "journal-title": "Int J Legal Med",
+      "key": "2493_CR24",
+      "unstructured": "Kayser M, Caglia A, Corach D, Fretwell N, Gehrig C, Graziosi G, Heidorn F, Herrmann S, Herzog B, Hidding M (1997) Evaluation of Y-chromosomal STRs: a multicenter study. Int J Legal Med 110:125–133. https://doi.org/10.1007/s004140050051",
+      "volume": "110",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1016/j.tig.2009.06.003",
+      "author": "TE King",
+      "doi-asserted-by": "publisher",
+      "first-page": "351",
+      "journal-title": "Trends Genet",
+      "key": "2493_CR25",
+      "unstructured": "King TE, Jobling MA (2009) What’s in a name? Y chromosomes, surnames and the genetic genealogy revolution. Trends Genet 25:351–360. https://doi.org/10.1016/j.tig.2009.06.003",
+      "volume": "25",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1098/rspb.2013.2400",
+      "author": "MHD Larmuseau",
+      "doi-asserted-by": "publisher",
+      "first-page": "20132400",
+      "journal-title": "Proc R Soc B Biol Sci",
+      "key": "2493_CR26",
+      "unstructured": "Larmuseau MHD, Vanoverbeke J, Van Geystelen A, Defraene G, Vanderheyden N, Matthys K, Wenseleers T, Decorte R (2013) Low historical rates of cuckoldry in a Western European human population traced by Y-chromosome and genealogical data. Proc R Soc B Biol Sci 280:20132400",
+      "volume": "280",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1111/ahg.12050",
+      "author": "MHD Larmuseau",
+      "doi-asserted-by": "publisher",
+      "first-page": "92",
+      "journal-title": "Ann Hum Genet",
+      "key": "2493_CR27",
+      "unstructured": "Larmuseau MHD, Vanderheyden N, Van Geystelen A, van Oven M, de Knijff P, Decorte R (2014) Recent radiation within Y-chromosomal haplogroup R-M269 resulted in high Y-STR haplotype resemblance. Ann Hum Genet 78:92–103. https://doi.org/10.1111/ahg.12050",
+      "volume": "78",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.cub.2019.09.075",
+      "author": "MHD Larmuseau",
+      "doi-asserted-by": "publisher",
+      "issue": "4102–4107",
+      "journal-title": "Curr Biol",
+      "key": "2493_CR28",
+      "unstructured": "Larmuseau MHD, van den Berg P, Claerhout S, Calafell F, Boattini A, Gruyters L, Vandenbosch M, Nivelle K, Decorte R, Wenseleers T (2019) A historical-genetic reconstruction of human extra-pair paternity. Curr Biol 29(4102–4107):e7. https://doi.org/10.1016/j.cub.2019.09.075",
+      "volume": "29",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ejhg.2010.146",
+      "author": "NM Myres",
+      "doi-asserted-by": "publisher",
+      "first-page": "95",
+      "journal-title": "Eur J Hum Genet",
+      "key": "2493_CR29",
+      "unstructured": "Myres NM, Rootsi S, Lin AA, Järve M, King RJ, Kutuev I, Cabrera VM, Khusnutdinova EK, Pshenichnov A, Yunusbayev B (2011) A major Y-chromosome haplogroup R1b Holocene era founder effect in Central and Western Europe. Eur J Hum Genet 19:95–101. https://doi.org/10.1038/ejhg.2010.146",
+      "volume": "19",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2022.102682",
+      "author": "F Neuhuber",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR30",
+      "unstructured": "Neuhuber F, Dunkelmann B, Grießner I, Helm K, Kayser M, Ralf A (2022) Improving the differentiation of closely related males by RMplex analysis of 30 Y-STRs with high mutation rates. Foren Sci Int Genet. https://doi.org/10.1016/j.fsigen.2022.102682",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2022.102766",
+      "author": "T Otagiri",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR31",
+      "unstructured": "Otagiri T, Sato N, Asamura H, Parvanova E, Kayser M, Ralf A (2022) RMplex reveals population differences in RM Y-STR mutation rates and provides improved father–son differentiation in Japanese. Foren Sci Int Genet. https://doi.org/10.1016/j.fsigen.2022.102766",
+      "year": "2022"
+    },
+    {
+      "author": "F Pedregosa",
+      "first-page": "2825",
+      "journal-title": "J Mach Learn Res",
+      "key": "2493_CR32",
+      "unstructured": "Pedregosa F, Varoquaux G, Gramfort A, Michel V, Thirion B, Grisel O, Blondel M, Prettenhofer P, Weiss R, Dubourg V (2011) Scikit-learn: machine learning in Python. J Mach Learn Res 12:2825–2830",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/s0379-0738(96)02096-8",
+      "author": "M Prinz",
+      "doi-asserted-by": "publisher",
+      "first-page": "209",
+      "journal-title": "Foren Sci Int",
+      "key": "2493_CR33",
+      "unstructured": "Prinz M, Boll K, Baum H, Shaler B (1997) Multiplexing of Y chromosome specific STRs and performance for mixed samples. Foren Sci Int 85:209–218. https://doi.org/10.1016/s0379-0738(96)02096-8",
+      "volume": "85",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1002/humu.24068",
+      "author": "A Ralf",
+      "doi-asserted-by": "publisher",
+      "first-page": "1680",
+      "journal-title": "Hum Mutat",
+      "key": "2493_CR34",
+      "unstructured": "Ralf A, Lubach D, Kousouri N, Winkler C, Schulz I, Roewer L, Purps J, Lessig R, Krajewski P, Ploski R, Dobosz T, Henke L, Henke J, Larmuseau MHD, Kayser M (2020) Identification and characterization of novel rapidly mutating Y-chromosomal short tandem repeat markers. Hum Mutat 41:1680–1696. https://doi.org/10.1002/humu.24068",
+      "volume": "41",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2021.102595",
+      "author": "A Ralf",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR35",
+      "unstructured": "Ralf A, Zandstra D, Weiler N, van Ijcken WFJ, Sijen T, Kayser M (2021) RMplex: an efficient method for analyzing 30 Y-STRs with high mutation rates. Foren Sci Int Genet. https://doi.org/10.1016/j.fsigen.2021.102595",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/0379-0738(92)90193-z",
+      "author": "L Roewer",
+      "doi-asserted-by": "publisher",
+      "first-page": "163",
+      "journal-title": "Foren Sci Int",
+      "key": "2493_CR36",
+      "unstructured": "Roewer L, Epplen JT (1992) Rapid and sensitive typing of forensic stains by PCR amplification of polymorphic simple repeat sequences in case work. Foren Sci Int 53:163–171. https://doi.org/10.1016/0379-0738(92)90193-z",
+      "volume": "53",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1007/bf00194309",
+      "author": "L Roewer",
+      "doi-asserted-by": "publisher",
+      "first-page": "389",
+      "journal-title": "Hum Genet",
+      "key": "2493_CR37",
+      "unstructured": "Roewer L, Amemann J, Spurr NK, Grzeschik KH, Epplen JT (1992) Simple repeat sequences on the human Y chromosome are equally polymorphic as their autosomal counterparts. Hum Genet 89:389–394. https://doi.org/10.1007/bf00194309",
+      "volume": "89",
+      "year": "1992"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2020.102308",
+      "author": "L Roewer",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR38",
+      "unstructured": "Roewer L, Andersen MM, Ballantyne J, Butler JM, Caliebe A, Corach D, D’Amato ME, Gusmão L, Hou Y, de Knijff P (2020) DNA commission of the International Society of Forensic Genetics (ISFG): recommendations on the interpretation of Y-STR results in forensic analysis. Foren Sci Int Genet 48:102308. https://doi.org/10.1016/j.fsigen.2020.102308",
+      "volume": "48",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/01.str.0000185719.66735.dd",
+      "author": "FA Sayed-Tabatabaei",
+      "doi-asserted-by": "publisher",
+      "first-page": "2351",
+      "journal-title": "Stroke",
+      "key": "2493_CR39",
+      "unstructured": "Sayed-Tabatabaei FA, Van Rijn MJE, Schut AFC, Aulchenko YS, Croes EA, Zillikens MC, Pols HAP, Witteman JCM, Oostra BA, Van Duijn CM (2005) Heritability of the function and structure of the arterial wall: findings of the Erasmus Rucphen Family (ERF) study. Stroke 36:2351–2356. https://doi.org/10.1161/01.str.0000185719.66735.dd",
+      "volume": "36",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/j.fsigen.2012.10.013",
+      "author": "JM Thompson",
+      "doi-asserted-by": "publisher",
+      "first-page": "240",
+      "journal-title": "Foren Sci Int Genet",
+      "key": "2493_CR40",
+      "unstructured": "Thompson JM, Ewing MM, Frank WE, Pogemiller JJ, Nolde CA, Koehler DJ, Shaffer AM, Rabbach DR, Fulmer PM, Sprecher CJ (2013) Developmental validation of the PowerPlex® Y23 system: a single multiplex Y-STR analysis system for casework and database samples. Foren Sci Int Genet 7:240–250. https://doi.org/10.1016/j.fsigen.2012.10.013",
+      "volume": "7",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/genetics/158.2.897",
+      "doi-asserted-by": "publisher",
+      "key": "2493_CR41",
+      "unstructured": "Walsh B (2001) Estimating the time to the most recent common ancestor for the Y chromosome or mitochondrial DNA for a pair of individuals. Genetics 158: 897–912. https://doi.org/10.1093/genetics/158.2.897"
+    },
+    {
+      "DOI": "10.1002/wics.147",
+      "author": "H Wickham",
+      "doi-asserted-by": "publisher",
+      "first-page": "180",
+      "journal-title": "Wiley Interdiscip Rev Comput Stat",
+      "key": "2493_CR42",
+      "unstructured": "Wickham H (2011) ggplot2. Wiley Interdiscip Rev Comput Stat 3:180–185. https://doi.org/10.1002/wics.147",
+      "volume": "3",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1007/s00438-014-0903-8",
+      "author": "H Xu",
+      "doi-asserted-by": "publisher",
+      "first-page": "141",
+      "journal-title": "Mol Genet Genom",
+      "key": "2493_CR43",
+      "unstructured": "Xu H, Wang C-C, Shrestha R, Wang L-X, Zhang M, He Y, Kidd JR, Kidd KK, Jin L, Li H (2015) Inferring population structure and demographic history using Y-STR data from worldwide populations. Mol Genet Genom 290:141–150. https://doi.org/10.1007/s00438-014-0903-8",
+      "volume": "290",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1007/s00414-018-1949-7",
+      "author": "L Yuan",
+      "doi-asserted-by": "publisher",
+      "first-page": "59",
+      "journal-title": "Int J Legal Med",
+      "key": "2493_CR44",
+      "unstructured": "Yuan L, Chen W, Zhao D, Li Y, Hao S, Liu Y, Lu D (2019) Mutation analysis of 13 RM Y-STR loci in Han population from Beijing of China. Int J Legal Med 133:59–63. https://doi.org/10.1007/s00414-018-1949-7",
+      "volume": "133",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.fsigss.2017.09.171",
+      "author": "D Zgonjanin",
+      "doi-asserted-by": "publisher",
+      "first-page": "e377",
+      "journal-title": "Foren Sci Int Genet Suppl Ser",
+      "key": "2493_CR45",
+      "unstructured": "Zgonjanin D, Alghafri R, Almheiri R, Antov M, Toljic D, Vukovic R, Petkovic S (2017) Mutation rate at 13 rapidly mutating Y-STR loci in the population of Serbia. Foren Sci Int Genet Suppl Ser 6:e377–e379. https://doi.org/10.1016/j.fsigss.2017.09.171",
+      "volume": "6",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/s00414-016-1489-y",
+      "author": "W Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "345",
+      "journal-title": "Int J Legal Med",
+      "key": "2493_CR46",
+      "unstructured": "Zhang W, Xiao C, Yu J, Wei T, Liao F, Wei W, Huang D (2017) Multiplex assay development and mutation rate analysis for 13 RM Y-STRs in Chinese Han population. Int J Legal Med 131:345–350. https://doi.org/10.1007/s00414-016-1489-y",
+      "volume": "131",
+      "year": "2017"
+    }
+  ],
+  "reference-count": 46,
+  "references-count": 46,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-022-02493-2"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Large-scale pedigree analysis highlights rapidly mutating Y-chromosomal short tandem repeats for differentiating patrilineal relatives and predicting their degrees of consanguinity"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

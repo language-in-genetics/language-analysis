@@ -1,0 +1,709 @@
+{
+  "DOI": "10.1007/s00439-022-02455-8",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-022-02455-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eReproducibility is not only essential for the integrity of scientific research but is also a prerequisite for model validation and refinement for the future application of predictive algorithms. However, reproducible research is becoming increasingly challenging, particularly in high-dimensional genomic data analyses with complex statistical or algorithmic techniques. Given that there are no mandatory requirements in most biomedical and statistical journals to provide the original data, analytical source code, or other relevant materials for publication, accessibility to these supplements naturally suggests a greater credibility of the published work. In this study, we performed a reproducibility assessment of the notable paper by Gerstung et al. (Nat Genet 49:332–340, 2017) by rerunning the analysis using their original code and data, which are publicly accessible. Despite an open science setting, it was challenging to reproduce the entire research project; reasons included: incomplete data and documentation, suboptimal code readability, coding errors, limited portability of intensive computing performed on a specific platform, and an R computing environment that could no longer be re-established. We learn that the availability of code and data does not guarantee transparency and reproducibility of a study; paradoxically, the source code is still liable to error and obsolescence, essentially due to methodological and computational complexity, a lack of reproducibility checking at submission, and updates for software and operating environment. The complex code may also hide problematic methodological aspects of the proposed research. Building on the experience gained, we discuss the best programming and software engineering practices that could have been employed to improve reproducibility, and propose practical criteria for the conduct and reporting of reproducibility studies for future researchers.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2455"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "5 September 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "5 April 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "16 April 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare that they have no conflict of interest."
+    },
+    {
+      "group": {
+        "label": "Ethics approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 5,
+      "value": "Not applicable."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0002-8487-7584",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Xu",
+      "given": "Yujun",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9955-8906",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Mansmann",
+      "given": "Ulrich",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        16
+      ]
+    ],
+    "date-time": "2022-04-16T08:02:55Z",
+    "timestamp": 1650096175000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        8
+      ]
+    ],
+    "date-time": "2022-08-08T06:06:23Z",
+    "timestamp": 1659938783000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100005722",
+      "doi-asserted-by": "crossref",
+      "name": "Ludwig-Maximilians-Universität München"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        15
+      ]
+    ],
+    "date-time": "2024-04-15T09:51:41Z",
+    "timestamp": 1713174701133
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "9",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        16
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            16
+          ]
+        ],
+        "date-time": "2022-04-16T00:00:00Z",
+        "timestamp": 1650067200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            16
+          ]
+        ],
+        "date-time": "2022-04-16T00:00:00Z",
+        "timestamp": 1650067200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02455-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-022-02455-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02455-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1467-1480",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        16
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        4,
+        16
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1182/blood-2016-03-643544",
+      "author": "DA Arber",
+      "doi-asserted-by": "publisher",
+      "first-page": "2391",
+      "journal-title": "Blood",
+      "key": "2455_CR1",
+      "unstructured": "Arber DA, Orazi A, Hasserjian R, Thiele J, Borowitz MJ, Le Beau MM, Bloomfield CD, Cazzola M, Vardiman JW (2016) The 2016 revision to the World Health Organization classification of myeloid neoplasms and acute leukemia. Blood 127:2391–2405. https://doi.org/10.1182/blood-2016-03-643544",
+      "volume": "127",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1002/9781118865064",
+      "author": "H Atmanspacher",
+      "doi-asserted-by": "publisher",
+      "key": "2455_CR2",
+      "unstructured": "Atmanspacher H, Maasen S (2016) Reproducibility: principles, problems, practices, and prospects. John Wiley \u0026 Sons",
+      "volume-title": "Reproducibility: principles, problems, practices, and prospects",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.32614/RJ-2017-065",
+      "doi-asserted-by": "crossref",
+      "key": "2455_CR3",
+      "unstructured": "Boettiger C, Eddelbuettel D (2017) An introduction to rocker: Docker containers for R. arXiv preprint arXiv:1710.03675."
+    },
+    {
+      "DOI": "10.1214/ss/1009213726",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "199",
+      "journal-title": "Stat Sci",
+      "key": "2455_CR4",
+      "unstructured": "Breiman L (2001) Statistical modeling: The two cultures (with comments and a rejoinder by the author). Stat Sci 16:199–231",
+      "volume": "16",
+      "year": "2001"
+    },
+    {
+      "key": "2455_CR5",
+      "unstructured": "Caffo B, Peng RD, Leek RH (2016) Executive data science: A guide to training and managing the best data scientists. Leanpub"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1301689",
+      "author": "TJ Ley",
+      "doi-asserted-by": "publisher",
+      "first-page": "2059",
+      "journal-title": "N Engl J Med",
+      "key": "2455_CR6",
+      "unstructured": "Cancer Genome Atlas Research N, Ley TJ, Miller C, Ding L, Raphael BJ, Mungall AJ, Robertson A, Hoadley K, Triche TJ Jr, Laird PW, Baty JD, Fulton LL, Fulton R, Heath SE, Kalicki-Veizer J, Kandoth C, Klco JM, Koboldt DC, Kanchi KL, Kulkarni S, Lamprecht TL, Larson DE, Lin L, Lu C, McLellan MD, McMichael JF, Payton J, Schmidt H, Spencer DH, Tomasson MH, Wallis JW, Wartman LD, Watson MA, Welch J, Wendl MC, Ally A, Balasundaram M, Birol I, Butterfield Y, Chiu R, Chu A, Chuah E, Chun HJ, Corbett R, Dhalla N, Guin R, He A, Hirst C, Hirst M, Holt RA, Jones S, Karsan A, Lee D, Li HI, Marra MA, Mayo M, Moore RA, Mungall K, Parker J, Pleasance E, Plettner P, Schein J, Stoll D, Swanson L, Tam A, Thiessen N, Varhol R, Wye N, Zhao Y, Gabriel S, Getz G, Sougnez C, Zou L, Leiserson MD, Vandin F, Wu HT, Applebaum F, Baylin SB, Akbani R, Broom BM, Chen K, Motter TC, Nguyen K, Weinstein JN, Zhang N, Ferguson ML, Adams C, Black A, Bowen J, Gastier-Foster J, Grossman T, Lichtenberg T, Wise L, Davidsen T, Demchok JA, Shaw KR, Sheth M, Sofia HJ, Yang L, Downing JR et al (2013) Genomic and epigenomic landscapes of adult de novo acute myeloid leukemia. N Engl J Med 368:2059–2074. https://doi.org/10.1056/NEJMoa1301689",
+      "volume": "368",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.7326/M14-0697",
+      "author": "GS Collins",
+      "doi-asserted-by": "publisher",
+      "first-page": "55",
+      "journal-title": "Ann Intern Med",
+      "key": "2455_CR7",
+      "unstructured": "Collins GS, Reitsma JB, Altman DG, Moons KG (2015) Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD statement. Ann Intern Med 162:55–63. https://doi.org/10.7326/M14-0697",
+      "volume": "162",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nbt.3820",
+      "author": "P Di Tommaso",
+      "doi-asserted-by": "publisher",
+      "first-page": "316",
+      "journal-title": "Nat Biotechnol",
+      "key": "2455_CR8",
+      "unstructured": "Di Tommaso P, Chatzou M, Floden EW, Barja PP, Palumbo E, Notredame C (2017) Nextflow enables reproducible computational workflows. Nat Biotechnol 35:316–319. https://doi.org/10.1038/nbt.3820",
+      "volume": "35",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1007/s10654-020-00659-8",
+      "author": "BA Dickerman",
+      "doi-asserted-by": "publisher",
+      "first-page": "615",
+      "journal-title": "Eur J Epidemiol",
+      "key": "2455_CR9",
+      "unstructured": "Dickerman BA, Hernán MA (2020) Counterfactual prediction is not only for causal inference. Eur J Epidemiol 35:615–617",
+      "volume": "35",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1182/blood-2016-08-733196",
+      "author": "H Dohner",
+      "doi-asserted-by": "publisher",
+      "first-page": "424",
+      "journal-title": "Blood",
+      "key": "2455_CR10",
+      "unstructured": "Dohner H, Estey E, Grimwade D, Amadori S, Appelbaum FR, Buchner T, Dombret H, Ebert BL, Fenaux P, Larson RA, Levine RL, Lo-Coco F, Naoe T, Niederwieser D, Ossenkoppele GJ, Sanz M, Sierra J, Tallman MS, Tien HF, Wei AH, Lowenberg B, Bloomfield CD (2017) Diagnosis and management of AML in adults: 2017 ELN recommendations from an international expert panel. Blood 129:424–447. https://doi.org/10.1182/blood-2016-08-733196",
+      "volume": "129",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1182/blood.2020005524",
+      "author": "L Fenwarth",
+      "doi-asserted-by": "publisher",
+      "first-page": "524",
+      "journal-title": "Blood",
+      "key": "2455_CR11",
+      "unstructured": "Fenwarth L, Thomas X, de Botton S, Duployez N, Bourhis JH, Lesieur A, Fortin G, Meslin PA, Yakoub-Agha I, Sujobert P, Dumas PY, Recher C, Lebon D, Berthon C, Michallet M, Pigneux A, Nguyen S, Chantepie S, Vey N, Raffoux E, Celli-Lebras K, Gardin C, Lambert J, Malfuson JV, Caillot D, Maury S, Ducourneau B, Turlure P, Lemasle E, Pautas C, Chevret S, Terre C, Boissel N, Socie G, Dombret H, Preudhomme C, Itzykson R (2021) A personalized approach to guide allogeneic stem cell transplantation in younger adults with acute myeloid leukemia. Blood 137:524–532. https://doi.org/10.1182/blood.2020005524",
+      "volume": "137",
+      "year": "2021"
+    },
+    {
+      "author": "M Fowler",
+      "key": "2455_CR12",
+      "unstructured": "Fowler M (2018) Refactoring: improving the design of existing code. Addison-Wesley Professional",
+      "volume-title": "Refactoring: improving the design of existing code",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2202/1544-6115.1034",
+      "author": "R Gentleman",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Stat Appl Genet Mol Biol",
+      "key": "2455_CR13",
+      "unstructured": "Gentleman R (2005) Reproducible research: a bioinformatics case study. Stat Appl Genet Mol Biol. https://doi.org/10.2202/1544-6115.1034",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/ng.3756",
+      "author": "M Gerstung",
+      "doi-asserted-by": "publisher",
+      "first-page": "332",
+      "journal-title": "Nat Genet",
+      "key": "2455_CR14",
+      "unstructured": "Gerstung M, Papaemmanuil E, Martincorena I, Bullinger L, Gaidzik VI, Paschka P, Heuser M, Thol F, Bolli N, Ganly P, Ganser A, McDermott U, Döhner K, Schlenk RF, Döhner H, Campbell PJ (2017) Precision oncology for acute myeloid leukemia using a knowledge bank approach. Nat Genet 49:332–340. https://doi.org/10.1038/ng.3756",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41592-021-01256-7",
+      "author": "BJ Heil",
+      "doi-asserted-by": "publisher",
+      "first-page": "1132",
+      "journal-title": "Nat Methods",
+      "key": "2455_CR15",
+      "unstructured": "Heil BJ, Hoffman MM, Markowetz F, Lee S-I, Greene CS, Hicks SC (2021) Reproducibility standards for machine learning in the life sciences. Nat Methods 18:1132–1135. https://doi.org/10.1038/s41592-021-01256-7",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/bimj.201500156",
+      "author": "B Hofner",
+      "doi-asserted-by": "publisher",
+      "first-page": "416",
+      "journal-title": "Biom J",
+      "key": "2455_CR16",
+      "unstructured": "Hofner B, Schmid M, Edler L (2016) Reproducible research in statistics: A review and guidelines for the Biometrical Journal. Biom J 58:416–427. https://doi.org/10.1002/bimj.201500156",
+      "volume": "58",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1093/bib/bbq084",
+      "author": "T Hothorn",
+      "doi-asserted-by": "publisher",
+      "first-page": "288",
+      "journal-title": "Brief Bioinform",
+      "key": "2455_CR17",
+      "unstructured": "Hothorn T, Leisch F (2011) Case studies in reproducibility. Brief Bioinform 12:288–300. https://doi.org/10.1093/bib/bbq084",
+      "volume": "12",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1182/blood-2018-03-840348",
+      "author": "S Huet",
+      "doi-asserted-by": "publisher",
+      "first-page": "865",
+      "journal-title": "Blood",
+      "key": "2455_CR18",
+      "unstructured": "Huet S, Paubelle E, Lours C, Grange B, Courtois L, Chabane K, Charlot C, Mosnier I, Simonet T, Hayette S, Tigaud I, Thomas X, Salles G, Subtil F, Sujobert P (2018) Validation of the prognostic value of the knowledge bank approach to determine AML prognosis in real life. Blood 132:865–867. https://doi.org/10.1182/blood-2018-03-840348",
+      "volume": "132",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001747",
+      "author": "JPA Ioannidis",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1001747",
+      "journal-title": "PLoS Med",
+      "key": "2455_CR19",
+      "unstructured": "Ioannidis JPA (2014) How to make more published research true. PLoS Med 11:e1001747. https://doi.org/10.1371/journal.pmed.1001747",
+      "volume": "11",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1525/9780520967779",
+      "author": "J Kitzes",
+      "doi-asserted-by": "publisher",
+      "key": "2455_CR20",
+      "unstructured": "Kitzes J, Turek D, Deniz F (2017) The practice of reproducible research: case studies and lessons from the data-intensive sciences. University of California Press, California",
+      "volume-title": "The practice of reproducible research: case studies and lessons from the data-intensive sciences",
+      "year": "2017"
+    },
+    {
+      "key": "2455_CR21",
+      "unstructured": "McConnell S (2004) Code complete. Pearson Education"
+    },
+    {
+      "DOI": "10.12688/f1000research.29032.2",
+      "author": "F Mölder",
+      "doi-asserted-by": "publisher",
+      "first-page": "33",
+      "journal-title": "F1000Res",
+      "key": "2455_CR22",
+      "unstructured": "Mölder F, Jablonski KP, Letcher B, Hall MB, Tomkins-Tinch CH, Sochat V, Forster J, Lee S, Twardziok SO, Kanitz A, Wilm A, Holtgrewe M, Rahmann S, Nahnsen S, Köster J (2021) Sustainable data analysis with Snakemake. F1000Res 10:33. https://doi.org/10.12688/f1000research.29032.2",
+      "volume": "10",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1126/science.aac4716",
+      "author": "C Open Science",
+      "doi-asserted-by": "publisher",
+      "first-page": "4716",
+      "journal-title": "Science",
+      "key": "2455_CR23",
+      "unstructured": "Open Science C (2015) PSYCHOLOGY. Estimating the reproducibility of psychological science. Science 349:4716. https://doi.org/10.1126/science.aac4716",
+      "volume": "349",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/d41586-018-07196-1",
+      "author": "JM Perkel",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "journal-title": "Nature",
+      "key": "2455_CR24",
+      "unstructured": "Perkel JM (2018) Why Jupyter is data scientists’ computational notebook of choice. Nature 563:145–147",
+      "volume": "563",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/d41586-021-01174-w",
+      "author": "JM Perkel",
+      "doi-asserted-by": "publisher",
+      "first-page": "156",
+      "journal-title": "Nature",
+      "key": "2455_CR25",
+      "unstructured": "Perkel JM (2021) Reactive, reproducible, collaborative: computational notebooks evolve. Nature 593:156–157",
+      "volume": "593",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/sim.5921",
+      "author": "A Perperoglou",
+      "doi-asserted-by": "publisher",
+      "first-page": "170",
+      "journal-title": "Stat Med",
+      "key": "2455_CR26",
+      "unstructured": "Perperoglou A (2014) Cox models with dynamic ridge penalties on time-varying effects of the covariates. Stat Med 33:170–180",
+      "volume": "33",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1109/MSR.2019.00077",
+      "doi-asserted-by": "crossref",
+      "key": "2455_CR27",
+      "unstructured": "Pimentel JF, Murta L, Braganholo V, Freire J (2019) A large-scale study about quality and reproducibility of jupyter notebooks. In: 2019 IEEE/ACM 16th International Conference on Mining Software Repositories (MSR). IEEE, pp 507–517"
+    },
+    {
+      "DOI": "10.1007/s10654-021-00794-w",
+      "author": "CL Ramspek",
+      "doi-asserted-by": "publisher",
+      "first-page": "889",
+      "journal-title": "Eur J Epidemiol",
+      "key": "2455_CR28",
+      "unstructured": "Ramspek CL, Steyerberg EW, Riley RD, Rosendaal FR, Dekkers OM, Dekker FW, van Diepen M (2021) Prediction or causality? A scoping review of their conflation within current observational research. Eur J Epidemiol 36:889–898. https://doi.org/10.1007/s10654-021-00794-w",
+      "volume": "36",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/978-3-030-72676-8",
+      "author": "C Röllig",
+      "doi-asserted-by": "publisher",
+      "key": "2455_CR41",
+      "unstructured": "Röllig C, Ossenkoppele GJ (2021) Acute myeloid leukemia. Springer, Cham",
+      "volume-title": "Acute myeloid leukemia",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/sim.9169",
+      "author": "R Sanchez",
+      "doi-asserted-by": "publisher",
+      "first-page": "6057",
+      "journal-title": "Stat Med",
+      "key": "2455_CR29",
+      "unstructured": "Sanchez R, Griffin BA, Pane J, McCaffrey DF (2021) Best practices in statistical computing. Stat Med 40:6057–6068. https://doi.org/10.1002/sim.9169",
+      "volume": "40",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/sj.leu.2403528",
+      "author": "RF Schlenk",
+      "doi-asserted-by": "publisher",
+      "first-page": "1798",
+      "journal-title": "Leukemia",
+      "key": "2455_CR30",
+      "unstructured": "Schlenk RF, Frohling S, Hartmann F, Fischer JT, Glasmacher A, del Valle F, Grimminger W, Gotze K, Waterhouse C, Schoch R, Pralle H, Mergenthaler HG, Hensel M, Koller E, Kirchen H, Preiss J, Salwender H, Biedermann HG, Kremers S, Griesinger F, Benner A, Addamo B, Dohner K, Haas R, Dohner H, Ulm AMLSG (2004) Phase III study of all-trans retinoic acid in previously untreated patients 61 years or older with acute myeloid leukemia. Leukemia 18:1798–1803. https://doi.org/10.1038/sj.leu.2403528",
+      "volume": "18",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1200/JCO.2010.28.6856",
+      "author": "RF Schlenk",
+      "doi-asserted-by": "publisher",
+      "first-page": "4642",
+      "journal-title": "J Clin Oncol",
+      "key": "2455_CR31",
+      "unstructured": "Schlenk RF, Dohner K, Mack S, Stoppel M, Kiraly F, Gotze K, Hartmann F, Horst HA, Koller E, Petzer A, Grimminger W, Kobbe G, Glasmacher A, Salwender H, Kirchen H, Haase D, Kremers S, Matzdorff A, Benner A, Dohner H (2010) Prospective evaluation of allogeneic hematopoietic stem-cell transplantation from matched related and matched unrelated donors in younger adults with high-risk acute myeloid leukemia: German-Austrian trial AMLHD98A. J Clin Oncol 28:4642–4648. https://doi.org/10.1200/JCO.2010.28.6856",
+      "volume": "28",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1007/s00277-016-2810-z",
+      "author": "RF Schlenk",
+      "doi-asserted-by": "publisher",
+      "first-page": "1931",
+      "journal-title": "Ann Hematol",
+      "key": "2455_CR32",
+      "unstructured": "Schlenk RF, Lubbert M, Benner A, Lamparter A, Krauter J, Herr W, Martin H, Salih HR, Kundgen A, Horst HA, Brossart P, Gotze K, Nachbaur D, Wattad M, Kohne CH, Fiedler W, Bentz M, Wulf G, Held G, Hertenstein B, Salwender H, Gaidzik VI, Schlegelberger B, Weber D, Dohner K, Ganser A, Dohner H (2016) All-trans retinoic acid as adjunct to intensive treatment in younger adult patients with acute myeloid leukemia: results of the randomized AMLSG 07–04 study. Ann Hematol 95:1931–1942. https://doi.org/10.1007/s00277-016-2810-z",
+      "volume": "95",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1111/1740-9713.01522",
+      "author": "S Schwab",
+      "doi-asserted-by": "publisher",
+      "first-page": "6",
+      "journal-title": "Significance",
+      "key": "2455_CR33",
+      "unstructured": "Schwab S, Held L (2021) Statistical programming: small mistakes, big impacts. Significance 18:6–7. https://doi.org/10.1111/1740-9713.01522",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0251194",
+      "author": "H Seibold",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2455_CR34",
+      "unstructured": "Seibold H, Czerny S, Decke S, Dieterle R, Eder T, Fohr S, Hahn N, Hartmann R, Heindl C, Kopper P, Lepke D, Loidl V, Mandl M, Musiol S, Peter J, Piehler A, Rojas E, Schmid S, Schmidt H, Schmoll M, Schneider L, To XY, Tran V, Volker A, Wagner M, Wagner J, Waize M, Wecker H, Yang R, Zellner S, Nalenz M (2021) A computational reproducibility study of PLOS ONE articles featuring longitudinal data analyses. PLoS ONE 16:e0251194. https://doi.org/10.1371/journal.pone.0251194",
+      "volume": "16",
+      "year": "2021"
+    },
+    {
+      "author": "G Shmueli",
+      "first-page": "22",
+      "issue": "289–310",
+      "journal-title": "Stat Sci",
+      "key": "2455_CR35",
+      "unstructured": "Shmueli G (2010) To explain or to predict? Stat Sci 25(289–310):22",
+      "volume": "25",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.12688/f1000research.10750.2",
+      "doi-asserted-by": "publisher",
+      "key": "2455_CR36",
+      "unstructured": "Silva L, Jimenez R, Blomberg N, Luis Oliveira J (2017) General guidelines for biomedical software development [version 2; peer review: 2 approved]. F1000Research 6. doi: https://doi.org/10.12688/f1000research.10750.2"
+    },
+    {
+      "DOI": "10.1198/1061860031365",
+      "author": "TM Therneau",
+      "doi-asserted-by": "publisher",
+      "first-page": "156",
+      "journal-title": "J Comput Graph Stat",
+      "key": "2455_CR37",
+      "unstructured": "Therneau TM, Grambsch PM, Pankratz VS (2003) Penalized survival models and frailty. J Comput Graph Stat 12:156–175. https://doi.org/10.1198/1061860031365",
+      "volume": "12",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1007/s10654-020-00636-1",
+      "author": "N van Geloven",
+      "doi-asserted-by": "publisher",
+      "first-page": "619",
+      "journal-title": "Eur J Epidemiol",
+      "key": "2455_CR38",
+      "unstructured": "van Geloven N, Swanson SA, Ramspek CL, Luijken K, van Diepen M, Morris TP, Groenwold RHH, van Houwelingen HC, Putter H, le Cessie S (2020) Prediction meets causal inference: the role of treatment in clinical prediction models. Eur J Epidemiol 35:619–630. https://doi.org/10.1007/s10654-020-00636-1",
+      "volume": "35",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.7326/0003-4819-147-8-200710160-00010",
+      "author": "E von Elm",
+      "doi-asserted-by": "publisher",
+      "first-page": "573",
+      "journal-title": "Ann Intern Med",
+      "key": "2455_CR39",
+      "unstructured": "von Elm E, Altman DG, Egger M, Pocock SJ, Gotzsche PC, Vandenbroucke JP, Initiative S (2007) The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) statement: guidelines for reporting observational studies. Ann Intern Med 147:573–577. https://doi.org/10.7326/0003-4819-147-8-200710160-00010",
+      "volume": "147",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/sdata.2016.18",
+      "author": "MD Wilkinson",
+      "doi-asserted-by": "publisher",
+      "first-page": "160018",
+      "journal-title": "Sci Data",
+      "key": "2455_CR40",
+      "unstructured": "Wilkinson MD, Dumontier M, Aalbersberg IJ, Appleton G, Axton M, Baak A, Blomberg N, Boiten JW, da Silva Santos LB, Bourne PE, Bouwman J, Brookes AJ, Clark T, Crosas M, Dillo I, Dumon O, Edmunds S, Evelo CT, Finkers R, Gonzalez-Beltran A, Gray AJ, Groth P, Goble C, Grethe JS, Heringa J, Hoen PA, Hooft R, Kuhn T, Kok R, Kok J, Lusher SJ, Martone ME, Mons A, Packer AL, Persson B, Rocca-Serra P, Roos M, van Schaik R, Sansone SA, Schultes E, Sengstag T, Slater T, Strawn G, Swertz MA, Thompson M, van der Lei J, van Mulligen E, Velterop J, Waagmeester A, Wittenburg P, Wolstencroft K, Zhao J, Mons B (2016) The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3:160018. https://doi.org/10.1038/sdata.2016.18",
+      "volume": "3",
+      "year": "2016"
+    }
+  ],
+  "reference-count": 41,
+  "references-count": 41,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-881649/v1",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-022-02455-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Validating the knowledge bank approach for personalized prediction of survival in acute myeloid leukemia: a reproducibility study"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "141"
+}

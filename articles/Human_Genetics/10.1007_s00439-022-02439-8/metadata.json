@@ -1,0 +1,1801 @@
+{
+  "DOI": "10.1007/s00439-022-02439-8",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-022-02439-8",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eMachine learning (ML) algorithms are increasingly being used to help implement clinical decision support systems. In this new field, we define as “translational machine learning”, joint efforts and strong communication between data scientists and clinicians help to span the gap between ML and its adoption in the clinic. These collaborations also improve interpretability and trust in translational ML methods and ultimately aim to result in generalizable and reproducible models. To help clinicians and bioinformaticians refine their translational ML pipelines, we review the steps from model building to the use of ML in the clinic. We discuss experimental setup, computational analysis, interpretability and reproducibility, and emphasize the challenges involved. We highly advise collaboration and data sharing between consortia and institutes to build multi-centric cohorts that facilitate ML methodologies that generalize across centers. In the end, we hope that this review provides a way to streamline translational ML and helps to tackle the challenges that come with it.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2439"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "9 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "8 February 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "4 March 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "The authors declare no competing interests."
+    },
+    {
+      "group": {
+        "label": "Ethical approval",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 5,
+      "value": "Not applicable."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-7858-6521",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Couckuyt",
+      "given": "Artuur",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6636-7572",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Seurinck",
+      "given": "Ruth",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4569-2330",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Emmaneel",
+      "given": "Annelies",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-5306-5615",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Quintelier",
+      "given": "Katrien",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-4574-9093",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Novak",
+      "given": "David",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7119-5330",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Van Gassen",
+      "given": "Sofie",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0415-1506",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Saeys",
+      "given": "Yvan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        4
+      ]
+    ],
+    "date-time": "2022-03-04T19:02:26Z",
+    "timestamp": 1646420546000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        8,
+        8
+      ]
+    ],
+    "date-time": "2022-08-08T06:06:31Z",
+    "timestamp": 1659938791000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100003130",
+      "award": [
+        "FWOTBM20190001"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Fonds Wetenschappelijk Onderzoek"
+    },
+    {
+      "DOI": "10.13039/501100002913",
+      "award": [
+        "Onderzoeksprogramma Artificiële Intelligentie (AI) Vlaanderen"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Vlaamse Overheid"
+    },
+    {
+      "DOI": "10.13039/501100004727",
+      "award": [
+        "VR 2016 2312 Doc.1521/4"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Vlaams Instituut voor Biotechnologie"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        9
+      ]
+    ],
+    "date-time": "2024-04-09T02:50:27Z",
+    "timestamp": 1712631027106
+  },
+  "is-referenced-by-count": 10,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "9",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        4
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            4
+          ]
+        ],
+        "date-time": "2022-03-04T00:00:00Z",
+        "timestamp": 1646352000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            4
+          ]
+        ],
+        "date-time": "2022-03-04T00:00:00Z",
+        "timestamp": 1646352000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02439-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-022-02439-8/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-022-02439-8.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1451-1466",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        4
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        3,
+        4
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1167/iovs.16-19964",
+      "author": "MD Abràmoff",
+      "doi-asserted-by": "publisher",
+      "first-page": "5200",
+      "journal-title": "Investig Ophthalmol vis Sci",
+      "key": "2439_CR1",
+      "unstructured": "Abràmoff MD, Lou Y, Erginay A et al (2016) Improved automated detection of diabetic retinopathy on a publicly available dataset through integration of deep learning. Investig Ophthalmol vis Sci 57:5200–5206. https://doi.org/10.1167/iovs.16-19964",
+      "volume": "57",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41746-021-00438-z",
+      "author": "R Aggarwal",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "NPJ Digit Med",
+      "key": "2439_CR2",
+      "unstructured": "Aggarwal R, Sounderajah V, Martin G et al (2021) Diagnostic accuracy of deep learning in medical imaging: a systematic review and meta-analysis. NPJ Digit Med 4:1–23. https://doi.org/10.1038/s41746-021-00438-z",
+      "volume": "4",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1109/ICHI.2018.00095",
+      "doi-asserted-by": "publisher",
+      "key": "2439_CR3",
+      "unstructured": "Ahmad MA, Eckert C, Teredesai A (2018) Interpretable machine learning in healthcare. In: International conference on bioinformatics, computational biology, and health informatics (ICHI), pp  559–560. https://doi.org/10.1109/ICHI.2018.00095"
+    },
+    {
+      "DOI": "10.1038/s41746-020-00349-5",
+      "author": "RK Akyea",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "NPJ Digit Med",
+      "key": "2439_CR4",
+      "unstructured": "Akyea RK, Qureshi N, Kai J, Weng SF (2020) Performance and clinical utility of supervised machine-learning approaches in detecting familial hypercholesterolaemia in primary care. NPJ Digit Med 3:1–9. https://doi.org/10.1038/s41746-020-00349-5",
+      "volume": "3",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12880-021-00551-1",
+      "author": "MJ Ankenbrand",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "journal-title": "BMC Med Imaging",
+      "key": "2439_CR5",
+      "unstructured": "Ankenbrand MJ, Shainberg L, Hock M et al (2021) Sensitivity analysis for interpretation of machine learning based segmentation models in cardiac MRI. BMC Med Imaging 21:27. https://doi.org/10.1186/s12880-021-00551-1",
+      "volume": "21",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ncomms14825",
+      "author": "E Arvaniti",
+      "doi-asserted-by": "publisher",
+      "first-page": "14825",
+      "journal-title": "Nat Commun",
+      "key": "2439_CR6",
+      "unstructured": "Arvaniti E, Claassen M (2017) Sensitive detection of rare disease-associated cell subsets via representation learning. Nat Commun 8:14825. https://doi.org/10.1038/ncomms14825",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.csbj.2020.02.011",
+      "author": "E Baldwin",
+      "doi-asserted-by": "publisher",
+      "first-page": "509",
+      "journal-title": "Comput Struct Biotechnol J",
+      "key": "2439_CR7",
+      "unstructured": "Baldwin E, Han J, Luo W et al (2020) On fusion methods for knowledge discovery from multi-omics datasets. Comput Struct Biotechnol J 18:509–517. https://doi.org/10.1016/j.csbj.2020.02.011",
+      "volume": "18",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1021/ac901049w",
+      "author": "DR Bandura",
+      "doi-asserted-by": "publisher",
+      "first-page": "6813",
+      "journal-title": "Anal Chem",
+      "key": "2439_CR8",
+      "unstructured": "Bandura DR, Baranov VI, Ornatsky OI et al (2009) Mass cytometry: technique for real time single cell multitarget immunoassay based on inductively coupled plasma time-of-flight mass spectrometry. Anal Chem 81:6813–6822. https://doi.org/10.1021/ac901049w",
+      "volume": "81",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1161/CIRCOUTCOMES.118.005122",
+      "author": "BK Beaulieu-Jones",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Circ Cardiovasc Qual Outcomes",
+      "key": "2439_CR9",
+      "unstructured": "Beaulieu-Jones BK, Steven WZ, Chris W et al (2019) Privacy-preserving generative deep neural networks support clinical data sharing. Circ Cardiovasc Qual Outcomes 12:e005122. https://doi.org/10.1161/CIRCOUTCOMES.118.005122",
+      "volume": "12",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41746-020-00324-0",
+      "author": "S Benjamens",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "NPJ Digit Med",
+      "key": "2439_CR10",
+      "unstructured": "Benjamens S, Dhunnoo P, Meskó B (2020) The state of artificial intelligence-based FDA-approved medical devices and algorithms: an online database. NPJ Digit Med 3:1–8. https://doi.org/10.1038/s41746-020-00324-0",
+      "volume": "3",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1162/EVCO_a_00069",
+      "author": "B Bischl",
+      "doi-asserted-by": "publisher",
+      "first-page": "249",
+      "journal-title": "Evol Comput",
+      "key": "2439_CR11",
+      "unstructured": "Bischl B, Mersmann O, Trautmann H, Weihs C (2012) Resampling methods for meta-model validation with recommendations for evolutionary computation. Evol Comput 20:249–275. https://doi.org/10.1162/EVCO_a_00069",
+      "volume": "20",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1088/1742-5468/2008/10/P10008",
+      "author": "VD Blondel",
+      "doi-asserted-by": "publisher",
+      "first-page": "P10008",
+      "journal-title": "J Stat Mech Theory Exp",
+      "key": "2439_CR12",
+      "unstructured": "Blondel VD, Guillaume J-L, Lambiotte R, Lefebvre E (2008) Fast unfolding of communities in large networks. J Stat Mech Theory Exp 2008:P10008. https://doi.org/10.1088/1742-5468/2008/10/P10008",
+      "volume": "2008",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1006/jmps.1999.1279",
+      "author": "MW Browne",
+      "doi-asserted-by": "publisher",
+      "first-page": "108",
+      "journal-title": "J Math Psychol",
+      "key": "2439_CR13",
+      "unstructured": "Browne MW (2000) Cross-validation methods. J Math Psychol 44:108–132. https://doi.org/10.1006/jmps.1999.1279",
+      "volume": "44",
+      "year": "2000"
+    },
+    {
+      "key": "2439_CR14",
+      "unstructured": "Buolamwini J, Gebru T (2018) Gender shades: intersectional accuracy disparities in commercial gender classification. In: Friedler SA, Wilson C (eds) Proceedings of the 1st Conference on Fairness, Accountability and Transparency. PMLR, New York, pp 77–91"
+    },
+    {
+      "DOI": "10.1038/s41598-018-21758-3",
+      "author": "D Bychkov",
+      "doi-asserted-by": "publisher",
+      "first-page": "3395",
+      "journal-title": "Sci Rep",
+      "key": "2439_CR15",
+      "unstructured": "Bychkov D, Linder N, Turkki R et al (2018) Deep learning based tissue analysis predicts outcome in colorectal cancer. Sci Rep 8:3395. https://doi.org/10.1038/s41598-018-21758-3",
+      "volume": "8",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/nar/gkab004",
+      "author": "R Chazarra-Gil",
+      "doi-asserted-by": "publisher",
+      "first-page": "e42",
+      "journal-title": "Nucleic Acids Res",
+      "key": "2439_CR16",
+      "unstructured": "Chazarra-Gil R, van Dongen S, Kiselev VY, Hemberg M (2021) Flexible comparison of batch correction methods for single-cell RNA-seq using BatchBench. Nucleic Acids Res 49:e42. https://doi.org/10.1093/nar/gkab004",
+      "volume": "49",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1198/jasa.2009.0111",
+      "author": "L Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "209",
+      "journal-title": "J Am Stat Assoc",
+      "key": "2439_CR17",
+      "unstructured": "Chen L, Buja A (2009) Local multidimensional scaling for nonlinear dimension reduction, graph drawing, and proximity analysis. J Am Stat Assoc 104:209–219. https://doi.org/10.1198/jasa.2009.0111",
+      "volume": "104",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1109/ICPR.2014.268",
+      "author": "V Cheplygina",
+      "doi-asserted-by": "publisher",
+      "first-page": "1508",
+      "journal-title": "Int Conf Pattern Recogn",
+      "key": "2439_CR18",
+      "unstructured": "Cheplygina V, Sørensen L, Tax DMJ et al (2014) Classification of COPD with multiple instance learning. Int Conf Pattern Recogn 22:1508–1513. https://doi.org/10.1109/ICPR.2014.268",
+      "volume": "22",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/cyto.a.24320",
+      "author": "M Cheung",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cytometry A",
+      "key": "2439_CR19",
+      "unstructured": "Cheung M, Campbell JJ, Whitby L et al (2021) Current trends in flow cytometry automated data analysis software. Cytometry A. https://doi.org/10.1002/cyto.a.24320",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.mayocp.2019.02.009",
+      "author": "C Chiofolo",
+      "doi-asserted-by": "publisher",
+      "first-page": "783",
+      "journal-title": "Mayo Clin Proc",
+      "key": "2439_CR20",
+      "unstructured": "Chiofolo C, Chbat N, Ghosh E et al (2019) Automated continuous acute kidney injury prediction and surveillance: a random forest model. Mayo Clin Proc 94:783–792. https://doi.org/10.1016/j.mayocp.2019.02.009",
+      "volume": "94",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1109/ACCESS.2020.2981072",
+      "author": "H Cho",
+      "doi-asserted-by": "publisher",
+      "first-page": "52588",
+      "journal-title": "IEEE Access",
+      "key": "2439_CR21",
+      "unstructured": "Cho H, Kim Y, Lee E et al (2020) Basic enhancement strategies when using Bayesian optimization for hyperparameter tuning of deep neural networks. IEEE Access 8:52588–52608. https://doi.org/10.1109/ACCESS.2020.2981072",
+      "volume": "8",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1161/JAHA.120.019905",
+      "author": "JS Chorba",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Am Heart Assoc",
+      "key": "2439_CR22",
+      "unstructured": "Chorba JS, Shapiro AM, Le L et al (2021) Deep learning algorithm for automated cardiac murmur detection via a digital stethoscope platform. J Am Heart Assoc 10:e019905. https://doi.org/10.1161/JAHA.120.019905",
+      "volume": "10",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/bmjopen-2020-048008",
+      "author": "GS Collins",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMJ Open",
+      "key": "2439_CR23",
+      "unstructured": "Collins GS, Dhiman P, Andaur Navarro CL et al (2021) Protocol for development of a reporting guideline (TRIPOD-AI) and risk of bias tool (PROBAST-AI) for diagnostic and prognostic prediction model studies based on artificial intelligence. BMJ Open 11:e048008. https://doi.org/10.1136/bmjopen-2020-048008",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-020-00721-x",
+      "author": "MR Corces",
+      "doi-asserted-by": "publisher",
+      "first-page": "1158",
+      "journal-title": "Nat Genet",
+      "key": "2439_CR24",
+      "unstructured": "Corces MR, Shcherbina A, Kundu S et al (2020) Single-cell epigenomic analyses implicate candidate causal variants at inherited risk loci for Alzheimer’s and Parkinson’s diseases. Nat Genet 52:1158–1168. https://doi.org/10.1038/s41588-020-00721-x",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41591-020-1037-7",
+      "author": "S Cruz Rivera",
+      "doi-asserted-by": "publisher",
+      "first-page": "1351",
+      "journal-title": "Nat Med",
+      "key": "2439_CR25",
+      "unstructured": "Cruz Rivera S, Liu X, Chan A-W et al (2020) Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension. Nat Med 26:1351–1363. https://doi.org/10.1038/s41591-020-1037-7",
+      "volume": "26",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1109/TPAMI.1979.4766909",
+      "author": "DL Davies",
+      "doi-asserted-by": "publisher",
+      "first-page": "224",
+      "journal-title": "IEEE Trans Pattern Anal Mach Intell PAMI",
+      "key": "2439_CR26",
+      "unstructured": "Davies DL, Bouldin DW (1979) A cluster separation measure. IEEE Trans Pattern Anal Mach Intell PAMI 1:224–227. https://doi.org/10.1109/TPAMI.1979.4766909",
+      "volume": "1",
+      "year": "1979"
+    },
+    {
+      "DOI": "10.1145/1143844.1143874",
+      "doi-asserted-by": "publisher",
+      "key": "2439_CR27",
+      "unstructured": "Davis J, Goadrich M (2006) The relationship between precision-recall and ROC curves. In: Proceedings of the 23rd international conference on Machine learning. Association for Computing Machinery, New York, pp  233–240. https://doi.org/10.1145/1143844.1143874"
+    },
+    {
+      "DOI": "10.1002/cyto.a.24360",
+      "author": "C Duetz",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cytom Part J Int Soc Anal Cytol",
+      "key": "2439_CR28",
+      "unstructured": "Duetz C, Van Gassen S, Westers TM et al (2021) Computational flow cytometry as a diagnostic tool in suspected-myelodysplastic syndromes. Cytom Part J Int Soc Anal Cytol. https://doi.org/10.1002/cyto.a.24360",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.12688/f1000research.15666.3",
+      "author": "A Duò",
+      "doi-asserted-by": "publisher",
+      "first-page": "1141",
+      "journal-title": "F1000Research",
+      "key": "2439_CR29",
+      "unstructured": "Duò A, Robinson MD, Soneson C (2020) A systematic performance evaluation of clustering methods for single-cell RNA-seq data. F1000Research 7:1141. https://doi.org/10.12688/f1000research.15666.3",
+      "volume": "7",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s42003-021-01674-5",
+      "author": "F-E Eid",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Commun Biol",
+      "key": "2439_CR30",
+      "unstructured": "Eid F-E, Elmarakeby HA, Chan YA et al (2021) Systematic auditing is essential to debiasing machine learning in biology. Commun Biol 4:1–9. https://doi.org/10.1038/s42003-021-01674-5",
+      "volume": "4",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cyto.a.24501",
+      "author": "A Emmaneel",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Cytometry A",
+      "key": "2439_CR31",
+      "unstructured": "Emmaneel A, Quintelier K, Sichien D et al (2021) PeacoQC: peak-based selection of high quality cytometry data. Cytometry A. https://doi.org/10.1002/cyto.a.24501",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41576-019-0122-6",
+      "author": "G Eraslan",
+      "doi-asserted-by": "publisher",
+      "first-page": "389",
+      "journal-title": "Nat Rev Genet",
+      "key": "2439_CR32",
+      "unstructured": "Eraslan G, Avsec Ž, Gagneur J, Theis FJ (2019) Deep learning: new computational modelling techniques for genomics. Nat Rev Genet 20:389–403. https://doi.org/10.1038/s41576-019-0122-6",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature21056",
+      "author": "A Esteva",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "journal-title": "Nature",
+      "key": "2439_CR33",
+      "unstructured": "Esteva A, Kuprel B, Novoa RA et al (2017) Dermatologist-level classification of skin cancer with deep neural networks. Nature 542:115–118. https://doi.org/10.1038/nature21056",
+      "volume": "542",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41591-018-0316-z",
+      "author": "A Esteva",
+      "doi-asserted-by": "publisher",
+      "first-page": "24",
+      "journal-title": "Nat Med",
+      "key": "2439_CR34",
+      "unstructured": "Esteva A, Robicquet A, Ramsundar B et al (2019) A guide to deep learning in healthcare. Nat Med 25:24–29. https://doi.org/10.1038/s41591-018-0316-z",
+      "volume": "25",
+      "year": "2019"
+    },
+    {
+      "author": "European Commission",
+      "key": "2439_CR35",
+      "unstructured": "European Commission (2021) Directorate General for Research and Innovation. Collaboration: a key to unlock the challenges of rare diseases research. Publications Office, Luxembourg",
+      "volume-title": "Directorate General for Research and Innovation. Collaboration: a key to unlock the challenges of rare diseases research",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1023/B:MACH.0000019805.88351.60",
+      "author": "T Evgeniou",
+      "doi-asserted-by": "publisher",
+      "first-page": "71",
+      "journal-title": "Mach Learn",
+      "key": "2439_CR36",
+      "unstructured": "Evgeniou T, Pontil M, Elisseeff A (2004) Leave one out error, stability, and generalization of voting combinations of classifiers. Mach Learn 55:71–97. https://doi.org/10.1023/B:MACH.0000019805.88351.60",
+      "volume": "55",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/jamia/ocaa133",
+      "author": "K Ferryman",
+      "doi-asserted-by": "publisher",
+      "first-page": "2016",
+      "journal-title": "J Am Med Inform Assoc",
+      "key": "2439_CR37",
+      "unstructured": "Ferryman K (2020) Addressing health disparities in the Food and Drug Administration’s artificial intelligence and machine learning regulatory framework. J Am Med Inform Assoc 27:2016–2019. https://doi.org/10.1093/jamia/ocaa133",
+      "volume": "27",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/1472-6947-12-8",
+      "author": "RL Figueroa",
+      "doi-asserted-by": "publisher",
+      "first-page": "8",
+      "journal-title": "BMC Med Inform Decis Mak",
+      "key": "2439_CR38",
+      "unstructured": "Figueroa RL, Zeng-Treitler Q, Kandula S, Ngo LH (2012) Predicting sample size required for classification performance. BMC Med Inform Decis Mak 12:8. https://doi.org/10.1186/1472-6947-12-8",
+      "volume": "12",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1126/science.150.3698.910",
+      "author": "MJ Fulwyler",
+      "doi-asserted-by": "publisher",
+      "first-page": "910",
+      "journal-title": "Science",
+      "key": "2439_CR39",
+      "unstructured": "Fulwyler MJ (1965) Electronic separation of biological cells by volume. Science 150:910–911. https://doi.org/10.1126/science.150.3698.910",
+      "volume": "150",
+      "year": "1965"
+    },
+    {
+      "DOI": "10.1038/s41586-021-03207-w",
+      "author": "C Gaebler",
+      "doi-asserted-by": "publisher",
+      "first-page": "639",
+      "journal-title": "Nature",
+      "key": "2439_CR40",
+      "unstructured": "Gaebler C, Wang Z, Lorenzi JCC et al (2021) Evolution of antibody immunity to SARS-CoV-2. Nature 591:639–644. https://doi.org/10.1038/s41586-021-03207-w",
+      "volume": "591",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/exd.13077",
+      "author": "N Garzorz-Stark",
+      "doi-asserted-by": "publisher",
+      "first-page": "767",
+      "journal-title": "Exp Dermatol",
+      "key": "2439_CR41",
+      "unstructured": "Garzorz-Stark N, Krause L, Lauffer F et al (2016) A novel molecular disease classifier for psoriasis and eczema. Exp Dermatol 25:767–774. https://doi.org/10.1111/exd.13077",
+      "volume": "25",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1001/jamainternmed.2018.3763",
+      "author": "MA Gianfrancesco",
+      "doi-asserted-by": "publisher",
+      "first-page": "1544",
+      "journal-title": "JAMA Intern Med",
+      "key": "2439_CR42",
+      "unstructured": "Gianfrancesco MA, Tamang S, Yazdany J, Schmajuk G (2018) Potential biases in machine learning algorithms using electronic health record data. JAMA Intern Med 178:1544–1547. https://doi.org/10.1001/jamainternmed.2018.3763",
+      "volume": "178",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btaa293",
+      "author": "CH Grønbech",
+      "doi-asserted-by": "publisher",
+      "first-page": "4415",
+      "journal-title": "Bioinformatics",
+      "key": "2439_CR43",
+      "unstructured": "Grønbech CH, Vording MF, Timshel PN et al (2020) scVAE: variational auto-encoders for single-cell gene expression data. Bioinformatics 36:4415–4422. https://doi.org/10.1093/bioinformatics/btaa293",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1126/scirobotics.aay7120",
+      "author": "D Gunning",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Sci Robot",
+      "key": "2439_CR44",
+      "unstructured": "Gunning D, Stefik M, Choi J et al (2019) XAI—Explainable artificial intelligence. Sci Robot. https://doi.org/10.1126/scirobotics.aay7120",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.bbapap.2013.12.020",
+      "author": "S Gupta",
+      "doi-asserted-by": "publisher",
+      "first-page": "899",
+      "journal-title": "Biochim Biophys Acta BBA Proteins Proteom",
+      "key": "2439_CR45",
+      "unstructured": "Gupta S, Venkatesh A, Ray S, Srivastava S (2014) Challenges and prospects for biomarker research: a current perspective from the developing world. Biochim Biophys Acta BBA Proteins Proteom 1844:899–908. https://doi.org/10.1016/j.bbapap.2013.12.020",
+      "volume": "1844",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.2214/AJR.18.20224",
+      "author": "GS Handelman",
+      "doi-asserted-by": "publisher",
+      "first-page": "38",
+      "journal-title": "Am J Roentgenol",
+      "key": "2439_CR46",
+      "unstructured": "Handelman GS, Kok HK, Chandra RV et al (2018) Peering into the black box of artificial intelligence: evaluation metrics of machine learning methods. Am J Roentgenol 212:38–43. https://doi.org/10.2214/AJR.18.20224",
+      "volume": "212",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.jcin.2008.01.008",
+      "author": "EL Hannan",
+      "doi-asserted-by": "publisher",
+      "first-page": "211",
+      "journal-title": "JACC Cardiovasc Interv",
+      "key": "2439_CR47",
+      "unstructured": "Hannan EL (2008) Randomized clinical trials and observational studies: guidelines for assessing respective strengths and limitations. JACC Cardiovasc Interv 1:211–217. https://doi.org/10.1016/j.jcin.2008.01.008",
+      "volume": "1",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/s41592-021-01256-7",
+      "author": "BJ Heil",
+      "doi-asserted-by": "publisher",
+      "first-page": "1132",
+      "journal-title": "Nat Methods",
+      "key": "2439_CR48",
+      "unstructured": "Heil BJ, Hoffman MM, Markowetz F et al (2021) Reproducibility standards for machine learning in the life sciences. Nat Methods 18:1132–1135. https://doi.org/10.1038/s41592-021-01256-7",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/978-3-319-47759-6_2",
+      "author": "F Herrera",
+      "doi-asserted-by": "publisher",
+      "first-page": "17",
+      "key": "2439_CR49",
+      "unstructured": "Herrera F, Ventura S, Bello R et al (2016) Multiple instance learning. In: Herrera F, Ventura S, Bello R et al (eds) Multiple instance learning: foundations and algorithms. Springer International Publishing, Cham, pp 17–33",
+      "volume-title": "Multiple instance learning: foundations and algorithms",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/s10994-021-05946-3",
+      "author": "E Hüllermeier",
+      "doi-asserted-by": "publisher",
+      "first-page": "457",
+      "journal-title": "Mach Learn",
+      "key": "2439_CR50",
+      "unstructured": "Hüllermeier E, Waegeman W (2021) Aleatoric and epistemic uncertainty in machine learning: an introduction to concepts and methods. Mach Learn 110:457–506. https://doi.org/10.1007/s10994-021-05946-3",
+      "volume": "110",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0247491",
+      "author": "SD Jalal",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS ONE",
+      "key": "2439_CR51",
+      "unstructured": "Jalal SD (2021) The contribution of CD200 to the diagnostic accuracy of Matutes score in the diagnosis of chronic lymphocytic leukemia in limited resources laboratories. PLoS ONE 16:e0247491. https://doi.org/10.1371/journal.pone.0247491",
+      "volume": "16",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/mp.13891",
+      "author": "X Jia",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Med Phys",
+      "key": "2439_CR52",
+      "unstructured": "Jia X, Ren L, Cai J (2020) Clinical implementation of AI technologies will require interpretable AI models. Med Phys 47:1–4. https://doi.org/10.1002/mp.13891",
+      "volume": "47",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1148/radiol.2020200292",
+      "author": "Y Jiang",
+      "doi-asserted-by": "publisher",
+      "first-page": "38",
+      "journal-title": "Radiology",
+      "key": "2439_CR53",
+      "unstructured": "Jiang Y, Edwards AV, Newstead GM (2021) Artificial intelligence applied to breast MRI for improved diagnosis. Radiology 298:38–46. https://doi.org/10.1148/radiol.2020200292",
+      "volume": "298",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s42256-020-0186-1",
+      "author": "GA Kaissis",
+      "doi-asserted-by": "publisher",
+      "first-page": "305",
+      "journal-title": "Nat Mach Intell",
+      "key": "2439_CR54",
+      "unstructured": "Kaissis GA, Makowski MR, Rückert D, Braren RF (2020) Secure, privacy-preserving and federated machine learning in medical imaging. Nat Mach Intell 2:305–311. https://doi.org/10.1038/s42256-020-0186-1",
+      "volume": "2",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/1471-2105-4-48",
+      "author": "S Kaski",
+      "doi-asserted-by": "publisher",
+      "first-page": "48",
+      "journal-title": "BMC Bioinform",
+      "key": "2439_CR55",
+      "unstructured": "Kaski S, Nikkilä J, Oja M et al (2003) Trustworthiness and metrics in visualizing similarity of gene expression. BMC Bioinform 4:48. https://doi.org/10.1186/1471-2105-4-48",
+      "volume": "4",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1001/jama.2020.12067",
+      "author": "A Kaushal",
+      "doi-asserted-by": "publisher",
+      "first-page": "1212",
+      "journal-title": "JAMA",
+      "key": "2439_CR56",
+      "unstructured": "Kaushal A, Altman R, Langlotz C (2020) Geographic distribution of US cohorts used to train deep learning algorithms. JAMA 324:1212–1213. https://doi.org/10.1001/jama.2020.12067",
+      "volume": "324",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41591-018-0213-5",
+      "author": "M Komorowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "1716",
+      "journal-title": "Nat Med",
+      "key": "2439_CR57",
+      "unstructured": "Komorowski M, Celi LA, Badawi O et al (2018) The artificial intelligence clinician learns optimal treatment strategies for sepsis in intensive care. Nat Med 24:1716–1720. https://doi.org/10.1038/s41591-018-0213-5",
+      "volume": "24",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1111/j.1742-4658.2008.06843.x",
+      "author": "C Kreutz",
+      "doi-asserted-by": "publisher",
+      "first-page": "923",
+      "journal-title": "FEBS J",
+      "key": "2439_CR58",
+      "unstructured": "Kreutz C, Timmer J (2009) Systems biology: experimental design. FEBS J 276:923–942. https://doi.org/10.1111/j.1742-4658.2008.06843.x",
+      "volume": "276",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.neucom.2008.12.017",
+      "author": "JA Lee",
+      "doi-asserted-by": "publisher",
+      "first-page": "1431",
+      "journal-title": "Neurocomputing",
+      "key": "2439_CR59",
+      "unstructured": "Lee JA, Verleysen M (2009) Quality assessment of dimensionality reduction: rank-based criteria. Neurocomputing 72:1431–1443. https://doi.org/10.1016/j.neucom.2008.12.017",
+      "volume": "72",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/nm.4125",
+      "author": "S Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "792",
+      "journal-title": "Nat Med",
+      "key": "2439_CR60",
+      "unstructured": "Li S, Garrett-Bakelman FE, Chung SS et al (2016) Distinct evolution and dynamics of epigenetic and genetic heterogeneity in acute myeloid leukemia. Nat Med 22:792–799. https://doi.org/10.1038/nm.4125",
+      "volume": "22",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13059-019-1917-7",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "297",
+      "journal-title": "Genome Biol",
+      "key": "2439_CR61",
+      "unstructured": "Liu X, Song W, Wong BY et al (2019) A comparison framework and guideline of clustering methods for mass cytometry data. Genome Biol 20:297. https://doi.org/10.1186/s13059-019-1917-7",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.2196/18477",
+      "author": "S Liu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Med Internet Res",
+      "key": "2439_CR62",
+      "unstructured": "Liu S, See KC, Ngiam KY et al (2020a) Reinforcement learning for clinical decision support in critical care: comprehensive review. J Med Internet Res. https://doi.org/10.2196/18477",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41591-020-1034-x",
+      "author": "X Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1364",
+      "journal-title": "Nat Med",
+      "key": "2439_CR63",
+      "unstructured": "Liu X, Cruz Rivera S, Moher D et al (2020b) Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension. Nat Med 26:1364–1374. https://doi.org/10.1038/s41591-020-1034-x",
+      "volume": "26",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/11758525_93",
+      "author": "Y Lu",
+      "doi-asserted-by": "publisher",
+      "first-page": "686",
+      "key": "2439_CR64",
+      "unstructured": "Lu Y, Tian Q, Liu F et al (2006) A self-supervised learning framework for classifying microarray gene expression data. In: Alexandrov VN, van Albada GD, Sloot PMA, Dongarra J (eds) Computational science-ICCS 2006. Springer, Berlin, pp  686–693. https://doi.org/10.1007/11758525_93",
+      "volume-title": "Computational science-ICCS 2006",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.15252/msb.20188746",
+      "author": "MD Luecken",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Mol Syst Biol",
+      "key": "2439_CR65",
+      "unstructured": "Luecken MD, Theis FJ (2019) Current best practices in single-cell RNA-seq analysis: a tutorial. Mol Syst Biol. https://doi.org/10.15252/msb.20188746",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.12688/f1000research.9501.2",
+      "author": "ATL Lun",
+      "doi-asserted-by": "publisher",
+      "first-page": "2122",
+      "journal-title": "F1000Research",
+      "key": "2439_CR66",
+      "unstructured": "Lun ATL, McCarthy DJ, Marioni JC (2016) A step-by-step workflow for low-level analysis of single-cell RNA-seq data with Bioconductor. F1000Research 5:2122. https://doi.org/10.12688/f1000research.9501.2",
+      "volume": "5",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/S0169-7439(98)00065-3",
+      "author": "T Lundstedt",
+      "doi-asserted-by": "publisher",
+      "first-page": "3",
+      "journal-title": "Chemom Intell Lab Syst",
+      "key": "2439_CR67",
+      "unstructured": "Lundstedt T, Seifert E, Abramo L et al (1998) Experimental design and optimization. Chemom Intell Lab Syst 42:3–40. https://doi.org/10.1016/S0169-7439(98)00065-3",
+      "volume": "42",
+      "year": "1998"
+    },
+    {
+      "DOI": "10.3389/fgene.2018.00242",
+      "author": "P Mamoshina",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Genet",
+      "key": "2439_CR68",
+      "unstructured": "Mamoshina P, Volosnikova M, Ozerov IV et al (2018) Machine learning on human muscle transcriptomic data for biomarker discovery and tissue-specific drug target identification. Front Genet. https://doi.org/10.3389/fgene.2018.00242",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-019-14018-z",
+      "author": "M Marouf",
+      "doi-asserted-by": "publisher",
+      "first-page": "166",
+      "journal-title": "Nat Commun",
+      "key": "2439_CR69",
+      "unstructured": "Marouf M, Machart P, Bansal V et al (2020) Realistic in silico generation and augmentation of single-cell RNA-seq data using generative adversarial networks. Nat Commun 11:166. https://doi.org/10.1038/s41467-019-14018-z",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13059-020-02006-2",
+      "author": "B Marquina-Sanchez",
+      "doi-asserted-by": "publisher",
+      "first-page": "106",
+      "journal-title": "Genome Biol",
+      "key": "2439_CR70",
+      "unstructured": "Marquina-Sanchez B, Fortelny N, Farlik M et al (2020) Single-cell RNA-seq with spike-in cells enables accurate quantification of cell-specific drug effects in pancreatic islets. Genome Biol 21:106. https://doi.org/10.1186/s13059-020-02006-2",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41592-021-01241-0",
+      "author": "J Matschinske",
+      "doi-asserted-by": "publisher",
+      "first-page": "1128",
+      "journal-title": "Nat Methods",
+      "key": "2439_CR71",
+      "unstructured": "Matschinske J, Alcaraz N, Benis A et al (2021) The AIMe registry for artificial intelligence in biomedical research. Nat Methods 18:1128–1131. https://doi.org/10.1038/s41592-021-01241-0",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.21105/joss.00861",
+      "author": "L McInnes",
+      "doi-asserted-by": "publisher",
+      "first-page": "861",
+      "journal-title": "J Open Source Softw",
+      "key": "2439_CR72",
+      "unstructured": "McInnes L, Healy J, Saul N, Großberger L (2018) UMAP: uniform manifold approximation and projection. J Open Source Softw 3:861. https://doi.org/10.21105/joss.00861",
+      "volume": "3",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nature12564",
+      "author": "LM McShane",
+      "doi-asserted-by": "publisher",
+      "first-page": "317",
+      "journal-title": "Nature",
+      "key": "2439_CR73",
+      "unstructured": "McShane LM, Cavenagh MM, Lively TG et al (2013) Criteria for the use of omics-based predictors in clinical trials. Nature 502:317–320. https://doi.org/10.1038/nature12564",
+      "volume": "502",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41598-019-56911-z",
+      "author": "B Mieth",
+      "doi-asserted-by": "publisher",
+      "first-page": "20353",
+      "journal-title": "Sci Rep",
+      "key": "2439_CR74",
+      "unstructured": "Mieth B, Hockley JRF, Görnitz N et al (2019) Using transfer learning from prior reference knowledge to improve the clustering of single-cell RNA-Seq data. Sci Rep 9:20353. https://doi.org/10.1038/s41598-019-56911-z",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw191",
+      "author": "G Monaco",
+      "doi-asserted-by": "publisher",
+      "first-page": "2473",
+      "journal-title": "Bioinformatics",
+      "key": "2439_CR75",
+      "unstructured": "Monaco G, Chen H, Poidinger M et al (2016) flowAI: automatic and interactive anomaly discerning tools for flow cytometry data. Bioinformatics 32:2473–2480. https://doi.org/10.1093/bioinformatics/btw191",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001744",
+      "author": "KGM Moons",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Med",
+      "key": "2439_CR76",
+      "unstructured": "Moons KGM, de Groot JAH, Bouwmeester W et al (2014) Critical appraisal and data extraction for systematic reviews of prediction modelling studies: the CHARMS checklist. PLoS Med 11:e1001744. https://doi.org/10.1371/journal.pmed.1001744",
+      "volume": "11",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.7326/M14-0698",
+      "author": "KGM Moons",
+      "doi-asserted-by": "publisher",
+      "first-page": "W1",
+      "journal-title": "Ann Intern Med",
+      "key": "2439_CR77",
+      "unstructured": "Moons KGM, Altman DG, Reitsma JB et al (2015) Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): explanation and elaboration. Ann Intern Med 162:W1–W73. https://doi.org/10.7326/M14-0698",
+      "volume": "162",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.7326/M18-1377",
+      "author": "KGM Moons",
+      "doi-asserted-by": "publisher",
+      "first-page": "W1",
+      "journal-title": "Ann Intern Med",
+      "key": "2439_CR78",
+      "unstructured": "Moons KGM, Wolff RF, Riley RD et al (2019) PROBAST: a tool to assess risk of bias and applicability of prediction model studies: explanation and elaboration. Ann Intern Med 170:W1–W33. https://doi.org/10.7326/M18-1377",
+      "volume": "170",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/ajcp/108.4.378",
+      "author": "EJ Moreau",
+      "doi-asserted-by": "publisher",
+      "first-page": "378",
+      "journal-title": "Am J Clin Pathol",
+      "key": "2439_CR79",
+      "unstructured": "Moreau EJ, Matutes E, A’Hern RP et al (1997) Improvement of the chronic lymphocytic leukemia scoring system with the monoclonal antibody SN8 (CD79b). Am J Clin Pathol 108:378–382. https://doi.org/10.1093/ajcp/108.4.378",
+      "volume": "108",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1002/0471142956.cy0127s63",
+      "author": "JP Nolan",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "issue": "Unit1",
+      "journal-title": "Curr Protoc Cytom Chapter",
+      "key": "2439_CR80",
+      "unstructured": "Nolan JP, Condello D (2013) Spectral flow cytometry. Curr Protoc Cytom Chapter 1(Unit1):27. https://doi.org/10.1002/0471142956.cy0127s63",
+      "volume": "1",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41591-020-1041-y",
+      "author": "B Norgeot",
+      "doi-asserted-by": "publisher",
+      "first-page": "1320",
+      "journal-title": "Nat Med",
+      "key": "2439_CR81",
+      "unstructured": "Norgeot B, Quer G, Beaulieu-Jones BK et al (2020) Minimum information about clinical artificial intelligence modeling: the MI-CLAIM checklist. Nat Med 26:1320–1324. https://doi.org/10.1038/s41591-020-1041-y",
+      "volume": "26",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.12688/f1000research.11622.4",
+      "author": "M Nowicka",
+      "doi-asserted-by": "publisher",
+      "first-page": "748",
+      "journal-title": "F1000Research",
+      "key": "2439_CR82",
+      "unstructured": "Nowicka M, Krieg C, Crowell HL et al (2019) CyTOF workflow: differential discovery in high-throughput high-dimensional cytometry datasets. F1000Research 6:748. https://doi.org/10.12688/f1000research.11622.4",
+      "volume": "6",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1126/science.aax2342",
+      "author": "Z Obermeyer",
+      "doi-asserted-by": "publisher",
+      "first-page": "447",
+      "journal-title": "Science",
+      "key": "2439_CR83",
+      "unstructured": "Obermeyer Z, Powers B, Vogeli C, Mullainathan S (2019) Dissecting racial bias in an algorithm used to manage the health of populations. Science 366:447–453. https://doi.org/10.1126/science.aax2342",
+      "volume": "366",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.pscychresns.2008.07.016",
+      "author": "M Pagani",
+      "doi-asserted-by": "publisher",
+      "first-page": "8",
+      "journal-title": "Psychiatry Res Neuroimaging",
+      "key": "2439_CR84",
+      "unstructured": "Pagani M, Salmaso D, Rodriguez G et al (2009) Principal component analysis in mild and moderate Alzheimer’s disease—a novel approach to clinical diagnosis. Psychiatry Res Neuroimaging 173:8–14. https://doi.org/10.1016/j.pscychresns.2008.07.016",
+      "volume": "173",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.jim.2019.07.003",
+      "author": "CE Pedreira",
+      "doi-asserted-by": "publisher",
+      "journal-title": "J Immunol Methods",
+      "key": "2439_CR85",
+      "unstructured": "Pedreira CE, da Costa ES, Lecrevise Q et al (2019) From big flow cytometry datasets to smart diagnostic strategies: the EuroFlow approach. J Immunol Methods 475:112631. https://doi.org/10.1016/j.jim.2019.07.003",
+      "volume": "475",
+      "year": "2019"
+    },
+    {
+      "key": "2439_CR86",
+      "unstructured": "Pfohl SR, Duan T, Ding DY, Shah NH (2019) Counterfactual reasoning for fair clinical risk prediction. In: Doshi-Velez F, Fackler J, Jung K, et al. (eds) Proceedings of the 4th machine learning for healthcare conference. PMLR, Ann Arbor, pp 325–358"
+    },
+    {
+      "DOI": "10.1093/jamia/ocaa268",
+      "author": "TP Quinn",
+      "doi-asserted-by": "publisher",
+      "first-page": "890",
+      "journal-title": "J Am Med Inform Assoc",
+      "key": "2439_CR87",
+      "unstructured": "Quinn TP, Senadeera M, Jacobs S et al (2021) Trust and medical AI: the challenges we face and the expertise needed to overcome them. J Am Med Inform Assoc 28:890–894. https://doi.org/10.1093/jamia/ocaa268",
+      "volume": "28",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-019-10933-3",
+      "author": "L Rocher",
+      "doi-asserted-by": "publisher",
+      "first-page": "3069",
+      "journal-title": "Nat Commun",
+      "key": "2439_CR88",
+      "unstructured": "Rocher L, Hendrickx JM, de Montjoye Y-A (2019) Estimating the success of re-identifications in incomplete datasets using generative models. Nat Commun 10:3069. https://doi.org/10.1038/s41467-019-10933-3",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/0377-0427(87)90125-7",
+      "author": "PJ Rousseeuw",
+      "doi-asserted-by": "publisher",
+      "first-page": "53",
+      "journal-title": "J Comput Appl Math",
+      "key": "2439_CR89",
+      "unstructured": "Rousseeuw PJ (1987) Silhouettes: a graphical aid to the interpretation and validation of cluster analysis. J Comput Appl Math 20:53–65. https://doi.org/10.1016/0377-0427(87)90125-7",
+      "volume": "20",
+      "year": "1987"
+    },
+    {
+      "DOI": "10.1097/ACM.0b013e3181ccd618",
+      "author": "DM Rubio",
+      "doi-asserted-by": "publisher",
+      "first-page": "470",
+      "journal-title": "Acad Med J Assoc Am Med Coll",
+      "key": "2439_CR90",
+      "unstructured": "Rubio DM, Schoenbaum EE, Lee LS et al (2010) Defining translational research: implications for training. Acad Med J Assoc Am Med Coll 85:470–475. https://doi.org/10.1097/ACM.0b013e3181ccd618",
+      "volume": "85",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1016/j.csbj.2020.03.024",
+      "author": "P Rybakowska",
+      "doi-asserted-by": "publisher",
+      "first-page": "874",
+      "journal-title": "Comput Struct Biotechnol J",
+      "key": "2439_CR91",
+      "unstructured": "Rybakowska P, Alarcón-Riquelme ME, Marañón C (2020) Key steps and methods in the experimental design and data analysis of highly multi-parametric flow and mass cytometry. Comput Struct Biotechnol J 18:874–886. https://doi.org/10.1016/j.csbj.2020.03.024",
+      "volume": "18",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41587-019-0071-9",
+      "author": "W Saelens",
+      "doi-asserted-by": "publisher",
+      "first-page": "547",
+      "journal-title": "Nat Biotechnol",
+      "key": "2439_CR92",
+      "unstructured": "Saelens W, Cannoodt R, Todorov H, Saeys Y (2019) A comparison of single-cell trajectory inference methods. Nat Biotechnol 37:547–554. https://doi.org/10.1038/s41587-019-0071-9",
+      "volume": "37",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btm344",
+      "author": "Y Saeys",
+      "doi-asserted-by": "publisher",
+      "first-page": "2507",
+      "journal-title": "Bioinformatics",
+      "key": "2439_CR93",
+      "unstructured": "Saeys Y, Inza I, Larrañaga P (2007) A review of feature selection techniques in bioinformatics. Bioinformatics 23:2507–2517. https://doi.org/10.1093/bioinformatics/btm344",
+      "volume": "23",
+      "year": "2007"
+    },
+    {
+      "author": "M Savoy",
+      "first-page": "307",
+      "journal-title": "Am Fam Physician",
+      "key": "2439_CR94",
+      "unstructured": "Savoy M (2020) IDx-DR for diabetic retinopathy screening. Am Fam Physician 101:307–308",
+      "volume": "101",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s13023-020-01424-6",
+      "author": "J Schaefer",
+      "doi-asserted-by": "publisher",
+      "first-page": "145",
+      "journal-title": "Orphanet J Rare Dis",
+      "key": "2439_CR95",
+      "unstructured": "Schaefer J, Lehne M, Schepers J et al (2020) The use of machine learning in rare diseases: a scoping review. Orphanet J Rare Dis 15:145. https://doi.org/10.1186/s13023-020-01424-6",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1056/NEJMc1908881",
+      "author": "CG Schwarz",
+      "doi-asserted-by": "publisher",
+      "first-page": "1684",
+      "journal-title": "N Engl J Med",
+      "key": "2439_CR96",
+      "unstructured": "Schwarz CG, Kremers WK, Therneau TM et al (2019) Identification of anonymous MRI research participants with face-recognition software. N Engl J Med 381:1684–1686. https://doi.org/10.1056/NEJMc1908881",
+      "volume": "381",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12859-021-04067-x",
+      "author": "C Seiler",
+      "doi-asserted-by": "publisher",
+      "first-page": "137",
+      "journal-title": "BMC Bioinform",
+      "key": "2439_CR97",
+      "unstructured": "Seiler C, Ferreira A-M, Kronstad LM et al (2021) CytoGLMM: conditional differential analysis for flow and mass cytometry experiments. BMC Bioinform 22:137. https://doi.org/10.1186/s12859-021-04067-x",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btr502",
+      "author": "M Shi",
+      "doi-asserted-by": "publisher",
+      "first-page": "3017",
+      "journal-title": "Bioinformatics",
+      "key": "2439_CR98",
+      "unstructured": "Shi M, Zhang B (2011) Semi-supervised learning improves gene expression-based prediction of cancer recurrence. Bioinformatics 27:3017–3023. https://doi.org/10.1093/bioinformatics/btr502",
+      "volume": "27",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/nm0102-68",
+      "author": "MA Shipp",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "journal-title": "Nat Med",
+      "key": "2439_CR99",
+      "unstructured": "Shipp MA, Ross KN, Tamayo P et al (2002) Diffuse large B-cell lymphoma outcome prediction by gene-expression profiling and supervised machine learning. Nat Med 8:68–74. https://doi.org/10.1038/nm0102-68",
+      "volume": "8",
+      "year": "2002"
+    },
+    {
+      "DOI": "10.1016/j.jneumeth.2013.08.024",
+      "author": "PF Smith",
+      "doi-asserted-by": "publisher",
+      "first-page": "85",
+      "journal-title": "J Neurosci Methods",
+      "key": "2439_CR100",
+      "unstructured": "Smith PF, Ganesh S, Liu P (2013) A comparison of random forest regression and multiple linear regression for prediction in neuroscience. J Neurosci Methods 220:85–91. https://doi.org/10.1016/j.jneumeth.2013.08.024",
+      "volume": "220",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nrg3833",
+      "author": "O Stegle",
+      "doi-asserted-by": "publisher",
+      "first-page": "133",
+      "journal-title": "Nat Rev Genet",
+      "key": "2439_CR101",
+      "unstructured": "Stegle O, Teichmann SA, Marioni JC (2015) Computational and analytical challenges in single-cell transcriptomics. Nat Rev Genet 16:133–145. https://doi.org/10.1038/nrg3833",
+      "volume": "16",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s13059-018-1603-1",
+      "author": "M Stoeckius",
+      "doi-asserted-by": "publisher",
+      "first-page": "224",
+      "journal-title": "Genome Biol",
+      "key": "2439_CR102",
+      "unstructured": "Stoeckius M, Zheng S, Houck-Loomis B et al (2018) Cell Hashing with barcoded antibodies enables multiplexing and doublet detection for single cell genomics. Genome Biol 19:224. https://doi.org/10.1186/s13059-018-1603-1",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41598-019-45301-0",
+      "author": "B Szubert",
+      "doi-asserted-by": "publisher",
+      "first-page": "8914",
+      "journal-title": "Sci Rep",
+      "key": "2439_CR103",
+      "unstructured": "Szubert B, Cole JE, Monaco C, Drozdov I (2019) Structure-preserving visualisation of high dimensional single-cell datasets. Sci Rep 9:8914. https://doi.org/10.1038/s41598-019-45301-0",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3389/fgene.2019.00256",
+      "author": "AA Tabl",
+      "doi-asserted-by": "publisher",
+      "first-page": "256",
+      "journal-title": "Front Genet",
+      "key": "2439_CR104",
+      "unstructured": "Tabl AA, Alkhateeb A, ElMaraghy W et al (2019) A machine learning approach for identifying gene biomarkers guiding the treatment of breast cancer. Front Genet 10:256. https://doi.org/10.3389/fgene.2019.00256",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nmeth.1315",
+      "author": "F Tang",
+      "doi-asserted-by": "publisher",
+      "first-page": "377",
+      "journal-title": "Nat Methods",
+      "key": "2439_CR105",
+      "unstructured": "Tang F, Barbacioru C, Wang Y et al (2009) mRNA-Seq whole-transcriptome analysis of a single cell. Nat Methods 6:377–382. https://doi.org/10.1038/nmeth.1315",
+      "volume": "6",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41467-020-16937-8",
+      "author": "S Tarazona",
+      "doi-asserted-by": "publisher",
+      "first-page": "3092",
+      "journal-title": "Nat Commun",
+      "key": "2439_CR106",
+      "unstructured": "Tarazona S, Balzano-Nogueira L, Gómez-Cabrero D et al (2020) Harmonization of quality metrics and power calculation in multi-omic studies. Nat Commun 11:3092. https://doi.org/10.1038/s41467-020-16937-8",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00357-018-9299-1",
+      "author": "A Tharwat",
+      "doi-asserted-by": "publisher",
+      "first-page": "576",
+      "journal-title": "J Classif",
+      "key": "2439_CR107",
+      "unstructured": "Tharwat A, Hassanien AE (2019) Quantum-behaved particle swarm optimization for parameter optimization of support vector machine. J Classif 36:576–598. https://doi.org/10.1007/s00357-018-9299-1",
+      "volume": "36",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1111/j.2517-6161.1996.tb02080.x",
+      "author": "R Tibshirani",
+      "doi-asserted-by": "publisher",
+      "first-page": "267",
+      "journal-title": "J R Stat Soc Ser B Methodol",
+      "key": "2439_CR108",
+      "unstructured": "Tibshirani R (1996) Regression shrinkage and selection via the Lasso. J R Stat Soc Ser B Methodol 58:267–288. https://doi.org/10.1111/j.2517-6161.1996.tb02080.x",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1038/s41591-018-0300-7",
+      "author": "EJ Topol",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "journal-title": "Nat Med",
+      "key": "2439_CR109",
+      "unstructured": "Topol EJ (2019) High-performance medicine: the convergence of human and artificial intelligence. Nat Med 25:44–56. https://doi.org/10.1038/s41591-018-0300-7",
+      "volume": "25",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41598-019-41695-z",
+      "author": "VA Traag",
+      "doi-asserted-by": "publisher",
+      "first-page": "5233",
+      "journal-title": "Sci Rep",
+      "key": "2439_CR110",
+      "unstructured": "Traag VA, Waltman L, van Eck NJ (2019) From Louvain to Leiden: guaranteeing well-connected communities. Sci Rep 9:5233. https://doi.org/10.1038/s41598-019-41695-z",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s11548-018-1898-0",
+      "author": "H Uzunova",
+      "doi-asserted-by": "publisher",
+      "first-page": "451",
+      "journal-title": "Int J Comput Assist Radiol Surg",
+      "key": "2439_CR111",
+      "unstructured": "Uzunova H, Schultz S, Handels H, Ehrhardt J (2019) Unsupervised pathology detection in medical images using conditional variational autoencoders. Int J Comput Assist Radiol Surg 14:451–461. https://doi.org/10.1007/s11548-018-1898-0",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0224365",
+      "author": "A Vabalas",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS One",
+      "key": "2439_CR112",
+      "unstructured": "Vabalas A, Gowen E, Poliakoff E, Casson AJ (2019) Machine learning algorithm validation with a limited sample size. PLoS One 14:e0224365. https://doi.org/10.1371/journal.pone.0224365",
+      "volume": "14",
+      "year": "2019"
+    },
+    {
+      "author": "L van der Maaten",
+      "first-page": "2579",
+      "journal-title": "J Mach Learn Res",
+      "key": "2439_CR113",
+      "unstructured": "van der Maaten L, Hinton G (2008) Visualizing data using t-SNE. J Mach Learn Res 9:2579–2605",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.01.031",
+      "author": "P van Galen",
+      "doi-asserted-by": "publisher",
+      "first-page": "1265",
+      "journal-title": "Cell",
+      "key": "2439_CR114",
+      "unstructured": "van Galen P, Hovestadt V, Wadsworth MH II et al (2019) Single-cell RNA-Seq reveals AML hierarchies relevant to disease progression and immunity. Cell 176:1265-1281.e24. https://doi.org/10.1016/j.cell.2019.01.031",
+      "volume": "176",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/cyto.a.22625",
+      "author": "S Van Gassen",
+      "doi-asserted-by": "publisher",
+      "first-page": "636",
+      "journal-title": "Cytom Part J Int Soc Anal Cytol",
+      "key": "2439_CR115",
+      "unstructured": "Van Gassen S, Callebaut B, Van Helden MJ et al (2015) FlowSOM: using self-organizing maps for visualization and interpretation of cytometry data. Cytom Part J Int Soc Anal Cytol 87:636–645. https://doi.org/10.1002/cyto.a.22625",
+      "volume": "87",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.neuroimage.2017.06.061",
+      "author": "G Varoquaux",
+      "doi-asserted-by": "publisher",
+      "first-page": "68",
+      "journal-title": "Neuroimage",
+      "key": "2439_CR116",
+      "unstructured": "Varoquaux G (2018) Cross-validation failure: small sample sizes lead to large error bars. Neuroimage 180:68–77. https://doi.org/10.1016/j.neuroimage.2017.06.061",
+      "volume": "180",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1186/s12874-019-0802-0",
+      "author": "A Volkmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "162",
+      "journal-title": "BMC Med Res Methodol",
+      "key": "2439_CR117",
+      "unstructured": "Volkmann A, De Bin R, Sauerbrei W, Boulesteix A-L (2019) A plea for taking all available clinical information into account when assessing the predictive value of omics data. BMC Med Res Methodol 19:162. https://doi.org/10.1186/s12874-019-0802-0",
+      "volume": "19",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41592-021-01205-4",
+      "author": "I Walsh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1122",
+      "journal-title": "Nat Methods",
+      "key": "2439_CR118",
+      "unstructured": "Walsh I, Fishman D, Garcia-Gasulla D et al (2021) DOME: recommendations for supervised machine learning validation in biology. Nat Methods 18:1122–1127. https://doi.org/10.1038/s41592-021-01205-4",
+      "volume": "18",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1002/cpcy.14",
+      "author": "L Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "131",
+      "journal-title": "Curr Protoc Cytom",
+      "key": "2439_CR119",
+      "unstructured": "Wang L, Hoffman RA (2017) Standardization, calibration, and control in flow cytometry. Curr Protoc Cytom 79:131–1327. https://doi.org/10.1002/cpcy.14",
+      "volume": "79",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41467-021-22197-x",
+      "author": "J Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1882",
+      "journal-title": "Nat Commun",
+      "key": "2439_CR120",
+      "unstructured": "Wang J, Ma A, Chang Y et al (2021) scGNN is a novel graph neural network framework for single-cell RNA-Seq analyses. Nat Commun 12:1882. https://doi.org/10.1038/s41467-021-22197-x",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/bmj.l886",
+      "author": "DS Watson",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMJ",
+      "key": "2439_CR121",
+      "unstructured": "Watson DS, Krutzinna J, Bruce IN et al (2019) Clinical applications of machine learning algorithms: beyond the black box. BMJ 364:l886. https://doi.org/10.1136/bmj.l886",
+      "volume": "364",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/cyto.a.23030",
+      "author": "LM Weber",
+      "doi-asserted-by": "publisher",
+      "first-page": "1084",
+      "journal-title": "Cytometry A",
+      "key": "2439_CR122",
+      "unstructured": "Weber LM, Robinson MD (2016) Comparison of clustering methods for high-dimensional single-cell flow and mass cytometry data. Cytometry A 89:1084–1096. https://doi.org/10.1002/cyto.a.23030",
+      "volume": "89",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s42003-019-0415-5",
+      "author": "LM Weber",
+      "doi-asserted-by": "publisher",
+      "first-page": "183",
+      "journal-title": "Commun Biol",
+      "key": "2439_CR123",
+      "unstructured": "Weber LM, Nowicka M, Soneson C, Robinson MD (2019) diffcyt: Differential discovery in high-dimensional cytometry via high-resolution clustering. Commun Biol 2:183. https://doi.org/10.1038/s42003-019-0415-5",
+      "volume": "2",
+      "year": "2019"
+    },
+    {
+      "key": "2439_CR124",
+      "unstructured": "WIPO secretariat (2021) Revised issues paper on intellectual property policy and artificial intelligence. https://www.wipo.int/meetings/en/doc_details.jsp?doc_id=499504. Accessed 28 Apr 2021"
+    },
+    {
+      "DOI": "10.1038/nmeth.3583",
+      "author": "C Wiwie",
+      "doi-asserted-by": "publisher",
+      "first-page": "1033",
+      "journal-title": "Nat Methods",
+      "key": "2439_CR125",
+      "unstructured": "Wiwie C, Baumbach J, Röttger R (2015) Comparing the performance of biomedical clustering methods. Nat Methods 12:1033–1038. https://doi.org/10.1038/nmeth.3583",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41591-021-01312-x",
+      "author": "E Wu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Med",
+      "key": "2439_CR126",
+      "unstructured": "Wu E, Wu K, Daneshjou R et al (2021) How medical AI devices are evaluated: limitations and recommendations from an analysis of FDA approvals. Nat Med. https://doi.org/10.1038/s41591-021-01312-x",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1136/bmj.m1328",
+      "author": "L Wynants",
+      "doi-asserted-by": "publisher",
+      "journal-title": "BMJ",
+      "key": "2439_CR127",
+      "unstructured": "Wynants L, Calster BV, Collins GS et al (2020) Prediction models for diagnosis and prognosis of covid-19: systematic review and critical appraisal. BMJ 369:m1328. https://doi.org/10.1136/bmj.m1328",
+      "volume": "369",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cels.2020.11.008",
+      "author": "NM Xi",
+      "doi-asserted-by": "publisher",
+      "first-page": "176",
+      "journal-title": "Cell Syst",
+      "key": "2439_CR128",
+      "unstructured": "Xi NM, Li JJ (2021) Benchmarking computational doublet-detection methods for single-Cell RNA sequencing data. Cell Syst 12:176-194.e6. https://doi.org/10.1016/j.cels.2020.11.008",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.tranon.2020.100907",
+      "author": "Y Xie",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Transl Oncol",
+      "key": "2439_CR129",
+      "unstructured": "Xie Y, Meng W-Y, Li R-Z et al (2021) Early lung cancer diagnostic biomarker discovery by machine learning methods. Transl Oncol 14:100907. https://doi.org/10.1016/j.tranon.2020.100907",
+      "volume": "14",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.csbj.2021.05.038",
+      "author": "D Xiong",
+      "doi-asserted-by": "publisher",
+      "first-page": "3255",
+      "journal-title": "Comput Struct Biotechnol J",
+      "key": "2439_CR130",
+      "unstructured": "Xiong D, Zhang Z, Wang T, Wang X (2021) A comparative study of multiple instance learning methods for cancer detection using T-cell receptor sequences. Comput Struct Biotechnol J 19:3255–3268. https://doi.org/10.1016/j.csbj.2021.05.038",
+      "volume": "19",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/nm843",
+      "author": "Q-H Ye",
+      "doi-asserted-by": "publisher",
+      "first-page": "416",
+      "journal-title": "Nat Med",
+      "key": "2439_CR131",
+      "unstructured": "Ye Q-H, Qin L-X, Forgues M et al (2003) Predicting hepatitis B virus-positive metastatic hepatocellular carcinomas using gene expression profiling and supervised machine learning. Nat Med 9:416–423. https://doi.org/10.1038/nm843",
+      "volume": "9",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1002683",
+      "author": "JR Zech",
+      "doi-asserted-by": "publisher",
+      "journal-title": "PLoS Med",
+      "key": "2439_CR132",
+      "unstructured": "Zech JR, Badgeley MA, Liu M et al (2018) Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs: a cross-sectional study. PLoS Med 15:e1002683. https://doi.org/10.1371/journal.pmed.1002683",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.eswa.2020.113411",
+      "author": "X Zhai",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Expert Syst Appl",
+      "key": "2439_CR133",
+      "unstructured": "Zhai X, Zhou Z, Tin C (2020) Semi-supervised learning for ECG classification without patient-specific labeled data. Expert Syst Appl 158:113411. https://doi.org/10.1016/j.eswa.2020.113411",
+      "volume": "158",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.10.003",
+      "author": "Q Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "829",
+      "journal-title": "Cell",
+      "key": "2439_CR134",
+      "unstructured": "Zhang Q, He Y, Luo N et al (2019) Landscape and dynamics of single immune cells in hepatocellular carcinoma. Cell 179:829-845.e20. https://doi.org/10.1016/j.cell.2019.10.003",
+      "volume": "179",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/sim.3720",
+      "author": "Y Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "3294",
+      "journal-title": "Stat Med",
+      "key": "2439_CR135",
+      "unstructured": "Zhao Y, Kosorok MR, Zeng D (2009) Reinforcement learning design for cancer clinical trials. Stat Med 28:3294–3315. https://doi.org/10.1002/sim.3720",
+      "volume": "28",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.2200/S00196ED1V01Y200906AIM006",
+      "author": "X Zhu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Synth Lect Artif Intell Mach Learn",
+      "key": "2439_CR136",
+      "unstructured": "Zhu X, Goldberg AB (2009) Introduction to semi-supervised learning. Synth Lect Artif Intell Mach Learn 3:1–130. https://doi.org/10.2200/S00196ED1V01Y200906AIM006",
+      "volume": "3",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "author": "H Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "301",
+      "journal-title": "J R Stat Soc Ser B Stat Methodol",
+      "key": "2439_CR137",
+      "unstructured": "Zou H, Hastie T (2005) Regularization and variable selection via the elastic net. J R Stat Soc Ser B Stat Methodol 67:301–320. https://doi.org/10.1111/j.1467-9868.2005.00503.x",
+      "volume": "67",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1007/s11684-020-0754-0",
+      "author": "X Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "185",
+      "journal-title": "Front Med",
+      "key": "2439_CR138",
+      "unstructured": "Zou X, Chen K, Zou J et al (2020) Single-cell RNA-seq data analysis on the receptor ACE2 expression reveals the potential risk of different human organs vulnerable to 2019-nCoV infection. Front Med 14:185–192. https://doi.org/10.1007/s11684-020-0754-0",
+      "volume": "14",
+      "year": "2020"
+    }
+  ],
+  "reference-count": 138,
+  "references-count": 138,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-022-02439-8"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Challenges in translational machine learning"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "141"
+}

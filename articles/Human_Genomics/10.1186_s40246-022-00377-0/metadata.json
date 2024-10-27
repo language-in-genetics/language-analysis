@@ -1,0 +1,862 @@
+{
+  "DOI": "10.1186/s40246-022-00377-0",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-022-00377-0",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eBackground\u003c/jats:title\u003e\n                \u003cjats:p\u003eAerobic glycolysis is an emerging hallmark of cancer. Although some studies have constructed glycolysis-related prognostic models of colon adenocarcinoma (COAD) based on The Cancer Genome Atlas (TCGA) database, whether the COAD glycolysis-related prognostic model is appropriate for distinguishing the prognosis of rectal adenocarcinoma (READ) patients remains unknown. Exploring critical and specific glycolytic genes related to READ prognosis may help us discover new potential therapeutic targets for READ patients.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eResults\u003c/jats:title\u003e\n                \u003cjats:p\u003eThree gene sets, HALLMARK_GLYCOLYSIS, REACTOME_GLYCOLYSIS and REACTOME_REGULATION_OF_GLYCOLYSIS_BY_FRUCTOSE_2_6_BISPHOSPHATE_METABOLISM, were both significantly enriched in both COAD and READ through glycolysis-related gene set enrichment analysis (GSEA). We found that six genes (\u003cjats:italic\u003eANKZF1, STC2, SUCLG2P2, P4HA1, GPC1\u003c/jats:italic\u003e and \u003cjats:italic\u003ePCK1\u003c/jats:italic\u003e) were independent prognostic genes in COAD, while \u003cjats:italic\u003eTSTA3\u003c/jats:italic\u003e and \u003cjats:italic\u003ePKP2\u003c/jats:italic\u003e were independent prognostic genes in READ. Glycolysis-related prognostic model of COAD and READ was, respectively, constructed and assessed in COAD and READ. We found that the glycolysis-related prognostic model of COAD was not appropriate for READ, while glycolysis-related prognostic model of READ was more appropriate for READ than for COAD. PCA and t-SNE analysis confirmed that READ patients in two groups (high and low risk score groups) were distributed in discrete directions based on the glycolysis-related prognostic model of READ. We found that this model was an independent prognostic indicator through multivariate Cox analysis, and it still showed robust effectiveness in different age, gender, M stage, and TNM stage. A nomogram combining the risk model of READ with clinicopathological characteristics was established to provide oncologists with a practical tool to evaluate the rectal cancer outcomes. GO enrichment and KEGG analyses confirmed that differentially expressed genes (DEGs) were enriched in several glycolysis-related molecular functions or pathways based on glycolysis-related prognostic model of READ.\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e\u003cjats:sec\u003e\n                \u003cjats:title\u003eConclusions\u003c/jats:title\u003e\n                \u003cjats:p\u003eWe found that a glycolysis-related prognostic model of COAD was not appropriate for READ, and we established a novel glycolysis-related two-gene risk model to effectively predict the prognosis of rectal cancer patients.\n\u003c/jats:p\u003e\n              \u003c/jats:sec\u003e",
+  "alternative-id": [
+    "377"
+  ],
+  "article-number": "5",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "5 May 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "3 December 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "2 February 2022"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "All authors of this paper consent for publishing the manuscript and figures in the journal."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 4,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Zhenzhen",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Zhentao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhou",
+      "given": "Xin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lu",
+      "given": "Yongqu",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Yao",
+      "given": "Yanhong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Wendong",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Lu",
+      "given": "Siyi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wang",
+      "given": "Bingyan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Li",
+      "given": "Fei",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fu",
+      "given": "Wei",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        2
+      ]
+    ],
+    "date-time": "2022-02-02T13:02:46Z",
+    "timestamp": 1643806966000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        24
+      ]
+    ],
+    "date-time": "2022-10-24T20:07:35Z",
+    "timestamp": 1666642055000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "No.81672361",
+        "No.81972702"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Natural Science Foundation of China"
+    },
+    {
+      "DOI": "10.13039/501100001809",
+      "award": [
+        "No.82002535"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "National Natural Science Foundation of China"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        29
+      ]
+    ],
+    "date-time": "2024-04-29T00:52:56Z",
+    "timestamp": 1714351976308
+  },
+  "is-referenced-by-count": 9,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            2
+          ]
+        ],
+        "date-time": "2022-02-02T00:00:00Z",
+        "timestamp": 1643760000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            2
+          ]
+        ],
+        "date-time": "2022-02-02T00:00:00Z",
+        "timestamp": 1643760000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00377-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-022-00377-0/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-022-00377-0.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2022,
+        2,
+        2
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1001/jamaoncol.2015.0735",
+      "author": "C Fitzmaurice",
+      "doi-asserted-by": "publisher",
+      "first-page": "505",
+      "issue": "4",
+      "journal-title": "JAMA Oncol",
+      "key": "377_CR1",
+      "unstructured": "Fitzmaurice C, Dicker D, Pain A, Hamavid H, Moradi-Lakeh M, MacIntyre MF, et al. The global burden of cancer 2013. JAMA Oncol. 2015;1(4):505–27.",
+      "volume": "1",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2020.02.068",
+      "author": "M Arnold",
+      "doi-asserted-by": "publisher",
+      "first-page": "335",
+      "issue": "1",
+      "journal-title": "Gastroenterology",
+      "key": "377_CR2",
+      "unstructured": "Arnold M, Abnet CC, Neale RE, Vignat J, Giovannucci EL, McGlynn KA, et al. Global burden of 5 major types of gastrointestinal cancer. Gastroenterology. 2020;159(1):335-49.e15.",
+      "volume": "159",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(19)32319-0",
+      "author": "E Dekker",
+      "doi-asserted-by": "publisher",
+      "first-page": "1467",
+      "issue": "10207",
+      "journal-title": "Lancet",
+      "key": "377_CR3",
+      "unstructured": "Dekker E, Tanis PJ, Vleugels JLA, Kasi PM, Wallace MB. Colorectal cancer. Lancet. 2019;394(10207):1467–80.",
+      "volume": "394",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s11864-017-0500-2",
+      "author": "Y Deng",
+      "doi-asserted-by": "publisher",
+      "first-page": "64",
+      "issue": "10",
+      "journal-title": "Curr Treat Options Oncol",
+      "key": "377_CR4",
+      "unstructured": "Deng Y. Rectal cancer in Asian vs. western countries: why the variation in incidence? Curr Treat Options Oncol. 2017;18(10):64.",
+      "volume": "18",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41575-019-0189-8",
+      "author": "N Keum",
+      "doi-asserted-by": "publisher",
+      "first-page": "713",
+      "issue": "12",
+      "journal-title": "Nat Rev Gastroenterol Hepatol",
+      "key": "377_CR5",
+      "unstructured": "Keum N, Giovannucci E. Global burden of colorectal cancer: emerging trends, risk factors and prevention strategies. Nat Rev Gastroenterol Hepatol. 2019;16(12):713–32.",
+      "volume": "16",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1136/gutjnl-2015-310912",
+      "author": "M Arnold",
+      "doi-asserted-by": "publisher",
+      "first-page": "683",
+      "issue": "4",
+      "journal-title": "Gut",
+      "key": "377_CR6",
+      "unstructured": "Arnold M, Sierra MS, Laversanne M, Soerjomataram I, Jemal A, Bray F. Global patterns and trends in colorectal cancer incidence and mortality. Gut. 2017;66(4):683–91.",
+      "volume": "66",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/S2468-1253(19)30345-0",
+      "author": "Collaborators GBDCC",
+      "doi-asserted-by": "publisher",
+      "first-page": "913",
+      "issue": "12",
+      "journal-title": "Lancet Gastroenterol Hepatol",
+      "key": "377_CR7",
+      "unstructured": "Collaborators GBDCC. The global, regional, and national burden of colorectal cancer and its attributable risk factors in 195 countries and territories, 1990–2017: a systematic analysis for the Global Burden of Disease Study 2017. Lancet Gastroenterol Hepatol. 2019;4(12):913–33.",
+      "volume": "4",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3322/caac.21338",
+      "author": "W Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "115",
+      "issue": "2",
+      "journal-title": "CA Cancer J Clin",
+      "key": "377_CR8",
+      "unstructured": "Chen W, Zheng R, Baade PD, Zhang S, Zeng H, Bray F, et al. Cancer statistics in China, 2015. CA Cancer J Clin. 2016;66(2):115–32.",
+      "volume": "66",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/nature11252",
+      "author": "Cancer Genome Atlas N",
+      "doi-asserted-by": "publisher",
+      "first-page": "330",
+      "issue": "7407",
+      "journal-title": "Nature",
+      "key": "377_CR9",
+      "unstructured": "Cancer Genome Atlas N. Comprehensive molecular characterization of human colon and rectal cancer. Nature. 2012;487(7407):330–7.",
+      "volume": "487",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/nm.3174",
+      "author": "EMF De Sousa",
+      "doi-asserted-by": "publisher",
+      "first-page": "614",
+      "issue": "5",
+      "journal-title": "Nat Med",
+      "key": "377_CR10",
+      "unstructured": "De Sousa EMF, Wang X, Jansen M, Fessler E, Trinh A, de Rooij LP, et al. Poor-prognosis colon cancer is defined by a molecularly distinct subtype and develops from serrated precursor lesions. Nat Med. 2013;19(5):614–8.",
+      "volume": "19",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/nm.3967",
+      "author": "J Guinney",
+      "doi-asserted-by": "publisher",
+      "first-page": "1350",
+      "issue": "11",
+      "journal-title": "Nat Med",
+      "key": "377_CR11",
+      "unstructured": "Guinney J, Dienstmann R, Wang X, de Reyniès A, Schlicker A, Soneson C, et al. The consensus molecular subtypes of colorectal cancer. Nat Med. 2015;21(11):1350–6.",
+      "volume": "21",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/nm.3175",
+      "author": "A Sadanandam",
+      "doi-asserted-by": "publisher",
+      "first-page": "619",
+      "issue": "5",
+      "journal-title": "Nat Med",
+      "key": "377_CR12",
+      "unstructured": "Sadanandam A, Lyssiotis CA, Homicsko K, Collisson EA, Gibb WJ, Wullschleger S, et al. A colorectal cancer classification system that associates cellular phenotype and responses to therapy. Nat Med. 2013;19(5):619–25.",
+      "volume": "19",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/jcp.27154",
+      "author": "G Sun",
+      "doi-asserted-by": "publisher",
+      "first-page": "3829",
+      "issue": "4",
+      "journal-title": "J Cell Physiol",
+      "key": "377_CR13",
+      "unstructured": "Sun G, Li Y, Peng Y, Lu D, Zhang F, Cui X, et al. Identification of a five-gene signature with prognostic value in colorectal cancer. J Cell Physiol. 2019;234(4):3829–36.",
+      "volume": "234",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1042/BSR20201427",
+      "author": "S Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "BSR20201427",
+      "issue": "8",
+      "journal-title": "Biosci Rep",
+      "key": "377_CR14",
+      "unstructured": "Chen S, Cao G, Wu W, Lu Y, He X, Yang L, et al. Mining novel cell glycolysis related gene markers that can predict the survival of colon adenocarcinoma patients. Biosci Rep. 2020;40(8):BSR20201427.",
+      "volume": "40",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/nrc.2016.126",
+      "author": "R Dienstmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "79",
+      "issue": "2",
+      "journal-title": "Nat Rev Cancer",
+      "key": "377_CR15",
+      "unstructured": "Dienstmann R, Vermeulen L, Guinney J, Kopetz S, Tejpar S, Tabernero J. Consensus molecular subtypes and the evolution of precision medicine in colorectal cancer. Nat Rev Cancer. 2017;17(2):79–92.",
+      "volume": "17",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.cell.2011.02.013",
+      "author": "D Hanahan",
+      "doi-asserted-by": "publisher",
+      "first-page": "646",
+      "issue": "5",
+      "journal-title": "Cell",
+      "key": "377_CR16",
+      "unstructured": "Hanahan D, Weinberg RA. Hallmarks of cancer: the next generation. Cell. 2011;144(5):646–74.",
+      "volume": "144",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1126/science.1160809",
+      "author": "MG Vander Heiden",
+      "doi-asserted-by": "publisher",
+      "first-page": "1029",
+      "issue": "5930",
+      "journal-title": "Science",
+      "key": "377_CR17",
+      "unstructured": "Vander Heiden MG, Cantley LC, Thompson CB. Understanding the Warburg effect: the metabolic requirements of cell proliferation. Science. 2009;324(5930):1029–33.",
+      "volume": "324",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1016/j.cmet.2015.12.006",
+      "author": "N Pavlova Natalya",
+      "doi-asserted-by": "publisher",
+      "first-page": "27",
+      "issue": "1",
+      "journal-title": "Cell Metab",
+      "key": "377_CR18",
+      "unstructured": "Pavlova Natalya N, Thompson CB. The emerging hallmarks of cancer metabolism. Cell Metab. 2016;23(1):27–47.",
+      "volume": "23",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1073/pnas.0506580102",
+      "author": "A Subramanian",
+      "doi-asserted-by": "publisher",
+      "first-page": "15545",
+      "issue": "43",
+      "journal-title": "Proc Natl Acad Sci U S A",
+      "key": "377_CR19",
+      "unstructured": "Subramanian A, Tamayo P, Mootha VK, Mukherjee S, Ebert BL, Gillette MA, et al. Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci U S A. 2005;102(43):15545–50.",
+      "volume": "102",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1002/jcp.26917",
+      "author": "G Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "348",
+      "issue": "1",
+      "journal-title": "J Cell Physiol",
+      "key": "377_CR20",
+      "unstructured": "Wang G, Wang JJ, Yin PH, Xu K, Wang YZ, Shi F, et al. New strategies for targeting glucose metabolism-mediated acidosis for colorectal cancer therapy. J Cell Physiol. 2018;234(1):348–68.",
+      "volume": "234",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.15252/embj.201488598",
+      "author": "KT Pate",
+      "doi-asserted-by": "publisher",
+      "first-page": "1454",
+      "issue": "13",
+      "journal-title": "EMBO J",
+      "key": "377_CR21",
+      "unstructured": "Pate KT, Stringari C, Sprowl-Tanio S, Wang K, TeSlaa T, Hoverter NP, et al. Wnt signaling directs a metabolic program of glycolysis and angiogenesis in colon cancer. EMBO J. 2014;33(13):1454–73.",
+      "volume": "33",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1097/SLA.0000000000003228",
+      "author": "K Harada",
+      "doi-asserted-by": "publisher",
+      "first-page": "311",
+      "issue": "2",
+      "journal-title": "Ann Surg",
+      "key": "377_CR22",
+      "unstructured": "Harada K, Wu CC, Wang X, Mizrak Kaya D, Amlashi FG, Iwatsuki M, et al. Total lesion glycolysis assessment identifies a patient fraction with a high cure rate among esophageal adenocarcinoma patients treated with definitive chemoradiation. Ann Surg. 2020;272(2):311–8.",
+      "volume": "272",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/15384101.2019.1578146",
+      "author": "C Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "568",
+      "issue": "5",
+      "journal-title": "Cell Cycle",
+      "key": "377_CR23",
+      "unstructured": "Liu C, Li Y, Wei M, Zhao L, Yu Y, Li G. Identification of a novel glycolysis-related gene signature that can predict the survival of patients with lung adenocarcinoma. Cell Cycle. 2019;18(5):568–79.",
+      "volume": "18",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12935-016-0378-2",
+      "author": "J Liu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Cancer Cell Int",
+      "key": "377_CR24",
+      "unstructured": "Liu J, Li S, Feng G, Meng H, Nie S, Sun R, et al. Nine glycolysis-related gene signature predicting the survival of patients with endometrial adenocarcinoma. Cancer Cell Int. 2020;20(1):1–8.",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12885-019-6482-7",
+      "author": "HY Suh",
+      "doi-asserted-by": "publisher",
+      "first-page": "1260",
+      "issue": "1",
+      "journal-title": "BMC Cancer",
+      "key": "377_CR25",
+      "unstructured": "Suh HY, Choi H, Paeng JC, Cheon GJ, Chung JK, Kang KW. Comprehensive gene expression analysis for exploring the association between glucose metabolism and differentiation of thyroid cancer. BMC Cancer. 2019;19(1):1260.",
+      "volume": "19",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1089/dna.2019.5089",
+      "author": "G Tian",
+      "doi-asserted-by": "publisher",
+      "first-page": "417",
+      "issue": "3",
+      "journal-title": "DNA Cell Biol",
+      "key": "377_CR26",
+      "unstructured": "Tian G, Li G, Liu P, Wang Z, Li N. Glycolysis-based genes associated with the clinical outcome of pancreatic ductal adenocarcinoma identified by the cancer genome atlas data analysis. DNA Cell Biol. 2020;39(3):417–27.",
+      "volume": "39",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1186/s12935-020-01255-2",
+      "author": "C Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "177",
+      "journal-title": "Cancer Cell Int",
+      "key": "377_CR27",
+      "unstructured": "Zhang C, Gou X, He W, Yang H, Yin H. A glycolysis-based 4-mRNA signature correlates with the prognosis and cell cycle process in patients with bladder cancer. Cancer Cell Int. 2020;20:177.",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s00441-011-1314-3",
+      "author": "S Rickelt",
+      "doi-asserted-by": "publisher",
+      "first-page": "281",
+      "issue": "2",
+      "journal-title": "Cell Tissue Res",
+      "key": "377_CR28",
+      "unstructured": "Rickelt S. Plakophilin-2: a cell-cell adhesion plaque molecule of selective and fundamental importance in cardiac functions and tumor cell growth. Cell Tissue Res. 2012;348(2):281–94.",
+      "volume": "348",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/j.prp.2019.152438",
+      "author": "XL Hao",
+      "doi-asserted-by": "publisher",
+      "first-page": "152438",
+      "issue": "7",
+      "journal-title": "Pathol Res Pract",
+      "key": "377_CR29",
+      "unstructured": "Hao XL, Tian Z, Han F, Chen JP, Gao LY, Liu JY. Plakophilin-2 accelerates cell proliferation and migration through activating EGFR signaling in lung adenocarcinoma. Pathol Res Pract. 2019;215(7):152438.",
+      "volume": "215",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1186/s12935-020-01602-3",
+      "author": "L Gao",
+      "doi-asserted-by": "publisher",
+      "first-page": "509",
+      "journal-title": "Cancer Cell Int",
+      "key": "377_CR30",
+      "unstructured": "Gao L, Li X, Guo Q, Nie X, Hao Y, Liu Q, et al. Identification of PKP 2/3 as potential biomarkers of ovarian cancer based on bioinformatics and experiments. Cancer Cell Int. 2020;20:509.",
+      "volume": "20",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1111/neup.12363",
+      "author": "D Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "207",
+      "issue": "3",
+      "journal-title": "Neuropathology",
+      "key": "377_CR31",
+      "unstructured": "Zhang D, Qian Y, Liu X, Yu H, Zhao N, Wu Z. Up-regulation of plakophilin-2 is correlated with the progression of glioma. Neuropathology. 2017;37(3):207–16.",
+      "volume": "37",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.urology.2011.08.049",
+      "author": "H Takahashi",
+      "doi-asserted-by": "publisher",
+      "first-page": "240.e1",
+      "issue": "1",
+      "journal-title": "Urology",
+      "key": "377_CR32",
+      "unstructured": "Takahashi H, Nakatsuji H, Takahashi M, Avirmed S, Fukawa T, Takemura M, et al. Up-regulation of plakophilin-2 and Down-regulation of plakophilin-3 are correlated with invasiveness in bladder cancer. Urology. 2012;79(1):240.e1-8.",
+      "volume": "79",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1128/MCB.00758-14",
+      "author": "K Arimoto",
+      "doi-asserted-by": "publisher",
+      "first-page": "3843",
+      "issue": "20",
+      "journal-title": "Mol Cell Biol",
+      "key": "377_CR33",
+      "unstructured": "Arimoto K, Burkart C, Yan M, Ran D, Weng S, Zhang DE. Plakophilin-2 promotes tumor development by enhancing ligand-dependent and -independent epidermal growth factor receptor dimerization and activation. Mol Cell Biol. 2014;34(20):3843–54.",
+      "volume": "34",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1002/ijc.31104",
+      "author": "N Niell",
+      "doi-asserted-by": "publisher",
+      "first-page": "792",
+      "issue": "4",
+      "journal-title": "Int J Cancer",
+      "key": "377_CR34",
+      "unstructured": "Niell N, Larriba MJ, Ferrer-Mayorga G, Sanchez-Perez I, Cantero R, Real FX, et al. The human PKP2/plakophilin-2 gene is induced by Wnt/beta-catenin in normal and colon cancer-associated fibroblasts. Int J Cancer. 2018;142(4):792–804.",
+      "volume": "142",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1074/jbc.271.44.27274",
+      "author": "M Tonetti",
+      "doi-asserted-by": "publisher",
+      "first-page": "27274",
+      "issue": "44",
+      "journal-title": "J Biol Chem",
+      "key": "377_CR35",
+      "unstructured": "Tonetti M, Sturla L, Bisso A, Benatti U, De Flora A. Synthesis of GDP-L-fucose by the human FX protein. J Biol Chem. 1996;271(44):27274–9.",
+      "volume": "271",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1093/abbs/gmt066",
+      "author": "H Zhou",
+      "doi-asserted-by": "publisher",
+      "first-page": "720",
+      "issue": "9",
+      "journal-title": "Acta Biochim Biophys Sin (Shanghai)",
+      "key": "377_CR36",
+      "unstructured": "Zhou H, Sun L, Li J, Xu C, Yu F, Liu Y, et al. The crystal structure of human GDP-L-fucose synthase. Acta Biochim Biophys Sin (Shanghai). 2013;45(9):720–5.",
+      "volume": "45",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/jb/mvn011",
+      "author": "E Miyoshi",
+      "doi-asserted-by": "publisher",
+      "first-page": "725",
+      "issue": "6",
+      "journal-title": "J Biochem",
+      "key": "377_CR37",
+      "unstructured": "Miyoshi E, Moriwaki K, Nakagawa T. Biological function of fucosylation in cancer biology. J Biochem. 2008;143(6):725–9.",
+      "volume": "143",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.3390/biom2010034",
+      "author": "E Miyoshi",
+      "doi-asserted-by": "publisher",
+      "first-page": "34",
+      "issue": "1",
+      "journal-title": "Biomolecules",
+      "key": "377_CR38",
+      "unstructured": "Miyoshi E, Moriwaki K, Terao N, Tan CC, Terao M, Nakagawa T, et al. Fucosylation is a promising target for cancer diagnosis and therapy. Biomolecules. 2012;2(1):34–45.",
+      "volume": "2",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1016/bs.pmbts.2019.01.002",
+      "author": "M Shan",
+      "doi-asserted-by": "publisher",
+      "first-page": "93",
+      "journal-title": "Prog Mol Biol Transl Sci",
+      "key": "377_CR39",
+      "unstructured": "Shan M, Yang D, Dou H, Zhang L. Fucosylation in cancer biology and its clinical applications. Prog Mol Biol Transl Sci. 2019;162:93–119.",
+      "volume": "162",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1515/cclm-2018-0379",
+      "author": "M Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "407",
+      "issue": "4",
+      "journal-title": "Clin Chem Lab Med",
+      "key": "377_CR40",
+      "unstructured": "Wang M, Zhu J, Lubman DM, Gao C. Aberrant glycosylation and cancer biomarker discovery: a promising and thorny journey. Clin Chem Lab Med. 2019;57(4):407–16.",
+      "volume": "57",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.7150/thno.48225",
+      "author": "L Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "11339",
+      "issue": "24",
+      "journal-title": "Theranostics",
+      "key": "377_CR41",
+      "unstructured": "Zhang L, Gao Y, Zhang X, Guo M, Yang J, Cui H, et al. TSTA3 facilitates esophageal squamous cell carcinoma progression through regulating fucosylation of LAMP2 and ERBB2. Theranostics. 2020;10(24):11339–58.",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1177/1533033818781405",
+      "author": "J Yang",
+      "doi-asserted-by": "publisher",
+      "first-page": "153303381878140",
+      "journal-title": "Technol Cancer Res Treat",
+      "key": "377_CR42",
+      "unstructured": "Yang J, Kong P, Yang J, Jia Z, Hu X, Wang Z, et al. High TSTA3 expression as a candidate biomarker for poor prognosis of patients with ESCC. Technol Cancer Res Treat. 2018;17:1533033818781405.",
+      "volume": "17",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1053/j.gastro.2016.09.004",
+      "author": "Y Wang",
+      "doi-asserted-by": "publisher",
+      "first-page": "193",
+      "issue": "1",
+      "journal-title": "Gastroenterology",
+      "key": "377_CR43",
+      "unstructured": "Wang Y, Huang D, Chen KY, Cui M, Wang W, Huang X, et al. Fucosylation deficiency in mice leads to colitis and adenocarcinoma. Gastroenterology. 2017;152(1):193-205e10.",
+      "volume": "152",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0094536",
+      "author": "YP Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "e94536",
+      "issue": "4",
+      "journal-title": "PLoS ONE",
+      "key": "377_CR44",
+      "unstructured": "Zhao YP, Xu XY, Fang M, Wang H, You Q, Yi CH, et al. Decreased core-fucosylation contributes to malignancy in gastric cancer. PLoS ONE. 2014;9(4):e94536.",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.3748/wjg.v25.i23.2947",
+      "author": "PA Norton",
+      "doi-asserted-by": "publisher",
+      "first-page": "2947",
+      "issue": "23",
+      "journal-title": "World J Gastroenterol",
+      "key": "377_CR45",
+      "unstructured": "Norton PA, Mehta AS. Expression of genes that control core fucosylation in hepatocellular carcinoma: systematic review. World J Gastroenterol. 2019;25(23):2947–60.",
+      "volume": "25",
+      "year": "2019"
+    }
+  ],
+  "reference-count": 45,
+  "references-count": 45,
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-022-00377-0"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "A glycolysis-related two-gene risk model that can effectively predict the prognosis of patients with rectal cancer"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "16"
+}

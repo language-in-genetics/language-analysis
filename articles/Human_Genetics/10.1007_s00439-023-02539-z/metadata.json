@@ -1,0 +1,748 @@
+{
+  "DOI": "10.1007/s00439-023-02539-z",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-023-02539-z",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eDNA variants altering the pre-mRNA splicing process represent an underestimated cause of human genetic diseases. Their association with disease traits should be confirmed using functional assays from patient cell lines or alternative models to detect aberrant mRNAs. Long-read sequencing is a suitable technique to identify and quantify mRNA isoforms. Available isoform detection and/or quantification tools are generally designed for the whole transcriptome analysis. However experiments focusing on genes of interest need more precise data fine-tuning and visualization tools.\u003c/jats:p\u003e\u003cjats:p\u003eHere we describe VIsoQLR, an interactive analyzer, viewer and editor for the semi-automated identification and quantification of known and novel isoforms using long-read sequencing data. VIsoQLR is tailored to thoroughly analyze mRNA expression in splicing assays of selected genes. Our tool takes sequences aligned to a reference, and for each gene, it defines consensus splice sites and quantifies isoforms. VIsoQLR introduces features to edit the splice sites through dynamic and interactive graphics and tables, allowing accurate manual curation. Known isoforms detected by other methods can also be imported as references for comparison. A benchmark against two other popular transcriptome-based tools shows VIsoQLR accurate performance on both detection and quantification of isoforms. Here, we present VIsoQLR principles and features and its applicability in a case study example using nanopore-based long-read sequencing. VIsoQLR is available at \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/TBLabFJD/VIsoQLR\"\u003ehttps://github.com/TBLabFJD/VIsoQLR\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2539"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "2 December 2022"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "23 February 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "7 March 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Date",
+      "name": "change_date",
+      "order": 4,
+      "value": "4 July 2023"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Type",
+      "name": "change_type",
+      "order": 5,
+      "value": "Correction"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 6,
+      "value": "A Correction to this paper has been published:"
+    },
+    {
+      "URL": "https://doi.org/10.1007/s00439-023-02574-w",
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Change Details",
+      "name": "change_details",
+      "order": 7,
+      "value": "https://doi.org/10.1007/s00439-023-02574-w"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "On behalf of all authors, the corresponding author states that there is no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-5982-570X",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Núñez-Moreno",
+      "given": "Gonzalo",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Tamayo",
+      "given": "Alejandra",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Ruiz-Sánchez",
+      "given": "Carolina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cortón",
+      "given": "Marta",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Mínguez",
+      "given": "Pablo",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        7
+      ]
+    ],
+    "date-time": "2023-03-07T07:04:00Z",
+    "timestamp": 1678172640000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        7,
+        5
+      ]
+    ],
+    "date-time": "2023-07-05T06:09:27Z",
+    "timestamp": 1688537367000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100004587",
+      "award": [
+        "PI17/00164",
+        "PI18/00579",
+        "PI20/00851",
+        "IMP/00019",
+        "CP16/00116",
+        "CPII21/00015",
+        "CPII17/00006"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Instituto de Salud Carlos III"
+    },
+    {
+      "award": [
+        "06/07/0036"
+      ],
+      "name": "Centro de Investigación Biomédica en Red de Enfermedades Raras"
+    },
+    {
+      "DOI": "10.13039/100012818",
+      "award": [
+        "RAREGenomics Project",
+        "B2017/BMD-3721",
+        "PEJ-2020-AI/BMD-18610"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Comunidad de Madrid"
+    },
+    {
+      "name": "Organización Nacional de Ciegos Españoles"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        26
+      ]
+    ],
+    "date-time": "2024-03-26T12:21:21Z",
+    "timestamp": 1711455681556
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        7
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          4
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            7
+          ]
+        ],
+        "date-time": "2023-03-07T00:00:00Z",
+        "timestamp": 1678147200000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            7
+          ]
+        ],
+        "date-time": "2023-03-07T00:00:00Z",
+        "timestamp": 1678147200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02539-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-023-02539-z/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-023-02539-z.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "495-506",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        7
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2023,
+        3,
+        7
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        4
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1038/ncomms11706",
+      "author": "SE Abdel-Ghany",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "2539_CR1",
+      "unstructured": "Abdel-Ghany SE, Hamilton M, Jacobi JL et al (2016) A survey of the sorghum transcriptome using single-molecule long reads. Nat Commun. https://doi.org/10.1038/ncomms11706",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13059-020-1935-5",
+      "author": "SL Amarasinghe",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "journal-title": "Genome Biol",
+      "key": "2539_CR2",
+      "unstructured": "Amarasinghe SL, Su S, Dong X et al (2020) Opportunities and challenges in long-read sequencing data analysis. Genome Biol 21:1–16. https://doi.org/10.1186/s13059-020-1935-5",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s13353-018-0444-7",
+      "author": "A Anna",
+      "doi-asserted-by": "publisher",
+      "first-page": "253",
+      "journal-title": "J Appl Genet",
+      "key": "2539_CR3",
+      "unstructured": "Anna A, Monika G (2018) Splicing mutations in human genetic disorders: examples, detection, and confirmation. J Appl Genet 59:253–268. https://doi.org/10.1007/s13353-018-0444-7",
+      "volume": "59",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/J.OFTALE.2021.02.002",
+      "author": "F Blanco-Kelly",
+      "doi-asserted-by": "publisher",
+      "first-page": "4",
+      "issue": "Suppl 1",
+      "journal-title": "Arch Soc Esp Oftalmol",
+      "key": "2539_CR4",
+      "unstructured": "Blanco-Kelly F, Tarilonte M, Villamar M et al (2021) Genetics and epidemiology of aniridia: updated guidelines for genetic study. Arch Soc Esp Oftalmol 96(Suppl 1):4–14. https://doi.org/10.1016/J.OFTALE.2021.02.002",
+      "volume": "96",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/ncomms16027",
+      "author": "A Byrne",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Nat Commun",
+      "key": "2539_CR5",
+      "unstructured": "Byrne A, Beaudin AE, Olsen HE et al (2017) Nanopore long-read RNAseq reveals widespread transcriptional variation among the surface receptors of individual B cells. Nat Commun. https://doi.org/10.1038/ncomms16027",
+      "year": "2017"
+    },
+    {
+      "key": "2539_CR6",
+      "unstructured": "Chang W, Cheng J, Allaire J, et al (2021) shiny: Web Application Framework for R"
+    },
+    {
+      "DOI": "10.1016/j.ymeth.2005.07.015",
+      "author": "TA Cooper",
+      "doi-asserted-by": "publisher",
+      "first-page": "331",
+      "journal-title": "Methods",
+      "key": "2539_CR7",
+      "unstructured": "Cooper TA (2005) Use of minigene systems to dissect alternative splicing elements. Methods 37:331–340. https://doi.org/10.1016/j.ymeth.2005.07.015",
+      "volume": "37",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1016/J.PRETEYERES.2020.100861",
+      "author": "FPM Cremers",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Prog Retin Eye Res",
+      "key": "2539_CR8",
+      "unstructured": "Cremers FPM, Lee W, Collin RWJ, Allikmets R (2020) Clinical spectrum, genetic complexity and therapeutic approaches for retinal disease caused by ABCA4 mutations. Prog Retin Eye Res. https://doi.org/10.1016/J.PRETEYERES.2020.100861",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/S00438-022-01874-6",
+      "author": "M Dai",
+      "doi-asserted-by": "publisher",
+      "first-page": "1039",
+      "journal-title": "Mol Genet Genomics",
+      "key": "2539_CR9",
+      "unstructured": "Dai M, Xu Y, Sun Y et al (2022) Revealing diverse alternative splicing variants of the highly homologous SMN1 and SMN2 genes by targeted long-read sequencing. Mol Genet Genomics 297:1039–1048. https://doi.org/10.1007/S00438-022-01874-6",
+      "volume": "297",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1016/J.EBIOM.2016.04.005",
+      "author": "DGR Evans",
+      "doi-asserted-by": "publisher",
+      "first-page": "212",
+      "journal-title": "EBioMedicine",
+      "key": "2539_CR10",
+      "unstructured": "Evans DGR, Bowers N, Burkitt-Wright E et al (2016) Comprehensive RNA Analysis of the NF1 gene in classically affected NF1 affected individuals meeting NIH criteria has high sensitivity and mutation negative testing is reassuring in isolated cases with pigmentary features only. EBioMedicine 7:212–220. https://doi.org/10.1016/J.EBIOM.2016.04.005",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1111/cge.12802",
+      "author": "V Felício",
+      "doi-asserted-by": "publisher",
+      "first-page": "476",
+      "journal-title": "Clin Genet",
+      "key": "2539_CR11",
+      "unstructured": "Felício V, Ramalho AS, Igreja S, Amaral MD (2016) mRNA-based detection of rare CFTR mutations improves genetic diagnosis of cystic fibrosis in populations with high genetic heterogeneity. Clin Genet 91:476–481. https://doi.org/10.1111/cge.12802",
+      "volume": "91",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.3389/FGENE.2019.00503",
+      "author": "E Fraile-Bethencourt",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Front Genet",
+      "key": "2539_CR12",
+      "unstructured": "Fraile-Bethencourt E, Valenzuela-Palomo A, Díez-Gómez B et al (2019) Minigene splicing assays identify 12 Spliceogenic Variants of BRCA2 Exons 14 and 15. Front Genet. https://doi.org/10.3389/FGENE.2019.00503",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty098",
+      "author": "S Fu",
+      "doi-asserted-by": "publisher",
+      "first-page": "2168",
+      "journal-title": "Bioinformatics",
+      "key": "2539_CR13",
+      "unstructured": "Fu S, Ma Y, Yao H et al (2018) IDP-de novo: de novo transcriptome assembly and isoform annotation by hybrid sequencing. Bioinformatics 34:2168–2176. https://doi.org/10.1093/bioinformatics/bty098",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/J.AJHG.2019.01.012",
+      "author": "HD Gonorazky",
+      "doi-asserted-by": "publisher",
+      "first-page": "466",
+      "journal-title": "Am J Hum Genet",
+      "key": "2539_CR14",
+      "unstructured": "Gonorazky HD, Naumenko S, Ramani AK et al (2019) Expanding the Boundaries of RNA sequencing as a diagnostic tool for rare mendelian disease. Am J Hum Genet 104:466–483. https://doi.org/10.1016/J.AJHG.2019.01.012",
+      "volume": "104",
+      "year": "2019"
+    },
+    {
+      "author": "ML Gonzalez-Garay",
+      "first-page": "141",
+      "key": "2539_CR15",
+      "unstructured": "Gonzalez-Garay ML (2016) Introduction to Isoform Sequencing Using Pacific Biosciences Technology. Transcriptomics and Gene Regulation. Springer, Netherlands, Dordrecht, pp 141–160",
+      "volume-title": "Introduction to Isoform Sequencing Using Pacific Biosciences Technology",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/SJ.EJHG.5200308",
+      "author": "K Grønskov",
+      "doi-asserted-by": "publisher",
+      "first-page": "274",
+      "journal-title": "Eur J Hum Genet",
+      "key": "2539_CR16",
+      "unstructured": "Grønskov K, Rosenberg T, Sand A, Brøndum-Nielsen K (1999) Mutational analysis of PAX6: 16 novel mutations including 5 missense mutations with a mild aniridia phenotype. Eur J Hum Genet 7:274–286. https://doi.org/10.1038/SJ.EJHG.5200308",
+      "volume": "7",
+      "year": "1999"
+    },
+    {
+      "DOI": "10.1002/HUMU.24135",
+      "author": "G Helman",
+      "doi-asserted-by": "publisher",
+      "first-page": "19",
+      "journal-title": "Hum Mutat",
+      "key": "2539_CR17",
+      "unstructured": "Helman G, Compton AG, Hock DH et al (2021) Multiomic analysis elucidates Complex I deficiency caused by a deep intronic variant in NDUFB10. Hum Mutat 42:19–24. https://doi.org/10.1002/HUMU.24135",
+      "volume": "42",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13059-021-02399-8",
+      "author": "Y Hu",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "2539_CR18",
+      "unstructured": "Hu Y, Fang L, Chen X et al (2021) LIQA: long-read isoform quantification and analysis. Genome Biol. https://doi.org/10.1186/s13059-021-02399-8",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/S41525-022-00330-Z",
+      "author": "N Jurkute",
+      "doi-asserted-by": "publisher",
+      "journal-title": "NPJ Genomic Med",
+      "key": "2539_CR19",
+      "unstructured": "Jurkute N, Cancellieri F, Pohl L et al (2022) Biallelic variants in coenzyme Q10 biosynthesis pathway genes cause a retinitis pigmentosa phenotype. NPJ Genomic Med. https://doi.org/10.1038/S41525-022-00330-Z",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/S41525-021-00258-W",
+      "author": "R Koster",
+      "doi-asserted-by": "publisher",
+      "journal-title": "NPJ Genomic Med",
+      "key": "2539_CR20",
+      "unstructured": "Koster R, Brandão RD, Tserpelis D et al (2021) Pathogenic neurofibromatosis type 1 (NF1) RNA splicing resolved by targeted RNAseq. NPJ Genomic Med. https://doi.org/10.1038/S41525-021-00258-W",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/S13059-019-1910-1",
+      "author": "S Kovaka",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Genome Biol",
+      "key": "2539_CR21",
+      "unstructured": "Kovaka S, Zimin AV, Pertea GM et al (2019) Transcriptome assembly from long-read RNA-seq alignments with StringTie2. Genome Biol. https://doi.org/10.1186/S13059-019-1910-1",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/978-1-4939-7710-9_5",
+      "author": "Z Kuang",
+      "doi-asserted-by": "publisher",
+      "first-page": "73",
+      "journal-title": "Methods Mol Biol",
+      "key": "2539_CR22",
+      "unstructured": "Kuang Z, Canzar S (2018) Tracking alternatively spliced isoforms from long reads by SpliceHunter. Methods Mol Biol 1751:73–88. https://doi.org/10.1007/978-1-4939-7710-9_5",
+      "volume": "1751",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/J.SURVOPHTHAL.2021.02.011",
+      "author": "ECS Landsend",
+      "doi-asserted-by": "publisher",
+      "first-page": "1031",
+      "journal-title": "Surv Ophthalmol",
+      "key": "2539_CR23",
+      "unstructured": "Landsend ECS, Lagali N, Utheim TP (2021) Congenital aniridia – a comprehensive review of clinical features and therapeutic approaches. Surv Ophthalmol 66:1031–1050. https://doi.org/10.1016/J.SURVOPHTHAL.2021.02.011",
+      "volume": "66",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/BIOINFORMATICS/BTY191",
+      "author": "H Li",
+      "doi-asserted-by": "publisher",
+      "first-page": "3094",
+      "journal-title": "Bioinformatics",
+      "key": "2539_CR24",
+      "unstructured": "Li H (2018) Minimap2: pairwise alignment for nucleotide sequences. Bioinformatics 34:3094–3100. https://doi.org/10.1093/BIOINFORMATICS/BTY191",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fgene.2021.689892",
+      "author": "J Lord",
+      "doi-asserted-by": "publisher",
+      "first-page": "1146",
+      "journal-title": "Front Genet",
+      "key": "2539_CR25",
+      "unstructured": "Lord J, Baralle D (2021) Splicing in the diagnosis of rare disease: advances and challenges. Front Genet 12:1146. https://doi.org/10.3389/fgene.2021.689892",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/bib/bbz126",
+      "author": "A Mehmood",
+      "doi-asserted-by": "publisher",
+      "first-page": "2052",
+      "journal-title": "Brief Bioinform",
+      "key": "2539_CR26",
+      "unstructured": "Mehmood A, Laiho A, Venälaïnen MS et al (2020) Systematic evaluation of differential splicing tools for RNA-seq studies. Brief Bioinform 21:2052–2065. https://doi.org/10.1093/bib/bbz126",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/S00439-022-02485-2",
+      "author": "M Okubo",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Hum Genet",
+      "key": "2539_CR27",
+      "unstructured": "Okubo M, Noguchi S, Awaya T et al (2022) RNA-seq analysis, targeted long-read sequencing and in silico prediction to unravel pathogenic intronic events and complicated splicing abnormalities in dystrophinopathy. Hum Genet. https://doi.org/10.1007/S00439-022-02485-2",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1101/080747",
+      "author": "L Paul",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Biorxiv",
+      "key": "2539_CR28",
+      "unstructured": "Paul L, Kubala P, Horner G et al (2016) SIRVs: Spike-In RNA Variants as External Isoform Controls in RNA-Sequencing. Biorxiv. https://doi.org/10.1101/080747",
+      "year": "2016"
+    },
+    {
+      "author": "R Core Team",
+      "key": "2539_CR29",
+      "unstructured": "R Core Team (2020) R: A language and environment for statistical computing. R Found Stat Comput Vienna, Austria",
+      "volume-title": "R: A language and environment for statistical computing",
+      "year": "2020"
+    },
+    {
+      "author": "G Riolo",
+      "first-page": "4",
+      "key": "2539_CR30",
+      "unstructured": "Riolo G, Cantara S, Ricci C (2021) What’s wrong in a jump? Prediction and validation of splice site variants, Methods Protoc, p 4",
+      "volume-title": "What’s wrong in a jump?",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41467-018-06910-x",
+      "author": "K Sahlin",
+      "doi-asserted-by": "publisher",
+      "first-page": "4601",
+      "journal-title": "Nat Commun",
+      "key": "2539_CR31",
+      "unstructured": "Sahlin K, Tomaszkiewicz M, Makova KD, Medvedev P (2018) Deciphering highly similar multigene family transcripts from Iso-Seq data with IsoCon. Nat Commun 9:4601. https://doi.org/10.1038/s41467-018-06910-x",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1101/GR.226621.117/-/DC1",
+      "author": "R Sangermano",
+      "doi-asserted-by": "publisher",
+      "first-page": "100",
+      "journal-title": "Genome Res",
+      "key": "2539_CR32",
+      "unstructured": "Sangermano R, Khan M, Cornelis SS et al (2018) ABCA4 midigenes reveal the full splice spectrum of all reported noncanonical splice site variants in Stargardt disease. Genome Res 28:100–110. https://doi.org/10.1101/GR.226621.117/-/DC1",
+      "volume": "28",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1201/9780429447273",
+      "author": "C Sievert",
+      "doi-asserted-by": "publisher",
+      "key": "2539_CR33",
+      "unstructured": "Sievert C (2020) Interactive Web-Based Data Visualization with R plotly, and shiny. Chapman and Hall/CRC, Boca Raton",
+      "volume-title": "Interactive Web-Based Data Visualization with R plotly, and shiny",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41467-020-15171-6",
+      "author": "AD Tang",
+      "doi-asserted-by": "publisher",
+      "first-page": "1438",
+      "journal-title": "Nat Commun",
+      "key": "2539_CR34",
+      "unstructured": "Tang AD, Soulette CM, van Baren MJ et al (2020) Full-length transcript characterization of SF3B1 mutation in chronic lymphocytic leukemia reveals downregulation of retained introns. Nat Commun 11:1438. https://doi.org/10.1038/s41467-020-15171-6",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1101/gr.222976.117",
+      "author": "M Tardaguila",
+      "doi-asserted-by": "publisher",
+      "first-page": "396",
+      "journal-title": "Genome Res",
+      "key": "2539_CR35",
+      "unstructured": "Tardaguila M, De La Fuente L, Marti C et al (2018) SQANTI: extensive characterization of long-read transcript sequences for quality control in full-length transcriptome identification and quantification. Genome Res 28:396–411. https://doi.org/10.1101/gr.222976.117",
+      "volume": "28",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1136/jmedgenet-2020-106932",
+      "author": "M Tarilonte",
+      "doi-asserted-by": "publisher",
+      "first-page": "428",
+      "journal-title": "J Med Genet",
+      "key": "2539_CR36",
+      "unstructured": "Tarilonte M, Ramos P, Moya J et al (2022) Activation of cryptic donor splice sites by non-coding and coding PAX6 variants contributes to congenital aniridia. J Med Genet 59:428–437. https://doi.org/10.1136/jmedgenet-2020-106932",
+      "volume": "59",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/braincomms/fcaa075",
+      "author": "RI Wadman",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Brain Commun",
+      "key": "2539_CR37",
+      "unstructured": "Wadman RI, Jansen MD, Stam M et al (2020) Intragenic and structural variation in the SMN locus and clinical variability in spinal muscular atrophy. Brain Commun. https://doi.org/10.1093/braincomms/fcaa075",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1373/CLINCHEM.2013.210658",
+      "author": "PJ Whiley",
+      "doi-asserted-by": "publisher",
+      "first-page": "341",
+      "journal-title": "Clin Chem",
+      "key": "2539_CR38",
+      "unstructured": "Whiley PJ, De La Hoya M, Thomassen M et al (2014) Comparison of mRNA splicing assay protocols across multiple laboratories: recommendations for best practice in standardized clinical testing. Clin Chem 60:341–352. https://doi.org/10.1373/CLINCHEM.2013.210658",
+      "volume": "60",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bti310",
+      "author": "TD Wu",
+      "doi-asserted-by": "publisher",
+      "first-page": "1859",
+      "journal-title": "Bioinformatics",
+      "key": "2539_CR39",
+      "unstructured": "Wu TD, Watanabe CK (2005) GMAP: A genomic mapping and alignment program for mRNA and EST sequences. Bioinformatics 21:1859–1875. https://doi.org/10.1093/bioinformatics/bti310",
+      "volume": "21",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1101/672931",
+      "author": "D Wyman",
+      "doi-asserted-by": "publisher",
+      "journal-title": "Biorxiv",
+      "key": "2539_CR40",
+      "unstructured": "Wyman D, Balderrama-Gutierrez G, Reese F et al (2019) A technology-agnostic long-read analysis pipeline for transcriptome discovery and quantification. Biorxiv. https://doi.org/10.1101/672931",
+      "year": "2019"
+    }
+  ],
+  "reference-count": 40,
+  "references-count": 40,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-023-02539-z"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "VIsoQLR: an interactive tool for the detection, quantification and fine-tuning of isoforms in selected genes using long-read sequencing"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "142"
+}

@@ -1,0 +1,1639 @@
+{
+  "DOI": "10.1007/s00439-021-02387-9",
+  "ISSN": [
+    "0340-6717",
+    "1432-1203"
+  ],
+  "URL": "http://dx.doi.org/10.1007/s00439-021-02387-9",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eHigh-throughput technologies such as next-generation sequencing allow biologists to observe cell function with unprecedented resolution, but the resulting datasets are too large and complicated for humans to understand without the aid of advanced statistical methods. Machine learning (ML) algorithms, which are designed to automatically find patterns in data, are well suited to this task. Yet these models are often so complex as to be opaque, leaving researchers with few clues about underlying mechanisms. Interpretable machine learning (iML) is a burgeoning subdiscipline of computational statistics devoted to making the predictions of ML models more intelligible to end users. This article is a gentle and critical introduction to iML, with an emphasis on genomic applications. I define relevant concepts, motivate leading methodologies, and provide a simple typology of existing approaches. I survey recent examples of iML in genomics, demonstrating how such techniques are increasingly integrated into research workflows. I argue that iML solutions are required to realize the promise of precision medicine. However, several open challenges remain. I examine the limitations of current state-of-the-art tools and propose a number of directions for future research. While the horizon for iML in genomics is wide and bright, continued progress requires close collaboration across disciplines.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "2387"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "20 April 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "8 October 2021"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "20 October 2021"
+    },
+    {
+      "group": {
+        "label": "Declarations",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1
+    },
+    {
+      "group": {
+        "label": "Conflict of interest",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "On behalf of all authors, the corresponding author states that there is no conflict of interest."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-9632-2159",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Watson",
+      "given": "David S.",
+      "sequence": "first"
+    }
+  ],
+  "container-title": [
+    "Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        20
+      ]
+    ],
+    "date-time": "2021-10-20T17:56:55Z",
+    "timestamp": 1634752615000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        11,
+        11
+      ]
+    ],
+    "date-time": "2023-11-11T12:11:22Z",
+    "timestamp": 1699704682000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000006",
+      "award": [
+        "N62909-19-1-2096"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Office of Naval Research"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        13
+      ]
+    ],
+    "date-time": "2024-03-13T20:31:55Z",
+    "timestamp": 1710361915202
+  },
+  "is-referenced-by-count": 20,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0340-6717"
+    },
+    {
+      "type": "electronic",
+      "value": "1432-1203"
+    }
+  ],
+  "issue": "9",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        20
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "9",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            20
+          ]
+        ],
+        "date-time": "2021-10-20T00:00:00Z",
+        "timestamp": 1634688000000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            20
+          ]
+        ],
+        "date-time": "2021-10-20T00:00:00Z",
+        "timestamp": 1634688000000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02387-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1007/s00439-021-02387-9/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1007/s00439-021-02387-9.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "page": "1499-1513",
+  "prefix": "10.1007",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        20
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        10,
+        20
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        9
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1016/j.artint.2021.103502",
+      "author": "K Aas",
+      "doi-asserted-by": "publisher",
+      "first-page": "103502",
+      "journal-title": "Artif Intell",
+      "key": "2387_CR1",
+      "unstructured": "Aas K, Jullum M, Løland A (2021) Explaining individual predictions when features are dependent: more accurate approximations to Shapley values. Artif Intell 298:103502",
+      "volume": "298",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1109/ACCESS.2018.2870052",
+      "author": "A Adadi",
+      "doi-asserted-by": "publisher",
+      "first-page": "52138",
+      "journal-title": "IEEE Access",
+      "key": "2387_CR2",
+      "unstructured": "Adadi A, Berrada M (2018) Peeking inside the black-box: a survey on explainable artificial intelligence (XAI). IEEE Access 6:52138–52160",
+      "volume": "6",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btq134",
+      "author": "A Altmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "1340",
+      "issue": "10",
+      "journal-title": "Bioinformatics",
+      "key": "2387_CR3",
+      "unstructured": "Altmann A, Toloşi L, Sander O, Lengauer T (2010) Permutation importance: a corrected feature importance measure. Bioinformatics 26(10):1340–1347",
+      "volume": "26",
+      "year": "2010"
+    },
+    {
+      "author": "E Angelino",
+      "first-page": "1",
+      "issue": "234",
+      "journal-title": "J Mach Learn Res",
+      "key": "2387_CR4",
+      "unstructured": "Angelino E, Larus-Stone N, Alabi D, Seltzer M, Rudin C (2018) Learning certifiably optimal rule lists for categorical data. J Mach Learn Res 18(234):1–78",
+      "volume": "18",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1007792",
+      "author": "A Anguita-Ruiz",
+      "doi-asserted-by": "publisher",
+      "first-page": "e1007792",
+      "issue": "4",
+      "journal-title": "PLoS Comput Biol",
+      "key": "2387_CR5",
+      "unstructured": "Anguita-Ruiz A, Segura-Delgado A, Alcalá R, Aguilera CM, Alcalá-Fdez J (2020) eXplainable artificial intelligence (XAI) for the identification of biologically relevant gene expression patterns in longitudinal human studies, insights from obesity research. PLoS Comput Biol 16(4):e1007792",
+      "volume": "16",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.tig.2020.03.005",
+      "author": "CB Azodi",
+      "doi-asserted-by": "publisher",
+      "first-page": "442",
+      "issue": "6",
+      "journal-title": "Trends Genet",
+      "key": "2387_CR6",
+      "unstructured": "Azodi CB, Tang J, Shiu S-H (2020) Opening the black box: interpretable machine learning for geneticists. Trends Genet 36(6):442–455",
+      "volume": "36",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0130140",
+      "author": "S Bach",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "7",
+      "journal-title": "PLoS ONE",
+      "key": "2387_CR7",
+      "unstructured": "Bach S, Binder A, Montavon G, Klauschen F, Müller KR, Samek W (2015) On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. PLoS ONE 10(7):1–46",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1214/15-AOS1337",
+      "author": "RF Barber",
+      "doi-asserted-by": "publisher",
+      "first-page": "2055",
+      "issue": "5",
+      "journal-title": "Ann Stat",
+      "key": "2387_CR8",
+      "unstructured": "Barber RF, Candès EJ (2015) Controlling the false discovery rate via knockoffs. Ann Stat 43(5):2055–2085",
+      "volume": "43",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1073/pnas.1510507113",
+      "author": "E Bareinboim",
+      "doi-asserted-by": "publisher",
+      "first-page": "7345",
+      "issue": "27",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "2387_CR9",
+      "unstructured": "Bareinboim E, Pearl J (2016) Causal inference and the data-fusion problem. Proc Natl Acad Sci 113(27):7345–7352",
+      "volume": "113",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.inffus.2019.12.012",
+      "author": "A Barredo Arrieta",
+      "doi-asserted-by": "publisher",
+      "first-page": "82",
+      "journal-title": "Inf Fusion",
+      "key": "2387_CR10",
+      "unstructured": "Barredo Arrieta A, Díaz-Rodríguez N, Del Ser J, Bennetot A, Tabik S, Barbado A, Herrera F (2020) Explainable artificial intelligence (XAI): concepts, taxonomies, opportunities and challenges toward responsible AI. Inf Fusion 58:82–115",
+      "volume": "58",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1073/pnas.2007743117",
+      "author": "S Bates",
+      "doi-asserted-by": "publisher",
+      "first-page": "24117 LP",
+      "issue": "39",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "2387_CR11",
+      "unstructured": "Bates S, Sesia M, Sabatti C, Candès E (2020) Causal inference in genetic trio studies. Proc Natl Acad Sci 117(39):24117 LP-24126 LP",
+      "volume": "117",
+      "year": "2020"
+    },
+    {
+      "key": "2387_CR12",
+      "unstructured": "Beckers S, Eberhardt F, Halpern JY (2019) Approximate causal abstraction. Uncertain Artif Intell 210"
+    },
+    {
+      "author": "Y Benjamini",
+      "first-page": "289",
+      "issue": "1",
+      "journal-title": "J R Stat Soc Ser B Stat Methodol",
+      "key": "2387_CR13",
+      "unstructured": "Benjamini Y, Hochberg Y (1995) Controlling the false discovery rate: a practical and powerful approach to multiple testing. J R Stat Soc Ser B Stat Methodol 57(1):289–300",
+      "volume": "57",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1145/3351095.3375624",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR14",
+      "unstructured": "Bhatt U, Xiang A, Sharma S, Weller A, Taly A, Jia Y, Eckersley P (2020) Explainable machine learning in deployment. Conf Fair Account Trans 648–657"
+    },
+    {
+      "DOI": "10.1002/cpt.1907",
+      "author": "I Bica",
+      "doi-asserted-by": "publisher",
+      "first-page": "87",
+      "issue": "1",
+      "journal-title": "Clin Pharmacol Ther",
+      "key": "2387_CR15",
+      "unstructured": "Bica I, Alaa AM, Lambert C, van der Schaar M (2021) From real-world patient data to individualized treatment effects using machine learning: current and future methods to address underlying challenges. Clin Pharmacol Ther 109(1):87–100",
+      "volume": "109",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1023/A:1010933404324",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Mach Learn",
+      "key": "2387_CR16",
+      "unstructured": "Breiman L (2001a) Random forests. Mach Learn 45(1):1–33",
+      "volume": "45",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1214/ss/1009213726",
+      "author": "L Breiman",
+      "doi-asserted-by": "publisher",
+      "first-page": "199",
+      "issue": "3",
+      "journal-title": "Stat Sci",
+      "key": "2387_CR17",
+      "unstructured": "Breiman L (2001b) Statistical modeling: the two cultures. Stat Sci 16(3):199–231",
+      "volume": "16",
+      "year": "2001"
+    },
+    {
+      "author": "L Breiman",
+      "key": "2387_CR18",
+      "unstructured": "Breiman L, Friedman J, Stone CJ, Olshen RA (1984) Classification and regression trees. Taylor \u0026 Francis, Boca Raton",
+      "volume-title": "Classification and regression trees",
+      "year": "1984"
+    },
+    {
+      "DOI": "10.1111/rssb.12265",
+      "author": "E Candès",
+      "doi-asserted-by": "publisher",
+      "first-page": "551",
+      "issue": "3",
+      "journal-title": "J R Stat Soc Ser B Stat Methodol",
+      "key": "2387_CR19",
+      "unstructured": "Candès E, Fan Y, Janson L, Lv J (2018) Panning for gold: ‘model-X’ knockoffs for high dimensional controlled variable selection. J R Stat Soc Ser B Stat Methodol 80(3):551–577",
+      "volume": "80",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41598-021-83922-6",
+      "author": "AP Carrieri",
+      "doi-asserted-by": "publisher",
+      "first-page": "4565",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "2387_CR20",
+      "unstructured": "Carrieri AP, Haiminen N, Maudsley-Barton S, Gardiner L-J, Murphy B, Mayes AE, Pyzer-Knapp EO (2021) Explainable AI reveals changes in skin microbiome composition linked to phenotypic differences. Sci Rep 11(1):4565",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1145/2783258.2788613",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR21",
+      "unstructured": "Caruana R, Lou Y, Gehrke J, Koch P, Sturm M, Elhadad N (2015) Intelligible models for healthcare. In: International conference on knowledge discovery and data mining, pp 1721–1730"
+    },
+    {
+      "DOI": "10.1007/978-3-030-10925-7_40",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR22",
+      "unstructured": "Casalicchio G, Molnar C, Bischl B (2019) Visualizing the feature importance for black box models. In: Machine learning and knowledge discovery in databases. Springer International Publishing, Cham, pp 655–670"
+    },
+    {
+      "DOI": "10.1038/s41598-020-70832-2",
+      "author": "S Cascianelli",
+      "doi-asserted-by": "publisher",
+      "first-page": "14071",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "2387_CR23",
+      "unstructured": "Cascianelli S, Molineris I, Isella C, Masseroli M, Medico E (2020) Machine learning for RNA sequencing-based intrinsic subtyping of breast cancer. Sci Rep 10(1):14071",
+      "volume": "10",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1007/s41237-016-0008-2",
+      "author": "K Chalupka",
+      "doi-asserted-by": "publisher",
+      "first-page": "137",
+      "issue": "1",
+      "journal-title": "Behaviormetrika",
+      "key": "2387_CR24",
+      "unstructured": "Chalupka K, Eberhardt F, Perona P (2017) Causal feature learning: an overview. Behaviormetrika 44(1):137–164",
+      "volume": "44",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ygeno.2012.04.003",
+      "author": "X Chen",
+      "doi-asserted-by": "publisher",
+      "first-page": "323",
+      "issue": "6",
+      "journal-title": "Genomics",
+      "key": "2387_CR25",
+      "unstructured": "Chen X, Ishwaran H (2012) Random forests for genomic data analysis. Genomics 99(6):323–329",
+      "volume": "99",
+      "year": "2012"
+    },
+    {
+      "author": "C Chen",
+      "first-page": "8930",
+      "journal-title": "Adv Neural Inf Process Syst",
+      "key": "2387_CR26",
+      "unstructured": "Chen C, Li O, Tao D, Barnett A, Rudin C, Su JK (2019) This looks like that: deep learning for interpretable image recognition. Adv Neural Inf Process Syst 32:8930–8941",
+      "volume": "32",
+      "year": "2019"
+    },
+    {
+      "key": "2387_CR27",
+      "unstructured": "Chen C, Rudin C (2018) An optimization approach to learning falling rule lists. In: International conference on artificial intelligence and statistics, pp 604–612"
+    },
+    {
+      "key": "2387_CR28",
+      "unstructured": "Chia C, Sesia M, Ho C, Jeffrey S, Dionne J, Candès E, Howe R (2020) Interpretable classification of bacterial Raman spectra with knockoff wavelets. arXiv:2006.04937"
+    },
+    {
+      "DOI": "10.3390/genes10120996",
+      "author": "A Cliff",
+      "doi-asserted-by": "publisher",
+      "first-page": "996",
+      "issue": "12",
+      "journal-title": "Genes",
+      "key": "2387_CR29",
+      "unstructured": "Cliff A, Romero J, Kainer D, Walker A, Furches A, Jacobson D (2019) A high-performance computing implementation of iterative random forest for the creation of predictive expression networks. Genes 10(12):996",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "key": "2387_CR30",
+      "unstructured": "Conitzer V, Sandholm T (2004) Computing Shapley values, manipulating value division schemes, and checking core membership in multi-issue domains. In: Conference on artificial intelligence, pp 219–225"
+    },
+    {
+      "key": "2387_CR31",
+      "unstructured": "Danaee P (2019) Interpretable machine learning: applications in biology and genomics. Doctoral dissertation, Oregon State University"
+    },
+    {
+      "key": "2387_CR32",
+      "unstructured": "Das A, Rad P (2020). Opportunities and challenges in explainable artificial intelligence (XAI): a survey. arXiv:2006.11371"
+    },
+    {
+      "DOI": "10.1017/CBO9780511802843",
+      "author": "AC Davison",
+      "doi-asserted-by": "publisher",
+      "key": "2387_CR33",
+      "unstructured": "Davison AC, Hinkley DV (1997) Bootstrap methods and their application. Cambridge University Press, Cambridge",
+      "volume-title": "Bootstrap methods and their application",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.1038/s41598-019-40561-2",
+      "author": "A Drouin",
+      "doi-asserted-by": "publisher",
+      "first-page": "4071",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "2387_CR34",
+      "unstructured": "Drouin A, Letarte G, Raymond F, Marchand M, Corbeil J, Laviolette F (2019) Interpretable genotype-to-phenotype classifiers with performance guarantees. Sci Rep 9(1):4071",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1056/NEJMp2023616",
+      "author": "LE Egede",
+      "doi-asserted-by": "publisher",
+      "first-page": "e77",
+      "issue": "12",
+      "journal-title": "N Engl J Med",
+      "key": "2387_CR36",
+      "unstructured": "Egede LE, Walker RJ (2020) Structural racism, social risk factors, and Covid-19—a dangerous convergence for Black Americans. N Engl J Med 383(12):e77",
+      "volume": "383",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41576-019-0122-6",
+      "author": "G Eraslan",
+      "doi-asserted-by": "publisher",
+      "first-page": "389",
+      "issue": "7",
+      "journal-title": "Nat Rev Genet",
+      "key": "2387_CR37",
+      "unstructured": "Eraslan G, Avsec Ž, Gagneur J, Theis FJ (2019) Deep learning: new computational modelling techniques for genomics. Nat Rev Genet 20(7):389–403",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "author": "A Fisher",
+      "first-page": "1",
+      "issue": "177",
+      "journal-title": "J Mach Learn Res",
+      "key": "2387_CR39",
+      "unstructured": "Fisher A, Rudin C, Dominici F (2019) All models are wrong, but many are useful: learning a variable’s importance by studying an entire class of prediction models simultaneously. J Mach Learn Res 20(177):1–81",
+      "volume": "20",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1214/aos/1013203451",
+      "author": "JH Friedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "1189",
+      "issue": "5",
+      "journal-title": "Ann Stat",
+      "key": "2387_CR40",
+      "unstructured": "Friedman JH (2001) Greedy function approximation: a gradient boosting machine. Ann Stat 29(5):1189–1232",
+      "volume": "29",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1214/07-AOAS148",
+      "author": "JH Friedman",
+      "doi-asserted-by": "publisher",
+      "first-page": "916",
+      "issue": "3",
+      "journal-title": "Ann Appl Stat",
+      "key": "2387_CR41",
+      "unstructured": "Friedman JH, Popescu BE (2008) Predictive learning via rule ensembles. Ann Appl Stat 2(3):916–954",
+      "volume": "2",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1186/s13059-020-02191-0",
+      "author": "MRT Garvin",
+      "doi-asserted-by": "publisher",
+      "first-page": "304",
+      "issue": "1",
+      "journal-title": "Genome Biol",
+      "key": "2387_CR42",
+      "unstructured": "Garvin MRT, Prates E, Pavicic M, Jones P, Amos BK, Geiger A, Jacobson D (2020) Potentially adaptive SARS-CoV-2 mutations discovered with novel spatiotemporal and explainable AI models. Genome Biol 21(1):304",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "author": "A Gelman",
+      "first-page": "189",
+      "issue": "2",
+      "journal-title": "J Res Educ Eff",
+      "key": "2387_CR43",
+      "unstructured": "Gelman A, Hill J, Yajima M (2012) Why we (usually) don’t have to worry about multiple comparisons. J Res Educ Eff 5(2):189–211",
+      "volume": "5",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1109/DSAA.2018.00018",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR44",
+      "unstructured": "Gilpin LH, Bau D, Yuan BZ, Bajwa A, Specter M, Kagal L (2018) Explaining explanations: an overview of interpretability of machine learning. In: 2018 international conference on data science and advanced analytics, pp 80–89"
+    },
+    {
+      "key": "2387_CR45",
+      "unstructured": "Gimenez JR, Zou J (2019) Discovering conditionally salient features with statistical guarantees. In: International conference on machine learning, pp 2290–2298"
+    },
+    {
+      "key": "2387_CR46",
+      "unstructured": "Greenside P (2018) Interpretable machine learning methods for regulatory and disease genomics. Doctoral dissertation, Stanford University"
+    },
+    {
+      "DOI": "10.1145/3236009",
+      "author": "R Guidotti",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "5",
+      "journal-title": "ACM Comput Surv",
+      "key": "2387_CR47",
+      "unstructured": "Guidotti R, Monreale A, Ruggieri S, Turini F, Giannotti F, Pedreschi D (2018b) A survey of methods for explaining black box models. ACM Comput Surv 51(5):1–42",
+      "volume": "51",
+      "year": "2018"
+    },
+    {
+      "key": "2387_CR48",
+      "unstructured": "Guidotti R, Monreale A, Ruggieri S, Pedreschi D, Turini F, Giannotti F (2018a) Local rule-based explanations of black box decision systems. arXiv:1805.10820"
+    },
+    {
+      "DOI": "10.1007/978-0-387-84858-7",
+      "author": "T Hastie",
+      "doi-asserted-by": "publisher",
+      "key": "2387_CR49",
+      "unstructured": "Hastie T, Tibshirani R, Friedman J (2009) The elements of statistical learning: data mining, inference, and prediction. Springer, New York",
+      "volume-title": "The elements of statistical learning: data mining, inference, and prediction",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1515/jci-2017-0016",
+      "author": "C Heinze-Deml",
+      "doi-asserted-by": "publisher",
+      "first-page": "20170016",
+      "issue": "2",
+      "journal-title": "J Causal Inference",
+      "key": "2387_CR50",
+      "unstructured": "Heinze-Deml C, Peters J, Meinshausen N (2018) Invariant causal prediction for nonlinear models. J Causal Inference 6(2):20170016",
+      "volume": "6",
+      "year": "2018"
+    },
+    {
+      "author": "T Heskes",
+      "first-page": "4778",
+      "journal-title": "Adv Neural Inf Process Syst",
+      "key": "2387_CR51",
+      "unstructured": "Heskes T, Sijben E, Bucur IG, Claassen T (2020) Causal Shapley values: exploiting causal knowledge to explain individual predictions of complex models. Adv Neural Inf Process Syst 33:4778–4789",
+      "volume": "33",
+      "year": "2020"
+    },
+    {
+      "author": "S Holm",
+      "first-page": "65",
+      "issue": "2",
+      "journal-title": "Scand J Stat",
+      "key": "2387_CR52",
+      "unstructured": "Holm S (1979) A simple sequentially rejective multiple test procedure. Scand J Stat 6(2):65–70",
+      "volume": "6",
+      "year": "1979"
+    },
+    {
+      "DOI": "10.1002/widm.1312",
+      "author": "A Holzinger",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1312",
+      "issue": "4",
+      "journal-title": "Data Min Knowl Discov",
+      "key": "2387_CR53",
+      "unstructured": "Holzinger A, Langs G, Denk H, Zatloukal K, Müller H (2019) Causability and explainability of artificial intelligence in medicine. Data Min Knowl Discov 9(4):e1312",
+      "volume": "9",
+      "year": "2019"
+    },
+    {
+      "author": "X Hu",
+      "first-page": "7267",
+      "journal-title": "Adv Neural Inf Process Syst",
+      "key": "2387_CR54",
+      "unstructured": "Hu X, Rudin C, Seltzer M (2019) Optimal sparse decision trees. Adv Neural Inf Process Syst 32:7267–7275",
+      "volume": "32",
+      "year": "2019"
+    },
+    {
+      "author": "AE Hubbard",
+      "first-page": "125",
+      "key": "2387_CR55",
+      "unstructured": "Hubbard AE, Kennedy CJ, van der Laan MJ (2018) Data-adaptive target parameters. In: van der Laan MJ, Rose S (eds) Targeted Learning in data science. Springer, New York, pp 125–142",
+      "volume-title": "Targeted Learning in data science",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/0020-0190(76)90095-8",
+      "author": "L Hyafil",
+      "doi-asserted-by": "publisher",
+      "first-page": "15",
+      "issue": "1",
+      "journal-title": "Inf Process Lett",
+      "key": "2387_CR56",
+      "unstructured": "Hyafil L, Rivest RL (1976) Constructing optimal binary decision trees is NP-complete. Inf Process Lett 5(1):15–17",
+      "volume": "5",
+      "year": "1976"
+    },
+    {
+      "DOI": "10.1017/CBO9781139025751",
+      "author": "GW Imbens",
+      "doi-asserted-by": "publisher",
+      "key": "2387_CR57",
+      "unstructured": "Imbens GW, Rubin DB (2015) Causal inference for statistics, social, and biomedical sciences: an introduction. Cambridge University Press, Cambridge",
+      "volume-title": "Causal inference for statistics, social, and biomedical sciences: an introduction",
+      "year": "2015"
+    },
+    {
+      "key": "2387_CR58",
+      "unstructured": "Karimi A-H, Barthe G, Schölkopf B, Valera I (2020) A survey of algorithmic recourse: definitions, formulations, solutions, and prospects. arXiv:2010.04050"
+    },
+    {
+      "author": "A-H Karimi",
+      "first-page": "265",
+      "journal-title": "Adv Neural Inf Process Syst",
+      "key": "2387_CR59",
+      "unstructured": "Karimi A-H, von Kügelgen J, Schölkopf B, Valera I (2020) Algorithmic recourse under imperfect causal knowledge: a probabilistic approach. Adv Neural Inf Process Syst 33:265–277",
+      "volume": "33",
+      "year": "2020"
+    },
+    {
+      "author": "NE Karoui",
+      "first-page": "1",
+      "issue": "5",
+      "journal-title": "J Mach Learn Res",
+      "key": "2387_CR60",
+      "unstructured": "Karoui NE, Purdom E (2018) Can we trust the bootstrap in high-dimensions? The case of linear models. J Mach Learn Res 19(5):1–66",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-020-16310-9",
+      "author": "ES Kavvas",
+      "doi-asserted-by": "publisher",
+      "first-page": "2580",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "2387_CR61",
+      "unstructured": "Kavvas ES, Yang L, Monk JM, Heckmann D, Palsson BO (2020) A biochemically-interpretable machine learning classifier for microbial GWAS. Nat Commun 11(1):2580",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "key": "2387_CR62",
+      "unstructured": "Kavvas E (2020) Biologically-interpretable machine learning for microbial genomics. Doctoral dissertation, UC San Diego"
+    },
+    {
+      "key": "2387_CR63",
+      "unstructured": "Lage I, Chen E, He J, Narayanan M, Gershman S, Kim B, Doshi-Velez F (2018) An evaluation of the human-interpretability of explanation. In: NeurIPS workshop on correcting and critiquing trends in machine learning"
+    },
+    {
+      "DOI": "10.1145/3306618.3314229",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR64",
+      "unstructured": "Lakkaraju H, Kamar E, Caruana R, Leskovec J (2019) Faithful and customizable explanations of black box models. In: Conference on AI, ethics and society, pp 131–138"
+    },
+    {
+      "DOI": "10.1186/gb-2014-15-2-r29",
+      "author": "CW Law",
+      "doi-asserted-by": "publisher",
+      "first-page": "R29",
+      "issue": "2",
+      "journal-title": "Genome Biol",
+      "key": "2387_CR65",
+      "unstructured": "Law CW, Chen Y, Shi W, Smyth GK (2014) voom: precision weights unlock linear model analysis tools for RNA-seq read counts. Genome Biol 15(2):R29",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1080/01621459.2017.1307116",
+      "author": "J Lei",
+      "doi-asserted-by": "publisher",
+      "first-page": "1094",
+      "issue": "523",
+      "journal-title": "J Am Stat Assoc",
+      "key": "2387_CR66",
+      "unstructured": "Lei J, G’Sell M, Rinaldo A, Tibshirani RJ, Wasserman L (2018) Distribution-free predictive inference for regression. J Am Stat Assoc 113(523):1094–1111",
+      "volume": "113",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1214/15-AOAS848",
+      "author": "B Letham",
+      "doi-asserted-by": "publisher",
+      "first-page": "1350",
+      "issue": "3",
+      "journal-title": "Ann Appl Stat",
+      "key": "2387_CR67",
+      "unstructured": "Letham B, Rudin C, McCormick TH, Madigan D (2015) Interpretable classifiers using rules and Bayesian analysis: building a better stroke prediction model. Ann Appl Stat 9(3):1350–1371",
+      "volume": "9",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1186/s12859-020-3443-8",
+      "author": "JJ Levy",
+      "doi-asserted-by": "publisher",
+      "first-page": "108",
+      "issue": "1",
+      "journal-title": "BMC Bioinform",
+      "key": "2387_CR68",
+      "unstructured": "Levy JJ, Titus AJ, Petersen CL, Chen Y, Salas LA, Christensen BC (2020) MethylNet: an automated and modular deep learning approach for DNA methylation analysis. BMC Bioinform 21(1):108",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/biomet/asab055",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR69",
+      "unstructured": "Li S, Sesia M, Romano Y, Candès E, Sabatti C (2021) Searching for consistent associations with a multi-environment knockoff filter. arXiv:2106.04118"
+    },
+    {
+      "DOI": "10.3390/e23010018",
+      "author": "P Linardatos",
+      "doi-asserted-by": "publisher",
+      "first-page": "18",
+      "issue": "1",
+      "journal-title": "Entropy",
+      "key": "2387_CR70",
+      "unstructured": "Linardatos P, Papastefanopoulos V, Kotsiantis S (2021) Explainable AI: a review of machine learning interpretability methods. Entropy 23(1):18",
+      "volume": "23",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1609/aaai.v34i09.7120",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR71",
+      "unstructured": "Locatello F, Bauer S, Lucic M, Raetsch G, Gelly S, Schölkopf B, Bachem O (2019) Challenging common assumptions in the unsupervised learning of disentangled representations. In: International conference on machine learning"
+    },
+    {
+      "DOI": "10.1186/s13059-014-0550-8",
+      "author": "MI Love",
+      "doi-asserted-by": "publisher",
+      "first-page": "550",
+      "issue": "12",
+      "journal-title": "Genome Biol",
+      "key": "2387_CR72",
+      "unstructured": "Love MI, Huber W, Anders S (2014) Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol 15(12):550",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "author": "SM Lundberg",
+      "first-page": "4765",
+      "journal-title": "Adv Neural Inf Process Syst",
+      "key": "2387_CR73",
+      "unstructured": "Lundberg SM, Lee S-I (2017) A unified approach to interpreting model predictions. Adv Neural Inf Process Syst 30:4765–4774",
+      "volume": "30",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s42256-019-0138-9",
+      "author": "SM Lundberg",
+      "doi-asserted-by": "publisher",
+      "first-page": "56",
+      "issue": "1",
+      "journal-title": "Nat Mach Intell",
+      "key": "2387_CR74",
+      "unstructured": "Lundberg SM, Erion G, Chen H, DeGrave A, Prutkin JM, Nair B, Lee S-I (2020) From local explanations to global understanding with explainable AI for trees. Nat Mach Intell 2(1):56–67",
+      "volume": "2",
+      "year": "2020"
+    },
+    {
+      "key": "2387_CR75",
+      "unstructured": "Marcinkevičs R, Vogt JE (2020). Interpretability and explainability: a machine learning zoo mini-tour. arXiv:2012.01805"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0379-x",
+      "author": "AR Martin",
+      "doi-asserted-by": "publisher",
+      "first-page": "584",
+      "issue": "4",
+      "journal-title": "Nat Genet",
+      "key": "2387_CR76",
+      "unstructured": "Martin AR, Kanai M, Kamatani Y, Okada Y, Neale BM, Daly MJ (2019) Clinical use of current polygenic risk scores may exacerbate health disparities. Nat Genet 51(4):584–591",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1002/jmri.26534",
+      "author": "MA Mazurowski",
+      "doi-asserted-by": "publisher",
+      "first-page": "939",
+      "issue": "4",
+      "journal-title": "J Mag Reson Imaging",
+      "key": "2387_CR77",
+      "unstructured": "Mazurowski MA, Buda M, Saha A, Bashir MR (2019) Deep learning in radiology: an overview of the concepts and a survey of the state of the art with focus on MRI. J Mag Reson Imaging 49(4):939–954",
+      "volume": "49",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1799-6",
+      "author": "SM McKinney",
+      "doi-asserted-by": "publisher",
+      "first-page": "89",
+      "issue": "7788",
+      "journal-title": "Nature",
+      "key": "2387_CR78",
+      "unstructured": "McKinney SM, Sieniek M, Godbole V, Godwin J, Antropova N, Ashrafian H, Shetty S (2020) International evaluation of an AI system for breast cancer screening. Nature 577(7788):89–94",
+      "volume": "577",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1073/pnas.1510493113",
+      "author": "N Meinshausen",
+      "doi-asserted-by": "publisher",
+      "first-page": "7361",
+      "issue": "27",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "2387_CR149",
+      "unstructured": "Meinshausen N, Hauser A, Mooij J, Peters J, Versteeg P, Bühlmann P (2016) Methods for causal inference from gene perturbation experiments and validation. Proc Natl Acad Sci 113(27):7361–7368",
+      "volume": "113",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1007/978-3-030-57321-8_2",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR79",
+      "unstructured": "Merrick L, Taly A (2020) The explanation game: explaining machine learning models using Shapley values. In: Machine learning and knowledge extraction, pp 17–38"
+    },
+    {
+      "DOI": "10.1186/s12920-017-0250-9",
+      "author": "HH Milioli",
+      "doi-asserted-by": "publisher",
+      "first-page": "19",
+      "issue": "1",
+      "journal-title": "BMC Med Genom",
+      "key": "2387_CR80",
+      "unstructured": "Milioli HH, Tishchenko I, Riveros C, Berretta R, Moscato P (2017) Basal-like breast cancer: molecular profiles, clinical features and survival outcomes. BMC Med Genom 10(1):19",
+      "volume": "10",
+      "year": "2017"
+    },
+    {
+      "key": "2387_CR81",
+      "unstructured": "Mohseni S, Zarei N, Ragan ED (2020) A multidisciplinary survey and framework for design and evaluation of explainable AI systems. arXiv:1811.11839"
+    },
+    {
+      "key": "2387_CR82",
+      "unstructured": "Molnar C (2019) Interpretable machine learning: A guide for making black box models explainable. https://christophm.github.io/interpretable-ml-book/"
+    },
+    {
+      "DOI": "10.1016/j.patcog.2016.11.008",
+      "author": "G Montavon",
+      "doi-asserted-by": "publisher",
+      "first-page": "211",
+      "issue": "May 2016",
+      "journal-title": "Pattern Recognit",
+      "key": "2387_CR83",
+      "unstructured": "Montavon G, Lapuschkin S, Binder A, Samek W, Müller KR (2017) Explaining nonlinear classification decisions with deep Taylor decomposition. Pattern Recognit 65(May 2016):211–222",
+      "volume": "65",
+      "year": "2017"
+    },
+    {
+      "key": "2387_CR84",
+      "unstructured": "Mueller ST, Hoffman RR, Clancey W, Emrey A, Klein G (2019). Explanation in human-AI systems: a literature meta-review, synopsis of key ideas and publications, and bibliography for explainable AI. arXiv:1902.01876"
+    },
+    {
+      "DOI": "10.1073/pnas.1900654116",
+      "author": "WJ Murdoch",
+      "doi-asserted-by": "publisher",
+      "first-page": "22071",
+      "issue": "44",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "2387_CR85",
+      "unstructured": "Murdoch WJ, Singh C, Kumbier K, Abbasi-Asl R, Yu B (2019) Definitions, methods, and applications in interpretable machine learning. Proc Natl Acad Sci 116(44):22071–22080",
+      "volume": "116",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1214/18-AOAS1157",
+      "author": "M Nalenz",
+      "doi-asserted-by": "publisher",
+      "first-page": "2379",
+      "issue": "4",
+      "journal-title": "Ann Appl Stat",
+      "key": "2387_CR86",
+      "unstructured": "Nalenz M, Villani M (2018) Tree ensembles with rule structured horseshoe regularization. Ann Appl Stat 12(4):2379–2408",
+      "volume": "12",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty373",
+      "author": "S Nembrini",
+      "doi-asserted-by": "publisher",
+      "first-page": "3711",
+      "issue": "21",
+      "journal-title": "Bioinformatics",
+      "key": "2387_CR87",
+      "unstructured": "Nembrini S, König IR, Wright MN (2018) The revival of the Gini importance? Bioinformatics 34(21):3711–3718",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fgene.2020.00350",
+      "author": "HL Nicholls",
+      "doi-asserted-by": "publisher",
+      "first-page": "350",
+      "journal-title": "Front Genet",
+      "key": "2387_CR88",
+      "unstructured": "Nicholls HL, John CR, Watson DS, Munroe PB, Barnes MR, Cabrera CP (2020) Reaching the end-game for GWAS: machine learning approaches for the prioritization of complex disease loci. Front Genet 11:350",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "key": "2387_CR89",
+      "unstructured": "Nikumbh S (2019) Interpretable machine learning methods for prediction and analysis of genome regulation in 3D. Doctoral dissertation, Saarland University"
+    },
+    {
+      "DOI": "10.1126/science.aax2342",
+      "author": "Z Obermeyer",
+      "doi-asserted-by": "publisher",
+      "first-page": "447",
+      "issue": "6464",
+      "journal-title": "Science",
+      "key": "2387_CR90",
+      "unstructured": "Obermeyer Z, Powers B, Vogeli C, Mullainathan S (2019) Dissecting racial bias in an algorithm used to manage the health of populations. Science 366(6464):447–453",
+      "volume": "366",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1093/ije/dyr178",
+      "author": "OA Panagiotou",
+      "doi-asserted-by": "publisher",
+      "first-page": "273",
+      "issue": "1",
+      "journal-title": "Int J Epidemiol",
+      "key": "2387_CR91",
+      "unstructured": "Panagiotou OA, Ioannidis JPA (2012) What should the genome-wide significance threshold be? Empirical replication of borderline genetic associations. Int J Epidemiol 41(1):273–286",
+      "volume": "41",
+      "year": "2012"
+    },
+    {
+      "author": "J Pearl",
+      "key": "2387_CR92",
+      "unstructured": "Pearl J (2000) Causality: models, reasoning, and inference. Cambridge University Press, New York",
+      "volume-title": "Causality: models, reasoning, and inference",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1214/14-STS486",
+      "author": "J Pearl",
+      "doi-asserted-by": "publisher",
+      "first-page": "579",
+      "issue": "4",
+      "journal-title": "Stat Sci",
+      "key": "2387_CR93",
+      "unstructured": "Pearl J, Bareinboim E (2014) External validity: from do-calculus to transportability across populations. Stat Sci 29(4):579–595",
+      "volume": "29",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1111/rssb.12167",
+      "author": "J Peters",
+      "doi-asserted-by": "publisher",
+      "first-page": "947",
+      "issue": "5",
+      "journal-title": "J R Stat Soc Ser B Stat Methodol",
+      "key": "2387_CR94",
+      "unstructured": "Peters J, Bühlmann P, Meinshausen N (2016) Causal inference by using invariant prediction: identification and confidence intervals. J R Stat Soc Ser B Stat Methodol 78(5):947–1012",
+      "volume": "78",
+      "year": "2016"
+    },
+    {
+      "author": "J Peters",
+      "key": "2387_CR95",
+      "unstructured": "Peters J, Janzing D, Schölkopf B (2017) The elements of causal inference: foundations and learning algorithms. The MIT Press, Cambridge",
+      "volume-title": "The elements of causal inference: foundations and learning algorithms",
+      "year": "2017"
+    },
+    {
+      "key": "2387_CR97",
+      "unstructured": "Ploenzke M (2020) Interpretable machine learning methods with applications in genomics. Doctoral dissertation, Harvard University"
+    },
+    {
+      "DOI": "10.1145/2939672.2939778",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR98",
+      "unstructured": "Ribeiro MT, Singh S, Guestrin C (2016) “Why should I trust you?”: explaining the predictions of any classifier. In: International conference on knowledge discovery and data mining, pp 1135–1144"
+    },
+    {
+      "DOI": "10.1609/aaai.v32i1.11491",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR99",
+      "unstructured": "Ribeiro MT, Singh S, Guestrin C (2018) Anchors: high-precision model-agnostic explanations. In: Association for the advancement of artificial intelligence, pp 1527–1535"
+    },
+    {
+      "DOI": "10.1214/18-AOS1784",
+      "author": "A Rinaldo",
+      "doi-asserted-by": "publisher",
+      "first-page": "3438",
+      "issue": "6",
+      "journal-title": "Ann Stat",
+      "key": "2387_CR100",
+      "unstructured": "Rinaldo A, Wasserman L, G’Sell M (2019) Bootstrapping and sample splitting for high-dimensional, assumption-lean inference. Ann Stat 47(6):3438–3469",
+      "volume": "47",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s42256-019-0048-x",
+      "author": "C Rudin",
+      "doi-asserted-by": "publisher",
+      "first-page": "206",
+      "issue": "5",
+      "journal-title": "Nat Mach Intell",
+      "key": "2387_CR101",
+      "unstructured": "Rudin C (2019) Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead. Nat Mach Intell 1(5):206–215",
+      "volume": "1",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1214/21-SS133",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR102",
+      "unstructured": "Rudin C, Chen C, Chen Z, Huang H, Semenova L, Zhong C (2021) Interpretable machine learning: fundamental principles and 10 grand challenges. Stat Surv"
+    },
+    {
+      "DOI": "10.1016/j.compbiomed.2021.104244",
+      "author": "JP Sarkar",
+      "doi-asserted-by": "publisher",
+      "first-page": "104244",
+      "journal-title": "Comput Biol Med",
+      "key": "2387_CR103",
+      "unstructured": "Sarkar JP, Saha I, Sarkar A, Maulik U (2021) Machine learning integrated ensemble of feature selection methods followed by survival analysis for predicting breast cancer subtype specific miRNA biomarkers. Comput Biol Med 131:104244",
+      "volume": "131",
+      "year": "2021"
+    },
+    {
+      "key": "2387_CR104",
+      "unstructured": "Schölkopf B, Tsuda K, Vert J-P (eds) (2004) Kernel methods in computational biology. The MIT Press, Cambridge",
+      "volume-title": "Kernel methods in computational biology",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1109/JPROC.2021.3058954",
+      "author": "B Schölkopf",
+      "doi-asserted-by": "publisher",
+      "first-page": "612",
+      "issue": "5",
+      "journal-title": "Proc IEEE",
+      "key": "2387_CR105",
+      "unstructured": "Schölkopf B, Locatello F, Bauer S, Ke NR, Kalchbrenner N, Goyal A, Bengio Y (2021) Toward causal representation learning. Proc IEEE 109(5):612–634",
+      "volume": "109",
+      "year": "2021"
+    },
+    {
+      "author": "P Schwab",
+      "first-page": "10220",
+      "journal-title": "Adv Neural Inf Process Syst",
+      "key": "2387_CR106",
+      "unstructured": "Schwab P, Karlen W (2019) CXPlain: causal explanations for model interpretation under uncertainty. Adv Neural Inf Process Syst 32:10220–10230",
+      "volume": "32",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1214/10-AOS792",
+      "author": "JG Scott",
+      "doi-asserted-by": "publisher",
+      "first-page": "2587",
+      "issue": "5",
+      "journal-title": "Ann Stat",
+      "key": "2387_CR107",
+      "unstructured": "Scott JG, Berger JO (2010) Bayes and empirical-Bayes multiplicity adjustment in the variable-selection problem. Ann Stat 38(5):2587–2619",
+      "volume": "38",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/idpl/ipx022",
+      "author": "A Selbst",
+      "doi-asserted-by": "publisher",
+      "first-page": "233",
+      "issue": "4",
+      "journal-title": "Int Data Priv Law",
+      "key": "2387_CR108",
+      "unstructured": "Selbst A, Powles J (2017) Meaningful information and the right to explanation. Int Data Priv Law 7(4):233–242",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/biomet/asy033",
+      "author": "M Sesia",
+      "doi-asserted-by": "publisher",
+      "first-page": "1",
+      "issue": "1",
+      "journal-title": "Biometrika",
+      "key": "2387_CR146",
+      "unstructured": "Sesia M, Sabatti C, Candès E (2019) Gene hunting with hidden Markov model knockoffs. Biometrika 106(1):1–18",
+      "volume": "106",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-020-14791-2",
+      "author": "M Sesia",
+      "doi-asserted-by": "publisher",
+      "first-page": "1093",
+      "issue": "1",
+      "journal-title": "Nat Commun",
+      "key": "2387_CR148",
+      "unstructured": "Sesia M, Bates S, Candès E, Sabatti C (2020) Multi-resolution localization of causal variants across the genome. Nat Commun 11(1):1093",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "author": "RD Shah",
+      "first-page": "629",
+      "issue": "20",
+      "journal-title": "J Mach Learn Res",
+      "key": "2387_CR109",
+      "unstructured": "Shah RD, Meinshausen N (2014) Random intersection trees. J Mach Learn Res 15(20):629–654",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1515/9781400881970-018",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR110",
+      "unstructured": "Shapley L (1953) A value for n-person games. In: Contributions to the theory of games, pp 307–317"
+    },
+    {
+      "key": "2387_CR111",
+      "unstructured": "Shrikumar A, Greenside P, Kundaje A (2017) Learning important features through propagating activation differences. In: International conference on machine learning"
+    },
+    {
+      "key": "2387_CR112",
+      "unstructured": "Shrikumar A (2020) Interpretable machine learning for scientific discovery in regulatory genomics. Doctoral dissertation, Stanford University"
+    },
+    {
+      "DOI": "10.2202/1544-6115.1027",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR113",
+      "unstructured": "Smyth GK (2004) Linear models and empirical Bayes methods for assessing differential expression in microarray experiments. Stat Appl Genet Mol Biol 3(1)"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn170",
+      "author": "S Sonnenburg",
+      "doi-asserted-by": "publisher",
+      "first-page": "i6",
+      "issue": "13",
+      "journal-title": "Bioinform",
+      "key": "2387_CR114",
+      "unstructured": "Sonnenburg S, Zien A, Philips P, Rätsch G (2008) POIMs: positional oligomer importance matrices—understanding support vector machine-based signal detectors. Bioinform 24(13):i6–i14",
+      "volume": "24",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1073/pnas.0932692100",
+      "author": "T Sørlie",
+      "doi-asserted-by": "publisher",
+      "first-page": "8418 LP",
+      "issue": "14",
+      "journal-title": "Proc Natl Acad Sci",
+      "key": "2387_CR115",
+      "unstructured": "Sørlie T, Tibshirani R, Parker J, Hastie T, Marron JS, Nobel A, Botstein D (2003) Repeated observation of breast tumor subtypes in independent gene expression data sets. Proc Natl Acad Sci 100(14):8418 LP-8423 LP",
+      "volume": "100",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.01.021",
+      "author": "JM Stokes",
+      "doi-asserted-by": "publisher",
+      "first-page": "688",
+      "issue": "4",
+      "journal-title": "Cell",
+      "key": "2387_CR116",
+      "unstructured": "Stokes JM, Yang K, Swanson K, Jin W, Cubillos-Ruiz A, Donghia NM, Collins JJ (2020) A deep learning approach to antibiotic discovery. Cell 180(4):688-702.e13",
+      "volume": "180",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1214/aos/1074290335",
+      "author": "JD Storey",
+      "doi-asserted-by": "publisher",
+      "first-page": "2013",
+      "issue": "6",
+      "journal-title": "Ann Stat",
+      "key": "2387_CR117",
+      "unstructured": "Storey JD (2003) The positive false discovery rate: a Bayesian interpretation and the q -value. Ann Stat 31(6):2013–2035",
+      "volume": "31",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1186/1471-2105-9-307",
+      "author": "C Strobl",
+      "doi-asserted-by": "publisher",
+      "first-page": "307",
+      "issue": "1",
+      "journal-title": "BMC Bioinform",
+      "key": "2387_CR118",
+      "unstructured": "Strobl C, Boulesteix A-L, Kneib T, Augustin T, Zeileis A (2008) Conditional variable importance for random forests. BMC Bioinform 9(1):307",
+      "volume": "9",
+      "year": "2008"
+    },
+    {
+      "key": "2387_CR119",
+      "unstructured": "Sundararajan M, Najmi A (2019) The many Shapley values for model explanation. In: Proceedings of ACM conference. ACM, New York"
+    },
+    {
+      "key": "2387_CR120",
+      "unstructured": "Sundararajan M, Taly A, Yan Q (2017) Axiomatic attribution for deep networks. In: International conference on machine learning"
+    },
+    {
+      "DOI": "10.1093/bib/bbaa177",
+      "author": "A Talukder",
+      "doi-asserted-by": "publisher",
+      "first-page": "177",
+      "issue": "3",
+      "journal-title": "Brief Bioinform",
+      "key": "2387_CR121",
+      "unstructured": "Talukder A, Barham C, Li X, Hu H (2021) Interpretation of deep learning in genomics and epigenomics. Brief Bioinform 22(3):177",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s42256-020-0201-6",
+      "author": "S Tasaki",
+      "doi-asserted-by": "publisher",
+      "first-page": "376",
+      "issue": "7",
+      "journal-title": "Nat Mach Intell",
+      "key": "2387_CR122",
+      "unstructured": "Tasaki S, Gaiteri C, Mostafavi S, Wang Y (2020) Deep learning decodes the principles of differential gene expression. Nat Mach Intell 2(7):376–386",
+      "volume": "2",
+      "year": "2020"
+    },
+    {
+      "author": "R Tibshirani",
+      "first-page": "267",
+      "issue": "1",
+      "journal-title": "J R Stat Soc Ser B Stat Methodol",
+      "key": "2387_CR123",
+      "unstructured": "Tibshirani R (1996) Regression shrinkage and selection via the lasso. J R Stat Soc Ser B Stat Methodol 58(1):267–288",
+      "volume": "58",
+      "year": "1996"
+    },
+    {
+      "DOI": "10.1016/j.aca.2021.338522",
+      "author": "LEM Tideman",
+      "doi-asserted-by": "publisher",
+      "first-page": "338522",
+      "journal-title": "Anal Chim Acta",
+      "key": "2387_CR124",
+      "unstructured": "Tideman LEM, Migas LG, Djambazova KV, Patterson NH, Caprioli RM, Spraggins JM, Van de Plas R (2021) Automated biomarker candidate discovery in imaging mass spectrometry data through spatially localized Shapley additive explanations. Anal Chim Acta 1177:338522",
+      "volume": "1177",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41591-018-0300-7",
+      "author": "EJ Topol",
+      "doi-asserted-by": "publisher",
+      "first-page": "44",
+      "issue": "1",
+      "journal-title": "Nat Med",
+      "key": "2387_CR125",
+      "unstructured": "Topol EJ (2019) High-performance medicine: the convergence of human and artificial intelligence. Nat Med 25(1):44–56",
+      "volume": "25",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s00439-021-02417-6",
+      "doi-asserted-by": "crossref",
+      "key": "2387_CR126",
+      "unstructured": "Treppner M, Binder H, Hess M (2021) Interpretable generative deep learning: an illustration with single cell gene expression data. Hum Genet"
+    },
+    {
+      "DOI": "10.1038/sj.onc.1209876",
+      "author": "NC Turner",
+      "doi-asserted-by": "publisher",
+      "first-page": "5846",
+      "journal-title": "Oncogene",
+      "key": "2387_CR127",
+      "unstructured": "Turner NC, Reis-Filho JS (2006) Basal-like breast cancer and the BRCA1 phenotype. Oncogene 25:5846",
+      "volume": "25",
+      "year": "2006"
+    },
+    {
+      "DOI": "10.1007/978-1-4757-2440-0",
+      "author": "V Vapnik",
+      "doi-asserted-by": "publisher",
+      "key": "2387_CR128",
+      "unstructured": "Vapnik V (1995) The nature of statistical learning theory. Springer, New York",
+      "volume-title": "The nature of statistical learning theory",
+      "year": "1995"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0144782",
+      "author": "MM-C Vidovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0144782",
+      "issue": "12",
+      "journal-title": "PLoS ONE",
+      "key": "2387_CR129",
+      "unstructured": "Vidovic MM-C, Görnitz N, Müller K-R, Rätsch G, Kloft M (2015) SVM2Motif: reconstructing overlapping DNA sequence motifs by mimicking an SVM predictor. PLoS ONE 10(12):e0144782–e0144782",
+      "volume": "10",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0174392",
+      "author": "MM-C Vidovic",
+      "doi-asserted-by": "publisher",
+      "first-page": "e0174392",
+      "issue": "3",
+      "journal-title": "PLoS ONE",
+      "key": "2387_CR130",
+      "unstructured": "Vidovic MM-C, Kloft M, Müller K-R, Görnitz N (2017) ML2Motif: reliable extraction of discriminative sequence motifs from learning machines. PLoS ONE 12(3):e0174392–e0174392",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "key": "2387_CR131",
+      "unstructured": "Vilone G, Longo L (2020) Explainable artificial intelligence: a systematic review. arXiv:2006.00093"
+    },
+    {
+      "DOI": "10.1093/idpl/ipx005",
+      "author": "S Wachter",
+      "doi-asserted-by": "publisher",
+      "first-page": "76",
+      "issue": "2",
+      "journal-title": "Int Data Priv Law",
+      "key": "2387_CR132",
+      "unstructured": "Wachter S, Mittelstadt B, Floridi L (2017) Why a right to explanation of automated decision-making does not exist in the general data protection regulation. Int Data Priv Law 7(2):76–99",
+      "volume": "7",
+      "year": "2017"
+    },
+    {
+      "author": "S Wachter",
+      "first-page": "841",
+      "issue": "2",
+      "journal-title": "Harvard J Law Technol",
+      "key": "2387_CR133",
+      "unstructured": "Wachter S, Mittelstadt B, Russell C (2018) Counterfactual explanations without opening the black box: automated decisions and the GDPR. Harvard J Law Technol 31(2):841–887",
+      "volume": "31",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.3389/fgene.2013.00270",
+      "author": "P Waldmann",
+      "doi-asserted-by": "publisher",
+      "first-page": "270",
+      "journal-title": "Front Genet",
+      "key": "2387_CR134",
+      "unstructured": "Waldmann P, Mészáros G, Gredler B, Fürst C, Sölkner J (2013) Evaluation of the lasso and the elastic net in genome-wide association studies. Front Genet 4:270",
+      "volume": "4",
+      "year": "2013"
+    },
+    {
+      "author": "D Watson",
+      "first-page": "446",
+      "journal-title": "BMJ",
+      "key": "2387_CR135",
+      "unstructured": "Watson D, Krutzinna J, Bruce IN, Griffiths CEM, McInnes IB, Barnes MR, Floridi L (2019) Clinical applications of machine learning algorithms: beyond the black box. BMJ 364:446–448",
+      "volume": "364",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s11229-020-02629-9",
+      "author": "D Watson",
+      "doi-asserted-by": "publisher",
+      "first-page": "9211",
+      "issue": "10",
+      "journal-title": "Synthese",
+      "key": "2387_CR136",
+      "unstructured": "Watson D, Floridi L (2021) The explanation game: a formal framework for interpretable machine learning. Synthese 198(10):9211–9242",
+      "volume": "198",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s10994-021-06030-6",
+      "author": "D Watson",
+      "doi-asserted-by": "publisher",
+      "first-page": "2107",
+      "issue": "8",
+      "journal-title": "Mach Learn",
+      "key": "2387_CR147",
+      "unstructured": "Watson D, Wright M (2021) Testing conditional independence in supervised learning algorithms. Mach Learn 110(8):2107–2129",
+      "volume": "110",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/biom.13392",
+      "author": "BD Williamson",
+      "doi-asserted-by": "publisher",
+      "first-page": "9",
+      "issue": "1",
+      "journal-title": "Biometrics",
+      "key": "2387_CR137",
+      "unstructured": "Williamson BD, Gilbert PB, Carone M, Simon N (2021) Nonparametric variable importance assessment using machine learning techniques. Biometrics 77(1):9–22",
+      "volume": "77",
+      "year": "2021"
+    },
+    {
+      "author": "J Woodward",
+      "key": "2387_CR138",
+      "unstructured": "Woodward J (2019) Scientific Explanation. In: Zalta EN (ed) The Stanford encyclopedia of philosophy (winter 201). Metaphysics Research Lab, Stanford University, Stanford",
+      "volume-title": "The Stanford encyclopedia of philosophy (winter 201)",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1021/acs.analchem.0c01660",
+      "author": "YR Xie",
+      "doi-asserted-by": "publisher",
+      "first-page": "9338",
+      "issue": "13",
+      "journal-title": "Anal Chem",
+      "key": "2387_CR139",
+      "unstructured": "Xie YR, Castro DC, Bell SE, Rubakhin SS, Sweedler JV (2020) Single-cell classification using mass spectrometry through interpretable machine learning. Anal Chem 92(13):9338–9347",
+      "volume": "92",
+      "year": "2020"
+    },
+    {
+      "key": "2387_CR140",
+      "unstructured": "Xu G, Duong TD, Li Q, Liu S, Wang X (2020) Causality learning: a new perspective for interpretable machine learning. arXiv:2006.16789"
+    },
+    {
+      "key": "2387_CR141",
+      "unstructured": "Yang H, Rudin C, Seltzer M (2017) Scalable Bayesian rule lists. In: International conference on machine learning"
+    },
+    {
+      "DOI": "10.1038/s41598-021-81773-9",
+      "author": "M Yap",
+      "doi-asserted-by": "publisher",
+      "first-page": "2641",
+      "issue": "1",
+      "journal-title": "Sci Rep",
+      "key": "2387_CR142",
+      "unstructured": "Yap M, Johnston RL, Foley H, MacDonald S, Kondrashova O, Tran KA, Waddell N (2021) Verifying explainability of a deep learning tissue classifier trained on RNA-seq data. Sci Rep 11(1):2641",
+      "volume": "11",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s42256-019-0052-1",
+      "author": "Z Zhang",
+      "doi-asserted-by": "publisher",
+      "first-page": "236",
+      "issue": "5",
+      "journal-title": "Nat Mach Intell",
+      "key": "2387_CR143",
+      "unstructured": "Zhang Z, Chen P, McGough M, Xing F, Wang C, Bui M, Yang L (2019) Pathologist-level interpretable whole-slide cancer diagnosis with deep learning. Nat Mach Intell 1(5):236–245",
+      "volume": "1",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1080/07350015.2019.1624293",
+      "author": "Q Zhao",
+      "doi-asserted-by": "publisher",
+      "first-page": "272",
+      "issue": "1",
+      "journal-title": "J Bus Econ Stat",
+      "key": "2387_CR144",
+      "unstructured": "Zhao Q, Hastie T (2021) Causal interpretations of black-box models. J Bus Econ Stat 39(1):272–281",
+      "volume": "39",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1111/j.1467-9868.2005.00503.x",
+      "author": "H Zou",
+      "doi-asserted-by": "publisher",
+      "first-page": "301",
+      "issue": "2",
+      "journal-title": "J R Stat Soc Ser B Stat Methodol",
+      "key": "2387_CR145",
+      "unstructured": "Zou H, Hastie T (2005) Regularization and variable selection via the elastic net. J R Stat Soc Ser B Stat Methodol 67(2):301–320",
+      "volume": "67",
+      "year": "2005"
+    }
+  ],
+  "reference-count": 146,
+  "references-count": 146,
+  "resource": {
+    "primary": {
+      "URL": "https://link.springer.com/10.1007/s00439-021-02387-9"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genet"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Interpretable machine learning for genomics"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "141"
+}

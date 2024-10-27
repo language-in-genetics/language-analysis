@@ -1,0 +1,828 @@
+{
+  "DOI": "10.1002/gepi.22389",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22389",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eIt is still unclear how genetic information, provided as single‐nucleotide polymorphisms (SNPs), can be most effectively integrated into risk prediction models for coronary heart disease (CHD) to add significant predictive value beyond clinical risk models. For the present study, a population‐based case‐cohort was used as a trainingset (451 incident cases, 1488 noncases) and an independent cohort as testset (160 incident cases, 2749 noncases). The following strategies to quantify genetic information were compared: A weighted genetic risk score including Metabochip SNPs associated with CHD in the literature (GRS\u003cjats:sub\u003eMetabo\u003c/jats:sub\u003e); selection of the most predictive SNPs among these literature‐confirmed variants using priority‐Lasso (PL\u003cjats:sub\u003eMetabo\u003c/jats:sub\u003e); validation of two comprehensive polygenic risk scores: GRS\u003cjats:sub\u003eGola\u003c/jats:sub\u003e based on Metabochip data, and GRS\u003cjats:sub\u003eKhera\u003c/jats:sub\u003e (available in the testset only) based on cross‐validated genome‐wide genotyping data. We used Cox regression to assess associations with incident CHD. \u003cjats:italic\u003eC\u003c/jats:italic\u003e‐index, category‐free net reclassification index (cfNRI) and relative integrated discrimination improvement (IDI\u003cjats:sub\u003erel\u003c/jats:sub\u003e) were used to quantify the predictive performance of genetic information beyond Framingham risk score variables. In contrast to GRS\u003cjats:sub\u003eMetabo\u003c/jats:sub\u003e and PL\u003cjats:sub\u003eMetabo\u003c/jats:sub\u003e, GRS\u003cjats:sub\u003eGola\u003c/jats:sub\u003e significantly improved the prediction (delta \u003cjats:italic\u003eC\u003c/jats:italic\u003e‐index [95% confidence interval]: 0.0087 [0.0044, 0.0130]; IDI\u003cjats:sub\u003erel\u003c/jats:sub\u003e: 0.0509 [0.0131, 0.0894]; cfNRI improved only in cases: 0.1761 [0.0253, 0.3219]). GRS\u003cjats:sub\u003eKhera\u003c/jats:sub\u003e yielded slightly worse prediction results than GRS\u003cjats:sub\u003eGola\u003c/jats:sub\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22389"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2021-02-08"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2021-05-04"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2021-06-03"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        }
+      ],
+      "family": "Bauer",
+      "given": "Alina",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        }
+      ],
+      "family": "Zierer",
+      "given": "Astrid",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "German Center for Diabetes Research (DZD), Partner München‐Neuherberg  München‐Neuherberg Germany"
+        },
+        {
+          "name": "Research Unit of Molecular Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        }
+      ],
+      "family": "Gieger",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Computational Biology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "Institute for Computational Biomedicine, Englander Institute for Precision Medicine, Department of Physiology and Biophysics Weill Cornell Medicine  New York USA"
+        }
+      ],
+      "family": "Büyüközkan",
+      "given": "Mustafa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Genetic Epidemiology Helmholtz Zentrum München ‐ German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "Chair of Genetic Epidemiology, IBE, Faculty of Medicine LMU  Munich Germany"
+        },
+        {
+          "name": "Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI), University Medical Center Johannes Gutenberg University  Mainz Germany"
+        },
+        {
+          "name": "Department of Internal Medicine I (Cardiology) Hospital of the Ludwig‐Maximilians‐University (LMU) Munich  Munich Germany"
+        }
+      ],
+      "family": "Müller‐Nurasyid",
+      "given": "Martina",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "German Center for Diabetes Research (DZD), Partner München‐Neuherberg  München‐Neuherberg Germany"
+        },
+        {
+          "name": "Research Unit of Molecular Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        }
+      ],
+      "family": "Grallert",
+      "given": "Harald",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "German Center for Diabetes Research (DZD), Partner München‐Neuherberg  München‐Neuherberg Germany"
+        },
+        {
+          "name": "Chair of Epidemiology, LMU Munich UNIKA‐T Augsburg  Augsburg Germany"
+        },
+        {
+          "name": "Independent Research Group Clinical Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        }
+      ],
+      "family": "Meisinger",
+      "given": "Christa",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Genetic Epidemiology Helmholtz Zentrum München ‐ German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "Chair of Genetic Epidemiology, IBE, Faculty of Medicine LMU  Munich Germany"
+        },
+        {
+          "name": "Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI), University Medical Center Johannes Gutenberg University  Mainz Germany"
+        }
+      ],
+      "family": "Strauch",
+      "given": "Konstantin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Human Genetics, School of Medicine Technische Universität München  München Germany"
+        },
+        {
+          "name": "Institute of Neurogenomics Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        }
+      ],
+      "family": "Prokisch",
+      "given": "Holger",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Endocrinology and Diabetology, Medical Faculty and University Hospital Düsseldorf Heinrich‐Heine‐University Düsseldorf  Düsseldorf Germany"
+        },
+        {
+          "name": "Institute for Clinical Diabetology, German Diabetes Center Leibniz Center for Diabetes Research at Heinrich Heine University Düsseldorf  Düsseldorf Germany"
+        },
+        {
+          "name": "German Center for Diabetes Research (DZD), Partner Düsseldorf  München‐Neuherberg Germany"
+        }
+      ],
+      "family": "Roden",
+      "given": "Michael",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "German Center for Diabetes Research (DZD), Partner München‐Neuherberg  München‐Neuherberg Germany"
+        },
+        {
+          "name": "Institute of Epidemiology and Medical Biometry University of Ulm  Ulm Germany"
+        }
+      ],
+      "family": "Peters",
+      "given": "Annette",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Computational Biology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "Institute for Computational Biomedicine, Englander Institute for Precision Medicine, Department of Physiology and Biophysics Weill Cornell Medicine  New York USA"
+        }
+      ],
+      "family": "Krumsiek",
+      "given": "Jan",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Endocrinology and Diabetology, Medical Faculty and University Hospital Düsseldorf Heinrich‐Heine‐University Düsseldorf  Düsseldorf Germany"
+        },
+        {
+          "name": "Institute for Clinical Diabetology, German Diabetes Center Leibniz Center for Diabetes Research at Heinrich Heine University Düsseldorf  Düsseldorf Germany"
+        },
+        {
+          "name": "German Center for Diabetes Research (DZD), Partner Düsseldorf  München‐Neuherberg Germany"
+        }
+      ],
+      "family": "Herder",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Epidemiology and Medical Biometry University of Ulm  Ulm Germany"
+        },
+        {
+          "name": "Deutsches Herzzentrum München Technische Universität München  Munich Germany"
+        },
+        {
+          "name": "German Centre for Cardiovascular Research (DZHK), partner site Munich Heart Alliance  Munich Germany"
+        }
+      ],
+      "family": "Koenig",
+      "given": "Wolfgang",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-8416-6440",
+      "affiliation": [
+        {
+          "name": "Institute of Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "German Center for Diabetes Research (DZD), Partner München‐Neuherberg  München‐Neuherberg Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Thorand",
+      "given": "Barbara",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Institute of Epidemiology Helmholtz Zentrum München – German Research Center for Environmental Health  Neuherberg Germany"
+        },
+        {
+          "name": "German Center for Diabetes Research (DZD), Partner München‐Neuherberg  München‐Neuherberg Germany"
+        }
+      ],
+      "family": "Huth",
+      "given": "Cornelia",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        4
+      ]
+    ],
+    "date-time": "2021-06-04T12:30:57Z",
+    "timestamp": 1622809857000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        8,
+        29
+      ]
+    ],
+    "date-time": "2023-08-29T12:35:27Z",
+    "timestamp": 1693312527000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001659",
+      "award": [
+        "TH‐784/2‐1",
+        "TH‐784/2‐2"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    },
+    {
+      "DOI": "10.13039/501100002347",
+      "doi-asserted-by": "publisher",
+      "name": "Bundesministerium für Bildung und Forschung"
+    },
+    {
+      "DOI": "10.13039/501100005722",
+      "doi-asserted-by": "publisher",
+      "name": "Ludwig-Maximilians-Universität München"
+    },
+    {
+      "DOI": "10.13039/501100013295",
+      "doi-asserted-by": "publisher",
+      "name": "Helmholtz Zentrum München"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2023,
+        10,
+        20
+      ]
+    ],
+    "date-time": "2023-10-20T05:03:12Z",
+    "timestamp": 1697778192779
+  },
+  "is-referenced-by-count": 6,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "6",
+  "issued": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        3
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "6",
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          9
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            6,
+            3
+          ]
+        ],
+        "date-time": "2021-06-03T00:00:00Z",
+        "timestamp": 1622678400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22389",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22389",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22389",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "633-650",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        3
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2021,
+        6,
+        3
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2021,
+        9
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1093/eurheartj/ehw450",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_2_1"
+    },
+    {
+      "DOI": "10.1016/s0735-1097(00)00804-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_3_1"
+    },
+    {
+      "DOI": "10.1161/CIRCGENETICS.110.957928",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_4_1"
+    },
+    {
+      "DOI": "10.1016/j.atherosclerosis.2015.10.104",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_5_1"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2020.04.027",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_6_1"
+    },
+    {
+      "DOI": "10.2307/2533444",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_7_1"
+    },
+    {
+      "DOI": "10.1016/s0895-4356(99)00102-x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_8_1"
+    },
+    {
+      "DOI": "10.1515/cclm-2016-0984",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_9_1"
+    },
+    {
+      "DOI": "10.1007/s00439-019-01996-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_10_1"
+    },
+    {
+      "key": "e_1_2_8_11_1",
+      "unstructured": "Canty A. \u0026Ripley B.(2020). boot: Bootstrap R (S‐Plus) Functions. R package version 1.3‐25."
+    },
+    {
+      "DOI": "10.1038/s41596-020-0353-1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_12_1"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.107.699579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_13_1"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.119.044434",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_14_1"
+    },
+    {
+      "DOI": "10.1017/CBO9780511802843",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_15_1"
+    },
+    {
+      "DOI": "10.1038/ng.2480",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_16_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.04.002",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_17_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0190549",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_18_1"
+    },
+    {
+      "DOI": "10.1093/ije/dyv070",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_19_1"
+    },
+    {
+      "DOI": "10.1001/jama.2019.22241",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_20_1"
+    },
+    {
+      "DOI": "10.1038/ng.3437",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_21_1"
+    },
+    {
+      "DOI": "10.1007/s12350-014-9908-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.22279",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_23_1"
+    },
+    {
+      "key": "e_1_2_8_24_1",
+      "unstructured": "Global Health Estimates 2016. (2018).Deaths by cause age sex by country and by region 2000‐2016. Geneva World Health Organization.https://www.who.int/healthinfo/global_burden_disease/estimates/en/"
+    },
+    {
+      "DOI": "10.1001/jama.1982.03320430047030",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_25_1"
+    },
+    {
+      "DOI": "10.1038/clpt.2011.93",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_26_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0019852",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_27_1"
+    },
+    {
+      "DOI": "10.1161/ATVBAHA.120.314856",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_28_1"
+    },
+    {
+      "DOI": "10.1055/s-2005-858235",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_29_1"
+    },
+    {
+      "DOI": "10.1038/ng.3874",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_30_1"
+    },
+    {
+      "DOI": "10.1186/s12933-020-01003-w",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_31_1"
+    },
+    {
+      "key": "e_1_2_8_32_1",
+      "unstructured": "Inoue E.(2018). nricens: NRI for Risk Prediction Models with Time to Event and Binary Response Data. R package version 1.6. https://CRAN.R-project.org/package=nricens"
+    },
+    {
+      "DOI": "10.1016/j.jacc.2018.07.079",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_33_1"
+    },
+    {
+      "DOI": "10.1161/CIRCGENETICS.116.001522",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_34_1"
+    },
+    {
+      "DOI": "10.1002/sim.6370",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_35_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0183-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_36_1"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1605086",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_37_1"
+    },
+    {
+      "key": "e_1_2_8_38_1",
+      "unstructured": "Klau S. Hornung R. \u0026Bauer A.(2017). Prioritylasso: Analyzing multiple Omics data with an offset approach. R package version 0.2.1. https://CRAN.R-project.org/package=prioritylasso"
+    },
+    {
+      "DOI": "10.1186/s12859-018-2344-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_39_1"
+    },
+    {
+      "DOI": "10.1161/01.ATV.0000248096.62495.73",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_40_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21603",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_41_1"
+    },
+    {
+      "DOI": "10.1016/0895-4356(91)90036-9",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_42_1"
+    },
+    {
+      "DOI": "10.1038/s41591-020-0800-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_43_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(14)61730-X",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_44_1"
+    },
+    {
+      "DOI": "10.1038/ng.2383",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_45_1"
+    },
+    {
+      "DOI": "10.1136/heartjnl-2016-309298",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_46_1"
+    },
+    {
+      "DOI": "10.1001/jama.2019.21782",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_47_1"
+    },
+    {
+      "DOI": "10.1007/s00439-016-1636-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_48_1"
+    },
+    {
+      "DOI": "10.1038/ng.3396",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_49_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1004754",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_50_1"
+    },
+    {
+      "DOI": "10.1001/jama.2010.119",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_51_1"
+    },
+    {
+      "DOI": "10.1002/sim.4085",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_52_1"
+    },
+    {
+      "DOI": "10.1515/CCLM.2010.340",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_53_1"
+    },
+    {
+      "author": "Prineas R. J.",
+      "key": "e_1_2_8_54_1",
+      "volume-title": "The Minnesota code manual of electrocardiographic findings: Standards and procedures for measurement and classification",
+      "year": "1982"
+    },
+    {
+      "DOI": "10.1002/9780470316696",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_55_1"
+    },
+    {
+      "DOI": "10.1001/jamacardio.2018.1717",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_56_1"
+    },
+    {
+      "DOI": "10.1038/ng.784",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_57_1"
+    },
+    {
+      "DOI": "10.1038/gim.2017.247",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_58_1"
+    },
+    {
+      "DOI": "10.18637/jss.v039.i05",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_59_1"
+    },
+    {
+      "DOI": "10.1093/eurheartj/ehv462",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_60_1"
+    },
+    {
+      "DOI": "10.2337/diabetes.54.10.2932",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_61_1"
+    },
+    {
+      "DOI": "10.1210/clinem/dgaa953",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_62_1"
+    },
+    {
+      "DOI": "10.1016/0895-4356(88)90084-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_63_1"
+    },
+    {
+      "DOI": "10.1161/01.cir.90.1.583",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_64_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_65_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1002793",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_66_1"
+    },
+    {
+      "DOI": "10.18637/jss.v045.i03",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_67_1"
+    },
+    {
+      "DOI": "10.1002/(sici)1097-0258(19990330)18:63.0.co;2-r",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_68_1"
+    },
+    {
+      "DOI": "10.1161/CIRCRESAHA.117.312086",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_69_1"
+    },
+    {
+      "DOI": "10.1136/heartjnl-2016-310789",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_70_1"
+    },
+    {
+      "key": "e_1_2_8_71_1",
+      "unstructured": "Wetterstrand K. A.(2020). DNA sequencing costs: Data from the NHGRI Genome Sequencing Program (GSP).www.genome.gov/sequencingcostsdata"
+    },
+    {
+      "DOI": "10.1186/s12920-020-00760-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_72_1"
+    },
+    {
+      "DOI": "10.1161/CIRCGEN.119.002481",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_8_73_1"
+    }
+  ],
+  "reference-count": 72,
+  "references-count": 72,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22389"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Comparison of genetic risk prediction models to improve prediction of coronary heart disease in two large cohorts of the MONICA/KORA study"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "45"
+}

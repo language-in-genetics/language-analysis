@@ -1,0 +1,650 @@
+{
+  "DOI": "10.1002/gepi.22342",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22342",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eGene–gene interaction (G × G) is thought to fill the gap between the estimated heritability of complex diseases and the limited genetic proportion explained by identified single‐nucleotide polymorphisms. The current tools for exploring G × G were often developed for case‐control designs with less considerations for their applications in families. Family‐based studies are robust against bias led from population stratification in genetic studies and helpful in understanding G × G. We proposed a new algorithm epistasis sparse factor analysis (EPISFA) and epistasis sparse factor analysis for linkage disequilibrium (EPISFA‐LD) based on unsupervised machine learning to screen G × G. Extensive simulations were performed to compare EPISFA/EPISFA‐LD with a classical family‐based algorithm FAM‐MDR (family‐based multifactor dimensionality reduction). The results showed that EPISFA/EPISFA‐LD is a tool of both high power and computational efficiency that could be applied in family designs and is applicable within high‐dimensionality datasets. Finally, we applied EPISFA/EPISFA‐LD to a real dataset drawn from the Fangshan/family‐based Ischemic Stroke Study in China. Five pairs of G × G were discovered by EPISFA/EPISFA‐LD, including three pairs verified by other algorithms (FAM‐MDR and logistic), and an additional two pairs uniquely identified by EPISFA/EPISFA‐LD only. The results from EPISFA might offer new insights for understanding the genetic etiology of complex diseases. EPISFA/EPISFA‐LD was implemented in R. All relevant source code as well as simulated data could be freely downloaded from \u003cjats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/doublexism/episfa\"\u003ehttps://github.com/doublexism/episfa\u003c/jats:ext-link\u003e.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22342"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2019-11-12"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-06-21"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-09-01"
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health Peking University Beijing China"
+        }
+      ],
+      "family": "Xiang",
+      "given": "Xiao",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-0186-7955",
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health Peking University Beijing China"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Wang",
+      "given": "Siyue",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health Capital Medical University Beijing China"
+        }
+      ],
+      "family": "Liu",
+      "given": "Tianyi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health Peking University Beijing China"
+        }
+      ],
+      "family": "Wang",
+      "given": "Mengying",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Clinical Medicine, School of Medicine Peking University Beijing China"
+        }
+      ],
+      "family": "Li",
+      "given": "Jiawen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health Peking University Beijing China"
+        }
+      ],
+      "family": "Jiang",
+      "given": "Jin",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health Peking University Beijing China"
+        }
+      ],
+      "family": "Wu",
+      "given": "Tao",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Epidemiology and Biostatistics, School of Public Health Peking University Beijing China"
+        }
+      ],
+      "family": "Hu",
+      "given": "Yonghua",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        1
+      ]
+    ],
+    "date-time": "2020-09-01T11:34:13Z",
+    "timestamp": 1598960053000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        4
+      ]
+    ],
+    "date-time": "2023-09-04T23:12:03Z",
+    "timestamp": 1693869123000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000001",
+      "award": [
+        "81230066"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Science Foundation"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        14
+      ]
+    ],
+    "date-time": "2024-03-14T09:43:44Z",
+    "timestamp": 1710409424525
+  },
+  "is-referenced-by-count": 1,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "8",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "8",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+      "content-version": "am",
+      "delay-in-days": 365,
+      "start": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2021-09-01T00:00:00Z",
+        "timestamp": 1630454400000
+      }
+    },
+    {
+      "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            9,
+            1
+          ]
+        ],
+        "date-time": "2020-09-01T00:00:00Z",
+        "timestamp": 1598918400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22342",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22342",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/gepi.22342",
+      "content-type": "application/pdf",
+      "content-version": "am",
+      "intended-application": "syndication"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22342",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "811-824",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        11
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1161/01.STR.24.1.35",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_2_1"
+    },
+    {
+      "DOI": "10.1111/ane.12847",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_3_1"
+    },
+    {
+      "DOI": "10.1161/CIR.0000000000000485",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_4_1"
+    },
+    {
+      "DOI": "10.1007/s00439-015-1560-7",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_5_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1820799116",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_6_1"
+    },
+    {
+      "DOI": "10.1016/j.cognition.2017.12.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_7_1"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0010304",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_8_1"
+    },
+    {
+      "article-title": "CDH13 genetic polymorphisms, adiponectin and ischemic stroke: A Chinese family‐based Sib‐pair study",
+      "author": "Chen L.",
+      "first-page": "35",
+      "issue": "1",
+      "journal-title": "Biomedical and Environmental Sciences",
+      "key": "e_1_2_7_9_1",
+      "volume": "30",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.4310/SII.2011.v4.n3.a4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_10_1"
+    },
+    {
+      "DOI": "10.4310/SII.2010.v3.n4.a1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_11_1"
+    },
+    {
+      "DOI": "10.2337/db10-1321",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_12_1"
+    },
+    {
+      "DOI": "10.1038/nrg2579",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_13_1"
+    },
+    {
+      "DOI": "10.1126/science.aaf1420",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_14_1"
+    },
+    {
+      "DOI": "10.1038/nrg2809",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_15_1"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.0020123",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_16_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(13)61953-4",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_17_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21990",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_18_1"
+    },
+    {
+      "DOI": "10.1515/revneuro-2016-0055",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_19_1"
+    },
+    {
+      "DOI": "10.1038/ng.3259",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_20_1"
+    },
+    {
+      "DOI": "10.1007/978-3-319-97864-2_2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_21_1"
+    },
+    {
+      "DOI": "10.1201/b18401",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21786",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_23_1"
+    },
+    {
+      "DOI": "10.1016/j.lfs.2018.12.047",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_24_1"
+    },
+    {
+      "DOI": "10.1002/cphg.48",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_25_1"
+    },
+    {
+      "DOI": "10.1007/s11222-014-9458-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_26_1"
+    },
+    {
+      "article-title": "A comparison of case‐control and case‐only designs to investigate gene‐environment interactions using breast cancer data",
+      "author": "Hassanzadeh J.",
+      "first-page": "112",
+      "issue": "2",
+      "journal-title": "Iranian Journal of Medical Sciences",
+      "key": "e_1_2_7_27_1",
+      "volume": "37",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/ejhg.2012.308",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_28_1"
+    },
+    {
+      "DOI": "10.3390/ijms18122652",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_29_1"
+    },
+    {
+      "DOI": "10.1159/000099183",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_30_1"
+    },
+    {
+      "DOI": "10.1038/nrg3713",
+      "article-title": "Disease genetics: Insights into missing heritability",
+      "author": "Koch L.",
+      "doi-asserted-by": "crossref",
+      "first-page": "218",
+      "issue": "4",
+      "journal-title": "Nature Reviews Genetics",
+      "key": "e_1_2_7_31_1",
+      "volume": "15",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/nrg1839",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_32_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21720",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_33_1"
+    },
+    {
+      "DOI": "10.1038/s41431-018-0320-2",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_34_1"
+    },
+    {
+      "DOI": "10.1016/S0140-6736(12)61728-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_35_1"
+    },
+    {
+      "DOI": "10.1186/gm561",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_36_1"
+    },
+    {
+      "DOI": "10.1212/WNL.0000000000002528",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_37_1"
+    },
+    {
+      "DOI": "10.1038/nature08494",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_38_1"
+    },
+    {
+      "DOI": "10.1038/ng1537",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_39_1"
+    },
+    {
+      "DOI": "10.1002/gepi.20128",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_40_1"
+    },
+    {
+      "DOI": "10.1038/srep36671",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_41_1"
+    },
+    {
+      "DOI": "10.4061/2011/296374",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_42_1"
+    },
+    {
+      "article-title": "Research progress in machine learning methods for gene‐gene interaction detection",
+      "author": "Peng Z. Y.",
+      "first-page": "218",
+      "issue": "3",
+      "journal-title": "Yi Chuan",
+      "key": "e_1_2_7_43_1",
+      "volume": "40",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.2337/db10-1645",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_44_1"
+    },
+    {
+      "DOI": "10.21037/atm.2018.04.05",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_45_1"
+    },
+    {
+      "DOI": "10.1038/ng.2385",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_46_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0b013e318212fec6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_47_1"
+    },
+    {
+      "DOI": "10.1093/bib/bbr012",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_48_1"
+    },
+    {
+      "DOI": "10.1186/s12859-016-1145-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_49_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw077",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_50_1"
+    },
+    {
+      "DOI": "10.1186/1471-2350-8-60",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_51_1"
+    },
+    {
+      "DOI": "10.1007/s11336-017-9575-8",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_52_1"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.07.021",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_53_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btp622",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_54_1"
+    },
+    {
+      "DOI": "10.1534/genetics.117.199752",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_55_1"
+    },
+    {
+      "DOI": "10.1002/9780470015902.a0022498",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_56_1"
+    },
+    {
+      "DOI": "10.1016/j.procs.2017.05.210",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_57_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btn652",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_58_1"
+    },
+    {
+      "DOI": "10.1097/00001648-199903000-00014",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_59_1"
+    },
+    {
+      "DOI": "10.2307/2531734",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_60_1"
+    },
+    {
+      "DOI": "10.1214/09-AOS729",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_61_1"
+    },
+    {
+      "DOI": "10.1073/pnas.1119675109",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_7_62_1"
+    }
+  ],
+  "reference-count": 61,
+  "references-count": 61,
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22342"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Exploring gene–gene interaction in family‐based data with an unsupervised machine learning method: EPISFA"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

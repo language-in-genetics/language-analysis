@@ -1,0 +1,498 @@
+{
+  "DOI": "10.1002/gepi.22336",
+  "ISSN": [
+    "0741-0395",
+    "1098-2272"
+  ],
+  "URL": "http://dx.doi.org/10.1002/gepi.22336",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:p\u003eImaging technology and machine learning algorithms for disease classification set the stage for high‐throughput phenotyping and promising new avenues for genome‐wide association studies (GWAS). Despite emerging algorithms, there has been no successful application in GWAS so far. We establish machine learning‐based phenotyping in genetic association analysis as misclassification problem. To evaluate chances and challenges, we performed a GWAS based on automatically classified age‐related macular degeneration (AMD) in UK Biobank (images from 135,500 eyes; 68,400 persons). We quantified misclassification of automatically derived AMD in internal validation data (4,001 eyes; 2,013 persons) and developed a maximum likelihood approach (MLA) to account for it when estimating genetic association. We demonstrate that our MLA guards against bias and artifacts in simulation studies. By combining a GWAS on automatically derived AMD and our MLA in UK Biobank data, we were able to dissect true association (\u003cjats:italic\u003eARMS2\u003c/jats:italic\u003e/\u003cjats:italic\u003eHTRA1\u003c/jats:italic\u003e, \u003cjats:italic\u003eCFH\u003c/jats:italic\u003e) from artifacts (near \u003cjats:italic\u003eHERC2\u003c/jats:italic\u003e) and identified eye color as associated with the misclassification. On this example, we provide a proof‐of‐concept that a GWAS using machine learning‐derived disease classification yields relevant results and that misclassification needs to be considered in analysis. These findings generalize to other phenotypes and emphasize the utility of genetic data for understanding misclassification structure of machine learning algorithms.\u003c/jats:p\u003e",
+  "alternative-id": [
+    "10.1002/gepi.22336"
+  ],
+  "archive": [
+    "Portico"
+  ],
+  "assertion": [
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 0,
+      "value": "2019-12-11"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 1,
+      "value": "2020-06-21"
+    },
+    {
+      "group": {
+        "label": "Publication History",
+        "name": "publication_history"
+      },
+      "label": "Published",
+      "name": "published",
+      "order": 2,
+      "value": "2020-08-02"
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0001-6582-1174",
+      "affiliation": [
+        {
+          "name": "Department of Genetic Epidemiology University of Regensburg Regensburg Germany"
+        },
+        {
+          "name": "Statistical Consulting Unit StaBLab, Department of Statistics Ludwig Maximilian University of Munich Munich Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Guenther",
+      "given": "Felix",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0001-8223-6137",
+      "affiliation": [
+        {
+          "name": "Department of Genetic Epidemiology University of Regensburg Regensburg Germany"
+        },
+        {
+          "name": "Department of Ophthalmology University Hospital Regensburg Regensburg Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Brandl",
+      "given": "Caroline",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0292-5421",
+      "affiliation": [
+        {
+          "name": "Department of Genetic Epidemiology University of Regensburg Regensburg Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Winkler",
+      "given": "Thomas W.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetic Epidemiology University of Regensburg Regensburg Germany"
+        }
+      ],
+      "family": "Wanner",
+      "given": "Veronika",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7832-1942",
+      "affiliation": [
+        {
+          "name": "Department of Genetic Epidemiology University of Regensburg Regensburg Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Stark",
+      "given": "Klaus",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-6372-2487",
+      "affiliation": [
+        {
+          "name": "Statistical Consulting Unit StaBLab, Department of Statistics Ludwig Maximilian University of Munich Munich Germany"
+        }
+      ],
+      "authenticated-orcid": false,
+      "family": "Kuechenhoff",
+      "given": "Helmut",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [
+        {
+          "name": "Department of Genetic Epidemiology University of Regensburg Regensburg Germany"
+        }
+      ],
+      "family": "Heid",
+      "given": "Iris M.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Genetic Epidemiology"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "onlinelibrary.wiley.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        2
+      ]
+    ],
+    "date-time": "2020-08-02T12:24:18Z",
+    "timestamp": 1596371058000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        3
+      ]
+    ],
+    "date-time": "2023-09-03T05:54:22Z",
+    "timestamp": 1693720462000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/501100001659",
+      "award": [
+        "DFG HE 3690/5‐1"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Deutsche Forschungsgemeinschaft"
+    },
+    {
+      "DOI": "10.13039/100000009",
+      "award": [
+        "NIH R01 EY RES 511967"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Foundation for the National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        3,
+        1
+      ]
+    ],
+    "date-time": "2024-03-01T00:55:01Z",
+    "timestamp": 1709254501876
+  },
+  "is-referenced-by-count": 10,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0741-0395"
+    },
+    {
+      "type": "electronic",
+      "value": "1098-2272"
+    }
+  ],
+  "issue": "7",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        2
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "7",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            2
+          ]
+        ],
+        "date-time": "2020-08-02T00:00:00Z",
+        "timestamp": 1596326400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1002%2Fgepi.22336",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22336",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/gepi.22336",
+      "content-type": "application/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/gepi.22336",
+      "content-type": "unspecified",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "311",
+  "page": "759-777",
+  "prefix": "10.1002",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        2
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        8,
+        2
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        10
+      ]
+    ]
+  },
+  "publisher": "Wiley",
+  "reference": [
+    {
+      "DOI": "10.1038/s41598-018-26629-5",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_2_1"
+    },
+    {
+      "DOI": "10.1093/nar/gky1120",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_3_1"
+    },
+    {
+      "DOI": "10.1001/jamaophthalmol.2017.3782",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_4_1"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_5_1"
+    },
+    {
+      "DOI": "10.1201/9781420010138",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_6_1"
+    },
+    {
+      "DOI": "10.1186/1471-2415-10-31",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_7_1"
+    },
+    {
+      "DOI": "10.4324/9780203771587",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_8_1"
+    },
+    {
+      "DOI": "10.1007/978-3-319-58347-1_1",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_9_1"
+    },
+    {
+      "DOI": "10.1001/archopht.123.11.1484",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_10_1"
+    },
+    {
+      "DOI": "10.1111/j.0006-341X.1999.00997.x",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_11_1"
+    },
+    {
+      "DOI": "10.1038/ng.3448",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_12_1"
+    },
+    {
+      "DOI": "10.1016/j.ophtha.2018.02.037",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_13_1"
+    },
+    {
+      "DOI": "10.1002/bimj.201900039",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_14_1"
+    },
+    {
+      "DOI": "10.1016/S0304-4076(98)00015-3",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_15_1"
+    },
+    {
+      "key": "e_1_2_13_16_1",
+      "unstructured": "Heinze‐Deml C. \u0026Meinshausen N.(2017). Conditional variance penalties and domain shift robustness. arXiv:1710.11469 [stat.ML]."
+    },
+    {
+      "DOI": "10.1371/journal.pone.0164095",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_17_1"
+    },
+    {
+      "DOI": "10.3109/09286586.2013.867512",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_18_1"
+    },
+    {
+      "DOI": "10.1093/biostatistics/kxq039",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_19_1"
+    },
+    {
+      "DOI": "10.1016/j.media.2017.07.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_20_1"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0144-6",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_21_1"
+    },
+    {
+      "DOI": "10.1097/EDE.0b013e3182117c85",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_22_1"
+    },
+    {
+      "DOI": "10.1002/gepi.21742",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_23_1"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv402",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_24_1"
+    },
+    {
+      "DOI": "10.1038/ng.3643",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_25_1"
+    },
+    {
+      "DOI": "10.1016/j.patcog.2011.06.019",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_26_1"
+    },
+    {
+      "DOI": "10.1038/ng.3314",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_27_1"
+    },
+    {
+      "DOI": "10.1093/biomet/86.4.843",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_28_1"
+    },
+    {
+      "DOI": "10.1016/j.ophtha.2018.11.015",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_29_1"
+    },
+    {
+      "key": "e_1_2_13_30_1",
+      "unstructured": "R Core Team.(2019).R: A language and environment for statistical computing. Retrieved fromhttps://www.r-project.org/"
+    },
+    {
+      "DOI": "10.1186/s12877-015-0122-0",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_31_1"
+    },
+    {
+      "key": "e_1_2_13_32_1",
+      "unstructured": "Stephane C. (2018). pwr: Basic functions for power analysis. Retrieved fromhttps://cran.r-project.org/package=pwr"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2007.11.005",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_33_1"
+    },
+    {
+      "DOI": "10.1001/jama.2017.18152",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_34_1"
+    },
+    {
+      "DOI": "10.1038/nature14962",
+      "doi-asserted-by": "publisher",
+      "key": "e_1_2_13_35_1"
+    }
+  ],
+  "reference-count": 34,
+  "references-count": 34,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/867697",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://onlinelibrary.wiley.com/doi/10.1002/gepi.22336"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Genetic Epidemiology"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Chances and challenges of machine learning‐based disease classification in genetic association studies illustrated on age‐related macular degeneration"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1002/crossmark_policy",
+  "volume": "44"
+}

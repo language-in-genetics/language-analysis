@@ -1,0 +1,362 @@
+{
+  "DOI": "10.1186/s40246-020-00288-y",
+  "ISSN": [
+    "1479-7364"
+  ],
+  "URL": "http://dx.doi.org/10.1186/s40246-020-00288-y",
+  "abstract": "\u003cjats:title\u003eAbstract\u003c/jats:title\u003e\u003cjats:sec\u003e\u003cjats:title\u003eIntroduction\u003c/jats:title\u003e\u003cjats:p\u003eThe course of COVID-19 varies from asymptomatic to severe in patients. The basis for this range in symptoms is unknown. One possibility is that genetic variation is partly responsible for the highly variable response. We evaluated how well a genetic risk score based on chromosomal-scale length variation and machine learning classification algorithms could predict severity of response to SARS-CoV-2 infection.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eMethods\u003c/jats:title\u003e\u003cjats:p\u003eWe compared 981 patients from the UK Biobank dataset who had a severe reaction to SARS-CoV-2 infection before 27 April 2020 to a similar number of age-matched patients drawn for the general UK Biobank population. For each patient, we built a profile of 88 numbers characterizing the chromosomal-scale length variability of their germ line DNA. Each number represented one quarter of the 22 autosomes. We used the machine learning algorithm XGBoost to build a classifier that could predict whether a person would have a severe reaction to COVID-19 based only on their 88-number classification.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eResults\u003c/jats:title\u003e\u003cjats:p\u003eWe found that the XGBoost classifier could differentiate between the two classes at a significant level (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 2 · 10\u003cjats:sup\u003e−11\u003c/jats:sup\u003e) as measured against a randomized control and (\u003cjats:italic\u003ep\u003c/jats:italic\u003e = 3 · 10\u003cjats:sup\u003e−14\u003c/jats:sup\u003e) as measured against the expected value of a random guessing algorithm (AUC = 0.5). However, we found that the AUC of the classifier was only 0.51, too low for a clinically useful test.\u003c/jats:p\u003e\u003c/jats:sec\u003e\u003cjats:sec\u003e\u003cjats:title\u003eConclusion\u003c/jats:title\u003e\u003cjats:p\u003eGenetics play a role in the severity of COVID-19, but we cannot yet develop a useful genetic test to predict severity.\u003c/jats:p\u003e\u003c/jats:sec\u003e",
+  "alternative-id": [
+    "288"
+  ],
+  "article-number": "36",
+  "assertion": [
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Received",
+      "name": "received",
+      "order": 1,
+      "value": "17 July 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "Accepted",
+      "name": "accepted",
+      "order": 2,
+      "value": "30 September 2020"
+    },
+    {
+      "group": {
+        "label": "Article History",
+        "name": "ArticleHistory"
+      },
+      "label": "First Online",
+      "name": "first_online",
+      "order": 3,
+      "value": "9 October 2020"
+    },
+    {
+      "group": {
+        "label": "Ethics approval and consent to participate",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 1,
+      "value": "Ethical approval and participant consent was collected by UK Biobank at the time participants enrolled. This paper is an analysis of anonymized data provided by UK Biobank. According to UC Irvine’s IRB, analysis of anonymized data does not constitute Human Subjects Research."
+    },
+    {
+      "group": {
+        "label": "Consent for publication",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 2,
+      "value": "Not applicable."
+    },
+    {
+      "group": {
+        "label": "Competing interests",
+        "name": "EthicsHeading"
+      },
+      "name": "Ethics",
+      "order": 3,
+      "value": "The authors declare that they have no competing interests."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Toh",
+      "given": "Christopher",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-7995-5197",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Brody",
+      "given": "James P.",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "Human Genomics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": false,
+    "domain": [
+      "link.springer.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        10,
+        9
+      ]
+    ],
+    "date-time": "2020-10-09T22:02:31Z",
+    "timestamp": 1602280951000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        22
+      ]
+    ],
+    "date-time": "2022-11-22T21:04:38Z",
+    "timestamp": 1669151078000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        5,
+        1
+      ]
+    ],
+    "date-time": "2024-05-01T00:43:37Z",
+    "timestamp": 1714524217317
+  },
+  "is-referenced-by-count": 9,
+  "issn-type": [
+    {
+      "type": "electronic",
+      "value": "1479-7364"
+    }
+  ],
+  "issue": "1",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        10,
+        9
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "1",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          12
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            9
+          ]
+        ],
+        "date-time": "2020-10-09T00:00:00Z",
+        "timestamp": 1602201600000
+      }
+    },
+    {
+      "URL": "https://creativecommons.org/licenses/by/4.0",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            9
+          ]
+        ],
+        "date-time": "2020-10-09T00:00:00Z",
+        "timestamp": 1602201600000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-020-00288-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/article/10.1186/s40246-020-00288-y/fulltext.html",
+      "content-type": "text/html",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://link.springer.com/content/pdf/10.1186/s40246-020-00288-y.pdf",
+      "content-type": "application/pdf",
+      "content-version": "vor",
+      "intended-application": "similarity-checking"
+    }
+  ],
+  "member": "297",
+  "prefix": "10.1186",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        10,
+        9
+      ]
+    ]
+  },
+  "published-online": {
+    "date-parts": [
+      [
+        2020,
+        10,
+        9
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        12
+      ]
+    ]
+  },
+  "publisher": "Springer Science and Business Media LLC",
+  "reference": [
+    {
+      "DOI": "10.1146/annurev-genet-120116-023425",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR1",
+      "unstructured": "Kenney AD, Dowdle JA, Bozzacco L, McMichael TM, St Gelais C, Panfil AR, et al. Human genetic determinants of viral diseases. Annual review of genetics [Internet]. Annu Rev Genet; 2017 [cited 2020 Jun 15];51:241–63. Available from: http://www.ncbi.nlm.nih.gov/pubmed/28853921."
+    },
+    {
+      "DOI": "10.1038/nature10921",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR2",
+      "unstructured": "Everitt AR, Clare S, Pertel T, John SP, Wash RS, Smith SE, et al. IFITM3 restricts the morbidity and mortality associated with influenza. Nature [Internet]. Nature; 2012 [cited 2020 Jun 15];484:519–23. Available from: http://www.ncbi.nlm.nih.gov/pubmed/22446628."
+    },
+    {
+      "key": "288_CR3",
+      "unstructured": "Toh C, Brody JP. Analysis of copy number variation from germline DNA can predict individual cancer risk. bioRxiv [Internet]. Cold Spring Harbor Laboratory; 2018 [cited 2018 Jun 3];303339. Available from: https://www.biorxiv.org/content/early/2018/04/17/303339."
+    },
+    {
+      "DOI": "10.4137/GEI.S15002",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR4",
+      "unstructured": "Ding X, Tsang S-Y, Ng S-K, Xue H. Application of machine learning to development of copy number variation-based prediction of cancer risk. Genomics Insights [Internet]. SAGE PublicationsSage UK: London, England; 2014 [cited 2020 Sep 14];7:GEI.S15002. Available from: http://journals.sagepub.com/doi/10.4137/GEI.S15002."
+    },
+    {
+      "DOI": "10.1101/2020.03.24.20043018",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR5",
+      "unstructured": "Davies NG, Klepac P, Liu Y, Prem K, Jit M, Eggo RM. Age-dependent effects in the transmission and control of COVID-19 epidemics. Nature Medicine [Internet]. Nature Publishing Group; 2020 [cited 2020 22];1–7. Available from: http://www.nature.com/articles/s41591-020-0962-9."
+    },
+    {
+      "DOI": "10.15585/mmwr.mm6912e2",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR6",
+      "unstructured": "Bialek S, Boundy E, Bowen V, Chow N, Cohn A, Dowling N, et al. Severe outcomes among patients with coronavirus disease 2019 (COVID-19) — United States, February 12–March 16, 2020. MMWR Morbidity and Mortality Weekly Report [Internet]. 2020 [cited 2020 22];69:343–6. Available from: http://www.cdc.gov/mmwr/volumes/69/wr/mm6912e2.htm?s_cid=mm6912e2_w."
+    },
+    {
+      "DOI": "10.1145/2939672.2939785",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR7",
+      "unstructured": "Chen T, Guestrin C. XGBoost. Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD ’16 [Internet]. New York, New York, USA: ACM Press; 2016 [cited 2018 Jan 28]. p. 785–94. Available from: http://dl.acm.org/citation.cfm?doid = 2939672.2939785."
+    },
+    {
+      "key": "288_CR8",
+      "unstructured": "Olson RS, Cava W la, Mustahsan Z, Varik A, Moore JH. Data-driven advice for applying machine learning to bioinformatics problems. Pacific Symposium on Biocomputing Pacific Symposium on Biocomputing [Internet]. NIH Public Access; 2018 [cited 2020 Jun 16];23:192–203. Available from: http://www.ncbi.nlm.nih.gov/pubmed/29218881."
+    },
+    {
+      "DOI": "10.1001/jama.2020.13719",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR9",
+      "unstructured": "van der Made CI, Simons A, Schuurs-Hoeijmakers J, van den Heuvel G, Mantere T, Kersten S, et al. Presence of genetic variants among young men with severe COVID-19. JAMA [Internet]. American Medical Association; 2020 [cited 2020 18];324:663. Available from: https://jamanetwork.com/journals/jama/fullarticle/2768926."
+    },
+    {
+      "DOI": "10.1101/2020.05.05.20075507",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR10",
+      "unstructured": "Kolin DA, Kulm S, Elemento O. Clinical and genetic characteristics of Covid-19 patients from UK Biobank. medRxiv [Internet]. Cold Spring Harbor Laboratory Press; 2020 [cited 2020 Jun 20];2020.05.05.20075507. Available from: https://www.medrxiv.org/content/10.1101/2020.05.05.20075507v1."
+    },
+    {
+      "key": "288_CR11",
+      "unstructured": "Ellinghaus D, Degenhardt F, Bujanda L, Buti M, Albillos A, Invernizzi P, et al. Genomewide association study of severe Covid-19 with respiratory failure. New England Journal of Medicine [Internet]. Massachusetts Medical Society; 2020 [cited 2020 20];NEJMoa2020283. Available from: http://www.nejm.org/doi/10.1056/NEJMoa2020283."
+    },
+    {
+      "DOI": "10.1038/s41431-020-0636-6",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR12",
+      "unstructured": "The COVID-19 Host Genetics Initiative, a global initiative to elucidate the role of host genetic factors in susceptibility and severity of the SARS-CoV-2 virus pandemic. European Journal of Human Genetics [Internet]. Nature Publishing Group; 2020 [cited 2020 20];28:715–8. Available from: http://www.nature.com/articles/s41431-020-0636-6."
+    },
+    {
+      "key": "288_CR13",
+      "unstructured": "Covid-19 Host Genetics Initiative Results [Internet]. [cited 2020 Jun 29]. Available from: https://www.covid19hg.org/results/."
+    },
+    {
+      "DOI": "10.1001/jama.2020.8598",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR14",
+      "unstructured": "Webb Hooper M, Nápoles AM, Pérez-Stable EJ. COVID-19 and Racial/Ethnic Disparities. JAMA [Internet]. American Medical Association; 2020 [cited 2020 14];323:2466. Available from: https://jamanetwork.com/journals/jama/fullarticle/2766098."
+    },
+    {
+      "DOI": "10.15585/mmwr.mm6915e3",
+      "doi-asserted-by": "crossref",
+      "key": "288_CR15",
+      "unstructured": "Garg S, Kim L, Whitaker M, O’Halloran A, Cummings C, Holstein R, et al. Hospitalization rates and characteristics of patients hospitalized with laboratory-confirmed coronavirus disease 2019 — COVID-NET, 14 States, March 1–30, 2020. MMWR Morbidity and Mortality Weekly Report [Internet]. 2020 [cited 2020 14];69:458–64. Available from: http://www.cdc.gov/mmwr/volumes/69/wr/mm6915e3.htm?s_cid=mm6915e3_w."
+    }
+  ],
+  "reference-count": 15,
+  "references-count": 15,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-45354/v2",
+        "id-type": "doi"
+      },
+      {
+        "asserted-by": "object",
+        "id": "10.21203/rs.3.rs-45354/v1",
+        "id-type": "doi"
+      },
+      {
+        "asserted-by": "object",
+        "id": "10.1101/2020.07.06.20147637",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://humgenomics.biomedcentral.com/articles/10.1186/s40246-020-00288-y"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "Hum Genomics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Evaluation of a genetic risk score for severity of COVID-19 using human chromosomal-scale length variation"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+  "volume": "14"
+}
