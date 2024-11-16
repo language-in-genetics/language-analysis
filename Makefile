@@ -5,16 +5,21 @@ BINARY_NAME=jsonreader
 # Build directory
 BUILD_DIR=bin
 
-all: clean build
+all: bin/jsonreader bin/pgjsontool
+	echo Done
 
-build:
-	@echo "Building..."
-	@mkdir -p $(BUILD_DIR)
-	@go build -o $(BUILD_DIR)/$(BINARY_NAME) ./cmd/jsonreader
+bin/jsonreader: cmd/jsonreader/main.go
+	@mkdir -p bin
+	go build -o bin/jsonreader ./cmd/jsonreader
+
+bin/pgjsontool: cmd/pgjsontool/main.go
+	mkdir -p bin
+	go build -o bin/pgjsontool ./cmd/pgjsontool
+
 
 clean:
 	@echo "Cleaning..."
-	@rm -rf $(BUILD_DIR)
+	@rm -rf bin
 
 test:
 	@echo "Running tests..."
@@ -36,8 +41,8 @@ dev-deps:
 
 # Run the program with default settings
 run: build
-	@./$(BUILD_DIR)/$(BINARY_NAME)
+	@./bin/$(BINARY_NAME)
 
 # Run with specific directory
 run-dir: build
-	@./$(BUILD_DIR)/$(BINARY_NAME) -dir $(dir)
+	@./bin/$(BINARY_NAME) -dir $(dir)
