@@ -2,6 +2,8 @@
 
 So far, this is just a program to extract data from the CrossRef database.
 
+In the `database` directory, there's an alternate way of processing/manipulating the data.
+
 ## Usage (full details)
 
 Skip this if you just want the JSON data.
@@ -22,3 +24,5 @@ Run `find articles -type f -exec git add '{}' ';'`
 ## We now have the JSON data
 
 Next stop: fetching the PDFs for each of those DOIs.
+
+
