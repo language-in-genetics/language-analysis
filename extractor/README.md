@@ -71,17 +71,17 @@ It requires the Python OpenAI library. Create a virtualenv if you haven't alread
 
 Then you should be able to run
 
-`./bulkquery.py --limit 1000 --database openai-batch.sqlite`
+`./bulkquery.py --limit 1000 --database openai-batch.sqlite  ../articles`
 
 If you want to add `--batch-id-save-file` you can, which might make it easier to monitor.
 
 `./batchcheck.py --database openai-batch.sqlite`
 
-Or, you can use `--monitor` and `--batch-id`. That will let you watch how quickly it processes them.
+Or, you can use `--monitor` and `--only-batch`. That will let you watch how quickly it processes them.
 
 Finally, run
 
-`./batchfetch.py --database openai-batch.sqlite`
+`./batchfetch.py --database openai-batch.sqlite --report-costs`
 
 ## To-do
 
