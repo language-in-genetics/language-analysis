@@ -102,7 +102,7 @@ conn.commit()
 if args.report_costs:
     print(f"Prompt tokens:     {total_prompt_tokens}")
     print(f"Completion tokens: {total_completion_tokens}")
-    prompt_pricing = 0.01 / 1000  # Adjust pricing as needed
-    completion_pricing = 0.03 / 1000  # Adjust pricing as needed
+    prompt_pricing = 0.075 / 1000000  # Adjust pricing as needed
+    completion_pricing = 0.3 / 1000000  # Adjust pricing as needed
     cost = prompt_pricing * total_prompt_tokens + completion_pricing * total_completion_tokens
     print(f"Cost (USD):        {cost:.2f}")
