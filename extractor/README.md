@@ -83,8 +83,13 @@ Finally, run
 
 `./batchfetch.py --database openai-batch.sqlite`
 
-## To-do
+Repeat that process as many times as required.
 
-Maybe I should have a program (or at least a recipe) for turning the database into the CSV file or 
-Excel spreadsheet Sally needs. Does she need aggregates, or will she take care of that?
+Everything should now be in the `openai-batch.sqlite` database.
+
+Now run:
+
+`sqlite3 openai-batch.sqlite -header -csv "SELECT * FROM files;" > ancestry-full.csv`
+
+
 
