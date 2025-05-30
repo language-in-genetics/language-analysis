@@ -21,8 +21,10 @@ Run `find articles -type f -exec git add '{}' ';'`
 
 5. Remember to `git commit` and `git push`
 
-## We now have the JSON data
+## Extracting information
 
-Next stop: fetching the PDFs for each of those DOIs.
+You have either run the program from scratch, or you are looking at the articles that were in the git repo in the `articles/` directory.
+
+Follow the instructions in `extractor/README.md` to extract race terms out of the data.
 
 
