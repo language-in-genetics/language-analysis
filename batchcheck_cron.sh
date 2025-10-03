@@ -11,4 +11,4 @@ cd /home/languageingenetics/Word-Frequency-Analysis-/extractor
 export PGDATABASE=crossref
 
 # Run batch check
-uv run batchcheck.py
+uv run batchcheck.py --quiet

@@ -7,6 +7,7 @@ import psycopg2.extras
 from flask import Flask, jsonify, render_template_string
 from datetime import datetime, timedelta
 import json
+from collections import defaultdict
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--database", required=True, help="SQLite database path")
@@ -116,6 +117,11 @@ HTML_TEMPLATE = """
                     <h3>Processing Rate</h3>
                     <div class="value">${progress.processing_percentage.toFixed(1)}%</div>
                     <div class="subvalue">${progress.unprocessed_articles.toLocaleString()} remaining</div>
+                </div>
+                <div class="card">
+                    <h3>Articles / Hour</h3>
+                    <div class="value">${progress.articles_per_hour.toFixed(1)}</div>
+                    <div class="subvalue">Based on last ${progress.rate_window_hours} hours</div>
                 </div>
                 <div class="card">
                     <h3>Active Journals</h3>
@@ -239,7 +245,7 @@ def api_progress():
 
     try:
         # Get total articles from PostgreSQL
-        pg_cursor = pg_conn.cursor()
+        pg_cursor = pg_conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
         pg_cursor.execute("SELECT COUNT(*) FROM articles")
         total_articles = pg_cursor.fetchone()[0]
 
@@ -267,6 +273,38 @@ def api_progress():
         """)
         # This won't work either - let me use a different approach
 
+        throughput_window_hours = 6
+        pg_cursor.execute(
+            """
+            SELECT batch_id, when_checked, number_completed
+            FROM languageingenetics.batchprogress
+            WHERE when_checked >= NOW() - INTERVAL '6 hours'
+            ORDER BY batch_id, when_checked
+            """
+        )
+        progress_rows = pg_cursor.fetchall()
+
+        total_completed_delta = 0
+        total_hours = 0.0
+        if progress_rows:
+            grouped = defaultdict(list)
+            for row in progress_rows:
+                grouped[row['batch_id']].append(row)
+
+            for batch_rows in grouped.values():
+                batch_rows.sort(key=lambda r: r['when_checked'])
+                if len(batch_rows) < 2:
+                    continue
+                start = batch_rows[0]
+                end = batch_rows[-1]
+                delta_completed = end['number_completed'] - start['number_completed']
+                delta_seconds = (end['when_checked'] - start['when_checked']).total_seconds()
+                if delta_completed > 0 and delta_seconds > 0:
+                    total_completed_delta += delta_completed
+                    total_hours += delta_seconds / 3600.0
+
+        articles_per_hour = (total_completed_delta / total_hours) if total_hours > 0 else 0.0
+
         pg_cursor.close()
 
         return jsonify({
@@ -274,7 +312,9 @@ def api_progress():
             'processed_articles': processed_articles,
             'unprocessed_articles': total_articles - processed_articles,
             'processing_percentage': (processed_articles / total_articles * 100) if total_articles > 0 else 0,
-            'journals_with_data': 0  # Will calculate properly in journals endpoint
+            'journals_with_data': 0,  # Will calculate properly in journals endpoint
+            'articles_per_hour': articles_per_hour,
+            'rate_window_hours': throughput_window_hours
         })
     finally:
         sqlite_conn.close()
