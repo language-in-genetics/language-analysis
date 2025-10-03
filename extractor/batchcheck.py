@@ -12,7 +12,11 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--openai-api-key", default=os.path.expanduser("~/.openai.key"))
 parser.add_argument("--only-batch", type=int, help="The batch ID to look at")
 parser.add_argument("--monitor", action="store_true", help="Monitor in a loop until the status is 'completed'. Only makes sense with --only-batch")
+parser.add_argument("--quiet", action="store_true", help="Suppress non-error output")
 args = parser.parse_args()
+
+if args.quiet and args.monitor:
+    parser.error("--quiet cannot be used together with --monitor")
 
 api_key = open(args.openai_api_key).read().strip()
 client = openai.OpenAI(api_key=api_key)
@@ -58,6 +62,8 @@ while True:
 
     batches = cursor.fetchall()
 
+    throughput_estimates = []
+
     for batch_row in batches:
         local_batch_id = batch_row['id']
         openai_batch_id = batch_row['openai_batch_id']
@@ -74,6 +80,24 @@ while True:
             )
             conn.commit()
 
+            cursor.execute(
+                """
+                SELECT when_checked, number_completed
+                FROM languageingenetics.batchprogress
+                WHERE batch_id = %s
+                ORDER BY when_checked DESC
+                LIMIT 2
+                """,
+                [local_batch_id]
+            )
+            history = cursor.fetchall()
+            if len(history) == 2:
+                latest, previous = history[0], history[1]
+                delta_completed = latest['number_completed'] - previous['number_completed']
+                delta_seconds = (latest['when_checked'] - previous['when_checked']).total_seconds()
+                if delta_completed > 0 and delta_seconds > 0:
+                    throughput_estimates.append(delta_completed * 3600.0 / delta_seconds)
+
         if args.monitor:
             if progress is None:
                 progress = tqdm.tqdm(total=number_of_files)
@@ -85,23 +109,30 @@ while True:
             time.sleep(15)
             continue
 
-        print(f"""## {openai_result.metadata.get('description')}
+        if not args.quiet:
+            print(f"""## {openai_result.metadata.get('description')}
       Num files: {number_of_files}
        Local ID: {local_batch_id}
        Returned: {openai_result.metadata.get('local_batch_id')}
        Batch ID: {openai_batch_id}
         Created: {time.asctime(time.localtime(openai_result.created_at))}
          Status: {openai_result.status}""")
-        
+
         if openai_result.errors:
-            print("      Errors: ")
+            print("      Errors: ", file=sys.stderr)
             for err in openai_result.errors.data:
-                print(f"         - {err.code} on line {err.line}: {err.message}")
-        
-        if openai_result.request_counts:
+                print(f"         - {err.code} on line {err.line}: {err.message}", file=sys.stderr)
+
+        if openai_result.request_counts and not args.quiet:
             print(f"       Progress: {openai_result.request_counts.completed}/{openai_result.request_counts.total}")
             print(f"       Failures: {openai_result.request_counts.failed}")
-        print()
+
+        if not args.quiet:
+            print()
+
+    if throughput_estimates and not args.quiet:
+        total_throughput = sum(throughput_estimates)
+        print(f"Estimated throughput: {total_throughput:.1f} articles/hour across {len(throughput_estimates)} batch(es)")
 
     if not args.monitor:
         break
