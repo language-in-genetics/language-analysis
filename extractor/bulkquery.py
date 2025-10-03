@@ -2,22 +2,26 @@
 
 import argparse
 import json
-import sqlite3
 import time
 import os
 import openai
 import sys
 import tempfile
+import psycopg2
+import psycopg2.extras
 
 parser = argparse.ArgumentParser()
-parser.add_argument("directories", nargs="+", help="Directories containing metadata.json files")
-parser.add_argument("--database", required=True, help="Where the database is")
-parser.add_argument("--limit", type=int, help="Stop after processing this many files")
+parser.add_argument("--limit", type=int, help="Stop after processing this many articles")
+parser.add_argument("--journal", action="append", help="Filter by journal name (can specify multiple times, e.g., --journal 'The American Journal of Human Genetics')")
 parser.add_argument("--output-file", help="Where to put the batch file (default: random tempfile)")
 parser.add_argument("--dry-run", action="store_true", help="Don't send the batch to OpenAI")
 parser.add_argument("--batch-id-save-file", help="What file to put the local batch ID into")
 parser.add_argument("--openai-api-key", default=os.path.expanduser("~/.openai.key"))
 args = parser.parse_args()
+
+# PostgreSQL connection will use environment variables:
+# PGHOST, PGPORT, PGDATABASE, PGUSER, PGPASSWORD
+# or use defaults from ~/.pgpass or pg_service.conf
 
 # Create output file if not specified
 if args.output_file is None:
@@ -25,51 +29,17 @@ if args.output_file is None:
     args.output_file = tf.name
     tf.close()
 
-conn = sqlite3.connect(args.database)
-cursor = conn.cursor()
-update_cursor = conn.cursor()
-cursor.execute("pragma busy_timeout = 30000;")
-cursor.execute("pragma journal_mode = WAL;")
-update_cursor.execute("pragma busy_timeout = 30000;")
-update_cursor.execute("pragma journal_mode = WAL;")
+# Connect to PostgreSQL using environment variables
+conn = psycopg2.connect("")
+cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
-# Create tables if they don't exist
-update_cursor.execute("""
-    create table if not exists files (
-        id integer primary key autoincrement,
-        filename text unique,
-        has_abstract boolean,
-        pub_year integer,
-        processed boolean default false,
-        batch_id integer references batches(id),
-        when_processed datetime,
-        caucasian boolean,
-        white boolean,
-        european boolean,
-        european_phrase_used text,
-        other boolean,
-        other_phrase_used text
-    )
-""")
-
-update_cursor.execute("""
-    create table if not exists batches (
-        id integer primary key autoincrement,
-        openai_batch_id text,
-        when_created datetime default current_timestamp,
-        when_sent datetime,
-        when_retrieved datetime
-    )
-""")
-
-# Create indices
-update_cursor.execute("create index if not exists files_by_filename on files(filename)")
-update_cursor.execute("create index if not exists files_by_batch on files(batch_id) where processed = false")
+# Set search path
+cursor.execute("SET search_path TO languageingenetics, public")
 
 # Start a transaction for this batch
-update_cursor.execute("begin transaction")
-update_cursor.execute("insert into batches default values")
-batch_id = update_cursor.lastrowid
+cursor.execute("BEGIN")
+cursor.execute("INSERT INTO languageingenetics.batches DEFAULT VALUES RETURNING id")
+batch_id = cursor.fetchone()['id']
 
 # Define the tool schema for OpenAI
 tools = [{
@@ -110,26 +80,16 @@ tools = [{
     }
 }]
 
-def process_file(filename):
-    # Check if file is already processed
-    cursor.execute("select id from files where filename = ?", [filename])
+def process_article(article_id, metadata):
+    # Check if article is already processed
+    cursor.execute("SELECT id FROM languageingenetics.files WHERE article_id = %s", [article_id])
     if cursor.fetchone() is not None:
         return False
 
-    try:
-        with open(filename, 'r') as f:
-            metadata = json.load(f)
-    except json.JSONDecodeError:
-        print(f"Error: Could not parse JSON in {filename}", file=sys.stderr)
-        return False
-    except FileNotFoundError:
-        print(f"Error: File not found: {filename}", file=sys.stderr)
-        return False
-
     # Extract information
-    title = metadata.get('title', [None])[0]
+    title = metadata.get('title', [None])[0] if isinstance(metadata.get('title'), list) else metadata.get('title')
     if not title:
-        print(f"Warning: No title found in {filename}", file=sys.stderr)
+        print(f"Warning: No title found in article {article_id}", file=sys.stderr)
         return False
 
     abstract = None
@@ -152,11 +112,11 @@ def process_file(filename):
 
     # Create the batch request
     batch_text = {
-        "custom_id": filename,
+        "custom_id": str(article_id),
         "method": "POST",
         "url": "/v1/chat/completions",
         "body": {
-            "model": "gpt-4o-mini",
+            "model": "gpt-5-mini",
             "messages": [{"role": "user", "content": prompt}],
             "temperature": 0,
             "tools": tools,
@@ -169,33 +129,80 @@ def process_file(filename):
         f.write(json.dumps(batch_text) + "\n")
 
     # Add to database
-    update_cursor.execute(
-        "insert into files (filename, has_abstract, pub_year, batch_id) values (?, ?, ?, ?)",
-        [filename, abstract is not None, pub_year, batch_id]
+    cursor.execute(
+        "INSERT INTO languageingenetics.files (article_id, has_abstract, pub_year, batch_id) VALUES (%s, %s, %s, %s)",
+        [article_id, abstract is not None, pub_year, batch_id]
     )
 
     return True
 
-# Process files
+# Determine which journals to query
+journals_to_query = []
+if args.journal:
+    # Use explicitly specified journals
+    journals_to_query = args.journal
+else:
+    # Query enabled journals from the database
+    cursor.execute("SELECT name FROM languageingenetics.journals WHERE enabled = true")
+    journals_to_query = [row['name'] for row in cursor]
+    if journals_to_query:
+        print(f"Processing {len(journals_to_query)} enabled journals from database", file=sys.stderr)
+
+# Build query to get articles from raw_text_data
+# Parse the filesrc JSON text column
+query = """
+SELECT
+    id,
+    regexp_replace(
+        regexp_replace(filesrc, E'\n', ' ', 'g'),
+        E'\t', '    ', 'g'
+    )::jsonb as data
+FROM public.raw_text_data
+"""
+where_clauses = []
+query_params = []
+
+# Filter by journal if we have any journals to query
+if journals_to_query:
+    # Use JSONB query to check if container-title array contains any of the specified journals
+    journal_conditions = []
+    for journal in journals_to_query:
+        journal_conditions.append("(regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)")
+        query_params.append(json.dumps([journal]))
+    where_clauses.append("(" + " OR ".join(journal_conditions) + ")")
+
+if where_clauses:
+    query += " WHERE " + " AND ".join(where_clauses)
+
+if args.limit:
+    query += f" LIMIT {args.limit}"
+
+# Create a separate cursor for fetching articles
+article_cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+article_cursor.execute(query, query_params)
+
+# Process articles
 processed_count = 0
-for directory in args.directories:
-    for dirpath, dirnames, filenames in os.walk(directory):
-        if "metadata.json" in filenames:
-            filename = os.path.join(dirpath, "metadata.json")
-            if process_file(filename):
-                processed_count += 1
-                if args.limit and processed_count >= args.limit:
-                    break
-        if args.limit and processed_count >= args.limit:
-            break
+for row in article_cursor:
+    article_id = row['id']
+    metadata = row['data']
+
+    if process_article(article_id, metadata):
+        processed_count += 1
+        if processed_count % 100 == 0:
+            print(f"Processed {processed_count} articles...", file=sys.stderr)
+
+article_cursor.close()
 
 if processed_count == 0:
     print("No files were processed", file=sys.stderr)
     conn.rollback()
+    conn.close()
     sys.exit(1)
 
 if args.dry_run:
     conn.rollback()
+    conn.close()
     sys.exit(0)
 
 # Submit the batch to OpenAI
@@ -212,21 +219,23 @@ result = client.batches.create(
     endpoint="/v1/chat/completions",
     completion_window="24h",
     metadata={
-        "description": f"{args.database} batch {batch_id} (wordfreq)",
-        "database": f"{args.database}",
+        "description": f"batch {batch_id} (wordfreq)",
         "local_batch_id": f"{batch_id}"
     }
 )
 
-update_cursor.execute(
-    "update batches set openai_batch_id = ?, when_sent = current_timestamp where id = ?",
+cursor.execute(
+    "UPDATE languageingenetics.batches SET openai_batch_id = %s, when_sent = CURRENT_TIMESTAMP WHERE id = %s",
     [result.id, batch_id]
 )
 
-if update_cursor.rowcount != 1:
-    sys.exit(f"Unexpectedly updated {update_cursor.rowcount} rows when we set the openai_batch id to {result.id} for batch {batch_id}")
+if cursor.rowcount != 1:
+    conn.rollback()
+    conn.close()
+    sys.exit(f"Unexpectedly updated {cursor.rowcount} rows when we set the openai_batch id to {result.id} for batch {batch_id}")
 
 conn.commit()
+conn.close()
 
 if args.batch_id_save_file:
     with open(args.batch_id_save_file, 'w') as bisf:

@@ -1,0 +1,933 @@
+{
+  "DOI": "10.1016/j.ajhg.2022.09.009",
+  "ISSN": [
+    "0002-9297"
+  ],
+  "URL": "http://dx.doi.org/10.1016/j.ajhg.2022.09.009",
+  "alternative-id": [
+    "S0002929722004128"
+  ],
+  "assertion": [
+    {
+      "label": "This article is maintained by",
+      "name": "publisher",
+      "value": "Elsevier"
+    },
+    {
+      "label": "Article Title",
+      "name": "articletitle",
+      "value": "MagicalRsq: Machine-learning-based genotype imputation quality calibration"
+    },
+    {
+      "label": "Journal Title",
+      "name": "journaltitle",
+      "value": "The American Journal of Human Genetics"
+    },
+    {
+      "label": "CrossRef DOI link to publisher maintained version",
+      "name": "articlelink",
+      "value": "https://doi.org/10.1016/j.ajhg.2022.09.009"
+    },
+    {
+      "label": "Content Type",
+      "name": "content_type",
+      "value": "article"
+    },
+    {
+      "label": "Copyright",
+      "name": "copyright",
+      "value": "© 2022 The Authors."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Sun",
+      "given": "Quan",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Yang",
+      "given": "Yingxi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Rosen",
+      "given": "Jonathan D.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Jiang",
+      "given": "Min-Zhi",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Chen",
+      "given": "Jiawen",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Liu",
+      "given": "Weifang",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wen",
+      "given": "Jia",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Raffield",
+      "given": "Laura M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Pace",
+      "given": "Rhonda G.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Zhou",
+      "given": "Yi-Hui",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Wright",
+      "given": "Fred A.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Blackman",
+      "given": "Scott M.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Bamshad",
+      "given": "Michael J.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Gibson",
+      "given": "Ronald L.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Cutting",
+      "given": "Garry R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Knowles",
+      "given": "Michael R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Schrider",
+      "given": "Daniel R.",
+      "sequence": "additional"
+    },
+    {
+      "affiliation": [],
+      "family": "Fuchsberger",
+      "given": "Christian",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-9275-4189",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Li",
+      "given": "Yun",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "The American Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "ajhg.org",
+      "elsevier.com",
+      "sciencedirect.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2022,
+        10,
+        4
+      ]
+    ],
+    "date-time": "2022-10-04T14:46:33Z",
+    "timestamp": 1664894793000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        2,
+        7
+      ]
+    ],
+    "date-time": "2024-02-07T20:10:04Z",
+    "timestamp": 1707336604000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100000050",
+      "doi-asserted-by": "publisher",
+      "name": "National Heart, Lung, and Blood Institute"
+    },
+    {
+      "DOI": "10.13039/100000897",
+      "award": [
+        "BAMSHA18XX0",
+        "CUTTIN18XX1",
+        "KNOWLE18XX0"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Cystic Fibrosis Foundation"
+    },
+    {
+      "DOI": "10.13039/100007270",
+      "award": [
+        "3R01HL-117626-02S1",
+        "HHSN268201800001I",
+        "HHSN268201800002I",
+        "R01HL-120393",
+        "U01HL-120393"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "University of Michigan"
+    },
+    {
+      "DOI": "10.13039/100000002",
+      "award": [
+        "KL2TR002490",
+        "R01HG009976",
+        "R01HL146500",
+        "R01MH123724",
+        "R35GM138286",
+        "U01HG011720",
+        "U24AR076730"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "National Institutes of Health"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        24
+      ]
+    ],
+    "date-time": "2024-04-24T11:31:43Z",
+    "timestamp": 1713958303402
+  },
+  "is-referenced-by-count": 11,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0002-9297"
+    }
+  ],
+  "issue": "11",
+  "issued": {
+    "date-parts": [
+      [
+        2022,
+        11
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "11",
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          11
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            1
+          ]
+        ],
+        "date-time": "2022-11-01T00:00:00Z",
+        "timestamp": 1667260800000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            23
+          ]
+        ],
+        "date-time": "2022-09-23T00:00:00Z",
+        "timestamp": 1663891200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0002929722004128?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0002929722004128?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "member": "78",
+  "page": "1986-1997",
+  "prefix": "10.1016",
+  "published": {
+    "date-parts": [
+      [
+        2022,
+        11
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2022,
+        11
+      ]
+    ]
+  },
+  "publisher": "Elsevier BV",
+  "reference": [
+    {
+      "DOI": "10.1038/s41586-021-03205-y",
+      "article-title": "Sequencing of 53, 831 diverse genomes from the NHLBI TOPMed Program",
+      "author": "Taliun",
+      "doi-asserted-by": "crossref",
+      "first-page": "290",
+      "journal-title": "Nature",
+      "key": "10.1016/j.ajhg.2022.09.009_bib1",
+      "volume": "590",
+      "year": "2021"
+    },
+    {
+      "article-title": "Leveraging TOPMed imputation server and constructing a cohort-specific imputation reference panel to enhance genotype imputation among cystic fibrosis patients",
+      "author": "Sun",
+      "first-page": "100090",
+      "journal-title": "HGG Adv.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib2",
+      "volume": "3",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1008500",
+      "article-title": "Use of \u003e100, 000 NHLBI Trans-Omics for Precision Medicine (TOPMed) Consortium whole genome sequences improves imputation quality and detection of rare variant associations in admixed African and Hispanic/Latino populations",
+      "author": "Kowalski",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1008500",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib3",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s10038-021-00968-0",
+      "article-title": "Analyses of biomarker traits in diverse UK biobank participants identify associations missed by European-centric analysis strategies",
+      "author": "Sun",
+      "doi-asserted-by": "crossref",
+      "first-page": "87",
+      "journal-title": "J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib4",
+      "volume": "67",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/hmg/ddn288",
+      "article-title": "Practical aspects of imputation-driven meta-analysis of genome-wide association studies",
+      "author": "de Bakker",
+      "doi-asserted-by": "crossref",
+      "first-page": "R122",
+      "journal-title": "Hum. Mol. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib5",
+      "volume": "17",
+      "year": "2008"
+    },
+    {
+      "article-title": "Genotype imputation in genome-wide association studies",
+      "author": "Porcu",
+      "first-page": "Unit1.25",
+      "journal-title": "Curr. Protoc. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib6",
+      "volume": "Chapter 1",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1002/cphg.84",
+      "article-title": "Genotype Imputation in Genome-Wide Association Studies",
+      "author": "Naj",
+      "doi-asserted-by": "crossref",
+      "first-page": "e84",
+      "journal-title": "Curr. Protoc. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib7",
+      "volume": "102",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1534/g3.111.001198",
+      "article-title": "Genotype imputation with thousands of genomes",
+      "author": "Howie",
+      "doi-asserted-by": "crossref",
+      "first-page": "457",
+      "journal-title": "G3 (Bethesda)",
+      "key": "10.1016/j.ajhg.2022.09.009_bib8",
+      "volume": "1",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ng.3656",
+      "article-title": "Next-generation genotype imputation service and methods",
+      "author": "Das",
+      "doi-asserted-by": "crossref",
+      "first-page": "1284",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib9",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.07.015",
+      "article-title": "A One-Penny Imputed Genome from Next-Generation Reference Panels",
+      "author": "Browning",
+      "doi-asserted-by": "crossref",
+      "first-page": "338",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib10",
+      "volume": "103",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nrg2796",
+      "article-title": "Genotype imputation for genome-wide association studies",
+      "author": "Marchini",
+      "doi-asserted-by": "crossref",
+      "first-page": "499",
+      "journal-title": "Nat. Rev. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib11",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1146/annurev.genom.9.081307.164242",
+      "article-title": "Genotype imputation",
+      "author": "Li",
+      "doi-asserted-by": "crossref",
+      "first-page": "387",
+      "journal-title": "Annu. Rev. Genomics Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib12",
+      "volume": "10",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1002/gepi.21603",
+      "article-title": "Genotype imputation of Metabochip SNPs using a study-specific reference panel of ∼4, 000 haplotypes in African Americans from the Women’s Health Initiative",
+      "author": "Liu",
+      "doi-asserted-by": "crossref",
+      "first-page": "107",
+      "journal-title": "Genet. Epidemiol.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib13",
+      "volume": "36",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/ejhg.2014.216",
+      "article-title": "Rare variant genotype imputation with thousands of study-specific whole-genome sequences: implications for cost-effective study designs",
+      "author": "Pistis",
+      "doi-asserted-by": "crossref",
+      "first-page": "975",
+      "journal-title": "Eur. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib14",
+      "volume": "23",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0009697",
+      "article-title": "A new statistic to evaluate imputation reliability",
+      "author": "Lin",
+      "doi-asserted-by": "crossref",
+      "first-page": "e9697",
+      "journal-title": "PLoS One",
+      "key": "10.1016/j.ajhg.2022.09.009_bib15",
+      "volume": "5",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1093/bfgp/elv037",
+      "article-title": "Quality control, imputation and analysis of genome-wide genotyping data from the Illumina HumanCoreExome microarray",
+      "author": "Coleman",
+      "doi-asserted-by": "crossref",
+      "first-page": "298",
+      "journal-title": "Brief. Funct. Genomics",
+      "key": "10.1016/j.ajhg.2022.09.009_bib16",
+      "volume": "15",
+      "year": "2016"
+    },
+    {
+      "article-title": "XGBoost: A Scalable Tree Boosting System",
+      "author": "Chen",
+      "first-page": "785",
+      "key": "10.1016/j.ajhg.2022.09.009_bib17",
+      "series-title": "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining - KDD ’16",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.08.031",
+      "article-title": "Imputation of exome sequence variants into population- based samples and blood-cell-trait-associated loci in African Americans: NHLBI GO Exome Sequencing Project",
+      "author": "Auer",
+      "doi-asserted-by": "crossref",
+      "first-page": "794",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib18",
+      "volume": "91",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/nar/gkw971",
+      "article-title": "The ExAC browser: displaying reference data information from over 60 000 exomes",
+      "author": "Karczewski",
+      "doi-asserted-by": "crossref",
+      "first-page": "D840",
+      "journal-title": "Nucleic Acids Res.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib19",
+      "volume": "45",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41586-021-04103-z",
+      "article-title": "Exome sequencing and analysis of 454, 787 UK Biobank participants",
+      "author": "Backman",
+      "doi-asserted-by": "crossref",
+      "first-page": "628",
+      "journal-title": "Nature",
+      "key": "10.1016/j.ajhg.2022.09.009_bib20",
+      "volume": "599",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0169748",
+      "article-title": "SoilGrids250m: Global gridded soil information based on machine learning",
+      "author": "Hengl",
+      "doi-asserted-by": "crossref",
+      "first-page": "e0169748",
+      "journal-title": "PLoS One",
+      "key": "10.1016/j.ajhg.2022.09.009_bib21",
+      "volume": "12",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/nature25973",
+      "article-title": "Environment dominates over host genetics in shaping human gut microbiota",
+      "author": "Rothschild",
+      "doi-asserted-by": "crossref",
+      "first-page": "210",
+      "journal-title": "Nature",
+      "key": "10.1016/j.ajhg.2022.09.009_bib22",
+      "volume": "555",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/nmeth.4463",
+      "article-title": "SCENIC: single-cell regulatory network inference and clustering",
+      "author": "Aibar",
+      "doi-asserted-by": "crossref",
+      "first-page": "1083",
+      "journal-title": "Nat. Methods",
+      "key": "10.1016/j.ajhg.2022.09.009_bib23",
+      "volume": "14",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.drudis.2018.01.039",
+      "article-title": "The rise of deep learning in drug discovery",
+      "author": "Chen",
+      "doi-asserted-by": "crossref",
+      "first-page": "1241",
+      "journal-title": "Drug Discov. Today",
+      "key": "10.1016/j.ajhg.2022.09.009_bib24",
+      "volume": "23",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1002/gepi.20533",
+      "article-title": "MaCH: using sequence and genotype data to estimate haplotypes and unobserved genotypes",
+      "author": "Li",
+      "doi-asserted-by": "crossref",
+      "first-page": "816",
+      "journal-title": "Genet. Epidemiol.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib25",
+      "volume": "34",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1146/annurev-genom-083117-021602",
+      "article-title": "Genotype Imputation from Large Reference Panels",
+      "author": "Das",
+      "doi-asserted-by": "crossref",
+      "first-page": "73",
+      "journal-title": "Annu. Rev. Genomics Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib26",
+      "volume": "19",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005928",
+      "article-title": "S/HIC: robust identification of soft and hard sweeps using machine learning",
+      "author": "Schrider",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1005928",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib27",
+      "volume": "12",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1073/pnas.76.10.5269",
+      "article-title": "Mathematical model for studying genetic variation in terms of restriction endonucleases",
+      "author": "Nei",
+      "doi-asserted-by": "crossref",
+      "first-page": "5269",
+      "journal-title": "Proc. Natl. Acad. Sci. USA.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib28",
+      "volume": "76",
+      "year": "1979"
+    },
+    {
+      "DOI": "10.1093/genetics/155.3.1405",
+      "article-title": "Hitchhiking under positive Darwinian selection",
+      "author": "Fay",
+      "doi-asserted-by": "crossref",
+      "first-page": "1405",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2022.09.009_bib29",
+      "volume": "155",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1093/genetics/123.3.585",
+      "article-title": "Statistical method for testing the neutral mutation hypothesis by DNA polymorphism",
+      "author": "Tajima",
+      "doi-asserted-by": "crossref",
+      "first-page": "585",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2022.09.009_bib30",
+      "volume": "123",
+      "year": "1989"
+    },
+    {
+      "DOI": "10.1093/molbev/msq211",
+      "article-title": "A new test for detecting recent positive selection that is free from the confounding impacts of demography",
+      "author": "Li",
+      "doi-asserted-by": "crossref",
+      "first-page": "365",
+      "journal-title": "Mol. Biol. Evol.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib31",
+      "volume": "28",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1005004",
+      "article-title": "Recent selective sweeps in North American Drosophila melanogaster show signatures of soft sweeps",
+      "author": "Garud",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1005004",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib32",
+      "volume": "11",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1534/genetics.103.025387",
+      "article-title": "Linkage disequilibrium as a signature of selective sweeps",
+      "author": "Kim",
+      "doi-asserted-by": "crossref",
+      "first-page": "1513",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2022.09.009_bib33",
+      "volume": "167",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1093/genetics/146.3.1197",
+      "article-title": "A test of neutrality based on interlocus associations",
+      "author": "Kelly",
+      "doi-asserted-by": "crossref",
+      "first-page": "1197",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2022.09.009_bib34",
+      "volume": "146",
+      "year": "1997"
+    },
+    {
+      "DOI": "10.3389/fgene.2019.00034",
+      "article-title": "Evaluating the Accuracy of Imputation Methods in a Five-Way Admixed Population",
+      "author": "Schurz",
+      "doi-asserted-by": "crossref",
+      "first-page": "34",
+      "journal-title": "Front. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib35",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2022.04.006",
+      "article-title": "TOP-LD: A tool to explore linkage disequilibrium with TOPMed whole-genome sequence data",
+      "author": "Huang",
+      "doi-asserted-by": "crossref",
+      "first-page": "1175",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib36",
+      "volume": "109",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1186/s11689-022-09429-x",
+      "article-title": "Innovative computational approaches shed light on genetic mechanisms underlying cognitive impairment among children born extremely preterm",
+      "author": "Liu",
+      "doi-asserted-by": "crossref",
+      "first-page": "16",
+      "journal-title": "J. Neurodev. Disord.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib37",
+      "volume": "14",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bts724",
+      "article-title": "A comprehensive SNP and indel imputability database",
+      "author": "Duan",
+      "doi-asserted-by": "crossref",
+      "first-page": "528",
+      "journal-title": "Bioinformatics",
+      "key": "10.1016/j.ajhg.2022.09.009_bib38",
+      "volume": "29",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1513/AnnalsATS.201511-781OC",
+      "article-title": "The cystic fibrosis foundation patient registry. design and methods of a national observational disease registry",
+      "author": "Knapp",
+      "doi-asserted-by": "crossref",
+      "first-page": "1173",
+      "journal-title": "Ann. Am. Thorac. Soc.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib39",
+      "volume": "13",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "article-title": "The UK Biobank resource with deep phenotyping and genomic data",
+      "author": "Bycroft",
+      "doi-asserted-by": "crossref",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "10.1016/j.ajhg.2022.09.009_bib40",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41586-020-2853-0",
+      "article-title": "Exome sequencing and characterization of 49, 960 individuals in the UK Biobank",
+      "author": "Van Hout",
+      "doi-asserted-by": "crossref",
+      "first-page": "749",
+      "journal-title": "Nature",
+      "key": "10.1016/j.ajhg.2022.09.009_bib41",
+      "volume": "586",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/ng.3679",
+      "article-title": "Reference-based phasing using the Haplotype Reference Consortium panel",
+      "author": "Loh",
+      "doi-asserted-by": "crossref",
+      "first-page": "1443",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib42",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.08.008",
+      "article-title": "The polygenic and monogenic basis of blood traits and diseases",
+      "author": "Vuckovic",
+      "doi-asserted-by": "crossref",
+      "first-page": "1214",
+      "journal-title": "Cell",
+      "key": "10.1016/j.ajhg.2022.09.009_bib43",
+      "volume": "182",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.cell.2020.06.045",
+      "article-title": "Trans-ethnic and Ancestry-Specific Blood-Cell Genetics in 746, 667 Individuals from 5 Global Populations",
+      "author": "Chen",
+      "doi-asserted-by": "crossref",
+      "first-page": "1198",
+      "journal-title": "Cell",
+      "key": "10.1016/j.ajhg.2022.09.009_bib44",
+      "volume": "182",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01058-3",
+      "article-title": "Multi-ancestry genetic study of type 2 diabetes highlights the power of diverse populations for discovery and translation",
+      "author": "Mahajan",
+      "doi-asserted-by": "crossref",
+      "first-page": "560",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib45",
+      "volume": "54",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/bib/bbab497",
+      "article-title": "eSCAN: scan regulatory regions for aggregate association testing using whole-genome sequencing data",
+      "author": "Yang",
+      "doi-asserted-by": "crossref",
+      "first-page": "bbab497",
+      "journal-title": "Brief. Bioinformatics",
+      "key": "10.1016/j.ajhg.2022.09.009_bib46",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1158/0008-5472.CAN-05-1241",
+      "article-title": "Application of embryonic lethal or other obvious phenotypes to characterize the clinical significance of genetic variants found in trans with known deleterious mutations",
+      "author": "Judkins",
+      "doi-asserted-by": "crossref",
+      "first-page": "10096",
+      "journal-title": "Cancer Res.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib47",
+      "volume": "65",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/hmg/ddh301",
+      "article-title": "Evolution of the tumor suppressor BRCA1 locus in primates: implications for cancer predisposition",
+      "author": "Pavlicek",
+      "doi-asserted-by": "crossref",
+      "first-page": "2737",
+      "journal-title": "Hum. Mol. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib48",
+      "volume": "13",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1002/humu.21627",
+      "article-title": "A review of a multifactorial probability-based model for classification of BRCA1 and BRCA2 variants of uncertain significance (VUS)",
+      "author": "Lindor",
+      "doi-asserted-by": "crossref",
+      "first-page": "8",
+      "journal-title": "Hum. Mutat.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib49",
+      "volume": "33",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1136/jmg.2005.033878",
+      "article-title": "Comprehensive statistical study of 452 BRCA1 missense substitutions with classification of eight recurrent substitutions as neutral",
+      "author": "Tavtigian",
+      "doi-asserted-by": "crossref",
+      "first-page": "295",
+      "journal-title": "J. Med. Genet.",
+      "key": "10.1016/j.ajhg.2022.09.009_bib50",
+      "volume": "43",
+      "year": "2006"
+    },
+    {
+      "article-title": "Comparative analysis of artificial neural network and xgboost algorithm for polsar image classification",
+      "author": "Memon",
+      "first-page": "452",
+      "key": "10.1016/j.ajhg.2022.09.009_bib51",
+      "series-title": "Pattern Recognition and Machine Intelligence: 8th International Conference, PReMI 2019, Tezpur, India, December 17-20, 2019, Proceedings, Part I, B. Deka",
+      "year": "2019"
+    },
+    {
+      "article-title": "Xgboost and deep neural network comparison: the case of teams’ performance",
+      "author": "Giannakas",
+      "first-page": "343",
+      "key": "10.1016/j.ajhg.2022.09.009_bib52",
+      "series-title": "Intelligent Tutoring Systems: 17th International Conference, ITS 2021, Virtual Event, June 7–11, 2021, Proceedings",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1080/19401493.2018.1498538",
+      "article-title": "Advanced machine learning techniques for building performance simulation: a comparative analysis",
+      "author": "Chakraborty",
+      "doi-asserted-by": "crossref",
+      "first-page": "193",
+      "journal-title": "J. Building Performance Simulation",
+      "key": "10.1016/j.ajhg.2022.09.009_bib53",
+      "volume": "12",
+      "year": "2018"
+    }
+  ],
+  "reference-count": 53,
+  "references-count": 53,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0002929722004128"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "The American Journal of Human Genetics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "MagicalRsq: Machine-learning-based genotype imputation quality calibration"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+  "volume": "109"
+}

@@ -4,12 +4,12 @@ import argparse
 import os
 import sys
 import openai
-import sqlite3
+import psycopg2
+import psycopg2.extras
 import time
 import json
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--database", required=True, help="Where the database is")
 parser.add_argument("--openai-api-key", default=os.path.expanduser("~/.openai.key"))
 parser.add_argument("--progress-bar", action='store_true', help="Show a progress bar for updating the database on each batch")
 parser.add_argument("--report-costs", action="store_true", help="Report the cost of the runs fetched")
@@ -18,24 +18,23 @@ args = parser.parse_args()
 api_key = open(args.openai_api_key).read().strip()
 client = openai.OpenAI(api_key=api_key)
 
-conn = sqlite3.connect(args.database)
-cursor = conn.cursor()
-update_cursor = conn.cursor()
+# Connect using environment variables (PGDATABASE, PGHOST, etc.)
+conn = psycopg2.connect("")
+cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
-cursor.execute("pragma busy_timeout = 30000;")
-cursor.execute("pragma journal_mode = WAL;")
-update_cursor.execute("pragma busy_timeout = 30000;")
-update_cursor.execute("pragma journal_mode = WAL;")
+# Set search path
+cursor.execute("SET search_path TO languageingenetics, public")
 
-cursor.execute("select id, openai_batch_id from batches where when_sent is not null and when_retrieved is null")
+cursor.execute("SELECT id, openai_batch_id FROM languageingenetics.batches WHERE when_sent IS NOT NULL AND when_retrieved IS NULL")
 
 total_prompt_tokens = 0
 total_completion_tokens = 0
 
-update_cursor.execute("begin transaction")
-work_to_be_done = False
+batches = cursor.fetchall()
 
-for local_batch_id, openai_batch_id in cursor:
+for batch_row in batches:
+    local_batch_id = batch_row['id']
+    openai_batch_id = batch_row['openai_batch_id']
     openai_result = client.batches.retrieve(openai_batch_id)
     if openai_result.status != 'completed':
         continue
@@ -61,26 +60,28 @@ for local_batch_id, openai_batch_id in cursor:
         
         # Extract the tool call arguments
         arguments = json.loads(record['response']['body']['choices'][0]['message']['tool_calls'][0]['function']['arguments'])
-        
-        # Get the filename (which was used as the custom_id)
-        filename = record['custom_id']
-        
+
+        # Get the article_id (which was used as the custom_id)
+        article_id = int(record['custom_id'])
+
         # Extract usage information
         usage = record['response']['body']['usage']
         model = record['response']['body']['model'] + " (batch)"
-        
+
         # Update the files table with the analysis results
-        update_cursor.execute("""
-            update files set
+        cursor.execute("""
+            UPDATE languageingenetics.files SET
                 processed = true,
-                when_processed = current_timestamp,
-                caucasian = ?,
-                white = ?,
-                european = ?,
-                european_phrase_used = ?,
-                other = ?,
-                other_phrase_used = ?
-            where filename = ?
+                when_processed = CURRENT_TIMESTAMP,
+                caucasian = %s,
+                white = %s,
+                european = %s,
+                european_phrase_used = %s,
+                other = %s,
+                other_phrase_used = %s,
+                prompt_tokens = %s,
+                completion_tokens = %s
+            WHERE article_id = %s
         """, [
             arguments['caucasian'],
             arguments['white'],
@@ -88,16 +89,19 @@ for local_batch_id, openai_batch_id in cursor:
             arguments['european_phrase_used'],
             arguments['other'],
             arguments['other_phrase_used'],
-            filename
+            usage['prompt_tokens'],
+            usage['completion_tokens'],
+            article_id
         ])
-        
+
         total_prompt_tokens += usage['prompt_tokens']
         total_completion_tokens += usage['completion_tokens']
-    
-    # Mark the batch as retrieved
-    update_cursor.execute("update batches set when_retrieved = current_timestamp where id = ?", [local_batch_id])
 
-conn.commit()
+    # Mark the batch as retrieved
+    cursor.execute("UPDATE languageingenetics.batches SET when_retrieved = CURRENT_TIMESTAMP WHERE id = %s", [local_batch_id])
+    conn.commit()
+
+conn.close()
 
 if args.report_costs:
     print(f"Prompt tokens:     {total_prompt_tokens}")

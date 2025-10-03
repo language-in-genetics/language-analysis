@@ -1,0 +1,975 @@
+{
+  "DOI": "10.1016/j.ajhg.2020.08.009",
+  "ISSN": [
+    "0002-9297"
+  ],
+  "URL": "http://dx.doi.org/10.1016/j.ajhg.2020.08.009",
+  "alternative-id": [
+    "S0002929720302779"
+  ],
+  "assertion": [
+    {
+      "label": "This article is maintained by",
+      "name": "publisher",
+      "value": "Elsevier"
+    },
+    {
+      "label": "Article Title",
+      "name": "articletitle",
+      "value": "Inferring Gene-by-Environment Interactions with a Bayesian Whole-Genome Regression Model"
+    },
+    {
+      "label": "Journal Title",
+      "name": "journaltitle",
+      "value": "The American Journal of Human Genetics"
+    },
+    {
+      "label": "CrossRef DOI link to publisher maintained version",
+      "name": "articlelink",
+      "value": "https://doi.org/10.1016/j.ajhg.2020.08.009"
+    },
+    {
+      "label": "Content Type",
+      "name": "content_type",
+      "value": "article"
+    },
+    {
+      "label": "Copyright",
+      "name": "copyright",
+      "value": "© 2020 The Authors."
+    }
+  ],
+  "author": [
+    {
+      "affiliation": [],
+      "family": "Kerin",
+      "given": "Matthew",
+      "sequence": "first"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0003-0610-8322",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Marchini",
+      "given": "Jonathan",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "The American Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "ajhg.org",
+      "elsevier.com",
+      "sciencedirect.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2020,
+        9,
+        3
+      ]
+    ],
+    "date-time": "2020-09-03T14:32:29Z",
+    "timestamp": 1599143549000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2022,
+        11,
+        16
+      ]
+    ],
+    "date-time": "2022-11-16T09:41:40Z",
+    "timestamp": 1668591700000
+  },
+  "funder": [
+    {
+      "DOI": "10.13039/100010269",
+      "award": [
+        "203141/Z/16/Z"
+      ],
+      "doi-asserted-by": "crossref",
+      "name": "the Wellcome Trust"
+    },
+    {
+      "DOI": "10.13039/100010269",
+      "award": [
+        "109106/Z/15/Z"
+      ],
+      "doi-asserted-by": "publisher",
+      "name": "Wellcome Trust"
+    }
+  ],
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        22
+      ]
+    ],
+    "date-time": "2024-04-22T04:36:22Z",
+    "timestamp": 1713760582813
+  },
+  "is-referenced-by-count": 31,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0002-9297"
+    }
+  ],
+  "issue": "4",
+  "issued": {
+    "date-parts": [
+      [
+        2020,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "4",
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2020-10-01T00:00:00Z",
+        "timestamp": 1601510400000
+      }
+    },
+    {
+      "URL": "http://creativecommons.org/licenses/by/4.0/",
+      "content-version": "vor",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2020,
+            8,
+            17
+          ]
+        ],
+        "date-time": "2020-08-17T00:00:00Z",
+        "timestamp": 1597622400000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0002929720302779?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0002929720302779?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "member": "78",
+  "page": "698-713",
+  "prefix": "10.1016",
+  "published": {
+    "date-parts": [
+      [
+        2020,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2020,
+        10
+      ]
+    ]
+  },
+  "publisher": "Elsevier BV",
+  "reference": [
+    {
+      "DOI": "10.1038/nrg1578",
+      "article-title": "Gene-environment interactions in human diseases",
+      "author": "Hunter",
+      "doi-asserted-by": "crossref",
+      "first-page": "287",
+      "journal-title": "Nat. Rev. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib1",
+      "volume": "6",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1093/ije/13.3.356",
+      "article-title": "The design of case-control studies: the influence of confounding and interaction effects",
+      "author": "Smith",
+      "doi-asserted-by": "crossref",
+      "first-page": "356",
+      "journal-title": "Int. J. Epidemiol.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib2",
+      "volume": "13",
+      "year": "1984"
+    },
+    {
+      "DOI": "10.1038/s41586-018-0579-z",
+      "article-title": "The UK Biobank resource with deep phenotyping and genomic data",
+      "author": "Bycroft",
+      "doi-asserted-by": "crossref",
+      "first-page": "203",
+      "journal-title": "Nature",
+      "key": "10.1016/j.ajhg.2020.08.009_bib3",
+      "volume": "562",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001116",
+      "article-title": "Physical activity attenuates the influence of FTO variants on obesity risk: a meta-analysis of 218,166 adults and 19,268 children",
+      "author": "Kilpeläinen",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1001116",
+      "journal-title": "PLoS Med.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib4",
+      "volume": "8",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003607",
+      "article-title": "Gene × physical activity interactions in obesity: combined analysis of 111,421 individuals of European ancestry",
+      "author": "Ahmad",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1003607",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib5",
+      "volume": "9",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/ng.3912",
+      "article-title": "Genotype-covariate interaction effects and the heritability of adult body mass index",
+      "author": "Robinson",
+      "doi-asserted-by": "crossref",
+      "first-page": "1174",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib6",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0271-0",
+      "article-title": "A linear mixed-model approach to study multivariate gene-environment interactions",
+      "author": "Moore",
+      "doi-asserted-by": "crossref",
+      "first-page": "180",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib7",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0225-6",
+      "article-title": "Identifying loci affecting trait variability and detecting interactions in genome-wide association studies",
+      "author": "Young",
+      "doi-asserted-by": "crossref",
+      "first-page": "1608",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib8",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41467-018-06022-6",
+      "article-title": "Conditional and interaction gene-set analysis reveals novel functional pathways for blood pressure",
+      "author": "de Leeuw",
+      "doi-asserted-by": "crossref",
+      "first-page": "3768",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib9",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "article-title": "Examining the interaction of fast-food outlet exposure and income on diet and obesity: Evidence from 51,361 UK Biobank participants",
+      "author": "Burgoine",
+      "first-page": "1",
+      "journal-title": "Int. J. Behav. Nutr. Phys. Act.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib10",
+      "volume": "15",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/0895-4356(91)90033-6",
+      "article-title": "Effect modification and the limits of biological inference from epidemiologic data",
+      "author": "Thompson",
+      "doi-asserted-by": "crossref",
+      "first-page": "221",
+      "journal-title": "J. Clin. Epidemiol.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib11",
+      "volume": "44",
+      "year": "1991"
+    },
+    {
+      "DOI": "10.1093/ije/10.4.383",
+      "article-title": "Biological Models and Statistical Interactions: an Example from Multistage Carcinogenesis",
+      "author": "Siemiatycki",
+      "doi-asserted-by": "crossref",
+      "first-page": "383",
+      "journal-title": "Int. J. Epidemiol.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib12",
+      "volume": "10",
+      "year": "1981"
+    },
+    {
+      "DOI": "10.1093/genetics/167.4.1529",
+      "article-title": "D. S. Falconer and Introduction to quantitative genetics",
+      "author": "Hill",
+      "doi-asserted-by": "crossref",
+      "first-page": "1529",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2020.08.009_bib13",
+      "volume": "167",
+      "year": "2004"
+    },
+    {
+      "DOI": "10.1159/000099183",
+      "article-title": "Exploiting gene-environment interaction to detect genetic associations",
+      "author": "Kraft",
+      "doi-asserted-by": "crossref",
+      "first-page": "111",
+      "journal-title": "Hum. Hered.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib14",
+      "volume": "63",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/nmeth.2037",
+      "article-title": "Improved linear mixed models for genome-wide association studies",
+      "author": "Listgarten",
+      "doi-asserted-by": "crossref",
+      "first-page": "525",
+      "journal-title": "Nat. Methods",
+      "key": "10.1016/j.ajhg.2020.08.009_bib15",
+      "volume": "9",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/ng.2876",
+      "article-title": "Advantages and pitfalls in the application of mixed-model association methods",
+      "author": "Yang",
+      "doi-asserted-by": "crossref",
+      "first-page": "100",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib16",
+      "volume": "46",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1038/ng.3190",
+      "article-title": "Efficient Bayesian mixed-model analysis increases association power in large cohorts",
+      "author": "Loh",
+      "doi-asserted-by": "crossref",
+      "first-page": "284",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib17",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1534/genetics.107.080101",
+      "article-title": "Efficient control of population structure in model organism association mapping",
+      "author": "Kang",
+      "doi-asserted-by": "crossref",
+      "first-page": "1709",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2020.08.009_bib18",
+      "volume": "178",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/nmeth.1681",
+      "article-title": "FaST linear mixed models for genome-wide association studies",
+      "author": "Lippert",
+      "doi-asserted-by": "crossref",
+      "first-page": "833",
+      "journal-title": "Nat. Methods",
+      "key": "10.1016/j.ajhg.2020.08.009_bib19",
+      "volume": "8",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/ng.2310",
+      "article-title": "Genome-wide efficient mixed-model analysis for association studies",
+      "author": "Zhou",
+      "doi-asserted-by": "crossref",
+      "first-page": "821",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib20",
+      "volume": "44",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1093/genetics/157.4.1819",
+      "article-title": "Prediction of total genetic value using genome-wide dense marker maps",
+      "author": "Meuwissen",
+      "doi-asserted-by": "crossref",
+      "first-page": "1819",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2020.08.009_bib21",
+      "volume": "157",
+      "year": "2001"
+    },
+    {
+      "DOI": "10.1534/genetics.112.143313",
+      "article-title": "Whole-genome regression and prediction methods applied to plant and animal breeding",
+      "author": "de Los Campos",
+      "doi-asserted-by": "crossref",
+      "first-page": "327",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2020.08.009_bib22",
+      "volume": "193",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1186/1471-2105-11-58",
+      "article-title": "A variational Bayes algorithm for fast and accurate multiple locus genome-wide association analysis",
+      "author": "Logsdon",
+      "doi-asserted-by": "crossref",
+      "first-page": "58",
+      "journal-title": "BMC Bioinformatics",
+      "key": "10.1016/j.ajhg.2020.08.009_bib23",
+      "volume": "11",
+      "year": "2010"
+    },
+    {
+      "DOI": "10.1214/12-BA703",
+      "article-title": "Scalable variational inference for bayesian variable selection in regression, and its accuracy in genetic association studies",
+      "author": "Carbonetto",
+      "doi-asserted-by": "crossref",
+      "first-page": "73",
+      "journal-title": "Bayesian Anal.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib24",
+      "volume": "7",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003264",
+      "article-title": "Polygenic modeling with bayesian sparse linear mixed models",
+      "author": "Zhou",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1003264",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib25",
+      "volume": "9",
+      "year": "2013"
+    },
+    {
+      "article-title": "Gene-obesogenic environment interactions in the UK Biobank study",
+      "author": "Tyrrell",
+      "first-page": "559",
+      "journal-title": "Int. J. Epidemiol.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib26",
+      "volume": "46",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/bty253",
+      "article-title": "A scalable estimator of SNP heritability for biobank-scale data",
+      "author": "Wu",
+      "doi-asserted-by": "crossref",
+      "first-page": "i187",
+      "journal-title": "Bioinformatics",
+      "key": "10.1016/j.ajhg.2020.08.009_bib27",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "article-title": "Scalable multi-component linear mixed models with application to SNP heritability estimation",
+      "author": "Pazokitoroudi",
+      "journal-title": "bioRxiv",
+      "key": "10.1016/j.ajhg.2020.08.009_bib28",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ng.3404",
+      "article-title": "Partitioning heritability by functional annotation using genome-wide association summary statistics",
+      "author": "Finucane",
+      "doi-asserted-by": "crossref",
+      "first-page": "1228",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib29",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/ng.3865",
+      "article-title": "Reevaluation of SNP heritability in complex human traits",
+      "author": "Speed",
+      "doi-asserted-by": "crossref",
+      "first-page": "986",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib30",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/ng.3954",
+      "article-title": "Linkage disequilibrium-dependent architecture of human complex traits shows action of negative selection",
+      "author": "Gazal",
+      "doi-asserted-by": "crossref",
+      "first-page": "1421",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib31",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0279-5",
+      "article-title": "SumHer better estimates the SNP heritability of complex traits from summary statistics",
+      "author": "Speed",
+      "doi-asserted-by": "crossref",
+      "first-page": "277",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib32",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.3168/jds.2011-5019",
+      "article-title": "Improving accuracy of genomic predictions within and between dairy cattle breeds with imputed high-density single nucleotide polymorphism panels",
+      "author": "Erbe",
+      "doi-asserted-by": "crossref",
+      "first-page": "4114",
+      "journal-title": "J. Dairy Sci.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib33",
+      "volume": "95",
+      "year": "2012"
+    },
+    {
+      "author": "Murphy",
+      "key": "10.1016/j.ajhg.2020.08.009_bib34",
+      "series-title": "Machine Learning: A Probabilistic Perspective",
+      "year": "2012"
+    },
+    {
+      "article-title": "Stochastic variational inference",
+      "author": "Hoffman",
+      "first-page": "1303",
+      "journal-title": "J. Mach. Learn. Res.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib35",
+      "volume": "14",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1111/j.1467-9469.2007.00585.x",
+      "article-title": "Simple and globally convergent methods for accelerating the convergence of any em algorithm",
+      "author": "Varadhan",
+      "doi-asserted-by": "crossref",
+      "first-page": "335",
+      "journal-title": "Scand. J. Stat.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib36",
+      "volume": "35",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1001/jamapsychiatry.2014.1339",
+      "article-title": "Correcting systematic inflation in genetic association tests that consider interaction effects: application to a genome-wide association study of posttraumatic stress disorder",
+      "author": "Almli",
+      "doi-asserted-by": "crossref",
+      "first-page": "1392",
+      "journal-title": "JAMA Psychiatry",
+      "key": "10.1016/j.ajhg.2020.08.009_bib37",
+      "volume": "71",
+      "year": "2014"
+    },
+    {
+      "author": "Wilcox",
+      "key": "10.1016/j.ajhg.2020.08.009_bib38",
+      "series-title": "Introduction to robust estimation and hypothesis testing",
+      "year": "2011"
+    },
+    {
+      "article-title": "The behavior of maximum likelihood estimates under nonstandard conditions",
+      "author": "Huber",
+      "first-page": "221",
+      "journal-title": "Proceedings of the Fifth Berkeley Symposium on Mathematical Statistics and Probability",
+      "key": "10.1016/j.ajhg.2020.08.009_bib39",
+      "volume": "1",
+      "year": "1967"
+    },
+    {
+      "DOI": "10.2307/1912934",
+      "article-title": "A heteroskedasticity-consistent covariance matrix estimator and a direct test for heteroskedasticity",
+      "author": "White",
+      "doi-asserted-by": "crossref",
+      "first-page": "817",
+      "journal-title": "Econometrica",
+      "key": "10.1016/j.ajhg.2020.08.009_bib40",
+      "volume": "48",
+      "year": "1980"
+    },
+    {
+      "author": "Greene",
+      "key": "10.1016/j.ajhg.2020.08.009_bib41",
+      "series-title": "Econometric Analysis",
+      "year": "2003"
+    },
+    {
+      "DOI": "10.1097/EDE.0b013e31820877c5",
+      "article-title": "On the robustness of tests of genetic associations incorporating gene-environment interaction when the environmental exposure is misspecified",
+      "author": "Tchetgen Tchetgen",
+      "doi-asserted-by": "crossref",
+      "first-page": "257",
+      "journal-title": "Epidemiology",
+      "key": "10.1016/j.ajhg.2020.08.009_bib42",
+      "volume": "22",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1371/journal.pone.0019416",
+      "article-title": "Behavior of QQ-plots and genomic control in studies of gene-environment interaction",
+      "author": "Voorman",
+      "doi-asserted-by": "crossref",
+      "first-page": "e19416",
+      "journal-title": "PLoS ONE",
+      "key": "10.1016/j.ajhg.2020.08.009_bib43",
+      "volume": "6",
+      "year": "2011"
+    },
+    {
+      "article-title": "Using heteroscedasticity consistent standard errors in the linear regression model",
+      "author": "Long",
+      "first-page": "217",
+      "journal-title": "Am. Stat.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib44",
+      "volume": "54",
+      "year": "2000"
+    },
+    {
+      "DOI": "10.1214/11-AOAS455",
+      "article-title": "Bayesian variable selection regression for genome-wide association studies and other large-scale problems",
+      "author": "Guan",
+      "doi-asserted-by": "crossref",
+      "first-page": "1780",
+      "journal-title": "Ann. Appl. Stat.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib45",
+      "volume": "5",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0101-4",
+      "article-title": "Signatures of negative selection in the genetic architecture of human complex traits",
+      "author": "Zeng",
+      "doi-asserted-by": "crossref",
+      "first-page": "746",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib46",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1007/BF01066731",
+      "article-title": "The investigation of linkage between a quantitative trait and a marker locus",
+      "author": "Haseman",
+      "doi-asserted-by": "crossref",
+      "first-page": "3",
+      "journal-title": "Behav. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib47",
+      "volume": "2",
+      "year": "1972"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2012.10.010",
+      "article-title": "Improved heritability estimation from genome-wide SNPs",
+      "author": "Speed",
+      "doi-asserted-by": "crossref",
+      "first-page": "1011",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib48",
+      "volume": "91",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1002/sim.2165",
+      "article-title": "Adjusting for treatment effects in studies of quantitative traits: antihypertensive therapy and systolic blood pressure",
+      "author": "Tobin",
+      "doi-asserted-by": "crossref",
+      "first-page": "2911",
+      "journal-title": "Stat. Med.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib49",
+      "volume": "24",
+      "year": "2005"
+    },
+    {
+      "DOI": "10.1038/ncomms12724",
+      "article-title": "Multiple novel gene-by-environment interactions modify the effect of FTO variants on body mass index",
+      "author": "Young",
+      "doi-asserted-by": "crossref",
+      "first-page": "12724",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib50",
+      "volume": "7",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/s41588-018-0108-x",
+      "article-title": "Comparison of methods that use whole genome data to estimate the heritability and genetic architecture of complex traits",
+      "author": "Evans",
+      "doi-asserted-by": "crossref",
+      "first-page": "737",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib51",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3390",
+      "article-title": "Genetic variance estimation with imputed variants finds negligible missing heritability for human height and body mass index",
+      "author": "Yang",
+      "doi-asserted-by": "crossref",
+      "first-page": "1114",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib52",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41588-019-0465-0",
+      "article-title": "Accurate estimation of SNP-heritability from biobank-scale data irrespective of genetic architecture",
+      "author": "Hou",
+      "doi-asserted-by": "crossref",
+      "first-page": "1244",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib53",
+      "volume": "51",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/mp.2011.65",
+      "article-title": "Evidence-based psychiatric genetics, AKA the false dichotomy between common and rare variant hypotheses",
+      "author": "Visscher",
+      "doi-asserted-by": "crossref",
+      "first-page": "474",
+      "journal-title": "Mol. Psychiatry",
+      "key": "10.1016/j.ajhg.2020.08.009_bib54",
+      "volume": "17",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006977",
+      "article-title": "Gene-environment interaction study for BMI reveals interactions between genetic factors and physical activity, alcohol consumption and socioeconomic status",
+      "author": "Rask-Andersen",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1006977",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib55",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1161/CIRCULATIONAHA.112.098061",
+      "article-title": "Television watching, leisure time physical activity, and the genetic predisposition in relation to body mass index in women and men",
+      "author": "Qi",
+      "doi-asserted-by": "crossref",
+      "first-page": "1821",
+      "journal-title": "Circulation",
+      "key": "10.1016/j.ajhg.2020.08.009_bib56",
+      "volume": "126",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1136/bmj.g1610",
+      "article-title": "Fried food consumption, genetic risk, and body mass index: gene-diet interaction analysis in three US cohort studies",
+      "author": "Qi",
+      "doi-asserted-by": "crossref",
+      "first-page": "g1610",
+      "journal-title": "BMJ",
+      "key": "10.1016/j.ajhg.2020.08.009_bib57",
+      "volume": "348",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1056/NEJMoa1203039",
+      "article-title": "Sugar-sweetened beverages and genetic risk of obesity",
+      "author": "Qi",
+      "doi-asserted-by": "crossref",
+      "first-page": "1387",
+      "journal-title": "N. Engl. J. Med.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib58",
+      "volume": "367",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/ng.3768",
+      "article-title": "Genome-wide association analysis identifies novel blood pressure loci and offers biological insights into cardiovascular risk",
+      "author": "Warren",
+      "doi-asserted-by": "crossref",
+      "first-page": "403",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib59",
+      "volume": "49",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1093/hmg/ddq560",
+      "article-title": "A genome-wide association study identifies novel loci associated with circulating IGF-I and IGFBP-3",
+      "author": "Kaplan",
+      "doi-asserted-by": "crossref",
+      "first-page": "1241",
+      "journal-title": "Hum. Mol. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib60",
+      "volume": "20",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1111/j.2047-6310.2013.00152.x",
+      "article-title": "Moderate to vigorous physical activity interactions with genetic variants and body mass index in a large US ethnically diverse cohort",
+      "author": "Richardson",
+      "doi-asserted-by": "crossref",
+      "first-page": "e35",
+      "journal-title": "Pediatr. Obes.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib61",
+      "volume": "9",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1126/sciadv.aaw3538",
+      "article-title": "Genotype-by-environment interactions inferred from genetic effects on phenotypic variability in the UK Biobank",
+      "author": "Wang",
+      "doi-asserted-by": "crossref",
+      "first-page": "w3538",
+      "journal-title": "Sci. Adv.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib62",
+      "volume": "5",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1091/mbc.e06-08-0707",
+      "article-title": "Two mammalian Sec16 homologues have nonredundant functions in endoplasmic reticulum (ER) export and transitional ER organization",
+      "author": "Bhattacharyya",
+      "doi-asserted-by": "crossref",
+      "first-page": "839",
+      "journal-title": "Mol. Biol. Cell",
+      "key": "10.1016/j.ajhg.2020.08.009_bib63",
+      "volume": "18",
+      "year": "2007"
+    },
+    {
+      "DOI": "10.1038/ng.274",
+      "article-title": "Genome-wide association yields new sequence variants at seven loci that associate with measures of obesity",
+      "author": "Thorleifsson",
+      "doi-asserted-by": "crossref",
+      "first-page": "18",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib64",
+      "volume": "41",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/jhg.2009.106",
+      "article-title": "Association between obesity and polymorphisms in SEC16B, TMEM18, GNPDA2, BDNF, FAIM2 and MC4R in a Japanese population",
+      "author": "Hotta",
+      "doi-asserted-by": "crossref",
+      "first-page": "727",
+      "journal-title": "J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib65",
+      "volume": "54",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1186/1475-2840-11-48",
+      "article-title": "Expression of fourteen novel obesity-related genes in Zucker diabetic fatty rats",
+      "author": "Schmid",
+      "doi-asserted-by": "crossref",
+      "first-page": "48",
+      "journal-title": "Cardiovasc. Diabetol.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib66",
+      "volume": "11",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41562-019-0757-5",
+      "article-title": "Genetic correlates of social stratification in Great Britain",
+      "author": "Abdellaoui",
+      "doi-asserted-by": "crossref",
+      "first-page": "1332",
+      "journal-title": "Nat. Hum. Behav.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib67",
+      "volume": "3",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2010.11.011",
+      "article-title": "GCTA: a tool for genome-wide complex trait analysis",
+      "author": "Yang",
+      "doi-asserted-by": "crossref",
+      "first-page": "76",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2020.08.009_bib68",
+      "volume": "88",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "article-title": "Second-generation PLINK: rising to the challenge of larger and richer datasets",
+      "author": "Chang",
+      "doi-asserted-by": "crossref",
+      "first-page": "7",
+      "journal-title": "Gigascience",
+      "key": "10.1016/j.ajhg.2020.08.009_bib69",
+      "volume": "4",
+      "year": "2015"
+    }
+  ],
+  "reference-count": 69,
+  "references-count": 69,
+  "relation": {
+    "has-preprint": [
+      {
+        "asserted-by": "object",
+        "id": "10.1101/797829",
+        "id-type": "doi"
+      }
+    ]
+  },
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0002929720302779"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "The American Journal of Human Genetics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "Inferring Gene-by-Environment Interactions with a Bayesian Whole-Genome Regression Model"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+  "volume": "107"
+}

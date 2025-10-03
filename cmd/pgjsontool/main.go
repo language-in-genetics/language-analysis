@@ -30,18 +30,77 @@ func initDB(dbConnStr string) (*sql.DB, error) {
 		return nil, fmt.Errorf("error pinging database: %w", err)
 	}
 
-	// Create table if it doesn't exist
+	// Set search path to use languageingenetics schema
+	_, err = db.Exec(`SET search_path TO languageingenetics, public`)
+	if err != nil {
+		return nil, fmt.Errorf("error setting search path: %w", err)
+	}
+
+	// Create tables if they don't exist
 	_, err = db.Exec(`
-		CREATE TABLE IF NOT EXISTS articles (
+		CREATE TABLE IF NOT EXISTS languageingenetics.articles (
 			id SERIAL PRIMARY KEY,
 			data JSONB NOT NULL
-		)
+		);
+
+		CREATE TABLE IF NOT EXISTS languageingenetics.journals (
+			id SERIAL PRIMARY KEY,
+			name TEXT NOT NULL UNIQUE,
+			enabled BOOLEAN NOT NULL DEFAULT true,
+			created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+		);
 	`)
 	if err != nil {
-		return nil, fmt.Errorf("error creating table: %w", err)
+		return nil, fmt.Errorf("error creating tables: %w", err)
+	}
+
+	// Populate default journals if table is empty
+	if err := initializeJournals(db); err != nil {
+		return nil, fmt.Errorf("error initializing journals: %w", err)
 	}
 
 	return db, nil
+}
+
+func initializeJournals(db *sql.DB) error {
+	// Check if journals table has any entries
+	var count int
+	err := db.QueryRow("SELECT COUNT(*) FROM journals").Scan(&count)
+	if err != nil {
+		return err
+	}
+
+	// If table is empty, populate with default journals
+	if count == 0 {
+		defaultJournals := []string{
+			"Journal of Genetic Counselling",
+			"European Journal of Human Genetics",
+			"The American Journal of Human Genetics",
+			"Heredity",
+			"Human Genetics",
+			"Journal of Community Genetics",
+			"Familial Cancer",
+			"Human Genetics and Genomic Advances",
+			"Human Genomics",
+			"Genetic Epidemiology",
+		}
+
+		stmt, err := db.Prepare("INSERT INTO journals (name) VALUES ($1)")
+		if err != nil {
+			return err
+		}
+		defer stmt.Close()
+
+		for _, journal := range defaultJournals {
+			if _, err := stmt.Exec(journal); err != nil {
+				log.Printf("Warning: Could not insert journal %s: %v", journal, err)
+			}
+		}
+
+		log.Printf("Initialized journals table with %d default journals", len(defaultJournals))
+	}
+
+	return nil
 }
 
 func processFile(filename string, db *sql.DB) error {

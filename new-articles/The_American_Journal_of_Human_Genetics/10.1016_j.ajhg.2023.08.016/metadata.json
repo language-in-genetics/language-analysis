@@ -1,0 +1,981 @@
+{
+  "DOI": "10.1016/j.ajhg.2023.08.016",
+  "ISSN": [
+    "0002-9297"
+  ],
+  "URL": "http://dx.doi.org/10.1016/j.ajhg.2023.08.016",
+  "alternative-id": [
+    "S0002929723002926"
+  ],
+  "assertion": [
+    {
+      "label": "This article is maintained by",
+      "name": "publisher",
+      "value": "Elsevier"
+    },
+    {
+      "label": "Article Title",
+      "name": "articletitle",
+      "value": "mtPGS: Leverage multiple correlated traits for accurate polygenic score construction"
+    },
+    {
+      "label": "Journal Title",
+      "name": "journaltitle",
+      "value": "The American Journal of Human Genetics"
+    },
+    {
+      "label": "CrossRef DOI link to publisher maintained version",
+      "name": "articlelink",
+      "value": "https://doi.org/10.1016/j.ajhg.2023.08.016"
+    },
+    {
+      "label": "Content Type",
+      "name": "content_type",
+      "value": "article"
+    },
+    {
+      "label": "Copyright",
+      "name": "copyright",
+      "value": "© 2023 American Society of Human Genetics."
+    }
+  ],
+  "author": [
+    {
+      "ORCID": "http://orcid.org/0000-0003-2831-1604",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Xu",
+      "given": "Chang",
+      "sequence": "first"
+    },
+    {
+      "affiliation": [],
+      "family": "Ganesh",
+      "given": "Santhi K.",
+      "sequence": "additional"
+    },
+    {
+      "ORCID": "http://orcid.org/0000-0002-4331-7599",
+      "affiliation": [],
+      "authenticated-orcid": false,
+      "family": "Zhou",
+      "given": "Xiang",
+      "sequence": "additional"
+    }
+  ],
+  "container-title": [
+    "The American Journal of Human Genetics"
+  ],
+  "content-domain": {
+    "crossmark-restriction": true,
+    "domain": [
+      "ajhg.org",
+      "elsevier.com",
+      "sciencedirect.com"
+    ]
+  },
+  "created": {
+    "date-parts": [
+      [
+        2023,
+        9,
+        15
+      ]
+    ],
+    "date-time": "2023-09-15T14:28:00Z",
+    "timestamp": 1694788080000
+  },
+  "deposited": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        5
+      ]
+    ],
+    "date-time": "2024-04-05T07:46:15Z",
+    "timestamp": 1712303175000
+  },
+  "indexed": {
+    "date-parts": [
+      [
+        2024,
+        4,
+        6
+      ]
+    ],
+    "date-time": "2024-04-06T00:39:35Z",
+    "timestamp": 1712363975939
+  },
+  "is-referenced-by-count": 2,
+  "issn-type": [
+    {
+      "type": "print",
+      "value": "0002-9297"
+    }
+  ],
+  "issue": "10",
+  "issued": {
+    "date-parts": [
+      [
+        2023,
+        10
+      ]
+    ]
+  },
+  "journal-issue": {
+    "issue": "10",
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          10
+        ]
+      ]
+    }
+  },
+  "language": "en",
+  "license": [
+    {
+      "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+      "content-version": "tdm",
+      "delay-in-days": 0,
+      "start": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2023-10-01T00:00:00Z",
+        "timestamp": 1696118400000
+      }
+    },
+    {
+      "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+      "content-version": "vor",
+      "delay-in-days": 187,
+      "start": {
+        "date-parts": [
+          [
+            2024,
+            4,
+            5
+          ]
+        ],
+        "date-time": "2024-04-05T00:00:00Z",
+        "timestamp": 1712275200000
+      }
+    }
+  ],
+  "link": [
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0002929723002926?httpAccept=text/xml",
+      "content-type": "text/xml",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    },
+    {
+      "URL": "https://api.elsevier.com/content/article/PII:S0002929723002926?httpAccept=text/plain",
+      "content-type": "text/plain",
+      "content-version": "vor",
+      "intended-application": "text-mining"
+    }
+  ],
+  "member": "78",
+  "page": "1673-1689",
+  "prefix": "10.1016",
+  "published": {
+    "date-parts": [
+      [
+        2023,
+        10
+      ]
+    ]
+  },
+  "published-print": {
+    "date-parts": [
+      [
+        2023,
+        10
+      ]
+    ]
+  },
+  "publisher": "Elsevier BV",
+  "reference": [
+    {
+      "DOI": "10.1016/j.tig.2018.07.004",
+      "article-title": "Complex-Trait Prediction in the Era of Big Data",
+      "author": "de los Campos",
+      "doi-asserted-by": "crossref",
+      "first-page": "746",
+      "journal-title": "Trends Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib1",
+      "volume": "34",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1016/j.cell.2019.03.028",
+      "article-title": "Polygenic Prediction of Weight and Obesity Trajectories from Birth to Adulthood",
+      "author": "Khera",
+      "doi-asserted-by": "crossref",
+      "first-page": "587",
+      "journal-title": "Cell",
+      "key": "10.1016/j.ajhg.2023.08.016_bib2",
+      "volume": "177",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.06.005",
+      "article-title": "10 Years of GWAS Discovery: Biology, Function, and Translation",
+      "author": "Visscher",
+      "doi-asserted-by": "crossref",
+      "first-page": "5",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib3",
+      "volume": "101",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.11.029",
+      "article-title": "Five years of GWAS discovery",
+      "author": "Visscher",
+      "doi-asserted-by": "crossref",
+      "first-page": "7",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib4",
+      "volume": "90",
+      "year": "2012"
+    },
+    {
+      "DOI": "10.1038/s41467-020-19653-5",
+      "article-title": "15 years of genome-wide association studies and no signs of slowing down",
+      "author": "Loos",
+      "doi-asserted-by": "crossref",
+      "first-page": "5900",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib5",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.11.002",
+      "article-title": "Polygenic Risk Scores for Prediction of Breast Cancer and Breast Cancer Subtypes",
+      "author": "Mavaddat",
+      "doi-asserted-by": "crossref",
+      "first-page": "21",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib6",
+      "volume": "104",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2011.04.001",
+      "article-title": "Risk prediction of complex diseases from family history and known susceptibility loci, with applications for cancer screening",
+      "author": "So",
+      "doi-asserted-by": "crossref",
+      "first-page": "548",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib7",
+      "volume": "88",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1186/s13073-020-00742-5",
+      "article-title": "Polygenic risk scores: From research tools to clinical instruments",
+      "author": "Lewis",
+      "doi-asserted-by": "crossref",
+      "first-page": "44",
+      "journal-title": "Genome Med.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib8",
+      "volume": "12",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1008060",
+      "article-title": "On the utilization of polygenic risk scores for therapeutic targeting",
+      "author": "Gibson",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1008060",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib9",
+      "volume": "15",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1007/s40142-019-0158-0",
+      "article-title": "Polygenic Risk Scores in Neurodegenerative Diseases: a Review",
+      "author": "Ibanez",
+      "doi-asserted-by": "crossref",
+      "first-page": "22",
+      "journal-title": "Curr. Genet. Med. Rep.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib10",
+      "volume": "7",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-019-12653-0",
+      "article-title": "Improved polygenic prediction by Bayesian multiple regression on summary statistics",
+      "author": "Lloyd-Jones",
+      "doi-asserted-by": "crossref",
+      "first-page": "5086",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib11",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-017-00470-2",
+      "article-title": "Non-parametric genetic prediction of complex traits with latent Dirichlet process regression models",
+      "author": "Zeng",
+      "doi-asserted-by": "crossref",
+      "first-page": "456",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib12",
+      "volume": "8",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.3168/jds.2007-0980",
+      "article-title": "Efficient methods to compute genomic predictions",
+      "author": "VanRaden",
+      "doi-asserted-by": "crossref",
+      "first-page": "4414",
+      "journal-title": "J. Dairy Sci.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib13",
+      "volume": "91",
+      "year": "2008"
+    },
+    {
+      "DOI": "10.1038/s41562-016-0016",
+      "article-title": "Genetic evidence of assortative mating in humans",
+      "author": "Robinson",
+      "doi-asserted-by": "crossref",
+      "journal-title": "Nat. Hum. Behav.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib14",
+      "volume": "1",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41467-019-09718-5",
+      "article-title": "Polygenic prediction via Bayesian regression and continuous shrinkage priors",
+      "author": "Ge",
+      "doi-asserted-by": "crossref",
+      "first-page": "1776",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib15",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1006836",
+      "article-title": "Joint modeling of genetically correlated diseases and functional annotations increases accuracy of polygenic risk prediction",
+      "author": "Hu",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1006836",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib16",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s13059-021-02479-9",
+      "article-title": "PUMAS: fine-tuning polygenic risk scores with GWAS summary statistics",
+      "author": "Zhao",
+      "doi-asserted-by": "crossref",
+      "first-page": "257",
+      "journal-title": "Genome Biol.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib17",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2019.11.001",
+      "article-title": "Making the Most of Clumping and Thresholding for Polygenic Scores",
+      "author": "Privé",
+      "doi-asserted-by": "crossref",
+      "first-page": "1213",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib18",
+      "volume": "105",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1003264",
+      "article-title": "Polygenic Modeling with Bayesian Sparse Linear Mixed Models",
+      "author": "Zhou",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1003264",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib19",
+      "volume": "9",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btu848",
+      "article-title": "PRSice: Polygenic Risk Score software",
+      "author": "Euesden",
+      "doi-asserted-by": "crossref",
+      "first-page": "1466",
+      "journal-title": "Bioinformatics",
+      "key": "10.1016/j.ajhg.2023.08.016_bib20",
+      "volume": "31",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2015.09.001",
+      "article-title": "Modeling Linkage Disequilibrium Increases Accuracy of Polygenic Risk Scores",
+      "author": "Vilhjálmsson",
+      "doi-asserted-by": "crossref",
+      "first-page": "576",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib21",
+      "volume": "97",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1371/journal.pcbi.1005589",
+      "article-title": "Leveraging functional annotations in genetic risk prediction for human complex diseases",
+      "author": "Hu",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1005589",
+      "journal-title": "PLoS Comput. Biol.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib22",
+      "volume": "13",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41467-021-25171-9",
+      "article-title": "Incorporating functional priors improves polygenic prediction accuracy in UK Biobank and 23andMe data sets",
+      "author": "Márquez-Luna",
+      "doi-asserted-by": "crossref",
+      "first-page": "6052",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib23",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1093/gigascience/giz082",
+      "article-title": "PRSice-2: Polygenic Risk Score software for biobank-scale data",
+      "author": "Choi",
+      "doi-asserted-by": "crossref",
+      "journal-title": "GigaScience",
+      "key": "10.1016/j.ajhg.2023.08.016_bib24",
+      "volume": "8",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/nature08185",
+      "article-title": "Common polygenic variation contributes to risk of schizophrenia and bipolar disorder",
+      "author": "Purcell",
+      "doi-asserted-by": "crossref",
+      "first-page": "748",
+      "journal-title": "Nature",
+      "key": "10.1016/j.ajhg.2023.08.016_bib25",
+      "volume": "460",
+      "year": "2009"
+    },
+    {
+      "DOI": "10.1038/s41588-021-00961-5",
+      "article-title": "Large uncertainty in individual polygenic risk score estimation impacts PRS-based risk stratification",
+      "author": "Ding",
+      "doi-asserted-by": "crossref",
+      "first-page": "30",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib26",
+      "volume": "54",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1161/CIRCGEN.121.003496",
+      "article-title": "Fibromuscular Dysplasia and Abdominal Aortic Aneurysms Are Dimorphic Sex-Specific Diseases With Shared Complex Genetic Architecture",
+      "author": "Katz",
+      "doi-asserted-by": "crossref",
+      "first-page": "e003496",
+      "journal-title": "Circ. Genom. Precis. Med.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib27",
+      "volume": "15",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1038/s41467-020-17558-x",
+      "article-title": "Chromosome 1q21.2 and additional loci influence risk of spontaneous coronary artery dissection and myocardial infarction",
+      "author": "Saw",
+      "doi-asserted-by": "crossref",
+      "first-page": "4432",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib28",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2018.04.001",
+      "article-title": "Association of Polygenic Risk Scores for Multiple Cancers in a Phenome-wide Study: Results from The Michigan Genomics Initiative",
+      "author": "Fritsche",
+      "doi-asserted-by": "crossref",
+      "first-page": "1048",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib29",
+      "volume": "102",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/ng.3506",
+      "article-title": "Integrative approaches for large-scale transcriptome-wide association studies",
+      "author": "Gusev",
+      "doi-asserted-by": "crossref",
+      "first-page": "245",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib30",
+      "volume": "48",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1038/ng.3367",
+      "article-title": "A gene-based association method for mapping traits using reference transcriptome data",
+      "author": "Gamazon",
+      "doi-asserted-by": "crossref",
+      "first-page": "1091",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib31",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2019.05.018",
+      "article-title": "TIGAR: An Improved Bayesian Tool for Transcriptomic Data Imputation Enhances Gene Mapping of Complex Traits",
+      "author": "Nagpal",
+      "doi-asserted-by": "crossref",
+      "first-page": "258",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib32",
+      "volume": "105",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.7554/eLife.43657",
+      "article-title": "An atlas of polygenic risk score associations to highlight putative causal relationships across the human phenome",
+      "author": "Richardson",
+      "doi-asserted-by": "crossref",
+      "first-page": "e43657",
+      "journal-title": "Elife",
+      "key": "10.1016/j.ajhg.2023.08.016_bib33",
+      "volume": "8",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-020-16022-0",
+      "article-title": "A phenome-wide association and Mendelian Randomisation study of polygenic risk for depression in UK Biobank",
+      "author": "Shen",
+      "doi-asserted-by": "crossref",
+      "first-page": "2301",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib34",
+      "volume": "11",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1038/s41596-020-0353-1",
+      "article-title": "Tutorial: a guide to performing polygenic risk score analyses",
+      "author": "Choi",
+      "doi-asserted-by": "crossref",
+      "first-page": "2759",
+      "journal-title": "Nat. Protoc.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib35",
+      "volume": "15",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1016/j.tig.2021.06.004",
+      "article-title": "Genetic prediction of complex traits with polygenic scores: a statistical review",
+      "author": "Ma",
+      "doi-asserted-by": "crossref",
+      "first-page": "995",
+      "journal-title": "Trends Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib36",
+      "volume": "37",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1007/s00439-013-1401-5",
+      "article-title": "Improving genetic risk prediction by leveraging pleiotropy",
+      "author": "Li",
+      "doi-asserted-by": "crossref",
+      "first-page": "639",
+      "journal-title": "Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib37",
+      "volume": "133",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2014.12.006",
+      "article-title": "Joint analysis of psychiatric disorders increases accuracy of risk prediction for schizophrenia, bipolar disorder, and major depressive disorder",
+      "author": "Maier",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib38",
+      "volume": "96",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41467-019-08535-0",
+      "article-title": "Efficient cross-trait penalized regression increases prediction accuracy in large cohorts using secondary phenotypes",
+      "author": "Chung",
+      "doi-asserted-by": "crossref",
+      "first-page": "569",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib39",
+      "volume": "10",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/s41467-017-02769-6",
+      "article-title": "Improving genetic prediction by leveraging genetic correlations among human diseases and traits",
+      "author": "Maier",
+      "doi-asserted-by": "crossref",
+      "first-page": "989",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib40",
+      "volume": "9",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1038/s41588-017-0009-4",
+      "article-title": "Multi-trait analysis of genome-wide association summary statistics using MTAG",
+      "author": "Turley",
+      "doi-asserted-by": "crossref",
+      "first-page": "229",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib41",
+      "volume": "50",
+      "year": "2018"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btac029",
+      "doi-asserted-by": "crossref",
+      "key": "10.1016/j.ajhg.2023.08.016_bib42",
+      "unstructured": "Xiao, J., Cai, M., Hu, X., Wan, X., Chen, G., and Yang, C. XPXP: Improving polygenic prediction by cross-population and cross-phenotype analysis.Bioinformatics,38(7), pp.1947-1955 10.1093/bioinformatics/btac029/6510931."
+    },
+    {
+      "DOI": "10.1038/nmeth.2848",
+      "article-title": "Efficient multivariate linear mixed model algorithms for genome-wide association studies",
+      "author": "Zhou",
+      "doi-asserted-by": "crossref",
+      "first-page": "407",
+      "journal-title": "Nat. Methods",
+      "key": "10.1016/j.ajhg.2023.08.016_bib43",
+      "volume": "11",
+      "year": "2014"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009293",
+      "article-title": "Accurate genetic and environmental covariance estimation with composite likelihood in genome-wide association studies",
+      "author": "Gao",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1009293",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib44",
+      "volume": "17",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2020.03.013",
+      "article-title": "Accurate and Scalable Construction of Polygenic Scores in Large Biobank Data Sets",
+      "author": "Yang",
+      "doi-asserted-by": "crossref",
+      "first-page": "679",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib45",
+      "volume": "106",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1371/journal.pgen.1009021",
+      "article-title": "Evaluation of polygenic prediction methodology within a reference-standardized framework",
+      "author": "Pain",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1009021",
+      "journal-title": "PLoS Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib46",
+      "volume": "17",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1371/journal.pmed.1001779",
+      "article-title": "UK Biobank: An Open Access Resource for Identifying the Causes of a Wide Range of Complex Diseases of Middle and Old Age",
+      "author": "Sudlow",
+      "doi-asserted-by": "crossref",
+      "first-page": "e1001779",
+      "journal-title": "PLoS Med.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib47",
+      "volume": "12",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/ije/dyr120",
+      "article-title": "China Kadoorie Biobank of 0.5 million people: Survey methods, baseline characteristics and long-term follow-up",
+      "author": "Chen",
+      "doi-asserted-by": "crossref",
+      "first-page": "1652",
+      "journal-title": "Int. J. Epidemiol.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib48",
+      "volume": "40",
+      "year": "2011"
+    },
+    {
+      "DOI": "10.1016/j.je.2016.12.005",
+      "article-title": "Overview of the BioBank Japan Project: Study design and profile",
+      "author": "Nagai",
+      "doi-asserted-by": "crossref",
+      "first-page": "S2",
+      "journal-title": "J. Epidemiol.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib49",
+      "volume": "27",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1038/s41586-019-1457-z",
+      "article-title": "Exome sequencing of Finnish isolates enhances rare-variant association power",
+      "author": "Locke",
+      "doi-asserted-by": "crossref",
+      "first-page": "323",
+      "journal-title": "Nature",
+      "key": "10.1016/j.ajhg.2023.08.016_bib50",
+      "volume": "572",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1038/ng.3406",
+      "article-title": "An atlas of genetic correlations across human diseases and traits",
+      "author": "Bulik-Sullivan",
+      "doi-asserted-by": "crossref",
+      "first-page": "1236",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib51",
+      "volume": "47",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btv546",
+      "article-title": "Approximately independent linkage disequilibrium blocks in human populations",
+      "author": "Berisa",
+      "doi-asserted-by": "crossref",
+      "first-page": "283",
+      "journal-title": "Bioinformatics",
+      "key": "10.1016/j.ajhg.2023.08.016_bib52",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1016/0377-0427(88)90358-5",
+      "article-title": "Preconditioned conjugate gradients for solving singular systems",
+      "author": "Kaasschieter",
+      "doi-asserted-by": "crossref",
+      "first-page": "265",
+      "journal-title": "J. Comput. Appl. Math.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib53",
+      "volume": "24",
+      "year": "1988"
+    },
+    {
+      "DOI": "10.5808/gi.21053",
+      "article-title": "Statistical models and computational tools for predicting complex traits and diseases",
+      "author": "Chung",
+      "doi-asserted-by": "crossref",
+      "first-page": "e36",
+      "journal-title": "Genomics Inform.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib54",
+      "volume": "19",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1186/s13742-015-0047-8",
+      "article-title": "Second-generation PLINK: Rising to the challenge of larger and richer datasets",
+      "author": "Chang",
+      "doi-asserted-by": "crossref",
+      "first-page": "7",
+      "journal-title": "GigaScience",
+      "key": "10.1016/j.ajhg.2023.08.016_bib55",
+      "volume": "4",
+      "year": "2015"
+    },
+    {
+      "DOI": "10.1038/s41467-021-24485-y",
+      "article-title": "Improved genetic prediction of complex traits from individual-level data or summary statistics",
+      "author": "Zhang",
+      "doi-asserted-by": "crossref",
+      "first-page": "4192",
+      "journal-title": "Nat. Commun.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib56",
+      "volume": "12",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2023.03.009",
+      "article-title": "Fast and accurate Bayesian polygenic risk modeling with variational inference",
+      "author": "Zabad",
+      "doi-asserted-by": "crossref",
+      "first-page": "741",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib57",
+      "volume": "110",
+      "year": "2023"
+    },
+    {
+      "DOI": "10.1038/s41588-020-0631-4",
+      "article-title": "Mendelian randomization accounting for correlated and uncorrelated pleiotropic effects using genome-wide summary statistics",
+      "author": "Morrison",
+      "doi-asserted-by": "crossref",
+      "first-page": "740",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib58",
+      "volume": "52",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1093/bib/bbac039",
+      "article-title": "PGS-server: Accuracy, robustness and transferability of polygenic score methods for biobank scale studies",
+      "author": "Yang",
+      "doi-asserted-by": "crossref",
+      "journal-title": "Brief. Bioinform.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib59",
+      "volume": "23",
+      "year": "2022"
+    },
+    {
+      "key": "10.1016/j.ajhg.2023.08.016_bib60",
+      "unstructured": "Albiñana, C., Zhu, Z., Schork, A.J., Ingason, A., Aschard, H., Brikell, I., Bulik, C.M., Petersen, L. V, Agerbo, E., Grove, J., et al. Multi-PGS enhances polygenic prediction: weighting 937 polygenic scores.Preprint at medRxiv 10.1101/2022.09.14.22279940."
+    },
+    {
+      "DOI": "10.1371/journal.pone.0065245",
+      "article-title": "A Unified Framework for Association Analysis with Multiple Related Phenotypes",
+      "author": "Stephens",
+      "doi-asserted-by": "crossref",
+      "first-page": "e65245",
+      "journal-title": "PLoS One",
+      "key": "10.1016/j.ajhg.2023.08.016_bib61",
+      "volume": "8",
+      "year": "2013"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01036-9",
+      "article-title": "Leveraging fine-mapping and multipopulation training data to improve cross-population polygenic risk scores",
+      "author": "Weissbrod",
+      "doi-asserted-by": "crossref",
+      "first-page": "450",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib62",
+      "volume": "54",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1093/bioinformatics/btw018",
+      "article-title": "FINEMAP: Efficient variable selection using summary data from genome-wide association studies",
+      "author": "Benner",
+      "doi-asserted-by": "crossref",
+      "first-page": "1493",
+      "journal-title": "Bioinformatics",
+      "key": "10.1016/j.ajhg.2023.08.016_bib63",
+      "volume": "32",
+      "year": "2016"
+    },
+    {
+      "DOI": "10.1186/s13059-021-02478-w",
+      "article-title": "SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits",
+      "author": "Zhang",
+      "doi-asserted-by": "crossref",
+      "first-page": "262",
+      "journal-title": "Genome Biol.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib64",
+      "volume": "22",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1038/s41588-022-01017-y",
+      "article-title": "An integrated framework for local genetic correlation analysis",
+      "author": "Werme",
+      "doi-asserted-by": "crossref",
+      "first-page": "274",
+      "journal-title": "Nat. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib65",
+      "volume": "54",
+      "year": "2022"
+    },
+    {
+      "DOI": "10.1534/genetics.119.301859",
+      "article-title": "Complex trait prediction from genome data: Contrasting EBV in livestock to PRS in humans",
+      "author": "Wray",
+      "doi-asserted-by": "crossref",
+      "first-page": "1131",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2023.08.016_bib66",
+      "volume": "211",
+      "year": "2019"
+    },
+    {
+      "DOI": "10.1534/genetics.116.193383",
+      "article-title": "Inference on the genetic basis of eye and skin color in an admixed population via bayesian linear mixed models",
+      "author": "Lloyd-Jones",
+      "doi-asserted-by": "crossref",
+      "first-page": "1113",
+      "journal-title": "Genetics",
+      "key": "10.1016/j.ajhg.2023.08.016_bib67",
+      "volume": "206",
+      "year": "2017"
+    },
+    {
+      "DOI": "10.1186/s12864-020-06921-3",
+      "article-title": "Performances of Adaptive MultiBLUP, Bayesian regressions, and weighted-GBLUP approaches for genomic predictions in Belgian Blue beef cattle",
+      "author": "Gualdrón Duarte",
+      "doi-asserted-by": "crossref",
+      "first-page": "545",
+      "journal-title": "BMC Genom.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib68",
+      "volume": "21",
+      "year": "2020"
+    },
+    {
+      "DOI": "10.1080/01621459.2020.1764849",
+      "article-title": "A Penalized Regression Framework for Building Polygenic Risk Models Based on Summary Statistics From Genome-Wide Association Studies and Incorporating External Information",
+      "author": "Chen",
+      "doi-asserted-by": "crossref",
+      "first-page": "133",
+      "journal-title": "J. Am. Stat. Assoc.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib69",
+      "volume": "116",
+      "year": "2021"
+    },
+    {
+      "DOI": "10.1016/j.ajhg.2017.11.001",
+      "article-title": "A Powerful Approach to Estimating Annotation-Stratified Genetic Covariance via GWAS Summary Statistics",
+      "author": "Lu",
+      "doi-asserted-by": "crossref",
+      "first-page": "939",
+      "journal-title": "Am. J. Hum. Genet.",
+      "key": "10.1016/j.ajhg.2023.08.016_bib70",
+      "volume": "101",
+      "year": "2017"
+    }
+  ],
+  "reference-count": 70,
+  "references-count": 70,
+  "resource": {
+    "primary": {
+      "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0002929723002926"
+    }
+  },
+  "score": 0,
+  "short-container-title": [
+    "The American Journal of Human Genetics"
+  ],
+  "source": "Crossref",
+  "title": [
+    "mtPGS: Leverage multiple correlated traits for accurate polygenic score construction"
+  ],
+  "type": "journal-article",
+  "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+  "volume": "110"
+}

@@ -2,7 +2,6 @@
 
 So far, this is just a program to extract data from the CrossRef database.
 
-In the `database` directory, there's an alternate way of processing/manipulating the data.
 
 ## Usage (full details)
 
@@ -28,3 +27,8 @@ You have either run the program from scratch, or you are looking at the articles
 Follow the instructions in `extractor/README.md` to extract race terms out of the data.
 
 
+## Database
+
+Long-term, it's better for this to be in a database. Compile and run `pgjsontool`.
+
+Then run `database/indexing.sql` 
