@@ -1,34 +1,107 @@
-# Word-Frequency-Analysis-
+# Word Frequency Analysis - Language in Genetics
 
-So far, this is just a program to extract data from the CrossRef database.
+A research project analyzing racial/ethnic terminology usage in genetics journals. The system processes CrossRef article metadata and uses OpenAI's API to identify terminology patterns in academic publications.
 
+## Architecture
 
-## Usage (full details)
+- **PostgreSQL Database**: Stores CrossRef article metadata and analysis results
+- **Go Tools** (`cmd/pgjsontool`): Bulk import tool for CrossRef dump files
+- **Python Pipeline** (`extractor/`): OpenAI batch processing for content analysis
+- **Automated Dashboard**: Generates static HTML dashboards showing analysis results
 
-Skip this if you just want the JSON data.
+## Quick Start
 
-1. Download the latest CrossRef database from https://academictorrents.com/browse.php?search=Crossref
-(You will need a torrent client to do this)
+### Prerequisites
 
-2. Compile the `jsonreader` program. You will need a `golang` compiler to do this. It has only
-been tested on Linux, where it was run from `make`
+- PostgreSQL with the CrossRef database imported
+- Python 3.x with virtual environment
+- OpenAI API key
+- Go 1.21+ (only if importing new CrossRef data)
 
-3. Run `./bin/jsonreader -dir "the cross ref db dir" -output "articles"`
+### Setup
 
-4. You will end up with a huge number of files in the `articles` directory and subdirectories.
-Run `find articles -type f -exec git add '{}' ';'`
+```bash
+# Set database environment variable
+export PGDATABASE=crossref
 
-5. Remember to `git commit` and `git push`
+# Set up Python environment
+cd extractor/
+python -m venv .venv
+source .venv/bin/activate
+pip install -r ../requirements.txt
+```
 
-## Extracting information
+### Running Analysis
 
-You have either run the program from scratch, or you are looking at the articles that were in the git repo in the `articles/` directory.
+```bash
+cd extractor/
 
-Follow the instructions in `extractor/README.md` to extract race terms out of the data.
+# Process articles from enabled journals
+./bulkquery.py --limit 1000
 
+# Check batch status
+./batchcheck.py
 
-## Database
+# Fetch completed results
+./batchfetch.py
 
-Long-term, it's better for this to be in a database. Compile and run `pgjsontool`.
+# Generate dashboard
+./generate_dashboard.py --output-dir ../dashboard
+```
 
-Then run `database/indexing.sql` 
+### Automation
+
+The `cronscript.sh` script automates the entire workflow:
+
+```bash
+# Run manually
+./cronscript.sh
+
+# Schedule with cron (every 6 hours)
+crontab -e
+# Add: 0 */6 * * * /home/languageingenetics/Word-Frequency-Analysis-/cronscript.sh
+```
+
+## Database Schema
+
+**public.raw_text_data**: CrossRef article metadata (JSON in `filesrc` column)
+
+**languageingenetics schema**:
+- `journals`: Manages which journals to process
+- `files`: Analysis results per article
+- `batches`: OpenAI batch job tracking
+
+## Managing Journals
+
+```sql
+-- List journals and their status
+SELECT name, enabled FROM languageingenetics.journals ORDER BY name;
+
+-- Disable a journal
+UPDATE languageingenetics.journals SET enabled = false WHERE name = 'Heredity';
+
+-- Add a new journal
+INSERT INTO languageingenetics.journals (name) VALUES ('New Journal Name');
+```
+
+## Development
+
+```bash
+# Build Go tools (only needed for importing new data)
+make all
+
+# Run tests
+make test
+
+# Run linter
+make lint
+```
+
+## Documentation
+
+See [CLAUDE.md](CLAUDE.md) for detailed project documentation, including:
+- Complete architecture details
+- Database setup and permissions
+- Initial import procedures
+- Python workflow details
+- Configuration options 
