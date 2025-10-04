@@ -17,6 +17,8 @@ parser.add_argument("--output-file", help="Where to put the batch file (default:
 parser.add_argument("--dry-run", action="store_true", help="Don't send the batch to OpenAI")
 parser.add_argument("--batch-id-save-file", help="What file to put the local batch ID into")
 parser.add_argument("--openai-api-key", default=os.path.expanduser("~/.openai.key"))
+parser.add_argument("--explain-queries", action="store_true", help="Run EXPLAIN on all queries and log to file")
+parser.add_argument("--explain-log", default="bulkquery_explains.log", help="Log file for EXPLAIN output")
 args = parser.parse_args()
 
 # PostgreSQL connection will use environment variables:
@@ -33,8 +35,45 @@ if args.output_file is None:
 conn = psycopg2.connect("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
+# Helper function to execute queries with optional EXPLAIN logging
+def execute_query(cursor_to_use, sql, params=None):
+    """Execute a query, optionally logging EXPLAIN output"""
+    from datetime import datetime
+    if args.explain_queries:
+        explain_cursor = conn.cursor()
+        try:
+            if params:
+                explain_cursor.execute("EXPLAIN (ANALYZE, BUFFERS, VERBOSE) " + sql, params)
+            else:
+                explain_cursor.execute("EXPLAIN (ANALYZE, BUFFERS, VERBOSE) " + sql)
+            explain_output = "\n".join(row[0] for row in explain_cursor.fetchall())
+
+            with open(args.explain_log, 'a') as f:
+                f.write(f"\n{'='*80}\n")
+                f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+                f.write(f"Query:\n{sql}\n")
+                if params:
+                    f.write(f"Parameters: {params}\n")
+                f.write(f"\nEXPLAIN output:\n{explain_output}\n")
+        finally:
+            explain_cursor.close()
+
+    # Execute the actual query
+    if params:
+        cursor_to_use.execute(sql, params)
+    else:
+        cursor_to_use.execute(sql)
+    return cursor_to_use
+
 # Set search path
 cursor.execute("SET search_path TO languageingenetics, public")
+
+# Initialize explain log if needed
+if args.explain_queries:
+    from datetime import datetime
+    with open(args.explain_log, 'w') as f:
+        f.write(f"Query Explanation Log - Generated {datetime.now().isoformat()}\n")
+        f.write(f"{'='*80}\n")
 
 # Start a transaction for this batch
 cursor.execute("BEGIN")
@@ -82,7 +121,7 @@ tools = [{
 
 def process_article(article_id, metadata):
     # Check if article is already processed
-    cursor.execute("SELECT id FROM languageingenetics.files WHERE article_id = %s", [article_id])
+    execute_query(cursor, "SELECT id FROM languageingenetics.files WHERE article_id = %s", [article_id])
     if cursor.fetchone() is not None:
         return False
 
@@ -142,7 +181,7 @@ if args.journal:
     journals_to_query = args.journal
 else:
     # Query enabled journals from the database
-    cursor.execute("SELECT name FROM languageingenetics.journals WHERE enabled = true")
+    execute_query(cursor, "SELECT name FROM languageingenetics.journals WHERE enabled = true")
     journals_to_query = [row['name'] for row in cursor]
     if journals_to_query:
         print(f"Processing {len(journals_to_query)} enabled journals from database", file=sys.stderr)
@@ -178,7 +217,7 @@ if args.limit:
 
 # Create a separate cursor for fetching articles
 article_cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-article_cursor.execute(query, query_params)
+execute_query(article_cursor, query, query_params)
 
 # Process articles
 processed_count = 0
@@ -235,6 +274,9 @@ if cursor.rowcount != 1:
 
 conn.commit()
 conn.close()
+
+if args.explain_queries:
+    print(f"Query explanations written to {args.explain_log}", file=sys.stderr)
 
 if args.batch_id_save_file:
     with open(args.batch_id_save_file, 'w') as bisf:

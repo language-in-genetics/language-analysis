@@ -32,9 +32,12 @@ else
     log "Warning: Batch fetch had errors (may be normal if no batches ready)"
 fi
 
-# Step 2: Submit new batch for processing
+# Step 2: Submit new batch for processing with query explanations
 log "Submitting new batch of $BATCH_SIZE articles..."
-if uv run bulkquery.py --limit "$BATCH_SIZE" 2>&1 | tee -a "$LOG_FILE"; then
+BULKQUERY_EXPLAIN_LOG="$WORKDIR/bulkquery_explains.log"
+# Clear the explain log before running to prevent unbounded growth
+rm -f "$BULKQUERY_EXPLAIN_LOG"
+if uv run bulkquery.py --limit "$BATCH_SIZE" --explain-queries --explain-log "$BULKQUERY_EXPLAIN_LOG" 2>&1 | tee -a "$LOG_FILE"; then
     log "New batch submitted successfully"
 else
     log "Warning: No new articles to process or batch submission failed"
@@ -64,15 +67,30 @@ fi
 # Step 5: Analyze query performance and suggest optimizations
 log "Analyzing query performance..."
 OPTIMIZATION_REPORT="$WORKDIR/optimization_suggestions.md"
+
+# Analyze dashboard query performance
 if [ -f "$EXPLAIN_LOG" ]; then
-    log "Running Claude Code to analyze EXPLAIN output..."
-    claude code analyze "$EXPLAIN_LOG" --prompt "Review these PostgreSQL EXPLAIN (ANALYZE, BUFFERS, VERBOSE) outputs and provide specific recommendations for database optimization. For each query, identify:\n1. Missing indexes that would improve performance\n2. Inefficient query patterns (sequential scans on large tables, expensive operations)\n3. Specific CREATE INDEX statements to run\n4. Code refactoring suggestions if applicable\n\nFormat your response as a markdown report with actionable recommendations." > "$OPTIMIZATION_REPORT" 2>&1 || log "Warning: Claude Code analysis failed or not available"
+    log "Running Claude Code to analyze dashboard EXPLAIN output..."
+    claude code analyze "$EXPLAIN_LOG" --prompt "Review these PostgreSQL EXPLAIN (ANALYZE, BUFFERS, VERBOSE) outputs from generate_dashboard.py and provide specific recommendations for database optimization. For each query, identify:\n1. Missing indexes that would improve performance\n2. Inefficient query patterns (sequential scans on large tables, expensive operations)\n3. Specific CREATE INDEX statements to run\n4. Code refactoring suggestions if applicable\n\nFormat your response as a markdown report with actionable recommendations." > "$OPTIMIZATION_REPORT" 2>&1 || log "Warning: Claude Code analysis failed or not available"
 
     if [ -f "$OPTIMIZATION_REPORT" ] && [ -s "$OPTIMIZATION_REPORT" ]; then
-        log "Optimization suggestions written to $OPTIMIZATION_REPORT"
+        log "Dashboard optimization suggestions written to $OPTIMIZATION_REPORT"
     fi
 else
-    log "No EXPLAIN log found, skipping performance analysis"
+    log "No dashboard EXPLAIN log found, skipping dashboard performance analysis"
+fi
+
+# Analyze bulkquery performance
+BULKQUERY_OPTIMIZATION_REPORT="$WORKDIR/bulkquery_optimization_suggestions.md"
+if [ -f "$BULKQUERY_EXPLAIN_LOG" ]; then
+    log "Running Claude Code to analyze bulkquery EXPLAIN output..."
+    claude code analyze "$BULKQUERY_EXPLAIN_LOG" --prompt "Review these PostgreSQL EXPLAIN (ANALYZE, BUFFERS, VERBOSE) outputs from bulkquery.py and provide specific recommendations for database optimization. This script processes articles from the raw_text_data table which is hundreds of GB in size. For each query, identify:\n1. Missing indexes that would improve performance (especially for the JSONB queries on filesrc column)\n2. Inefficient query patterns (sequential scans on large tables, expensive operations)\n3. Specific CREATE INDEX statements to run\n4. Code refactoring suggestions if applicable\n5. Whether existing indexes are being used effectively\n\nFormat your response as a markdown report with actionable recommendations. Priority should be given to optimizations that will save hours of processing time." > "$BULKQUERY_OPTIMIZATION_REPORT" 2>&1 || log "Warning: Claude Code analysis failed or not available"
+
+    if [ -f "$BULKQUERY_OPTIMIZATION_REPORT" ] && [ -s "$BULKQUERY_OPTIMIZATION_REPORT" ]; then
+        log "Bulkquery optimization suggestions written to $BULKQUERY_OPTIMIZATION_REPORT"
+    fi
+else
+    log "No bulkquery EXPLAIN log found, skipping bulkquery performance analysis"
 fi
 
 log "Automated processing run completed successfully"
