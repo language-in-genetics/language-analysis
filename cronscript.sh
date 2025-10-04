@@ -40,9 +40,12 @@ else
     log "Warning: No new articles to process or batch submission failed"
 fi
 
-# Step 3: Generate static dashboard
+# Step 3: Generate static dashboard with query explanations
 log "Generating dashboard..."
-if uv run generate_dashboard.py --output-dir "$DASHBOARD_DIR" 2>&1 | tee -a "$LOG_FILE"; then
+EXPLAIN_LOG="$WORKDIR/query_explains.log"
+# Clear the explain log before running to prevent unbounded growth
+rm -f "$EXPLAIN_LOG"
+if uv run generate_dashboard.py --output-dir "$DASHBOARD_DIR" --explain-queries --explain-log "$EXPLAIN_LOG" 2>&1 | tee -a "$LOG_FILE"; then
     log "Dashboard generated successfully"
 else
     log "Error: Dashboard generation failed"
@@ -56,6 +59,20 @@ if rsync -avz --delete "$DASHBOARD_DIR/" "$REMOTE_HOST:$REMOTE_PATH" 2>&1 | tee 
 else
     log "Error: Dashboard sync failed"
     exit 1
+fi
+
+# Step 5: Analyze query performance and suggest optimizations
+log "Analyzing query performance..."
+OPTIMIZATION_REPORT="$WORKDIR/optimization_suggestions.md"
+if [ -f "$EXPLAIN_LOG" ]; then
+    log "Running Claude Code to analyze EXPLAIN output..."
+    claude code analyze "$EXPLAIN_LOG" --prompt "Review these PostgreSQL EXPLAIN (ANALYZE, BUFFERS, VERBOSE) outputs and provide specific recommendations for database optimization. For each query, identify:\n1. Missing indexes that would improve performance\n2. Inefficient query patterns (sequential scans on large tables, expensive operations)\n3. Specific CREATE INDEX statements to run\n4. Code refactoring suggestions if applicable\n\nFormat your response as a markdown report with actionable recommendations." > "$OPTIMIZATION_REPORT" 2>&1 || log "Warning: Claude Code analysis failed or not available"
+
+    if [ -f "$OPTIMIZATION_REPORT" ] && [ -s "$OPTIMIZATION_REPORT" ]; then
+        log "Optimization suggestions written to $OPTIMIZATION_REPORT"
+    fi
+else
+    log "No EXPLAIN log found, skipping performance analysis"
 fi
 
 log "Automated processing run completed successfully"

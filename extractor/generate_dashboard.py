@@ -6,10 +6,16 @@ import psycopg2.extras
 from datetime import datetime, timedelta
 import json
 import os
+import time
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--output-dir", default="dashboard", help="Output directory for static files")
+parser.add_argument("--explain-queries", action="store_true", help="Run EXPLAIN on all queries and log to file")
+parser.add_argument("--explain-log", default="query_explains.log", help="Log file for EXPLAIN output")
 args = parser.parse_args()
+
+# Track script runtime
+start_time = time.time()
 
 # Create output directory
 os.makedirs(args.output_dir, exist_ok=True)
@@ -18,27 +24,63 @@ os.makedirs(args.output_dir, exist_ok=True)
 conn = psycopg2.connect("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
+# Helper function to execute queries with optional EXPLAIN logging
+def execute_query(sql, params=None):
+    """Execute a query, optionally logging EXPLAIN output"""
+    if args.explain_queries:
+        explain_cursor = conn.cursor()
+        try:
+            if params:
+                explain_cursor.execute("EXPLAIN (ANALYZE, BUFFERS, VERBOSE) " + sql, params)
+            else:
+                explain_cursor.execute("EXPLAIN (ANALYZE, BUFFERS, VERBOSE) " + sql)
+            explain_output = "\n".join(row[0] for row in explain_cursor.fetchall())
+
+            with open(args.explain_log, 'a') as f:
+                f.write(f"\n{'='*80}\n")
+                f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+                f.write(f"Query:\n{sql}\n")
+                if params:
+                    f.write(f"Parameters: {params}\n")
+                f.write(f"\nEXPLAIN output:\n{explain_output}\n")
+        finally:
+            explain_cursor.close()
+
+    # Execute the actual query
+    if params:
+        cursor.execute(sql, params)
+    else:
+        cursor.execute(sql)
+    return cursor
+
 # Set search path
 cursor.execute("SET search_path TO languageingenetics, public")
 
+# Initialize explain log if needed
+if args.explain_queries:
+    with open(args.explain_log, 'w') as f:
+        f.write(f"Query Explanation Log - Generated {datetime.now().isoformat()}\n")
+        f.write(f"{'='*80}\n")
+
 print("Collecting data...")
 
-# Progress data
-cursor.execute("SELECT COUNT(*) FROM public.raw_text_data")
-total_articles = cursor.fetchone()['count']
+# Get enabled journals first - we'll calculate total from journal stats
+execute_query("SELECT name FROM languageingenetics.journals WHERE enabled = true ORDER BY name")
+enabled_journals = [row['name'] for row in cursor]
 
-cursor.execute("SELECT COUNT(*) FROM languageingenetics.files WHERE processed = true")
+execute_query("SELECT COUNT(*) FROM languageingenetics.files WHERE processed = true")
 processed_articles = cursor.fetchone()['count']
 
-progress_data = {
-    'total_articles': total_articles,
-    'processed_articles': processed_articles,
-    'unprocessed_articles': total_articles - processed_articles,
-    'processing_percentage': (processed_articles / total_articles * 100) if total_articles > 0 else 0
-}
+# Calculate completion projection
+execute_query("""
+    SELECT MIN(when_processed) as earliest_processed
+    FROM languageingenetics.files
+    WHERE processed = true AND when_processed IS NOT NULL
+""")
+earliest = cursor.fetchone()['earliest_processed']
 
 # Token usage data
-cursor.execute("""
+execute_query("""
     SELECT
         COALESCE(SUM(prompt_tokens), 0) as prompt_tokens,
         COALESCE(SUM(completion_tokens), 0) as completion_tokens
@@ -49,20 +91,8 @@ row = cursor.fetchone()
 all_time_prompt = row['prompt_tokens']
 all_time_completion = row['completion_tokens']
 
-today_start = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-cursor.execute("""
-    SELECT
-        COALESCE(SUM(prompt_tokens), 0) as prompt_tokens,
-        COALESCE(SUM(completion_tokens), 0) as completion_tokens
-    FROM languageingenetics.files
-    WHERE processed = true AND when_processed >= %s
-""", [today_start])
-row = cursor.fetchone()
-today_prompt = row['prompt_tokens']
-today_completion = row['completion_tokens']
-
 last_24h = datetime.now() - timedelta(hours=24)
-cursor.execute("""
+execute_query("""
     SELECT
         COALESCE(SUM(prompt_tokens), 0) as prompt_tokens,
         COALESCE(SUM(completion_tokens), 0) as completion_tokens
@@ -79,11 +109,6 @@ token_data = {
         'completion_tokens': all_time_completion,
         'total_tokens': all_time_prompt + all_time_completion
     },
-    'today': {
-        'prompt_tokens': today_prompt,
-        'completion_tokens': today_completion,
-        'total_tokens': today_prompt + today_completion
-    },
     'last_24h': {
         'prompt_tokens': last24h_prompt,
         'completion_tokens': last24h_completion,
@@ -91,13 +116,37 @@ token_data = {
     }
 }
 
-# Journal statistics
-cursor.execute("SELECT name FROM languageingenetics.journals WHERE enabled = true ORDER BY name")
-enabled_journals = [row['name'] for row in cursor]
+# Calculate batch waiting time in last 24 hours
+execute_query("""
+    SELECT
+        b.id,
+        b.when_sent,
+        MIN(bp.when_checked) as first_progress,
+        MAX(bp.when_checked) as last_progress
+    FROM languageingenetics.batches b
+    LEFT JOIN languageingenetics.batchprogress bp ON b.id = bp.batch_id
+    WHERE b.when_sent >= %s
+    GROUP BY b.id, b.when_sent
+    ORDER BY b.when_sent
+""", [last_24h])
 
+batch_rows = cursor.fetchall()
+total_waiting_seconds = 0
+
+for batch in batch_rows:
+    if batch['first_progress'] and batch['when_sent']:
+        # Time from when batch was sent until first progress update
+        wait_time = (batch['first_progress'] - batch['when_sent']).total_seconds()
+        if wait_time > 0:
+            total_waiting_seconds += wait_time
+
+waiting_hours = total_waiting_seconds / 3600.0
+batch_utilization = ((24 - waiting_hours) / 24 * 100) if waiting_hours < 24 else 0
+
+# Journal statistics
 journal_stats = []
 for journal in enabled_journals:
-    cursor.execute("""
+    execute_query("""
         SELECT COUNT(*) as total
         FROM public.raw_text_data
         WHERE (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)
@@ -106,7 +155,7 @@ for journal in enabled_journals:
 
     if total > 0:
         # Get processed count
-        cursor.execute("""
+        execute_query("""
             SELECT COUNT(*) as processed
             FROM languageingenetics.files f
             JOIN public.raw_text_data r ON f.article_id = r.id
@@ -123,8 +172,28 @@ for journal in enabled_journals:
         'processed': processed
     })
 
+# Calculate total articles from journal stats
+total_articles = sum(j['total'] for j in journal_stats)
+
+# Calculate progress data and completion projection
+progress_data = {
+    'total_articles': total_articles,
+    'processed_articles': processed_articles,
+    'unprocessed_articles': total_articles - processed_articles,
+    'processing_percentage': (processed_articles / total_articles * 100) if total_articles > 0 else 0
+}
+
+if earliest and processed_articles > 0 and total_articles > processed_articles:
+    time_elapsed = (datetime.now() - earliest).total_seconds()
+    articles_per_second = processed_articles / time_elapsed
+    remaining_articles = total_articles - processed_articles
+    seconds_remaining = remaining_articles / articles_per_second
+    completion_date = datetime.now() + timedelta(seconds=seconds_remaining)
+else:
+    completion_date = None
+
 # Results by year
-cursor.execute("""
+execute_query("""
     SELECT
         pub_year as year,
         COUNT(*) as count
@@ -138,7 +207,7 @@ cursor.execute("""
 by_year = [{'year': row['year'], 'count': row['count']} for row in cursor.fetchall()]
 
 # Results by journal and year
-cursor.execute("""
+execute_query("""
     SELECT
         (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->0) as journal,
         f.pub_year as year,
@@ -241,9 +310,9 @@ html_content = f"""<!DOCTYPE html>
                 <div class="subvalue">{progress_data['unprocessed_articles']:,} remaining</div>
             </div>
             <div class="card">
-                <h3>Active Journals</h3>
-                <div class="value">{len([j for j in journal_stats if j['processed'] > 0])}</div>
-                <div class="subvalue">of {len(enabled_journals)} enabled</div>
+                <h3>Est. Completion</h3>
+                <div class="value">{"N/A" if completion_date is None else completion_date.strftime("%b %d, %Y")}</div>
+                <div class="subvalue">{"No data yet" if completion_date is None else completion_date.strftime("%H:%M UTC")}</div>
             </div>
         </div>
 
@@ -251,18 +320,18 @@ html_content = f"""<!DOCTYPE html>
         <div class="grid">
             <div class="card">
                 <h3>All Time</h3>
-                <div class="value">${(token_data['all_time']['prompt_tokens'] * 0.075 / 1000000 + token_data['all_time']['completion_tokens'] * 0.3 / 1000000):.2f}</div>
-                <div class="subvalue">{token_data['all_time']['total_tokens']:,} tokens</div>
-            </div>
-            <div class="card">
-                <h3>Today</h3>
-                <div class="value">${(token_data['today']['prompt_tokens'] * 0.075 / 1000000 + token_data['today']['completion_tokens'] * 0.3 / 1000000):.2f}</div>
-                <div class="subvalue">{token_data['today']['total_tokens']:,} tokens</div>
+                <div class="value">{token_data['all_time']['total_tokens']:,}</div>
+                <div class="subvalue">tokens</div>
             </div>
             <div class="card">
                 <h3>Last 24 Hours</h3>
-                <div class="value">${(token_data['last_24h']['prompt_tokens'] * 0.075 / 1000000 + token_data['last_24h']['completion_tokens'] * 0.3 / 1000000):.2f}</div>
-                <div class="subvalue">{token_data['last_24h']['total_tokens']:,} tokens</div>
+                <div class="value">{token_data['last_24h']['total_tokens']:,}</div>
+                <div class="subvalue">tokens</div>
+            </div>
+            <div class="card">
+                <h3>Batch Waiting (24h)</h3>
+                <div class="value">{waiting_hours:.1f}h</div>
+                <div class="subvalue">{batch_utilization:.1f}% active processing</div>
             </div>
         </div>
 
@@ -290,7 +359,9 @@ for j in journal_stats:
                 </tr>
 """
 
-html_content += """
+runtime_seconds = time.time() - start_time
+
+html_content += f"""
             </tbody>
         </table>
 
@@ -298,6 +369,14 @@ html_content += """
         <div class="chart-container">
             <canvas id="yearChart"></canvas>
         </div>
+
+        <h2>System Information</h2>
+        <div class="card">
+            <h3>Dashboard Generation Time</h3>
+            <div class="value">{runtime_seconds:.2f}s</div>
+            <div class="subvalue">Last run: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</div>
+        </div>
+        <br>
 
         <h2>References by Journal and Year</h2>
         <div class="chart-container">
@@ -381,7 +460,12 @@ output_path = os.path.join(args.output_dir, 'index.html')
 with open(output_path, 'w') as f:
     f.write(html_content)
 
+# Calculate runtime
+runtime_seconds = time.time() - start_time
 print(f"Dashboard generated at {output_path}")
+print(f"Script runtime: {runtime_seconds:.2f} seconds")
+if args.explain_queries:
+    print(f"Query explanations written to {args.explain_log}")
 
 # Close connection
 cursor.close()
