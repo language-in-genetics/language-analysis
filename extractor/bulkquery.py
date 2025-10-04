@@ -118,7 +118,6 @@ def process_article(article_id, metadata):
         "body": {
             "model": "gpt-5-mini",
             "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0,
             "tools": tools,
             "tool_choice": {"type": "function", "function": {"name": "analyze_text"}}
         }
