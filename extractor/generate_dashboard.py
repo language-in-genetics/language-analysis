@@ -292,7 +292,7 @@ html_content = f"""<!DOCTYPE html>
 <body>
     <div class="container">
         <h1>Word Frequency Analysis Dashboard</h1>
-        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</div>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a></div>
 
         <h2>Progress Overview</h2>
         <div class="grid">
@@ -460,9 +460,151 @@ output_path = os.path.join(args.output_dir, 'index.html')
 with open(output_path, 'w') as f:
     f.write(html_content)
 
+print("Generating journals page...")
+
+# Query all journals with "Genetic" in their title from raw_text_data
+execute_query("""
+    SELECT DISTINCT
+        (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->0) as journal_name
+    FROM public.raw_text_data
+    WHERE (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->0)::text ILIKE '%genetic%'
+    ORDER BY journal_name
+""")
+genetic_journals_raw = cursor.fetchall()
+
+# Get all journals from the journals table
+execute_query("SELECT name, enabled FROM languageingenetics.journals ORDER BY name")
+tracked_journals = {row['name']: row['enabled'] for row in cursor.fetchall()}
+
+# Build the data structure for the journals page
+journals_data = []
+for row in genetic_journals_raw:
+    if row['journal_name']:
+        journal_name = row['journal_name'].strip('"') if isinstance(row['journal_name'], str) else row['journal_name']
+
+        # Check if this journal is tracked
+        if journal_name in tracked_journals:
+            status = "Active" if tracked_journals[journal_name] else "Inactive"
+            tracked = True
+        else:
+            status = "Not Tracked"
+            tracked = False
+
+        journals_data.append({
+            'name': journal_name,
+            'tracked': tracked,
+            'status': status
+        })
+
+# Generate journals HTML page
+journals_html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <title>Genetics Journals - Word Frequency Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }}
+        .container {{ max-width: 1400px; margin: 0 auto; }}
+        h1 {{ color: #333; margin-bottom: 10px; font-size: 2em; }}
+        .last-updated {{ color: #999; font-size: 0.9em; margin-bottom: 30px; }}
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+        th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid #eee; }}
+        th {{ background: #f8f8f8; font-weight: 600; color: #666; text-transform: uppercase; font-size: 0.85em; }}
+        tr:last-child td {{ border-bottom: none; }}
+        .status-active {{ color: #4CAF50; font-weight: 600; }}
+        .status-inactive {{ color: #FF9800; font-weight: 600; }}
+        .status-not-tracked {{ color: #999; }}
+        a {{ color: #2196F3; text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        .summary {{
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }}
+        .summary-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 15px; }}
+        .summary-item {{ text-align: center; }}
+        .summary-value {{ font-size: 2em; font-weight: bold; color: #2196F3; }}
+        .summary-label {{ color: #666; font-size: 0.9em; margin-top: 5px; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Genetics Journals</h1>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="index.html">Back to Dashboard</a></div>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="summary-value">{len(journals_data)}</div>
+                    <div class="summary-label">Total Journals with "Genetic"</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value">{len([j for j in journals_data if j['tracked']])}</div>
+                    <div class="summary-label">Tracked Journals</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value">{len([j for j in journals_data if j['status'] == 'Active'])}</div>
+                    <div class="summary-label">Active Journals</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value">{len([j for j in journals_data if j['status'] == 'Not Tracked'])}</div>
+                    <div class="summary-label">Not Tracked</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Journal Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+"""
+
+for journal in journals_data:
+    status_class = f"status-{journal['status'].lower().replace(' ', '-')}"
+    journals_html += f"""
+                <tr>
+                    <td>{journal['name']}</td>
+                    <td class="{status_class}">{journal['status']}</td>
+                </tr>
+"""
+
+journals_html += """
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+"""
+
+# Write journals HTML file
+journals_output_path = os.path.join(args.output_dir, 'journals.html')
+with open(journals_output_path, 'w') as f:
+    f.write(journals_html)
+
 # Calculate runtime
 runtime_seconds = time.time() - start_time
 print(f"Dashboard generated at {output_path}")
+print(f"Journals page generated at {journals_output_path}")
 print(f"Script runtime: {runtime_seconds:.2f} seconds")
 if args.explain_queries:
     print(f"Query explanations written to {args.explain_log}")
