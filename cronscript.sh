@@ -1,8 +1,5 @@
 #!/bin/bash
 
-git pull -q
-echo "Disabled"
-exit 0
 set -euo pipefail
 
 # Configuration
@@ -19,6 +16,10 @@ export PGDATABASE="${PGDATABASE:-crossref}"
 
 # Change to working directory
 cd "$WORKDIR"
+
+git pull -q || true
+#echo "Disabled"
+#exit 0
 
 # Log function
 log() {
