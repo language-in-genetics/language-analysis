@@ -1,4 +1,8 @@
 #!/bin/bash
+
+git pull -q
+echo "Disabled"
+exit 0
 set -euo pipefail
 
 # Configuration
