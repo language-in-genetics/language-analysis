@@ -462,13 +462,23 @@ with open(output_path, 'w') as f:
 
 print("Generating journals page...")
 
-# Query all journals with "Genetic" in their title from raw_text_data
+# Query all journals with "Genetic" in their title and count their articles
 execute_query("""
-    SELECT DISTINCT
-        (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->0) as journal_name
-    FROM public.raw_text_data
-    WHERE (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->0)::text ILIKE '%genetic%'
-    ORDER BY journal_name
+    WITH journal_titles AS (
+        SELECT
+            regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0 AS journal_name
+        FROM public.raw_text_data
+    )
+    SELECT
+        journal_name,
+        COUNT(*) AS article_count
+    FROM journal_titles
+    WHERE journal_name ILIKE '%genetic%'
+        AND journal_name IS NOT NULL
+        AND journal_name <> ''
+    GROUP BY journal_name
+    HAVING COUNT(*) >= 10
+    ORDER BY article_count DESC, journal_name
 """)
 genetic_journals_raw = cursor.fetchall()
 
@@ -479,22 +489,23 @@ tracked_journals = {row['name']: row['enabled'] for row in cursor.fetchall()}
 # Build the data structure for the journals page
 journals_data = []
 for row in genetic_journals_raw:
-    if row['journal_name']:
-        journal_name = row['journal_name'].strip('"') if isinstance(row['journal_name'], str) else row['journal_name']
+    journal_name = row['journal_name'].strip() if row['journal_name'] else row['journal_name']
+    article_count = row['article_count']
 
-        # Check if this journal is tracked
-        if journal_name in tracked_journals:
-            status = "Active" if tracked_journals[journal_name] else "Inactive"
-            tracked = True
-        else:
-            status = "Not Tracked"
-            tracked = False
+    # Check if this journal is tracked
+    if journal_name in tracked_journals:
+        status = "Active" if tracked_journals[journal_name] else "Inactive"
+        tracked = True
+    else:
+        status = "Not Tracked"
+        tracked = False
 
-        journals_data.append({
-            'name': journal_name,
-            'tracked': tracked,
-            'status': status
-        })
+    journals_data.append({
+        'name': journal_name,
+        'tracked': tracked,
+        'status': status,
+        'article_count': article_count
+    })
 
 # Generate journals HTML page
 journals_html = f"""<!DOCTYPE html>
@@ -540,6 +551,7 @@ journals_html = f"""<!DOCTYPE html>
         .summary-item {{ text-align: center; }}
         .summary-value {{ font-size: 2em; font-weight: bold; color: #2196F3; }}
         .summary-label {{ color: #666; font-size: 0.9em; margin-top: 5px; }}
+        .numeric {{ text-align: right; font-variant-numeric: tabular-nums; color: #333; }}
     </style>
 </head>
 <body>
@@ -552,7 +564,7 @@ journals_html = f"""<!DOCTYPE html>
             <div class="summary-grid">
                 <div class="summary-item">
                     <div class="summary-value">{len(journals_data)}</div>
-                    <div class="summary-label">Total Journals with "Genetic"</div>
+                    <div class="summary-label">Journals with "Genetic" (≥10 articles)</div>
                 </div>
                 <div class="summary-item">
                     <div class="summary-value">{len([j for j in journals_data if j['tracked']])}</div>
@@ -566,6 +578,10 @@ journals_html = f"""<!DOCTYPE html>
                     <div class="summary-value">{len([j for j in journals_data if j['status'] == 'Not Tracked'])}</div>
                     <div class="summary-label">Not Tracked</div>
                 </div>
+                <div class="summary-item">
+                    <div class="summary-value">{sum(j['article_count'] for j in journals_data):,}</div>
+                    <div class="summary-label">Total Articles Across Journals</div>
+                </div>
             </div>
         </div>
 
@@ -573,6 +589,7 @@ journals_html = f"""<!DOCTYPE html>
             <thead>
                 <tr>
                     <th>Journal Name</th>
+                    <th>Articles</th>
                     <th>Status</th>
                 </tr>
             </thead>
@@ -584,6 +601,7 @@ for journal in journals_data:
     journals_html += f"""
                 <tr>
                     <td>{journal['name']}</td>
+                    <td class="numeric">{journal['article_count']:,}</td>
                     <td class="{status_class}">{journal['status']}</td>
                 </tr>
 """
