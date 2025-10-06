@@ -25,4 +25,27 @@ Run `find articles -type f -exec git add '{}' ';'`
 
 Next stop: fetching the PDFs for each of those DOIs.
 
+## Computational Analysis Methodology
+
+The `extractor/bulkquery.py` script implements an automated approach to analyze genetics articles for specific racial terminology. It processes metadata.json files containing article titles and abstracts, then submits them to OpenAI's API for analysis.
+
+The core of the analysis uses a carefully constructed prompt:
+```
+"Does this article use any terms like \"Caucasian\" or \"white\" or \"European ancestry\" in a way that refers to race, ancestry, ethnicity or population?\n\n"
+"TITLE: {title}\n"
+"ABSTRACT: {abstract}\n"
+```
+
+This prompt is deliberately framed in a neutral manner to avoid biasing the language model's analysis. It specifically asks about terms related to European ancestry without suggesting preference for any particular terminology.
+
+The analysis is structured through a function-calling API that forces OpenAI to return standardized responses across all articles. The analysis function includes parameters for detecting:
+- "caucasian" terminology
+- "white" racial descriptors
+- "European ancestry" phrasing
+- Other phrases describing European populations
+
+When phrases are detected, the system also captures the exact terminology used, enabling detailed analysis of language variations across the literature.
+
+The batch processing system allows efficient processing of thousands of articles with proper error handling and progress tracking, making large-scale analysis feasible within reasonable time and cost constraints.
+
 
