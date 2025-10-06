@@ -1,21 +1,16 @@
-.PHONY: all build clean test lint
+.PHONY: all clean test lint dev-deps
 
 # Binary name
-BINARY_NAME=jsonreader
+BINARY_NAME=pgjsontool
 # Build directory
 BUILD_DIR=bin
 
-all: bin/jsonreader bin/pgjsontool
-	echo Done
-
-bin/jsonreader: cmd/jsonreader/main.go
-	@mkdir -p bin
-	go build -o bin/jsonreader ./cmd/jsonreader
+all: bin/pgjsontool
+	@echo "Build complete"
 
 bin/pgjsontool: cmd/pgjsontool/main.go
-	mkdir -p bin
+	@mkdir -p bin
 	go build -o bin/pgjsontool ./cmd/pgjsontool
-
 
 clean:
 	@echo "Cleaning..."
@@ -38,11 +33,3 @@ lint:
 dev-deps:
 	@echo "Installing development dependencies..."
 	@go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
-
-# Run the program with default settings
-run: build
-	@./bin/$(BINARY_NAME)
-
-# Run with specific directory
-run-dir: build
-	@./bin/$(BINARY_NAME) -dir $(dir)
