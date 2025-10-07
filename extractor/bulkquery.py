@@ -188,32 +188,42 @@ else:
 
 # Build query to get articles from raw_text_data
 # Parse the filesrc JSON text column
-query = """
-SELECT
-    id,
-    regexp_replace(
-        regexp_replace(filesrc, E'\n', ' ', 'g'),
-        E'\t', '    ', 'g'
-    )::jsonb as data
-FROM public.raw_text_data
-"""
-where_clauses = []
+# Use UNION ALL instead of OR to allow GIN index usage (see bulkquery_optimization_suggestions.md)
 query_params = []
 
-# Filter by journal if we have any journals to query
 if journals_to_query:
-    # Use JSONB query to check if container-title array contains any of the specified journals
-    journal_conditions = []
+    # Build UNION ALL query - each journal gets its own SELECT that can use the GIN index
+    subqueries = []
     for journal in journals_to_query:
-        journal_conditions.append("(regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)")
+        subqueries.append("""
+        SELECT
+            id,
+            regexp_replace(
+                regexp_replace(filesrc, E'\n', ' ', 'g'),
+                E'\t', '    ', 'g'
+            )::jsonb as data
+        FROM public.raw_text_data
+        WHERE regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb
+        """)
         query_params.append(json.dumps([journal]))
-    where_clauses.append("(" + " OR ".join(journal_conditions) + ")")
 
-if where_clauses:
-    query += " WHERE " + " AND ".join(where_clauses)
+    query = "SELECT * FROM (\n" + "\n    UNION ALL\n".join(subqueries) + "\n) AS combined"
 
-if args.limit:
-    query += f" LIMIT {args.limit}"
+    if args.limit:
+        query += f" LIMIT {args.limit}"
+else:
+    # No journal filter - select all articles (shouldn't happen in normal operation)
+    query = """
+    SELECT
+        id,
+        regexp_replace(
+            regexp_replace(filesrc, E'\n', ' ', 'g'),
+            E'\t', '    ', 'g'
+        )::jsonb as data
+    FROM public.raw_text_data
+    """
+    if args.limit:
+        query += f" LIMIT {args.limit}"
 
 # Create a separate cursor for fetching articles
 article_cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
