@@ -462,35 +462,104 @@ with open(output_path, 'w') as f:
 
 print("Generating journals page...")
 
-# Query all journals with "Genetic" in their title and count their articles
-execute_query("""
-    WITH journal_titles AS (
+# Query journals_mv for basic journal statistics
+# Fall back to old query if materialized view doesn't exist yet
+try:
+    execute_query("""
         SELECT
-            regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0 AS journal_name
-        FROM public.raw_text_data
-    )
-    SELECT
-        journal_name,
-        COUNT(*) AS article_count
-    FROM journal_titles
-    WHERE journal_name ILIKE '%genetic%'
-        AND journal_name IS NOT NULL
-        AND journal_name <> ''
-    GROUP BY journal_name
-    HAVING COUNT(*) >= 10
-    ORDER BY article_count DESC, journal_name
-""")
-genetic_journals_raw = cursor.fetchall()
+            journal_name,
+            article_count,
+            earliest_year,
+            latest_year,
+            articles_with_abstract,
+            abstract_percentage,
+            total_citations,
+            avg_citations_per_article,
+            total_references,
+            publication_types,
+            sample_issn
+        FROM public.journals_mv
+        WHERE journal_name ILIKE '%genetic%'
+        ORDER BY article_count DESC, journal_name
+    """)
+    journals_mv_data = {row['journal_name']: row for row in cursor.fetchall()}
+    using_mv = True
+except psycopg2.Error:
+    # Materialized view doesn't exist yet, use fallback
+    using_mv = False
+    journals_mv_data = {}
 
 # Get all journals from the journals table
 execute_query("SELECT name, enabled FROM languageingenetics.journals ORDER BY name")
 tracked_journals = {row['name']: row['enabled'] for row in cursor.fetchall()}
 
-# Build the data structure for the journals page
+# If not using MV, fall back to the old query
+if not using_mv:
+    execute_query("""
+        WITH journal_titles AS (
+            SELECT
+                regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0 AS journal_name
+            FROM public.raw_text_data
+        )
+        SELECT
+            journal_name,
+            COUNT(*) AS article_count
+        FROM journal_titles
+        WHERE journal_name ILIKE '%genetic%'
+            AND journal_name IS NOT NULL
+            AND journal_name <> ''
+        GROUP BY journal_name
+        HAVING COUNT(*) >= 10
+        ORDER BY article_count DESC, journal_name
+    """)
+    for row in cursor.fetchall():
+        journal_name = row['journal_name'].strip() if row['journal_name'] else row['journal_name']
+        journals_mv_data[journal_name] = {
+            'journal_name': journal_name,
+            'article_count': row['article_count'],
+            'earliest_year': None,
+            'latest_year': None,
+            'abstract_percentage': None,
+            'avg_citations_per_article': None
+        }
+
+# Get race terminology breakdown per journal from processed files
+execute_query("""
+    SELECT
+        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0) as journal,
+        COUNT(*) as processed_count,
+        COUNT(*) FILTER (WHERE f.caucasian = true) as caucasian_count,
+        COUNT(*) FILTER (WHERE f.white = true) as white_count,
+        COUNT(*) FILTER (WHERE f.european = true) as european_count,
+        COUNT(*) FILTER (WHERE f.other = true) as other_count,
+        COUNT(*) FILTER (WHERE f.caucasian = true OR f.white = true OR f.european = true OR f.other = true) as any_terminology_count,
+        MIN(f.pub_year) as earliest_processed_year,
+        MAX(f.pub_year) as latest_processed_year,
+        AVG(f.prompt_tokens + f.completion_tokens) as avg_tokens,
+        COUNT(*) FILTER (WHERE f.has_abstract = true) as processed_with_abstract
+    FROM languageingenetics.files f
+    JOIN public.raw_text_data r ON f.article_id = r.id
+    WHERE f.processed = true
+    GROUP BY journal
+""")
+processed_stats = {row['journal']: row for row in cursor.fetchall() if row['journal']}
+
+# Get processing counts for tracked journals
+execute_query("""
+    SELECT
+        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0) as journal,
+        COUNT(*) as processed_count
+    FROM languageingenetics.files f
+    JOIN public.raw_text_data r ON f.article_id = r.id
+    WHERE f.processed = true
+    GROUP BY journal
+""")
+processed_by_journal = {row['journal']: row['processed_count'] for row in cursor.fetchall() if row['journal']}
+
+# Build the comprehensive data structure for the journals page
 journals_data = []
-for row in genetic_journals_raw:
-    journal_name = row['journal_name'].strip() if row['journal_name'] else row['journal_name']
-    article_count = row['article_count']
+for journal_name, mv_row in journals_mv_data.items():
+    journal_name = journal_name.strip() if journal_name else journal_name
 
     # Check if this journal is tracked
     if journal_name in tracked_journals:
@@ -500,20 +569,37 @@ for row in genetic_journals_raw:
         status = "Not Tracked"
         tracked = False
 
+    # Get processed statistics
+    proc_stats = processed_stats.get(journal_name, {})
+    processed_count = processed_by_journal.get(journal_name, 0)
+
     journals_data.append({
         'name': journal_name,
         'tracked': tracked,
         'status': status,
-        'article_count': article_count
+        'article_count': mv_row.get('article_count', 0),
+        'earliest_year': mv_row.get('earliest_year'),
+        'latest_year': mv_row.get('latest_year'),
+        'abstract_percentage': mv_row.get('abstract_percentage'),
+        'avg_citations': mv_row.get('avg_citations_per_article'),
+        'processed_count': processed_count,
+        'caucasian_count': proc_stats.get('caucasian_count', 0),
+        'white_count': proc_stats.get('white_count', 0),
+        'european_count': proc_stats.get('european_count', 0),
+        'other_count': proc_stats.get('other_count', 0),
+        'any_terminology_count': proc_stats.get('any_terminology_count', 0),
+        'hit_rate': (proc_stats.get('any_terminology_count', 0) / processed_count * 100) if processed_count > 0 else 0,
+        'avg_tokens': round(proc_stats.get('avg_tokens', 0)) if proc_stats.get('avg_tokens') else 0
     })
 
-# Generate journals HTML page
+# Generate journals HTML page with comprehensive statistics
 journals_html = f"""<!DOCTYPE html>
 <html>
 <head>
     <title>Genetics Journals - Word Frequency Analysis</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
@@ -521,20 +607,37 @@ journals_html = f"""<!DOCTYPE html>
             background: #f5f5f5;
             padding: 20px;
         }}
-        .container {{ max-width: 1400px; margin: 0 auto; }}
+        .container {{ max-width: 1800px; margin: 0 auto; }}
         h1 {{ color: #333; margin-bottom: 10px; font-size: 2em; }}
+        h2 {{ color: #555; margin: 30px 0 15px; font-size: 1.5em; }}
         .last-updated {{ color: #999; font-size: 0.9em; margin-bottom: 30px; }}
         table {{
             width: 100%;
             border-collapse: collapse;
             background: white;
             border-radius: 8px;
-            overflow: hidden;
+            overflow-x: auto;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 0.9em;
         }}
-        th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid #eee; }}
-        th {{ background: #f8f8f8; font-weight: 600; color: #666; text-transform: uppercase; font-size: 0.85em; }}
+        th, td {{ padding: 10px 8px; text-align: left; border-bottom: 1px solid #eee; white-space: nowrap; }}
+        th {{
+            background: #f8f8f8;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            cursor: pointer;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }}
+        th:hover {{ background: #e8e8e8; }}
+        th.sortable::after {{ content: ' ⇅'; opacity: 0.3; }}
+        th.sorted-asc::after {{ content: ' ↑'; opacity: 1; }}
+        th.sorted-desc::after {{ content: ' ↓'; opacity: 1; }}
         tr:last-child td {{ border-bottom: none; }}
+        tr:hover {{ background: #fafafa; }}
         .status-active {{ color: #4CAF50; font-weight: 600; }}
         .status-inactive {{ color: #FF9800; font-weight: 600; }}
         .status-not-tracked {{ color: #999; }}
@@ -547,11 +650,48 @@ journals_html = f"""<!DOCTYPE html>
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             margin-bottom: 30px;
         }}
-        .summary-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 15px; }}
+        .summary-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-top: 15px; }}
         .summary-item {{ text-align: center; }}
         .summary-value {{ font-size: 2em; font-weight: bold; color: #2196F3; }}
-        .summary-label {{ color: #666; font-size: 0.9em; margin-top: 5px; }}
+        .summary-label {{ color: #666; font-size: 0.85em; margin-top: 5px; }}
         .numeric {{ text-align: right; font-variant-numeric: tabular-nums; color: #333; }}
+        .terminology-bar {{
+            display: inline-flex;
+            height: 20px;
+            width: 100px;
+            background: #eee;
+            border-radius: 3px;
+            overflow: hidden;
+        }}
+        .term-caucasian {{ background: #F44336; }}
+        .term-white {{ background: #FF9800; }}
+        .term-european {{ background: #2196F3; }}
+        .term-other {{ background: #9C27B0; }}
+        .chart-container {{ background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }}
+        canvas {{ max-height: 500px; }}
+        .filters {{
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }}
+        .filter-group {{ display: flex; align-items: center; gap: 8px; }}
+        .filter-group label {{ color: #666; font-size: 0.9em; font-weight: 600; }}
+        .filter-group select, .filter-group input {{
+            padding: 6px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }}
+        .table-wrapper {{ overflow-x: auto; }}
+        .hit-rate-high {{ color: #4CAF50; font-weight: 600; }}
+        .hit-rate-medium {{ color: #FF9800; font-weight: 600; }}
+        .hit-rate-low {{ color: #999; }}
     </style>
 </head>
 <body>
@@ -564,52 +704,260 @@ journals_html = f"""<!DOCTYPE html>
             <div class="summary-grid">
                 <div class="summary-item">
                     <div class="summary-value">{len(journals_data)}</div>
-                    <div class="summary-label">Journals with "Genetic" (≥10 articles)</div>
+                    <div class="summary-label">Total Journals</div>
                 </div>
                 <div class="summary-item">
                     <div class="summary-value">{len([j for j in journals_data if j['tracked']])}</div>
-                    <div class="summary-label">Tracked Journals</div>
+                    <div class="summary-label">Tracked</div>
                 </div>
                 <div class="summary-item">
                     <div class="summary-value">{len([j for j in journals_data if j['status'] == 'Active'])}</div>
-                    <div class="summary-label">Active Journals</div>
-                </div>
-                <div class="summary-item">
-                    <div class="summary-value">{len([j for j in journals_data if j['status'] == 'Not Tracked'])}</div>
-                    <div class="summary-label">Not Tracked</div>
+                    <div class="summary-label">Active</div>
                 </div>
                 <div class="summary-item">
                     <div class="summary-value">{sum(j['article_count'] for j in journals_data):,}</div>
-                    <div class="summary-label">Total Articles Across Journals</div>
+                    <div class="summary-label">Total Articles</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value">{sum(j['processed_count'] for j in journals_data):,}</div>
+                    <div class="summary-label">Processed</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value">{sum(j['any_terminology_count'] for j in journals_data):,}</div>
+                    <div class="summary-label">With Terminology</div>
                 </div>
             </div>
         </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Journal Name</th>
-                    <th>Articles</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
+        <div class="filters">
+            <div class="filter-group">
+                <label>Status:</label>
+                <select id="statusFilter">
+                    <option value="all">All</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Not Tracked">Not Tracked</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Min Abstract %:</label>
+                <input type="number" id="abstractFilter" min="0" max="100" value="0" style="width: 80px;">
+            </div>
+            <div class="filter-group">
+                <label>Search:</label>
+                <input type="text" id="searchFilter" placeholder="Journal name..." style="width: 200px;">
+            </div>
+            <div class="filter-group">
+                <button onclick="resetFilters()" style="padding: 6px 15px; background: #2196F3; color: white; border: none; border-radius: 4px; cursor: pointer;">Reset</button>
+            </div>
+        </div>
+
+        <h2>Terminology Analysis by Journal</h2>
+        <div class="chart-container">
+            <canvas id="terminologyChart"></canvas>
+        </div>
+
+        <h2>Journal Details</h2>
+        <div class="table-wrapper">
+            <table id="journalsTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-column="name">Journal Name</th>
+                        <th class="sortable" data-column="status">Status</th>
+                        <th class="sortable numeric" data-column="article_count">Total Articles</th>
+                        <th class="sortable numeric" data-column="processed_count">Processed</th>
+                        <th class="sortable numeric" data-column="earliest_year">Year Range</th>
+                        <th class="sortable numeric" data-column="abstract_percentage">Abstract %</th>
+                        <th class="sortable numeric" data-column="avg_citations">Avg Citations</th>
+                        <th class="sortable numeric" data-column="hit_rate">Hit Rate</th>
+                        <th>Terminology</th>
+                        <th class="sortable numeric" data-column="caucasian_count">Caucasian</th>
+                        <th class="sortable numeric" data-column="white_count">White</th>
+                        <th class="sortable numeric" data-column="european_count">European</th>
+                        <th class="sortable numeric" data-column="other_count">Other</th>
+                    </tr>
+                </thead>
+                <tbody id="journalsTableBody">
 """
 
 for journal in journals_data:
     status_class = f"status-{journal['status'].lower().replace(' ', '-')}"
+    year_range = f"{journal.get('earliest_year') or '?'}–{journal.get('latest_year') or '?'}"
+    abstract_pct = f"{journal.get('abstract_percentage', 0):.1f}%" if journal.get('abstract_percentage') is not None else "N/A"
+    avg_cit = f"{journal.get('avg_citations', 0):.1f}" if journal.get('avg_citations') is not None else "N/A"
+
+    hit_rate_class = "hit-rate-high" if journal['hit_rate'] > 10 else ("hit-rate-medium" if journal['hit_rate'] > 5 else "hit-rate-low")
+
+    # Build terminology bar
+    total_terms = journal['caucasian_count'] + journal['white_count'] + journal['european_count'] + journal['other_count']
+    term_bar = ""
+    if total_terms > 0:
+        cauc_pct = journal['caucasian_count'] / total_terms * 100
+        white_pct = journal['white_count'] / total_terms * 100
+        euro_pct = journal['european_count'] / total_terms * 100
+        other_pct = journal['other_count'] / total_terms * 100
+        term_bar = '<div class="terminology-bar">'
+        if cauc_pct > 0:
+            term_bar += f'<div class="term-caucasian" style="width: {cauc_pct}%" title="Caucasian: {journal["caucasian_count"]}"></div>'
+        if white_pct > 0:
+            term_bar += f'<div class="term-white" style="width: {white_pct}%" title="White: {journal["white_count"]}"></div>'
+        if euro_pct > 0:
+            term_bar += f'<div class="term-european" style="width: {euro_pct}%" title="European: {journal["european_count"]}"></div>'
+        if other_pct > 0:
+            term_bar += f'<div class="term-other" style="width: {other_pct}%" title="Other: {journal["other_count"]}"></div>'
+        term_bar += '</div>'
+
     journals_html += f"""
-                <tr>
+                <tr data-status="{journal['status']}" data-abstract="{journal.get('abstract_percentage', 0) or 0}" data-name="{journal['name'].lower()}">
                     <td>{journal['name']}</td>
-                    <td class="numeric">{journal['article_count']:,}</td>
                     <td class="{status_class}">{journal['status']}</td>
+                    <td class="numeric">{journal['article_count']:,}</td>
+                    <td class="numeric">{journal['processed_count']:,}</td>
+                    <td class="numeric">{year_range}</td>
+                    <td class="numeric">{abstract_pct}</td>
+                    <td class="numeric">{avg_cit}</td>
+                    <td class="numeric {hit_rate_class}">{journal['hit_rate']:.1f}%</td>
+                    <td>{term_bar}</td>
+                    <td class="numeric">{journal['caucasian_count']}</td>
+                    <td class="numeric">{journal['white_count']}</td>
+                    <td class="numeric">{journal['european_count']}</td>
+                    <td class="numeric">{journal['other_count']}</td>
                 </tr>
 """
 
 journals_html += """
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
+
+    <script>
+        const journalsData = """ + json.dumps(journals_data) + """;
+
+        // Terminology breakdown chart - top 15 journals by processed count
+        const topJournals = journalsData
+            .filter(j => j.processed_count > 0)
+            .sort((a, b) => b.processed_count - a.processed_count)
+            .slice(0, 15);
+
+        const termCtx = document.getElementById('terminologyChart').getContext('2d');
+        new Chart(termCtx, {
+            type: 'bar',
+            data: {
+                labels: topJournals.map(j => j.name.length > 40 ? j.name.substring(0, 37) + '...' : j.name),
+                datasets: [
+                    {
+                        label: 'Caucasian',
+                        data: topJournals.map(j => j.caucasian_count),
+                        backgroundColor: '#F44336'
+                    },
+                    {
+                        label: 'White',
+                        data: topJournals.map(j => j.white_count),
+                        backgroundColor: '#FF9800'
+                    },
+                    {
+                        label: 'European',
+                        data: topJournals.map(j => j.european_count),
+                        backgroundColor: '#2196F3'
+                    },
+                    {
+                        label: 'Other',
+                        data: topJournals.map(j => j.other_count),
+                        backgroundColor: '#9C27B0'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                indexAxis: 'y',
+                scales: {
+                    x: { stacked: true, title: { display: true, text: 'Articles with Terminology' } },
+                    y: { stacked: true }
+                },
+                plugins: {
+                    legend: { display: true, position: 'top' },
+                    title: { display: true, text: 'Race Terminology Usage by Journal (Top 15)' }
+                }
+            }
+        });
+
+        // Table sorting
+        let currentSort = { column: 'article_count', ascending: false };
+
+        document.querySelectorAll('th.sortable').forEach(th => {
+            th.addEventListener('click', () => {
+                const column = th.dataset.column;
+                const ascending = currentSort.column === column ? !currentSort.ascending : false;
+                currentSort = { column, ascending };
+
+                // Update header classes
+                document.querySelectorAll('th.sortable').forEach(h => {
+                    h.classList.remove('sorted-asc', 'sorted-desc');
+                });
+                th.classList.add(ascending ? 'sorted-asc' : 'sorted-desc');
+
+                // Sort and re-render
+                sortTable(column, ascending);
+            });
+        });
+
+        function sortTable(column, ascending) {
+            const tbody = document.getElementById('journalsTableBody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+
+            rows.sort((a, b) => {
+                const aData = journalsData.find(j => j.name === a.cells[0].textContent);
+                const bData = journalsData.find(j => j.name === b.cells[0].textContent);
+
+                let aVal = aData[column];
+                let bVal = bData[column];
+
+                // Handle nulls
+                if (aVal === null || aVal === undefined) aVal = ascending ? Infinity : -Infinity;
+                if (bVal === null || bVal === undefined) bVal = ascending ? Infinity : -Infinity;
+
+                if (typeof aVal === 'string') {
+                    return ascending ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+                }
+                return ascending ? aVal - bVal : bVal - aVal;
+            });
+
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+        }
+
+        // Filtering
+        function applyFilters() {
+            const statusFilter = document.getElementById('statusFilter').value;
+            const abstractFilter = parseFloat(document.getElementById('abstractFilter').value);
+            const searchFilter = document.getElementById('searchFilter').value.toLowerCase();
+
+            document.querySelectorAll('#journalsTableBody tr').forEach(row => {
+                const status = row.dataset.status;
+                const abstract = parseFloat(row.dataset.abstract);
+                const name = row.dataset.name;
+
+                const statusMatch = statusFilter === 'all' || status === statusFilter;
+                const abstractMatch = abstract >= abstractFilter;
+                const searchMatch = searchFilter === '' || name.includes(searchFilter);
+
+                row.style.display = (statusMatch && abstractMatch && searchMatch) ? '' : 'none';
+            });
+        }
+
+        document.getElementById('statusFilter').addEventListener('change', applyFilters);
+        document.getElementById('abstractFilter').addEventListener('input', applyFilters);
+        document.getElementById('searchFilter').addEventListener('input', applyFilters);
+
+        function resetFilters() {
+            document.getElementById('statusFilter').value = 'all';
+            document.getElementById('abstractFilter').value = '0';
+            document.getElementById('searchFilter').value = '';
+            applyFilters();
+        }
+    </script>
 </body>
 </html>
 """
