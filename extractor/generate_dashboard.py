@@ -28,8 +28,11 @@ cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 def execute_query(sql, params=None):
     """Execute a query, optionally logging EXPLAIN output"""
     if args.explain_queries:
-        explain_cursor = conn.cursor()
+        # Use a separate connection for EXPLAIN to avoid transaction conflicts
+        explain_conn = psycopg2.connect("")
+        explain_cursor = explain_conn.cursor()
         try:
+            explain_cursor.execute("SET search_path TO languageingenetics, public")
             if params:
                 explain_cursor.execute("EXPLAIN (ANALYZE, BUFFERS, VERBOSE) " + sql, params)
             else:
@@ -43,8 +46,16 @@ def execute_query(sql, params=None):
                 if params:
                     f.write(f"Parameters: {params}\n")
                 f.write(f"\nEXPLAIN output:\n{explain_output}\n")
+        except psycopg2.Error as e:
+            # Log the error but don't fail the entire script
+            with open(args.explain_log, 'a') as f:
+                f.write(f"\n{'='*80}\n")
+                f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+                f.write(f"Query:\n{sql}\n")
+                f.write(f"\nEXPLAIN error: {e}\n")
         finally:
             explain_cursor.close()
+            explain_conn.close()
 
     # Execute the actual query
     if params:

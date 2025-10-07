@@ -83,12 +83,12 @@ for batch_row in batches:
                 completion_tokens = %s
             WHERE article_id = %s
         """, [
-            arguments['caucasian'],
-            arguments['white'],
-            arguments['european'],
-            arguments['european_phrase_used'],
-            arguments['other'],
-            arguments['other_phrase_used'],
+            arguments.get('caucasian', False),
+            arguments.get('white', False),
+            arguments.get('european', False),
+            arguments.get('european_phrase_used', ''),
+            arguments.get('other', False),
+            arguments.get('other_phrase_used', ''),
             usage['prompt_tokens'],
             usage['completion_tokens'],
             article_id
