@@ -496,7 +496,8 @@ try:
     journals_mv_data = {row['journal_name']: row for row in cursor.fetchall()}
     using_mv = True
 except psycopg2.Error:
-    # Materialized view doesn't exist yet, use fallback
+    # Materialized view doesn't exist yet, rollback and use fallback
+    conn.rollback()
     using_mv = False
     journals_mv_data = {}
 
