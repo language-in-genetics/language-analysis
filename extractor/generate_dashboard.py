@@ -75,6 +75,32 @@ if args.explain_queries:
 
 print("Collecting data...")
 
+# Query journals_mv first to get article counts efficiently
+# If MV doesn't exist, we'll use a slower method
+try:
+    execute_query("""
+        SELECT
+            journal_name,
+            article_count,
+            earliest_year,
+            latest_year,
+            articles_with_abstract,
+            abstract_percentage,
+            total_citations,
+            avg_citations_per_article
+        FROM public.journals_mv
+        WHERE journal_name ILIKE '%genetic%'
+        ORDER BY article_count DESC, journal_name
+    """)
+    journals_mv_data = {row['journal_name']: row for row in cursor.fetchall()}
+    using_mv = True
+    print(f"Using journals_mv with {len(journals_mv_data)} journals", file=sys.stderr)
+except psycopg2.Error:
+    conn.rollback()
+    using_mv = False
+    journals_mv_data = {}
+    print("Warning: journals_mv not available, will query raw_text_data", file=sys.stderr)
+
 # Get enabled journals first - we'll calculate total from journal stats
 execute_query("SELECT name FROM languageingenetics.journals WHERE enabled = true ORDER BY name")
 enabled_journals = [row['name'] for row in cursor]
@@ -154,15 +180,20 @@ for batch in batch_rows:
 waiting_hours = total_waiting_seconds / 3600.0
 batch_utilization = ((24 - waiting_hours) / 24 * 100) if waiting_hours < 24 else 0
 
-# Journal statistics
+# Journal statistics - use MV data if available to avoid slow queries
 journal_stats = []
 for journal in enabled_journals:
-    execute_query("""
-        SELECT COUNT(*) as total
-        FROM public.raw_text_data
-        WHERE (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)
-    """, [json.dumps([journal])])
-    total = cursor.fetchone()['total']
+    # Try to get total from journals_mv first
+    if using_mv and journal in journals_mv_data:
+        total = journals_mv_data[journal]['article_count']
+    else:
+        # Fall back to querying raw_text_data (slow!)
+        execute_query("""
+            SELECT COUNT(*) as total
+            FROM public.raw_text_data
+            WHERE (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)
+        """, [json.dumps([journal])])
+        total = cursor.fetchone()['total']
 
     if total > 0:
         # Get processed count
@@ -473,67 +504,37 @@ with open(output_path, 'w') as f:
 
 print("Generating journals page...")
 
-# Query journals_mv for basic journal statistics
-# Fall back to old query if materialized view doesn't exist yet
-try:
-    execute_query("""
-        SELECT
-            journal_name,
-            article_count,
-            earliest_year,
-            latest_year,
-            articles_with_abstract,
-            abstract_percentage,
-            total_citations,
-            avg_citations_per_article,
-            total_references,
-            publication_types,
-            sample_issn
-        FROM public.journals_mv
-        WHERE journal_name ILIKE '%genetic%'
-        ORDER BY article_count DESC, journal_name
-    """)
-    journals_mv_data = {row['journal_name']: row for row in cursor.fetchall()}
-    using_mv = True
-except psycopg2.Error:
-    # Materialized view doesn't exist yet, rollback and use fallback
-    conn.rollback()
-    using_mv = False
-    journals_mv_data = {}
-
 # Get all journals from the journals table
 execute_query("SELECT name, enabled FROM languageingenetics.journals ORDER BY name")
 tracked_journals = {row['name']: row['enabled'] for row in cursor.fetchall()}
 
-# If not using MV, fall back to the old query
-if not using_mv:
-    execute_query("""
-        WITH journal_titles AS (
+# Extend journals_mv_data with additional fields if we need them for the journals page
+# (we already queried journals_mv at the beginning of the script)
+if using_mv:
+    # Re-query with additional fields for the journals page
+    try:
+        execute_query("""
             SELECT
-                regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0 AS journal_name
-            FROM public.raw_text_data
-        )
-        SELECT
-            journal_name,
-            COUNT(*) AS article_count
-        FROM journal_titles
-        WHERE journal_name ILIKE '%genetic%'
-            AND journal_name IS NOT NULL
-            AND journal_name <> ''
-        GROUP BY journal_name
-        HAVING COUNT(*) >= 10
-        ORDER BY article_count DESC, journal_name
-    """)
-    for row in cursor.fetchall():
-        journal_name = row['journal_name'].strip() if row['journal_name'] else row['journal_name']
-        journals_mv_data[journal_name] = {
-            'journal_name': journal_name,
-            'article_count': row['article_count'],
-            'earliest_year': None,
-            'latest_year': None,
-            'abstract_percentage': None,
-            'avg_citations_per_article': None
-        }
+                journal_name,
+                article_count,
+                earliest_year,
+                latest_year,
+                articles_with_abstract,
+                abstract_percentage,
+                total_citations,
+                avg_citations_per_article,
+                total_references,
+                publication_types,
+                sample_issn
+            FROM public.journals_mv
+            WHERE journal_name ILIKE '%genetic%'
+            ORDER BY article_count DESC, journal_name
+        """)
+        journals_mv_data = {row['journal_name']: row for row in cursor.fetchall()}
+    except psycopg2.Error:
+        conn.rollback()
+        # If it fails now, just continue with what we have
+        pass
 
 # Get race terminology breakdown per journal from processed files
 execute_query("""
