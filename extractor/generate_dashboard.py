@@ -6,6 +6,7 @@ import psycopg2.extras
 from datetime import datetime, timedelta
 import json
 import os
+import sys
 import time
 
 parser = argparse.ArgumentParser()
