@@ -6,8 +6,7 @@
 DROP MATERIALIZED VIEW IF EXISTS public.journals_mv CASCADE;
 
 -- Create materialized view with journal statistics
-CREATE MATERIALIZED VIEW public.journals_mv AS
-SELECT
+CREATE MATERIALIZED VIEW public.journals_mv tablespace crossref_space as SELECT
     filesrc::jsonb->'container-title'->>0 AS journal_name,
     COUNT(*) AS article_count,
     MIN((filesrc::jsonb->'published'->'date-parts'->0->>0)::int) AS earliest_year,
@@ -24,6 +23,7 @@ FROM public.raw_text_data
 WHERE filesrc::jsonb->'container-title' IS NOT NULL
   AND jsonb_array_length(filesrc::jsonb->'container-title') > 0
 GROUP BY filesrc::jsonb->'container-title'->>0
+HAVING COUNT(*) > 10
 ORDER BY article_count DESC;
 
 -- Create unique index on journal_name for fast lookups
