@@ -303,7 +303,7 @@ html_content = f"""<!DOCTYPE html>
 <body>
     <div class="container">
         <h1>Word Frequency Analysis Dashboard</h1>
-        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a></div>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Token Usage</a></div>
 
         <h2>Progress Overview</h2>
         <div class="grid">
@@ -979,10 +979,338 @@ journals_output_path = os.path.join(args.output_dir, 'journals.html')
 with open(journals_output_path, 'w') as f:
     f.write(journals_html)
 
+print("Generating token usage page...")
+
+# Get token usage data over time (daily aggregation)
+execute_query("""
+    SELECT
+        DATE(when_processed) as date,
+        COUNT(*) as articles_processed,
+        SUM(prompt_tokens) as prompt_tokens,
+        SUM(completion_tokens) as completion_tokens,
+        SUM(prompt_tokens + completion_tokens) as total_tokens
+    FROM languageingenetics.files
+    WHERE processed = true AND when_processed IS NOT NULL
+    GROUP BY DATE(when_processed)
+    ORDER BY date
+""")
+daily_token_data = [dict(row) for row in cursor.fetchall()]
+
+# Convert dates to strings for JSON serialization
+for row in daily_token_data:
+    row['date'] = row['date'].isoformat()
+
+# Get cumulative token usage
+cumulative_tokens = []
+running_total = 0
+for row in daily_token_data:
+    running_total += row['total_tokens']
+    cumulative_tokens.append({
+        'date': row['date'],
+        'cumulative_tokens': running_total
+    })
+
+# Get token usage by batch
+execute_query("""
+    SELECT
+        b.id as batch_id,
+        b.when_sent,
+        b.when_retrieved,
+        COUNT(*) as articles,
+        SUM(f.prompt_tokens) as prompt_tokens,
+        SUM(f.completion_tokens) as completion_tokens,
+        SUM(f.prompt_tokens + f.completion_tokens) as total_tokens
+    FROM languageingenetics.batches b
+    JOIN languageingenetics.files f ON f.batch_id = b.id
+    WHERE f.processed = true
+    GROUP BY b.id, b.when_sent, b.when_retrieved
+    ORDER BY b.when_sent
+""")
+batch_token_data = []
+for row in cursor.fetchall():
+    batch_token_data.append({
+        'batch_id': row['batch_id'],
+        'when_sent': row['when_sent'].isoformat() if row['when_sent'] else None,
+        'when_retrieved': row['when_retrieved'].isoformat() if row['when_retrieved'] else None,
+        'articles': row['articles'],
+        'prompt_tokens': row['prompt_tokens'],
+        'completion_tokens': row['completion_tokens'],
+        'total_tokens': row['total_tokens']
+    })
+
+# Calculate cost estimates (GPT-4 pricing as example)
+# Adjust these rates based on actual OpenAI pricing
+PROMPT_COST_PER_1M = 5.00  # $5 per 1M prompt tokens
+COMPLETION_COST_PER_1M = 15.00  # $15 per 1M completion tokens
+
+total_prompt_cost = (all_time_prompt / 1_000_000) * PROMPT_COST_PER_1M
+total_completion_cost = (all_time_completion / 1_000_000) * COMPLETION_COST_PER_1M
+total_cost = total_prompt_cost + total_completion_cost
+
+# Generate token usage HTML
+tokens_html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <title>Token Usage - Word Frequency Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <style>
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }}
+        .container {{ max-width: 1400px; margin: 0 auto; }}
+        h1 {{ color: #333; margin-bottom: 10px; font-size: 2em; }}
+        h2 {{ color: #555; margin: 30px 0 15px; font-size: 1.5em; }}
+        .last-updated {{ color: #999; font-size: 0.9em; margin-bottom: 30px; }}
+        a {{ color: #2196F3; text-decoration: none; }}
+        a:hover {{ text-decoration: underline; }}
+        .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }}
+        .card {{
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+        .card h3 {{ color: #666; font-size: 0.9em; text-transform: uppercase; margin-bottom: 10px; }}
+        .card .value {{ font-size: 2.5em; font-weight: bold; color: #2196F3; }}
+        .card .subvalue {{ font-size: 0.9em; color: #999; margin-top: 5px; }}
+        .chart-container {{ background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }}
+        canvas {{ max-height: 400px; }}
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+        th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid #eee; }}
+        th {{ background: #f8f8f8; font-weight: 600; color: #666; text-transform: uppercase; font-size: 0.85em; }}
+        tr:last-child td {{ border-bottom: none; }}
+        .numeric {{ text-align: right; font-variant-numeric: tabular-nums; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Token Usage Analysis</h1>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="index.html">Back to Dashboard</a></div>
+
+        <h2>Overall Statistics</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Total Tokens</h3>
+                <div class="value">{(all_time_prompt + all_time_completion):,}</div>
+                <div class="subvalue">{processed_articles:,} articles processed</div>
+            </div>
+            <div class="card">
+                <h3>Prompt Tokens</h3>
+                <div class="value">{all_time_prompt:,}</div>
+                <div class="subvalue">{(all_time_prompt / processed_articles):.0f} per article</div>
+            </div>
+            <div class="card">
+                <h3>Completion Tokens</h3>
+                <div class="value">{all_time_completion:,}</div>
+                <div class="subvalue">{(all_time_completion / processed_articles):.0f} per article</div>
+            </div>
+            <div class="card">
+                <h3>Estimated Cost</h3>
+                <div class="value">${total_cost:,.2f}</div>
+                <div class="subvalue">${(total_cost / processed_articles):.4f} per article</div>
+            </div>
+        </div>
+
+        <h2>Daily Token Usage</h2>
+        <div class="chart-container">
+            <canvas id="dailyTokenChart"></canvas>
+        </div>
+
+        <h2>Cumulative Token Usage</h2>
+        <div class="chart-container">
+            <canvas id="cumulativeTokenChart"></canvas>
+        </div>
+
+        <h2>Token Usage by Batch</h2>
+        <div class="chart-container">
+            <canvas id="batchTokenChart"></canvas>
+        </div>
+
+        <h2>Recent Batches</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Batch ID</th>
+                    <th>Sent</th>
+                    <th>Retrieved</th>
+                    <th class="numeric">Articles</th>
+                    <th class="numeric">Prompt Tokens</th>
+                    <th class="numeric">Completion Tokens</th>
+                    <th class="numeric">Total Tokens</th>
+                </tr>
+            </thead>
+            <tbody>
+"""
+
+# Show last 20 batches
+for batch in batch_token_data[-20:]:
+    sent = batch['when_sent'][:10] if batch['when_sent'] else 'N/A'
+    retrieved = batch['when_retrieved'][:10] if batch['when_retrieved'] else 'N/A'
+    tokens_html += f"""
+                <tr>
+                    <td>{batch['batch_id']}</td>
+                    <td>{sent}</td>
+                    <td>{retrieved}</td>
+                    <td class="numeric">{batch['articles']:,}</td>
+                    <td class="numeric">{batch['prompt_tokens']:,}</td>
+                    <td class="numeric">{batch['completion_tokens']:,}</td>
+                    <td class="numeric">{batch['total_tokens']:,}</td>
+                </tr>
+"""
+
+tokens_html += f"""
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const dailyData = """ + json.dumps(daily_token_data) + """;
+        const cumulativeData = """ + json.dumps(cumulative_tokens) + """;
+        const batchData = """ + json.dumps(batch_token_data) + """;
+
+        // Daily token usage chart
+        const dailyCtx = document.getElementById('dailyTokenChart').getContext('2d');
+        new Chart(dailyCtx, {{
+            type: 'bar',
+            data: {{
+                labels: dailyData.map(d => d.date),
+                datasets: [
+                    {{
+                        label: 'Prompt Tokens',
+                        data: dailyData.map(d => d.prompt_tokens),
+                        backgroundColor: 'rgba(33, 150, 243, 0.7)',
+                        stack: 'stack0'
+                    }},
+                    {{
+                        label: 'Completion Tokens',
+                        data: dailyData.map(d => d.completion_tokens),
+                        backgroundColor: 'rgba(76, 175, 80, 0.7)',
+                        stack: 'stack0'
+                    }}
+                ]
+            }},
+            options: {{
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {{
+                    legend: {{ display: true, position: 'top' }},
+                    title: {{ display: true, text: 'Daily Token Usage (Stacked)' }}
+                }},
+                scales: {{
+                    x: {{
+                        type: 'time',
+                        time: {{ unit: 'day' }},
+                        title: {{ display: true, text: 'Date' }}
+                    }},
+                    y: {{
+                        beginAtZero: true,
+                        title: {{ display: true, text: 'Tokens' }}
+                    }}
+                }}
+            }}
+        }});
+
+        // Cumulative token usage chart
+        const cumulativeCtx = document.getElementById('cumulativeTokenChart').getContext('2d');
+        new Chart(cumulativeCtx, {{
+            type: 'line',
+            data: {{
+                labels: cumulativeData.map(d => d.date),
+                datasets: [{{
+                    label: 'Cumulative Tokens',
+                    data: cumulativeData.map(d => d.cumulative_tokens),
+                    borderColor: '#2196F3',
+                    backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                    tension: 0.1,
+                    fill: true
+                }}]
+            }},
+            options: {{
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {{
+                    legend: {{ display: true, position: 'top' }},
+                    title: {{ display: true, text: 'Cumulative Token Usage Over Time' }}
+                }},
+                scales: {{
+                    x: {{
+                        type: 'time',
+                        time: {{ unit: 'day' }},
+                        title: {{ display: true, text: 'Date' }}
+                    }},
+                    y: {{
+                        beginAtZero: true,
+                        title: {{ display: true, text: 'Total Tokens' }}
+                    }}
+                }}
+            }}
+        }});
+
+        // Batch token usage chart
+        const batchCtx = document.getElementById('batchTokenChart').getContext('2d');
+        const last30Batches = batchData.slice(-30);
+        new Chart(batchCtx, {{
+            type: 'bar',
+            data: {{
+                labels: last30Batches.map(d => `Batch ${{d.batch_id}}`),
+                datasets: [
+                    {{
+                        label: 'Prompt Tokens',
+                        data: last30Batches.map(d => d.prompt_tokens),
+                        backgroundColor: 'rgba(33, 150, 243, 0.7)',
+                        stack: 'stack0'
+                    }},
+                    {{
+                        label: 'Completion Tokens',
+                        data: last30Batches.map(d => d.completion_tokens),
+                        backgroundColor: 'rgba(76, 175, 80, 0.7)',
+                        stack: 'stack0'
+                    }}
+                ]
+            }},
+            options: {{
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {{
+                    legend: {{ display: true, position: 'top' }},
+                    title: {{ display: true, text: 'Token Usage by Batch (Last 30)' }}
+                }},
+                scales: {{
+                    y: {{
+                        beginAtZero: true,
+                        title: {{ display: true, text: 'Tokens' }}
+                    }}
+                }}
+            }}
+        }});
+    </script>
+</body>
+</html>
+"""
+
+# Write token usage HTML file
+tokens_output_path = os.path.join(args.output_dir, 'tokens.html')
+with open(tokens_output_path, 'w') as f:
+    f.write(tokens_html)
+
 # Calculate runtime
 runtime_seconds = time.time() - start_time
 print(f"Dashboard generated at {output_path}")
 print(f"Journals page generated at {journals_output_path}")
+print(f"Token usage page generated at {tokens_output_path}")
 print(f"Script runtime: {runtime_seconds:.2f} seconds")
 if args.explain_queries:
     print(f"Query explanations written to {args.explain_log}")
