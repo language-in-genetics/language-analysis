@@ -7,7 +7,7 @@ WORKDIR="/home/languageingenetics/Word-Frequency-Analysis-"
 DASHBOARD_DIR="$WORKDIR/dashboard"
 REMOTE_HOST="merah.cassia.ifost.org.au"
 REMOTE_PATH="/var/www/vhosts/lig.symmachus.org/htdocs/"
-BATCH_SIZE=2000
+BATCH_SIZE=4000
 LOG_FILE="$WORKDIR/cronscript.log"
 
 # PostgreSQL connection uses environment variables
