@@ -151,12 +151,12 @@ crontab -e
 
 The script performs these steps:
 1. Fetches completed OpenAI batch results
-2. Submits a new batch of articles for processing (default: 1000 articles)
+2. Submits a new batch of articles for processing (default: 4000 articles)
 3. Generates static HTML dashboard
 4. Syncs dashboard to remote server via rsync
 
 **Configuration** (edit cronscript.sh):
-- `BATCH_SIZE`: Number of articles to process per batch (default: 1000)
+- `BATCH_SIZE`: Number of articles to process per batch (default: 4000)
 - `REMOTE_HOST`: Server to sync dashboard to
 - `REMOTE_PATH`: Path on remote server
 
