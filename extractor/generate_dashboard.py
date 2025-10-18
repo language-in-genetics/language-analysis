@@ -8,6 +8,7 @@ import json
 import os
 import sys
 import time
+from decimal import Decimal
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--output-dir", default="dashboard", help="Output directory for static files")
@@ -24,6 +25,13 @@ os.makedirs(args.output_dir, exist_ok=True)
 # Database connection using environment variables (PGDATABASE, PGHOST, etc.)
 conn = psycopg2.connect("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
+
+
+def json_default(obj):
+    """Convert Decimal instances returned by psycopg2 into JSON-serializable numbers."""
+    if isinstance(obj, Decimal):
+        return int(obj) if obj == obj.to_integral_value() else float(obj)
+    raise TypeError(f"Object of type {obj.__class__.__name__} is not JSON serializable")
 
 # Helper function to execute queries with optional EXPLAIN logging
 def execute_query(sql, params=None):
@@ -193,7 +201,7 @@ for journal in enabled_journals:
             SELECT COUNT(*) as total
             FROM public.raw_text_data
             WHERE (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)
-        """, [json.dumps([journal])])
+        """, [json.dumps([journal], default=json_default)])
         total = cursor.fetchone()['total']
 
     if total > 0:
@@ -204,7 +212,7 @@ for journal in enabled_journals:
             JOIN public.raw_text_data r ON f.article_id = r.id
             WHERE f.processed = true
             AND (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)
-        """, [json.dumps([journal])])
+        """, [json.dumps([journal], default=json_default)])
         processed = cursor.fetchone()['processed']
     else:
         processed = 0
@@ -428,8 +436,8 @@ html_content += f"""
     </div>
 
     <script>
-        const byYearData = """ + json.dumps(by_year) + """;
-        const byJournalYearData = """ + json.dumps(by_journal_year_final) + """;
+        const byYearData = """ + json.dumps(by_year, default=json_default) + """;
+        const byJournalYearData = """ + json.dumps(by_journal_year_final, default=json_default) + """;
 
         // Year chart
         const yearCtx = document.getElementById('yearChart').getContext('2d');
@@ -846,7 +854,7 @@ journals_html += """
     </div>
 
     <script>
-        const journalsData = """ + json.dumps(journals_data) + """;
+        const journalsData = """ + json.dumps(journals_data, default=json_default) + """;
 
         // Terminology breakdown chart - top 15 journals by processed count
         const topJournals = journalsData
@@ -1179,9 +1187,9 @@ tokens_html += f"""
     </div>
 
     <script>
-        const dailyData = """ + json.dumps(daily_token_data) + """;
-        const cumulativeData = """ + json.dumps(cumulative_tokens) + """;
-        const batchData = """ + json.dumps(batch_token_data) + """;
+        const dailyData = """ + json.dumps(daily_token_data, default=json_default) + """;
+        const cumulativeData = """ + json.dumps(cumulative_tokens, default=json_default) + """;
+        const batchData = """ + json.dumps(batch_token_data, default=json_default) + """;
 
         // Daily token usage chart
         const dailyCtx = document.getElementById('dailyTokenChart').getContext('2d');
