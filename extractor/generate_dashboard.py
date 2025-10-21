@@ -343,7 +343,7 @@ html_content = f"""<!DOCTYPE html>
 <body>
     <div class="container">
         <h1>Word Frequency Analysis Dashboard</h1>
-        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Token Usage</a></div>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Token Usage</a> | <a href="diagnostics.html" style="color: #2196F3;">Batch Diagnostics</a></div>
 
         <h2>Progress Overview</h2>
         <div class="grid">
@@ -1316,11 +1316,201 @@ tokens_output_path = os.path.join(args.output_dir, 'tokens.html')
 with open(tokens_output_path, 'w') as f:
     f.write(tokens_html)
 
+print("Generating batch diagnostics page...")
+
+execute_query("""
+    SELECT id, when_created, when_sent, when_retrieved
+    FROM languageingenetics.batches
+    ORDER BY id DESC
+    LIMIT 15
+""")
+recent_batch_rows = [dict(row) for row in cursor.fetchall()]
+
+diagnostics_by_batch = {
+    row['id']: {
+        'meta': row,
+        'events': {},
+        'summary': None
+    }
+    for row in recent_batch_rows
+}
+
+if recent_batch_rows:
+    batch_ids = [row['id'] for row in recent_batch_rows]
+    execute_query(
+        """
+        SELECT
+            bd.batch_id,
+            bd.article_id,
+            bd.event_type,
+            bd.details,
+            bd.created_at
+        FROM languageingenetics.batch_diagnostics bd
+        WHERE bd.batch_id = ANY(%s)
+        ORDER BY bd.batch_id DESC, bd.created_at, bd.id
+        """,
+        [batch_ids]
+    )
+    for row in cursor.fetchall():
+        batch_data = diagnostics_by_batch.get(row['batch_id'])
+        if not batch_data:
+            continue
+        details = dict(row['details']) if row['details'] else {}
+        if row['event_type'] == 'summary':
+            batch_data['summary'] = details
+            continue
+        reason = details.get('reason')
+        if row['event_type'] == 'submitted':
+            reason = 'with_abstract' if details.get('has_abstract') else 'without_abstract'
+        key = (row['event_type'], reason)
+        event_entry = batch_data['events'].setdefault(
+            key,
+            {
+                'event_type': row['event_type'],
+                'reason': reason,
+                'count': 0,
+                'sample_article_ids': []
+            }
+        )
+        event_entry['count'] += 1
+        if row['article_id'] is not None and len(event_entry['sample_article_ids']) < 5:
+            event_entry['sample_article_ids'].append(row['article_id'])
+else:
+    diagnostics_by_batch = {}
+
+
+def format_timestamp(ts):
+    return ts.strftime("%Y-%m-%d %H:%M:%S") if ts else "—"
+
+
+def humanize(text):
+    if not text:
+        return '—'
+    return str(text).replace('_', ' ').title()
+
+
+diagnostics_html = f'''<!DOCTYPE html>
+<html>
+<head>
+    <title>Batch Diagnostics - Word Frequency Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }}
+        .container {{ max-width: 1400px; margin: 0 auto; }}
+        h1 {{ color: #333; margin-bottom: 10px; font-size: 2em; }}
+        h2 {{ color: #555; margin: 30px 0 15px; font-size: 1.4em; }}
+        .last-updated {{ color: #999; font-size: 0.9em; margin-bottom: 30px; }}
+        .batch-card {{
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }}
+        .batch-meta {{ color: #666; font-size: 0.9em; margin-bottom: 15px; display: flex; flex-wrap: wrap; gap: 15px; }}
+        .metrics {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 20px; }}
+        .metric {{
+            background: #f8f8f8;
+            border-radius: 6px;
+            padding: 12px;
+        }}
+        .metric-label {{ color: #666; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }}
+        .metric-value {{ font-size: 1.6em; font-weight: 600; color: #2196F3; }}
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }}
+        th, td {{ padding: 10px; text-align: left; border-bottom: 1px solid #eee; }}
+        th {{ background: #f0f0f0; font-size: 0.85em; color: #666; text-transform: uppercase; }}
+        tr:last-child td {{ border-bottom: none; }}
+        .numeric {{ text-align: right; font-variant-numeric: tabular-nums; }}
+        .empty-state {{ background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: #666; }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Batch Diagnostics</h1>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="index.html" style="color: #2196F3;">Back to Dashboard</a></div>
+'''
+
+if not recent_batch_rows:
+    diagnostics_html += '        <div class="empty-state">No diagnostic data available yet.</div>\n'
+else:
+    event_order = {'submitted': 0, 'skipped': 1}
+    for batch in recent_batch_rows:
+        batch_data = diagnostics_by_batch.get(batch['id'], {'events': {}, 'summary': None, 'meta': batch})
+        meta = batch_data.get('meta', batch)
+        totals = {}
+        if batch_data.get('summary'):
+            totals = batch_data['summary'].get('totals', {}) or {}
+        summary_items = []
+        preferred_keys = [
+            ('examined', 'Examined'),
+            ('submitted', 'Submitted'),
+            ('already_processed', 'Already Processed'),
+            ('missing_title', 'Missing Title'),
+            ('missing_metadata', 'Missing Metadata')
+        ]
+        seen_keys = set()
+        for key, label in preferred_keys:
+            if key in totals or key in {'examined', 'submitted'}:
+                summary_items.append((label, int(totals.get(key, 0))))
+                seen_keys.add(key)
+        for key in sorted(totals.keys()):
+            if key not in seen_keys:
+                summary_items.append((humanize(key), int(totals[key])))
+        diagnostics_html += f'        <div class="batch-card">\n'
+        diagnostics_html += f'            <h2>Batch {batch["id"]}</h2>\n'
+        diagnostics_html += '            <div class="batch-meta">'
+        diagnostics_html += f'Created: {format_timestamp(meta.get("when_created"))}'
+        diagnostics_html += f' &bull; Sent: {format_timestamp(meta.get("when_sent"))}'
+        diagnostics_html += f' &bull; Retrieved: {format_timestamp(meta.get("when_retrieved"))}</div>\n'
+        if summary_items:
+            diagnostics_html += '            <div class="metrics">\n'
+            for label, value in summary_items:
+                diagnostics_html += '                <div class="metric">\n'
+                diagnostics_html += f'                    <div class="metric-label">{label}</div>\n'
+                diagnostics_html += f'                    <div class="metric-value">{value:,}</div>\n'
+                diagnostics_html += '                </div>\n'
+            diagnostics_html += '            </div>\n'
+        event_entries = list(batch_data['events'].values())
+        event_entries.sort(key=lambda e: (event_order.get(e['event_type'], 99), e['reason'] or ''))
+        if event_entries:
+            diagnostics_html += '            <table>\n'
+            diagnostics_html += '                <thead>\n'
+            diagnostics_html += '                    <tr><th>Event</th><th>Reason</th><th class="numeric">Count</th><th>Example Article IDs</th></tr>\n'
+            diagnostics_html += '                </thead>\n'
+            diagnostics_html += '                <tbody>\n'
+            for entry in event_entries:
+                event_label = humanize(entry['event_type'])
+                reason_label = humanize(entry['reason'])
+                sample_text = ', '.join(str(a) for a in entry['sample_article_ids']) if entry['sample_article_ids'] else '—'
+                diagnostics_html += f'                    <tr><td>{event_label}</td><td>{reason_label}</td><td class="numeric">{entry["count"]:,}</td><td>{sample_text}</td></tr>\n'
+            diagnostics_html += '                </tbody>\n'
+            diagnostics_html += '            </table>\n'
+        else:
+            diagnostics_html += '            <div class="empty-state">No per-article diagnostics recorded for this batch.</div>\n'
+        diagnostics_html += '        </div>\n'
+
+diagnostics_html += '    </div>\n</body>\n</html>\n'
+
+diagnostics_output_path = os.path.join(args.output_dir, 'diagnostics.html')
+with open(diagnostics_output_path, 'w') as f:
+    f.write(diagnostics_html)
+
 # Calculate runtime
 runtime_seconds = time.time() - start_time
 print(f"Dashboard generated at {output_path}")
 print(f"Journals page generated at {journals_output_path}")
 print(f"Token usage page generated at {tokens_output_path}")
+print(f"Batch diagnostics page generated at {diagnostics_output_path}")
 print(f"Script runtime: {runtime_seconds:.2f} seconds")
 if args.explain_queries:
     print(f"Query explanations written to {args.explain_log}")

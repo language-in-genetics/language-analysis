@@ -2,11 +2,12 @@
 
 import argparse
 import json
-import time
 import os
 import openai
 import sys
 import tempfile
+from collections import Counter
+from datetime import datetime
 import psycopg2
 import psycopg2.extras
 
@@ -38,7 +39,6 @@ cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 # Helper function to execute queries with optional EXPLAIN logging
 def execute_query(cursor_to_use, sql, params=None):
     """Execute a query, optionally logging EXPLAIN output"""
-    from datetime import datetime
     if args.explain_queries:
         explain_cursor = conn.cursor()
         try:
@@ -70,15 +70,49 @@ cursor.execute("SET search_path TO languageingenetics, public")
 
 # Initialize explain log if needed
 if args.explain_queries:
-    from datetime import datetime
     with open(args.explain_log, 'w') as f:
         f.write(f"Query Explanation Log - Generated {datetime.now().isoformat()}\n")
         f.write(f"{'='*80}\n")
+
+# Ensure diagnostics table exists so we can capture per-article reasons
+cursor.execute(
+    """
+    CREATE TABLE IF NOT EXISTS languageingenetics.batch_diagnostics (
+        id BIGSERIAL PRIMARY KEY,
+        batch_id INT NOT NULL REFERENCES languageingenetics.batches(id) ON DELETE CASCADE,
+        article_id INT,
+        event_type TEXT NOT NULL,
+        details JSONB,
+        created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
+    )
+    """
+)
+cursor.execute(
+    """
+    CREATE INDEX IF NOT EXISTS batch_diagnostics_batch_id_idx
+        ON languageingenetics.batch_diagnostics (batch_id)
+    """
+)
+
+# Diagnostics helpers -----------------------------------------------------
+stats = Counter()
+
 
 # Start a transaction for this batch
 cursor.execute("BEGIN")
 cursor.execute("INSERT INTO languageingenetics.batches DEFAULT VALUES RETURNING id")
 batch_id = cursor.fetchone()['id']
+
+
+def record_diagnostic(event_type, article_id, **details):
+    """Persist a diagnostic event for later analysis."""
+    cursor.execute(
+        """
+        INSERT INTO languageingenetics.batch_diagnostics (batch_id, article_id, event_type, details)
+        VALUES (%s, %s, %s, %s)
+        """,
+        [batch_id, article_id, event_type, psycopg2.extras.Json(details) if details else None]
+    )
 
 # Define the tool schema for OpenAI
 tools = [{
@@ -120,14 +154,25 @@ tools = [{
 }]
 
 def process_article(article_id, metadata):
+    stats['examined'] += 1
+
+    if metadata is None:
+        stats['missing_metadata'] += 1
+        record_diagnostic('skipped', article_id, reason='missing_metadata')
+        return False
+
     # Check if article is already processed
     execute_query(cursor, "SELECT id FROM languageingenetics.files WHERE article_id = %s", [article_id])
     if cursor.fetchone() is not None:
+        stats['already_processed'] += 1
+        record_diagnostic('skipped', article_id, reason='already_processed')
         return False
 
     # Extract information
     title = metadata.get('title', [None])[0] if isinstance(metadata.get('title'), list) else metadata.get('title')
     if not title:
+        stats['missing_title'] += 1
+        record_diagnostic('skipped', article_id, reason='missing_title')
         print(f"Warning: No title found in article {article_id}", file=sys.stderr)
         return False
 
@@ -172,6 +217,8 @@ def process_article(article_id, metadata):
         [article_id, abstract is not None, pub_year, batch_id]
     )
 
+    stats['submitted'] += 1
+    record_diagnostic('submitted', article_id, has_abstract=abstract is not None, pub_year=pub_year)
     return True
 
 # Determine which journals to query
@@ -248,6 +295,20 @@ if processed_count == 0:
     conn.close()
     sys.exit(1)
 
+print("Batch preparation diagnostics:", file=sys.stderr)
+print(f"  Articles examined: {stats['examined']}", file=sys.stderr)
+print(f"  Submitted to batch: {stats['submitted']}", file=sys.stderr)
+print(f"  Skipped (already processed): {stats['already_processed']}", file=sys.stderr)
+print(f"  Skipped (missing title): {stats['missing_title']}", file=sys.stderr)
+if stats['missing_metadata']:
+    print(f"  Skipped (missing metadata): {stats['missing_metadata']}", file=sys.stderr)
+
+record_diagnostic(
+    'summary',
+    None,
+    totals={key: int(value) for key, value in stats.items()}
+)
+
 if args.dry_run:
     conn.rollback()
     conn.close()
@@ -291,3 +352,4 @@ if args.explain_queries:
 if args.batch_id_save_file:
     with open(args.batch_id_save_file, 'w') as bisf:
         bisf.write(f"{batch_id}")
+
