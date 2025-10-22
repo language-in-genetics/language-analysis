@@ -246,11 +246,16 @@ if journals_to_query:
         SELECT
             id,
             regexp_replace(
-                regexp_replace(filesrc, E'\n', ' ', 'g'),
+                regexp_replace(r.filesrc, E'\n', ' ', 'g'),
                 E'\t', '    ', 'g'
             )::jsonb as data
-        FROM public.raw_text_data
-        WHERE regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb
+        FROM public.raw_text_data r
+        WHERE regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb
+          AND NOT EXISTS (
+              SELECT 1
+              FROM languageingenetics.files f
+              WHERE f.article_id = r.id
+          )
         """)
         query_params.append(json.dumps([journal]))
 
@@ -264,10 +269,15 @@ else:
     SELECT
         id,
         regexp_replace(
-            regexp_replace(filesrc, E'\n', ' ', 'g'),
+            regexp_replace(r.filesrc, E'\n', ' ', 'g'),
             E'\t', '    ', 'g'
         )::jsonb as data
-    FROM public.raw_text_data
+    FROM public.raw_text_data r
+    WHERE NOT EXISTS (
+        SELECT 1
+        FROM languageingenetics.files f
+        WHERE f.article_id = r.id
+    )
     """
     if args.limit:
         query += f" LIMIT {args.limit}"
