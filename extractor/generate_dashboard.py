@@ -1,14 +1,18 @@
 #!/usr/bin/env python3
 
 import argparse
-import psycopg2
-import psycopg2.extras
-from datetime import datetime, timedelta
+import html
 import json
 import os
+import re
 import sys
 import time
+from collections import defaultdict
+from datetime import datetime, timedelta
 from decimal import Decimal
+
+import psycopg2
+import psycopg2.extras
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--output-dir", default="dashboard", help="Output directory for static files")
@@ -32,6 +36,55 @@ def json_default(obj):
     if isinstance(obj, Decimal):
         return int(obj) if obj == obj.to_integral_value() else float(obj)
     raise TypeError(f"Object of type {obj.__class__.__name__} is not JSON serializable")
+
+
+TAG_RE = re.compile(r"<[^>]+>")
+
+WORD_PATTERNS = {
+    'caucasian': re.compile(r"\bcaucasian(s)?\b", re.IGNORECASE),
+    'white': re.compile(r"\bwhite\b", re.IGNORECASE),
+    'european': re.compile(r"\beuropean(s)?\b", re.IGNORECASE),
+}
+
+
+def normalize_text(text):
+    """Normalize text for loose matching of terminology."""
+    if not text:
+        return ""
+    cleaned = html.unescape(TAG_RE.sub(" ", text))
+    cleaned = cleaned.replace("-", " ")
+    cleaned = cleaned.replace("/", " ")
+    cleaned = cleaned.replace("_", " ")
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    return cleaned.strip().lower()
+
+
+def lower_with_html(text):
+    """Lowercase text while stripping simple markup."""
+    if not text:
+        return ""
+    return html.unescape(TAG_RE.sub(" ", text)).lower()
+
+
+def split_phrases(phrase_text):
+    """Split phrases that may contain multiple comma/semicolon separated entries."""
+    if not phrase_text:
+        return []
+    parts = [part.strip() for part in re.split(r"[;,/]+", phrase_text) if part.strip()]
+    return parts or [phrase_text.strip()]
+
+
+def contains_phrase(text_norm, text_lower, phrase):
+    """Check whether the provided phrase appears in the normalized or raw text."""
+    if not phrase:
+        return False
+    cleaned = phrase.strip().strip('\"\'\u201c\u201d\u2018\u2019')
+    if not cleaned:
+        return False
+    normalized_phrase = normalize_text(cleaned)
+    if normalized_phrase and normalized_phrase in text_norm:
+        return True
+    return cleaned.lower() in text_lower
 
 # Helper function to execute queries with optional EXPLAIN logging
 def execute_query(sql, params=None):
@@ -243,19 +296,56 @@ if earliest and processed_articles > 0 and total_articles > processed_articles:
 else:
     completion_date = None
 
-# Results by year
+# Results by year with terminology breakdown
 execute_query("""
     SELECT
-        pub_year as year,
-        COUNT(*) as count
+        pub_year AS year,
+        COUNT(*) AS total_count,
+        COUNT(*) FILTER (WHERE caucasian = true) AS caucasian_count,
+        COUNT(*) FILTER (WHERE white = true) AS white_count,
+        COUNT(*) FILTER (WHERE european = true) AS european_count,
+        COUNT(*) FILTER (WHERE other = true) AS other_count,
+        COUNT(*) FILTER (WHERE (caucasian = true OR white = true OR european = true OR other = true)) AS any_count
     FROM languageingenetics.files
     WHERE processed = true
-    AND (caucasian = true OR white = true OR european = true OR other = true)
     AND pub_year IS NOT NULL
     GROUP BY pub_year
     ORDER BY pub_year
 """)
-by_year = [{'year': row['year'], 'count': row['count']} for row in cursor.fetchall()]
+term_year_rows = cursor.fetchall()
+
+term_year_data = []
+by_year = []
+
+
+def pct(part, whole):
+    return round((part / whole) * 100, 4) if whole else 0.0
+
+
+for row in term_year_rows:
+    total = row['total_count'] or 0
+    caucasian_count = row['caucasian_count'] or 0
+    white_count = row['white_count'] or 0
+    european_count = row['european_count'] or 0
+    other_count = row['other_count'] or 0
+    any_count = row['any_count'] or 0
+
+    term_year_data.append({
+        'year': row['year'],
+        'total_count': total,
+        'caucasian_count': caucasian_count,
+        'white_count': white_count,
+        'european_count': european_count,
+        'other_count': other_count,
+        'any_count': any_count,
+        'caucasian_pct': pct(caucasian_count, total),
+        'white_pct': pct(white_count, total),
+        'european_pct': pct(european_count, total),
+        'other_pct': pct(other_count, total),
+        'any_pct': pct(any_count, total)
+    })
+
+    by_year.append({'year': row['year'], 'count': any_count})
 
 # Results by journal and year
 execute_query("""
@@ -280,6 +370,147 @@ for row in cursor.fetchall():
             'year': row['year'],
             'count': row['count']
         })
+
+# Article-level extraction for title vs abstract analysis
+execute_query("""
+    SELECT
+        f.article_id,
+        f.pub_year,
+        f.has_abstract,
+        f.caucasian,
+        f.white,
+        f.european,
+        f.other,
+        f.european_phrase_used,
+        f.other_phrase_used,
+        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0) as journal,
+        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'title'->>0) as title,
+        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'abstract'->>0) as abstract
+    FROM languageingenetics.files f
+    JOIN public.raw_text_data r ON f.article_id = r.id
+    WHERE f.processed = true
+""")
+
+article_rows = cursor.fetchall()
+
+journal_term_totals = defaultdict(lambda: {'title': 0, 'abstract': 0, 'both': 0, 'total': 0})
+year_term_totals = defaultdict(lambda: {'title': 0, 'abstract': 0, 'both': 0, 'total': 0})
+
+for row in article_rows:
+    has_any_term = any([
+        row['caucasian'],
+        row['white'],
+        row['european'],
+        row['other'],
+    ])
+
+    if not has_any_term:
+        continue
+
+    journal_value = row['journal']
+    if isinstance(journal_value, str):
+        journal_value = journal_value.strip().strip('"')
+    journal_name = journal_value if journal_value else None
+
+    year_value = row['pub_year']
+
+    title_lower = lower_with_html(row['title'])
+    abstract_lower = lower_with_html(row['abstract'])
+    title_norm = normalize_text(row['title'])
+    abstract_norm = normalize_text(row['abstract'])
+
+    title_has = False
+    abstract_has = False
+
+    if row['caucasian']:
+        if WORD_PATTERNS['caucasian'].search(title_lower):
+            title_has = True
+        if WORD_PATTERNS['caucasian'].search(abstract_lower):
+            abstract_has = True
+
+    if row['white']:
+        if WORD_PATTERNS['white'].search(title_lower):
+            title_has = True
+        if WORD_PATTERNS['white'].search(abstract_lower):
+            abstract_has = True
+
+    if row['european']:
+        european_phrases = split_phrases(row['european_phrase_used'])
+        if not european_phrases:
+            european_phrases = ['european']
+        if any(contains_phrase(title_norm, title_lower, phrase) for phrase in european_phrases) or WORD_PATTERNS['european'].search(title_lower):
+            title_has = True
+        if any(contains_phrase(abstract_norm, abstract_lower, phrase) for phrase in european_phrases) or WORD_PATTERNS['european'].search(abstract_lower):
+            abstract_has = True
+
+    if row['other']:
+        other_phrases = split_phrases(row['other_phrase_used'])
+        for phrase in other_phrases:
+            if contains_phrase(title_norm, title_lower, phrase):
+                title_has = True
+                break
+        for phrase in other_phrases:
+            if contains_phrase(abstract_norm, abstract_lower, phrase):
+                abstract_has = True
+                break
+
+    journal_counts = None
+    if journal_name:
+        journal_counts = journal_term_totals[journal_name]
+        journal_counts['total'] += 1
+
+    year_counts = None
+    if year_value is not None:
+        year_counts = year_term_totals[year_value]
+        year_counts['total'] += 1
+
+    if title_has:
+        if journal_counts is not None:
+            journal_counts['title'] += 1
+        if year_counts is not None:
+            year_counts['title'] += 1
+
+    if abstract_has:
+        if journal_counts is not None:
+            journal_counts['abstract'] += 1
+        if year_counts is not None:
+            year_counts['abstract'] += 1
+
+    if title_has and abstract_has:
+        if journal_counts is not None:
+            journal_counts['both'] += 1
+        if year_counts is not None:
+            year_counts['both'] += 1
+
+journal_scatter_data = []
+for journal, counts in journal_term_totals.items():
+    if counts['title'] == 0 and counts['abstract'] == 0:
+        continue
+    journal_scatter_data.append({
+        'journal': journal,
+        'title_count': counts['title'],
+        'abstract_count': counts['abstract'],
+        'both_count': counts['both'],
+        'total_count': counts['total'],
+        'title_only': max(counts['title'] - counts['both'], 0),
+        'abstract_only': max(counts['abstract'] - counts['both'], 0)
+    })
+
+journal_scatter_data.sort(key=lambda item: item['total_count'], reverse=True)
+
+year_scatter_data = []
+for year, counts in sorted(year_term_totals.items()):
+    if counts['title'] == 0 and counts['abstract'] == 0:
+        continue
+    year_scatter_data.append({
+        'year': year,
+        'title_count': counts['title'],
+        'abstract_count': counts['abstract'],
+        'both_count': counts['both'],
+        'total_count': counts['total'],
+        'title_only': max(counts['title'] - counts['both'], 0),
+        'abstract_only': max(counts['abstract'] - counts['both'], 0)
+    })
 
 print("Generating HTML...")
 
@@ -324,6 +555,9 @@ html_content = f"""<!DOCTYPE html>
         th {{ background: #f8f8f8; font-weight: 600; color: #666; text-transform: uppercase; font-size: 0.85em; }}
         tr:last-child td {{ border-bottom: none; }}
         .chart-container {{ background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }}
+        .chart-container h3 {{ margin-bottom: 15px; font-size: 1.1em; color: #555; }}
+        .chart-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }}
+        .chart-grid .chart-container {{ margin-bottom: 0; }}
         canvas {{ max-height: 400px; }}
         .progress-bar {{
             width: 100%;
@@ -421,6 +655,45 @@ html_content += f"""
             <canvas id="yearChart"></canvas>
         </div>
 
+        <h2>Terminology Usage Proportions</h2>
+        <div class="chart-container">
+            <canvas id="termOverlayChart"></canvas>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-container">
+                <h3>Caucasian Terminology</h3>
+                <canvas id="caucasianChart" height="280"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>White Terminology</h3>
+                <canvas id="whiteChart" height="280"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>European Terminology</h3>
+                <canvas id="europeanChart" height="280"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Other Terminology</h3>
+                <canvas id="otherChart" height="280"></canvas>
+            </div>
+        </div>
+
+        <h2>Articles Mentioning Any Terminology</h2>
+        <div class="chart-container">
+            <canvas id="anyProportionChart"></canvas>
+        </div>
+
+        <h2>Title vs Abstract Mentions by Journal</h2>
+        <div class="chart-container">
+            <canvas id="journalScatterChart"></canvas>
+        </div>
+
+        <h2>Title vs Abstract Mentions by Year</h2>
+        <div class="chart-container">
+            <canvas id="yearScatterChart"></canvas>
+        </div>
+
         <h2>System Information</h2>
         <div class="card">
             <h3>Dashboard Generation Time</h3>
@@ -436,6 +709,9 @@ html_content += f"""
     </div>
 
     <script>
+        const termYearData = """ + json.dumps(term_year_data, default=json_default) + """;
+        const journalScatterData = """ + json.dumps(journal_scatter_data, default=json_default) + """;
+        const yearScatterData = """ + json.dumps(year_scatter_data, default=json_default) + """;
         const byYearData = """ + json.dumps(by_year, default=json_default) + """;
         const byJournalYearData = """ + json.dumps(by_journal_year_final, default=json_default) + """;
 
@@ -463,6 +739,203 @@ html_content += f"""
                 scales: {
                     y: { beginAtZero: true, title: { display: true, text: 'Count' } },
                     x: { title: { display: true, text: 'Year' } }
+                }
+            }
+        });
+
+        // Terminology overlay chart
+        const overlayCtx = document.getElementById('termOverlayChart').getContext('2d');
+        const overlayConfigs = [
+            { key: 'caucasian_pct', label: 'Caucasian', color: '#F44336', background: 'rgba(244, 67, 54, 0.15)' },
+            { key: 'white_pct', label: 'White', color: '#FF9800', background: 'rgba(255, 152, 0, 0.15)' },
+            { key: 'european_pct', label: 'European', color: '#2196F3', background: 'rgba(33, 150, 243, 0.15)' },
+            { key: 'other_pct', label: 'Other', color: '#9C27B0', background: 'rgba(156, 39, 176, 0.15)' }
+        ];
+        const overlayDatasets = overlayConfigs.map(cfg => ({
+            label: cfg.label,
+            data: termYearData.map(d => typeof d[cfg.key] === 'number' ? d[cfg.key] : 0),
+            borderColor: cfg.color,
+            backgroundColor: cfg.background,
+            tension: 0.1,
+            fill: true,
+            spanGaps: true
+        }));
+        new Chart(overlayCtx, {
+            type: 'line',
+            data: {
+                labels: termYearData.map(d => d.year),
+                datasets: overlayDatasets
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { display: true, position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: context => context.dataset.label + ': ' + context.parsed.y.toFixed(2) + '%'
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        suggestedMax: 100,
+                        ticks: { callback: value => value + '%' },
+                        title: { display: true, text: 'Percent of processed articles' }
+                    },
+                    x: { title: { display: true, text: 'Year' } }
+                }
+            }
+        });
+
+        function renderPercentLineChart(canvasId, label, dataKey, color, background, options = {}) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: termYearData.map(d => d.year),
+                    datasets: [{
+                        label,
+                        data: termYearData.map(d => typeof d[dataKey] === 'number' ? d[dataKey] : 0),
+                        borderColor: color,
+                        backgroundColor: background,
+                        tension: 0.1,
+                        fill: true,
+                        spanGaps: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: { display: Object.prototype.hasOwnProperty.call(options, 'showLegend') ? options.showLegend : false },
+                        tooltip: {
+                            callbacks: {
+                                label: context => label + ': ' + context.parsed.y.toFixed(2) + '%'
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            suggestedMax: 100,
+                            ticks: { callback: value => value + '%' },
+                            title: {
+                                display: Boolean(options.yTitle),
+                                text: options.yTitle || ''
+                            }
+                        },
+                        x: { title: { display: true, text: 'Year' } }
+                    }
+                }
+            });
+        }
+
+        renderPercentLineChart('caucasianChart', 'Caucasian Terminology', 'caucasian_pct', '#F44336', 'rgba(244, 67, 54, 0.18)');
+        renderPercentLineChart('whiteChart', 'White Terminology', 'white_pct', '#FF9800', 'rgba(255, 152, 0, 0.2)');
+        renderPercentLineChart('europeanChart', 'European Terminology', 'european_pct', '#2196F3', 'rgba(33, 150, 243, 0.18)');
+        renderPercentLineChart('otherChart', 'Other Terminology', 'other_pct', '#9C27B0', 'rgba(156, 39, 176, 0.18)');
+        renderPercentLineChart('anyProportionChart', 'Any Terminology', 'any_pct', '#4CAF50', 'rgba(76, 175, 80, 0.18)', { yTitle: 'Percent of processed articles' });
+
+        const journalScatterCtx = document.getElementById('journalScatterChart').getContext('2d');
+        new Chart(journalScatterCtx, {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    label: 'Journals',
+                    data: journalScatterData.map(item => ({
+                        x: item.title_count,
+                        y: item.abstract_count,
+                        label: item.journal,
+                        total: item.total_count,
+                        both: item.both_count,
+                        titleOnly: item.title_only,
+                        abstractOnly: item.abstract_only
+                    })),
+                    backgroundColor: 'rgba(33, 150, 243, 0.45)',
+                    borderColor: '#2196F3',
+                    pointRadius: context => Math.min(12, 4 + Math.sqrt(context.raw.total || 0)),
+                    pointHoverRadius: context => Math.min(14, 5 + Math.sqrt(context.raw.total || 0))
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: context => {
+                                const point = context.raw;
+                                return [
+                                    point.label,
+                                    'Title mentions: ' + point.x,
+                                    'Abstract mentions: ' + point.y,
+                                    'Both title & abstract: ' + point.both,
+                                    'Title only: ' + point.titleOnly,
+                                    'Abstract only: ' + point.abstractOnly,
+                                    'Total terminology articles: ' + point.total
+                                ];
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: { beginAtZero: true, title: { display: true, text: 'Articles with race terms in titles' } },
+                    y: { beginAtZero: true, title: { display: true, text: 'Articles with race terms in abstracts' } }
+                }
+            }
+        });
+
+        const yearScatterCtx = document.getElementById('yearScatterChart').getContext('2d');
+        new Chart(yearScatterCtx, {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    label: 'Years',
+                    data: yearScatterData.map(item => ({
+                        x: item.title_count,
+                        y: item.abstract_count,
+                        label: item.year,
+                        total: item.total_count,
+                        both: item.both_count,
+                        titleOnly: item.title_only,
+                        abstractOnly: item.abstract_only
+                    })),
+                    backgroundColor: 'rgba(76, 175, 80, 0.5)',
+                    borderColor: '#4CAF50',
+                    pointRadius: context => Math.min(12, 4 + Math.sqrt(context.raw.total || 0)),
+                    pointHoverRadius: context => Math.min(14, 5 + Math.sqrt(context.raw.total || 0))
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: context => {
+                                const point = context.raw;
+                                return [
+                                    'Year ' + point.label,
+                                    'Title mentions: ' + point.x,
+                                    'Abstract mentions: ' + point.y,
+                                    'Both title & abstract: ' + point.both,
+                                    'Title only: ' + point.titleOnly,
+                                    'Abstract only: ' + point.abstractOnly,
+                                    'Total terminology articles: ' + point.total
+                                ];
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: { beginAtZero: true, title: { display: true, text: 'Articles with race terms in titles' } },
+                    y: { beginAtZero: true, title: { display: true, text: 'Articles with race terms in abstracts' } }
                 }
             }
         });
