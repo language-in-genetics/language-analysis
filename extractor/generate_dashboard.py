@@ -345,7 +345,11 @@ for row in term_year_rows:
         'any_pct': pct(any_count, total)
     })
 
-    by_year.append({'year': row['year'], 'count': any_count})
+    by_year.append({
+        'year': row['year'],
+        'count': any_count,
+        'total_articles': total
+    })
 
 # Results by journal and year
 execute_query("""
@@ -717,18 +721,36 @@ html_content += f"""
 
         // Year chart
         const yearCtx = document.getElementById('yearChart').getContext('2d');
+        const yearLabels = byYearData.map(d => d.year);
+        const referenceCounts = byYearData.map(d => d.count || 0);
+        const totalCounts = byYearData.map(d => d.total_articles || 0);
+        const maxReference = referenceCounts.length ? Math.max(...referenceCounts) : 0;
+        const maxTotal = totalCounts.length ? Math.max(...totalCounts) : 0;
+
         new Chart(yearCtx, {
             type: 'line',
             data: {
-                labels: byYearData.map(d => d.year),
-                datasets: [{
-                    label: 'Articles with Race References',
-                    data: byYearData.map(d => d.count),
-                    borderColor: '#2196F3',
-                    backgroundColor: 'rgba(33, 150, 243, 0.1)',
-                    tension: 0.1,
-                    fill: true
-                }]
+                labels: yearLabels,
+                datasets: [
+                    {
+                        label: 'Articles with Race References',
+                        data: referenceCounts,
+                        borderColor: '#2196F3',
+                        backgroundColor: 'rgba(33, 150, 243, 0.1)',
+                        tension: 0.1,
+                        fill: true,
+                        yAxisID: 'yReferences'
+                    },
+                    {
+                        label: 'Total Processed Articles',
+                        data: totalCounts,
+                        borderColor: '#4CAF50',
+                        backgroundColor: 'rgba(76, 175, 80, 0.15)',
+                        tension: 0.1,
+                        fill: true,
+                        yAxisID: 'yTotal'
+                    }
+                ]
             },
             options: {
                 responsive: true,
@@ -737,7 +759,21 @@ html_content += f"""
                     legend: { display: true }
                 },
                 scales: {
-                    y: { beginAtZero: true, title: { display: true, text: 'Count' } },
+                    yReferences: {
+                        type: 'linear',
+                        position: 'left',
+                        beginAtZero: true,
+                        title: { display: true, text: 'Articles with race references' },
+                        suggestedMax: maxReference > 0 ? Math.ceil(maxReference * 1.1) : 10
+                    },
+                    yTotal: {
+                        type: 'linear',
+                        position: 'right',
+                        beginAtZero: true,
+                        title: { display: true, text: 'Total processed articles' },
+                        grid: { drawOnChartArea: false },
+                        suggestedMax: maxTotal > 0 ? Math.ceil(maxTotal * 1.1) : 10
+                    },
                     x: { title: { display: true, text: 'Year' } }
                 }
             }
@@ -760,6 +796,12 @@ html_content += f"""
             fill: true,
             spanGaps: true
         }));
+        const overlayValues = [];
+        overlayDatasets.forEach(dataset => {
+            dataset.data.forEach(value => overlayValues.push(value));
+        });
+        const overlayMax = overlayValues.length ? Math.max(...overlayValues) : 0;
+        const overlaySuggestedMax = overlayMax > 0 ? Math.min(100, Math.ceil(overlayMax / 5) * 5 + 5) : 10;
         new Chart(overlayCtx, {
             type: 'line',
             data: {
@@ -780,7 +822,7 @@ html_content += f"""
                 scales: {
                     y: {
                         beginAtZero: true,
-                        suggestedMax: 100,
+                        suggestedMax: overlaySuggestedMax,
                         ticks: { callback: value => value + '%' },
                         title: { display: true, text: 'Percent of processed articles' }
                     },
@@ -793,13 +835,16 @@ html_content += f"""
             const canvas = document.getElementById(canvasId);
             if (!canvas) return;
             const ctx = canvas.getContext('2d');
+            const values = termYearData.map(d => typeof d[dataKey] === 'number' ? d[dataKey] : 0);
+            const maxValue = values.length ? Math.max(...values) : 0;
+            const paddedMax = maxValue > 0 ? Math.min(100, Math.ceil(maxValue / 5) * 5 + 5) : 10;
             new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: termYearData.map(d => d.year),
                     datasets: [{
                         label,
-                        data: termYearData.map(d => typeof d[dataKey] === 'number' ? d[dataKey] : 0),
+                        data: values,
                         borderColor: color,
                         backgroundColor: background,
                         tension: 0.1,
@@ -821,7 +866,7 @@ html_content += f"""
                     scales: {
                         y: {
                             beginAtZero: true,
-                            suggestedMax: 100,
+                            suggestedMax: paddedMax,
                             ticks: { callback: value => value + '%' },
                             title: {
                                 display: Boolean(options.yTitle),
