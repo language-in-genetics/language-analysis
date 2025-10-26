@@ -885,26 +885,122 @@ html_content += f"""
         renderPercentLineChart('otherChart', 'Other Terminology', 'other_pct', '#9C27B0', 'rgba(156, 39, 176, 0.18)');
         renderPercentLineChart('anyProportionChart', 'Any Terminology', 'any_pct', '#4CAF50', 'rgba(76, 175, 80, 0.18)', { yTitle: 'Percent of processed articles' });
 
+        const median = values => {
+            if (!values.length) {
+                return null;
+            }
+            const sorted = values.slice().sort((a, b) => a - b);
+            const mid = Math.floor(sorted.length / 2);
+            return sorted.length % 2 !== 0
+                ? sorted[mid]
+                : (sorted[mid - 1] + sorted[mid]) / 2;
+        };
+
+        const theilSenRegression = points => {
+            const validPoints = points.filter(point => {
+                return (
+                    typeof point.x === 'number' &&
+                    typeof point.y === 'number' &&
+                    !Number.isNaN(point.x) &&
+                    !Number.isNaN(point.y)
+                );
+            });
+
+            if (!validPoints.length) {
+                return null;
+            }
+
+            if (validPoints.length === 1) {
+                return { slope: 0, intercept: validPoints[0].y };
+            }
+
+            const slopes = [];
+            for (let i = 0; i < validPoints.length - 1; i++) {
+                for (let j = i + 1; j < validPoints.length; j++) {
+                    const dx = validPoints[j].x - validPoints[i].x;
+                    if (dx === 0) continue;
+                    slopes.push((validPoints[j].y - validPoints[i].y) / dx);
+                }
+            }
+
+            const slope = slopes.length ? median(slopes) : 0;
+            const interceptValues = validPoints.map(point => point.y - slope * point.x);
+            const intercept = interceptValues.length ? median(interceptValues) : 0;
+
+            return { slope, intercept };
+        };
+
+        const regressionLineDataset = (points, color, label) => {
+            const regression = theilSenRegression(points);
+            if (!regression) {
+                return null;
+            }
+
+            const xValues = points
+                .map(point => point.x)
+                .filter(x => typeof x === 'number' && !Number.isNaN(x));
+            if (!xValues.length) {
+                return null;
+            }
+
+            const minX = Math.min(...xValues);
+            const maxX = Math.max(...xValues);
+            if (!Number.isFinite(minX) || !Number.isFinite(maxX) || minX === maxX) {
+                return null;
+            }
+
+            const firstPoint = { x: minX, y: regression.slope * minX + regression.intercept };
+            const secondPoint = { x: maxX, y: regression.slope * maxX + regression.intercept };
+
+            return {
+                type: 'line',
+                label,
+                data: [firstPoint, secondPoint],
+                borderColor: color,
+                borderWidth: 2,
+                fill: false,
+                pointRadius: 0,
+                pointHoverRadius: 0,
+                hitRadius: 0,
+                tension: 0,
+                borderDash: [6, 4]
+            };
+        };
+
+        const journalScatterPoints = journalScatterData.map(item => ({
+            x: item.title_count,
+            y: item.abstract_count,
+            label: item.journal,
+            total: item.total_count,
+            both: item.both_count,
+            titleOnly: item.title_only,
+            abstractOnly: item.abstract_only
+        }));
+
+        const journalDatasets = [{
+            label: 'Journals',
+            data: journalScatterPoints,
+            backgroundColor: 'rgba(33, 150, 243, 0.45)',
+            borderColor: '#2196F3',
+            pointRadius: context => Math.min(12, 4 + Math.sqrt(context.raw.total || 0)),
+            pointHoverRadius: context => Math.min(14, 5 + Math.sqrt(context.raw.total || 0))
+        }];
+
+        const journalRegressionDataset = regressionLineDataset(
+            journalScatterPoints,
+            '#D84315',
+            'Theil-Sen Regression'
+        );
+
+        if (journalRegressionDataset) {
+            journalDatasets.push(journalRegressionDataset);
+        }
+
         const journalScatterCtx = document.getElementById('journalScatterChart').getContext('2d');
         new Chart(journalScatterCtx, {
             type: 'scatter',
             data: {
-                datasets: [{
-                    label: 'Journals',
-                    data: journalScatterData.map(item => ({
-                        x: item.title_count,
-                        y: item.abstract_count,
-                        label: item.journal,
-                        total: item.total_count,
-                        both: item.both_count,
-                        titleOnly: item.title_only,
-                        abstractOnly: item.abstract_only
-                    })),
-                    backgroundColor: 'rgba(33, 150, 243, 0.45)',
-                    borderColor: '#2196F3',
-                    pointRadius: context => Math.min(12, 4 + Math.sqrt(context.raw.total || 0)),
-                    pointHoverRadius: context => Math.min(14, 5 + Math.sqrt(context.raw.total || 0))
-                }]
+                datasets: journalDatasets
             },
             options: {
                 responsive: true,
@@ -935,26 +1031,40 @@ html_content += f"""
             }
         });
 
+        const yearScatterPoints = yearScatterData.map(item => ({
+            x: item.title_count,
+            y: item.abstract_count,
+            label: item.year,
+            total: item.total_count,
+            both: item.both_count,
+            titleOnly: item.title_only,
+            abstractOnly: item.abstract_only
+        }));
+
+        const yearDatasets = [{
+            label: 'Years',
+            data: yearScatterPoints,
+            backgroundColor: 'rgba(76, 175, 80, 0.5)',
+            borderColor: '#4CAF50',
+            pointRadius: context => Math.min(12, 4 + Math.sqrt(context.raw.total || 0)),
+            pointHoverRadius: context => Math.min(14, 5 + Math.sqrt(context.raw.total || 0))
+        }];
+
+        const yearRegressionDataset = regressionLineDataset(
+            yearScatterPoints,
+            '#1B5E20',
+            'Theil-Sen Regression'
+        );
+
+        if (yearRegressionDataset) {
+            yearDatasets.push(yearRegressionDataset);
+        }
+
         const yearScatterCtx = document.getElementById('yearScatterChart').getContext('2d');
         new Chart(yearScatterCtx, {
             type: 'scatter',
             data: {
-                datasets: [{
-                    label: 'Years',
-                    data: yearScatterData.map(item => ({
-                        x: item.title_count,
-                        y: item.abstract_count,
-                        label: item.year,
-                        total: item.total_count,
-                        both: item.both_count,
-                        titleOnly: item.title_only,
-                        abstractOnly: item.abstract_only
-                    })),
-                    backgroundColor: 'rgba(76, 175, 80, 0.5)',
-                    borderColor: '#4CAF50',
-                    pointRadius: context => Math.min(12, 4 + Math.sqrt(context.raw.total || 0)),
-                    pointHoverRadius: context => Math.min(14, 5 + Math.sqrt(context.raw.total || 0))
-                }]
+                datasets: yearDatasets
             },
             options: {
                 responsive: true,
