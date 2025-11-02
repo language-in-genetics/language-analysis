@@ -796,12 +796,7 @@ html_content += f"""
             fill: true,
             spanGaps: true
         }));
-        const overlayValues = [];
-        overlayDatasets.forEach(dataset => {
-            dataset.data.forEach(value => overlayValues.push(value));
-        });
-        const overlayMax = overlayValues.length ? Math.max(...overlayValues) : 0;
-        const overlaySuggestedMax = overlayMax > 0 ? Math.min(100, Math.ceil(overlayMax / 5) * 5 + 5) : 10;
+        const overlaySuggestedMax = 8;
         new Chart(overlayCtx, {
             type: 'line',
             data: {
@@ -838,6 +833,22 @@ html_content += f"""
             const values = termYearData.map(d => typeof d[dataKey] === 'number' ? d[dataKey] : 0);
             const maxValue = values.length ? Math.max(...values) : 0;
             const paddedMax = maxValue > 0 ? Math.min(100, Math.ceil(maxValue / 5) * 5 + 5) : 10;
+            const showLegend = Object.prototype.hasOwnProperty.call(options, 'showLegend') ? options.showLegend : false;
+            const yTitle = options.yTitle || '';
+            const hasYTitle = Boolean(options.yTitle);
+            const yMax = typeof options.yMax === 'number' ? options.yMax : null;
+            const yScaleConfig = {
+                beginAtZero: true,
+                suggestedMax: yMax ?? paddedMax,
+                ticks: { callback: value => value + '%' },
+                title: {
+                    display: hasYTitle,
+                    text: yTitle
+                }
+            };
+            if (yMax !== null) {
+                yScaleConfig.max = yMax;
+            }
             new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -856,7 +867,7 @@ html_content += f"""
                     responsive: true,
                     maintainAspectRatio: true,
                     plugins: {
-                        legend: { display: Object.prototype.hasOwnProperty.call(options, 'showLegend') ? options.showLegend : false },
+                        legend: { display: showLegend },
                         tooltip: {
                             callbacks: {
                                 label: context => label + ': ' + context.parsed.y.toFixed(2) + '%'
@@ -864,25 +875,17 @@ html_content += f"""
                         }
                     },
                     scales: {
-                        y: {
-                            beginAtZero: true,
-                            suggestedMax: paddedMax,
-                            ticks: { callback: value => value + '%' },
-                            title: {
-                                display: Boolean(options.yTitle),
-                                text: options.yTitle || ''
-                            }
-                        },
+                        y: yScaleConfig,
                         x: { title: { display: true, text: 'Year' } }
                     }
                 }
             });
         }
 
-        renderPercentLineChart('caucasianChart', 'Caucasian Terminology', 'caucasian_pct', '#F44336', 'rgba(244, 67, 54, 0.18)');
-        renderPercentLineChart('whiteChart', 'White Terminology', 'white_pct', '#FF9800', 'rgba(255, 152, 0, 0.2)');
-        renderPercentLineChart('europeanChart', 'European Terminology', 'european_pct', '#2196F3', 'rgba(33, 150, 243, 0.18)');
-        renderPercentLineChart('otherChart', 'Other Terminology', 'other_pct', '#9C27B0', 'rgba(156, 39, 176, 0.18)');
+        renderPercentLineChart('caucasianChart', 'Caucasian Terminology', 'caucasian_pct', '#F44336', 'rgba(244, 67, 54, 0.18)', { yMax: 4 });
+        renderPercentLineChart('whiteChart', 'White Terminology', 'white_pct', '#FF9800', 'rgba(255, 152, 0, 0.2)', { yMax: 4 });
+        renderPercentLineChart('europeanChart', 'European Terminology', 'european_pct', '#2196F3', 'rgba(33, 150, 243, 0.18)', { yMax: 4 });
+        renderPercentLineChart('otherChart', 'Other Terminology', 'other_pct', '#9C27B0', 'rgba(156, 39, 176, 0.18)', { yMax: 8 });
         renderPercentLineChart('anyProportionChart', 'Any Terminology', 'any_pct', '#4CAF50', 'rgba(76, 175, 80, 0.18)', { yTitle: 'Percent of processed articles' });
 
         const median = values => {
