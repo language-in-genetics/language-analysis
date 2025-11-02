@@ -846,9 +846,6 @@ html_content += f"""
                     text: yTitle
                 }
             };
-            if (yMax !== null) {
-                yScaleConfig.max = yMax;
-            }
             new Chart(ctx, {
                 type: 'line',
                 data: {
