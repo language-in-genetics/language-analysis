@@ -563,6 +563,7 @@ html_content = f"""<!DOCTYPE html>
         .chart-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }}
         .chart-grid .chart-container {{ margin-bottom: 0; }}
         canvas {{ max-height: 400px; }}
+        .regression-stats {{ margin-top: 12px; font-size: 0.95em; color: #444; }}
         .progress-bar {{
             width: 100%;
             height: 8px;
@@ -691,11 +692,13 @@ html_content += f"""
         <h2>Title vs Abstract Mentions by Journal</h2>
         <div class="chart-container">
             <canvas id="journalScatterChart"></canvas>
+            <div class="regression-stats" id="journalRegressionStats"></div>
         </div>
 
         <h2>Title vs Abstract Mentions by Year</h2>
         <div class="chart-container">
             <canvas id="yearScatterChart"></canvas>
+            <div class="regression-stats" id="yearRegressionStats"></div>
         </div>
 
         <h2>System Information</h2>
@@ -885,85 +888,258 @@ html_content += f"""
         renderPercentLineChart('otherChart', 'Other Terminology', 'other_pct', '#9C27B0', 'rgba(156, 39, 176, 0.18)', { yMax: 8 });
         renderPercentLineChart('anyProportionChart', 'Any Terminology', 'any_pct', '#4CAF50', 'rgba(76, 175, 80, 0.18)', { yTitle: 'Percent of processed articles' });
 
-        const median = values => {
-            if (!values.length) {
-                return null;
+        const logGamma = z => {
+            const coefficients = [
+                676.5203681218851,
+                -1259.1392167224028,
+                771.32342877765313,
+                -176.61502916214059,
+                12.507343278686905,
+                -0.13857109526572012,
+                9.9843695780195716e-6,
+                1.5056327351493116e-7
+            ];
+
+            if (z < 0.5) {
+                return Math.log(Math.PI) - Math.log(Math.sin(Math.PI * z)) - logGamma(1 - z);
             }
-            const sorted = values.slice().sort((a, b) => a - b);
-            const mid = Math.floor(sorted.length / 2);
-            return sorted.length % 2 !== 0
-                ? sorted[mid]
-                : (sorted[mid - 1] + sorted[mid]) / 2;
+
+            z -= 1;
+            let x = 0.99999999999980993;
+            for (let i = 0; i < coefficients.length; i++) {
+                x += coefficients[i] / (z + i + 1);
+            }
+            const t = z + coefficients.length - 0.5;
+            return 0.5 * Math.log(2 * Math.PI) + (z + 0.5) * Math.log(t) - t + Math.log(x);
         };
 
-        const theilSenRegression = points => {
-            const validPoints = points.filter(point => {
-                return (
-                    typeof point.x === 'number' &&
-                    typeof point.y === 'number' &&
-                    !Number.isNaN(point.x) &&
-                    !Number.isNaN(point.y)
-                );
-            });
+        const betacf = (a, b, x) => {
+            const MAX_ITER = 200;
+            const EPS = 1e-12;
+            const FPMIN = 1e-30;
 
-            if (!validPoints.length) {
-                return null;
-            }
+            let qab = a + b;
+            let qap = a + 1;
+            let qam = a - 1;
+            let c = 1;
+            let d = 1 - (qab * x) / qap;
+            if (Math.abs(d) < FPMIN) d = FPMIN;
+            d = 1 / d;
+            let h = d;
 
-            if (validPoints.length === 1) {
-                return { slope: 0, intercept: validPoints[0].y };
-            }
+            for (let m = 1; m <= MAX_ITER; m++) {
+                const m2 = 2 * m;
+                let aa = (m * (b - m) * x) / ((qam + m2) * (a + m2));
+                d = 1 + aa * d;
+                if (Math.abs(d) < FPMIN) d = FPMIN;
+                c = 1 + aa / c;
+                if (Math.abs(c) < FPMIN) c = FPMIN;
+                d = 1 / d;
+                h *= d * c;
 
-            const slopes = [];
-            for (let i = 0; i < validPoints.length - 1; i++) {
-                for (let j = i + 1; j < validPoints.length; j++) {
-                    const dx = validPoints[j].x - validPoints[i].x;
-                    if (dx === 0) continue;
-                    slopes.push((validPoints[j].y - validPoints[i].y) / dx);
+                aa = (-(a + m) * (qab + m) * x) / ((a + m2) * (qap + m2));
+                d = 1 + aa * d;
+                if (Math.abs(d) < FPMIN) d = FPMIN;
+                c = 1 + aa / c;
+                if (Math.abs(c) < FPMIN) c = FPMIN;
+                d = 1 / d;
+                const del = d * c;
+                h *= del;
+                if (Math.abs(del - 1) < EPS) {
+                    break;
                 }
             }
 
-            const slope = slopes.length ? median(slopes) : 0;
-            const interceptValues = validPoints.map(point => point.y - slope * point.x);
-            const intercept = interceptValues.length ? median(interceptValues) : 0;
-
-            return { slope, intercept };
+            return h;
         };
 
-        const regressionLineDataset = (points, color, label) => {
-            const regression = theilSenRegression(points);
-            if (!regression) {
+        const regularizedIncompleteBeta = (x, a, b) => {
+            if (x <= 0) return 0;
+            if (x >= 1) return 1;
+
+            const lnBeta = logGamma(a) + logGamma(b) - logGamma(a + b);
+            const front = Math.exp(a * Math.log(x) + b * Math.log(1 - x) - lnBeta);
+
+            if (x < (a + 1) / (a + b + 2)) {
+                return (front * betacf(a, b, x)) / a;
+            }
+
+            return 1 - (front * betacf(b, a, 1 - x)) / b;
+        };
+
+        const studentTCDF = (t, df) => {
+            if (!Number.isFinite(t)) {
+                return t > 0 ? 1 : 0;
+            }
+            if (df <= 0) {
+                return Number.NaN;
+            }
+
+            const x = df / (df + t * t);
+            const ib = regularizedIncompleteBeta(x, df / 2, 0.5);
+            if (!Number.isFinite(ib)) {
+                return Number.NaN;
+            }
+
+            if (t >= 0) {
+                return 1 - 0.5 * ib;
+            }
+            return 0.5 * ib;
+        };
+
+        const ordinaryLeastSquares = points => {
+            const validPoints = points.filter(point => (
+                typeof point.x === 'number' &&
+                typeof point.y === 'number' &&
+                !Number.isNaN(point.x) &&
+                !Number.isNaN(point.y)
+            ));
+
+            const n = validPoints.length;
+            if (n < 2) {
                 return null;
             }
 
-            const xValues = points
-                .map(point => point.x)
-                .filter(x => typeof x === 'number' && !Number.isNaN(x));
-            if (!xValues.length) {
+            const sumX = validPoints.reduce((total, point) => total + point.x, 0);
+            const sumY = validPoints.reduce((total, point) => total + point.y, 0);
+            const meanX = sumX / n;
+            const meanY = sumY / n;
+
+            let sxx = 0;
+            let sxy = 0;
+            let sst = 0;
+            let sse = 0;
+
+            for (const point of validPoints) {
+                const dx = point.x - meanX;
+                const dy = point.y - meanY;
+                sxx += dx * dx;
+                sxy += dx * dy;
+            }
+
+            if (sxx === 0) {
                 return null;
             }
 
+            const slope = sxy / sxx;
+            const intercept = meanY - slope * meanX;
+
+            for (const point of validPoints) {
+                const predicted = slope * point.x + intercept;
+                const residual = point.y - predicted;
+                const dy = point.y - meanY;
+                sse += residual * residual;
+                sst += dy * dy;
+            }
+
+            const rSquared = sst === 0 ? 1 : Math.max(0, Math.min(1, 1 - sse / sst));
+
+            const df = n - 2;
+            let pValue = null;
+            if (df > 0 && sxx > 0) {
+                const varianceEstimate = sse / df;
+                const standardError = Math.sqrt(varianceEstimate / sxx);
+                if (Number.isFinite(standardError)) {
+                    if (standardError === 0) {
+                        pValue = 0;
+                    } else {
+                        const tStatistic = slope / standardError;
+                        if (Number.isFinite(tStatistic)) {
+                            const cdf = studentTCDF(Math.abs(tStatistic), df);
+                            if (!Number.isNaN(cdf)) {
+                                pValue = Math.max(0, Math.min(1, 2 * (1 - cdf)));
+                            }
+                        }
+                    }
+                }
+            }
+
+            const xValues = validPoints.map(point => point.x);
             const minX = Math.min(...xValues);
             const maxX = Math.max(...xValues);
             if (!Number.isFinite(minX) || !Number.isFinite(maxX) || minX === maxX) {
                 return null;
             }
 
-            const firstPoint = { x: minX, y: regression.slope * minX + regression.intercept };
-            const secondPoint = { x: maxX, y: regression.slope * maxX + regression.intercept };
+            return { slope, intercept, rSquared, pValue, minX, maxX };
+        };
+
+        const formatCoefficient = value => {
+            if (!Number.isFinite(value)) {
+                return 'N/A';
+            }
+            const absValue = Math.abs(value);
+            if (absValue !== 0 && (absValue < 0.001 || absValue >= 1000)) {
+                return value.toExponential(3);
+            }
+            return value.toFixed(3);
+        };
+
+        const formatPValue = value => {
+            if (value === null || !Number.isFinite(value)) {
+                return 'N/A';
+            }
+            if (value < 1e-4) {
+                return '< 1e-4';
+            }
+            return value.toFixed(4);
+        };
+
+        const formatRegressionFormula = regression => {
+            if (!regression || !Number.isFinite(regression.slope) || !Number.isFinite(regression.intercept)) {
+                return 'Formula unavailable';
+            }
+            const slopeText = formatCoefficient(regression.slope);
+            const intercept = regression.intercept;
+            const interceptAbs = Math.abs(intercept);
+            const interceptText = formatCoefficient(interceptAbs);
+            const sign = intercept >= 0 ? ' + ' : ' - ';
+            return `y = ${slopeText}x${sign}${interceptText}`;
+        };
+
+        const updateRegressionStats = (elementId, regression) => {
+            const element = document.getElementById(elementId);
+            if (!element) {
+                return;
+            }
+            if (!regression) {
+                element.textContent = 'Insufficient data for regression.';
+                return;
+            }
+
+            const formula = formatRegressionFormula(regression);
+            const rSquaredText = Number.isFinite(regression.rSquared)
+                ? regression.rSquared.toFixed(3)
+                : 'N/A';
+            const pValueText = formatPValue(regression.pValue);
+
+            element.innerHTML = `<strong>Formula:</strong> ${formula} &nbsp;|&nbsp; <strong>R²:</strong> ${rSquaredText} &nbsp;|&nbsp; <strong>p-value:</strong> ${pValueText}`;
+        };
+
+        const regressionLineDataset = (points, color, label) => {
+            const regression = ordinaryLeastSquares(points);
+            if (!regression) {
+                return { dataset: null, regression: null };
+            }
+
+            const firstPoint = { x: regression.minX, y: regression.slope * regression.minX + regression.intercept };
+            const secondPoint = { x: regression.maxX, y: regression.slope * regression.maxX + regression.intercept };
 
             return {
-                type: 'line',
-                label,
-                data: [firstPoint, secondPoint],
-                borderColor: color,
-                borderWidth: 2,
-                fill: false,
-                pointRadius: 0,
-                pointHoverRadius: 0,
-                hitRadius: 0,
-                tension: 0,
-                borderDash: [6, 4]
+                dataset: {
+                    type: 'line',
+                    label,
+                    data: [firstPoint, secondPoint],
+                    borderColor: color,
+                    borderWidth: 2,
+                    fill: false,
+                    pointRadius: 0,
+                    pointHoverRadius: 0,
+                    hitRadius: 0,
+                    tension: 0,
+                    borderDash: [6, 4]
+                },
+                regression
             };
         };
 
@@ -986,15 +1162,16 @@ html_content += f"""
             pointHoverRadius: context => Math.min(14, 5 + Math.sqrt(context.raw.total || 0))
         }];
 
-        const journalRegressionDataset = regressionLineDataset(
+        const journalRegressionResult = regressionLineDataset(
             journalScatterPoints,
             '#D84315',
-            'Theil-Sen Regression'
+            'Ordinary Least Squares'
         );
 
-        if (journalRegressionDataset) {
-            journalDatasets.push(journalRegressionDataset);
+        if (journalRegressionResult.dataset) {
+            journalDatasets.push(journalRegressionResult.dataset);
         }
+        updateRegressionStats('journalRegressionStats', journalRegressionResult.regression);
 
         const journalScatterCtx = document.getElementById('journalScatterChart').getContext('2d');
         new Chart(journalScatterCtx, {
@@ -1050,15 +1227,16 @@ html_content += f"""
             pointHoverRadius: context => Math.min(14, 5 + Math.sqrt(context.raw.total || 0))
         }];
 
-        const yearRegressionDataset = regressionLineDataset(
+        const yearRegressionResult = regressionLineDataset(
             yearScatterPoints,
             '#1B5E20',
-            'Theil-Sen Regression'
+            'Ordinary Least Squares'
         );
 
-        if (yearRegressionDataset) {
-            yearDatasets.push(yearRegressionDataset);
+        if (yearRegressionResult.dataset) {
+            yearDatasets.push(yearRegressionResult.dataset);
         }
+        updateRegressionStats('yearRegressionStats', yearRegressionResult.regression);
 
         const yearScatterCtx = document.getElementById('yearScatterChart').getContext('2d');
         new Chart(yearScatterCtx, {
