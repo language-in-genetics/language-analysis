@@ -315,6 +315,7 @@ execute_query("""
 term_year_rows = cursor.fetchall()
 
 term_year_data = []
+term_proportion_by_year = []
 by_year = []
 
 
@@ -344,6 +345,22 @@ for row in term_year_rows:
         'other_pct': pct(other_count, total),
         'any_pct': pct(any_count, total)
     })
+
+    terminology_total = (
+        caucasian_count
+        + white_count
+        + european_count
+        + other_count
+    )
+
+    if terminology_total:
+        term_proportion_by_year.append({
+            'year': row['year'],
+            'caucasian_prop': caucasian_count / terminology_total,
+            'white_prop': white_count / terminology_total,
+            'european_prop': european_count / terminology_total,
+            'other_prop': other_count / terminology_total,
+        })
 
     by_year.append({
         'year': row['year'],
@@ -665,6 +682,11 @@ html_content += f"""
             <canvas id="termOverlayChart"></canvas>
         </div>
 
+        <h2>Share of Racial Terminology Mentions</h2>
+        <div class="chart-container">
+            <canvas id="termDistributionChart"></canvas>
+        </div>
+
         <div class="chart-grid">
             <div class="chart-container">
                 <h3>Caucasian Terminology</h3>
@@ -717,6 +739,7 @@ html_content += f"""
 
     <script>
         const termYearData = """ + json.dumps(term_year_data, default=json_default) + """;
+        const termProportionData = """ + json.dumps(term_proportion_by_year, default=json_default) + """;
         const journalScatterData = """ + json.dumps(journal_scatter_data, default=json_default) + """;
         const yearScatterData = """ + json.dumps(year_scatter_data, default=json_default) + """;
         const byYearData = """ + json.dumps(by_year, default=json_default) + """;
@@ -828,6 +851,73 @@ html_content += f"""
                 }
             }
         });
+
+        // Terminology distribution chart
+        const termDistributionCanvas = document.getElementById('termDistributionChart');
+        if (termDistributionCanvas && Array.isArray(termProportionData)) {
+            const termDistributionCtx = termDistributionCanvas.getContext('2d');
+            const distributionLabels = termProportionData.map(d => d.year);
+            const distributionConfigs = [
+                { key: 'caucasian_prop', label: 'Caucasian', color: '#F44336', background: 'rgba(244, 67, 54, 0.5)' },
+                { key: 'white_prop', label: 'White', color: '#FF9800', background: 'rgba(255, 152, 0, 0.5)' },
+                { key: 'european_prop', label: 'European', color: '#2196F3', background: 'rgba(33, 150, 243, 0.5)' },
+                { key: 'other_prop', label: 'Other', color: '#9C27B0', background: 'rgba(156, 39, 176, 0.5)' }
+            ];
+
+            const distributionDatasets = distributionConfigs.map(cfg => ({
+                label: cfg.label,
+                data: termProportionData.map(d => typeof d[cfg.key] === 'number' ? d[cfg.key] : 0),
+                borderColor: cfg.color,
+                backgroundColor: cfg.background,
+                pointRadius: 2,
+                pointHoverRadius: 4,
+                tension: 0.2,
+                fill: 'origin',
+                stack: 'terminology-share'
+            }));
+
+            new Chart(termDistributionCtx, {
+                type: 'line',
+                data: {
+                    labels: distributionLabels,
+                    datasets: distributionDatasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: { display: true, position: 'bottom' },
+                        tooltip: {
+                            callbacks: {
+                                label: context => {
+                                    const value = typeof context.parsed.y === 'number' ? context.parsed.y : 0;
+                                    return context.dataset.label + ': ' + (value * 100).toFixed(2) + '%';
+                                }
+                            }
+                        }
+                    },
+                    interaction: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    scales: {
+                        x: {
+                            stacked: true,
+                            title: { display: true, text: 'Year' }
+                        },
+                        y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            max: 1,
+                            ticks: {
+                                callback: value => (value * 100).toFixed(0) + '%'
+                            },
+                            title: { display: true, text: 'Share of racial terminology mentions' }
+                        }
+                    }
+                }
+            });
+        }
 
         function renderPercentLineChart(canvasId, label, dataKey, color, background, options = {}) {
             const canvas = document.getElementById(canvasId);
