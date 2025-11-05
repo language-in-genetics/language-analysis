@@ -890,7 +890,7 @@ html_content += f"""
                         tooltip: {
                             callbacks: {
                                 label: context => {
-                                    const value = typeof context.parsed.y === 'number' ? context.parsed.y : 0;
+                                    const value = typeof context.raw === 'number' ? context.raw : 0;
                                     return context.dataset.label + ': ' + (value * 100).toFixed(2) + '%';
                                 }
                             }
