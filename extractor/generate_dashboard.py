@@ -323,6 +323,43 @@ def pct(part, whole):
     return round((part / whole) * 100, 4) if whole else 0.0
 
 
+def calculate_centered_rolling_average(data, key, window_size=5):
+    """
+    Calculate centered rolling average for a given key in the data.
+
+    Args:
+        data: List of dictionaries containing year and values
+        key: The key to calculate rolling average for
+        window_size: Size of the rolling window (default 5 for 5-year)
+
+    Returns:
+        List of dictionaries with year and smoothed value
+    """
+    if not data or window_size < 1:
+        return []
+
+    result = []
+    half_window = window_size // 2
+
+    for i, item in enumerate(data):
+        # Calculate window bounds
+        start_idx = max(0, i - half_window)
+        end_idx = min(len(data), i + half_window + 1)
+
+        # Extract values in window
+        window_values = [data[j][key] for j in range(start_idx, end_idx) if key in data[j]]
+
+        # Calculate average
+        avg_value = sum(window_values) / len(window_values) if window_values else 0.0
+
+        result.append({
+            'year': item['year'],
+            f'{key}_smoothed': round(avg_value, 4)
+        })
+
+    return result
+
+
 for row in term_year_rows:
     total = row['total_count'] or 0
     caucasian_count = row['caucasian_count'] or 0
@@ -367,6 +404,14 @@ for row in term_year_rows:
         'count': any_count,
         'total_articles': total
     })
+
+# Calculate smoothed trends using 5-year centered rolling average
+term_smoothed_data = {
+    'caucasian': calculate_centered_rolling_average(term_year_data, 'caucasian_pct', window_size=5),
+    'white': calculate_centered_rolling_average(term_year_data, 'white_pct', window_size=5),
+    'european': calculate_centered_rolling_average(term_year_data, 'european_pct', window_size=5),
+    'other': calculate_centered_rolling_average(term_year_data, 'other_pct', window_size=5)
+}
 
 # Results by journal and year
 execute_query("""
@@ -691,18 +736,22 @@ html_content += f"""
             <div class="chart-container">
                 <h3>Caucasian Terminology</h3>
                 <canvas id="caucasianChart" height="280"></canvas>
+                <canvas id="caucasianTrendChart" height="200"></canvas>
             </div>
             <div class="chart-container">
                 <h3>White Terminology</h3>
                 <canvas id="whiteChart" height="280"></canvas>
+                <canvas id="whiteTrendChart" height="200"></canvas>
             </div>
             <div class="chart-container">
                 <h3>European Terminology</h3>
                 <canvas id="europeanChart" height="280"></canvas>
+                <canvas id="europeanTrendChart" height="200"></canvas>
             </div>
             <div class="chart-container">
                 <h3>Other Terminology</h3>
                 <canvas id="otherChart" height="280"></canvas>
+                <canvas id="otherTrendChart" height="200"></canvas>
             </div>
         </div>
 
@@ -744,6 +793,7 @@ html_content += f"""
         const yearScatterData = """ + json.dumps(year_scatter_data, default=json_default) + """;
         const byYearData = """ + json.dumps(by_year, default=json_default) + """;
         const byJournalYearData = """ + json.dumps(by_journal_year_final, default=json_default) + """;
+        const termSmoothedData = """ + json.dumps(term_smoothed_data, default=json_default) + """;
 
         // Year chart
         const yearCtx = document.getElementById('yearChart').getContext('2d');
@@ -972,11 +1022,77 @@ html_content += f"""
             });
         }
 
-        renderPercentLineChart('caucasianChart', 'Caucasian Terminology', 'caucasian_pct', '#F44336', 'rgba(244, 67, 54, 0.18)', { yMax: 4 });
-        renderPercentLineChart('whiteChart', 'White Terminology', 'white_pct', '#FF9800', 'rgba(255, 152, 0, 0.2)', { yMax: 4 });
-        renderPercentLineChart('europeanChart', 'European Terminology', 'european_pct', '#2196F3', 'rgba(33, 150, 243, 0.18)', { yMax: 4 });
+        function renderSmoothedTrendChart(canvasId, label, smoothedData, dataKey, color, options = {}) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas || !smoothedData || !Array.isArray(smoothedData)) return;
+            const ctx = canvas.getContext('2d');
+
+            const years = smoothedData.map(d => d.year);
+            const values = smoothedData.map(d => typeof d[dataKey] === 'number' ? d[dataKey] : 0);
+            const maxValue = values.length ? Math.max(...values) : 0;
+            const paddedMax = maxValue > 0 ? Math.min(100, Math.ceil(maxValue / 5) * 5 + 5) : 10;
+            const yMax = typeof options.yMax === 'number' ? options.yMax : null;
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: years,
+                    datasets: [{
+                        label: label + ' (5-year smoothed)',
+                        data: values,
+                        borderColor: color,
+                        backgroundColor: 'transparent',
+                        tension: 0.4,
+                        fill: false,
+                        borderWidth: 3,
+                        pointRadius: 0,
+                        pointHoverRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: context => 'Smoothed trend: ' + context.parsed.y.toFixed(2) + '%'
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: '5-Year Centered Rolling Average',
+                            font: { size: 12 },
+                            color: '#666'
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            suggestedMax: yMax ?? paddedMax,
+                            ticks: { callback: value => value + '%' },
+                            title: { display: false }
+                        },
+                        x: {
+                            title: { display: false },
+                            ticks: { maxRotation: 45, minRotation: 45 }
+                        }
+                    }
+                }
+            });
+        }
+
+        renderPercentLineChart('caucasianChart', 'Caucasian Terminology', 'caucasian_pct', '#F44336', 'rgba(244, 67, 54, 0.18)', { yMax: 2.5 });
+        renderPercentLineChart('whiteChart', 'White Terminology', 'white_pct', '#FF9800', 'rgba(255, 152, 0, 0.2)', { yMax: 2.5 });
+        renderPercentLineChart('europeanChart', 'European Terminology', 'european_pct', '#2196F3', 'rgba(33, 150, 243, 0.18)', { yMax: 2.5 });
         renderPercentLineChart('otherChart', 'Other Terminology', 'other_pct', '#9C27B0', 'rgba(156, 39, 176, 0.18)', { yMax: 8 });
         renderPercentLineChart('anyProportionChart', 'Any Terminology', 'any_pct', '#4CAF50', 'rgba(76, 175, 80, 0.18)', { yTitle: 'Percent of processed articles' });
+
+        // Render smoothed trend charts
+        renderSmoothedTrendChart('caucasianTrendChart', 'Caucasian', termSmoothedData.caucasian, 'caucasian_pct_smoothed', '#F44336', { yMax: 2.5 });
+        renderSmoothedTrendChart('whiteTrendChart', 'White', termSmoothedData.white, 'white_pct_smoothed', '#FF9800', { yMax: 2.5 });
+        renderSmoothedTrendChart('europeanTrendChart', 'European', termSmoothedData.european, 'european_pct_smoothed', '#2196F3', { yMax: 2.5 });
+        renderSmoothedTrendChart('otherTrendChart', 'Other', termSmoothedData.other, 'other_pct_smoothed', '#9C27B0', { yMax: 8 });
 
         const logGamma = z => {
             const coefficients = [
