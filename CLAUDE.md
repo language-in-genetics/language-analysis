@@ -219,6 +219,11 @@ SELECT name, enabled FROM languageingenetics.journals ORDER BY name;
   - `id` (serial primary key)
   - `openai_batch_id` (text) - OpenAI's batch identifier
   - `when_created`, `when_sent`, `when_retrieved` (timestamps)
+- **focused_journals_view** (VIEW): Combines articles from enabled journals with their analysis results
+  - Joins `raw_text_data`, `journals`, and `files` tables
+  - Only shows articles from journals where `enabled = true`
+  - Provides easy access to article metadata, analysis results, and terminology usage
+  - See `database/view_usage_examples.md` for query examples
 
 ## Development Notes
 
