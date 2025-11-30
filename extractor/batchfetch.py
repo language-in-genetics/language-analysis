@@ -98,8 +98,15 @@ for batch_row in batches:
             if record['response']['status_code'] != 200:
                 continue
 
+            # Check if tool_calls exists (model might finish without using tools)
+            message = record['response']['body']['choices'][0]['message']
+            if 'tool_calls' not in message or not message['tool_calls']:
+                # Model didn't use the tool - skip this record but don't count as error
+                # The record will remain unprocessed and can be resubmitted
+                continue
+
             # Extract the tool call arguments
-            arguments = json.loads(record['response']['body']['choices'][0]['message']['tool_calls'][0]['function']['arguments'])
+            arguments = json.loads(message['tool_calls'][0]['function']['arguments'])
 
             # Get the article_id (which was used as the custom_id)
             article_id = int(record['custom_id'])

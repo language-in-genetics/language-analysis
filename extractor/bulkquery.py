@@ -251,6 +251,7 @@ if journals_to_query:
             )::jsonb as data
         FROM public.raw_text_data r
         WHERE regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb
+          AND regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->>'type' != 'journal-issue'
           AND NOT EXISTS (
               SELECT 1
               FROM languageingenetics.files f
@@ -273,7 +274,8 @@ else:
             E'\t', '    ', 'g'
         )::jsonb as data
     FROM public.raw_text_data r
-    WHERE NOT EXISTS (
+    WHERE regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->>'type' != 'journal-issue'
+      AND NOT EXISTS (
         SELECT 1
         FROM languageingenetics.files f
         WHERE f.article_id = r.id
