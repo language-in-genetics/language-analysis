@@ -195,8 +195,6 @@ func defaultImportedBy() string {
 
 func ensureSchema(db *sql.DB) error {
 	schema := `
-CREATE SCHEMA IF NOT EXISTS languageingenetics;
-
 CREATE TABLE IF NOT EXISTS languageingenetics.import_runs (
     id BIGSERIAL PRIMARY KEY,
     run_label TEXT NOT NULL UNIQUE,
@@ -400,45 +398,87 @@ func importOneGzipFile(filename string, opts importOptions, processor *batchProc
 }
 
 func importFromRawText(db *sql.DB, opts importOptions, processor *batchProcessor) error {
-	rows, err := db.Query(`SELECT id, filesrc FROM public.raw_text_data ORDER BY id`)
-	if err != nil {
-		return fmt.Errorf("error reading public.raw_text_data: %w", err)
+	lastID := int64(0)
+	queryBatchSize := opts.batchSize
+	if queryBatchSize < 1000 {
+		queryBatchSize = 1000
 	}
-	defer rows.Close()
 
-	for rows.Next() {
-		var rawID int64
-		var raw string
-		if err := rows.Scan(&rawID, &raw); err != nil {
-			return fmt.Errorf("error scanning public.raw_text_data row: %w", err)
+	for {
+		currentBatchSize := queryBatchSize
+		if opts.limit > 0 {
+			remaining := opts.limit - processor.stats.seen
+			if remaining <= 0 {
+				break
+			}
+			if remaining < currentBatchSize {
+				currentBatchSize = remaining
+			}
 		}
 
-		processor.stats.seen++
-		record, rejectReason, err := parseRecord(raw, fmt.Sprintf("%d", rawID))
+		rows, err := db.Query(
+			`SELECT id, filesrc
+             FROM public.raw_text_data
+             WHERE id > $1
+             ORDER BY id
+             LIMIT $2`,
+			lastID,
+			currentBatchSize,
+		)
 		if err != nil {
-			return fmt.Errorf("error parsing raw_text_data id %d: %w", rawID, err)
+			return fmt.Errorf("error reading public.raw_text_data after id %d: %w", lastID, err)
 		}
-		if rejectReason != "" {
-			if err := recordRejection(processor.db, processor.runID, record.sourceRef, rejectReason, raw); err != nil {
+
+		rowsInBatch := 0
+		for rows.Next() {
+			var rawID int64
+			var raw string
+			if err := rows.Scan(&rawID, &raw); err != nil {
+				rows.Close()
+				return fmt.Errorf("error scanning public.raw_text_data row: %w", err)
+			}
+			lastID = rawID
+			rowsInBatch++
+
+			processor.stats.seen++
+			record, rejectReason, err := parseRecord(raw, fmt.Sprintf("%d", rawID))
+			if err != nil {
+				rows.Close()
+				return fmt.Errorf("error parsing raw_text_data id %d: %w", rawID, err)
+			}
+			if rejectReason != "" {
+				if err := recordRejection(processor.db, processor.runID, record.sourceRef, rejectReason, raw); err != nil {
+					rows.Close()
+					return err
+				}
+				updateRejectStats(processor.stats, rejectReason)
+				if limitReached(processor.stats, opts.limit) {
+					break
+				}
+				continue
+			}
+			if err := processor.add(*record); err != nil {
+				rows.Close()
 				return err
 			}
-			updateRejectStats(processor.stats, rejectReason)
 			if limitReached(processor.stats, opts.limit) {
 				break
 			}
-			continue
 		}
-		if err := processor.add(*record); err != nil {
-			return err
+
+		if err := rows.Err(); err != nil {
+			rows.Close()
+			return fmt.Errorf("error iterating public.raw_text_data: %w", err)
 		}
-		if limitReached(processor.stats, opts.limit) {
+		if err := rows.Close(); err != nil {
+			return fmt.Errorf("error closing raw_text_data batch: %w", err)
+		}
+
+		if rowsInBatch == 0 || limitReached(processor.stats, opts.limit) {
 			break
 		}
 	}
 
-	if err := rows.Err(); err != nil {
-		return fmt.Errorf("error iterating public.raw_text_data: %w", err)
-	}
 	return nil
 }
 
