@@ -1,16 +1,17 @@
 .PHONY: all clean test lint dev-deps
 
-# Binary name
-BINARY_NAME=pgjsontool
-# Build directory
 BUILD_DIR=bin
 
-all: bin/pgjsontool
+all: bin/pgjsontool bin/crossrefimport
 	@echo "Build complete"
 
 bin/pgjsontool: cmd/pgjsontool/main.go
 	@mkdir -p bin
 	go build -o bin/pgjsontool ./cmd/pgjsontool
+
+bin/crossrefimport: cmd/crossrefimport/main.go
+	@mkdir -p bin
+	go build -o bin/crossrefimport ./cmd/crossrefimport
 
 clean:
 	@echo "Cleaning..."

@@ -5,9 +5,17 @@ A research project analyzing racial/ethnic terminology usage in genetics journal
 ## Architecture
 
 - **PostgreSQL Database**: Stores CrossRef article metadata and analysis results
-- **Go Tools** (`cmd/pgjsontool`): Bulk import tool for CrossRef dump files
+- **Go Tools** (`cmd/pgjsontool`, `cmd/crossrefimport`): Legacy bulk loader plus incremental importer
 - **Python Pipeline** (`extractor/`): OpenAI batch processing for content analysis
 - **Automated Dashboard**: Generates static HTML dashboards showing analysis results
+
+## Import Status
+
+The current `database/import.sh` path is the legacy one-time bulk loader used for the initial March 2025 ingest. It is not the right shape for yearly Crossref refreshes, because annual dumps are full snapshots and the downstream analysis tables currently depend on `raw_text_data.id`.
+
+The redesign plan for incremental yearly imports is documented in [database/incremental_import_redesign.md](database/incremental_import_redesign.md).
+
+The new incremental importer is `bin/crossrefimport`. It imports numbered `*.jsonl.gz` Crossref snapshot files into versioned tables under `languageingenetics`, and it also has a `-from-raw-text` mode to backfill the existing `public.raw_text_data` corpus into the new schema.
 
 ## Quick Start
 
@@ -112,8 +120,11 @@ INSERT INTO languageingenetics.journals (name) VALUES ('New Journal Name');
 ## Development
 
 ```bash
-# Build Go tools (only needed for importing new data)
+# Build Go tools
 make all
+
+# Build only the incremental importer
+make bin/crossrefimport
 
 # Run tests
 make test

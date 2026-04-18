@@ -34,7 +34,7 @@ The project uses PostgreSQL for all data storage. Database connection uses envir
 The initial CrossRef database import was performed using `database/import.sh`, which directly loaded the entire CrossRef database dump into `public.raw_text_data` using PostgreSQL's COPY command. Each row in `raw_text_data` represents a single CrossRef work (article/paper), with the JSON metadata stored as text in the `filesrc` column.
 
 **Future Updates (2026+):**
-The `pgjsontool` program needs to be updated to support incremental loading of new CrossRef data without destroying existing records in `public.raw_text_data`. Currently, it is designed for initial bulk imports only.
+The import pipeline needs to move from the legacy one-time bulk loader to a stable DOI-based incremental design so yearly Crossref snapshots can be added without destroying existing references. See `database/incremental_import_redesign.md`.
 
 **Schema Layout:**
 - **public schema**: Contains raw CrossRef data
@@ -79,12 +79,13 @@ See `database/grant_permissions.sql` for the complete setup script.
 
 ### Building the Go tools
 ```bash
-make all                    # Build pgjsontool
+make all                    # Build pgjsontool and crossrefimport
 make bin/pgjsontool        # Build pgjsontool
+make bin/crossrefimport    # Build the incremental importer
 make clean                 # Remove built binaries
 ```
 
-Note: `pgjsontool` is only needed if you're importing data from CrossRef dump files. The current workflow reads directly from the existing `public.raw_text_data` table.
+Note: `pgjsontool` is the legacy importer and does not match the current `*.jsonl.gz` snapshot shape. Use `crossrefimport` for incremental yearly imports and for backfilling the existing `public.raw_text_data` table into the new versioned schema.
 
 ### Testing and Linting
 ```bash
@@ -95,12 +96,15 @@ make dev-deps             # Install development dependencies
 
 ### Running the Data Extraction Pipeline (if needed)
 
-**Note:** The data already exists in `public.raw_text_data`. You only need this if importing new CrossRef dump files.
+**Note:** The data already exists in `public.raw_text_data`. For yearly refreshes, use the incremental importer.
 
 ```bash
-# Load articles directly into PostgreSQL
+# Import a new Crossref snapshot into the incremental schema
 export PGDATABASE=crossref
-./bin/pgjsontool -dir "crossref-dump-directory"
+./bin/crossrefimport -run-label crossref-2026-annual -dir "/crossref/March 2026 Public Data File from Crossref"
+
+# Backfill the legacy raw_text_data corpus into the incremental schema
+./bin/crossrefimport -run-label crossref-2025-backfill -from-raw-text
 ```
 
 ### Python Analysis Workflow

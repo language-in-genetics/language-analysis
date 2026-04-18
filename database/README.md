@@ -4,6 +4,8 @@
 
 This project uses PostgreSQL exclusively for all data storage, including article metadata, batch tracking, and OpenAI analysis results.
 
+The current import path in `database/import.sh` is the legacy initial-load path. The proposed redesign for yearly incremental Crossref imports is documented in [incremental_import_redesign.md](incremental_import_redesign.md).
+
 ## PostgreSQL Configuration
 
 **Database:** `crossref` (set via `PGDATABASE` environment variable)
