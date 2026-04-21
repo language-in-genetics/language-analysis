@@ -15,7 +15,7 @@ The current `database/import.sh` path is the legacy one-time bulk loader used fo
 
 The redesign plan for incremental yearly imports is documented in [database/incremental_import_redesign.md](database/incremental_import_redesign.md).
 
-The new incremental importer is `bin/crossrefimport`. It imports numbered `*.jsonl.gz` Crossref snapshot files into versioned tables under `languageingenetics`, and it also has a `-from-raw-text` mode to backfill the existing `public.raw_text_data` corpus into the new schema.
+The new incremental importer is `bin/crossrefimport`. It imports numbered `*.jsonl.gz` Crossref snapshot files into canonical versioned tables under `public.crossref_*`, and it also has a `-from-raw-text` mode to backfill the existing `public.raw_text_data` corpus into that schema.
 
 ## Quick Start
 

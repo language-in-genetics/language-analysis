@@ -86,10 +86,10 @@ The redesign separates three concerns:
 
 ### 1. Import Runs
 
-Create a run table to record each ingest attempt.
+Create a run table to record each ingest attempt. These Crossref corpus tables are generic infrastructure, so they should live in `public` with explicit `crossref_` names rather than in `languageingenetics`.
 
 ```sql
-CREATE TABLE languageingenetics.import_runs (
+CREATE TABLE public.crossref_import_runs (
     id BIGSERIAL PRIMARY KEY,
     run_label TEXT NOT NULL UNIQUE,
     source_type TEXT NOT NULL,          -- annual_dump, monthly_snapshot, rest_delta
@@ -114,18 +114,18 @@ Examples of `run_label`:
 Create one stable row per imported work.
 
 ```sql
-CREATE TABLE languageingenetics.works (
+CREATE TABLE public.crossref_works (
     id BIGSERIAL PRIMARY KEY,
     normalized_doi TEXT,
     original_doi TEXT,
-    first_import_run_id BIGINT NOT NULL REFERENCES languageingenetics.import_runs(id),
-    latest_import_run_id BIGINT NOT NULL REFERENCES languageingenetics.import_runs(id),
+    first_import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
+    latest_import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE UNIQUE INDEX works_normalized_doi_idx
-    ON languageingenetics.works(normalized_doi)
+CREATE UNIQUE INDEX crossref_works_normalized_doi_idx
+    ON public.crossref_works(normalized_doi)
     WHERE normalized_doi IS NOT NULL;
 ```
 
@@ -143,10 +143,10 @@ Rules:
 Store one row per distinct raw metadata payload seen for a work.
 
 ```sql
-CREATE TABLE languageingenetics.work_versions (
+CREATE TABLE public.crossref_work_versions (
     id BIGSERIAL PRIMARY KEY,
-    work_id BIGINT NOT NULL REFERENCES languageingenetics.works(id) ON DELETE CASCADE,
-    import_run_id BIGINT NOT NULL REFERENCES languageingenetics.import_runs(id),
+    work_id BIGINT NOT NULL REFERENCES public.crossref_works(id) ON DELETE CASCADE,
+    import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
     raw_json_text TEXT NOT NULL,
     payload_sha256 TEXT NOT NULL,
     title TEXT,
@@ -159,8 +159,8 @@ CREATE TABLE languageingenetics.work_versions (
     UNIQUE (work_id, payload_sha256)
 );
 
-CREATE UNIQUE INDEX work_versions_current_idx
-    ON languageingenetics.work_versions(work_id)
+CREATE UNIQUE INDEX crossref_work_versions_current_idx
+    ON public.crossref_work_versions(work_id)
     WHERE is_current;
 ```
 
@@ -176,10 +176,10 @@ Rules:
 During migration, keep a mapping from the old `public.raw_text_data.id` to the new work/version ids.
 
 ```sql
-CREATE TABLE languageingenetics.legacy_raw_text_map (
+CREATE TABLE public.crossref_legacy_raw_text_map (
     raw_text_data_id BIGINT PRIMARY KEY,
-    work_id BIGINT NOT NULL REFERENCES languageingenetics.works(id),
-    work_version_id BIGINT NOT NULL REFERENCES languageingenetics.work_versions(id)
+    work_id BIGINT NOT NULL REFERENCES public.crossref_works(id),
+    work_version_id BIGINT NOT NULL REFERENCES public.crossref_work_versions(id)
 );
 ```
 
@@ -190,9 +190,9 @@ This is the bridge that lets existing `files.article_id` data migrate safely.
 Rows that cannot be assigned a durable identity should not disappear silently.
 
 ```sql
-CREATE TABLE languageingenetics.import_rejections (
+CREATE TABLE public.crossref_import_rejections (
     id BIGSERIAL PRIMARY KEY,
-    import_run_id BIGINT NOT NULL REFERENCES languageingenetics.import_runs(id) ON DELETE CASCADE,
+    import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id) ON DELETE CASCADE,
     source_ref TEXT,
     reason TEXT NOT NULL,
     raw_json_text TEXT NOT NULL,
@@ -220,8 +220,8 @@ ALTER TABLE languageingenetics.files
 
 Then backfill and eventually enforce:
 
-- `work_id REFERENCES languageingenetics.works(id)`
-- `work_version_id REFERENCES languageingenetics.work_versions(id)`
+- `work_id REFERENCES public.crossref_works(id)`
+- `work_version_id REFERENCES public.crossref_work_versions(id)`
 
 Recommended semantics:
 
@@ -238,19 +238,20 @@ That allows the pipeline to answer:
 Downstream code should query a current-work view instead of the legacy raw table.
 
 ```sql
-CREATE VIEW languageingenetics.current_works AS
+CREATE VIEW public.crossref_current_works AS
 SELECT
     w.id AS work_id,
     v.id AS work_version_id,
-    w.doi,
+    w.normalized_doi,
+    w.original_doi,
     v.raw_json_text,
     v.title,
     v.abstract,
     v.journal_name,
     v.pub_year,
     v.record_type
-FROM languageingenetics.works w
-JOIN languageingenetics.work_versions v
+FROM public.crossref_works w
+JOIN public.crossref_work_versions v
   ON v.work_id = w.id
 WHERE v.is_current;
 ```
@@ -261,7 +262,7 @@ The dashboard, sampling scripts, and batch submission code should move to this v
 
 ### Step 1. Register the run
 
-Insert a row in `languageingenetics.import_runs` before touching data.
+Insert a row in `public.crossref_import_runs` before touching data.
 
 ### Step 2. Stream the snapshot into a staging table
 
@@ -293,10 +294,10 @@ This keeps the import resumable and lets SQL handle the final merges in batches.
 
 For each distinct DOI in staging:
 
-- insert a new row into `languageingenetics.works` if missing
+- insert a new row into `public.crossref_works` if missing
 - otherwise update `latest_import_run_id`
 
-Rows without DOI should be written to `languageingenetics.import_rejections` and skipped.
+Rows without DOI should be written to `public.crossref_import_rejections` and skipped.
 
 ### Step 4. Insert only changed versions
 
@@ -312,8 +313,8 @@ Each work should record whether it appeared in the newest full snapshot.
 
 Minimum useful state:
 
-- `latest_import_run_id` in `works`
-- `is_current` in `work_versions`
+- `latest_import_run_id` in `crossref_works`
+- `is_current` in `crossref_work_versions`
 
 Optional later addition:
 
@@ -364,12 +365,12 @@ That gets the data into the correct long-term location even though the active tr
 
 Add:
 
-- `import_runs`
-- `works`
-- `work_versions`
-- `legacy_raw_text_map`
-- `import_rejections`
-- `current_works` view
+- `public.crossref_import_runs`
+- `public.crossref_works`
+- `public.crossref_work_versions`
+- `public.crossref_legacy_raw_text_map`
+- `public.crossref_import_rejections`
+- `public.crossref_current_works` view
 
 Do this without removing `public.raw_text_data`.
 
@@ -377,14 +378,14 @@ Do this without removing `public.raw_text_data`.
 
 Treat the existing `public.raw_text_data` corpus as one historical import run:
 
-- create `import_runs` row `crossref-2025-annual`
-- populate `works`
-- populate `work_versions`
-- populate `legacy_raw_text_map`
+- create `crossref_import_runs` row `crossref-2025-annual`
+- populate `crossref_works`
+- populate `crossref_work_versions`
+- populate `crossref_legacy_raw_text_map`
 
 ### Phase 3. Backfill analysis references
 
-Add `work_id` and `work_version_id` to `languageingenetics.files`, then backfill them through `legacy_raw_text_map`.
+Add `work_id` and `work_version_id` to `languageingenetics.files`, then backfill them through `public.crossref_legacy_raw_text_map`.
 
 Keep `article_id` temporarily so existing scripts still run during the migration.
 
@@ -399,7 +400,7 @@ Update:
 - `focused_journals_view`
 - `journals_mv`
 
-They should read from `languageingenetics.current_works` or from views built on it.
+They should read from `public.crossref_current_works` or from views built on it.
 
 ### Phase 5. Deprecate the legacy raw table
 

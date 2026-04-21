@@ -34,11 +34,12 @@ The project uses PostgreSQL for all data storage. Database connection uses envir
 The initial CrossRef database import was performed using `database/import.sh`, which directly loaded the entire CrossRef database dump into `public.raw_text_data` using PostgreSQL's COPY command. Each row in `raw_text_data` represents a single CrossRef work (article/paper), with the JSON metadata stored as text in the `filesrc` column.
 
 **Future Updates (2026+):**
-The import pipeline needs to move from the legacy one-time bulk loader to a stable DOI-based incremental design so yearly Crossref snapshots can be added without destroying existing references. See `database/incremental_import_redesign.md`.
+The import pipeline needs to move from the legacy one-time bulk loader to a stable DOI-based incremental design so yearly Crossref snapshots can be added without destroying existing references. The generic Crossref corpus tables live under `public.crossref_*`, while `languageingenetics` keeps project-specific analysis tables. See `database/incremental_import_redesign.md`.
 
 **Schema Layout:**
 - **public schema**: Contains raw CrossRef data
   - `raw_text_data` table: Raw JSON text in `filesrc` column (requires SELECT permission)
+  - `crossref_import_runs`, `crossref_works`, `crossref_work_versions`, `crossref_legacy_raw_text_map`, `crossref_import_rejections`, `crossref_current_works`: Generic incremental Crossref import tables and view
 - **languageingenetics schema**: Read-write access for processed data
   - `journals` table: List of journals to process with enable/disable flags
   - `files` table: OpenAI analysis results
@@ -57,6 +58,7 @@ psql
 
 # View tables
 \dt public.raw_text_data
+\dt public.crossref_*
 \dt languageingenetics.*
 
 # Manage journals
@@ -85,7 +87,7 @@ make bin/crossrefimport    # Build the incremental importer
 make clean                 # Remove built binaries
 ```
 
-Note: `pgjsontool` is the legacy importer and does not match the current `*.jsonl.gz` snapshot shape. Use `crossrefimport` for incremental yearly imports and for backfilling the existing `public.raw_text_data` table into the new versioned schema.
+Note: `pgjsontool` is the legacy importer and does not match the current `*.jsonl.gz` snapshot shape. Use `crossrefimport` for incremental yearly imports and for backfilling the existing `public.raw_text_data` table into the canonical `public.crossref_*` schema.
 
 ### Testing and Linting
 ```bash

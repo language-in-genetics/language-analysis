@@ -195,7 +195,7 @@ func defaultImportedBy() string {
 
 func ensureSchema(db *sql.DB) error {
 	schema := `
-CREATE TABLE IF NOT EXISTS languageingenetics.import_runs (
+CREATE TABLE IF NOT EXISTS public.crossref_import_runs (
     id BIGSERIAL PRIMARY KEY,
     run_label TEXT NOT NULL UNIQUE,
     source_type TEXT NOT NULL,
@@ -208,24 +208,24 @@ CREATE TABLE IF NOT EXISTS languageingenetics.import_runs (
     notes TEXT
 );
 
-CREATE TABLE IF NOT EXISTS languageingenetics.works (
+CREATE TABLE IF NOT EXISTS public.crossref_works (
     id BIGSERIAL PRIMARY KEY,
     normalized_doi TEXT,
     original_doi TEXT,
-    first_import_run_id BIGINT NOT NULL REFERENCES languageingenetics.import_runs(id),
-    latest_import_run_id BIGINT NOT NULL REFERENCES languageingenetics.import_runs(id),
+    first_import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
+    latest_import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE UNIQUE INDEX IF NOT EXISTS works_normalized_doi_idx
-    ON languageingenetics.works(normalized_doi)
+CREATE UNIQUE INDEX IF NOT EXISTS crossref_works_normalized_doi_idx
+    ON public.crossref_works(normalized_doi)
     WHERE normalized_doi IS NOT NULL;
 
-CREATE TABLE IF NOT EXISTS languageingenetics.work_versions (
+CREATE TABLE IF NOT EXISTS public.crossref_work_versions (
     id BIGSERIAL PRIMARY KEY,
-    work_id BIGINT NOT NULL REFERENCES languageingenetics.works(id) ON DELETE CASCADE,
-    import_run_id BIGINT NOT NULL REFERENCES languageingenetics.import_runs(id),
+    work_id BIGINT NOT NULL REFERENCES public.crossref_works(id) ON DELETE CASCADE,
+    import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
     raw_json_text TEXT NOT NULL,
     payload_sha256 TEXT NOT NULL,
     title TEXT,
@@ -238,29 +238,29 @@ CREATE TABLE IF NOT EXISTS languageingenetics.work_versions (
     UNIQUE (work_id, payload_sha256)
 );
 
-CREATE UNIQUE INDEX IF NOT EXISTS work_versions_current_idx
-    ON languageingenetics.work_versions(work_id)
+CREATE UNIQUE INDEX IF NOT EXISTS crossref_work_versions_current_idx
+    ON public.crossref_work_versions(work_id)
     WHERE is_current;
 
-CREATE INDEX IF NOT EXISTS work_versions_work_payload_idx
-    ON languageingenetics.work_versions(work_id, payload_sha256);
+CREATE INDEX IF NOT EXISTS crossref_work_versions_work_payload_idx
+    ON public.crossref_work_versions(work_id, payload_sha256);
 
-CREATE TABLE IF NOT EXISTS languageingenetics.legacy_raw_text_map (
+CREATE TABLE IF NOT EXISTS public.crossref_legacy_raw_text_map (
     raw_text_data_id BIGINT PRIMARY KEY,
-    work_id BIGINT NOT NULL REFERENCES languageingenetics.works(id),
-    work_version_id BIGINT NOT NULL REFERENCES languageingenetics.work_versions(id)
+    work_id BIGINT NOT NULL REFERENCES public.crossref_works(id),
+    work_version_id BIGINT NOT NULL REFERENCES public.crossref_work_versions(id)
 );
 
-CREATE TABLE IF NOT EXISTS languageingenetics.import_rejections (
+CREATE TABLE IF NOT EXISTS public.crossref_import_rejections (
     id BIGSERIAL PRIMARY KEY,
-    import_run_id BIGINT NOT NULL REFERENCES languageingenetics.import_runs(id) ON DELETE CASCADE,
+    import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id) ON DELETE CASCADE,
     source_ref TEXT,
     reason TEXT NOT NULL,
     raw_json_text TEXT NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE OR REPLACE VIEW languageingenetics.current_works AS
+CREATE OR REPLACE VIEW public.crossref_current_works AS
 SELECT
     w.id AS work_id,
     v.id AS work_version_id,
@@ -272,8 +272,8 @@ SELECT
     v.journal_name,
     v.pub_year,
     v.record_type
-FROM languageingenetics.works w
-JOIN languageingenetics.work_versions v
+FROM public.crossref_works w
+JOIN public.crossref_work_versions v
   ON v.work_id = w.id
 WHERE v.is_current;
 `
@@ -284,7 +284,7 @@ WHERE v.is_current;
 func createImportRun(db *sql.DB, opts importOptions) (int64, error) {
 	var runID int64
 	err := db.QueryRow(
-		`INSERT INTO languageingenetics.import_runs (run_label, source_type, source_path, imported_by)
+		`INSERT INTO public.crossref_import_runs (run_label, source_type, source_path, imported_by)
          VALUES ($1, $2, $3, $4)
          RETURNING id`,
 		opts.runLabel,
@@ -310,7 +310,7 @@ func finalizeImportRun(db *sql.DB, runID int64, status string, stats importStats
 		stats.batches,
 	)
 	_, err := db.Exec(
-		`UPDATE languageingenetics.import_runs
+		`UPDATE public.crossref_import_runs
          SET status = $2, completed_at = now(), notes = $3
          WHERE id = $1`,
 		runID,
@@ -488,7 +488,7 @@ func limitReached(stats *importStats, limit int) bool {
 
 func recordRejection(db *sql.DB, runID int64, sourceRef, reason, rawJSON string) error {
 	_, err := db.Exec(
-		`INSERT INTO languageingenetics.import_rejections (import_run_id, source_ref, reason, raw_json_text)
+		`INSERT INTO public.crossref_import_rejections (import_run_id, source_ref, reason, raw_json_text)
          VALUES ($1, $2, $3, $4)`,
 		runID,
 		sourceRef,
@@ -697,7 +697,7 @@ WITH dedup AS (
     SELECT DISTINCT normalized_doi, original_doi
     FROM import_stage
 )
-INSERT INTO languageingenetics.works (
+INSERT INTO public.crossref_works (
     normalized_doi,
     original_doi,
     first_import_run_id,
@@ -734,20 +734,20 @@ SELECT
     current_v.payload_sha256 AS current_payload_sha256,
     existing_v.id AS existing_version_id
 FROM import_stage s
-JOIN languageingenetics.works w
-  ON w.normalized_doi = s.normalized_doi
-LEFT JOIN languageingenetics.work_versions current_v
-  ON current_v.work_id = w.id
- AND current_v.is_current
-LEFT JOIN languageingenetics.work_versions existing_v
-  ON existing_v.work_id = w.id
- AND existing_v.payload_sha256 = s.payload_sha256;
+	JOIN public.crossref_works w
+	  ON w.normalized_doi = s.normalized_doi
+	LEFT JOIN public.crossref_work_versions current_v
+	  ON current_v.work_id = w.id
+	 AND current_v.is_current
+	LEFT JOIN public.crossref_work_versions existing_v
+	  ON existing_v.work_id = w.id
+	 AND existing_v.payload_sha256 = s.payload_sha256;
 `); err != nil {
 		return fmt.Errorf("error creating stage_resolved: %w", err)
 	}
 
 	result, err := tx.Exec(`
-INSERT INTO languageingenetics.work_versions (
+INSERT INTO public.crossref_work_versions (
     work_id,
     import_run_id,
     raw_json_text,
@@ -794,7 +794,7 @@ WHERE current_version_id IS NULL
 	}
 
 	if _, err := tx.Exec(`
-UPDATE languageingenetics.work_versions
+UPDATE public.crossref_work_versions
 SET is_current = false
 WHERE is_current
   AND work_id IN (SELECT work_id FROM stage_changes);
@@ -803,7 +803,7 @@ WHERE is_current
 	}
 
 	if _, err := tx.Exec(`
-UPDATE languageingenetics.work_versions v
+UPDATE public.crossref_work_versions v
 SET is_current = true
 FROM stage_changes c
 WHERE v.work_id = c.work_id
@@ -814,7 +814,7 @@ WHERE v.work_id = c.work_id
 
 	if p.enableLegacyMap {
 		if _, err := tx.Exec(`
-INSERT INTO languageingenetics.legacy_raw_text_map (
+INSERT INTO public.crossref_legacy_raw_text_map (
     raw_text_data_id,
     work_id,
     work_version_id
@@ -824,7 +824,7 @@ SELECT DISTINCT ON (sr.source_ref)
     sr.work_id,
     v.id
 FROM stage_resolved sr
-JOIN languageingenetics.work_versions v
+JOIN public.crossref_work_versions v
   ON v.work_id = sr.work_id
  AND v.payload_sha256 = sr.payload_sha256
 WHERE sr.source_ref ~ '^[0-9]+$'
