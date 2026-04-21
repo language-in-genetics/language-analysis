@@ -12,7 +12,7 @@ This repo now includes a `merah`-style human-audit workflow for `lig.symmachus.o
 - [database/audit_schema.sql](/Users/gregb/Documents/devel/Word-Frequency-Analysis-/database/audit_schema.sql)
   - PostgreSQL tables and the `audit_article_status_view`.
 - [extractor/create_audit_batch.py](/Users/gregb/Documents/devel/Word-Frequency-Analysis-/extractor/create_audit_batch.py)
-  - Creates a reproducible positive/negative sample batch in PostgreSQL and seeds the local SQLite DB copy.
+  - Creates a reproducible label-specific audit batch in PostgreSQL and seeds the local SQLite DB copy.
 - [extractor/import_audit_reviews.py](/Users/gregb/Documents/devel/Word-Frequency-Analysis-/extractor/import_audit_reviews.py)
   - Imports the `merah` SQLite review state back into PostgreSQL.
 - [audit/sync_audit_db.sh](/Users/gregb/Documents/devel/Word-Frequency-Analysis-/audit/sync_audit_db.sh)
@@ -28,3 +28,13 @@ The intended split is:
 - PostgreSQL for canonical reporting, dashboard summaries, and anything cross-host or analysis-heavy.
 
 That keeps the reviewer-facing pages immediate without making the main project reporting depend on a live CGI-hosted SQLite query path.
+
+## Current Target Labels
+
+The audit batch generator and reviewer UI use the same target labels throughout:
+
+- `caucasian`
+- `white`
+- `european`
+- `other`
+- `none_of_these_labels`

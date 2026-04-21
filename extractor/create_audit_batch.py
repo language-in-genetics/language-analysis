@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Create a reproducible human-audit batch for positive and negative classifier hits.
+Create a reproducible human-audit batch for label-specific classifier results.
 
 This writes the sampled batch into:
 1. PostgreSQL under languageingenetics.audit_*
@@ -22,14 +22,31 @@ import psycopg2
 import psycopg2.extras
 
 
-SQLITE_SCHEMA = """
+POSITIVE_LABELS = ("caucasian", "white", "european", "other")
+NEGATIVE_LABEL = "none_of_these_labels"
+TARGET_LABEL_ORDER = POSITIVE_LABELS + (NEGATIVE_LABEL,)
+VALID_TARGET_LABELS = TARGET_LABEL_ORDER
+TARGET_LABEL_SQL = {
+    "caucasian": "COALESCE(f.caucasian, false)",
+    "white": "COALESCE(f.white, false)",
+    "european": "COALESCE(f.european, false)",
+    "other": "COALESCE(f.other, false)",
+    "none_of_these_labels": (
+        "NOT COALESCE(f.caucasian, false)"
+        " AND NOT COALESCE(f.white, false)"
+        " AND NOT COALESCE(f.european, false)"
+        " AND NOT COALESCE(f.other, false)"
+    ),
+}
+
+SQLITE_SCHEMA = f"""
 PRAGMA journal_mode=WAL;
 
 CREATE TABLE IF NOT EXISTS audit_batches (
     sample_batch TEXT PRIMARY KEY,
     seed INTEGER NOT NULL,
-    positive_sample_size INTEGER NOT NULL,
-    negative_sample_size INTEGER NOT NULL,
+    matched_label_sample_size INTEGER NOT NULL,
+    none_of_these_labels_sample_size INTEGER NOT NULL,
     created_at TEXT NOT NULL,
     created_by TEXT,
     source_filter TEXT,
@@ -39,9 +56,8 @@ CREATE TABLE IF NOT EXISTS audit_batches (
 CREATE TABLE IF NOT EXISTS audit_articles (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     sample_batch TEXT NOT NULL REFERENCES audit_batches(sample_batch) ON DELETE CASCADE,
-    sample_group TEXT NOT NULL CHECK (sample_group IN ('positive', 'negative')),
+    target_label TEXT NOT NULL CHECK (target_label IN {VALID_TARGET_LABELS}),
     article_id INTEGER NOT NULL,
-    predicted_positive INTEGER NOT NULL CHECK (predicted_positive IN (0, 1)),
     doi TEXT,
     journal_name TEXT,
     pub_year INTEGER,
@@ -53,19 +69,19 @@ CREATE TABLE IF NOT EXISTS audit_articles (
     classifier_other INTEGER NOT NULL DEFAULT 0,
     classifier_european_phrase_used TEXT,
     classifier_other_phrase_used TEXT,
-    human_positive INTEGER CHECK (human_positive IN (0, 1)),
+    target_confirmed INTEGER CHECK (target_confirmed IN (0, 1)),
     reviewer_username TEXT,
     review_notes TEXT,
     reviewed_at TEXT,
     updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    UNIQUE (sample_batch, article_id)
+    UNIQUE (sample_batch, target_label, article_id)
 );
 
-CREATE INDEX IF NOT EXISTS audit_articles_batch_group_idx
-    ON audit_articles (sample_batch, sample_group, article_id);
+CREATE INDEX IF NOT EXISTS audit_articles_batch_target_label_idx
+    ON audit_articles (sample_batch, target_label, article_id);
 
 CREATE INDEX IF NOT EXISTS audit_articles_reviewed_idx
-    ON audit_articles (sample_batch, human_positive, reviewer_username);
+    ON audit_articles (sample_batch, target_confirmed, reviewer_username);
 """
 
 
@@ -73,8 +89,8 @@ CREATE INDEX IF NOT EXISTS audit_articles_reviewed_idx
 class BatchConfig:
     slug: str
     seed: int
-    positive_size: int
-    negative_size: int
+    matched_label_size: int
+    none_size: int
     created_at: str
     created_by: str
     source_filter: str
@@ -105,11 +121,15 @@ def build_filters(args: argparse.Namespace) -> tuple[str, list]:
     params: list[object] = []
 
     if args.min_year is not None:
-        clauses.append("((regexp_replace(regexp_replace(r.filesrc, E'\\n', ' ', 'g'), E'\\t', '    ', 'g')::jsonb -> 'published' -> 'date-parts' -> 0 ->> 0)::integer) >= %s")
+        clauses.append(
+            "((regexp_replace(regexp_replace(r.filesrc, E'\\n', ' ', 'g'), E'\\t', '    ', 'g')::jsonb -> 'published' -> 'date-parts' -> 0 ->> 0)::integer) >= %s"
+        )
         params.append(args.min_year)
 
     if args.max_year is not None:
-        clauses.append("((regexp_replace(regexp_replace(r.filesrc, E'\\n', ' ', 'g'), E'\\t', '    ', 'g')::jsonb -> 'published' -> 'date-parts' -> 0 ->> 0)::integer) <= %s")
+        clauses.append(
+            "((regexp_replace(regexp_replace(r.filesrc, E'\\n', ' ', 'g'), E'\\t', '    ', 'g')::jsonb -> 'published' -> 'date-parts' -> 0 ->> 0)::integer) <= %s"
+        )
         params.append(args.max_year)
 
     if args.journal:
@@ -119,11 +139,41 @@ def build_filters(args: argparse.Namespace) -> tuple[str, list]:
     return " AND ".join(clauses), params
 
 
-def fetch_candidate_ids(cur, *, positive: bool, filter_sql: str, filter_params: list[object]) -> list[int]:
-    positive_clause = "(COALESCE(f.caucasian, false) OR COALESCE(f.white, false) OR COALESCE(f.european, false) OR COALESCE(f.other, false))"
-    negative_clause = "(NOT COALESCE(f.caucasian, false) AND NOT COALESCE(f.white, false) AND NOT COALESCE(f.european, false) AND NOT COALESCE(f.other, false))"
-    polarity_clause = positive_clause if positive else negative_clause
+def distribute_evenly(total: int, labels: tuple[str, ...]) -> dict[str, int]:
+    base = total // len(labels)
+    remainder = total % len(labels)
+    counts = {label: base for label in labels}
+    for label in labels[:remainder]:
+        counts[label] += 1
+    return counts
 
+
+def resolve_target_label_sizes(args: argparse.Namespace) -> dict[str, int]:
+    explicit = {
+        "caucasian": args.caucasian_size,
+        "white": args.white_size,
+        "european": args.european_size,
+        "other": args.other_size,
+    }
+    explicit_total = sum(value for value in explicit.values() if value is not None)
+    if explicit_total > args.matched_label_size:
+        raise ValueError(
+            f"Explicit label sizes total {explicit_total}, which exceeds --matched-label-size {args.matched_label_size}."
+        )
+
+    remaining_labels = tuple(label for label, value in explicit.items() if value is None)
+    distributed = distribute_evenly(args.matched_label_size - explicit_total, remaining_labels) if remaining_labels else {}
+
+    target_label_sizes: dict[str, int] = {}
+    for label in POSITIVE_LABELS:
+        target_label_sizes[label] = explicit[label] if explicit[label] is not None else distributed[label]
+
+    target_label_sizes[NEGATIVE_LABEL] = args.none_size
+    return target_label_sizes
+
+
+def fetch_candidate_ids(cur, *, target_label: str, filter_sql: str, filter_params: list[object]) -> list[int]:
+    target_label_clause = TARGET_LABEL_SQL[target_label]
     if filter_sql:
         query = f"""
             SELECT f.article_id
@@ -135,7 +185,7 @@ def fetch_candidate_ids(cur, *, positive: bool, filter_sql: str, filter_params: 
             WHERE j.enabled = true
               AND f.processed = true
               AND {filter_sql}
-              AND {polarity_clause}
+              AND ({target_label_clause})
             ORDER BY f.article_id
         """
         cur.execute(query, filter_params)
@@ -144,7 +194,7 @@ def fetch_candidate_ids(cur, *, positive: bool, filter_sql: str, filter_params: 
             SELECT f.article_id
             FROM languageingenetics.files f
             WHERE f.processed = true
-              AND {polarity_clause}
+              AND ({target_label_clause})
             ORDER BY f.article_id
         """
         cur.execute(query)
@@ -152,6 +202,8 @@ def fetch_candidate_ids(cur, *, positive: bool, filter_sql: str, filter_params: 
 
 
 def choose_ids(candidate_ids: list[int], sample_size: int, seed: int) -> list[int]:
+    if sample_size == 0:
+        return []
     if len(candidate_ids) < sample_size:
         raise ValueError(
             f"Requested sample size {sample_size}, but only found {len(candidate_ids)} candidates."
@@ -161,6 +213,8 @@ def choose_ids(candidate_ids: list[int], sample_size: int, seed: int) -> list[in
 
 
 def fetch_details(cur, article_ids: list[int]) -> list[dict]:
+    if not article_ids:
+        return []
     cur.execute(
         """
         SELECT
@@ -198,8 +252,8 @@ def insert_pg_batch(cur, cfg: BatchConfig) -> int:
         INSERT INTO languageingenetics.audit_sample_batches (
             slug,
             seed,
-            positive_sample_size,
-            negative_sample_size,
+            matched_label_sample_size,
+            none_of_these_labels_sample_size,
             created_at,
             created_by,
             source_filter,
@@ -211,8 +265,8 @@ def insert_pg_batch(cur, cfg: BatchConfig) -> int:
         (
             cfg.slug,
             cfg.seed,
-            cfg.positive_size,
-            cfg.negative_size,
+            cfg.matched_label_size,
+            cfg.none_size,
             cfg.created_at,
             cfg.created_by,
             cfg.source_filter,
@@ -222,15 +276,16 @@ def insert_pg_batch(cur, cfg: BatchConfig) -> int:
     return int(cur.fetchone()["id"])
 
 
-def insert_pg_articles(cur, batch_id: int, sample_group: str, predicted_positive: bool, rows: list[dict]) -> None:
+def insert_pg_articles(cur, batch_id: int, target_label: str, rows: list[dict]) -> None:
+    if not rows:
+        return
     psycopg2.extras.execute_batch(
         cur,
         """
         INSERT INTO languageingenetics.audit_sample_articles (
             batch_id,
             article_id,
-            sample_group,
-            predicted_positive,
+            target_label,
             doi,
             journal_name,
             pub_year,
@@ -246,8 +301,7 @@ def insert_pg_articles(cur, batch_id: int, sample_group: str, predicted_positive
         VALUES (
             %(batch_id)s,
             %(article_id)s,
-            %(sample_group)s,
-            %(predicted_positive)s,
+            %(target_label)s,
             %(doi)s,
             %(journal_name)s,
             %(pub_year)s,
@@ -265,8 +319,7 @@ def insert_pg_articles(cur, batch_id: int, sample_group: str, predicted_positive
             {
                 "batch_id": batch_id,
                 "article_id": int(row["article_id"]),
-                "sample_group": sample_group,
-                "predicted_positive": predicted_positive,
+                "target_label": target_label,
                 "doi": row["doi"],
                 "journal_name": row["journal_name"],
                 "pub_year": row["pub_year"],
@@ -291,8 +344,8 @@ def insert_sqlite_batch(conn: sqlite3.Connection, cfg: BatchConfig) -> None:
         INSERT INTO audit_batches (
             sample_batch,
             seed,
-            positive_sample_size,
-            negative_sample_size,
+            matched_label_sample_size,
+            none_of_these_labels_sample_size,
             created_at,
             created_by,
             source_filter,
@@ -303,8 +356,8 @@ def insert_sqlite_batch(conn: sqlite3.Connection, cfg: BatchConfig) -> None:
         (
             cfg.slug,
             cfg.seed,
-            cfg.positive_size,
-            cfg.negative_size,
+            cfg.matched_label_size,
+            cfg.none_size,
             cfg.created_at,
             cfg.created_by,
             cfg.source_filter,
@@ -313,14 +366,15 @@ def insert_sqlite_batch(conn: sqlite3.Connection, cfg: BatchConfig) -> None:
     )
 
 
-def insert_sqlite_articles(conn: sqlite3.Connection, sample_group: str, predicted_positive: bool, cfg: BatchConfig, rows: list[dict]) -> None:
+def insert_sqlite_articles(conn: sqlite3.Connection, target_label: str, cfg: BatchConfig, rows: list[dict]) -> None:
+    if not rows:
+        return
     conn.executemany(
         """
         INSERT INTO audit_articles (
             sample_batch,
-            sample_group,
+            target_label,
             article_id,
-            predicted_positive,
             doi,
             journal_name,
             pub_year,
@@ -333,14 +387,13 @@ def insert_sqlite_articles(conn: sqlite3.Connection, sample_group: str, predicte
             classifier_european_phrase_used,
             classifier_other_phrase_used
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         [
             (
                 cfg.slug,
-                sample_group,
+                target_label,
                 int(row["article_id"]),
-                1 if predicted_positive else 0,
                 row["doi"],
                 row["journal_name"],
                 row["pub_year"],
@@ -376,8 +429,24 @@ def main() -> int:
     parser.add_argument("--sqlite-db", default="../audit/review_data/lig_audit.db", help="SQLite database path to seed/update")
     parser.add_argument("--batch-slug", help="Batch slug to create (default: audit-YYYYMMDD-seedN)")
     parser.add_argument("--seed", type=int, default=42, help="Random seed")
-    parser.add_argument("--positive-size", type=int, default=100, help="Positive-hit sample size")
-    parser.add_argument("--negative-size", type=int, default=100, help="Negative-hit sample size")
+    parser.add_argument(
+        "--matched-label-size",
+        type=int,
+        default=100,
+        help="Total size across caucasian/white/european/other when per-label sizes are not given",
+    )
+    parser.add_argument(
+        "--none-size",
+        "--none-of-these-labels-size",
+        dest="none_size",
+        type=int,
+        default=100,
+        help="Total size for the none_of_these_labels control bucket",
+    )
+    parser.add_argument("--caucasian-size", type=int, help="Override caucasian sample size")
+    parser.add_argument("--white-size", type=int, help="Override white sample size")
+    parser.add_argument("--european-size", type=int, help="Override european sample size")
+    parser.add_argument("--other-size", type=int, help="Override other sample size")
     parser.add_argument("--min-year", type=int, help="Minimum publication year")
     parser.add_argument("--max-year", type=int, help="Maximum publication year")
     parser.add_argument("--journal", help="Restrict sampling to one journal")
@@ -385,6 +454,7 @@ def main() -> int:
     parser.add_argument("--notes", help="Optional batch notes")
     args = parser.parse_args()
 
+    target_label_sizes = resolve_target_label_sizes(args)
     now = datetime.now(timezone.utc)
     slug = args.batch_slug or f"audit-{now.strftime('%Y%m%d')}-seed{args.seed}"
     source_parts = ["processed=true", "scope=focused_journals_view"]
@@ -394,11 +464,18 @@ def main() -> int:
         source_parts.append(f"max_year={args.max_year}")
     if args.journal:
         source_parts.append(f"journal={args.journal}")
+    source_parts.append(
+        "target_label_sizes="
+        + ",".join(
+            f"{target_label}:{target_label_sizes[target_label]}"
+            for target_label in TARGET_LABEL_ORDER
+        )
+    )
     cfg = BatchConfig(
         slug=slug,
         seed=args.seed,
-        positive_size=args.positive_size,
-        negative_size=args.negative_size,
+        matched_label_size=sum(target_label_sizes[target_label] for target_label in POSITIVE_LABELS),
+        none_size=target_label_sizes[NEGATIVE_LABEL],
         created_at=now.isoformat(),
         created_by=args.created_by,
         source_filter=", ".join(source_parts),
@@ -424,22 +501,24 @@ def main() -> int:
 
         filter_sql, filter_params = build_filters(args)
 
-        positive_ids = fetch_candidate_ids(pg_cur, positive=True, filter_sql=filter_sql, filter_params=filter_params)
-        negative_ids = fetch_candidate_ids(pg_cur, positive=False, filter_sql=filter_sql, filter_params=filter_params)
-
-        chosen_positive_ids = choose_ids(positive_ids, args.positive_size, args.seed)
-        chosen_negative_ids = choose_ids(negative_ids, args.negative_size, args.seed + 1)
-
-        positive_rows = fetch_details(pg_cur, chosen_positive_ids)
-        negative_rows = fetch_details(pg_cur, chosen_negative_ids)
-
+        chosen_rows: dict[str, list[dict]] = {}
         batch_id = insert_pg_batch(pg_cur, cfg)
-        insert_pg_articles(pg_cur, batch_id, "positive", True, positive_rows)
-        insert_pg_articles(pg_cur, batch_id, "negative", False, negative_rows)
+
+        for offset, target_label in enumerate(TARGET_LABEL_ORDER):
+            candidate_ids = fetch_candidate_ids(
+                pg_cur,
+                target_label=target_label,
+                filter_sql=filter_sql,
+                filter_params=filter_params,
+            )
+            chosen_ids = choose_ids(candidate_ids, target_label_sizes[target_label], args.seed + offset)
+            rows = fetch_details(pg_cur, chosen_ids)
+            chosen_rows[target_label] = rows
+            insert_pg_articles(pg_cur, batch_id, target_label, rows)
 
         insert_sqlite_batch(sqlite_conn, cfg)
-        insert_sqlite_articles(sqlite_conn, "positive", True, cfg, positive_rows)
-        insert_sqlite_articles(sqlite_conn, "negative", False, cfg, negative_rows)
+        for target_label in TARGET_LABEL_ORDER:
+            insert_sqlite_articles(sqlite_conn, target_label, cfg, chosen_rows[target_label])
 
         pg_conn.commit()
         sqlite_conn.commit()
@@ -454,7 +533,11 @@ def main() -> int:
 
     print(
         f"Created audit batch {cfg.slug}: "
-        f"{args.positive_size} positive and {args.negative_size} negative samples."
+        + ", ".join(
+            f"{target_label}={target_label_sizes[target_label]}"
+            for target_label in TARGET_LABEL_ORDER
+        )
+        + "."
     )
     print(f"SQLite DB: {sqlite_path}")
     return 0

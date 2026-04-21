@@ -30,6 +30,6 @@ log "Remote audit database size: $REMOTE_SIZE"
 scp "$REMOTE_HOST:$REMOTE_DB" "$LOCAL_DB"
 
 LOCAL_SIZE=$(ls -lh "$LOCAL_DB" | awk '{print $5}')
-AUDIT_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM audit_articles WHERE human_positive IS NOT NULL;")
+AUDIT_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM audit_articles WHERE target_confirmed IS NOT NULL;")
 log "Synced database to $LOCAL_DB (size: $LOCAL_SIZE, reviewed rows: $AUDIT_COUNT)"
 log "=== Lig audit database sync complete ==="

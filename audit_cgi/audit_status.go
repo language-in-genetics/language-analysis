@@ -8,12 +8,12 @@ import (
 )
 
 type StatusPageData struct {
-	Batch      BatchMeta
-	Group      string
-	Status     string
-	Articles   []ArticleRow
-	GroupStats []GroupSummary
-	Detail     *AuditArticle
+	Batch           BatchMeta
+	TargetLabel     string
+	Status          string
+	Articles        []ArticleRow
+	TargetSummaries []TargetLabelSummary
+	Detail          *AuditArticle
 }
 
 var statusTemplate = template.Must(template.New("status").Funcs(templateFuncs).Parse(`<!DOCTYPE html>
@@ -49,18 +49,19 @@ var statusTemplate = template.Must(template.New("status").Funcs(templateFuncs).P
             <p class="small">Batch <code>{{.Batch.SampleBatch}}</code> · created {{formatTimestamp .Batch.CreatedAt}} · seed {{.Batch.Seed}}</p>
             <div class="filters">
                 <a href="/cgi-bin/audit-status.cgi?batch={{.Batch.SampleBatch}}">All</a>
-                <a href="/cgi-bin/audit-status.cgi?batch={{.Batch.SampleBatch}}&group=positive">Positive sample</a>
-                <a href="/cgi-bin/audit-status.cgi?batch={{.Batch.SampleBatch}}&group=negative">Negative sample</a>
+                {{range .TargetSummaries}}
+                <a href="/cgi-bin/audit-status.cgi?batch={{$.Batch.SampleBatch}}&target_label={{.TargetLabel}}">{{targetLabelDisplay .TargetLabel}}</a>
+                {{end}}
                 <a href="/cgi-bin/audit-status.cgi?batch={{.Batch.SampleBatch}}&status=pending">Pending only</a>
                 <a href="/cgi-bin/audit-status.cgi?batch={{.Batch.SampleBatch}}&status=reviewed">Reviewed only</a>
             </div>
             <div class="stats">
-                {{range .GroupStats}}
+                {{range .TargetSummaries}}
                 <div class="stat">
-                    <strong>{{.SampleGroup}}</strong><br>
+                    <strong>{{targetLabelDisplay .TargetLabel}}</strong><br>
                     {{.ReviewedCount}} reviewed / {{.TotalCount}} total<br>
                     {{.PendingCount}} pending<br>
-                    {{if eq .SampleGroup "positive"}}TP {{.TruePositiveCount}} · FP {{.FalsePositiveCount}}{{else}}TN {{.TrueNegativeCount}} · FN {{.FalseNegativeCount}}{{end}}
+                    {{targetLabelSummaryLabel .}}
                 </div>
                 {{end}}
             </div>
@@ -70,8 +71,8 @@ var statusTemplate = template.Must(template.New("status").Funcs(templateFuncs).P
         <div class="card">
             <h2>{{.Detail.Title}}</h2>
             <p class="small">{{.Detail.JournalName}} · {{yearLabel .Detail.PubYear}} · article {{.Detail.ArticleID}}{{if .Detail.DOI}} · <a href="https://doi.org/{{.Detail.DOI}}" target="_blank" rel="noopener noreferrer">{{.Detail.DOI}}</a>{{end}}</p>
-            <p class="small">Model says <strong>{{boolLabel .Detail.PredictedPositive}}</strong>. Review status: <strong>{{articleReviewStatus .Detail}}</strong></p>
-            <p class="small">Audit result: <strong>{{articleOutcomeLabel .Detail}}</strong>{{if .Detail.ReviewerUsername}} · reviewer {{.Detail.ReviewerUsername}}{{end}}{{if .Detail.ReviewedAt}} · {{formatTimestamp .Detail.ReviewedAt}}{{end}}</p>
+            <p class="small">Review target: <strong>{{targetLabelDisplay .Detail.TargetLabel}}</strong>. Review status: <strong>{{articleReviewStatus .Detail}}</strong></p>
+            <p class="small">Audit result: <strong>{{outcomeLabel .Detail.TargetLabel (articleOutcome .Detail)}}</strong>{{if .Detail.ReviewerUsername}} · reviewer {{.Detail.ReviewerUsername}}{{end}}{{if .Detail.ReviewedAt}} · {{formatTimestamp .Detail.ReviewedAt}}{{end}}</p>
             <p class="small">Classifier flags: {{joinPhrases .Detail}}</p>
             <div class="abstract">{{if .Detail.Abstract}}{{.Detail.Abstract}}{{else}}No abstract available.{{end}}</div>
         </div>
@@ -81,10 +82,9 @@ var statusTemplate = template.Must(template.New("status").Funcs(templateFuncs).P
             <table>
                 <thead>
                     <tr>
-                        <th>Group</th>
+                        <th>Target</th>
                         <th>Article</th>
                         <th>Journal</th>
-                        <th>Predicted</th>
                         <th>Status</th>
                         <th>Outcome</th>
                         <th>Reviewer</th>
@@ -94,12 +94,11 @@ var statusTemplate = template.Must(template.New("status").Funcs(templateFuncs).P
                 <tbody>
                     {{range .Articles}}
                     <tr>
-                        <td>{{.SampleGroup}}</td>
-                        <td><a href="/cgi-bin/audit-status.cgi?batch={{.SampleBatch}}&article_id={{.ArticleID}}">{{.Title}}</a><div class="small">article {{.ArticleID}}</div></td>
+                        <td>{{targetLabelDisplay .TargetLabel}}</td>
+                        <td><a href="/cgi-bin/audit-status.cgi?batch={{.SampleBatch}}&target_label={{.TargetLabel}}&article_id={{.ArticleID}}">{{.Title}}</a><div class="small">article {{.ArticleID}}</div></td>
                         <td>{{.JournalName}}<div class="small">{{yearLabel .PubYear}}</div></td>
-                        <td>{{boolLabel .PredictedPositive}}</td>
                         <td class="{{.ReviewStatus}}">{{.ReviewStatus}}</td>
-                        <td>{{outcomeLabel .AuditOutcome}}</td>
+                        <td>{{outcomeLabel .TargetLabel .AuditOutcome}}</td>
                         <td>{{if .ReviewerUsername}}{{.ReviewerUsername}}{{else}}—{{end}}</td>
                         <td>{{if .UpdatedAt}}{{formatTimestamp .UpdatedAt}}{{else}}—{{end}}</td>
                     </tr>
@@ -139,7 +138,7 @@ func handleAuditStatus(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	group := r.URL.Query().Get("group")
+	targetLabel := r.URL.Query().Get("target_label")
 	status := r.URL.Query().Get("status")
 	if status == "" {
 		status = "all"
@@ -150,12 +149,12 @@ func handleAuditStatus(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to load batch metadata: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
-	summaries, err := loadGroupSummaries(db, batch)
+	targetSummaries, err := loadTargetLabelSummaries(db, batch)
 	if err != nil {
 		http.Error(w, "Failed to load batch summary: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
-	articles, err := listAuditArticles(db, batch, group, status)
+	articles, err := listAuditArticles(db, batch, targetLabel, status)
 	if err != nil {
 		http.Error(w, "Failed to list audit articles: "+err.Error(), http.StatusInternalServerError)
 		return
@@ -164,7 +163,11 @@ func handleAuditStatus(w http.ResponseWriter, r *http.Request) {
 	var detail *AuditArticle
 	if rawID := r.URL.Query().Get("article_id"); rawID != "" {
 		if articleID, err := strconv.Atoi(rawID); err == nil {
-			loaded, err := loadAuditArticle(db, batch, articleID)
+			detailTargetLabel := targetLabel
+			if detailTargetLabel == "" {
+				detailTargetLabel = defaultTargetLabel(targetSummaries)
+			}
+			loaded, err := loadAuditArticle(db, batch, detailTargetLabel, articleID)
 			if err == nil {
 				detail = &loaded
 			}
@@ -172,12 +175,12 @@ func handleAuditStatus(w http.ResponseWriter, r *http.Request) {
 	}
 
 	data := StatusPageData{
-		Batch:      meta,
-		Group:      group,
-		Status:     status,
-		Articles:   articles,
-		GroupStats: summaries,
-		Detail:     detail,
+		Batch:           meta,
+		TargetLabel:     targetLabel,
+		Status:          status,
+		Articles:        articles,
+		TargetSummaries: targetSummaries,
+		Detail:          detail,
 	}
 
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")

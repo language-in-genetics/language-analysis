@@ -44,17 +44,30 @@ pip install -r ../requirements.txt
 
 ```bash
 cd extractor/
+# Process articles from enabled journals
+./bulkquery.py --limit 1000
 
+# Check batch status
+./batchcheck.py
+
+# Fetch completed results
+./batchfetch.py
+
+# Generate dashboard
+./generate_dashboard.py --output-dir ../dashboard
+```
 
 ## Computational Analysis Methodology
 
 The `extractor/bulkquery.py` script implements an automated approach to analyze genetics articles for specific racial terminology. It processes metadata.json files containing article titles and abstracts, then submits them to OpenAI's API for analysis.
 
 The core of the analysis uses a carefully constructed prompt:
-```
-"Does this article use any terms like \"Caucasian\" or \"white\" or \"European ancestry\" in a way that refers to race, ancestry, ethnicity or population?\n\n"
-"TITLE: {title}\n"
-"ABSTRACT: {abstract}\n"
+
+```text
+Does this article use any terms like "Caucasian" or "white" or "European ancestry" in a way that refers to race, ancestry, ethnicity or population?
+
+TITLE: {title}
+ABSTRACT: {abstract}
 ```
 
 This prompt is deliberately framed in a neutral manner to avoid biasing the language model's analysis. It specifically asks about terms related to European ancestry without suggesting preference for any particular terminology.
@@ -68,20 +81,6 @@ The analysis is structured through a function-calling API that forces OpenAI to 
 When phrases are detected, the system also captures the exact terminology used, enabling detailed analysis of language variations across the literature.
 
 The batch processing system allows efficient processing of thousands of articles with proper error handling and progress tracking, making large-scale analysis feasible within reasonable time and cost constraints.
-
-
-# Process articles from enabled journals
-./bulkquery.py --limit 1000
-
-# Check batch status
-./batchcheck.py
-
-# Fetch completed results
-./batchfetch.py
-
-# Generate dashboard
-./generate_dashboard.py --output-dir ../dashboard
-```
 
 ### Automation
 
@@ -136,10 +135,11 @@ make lint
 
 ## Human Audit
 
-The audit subsystem samples both classifier-positive and classifier-negative articles for human review.
+The audit subsystem samples explicit classifier-label buckets (`caucasian`, `white`, `european`, `other`) plus a `none of these labels` control bucket for human review.
 
 - Create a reproducible sample batch:
-  - `cd extractor && uv run create_audit_batch.py --positive-size 100 --negative-size 100`
+  - `cd extractor && uv run create_audit_batch.py --matched-label-size 100 --none-size 100`
+  - The default split is `25` each for `caucasian`, `white`, `european`, and `other`, plus `100` `none_of_these_labels` controls.
 - Pull the live review SQLite database from `merah`:
   - `./audit/sync_audit_db.sh`
 - Import the SQLite review state into PostgreSQL:

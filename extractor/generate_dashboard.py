@@ -228,10 +228,8 @@ try:
             COUNT(*) AS total,
             COALESCE(SUM(CASE WHEN aas.review_status = 'reviewed' THEN 1 ELSE 0 END), 0) AS reviewed,
             COALESCE(SUM(CASE WHEN aas.review_status = 'pending' THEN 1 ELSE 0 END), 0) AS pending,
-            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'true_positive' THEN 1 ELSE 0 END), 0) AS true_positive,
-            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'false_positive' THEN 1 ELSE 0 END), 0) AS false_positive,
-            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'true_negative' THEN 1 ELSE 0 END), 0) AS true_negative,
-            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'false_negative' THEN 1 ELSE 0 END), 0) AS false_negative
+            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'confirmed' THEN 1 ELSE 0 END), 0) AS confirmed,
+            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'disagreed' THEN 1 ELSE 0 END), 0) AS disagreed
         FROM languageingenetics.audit_article_status_view aas
         JOIN latest_batch lb ON lb.slug = aas.sample_batch
         GROUP BY aas.sample_batch
@@ -732,7 +730,7 @@ if audit_summary:
             <div class="card">
                 <h3>Pending</h3>
                 <div class="value">{audit_summary['pending']:,}</div>
-                <div class="subvalue">TP {audit_summary['true_positive']:,} · FP {audit_summary['false_positive']:,} · TN {audit_summary['true_negative']:,} · FN {audit_summary['false_negative']:,}</div>
+                <div class="subvalue">Confirmed {audit_summary['confirmed']:,} · Disagreed {audit_summary['disagreed']:,}</div>
             </div>
         </div>
 """

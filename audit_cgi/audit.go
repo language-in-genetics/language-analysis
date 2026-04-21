@@ -9,15 +9,15 @@ import (
 )
 
 type AuditPageData struct {
-	RemoteUser    string
-	Batch         BatchMeta
-	Group         string
-	Article       AuditArticle
-	PrevArticleID int
-	NextArticleID int
-	GroupStats    []GroupSummary
-	CurrentStatus string
-	CurrentOutcome string
+	RemoteUser      string
+	Batch           BatchMeta
+	TargetLabel     string
+	Article         AuditArticle
+	PrevArticleID   int
+	NextArticleID   int
+	TargetSummaries []TargetLabelSummary
+	CurrentStatus   string
+	CurrentOutcome  string
 }
 
 var auditTemplate = template.Must(template.New("audit").Funcs(templateFuncs).Parse(`<!DOCTYPE html>
@@ -45,8 +45,8 @@ var auditTemplate = template.Must(template.New("audit").Funcs(templateFuncs).Par
         textarea { width: 100%; min-height: 140px; font: inherit; padding: 10px; }
         .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
         button { border: 0; border-radius: 8px; padding: 10px 14px; font: inherit; cursor: pointer; }
-        .btn-positive { background: #1f8f52; color: white; }
-        .btn-negative { background: #c0392b; color: white; }
+        .btn-confirm { background: #1f8f52; color: white; }
+        .btn-reject { background: #c0392b; color: white; }
         .btn-stay { background: #44556b; color: white; }
         .current { background: #fff8d8; padding: 10px 12px; border-radius: 8px; margin-bottom: 14px; }
         .small { color: #666; font-size: 0.9rem; }
@@ -62,19 +62,20 @@ var auditTemplate = template.Must(template.New("audit").Funcs(templateFuncs).Par
             </div>
             <div class="nav">
                 <a href="/cgi-bin/audit-status.cgi{{queryWithBatch .Batch.SampleBatch}}">Public status</a>
-                <a href="/cgi-bin/audit.cgi?batch={{.Batch.SampleBatch}}&group=positive">Positive sample</a>
-                <a href="/cgi-bin/audit.cgi?batch={{.Batch.SampleBatch}}&group=negative">Negative sample</a>
+                {{range .TargetSummaries}}
+                <a href="/cgi-bin/audit.cgi?batch={{$.Batch.SampleBatch}}&target_label={{.TargetLabel}}">{{targetLabelDisplay .TargetLabel}}</a>
+                {{end}}
             </div>
         </div>
 
         <div class="card">
             <div class="stats">
-                {{range .GroupStats}}
+                {{range .TargetSummaries}}
                 <div class="stat">
-                    <strong>{{.SampleGroup}}</strong><br>
+                    <strong>{{targetLabelDisplay .TargetLabel}}</strong><br>
                     {{.ReviewedCount}} reviewed / {{.TotalCount}} total<br>
                     {{.PendingCount}} pending<br>
-                    {{if eq .SampleGroup "positive"}}TP {{.TruePositiveCount}} · FP {{.FalsePositiveCount}}{{else}}TN {{.TrueNegativeCount}} · FN {{.FalseNegativeCount}}{{end}}
+                    {{targetLabelSummaryLabel .}}
                 </div>
                 {{end}}
             </div>
@@ -82,14 +83,13 @@ var auditTemplate = template.Must(template.New("audit").Funcs(templateFuncs).Par
 
         <div class="card">
             <div class="nav">
-                {{if gt .PrevArticleID 0}}<a href="/cgi-bin/audit.cgi?batch={{.Batch.SampleBatch}}&group={{.Group}}&article_id={{.PrevArticleID}}">Previous</a>{{end}}
-                {{if gt .NextArticleID 0}}<a href="/cgi-bin/audit.cgi?batch={{.Batch.SampleBatch}}&group={{.Group}}&article_id={{.NextArticleID}}">Next</a>{{end}}
-                <a href="/cgi-bin/audit.cgi?batch={{.Batch.SampleBatch}}&group={{.Group}}">Next pending</a>
+                {{if gt .PrevArticleID 0}}<a href="/cgi-bin/audit.cgi?batch={{.Batch.SampleBatch}}&target_label={{.TargetLabel}}&article_id={{.PrevArticleID}}">Previous</a>{{end}}
+                {{if gt .NextArticleID 0}}<a href="/cgi-bin/audit.cgi?batch={{.Batch.SampleBatch}}&target_label={{.TargetLabel}}&article_id={{.NextArticleID}}">Next</a>{{end}}
+                <a href="/cgi-bin/audit.cgi?batch={{.Batch.SampleBatch}}&target_label={{.TargetLabel}}">Next pending</a>
             </div>
 
-            <div class="pill">{{.Article.SampleGroup}} sample</div>
-            <div class="pill">model says {{boolLabel .Article.PredictedPositive}}</div>
-            {{if .CurrentOutcome}}<div class="pill">audit says {{outcomeLabel .CurrentOutcome}}</div>{{end}}
+            <div class="pill">review target: {{targetLabelDisplay .Article.TargetLabel}}</div>
+            {{if .CurrentOutcome}}<div class="pill">review result: {{outcomeLabel .Article.TargetLabel .CurrentOutcome}}</div>{{end}}
 
             <p class="article-title">{{.Article.Title}}</p>
             <p class="meta">{{.Article.JournalName}} · {{yearLabel .Article.PubYear}} · article {{.Article.ArticleID}}{{if .Article.DOI}} · <a href="https://doi.org/{{.Article.DOI}}" target="_blank" rel="noopener noreferrer">{{.Article.DOI}}</a>{{end}}</p>
@@ -106,16 +106,16 @@ var auditTemplate = template.Must(template.New("audit").Funcs(templateFuncs).Par
 
             <form method="POST" action="/cgi-bin/audit-save.cgi">
                 <input type="hidden" name="sample_batch" value="{{.Batch.SampleBatch}}">
-                <input type="hidden" name="sample_group" value="{{.Group}}">
+                <input type="hidden" name="target_label" value="{{.TargetLabel}}">
                 <input type="hidden" name="article_id" value="{{.Article.ArticleID}}">
                 <h3>Reviewer Notes</h3>
                 <textarea name="review_notes">{{.Article.ReviewNotes}}</textarea>
                 <div class="actions">
-                    <button class="btn-positive" type="submit" name="human_positive" value="1">Mark Human Positive</button>
-                    <button class="btn-negative" type="submit" name="human_positive" value="0">Mark Human Negative</button>
+                    <button class="btn-confirm" type="submit" name="target_confirmed" value="1">{{confirmButtonLabel .Article.TargetLabel}}</button>
+                    <button class="btn-reject" type="submit" name="target_confirmed" value="0">{{rejectButtonLabel .Article.TargetLabel}}</button>
                     <button class="btn-stay" type="submit" name="action" value="stay">Save And Stay</button>
                 </div>
-                <p class="small">The green/red buttons save and continue to the next pending article in this sample group. “Save And Stay” keeps the current article open.</p>
+                <p class="small">The green/red buttons save and continue to the next pending article for this target label. “Save And Stay” keeps the current article open.</p>
             </form>
         </div>
     </div>
@@ -150,21 +150,21 @@ func handleAudit(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	group := r.URL.Query().Get("group")
-	if group == "" {
-		group = "positive"
-	}
-
 	meta, err := loadBatchMeta(db, batch)
 	if err != nil {
 		http.Error(w, "Failed to load batch metadata: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	summaries, err := loadGroupSummaries(db, batch)
+	targetSummaries, err := loadTargetLabelSummaries(db, batch)
 	if err != nil {
 		http.Error(w, "Failed to load batch summary: "+err.Error(), http.StatusInternalServerError)
 		return
+	}
+
+	targetLabel := r.URL.Query().Get("target_label")
+	if targetLabel == "" {
+		targetLabel = defaultTargetLabel(targetSummaries)
 	}
 
 	articleID := 0
@@ -174,39 +174,39 @@ func handleAudit(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	if articleID == 0 {
-		articleID, err = firstPendingArticleID(db, batch, group)
+		articleID, err = firstPendingArticleID(db, batch, targetLabel)
 		if err != nil {
 			http.Error(w, "Failed to choose next article: "+err.Error(), http.StatusInternalServerError)
 			return
 		}
 	}
 	if articleID == 0 {
-		http.Error(w, "No sampled articles found for this group.", http.StatusNotFound)
+		http.Error(w, "No sampled articles found for this review target.", http.StatusNotFound)
 		return
 	}
 
-	article, err := loadAuditArticle(db, batch, articleID)
+	article, err := loadAuditArticle(db, batch, targetLabel, articleID)
 	if err != nil {
 		http.Error(w, "Failed to load article: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	prevID, nextID, err := adjacentArticleIDs(db, batch, group, articleID)
+	prevID, nextID, err := adjacentArticleIDs(db, batch, targetLabel, articleID)
 	if err != nil {
 		http.Error(w, "Failed to load article navigation: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
 	data := AuditPageData{
-		RemoteUser:    os.Getenv("REMOTE_USER"),
-		Batch:         meta,
-		Group:         group,
-		Article:       article,
-		PrevArticleID: prevID,
-		NextArticleID: nextID,
-		GroupStats:    summaries,
-		CurrentStatus: articleReviewStatus(article),
-		CurrentOutcome: articleOutcome(article),
+		RemoteUser:      os.Getenv("REMOTE_USER"),
+		Batch:           meta,
+		TargetLabel:     targetLabel,
+		Article:         article,
+		PrevArticleID:   prevID,
+		NextArticleID:   nextID,
+		TargetSummaries: targetSummaries,
+		CurrentStatus:   articleReviewStatus(article),
+		CurrentOutcome:  articleOutcome(article),
 	}
 	if data.RemoteUser == "" {
 		data.RemoteUser = "authenticated reviewer"

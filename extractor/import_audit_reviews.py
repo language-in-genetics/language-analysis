@@ -57,8 +57,8 @@ def main() -> int:
             SELECT
                 sample_batch,
                 seed,
-                positive_sample_size,
-                negative_sample_size,
+                matched_label_sample_size,
+                none_of_these_labels_sample_size,
                 created_at,
                 created_by,
                 source_filter,
@@ -75,8 +75,8 @@ def main() -> int:
                 INSERT INTO languageingenetics.audit_sample_batches (
                     slug,
                     seed,
-                    positive_sample_size,
-                    negative_sample_size,
+                    matched_label_sample_size,
+                    none_of_these_labels_sample_size,
                     created_at,
                     created_by,
                     source_filter,
@@ -85,8 +85,8 @@ def main() -> int:
                 VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (slug) DO UPDATE SET
                     seed = EXCLUDED.seed,
-                    positive_sample_size = EXCLUDED.positive_sample_size,
-                    negative_sample_size = EXCLUDED.negative_sample_size,
+                    matched_label_sample_size = EXCLUDED.matched_label_sample_size,
+                    none_of_these_labels_sample_size = EXCLUDED.none_of_these_labels_sample_size,
                     created_at = EXCLUDED.created_at,
                     created_by = EXCLUDED.created_by,
                     source_filter = EXCLUDED.source_filter,
@@ -96,8 +96,8 @@ def main() -> int:
                 (
                     batch["sample_batch"],
                     batch["seed"],
-                    batch["positive_sample_size"],
-                    batch["negative_sample_size"],
+                    batch["matched_label_sample_size"],
+                    batch["none_of_these_labels_sample_size"],
                     batch["created_at"],
                     batch["created_by"],
                     batch["source_filter"],
@@ -111,9 +111,8 @@ def main() -> int:
             """
             SELECT
                 sample_batch,
-                sample_group,
+                target_label,
                 article_id,
-                predicted_positive,
                 doi,
                 journal_name,
                 pub_year,
@@ -125,13 +124,13 @@ def main() -> int:
                 classifier_other,
                 classifier_european_phrase_used,
                 classifier_other_phrase_used,
-                human_positive,
+                target_confirmed,
                 reviewer_username,
                 review_notes,
                 reviewed_at,
                 updated_at
             FROM audit_articles
-            ORDER BY sample_batch, sample_group, article_id
+            ORDER BY sample_batch, target_label, article_id
             """
         ).fetchall()
 
@@ -142,8 +141,7 @@ def main() -> int:
                 INSERT INTO languageingenetics.audit_sample_articles (
                     batch_id,
                     article_id,
-                    sample_group,
-                    predicted_positive,
+                    target_label,
                     doi,
                     journal_name,
                     pub_year,
@@ -156,10 +154,9 @@ def main() -> int:
                     classifier_european_phrase_used,
                     classifier_other_phrase_used
                 )
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-                ON CONFLICT (batch_id, article_id) DO UPDATE SET
-                    sample_group = EXCLUDED.sample_group,
-                    predicted_positive = EXCLUDED.predicted_positive,
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (batch_id, target_label, article_id) DO UPDATE SET
+                    target_label = EXCLUDED.target_label,
                     doi = EXCLUDED.doi,
                     journal_name = EXCLUDED.journal_name,
                     pub_year = EXCLUDED.pub_year,
@@ -176,8 +173,7 @@ def main() -> int:
                 (
                     batch_id,
                     row["article_id"],
-                    row["sample_group"],
-                    bool(row["predicted_positive"]),
+                    row["target_label"],
                     row["doi"],
                     row["journal_name"],
                     row["pub_year"],
@@ -193,7 +189,7 @@ def main() -> int:
             )
             sample_article_id = int(pg_cur.fetchone()["id"])
 
-            if row["human_positive"] is None:
+            if row["target_confirmed"] is None:
                 pg_cur.execute(
                     """
                     DELETE FROM languageingenetics.audit_article_reviews
@@ -209,7 +205,7 @@ def main() -> int:
                 """
                 INSERT INTO languageingenetics.audit_article_reviews (
                     sample_article_id,
-                    human_positive,
+                    target_confirmed,
                     reviewer_username,
                     review_notes,
                     reviewed_at,
@@ -218,7 +214,7 @@ def main() -> int:
                 )
                 VALUES (%s, %s, %s, %s, %s, %s, 'merah_audit_sqlite')
                 ON CONFLICT (sample_article_id) DO UPDATE SET
-                    human_positive = EXCLUDED.human_positive,
+                    target_confirmed = EXCLUDED.target_confirmed,
                     reviewer_username = EXCLUDED.reviewer_username,
                     review_notes = EXCLUDED.review_notes,
                     reviewed_at = EXCLUDED.reviewed_at,
@@ -227,7 +223,7 @@ def main() -> int:
                 """,
                 (
                     sample_article_id,
-                    bool(row["human_positive"]),
+                    bool(row["target_confirmed"]),
                     row["reviewer_username"],
                     row["review_notes"],
                     row["reviewed_at"],
