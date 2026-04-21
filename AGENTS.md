@@ -67,6 +67,14 @@ psql -c "UPDATE languageingenetics.journals SET enabled = false WHERE name = 'He
 psql -c "INSERT INTO languageingenetics.journals (name) VALUES ('New Journal Name');"
 ```
 
+**Host-Specific Note (`udara`):**
+When running Codex on `udara`, direct TCP access to the `crossref` database on `raksasa` is available from the local machine using Postgres.app `psql` plus `~/.pgpass`. Example:
+```bash
+/Applications/Postgres.app/Contents/Versions/latest/bin/psql \
+  "host=raksasa port=5432 dbname=crossref user=languageingenetics sslmode=prefer"
+```
+This is useful for quick direct checks from `udara` without first SSHing to `raksasa`.
+
 **Performance:** For efficient querying on the massive `raw_text_data` table (hundreds of GB), a GIN index is highly recommended:
 ```sql
 -- Run as admin - this will take a long time on a large table
