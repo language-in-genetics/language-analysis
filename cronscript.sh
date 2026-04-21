@@ -28,6 +28,24 @@ log() {
 
 log "Starting automated processing run"
 
+# Step 0: Sync local audit cache from merah and import into PostgreSQL
+log "Syncing lig audit database from merah..."
+if ./audit/sync_audit_db.sh 2>&1 | tee -a "$LOG_FILE"; then
+    log "Lig audit database sync completed"
+else
+    log "Warning: Lig audit database sync failed"
+fi
+
+log "Importing lig audit reviews into PostgreSQL..."
+if (
+    cd extractor
+    uv run import_audit_reviews.py --sqlite-db ../audit/review_data/lig_audit.db
+) 2>&1 | tee -a "$LOG_FILE"; then
+    log "Lig audit import completed"
+else
+    log "Warning: Lig audit import failed"
+fi
+
 # Step 1: Check for completed batches and fetch results
 log "Checking for completed batches..."
 cd extractor

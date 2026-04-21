@@ -1,4 +1,4 @@
-.PHONY: all clean test lint dev-deps
+.PHONY: all clean test lint dev-deps audit-cgi
 
 BUILD_DIR=bin
 
@@ -16,6 +16,7 @@ bin/crossrefimport: cmd/crossrefimport/main.go
 clean:
 	@echo "Cleaning..."
 	@rm -rf bin
+	@$(MAKE) -C audit_cgi clean >/dev/null 2>&1 || true
 
 test:
 	@echo "Running tests..."
@@ -34,3 +35,6 @@ lint:
 dev-deps:
 	@echo "Installing development dependencies..."
 	@go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+
+audit-cgi:
+	@$(MAKE) -C audit_cgi

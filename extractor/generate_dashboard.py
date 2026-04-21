@@ -215,6 +215,32 @@ token_data = {
     }
 }
 
+try:
+    execute_query("""
+        WITH latest_batch AS (
+            SELECT slug
+            FROM languageingenetics.audit_sample_batches
+            ORDER BY created_at DESC, slug DESC
+            LIMIT 1
+        )
+        SELECT
+            aas.sample_batch,
+            COUNT(*) AS total,
+            COALESCE(SUM(CASE WHEN aas.review_status = 'reviewed' THEN 1 ELSE 0 END), 0) AS reviewed,
+            COALESCE(SUM(CASE WHEN aas.review_status = 'pending' THEN 1 ELSE 0 END), 0) AS pending,
+            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'true_positive' THEN 1 ELSE 0 END), 0) AS true_positive,
+            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'false_positive' THEN 1 ELSE 0 END), 0) AS false_positive,
+            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'true_negative' THEN 1 ELSE 0 END), 0) AS true_negative,
+            COALESCE(SUM(CASE WHEN aas.audit_outcome = 'false_negative' THEN 1 ELSE 0 END), 0) AS false_negative
+        FROM languageingenetics.audit_article_status_view aas
+        JOIN latest_batch lb ON lb.slug = aas.sample_batch
+        GROUP BY aas.sample_batch
+    """)
+    audit_summary = cursor.fetchone()
+except psycopg2.Error:
+    conn.rollback()
+    audit_summary = None
+
 # Calculate batch waiting time in last 24 hours
 execute_query("""
     SELECT
@@ -644,7 +670,7 @@ html_content = f"""<!DOCTYPE html>
 <body>
     <div class="container">
         <h1>Word Frequency Analysis Dashboard</h1>
-        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Token Usage</a> | <a href="diagnostics.html" style="color: #2196F3;">Batch Diagnostics</a></div>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Token Usage</a> | <a href="diagnostics.html" style="color: #2196F3;">Batch Diagnostics</a> | <a href="/cgi-bin/audit-status.cgi" style="color: #2196F3;">Human Audit</a></div>
 
         <h2>Progress Overview</h2>
         <div class="grid">
@@ -686,7 +712,32 @@ html_content = f"""<!DOCTYPE html>
                 <div class="subvalue">{batch_utilization:.1f}% active processing</div>
             </div>
         </div>
+"""
 
+if audit_summary:
+    audit_pct = (audit_summary['reviewed'] / audit_summary['total'] * 100) if audit_summary['total'] else 0
+    html_content += f"""
+        <h2>Human Audit</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Latest Batch</h3>
+                <div class="value">{audit_summary['sample_batch']}</div>
+                <div class="subvalue"><a href="/cgi-bin/audit-status.cgi" style="color: #2196F3;">Open public audit status</a></div>
+            </div>
+            <div class="card">
+                <h3>Reviewed</h3>
+                <div class="value">{audit_summary['reviewed']:,}</div>
+                <div class="subvalue">{audit_pct:.1f}% of {audit_summary['total']:,} sampled articles</div>
+            </div>
+            <div class="card">
+                <h3>Pending</h3>
+                <div class="value">{audit_summary['pending']:,}</div>
+                <div class="subvalue">TP {audit_summary['true_positive']:,} · FP {audit_summary['false_positive']:,} · TN {audit_summary['true_negative']:,} · FN {audit_summary['false_negative']:,}</div>
+            </div>
+        </div>
+"""
+
+html_content += f"""
         <h2>Articles by Journal</h2>
         <table>
             <thead>

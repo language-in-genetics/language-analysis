@@ -8,6 +8,7 @@ A research project analyzing racial/ethnic terminology usage in genetics journal
 - **Go Tools** (`cmd/pgjsontool`, `cmd/crossrefimport`): Legacy bulk loader plus incremental importer
 - **Python Pipeline** (`extractor/`): OpenAI batch processing for content analysis
 - **Automated Dashboard**: Generates static HTML dashboards showing analysis results
+- **Human Audit Workflow** (`audit/`, `audit_cgi/`): authenticated review UI on `merah`, public audit-status pages, and nightly SQLite-to-PostgreSQL import
 
 ## Import Status
 
@@ -132,6 +133,22 @@ make test
 # Run linter
 make lint
 ```
+
+## Human Audit
+
+The audit subsystem samples both classifier-positive and classifier-negative articles for human review.
+
+- Create a reproducible sample batch:
+  - `cd extractor && uv run create_audit_batch.py --positive-size 100 --negative-size 100`
+- Pull the live review SQLite database from `merah`:
+  - `./audit/sync_audit_db.sh`
+- Import the SQLite review state into PostgreSQL:
+  - `cd extractor && uv run import_audit_reviews.py --sqlite-db ../audit/review_data/lig_audit.db`
+
+The intended split is:
+
+- live review UI and public audit status on `merah` SQLite
+- canonical reporting and dashboard summaries in PostgreSQL
 
 ## Documentation
 
