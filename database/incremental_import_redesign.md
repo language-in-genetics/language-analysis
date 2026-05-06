@@ -1,8 +1,27 @@
 # Incremental Crossref Import Redesign
 
-Status: proposed
+Status: revised after the aborted 2026 import
 
 This document describes the import redesign needed to support yearly Crossref additions without destroying existing data or breaking downstream analysis.
+
+## April 2026 Correction: Versioning Should Be Semantic, Not Raw-JSON Based
+
+The first attempted 2026 annual import exposed a design bug in the original versioning model. The importer treated `sha256(raw_json_text)` as the version identity. Crossref changes volatile fields such as `indexed`, `deposited`, citation counts, links, and other bookkeeping across annual dumps, so that rule created a near-one-new-version-per-row explosion even when the title, abstract, journal, publication year, and record type were unchanged.
+
+For this project, raw JSON churn is not a meaningful metadata version. The meaningful question is whether the text that feeds analysis changed, especially title or abstract. Therefore yearly imports should not append a full `crossref_work_versions` row just because the raw payload changed.
+
+The revised target is:
+
+- keep one stable `public.crossref_works` row per DOI/work
+- keep a current metadata/raw payload row for the latest analysis-relevant Crossref state
+- store small history rows only when analysis-relevant text changes
+- use a semantic fingerprint, not raw JSON bytes, to decide whether a work needs re-analysis
+- use DOI first, then a normalized journal/title/abstract fallback identity for records without a DOI or records whose DOI has newly appeared
+- treat the Crossref dump files themselves as the recoverable archive of raw annual payloads
+
+A practical semantic fingerprint for this project is based on normalized title and abstract. If dashboard membership should also update from imports, keep journal name, publication year, and record type as current metadata fields, but do not let changes in `indexed`, `deposited`, citation counts, or Crossref bookkeeping create analysis versions.
+
+Implementation note: `public.crossref_work_versions.payload_sha256` remains a raw-payload checksum for compatibility and integrity checks, but it is no longer used as the semantic version identity. The importer compares normalized title/abstract text and records rows in `public.crossref_work_text_changes` only when title or abstract changed. If only Crossref bookkeeping changed, it must not rewrite the current `crossref_work_versions` row; doing so rewrites hundreds of GB for no analysis value.
 
 ## What The March 2026 Dump Actually Looks Like
 
@@ -76,13 +95,15 @@ The redesign therefore needs one stable local identifier per Crossref work, plus
 4. The dashboard and batch scripts query `public.raw_text_data` directly, so the legacy table shape leaks into the whole pipeline.
 5. There is no import manifest or run log describing which snapshot produced which rows.
 
-## Proposed Data Model
+## Revised Data Model
 
-The redesign separates three concerns:
+The original design separated three concerns:
 
 - one stable local work row
 - one version row per changed metadata payload
 - one import run row per snapshot ingest
+
+That is still directionally right, but "changed metadata payload" must not mean raw JSON byte changes. The version/history layer should be about analysis-relevant extracted metadata.
 
 ### 1. Import Runs
 
@@ -95,6 +116,8 @@ CREATE TABLE public.crossref_import_runs (
     source_type TEXT NOT NULL,          -- annual_dump, monthly_snapshot, rest_delta
     source_path TEXT NOT NULL,
     snapshot_date DATE,
+    max_publication_date DATE,
+    max_publication_year INT,
     started_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     completed_at TIMESTAMPTZ,
     status TEXT NOT NULL DEFAULT 'running',
@@ -118,6 +141,7 @@ CREATE TABLE public.crossref_works (
     id BIGSERIAL PRIMARY KEY,
     normalized_doi TEXT,
     original_doi TEXT,
+    fallback_identity TEXT,
     first_import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
     latest_import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
@@ -126,6 +150,14 @@ CREATE TABLE public.crossref_works (
 
 CREATE UNIQUE INDEX crossref_works_normalized_doi_idx
     ON public.crossref_works(normalized_doi)
+    WHERE normalized_doi IS NOT NULL;
+
+CREATE INDEX CONCURRENTLY crossref_works_fallback_identity_hash_idx
+    ON public.crossref_works USING hash (fallback_identity)
+    WHERE fallback_identity IS NOT NULL;
+
+CREATE INDEX CONCURRENTLY crossref_works_normalized_doi_id_idx
+    ON public.crossref_works (normalized_doi) INCLUDE (id)
     WHERE normalized_doi IS NOT NULL;
 ```
 
@@ -136,40 +168,92 @@ Rules:
 - store DOI in a normalized form, for example lowercase and trimmed
 - do not use Crossref row position or file number as a durable key
 - do not make DOI the primary key because missing-DOI edge cases should not break the schema
-- records without a DOI should be rejected or quarantined explicitly until a durable fallback policy exists
+- `fallback_identity` is the normalized journal/title/abstract tuple used only for exact identity fallback
+- use PostgreSQL's `hash` index for equality lookup on that fallback identity; do not btree-index a digest for this purpose
+- reject no-DOI records only when they also lack enough journal/title/abstract text to form a fallback identity
+- if a later Crossref record supplies a DOI for an existing fallback match, update the stable work row with that DOI
 
-### 3. Work Versions Table
+### 3. Current Metadata And Text History
 
-Store one row per distinct raw metadata payload seen for a work.
+The existing `public.crossref_work_versions` table can continue to serve as the current metadata source during the migration, but it should not keep accumulating rows for Crossref bookkeeping churn. A cleaner long-term shape is a current row plus a small text history table.
 
 ```sql
-CREATE TABLE public.crossref_work_versions (
-    id BIGSERIAL PRIMARY KEY,
-    work_id BIGINT NOT NULL REFERENCES public.crossref_works(id) ON DELETE CASCADE,
-    import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
+CREATE TABLE public.crossref_work_current (
+    work_id BIGINT PRIMARY KEY REFERENCES public.crossref_works(id) ON DELETE CASCADE,
+    latest_import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
     raw_json_text TEXT NOT NULL,
-    payload_sha256 TEXT NOT NULL,
     title TEXT,
     abstract TEXT,
+    title_abstract_sha256 TEXT NOT NULL,
     journal_name TEXT,
     pub_year INT,
     record_type TEXT,
-    is_current BOOLEAN NOT NULL DEFAULT false,
-    first_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
-    UNIQUE (work_id, payload_sha256)
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
-CREATE UNIQUE INDEX crossref_work_versions_current_idx
-    ON public.crossref_work_versions(work_id)
-    WHERE is_current;
+CREATE TABLE public.crossref_work_text_history (
+    id BIGSERIAL PRIMARY KEY,
+    work_id BIGINT NOT NULL REFERENCES public.crossref_works(id) ON DELETE CASCADE,
+    import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
+    title TEXT,
+    abstract TEXT,
+    title_abstract_sha256 TEXT NOT NULL,
+    first_seen_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    UNIQUE (work_id, title_abstract_sha256)
+);
 ```
 
 Rules:
 
-- Every import is compared against the current version for the same work.
-- If the payload hash is unchanged, do not insert another version row.
-- If the payload hash changed, insert a new version row and flip `is_current`.
-- Extract a few fields into plain columns so the dashboard and batch queries do not keep reparsing the whole JSON blob.
+- Every import is compared against the current row for the same work.
+- If normalized title and abstract are unchanged, leave the current version row alone; do not refresh raw JSON merely because Crossref bookkeeping fields changed, do not create a history row, and do not queue re-analysis.
+- If normalized title or abstract changed, add a `crossref_work_text_history` row and mark the work as needing analysis against the new text hash.
+- Extract a few current fields into plain columns so the dashboard and batch queries do not keep reparsing the whole JSON blob.
+- Do not version on volatile fields such as `indexed`, `deposited`, `is-referenced-by-count`, `reference`, `link`, or Crossref bookkeeping fields.
+
+Compatibility note: while the deployed schema still has `public.crossref_work_versions`, the importer should use semantic comparison of extracted fields rather than `raw_json_text` hashes. A later compaction can rename or replace the table once downstream readers are stable.
+
+The deployed compatibility table currently carries these additional columns:
+
+- `pub_date`: extracted publication date when Crossref provides date-parts
+- `title_norm`, `abstract_norm`: normalized comparison text
+- `text_fingerprint`: SHA-256 over normalized title and abstract, used for cheap equality checks and re-analysis decisions
+
+The import path should also have a covering current-version index so unchanged rows can be checked without fetching title, abstract, or raw JSON from the large heap:
+
+```sql
+CREATE INDEX CONCURRENTLY crossref_work_versions_current_fingerprint_idx
+ON public.crossref_work_versions (work_id)
+INCLUDE (id, import_run_id, text_fingerprint)
+WHERE is_current;
+```
+
+The small change table is:
+
+```sql
+CREATE TABLE public.crossref_work_text_changes (
+    id BIGSERIAL PRIMARY KEY,
+    work_id BIGINT NOT NULL REFERENCES public.crossref_works(id) ON DELETE CASCADE,
+    from_work_version_id BIGINT REFERENCES public.crossref_work_versions(id) ON DELETE SET NULL,
+    to_work_version_id BIGINT NOT NULL REFERENCES public.crossref_work_versions(id) ON DELETE CASCADE,
+    from_import_run_id BIGINT REFERENCES public.crossref_import_runs(id),
+    to_import_run_id BIGINT NOT NULL REFERENCES public.crossref_import_runs(id),
+    previous_title TEXT,
+    previous_abstract TEXT,
+    new_title TEXT,
+    new_abstract TEXT,
+    previous_title_norm TEXT,
+    previous_abstract_norm TEXT,
+    new_title_norm TEXT,
+    new_abstract_norm TEXT,
+    previous_text_fingerprint TEXT,
+    new_text_fingerprint TEXT,
+    changed_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    UNIQUE (work_id, from_work_version_id, to_work_version_id)
+);
+```
+
+The canonical database raw JSON location remains `public.crossref_work_versions.raw_json_text`, but it is canonical for the stored semantic version, not for every annual dump's byte-for-byte payload. The annual dump files are the recoverable archive for unchanged raw bookkeeping churn; changed title/abstract records get a new current row plus a compact change record.
 
 ### 4. Legacy Row Mapping During Migration
 
@@ -202,8 +286,8 @@ CREATE TABLE public.crossref_import_rejections (
 
 At minimum this should capture:
 
-- missing DOI
 - malformed JSON
+- missing DOI plus missing fallback identity (`missing_doi_identity`)
 - impossible publication date extraction, if we decide that should be rejected
 
 ## Changes to Analysis Tables
@@ -249,7 +333,8 @@ SELECT
     v.abstract,
     v.journal_name,
     v.pub_year,
-    v.record_type
+    v.record_type,
+    v.pub_date
 FROM public.crossref_works w
 JOIN public.crossref_work_versions v
   ON v.work_id = w.id
@@ -270,51 +355,63 @@ Do not upsert directly from shell `COPY` into final tables. Instead:
 
 - stream each `.jsonl.gz` file
 - parse the DOI once
-- compute a payload hash once
+- compute a raw payload hash once for integrity
+- compute normalized title/abstract and the semantic text fingerprint
+- compute fallback identity from normalized journal/title/abstract when available
 - load into a staging table for the current run
 
 Suggested staging shape:
 
 ```sql
 CREATE TEMP TABLE import_stage (
-    doi TEXT,
+    normalized_doi TEXT,
+    original_doi TEXT,
     raw_json_text TEXT NOT NULL,
     payload_sha256 TEXT NOT NULL,
+    text_fingerprint TEXT NOT NULL,
     title TEXT,
     abstract TEXT,
+    title_norm TEXT NOT NULL,
+    abstract_norm TEXT NOT NULL,
     journal_name TEXT,
     pub_year INT,
+    pub_date DATE,
+    fallback_identity TEXT,
     record_type TEXT
 );
 ```
 
 This keeps the import resumable and lets SQL handle the final merges in batches.
 
-### Step 3. Upsert stable works
+### Step 3. Resolve stable works
 
-For each distinct DOI in staging:
+Resolve each staged row in this order:
 
-- insert a new row into `public.crossref_works` if missing
-- otherwise update `latest_import_run_id`
-
-Rows without DOI should be written to `public.crossref_import_rejections` and skipped.
+- match by `normalized_doi` when the DOI already exists
+- otherwise, if the publication date/year is not clearly after the previous completed dump cutoff, match by exact `fallback_identity`
+- if the fallback match has no DOI and the new record has one, update the existing work with the new DOI
+- if the record is clearly newer than the previous dump cutoff, or no fallback match exists, insert a new `public.crossref_works` row
+- reject only rows that have neither DOI nor enough journal/title/abstract text to build `fallback_identity`
 
 ### Step 4. Insert only changed versions
 
-For each staged DOI:
+For each resolved work:
 
-- compare `payload_sha256` against the current version for that work
-- if unchanged, skip version insert
-- if changed, insert a new version row and mark it current
+- compare normalized title and abstract against the current row for that work
+- when the current row is a legacy backfill row with missing normalized text/fingerprint columns, compute the current row's normalized title/abstract text on demand before deciding it changed
+- if unchanged, do not insert a history/version row
+- do not refresh the current row's raw JSON or metadata for unchanged records, because that turns a semantic no-op into a full heap/index/WAL rewrite
+- if changed, insert a new current `crossref_work_versions` row and add a compact `crossref_work_text_changes` audit row
+- use `text_fingerprint`, not `payload_sha256`, to decide whether re-analysis may be needed
 
 ### Step 5. Mark snapshot visibility
 
-Each work should record whether it appeared in the newest full snapshot.
+Do not update every work just to record that it appeared in the newest full snapshot; that creates the same full-table rewrite problem as refreshing unchanged raw JSON.
 
 Minimum useful state:
 
-- `latest_import_run_id` in `crossref_works`
-- `is_current` in `crossref_work_versions`
+- `latest_import_run_id` in `crossref_works` for newly inserted or semantically changed works
+- a current metadata row keyed by `work_id`
 
 Optional later addition:
 
@@ -326,7 +423,7 @@ If the current version changed in a way that affects title or abstract, the work
 
 A simple rule is enough for the first pass:
 
-- if `payload_sha256` changed and the current version has not been analyzed, it is pending
+- if `text_fingerprint` changed and that text hash has not been analyzed, it is pending
 
 ## Operational Workflow on `raksasa`
 
@@ -368,11 +465,14 @@ Add:
 - `public.crossref_import_runs`
 - `public.crossref_works`
 - `public.crossref_work_versions`
+- `public.crossref_work_text_changes`
 - `public.crossref_legacy_raw_text_map`
 - `public.crossref_import_rejections`
 - `public.crossref_current_works` view
 
 Do this without removing `public.raw_text_data`.
+
+The compatibility migration is captured in `database/migrate_crossref_semantic_import.sql`. Run it before restarting a stopped annual import so the large fallback identity index is built with `CREATE INDEX CONCURRENTLY`.
 
 ### Phase 2. Backfill the March 2025 baseline
 
@@ -428,7 +528,51 @@ The redesign is done when all of the following are true:
 
 - importing a new annual dump does not require truncating `public.raw_text_data`
 - one DOI maps to one stable local `work_id`
-- changed Crossref metadata creates a new version row instead of a duplicate work
+- changed title or abstract creates a small history row instead of a duplicate work
+- Crossref bookkeeping churn does not create a new DB version
 - existing analysis results remain attached to the work across imports
 - the pipeline can tell whether the current metadata version still needs analysis
 - yearly imports can be run as `languageingenetics` from `/crossref/`
+
+## Follow-up: Retractions And Corrections
+
+After the 2025 backfill is complete, do a focused pass on retraction-style metadata before finalizing any schema for it.
+
+### Investigation Plan
+
+1. Find a small set of known 2025-era retractions, corrections, errata, and withdrawals in scope for this project.
+2. Check how those records appear in the current Crossref payloads stored in `public.crossref_work_versions.raw_json_text`.
+3. Record which raw keys actually carry the useful signal in practice.
+   Likely candidates include `update-to`, `update-policy`, `relation`, Crossmark-related fields, and `assertion`, but this must be verified from real 2025 examples rather than assumed from older samples.
+
+### Schema Plan
+
+Retraction/correction state should be stored on `public.crossref_work_versions`, not only on `public.crossref_works`, because this is metadata that can change across imports.
+
+The exact extracted column set is intentionally deferred until the real 2025 examples are checked, but the likely shape is:
+
+- a compact extracted status column such as `retraction_status` or `update_type`
+- possibly one or more helper columns such as `update_target_doi` or `has_retraction_signal`
+
+Whatever final shape is chosen, expose the current status through `public.crossref_current_works` as well.
+
+### Index Plan
+
+Once the extracted column is defined, add a partial index so that retracted or corrected current works can be found cheaply. For example:
+
+```sql
+CREATE INDEX crossref_work_versions_retraction_idx
+ON public.crossref_work_versions(work_id)
+WHERE is_current AND retraction_status IS NOT NULL;
+```
+
+The exact predicate should match the final extracted-column design.
+
+### Project-Specific Analysis
+
+For this project, once retraction/correction flags exist, test whether the language-use patterns differ between retracted and non-retracted papers.
+
+At minimum, compare:
+
+- counts and rates of the existing terminology flags in `languageingenetics.files`
+- journal mix and publication-year mix, so obvious composition effects are not mistaken for a language effect

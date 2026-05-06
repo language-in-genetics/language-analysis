@@ -12,7 +12,10 @@ import logging
 from datetime import datetime
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--openai-api-key", default=os.path.expanduser("~/.openai.key"))
+parser.add_argument(
+    "--openai-api-key",
+    default=os.environ.get("OPENAI_API_KEY_FILE", os.path.expanduser("~/.openai.lig.key")),
+)
 parser.add_argument("--progress-bar", action='store_true', help="Show a progress bar for updating the database on each batch")
 parser.add_argument("--report-costs", action="store_true", help="Report the cost of the runs fetched")
 parser.add_argument("--error-log", default="batchfetch_errors.log", help="Path to error log file")
@@ -40,6 +43,14 @@ def sanitize_string(s):
     if sanitized != s:
         logging.warning(f"Removed {s.count(chr(0))} NUL character(s) from string")
     return sanitized
+
+
+def custom_id_target(custom_id):
+    """Return the files table lookup column and value for an OpenAI custom_id."""
+    custom_id = str(custom_id)
+    if custom_id.startswith("file:"):
+        return "id", int(custom_id.split(":", 1)[1])
+    return "article_id", int(custom_id)
 
 api_key = open(args.openai_api_key).read().strip()
 client = openai.OpenAI(api_key=api_key)
@@ -98,18 +109,10 @@ for batch_row in batches:
             if record['response']['status_code'] != 200:
                 continue
 
-            # Check if tool_calls exists (model might finish without using tools)
-            message = record['response']['body']['choices'][0]['message']
-            if 'tool_calls' not in message or not message['tool_calls']:
-                # Model didn't use the tool - skip this record but don't count as error
-                # The record will remain unprocessed and can be resubmitted
-                continue
-
             # Extract the tool call arguments
-            arguments = json.loads(message['tool_calls'][0]['function']['arguments'])
+            arguments = json.loads(record['response']['body']['choices'][0]['message']['tool_calls'][0]['function']['arguments'])
 
-            # Get the article_id (which was used as the custom_id)
-            article_id = int(record['custom_id'])
+            lookup_column, lookup_value = custom_id_target(record['custom_id'])
 
             # Extract usage information
             usage = record['response']['body']['usage']
@@ -119,9 +122,9 @@ for batch_row in batches:
             european_phrase = sanitize_string(arguments.get('european_phrase_used', ''))
             other_phrase = sanitize_string(arguments.get('other_phrase_used', ''))
 
-            # Update the files table with the analysis results
-            cursor.execute("""
-                UPDATE languageingenetics.files SET
+            cursor.execute(f"""
+                UPDATE languageingenetics.files
+                SET
                     processed = true,
                     when_processed = CURRENT_TIMESTAMP,
                     caucasian = %s,
@@ -132,7 +135,7 @@ for batch_row in batches:
                     other_phrase_used = %s,
                     prompt_tokens = %s,
                     completion_tokens = %s
-                WHERE article_id = %s
+                WHERE {lookup_column} = %s
             """, [
                 arguments.get('caucasian', False),
                 arguments.get('white', False),
@@ -142,8 +145,12 @@ for batch_row in batches:
                 other_phrase,
                 usage['prompt_tokens'],
                 usage['completion_tokens'],
-                article_id
+                lookup_value
             ])
+            if cursor.rowcount != 1:
+                raise RuntimeError(
+                    f"updated {cursor.rowcount} files rows for custom_id {record['custom_id']}"
+                )
 
             total_prompt_tokens += usage['prompt_tokens']
             total_completion_tokens += usage['completion_tokens']
@@ -160,10 +167,10 @@ for batch_row in batches:
             logging.error(f"Error message: {str(e)}")
 
             try:
-                article_id = int(record.get('custom_id', 'unknown'))
-                logging.error(f"Article ID: {article_id}")
+                lookup_column, lookup_value = custom_id_target(record.get('custom_id', 'unknown'))
+                logging.error(f"Lookup: {lookup_column}={lookup_value}")
             except:
-                logging.error(f"Could not extract article_id")
+                logging.error(f"Could not extract files lookup from custom_id")
 
             # Log the problematic data for debugging
             try:

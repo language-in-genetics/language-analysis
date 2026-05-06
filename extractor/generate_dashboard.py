@@ -137,44 +137,59 @@ if args.explain_queries:
 
 print("Collecting data...")
 
-# Query journals_mv first to get article counts efficiently
-# If MV doesn't exist, we'll use a slower method
-try:
+# Get tracked journals first so the dashboard does not scan the full Crossref
+# corpus on every static rebuild.
+execute_query("SELECT name, enabled FROM languageingenetics.journals ORDER BY name")
+tracked_journal_rows = cursor.fetchall()
+tracked_journal_names = [row['name'] for row in tracked_journal_rows]
+enabled_journals = [row['name'] for row in tracked_journal_rows if row['enabled']]
+
+# Journal counts come from the canonical current Crossref view, restricted to
+# the project journals. The all-Crossref journal catalogue is too large for the
+# daily site rebuild path.
+if tracked_journal_names:
     execute_query("""
         SELECT
             journal_name,
-            article_count,
-            earliest_year,
-            latest_year,
-            articles_with_abstract,
-            abstract_percentage,
-            total_citations,
-            avg_citations_per_article
-        FROM public.journals_mv
-        WHERE journal_name ILIKE '%genetic%'
+            COUNT(*) AS article_count,
+            MIN(pub_year) AS earliest_year,
+            MAX(pub_year) AS latest_year,
+            COUNT(*) FILTER (WHERE abstract IS NOT NULL) AS articles_with_abstract,
+            ROUND(100.0 * COUNT(*) FILTER (WHERE abstract IS NOT NULL) / COUNT(*), 1) AS abstract_percentage,
+            NULL::numeric AS total_citations,
+            NULL::numeric AS avg_citations_per_article,
+            NULL::bigint AS total_references,
+            COUNT(DISTINCT record_type) AS publication_types,
+            NULL::text AS sample_issn
+        FROM public.crossref_current_works
+        WHERE journal_name = ANY(%s)
+        GROUP BY journal_name
         ORDER BY article_count DESC, journal_name
-    """)
+    """, [tracked_journal_names])
     journals_mv_data = {row['journal_name']: row for row in cursor.fetchall()}
-    using_mv = True
-    print(f"Using journals_mv with {len(journals_mv_data)} journals", file=sys.stderr)
-except psycopg2.Error:
-    conn.rollback()
-    using_mv = False
+else:
     journals_mv_data = {}
-    print("Warning: journals_mv not available, will query raw_text_data", file=sys.stderr)
+print(f"Using crossref_current_works with {len(journals_mv_data)} tracked journals", file=sys.stderr)
 
-# Get enabled journals first - we'll calculate total from journal stats
-execute_query("SELECT name FROM languageingenetics.journals WHERE enabled = true ORDER BY name")
-enabled_journals = [row['name'] for row in cursor]
-
-execute_query("SELECT COUNT(*) FROM languageingenetics.files WHERE processed = true")
+execute_query("""
+    SELECT COUNT(*)
+    FROM languageingenetics.files f
+    JOIN public.crossref_work_versions v ON v.id = f.work_version_id
+    JOIN languageingenetics.journals j ON j.name = v.journal_name
+    WHERE f.processed = true
+      AND j.enabled = true
+""")
 processed_articles = cursor.fetchone()['count']
 
 # Calculate completion projection
 execute_query("""
     SELECT MIN(when_processed) as earliest_processed
-    FROM languageingenetics.files
-    WHERE processed = true AND when_processed IS NOT NULL
+    FROM languageingenetics.files f
+    JOIN public.crossref_work_versions v ON v.id = f.work_version_id
+    JOIN languageingenetics.journals j ON j.name = v.journal_name
+    WHERE f.processed = true
+      AND f.when_processed IS NOT NULL
+      AND j.enabled = true
 """)
 earliest = cursor.fetchone()['earliest_processed']
 
@@ -266,33 +281,21 @@ for batch in batch_rows:
 waiting_hours = total_waiting_seconds / 3600.0
 batch_utilization = ((24 - waiting_hours) / 24 * 100) if waiting_hours < 24 else 0
 
-# Journal statistics - use MV data if available to avoid slow queries
+# Journal statistics from current Crossref works plus processed analysis rows.
 journal_stats = []
 for journal in enabled_journals:
-    # Try to get total from journals_mv first
-    if using_mv and journal in journals_mv_data:
-        total = journals_mv_data[journal]['article_count']
-    else:
-        # Fall back to querying raw_text_data (slow!)
-        execute_query("""
-            SELECT COUNT(*) as total
-            FROM public.raw_text_data
-            WHERE (regexp_replace(regexp_replace(filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)
-        """, [json.dumps([journal], default=json_default)])
-        total = cursor.fetchone()['total']
-
-    if total > 0:
-        # Get processed count
-        execute_query("""
-            SELECT COUNT(*) as processed
-            FROM languageingenetics.files f
-            JOIN public.raw_text_data r ON f.article_id = r.id
-            WHERE f.processed = true
-            AND (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb)
-        """, [json.dumps([journal], default=json_default)])
-        processed = cursor.fetchone()['processed']
-    else:
-        processed = 0
+    execute_query("""
+        SELECT
+            COUNT(cw.work_version_id) AS total,
+            COUNT(f.id) FILTER (WHERE f.processed = true) AS processed
+        FROM public.crossref_current_works cw
+        LEFT JOIN languageingenetics.files f
+            ON f.work_version_id = cw.work_version_id
+        WHERE cw.journal_name = %s
+    """, [journal])
+    row = cursor.fetchone()
+    total = row['total']
+    processed = row['processed']
 
     journal_stats.append({
         'journal': journal,
@@ -310,6 +313,29 @@ progress_data = {
     'unprocessed_articles': total_articles - processed_articles,
     'processing_percentage': (processed_articles / total_articles * 100) if total_articles > 0 else 0
 }
+
+execute_query("""
+    SELECT
+        COUNT(cw.work_version_id) AS total_2025,
+        COUNT(f.id) FILTER (WHERE f.processed = true) AS processed_2025
+    FROM public.crossref_current_works cw
+    JOIN languageingenetics.journals j
+        ON j.name = cw.journal_name
+       AND j.enabled = true
+    LEFT JOIN languageingenetics.files f
+        ON f.work_version_id = cw.work_version_id
+    WHERE cw.pub_year = 2025
+""")
+row = cursor.fetchone()
+progress_2025 = {
+    'total_articles': row['total_2025'],
+    'processed_articles': row['processed_2025'],
+}
+progress_2025['unprocessed_articles'] = progress_2025['total_articles'] - progress_2025['processed_articles']
+progress_2025['processing_percentage'] = (
+    progress_2025['processed_articles'] / progress_2025['total_articles'] * 100
+    if progress_2025['total_articles'] > 0 else 0
+)
 
 if earliest and processed_articles > 0 and total_articles > processed_articles:
     time_elapsed = (datetime.now() - earliest).total_seconds()
@@ -440,14 +466,14 @@ term_smoothed_data = {
 # Results by journal and year
 execute_query("""
     SELECT
-        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->0) as journal,
-        f.pub_year as year,
+        v.journal_name as journal,
+        COALESCE(f.pub_year, v.pub_year) as year,
         COUNT(*) as count
     FROM languageingenetics.files f
-    JOIN public.raw_text_data r ON f.article_id = r.id
+    JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     WHERE f.processed = true
     AND (f.caucasian = true OR f.white = true OR f.european = true OR f.other = true)
-    AND f.pub_year IS NOT NULL
+    AND COALESCE(f.pub_year, v.pub_year) IS NOT NULL
     GROUP BY journal, year
     ORDER BY journal, year
 """)
@@ -464,8 +490,9 @@ for row in cursor.fetchall():
 # Article-level extraction for title vs abstract analysis
 execute_query("""
     SELECT
+        f.id as file_id,
         f.article_id,
-        f.pub_year,
+        COALESCE(f.pub_year, v.pub_year) as pub_year,
         f.has_abstract,
         f.caucasian,
         f.white,
@@ -473,11 +500,11 @@ execute_query("""
         f.other,
         f.european_phrase_used,
         f.other_phrase_used,
-        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0) as journal,
-        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'title'->>0) as title,
-        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'abstract'->>0) as abstract
+        v.journal_name as journal,
+        v.title,
+        v.abstract
     FROM languageingenetics.files f
-    JOIN public.raw_text_data r ON f.article_id = r.id
+    JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     WHERE f.processed = true
 """)
 
@@ -684,6 +711,14 @@ html_content = f"""<!DOCTYPE html>
                 <h3>Processing Rate</h3>
                 <div class="value">{progress_data['processing_percentage']:.1f}%</div>
                 <div class="subvalue">{progress_data['unprocessed_articles']:,} remaining</div>
+            </div>
+            <div class="card">
+                <h3>2025 Papers</h3>
+                <div class="value">{progress_2025['processing_percentage']:.1f}%</div>
+                <div class="subvalue">{progress_2025['processed_articles']:,} of {progress_2025['total_articles']:,} processed</div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: {progress_2025['processing_percentage']:.1f}%"></div>
+                </div>
             </div>
             <div class="card">
                 <h3>Est. Completion</h3>
@@ -1578,38 +1613,10 @@ print("Generating journals page...")
 execute_query("SELECT name, enabled FROM languageingenetics.journals ORDER BY name")
 tracked_journals = {row['name']: row['enabled'] for row in cursor.fetchall()}
 
-# Extend journals_mv_data with additional fields if we need them for the journals page
-# (we already queried journals_mv at the beginning of the script)
-if using_mv:
-    # Re-query with additional fields for the journals page
-    try:
-        execute_query("""
-            SELECT
-                journal_name,
-                article_count,
-                earliest_year,
-                latest_year,
-                articles_with_abstract,
-                abstract_percentage,
-                total_citations,
-                avg_citations_per_article,
-                total_references,
-                publication_types,
-                sample_issn
-            FROM public.journals_mv
-            WHERE journal_name ILIKE '%genetic%'
-            ORDER BY article_count DESC, journal_name
-        """)
-        journals_mv_data = {row['journal_name']: row for row in cursor.fetchall()}
-    except psycopg2.Error:
-        conn.rollback()
-        # If it fails now, just continue with what we have
-        pass
-
 # Get race terminology breakdown per journal from processed files
 execute_query("""
     SELECT
-        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0) as journal,
+        v.journal_name as journal,
         COUNT(*) as processed_count,
         COUNT(*) FILTER (WHERE f.caucasian = true) as caucasian_count,
         COUNT(*) FILTER (WHERE f.white = true) as white_count,
@@ -1621,7 +1628,7 @@ execute_query("""
         AVG(f.prompt_tokens + f.completion_tokens) as avg_tokens,
         COUNT(*) FILTER (WHERE f.has_abstract = true) as processed_with_abstract
     FROM languageingenetics.files f
-    JOIN public.raw_text_data r ON f.article_id = r.id
+    JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     WHERE f.processed = true
     GROUP BY journal
 """)
@@ -1630,10 +1637,10 @@ processed_stats = {row['journal']: row for row in cursor.fetchall() if row['jour
 # Get processing counts for tracked journals
 execute_query("""
     SELECT
-        (regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title'->>0) as journal,
+        v.journal_name as journal,
         COUNT(*) as processed_count
     FROM languageingenetics.files f
-    JOIN public.raw_text_data r ON f.article_id = r.id
+    JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     WHERE f.processed = true
     GROUP BY journal
 """)

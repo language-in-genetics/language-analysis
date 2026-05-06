@@ -3,6 +3,8 @@ cronscript.log
 
 # Editor and OS cruft
 .DS_Store
+._*
+**/._*
 #*#
 *.swp
 *.swo
@@ -19,6 +21,7 @@ audit/*.log
 audit_cgi/*.cgi
 
 # Query diagnostic and optimization logs
+logs/
 *.log
 *_explains.log
 *_optimization_suggestions.md

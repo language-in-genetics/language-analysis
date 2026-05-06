@@ -9,7 +9,10 @@ import psycopg2.extras
 import time
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--openai-api-key", default=os.path.expanduser("~/.openai.key"))
+parser.add_argument(
+    "--openai-api-key",
+    default=os.environ.get("OPENAI_API_KEY_FILE", os.path.expanduser("~/.openai.lig.key")),
+)
 parser.add_argument("--only-batch", type=int, help="The batch ID to look at")
 parser.add_argument("--monitor", action="store_true", help="Monitor in a loop until the status is 'completed'. Only makes sense with --only-batch")
 parser.add_argument("--quiet", action="store_true", help="Suppress non-error output")

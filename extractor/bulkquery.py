@@ -14,10 +14,14 @@ import psycopg2.extras
 parser = argparse.ArgumentParser()
 parser.add_argument("--limit", type=int, help="Stop after processing this many articles")
 parser.add_argument("--journal", action="append", help="Filter by journal name (can specify multiple times, e.g., --journal 'The American Journal of Human Genetics')")
+parser.add_argument("--pub-year", type=int, help="Only submit articles from this publication year")
 parser.add_argument("--output-file", help="Where to put the batch file (default: random tempfile)")
 parser.add_argument("--dry-run", action="store_true", help="Don't send the batch to OpenAI")
 parser.add_argument("--batch-id-save-file", help="What file to put the local batch ID into")
-parser.add_argument("--openai-api-key", default=os.path.expanduser("~/.openai.key"))
+parser.add_argument(
+    "--openai-api-key",
+    default=os.environ.get("OPENAI_API_KEY_FILE", os.path.expanduser("~/.openai.lig.key")),
+)
 parser.add_argument("--explain-queries", action="store_true", help="Run EXPLAIN on all queries and log to file")
 parser.add_argument("--explain-log", default="bulkquery_explains.log", help="Log file for EXPLAIN output")
 args = parser.parse_args()
@@ -68,6 +72,60 @@ def execute_query(cursor_to_use, sql, params=None):
 # Set search path
 cursor.execute("SET search_path TO languageingenetics, public")
 
+# Keep the analysis table compatible with both the legacy raw_text_data IDs and
+# the canonical versioned Crossref tables.
+cursor.execute("ALTER TABLE languageingenetics.files ADD COLUMN IF NOT EXISTS work_id BIGINT")
+cursor.execute("ALTER TABLE languageingenetics.files ADD COLUMN IF NOT EXISTS work_version_id BIGINT")
+cursor.execute("""
+    SELECT EXISTS (
+        SELECT 1
+        FROM languageingenetics.files
+        WHERE article_id IS NOT NULL
+          AND work_version_id IS NULL
+    ) AS needs_legacy_backfill
+""")
+if cursor.fetchone()['needs_legacy_backfill']:
+    cursor.execute("""
+        CREATE TEMP TABLE tmp_files_to_map AS
+        SELECT id, article_id
+        FROM languageingenetics.files
+        WHERE article_id IS NOT NULL
+          AND work_version_id IS NULL
+        ORDER BY article_id
+    """)
+    cursor.execute("ANALYZE tmp_files_to_map")
+    cursor.execute("SET enable_hashjoin = off")
+    cursor.execute("SET enable_mergejoin = off")
+    cursor.execute("""
+        UPDATE languageingenetics.files f
+        SET
+            work_id = m.work_id,
+            work_version_id = m.work_version_id
+        FROM tmp_files_to_map t
+        JOIN public.crossref_legacy_raw_text_map m
+          ON m.raw_text_data_id = t.article_id
+        WHERE f.id = t.id
+    """)
+    cursor.execute("RESET enable_hashjoin")
+    cursor.execute("RESET enable_mergejoin")
+    cursor.execute("DROP TABLE tmp_files_to_map")
+cursor.execute("""
+    CREATE INDEX IF NOT EXISTS idx_files_work_version_id
+        ON languageingenetics.files (work_version_id)
+        WHERE work_version_id IS NOT NULL
+""")
+cursor.execute("""
+    CREATE INDEX IF NOT EXISTS idx_files_work_id
+        ON languageingenetics.files (work_id)
+        WHERE work_id IS NOT NULL
+""")
+cursor.execute("""
+    CREATE INDEX IF NOT EXISTS idx_files_processed_work_version
+        ON languageingenetics.files (processed, work_version_id)
+        WHERE work_version_id IS NOT NULL
+""")
+conn.commit()
+
 # Initialize explain log if needed
 if args.explain_queries:
     with open(args.explain_log, 'w') as f:
@@ -80,19 +138,21 @@ cursor.execute(
     CREATE TABLE IF NOT EXISTS languageingenetics.batch_diagnostics (
         id BIGSERIAL PRIMARY KEY,
         batch_id INT NOT NULL REFERENCES languageingenetics.batches(id) ON DELETE CASCADE,
-        article_id INT,
+        article_id BIGINT,
         event_type TEXT NOT NULL,
         details JSONB,
         created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
-    )
-    """
 )
+"""
+)
+cursor.execute("ALTER TABLE languageingenetics.batch_diagnostics ALTER COLUMN article_id TYPE BIGINT")
 cursor.execute(
     """
     CREATE INDEX IF NOT EXISTS batch_diagnostics_batch_id_idx
         ON languageingenetics.batch_diagnostics (batch_id)
     """
 )
+conn.commit()
 
 # Diagnostics helpers -----------------------------------------------------
 stats = Counter()
@@ -153,40 +213,43 @@ tools = [{
     }
 }]
 
-def process_article(article_id, metadata):
+def process_article(row):
     stats['examined'] += 1
 
-    if metadata is None:
+    article_id = row.get('article_id')
+    work_id = row.get('work_id')
+    work_version_id = row.get('work_version_id')
+    title = row.get('title')
+    abstract = row.get('abstract')
+    pub_year = row.get('pub_year')
+    diagnostic_id = article_id if article_id is not None else work_version_id
+
+    if work_version_id is None and article_id is None:
         stats['missing_metadata'] += 1
-        record_diagnostic('skipped', article_id, reason='missing_metadata')
+        record_diagnostic('skipped', diagnostic_id, reason='missing_identifier')
         return False
 
     # Check if article is already processed
-    execute_query(cursor, "SELECT id FROM languageingenetics.files WHERE article_id = %s", [article_id])
+    execute_query(
+        cursor,
+        """
+        SELECT id
+        FROM languageingenetics.files
+        WHERE (work_version_id = %s AND %s IS NOT NULL)
+           OR (article_id = %s AND %s IS NOT NULL)
+        """,
+        [work_version_id, work_version_id, article_id, article_id]
+    )
     if cursor.fetchone() is not None:
         stats['already_processed'] += 1
-        record_diagnostic('skipped', article_id, reason='already_processed')
+        record_diagnostic('skipped', diagnostic_id, reason='already_processed')
         return False
 
-    # Extract information
-    title = metadata.get('title', [None])[0] if isinstance(metadata.get('title'), list) else metadata.get('title')
     if not title:
         stats['missing_title'] += 1
-        record_diagnostic('skipped', article_id, reason='missing_title')
-        print(f"Warning: No title found in article {article_id}", file=sys.stderr)
+        record_diagnostic('skipped', diagnostic_id, reason='missing_title')
+        print(f"Warning: No title found for work version {diagnostic_id}", file=sys.stderr)
         return False
-
-    abstract = None
-    if 'abstract' in metadata:
-        abstract = metadata['abstract']
-
-    # Get publication year
-    pub_year = None
-    if 'published' in metadata and 'date-parts' in metadata['published']:
-        try:
-            pub_year = metadata['published']['date-parts'][0][0]
-        except (IndexError, TypeError):
-            pass
 
     # Create the prompt
     prompt = "Does this article use any terms like \"Caucasian\" or \"white\" or \"European ancestry\" in a way that refers to race, ancestry, ethnicity or population?\n\n"
@@ -194,9 +257,26 @@ def process_article(article_id, metadata):
     if abstract:
         prompt += f"ABSTRACT: {abstract}\n"
 
+    cursor.execute(
+        """
+        INSERT INTO languageingenetics.files (
+            article_id,
+            work_id,
+            work_version_id,
+            has_abstract,
+            pub_year,
+            batch_id
+        )
+        VALUES (%s, %s, %s, %s, %s, %s)
+        RETURNING id
+        """,
+        [article_id, work_id, work_version_id, abstract is not None, pub_year, batch_id]
+    )
+    file_id = cursor.fetchone()['id']
+
     # Create the batch request
     batch_text = {
-        "custom_id": str(article_id),
+        "custom_id": f"file:{file_id}",
         "method": "POST",
         "url": "/v1/chat/completions",
         "body": {
@@ -211,14 +291,16 @@ def process_article(article_id, metadata):
     with open(args.output_file, 'a') as f:
         f.write(json.dumps(batch_text) + "\n")
 
-    # Add to database
-    cursor.execute(
-        "INSERT INTO languageingenetics.files (article_id, has_abstract, pub_year, batch_id) VALUES (%s, %s, %s, %s)",
-        [article_id, abstract is not None, pub_year, batch_id]
-    )
-
     stats['submitted'] += 1
-    record_diagnostic('submitted', article_id, has_abstract=abstract is not None, pub_year=pub_year)
+    record_diagnostic(
+        'submitted',
+        diagnostic_id,
+        file_id=file_id,
+        work_id=work_id,
+        work_version_id=work_version_id,
+        has_abstract=abstract is not None,
+        pub_year=pub_year,
+    )
     return True
 
 # Determine which journals to query
@@ -233,56 +315,69 @@ else:
     if journals_to_query:
         print(f"Processing {len(journals_to_query)} enabled journals from database", file=sys.stderr)
 
-# Build query to get articles from raw_text_data
-# Parse the filesrc JSON text column
-# Use UNION ALL instead of OR to allow GIN index usage (see bulkquery_optimization_suggestions.md)
+# Build query to get current Crossref work versions. Existing legacy analyses
+# have been backfilled with work_version_id, so this skips both completed rows
+# and rows already submitted in an unretrieved batch.
 query_params = []
+limit_sql = f"\n        LIMIT {args.limit}" if args.limit else ""
+year_filter_sql = "\n          AND cw.pub_year = %s" if args.pub_year is not None else ""
 
 if journals_to_query:
-    # Build UNION ALL query - each journal gets its own SELECT that can use the GIN index
     subqueries = []
     for journal in journals_to_query:
-        subqueries.append("""
+        subqueries.append(f"""
+        (
         SELECT
-            id,
-            regexp_replace(
-                regexp_replace(r.filesrc, E'\n', ' ', 'g'),
-                E'\t', '    ', 'g'
-            )::jsonb as data
-        FROM public.raw_text_data r
-        WHERE regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->'container-title' @> %s::jsonb
-          AND regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->>'type' != 'journal-issue'
+            NULL::INT AS article_id,
+            cw.work_id,
+            cw.work_version_id,
+            cw.title,
+            cw.abstract,
+            cw.pub_year
+        FROM public.crossref_current_works cw
+        WHERE cw.journal_name = %s
+          AND cw.title IS NOT NULL
+          {year_filter_sql}
           AND NOT EXISTS (
               SELECT 1
               FROM languageingenetics.files f
-              WHERE f.article_id = r.id
+              WHERE f.work_version_id = cw.work_version_id
           )
+        ORDER BY cw.pub_year DESC NULLS LAST, cw.work_version_id
+        {limit_sql}
+        )
         """)
-        query_params.append(json.dumps([journal]))
+        query_params.append(journal)
+        if args.pub_year is not None:
+            query_params.append(args.pub_year)
 
     query = "SELECT * FROM (\n" + "\n    UNION ALL\n".join(subqueries) + "\n) AS combined"
 
     if args.limit:
-        query += f" LIMIT {args.limit}"
+        query += f" ORDER BY pub_year DESC NULLS LAST, work_version_id LIMIT {args.limit}"
 else:
     # No journal filter - select all articles (shouldn't happen in normal operation)
-    query = """
+    if args.pub_year is not None:
+        query_params.append(args.pub_year)
+    query = f"""
     SELECT
-        id,
-        regexp_replace(
-            regexp_replace(r.filesrc, E'\n', ' ', 'g'),
-            E'\t', '    ', 'g'
-        )::jsonb as data
-    FROM public.raw_text_data r
-    WHERE regexp_replace(regexp_replace(r.filesrc, E'\n', ' ', 'g'), E'\t', '    ', 'g')::jsonb->>'type' != 'journal-issue'
+        NULL::INT AS article_id,
+        cw.work_id,
+        cw.work_version_id,
+        cw.title,
+        cw.abstract,
+        cw.pub_year
+    FROM public.crossref_current_works cw
+    WHERE cw.title IS NOT NULL
+      {year_filter_sql}
       AND NOT EXISTS (
-        SELECT 1
-        FROM languageingenetics.files f
-        WHERE f.article_id = r.id
-    )
+          SELECT 1
+          FROM languageingenetics.files f
+          WHERE f.work_version_id = cw.work_version_id
+      )
+    ORDER BY cw.pub_year DESC NULLS LAST, cw.work_version_id
+    {limit_sql}
     """
-    if args.limit:
-        query += f" LIMIT {args.limit}"
 
 # Create a separate cursor for fetching articles
 article_cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
@@ -291,10 +386,7 @@ execute_query(article_cursor, query, query_params)
 # Process articles
 processed_count = 0
 for row in article_cursor:
-    article_id = row['id']
-    metadata = row['data']
-
-    if process_article(article_id, metadata):
+    if process_article(row):
         processed_count += 1
         if processed_count % 100 == 0:
             print(f"Processed {processed_count} articles...", file=sys.stderr)
@@ -364,4 +456,3 @@ if args.explain_queries:
 if args.batch_id_save_file:
     with open(args.batch_id_save_file, 'w') as bisf:
         bisf.write(f"{batch_id}")
-

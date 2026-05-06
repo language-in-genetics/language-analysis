@@ -9,10 +9,13 @@ REMOTE_HOST="merah.cassia.ifost.org.au"
 REMOTE_PATH="/var/www/vhosts/lig.symmachus.org/htdocs/"
 BATCH_SIZE=4000
 LOG_FILE="$WORKDIR/cronscript.log"
+OPENAI_API_KEY_FILE="${OPENAI_API_KEY_FILE:-/home/languageingenetics/.openai.lig.key}"
+TARGET_PUB_YEAR="${TARGET_PUB_YEAR:-2025}"
 
 # PostgreSQL connection uses environment variables
 # PGDATABASE should be set to "crossref"
 export PGDATABASE="${PGDATABASE:-crossref}"
+export PGHOST="${PGHOST:-/var/run/postgresql}"
 
 # Change to working directory
 cd "$WORKDIR"
@@ -49,15 +52,20 @@ fi
 # Step 1: Check for completed batches and fetch results
 log "Checking for completed batches..."
 cd extractor
-if uv run batchfetch.py --report-costs 2>&1 | tee -a "$LOG_FILE"; then
+if uv run batchfetch.py --openai-api-key "$OPENAI_API_KEY_FILE" --report-costs 2>&1 | tee -a "$LOG_FILE"; then
     log "Batch fetch completed successfully"
 else
     log "Warning: Batch fetch had errors (may be normal if no batches ready)"
 fi
 
 # Step 2: Submit new batch for processing
-log "Submitting new batch of $BATCH_SIZE articles..."
-if uv run bulkquery.py --limit "$BATCH_SIZE" 2>&1 | tee -a "$LOG_FILE"; then
+bulkquery_year_args=()
+if [[ -n "$TARGET_PUB_YEAR" ]]; then
+    bulkquery_year_args=(--pub-year "$TARGET_PUB_YEAR")
+fi
+
+log "Submitting new batch of $BATCH_SIZE articles${TARGET_PUB_YEAR:+ for publication year $TARGET_PUB_YEAR}..."
+if uv run bulkquery.py --openai-api-key "$OPENAI_API_KEY_FILE" --limit "$BATCH_SIZE" "${bulkquery_year_args[@]}" 2>&1 | tee -a "$LOG_FILE"; then
     log "New batch submitted successfully"
 else
     log "Warning: No new articles to process or batch submission failed"

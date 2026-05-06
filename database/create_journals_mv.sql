@@ -1,4 +1,4 @@
--- Materialized view of all journals in raw_text_data with aggregated statistics
+-- Materialized view of all current Crossref journals with aggregated statistics
 -- This should be refreshed annually when new CrossRef data is imported
 -- Run as admin user with permissions on public schema
 
@@ -7,22 +7,20 @@ DROP MATERIALIZED VIEW IF EXISTS public.journals_mv CASCADE;
 
 -- Create materialized view with journal statistics
 CREATE MATERIALIZED VIEW public.journals_mv tablespace crossref_space as SELECT
-    filesrc::jsonb->'container-title'->>0 AS journal_name,
+    journal_name,
     COUNT(*) AS article_count,
-    MIN((filesrc::jsonb->'published'->'date-parts'->0->>0)::int) AS earliest_year,
-    MAX((filesrc::jsonb->'published'->'date-parts'->0->>0)::int) AS latest_year,
-    COUNT(*) FILTER (WHERE filesrc::jsonb ? 'abstract') AS articles_with_abstract,
-    ROUND(100.0 * COUNT(*) FILTER (WHERE filesrc::jsonb ? 'abstract') / COUNT(*), 1) AS abstract_percentage,
-    SUM((filesrc::jsonb->>'is-referenced-by-count')::int) AS total_citations,
-    ROUND(AVG((filesrc::jsonb->>'is-referenced-by-count')::int), 2) AS avg_citations_per_article,
-    SUM((filesrc::jsonb->>'reference-count')::int) AS total_references,
-    COUNT(DISTINCT filesrc::jsonb->>'type') AS publication_types,
-    -- Sample ISSNs (useful for journal identification)
-    (array_agg(DISTINCT filesrc::jsonb->>'ISSN'))[1] AS sample_issn
-FROM public.raw_text_data
-WHERE filesrc::jsonb->'container-title' IS NOT NULL
-  AND jsonb_array_length(filesrc::jsonb->'container-title') > 0
-GROUP BY filesrc::jsonb->'container-title'->>0
+    MIN(pub_year) AS earliest_year,
+    MAX(pub_year) AS latest_year,
+    COUNT(*) FILTER (WHERE abstract IS NOT NULL) AS articles_with_abstract,
+    ROUND(100.0 * COUNT(*) FILTER (WHERE abstract IS NOT NULL) / COUNT(*), 1) AS abstract_percentage,
+    NULL::numeric AS total_citations,
+    NULL::numeric AS avg_citations_per_article,
+    NULL::bigint AS total_references,
+    COUNT(DISTINCT record_type) AS publication_types,
+    NULL::text AS sample_issn
+FROM public.crossref_current_works
+WHERE journal_name IS NOT NULL
+GROUP BY journal_name
 HAVING COUNT(*) > 10
 ORDER BY article_count DESC;
 
