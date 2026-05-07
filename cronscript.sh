@@ -11,6 +11,16 @@ BATCH_SIZE=4000
 LOG_FILE="$WORKDIR/cronscript.log"
 OPENAI_API_KEY_FILE="${OPENAI_API_KEY_FILE:-/home/languageingenetics/.openai.lig.key}"
 TARGET_PUB_YEAR="${TARGET_PUB_YEAR:-2025}"
+if [[ -z "${CROSSREF_RETRACTION_SOURCE_JSONL_GZ:-}" ]]; then
+    for candidate in \
+        "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi_rebuilt_20260506/focused-journals-doi.jsonl.gz" \
+        "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi/focused-journals-doi.jsonl.gz"; do
+        if [[ -s "$candidate" ]]; then
+            export CROSSREF_RETRACTION_SOURCE_JSONL_GZ="$candidate"
+            break
+        fi
+    done
+fi
 
 # PostgreSQL connection uses environment variables
 # PGDATABASE should be set to "crossref"

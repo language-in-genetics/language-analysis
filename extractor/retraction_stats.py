@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import gzip
 import html
 import json
 import math
@@ -58,6 +59,22 @@ PROCESSED_ARTICLES_SQL = r"""
     JOIN languageingenetics.journals j
         ON j.name = v.journal_name
        AND j.enabled = true
+"""
+
+PROCESSED_FILES_SQL = """
+    SELECT
+        id AS file_id,
+        work_id,
+        work_version_id,
+        pub_year,
+        COALESCE(caucasian, false) AS caucasian,
+        COALESCE(white, false) AS white,
+        COALESCE(european, false) AS european,
+        COALESCE(other, false) AS other
+    FROM languageingenetics.files
+    WHERE processed = true
+      AND work_id IS NOT NULL
+    ORDER BY work_id
 """
 
 RETRACTED_ARTICLE_TITLE_RE = re.compile(
@@ -191,6 +208,123 @@ def classify_retraction_status(row: Mapping[str, Any]) -> RetractionClassificati
         is_expression_of_concern=is_expression_of_concern,
         evidence=tuple(evidence),
     )
+
+
+def load_retraction_status_from_jsonl_gz(path: str) -> dict[str, Any]:
+    """Read a focused Crossref JSONL gzip and return DOI-keyed retraction status."""
+    status = {
+        "source": path,
+        "records_scanned": 0,
+        "bad_json": 0,
+        "gzip_warning": None,
+        "retracted_dois": set(),
+        "retraction_notice_dois": set(),
+        "expression_notice_dois": set(),
+        "examples_by_doi": {},
+    }
+
+    try:
+        with gzip.open(path, "rt", encoding="utf-8", errors="replace") as input_file:
+            for line in input_file:
+                status["records_scanned"] += 1
+                try:
+                    item = json.loads(line)
+                except json.JSONDecodeError:
+                    status["bad_json"] += 1
+                    continue
+                doi = _normalize_doi(item.get("DOI") or item.get("doi"))
+                if not doi:
+                    continue
+                classification = classify_retraction_status({
+                    "normalized_doi": doi,
+                    "title": item.get("title"),
+                    "raw_json_text": item,
+                })
+                title = clean_text(item.get("title"))
+                journal = clean_text(item.get("container-title"))
+                pub_year = _crossref_year(item)
+                example = {
+                    "doi": doi,
+                    "journal": journal,
+                    "pub_year": pub_year,
+                    "title": title,
+                    "evidence": list(classification.evidence),
+                }
+                if classification.is_retraction_notice:
+                    status["retraction_notice_dois"].add(doi)
+                    continue
+                if classification.is_expression_of_concern and not classification.is_retracted_article:
+                    status["expression_notice_dois"].add(doi)
+                    continue
+                if classification.is_retracted_article:
+                    status["retracted_dois"].add(doi)
+                    status["examples_by_doi"][doi] = example
+    except (EOFError, gzip.BadGzipFile) as exc:
+        status["gzip_warning"] = f"{type(exc).__name__}: {exc}"
+
+    return status
+
+
+def _crossref_year(item: Mapping[str, Any]) -> int | None:
+    for key in ("published-print", "published-online", "published", "issued", "created"):
+        value = item.get(key)
+        if not isinstance(value, Mapping):
+            continue
+        date_parts = value.get("date-parts") or []
+        if date_parts and date_parts[0]:
+            try:
+                return int(date_parts[0][0])
+            except (TypeError, ValueError):
+                return None
+    return None
+
+
+def resolve_status_work_ids(cursor: Any, status: Mapping[str, Any]) -> dict[str, Any]:
+    """Map DOI-keyed status sets onto local crossref_works IDs."""
+    all_dois = sorted(
+        set(status["retracted_dois"])
+        | set(status["retraction_notice_dois"])
+        | set(status["expression_notice_dois"])
+    )
+    doi_to_work_id: dict[str, int] = {}
+    if all_dois:
+        cursor.execute(
+            """
+            SELECT id, normalized_doi
+            FROM public.crossref_works
+            WHERE normalized_doi = ANY(%s)
+            """,
+            [all_dois],
+        )
+        doi_to_work_id = {
+            row["normalized_doi"]: row["id"]
+            for row in cursor.fetchall()
+            if row.get("normalized_doi") is not None
+        }
+
+    examples_by_work_id = {}
+    for doi, example in status["examples_by_doi"].items():
+        work_id = doi_to_work_id.get(doi)
+        if work_id is None:
+            continue
+        enriched = dict(example)
+        enriched["work_id"] = work_id
+        examples_by_work_id[work_id] = enriched
+
+    return {
+        "retracted_work_ids": {doi_to_work_id[doi] for doi in status["retracted_dois"] if doi in doi_to_work_id},
+        "retraction_notice_work_ids": {
+            doi_to_work_id[doi] for doi in status["retraction_notice_dois"] if doi in doi_to_work_id
+        },
+        "expression_notice_work_ids": {
+            doi_to_work_id[doi] for doi in status["expression_notice_dois"] if doi in doi_to_work_id
+        },
+        "examples_by_work_id": examples_by_work_id,
+        "source": status["source"],
+        "records_scanned": status["records_scanned"],
+        "bad_json": status["bad_json"],
+        "gzip_warning": status["gzip_warning"],
+    }
 
 
 def _log_comb(n: int, k: int) -> float:
@@ -362,6 +496,109 @@ def build_retraction_statistics(rows: Iterable[Mapping[str, Any]]) -> dict[str, 
                 "Raw Crossref JSON is fetched only for likely retraction-status title candidates; "
                 "control rows use extracted current-version columns."
             ),
+        },
+    }
+
+
+def build_retraction_statistics_from_work_ids(
+    rows: Iterable[Mapping[str, Any]],
+    status_work_ids: Mapping[str, Any],
+) -> dict[str, Any]:
+    """Build vocabulary tests using a precomputed set of retracted work IDs."""
+    rows = list(rows)
+    retracted_work_ids = set(status_work_ids.get("retracted_work_ids", set()))
+    notice_work_ids = set(status_work_ids.get("retraction_notice_work_ids", set()))
+    expression_work_ids = set(status_work_ids.get("expression_notice_work_ids", set()))
+    examples_by_work_id = status_work_ids.get("examples_by_work_id", {})
+
+    tested_rows = []
+    for row in rows:
+        work_id = row.get("work_id")
+        if work_id in notice_work_ids or work_id in expression_work_ids:
+            continue
+        enriched = dict(row)
+        enriched["is_retracted_article"] = work_id in retracted_work_ids
+        enriched["any_race_language"] = any(
+            bool(enriched.get(key)) for key in ("caucasian", "white", "european", "other")
+        )
+        tested_rows.append(enriched)
+
+    processed_work_ids = {row.get("work_id") for row in rows}
+    retracted_examples = []
+    for work_id, example in examples_by_work_id.items():
+        if work_id not in processed_work_ids:
+            continue
+        matching_rows = [row for row in tested_rows if row.get("work_id") == work_id]
+        if not matching_rows:
+            continue
+        row = matching_rows[0]
+        enriched_example = dict(example)
+        enriched_example.update({
+            "work_id": work_id,
+            "work_version_id": row.get("work_version_id"),
+            "any_race_language": row.get("any_race_language", False),
+            "caucasian": bool(row.get("caucasian")),
+            "white": bool(row.get("white")),
+            "european": bool(row.get("european")),
+            "other": bool(row.get("other")),
+        })
+        retracted_examples.append(enriched_example)
+        if len(retracted_examples) >= 25:
+            break
+
+    retracted_count = sum(1 for row in tested_rows if row["is_retracted_article"])
+    non_retracted_count = len(tested_rows) - retracted_count
+    tests = []
+
+    for key, label in OUTCOMES:
+        a = sum(1 for row in tested_rows if row["is_retracted_article"] and bool(row.get(key)))
+        b = retracted_count - a
+        c = sum(1 for row in tested_rows if not row["is_retracted_article"] and bool(row.get(key)))
+        d = non_retracted_count - c
+        chi_square, chi_square_p = chi_square_test_2x2(a, b, c, d)
+        tests.append({
+            "outcome": key,
+            "label": label,
+            "retracted_with_term": a,
+            "retracted_without_term": b,
+            "non_retracted_with_term": c,
+            "non_retracted_without_term": d,
+            "retracted_rate": _rate(a, a + b),
+            "non_retracted_rate": _rate(c, c + d),
+            "risk_difference": _risk_difference(a, b, c, d),
+            "odds_ratio_haldane": _odds_ratio_haldane(a, b, c, d) if (a + b and c + d) else None,
+            "fisher_exact_p": fisher_exact_two_sided(a, b, c, d),
+            "chi_square": chi_square,
+            "chi_square_p": chi_square_p,
+        })
+
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "population": {
+            "processed_focused_articles": len(rows),
+            "eligible_articles": len(tested_rows),
+            "retracted_articles": retracted_count,
+            "non_retracted_articles": non_retracted_count,
+            "excluded_retraction_notices": len(processed_work_ids & notice_work_ids),
+            "excluded_expression_of_concern": len(processed_work_ids & expression_work_ids),
+            "unknown_status_mentions": 0,
+        },
+        "tests": tests,
+        "retracted_examples": retracted_examples,
+        "method": {
+            "primary_test": "Fisher exact test, two-sided",
+            "secondary_test": "Pearson chi-square test, df=1",
+            "case_definition": (
+                "Research article records marked as retracted in the focused Crossref JSONL source."
+            ),
+            "excluded_records": (
+                "Retraction notes/notices and expression-of-concern update records are excluded "
+                "from both case and control groups when their DOI maps to a processed work."
+            ),
+            "status_source": status_work_ids.get("source"),
+            "status_records_scanned": status_work_ids.get("records_scanned"),
+            "status_bad_json": status_work_ids.get("bad_json"),
+            "status_gzip_warning": status_work_ids.get("gzip_warning"),
         },
     }
 

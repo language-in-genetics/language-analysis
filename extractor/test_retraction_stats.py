@@ -5,6 +5,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from retraction_stats import (
+    build_retraction_statistics_from_work_ids,
     build_retraction_statistics,
     chi_square_test_2x2,
     classify_retraction_status,
@@ -142,6 +143,29 @@ class RetractionStatsTests(unittest.TestCase):
         any_test = next(test for test in stats["tests"] if test["outcome"] == "any_race_language")
         self.assertEqual(any_test["retracted_with_term"], 1)
         self.assertEqual(any_test["non_retracted_with_term"], 0)
+
+    def test_build_stats_from_precomputed_work_ids(self):
+        rows = [
+            {"work_id": 1, "work_version_id": 10, "caucasian": True, "white": False, "european": False, "other": False},
+            {"work_id": 2, "work_version_id": 20, "caucasian": False, "white": False, "european": False, "other": False},
+            {"work_id": 3, "work_version_id": 30, "caucasian": True, "white": True, "european": False, "other": False},
+        ]
+        status = {
+            "retracted_work_ids": {1},
+            "retraction_notice_work_ids": {3},
+            "expression_notice_work_ids": set(),
+            "examples_by_work_id": {
+                1: {"doi": "10.1000/retracted", "title": "Retracted: Example"}
+            },
+            "source": "focused.jsonl.gz",
+        }
+
+        stats = build_retraction_statistics_from_work_ids(rows, status)
+
+        self.assertEqual(stats["population"]["eligible_articles"], 2)
+        self.assertEqual(stats["population"]["retracted_articles"], 1)
+        self.assertEqual(stats["population"]["excluded_retraction_notices"], 1)
+        self.assertEqual(stats["retracted_examples"][0]["work_version_id"], 10)
 
 
 if __name__ == "__main__":

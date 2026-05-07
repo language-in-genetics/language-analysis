@@ -56,8 +56,12 @@ cd extractor/
 # Generate dashboard
 ./generate_dashboard.py --output-dir ../dashboard
 
-# Run the retracted-vs-control race-language tests directly
-./retraction_statistics.py --output-json ../dashboard/retraction_statistics.json --output-csv ../dashboard/retraction_statistics.csv
+# Run the retracted-vs-control race-language tests directly.
+# The focused JSONL gzip avoids slow raw-JSON reads from the large PostgreSQL table.
+./retraction_statistics.py \
+  --source-jsonl-gz "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi_rebuilt_20260506/focused-journals-doi.jsonl.gz" \
+  --output-json ../dashboard/retraction_statistics.json \
+  --output-csv ../dashboard/retraction_statistics.csv
 ```
 
 ## Computational Analysis Methodology
@@ -89,7 +93,7 @@ The batch processing system allows efficient processing of thousands of articles
 
 The dashboard pipeline also tests whether focused-journal articles marked as retracted have different race-language vocabulary usage from non-retracted articles. `extractor/retraction_stats.py` classifies Crossref records as retracted research articles, retraction notices, or expression-of-concern update records. Retraction notices are excluded from the case/control test so that update notices are not compared with research articles.
 
-For each vocabulary outcome (`any`, `caucasian`, `white`, `european`, and `other`), the pipeline reports two-sided Fisher exact p-values, Pearson chi-square p-values, rates, risk differences, and Haldane-adjusted odds ratios. Normal dashboard generation writes `retraction_statistics.json` and `retraction_statistics.csv`; the same analysis can be run directly with `extractor/retraction_statistics.py`.
+For each vocabulary outcome (`any`, `caucasian`, `white`, `european`, and `other`), the pipeline reports two-sided Fisher exact p-values, Pearson chi-square p-values, rates, risk differences, and Haldane-adjusted odds ratios. Normal dashboard generation writes `retraction_statistics.json` and `retraction_statistics.csv`; the same analysis can be run directly with `extractor/retraction_statistics.py`. On `raksasa`, `cronscript.sh` exports `CROSSREF_RETRACTION_SOURCE_JSONL_GZ` when the focused Crossref compact file is present, so the dashboard uses the compact dump for retraction status and only queries PostgreSQL for processed labels.
 
 ### Automation
 

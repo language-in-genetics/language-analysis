@@ -16,9 +16,13 @@ import psycopg2.extras
 
 from retraction_stats import (
     PROCESSED_ARTICLES_SQL,
+    PROCESSED_FILES_SQL,
     build_retraction_statistics,
+    build_retraction_statistics_from_work_ids,
     format_p_value,
     format_rate,
+    load_retraction_status_from_jsonl_gz,
+    resolve_status_work_ids,
     write_stats_csv,
 )
 
@@ -739,8 +743,18 @@ for year, counts in sorted(year_term_totals.items()):
 
 cursor.execute("SET enable_hashjoin = off")
 cursor.execute("SET enable_mergejoin = off")
-execute_query(PROCESSED_ARTICLES_SQL)
-retraction_statistics = build_retraction_statistics(cursor.fetchall())
+retraction_source_jsonl_gz = os.environ.get("CROSSREF_RETRACTION_SOURCE_JSONL_GZ")
+if retraction_source_jsonl_gz and os.path.exists(retraction_source_jsonl_gz):
+    retraction_status = load_retraction_status_from_jsonl_gz(retraction_source_jsonl_gz)
+    retraction_status_work_ids = resolve_status_work_ids(cursor, retraction_status)
+    execute_query(PROCESSED_FILES_SQL)
+    retraction_statistics = build_retraction_statistics_from_work_ids(
+        cursor.fetchall(),
+        retraction_status_work_ids,
+    )
+else:
+    execute_query(PROCESSED_ARTICLES_SQL)
+    retraction_statistics = build_retraction_statistics(cursor.fetchall())
 cursor.execute("RESET enable_hashjoin")
 cursor.execute("RESET enable_mergejoin")
 retraction_stats_output_path = os.path.join(args.output_dir, 'retraction_statistics.json')

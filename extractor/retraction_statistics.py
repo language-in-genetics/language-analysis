@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 import sys
 
 import psycopg2
@@ -9,9 +10,13 @@ import psycopg2.extras
 
 from retraction_stats import (
     PROCESSED_ARTICLES_SQL,
+    PROCESSED_FILES_SQL,
     build_retraction_statistics,
+    build_retraction_statistics_from_work_ids,
     format_p_value,
     format_rate,
+    load_retraction_status_from_jsonl_gz,
+    resolve_status_work_ids,
     write_stats_csv,
 )
 
@@ -46,6 +51,11 @@ def main():
     )
     parser.add_argument("--output-json", help="Write full statistics to this JSON file")
     parser.add_argument("--output-csv", help="Write test table to this CSV file")
+    parser.add_argument(
+        "--source-jsonl-gz",
+        default=os.environ.get("CROSSREF_RETRACTION_SOURCE_JSONL_GZ"),
+        help="Focused Crossref JSONL gzip to use as the retraction-status source",
+    )
     parser.add_argument("--list-retracted", action="store_true", help="Print detected retracted article examples")
     args = parser.parse_args()
 
@@ -54,8 +64,14 @@ def main():
     cursor.execute("SET search_path TO languageingenetics, public")
     cursor.execute("SET enable_hashjoin = off")
     cursor.execute("SET enable_mergejoin = off")
-    cursor.execute(PROCESSED_ARTICLES_SQL)
-    stats = build_retraction_statistics(cursor.fetchall())
+    if args.source_jsonl_gz:
+        status = load_retraction_status_from_jsonl_gz(args.source_jsonl_gz)
+        status_work_ids = resolve_status_work_ids(cursor, status)
+        cursor.execute(PROCESSED_FILES_SQL)
+        stats = build_retraction_statistics_from_work_ids(cursor.fetchall(), status_work_ids)
+    else:
+        cursor.execute(PROCESSED_ARTICLES_SQL)
+        stats = build_retraction_statistics(cursor.fetchall())
     cursor.close()
     conn.close()
 
