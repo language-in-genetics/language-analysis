@@ -14,6 +14,14 @@ from decimal import Decimal
 import psycopg2
 import psycopg2.extras
 
+from retraction_stats import (
+    PROCESSED_ARTICLES_SQL,
+    build_retraction_statistics,
+    format_p_value,
+    format_rate,
+    write_stats_csv,
+)
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--output-dir", default="dashboard", help="Output directory for static files")
 parser.add_argument("--explain-queries", action="store_true", help="Run EXPLAIN on all queries and log to file")
@@ -85,6 +93,106 @@ def contains_phrase(text_norm, text_lower, phrase):
     if normalized_phrase and normalized_phrase in text_norm:
         return True
     return cleaned.lower() in text_lower
+
+
+def render_retraction_statistics_section(stats):
+    """Render the retracted-vs-control race-language test table."""
+    population = stats['population']
+    rows_html = ""
+    for test in stats['tests']:
+        odds_ratio = test['odds_ratio_haldane']
+        odds_ratio_text = "N/A" if odds_ratio is None else f"{odds_ratio:.3f}"
+        risk_difference = test['risk_difference']
+        risk_difference_text = "N/A" if risk_difference is None else f"{risk_difference * 100:+.2f} pp"
+        rows_html += f"""
+                <tr>
+                    <td>{html.escape(test['label'])}</td>
+                    <td class="numeric">{test['retracted_with_term']:,} / {(test['retracted_with_term'] + test['retracted_without_term']):,}</td>
+                    <td class="numeric">{format_rate(test['retracted_rate'])}</td>
+                    <td class="numeric">{test['non_retracted_with_term']:,} / {(test['non_retracted_with_term'] + test['non_retracted_without_term']):,}</td>
+                    <td class="numeric">{format_rate(test['non_retracted_rate'])}</td>
+                    <td class="numeric">{risk_difference_text}</td>
+                    <td class="numeric">{odds_ratio_text}</td>
+                    <td class="numeric">{format_p_value(test['fisher_exact_p'])}</td>
+                    <td class="numeric">{format_p_value(test['chi_square_p'])}</td>
+                </tr>
+"""
+
+    examples_html = ""
+    for item in stats['retracted_examples'][:8]:
+        examples_html += f"""
+                <tr>
+                    <td>{html.escape(str(item.get('pub_year') or ''))}</td>
+                    <td>{html.escape(str(item.get('journal') or ''))}</td>
+                    <td>{html.escape(str(item.get('doi') or ''))}</td>
+                    <td>{html.escape(str(item.get('title') or ''))}</td>
+                    <td>{'Yes' if item.get('any_race_language') else 'No'}</td>
+                </tr>
+"""
+
+    if not examples_html:
+        examples_html = """
+                <tr><td colspan="5">No retracted article records have been processed yet.</td></tr>
+"""
+
+    return f"""
+        <h2>Retraction Status and Race-Language Tests</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Eligible Articles</h3>
+                <div class="value">{population['eligible_articles']:,}</div>
+                <div class="subvalue">{population['processed_focused_articles']:,} processed focused articles checked</div>
+            </div>
+            <div class="card">
+                <h3>Retracted Articles</h3>
+                <div class="value">{population['retracted_articles']:,}</div>
+                <div class="subvalue">Research article records flagged as retracted</div>
+            </div>
+            <div class="card">
+                <h3>Excluded Notices</h3>
+                <div class="value">{population['excluded_retraction_notices']:,}</div>
+                <div class="subvalue">Retraction notes/notices excluded from case/control tests</div>
+            </div>
+        </div>
+        <p class="method-note">
+            Primary test: Fisher exact test, two-sided. Secondary check: Pearson chi-square test, df=1.
+            Cases are article records marked as retracted by Crossref/title metadata; retraction notices and expression-of-concern update records are excluded.
+            Full machine-readable output is written to <code>retraction_statistics.json</code> and <code>retraction_statistics.csv</code>.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Outcome</th>
+                    <th>Retracted With Term</th>
+                    <th>Retracted Rate</th>
+                    <th>Control With Term</th>
+                    <th>Control Rate</th>
+                    <th>Risk Difference</th>
+                    <th>Odds Ratio</th>
+                    <th>Fisher p</th>
+                    <th>Chi-square p</th>
+                </tr>
+            </thead>
+            <tbody>
+{rows_html}
+            </tbody>
+        </table>
+        <h3 class="subsection-heading">Detected Retracted Article Examples</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Journal</th>
+                    <th>DOI</th>
+                    <th>Title</th>
+                    <th>Race Language?</th>
+                </tr>
+            </thead>
+            <tbody>
+{examples_html}
+            </tbody>
+        </table>
+"""
 
 # Helper function to execute queries with optional EXPLAIN logging
 def execute_query(sql, params=None):
@@ -629,6 +737,15 @@ for year, counts in sorted(year_term_totals.items()):
         'abstract_only': max(counts['abstract'] - counts['both'], 0)
     })
 
+execute_query(PROCESSED_ARTICLES_SQL)
+retraction_statistics = build_retraction_statistics(cursor.fetchall())
+retraction_stats_output_path = os.path.join(args.output_dir, 'retraction_statistics.json')
+with open(retraction_stats_output_path, 'w') as f:
+    json.dump(retraction_statistics, f, default=json_default, indent=2)
+    f.write("\n")
+write_stats_csv(retraction_statistics, os.path.join(args.output_dir, 'retraction_statistics.csv'))
+retraction_statistics_section = render_retraction_statistics_section(retraction_statistics)
+
 print("Generating HTML...")
 
 # Generate HTML
@@ -671,6 +788,10 @@ html_content = f"""<!DOCTYPE html>
         th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid #eee; }}
         th {{ background: #f8f8f8; font-weight: 600; color: #666; text-transform: uppercase; font-size: 0.85em; }}
         tr:last-child td {{ border-bottom: none; }}
+        .numeric {{ text-align: right; font-variant-numeric: tabular-nums; }}
+        .method-note {{ background: white; border-left: 4px solid #607D8B; padding: 12px 16px; margin: 0 0 16px; color: #444; box-shadow: 0 2px 4px rgba(0,0,0,0.08); }}
+        .subsection-heading {{ color: #555; margin: 22px 0 12px; font-size: 1.1em; }}
+        code {{ background: #f1f3f4; padding: 2px 5px; border-radius: 3px; }}
         .chart-container {{ background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }}
         .chart-container h3 {{ margin-bottom: 15px; font-size: 1.1em; color: #555; }}
         .chart-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px; }}
@@ -843,6 +964,8 @@ html_content += f"""
         <div class="chart-container">
             <canvas id="anyProportionChart"></canvas>
         </div>
+
+{retraction_statistics_section}
 
         <h2>Title vs Abstract Mentions by Journal</h2>
         <div class="chart-container">

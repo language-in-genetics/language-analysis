@@ -18,14 +18,6 @@ The redesign plan for incremental yearly imports is documented in [database/incr
 
 The new incremental importer is `bin/crossrefimport`. It imports numbered `*.jsonl.gz` Crossref snapshot files into canonical versioned tables under `public.crossref_*`, and it also has a `-from-raw-text` mode to backfill the existing `public.raw_text_data` corpus into that schema.
 
-## Import Status
-
-The current `database/import.sh` path is the legacy one-time bulk loader used for the initial March 2025 ingest. It is not the right shape for yearly Crossref refreshes, because annual dumps are full snapshots and the downstream analysis tables currently depend on `raw_text_data.id`.
-
-The redesign plan for incremental yearly imports is documented in [database/incremental_import_redesign.md](database/incremental_import_redesign.md).
-
-The new incremental importer is `bin/crossrefimport`. It imports numbered `*.jsonl.gz` Crossref snapshot files into canonical versioned tables under `public.crossref_*`, and it also has a `-from-raw-text` mode to backfill the existing `public.raw_text_data` corpus into that schema.
-
 ## Quick Start
 
 ### Prerequisites
@@ -63,6 +55,9 @@ cd extractor/
 
 # Generate dashboard
 ./generate_dashboard.py --output-dir ../dashboard
+
+# Run the retracted-vs-control race-language tests directly
+./retraction_statistics.py --output-json ../dashboard/retraction_statistics.json --output-csv ../dashboard/retraction_statistics.csv
 ```
 
 ## Computational Analysis Methodology
@@ -89,6 +84,12 @@ The analysis is structured through a function-calling API that forces OpenAI to 
 When phrases are detected, the system also captures the exact terminology used, enabling detailed analysis of language variations across the literature.
 
 The batch processing system allows efficient processing of thousands of articles with proper error handling and progress tracking, making large-scale analysis feasible within reasonable time and cost constraints.
+
+### Retraction Comparisons
+
+The dashboard pipeline also tests whether focused-journal articles marked as retracted have different race-language vocabulary usage from non-retracted articles. `extractor/retraction_stats.py` classifies Crossref records as retracted research articles, retraction notices, or expression-of-concern update records. Retraction notices are excluded from the case/control test so that update notices are not compared with research articles.
+
+For each vocabulary outcome (`any`, `caucasian`, `white`, `european`, and `other`), the pipeline reports two-sided Fisher exact p-values, Pearson chi-square p-values, rates, risk differences, and Haldane-adjusted odds ratios. Normal dashboard generation writes `retraction_statistics.json` and `retraction_statistics.csv`; the same analysis can be run directly with `extractor/retraction_statistics.py`.
 
 ### Automation
 
