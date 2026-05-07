@@ -45,7 +45,11 @@ PROCESSED_ARTICLES_SQL = """
         v.journal_name,
         v.record_type,
         v.title,
-        v.raw_json_text,
+        CASE
+            WHEN COALESCE(v.title, '') ~* $$^\s*(retracted|retraction|notice of retraction|expression of concern|editors?[’']?\s+note)$$
+                THEN v.raw_json_text
+            ELSE NULL
+        END AS raw_json_text,
         w.normalized_doi
     FROM processed_files f
     JOIN public.crossref_work_versions v ON v.id = f.work_version_id
@@ -345,11 +349,15 @@ def build_retraction_statistics(rows: Iterable[Mapping[str, Any]]) -> dict[str, 
             "secondary_test": "Pearson chi-square test, df=1",
             "case_definition": (
                 "Research article records whose title starts with Retracted/RETRACTED ARTICLE "
-                "or whose Crossref update-to metadata self-identifies a retraction."
+                "or whose retrieved Crossref update-to metadata self-identifies a retraction."
             ),
             "excluded_records": (
                 "Retraction notes/notices and expression-of-concern update records are excluded "
                 "from both case and control groups."
+            ),
+            "performance_note": (
+                "Raw Crossref JSON is fetched only for likely retraction-status title candidates; "
+                "control rows use extracted current-version columns."
             ),
         },
     }
