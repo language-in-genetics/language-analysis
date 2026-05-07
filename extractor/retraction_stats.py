@@ -20,7 +20,7 @@ OUTCOMES = (
     ("other", "Other"),
 )
 
-PROCESSED_ARTICLES_SQL = """
+PROCESSED_ARTICLES_SQL = r"""
     WITH processed_files AS MATERIALIZED (
         SELECT
             id,
