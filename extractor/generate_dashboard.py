@@ -737,8 +737,12 @@ for year, counts in sorted(year_term_totals.items()):
         'abstract_only': max(counts['abstract'] - counts['both'], 0)
     })
 
+cursor.execute("SET enable_hashjoin = off")
+cursor.execute("SET enable_mergejoin = off")
 execute_query(PROCESSED_ARTICLES_SQL)
 retraction_statistics = build_retraction_statistics(cursor.fetchall())
+cursor.execute("RESET enable_hashjoin")
+cursor.execute("RESET enable_mergejoin")
 retraction_stats_output_path = os.path.join(args.output_dir, 'retraction_statistics.json')
 with open(retraction_stats_output_path, 'w') as f:
     json.dump(retraction_statistics, f, default=json_default, indent=2)

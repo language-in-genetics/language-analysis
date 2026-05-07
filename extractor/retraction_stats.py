@@ -21,27 +21,38 @@ OUTCOMES = (
 )
 
 PROCESSED_ARTICLES_SQL = """
+    WITH processed_files AS MATERIALIZED (
+        SELECT
+            id,
+            work_version_id,
+            pub_year,
+            COALESCE(caucasian, false) AS caucasian,
+            COALESCE(white, false) AS white,
+            COALESCE(european, false) AS european,
+            COALESCE(other, false) AS other
+        FROM languageingenetics.files
+        WHERE processed = true
+          AND work_version_id IS NOT NULL
+    )
     SELECT
         f.id AS file_id,
         f.work_version_id,
         COALESCE(f.pub_year, v.pub_year) AS pub_year,
-        COALESCE(f.caucasian, false) AS caucasian,
-        COALESCE(f.white, false) AS white,
-        COALESCE(f.european, false) AS european,
-        COALESCE(f.other, false) AS other,
+        f.caucasian,
+        f.white,
+        f.european,
+        f.other,
         v.journal_name,
         v.record_type,
         v.title,
         v.raw_json_text,
         w.normalized_doi
-    FROM languageingenetics.files f
+    FROM processed_files f
     JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     JOIN public.crossref_works w ON w.id = v.work_id
     JOIN languageingenetics.journals j
         ON j.name = v.journal_name
        AND j.enabled = true
-    WHERE f.processed = true
-      AND f.work_version_id IS NOT NULL
 """
 
 RETRACTED_ARTICLE_TITLE_RE = re.compile(

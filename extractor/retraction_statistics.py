@@ -52,6 +52,8 @@ def main():
     conn = psycopg2.connect("")
     cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     cursor.execute("SET search_path TO languageingenetics, public")
+    cursor.execute("SET enable_hashjoin = off")
+    cursor.execute("SET enable_mergejoin = off")
     cursor.execute(PROCESSED_ARTICLES_SQL)
     stats = build_retraction_statistics(cursor.fetchall())
     cursor.close()
@@ -79,4 +81,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
