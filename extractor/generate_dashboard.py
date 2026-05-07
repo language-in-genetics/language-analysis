@@ -124,7 +124,7 @@ def render_retraction_statistics_section(stats):
                 <tr>
                     <td>{html.escape(str(item.get('pub_year') or ''))}</td>
                     <td>{html.escape(str(item.get('journal') or ''))}</td>
-                    <td>{html.escape(str(item.get('doi') or ''))}</td>
+                    <td>{html.escape(str(item.get('work_version_id') or item.get('doi') or ''))}</td>
                     <td>{html.escape(str(item.get('title') or ''))}</td>
                     <td>{'Yes' if item.get('any_race_language') else 'No'}</td>
                 </tr>
@@ -183,7 +183,7 @@ def render_retraction_statistics_section(stats):
                 <tr>
                     <th>Year</th>
                     <th>Journal</th>
-                    <th>DOI</th>
+                    <th>Work Version</th>
                     <th>Title</th>
                     <th>Race Language?</th>
                 </tr>

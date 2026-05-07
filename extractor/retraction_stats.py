@@ -43,6 +43,7 @@ PROCESSED_ARTICLES_SQL = r"""
         f.white,
         f.european,
         f.other,
+        v.work_id,
         v.journal_name,
         v.record_type,
         v.title,
@@ -51,10 +52,9 @@ PROCESSED_ARTICLES_SQL = r"""
                 THEN v.raw_json_text
             ELSE NULL
         END AS raw_json_text,
-        w.normalized_doi
+        NULL::text AS normalized_doi
     FROM processed_files f
     JOIN public.crossref_work_versions v ON v.id = f.work_version_id
-    JOIN public.crossref_works w ON w.id = v.work_id
     JOIN languageingenetics.journals j
         ON j.name = v.journal_name
        AND j.enabled = true
@@ -295,6 +295,8 @@ def build_retraction_statistics(rows: Iterable[Mapping[str, Any]]) -> dict[str, 
         if classification.is_retracted_article and len(retracted_examples) < 25:
             retracted_examples.append({
                 "doi": enriched.get("normalized_doi"),
+                "work_id": enriched.get("work_id"),
+                "work_version_id": enriched.get("work_version_id"),
                 "journal": enriched.get("journal_name"),
                 "pub_year": enriched.get("pub_year"),
                 "title": title,
