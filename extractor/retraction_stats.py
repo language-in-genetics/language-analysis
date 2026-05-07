@@ -33,6 +33,7 @@ PROCESSED_ARTICLES_SQL = r"""
         FROM languageingenetics.files
         WHERE processed = true
           AND work_version_id IS NOT NULL
+        ORDER BY work_version_id
     )
     SELECT
         f.id AS file_id,
