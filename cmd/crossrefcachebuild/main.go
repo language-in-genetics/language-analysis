@@ -199,12 +199,19 @@ SELECT
     v.title,
     v.abstract`
 	}
+	// The LIMIT inside the lateral lookup keeps PostgreSQL from flattening this
+	// into a large hash join over both Crossref tables. The annual prefilter must
+	// stream current versions and use the id->DOI covering index for each row.
 	query := fields + `
 FROM public.crossref_work_versions v
-JOIN public.crossref_works w
-  ON w.id = v.work_id
-WHERE v.is_current
-  AND w.normalized_doi IS NOT NULL;
+JOIN LATERAL (
+    SELECT w.normalized_doi
+    FROM public.crossref_works w
+    WHERE w.id = v.work_id
+      AND w.normalized_doi IS NOT NULL
+    LIMIT 1
+) w ON true
+WHERE v.is_current;
 `
 	if limit > 0 {
 		query = strings.TrimSuffix(query, ";\n") + "\nLIMIT " + strconv.Itoa(limit) + ";\n"
