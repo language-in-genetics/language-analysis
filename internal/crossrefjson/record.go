@@ -53,7 +53,7 @@ func ParseSummary(raw []byte) (Summary, error) {
 		Title:           title,
 		Abstract:        abstract,
 		Journals:        stringsFromJSON(parsed.ContainerTitle),
-		TextFingerprint: sha256.Sum256([]byte(titleNorm + "\x1f" + abstractNorm)),
+		TextFingerprint: FingerprintFromNormalizedText(titleNorm, abstractNorm),
 	}, nil
 }
 
@@ -69,8 +69,16 @@ func NormalizeText(value string) string {
 	return strings.ToLower(strings.TrimSpace(value))
 }
 
+func FingerprintFromText(title, abstract string) [32]byte {
+	return FingerprintFromNormalizedText(NormalizeText(title), NormalizeText(abstract))
+}
+
+func FingerprintFromNormalizedText(title, abstract string) [32]byte {
+	return sha256.Sum256([]byte(title + "\x1f" + abstract))
+}
+
 func FingerprintHexFromText(title, abstract string) string {
-	sum := sha256.Sum256([]byte(NormalizeText(title) + "\x1f" + NormalizeText(abstract)))
+	sum := FingerprintFromText(title, abstract)
 	return hex.EncodeToString(sum[:])
 }
 
