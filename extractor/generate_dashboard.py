@@ -24,6 +24,7 @@ from retraction_stats import (
     load_retraction_status_from_jsonl_gz,
     resolve_status_work_ids,
     write_stats_csv,
+    write_stats_html,
 )
 
 parser = argparse.ArgumentParser()
@@ -161,7 +162,8 @@ def render_retraction_statistics_section(stats):
         <p class="method-note">
             Primary test: Fisher exact test, two-sided. Secondary check: Pearson chi-square test, df=1.
             Cases are article records marked as retracted by Crossref/title metadata; retraction notices and expression-of-concern update records are excluded.
-            Full machine-readable output is written to <code>retraction_statistics.json</code> and <code>retraction_statistics.csv</code>.
+            Full report: <a href="retraction_statistics.html">HTML</a>.
+            Machine-readable output is written to <code>retraction_statistics.json</code> and <code>retraction_statistics.csv</code>.
         </p>
         <table>
             <thead>
@@ -762,6 +764,7 @@ with open(retraction_stats_output_path, 'w') as f:
     json.dump(retraction_statistics, f, default=json_default, indent=2)
     f.write("\n")
 write_stats_csv(retraction_statistics, os.path.join(args.output_dir, 'retraction_statistics.csv'))
+write_stats_html(retraction_statistics, os.path.join(args.output_dir, 'retraction_statistics.html'))
 retraction_statistics_section = render_retraction_statistics_section(retraction_statistics)
 
 print("Generating HTML...")

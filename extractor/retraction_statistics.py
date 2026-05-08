@@ -18,6 +18,7 @@ from retraction_stats import (
     load_retraction_status_from_jsonl_gz,
     resolve_status_work_ids,
     write_stats_csv,
+    write_stats_html,
 )
 
 
@@ -51,6 +52,7 @@ def main():
     )
     parser.add_argument("--output-json", help="Write full statistics to this JSON file")
     parser.add_argument("--output-csv", help="Write test table to this CSV file")
+    parser.add_argument("--output-html", help="Write a standalone HTML report to this file")
     parser.add_argument(
         "--source-jsonl-gz",
         default=os.environ.get("CROSSREF_RETRACTION_SOURCE_JSONL_GZ"),
@@ -82,6 +84,9 @@ def main():
 
     if args.output_csv:
         write_stats_csv(stats, args.output_csv)
+
+    if args.output_html:
+        write_stats_html(stats, args.output_html)
 
     print_summary(stats)
 

@@ -619,6 +619,205 @@ def format_rate(value: float | None) -> str:
     return f"{value * 100:.2f}%"
 
 
+def _format_risk_difference(value: float | None) -> str:
+    if value is None or not math.isfinite(value):
+        return "N/A"
+    return f"{value * 100:+.2f} pp"
+
+
+def _format_odds_ratio(value: float | None) -> str:
+    if value is None or not math.isfinite(value):
+        return "N/A"
+    return f"{value:.3f}"
+
+
+def render_stats_html(stats: Mapping[str, Any], title: str = "Retraction Status and Race-Language Tests") -> str:
+    """Render a standalone HTML report for the retraction vocabulary tests."""
+    population = stats["population"]
+    generated_at = html.escape(str(stats.get("generated_at", "")))
+    method = stats.get("method", {})
+
+    test_rows = []
+    for test in stats["tests"]:
+        retracted_total = test["retracted_with_term"] + test["retracted_without_term"]
+        control_total = test["non_retracted_with_term"] + test["non_retracted_without_term"]
+        test_rows.append(f"""
+                <tr>
+                    <td>{html.escape(str(test["label"]))}</td>
+                    <td class="numeric">{test["retracted_with_term"]:,} / {retracted_total:,}</td>
+                    <td class="numeric">{format_rate(test["retracted_rate"])}</td>
+                    <td class="numeric">{test["non_retracted_with_term"]:,} / {control_total:,}</td>
+                    <td class="numeric">{format_rate(test["non_retracted_rate"])}</td>
+                    <td class="numeric">{_format_risk_difference(test["risk_difference"])}</td>
+                    <td class="numeric">{_format_odds_ratio(test["odds_ratio_haldane"])}</td>
+                    <td class="numeric">{format_p_value(test["fisher_exact_p"])}</td>
+                    <td class="numeric">{format_p_value(test["chi_square_p"])}</td>
+                </tr>""")
+
+    example_rows = []
+    for item in stats.get("retracted_examples", []):
+        example_rows.append(f"""
+                <tr>
+                    <td>{html.escape(str(item.get("pub_year") or ""))}</td>
+                    <td>{html.escape(str(item.get("journal") or ""))}</td>
+                    <td>{html.escape(str(item.get("doi") or item.get("work_version_id") or ""))}</td>
+                    <td>{html.escape(str(item.get("title") or ""))}</td>
+                    <td>{html.escape(", ".join(item.get("evidence") or []))}</td>
+                    <td>{"Yes" if item.get("any_race_language") else "No"}</td>
+                </tr>""")
+    if not example_rows:
+        example_rows.append("""
+                <tr><td colspan="6">No retracted article records have been processed yet.</td></tr>""")
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{html.escape(title)}</title>
+    <style>
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background: #f6f7fb;
+            color: #1f2933;
+        }}
+        main {{
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
+        }}
+        h1, h2 {{
+            color: #102a43;
+        }}
+        .meta, .method-note {{
+            color: #52606d;
+        }}
+        .grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }}
+        .card {{
+            background: #f0f4f8;
+            border-radius: 10px;
+            padding: 1rem;
+        }}
+        .value {{
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0b4f6c;
+        }}
+        .subvalue {{
+            color: #627d98;
+            margin-top: 0.25rem;
+        }}
+        table {{
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1rem 0 2rem;
+            background: white;
+        }}
+        th, td {{
+            border-bottom: 1px solid #d9e2ec;
+            padding: 0.65rem;
+            text-align: left;
+            vertical-align: top;
+        }}
+        th {{
+            background: #e6f6ff;
+            color: #102a43;
+        }}
+        .numeric {{
+            text-align: right;
+            white-space: nowrap;
+        }}
+        a {{
+            color: #0967d2;
+        }}
+    </style>
+</head>
+<body>
+<main>
+    <p><a href="index.html">Back to dashboard</a></p>
+    <h1>{html.escape(title)}</h1>
+    <p class="meta">Generated: {generated_at}</p>
+    <div class="grid">
+        <div class="card">
+            <h2>Eligible Articles</h2>
+            <div class="value">{population["eligible_articles"]:,}</div>
+            <div class="subvalue">{population["processed_focused_articles"]:,} processed focused articles checked</div>
+        </div>
+        <div class="card">
+            <h2>Retracted Articles</h2>
+            <div class="value">{population["retracted_articles"]:,}</div>
+            <div class="subvalue">Research article records flagged as retracted</div>
+        </div>
+        <div class="card">
+            <h2>Excluded Notices</h2>
+            <div class="value">{population["excluded_retraction_notices"]:,}</div>
+            <div class="subvalue">Retraction notes/notices excluded from tests</div>
+        </div>
+    </div>
+    <p class="method-note">
+        Primary test: {html.escape(str(method.get("primary_test", "Fisher exact test, two-sided")))}.
+        Secondary check: {html.escape(str(method.get("secondary_test", "Pearson chi-square test, df=1")))}.
+        Case definition: {html.escape(str(method.get("case_definition", "")))}.
+        Exclusions: {html.escape(str(method.get("excluded_records", "")))}.
+        Machine-readable outputs: <a href="retraction_statistics.json">JSON</a> and
+        <a href="retraction_statistics.csv">CSV</a>.
+    </p>
+    <h2>Vocabulary Tests</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Outcome</th>
+                <th>Retracted With Term</th>
+                <th>Retracted Rate</th>
+                <th>Control With Term</th>
+                <th>Control Rate</th>
+                <th>Risk Difference</th>
+                <th>Odds Ratio</th>
+                <th>Fisher p</th>
+                <th>Chi-square p</th>
+            </tr>
+        </thead>
+        <tbody>
+{''.join(test_rows)}
+        </tbody>
+    </table>
+    <h2>Detected Retracted Article Records</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Journal</th>
+                <th>DOI / Work Version</th>
+                <th>Title</th>
+                <th>Evidence</th>
+                <th>Race Language?</th>
+            </tr>
+        </thead>
+        <tbody>
+{''.join(example_rows)}
+        </tbody>
+    </table>
+</main>
+</body>
+</html>
+"""
+
+
+def write_stats_html(stats: Mapping[str, Any], path: str) -> None:
+    with open(path, "w") as output:
+        output.write(render_stats_html(stats))
+
+
 def write_stats_csv(stats: Mapping[str, Any], path: str) -> None:
     fieldnames = [
         "outcome",
