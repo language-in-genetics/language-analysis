@@ -59,6 +59,12 @@ CREATE INDEX CONCURRENTLY IF NOT EXISTS crossref_works_normalized_doi_id_idx
     ON public.crossref_works (normalized_doi) INCLUDE (id)
     WHERE normalized_doi IS NOT NULL;
 
+-- Cover current-corpus cache scans that start from crossref_work_versions.work_id
+-- and only need the matching DOI from crossref_works.
+CREATE INDEX CONCURRENTLY IF NOT EXISTS crossref_works_id_normalized_doi_idx
+    ON public.crossref_works (id) INCLUDE (normalized_doi)
+    WHERE normalized_doi IS NOT NULL;
+
 -- Cover the annual import's unchanged-text check:
 --   work_id -> current version id/import_run/text_fingerprint.
 -- This avoids fetching title/abstract/raw rows from the large versions heap for
