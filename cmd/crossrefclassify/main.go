@@ -20,14 +20,16 @@ import (
 )
 
 type options struct {
-	cachePath     string
-	dir           string
-	outDir        string
-	journalsPath  string
-	workers       int
-	maxLineBytes  int
-	progressEvery int
-	limit         int
+	cachePath          string
+	cacheFormat        string
+	sqliteCopyToMemory bool
+	dir                string
+	outDir             string
+	journalsPath       string
+	workers            int
+	maxLineBytes       int
+	progressEvery      int
+	limit              int
 }
 
 type journalSet map[string]struct{}
@@ -58,16 +60,27 @@ type writerStats struct {
 	err     error
 }
 
+type lookupCache interface {
+	Len() int
+	Lookup([32]byte) (crossrefcache.Record, bool, error)
+	Close() error
+}
+
+type binaryLookupCache struct {
+	records []crossrefcache.Record
+}
+
 func main() {
 	opts := parseOptions()
 	start := time.Now()
 
-	log.Printf("loading DOI cache from %s", opts.cachePath)
-	cache, err := crossrefcache.ReadFile(opts.cachePath)
+	log.Printf("loading %s DOI cache from %s", opts.cacheFormat, opts.cachePath)
+	cache, err := openLookupCache(opts)
 	if err != nil {
 		log.Fatalf("error reading DOI cache: %v", err)
 	}
-	log.Printf("loaded %d DOI cache records in %s", len(cache), time.Since(start).Round(time.Second))
+	defer cache.Close()
+	log.Printf("loaded %d DOI cache records in %s", cache.Len(), time.Since(start).Round(time.Second))
 
 	journals, err := loadJournalSet(opts.journalsPath)
 	if err != nil {
@@ -157,7 +170,7 @@ func main() {
 	if wstats.err != nil {
 		log.Fatalf("error writing classified output: %v", wstats.err)
 	}
-	if err := writeSummary(opts.outDir, total, wstats, len(files), len(cache), time.Since(start)); err != nil {
+	if err := writeSummary(opts.outDir, total, wstats, len(files), cache.Len(), time.Since(start)); err != nil {
 		log.Fatalf("error writing summary: %v", err)
 	}
 	log.Printf(
@@ -178,6 +191,8 @@ func main() {
 func parseOptions() options {
 	opts := options{}
 	flag.StringVar(&opts.cachePath, "cache", "", "Compact DOI cache path")
+	flag.StringVar(&opts.cacheFormat, "cache-format", "auto", "Cache format: auto, binary, or sqlite")
+	flag.BoolVar(&opts.sqliteCopyToMemory, "sqlite-copy-to-memory", true, "Copy SQLite cache into an in-memory database before classification")
 	flag.StringVar(&opts.dir, "dir", "", "Directory containing Crossref *.jsonl.gz files")
 	flag.StringVar(&opts.outDir, "out-dir", "", "Directory for classified JSONL gzip outputs")
 	flag.StringVar(&opts.journalsPath, "journals", "", "Optional newline-delimited journal names to keep")
@@ -190,6 +205,7 @@ func parseOptions() options {
 	if opts.cachePath == "" {
 		log.Fatal("-cache is required")
 	}
+	opts.cacheFormat = inferCacheFormat(opts.cachePath, opts.cacheFormat)
 	if opts.dir == "" {
 		log.Fatal("-dir is required")
 	}
@@ -202,7 +218,49 @@ func parseOptions() options {
 	return opts
 }
 
-func processFile(path string, opts options, cache []crossrefcache.Record, journals journalSet, output chan<- classifiedRecord) fileResult {
+func inferCacheFormat(path, format string) string {
+	if format != "auto" {
+		if format != "binary" && format != "sqlite" {
+			log.Fatal("-cache-format must be auto, binary, or sqlite")
+		}
+		return format
+	}
+	lower := strings.ToLower(path)
+	if strings.HasSuffix(lower, ".sqlite") || strings.HasSuffix(lower, ".sqlite3") || strings.HasSuffix(lower, ".db") {
+		return "sqlite"
+	}
+	return "binary"
+}
+
+func openLookupCache(opts options) (lookupCache, error) {
+	switch opts.cacheFormat {
+	case "binary":
+		records, err := crossrefcache.ReadFile(opts.cachePath)
+		if err != nil {
+			return nil, err
+		}
+		return binaryLookupCache{records: records}, nil
+	case "sqlite":
+		return crossrefcache.OpenSQLiteLookup(opts.cachePath, opts.sqliteCopyToMemory)
+	default:
+		return nil, os.ErrInvalid
+	}
+}
+
+func (c binaryLookupCache) Len() int {
+	return len(c.records)
+}
+
+func (c binaryLookupCache) Lookup(doiHash [32]byte) (crossrefcache.Record, bool, error) {
+	record, ok := crossrefcache.Find(c.records, doiHash)
+	return record, ok, nil
+}
+
+func (c binaryLookupCache) Close() error {
+	return nil
+}
+
+func processFile(path string, opts options, cache lookupCache, journals journalSet, output chan<- classifiedRecord) fileResult {
 	result := fileResult{file: path}
 	file, err := os.Open(path)
 	if err != nil {
@@ -242,7 +300,11 @@ func processFile(path string, opts options, cache []crossrefcache.Record, journa
 			output <- classifiedRecord{category: "no-doi", raw: raw}
 			continue
 		}
-		record, ok := crossrefcache.Find(cache, crossrefcache.HashDOI(summary.NormalizedDOI))
+		record, ok, err := cache.Lookup(crossrefcache.HashDOI(summary.NormalizedDOI))
+		if err != nil {
+			result.err = err
+			return result
+		}
 		if !ok {
 			result.newDOI++
 			output <- classifiedRecord{category: "new", raw: raw}

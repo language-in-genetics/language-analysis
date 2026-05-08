@@ -159,6 +159,10 @@ CREATE INDEX CONCURRENTLY crossref_works_fallback_identity_hash_idx
 CREATE INDEX CONCURRENTLY crossref_works_normalized_doi_id_idx
     ON public.crossref_works (normalized_doi) INCLUDE (id)
     WHERE normalized_doi IS NOT NULL;
+
+CREATE INDEX CONCURRENTLY crossref_works_id_normalized_doi_idx
+    ON public.crossref_works (id) INCLUDE (normalized_doi)
+    WHERE normalized_doi IS NOT NULL;
 ```
 
 Rules:
@@ -219,6 +223,8 @@ The deployed compatibility table currently carries these additional columns:
 - `title_norm`, `abstract_norm`: normalized comparison text
 - `text_fingerprint`: SHA-256 over normalized title and abstract, used for cheap equality checks and re-analysis decisions
 
+`text_fingerprint` is intentionally nullable because it was added after the 2025 legacy backfill. Do not backfill it in-place across the large legacy `crossref_work_versions` heap. For full annual snapshot prefilters, compute missing legacy fingerprints while building the SQLite DOI cache described in [crossref_sqlite_cache_pipeline.md](crossref_sqlite_cache_pipeline.md), and keep storing inline fingerprints only for new or genuinely changed semantic versions going forward.
+
 The import path should also have a covering current-version index so unchanged rows can be checked without fetching title, abstract, or raw JSON from the large heap:
 
 ```sql
@@ -227,6 +233,8 @@ ON public.crossref_work_versions (work_id)
 INCLUDE (id, import_run_id, text_fingerprint)
 WHERE is_current;
 ```
+
+For cache-building or classification prefilters that scan current versions first, the companion `crossref_works_id_normalized_doi_idx` index avoids fetching `crossref_works` heap pages just to recover `normalized_doi`.
 
 The small change table is:
 

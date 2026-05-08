@@ -361,12 +361,24 @@ WHERE v.is_current;
 		return err
 	}
 
-	_, err = db.Exec(`
+	indexStatements := []string{
+		`
 CREATE INDEX CONCURRENTLY IF NOT EXISTS crossref_works_fallback_identity_hash_idx
     ON public.crossref_works USING hash (fallback_identity)
     WHERE fallback_identity IS NOT NULL;
-`)
-	return err
+`,
+		`
+CREATE INDEX CONCURRENTLY IF NOT EXISTS crossref_works_id_normalized_doi_idx
+    ON public.crossref_works (id) INCLUDE (normalized_doi)
+    WHERE normalized_doi IS NOT NULL;
+`,
+	}
+	for _, statement := range indexStatements {
+		if _, err := db.Exec(statement); err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 func createImportRun(db *sql.DB, opts importOptions) (int64, error) {

@@ -12,31 +12,41 @@ import (
 	"time"
 
 	"crossref-parser/internal/crossrefcache"
+	"crossref-parser/internal/crossrefjson"
 
 	_ "github.com/lib/pq"
 )
 
 type manifest struct {
-	Version                int       `json:"version"`
-	CreatedAt              time.Time `json:"created_at"`
-	OutputPath             string    `json:"output_path"`
-	Records                int       `json:"records"`
-	DuplicateHash          int       `json:"duplicate_hashes"`
-	MissingTextFingerprint int       `json:"missing_text_fingerprints"`
-	Elapsed                string    `json:"elapsed"`
-	Query                  string    `json:"query"`
+	Version                   int       `json:"version"`
+	Format                    string    `json:"format"`
+	CreatedAt                 time.Time `json:"created_at"`
+	OutputPath                string    `json:"output_path"`
+	RowsRead                  int       `json:"rows_read"`
+	Records                   int       `json:"records"`
+	DuplicateHash             int       `json:"duplicate_hashes"`
+	StoredTextFingerprints    int       `json:"stored_text_fingerprints"`
+	ComputedTextFingerprints  int       `json:"computed_text_fingerprints"`
+	MissingTextFingerprint    int       `json:"missing_text_fingerprints"`
+	ComputeMissingFingerprint bool      `json:"compute_missing_fingerprints"`
+	Elapsed                   string    `json:"elapsed"`
+	Query                     string    `json:"query"`
 }
 
 func main() {
 	var dbConn string
 	var outPath string
 	var manifestPath string
+	var format string
+	var computeMissingFingerprints bool
 	var reportEvery int
 	var expectedRecords int
 	var limit int
 	flag.StringVar(&dbConn, "dbconn", "", "PostgreSQL connection string")
 	flag.StringVar(&outPath, "out", "", "Output compact DOI cache path")
 	flag.StringVar(&manifestPath, "manifest", "", "Output manifest JSON path")
+	flag.StringVar(&format, "format", "binary", "Output cache format: binary or sqlite")
+	flag.BoolVar(&computeMissingFingerprints, "compute-missing-fingerprints", true, "Compute title/abstract fingerprints for legacy rows where text_fingerprint is NULL")
 	flag.IntVar(&reportEvery, "report-every", 1_000_000, "Log progress every N rows")
 	flag.IntVar(&expectedRecords, "expected-records", 0, "Optional capacity hint for record count")
 	flag.IntVar(&limit, "limit", 0, "Optional row limit for smoke tests")
@@ -44,6 +54,9 @@ func main() {
 
 	if outPath == "" {
 		log.Fatal("-out is required")
+	}
+	if format != "binary" && format != "sqlite" {
+		log.Fatal("-format must be binary or sqlite")
 	}
 	if manifestPath == "" {
 		manifestPath = outPath + ".manifest.json"
@@ -59,12 +72,134 @@ func main() {
 		log.Fatalf("error pinging database: %v", err)
 	}
 
-	query := `
+	query := buildQuery(computeMissingFingerprints, limit)
+	rows, err := db.Query(query)
+	if err != nil {
+		log.Fatalf("error querying current DOI corpus: %v", err)
+	}
+	defer rows.Close()
+
+	var sqliteWriter *crossrefcache.SQLiteWriter
+	if format == "sqlite" {
+		sqliteWriter, err = crossrefcache.NewSQLiteWriter(outPath)
+		if err != nil {
+			log.Fatalf("error creating SQLite cache: %v", err)
+		}
+		defer sqliteWriter.Abort()
+	}
+
+	records := make([]crossrefcache.Record, 0, expectedRecords)
+	rowsRead := 0
+	storedFingerprints := 0
+	computedFingerprints := 0
+	missingFingerprints := 0
+	for rows.Next() {
+		record, source, err := scanRecord(rows, computeMissingFingerprints)
+		if err != nil {
+			log.Fatalf("error scanning current DOI row: %v", err)
+		}
+		rowsRead++
+		switch source {
+		case "stored":
+			storedFingerprints++
+		case "computed":
+			computedFingerprints++
+		default:
+			missingFingerprints++
+		}
+		if format == "sqlite" {
+			if err := sqliteWriter.Insert(record); err != nil {
+				log.Fatalf("error writing SQLite cache row: %v", err)
+			}
+		} else {
+			records = append(records, record)
+		}
+		if reportEvery > 0 && rowsRead%reportEvery == 0 {
+			log.Printf("loaded %d DOI cache records", rowsRead)
+		}
+	}
+	if err := rows.Err(); err != nil {
+		log.Fatalf("error reading current DOI rows: %v", err)
+	}
+
+	cacheRecords := len(records)
+	duplicates := 0
+	if format == "sqlite" {
+		cacheRecords = sqliteWriter.Records()
+		duplicates = sqliteWriter.Duplicates()
+		if duplicates != 0 {
+			log.Printf("warning: %d duplicate DOI hashes detected", duplicates)
+		}
+		log.Printf("finalizing SQLite cache %s", outPath)
+		if err := sqliteWriter.Close(map[string]string{
+			"version":                      strconv.Itoa(int(crossrefcache.Version)),
+			"format":                       "sqlite",
+			"created_at":                   time.Now().Format(time.RFC3339Nano),
+			"rows_read":                    strconv.Itoa(rowsRead),
+			"stored_text_fingerprints":     strconv.Itoa(storedFingerprints),
+			"computed_text_fingerprints":   strconv.Itoa(computedFingerprints),
+			"missing_text_fingerprints":    strconv.Itoa(missingFingerprints),
+			"compute_missing_fingerprints": strconv.FormatBool(computeMissingFingerprints),
+		}); err != nil {
+			log.Fatalf("error finalizing SQLite cache: %v", err)
+		}
+		sqliteWriter = nil
+	} else {
+		log.Printf("sorting %d DOI cache records", len(records))
+		crossrefcache.Sort(records)
+		duplicates = countDuplicateHashes(records)
+		if duplicates != 0 {
+			log.Printf("warning: %d duplicate DOI hashes detected", duplicates)
+		}
+
+		log.Printf("writing %s", outPath)
+		if err := crossrefcache.WriteFile(outPath, records); err != nil {
+			log.Fatalf("error writing cache: %v", err)
+		}
+	}
+	if err := writeManifest(manifestPath, manifest{
+		Version:                   int(crossrefcache.Version),
+		Format:                    format,
+		CreatedAt:                 time.Now(),
+		OutputPath:                outPath,
+		RowsRead:                  rowsRead,
+		Records:                   cacheRecords,
+		DuplicateHash:             duplicates,
+		StoredTextFingerprints:    storedFingerprints,
+		ComputedTextFingerprints:  computedFingerprints,
+		MissingTextFingerprint:    missingFingerprints,
+		ComputeMissingFingerprint: computeMissingFingerprints,
+		Elapsed:                   time.Since(start).Round(time.Second).String(),
+		Query:                     query,
+	}); err != nil {
+		log.Fatalf("error writing manifest: %v", err)
+	}
+	log.Printf(
+		"completed DOI cache build: format=%s rows_read=%d records=%d duplicates=%d stored_fingerprints=%d computed_fingerprints=%d missing_fingerprints=%d elapsed=%s",
+		format,
+		rowsRead,
+		cacheRecords,
+		duplicates,
+		storedFingerprints,
+		computedFingerprints,
+		missingFingerprints,
+		time.Since(start).Round(time.Second),
+	)
+}
+
+func buildQuery(computeMissingFingerprints bool, limit int) string {
+	fields := `
 SELECT
     v.work_id,
     v.id,
     w.normalized_doi,
-    v.text_fingerprint
+    v.text_fingerprint`
+	if computeMissingFingerprints {
+		fields += `,
+    v.title,
+    v.abstract`
+	}
+	query := fields + `
 FROM public.crossref_work_versions v
 JOIN public.crossref_works w
   ON w.id = v.work_id
@@ -74,69 +209,42 @@ WHERE v.is_current
 	if limit > 0 {
 		query = strings.TrimSuffix(query, ";\n") + "\nLIMIT " + strconv.Itoa(limit) + ";\n"
 	}
-	rows, err := db.Query(query)
-	if err != nil {
-		log.Fatalf("error querying current DOI corpus: %v", err)
-	}
-	defer rows.Close()
+	return query
+}
 
-	records := make([]crossrefcache.Record, 0, expectedRecords)
-	missingFingerprint := 0
-	for rows.Next() {
-		var workID int64
-		var versionID int64
-		var doi string
-		var storedFingerprint sql.NullString
+func scanRecord(rows *sql.Rows, computeMissingFingerprints bool) (crossrefcache.Record, string, error) {
+	var workID int64
+	var versionID int64
+	var doi string
+	var storedFingerprint sql.NullString
+	var title sql.NullString
+	var abstract sql.NullString
+	if computeMissingFingerprints {
+		if err := rows.Scan(&workID, &versionID, &doi, &storedFingerprint, &title, &abstract); err != nil {
+			return crossrefcache.Record{}, "", err
+		}
+	} else {
 		if err := rows.Scan(&workID, &versionID, &doi, &storedFingerprint); err != nil {
-			log.Fatalf("error scanning current DOI row: %v", err)
+			return crossrefcache.Record{}, "", err
 		}
-
-		record := crossrefcache.Record{
-			DOIHash:       crossrefcache.HashDOI(doi),
-			WorkID:        uint64(workID),
-			WorkVersionID: uint64(versionID),
-		}
-		if storedFingerprint.Valid && len(storedFingerprint.String) == 64 {
-			if decoded, err := hex.DecodeString(storedFingerprint.String); err == nil && len(decoded) == 32 {
-				copy(record.TextFingerprint[:], decoded)
-			}
-		}
-		if record.TextFingerprint == ([32]byte{}) {
-			missingFingerprint++
-		}
-		records = append(records, record)
-		if reportEvery > 0 && len(records)%reportEvery == 0 {
-			log.Printf("loaded %d DOI cache records", len(records))
-		}
-	}
-	if err := rows.Err(); err != nil {
-		log.Fatalf("error reading current DOI rows: %v", err)
 	}
 
-	log.Printf("sorting %d DOI cache records", len(records))
-	crossrefcache.Sort(records)
-	duplicates := countDuplicateHashes(records)
-	if duplicates != 0 {
-		log.Printf("warning: %d duplicate DOI hashes detected", duplicates)
+	record := crossrefcache.Record{
+		DOIHash:       crossrefcache.HashDOI(doi),
+		WorkID:        uint64(workID),
+		WorkVersionID: uint64(versionID),
 	}
-
-	log.Printf("writing %s", outPath)
-	if err := crossrefcache.WriteFile(outPath, records); err != nil {
-		log.Fatalf("error writing cache: %v", err)
+	if storedFingerprint.Valid && len(storedFingerprint.String) == 64 {
+		if decoded, err := hex.DecodeString(storedFingerprint.String); err == nil && len(decoded) == 32 {
+			copy(record.TextFingerprint[:], decoded)
+			return record, "stored", nil
+		}
 	}
-	if err := writeManifest(manifestPath, manifest{
-		Version:                int(crossrefcache.Version),
-		CreatedAt:              time.Now(),
-		OutputPath:             outPath,
-		Records:                len(records),
-		DuplicateHash:          duplicates,
-		MissingTextFingerprint: missingFingerprint,
-		Elapsed:                time.Since(start).Round(time.Second).String(),
-		Query:                  query,
-	}); err != nil {
-		log.Fatalf("error writing manifest: %v", err)
+	if computeMissingFingerprints {
+		record.TextFingerprint = crossrefjson.FingerprintFromText(title.String, abstract.String)
+		return record, "computed", nil
 	}
-	log.Printf("completed DOI cache build: records=%d duplicates=%d missing_fingerprints=%d elapsed=%s", len(records), duplicates, missingFingerprint, time.Since(start).Round(time.Second))
+	return record, "missing", nil
 }
 
 func countDuplicateHashes(records []crossrefcache.Record) int {

@@ -18,6 +18,14 @@ The redesign plan for incremental yearly imports is documented in [database/incr
 
 The new incremental importer is `bin/crossrefimport`. It imports numbered `*.jsonl.gz` Crossref snapshot files into canonical versioned tables under `public.crossref_*`, and it also has a `-from-raw-text` mode to backfill the existing `public.raw_text_data` corpus into that schema.
 
+For full annual snapshots after the 2025 backfill, prefilter the dump before
+importing. Build a SQLite DOI cache, compute missing legacy text fingerprints in
+that cache, classify the dump into `new` and `changed` records, then import only
+those compact files. This avoids rewriting legacy PostgreSQL rows just to fill
+`text_fingerprint` and avoids row-by-row PostgreSQL lookups while streaming the
+dump. See
+[database/crossref_sqlite_cache_pipeline.md](database/crossref_sqlite_cache_pipeline.md).
+
 ## Quick Start
 
 ### Prerequisites
@@ -139,6 +147,13 @@ make all
 
 # Build only the incremental importer
 make bin/crossrefimport
+
+# Build the full annual prefilter pipeline tools
+make bin/crossrefcachebuild bin/crossrefclassify bin/crossrefimport
+
+# Classify a full Crossref dump through a SQLite DOI cache.
+# This does not import unless RUN_IMPORT=1 is set.
+database/run_crossref_prefilter_pipeline.sh
 
 # Run tests
 make test
