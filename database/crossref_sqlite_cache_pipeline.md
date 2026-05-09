@@ -157,6 +157,36 @@ Useful environment variables:
 Do not set `INCLUDE_UNKNOWN=1` for routine full imports. It is for diagnostic
 runs only.
 
+## Crash-Reproduction Debug Run
+
+If the cache build appears to hard-lock or reboot `raksasa`, use the debug
+launcher instead of the normal wrapper:
+
+```bash
+database/run_crossref_prefilter_debug.sh
+```
+
+It still defaults to `RUN_IMPORT=0`, so it builds the DOI cache and classifies
+without importing. The launcher creates a fresh
+`/home/languageingenetics/crossref-prefilter-debug-<timestamp>/` work root and
+writes several independent evidence streams under `debug/`:
+
+- `summary.tsv`: frequent process, memory, pressure, cache-size, and progress
+  samples
+- `snapshots/*.txt`: expanded host snapshots with memory, PSI, `vmstat`,
+  `iostat`, process tables, disk space, and the pipeline log tail
+- `proc/<epoch>/`: `/proc` snapshots for `crossrefcachebuild`,
+  `crossrefclassify`, and the wrapper process
+- `cachebuild-stats.jsonl`: in-process Go heap plus `/proc/self/status`,
+  `/proc/self/smaps_rollup`, `/proc/self/io`, row counts, and cache-file sizes
+
+Useful knobs:
+
+- `MONITOR_INTERVAL=2`: sample the host every two seconds
+- `DEBUG_STATS_INTERVAL=100000`: write cache-builder JSONL stats every 100,000
+  rows
+- `DEBUG_STATS_SYNC=1`: fsync the JSONL stats after each sample
+
 ## Operational Checks
 
 Before importing:

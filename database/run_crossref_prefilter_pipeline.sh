@@ -23,6 +23,10 @@ PIPELOG="${PIPELOG:-logs/crossref-prefilter-pipeline.log}"
 CACHE_MANIFEST="${CACHE_MANIFEST:-$CACHE_PATH.manifest.json}"
 CLASSIFY_DIR="${CLASSIFY_DIR:-$WORK_ROOT/classified}"
 IMPORT_DIR="${IMPORT_DIR:-$WORK_ROOT/importable}"
+DEBUG_DIR="${DEBUG_DIR:-$WORK_ROOT/debug}"
+DEBUG_STATS="${DEBUG_STATS:-0}"
+DEBUG_STATS_INTERVAL="${DEBUG_STATS_INTERVAL:-100000}"
+DEBUG_STATS_SYNC="${DEBUG_STATS_SYNC:-1}"
 
 {
   echo "$(date -Is) starting Crossref prefilter pipeline"
@@ -36,17 +40,31 @@ IMPORT_DIR="${IMPORT_DIR:-$WORK_ROOT/importable}"
   echo "build_cache=$BUILD_CACHE"
   echo "run_import=$RUN_IMPORT"
   echo "include_unknown=$INCLUDE_UNKNOWN"
+  echo "debug_stats=$DEBUG_STATS"
+  echo "debug_dir=$DEBUG_DIR"
 } > "$PIPELOG"
 
 if [[ "$BUILD_CACHE" == "1" || ! -s "$CACHE_PATH" ]]; then
   rm -f "$CACHE_PATH" "$CACHE_MANIFEST"
-  ./bin/crossrefcachebuild \
+  cachebuild_args=(
     -format sqlite \
     -compute-missing-fingerprints \
     -out "$CACHE_PATH" \
     -manifest "$CACHE_MANIFEST" \
-    -report-every 1000000 \
-    >> "$PIPELOG" 2>&1
+    -report-every 1000000
+  )
+  if [[ "$DEBUG_STATS" == "1" ]]; then
+    mkdir -p "$DEBUG_DIR"
+    cachebuild_args+=(
+      -debug-stats "$DEBUG_DIR/cachebuild-stats.jsonl"
+      -debug-stats-every "$DEBUG_STATS_INTERVAL"
+    )
+    if [[ "$DEBUG_STATS_SYNC" == "1" ]]; then
+      cachebuild_args+=(-debug-stats-sync)
+    fi
+    echo "$(date -Is) writing cache builder debug stats to $DEBUG_DIR/cachebuild-stats.jsonl every $DEBUG_STATS_INTERVAL rows" >> "$PIPELOG"
+  fi
+  ./bin/crossrefcachebuild "${cachebuild_args[@]}" >> "$PIPELOG" 2>&1
 else
   echo "$(date -Is) reusing existing cache $CACHE_PATH" >> "$PIPELOG"
 fi
