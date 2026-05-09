@@ -6,6 +6,7 @@ import (
 	"compress/gzip"
 	"encoding/json"
 	"flag"
+	"fmt"
 	"log"
 	"os"
 	"path/filepath"
@@ -14,17 +15,20 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"crossref-parser/internal/crossrefstage"
 )
 
 type options struct {
 	dir           string
 	journalsPath  string
-	outPath       string
+	sqliteOut     string
 	noDOIPath     string
 	workers       int
 	maxLineBytes  int
 	progressEvery int
 	requireDOI    bool
+	includeNoDOI  bool
 }
 
 type journalPattern struct {
@@ -38,10 +42,11 @@ type crossrefHeader struct {
 }
 
 type matchRecord struct {
-	raw     []byte
-	journal string
-	hasDOI  bool
-	noDOI   bool
+	raw       []byte
+	sourceRef string
+	journal   string
+	hasDOI    bool
+	noDOI     bool
 }
 
 type fileResult struct {
@@ -73,13 +78,8 @@ func main() {
 		log.Fatalf("no *.jsonl.gz files found under %s", opts.dir)
 	}
 
-	if err := os.MkdirAll(filepath.Dir(opts.outPath), 0o755); err != nil {
+	if err := os.MkdirAll(filepath.Dir(opts.sqliteOut), 0o755); err != nil {
 		log.Fatalf("error creating output directory: %v", err)
-	}
-	if opts.noDOIPath != "" {
-		if err := os.MkdirAll(filepath.Dir(opts.noDOIPath), 0o755); err != nil {
-			log.Fatalf("error creating no-DOI output directory: %v", err)
-		}
 	}
 
 	log.Printf("filtering %d files for %d journals with %d workers", len(files), len(journals), opts.workers)
@@ -161,14 +161,17 @@ func main() {
 
 func parseOptions() options {
 	opts := options{}
+	var deprecatedOut string
 	flag.StringVar(&opts.dir, "dir", "", "Directory containing Crossref *.jsonl.gz files")
 	flag.StringVar(&opts.journalsPath, "journals", "", "Newline-delimited journal names to keep")
-	flag.StringVar(&opts.outPath, "out", "", "Output focused JSONL gzip file")
-	flag.StringVar(&opts.noDOIPath, "no-doi-out", "", "Optional output JSONL gzip file for matched records without DOI")
+	flag.StringVar(&opts.sqliteOut, "sqlite-out", "", "Focused SQLite stage output path")
+	flag.StringVar(&deprecatedOut, "out", "", "Deprecated alias for -sqlite-out")
+	flag.StringVar(&opts.noDOIPath, "no-doi-out", "", "Deprecated: include matched no-DOI records in the SQLite stage as no-doi")
 	flag.IntVar(&opts.workers, "workers", runtime.NumCPU(), "Concurrent gzip readers")
 	flag.IntVar(&opts.maxLineBytes, "max-line-bytes", 64*1024*1024, "Maximum JSON line size")
 	flag.IntVar(&opts.progressEvery, "progress-every", 250, "Log progress every N completed input files")
-	flag.BoolVar(&opts.requireDOI, "require-doi", false, "Write only matched records with DOI to -out")
+	flag.BoolVar(&opts.requireDOI, "require-doi", false, "Write only matched records with DOI to the focused category")
+	flag.BoolVar(&opts.includeNoDOI, "include-no-doi", false, "Include matched records without DOI in the SQLite stage as no-doi")
 	flag.Parse()
 
 	if opts.dir == "" {
@@ -177,8 +180,14 @@ func parseOptions() options {
 	if opts.journalsPath == "" {
 		log.Fatal("-journals is required")
 	}
-	if opts.outPath == "" {
-		log.Fatal("-out is required")
+	if opts.sqliteOut == "" {
+		opts.sqliteOut = deprecatedOut
+	}
+	if opts.sqliteOut == "" {
+		log.Fatal("-sqlite-out is required")
+	}
+	if opts.noDOIPath != "" {
+		opts.includeNoDOI = true
 	}
 	if opts.workers <= 0 {
 		log.Fatal("-workers must be positive")
@@ -244,7 +253,9 @@ func processFile(path string, opts options, patterns []journalPattern, matches c
 
 	scanner := bufio.NewScanner(gzReader)
 	scanner.Buffer(make([]byte, 1024*1024), opts.maxLineBytes)
+	lineNumber := 0
 	for scanner.Scan() {
+		lineNumber++
 		line := bytes.TrimSpace(scanner.Bytes())
 		if len(line) == 0 {
 			continue
@@ -266,12 +277,18 @@ func processFile(path string, opts options, patterns []journalPattern, matches c
 		if !hasDOI {
 			result.noDOI++
 		}
-		if opts.requireDOI && !hasDOI && opts.noDOIPath == "" {
+		if opts.requireDOI && !hasDOI && !opts.includeNoDOI {
 			continue
 		}
 		raw := make([]byte, len(line))
 		copy(raw, line)
-		matches <- matchRecord{raw: raw, journal: journal, hasDOI: hasDOI, noDOI: !hasDOI}
+		matches <- matchRecord{
+			raw:       raw,
+			sourceRef: fmt.Sprintf("%s:%d", filepath.Base(path), lineNumber),
+			journal:   journal,
+			hasDOI:    hasDOI,
+			noDOI:     !hasDOI,
+		}
 	}
 	if err := scanner.Err(); err != nil {
 		result.err = err
@@ -331,101 +348,39 @@ type writerStats struct {
 
 func writer(opts options, matches <-chan matchRecord, done chan<- writerStats) {
 	stats := writerStats{byJournal: map[string]int64{}}
-	outFile, err := os.Create(opts.outPath)
+	stage, err := crossrefstage.NewWriter(opts.sqliteOut)
 	if err != nil {
 		stats.err = err
 		done <- stats
 		return
 	}
-
-	bufferedOut := bufio.NewWriterSize(outFile, 4*1024*1024)
-	gzOut, err := gzip.NewWriterLevel(bufferedOut, gzip.BestSpeed)
-	if err != nil {
-		stats.err = err
-		_ = outFile.Close()
-		done <- stats
-		return
-	}
-
-	var noDOIFile *os.File
-	var noDOIBuffer *bufio.Writer
-	var noDOIWriter *gzip.Writer
-	if opts.noDOIPath != "" {
-		noDOIFile, err = os.Create(opts.noDOIPath)
-		if err != nil {
-			stats.err = err
-			closeMainWriter(gzOut, bufferedOut, outFile, &stats)
-			done <- stats
-			return
-		}
-		noDOIBuffer = bufio.NewWriterSize(noDOIFile, 1024*1024)
-		noDOIWriter, err = gzip.NewWriterLevel(noDOIBuffer, gzip.BestSpeed)
-		if err != nil {
-			stats.err = err
-			_ = noDOIFile.Close()
-			closeMainWriter(gzOut, bufferedOut, outFile, &stats)
-			done <- stats
-			return
-		}
-	}
+	defer stage.Abort()
 
 	for match := range matches {
+		category := "focused"
 		if match.noDOI {
-			if noDOIWriter != nil {
-				if _, err := noDOIWriter.Write(match.raw); err != nil {
-					stats.err = err
-					break
-				}
-				if _, err := noDOIWriter.Write([]byte{'\n'}); err != nil {
-					stats.err = err
-					break
-				}
-				stats.noDOIWritten++
-			}
-			if opts.requireDOI {
+			if !opts.includeNoDOI {
 				continue
 			}
+			category = "no-doi"
+			stats.noDOIWritten++
 		}
-		if _, err := gzOut.Write(match.raw); err != nil {
+		if err := stage.Insert(category, match.sourceRef, match.raw); err != nil {
 			stats.err = err
 			break
 		}
-		if _, err := gzOut.Write([]byte{'\n'}); err != nil {
-			stats.err = err
-			break
+		if category == "focused" {
+			stats.written++
+			stats.byJournal[match.journal]++
 		}
-		stats.written++
-		stats.byJournal[match.journal]++
 	}
-	if noDOIWriter != nil {
-		closeNoDOIWriter(noDOIWriter, noDOIBuffer, noDOIFile, &stats)
+	if stats.err == nil {
+		stats.err = stage.Close(map[string]string{
+			"format": "crossref-stage-sqlite",
+			"tool":   "crossreffilter",
+		})
 	}
-	closeMainWriter(gzOut, bufferedOut, outFile, &stats)
 	done <- stats
-}
-
-func closeMainWriter(gzOut *gzip.Writer, bufferedOut *bufio.Writer, outFile *os.File, stats *writerStats) {
-	if err := gzOut.Close(); stats.err == nil && err != nil {
-		stats.err = err
-	}
-	if err := bufferedOut.Flush(); stats.err == nil && err != nil {
-		stats.err = err
-	}
-	if err := outFile.Close(); stats.err == nil && err != nil {
-		stats.err = err
-	}
-}
-
-func closeNoDOIWriter(gzOut *gzip.Writer, bufferedOut *bufio.Writer, outFile *os.File, stats *writerStats) {
-	if err := gzOut.Close(); stats.err == nil && err != nil {
-		stats.err = err
-	}
-	if err := bufferedOut.Flush(); stats.err == nil && err != nil {
-		stats.err = err
-	}
-	if err := outFile.Close(); stats.err == nil && err != nil {
-		stats.err = err
-	}
 }
 
 func sortedKeys(values map[string]int64) []string {

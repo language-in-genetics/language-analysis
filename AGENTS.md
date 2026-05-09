@@ -89,13 +89,13 @@ See `database/grant_permissions.sql` for the complete setup script.
 
 ### Building the Go tools
 ```bash
-make all                    # Build pgjsontool and crossrefimport
+make all                    # Build pgjsontool, crossrefimport, and Crossref pipeline helpers
 make bin/pgjsontool        # Build pgjsontool
 make bin/crossrefimport    # Build the incremental importer
 make clean                 # Remove built binaries
 ```
 
-Note: `pgjsontool` is the legacy importer and does not match the current `*.jsonl.gz` snapshot shape. Use `crossrefimport` for incremental yearly imports and for backfilling the existing `public.raw_text_data` table into the canonical `public.crossref_*` schema.
+Note: `pgjsontool` is the legacy importer. Use `crossrefclassify` to turn current Crossref snapshot files into a SQLite staging database, then use `crossrefimport -sqlite` for incremental yearly imports or `crossrefimport -from-raw-text` for backfilling the existing `public.raw_text_data` table into the canonical `public.crossref_*` schema.
 
 ### Testing and Linting
 ```bash
@@ -109,9 +109,9 @@ make dev-deps             # Install development dependencies
 **Note:** The data already exists in `public.raw_text_data`. For yearly refreshes, use the incremental importer.
 
 ```bash
-# Import a new Crossref snapshot into the incremental schema
+# Import a classified SQLite stage into the incremental schema
 export PGDATABASE=crossref
-./bin/crossrefimport -run-label crossref-2026-annual -dir "/crossref/March 2026 Public Data File from Crossref"
+./bin/crossrefimport -run-label crossref-2026-annual -sqlite "/crossref/March 2026 Public Data File from Crossref/_prefiltered_full_import/classified/classified.sqlite"
 
 # Backfill the legacy raw_text_data corpus into the incremental schema
 ./bin/crossrefimport -run-label crossref-2025-backfill -from-raw-text

@@ -22,6 +22,7 @@ from retraction_stats import (
     format_p_value,
     format_rate,
     load_retraction_status_from_jsonl_gz,
+    load_retraction_status_from_sqlite,
     resolve_status_work_ids,
     write_stats_csv,
     write_stats_html,
@@ -745,8 +746,17 @@ for year, counts in sorted(year_term_totals.items()):
 
 cursor.execute("SET enable_hashjoin = off")
 cursor.execute("SET enable_mergejoin = off")
+retraction_source_sqlite = os.environ.get("CROSSREF_RETRACTION_SOURCE_SQLITE")
 retraction_source_jsonl_gz = os.environ.get("CROSSREF_RETRACTION_SOURCE_JSONL_GZ")
-if retraction_source_jsonl_gz and os.path.exists(retraction_source_jsonl_gz):
+if retraction_source_sqlite and os.path.exists(retraction_source_sqlite):
+    retraction_status = load_retraction_status_from_sqlite(retraction_source_sqlite)
+    retraction_status_work_ids = resolve_status_work_ids(cursor, retraction_status)
+    execute_query(PROCESSED_FILES_SQL)
+    retraction_statistics = build_retraction_statistics_from_work_ids(
+        cursor.fetchall(),
+        retraction_status_work_ids,
+    )
+elif retraction_source_jsonl_gz and os.path.exists(retraction_source_jsonl_gz):
     retraction_status = load_retraction_status_from_jsonl_gz(retraction_source_jsonl_gz)
     retraction_status_work_ids = resolve_status_work_ids(cursor, retraction_status)
     execute_query(PROCESSED_FILES_SQL)

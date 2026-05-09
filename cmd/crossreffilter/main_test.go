@@ -1,13 +1,12 @@
 package main
 
 import (
-	"bufio"
-	"compress/gzip"
+	"database/sql"
 	"encoding/json"
-	"io"
-	"os"
 	"path/filepath"
 	"testing"
+
+	_ "modernc.org/sqlite"
 )
 
 func TestExactJournalMatch(t *testing.T) {
@@ -64,17 +63,18 @@ func TestExactJournalMatchDetectsMissingDOI(t *testing.T) {
 	}
 }
 
-func TestWriterClosesReadableGzipBeforeDone(t *testing.T) {
+func TestWriterClosesReadableSQLiteBeforeDone(t *testing.T) {
 	dir := t.TempDir()
-	outPath := filepath.Join(dir, "focused.jsonl.gz")
+	outPath := filepath.Join(dir, "focused.sqlite")
 	matches := make(chan matchRecord, 1)
 	done := make(chan writerStats, 1)
 
-	go writer(options{outPath: outPath}, matches, done)
+	go writer(options{sqliteOut: outPath}, matches, done)
 	matches <- matchRecord{
-		raw:     []byte(`{"DOI":"10.1016/example","container-title":["Clinical Genetics"],"title":["Example"]}`),
-		journal: "Clinical Genetics",
-		hasDOI:  true,
+		raw:       []byte(`{"DOI":"10.1016/example","container-title":["Clinical Genetics"],"title":["Example"]}`),
+		sourceRef: "0.jsonl.gz:1",
+		journal:   "Clinical Genetics",
+		hasDOI:    true,
 	}
 	close(matches)
 
@@ -86,25 +86,22 @@ func TestWriterClosesReadableGzipBeforeDone(t *testing.T) {
 		t.Fatalf("written = %d, want 1", stats.written)
 	}
 
-	file, err := os.Open(outPath)
+	db, err := sql.Open("sqlite", outPath)
 	if err != nil {
 		t.Fatal(err)
 	}
-	defer file.Close()
-	gzReader, err := gzip.NewReader(file)
-	if err != nil {
-		t.Fatalf("gzip.NewReader: %v", err)
+	defer db.Close()
+	var category, sourceRef, raw string
+	if err := db.QueryRow(`SELECT category, source_ref, raw_json_text FROM import_records`).Scan(&category, &sourceRef, &raw); err != nil {
+		t.Fatal(err)
 	}
-	defer gzReader.Close()
-	reader := bufio.NewReader(gzReader)
-	line, err := reader.ReadString('\n')
-	if err != nil {
-		t.Fatalf("ReadString: %v", err)
+	if category != "focused" {
+		t.Fatalf("category = %q, want focused", category)
 	}
-	if line == "" {
-		t.Fatal("empty gzip payload")
+	if sourceRef != "0.jsonl.gz:1" {
+		t.Fatalf("sourceRef = %q, want 0.jsonl.gz:1", sourceRef)
 	}
-	if _, err := io.Copy(io.Discard, reader); err != nil {
-		t.Fatalf("reading gzip to EOF: %v", err)
+	if raw == "" {
+		t.Fatal("empty SQLite payload")
 	}
 }

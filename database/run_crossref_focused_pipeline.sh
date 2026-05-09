@@ -18,15 +18,14 @@ mkdir -p logs "$FOCUS_DIR" "$NODOI_DIR"
 
 JOURNALS="logs/crossref-focused-journals.txt"
 PIPELOG="logs/crossref-focused-pipeline.log"
-FOCUSED_JSONL="$FOCUS_DIR/focused-journals-doi.jsonl.gz"
-NODOI_JSONL="$NODOI_DIR/focused-journals-no-doi.jsonl.gz"
+FOCUSED_SQLITE="${FOCUSED_SQLITE:-$FOCUS_DIR/focused-journals.sqlite}"
 
 {
   echo "$(date -Is) starting focused Crossref pipeline"
   echo "project_dir=$PROJECT_DIR"
   echo "dump_dir=$DUMP_DIR"
   echo "focus_dir=$FOCUS_DIR"
-  echo "nodoi_dir=$NODOI_DIR"
+  echo "focused_sqlite=$FOCUSED_SQLITE"
   echo "run_label=$RUN_LABEL"
   echo "workers=$WORKERS"
   echo "batch_size=$BATCH_SIZE"
@@ -35,13 +34,12 @@ NODOI_JSONL="$NODOI_DIR/focused-journals-no-doi.jsonl.gz"
 psql -At -c "SELECT name FROM languageingenetics.journals WHERE enabled ORDER BY name" > "$JOURNALS"
 echo "$(date -Is) journals=$(wc -l < "$JOURNALS")" >> "$PIPELOG"
 
-rm -f "$FOCUSED_JSONL" "$NODOI_JSONL"
+rm -f "$FOCUSED_SQLITE" "$FOCUSED_SQLITE.tmp"
 
 ./bin/crossreffilter \
   -dir "$DUMP_DIR" \
   -journals "$JOURNALS" \
-  -out "$FOCUSED_JSONL" \
-  -no-doi-out "$NODOI_JSONL" \
+  -sqlite-out "$FOCUSED_SQLITE" \
   -require-doi \
   -workers "$WORKERS" \
   -progress-every 250 \
@@ -51,7 +49,8 @@ echo "$(date -Is) focused filter complete; starting DOI-only import" >> "$PIPELO
 
 ./bin/crossrefimport \
   -run-label "$RUN_LABEL" \
-  -dir "$FOCUS_DIR" \
+  -sqlite "$FOCUSED_SQLITE" \
+  -categories focused \
   -batch-size "$BATCH_SIZE" \
   >> "$PIPELOG" 2>&1
 

@@ -9,6 +9,7 @@ RUN_LABEL="${RUN_LABEL:-crossref-2026-annual-prefiltered-$(date +%Y%m%d)}"
 WORKERS="${WORKERS:-8}"
 BATCH_SIZE="${BATCH_SIZE:-50000}"
 BUILD_CACHE="${BUILD_CACHE:-1}"
+RUN_CLASSIFY="${RUN_CLASSIFY:-1}"
 RUN_IMPORT="${RUN_IMPORT:-0}"
 INCLUDE_UNKNOWN="${INCLUDE_UNKNOWN:-0}"
 
@@ -22,7 +23,7 @@ mkdir -p logs "$WORK_ROOT"
 PIPELOG="${PIPELOG:-logs/crossref-prefilter-pipeline.log}"
 CACHE_MANIFEST="${CACHE_MANIFEST:-$CACHE_PATH.manifest.json}"
 CLASSIFY_DIR="${CLASSIFY_DIR:-$WORK_ROOT/classified}"
-IMPORT_DIR="${IMPORT_DIR:-$WORK_ROOT/importable}"
+CLASSIFY_DB="${CLASSIFY_DB:-$CLASSIFY_DIR/classified.sqlite}"
 DEBUG_DIR="${DEBUG_DIR:-$WORK_ROOT/debug}"
 DEBUG_STATS="${DEBUG_STATS:-0}"
 DEBUG_STATS_INTERVAL="${DEBUG_STATS_INTERVAL:-100000}"
@@ -38,8 +39,10 @@ DEBUG_STATS_SYNC="${DEBUG_STATS_SYNC:-1}"
   echo "workers=$WORKERS"
   echo "batch_size=$BATCH_SIZE"
   echo "build_cache=$BUILD_CACHE"
+  echo "run_classify=$RUN_CLASSIFY"
   echo "run_import=$RUN_IMPORT"
   echo "include_unknown=$INCLUDE_UNKNOWN"
+  echo "classify_db=$CLASSIFY_DB"
   echo "debug_stats=$DEBUG_STATS"
   echo "debug_dir=$DEBUG_DIR"
 } > "$PIPELOG"
@@ -69,50 +72,46 @@ else
   echo "$(date -Is) reusing existing cache $CACHE_PATH" >> "$PIPELOG"
 fi
 
-rm -rf "$CLASSIFY_DIR" "$IMPORT_DIR"
-mkdir -p "$CLASSIFY_DIR" "$IMPORT_DIR"
+if [[ "$RUN_CLASSIFY" == "1" ]]; then
+  rm -rf "$CLASSIFY_DIR"
+  mkdir -p "$CLASSIFY_DIR"
 
-./bin/crossrefclassify \
-  -cache "$CACHE_PATH" \
-  -cache-format sqlite \
-  -sqlite-copy-to-memory \
-  -dir "$DUMP_DIR" \
-  -out-dir "$CLASSIFY_DIR" \
-  -workers "$WORKERS" \
-  -progress-every 250 \
-  >> "$PIPELOG" 2>&1
-
-link_if_present() {
-  local src="$1"
-  local dst="$2"
-  if [[ -s "$src" ]]; then
-    ln -sf "$src" "$dst"
-    echo "$(date -Is) queued $(basename "$src") for import" >> "$PIPELOG"
+  ./bin/crossrefclassify \
+    -cache "$CACHE_PATH" \
+    -cache-format sqlite \
+    -sqlite-copy-to-memory \
+    -dir "$DUMP_DIR" \
+    -out-dir "$CLASSIFY_DIR" \
+    -sqlite-out "$CLASSIFY_DB" \
+    -workers "$WORKERS" \
+    -progress-every 250 \
+    >> "$PIPELOG" 2>&1
+else
+  if [[ ! -s "$CLASSIFY_DB" ]]; then
+    echo "$(date -Is) RUN_CLASSIFY=0 but SQLite stage is missing: $CLASSIFY_DB" >> "$PIPELOG"
+    exit 1
   fi
-}
-
-link_if_present "$CLASSIFY_DIR/new.jsonl.gz" "$IMPORT_DIR/000-new.jsonl.gz"
-link_if_present "$CLASSIFY_DIR/changed.jsonl.gz" "$IMPORT_DIR/001-changed.jsonl.gz"
-if [[ "$INCLUDE_UNKNOWN" == "1" ]]; then
-  link_if_present "$CLASSIFY_DIR/unknown-fingerprint.jsonl.gz" "$IMPORT_DIR/002-unknown-fingerprint.jsonl.gz"
+  echo "$(date -Is) reusing existing SQLite stage $CLASSIFY_DB" >> "$PIPELOG"
 fi
 
-if ! compgen -G "$IMPORT_DIR/*.jsonl.gz" > /dev/null; then
-  echo "$(date -Is) no importable records found; stopping before import" >> "$PIPELOG"
-  exit 0
+IMPORT_CATEGORIES="new,changed"
+if [[ "$INCLUDE_UNKNOWN" == "1" ]]; then
+  IMPORT_CATEGORIES="new,changed,unknown-fingerprint"
 fi
 
 if [[ "$RUN_IMPORT" == "1" ]]; then
   ./bin/crossrefimport \
     -run-label "$RUN_LABEL" \
-    -dir "$IMPORT_DIR" \
+    -sqlite "$CLASSIFY_DB" \
+    -categories "$IMPORT_CATEGORIES" \
     -batch-size "$BATCH_SIZE" \
     >> "$PIPELOG" 2>&1
   echo "$(date -Is) Crossref prefilter import complete" >> "$PIPELOG"
 else
   {
     echo "$(date -Is) classification complete; import not started because RUN_IMPORT=0"
+    echo "SQLite stage: $CLASSIFY_DB"
     echo "To import:"
-    echo "RUN_IMPORT=1 RUN_LABEL=$RUN_LABEL $0"
+    echo "BUILD_CACHE=0 RUN_CLASSIFY=0 RUN_IMPORT=1 CLASSIFY_DB=$CLASSIFY_DB RUN_LABEL=$RUN_LABEL $0"
   } >> "$PIPELOG"
 fi

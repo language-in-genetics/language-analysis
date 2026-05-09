@@ -6,6 +6,7 @@ import (
 	"compress/gzip"
 	"encoding/json"
 	"flag"
+	"fmt"
 	"log"
 	"os"
 	"path/filepath"
@@ -17,6 +18,7 @@ import (
 
 	"crossref-parser/internal/crossrefcache"
 	"crossref-parser/internal/crossrefjson"
+	"crossref-parser/internal/crossrefstage"
 )
 
 type options struct {
@@ -25,6 +27,7 @@ type options struct {
 	sqliteCopyToMemory bool
 	dir                string
 	outDir             string
+	sqliteOut          string
 	journalsPath       string
 	workers            int
 	maxLineBytes       int
@@ -35,8 +38,9 @@ type options struct {
 type journalSet map[string]struct{}
 
 type classifiedRecord struct {
-	category string
-	raw      []byte
+	category  string
+	sourceRef string
+	raw       []byte
 }
 
 type fileResult struct {
@@ -107,7 +111,7 @@ func main() {
 
 	records := make(chan classifiedRecord, opts.workers*128)
 	writerDone := make(chan writerStats, 1)
-	go writer(opts.outDir, records, writerDone)
+	go writer(opts.sqliteOut, records, writerDone)
 
 	jobs := make(chan string)
 	results := make(chan fileResult, len(files))
@@ -170,7 +174,7 @@ func main() {
 	if wstats.err != nil {
 		log.Fatalf("error writing classified output: %v", wstats.err)
 	}
-	if err := writeSummary(opts.outDir, total, wstats, len(files), cache.Len(), time.Since(start)); err != nil {
+	if err := writeSummary(opts.outDir, opts.sqliteOut, total, wstats, len(files), cache.Len(), time.Since(start)); err != nil {
 		log.Fatalf("error writing summary: %v", err)
 	}
 	log.Printf(
@@ -194,7 +198,8 @@ func parseOptions() options {
 	flag.StringVar(&opts.cacheFormat, "cache-format", "auto", "Cache format: auto, binary, or sqlite")
 	flag.BoolVar(&opts.sqliteCopyToMemory, "sqlite-copy-to-memory", true, "Copy SQLite cache into an in-memory database before classification")
 	flag.StringVar(&opts.dir, "dir", "", "Directory containing Crossref *.jsonl.gz files")
-	flag.StringVar(&opts.outDir, "out-dir", "", "Directory for classified JSONL gzip outputs")
+	flag.StringVar(&opts.outDir, "out-dir", "", "Directory for classified SQLite output and summary")
+	flag.StringVar(&opts.sqliteOut, "sqlite-out", "", "Classified SQLite output path (default: OUT_DIR/classified.sqlite)")
 	flag.StringVar(&opts.journalsPath, "journals", "", "Optional newline-delimited journal names to keep")
 	flag.IntVar(&opts.workers, "workers", runtime.NumCPU(), "Concurrent gzip readers")
 	flag.IntVar(&opts.maxLineBytes, "max-line-bytes", 64*1024*1024, "Maximum JSON line size")
@@ -211,6 +216,9 @@ func parseOptions() options {
 	}
 	if opts.outDir == "" {
 		log.Fatal("-out-dir is required")
+	}
+	if opts.sqliteOut == "" {
+		opts.sqliteOut = filepath.Join(opts.outDir, "classified.sqlite")
 	}
 	if opts.workers <= 0 {
 		log.Fatal("-workers must be positive")
@@ -278,7 +286,9 @@ func processFile(path string, opts options, cache lookupCache, journals journalS
 
 	scanner := bufio.NewScanner(gzReader)
 	scanner.Buffer(make([]byte, 1024*1024), opts.maxLineBytes)
+	lineNumber := 0
 	for scanner.Scan() {
+		lineNumber++
 		line := bytes.TrimSpace(scanner.Bytes())
 		if len(line) == 0 {
 			continue
@@ -295,9 +305,10 @@ func processFile(path string, opts options, cache lookupCache, journals journalS
 		}
 		raw := make([]byte, len(line))
 		copy(raw, line)
+		sourceRef := fmt.Sprintf("%s:%d", filepath.Base(path), lineNumber)
 		if summary.NormalizedDOI == "" {
 			result.noDOI++
-			output <- classifiedRecord{category: "no-doi", raw: raw}
+			output <- classifiedRecord{category: "no-doi", sourceRef: sourceRef, raw: raw}
 			continue
 		}
 		record, ok, err := cache.Lookup(crossrefcache.HashDOI(summary.NormalizedDOI))
@@ -307,7 +318,7 @@ func processFile(path string, opts options, cache lookupCache, journals journalS
 		}
 		if !ok {
 			result.newDOI++
-			output <- classifiedRecord{category: "new", raw: raw}
+			output <- classifiedRecord{category: "new", sourceRef: sourceRef, raw: raw}
 			continue
 		}
 		if record.TextFingerprint == summary.TextFingerprint {
@@ -316,11 +327,11 @@ func processFile(path string, opts options, cache lookupCache, journals journalS
 		}
 		if record.TextFingerprint == ([32]byte{}) {
 			result.unknown++
-			output <- classifiedRecord{category: "unknown-fingerprint", raw: raw}
+			output <- classifiedRecord{category: "unknown-fingerprint", sourceRef: sourceRef, raw: raw}
 			continue
 		}
 		result.changed++
-		output <- classifiedRecord{category: "changed", raw: raw}
+		output <- classifiedRecord{category: "changed", sourceRef: sourceRef, raw: raw}
 	}
 	if err := scanner.Err(); err != nil {
 		result.err = err
@@ -328,41 +339,18 @@ func processFile(path string, opts options, cache lookupCache, journals journalS
 	return result
 }
 
-func writer(outDir string, records <-chan classifiedRecord, done chan<- writerStats) {
+func writer(sqliteOut string, records <-chan classifiedRecord, done chan<- writerStats) {
 	stats := writerStats{}
-	files := map[string]*gzip.Writer{}
-	closers := []func() error{}
-	open := func(category string) (*gzip.Writer, error) {
-		if writer, ok := files[category]; ok {
-			return writer, nil
-		}
-		path := filepath.Join(outDir, category+".jsonl.gz")
-		file, err := os.Create(path)
-		if err != nil {
-			return nil, err
-		}
-		buffered := bufio.NewWriterSize(file, 4*1024*1024)
-		gz, err := gzip.NewWriterLevel(buffered, gzip.BestSpeed)
-		if err != nil {
-			file.Close()
-			return nil, err
-		}
-		files[category] = gz
-		closers = append(closers, gz.Close, buffered.Flush, file.Close)
-		return gz, nil
+	stage, err := crossrefstage.NewWriter(sqliteOut)
+	if err != nil {
+		stats.err = err
+		done <- stats
+		return
 	}
+	defer stage.Abort()
 
 	for record := range records {
-		gz, err := open(record.category)
-		if err != nil {
-			stats.err = err
-			break
-		}
-		if _, err := gz.Write(record.raw); err != nil {
-			stats.err = err
-			break
-		}
-		if _, err := gz.Write([]byte{'\n'}); err != nil {
+		if err := stage.Insert(record.category, record.sourceRef, record.raw); err != nil {
 			stats.err = err
 			break
 		}
@@ -377,10 +365,10 @@ func writer(outDir string, records <-chan classifiedRecord, done chan<- writerSt
 			stats.noDOI++
 		}
 	}
-	for _, closeFn := range closers {
-		if err := closeFn(); err != nil && stats.err == nil {
-			stats.err = err
-		}
+	if stats.err == nil {
+		stats.err = stage.Close(map[string]string{
+			"format": "crossref-stage-sqlite",
+		})
 	}
 	done <- stats
 }
@@ -418,7 +406,7 @@ func journalMatches(journals []string, allowed journalSet) bool {
 	return false
 }
 
-func writeSummary(outDir string, total fileResult, written writerStats, files int, cacheRecords int, elapsed time.Duration) error {
+func writeSummary(outDir, sqliteOut string, total fileResult, written writerStats, files int, cacheRecords int, elapsed time.Duration) error {
 	value := map[string]any{
 		"files":         files,
 		"cache_records": cacheRecords,
@@ -436,6 +424,7 @@ func writeSummary(outDir string, total fileResult, written writerStats, files in
 			"unknown": written.unknown,
 			"no_doi":  written.noDOI,
 		},
+		"sqlite":  sqliteOut,
 		"elapsed": elapsed.Round(time.Second).String(),
 	}
 	file, err := os.Create(filepath.Join(outDir, "summary.json"))

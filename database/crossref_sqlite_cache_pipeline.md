@@ -29,9 +29,9 @@ The chosen design is:
 2. Build a SQLite lookup cache on disk.
 3. Compute missing legacy `text_fingerprint` values while building that cache.
 4. Copy the SQLite cache into RAM for classification.
-5. Stream the Crossref annual dump and write only `new` and `changed` records to
-   compact JSONL gzip files.
-6. Import only those compact files into PostgreSQL.
+5. Stream the Crossref annual dump and write only importable records to a SQLite
+   staging database.
+6. Import only selected staging categories into PostgreSQL.
 
 ## What `text_fingerprint` Means
 
@@ -79,7 +79,7 @@ cache, even when it had to be computed from legacy title/abstract fields.
 Build the binaries:
 
 ```bash
-make bin/crossrefcachebuild bin/crossrefclassify bin/crossrefimport
+make bin/crossrefcachebuild bin/crossrefclassify bin/crossrefimport bin/crossrefstagefromjsonl
 ```
 
 Build a SQLite cache:
@@ -102,15 +102,17 @@ Classify a dump against the cache:
   -sqlite-copy-to-memory \
   -dir /dbtemp/March\ 2026\ Public\ Data\ File\ from\ Crossref \
   -out-dir /dbtemp/March\ 2026\ Public\ Data\ File\ from\ Crossref/_prefiltered_full_import/classified \
+  -sqlite-out /dbtemp/March\ 2026\ Public\ Data\ File\ from\ Crossref/_prefiltered_full_import/classified/classified.sqlite \
   -workers 8
 ```
 
 The classifier writes:
 
-- `new.jsonl.gz`: DOI not present in the current cache
-- `changed.jsonl.gz`: DOI present but title/abstract fingerprint differs
-- `unknown-fingerprint.jsonl.gz`: cache row has no usable fingerprint
-- `no-doi.jsonl.gz`: dump row has no DOI
+- `classified.sqlite`: a staging table keyed by category:
+  - `new`: DOI not present in the current cache
+  - `changed`: DOI present but title/abstract fingerprint differs
+  - `unknown-fingerprint`: cache row has no usable fingerprint
+  - `no-doi`: dump row has no DOI
 - `summary.json`: classification counts
 
 With `-compute-missing-fingerprints` used during cache build,
@@ -126,9 +128,8 @@ The reusable wrapper is:
 database/run_crossref_prefilter_pipeline.sh
 ```
 
-By default it builds the SQLite cache, classifies the dump, prepares an
-`importable/` directory containing symlinks to `new.jsonl.gz` and
-`changed.jsonl.gz`, and stops before import.
+By default it builds the SQLite cache, classifies the dump, writes
+`classified/classified.sqlite`, and stops before import.
 
 Run a classification-only pass:
 
@@ -140,6 +141,8 @@ Run the import after classification:
 
 ```bash
 RUN_IMPORT=1 \
+RUN_CLASSIFY=0 \
+BUILD_CACHE=0 \
 RUN_LABEL=crossref-2026-annual-prefiltered \
 database/run_crossref_prefilter_pipeline.sh
 ```
@@ -149,7 +152,9 @@ Useful environment variables:
 - `DUMP_DIR`: Crossref dump directory
 - `WORK_ROOT`: pipeline output directory
 - `CACHE_PATH`: SQLite cache path
+- `CLASSIFY_DB`: SQLite staging database path
 - `BUILD_CACHE=0`: reuse an existing cache
+- `RUN_CLASSIFY=0`: reuse an existing SQLite stage
 - `WORKERS`: gzip reader workers for classification
 - `BATCH_SIZE`: importer batch size
 - `INCLUDE_UNKNOWN=1`: include `unknown-fingerprint` records in the import
@@ -192,11 +197,13 @@ Useful knobs:
 Before importing:
 
 1. Inspect `classified/summary.json`.
-2. Confirm `unknown` is zero or explainably tiny.
-3. Confirm `changed` is plausible; it should be a small fraction of the full
+2. Confirm `classified/classified.sqlite` exists and has the expected category
+   counts.
+3. Confirm `unknown` is zero or explainably tiny.
+4. Confirm `changed` is plausible; it should be a small fraction of the full
    dump.
-4. Confirm `new` is plausible for the snapshot year.
-5. Confirm `/dbtemp`, `/crossref`, and PostgreSQL storage have enough free space.
+5. Confirm `new` is plausible for the snapshot year.
+6. Confirm `/dbtemp`, `/crossref`, and PostgreSQL storage have enough free space.
 
 If `changed` is implausibly high, stop. That means the fingerprint comparison is
 wrong or the cache was built from the wrong current corpus.

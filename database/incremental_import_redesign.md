@@ -1,8 +1,13 @@
 # Incremental Crossref Import Redesign
 
-Status: revised after the aborted 2026 import
+Status: revised after the aborted 2026 import; importer input updated to SQLite staging
 
 This document describes the import redesign needed to support yearly Crossref additions without destroying existing data or breaking downstream analysis.
+
+Current implementation note: `crossrefimport` no longer streams annual
+`*.jsonl.gz` files directly. The annual dump is still read by prefilter tools,
+but the importer reads a bounded SQLite staging database produced by
+`crossrefclassify` or `crossreffilter`.
 
 ## April 2026 Correction: Versioning Should Be Semantic, Not Raw-JSON Based
 
@@ -56,7 +61,8 @@ Implications:
 
 - a DOI-keyed incremental importer is viable on the actual dump format
 - title, journal, abstract, and publication year must all be treated as nullable extracted fields
-- the importer must explicitly whitelist `*.jsonl.gz`
+- prefilter tools must explicitly whitelist `*.jsonl.gz` before writing SQLite
+  staging records
 - the current `pgjsontool` parser is incompatible with the current snapshot format because it expects a top-level `items` array
 
 ## Why This Exists
@@ -361,7 +367,7 @@ Insert a row in `public.crossref_import_runs` before touching data.
 
 Do not upsert directly from shell `COPY` into final tables. Instead:
 
-- stream each `.jsonl.gz` file
+- stream SQLite staging records produced from the `.jsonl.gz` snapshot
 - parse the DOI once
 - compute a raw payload hash once for integrity
 - compute normalized title/abstract and the semantic text fingerprint
@@ -524,7 +530,7 @@ At that point the annual 2026 import becomes a normal incremental versioned inge
 This is the order that minimizes risk:
 
 1. add new schema objects
-2. write a new importer that streams `.jsonl.gz` into staging and upserts by DOI
+2. write a new importer that reads SQLite staging records and upserts by DOI
 3. backfill the 2025 baseline from existing data
 4. migrate analysis references from `article_id` to `work_id` and `work_version_id`
 5. switch readers to the new views

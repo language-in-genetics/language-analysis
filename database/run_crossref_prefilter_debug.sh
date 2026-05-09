@@ -24,6 +24,7 @@ mkdir -p "$WORK_ROOT" "$DEBUG_DIR" logs
   echo "debug_dir=$DEBUG_DIR"
   echo "monitor_interval=$MONITOR_INTERVAL"
   echo "debug_stats_interval=$DEBUG_STATS_INTERVAL"
+  echo "run_classify=${RUN_CLASSIFY:-1}"
   echo "run_import=${RUN_IMPORT:-0}"
 } > "$LAUNCH_LOG"
 
@@ -37,8 +38,10 @@ env \
   DEBUG_STATS_INTERVAL="$DEBUG_STATS_INTERVAL" \
   DEBUG_STATS_SYNC="${DEBUG_STATS_SYNC:-1}" \
   RUN_IMPORT="${RUN_IMPORT:-0}" \
+  RUN_CLASSIFY="${RUN_CLASSIFY:-1}" \
   BUILD_CACHE="${BUILD_CACHE:-1}" \
   WORKERS="${WORKERS:-8}" \
+  CLASSIFY_DB="${CLASSIFY_DB:-$WORK_ROOT/classified/classified.sqlite}" \
   RUN_LABEL="${RUN_LABEL:-crossref-2026-annual-prefiltered-debug-$RUN_ID}" \
   /usr/bin/ionice -c2 -n7 /usr/bin/nice -n 10 \
   bash database/run_crossref_prefilter_pipeline.sh >> "$LAUNCH_LOG" 2>&1 &

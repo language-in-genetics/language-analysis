@@ -16,6 +16,7 @@ from retraction_stats import (
     format_p_value,
     format_rate,
     load_retraction_status_from_jsonl_gz,
+    load_retraction_status_from_sqlite,
     resolve_status_work_ids,
     write_stats_csv,
     write_stats_html,
@@ -58,6 +59,11 @@ def main():
         default=os.environ.get("CROSSREF_RETRACTION_SOURCE_JSONL_GZ"),
         help="Focused Crossref JSONL gzip to use as the retraction-status source",
     )
+    parser.add_argument(
+        "--source-sqlite",
+        default=os.environ.get("CROSSREF_RETRACTION_SOURCE_SQLITE"),
+        help="Focused Crossref SQLite stage to use as the retraction-status source",
+    )
     parser.add_argument("--list-retracted", action="store_true", help="Print detected retracted article examples")
     args = parser.parse_args()
 
@@ -66,7 +72,12 @@ def main():
     cursor.execute("SET search_path TO languageingenetics, public")
     cursor.execute("SET enable_hashjoin = off")
     cursor.execute("SET enable_mergejoin = off")
-    if args.source_jsonl_gz:
+    if args.source_sqlite:
+        status = load_retraction_status_from_sqlite(args.source_sqlite)
+        status_work_ids = resolve_status_work_ids(cursor, status)
+        cursor.execute(PROCESSED_FILES_SQL)
+        stats = build_retraction_statistics_from_work_ids(cursor.fetchall(), status_work_ids)
+    elif args.source_jsonl_gz:
         status = load_retraction_status_from_jsonl_gz(args.source_jsonl_gz)
         status_work_ids = resolve_status_work_ids(cursor, status)
         cursor.execute(PROCESSED_FILES_SQL)

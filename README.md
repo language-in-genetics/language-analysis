@@ -16,14 +16,14 @@ The current `database/import.sh` path is the legacy one-time bulk loader used fo
 
 The redesign plan for incremental yearly imports is documented in [database/incremental_import_redesign.md](database/incremental_import_redesign.md).
 
-The new incremental importer is `bin/crossrefimport`. It imports numbered `*.jsonl.gz` Crossref snapshot files into canonical versioned tables under `public.crossref_*`, and it also has a `-from-raw-text` mode to backfill the existing `public.raw_text_data` corpus into that schema.
+The new incremental importer is `bin/crossrefimport`. It imports a SQLite staging database into canonical versioned tables under `public.crossref_*`, and it also has a `-from-raw-text` mode to backfill the existing `public.raw_text_data` corpus into that schema.
 
 For full annual snapshots after the 2025 backfill, prefilter the dump before
 importing. Build a SQLite DOI cache, compute missing legacy text fingerprints in
-that cache, classify the dump into `new` and `changed` records, then import only
-those compact files. This avoids rewriting legacy PostgreSQL rows just to fill
-`text_fingerprint` and avoids row-by-row PostgreSQL lookups while streaming the
-dump. See
+that cache, classify the dump into a SQLite stage with `new` and `changed`
+records, then import only those staged categories. This avoids rewriting legacy
+PostgreSQL rows just to fill `text_fingerprint` and avoids row-by-row
+PostgreSQL lookups while streaming the dump. See
 [database/crossref_sqlite_cache_pipeline.md](database/crossref_sqlite_cache_pipeline.md).
 
 ## Quick Start
@@ -65,9 +65,9 @@ cd extractor/
 ./generate_dashboard.py --output-dir ../dashboard
 
 # Run the retracted-vs-control race-language tests directly.
-# The focused JSONL gzip avoids slow raw-JSON reads from the large PostgreSQL table.
+# The focused SQLite stage avoids slow raw-JSON reads from the large PostgreSQL table.
 ./retraction_statistics.py \
-  --source-jsonl-gz "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi_rebuilt_20260506/focused-journals-doi.jsonl.gz" \
+  --source-sqlite "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi/focused-journals.sqlite" \
   --output-json ../dashboard/retraction_statistics.json \
   --output-csv ../dashboard/retraction_statistics.csv \
   --output-html ../dashboard/retraction_statistics.html
@@ -102,7 +102,7 @@ The batch processing system allows efficient processing of thousands of articles
 
 The dashboard pipeline also tests whether focused-journal articles marked as retracted have different race-language vocabulary usage from non-retracted articles. `extractor/retraction_stats.py` classifies Crossref records as retracted research articles, retraction notices, or expression-of-concern update records. Retraction notices are excluded from the case/control test so that update notices are not compared with research articles.
 
-For each vocabulary outcome (`any`, `caucasian`, `white`, `european`, and `other`), the pipeline reports two-sided Fisher exact p-values, Pearson chi-square p-values, rates, risk differences, and Haldane-adjusted odds ratios. Normal dashboard generation writes `retraction_statistics.html`, `retraction_statistics.json`, and `retraction_statistics.csv`; the same analysis can be run directly with `extractor/retraction_statistics.py`. On `raksasa`, `cronscript.sh` exports `CROSSREF_RETRACTION_SOURCE_JSONL_GZ` when the focused Crossref compact file is present, so the dashboard uses the compact dump for retraction status and only queries PostgreSQL for processed labels.
+For each vocabulary outcome (`any`, `caucasian`, `white`, `european`, and `other`), the pipeline reports two-sided Fisher exact p-values, Pearson chi-square p-values, rates, risk differences, and Haldane-adjusted odds ratios. Normal dashboard generation writes `retraction_statistics.html`, `retraction_statistics.json`, and `retraction_statistics.csv`; the same analysis can be run directly with `extractor/retraction_statistics.py`. On `raksasa`, `cronscript.sh` exports `CROSSREF_RETRACTION_SOURCE_SQLITE` when the focused Crossref SQLite stage is present, so the dashboard uses the compact stage for retraction status and only queries PostgreSQL for processed labels.
 
 ### Automation
 
@@ -149,7 +149,7 @@ make all
 make bin/crossrefimport
 
 # Build the full annual prefilter pipeline tools
-make bin/crossrefcachebuild bin/crossrefclassify bin/crossrefimport
+make bin/crossrefcachebuild bin/crossrefclassify bin/crossrefimport bin/crossrefstagefromjsonl
 
 # Classify a full Crossref dump through a SQLite DOI cache.
 # This does not import unless RUN_IMPORT=1 is set.

@@ -2,7 +2,7 @@
 
 BUILD_DIR=bin
 
-all: bin/pgjsontool bin/crossrefimport bin/crossreffilter bin/crossrefcachebuild bin/crossrefclassify
+all: bin/pgjsontool bin/crossrefimport bin/crossreffilter bin/crossrefcachebuild bin/crossrefclassify bin/crossrefstagefromjsonl
 	@echo "Build complete"
 
 bin/pgjsontool: cmd/pgjsontool/main.go
@@ -24,6 +24,10 @@ bin/crossrefcachebuild: cmd/crossrefcachebuild/main.go
 bin/crossrefclassify: cmd/crossrefclassify/main.go
 	@mkdir -p bin
 	go build -o bin/crossrefclassify ./cmd/crossrefclassify
+
+bin/crossrefstagefromjsonl: cmd/crossrefstagefromjsonl/main.go
+	@mkdir -p bin
+	go build -o bin/crossrefstagefromjsonl ./cmd/crossrefstagefromjsonl
 
 clean:
 	@echo "Cleaning..."

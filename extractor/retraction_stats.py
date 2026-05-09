@@ -8,6 +8,7 @@ import html
 import json
 import math
 import re
+import sqlite3
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any, Iterable, Mapping, Sequence
@@ -263,6 +264,74 @@ def load_retraction_status_from_jsonl_gz(path: str) -> dict[str, Any]:
         status["gzip_warning"] = f"{type(exc).__name__}: {exc}"
 
     return status
+
+
+def load_retraction_status_from_sqlite(path: str, category: str = "focused") -> dict[str, Any]:
+    """Read a focused Crossref SQLite stage and return DOI-keyed retraction status."""
+    status = {
+        "source": path,
+        "source_category": category,
+        "records_scanned": 0,
+        "bad_json": 0,
+        "sqlite_warning": None,
+        "retracted_dois": set(),
+        "retraction_notice_dois": set(),
+        "expression_notice_dois": set(),
+        "examples_by_doi": {},
+    }
+
+    try:
+        with sqlite3.connect(f"file:{path}?mode=ro", uri=True) as conn:
+            for (raw_json_text,) in conn.execute(
+                """
+                SELECT raw_json_text
+                FROM import_records
+                WHERE category = ?
+                ORDER BY id
+                """,
+                (category,),
+            ):
+                status["records_scanned"] += 1
+                try:
+                    item = json.loads(raw_json_text)
+                except json.JSONDecodeError:
+                    status["bad_json"] += 1
+                    continue
+                _add_retraction_status_item(status, item)
+    except sqlite3.Error as exc:
+        status["sqlite_warning"] = f"{type(exc).__name__}: {exc}"
+
+    return status
+
+
+def _add_retraction_status_item(status: dict[str, Any], item: Mapping[str, Any]) -> None:
+    doi = _normalize_doi(item.get("DOI") or item.get("doi"))
+    if not doi:
+        return
+    classification = classify_retraction_status({
+        "normalized_doi": doi,
+        "title": item.get("title"),
+        "raw_json_text": item,
+    })
+    title = clean_text(item.get("title"))
+    journal = clean_text(item.get("container-title"))
+    pub_year = _crossref_year(item)
+    example = {
+        "doi": doi,
+        "journal": journal,
+        "pub_year": pub_year,
+        "title": title,
+        "evidence": list(classification.evidence),
+    }
+    if classification.is_retraction_notice:
+        status["retraction_notice_dois"].add(doi)
+        return
+    if classification.is_expression_of_concern and not classification.is_retracted_article:
+        status["expression_notice_dois"].add(doi)
+        return
+    if classification.is_retracted_article:
+        status["retracted_dois"].add(doi)
+        status["examples_by_doi"][doi] = example
 
 
 def _crossref_year(item: Mapping[str, Any]) -> int | None:

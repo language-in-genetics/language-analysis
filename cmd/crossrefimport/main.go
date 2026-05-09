@@ -1,8 +1,6 @@
 package main
 
 import (
-	"bufio"
-	"compress/gzip"
 	"crypto/sha256"
 	"database/sql"
 	"encoding/hex"
@@ -15,8 +13,9 @@ import (
 	"os/user"
 	"path/filepath"
 	"regexp"
-	"sort"
 	"strings"
+
+	"crossref-parser/internal/crossrefstage"
 
 	"github.com/lib/pq"
 )
@@ -24,16 +23,16 @@ import (
 const defaultConn = ""
 
 type importOptions struct {
-	dir          string
-	fromRawText  bool
-	runLabel     string
-	sourceType   string
-	sourcePath   string
-	importedBy   string
-	dbConn       string
-	batchSize    int
-	limit        int
-	maxLineBytes int
+	sqlitePath       string
+	fromRawText      bool
+	runLabel         string
+	sourceType       string
+	sourcePath       string
+	importedBy       string
+	dbConn           string
+	batchSize        int
+	limit            int
+	importCategories []string
 }
 
 type importStats struct {
@@ -141,7 +140,7 @@ func main() {
 	if opts.fromRawText {
 		err = importFromRawText(db, opts, processor)
 	} else {
-		err = importFromDirectory(opts, processor)
+		err = importFromSQLite(opts, processor)
 	}
 	if err != nil {
 		log.Printf("import failed: %v", err)
@@ -167,7 +166,8 @@ func main() {
 
 func parseFlags() importOptions {
 	opts := importOptions{}
-	flag.StringVar(&opts.dir, "dir", "", "Directory containing Crossref *.jsonl.gz files")
+	var categories string
+	flag.StringVar(&opts.sqlitePath, "sqlite", "", "SQLite staging database created by crossrefclassify")
 	flag.BoolVar(&opts.fromRawText, "from-raw-text", false, "Backfill from public.raw_text_data instead of reading files")
 	flag.StringVar(&opts.runLabel, "run-label", "", "Unique label for this import run")
 	flag.StringVar(&opts.sourceType, "source-type", "", "Source type recorded in import_runs")
@@ -176,7 +176,7 @@ func parseFlags() importOptions {
 	flag.StringVar(&opts.dbConn, "dbconn", defaultConn, "PostgreSQL connection string")
 	flag.IntVar(&opts.batchSize, "batch-size", 10000, "Rows per staging batch")
 	flag.IntVar(&opts.limit, "limit", 0, "Stop after importing this many records")
-	flag.IntVar(&opts.maxLineBytes, "max-line-bytes", 64*1024*1024, "Maximum JSON line size when reading snapshot files")
+	flag.StringVar(&categories, "categories", "new,changed", "Comma-separated SQLite stage categories to import")
 	flag.Parse()
 
 	if opts.runLabel == "" {
@@ -185,18 +185,19 @@ func parseFlags() importOptions {
 	if opts.batchSize <= 0 {
 		log.Fatal("-batch-size must be positive")
 	}
-	if opts.maxLineBytes <= 0 {
-		log.Fatal("-max-line-bytes must be positive")
+	if opts.fromRawText == (opts.sqlitePath != "") {
+		log.Fatal("choose exactly one source: either -sqlite or -from-raw-text")
 	}
-	if opts.fromRawText == (opts.dir != "") {
-		log.Fatal("choose exactly one source: either -dir or -from-raw-text")
+	opts.importCategories = splitCategories(categories)
+	if !opts.fromRawText && len(opts.importCategories) == 0 {
+		log.Fatal("-categories must include at least one category")
 	}
 
 	if opts.sourceType == "" {
 		if opts.fromRawText {
 			opts.sourceType = "legacy_raw_text"
 		} else {
-			opts.sourceType = "annual_dump"
+			opts.sourceType = "sqlite_stage"
 		}
 	}
 
@@ -204,15 +205,32 @@ func parseFlags() importOptions {
 		if opts.fromRawText {
 			opts.sourcePath = "public.raw_text_data"
 		} else {
-			absDir, err := filepath.Abs(opts.dir)
+			absPath, err := filepath.Abs(opts.sqlitePath)
 			if err != nil {
-				log.Fatalf("could not resolve absolute path for %q: %v", opts.dir, err)
+				log.Fatalf("could not resolve absolute path for %q: %v", opts.sqlitePath, err)
 			}
-			opts.sourcePath = absDir
+			opts.sourcePath = absPath
 		}
 	}
 
 	return opts
+}
+
+func splitCategories(value string) []string {
+	seen := map[string]struct{}{}
+	var categories []string
+	for _, item := range strings.Split(value, ",") {
+		item = strings.TrimSpace(item)
+		if item == "" {
+			continue
+		}
+		if _, ok := seen[item]; ok {
+			continue
+		}
+		seen[item] = struct{}{}
+		categories = append(categories, item)
+	}
+	return categories
 }
 
 func defaultImportedBy() string {
@@ -439,58 +457,60 @@ func finalizeImportRun(db *sql.DB, runID int64, status string, stats importStats
 	return err
 }
 
-func importFromDirectory(opts importOptions, processor *batchProcessor) error {
-	pattern := filepath.Join(opts.dir, "*.jsonl.gz")
-	files, err := filepath.Glob(pattern)
+func importFromSQLite(opts importOptions, processor *batchProcessor) error {
+	db, err := crossrefstage.OpenReadOnly(opts.sqlitePath)
 	if err != nil {
-		return fmt.Errorf("could not glob %q: %w", pattern, err)
+		return fmt.Errorf("error opening SQLite stage %s: %w", opts.sqlitePath, err)
 	}
-	sort.Strings(files)
-	if len(files) == 0 {
-		return fmt.Errorf("no *.jsonl.gz files found under %s", opts.dir)
+	defer db.Close()
+
+	placeholders := make([]string, len(opts.importCategories))
+	args := make([]any, 0, len(opts.importCategories)+1)
+	for i, category := range opts.importCategories {
+		placeholders[i] = "?"
+		args = append(args, category)
+	}
+	limitSQL := ""
+	if opts.limit > 0 {
+		limitSQL = " LIMIT ?"
+		args = append(args, opts.limit)
 	}
 
-	for _, filename := range files {
-		log.Printf("reading %s", filename)
-		if err := importOneGzipFile(filename, opts, processor); err != nil {
-			return err
+	query := fmt.Sprintf(`
+SELECT id, category, source_ref, raw_json_text
+FROM import_records
+WHERE category IN (%s)
+ORDER BY id
+%s
+`, strings.Join(placeholders, ","), limitSQL)
+
+	log.Printf("reading SQLite stage %s categories=%s", opts.sqlitePath, strings.Join(opts.importCategories, ","))
+	rows, err := db.Query(query, args...)
+	if err != nil {
+		return fmt.Errorf("error querying SQLite stage: %w", err)
+	}
+	defer rows.Close()
+
+	for rows.Next() {
+		var id int64
+		var category string
+		var sourceRef string
+		var raw string
+		if err := rows.Scan(&id, &category, &sourceRef, &raw); err != nil {
+			return fmt.Errorf("error scanning SQLite stage row: %w", err)
 		}
-		if opts.limit > 0 && processor.stats.seen >= opts.limit {
-			break
-		}
-	}
-
-	return nil
-}
-
-func importOneGzipFile(filename string, opts importOptions, processor *batchProcessor) error {
-	file, err := os.Open(filename)
-	if err != nil {
-		return fmt.Errorf("error opening %s: %w", filename, err)
-	}
-	defer file.Close()
-
-	gzReader, err := gzip.NewReader(file)
-	if err != nil {
-		return fmt.Errorf("error creating gzip reader for %s: %w", filename, err)
-	}
-	defer gzReader.Close()
-
-	scanner := bufio.NewScanner(gzReader)
-	scanner.Buffer(make([]byte, 1024*1024), opts.maxLineBytes)
-
-	lineNumber := 0
-	for scanner.Scan() {
-		lineNumber++
-		raw := strings.TrimSpace(scanner.Text())
+		raw = strings.TrimSpace(raw)
 		if raw == "" {
 			continue
 		}
+		if strings.TrimSpace(sourceRef) == "" {
+			sourceRef = fmt.Sprintf("%s:%d", category, id)
+		}
 
 		processor.stats.seen++
-		record, rejectReason, err := parseRecord(raw, fmt.Sprintf("%s:%d", filepath.Base(filename), lineNumber))
+		record, rejectReason, err := parseRecord(raw, sourceRef)
 		if err != nil {
-			return fmt.Errorf("error parsing %s line %d: %w", filename, lineNumber, err)
+			return fmt.Errorf("error parsing SQLite stage row %d: %w", id, err)
 		}
 		if rejectReason != "" {
 			if err := recordRejection(processor.db, processor.runID, record.sourceRef, rejectReason, raw); err != nil {
@@ -509,9 +529,8 @@ func importOneGzipFile(filename string, opts importOptions, processor *batchProc
 			break
 		}
 	}
-
-	if err := scanner.Err(); err != nil {
-		return fmt.Errorf("error scanning %s: %w", filename, err)
+	if err := rows.Err(); err != nil {
+		return fmt.Errorf("error iterating SQLite stage: %w", err)
 	}
 	return nil
 }

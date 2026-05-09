@@ -1,3 +1,6 @@
+import json
+import sqlite3
+import tempfile
 import unittest
 import sys
 from pathlib import Path
@@ -10,6 +13,7 @@ from retraction_stats import (
     chi_square_test_2x2,
     classify_retraction_status,
     fisher_exact_two_sided,
+    load_retraction_status_from_sqlite,
 )
 
 
@@ -166,6 +170,40 @@ class RetractionStatsTests(unittest.TestCase):
         self.assertEqual(stats["population"]["retracted_articles"], 1)
         self.assertEqual(stats["population"]["excluded_retraction_notices"], 1)
         self.assertEqual(stats["retracted_examples"][0]["work_version_id"], 10)
+
+    def test_load_retraction_status_from_sqlite_stage(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            path = Path(tmpdir) / "focused.sqlite"
+            conn = sqlite3.connect(path)
+            conn.execute(
+                """
+                CREATE TABLE import_records (
+                    id INTEGER PRIMARY KEY,
+                    category TEXT NOT NULL,
+                    source_ref TEXT NOT NULL,
+                    raw_json_text TEXT NOT NULL
+                )
+                """
+            )
+            conn.execute(
+                "INSERT INTO import_records (category, source_ref, raw_json_text) VALUES (?, ?, ?)",
+                (
+                    "focused",
+                    "0.jsonl.gz:1",
+                    json.dumps({
+                        "DOI": "10.1000/retracted",
+                        "title": ["RETRACTED ARTICLE: Example genetics paper"],
+                        "container-title": ["Human Genetics"],
+                    }),
+                ),
+            )
+            conn.commit()
+            conn.close()
+
+            status = load_retraction_status_from_sqlite(str(path))
+
+        self.assertEqual(status["records_scanned"], 1)
+        self.assertEqual(status["retracted_dois"], {"10.1000/retracted"})
 
 
 if __name__ == "__main__":
