@@ -218,6 +218,9 @@ while is_running; do
   sync_file "$SUMMARY_TSV"
   sync_file "$snapshot"
   sync_file "$CURRENT_HEARTBEAT"
+  sync_file "$DEBUG_DIR/kernel-follow.log"
+  sync_file "$DEBUG_DIR/journal-follow.log"
+  sync_file "$DEBUG_DIR/dmesg-follow.log"
   sleep "$INTERVAL"
 done
 
