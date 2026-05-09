@@ -947,6 +947,29 @@ CREATE TEMP TABLE import_stage (
 		return fmt.Errorf("error closing COPY INTO import_stage: %w", err)
 	}
 
+	if _, err := tx.Exec(`
+CREATE INDEX import_stage_normalized_doi_idx
+    ON import_stage (normalized_doi)
+    WHERE normalized_doi IS NOT NULL;
+CREATE INDEX import_stage_missing_doi_fallback_idx
+    ON import_stage (fallback_identity)
+    WHERE normalized_doi IS NULL AND fallback_identity IS NOT NULL;
+ANALYZE import_stage;
+`); err != nil {
+		return fmt.Errorf("error indexing import_stage: %w", err)
+	}
+
+	var hasMissingDOI bool
+	if err := tx.QueryRow(`
+SELECT EXISTS (
+    SELECT 1
+    FROM import_stage
+    WHERE normalized_doi IS NULL
+);
+`).Scan(&hasMissingDOI); err != nil {
+		return fmt.Errorf("error checking missing DOI rows: %w", err)
+	}
+
 	if err := p.updateImportRunPublicationMax(tx); err != nil {
 		return err
 	}
@@ -1002,7 +1025,8 @@ WHERE s.normalized_doi IS NOT NULL;
 		return fmt.Errorf("error mapping DOI works: %w", err)
 	}
 
-	if _, err := tx.Exec(`
+	if hasMissingDOI {
+		if _, err := tx.Exec(`
 WITH fallback_matches AS (
     SELECT s.stage_id, min(w.id) AS work_id
     FROM import_stage s
@@ -1024,7 +1048,8 @@ SELECT stage_id, work_id
 FROM fallback_matches
 ON CONFLICT (stage_id) DO NOTHING;
 `, nilNullString(p.previousMaxPublicationDate), nilNullInt64(p.previousMaxPublicationYear)); err != nil {
-		return fmt.Errorf("error mapping fallback works: %w", err)
+			return fmt.Errorf("error mapping fallback works: %w", err)
+		}
 	}
 
 	if _, err := tx.Exec(`
@@ -1097,7 +1122,8 @@ ON CONFLICT (stage_id) DO NOTHING;
 		return fmt.Errorf("error mapping inserted DOI works: %w", err)
 	}
 
-	if _, err := tx.Exec(`
+	if hasMissingDOI {
+		if _, err := tx.Exec(`
 WITH same_run_matches AS (
     SELECT s.stage_id, min(w.id) AS work_id
     FROM import_stage s
@@ -1116,10 +1142,12 @@ SELECT stage_id, work_id
 FROM same_run_matches
 ON CONFLICT (stage_id) DO NOTHING;
 `, p.runID); err != nil {
-		return fmt.Errorf("error mapping same-run fallback works: %w", err)
+			return fmt.Errorf("error mapping same-run fallback works: %w", err)
+		}
 	}
 
-	if _, err := tx.Exec(`
+	if hasMissingDOI {
+		if _, err := tx.Exec(`
 WITH unmapped_fallback AS (
     SELECT DISTINCT ON (s.fallback_identity)
         s.fallback_identity
@@ -1146,10 +1174,12 @@ SELECT
     $1
 FROM unmapped_fallback;
 `, p.runID); err != nil {
-		return fmt.Errorf("error inserting fallback works: %w", err)
+			return fmt.Errorf("error inserting fallback works: %w", err)
+		}
 	}
 
-	if _, err := tx.Exec(`
+	if hasMissingDOI {
+		if _, err := tx.Exec(`
 WITH fallback_matches AS (
     SELECT s.stage_id, min(w.id) AS work_id
     FROM import_stage s
@@ -1168,7 +1198,8 @@ SELECT stage_id, work_id
 FROM fallback_matches
 ON CONFLICT (stage_id) DO NOTHING;
 `, p.runID); err != nil {
-		return fmt.Errorf("error mapping inserted fallback works: %w", err)
+			return fmt.Errorf("error mapping inserted fallback works: %w", err)
+		}
 	}
 
 	var unmapped int
