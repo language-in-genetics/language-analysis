@@ -464,39 +464,49 @@ func importFromSQLite(opts importOptions, processor *batchProcessor) error {
 	}
 	defer db.Close()
 
-	placeholders := make([]string, len(opts.importCategories))
-	args := make([]any, 0, len(opts.importCategories)+1)
-	for i, category := range opts.importCategories {
-		placeholders[i] = "?"
-		args = append(args, category)
+	log.Printf("reading SQLite stage %s categories=%s", opts.sqlitePath, strings.Join(opts.importCategories, ","))
+	for _, category := range opts.importCategories {
+		if limitReached(processor.stats, opts.limit) {
+			break
+		}
+		if err := importSQLiteCategory(db, category, opts, processor); err != nil {
+			return err
+		}
 	}
+	return nil
+}
+
+func importSQLiteCategory(db *sql.DB, category string, opts importOptions, processor *batchProcessor) error {
+	args := []any{category}
 	limitSQL := ""
 	if opts.limit > 0 {
+		remaining := opts.limit - processor.stats.seen
+		if remaining <= 0 {
+			return nil
+		}
 		limitSQL = " LIMIT ?"
-		args = append(args, opts.limit)
+		args = append(args, remaining)
 	}
 
-	query := fmt.Sprintf(`
-SELECT id, category, source_ref, raw_json_text
+	query := `
+SELECT id, source_ref, raw_json_text
 FROM import_records
-WHERE category IN (%s)
+WHERE category = ?
 ORDER BY id
-%s
-`, strings.Join(placeholders, ","), limitSQL)
+` + limitSQL
 
-	log.Printf("reading SQLite stage %s categories=%s", opts.sqlitePath, strings.Join(opts.importCategories, ","))
+	log.Printf("reading SQLite stage category=%s", category)
 	rows, err := db.Query(query, args...)
 	if err != nil {
-		return fmt.Errorf("error querying SQLite stage: %w", err)
+		return fmt.Errorf("error querying SQLite stage category %s: %w", category, err)
 	}
 	defer rows.Close()
 
 	for rows.Next() {
 		var id int64
-		var category string
 		var sourceRef string
 		var raw string
-		if err := rows.Scan(&id, &category, &sourceRef, &raw); err != nil {
+		if err := rows.Scan(&id, &sourceRef, &raw); err != nil {
 			return fmt.Errorf("error scanning SQLite stage row: %w", err)
 		}
 		raw = strings.TrimSpace(raw)
