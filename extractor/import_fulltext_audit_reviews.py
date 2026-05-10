@@ -37,6 +37,34 @@ def sqlite_table_exists(conn: sqlite3.Connection, name: str) -> bool:
     return row is not None
 
 
+def ensure_sqlite_ai_columns(conn: sqlite3.Connection) -> None:
+    columns = {row["name"] for row in conn.execute("PRAGMA table_info(fulltext_articles)")}
+    additions = {
+        "ai_analysis_status": "TEXT NOT NULL DEFAULT 'not_queued'",
+        "ai_caucasian": "INTEGER CHECK (ai_caucasian IN (0, 1))",
+        "ai_white": "INTEGER CHECK (ai_white IN (0, 1))",
+        "ai_european": "INTEGER CHECK (ai_european IN (0, 1))",
+        "ai_european_phrase_used": "TEXT",
+        "ai_other": "INTEGER CHECK (ai_other IN (0, 1))",
+        "ai_other_phrase_used": "TEXT",
+        "ai_model": "TEXT",
+        "ai_prompt_tokens": "INTEGER",
+        "ai_completion_tokens": "INTEGER",
+        "ai_error": "TEXT",
+        "ai_processed_at": "TEXT",
+    }
+    for column, definition in additions.items():
+        if column not in columns:
+            conn.execute(f"ALTER TABLE fulltext_articles ADD COLUMN {column} {definition}")
+    conn.execute(
+        """
+        CREATE INDEX IF NOT EXISTS fulltext_articles_ai_status_idx
+        ON fulltext_articles (ai_analysis_status, batch_slug, article_id)
+        """
+    )
+    conn.commit()
+
+
 def nullable_bool(value):
     if value is None:
         return None
@@ -59,6 +87,7 @@ def main() -> int:
         print(f"SQLite database has no fulltext_batches table: {sqlite_path}")
         sqlite_conn.close()
         return 0
+    ensure_sqlite_ai_columns(sqlite_conn)
 
     pg_conn = get_pg_connection()
     pg_conn.autocommit = False
@@ -138,6 +167,18 @@ def main() -> int:
                 fulltext_source,
                 fulltext_path,
                 extracted_text,
+                ai_analysis_status,
+                ai_caucasian,
+                ai_white,
+                ai_european,
+                ai_european_phrase_used,
+                ai_other,
+                ai_other_phrase_used,
+                ai_model,
+                ai_prompt_tokens,
+                ai_completion_tokens,
+                ai_error,
+                ai_processed_at,
                 terminology_present,
                 caucasian_present,
                 white_present,
@@ -157,7 +198,7 @@ def main() -> int:
             batch_id = batch_id_by_slug[str(row["batch_slug"])]
             pg_cur.execute(
                 """
-                INSERT INTO languageingenetics.fulltext_audit_articles (
+                INSERT INTO languageingenetics.fulltext_audit_articles AS existing (
                     batch_id,
                     article_id,
                     work_id,
@@ -170,9 +211,21 @@ def main() -> int:
                     fulltext_status,
                     fulltext_source,
                     fulltext_path,
-                    extracted_text
+                    extracted_text,
+                    ai_analysis_status,
+                    ai_caucasian,
+                    ai_white,
+                    ai_european,
+                    ai_european_phrase_used,
+                    ai_other,
+                    ai_other_phrase_used,
+                    ai_model,
+                    ai_prompt_tokens,
+                    ai_completion_tokens,
+                    ai_error,
+                    ai_processed_at
                 )
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (batch_id, article_id) DO UPDATE SET
                     work_id = EXCLUDED.work_id,
                     work_version_id = EXCLUDED.work_version_id,
@@ -184,7 +237,163 @@ def main() -> int:
                     fulltext_status = EXCLUDED.fulltext_status,
                     fulltext_source = EXCLUDED.fulltext_source,
                     fulltext_path = EXCLUDED.fulltext_path,
-                    extracted_text = EXCLUDED.extracted_text
+                    extracted_text = EXCLUDED.extracted_text,
+                    ai_analysis_status = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_analysis_status
+                        ELSE EXCLUDED.ai_analysis_status
+                    END,
+                    ai_caucasian = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_caucasian
+                        ELSE EXCLUDED.ai_caucasian
+                    END,
+                    ai_white = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_white
+                        ELSE EXCLUDED.ai_white
+                    END,
+                    ai_european = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_european
+                        ELSE EXCLUDED.ai_european
+                    END,
+                    ai_european_phrase_used = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_european_phrase_used
+                        ELSE EXCLUDED.ai_european_phrase_used
+                    END,
+                    ai_other = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_other
+                        ELSE EXCLUDED.ai_other
+                    END,
+                    ai_other_phrase_used = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_other_phrase_used
+                        ELSE EXCLUDED.ai_other_phrase_used
+                    END,
+                    ai_model = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_model
+                        ELSE EXCLUDED.ai_model
+                    END,
+                    ai_prompt_tokens = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_prompt_tokens
+                        ELSE EXCLUDED.ai_prompt_tokens
+                    END,
+                    ai_completion_tokens = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_completion_tokens
+                        ELSE EXCLUDED.ai_completion_tokens
+                    END,
+                    ai_error = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_error
+                        ELSE EXCLUDED.ai_error
+                    END,
+                    ai_processed_at = CASE
+                        WHEN existing.ai_analysis_status = 'processed'
+                         AND EXCLUDED.ai_analysis_status <> 'processed'
+                         AND (
+                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                         )
+                        THEN existing.ai_processed_at
+                        ELSE EXCLUDED.ai_processed_at
+                    END
                 RETURNING id
                 """,
                 (
@@ -201,6 +410,18 @@ def main() -> int:
                     row["fulltext_source"],
                     row["fulltext_path"],
                     row["extracted_text"],
+                    row["ai_analysis_status"] or "not_queued",
+                    nullable_bool(row["ai_caucasian"]),
+                    nullable_bool(row["ai_white"]),
+                    nullable_bool(row["ai_european"]),
+                    row["ai_european_phrase_used"],
+                    nullable_bool(row["ai_other"]),
+                    row["ai_other_phrase_used"],
+                    row["ai_model"],
+                    row["ai_prompt_tokens"],
+                    row["ai_completion_tokens"],
+                    row["ai_error"],
+                    row["ai_processed_at"],
                 ),
             )
             sample_article_id = int(pg_cur.fetchone()["id"])

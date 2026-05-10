@@ -52,6 +52,18 @@ type FulltextArticle struct {
 	FulltextSource     string
 	FulltextPath       string
 	ExtractedText      string
+	AIAnalysisStatus   string
+	AICaucasian        bool
+	AIWhite            bool
+	AIEuropean         bool
+	AIEuropeanPhrase   string
+	AIOther            bool
+	AIOtherPhrase      string
+	AIModel            string
+	AIPromptTokens     int
+	AICompletionTokens int
+	AIError            string
+	AIProcessedAt      string
 	TerminologyPresent *bool
 	CaucasianPresent   bool
 	WhitePresent       bool
@@ -169,6 +181,12 @@ func scanFulltextArticle(scanner interface {
 	var whitePresent sql.NullInt64
 	var europeanPresent sql.NullInt64
 	var otherPresent sql.NullInt64
+	var aiCaucasian sql.NullInt64
+	var aiWhite sql.NullInt64
+	var aiEuropean sql.NullInt64
+	var aiOther sql.NullInt64
+	var aiPromptTokens sql.NullInt64
+	var aiCompletionTokens sql.NullInt64
 	err := scanner.Scan(
 		&article.BatchSlug,
 		&article.ArticleID,
@@ -183,6 +201,18 @@ func scanFulltextArticle(scanner interface {
 		&article.FulltextSource,
 		&article.FulltextPath,
 		&article.ExtractedText,
+		&article.AIAnalysisStatus,
+		&aiCaucasian,
+		&aiWhite,
+		&aiEuropean,
+		&article.AIEuropeanPhrase,
+		&aiOther,
+		&article.AIOtherPhrase,
+		&article.AIModel,
+		&aiPromptTokens,
+		&aiCompletionTokens,
+		&article.AIError,
+		&article.AIProcessedAt,
 		&terminologyPresent,
 		&caucasianPresent,
 		&whitePresent,
@@ -211,6 +241,16 @@ func scanFulltextArticle(scanner interface {
 	article.WhitePresent = whitePresent.Valid && whitePresent.Int64 != 0
 	article.EuropeanPresent = europeanPresent.Valid && europeanPresent.Int64 != 0
 	article.OtherPresent = otherPresent.Valid && otherPresent.Int64 != 0
+	article.AICaucasian = aiCaucasian.Valid && aiCaucasian.Int64 != 0
+	article.AIWhite = aiWhite.Valid && aiWhite.Int64 != 0
+	article.AIEuropean = aiEuropean.Valid && aiEuropean.Int64 != 0
+	article.AIOther = aiOther.Valid && aiOther.Int64 != 0
+	if aiPromptTokens.Valid {
+		article.AIPromptTokens = int(aiPromptTokens.Int64)
+	}
+	if aiCompletionTokens.Valid {
+		article.AICompletionTokens = int(aiCompletionTokens.Int64)
+	}
 	return article, nil
 }
 
@@ -230,6 +270,18 @@ func fulltextArticleSelectSQL() string {
 			COALESCE(fulltext_source, ''),
 			COALESCE(fulltext_path, ''),
 			COALESCE(extracted_text, ''),
+			COALESCE(ai_analysis_status, 'not_queued'),
+			ai_caucasian,
+			ai_white,
+			ai_european,
+			COALESCE(ai_european_phrase_used, ''),
+			ai_other,
+			COALESCE(ai_other_phrase_used, ''),
+			COALESCE(ai_model, ''),
+			ai_prompt_tokens,
+			ai_completion_tokens,
+			COALESCE(ai_error, ''),
+			COALESCE(ai_processed_at, ''),
 			terminology_present,
 			caucasian_present,
 			white_present,
@@ -367,6 +419,34 @@ func fulltextTermList(article FulltextArticle) string {
 	}
 	if len(terms) == 0 {
 		return "none marked"
+	}
+	return strings.Join(terms, ", ")
+}
+
+func fulltextAITermList(article FulltextArticle) string {
+	terms := []string{}
+	if article.AICaucasian {
+		terms = append(terms, "caucasian")
+	}
+	if article.AIWhite {
+		terms = append(terms, "white")
+	}
+	if article.AIEuropean {
+		label := "european"
+		if article.AIEuropeanPhrase != "" {
+			label += ": " + article.AIEuropeanPhrase
+		}
+		terms = append(terms, label)
+	}
+	if article.AIOther {
+		label := "other"
+		if article.AIOtherPhrase != "" {
+			label += ": " + article.AIOtherPhrase
+		}
+		terms = append(terms, label)
+	}
+	if len(terms) == 0 {
+		return "none flagged"
 	}
 	return strings.Join(terms, ", ")
 }

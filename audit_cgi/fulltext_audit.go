@@ -22,6 +22,7 @@ type FulltextAuditPageData struct {
 
 var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(templateFuncs).Funcs(template.FuncMap{
 	"fulltextStatusDisplay": fulltextStatusDisplay,
+	"fulltextAITermList":    fulltextAITermList,
 	"fulltextTermList":      fulltextTermList,
 	"fulltextSummaryLabel":  fulltextSummaryLabel,
 }).Parse(`<!DOCTYPE html>
@@ -86,9 +87,11 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
                 {{if gt .PrevArticleID 0}}<a href="/cgi-bin/fulltext-audit.cgi?batch={{.Batch.BatchSlug}}&article_id={{.PrevArticleID}}">Previous</a>{{end}}
                 {{if gt .NextArticleID 0}}<a href="/cgi-bin/fulltext-audit.cgi?batch={{.Batch.BatchSlug}}&article_id={{.NextArticleID}}">Next</a>{{end}}
                 <a href="/cgi-bin/fulltext-audit.cgi?batch={{.Batch.BatchSlug}}">Next pending</a>
+                <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Article.ArticleID}}">Upload full text</a>
             </div>
 
             <div class="pill">full text: {{fulltextStatusDisplay .Article.FulltextStatus}}</div>
+            <div class="pill">AI analysis: {{.Article.AIAnalysisStatus}}</div>
             {{if .Article.FulltextSource}}<div class="pill">source: {{.Article.FulltextSource}}</div>{{end}}
             {{if .CurrentOutcome}}<div class="pill">review result: {{.CurrentOutcome}}</div>{{end}}
 
@@ -100,6 +103,13 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
                 Current review: <strong>{{.CurrentStatus}}</strong>{{if .Article.ReviewerUsername}} by {{.Article.ReviewerUsername}}{{end}}{{if .Article.ReviewedAt}} at {{formatTimestamp .Article.ReviewedAt}}{{end}}.
                 Terms marked: {{fulltextTermList .Article}}
             </div>
+            {{end}}
+            {{if eq .Article.AIAnalysisStatus "processed"}}
+            <div class="current">
+                AI analysis flagged: {{fulltextAITermList .Article}}{{if .Article.AIProcessedAt}} · {{formatTimestamp .Article.AIProcessedAt}}{{end}}{{if .Article.AIModel}} · {{.Article.AIModel}}{{end}}.
+            </div>
+            {{else if .Article.AIError}}
+            <div class="current">AI analysis error: {{.Article.AIError}}</div>
             {{end}}
 
             <h3>Abstract</h3>

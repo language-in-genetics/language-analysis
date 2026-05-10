@@ -79,6 +79,19 @@ else
     log "Warning: Lig full-text audit import failed"
 fi
 
+log "Processing queued full-text uploads..."
+if (
+    cd extractor
+    uv run process_fulltext_analysis.py \
+        --sqlite-db ../audit/review_data/lig_audit.db \
+        --openai-api-key "$OPENAI_API_KEY_FILE" \
+        --limit "${FULLTEXT_ANALYSIS_LIMIT:-10}"
+) 2>&1 | tee -a "$LOG_FILE"; then
+    log "Queued full-text upload processing completed"
+else
+    log "Warning: queued full-text upload processing had errors"
+fi
+
 # Step 1: Check for completed batches and fetch results
 log "Checking for completed batches..."
 cd extractor

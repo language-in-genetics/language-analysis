@@ -17,6 +17,7 @@ type FulltextStatusPageData struct {
 }
 
 var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs(templateFuncs).Funcs(template.FuncMap{
+	"fulltextAITermList":    fulltextAITermList,
 	"fulltextStatusDisplay": fulltextStatusDisplay,
 	"fulltextTermList":      fulltextTermList,
 	"fulltextOutcome":       fulltextOutcome,
@@ -76,6 +77,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
             <p class="small">{{.Detail.JournalName}} · {{yearLabel .Detail.PubYear}} · article {{.Detail.ArticleID}}{{if .Detail.DOI}} · <a href="https://doi.org/{{.Detail.DOI}}" target="_blank" rel="noopener noreferrer">{{.Detail.DOI}}</a>{{end}}</p>
             <p class="small">Review status: <strong>{{fulltextReviewStatus .Detail}}</strong>. Audit result: <strong>{{fulltextOutcome .Detail}}</strong>{{if .Detail.ReviewerUsername}} · reviewer {{.Detail.ReviewerUsername}}{{end}}{{if .Detail.ReviewedAt}} · {{formatTimestamp .Detail.ReviewedAt}}{{end}}</p>
             <p class="small">Full text: <strong>{{fulltextStatusDisplay .Detail.FulltextStatus}}</strong>{{if .Detail.FulltextSource}} · source {{.Detail.FulltextSource}}{{end}}</p>
+            <p class="small">AI analysis: <strong>{{.Detail.AIAnalysisStatus}}</strong>{{if eq .Detail.AIAnalysisStatus "processed"}} · {{fulltextAITermList .Detail}}{{end}}{{if .Detail.AIError}} · {{.Detail.AIError}}{{end}}</p>
             <p class="small">Terms marked: {{fulltextTermList .Detail}}</p>
             {{if .Detail.QuotedEvidence}}<h3>Quoted Evidence</h3><div class="abstract">{{.Detail.QuotedEvidence}}</div>{{end}}
             <h3>Abstract</h3>
@@ -91,6 +93,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
                         <th>Article</th>
                         <th>Journal</th>
                         <th>Full text</th>
+                        <th>AI</th>
                         <th>Status</th>
                         <th>Outcome</th>
                         <th>Reviewer</th>
@@ -103,6 +106,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
                         <td><a href="/cgi-bin/fulltext-status.cgi?batch={{.BatchSlug}}&article_id={{.ArticleID}}">{{.Title}}</a><div class="small">article {{.ArticleID}}</div></td>
                         <td>{{.JournalName}}<div class="small">{{yearLabel .PubYear}}</div></td>
                         <td>{{fulltextStatusDisplay .FulltextStatus}}{{if .FulltextSource}}<div class="small">{{.FulltextSource}}</div>{{end}}</td>
+                        <td>{{.AIAnalysisStatus}}{{if eq .AIAnalysisStatus "processed"}}<div class="small">{{fulltextAITermList .}}</div>{{end}}</td>
                         <td class="{{.ReviewStatus}}">{{.ReviewStatus}}</td>
                         <td>{{.AuditOutcome}}</td>
                         <td>{{if .ReviewerUsername}}{{.ReviewerUsername}}{{else}}—{{end}}</td>

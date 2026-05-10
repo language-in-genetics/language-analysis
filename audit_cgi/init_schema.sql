@@ -82,6 +82,25 @@ CREATE TABLE IF NOT EXISTS fulltext_articles (
     fulltext_source TEXT,
     fulltext_path TEXT,
     extracted_text TEXT,
+    ai_analysis_status TEXT NOT NULL DEFAULT 'not_queued' CHECK (
+        ai_analysis_status IN (
+            'not_queued',
+            'queued',
+            'processed',
+            'failed'
+        )
+    ),
+    ai_caucasian INTEGER CHECK (ai_caucasian IN (0, 1)),
+    ai_white INTEGER CHECK (ai_white IN (0, 1)),
+    ai_european INTEGER CHECK (ai_european IN (0, 1)),
+    ai_european_phrase_used TEXT,
+    ai_other INTEGER CHECK (ai_other IN (0, 1)),
+    ai_other_phrase_used TEXT,
+    ai_model TEXT,
+    ai_prompt_tokens INTEGER,
+    ai_completion_tokens INTEGER,
+    ai_error TEXT,
+    ai_processed_at TEXT,
     terminology_present INTEGER CHECK (terminology_present IN (0, 1)),
     caucasian_present INTEGER CHECK (caucasian_present IN (0, 1)),
     white_present INTEGER CHECK (white_present IN (0, 1)),
@@ -100,3 +119,6 @@ CREATE INDEX IF NOT EXISTS fulltext_articles_batch_reviewed_idx
 
 CREATE INDEX IF NOT EXISTS fulltext_articles_batch_status_idx
     ON fulltext_articles (batch_slug, fulltext_status, article_id);
+
+CREATE INDEX IF NOT EXISTS fulltext_articles_ai_status_idx
+    ON fulltext_articles (ai_analysis_status, batch_slug, article_id);

@@ -60,6 +60,30 @@ def ensure_pg_schema(cur) -> None:
 def ensure_sqlite_schema(conn: sqlite3.Connection) -> None:
     schema_path = Path(__file__).resolve().parents[1] / "audit_cgi" / "init_schema.sql"
     conn.executescript(schema_path.read_text())
+    columns = {row["name"] for row in conn.execute("PRAGMA table_info(fulltext_articles)")}
+    additions = {
+        "ai_analysis_status": "TEXT NOT NULL DEFAULT 'not_queued'",
+        "ai_caucasian": "INTEGER CHECK (ai_caucasian IN (0, 1))",
+        "ai_white": "INTEGER CHECK (ai_white IN (0, 1))",
+        "ai_european": "INTEGER CHECK (ai_european IN (0, 1))",
+        "ai_european_phrase_used": "TEXT",
+        "ai_other": "INTEGER CHECK (ai_other IN (0, 1))",
+        "ai_other_phrase_used": "TEXT",
+        "ai_model": "TEXT",
+        "ai_prompt_tokens": "INTEGER",
+        "ai_completion_tokens": "INTEGER",
+        "ai_error": "TEXT",
+        "ai_processed_at": "TEXT",
+    }
+    for column, definition in additions.items():
+        if column not in columns:
+            conn.execute(f"ALTER TABLE fulltext_articles ADD COLUMN {column} {definition}")
+    conn.execute(
+        """
+        CREATE INDEX IF NOT EXISTS fulltext_articles_ai_status_idx
+        ON fulltext_articles (ai_analysis_status, batch_slug, article_id)
+        """
+    )
 
 
 def build_filters(args: argparse.Namespace) -> tuple[list[str], list[object]]:

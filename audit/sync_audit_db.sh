@@ -8,6 +8,8 @@ LOCAL_DB_DIR="${LOCAL_DB_DIR:-$SCRIPT_DIR/review_data}"
 LOCAL_DB="${LOCAL_DB:-$LOCAL_DB_DIR/lig_audit.db}"
 REMOTE_HOST="${REMOTE_HOST:-merah.cassia.ifost.org.au}"
 REMOTE_DB="${REMOTE_DB:-/var/www/vhosts/lig.symmachus.org/db/lig_audit.db}"
+REMOTE_UPLOAD_DIR="${REMOTE_UPLOAD_DIR:-/var/www/vhosts/lig.symmachus.org/htdocs/fulltext_uploads}"
+LOCAL_UPLOAD_DIR="${LOCAL_UPLOAD_DIR:-$LOCAL_DB_DIR/fulltext_uploads}"
 REMOTE_SNAPSHOT="${REMOTE_SNAPSHOT:-/tmp/lig_audit_snapshot_$(date +%Y%m%d%H%M%S)_$$.db}"
 LOG_FILE="${LOG_FILE:-$SCRIPT_DIR/audit_sync.log}"
 
@@ -43,6 +45,12 @@ ssh -o BatchMode=yes "$REMOTE_HOST" "
 "
 scp "$REMOTE_HOST:$REMOTE_SNAPSHOT" "$LOCAL_DB"
 ssh -o BatchMode=yes "$REMOTE_HOST" "rm -f '$REMOTE_SNAPSHOT' 2>/dev/null || doas rm -f '$REMOTE_SNAPSHOT'"
+
+if ssh -o BatchMode=yes "$REMOTE_HOST" "test -d '$REMOTE_UPLOAD_DIR'"; then
+    mkdir -p "$LOCAL_UPLOAD_DIR"
+    rsync -az --delete "$REMOTE_HOST:$REMOTE_UPLOAD_DIR/" "$LOCAL_UPLOAD_DIR/"
+    log "Synced full-text uploads to $LOCAL_UPLOAD_DIR"
+fi
 
 LOCAL_SIZE=$(ls -lh "$LOCAL_DB" | awk '{print $5}')
 AUDIT_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM audit_articles WHERE target_confirmed IS NOT NULL;")

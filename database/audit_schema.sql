@@ -130,6 +130,25 @@ CREATE TABLE IF NOT EXISTS languageingenetics.fulltext_audit_articles (
     fulltext_source TEXT,
     fulltext_path TEXT,
     extracted_text TEXT,
+    ai_analysis_status TEXT NOT NULL DEFAULT 'not_queued' CHECK (
+        ai_analysis_status IN (
+            'not_queued',
+            'queued',
+            'processed',
+            'failed'
+        )
+    ),
+    ai_caucasian BOOLEAN,
+    ai_white BOOLEAN,
+    ai_european BOOLEAN,
+    ai_european_phrase_used TEXT,
+    ai_other BOOLEAN,
+    ai_other_phrase_used TEXT,
+    ai_model TEXT,
+    ai_prompt_tokens INTEGER,
+    ai_completion_tokens INTEGER,
+    ai_error TEXT,
+    ai_processed_at TIMESTAMPTZ,
     created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
     UNIQUE (batch_id, article_id)
 );
@@ -139,6 +158,34 @@ CREATE INDEX IF NOT EXISTS fulltext_audit_articles_batch_status_idx
 
 CREATE INDEX IF NOT EXISTS fulltext_audit_articles_article_idx
     ON languageingenetics.fulltext_audit_articles (article_id);
+
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_analysis_status TEXT NOT NULL DEFAULT 'not_queued';
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_caucasian BOOLEAN;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_white BOOLEAN;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_european BOOLEAN;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_european_phrase_used TEXT;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_other BOOLEAN;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_other_phrase_used TEXT;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_model TEXT;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_prompt_tokens INTEGER;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_completion_tokens INTEGER;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_error TEXT;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS ai_processed_at TIMESTAMPTZ;
+
+CREATE INDEX IF NOT EXISTS fulltext_audit_articles_ai_status_idx
+    ON languageingenetics.fulltext_audit_articles (ai_analysis_status, batch_id, article_id);
 
 CREATE TABLE IF NOT EXISTS languageingenetics.fulltext_audit_reviews (
     sample_article_id BIGINT PRIMARY KEY REFERENCES languageingenetics.fulltext_audit_articles(id) ON DELETE CASCADE,
@@ -154,6 +201,8 @@ CREATE TABLE IF NOT EXISTS languageingenetics.fulltext_audit_reviews (
     updated_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
     source TEXT NOT NULL DEFAULT 'merah_audit_sqlite'
 );
+
+DROP VIEW IF EXISTS languageingenetics.fulltext_audit_status_view;
 
 CREATE OR REPLACE VIEW languageingenetics.fulltext_audit_status_view AS
 SELECT
@@ -178,6 +227,18 @@ SELECT
     s.fulltext_source,
     s.fulltext_path,
     s.extracted_text,
+    s.ai_analysis_status,
+    s.ai_caucasian,
+    s.ai_white,
+    s.ai_european,
+    s.ai_european_phrase_used,
+    s.ai_other,
+    s.ai_other_phrase_used,
+    s.ai_model,
+    s.ai_prompt_tokens,
+    s.ai_completion_tokens,
+    s.ai_error,
+    s.ai_processed_at,
     r.terminology_present,
     r.caucasian_present,
     r.white_present,
