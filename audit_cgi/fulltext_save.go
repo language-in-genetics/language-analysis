@@ -69,7 +69,7 @@ func handleFulltextSave(w http.ResponseWriter, r *http.Request) {
 		&existingOther,
 	)
 	if err != nil {
-		http.Error(w, "Failed to load existing verification state: "+err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Failed to load existing full-text state: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -112,7 +112,7 @@ func handleFulltextSave(w http.ResponseWriter, r *http.Request) {
 		  AND article_id = ?
 	`, terminologyPresent, caucasianPresent, whitePresent, europeanPresent, otherPresent, r.FormValue("quoted_evidence"), reviewer, r.FormValue("review_notes"), terminologyPresent, batch, articleID)
 	if err != nil {
-		http.Error(w, "Failed to save full-text verification: "+err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Failed to save full-text manual state: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 

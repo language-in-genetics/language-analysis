@@ -15,6 +15,15 @@ const fulltextStatusOrderSQL = `CASE fulltext_status
 	ELSE 99
 END`
 
+const fulltextUploadQueueOrderSQL = `CASE
+	WHEN fulltext_status IN ('needs_manual', 'pending_fetch') THEN 0
+	WHEN ai_analysis_status = 'failed' THEN 1
+	WHEN fulltext_status = 'available' AND ai_analysis_status = 'not_queued' THEN 2
+	WHEN ai_analysis_status = 'queued' THEN 3
+	WHEN ai_analysis_status = 'processed' THEN 4
+	ELSE 99
+END`
+
 type FulltextBatchMeta struct {
 	BatchSlug    string
 	Seed         int
@@ -36,6 +45,9 @@ type FulltextSummary struct {
 	PendingFetchCount     int
 	UnavailableCount      int
 	ExtractionFailedCount int
+	AIQueuedCount         int
+	AIProcessedCount      int
+	AIFailedCount         int
 }
 
 type FulltextArticle struct {
@@ -134,7 +146,10 @@ func loadFulltextSummary(db *sql.DB, batch string) (FulltextSummary, error) {
 			COALESCE(SUM(CASE WHEN fulltext_status = 'needs_manual' THEN 1 ELSE 0 END), 0) AS needs_manual_count,
 			COALESCE(SUM(CASE WHEN fulltext_status = 'pending_fetch' THEN 1 ELSE 0 END), 0) AS pending_fetch_count,
 			COALESCE(SUM(CASE WHEN fulltext_status = 'unavailable' THEN 1 ELSE 0 END), 0) AS unavailable_count,
-			COALESCE(SUM(CASE WHEN fulltext_status = 'extraction_failed' THEN 1 ELSE 0 END), 0) AS extraction_failed_count
+			COALESCE(SUM(CASE WHEN fulltext_status = 'extraction_failed' THEN 1 ELSE 0 END), 0) AS extraction_failed_count,
+			COALESCE(SUM(CASE WHEN ai_analysis_status = 'queued' THEN 1 ELSE 0 END), 0) AS ai_queued_count,
+			COALESCE(SUM(CASE WHEN ai_analysis_status = 'processed' THEN 1 ELSE 0 END), 0) AS ai_processed_count,
+			COALESCE(SUM(CASE WHEN ai_analysis_status = 'failed' THEN 1 ELSE 0 END), 0) AS ai_failed_count
 		FROM fulltext_articles
 		WHERE batch_slug = ?
 	`, batch).Scan(
@@ -148,6 +163,9 @@ func loadFulltextSummary(db *sql.DB, batch string) (FulltextSummary, error) {
 		&summary.PendingFetchCount,
 		&summary.UnavailableCount,
 		&summary.ExtractionFailedCount,
+		&summary.AIQueuedCount,
+		&summary.AIProcessedCount,
+		&summary.AIFailedCount,
 	)
 	return summary, err
 }
@@ -309,8 +327,11 @@ func firstPendingFulltextArticleID(db *sql.DB, batch string) (int, error) {
 		SELECT article_id
 		FROM fulltext_articles
 		WHERE batch_slug = ?
-		  AND terminology_present IS NULL
-		ORDER BY `+fulltextStatusOrderSQL+`, article_id
+		  AND (
+			  fulltext_status IN ('needs_manual', 'pending_fetch')
+			  OR ai_analysis_status IN ('not_queued', 'queued', 'failed')
+		  )
+		ORDER BY `+fulltextUploadQueueOrderSQL+`, article_id
 		LIMIT 1
 	`, batch).Scan(&articleID)
 	if err == sql.ErrNoRows {
@@ -389,7 +410,7 @@ func listFulltextArticles(db *sql.DB, batch, reviewStatus, fulltextStatus string
 func fulltextStatusDisplay(status string) string {
 	switch status {
 	case "pending_fetch":
-		return "pending fetch"
+		return "pending upload"
 	case "available":
 		return "available"
 	case "needs_manual":
@@ -453,10 +474,10 @@ func fulltextAITermList(article FulltextArticle) string {
 
 func fulltextSummaryLabel(summary FulltextSummary) string {
 	return fmt.Sprintf(
-		"%d verified / %d total; %d tracked terminology, %d no tracked terminology",
-		summary.ReviewedCount,
+		"%d AI processed / %d total; %d queued, %d failed",
+		summary.AIProcessedCount,
 		summary.TotalCount,
-		summary.TerminologyCount,
-		summary.NoTerminologyCount,
+		summary.AIQueuedCount,
+		summary.AIFailedCount,
 	)
 }

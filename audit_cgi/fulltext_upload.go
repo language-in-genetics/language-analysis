@@ -36,7 +36,7 @@ var fulltextUploadTemplate = template.Must(template.New("fulltext-upload").Funcs
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LIG Full-Text Verification Upload</title>
+    <title>LIG Full-Text AI Upload</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; background: #f6f7f9; color: #222; }
         .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
@@ -57,10 +57,10 @@ var fulltextUploadTemplate = template.Must(template.New("fulltext-upload").Funcs
 <body>
     <div class="container">
         <div class="card">
-            <h1>LIG Full-Text Verification Upload</h1>
+            <h1>LIG Full-Text AI Upload</h1>
             <p class="meta">Signed in as <strong>{{.RemoteUser}}</strong> · batch <code>{{.Batch.BatchSlug}}</code></p>
             <div class="nav">
-                <a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Article.ArticleID}}">Back to verification item</a>
+                <a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Article.ArticleID}}">Back to AI queue item</a>
                 <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Article.ArticleID}}">Status detail</a>
             </div>
             {{if .Message}}<p class="message">{{.Message}}</p>{{end}}
@@ -82,16 +82,16 @@ var fulltextUploadTemplate = template.Must(template.New("fulltext-upload").Funcs
                 <input type="hidden" name="article_id" value="{{.Article.ArticleID}}">
 
                 <h3>Upload File</h3>
-                <p class="small">Plain text, HTML, and PDF uploads are queued for the raksasa cron analysis. Pasted text below is used directly.</p>
+                <p class="small">Upload or paste the full paper here. Plain text, HTML, and PDF uploads are queued for AI processing by the raksasa cron job. Pasted text is used directly.</p>
                 <input type="file" name="article_file">
 
                 <h3>Full Article Text</h3>
                 <textarea name="extracted_text">{{.Article.ExtractedText}}</textarea>
 
-                <h3>Verification Notes</h3>
+                <h3>Upload Notes</h3>
                 <textarea name="review_notes">{{.Article.ReviewNotes}}</textarea>
 
-                <p><button type="submit">Save Full Text And Queue Analysis</button></p>
+                <p><button type="submit">Queue Full Text For AI Analysis</button></p>
             </form>
         </div>
     </div>
@@ -121,7 +121,7 @@ func handleFulltextUpload(w http.ResponseWriter, r *http.Request) {
 		remoteUser = envUser
 	}
 	if remoteUser == "" {
-		remoteUser = "authenticated verifier"
+		remoteUser = "authenticated user"
 	}
 
 	if r.Method == http.MethodPost {
@@ -152,7 +152,7 @@ func renderFulltextUploadPageForTarget(w http.ResponseWriter, db *sql.DB, remote
 	}
 	article, err := loadFulltextArticle(db, batch, articleID)
 	if err != nil {
-		http.Error(w, "Failed to load full-text verification article: "+err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Failed to load full-text AI processing article: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 	data := FulltextUploadPageData{
@@ -181,7 +181,7 @@ func requestedFulltextUploadTarget(r *http.Request, db *sql.DB) (string, int, er
 		}
 	}
 	if batch == "" {
-		return "", 0, fmt.Errorf("no full-text verification batch has been loaded yet")
+		return "", 0, fmt.Errorf("no full-text AI processing batch has been loaded yet")
 	}
 
 	articleID := 0
@@ -202,7 +202,7 @@ func requestedFulltextUploadTarget(r *http.Request, db *sql.DB) (string, int, er
 		}
 	}
 	if articleID == 0 {
-		return "", 0, fmt.Errorf("no sampled full-text verification articles found")
+		return "", 0, fmt.Errorf("no sampled full-text AI processing articles found")
 	}
 	return batch, articleID, nil
 }

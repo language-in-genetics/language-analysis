@@ -179,23 +179,26 @@ The intended split is:
 - live review UI and public audit status on `merah` SQLite
 - canonical reporting and dashboard summaries in PostgreSQL
 
-### Full-Text Audit
+### Full-Text AI Processing
 
-The same `merah` SQLite review database also supports a full-article audit track:
+The same `merah` SQLite review database also supports a full-article AI processing track. The human task is to upload or paste full papers; the `raksasa` cron job pulls those uploads, extracts text when needed, and sends full article text to AI for terminology analysis.
 
 - Create a reproducible 100-article batch through the end of 2025:
   - `cd extractor && uv run create_fulltext_audit_batch.py --sample-size 100 --max-year 2025 --batch-slug fulltext-2025-seed42 --notes "Full-article validation sample through 2025"`
-- Reviewer UI:
-  - `/cgi-bin/fulltext-audit.cgi` requires login
+- Upload UI:
+  - `/cgi-bin/fulltext-upload.cgi` requires login
+  - `/cgi-bin/fulltext-verify.cgi` is the authenticated queue browser
   - `/cgi-bin/fulltext-status.cgi` is public status
-- Import the SQLite review state into PostgreSQL:
+- Process queued uploads after syncing the `merah` SQLite database and upload files:
+  - `cd extractor && uv run process_fulltext_analysis.py --sqlite-db ../audit/review_data/lig_audit.db --limit 10`
+- Import the SQLite upload and AI state into PostgreSQL:
   - `cd extractor && uv run import_fulltext_audit_reviews.py --sqlite-db ../audit/review_data/lig_audit.db`
 - Push a newly seeded local SQLite database to `merah`:
   - `./audit/sync_audit_db.sh`
   - `cd extractor && uv run create_fulltext_audit_batch.py --sample-size 100 --max-year 2025 --batch-slug fulltext-2025-seed42`
   - `./audit/push_audit_db.sh`
 
-The full-text tables track article selection, full-text acquisition status, extracted text/path metadata, reviewer decisions, quoted evidence, and term-level flags. The normal `cronscript.sh` syncs the `merah` SQLite database back to `raksasa` and imports both title/abstract and full-text audit results.
+The full-text tables track article selection, full-text acquisition status, uploaded file paths, extracted text, AI analysis status, AI terminology flags, and upload notes. The normal `cronscript.sh` syncs the `merah` SQLite database and full-text upload files back to `raksasa`, processes queued uploads, and imports both title/abstract audit state and full-text AI state into PostgreSQL.
 
 ### CGI Deployment
 

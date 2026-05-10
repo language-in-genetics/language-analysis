@@ -380,12 +380,12 @@ try:
         SELECT
             fas.sample_batch,
             COUNT(*) AS total,
-            COALESCE(SUM(CASE WHEN fas.review_status = 'reviewed' THEN 1 ELSE 0 END), 0) AS verified,
-            COALESCE(SUM(CASE WHEN fas.review_status = 'pending' THEN 1 ELSE 0 END), 0) AS pending,
             COALESCE(SUM(CASE WHEN fas.fulltext_status = 'available' THEN 1 ELSE 0 END), 0) AS fulltext_available,
             COALESCE(SUM(CASE WHEN fas.fulltext_status = 'pending_fetch' THEN 1 ELSE 0 END), 0) AS pending_fetch,
+            COALESCE(SUM(CASE WHEN fas.fulltext_status = 'needs_manual' THEN 1 ELSE 0 END), 0) AS needs_manual,
             COALESCE(SUM(CASE WHEN fas.ai_analysis_status = 'queued' THEN 1 ELSE 0 END), 0) AS ai_queued,
-            COALESCE(SUM(CASE WHEN fas.ai_analysis_status = 'processed' THEN 1 ELSE 0 END), 0) AS ai_processed
+            COALESCE(SUM(CASE WHEN fas.ai_analysis_status = 'processed' THEN 1 ELSE 0 END), 0) AS ai_processed,
+            COALESCE(SUM(CASE WHEN fas.ai_analysis_status = 'failed' THEN 1 ELSE 0 END), 0) AS ai_failed
         FROM languageingenetics.fulltext_audit_status_view fas
         JOIN latest_batch lb ON lb.slug = fas.sample_batch
         GROUP BY fas.sample_batch
@@ -873,7 +873,7 @@ html_content = f"""<!DOCTYPE html>
 <body>
     <div class="container">
         <h1>Word Frequency Analysis Dashboard</h1>
-        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Token Usage</a> | <a href="diagnostics.html" style="color: #2196F3;">Batch Diagnostics</a> | <a href="/cgi-bin/audit-status.cgi" style="color: #2196F3;">Human Audit</a> | <a href="/cgi-bin/fulltext-status.cgi" style="color: #2196F3;">Full-Text Verification</a></div>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Token Usage</a> | <a href="diagnostics.html" style="color: #2196F3;">Batch Diagnostics</a> | <a href="/cgi-bin/audit-status.cgi" style="color: #2196F3;">Human Audit</a> | <a href="/cgi-bin/fulltext-upload.cgi" style="color: #2196F3;">Full-Text AI Upload</a></div>
 
         <h2>Progress Overview</h2>
         <div class="grid">
@@ -949,24 +949,24 @@ if audit_summary:
 """
 
 if fulltext_summary:
-    fulltext_pct = (fulltext_summary['verified'] / fulltext_summary['total'] * 100) if fulltext_summary['total'] else 0
+    fulltext_pct = (fulltext_summary['ai_processed'] / fulltext_summary['total'] * 100) if fulltext_summary['total'] else 0
     html_content += f"""
-        <h2>Full-Text Verification</h2>
+        <h2>Full-Text AI Processing</h2>
         <div class="grid">
             <div class="card">
                 <h3>Latest Batch</h3>
                 <div class="value">{fulltext_summary['sample_batch']}</div>
-                <div class="subvalue"><a href="/cgi-bin/fulltext-status.cgi" style="color: #2196F3;">Open public verification status</a> · <a href="/cgi-bin/fulltext-verify.cgi" style="color: #2196F3;">Open verification interface</a></div>
+                <div class="subvalue"><a href="/cgi-bin/fulltext-upload.cgi" style="color: #2196F3;">Upload full paper for AI analysis</a> · <a href="/cgi-bin/fulltext-status.cgi" style="color: #2196F3;">Open public processing status</a></div>
             </div>
             <div class="card">
-                <h3>Verified</h3>
-                <div class="value">{fulltext_summary['verified']:,}</div>
+                <h3>AI Processed</h3>
+                <div class="value">{fulltext_summary['ai_processed']:,}</div>
                 <div class="subvalue">{fulltext_pct:.1f}% of {fulltext_summary['total']:,} sampled articles</div>
             </div>
             <div class="card">
-                <h3>Full Text Loaded</h3>
+                <h3>Full Text Uploaded</h3>
                 <div class="value">{fulltext_summary['fulltext_available']:,}</div>
-                <div class="subvalue">{fulltext_summary['pending_fetch']:,} pending fetch · {fulltext_summary['ai_processed']:,} AI processed</div>
+                <div class="subvalue">{fulltext_summary['pending_fetch']:,} pending upload · {fulltext_summary['needs_manual']:,} need manual fetch · {fulltext_summary['ai_queued']:,} AI queued · {fulltext_summary['ai_failed']:,} failed</div>
             </div>
         </div>
 """

@@ -55,9 +55,15 @@ fi
 LOCAL_SIZE=$(ls -lh "$LOCAL_DB" | awk '{print $5}')
 AUDIT_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM audit_articles WHERE target_confirmed IS NOT NULL;")
 if sqlite3 "$LOCAL_DB" "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'fulltext_articles' LIMIT 1;" | grep -q 1; then
-    FULLTEXT_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM fulltext_articles WHERE terminology_present IS NOT NULL;")
+    FULLTEXT_UPLOADED_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM fulltext_articles WHERE fulltext_status = 'available';")
+    if sqlite3 "$LOCAL_DB" "PRAGMA table_info(fulltext_articles);" | awk -F'|' '{print $2}' | grep -qx ai_analysis_status; then
+        FULLTEXT_AI_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM fulltext_articles WHERE ai_analysis_status = 'processed';")
+    else
+        FULLTEXT_AI_COUNT=0
+    fi
 else
-    FULLTEXT_COUNT=0
+    FULLTEXT_UPLOADED_COUNT=0
+    FULLTEXT_AI_COUNT=0
 fi
-log "Synced database to $LOCAL_DB (size: $LOCAL_SIZE, label reviewed rows: $AUDIT_COUNT, full-text reviewed rows: $FULLTEXT_COUNT)"
+log "Synced database to $LOCAL_DB (size: $LOCAL_SIZE, label reviewed rows: $AUDIT_COUNT, full-text uploaded rows: $FULLTEXT_UPLOADED_COUNT, full-text AI processed rows: $FULLTEXT_AI_COUNT)"
 log "=== Lig audit database sync complete ==="

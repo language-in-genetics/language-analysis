@@ -9,15 +9,12 @@ import (
 )
 
 type FulltextAuditPageData struct {
-	RemoteUser       string
-	Batch            FulltextBatchMeta
-	Summary          FulltextSummary
-	Article          FulltextArticle
-	PrevArticleID    int
-	NextArticleID    int
-	CurrentStatus    string
-	CurrentOutcome   string
-	TerminologyValue string
+	RemoteUser    string
+	Batch         FulltextBatchMeta
+	Summary       FulltextSummary
+	Article       FulltextArticle
+	PrevArticleID int
+	NextArticleID int
 }
 
 var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(templateFuncs).Funcs(template.FuncMap{
@@ -30,7 +27,7 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LIG Full-Text Verification</title>
+    <title>LIG Full-Text AI Upload Queue</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; background: #f6f7f9; color: #222; }
         .container { max-width: 1240px; margin: 0 auto; padding: 24px; }
@@ -65,19 +62,19 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
     <div class="container">
         <div class="topline">
             <div>
-                <h1>LIG Full-Text Verification</h1>
+                <h1>LIG Full-Text AI Upload Queue</h1>
                 <div class="meta">Signed in as <strong>{{.RemoteUser}}</strong> · batch <code>{{.Batch.BatchSlug}}</code></div>
             </div>
             <div class="nav">
-                <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}">Status</a>
+                <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}">Processing status</a>
                 <a href="/cgi-bin/audit.cgi">Title/abstract audit</a>
             </div>
         </div>
 
         <div class="card">
             <div class="stats">
-                <div class="stat"><strong>Verification progress</strong><br>{{fulltextSummaryLabel .Summary}}<br>{{.Summary.PendingCount}} pending</div>
-                <div class="stat"><strong>Full text</strong><br>{{.Summary.AvailableCount}} available<br>{{.Summary.PendingFetchCount}} pending fetch · {{.Summary.NeedsManualCount}} needs manual</div>
+                <div class="stat"><strong>AI processing</strong><br>{{fulltextSummaryLabel .Summary}}</div>
+                <div class="stat"><strong>Full text</strong><br>{{.Summary.AvailableCount}} uploaded/available<br>{{.Summary.PendingFetchCount}} waiting for upload · {{.Summary.NeedsManualCount}} needs manual fetch</div>
                 <div class="stat"><strong>Unavailable</strong><br>{{.Summary.UnavailableCount}} unavailable<br>{{.Summary.ExtractionFailedCount}} extraction failed</div>
             </div>
         </div>
@@ -86,24 +83,18 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
             <div class="nav">
                 {{if gt .PrevArticleID 0}}<a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}&article_id={{.PrevArticleID}}">Previous</a>{{end}}
                 {{if gt .NextArticleID 0}}<a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}&article_id={{.NextArticleID}}">Next</a>{{end}}
-                <a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}">Next pending</a>
-                <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Article.ArticleID}}">Upload full text</a>
+                <a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}">Next needing upload/AI</a>
+                <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Article.ArticleID}}">Upload this paper for AI</a>
             </div>
 
             <div class="pill">full text: {{fulltextStatusDisplay .Article.FulltextStatus}}</div>
             <div class="pill">AI analysis: {{.Article.AIAnalysisStatus}}</div>
             {{if .Article.FulltextSource}}<div class="pill">source: {{.Article.FulltextSource}}</div>{{end}}
-            {{if .CurrentOutcome}}<div class="pill">verification result: {{.CurrentOutcome}}</div>{{end}}
+            {{if eq .Article.AIAnalysisStatus "processed"}}<div class="pill">AI terms: {{fulltextAITermList .Article}}</div>{{end}}
 
             <p class="article-title">{{.Article.Title}}</p>
             <p class="meta">{{.Article.JournalName}} · {{yearLabel .Article.PubYear}} · article {{.Article.ArticleID}}{{if .Article.DOI}} · <a href="https://doi.org/{{.Article.DOI}}" target="_blank" rel="noopener noreferrer">{{.Article.DOI}}</a>{{end}}</p>
 
-            {{if .CurrentStatus}}
-            <div class="current">
-                Current verification: <strong>{{.CurrentStatus}}</strong>{{if .Article.ReviewerUsername}} by {{.Article.ReviewerUsername}}{{end}}{{if .Article.ReviewedAt}} at {{formatTimestamp .Article.ReviewedAt}}{{end}}.
-                Terms marked: {{fulltextTermList .Article}}
-            </div>
-            {{end}}
             {{if eq .Article.AIAnalysisStatus "processed"}}
             <div class="current">
                 AI analysis flagged: {{fulltextAITermList .Article}}{{if .Article.AIProcessedAt}} · {{formatTimestamp .Article.AIProcessedAt}}{{end}}{{if .Article.AIModel}} · {{.Article.AIModel}}{{end}}.
@@ -120,37 +111,8 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
             {{if .Article.ExtractedText}}
                 <div class="fulltext">{{.Article.ExtractedText}}</div>
             {{else}}
-                <p class="small">No extracted full text has been loaded for this article yet. Use the DOI link or stored path if available, and mark this item only when the full article has been checked.</p>
+                <p class="small">No full text has been uploaded for AI processing yet. Use the upload link above to paste article text or upload a PDF/text/HTML file.</p>
             {{end}}
-
-            <form method="POST" action="/cgi-bin/fulltext-save.cgi">
-                <input type="hidden" name="batch" value="{{.Batch.BatchSlug}}">
-                <input type="hidden" name="article_id" value="{{.Article.ArticleID}}">
-
-                <h3>Decision</h3>
-                <div class="controls">
-                    <label><input type="radio" name="terminology_present" value="1" {{if eq .TerminologyValue "1"}}checked{{end}}> Tracked racial/ethnic terminology appears in the full article</label>
-                    <label><input type="radio" name="terminology_present" value="0" {{if eq .TerminologyValue "0"}}checked{{end}}> No tracked terminology appears in the full article</label>
-                </div>
-
-                <h3>Terms Seen</h3>
-                <div class="controls">
-                    <label><input type="checkbox" name="caucasian_present" value="1" {{if .Article.CaucasianPresent}}checked{{end}}> Caucasian</label>
-                    <label><input type="checkbox" name="white_present" value="1" {{if .Article.WhitePresent}}checked{{end}}> White</label>
-                    <label><input type="checkbox" name="european_present" value="1" {{if .Article.EuropeanPresent}}checked{{end}}> European / European ancestry</label>
-                    <label><input type="checkbox" name="other_present" value="1" {{if .Article.OtherPresent}}checked{{end}}> Other racial/ethnic term</label>
-                </div>
-
-                <h3>Quoted Evidence</h3>
-                <textarea name="quoted_evidence">{{.Article.QuotedEvidence}}</textarea>
-
-                <h3>Verification Notes</h3>
-                <textarea name="review_notes">{{.Article.ReviewNotes}}</textarea>
-                <div class="actions">
-                    <button class="btn-confirm" type="submit" name="action" value="continue">Save And Continue</button>
-                    <button class="btn-stay" type="submit" name="action" value="stay">Save And Stay</button>
-                </div>
-            </form>
         </div>
     </div>
 </body>
@@ -180,7 +142,7 @@ func handleFulltextAudit(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	if batch == "" {
-		http.Error(w, "No full-text verification batch has been loaded yet.", http.StatusNotFound)
+		http.Error(w, "No full-text AI processing batch has been loaded yet.", http.StatusNotFound)
 		return
 	}
 
@@ -209,13 +171,13 @@ func handleFulltextAudit(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	if articleID == 0 {
-		http.Error(w, "No sampled full-text verification articles found.", http.StatusNotFound)
+		http.Error(w, "No sampled full-text AI processing articles found.", http.StatusNotFound)
 		return
 	}
 
 	article, err := loadFulltextArticle(db, batch, articleID)
 	if err != nil {
-		http.Error(w, "Failed to load full-text verification article: "+err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Failed to load full-text AI processing article: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -225,29 +187,18 @@ func handleFulltextAudit(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	terminologyValue := ""
-	if article.TerminologyPresent != nil {
-		if *article.TerminologyPresent {
-			terminologyValue = "1"
-		} else {
-			terminologyValue = "0"
-		}
-	}
 	remoteUser := os.Getenv("REMOTE_USER")
 	if remoteUser == "" {
-		remoteUser = "authenticated verifier"
+		remoteUser = "authenticated user"
 	}
 
 	data := FulltextAuditPageData{
-		RemoteUser:       remoteUser,
-		Batch:            meta,
-		Summary:          summary,
-		Article:          article,
-		PrevArticleID:    prevID,
-		NextArticleID:    nextID,
-		CurrentStatus:    fulltextReviewStatus(article),
-		CurrentOutcome:   fulltextOutcome(article),
-		TerminologyValue: terminologyValue,
+		RemoteUser:    remoteUser,
+		Batch:         meta,
+		Summary:       summary,
+		Article:       article,
+		PrevArticleID: prevID,
+		NextArticleID: nextID,
 	}
 
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")

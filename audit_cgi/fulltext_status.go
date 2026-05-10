@@ -28,7 +28,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LIG Full-Text Verification Status</title>
+    <title>LIG Full-Text AI Processing Status</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f7f9; color: #222; margin: 0; }
         .container { max-width: 1320px; margin: 0 auto; padding: 24px; }
@@ -53,20 +53,18 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
 <body>
     <div class="container">
         <div class="card">
-            <h1>LIG Full-Text Verification Status</h1>
-            <p class="small">This page is public. The verification interface lives at <a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}">/cgi-bin/fulltext-verify.cgi</a> and requires login.</p>
+            <h1>LIG Full-Text AI Processing Status</h1>
+            <p class="small">This page is public. Humans upload full papers for AI processing at <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}">/cgi-bin/fulltext-upload.cgi</a>; login required.</p>
             <p class="small">Batch <code>{{.Batch.BatchSlug}}</code> · created {{formatTimestamp .Batch.CreatedAt}} · seed {{.Batch.Seed}}</p>
             <div class="filters">
                 <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}">All</a>
-                <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}&review_status=pending">Pending verification</a>
-                <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}&review_status=reviewed">Verified</a>
                 <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}&fulltext_status=available">Full text available</a>
                 <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}&fulltext_status=needs_manual">Needs manual</a>
-                <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}&fulltext_status=pending_fetch">Pending fetch</a>
+				<a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}&fulltext_status=pending_fetch">Pending upload</a>
             </div>
             <div class="stats">
-                <div class="stat"><strong>Verification progress</strong><br>{{fulltextSummaryLabel .Summary}}<br>{{.Summary.PendingCount}} pending</div>
-                <div class="stat"><strong>Full text</strong><br>{{.Summary.AvailableCount}} available<br>{{.Summary.PendingFetchCount}} pending fetch · {{.Summary.NeedsManualCount}} needs manual</div>
+                <div class="stat"><strong>AI processing</strong><br>{{fulltextSummaryLabel .Summary}}</div>
+                <div class="stat"><strong>Full text</strong><br>{{.Summary.AvailableCount}} uploaded/available<br>{{.Summary.PendingFetchCount}} waiting for upload · {{.Summary.NeedsManualCount}} needs manual fetch</div>
                 <div class="stat"><strong>Unavailable</strong><br>{{.Summary.UnavailableCount}} unavailable<br>{{.Summary.ExtractionFailedCount}} extraction failed</div>
             </div>
         </div>
@@ -75,10 +73,9 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
         <div class="card">
             <h2>{{.Detail.Title}}</h2>
             <p class="small">{{.Detail.JournalName}} · {{yearLabel .Detail.PubYear}} · article {{.Detail.ArticleID}}{{if .Detail.DOI}} · <a href="https://doi.org/{{.Detail.DOI}}" target="_blank" rel="noopener noreferrer">{{.Detail.DOI}}</a>{{end}}</p>
-            <p class="small">Verification status: <strong>{{fulltextReviewStatus .Detail}}</strong>. Verification result: <strong>{{fulltextOutcome .Detail}}</strong>{{if .Detail.ReviewerUsername}} · verifier {{.Detail.ReviewerUsername}}{{end}}{{if .Detail.ReviewedAt}} · {{formatTimestamp .Detail.ReviewedAt}}{{end}}</p>
             <p class="small">Full text: <strong>{{fulltextStatusDisplay .Detail.FulltextStatus}}</strong>{{if .Detail.FulltextSource}} · source {{.Detail.FulltextSource}}{{end}}</p>
             <p class="small">AI analysis: <strong>{{.Detail.AIAnalysisStatus}}</strong>{{if eq .Detail.AIAnalysisStatus "processed"}} · {{fulltextAITermList .Detail}}{{end}}{{if .Detail.AIError}} · {{.Detail.AIError}}{{end}}</p>
-            <p class="small">Terms marked: {{fulltextTermList .Detail}}</p>
+            <p class="small"><a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Detail.ArticleID}}">Upload or replace full text for AI analysis</a></p>
             {{if .Detail.QuotedEvidence}}<h3>Quoted Evidence</h3><div class="abstract">{{.Detail.QuotedEvidence}}</div>{{end}}
             <h3>Abstract</h3>
             <div class="abstract">{{if .Detail.Abstract}}{{.Detail.Abstract}}{{else}}No abstract available.{{end}}</div>
@@ -94,9 +91,6 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
                         <th>Journal</th>
                         <th>Full text</th>
                         <th>AI</th>
-                        <th>Verification</th>
-                        <th>Result</th>
-                        <th>Verifier</th>
                         <th>Updated</th>
                     </tr>
                 </thead>
@@ -107,9 +101,6 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
                         <td>{{.JournalName}}<div class="small">{{yearLabel .PubYear}}</div></td>
                         <td>{{fulltextStatusDisplay .FulltextStatus}}{{if .FulltextSource}}<div class="small">{{.FulltextSource}}</div>{{end}}</td>
                         <td>{{.AIAnalysisStatus}}{{if eq .AIAnalysisStatus "processed"}}<div class="small">{{fulltextAITermList .}}</div>{{end}}</td>
-                        <td class="{{.ReviewStatus}}">{{.ReviewStatus}}</td>
-                        <td>{{.AuditOutcome}}</td>
-                        <td>{{if .ReviewerUsername}}{{.ReviewerUsername}}{{else}}—{{end}}</td>
                         <td>{{if .UpdatedAt}}{{formatTimestamp .UpdatedAt}}{{else}}—{{end}}</td>
                     </tr>
                     {{end}}
@@ -144,7 +135,7 @@ func handleFulltextStatus(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	if batch == "" {
-		http.Error(w, "No full-text verification batch has been loaded yet.", http.StatusNotFound)
+		http.Error(w, "No full-text AI processing batch has been loaded yet.", http.StatusNotFound)
 		return
 	}
 
@@ -163,7 +154,7 @@ func handleFulltextStatus(w http.ResponseWriter, r *http.Request) {
 	fulltextStatus := r.URL.Query().Get("fulltext_status")
 	articles, err := listFulltextArticles(db, batch, reviewStatus, fulltextStatus)
 	if err != nil {
-		http.Error(w, "Failed to list full-text verification articles: "+err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Failed to list full-text AI processing articles: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 

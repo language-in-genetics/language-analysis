@@ -403,7 +403,7 @@ def main() -> int:
         pg_conn.close()
         sqlite_conn.close()
 
-    print(f"Created full-text verification batch {cfg.slug}: {len(rows)} articles from {len(candidate_ids)} candidates.")
+    print(f"Created full-text AI processing batch {cfg.slug}: {len(rows)} articles from {len(candidate_ids)} candidates.")
     print(f"SQLite DB: {sqlite_path}")
     return 0
 
