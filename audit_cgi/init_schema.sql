@@ -119,6 +119,3 @@ CREATE INDEX IF NOT EXISTS fulltext_articles_batch_reviewed_idx
 
 CREATE INDEX IF NOT EXISTS fulltext_articles_batch_status_idx
     ON fulltext_articles (batch_slug, fulltext_status, article_id);
-
-CREATE INDEX IF NOT EXISTS fulltext_articles_ai_status_idx
-    ON fulltext_articles (ai_analysis_status, batch_slug, article_id);
