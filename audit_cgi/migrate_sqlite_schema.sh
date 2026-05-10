@@ -4,8 +4,9 @@
 set -eu
 
 DB="${1:-../db/lig_audit.db}"
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 
-sqlite3 "$DB" < init_schema.sql
+sqlite3 "$DB" < "$SCRIPT_DIR/init_schema.sql"
 
 has_column() {
     table="$1"

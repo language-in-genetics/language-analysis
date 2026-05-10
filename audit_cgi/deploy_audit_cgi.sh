@@ -8,6 +8,7 @@ REMOTE_CGI_DIR="${2:-/var/www/vhosts/lig.symmachus.org/cgi-bin}"
 REMOTE_BUILD_DIR="${3:-/home/gregb/lig-audit-build}"
 REMOTE_DB="${REMOTE_DB:-/var/www/vhosts/lig.symmachus.org/db/lig_audit.db}"
 REMOTE_DB_DIR="$(dirname "$REMOTE_DB")"
+REMOTE_MIGRATION_DIR="${REMOTE_MIGRATION_DIR:-/tmp/lig-audit-migrate}"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
@@ -36,5 +37,8 @@ ssh "$REMOTE_HOST" "
     doas mkdir -p /var/www/vhosts/lig.symmachus.org/htdocs/fulltext_uploads
     doas chown languageingenetics:www /var/www/vhosts/lig.symmachus.org/htdocs/fulltext_uploads
     doas chmod 775 /var/www/vhosts/lig.symmachus.org/htdocs/fulltext_uploads
-    doas -u languageingenetics sh migrate_sqlite_schema.sh '$REMOTE_DB'
+    doas mkdir -p '$REMOTE_MIGRATION_DIR'
+    doas install -o languageingenetics -g daemon -m 644 init_schema.sql '$REMOTE_MIGRATION_DIR/init_schema.sql'
+    doas install -o languageingenetics -g daemon -m 755 migrate_sqlite_schema.sh '$REMOTE_MIGRATION_DIR/migrate_sqlite_schema.sh'
+    doas -u languageingenetics sh '$REMOTE_MIGRATION_DIR/migrate_sqlite_schema.sh' '$REMOTE_DB'
 "
