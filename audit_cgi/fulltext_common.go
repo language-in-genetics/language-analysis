@@ -453,7 +453,7 @@ func fulltextAITermList(article FulltextArticle) string {
 
 func fulltextSummaryLabel(summary FulltextSummary) string {
 	return fmt.Sprintf(
-		"%d reviewed / %d total; %d tracked terminology, %d no tracked terminology",
+		"%d verified / %d total; %d tracked terminology, %d no tracked terminology",
 		summary.ReviewedCount,
 		summary.TotalCount,
 		summary.TerminologyCount,

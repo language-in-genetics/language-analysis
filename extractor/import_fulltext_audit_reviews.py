@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Import full-text audit review state from the merah SQLite database into PostgreSQL.
+Import full-text verification review state from the merah SQLite database into PostgreSQL.
 """
 
 from __future__ import annotations
@@ -72,7 +72,7 @@ def nullable_bool(value):
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Import full-text audit reviews from SQLite into PostgreSQL")
+    parser = argparse.ArgumentParser(description="Import full-text verification reviews from SQLite into PostgreSQL")
     parser.add_argument("--sqlite-db", default="../audit/review_data/lig_audit.db", help="SQLite database path")
     args = parser.parse_args()
 

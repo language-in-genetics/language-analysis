@@ -69,7 +69,7 @@ func handleFulltextSave(w http.ResponseWriter, r *http.Request) {
 		&existingOther,
 	)
 	if err != nil {
-		http.Error(w, "Failed to load existing review state: "+err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Failed to load existing verification state: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -112,11 +112,11 @@ func handleFulltextSave(w http.ResponseWriter, r *http.Request) {
 		  AND article_id = ?
 	`, terminologyPresent, caucasianPresent, whitePresent, europeanPresent, otherPresent, r.FormValue("quoted_evidence"), reviewer, r.FormValue("review_notes"), terminologyPresent, batch, articleID)
 	if err != nil {
-		http.Error(w, "Failed to save full-text review: "+err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Failed to save full-text verification: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
-	target := fmt.Sprintf("/cgi-bin/fulltext-audit.cgi?batch=%s", url.QueryEscape(batch))
+	target := fmt.Sprintf("/cgi-bin/fulltext-verify.cgi?batch=%s", url.QueryEscape(batch))
 	if r.FormValue("action") == "stay" {
 		target = fmt.Sprintf("%s&article_id=%d", target, articleID)
 	}

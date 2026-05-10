@@ -30,7 +30,7 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LIG Full-Text Audit</title>
+    <title>LIG Full-Text Verification</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; background: #f6f7f9; color: #222; }
         .container { max-width: 1240px; margin: 0 auto; padding: 24px; }
@@ -65,7 +65,7 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
     <div class="container">
         <div class="topline">
             <div>
-                <h1>LIG Full-Text Audit</h1>
+                <h1>LIG Full-Text Verification</h1>
                 <div class="meta">Signed in as <strong>{{.RemoteUser}}</strong> · batch <code>{{.Batch.BatchSlug}}</code></div>
             </div>
             <div class="nav">
@@ -76,7 +76,7 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
 
         <div class="card">
             <div class="stats">
-                <div class="stat"><strong>Review progress</strong><br>{{fulltextSummaryLabel .Summary}}<br>{{.Summary.PendingCount}} pending</div>
+                <div class="stat"><strong>Verification progress</strong><br>{{fulltextSummaryLabel .Summary}}<br>{{.Summary.PendingCount}} pending</div>
                 <div class="stat"><strong>Full text</strong><br>{{.Summary.AvailableCount}} available<br>{{.Summary.PendingFetchCount}} pending fetch · {{.Summary.NeedsManualCount}} needs manual</div>
                 <div class="stat"><strong>Unavailable</strong><br>{{.Summary.UnavailableCount}} unavailable<br>{{.Summary.ExtractionFailedCount}} extraction failed</div>
             </div>
@@ -84,23 +84,23 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
 
         <div class="card">
             <div class="nav">
-                {{if gt .PrevArticleID 0}}<a href="/cgi-bin/fulltext-audit.cgi?batch={{.Batch.BatchSlug}}&article_id={{.PrevArticleID}}">Previous</a>{{end}}
-                {{if gt .NextArticleID 0}}<a href="/cgi-bin/fulltext-audit.cgi?batch={{.Batch.BatchSlug}}&article_id={{.NextArticleID}}">Next</a>{{end}}
-                <a href="/cgi-bin/fulltext-audit.cgi?batch={{.Batch.BatchSlug}}">Next pending</a>
+                {{if gt .PrevArticleID 0}}<a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}&article_id={{.PrevArticleID}}">Previous</a>{{end}}
+                {{if gt .NextArticleID 0}}<a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}&article_id={{.NextArticleID}}">Next</a>{{end}}
+                <a href="/cgi-bin/fulltext-verify.cgi?batch={{.Batch.BatchSlug}}">Next pending</a>
                 <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Article.ArticleID}}">Upload full text</a>
             </div>
 
             <div class="pill">full text: {{fulltextStatusDisplay .Article.FulltextStatus}}</div>
             <div class="pill">AI analysis: {{.Article.AIAnalysisStatus}}</div>
             {{if .Article.FulltextSource}}<div class="pill">source: {{.Article.FulltextSource}}</div>{{end}}
-            {{if .CurrentOutcome}}<div class="pill">review result: {{.CurrentOutcome}}</div>{{end}}
+            {{if .CurrentOutcome}}<div class="pill">verification result: {{.CurrentOutcome}}</div>{{end}}
 
             <p class="article-title">{{.Article.Title}}</p>
             <p class="meta">{{.Article.JournalName}} · {{yearLabel .Article.PubYear}} · article {{.Article.ArticleID}}{{if .Article.DOI}} · <a href="https://doi.org/{{.Article.DOI}}" target="_blank" rel="noopener noreferrer">{{.Article.DOI}}</a>{{end}}</p>
 
             {{if .CurrentStatus}}
             <div class="current">
-                Current review: <strong>{{.CurrentStatus}}</strong>{{if .Article.ReviewerUsername}} by {{.Article.ReviewerUsername}}{{end}}{{if .Article.ReviewedAt}} at {{formatTimestamp .Article.ReviewedAt}}{{end}}.
+                Current verification: <strong>{{.CurrentStatus}}</strong>{{if .Article.ReviewerUsername}} by {{.Article.ReviewerUsername}}{{end}}{{if .Article.ReviewedAt}} at {{formatTimestamp .Article.ReviewedAt}}{{end}}.
                 Terms marked: {{fulltextTermList .Article}}
             </div>
             {{end}}
@@ -144,7 +144,7 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
                 <h3>Quoted Evidence</h3>
                 <textarea name="quoted_evidence">{{.Article.QuotedEvidence}}</textarea>
 
-                <h3>Reviewer Notes</h3>
+                <h3>Verification Notes</h3>
                 <textarea name="review_notes">{{.Article.ReviewNotes}}</textarea>
                 <div class="actions">
                     <button class="btn-confirm" type="submit" name="action" value="continue">Save And Continue</button>
@@ -180,7 +180,7 @@ func handleFulltextAudit(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	if batch == "" {
-		http.Error(w, "No full-text audit batch has been loaded yet.", http.StatusNotFound)
+		http.Error(w, "No full-text verification batch has been loaded yet.", http.StatusNotFound)
 		return
 	}
 
@@ -209,13 +209,13 @@ func handleFulltextAudit(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	if articleID == 0 {
-		http.Error(w, "No sampled full-text audit articles found.", http.StatusNotFound)
+		http.Error(w, "No sampled full-text verification articles found.", http.StatusNotFound)
 		return
 	}
 
 	article, err := loadFulltextArticle(db, batch, articleID)
 	if err != nil {
-		http.Error(w, "Failed to load full-text audit article: "+err.Error(), http.StatusInternalServerError)
+		http.Error(w, "Failed to load full-text verification article: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
 
@@ -235,7 +235,7 @@ func handleFulltextAudit(w http.ResponseWriter, r *http.Request) {
 	}
 	remoteUser := os.Getenv("REMOTE_USER")
 	if remoteUser == "" {
-		remoteUser = "authenticated reviewer"
+		remoteUser = "authenticated verifier"
 	}
 
 	data := FulltextAuditPageData{

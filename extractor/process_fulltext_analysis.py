@@ -4,7 +4,7 @@ Process queued full-text uploads from the merah audit SQLite database.
 
 This is intended for the raksasa cron path:
 1. audit/sync_audit_db.sh pulls the live SQLite DB and upload files from merah.
-2. import_fulltext_audit_reviews.py imports current review/upload state to PostgreSQL.
+2. import_fulltext_audit_reviews.py imports current verification/upload state to PostgreSQL.
 3. this script extracts text where needed, runs the OpenAI analysis, and stores
    the result in both SQLite and PostgreSQL.
 """
@@ -452,8 +452,8 @@ def queued_rows(conn: sqlite3.Connection, limit: int) -> list[sqlite3.Row]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Process queued full-text audit uploads")
-    parser.add_argument("--sqlite-db", default="../audit/review_data/lig_audit.db", help="SQLite audit database path")
+    parser = argparse.ArgumentParser(description="Process queued full-text verification uploads")
+    parser.add_argument("--sqlite-db", default="../audit/review_data/lig_audit.db", help="SQLite verification database path")
     parser.add_argument(
         "--openai-api-key",
         default=os.environ.get("OPENAI_API_KEY_FILE", os.path.expanduser("~/.openai.lig.key")),

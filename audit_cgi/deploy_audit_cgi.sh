@@ -21,6 +21,7 @@ ssh "$REMOTE_HOST" "
     CGO_ENABLED=1 /usr/local/bin/go build -o audit-save.cgi audit_save.go common.go
     CGO_ENABLED=1 /usr/local/bin/go build -o audit-status.cgi audit_status.go common.go
     CGO_ENABLED=1 /usr/local/bin/go build -o fulltext-audit.cgi fulltext_audit.go common.go fulltext_common.go
+    CGO_ENABLED=1 /usr/local/bin/go build -o fulltext-verify.cgi fulltext_audit.go common.go fulltext_common.go
     CGO_ENABLED=1 /usr/local/bin/go build -o fulltext-save.cgi fulltext_save.go common.go fulltext_common.go
     CGO_ENABLED=1 /usr/local/bin/go build -o fulltext-status.cgi fulltext_status.go common.go fulltext_common.go
     CGO_ENABLED=1 /usr/local/bin/go build -o fulltext-upload.cgi fulltext_upload.go common.go fulltext_common.go
@@ -29,6 +30,7 @@ ssh "$REMOTE_HOST" "
     doas install -o languageingenetics -g daemon -m 755 audit-save.cgi '$REMOTE_CGI_DIR/audit-save.cgi'
     doas install -o languageingenetics -g daemon -m 755 audit-status.cgi '$REMOTE_CGI_DIR/audit-status.cgi'
     doas install -o languageingenetics -g daemon -m 755 fulltext-audit.cgi '$REMOTE_CGI_DIR/fulltext-audit.cgi'
+    doas install -o languageingenetics -g daemon -m 755 fulltext-verify.cgi '$REMOTE_CGI_DIR/fulltext-verify.cgi'
     doas install -o languageingenetics -g daemon -m 755 fulltext-save.cgi '$REMOTE_CGI_DIR/fulltext-save.cgi'
     doas install -o languageingenetics -g daemon -m 755 fulltext-status.cgi '$REMOTE_CGI_DIR/fulltext-status.cgi'
     doas install -o languageingenetics -g daemon -m 755 fulltext-upload.cgi '$REMOTE_CGI_DIR/fulltext-upload.cgi'
