@@ -69,6 +69,16 @@ else
     log "Warning: Lig audit import failed"
 fi
 
+log "Importing lig full-text audit reviews into PostgreSQL..."
+if (
+    cd extractor
+    uv run import_fulltext_audit_reviews.py --sqlite-db ../audit/review_data/lig_audit.db
+) 2>&1 | tee -a "$LOG_FILE"; then
+    log "Lig full-text audit import completed"
+else
+    log "Warning: Lig full-text audit import failed"
+fi
+
 # Step 1: Check for completed batches and fetch results
 log "Checking for completed batches..."
 cd extractor

@@ -1,0 +1,53 @@
+name: Deploy LIG Audit CGI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "audit_cgi/**"
+      - ".github/workflows/deploy-lig-audit-cgi.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Configure SSH
+        env:
+          MERAH_SSH_HOST: ${{ secrets.MERAH_SSH_HOST }}
+          MERAH_SSH_USER: ${{ secrets.MERAH_SSH_USER }}
+          MERAH_SSH_PORT: ${{ secrets.MERAH_SSH_PORT }}
+          MERAH_SSH_PRIVATE_KEY: ${{ secrets.MERAH_SSH_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$MERAH_SSH_HOST"
+          test -n "$MERAH_SSH_USER"
+          test -n "$MERAH_SSH_PRIVATE_KEY"
+          port="${MERAH_SSH_PORT:-22}"
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$MERAH_SSH_PRIVATE_KEY" > ~/.ssh/merah_lig_deploy
+          chmod 600 ~/.ssh/merah_lig_deploy
+          ssh-keyscan -p "$port" "$MERAH_SSH_HOST" >> ~/.ssh/known_hosts
+          {
+            printf 'Host merah-lig-deploy\n'
+            printf '  HostName %s\n' "$MERAH_SSH_HOST"
+            printf '  User %s\n' "$MERAH_SSH_USER"
+            printf '  Port %s\n' "$port"
+            printf '  IdentityFile ~/.ssh/merah_lig_deploy\n'
+            printf '  IdentitiesOnly yes\n'
+            printf '  StrictHostKeyChecking yes\n'
+          } > ~/.ssh/config
+
+      - name: Build and deploy on merah
+        run: |
+          set -euo pipefail
+          bash audit_cgi/deploy_audit_cgi.sh merah-lig-deploy

@@ -48,3 +48,55 @@ CREATE INDEX IF NOT EXISTS audit_articles_batch_target_label_idx
 
 CREATE INDEX IF NOT EXISTS audit_articles_reviewed_idx
     ON audit_articles (sample_batch, target_confirmed, reviewer_username);
+
+CREATE TABLE IF NOT EXISTS fulltext_batches (
+    batch_slug TEXT PRIMARY KEY,
+    seed INTEGER NOT NULL,
+    sample_size INTEGER NOT NULL,
+    created_at TEXT NOT NULL,
+    created_by TEXT,
+    source_filter TEXT,
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS fulltext_articles (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    batch_slug TEXT NOT NULL REFERENCES fulltext_batches(batch_slug) ON DELETE CASCADE,
+    article_id INTEGER NOT NULL,
+    work_id INTEGER,
+    work_version_id INTEGER,
+    doi TEXT,
+    journal_name TEXT,
+    pub_year INTEGER,
+    title TEXT,
+    abstract TEXT,
+    fulltext_status TEXT NOT NULL DEFAULT 'pending_fetch' CHECK (
+        fulltext_status IN (
+            'pending_fetch',
+            'available',
+            'needs_manual',
+            'unavailable',
+            'extraction_failed'
+        )
+    ),
+    fulltext_source TEXT,
+    fulltext_path TEXT,
+    extracted_text TEXT,
+    terminology_present INTEGER CHECK (terminology_present IN (0, 1)),
+    caucasian_present INTEGER CHECK (caucasian_present IN (0, 1)),
+    white_present INTEGER CHECK (white_present IN (0, 1)),
+    european_present INTEGER CHECK (european_present IN (0, 1)),
+    other_present INTEGER CHECK (other_present IN (0, 1)),
+    quoted_evidence TEXT,
+    reviewer_username TEXT,
+    review_notes TEXT,
+    reviewed_at TEXT,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (batch_slug, article_id)
+);
+
+CREATE INDEX IF NOT EXISTS fulltext_articles_batch_reviewed_idx
+    ON fulltext_articles (batch_slug, terminology_present, reviewer_username);
+
+CREATE INDEX IF NOT EXISTS fulltext_articles_batch_status_idx
+    ON fulltext_articles (batch_slug, fulltext_status, article_id);

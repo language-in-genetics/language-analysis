@@ -179,6 +179,35 @@ The intended split is:
 - live review UI and public audit status on `merah` SQLite
 - canonical reporting and dashboard summaries in PostgreSQL
 
+### Full-Text Audit
+
+The same `merah` SQLite review database also supports a full-article audit track:
+
+- Create a reproducible 100-article batch through the end of 2025:
+  - `cd extractor && uv run create_fulltext_audit_batch.py --sample-size 100 --max-year 2025 --batch-slug fulltext-2025-seed42 --notes "Full-article validation sample through 2025"`
+- Reviewer UI:
+  - `/cgi-bin/fulltext-audit.cgi` requires login
+  - `/cgi-bin/fulltext-status.cgi` is public status
+- Import the SQLite review state into PostgreSQL:
+  - `cd extractor && uv run import_fulltext_audit_reviews.py --sqlite-db ../audit/review_data/lig_audit.db`
+- Push a newly seeded local SQLite database to `merah`:
+  - `./audit/sync_audit_db.sh`
+  - `cd extractor && uv run create_fulltext_audit_batch.py --sample-size 100 --max-year 2025 --batch-slug fulltext-2025-seed42`
+  - `./audit/push_audit_db.sh`
+
+The full-text tables track article selection, full-text acquisition status, extracted text/path metadata, reviewer decisions, quoted evidence, and term-level flags. The normal `cronscript.sh` syncs the `merah` SQLite database back to `raksasa` and imports both title/abstract and full-text audit results.
+
+### CGI Deployment
+
+CGI deployment is handled by GitHub Actions in `.github/workflows/deploy-lig-audit-cgi.yml`. The workflow SSHes to `merah`, copies the `audit_cgi/` source, builds the Go CGI binaries on `merah`, installs them under `/var/www/vhosts/lig.symmachus.org/cgi-bin`, and applies the SQLite schema migrations.
+
+Required GitHub secrets:
+
+- `MERAH_SSH_HOST`
+- `MERAH_SSH_USER`
+- `MERAH_SSH_PRIVATE_KEY`
+- `MERAH_SSH_PORT` (optional; defaults to `22`)
+
 ## Documentation
 
 See [CLAUDE.md](CLAUDE.md) for detailed project documentation, including:
