@@ -47,9 +47,23 @@ ssh -o BatchMode=yes "$REMOTE_HOST" "rm -f '$REMOTE_SNAPSHOT' 2>/dev/null || doa
 LOCAL_SIZE=$(ls -lh "$LOCAL_DB" | awk '{print $5}')
 AUDIT_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM audit_articles WHERE target_confirmed IS NOT NULL;")
 if sqlite3 "$LOCAL_DB" "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'fulltext_articles' LIMIT 1;" | grep -q 1; then
-    FULLTEXT_UPLOADED_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM fulltext_articles WHERE fulltext_status = 'available';")
+    FULLTEXT_UPLOADED_COUNT=$(sqlite3 "$LOCAL_DB" "
+        SELECT COUNT(*)
+        FROM fulltext_articles a
+        WHERE a.fulltext_status = 'available'
+          AND EXISTS (
+              SELECT 1 FROM fulltext_batches b WHERE b.batch_slug = a.batch_slug
+          );
+    ")
     if sqlite3 "$LOCAL_DB" "PRAGMA table_info(fulltext_articles);" | awk -F'|' '{print $2}' | grep -qx ai_analysis_status; then
-        FULLTEXT_AI_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM fulltext_articles WHERE ai_analysis_status = 'processed';")
+        FULLTEXT_AI_COUNT=$(sqlite3 "$LOCAL_DB" "
+            SELECT COUNT(*)
+            FROM fulltext_articles a
+            WHERE a.ai_analysis_status = 'processed'
+              AND EXISTS (
+                  SELECT 1 FROM fulltext_batches b WHERE b.batch_slug = a.batch_slug
+              );
+        ")
     else
         FULLTEXT_AI_COUNT=0
     fi
