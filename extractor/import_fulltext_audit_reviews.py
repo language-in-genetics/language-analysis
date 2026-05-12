@@ -103,6 +103,7 @@ def main() -> int:
     imported_articles = 0
     imported_reviews = 0
     cleared_reviews = 0
+    skipped_orphan_articles = 0
 
     try:
         sqlite_batches = sqlite_conn.execute(
@@ -203,7 +204,10 @@ def main() -> int:
         ).fetchall()
 
         for row in sqlite_articles:
-            batch_id = batch_id_by_slug[str(row["batch_slug"])]
+            batch_id = batch_id_by_slug.get(str(row["batch_slug"]))
+            if batch_id is None:
+                skipped_orphan_articles += 1
+                continue
             pg_cur.execute(
                 """
                 INSERT INTO languageingenetics.fulltext_audit_articles AS existing (
@@ -570,7 +574,8 @@ def main() -> int:
 
     print(
         f"Imported {imported_batches} full-text batches, {imported_articles} articles, "
-        f"upserted {imported_reviews} reviews, cleared {cleared_reviews} PostgreSQL reviews from {sqlite_path}."
+        f"upserted {imported_reviews} reviews, cleared {cleared_reviews} PostgreSQL reviews, "
+        f"skipped {skipped_orphan_articles} orphan articles from {sqlite_path}."
     )
     return 0
 

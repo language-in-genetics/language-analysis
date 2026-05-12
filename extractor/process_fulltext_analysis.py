@@ -459,6 +459,11 @@ def queued_rows(conn: sqlite3.Connection, limit: int) -> list[sqlite3.Row]:
             extracted_text
         FROM fulltext_articles
         WHERE ai_analysis_status = 'queued'
+          AND EXISTS (
+              SELECT 1
+              FROM fulltext_batches b
+              WHERE b.batch_slug = fulltext_articles.batch_slug
+          )
           AND (
               TRIM(COALESCE(extracted_text, '')) <> ''
               OR LENGTH(COALESCE(uploaded_blob, X'')) > 0

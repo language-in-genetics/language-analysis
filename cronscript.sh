@@ -53,8 +53,10 @@ log "Starting automated processing run"
 
 # Step 0: Sync local audit cache from merah and import into PostgreSQL
 log "Syncing lig audit database from merah..."
+AUDIT_SYNC_OK=0
 if ./audit/sync_audit_db.sh 2>&1 | tee -a "$LOG_FILE"; then
     log "Lig audit database sync completed"
+    AUDIT_SYNC_OK=1
 else
     log "Warning: Lig audit database sync failed"
 fi
@@ -90,6 +92,17 @@ if (
     log "Queued full-text upload processing completed"
 else
     log "Warning: queued full-text upload processing had errors"
+fi
+
+if [[ "$AUDIT_SYNC_OK" -eq 1 ]]; then
+    log "Pushing processed lig audit database back to merah..."
+    if ./audit/push_audit_db.sh 2>&1 | tee -a "$LOG_FILE"; then
+        log "Processed lig audit database push completed"
+    else
+        log "Warning: processed lig audit database push failed"
+    fi
+else
+    log "Skipping lig audit database push because the initial sync failed"
 fi
 
 # Step 1: Check for completed batches and fetch results
