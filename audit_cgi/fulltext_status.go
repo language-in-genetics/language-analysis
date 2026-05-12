@@ -101,7 +101,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
                         <td><a href="/cgi-bin/fulltext-status.cgi?batch={{.BatchSlug}}&article_id={{.ArticleID}}">{{.Title}}</a><div class="small">article {{.ArticleID}}</div></td>
                         <td>{{.JournalName}}<div class="small">{{yearLabel .PubYear}}</div></td>
 						<td>{{fulltextStatusDisplay .FulltextStatus}}{{if .FulltextSource}}<div class="small">{{.FulltextSource}}</div>{{end}}{{if .UploadedFilename}}<div class="small">{{.UploadedFilename}}</div>{{end}}</td>
-                        <td>{{.AIAnalysisStatus}}{{if eq .AIAnalysisStatus "processed"}}<div class="small">{{fulltextAITermList .}}</div>{{end}}</td>
+                        <td>{{.AIAnalysisStatus}}{{if eq .AIAnalysisStatus "processed"}}<div class="small">{{fulltextAITermList .FulltextArticle}}</div>{{end}}</td>
                         <td>{{if .UpdatedAt}}{{formatTimestamp .UpdatedAt}}{{else}}—{{end}}</td>
                     </tr>
                     {{end}}
