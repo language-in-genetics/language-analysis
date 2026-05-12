@@ -62,7 +62,6 @@ type FulltextArticle struct {
 	Abstract            string
 	FulltextStatus      string
 	FulltextSource      string
-	FulltextPath        string
 	UploadedFilename    string
 	UploadedContentType string
 	UploadedSize        int64
@@ -222,7 +221,6 @@ func scanFulltextArticle(scanner interface {
 		&article.Abstract,
 		&article.FulltextStatus,
 		&article.FulltextSource,
-		&article.FulltextPath,
 		&article.UploadedFilename,
 		&article.UploadedContentType,
 		&uploadedSize,
@@ -298,7 +296,6 @@ func fulltextArticleSelectSQL() string {
 			COALESCE(abstract, ''),
 			fulltext_status,
 			COALESCE(fulltext_source, ''),
-			COALESCE(fulltext_path, ''),
 			COALESCE(uploaded_filename, ''),
 			COALESCE(uploaded_content_type, ''),
 			uploaded_size,

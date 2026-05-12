@@ -128,7 +128,6 @@ CREATE TABLE IF NOT EXISTS languageingenetics.fulltext_audit_articles (
         )
     ),
     fulltext_source TEXT,
-    fulltext_path TEXT,
     uploaded_filename TEXT,
     uploaded_content_type TEXT,
     uploaded_size INTEGER,
@@ -237,7 +236,6 @@ SELECT
     s.abstract,
     s.fulltext_status,
     s.fulltext_source,
-    s.fulltext_path,
     s.uploaded_filename,
     s.uploaded_content_type,
     s.uploaded_size,

@@ -170,7 +170,6 @@ def main() -> int:
                 abstract,
                 fulltext_status,
                 fulltext_source,
-                fulltext_path,
                 uploaded_filename,
                 uploaded_content_type,
                 uploaded_size,
@@ -219,7 +218,6 @@ def main() -> int:
                     abstract,
                     fulltext_status,
                     fulltext_source,
-                    fulltext_path,
                     uploaded_filename,
                     uploaded_content_type,
                     uploaded_size,
@@ -238,7 +236,7 @@ def main() -> int:
                     ai_error,
                     ai_processed_at
                 )
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (batch_id, article_id) DO UPDATE SET
                     work_id = EXCLUDED.work_id,
                     work_version_id = EXCLUDED.work_version_id,
@@ -249,7 +247,6 @@ def main() -> int:
                     abstract = EXCLUDED.abstract,
                     fulltext_status = EXCLUDED.fulltext_status,
                     fulltext_source = EXCLUDED.fulltext_source,
-                    fulltext_path = EXCLUDED.fulltext_path,
                     uploaded_filename = EXCLUDED.uploaded_filename,
                     uploaded_content_type = EXCLUDED.uploaded_content_type,
                     uploaded_size = EXCLUDED.uploaded_size,
@@ -259,11 +256,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -279,11 +274,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -299,11 +292,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -319,11 +310,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -339,11 +328,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -359,11 +346,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -379,11 +364,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -399,11 +382,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -419,11 +400,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -439,11 +418,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -459,11 +436,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -479,11 +454,9 @@ def main() -> int:
                         WHEN existing.ai_analysis_status = 'processed'
                          AND EXCLUDED.ai_analysis_status <> 'processed'
                          AND (
-                            COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
-                            OR (
-                                COALESCE(EXCLUDED.extracted_text, '') = ''
-                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
-                                AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            (
+                                COALESCE(EXCLUDED.extracted_text, '') <> ''
+                                AND COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             )
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
@@ -509,7 +482,6 @@ def main() -> int:
                     row["abstract"],
                     row["fulltext_status"],
                     row["fulltext_source"],
-                    row["fulltext_path"],
                     row["uploaded_filename"],
                     row["uploaded_content_type"],
                     row["uploaded_size"],

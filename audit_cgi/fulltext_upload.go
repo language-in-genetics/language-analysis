@@ -67,7 +67,6 @@ var fulltextUploadTemplate = template.Must(template.New("fulltext-upload").Funcs
             <p class="meta">{{.Article.JournalName}} · {{yearLabel .Article.PubYear}} · article {{.Article.ArticleID}}{{if .Article.DOI}} · <a href="https://doi.org/{{.Article.DOI}}" target="_blank" rel="noopener noreferrer">{{.Article.DOI}}</a>{{end}}</p>
             <p class="small">Current full-text status: <strong>{{fulltextStatusDisplay .Article.FulltextStatus}}</strong>. AI analysis status: <strong>{{.Article.AIAnalysisStatus}}</strong>{{if eq .Article.AIAnalysisStatus "processed"}} · AI terms: {{fulltextAITermList .Article}}{{end}}{{if .Article.AIError}} · last error: {{.Article.AIError}}{{end}}</p>
             {{if .Article.UploadedFilename}}<p class="small">Stored upload: {{.Article.UploadedFilename}}{{if gt .Article.UploadedSize 0}} · {{.Article.UploadedSize}} bytes{{end}}{{if .Article.UploadedAt}} · {{formatTimestamp .Article.UploadedAt}}{{end}}</p>{{end}}
-            {{if .Article.FulltextPath}}<p class="small">Legacy stored file: <a href="{{.Article.FulltextPath}}" target="_blank" rel="noopener noreferrer">{{.Article.FulltextPath}}</a></p>{{end}}
             <h3>Abstract</h3>
             <div class="abstract">{{if .Article.Abstract}}{{.Article.Abstract}}{{else}}No abstract available.{{end}}</div>
         </div>
@@ -265,7 +264,6 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 		SET
 			fulltext_status = ?,
 			fulltext_source = ?,
-			fulltext_path = CASE WHEN ? = 1 THEN '' ELSE fulltext_path END,
 			uploaded_filename = CASE WHEN ? = 1 THEN ? ELSE uploaded_filename END,
 			uploaded_content_type = CASE WHEN ? = 1 THEN ? ELSE uploaded_content_type END,
 			uploaded_size = CASE WHEN ? = 1 THEN ? ELSE uploaded_size END,
@@ -279,7 +277,6 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 			updated_at = CURRENT_TIMESTAMP
 		WHERE batch_slug = ? AND article_id = ?
 	`, fulltextStatus, fulltextSource,
-		hasUploadedFileInt,
 		hasUploadedFileInt, uploadedFilename,
 		hasUploadedFileInt, uploadedContentType,
 		hasUploadedFileInt, uploadedSize,

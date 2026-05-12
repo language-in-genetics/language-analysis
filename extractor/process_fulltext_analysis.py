@@ -167,43 +167,10 @@ def upload_bytes(value) -> bytes:
     return bytes(value)
 
 
-def local_path_for_upload(sqlite_path: Path, fulltext_path: str | None) -> Path | None:
-    if not fulltext_path:
-        return None
-    clean_path = str(fulltext_path).lstrip("/")
-    if not clean_path.startswith("fulltext_uploads/"):
-        return None
-    return sqlite_path.parent / clean_path
-
-
 def strip_html(raw: str) -> str:
     extractor = HTMLTextExtractor()
     extractor.feed(raw)
     return html.unescape(extractor.text())
-
-
-def extract_file_text(path: Path) -> str:
-    suffix = path.suffix.lower()
-    if suffix == ".pdf":
-        if shutil.which("pdftotext") is None:
-            raise RuntimeError("pdftotext is not installed on this host")
-        result = subprocess.run(
-            ["pdftotext", "-layout", str(path), "-"],
-            check=True,
-            text=True,
-            capture_output=True,
-            timeout=180,
-        )
-        return result.stdout
-    raw = path.read_bytes()
-    text = raw.decode("utf-8", errors="replace")
-    if suffix in {".html", ".htm", ".xml"}:
-        return strip_html(text)
-    if suffix in {".txt", ".text", ".md", ".markdown"}:
-        return text
-    if "\x00" in text[:2048]:
-        raise RuntimeError(f"unsupported binary upload type: {suffix or 'no extension'}")
-    return text
 
 
 def extract_upload_text(filename: str | None, content_type: str | None, data: bytes) -> str:
@@ -234,19 +201,14 @@ def extract_upload_text(filename: str | None, content_type: str | None, data: by
     return text
 
 
-def full_text_for_row(sqlite_path: Path, row: sqlite3.Row) -> str:
+def full_text_for_row(row: sqlite3.Row) -> str:
     existing = sanitize_string(row["extracted_text"]).strip()
     if existing:
         return existing
     blob = upload_bytes(row["uploaded_blob"])
     if blob:
         return sanitize_string(extract_upload_text(row["uploaded_filename"], row["uploaded_content_type"], blob)).strip()
-    local_path = local_path_for_upload(sqlite_path, row["fulltext_path"])
-    if local_path is None:
-        raise RuntimeError("queued article has no extracted text and no local upload path")
-    if not local_path.exists():
-        raise RuntimeError(f"uploaded file was not synced locally: {local_path}")
-    return sanitize_string(extract_file_text(local_path)).strip()
+    raise RuntimeError("queued article has no extracted text and no uploaded blob")
 
 
 def make_prompt(row: sqlite3.Row, full_text: str, max_chars: int) -> str:
@@ -355,7 +317,6 @@ def load_pg_processed_result(cur, row: sqlite3.Row) -> dict | None:
             a.ai_error,
             a.ai_processed_at,
             a.extracted_text,
-            a.fulltext_path,
             a.uploaded_filename,
             a.uploaded_content_type,
             a.uploaded_size
@@ -382,7 +343,7 @@ def same_processed_source(row: sqlite3.Row, result: dict) -> bool:
             sanitize_string(row["uploaded_filename"]) == sanitize_string(result.get("uploaded_filename"))
             and int(row["uploaded_size"] or 0) == int(result.get("uploaded_size") or 0)
         )
-    return sanitize_string(row["fulltext_path"]) == sanitize_string(result.get("fulltext_path"))
+    return False
 
 
 def update_sqlite_from_pg_processed(conn: sqlite3.Connection, row: sqlite3.Row, result: dict) -> None:
@@ -491,7 +452,6 @@ def queued_rows(conn: sqlite3.Connection, limit: int) -> list[sqlite3.Row]:
             article_id,
             title,
             abstract,
-            fulltext_path,
             uploaded_filename,
             uploaded_content_type,
             uploaded_size,
@@ -502,7 +462,6 @@ def queued_rows(conn: sqlite3.Connection, limit: int) -> list[sqlite3.Row]:
           AND (
               TRIM(COALESCE(extracted_text, '')) <> ''
               OR LENGTH(COALESCE(uploaded_blob, X'')) > 0
-              OR TRIM(COALESCE(fulltext_path, '')) <> ''
           )
         ORDER BY datetime(updated_at), batch_slug, article_id
         LIMIT ?
@@ -565,7 +524,7 @@ def main() -> int:
                     update_sqlite_from_pg_processed(sqlite_conn, row, existing)
                     print(f"Already processed in PostgreSQL; refreshed local SQLite for {label}")
                     continue
-                full_text = full_text_for_row(sqlite_path, row)
+                full_text = full_text_for_row(row)
                 if not full_text:
                     raise RuntimeError("extracted full text was empty")
                 arguments, usage = analyze_article(client, args.model, row, full_text, args.max_chars)

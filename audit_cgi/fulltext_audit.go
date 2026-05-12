@@ -109,8 +109,7 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
 
 			<h3>Full Article Text</h3>
 			{{if .Article.UploadedFilename}}<p class="small">Stored upload: {{.Article.UploadedFilename}}{{if gt .Article.UploadedSize 0}} · {{.Article.UploadedSize}} bytes{{end}}{{if .Article.UploadedAt}} · {{formatTimestamp .Article.UploadedAt}}{{end}}</p>{{end}}
-			{{if .Article.FulltextPath}}<p class="small">Stored text/PDF: <a href="{{.Article.FulltextPath}}" target="_blank" rel="noopener noreferrer">{{.Article.FulltextPath}}</a></p>{{end}}
-            {{if .Article.ExtractedText}}
+			{{if .Article.ExtractedText}}
                 <div class="fulltext">{{.Article.ExtractedText}}</div>
             {{else}}
                 <p class="small">No full text has been uploaded for AI processing yet. Use the upload link above to paste article text or upload a PDF/text/HTML file.</p>
