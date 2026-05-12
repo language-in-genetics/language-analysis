@@ -23,6 +23,14 @@ add_column() {
     fi
 }
 
+drop_column() {
+    table="$1"
+    column="$2"
+    if has_column "$table" "$column"; then
+        sqlite3 "$DB" "ALTER TABLE $table DROP COLUMN $column;"
+    fi
+}
+
 add_column fulltext_articles ai_analysis_status "TEXT NOT NULL DEFAULT 'not_queued'"
 add_column fulltext_articles ai_caucasian "INTEGER CHECK (ai_caucasian IN (0, 1))"
 add_column fulltext_articles ai_white "INTEGER CHECK (ai_white IN (0, 1))"
@@ -40,5 +48,6 @@ add_column fulltext_articles uploaded_content_type "TEXT"
 add_column fulltext_articles uploaded_size "INTEGER"
 add_column fulltext_articles uploaded_blob "BLOB"
 add_column fulltext_articles uploaded_at "TEXT"
+drop_column fulltext_articles fulltext_path
 
 sqlite3 "$DB" "CREATE INDEX IF NOT EXISTS fulltext_articles_ai_status_idx ON fulltext_articles (ai_analysis_status, batch_slug, article_id);"

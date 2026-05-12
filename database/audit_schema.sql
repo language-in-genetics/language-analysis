@@ -195,6 +195,11 @@ ALTER TABLE languageingenetics.fulltext_audit_articles
 ALTER TABLE languageingenetics.fulltext_audit_articles
     ADD COLUMN IF NOT EXISTS uploaded_at TIMESTAMPTZ;
 
+DROP VIEW IF EXISTS languageingenetics.fulltext_audit_status_view;
+
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    DROP COLUMN IF EXISTS fulltext_path;
+
 CREATE INDEX IF NOT EXISTS fulltext_audit_articles_ai_status_idx
     ON languageingenetics.fulltext_audit_articles (ai_analysis_status, batch_id, article_id);
 
