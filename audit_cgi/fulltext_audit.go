@@ -87,10 +87,11 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
                 <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Article.ArticleID}}">Upload this paper for AI</a>
             </div>
 
-            <div class="pill">full text: {{fulltextStatusDisplay .Article.FulltextStatus}}</div>
-            <div class="pill">AI analysis: {{.Article.AIAnalysisStatus}}</div>
-            {{if .Article.FulltextSource}}<div class="pill">source: {{.Article.FulltextSource}}</div>{{end}}
-            {{if eq .Article.AIAnalysisStatus "processed"}}<div class="pill">AI terms: {{fulltextAITermList .Article}}</div>{{end}}
+			<div class="pill">full text: {{fulltextStatusDisplay .Article.FulltextStatus}}</div>
+			<div class="pill">AI analysis: {{.Article.AIAnalysisStatus}}</div>
+			{{if .Article.FulltextSource}}<div class="pill">source: {{.Article.FulltextSource}}</div>{{end}}
+			{{if .Article.UploadedFilename}}<div class="pill">upload: {{.Article.UploadedFilename}}</div>{{end}}
+			{{if eq .Article.AIAnalysisStatus "processed"}}<div class="pill">AI terms: {{fulltextAITermList .Article}}</div>{{end}}
 
             <p class="article-title">{{.Article.Title}}</p>
             <p class="meta">{{.Article.JournalName}} · {{yearLabel .Article.PubYear}} · article {{.Article.ArticleID}}{{if .Article.DOI}} · <a href="https://doi.org/{{.Article.DOI}}" target="_blank" rel="noopener noreferrer">{{.Article.DOI}}</a>{{end}}</p>
@@ -106,8 +107,9 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
             <h3>Abstract</h3>
             <div class="abstract">{{if .Article.Abstract}}{{.Article.Abstract}}{{else}}No abstract available.{{end}}</div>
 
-            <h3>Full Article Text</h3>
-            {{if .Article.FulltextPath}}<p class="small">Stored text/PDF: <a href="{{.Article.FulltextPath}}" target="_blank" rel="noopener noreferrer">{{.Article.FulltextPath}}</a></p>{{end}}
+			<h3>Full Article Text</h3>
+			{{if .Article.UploadedFilename}}<p class="small">Stored upload: {{.Article.UploadedFilename}}{{if gt .Article.UploadedSize 0}} · {{.Article.UploadedSize}} bytes{{end}}{{if .Article.UploadedAt}} · {{formatTimestamp .Article.UploadedAt}}{{end}}</p>{{end}}
+			{{if .Article.FulltextPath}}<p class="small">Stored text/PDF: <a href="{{.Article.FulltextPath}}" target="_blank" rel="noopener noreferrer">{{.Article.FulltextPath}}</a></p>{{end}}
             {{if .Article.ExtractedText}}
                 <div class="fulltext">{{.Article.ExtractedText}}</div>
             {{else}}

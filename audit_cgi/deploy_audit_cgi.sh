@@ -26,6 +26,12 @@ ssh "$REMOTE_HOST" "
     CGO_ENABLED=1 /usr/local/bin/go build -o fulltext-status.cgi fulltext_status.go common.go fulltext_common.go
     CGO_ENABLED=1 /usr/local/bin/go build -o fulltext-upload.cgi fulltext_upload.go common.go fulltext_common.go
     doas mkdir -p '$REMOTE_CGI_DIR' '$REMOTE_DB_DIR' /var/www/vhosts/lig.symmachus.org/etc
+    doas chown languageingenetics:www '$REMOTE_DB_DIR'
+    doas chmod 775 '$REMOTE_DB_DIR'
+    doas mkdir -p '$REMOTE_MIGRATION_DIR'
+    doas install -o languageingenetics -g daemon -m 644 init_schema.sql '$REMOTE_MIGRATION_DIR/init_schema.sql'
+    doas install -o languageingenetics -g daemon -m 755 migrate_sqlite_schema.sh '$REMOTE_MIGRATION_DIR/migrate_sqlite_schema.sh'
+    doas -u languageingenetics sh '$REMOTE_MIGRATION_DIR/migrate_sqlite_schema.sh' '$REMOTE_DB'
     doas install -o languageingenetics -g daemon -m 755 audit.cgi '$REMOTE_CGI_DIR/audit.cgi'
     doas install -o languageingenetics -g daemon -m 755 audit-save.cgi '$REMOTE_CGI_DIR/audit-save.cgi'
     doas install -o languageingenetics -g daemon -m 755 audit-status.cgi '$REMOTE_CGI_DIR/audit-status.cgi'
@@ -34,13 +40,4 @@ ssh "$REMOTE_HOST" "
     doas install -o languageingenetics -g daemon -m 755 fulltext-save.cgi '$REMOTE_CGI_DIR/fulltext-save.cgi'
     doas install -o languageingenetics -g daemon -m 755 fulltext-status.cgi '$REMOTE_CGI_DIR/fulltext-status.cgi'
     doas install -o languageingenetics -g daemon -m 755 fulltext-upload.cgi '$REMOTE_CGI_DIR/fulltext-upload.cgi'
-    doas chown languageingenetics:www '$REMOTE_DB_DIR'
-    doas chmod 775 '$REMOTE_DB_DIR'
-    doas mkdir -p /var/www/vhosts/lig.symmachus.org/htdocs/fulltext_uploads
-    doas chown languageingenetics:www /var/www/vhosts/lig.symmachus.org/htdocs/fulltext_uploads
-    doas chmod 775 /var/www/vhosts/lig.symmachus.org/htdocs/fulltext_uploads
-    doas mkdir -p '$REMOTE_MIGRATION_DIR'
-    doas install -o languageingenetics -g daemon -m 644 init_schema.sql '$REMOTE_MIGRATION_DIR/init_schema.sql'
-    doas install -o languageingenetics -g daemon -m 755 migrate_sqlite_schema.sh '$REMOTE_MIGRATION_DIR/migrate_sqlite_schema.sh'
-    doas -u languageingenetics sh '$REMOTE_MIGRATION_DIR/migrate_sqlite_schema.sh' '$REMOTE_DB'
 "

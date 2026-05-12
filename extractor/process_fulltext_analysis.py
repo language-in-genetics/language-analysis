@@ -3,7 +3,7 @@
 Process queued full-text uploads from the merah audit SQLite database.
 
 This is intended for the raksasa cron path:
-1. audit/sync_audit_db.sh pulls the live SQLite DB and upload files from merah.
+1. audit/sync_audit_db.sh pulls a backup of the live SQLite DB from merah.
 2. import_fulltext_audit_reviews.py imports current upload and AI state to PostgreSQL.
 3. this script extracts text where needed, runs the OpenAI analysis, and stores
    the result in both SQLite and PostgreSQL.
@@ -19,6 +19,7 @@ import shutil
 import sqlite3
 import subprocess
 import sys
+import tempfile
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -120,6 +121,11 @@ def ensure_sqlite_ai_columns(conn: sqlite3.Connection) -> None:
         "ai_completion_tokens": "INTEGER",
         "ai_error": "TEXT",
         "ai_processed_at": "TEXT",
+        "uploaded_filename": "TEXT",
+        "uploaded_content_type": "TEXT",
+        "uploaded_size": "INTEGER",
+        "uploaded_blob": "BLOB",
+        "uploaded_at": "TEXT",
     }
     for column, definition in additions.items():
         if column not in columns:
@@ -149,6 +155,16 @@ def sqlite_bool(value: bool | None):
 
 def now_utc() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def upload_bytes(value) -> bytes:
+    if value is None:
+        return b""
+    if isinstance(value, bytes):
+        return value
+    if isinstance(value, memoryview):
+        return value.tobytes()
+    return bytes(value)
 
 
 def local_path_for_upload(sqlite_path: Path, fulltext_path: str | None) -> Path | None:
@@ -190,10 +206,41 @@ def extract_file_text(path: Path) -> str:
     return text
 
 
+def extract_upload_text(filename: str | None, content_type: str | None, data: bytes) -> str:
+    suffix = Path(filename or "").suffix.lower()
+    normalized_type = sanitize_string(content_type).lower()
+    if suffix == ".pdf" or normalized_type == "application/pdf":
+        if shutil.which("pdftotext") is None:
+            raise RuntimeError("pdftotext is not installed on this host")
+        suffix = ".pdf"
+        with tempfile.NamedTemporaryFile(suffix=suffix) as tmp:
+            tmp.write(data)
+            tmp.flush()
+            result = subprocess.run(
+                ["pdftotext", "-layout", tmp.name, "-"],
+                check=True,
+                text=True,
+                capture_output=True,
+                timeout=180,
+            )
+        return result.stdout
+    text = data.decode("utf-8", errors="replace")
+    if suffix in {".html", ".htm", ".xml"} or normalized_type in {"text/html", "application/xhtml+xml", "application/xml", "text/xml"}:
+        return strip_html(text)
+    if suffix in {".txt", ".text", ".md", ".markdown"} or normalized_type.startswith("text/"):
+        return text
+    if "\x00" in text[:2048]:
+        raise RuntimeError(f"unsupported binary upload type: {suffix or normalized_type or 'unknown'}")
+    return text
+
+
 def full_text_for_row(sqlite_path: Path, row: sqlite3.Row) -> str:
     existing = sanitize_string(row["extracted_text"]).strip()
     if existing:
         return existing
+    blob = upload_bytes(row["uploaded_blob"])
+    if blob:
+        return sanitize_string(extract_upload_text(row["uploaded_filename"], row["uploaded_content_type"], blob)).strip()
     local_path = local_path_for_upload(sqlite_path, row["fulltext_path"])
     if local_path is None:
         raise RuntimeError("queued article has no extracted text and no local upload path")
@@ -308,7 +355,10 @@ def load_pg_processed_result(cur, row: sqlite3.Row) -> dict | None:
             a.ai_error,
             a.ai_processed_at,
             a.extracted_text,
-            a.fulltext_path
+            a.fulltext_path,
+            a.uploaded_filename,
+            a.uploaded_content_type,
+            a.uploaded_size
         FROM languageingenetics.fulltext_audit_articles a
         JOIN languageingenetics.fulltext_audit_batches b
           ON b.id = a.batch_id
@@ -327,6 +377,11 @@ def same_processed_source(row: sqlite3.Row, result: dict) -> bool:
     processed_text = sanitize_string(result.get("extracted_text", "")).strip()
     if local_text:
         return local_text == processed_text
+    if upload_bytes(row["uploaded_blob"]):
+        return (
+            sanitize_string(row["uploaded_filename"]) == sanitize_string(result.get("uploaded_filename"))
+            and int(row["uploaded_size"] or 0) == int(result.get("uploaded_size") or 0)
+        )
     return sanitize_string(row["fulltext_path"]) == sanitize_string(result.get("fulltext_path"))
 
 
@@ -437,11 +492,16 @@ def queued_rows(conn: sqlite3.Connection, limit: int) -> list[sqlite3.Row]:
             title,
             abstract,
             fulltext_path,
+            uploaded_filename,
+            uploaded_content_type,
+            uploaded_size,
+            uploaded_blob,
             extracted_text
         FROM fulltext_articles
         WHERE ai_analysis_status = 'queued'
           AND (
               TRIM(COALESCE(extracted_text, '')) <> ''
+              OR LENGTH(COALESCE(uploaded_blob, X'')) > 0
               OR TRIM(COALESCE(fulltext_path, '')) <> ''
           )
         ORDER BY datetime(updated_at), batch_slug, article_id

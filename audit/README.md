@@ -27,7 +27,7 @@ The intended split is:
 
 - `merah` SQLite for the live review UI and the public audit-status pages.
 - `merah` CGI for human full-paper uploads into the full-text AI queue.
-- `raksasa` cron for pulling uploaded files, extracting text, and running AI analysis.
+- `raksasa` cron for pulling a SQLite backup, extracting text from uploaded blobs, and running AI analysis.
 - PostgreSQL for canonical reporting, dashboard summaries, and anything cross-host or analysis-heavy.
 
 That keeps the reviewer-facing pages immediate without making the main project reporting depend on a live CGI-hosted SQLite query path.
@@ -47,7 +47,7 @@ The audit batch generator and reviewer UI use the same target labels throughout:
 The full-text track uses the same SQLite database on `merah`, but the human task is upload, not manual terminology coding. Humans upload or paste a full journal article, and the `raksasa` cron job extracts text where needed and sends the full article text to AI for terminology analysis.
 
 - `fulltext_batches`: reproducible full-article sample batches.
-- `fulltext_articles`: article metadata, full-text acquisition status, uploaded file path, extracted text, AI analysis status, AI terminology flags, and upload notes.
+- `fulltext_articles`: article metadata, full-text acquisition status, uploaded PDF/text/HTML blobs, extracted text, AI analysis status, AI terminology flags, and upload notes.
 
 The corresponding canonical PostgreSQL tables are created by [database/audit_schema.sql](/Users/gregb/Documents/devel/Word-Frequency-Analysis-/database/audit_schema.sql):
 
@@ -76,4 +76,4 @@ cd ..
 ./audit/push_audit_db.sh
 ```
 
-The nightly `raksasa` cron path pulls a SQLite backup and uploaded full-text files from `merah`, processes queued full-text uploads, then imports both the title/abstract audit and the full-text AI state into PostgreSQL.
+The nightly `raksasa` cron path pulls a SQLite backup from `merah`, processes queued full-text uploads from the copied database, then imports both the title/abstract audit and the full-text AI state into PostgreSQL.

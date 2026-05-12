@@ -74,6 +74,11 @@ def ensure_sqlite_schema(conn: sqlite3.Connection) -> None:
         "ai_completion_tokens": "INTEGER",
         "ai_error": "TEXT",
         "ai_processed_at": "TEXT",
+        "uploaded_filename": "TEXT",
+        "uploaded_content_type": "TEXT",
+        "uploaded_size": "INTEGER",
+        "uploaded_blob": "BLOB",
+        "uploaded_at": "TEXT",
     }
     for column, definition in additions.items():
         if column not in columns:

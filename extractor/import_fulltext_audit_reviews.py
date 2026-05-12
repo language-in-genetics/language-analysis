@@ -52,6 +52,11 @@ def ensure_sqlite_ai_columns(conn: sqlite3.Connection) -> None:
         "ai_completion_tokens": "INTEGER",
         "ai_error": "TEXT",
         "ai_processed_at": "TEXT",
+        "uploaded_filename": "TEXT",
+        "uploaded_content_type": "TEXT",
+        "uploaded_size": "INTEGER",
+        "uploaded_blob": "BLOB",
+        "uploaded_at": "TEXT",
     }
     for column, definition in additions.items():
         if column not in columns:
@@ -166,6 +171,10 @@ def main() -> int:
                 fulltext_status,
                 fulltext_source,
                 fulltext_path,
+                uploaded_filename,
+                uploaded_content_type,
+                uploaded_size,
+                uploaded_at,
                 extracted_text,
                 ai_analysis_status,
                 ai_caucasian,
@@ -211,6 +220,10 @@ def main() -> int:
                     fulltext_status,
                     fulltext_source,
                     fulltext_path,
+                    uploaded_filename,
+                    uploaded_content_type,
+                    uploaded_size,
+                    uploaded_at,
                     extracted_text,
                     ai_analysis_status,
                     ai_caucasian,
@@ -225,7 +238,7 @@ def main() -> int:
                     ai_error,
                     ai_processed_at
                 )
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 ON CONFLICT (batch_id, article_id) DO UPDATE SET
                     work_id = EXCLUDED.work_id,
                     work_version_id = EXCLUDED.work_version_id,
@@ -237,6 +250,10 @@ def main() -> int:
                     fulltext_status = EXCLUDED.fulltext_status,
                     fulltext_source = EXCLUDED.fulltext_source,
                     fulltext_path = EXCLUDED.fulltext_path,
+                    uploaded_filename = EXCLUDED.uploaded_filename,
+                    uploaded_content_type = EXCLUDED.uploaded_content_type,
+                    uploaded_size = EXCLUDED.uploaded_size,
+                    uploaded_at = EXCLUDED.uploaded_at,
                     extracted_text = EXCLUDED.extracted_text,
                     ai_analysis_status = CASE
                         WHEN existing.ai_analysis_status = 'processed'
@@ -245,7 +262,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_analysis_status
@@ -258,7 +282,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_caucasian
@@ -271,7 +302,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_white
@@ -284,7 +322,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_european
@@ -297,7 +342,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_european_phrase_used
@@ -310,7 +362,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_other
@@ -323,7 +382,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_other_phrase_used
@@ -336,7 +402,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_model
@@ -349,7 +422,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_prompt_tokens
@@ -362,7 +442,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_completion_tokens
@@ -375,7 +462,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_error
@@ -388,7 +482,14 @@ def main() -> int:
                             COALESCE(existing.extracted_text, '') = COALESCE(EXCLUDED.extracted_text, '')
                             OR (
                                 COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.fulltext_path, '') <> ''
                                 AND COALESCE(existing.fulltext_path, '') = COALESCE(EXCLUDED.fulltext_path, '')
+                            )
+                            OR (
+                                COALESCE(EXCLUDED.extracted_text, '') = ''
+                                AND COALESCE(EXCLUDED.uploaded_filename, '') <> ''
+                                AND COALESCE(existing.uploaded_filename, '') = COALESCE(EXCLUDED.uploaded_filename, '')
+                                AND COALESCE(existing.uploaded_size, -1) = COALESCE(EXCLUDED.uploaded_size, -1)
                             )
                          )
                         THEN existing.ai_processed_at
@@ -409,6 +510,10 @@ def main() -> int:
                     row["fulltext_status"],
                     row["fulltext_source"],
                     row["fulltext_path"],
+                    row["uploaded_filename"],
+                    row["uploaded_content_type"],
+                    row["uploaded_size"],
+                    row["uploaded_at"],
                     row["extracted_text"],
                     row["ai_analysis_status"] or "not_queued",
                     nullable_bool(row["ai_caucasian"]),

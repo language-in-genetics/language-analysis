@@ -72,9 +72,10 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
         {{if .Detail}}
         <div class="card">
             <h2>{{.Detail.Title}}</h2>
-            <p class="small">{{.Detail.JournalName}} · {{yearLabel .Detail.PubYear}} · article {{.Detail.ArticleID}}{{if .Detail.DOI}} · <a href="https://doi.org/{{.Detail.DOI}}" target="_blank" rel="noopener noreferrer">{{.Detail.DOI}}</a>{{end}}</p>
-            <p class="small">Full text: <strong>{{fulltextStatusDisplay .Detail.FulltextStatus}}</strong>{{if .Detail.FulltextSource}} · source {{.Detail.FulltextSource}}{{end}}</p>
-            <p class="small">AI analysis: <strong>{{.Detail.AIAnalysisStatus}}</strong>{{if eq .Detail.AIAnalysisStatus "processed"}} · {{fulltextAITermList .Detail}}{{end}}{{if .Detail.AIError}} · {{.Detail.AIError}}{{end}}</p>
+			<p class="small">{{.Detail.JournalName}} · {{yearLabel .Detail.PubYear}} · article {{.Detail.ArticleID}}{{if .Detail.DOI}} · <a href="https://doi.org/{{.Detail.DOI}}" target="_blank" rel="noopener noreferrer">{{.Detail.DOI}}</a>{{end}}</p>
+			<p class="small">Full text: <strong>{{fulltextStatusDisplay .Detail.FulltextStatus}}</strong>{{if .Detail.FulltextSource}} · source {{.Detail.FulltextSource}}{{end}}</p>
+			{{if .Detail.UploadedFilename}}<p class="small">Stored upload: <strong>{{.Detail.UploadedFilename}}</strong>{{if gt .Detail.UploadedSize 0}} · {{.Detail.UploadedSize}} bytes{{end}}{{if .Detail.UploadedAt}} · {{formatTimestamp .Detail.UploadedAt}}{{end}}</p>{{end}}
+			<p class="small">AI analysis: <strong>{{.Detail.AIAnalysisStatus}}</strong>{{if eq .Detail.AIAnalysisStatus "processed"}} · {{fulltextAITermList .Detail}}{{end}}{{if .Detail.AIError}} · {{.Detail.AIError}}{{end}}</p>
             <p class="small"><a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Detail.ArticleID}}">Upload or replace full text for AI analysis</a></p>
             {{if .Detail.QuotedEvidence}}<h3>Quoted Evidence</h3><div class="abstract">{{.Detail.QuotedEvidence}}</div>{{end}}
             <h3>Abstract</h3>
@@ -99,7 +100,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
                     <tr>
                         <td><a href="/cgi-bin/fulltext-status.cgi?batch={{.BatchSlug}}&article_id={{.ArticleID}}">{{.Title}}</a><div class="small">article {{.ArticleID}}</div></td>
                         <td>{{.JournalName}}<div class="small">{{yearLabel .PubYear}}</div></td>
-                        <td>{{fulltextStatusDisplay .FulltextStatus}}{{if .FulltextSource}}<div class="small">{{.FulltextSource}}</div>{{end}}</td>
+						<td>{{fulltextStatusDisplay .FulltextStatus}}{{if .FulltextSource}}<div class="small">{{.FulltextSource}}</div>{{end}}{{if .UploadedFilename}}<div class="small">{{.UploadedFilename}}</div>{{end}}</td>
                         <td>{{.AIAnalysisStatus}}{{if eq .AIAnalysisStatus "processed"}}<div class="small">{{fulltextAITermList .}}</div>{{end}}</td>
                         <td>{{if .UpdatedAt}}{{formatTimestamp .UpdatedAt}}{{else}}—{{end}}</td>
                     </tr>

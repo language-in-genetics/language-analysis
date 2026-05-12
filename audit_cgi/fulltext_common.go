@@ -51,41 +51,45 @@ type FulltextSummary struct {
 }
 
 type FulltextArticle struct {
-	BatchSlug          string
-	ArticleID          int
-	WorkID             int64
-	WorkVersionID      int64
-	DOI                string
-	JournalName        string
-	PubYear            int
-	Title              string
-	Abstract           string
-	FulltextStatus     string
-	FulltextSource     string
-	FulltextPath       string
-	ExtractedText      string
-	AIAnalysisStatus   string
-	AICaucasian        bool
-	AIWhite            bool
-	AIEuropean         bool
-	AIEuropeanPhrase   string
-	AIOther            bool
-	AIOtherPhrase      string
-	AIModel            string
-	AIPromptTokens     int
-	AICompletionTokens int
-	AIError            string
-	AIProcessedAt      string
-	TerminologyPresent *bool
-	CaucasianPresent   bool
-	WhitePresent       bool
-	EuropeanPresent    bool
-	OtherPresent       bool
-	QuotedEvidence     string
-	ReviewerUsername   string
-	ReviewNotes        string
-	ReviewedAt         string
-	UpdatedAt          string
+	BatchSlug           string
+	ArticleID           int
+	WorkID              int64
+	WorkVersionID       int64
+	DOI                 string
+	JournalName         string
+	PubYear             int
+	Title               string
+	Abstract            string
+	FulltextStatus      string
+	FulltextSource      string
+	FulltextPath        string
+	UploadedFilename    string
+	UploadedContentType string
+	UploadedSize        int64
+	UploadedAt          string
+	ExtractedText       string
+	AIAnalysisStatus    string
+	AICaucasian         bool
+	AIWhite             bool
+	AIEuropean          bool
+	AIEuropeanPhrase    string
+	AIOther             bool
+	AIOtherPhrase       string
+	AIModel             string
+	AIPromptTokens      int
+	AICompletionTokens  int
+	AIError             string
+	AIProcessedAt       string
+	TerminologyPresent  *bool
+	CaucasianPresent    bool
+	WhitePresent        bool
+	EuropeanPresent     bool
+	OtherPresent        bool
+	QuotedEvidence      string
+	ReviewerUsername    string
+	ReviewNotes         string
+	ReviewedAt          string
+	UpdatedAt           string
 }
 
 type FulltextArticleRow struct {
@@ -205,6 +209,7 @@ func scanFulltextArticle(scanner interface {
 	var aiOther sql.NullInt64
 	var aiPromptTokens sql.NullInt64
 	var aiCompletionTokens sql.NullInt64
+	var uploadedSize sql.NullInt64
 	err := scanner.Scan(
 		&article.BatchSlug,
 		&article.ArticleID,
@@ -218,6 +223,10 @@ func scanFulltextArticle(scanner interface {
 		&article.FulltextStatus,
 		&article.FulltextSource,
 		&article.FulltextPath,
+		&article.UploadedFilename,
+		&article.UploadedContentType,
+		&uploadedSize,
+		&article.UploadedAt,
 		&article.ExtractedText,
 		&article.AIAnalysisStatus,
 		&aiCaucasian,
@@ -269,6 +278,9 @@ func scanFulltextArticle(scanner interface {
 	if aiCompletionTokens.Valid {
 		article.AICompletionTokens = int(aiCompletionTokens.Int64)
 	}
+	if uploadedSize.Valid {
+		article.UploadedSize = uploadedSize.Int64
+	}
 	return article, nil
 }
 
@@ -287,6 +299,10 @@ func fulltextArticleSelectSQL() string {
 			fulltext_status,
 			COALESCE(fulltext_source, ''),
 			COALESCE(fulltext_path, ''),
+			COALESCE(uploaded_filename, ''),
+			COALESCE(uploaded_content_type, ''),
+			uploaded_size,
+			COALESCE(uploaded_at, ''),
 			COALESCE(extracted_text, ''),
 			COALESCE(ai_analysis_status, 'not_queued'),
 			ai_caucasian,

@@ -81,6 +81,11 @@ CREATE TABLE IF NOT EXISTS fulltext_articles (
     ),
     fulltext_source TEXT,
     fulltext_path TEXT,
+    uploaded_filename TEXT,
+    uploaded_content_type TEXT,
+    uploaded_size INTEGER,
+    uploaded_blob BLOB,
+    uploaded_at TEXT,
     extracted_text TEXT,
     ai_analysis_status TEXT NOT NULL DEFAULT 'not_queued' CHECK (
         ai_analysis_status IN (

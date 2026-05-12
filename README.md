@@ -189,7 +189,7 @@ The same `merah` SQLite review database also supports a full-article AI processi
   - `/cgi-bin/fulltext-upload.cgi` requires login
   - `/cgi-bin/fulltext-verify.cgi` is the authenticated queue browser
   - `/cgi-bin/fulltext-status.cgi` is public status
-- Process queued uploads after syncing the `merah` SQLite database and upload files:
+- Process queued uploads after syncing the `merah` SQLite database backup:
   - `cd extractor && uv run process_fulltext_analysis.py --sqlite-db ../audit/review_data/lig_audit.db --limit 10`
 - Import the SQLite upload and AI state into PostgreSQL:
   - `cd extractor && uv run import_fulltext_audit_reviews.py --sqlite-db ../audit/review_data/lig_audit.db`
@@ -198,7 +198,7 @@ The same `merah` SQLite review database also supports a full-article AI processi
   - `cd extractor && uv run create_fulltext_audit_batch.py --sample-size 100 --max-year 2025 --batch-slug fulltext-2025-seed42`
   - `./audit/push_audit_db.sh`
 
-The full-text tables track article selection, full-text acquisition status, uploaded file paths, extracted text, AI analysis status, AI terminology flags, and upload notes. The normal `cronscript.sh` syncs the `merah` SQLite database and full-text upload files back to `raksasa`, processes queued uploads, and imports both title/abstract audit state and full-text AI state into PostgreSQL.
+The full-text tables track article selection, full-text acquisition status, uploaded PDF/text/HTML blobs in SQLite, extracted text, AI analysis status, AI terminology flags, and upload notes. The normal `cronscript.sh` syncs a backup of the `merah` SQLite database back to `raksasa`, processes queued uploads from the copied database, and imports both title/abstract audit state and full-text AI state into PostgreSQL.
 
 ### CGI Deployment
 

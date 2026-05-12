@@ -8,12 +8,9 @@ import (
 	"net/http"
 	"net/http/cgi"
 	"os"
-	urlpath "path"
 	"path/filepath"
-	"regexp"
 	"strconv"
 	"strings"
-	"time"
 )
 
 const maxFulltextUploadBytes = 80 << 20
@@ -25,8 +22,6 @@ type FulltextUploadPageData struct {
 	Message    string
 	Error      string
 }
-
-var safePathPartPattern = regexp.MustCompile(`[^A-Za-z0-9._-]+`)
 
 var fulltextUploadTemplate = template.Must(template.New("fulltext-upload").Funcs(templateFuncs).Funcs(template.FuncMap{
 	"fulltextStatusDisplay": fulltextStatusDisplay,
@@ -71,7 +66,8 @@ var fulltextUploadTemplate = template.Must(template.New("fulltext-upload").Funcs
             <h2>{{.Article.Title}}</h2>
             <p class="meta">{{.Article.JournalName}} · {{yearLabel .Article.PubYear}} · article {{.Article.ArticleID}}{{if .Article.DOI}} · <a href="https://doi.org/{{.Article.DOI}}" target="_blank" rel="noopener noreferrer">{{.Article.DOI}}</a>{{end}}</p>
             <p class="small">Current full-text status: <strong>{{fulltextStatusDisplay .Article.FulltextStatus}}</strong>. AI analysis status: <strong>{{.Article.AIAnalysisStatus}}</strong>{{if eq .Article.AIAnalysisStatus "processed"}} · AI terms: {{fulltextAITermList .Article}}{{end}}{{if .Article.AIError}} · last error: {{.Article.AIError}}{{end}}</p>
-            {{if .Article.FulltextPath}}<p class="small">Stored file: <a href="{{.Article.FulltextPath}}" target="_blank" rel="noopener noreferrer">{{.Article.FulltextPath}}</a></p>{{end}}
+            {{if .Article.UploadedFilename}}<p class="small">Stored upload: {{.Article.UploadedFilename}}{{if gt .Article.UploadedSize 0}} · {{.Article.UploadedSize}} bytes{{end}}{{if .Article.UploadedAt}} · {{formatTimestamp .Article.UploadedAt}}{{end}}</p>{{end}}
+            {{if .Article.FulltextPath}}<p class="small">Legacy stored file: <a href="{{.Article.FulltextPath}}" target="_blank" rel="noopener noreferrer">{{.Article.FulltextPath}}</a></p>{{end}}
             <h3>Abstract</h3>
             <div class="abstract">{{if .Article.Abstract}}{{.Article.Abstract}}{{else}}No abstract available.{{end}}</div>
         </div>
@@ -82,7 +78,7 @@ var fulltextUploadTemplate = template.Must(template.New("fulltext-upload").Funcs
                 <input type="hidden" name="article_id" value="{{.Article.ArticleID}}">
 
                 <h3>Upload File</h3>
-                <p class="small">Upload or paste the full paper here. Plain text, HTML, and PDF uploads are queued for AI processing by the raksasa cron job. Pasted text is used directly.</p>
+                <p class="small">Upload or paste the full paper here. Plain text, HTML, and PDF uploads are stored in SQLite and queued for AI processing by the raksasa cron job. Pasted text is used directly.</p>
                 <input type="file" name="article_file">
 
                 <h3>Full Article Text</h3>
@@ -222,7 +218,9 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 
 	extractedText := strings.TrimSpace(r.FormValue("extracted_text"))
 	reviewNotes := strings.TrimSpace(r.FormValue("review_notes"))
-	storedPath := ""
+	var uploadedBlob []byte
+	uploadedFilename := ""
+	uploadedContentType := ""
 
 	file, header, err := r.FormFile("article_file")
 	if err == nil {
@@ -233,13 +231,10 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 			return
 		}
 		if len(uploadBytes) > 0 {
-			contentType := header.Header.Get("Content-Type")
-			storedPath, err = saveFulltextUpload(batch, articleID, header.Filename, uploadBytes)
-			if err != nil {
-				renderFulltextUploadPageForTarget(w, db, remoteUser, batch, articleID, "", "Failed to save uploaded file: "+err.Error())
-				return
-			}
-			if extractedText == "" && looksTextUpload(header.Filename, contentType) {
+			uploadedBlob = uploadBytes
+			uploadedFilename = strings.TrimSpace(header.Filename)
+			uploadedContentType = strings.TrimSpace(header.Header.Get("Content-Type"))
+			if extractedText == "" && looksTextUpload(uploadedFilename, uploadedContentType) {
 				extractedText = strings.TrimSpace(string(uploadBytes))
 			}
 		}
@@ -248,23 +243,34 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 		return
 	}
 
-	if extractedText == "" && storedPath == "" {
+	hasUploadedFile := len(uploadedBlob) > 0
+	if extractedText == "" && !hasUploadedFile {
 		renderFulltextUploadPageForTarget(w, db, remoteUser, batch, articleID, "", "Paste full article text or choose a file to upload.")
 		return
 	}
 
 	analysisStatus := "queued"
-	if extractedText == "" && storedPath == "" {
+	if extractedText == "" && !hasUploadedFile {
 		analysisStatus = "not_queued"
 	}
 	fulltextStatus := "available"
 	fulltextSource := "manual_upload"
+	uploadedSize := int64(len(uploadedBlob))
+	hasUploadedFileInt := 0
+	if hasUploadedFile {
+		hasUploadedFileInt = 1
+	}
 	_, err = db.Exec(`
 		UPDATE fulltext_articles
 		SET
 			fulltext_status = ?,
 			fulltext_source = ?,
-			fulltext_path = CASE WHEN ? = '' THEN fulltext_path ELSE ? END,
+			fulltext_path = CASE WHEN ? = 1 THEN '' ELSE fulltext_path END,
+			uploaded_filename = CASE WHEN ? = 1 THEN ? ELSE uploaded_filename END,
+			uploaded_content_type = CASE WHEN ? = 1 THEN ? ELSE uploaded_content_type END,
+			uploaded_size = CASE WHEN ? = 1 THEN ? ELSE uploaded_size END,
+			uploaded_blob = CASE WHEN ? = 1 THEN ? ELSE uploaded_blob END,
+			uploaded_at = CASE WHEN ? = 1 THEN CURRENT_TIMESTAMP ELSE uploaded_at END,
 			extracted_text = ?,
 			ai_analysis_status = ?,
 			ai_error = NULL,
@@ -272,7 +278,14 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 			review_notes = ?,
 			updated_at = CURRENT_TIMESTAMP
 		WHERE batch_slug = ? AND article_id = ?
-	`, fulltextStatus, fulltextSource, storedPath, storedPath, extractedText, analysisStatus, remoteUser, reviewNotes, batch, articleID)
+	`, fulltextStatus, fulltextSource,
+		hasUploadedFileInt,
+		hasUploadedFileInt, uploadedFilename,
+		hasUploadedFileInt, uploadedContentType,
+		hasUploadedFileInt, uploadedSize,
+		hasUploadedFileInt, uploadedBlob,
+		hasUploadedFileInt,
+		extractedText, analysisStatus, remoteUser, reviewNotes, batch, articleID)
 	if err != nil {
 		renderFulltextUploadPageForTarget(w, db, remoteUser, batch, articleID, "", "Failed to save upload metadata: "+err.Error())
 		return
@@ -280,38 +293,9 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 
 	message := "Full text saved and queued for AI analysis."
 	if extractedText == "" {
-		message = "File saved and queued for raksasa-side text extraction and AI analysis."
+		message = "File saved in SQLite and queued for raksasa-side text extraction and AI analysis."
 	}
 	renderFulltextUploadPageForTarget(w, db, remoteUser, batch, articleID, message, "")
-}
-
-func saveFulltextUpload(batch string, articleID int, filename string, data []byte) (string, error) {
-	safeBatch := safePathPart(batch)
-	safeName := safePathPart(filename)
-	if safeName == "" {
-		safeName = "article"
-	}
-	stamp := time.Now().UTC().Format("20060102T150405Z")
-	storedName := stamp + "-" + safeName
-	uploadDir := filepath.Join("..", "htdocs", "fulltext_uploads", safeBatch, strconv.Itoa(articleID))
-	if err := os.MkdirAll(uploadDir, 0775); err != nil {
-		return "", err
-	}
-	target := filepath.Join(uploadDir, storedName)
-	if err := os.WriteFile(target, data, 0664); err != nil {
-		return "", err
-	}
-	return urlpath.Join("/fulltext_uploads", safeBatch, strconv.Itoa(articleID), storedName), nil
-}
-
-func safePathPart(value string) string {
-	value = strings.TrimSpace(filepath.Base(value))
-	value = safePathPartPattern.ReplaceAllString(value, "-")
-	value = strings.Trim(value, ".-")
-	if len(value) > 120 {
-		value = value[:120]
-	}
-	return value
 }
 
 func looksTextUpload(filename, contentType string) bool {

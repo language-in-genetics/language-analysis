@@ -129,6 +129,10 @@ CREATE TABLE IF NOT EXISTS languageingenetics.fulltext_audit_articles (
     ),
     fulltext_source TEXT,
     fulltext_path TEXT,
+    uploaded_filename TEXT,
+    uploaded_content_type TEXT,
+    uploaded_size INTEGER,
+    uploaded_at TIMESTAMPTZ,
     extracted_text TEXT,
     ai_analysis_status TEXT NOT NULL DEFAULT 'not_queued' CHECK (
         ai_analysis_status IN (
@@ -183,6 +187,14 @@ ALTER TABLE languageingenetics.fulltext_audit_articles
     ADD COLUMN IF NOT EXISTS ai_error TEXT;
 ALTER TABLE languageingenetics.fulltext_audit_articles
     ADD COLUMN IF NOT EXISTS ai_processed_at TIMESTAMPTZ;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS uploaded_filename TEXT;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS uploaded_content_type TEXT;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS uploaded_size INTEGER;
+ALTER TABLE languageingenetics.fulltext_audit_articles
+    ADD COLUMN IF NOT EXISTS uploaded_at TIMESTAMPTZ;
 
 CREATE INDEX IF NOT EXISTS fulltext_audit_articles_ai_status_idx
     ON languageingenetics.fulltext_audit_articles (ai_analysis_status, batch_id, article_id);
@@ -226,6 +238,10 @@ SELECT
     s.fulltext_status,
     s.fulltext_source,
     s.fulltext_path,
+    s.uploaded_filename,
+    s.uploaded_content_type,
+    s.uploaded_size,
+    s.uploaded_at,
     s.extracted_text,
     s.ai_analysis_status,
     s.ai_caucasian,
