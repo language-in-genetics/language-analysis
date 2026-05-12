@@ -35,16 +35,30 @@ scp "$LOCAL_DB" "$REMOTE_HOST:$REMOTE_TMP"
 
 ssh -o BatchMode=yes "$REMOTE_HOST" "
     set -e
-    doas mkdir -p '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR'
-    doas chown languageingenetics:www '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR'
-    if test -f '$REMOTE_DB'; then
-        doas -u languageingenetics sqlite3 '$REMOTE_DB' 'PRAGMA wal_checkpoint(TRUNCATE);' >/dev/null
-        doas -u languageingenetics sqlite3 '$REMOTE_DB' \".backup '$REMOTE_BACKUP_DIR/lig_audit_$(date +%Y%m%d%H%M%S).db'\"
+    if doas -n true >/dev/null 2>&1; then
+        doas mkdir -p '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR'
+        doas chown languageingenetics:www '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR'
+        if test -f '$REMOTE_DB'; then
+            doas -u languageingenetics sqlite3 '$REMOTE_DB' 'PRAGMA wal_checkpoint(TRUNCATE);' >/dev/null
+            doas -u languageingenetics sqlite3 '$REMOTE_DB' \".backup '$REMOTE_BACKUP_DIR/lig_audit_$(date +%Y%m%d%H%M%S).db'\"
+        fi
+        doas rm -f '$REMOTE_DB' '$REMOTE_DB-wal' '$REMOTE_DB-shm'
+        doas install -o languageingenetics -g www -m 664 '$REMOTE_TMP' '$REMOTE_DB'
+        rm -f '$REMOTE_TMP'
+        doas -u languageingenetics sqlite3 '$REMOTE_DB' < /dev/null
+    else
+        mkdir -p '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR'
+        if test -f '$REMOTE_DB'; then
+            sqlite3 '$REMOTE_DB' 'PRAGMA wal_checkpoint(TRUNCATE);' >/dev/null
+            sqlite3 '$REMOTE_DB' \".backup '$REMOTE_BACKUP_DIR/lig_audit_$(date +%Y%m%d%H%M%S).db'\"
+            sqlite3 '$REMOTE_DB' \".restore '$REMOTE_TMP'\"
+        else
+            cp '$REMOTE_TMP' '$REMOTE_DB'
+            chmod 0664 '$REMOTE_DB'
+        fi
+        rm -f '$REMOTE_TMP'
+        sqlite3 '$REMOTE_DB' < /dev/null
     fi
-    doas rm -f '$REMOTE_DB' '$REMOTE_DB-wal' '$REMOTE_DB-shm'
-    doas install -o languageingenetics -g www -m 664 '$REMOTE_TMP' '$REMOTE_DB'
-    rm -f '$REMOTE_TMP'
-    doas -u languageingenetics sqlite3 '$REMOTE_DB' < /dev/null
 "
 
 log "Pushed audit database to $REMOTE_HOST:$REMOTE_DB"
