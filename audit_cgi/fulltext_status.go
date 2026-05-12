@@ -54,7 +54,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
     <div class="container">
         <div class="card">
             <h1>LIG Full-Text AI Processing Status</h1>
-            <p class="small">This page is public. Humans upload full papers for AI processing at <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}">/cgi-bin/fulltext-upload.cgi</a>; login required.</p>
+            <p class="small">This page is public. Humans upload full papers for AI processing at <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}">/cgi-bin/fulltext-upload.cgi</a>; login required. Full-text charts are at <a href="/fulltext.html">/fulltext.html</a>.</p>
             <p class="small">Batch <code>{{.Batch.BatchSlug}}</code> · created {{formatTimestamp .Batch.CreatedAt}} · seed {{.Batch.Seed}}</p>
             <div class="filters">
                 <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}">All</a>

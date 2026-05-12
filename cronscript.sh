@@ -105,6 +105,21 @@ else
     log "Skipping lig audit database push because the initial sync failed"
 fi
 
+log "Generating full-text AI report..."
+if (
+    cd extractor
+    uv run generate_fulltext_report.py --output "$DASHBOARD_DIR/fulltext.html"
+) 2>&1 | tee -a "$LOG_FILE"; then
+    log "Full-text AI report generated successfully"
+    if rsync -avz "$DASHBOARD_DIR/fulltext.html" "$REMOTE_HOST:$REMOTE_PATH/fulltext.html" 2>&1 | tee -a "$LOG_FILE"; then
+        log "Full-text AI report synced successfully to $REMOTE_HOST:$REMOTE_PATH/fulltext.html"
+    else
+        log "Warning: full-text AI report sync failed"
+    fi
+else
+    log "Warning: full-text AI report generation failed"
+fi
+
 # Step 1: Check for completed batches and fetch results
 log "Checking for completed batches..."
 cd extractor

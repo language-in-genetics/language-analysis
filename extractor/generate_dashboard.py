@@ -956,7 +956,7 @@ if fulltext_summary:
             <div class="card">
                 <h3>Latest Batch</h3>
                 <div class="value">{fulltext_summary['sample_batch']}</div>
-                <div class="subvalue"><a href="/cgi-bin/fulltext-upload.cgi" style="color: #2196F3;">Upload full paper for AI analysis</a> · <a href="/cgi-bin/fulltext-status.cgi" style="color: #2196F3;">Open public processing status</a></div>
+                <div class="subvalue"><a href="/cgi-bin/fulltext-upload.cgi" style="color: #2196F3;">Upload full paper for AI analysis</a> · <a href="/cgi-bin/fulltext-status.cgi" style="color: #2196F3;">Open public processing status</a> · <a href="/fulltext.html" style="color: #2196F3;">Open full-text charts</a></div>
             </div>
             <div class="card">
                 <h3>AI Processed</h3>
