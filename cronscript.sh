@@ -10,7 +10,9 @@ REMOTE_PATH="/var/www/vhosts/lig.symmachus.org/htdocs/"
 BATCH_SIZE=4000
 LOG_FILE="$WORKDIR/cronscript.log"
 OPENAI_API_KEY_FILE="${OPENAI_API_KEY_FILE:-/home/languageingenetics/.openai.lig.key}"
-TARGET_PUB_YEAR="${TARGET_PUB_YEAR:-2025}"
+# Leave empty to process all publication years. Set TARGET_PUB_YEAR in the
+# environment only for a deliberate year-specific backfill.
+TARGET_PUB_YEAR="${TARGET_PUB_YEAR:-}"
 if [[ -z "${CROSSREF_RETRACTION_SOURCE_SQLITE:-}" ]]; then
     for candidate in \
         "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi/focused-journals.sqlite" \

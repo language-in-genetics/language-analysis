@@ -292,6 +292,7 @@ execute_query("""
     JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     JOIN languageingenetics.journals j ON j.name = v.journal_name
     WHERE f.processed = true
+      AND v.title IS NOT NULL
       AND j.enabled = true
 """)
 processed_articles = cursor.fetchone()['count']
@@ -303,6 +304,7 @@ execute_query("""
     JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     JOIN languageingenetics.journals j ON j.name = v.journal_name
     WHERE f.processed = true
+      AND v.title IS NOT NULL
       AND f.when_processed IS NOT NULL
       AND j.enabled = true
 """)
@@ -427,8 +429,9 @@ journal_stats = []
 for journal in enabled_journals:
     execute_query("""
         SELECT
-            COUNT(cw.work_version_id) AS total,
-            COUNT(f.id) FILTER (WHERE f.processed = true) AS processed
+            COUNT(cw.work_version_id) FILTER (WHERE cw.title IS NOT NULL) AS total,
+            COUNT(f.id) FILTER (WHERE f.processed = true AND cw.title IS NOT NULL) AS processed,
+            COUNT(cw.work_version_id) FILTER (WHERE cw.title IS NULL) AS missing_title
         FROM public.crossref_current_works cw
         LEFT JOIN languageingenetics.files f
             ON f.work_version_id = cw.work_version_id
@@ -437,15 +440,18 @@ for journal in enabled_journals:
     row = cursor.fetchone()
     total = row['total']
     processed = row['processed']
+    missing_title = row['missing_title']
 
     journal_stats.append({
         'journal': journal,
         'total': total,
-        'processed': processed
+        'processed': processed,
+        'missing_title': missing_title
     })
 
 # Calculate total articles from journal stats
 total_articles = sum(j['total'] for j in journal_stats)
+missing_title_articles = sum(j['missing_title'] for j in journal_stats)
 
 # Calculate progress data and completion projection
 progress_data = {
@@ -458,7 +464,9 @@ progress_data = {
 execute_query("""
     SELECT
         COUNT(cw.work_version_id) AS total_2025,
-        COUNT(f.id) FILTER (WHERE f.processed = true) AS processed_2025
+        COUNT(cw.work_version_id) FILTER (WHERE cw.title IS NOT NULL) AS analyzable_2025,
+        COUNT(f.id) FILTER (WHERE f.processed = true AND cw.title IS NOT NULL) AS processed_2025,
+        COUNT(cw.work_version_id) FILTER (WHERE cw.title IS NULL) AS missing_title_2025
     FROM public.crossref_current_works cw
     JOIN languageingenetics.journals j
         ON j.name = cw.journal_name
@@ -469,8 +477,10 @@ execute_query("""
 """)
 row = cursor.fetchone()
 progress_2025 = {
-    'total_articles': row['total_2025'],
+    'total_articles': row['analyzable_2025'],
     'processed_articles': row['processed_2025'],
+    'all_articles': row['total_2025'],
+    'missing_title_articles': row['missing_title_2025'],
 }
 progress_2025['unprocessed_articles'] = progress_2025['total_articles'] - progress_2025['processed_articles']
 progress_2025['processing_percentage'] = (
@@ -878,9 +888,9 @@ html_content = f"""<!DOCTYPE html>
         <h2>Progress Overview</h2>
         <div class="grid">
             <div class="card">
-                <h3>Total Articles</h3>
+                <h3>Analyzable Articles</h3>
                 <div class="value">{progress_data['total_articles']:,}</div>
-                <div class="subvalue">{progress_data['processed_articles']:,} processed</div>
+                <div class="subvalue">{progress_data['processed_articles']:,} processed · {missing_title_articles:,} missing titles excluded</div>
                 <div class="progress-bar">
                     <div class="progress-bar-fill" style="width: {progress_data['processing_percentage']:.1f}%"></div>
                 </div>
@@ -891,9 +901,9 @@ html_content = f"""<!DOCTYPE html>
                 <div class="subvalue">{progress_data['unprocessed_articles']:,} remaining</div>
             </div>
             <div class="card">
-                <h3>2025 Papers</h3>
+                <h3>2025 Analyzable Papers</h3>
                 <div class="value">{progress_2025['processing_percentage']:.1f}%</div>
-                <div class="subvalue">{progress_2025['processed_articles']:,} of {progress_2025['total_articles']:,} processed</div>
+                <div class="subvalue">{progress_2025['processed_articles']:,} of {progress_2025['total_articles']:,} processed · {progress_2025['missing_title_articles']:,} missing titles excluded</div>
                 <div class="progress-bar">
                     <div class="progress-bar-fill" style="width: {progress_2025['processing_percentage']:.1f}%"></div>
                 </div>
@@ -977,8 +987,9 @@ html_content += f"""
             <thead>
                 <tr>
                     <th>Journal</th>
-                    <th>Total</th>
+                    <th>Analyzable</th>
                     <th>Processed</th>
+                    <th>Missing Title</th>
                     <th>Progress</th>
                 </tr>
             </thead>
@@ -992,6 +1003,7 @@ for j in journal_stats:
                     <td>{j['journal']}</td>
                     <td>{j['total']:,}</td>
                     <td>{j['processed']:,}</td>
+                    <td>{j['missing_title']:,}</td>
                     <td>{pct:.1f}%</td>
                 </tr>
 """
