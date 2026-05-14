@@ -830,6 +830,57 @@ retraction_statistics_section = render_retraction_statistics_section(retraction_
 
 print("Generating HTML...")
 
+pipeline_status_section = f"""
+        <h2>Progress Overview</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Analyzable Articles</h3>
+                <div class="value">{progress_data['total_articles']:,}</div>
+                <div class="subvalue">{progress_data['processed_articles']:,} processed · {missing_title_articles:,} missing titles excluded</div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: {progress_data['processing_percentage']:.1f}%"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Processing Rate</h3>
+                <div class="value">{progress_data['processing_percentage']:.1f}%</div>
+                <div class="subvalue">{progress_data['unprocessed_articles']:,} remaining</div>
+            </div>
+            <div class="card">
+                <h3>2025 Analyzable Papers</h3>
+                <div class="value">{progress_2025['processing_percentage']:.1f}%</div>
+                <div class="subvalue">{progress_2025['processed_articles']:,} of {progress_2025['total_articles']:,} processed · {progress_2025['missing_title_articles']:,} missing titles excluded</div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: {progress_2025['processing_percentage']:.1f}%"></div>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Est. Completion</h3>
+                <div class="value">{"N/A" if completion_date is None else completion_date.strftime("%b %d, %Y")}</div>
+                <div class="subvalue">{"No data yet" if completion_date is None else completion_date.strftime("%H:%M UTC")}</div>
+            </div>
+        </div>
+
+        <h2>Token Usage</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>All Time</h3>
+                <div class="value">{token_data['all_time']['total_tokens']:,}</div>
+                <div class="subvalue">tokens</div>
+            </div>
+            <div class="card">
+                <h3>Last 24 Hours</h3>
+                <div class="value">{token_data['last_24h']['total_tokens']:,}</div>
+                <div class="subvalue">tokens</div>
+            </div>
+            <div class="card">
+                <h3>Batch Waiting (24h)</h3>
+                <div class="value">{waiting_hours:.1f}h</div>
+                <div class="subvalue">{batch_utilization:.1f}% active processing</div>
+            </div>
+        </div>
+"""
+
 # Generate HTML
 html_content = f"""<!DOCTYPE html>
 <html>
@@ -898,56 +949,7 @@ html_content = f"""<!DOCTYPE html>
 <body>
     <div class="container">
         <h1>Word Frequency Analysis Dashboard</h1>
-        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Token Usage</a> | <a href="diagnostics.html" style="color: #2196F3;">Batch Diagnostics</a> | <a href="/cgi-bin/audit-status.cgi" style="color: #2196F3;">Human Audit</a> | <a href="/cgi-bin/fulltext-upload.cgi" style="color: #2196F3;">Full-Text AI Upload</a></div>
-
-        <h2>Progress Overview</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Analyzable Articles</h3>
-                <div class="value">{progress_data['total_articles']:,}</div>
-                <div class="subvalue">{progress_data['processed_articles']:,} processed · {missing_title_articles:,} missing titles excluded</div>
-                <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: {progress_data['processing_percentage']:.1f}%"></div>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Processing Rate</h3>
-                <div class="value">{progress_data['processing_percentage']:.1f}%</div>
-                <div class="subvalue">{progress_data['unprocessed_articles']:,} remaining</div>
-            </div>
-            <div class="card">
-                <h3>2025 Analyzable Papers</h3>
-                <div class="value">{progress_2025['processing_percentage']:.1f}%</div>
-                <div class="subvalue">{progress_2025['processed_articles']:,} of {progress_2025['total_articles']:,} processed · {progress_2025['missing_title_articles']:,} missing titles excluded</div>
-                <div class="progress-bar">
-                    <div class="progress-bar-fill" style="width: {progress_2025['processing_percentage']:.1f}%"></div>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Est. Completion</h3>
-                <div class="value">{"N/A" if completion_date is None else completion_date.strftime("%b %d, %Y")}</div>
-                <div class="subvalue">{"No data yet" if completion_date is None else completion_date.strftime("%H:%M UTC")}</div>
-            </div>
-        </div>
-
-        <h2>Token Usage</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>All Time</h3>
-                <div class="value">{token_data['all_time']['total_tokens']:,}</div>
-                <div class="subvalue">tokens</div>
-            </div>
-            <div class="card">
-                <h3>Last 24 Hours</h3>
-                <div class="value">{token_data['last_24h']['total_tokens']:,}</div>
-                <div class="subvalue">tokens</div>
-            </div>
-            <div class="card">
-                <h3>Batch Waiting (24h)</h3>
-                <div class="value">{waiting_hours:.1f}h</div>
-                <div class="subvalue">{batch_utilization:.1f}% active processing</div>
-            </div>
-        </div>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="status.html" style="color: #2196F3;">Pipeline Status</a> | <a href="journals.html" style="color: #2196F3;">View All Genetics Journals</a> | <a href="tokens.html" style="color: #2196F3;">Detailed Token Usage</a> | <a href="diagnostics.html" style="color: #2196F3;">Batch Diagnostics</a> | <a href="/cgi-bin/audit-status.cgi" style="color: #2196F3;">Human Audit</a> | <a href="/cgi-bin/fulltext-upload.cgi" style="color: #2196F3;">Full-Text AI Upload</a></div>
 """
 
 if audit_summary:
@@ -1836,6 +1838,62 @@ html_content += f"""
 output_path = os.path.join(args.output_dir, 'index.html')
 with open(output_path, 'w') as f:
     f.write(html_content)
+
+status_html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <title>Pipeline Status - Word Frequency Analysis</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }}
+        .container {{ max-width: 1400px; margin: 0 auto; }}
+        h1 {{ color: #333; margin-bottom: 10px; font-size: 2em; }}
+        .last-updated {{ color: #999; font-size: 0.9em; margin-bottom: 30px; }}
+        h2 {{ color: #555; margin: 30px 0 15px; font-size: 1.5em; }}
+        .grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 30px; }}
+        .card {{
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }}
+        .card h3 {{ color: #666; font-size: 0.9em; text-transform: uppercase; margin-bottom: 10px; }}
+        .card .value {{ font-size: 2.5em; font-weight: bold; color: #2196F3; }}
+        .card .subvalue {{ font-size: 0.9em; color: #999; margin-top: 5px; }}
+        .progress-bar {{
+            width: 100%;
+            height: 8px;
+            background: #eee;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+        }}
+        .progress-bar-fill {{
+            height: 100%;
+            background: #2196F3;
+            transition: width 0.3s ease;
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pipeline Status</h1>
+        <div class="last-updated">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | <a href="index.html" style="color: #2196F3;">Human Audit Landing</a> | <a href="tokens.html" style="color: #2196F3;">Detailed Token Usage</a> | <a href="diagnostics.html" style="color: #2196F3;">Batch Diagnostics</a></div>
+{pipeline_status_section}
+    </div>
+</body>
+</html>
+"""
+
+status_output_path = os.path.join(args.output_dir, 'status.html')
+with open(status_output_path, 'w') as f:
+    f.write(status_html)
 
 print("Generating journals page...")
 
@@ -2806,6 +2864,7 @@ with open(diagnostics_output_path, 'w') as f:
 # Calculate runtime
 runtime_seconds = time.time() - start_time
 print(f"Dashboard generated at {output_path}")
+print(f"Pipeline status page generated at {status_output_path}")
 print(f"Journals page generated at {journals_output_path}")
 print(f"Token usage page generated at {tokens_output_path}")
 print(f"Batch diagnostics page generated at {diagnostics_output_path}")
