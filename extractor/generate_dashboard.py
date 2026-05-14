@@ -292,6 +292,7 @@ execute_query("""
     JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     JOIN languageingenetics.journals j ON j.name = v.journal_name
     WHERE f.processed = true
+      AND v.is_current = true
       AND v.title IS NOT NULL
       AND j.enabled = true
 """)
@@ -304,6 +305,7 @@ execute_query("""
     JOIN public.crossref_work_versions v ON v.id = f.work_version_id
     JOIN languageingenetics.journals j ON j.name = v.journal_name
     WHERE f.processed = true
+      AND v.is_current = true
       AND v.title IS NOT NULL
       AND f.when_processed IS NOT NULL
       AND j.enabled = true
