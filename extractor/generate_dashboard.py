@@ -461,26 +461,39 @@ progress_data = {
     'processing_percentage': (processed_articles / total_articles * 100) if total_articles > 0 else 0
 }
 
-execute_query("""
-    SELECT
-        COUNT(cw.work_version_id) AS total_2025,
-        COUNT(cw.work_version_id) FILTER (WHERE cw.title IS NOT NULL) AS analyzable_2025,
-        COUNT(f.id) FILTER (WHERE f.processed = true AND cw.title IS NOT NULL) AS processed_2025,
-        COUNT(cw.work_version_id) FILTER (WHERE cw.title IS NULL) AS missing_title_2025
-    FROM public.crossref_current_works cw
-    JOIN languageingenetics.journals j
-        ON j.name = cw.journal_name
-       AND j.enabled = true
-    LEFT JOIN languageingenetics.files f
-        ON f.work_version_id = cw.work_version_id
-    WHERE cw.pub_year = 2025
-""")
-row = cursor.fetchone()
+# Keep the 2025 progress card on indexed per-journal probes. The equivalent
+# one-shot aggregate over crossref_current_works can devolve into a large scan.
+progress_2025_counts = {
+    'all_articles': 0,
+    'total_articles': 0,
+    'processed_articles': 0,
+    'missing_title_articles': 0,
+}
+for journal in enabled_journals:
+    execute_query("""
+        SELECT
+            COUNT(v.id) AS total_2025,
+            COUNT(v.id) FILTER (WHERE v.title IS NOT NULL) AS analyzable_2025,
+            COUNT(f.id) FILTER (WHERE f.processed = true AND v.title IS NOT NULL) AS processed_2025,
+            COUNT(v.id) FILTER (WHERE v.title IS NULL) AS missing_title_2025
+        FROM public.crossref_work_versions v
+        LEFT JOIN languageingenetics.files f
+            ON f.work_version_id = v.id
+        WHERE v.is_current = true
+          AND v.journal_name = %s
+          AND v.pub_year = 2025
+    """, [journal])
+    row = cursor.fetchone()
+    progress_2025_counts['all_articles'] += row['total_2025']
+    progress_2025_counts['total_articles'] += row['analyzable_2025']
+    progress_2025_counts['processed_articles'] += row['processed_2025']
+    progress_2025_counts['missing_title_articles'] += row['missing_title_2025']
+
 progress_2025 = {
-    'total_articles': row['analyzable_2025'],
-    'processed_articles': row['processed_2025'],
-    'all_articles': row['total_2025'],
-    'missing_title_articles': row['missing_title_2025'],
+    'total_articles': progress_2025_counts['total_articles'],
+    'processed_articles': progress_2025_counts['processed_articles'],
+    'all_articles': progress_2025_counts['all_articles'],
+    'missing_title_articles': progress_2025_counts['missing_title_articles'],
 }
 progress_2025['unprocessed_articles'] = progress_2025['total_articles'] - progress_2025['processed_articles']
 progress_2025['processing_percentage'] = (
