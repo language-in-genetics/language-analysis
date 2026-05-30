@@ -54,7 +54,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
     <div class="container">
         <div class="card">
             <h1>LIG Full-Text AI Processing Status</h1>
-            <p class="small">This page is public. Humans upload full papers for AI processing at <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}">/cgi-bin/fulltext-upload.cgi</a>; login required. Full-text charts are at <a href="/fulltext.html">/fulltext.html</a>.</p>
+            <p class="small">This page is public and shows processing status only. Uploaded papers, upload filenames, and extracted full text are restricted to the authenticated full-text queue. Humans upload full papers for AI processing at <a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}">/cgi-bin/fulltext-upload.cgi</a>; login required. Full-text charts are at <a href="/fulltext.html">/fulltext.html</a>.</p>
             <p class="small">Batch <code>{{.Batch.BatchSlug}}</code> · created {{formatTimestamp .Batch.CreatedAt}} · seed {{.Batch.Seed}}</p>
             <div class="filters">
                 <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}">All</a>
@@ -74,13 +74,11 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
             <h2>{{.Detail.Title}}</h2>
 			<p class="small">{{.Detail.JournalName}} · {{yearLabel .Detail.PubYear}} · article {{.Detail.ArticleID}}{{if .Detail.DOI}} · <a href="https://doi.org/{{.Detail.DOI}}" target="_blank" rel="noopener noreferrer">{{.Detail.DOI}}</a>{{end}}</p>
 			<p class="small">Full text: <strong>{{fulltextStatusDisplay .Detail.FulltextStatus}}</strong>{{if .Detail.FulltextSource}} · source {{.Detail.FulltextSource}}{{end}}</p>
-			{{if .Detail.UploadedFilename}}<p class="small">Stored upload: <strong>{{.Detail.UploadedFilename}}</strong>{{if gt .Detail.UploadedSize 0}} · {{.Detail.UploadedSize}} bytes{{end}}{{if .Detail.UploadedAt}} · {{formatTimestamp .Detail.UploadedAt}}{{end}}</p>{{end}}
 			<p class="small">AI analysis: <strong>{{.Detail.AIAnalysisStatus}}</strong>{{if eq .Detail.AIAnalysisStatus "processed"}} · {{fulltextAITermList .Detail}}{{end}}{{if .Detail.AIError}} · {{.Detail.AIError}}{{end}}</p>
-            <p class="small"><a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Detail.ArticleID}}">Upload or replace full text for AI analysis</a></p>
-            {{if .Detail.QuotedEvidence}}<h3>Quoted Evidence</h3><div class="abstract">{{.Detail.QuotedEvidence}}</div>{{end}}
+            <p class="small">Uploaded file details and extracted article text are not shown on this public page. Use the authenticated queue to upload, replace, or inspect full text.</p>
+            <p class="small"><a href="/cgi-bin/fulltext-upload.cgi?batch={{.Batch.BatchSlug}}&article_id={{.Detail.ArticleID}}">Open authenticated upload page</a></p>
             <h3>Abstract</h3>
             <div class="abstract">{{if .Detail.Abstract}}{{.Detail.Abstract}}{{else}}No abstract available.{{end}}</div>
-            {{if .Detail.ExtractedText}}<h3>Full Article Text</h3><div class="fulltext">{{.Detail.ExtractedText}}</div>{{end}}
         </div>
         {{end}}
 
@@ -100,7 +98,7 @@ var fulltextStatusTemplate = template.Must(template.New("fulltext-status").Funcs
                     <tr>
                         <td><a href="/cgi-bin/fulltext-status.cgi?batch={{.BatchSlug}}&article_id={{.ArticleID}}">{{.Title}}</a><div class="small">article {{.ArticleID}}</div></td>
                         <td>{{.JournalName}}<div class="small">{{yearLabel .PubYear}}</div></td>
-						<td>{{fulltextStatusDisplay .FulltextStatus}}{{if .FulltextSource}}<div class="small">{{.FulltextSource}}</div>{{end}}{{if .UploadedFilename}}<div class="small">{{.UploadedFilename}}</div>{{end}}</td>
+						<td>{{fulltextStatusDisplay .FulltextStatus}}{{if .FulltextSource}}<div class="small">{{.FulltextSource}}</div>{{end}}</td>
                         <td>{{.AIAnalysisStatus}}{{if eq .AIAnalysisStatus "processed"}}<div class="small">{{fulltextAITermList .FulltextArticle}}</div>{{end}}</td>
                         <td>{{if .UpdatedAt}}{{formatTimestamp .UpdatedAt}}{{else}}—{{end}}</td>
                     </tr>
@@ -158,13 +156,15 @@ func handleFulltextStatus(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Failed to list full-text AI processing articles: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
+	articles = sanitizeFulltextRowsForPublic(articles)
 
 	var detail *FulltextArticle
 	if rawID := r.URL.Query().Get("article_id"); rawID != "" {
 		if articleID, err := strconv.Atoi(rawID); err == nil {
 			loaded, err := loadFulltextArticle(db, batch, articleID)
 			if err == nil {
-				detail = &loaded
+				sanitized := sanitizeFulltextArticleForPublic(loaded)
+				detail = &sanitized
 			}
 		}
 	}
@@ -182,4 +182,26 @@ func handleFulltextStatus(w http.ResponseWriter, r *http.Request) {
 	if err := fulltextStatusTemplate.Execute(w, data); err != nil {
 		http.Error(w, "Template error: "+err.Error(), http.StatusInternalServerError)
 	}
+}
+
+func sanitizeFulltextRowsForPublic(rows []FulltextArticleRow) []FulltextArticleRow {
+	sanitized := make([]FulltextArticleRow, len(rows))
+	for i, row := range rows {
+		row.FulltextArticle = sanitizeFulltextArticleForPublic(row.FulltextArticle)
+		sanitized[i] = row
+	}
+	return sanitized
+}
+
+// Public status pages must not expose uploaded article files or extracted full text.
+func sanitizeFulltextArticleForPublic(article FulltextArticle) FulltextArticle {
+	article.UploadedFilename = ""
+	article.UploadedContentType = ""
+	article.UploadedSize = 0
+	article.UploadedAt = ""
+	article.ExtractedText = ""
+	article.QuotedEvidence = ""
+	article.ReviewerUsername = ""
+	article.ReviewNotes = ""
+	return article
 }
