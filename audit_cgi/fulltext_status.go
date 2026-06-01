@@ -1,6 +1,7 @@
 package main
 
 import (
+	"database/sql"
 	"html/template"
 	"net/http"
 	"net/http/cgi"
@@ -151,7 +152,7 @@ func handleFulltextStatus(w http.ResponseWriter, r *http.Request) {
 
 	reviewStatus := r.URL.Query().Get("review_status")
 	fulltextStatus := r.URL.Query().Get("fulltext_status")
-	articles, err := listFulltextArticles(db, batch, reviewStatus, fulltextStatus)
+	articles, err := listPublicFulltextArticles(db, batch, reviewStatus, fulltextStatus)
 	if err != nil {
 		http.Error(w, "Failed to list full-text AI processing articles: "+err.Error(), http.StatusInternalServerError)
 		return
@@ -161,7 +162,7 @@ func handleFulltextStatus(w http.ResponseWriter, r *http.Request) {
 	var detail *FulltextArticle
 	if rawID := r.URL.Query().Get("article_id"); rawID != "" {
 		if articleID, err := strconv.Atoi(rawID); err == nil {
-			loaded, err := loadFulltextArticle(db, batch, articleID)
+			loaded, err := loadPublicFulltextArticle(db, batch, articleID)
 			if err == nil {
 				sanitized := sanitizeFulltextArticleForPublic(loaded)
 				detail = &sanitized
@@ -182,6 +183,95 @@ func handleFulltextStatus(w http.ResponseWriter, r *http.Request) {
 	if err := fulltextStatusTemplate.Execute(w, data); err != nil {
 		http.Error(w, "Template error: "+err.Error(), http.StatusInternalServerError)
 	}
+}
+
+func publicFulltextArticleSelectSQL() string {
+	return `
+		SELECT
+			batch_slug,
+			article_id,
+			work_id,
+			work_version_id,
+			COALESCE(doi, ''),
+			COALESCE(journal_name, ''),
+			pub_year,
+			COALESCE(title, ''),
+			COALESCE(abstract, ''),
+			fulltext_status,
+			COALESCE(fulltext_source, ''),
+			'' AS uploaded_filename,
+			'' AS uploaded_content_type,
+			NULL AS uploaded_size,
+			'' AS uploaded_at,
+			'' AS extracted_text,
+			COALESCE(ai_analysis_status, 'not_queued'),
+			ai_caucasian,
+			ai_white,
+			ai_european,
+			'' AS ai_european_phrase_used,
+			ai_other,
+			'' AS ai_other_phrase_used,
+			'' AS ai_model,
+			NULL AS ai_prompt_tokens,
+			NULL AS ai_completion_tokens,
+			'' AS ai_error,
+			COALESCE(ai_processed_at, ''),
+			terminology_present,
+			caucasian_present,
+			white_present,
+			european_present,
+			other_present,
+			'' AS quoted_evidence,
+			'' AS reviewer_username,
+			'' AS review_notes,
+			COALESCE(reviewed_at, ''),
+			COALESCE(updated_at, '')
+		FROM fulltext_articles
+	`
+}
+
+func loadPublicFulltextArticle(db *sql.DB, batch string, articleID int) (FulltextArticle, error) {
+	row := db.QueryRow(publicFulltextArticleSelectSQL()+`
+		WHERE batch_slug = ? AND article_id = ?
+	`, batch, articleID)
+	return scanFulltextArticle(row)
+}
+
+func listPublicFulltextArticles(db *sql.DB, batch, reviewStatus, fulltextStatus string) ([]FulltextArticleRow, error) {
+	query := publicFulltextArticleSelectSQL() + `
+		WHERE batch_slug = ?
+	`
+	args := []any{batch}
+	if reviewStatus == "pending" {
+		query += " AND terminology_present IS NULL"
+	} else if reviewStatus == "reviewed" {
+		query += " AND terminology_present IS NOT NULL"
+	}
+	if fulltextStatus != "" {
+		query += " AND fulltext_status = ?"
+		args = append(args, fulltextStatus)
+	}
+	query += " ORDER BY " + fulltextStatusOrderSQL + ", article_id"
+
+	rows, err := db.Query(query, args...)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var out []FulltextArticleRow
+	for rows.Next() {
+		article, err := scanFulltextArticle(rows)
+		if err != nil {
+			return nil, err
+		}
+		out = append(out, FulltextArticleRow{
+			FulltextArticle: article,
+			AuditOutcome:    fulltextOutcome(article),
+			ReviewStatus:    fulltextReviewStatus(article),
+		})
+	}
+	return out, rows.Err()
 }
 
 func sanitizeFulltextRowsForPublic(rows []FulltextArticleRow) []FulltextArticleRow {

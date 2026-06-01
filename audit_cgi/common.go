@@ -94,6 +94,10 @@ func OpenDatabase(path string) (*sql.DB, error) {
 		_ = db.Close()
 		return nil, err
 	}
+	if _, err := db.Exec("PRAGMA temp_store = MEMORY"); err != nil {
+		_ = db.Close()
+		return nil, err
+	}
 	return db, nil
 }
 
