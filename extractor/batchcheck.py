@@ -30,6 +30,15 @@ cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
 # Set search path
 cursor.execute("SET search_path TO languageingenetics, public")
+cursor.execute("""
+    ALTER TABLE languageingenetics.batches
+    ADD COLUMN IF NOT EXISTS batch_kind TEXT NOT NULL DEFAULT 'term_analysis'
+""")
+cursor.execute("""
+    UPDATE languageingenetics.batches
+    SET batch_kind = 'term_analysis'
+    WHERE batch_kind IS NULL
+""")
 
 # Create progress tracking table if it doesn't exist
 cursor.execute("""
@@ -42,18 +51,52 @@ cursor.execute("""
 """)
 conn.commit()
 
-# Updated query to count files instead of words
-query = """
-    SELECT batches.id, openai_batch_id, COUNT(files.id) as file_count
-    FROM languageingenetics.batches
-    JOIN languageingenetics.files ON (batch_id = batches.id)
-    WHERE when_sent IS NOT NULL
-    AND when_retrieved IS NULL
-"""
+cursor.execute("SELECT to_regclass('languageingenetics.human_subject_classifications') AS table_name")
+has_human_subject_table = cursor.fetchone()["table_name"] is not None
+
+if has_human_subject_table:
+    query = """
+        SELECT
+            b.id,
+            b.openai_batch_id,
+            COALESCE(b.batch_kind, 'term_analysis') AS batch_kind,
+            CASE
+                WHEN b.batch_kind = 'human_subject_filter' THEN COALESCE(h.file_count, 0)
+                ELSE COALESCE(f.file_count, 0)
+            END AS file_count
+        FROM languageingenetics.batches b
+        LEFT JOIN (
+            SELECT batch_id, COUNT(*) AS file_count
+            FROM languageingenetics.files
+            GROUP BY batch_id
+        ) f ON f.batch_id = b.id
+        LEFT JOIN (
+            SELECT batch_id, COUNT(*) AS file_count
+            FROM languageingenetics.human_subject_classifications
+            GROUP BY batch_id
+        ) h ON h.batch_id = b.id
+        WHERE b.when_sent IS NOT NULL
+          AND b.when_retrieved IS NULL
+    """
+else:
+    query = """
+        SELECT
+            b.id,
+            b.openai_batch_id,
+            COALESCE(b.batch_kind, 'term_analysis') AS batch_kind,
+            COUNT(f.id) AS file_count
+        FROM languageingenetics.batches b
+        JOIN languageingenetics.files f ON f.batch_id = b.id
+        WHERE b.when_sent IS NOT NULL
+          AND b.when_retrieved IS NULL
+    """
 
 if args.only_batch:
-    query += f"AND batches.id = {int(args.only_batch)} "
-query += "GROUP BY batches.id, openai_batch_id"
+    query += f"AND b.id = {int(args.only_batch)} "
+if has_human_subject_table:
+    query += "ORDER BY b.id"
+else:
+    query += "GROUP BY b.id, b.openai_batch_id, b.batch_kind ORDER BY b.id"
 
 if args.monitor:
     import tqdm
@@ -70,9 +113,11 @@ while True:
     for batch_row in batches:
         local_batch_id = batch_row['id']
         openai_batch_id = batch_row['openai_batch_id']
-        number_of_files = batch_row['file_count']
+        number_of_files = batch_row['file_count'] or 0
+        batch_kind = batch_row['batch_kind']
 
         openai_result = client.batches.retrieve(openai_batch_id)
+        metadata = openai_result.metadata or {}
         if openai_result.status == 'completed':
             work_to_be_done = True
 
@@ -113,10 +158,11 @@ while True:
             continue
 
         if not args.quiet:
-            print(f"""## {openai_result.metadata.get('description')}
+            print(f"""## {metadata.get('description')}
       Num files: {number_of_files}
+           Kind: {batch_kind}
        Local ID: {local_batch_id}
-       Returned: {openai_result.metadata.get('local_batch_id')}
+       Returned: {metadata.get('local_batch_id')}
        Batch ID: {openai_batch_id}
         Created: {time.asctime(time.localtime(openai_result.created_at))}
          Status: {openai_result.status}""")

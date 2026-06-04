@@ -61,8 +61,24 @@ cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
 # Set search path
 cursor.execute("SET search_path TO languageingenetics, public")
+cursor.execute("""
+    ALTER TABLE languageingenetics.batches
+    ADD COLUMN IF NOT EXISTS batch_kind TEXT NOT NULL DEFAULT 'term_analysis'
+""")
+cursor.execute("""
+    UPDATE languageingenetics.batches
+    SET batch_kind = 'term_analysis'
+    WHERE batch_kind IS NULL
+""")
+conn.commit()
 
-cursor.execute("SELECT id, openai_batch_id FROM languageingenetics.batches WHERE when_sent IS NOT NULL AND when_retrieved IS NULL")
+cursor.execute("""
+    SELECT id, openai_batch_id
+    FROM languageingenetics.batches
+    WHERE when_sent IS NOT NULL
+      AND when_retrieved IS NULL
+      AND COALESCE(batch_kind, 'term_analysis') = 'term_analysis'
+""")
 
 total_prompt_tokens = 0
 total_completion_tokens = 0

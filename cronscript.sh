@@ -8,6 +8,7 @@ DASHBOARD_DIR="$WORKDIR/dashboard"
 REMOTE_HOST="merah.cassia.ifost.org.au"
 REMOTE_PATH="/var/www/vhosts/lig.symmachus.org/htdocs/"
 BATCH_SIZE=4000
+HUMAN_SUBJECT_BATCH_SIZE="${HUMAN_SUBJECT_BATCH_SIZE:-$BATCH_SIZE}"
 LOG_FILE="$WORKDIR/cronscript.log"
 OPENAI_API_KEY_FILE="${OPENAI_API_KEY_FILE:-/home/languageingenetics/.openai.lig.key}"
 # Leave empty to process all publication years. Set TARGET_PUB_YEAR in the
@@ -131,6 +132,13 @@ else
     log "Warning: Batch fetch had errors (may be normal if no batches ready)"
 fi
 
+log "Checking for completed Homo sapiens filter batches..."
+if uv run human_subject_batchfetch.py --openai-api-key "$OPENAI_API_KEY_FILE" --report-costs 2>&1 | tee -a "$LOG_FILE"; then
+    log "Homo sapiens filter batch fetch completed successfully"
+else
+    log "Warning: Homo sapiens filter batch fetch had errors (may be normal if no batches ready)"
+fi
+
 # Step 2: Submit new batch for processing
 bulkquery_year_args=()
 if [[ -n "$TARGET_PUB_YEAR" ]]; then
@@ -142,6 +150,17 @@ if uv run bulkquery.py --openai-api-key "$OPENAI_API_KEY_FILE" --limit "$BATCH_S
     log "New batch submitted successfully"
 else
     log "Warning: No new articles to process or batch submission failed"
+fi
+
+if [[ "$HUMAN_SUBJECT_BATCH_SIZE" -gt 0 ]]; then
+    log "Submitting new Homo sapiens filter batch of $HUMAN_SUBJECT_BATCH_SIZE articles${TARGET_PUB_YEAR:+ for publication year $TARGET_PUB_YEAR}..."
+    if uv run human_subject_bulkquery.py --openai-api-key "$OPENAI_API_KEY_FILE" --limit "$HUMAN_SUBJECT_BATCH_SIZE" "${bulkquery_year_args[@]}" 2>&1 | tee -a "$LOG_FILE"; then
+        log "New Homo sapiens filter batch submitted successfully"
+    else
+        log "Warning: No new Homo sapiens filter articles to process or batch submission failed"
+    fi
+else
+    log "Skipping Homo sapiens filter batch submission because HUMAN_SUBJECT_BATCH_SIZE=$HUMAN_SUBJECT_BATCH_SIZE"
 fi
 
 # Step 3: Generate static dashboard

@@ -92,4 +92,24 @@ Now run:
 `sqlite3 openai-batch.sqlite -header -csv "SELECT * FROM files;" > ancestry-full.csv`
 
 
+# Homo sapiens title/abstract filter
+
+The Homo sapiens filter is a separate PostgreSQL/OpenAI batch pass. It asks
+`gpt-5.4-mini` to decide whether an article is about humans, Homo sapiens, based
+only on the title and abstract.
+
+Run:
+
+```bash
+./human_subject_bulkquery.py --limit 1000
+./batchcheck.py
+./human_subject_batchfetch.py --report-costs
+```
+
+Results are stored in
+`languageingenetics.human_subject_classifications.about_humans`, with short
+evidence, confidence, model, and token usage fields. The normal
+`batchfetch.py` continues to fetch only the terminology pass; use
+`human_subject_batchfetch.py` for the Homo sapiens filter.
+
 

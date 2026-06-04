@@ -124,6 +124,15 @@ cursor.execute("""
         ON languageingenetics.files (processed, work_version_id)
         WHERE work_version_id IS NOT NULL
 """)
+cursor.execute("""
+    ALTER TABLE languageingenetics.batches
+    ADD COLUMN IF NOT EXISTS batch_kind TEXT NOT NULL DEFAULT 'term_analysis'
+""")
+cursor.execute("""
+    UPDATE languageingenetics.batches
+    SET batch_kind = 'term_analysis'
+    WHERE batch_kind IS NULL
+""")
 conn.commit()
 
 # Initialize explain log if needed
@@ -160,7 +169,7 @@ stats = Counter()
 
 # Start a transaction for this batch
 cursor.execute("BEGIN")
-cursor.execute("INSERT INTO languageingenetics.batches DEFAULT VALUES RETURNING id")
+cursor.execute("INSERT INTO languageingenetics.batches (batch_kind) VALUES ('term_analysis') RETURNING id")
 batch_id = cursor.fetchone()['id']
 
 
@@ -438,7 +447,13 @@ result = client.batches.create(
 )
 
 cursor.execute(
-    "UPDATE languageingenetics.batches SET openai_batch_id = %s, when_sent = CURRENT_TIMESTAMP WHERE id = %s",
+    """
+    UPDATE languageingenetics.batches
+    SET openai_batch_id = %s,
+        when_sent = CURRENT_TIMESTAMP,
+        batch_kind = 'term_analysis'
+    WHERE id = %s
+    """,
     [result.id, batch_id]
 )
 

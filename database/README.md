@@ -124,9 +124,37 @@ Tracks OpenAI batch jobs.
 CREATE TABLE languageingenetics.batches (
     id SERIAL PRIMARY KEY,
     openai_batch_id TEXT,
+    batch_kind TEXT NOT NULL DEFAULT 'term_analysis',
     when_created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     when_sent TIMESTAMP,
     when_retrieved TIMESTAMP
+);
+```
+
+#### languageingenetics.human_subject_classifications
+Stores the title/abstract Homo sapiens filter results. The table is created by
+`database/create_human_subject_classifications.sql` or automatically by
+`extractor/human_subject_bulkquery.py`.
+
+```sql
+CREATE TABLE languageingenetics.human_subject_classifications (
+    id BIGSERIAL PRIMARY KEY,
+    article_id BIGINT,
+    work_id BIGINT,
+    work_version_id BIGINT,
+    has_abstract BOOLEAN,
+    pub_year INTEGER,
+    processed BOOLEAN NOT NULL DEFAULT false,
+    batch_id INTEGER REFERENCES languageingenetics.batches(id),
+    when_processed TIMESTAMPTZ,
+    about_humans BOOLEAN,
+    human_evidence TEXT,
+    confidence TEXT,
+    model TEXT,
+    prompt_tokens INTEGER,
+    completion_tokens INTEGER,
+    classification_version TEXT NOT NULL DEFAULT 'human-subject-title-abstract-v1',
+    created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 ```
 

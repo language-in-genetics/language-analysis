@@ -55,11 +55,17 @@ cd extractor/
 # Process articles from enabled journals
 ./bulkquery.py --limit 1000
 
+# Process the title/abstract Homo sapiens filter from enabled journals
+./human_subject_bulkquery.py --limit 1000
+
 # Check batch status
 ./batchcheck.py
 
 # Fetch completed results
 ./batchfetch.py
+
+# Fetch completed Homo sapiens filter results
+./human_subject_batchfetch.py
 
 # Generate dashboard
 ./generate_dashboard.py --output-dir ../dashboard
@@ -98,6 +104,24 @@ When phrases are detected, the system also captures the exact terminology used, 
 
 The batch processing system allows efficient processing of thousands of articles with proper error handling and progress tracking, making large-scale analysis feasible within reasonable time and cost constraints.
 
+### Homo Sapiens Filter
+
+The title/abstract Homo sapiens filter is a separate OpenAI batch pass. Run
+`extractor/human_subject_bulkquery.py` to submit current focused-journal works
+that do not yet have a row in `languageingenetics.human_subject_classifications`.
+The default model is `gpt-5.4-mini`.
+
+The classifier asks whether the paper is about humans, Homo sapiens, based only
+on title and abstract. It stores `about_humans`, short evidence, confidence,
+model, token usage, and batch metadata. Fetch completed results with
+`extractor/human_subject_batchfetch.py`. `extractor/batchcheck.py` reports both
+terminology batches and Homo sapiens filter batches; `extractor/batchfetch.py`
+only consumes terminology batches.
+
+`cronscript.sh` runs this pass automatically on `raksasa`. Set
+`HUMAN_SUBJECT_BATCH_SIZE` to override the number submitted per cron run, or to
+`0` to skip new Homo sapiens submissions while still fetching completed batches.
+
 ### Retraction Comparisons
 
 The dashboard pipeline also tests whether focused-journal articles marked as retracted have different race-language vocabulary usage from non-retracted articles. `extractor/retraction_stats.py` classifies Crossref records as retracted research articles, retraction notices, or expression-of-concern update records. Retraction notices are excluded from the case/control test so that update notices are not compared with research articles.
@@ -125,6 +149,7 @@ crontab -e
 - `journals`: Manages which journals to process
 - `files`: Analysis results per article
 - `batches`: OpenAI batch job tracking
+- `human_subject_classifications`: Title/abstract Homo sapiens filter results
 
 ## Managing Journals
 
