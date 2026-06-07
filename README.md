@@ -204,6 +204,27 @@ The intended split is:
 - live review UI and public audit status on `merah` SQLite
 - canonical reporting and dashboard summaries in PostgreSQL
 
+### Homo Sapiens Audit
+
+The Homo sapiens title/abstract classifier has a parallel audit lane. It samples
+processed `languageingenetics.human_subject_classifications` rows into the same
+SQLite review database, but uses separate `human_subject_audit_*` tables so the
+race-language audit remains unchanged.
+
+- Create a balanced reproducible sample:
+  - `cd extractor && uv run create_human_subject_audit_batch.py --sample-size 200 --batch-slug human-subject-2026-seed42 --notes "Title/abstract Homo sapiens classifier validation"`
+- Push the seeded SQLite database to `merah`:
+  - `./audit/push_audit_db.sh`
+- Review UI:
+  - `/cgi-bin/audit-human-subject.cgi` requires login
+  - `/cgi-bin/audit-human-subject-status.cgi` uses the same audit login
+- Import reviews back into PostgreSQL:
+  - `cd extractor && uv run import_human_subject_audit_reviews.py --sqlite-db ../audit/review_data/lig_audit.db`
+
+Reviewers label whether the paper is about humans from title and abstract. The
+system derives `correct`, `false_positive`, and `false_negative` outcomes by
+comparing that human label with the bot's `about_humans` value.
+
 ### Full-Text AI Processing
 
 The same `merah` SQLite review database also supports a full-article AI processing track. The human task is to upload or paste full papers; the `raksasa` cron job pulls those uploads, extracts text when needed, and sends full article text to AI for terminology analysis.

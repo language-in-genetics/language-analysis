@@ -84,6 +84,16 @@ else
     log "Warning: Lig full-text upload state import failed"
 fi
 
+log "Importing lig Homo sapiens audit reviews into PostgreSQL..."
+if (
+    cd extractor
+    uv run import_human_subject_audit_reviews.py --sqlite-db ../audit/review_data/lig_audit.db
+) 2>&1 | tee -a "$LOG_FILE"; then
+    log "Lig Homo sapiens audit import completed"
+else
+    log "Warning: Lig Homo sapiens audit import failed"
+fi
+
 log "Processing queued full-text uploads..."
 if (
     cd extractor

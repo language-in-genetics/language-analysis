@@ -68,6 +68,7 @@ var fulltextAuditTemplate = template.Must(template.New("fulltext-audit").Funcs(t
             <div class="nav">
                 <a href="/cgi-bin/fulltext-status.cgi?batch={{.Batch.BatchSlug}}">Processing status</a>
                 <a href="/cgi-bin/audit.cgi">Title/abstract audit</a>
+                <a href="/cgi-bin/audit-human-subject.cgi">Homo sapiens audit</a>
             </div>
         </div>
 

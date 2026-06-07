@@ -39,6 +39,9 @@ ssh "${SSH_OPTS[@]}" "$REMOTE_HOST" "
     build fulltext-save.cgi fulltext_save.go common.go fulltext_common.go
     build fulltext-status.cgi fulltext_status.go common.go fulltext_common.go
     build fulltext-upload.cgi fulltext_upload.go common.go fulltext_common.go
+    build audit-human-subject.cgi human_subject_audit.go common.go human_subject_common.go
+    build audit-human-subject-save.cgi human_subject_save.go common.go human_subject_common.go
+    build audit-human-subject-status.cgi human_subject_status.go common.go human_subject_common.go
     step 'prepare directories'
     doas mkdir -p '$REMOTE_CGI_DIR' '$REMOTE_DB_DIR' /var/www/vhosts/lig.symmachus.org/etc
     doas chown languageingenetics:www '$REMOTE_DB_DIR'
@@ -57,5 +60,8 @@ ssh "${SSH_OPTS[@]}" "$REMOTE_HOST" "
     install_cgi fulltext-save.cgi
     install_cgi fulltext-status.cgi
     install_cgi fulltext-upload.cgi
+    install_cgi audit-human-subject.cgi
+    install_cgi audit-human-subject-save.cgi
+    install_cgi audit-human-subject-status.cgi
     step 'done'
 "

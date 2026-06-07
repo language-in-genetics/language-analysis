@@ -123,3 +123,47 @@ CREATE INDEX IF NOT EXISTS fulltext_articles_batch_reviewed_idx
 
 CREATE INDEX IF NOT EXISTS fulltext_articles_batch_status_idx
     ON fulltext_articles (batch_slug, fulltext_status, article_id);
+
+CREATE TABLE IF NOT EXISTS human_subject_audit_batches (
+    batch_slug TEXT PRIMARY KEY,
+    seed INTEGER NOT NULL,
+    sample_size INTEGER NOT NULL,
+    ai_human_sample_size INTEGER NOT NULL,
+    ai_not_human_sample_size INTEGER NOT NULL,
+    created_at TEXT NOT NULL,
+    created_by TEXT,
+    source_filter TEXT,
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS human_subject_audit_articles (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    batch_slug TEXT NOT NULL REFERENCES human_subject_audit_batches(batch_slug) ON DELETE CASCADE,
+    classification_id INTEGER NOT NULL,
+    article_id INTEGER,
+    work_id INTEGER,
+    work_version_id INTEGER,
+    doi TEXT,
+    journal_name TEXT,
+    pub_year INTEGER,
+    title TEXT,
+    abstract TEXT,
+    ai_about_humans INTEGER NOT NULL CHECK (ai_about_humans IN (0, 1)),
+    ai_evidence TEXT,
+    ai_confidence TEXT,
+    ai_model TEXT,
+    ai_prompt_tokens INTEGER,
+    ai_completion_tokens INTEGER,
+    reviewer_about_humans INTEGER CHECK (reviewer_about_humans IN (0, 1)),
+    reviewer_username TEXT,
+    review_notes TEXT,
+    reviewed_at TEXT,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (batch_slug, classification_id)
+);
+
+CREATE INDEX IF NOT EXISTS human_subject_audit_articles_batch_reviewed_idx
+    ON human_subject_audit_articles (batch_slug, reviewer_about_humans, reviewer_username);
+
+CREATE INDEX IF NOT EXISTS human_subject_audit_articles_batch_ai_idx
+    ON human_subject_audit_articles (batch_slug, ai_about_humans, classification_id);

@@ -62,6 +62,7 @@ var auditTemplate = template.Must(template.New("audit").Funcs(templateFuncs).Par
             </div>
             <div class="nav">
                 <a href="/cgi-bin/audit-status.cgi{{queryWithBatch .Batch.SampleBatch}}">Public status</a>
+                <a href="/cgi-bin/audit-human-subject.cgi">Homo sapiens audit</a>
                 <a href="/cgi-bin/fulltext-upload.cgi">Full-text AI upload</a>
                 {{range .TargetSummaries}}
                 <a href="/cgi-bin/audit.cgi?batch={{$.Batch.SampleBatch}}&target_label={{.TargetLabel}}">{{targetLabelDisplay .TargetLabel}}</a>

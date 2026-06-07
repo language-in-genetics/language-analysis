@@ -282,3 +282,106 @@ JOIN languageingenetics.fulltext_audit_articles s
     ON s.batch_id = b.id
 LEFT JOIN languageingenetics.fulltext_audit_reviews r
     ON r.sample_article_id = s.id;
+
+CREATE TABLE IF NOT EXISTS languageingenetics.human_subject_audit_batches (
+    id BIGSERIAL PRIMARY KEY,
+    slug TEXT NOT NULL UNIQUE,
+    seed INTEGER NOT NULL,
+    sample_size INTEGER NOT NULL,
+    ai_human_sample_size INTEGER NOT NULL,
+    ai_not_human_sample_size INTEGER NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    created_by TEXT,
+    source_filter TEXT,
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS languageingenetics.human_subject_audit_articles (
+    id BIGSERIAL PRIMARY KEY,
+    batch_id BIGINT NOT NULL REFERENCES languageingenetics.human_subject_audit_batches(id) ON DELETE CASCADE,
+    human_subject_classification_id BIGINT NOT NULL,
+    article_id BIGINT,
+    work_id BIGINT,
+    work_version_id BIGINT,
+    doi TEXT,
+    journal_name TEXT,
+    pub_year INTEGER,
+    title TEXT,
+    abstract TEXT,
+    ai_about_humans BOOLEAN NOT NULL,
+    ai_evidence TEXT,
+    ai_confidence TEXT,
+    ai_model TEXT,
+    ai_prompt_tokens INTEGER,
+    ai_completion_tokens INTEGER,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (batch_id, human_subject_classification_id)
+);
+
+CREATE INDEX IF NOT EXISTS human_subject_audit_articles_batch_ai_idx
+    ON languageingenetics.human_subject_audit_articles (batch_id, ai_about_humans, human_subject_classification_id);
+
+CREATE INDEX IF NOT EXISTS human_subject_audit_articles_work_version_idx
+    ON languageingenetics.human_subject_audit_articles (work_version_id);
+
+CREATE TABLE IF NOT EXISTS languageingenetics.human_subject_audit_reviews (
+    sample_article_id BIGINT PRIMARY KEY REFERENCES languageingenetics.human_subject_audit_articles(id) ON DELETE CASCADE,
+    reviewer_about_humans BOOLEAN,
+    reviewer_username TEXT,
+    review_notes TEXT,
+    reviewed_at TIMESTAMPTZ,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    source TEXT NOT NULL DEFAULT 'merah_audit_sqlite'
+);
+
+DROP VIEW IF EXISTS languageingenetics.human_subject_audit_status_view;
+
+CREATE OR REPLACE VIEW languageingenetics.human_subject_audit_status_view AS
+SELECT
+    b.id AS batch_id,
+    b.slug AS sample_batch,
+    b.seed,
+    b.sample_size,
+    b.ai_human_sample_size,
+    b.ai_not_human_sample_size,
+    b.created_at AS batch_created_at,
+    b.created_by,
+    b.source_filter,
+    b.notes,
+    s.id AS sample_article_id,
+    s.human_subject_classification_id,
+    s.article_id,
+    s.work_id,
+    s.work_version_id,
+    s.doi,
+    s.journal_name,
+    s.pub_year,
+    s.title,
+    s.abstract,
+    s.ai_about_humans,
+    s.ai_evidence,
+    s.ai_confidence,
+    s.ai_model,
+    s.ai_prompt_tokens,
+    s.ai_completion_tokens,
+    r.reviewer_about_humans,
+    r.reviewer_username,
+    r.review_notes,
+    r.reviewed_at,
+    r.updated_at AS review_updated_at,
+    CASE
+        WHEN r.sample_article_id IS NULL THEN 'pending'
+        ELSE 'reviewed'
+    END AS review_status,
+    CASE
+        WHEN r.sample_article_id IS NULL THEN NULL
+        WHEN r.reviewer_about_humans = s.ai_about_humans THEN 'correct'
+        WHEN s.ai_about_humans AND NOT r.reviewer_about_humans THEN 'false_positive'
+        WHEN NOT s.ai_about_humans AND r.reviewer_about_humans THEN 'false_negative'
+        ELSE 'disagreed'
+    END AS audit_outcome
+FROM languageingenetics.human_subject_audit_batches b
+JOIN languageingenetics.human_subject_audit_articles s
+    ON s.batch_id = b.id
+LEFT JOIN languageingenetics.human_subject_audit_reviews r
+    ON r.sample_article_id = s.id;

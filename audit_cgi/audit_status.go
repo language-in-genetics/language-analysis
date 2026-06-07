@@ -45,7 +45,7 @@ var statusTemplate = template.Must(template.New("status").Funcs(templateFuncs).P
     <div class="container">
         <div class="card">
             <h1>LIG Audit Status</h1>
-            <p class="small">This page is public. The editing interface lives at <a href="/cgi-bin/audit.cgi{{queryWithBatch .Batch.SampleBatch}}">/cgi-bin/audit.cgi</a> and requires login. Full-text AI processing status is at <a href="/cgi-bin/fulltext-status.cgi">/cgi-bin/fulltext-status.cgi</a>; paper upload is at <a href="/cgi-bin/fulltext-upload.cgi">/cgi-bin/fulltext-upload.cgi</a>.</p>
+            <p class="small">This page is public. The editing interface lives at <a href="/cgi-bin/audit.cgi{{queryWithBatch .Batch.SampleBatch}}">/cgi-bin/audit.cgi</a> and requires login. Homo sapiens audit status is at <a href="/cgi-bin/audit-human-subject-status.cgi">/cgi-bin/audit-human-subject-status.cgi</a>. Full-text AI processing status is at <a href="/cgi-bin/fulltext-status.cgi">/cgi-bin/fulltext-status.cgi</a>; paper upload is at <a href="/cgi-bin/fulltext-upload.cgi">/cgi-bin/fulltext-upload.cgi</a>.</p>
             <p class="small">Batch <code>{{.Batch.SampleBatch}}</code> · created {{formatTimestamp .Batch.CreatedAt}} · seed {{.Batch.Seed}}</p>
             <div class="filters">
                 <a href="/cgi-bin/audit-status.cgi?batch={{.Batch.SampleBatch}}">All</a>
