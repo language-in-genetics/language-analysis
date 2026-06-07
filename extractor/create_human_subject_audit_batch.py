@@ -77,24 +77,22 @@ def build_filters(
     h_clauses = [
         "h.processed = true",
         "h.about_humans IS NOT NULL",
+        "h.work_version_id IS NOT NULL",
     ]
     h_params: list[object] = []
 
-    cw_clauses = [
-        "cw.title IS NOT NULL",
-        "j.enabled = true",
-    ]
-    cw_params: list[object] = []
+    metadata_clauses: list[str] = []
+    metadata_params: list[object] = []
 
     if args.min_year is not None:
-        cw_clauses.append("cw.pub_year >= %s")
-        cw_params.append(args.min_year)
+        metadata_clauses.append("v.pub_year >= %s")
+        metadata_params.append(args.min_year)
     if args.max_year is not None:
-        cw_clauses.append("cw.pub_year <= %s")
-        cw_params.append(args.max_year)
+        metadata_clauses.append("v.pub_year <= %s")
+        metadata_params.append(args.max_year)
     if args.journal:
-        cw_clauses.append("cw.journal_name = %s")
-        cw_params.append(args.journal)
+        metadata_clauses.append("v.journal_name = %s")
+        metadata_params.append(args.journal)
     if args.require_abstract:
         h_clauses.append("h.has_abstract = true")
     if args.confidence:
@@ -111,7 +109,7 @@ def build_filters(
             """
         )
 
-    return h_clauses, h_params, cw_clauses, cw_params
+    return h_clauses, h_params, metadata_clauses, metadata_params
 
 
 def fetch_candidate_ids(
@@ -119,10 +117,20 @@ def fetch_candidate_ids(
     about_humans: bool,
     h_clauses: list[str],
     h_params: list[object],
-    cw_clauses: list[str],
-    cw_params: list[object],
+    metadata_clauses: list[str],
+    metadata_params: list[object],
 ) -> list[int]:
     h_filter = h_clauses + ["h.about_humans = %s"]
+    metadata_join = ""
+    metadata_where = ""
+    if metadata_clauses:
+        metadata_join = """
+        JOIN public.crossref_work_versions v
+          ON v.id = h.work_version_id
+         AND v.is_current
+        """
+        metadata_where = "WHERE " + " AND ".join(metadata_clauses)
+
     cur.execute(
         f"""
         WITH h_filtered AS MATERIALIZED (
@@ -134,14 +142,11 @@ def fetch_candidate_ids(
         )
         SELECT h.id
         FROM h_filtered h
-        JOIN public.crossref_current_works cw
-          ON cw.work_version_id = h.work_version_id
-        JOIN languageingenetics.journals j
-          ON j.name = cw.journal_name
-        WHERE {' AND '.join(cw_clauses)}
+        {metadata_join}
+        {metadata_where}
         ORDER BY h.id
         """,
-        h_params + [about_humans] + cw_params,
+        h_params + [about_humans] + metadata_params,
     )
     return [int(row["id"]) for row in cur.fetchall()]
 
@@ -180,13 +185,13 @@ def fetch_details(cur, classification_ids: list[int]) -> list[dict]:
         SELECT
             h.classification_id AS classification_id,
             h.article_id,
-            h.work_id,
+            COALESCE(h.work_id, v.work_id) AS work_id,
             h.work_version_id,
-            COALESCE(cw.original_doi, cw.normalized_doi, '') AS doi,
-            cw.journal_name,
-            cw.pub_year,
-            cw.title,
-            cw.abstract,
+            COALESCE(w.original_doi, w.normalized_doi, '') AS doi,
+            v.journal_name,
+            v.pub_year,
+            v.title,
+            v.abstract,
             h.about_humans,
             h.human_evidence,
             h.confidence,
@@ -194,8 +199,11 @@ def fetch_details(cur, classification_ids: list[int]) -> list[dict]:
             h.prompt_tokens,
             h.completion_tokens
         FROM selected_classifications h
-        JOIN public.crossref_current_works cw
-          ON cw.work_version_id = h.work_version_id
+        JOIN public.crossref_work_versions v
+          ON v.id = h.work_version_id
+         AND v.is_current
+        JOIN public.crossref_works w
+          ON w.id = v.work_id
         """,
         (classification_ids,),
     )
@@ -424,7 +432,7 @@ def main() -> int:
     slug = args.batch_slug or f"human-subject-{now.strftime('%Y%m%d')}-seed{args.seed}"
     source_parts = [
         "human_subject_classifications.processed=true",
-        "scope=crossref_current_works_enabled_journals",
+        "scope=human_subject_classifications",
         f"ai_human_size={human_size}",
         f"ai_not_human_size={not_human_size}",
     ]
@@ -470,12 +478,12 @@ def main() -> int:
         if batch_exists_pg(pg_cur, cfg.slug):
             raise RuntimeError(f"PostgreSQL already contains batch {cfg.slug}")
 
-        h_clauses, h_params, cw_clauses, cw_params = build_filters(args)
+        h_clauses, h_params, metadata_clauses, metadata_params = build_filters(args)
         human_candidates = fetch_candidate_ids(
-            pg_cur, True, h_clauses, h_params, cw_clauses, cw_params
+            pg_cur, True, h_clauses, h_params, metadata_clauses, metadata_params
         )
         not_human_candidates = fetch_candidate_ids(
-            pg_cur, False, h_clauses, h_params, cw_clauses, cw_params
+            pg_cur, False, h_clauses, h_params, metadata_clauses, metadata_params
         )
         human_ids = choose_ids(human_candidates, human_size, args.seed)
         not_human_ids = choose_ids(not_human_candidates, not_human_size, args.seed + 1)
