@@ -71,31 +71,37 @@ def resolve_sample_sizes(args: argparse.Namespace) -> tuple[int, int]:
     return human_size, not_human_size
 
 
-def build_filters(args: argparse.Namespace) -> tuple[list[str], list[object]]:
-    clauses = [
+def build_filters(
+    args: argparse.Namespace,
+) -> tuple[list[str], list[object], list[str], list[object]]:
+    h_clauses = [
         "h.processed = true",
         "h.about_humans IS NOT NULL",
+    ]
+    h_params: list[object] = []
+
+    cw_clauses = [
         "cw.title IS NOT NULL",
         "j.enabled = true",
     ]
-    params: list[object] = []
+    cw_params: list[object] = []
 
     if args.min_year is not None:
-        clauses.append("cw.pub_year >= %s")
-        params.append(args.min_year)
+        cw_clauses.append("cw.pub_year >= %s")
+        cw_params.append(args.min_year)
     if args.max_year is not None:
-        clauses.append("cw.pub_year <= %s")
-        params.append(args.max_year)
+        cw_clauses.append("cw.pub_year <= %s")
+        cw_params.append(args.max_year)
     if args.journal:
-        clauses.append("cw.journal_name = %s")
-        params.append(args.journal)
+        cw_clauses.append("cw.journal_name = %s")
+        cw_params.append(args.journal)
     if args.require_abstract:
-        clauses.append("h.has_abstract = true")
+        h_clauses.append("h.has_abstract = true")
     if args.confidence:
-        clauses.append("h.confidence = %s")
-        params.append(args.confidence)
+        h_clauses.append("h.confidence = %s")
+        h_params.append(args.confidence)
     if args.exclude_existing:
-        clauses.append(
+        h_clauses.append(
             """
             NOT EXISTS (
                 SELECT 1
@@ -105,23 +111,37 @@ def build_filters(args: argparse.Namespace) -> tuple[list[str], list[object]]:
             """
         )
 
-    return clauses, params
+    return h_clauses, h_params, cw_clauses, cw_params
 
 
-def fetch_candidate_ids(cur, about_humans: bool, clauses: list[str], params: list[object]) -> list[int]:
+def fetch_candidate_ids(
+    cur,
+    about_humans: bool,
+    h_clauses: list[str],
+    h_params: list[object],
+    cw_clauses: list[str],
+    cw_params: list[object],
+) -> list[int]:
+    h_filter = h_clauses + ["h.about_humans = %s"]
     cur.execute(
         f"""
+        WITH h_filtered AS MATERIALIZED (
+            SELECT
+                h.id,
+                h.work_version_id
+            FROM languageingenetics.human_subject_classifications h
+            WHERE {' AND '.join(h_filter)}
+        )
         SELECT h.id
-        FROM languageingenetics.human_subject_classifications h
+        FROM h_filtered h
         JOIN public.crossref_current_works cw
           ON cw.work_version_id = h.work_version_id
         JOIN languageingenetics.journals j
           ON j.name = cw.journal_name
-        WHERE {' AND '.join(clauses)}
-          AND h.about_humans = %s
+        WHERE {' AND '.join(cw_clauses)}
         ORDER BY h.id
         """,
-        params + [about_humans],
+        h_params + [about_humans] + cw_params,
     )
     return [int(row["id"]) for row in cur.fetchall()]
 
@@ -142,8 +162,23 @@ def fetch_details(cur, classification_ids: list[int]) -> list[dict]:
         return []
     cur.execute(
         """
+        WITH selected_classifications AS MATERIALIZED (
+            SELECT
+                h.id AS classification_id,
+                h.article_id,
+                h.work_id,
+                h.work_version_id,
+                h.about_humans,
+                h.human_evidence,
+                h.confidence,
+                h.model,
+                h.prompt_tokens,
+                h.completion_tokens
+            FROM languageingenetics.human_subject_classifications h
+            WHERE h.id = ANY(%s)
+        )
         SELECT
-            h.id AS classification_id,
+            h.classification_id AS classification_id,
             h.article_id,
             h.work_id,
             h.work_version_id,
@@ -158,10 +193,9 @@ def fetch_details(cur, classification_ids: list[int]) -> list[dict]:
             h.model,
             h.prompt_tokens,
             h.completion_tokens
-        FROM languageingenetics.human_subject_classifications h
+        FROM selected_classifications h
         JOIN public.crossref_current_works cw
           ON cw.work_version_id = h.work_version_id
-        WHERE h.id = ANY(%s)
         """,
         (classification_ids,),
     )
@@ -436,9 +470,13 @@ def main() -> int:
         if batch_exists_pg(pg_cur, cfg.slug):
             raise RuntimeError(f"PostgreSQL already contains batch {cfg.slug}")
 
-        clauses, params = build_filters(args)
-        human_candidates = fetch_candidate_ids(pg_cur, True, clauses, params)
-        not_human_candidates = fetch_candidate_ids(pg_cur, False, clauses, params)
+        h_clauses, h_params, cw_clauses, cw_params = build_filters(args)
+        human_candidates = fetch_candidate_ids(
+            pg_cur, True, h_clauses, h_params, cw_clauses, cw_params
+        )
+        not_human_candidates = fetch_candidate_ids(
+            pg_cur, False, h_clauses, h_params, cw_clauses, cw_params
+        )
         human_ids = choose_ids(human_candidates, human_size, args.seed)
         not_human_ids = choose_ids(not_human_candidates, not_human_size, args.seed + 1)
         rows = fetch_details(pg_cur, human_ids + not_human_ids)
