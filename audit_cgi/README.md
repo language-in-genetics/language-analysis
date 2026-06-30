@@ -15,6 +15,7 @@ This directory contains the `lig.symmachus.org` human-audit CGI programs.
 
 - CGI binaries: `/var/www/vhosts/lig.symmachus.org/cgi-bin/`
 - SQLite DB: `/var/www/vhosts/lig.symmachus.org/db/lig_audit.db`
+- protected full-text uploads: `/var/www/vhosts/lig.symmachus.org/db/fulltext_uploads/`
 - htpasswd file: `/var/www/vhosts/lig.symmachus.org/etc/htpasswd`
 - static dashboard: `/var/www/vhosts/lig.symmachus.org/htdocs/`
 

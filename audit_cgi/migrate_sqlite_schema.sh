@@ -46,8 +46,12 @@ add_column fulltext_articles ai_processed_at "TEXT"
 add_column fulltext_articles uploaded_filename "TEXT"
 add_column fulltext_articles uploaded_content_type "TEXT"
 add_column fulltext_articles uploaded_size "INTEGER"
+add_column fulltext_articles uploaded_file_path "TEXT"
 add_column fulltext_articles uploaded_blob "BLOB"
 add_column fulltext_articles uploaded_at "TEXT"
-drop_column fulltext_articles fulltext_path
+if has_column fulltext_articles fulltext_path; then
+    sqlite3 "$DB" "UPDATE fulltext_articles SET uploaded_file_path = COALESCE(NULLIF(uploaded_file_path, ''), fulltext_path) WHERE fulltext_path IS NOT NULL AND fulltext_path <> '';"
+    drop_column fulltext_articles fulltext_path
+fi
 
 sqlite3 "$DB" "CREATE INDEX IF NOT EXISTS fulltext_articles_ai_status_idx ON fulltext_articles (ai_analysis_status, batch_slug, article_id);"

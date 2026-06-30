@@ -47,7 +47,7 @@ The audit batch generator and reviewer UI use the same target labels throughout:
 The full-text track uses the same SQLite database on `merah`, but the human task is upload, not manual terminology coding. Humans upload or paste a full journal article, and the `raksasa` cron job extracts text where needed and sends the full article text to AI for terminology analysis.
 
 - `fulltext_batches`: reproducible full-article sample batches.
-- `fulltext_articles`: article metadata, full-text acquisition status, uploaded PDF/text/HTML blobs, extracted text, AI analysis status, AI terminology flags, and upload notes.
+- `fulltext_articles`: article metadata, full-text acquisition status, protected upload-file paths, extracted text, AI analysis status, AI terminology flags, and upload notes.
 
 The corresponding canonical PostgreSQL tables are created by [database/audit_schema.sql](/Users/gregb/Documents/devel/Word-Frequency-Analysis-/database/audit_schema.sql):
 
@@ -76,4 +76,4 @@ cd ..
 ./audit/push_audit_db.sh
 ```
 
-The nightly `raksasa` cron path pulls a SQLite backup from `merah`, processes queued full-text uploads from the copied database, then imports both the title/abstract audit and the full-text AI state into PostgreSQL.
+The nightly `raksasa` cron path pulls a SQLite backup and the protected `fulltext_uploads/` file directory from `merah`, processes queued full-text uploads from the copied database, then imports both the title/abstract audit and the full-text AI state into PostgreSQL. Uploaded source files are intentionally outside SQLite so routine database backups stay small.

@@ -65,6 +65,7 @@ type FulltextArticle struct {
 	UploadedFilename    string
 	UploadedContentType string
 	UploadedSize        int64
+	UploadedFilePath    string
 	UploadedAt          string
 	ExtractedText       string
 	AIAnalysisStatus    string
@@ -224,6 +225,7 @@ func scanFulltextArticle(scanner interface {
 		&article.UploadedFilename,
 		&article.UploadedContentType,
 		&uploadedSize,
+		&article.UploadedFilePath,
 		&article.UploadedAt,
 		&article.ExtractedText,
 		&article.AIAnalysisStatus,
@@ -299,6 +301,7 @@ func fulltextArticleSelectSQL() string {
 			COALESCE(uploaded_filename, ''),
 			COALESCE(uploaded_content_type, ''),
 			uploaded_size,
+			COALESCE(uploaded_file_path, ''),
 			COALESCE(uploaded_at, ''),
 			COALESCE(extracted_text, ''),
 			COALESCE(ai_analysis_status, 'not_queued'),

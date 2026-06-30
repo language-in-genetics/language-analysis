@@ -83,6 +83,7 @@ CREATE TABLE IF NOT EXISTS fulltext_articles (
     uploaded_filename TEXT,
     uploaded_content_type TEXT,
     uploaded_size INTEGER,
+    uploaded_file_path TEXT,
     uploaded_blob BLOB,
     uploaded_at TEXT,
     extracted_text TEXT,

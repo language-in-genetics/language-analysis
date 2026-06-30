@@ -124,6 +124,7 @@ def ensure_sqlite_ai_columns(conn: sqlite3.Connection) -> None:
         "uploaded_filename": "TEXT",
         "uploaded_content_type": "TEXT",
         "uploaded_size": "INTEGER",
+        "uploaded_file_path": "TEXT",
         "uploaded_blob": "BLOB",
         "uploaded_at": "TEXT",
     }
@@ -167,6 +168,24 @@ def upload_bytes(value) -> bytes:
     return bytes(value)
 
 
+def default_upload_dir(sqlite_path: Path) -> Path:
+    return sqlite_path.parent / "fulltext_uploads"
+
+
+def upload_file_bytes(upload_dir: Path, rel_path: str | None) -> bytes:
+    rel_path = sanitize_string(rel_path).strip()
+    if not rel_path:
+        return b""
+    rel = Path(rel_path)
+    if rel.is_absolute() or ".." in rel.parts:
+        raise RuntimeError(f"unsafe upload file path in SQLite: {rel_path}")
+    path = (upload_dir / rel).resolve()
+    root = upload_dir.resolve()
+    if root not in path.parents and path != root:
+        raise RuntimeError(f"upload file path escapes upload directory: {rel_path}")
+    return path.read_bytes()
+
+
 def strip_html(raw: str) -> str:
     extractor = HTMLTextExtractor()
     extractor.feed(raw)
@@ -201,14 +220,17 @@ def extract_upload_text(filename: str | None, content_type: str | None, data: by
     return text
 
 
-def full_text_for_row(row: sqlite3.Row) -> str:
+def full_text_for_row(row: sqlite3.Row, upload_dir: Path) -> str:
     existing = sanitize_string(row["extracted_text"]).strip()
     if existing:
         return existing
+    file_data = upload_file_bytes(upload_dir, row["uploaded_file_path"])
+    if file_data:
+        return sanitize_string(extract_upload_text(row["uploaded_filename"], row["uploaded_content_type"], file_data)).strip()
     blob = upload_bytes(row["uploaded_blob"])
     if blob:
         return sanitize_string(extract_upload_text(row["uploaded_filename"], row["uploaded_content_type"], blob)).strip()
-    raise RuntimeError("queued article has no extracted text and no uploaded blob")
+    raise RuntimeError("queued article has no extracted text and no uploaded file")
 
 
 def make_prompt(row: sqlite3.Row, full_text: str, max_chars: int) -> str:
@@ -333,12 +355,13 @@ def load_pg_processed_result(cur, row: sqlite3.Row) -> dict | None:
     return dict(result) if result else None
 
 
-def same_processed_source(row: sqlite3.Row, result: dict) -> bool:
+def same_processed_source(row: sqlite3.Row, result: dict, upload_dir: Path) -> bool:
     local_text = sanitize_string(row["extracted_text"]).strip()
     processed_text = sanitize_string(result.get("extracted_text", "")).strip()
     if local_text:
         return local_text == processed_text
-    if upload_bytes(row["uploaded_blob"]):
+    has_uploaded_file = bool(sanitize_string(row["uploaded_file_path"]).strip())
+    if has_uploaded_file or upload_bytes(row["uploaded_blob"]):
         return (
             sanitize_string(row["uploaded_filename"]) == sanitize_string(result.get("uploaded_filename"))
             and int(row["uploaded_size"] or 0) == int(result.get("uploaded_size") or 0)
@@ -455,6 +478,7 @@ def queued_rows(conn: sqlite3.Connection, limit: int) -> list[sqlite3.Row]:
             uploaded_filename,
             uploaded_content_type,
             uploaded_size,
+            uploaded_file_path,
             uploaded_blob,
             extracted_text
         FROM fulltext_articles
@@ -467,6 +491,7 @@ def queued_rows(conn: sqlite3.Connection, limit: int) -> list[sqlite3.Row]:
           AND (
               TRIM(COALESCE(extracted_text, '')) <> ''
               OR LENGTH(COALESCE(uploaded_blob, X'')) > 0
+              OR TRIM(COALESCE(uploaded_file_path, '')) <> ''
           )
         ORDER BY datetime(updated_at), batch_slug, article_id
         LIMIT ?
@@ -486,6 +511,7 @@ def main() -> int:
     parser.add_argument("--model", default="gpt-5-mini", help="OpenAI model for full-text analysis")
     parser.add_argument("--limit", type=int, default=10, help="Maximum queued uploads to process")
     parser.add_argument("--max-chars", type=int, default=120000, help="Maximum article-text characters to send")
+    parser.add_argument("--upload-dir", help="Directory containing uploaded full-text files; defaults next to the SQLite DB")
     parser.add_argument("--dry-run", action="store_true", help="List queued rows without calling OpenAI or updating state")
     args = parser.parse_args()
 
@@ -493,6 +519,7 @@ def main() -> int:
     if not sqlite_path.exists():
         print(f"SQLite audit database not found: {sqlite_path}")
         return 0
+    upload_dir = Path(args.upload_dir).resolve() if args.upload_dir else default_upload_dir(sqlite_path).resolve()
 
     sqlite_conn = sqlite3.connect(sqlite_path)
     sqlite_conn.row_factory = sqlite3.Row
@@ -525,11 +552,11 @@ def main() -> int:
             label = f"{row['batch_slug']} article {row['article_id']}"
             try:
                 existing = load_pg_processed_result(pg_cur, row)
-                if existing and same_processed_source(row, existing):
+                if existing and same_processed_source(row, existing, upload_dir):
                     update_sqlite_from_pg_processed(sqlite_conn, row, existing)
                     print(f"Already processed in PostgreSQL; refreshed local SQLite for {label}")
                     continue
-                full_text = full_text_for_row(row)
+                full_text = full_text_for_row(row, upload_dir)
                 if not full_text:
                     raise RuntimeError("extracted full text was empty")
                 arguments, usage = analyze_article(client, args.model, row, full_text, args.max_chars)

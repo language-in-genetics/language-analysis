@@ -77,6 +77,7 @@ def ensure_sqlite_schema(conn: sqlite3.Connection) -> None:
         "uploaded_filename": "TEXT",
         "uploaded_content_type": "TEXT",
         "uploaded_size": "INTEGER",
+        "uploaded_file_path": "TEXT",
         "uploaded_blob": "BLOB",
         "uploaded_at": "TEXT",
     }

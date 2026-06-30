@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"html/template"
 	"net/url"
+	"os"
+	"path/filepath"
 	"strings"
 	"time"
 
@@ -29,7 +31,8 @@ const targetLabelOrderSQL = `CASE target_label
 END`
 
 type Config struct {
-	DBPath string
+	DBPath    string
+	UploadDir string
 }
 
 type BatchMeta struct {
@@ -81,7 +84,20 @@ type ArticleRow struct {
 }
 
 func GetConfig() Config {
-	return Config{DBPath: "../db/lig_audit.db"}
+	dbPath := getenvDefault("LIG_AUDIT_DB", "../db/lig_audit.db")
+	uploadDir := os.Getenv("LIG_FULLTEXT_UPLOAD_DIR")
+	if uploadDir == "" {
+		uploadDir = filepath.Join(filepath.Dir(dbPath), "fulltext_uploads")
+	}
+	return Config{DBPath: dbPath, UploadDir: uploadDir}
+}
+
+func getenvDefault(name, fallback string) string {
+	value := strings.TrimSpace(os.Getenv(name))
+	if value == "" {
+		return fallback
+	}
+	return value
 }
 
 func OpenDatabase(path string) (*sql.DB, error) {

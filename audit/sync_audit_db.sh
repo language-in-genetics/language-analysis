@@ -6,12 +6,15 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 LOCAL_DB_DIR="${LOCAL_DB_DIR:-$SCRIPT_DIR/review_data}"
 LOCAL_DB="${LOCAL_DB:-$LOCAL_DB_DIR/lig_audit.db}"
+LOCAL_UPLOAD_DIR="${LOCAL_UPLOAD_DIR:-$LOCAL_DB_DIR/fulltext_uploads}"
 REMOTE_HOST="${REMOTE_HOST:-merah.cassia.ifost.org.au}"
 REMOTE_DB="${REMOTE_DB:-/var/www/vhosts/lig.symmachus.org/db/lig_audit.db}"
+REMOTE_UPLOAD_DIR="${REMOTE_UPLOAD_DIR:-$(dirname "$REMOTE_DB")/fulltext_uploads}"
 REMOTE_SNAPSHOT="${REMOTE_SNAPSHOT:-/tmp/lig_audit_snapshot_$(date +%Y%m%d%H%M%S)_$$.db}"
 LOG_FILE="${LOG_FILE:-$SCRIPT_DIR/audit_sync.log}"
 
 mkdir -p "$LOCAL_DB_DIR"
+mkdir -p "$LOCAL_UPLOAD_DIR"
 mkdir -p "$(dirname "$LOG_FILE")"
 
 log() {
@@ -43,6 +46,16 @@ ssh -o BatchMode=yes "$REMOTE_HOST" "
 "
 scp "$REMOTE_HOST:$REMOTE_SNAPSHOT" "$LOCAL_DB"
 ssh -o BatchMode=yes "$REMOTE_HOST" "rm -f '$REMOTE_SNAPSHOT' 2>/dev/null || doas rm -f '$REMOTE_SNAPSHOT'"
+
+if ssh -o BatchMode=yes "$REMOTE_HOST" "test -d '$REMOTE_UPLOAD_DIR'"; then
+    if ! rsync -az --delete "$REMOTE_HOST:$REMOTE_UPLOAD_DIR/" "$LOCAL_UPLOAD_DIR/"; then
+        log "Direct upload-file rsync failed; retrying through doas as languageingenetics"
+        rsync -az --delete --rsync-path="${REMOTE_RSYNC_PATH:-doas -u languageingenetics rsync}" "$REMOTE_HOST:$REMOTE_UPLOAD_DIR/" "$LOCAL_UPLOAD_DIR/"
+    fi
+    log "Synced upload files to $LOCAL_UPLOAD_DIR"
+else
+    log "No remote upload file directory yet: $REMOTE_UPLOAD_DIR"
+fi
 
 LOCAL_SIZE=$(ls -lh "$LOCAL_DB" | awk '{print $5}')
 AUDIT_COUNT=$(sqlite3 "$LOCAL_DB" "SELECT COUNT(*) FROM audit_articles WHERE target_confirmed IS NOT NULL;")

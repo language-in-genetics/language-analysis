@@ -8,6 +8,7 @@ REMOTE_CGI_DIR="${2:-/var/www/vhosts/lig.symmachus.org/cgi-bin}"
 REMOTE_BUILD_DIR="${3:-/home/gregb/lig-audit-build}"
 REMOTE_DB="${REMOTE_DB:-/var/www/vhosts/lig.symmachus.org/db/lig_audit.db}"
 REMOTE_DB_DIR="$(dirname "$REMOTE_DB")"
+REMOTE_UPLOAD_DIR="${REMOTE_UPLOAD_DIR:-$REMOTE_DB_DIR/fulltext_uploads}"
 REMOTE_MIGRATION_DIR="${REMOTE_MIGRATION_DIR:-/tmp/lig-audit-migrate}"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -43,9 +44,9 @@ ssh "${SSH_OPTS[@]}" "$REMOTE_HOST" "
     build audit-human-subject-save.cgi human_subject_save.go common.go human_subject_common.go
     build audit-human-subject-status.cgi human_subject_status.go common.go human_subject_common.go
     step 'prepare directories'
-    doas mkdir -p '$REMOTE_CGI_DIR' '$REMOTE_DB_DIR' /var/www/vhosts/lig.symmachus.org/etc
-    doas chown languageingenetics:www '$REMOTE_DB_DIR'
-    doas chmod 775 '$REMOTE_DB_DIR'
+    doas mkdir -p '$REMOTE_CGI_DIR' '$REMOTE_DB_DIR' '$REMOTE_UPLOAD_DIR' /var/www/vhosts/lig.symmachus.org/etc
+    doas chown languageingenetics:www '$REMOTE_DB_DIR' '$REMOTE_UPLOAD_DIR'
+    doas chmod 775 '$REMOTE_DB_DIR' '$REMOTE_UPLOAD_DIR'
     doas mkdir -p '$REMOTE_MIGRATION_DIR'
     step 'install migration files'
     doas install -o languageingenetics -g daemon -m 644 init_schema.sql '$REMOTE_MIGRATION_DIR/init_schema.sql'

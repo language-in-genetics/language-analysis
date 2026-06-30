@@ -13,8 +13,11 @@ REMOTE_HOST="${REMOTE_HOST:-merah.cassia.ifost.org.au}"
 REMOTE_DB="${REMOTE_DB:-/var/www/vhosts/lig.symmachus.org/db/lig_audit.db}"
 REMOTE_DB_DIR="$(dirname "$REMOTE_DB")"
 REMOTE_BACKUP_DIR="${REMOTE_BACKUP_DIR:-$REMOTE_DB_DIR/backups}"
+REMOTE_UPLOAD_DIR="${REMOTE_UPLOAD_DIR:-$REMOTE_DB_DIR/fulltext_uploads}"
 REMOTE_TMP="${REMOTE_TMP:-/tmp/lig_audit_push_$(date +%Y%m%d%H%M%S)_$$.db}"
+LOCAL_UPLOAD_DIR="${LOCAL_UPLOAD_DIR:-$SCRIPT_DIR/review_data/fulltext_uploads}"
 LOG_FILE="${LOG_FILE:-$SCRIPT_DIR/audit_sync.log}"
+BACKUP_RETENTION_DAYS="${BACKUP_RETENTION_DAYS:-3}"
 
 mkdir -p "$(dirname "$LOG_FILE")"
 
@@ -36,21 +39,24 @@ scp "$LOCAL_DB" "$REMOTE_HOST:$REMOTE_TMP"
 ssh -o BatchMode=yes "$REMOTE_HOST" "
     set -e
     if doas -n true >/dev/null 2>&1; then
-        doas mkdir -p '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR'
-        doas chown languageingenetics:www '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR'
+        doas mkdir -p '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR' '$REMOTE_UPLOAD_DIR'
+        doas chown languageingenetics:www '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR' '$REMOTE_UPLOAD_DIR'
+        doas chmod 775 '$REMOTE_DB_DIR' '$REMOTE_UPLOAD_DIR'
         if test -f '$REMOTE_DB'; then
             doas -u languageingenetics sqlite3 '$REMOTE_DB' 'PRAGMA wal_checkpoint(TRUNCATE);' >/dev/null
             doas -u languageingenetics sqlite3 '$REMOTE_DB' \".backup '$REMOTE_BACKUP_DIR/lig_audit_$(date +%Y%m%d%H%M%S).db'\"
         fi
+        doas -u languageingenetics find '$REMOTE_BACKUP_DIR' -type f -name 'lig_audit_*.db' -mtime +'$BACKUP_RETENTION_DAYS' -exec rm -f -- {} +
         doas rm -f '$REMOTE_DB' '$REMOTE_DB-wal' '$REMOTE_DB-shm'
         doas install -o languageingenetics -g www -m 664 '$REMOTE_TMP' '$REMOTE_DB'
         rm -f '$REMOTE_TMP'
         doas -u languageingenetics sqlite3 '$REMOTE_DB' < /dev/null
     else
-        mkdir -p '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR'
+        mkdir -p '$REMOTE_DB_DIR' '$REMOTE_BACKUP_DIR' '$REMOTE_UPLOAD_DIR'
         if test -f '$REMOTE_DB'; then
             sqlite3 '$REMOTE_DB' 'PRAGMA wal_checkpoint(TRUNCATE);' >/dev/null
             sqlite3 '$REMOTE_DB' \".backup '$REMOTE_BACKUP_DIR/lig_audit_$(date +%Y%m%d%H%M%S).db'\"
+            find '$REMOTE_BACKUP_DIR' -type f -name 'lig_audit_*.db' -mtime +'$BACKUP_RETENTION_DAYS' -exec rm -f -- {} +
             sqlite3 '$REMOTE_DB' \".restore '$REMOTE_TMP'\"
         else
             cp '$REMOTE_TMP' '$REMOTE_DB'
@@ -60,6 +66,16 @@ ssh -o BatchMode=yes "$REMOTE_HOST" "
         sqlite3 '$REMOTE_DB' < /dev/null
     fi
 "
+
+if [[ -d "$LOCAL_UPLOAD_DIR" ]]; then
+    log "Syncing upload files from $LOCAL_UPLOAD_DIR to $REMOTE_HOST:$REMOTE_UPLOAD_DIR"
+    if ! rsync -az "$LOCAL_UPLOAD_DIR/" "$REMOTE_HOST:$REMOTE_UPLOAD_DIR/"; then
+        log "Direct upload-file rsync failed; retrying through doas as languageingenetics"
+        rsync -az --rsync-path="${REMOTE_RSYNC_PATH:-doas -u languageingenetics rsync}" "$LOCAL_UPLOAD_DIR/" "$REMOTE_HOST:$REMOTE_UPLOAD_DIR/"
+    fi
+else
+    log "No local upload file directory to sync: $LOCAL_UPLOAD_DIR"
+fi
 
 log "Pushed audit database to $REMOTE_HOST:$REMOTE_DB"
 log "=== Lig audit database push complete ==="

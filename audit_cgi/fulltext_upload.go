@@ -11,6 +11,7 @@ import (
 	"path/filepath"
 	"strconv"
 	"strings"
+	"time"
 )
 
 const maxFulltextUploadBytes = 80 << 20
@@ -77,7 +78,7 @@ var fulltextUploadTemplate = template.Must(template.New("fulltext-upload").Funcs
                 <input type="hidden" name="article_id" value="{{.Article.ArticleID}}">
 
                 <h3>Upload File</h3>
-                <p class="small">Upload or paste the full paper here. Plain text, HTML, and PDF uploads are stored in SQLite and queued for AI processing by the raksasa cron job. Pasted text is used directly.</p>
+                <p class="small">Upload or paste the full paper here. Plain text, HTML, and PDF uploads are stored outside SQLite under the protected database directory and queued for AI processing by the raksasa cron job. Pasted text is used directly.</p>
                 <input type="file" name="article_file">
 
                 <h3>Full Article Text</h3>
@@ -120,7 +121,7 @@ func handleFulltextUpload(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if r.Method == http.MethodPost {
-		handleFulltextUploadPost(w, r, db, remoteUser)
+		handleFulltextUploadPost(w, r, db, config.UploadDir, remoteUser)
 		return
 	}
 	if r.Method != http.MethodGet {
@@ -202,7 +203,7 @@ func requestedFulltextUploadTarget(r *http.Request, db *sql.DB) (string, int, er
 	return batch, articleID, nil
 }
 
-func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB, remoteUser string) {
+func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB, uploadDir, remoteUser string) {
 	r.Body = http.MaxBytesReader(w, r.Body, maxFulltextUploadBytes)
 	if err := r.ParseMultipartForm(maxFulltextUploadBytes); err != nil {
 		renderFulltextUploadPage(w, r, db, remoteUser, "", "Upload failed: "+err.Error())
@@ -220,6 +221,7 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 	var uploadedBlob []byte
 	uploadedFilename := ""
 	uploadedContentType := ""
+	uploadedFilePath := ""
 
 	file, header, err := r.FormFile("article_file")
 	if err == nil {
@@ -233,6 +235,11 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 			uploadedBlob = uploadBytes
 			uploadedFilename = strings.TrimSpace(header.Filename)
 			uploadedContentType = strings.TrimSpace(header.Header.Get("Content-Type"))
+			uploadedFilePath, err = storeFulltextUpload(uploadDir, batch, articleID, uploadedFilename, uploadBytes)
+			if err != nil {
+				renderFulltextUploadPageForTarget(w, db, remoteUser, batch, articleID, "", "Failed to store uploaded file: "+err.Error())
+				return
+			}
 			if extractedText == "" && looksTextUpload(uploadedFilename, uploadedContentType) {
 				extractedText = strings.TrimSpace(string(uploadBytes))
 			}
@@ -267,7 +274,8 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 			uploaded_filename = CASE WHEN ? = 1 THEN ? ELSE uploaded_filename END,
 			uploaded_content_type = CASE WHEN ? = 1 THEN ? ELSE uploaded_content_type END,
 			uploaded_size = CASE WHEN ? = 1 THEN ? ELSE uploaded_size END,
-			uploaded_blob = CASE WHEN ? = 1 THEN ? ELSE uploaded_blob END,
+			uploaded_file_path = CASE WHEN ? = 1 THEN ? ELSE uploaded_file_path END,
+			uploaded_blob = CASE WHEN ? = 1 THEN NULL ELSE uploaded_blob END,
 			uploaded_at = CASE WHEN ? = 1 THEN CURRENT_TIMESTAMP ELSE uploaded_at END,
 			extracted_text = ?,
 			ai_analysis_status = ?,
@@ -280,7 +288,8 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 		hasUploadedFileInt, uploadedFilename,
 		hasUploadedFileInt, uploadedContentType,
 		hasUploadedFileInt, uploadedSize,
-		hasUploadedFileInt, uploadedBlob,
+		hasUploadedFileInt, uploadedFilePath,
+		hasUploadedFileInt,
 		hasUploadedFileInt,
 		extractedText, analysisStatus, remoteUser, reviewNotes, batch, articleID)
 	if err != nil {
@@ -290,9 +299,70 @@ func handleFulltextUploadPost(w http.ResponseWriter, r *http.Request, db *sql.DB
 
 	message := "Full text saved and queued for AI analysis."
 	if extractedText == "" {
-		message = "File saved in SQLite and queued for raksasa-side text extraction and AI analysis."
+		message = "File saved outside SQLite and queued for raksasa-side text extraction and AI analysis."
 	}
 	renderFulltextUploadPageForTarget(w, db, remoteUser, batch, articleID, message, "")
+}
+
+func storeFulltextUpload(uploadDir, batch string, articleID int, filename string, data []byte) (string, error) {
+	if len(data) == 0 {
+		return "", nil
+	}
+	rel := filepath.ToSlash(filepath.Join(safePathComponent(batch), strconv.Itoa(articleID), fmt.Sprintf("%d_%s", time.Now().UTC().UnixNano(), safeUploadFilename(filename))))
+	abs := filepath.Join(uploadDir, filepath.FromSlash(rel))
+	if err := os.MkdirAll(filepath.Dir(abs), 0755); err != nil {
+		return "", err
+	}
+	tmp := abs + ".tmp"
+	if err := os.WriteFile(tmp, data, 0644); err != nil {
+		return "", err
+	}
+	if err := os.Rename(tmp, abs); err != nil {
+		_ = os.Remove(tmp)
+		return "", err
+	}
+	return rel, nil
+}
+
+func safePathComponent(value string) string {
+	cleaned := safeUploadFilename(value)
+	if cleaned == "" {
+		return "unknown"
+	}
+	return cleaned
+}
+
+func safeUploadFilename(filename string) string {
+	filename = filepath.Base(strings.TrimSpace(filename))
+	if filename == "." || filename == string(filepath.Separator) || filename == "" {
+		filename = "upload.bin"
+	}
+	var b strings.Builder
+	for _, r := range filename {
+		if (r >= 'a' && r <= 'z') || (r >= 'A' && r <= 'Z') || (r >= '0' && r <= '9') || r == '.' || r == '_' || r == '-' {
+			b.WriteRune(r)
+		} else {
+			b.WriteRune('_')
+		}
+	}
+	out := strings.Trim(b.String(), "._-")
+	if out == "" {
+		out = "upload.bin"
+	}
+	if len(out) > 120 {
+		ext := filepath.Ext(out)
+		base := strings.TrimSuffix(out, ext)
+		limit := 120 - len(ext)
+		if limit < 20 {
+			limit = 120
+			ext = ""
+		}
+		if len(base) > limit {
+			base = base[:limit]
+		}
+		out = base + ext
+	}
+	return out
 }
 
 func looksTextUpload(filename, contentType string) bool {

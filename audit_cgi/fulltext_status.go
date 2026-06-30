@@ -202,6 +202,7 @@ func publicFulltextArticleSelectSQL() string {
 			'' AS uploaded_filename,
 			'' AS uploaded_content_type,
 			NULL AS uploaded_size,
+			'' AS uploaded_file_path,
 			'' AS uploaded_at,
 			'' AS extracted_text,
 			COALESCE(ai_analysis_status, 'not_queued'),
@@ -288,6 +289,7 @@ func sanitizeFulltextArticleForPublic(article FulltextArticle) FulltextArticle {
 	article.UploadedFilename = ""
 	article.UploadedContentType = ""
 	article.UploadedSize = 0
+	article.UploadedFilePath = ""
 	article.UploadedAt = ""
 	article.ExtractedText = ""
 	article.QuotedEvidence = ""
