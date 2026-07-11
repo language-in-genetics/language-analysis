@@ -24,6 +24,17 @@ if [[ -z "${CROSSREF_RETRACTION_SOURCE_SQLITE:-}" ]]; then
         fi
     done
 fi
+if [[ -z "${CROSSREF_AUTHOR_SOURCE_SQLITE:-}" ]]; then
+    for candidate in \
+        "${CROSSREF_RETRACTION_SOURCE_SQLITE:-}" \
+        "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi/focused-journals.sqlite" \
+        "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi_rebuilt_20260506/focused-journals.sqlite"; do
+        if [[ -n "$candidate" && -s "$candidate" ]]; then
+            export CROSSREF_AUTHOR_SOURCE_SQLITE="$candidate"
+            break
+        fi
+    done
+fi
 if [[ -z "${CROSSREF_RETRACTION_SOURCE_JSONL_GZ:-}" ]]; then
     for candidate in \
         "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi_rebuilt_20260506/focused-journals-doi.jsonl.gz" \
