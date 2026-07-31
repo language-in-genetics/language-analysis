@@ -298,7 +298,7 @@ def process_article(row):
         "method": "POST",
         "url": "/v1/chat/completions",
         "body": {
-            "model": "gpt-5-mini",
+            "model": "gpt-5.6-luna",
             "messages": [{"role": "user", "content": prompt}],
             "tools": tools,
             "tool_choice": {"type": "function", "function": {"name": "analyze_text"}}

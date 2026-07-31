@@ -24,7 +24,7 @@ parser.add_argument("--pub-year", type=int, help="Only submit articles from this
 parser.add_argument("--output-file", help="Where to put the batch file (default: random tempfile)")
 parser.add_argument("--dry-run", action="store_true", help="Don't send the batch to OpenAI")
 parser.add_argument("--batch-id-save-file", help="What file to put the local batch ID into")
-parser.add_argument("--model", default="gpt-5.4-mini", help="OpenAI model to use for this classifier")
+parser.add_argument("--model", default="gpt-5.6-luna", help="OpenAI model to use for this classifier")
 parser.add_argument(
     "--openai-api-key",
     default=os.environ.get("OPENAI_API_KEY_FILE", os.path.expanduser("~/.openai.lig.key")),

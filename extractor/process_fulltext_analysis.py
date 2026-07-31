@@ -508,7 +508,7 @@ def main() -> int:
         default=os.environ.get("OPENAI_API_KEY_FILE", os.path.expanduser("~/.openai.lig.key")),
         help="Path to the OpenAI API key file",
     )
-    parser.add_argument("--model", default="gpt-5-mini", help="OpenAI model for full-text analysis")
+    parser.add_argument("--model", default="gpt-5.6-luna", help="OpenAI model for full-text analysis")
     parser.add_argument("--limit", type=int, default=10, help="Maximum queued uploads to process")
     parser.add_argument("--max-chars", type=int, default=120000, help="Maximum article-text characters to send")
     parser.add_argument("--upload-dir", help="Directory containing uploaded full-text files; defaults next to the SQLite DB")
