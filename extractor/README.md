@@ -95,7 +95,7 @@ Now run:
 # Homo sapiens title/abstract filter
 
 The Homo sapiens filter is a separate PostgreSQL/OpenAI batch pass. It asks
-`gpt-5.6-luna` to decide whether an article is about humans, Homo sapiens, based
+`gpt-5.4-mini` to decide whether an article is about humans, Homo sapiens, based
 only on the title and abstract.
 
 Run:

@@ -117,7 +117,7 @@ The batch processing system allows efficient processing of thousands of articles
 The title/abstract Homo sapiens filter is a separate OpenAI batch pass. Run
 `extractor/human_subject_bulkquery.py` to submit current focused-journal works
 that do not yet have a row in `languageingenetics.human_subject_classifications`.
-The default model is `gpt-5.6-luna`.
+The default model is `gpt-5.4-mini`.
 
 The classifier asks whether the paper is about humans, Homo sapiens, based only
 on title and abstract. It stores `about_humans`, short evidence, confidence,
