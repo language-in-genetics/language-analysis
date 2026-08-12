@@ -10,6 +10,7 @@ REMOTE_DB="${REMOTE_DB:-/var/www/vhosts/lig.symmachus.org/db/lig_audit.db}"
 REMOTE_DB_DIR="$(dirname "$REMOTE_DB")"
 REMOTE_UPLOAD_DIR="${REMOTE_UPLOAD_DIR:-$REMOTE_DB_DIR/fulltext_uploads}"
 REMOTE_MIGRATION_DIR="${REMOTE_MIGRATION_DIR:-/tmp/lig-audit-migrate}"
+REMOTE_GO="${REMOTE_GO:-/usr/local/go1.26.5/bin/go}"
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 SSH_OPTS=(-o ServerAliveInterval=30 -o ServerAliveCountMax=12)
@@ -28,8 +29,10 @@ log "building and installing on remote host"
 ssh "${SSH_OPTS[@]}" "$REMOTE_HOST" "
     set -e
     cd '$REMOTE_BUILD_DIR'
+    test -x '$REMOTE_GO'
+    export GOTOOLCHAIN=local
     step() { printf '[lig-deploy] %s\n' \"\$1\"; }
-    build() { output=\"\$1\"; shift; step \"build \$output\"; CGO_ENABLED=1 /usr/local/bin/go build -o \"\$output\" \"\$@\"; }
+    build() { output=\"\$1\"; shift; step \"build \$output\"; CGO_ENABLED=1 '$REMOTE_GO' build -o \"\$output\" \"\$@\"; }
     install_cgi() { name=\"\$1\"; step \"install \$name\"; doas install -o languageingenetics -g daemon -m 755 \"\$name\" '$REMOTE_CGI_DIR'/\"\$name\"; }
 
     build audit.cgi audit.go common.go
