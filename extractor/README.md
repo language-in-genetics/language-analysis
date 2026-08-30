@@ -112,4 +112,3 @@ evidence, confidence, model, and token usage fields. The normal
 `batchfetch.py` continues to fetch only the terminology pass; use
 `human_subject_batchfetch.py` for the Homo sapiens filter.
 
-

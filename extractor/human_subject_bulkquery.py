@@ -188,6 +188,14 @@ def record_diagnostic(event_type, article_id, **details):
     )
 
 
+def abort_openai_connection_error(action, error):
+    print(f"OpenAI connection error while {action}: {error}", file=sys.stderr)
+    print("No OpenAI batch was recorded locally; queued database changes were rolled back.", file=sys.stderr)
+    conn.rollback()
+    conn.close()
+    sys.exit(1)
+
+
 tools = [{
     "type": "function",
     "function": {
@@ -421,22 +429,25 @@ if args.dry_run:
 api_key = open(args.openai_api_key).read().strip()
 client = openai.OpenAI(api_key=api_key)
 
-batch_input_file = client.files.create(
-    file=open(args.output_file, "rb"),
-    purpose="batch",
-)
+try:
+    batch_input_file = client.files.create(
+        file=open(args.output_file, "rb"),
+        purpose="batch",
+    )
 
-result = client.batches.create(
-    input_file_id=batch_input_file.id,
-    endpoint="/v1/chat/completions",
-    completion_window="24h",
-    metadata={
-        "description": f"batch {batch_id} (human-subject filter)",
-        "local_batch_id": f"{batch_id}",
-        "batch_kind": BATCH_KIND,
-        "model": args.model,
-    },
-)
+    result = client.batches.create(
+        input_file_id=batch_input_file.id,
+        endpoint="/v1/chat/completions",
+        completion_window="24h",
+        metadata={
+            "description": f"batch {batch_id} (human-subject filter)",
+            "local_batch_id": f"{batch_id}",
+            "batch_kind": BATCH_KIND,
+            "model": args.model,
+        },
+    )
+except openai.APIConnectionError as e:
+    abort_openai_connection_error("submitting the human-subject batch to OpenAI", e)
 
 cursor.execute(
     """

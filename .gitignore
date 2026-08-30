@@ -14,11 +14,18 @@ cronscript.log
 __pycache__/
 *.pyc
 
+# SQLite transient sidecar files
+*.sqlite-shm
+*.sqlite-wal
+
 # Generated dashboard files
 dashboard/
 audit/review_data/
 audit/*.log
 audit_cgi/*.cgi
+
+# Private/raw meeting transcripts
+paper/source-material/transcripts/
 
 # Query diagnostic and optimization logs
 logs/

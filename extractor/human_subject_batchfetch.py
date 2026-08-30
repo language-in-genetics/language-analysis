@@ -124,6 +124,13 @@ def ensure_schema(cursor, conn):
     conn.commit()
 
 
+def abort_openai_connection_error(action, error):
+    logging.error("OpenAI connection error while %s: %s", action, error)
+    logging.error("Leaving unretrieved human-subject batches unchanged; a later cron run can retry.")
+    conn.close()
+    sys.exit(1)
+
+
 api_key = open(args.openai_api_key).read().strip()
 client = openai.OpenAI(api_key=api_key)
 
@@ -157,19 +164,22 @@ for batch_row in batches:
 
     logging.info(f"Processing human-subject batch {local_batch_id} (OpenAI ID: {openai_batch_id})")
 
-    openai_result = client.batches.retrieve(openai_batch_id)
-    if openai_result.status != "completed":
-        logging.info(f"Batch {local_batch_id} status: {openai_result.status} (skipping)")
-        continue
-    if openai_result.error_file_id is not None:
-        error_file_response = client.files.content(openai_result.error_file_id)
-        logging.error(f"Batch {local_batch_id} has errors:\n{error_file_response.text}")
-        sys.stderr.write(error_file_response.text)
-    if openai_result.output_file_id is None:
-        logging.warning(f"Batch {local_batch_id} has no output file (skipping)")
-        continue
+    try:
+        openai_result = client.batches.retrieve(openai_batch_id)
+        if openai_result.status != "completed":
+            logging.info(f"Batch {local_batch_id} status: {openai_result.status} (skipping)")
+            continue
+        if openai_result.error_file_id is not None:
+            error_file_response = client.files.content(openai_result.error_file_id)
+            logging.error(f"Batch {local_batch_id} has errors:\n{error_file_response.text}")
+            sys.stderr.write(error_file_response.text)
+        if openai_result.output_file_id is None:
+            logging.warning(f"Batch {local_batch_id} has no output file (skipping)")
+            continue
 
-    file_response = client.files.content(openai_result.output_file_id)
+        file_response = client.files.content(openai_result.output_file_id)
+    except openai.APIConnectionError as e:
+        abort_openai_connection_error(f"fetching human-subject batch {local_batch_id}", e)
     iterator = file_response.text.splitlines()
 
     if args.progress_bar:

@@ -14,6 +14,15 @@ from decimal import Decimal
 import psycopg2
 import psycopg2.extras
 
+from author_persistence_stats import (
+    AUTHOR_SOURCE_SQL,
+    build_author_persistence_statistics,
+    load_author_source_rows_from_sqlite,
+    render_author_persistence_dashboard_section,
+    write_author_persistence_annual_csv,
+    write_author_persistence_csv,
+    write_author_persistence_html,
+)
 from retraction_stats import (
     PROCESSED_ARTICLES_SQL,
     PROCESSED_FILES_SQL,
@@ -828,6 +837,35 @@ write_stats_csv(retraction_statistics, os.path.join(args.output_dir, 'retraction
 write_stats_html(retraction_statistics, os.path.join(args.output_dir, 'retraction_statistics.html'))
 retraction_statistics_section = render_retraction_statistics_section(retraction_statistics)
 
+print("Building shared-author persistence statistics...", file=sys.stderr)
+author_source_sqlite = (
+    os.environ.get("CROSSREF_AUTHOR_SOURCE_SQLITE")
+    or os.environ.get("CROSSREF_RETRACTION_SOURCE_SQLITE")
+)
+if author_source_sqlite and os.path.exists(author_source_sqlite):
+    author_source_rows = load_author_source_rows_from_sqlite(cursor, author_source_sqlite)
+else:
+    execute_query(AUTHOR_SOURCE_SQL)
+    author_source_rows = cursor.fetchall()
+author_persistence_statistics = build_author_persistence_statistics(author_source_rows)
+author_persistence_output_path = os.path.join(args.output_dir, 'author_persistence.json')
+with open(author_persistence_output_path, 'w') as f:
+    json.dump(author_persistence_statistics, f, default=json_default, indent=2)
+    f.write("\n")
+write_author_persistence_csv(
+    author_persistence_statistics,
+    os.path.join(args.output_dir, 'author_persistence.csv'),
+)
+write_author_persistence_annual_csv(
+    author_persistence_statistics,
+    os.path.join(args.output_dir, 'author_persistence_annual.csv'),
+)
+write_author_persistence_html(
+    author_persistence_statistics,
+    os.path.join(args.output_dir, 'author_persistence.html'),
+)
+author_persistence_section = render_author_persistence_dashboard_section(author_persistence_statistics)
+
 print("Generating HTML...")
 
 pipeline_status_section = f"""
@@ -1073,6 +1111,8 @@ html_content += f"""
         <div class="chart-container">
             <canvas id="anyProportionChart"></canvas>
         </div>
+
+{author_persistence_section}
 
 {retraction_statistics_section}
 

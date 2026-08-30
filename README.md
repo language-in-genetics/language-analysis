@@ -77,6 +77,14 @@ cd extractor/
   --output-json ../dashboard/retraction_statistics.json \
   --output-csv ../dashboard/retraction_statistics.csv \
   --output-html ../dashboard/retraction_statistics.html
+
+# Run the shared-author Caucasian persistence tests directly.
+./author_persistence_analysis.py \
+  --source-sqlite "/dbtemp/March 2026 Public Data File from Crossref/_focused_journals_doi/focused-journals.sqlite" \
+  --output-json ../dashboard/author_persistence.json \
+  --output-csv ../dashboard/author_persistence.csv \
+  --output-annual-csv ../dashboard/author_persistence_annual.csv \
+  --output-html ../dashboard/author_persistence.html
 ```
 
 ## Computational Analysis Methodology
@@ -127,6 +135,16 @@ only consumes terminology batches.
 The dashboard pipeline also tests whether focused-journal articles marked as retracted have different race-language vocabulary usage from non-retracted articles. `extractor/retraction_stats.py` classifies Crossref records as retracted research articles, retraction notices, or expression-of-concern update records. Retraction notices are excluded from the case/control test so that update notices are not compared with research articles.
 
 For each vocabulary outcome (`any`, `caucasian`, `white`, `european`, and `other`), the pipeline reports two-sided Fisher exact p-values, Pearson chi-square p-values, rates, risk differences, and Haldane-adjusted odds ratios. Normal dashboard generation writes `retraction_statistics.html`, `retraction_statistics.json`, and `retraction_statistics.csv`; the same analysis can be run directly with `extractor/retraction_statistics.py`. On `raksasa`, `cronscript.sh` exports `CROSSREF_RETRACTION_SOURCE_SQLITE` when the focused Crossref SQLite stage is present, so the dashboard uses the compact stage for retraction status and only queries PostgreSQL for processed labels.
+
+### Shared-Author Persistence Comparisons
+
+The dashboard pipeline also tests whether authors who used `Caucasian` in one analyzed paper are more likely to use it again in later analyzed papers. `extractor/author_persistence_stats.py` matches authors by ORCID when present, otherwise by a conservative normalized full-name key requiring family name plus a non-initial-only given name. Initial-only names without ORCID are excluded to reduce false same-author matches.
+
+The report includes three persistence tests: all earlier-to-later shared-author paper pairs, each author's next later paper, and adjacent active author-year transitions. It also tests whether authors who used `Caucasian` before the recent-period cutoff, default `2015`, remained active in recent years compared with other pre-period authors, and whether active previous users shifted to `white` or `European` without continuing to use `Caucasian`.
+
+The website report also decomposes the decline from peak `Caucasian` year, default `2006`, into a within-author-group behavior/stopping component and an author-composition/new-author component. It plots first vs last `Caucasian` use by author, annual `Caucasian`-vs-`white` and `Caucasian`-vs-`European` rates, and author-level `Caucasian`-vs-`white` / `Caucasian`-vs-`European` counts. The report includes chi-square/Fisher tests for peak-vs-recent term-distribution shifts and article-level co-occurrence, so the null that these labels are merely random interchangeable draws from a stable vocabulary can be checked explicitly.
+
+Dashboard generation writes `author_persistence.html`, `author_persistence.json`, `author_persistence.csv`, and `author_persistence_annual.csv`; the same analysis can be run directly with `extractor/author_persistence_analysis.py`. On `raksasa`, `cronscript.sh` exports `CROSSREF_AUTHOR_SOURCE_SQLITE` when the focused Crossref SQLite stage is present, so author metadata is read from the compact stage rather than from PostgreSQL `raw_json_text`.
 
 ### Automation
 

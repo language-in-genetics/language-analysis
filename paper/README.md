@@ -7,6 +7,10 @@ This folder collects manuscript drafts and working material for the EJHG paper.
 - `source-material/`: supporting documents and earlier writing.
 - `correspondence/`: email notes and requests that shape the draft.
 
+Raw call transcripts should stay in `source-material/transcripts/`, which is
+ignored by Git. Track only curated summaries, correspondence, or reusable
+source documents.
+
 Current files:
 
 - `drafts/Way et al EJHG V01.pdf`: Sally's current draft as of 2026-04-17.
