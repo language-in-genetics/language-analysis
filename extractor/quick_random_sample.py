@@ -15,15 +15,20 @@ import psycopg2.extras
 import csv
 import random as py_random
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 
 def get_db_connection():
     """Create a database connection using environment variables."""
-    return psycopg2.connect(
+    return connect_pg18(
         dbname=os.environ.get('PGDATABASE', 'crossref'),
         user=os.environ.get('PGUSER'),
         password=os.environ.get('PGPASSWORD'),
         host=os.environ.get('PGHOST'),
-        port=os.environ.get('PGPORT', '5432')
+        port=os.environ.get('PGPORT', '5433')
     )
 
 

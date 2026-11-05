@@ -28,6 +28,11 @@ from retraction_stats import (
     write_stats_html,
 )
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--output-dir", default="dashboard", help="Output directory for static files")
 parser.add_argument("--explain-queries", action="store_true", help="Run EXPLAIN on all queries and log to file")
@@ -41,7 +46,7 @@ start_time = time.time()
 os.makedirs(args.output_dir, exist_ok=True)
 
 # Database connection using environment variables (PGDATABASE, PGHOST, etc.)
-conn = psycopg2.connect("")
+conn = connect_pg18("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
 
@@ -206,7 +211,7 @@ def execute_query(sql, params=None):
     """Execute a query, optionally logging EXPLAIN output"""
     if args.explain_queries:
         # Use a separate connection for EXPLAIN to avoid transaction conflicts
-        explain_conn = psycopg2.connect("")
+        explain_conn = connect_pg18("")
         explain_cursor = explain_conn.cursor()
         try:
             explain_cursor.execute("SET search_path TO languageingenetics, public")

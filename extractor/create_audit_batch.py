@@ -21,6 +21,11 @@ from pathlib import Path
 import psycopg2
 import psycopg2.extras
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 
 POSITIVE_LABELS = ("caucasian", "white", "european", "other")
 NEGATIVE_LABEL = "none_of_these_labels"
@@ -98,12 +103,12 @@ class BatchConfig:
 
 
 def get_pg_connection():
-    return psycopg2.connect(
+    return connect_pg18(
         dbname=os.environ.get("PGDATABASE", "crossref"),
         user=os.environ.get("PGUSER"),
         password=os.environ.get("PGPASSWORD"),
         host=os.environ.get("PGHOST"),
-        port=os.environ.get("PGPORT", "5432"),
+        port=os.environ.get("PGPORT", "5433"),
     )
 
 

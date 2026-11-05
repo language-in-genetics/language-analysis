@@ -71,7 +71,7 @@ psql -c "INSERT INTO languageingenetics.journals (name) VALUES ('New Journal Nam
 When running Codex on `udara`, direct TCP access to the `crossref` database on `raksasa` is available from the local machine using Postgres.app `psql` plus `~/.pgpass`. Example:
 ```bash
 /Applications/Postgres.app/Contents/Versions/latest/bin/psql \
-  "host=raksasa port=5432 dbname=crossref user=languageingenetics sslmode=prefer"
+  "host=raksasa port=5433 dbname=crossref user=languageingenetics sslmode=prefer"
 ```
 This is useful for quick direct checks from `udara` without first SSHing to `raksasa`.
 

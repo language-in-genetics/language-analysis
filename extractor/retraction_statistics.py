@@ -22,6 +22,11 @@ from retraction_stats import (
     write_stats_html,
 )
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 
 def print_summary(stats):
     population = stats["population"]
@@ -67,7 +72,7 @@ def main():
     parser.add_argument("--list-retracted", action="store_true", help="Print detected retracted article examples")
     args = parser.parse_args()
 
-    conn = psycopg2.connect("")
+    conn = connect_pg18("")
     cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
     cursor.execute("SET search_path TO languageingenetics, public")
     cursor.execute("SET enable_hashjoin = off")

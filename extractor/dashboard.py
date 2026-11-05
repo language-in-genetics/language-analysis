@@ -9,6 +9,11 @@ from datetime import datetime, timedelta
 import json
 from collections import defaultdict
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--database", required=True, help="SQLite database path")
 parser.add_argument("--pg-conn", required=True, help="PostgreSQL connection string")
@@ -25,7 +30,7 @@ def get_sqlite_conn():
     return conn
 
 def get_pg_conn():
-    return psycopg2.connect(args.pg_conn)
+    return connect_pg18(args.pg_conn)
 
 # HTML Template
 HTML_TEMPLATE = """

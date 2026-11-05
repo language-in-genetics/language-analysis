@@ -38,6 +38,7 @@ fi
 # PostgreSQL connection uses environment variables
 # PGDATABASE should be set to "crossref"
 export PGDATABASE="${PGDATABASE:-crossref}"
+export PGPORT="${PGPORT:-5433}"
 export PGHOST="${PGHOST:-/var/run/postgresql}"
 
 # Change to working directory

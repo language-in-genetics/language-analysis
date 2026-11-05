@@ -11,6 +11,11 @@ import json
 import logging
 from datetime import datetime
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 parser = argparse.ArgumentParser()
 parser.add_argument(
     "--openai-api-key",
@@ -56,7 +61,7 @@ api_key = open(args.openai_api_key).read().strip()
 client = openai.OpenAI(api_key=api_key)
 
 # Connect using environment variables (PGDATABASE, PGHOST, etc.)
-conn = psycopg2.connect("")
+conn = connect_pg18("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
 # Set search path

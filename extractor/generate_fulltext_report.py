@@ -13,6 +13,11 @@ from datetime import datetime
 import psycopg2
 import psycopg2.extras
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 
 TERMS = [
     ("caucasian", "Caucasian"),
@@ -63,7 +68,7 @@ def relationship_key(title_abstract_any: bool | None, fulltext_any: bool) -> str
 
 
 def get_connection():
-    return psycopg2.connect("")
+    return connect_pg18("")
 
 
 def fetch_rows(conn):

@@ -28,6 +28,11 @@ import openai
 import psycopg2
 import psycopg2.extras
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 
 TOOL_SCHEMA = [
     {
@@ -92,12 +97,12 @@ class HTMLTextExtractor(HTMLParser):
 
 
 def get_pg_connection():
-    return psycopg2.connect(
+    return connect_pg18(
         dbname=os.environ.get("PGDATABASE", "crossref"),
         user=os.environ.get("PGUSER"),
         password=os.environ.get("PGPASSWORD"),
         host=os.environ.get("PGHOST"),
-        port=os.environ.get("PGPORT", "5432"),
+        port=os.environ.get("PGPORT", "5433"),
     )
 
 

@@ -4,13 +4,18 @@ import argparse
 import psycopg2
 import psycopg2.extras
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 parser = argparse.ArgumentParser(description="Delete a failed batch from the database so articles can be retried")
 parser.add_argument("batch_id", type=int, help="Local batch ID to delete")
 parser.add_argument("--dry-run", action="store_true", help="Show what would be deleted without actually deleting")
 args = parser.parse_args()
 
 # Connect using environment variables (PGDATABASE, PGHOST, etc.)
-conn = psycopg2.connect("")
+conn = connect_pg18("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
 # Set search path

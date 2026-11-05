@@ -10,6 +10,11 @@ import openai
 import psycopg2
 import psycopg2.extras
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 
 BATCH_KIND = "human_subject_filter"
 CLASSIFICATION_VERSION = "human-subject-title-abstract-v1"
@@ -127,7 +132,7 @@ def ensure_schema(cursor, conn):
 api_key = open(args.openai_api_key).read().strip()
 client = openai.OpenAI(api_key=api_key)
 
-conn = psycopg2.connect("")
+conn = connect_pg18("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 cursor.execute("SET search_path TO languageingenetics, public")
 ensure_schema(cursor, conn)

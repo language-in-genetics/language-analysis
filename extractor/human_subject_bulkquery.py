@@ -12,6 +12,11 @@ from datetime import datetime
 import psycopg2
 import psycopg2.extras
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 
 BATCH_KIND = "human_subject_filter"
 CLASSIFICATION_VERSION = "human-subject-title-abstract-v1"
@@ -38,7 +43,7 @@ if args.output_file is None:
     args.output_file = tf.name
     tf.close()
 
-conn = psycopg2.connect("")
+conn = connect_pg18("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 cursor.execute("SET search_path TO languageingenetics, public")
 

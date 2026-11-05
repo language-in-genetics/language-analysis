@@ -11,6 +11,11 @@ from datetime import datetime
 import psycopg2
 import psycopg2.extras
 
+try:
+    from .db_connection import connect_pg18
+except ImportError:
+    from db_connection import connect_pg18
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--limit", type=int, help="Stop after processing this many articles")
 parser.add_argument("--journal", action="append", help="Filter by journal name (can specify multiple times, e.g., --journal 'The American Journal of Human Genetics')")
@@ -37,7 +42,7 @@ if args.output_file is None:
     tf.close()
 
 # Connect to PostgreSQL using environment variables
-conn = psycopg2.connect("")
+conn = connect_pg18("")
 cursor = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
 
 # Helper function to execute queries with optional EXPLAIN logging
