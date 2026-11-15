@@ -10,7 +10,7 @@ def connect_pg18(dsn="", **kwargs):
     for key, environment, default in [
         ("dbname", "PGDATABASE", "crossref"),
         ("host", "PGHOST", "/var/run/postgresql"),
-        ("port", "PGPORT", "5433"),
+        ("port", "PGPORT", "5432"),
     ]:
         params.setdefault(key, os.getenv(environment) or default)
     if "user" not in params and os.getenv("PGUSER"):
@@ -19,7 +19,7 @@ def connect_pg18(dsn="", **kwargs):
     expected_database = os.getenv("LIG_EXPECTED_DATABASE", "crossref")
     expected_user = params.get("user", conn.info.user)
     actual = (conn.info.dbname, conn.info.user, conn.info.port, conn.server_version // 10000)
-    if actual != (expected_database, expected_user, 5433, 18):
+    if actual != (expected_database, expected_user, 5432, 18):
         conn.close()
         raise RuntimeError("Language analysis database identity mismatch; refusing processing")
     return conn
